@@ -1,0 +1,3859 @@
+import os
+import base64
+import html
+import requests
+import time
+import random
+import tempfile
+import re
+import secrets
+import threading
+import sqlite3
+import hashlib
+from datetime import datetime
+from io import BytesIO
+from PIL import Image, ImageDraw, ImageFont
+from flask import Flask, request, jsonify
+from docx import Document
+from docx.shared import Pt, Cm
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, KeepTogether, Flowable
+from reportlab.lib.units import mm
+from reportlab.lib import colors
+from pypdf import PdfWriter
+from xml.sax.saxutils import escape
+
+app = Flask(__name__)
+BOT_TOKEN = os.getenv('BOT_TOKEN', '')
+WEBHOOK_URL = os.getenv('WEBHOOK_URL', '')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
+GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-3.5-flash-lite')
+GEMINI_TIMEOUT = int(os.getenv('GEMINI_TIMEOUT', '90'))
+GEMINI_RETRIES = int(os.getenv('GEMINI_RETRIES', '1'))
+HYBRID_LOW_COST = os.getenv('HYBRID_LOW_COST', '1').strip().lower() not in ('0','false','no','off')
+GEMINI_FALLBACK_MODELS = [m.strip() for m in os.getenv(
+    'GEMINI_FALLBACK_MODELS',
+    'gemini-3.6-flash,gemini-3.5-flash'
+).split(',') if m.strip()]
+API = f'https://api.telegram.org/bot{BOT_TOKEN}'
+state = {}
+_processing_chats = set()
+_seen_updates = set()
+_runtime_lock = threading.Lock()
+
+# Local database: kurikulum + cache. Tujuan utama ialah mengurangkan panggilan Gemini.
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'cikgulaju.db'))
+CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
+
+
+def _db():
+    con = sqlite3.connect(DB_PATH, timeout=15)
+    con.row_factory = sqlite3.Row
+    return con
+
+
+def init_local_db():
+    con = _db()
+    try:
+        con.executescript("""
+        CREATE TABLE IF NOT EXISTS curriculum_topics (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            year_label TEXT NOT NULL,
+            subject TEXT NOT NULL,
+            topic TEXT NOT NULL,
+            subtopic TEXT NOT NULL DEFAULT '',
+            UNIQUE(year_label, subject, topic, subtopic)
+        );
+        CREATE TABLE IF NOT EXISTS curriculum_standards (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            year_label TEXT NOT NULL,
+            subject TEXT NOT NULL,
+            topic TEXT NOT NULL,
+            subtopic TEXT NOT NULL DEFAULT '',
+            sk_code TEXT NOT NULL,
+            sk_text TEXT NOT NULL,
+            sp_code TEXT NOT NULL,
+            sp_text TEXT NOT NULL,
+            source TEXT NOT NULL DEFAULT 'DSKP',
+            verified INTEGER NOT NULL DEFAULT 1,
+            UNIQUE(year_label, subject, sk_code, sp_code)
+        );
+        CREATE INDEX IF NOT EXISTS idx_curr_lookup
+            ON curriculum_standards(year_label, subject, topic, subtopic, verified);
+        CREATE TABLE IF NOT EXISTS rph_cache (
+            cache_key TEXT PRIMARY KEY,
+            rph_text TEXT NOT NULL,
+            created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            hits INTEGER NOT NULL DEFAULT 0
+        );
+        CREATE TABLE IF NOT EXISTS curriculum_sources (
+            source_key TEXT PRIMARY KEY,
+            title TEXT NOT NULL,
+            authority TEXT NOT NULL,
+            source_url TEXT NOT NULL DEFAULT '',
+            curriculum_version TEXT NOT NULL DEFAULT '',
+            verified INTEGER NOT NULL DEFAULT 0,
+            notes TEXT NOT NULL DEFAULT ''
+        );
+        CREATE TABLE IF NOT EXISTS curriculum_pedagogy (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            year_label TEXT NOT NULL,
+            subject TEXT NOT NULL,
+            sk_code TEXT NOT NULL,
+            sp_code TEXT NOT NULL,
+            objective TEXT NOT NULL DEFAULT '',
+            success_criteria TEXT NOT NULL DEFAULT '',
+            prior_knowledge TEXT NOT NULL DEFAULT '',
+            induction TEXT NOT NULL DEFAULT '',
+            activities TEXT NOT NULL DEFAULT '',
+            bbm TEXT NOT NULL DEFAULT '',
+            assessment TEXT NOT NULL DEFAULT '',
+            remediation TEXT NOT NULL DEFAULT '',
+            enrichment TEXT NOT NULL DEFAULT '',
+            pak21 TEXT NOT NULL DEFAULT '',
+            emk_values TEXT NOT NULL DEFAULT '',
+            textbook_note TEXT NOT NULL DEFAULT '',
+            source_key TEXT NOT NULL DEFAULT '',
+            verified_alignment INTEGER NOT NULL DEFAULT 0,
+            UNIQUE(year_label, subject, sk_code, sp_code)
+        );
+        CREATE INDEX IF NOT EXISTS idx_pedagogy_lookup
+            ON curriculum_pedagogy(year_label, subject, sk_code, sp_code, verified_alignment);
+        CREATE TABLE IF NOT EXISTS textbook_references (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            year_label TEXT NOT NULL,
+            subject TEXT NOT NULL,
+            topic TEXT NOT NULL DEFAULT '',
+            sk_code TEXT NOT NULL DEFAULT '',
+            sp_code TEXT NOT NULL DEFAULT '',
+            book_title TEXT NOT NULL,
+            publisher TEXT NOT NULL DEFAULT '',
+            edition TEXT NOT NULL DEFAULT '',
+            page_start INTEGER,
+            page_end INTEGER,
+            activity_ref TEXT NOT NULL DEFAULT '',
+            source_url TEXT NOT NULL DEFAULT '',
+            verified INTEGER NOT NULL DEFAULT 0,
+            UNIQUE(year_label, subject, book_title, page_start, page_end, sp_code)
+        );
+        CREATE TABLE IF NOT EXISTS worksheet_blueprints (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            year_label TEXT NOT NULL,
+            subject TEXT NOT NULL,
+            sk_code TEXT NOT NULL DEFAULT '',
+            sp_code TEXT NOT NULL DEFAULT '',
+            blueprint_key TEXT NOT NULL,
+            title TEXT NOT NULL DEFAULT '',
+            instructions TEXT NOT NULL DEFAULT '',
+            question_pattern TEXT NOT NULL DEFAULT '',
+            difficulty TEXT NOT NULL DEFAULT 'sederhana',
+            visual_pattern TEXT NOT NULL DEFAULT '',
+            answer_space TEXT NOT NULL DEFAULT '',
+            verified_alignment INTEGER NOT NULL DEFAULT 0,
+            UNIQUE(year_label, subject, sp_code, blueprint_key)
+        );
+        CREATE TABLE IF NOT EXISTS app_kv (k TEXT PRIMARY KEY, v TEXT NOT NULL);
+        """)
+        con.commit()
+    finally:
+        con.close()
+
+
+def seed_topic_database():
+    con = _db()
+    try:
+        rows=[]
+        for year_label, subjects_map in TOPICS.items():
+            for subject, topics in subjects_map.items():
+                for topic in topics:
+                    subs = get_subtopics(year_label, subject, topic) or ['']
+                    for subtopic in subs:
+                        rows.append((year_label, subject, topic, subtopic))
+        con.executemany("INSERT OR IGNORE INTO curriculum_topics(year_label,subject,topic,subtopic) VALUES(?,?,?,?)", rows)
+        con.commit()
+    finally:
+        con.close()
+
+
+def seed_verified_curriculum_v1():
+    """DSKP KSSR (Semakan 2017) Matematik Tahun 1 — set SK/SP lengkap bagi tajuk 1.0 hingga 8.0."""
+    source_key = 'KSSR2017_MATH_Y1_BPK'
+    source_url = 'https://bpk.moe.gov.my/kurikulum/kssr/kssr-tahun-1'
+    rows = [
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.1','Kuantiti secara intuitif','1.1.1','Menyatakan kuantiti melalui perbandingan.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.2','Nilai nombor','1.2.1','Menamakan nombor hingga 100.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.2','Nilai nombor','1.2.2','Menentukan nilai nombor hingga 100.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.3','Menulis nombor','1.3.1','Menulis nombor dalam angka dan perkataan.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.4','Kombinasi nombor','1.4.1','Menyatakan kombinasi nombor satu digit.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.5','Rangkaian nombor','1.5.1','Membilang nombor.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.5','Rangkaian nombor','1.5.2','Melengkapkan sebarang rangkaian nombor.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.6','Nilai tempat','1.6.1','Menyatakan nilai tempat dan nilai digit bagi sebarang nombor.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.7','Menganggar','1.7.1','Memberi anggaran bilangan objek yang munasabah.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.8','Membundarkan nombor','1.8.1','Membundarkan nombor bulat kepada puluh terdekat.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.9','Pola nombor','1.9.1','Mengenal pasti pola bagi siri nombor yang diberi.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.9','Pola nombor','1.9.2','Melengkapkan pelbagai pola nombor yang mudah.'),
+        ('Tahun 1','Matematik','Nombor hingga 100','', '1.10','Penyelesaian masalah','1.10.1','Menyelesaikan masalah yang melibatkan situasi harian.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.1','Konsep tambah dan tolak','2.1.1','Mengguna dan mempelbagaikan perbendaharaan kata yang relevan dalam konteks tambah dan tolak.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.1','Konsep tambah dan tolak','2.1.2','Memperkenalkan simbol bagi tambah, tolak dan sama dengan.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.1','Konsep tambah dan tolak','2.1.3','Menggunakan simbol tambah, tolak dan sama dengan bagi menulis ayat matematik berdasarkan situasi yang diberi.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.2','Tambah dalam lingkungan 100','2.2.1','Menambah dalam lingkungan fakta asas.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.2','Tambah dalam lingkungan 100','2.2.2','Menambah dua nombor hasil tambah dalam lingkungan 100.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.3','Tolak dalam lingkungan 100','2.3.1','Menolak dalam lingkungan fakta asas.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.3','Tolak dalam lingkungan 100','2.3.2','Menolak dua nombor dalam lingkungan 100.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.4','Penyelesaian masalah','2.4.1','Mereka cerita masalah tambah dan tolak dalam lingkungan 100.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.4','Penyelesaian masalah','2.4.2','Menyelesaikan masalah tambah dan tolak yang melibatkan situasi harian.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.5','Tambah berulang','2.5.1','Menulis ayat matematik tambah berulang dua-dua, lima-lima, sepuluh-sepuluh dan empat-empat.'),
+        ('Tahun 1','Matematik','Operasi Asas','', '2.6','Tolak berturut-turut','2.6.1','Menulis ayat matematik tolak berturut-turut dua-dua, lima-lima, sepuluh-sepuluh dan empat-empat.'),
+        ('Tahun 1','Matematik','Pecahan Asas','', '3.1','Konsep perdua dan perempat pecahan wajar','3.1.1','Mengenal pasti satu perdua, satu perempat, dua perempat dan tiga perempat.'),
+        ('Tahun 1','Matematik','Pecahan Asas','', '3.2','Penyelesaian masalah','3.2.1','Menyelesaikan masalah yang melibatkan situasi harian.'),
+        ('Tahun 1','Matematik','Wang','', '4.1','Wang kertas dan duit syiling','4.1.1','Mengenal pasti mata wang Malaysia dalam bentuk syiling dan wang kertas.'),
+        ('Tahun 1','Matematik','Wang','', '4.1','Wang kertas dan duit syiling','4.1.2','Mewakilkan nilai wang: sen hingga RM1 dan ringgit hingga RM10.'),
+        ('Tahun 1','Matematik','Wang','', '4.1','Wang kertas dan duit syiling','4.1.3','Menukar wang: syiling hingga RM1 dan ringgit hingga RM10.'),
+        ('Tahun 1','Matematik','Wang','', '4.2','Sumber kewangan dan simpanan','4.2.1','Mengenal pasti sumber kewangan dan simpanan.'),
+        ('Tahun 1','Matematik','Wang','', '4.2','Sumber kewangan dan simpanan','4.2.2','Merekod simpanan dan perbelanjaan daripada sumber kewangan.'),
+        ('Tahun 1','Matematik','Wang','', '4.3','Penyelesaian masalah','4.3.1','Menyelesaikan masalah harian melibatkan penambahan dan penolakan wang.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.1','Hari dan bulan','5.1.1','Menyatakan waktu dalam sehari.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.1','Hari dan bulan','5.1.2','Menyatakan dalam urutan peristiwa dalam sehari.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.1','Hari dan bulan','5.1.3','Menamakan hari dalam seminggu.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.1','Hari dan bulan','5.1.4','Menamakan bulan dalam setahun.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.2','Muka jam','5.2.1','Mengenal pasti jarum jam pada muka jam.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.2','Muka jam','5.2.2',"Mengenal pasti dan menyatakan 'setengah', 'satu perempat' dan 'tiga perempat' berdasarkan muka jam."),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.2','Muka jam','5.2.3','Menyebut dan menulis waktu dalam jam, setengah dan satu perempat jam sahaja dengan menggunakan jam analog.'),
+        ('Tahun 1','Matematik','Masa dan Waktu','', '5.3','Penyelesaian masalah','5.3.1','Menyelesaikan masalah yang melibatkan situasi harian.'),
+        ('Tahun 1','Matematik','Ukuran dan Sukatan','', '6.1','Unit relatif untuk mengukur panjang, jisim dan isi padu cecair','6.1.1','Mengguna dan mempelbagaikan perbendaharaan kata ukuran panjang, jisim dan isi padu cecair dalam konteks.'),
+        ('Tahun 1','Matematik','Ukuran dan Sukatan','', '6.1','Unit relatif untuk mengukur panjang, jisim dan isi padu cecair','6.1.2','Membuat pengukuran, jisim dan menyukat objek menggunakan unit bukan piawai.'),
+        ('Tahun 1','Matematik','Ukuran dan Sukatan','', '6.1','Unit relatif untuk mengukur panjang, jisim dan isi padu cecair','6.1.3','Membanding dua atau lebih ukuran, jisim dan isi padu cecair objek menggunakan unit bukan piawai.'),
+        ('Tahun 1','Matematik','Ukuran dan Sukatan','', '6.2','Penyelesaian masalah','6.2.1','Menyelesaikan masalah yang melibatkan situasi harian.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.1','Bentuk tiga dimensi','7.1.1','Menamakan bentuk kuboid, kubus, kon, piramid tapak segiempat sama, silinder dan sfera.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.1','Bentuk tiga dimensi','7.1.2','Memperihalkan permukaan, sisi dan bucu bagi bentuk tiga dimensi.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.1','Bentuk tiga dimensi','7.1.3','Menyusun objek mengikut pola.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.1','Bentuk tiga dimensi','7.1.4','Menghasilkan bentuk baru dari gabungan bentuk tiga dimensi.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.2','Bentuk dua dimensi','7.2.1','Menamakan bentuk segiempat sama, segiempat tepat, segitiga dan bulatan.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.2','Bentuk dua dimensi','7.2.2','Memperihalkan garis lurus, sisi, bucu dan lengkung bagi bentuk dua dimensi.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.2','Bentuk dua dimensi','7.2.3','Menyusun bentuk dua dimensi mengikut pola.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.2','Bentuk dua dimensi','7.2.4','Menghasilkan corak berasaskan bentuk dua dimensi.'),
+        ('Tahun 1','Matematik','Bentuk 2D dan 3D','', '7.3','Penyelesaian masalah','7.3.1','Menyelesaikan masalah yang melibatkan situasi harian.'),
+        ('Tahun 1','Matematik','Pengurusan Data','', '8.1','Mengumpul, mengelas dan menyusun data','8.1.1','Mengumpul data berdasarkan situasi harian.'),
+        ('Tahun 1','Matematik','Pengurusan Data','', '8.2','Piktograf','8.2.1','Membaca dan mendapatkan maklumat dari piktograf.'),
+        ('Tahun 1','Matematik','Pengurusan Data','', '8.3','Penyelesaian masalah','8.3.1','Menyelesaikan masalah yang melibatkan situasi harian.')
+    ]
+    con=_db()
+    try:
+        con.execute("INSERT OR REPLACE INTO curriculum_sources(source_key,title,authority,source_url,curriculum_version,verified,notes) VALUES(?,?,?,?,?,?,?)", (source_key,'DSKP KSSR (Semakan 2017) Matematik Tahun 1','Bahagian Pembangunan Kurikulum, Kementerian Pendidikan Malaysia',source_url,'KSSR (Semakan 2017)',1,'SK/SP Tahun 1 disusun daripada DSKP KSSR Semakan 2017. Aktiviti lokal menggunakan catatan DSKP sebagai panduan tanpa mereka kod SK/SP.'))
+        # Buang batch lama Tahun 1 Matematik supaya topik/teks dikemas kini secara konsisten.
+        con.execute("DELETE FROM curriculum_standards WHERE year_label='Tahun 1' AND subject='Matematik'")
+        con.executemany("INSERT OR IGNORE INTO curriculum_standards(year_label,subject,topic,subtopic,sk_code,sk_text,sp_code,sp_text,source,verified) VALUES(?,?,?,?,?,?,?,?,?,1)", [r+(source_key,) for r in rows])
+        con.commit()
+    finally:
+        con.close()
+
+
+MATH_Y1_TOPIC_SK = {
+    'Nombor hingga 100': ('1.',),
+    'Tambah': ('2.1','2.2','2.4','2.5'),
+    'Tolak': ('2.1','2.3','2.4','2.6'),
+    'Pecahan Asas': ('3.',),
+    'Wang': ('4.',),
+    'Masa dan Waktu': ('5.',),
+    'Panjang': ('6.',),
+    'Jisim': ('6.',),
+    'Isi Padu Cecair': ('6.',),
+    'Bentuk 2D dan 3D': ('7.',),
+    'Pengurusan Data': ('8.',),
+}
+
+
+def _math_y1_allowed_sk(topic, sk_code):
+    pats=MATH_Y1_TOPIC_SK.get(topic)
+    if not pats:
+        return False
+    return any(sk_code == p or (p.endswith('.') and sk_code.startswith(p)) for p in pats)
+
+def seed_pedagogy_math_y1_v1():
+    """Bank pedagogi lokal untuk Matematik Tahun 1, dipadankan kepada SP yang disahkan."""
+    rows = [
+        ('Tahun 1','Matematik','2.3','2.3.1',
+         'Pada akhir pembelajaran, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 fakta asas tolak dengan betul menggunakan objek, gambar atau ayat matematik.',
+         'Murid dapat menunjukkan proses mengambil keluar atau memisahkan objek, menyatakan baki dan menulis ayat matematik tolak yang sepadan.',
+         'Murid telah mengenal nombor dan kuantiti serta memahami maksud berkurang atau tinggal dalam situasi harian.',
+         '5 minit\n1. Guru menunjukkan 8 penutup botol. Guru mengambil keluar 3 dan meminta murid menyatakan berapa yang tinggal.\n2. Guru mengaitkan tindakan mengambil keluar dengan operasi tolak.',
+         '40 minit\n1. Murid membina fakta tolak menggunakan penutup botol, batang aiskrim atau blok.\n2. Guru menunjukkan gambar kumpulan objek; murid memangkah objek yang ditolak dan menyatakan baki.\n3. Murid memadankan situasi atau gambar dengan ayat matematik seperti 8 - 3 = 5.\n4. Secara berpasangan, seorang murid menunjukkan satu fakta tolak menggunakan objek dan pasangannya menulis ayat matematik.\n5. Murid menyelesaikan latihan berperingkat daripada bahan konkrit kepada gambar dan akhirnya fakta asas tanpa bantuan gambar.',
+         'Buku teks Matematik Tahun 1, penutup botol, blok atau batang aiskrim, kad nombor, kad simbol -, =, gambar objek dan lembaran kerja fakta asas tolak.',
+         'Pemerhatian semasa manipulasi objek, soal jawab lisan, semakan ayat matematik dan 5 item exit ticket fakta asas tolak.',
+         'Gunakan bilangan lebih kecil dan objek konkrit. Bimbing langkah: kira semua, keluarkan, kira baki, kemudian tulis ayat matematik.',
+         'Murid membina dua situasi harian sendiri yang mewakili fakta tolak dan menukar setiap situasi kepada ayat matematik.',
+         'Think-Pair-Share, komunikasi matematik dan pembelajaran berpasangan.',
+         'Ketelitian, yakin diri, kerjasama dan komunikasi.',
+         'Selari dengan kehendak SP dan pendekatan konkrit-piktorial-simbolik yang lazim dalam buku teks Matematik sekolah rendah. Nombor halaman tidak dinyatakan tanpa edisi buku yang disahkan.',
+         'KSSR2017_MATH_Y1_BPK_COPY',1),
+        ('Tahun 1','Matematik','2.3','2.3.2',
+         'Pada akhir pembelajaran, murid dapat menolak dua nombor dalam lingkungan 100 dengan kaedah yang sesuai dan memperoleh sekurang-kurangnya 4 daripada 5 jawapan betul.',
+         'Murid dapat menunjukkan sekurang-kurangnya satu strategi tolak dan menerangkan bagaimana baki diperoleh.',
+         'Murid telah menguasai fakta asas tolak serta nilai tempat sa dan puluh.',
+         '5 minit\n1. Guru memaparkan situasi 34 objek dan 12 diambil.\n2. Murid menganggarkan baki sebelum mengira.',
+         '40 minit\n1. Guru membina nombor menggunakan blok puluh dan sa.\n2. Murid menolak dengan mengasingkan blok mengikut ayat matematik yang diberi.\n3. Murid merekod proses menggunakan gambar rajah puluh-sa atau bentuk lazim yang sesuai.\n4. Murid menyelesaikan beberapa contoh secara berpasangan dan menerangkan strategi.\n5. Murid menjawab latihan individu daripada representasi nilai tempat kepada ayat matematik.',
+         'Buku teks Matematik Tahun 1, blok asas sepuluh atau kad puluh-sa, kad nombor, papan mini dan lembaran kerja.',
+         'Pemerhatian strategi nilai tempat, soal jawab, semakan kerja dan kuiz ringkas 5 item.',
+         'Kembali kepada blok puluh-sa dan nombor yang lebih mudah. Bimbing satu langkah pada satu masa.',
+         'Murid menyelesaikan soalan konteks harian dan menerangkan strategi yang digunakan.',
+         'Pembelajaran berpasangan, penerangan rakan sebaya dan komunikasi matematik.',
+         'Ketelitian, kerjasama dan berani mencuba.',
+         'Aktiviti dipadankan dengan SP dan pendekatan nilai tempat dalam buku teks. Halaman hanya akan ditambah apabila buku disahkan.',
+         'KSSR2017_MATH_Y1_BPK_COPY',1),
+        ('Tahun 1','Matematik','2.2','2.2.1',
+         'Pada akhir pembelajaran, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 fakta asas tambah dengan betul menggunakan objek, gambar atau ayat matematik.',
+         'Murid dapat menggabungkan dua kumpulan, menyatakan jumlah dan menulis ayat matematik tambah yang sepadan.',
+         'Murid telah mengenal nombor dan kuantiti serta memahami maksud bertambah atau semuanya.',
+         '5 minit\n1. Guru menunjukkan dua kumpulan objek, contohnya 4 dan 3.\n2. Guru menggabungkan kedua-duanya dan murid meneka jumlah sebelum mengira.',
+         '40 minit\n1. Murid menggabungkan dua kumpulan objek konkrit dan mengira jumlah.\n2. Murid memadankan gambar dengan ayat matematik tambah.\n3. Murid menggunakan kad nombor dan simbol +, = untuk membina fakta asas.\n4. Aktiviti pasangan: seorang membina dua kumpulan objek, seorang lagi menulis ayat matematik.\n5. Murid menjawab latihan berperingkat konkrit, gambar dan simbol.',
+         'Buku teks Matematik Tahun 1, penutup botol atau blok, kad nombor, kad simbol +, =, gambar objek dan lembaran kerja.',
+         'Pemerhatian manipulasi objek, soal jawab, semakan ayat matematik dan exit ticket.',
+         'Gunakan nombor kecil dan bahan konkrit; ulang proses gabung, kira semua dan tulis ayat matematik.',
+         'Murid mencipta situasi tambah sendiri dan menulis dua ayat matematik yang sesuai.',
+         'Think-Pair-Share dan komunikasi matematik.',
+         'Kerjasama, yakin diri dan ketelitian.',
+         'Selari dengan kehendak SP dan pendekatan konkrit-piktorial-simbolik. Halaman buku teks akan ditambah selepas edisi disahkan.',
+         'KSSR2017_MATH_Y1_BPK_COPY',1),
+        ('Tahun 1','Matematik','1.6','1.6.1',
+         'Pada akhir pembelajaran, murid dapat menyatakan nilai tempat dan nilai digit bagi sekurang-kurangnya 4 daripada 5 nombor dengan betul.',
+         'Murid boleh mengasingkan nombor kepada puluh dan sa serta menyatakan nilai digit yang ditanya.',
+         'Murid boleh membaca, menulis dan membilang nombor hingga 100.',
+         '5 minit\n1. Guru menunjukkan 24 batang aiskrim yang diikat sebagai dua kumpulan sepuluh dan empat batang tunggal.\n2. Murid menyatakan apa yang mereka perhatikan.',
+         '40 minit\n1. Murid membina nombor dengan blok puluh dan sa.\n2. Murid meletakkan digit pada carta nilai tempat.\n3. Guru menukar satu digit dan murid menerangkan perubahan nilainya.\n4. Murid memadankan nombor, model puluh-sa dan nilai digit.\n5. Murid menjawab latihan individu.',
+         'Buku teks Matematik Tahun 1, blok asas sepuluh atau batang aiskrim, carta nilai tempat, kad digit dan papan mini.',
+         'Soal jawab nilai tempat, pemerhatian manipulatif, padanan kad dan lembaran ringkas.',
+         'Gunakan nombor dua digit yang mudah dan bina nombor secara fizikal sebelum menulis.',
+         'Murid diberi nombor sasaran dan menerangkan nilai setiap digit dalam nombor tersebut.',
+         'Pembelajaran koperatif dan komunikasi matematik.',
+         'Ketelitian dan keyakinan.',
+         'Dipadankan dengan pendekatan nilai tempat yang lazim dalam buku teks Matematik sekolah rendah.',
+         'KSSR2017_MATH_Y1_BPK_COPY',1),
+    ]
+    con=_db()
+    try:
+        con.executemany("""
+            INSERT INTO curriculum_pedagogy(
+                year_label,subject,sk_code,sp_code,objective,success_criteria,prior_knowledge,
+                induction,activities,bbm,assessment,remediation,enrichment,pak21,emk_values,
+                textbook_note,source_key,verified_alignment
+            ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            ON CONFLICT(year_label,subject,sk_code,sp_code) DO UPDATE SET
+                objective=excluded.objective, success_criteria=excluded.success_criteria,
+                prior_knowledge=excluded.prior_knowledge, induction=excluded.induction,
+                activities=excluded.activities, bbm=excluded.bbm, assessment=excluded.assessment,
+                remediation=excluded.remediation, enrichment=excluded.enrichment,
+                pak21=excluded.pak21, emk_values=excluded.emk_values,
+                textbook_note=excluded.textbook_note, source_key=excluded.source_key,
+                verified_alignment=excluded.verified_alignment
+        """, rows)
+        con.commit()
+    finally:
+        con.close()
+
+
+
+def seed_pedagogy_math_y1_v2():
+    """Tambahan bank pedagogi lokal Matematik Tahun 1 untuk lebih banyak SP yang disahkan."""
+    common_source='KSSR2017_MATH_Y1_BPK_COPY'
+    rows=[
+      ('1.1','1.1.1','Murid dapat membandingkan dua kumpulan objek dan menggunakan istilah banyak, sedikit, sama banyak, lebih atau kurang dengan betul.','Padankan dua kumpulan objek satu dengan satu; murid menyebut hubungan kuantiti dan memberi sebab.','Dua bakul objek kelas dengan kuantiti berbeza. Murid memilih bakul yang lebih banyak tanpa mengira terlebih dahulu.','Murid membuat padanan satu-dengan-satu menggunakan penutup botol; membandingkan dua gambar; bergerak ke stesen perbandingan; menerangkan jawapan kepada pasangan.','Penutup botol, batang aiskrim, kad gambar, bakul kecil, kad istilah.','Senarai semak penggunaan istilah perbandingan dan 4 item padanan.','Gunakan kumpulan 1-5 objek dan padanan fizikal.','Murid membina dua kumpulan sendiri yang sama banyak dan tidak sama banyak.','Think-Pair-Share; komunikasi matematik.','Kerjasama, yakin diri.','Catatan penjajaran menekankan perbandingan dua kumpulan secara padanan satu dengan satu.'),
+      ('1.2','1.2.1','Murid dapat membilang, menyebut dan menulis nombor hingga 100 mengikut keupayaan.','Sekurang-kurangnya 4 daripada 5 tugasan membilang/menamakan nombor diselesaikan betul.','Guru menunjukkan satu bekas objek dan meminta murid menganggar kemudian membilang.','Murid membilang objek maujud; memadankan kuantiti dengan kad angka; menyebut nombor secara menaik/menurun; menulis angka dan perkataan pada papan mini.','Objek maujud, kad nombor, carta 100, papan mini.','Pemerhatian membilang dan exit ticket nombor.','Hadkan julat nombor dan gunakan garis nombor.','Permainan cari nombor hilang pada carta 100.','Pembelajaran stesen.','Ketelitian, komunikasi.','DSKP/penjajaran mencadangkan bahan maujud dan bergambar semasa membilang dan menulis nombor.'),
+      ('1.5','1.5.1','Murid dapat membilang nombor dalam urutan yang diberi dengan betul.','Murid meneruskan sekurang-kurangnya 4 daripada 5 urutan nombor.','Guru melontar bola sambil menyebut nombor; murid seterusnya menyambung urutan.','Murid bergerak pada garis nombor lantai; menyusun kad nombor; melengkapkan urutan menaik dan menurun; permainan nombor sebelum/selepas.','Kad nombor, garis nombor lantai, carta 100.','Soal jawab urutan dan lembaran ringkas.','Gunakan julat hingga 20 dahulu.','Urutan bermula dari nombor rawak hingga 100.','Permainan kolaboratif.','Berani mencuba, kerjasama.','Aktiviti berasaskan rangkaian nombor dan representasi visual.'),
+      ('1.5','1.5.2','Murid dapat melengkapkan rangkaian nombor yang mempunyai nombor hilang.','4 daripada 5 rangkaian nombor dilengkapkan tepat.','Guru tunjuk kereta api nombor dengan satu gerabak kosong.','Murid menyusun kad; mencari nombor hilang; melengkapkan garis nombor; pasangan menyemak urutan rakan.','Kad nombor, templat kereta api, garis nombor.','5 item nombor hilang.','Sediakan nombor sebelum dan selepas sebagai petunjuk.','Rangkaian dengan dua atau tiga tempat kosong.','Peer-check.','Ketelitian.','Aktiviti memvisualkan rangkaian nombor sebelum bergerak ke simbol.'),
+      ('1.7','1.7.1','Murid dapat membuat anggaran munasabah bagi bilangan objek dan menyemak melalui kiraan.','Anggaran hampir dengan bilangan sebenar dan murid boleh membandingkan anggaran dengan kiraan.','Guru tunjuk balang objek selama beberapa saat dan sorokkan.','Murid menulis anggaran; membilang objek; membandingkan beza; ulang dengan beberapa kumpulan; bincang strategi anggaran.','Balang lutsinar, objek kecil, kad anggaran.','Catatan anggaran berbanding bilangan sebenar.','Gunakan kuantiti kecil dan susunan teratur.','Bandingkan dua strategi anggaran.','Think-Pair-Share.','Jujur, berani membuat jangkaan.','Selaras dengan kemahiran menganggar; bahan maujud digunakan supaya anggaran boleh disemak.'),
+      ('1.9','1.9.1','Murid dapat mengenal pasti pola dalam satu urutan nombor.','Murid menyatakan peraturan pola bagi 4 daripada 5 contoh.','Guru tepuk mengikut pola dan kaitkan dengan pola nombor.','Murid mewarna pola pada carta nombor; menggunakan kad untuk membina pola; menerangkan apa yang berubah; mengenal pasti pola daripada beberapa pilihan.','Carta 100, kad nombor, penanda.','Soal jawab peraturan pola dan 5 item.','Gunakan pola mudah bertambah satu atau berkurang satu.','Cipta pola sendiri untuk diteka rakan.','Pembelajaran pasangan.','Kreativiti, komunikasi.','Aktiviti menghubungkan pola visual dengan pola nombor.'),
+      ('1.9','1.9.2','Murid dapat melengkapkan pola nombor berdasarkan peraturan yang dikenal pasti.','4 daripada 5 pola dilengkapkan betul.','Guru paparkan 2,3,4,__,6 dan minta murid cari nombor tersembunyi.','Murid mengenal peraturan; memilih kad nombor yang hilang; melengkapkan pola pada garis nombor; mencipta pola untuk rakan.','Kad nombor, garis nombor, carta 100.','Lembaran 5 pola dan penerangan lisan satu pola.','Berikan peraturan secara lisan dan julat kecil.','Pola dengan lebih daripada satu tempat kosong.','Peer challenge.','Ketelitian, kreativiti.','Bergerak daripada pola konkrit/visual kepada nombor.'),
+      ('2.1','2.1.1','Murid dapat menggunakan kosa kata tambah dan tolak dalam situasi harian.','Murid memadankan sekurang-kurangnya 4 daripada 5 situasi dengan istilah operasi yang sesuai.','Guru lakon situasi murid datang dan keluar dari satu kumpulan.','Murid mengelaskan kad situasi kepada bertambah/berkurang; melakonkan situasi; menyebut istilah seperti jumlah, baki, tinggal; menerangkan pilihan kepada pasangan.','Kad situasi, objek kelas, kad istilah.','Pemerhatian bahasa matematik dan padanan situasi.','Gunakan ayat pendek dan gambar.','Murid menulis satu cerita tambah dan satu cerita tolak.','Role-play; komunikasi.','Kerjasama, yakin diri.','Selaras dengan SP penggunaan perbendaharaan kata dalam konteks tambah dan tolak.'),
+      ('2.1','2.1.2','Murid dapat mengenal dan menggunakan simbol tambah, tolak dan sama dengan.','Murid memilih simbol yang betul bagi 4 daripada 5 situasi.','Guru tunjuk kad besar +, − dan = dan minta murid teka fungsinya.','Murid memadankan simbol dengan tindakan gabung/ambil keluar; membina ayat menggunakan kad; permainan angkat simbol; membetulkan ayat matematik mudah.','Kad simbol besar, objek, kad nombor.','Kuiz angkat kad simbol.','Gunakan hanya dua nombor kecil dan objek konkrit.','Murid bina ayat matematik untuk diteka rakan.','Game-based learning.','Yakin diri, komunikasi.','Selaras dengan pengenalan simbol operasi dalam DSKP.'),
+      ('2.1','2.1.3','Murid dapat menulis ayat matematik berdasarkan situasi tambah atau tolak.','4 daripada 5 situasi diterjemahkan kepada ayat matematik yang betul.','Guru tunjuk gambar 5 burung, 2 terbang pergi.','Murid melakonkan situasi; memilih operasi; menyusun kad nombor/simbol; menulis ayat matematik; bertukar kad cerita dengan pasangan.','Kad cerita bergambar, kad nombor dan simbol, papan mini.','Semakan 5 situasi kepada ayat matematik.','Sediakan templat __ __ __ = __.','Cipta situasi daripada ayat matematik yang diberi.','Pair work.','Komunikasi, kreativiti.','Menghubungkan konteks, representasi dan simbol seperti dikehendaki SP.'),
+      ('2.2','2.2.2','Murid dapat menambah dua nombor dalam lingkungan 100 menggunakan strategi yang sesuai.','Sekurang-kurangnya 4 daripada 5 ayat tambah diselesaikan betul dan strategi dapat ditunjukkan.','Guru gabungkan dua kumpulan blok puluh-sa.','Murid membina nombor dengan blok puluh-sa; menggabungkan; merekod dengan rajah nilai tempat; menyelesaikan contoh pasangan; latihan individu.','Blok asas sepuluh, carta puluh-sa, kad nombor, papan mini.','Pemerhatian strategi dan kuiz 5 item.','Gunakan nombor tanpa pengumpulan semula dan bahan konkrit.','Soalan konteks harian serta penerangan strategi.','Peer explanation.','Ketelitian, kerjasama.','Pendekatan konkrit-piktorial-simbolik dan nilai tempat.'),
+      ('2.4','2.4.2','Murid dapat menyelesaikan masalah tambah atau tolak dalam situasi harian.','Murid mengenal maklumat, memilih operasi dan mendapat jawapan betul bagi sekurang-kurangnya 3 daripada 4 masalah.','Guru ceritakan situasi membeli/berkongsi objek kelas dan tanya apa yang perlu dicari.','Murid bulatkan maklumat penting; lakon atau modelkan masalah; pilih operasi; tulis ayat matematik; semak kewajaran jawapan dengan pasangan.','Kad masalah bergambar, objek, papan mini.','Rubrik ringkas: faham masalah, pilih operasi, kira, jawab.','Gunakan satu langkah dan nombor kecil dengan gambar.','Murid mereka cerita masalah daripada ayat matematik.','Think-Pair-Share; penyelesaian masalah.','Ketelitian, rasional.','DSKP menekankan penyelesaian masalah melibatkan situasi harian.'),
+      ('7.1','7.1.1','Murid dapat menamakan bentuk tiga dimensi yang dipelajari dengan betul.','Sekurang-kurangnya 5 daripada 6 bentuk dinamakan betul.','Guru keluarkan objek harian daripada beg misteri.','Murid memegang dan menamakan objek; memadankan objek harian dengan bentuk 3D; stesen cari bentuk di kelas; permainan teka bentuk.','Kubus, kuboid, kon, piramid, silinder, sfera dan objek harian.','Senarai semak penamaan bentuk.','Kurangkan kepada 3 bentuk dan beri pilihan gambar.','Murid mencari contoh tambahan di persekitaran sekolah.','Learning stations.','Ingin tahu, kerjasama.','DSKP mencadangkan penggunaan objek untuk memahami bentuk tiga dimensi.'),
+      ('7.1','7.1.2','Murid dapat memperihalkan ciri permukaan, sisi dan bucu bentuk tiga dimensi.','Murid menyatakan sekurang-kurangnya dua ciri bagi bentuk yang dipilih.','Guru gulung dan gelongsorkan beberapa objek 3D.','Murid meneroka bentuk secara sentuhan; mengira/menunjuk ciri; mengelaskan bentuk berdasarkan ciri; menerangkan dapatan kepada kumpulan.','Model bentuk 3D, dulang, kad ciri.','Pemerhatian dan kad padanan ciri.','Fokus satu ciri pada satu masa.','Bandingkan dua bentuk dan jelaskan persamaan/perbezaan.','Hands-on group work.','Kerjasama, komunikasi.','Catatan DSKP menekankan penggunaan objek untuk memahami bentuk.'),
+      ('7.1','7.1.3','Murid dapat menyusun objek tiga dimensi mengikut pola.','Murid melengkapkan 4 daripada 5 pola objek dengan betul.','Guru susun kubus-silinder-kubus-silinder dan berhenti.','Murid meniru pola; melengkapkan pola; bekerja pasangan mencipta pola; rakan meneruskan pola.','Model bentuk 3D pelbagai jenis.','Semakan pola dan penerangan lisan.','Gunakan pola AB sahaja.','Gunakan pola ABC/AAB.','Collaborative challenge.','Kreativiti, kerjasama.','Selaras dengan SP menyusun objek mengikut pola.'),
+      ('7.1','7.1.4','Murid dapat menghasilkan bentuk baharu daripada gabungan bentuk tiga dimensi.','Murid membina satu model dan menamakan sekurang-kurangnya dua bentuk yang digunakan.','Guru tunjuk model robot/rumah daripada bentuk 3D.','Murid merancang model; memilih bentuk; membina robot/kapal/rumah; melabel bentuk yang digunakan; gallery walk.','Set bentuk 3D, blok binaan, kad label.','Rubrik model: gabungan bentuk, penamaan, penerangan.','Sediakan model contoh untuk ditiru.','Cipta model bebas dengan syarat menggunakan 4 jenis bentuk.','Project-based learning; gallery walk.','Kreativiti, kerjasama.','DSKP memberi contoh menyusun bentuk 3D untuk menghasilkan robot, kapal atau rumah.'),
+      ('8.1','8.1.1','Murid dapat mengumpul data mudah daripada situasi harian.','Murid merekod data menggunakan gundalan dengan betul.','Guru bertanya warna kegemaran beberapa murid.','Murid menjalankan tinjauan kelas; merekod setiap respons dengan gundalan; mengira jumlah; membandingkan kategori.','Kad kategori, jadual gundalan, pelekat.','Semakan ketepatan gundalan dan jumlah.','Gunakan dua kategori dan kumpulan kecil.','Tambah kategori dan murid bina soalan tinjauan sendiri.','Survey; collaborative learning.','Jujur merekod, kerjasama.','DSKP mencadangkan penggunaan gundalan untuk mengumpul data mudah.'),
+      ('8.2','8.2.1','Murid dapat membaca dan mendapatkan maklumat daripada piktograf.','Murid menjawab sekurang-kurangnya 4 daripada 5 soalan berdasarkan piktograf.','Guru tunjuk piktograf buah kegemaran dengan petunjuk satu gambar satu nilai.','Murid membaca tajuk dan petunjuk; mengira simbol; menjawab paling banyak/paling sedikit; membandingkan dua kategori; membina soalan untuk rakan.','Piktograf besar, kad soalan, pelekat gambar.','5 soalan kefahaman piktograf.','Gunakan piktograf dua kategori dan satu gambar satu nilai.','Murid bina piktograf daripada data kelas.','Question generation; pair work.','Ketelitian, komunikasi.','DSKP menetapkan petunjuk satu gambar satu nilai untuk tahap ini.'),
+      ('8.3','8.3.1','Murid dapat menyelesaikan masalah mudah berdasarkan data dalam situasi harian.','Murid menggunakan data untuk menjawab sekurang-kurangnya 3 daripada 4 masalah.','Guru tunjuk data pilihan makanan kelas dan tanya pilihan paling popular.','Murid membaca data/piktograf; kenal maklumat diperlukan; jawab soalan perbandingan; beri sebab berdasarkan data; semak jawapan kumpulan.','Piktograf/jadual mudah, kad masalah.','Rubrik jawapan berasaskan bukti data.','Gunakan soalan terus: paling banyak, paling sedikit, berapa.','Soalan beza dan gabungan dua kategori.','Group reasoning.','Rasional, komunikasi.','Selaras dengan penyelesaian masalah situasi harian dalam pengurusan data.')
+    ]
+    con=_db()
+    try:
+        for sk,sp,obj,crit,ind,acts,bbm,assess,rem,enrich,pak,emk,note in rows:
+            # Hanya masukkan pedagogi jika SP itu sendiri sudah wujud sebagai standard yang disahkan.
+            ok=con.execute("SELECT 1 FROM curriculum_standards WHERE year_label='Tahun 1' AND subject='Matematik' AND sk_code=? AND sp_code=? AND verified=1 LIMIT 1",(sk,sp)).fetchone()
+            if not ok: continue
+            con.execute("""INSERT INTO curriculum_pedagogy(year_label,subject,sk_code,sp_code,objective,success_criteria,prior_knowledge,induction,activities,bbm,assessment,remediation,enrichment,pak21,emk_values,textbook_note,source_key,verified_alignment) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,1) ON CONFLICT(year_label,subject,sk_code,sp_code) DO UPDATE SET objective=excluded.objective,success_criteria=excluded.success_criteria,induction=excluded.induction,activities=excluded.activities,bbm=excluded.bbm,assessment=excluded.assessment,remediation=excluded.remediation,enrichment=excluded.enrichment,pak21=excluded.pak21,emk_values=excluded.emk_values,textbook_note=excluded.textbook_note,source_key=excluded.source_key,verified_alignment=1""",('Tahun 1','Matematik',sk,sp,obj,crit,'Pengetahuan nombor, kuantiti dan pengalaman harian yang berkaitan dengan kemahiran ini.',ind,acts,bbm,assess,rem,enrich,pak,emk,note,common_source))
+        con.commit()
+    finally:
+        con.close()
+
+def curriculum_pedagogy_for(s):
+    con=_db()
+    try:
+        row=con.execute("""
+            SELECT * FROM curriculum_pedagogy
+            WHERE year_label=? AND subject=? AND sk_code=? AND sp_code=?
+              AND verified_alignment=1
+            LIMIT 1
+        """,(s.get('year',''),s.get('subject',''),s.get('sk_code',''),s.get('sp_code',''))).fetchone()
+        return dict(row) if row else None
+    finally:
+        con.close()
+
+def curriculum_database_stats():
+    con=_db()
+    try:
+        r=con.execute("SELECT COUNT(*) AS standards, COUNT(DISTINCT year_label||'|'||subject) AS year_subjects, COUNT(DISTINCT year_label||'|'||subject||'|'||topic) AS topics FROM curriculum_standards WHERE verified=1").fetchone()
+        return dict(r)
+    finally:
+        con.close()
+
+
+def curriculum_sk_options(s):
+    con=_db()
+    try:
+        if s.get('year')=='Tahun 1' and s.get('subject')=='Matematik':
+            rows=con.execute("""SELECT sk_code, sk_text, MIN(id) AS id FROM curriculum_standards
+                                WHERE year_label=? AND subject=? AND verified=1
+                                GROUP BY sk_code, sk_text ORDER BY CAST(substr(sk_code,1,instr(sk_code||'.','.')-1) AS INTEGER), sk_code""",
+                             (s.get('year',''),s.get('subject',''))).fetchall()
+            return [dict(r) for r in rows if _math_y1_allowed_sk(s.get('topic',''), r['sk_code'])]
+        rows=con.execute("""
+            SELECT sk_code, sk_text, MIN(id) AS id
+            FROM curriculum_standards
+            WHERE year_label=? AND subject=? AND topic=? AND verified=1
+              AND (subtopic=? OR subtopic='' OR ?='Semua Subtopik')
+            GROUP BY sk_code, sk_text
+            ORDER BY sk_code
+        """,(s.get('year',''),s.get('subject',''),s.get('topic',''),s.get('subtopic',''),s.get('subtopic',''))).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        con.close()
+
+
+def curriculum_sp_options(s, sk_code):
+    con=_db()
+    try:
+        if s.get('year')=='Tahun 1' and s.get('subject')=='Matematik':
+            rows=con.execute("""SELECT sp_code, sp_text, sk_code, sk_text, id FROM curriculum_standards
+                                WHERE year_label=? AND subject=? AND sk_code=? AND verified=1
+                                ORDER BY sp_code""",
+                             (s.get('year',''),s.get('subject',''),sk_code)).fetchall()
+            return [dict(r) for r in rows if _math_y1_allowed_sk(s.get('topic',''), r['sk_code'])]
+        rows=con.execute("""
+            SELECT sp_code, sp_text, sk_code, sk_text, id
+            FROM curriculum_standards
+            WHERE year_label=? AND subject=? AND topic=? AND sk_code=? AND verified=1
+              AND (subtopic=? OR subtopic='' OR ?='Semua Subtopik')
+            ORDER BY sp_code
+        """,(s.get('year',''),s.get('subject',''),s.get('topic',''),sk_code,s.get('subtopic',''),s.get('subtopic',''))).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        con.close()
+
+def _rph_cache_key(s):
+    raw='|'.join(str(s.get(k,'')).strip() for k in ('year','subject','topic','subtopic','sk_code','sk_text','sp_code','sp_text','variation_seed'))
+    return hashlib.sha256(raw.encode('utf-8')).hexdigest()
+
+
+def _rph_cache_get(s):
+    key=_rph_cache_key(s); con=_db()
+    try:
+        row=con.execute('SELECT rph_text FROM rph_cache WHERE cache_key=?',(key,)).fetchone()
+        if row:
+            con.execute('UPDATE rph_cache SET hits=hits+1 WHERE cache_key=?',(key,)); con.commit()
+            return row['rph_text']
+        return None
+    finally:
+        con.close()
+
+
+def _rph_cache_put(s, text):
+    con=_db()
+    try:
+        con.execute("INSERT INTO rph_cache(cache_key,rph_text) VALUES(?,?) ON CONFLICT(cache_key) DO UPDATE SET rph_text=excluded.rph_text",(_rph_cache_key(s), text))
+        con.commit()
+    finally:
+        con.close()
+
+
+
+
+def _specific_material_pack(subject, topic, focus=''):
+    """Bahan sebenar dan mudah diperoleh; elakkan label generik dalam RPH."""
+    key=(str(subject)+' '+str(topic)+' '+str(focus)).lower()
+    if subject=='Matematik':
+        packs=[
+          (('tolak','beza'), 'penutup botol, dua mangkuk plastik, kad nombor, kad simbol − dan =, garis nombor 0–20, mini whiteboard'),
+          (('tambah',), 'batang aiskrim, dua cawan plastik, kad nombor, kad simbol + dan =, dadu, mini whiteboard'),
+          (('pecahan',), 'pinggan kertas, model pizza daripada kad manila, jalur pecahan, gunting, pensel warna'),
+          (('wang',), 'duit syiling dan wang kertas mainan Malaysia, tanda harga, bakul kecil, kotak barangan kelas'),
+          (('masa','waktu'), 'jam analog model, jam kertas dengan jarum boleh digerakkan, kad aktiviti harian, jadual waktu'),
+          (('panjang',), 'pembaris 30 cm, pita ukur, tali, klip kertas, pensel dan buku latihan'),
+          (('jisim',), 'penimbang imbangan mudah, pemadam, buku, botol air dan beg pensel'),
+          (('isi padu','isipadu'), 'cawan plastik lutsinar, botol air, jag kecil, bekas berlainan saiz dan air'),
+          (('bentuk','ruang'), 'kotak tisu, tin minuman kosong, bola, kon kertas, kotak ubat dan blok bentuk'),
+          (('data','piktograf'), 'pelekat bulat, kad gambar, carta poket, kertas grid dan pen marker'),
+        ]
+        for words,mat in packs:
+            if any(w in key for w in words): return mat
+        return 'penutup botol, batang aiskrim, kad nombor, dadu, mini whiteboard dan kertas A4'
+    if subject in ('Sains',):
+        return 'objek sebenar berkaitan topik, cawan plastik lutsinar, dulang, kanta tangan, kad pemerhatian, kertas A4 dan pensel warna'
+    if subject in ('Bahasa Melayu','Bahasa Inggeris'):
+        return 'kad perkataan, kad ayat, gambar bersiri, petikan bercetak, kertas mahjung, pen marker dan nota pelekat'
+    if subject=='Sejarah':
+        return 'kad peristiwa, garis masa bercetak, peta, gambar tokoh/tempat, kertas mahjung dan nota pelekat'
+    if subject=='Pendidikan Islam':
+        return 'kad perkataan/ayat, kad situasi, gambar bersiri yang sesuai, carta langkah, kertas A4 dan pen marker'
+    return 'kad gambar, kad perkataan, kertas A4, nota pelekat, pen marker dan bahan sebenar yang berkaitan terus dengan tajuk'
+
+def _make_specific_local_activity(subject, topic, focus, sp_code, materials):
+    items=[x.strip() for x in materials.split(',') if x.strip()]
+    a=items[0] if items else 'kad gambar'; b=items[1] if len(items)>1 else 'kertas A4'; c=items[2] if len(items)>2 else 'kad tugasan'
+    return (
+      f'5 minit\n1. Guru menunjukkan {a} dan mengemukakan satu situasi sebenar berkaitan {focus}.\n2. Dua orang murid menunjukkan idea awal menggunakan {a}; rakan menyatakan apa yang mereka perhatikan.\n3. Guru menghubungkan respons dengan fokus pembelajaran dan SP {sp_code}.',
+      f'Aktiviti 1 – Teroka dengan {a} (15 minit)\nGuru menyediakan {a} untuk setiap pasangan. Murid memanipulasi/meneliti bahan mengikut tugasan {focus}, merekod satu dapatan pada mini whiteboard atau kertas A4, kemudian menerangkan cara mereka mendapat jawapan.\n\nAktiviti 2 – Padanan menggunakan {b} (15 minit)\nMurid menerima {b} dan {c}. Mereka memadankan contoh, representasi atau jawapan yang berkaitan dengan {focus}. Setiap pasangan perlu memberi sebab bagi sekurang-kurangnya satu padanan.\n\nAktiviti 3 – Cabaran konteks sebenar (15 minit)\nGuru memberikan 3 kad tugasan berperingkat yang menggunakan objek/situasi kelas. Murid menyelesaikan tugasan secara berpasangan, kemudian bertukar satu tugasan dengan pasangan lain untuk semakan rakan.\n\nAktiviti 4 – Semakan individu (10 minit)\nMurid menjawab 5 item ringkas yang terus mengukur SP {sp_code}. Guru merekod murid yang mencapai sekurang-kurangnya 4/5 dan terus membimbing murid yang belum menguasai menggunakan {a}.'
+    )
+
+def _local_rph_text(s):
+    sk=(str(s.get('sk_code') or '').strip()+' '+str(s.get('sk_text') or '').strip()).strip()
+    sp=(str(s.get('sp_code') or '').strip()+' '+str(s.get('sp_text') or '').strip()).strip()
+    topic=str(s.get('topic') or '').strip(); sub=str(s.get('subtopic') or '').strip()
+    subject=str(s.get('subject') or '').strip(); year=str(s.get('year') or '').strip()
+    focus = sub if sub and sub!='Semua Subtopik' else topic
+    ped = curriculum_pedagogy_for(s)
+    if ped:
+        objective=ped['objective']; criteria=ped['success_criteria']; prior=ped['prior_knowledge']
+        bbm=ped['bbm']; emk=ped['emk_values']; pak=ped['pak21']; assessment=ped['assessment']
+        # Standard v7: BBM mesti menamakan bahan sebenar, bukan istilah umum.
+        if any(x in (bbm or '').lower() for x in ('bahan konkrit','bahan manipulatif','visual yang sesuai','bahan sedia ada','atau blok')):
+            bbm='Buku teks, '+_specific_material_pack(subject, topic, focus)
+        remedial=ped['remediation']; enrichment=ped['enrichment']
+        # Variation Engine: satu SP mempunyai beberapa reka bentuk PdP. Pilihan berubah pada setiap janaan.
+        import random as _r
+        _rng=_r.Random(str(s.get('variation_seed') or secrets.token_hex(4)))
+        base_ind=ped['induction']; base_act=ped['activities']
+        focus_label=(sub if sub and sub!='Semua Subtopik' else topic) or sp
+        # Untuk SP yang mempunyai bank aktiviti terperinci, gunakan variasi pedagogi khusus
+        # berasaskan kehendak DSKP/MOBIM, bukan variasi generik.
+        if year=='Tahun 1' and subject=='Matematik' and str(s.get('sp_code'))=='2.3.1':
+            variants=[
+              ('''5 minit\n1. Guru meletakkan 9 penutup botol di atas meja dan meminta seorang murid mengambil keluar 4.\n2. Murid mengira baki dan menyebut ayat “9 tolak 4 sama dengan 5”.\n3. Guru menulis 9 − 4 = 5 dan mengaitkan tindakan mengambil keluar dengan operasi tolak.''',
+               '''Aktiviti 1 – Ambil Keluar (15 minit)\nSetiap pasangan menerima 10–18 penutup botol dan kad fakta tolak. Murid membina bilangan pertama, mengambil keluar bilangan kedua, mengira baki dan menyebut ayat matematik. Pasangan menyemak dengan mengira semula.\n\nAktiviti 2 – Pangkah Gambar (15 minit)\nGuru mengedarkan kad bergambar, contohnya 10 belon dengan 4 belon perlu dipangkah. Murid memangkah, mengira baki dan menulis 10 − 4 = 6. Guru menukar daripada objek konkrit kepada gambar supaya murid melihat hubungan antara tindakan dan simbol.\n\nAktiviti 3 – Lompat Ke Belakang (15 minit)\nMurid menggunakan garis nombor 0–18. Bagi 13 − 5, murid bermula pada 13 dan membuat lima lompatan ke belakang. Murid membandingkan jawapan dengan kaedah objek/gambar.\n\nAktiviti 4 – Fakta Pantas (10 minit)\nGuru menunjukkan 5 kad fakta asas secara rawak. Murid menjawab pada papan mini. Selepas setiap item, seorang murid menerangkan strategi yang digunakan. Guru merekod murid yang masih perlu bahan konkrit.'''),
+              ('''5 minit\n1. Guru menunjukkan gambar 8 epal dan menutup 3 daripadanya dengan kad.\n2. Murid meneka bilangan yang masih kelihatan, kemudian menerangkan bagaimana mereka tahu.\n3. Guru memperkenalkan fokus “baki selepas sesuatu diambil”.''',
+               '''Aktiviti 1 – Cerita Tolak (15 minit)\nGuru menceritakan situasi ringkas: “Ada 7 ikan. 2 berenang pergi.” Murid melakonkan situasi menggunakan kad ikan, menyatakan bilangan asal, bilangan yang berkurang dan baki, kemudian menulis 7 − 2 = 5.\n\nAktiviti 2 – Padankan Tiga Kad (15 minit)\nDalam kumpulan, murid memadankan tiga jenis kad: kad situasi/gambar, kad ayat matematik dan kad jawapan. Contohnya gambar 9 bola dengan 5 dikeluarkan dipadankan dengan 9 − 5 dan 4. Setiap kumpulan perlu menerangkan satu padanan.\n\nAktiviti 3 – Cari Pasangan Saya (15 minit)\nSeparuh murid menerima kad soalan fakta tolak dan separuh lagi menerima kad jawapan. Murid bergerak mencari pasangan yang betul. Selepas berpasangan, mereka membuktikan jawapan menggunakan objek atau garis nombor.\n\nAktiviti 4 – Semakan Individu (10 minit)\nMurid menyelesaikan 5 item: dua bergambar, dua ayat matematik dan satu situasi harian. Sasaran penguasaan ialah sekurang-kurangnya 4 daripada 5 betul.'''),
+              ('''5 minit\n1. Guru memaparkan dua kumpulan: 9 sudu dan 5 garfu.\n2. Murid memadankan satu sudu dengan satu garfu dan memerhati objek yang tidak mempunyai pasangan.\n3. Guru mengaitkan baki yang tidak berpasangan dengan maksud “beza”.''',
+               '''Aktiviti 1 – Berapa Beza? (15 minit)\nPasangan murid menerima dua kumpulan objek yang berbeza bilangannya. Mereka membuat padanan satu-dengan-satu, mengira objek yang tidak berpasangan dan menulis ayat tolak, contohnya 9 − 5 = 4.\n\nAktiviti 2 – Keluarga Fakta (15 minit)\nGuru memberikan tiga nombor seperti 5, 8 dan 13. Dengan bimbingan, murid membina hubungan tambah dan tolak: 5 + 8 = 13, 8 + 5 = 13, 13 − 5 = 8 dan 13 − 8 = 5. Fokus diberikan pada tolak sebagai songsangan tambah.\n\nAktiviti 3 – Stesen Strategi (20 minit)\nStesen A menggunakan objek; Stesen B menggunakan gambar dipangkah; Stesen C menggunakan garis nombor; Stesen D menggunakan pengiraan mental bagi fakta yang telah dikuasai. Murid menyelesaikan fakta tolak yang sama dengan strategi berlainan dan menanda strategi yang paling membantu mereka.\n\nAktiviti 4 – Terangkan Cara Saya (10 minit)\nBeberapa murid memilih satu fakta tolak dan menerangkan strategi kepada kelas. Guru menilai ketepatan jawapan serta penggunaan bahasa matematik.'''),
+              ('''5 minit\n1. Guru menunjukkan 10 kad bintang. Seorang murid diminta menyembunyikan beberapa kad sehingga tinggal 6.\n2. Kelas menentukan berapa kad yang disembunyikan dan menerangkan cara mendapatkan jawapan.\n3. Guru mengaitkan aktiviti dengan mencari bahagian yang hilang melalui operasi tolak.''',
+               '''Aktiviti 1 – Kotak Misteri (15 minit)\nGuru menyediakan situasi seperti “10 objek, tinggal 6”. Murid menggunakan objek untuk menentukan berapa yang telah diambil. Mereka merekod 10 − 4 = 6 dan menyemak dengan menambah semula 6 + 4 = 10.\n\nAktiviti 2 – Bingo Tolak (15 minit)\nMurid mempunyai grid jawapan. Guru membacakan fakta tolak dalam lingkungan 18; murid mengira menggunakan strategi pilihan dan menanda jawapan. Untuk mendapat Bingo, murid perlu menerangkan sekurang-kurangnya satu pengiraan.\n\nAktiviti 3 – Bina Soalan Rakan (15 minit)\nSetiap pasangan memilih satu fakta tolak dan membina cerita ringkas menggunakan objek kelas, makanan atau permainan. Pasangan lain menulis ayat matematik dan menyelesaikannya.\n\nAktiviti 4 – Exit Ticket (10 minit)\nMurid menjawab 5 fakta asas tolak secara individu tanpa bantuan rakan. Murid yang belum mencapai 4/5 dibimbing semula menggunakan objek dalam lingkungan 10; murid yang menguasai membina satu cerita tolak sendiri.''')
+            ]
+        else:
+            # Semua SP lain juga mesti menggunakan bahan bernama secara terus.
+            named_materials=_specific_material_pack(subject, topic, focus_label)
+            bbm='Buku teks, '+named_materials
+            spec_ind,spec_act=_make_specific_local_activity(subject, topic, focus_label, s.get('sp_code',''), named_materials)
+            variants=[
+              (spec_ind, spec_act),
+          (f'''5 minit
+1. Guru memaparkan satu situasi harian ringkas berkaitan {focus_label} tanpa terus memberi jawapan.
+2. Murid berbincang dengan pasangan, menunjukkan idea menggunakan bahan yang tersedia dan berkongsi satu jawapan.
+3. Guru menghubungkan respons murid dengan fokus SP {s.get("sp_code","")}.''',
+           f'''Aktiviti 1 – Teroka (15 minit)
+Murid bekerja dalam kumpulan kecil menggunakan {ped['bbm'].split(',')[1].strip() if ',' in ped['bbm'] else 'bahan manipulatif'} untuk membina atau menunjukkan contoh {focus_label}. Guru menyoal “bagaimana kamu tahu?” dan membetulkan miskonsepsi semasa aktiviti.
+
+Aktiviti 2 – Bimbingan Buku Teks/Visual (20 minit)
+Guru memilih contoh yang sepadan dengan SP {s.get("sp_code","")} daripada buku teks atau visual setara. Murid menerangkan langkah, melengkapkan contoh secara berpasangan dan membandingkan jawapan.
+
+Aktiviti 3 – Cabaran Pasangan (15 minit)
+Setiap pasangan menerima kad tugasan berlainan. Murid A menyelesaikan/menunjukkan tugasan dan Murid B menyemak berdasarkan kriteria kejayaan; kemudian bertukar peranan.
+
+Aktiviti 4 – Individu (15 minit)
+Murid menjawab latihan pendek berperingkat daripada mudah kepada aplikasi. Guru mengumpulkan bukti pentaksiran dan terus memberi pemulihan kepada murid yang belum menguasai.'''),
+          (f'''5 minit
+1. Guru menjalankan aktiviti “Betul atau Salah” menggunakan satu contoh {focus_label}.
+2. Murid mengangkat kad respons dan memberi sebab. Guru menggunakan jawapan murid untuk mengenal pasti pengetahuan sedia ada.''',
+           f'''Aktiviti 1 – Demonstrasi Murid (15 minit)
+Beberapa murid menunjukkan cara menyelesaikan tugasan {focus_label} menggunakan bahan/visual. Rakan lain menyatakan apa yang dilakukan pada setiap langkah.
+
+Aktiviti 2 – Stesen Pembelajaran (30 minit)
+Stesen A: manipulatif/objek; Stesen B: gambar atau kad; Stesen C: simbol/latihan bertulis. Kumpulan bergerak mengikut stesen dan merekod jawapan. Tugasan setiap stesen kekal dalam skop SP {s.get("sp_code","")}.
+
+Aktiviti 3 – Semak Rakan (10 minit)
+Murid bertukar hasil kerja, menyemak satu jawapan dan menerangkan pembetulan jika perlu.
+
+Aktiviti 4 – Exit Ticket (10 minit)
+Murid menyelesaikan tugasan individu ringkas. Guru mengasingkan murid kepada kumpulan pengayaan atau pemulihan berdasarkan respons.'''),
+          (f'''5 minit
+1. Guru menggunakan objek/gambar misteri berkaitan {focus_label} dan meminta murid membuat jangkaan.
+2. Murid menerangkan jangkaan dengan ayat sendiri sebelum guru memperkenalkan fokus pembelajaran.''',
+           f'''Aktiviti 1 – Saya Buat, Kita Buat (20 minit)
+Guru memodelkan satu contoh sambil menyebut proses berfikir. Seterusnya kelas menyelesaikan dua contoh bersama dengan murid menentukan langkah seterusnya.
+
+Aktiviti 2 – Permainan Kad (20 minit)
+Dalam kumpulan 3–4 orang, murid mengambil kad tugasan {focus_label}, menyelesaikannya menggunakan bahan atau lakaran dan memperoleh mata apabila dapat menerangkan jawapan.
+
+Aktiviti 3 – Aplikasi Konteks Harian (15 minit)
+Murid menyelesaikan situasi mudah yang dekat dengan kehidupan mereka dan menerangkan bagaimana SP {s.get("sp_code","")} digunakan.
+
+Aktiviti 4 – Latihan Kendiri (10 minit)
+Murid menjawab beberapa item individu. Guru menyemak berdasarkan kriteria kejayaan.''')]
+        induction,activities=_rng.choice(variants)
+        # Variasikan juga penutup supaya keseluruhan RPH tidak kelihatan sebagai salinan template.
+        closings=[
+          '5 minit\n1. Murid menyebut satu perkara yang dipelajari dan menunjukkan satu contoh.\n2. Guru membuat semakan cepat berdasarkan kriteria kejayaan.',
+          '5 minit\n1. Guru menjalankan kuiz lisan 3 soalan.\n2. Murid menunjukkan isyarat ibu jari faham/perlu bantuan; guru merekod murid untuk tindakan susulan.',
+          '5 minit\n1. Secara Think-Pair-Share, murid menerangkan cara menyelesaikan satu tugasan.\n2. Guru merumuskan pembelajaran dan mengaitkannya dengan pelajaran seterusnya.'
+        ]
+        s['_local_closing']=_rng.choice(closings)
+    else:
+        objective=f'Pada akhir pembelajaran, murid dapat menunjukkan penguasaan berkaitan {focus} berdasarkan Standard Pembelajaran yang dipilih.'
+        criteria='Murid menunjukkan bukti pencapaian melalui tugasan yang selaras dengan Standard Pembelajaran.'
+        prior=f'Guru mengaktifkan pengetahuan sedia ada murid berkaitan {focus}.'
+        bbm='Buku teks, '+_specific_material_pack(subject, topic, focus)
+        emk='Nilai murni, komunikasi dan pembelajaran kendiri mengikut kesesuaian.'
+        pak='Soal jawab, perbincangan dan penerangan idea mengikut tahap murid.'
+        assessment='Pemerhatian, soal jawab dan semakan hasil kerja berdasarkan Standard Pembelajaran.'
+        induction=f'5 minit\n1. Guru mencetuskan pengetahuan sedia ada murid berkaitan {focus} menggunakan situasi atau bahan yang dekat dengan murid.\n2. Guru menghubungkan respons murid dengan fokus pembelajaran.'
+        induction,activities=_make_specific_local_activity(subject, topic, focus, s.get('sp_code',''), _specific_material_pack(subject, topic, focus))
+        remedial='Gunakan bahan konkrit atau visual dan pecahkan tugasan kepada langkah lebih kecil.'
+        enrichment='Berikan tugasan aplikasi atau penyelesaian masalah yang masih dalam skop SP yang sama.'
+    lines=[
+        f'MATA PELAJARAN: {subject}', f'TAHUN/TINGKATAN: {year}', f'TAJUK: {topic}',
+        f'STANDARD KANDUNGAN: {sk}', f'STANDARD PEMBELAJARAN: {sp}',
+        f'OBJEKTIF PEMBELAJARAN: {objective}', f'KRITERIA KEJAYAAN: {criteria}',
+        f'PENGETAHUAN SEDIA ADA: {prior}', f'BAHAN BANTU MENGAJAR: {bbm}',
+        f'EMK / NILAI: {emk}', f'KBAT / PAK21: {pak}', f'PENTAKSIRAN: {assessment}',
+        f'SET INDUKSI: {induction}', f'AKTIVITI UTAMA: {activities}',
+        f'PENUTUP: {s.get("_local_closing") or "5 minit\n1. Murid menyatakan semula perkara utama yang dipelajari.\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."}',
+        f'PEMULIHAN / PENGAYAAN: Pemulihan: {remedial}\nPengayaan: {enrichment}',
+        'REFLEKSI: ________ / ________ murid mencapai objektif. ________ murid belum mencapai objektif dan akan diberi tindakan susulan/pemulihan.'
+    ]
+    return '\n'.join(lines)
+
+
+def show_curriculum_sk(cid, s):
+    opts=curriculum_sk_options(s); state[cid]=s
+    if not opts:
+        return send(cid,'📘 <b>Data DSKP untuk pilihan ini belum tersedia.</b>\n\nSila pilih topik lain yang sudah mempunyai data kurikulum.',[[{'text':'⬅️ Pilih Topik Lain','callback_data':'sub_'+str(s.get('subject',''))}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    state[cid]['curr_sk_options']=opts
+    kb=[[{'text':f"{o['sk_code']} — {o['sk_text']}"[:60],'callback_data':f'csk_{i}'}] for i,o in enumerate(opts[:40])]
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,'📘 <b>Pilih Standard Kandungan (SK)</b>',kb)
+
+def show_curriculum_sp(cid, sk_index):
+    s=state.setdefault(cid,{}); opts=s.get('curr_sk_options') or []
+    if sk_index<0 or sk_index>=len(opts): return menu(cid)
+    sk=opts[sk_index]; s['sk_code'],s['sk_text']=sk['sk_code'],sk['sk_text']
+    sps=curriculum_sp_options(s, sk['sk_code'])
+    if not sps: return send(cid,'⚠️ Standard Pembelajaran untuk SK ini belum tersedia.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    s['curr_sp_options']=sps
+    kb=[[{'text':f"{o['sp_code']} — {o['sp_text']}"[:60],'callback_data':f'csp_{i}'}] for i,o in enumerate(sps[:50])]
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,f"📗 <b>{sk['sk_code']} {html.escape(sk['sk_text'])}</b>\n\nPilih Standard Pembelajaran (SP):",kb)
+
+def after_curriculum_selected(cid):
+    s=state.setdefault(cid,{})
+    if s.get('task') in ('rph','both'):
+        start_rph_session(cid)
+    elif s.get('task')=='worksheet':
+        worksheet_options_after_sp(cid)
+
+def worksheet_options_after_sp(cid):
+    s=state.setdefault(cid,{})
+    s['waiting_worksheet_config']=True
+    send(cid,'🔢 <b>Berapa soalan cikgu mahu?</b>\n\nWorksheet akan dibina berdasarkan SK/SP yang dipilih.',
+         [[{'text':'5 Soalan','callback_data':'wq_5'},{'text':'8 Soalan','callback_data':'wq_8'}],
+          [{'text':'10 Soalan','callback_data':'wq_10'},{'text':'12 Soalan','callback_data':'wq_12'}],
+          [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+def show_rph_sk(cid, s):
+    opts=curriculum_sk_options(s); state[cid]=s
+    if not opts:
+        return send(cid,'📘 <b>Topik ini belum mempunyai SK/SP yang disahkan dalam database.</b>\n\nJika pilihan ini bukan kandungan DSKP untuk tahun tersebut, CikguLaju tidak akan memaksa padanan atau mereka kod menggunakan AI. Sila pilih topik lain yang tersedia sementara database diperluaskan.',[[{'text':'⬅️ Pilih Topik Lain','callback_data':'sub_'+str(s.get('subject',''))}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    state[cid]['rph_sk_options']=opts
+    kb=[[{'text':f"{o['sk_code']} — {o['sk_text']}"[:60],'callback_data':f'rsk_{i}'}] for i,o in enumerate(opts[:40])]
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,'📘 <b>Pilih Standard Kandungan (SK)</b>\n\nSenarai ini diambil terus daripada database DSKP yang disahkan.',kb)
+
+
+def show_rph_sp(cid, sk_index):
+    s=state.setdefault(cid,{}); opts=s.get('rph_sk_options') or []
+    if sk_index<0 or sk_index>=len(opts): return menu(cid)
+    sk=opts[sk_index]; s['sk_code'],s['sk_text']=sk['sk_code'],sk['sk_text']
+    sps=curriculum_sp_options(s, sk['sk_code'])
+    if not sps: return send(cid,'⚠️ SP untuk SK ini belum ada dalam database yang disahkan.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    s['rph_sp_options']=sps
+    kb=[[{'text':f"{o['sp_code']} — {o['sp_text']}"[:60],'callback_data':f'rsp_{i}'}] for i,o in enumerate(sps[:50])]
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,f"📗 <b>{sk['sk_code']} {html.escape(sk['sk_text'])}</b>\n\nPilih Standard Pembelajaran (SP):",kb)
+
+
+def start_rph_session(cid):
+    send(cid,'🗓️ <b>Maklumat sesi RPH</b>\n\nCikgu mahu isi Tarikh, Kelas, Masa dan Bilangan Murid sekarang?\nHari akan dikesan secara automatik daripada Tarikh.',[[{'text':'✍️ Isi Maklumat Sesi','callback_data':'rphsession_fill'},{'text':'⏭️ Biarkan Kosong','callback_data':'rphsession_blank'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+# DuitNow QR untuk Sumbangan Ikhlas. Disimpan terus dalam fail Python supaya
+# deploy satu fail di Render tetap boleh memaparkan QR tanpa aset berasingan.
+DONATION_QR_B64 = "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W5/pSbv8A7u3dtR000m/7fqHVtdand6utq1++dTenSsM0NXT0dx2f76tqijT4nl5baN1ulrbrea+nU+GnSVNLxmEdn6fZqVOrTrV1a2nput09JSNPZUVdl6u6r1K01U+GlYd4Nah0ez8PPuqX/lz5d45Fny/s38W5/pSV6VP666NOj3kOKouOrdV77V2+jpaFboV3VRSr9WPtDWWluXr6OjXXpumilulWZwdsVafvGtuqa6VLqVKldJNxra+hRtdHT09D3+snxVKlQ03CRuNftTaU6VGrTo8FbhUKlQztVR2ZrqI/Srf3Xl3jkWfL+zfxbn+lPdtuz9Pb7jX1lXVVVqZnpLk3/ZGpTpRtlVXxavHWm0bijtvdaK0K9tRTRKumlj+5utjv11PdbbU0NJVrS0qUrqJQ9t2pvN3tqtzo00UadU2Z2v/67cf0X/wB8u8ciz5f2caVW6b+lJX+JXZNKerT2fv69v733a11RRwNzwypqN37cdobTsXtrVaor3un2pq7XaUKnpReWusI/OHaGrp9hU6Gn73Uq2NO93/u6E2tOIVNCbUOplH4gbKvU19Crs7e7fVp2mtr0vWpoVMaVM+mpnZ/t1vtF0a3ajT0dLsvS19enS0/11a24r/RTT/Y1fxC2j099prs/ebfX0tjq7ij31NHC+DGKmdm9pb7tL2UW43u21dHXenTx8dCoVbs+KlJv11Pl3jkWfL9jtV/te295wVa+i6aa/o4OyPw1ew3G0q1t1sdfS0a1U52aWpVDn4+I0PYKintntXf62+95RuVuHo6PBbRr3CiqrN3BpfhpXR2HrbF9rcWvqa+jXVrVaUp6eioo0nTODR/DPWop7R/8AI7eivc7T9nT0tt7tUJ1qqpwqjf8A4d1bvS31NPaVND1tzt66Z0eKlUbejgpoam5R+HNX/HdpbarebSjU3NFFFOro7RabpSqVTTvdODdLX2XYWltt1uKdbXhUOumhUKqHNqViF5d45Fny9FVVFSqpbTTlNG29omqUtfSba9VJ+Ytn+61f8I/MWz/dav8AhH5i2f7rV/wj8xbP91q/4Rqe0egl/wBehW394Ru95r7vV49V/wBEsLy7xyLPzWrllkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkslkv57/8QATBEAA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"
+_donation_qr_file_id = None
+
+# Senarai topik pilihan mengikut tahap/subjek.
+# Direka untuk kegunaan menu bot dan boleh dikemas kini kemudian jika cikgu mahu
+# nama unit yang sama 100% seperti buku teks/DSKP sekolah masing-masing.
+TOPICS = {
+    'Tahun 1': {
+        'Bahasa Melayu': ['Kemahiran Mendengar dan Bertutur','Kemahiran Membaca','Kemahiran Menulis','Huruf, Suku Kata dan Perkataan','Ayat Mudah','Kata Nama','Kata Kerja','Kata Adjektif','Kata Tanya','Kata Perintah','Penjodoh Bilangan','Simpulan Bahasa Mudah'],
+        'Bahasa Inggeris': ['Greetings and Introductions','Myself and Family','School and Classroom','Numbers and Colours','Food and Drinks','Animals','Body Parts','Daily Routines','Listening and Speaking','Reading','Writing','Basic Grammar and Vocabulary'],
+        'Matematik': ['Nombor hingga 100','Tambah','Tolak','Pecahan Asas','Wang','Masa dan Waktu','Panjang','Jisim','Isi Padu Cecair','Bentuk 2D dan 3D','Kedudukan','Pengurusan Data'],
+        'Sains': ['Kemahiran Saintifik','Benda Hidup dan Benda Bukan Hidup','Manusia','Haiwan','Tumbuhan','Deria Manusia','Magnet','Penyerapan','Bumi','Teknologi dan Kehidupan'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Ibadah','Sirah','Adab','Jawi'],
+    },
+    'Tahun 2': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Menulis','Perkataan dan Frasa','Ayat Tunggal','Kata Nama','Kata Kerja','Kata Adjektif','Kata Hubung','Kata Tanya','Penjodoh Bilangan','Peribahasa Mudah'],
+        'Bahasa Inggeris': ['My World','At School','Food','Animals','Home','Free Time','Health and Hygiene','Listening and Speaking','Reading','Writing','Grammar','Vocabulary'],
+        'Matematik': ['Nombor hingga 1000','Tambah','Tolak','Darab','Bahagi','Pecahan','Wang','Masa dan Waktu','Panjang','Jisim','Isi Padu Cecair','Bentuk','Data'],
+        'Sains': ['Kemahiran Saintifik','Manusia','Haiwan','Tumbuhan','Pembiakan dan Pertumbuhan','Cahaya dan Bayang-bayang','Elektrik Asas','Campuran','Bumi dan Angkasa','Teknologi'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Ibadah','Sirah','Adab','Jawi'],
+    },
+    'Tahun 3': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Menulis','Ayat Tunggal dan Ayat Majmuk','Kata Nama','Kata Kerja','Kata Adjektif','Kata Sendi Nama','Kata Hubung','Imbuhan Asas','Penjodoh Bilangan','Peribahasa'],
+        'Bahasa Inggeris': ['People and Family','School Life','Food and Health','Nature and Animals','Places','Hobbies','Daily Activities','Listening','Speaking','Reading','Writing','Grammar and Vocabulary'],
+        'Matematik': ['Nombor hingga 10 000','Tambah','Tolak','Darab','Bahagi','Pecahan','Perpuluhan Asas','Wang','Masa dan Waktu','Panjang, Jisim dan Isi Padu','Bentuk dan Ruang','Data'],
+        'Sains': ['Kemahiran Saintifik','Manusia','Haiwan','Tumbuhan','Gigi','Makanan dan Pencernaan','Magnet','Ketumpatan','Asid dan Alkali Asas','Sistem Suria','Teknologi'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Ibadah','Sirah','Adab','Jawi'],
+    },
+    'Tahun 4': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca dan Memahami','Penulisan','Kata Nama','Kata Kerja','Kata Adjektif','Kata Ganda','Kata Majmuk','Imbuhan','Ayat Aktif dan Pasif','Peribahasa','Seni Bahasa'],
+        'Bahasa Inggeris': ['Where Are You From?','My Week','In the Past','Celebrations','Eating Right','Getting Around','Helping Out','Amazing Animals','Listening','Speaking','Reading','Writing','Grammar and Vocabulary'],
+        'Matematik': ['Nombor Bulat dan Operasi Asas','Pecahan','Perpuluhan','Wang','Masa dan Waktu','Panjang, Jisim dan Isi Padu Cecair','Ruang','Koordinat','Nisbah dan Kadaran Asas','Pengurusan Data'],
+        'Sains': ['Kemahiran Saintifik','Manusia','Haiwan','Tumbuhan','Sifat Bahan','Tenaga','Cahaya','Bunyi','Bumi','Sistem Suria','Teknologi'],
+        'Sejarah': ['Mari Belajar Sejarah','Saya dan Keluarga','Sejarah Sekolah','Tempat Tinggal Saya','Zaman Prasejarah','Kerajaan Melayu Awal','Tokoh Terbilang Kesultanan Melayu Melaka','Warisan Kesultanan Melayu Melaka'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Ibadah','Sirah','Adab','Jawi'],
+    },
+    'Tahun 5': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Penulisan','Tatabahasa','Kata Terbitan','Kata Ganda','Kata Majmuk','Ayat Aktif dan Pasif','Ayat Majmuk','Peribahasa','Seni Bahasa','Ulasan dan Karangan'],
+        'Bahasa Inggeris': ['Town and Community','Days and Activities','Past Events','Culture and Celebrations','Health','Travel','Helping Others','Nature','Listening','Speaking','Reading','Writing','Grammar and Vocabulary'],
+        'Matematik': ['Nombor Bulat dan Operasi','Pecahan','Perpuluhan','Peratus','Wang','Masa dan Waktu','Panjang, Jisim dan Isi Padu','Ruang','Koordinat','Nisbah dan Kadaran','Pengurusan Data'],
+        'Sains': ['Kemahiran Saintifik','Manusia','Haiwan','Tumbuhan','Elektrik','Haba','Pengaratan','Jirim','Fasa Bulan dan Buruj','Mesin','Teknologi'],
+        'Sejarah': ['Institusi Raja','Agama Islam di Malaysia','Bahasa Melayu','Kedaulatan Negara','Identiti Negara','Rukun Negara','Yang di-Pertuan Agong','Jata Negara','Bendera Kebangsaan','Lagu Kebangsaan'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Ibadah','Sirah','Adab','Jawi'],
+    },
+    'Tahun 6': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Penulisan','Tatabahasa','Morfologi','Sintaksis','Peribahasa','Seni Bahasa','Ringkasan','Ulasan','Karangan Berformat','Karangan Tidak Berformat'],
+        'Bahasa Inggeris': ['Personal Life','School and Learning','Health and Lifestyle','Technology','Environment','Travel','Culture','Community','Listening','Speaking','Reading','Writing','Grammar and Vocabulary'],
+        'Matematik': ['Nombor dan Operasi','Pecahan','Perpuluhan','Peratus','Wang','Masa dan Waktu','Ukuran dan Sukatan','Ruang','Koordinat','Nisbah dan Kadaran','Pengurusan Data','Penyelesaian Masalah'],
+        'Sains': ['Kemahiran Saintifik','Manusia','Mikroorganisma','Interaksi antara Hidupan','Pemeliharaan dan Pemuliharaan','Daya','Kelajuan','Teknologi Makanan','Bahan Buangan','Gerhana','Galaksi','Teknologi'],
+        'Sejarah': ['Pembentukan Malaysia','Negeri-negeri di Malaysia','Rukun Negara dan Perpaduan','Kaum dan Etnik','Agama dan Kepercayaan','Perayaan Masyarakat Malaysia','Pemimpin Negara','Kemajuan Ekonomi','Sukan Kebanggaan Negara','Malaysia di Persada Dunia'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Ibadah','Sirah','Adab','Jawi'],
+    },
+    'Tingkatan 1': {
+        'Bahasa Melayu': ['Kemahiran Mendengar dan Bertutur','Membaca','Menulis','Tatabahasa','Komsas','Ringkasan','Ulasan','Karangan','Peribahasa','Seni Bahasa'],
+        'Bahasa Inggeris': ['People and Culture','School and Education','Health','Environment','Technology','Travel','Listening','Speaking','Reading','Writing','Grammar','Literature'],
+        'Matematik': ['Nombor Nisbah','Faktor dan Gandaan','Kuasa Dua, Punca Kuasa Dua, Kuasa Tiga dan Punca Kuasa Tiga','Nisbah, Kadar dan Kadaran','Ungkapan Algebra','Persamaan Linear','Ketaksamaan Linear','Garis dan Sudut','Poligon Asas','Perimeter dan Luas','Pengenalan Set','Pengendalian Data'],
+        'Sains': ['Pengenalan kepada Penyiasatan Saintifik','Sel sebagai Unit Asas Hidupan','Koordinasi dan Gerak Balas','Pembiakan','Jirim','Jadual Berkala Asas','Udara','Cahaya dan Optik','Bumi'],
+        'Sejarah': ['Mengenali Sejarah','Zaman Air Batu','Zaman Prasejarah','Tamadun Awal Dunia','Peningkatan Tamadun Yunani dan Rom','Peningkatan Tamadun India dan China','Tamadun Islam dan Sumbangannya','Seni Bina Tamadun'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Fikah','Sirah dan Tamadun Islam','Akhlak Islamiah'],
+    },
+    'Tingkatan 2': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Menulis','Tatabahasa','Komsas','Ringkasan','Ulasan','Karangan','Peribahasa','Seni Bahasa'],
+        'Bahasa Inggeris': ['Family and Society','Health','Science and Technology','Environment','Consumerism','Travel','Listening','Speaking','Reading','Writing','Grammar','Literature'],
+        'Matematik': ['Pola dan Jujukan','Pemfaktoran dan Pecahan Algebra','Rumus Algebra','Poligon','Bulatan','Bentuk Geometri Tiga Dimensi','Koordinat','Graf Fungsi','Laju dan Pecutan','Kecerunan Garis Lurus','Transformasi Isometri','Sukatan Kecenderungan Memusat','Kebarangkalian Mudah'],
+        'Sains': ['Biodiversiti','Ekosistem','Nutrisi','Kesihatan Manusia','Air dan Larutan','Asid dan Alkali','Keelektrikan dan Kemagnetan','Daya dan Gerakan','Haba','Gelombang Bunyi','Bintang dan Galaksi','Sistem Suria','Meteoroid, Asteroid dan Komet'],
+        'Sejarah': ['Kerajaan Alam Melayu','Sistem Pemerintahan dan Kegiatan Ekonomi','Sosiobudaya Masyarakat Kerajaan Alam Melayu','Agama, Kepercayaan dan Keunikan Warisan','Kesultanan Melayu Melaka','Kesultanan Johor Riau','Kesultanan Melayu Pahang, Perak, Terengganu dan Selangor','Kerajaan Kedah, Kelantan, Negeri Sembilan dan Perlis','Warisan Kerajaan Kedah, Kelantan, Negeri Sembilan dan Perlis','Sarawak dan Sabah'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Fikah','Sirah dan Tamadun Islam','Akhlak Islamiah'],
+    },
+    'Tingkatan 3': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Menulis','Tatabahasa','Komsas','Rumusan','Ulasan','Karangan','Peribahasa','Seni Bahasa'],
+        'Bahasa Inggeris': ['People and Culture','Health','Science and Technology','Environment','Money and Consumerism','Travel','Listening','Speaking','Reading','Writing','Grammar','Literature'],
+        'Matematik': ['Indeks','Bentuk Piawai','Matematik Pengguna: Simpanan dan Pelaburan, Kredit dan Hutang','Lukisan Berskala','Nisbah Trigonometri','Sudut dan Tangen bagi Bulatan','Pelan dan Dongakan','Lokus dalam Dua Dimensi','Garis Lurus'],
+        'Sains': ['Rangsangan dan Gerak Balas','Respirasi','Pengangkutan','Kereaktifan Logam','Termokimia','Elektrik dan Kemagnetan','Tenaga dan Kuasa','Keradioaktifan','Cuaca Angkasa Lepas','Penerokaan Angkasa Lepas'],
+        'Sejarah': ['Kedatangan Kuasa Barat','Pentadbiran Negeri-negeri Selat','Pentadbiran Negeri-negeri Melayu Bersekutu','Pentadbiran Negeri-negeri Melayu Tidak Bersekutu','Pentadbiran Barat di Sarawak dan Sabah','Kesan Pentadbiran Barat terhadap Ekonomi dan Sosial','Penentangan Masyarakat Tempatan','Kebijaksanaan Raja dan Pembesar Melayu Menangani Cabaran Barat'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Fikah','Sirah dan Tamadun Islam','Akhlak Islamiah'],
+    },
+    'Tingkatan 4': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Menulis','Tatabahasa','Komsas','Rumusan','Karangan Respons Terhad','Karangan Respons Terbuka','Peribahasa','Seni Bahasa'],
+        'Bahasa Inggeris': ['People and Culture','Health','Science and Technology','Environment','Consumerism','Travel','Listening','Speaking','Reading','Writing','Grammar','Literature'],
+        'Matematik': ['Fungsi dan Persamaan Kuadratik dalam Satu Pemboleh Ubah','Asas Nombor','Penaakulan Logik','Operasi Set','Rangkaian dalam Teori Graf','Ketaksamaan Linear dalam Dua Pemboleh Ubah','Graf Gerakan','Sukatan Serakan Data Tak Terkumpul','Kebarangkalian Peristiwa Bergabung','Matematik Pengguna: Pengurusan Kewangan'],
+        'Sains': ['Langkah Keselamatan di dalam Makmal','Bantuan Kecemasan','Teknik Mengukur Parameter Kesihatan Badan','Teknologi Hijau dalam Melestarikan Alam','Genetik','Sokongan, Pergerakan dan Pertumbuhan','Koordinasi Badan','Unsur dan Bahan','Kimia Industri','Kimia dalam Perubatan dan Kesihatan','Daya dan Gerakan','Tenaga Nuklear'],
+        'Sejarah': ['Warisan Negara Bangsa','Kebangkitan Nasionalisme','Konflik Dunia dan Pendudukan Jepun di Negara Kita','Era Peralihan Kuasa British di Negara Kita','Persekutuan Tanah Melayu 1948','Ancaman Komunis dan Perisytiharan Darurat','Usaha ke Arah Kemerdekaan','Pilihan Raya','Perlembagaan Persekutuan Tanah Melayu 1957','Pemasyhuran Kemerdekaan'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Fikah','Sirah dan Tamadun Islam','Akhlak Islamiah'],
+    },
+    'Tingkatan 5': {
+        'Bahasa Melayu': ['Mendengar dan Bertutur','Membaca','Menulis','Tatabahasa','Komsas','Rumusan','Karangan Respons Terhad','Karangan Respons Terbuka','Peribahasa','Seni Bahasa'],
+        'Bahasa Inggeris': ['People and Culture','Health','Science and Technology','Environment','Consumerism','Travel','Listening','Speaking','Reading','Writing','Grammar','Literature'],
+        'Matematik': ['Ubahan','Matriks','Matematik Pengguna: Insurans','Matematik Pengguna: Percukaian','Kongruen, Pembesaran dan Gabungan Transformasi','Nisbah dan Graf Fungsi Trigonometri','Sukatan Serakan Data Terkumpul','Pemodelan Matematik'],
+        'Sains': ['Mikroorganisma','Nutrisi dan Teknologi Makanan','Kelestarian Alam Sekitar','Kadar Tindak Balas','Sebatian Karbon','Elektrokimia','Cahaya dan Optik','Daya dan Tekanan','Teknologi Angkasa Lepas'],
+        'Sejarah': ['Kedaulatan Negara','Perlembagaan Persekutuan','Raja Berperlembagaan dan Demokrasi Berparlimen','Sistem Persekutuan','Pembentukan Malaysia','Cabaran Selepas Pembentukan Malaysia','Membina Kesejahteraan Negara','Membina Kemakmuran Negara','Dasar Luar Malaysia','Kecemerlangan Malaysia di Persada Dunia'],
+        'Pendidikan Islam': ['Al-Quran','Hadis','Akidah','Fikah','Sirah dan Tamadun Islam','Akhlak Islamiah'],
+    },
+}
+
+
+# =========================
+# SUBTOPIK TETAP
+# =========================
+# Tidak dijana oleh Gemini. Pilihan yang sama akan sentiasa menghasilkan
+# senarai subtopik yang sama.
+
+SCIENCE_FIXED = {
+    'Sistem Suria': ['Matahari sebagai pusat Sistem Suria','Planet dalam Sistem Suria','Urutan planet','Putaran dan peredaran','Kepentingan Sistem Suria'],
+    'Fasa Bulan dan Buruj': ['Pergerakan Bulan','Fasa-fasa Bulan','Buruj','Kegunaan buruj','Pemerhatian langit'],
+    'Gerhana': ['Gerhana Matahari','Gerhana Bulan','Kedudukan Matahari-Bumi-Bulan','Keselamatan pemerhatian'],
+    'Galaksi': ['Bima Sakti','Kedudukan Sistem Suria','Bintang dan galaksi','Saiz dan skala angkasa'],
+    'Elektrik': ['Litar elektrik','Komponen litar','Konduktor dan penebat','Litar bersiri dan selari','Keselamatan elektrik'],
+    'Haba': ['Sumber haba','Pengaliran haba','Pengembangan dan pengecutan','Aplikasi haba'],
+    'Cahaya': ['Sumber cahaya','Cahaya bergerak lurus','Pantulan cahaya','Bayang-bayang','Aplikasi cahaya'],
+    'Bunyi': ['Sumber bunyi','Getaran','Perambatan bunyi','Kekuatan dan kelangsingan','Kegunaan bunyi'],
+    'Magnet': ['Kutub magnet','Tarikan dan tolakan','Bahan magnet dan bukan magnet','Kegunaan magnet'],
+    'Manusia': ['Struktur dan fungsi tubuh','Keperluan asas manusia','Pertumbuhan dan perkembangan','Kesihatan dan penjagaan diri'],
+    'Haiwan': ['Ciri haiwan','Habitat','Pemakanan','Pembiakan','Penyesuaian'],
+    'Tumbuhan': ['Bahagian tumbuhan','Keperluan tumbuhan','Pertumbuhan','Pembiakan','Penyesuaian'],
+    'Jirim': ['Pepejal, cecair dan gas','Ciri keadaan jirim','Perubahan keadaan jirim','Kitaran perubahan jirim'],
+    'Daya': ['Jenis daya','Kesan daya','Geseran','Aplikasi daya'],
+    'Kelajuan': ['Maksud kelajuan','Jarak dan masa','Pengiraan kelajuan','Faktor mempengaruhi pergerakan'],
+    'Mikroorganisma': ['Jenis mikroorganisma','Keperluan hidup','Kegunaan','Kesan berbahaya','Pencegahan penyakit'],
+    'Biodiversiti': ['Kepelbagaian organisma','Pengelasan organisma','Habitat','Kepentingan biodiversiti','Pemuliharaan'],
+    'Ekosistem': ['Habitat','Rantai makanan','Siratan makanan','Interaksi organisma','Keseimbangan ekosistem'],
+    'Nutrisi': ['Kelas makanan','Diet seimbang','Sistem pencernaan','Penyerapan nutrien','Amalan pemakanan sihat'],
+    'Asid dan Alkali': ['Sifat asid','Sifat alkali','Penunjuk','Nilai pH','Peneutralan'],
+    'Keelektrikan dan Kemagnetan': ['Cas elektrik','Arus dan voltan','Litar elektrik','Magnet dan elektromagnet','Aplikasi harian'],
+    'Daya dan Gerakan': ['Jenis daya','Gerakan','Halaju dan pecutan','Graf gerakan','Aplikasi daya'],
+    'Keradioaktifan': ['Sinaran mengion','Jenis sinaran','Kegunaan radioisotop','Risiko dan keselamatan'],
+    'Genetik': ['DNA dan gen','Kromosom','Pewarisan','Variasi','Mutasi'],
+    'Tenaga Nuklear': ['Tenaga nuklear','Pembelahan nukleus','Kegunaan','Risiko','Pengurusan sisa'],
+    'Elektrokimia': ['Elektrolit','Elektrolisis','Sel kimia','Aplikasi elektrokimia','Keselamatan'],
+}
+
+MATH_FIXED = {
+    'Tambah': ['Fakta asas tambah','Tambah tanpa mengumpul semula','Tambah dengan mengumpul semula','Penyelesaian masalah'],
+    'Tolak': ['Fakta asas tolak','Tolak tanpa mengumpul semula','Tolak dengan mengumpul semula','Penyelesaian masalah'],
+    'Darab': ['Konsep darab','Sifir','Darab nombor','Penyelesaian masalah'],
+    'Bahagi': ['Konsep bahagi','Fakta asas bahagi','Bahagi nombor','Penyelesaian masalah'],
+    'Pecahan': ['Pecahan wajar','Pecahan setara','Banding pecahan','Operasi pecahan','Penyelesaian masalah'],
+    'Perpuluhan': ['Nilai tempat','Banding perpuluhan','Tambah dan tolak','Darab dan bahagi','Penyelesaian masalah'],
+    'Peratus': ['Konsep peratus','Tukar pecahan/perpuluhan/peratus','Peratus daripada kuantiti','Penyelesaian masalah'],
+    'Wang': ['Nilai wang','Tambah dan tolak wang','Darab dan bahagi wang','Diskaun / baki','Penyelesaian masalah'],
+    'Masa dan Waktu': ['Jam dan minit','Tempoh masa','Kalendar','Penukaran unit masa','Penyelesaian masalah'],
+    'Pengurusan Data': ['Kumpul data','Jadual','Carta / graf','Tafsir data','Penyelesaian masalah'],
+    'Nombor Nisbah': ['Integer','Pecahan','Perpuluhan','Nombor positif dan negatif','Operasi gabungan'],
+    'Ungkapan Algebra': ['Pemboleh ubah','Sebutan algebra','Pekali','Permudahkan ungkapan','Nilai ungkapan'],
+    'Persamaan Linear': ['Maksud persamaan','Persamaan satu pemboleh ubah','Kaedah penyelesaian','Masalah berayat'],
+    'Indeks': ['Hukum indeks','Pendaraban indeks','Pembahagian indeks','Kuasa sifar dan negatif','Penyelesaian masalah'],
+    'Bentuk Piawai': ['Nombor dalam bentuk piawai','Penukaran bentuk','Operasi bentuk piawai','Aplikasi'],
+    'Matriks': ['Pengenalan matriks','Peringkat matriks','Tambah dan tolak','Darab skalar','Aplikasi matriks'],
+    'Ubahan': ['Ubahan langsung','Ubahan songsang','Ubahan bergabung','Persamaan ubahan','Penyelesaian masalah'],
+}
+
+HISTORY_FIXED = {
+    'Zaman Prasejarah': ['Maksud Zaman Prasejarah','Lokasi dan tempoh','Cara hidup','Peralatan','Sumbangan dan warisan'],
+    'Kesultanan Melayu Melaka': ['Pengasasan','Sistem pentadbiran','Kegiatan ekonomi','Hubungan luar','Warisan'],
+    'Pembentukan Malaysia': ['Idea pembentukan','Faktor pembentukan','Langkah pembentukan','Reaksi wilayah dan negara jiran','Pengisytiharan Malaysia'],
+    'Kedatangan Kuasa Barat': ['Faktor kedatangan','Kuasa Barat terlibat','Strategi penguasaan','Kesan kepada negeri Melayu','Reaksi masyarakat'],
+    'Kedaulatan Negara': ['Konsep kedaulatan','Ciri negara berdaulat','Kepentingan kedaulatan','Langkah mempertahankan kedaulatan'],
+    'Perlembagaan Persekutuan': ['Latar belakang','Ciri utama','Keluhuran Perlembagaan','Hak dan tanggungjawab','Kepentingan'],
+}
+
+def get_subtopics(year_label, subject, topic):
+    if subject == 'Sains':
+        return SCIENCE_FIXED.get(topic, [
+            f'Konsep asas {topic}', f'Ciri-ciri {topic}', f'Proses / hubungan dalam {topic}',
+            f'Aplikasi {topic}', f'Kepentingan {topic}'
+        ])
+    if subject == 'Matematik':
+        return MATH_FIXED.get(topic, [
+            f'Konsep asas {topic}', f'Istilah dan simbol {topic}', f'Kaedah / langkah {topic}',
+            f'Latihan pengiraan {topic}', f'Penyelesaian masalah {topic}'
+        ])
+    if subject == 'Sejarah':
+        return HISTORY_FIXED.get(topic, [
+            f'Latar belakang {topic}', 'Tokoh / pihak berkaitan', 'Peristiwa penting',
+            'Kesan dan perubahan', 'Kepentingan / iktibar'
+        ])
+    if subject == 'Bahasa Melayu':
+        return [f'Pengenalan {topic}', f'Mengenal pasti {topic}', f'Penggunaan {topic} dalam ayat',
+                'Latihan pemahaman', 'Latihan penulisan / aplikasi']
+    if subject == 'Bahasa Inggeris':
+        return [f'Introduction to {topic}', 'Key vocabulary', 'Grammar / language focus',
+                'Reading / comprehension', 'Writing / application']
+    if subject == 'Pendidikan Islam':
+        return [f'Pengenalan {topic}', 'Pengertian dan konsep', 'Dalil / contoh berkaitan',
+                'Amalan dalam kehidupan', 'Pengajaran dan penghayatan']
+    return [f'Pengenalan {topic}', 'Konsep utama', 'Contoh dan aplikasi', 'Latihan', 'Pengukuhan']
+
+
+SUBJECTS = [
+    ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
+    ('➗ Matematik','Matematik'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
+    ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
+]
+
+# Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
+# Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
+SUBJECTS_BY_GRADE = {
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tahun 5': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tahun 6': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tingkatan 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tingkatan 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tingkatan 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tingkatan 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+    'Tingkatan 5': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
+}
+SUBJECT_LABEL = {sub:label for label,sub in SUBJECTS}
+
+def send(cid, text, kb=None, parse_html=True, reply_keyboard=None):
+    p = {'chat_id': cid, 'text': text}
+    if parse_html:
+        p['parse_mode'] = 'HTML'
+    if kb:
+        p['reply_markup'] = {'inline_keyboard': kb}
+    elif reply_keyboard:
+        p['reply_markup'] = {
+            'keyboard': reply_keyboard,
+            'resize_keyboard': True,
+            'is_persistent': True
+        }
+    r = requests.post(f'{API}/sendMessage', json=p, timeout=20)
+    return r
+
+
+def install_menu_button(cid):
+    """Paparkan butang ☰ Menu secara kekal di bawah ruang menaip Telegram."""
+    send(cid, '☰ <b>Menu CikguLaju tersedia di bawah.</b>',
+         reply_keyboard=[[{'text':'☰ Menu'}]])
+
+
+def send_long_plain(cid, text):
+    """Hantar output AI tanpa HTML dan pecahkan ikut had Telegram."""
+    text = (text or '').strip()
+    if not text:
+        send(cid, '⚠️ Gemini tidak memulangkan jawapan. Cuba sekali lagi.')
+        return
+    limit = 3900
+    while len(text) > limit:
+        cut = text.rfind('\n', 0, limit)
+        if cut < 1000:
+            cut = limit
+        send(cid, text[:cut], parse_html=False)
+        text = text[cut:].lstrip()
+    if text:
+        send(cid, text, parse_html=False)
+
+
+
+def safe_filename(value):
+    clean = re.sub(r'[^A-Za-z0-9_-]+', '_', value or 'Bahan')
+    return clean.strip('_')[:60] or 'Bahan'
+
+def send_document(cid, path, caption=''):
+    with open(path, 'rb') as f:
+        data = {'chat_id': str(cid), 'caption': caption}
+        return requests.post(
+            f'{API}/sendDocument',
+            data=data,
+            files={'document': (os.path.basename(path), f)},
+            timeout=60
+        )
+
+
+def send_donation_qr(cid):
+    """Hantar QR DuitNow sumbangan; selepas muat naik pertama, guna Telegram file_id."""
+    global _donation_qr_file_id
+    caption = (
+        '💛 <b>SUMBANGAN IKHLAS CIKGULAJU AI</b>\n\n'
+        'CikguLaju AI boleh digunakan <b>secara percuma</b>. Tiada bayaran wajib.\n\n'
+        'Jika bot ini membantu urusan cikgu, sumbangan ikhlas amat dihargai untuk membantu kos operasi, penyelenggaraan, pembangunan ciri baharu serta menghargai masa dan usaha pembangunan CikguLaju.\n\n'
+        '📱 <b>Cara menyumbang:</b> Imbas QR DuitNow di atas menggunakan aplikasi bank atau e-Wallet yang menyokong DuitNow QR.\n\n'
+        '🙏 <i>Sumbangan adalah sepenuhnya sukarela. Tidak menyumbang tidak menjejaskan penggunaan bot.</i>'
+    )
+    kb = {'inline_keyboard': [[{'text':'🏠 Menu Utama','callback_data':'home'}]]}
+    data = {
+        'chat_id': str(cid),
+        'caption': caption,
+        'parse_mode': 'HTML',
+        'reply_markup': __import__('json').dumps(kb, ensure_ascii=False),
+    }
+
+    try:
+        if _donation_qr_file_id:
+            data['photo'] = _donation_qr_file_id
+            r = requests.post(f'{API}/sendPhoto', data=data, timeout=30)
+        else:
+            qr_bytes = base64.b64decode(DONATION_QR_B64)
+            r = requests.post(
+                f'{API}/sendPhoto',
+                data=data,
+                files={'photo': ('CikguLaju_DuitNow_QR.jpg', BytesIO(qr_bytes), 'image/jpeg')},
+                timeout=45
+            )
+            if r.ok:
+                try:
+                    photos = r.json().get('result', {}).get('photo', [])
+                    if photos:
+                        _donation_qr_file_id = photos[-1].get('file_id') or _donation_qr_file_id
+                except Exception:
+                    pass
+        if not r.ok:
+            raise RuntimeError(f'Telegram sendPhoto HTTP {r.status_code}: {r.text[:160]}')
+        return r
+    except Exception as e:
+        print('Donation QR send error:', repr(e), flush=True)
+        # Fallback supaya menu sumbangan tidak senyap jika penghantaran gambar gagal.
+        return send(
+            cid,
+            caption + '\n\n⚠️ QR tidak dapat dipaparkan buat sementara waktu. Sila cuba semula.',
+            [[{'text':'🔄 Cuba Papar QR','callback_data':'donate'}],
+             [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+        )
+
+def clean_doc_text(value):
+    return re.sub(r'[^\x09\x0A\x0D\x20-\x7E\u00A0-\u024F]', '', value or '')
+
+def _is_heading_line(line):
+    u = line.strip().upper()
+    return (
+        u.startswith('BAHAGIAN ') or
+        u.startswith('SECTION ') or
+        u.startswith('ARAHAN') or
+        u.startswith('SKEMA JAWAPAN') or
+        u.startswith('JAWAPAN') or
+        u.startswith('AKTIVITI ') or
+        u.startswith('OBJEKTIF PEMBELAJARAN') or
+        u.startswith('KRITERIA KEJAYAAN') or
+        u.startswith('SET INDUKSI') or
+        u.startswith('LANGKAH PENGAJARAN') or
+        u.startswith('PENTAKSIRAN') or
+        u.startswith('REFLEKSI')
+    )
+
+def _is_question_line(line):
+    return bool(re.match(r'^\s*(?:SOALAN\s*)?\d+[\.\)]\s+', line, flags=re.I))
+
+def _is_option_line(line):
+    return bool(re.match(r'^\s*[A-D][\.\)]\s+', line))
+
+def _is_answer_line(line):
+    return bool(re.match(r'^\s*(?:JAWAPAN|ANSWER)\s*(?:\d+)?\s*[:\-]', line, flags=re.I))
+
+def _is_titleish(line):
+    u = line.strip().upper()
+    return (
+        u.startswith('TAJUK:') or
+        u.startswith('LEMBARAN KERJA') or
+        u.startswith('SET SOALAN') or
+        u.startswith('LATIHAN ') or
+        u.startswith('RANCANGAN PENGAJARAN HARIAN')
+    )
+
+def _word_set_cell_border(cell, **kwargs):
+    tc = cell._tc
+    tcPr = tc.get_or_add_tcPr()
+    tcBorders = tcPr.first_child_found_in("w:tcBorders")
+    if tcBorders is None:
+        tcBorders = OxmlElement('w:tcBorders')
+        tcPr.append(tcBorders)
+    for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
+        if edge in kwargs:
+            edge_data = kwargs.get(edge)
+            tag = 'w:{}'.format(edge)
+            element = tcBorders.find(qn(tag))
+            if element is None:
+                element = OxmlElement(tag)
+                tcBorders.append(element)
+            for key in ['val', 'sz', 'space', 'color']:
+                if key in edge_data:
+                    element.set(qn('w:{}'.format(key)), str(edge_data[key]))
+
+def _word_page_number(paragraph):
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = paragraph.add_run()
+    fldChar1 = OxmlElement('w:fldChar')
+    fldChar1.set(qn('w:fldCharType'), 'begin')
+    instrText = OxmlElement('w:instrText')
+    instrText.set(qn('xml:space'), 'preserve')
+    instrText.text = ' PAGE '
+    fldChar2 = OxmlElement('w:fldChar')
+    fldChar2.set(qn('w:fldCharType'), 'end')
+    run._r.append(fldChar1)
+    run._r.append(instrText)
+    run._r.append(fldChar2)
+
+def _word_add_answer_lines(doc, count=2):
+    for _ in range(count):
+        p = doc.add_paragraph()
+        p.paragraph_format.space_after = Pt(2)
+        p.add_run('_' * 82)
+
+
+def _worksheet_split(ai_text):
+    """Parse AI text into student sections/questions and a separate answer scheme."""
+    lines = [x.strip() for x in clean_doc_text(ai_text).splitlines() if x.strip()]
+    student = []
+    scheme = []
+    in_scheme = False
+
+    for line in lines:
+        u = line.upper().strip()
+
+        # Template already provides the main instruction/header.
+        if u == 'ARAHAN:' or u.startswith('ARAHAN:'):
+            continue
+
+        if u.startswith('SKEMA JAWAPAN') or u == 'JAWAPAN':
+            in_scheme = True
+            continue
+
+        if in_scheme:
+            scheme.append(line)
+        else:
+            student.append(line)
+
+    return student, scheme
+
+
+def _worksheet_blocks(student_lines):
+    """
+    Group a question together with its A-D options and nearby supporting lines.
+    Section headings/instructions are returned as their own block.
+    """
+    blocks = []
+    current = None
+
+    for line in student_lines:
+        u = line.upper()
+
+        if u.startswith('HELAIAN ') or u.startswith('WORKSHEET '):
+            if current:
+                blocks.append(current)
+                current = None
+            blocks.append({'type':'sheet', 'lines':[line]})
+            continue
+
+        if u.startswith('BAHAGIAN ') or u.startswith('SECTION '):
+            if current:
+                blocks.append(current)
+                current = None
+            blocks.append({'type':'section', 'lines':[line]})
+            continue
+
+        if _is_question_line(line):
+            if current:
+                blocks.append(current)
+            current = {'type':'question', 'lines':[line]}
+            continue
+
+        if current and (_is_option_line(line) or not _is_heading_line(line)):
+            current['lines'].append(line)
+        else:
+            if current:
+                blocks.append(current)
+                current = None
+            blocks.append({'type':'instruction', 'lines':[line]})
+
+    if current:
+        blocks.append(current)
+
+    return blocks
+
+
+def _worksheet_question_kind(lines):
+    """Decide how much answer space a student needs."""
+    joined = ' '.join(lines).lower()
+
+    if any(_is_option_line(x) for x in lines):
+        return 'objective'
+
+    if '____' in joined or 'tempat kosong' in joined:
+        return 'fill'
+
+    # Word problems and explicit working/calculation requests get working space.
+    keywords = [
+        'berapakah', 'berapa', 'hitung', 'kirakan', 'kira', 'cari hasil',
+        'selesaikan', 'tunjukkan jalan kerja', 'show your working',
+        'explain', 'jelaskan', 'huraikan', 'nyatakan sebab'
+    ]
+    if any(k in joined for k in keywords):
+        return 'structured'
+
+    return 'short'
+
+
+def _recommended_math_work_mm(lines):
+    """Return a generous blank working-space height for non-objective Maths items."""
+    text = ' '.join(lines).lower()
+    # Base space is deliberately generous: pupils need room for vertical working,
+    # fraction conversions, carrying/borrowing and intermediate steps.
+    mm = 24
+    complex_markers = [
+        'penyelesaian masalah', 'tunjukkan langkah', 'tunjukkan jalan kerja',
+        'baki', 'daripada baki', 'kemudian', 'selebihnya', 'dalam bentuk termudah',
+        'pecahan tak wajar', 'nombor bercampur', 'jelaskan', 'buktikan', 'mengapa',
+        'dua langkah', 'lebih daripada', 'kurang daripada'
+    ]
+    if len(text) > 150 or sum(1 for k in complex_markers if k in text) >= 2:
+        mm = 34
+    if len(text) > 230 or any(k in text for k in ['buktikan', 'jelaskan', 'tunjukkan jalan kerja']):
+        mm = 42
+    return mm
+
+
+def _extract_scheme_rows(scheme_lines):
+    """Turn answer scheme lines into compact (number, answer) rows."""
+    rows = []
+    current_section = None
+    for line in scheme_lines:
+        u = line.upper().strip()
+        if u.startswith('HELAIAN ') or u.startswith('WORKSHEET '):
+            current_section = line
+            rows.append(('__SHEET__', current_section))
+            continue
+        if u.startswith('BAHAGIAN ') or u.startswith('SECTION '):
+            current_section = line
+            rows.append(('__SECTION__', current_section))
+            continue
+
+        m = re.match(r'^\s*(\d+)[\.\)]\s*(.+)$', line)
+        if m:
+            rows.append((m.group(1), m.group(2).strip()))
+        elif line:
+            # Keep any meaningful note, but don't lose it.
+            rows.append(('', line))
+    return rows
+
+
+def _visual_symbol_for_question(text):
+    """Simple printable visual cues without external image downloads."""
+    t = text.lower()
+    mapping = [
+        (['epal','apple'], '●'),
+        (['bola','ball'], '●'),
+        (['bintang','star'], '★'),
+        (['bunga','flower'], '✿'),
+        (['pensel','pencil'], '✎'),
+        (['buku','book'], '▭'),
+        (['duit','wang','money','syiling'], '◉'),
+        (['jam','clock'], '◷'),
+        (['segi tiga','triangle'], '△'),
+        (['segi empat','square'], '□'),
+        (['bulatan','circle'], '○'),
+    ]
+    for keys, symbol in mapping:
+        if any(k in t for k in keys):
+            return symbol
+    return None
+
+
+def _worksheet_level(s):
+    y = str(s.get('year','')).lower()
+    if any(x in y for x in ['tahun 1','tahun 2','tahun 3']):
+        return 'lower_primary'
+    if any(x in y for x in ['tahun 4','tahun 5','tahun 6']):
+        return 'upper_primary'
+    return 'secondary'
+
+
+def _worksheet_question_count(s):
+    try:
+        return max(4, min(12, int(s.get('worksheet_questions', 8))))
+    except Exception:
+        return 8
+
+
+def _worksheet_blueprint_instruction(s):
+    """Concrete worksheet composition rules so difficulty and page density stay consistent."""
+    year = str(s.get('year','')).lower()
+    subject = str(s.get('subject','')).lower()
+    topic = str(s.get('topic','')).lower()
+    diff = str(s.get('difficulty','mixed')).lower()
+    qcount = _worksheet_question_count(s)
+
+    if 'tahun 2' in year and 'matematik' in subject:
+        if 'tambah' in topic:
+            if diff == 'easy':
+                return (
+                    f'PELAN WORKSHEET MATEMATIK TAHUN 2 (MUDAH): hasilkan tepat {qcount} soalan pada SATU halaman A4. '
+                    'Maksimum 2 item fakta asas satu digit. Selebihnya gunakan nombor 2 digit yang sesuai, '
+                    'ayat matematik, nilai hilang, representasi visual puluh dan sa, dan 1-2 masalah harian satu langkah. '
+                    'Jangan gunakan item seperti 2+3, 4+1, 5+2 berulang kali.'
+                )
+            if diff == 'hard':
+                return (
+                    f'PELAN WORKSHEET MATEMATIK TAHUN 2 (SUKAR): hasilkan tepat {qcount} soalan pada SATU halaman A4. '
+                    'Gunakan nombor 2 digit, tambah dengan/ tanpa mengumpul semula mengikut subtopik, nombor hilang, '
+                    'banding strategi, kesan kesilapan, bina ayat matematik daripada situasi dan sekurang-kurangnya 2 masalah berayat. '
+                    'Masih kekal dalam silibus Tahun 2; jangan bawa konsep Tahun 3.'
+                )
+            return (
+                f'PELAN WORKSHEET MATEMATIK TAHUN 2: hasilkan tepat {qcount} soalan pada SATU halaman A4 dengan progres jelas. '
+                'Cadangan komposisi: 1-2 item pemanasan, 3-4 item nombor dua digit/algoritma sesuai subtopik, '
+                '2 item nilai hilang atau pelbagai representasi, 1-2 item visual bermakna, dan 1-2 masalah berayat/aplikasi. '
+                'Sekurang-kurangnya 60% item mesti jelas melebihi aras Tahun 1.'
+            )
+
+    if any(x in year for x in ['tahun 1','tahun 2','tahun 3']):
+        return (
+            f'PELAN WORKSHEET TAHAP I: hasilkan tepat {qcount} soalan pada SATU halaman A4, 2-4 bentuk aktiviti, '
+            'sekurang-kurangnya 2 item visual yang benar-benar digunakan untuk menjawab, dan 1-2 item aplikasi. '
+            'Pastikan kepadatan sesuai satu halaman A4 dan elakkan latihan berulang mekanikal.'
+        )
+    if any(x in year for x in ['tahun 4','tahun 5','tahun 6']):
+        return (
+            f'PELAN WORKSHEET TAHAP II: hasilkan tepat {qcount} soalan pada SATU halaman A4, gabungkan prosedur, aplikasi, '
+            'tafsiran maklumat/rajah dan sekurang-kurangnya satu item penaakulan.'
+        )
+    return (
+        f'PELAN WORKSHEET MENENGAH: hasilkan tepat {qcount} soalan pada SATU halaman A4 dengan campuran prosedur, aplikasi, '
+        'analisis dan penaakulan; jangan penuhkan helaian dengan item rutin yang sama.'
+    )
+
+def _difficulty_label(code):
+    return {
+        'easy': 'Mudah',
+        'medium': 'Sederhana',
+        'hard': 'Sukar',
+        'mixed': 'Campuran',
+        'kbat': 'KBAT'
+    }.get(str(code), 'Campuran')
+
+
+
+def _curriculum_depth_instruction(s):
+    """Guardrails so the selected year/form does not collapse to a lower grade."""
+    year = str(s.get('year','')).lower()
+    subject = str(s.get('subject','')).lower()
+    topic = str(s.get('topic','')).lower()
+    subtopic = str(s.get('subtopic','')).lower()
+
+    # Important specific fix from live QA: Year 2 Mathematics was too Year-1-like.
+    if 'tahun 2' in year and 'matematik' in subject:
+        if 'tambah' in topic or 'tambah' in subtopic:
+            return (
+                'KHUSUS MATEMATIK TAHUN 2 - TAMBAH: jangan dominasi latihan dengan fakta satu digit seperti 3+4 atau 6+2. '
+                'Gunakan perkembangan yang sesuai Tahun 2: fakta asas sebagai pemanasan sahaja, kemudian nombor dua digit '
+                'yang sesuai dengan tajuk/subtopik, nilai hilang, bina ayat matematik daripada situasi, soalan berayat, '
+                'pemilihan strategi dan aplikasi harian. Jika subtopik benar-benar "Fakta asas tambah", kekalkan fakta asas '
+                'tetapi tingkatkan kognitif melalui keluarga fakta, nombor hilang, pelbagai representasi, benar/salah, '
+                'padanan representasi dan masalah ringkas; jangan menjadikannya seperti latihan Tahun 1 semata-mata. '
+                'Untuk aras Sederhana/Sukar, sekurang-kurangnya separuh item mesti memerlukan lebih daripada sekadar mengira objek.'
+            )
+
+    if 'tahun 3' in year and 'matematik' in subject and ('darab' in topic or 'darab' in subtopic):
+        if 'konsep' in subtopic:
+            return (
+                'KHUSUS MATEMATIK TAHUN 3 - KONSEP DARAB: ajar darab sebagai KUMPULAN SAMA BANYAK dan tambah berulang. '
+                'Jika soalan menyatakan A kumpulan, B objek setiap kumpulan, representasi utama ialah A × B dan visual MESTI '
+                'menunjukkan tepat A kumpulan yang berasingan, setiap kumpulan mengandungi tepat B objek. Jangan lukis A×B objek '
+                'sebagai satu longgokan tanpa sempadan kumpulan. Gunakan token [VISUAL_GROUPS: objek, A, B]. '
+                'Contoh: 3 kumpulan 4 bola -> [VISUAL_GROUPS: bola, 3, 4], tambah berulang 4 + 4 + 4, ayat darab 3 × 4 = 12. '
+                'Jangan jadikan 4 × 3 sebagai representasi konsep yang sama dalam soalan yang sedang menguji bilangan kumpulan, '
+                'walaupun hasil darabnya sama; bezakan bilangan kumpulan daripada bilangan objek setiap kumpulan. '
+                'Semak sendiri setiap visual: bilangan kotak/kumpulan, objek dalam setiap kotak, tambah berulang dan ayat darab mesti konsisten.'
+            )
+
+    if any(x in year for x in ['tahun 1','tahun 2','tahun 3']):
+        return (
+            'Pastikan kandungan tepat pada TAHUN yang dipilih. Tahap I bukan satu aras yang sama. '
+            'Tahun 2 mesti jelas lebih berkembang daripada Tahun 1, dan Tahun 3 lebih berkembang daripada Tahun 2. '
+            'Visual digunakan sebagai representasi matematik/pembelajaran, bukan menggantikan semua pemikiran simbolik.'
+        )
+
+    return (
+        'Pastikan aras kandungan tepat pada Tahun/Tingkatan yang dipilih dan jangan turunkan soalan ke tahap kelas lebih rendah. '
+        'Gunakan variasi representasi, aplikasi dan penaakulan yang selari dengan tahap murid.'
+    )
+
+def _difficulty_instruction(s):
+    level = _worksheet_level(s)
+    diff = str(s.get('difficulty', 'mixed'))
+
+    if level == 'lower_primary':
+        mapping = {
+            'easy': (
+                'Aras MUDAH mengikut tahun sebenar dalam Tahap I: mudahkan proses berfikir, bukan turunkan kandungan ke Tahun 1. '
+                'Gunakan representasi visual yang sesuai, padanan, melengkapkan, satu langkah dan konteks ringkas, '
+                'tetapi julat nombor serta kemahiran mesti tetap sesuai dengan Tahun yang dipilih.'
+            ),
+            'medium': (
+                'Aras SEDERHANA untuk Tahun 1-3: gunakan gabungan visual dan simbol, '
+                'dua langkah mudah apabila sesuai, isi tempat kosong, aplikasi situasi harian ringkas.'
+            ),
+            'hard': (
+                'Aras SUKAR untuk Tahun 1-3 tetapi masih sesuai umur: gunakan penyelesaian masalah ringkas, '
+                'pilih strategi, bandingkan, cari nilai hilang, dan penaakulan asas. Jangan melebihi silibus tahap.'
+            ),
+            'mixed': (
+                'Aras CAMPURAN untuk Tahun 1-3: susun progresif kira-kira 40% mudah, 40% sederhana, 20% mencabar; '
+                'mulakan visual/asas dan akhiri dengan aplikasi ringkas.'
+            )
+        }
+    elif level == 'upper_primary':
+        mapping = {
+            'easy': (
+                'Aras MUDAH untuk Tahun 4-6: fokus penguasaan konsep asas, satu langkah, istilah jelas, '
+                'contoh langsung, jadual/rajah mudah jika membantu.'
+            ),
+            'medium': (
+                'Aras SEDERHANA untuk Tahun 4-6: gabungkan pengiraan, aplikasi, tafsiran jadual/rajah, '
+                'dan masalah dua langkah yang munasabah.'
+            ),
+            'hard': (
+                'Aras SUKAR untuk Tahun 4-6 tetapi masih dalam tahap murid: gunakan aplikasi bukan rutin, '
+                'penyelesaian masalah pelbagai langkah, penaakulan dan KBAT yang sesuai silibus.'
+            ),
+            'mixed': (
+                'Aras CAMPURAN untuk Tahun 4-6: susun progresif kira-kira 30% mudah, 50% sederhana, 20% sukar; '
+                'pastikan perubahan aras jelas tetapi tidak melangkaui tahap.'
+            )
+        }
+    else:
+        mapping = {
+            'easy': (
+                'Aras MUDAH sekolah menengah: fokus kefahaman asas konsep, prosedur langsung dan soalan satu langkah.'
+            ),
+            'medium': (
+                'Aras SEDERHANA sekolah menengah: gunakan aplikasi konsep, interpretasi maklumat dan penyelesaian masalah sederhana.'
+            ),
+            'hard': (
+                'Aras SUKAR sekolah menengah: gunakan penaakulan, aplikasi bukan rutin, analisis dan KBAT yang relevan dengan tahap.'
+            ),
+            'mixed': (
+                'Aras CAMPURAN sekolah menengah: susun kira-kira 25% mudah, 50% sederhana, 25% sukar secara progresif.'
+            )
+        }
+
+    if diff == 'kbat':
+        return (
+            'Aras KBAT: bina item yang memerlukan murid mengaplikasikan pengetahuan, menganalisis maklumat, '
+            'membuat pertimbangan/keputusan atau mencipta strategi/penyelesaian. Elakkan hafalan dan soalan rutin semata-mata. '
+            'Kekalkan kandungan dalam silibus serta tahap Tahun/Tingkatan yang dipilih.'
+        )
+    return mapping.get(diff, mapping['mixed'])
+
+
+
+
+class WorksheetVisual(Flowable):
+    """Printable black/white vector illustrations drawn directly into the PDF.
+
+    Supports ordinary countable visuals and explicit equal-group visuals for
+    multiplication concepts. Equal groups are separated visually so the
+    picture represents 'number of groups × objects in each group' correctly.
+    """
+    def __init__(self, obj='objek', count=5, width=150*mm, height=28*mm, groups=1, per_group=None):
+        Flowable.__init__(self)
+        self.obj = (obj or 'objek').lower()
+        self.groups = max(1, min(10, int(groups or 1)))
+        self.per_group = max(1, min(10, int(per_group or count or 1)))
+        self.count = max(1, min(40, self.groups * self.per_group if self.groups > 1 else int(count or 1)))
+        self.width = width
+        rows = self.groups if self.groups > 1 else (1 if self.count <= 10 else 2)
+        self.height = height * rows
+
+    def _star(self, c, x, y, r):
+        import math
+        pts = []
+        for i in range(10):
+            a = -math.pi/2 + i*math.pi/5
+            rr = r if i % 2 == 0 else r*0.42
+            pts.append((x + rr*math.cos(a), y + rr*math.sin(a)))
+        p = c.beginPath()
+        p.moveTo(*pts[0])
+        for pt in pts[1:]:
+            p.lineTo(*pt)
+        p.close()
+        c.drawPath(p, stroke=1, fill=0)
+
+    def _draw_one(self, c, x, y, size):
+        o = self.obj
+        c.setLineWidth(1)
+
+        if any(k in o for k in ['blok puluh','base ten','puluh']):
+            # tens rod
+            c.rect(x-size*.12, y-size*.42, size*.24, size*.84, stroke=1, fill=0)
+            for j in range(1,10):
+                yy = y-size*.42 + j*(size*.84/10)
+                c.line(x-size*.12, yy, x+size*.12, yy)
+        elif any(k in o for k in ['kad nombor','number card']):
+            c.roundRect(x-size*.42, y-size*.30, size*.84, size*.60, size*.08, stroke=1, fill=0)
+            c.setFont('Helvetica-Bold', max(7, size*.25))
+            c.drawCentredString(x, y-size*.08, '?')
+        elif any(k in o for k in ['epal','apple']):
+            c.circle(x, y, size*0.34, stroke=1, fill=0)
+            c.line(x, y+size*0.32, x+size*0.05, y+size*0.52)
+            c.ellipse(x+size*0.03, y+size*0.38, x+size*0.25, y+size*0.53, stroke=1, fill=0)
+        elif any(k in o for k in ['bintang','star']):
+            self._star(c, x, y, size*0.42)
+        elif any(k in o for k in ['bola','ball']):
+            c.circle(x, y, size*0.38, stroke=1, fill=0)
+            c.arc(x-size*.28, y-size*.35, x+size*.28, y+size*.35, 70, 40)
+            c.arc(x-size*.35, y-size*.22, x+size*.35, y+size*.22, 180, 180)
+        elif any(k in o for k in ['bunga','flower']):
+            for dx,dy in [(0,size*.24),(size*.24,0),(0,-size*.24),(-size*.24,0)]:
+                c.circle(x+dx, y+dy, size*.18, stroke=1, fill=0)
+            c.circle(x, y, size*.12, stroke=1, fill=0)
+        elif any(k in o for k in ['pensel','pencil']):
+            c.saveState()
+            c.translate(x-size*.34, y-size*.08)
+            c.rect(0, 0, size*.58, size*.16, stroke=1, fill=0)
+            p = c.beginPath()
+            p.moveTo(size*.58, 0)
+            p.lineTo(size*.78, size*.08)
+            p.lineTo(size*.58, size*.16)
+            p.close()
+            c.drawPath(p, stroke=1, fill=0)
+            c.restoreState()
+        elif any(k in o for k in ['buku','book']):
+            c.rect(x-size*.38, y-size*.28, size*.76, size*.56, stroke=1, fill=0)
+            c.line(x, y-size*.28, x, y+size*.28)
+        elif any(k in o for k in ['syiling','coin','wang','duit']):
+            c.circle(x, y, size*.38, stroke=1, fill=0)
+            c.setFont('Helvetica-Bold', max(6, size*.22))
+            c.drawCentredString(x, y-size*.08, 'RM')
+        elif any(k in o for k in ['segi tiga','triangle']):
+            p = c.beginPath()
+            p.moveTo(x, y+size*.4); p.lineTo(x-size*.4, y-size*.35)
+            p.lineTo(x+size*.4, y-size*.35); p.close()
+            c.drawPath(p, stroke=1, fill=0)
+        elif any(k in o for k in ['segi empat','square']):
+            c.rect(x-size*.35, y-size*.35, size*.7, size*.7, stroke=1, fill=0)
+        else:
+            # Generic countable object: simple outlined circle, never the word "VISUAL".
+            c.circle(x, y, size*.34, stroke=1, fill=0)
+
+    def draw(self):
+        c = self.canv
+        if self.groups > 1:
+            # One clearly bounded row per equal group. This prevents a multiplication
+            # visual from becoming one undifferentiated pile of objects.
+            row_h = self.height / self.groups
+            left_pad = 8*mm
+            usable_w = self.width - left_pad - 3*mm
+            cell_w = usable_w / max(self.per_group, 1)
+            size = min(cell_w, row_h) * 0.60
+            for g in range(self.groups):
+                y0 = self.height - (g+1)*row_h + 1.5*mm
+                c.roundRect(1.5*mm, y0, self.width-3*mm, row_h-3*mm, 2*mm, stroke=1, fill=0)
+                c.setFont('Helvetica-Bold', 8)
+                c.drawString(3*mm, y0 + row_h/2 - 3, str(g+1))
+                for j in range(self.per_group):
+                    x = left_pad + j*cell_w + cell_w/2
+                    y = y0 + (row_h-3*mm)/2
+                    self._draw_one(c, x, y, size)
+            return
+
+        cols = min(10, self.count)
+        rows = 1 if self.count <= 10 else 2
+        cell_w = self.width / max(cols, 1)
+        cell_h = self.height / rows
+        size = min(cell_w, cell_h) * 0.72
+        for i in range(self.count):
+            row = i // 10
+            col = i % 10
+            x = col*cell_w + cell_w/2
+            y = self.height - (row*cell_h + cell_h/2)
+            self._draw_one(c, x, y, size)
+
+
+def _find_fraction_visual_token(lines):
+    """Mathematically structured fraction visuals only.
+
+    [FRACTION_BAR: 3, 5] -> bar split into 5 equal parts, 3 hatched.
+    [FRACTION_SET: 12, 8] -> 12 equal objects, 8 hatched/selected.
+    """
+    text = ' '.join(lines)
+    m = re.search(r'\[FRACTION_BAR:\s*(\d+)\s*,\s*(\d+)\s*\]', text, re.I)
+    if m:
+        num, den = int(m.group(1)), int(m.group(2))
+        den = max(2, min(20, den)); num = max(0, min(den, num))
+        return ('bar', num, den)
+    m = re.search(r'\[FRACTION_SET:\s*(\d+)\s*,\s*(\d+)\s*\]', text, re.I)
+    if m:
+        total, selected = int(m.group(1)), int(m.group(2))
+        total = max(2, min(30, total)); selected = max(0, min(total, selected))
+        return ('set', selected, total)
+    return None
+
+
+class FractionVisual(Flowable):
+    def __init__(self, mode='bar', selected=1, total=2, width=150*mm, height=18*mm):
+        Flowable.__init__(self)
+        self.mode=mode; self.selected=selected; self.total=total; self.width=width; self.height=height
+    def draw(self):
+        c=self.canv; c.setLineWidth(0.8)
+        if self.mode=='bar':
+            x0=5*mm; y0=4*mm; w=self.width-10*mm; h=9*mm; cw=w/self.total
+            for i in range(self.total):
+                c.rect(x0+i*cw,y0,cw,h,stroke=1,fill=0)
+                if i < self.selected:
+                    # hatch rather than colour, so meaning survives B&W printing
+                    step=3*mm; xx=x0+i*cw-h
+                    while xx < x0+(i+1)*cw:
+                        c.line(max(x0+i*cw,xx), y0, min(x0+(i+1)*cw,xx+h), y0+h)
+                        xx += step
+            return
+        cols=min(10,self.total); rows=(self.total+cols-1)//cols
+        cw=self.width/cols; ch=self.height/max(rows,1); r=min(cw,ch)*0.28
+        for i in range(self.total):
+            row=i//cols; col=i%cols; x=col*cw+cw/2; y=self.height-(row*ch+ch/2)
+            c.circle(x,y,r,stroke=1,fill=0)
+            if i < self.selected:
+                # cross-hatch selection, no colour dependency
+                c.line(x-r*.7,y-r*.7,x+r*.7,y+r*.7)
+                c.line(x-r*.7,y+r*.7,x+r*.7,y-r*.7)
+
+
+def _word_fraction_image(mode, selected, total):
+    W,H=1100,180
+    img=Image.new('RGB',(W,H),'white'); d=ImageDraw.Draw(img)
+    if mode=='bar':
+        x0,y0,x1,y1=60,45,W-60,130; cw=(x1-x0)/total
+        for i in range(total):
+            a=x0+i*cw; b=x0+(i+1)*cw
+            d.rectangle((a,y0,b,y1), outline='black', width=3)
+            if i < selected:
+                t=a-(y1-y0)
+                while t < b:
+                    d.line((max(a,t),y0,min(b,t+(y1-y0)),y1), fill='black', width=2)
+                    t += 24
+    else:
+        cols=min(10,total); rows=(total+cols-1)//cols; cellw=(W-80)/cols; cellh=(H-30)/max(rows,1); r=min(cellw,cellh)*.24
+        for i in range(total):
+            row=i//cols; col=i%cols; cx=40+col*cellw+cellw/2; cy=15+row*cellh+cellh/2
+            d.ellipse((cx-r,cy-r,cx+r,cy+r), outline='black', width=3)
+            if i < selected:
+                d.line((cx-r*.7,cy-r*.7,cx+r*.7,cy+r*.7), fill='black', width=2)
+                d.line((cx-r*.7,cy+r*.7,cx+r*.7,cy-r*.7), fill='black', width=2)
+    bio=BytesIO(); img.save(bio,format='PNG'); bio.seek(0); return bio
+
+
+def _find_visual_token(lines):
+    """Find an ordinary visual or an explicit equal-groups visual.
+
+    Returns (object, total_count, groups, per_group).
+    [VISUAL: epal, 5] -> 5 ordinary objects.
+    [VISUAL_GROUPS: bola, 3, 4] -> 3 clearly separated groups of 4 balls.
+    """
+    joined = ' '.join(lines)
+    mg = re.search(r'\[VISUAL_GROUPS:\s*([^,\]]+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\]', joined, flags=re.I)
+    if not mg:
+        mg = re.search(r'\bVISUAL_GROUPS:\s*([^,\n]+?)\s*,\s*(\d+)\s*,\s*(\d+)\b', joined, flags=re.I)
+    if mg:
+        obj = mg.group(1).strip()
+        groups = max(1, min(10, int(mg.group(2))))
+        per_group = max(1, min(10, int(mg.group(3))))
+        return obj, min(40, groups * per_group), groups, per_group
+
+    m = re.search(r'\[VISUAL:\s*([^,\]]+)\s*,\s*(\d+)\s*\]', joined, flags=re.I)
+    if not m:
+        m = re.search(r'\bVISUAL:\s*([^,\n]+?)\s*,\s*(\d+)\b', joined, flags=re.I)
+    if m:
+        count = max(1, min(20, int(m.group(2))))
+        return m.group(1).strip(), count, 1, count
+    return None
+
+
+
+def _parse_inline_visual_token(value):
+    """Return a visual spec embedded in a single line, especially MCQ options."""
+    value = str(value or "")
+    m = re.search(r'\[FRACTION_BAR:\s*(\d+)\s*,\s*(\d+)\s*\]', value, re.I)
+    if m:
+        num, den = int(m.group(1)), int(m.group(2))
+        den = max(2, min(20, den)); num = max(0, min(den, num))
+        return ("fraction", "bar", num, den)
+    m = re.search(r'\[FRACTION_SET:\s*(\d+)\s*,\s*(\d+)\s*\]', value, re.I)
+    if m:
+        total, selected = int(m.group(1)), int(m.group(2))
+        total = max(2, min(30, total)); selected = max(0, min(total, selected))
+        return ("fraction", "set", selected, total)
+    m = re.search(r'\[VISUAL:\s*([^,\]]+)\s*,\s*(\d+)\s*\]', value, re.I)
+    if m:
+        return ("visual", m.group(1).strip(), max(1, min(20, int(m.group(2)))), 1)
+    return None
+
+
+def _option_flowables(value, option_style):
+    """Render an MCQ option safely; convert inline tokens into actual diagrams."""
+    raw = str(value or "")
+    spec = _parse_inline_visual_token(raw)
+    clean = _clean_worksheet_text(raw)
+
+    # Preserve the option label even when the token was the whole content.
+    label_match = re.match(r'^\s*([A-D][\.\)])\s*', raw, re.I)
+    label = label_match.group(1) if label_match else ""
+
+    flows = []
+    if clean:
+        flows.append(Paragraph(escape(clean), option_style))
+    elif label:
+        flows.append(Paragraph(escape(label), option_style))
+
+    if spec:
+        if spec[0] == "fraction":
+            _, mode, selected, total = spec
+            flows.append(Spacer(1, 0.7*mm))
+            flows.append(FractionVisual(mode=mode, selected=selected, total=total,
+                                        width=65*mm, height=12*mm))
+        elif spec[0] == "visual":
+            _, obj, count, _ = spec
+            flows.append(Spacer(1, 0.7*mm))
+            flows.append(WorksheetVisual(obj=obj, count=count,
+                                         width=65*mm, height=12*mm,
+                                         groups=1, per_group=count))
+    return flows or [Paragraph(escape(clean or raw), option_style)]
+
+
+def _strip_all_raw_tokens(value):
+    """Final safety net: no internal layout/visual token should reach pupil-facing text."""
+    value = str(value or "")
+    value = re.sub(
+        r'\[(?:VISUAL_GROUPS|VISUAL|DIAGRAM|FRACTION_BAR|FRACTION_SET|FORM_LAZIM|WORKLINES|ANSWERSPACE|ANSWERBOX)\s*:[^\]]+\]',
+        '',
+        value,
+        flags=re.I
+    )
+    return re.sub(r'\s{2,}', ' ', value).strip()
+
+
+def _strip_visual_tokens(value):
+    value = re.sub(r'\[(?:VISUAL_GROUPS|VISUAL|DIAGRAM|FRACTION_BAR|FRACTION_SET):[^\]]+\]', '', value, flags=re.I)
+    value = re.sub(r'\b(?:VISUAL_GROUPS|VISUAL|DIAGRAM|FRACTION_BAR|FRACTION_SET):[^\n]+', '', value, flags=re.I)
+    return value.strip()
+
+
+def _find_layout_token(lines):
+    """Return a reusable answer-layout specification embedded in a question.
+
+    Supported tokens:
+      [FORM_LAZIM: rows, cols]  blank arithmetic grid, e.g. 3 x 3
+      [WORKLINES: n]            ruled response lines (language/essay only)
+      [ANSWERSPACE: n]           blank unruled working space, n is relative height units
+      [ANSWERBOX: n]            blank bordered answer box, n is relative height units
+    """
+    text = ' '.join(lines)
+    m = re.search(r'\[FORM_LAZIM\s*:\s*(\d+)\s*[,xX]\s*(\d+)\s*\]', text, re.I)
+    if m:
+        return ('form_lazim', max(2, min(8, int(m.group(1)))), max(2, min(10, int(m.group(2)))))
+    m = re.search(r'\[WORKLINES\s*:\s*(\d+)\s*\]', text, re.I)
+    if m:
+        return ('worklines', max(1, min(8, int(m.group(1)))), None)
+    m = re.search(r'\[ANSWERSPACE\s*:\s*(\d+)\s*\]', text, re.I)
+    if m:
+        return ('answerspace', max(1, min(8, int(m.group(1)))), None)
+    m = re.search(r'\[ANSWERBOX\s*:\s*(\d+)\s*\]', text, re.I)
+    if m:
+        return ('answerbox', max(1, min(6, int(m.group(1)))), None)
+    return None
+
+
+def _strip_layout_tokens(value):
+    return re.sub(r'\[(?:FORM_LAZIM|WORKLINES|ANSWERSPACE|ANSWERBOX)\s*:[^\]]+\]', '', value, flags=re.I).strip()
+
+
+def _clean_worksheet_text(value):
+    return _strip_all_raw_tokens(_strip_layout_tokens(_strip_visual_tokens(value)))
+
+def _word_visual_image(obj, count, groups=1, per_group=None):
+    """Create a clean black-and-white PNG pictogram grid for Word worksheets."""
+    obj = (obj or 'objek').lower()
+    groups = max(1, min(10, int(groups or 1)))
+    per_group = max(1, min(10, int(per_group or count or 1)))
+    count = max(1, min(40, groups * per_group if groups > 1 else int(count or 1)))
+    cols = per_group if groups > 1 else min(8, count)
+    rows = groups if groups > 1 else (count + cols - 1) // cols
+    cell = 72
+    pad = 12
+    group_gap = 16 if groups > 1 else 0
+    img = Image.new('RGB', (cols*cell + pad*2, rows*cell + pad*2 + max(0, rows-1)*group_gap), 'white')
+    d = ImageDraw.Draw(img)
+
+    def star(cx, cy, r):
+        import math
+        pts=[]
+        for i in range(10):
+            a=-math.pi/2+i*math.pi/5
+            rr=r if i%2==0 else r*.42
+            pts.append((cx+rr*math.cos(a), cy+rr*math.sin(a)))
+        d.polygon(pts, outline='black')
+
+    if groups > 1:
+        for g in range(groups):
+            gy = pad + g*(cell + group_gap)
+            d.rounded_rectangle((4, gy-5, cols*cell + pad*2-4, gy+cell+5), radius=10, outline='black', width=2)
+
+    for i in range(count):
+        row, col = divmod(i, cols)
+        x0 = pad + col*cell
+        y0 = pad + row*(cell + group_gap)
+        cx, cy = x0+cell//2, y0+cell//2
+        r = 22
+        if any(k in obj for k in ['epal','apple']):
+            d.ellipse((cx-r,cy-r+4,cx+r,cy+r+4), outline='black', width=2)
+            d.line((cx,cy-r+5,cx+3,cy-r-9), fill='black', width=2)
+            d.ellipse((cx+2,cy-r-10,cx+16,cy-r+1), outline='black', width=2)
+        elif any(k in obj for k in ['bola','ball']):
+            d.ellipse((cx-r,cy-r,cx+r,cy+r), outline='black', width=2)
+            d.arc((cx-r+5,cy-r,cx+r-5,cy+r), 65, 115, fill='black', width=2)
+            d.arc((cx-r,cy-10,cx+r,cy+10), 0, 180, fill='black', width=2)
+        elif any(k in obj for k in ['bintang','star']):
+            star(cx,cy,r+2)
+        elif any(k in obj for k in ['bunga','flower']):
+            for dx,dy in [(0,-12),(12,0),(0,12),(-12,0)]:
+                d.ellipse((cx+dx-9,cy+dy-9,cx+dx+9,cy+dy+9), outline='black', width=2)
+            d.ellipse((cx-6,cy-6,cx+6,cy+6), outline='black', width=2)
+        elif any(k in obj for k in ['pensel','pencil']):
+            d.rectangle((cx-24,cy-7,cx+15,cy+7), outline='black', width=2)
+            d.polygon([(cx+15,cy-7),(cx+29,cy),(cx+15,cy+7)], outline='black')
+        elif any(k in obj for k in ['buku','book']):
+            d.rectangle((cx-25,cy-18,cx+25,cy+18), outline='black', width=2)
+            d.line((cx,cy-18,cx,cy+18), fill='black', width=2)
+        elif any(k in obj for k in ['syiling','coin','wang','duit']):
+            d.ellipse((cx-r,cy-r,cx+r,cy+r), outline='black', width=2)
+            d.text((cx-11,cy-7),'RM', fill='black')
+        elif any(k in obj for k in ['segi tiga','triangle']):
+            d.polygon([(cx,cy-r),(cx-r,cy+r),(cx+r,cy+r)], outline='black')
+        elif any(k in obj for k in ['segi empat','square']):
+            d.rectangle((cx-r,cy-r,cx+r,cy+r), outline='black', width=2)
+        elif any(k in obj for k in ['blok puluh','base ten','puluh']):
+            d.rectangle((cx-9,cy-27,cx+9,cy+27), outline='black', width=2)
+            for j in range(1,10):
+                yy=cy-27+j*5.4
+                d.line((cx-9,yy,cx+9,yy), fill='black', width=1)
+        else:
+            d.ellipse((cx-r,cy-r,cx+r,cy+r), outline='black', width=2)
+
+    stream=BytesIO()
+    img.save(stream, format='PNG', dpi=(150,150))
+    stream.seek(0)
+    return stream
+
+
+
+
+def _parse_rph_date(value):
+    """Parse common Malaysian date formats and return display date + Malay weekday."""
+    raw = (value or '').strip()
+    if raw in ('-', '—', ''):
+        return '', ''
+    formats = ('%d/%m/%Y','%d-%m-%Y','%d.%m.%Y','%d/%m/%y','%d-%m-%y')
+    dt = None
+    for fmt in formats:
+        try:
+            dt = datetime.strptime(raw, fmt)
+            break
+        except ValueError:
+            pass
+    if not dt:
+        return None, None
+    days = ['Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu','Ahad']
+    return dt.strftime('%d/%m/%Y'), days[dt.weekday()]
+
+
+def _rph_session_meta(s):
+    """Teacher-entered session metadata. Empty values remain blank on the RPH."""
+    return {
+        'TARIKH': str(s.get('rph_date') or ''),
+        'HARI': str(s.get('rph_day') or ''),
+        'MASA': str(s.get('rph_time') or ''),
+        'KELAS': str(s.get('rph_class') or ''),
+        'BILANGAN MURID': str(s.get('rph_students') or ''),
+    }
+
+
+def _rph_blank_or_value(value, width=28):
+    return str(value).strip() if str(value or '').strip() else ('_' * width)
+
+def _rph_attendance_value(total):
+    """Show blank attendance first, followed by the teacher-entered class total, e.g. ____ / 30."""
+    total = str(total or '').strip()
+    return f'________ / {total}' if total else '________ / ________'
+
+def _parse_rph_sections(ai_text):
+    """Parse Gemini RPH headings into stable fields for table rendering."""
+    headings = [
+        'MATA PELAJARAN','TAHUN/TINGKATAN','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN',
+        'OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR',
+        'EMK / NILAI','KBAT / PAK21','PENTAKSIRAN','SET INDUKSI','AKTIVITI UTAMA','PENUTUP',
+        'PEMULIHAN / PENGAYAAN','REFLEKSI'
+    ]
+    aliases = {h.replace(' / ','/'): h for h in headings}
+    aliases.update({h:h for h in headings})
+    out = {h:'' for h in headings}
+    current = None
+    for raw in clean_doc_text(ai_text).splitlines():
+        line = raw.strip().strip('*# ')
+        if not line:
+            continue
+        keypart, sep, rest = line.partition(':')
+        key = aliases.get(keypart.strip().upper())
+        if not key:
+            key = aliases.get(line.upper())
+            rest = '' if key else rest
+        if key:
+            current = key
+            if rest.strip(): out[key] = rest.strip()
+            continue
+        if current:
+            out[current] = (out[current] + '\n' + line).strip()
+    return out
+
+
+def _rph_rows(s, ai_text):
+    r = _parse_rph_sections(ai_text)
+    # Context selected by teacher is authoritative for these metadata fields.
+    r['MATA PELAJARAN'] = str(s.get('subject') or r['MATA PELAJARAN'])
+    r['TAHUN/TINGKATAN'] = str(s.get('year') or r['TAHUN/TINGKATAN'])
+    r['TAJUK'] = str(s.get('topic') or r['TAJUK']) + (f" — {s.get('subtopic')}" if s.get('subtopic') else '')
+    r.update(_rph_session_meta(s))
+    return r
+
+
+def _create_rph_word(doc, section, s, ai_text, path):
+    rph = _rph_rows(s, ai_text)
+    p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    rr = p.add_run('RANCANGAN PENGAJARAN HARIAN'); rr.bold=True; rr.font.size=Pt(15)
+    p.paragraph_format.space_after = Pt(6)
+
+    def add_row(table, label, value):
+        cells = table.add_row().cells
+        cells[0].width = Cm(4.4); cells[1].width = Cm(12.5)
+        p0=cells[0].paragraphs[0]; p0.paragraph_format.space_after=Pt(0); x=p0.add_run(label); x.bold=True
+        p1=cells[1].paragraphs[0]; p1.paragraph_format.space_after=Pt(0)
+        parts=(value or '—').split('\n')
+        p1.add_run(parts[0])
+        for part in parts[1:]: p1.add_run('\n'+part)
+        for c in cells:
+            _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
+
+    table=doc.add_table(rows=0, cols=2); table.alignment=WD_TABLE_ALIGNMENT.CENTER
+    for label in ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN']:
+        add_row(table,label.title() if label not in ('EMK / NILAI','KBAT / PAK21') else label, (_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''))
+    doc.add_paragraph().paragraph_format.space_after=Pt(1)
+    t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
+    for i,h in enumerate(['Fasa / Masa','Aktiviti Pengajaran & Pembelajaran','Catatan']):
+        q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
+    phases=[('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))]
+    for phase,text in phases:
+        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=text or '—'; cells[2].text=''
+    for row in t2.rows:
+        for c in row.cells:
+            _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
+    t3=doc.add_table(rows=0, cols=2); t3.alignment=WD_TABLE_ALIGNMENT.CENTER
+    add_row(t3,'Pemulihan / Pengayaan',rph.get('PEMULIHAN / PENGAYAAN',''))
+    add_row(t3,'Refleksi',rph.get('REFLEKSI','') or '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________')
+    footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
+    doc.save(path); return path
+
+def create_word_file(s, ai_text, cid):
+    filename = f"CikguLaju_{safe_filename(s.get('subject'))}_{safe_filename(s.get('topic'))}.docx"
+    path = os.path.join(tempfile.gettempdir(), f"{cid}_{filename}")
+
+    doc = Document()
+    section = doc.sections[0]
+    section.top_margin = Cm(1.35)
+    section.bottom_margin = Cm(1.4)
+    section.left_margin = Cm(1.55)
+    section.right_margin = Cm(1.55)
+
+    normal = doc.styles['Normal']
+    normal.font.name = 'Arial'
+    normal.font.size = Pt(10.5)
+
+    if s.get('task') == 'rph':
+        return _create_rph_word(doc, section, s, ai_text, path)
+
+    # -------- WORKSHEET PROFESSIONAL TEMPLATE --------
+    if s.get('task') == 'worksheet':
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_after = Pt(1)
+        r = p.add_run('LEMBARAN KERJA')
+        r.bold = True
+        r.font.size = Pt(14)
+
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_after = Pt(1)
+        r = p.add_run(str(s.get('subject','')).upper())
+        r.bold = True
+        r.font.size = Pt(16)
+
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_after = Pt(5)
+        r = p.add_run(f"{s.get('year','')}  |  Tajuk: {s.get('topic','')}  |  Aras: {_difficulty_label(s.get('difficulty','mixed'))}")
+        r.bold = True
+        r.font.size = Pt(10.5)
+
+        if s.get('subtopic'):
+            p = doc.add_paragraph()
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            p.paragraph_format.space_after = Pt(7)
+            r = p.add_run(f"Subtopik: {s.get('subtopic')}")
+            r.italic = True
+            r.font.size = Pt(9)
+
+        # Student info, compact two-row grid
+        info = doc.add_table(rows=2, cols=4)
+        info.alignment = WD_TABLE_ALIGNMENT.CENTER
+        labels = [
+            ('Nama', '__________________________________', 'Kelas', '____________'),
+            ('Tarikh', '__________________________________', 'Markah', '________ / ________')
+        ]
+        for ri, row in enumerate(labels):
+            for ci, value in enumerate(row):
+                cell = info.cell(ri, ci)
+                p = cell.paragraphs[0]
+                p.paragraph_format.space_after = Pt(0)
+                rr = p.add_run(value)
+                rr.bold = ci in (0,2)
+                _word_set_cell_border(
+                    cell,
+                    top={'val':'single','sz':'5','color':'777777'},
+                    bottom={'val':'single','sz':'5','color':'777777'},
+                    left={'val':'single','sz':'5','color':'777777'},
+                    right={'val':'single','sz':'5','color':'777777'}
+                )
+
+        doc.add_paragraph()
+
+        # One main instruction only; AI instructions are removed by parser.
+        box = doc.add_table(rows=1, cols=1)
+        box.alignment = WD_TABLE_ALIGNMENT.CENTER
+        c = box.cell(0,0)
+        p = c.paragraphs[0]
+        p.paragraph_format.space_after = Pt(0)
+        rr = p.add_run('ARAHAN: ')
+        rr.bold = True
+        p.add_run('Jawab semua soalan dengan teliti. Tulis jawapan pada ruang yang disediakan.')
+        _word_set_cell_border(
+            c,
+            top={'val':'single','sz':'8','color':'444444'},
+            bottom={'val':'single','sz':'8','color':'444444'},
+            left={'val':'single','sz':'8','color':'444444'},
+            right={'val':'single','sz':'8','color':'444444'}
+        )
+        doc.add_paragraph()
+
+        student_lines, scheme_lines = _worksheet_split(ai_text)
+        blocks = _worksheet_blocks(student_lines)
+
+        sheet_seen = 0
+        for block in blocks:
+            if block['type'] == 'sheet':
+                continue
+
+            if block['type'] == 'section':
+                p = doc.add_paragraph()
+                p.paragraph_format.space_before = Pt(7)
+                p.paragraph_format.space_after = Pt(2)
+                rr = p.add_run(block['lines'][0])
+                rr.bold = True
+                rr.font.size = Pt(11.5)
+                continue
+
+            if block['type'] == 'instruction':
+                for line in block['lines']:
+                    if _is_titleish(line) or line.upper().startswith('ARAHAN'):
+                        continue
+                    p = doc.add_paragraph()
+                    p.paragraph_format.space_after = Pt(5)
+                    rr = p.add_run(line)
+                    rr.italic = True
+                continue
+
+            lines = block['lines']
+            kind = _worksheet_question_kind(lines)
+
+            qtbl = doc.add_table(rows=1, cols=1)
+            qtbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+            cell = qtbl.cell(0,0)
+            cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
+
+            # Question line
+            p = cell.paragraphs[0]
+            p.paragraph_format.space_after = Pt(4)
+            raw_q = lines[0]
+            fraction_visual = _find_fraction_visual_token(lines)
+            visual_info = _find_visual_token(lines)
+            layout_info = _find_layout_token(lines)
+            clean_q = _clean_worksheet_text(raw_q)
+            p.clear()
+            rr = p.add_run(clean_q)
+            rr.bold = True
+            if fraction_visual:
+                mode, selected, total = fraction_visual
+                vp = cell.add_paragraph(); vp.alignment = WD_ALIGN_PARAGRAPH.CENTER; vp.paragraph_format.space_after = Pt(3)
+                vp.add_run().add_picture(_word_fraction_image(mode, selected, total), width=Cm(14.5))
+            elif visual_info:
+                obj, count, groups, per_group = visual_info
+                # Insert a real generated black-and-white pictogram image instead of Unicode symbols.
+                vp = cell.add_paragraph()
+                vp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                vp.paragraph_format.space_after = Pt(3)
+                vr = vp.add_run()
+                img_stream = _word_visual_image(obj, count, groups=groups, per_group=per_group)
+                width_cm = min(15.0, max(5.0, min(8, per_group if groups > 1 else count) * 1.45))
+                vr.add_picture(img_stream, width=Cm(width_cm))
+
+            # Options/supporting lines
+            options = [x for x in lines[1:] if _is_option_line(x)]
+            other = [_clean_worksheet_text(x) for x in lines[1:]
+                     if not _is_option_line(x) and not _is_answer_line(x)]
+            other = [x for x in other if x]
+
+            if options:
+                # A-D in two columns when possible
+                ot = cell.add_table(rows=2, cols=2)
+                ot.alignment = WD_TABLE_ALIGNMENT.CENTER
+                vals = options[:4] + [''] * max(0, 4-len(options))
+                for i, val in enumerate(vals[:4]):
+                    pp = ot.cell(i//2, i%2).paragraphs[0]
+                    pp.paragraph_format.space_after = Pt(1)
+                    pp.add_run(val)
+            for extra in other:
+                pp = cell.add_paragraph()
+                pp.paragraph_format.space_after = Pt(2)
+                pp.add_run(extra)
+
+            # Reusable exam/workbook answer formats. The AI selects the template;
+            # Python renders it consistently so only question content changes.
+            if layout_info and layout_info[0] == 'form_lazim':
+                rows, cols = layout_info[1], layout_info[2]
+                gp = cell.add_paragraph(); gp.paragraph_format.space_before = Pt(2); gp.paragraph_format.space_after = Pt(1)
+                grid = cell.add_table(rows=rows, cols=cols)
+                grid.alignment = WD_TABLE_ALIGNMENT.CENTER
+                for grow in grid.rows:
+                    grow.height = Cm(0.72)
+                    for gc in grow.cells:
+                        gc.width = Cm(0.85)
+                        gc.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+                        _word_set_cell_border(
+                            gc,
+                            top={'val':'single','sz':'8','color':'555555'},
+                            bottom={'val':'single','sz':'8','color':'555555'},
+                            left={'val':'single','sz':'8','color':'555555'},
+                            right={'val':'single','sz':'8','color':'555555'}
+                        )
+            elif layout_info and layout_info[0] == 'worklines':
+                if 'matematik' in str(s.get('subject','')).lower():
+                    for _ in range(layout_info[1]):
+                        pp = cell.add_paragraph(''); pp.paragraph_format.space_after = Pt(13)
+                else:
+                    for _ in range(layout_info[1]):
+                        pp = cell.add_paragraph('____________________________________________________________'); pp.paragraph_format.space_after = Pt(1)
+            elif layout_info and layout_info[0] == 'answerspace':
+                for _ in range(layout_info[1]):
+                    pp = cell.add_paragraph(''); pp.paragraph_format.space_after = Pt(13)
+            elif layout_info and layout_info[0] == 'answerbox':
+                bx = cell.add_table(rows=1, cols=1)
+                bx.rows[0].height = Cm(0.65 * layout_info[1])
+                bc = bx.cell(0,0)
+                _word_set_cell_border(
+                    bc,
+                    top={'val':'single','sz':'8','color':'555555'},
+                    bottom={'val':'single','sz':'8','color':'555555'},
+                    left={'val':'single','sz':'8','color':'555555'},
+                    right={'val':'single','sz':'8','color':'555555'}
+                )
+
+            # Answer/work area only when pedagogically useful and no explicit template was requested.
+            if not layout_info and kind == 'structured':
+                if 'matematik' in str(s.get('subject','')).lower():
+                    for _ in range(max(4, int(_recommended_math_work_mm(lines) / 7))):
+                        pp = cell.add_paragraph(''); pp.paragraph_format.space_after = Pt(13)
+                else:
+                    for _ in range(2):
+                        pp = cell.add_paragraph('____________________________________________________________'); pp.paragraph_format.space_after = Pt(1)
+            elif not layout_info and kind == 'short':
+                if 'matematik' in str(s.get('subject','')).lower():
+                    pp = cell.add_paragraph(''); pp.paragraph_format.space_after = Pt(16)
+                else:
+                    pp = cell.add_paragraph('Jawapan: _________________________________________________'); pp.paragraph_format.space_before = Pt(4); pp.paragraph_format.space_after = Pt(1)
+            # objective and fill-in get no redundant "Jawapan" line.
+
+            _word_set_cell_border(
+                cell,
+                top={'val':'single','sz':'7','color':'777777'},
+                bottom={'val':'single','sz':'7','color':'777777'},
+                left={'val':'single','sz':'7','color':'777777'},
+                right={'val':'single','sz':'7','color':'777777'}
+            )
+
+            spacer = doc.add_paragraph()
+            spacer.paragraph_format.space_after = Pt(3)
+
+        # Answer scheme on a fresh page.
+        rows = _extract_scheme_rows(scheme_lines)
+        if rows:
+            doc.add_page_break()
+            p = doc.add_paragraph()
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            r = p.add_run('SKEMA JAWAPAN')
+            r.bold = True
+            r.font.size = Pt(14)
+
+            p = doc.add_paragraph()
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            r = p.add_run(f"{s.get('subject','')} • {s.get('year','')} • {s.get('topic','')}")
+            r.font.size = Pt(9)
+
+            table = None
+            for no, ans in rows:
+                if no in ('__SECTION__','__SHEET__'):
+                    p = doc.add_paragraph()
+                    if no == '__SHEET__':
+                        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    r = p.add_run(ans)
+                    r.bold = True
+                    r.font.size = Pt(12 if no == '__SHEET__' else 10.5)
+                    table = None
+                    continue
+
+                if table is None:
+                    table = doc.add_table(rows=1, cols=2)
+                    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+                    h = table.rows[0].cells
+                    h[0].paragraphs[0].add_run('No.').bold = True
+                    h[1].paragraphs[0].add_run('Jawapan').bold = True
+
+                cells = table.add_row().cells
+                cells[0].text = no
+                cells[1].text = ans
+
+            for t in doc.tables[3:]:
+                for row in t.rows:
+                    for cell in row.cells:
+                        _word_set_cell_border(
+                            cell,
+                            top={'val':'single','sz':'5','color':'888888'},
+                            bottom={'val':'single','sz':'5','color':'888888'},
+                            left={'val':'single','sz':'5','color':'888888'},
+                            right={'val':'single','sz':'5','color':'888888'}
+                        )
+
+        footer = section.footer
+        p = footer.paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        rr = p.add_run('CikguLaju AI  •  ')
+        rr.font.size = Pt(7.5)
+        _word_page_number(p)
+
+        doc.save(path)
+        return path
+
+    # -------- NON-WORKSHEET: retain exam-style behaviour --------
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r = p.add_run('CIKGULAJU AI')
+    r.bold = True
+    r.font.size = Pt(15)
+
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r = p.add_run(str(s.get('subject','')).upper())
+    r.bold = True
+    r.font.size = Pt(13)
+
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r = p.add_run(f"{s.get('year','')}  •  {s.get('topic','')}")
+    r.bold = True
+    r.font.size = Pt(11)
+
+    for raw in clean_doc_text(ai_text).splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        p = doc.add_paragraph()
+        p.paragraph_format.space_after = Pt(4)
+        rr = p.add_run(line)
+        if _is_heading_line(line):
+            rr.bold = True
+
+    footer = section.footer
+    p = footer.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    rr = p.add_run('CikguLaju AI  •  ')
+    rr.font.size = Pt(7.5)
+    _word_page_number(p)
+
+    doc.save(path)
+    return path
+
+
+def _pdf_header_footer(canvas, doc):
+    canvas.saveState()
+    width, height = A4
+    canvas.setFont('Helvetica', 7.5)
+    canvas.drawCentredString(width/2, 8*mm, f"CikguLaju AI  •  Halaman {doc.page}")
+    canvas.restoreState()
+
+def create_pdf_file(s, ai_text, cid):
+    filename = f"CikguLaju_{safe_filename(s.get('subject'))}_{safe_filename(s.get('topic'))}.pdf"
+    path = os.path.join(tempfile.gettempdir(), f"{cid}_{filename}")
+
+    styles = getSampleStyleSheet()
+    title_style = ParagraphStyle('WSTitle', parent=styles['Title'], fontName='Helvetica-Bold',
+                                 fontSize=14, leading=16, alignment=TA_CENTER, spaceAfter=1)
+    subject_style = ParagraphStyle('WSSubject', parent=styles['Normal'], fontName='Helvetica-Bold',
+                                   fontSize=16, leading=18, alignment=TA_CENTER, spaceAfter=2)
+    sub_style = ParagraphStyle('WSSub', parent=styles['Normal'], fontName='Helvetica',
+                               fontSize=9, leading=11, alignment=TA_CENTER, spaceAfter=5)
+    section_style = ParagraphStyle('WSSection', parent=styles['Normal'], fontName='Helvetica-Bold',
+                                   fontSize=11, leading=14, spaceBefore=5, spaceAfter=2)
+    instruction_style = ParagraphStyle('WSInst', parent=styles['Normal'], fontName='Helvetica-Oblique',
+                                       fontSize=9.2, leading=12, spaceAfter=4)
+    question_style = ParagraphStyle('WSQuestion', parent=styles['Normal'], fontName='Helvetica-Bold',
+                                    fontSize=10.2, leading=13.5, spaceAfter=3)
+    option_style = ParagraphStyle('WSOption', parent=styles['Normal'], fontName='Helvetica',
+                                  fontSize=9.6, leading=12, spaceAfter=1)
+    body_style = ParagraphStyle('WSBody', parent=styles['Normal'], fontName='Helvetica',
+                                fontSize=9.5, leading=12.5, spaceAfter=2)
+
+    pdf = SimpleDocTemplate(
+        path, pagesize=A4,
+        rightMargin=14*mm, leftMargin=14*mm,
+        topMargin=12*mm, bottomMargin=14*mm
+    )
+
+    # RPH uses a professional table layout rather than plain paragraphs.
+    if s.get('task') == 'rph':
+        rph = _rph_rows(s, ai_text)
+        story = [Paragraph('RANCANGAN PENGAJARAN HARIAN', title_style), Spacer(1,2*mm)]
+        rows=[]
+        for label in ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN']:
+            val=(((_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else (rph.get(label) or '—'))).replace('\n','<br/>')
+            rows.append([Paragraph('<b>'+escape(label.title() if label not in ('EMK / NILAI','KBAT / PAK21') else label)+'</b>', body_style), Paragraph(escape(val).replace('&lt;br/&gt;','<br/>'), body_style)])
+        info=Table(rows,colWidths=[48*mm,124*mm])
+        info.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),4),('BOTTOMPADDING',(0,0),(-1,-1),4)]))
+        story.extend([info,Spacer(1,3*mm)])
+        phase_rows=[[Paragraph('<b>Fasa / Masa</b>',body_style),Paragraph('<b>Aktiviti Pengajaran & Pembelajaran</b>',body_style),Paragraph('<b>Catatan</b>',body_style)]]
+        for phase,key in [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]:
+            val=escape(rph.get(key) or '—').replace('\n','<br/>')
+            phase_rows.append([Paragraph('<b>'+phase+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
+        pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
+        pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('BACKGROUND',(0,0),(-1,0),colors.whitesmoke),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]))
+        story.extend([pt,Spacer(1,3*mm)])
+        tail=[]
+        for label,key in [('Pemulihan / Pengayaan','PEMULIHAN / PENGAYAAN'),('Refleksi','REFLEKSI')]:
+            val=rph.get(key) or ('____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: __________________________' if key=='REFLEKSI' else '—')
+            tail.append([Paragraph('<b>'+label+'</b>',body_style),Paragraph(escape(val).replace('\n','<br/>'),body_style)])
+        tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)])); story.append(tt)
+        pdf.build(story,onFirstPage=_pdf_header_footer,onLaterPages=_pdf_header_footer); return path
+
+    # Other non-worksheet materials fall back to a simple clean document.
+    if s.get('task') != 'worksheet':
+        story = [Paragraph('CIKGULAJU AI', title_style),Paragraph(escape(clean_doc_text(str(s.get('subject',''))).upper()), subject_style),Paragraph(escape(clean_doc_text(f"{s.get('year','')} | {s.get('topic','')}")), sub_style)]
+        for raw in clean_doc_text(ai_text).splitlines():
+            line=raw.strip()
+            if line: story.append(Paragraph(escape(line),body_style))
+        pdf.build(story,onFirstPage=_pdf_header_footer,onLaterPages=_pdf_header_footer); return path
+
+    story = [
+        Paragraph('LEMBARAN KERJA', title_style),
+        Paragraph(escape(clean_doc_text(str(s.get('subject',''))).upper()), subject_style),
+        Paragraph(
+            escape(clean_doc_text(f"{s.get('year','')}  |  Tajuk: {s.get('topic','')}  |  Subtopik: {s.get('subtopic','Semua Subtopik')}  |  Aras: {_difficulty_label(s.get('difficulty','mixed'))}")),
+            sub_style
+        ),
+    ]
+
+    # Compact pupil details
+    info_data = [
+        [Paragraph('<b>Nama</b>', body_style), '________________________________',
+         Paragraph('<b>Kelas</b>', body_style), '____________'],
+        [Paragraph('<b>Tarikh</b>', body_style), '________________________________',
+         Paragraph('<b>Markah</b>', body_style), '______ / ______']
+    ]
+    info = Table(info_data, colWidths=[15*mm, 72*mm, 15*mm, 70*mm], rowHeights=[8*mm,8*mm])
+    info.setStyle(TableStyle([
+        ('BOX',(0,0),(-1,-1),0.6,colors.black),
+        ('INNERGRID',(0,0),(-1,-1),0.35,colors.grey),
+        ('VALIGN',(0,0),(-1,-1),'MIDDLE'),
+        ('LEFTPADDING',(0,0),(-1,-1),4),
+        ('RIGHTPADDING',(0,0),(-1,-1),4),
+        ('FONTSIZE',(0,0),(-1,-1),8.8),
+    ]))
+    story.extend([info, Spacer(1,3*mm)])
+
+    instruction = Table(
+        [[Paragraph('<b>ARAHAN:</b> Jawab semua soalan dengan teliti. Tulis jawapan pada ruang yang disediakan.', body_style)]],
+        colWidths=[172*mm]
+    )
+    instruction.setStyle(TableStyle([
+        ('BOX',(0,0),(-1,-1),0.7,colors.black),
+        ('LEFTPADDING',(0,0),(-1,-1),6),
+        ('RIGHTPADDING',(0,0),(-1,-1),6),
+        ('TOPPADDING',(0,0),(-1,-1),4),
+        ('BOTTOMPADDING',(0,0),(-1,-1),4),
+    ]))
+    story.extend([instruction, Spacer(1,3*mm)])
+
+    student_lines, scheme_lines = _worksheet_split(ai_text)
+    blocks = _worksheet_blocks(student_lines)
+
+    sheet_seen = 0
+    for block in blocks:
+        if block['type'] == 'sheet':
+            continue
+
+        if block['type'] == 'section':
+            story.append(Paragraph(escape(block['lines'][0]), section_style))
+            continue
+
+        if block['type'] == 'instruction':
+            for line in block['lines']:
+                if _is_titleish(line) or line.upper().startswith('ARAHAN'):
+                    continue
+                story.append(Paragraph(escape(line), instruction_style))
+            continue
+
+        lines = block['lines']
+        kind = _worksheet_question_kind(lines)
+        question = lines[0]
+        fraction_visual = _find_fraction_visual_token(lines)
+        visual_info = _find_visual_token(lines)
+        layout_info = _find_layout_token(lines)
+        question_clean = _strip_all_raw_tokens(_clean_worksheet_text(question))
+        options = [x for x in lines[1:] if _is_option_line(x)]
+        other = [_clean_worksheet_text(x) for x in lines[1:]
+                 if not _is_option_line(x) and not _is_answer_line(x)]
+        other = [x for x in other if x]
+
+        cell_flow = [Paragraph(escape(question_clean), question_style)]
+        if fraction_visual:
+            mode, selected, total = fraction_visual
+            cell_flow.append(Spacer(1,1.5*mm))
+            cell_flow.append(FractionVisual(mode=mode, selected=selected, total=total, width=155*mm, height=18*mm))
+            cell_flow.append(Spacer(1,1.5*mm))
+        elif visual_info:
+            obj, count, groups, per_group = visual_info
+            # Real vector illustration drawn into the worksheet PDF.
+            cell_flow.append(Spacer(1,1.5*mm))
+            cell_flow.append(WorksheetVisual(obj=obj, count=count, width=155*mm, height=18*mm, groups=groups, per_group=per_group))
+            cell_flow.append(Spacer(1,1.5*mm))
+
+        # Objective choices in a neat 2 x 2 grid.
+        if options:
+            vals = options[:4] + [''] * max(0, 4-len(options))
+            opt_data = [
+                [_option_flowables(vals[0], option_style), _option_flowables(vals[1], option_style)],
+                [_option_flowables(vals[2], option_style), _option_flowables(vals[3], option_style)]
+            ]
+            ot = Table(opt_data, colWidths=[81*mm,81*mm])
+            ot.setStyle(TableStyle([
+                ('VALIGN',(0,0),(-1,-1),'TOP'),
+                ('LEFTPADDING',(0,0),(-1,-1),2),
+                ('RIGHTPADDING',(0,0),(-1,-1),2),
+                ('TOPPADDING',(0,0),(-1,-1),1),
+                ('BOTTOMPADDING',(0,0),(-1,-1),1),
+            ]))
+            cell_flow.append(ot)
+
+        for extra in other:
+            cell_flow.append(Paragraph(escape(extra), body_style))
+
+        if layout_info and layout_info[0] == 'form_lazim':
+            rows, cols = layout_info[1], layout_info[2]
+            cell_flow.append(Spacer(1,1*mm))
+            grid_data = [['' for _ in range(cols)] for _ in range(rows)]
+            cell_w = min(12*mm, 72*mm/cols)
+            grid = Table(grid_data, colWidths=[cell_w]*cols, rowHeights=[9*mm]*rows)
+            grid.setStyle(TableStyle([
+                ('GRID',(0,0),(-1,-1),0.65,colors.black),
+                ('VALIGN',(0,0),(-1,-1),'MIDDLE'),
+                ('ALIGN',(0,0),(-1,-1),'CENTER'),
+            ]))
+            cell_flow.append(grid)
+        elif layout_info and layout_info[0] == 'worklines':
+            cell_flow.append(Spacer(1,1.5*mm))
+            if 'matematik' in str(s.get('subject','')).lower():
+                cell_flow.append(Spacer(1, 8*mm*layout_info[1]))
+            else:
+                for _ in range(layout_info[1]):
+                    cell_flow.append(Paragraph('_______________________________________________________________', body_style))
+        elif layout_info and layout_info[0] == 'answerspace':
+            cell_flow.append(Spacer(1, 8*mm*layout_info[1]))
+        elif layout_info and layout_info[0] == 'answerbox':
+            h = 8*mm*layout_info[1]
+            bx = Table([['']], colWidths=[160*mm], rowHeights=[h])
+            bx.setStyle(TableStyle([('BOX',(0,0),(-1,-1),0.65,colors.black)]))
+            cell_flow.append(Spacer(1,1.5*mm))
+            cell_flow.append(bx)
+        elif kind == 'structured':
+            cell_flow.append(Spacer(1, _recommended_math_work_mm(lines)*mm if 'matematik' in str(s.get('subject','')).lower() else 2*mm))
+            if 'matematik' not in str(s.get('subject','')).lower():
+                cell_flow.append(Paragraph('_______________________________________________________________', body_style))
+                cell_flow.append(Paragraph('_______________________________________________________________', body_style))
+        elif not layout_info and kind == 'short':
+            if 'matematik' in str(s.get('subject','')).lower():
+                cell_flow.append(Spacer(1,10*mm))
+            else:
+                cell_flow.append(Spacer(1,1.5*mm)); cell_flow.append(Paragraph('Jawapan: _________________________________________________', body_style))
+        # No extra answer line for objective/fill-in items.
+
+        card = Table([[cell_flow]], colWidths=[172*mm])
+        card.setStyle(TableStyle([
+            ('BOX',(0,0),(-1,-1),0.65,colors.black),
+            ('LEFTPADDING',(0,0),(-1,-1),6),
+            ('RIGHTPADDING',(0,0),(-1,-1),6),
+            ('TOPPADDING',(0,0),(-1,-1),4),
+            ('BOTTOMPADDING',(0,0),(-1,-1),4),
+            ('VALIGN',(0,0),(-1,-1),'TOP'),
+        ]))
+        story.append(KeepTogether([card, Spacer(1,1.8*mm)]))
+
+    # Separate compact answer scheme.
+    rows = _extract_scheme_rows(scheme_lines)
+    if rows:
+        story.append(PageBreak())
+        story.append(Paragraph('SKEMA JAWAPAN', title_style))
+        story.append(Paragraph(
+            escape(clean_doc_text(f"{s.get('subject','')} | {s.get('year','')} | {s.get('topic','')}")),
+            sub_style
+        ))
+
+        table_rows = []
+        for no, ans in rows:
+            if no in ('__SECTION__','__SHEET__'):
+                if table_rows:
+                    at = Table(table_rows, colWidths=[20*mm,145*mm], repeatRows=1)
+                    at.setStyle(TableStyle([
+                        ('GRID',(0,0),(-1,-1),0.45,colors.grey),
+                        ('BACKGROUND',(0,0),(-1,0),colors.whitesmoke),
+                        ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
+                        ('VALIGN',(0,0),(-1,-1),'TOP'),
+                        ('LEFTPADDING',(0,0),(-1,-1),5),
+                        ('RIGHTPADDING',(0,0),(-1,-1),5),
+                        ('TOPPADDING',(0,0),(-1,-1),4),
+                        ('BOTTOMPADDING',(0,0),(-1,-1),4),
+                    ]))
+                    story.extend([at, Spacer(1,3*mm)])
+                    table_rows = []
+                if no == '__SHEET__':
+                    story.append(Spacer(1,2*mm))
+                    story.append(Paragraph(escape(ans), title_style))
+                    table_rows = []
+                else:
+                    story.append(Paragraph(escape(ans), section_style))
+                    table_rows = [[Paragraph('<b>No.</b>', body_style), Paragraph('<b>Jawapan</b>', body_style)]]
+            else:
+                if not table_rows:
+                    table_rows = [[Paragraph('<b>No.</b>', body_style), Paragraph('<b>Jawapan</b>', body_style)]]
+                table_rows.append([Paragraph(escape(no), body_style), Paragraph(escape(ans), body_style)])
+
+        if table_rows:
+            at = Table(table_rows, colWidths=[20*mm,145*mm], repeatRows=1)
+            at.setStyle(TableStyle([
+                ('GRID',(0,0),(-1,-1),0.45,colors.grey),
+                ('BACKGROUND',(0,0),(-1,0),colors.whitesmoke),
+                ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
+                ('VALIGN',(0,0),(-1,-1),'TOP'),
+                ('LEFTPADDING',(0,0),(-1,-1),5),
+                ('RIGHTPADDING',(0,0),(-1,-1),5),
+                ('TOPPADDING',(0,0),(-1,-1),4),
+                ('BOTTOMPADDING',(0,0),(-1,-1),4),
+            ]))
+            story.append(at)
+
+    pdf.build(story, onFirstPage=_pdf_header_footer, onLaterPages=_pdf_header_footer)
+    return path
+
+
+def _gemini_request(prompt, model, max_output_tokens=4096):
+    url = f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
+    payload = {
+        'contents': [{'role':'user','parts':[{'text':prompt}]}],
+        'generationConfig': {
+            'temperature': 0.55,
+            'maxOutputTokens': max(1200, min(5000, int(max_output_tokens or 4096)))
+        }
+    }
+    headers = {
+        'Content-Type':'application/json',
+        'x-goog-api-key': GEMINI_API_KEY
+    }
+    # Worksheet generation can take longer during peak load; use a configurable timeout.
+    return requests.post(
+        url,
+        headers=headers,
+        json=payload,
+        timeout=(15, GEMINI_TIMEOUT)
+    )
+
+
+def _gemini_error_detail(response):
+    try:
+        return response.json().get('error',{}).get('message') or response.text
+    except Exception:
+        return response.text
+
+
+def gemini_generate(prompt, max_output_tokens=4096):
+    """Generate with retry + fallback for transient Gemini API failures.
+
+    - Preferred model: Gemini 3.5 Flash-Lite (low-cost)
+    - Fallback: Gemini 3.6 Flash -> Gemini 3.5 Flash
+    - Retry transient 408/429/5xx with short exponential backoff + jitter
+    - Do not retry auth/config errors such as 400/401/403
+    """
+    if not GEMINI_API_KEY:
+        raise RuntimeError('GEMINI_API_KEY belum ditetapkan di Render.')
+
+    models = []
+    for model in [GEMINI_MODEL] + GEMINI_FALLBACK_MODELS:
+        if model and model not in models:
+            models.append(model)
+
+    transient_statuses = {408, 429, 500, 502, 503, 504}
+    last_error = None
+    retries_per_model = max(1, GEMINI_RETRIES)
+
+    for model_index, model in enumerate(models):
+        for attempt in range(retries_per_model):
+            try:
+                r = _gemini_request(prompt, model, max_output_tokens=max_output_tokens)
+            except requests.RequestException as e:
+                last_error = f'Ralat rangkaian Gemini ({model}): {e}'
+
+                if attempt < retries_per_model - 1:
+                    delay = min(8.0, (1.5 * (2 ** attempt)) + random.uniform(0.25, 0.9))
+                    print(
+                        f'Gemini network retry {attempt + 1}/{retries_per_model} '
+                        f'for {model} after {delay:.1f}s',
+                        flush=True
+                    )
+                    time.sleep(delay)
+                    continue
+
+                break
+
+            if r.ok:
+                try:
+                    data = r.json()
+                except Exception:
+                    last_error = f'Gemini {model} memulangkan respons yang tidak sah.'
+                    break
+
+                parts = (
+                    (((data.get('candidates') or [{}])[0].get('content') or {})
+                     .get('parts') or [])
+                )
+                out = ''.join(
+                    p.get('text', '') for p in parts if isinstance(p, dict)
+                )
+
+                if out.strip():
+                    print(f'Gemini success: {model}', flush=True)
+                    return out.strip()
+
+                last_error = f'Gemini {model} tidak memulangkan teks.'
+                break
+
+            detail = _gemini_error_detail(r)
+            last_error = f'Gemini API {r.status_code} ({model}): {detail[:500]}'
+
+            if r.status_code in transient_statuses:
+                if attempt < retries_per_model - 1:
+                    retry_after = r.headers.get('Retry-After')
+                    try:
+                        retry_after = float(retry_after) if retry_after else 0.0
+                    except (TypeError, ValueError):
+                        retry_after = 0.0
+                    delay = max(
+                        retry_after,
+                        min(10.0, (1.5 * (2 ** attempt)) + random.uniform(0.3, 1.0))
+                    )
+                    print(
+                        f'Gemini transient {r.status_code} on {model}; '
+                        f'retry {attempt + 1}/{retries_per_model} after {delay:.1f}s',
+                        flush=True
+                    )
+                    time.sleep(delay)
+                    continue
+
+                print(
+                    f'Gemini transient {r.status_code} persists on {model}; '
+                    'switching fallback model.',
+                    flush=True
+                )
+                break
+
+            # A model can be unavailable for a specific API key/project even when it exists.
+            # In that case, switch model instead of killing the whole generation.
+            if r.status_code in (404,):
+                print(
+                    f'Gemini model {model} unavailable for this project (HTTP {r.status_code}); '
+                    'switching fallback model.',
+                    flush=True
+                )
+                break
+
+            # Auth/key errors are global and will not be fixed by changing model.
+            print(
+                f'Gemini non-transient error {r.status_code} on {model}; '
+                'stopping without repeated retries.',
+                flush=True
+            )
+            raise RuntimeError(last_error)
+
+        if model_index < len(models) - 1:
+            print(
+                f'Gemini fallback: {model} -> {models[model_index + 1]}',
+                flush=True
+            )
+
+    raise RuntimeError(last_error or 'Gemini belum berjaya menjana bahan.')
+
+
+
+def _can_generate_zero_cost(s):
+    """Topics we can generate correctly without spending any Gemini quota."""
+    if not HYBRID_LOW_COST or s.get('task') != 'worksheet':
+        return False
+    subject = str(s.get('subject','')).strip().lower()
+    topic = str(s.get('topic','')).strip().lower()
+    subtopic = str(s.get('subtopic','')).strip().lower()
+    return ('matematik' in subject and 'darab' in topic and 'konsep darab' in subtopic)
+
+
+def _local_concept_darab_worksheet(s):
+    """Zero-cost one-page generator for Tahun 3 Konsep Darab.
+
+    Generates exactly the requested number of questions. Equal-group visuals are
+    deterministic mathematical diagrams, never decorative pictures.
+    """
+    qcount = _worksheet_question_count(s)
+    diff = str(s.get('difficulty','mixed')).lower()
+    seed = str(s.get('variation_seed') or secrets.token_hex(4))
+    rng = random.Random(seed)
+    objects = ['bola','epal','bintang','bunga','pensel','buku']
+    contexts = [('pinggan','epal'),('kotak','pensel'),('bakul','bola'),('pasu','bunga'),('rak','buku'),('kad','bintang')]
+    if diff == 'easy': gvals,pvals=list(range(2,5)),list(range(2,6))
+    elif diff == 'hard': gvals,pvals=list(range(3,8)),list(range(3,10))
+    else: gvals,pvals=list(range(2,7)),list(range(2,9))
+    used=set()
+    def pair():
+        for _ in range(60):
+            a,b=rng.choice(gvals),rng.choice(pvals)
+            if (a,b) not in used: used.add((a,b)); return a,b
+        return rng.choice(gvals),rng.choice(pvals)
+
+    student=[]; ans=[]
+    n_obj=max(1, round(qcount*.35)); n_fill=max(1, round(qcount*.30)); n_struct=qcount-n_obj-n_fill
+    if n_struct < 1: n_struct=1; n_obj=max(1,n_obj-1)
+    q=1
+    student += ['BAHAGIAN A','Pilih jawapan yang betul.']
+    for _ in range(n_obj):
+        a,b=pair(); obj=rng.choice(objects); correct=f'{a} x {b}'
+        choices=[correct,f'{b} x {a}',f'{a} + {b}',f'{a+b} x 1']; rng.shuffle(choices)
+        student.append(f'{q}. Rajah menunjukkan {a} kumpulan sama banyak. Setiap kumpulan mempunyai {b} {obj}. [VISUAL_GROUPS: {obj}, {a}, {b}]')
+        student.append(' '.join(f'{L}. {v}' for L,v in zip('ABCD',choices)))
+        ans.append((q,'ABCD'[choices.index(correct)])); q+=1
+    student += ['BAHAGIAN B','Lengkapkan ayat matematik.']
+    for _ in range(n_fill):
+        a,b=pair(); rep=' + '.join([str(b)]*a)
+        if q%2: student.append(f'{q}. {rep} = ______ x {b}'); atext=str(a)
+        else: student.append(f'{q}. {a} x {b} = {rep} = ______'); atext=str(a*b)
+        ans.append((q,atext)); q+=1
+    if n_struct:
+        student += ['BAHAGIAN C','Selesaikan soalan.']
+    for i in range(n_struct):
+        a,b=pair(); container_name,obj=rng.choice(contexts)
+        token=f' [VISUAL_GROUPS: {obj}, {a}, {b}]' if i==0 and qcount<=10 else ''
+        student.append(f'{q}. Terdapat {a} {container_name}. Setiap {container_name} mempunyai {b} {obj}. Berapakah jumlah {obj} kesemuanya?{token} [ANSWERSPACE: 2]')
+        ans.append((q,f'{a} x {b} = {a*b}')); q+=1
+    schemes=['BAHAGIAN A']+[f'{no}. {a}' for no,a in ans[:n_obj]]+['BAHAGIAN B']+[f'{no}. {a}' for no,a in ans[n_obj:n_obj+n_fill]]
+    if n_struct: schemes += ['BAHAGIAN C']+[f'{no}. {a}' for no,a in ans[n_obj+n_fill:]]
+    return '\n'.join(student+['SKEMA JAWAPAN']+schemes)
+
+def _hybrid_postprocess_worksheet(text, s):
+    """Keep AI as a content writer; all countable artwork is rendered by Python.
+
+    Also repairs omitted equal-group visual tokens for the current Year 3 multiplication
+    concept so the picture can never be a decorative or mathematically ambiguous pile.
+    """
+    if not text or s.get('task') != 'worksheet':
+        return text
+    subject=str(s.get('subject','')).lower(); topic=str(s.get('topic','')).lower(); sub=str(s.get('subtopic','')).lower()
+    if 'matematik' in subject and 'pecahan' in (topic + ' ' + sub):
+        # Generic object pictures cannot faithfully encode shaded/coloured fraction categories.
+        # Keep only mathematically structured fraction diagrams.
+        text = re.sub(r'\[VISUAL:\s*[^\]]+\]', '', text, flags=re.I)
+    if not ('matematik' in subject and 'darab' in topic and 'konsep' in sub):
+        return text
+
+    out=[]
+    obj_words='bola|epal|bintang|bunga|pensel|buku'
+    pat=re.compile(rf'(?P<a>\d+)\s+kumpulan[^\n]*?(?P<b>\d+)\s+(?P<obj>{obj_words})', re.I)
+    for line in text.splitlines():
+        if 'SKEMA JAWAPAN' in line.upper():
+            out.append(line); out.extend(text.splitlines()[len(out):]); break
+        if '[VISUAL_GROUPS:' not in line.upper():
+            m=pat.search(line)
+            if m and re.match(r'^\s*\d+[\.)]', line):
+                line += f" [VISUAL_GROUPS: {m.group('obj').lower()}, {m.group('a')}, {m.group('b')}]"
+        out.append(line)
+    else:
+        return '\n'.join(out)
+    return '\n'.join(out)
+
+
+def _worksheet_output_token_budget(s):
+    """Keep Gemini output compact: enough for questions + short answer scheme only."""
+    q = _worksheet_question_count(s) if s.get('task') == 'worksheet' else int(s.get('amount', 5) or 5)
+    # Most worksheets need far less than the previous fixed 8192-token ceiling.
+    return min(5000, max(1600, 900 + (q * 220)))
+
+
+def build_ai_prompt(s):
+    task = s.get('task','questions')
+    year = s.get('year','-')
+    subject = s.get('subject','-')
+    topic = s.get('topic','-')
+    subtopic = s.get('subtopic','Semua Subtopik')
+    qtype = s.get('qtype','Campuran')
+    amount = s.get('amount','5')
+
+    common = f"""Anda ialah pembantu guru Malaysia untuk CikguLaju AI.
+Gunakan Bahasa Melayu Malaysia yang jelas, profesional dan sesuai dengan tahap murid.
+Tahap: {year}
+Subjek: {subject}
+Topik: {topic}
+Subtopik: {subtopic}
+Standard Kandungan (SK): {s.get('sk_code','')} {s.get('sk_text','')}
+Standard Pembelajaran (SP): {s.get('sp_code','')} {s.get('sp_text','')}
+
+Arahan penting:
+- Untuk RPH/worksheet berpandukan DSKP, kekalkan kandungan dalam skop SK/SP di atas. Jangan cipta atau mengubah kod SK/SP.
+- Pastikan kandungan sesuai dengan tahap murid dan topik yang dipilih.
+- Jangan reka fakta yang meragukan. Jika topik memerlukan maklumat khusus yang tidak diberi, kekalkan pada fakta asas yang kukuh.
+- Gunakan format seperti kertas soalan sekolah / buku latihan, bukan gaya artikel atau chat.
+- Gunakan teks biasa sahaja: jangan gunakan Markdown seperti **, ##, ``` atau jadual Markdown.
+- Gunakan tajuk bahagian yang jelas seperti BAHAGIAN A, BAHAGIAN B, ARAHAN dan SKEMA JAWAPAN apabila sesuai.
+- Nomborkan soalan sebagai 1. 2. 3. dan pilihan objektif sebagai A. B. C. D.
+- Jangan tulis mukadimah, ucapan, nota AI atau penerangan tambahan di luar bahan.
+- Jangan masukkan penerangan tentang proses AI.
+"""
+
+    if task == 'questions':
+        return common + f"""
+Tugasan: Jana {amount} soalan jenis {qtype}.
+Sediakan:
+1. Mulakan terus dengan ARAHAN atau BAHAGIAN A; jangan ulang tajuk dokumen.
+2. Tepat {amount} soalan, bernombor dengan kemas.
+4. Jika objektif, berikan 4 pilihan A-D dan hanya satu jawapan terbaik.
+5. Jika campuran, seimbangkan objektif dan struktur mengikut jumlah soalan.
+6. Selepas semua soalan, tulis SKEMA JAWAPAN pada baris berasingan dan senaraikan jawapan mengikut nombor soalan.
+"""
+    if task == 'kbat':
+        return common + f"""
+Tugasan: Jana tepat {amount} soalan KBAT.
+Jenis pilihan guru: {qtype}.
+Soalan mesti menguji aplikasi, analisis, penilaian atau penciptaan, bukan hafalan semata-mata.
+Sediakan cadangan jawapan / skema ringkas bagi setiap soalan.
+"""
+    if task == 'worksheet':
+        worksheet_questions = _worksheet_question_count(s)
+        student_level = _worksheet_level(s)
+        difficulty_label = _difficulty_label(s.get('difficulty', 'mixed'))
+        difficulty_instruction = _difficulty_instruction(s)
+        curriculum_depth = _curriculum_depth_instruction(s)
+        worksheet_blueprint = _worksheet_blueprint_instruction(s)
+        variation_seed = s.get('variation_seed') or secrets.token_hex(4)
+        return common + f"""
+Tugasan: Hasilkan satu worksheet yang boleh terus digunakan di kelas.
+MOD HIBRID KOS RENDAH: Anda hanya menjana kandungan teks soalan dan token visual. Jangan cuba melukis gambar, ASCII art atau menerangkan rupa gambar; enjin Python CikguLaju akan membina semua visual dan PDF secara tempatan. Gunakan ayat pendek dan elakkan penerangan tambahan supaya token output rendah.
+Mulakan dengan ARAHAN, kemudian bahagikan aktiviti kepada BAHAGIAN A, BAHAGIAN B dan seterusnya jika sesuai. Jangan ulang ruang Nama/Kelas/Tarikh kerana dokumen akan menyediakannya.
+
+KHUSUS UNTUK WORKSHEET:
+- Hasilkan TEPAT {worksheet_questions} SOALAN dalam SATU worksheet sahaja.
+- ID variasi set ini: {variation_seed}. Gunakan ID ini hanya untuk mempelbagaikan pemilihan nombor, konteks, susunan dan bentuk aktiviti; jangan paparkan ID ini dalam hasil.
+- Setiap penjanaan baharu mesti menggunakan variasi soalan, nombor, objek, situasi dan susunan yang berbeza.
+- Elakkan mengulang set contoh lazim yang sama apabila terdapat banyak kemungkinan soalan.
+- JANGAN tulis HELAIAN 1, HELAIAN 2 atau label helaian lain.
+- Bilangan halaman TIDAK ditetapkan. Gunakan sebanyak halaman yang perlu mengikut panjang soalan, visual dan ruang menjawab/pengiraan.
+- Aras mesti sesuai dengan {student_level}.
+- Pilihan aras cikgu: {difficulty_label}.
+- {difficulty_instruction}
+- {curriculum_depth}
+- {worksheet_blueprint}
+- Gunakan 2 hingga 4 jenis aktiviti yang berbeza dalam worksheet yang sama jika sesuai.
+- Elakkan lebih daripada 3 soalan berturut-turut dengan struktur ayat yang sama.
+- Ruang jawapan/pengiraan mesti mengikut keperluan sebenar. 10 soalan boleh menjadi 1, 2 atau 3 halaman. Jangan paksa kandungan muat dalam satu halaman.
+- Untuk objektif, pilihan jawapan mesti munasabah dan pengecoh mesti berdasarkan kesilapan lazim murid.
+- Untuk soalan visual, visual mesti mengandungi maklumat yang diperlukan untuk menyelesaikan soalan DAN mesti sepadan tepat dengan semua nombor/kuantiti dalam teks.
+- Visual bukan hiasan. Sebelum keluarkan jawapan, semak bahawa murid boleh mendapatkan maklumat matematik yang dimaksudkan terus daripada visual.
+- Jangan cipta ungkapan rosak seperti "+ = ____". Semua operand/nombor penting mesti kekal dalam teks atau divisualkan dengan jelas.
+- Untuk Tahun 1-3, utamakan aktiviti visual, mengira objek, memadan, melengkapkan, memilih, mewarna/menanda secara munasabah, dan situasi harian yang sangat ringkas.
+- Untuk Tahun 4-6, gunakan gabungan visual, aplikasi, jadual/rajah ringkas, objektif, struktur dan penyelesaian masalah.
+- Untuk sekolah menengah, gunakan visual/rajah hanya apabila membantu kandungan; utamakan aplikasi konsep dan penaakulan.
+- Untuk Tahun 1-3, sasarkan 25%-40% item menggunakan visual yang benar-benar diperlukan untuk menjawab; jangan jadikan semua soalan visual.
+- Untuk visual objek boleh kira biasa, gunakan token [VISUAL: epal, 5].
+- Untuk konsep KUMPULAN SAMA BANYAK/darab, WAJIB gunakan [VISUAL_GROUPS: bola, 3, 4] yang bermaksud 3 kumpulan berasingan, 4 bola setiap kumpulan. Jangan gunakan [VISUAL: bola, 12] untuk soalan konsep 3 × 4 kerana itu menghilangkan struktur kumpulan.
+- Sistem akan menukar token kepada GAMBAR sebenar; jangan tulis perkataan "visual", "gambar di sini", atau penerangan placeholder kepada murid.
+- GUNAKAN FORMAT ASAS SEPERTI BUKU LATIHAN/KERTAS PEPERIKSAAN: pilih ruang jawapan mengikut jenis tugasan, bukan satu bentuk ruang untuk semua soalan.
+- Untuk operasi Matematik yang sesuai dibuat secara bentuk lazim, tambah token [FORM_LAZIM: baris, lajur]. Contoh asas [FORM_LAZIM: 3, 3] untuk pengiraan ringkas. Besarkan grid secara munasabah bagi nombor lebih panjang/lebih banyak langkah, contohnya 4x4 atau 4x5. Jangan gunakan grid jika soalan hanya objektif atau isi tempat kosong mudah.
+- Untuk MATEMATIK, JANGAN gunakan garisan bergaris untuk pengiraan. Gunakan [ANSWERSPACE: n] sebagai ruang kosong tanpa garisan, atau [FORM_LAZIM: baris, lajur] jika operasi memang sesuai dibuat secara bentuk lazim. Jangan kedekut ruang: pengiraan satu langkah biasanya [ANSWERSPACE: 3], dua langkah [ANSWERSPACE: 4-5], dan penyelesaian masalah/pecahan berbilang langkah [ANSWERSPACE: 5-6].
+- Untuk subjek bahasa/esei yang benar-benar memerlukan tulisan beberapa ayat, [WORKLINES: n] boleh digunakan dengan n antara 2 hingga 6.
+- Untuk jawapan yang memerlukan ruang melukis, melabel, membina ayat, peta ringkas atau respons terbuka, gunakan [ANSWERBOX: n] dengan n antara 1 hingga 5 mengikut ruang yang diperlukan.
+- Prinsip semua subjek: ruang mesti sepadan dengan jawapan yang dijangka. Jawapan satu perkataan/nombor tidak boleh diberi ruang besar; huraian beberapa ayat tidak boleh diberi satu garisan pendek.
+- Anggap format ini sebagai TEMPLATE TETAP CikguLaju. Ubah kandungan soalan, nombor, konteks dan imej antara penjanaan, tetapi kekalkan struktur lembaran yang konsisten dan kemas seperti buku latihan/kertas peperiksaan.
+- Visual mesti dipilih kerana KONSEP, bukan kerana hiasan. Jika enjin tidak mempunyai token rajah yang boleh mewakili konsep dengan tepat, JANGAN gunakan visual pada soalan itu. Lebih baik tiada gambar daripada gambar yang mengelirukan.
+- Untuk PECAHAN, jangan gunakan sekumpulan bunga/epal biasa untuk mewakili pecahan berlorek atau warna. Gunakan [FRACTION_BAR: pengangka, penyebut] untuk bar pecahan atau [FRACTION_SET: jumlah, dipilih] untuk set pecahan tunggal. Rajah dipilih ditanda dengan corak hitam-putih, bukan warna. Untuk lebih daripada satu kategori pecahan/warna dalam soalan yang sama, gunakan teks/jadual sahaja buat masa ini.
+- Gunakan visual cetak hitam-putih yang sesuai dengan umur hanya apabila tepat: epal, bola, bintang, bunga, pensel, buku, syiling, bentuk, kad nombor dan blok puluh/base-ten.
+- Untuk Matematik Tahun 2 ke atas, jangan terlalu bergantung pada gambar objek comel. Campurkan representasi matematik seperti blok puluh, kad nombor, nilai hilang, jadual kecil dan situasi sebenar.
+- Jangan gunakan token [DIAGRAM] buat masa ini.
+- Visual mesti menjadi sebahagian daripada tugasan, contohnya "Kira objek di bawah", "Bulatkan kumpulan yang betul", atau "Tulis ayat matematik berdasarkan gambar".
+- VALIDASI WAJIB VISUAL: jika teks menyebut N kumpulan dengan M objek setiap kumpulan, gambar mesti ada tepat N kumpulan dan tepat M objek dalam setiap kumpulan; jumlah mestilah N×M. Jika tidak konsisten, betulkan sebelum memberikan output.
+- Helaian murid mesti mengandungi SOALAN sahaja.
+- Jangan tulis tajuk dokumen, Nama/Kelas/Tarikh/Markah atau ARAHAN umum kerana templat dokumen akan menyediakannya.
+- Bahagikan latihan kepada BAHAGIAN A, BAHAGIAN B dan seterusnya jika sesuai.
+- Selepas tajuk BAHAGIAN, beri arahan ringkas khusus bahagian sahaja, contohnya: Pilih jawapan yang betul.
+- Soalan objektif mesti mempunyai pilihan A. B. C. D. dan JANGAN beri ruang "Jawapan:".
+- Soalan isi tempat kosong mesti mempunyai ruang kosong terus dalam ayat, contohnya 7 + 5 = ______.
+- Soalan subjektif / penyelesaian masalah boleh meminta jalan kerja dan jawapan.
+- Jangan tulis "Jawapan:" selepas setiap soalan objektif atau isi tempat kosong.
+- Selepas semua soalan, tulis SKEMA JAWAPAN pada bahagian berasingan.
+- Skema hendaklah ringkas mengikut nombor soalan.
+- Gaya keseluruhan seperti lembaran kerja / kertas latihan sekolah Malaysia, bukan artikel atau chat.
+Elakkan reka bentuk yang memerlukan gambar jika gambar tidak diberikan.
+"""
+    if task == 'rph':
+        return common + """
+Tugasan: Hasilkan RANCANGAN PENGAJARAN HARIAN (RPH) yang praktikal dan terus boleh digunakan guru.
+Gunakan struktur RPH sekolah Malaysia yang sesuai dipersembahkan dalam JADUAL, bukan esei panjang.
+Tarikh, Hari, Masa, Kelas dan Bilangan Murid disediakan oleh templat/sistem; jangan mereka-reka maklumat tersebut dalam kandungan AI.
+WAJIB gunakan tajuk bahagian berikut tepat seperti ini supaya sistem boleh membina jadual:
+MATA PELAJARAN
+TAHUN/TINGKATAN
+TAJUK
+STANDARD KANDUNGAN
+STANDARD PEMBELAJARAN
+OBJEKTIF PEMBELAJARAN
+KRITERIA KEJAYAAN
+PENGETAHUAN SEDIA ADA
+BAHAN BANTU MENGAJAR
+EMK / NILAI
+KBAT / PAK21
+PENTAKSIRAN
+SET INDUKSI
+AKTIVITI UTAMA
+PENUTUP
+PEMULIHAN / PENGAYAAN
+REFLEKSI
+
+Untuk SET INDUKSI, AKTIVITI UTAMA dan PENUTUP, nyatakan cadangan masa dan langkah bernombor yang realistik.
+Objektif dan kriteria kejayaan mesti boleh diukur dan selaras antara satu sama lain.
+Standard Kandungan dan Standard Pembelajaran mesti selaras dengan tahun/tingkatan, subjek dan tajuk yang dipilih. Jika kod DSKP tidak diketahui dengan yakin daripada konteks yang tersedia, jangan mereka-reka nombor kod; tulis pernyataan standard yang tepat tanpa kod.
+Refleksi mesti menyediakan ruang guru mengisi bilangan murid yang mencapai / belum mencapai objektif serta tindakan susulan.
+Jangan tulis dalam format Markdown table. Sistem CikguLaju akan menukarkan bahagian-bahagian ini kepada jadual PDF/Word.
+"""
+    return common + 'Hasilkan bahan pengajaran yang sesuai dengan pilihan guru.'
+
+
+def generate_ai(cid):
+    s = state.setdefault(cid,{})
+    if not s.get('topic') and 'selected_topic_index' in s:
+        topics = TOPICS.get(s.get('year',''),{}).get(s.get('subject',''),[])
+        idx = s.get('selected_topic_index')
+        if isinstance(idx, int) and 0 <= idx < len(topics):
+            s['topic'] = topics[idx]
+
+    if not s.get('topic'):
+        send(cid, '⚠️ Pilihan belum lengkap. Sila pilih tajuk dahulu.',
+             [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        return
+    send(cid, '⚡ <b>Sedang jana bahan...</b>\n<i>Cikgu tunggu beberapa saat.</i>')
+    try:
+        result = (_local_concept_darab_worksheet(s) if _can_generate_zero_cost(s) else gemini_generate(build_ai_prompt(s), max_output_tokens=_worksheet_output_token_budget(s)))
+        result = _hybrid_postprocess_worksheet(result, s)
+        send_long_plain(cid, result)
+        send(cid, '✅ <b>Siap!</b> Cikgu boleh jana bahan lain atau kembali ke menu.',
+             [[{'text':'🔄 Jana Semula','callback_data':'generate'}],
+              [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    except Exception as e:
+        print('Gemini error:', repr(e), flush=True)
+        # Elakkan paparkan mesej teknikal panjang kepada pengguna Telegram.
+        send(cid, '⚠️ <b>AI sedang sibuk buat sementara waktu.</b>\n\nCikgu boleh tekan <b>Cuba Lagi</b>. Sistem sudah cuba semula dan menukar model secara automatik sebelum mesej ini dipaparkan.',
+             [[{'text':'🔄 Cuba Lagi','callback_data':'generate'}],
+              [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+
+def menu(cid, show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    send(cid,
+         "👩‍🏫 <b>CIKGULAJU AI</b>\n<i>Bahan mengajar siap dengan lebih pantas ⚡</i>\n\n"
+         "🎁 <b>CikguLaju kini boleh digunakan secara PERCUMA.</b>\n"
+         "Cikgu boleh hasilkan RPH, lembaran kerja dan bahan PdP untuk membantu memudahkan urusan pengajaran.\n\n"
+         "💛 Jika CikguLaju membantu cikgu, cikgu boleh menyokong kos operasi, penyelenggaraan, pembangunan ciri baharu serta menghargai masa dan usaha pembangunan CikguLaju melalui <b>Sumbangan Ikhlas</b>.\n"
+         "🙏 Sumbangan adalah sukarela dan tidak menjejaskan penggunaan jika cikgu tidak menyumbang.\n\n"
+         "Pilih cara cikgu nak mula:\n\n"
+         "✨ <b>Jana Bahan</b> — pilih RPH, worksheet atau kedua-duanya, kemudian ikut Tahun/Tingkatan dan DSKP.\n"
+         "📚 <b>Guna Bahan Cikgu</b> — upload PDF atau gambar nota/RPH/lembaran kerja.",
+         [[{'text':'✨ JANA BAHAN','callback_data':'quick'}],
+          [{'text':'📚 GUNA BAHAN CIKGU','callback_data':'material'}],
+          [{'text':'💛 Sumbangan Ikhlas','callback_data':'donate'},{'text':'👤 Akaun Saya','callback_data':'account'}]])
+
+def quick(cid):
+    send(cid,'✨ <b>Apa yang cikgu nak hasilkan?</b>',[
+        [{'text':'📘 Jana RPH Sahaja','callback_data':'task_rph'}],
+        [{'text':'📝 Jana Worksheet Sahaja','callback_data':'task_worksheet'}],
+        [{'text':'📚 Jana RPH + Worksheet','callback_data':'task_both'}],
+        [{'text':'⬅️ Menu Utama','callback_data':'home'}]])
+
+def level(cid, task):
+    # Nama fungsi dikekalkan untuk keserasian callback lama, tetapi terus ke Tahun/Tingkatan.
+    state.setdefault(cid,{})['task'] = task
+    choose_grade(cid)
+
+def choose_grade(cid):
+    kb=[]
+    grades=[f'Tahun {i}' for i in range(1,7)] + [f'Tingkatan {i}' for i in range(1,6)]
+    for i in range(0,len(grades),2):
+        row=[]
+        for g in grades[i:i+2]:
+            code=('year_'+g.split()[-1]) if g.startswith('Tahun') else ('form_'+g.split()[-1])
+            row.append({'text':g,'callback_data':code})
+        kb.append(row)
+    kb.append([{'text':'⬅️ Kembali','callback_data':'quick'}])
+    send(cid,'🎓 <b>Pilih Tahun / Tingkatan:</b>',kb)
+
+def year(cid, lv):
+    # Callback lama masih berfungsi.
+    choose_grade(cid)
+
+def subjects(cid, label):
+    st=state.setdefault(cid,{})
+    st['year'] = label
+    valid = SUBJECTS_BY_GRADE.get(label, [])
+    kb=[]
+    for i in range(0,len(valid),2):
+        row=[]
+        for sub in valid[i:i+2]:
+            row.append({'text':SUBJECT_LABEL.get(sub,sub),'callback_data':'sub_'+sub})
+        kb.append(row)
+    kb.append([{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,f'📘 <b>{label}</b>\n\nPilih subjek yang tersedia untuk tahap ini:',kb)
+
+def show_topics(cid, page=0):
+    s = state.setdefault(cid,{})
+    year_label = s.get('year','')
+    sub = s.get('subject','')
+    topics = TOPICS.get(year_label,{}).get(sub,[])
+
+    if not topics:
+        # Sejarah Tahun 1-3 atau subjek lain: benarkan taip sendiri.
+        s['waiting'] = 'topic'
+        if sub == 'Sejarah' and year_label in ('Tahun 1','Tahun 2','Tahun 3'):
+            send(cid,f'🏛️ <b>{sub} — {year_label}</b>\n\nTiada senarai topik standard disediakan untuk tahap ini.\n\nTaip tajuk sendiri atau kembali ke menu utama.',[[{'text':'⬅️ Menu Utama','callback_data':'home'}]])
+        else:
+            send(cid,f'📚 <b>{sub}</b>\n\nTaip <b>tajuk / tema</b> yang cikgu mahu.',[[{'text':'⬅️ Menu Utama','callback_data':'home'}]])
+        return
+
+    s['topic_list'] = topics
+    per_page = 8
+    start = page * per_page
+    end = min(start + per_page, len(topics))
+    kb = []
+    for idx in range(start, end):
+        kb.append([{'text':f'📖 {topics[idx]}','callback_data':f'topic_{idx}'}])
+
+    nav = []
+    if page > 0:
+        nav.append({'text':'⬅️ Sebelum','callback_data':f'tpage_{page-1}'})
+    if end < len(topics):
+        nav.append({'text':'Seterusnya ➡️','callback_data':f'tpage_{page+1}'})
+    if nav:
+        kb.append(nav)
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+
+    pages = (len(topics)+per_page-1)//per_page
+    send(cid,f'📚 <b>{sub} — {year_label}</b>\n\nPilih tajuk/topik:\n<i>Halaman {page+1}/{pages}</i>',kb)
+
+def show_subtopics(cid, topic_index):
+    s = state.setdefault(cid,{})
+    topics = TOPICS.get(s.get('year',''),{}).get(s.get('subject',''),[])
+    if topic_index < 0 or topic_index >= len(topics):
+        return show_topics(cid,0)
+
+    s['selected_topic_index'] = topic_index
+    s['topic'] = topics[topic_index]
+    subs = get_subtopics(s.get('year',''), s.get('subject',''), s['topic'])
+
+    kb = [[{'text':'📚 Semua Subtopik','callback_data':f'st3|-1|{topic_index}'}]]
+    for i, item in enumerate(subs):
+        kb.append([{'text':f'▫️ {item}','callback_data':f'st3|{i}|{topic_index}'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,
+         f"📖 <b>{s['topic']}</b>\n\nPilih subtopik dengan menekan butang di bawah:\n<i>Tidak perlu taip sendiri. Senarai ini tetap.</i>",
+         kb)
+
+def choose_topic(cid, idx):
+    show_subtopics(cid, idx)
+
+TASK_TO_CODE = {'questions':'q','worksheet':'w','rph':'r','both':'b','kbat':'k'}
+CODE_TO_TASK = {v:k for k,v in TASK_TO_CODE.items()}
+QTYPE_TO_CODE = {'Objektif':'o','Struktur':'s','KBAT':'k','Campuran':'c'}
+CODE_TO_QTYPE = {v:k for k,v in QTYPE_TO_CODE.items()}
+
+def compact_year(label):
+    return ('p' if label.startswith('Tahun ') else 's') + label.split()[-1]
+
+def expand_year(code):
+    return ('Tahun ' if code.startswith('p') else 'Tingkatan ') + code[1:]
+
+def subject_index(subject):
+    for i, (_, sub) in enumerate(SUBJECTS):
+        if sub == subject:
+            return i
+    return -1
+
+def rebuild_state(tc, yc, si, ti, sti, qc='-', amount='-'):
+    try:
+        si, ti, sti = int(si), int(ti), int(sti)
+    except Exception:
+        return None
+    year_label = expand_year(yc)
+    if si < 0 or si >= len(SUBJECTS):
+        return None
+    subject = SUBJECTS[si][1]
+    topics = TOPICS.get(year_label,{}).get(subject,[])
+    if ti < 0 or ti >= len(topics):
+        return None
+    topic = topics[ti]
+    subs = get_subtopics(year_label, subject, topic)
+    subtopic = 'Semua Subtopik'
+    if sti >= 0:
+        if sti >= len(subs):
+            return None
+        subtopic = subs[sti]
+
+    s = {
+        'task': CODE_TO_TASK.get(tc,''),
+        'year': year_label,
+        'subject': subject,
+        'topic': topic,
+        'subtopic': subtopic,
+        'selected_topic_index': ti,
+        'selected_subtopic_index': sti,
+    }
+    if qc != '-':
+        s['qtype'] = CODE_TO_QTYPE.get(qc,'')
+    if amount != '-':
+        s['amount'] = str(amount)
+    return s if s['task'] else None
+
+def show_qtype_v3(cid, s, sti):
+    tc = TASK_TO_CODE[s['task']]
+    yc = compact_year(s['year'])
+    si = subject_index(s['subject'])
+    ti = s['selected_topic_index']
+    send(cid,'📝 <b>Pilih jenis soalan:</b>',[
+        [{'text':'🔘 Objektif','callback_data':f'qt3|o|{tc}|{yc}|{si}|{ti}|{sti}'},
+         {'text':'✍️ Subjektif / Struktur','callback_data':f'qt3|s|{tc}|{yc}|{si}|{ti}|{sti}'}],
+        [{'text':'🧠 KBAT','callback_data':f'qt3|k|{tc}|{yc}|{si}|{ti}|{sti}'},
+         {'text':'🔀 Campuran','callback_data':f'qt3|c|{tc}|{yc}|{si}|{ti}|{sti}'}]])
+
+def preview_v3(cid, s, gen_cb):
+    task=s.get('task')
+    if task == 'worksheet':
+        detail = (f"📘 SK: {s.get('sk_code','-')} {s.get('sk_text','')}\n"
+                  f"📗 SP: {s.get('sp_code','-')} {s.get('sp_text','')}\n"
+                  f"🔢 {s.get('worksheet_questions',8)} soalan bagi setiap aras • 4 aras automatik\n"
+                  f"🎯 Aras: {_difficulty_label(s.get('difficulty','mixed'))}")
+    elif task in ('rph','both'):
+        date = s.get('rph_date') or 'Kosong'
+        day = s.get('rph_day') or 'Kosong'
+        kelas = s.get('rph_class') or 'Kosong'
+        masa = s.get('rph_time') or 'Kosong'
+        murid = s.get('rph_students') or 'Kosong'
+        detail = (f"📘 SK: {s.get('sk_code','-')} {s.get('sk_text','')}\n"
+                  f"📗 SP: {s.get('sp_code','-')} {s.get('sp_text','')}\n"
+                  f"📅 Tarikh: {date} ({day})\n🏫 Kelas: {kelas}\n⏰ Masa: {masa}\n👥 Bilangan Murid: {murid}")
+        if task=='both':
+            detail += f"\n📝 Worksheet: 4 aras • {s.get('worksheet_questions',8)} soalan bagi setiap aras"
+    else:
+        detail = f"📝 {s.get('qtype','-')}\n🔢 {s.get('amount','-')} soalan"
+    msg = (f"✅ <b>Pilihan Cikgu</b>\n\n🎓 {s.get('year','-')}\n📚 {s.get('subject','-')}\n"
+           f"📖 {s.get('topic','-')}\n▫️ {s.get('subtopic','Semua Subtopik')}\n{detail}")
+    label = '📚 Jana RPH + Worksheet' if task=='both' else ('📘 Jana RPH' if task=='rph' else '📝 Jana Worksheet')
+    send(cid, msg, [[{'text':label,'callback_data':gen_cb}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+def generate_v3(cid, s, regen_cb):
+    # Prevent Telegram webhook retries / double taps from launching duplicate AI jobs.
+    with _runtime_lock:
+        if cid in _processing_chats:
+            send(cid, '⏳ <b>RPH masih sedang dijana.</b>\n\nCikgu tak perlu tekan lagi. Tunggu sehingga proses siap.' if s.get('task') == 'rph' else '⏳ <b>Worksheet masih sedang dijana.</b>\n\nCikgu tak perlu tekan lagi. Tunggu sehingga proses siap.')
+            return
+        _processing_chats.add(cid)
+
+    try:
+        # Fresh seed on every generation, including Jana Semula.
+        if s.get('task') in ('worksheet','rph'):
+            s['variation_seed'] = secrets.token_hex(4)
+        send(cid, ('⚡ <b>Sedang jana RPH...</b>' if s.get('task') == 'rph' else '⚡ <b>Sedang jana worksheet...</b>') + '\n<i>Cikgu tunggu beberapa saat.</i>')
+        try:
+            if s.get('task') == 'rph' and s.get('sk_code') and s.get('sp_code'):
+                # RPH sengaja dijana semula daripada bank pedagogi supaya aktiviti tidak berulang.
+                result = _local_rph_text(s)
+                _rph_cache_put(s, result)
+            elif _can_generate_zero_cost(s):
+                print('Hybrid zero-cost local generator: Matematik > Darab > Konsep darab', flush=True)
+                result = _local_concept_darab_worksheet(s)
+            else:
+                result = gemini_generate(build_ai_prompt(s), max_output_tokens=_worksheet_output_token_budget(s))
+            result = _hybrid_postprocess_worksheet(result, s)
+            state.setdefault(cid,{})['last_result'] = result
+            state[cid]['last_result_context'] = s
+
+            # Bahan tidak dipaparkan sebagai teks dalam Telegram; terus tawarkan fail siap.
+            ready_label = 'RPH siap!' if s.get('task') == 'rph' else 'Worksheet siap!'
+            send(cid,f'✅ <b>{ready_label}</b>\n\nTekan butang di bawah untuk dapatkan fail PDF:',
+                 [[{'text':'📄 Dapatkan PDF','callback_data':'file_pdf'}],
+                  [{'text':'🔄 Jana Semula','callback_data':regen_cb}],
+                  [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        except Exception as e:
+            err = str(e)
+            print('Gemini error:', repr(e), flush=True)
+            # Show a safe, short technical reason so failures are diagnosable from Telegram too.
+            safe = html.escape(err[:220])
+            send(cid,
+                 '⚠️ <b>Janaan AI belum berjaya.</b>\n\n'
+                 f'<code>{safe}</code>\n\n'
+                 'Tekan <b>Cuba Lagi</b>. Sistem akan menggunakan model alternatif secara automatik.',
+                 [[{'text':'🔄 Cuba Lagi','callback_data':regen_cb}],
+                  [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    finally:
+        with _runtime_lock:
+            _processing_chats.discard(cid)
+
+
+
+WORKSHEET_LEVELS = [
+    ('aras1','Aras 1 – Pemulihan / Asas','easy'),
+    ('aras2','Aras 2 – Sederhana','medium'),
+    ('aras3','Aras 3 – Penguasaan','hard'),
+    ('aras4','Aras 4 – Pengayaan / KBAT','kbat'),
+]
+
+def _four_level_worksheet_prompt(s):
+    q = int(s.get('worksheet_questions', 8) or 8)
+    base = dict(s)
+    base['difficulty'] = 'mixed'
+    base['worksheet_pack_4levels'] = False
+    common = build_ai_prompt(base)
+    extra = (
+        "\n\nARAHAN WAJIB PAKEJ 4 ARAS — ARAHAN INI MENGATASI ARAHAN SATU WORKSHEET DI ATAS:\n"
+        f"Hasilkan EMPAT worksheet berasingan untuk SK/SP yang SAMA. Setiap aras mesti mengandungi tepat {q} soalan dan mesti berbeza secara bermakna, bukan sekadar menukar nombor.\n"
+        "Gunakan penanda tepat ini pada baris sendiri:\n===ARAS_1===\n===ARAS_2===\n===ARAS_3===\n===ARAS_4===\n\n"
+        "ARAS 1 — PEMULIHAN / ASAS: lebih banyak bantuan visual, contoh, langkah berpandu dan item langsung.\n"
+        "ARAS 2 — SEDERHANA: penguasaan standard SP untuk majoriti murid.\n"
+        "ARAS 3 — PENGUASAAN: kurang bantuan, aplikasi dan penyelesaian masalah yang lebih mencabar tetapi masih dalam skop SP.\n"
+        "ARAS 4 — PENGAYAAN / KBAT: penaakulan, situasi baharu, nombor hilang, justifikasi atau soalan terbuka yang sesuai dengan Tahun/Tingkatan dan masih dalam skop SP.\n\n"
+        "Setiap blok selepas penanda mesti menjadi worksheet lengkap yang boleh dicetak sendiri. Jangan tulis penerangan tentang perbezaan aras; terus beri kandungan worksheet.\n"
+    )
+    return common + extra
+
+def _split_four_level_worksheet(text):
+    markers=['===ARAS_1===','===ARAS_2===','===ARAS_3===','===ARAS_4===']
+    if not text:
+        return {}
+    positions=[]
+    for m in markers:
+        idx=text.find(m)
+        if idx<0:
+            return {}
+        positions.append(idx)
+    out={}
+    for i,m in enumerate(markers):
+        start=positions[i]+len(m)
+        end=positions[i+1] if i+1<len(markers) else len(text)
+        out[f'aras{i+1}']=text[start:end].strip()
+    return out
+
+def _generate_four_level_worksheets(s):
+    results={}
+    if _can_generate_zero_cost(s):
+        for key,label,diff in WORKSHEET_LEVELS:
+            ctx=dict(s); ctx['task']='worksheet'; ctx['difficulty']=diff; ctx['worksheet_pack_4levels']=False
+            results[key]=_hybrid_postprocess_worksheet(_local_concept_darab_worksheet(ctx),ctx)
+        return results
+    raw=gemini_generate(_four_level_worksheet_prompt(s), max_output_tokens=max(8192, _worksheet_output_token_budget(s)*3))
+    results=_split_four_level_worksheet(raw)
+    if len(results)!=4:
+        raise RuntimeError('Empat blok worksheet tidak lengkap.')
+    return results
+
+def _inject_worksheet_differentiation_into_rph(text):
+    if not text:
+        return text
+    note=("\n5. Guru mengagihkan Lembaran Kerja Aras 1, 2, 3 atau 4 mengikut tahap penguasaan semasa murid. "
+          "Murid boleh bergerak ke aras seterusnya selepas menunjukkan penguasaan pada tugasan yang diberikan.\n")
+    if 'PENUTUP' in text:
+        return text.replace('PENUTUP', note+'PENUTUP',1)
+    return text+note
+
+def _merge_pdf_paths(paths, output_path):
+    writer=PdfWriter()
+    for pth in paths:
+        writer.append(pth)
+    with open(output_path,'wb') as f:
+        writer.write(f)
+    writer.close()
+    return output_path
+
+def create_four_level_worksheet_pdf(s, results, cid):
+    temp_paths=[]
+    try:
+        for key,label,diff in WORKSHEET_LEVELS:
+            ctx=dict(s); ctx['task']='worksheet'; ctx['difficulty']=diff; ctx['worksheet_pack_4levels']=False
+            ctx['subtopic']=(ctx.get('subtopic') or 'Semua Subtopik') + ' | ' + label
+            pth=create_pdf_file(ctx, results[key], f'{cid}_{key}')
+            temp_paths.append(pth)
+        out=os.path.join(tempfile.gettempdir(), f'{cid}_CikguLaju_Worksheet_4_Aras.pdf')
+        return _merge_pdf_paths(temp_paths,out)
+    finally:
+        for pth in temp_paths:
+            try:
+                if os.path.exists(pth): os.remove(pth)
+            except Exception:
+                pass
+
+def generate_worksheet_pack(cid, s, regen_cb='generate_selected_material'):
+    with _runtime_lock:
+        if cid in _processing_chats:
+            return send(cid,'⏳ <b>Worksheet masih sedang dijana.</b>')
+        _processing_chats.add(cid)
+    try:
+        s['variation_seed']=secrets.token_hex(4)
+        send(cid,'⚡ <b>Sedang menyediakan worksheet 4 aras...</b>\n<i>Cikgu tunggu beberapa saat.</i>')
+        ctx=dict(s); ctx['task']='worksheet'; ctx['worksheet_pack_4levels']=True
+        results=_generate_four_level_worksheets(ctx)
+        st=state.setdefault(cid,{})
+        st['worksheet_pack_results']=results
+        st['worksheet_pack_context']=ctx
+        st.pop('last_result',None); st.pop('last_result_context',None)
+        send(cid,'✅ <b>Worksheet 4 aras siap!</b>\n\nAras 1 Pemulihan/Asas • Aras 2 Sederhana • Aras 3 Penguasaan • Aras 4 Pengayaan/KBAT.',
+             [[{'text':'📄 Dapatkan PDF 4 Aras','callback_data':'file_worksheet_pack'}],[{'text':'🔄 Jana Semula','callback_data':regen_cb}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    except Exception as e:
+        print('Worksheet pack generation error:',repr(e),flush=True)
+        send(cid,'⚠️ Worksheet belum berjaya dijana. Cuba lagi.',[[{'text':'🔄 Cuba Lagi','callback_data':regen_cb}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    finally:
+        with _runtime_lock:
+            _processing_chats.discard(cid)
+
+def generate_both_materials(cid, s):
+    with _runtime_lock:
+        if cid in _processing_chats:
+            return send(cid,'⏳ <b>Bahan masih sedang dijana.</b>')
+        _processing_chats.add(cid)
+    try:
+        s['variation_seed']=secrets.token_hex(4)
+        send(cid,'⚡ <b>Sedang menyediakan RPH dan worksheet 4 aras...</b>\n<i>Cikgu tunggu beberapa saat.</i>')
+        rph_ctx=dict(s); rph_ctx['task']='rph'
+        ws_ctx=dict(s); ws_ctx['task']='worksheet'; ws_ctx.setdefault('worksheet_questions',8); ws_ctx['difficulty']='all4'; ws_ctx['worksheet_pack_4levels']=True
+        rph_result=_inject_worksheet_differentiation_into_rph(_local_rph_text(rph_ctx))
+        ws_results=_generate_four_level_worksheets(ws_ctx)
+        st=state.setdefault(cid,{})
+        st['both_results']={'rph':rph_result,'worksheet_pack':ws_results}
+        st['both_contexts']={'rph':rph_ctx,'worksheet':ws_ctx}
+        send(cid,'✅ <b>RPH dan worksheet 4 aras siap!</b>\n\nSemua bahan menggunakan SK/SP yang sama. RPH turut memasukkan pembezaan worksheet mengikut tahap murid.',[[{'text':'📚 Dapatkan Pakej','callback_data':'file_both_materials'}],[{'text':'🔄 Jana Semula','callback_data':'generate_selected_material'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    except Exception as e:
+        print('Both generation error:',repr(e),flush=True)
+        send(cid,'⚠️ Bahan belum berjaya dijana. Cuba lagi.',[[{'text':'🔄 Cuba Lagi','callback_data':'generate_selected_material'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    finally:
+        with _runtime_lock:
+            _processing_chats.discard(cid)
+
+def qtype(cid):
+    send(cid,'📝 <b>Pilih jenis soalan:</b>',[
+        [{'text':'🔘 Objektif','callback_data':'qt_Objektif'},{'text':'✍️ Subjektif / Struktur','callback_data':'qt_Struktur'}],
+        [{'text':'🧠 KBAT','callback_data':'qt_KBAT'},{'text':'🔀 Campuran','callback_data':'qt_Campuran'}]])
+
+def amount(cid, kind):
+    state.setdefault(cid,{})['qtype'] = kind
+    send(cid,'🔢 <b>Berapa soalan cikgu perlukan?</b>',[[{'text':str(n),'callback_data':f'amt_{n}'} for n in (5,10,20,30)]])
+
+def callback(cid, d):
+    if d == 'home':
+        state[cid] = {}
+        menu(cid)
+    elif d == 'quick':
+        quick(cid)
+    elif d == 'material':
+        state.setdefault(cid,{})['waiting'] = 'material'
+        send(cid,'📚 <b>GUNA BAHAN CIKGU</b>\n\nHantar 📄 PDF atau 📸 gambar nota.\n\nPembacaan AI akan disambungkan pada langkah seterusnya.')
+    elif d == 'donate':
+        send_donation_qr(cid)
+    elif d == 'pro':
+        # Legacy callback: pelan berbayar disembunyikan buat masa sekarang.
+        send(cid,'🎁 <b>CikguLaju AI kini percuma.</b>\n\nJika cikgu ingin membantu kos operasi dan pembangunan, sumbangan ikhlas boleh dibuat melalui menu utama.',
+             [[{'text':'💛 Sumbangan Ikhlas','callback_data':'donate'}],
+              [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    elif d == 'account':
+        send(cid,'👤 <b>AKAUN SAYA</b>\n\nPelan: 🎁 Percuma\nStatus: Aktif')
+    elif d.startswith('task_'):
+        level(cid,d[5:])
+    elif d == 'choose_grade':
+        choose_grade(cid)
+    elif d == 'level_primary':
+        year(cid,'primary')
+    elif d == 'level_secondary':
+        year(cid,'secondary')
+    elif d.startswith('year_'):
+        subjects(cid,'Tahun '+d[5:])
+    elif d.startswith('form_'):
+        subjects(cid,'Tingkatan '+d[5:])
+    elif d.startswith('sub_'):
+        state.setdefault(cid,{})['subject'] = d[4:]
+        show_topics(cid,0)
+    elif d.startswith('tpage_'):
+        show_topics(cid,int(d[6:]))
+    elif d.startswith('topic_'):
+        if d == 'topic_custom':
+            send(cid,'📚 Sila pilih tajuk daripada senarai yang disediakan.',
+                 [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        else:
+            choose_topic(cid,int(d[6:]))
+
+    elif d.startswith('st3|'):
+        _, sti, ti = d.split('|')
+        s0 = state.setdefault(cid,{})
+        tc = TASK_TO_CODE.get(s0.get('task',''))
+        yc = compact_year(s0.get('year',''))
+        si = subject_index(s0.get('subject',''))
+        if not tc or not yc or si < 0:
+            return menu(cid)
+        s = rebuild_state(tc, yc, si, ti, sti)
+        if not s:
+            return menu(cid)
+        if s['task'] in ('questions','kbat'):
+            show_qtype_v3(cid, s, int(sti))
+        elif s['task'] in ('worksheet','rph','both'):
+            state[cid] = s
+            show_curriculum_sk(cid, s)
+        else:
+            state[cid] = s
+            show_curriculum_sk(cid, s)
+
+    elif d.startswith('csk_'):
+        try: show_curriculum_sp(cid, int(d.split('_',1)[1]))
+        except Exception: menu(cid)
+
+    elif d.startswith('csp_'):
+        try:
+            idx=int(d.split('_',1)[1]); ss=state.setdefault(cid,{})
+            opts=ss.get('curr_sp_options') or []
+            if idx<0 or idx>=len(opts): return menu(cid)
+            sp=opts[idx]
+            ss['sp_code'],ss['sp_text']=sp['sp_code'],sp['sp_text']
+            ss['sk_code'],ss['sk_text']=sp['sk_code'],sp['sk_text']
+            after_curriculum_selected(cid)
+        except Exception: menu(cid)
+
+    elif d.startswith('wq_'):
+        ss=state.setdefault(cid,{})
+        try: ss['worksheet_questions']=int(d.split('_',1)[1])
+        except Exception: ss['worksheet_questions']=8
+        ss['worksheet_pack_4levels']=True
+        ss['difficulty']='all4'
+        ss['variation_seed']=secrets.token_hex(4)
+        preview_v3(cid,ss,'generate_selected_material')
+
+    elif d.startswith('wdiff_'):
+        ss=state.setdefault(cid,{})
+        ss['worksheet_pack_4levels']=True
+        ss['difficulty']='all4'
+        ss['variation_seed']=secrets.token_hex(4)
+        preview_v3(cid,ss,'generate_selected_material')
+
+    elif d == 'generate_selected_material':
+        ss=state.setdefault(cid,{})
+        if ss.get('task')=='both':
+            generate_both_materials(cid,ss)
+        elif ss.get('task')=='worksheet':
+            generate_worksheet_pack(cid,ss,'generate_selected_material')
+        else:
+            generate_v3(cid,ss,'generate_selected_material')
+
+    elif d.startswith('rsk_'):
+        try: show_rph_sp(cid, int(d.split('_',1)[1]))
+        except Exception: menu(cid)
+
+    elif d.startswith('rsp_'):
+        try:
+            idx=int(d.split('_',1)[1]); ss=state.setdefault(cid,{})
+            opts=ss.get('rph_sp_options') or []
+            if idx<0 or idx>=len(opts): return menu(cid)
+            sp=opts[idx]; ss['sp_code'],ss['sp_text']=sp['sp_code'],sp['sp_text']; ss['sk_code'],ss['sk_text']=sp['sk_code'],sp['sk_text']
+            start_rph_session(cid)
+        except Exception: menu(cid)
+
+    elif d in ('rphsession_fill','rphsession_blank'):
+        ss=state.setdefault(cid,{})
+        if not ss.get('sp_code'): return send(cid,'⚠️ Sila pilih SK dan SP dahulu.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        ss['rph_gen_cb']='generate_selected_material'
+        if d=='rphsession_blank':
+            ss.update({'rph_date':'','rph_day':'','rph_time':'','rph_class':'','rph_students':''}); preview_v3(cid,ss,'generate_selected_material')
+        else:
+            ss['waiting']='rph_date'; send(cid,'📅 <b>Masukkan tarikh RPH</b>\n\nContoh: <code>10/09/2026</code>\nHari akan diisi secara automatik.')
+
+    elif d == 'rph_generate_local':
+        ss=state.setdefault(cid,{})
+        if not ss.get('sp_code'): return send(cid,'⚠️ Data SK/SP tidak lengkap. Sila pilih semula RPH.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        generate_v3(cid,ss,'rph_generate_local')
+
+    elif d.startswith('rphi|'):
+        parts = d.split('|')
+        if len(parts) == 8:
+            _, mode, tc, yc, si, ti, sti = parts
+            s = rebuild_state(tc, yc, si, ti, sti)
+            if s:
+                state[cid] = s
+                gen_cb = f"gn3|{tc}|{yc}|{si}|{ti}|{sti}|-|-"
+                s['rph_gen_cb'] = gen_cb
+                if mode == 'blank':
+                    s.update({'rph_date':'','rph_day':'','rph_time':'','rph_class':'','rph_students':''})
+                    preview_v3(cid, s, gen_cb)
+                else:
+                    s['waiting'] = 'rph_date'
+                    send(cid,'📅 <b>Masukkan tarikh RPH</b>\n\nContoh: <code>10/09/2026</code>\nHari akan diisi secara automatik.')
+
+    elif d.startswith('wp3|'):
+        parts = d.split('|')
+        if len(parts) == 7:
+            _, pages_n, tc, yc, si, ti, sti = parts
+            s = rebuild_state(tc, yc, si, ti, sti)
+            if s:
+                send(cid,
+                     '🎯 <b>Pilih aras soalan</b>\n\n'
+                     'Aras akan disesuaikan dengan Tahun/Tingkatan murid.',
+                     [[
+                         {'text':'🟢 Mudah','callback_data':f'lv3|easy|{pages_n}|{tc}|{yc}|{si}|{ti}|{sti}'},
+                         {'text':'🟡 Sederhana','callback_data':f'lv3|medium|{pages_n}|{tc}|{yc}|{si}|{ti}|{sti}'}
+                      ],
+                      [
+                         {'text':'🔴 Sukar','callback_data':f'lv3|hard|{pages_n}|{tc}|{yc}|{si}|{ti}|{sti}'},
+                         {'text':'🌈 Campuran','callback_data':f'lv3|mixed|{pages_n}|{tc}|{yc}|{si}|{ti}|{sti}'}
+                      ],
+                      [
+                         {'text':'🧠 KBAT','callback_data':f'lv3|kbat|{pages_n}|{tc}|{yc}|{si}|{ti}|{sti}'}
+                      ],
+                      [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+    elif d.startswith('lv3|'):
+        parts = d.split('|')
+        if len(parts) == 8:
+            _, diff, pages_n, tc, yc, si, ti, sti = parts
+            s = rebuild_state(tc, yc, si, ti, sti)
+            if s:
+                s['worksheet_questions'] = int(pages_n)
+                s['difficulty'] = diff
+                s['variation_seed'] = secrets.token_hex(4)
+                gen_cb = f'gw3|{diff}|{pages_n}|{tc}|{yc}|{si}|{ti}|{sti}'
+                send(cid,
+                     f"✅ <b>Pilihan Cikgu</b>\n\n"
+                     f"🎓 {s.get('year','-')}\n📚 {s.get('subject','-')}\n"
+                     f"📖 {s.get('topic','-')}\n▫️ {s.get('subtopic','Semua Subtopik')}\n"
+                     f"🔢 {pages_n} soalan • halaman automatik mengikut ruang\n"
+                     f"🎯 Aras: {_difficulty_label(diff)}\n\n"
+                     f"🤖 Soalan akan disesuaikan dengan tahap murid dan tidak melangkaui aras yang dipilih.",
+                     [[{'text':'✨ Jana Worksheet','callback_data':gen_cb}],
+                      [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+    elif d.startswith('gw3|'):
+        parts = d.split('|')
+        if len(parts) == 8:
+            _, diff, pages_n, tc, yc, si, ti, sti = parts
+            s = rebuild_state(tc, yc, si, ti, sti)
+            if s:
+                s['worksheet_questions'] = int(pages_n)
+                s['difficulty'] = diff
+                s['variation_seed'] = secrets.token_hex(4)
+                generate_v3(cid, s, d)
+
+    elif d.startswith('qt3|'):
+        parts = d.split('|')
+        if len(parts) == 7:
+            _, qc, tc, yc, si, ti, sti = parts
+            send(cid,'🔢 <b>Berapa soalan cikgu perlukan?</b>',
+                 [[{'text':str(n),'callback_data':f'am3|{n}|{qc}|{tc}|{yc}|{si}|{ti}|{sti}'} for n in (5,10,20,30)]])
+
+    elif d.startswith('am3|'):
+        parts = d.split('|')
+        if len(parts) == 8:
+            _, amount_n, qc, tc, yc, si, ti, sti = parts
+            s = rebuild_state(tc, yc, si, ti, sti, qc, amount_n)
+            if s:
+                gen_cb = f'gn3|{tc}|{yc}|{si}|{ti}|{sti}|{qc}|{amount_n}'
+                preview_v3(cid, s, gen_cb)
+
+    elif d.startswith('gn3|'):
+        parts = d.split('|')
+        if len(parts) == 8:
+            _, tc, yc, si, ti, sti, qc, amount_n = parts
+            s = rebuild_state(tc, yc, si, ti, sti, qc, amount_n)
+            if s:
+                if s.get('task') == 'rph':
+                    prev = state.get(cid,{})
+                    for k in ('rph_date','rph_day','rph_time','rph_class','rph_students'):
+                        if k in prev: s[k] = prev.get(k,'')
+                    state[cid] = s
+                generate_v3(cid, s, d)
+
+    elif d == 'file_both_materials':
+        st=state.setdefault(cid,{})
+        results=st.get('both_results') or {}; contexts=st.get('both_contexts') or {}
+        if not results or not contexts:
+            return send(cid,'⚠️ Fail sementara sudah tiada. Sila jana bahan sekali lagi.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        send(cid,'📦 <b>Sedang menyediakan pakej...</b>')
+        paths=[]
+        try:
+            rph_path=create_pdf_file(contexts['rph'],results['rph'],cid); paths.append(rph_path); send_document(cid,rph_path,'📘 RPH')
+            ws_path=create_four_level_worksheet_pdf(contexts['worksheet'],results['worksheet_pack'],cid); paths.append(ws_path); send_document(cid,ws_path,'📝 Worksheet 4 Aras')
+            send(cid,'✅ RPH dan worksheet 4 aras siap.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        except Exception as e:
+            print('Both file error:',repr(e),flush=True); send(cid,'⚠️ Fail belum berjaya disediakan. Cuba semula.')
+        finally:
+            for pth in paths:
+                try:
+                    if os.path.exists(pth): os.remove(pth)
+                except Exception:
+                    pass
+
+    elif d == 'file_worksheet_pack':
+        st=state.setdefault(cid,{})
+        results=st.get('worksheet_pack_results') or {}; ctx=st.get('worksheet_pack_context')
+        if len(results)!=4 or not ctx:
+            return send(cid,'⚠️ Fail sementara sudah tiada. Sila jana worksheet sekali lagi.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        send(cid,'📦 <b>Sedang menyediakan PDF 4 aras...</b>')
+        pth=None
+        try:
+            pth=create_four_level_worksheet_pdf(ctx,results,cid)
+            send_document(cid,pth,'📝 Worksheet 4 Aras - sedia untuk cetak')
+            send(cid,'✅ Semua aras berada dalam satu pakej PDF. Cikgu boleh cetak halaman yang diperlukan.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        except Exception as e:
+            print('Worksheet pack file error:',repr(e),flush=True); send(cid,'⚠️ Fail belum berjaya disediakan. Cuba semula.')
+        finally:
+            try:
+                if pth and os.path.exists(pth): os.remove(pth)
+            except Exception:
+                pass
+
+    elif d in ('file_pdf','file_word','file_both'):
+        # Word/Kedua-dua disembunyikan daripada UI. Callback lama tetap selamat: hantar PDF sahaja.
+        if d in ('file_word','file_both'):
+            d = 'file_pdf'
+        st = state.setdefault(cid,{})
+        result = st.get('last_result')
+        ctx = st.get('last_result_context')
+        if not result or not ctx:
+            return send(cid,'⚠️ Fail sementara sudah tiada. Sila jana bahan sekali lagi.',
+                        [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+        send(cid,'📦 <b>Sedang menyediakan fail...</b>')
+        try:
+            paths = []
+            if d in ('file_pdf','file_both'):
+                p = create_pdf_file(ctx, result, cid)
+                paths.append(p)
+                send_document(cid, p, '📄 PDF - sedia untuk cetak')
+            if d in ('file_word','file_both'):
+                p = create_word_file(ctx, result, cid)
+                paths.append(p)
+                send_document(cid, p, '📝 Word - boleh diedit')
+            for p in paths:
+                if os.path.exists(p):
+                    os.remove(p)
+            send(cid,'✅ Fail siap.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        except Exception as e:
+            print('File error:', repr(e), flush=True)
+            send(cid,'⚠️ Fail belum berjaya disediakan. Cuba semula.',
+                 [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+
+try:
+    init_local_db()
+    seed_topic_database()
+    seed_verified_curriculum_v1()
+    seed_pedagogy_math_y1_v1()
+    seed_pedagogy_math_y1_v2()
+except Exception as e:
+    print('Local DB init warning:', repr(e), flush=True)
+
+
+
+@app.route('/')
+def index():
+    return jsonify({'status':'ok','app':'CikguLaju AI','gemini_ready':bool(GEMINI_API_KEY),'gemini_model':GEMINI_MODEL,'local_curriculum_db':True,'rph_zero_gemini':True})
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    u = request.get_json(silent=True) or {}
+    update_id = u.get('update_id')
+
+    # Telegram retries a webhook if the HTTP response is slow. Ignore duplicate deliveries.
+    if update_id is not None:
+        with _runtime_lock:
+            if update_id in _seen_updates:
+                return jsonify({'ok':True, 'duplicate':True})
+            _seen_updates.add(update_id)
+            if len(_seen_updates) > 5000:
+                # Bound memory usage; update IDs are monotonically increasing.
+                for old_id in sorted(_seen_updates)[:2500]:
+                    _seen_updates.discard(old_id)
+
+    if 'callback_query' in u:
+        c = u['callback_query']
+        try:
+            requests.post(
+                f'{API}/answerCallbackQuery',
+                json={'callback_query_id':c['id']},
+                timeout=5
+            )
+        except Exception as e:
+            print('answerCallbackQuery error:', repr(e), flush=True)
+
+        cid = c['message']['chat']['id']
+        data = c.get('data','')
+        # Return HTTP 200 immediately; long Gemini/file work continues in background.
+        threading.Thread(target=callback, args=(cid, data), daemon=True).start()
+
+    elif 'message' in u:
+        m = u['message']
+        cid = m['chat']['id']
+        if m.get('text') in ('/start','/menu','☰ Menu','Menu'):
+            state[cid] = {}
+            menu(cid, show_persistent=True)
+        elif m.get('text') and state.get(cid,{}).get('waiting','').startswith('rph_'):
+            s = state.setdefault(cid,{})
+            text = m.get('text','').strip()
+            waiting = s.get('waiting')
+            if waiting == 'rph_date':
+                date, day = _parse_rph_date(text)
+                if date is None:
+                    send(cid,'⚠️ Tarikh tidak dikenali. Gunakan format <code>DD/MM/YYYY</code>, contoh <code>10/09/2026</code>.')
+                else:
+                    s['rph_date'], s['rph_day'] = date, day
+                    s['waiting'] = 'rph_class'
+                    send(cid,f'✅ Hari: <b>{day or "akan dikosongkan"}</b>\n\n🏫 <b>Masukkan kelas</b>\nContoh: <code>4 Bestari</code>')
+            elif waiting == 'rph_class':
+                s['rph_class'] = '' if text in ('-','—') else text
+                s['waiting'] = 'rph_time'
+                send(cid,'⏰ <b>Masukkan masa PdP</b>\nContoh: <code>8:00 pagi - 9:00 pagi</code>')
+            elif waiting == 'rph_time':
+                s['rph_time'] = '' if text in ('-','—') else text
+                s['waiting'] = 'rph_students'
+                send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code> supaya guru boleh isi bilangan murid yang hadir.\nTaip <code>-</code> jika mahu biarkan kosong.')
+            elif waiting == 'rph_students':
+                s['rph_students'] = '' if text in ('-','—') else text
+                s.pop('waiting',None)
+                gen_cb = s.get('rph_gen_cb')
+                if gen_cb:
+                    preview_v3(cid, s, gen_cb)
+                else:
+                    menu(cid)
+        elif 'document' in m or 'photo' in m:
+            send(cid,'✅ Bahan diterima. Pembacaan PDF/gambar oleh AI akan disambungkan seterusnya.')
+    return jsonify({'ok':True})
+
+@app.route('/setup-webhook')
+def setup_webhook():
+    if not BOT_TOKEN or not WEBHOOK_URL:
+        return jsonify({'ok':False,'error':'Tetapkan BOT_TOKEN dan WEBHOOK_URL dahulu'}),500
+    url = WEBHOOK_URL.rstrip('/') + '/webhook'
+    r = requests.post(f'{API}/setWebhook',json={'url':url},timeout=20)
+    requests.post(f'{API}/setMyCommands', json={'commands':[
+        {'command':'start','description':'Buka CikguLaju AI'},
+        {'command':'menu','description':'Menu utama'}
+    ]}, timeout=20)
+    requests.post(f'{API}/setChatMenuButton', json={'menu_button':{'type':'commands'}}, timeout=20)
+    return jsonify({'webhook':url,'telegram':r.json(),'menu_button':'commands'})
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=int(os.getenv('PORT','10000')))
+
+
+# ============================================================
+# CikguLaju v10 — LOCAL-FIRST / LOW-AI
+# Cuba jana worksheet secara lokal dahulu. AI hanya fallback.
+# ============================================================
+LOCAL_FIRST_MODE = True
+
+def _cl_int_pair(level, op="sub"):
+    if level == 1:
+        a = random.randint(5, 10); b = random.randint(1, a if op == "sub" else 5)
+    elif level == 2:
+        a = random.randint(8, 18); b = random.randint(1, a if op == "sub" else 9)
+    elif level == 3:
+        a = random.randint(10, 50); b = random.randint(1, a if op == "sub" else 25)
+    else:
+        a = random.randint(15, 100); b = random.randint(1, a if op == "sub" else 50)
+    return a, b
+
+def _cl_math_subtraction_questions(level, n=8):
+    items, objects = [], ["epal","pensel","guli","belon","buku","ikan","bunga","bola"]
+    for i in range(n):
+        a, b = _cl_int_pair(level, "sub")
+        if level == 1:
+            obj = random.choice(objects)
+            q = f"{i+1}. Ada {a} {obj}. Pangkah/keluarkan {b}. Berapa yang tinggal?  {a} − {b} = ____"
+        elif level == 2:
+            q = f"{i+1}. {a} − {b} = ____"
+        elif level == 3:
+            obj = random.choice(objects)
+            q = f"{i+1}. Dalam sebuah bekas ada {a} {obj}. {b} telah diambil. Berapa yang masih tinggal? ______"
+        elif i % 2 == 0:
+            q = f"{i+1}. Isi nombor yang hilang: {a} − ____ = {a-b}"
+        else:
+            q = f"{i+1}. Cipta satu cerita matematik yang sesuai dengan {a} − {b}, kemudian selesaikan."
+        items.append(q)
+    return items
+
+def _cl_math_addition_questions(level, n=8):
+    items, objects = [], ["epal","pensel","guli","belon","buku","ikan","bunga","bola"]
+    for i in range(n):
+        a, b = _cl_int_pair(level, "add")
+        if level == 1:
+            obj = random.choice(objects)
+            q = f"{i+1}. Kumpulan pertama ada {a} {obj} dan kumpulan kedua ada {b}. Kira semuanya. {a} + {b} = ____"
+        elif level == 2:
+            q = f"{i+1}. {a} + {b} = ____"
+        elif level == 3:
+            obj = random.choice(objects)
+            q = f"{i+1}. Aina ada {a} {obj} dan mendapat {b} lagi. Berapakah jumlahnya? ______"
+        else:
+            q = f"{i+1}. Lengkapkan dan terangkan cara: ____ + {b} = {a+b}"
+        items.append(q)
+    return items
+
+def local_first_generate_worksheet(state, n_each=8):
+    subject = str(state.get("subject") or state.get("subject_name") or "").lower()
+    topic = " ".join(str(state.get(k) or "") for k in ("topic","subtopic","sp_text","sk_text")).lower()
+    if "matematik" not in subject and "math" not in subject:
+        return None
+    if "tolak" in topic or "subtraction" in topic:
+        maker = _cl_math_subtraction_questions
+    elif "tambah" in topic or "addition" in topic:
+        maker = _cl_math_addition_questions
+    else:
+        return None
+    labels = ["","ARAS 1 — PEMULIHAN / ASAS","ARAS 2 — SEDERHANA",
+              "ARAS 3 — PENGUASAAN","ARAS 4 — PENGAYAAN / KBAT"]
+    return [{"level": lv, "title": labels[lv],
+             "questions": maker(lv, n_each), "source": "local_rule_engine"}
+            for lv in range(1,5)]
+
