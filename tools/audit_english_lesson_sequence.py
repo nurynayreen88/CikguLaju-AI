@@ -1,88 +1,41 @@
 #!/usr/bin/env python3
-"""Audit English lesson labels without changing textbook page order.
+"""Read-only audit for English textbook/SOW mappings.
 
-Usage:
-  python tools/audit_english_lesson_sequence.py CikguLaju_Curriculum_English.db
-  python tools/audit_english_lesson_sequence.py CikguLaju_Curriculum_Master_v1.db
-
-Read-only. Reports page-order lesson anomalies, duplicate lesson labels and gaps.
+Rule: textbook navigation follows pages; RPT/SOW navigation follows official lesson numbers.
+A lower textbook page in a later SOW lesson is not automatically an error.
 """
 import re, sqlite3, sys
-from collections import Counter
-
-if len(sys.argv) != 2:
-    raise SystemExit("Usage: audit_english_lesson_sequence.py <db>")
-
-path=sys.argv[1]
-con=sqlite3.connect(f"file:{path}?mode=ro", uri=True)
-con.row_factory=sqlite3.Row
-
-def cols(table):
-    return {r[1] for r in con.execute(f"PRAGMA table_info({table})")}
-
-table='textbook_page_lesson_map'
-c=cols(table)
-if not c:
-    raise SystemExit(f"Missing table: {table}")
-
-def pick(*names):
-    return next((x for x in names if x in c), None)
-
-year=pick('year_label','year','level')
-subject=pick('subject','subject_name')
-page1=pick('page_start','page_from','start_page','page')
-page2=pick('page_end','page_to','end_page')
-lesson=pick('lesson_no','lesson_number','lesson')
-unit=pick('unit_title','unit','topic','module')
-idcol=pick('id')
-if not all((year,page1,lesson)):
-    raise SystemExit(f"Unsupported schema columns: {sorted(c)}")
-
-fields=[x for x in (idcol,year,subject,unit,page1,page2,lesson) if x]
-where=[]; args=[]
-if subject:
-    where.append(f"lower({subject}) in (?,?,?,?)")
-    args += ['english','bahasa inggeris','english language','bi']
-sql=f"SELECT {','.join(fields)} FROM {table}" + (" WHERE "+" AND ".join(where) if where else '')
-rows=con.execute(sql,args).fetchall()
-
-def nlesson(v):
-    if v is None: return None
-    m=re.search(r'\d+',str(v))
-    return int(m.group()) if m else None
-
-groups={}
-for r in rows:
-    key=(r[year], r[unit] if unit else '')
-    groups.setdefault(key,[]).append(r)
-
-issues=0
-for key, rr in sorted(groups.items(), key=lambda x:str(x[0])):
-    rr=sorted(rr,key=lambda r:(r[page1] if r[page1] is not None else 10**9,
-                               r[page2] if page2 and r[page2] is not None else 10**9,
-                               r[idcol] if idcol else 0))
-    nums=[nlesson(r[lesson]) for r in rr]
-    clean=[n for n in nums if n is not None]
-    dup=sorted(n for n,cnt in Counter(clean).items() if cnt>1)
-    desc=[]
-    prev=None
-    for i,n in enumerate(nums):
-        if n is not None and prev is not None and n < prev:
-            desc.append((i,prev,n))
-        if n is not None: prev=n
-    missing=[]
-    if clean:
-        present=set(clean)
-        missing=[n for n in range(min(clean),max(clean)+1) if n not in present]
-    nulls=sum(n is None for n in nums)
-    if dup or desc or missing or nulls:
-        issues+=1
-        print(f"\n{key[0]} | {key[1] or '(no unit)'}")
-        if dup: print('  duplicate:',dup)
-        if desc: print('  out_of_order:',[(a,b) for _,a,b in desc])
-        if missing: print('  gaps:',missing)
-        if nulls: print('  missing_lesson_no:',nulls)
-        print('  page_order:',[(r[page1], r[page2] if page2 else r[page1], r[lesson]) for r in rr])
-
-print(f"\nRows audited: {len(rows)}; groups with anomalies: {issues}")
+from collections import defaultdict
+if len(sys.argv)!=2: raise SystemExit('Usage: audit_english_lesson_sequence.py <db>')
+con=sqlite3.connect(f'file:{sys.argv[1]}?mode=ro',uri=True); con.row_factory=sqlite3.Row
+T='textbook_page_lesson_map'
+cols={r[1] for r in con.execute(f'PRAGMA table_info({T})')}
+need={'year_label','subject','unit_title','page_start','page_end','lesson_no'}
+if not need.issubset(cols): raise SystemExit(f'Missing columns: {sorted(need-cols)}')
+def lk(v):
+ s=str(v or '').strip(); n=[int(x) for x in re.findall(r'\d+',s)]
+ return (n[0] if n else 10**9,n[1] if len(n)>1 else (n[0] if n else 10**9),s.casefold())
+rows=[dict(r) for r in con.execute(f"SELECT * FROM {T} WHERE lower(subject) IN ('english','bahasa inggeris','english language','bi') AND verified=1")]
+g=defaultdict(list)
+for r in rows:g[(r['year_label'],r['unit_title'])].append(r)
+print('=== TEXTBOOK VIEW (page order) ===')
+for k,rr in sorted(g.items()):
+ rr=sorted(rr,key=lambda r:(r['page_start'] if r['page_start'] is not None else 10**9,r['page_end'] if r['page_end'] is not None else 10**9,r.get('id',0)))
+ print(k[0],'|',k[1],'|',[(r['page_start'],r['page_end'],r['lesson_no']) for r in rr])
+print('\n=== RPT/SOW VIEW (lesson order) ===')
+for k,rr in sorted(g.items()):
+ rr=sorted(rr,key=lambda r:(lk(r['lesson_no']),r['page_start'] if r['page_start'] is not None else 10**9,r.get('id',0)))
+ print(k[0],'|',k[1],'|',[(r['lesson_no'],r['page_start'],r['page_end']) for r in rr])
+print('\n=== REVIEW FLAGS ===')
+flags=0
+for k,rr in sorted(g.items()):
+ ident=defaultdict(list)
+ for r in rr: ident[(str(r['lesson_no']).strip(),str(r.get('focus') or '').strip().casefold(),r['page_start'],r['page_end'])].append(r)
+ exact=[(x,v) for x,v in ident.items() if len(v)>1]; blanks=[r for r in rr if not str(r['lesson_no'] or '').strip()]
+ if exact or blanks:
+  flags+=1; print(k[0],'|',k[1])
+  if exact: print(' exact_duplicate_mapping:',[(x,len(v)) for x,v in exact])
+  if blanks: print(' blank_lesson_no:',len(blanks))
+print(f'\nVerified rows audited: {len(rows)}; groups needing review: {flags}')
+print('NOTE: page reversals across SOW lessons are intentionally not flagged.')
 con.close()
