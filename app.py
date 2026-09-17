@@ -13,7 +13,7 @@ import threading
 import sqlite3
 import hashlib
 import json
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 from flask import Flask, request, jsonify
@@ -22805,3 +22805,27 @@ def _quick_source_choice_v2391(cid):
 
 APP_VERSION='v24.29-BM1-TRUE-THEME-UNIT-HOTFIX'
 # ===== END v24.29 =====
+
+
+# ===== v24.31 PDP FLOW STATE AUDIT GUARD =====
+_callback_dispatch_v2431_base = callback
+
+def _reset_pdp_execution_context_v2431(ss, keep_class=False):
+    keys = ('_pdp_context_ready_v2393','rph_date','rph_day','rph_time','rph_start_time','rph_end_time','duration_minutes','_pdp_slots_v2393','_pdp_manual_start_v2393','_pdp_manual_starts_v2393','_pdp_dates_v2393','_pdp_calendar_v2429')
+    for k in keys: ss.pop(k, None)
+    if not keep_class:
+        for k in ('rph_class','student_count','rph_students','_pdp_classes_v2393'): ss.pop(k, None)
+
+def callback(cid, d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds.startswith(('sub_','qctx91_')) or ds in ('qsrc91_textbook','qsrc91_rpt','qsrc92_custom','quick_custom_topics'):
+        _reset_pdp_execution_context_v2431(ss, keep_class=False)
+    if ds.startswith('pdpclass93_') and ds!='pdpclass93_back':
+        _reset_pdp_execution_context_v2431(ss, keep_class=True)
+    if ds=='pdpdate93_back':
+        return _pdp_calendar_month_v2429(cid)
+    return _callback_dispatch_v2431_base(cid,d)
+
+APP_VERSION='v24.31-PDP-FLOW-AUDIT-GUARD'
+# ===== END v24.31 =====
