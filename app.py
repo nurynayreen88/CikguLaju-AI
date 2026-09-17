@@ -20703,19 +20703,11 @@ def _pdp_pick_class_v2393(cid):
 
 
 def _pdp_pick_date_v2393(cid):
-    ss=state.setdefault(cid,{})
-    tz=timezone(timedelta(hours=8))
-    today=datetime.now(tz).date()
-    dates=[today+timedelta(days=i) for i in range(7)]
-    ss['_pdp_dates_v2393']=[d.isoformat() for d in dates]
-    malay=['Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu','Ahad']
-    kb=[]
-    for i,d in enumerate(dates):
-        label=f"{malay[d.weekday()]} • {d.strftime('%d/%m/%Y')}"
-        kb.append([{'text':'📅 '+label,'callback_data':f'pdpdate93_{i}'}])
-    kb.append([{'text':'⬅️ Tukar Kelas','callback_data':'pdpclass93_back'}])
-    return send(cid,'📅 <b>Pilih Tarikh PdP</b>\n\nTarikh digunakan untuk menentukan hari dan mencadangkan masa daripada jadual profil.',kb)
-
+    """Monthly Sunday-first calendar; replaces the historical linear 7/14-day picker."""
+    fn=globals().get('_calendar_v2437') or globals().get('_pdp_calendar_month_v2429')
+    if callable(fn):
+        return fn(cid)
+    raise RuntimeError('Monthly calendar handler is unavailable')
 
 def _norm_subject_v2393(x):
     return re.sub(r'[^a-z0-9]+','',str(x or '').casefold())
@@ -21390,20 +21382,12 @@ APP_VERSION = 'v24.02-PDP-CONTEXT-TIMETABLE-HARDENING'
 
 # More practical date picker: two weeks ahead, still button-only.
 def _pdp_pick_date_v2393(cid):
-    ss=state.setdefault(cid,{})
-    tz=timezone(timedelta(hours=8)); today=datetime.now(tz).date()
-    dates=[today+timedelta(days=i) for i in range(14)]
-    ss['_pdp_dates_v2393']=[d.isoformat() for d in dates]
-    malay=['Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu','Ahad']
-    kb=[]
-    for i,d in enumerate(dates):
-        prefix='Hari ini • ' if i==0 else ('Esok • ' if i==1 else '')
-        label=f"{prefix}{malay[d.weekday()]} • {d.strftime('%d/%m/%Y')}"
-        kb.append([{'text':'📅 '+label[:58],'callback_data':f'pdpdate93_{i}'}])
-    kb.append([{'text':'⬅️ Tukar Kelas','callback_data':'pdpclass93_back'}])
-    return send(cid,'📅 <b>Pilih Tarikh PdP</b>\n\nPilih tarikh. Hari akan ditentukan automatik dan digunakan untuk mencari waktu kelas/subjek daripada jadual profil.',kb)
+    """Monthly Sunday-first calendar; replaces the historical linear 7/14-day picker."""
+    fn=globals().get('_calendar_v2437') or globals().get('_pdp_calendar_month_v2429')
+    if callable(fn):
+        return fn(cid)
+    raise RuntimeError('Monthly calendar handler is unavailable')
 
-# Timetable-derived time is authoritative suggestion; manual override always remains available.
 def _pdp_time_options_v2393(cid):
     ss=state.setdefault(cid,{})
     cname=str(ss.get('rph_class') or ''); subject=str(ss.get('subject') or ''); day=str(ss.get('rph_day') or '')
@@ -23152,3 +23136,9 @@ def callback(cid,d):
 
 APP_VERSION='v24.37-FORCE-MONTHLY-CALENDAR'
 # ===== END v24.37 =====
+
+
+# ===== v24.38 LEGACY DATE PICKER REPLACED =====
+# Replaced 2 historical _pdp_pick_date_v2393 definition(s).
+APP_VERSION='v24.38-LEGACY-DATE-PICKER-REPLACED'
+# ===== END v24.38 =====
