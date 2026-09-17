@@ -25,27 +25,25 @@ jobs:
           python tools/patch_manual_class_fallback_v2434.py app.py
           python tools/patch_button_time_range_v2435.py app.py
           python tools/patch_lesson_only_flow_v2436.py app.py
+          python tools/patch_calendar_force_v2437.py app.py
           python -m py_compile app.py
           python - <<'PY'
           import ast, pathlib
-          s=pathlib.Path('app.py').read_text(encoding='utf-8')
-          ast.parse(s)
-          for v in ('v24.31 PDP FLOW STATE AUDIT GUARD','v24.32 HIERARCHICAL CURRICULUM FLOW','v24.33 GLOBAL MONTH CALENDAR','v24.34 MANUAL CLASS FALLBACK','v24.35 BUTTON TIME RANGE SELECTOR','v24.36 LESSON ONLY FLOW'):
+          s=pathlib.Path('app.py').read_text(encoding='utf-8'); ast.parse(s)
+          for v in ('v24.31 PDP FLOW STATE AUDIT GUARD','v24.32 HIERARCHICAL CURRICULUM FLOW','v24.33 GLOBAL MONTH CALENDAR','v24.34 MANUAL CLASS FALLBACK','v24.35 BUTTON TIME RANGE SELECTOR','v24.36 LESSON ONLY FLOW','v24.37 FORCE MONTHLY CALENDAR'):
               assert s.count(v)==1, v
-          assert '_show_lesson_only_v2436' in s and '_apply_lesson_v2436' in s
-          assert 'Muka surat dipaparkan sebagai rujukan sahaja' in s
-          print('QA PASS', len(s.encode('utf-8')))
+          assert "['Ah','Is','Se','Ra','Kh','Ju','Sa']" in s
+          assert 'cal37_pick_' in s and 'cal37_month_' in s
+          assert "return fn(cid,'start')" in s
+          print('QA PASS',len(s.encode('utf-8')))
           PY
       - name: Commit patched app.py
         run: |
-          if git diff --quiet -- app.py; then
-            echo 'app.py already patched'
-            exit 0
-          fi
+          if git diff --quiet -- app.py; then echo 'app.py already patched'; exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add app.py
-          git commit -m 'Simplify curriculum flow to Lesson selection only'
+          git commit -m 'Force date selection to monthly calendar'
           git push origin HEAD:main
 
-# Trigger v24.31-v24.36 audited flow updates.
+# Trigger v24.31-v24.37 audited flow updates.
