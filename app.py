@@ -22829,3 +22829,112 @@ def callback(cid, d):
 
 APP_VERSION='v24.31-PDP-FLOW-AUDIT-GUARD'
 # ===== END v24.31 =====
+
+
+# ===== v24.32 HIERARCHICAL CURRICULUM FLOW =====
+_callback_dispatch_v2432_base = callback
+
+_HIERARCHY_KEYS_V2432 = (
+    ('theme','tema'),
+    ('unit','unit'),
+    ('topic','topik','tajuk'),
+    ('subtopic','subtopik','sub_topic'),
+)
+
+def _hierarchy_values_v2432(ss, level):
+    """Read only hierarchy values already supplied by the curriculum layer.
+    No curriculum labels are fabricated here.
+    """
+    pools = ss.get('_curriculum_hierarchy') or ss.get('curriculum_hierarchy') or {}
+    if not isinstance(pools, dict): return []
+    aliases=_HIERARCHY_KEYS_V2432[level]
+    for k in aliases:
+        vals=pools.get(k)
+        if isinstance(vals,(list,tuple)):
+            out=[]
+            for v in vals:
+                if isinstance(v,dict):
+                    label=str(v.get('label') or v.get('name') or v.get('title') or '').strip()
+                    value=str(v.get('value') or v.get('id') or label).strip()
+                else:
+                    label=value=str(v).strip()
+                if label: out.append((label,value))
+            return out
+    return []
+
+def _next_hierarchy_level_v2432(ss, after=-1):
+    for i in range(after+1,len(_HIERARCHY_KEYS_V2432)):
+        if _hierarchy_values_v2432(ss,i): return i
+    return None
+
+def _show_hierarchy_level_v2432(cid, level):
+    ss=state.setdefault(cid,{})
+    vals=_hierarchy_values_v2432(ss,level)
+    if not vals:
+        nxt=_next_hierarchy_level_v2432(ss,level)
+        if nxt is not None: return _show_hierarchy_level_v2432(cid,nxt)
+        return _quick_source_choice_v2391(cid)
+    names=('Tema','Unit','Topik/Tajuk','Subtopik')
+    kb=[]
+    ss['_hierarchy_choices_v2432']={str(i):v for i,(_,v) in enumerate(vals)}
+    for i,(label,_) in enumerate(vals):
+        kb.append([{'text':label,'callback_data':f'hier32_{level}_{i}'}])
+    send(cid,f'📚 <b>Pilih {names[level]}</b>',kb)
+
+def _start_hierarchy_v2432(cid):
+    ss=state.setdefault(cid,{})
+    first=_next_hierarchy_level_v2432(ss,-1)
+    if first is None: return _quick_source_choice_v2391(cid)
+    return _show_hierarchy_level_v2432(cid,first)
+
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds.startswith('hier32_'):
+        try:
+            _,lev,idx=ds.split('_',2); lev=int(lev)
+            value=ss.get('_hierarchy_choices_v2432',{}).get(idx)
+            if value is None: return _show_hierarchy_level_v2432(cid,lev)
+            canonical=('theme','unit','topic','subtopic')[lev]
+            ss[canonical]=value
+            # Child levels must be re-resolved by the curriculum layer; clear stale execution state.
+            for k in ('rph_date','rph_day','rph_time','rph_start_time','rph_end_time','duration_minutes'):
+                ss.pop(k,None)
+            nxt=_next_hierarchy_level_v2432(ss,lev)
+            if nxt is not None: return _show_hierarchy_level_v2432(cid,nxt)
+            return _quick_source_choice_v2391(cid)
+        except Exception:
+            return _start_hierarchy_v2432(cid)
+    return _callback_dispatch_v2432_base(cid,d)
+
+APP_VERSION='v24.32-HIERARCHICAL-CURRICULUM-FLOW'
+# ===== END v24.32 =====
+
+
+# ===== v24.33 GLOBAL MONTH CALENDAR =====
+_callback_dispatch_v2433_base = callback
+
+# Legacy/date-entry callbacks that should now open the same monthly calendar.
+_DATE_ENTRY_CALLBACKS_V2433 = {
+    'pdpdate93_back', 'pdpdate93_change', 'pdpdate93_pick',
+    'quick_date', 'rph_date', 'worksheet_date', 'bbm_date',
+    'choose_date', 'select_date', 'pick_date',
+}
+
+def _open_standard_calendar_v2433(cid):
+    ss=state.setdefault(cid,{})
+    ss.pop('_pdp_dates_v2393',None)
+    return _pdp_calendar_month_v2429(cid)
+
+def callback(cid,d):
+    ds=str(d or '')
+    # Do not intercept the calendar's own month navigation/date cells.
+    if ds.startswith('pdpcal29_'):
+        return _callback_dispatch_v2433_base(cid,d)
+    low=ds.lower()
+    if ds in _DATE_ENTRY_CALLBACKS_V2433 or low.endswith(('_choose_date','_select_date','_pick_date')):
+        return _open_standard_calendar_v2433(cid)
+    return _callback_dispatch_v2433_base(cid,d)
+
+APP_VERSION='v24.33-GLOBAL-MONTH-CALENDAR'
+# ===== END v24.33 =====
