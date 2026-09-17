@@ -1,0 +1,42 @@
+name: Apply PdP flow v24.31
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/apply-pdp-flow-v2431.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Apply audited flow patch
+        run: |
+          python tools/patch_pdp_flow_v2431.py app.py
+          python -m py_compile app.py
+          python - <<'PY'
+          import ast, pathlib
+          s=pathlib.Path('app.py').read_text(encoding='utf-8')
+          ast.parse(s)
+          assert 'from datetime import datetime, timezone, timedelta, date' in s
+          assert s.count('v24.31 PDP FLOW STATE AUDIT GUARD') == 1
+          print('QA PASS', len(s.encode('utf-8')))
+          PY
+      - name: Commit patched app.py
+        run: |
+          if git diff --quiet -- app.py; then
+            echo 'app.py already patched'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app.py
+          git commit -m 'Fix duplicate date-selection flow in app.py'
+          git push origin HEAD:main
