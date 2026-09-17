@@ -26,15 +26,16 @@ jobs:
           python tools/patch_button_time_range_v2435.py app.py
           python tools/patch_lesson_only_flow_v2436.py app.py
           python tools/patch_calendar_force_v2437.py app.py
+          python tools/patch_replace_legacy_date_picker_v2438.py app.py
           python -m py_compile app.py
           python - <<'PY'
-          import ast, pathlib
+          import ast, pathlib, re
           s=pathlib.Path('app.py').read_text(encoding='utf-8'); ast.parse(s)
-          for v in ('v24.31 PDP FLOW STATE AUDIT GUARD','v24.32 HIERARCHICAL CURRICULUM FLOW','v24.33 GLOBAL MONTH CALENDAR','v24.34 MANUAL CLASS FALLBACK','v24.35 BUTTON TIME RANGE SELECTOR','v24.36 LESSON ONLY FLOW','v24.37 FORCE MONTHLY CALENDAR'):
+          for v in ('v24.31 PDP FLOW STATE AUDIT GUARD','v24.32 HIERARCHICAL CURRICULUM FLOW','v24.33 GLOBAL MONTH CALENDAR','v24.34 MANUAL CLASS FALLBACK','v24.35 BUTTON TIME RANGE SELECTOR','v24.36 LESSON ONLY FLOW','v24.37 FORCE MONTHLY CALENDAR','v24.38 LEGACY DATE PICKER REPLACED'):
               assert s.count(v)==1, v
           assert "['Ah','Is','Se','Ra','Kh','Ju','Sa']" in s
           assert 'cal37_pick_' in s and 'cal37_month_' in s
-          assert "return fn(cid,'start')" in s
+          assert not re.search(r'(?s)def _pdp_pick_date_v2393\(cid\):.*?dates=\[today\+timedelta\(days=i\) for i in range\((?:7|14)\)\]',s)
           print('QA PASS',len(s.encode('utf-8')))
           PY
       - name: Commit patched app.py
@@ -43,7 +44,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add app.py
-          git commit -m 'Force date selection to monthly calendar'
+          git commit -m 'Replace legacy linear date picker with monthly calendar'
           git push origin HEAD:main
 
-# Trigger v24.31-v24.37 audited flow updates.
+# Trigger v24.31-v24.38 audited flow updates.
