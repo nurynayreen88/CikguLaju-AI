@@ -22,6 +22,7 @@ jobs:
           python tools/patch_pdp_flow_v2431.py app.py
           python tools/patch_hierarchical_curriculum_flow_v2432.py app.py
           python tools/patch_global_month_calendar_v2433.py app.py
+          python tools/patch_manual_class_fallback_v2434.py app.py
           python -m py_compile app.py
           python - <<'PY'
           import ast, pathlib
@@ -31,6 +32,8 @@ jobs:
           assert s.count('v24.31 PDP FLOW STATE AUDIT GUARD') == 1
           assert s.count('v24.32 HIERARCHICAL CURRICULUM FLOW') == 1
           assert s.count('v24.33 GLOBAL MONTH CALENDAR') == 1
+          assert s.count('v24.34 MANUAL CLASS FALLBACK') == 1
+          assert '_consume_manual_class_text_v2434' in s
           assert '_pdp_calendar_month_v2429' in s
           print('QA PASS', len(s.encode('utf-8')))
           PY
@@ -43,7 +46,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add app.py
-          git commit -m 'Standardise hierarchical flow and monthly date calendar'
+          git commit -m 'Add manual class fallback to app.py'
           git push origin HEAD:main
 
-# Trigger v24.31 + v24.32 + v24.33 audited flow updates.
+# Trigger v24.31-v24.34 audited flow updates.
