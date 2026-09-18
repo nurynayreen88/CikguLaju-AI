@@ -326,3 +326,92 @@ A generated RPH/worksheet is not considered high-confidence unless:
 - activity-book mapping is verified when workbook exists,
 - generated exercise format is not a copy of the activity-book format,
 - all generated content still assesses/reinforces the same Lesson focus.
+
+
+## LESSON CONTENT PACK — CONTENT-FIRST RPH GENERATION
+
+Before generating an RPH, build a Lesson Content Pack from verified sources.
+
+Required fields:
+- rpt_entry_id
+- year/form
+- subject
+- unit/topic
+- lesson_no / lesson_range
+- session_count
+- main_skill
+- complementary_skill
+- exact SK/SP relations
+- language_or_content_focus
+- textbook_title
+- textbook_page_start
+- textbook_page_end
+- textbook_content_summary
+- textbook_target_vocabulary
+- textbook_target_language_or_concept
+- textbook_text_type_or_visual_context
+- textbook_task_type
+- textbook_task_sequence
+- teacher_book_reference if verified
+- activity_book_title
+- activity_book_page_start
+- activity_book_page_end
+- activity_book_content_summary
+- activity_book_task_type
+- activity_book_expected_response
+- differentiation_hint
+- assessment_evidence_hint
+- mapping_status / provenance
+
+### Generation rule
+No RPH should be generated from Lesson number + SK/SP alone when a verified textbook mapping exists. The Lesson Content Pack must be loaded first and the teaching steps must be written around the actual mapped content.
+
+### Year 1 English SOW grounding
+For Primary Year 1 English, the verified SOW explicitly distinguishes textbook-based and non-textbook-based lessons. From Lesson 6 onward, textbook-based lessons use Superminds 1, while non-textbook-based lessons recycle and consolidate language/skills. Therefore:
+- textbook-based lesson -> use mapped Superminds 1 content/task as the main lesson spine;
+- non-textbook-based lesson -> use the SOW learning outline and previously learned textbook language as consolidation/recycling context;
+- do not force a textbook page into a non-textbook-based lesson unless a verified mapping supports it.
+
+### Concrete RPH-writing template
+PRE-LESSON
+- activate specific vocabulary/language/concept from the Lesson Content Pack;
+- use one suitable retrieval/prediction/phonics/visual task.
+
+LESSON DELIVERY A — SOURCE CONTENT
+- direct pupils to the verified textbook page(s) or verified SOW outline;
+- state what pupils look at/listen to/read/say/do from the mapped content;
+- model/elicit the exact target language/concept.
+
+LESSON DELIVERY B — SOURCE TASK
+- pupils complete/discuss the actual mapped textbook task;
+- include pair-check/group-check/teacher feedback where appropriate.
+
+LESSON DELIVERY C — ACTIVITY BOOK, IF PRESENT
+- direct pupils to the mapped activity-book page;
+- state the skill/content reinforced;
+- use the existing book task as reinforcement, not as the only evidence.
+
+LESSON DELIVERY D — CIKGULAJU ORIGINAL VARIATION
+- generate a different-format task using the same vocabulary/language/concept;
+- vary pedagogy, response mode and grouping;
+- do not copy the activity-book format.
+
+ASSESSMENT / PBD
+- specify the observable product/response from the source task and/or CikguLaju variation.
+
+POST-LESSON
+- retrieve, apply or reflect on the same mapped content.
+
+### Quality rejection rules
+Reject or downgrade an RPH if:
+- it says only "refer to textbook" without using actual verified content;
+- it mentions a workbook generically without verified mapping;
+- generated activities could apply to almost any lesson;
+- vocabulary/language/content in activities is not traceable to the Lesson Content Pack;
+- source task and CikguLaju task have effectively the same format;
+- textbook/activity-book content is invented when mapping is absent.
+
+### Activity-book absent case
+If no verified activity book exists:
+- do not write "activity book" into the RPH;
+- generate an original reinforcement/application task grounded in textbook/SOW content instead.
