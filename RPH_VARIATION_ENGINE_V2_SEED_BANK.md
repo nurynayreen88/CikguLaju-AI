@@ -318,3 +318,118 @@ Before accepting an RPH, ask:
 5. For recycled/non-textbook lessons, is prior lesson content intentionally reused?
 6. If a source worksheet/activity-book task exists, is the CikguLaju task a genuinely different format?
 7. Would this RPH still make sense if the Lesson title were removed? If it could fit almost any Lesson, reject it as too generic.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 14–22
+
+### Lesson 14 — Friends — Writing
+Verified SOW:
+- Main skill: Writing
+- Complementary: Reading
+- Recycles colours/numbers/personal language from Lessons 6–10
+- Uses colour flashcards, pelmanism, poster creation, display/talk, and optional worksheet support.
+
+Engine behaviour:
+- Writing remains primary.
+- Use colour-word retrieval before written production.
+- Project/product task may be used because the SOW itself supports it.
+- If generating a worksheet, do not duplicate the SOW-style draw-and-write layout; use an alternate format such as label-and-colour, word assembly, categorise-and-write, or mini caption task.
+
+### Lesson 15 — Friends — Language Arts
+Verified SOW:
+- Language Arts main focus
+- Speaking complementary
+- Pupils respond to chant/rap/rhyme/action song and may create an extra verse.
+
+Engine behaviour:
+- Creative/performance route only.
+- Original CikguLaju extension can vary gesture creation, verse substitution, visual cue sequencing, or group performance.
+- Do not turn this into a generic worksheet-heavy lesson.
+
+### Lesson 16 — Friends — Reading
+Verified SOW:
+- Main skill: Reading
+- Complementary: Listening
+- Recycles personal language: name/age/questions
+- Textbook: Superminds 1 pp.8–9
+- Role-play is indicated as a cross-curricular application context.
+
+Engine behaviour:
+- Use pp.8–9 as source spine once exact content is verified.
+- Reading comprehension/details must remain primary.
+- Listening/role-play should support understanding of the same source content.
+- Do not invent the exact story/dialogue if the page content is not extracted.
+
+### Lesson 17 — Friends — Writing
+Verified SOW:
+- Main skill: Writing
+- Complementary: Speaking
+- Recycles Friends topic
+- Textbook: Superminds 1 p.9
+- SOW explicitly includes a fallback if Workbook is unavailable: draw/write examples and number practice.
+
+Engine behaviour:
+- Mark this Lesson as WORKBOOK_EXPECTED_OR_FALLBACK.
+- If verified Workbook mapping is available, use it explicitly.
+- If not, use the verified SOW fallback rather than pretending a workbook page is known.
+- CikguLaju follow-up must use a different format from whichever source/fallback task is used.
+
+### Lesson 18 — At School — Listening
+Verified SOW:
+- Main skill: Listening
+- Complementary: Speaking
+- Language focus: classroom objects
+- Textbook: Superminds 1 p.10
+
+Engine behaviour:
+- Listening comprehension of classroom-object language is primary.
+- Speaking is used for naming/describing after listening.
+- Original follow-up may use listen-and-point, object hunt, picture selection, or pair naming, but must remain tied to the verified object set.
+
+### Lesson 19 — At School — Speaking
+Verified SOW:
+- Main skill: Speaking
+- Complementary: Listening
+- Language focus: What's this? / It's a... / Is it a...? / Yes/No
+- Textbook: Superminds 1 p.11
+
+Engine behaviour:
+- Spoken question-answer production is the spine.
+- Listening supports comprehension of partner questions.
+- Suitable alternate formats: mystery-object bag, pair guessing, object-card information gap, mini speaking carousel.
+- Do not replace speaking with a written worksheet as the main task.
+
+### Lesson 20 — At School — Language Arts
+Verified SOW:
+- Classroom objects
+- Recycles chant from p.10
+- Pupils make a zigzag book, draw/label 5 classroom objects, and share/name objects.
+
+Engine behaviour:
+- Product creation + oral sharing are both required route families.
+- CikguLaju variation may change craft/product format, but must preserve imaginative response and classroom-object language.
+- Do not generate a second identical zigzag-book task.
+
+### Lesson 21 — At School — Listening
+Verified SOW:
+- Main skill: Listening prediction
+- Complementary: Listening instructions
+- Recycles colours/classroom objects
+- SOW uses picture dictation and pair picture dictation.
+
+Engine behaviour:
+- Prediction must happen before listening.
+- Use classroom-object/colour language from prior lessons.
+- If generating extra practice, choose a different response mode such as select-the-picture, sequence instructions, or listen-and-build rather than another picture dictation.
+
+### Lesson 22 — At School — Speaking
+Verified SOW:
+- Main skill: Speaking
+- Complementary: Listening
+- Recycles greetings, age, numbers
+- SOW uses telephone-style pair exchanges with number cards.
+
+Engine behaviour:
+- Oral interaction is primary.
+- Pair rotation / speaking chain / role card variants are suitable.
+- CikguLaju variation should not repeat the exact telephone-card format; use an alternate interaction structure while retaining the same language targets.
