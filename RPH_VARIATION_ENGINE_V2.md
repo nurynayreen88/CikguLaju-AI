@@ -155,6 +155,77 @@ TEACHERFIERA_STYLE_BENCHMARK
 OFFICIAL_SOW_PATTERN
 Do not store copied third-party paragraphs as runtime templates.
 
+
+## RPH CONTENT WRITING LOCK — TEXTBOOK / ACTIVITY BOOK MUST APPEAR IN THE RPH CONTENT
+
+The final RPH content itself must contain explicit teaching steps that use the verified textbook and, where available, the verified activity book. It is not enough for the engine to use these sources silently in the background.
+
+### Required textbook references inside RPH content
+When a verified textbook mapping exists, the lesson-plan content should naturally include instructions such as:
+- Teacher directs pupils to the verified textbook page(s) for the selected Lesson.
+- Pupils observe/read/listen/respond to the specific verified content on those page(s).
+- Teacher elicits or models the lesson-linked vocabulary/language/skill from the textbook content.
+- Pupils complete or discuss the relevant textbook task.
+- Teacher checks responses and uses the textbook task as a bridge to the next activity.
+
+Do not fabricate page numbers or textbook content. Only include page references/content already verified in mapping.
+
+### Required activity-book references inside RPH content
+When a verified activity-book/workbook mapping exists, the RPH should include an explicit follow-up instruction linked to it, for example:
+- Teacher directs pupils to the verified activity-book page related to the Lesson.
+- Pupils complete the relevant workbook practice as reinforcement.
+- Teacher reviews selected responses/errors.
+- CikguLaju then provides an ORIGINAL follow-up exercise using the same language/skill target but a different response format.
+
+The RPH must distinguish:
+1. **Book activity** — use the existing verified textbook/activity-book task.
+2. **CikguLaju variation** — an original alternate-format activity to reinforce or assess the same learning target.
+
+### Example sequencing pattern
+PRE-LESSON
+→ activate prior knowledge connected to textbook lesson content
+
+LESSON DELIVERY 1
+→ open verified textbook page
+→ observe/listen/read the actual lesson content
+→ teacher models / elicits target language or concept
+
+LESSON DELIVERY 2
+→ pupils complete the relevant textbook task
+→ pair/group comparison or teacher check
+
+LESSON DELIVERY 3
+→ if activity book exists, use verified related activity-book exercise
+→ review common responses/errors
+
+LESSON DELIVERY 4
+→ CikguLaju original alternate-format task using the same lesson content
+
+ASSESSMENT
+→ collect evidence from textbook/workbook task and/or the original CikguLaju task
+
+POST-LESSON
+→ short recap / retrieval / exit activity tied to the same content
+
+### Output wording rule
+Use direct, practical teacher-facing wording in the generated RPH. Avoid vague sentences such as:
+- "Teacher conducts an activity based on the textbook."
+- "Pupils do exercises in the activity book."
+
+Prefer concrete wording grounded in verified mappings, e.g.:
+- "Teacher asks pupils to refer to the mapped textbook page for this Lesson and identify the target words shown in the pictures."
+- "Pupils complete the linked activity-book exercise, then compare answers in pairs."
+- "Teacher follows with a CikguLaju picture-sorting task that practises the same target vocabulary in a different format."
+
+When exact verified page/content metadata is available, include it. When it is not available, do not imply that it is known.
+
+### RPH quality gate
+A generated RPH should fail the quality gate if a verified textbook/activity-book mapping exists but:
+- the book is not mentioned in the teaching steps,
+- the mapped content is not used in the activity sequence,
+- the original CikguLaju exercise is unrelated to the mapped book content,
+- the generated exercise simply duplicates the activity-book exercise format.
+
 ## Safety checks before release
 - exact SK/SP relation preserved
 - no SP forcibly attached to first SK when a lesson has multiple SK
