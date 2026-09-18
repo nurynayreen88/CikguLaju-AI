@@ -122,3 +122,85 @@ Suggested route-history table: rph_variation_history_v2
 - created_at
 
 This document is a seed bank, not a curriculum source.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED CONTENT-FIRST SEED RULES
+
+These rules are grounded in the user-supplied Primary Year 1 Scheme of Work and lesson-plan references.
+
+### SOW structure lock
+Primary Year 1 lessons include both textbook-based and non-textbook-based lessons.
+- From Lesson 6 onward, textbook-based lessons use Superminds 1 as the lesson spine.
+- Non-textbook-based lessons recycle/consolidate previously learned language and skills.
+- Main and complementary standards may target different skills in the same lesson.
+- RPH objectives may be derived from both, but the main skill remains primary.
+
+### Differentiation patterns extracted from the verified SOW
+Use as selectable differentiation logic:
+- vary task difficulty;
+- vary amount/type of support: teacher talk, gestures, visuals, written support;
+- vary expected outcome;
+- vary time allowance;
+- vary grouping/roles;
+- use closed vs open questions appropriately;
+- vary feedback according to pupil readiness.
+For low-literacy pupils, use supplementary foundational literacy support where the SOW indicates this is appropriate.
+
+### Content-specific route example: Friends — colours / classroom instructions
+When a verified Lesson Content Pack contains the colour language and classroom-instruction focus:
+- PRE: activate colour words through a quick recognition/retrieval task.
+- INPUT: teacher models short supported classroom instructions linked to colours.
+- GUIDED RESPONSE: pupils point to real classroom objects matching the instructed colour.
+- CONTROLLED PRACTICE: pupils repeat in small groups.
+- APPLICATION: game-like instruction-following task using the same colour vocabulary.
+- WRITING LINK: pupils write/copy the verified target colour words when the complementary writing standard applies.
+- POST: extend to two-item instructions or memory/retrieval using the same verified language.
+Do not reuse these colour-specific steps for unrelated lessons.
+
+### Content-specific route example: Friends — colour-word reading / phonics
+When the Lesson Content Pack is verified as colour-word recognition / sound-letter work:
+- PRE: retrieve colour vocabulary already taught.
+- INPUT: identify letter shapes and target initial sounds from verified colour words.
+- GUIDED PRACTICE: model segmentation/blending or letter-to-sound connection as required by the verified standard.
+- PAIR/GROUP PRACTICE: pupils assemble or match sound/letter units to form the verified colour words.
+- WRITING: pupils record the target words with visual colour support.
+- PBD: observe recognition, sound production, blending/word formation, or legible written response according to the locked SK/SP.
+This pattern must only be selected when the verified lesson content supports it.
+
+### Content-specific route example: At School — project/application
+When the Lesson Content Pack contains classroom/school vocabulary and a project-style task:
+- use the textbook/source task as the application spine;
+- scaffold pupils to identify/categorise the verified vocabulary first;
+- move into pair/group product creation;
+- require oral description/presentation using the same verified language;
+- assess the product and/or oral response against the linked skill.
+Generated CikguLaju follow-up should use a different response format from the source task.
+
+### Pre/Post activity library grounded in Year 1 SOW
+Eligible families include:
+- remember-and-share;
+- missing-item recall;
+- phonics odd-one-out / same-sound discrimination;
+- pass-the-card vocabulary review;
+- spot-the-difference from a known text;
+- picture/text connection;
+- guess-the-word;
+- error correction from pupil work;
+- remember-and-say;
+- whisper-and-write;
+- listen-and-point;
+- word ladder;
+- memory test using a verified picture;
+- personal connection to target vocabulary;
+- short pupil reflection on what they remember.
+
+These are route patterns only. Runtime wording and lesson content must be original and tied to the Lesson Content Pack.
+
+### Selection guard
+The engine must not choose an attractive activity merely because it is age-appropriate.
+It must first pass:
+1. exact Lesson Content Pack relevance,
+2. main/complementary skill compatibility,
+3. exact SK/SP compatibility,
+4. textbook/non-textbook lesson type compatibility,
+5. class/time/readiness fit.
