@@ -204,3 +204,117 @@ It must first pass:
 3. exact SK/SP compatibility,
 4. textbook/non-textbook lesson type compatibility,
 5. class/time/readiness fit.
+
+
+## PRIMARY YEAR 1 ENGLISH — LESSON CONTENT PACK EXEMPLARS (VERIFIED SOW)
+
+These exemplars show how the engine should convert verified SOW content into lesson-specific RPH logic.
+
+### Lesson 6 — Friends — Listening
+Verified SOW:
+- Main skill: Listening
+- Complementary skill: Speaking
+- Language focus: greetings / asking name
+- Textbook reference: Superminds 1 p.4
+- SOW directs teacher to Teacher's Book for detailed pre/delivery/post lesson.
+
+Engine behaviour:
+- Treat p.4 as required source spine once the mapped textbook content is available.
+- Objective and success criteria must target listening for specific information + giving basic personal information.
+- Do not invent the exact textbook dialogue until p.4 content has been extracted/verified.
+- Allowed original extension formats: pair name-exchange, information chain, mini role-play, oral exit response.
+
+### Lesson 7 — Friends — Writing
+Verified SOW:
+- Main skill: Writing
+- Complementary skill: Speaking
+- Language focus: numbers 1–10; age question/response
+- Textbook reference: Superminds 1 p.5
+
+Engine behaviour:
+- Use p.5 content as source spine.
+- Writing task must remain primary; speaking can scaffold or reinforce.
+- Original alternate-format practice may include number/age card matching, interview-and-record, reorder-and-write, mini whiteboard age response.
+- Do not switch to unrelated vocabulary.
+
+### Lesson 8 — Friends — Reading
+Verified SOW:
+- Main skill: Reading
+- Complementary skill: Writing
+- Language focus: names of letters of the alphabet
+- Textbook reference: Superminds 1 p.6
+
+Engine behaviour:
+- Build around letter recognition from the verified textbook content.
+- Writing activity supports letter/word formation only where linked by SP.
+- Suitable variation families: letter hunt, visual discrimination, letter sorting, read-and-match, short copying/formation task.
+
+### Lesson 9 — Friends — Speaking
+Verified SOW:
+- Main skill: Speaking
+- Complementary skill: Reading
+- Language focus: colours; describing an object by colour
+- Textbook reference: Superminds 1 p.7
+
+Engine behaviour:
+- Speaking production must dominate the RPH.
+- Reading/phonics supports production, not replace it.
+- Suitable original formats after textbook task: object-description cards, colour guessing, pair information gap, mini presentation.
+
+### Lesson 10 — Friends — Language Arts
+Verified SOW:
+- Main + complementary focus: Language Arts
+- Recycled language: alphabet
+- SOW suggests a number-song / body-number performance style activity.
+
+Engine behaviour:
+- Use creative response/performance route.
+- Preserve recycled-language focus.
+- Do not force textbook workflow when the SOW provides a non-textbook creative outline.
+
+### Lesson 11 — Friends — Listening, recycled content
+Verified SOW:
+- Recycles language from Lessons 6–10: name, age, spelling/alphabet.
+- Main skill: Listening
+- Complementary: Writing
+- SOW activity includes class survey, drawing/writing about a partner, class profile, error correction.
+
+Engine behaviour:
+- This is a consolidation lesson. The engine should intentionally reference previously learned textbook language rather than invent new lexical content.
+- Route may use survey -> pair product -> class display -> error correction.
+- Generated worksheet variation should use a different format from any source worksheet while preserving personal-information targets.
+
+### Lesson 12 — Friends — Speaking, recycled content
+Verified SOW:
+- Recycles language from Lessons 6–10: name and age.
+- Main skill: Speaking
+- Complementary: Writing
+- SOW uses group chain speaking and written follow-up.
+
+Engine behaviour:
+- Prioritise repeated oral production in a structured chain/pair/group format.
+- Writing captures or extends the same information.
+- Alternate route can use role cards, mingle survey, partner introduction, but must retain the same verified language focus.
+
+### Lesson 13 — Friends — Reading, recycled colours/numbers/personal language
+Verified SOW excerpt:
+- Main skill: Reading
+- Complementary: Writing
+- Recycles earlier language.
+- SOW uses colour retrieval, letter-card recognition, spelling colour words, then a worksheet.
+
+Engine behaviour:
+- Use previously taught colour/letter content as the reading spine.
+- If generating a CikguLaju worksheet after the SOW worksheet, choose a DIFFERENT format such as sorting, label-and-colour, odd-one-out, letter assembly, or picture prompt.
+- Do not produce another near-identical read-and-colour worksheet.
+
+## CONTENT-FIRST GENERATION TEST
+
+Before accepting an RPH, ask:
+1. Can the activity sequence be traced to this exact Lesson's verified language/content focus?
+2. Does the main skill visibly dominate?
+3. Is the complementary skill used in support?
+4. For textbook-based lessons, is the mapped page/content used as the spine?
+5. For recycled/non-textbook lessons, is prior lesson content intentionally reused?
+6. If a source worksheet/activity-book task exists, is the CikguLaju task a genuinely different format?
+7. Would this RPH still make sense if the Lesson title were removed? If it could fit almost any Lesson, reject it as too generic.
