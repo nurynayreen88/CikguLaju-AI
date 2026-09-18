@@ -23481,3 +23481,80 @@ def callback(cid,d):
 
 APP_VERSION='v24.97-BM-ENGLISH-DIRECT-CONTENT-FLOW'
 # ===== END v24.97 =====
+
+
+# ===== v24.98 ENGLISH LESSON CURRICULUM HYDRATION =====
+# A selected English Lesson must hydrate its exact verified SK/SP before class/date/time.
+_callback_dispatch_v2498_base = callback
+
+def _en98_lesson_menu(cid,unit_idx):
+    ss=state.setdefault(cid,{})
+    units=ss.get('_en97_units') or []
+    if unit_idx<0 or unit_idx>=len(units): return _en97_unit_menu(cid)
+    unit=units[unit_idx]
+    items=[r for r in (ss.get('_en97_rows') or [])
+           if str(r.get('unit_title') or r.get('content_topic') or '').strip()==unit
+           and str(r.get('lesson_no') or '').strip()]
+    if not items:
+        return send(cid,'🚧 Lesson yang mempunyai mapping kurikulum disahkan belum tersedia untuk Unit ini.',
+                    [[{'text':'⬅️ Pilih Unit Lain','callback_data':'en97_up_0'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    ss['_en98_items']=items; ss['quick_content_v2391']=unit; ss['topic']=unit; ss['subtopic']=unit
+    kb=[]
+    for i,r in enumerate(items[:80]):
+        lesson=str(r.get('lesson_no') or '').strip()
+        focus=str(r.get('focus') or '').strip()
+        ps=r.get('page_start'); pe=r.get('page_end')
+        label=f'📚 Lesson {lesson}'
+        if focus: label+=f' • {focus}'
+        if ps not in (None,''):
+            label+=f" • m/s {ps}" + (f"–{pe}" if pe not in (None,'',ps) else '')
+        kb.append([{'text':label[:60],'callback_data':f'en98_lesson_{i}'}])
+    kb.append([{'text':'⬅️ Pilih Unit Lain','callback_data':'en97_up_0'}])
+    return send(cid,f"📚 <b>{html.escape(unit)}</b>\n\nPilih <b>Lesson</b>. SK/SP ditentukan automatik.",kb)
+
+def _en98_apply_lesson(cid,idx):
+    ss=state.setdefault(cid,{})
+    items=ss.get('_en98_items') or []
+    if idx<0 or idx>=len(items): return _en97_unit_menu(cid)
+    r=dict(items[idx])
+    lesson=str(r.get('lesson_no') or '').strip()
+    ss['lesson_no']=lesson; ss['lesson']=lesson
+    ss['textbook_lesson_no']=lesson
+    ss['textbook_page_focus']=str(r.get('focus') or '')
+    ss['textbook_content_topic']=str(r.get('content_topic') or r.get('unit_title') or '')
+    ss['textbook_book_title']=str(r.get('book_title') or '')
+    ss['textbook_page_start']=r.get('page_start'); ss['textbook_page_end']=r.get('page_end')
+    ss['textbook_page']=r.get('page_start'); ss['book_page']=r.get('page_start'); ss['page']=r.get('page_start')
+    ss['_verified_lesson_row_v2404']=r
+    exact=[]
+    try:
+        exact=_apply_textbook_page_sp_context(ss,r.get('page_start'),lesson,r.get('focus')) or []
+    except Exception as e:
+        print('v24.98 English SK/SP hydration:',repr(e),flush=True)
+    if not exact:
+        return send(cid,'🚧 <b>Konteks kurikulum Lesson ini belum lengkap.</b>\n\nMapping SK/SP yang tepat belum disahkan. Sistem tidak akan mereka SK/SP.',
+                    [[{'text':'⬅️ Pilih Lesson Lain','callback_data':'en98_back'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    ss['_pdp_source_trace_v2405']=_lesson_context_trace_v2405(ss)
+    return _lesson_to_class_v2439(cid)
+
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith('en97_unit_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _en98_lesson_menu(cid,i)
+    if ds.startswith('en98_lesson_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _en98_apply_lesson(cid,i)
+    if ds=='en98_back':
+        ss=state.setdefault(cid,{})
+        unit=str(ss.get('quick_content_v2391') or '')
+        units=ss.get('_en97_units') or []
+        try: i=units.index(unit)
+        except Exception: i=0
+        return _en98_lesson_menu(cid,i)
+    return _callback_dispatch_v2498_base(cid,d)
+
+APP_VERSION='v24.98-ENGLISH-LESSON-SKSP-HYDRATION'
+# ===== END v24.98 =====
