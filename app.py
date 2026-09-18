@@ -23558,3 +23558,21 @@ def callback(cid,d):
 
 APP_VERSION='v24.98-ENGLISH-LESSON-SKSP-HYDRATION'
 # ===== END v24.98 =====
+
+
+# ===== v24.99 ENGLISH SK-ONLY SOURCE GUARD =====
+# CikguLaju primary flow is SK only. Never surface SJK lesson evidence as SK curriculum.
+_en97_units_base_v2499 = _en97_units
+def _en97_units(year_label):
+    rows,units=_en97_units_base_v2499(year_label)
+    if str(year_label or '').startswith('Tahun '):
+        rows=[r for r in rows if 'sjk' not in str(r.get('source_url') or '').casefold()]
+        units=[]; seen=set()
+        for r in rows:
+            u=str(r.get('unit_title') or r.get('content_topic') or '').strip()
+            if u and u.casefold() not in seen:
+                seen.add(u.casefold()); units.append(u)
+    return rows,units
+
+APP_VERSION='v24.99-ENGLISH-SK-ONLY-SOURCE-GUARD'
+# ===== END v24.99 =====
