@@ -23576,3 +23576,95 @@ def _en97_units(year_label):
 
 APP_VERSION='v24.99-ENGLISH-SK-ONLY-SOURCE-GUARD'
 # ===== END v24.99 =====
+
+
+# ===== v25.00 ENGLISH YEAR 2 SK COMPLETE SOW =====
+# Runtime migration is idempotent. Existing Y2 mapping is archived before first replacement.
+# Source: English Year 2 (SK) 2026 SOW; no SJK source is used.
+def _migrate_y2_english_sk_v2500():
+    import base64 as _b64, zlib as _zl
+    con=_db()
+    try:
+        con.execute("CREATE TABLE IF NOT EXISTS cikgulaju_runtime_migrations (migration_key TEXT PRIMARY KEY, applied_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)")
+        if con.execute("SELECT 1 FROM cikgulaju_runtime_migrations WHERE migration_key='v25.00_y2_english_sk_160'").fetchone():
+            return
+        con.execute("CREATE TABLE IF NOT EXISTS y2_english_mapping_archive_v2500 AS SELECT * FROM textbook_page_sp_map WHERE 0")
+        con.execute("INSERT INTO y2_english_mapping_archive_v2500 SELECT * FROM textbook_page_sp_map WHERE year_label='Tahun 2' AND subject='Bahasa Inggeris'")
+        con.execute("DELETE FROM textbook_page_sp_map WHERE year_label='Tahun 2' AND subject='Bahasa Inggeris'")
+        con.execute("DELETE FROM textbook_page_lesson_map WHERE year_label='Tahun 2' AND subject='Bahasa Inggeris'")
+        raw=_zl.decompress(_b64.b64decode('eNqFV8uOJCkMvPMV+wWttM3zOPc57R723NK2Wq2RWqOZnlt+/AYJZCZgqiRThwoS7MAODO3//vr4+vh83+0Lv9DOL4Lfbd8M798/fn+9fWaMKkb4dRFmZP/n59vrjwyWv8sUl2DG7n+/vf6XMcG/XDG/wYzbv79+vv95fX/769uvr9+7O7AyI2/rh225rp+xoG3KBxRvW+Lf47d8lG4RyovUODNCm+pLXlrKBBo35GNxj2DI0MiQVH88TAxJ51IG8wpeDtB2XrVIvIUZmjlqIVW/ZpKueGli6RZxHE5GDrcPSOPJlUzYVH/Kst7BDNOwcCXKwwxz71E7Uh9ghkWlEUxEmOGRKSlgghnWmLpnE89M5VV4DxvM8MBV2bpGPXJlT66454qrZxmSmSs58qYlqgw55apbgWBGWEn/HEwQmBHpfJJbpGIHnwrTB6TnEx2eBWzNRvwil4/vg3Z+hSXpC8/WLD+gOaMaS1Zn6YrGUucPHeeezyc4mLHc8UC16IOHGSuDppVMDgFmrB3pL0cTIsxYt1SEEq7V5amCYcmFjZ1P7s5FWniUYMZtywwvuehoIZhxgxnHSsXbPQIn4zoVb0pdgnG287jogS2QW+R40yen6VOeEhlm3JRPZdsoMOPioJuFy2Pdse4u1fO6lpdpx4SRJ1cL4AAVhTovJFlqpp85Oldcafj5bc+RnGkWcTrW+ImjsnbEBGd8nPI/exb9HoPxaVDMS8nDtrh9m9tBrzu4FPLSgUe9vHgKolzBJdZgFb2s0LOKQ01r9McIM0FhqWUpKlon+ACTopYFitsyu+sEerBw5LmaG7lxzqQTslNmn5CeSbct/eICTQwzMXS72vplEpgBjcoFiO/wtTUxdfnNNdkSvnYmbU9UINEDrUyXLnHVynbdpJsqjQqQ1jwl9+Tckq7diNTDTAp6l4L/UzBprLjKU9xTMmnkiU+HaVsLeJsx83TJMG1dQsnZgxZQhhtHbphdiiVta66aU14Vgra2WneICtFiYIJ+3+VYMYBfjMlNqHO0GGi8ddaupwDRIz0nGsrQ3ikl6TbvuuCpMb+kisg96e2I/NQGF1okD+Cho8XWjiefFQbw2F/IbfF8YBiYkJSb9ViozWCdOXcdHtOiJy7oJGCXpBLL1BNfHz5gjtevvjbDT8/N23Gy0jFcYBwSvdYQchADeFLeJpn0lAfeadvyuVVDE42xM53Qs7f92yPxfG/JunmgoWOXe3bLU8LED0+BKkuoHNQG8LAo4Fw5ZUZU+/NcOxjAk3Y3INVQPxh4w667+EqcJfWh2lDWnteVVStKi1Njt1qqtUXdk0aQrFeTOJc+BvCw4MXlAXxuLBoxPg/MSPob79je6enmrqRxpPbsWT0wgPO60pwosnjtvXj9FHDVaJyVNvX1/eJBi7oep4vKy7Vh64ci+e2xU/8DvtqK/Q==')).decode('utf-8')
+        source='https://www.slideshare.net/slideshow/comprehensive-year-2-english-language-teaching-plan-for-2026/287968784'
+        def _unit(n):
+            if n==1: return ('Unit 0 — Introduction','Introduction')
+            if n<=25: return ('Unit 5 — Free Time','Free Time')
+            if n<=55: return ('Unit 6 — The Old House','The Old House')
+            if n<=87: return ('Unit 7 — Get Dressed!','Get Dressed!')
+            if n<=125: return ('Unit 8 — The Robot','The Robot')
+            return ('Unit 9 — At The Beach','At The Beach')
+        for line in raw.splitlines():
+            n0,focus,main,comp,ps0,pe0=line.split('|')
+            n=int(n0); ps=int(ps0); pe=int(pe0); unit,topic=_unit(n)
+            con.execute("""INSERT INTO textbook_page_lesson_map
+                (year_label,subject,book_title,unit_title,page_start,page_end,lesson_no,focus,content_topic,language_focus,activity_ref,source_url,verified,notes,checked_at)
+                VALUES(?,?,?,?,?,?,?,?,?,?,?,?,1,?,CURRENT_TIMESTAMP)""",
+                ('Tahun 2','Bahasa Inggeris','Super Minds 1',unit,ps,pe,str(n),focus,topic,'','',source,'SK Scheme of Work 2026 verified; no SJK source used'))
+            for role,sp in (('main',main),('complementary',comp)):
+                con.execute("""INSERT INTO textbook_page_sp_map
+                    (year_label,subject,book_title,unit_title,page_start,page_end,lesson_no,focus,sp_code,role,source_url,verified,checked_at)
+                    VALUES(?,?,?,?,?,?,?,?,?,?,?,1,CURRENT_TIMESTAMP)""",
+                    ('Tahun 2','Bahasa Inggeris','Super Minds 1',unit,ps,pe,str(n),focus,sp,role,source))
+        con.execute("INSERT INTO cikgulaju_runtime_migrations(migration_key) VALUES('v25.00_y2_english_sk_160')")
+        con.commit()
+        print('v25.00 Y2 English SK migration: 160 lessons / 320 SP mappings',flush=True)
+    except Exception as e:
+        con.rollback()
+        print('v25.00 Y2 English SK migration failed:',repr(e),flush=True)
+    finally:
+        con.close()
+
+try:
+    _migrate_y2_english_sk_v2500()
+except Exception as _e:
+    print('v25.00 migration boot error:',repr(_e),flush=True)
+
+def _en2500_lesson_standards(ss, lesson_no):
+    con=_db()
+    try:
+        rows=[dict(r) for r in con.execute("""SELECT p.*,c.sk_code,c.sk_text,c.sp_text
+            FROM textbook_page_sp_map p
+            JOIN curriculum_standards c
+              ON c.year_label=p.year_label AND c.subject=p.subject
+             AND c.sp_code=p.sp_code AND c.verified=1
+            WHERE p.year_label=? AND p.subject=? AND p.lesson_no=? AND p.verified=1
+              AND lower(COALESCE(p.source_url,'')) NOT LIKE '%sjk%'
+            ORDER BY CASE p.role WHEN 'main' THEN 0 WHEN 'complementary' THEN 1 ELSE 2 END,p.id""",
+            (ss.get('year',''),ss.get('subject',''),str(lesson_no))).fetchall()]
+        return rows
+    finally:
+        con.close()
+
+_en98_apply_lesson_base_v2500=_en98_apply_lesson
+def _en98_apply_lesson(cid,idx):
+    ss=state.setdefault(cid,{})
+    items=ss.get('_en98_items') or []
+    if idx<0 or idx>=len(items): return _en97_unit_menu(cid)
+    r=dict(items[idx]); lesson=str(r.get('lesson_no') or '').strip()
+    ss['lesson_no']=lesson; ss['lesson']=lesson; ss['textbook_lesson_no']=lesson
+    ss['textbook_page_focus']=str(r.get('focus') or '')
+    ss['textbook_content_topic']=str(r.get('content_topic') or r.get('unit_title') or '')
+    ss['textbook_book_title']=str(r.get('book_title') or '')
+    ps=r.get('page_start'); pe=r.get('page_end')
+    ss['textbook_page_start']=ps if ps and int(ps)>0 else None
+    ss['textbook_page_end']=pe if pe and int(pe)>0 else None
+    ss['textbook_page']=ss['textbook_page_start']; ss['book_page']=ss['textbook_page_start']; ss['page']=ss['textbook_page_start']
+    ss['_verified_lesson_row_v2404']=r
+    exact=_en2500_lesson_standards(ss,lesson)
+    if not exact or not _commit_textbook_page_standards(ss,exact):
+        return send(cid,'🚧 <b>Konteks kurikulum Lesson ini belum lengkap.</b>',[[{'text':'⬅️ Pilih Lesson Lain','callback_data':'en98_back'}]])
+    ss['_verified_standard_rows_v2406']=exact
+    ss['_verified_standard_source_v2406']='textbook_page_sp_map:SK-v25.00'
+    ss['_pdp_source_trace_v2405']=_lesson_context_trace_v2405(ss)
+    return _lesson_to_class_v2439(cid)
+
+APP_VERSION='v25.00-ENGLISH-Y2-SK-160-COMPLETE'
+# ===== END v25.00 =====
