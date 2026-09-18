@@ -23406,3 +23406,78 @@ def callback(cid,d):
 
 APP_VERSION='v24.96-BM-THEME-UNIT-PDP'
 # ===== END v24.96 =====
+
+
+# ===== v24.97 QUICK FLOW REPAIR: BM + ENGLISH =====
+# Remove visible source-mode choice. BM uses Tema -> Unit -> PdP.
+# English uses Unit/Title -> Lesson. Sources remain internal metadata.
+_callback_dispatch_v2497_base = callback
+
+def _en97_units(year_label):
+    rows=_verified_lesson_rows_v2404(str(year_label or '').strip(),'Bahasa Inggeris','')
+    out=[]; seen=set()
+    for r in rows:
+        unit=str(r.get('unit_title') or r.get('content_topic') or '').strip()
+        if unit and unit.casefold() not in seen:
+            seen.add(unit.casefold()); out.append(unit)
+    return rows,out
+
+def _en97_unit_menu(cid,page=0):
+    ss=state.setdefault(cid,{})
+    rows,units=_en97_units(ss.get('year',''))
+    ss['_en97_rows']=rows; ss['_en97_units']=units
+    if not units:
+        return send(cid,'🚧 <b>Unit/Lesson Bahasa Inggeris yang disahkan belum tersedia untuk tahun ini.</b>',
+                    [[{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(units)); kb=[]
+    for i in range(a,b):
+        kb.append([{'text':('📘 '+units[i])[:60],'callback_data':f'en97_unit_{i}'}])
+    nav=[]
+    if a: nav.append({'text':'⬅️ Sebelum','callback_data':f'en97_up_{page-1}'})
+    if b<len(units): nav.append({'text':'Seterusnya ➡️','callback_data':f'en97_up_{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},{'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,f"🇬🇧 <b>Bahasa Inggeris • {html.escape(str(ss.get('year') or ''))}</b>\n\nPilih <b>Unit / Title</b>.",kb)
+
+def _en97_lesson_menu(cid,unit_idx):
+    ss=state.setdefault(cid,{})
+    units=ss.get('_en97_units') or []
+    if unit_idx<0 or unit_idx>=len(units): return _en97_unit_menu(cid)
+    unit=units[unit_idx]
+    items=[r for r in (ss.get('_en97_rows') or []) if str(r.get('unit_title') or r.get('content_topic') or '').strip()==unit]
+    if not items:
+        return _en97_unit_menu(cid)
+    ss['_lesson_items_v2436']=items
+    ss['quick_content_v2391']=unit
+    ss['topic']=unit
+    ss['subtopic']=unit
+    return _show_lesson_only_v2436(cid,items)
+
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds.startswith('sub_') and _is_quick_pdp_v2428(ss):
+        subject=ds[4:]
+        if subject=='Bahasa Melayu':
+            ss['task']='quick_material'; ss['quick_material_flow']=True
+            ss['subject']=subject; ss['assessment_mode']='formative'
+            return _bm96_theme_menu(cid)
+        if subject=='Bahasa Inggeris':
+            ss['task']='quick_material'; ss['quick_material_flow']=True
+            ss['subject']=subject; ss['assessment_mode']='formative'
+            for k in ('quick_content_v2391','_quick_tb_rows_v2391','_quick_rpt_rows_content_v2391',
+                      '_quick_verified_lesson_rows_v2404','_lesson_items_v2436','selected_sk','selected_sp'):
+                ss.pop(k,None)
+            return _en97_unit_menu(cid)
+    if ds.startswith('en97_up_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=0
+        return _en97_unit_menu(cid,i)
+    if ds.startswith('en97_unit_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _en97_lesson_menu(cid,i)
+    return _callback_dispatch_v2497_base(cid,d)
+
+APP_VERSION='v24.97-BM-ENGLISH-DIRECT-CONTENT-FLOW'
+# ===== END v24.97 =====
