@@ -58,7 +58,7 @@ def _bootstrap_split_db_v2426():
     """
     import os as _os
     base = _os.path.dirname(_os.path.abspath(__file__))
-    target = _os.getenv('CIKGULAJU_DB_PATH', _os.path.join(base, 'CikguLaju_Curriculum_Master_v1.db'))
+    target = _os.getenv('CIKGULAJU_DB_PATH', _os.path.join(base, 'CikguLaju_Curriculum_Master_v24_95_CORE.db'))
     parts = [_os.path.join(base, 'CikguLaju_DB_v24_24.part00'),
              _os.path.join(base, 'CikguLaju_DB_v24_24.part01')]
     if _os.path.exists(target):
@@ -89,7 +89,7 @@ def _bootstrap_split_db_v2426():
 _bootstrap_split_db_v2426()
 # ===== END v24.26 SPLIT-DB BOOTSTRAP =====
 
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v1.db'))
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_95_CORE.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 ADMIN_CHAT_ID = str(os.getenv('ADMIN_CHAT_ID','')).strip()
 
@@ -6222,7 +6222,7 @@ _seen_updates = set()
 _runtime_lock = threading.Lock()
 
 # Local database: kurikulum + cache. Tujuan utama ialah mengurangkan panggilan Gemini.
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v1.db'))
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_95_CORE.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 
 
