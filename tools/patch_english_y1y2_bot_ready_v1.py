@@ -296,6 +296,13 @@ def _eng12_commit_lesson(cid,idx):
             _eng12_send_verified_audio(cid,ss.get("audio_reference"))
         except Exception as e:
             print("English Y1Y2 verified audio send error:",repr(e),flush=True)
+    # Always show the material menu first. Existing auto-pack/continuation hooks are
+    # legacy-dependent and can silently stop after lesson selection.
+    return send(cid,"📚 <b>Pilih bahan</b>",[
+        [{"text":"📝 RPH","callback_data":"eng12_material_rph"},{"text":"📄 Worksheet","callback_data":"eng12_material_worksheet"}],
+        [{"text":"🎨 BBM","callback_data":"eng12_material_bbm"},{"text":"⬅️ Lesson","callback_data":f"eng12_lsnunit_{ss.get('_eng12_unit_index',0)}"}],
+        [{"text":"🏠 Menu Utama","callback_data":"home"}]
+    ])
     nxt=globals().get("after_curriculum_selected") or globals().get("_temporary_auto_pack_v2386")
     if callable(nxt):
         try:
