@@ -2280,3 +2280,114 @@ Engine behaviour:
 - Creative performance must recycle verified weekday/free-time language.
 - Written support may be a short original line/verse or day-activity caption.
 - Avoid generic song activity unrelated to Free Time.
+
+
+## PRIMARY YEAR 2 ENGLISH — VERIFIED FREE TIME / THE OLD HOUSE EXEMPLARS 21–30
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work.
+
+### Lesson 21 — Free Time — Reading
+Verified SOW:
+- Theme: World of Self, Family and Friends.
+- Topic: Free Time.
+- Language focus: recycled food + free-time activities; healthy, unhealthy, eat healthy food, keep fit, have fun.
+- Main: Reading 3.2.2 understand specific information/details.
+- Complementary: Speaking 2.1.2 ask basic questions.
+- Textbook: Superminds 1 p.66.
+
+Engine behaviour:
+- Reading detail from p.66 is the evidence spine.
+- Speaking extension may ask classmates about healthy/free-time habits.
+- Alternate formats: healthy-habit read-and-sort, information hunt, read-and-ask cards.
+- Do not turn into generic health education.
+
+### Lesson 22 — Free Time — Speaking
+Verified SOW:
+- Recycles free-time activities and days of the week.
+- Main skill: Speaking.
+- Textbook-based continuation after p.66.
+
+Engine behaviour:
+- Oral discussion/questioning about free-time routine should dominate.
+- Reuse verified day/activity language.
+- Alternate formats: routine interview, weekend choices, free-time speaking carousel.
+- Keep exact textbook task pending until page extraction.
+
+### Lesson 23 — Free Time — Listening
+Verified SOW sequence:
+- Continues Free Time review/extension after p.66.
+Engine behaviour:
+- Listening detail must stay tied to verified free-time/health language.
+- Alternate formats: listen-and-tick habits, routine grid, detail matching.
+- Mark page/task detail pending if source page not directly extracted.
+
+### Lesson 24 — Free Time — Writing
+Verified SOW sequence:
+- Writing focus in same Free Time review cycle.
+Engine behaviour:
+- Written output should reuse verified Free Time vocabulary and sentence patterns.
+- Alternate formats: healthy/free-time mini profile, routine sentence set, poster captions.
+- Spelling/punctuation accuracy required.
+
+### Lesson 25 — Free Time — Language Arts
+Verified SOW sequence:
+- Language Arts within Free Time review cycle.
+Engine behaviour:
+- Creative product/performance must recycle verified Free Time/healthy-living language.
+- Do not invent source text/song if not extracted.
+- Suitable alternates: healthy habits chant, free-time rhyme, illustrated mini poster.
+
+### Lesson 26 — Free Time — Listening
+Verified SOW sequence:
+- Listening review/extension of recently introduced language.
+Engine behaviour:
+- Use formative assessment gaps from Lessons 21–25.
+- Alternate formats: targeted listen-and-identify, detail repair task, listening mini-quiz.
+- No unrelated vocabulary expansion.
+
+### Lesson 27 — Free Time — Speaking
+Verified SOW sequence:
+- Speaking review/extension.
+Engine behaviour:
+- Pair/group oral interaction should address identified language gaps.
+- Alternate formats: survey, information gap, speaking challenge cards.
+
+### Lesson 28 — Free Time — Reading
+Verified SOW sequence:
+- Reading review/extension.
+Engine behaviour:
+- Reuse familiar verified text/page language.
+- Alternate formats: read-and-correct, sequence, information hunt.
+- Avoid fresh unverified reading text if textbook material is available.
+
+### Lesson 29 — Free Time — Writing
+Verified SOW:
+- Main: Writing 4.3.2 spelling familiar high-frequency words accurately.
+- Complementary: Writing 4.3.1 capital letters and full stops.
+- SOW suggests spelling revision games and writing sentences based on posters from p.69.
+- Review/extend p.65–69.
+
+Engine behaviour:
+- Accuracy in spelling, punctuation and capitals is explicit QA evidence.
+- Reuse p.69 poster/content once exact page extraction is available.
+- Alternate formats: poster-to-sentence, error-correction writing, caption writing.
+- Do not introduce unrelated sentence content.
+
+### Lesson 30 — Free Time — Language Arts
+Verified SOW:
+- Theme: World of Self, Family and Friends.
+- Topic: Free Time.
+- Main: Language Arts 5.3.1 imaginative response.
+- SOW asks teacher to design own Language Arts lesson linked to standards.
+- Review/extend p.65–69.
+- Cross-curricular focus includes citizenship/cooperation and healthy living.
+
+Engine behaviour:
+- Treat as consolidation/creative response to Free Time content.
+- Product may be poster, chant/rap, role-play or other age-appropriate response.
+- Must remain grounded in verified p.65–69 language/content.
+- No invented copyrighted text.
+
+## TRANSITION NOTE — YEAR 2
+The next textbook unit after this Free Time cycle is **The Old House**. Source cross-checks show subsequent lessons use house vocabulary and structures such as "There's a..." / "There are..." and textbook p.71 onward. Do not merge the two units in runtime mapping.
