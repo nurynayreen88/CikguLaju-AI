@@ -2985,3 +2985,153 @@ Engine behaviour:
 - Product/performance may combine movement, speaking and simple writing.
 - Keep all language tied to verified unit content.
 - No invented copyrighted text.
+
+
+## PRIMARY YEAR 2 ENGLISH — THE ROBOT EXEMPLARS 101–120
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work / textbook unit progression.
+
+### Lesson 101 — The Robot — Listening
+Verified progression:
+- Continues The Robot unit.
+- Listening focus on body/action/instruction language.
+Engine behaviour:
+- Listen for specific details and commands.
+- Alternate formats: listen-and-build robot, action/detail grid, command-to-picture match.
+
+### Lesson 102 — The Robot — Speaking
+Verified progression:
+- Speaking focus using robot/body/action language.
+Engine behaviour:
+- Pair/group oral interaction should dominate.
+- Alternate formats: robot commander, describe-and-draw, action guessing chain.
+
+### Lesson 103 — The Robot — Reading
+Verified progression:
+- Reading simple robot descriptions/instructions.
+Engine behaviour:
+- Read for detail and sequence.
+- Alternate formats: instruction ordering, clue-to-robot match, sentence-picture match.
+
+### Lesson 104 — The Robot — Writing
+Verified progression:
+- Writing simple robot description/instruction text.
+Engine behaviour:
+- Alternate formats: robot fact card, guided instruction set, labelled robot + sentences.
+- Check spelling/punctuation.
+
+### Lesson 105 — The Robot — Language Arts
+Verified progression:
+- Creative consolidation of robot/body/action language.
+Engine behaviour:
+- Suitable alternates: robot chant, mime sequence, mini comic.
+- No invented copyrighted text.
+
+### Lesson 106 — The Robot — Listening
+Verified progression:
+- Review/extension listening.
+Engine behaviour:
+- Listen for differences in robot/body/action descriptions.
+- Alternate formats: compare-two-robots, listen-and-mark, instruction bingo.
+
+### Lesson 107 — The Robot — Speaking
+Verified progression:
+- Review/extension speaking.
+Engine behaviour:
+- Encourage complete simple oral descriptions/commands.
+- Alternate formats: mystery robot, pair command challenge, robot interview.
+
+### Lesson 108 — The Robot — Reading
+Verified progression:
+- Review/extension reading.
+Engine behaviour:
+- Use familiar verified unit language.
+- Alternate formats: read-and-correct, clue hunt, true/false/correct.
+
+### Lesson 109 — The Robot — Writing
+Verified progression:
+- Review/extension writing.
+Engine behaviour:
+- Produce a short coherent robot description/instruction sequence.
+- Alternate formats: mini poster, fact file, guided paragraph.
+
+### Lesson 110 — The Robot — Language Arts
+Verified progression:
+- Creative end-of-cycle response.
+Engine behaviour:
+- Performance/product may combine movement, speaking and simple writing.
+- Keep content tied to The Robot.
+
+### Lesson 111 — The Robot — Listening
+Verified progression:
+- Further consolidation/listening assessment within unit.
+Engine behaviour:
+- Target remaining comprehension gaps.
+- Alternate formats: listening checklist, detail sort, command sequence.
+
+### Lesson 112 — The Robot — Speaking
+Verified progression:
+- Further speaking consolidation.
+Engine behaviour:
+- Use structured pair/group interaction.
+- Alternate formats: robot tour, command relay, describe-and-find.
+
+### Lesson 113 — The Robot — Reading
+Verified progression:
+- Further reading consolidation.
+Engine behaviour:
+- Read for specific details from familiar source content.
+- Alternate formats: information hunt, matching, sequencing.
+
+### Lesson 114 — The Robot — Writing
+Verified progression:
+- Further writing consolidation.
+Engine behaviour:
+- Focus on accurate simple sentences.
+- Alternate formats: caption strip, instruction card, description repair.
+
+### Lesson 115 — The Robot — Language Arts
+Verified progression:
+- Language Arts consolidation.
+Engine behaviour:
+- Creative response may reuse known robot characters/actions.
+- No invented source text.
+
+### Lesson 116 — The Robot — Listening
+Verified progression:
+- Review/extension.
+Engine behaviour:
+- Use familiar unit language and target listening accuracy.
+- Alternate formats: robot detail dictation, listen-and-draw, compare-and-check.
+
+### Lesson 117 — The Robot — Speaking
+Verified progression:
+- Review/extension.
+Engine behaviour:
+- Encourage question/answer and descriptive speaking.
+- Alternate formats: robot guessing game, peer interview, action prompt talk.
+
+### Lesson 118 — The Robot — Reading
+Verified progression:
+- Review/extension.
+Engine behaviour:
+- Reading must require detail selection or sequencing.
+- Alternate formats: clue-to-picture, sentence order, read-and-fix.
+
+### Lesson 119 — The Robot — Writing
+Verified progression:
+- Review/extension.
+Engine behaviour:
+- Produce short guided text tied to verified unit content.
+- Alternate formats: mini robot manual, short profile, caption set.
+
+### Lesson 120 — The Robot — Language Arts
+Verified progression:
+- End-of-unit creative consolidation before next topic transition.
+Engine behaviour:
+- Product/performance may combine role-play, movement, simple writing.
+- Keep content source-grounded.
+
+## TRANSITION NOTE — YEAR 2
+The next major unit after The Robot is **At the beach**. Do not merge robot/body/action language into the next unit's lesson mapping.
