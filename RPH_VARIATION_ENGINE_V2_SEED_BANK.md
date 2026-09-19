@@ -3135,3 +3135,151 @@ Engine behaviour:
 
 ## TRANSITION NOTE — YEAR 2
 The next major unit after The Robot is **At the beach**. Do not merge robot/body/action language into the next unit's lesson mapping.
+
+
+## PRIMARY YEAR 2 ENGLISH — THE ROBOT / AT THE BEACH EXEMPLARS 101–120
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work.
+
+### Lesson 101 — The Robot — Listening
+Verified progression:
+- Continues The Robot unit.
+Engine behaviour:
+- Listening for body/action/instruction details.
+- Alternate formats: listen-and-build robot, action grid, sequence identification.
+
+### Lesson 102 — The Robot — Speaking
+Verified progression:
+- Speaking review/extension.
+Engine behaviour:
+- Oral commands/descriptions remain central.
+- Alternate formats: robot commander, describe-and-draw, partner instruction challenge.
+
+### Lesson 103 — The Robot — Reading
+Verified progression:
+- Reading short robot/action instructions or descriptions.
+Engine behaviour:
+- Alternate formats: read-and-order, clue-to-robot match, true/false/correct.
+- Keep source wording conservative until exact page extraction.
+
+### Lesson 104 — The Robot — Writing
+Verified progression:
+- Writing simple robot descriptions/instructions.
+Engine behaviour:
+- Alternate formats: robot fact card, instruction list, caption panel.
+- Check spelling/punctuation and command sequence.
+
+### Lesson 105 — The Robot — Language Arts
+Verified progression:
+- Creative consolidation tied to robot theme.
+Engine behaviour:
+- Suitable alternates: robot chant, mime sequence, mini comic, role-play.
+- No invented copyrighted source text.
+
+### Lesson 106 — The Robot — Listening
+Verified progression:
+- Further review/extension listening.
+Engine behaviour:
+- Use formative gaps from preceding robot lessons.
+- Alternate formats: listen-and-correct robot plan, detail checklist, action sequencing.
+
+### Lesson 107 — The Robot — Speaking
+Verified progression:
+- Speaking review/extension.
+Engine behaviour:
+- Full simple responses and clear commands where appropriate.
+- Alternate formats: command chain, describe-and-guess robot, pair information gap.
+
+### Lesson 108 — The Robot — Reading
+Verified progression:
+- Reading review/extension.
+Engine behaviour:
+- Focus on specific detail and instruction meaning.
+- Alternate formats: instruction hunt, sentence-to-picture match, sequencing cards.
+
+### Lesson 109 — The Robot — Writing
+Verified progression:
+- Writing review/extension.
+Engine behaviour:
+- Produce short coherent robot description/instruction set.
+- Alternate formats: guided paragraph, robot brochure card, error correction.
+
+### Lesson 110 — The Robot — Language Arts
+Verified progression:
+- End-of-unit creative consolidation.
+Engine behaviour:
+- Product/performance may combine movement, speaking and simple writing.
+- Keep content tied to verified robot/body/action language.
+
+## TRANSITION — AT THE BEACH
+
+### Lesson 111 — At the beach — Listening
+Verified progression:
+- New unit transition into beach/holiday-related vocabulary and simple descriptions.
+Engine behaviour:
+- Listening should identify beach items/people/actions from verified source.
+- Alternate formats: listen-and-point scene, beach item grid, picture detail selection.
+- Do not invent exact item list until source page extraction.
+
+### Lesson 112 — At the beach — Speaking
+Verified progression:
+- Speaking focus using beach scene vocabulary.
+Engine behaviour:
+- Oral description/question-answer around beach scene.
+- Alternate formats: describe-the-picture, beach scene interview, pair spot-and-say.
+
+### Lesson 113 — At the beach — Reading
+Verified progression:
+- Reading simple beach-related words/phrases/sentences.
+Engine behaviour:
+- Alternate formats: read-and-match scene items, clue cards, sentence-picture match.
+
+### Lesson 114 — At the beach — Writing
+Verified progression:
+- Writing simple beach scene descriptions.
+Engine behaviour:
+- Alternate formats: picture captions, mini scene profile, guided sentence set.
+- Check spelling and punctuation.
+
+### Lesson 115 — At the beach — Language Arts
+Verified progression:
+- Creative response tied to beach theme.
+Engine behaviour:
+- Suitable alternates: beach rhyme, mini-book, simple scene role-play.
+- No invented copyrighted text.
+
+### Lesson 116 — At the beach — Listening
+Verified progression:
+- Review/extension listening.
+Engine behaviour:
+- Listen for beach item/person/action details.
+- Alternate formats: listen-and-mark scene, detail grid, sequence match.
+
+### Lesson 117 — At the beach — Speaking
+Verified progression:
+- Review/extension speaking.
+Engine behaviour:
+- Pair/group talk around beach activities/scenes.
+- Alternate formats: describe-and-find, beach interview, information gap.
+
+### Lesson 118 — At the beach — Reading
+Verified progression:
+- Review/extension reading.
+Engine behaviour:
+- Read simple scene descriptions for detail.
+- Alternate formats: clue-to-picture match, true/false/correct, information hunt.
+
+### Lesson 119 — At the beach — Writing
+Verified progression:
+- Review/extension writing.
+Engine behaviour:
+- Produce short scene description using verified language.
+- Alternate formats: beach postcard panel, scene caption set, guided mini paragraph.
+
+### Lesson 120 — At the beach — Language Arts
+Verified progression:
+- Creative consolidation before next cycle.
+Engine behaviour:
+- Product/performance may combine beach vocabulary with speaking/writing.
+- Keep output age-appropriate and source-grounded.
