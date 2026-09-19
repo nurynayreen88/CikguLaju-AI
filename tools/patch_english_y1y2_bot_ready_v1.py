@@ -295,6 +295,13 @@ def _eng12_commit_lesson(cid,idx):
     ss["curriculum_source"]="SOW_VERIFIED"
     ss["lesson_source_mode"]="TEXTBOOK_LINKED" if (r.get("textbook_page_start") or r.get("textbook_page_end")) else "SOW_ONLY"
     ss["has_textbook_link"]=bool(r.get("textbook_page_start") or r.get("textbook_page_end"))
+    ss["material_curriculum_context"]=(
+        f"{_eng12_year_label(ss)} | Lesson {ln} | "
+        f"{str(r.get('_sow_skill') or '').strip()} | "
+        f"{str(r.get('topic') or r.get('unit_title') or '').strip()} | "
+        f"Main {mapped[0]['sk_code']}/{mapped[0]['sp_code']}" +
+        (f" | Complementary {mapped[1]['sk_code']}/{mapped[1]['sp_code']}" if len(mapped)>1 else "")
+    )
     _unit=str(r.get("topic") or r.get("unit_title") or "").strip()
     _summary=f"✅ <b>Lesson {ln}</b>"
     if _skill: _summary+=f" — {_skill}"
@@ -354,6 +361,10 @@ def callback(cid,d):
             return _eng12_unit_menu(cid,0)
     if ds.startswith("eng12_material_"):
         kind=ds.rsplit("_",1)[1]
+        if not ss.get("lesson_no") or ss.get("curriculum_source")!="SOW_VERIFIED":
+            return send(cid,"⚠️ Sila pilih Lesson terlebih dahulu.",[[{"text":"📚 Pilih Unit/Lesson","callback_data":"eng12_units"}]])
+        ss["requested_material"]=kind
+        ss["material_source_policy"]="SOW_FIRST_TEXTBOOK_OVERLAY"
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
