@@ -2144,3 +2144,139 @@ Engine behaviour:
 - Pupils produce simple sentences based on verified language already practised.
 - Alternate formats: guided weekly plan, sentence completion-to-free write, mini routine profile.
 - Require spelling/punctuation check.
+
+
+## PRIMARY YEAR 2 ENGLISH — VERIFIED FREE TIME EXEMPLARS 11–20
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work.
+
+### Lesson 11 — Free Time — Speaking
+Verified SOW:
+- Language: Do you...? Yes, I do. / No, I don't.
+- Main: Speaking 2.1.1 give simple personal information.
+- Complementary: Speaking 2.1.2 ask basic questions.
+- Textbook: Superminds 1 p.61.
+
+Engine behaviour:
+- Pair questioning must dominate.
+- Suitable alternates: weekend-activity survey, yes/no speaking grid, routine interview cards.
+- Keep question-answer pattern explicit.
+
+### Lesson 12 — Free Time — Listening
+Verified SOW:
+- Language includes: We're lost; lake; wait and see; come with me; thank you very much.
+- Main focus: Listening.
+- Textbook: Superminds 1 pp.62–63.
+- SOW notes Activity 1 is a picture story continuing onto p.63.
+- Value: asking for help when needed.
+
+Engine behaviour:
+- Preserve picture-story continuity across pp.62–63.
+- Listening for story meaning/details must be primary.
+- Do not invent missing story details beyond verified page mapping.
+- Suitable alternates: picture-sequence listening, story detail cards, listen-and-order.
+
+### Lesson 13 — Free Time — Reading
+Verified SOW:
+- Recycles story language from the preceding story sequence.
+- Main: Reading 3.1.3 blend phonemes (CVC, CCVC, CVCV, CCV).
+- Complementary: Listening 1.1.1 reproduce high-frequency phonemes.
+- Textbook: Superminds 1 p.63.
+
+Engine behaviour:
+- Link to Lesson 12 story vocabulary.
+- Add continuity key: linked_previous_lesson = 12.
+- Use only verified story/content words for decoding.
+- Alternate formats: blend-and-match, phoneme build, story-word decoding cards.
+
+### Lesson 14 — Free Time — Writing
+Verified SOW:
+- Language: How many days do...? + possessive 's.
+- Main: Writing 4.3.1 capital letters/full stops in guided writing.
+- Complementary: Listening 1.2.2 specific details.
+- Textbook: Superminds 1 p.64.
+
+Engine behaviour:
+- Guided sentence accuracy and punctuation are core.
+- Listening may supply information that pupils convert into written sentences.
+- Alternate formats: listen-note-write, possessive mini-profile, punctuation repair.
+
+### Lesson 15 — Free Time — Language Arts
+Verified SOW:
+- Phoneme blends CVC, CCVC, CVCV, CCV.
+- Main: Language Arts 5.1.2 songs/chants/rhymes.
+- Complementary: Reading 3.1.3 blending.
+- SOW says design own LA lesson linked to standards and phoneme blending.
+
+Engine behaviour:
+- Song/chant + visible written words required.
+- Reading/blending must connect to the same language.
+- Do not reproduce copyrighted lyrics; use source metadata/pattern only.
+- Alternate formats: phonics chant cards, blend-and-clap, action rhyme with verified words.
+
+### Lesson 16 — Free Time — Listening
+Verified SOW:
+- Review/extension of recently introduced language and vocabulary.
+- Main: Listening 1.2.2 specific details.
+- Complementary: Reading 3.1.1 alphabet.
+- SOW suggests extending listening from p.64; pair dictation of spelling/info.
+- Review/extend pp.61–64.
+
+Engine behaviour:
+- Content should recycle Lessons 11–14.
+- Strong route: listen -> record detail -> pair dictation -> verify spelling.
+- Alternate formats: information-gap dictation, letter-detail grid, peer listening check.
+
+### Lesson 17 — Free Time — Speaking
+Verified SOW:
+- Review/extension of recent language.
+- Main: Speaking 2.1.2 ask basic questions.
+- Complementary: Writing 4.2.1 ask/give personal information in writing.
+- SOW suggests pupils prepare and run a survey about weekend activities.
+- Findings can be reported in Lesson 19.
+
+Engine behaviour:
+- Add continuity key: linked_next_lesson = 19.
+- Oral survey must be completed before report writing.
+- Preserve weekend/free-time topic.
+- Alternate formats: weekend survey grid, class poll, find-someone-who.
+
+### Lesson 18 — Free Time — Reading
+Verified SOW:
+- Review/extension of recent language.
+- Main: Reading 3.2.2 specific details.
+- Complementary: Reading 3.2.3 reread to understand.
+- SOW suggests reviewing pp.62–63 story by cutting it into stages and ordering sentences/pictures.
+- Review/extend pp.61–64.
+
+Engine behaviour:
+- Reuse verified story from Lessons 12–13.
+- Add continuity key: linked_previous_lessons = 12,13.
+- Reading order/sequence evidence must be visible.
+- Alternate formats: sequence strips, story jigsaw, read-and-order picture cards.
+
+### Lesson 19 — Free Time — Writing
+Verified SOW:
+- Review/extension of recent language.
+- Main: Writing 4.3.3 plan/draft/write simple sentences.
+- Complementary: Writing 4.2.5 connect words/phrases with conjunctions.
+- SOW suggests reporting findings from the Lesson 17 weekend survey, optionally digitally.
+
+Engine behaviour:
+- Add continuity key: linked_previous_lesson = 17.
+- Writing must use actual survey data where available.
+- Digital or paper output acceptable.
+- Alternate formats: mini survey report, class findings poster, simple data-to-sentence task.
+
+### Lesson 20 — Free Time — Language Arts
+Verified SOW:
+- Language: On day+s I + verb phrase.
+- Main: Language Arts 5.1.2 simple songs/chants/rhymes.
+- Complementary: Writing.
+- Final LA lesson in this Free Time review cycle.
+
+Engine behaviour:
+- Creative performance must recycle verified weekday/free-time language.
+- Written support may be a short original line/verse or day-activity caption.
+- Avoid generic song activity unrelated to Free Time.
