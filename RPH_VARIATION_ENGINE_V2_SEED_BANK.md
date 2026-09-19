@@ -2070,3 +2070,77 @@ Engine behaviour:
 - Reuse verified weekday language from Lesson 2.
 - Suitable alternates: weekly routine carousel, day/activity cards, pair schedule talk.
 - Keep content within verified Free Time vocabulary once textbook page/content is mapped.
+
+
+## PRIMARY YEAR 2 ENGLISH — VERIFIED FREE TIME EXEMPLARS 4–10
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-checks: Primary Year 2 SK Scheme of Work / SJK Scheme of Work mirrors.
+
+### Lesson 4 — Free Time — Reading
+Verified SOW:
+- Theme: World of Self, Family and Friends.
+- Topic: Free Time.
+- Language focus: present simple; "On (day) we (verb)."
+- Main skill: Reading.
+- Textbook reference: Superminds 1 p.60.
+- SOW excerpt shows phonics/word recognition work using familiar Free Time vocabulary.
+
+Engine behaviour:
+- p.60 is source spine once exact page content is extracted.
+- Reading/decoding is primary evidence.
+- Alternate formats: read-and-match day/activity phrases, phoneme-word sort, picture-supported sentence match.
+- Do not invent exact textbook task before page verification.
+
+### Lesson 5 — Free Time — Writing
+Verified SOW sequence:
+- Continues Free Time language with present simple and day/activity combinations.
+- Main skill: Writing.
+- SOW uses sentence-building support with word cards and explicit attention to sentence punctuation.
+- Pupils write about their favourite day and what they do on that day.
+
+Engine behaviour:
+- Sentence construction and punctuation should be explicit.
+- Alternate formats: day-routine sentence strips, favourite-day mini card, reorder-and-write.
+- Keep personalisation grounded in verified Free Time language.
+
+### Lesson 6 — Free Time — Language Arts
+Verified SOW progression places a Language Arts lesson after initial Free Time skills cycle.
+Engine behaviour:
+- Use verified Free Time vocabulary/language only.
+- Product/performance should be creative but still tied to lesson language.
+- If exact source text/song is not yet extracted, mark CONTENT_DETAIL_PENDING and avoid invented lyrics/text.
+
+### Lesson 7 — Free Time — Listening
+Verified SOW sequence:
+- Returns to Free Time with listening focus.
+- Recycles days and regular-activity language.
+Engine behaviour:
+- Listening evidence must involve identifying day/activity information.
+- Alternate formats: listen-and-tick timetable, day/activity grid, sequence cards.
+- Preserve recycling role; no unnecessary new vocabulary.
+
+### Lesson 8 — Free Time — Speaking
+Verified SOW sequence:
+- Speaking focus on personal Free Time information.
+- Recycles regular activities and day expressions.
+Engine behaviour:
+- Pair/group oral exchange should dominate.
+- Alternate formats: weekly routine interview, find-someone-who, routine carousel.
+- Avoid worksheet-dominant delivery.
+
+### Lesson 9 — Free Time — Reading
+Verified SOW sequence:
+- Reading focus within same topic cycle.
+Engine behaviour:
+- Read short familiar phrases/sentences for detail.
+- Use visuals and known language where source supports it.
+- Alternate formats: read-and-sort, timetable reading, sentence-picture matching.
+
+### Lesson 10 — Free Time — Writing
+Verified SOW sequence:
+- Writing focus within Free Time cycle.
+Engine behaviour:
+- Pupils produce simple sentences based on verified language already practised.
+- Alternate formats: guided weekly plan, sentence completion-to-free write, mini routine profile.
+- Require spelling/punctuation check.
