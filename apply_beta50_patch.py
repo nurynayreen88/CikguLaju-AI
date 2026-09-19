@@ -150,6 +150,28 @@ import subprocess, sys
 _eng_patch=Path(__file__).with_name("tools").joinpath("patch_english_y1y2_bot_ready_v1.py")
 if _eng_patch.exists():
     subprocess.check_call([sys.executable, str(_eng_patch), str(P)])
+    # Runtime audit: print the exact functions/lines still containing legacy English SK-flow wording.
+    import re
+    _needles=("unit buku teks","pilih **sk**","pilih <b>sk</b>","standard kandungan (sk)")
+    _low=_txt.lower()
+    for _needle in _needles:
+        _start=0
+        while True:
+            _hit=_low.find(_needle,_start)
+            if _hit < 0: break
+            _line=_txt.count("\n",0,_hit)+1
+            _lo=max(0,_txt.rfind("\n",0,_hit-500))
+            _hi=_txt.find("\n",_hit+500)
+            if _hi < 0: _hi=len(_txt)
+            _snippet=_txt[_lo:_hi].replace("\n","\\n")
+            print(f"LEGACY_ENGLISH_FLOW_HIT line={_line} needle={_needle!r} snippet={_snippet[:1200]}",flush=True)
+            _start=_hit+len(_needle)
+    print("ENGLISH_BOT_READY_RUNTIME_AUDIT",
+          "eng12_block=",("ENGLISH Y1Y2 BOT READY V1" in _txt),
+          "eng12_unit=",("eng12_lsnunit_" in _txt),
+          "eng12_lesson=",("eng12_lesson_" in _txt),
+          "callback_defs=",len(re.findall(r"(?m)^def callback\\s*\\(",_txt)),
+          flush=True)
     # Final guard: remove the legacy English unit->SK route after all runtime patches.
     _txt=P.read_text(encoding="utf-8")
     _legacy_phrase="Selepas itu cikgu akan pilih **SK** dan **SP** yang dipetakan kepada unit tersebut."
