@@ -433,3 +433,67 @@ Engine behaviour:
 - Oral interaction is primary.
 - Pair rotation / speaking chain / role card variants are suitable.
 - CikguLaju variation should not repeat the exact telephone-card format; use an alternate interaction structure while retaining the same language targets.
+
+
+## RPH REFERENCE BENCHMARK — USER-SUPPLIED RPH PATTERNS LOCK
+
+The user-supplied Year 1 RPH files have now been rechecked and their usable pedagogical patterns are explicitly locked into the variation bank.
+
+### Patterns verified from supplied RPH examples
+
+**Friends**
+- introduce target phrases with teacher/pupil modelling;
+- pair practice before whole-class reporting;
+- scale from pairs -> small groups -> larger groups -> whole class;
+- post-lesson memory/retrieval using pupil names;
+- close with target social language such as greetings/goodbyes.
+
+**Colours / classroom instructions**
+- introduce/review colour vocabulary;
+- teacher gives supported instructions tied to visible classroom objects;
+- pupils respond physically;
+- transfer control to small groups;
+- include a game-like response structure;
+- follow with writing of the same verified target words.
+
+**At School**
+- flashcard/picture-word correction before new input;
+- model target classroom-object language;
+- move from recognition to pair/group response;
+- use realia/flashcards where useful;
+- allow pupils to compare/check with peers before teacher feedback.
+
+**Phonics**
+- listen to sound -> perform action;
+- identify sound in words;
+- discriminate/circle matching pictures;
+- sing/chant target sounds;
+- follow with pair reading/questions, picture-word matching or another retrieval task;
+- later rows review earlier phonemes while introducing the new row.
+
+### Generation consequence
+A CikguLaju RPH should no longer default to generic prose such as:
+"Teacher introduces the topic. Pupils do an activity. Teacher checks answers."
+
+For a verified lesson, generated teaching steps should show:
+1. how target content is activated,
+2. how the teacher models it,
+3. what pupils physically/speaking/reading/writing do,
+4. grouping progression,
+5. how the source textbook/workbook task is used,
+6. how CikguLaju adds an original alternate-format task,
+7. what evidence is observed for PBD,
+8. how the lesson closes with retrieval/application.
+
+### Reference-pattern quality gate
+Reject generated RPH if:
+- activity steps have no observable pupil action;
+- grouping is unspecified where interaction is expected;
+- source content is not visible in the lesson steps;
+- there is no progression from model/input to pupil practice;
+- the same generic step sequence is reused regardless of skill;
+- phonics lessons do not include actual sound recognition/production behaviour;
+- speaking lessons are dominated by writing;
+- listening lessons lack a listening-response task;
+- reading lessons lack a reading/decoding/comprehension behaviour;
+- writing lessons lack a visible written product.
