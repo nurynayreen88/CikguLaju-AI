@@ -880,3 +880,135 @@ Engine behaviour:
 - Product + personal response + shared performance are valid route components.
 - Differentiate writing support according to literacy level.
 - CikguLaju variation may change poster/product format but preserve favourite-things content.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 61–70
+
+### Lesson 61 — Let's Play! — Listening
+Verified SOW:
+- Recycles adjectives + toys from Lessons 56–60.
+- Main skill: Listening prediction.
+- Complementary: Listening for specific details.
+- SOW uses flashcards similar to p.25, prediction of likely phrases, number-selection listening game, pupil-led group repetition.
+
+Engine behaviour:
+- Prediction must happen before listening.
+- Listening evidence should show recognition of adjective + toy combinations.
+- Alternate CikguLaju formats: listen-and-grid, descriptor bingo, picture-number selection.
+- Avoid repeating identical number-bingo mechanics across nearby lessons.
+
+### Lesson 62 — Let's Play! — Speaking
+Verified SOW:
+- Recycles toy vocabulary.
+- Main skill: Speaking / naming and describing.
+- Complementary: asking for help/attention.
+- SOW uses a rhythmic toy chant, movement, pattern noticing, pair/group chant creation and performance.
+
+Engine behaviour:
+- Oral production + rhythm/performance are required.
+- Pupils should manipulate the verified toy vocabulary, not add unrelated items.
+- CikguLaju variation may use rap cards, chant sequencing or performance groups.
+- Include help-seeking language support when needed.
+
+### Lesson 63 — Let's Play! — Reading
+Verified SOW:
+- Recycles favourite + toy vocabulary.
+- Main skill: Reading using visuals.
+- Complementary: Writing / naming-describing objects.
+- SOW uses move-and-touch warm-up, toy pictures, sentence strips, picture matching and short labels.
+
+Engine behaviour:
+- Visual-to-text comprehension must be explicit.
+- Reading must precede the written label.
+- Alternate formats: picture-sentence hunt, read-and-place, visual clue matching, short captioning.
+- Do not turn it into a pure speaking task.
+
+### Lesson 64 — Let's Play! — Writing
+Verified SOW:
+- Recycles personal/favourite language from Lesson 54.
+- Main skill: Writing with appropriate capital letters.
+- Complementary: Reading for specific details.
+- SOW uses anonymous personal-information slips, redistribution, reading/guessing writer, oral confirmation and reporting.
+
+Engine behaviour:
+- Written personal-information product is mandatory.
+- Capitalisation of personal names must be assessed.
+- Reading-for-detail should be visible in the guessing stage.
+- Alternate format: anonymous profile card, mini fact file, read-and-identify.
+
+### Lesson 65 — Let's Play! — Language Arts
+Verified SOW:
+- Story about toys.
+- Main skill: personal response to literary text.
+- Complementary: listening to a very short narrative.
+- The same story is reused in Lesson 70.
+
+Engine behaviour:
+- Save story/source continuity metadata so Lesson 70 can reuse the same source.
+- Prepare pupils before story reading.
+- Focus on global understanding, illustrations and enjoyment.
+- Do not require word-by-word comprehension.
+
+### Lesson 66 — Let's Play! — Reading
+Verified SOW:
+- Recycles toy vocabulary + adjectives.
+- Main skill: Reading phonics.
+- Complementary: Listening phonemes.
+- Textbook: Superminds 1 p.27.
+- Fair play value appears in SOW.
+
+Engine behaviour:
+- p.27 is source spine once exact content is verified.
+- Reading must include sound recognition/decoding behaviour.
+- Listening reinforces the same phoneme target.
+- Do not replace with generic vocabulary review.
+
+### Lesson 67 — Let's Play! — Listening
+Verified SOW:
+- Recycles toys + adjectives.
+- Main skill: Listening for specific details.
+- Complementary: Reading for specific details.
+- Textbook: Superminds 1 p.28.
+
+Engine behaviour:
+- Listening and reading should work on the same mapped source/content.
+- Listening remains primary evidence.
+- Alternate format: listen-read compare, detail matrix, picture selection with written confirmation.
+
+### Lesson 68 — Let's Play! — Writing
+Verified SOW:
+- Focus: favourite + toy vocabulary + adjectives.
+- Main skill: Writing / expressing likes-dislikes.
+- Complementary: Speaking.
+- Textbook: Superminds 1 p.29.
+
+Engine behaviour:
+- Written favourite statement/product is primary.
+- Speaking can be used for pair rehearsal/interview first.
+- Alternate formats: preference card, mini survey-to-write, captioned favourite-toy profile.
+
+### Lesson 69 — Let's Play! — Speaking
+Verified SOW:
+- Focus: shapes / tangram vocabulary.
+- Main skill: Speaking / naming-describing.
+- Complementary: Reading for specific details.
+- Textbook: Superminds 1 p.30.
+
+Engine behaviour:
+- Shape vocabulary must be spoken and applied.
+- Reading supports task instructions/source details.
+- Suitable variation: tangram describe-and-build, mystery-shape guessing, shape hunt, pair instruction task.
+- Do not reduce to shape colouring only.
+
+### Lesson 70 — Let's Play! — Language Arts
+Verified SOW:
+- Explicit continuation of Lesson 65 story.
+- Main skill: personal response.
+- Complementary: imaginative response/art-craft.
+- SOW reviews story, re-reads, extends through vocabulary/character/storyline tasks and creative product, then pupil presentation/reflection.
+
+Engine behaviour:
+- Must resolve the SAME story/source used in Lesson 65.
+- Add continuity key: linked_previous_lesson = 65.
+- Route: recall -> reread -> extend -> create -> present/respond.
+- If Lesson 65 source is unavailable, do not invent a new unrelated story silently; mark source continuity unresolved and use a teacher-selected verified substitute only if explicitly mapped.
