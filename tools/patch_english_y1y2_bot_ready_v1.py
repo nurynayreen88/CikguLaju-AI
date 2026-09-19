@@ -336,8 +336,20 @@ def callback(cid,d):
             return _eng12_unit_menu(cid,0)
     if ds.startswith("eng12_material_"):
         kind=ds.rsplit("_",1)[1]
-        alias={"rph":"task_rph","worksheet":"task_worksheet","bbm":"task_bbm"}.get(kind)
-        if alias: return _callback_eng12_base(cid,alias)
+        aliases={
+            "rph":["task_rph","rph","buat_rph","generate_rph"],
+            "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
+            "bbm":["task_bbm","bbm","buat_bbm","generate_bbm"]
+        }.get(kind,[])
+        # Prefer a callback token that the existing app source actually handles.
+        import inspect
+        try: src=inspect.getsource(_callback_eng12_base)
+        except Exception: src=""
+        for alias in aliases:
+            if (('"' + alias + '"') in src or ("'" + alias + "'") in src):
+                return _callback_eng12_base(cid,alias)
+        if aliases:
+            return _callback_eng12_base(cid,aliases[0])
     return _callback_eng12_base(cid,d)
 
 APP_VERSION=str(globals().get("APP_VERSION",""))+"+ENG12-BOTREADY"
