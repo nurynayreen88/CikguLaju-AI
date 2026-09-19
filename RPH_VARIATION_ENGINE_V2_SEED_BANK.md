@@ -1279,3 +1279,132 @@ Engine behaviour:
 - Recycled animal vocabulary should be prioritised before extension.
 - Alternate formats: animal action chant, group rap, call-and-response.
 - Do not convert into a worksheet-led lesson.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 91–100
+
+### Lesson 91 — Pet Show — Listening
+Verified SOW:
+- Recycles animals + prepositions.
+- Main skill: Listening to supported questions.
+- Complementary: Listening for specific details.
+- SOW uses hidden-spider location guessing with classroom objects/pictures and pair/group replay.
+
+Engine behaviour:
+- Listening discrimination of prepositions must be observable.
+- Alternate formats: listen-and-place, hidden-object map, location-choice cards.
+- Avoid converting to a speaking-only guessing game.
+
+### Lesson 92 — Pet Show — Speaking
+Verified SOW:
+- Recycles prepositions, plural nouns, classroom objects, colours and imperative Put...
+- Main skill: Speaking / naming-describing.
+- Complementary: Listening to instructions.
+- SOW uses object-placement instructions, group turns and a location grid guessing task.
+
+Engine behaviour:
+- Pupils must give oral instructions and describe location.
+- Listening supports response to classmates.
+- Alternate formats: object-position challenge, pair scene-builder, instruction relay.
+- Grid is support, not the core outcome.
+
+### Lesson 93 — Pet Show — Reading
+Verified SOW:
+- Recycles animal vocabulary.
+- Main skill: Reading / blending.
+- Complementary: Writing / spelling.
+- SOW uses 12 animal words, card recognition, group retrieval and matching-memory game.
+
+Engine behaviour:
+- Decoding/reading and spelling should both be visible.
+- Reusable word cards are encouraged.
+- Alternate CikguLaju formats: decode-and-sort, word build, animal label cards.
+- Avoid simply duplicating memory/pelmanism if already used.
+
+### Lesson 94 — Pet Show — Writing
+Verified SOW:
+- Recycles prepositions + topic vocabulary.
+- Main skill: Writing words/phrases.
+- Complementary: spelling familiar words.
+- SOW uses animal-to-object line puzzle, oral sentence creation, written sentences and pupil-created puzzle exchange.
+
+Engine behaviour:
+- Final written sentence must encode both animal and location.
+- Strong route: solve -> write -> create -> swap -> solve/write.
+- Alternate formats: picture-path sentence, location mini-map, sentence builder.
+- Include spelling check.
+
+### Lesson 95 — Pet Show — Language Arts
+Verified SOW:
+- Focus: prepositions of place.
+- Main skill: imaginative response/art-craft.
+- Complementary: Listening to classroom instructions.
+- SOW uses teacher dictation to Pupil 1, peer redictation to Pupil 2, drawing, colour negotiation, final joint picture and display.
+
+Engine behaviour:
+- Listening memory + creative product are both essential.
+- Preserve pair negotiation/compromise.
+- Alternate format: listen-draw-compare, collaborative scene board, picture reconstruction.
+- Do not reduce to passive colouring.
+
+### Lesson 96 — Pet Show — Speaking
+Verified SOW:
+- Focus: I like / I don't like / What about you?
+- Main skill: Speaking / likes-dislikes.
+- Complementary: Listening for details.
+- Textbook: Superminds 1 p.37.
+
+Engine behaviour:
+- p.37 is source spine once exact content is verified.
+- Oral preference exchange must dominate.
+- Alternate formats: like/dislike corners, preference carousel, paired response cards.
+
+### Lesson 97 — Pet Show — Listening
+Verified SOW:
+- Focus includes imperatives, adjectives amazing/clever, phrase I've got an idea.
+- Main skill: Listening prediction.
+- Complementary: Listening to very short narrative.
+- Textbook: Superminds 1 pp.38–39.
+- Value: bravery.
+
+Engine behaviour:
+- Prediction must precede narrative listening.
+- Preserve story continuity across pp.38–39.
+- Do not invent exact story details until page content is extracted.
+- PBD evidence: prediction + identified story details.
+
+### Lesson 98 — Pet Show — Reading
+Verified SOW:
+- Recycles language from Lesson 97 story.
+- Main skill: Reading / blending.
+- Complementary: Reading / segmenting.
+- Textbook: Superminds 1 p.39.
+
+Engine behaviour:
+- Link explicitly to Lesson 97 story/source.
+- Add continuity key: linked_previous_lesson = 97.
+- Decoding must use verified story vocabulary.
+- Do not swap in unrelated phonics words.
+
+### Lesson 99 — Pet Show — Writing
+Verified SOW:
+- Recycles classroom objects + animals.
+- Main skill: Writing / likes-dislikes.
+- Complementary: Writing with and.
+- Textbook: Superminds 1 p.40.
+
+Engine behaviour:
+- Written output should include connected information using and where appropriate.
+- p.40 is source spine once exact content is verified.
+- Alternate formats: two-item preference sentence, mini caption pair, classify-and-write.
+
+### Lesson 100 — Pet Show — Language Arts
+Verified SOW:
+- Main/complementary focus: enjoy/respond to animal song.
+- SOW uses listening, actions, joining in, group picture or remembered words/sentence, then personal response.
+
+Engine behaviour:
+- Song/performance route is required.
+- Follow-up may be visual or short written response, but worksheet should not dominate.
+- Preserve personal response to song/tune/animals.
+- If a copyrighted song source is used, do not reproduce lyrics in generated material; use reference metadata and original response tasks only.
