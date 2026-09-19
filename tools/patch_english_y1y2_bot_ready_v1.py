@@ -385,6 +385,18 @@ def callback(cid,d):
             "invent_audio_reference":False,
             "textbook_optional":not bool(ss.get("has_textbook_link")),
         }
+        # Common aliases used by historical RPH / worksheet / BBM builders.
+        ss["rph_topic"]=ss.get("topic","")
+        ss["rph_subtopic"]=ss.get("subtopic","")
+        ss["rph_main_skill"]=ss.get("lesson_skill","")
+        ss["rph_main_sk"]=ss.get("main_sk","")
+        ss["rph_main_sp"]=ss.get("main_sp","")
+        ss["rph_complementary_sk"]=ss.get("complementary_sk","")
+        ss["rph_complementary_sp"]=ss.get("complementary_sp","")
+        ss["worksheet_topic"]=ss.get("topic","")
+        ss["worksheet_skill"]=ss.get("lesson_skill","")
+        ss["bbm_topic"]=ss.get("topic","")
+        ss["bbm_skill"]=ss.get("lesson_skill","")
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
