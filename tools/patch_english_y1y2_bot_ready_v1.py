@@ -54,7 +54,32 @@ def _eng12_rows(year_label):
         WHERE year_label=? AND ready_for_bot=1
         ORDER BY CAST(lesson_no AS INTEGER)
         """,(year_label,)).fetchall()
-        return [dict(r) for r in rs]
+        rows=[dict(r) for r in rs]
+        # BOT_READY_v1 may contain only textbook-linked lessons. If a complete SOW/RPT
+        # lesson table is present, it is the master sequence; overlay verified book/audio data.
+        tables={x[0] for x in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        for tn in ("sow_lesson_index","lesson_sow_map","sow_lessons","rpt_lessons"):
+            if tn not in tables: continue
+            cols={x[1] for x in con.execute("PRAGMA table_info("+tn+")")}
+            ycol="year_label" if "year_label" in cols else ("year" if "year" in cols else None)
+            unitcol="unit_title" if "unit_title" in cols else ("topic" if "topic" in cols else None)
+            if not ycol or not unitcol or "lesson_no" not in cols: continue
+            try:
+                sow=[dict(x) for x in con.execute("SELECT * FROM "+tn+" WHERE "+ycol+"=? ORDER BY CAST(lesson_no AS INTEGER)",(year_label,)).fetchall()]
+            except Exception:
+                continue
+            if len({int(x.get("lesson_no") or 0) for x in sow}) < 160: continue
+            verified={int(x.get("lesson_no") or 0):x for x in rows}
+            merged=[]
+            for z in sow:
+                n=int(z.get("lesson_no") or 0); base=verified.get(n,{})
+                title=str(z.get(unitcol) or base.get("topic") or base.get("unit_title") or "").strip()
+                item=dict(base)
+                item.update({"year_label":year_label,"subject":"Bahasa Inggeris","lesson_no":n,
+                             "unit_title":title,"topic":title,"ready_for_bot":1})
+                merged.append(item)
+            return merged
+        return rows
     finally:
         con.close()
 
