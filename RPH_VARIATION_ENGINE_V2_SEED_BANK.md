@@ -3692,3 +3692,34 @@ For any lesson with a verified textbook-linked task:
 ### Current Year 2 status
 - Same workbook source identified for Year 2.
 - Exact lesson-to-workbook mapping remains pending row-by-row verification.
+
+
+## YEAR 1 WORKBOOK MAPPING — SOURCE-IDENTIFIED BATCH
+
+Source:
+- SUPER MINDS WORKBOOK — Year 1 and 2 Workbook
+- Public source: https://anyflip.com/hbtvy/gvcg/basic
+- Current status: SOURCE_IDENTIFIED; binary Drive copy still pending.
+
+### Mapping policy for Year 1
+For Year 1 textbook-linked lessons:
+- Lessons 6–9: map workbook exercise against Friends / opening-unit textbook pages once exact workbook page is verified.
+- Lessons 16–19: map workbook exercise against At School textbook sequence once exact workbook page is verified.
+- Lessons 27–29: map workbook exercise against At School / phonics sequence once exact workbook page is verified.
+- Lessons 36–39: map workbook exercise against later At School/colour sequence once exact workbook page is verified.
+- Lessons 46–49: map workbook exercise against At School / Let’s Play transition once exact workbook page is verified.
+- Lessons 56–59: map workbook exercise against Let’s Play sequence once exact workbook page is verified.
+- Lessons 66–69: map workbook exercise against Let’s Play / shapes sequence once exact workbook page is verified.
+- Lessons 76–79: map workbook exercise against Unit 2 / Pet Show sequence once exact workbook page is verified.
+- Lessons 86–89: map workbook exercise against animals/prepositions sequence once exact workbook page is verified.
+- Lessons 96–99: map workbook exercise against likes/story/classroom-object sequence once exact workbook page is verified.
+- Lessons 106–109: map workbook exercise against camouflage/animals sequence once exact workbook page is verified.
+- Lessons 116–119: map workbook exercise against Lunchtime sequence once exact workbook page is verified.
+- Lessons 126–129: map workbook exercise against Lunchtime/food sequence once exact workbook page is verified.
+- Lessons 136–139: map workbook exercise against numbers/food sequence once exact workbook page is verified.
+- Lessons 146–149: map workbook exercise against food/healthy-eating sequence once exact workbook page is verified.
+
+### Runtime/RPH rule
+- If workbook mapping is exact: include workbook task in RPH and generate a different-format CikguLaju exercise targeting the same skill/content.
+- If workbook source is identified but page/exercise is not exact: mark WORKBOOK_SOURCE_IDENTIFIED_MAPPING_PENDING and do not fabricate the exercise.
+- If there is no corresponding workbook task after verification: mark NO_WORKBOOK_MAPPING and use an original CikguLaju task grounded in the textbook lesson.
