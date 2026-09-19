@@ -164,7 +164,9 @@ def callback(cid,d):
         except Exception: return _eng12_unit_menu(cid,0)
     if ds.startswith("eng12_unit_"):
         try: return _eng12_lesson_menu(cid,int(ds.rsplit("_",1)[1]),0)
-        except Exception: return _eng12_unit_menu(cid,0)
+        except Exception as e:
+            print("English Y1Y2 unit->lesson route error:",repr(e),flush=True)
+            return _eng12_unit_menu(cid,0)
     if ds.startswith("eng12_lp_"):
         try:
             _,_,ui,pg=ds.split("_")
@@ -205,7 +207,9 @@ if PRIORITY_MARK not in s:
             except Exception: return _eng12_unit_menu(cid,0)
         if _eng_ds.startswith("eng12_unit_"):
             try: return _eng12_lesson_menu(cid,int(_eng_ds.rsplit("_",1)[1]),0)
-            except Exception: return _eng12_unit_menu(cid,0)
+            except Exception as _eng_e:
+                print("English Y1Y2 unit->lesson route error:",repr(_eng_e),flush=True)
+                return _eng12_unit_menu(cid,0)
         if _eng_ds.startswith("eng12_lp_"):
             try:
                 _,_,_eng_ui,_eng_pg=_eng_ds.split("_")
