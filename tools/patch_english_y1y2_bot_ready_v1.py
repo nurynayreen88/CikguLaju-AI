@@ -181,6 +181,48 @@ def callback(cid,d):
 APP_VERSION=str(globals().get("APP_VERSION",""))+"+ENG12-BOTREADY"
 # ===== END ENGLISH Y1Y2 BOT READY V1 =====
 '''
+
+# V2: put a priority router inside the original callback before legacy handlers.
+PRIORITY_MARK="# ===== ENGLISH Y1Y2 PRIORITY ROUTE V2 ====="
+if PRIORITY_MARK not in s:
+    anchor="def callback(cid,d):"
+    pos=s.find(anchor)
+    if pos < 0:
+        raise SystemExit("callback anchor missing for English Y1Y2 priority route")
+    body_start=s.find("\n",pos)
+    priority=r"""
+    # ===== ENGLISH Y1Y2 PRIORITY ROUTE V2 =====
+    try:
+        _eng_ds=str(d or "")
+        _eng_ss=state.setdefault(cid,{})
+        if _eng_ds.startswith("sub_") and _eng_ds[4:] in ("Bahasa Inggeris","English") and _eng_ss.get("year") in ("Tahun 1","Tahun 2") and globals().get("_eng12_db_path") and _eng12_db_path():
+            _eng_ss["subject"]="Bahasa Inggeris"
+            for _eng_k in ("topic","subtopic","selected_sk","selected_sp","_eng12_rows","_eng12_units","_eng12_lesson_rows"):
+                _eng_ss.pop(_eng_k,None)
+            return _eng12_unit_menu(cid,0)
+        if _eng_ds=="eng12_units": return _eng12_unit_menu(cid,0)
+        if _eng_ds.startswith("eng12_up_"):
+            try: return _eng12_unit_menu(cid,int(_eng_ds.rsplit("_",1)[1]))
+            except Exception: return _eng12_unit_menu(cid,0)
+        if _eng_ds.startswith("eng12_unit_"):
+            try: return _eng12_lesson_menu(cid,int(_eng_ds.rsplit("_",1)[1]),0)
+            except Exception: return _eng12_unit_menu(cid,0)
+        if _eng_ds.startswith("eng12_lp_"):
+            try:
+                _,_,_eng_ui,_eng_pg=_eng_ds.split("_")
+                return _eng12_lesson_menu(cid,int(_eng_ui),int(_eng_pg))
+            except Exception: return _eng12_unit_menu(cid,0)
+        if _eng_ds.startswith("eng12_lesson_"):
+            try: return _eng12_commit_lesson(cid,int(_eng_ds.rsplit("_",1)[1]))
+            except Exception as _eng_e:
+                print("English Y1Y2 BOT_READY priority select error:",repr(_eng_e),flush=True)
+                return _eng12_unit_menu(cid,0)
+    except Exception as _eng_outer:
+        print("English Y1Y2 BOT_READY priority route error:",repr(_eng_outer),flush=True)
+    # ===== END ENGLISH Y1Y2 PRIORITY ROUTE V2 =====
+"""
+    s=s[:body_start+1]+priority+s[body_start+1:]
+
 s += "\n\n"+block
 p.write_text(s,encoding="utf-8")
 print("patched",p,p.stat().st_size)
