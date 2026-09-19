@@ -374,6 +374,17 @@ def callback(cid,d):
         ss["selected_unit"]=ss.get("unit_title") or ss.get("unit") or ss.get("topic","")
         ss["selected_skill"]=ss.get("lesson_skill","")
         ss["source_policy"]="SOW_FIRST_TEXTBOOK_OVERLAY"
+        # Explicit pedagogical guardrails for downstream RPH/worksheet/BBM engines.
+        ss["main_skill"]=ss.get("lesson_skill","")
+        ss["material_guardrails"]={
+            "follow_selected_lesson":True,
+            "follow_sow_skill":True,
+            "follow_main_and_complementary_standards":True,
+            "invent_textbook_page":False,
+            "invent_workbook_page":False,
+            "invent_audio_reference":False,
+            "textbook_optional":not bool(ss.get("has_textbook_link")),
+        }
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
