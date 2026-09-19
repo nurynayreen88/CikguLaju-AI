@@ -621,3 +621,130 @@ Engine behaviour:
 - Politeness/please is part of the content focus.
 - Original CikguLaju variation may alter puppet/craft/performance format but must preserve imperative + please response.
 - Do not reduce this lesson to a worksheet.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 41–50
+
+### Lesson 41 — At School — Listening
+Verified SOW:
+- Recycles colours and classroom objects.
+- Main skill: Listening for specific detail.
+- Complementary: Listening to supported questions.
+- SOW uses whisper-chain colour transmission, memory of object colours, question-response and group replay.
+
+Engine behaviour:
+- Require active listening-response evidence.
+- Use colour/object memory only when the Lesson Content Pack matches.
+- Alternate CikguLaju formats: listen-select, colour/object matrix, audio memory grid.
+- Avoid reusing the same whisper-chain route in consecutive RPHs.
+
+### Lesson 42 — At School — Speaking
+Verified SOW:
+- Recycles classroom imperatives + please/thank you.
+- Main skill: Speaking.
+- Complementary: Listening to supported instructions.
+- SOW explicitly connects to instruction patterns similar to textbook p.17.
+
+Engine behaviour:
+- Speaking pupils must give the instructions, not only follow them.
+- Preserve politeness markers.
+- Suitable variation: command-card carousel, pair instruction challenge, sequence-and-say.
+- PBD can observe intelligible instruction + appropriate social phrase.
+
+### Lesson 43 — At School — Reading
+Verified SOW:
+- Main skill: sound out beginning/medial/final sounds.
+- Complementary: spelling familiar words.
+- Uses colour-word matching, numbered colour key, pupil-created picture/key exchange.
+
+Engine behaviour:
+- Reading/decoding and spelling must both be visible.
+- CikguLaju follow-up should not merely reproduce number-key colouring.
+- Alternate formats: decoded-word hunt, sound-to-colour sort, spell-and-label, phoneme box.
+
+### Lesson 44 — At School — Writing
+Verified SOW:
+- Main skill: spelling familiar high-frequency words.
+- Complementary: reading instructions for detail.
+- Uses colour wheel, labelled writing, dice-driven instruction reading, pupil-written new instructions.
+
+Engine behaviour:
+- Require a written product.
+- Reading serves the writing task.
+- Alternate formats: instruction-card creation, classify-and-write colour words, error-correction + rewrite.
+- Do not repeat the exact dice game if the source task was already used.
+
+### Lesson 45 — At School — Language Arts
+Verified SOW:
+- Reviews primary and secondary colours.
+- Uses guessing, colour grouping, song response, colour wheel creation and prediction.
+- Links Language Arts with imaginative craft response.
+
+Engine behaviour:
+- Preserve creative/performance/product character.
+- Generated activity may vary song/craft format but must remain tied to colour concepts.
+- Do not turn into a generic colouring worksheet.
+
+### Lesson 46 — At School — Listening
+Verified SOW:
+- Main skill: listening to short basic classroom instructions.
+- Complementary: asking for attention/help.
+- Textbook: Superminds 1 p.20.
+- Focus includes imperatives such as look down, catch, turn around, stretch, cut out, fold, glue.
+
+Engine behaviour:
+- p.20 is source spine once exact content is verified.
+- Include opportunity for pupils to ask for help/clarification.
+- Alternate format: sequence instructions, action stations, listen-and-build/craft.
+
+### Lesson 47 — At School — Writing
+Verified SOW:
+- Main skill: writing/name or describe classroom objects.
+- Complementary: using a picture dictionary.
+- Textbook: Superminds 1 p.21.
+- SOW explicitly provides a fallback if Workbook is unavailable and lists classroom-object vocabulary.
+
+Engine behaviour:
+- Mark as WORKBOOK_EXPECTED_OR_FALLBACK.
+- If workbook mapping exists, use it explicitly; otherwise use SOW fallback.
+- Generated CikguLaju practice must use a different format from the source/fallback task.
+- Picture-dictionary use should be visible in the lesson plan.
+
+### Lesson 48 — Let's Play! — Speaking
+Verified SOW:
+- Theme: World of Stories.
+- Main skill: Speaking.
+- Complementary: Listening.
+- Vocabulary includes toys/vehicles/games.
+- Textbook: Superminds 1 p.22.
+
+Engine behaviour:
+- Speaking production with toy vocabulary must dominate.
+- Listening supports model/input.
+- Alternate formats: toy-shop role-play, mystery-toy guessing, preference carousel, picture prompt speaking.
+
+### Lesson 49 — Let's Play! — Reading
+Verified SOW:
+- Main skill: Reading for specific information/details.
+- Complementary: Speaking for basic personal information.
+- Language focus includes pronouns/possessives/favourite.
+- Textbook: Superminds 1 p.23.
+- SOW gives fallback when stickers are unavailable.
+
+Engine behaviour:
+- Reading detail remains primary.
+- Speaking extension should recycle the same personal/favourite information.
+- Do not copy the sticker-placement task; alternate CikguLaju formats may use information hunt, read-and-match, profile-card completion.
+
+### Lesson 50 — Let's Play! — Language Arts
+Verified SOW:
+- Main skill: personal response to literary text.
+- Complementary: listening to a very short simple narrative.
+- Story should relate to Unit 1/textbook content or other familiar learning.
+- Interactive/digital story is optional; acting out is a fallback.
+
+Engine behaviour:
+- Story listening + personal/illustrative response are mandatory.
+- Do not invent unfamiliar lexical load unrelated to the unit.
+- If digital story unavailable, use acting/sequence-picture/story-response alternatives.
+- Generated follow-up should preserve narrative understanding rather than become an unrelated vocabulary worksheet.
