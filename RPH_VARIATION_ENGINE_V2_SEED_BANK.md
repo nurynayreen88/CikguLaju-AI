@@ -3641,3 +3641,25 @@ These boundaries supersede any earlier approximate transition notes in this seed
 
 ### QA rule
 Any Year 2 seed entry created from approximate topic progression before this correction must defer to these verified lesson boundaries. Runtime/database mapping should use the corrected ranges above. Exact lesson-level skill, page, and task data still requires row-by-row extraction before READY status.
+
+
+## YEAR 2 QA CLEANUP — EXACT UNIT RANGE ENFORCEMENT
+
+Verified unit ranges:
+- Free Time: 1–30
+- The Old House: 31–55
+- Get dressed!: 56–87
+- The Robot: 88–125
+- At the beach: 126–160
+
+### Supersession rules
+- Any earlier seed-bank entry that labels Lessons 56–60 as The Old House is superseded: Lessons 56–60 belong to Get dressed!.
+- Any earlier entry that labels Lessons 88–90 as Get dressed! is superseded: Lessons 88–90 belong to The Robot.
+- Any earlier entry that labels Lessons 111–125 as At the beach is superseded: Lessons 111–125 belong to The Robot.
+- Any earlier entry that labels Lessons 141–160 as a separate generic Revision unit is superseded: these lessons remain inside the final At the beach/end-of-year sequence.
+
+### Corrected runtime mapping constraints
+1. Unit ID/topic assignment must use the verified ranges above before any lesson-level RPH material is selected.
+2. Do not infer a unit from the nearest seed-bank heading if the lesson number conflicts with the verified range.
+3. Seed text from superseded headings is reusable only as generic pedagogical variation if it remains content-safe; its old unit label must not be persisted.
+4. Exact skill/page/task still requires row-level source verification before READY.
