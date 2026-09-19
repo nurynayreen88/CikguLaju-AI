@@ -497,3 +497,127 @@ Reject generated RPH if:
 - listening lessons lack a listening-response task;
 - reading lessons lack a reading/decoding/comprehension behaviour;
 - writing lessons lack a visible written product.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 31–40
+
+### Lesson 31 — At School — Listening
+Verified SOW:
+- Recycles school objects.
+- Main skill: Listening for main idea.
+- Complementary: Listening for specific detail.
+- SOW uses a short story, missing-item inference, repeated listening, group response, pair-created story, and spot-the-difference post task.
+
+Engine behaviour:
+- Listening must include both gist and detail.
+- Use a missing-item / selective-listening route only when the mapped content supports it.
+- Pair-created retelling may be used as an application extension, not as a replacement for listening evidence.
+- PBD evidence can include identifying omitted/missing object and responding to repeated listening cues.
+
+### Lesson 32 — At School — Speaking
+Verified SOW:
+- Recycles classroom objects and social phrases.
+- Main skill: Speaking.
+- Complementary: Speaking strategy for asking help/attention.
+- SOW uses pair-created dialogue, speaking frame, modelling, rehearsal, exchange and performance.
+
+Engine behaviour:
+- Dialogue preparation must stay oral-first.
+- Writing should not replace speaking rehearsal.
+- Suitable variation: partner carousel, lost-and-found counter, object-return role-play.
+- Include support for asking for vocabulary/pronunciation help.
+
+### Lesson 33 — At School — Reading
+Verified SOW:
+- Main skill: Reading / blending.
+- Complementary: Reading / segmenting.
+- Recycles school objects and colour words.
+- SOW uses sound-by-sound reveal, word cards, realia matching, sound-card word building and worksheet.
+
+Engine behaviour:
+- Reading/phonics behaviours must be explicit: blending, segmenting, decoding.
+- If CikguLaju generates a follow-up worksheet, do not reproduce the same beginning/final-sound matching format.
+- Alternate formats: sound sorting, word building, picture-to-decoded-word selection, phoneme box task.
+
+### Lesson 34 — At School — Writing
+Verified SOW:
+- Main skill: Writing fixed social phrases.
+- Complementary: Writing capital letters in names.
+- Recycles object-return language.
+- SOW uses word ordering, model message, label/sticker message and optional oral reply.
+
+Engine behaviour:
+- Final product must be a real short written message/label.
+- Capitalisation must be visibly assessed.
+- CikguLaju alternate task may use message-card completion, reorder-and-write or mini lost-and-found note, but not duplicate the sticker-label task exactly.
+
+### Lesson 35 — At School — Language Arts
+Verified SOW:
+- Focus: listening/responding to song and classroom-item context.
+- SOW suggests revisiting song on Superminds 1 p.12 and using classroom items.
+
+Engine behaviour:
+- Use song/choreographed response route.
+- If exact p.12 content is not extracted, do not invent lyrics or page details.
+- Use only verified classroom-item language and an original response/performance extension.
+
+### Lesson 36 — At School — Listening
+Verified SOW:
+- Main skill: Listening.
+- Complementary: Speaking.
+- Language focus: This is (my desk) / There's a bag.
+- Textbook: Superminds 1 p.16.
+
+Engine behaviour:
+- p.16 becomes the source spine once exact page content is verified.
+- Listening for specific detail remains primary.
+- Speaking extension may ask pupils to describe their own immediate classroom context using the same structures.
+
+### Lesson 37 — At School — Speaking
+Verified SOW:
+- Main skill: Speaking.
+- Complementary: Writing.
+- Language focus includes classroom imperatives and simple fixed questions.
+- Textbook: Superminds 1 p.17.
+
+Engine behaviour:
+- Speaking interaction remains primary.
+- Writing can support with short connected words/proper names only where SP requires it.
+- Avoid turning this into an imperative-writing worksheet.
+
+### Lesson 38 — At School — Writing
+Verified SOW:
+- Main skill: Writing.
+- Complementary: Reading.
+- Recycles colours; primary/secondary colours.
+- Textbook: Superminds 1 p.18.
+
+Engine behaviour:
+- Written spelling/colour output must be visible.
+- Reading supports understanding of the source content.
+- Alternate task: classify-and-write, label colour combinations, short guided caption.
+
+### Lesson 39 — At School — Reading
+Verified SOW:
+- Main skill: Reading for specific information/detail.
+- Complementary: Speaking.
+- Recycles primary/secondary colours.
+- Textbook: Superminds 1 p.19.
+
+Engine behaviour:
+- Reading detail must be the evidence spine.
+- Speaking is used to name/describe after reading.
+- Suitable variation: information hunt, colour-detail matching, read-and-describe.
+
+### Lesson 40 — At School — Language Arts
+Verified SOW:
+- Reviews imperative verbs + please.
+- Main skill: imaginative response.
+- Complementary: Listening to supported instructions.
+- SOW uses mime, puppet-led chant, action-on-please, pupil-made puppets and group chant.
+
+Engine behaviour:
+- Must include listening-for-cue and imaginative/product response.
+- Politeness/please is part of the content focus.
+- Original CikguLaju variation may alter puppet/craft/performance format but must preserve imperative + please response.
+- Do not reduce this lesson to a worksheet.
