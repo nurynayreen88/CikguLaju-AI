@@ -19,6 +19,16 @@ if MARK in s:
 
 block=r'''
 # ===== ENGLISH Y1Y2 BOT READY V1 =====
+def _eng12_year_label(ss):
+    raw=str(ss.get("year") or ss.get("grade") or ss.get("level") or "").strip().lower()
+    if raw in ("tahun 1","1","year 1","year1","y1"): return "Tahun 1"
+    if raw in ("tahun 2","2","year 2","year2","y2"): return "Tahun 2"
+    return ""
+
+def _eng12_is_english_subject_callback(ds):
+    x=str(ds or "").strip().lower().replace("%20"," ")
+    return ("bahasa inggeris" in x or "english" in x) and (x.startswith("sub_") or x.startswith("subject_") or x.startswith("subjek_") or x in ("bahasa inggeris","english"))
+
 def _eng12_db_path():
     import os
     candidates=[
@@ -66,7 +76,7 @@ def _eng12_standards(year_label,lesson_no):
 
 def _eng12_unit_menu(cid,page=0):
     ss=state.setdefault(cid,{})
-    rows=_eng12_rows(ss.get("year",""))
+    rows=_eng12_rows(_eng12_year_label(ss))
     if not rows:
         return send(cid,"🚧 <b>Data English BOT_READY Tahun 1–2 belum tersedia.</b>",
                     [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
@@ -198,7 +208,7 @@ def _eng12_commit_lesson(cid,idx):
     try: r=rows[int(idx)]
     except Exception: return _eng12_unit_menu(cid,0)
     ln=str(r.get("lesson_no") or "").strip()
-    std=_eng12_standards(ss.get("year",""),ln)
+    std=_eng12_standards(_eng12_year_label(ss),ln)
     mapped=[]
     for x in std:
         cs=str(x.get("content_standard") or "").strip()
@@ -237,7 +247,7 @@ _callback_eng12_base=callback
 def callback(cid,d):
     ss=state.setdefault(cid,{})
     ds=str(d or "")
-    if ds.startswith("sub_") and ds[4:] in ("Bahasa Inggeris","English") and ss.get("year") in ("Tahun 1","Tahun 2") and _eng12_db_path():
+    if _eng12_is_english_subject_callback(ds) and _eng12_year_label(ss) and _eng12_db_path():
         ss["subject"]="Bahasa Inggeris"
         for k in ("topic","subtopic","selected_sk","selected_sp","_eng12_rows","_eng12_units","_eng12_lesson_rows"):
             ss.pop(k,None)
@@ -280,7 +290,7 @@ if PRIORITY_MARK not in s:
     try:
         _eng_ds=str(d or "")
         _eng_ss=state.setdefault(cid,{})
-        if _eng_ds.startswith("sub_") and _eng_ds[4:] in ("Bahasa Inggeris","English") and _eng_ss.get("year") in ("Tahun 1","Tahun 2") and globals().get("_eng12_db_path") and _eng12_db_path():
+        if globals().get("_eng12_is_english_subject_callback") and _eng12_is_english_subject_callback(_eng_ds) and globals().get("_eng12_year_label") and _eng12_year_label(_eng_ss) and globals().get("_eng12_db_path") and _eng12_db_path():
             _eng_ss["subject"]="Bahasa Inggeris"
             for _eng_k in ("topic","subtopic","selected_sk","selected_sp","_eng12_rows","_eng12_units","_eng12_lesson_rows"):
                 _eng_ss.pop(_eng_k,None)
