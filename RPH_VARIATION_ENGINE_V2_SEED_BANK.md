@@ -2833,3 +2833,155 @@ Engine behaviour:
 - Creative response must use verified person/clothing description language.
 - Suitable outputs: mime, dress-up acting, short original chant/rap, character description performance.
 - Do not reproduce copyrighted textbook text.
+
+
+## PRIMARY YEAR 2 ENGLISH — GET DRESSED! / THE ROBOT EXEMPLARS 81–100
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work.
+
+### Lesson 81 — Get dressed! — Listening
+Verified progression:
+- Continues Get dressed! review/extension.
+Engine behaviour:
+- Listen for clothing/material/person-description details.
+- Alternate formats: listen-and-identify person, outfit detail grid, material match.
+
+### Lesson 82 — Get dressed! — Speaking
+Verified progression:
+- Speaking review/extension using clothing/person descriptions.
+Engine behaviour:
+- Pair/group oral production should dominate.
+- Alternate formats: describe-and-guess, outfit interview, character description carousel.
+
+### Lesson 83 — Get dressed! — Reading
+Verified progression:
+- Reading simple person/clothing descriptions.
+Engine behaviour:
+- Read for specific detail and identify person/outfit.
+- Alternate formats: clue-to-person match, true/false/correct, read-and-select.
+
+### Lesson 84 — Get dressed! — Writing
+Verified progression:
+- Writing simple clothing/person descriptions.
+Engine behaviour:
+- Produce short linked sentences using verified vocabulary.
+- Alternate formats: character profile, outfit caption set, sentence repair.
+
+### Lesson 85 — Get dressed! — Language Arts
+Verified progression:
+- Creative consolidation of unit language.
+Engine behaviour:
+- Product/performance may include mime, role-play, mini chant/rap or character card.
+- Do not reproduce copyrighted source text.
+
+### Lesson 86 — Get dressed! — Listening
+Verified progression:
+- Further review of materials/clothing descriptors.
+Engine behaviour:
+- Listening detail retrieval must remain primary.
+- Alternate formats: listen-and-sort materials, item/detail checklist, object description match.
+
+### Lesson 87 — Get dressed! — Speaking
+Verified progression:
+- Speaking review/extension.
+Engine behaviour:
+- Encourage complete simple descriptive statements.
+- Alternate formats: mystery outfit, partner questioning, describe-and-find.
+
+### Lesson 88 — Get dressed! — Reading
+Verified progression:
+- Reading review/extension.
+Engine behaviour:
+- Use familiar unit vocabulary and sentence patterns.
+- Alternate formats: read-and-draw, matching descriptions to characters, information hunt.
+
+### Lesson 89 — Get dressed! — Writing
+Verified progression:
+- Writing review/extension.
+Engine behaviour:
+- Use known vocabulary to write a short coherent description.
+- Alternate formats: mini poster, outfit fact file, guided paragraph.
+- Keep Year 2 sentence load appropriate.
+
+### Lesson 90 — Get dressed! — Language Arts
+Verified progression:
+- End-of-unit consolidation.
+Engine behaviour:
+- Creative response must recycle verified clothing/material language.
+- Suitable outputs: performance, illustrated mini-book, simple role-play.
+
+## TRANSITION — THE ROBOT
+
+### Lesson 91 — The Robot — Listening
+Verified progression:
+- New unit transition into robot/body/action content.
+- Main skill: Listening.
+Engine behaviour:
+- Listening should identify robot/body/action details from verified source.
+- Alternate formats: listen-and-point body parts, action grid, robot instruction match.
+- Do not invent exact vocabulary until page/task extraction.
+
+### Lesson 92 — The Robot — Speaking
+Verified progression:
+- Speaking using robot/body/action language.
+Engine behaviour:
+- Oral commands/descriptions should dominate.
+- Alternate formats: robot commander, describe-the-robot, action guessing.
+
+### Lesson 93 — The Robot — Reading
+Verified progression:
+- Reading simple robot/body/action phrases or sentences.
+Engine behaviour:
+- Alternate formats: read-and-match parts, instruction-to-picture, clue cards.
+- Exact textbook wording remains pending extraction.
+
+### Lesson 94 — The Robot — Writing
+Verified progression:
+- Writing simple robot/body/action descriptions or instructions.
+Engine behaviour:
+- Alternate formats: robot labels + sentences, simple instruction list, picture-to-sentence.
+- Check spelling/punctuation.
+
+### Lesson 95 — The Robot — Language Arts
+Verified progression:
+- Creative response tied to robot theme.
+Engine behaviour:
+- Suitable alternates: robot chant, mime sequence, mini robot comic.
+- No invented copyrighted source text.
+
+### Lesson 96 — The Robot — Listening
+Verified progression:
+- Review/extension listening.
+Engine behaviour:
+- Listen for body/action/instruction details.
+- Alternate formats: listen-and-build robot, detail grid, action sequence.
+
+### Lesson 97 — The Robot — Speaking
+Verified progression:
+- Review/extension speaking.
+Engine behaviour:
+- Pair/group interaction around commands or robot description.
+- Alternate formats: robot role-play, command chain, describe-and-draw.
+
+### Lesson 98 — The Robot — Reading
+Verified progression:
+- Review/extension reading.
+Engine behaviour:
+- Read short instructions/descriptions for detail.
+- Alternate formats: instruction ordering, clue-to-robot match, true/false/correct.
+
+### Lesson 99 — The Robot — Writing
+Verified progression:
+- Review/extension writing.
+Engine behaviour:
+- Produce simple robot description/instruction text using verified language.
+- Alternate formats: robot fact card, guided instruction set, caption panel.
+
+### Lesson 100 — The Robot — Language Arts
+Verified progression:
+- Creative consolidation of robot unit language.
+Engine behaviour:
+- Product/performance may combine movement, speaking and simple writing.
+- Keep all language tied to verified unit content.
+- No invented copyrighted text.
