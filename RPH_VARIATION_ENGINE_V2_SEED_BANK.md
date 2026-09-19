@@ -1408,3 +1408,142 @@ Engine behaviour:
 - Follow-up may be visual or short written response, but worksheet should not dominate.
 - Preserve personal response to song/tune/animals.
 - If a copyrighted song source is used, do not reproduce lyrics in generated material; use reference metadata and original response tasks only.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 101–110
+
+### Lesson 101 — Pet Show — Listening
+Verified SOW:
+- Recycles animals, prepositions, colours, adjectives; introduces/uses "It goes".
+- Main skill: Listening to a very short narrative.
+- Complementary: Speaking / naming-describing.
+- SOW uses a park/garden picture, animal naming, a short route story across 5 locations, sequencing 1–5, repeated listening and pupil-created mini stories.
+
+Engine behaviour:
+- Narrative listening + route sequencing must be observable.
+- Repetition is allowed for support.
+- Speaking extension may transfer story creation to pupils.
+- Alternate formats: listen-and-number route, animal journey map, sequence cards.
+- Do not make pupils invent new story content before they have completed listening evidence.
+
+### Lesson 102 — Pet Show — Speaking
+Verified SOW:
+- Recycles animal vocabulary, I like/don't like, What about you?
+- Main skill: Speaking to find out basic personal information.
+- Complementary: Listening to supported questions.
+- SOW uses small-group preference grid, happy/sad faces, peer questioning and a bar chart summary.
+
+Engine behaviour:
+- Oral interview remains primary.
+- Grid/chart is evidence/support, not the speaking objective itself.
+- Suitable variation: mini preference poll, speaking tally cards, group survey + oral report.
+- Preserve cooperative data collection.
+
+### Lesson 103 — Pet Show — Reading
+Verified SOW:
+- Recycles animals, likes, numbers; adds lives in / doesn't like.
+- Main skill: Reading for specific information/details.
+- Complementary: Listening for details.
+- SOW uses short profile texts, a whole-class model grid, then group jigsaw-style reading to solve a second information grid.
+
+Engine behaviour:
+- Reading detail retrieval must be explicit.
+- Strong route: model one profile -> complete shared grid -> independent/group profile reading -> solve grid.
+- Alternate formats: profile matching, information hunt, clue cards.
+- Do not substitute a vocabulary worksheet for the text-reading task.
+
+### Lesson 104 — Pet Show — Writing
+Verified SOW:
+- Recycles animal vocabulary + I like/don't like.
+- Main skill: Writing likes/dislikes.
+- Complementary: Writing basic personal information.
+- SOW reuses bar-chart data from Lesson 102 and turns it into written statements, with digital or paper option.
+
+Engine behaviour:
+- Add continuity key: linked_previous_lesson = 102.
+- Writing must interpret previously collected data.
+- Digital output is optional; paper equivalent must remain available.
+- Alternate formats: chart-to-sentence, class preference report, mini infographic captioning.
+
+### Lesson 105 — Pet Show — Language Arts
+Verified SOW:
+- Reviews animals, colours, likes/dislikes, initial sounds and rhyming.
+- Introduces/uses but / and.
+- Main skill: imaginative response.
+- Complementary: target-language sound recognition/reproduction.
+- SOW uses short rhyming animal sentences and pair-created rhymes/chant-like lines.
+
+Engine behaviour:
+- Rhyming/sound play + creative language production are required.
+- Use but/and only where suitable for pupil level.
+- Alternate formats: rhyme cards, call-and-response animal lines, mini chant creation.
+- Do not force extended writing; a short original line is enough.
+
+### Lesson 106 — Pet Show — Writing
+Verified SOW:
+- Recycles animals, plurals, numbers and toys.
+- Main skill: spelling familiar words.
+- Complementary: Listening to supported classroom instructions.
+- Textbook: Superminds 1 p.41.
+- SOW provides explicit no-Workbook fallback using counted animal pictures and number-word writing.
+
+Engine behaviour:
+- Mark as WORKBOOK_EXPECTED_OR_FALLBACK.
+- If workbook mapping exists, use it; otherwise use verified SOW fallback.
+- Spelling/plural-word accuracy is primary evidence.
+- Alternate CikguLaju follow-up must differ from simple count-and-write format.
+
+### Lesson 107 — Pet Show — Speaking
+Verified SOW:
+- Focus: camouflage, snake, crocodile, butterfly, tiger, giraffe, grass, leaf, ground.
+- Main skill: Speaking / naming-describing.
+- Complementary: Listening to supported questions.
+- Textbook: Superminds 1 p.42.
+- Cross-curricular element: environmental sustainability.
+
+Engine behaviour:
+- p.42 is source spine once exact page content is verified.
+- Speaking about animals/camouflage must dominate.
+- Listening supports teacher/peer questioning.
+- Suitable variation: describe-where-it-hides, camouflage picture talk, environment guessing.
+- Preserve environmental context when it appears in verified source.
+
+### Lesson 108 — Pet Show — Reading
+Verified SOW:
+- Focus includes leaves, tall grass.
+- Main skill: Reading using visuals/high-frequency patterns.
+- Complementary: Reading / blending.
+- Textbook: Superminds 1 p.43.
+- SOW notes blending words are content words from the Thinking Skills task "Where do the animals hide?"
+
+Engine behaviour:
+- Use ONLY verified content words from mapped p.43/Thinking Skills task for decoding.
+- Visual support + blending must both be visible.
+- Alternate formats: picture-to-sentence match, hide-location reading hunt, content-word blending cards.
+- Do not inject unrelated phonics vocabulary.
+
+### Lesson 109 — Pet Show — Listening
+Verified SOW:
+- Focus includes imperatives and body/mask vocabulary.
+- Main skill: Listening to very short narrative.
+- Complementary: Listening for specific details.
+- Textbook: Superminds 1 p.44.
+
+Engine behaviour:
+- p.44 is source spine once exact content is verified.
+- Listening should require understanding of sequence/details, not just vocabulary recall.
+- Alternate formats: listen-and-sequence, instruction-picture match, story detail selection.
+- Avoid inventing exact craft/narrative steps until page content is extracted.
+
+### Lesson 110 — Pet Show — Language Arts
+Verified SOW:
+- Focus: camouflage / X hides in...
+- Main skill: imaginative art-craft response.
+- Complementary: Listening for specific information/details.
+- SOW uses a hide-location quiz, realia/natural materials, teacher sentences, placing animal pictures, collage creation, written sentence and environmental discussion.
+
+Engine behaviour:
+- Environmental/natural-world context is integral.
+- Required route: recall/predict -> listen/place -> create collage/product -> write short sentence -> share/discuss.
+- Use locally available safe natural materials where practical.
+- Do not reduce this to a colouring worksheet.
