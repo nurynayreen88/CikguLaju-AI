@@ -101,16 +101,25 @@ def _eng12_unit_menu(cid,page=0):
                     [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
     # Group by normalized display title so e.g. "At School" / "At school" is one unit.
     units=[]; seen=set()
+    # Revision/Introduction are SOW blocks, not textbook unit numbers.
+    # Number textbook units explicitly: Year 1 Friends=0, At School=1...;
+    # Year 2 Free Time=5 through At the beach=9.
+    y=_eng12_year_label(ss)
+    unit_no_map={
+        "Tahun 1":{"friends":0,"at school":1,"let’s play!":2,"let's play!":2,"pet show":3,"lunchtime":4},
+        "Tahun 2":{"free time":5,"the old house":6,"get dressed!":7,"get dressed":7,"the robot":8,"at the beach":9}
+    }.get(y,{})
     for r in rows:
         raw=str(r.get("topic") or r.get("unit_title") or "").strip()
         norm=" ".join(raw.lower().split())
         if norm and norm not in seen:
-            seen.add(norm); units.append({"title":raw,"norm":norm})
+            seen.add(norm); units.append({"title":raw,"norm":norm,"unit_no":unit_no_map.get(norm)})
     ss["_eng12_rows"]=rows; ss["_eng12_units"]=units
     per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(units)); kb=[]
     for i in range(a,b):
-        title=units[i]["title"]
-        kb.append([{"text":(f"📘 Unit {i} — {title}")[:60],"callback_data":f"eng12_lsnunit_{i}"}])
+        title=units[i]["title"]; uno=units[i].get("unit_no")
+        label=(f"📘 Unit {uno} — {title}" if uno is not None else f"📚 {title}")
+        kb.append([{"text":label[:60],"callback_data":f"eng12_lsnunit_{i}"}])
     nav=[]
     if a: nav.append({"text":"⬅️ Sebelum","callback_data":f"eng12_up_{page-1}"})
     if b<len(units): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_up_{page+1}"})
@@ -142,8 +151,9 @@ def _eng12_lesson_menu(cid,ui,page=0):
     if b<len(rows): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_lp_{ui}_{page+1}"})
     if nav: kb.append(nav)
     kb.append([{"text":"⬅️ Unit/Tajuk","callback_data":"eng12_units"},{"text":"🏠 Menu Utama","callback_data":"home"}])
-    title=unit.get("title","")
-    return send(cid,f"📖 <b>Unit {ui} — {title}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.",kb)
+    title=unit.get("title",""); uno=unit.get("unit_no")
+    heading=(f"Unit {uno} — {title}" if uno is not None else title)
+    return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.",kb)
 
 
 def _eng12_audio_zip_path():
