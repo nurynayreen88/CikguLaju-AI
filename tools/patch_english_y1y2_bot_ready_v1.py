@@ -15,8 +15,7 @@ p=Path(sys.argv[1] if len(sys.argv)>1 else "app.py")
 s=p.read_text(encoding="utf-8")
 MARK="# ===== ENGLISH Y1Y2 BOT READY V1 ====="
 if MARK in s:
-    print("English Y1Y2 BOT_READY patch already applied")
-    raise SystemExit(0)
+    print("English Y1Y2 BOT_READY block already present; continuing priority-route check")
 
 block=r'''
 # ===== ENGLISH Y1Y2 BOT READY V1 =====
