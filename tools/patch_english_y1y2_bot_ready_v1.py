@@ -251,8 +251,11 @@ def _eng12_commit_lesson(cid,idx):
         return send(cid,"🚧 <b>SK/SP verified untuk Lesson ini belum lengkap.</b>",
                     [[{"text":"⬅️ Pilih Lesson Lain","callback_data":f"eng12_lsnunit_{ss.get('_eng12_unit_index',0)}"},
                       {"text":"🏠 Menu Utama","callback_data":"home"}]])
+    _skill=str(r.get("_sow_skill") or "").strip()
     ss.update({
         "lesson_no":ln,"lesson":ln,
+        "lesson_title":(_skill or ("Lesson "+ln)),
+        "lesson_skill":_skill,
         "topic":str(r.get("unit_title") or r.get("topic") or "").strip(),
         "subtopic":str(r.get("topic") or "").strip(),
         "textbook_page_start":r.get("textbook_page_start"),
@@ -266,7 +269,12 @@ def _eng12_commit_lesson(cid,idx):
         "assessment_mode":"formative",
     })
     _commit_multi_sp(ss,mapped[:8])
-    send(cid,f"✅ <b>Lesson {ln}</b> dipilih.\nSK/SP dipadankan automatik daripada DB BOT_READY verified.",None)
+    _unit=str(r.get("topic") or r.get("unit_title") or "").strip()
+    _summary=f"✅ <b>Lesson {ln}</b>"
+    if _skill: _summary+=f" — {_skill}"
+    if _unit: _summary+=f"\n📘 {_unit}"
+    _summary+="\nSK/SP dipadankan automatik daripada SOW verified."
+    send(cid,_summary,None)
     if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
         try:
             _eng12_send_verified_audio(cid,ss.get("audio_reference"))
@@ -280,8 +288,8 @@ def _eng12_commit_lesson(cid,idx):
             print("English Y1Y2 continuation error:",repr(e),flush=True)
             return send(cid,"⚠️ <b>Lesson telah dipilih tetapi aliran bahan gagal diteruskan.</b>\nSila pilih jenis bahan dari Menu Utama sementara ralat direkodkan.",[[{"text":"🏠 Menu Utama","callback_data":"home"}]])
     return send(cid,"📚 <b>Lesson telah dipilih.</b>\nPilih bahan yang hendak dijana.",[
-        [{"text":"📝 RPH","callback_data":"task_rph"},{"text":"📄 Worksheet","callback_data":"task_worksheet"}],
-        [{"text":"🎨 BBM","callback_data":"task_bbm"},{"text":"🏠 Menu Utama","callback_data":"home"}]
+        [{"text":"📝 RPH","callback_data":"eng12_material_rph"},{"text":"📄 Worksheet","callback_data":"eng12_material_worksheet"}],
+        [{"text":"🎨 BBM","callback_data":"eng12_material_bbm"},{"text":"🏠 Menu Utama","callback_data":"home"}]
     ])
 
 _callback_eng12_base=callback
@@ -317,6 +325,10 @@ def callback(cid,d):
         except Exception as e:
             print("English Y1Y2 BOT_READY select error:",repr(e),flush=True)
             return _eng12_unit_menu(cid,0)
+    if ds.startswith("eng12_material_"):
+        kind=ds.rsplit("_",1)[1]
+        alias={"rph":"task_rph","worksheet":"task_worksheet","bbm":"task_bbm"}.get(kind)
+        if alias: return _callback_eng12_base(cid,alias)
     return _callback_eng12_base(cid,d)
 
 APP_VERSION=str(globals().get("APP_VERSION",""))+"+ENG12-BOTREADY"
