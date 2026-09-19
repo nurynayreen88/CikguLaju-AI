@@ -3283,3 +3283,299 @@ Verified progression:
 Engine behaviour:
 - Product/performance may combine beach vocabulary with speaking/writing.
 - Keep output age-appropriate and source-grounded.
+
+
+## PRIMARY YEAR 2 ENGLISH — AT THE BEACH EXEMPLARS 121–140
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work.
+
+### Lesson 121 — At the beach — Listening
+Verified progression:
+- Continues beach/holiday scene language.
+Engine behaviour:
+- Listen for scene/item/action details.
+- Alternate formats: listen-and-mark beach picture, detail checklist, action grid.
+
+### Lesson 122 — At the beach — Speaking
+Verified progression:
+- Speaking review/extension.
+Engine behaviour:
+- Pair/group talk around beach scene and activities.
+- Alternate formats: describe-and-find, beach interview, picture information gap.
+
+### Lesson 123 — At the beach — Reading
+Verified progression:
+- Reading short beach-related descriptions.
+Engine behaviour:
+- Read for specific detail.
+- Alternate formats: clue-to-picture match, true/false/correct, information hunt.
+
+### Lesson 124 — At the beach — Writing
+Verified progression:
+- Writing simple beach scene sentences.
+Engine behaviour:
+- Alternate formats: beach postcard panel, caption set, guided mini paragraph.
+- Check spelling and punctuation.
+
+### Lesson 125 — At the beach — Language Arts
+Verified progression:
+- Creative consolidation linked to beach theme.
+Engine behaviour:
+- Suitable alternates: beach rhyme, mini-book, role-play, illustrated story response.
+- No invented copyrighted text.
+
+### Lesson 126 — At the beach — Listening
+Verified progression:
+- Further listening review/extension.
+Engine behaviour:
+- Use formative gaps from preceding lessons.
+- Alternate formats: listen-and-correct scene, detail grid, sequence identification.
+
+### Lesson 127 — At the beach — Speaking
+Verified progression:
+- Speaking review/extension.
+Engine behaviour:
+- Encourage complete simple responses.
+- Alternate formats: picture talk, beach activity survey, information gap.
+
+### Lesson 128 — At the beach — Reading
+Verified progression:
+- Reading review/extension.
+Engine behaviour:
+- Focus on specific information from familiar scene language.
+- Alternate formats: read-and-select, clue cards, sequencing.
+
+### Lesson 129 — At the beach — Writing
+Verified progression:
+- Writing review/extension.
+Engine behaviour:
+- Produce short coherent scene description.
+- Alternate formats: mini postcard, scene profile, error correction.
+- Keep Year 2 sentence load appropriate.
+
+### Lesson 130 — At the beach — Language Arts
+Verified progression:
+- Creative consolidation.
+Engine behaviour:
+- Product/performance may combine speaking, simple writing and visuals.
+- Keep all content tied to verified beach language.
+
+### Lesson 131 — At the beach — Listening
+Verified progression:
+- Final review cycle begins.
+Engine behaviour:
+- Listening for detail across familiar beach vocabulary/actions.
+- Alternate formats: scene bingo, listen-and-order, detail checklist.
+
+### Lesson 132 — At the beach — Speaking
+Verified progression:
+- Speaking review.
+Engine behaviour:
+- Oral description/questioning about familiar beach scenes.
+- Alternate formats: describe-and-draw, pair questioning, picture carousel.
+
+### Lesson 133 — At the beach — Reading
+Verified progression:
+- Reading review.
+Engine behaviour:
+- Read familiar sentences/short text for details.
+- Alternate formats: information hunt, true/false/correct, picture matching.
+
+### Lesson 134 — At the beach — Writing
+Verified progression:
+- Writing review.
+Engine behaviour:
+- Guided-to-independent beach scene sentences.
+- Alternate formats: caption series, simple postcard, short description.
+
+### Lesson 135 — At the beach — Language Arts
+Verified progression:
+- Creative response using familiar unit language.
+Engine behaviour:
+- Suitable outputs: mini performance, illustrated text, short chant/rap.
+- No copyrighted source text reproduction.
+
+### Lesson 136 — At the beach — Listening
+Verified progression:
+- Consolidation listening.
+Engine behaviour:
+- Focus on any remaining weak vocabulary/detail recognition.
+- Alternate formats: diagnostic listening grid, correction task, scene matching.
+
+### Lesson 137 — At the beach — Speaking
+Verified progression:
+- Consolidation speaking.
+Engine behaviour:
+- Recycle established question/answer and description patterns.
+- Alternate formats: mini interview, picture prompt talk, pair challenge.
+
+### Lesson 138 — At the beach — Reading
+Verified progression:
+- Consolidation reading.
+Engine behaviour:
+- Use familiar unit content for specific-detail reading.
+- Alternate formats: clue hunt, sentence ordering, read-and-correct.
+
+### Lesson 139 — At the beach — Writing
+Verified progression:
+- Consolidation writing.
+Engine behaviour:
+- Short final unit writing based on verified vocabulary.
+- Alternate formats: beach memory card, short scene description, caption set.
+
+### Lesson 140 — At the beach — Language Arts
+Verified progression:
+- Final creative consolidation before Year 2 revision block.
+Engine behaviour:
+- Use only verified At the beach language.
+- Product/performance may combine visual, oral and short written elements.
+
+## PRIMARY YEAR 2 ENGLISH — YEAR-END REVISION EXEMPLARS 141–160
+
+### Lesson 141 — Revision — Listening
+Verified progression:
+- Year-end revision begins across Year 2 themes.
+Engine behaviour:
+- Recycle known vocabulary/structures from Free Time, The Old House, Get dressed!, The Robot, At the beach.
+- Alternate formats: mixed-topic listening quiz, picture selection, listen-and-do.
+
+### Lesson 142 — Revision — Speaking
+Verified progression:
+- Mixed-topic speaking review.
+Engine behaviour:
+- Pair/group oral retrieval from Year 2 themes.
+- Alternate formats: revision carousel, question cards, describe-and-guess.
+
+### Lesson 143 — Revision — Reading
+Verified progression:
+- Mixed-topic reading review.
+Engine behaviour:
+- Read familiar Year 2 words/sentences for detail.
+- Alternate formats: mixed-topic clue match, board-game reading prompts, information hunt.
+
+### Lesson 144 — Revision — Writing
+Verified progression:
+- Mixed-topic writing review.
+Engine behaviour:
+- Guided sentence production using familiar vocabulary.
+- Alternate formats: picture-to-sentence, short profile, correction task.
+
+### Lesson 145 — Revision — Language Arts
+Verified progression:
+- Creative mixed-theme revision.
+Engine behaviour:
+- Suitable outputs: mini-book, chant/rap, role-play, theme poster.
+- Keep all language previously verified.
+
+### Lesson 146 — Revision — Listening
+Verified progression:
+- Further mixed-topic listening consolidation.
+Engine behaviour:
+- Target gaps from formative evidence.
+- Alternate formats: listening stations, mixed-topic grid, detail correction.
+
+### Lesson 147 — Revision — Speaking
+Verified progression:
+- Further speaking consolidation.
+Engine behaviour:
+- Oral retrieval and interaction across multiple themes.
+- Alternate formats: find-someone-who, revision interview, topic roulette.
+
+### Lesson 148 — Revision — Reading
+Verified progression:
+- Further reading consolidation.
+Engine behaviour:
+- Use familiar text/language only.
+- Alternate formats: read-and-sort by topic, clue cards, short comprehension.
+
+### Lesson 149 — Revision — Writing
+Verified progression:
+- Further writing consolidation.
+Engine behaviour:
+- Simple connected writing using familiar Year 2 language.
+- Alternate formats: mini report, picture sequence captions, profile card.
+
+### Lesson 150 — Revision — Language Arts
+Verified progression:
+- Creative revision response.
+Engine behaviour:
+- Product/performance integrates previously learned language.
+- No new unsupported grammar/vocabulary.
+
+### Lesson 151 — Revision — Listening
+Verified progression:
+- Final revision cycle.
+Engine behaviour:
+- Mixed-topic listening challenge from Year 2 content.
+- Alternate formats: noughts-and-crosses listening quiz, listen-and-identify topic, response cards.
+
+### Lesson 152 — Revision — Speaking
+Verified progression:
+- Final speaking review.
+Engine behaviour:
+- Pupils ask/answer using familiar patterns.
+- Alternate formats: class quiz, pair prompt cards, mini presentation.
+
+### Lesson 153 — Revision — Reading
+Verified progression:
+- Final reading review.
+Engine behaviour:
+- Read familiar Year 2 prompts/instructions and respond.
+- Alternate formats: revision board game, read-and-do, clue hunt.
+
+### Lesson 154 — Revision — Writing
+Verified progression:
+- Final writing review.
+Engine behaviour:
+- Guided-to-independent simple sentence production.
+- Alternate formats: true/false sentence set, picture captioning, short topic card.
+
+### Lesson 155 — Revision — Language Arts
+Verified progression:
+- Creative preparation for final performance/product.
+Engine behaviour:
+- Pupils select familiar topic language and plan a simple response/performance.
+
+### Lesson 156 — Revision — Listening
+Verified progression:
+- Final listening consolidation.
+Engine behaviour:
+- Familiar language only, diagnostic and confidence-building.
+- Alternate formats: mixed-topic listening grid, listen-and-match, peer checking.
+
+### Lesson 157 — Revision — Speaking
+Verified progression:
+- Final speaking consolidation.
+Engine behaviour:
+- Short personal/group responses across familiar themes.
+- Alternate formats: mini interview, class survey, topic presentation.
+
+### Lesson 158 — Revision — Writing
+Verified progression:
+- Final writing consolidation.
+Engine behaviour:
+- Produce a simple Year 2 review artifact from familiar vocabulary.
+- Alternate formats: alphabet/topic poster, vocabulary mini-book, topic sentence set.
+
+### Lesson 159 — Revision — Reading
+Verified progression:
+- Reuse learner-produced revision materials where appropriate.
+Engine behaviour:
+- Read/match/classify familiar Year 2 vocabulary/sentences.
+- Alternate formats: peer poster matching, word-slip sorting, topic classification.
+
+### Lesson 160 — Revision — Language Arts
+Verified progression:
+- Final Year 2 creative/performance lesson.
+Engine behaviour:
+- Rehearse and present a simple response using familiar Year 2 language.
+- Suitable outputs: dialogue, chant/rap, mini role-play, illustrated presentation.
+- No new unsupported content.
+
+## YEAR 2 QA STATUS AFTER LESSON 160
+- Seed-bank coverage now spans Lessons 1–160.
+- Topic progression preserved: Introduction/Free Time -> The Old House -> Get dressed! -> The Robot -> At the beach -> Revision.
+- Exact textbook page/task details are only treated as exact where directly cross-checked.
+- Generic progression entries remain CONTENT_DETAIL_PENDING until source pages/SOW rows are extracted precisely.
+- Do not promote pending entries to exact textbook-grounded READY status without page/source verification.
