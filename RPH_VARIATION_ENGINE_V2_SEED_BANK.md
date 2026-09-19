@@ -3663,3 +3663,32 @@ Verified unit ranges:
 2. Do not infer a unit from the nearest seed-bank heading if the lesson number conflicts with the verified range.
 3. Seed text from superseded headings is reusable only as generic pedagogical variation if it remains content-safe; its old unit label must not be persisted.
 4. Exact skill/page/task still requires row-level source verification before READY.
+
+
+## WORKBOOK SOURCE LOCK — SUPER MINDS YEAR 1 & 2
+
+Verified public source identified:
+- Title: SUPER MINDS WORKBOOK
+- Subtitle: Year 1 and 2 Workbook
+- AnyFlip source supplied by user: https://anyflip.com/hbtvy/gvcg/basic
+- Source publication metadata visible on AnyFlip: published 2020-03-21 by Ms Aamirah Aiza.
+
+### Mapping rule
+For any lesson with a verified textbook-linked task:
+1. identify the corresponding workbook exercise/page from this source,
+2. store workbook page + exercise type + lesson/skill/focus linkage,
+3. include workbook instruction in the RPH when pedagogically appropriate,
+4. generate a CikguLaju exercise with the same target but a different format,
+5. do not copy workbook wording/layout wholesale,
+6. if exact workbook page/exercise cannot be verified, status remains WORKBOOK_SOURCE_IDENTIFIED_MAPPING_PENDING.
+
+### Current Year 1 status
+- Workbook source: IDENTIFIED
+- Binary file in Drive: NOT YET COPIED
+- Page-by-page lesson mapping: PENDING
+- Exact workbook exercise text: do not fabricate
+- Runtime may use workbook only after page/exercise mapping is verified.
+
+### Current Year 2 status
+- Same workbook source identified for Year 2.
+- Exact lesson-to-workbook mapping remains pending row-by-row verification.
