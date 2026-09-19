@@ -113,6 +113,71 @@ def _eng12_lesson_menu(cid,ui,page=0):
     title=topic or unit
     return send(cid,f"📖 <b>{title}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
 
+
+def _eng12_audio_zip_path():
+    import os
+    candidates=[
+        os.environ.get("CIKGULAJU_SUPERMINDS_AUDIO_ZIP","").strip(),
+        os.path.join(os.path.dirname(__file__),"super_minds_1_audio_cds.zip"),
+    ]
+    for x in candidates:
+        if x and os.path.exists(x):
+            return x
+    return ""
+
+def _eng12_audio_member_for_ref(ref):
+    import zipfile,re
+    zpath=_eng12_audio_zip_path()
+    if not zpath: return None
+    m=re.fullmatch(r"CD([123])-(\d{1,2})",str(ref or "").strip(),re.I)
+    if not m: return None
+    cd=int(m.group(1)); track=int(m.group(2))
+    cd_token={1:"CD 1",2:"CD 2",3:"CD 3"}[cd]
+    with zipfile.ZipFile(zpath) as z:
+        names=[n for n in z.namelist() if not n.endswith("/")]
+        for n in names:
+            base=n.rsplit("/",1)[-1]
+            if cd_token.lower() in n.lower() and re.match(rf"0*{track}\b",base):
+                return n
+    return None
+
+def _eng12_send_verified_audio(cid,audio_reference):
+    import os,zipfile,tempfile,requests
+    refs=[x.strip() for x in str(audio_reference or "").replace(",", ";").split(";") if x.strip()]
+    if not refs: return
+    zpath=_eng12_audio_zip_path()
+    if not zpath: 
+        print("English Y1Y2 audio zip missing",flush=True)
+        return
+    token=(globals().get("BOT_TOKEN") or globals().get("TOKEN") or os.environ.get("BOT_TOKEN") or "").strip()
+    if not token:
+        print("English Y1Y2 Telegram token missing",flush=True)
+        return
+    with zipfile.ZipFile(zpath) as z:
+        for ref in refs:
+            member=_eng12_audio_member_for_ref(ref)
+            if not member:
+                print("English Y1Y2 audio member not found:",ref,flush=True)
+                continue
+            suffix=os.path.splitext(member)[1] or ".wma"
+            with tempfile.NamedTemporaryFile(delete=False,suffix=suffix) as tmp:
+                tmp.write(z.read(member))
+                tpath=tmp.name
+            try:
+                with open(tpath,"rb") as fh:
+                    files={"audio":(f"{ref}{suffix}",fh,"audio/x-ms-wma")}
+                    data={"chat_id":str(cid),"caption":f"🎧 {ref}"}
+                    rr=requests.post(f"https://api.telegram.org/bot{token}/sendAudio",data=data,files=files,timeout=60)
+                    if not rr.ok:
+                        fh.seek(0)
+                        files={"document":(f"{ref}{suffix}",fh,"audio/x-ms-wma")}
+                        rr=requests.post(f"https://api.telegram.org/bot{token}/sendDocument",data=data,files=files,timeout=60)
+                    if not rr.ok:
+                        print("English Y1Y2 audio send failed:",ref,rr.status_code,rr.text[:300],flush=True)
+            finally:
+                try: os.unlink(tpath)
+                except Exception: pass
+
 def _eng12_commit_lesson(cid,idx):
     ss=state.setdefault(cid,{})
     rows=ss.get("_eng12_lesson_rows") or []
@@ -146,6 +211,11 @@ def _eng12_commit_lesson(cid,idx):
     })
     _commit_multi_sp(ss,mapped[:8])
     send(cid,f"✅ <b>Lesson {ln}</b> dipilih.\nSK/SP dipadankan automatik daripada DB BOT_READY verified.",None)
+    if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
+        try:
+            _eng12_send_verified_audio(cid,ss.get("audio_reference"))
+        except Exception as e:
+            print("English Y1Y2 verified audio send error:",repr(e),flush=True)
     nxt=globals().get("after_curriculum_selected") or globals().get("_temporary_auto_pack_v2386")
     return nxt(cid) if callable(nxt) else None
 
