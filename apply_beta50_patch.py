@@ -142,3 +142,13 @@ if "elif d == 'b50units':" not in s:
 
 P.write_text(s,encoding="utf-8")
 print("BETA50 patch applied", P.stat().st_size)
+
+
+# ENGLISH_Y1Y2_BOT_READY_V1_APPLY
+# Apply the English Year 1-2 BOT_READY runtime patch after the existing Beta50 patch.
+import subprocess, sys
+_eng_patch=Path(__file__).with_name("tools").joinpath("patch_english_y1y2_bot_ready_v1.py")
+if _eng_patch.exists():
+    subprocess.check_call([sys.executable, str(_eng_patch), str(P)])
+else:
+    print("English Y1Y2 BOT_READY patch helper missing:", _eng_patch)
