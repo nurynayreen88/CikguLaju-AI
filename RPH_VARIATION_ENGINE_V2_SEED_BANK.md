@@ -2018,3 +2018,55 @@ Engine:
 - Props are optional; audience may be class/parents/staff/other classes subject to permission.
 - Do not silently replace dialogues with newly generated unrelated scripts.
 - This lesson closes the Year 1 sequence; mark YEAR1_SEQUENCE_COMPLETE once source QA passes.
+
+
+## PRIMARY YEAR 2 ENGLISH — VERIFIED STARTER / FREE TIME EXEMPLARS 1–3
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary source cross-check: Primary Year 2 SK Scheme of Work (Lessons 1–160).
+
+### Lesson 1 — Introduction — Writing
+Verified SOW:
+- Theme: World of Self, Family & Friends.
+- Topic: Introduction.
+- Language focus: review of present simple to describe self.
+- Main skill: Writing 4.2 / LS 4.2.1 ask for and give basic personal information using basic questions/statements.
+- Complementary: Speaking 2.3 / LS 2.3.1 introduce self and others to an audience using fixed phrases.
+- SOW proposes Year 1 review: pupils ask/answer about name, age and favourites; write about a partner ("My new friend"); draw a supporting picture; introduce partner to class.
+
+Engine behaviour:
+- Use this as a diagnostic/revision lesson, not new grammar teaching.
+- Written partner profile is primary evidence.
+- Speaking presentation follows the written profile.
+- Alternate CikguLaju formats: friend profile card, interview-to-mini-poster, partner fact file.
+- Do not invent unsupported profile fields beyond verified personal information.
+
+### Lesson 2 — Free Time — Listening
+Verified SOW:
+- Theme: World of Self, Family and Friends.
+- Topic: Free Time.
+- Language focus: days of the week; It's (day); On + day.
+- Main skill: Listening 1.2 / LS 1.2.1 understand with support the main idea of simple sentences.
+- Complementary: Speaking 2.1 / LS 2.1.1 give simple personal information using basic statements.
+- Textbook reference: Superminds 1 p.58.
+
+Engine behaviour:
+- p.58 is source spine once exact page content is verified.
+- Listening for overall meaning/day reference must precede speaking.
+- Speaking extension should personalise routine/day information.
+- Alternate formats: listen-and-point weekday strip, day-choice cards, routine-day response grid.
+- Do not invent exact textbook dialogue/activity before page extraction.
+
+### Lesson 3 — Free Time — Speaking
+Verified SOW:
+- Theme: World of Self, Family and Friends.
+- Topic: Free Time.
+- Language focus: days of the week; present simple for regular activities (I + verb + on + day).
+- Main skill: Speaking.
+- Verified SOW sequence continues directly from Lesson 2 / Free Time.
+
+Engine behaviour:
+- Oral production of regular activities + day is the evidence spine.
+- Reuse verified weekday language from Lesson 2.
+- Suitable alternates: weekly routine carousel, day/activity cards, pair schedule talk.
+- Keep content within verified Free Time vocabulary once textbook page/content is mapped.
