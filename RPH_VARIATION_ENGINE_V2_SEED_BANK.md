@@ -3579,3 +3579,65 @@ Engine behaviour:
 - Exact textbook page/task details are only treated as exact where directly cross-checked.
 - Generic progression entries remain CONTENT_DETAIL_PENDING until source pages/SOW rows are extracted precisely.
 - Do not promote pending entries to exact textbook-grounded READY status without page/source verification.
+
+
+## YEAR 2 QA CORRECTION — VERIFIED UNIT BOUNDARIES & LATE-LESSON STRUCTURE
+
+Primary cross-check: Primary Year 2 SK Scheme of Work and independent Year 2 RPH/SOW index.
+
+### Correct unit boundaries
+- Free Time: Lessons 1–30
+- The Old House: Lessons 31–55
+- Get dressed!: Lessons 56–87
+- The Robot: Lessons 88–125
+- At the beach: Lessons 126–160
+
+These boundaries supersede any earlier approximate transition notes in this seed bank.
+
+### Verified late-lesson corrections
+
+#### Lesson 120 — The Robot — Language Arts
+- Theme: World of Stories
+- Topic: The Robot
+- Main: Language Arts 5.1.1
+- Complementary: Language Arts 5.1.2
+- SOW suggests a variation of "Dem Bones" to review/extend vocabulary from p.103, with movement and a skeleton cut-and-reassemble activity.
+- Do not reproduce copyrighted lyrics. Preserve only the pedagogical pattern and verified page/topic reference.
+
+#### Lesson 121 — The Robot — Listening
+- Theme: World of Stories
+- Topic: The Robot
+- Language/grammar: review or extension of recently introduced language and vocabulary.
+- This is still The Robot, not At the beach.
+
+#### Lesson 126 onward — At the beach
+- The At the beach unit begins at Lesson 126.
+- Earlier entries that placed At the beach at Lesson 111 are approximate and must not be treated as exact unit mapping.
+
+#### Lesson 133 — At the beach — Reading
+- Main: Reading 3.2.2 understand specific information/details of simple sentences.
+- Review/extend pp.106–109.
+- Suggested pattern: pictures of objects in different places (e.g. a fish in the sea), pupils read location questions and match to answers.
+- Use this as a verified read-for-detail/location pattern; do not invent extra source text.
+
+#### Lesson 151 — At the beach — Reading
+- Theme: World of Knowledge
+- Topic: At the beach
+- Language/grammar: review of unit topics, vocabulary and language.
+- Main: Reading 3.2.2.
+- Complementary: Reading 3.2.4 use a picture dictionary to find/list/categorise words from Year 2 topics/themes.
+- Textbook: Superminds 1 p.117.
+- This confirms Lessons 151+ remain within At the beach / end-of-year unit review, not a separate generic revision unit.
+
+#### Lesson 152 — At the beach — Writing
+- Theme: World of Knowledge
+- Topic: At the beach
+- Language/grammar: review of unit topics, vocabulary and language; question forms.
+- Keep Year 2 end-cycle writing grounded in the At the beach unit and reviewed Year 2 language.
+
+#### Lesson 155 — At the beach — Language Arts
+- SOW places Lesson 155 within the final At the beach/end-of-year sequence.
+- Use creative review/performance grounded in Year 2 learned content.
+
+### QA rule
+Any Year 2 seed entry created from approximate topic progression before this correction must defer to these verified lesson boundaries. Runtime/database mapping should use the corrected ranges above. Exact lesson-level skill, page, and task data still requires row-by-row extraction before READY status.
