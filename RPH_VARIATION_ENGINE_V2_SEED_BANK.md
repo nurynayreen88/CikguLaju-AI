@@ -1731,3 +1731,189 @@ Engine:
 - Add continuity key: linked_future_lesson = 140 when the same story is selected.
 - Route: prepare vocabulary -> interactive story listening -> artistic/motor follow-up -> discuss language/value.
 - Do not force a specific copyrighted story; use teacher-selected verified source metadata.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 131–150
+
+### Lesson 131 — Lunchtime — Listening
+- Recycles food vocabulary; introduces mouse, yummy.
+- Main: Listening prediction; Complementary: Listening for details.
+- SOW story: big mouse/small mouse, hospitality/politeness, food sharing.
+Engine:
+- Prediction must precede story.
+- Build story details from repeated listening using keywords/pictures.
+- Values discussion may use L1 where appropriate.
+- Alternate formats: story-sequence cards, food-detail grid, retell picture chain.
+- Do not reproduce copyrighted storybook text; this SOW-provided classroom story may be represented as structured content only.
+
+### Lesson 132 — Lunchtime — Speaking
+- Food shop role-play: Have you got any...? How much are...? Here you are.
+- Main: Speaking social phrases; Complementary: Listening questions.
+- Uses food cards, prices, optional toy money; financial education.
+Engine:
+- Every pupil should act as customer and shopkeeper.
+- Oral dialogue is primary; copied dialogue is follow-up only.
+- Alternate formats: mini market stalls, menu-price carousel, buyer/seller cards.
+- Preserve polite greetings/thanks.
+
+### Lesson 133 — Lunchtime — Reading
+- Food vocabulary.
+- Main: Reading/blending; Complementary: spelling.
+- Uses plastic letters, scrambled food words in sentences, grid completion.
+Engine:
+- Explicit decoding + spelling required.
+- If source uses scrambled words, CikguLaju follow-up should use a different format.
+- Alternate formats: phoneme build, picture-to-word decode, food word sorting.
+
+### Lesson 134 — Lunchtime — Writing
+- Recycles food vocabulary.
+- Main: spelling; Complementary: blending.
+- Pupils create their own food anagram puzzle with pictures, then exchange.
+Engine:
+- Writing/spelling product must be pupil-created.
+- Alternate formats: word maze, label-and-hide, missing-letter puzzle.
+- Do not repeat exact anagram mechanics if already used in the source lesson.
+
+### Lesson 135 — Lunchtime — Language Arts
+- Focus: Have you got...? Yes/No; polite canteen/menu interaction.
+- Reviews school canteen vocabulary from p.50 and dialogue patterns from pp.50–51.
+- Pupils create menus and role-play with new partners.
+Engine:
+- Product (menu) + oral role-play + politeness are all required.
+- Alternate product: mini canteen card, café board, lunch menu strip.
+- Do not copy source dialogue verbatim; preserve function and verified language frames.
+
+### Lesson 136 — Lunchtime — Listening
+- Numbers 11–20.
+- Main: Listening for specific details; Complementary: spelling.
+- Textbook: Superminds p.52.
+Engine:
+- p.52 is source spine once exact page content is verified.
+- Listening evidence on numbers must be explicit.
+- Alternate formats: listen-and-circle number, number-food match, dictation grid.
+
+### Lesson 137 — Lunchtime — Reading
+- Food vocabulary + numbers 11–20.
+- Main: Reading using visuals/patterns; Complementary: Speaking.
+- Textbook: Superminds p.53.
+Engine:
+- Reading of number/food combinations should lead to speaking personalisation.
+- Alternate formats: visual number-food hunt, read-and-say cards, quantity matching.
+
+### Lesson 138 — Lunchtime — Speaking
+- Fruit/vegetable vocabulary including broccoli, onions, mushrooms, potatoes, corn, peaches, pineapples, pears, oranges, coconuts, tomatoes, strawberries.
+- Main: Speaking likes/dislikes; Complementary: word-level reading.
+- Textbook: Superminds p.54.
+- SOW provides no-sticker fallback using handwritten word slips.
+Engine:
+- Speaking remains primary.
+- Sticker fallback is source-access support, not a new learning target.
+- Alternate formats: market-preference speaking, fruit/veg category talk, like/dislike carousel.
+
+### Lesson 139 — Lunchtime — Writing
+Verified SOW entry in Lunchtime sequence.
+Engine:
+- Populate exact skill/content/page from SOW before runtime generation.
+- Preserve food-topic continuity.
+- If exact source task is not yet extracted, mark PARTIAL and avoid invented details.
+
+### Lesson 140 — Lunchtime — Language Arts
+Verified as story-review point linked from Lesson 130 when the same story is selected.
+Engine:
+- Add continuity key: linked_previous_lesson = 130 when applicable.
+- Reuse the same verified story/source rather than silently substituting a new one.
+- Route: recall -> reread/listen -> extend -> personal/creative response.
+
+### Lesson 141 — Lunchtime
+Verified SOW entry in topic sequence.
+Engine:
+- Use exact SOW skill/focus/content pack.
+- Maintain textbook/workbook grounding and alternate-format rule.
+- No generic substitution.
+
+### Lesson 142 — Lunchtime
+Verified SOW entry.
+Engine:
+- Preserve lesson-specific main/complementary skill and source linkage.
+- Do not infer page/task from adjacent lessons.
+
+### Lesson 143 — Lunchtime — Reading/Maths-integrated problem context
+Verified SOW excerpt:
+- Uses food/price information and maths language around spending, addition/multiplication.
+- Provides model word problems later reused in Lesson 144.
+Engine:
+- Reading comprehension of the problem text precedes calculation.
+- Save problem-model continuity for Lesson 144.
+- Alternate formats: read-and-match price problem, visual shopping problem, clue-card maths reading.
+
+### Lesson 144 — Lunchtime — Writing
+- Recycles food vocabulary; uses spends, times...is..., and.
+- Main: plan/write words/phrases; Complementary: connect with and.
+- Pupils review Lesson 143 problems, then write their own and exchange/solve.
+Engine:
+- Add continuity key: linked_previous_lesson = 143.
+- Writing of original word problems is mandatory.
+- Financial-education context should be preserved.
+- Alternate format: price-card problem writing, mini market challenge.
+
+### Lesson 145 — Lunchtime — Language Arts
+- Focus: I've got / I haven't got.
+- Main: personal response; Complementary: Reading/blending.
+- Uses fridge + shopping-list deductive reasoning, then pupil fridge/list worksheet and partner speaking.
+Engine:
+- Deductive reasoning from shopping list vs fridge is core.
+- Reading must contribute to inference.
+- Alternate formats: pantry logic, lunchbox checklist, fridge mystery.
+- Avoid reducing to vocabulary matching.
+
+### Lesson 146 — Lunchtime — Speaking
+- Recycled food vocabulary; where food grows: on the ground, in trees, on plants.
+- Main: Speaking; Complementary: Reading visuals/patterns.
+- Textbook: Superminds p.55.
+- No-Workbook fallback provides fruit/vegetable categorisation + where-it-grows task.
+Engine:
+- Mark WORKBOOK_EXPECTED_OR_FALLBACK.
+- Preserve science/technology link.
+- Speaking about food location/growth should be visible.
+- Alternate formats: grow-location sorting talk, garden map explanation, produce-category speaking.
+
+### Lesson 147 — Lunchtime — Writing
+- Recycles toys, food, imperatives.
+- Main: Writing basic personal information; Complementary: Reading details.
+- Textbook: Superminds p.56.
+- No-Workbook fallback uses a monster/sandwich poster and detail grid.
+Engine:
+- Mark WORKBOOK_EXPECTED_OR_FALLBACK.
+- Written completion of name/colour/sandwich details is primary.
+- Alternate formats: monster profile card, sandwich ingredient caption, read-and-complete.
+
+### Lesson 148 — Lunchtime — Reading
+- Topic review.
+- Main: picture-dictionary use; Complementary: Speaking personal info.
+- Textbook: Superminds p.57.
+- No-Workbook fallback uses lunchtime flashcards and picture dictionary.
+Engine:
+- Mark WORKBOOK_EXPECTED_OR_FALLBACK.
+- Picture-dictionary navigation must be explicit.
+- Alternate formats: category hunt, find-list-say, picture-dictionary scavenger task.
+
+### Lesson 149 — Lunchtime — Listening
+- Focus: healthy/unhealthy + recycled food.
+- Main: Listening prediction; Complementary: Listening details.
+- SOW uses healthy/unhealthy sorting, predicts foods in a short text, completes grid, then rewrites choices to make all meals healthy.
+- Global sustainability / wellbeing context.
+Engine:
+- Prediction must precede listening.
+- Listening grid is evidence spine.
+- Follow-up transformation from unhealthy to healthy must stay grounded in source foods.
+- Alternate formats: healthy-food listening chart, meal makeover cards, listen-and-classify.
+
+### Lesson 150 — Lunchtime — Language Arts
+- Theme: healthy eating.
+- Main: personal response to literary text; Complementary: Listening narrative.
+- Can use a healthy-eating story/text/poem or responses to p.55 food diary.
+Engine:
+- Healthy-eating message + personal response are central.
+- Encourage pupils to talk/write about their own eating habits.
+- Source may be p.55 or another verified teacher-selected text.
+- Do not moralise beyond age-appropriate balanced-diet messaging.
