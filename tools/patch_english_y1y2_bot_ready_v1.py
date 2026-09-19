@@ -80,17 +80,18 @@ def _eng12_unit_menu(cid,page=0):
     if not rows:
         return send(cid,"🚧 <b>Data English BOT_READY Tahun 1–2 belum tersedia.</b>",
                     [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
+    # Group by normalized display title so e.g. "At School" / "At school" is one unit.
     units=[]; seen=set()
     for r in rows:
-        key=(str(r.get("unit_title") or "").strip(),str(r.get("topic") or "").strip())
-        if key not in seen:
-            seen.add(key); units.append(key)
+        raw=str(r.get("topic") or r.get("unit_title") or "").strip()
+        norm=" ".join(raw.lower().split())
+        if norm and norm not in seen:
+            seen.add(norm); units.append({"title":raw,"norm":norm})
     ss["_eng12_rows"]=rows; ss["_eng12_units"]=units
     per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(units)); kb=[]
     for i in range(a,b):
-        u,t=units[i]
-        label=t or u or f"Unit {i+1}"
-        kb.append([{"text":("📘 "+label)[:60],"callback_data":f"eng12_lsnunit_{i}"}])
+        title=units[i]["title"]
+        kb.append([{"text":(f"📘 Unit {i} — {title}")[:60],"callback_data":f"eng12_lsnunit_{i}"}])
     nav=[]
     if a: nav.append({"text":"⬅️ Sebelum","callback_data":f"eng12_up_{page-1}"})
     if b<len(units): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_up_{page+1}"})
@@ -102,9 +103,11 @@ def _eng12_lesson_menu(cid,ui,page=0):
     ss=state.setdefault(cid,{})
     units=ss.get("_eng12_units") or []
     if ui<0 or ui>=len(units): return _eng12_unit_menu(cid,0)
-    unit,topic=units[ui]
+    unit=units[ui]
+    norm=unit.get("norm","")
     rows=[r for r in (ss.get("_eng12_rows") or []) if
-          str(r.get("unit_title") or "").strip()==unit and str(r.get("topic") or "").strip()==topic]
+          " ".join(str(r.get("topic") or r.get("unit_title") or "").strip().lower().split())==norm]
+    rows=sorted(rows,key=lambda r:int(str(r.get("lesson_no") or "0").strip() or 0))
     ss["_eng12_unit_index"]=ui; ss["_eng12_lesson_rows"]=rows
     per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(rows)); kb=[]
     for i in range(a,b):
@@ -120,8 +123,8 @@ def _eng12_lesson_menu(cid,ui,page=0):
     if b<len(rows): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_lp_{ui}_{page+1}"})
     if nav: kb.append(nav)
     kb.append([{"text":"⬅️ Unit/Tajuk","callback_data":"eng12_units"},{"text":"🏠 Menu Utama","callback_data":"home"}])
-    title=topic or unit
-    return send(cid,f"📖 <b>{title}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
+    title=unit.get("title","")
+    return send(cid,f"📖 <b>Unit {ui} — {title}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.",kb)
 
 
 def _eng12_audio_zip_path():
@@ -241,7 +244,16 @@ def _eng12_commit_lesson(cid,idx):
         except Exception as e:
             print("English Y1Y2 verified audio send error:",repr(e),flush=True)
     nxt=globals().get("after_curriculum_selected") or globals().get("_temporary_auto_pack_v2386")
-    return nxt(cid) if callable(nxt) else None
+    if callable(nxt):
+        try:
+            return nxt(cid)
+        except Exception as e:
+            print("English Y1Y2 continuation error:",repr(e),flush=True)
+            return send(cid,"⚠️ <b>Lesson telah dipilih tetapi aliran bahan gagal diteruskan.</b>\nSila pilih jenis bahan dari Menu Utama sementara ralat direkodkan.",[[{"text":"🏠 Menu Utama","callback_data":"home"}]])
+    return send(cid,"📚 <b>Lesson telah dipilih.</b>\nPilih bahan yang hendak dijana.",[
+        [{"text":"📝 RPH","callback_data":"task_rph"},{"text":"📄 Worksheet","callback_data":"task_worksheet"}],
+        [{"text":"🎨 BBM","callback_data":"task_bbm"},{"text":"🏠 Menu Utama","callback_data":"home"}]
+    ])
 
 _callback_eng12_base=callback
 def callback(cid,d):
