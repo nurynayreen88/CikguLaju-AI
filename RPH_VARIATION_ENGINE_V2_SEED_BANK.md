@@ -2481,3 +2481,92 @@ Engine behaviour:
 - Use only verified house/home vocabulary and structures.
 - Product/performance should consolidate unit language.
 - No invented copyrighted text.
+
+
+## PRIMARY YEAR 2 ENGLISH — THE OLD HOUSE EXEMPLARS 41–50
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work / textbook unit progression.
+
+### Lesson 41 — The Old House — Listening
+Verified progression:
+- Continues The Old House unit.
+- Main focus: Listening for specific details in house/room descriptions.
+Engine behaviour:
+- Use familiar room/object/location language only.
+- Alternate formats: listen-and-mark room plan, object-location grid, detail bingo.
+- Preserve continuity from Lessons 31–40.
+
+### Lesson 42 — The Old House — Speaking
+Verified progression:
+- Speaking focus using house descriptions and location language.
+Engine behaviour:
+- Pupils ask/answer about what is in a room/house.
+- Alternate formats: room interview, describe-and-draw, hidden-picture information gap.
+- Ensure singular/plural structure remains accurate.
+
+### Lesson 43 — The Old House — Reading
+Verified progression:
+- Reading focus in same unit.
+Engine behaviour:
+- Read short house descriptions for specific details.
+- Alternate formats: read-and-draw, clue-to-room match, true/false/correct.
+- Do not introduce unverified story content.
+
+### Lesson 44 — The Old House — Writing
+Verified progression:
+- Writing focus using familiar house vocabulary.
+Engine behaviour:
+- Pupils produce simple room/house descriptions.
+- Alternate formats: picture caption set, room fact file, guided paragraph frame.
+- Check spelling, punctuation and singular/plural agreement.
+
+### Lesson 45 — The Old House — Language Arts
+Verified progression:
+- Language Arts consolidation linked to home/house theme.
+Engine behaviour:
+- Creative product must recycle verified unit language.
+- Suitable alternates: mini house book, room rhyme, simple role-play scene.
+- Mark source-text detail pending if exact text/song unavailable.
+
+### Lesson 46 — The Old House — Listening
+Verified progression:
+- Review/extension listening within the unit.
+Engine behaviour:
+- Target specific detail retrieval and location understanding.
+- Alternate formats: house-map dictation, listen-and-place, compare two rooms.
+
+### Lesson 47 — The Old House — Speaking
+Verified progression:
+- Review/extension speaking.
+Engine behaviour:
+- Encourage complete simple sentences about rooms/objects.
+- Alternate formats: spot-the-difference, pair house tour, question-card exchange.
+
+### Lesson 48 — The Old House — Reading
+Verified progression:
+- Review/extension reading.
+Engine behaviour:
+- Reading should require detail selection or inference from simple descriptions.
+- Alternate formats: house clue hunt, sentence-to-picture match, sequencing of room clues.
+
+### Lesson 49 — The Old House — Writing
+Verified progression:
+- Review/extension writing.
+Engine behaviour:
+- Use familiar unit language to produce a short coherent description.
+- Alternate formats: my room card, house brochure panel, guided description.
+- Preserve Year 2 sentence load; do not over-complexify.
+
+### Lesson 50 — The Old House — Language Arts
+Verified progression:
+- Creative consolidation before transition to the next unit.
+Engine behaviour:
+- Performance/product may combine speaking + simple writing.
+- Keep all language tied to The Old House content.
+- No invented copyrighted source text.
+
+## YEAR 2 QA STATUS AFTER LESSON 50
+- Lessons 1–50 now have seed-bank entries.
+- Exact textbook page/task details are fully explicit only where directly cross-checked.
+- Entries without exact page extraction remain CONTENT_DETAIL_PENDING and must not be treated as exact textbook transcription.
