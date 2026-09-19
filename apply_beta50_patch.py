@@ -150,5 +150,13 @@ import subprocess, sys
 _eng_patch=Path(__file__).with_name("tools").joinpath("patch_english_y1y2_bot_ready_v1.py")
 if _eng_patch.exists():
     subprocess.check_call([sys.executable, str(_eng_patch), str(P)])
+    # Final guard: remove the legacy English unit->SK route after all runtime patches.
+    _txt=P.read_text(encoding="utf-8")
+    _legacy_phrase="Selepas itu cikgu akan pilih **SK** dan **SP** yang dipetakan kepada unit tersebut."
+    if _legacy_phrase in _txt:
+        print("WARNING: legacy English Unit->SK prompt still exists after BOT_READY patch",flush=True)
+    # BOT_READY must own English Year 1-2 routing; fail deploy rather than silently serving old SK flow.
+    if "ENGLISH Y1Y2 BOT READY V1" not in _txt or "eng12_lesson_" not in _txt:
+        raise SystemExit("English Y1Y2 BOT_READY runtime route was not installed")
 else:
-    print("English Y1Y2 BOT_READY patch helper missing:", _eng_patch)
+    raise SystemExit("English Y1Y2 BOT_READY patch helper missing: "+str(_eng_patch))
