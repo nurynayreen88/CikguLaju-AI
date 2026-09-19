@@ -154,7 +154,9 @@ def _eng12_lesson_menu(cid,ui,page=0):
     for i in range(a,b):
         r=rows[i]; ln=str(r.get("lesson_no") or "")
         ps=r.get("textbook_page_start"); pe=r.get("textbook_page_end")
-        label=f"📚 Lesson {ln}"
+        skill=str(r.get("_sow_skill") or "").strip()
+        label=f"{'📖' if ps not in (None,'') else '📚'} Lesson {ln}"
+        if skill: label+=f" · {skill}"
         if ps not in (None,""):
             pg=str(ps) if pe in (None,"",ps) else f"{ps}–{pe}"
             label+=f" · m/s {pg}"
@@ -166,7 +168,7 @@ def _eng12_lesson_menu(cid,ui,page=0):
     kb.append([{"text":"⬅️ Unit/Tajuk","callback_data":"eng12_units"},{"text":"🏠 Menu Utama","callback_data":"home"}])
     title=unit.get("title",""); uno=unit.get("unit_no")
     heading=(f"Unit {uno} — {title}" if uno is not None else title)
-    return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.",kb)
+    return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.\n📖 = ada buku teks · 📚 = SOW sahaja",kb)
 
 
 def _eng12_audio_zip_path():
