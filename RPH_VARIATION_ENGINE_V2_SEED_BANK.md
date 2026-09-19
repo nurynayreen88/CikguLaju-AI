@@ -2570,3 +2570,152 @@ Engine behaviour:
 - Lessons 1–50 now have seed-bank entries.
 - Exact textbook page/task details are fully explicit only where directly cross-checked.
 - Entries without exact page extraction remain CONTENT_DETAIL_PENDING and must not be treated as exact textbook transcription.
+
+
+## PRIMARY YEAR 2 ENGLISH — THE OLD HOUSE EXEMPLARS 51–60
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work / textbook unit progression.
+
+### Lesson 51 — The Old House — Listening
+Verified progression:
+- Continues The Old House unit with listening for room/object/location details.
+Engine behaviour:
+- Use known house vocabulary and positional language.
+- Alternate formats: listen-and-place, room detail checklist, house-plan listening.
+
+### Lesson 52 — The Old House — Speaking
+Verified progression:
+- Speaking focus within same unit.
+Engine behaviour:
+- Pair interaction around room contents/location.
+- Alternate formats: describe-and-draw, hidden-room information gap, room interview.
+
+### Lesson 53 — The Old House — Reading
+Verified progression:
+- Reading for specific detail in short house descriptions.
+Engine behaviour:
+- Alternate formats: clue-to-room match, read-and-correct, room information hunt.
+- Keep source text within verified unit language.
+
+### Lesson 54 — The Old House — Writing
+Verified progression:
+- Writing simple descriptive sentences about a room/house.
+Engine behaviour:
+- Reinforce singular/plural and basic punctuation.
+- Alternate formats: room caption set, mini house profile, sentence repair.
+
+### Lesson 55 — The Old House — Language Arts
+Verified progression:
+- Creative consolidation of unit language.
+Engine behaviour:
+- Suitable alternates: mini-book, room rhyme, simple house role-play.
+- Avoid invented copyrighted text.
+
+### Lesson 56 — The Old House — Listening
+Verified progression:
+- Review/extension cycle.
+Engine behaviour:
+- Listen for contrasting room/object details.
+- Alternate formats: compare-two-rooms grid, listen-and-mark differences, object-location bingo.
+
+### Lesson 57 — The Old House — Speaking
+Verified progression:
+- Review/extension speaking.
+Engine behaviour:
+- Require full simple sentence responses where appropriate.
+- Alternate formats: spot-the-difference talk, house tour pairwork, question-card exchange.
+
+### Lesson 58 — The Old House — Reading
+Verified progression:
+- Review/extension reading.
+Engine behaviour:
+- Reading should move beyond isolated words to simple detail retrieval.
+- Alternate formats: room clue cards, true/false/correct, sentence-to-picture match.
+
+### Lesson 59 — The Old House — Writing
+Verified progression:
+- Review/extension writing.
+Engine behaviour:
+- Produce short coherent room/house descriptions.
+- Alternate formats: guided paragraph, room fact file, house brochure panel.
+- Keep Year 2 sentence load appropriate.
+
+### Lesson 60 — The Old House — Language Arts
+Verified progression:
+- End-of-cycle creative response.
+Engine behaviour:
+- Product/performance may combine speaking and simple writing.
+- Must remain grounded in The Old House content.
+
+## PRIMARY YEAR 2 ENGLISH — TRANSITION TO GET DRESSED! EXEMPLARS 61–70
+
+### Lesson 61 — Get dressed! — Listening
+Verified progression:
+- New unit transition: clothing vocabulary and simple descriptions/instructions.
+Engine behaviour:
+- Listening should identify clothing items/details from verified source.
+- Alternate formats: listen-and-point clothing cards, outfit grid, item selection.
+
+### Lesson 62 — Get dressed! — Speaking
+Verified progression:
+- Speaking focus using clothing vocabulary.
+Engine behaviour:
+- Oral identification/description of clothing.
+- Alternate formats: outfit talk, pair clothing quiz, describe-and-guess.
+
+### Lesson 63 — Get dressed! — Reading
+Verified progression:
+- Reading simple clothing words/phrases/sentences.
+Engine behaviour:
+- Alternate formats: read-and-match clothing, label-to-picture match, clothing clue cards.
+
+### Lesson 64 — Get dressed! — Writing
+Verified progression:
+- Writing simple clothing descriptions.
+Engine behaviour:
+- Alternate formats: outfit captions, label-and-write, guided sentence set.
+- Check spelling and punctuation.
+
+### Lesson 65 — Get dressed! — Language Arts
+Verified progression:
+- Creative response tied to clothing theme.
+Engine behaviour:
+- Suitable alternates: clothing rhyme, outfit mini-book, simple fashion role-play.
+- Keep content age-appropriate and source-grounded.
+
+### Lesson 66 — Get dressed! — Listening
+Verified progression:
+- Review/extension listening.
+Engine behaviour:
+- Listen for clothing detail/selection.
+- Alternate formats: listen-and-dress character, detail grid, item sorting by heard clues.
+
+### Lesson 67 — Get dressed! — Speaking
+Verified progression:
+- Review/extension speaking.
+Engine behaviour:
+- Pair/group talk around clothing choices/descriptions.
+- Alternate formats: outfit interview, describe-and-find, information gap.
+
+### Lesson 68 — Get dressed! — Reading
+Verified progression:
+- Review/extension reading.
+Engine behaviour:
+- Read simple clothing-related descriptions for detail.
+- Alternate formats: clue-to-outfit match, true/false/correct, read-and-colour where source supports it.
+
+### Lesson 69 — Get dressed! — Writing
+Verified progression:
+- Review/extension writing.
+Engine behaviour:
+- Produce simple outfit descriptions using verified language.
+- Alternate formats: outfit profile card, picture-to-sentence, sentence repair.
+- Avoid adding unverified garment vocabulary.
+
+### Lesson 70 — Get dressed! — Language Arts
+Verified progression:
+- Creative consolidation before next cycle.
+Engine behaviour:
+- Performance/product can combine clothing vocabulary with speaking/writing.
+- No invented copyrighted text.
