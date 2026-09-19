@@ -2391,3 +2391,93 @@ Engine behaviour:
 
 ## TRANSITION NOTE — YEAR 2
 The next textbook unit after this Free Time cycle is **The Old House**. Source cross-checks show subsequent lessons use house vocabulary and structures such as "There's a..." / "There are..." and textbook p.71 onward. Do not merge the two units in runtime mapping.
+
+
+## PRIMARY YEAR 2 ENGLISH — THE OLD HOUSE EXEMPLARS 31–40
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work / textbook progression.
+
+### Lesson 31 — The Old House — Listening
+Verified progression:
+- New unit transition into house vocabulary and descriptions.
+- Main skill: Listening.
+- Core structure set begins around "There's a..." / "There are...".
+- Textbook progression moves into p.71 onward.
+
+Engine behaviour:
+- Listening should identify rooms/house objects/locations from verified source.
+- Alternate formats: listen-and-point house plan, room/object grid, picture detail selection.
+- Do not invent exact house-object list until page mapping is extracted.
+
+### Lesson 32 — The Old House — Speaking
+Verified progression:
+- Recycles house vocabulary and "There's / There are".
+- Main skill: Speaking.
+Engine behaviour:
+- Oral description of a room/house scene should dominate.
+- Alternate formats: describe-the-room, spot-and-say, pair house-map talk.
+- Keep language within verified unit vocabulary.
+
+### Lesson 33 — The Old House — Reading
+Verified progression:
+- Reading focus using house/room content.
+Engine behaviour:
+- Visual-supported reading and detail matching required.
+- Alternate formats: read-and-match room/object, house clue cards, sentence-picture match.
+- Exact text content remains pending direct extraction.
+
+### Lesson 34 — The Old House — Writing
+Verified progression:
+- Writing simple house/room statements.
+- Core structures use singular/plural description.
+Engine behaviour:
+- Written sentences should distinguish "There's..." vs "There are...".
+- Alternate formats: room captioning, house-label sentence set, picture-to-sentence writing.
+- Require basic punctuation/spelling checks.
+
+### Lesson 35 — The Old House — Language Arts
+Verified progression:
+- Language Arts lesson tied to house/home theme.
+Engine behaviour:
+- Creative response must reuse verified house language.
+- Suitable alternates: house rhyme, room mini-book, house drawing + short captions.
+- If exact source text/song is unavailable, mark CONTENT_DETAIL_PENDING.
+
+### Lesson 36 — The Old House — Listening
+Verified progression:
+- Listening review/extension within unit.
+Engine behaviour:
+- Listen for object/location details.
+- Alternate formats: house plan dictation, listen-and-place furniture, location grid.
+- Avoid unrelated vocabulary expansion.
+
+### Lesson 37 — The Old House — Speaking
+Verified progression:
+- Speaking review/extension of house descriptions.
+Engine behaviour:
+- Pair information-gap around room/house scene is suitable.
+- Alternate formats: "What's in the room?" interview, hidden-room description, picture difference talk.
+
+### Lesson 38 — The Old House — Reading
+Verified progression:
+- Reading for house/room detail.
+Engine behaviour:
+- Reading must involve specific detail, not only word recognition.
+- Alternate formats: room clues, true/false house sentences, information hunt.
+
+### Lesson 39 — The Old House — Writing
+Verified progression:
+- Writing review/extension.
+Engine behaviour:
+- Pupils write connected house/room descriptions using verified structures.
+- Alternate formats: mini house profile, sentence repair, room description card.
+- Preserve singular/plural accuracy.
+
+### Lesson 40 — The Old House — Language Arts
+Verified progression:
+- Unit consolidation through creative/literary response.
+Engine behaviour:
+- Use only verified house/home vocabulary and structures.
+- Product/performance should consolidate unit language.
+- No invented copyrighted text.
