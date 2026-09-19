@@ -278,11 +278,18 @@ def _eng12_commit_lesson(cid,idx):
     if len(mapped)>=2:
         ss["complementary_sk"]=mapped[1]["sk_code"]; ss["complementary_sp"]=mapped[1]["sp_code"]
     ss["curriculum_source"]="SOW_VERIFIED"
+    ss["lesson_source_mode"]="TEXTBOOK_LINKED" if (r.get("textbook_page_start") or r.get("textbook_page_end")) else "SOW_ONLY"
+    ss["has_textbook_link"]=bool(r.get("textbook_page_start") or r.get("textbook_page_end"))
     _unit=str(r.get("topic") or r.get("unit_title") or "").strip()
     _summary=f"✅ <b>Lesson {ln}</b>"
     if _skill: _summary+=f" — {_skill}"
     if _unit: _summary+=f"\n📘 {_unit}"
     _summary+="\nSK/SP dipadankan automatik daripada SOW verified."
+    if ss.get("has_textbook_link"):
+        p1=ss.get("textbook_page_start"); p2=ss.get("textbook_page_end")
+        _summary+=f"\n📖 Buku teks: m/s {p1}" + (f"–{p2}" if p2 and str(p2)!=str(p1) else "")
+    else:
+        _summary+="\n📚 SOW lesson — tiada halaman buku teks dipaksa."
     send(cid,_summary,None)
     if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
         try:
