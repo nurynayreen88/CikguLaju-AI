@@ -365,6 +365,15 @@ def callback(cid,d):
             return send(cid,"⚠️ Sila pilih Lesson terlebih dahulu.",[[{"text":"📚 Pilih Unit/Lesson","callback_data":"eng12_units"}]])
         ss["requested_material"]=kind
         ss["material_source_policy"]="SOW_FIRST_TEXTBOOK_OVERLAY"
+        # Compatibility aliases consumed by older material engines.
+        ss["material_type"]=kind
+        ss["task"]=kind
+        ss["current_task"]=kind
+        ss["selected_topic"]=ss.get("topic","")
+        ss["selected_subtopic"]=ss.get("subtopic","")
+        ss["selected_unit"]=ss.get("unit_title") or ss.get("unit") or ss.get("topic","")
+        ss["selected_skill"]=ss.get("lesson_skill","")
+        ss["source_policy"]="SOW_FIRST_TEXTBOOK_OVERLAY"
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
@@ -376,8 +385,10 @@ def callback(cid,d):
         except Exception: src=""
         for alias in aliases:
             if (('"' + alias + '"') in src or ("'" + alias + "'") in src):
+                print("ENG12 material handoff",kind,alias,ss.get("material_curriculum_context",""),flush=True)
                 return _callback_eng12_base(cid,alias)
         if aliases:
+            print("ENG12 material fallback",kind,aliases[0],ss.get("material_curriculum_context",""),flush=True)
             return _callback_eng12_base(cid,aliases[0])
     return _callback_eng12_base(cid,d)
 
