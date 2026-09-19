@@ -1547,3 +1547,187 @@ Engine behaviour:
 - Required route: recall/predict -> listen/place -> create collage/product -> write short sentence -> share/discuss.
 - Use locally available safe natural materials where practical.
 - Do not reduce this to a colouring worksheet.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 111–130
+
+### Lesson 111 — Pet Show — Listening
+- Recycles animals, plurals, numbers; focus "There are ..."
+- Main: Listening for specific details; Complementary: Speaking naming/describing.
+- SOW uses a six-box "perfect zoo" grid, teacher model, pupil-designed zoos and peer information exchange.
+Engine:
+- Listening-to-grid accuracy must be visible.
+- Speaking extension may use pupil-created zoo descriptions.
+- Alternate formats: zoo map, number-animal matrix, listen-and-place.
+
+### Lesson 112 — Pet Show — Speaking
+- Recycles imperatives/animals from Lesson 109 and explicitly adapts the p.44 action story.
+- Main: Speaking; Complementary: asking for help.
+- Pupils create a new action story from a frame and perform it while other groups mime.
+Engine:
+- Add continuity key: linked_previous_lesson = 109.
+- Oral performance is mandatory even if pupils draft in writing.
+- Preserve adaptation-vs-original comparison.
+- Alternate formats: action-story cards, scene swap, group command story.
+
+### Lesson 113 — Pet Show — Reading
+- Recycles Lessons 107–109.
+- Main: Reading using visuals; Complementary: Writing with "and".
+- Uses Superminds p.42, true/false sentences, false-sentence rewriting, then pupils' Lesson 110 camouflage collages.
+- Explicitly continues into Lesson 114.
+Engine:
+- Add continuity keys: linked_previous_lesson = 110; linked_next_lesson = 114.
+- Reading source should include p.42 and pupil collage evidence.
+- Alternate formats: read-and-correct, visual sentence audit, true/false correction cards.
+
+### Lesson 114 — Pet Show — Writing
+- Continues from Lesson 113.
+- Main: plan/write words and phrases; Complementary: spelling.
+Engine:
+- Must consume the true/false/collage material prepared in Lesson 113.
+- Add continuity key: linked_previous_lesson = 113.
+- Writing should culminate in corrected/expanded statements about pupils' own camouflage product.
+- Do not start with unrelated new content.
+
+### Lesson 115 — Pet Show — Language Arts
+- Reviews animal vocabulary/prepositions through song/chant.
+- Uses "Five Little Monkeys" style counting/action pattern, then group-created animal versions and performance.
+- Environmental discussion may follow.
+Engine:
+- Song/chant participation + imaginative adaptation required.
+- Do not reproduce copyrighted lyrics; store source reference/pattern only.
+- Alternate formats: animal action chant, number-animal performance, call-and-response.
+- Preserve environmental reflection where appropriate.
+
+### Lesson 116 — Pet Show — Writing
+- Recycles toys, animals, prepositions, numbers, colours.
+- Main: spelling; Complementary: picture-dictionary use.
+- Textbook: Superminds p.45.
+- Explicit no-Workbook fallback with animal flashcards and picture dictionary.
+Engine:
+- Mark WORKBOOK_EXPECTED_OR_FALLBACK.
+- Use verified animal set if Workbook unavailable.
+- Generated follow-up must differ from picture-dictionary matching.
+- Alternate formats: category-and-spell, label grid, missing-letter animal bank.
+
+### Lesson 117 — Lunchtime — Speaking
+- New topic: Lunchtime.
+- Food vocabulary: banana, cake, cheese, sandwich, apple, pizza, sausage, chicken, steak, peas, carrots.
+- Main: Speaking naming/describing; Complementary: Listening main idea.
+- Textbook: Superminds p.46.
+Engine:
+- p.46 is source spine once exact page content is verified.
+- Speaking production with food vocabulary must dominate.
+- Alternate formats: lunch tray talk, food-card carousel, "What's for lunch?" pair response.
+
+### Lesson 118 — Lunchtime — Reading
+- Focus: I've got / I haven't got + food vocabulary.
+- Main: Reading using visuals/patterns; Complementary: Speaking basic personal info.
+- Textbook: Superminds p.47.
+Engine:
+- Reading of visual-supported food statements required.
+- Speaking personalisation follows reading.
+- Alternate formats: read-and-pack, lunchbox match, have/haven't profile cards.
+
+### Lesson 119 — Lunchtime — Listening
+- Focus includes kitchen, milk, juice and imperatives.
+- Main/complementary: Listening for specific detail.
+Engine:
+- Listening sequence/detail must be explicit.
+- Use only verified lesson focus until exact page/source content is extracted.
+- Alternate formats: listen-and-sequence, kitchen item selection, detail grid.
+
+### Lesson 120 — Lunchtime
+Verified SOW entry falls within Lunchtime progression.
+Engine:
+- Preserve exact skill/standards and textbook mapping from the SOW when content pack is populated.
+- Do not infer page/task from neighbouring lessons.
+- If exact source detail is missing, mark PARTIAL rather than invent.
+
+### Lesson 121 — Lunchtime
+Verified SOW entry within same topic sequence.
+Engine:
+- Use Lesson-specific skill and language focus from SOW.
+- Maintain textbook/content-first grounding and alternate-format rule.
+- No generic substitution.
+
+### Lesson 122 — Lunchtime
+Verified SOW entry within same topic sequence.
+Engine:
+- Keep main skill dominant and textbook/task relationship explicit.
+- Preserve food-context continuity.
+
+### Lesson 123 — Lunchtime
+Verified SOW entry within same topic sequence.
+Engine:
+- Continue food-language progression.
+- If workbook/source task exists, transform format rather than duplicate.
+
+### Lesson 124 — Lunchtime — Writing / Recipe-style Production
+Verified SOW excerpt:
+- Uses pictures/toys of food including pizza.
+- Pupils mime stages, teacher elicits/writes stages, highlights food words, then pairs write a new pizza recipe using different toppings and perform it.
+Engine:
+- Route: model/mime -> extract sequence -> write adapted recipe -> mime/say recipe.
+- Final writing must be procedural/sequence-based.
+- Alternate format: recipe cards, step ordering + rewrite, visual instruction strip.
+- Do not copy source recipe verbatim.
+
+### Lesson 125 — Lunchtime — Language Arts
+- Focus: Do you like X? Yes/No; I've got X on/in/with my Y.
+- Reviews song from textbook p.48.
+- Pupils create a Crazy Food Poster and share likes/dislikes.
+Engine:
+- p.48 song is source reference; do not reproduce lyrics.
+- Product + short writing + personal response are valid components.
+- Alternate products: crazy sandwich card, food combination menu, illustrated caption.
+- Preserve creativity without unrelated vocabulary.
+
+### Lesson 126 — Lunchtime — Speaking
+- Recycled food vocabulary.
+- Main: Speaking to find out basic personal information; Complementary: Listening details.
+- Textbook: Superminds p.49.
+Engine:
+- p.49 is source spine once exact content verified.
+- Pair questioning/interview should dominate.
+- Alternate formats: lunch preference interview, fridge survey, food-choice carousel.
+
+### Lesson 127 — Lunchtime — Listening
+- Focus: Where's (Misty)? Please, Hot, What have you got?
+- Main: Listening details; Complementary: Reading main idea.
+- Textbook: Superminds pp.50–51.
+- Value: waiting your turn.
+Engine:
+- Preserve story/source continuity across pp.50–51.
+- Listening remains primary.
+- Do not invent exact narrative content until page text is extracted.
+- Reading support should use same mapped story context.
+
+### Lesson 128 — Lunchtime — Writing
+- Recycles Lessons 126–127; fruit; Have you got any...? Yes/No.
+- Main: plan/write words/phrases; Complementary: spelling.
+- Uses p.49 picture, pupil-drawn fridge, 5 foods, written partner questions, written answers and peer checking.
+Engine:
+- Strong route: source picture -> own fridge -> write questions -> exchange -> answer -> peer check.
+- Alternate formats: fridge inventory card, pantry checklist, pair Q&A sheet.
+- Writing evidence must be visible.
+
+### Lesson 129 — Lunchtime — Reading
+- Focus: Sorry, stop, shop, hot dog.
+- Main: Reading for specific detail; Complementary: target sound recognition/reproduction.
+- Textbook: Superminds p.51.
+- Value: waiting your turn.
+Engine:
+- Reading + phonological support should use verified p.51 vocabulary.
+- Do not substitute unrelated phonics words.
+- Alternate formats: sound-detail match, read-and-highlight, minimal sound sorting using verified words.
+
+### Lesson 130 — Lunchtime — Language Arts
+- Main: personal response to literary text; Complementary: Listening to very short narrative.
+- SOW asks for a story with moral/message where possible, possibly linked to food / I've got / waiting turn / /ɒ/.
+- The chosen story may be reviewed again in Lesson 140.
+Engine:
+- Save story/source continuity metadata for possible Lesson 140 reuse.
+- Add continuity key: linked_future_lesson = 140 when the same story is selected.
+- Route: prepare vocabulary -> interactive story listening -> artistic/motor follow-up -> discuss language/value.
+- Do not force a specific copyrighted story; use teacher-selected verified source metadata.
