@@ -1012,3 +1012,139 @@ Engine behaviour:
 - Add continuity key: linked_previous_lesson = 65.
 - Route: recall -> reread -> extend -> create -> present/respond.
 - If Lesson 65 source is unavailable, do not invent a new unrelated story silently; mark source continuity unresolved and use a teacher-selected verified substitute only if explicitly mapped.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 71–80
+
+### Lesson 71 — Let's Play! — Listening
+Verified SOW:
+- Recycles favourite colours, numbers, toys and adjectives.
+- Main skill: Listening for specific information/details.
+- Complementary: Speaking / naming-describing.
+- SOW uses "Change places if..." and a memory-chain activity.
+
+Engine behaviour:
+- Listening response must remain observable.
+- Movement-based response is valid but should not become the only evidence.
+- Chain recall can be used for application/retrieval.
+- Alternate formats: listen-and-move, favourite-item response grid, memory chain with cards.
+
+### Lesson 72 — Let's Play! — Speaking
+Verified SOW:
+- Recycles favourite/toy language.
+- Main skill: Speaking / expressing likes-dislikes.
+- Complementary: asking for attention/help.
+- SOW uses toy list creation, pupil grid, mingle/interview, reporting and optional true/false partner extension.
+
+Engine behaviour:
+- Speaking interaction and repeated questioning are primary.
+- Grid only supports oral data collection.
+- Help-seeking language should be explicitly supported.
+- Alternate formats: speaking carousel, interview bingo, find-someone-who using toy preferences.
+
+### Lesson 73 — Let's Play! — Reading
+Verified SOW:
+- Recycles shapes and known Year 1 language.
+- Main skill: recognise letter shapes.
+- Complementary: sound out beginning/medial/final sounds.
+- SOW uses word-shape outlines, guessing, pupil-created word shapes and cut-and-stick letter construction.
+
+Engine behaviour:
+- Reading must involve letter/word-form recognition.
+- Phonics and visual word-shape recognition should both appear.
+- Alternate formats: word silhouette match, cut-and-build words, letter-shape sort, decode-and-stick.
+- Do not reduce to generic shape vocabulary review.
+
+### Lesson 74 — Let's Play! — Writing
+Verified SOW:
+- Recycles shapes + familiar objects.
+- Main skill: spelling familiar words.
+- Complementary: planning/writing words and phrases.
+- SOW uses object flashcards grouped by shape, board race, spelling correction and writing object words inside shape categories.
+
+Engine behaviour:
+- Written categorisation + correct spelling should be the evidence.
+- CikguLaju variation may use category cards, label-and-sort or object-shape mini poster.
+- Include correction/editing step before final written product.
+
+### Lesson 75 — Let's Play! — Language Arts
+Verified SOW:
+- Focus: shape vocabulary.
+- Main skill: enjoy/respond to song.
+- Complementary: personal response to illustrations/texts.
+- SOW uses body shapes, pupil-made shape cards, shape song and favourite-shape sharing.
+
+Engine behaviour:
+- Performance/non-verbal response must be visible.
+- Writing shape names is supportive, not primary.
+- Alternate format: movement chant, shape-response cards, class shape performance.
+- Preserve song/creative nature.
+
+### Lesson 76 — Let's Play! — Speaking
+Verified SOW:
+- Recycles shape vocabulary from Lessons 69, 73 and 74.
+- Main skill: Speaking / basic personal information.
+- Complementary: asking for help.
+- Textbook: Superminds 1 p.31.
+- Project parts provide opportunities for help-seeking language.
+
+Engine behaviour:
+- p.31 is source spine once exact page content is verified.
+- Speaking must remain primary.
+- If project work is used, ensure each pupil has an oral contribution.
+- Include explicit opportunity to ask for vocabulary/material help.
+
+### Lesson 77 — Let's Play! — Reading
+Verified SOW:
+- Recycles colours, toys, imperatives.
+- Main skill: Reading using visuals/high-frequency patterns.
+- Complementary: Listening to supported questions.
+- Textbook: Superminds 1 p.32.
+- SOW provides a fallback paper-doll-chain task if Workbook is unavailable.
+
+Engine behaviour:
+- Mark as WORKBOOK_EXPECTED_OR_FALLBACK.
+- If Workbook mapping exists, use it; otherwise use SOW fallback.
+- Reading of visual/instructional text must be visible.
+- CikguLaju alternate task must not duplicate the source craft format.
+
+### Lesson 78 — Let's Play! — Writing
+Verified SOW:
+- Recycles Unit 2 vocabulary/grammar.
+- Main skill: Writing / spelling.
+- Complementary: Writing personal information.
+- Textbook: Superminds 1 p.33.
+- SOW provides a no-Workbook fallback using toy flashcards + picture dictionary.
+
+Engine behaviour:
+- Mark as WORKBOOK_EXPECTED_OR_FALLBACK.
+- If workbook absent, use verified toy vocabulary fallback.
+- Writing/spelling remains primary evidence.
+- Alternate formats: toy picture dictionary extension, label-and-write, categorise-and-spell.
+
+### Lesson 79 — Pet Show — Listening
+Verified SOW:
+- Theme: World of Knowledge.
+- Main skill: Listening.
+- Complementary: Speaking.
+- Animal vocabulary includes elephant, rat, lizard, frog, spider, duck, dog, cat.
+- Textbook: Superminds 1 p.34.
+
+Engine behaviour:
+- p.34 becomes source spine once exact content is verified.
+- Listening for main idea must precede speaking/naming extension.
+- Alternate formats: listen-and-point, animal-picture selection, identify-the-pet.
+
+### Lesson 80 — Pet Show — Language Arts / Unit 2 Review
+Verified SOW:
+- Complete review of Unit 2 Superminds 1.
+- Main skill: imaginative response.
+- Complementary: Writing / naming-describing.
+- SOW suggests reviewing Unit 2 songs/chants/stories, drawing and writing what pupils learned, and sharing written work.
+
+Engine behaviour:
+- Treat this as a consolidation/review lesson, not new content.
+- Source pages must come from verified Unit 2 mapping.
+- Product can be drawing + short text or alternate review artefact.
+- Generated RPH should show retrieval, product creation and sharing/reflection.
+- Do not introduce unrelated new vocabulary.
