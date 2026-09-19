@@ -1148,3 +1148,134 @@ Engine behaviour:
 - Product can be drawing + short text or alternate review artefact.
 - Generated RPH should show retrieval, product creation and sharing/reflection.
 - Do not introduce unrelated new vocabulary.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 81–90
+
+### Lesson 81 — Pet Show — Listening
+Verified SOW:
+- Recycles animal vocabulary, adjectives and a/an.
+- Main skill: Listening for specific information/details.
+- Complementary: Speaking / naming-describing.
+- SOW uses an adjective + animal grid, secret selections and guessing.
+
+Engine behaviour:
+- Listening evidence must capture adjective + animal combinations.
+- Speaking may be used as guessing/response support.
+- Alternate formats: listen-select grid, adjective-animal bingo, picture-detail match.
+- Do not reuse the same secret-grid format in adjacent lessons.
+
+### Lesson 82 — Pet Show — Speaking
+Verified SOW:
+- Animal vocabulary + favourite questions.
+- Main skill: Speaking to find out basic personal information.
+- Complementary: Speaking likes/dislikes.
+- SOW uses a snapdragon/fortune-teller craft with colour, number and favourite questions.
+
+Engine behaviour:
+- Speaking interaction remains the real objective; craft is a vehicle.
+- If craft is too difficult, use teacher-prepared material rather than removing oral interaction.
+- Alternate CikguLaju formats: question spinner, favourite-card wheel, pair prompt cards.
+- Preserve cooperative support.
+
+### Lesson 83 — Pet Show — Reading
+Verified SOW:
+- Recycles animal vocabulary.
+- Main skill: Reading / blending.
+- Complementary: Reading word-level games.
+- SOW uses gapped spelling review, word snake/sausage, pair-created puzzles.
+
+Engine behaviour:
+- Explicit decoding and word recognition required.
+- If source word-snake is used, alternate CikguLaju practice should use a different format.
+- Alternate formats: phoneme boxes, decode-and-match, letter build, animal-word sort.
+
+### Lesson 84 — Pet Show — Writing
+Verified SOW:
+- Animal vocabulary + favourite animal.
+- Main skill: Writing likes/dislikes.
+- Complementary: capital letters in names.
+- SOW uses mime recall, spelling review, model sentence and repeated pupil writing.
+
+Engine behaviour:
+- Written sentence about a named person's favourite animal is the primary product.
+- Capitalisation must be checked.
+- Alternate formats: profile card, sentence strip reorder-and-write, favourite-animal mini fact.
+- Include peer/whole-class reading only after the written evidence.
+
+### Lesson 85 — Pet Show — Language Arts
+Verified SOW:
+- Animal vocabulary from Superminds p.34.
+- Main skill: imaginative response / art-craft.
+- Complementary: Speaking / naming-describing.
+- Pupils create word and picture cards, then use them in a pelmanism/matching game.
+
+Engine behaviour:
+- p.34 vocabulary set is the verified source.
+- Product creation + oral naming should both appear.
+- Generated CikguLaju variation may use picture-word dominoes, memory cards, mini matching board, but should not duplicate the exact source game every time.
+- Preserve reusable-resource logic where possible.
+
+### Lesson 86 — Pet Show — Listening
+Verified SOW:
+- Focus: prepositions in/on/under.
+- Main skill: Listening for specific details.
+- Complementary: Speaking / naming-describing.
+- Textbook: Superminds 1 p.35.
+
+Engine behaviour:
+- p.35 is source spine once exact content is verified.
+- Listening task must require location discrimination.
+- Speaking extension may describe animal/object position using the same prepositions.
+- Alternate formats: listen-and-place, picture selection, position grid.
+
+### Lesson 87 — Pet Show — Speaking
+Verified SOW:
+- Focus: plural animal nouns + recycled colours/prepositions.
+- Main skill: Speaking / naming-describing.
+- Complementary: target-language sound recognition/reproduction.
+- Textbook: Superminds 1 p.36.
+
+Engine behaviour:
+- Spoken plural animal descriptions must dominate.
+- Phonological support should reinforce the same target words.
+- Alternate formats: describe-the-scene, count-and-say, pair spot-and-describe.
+- Avoid making plural writing the main activity.
+
+### Lesson 88 — Pet Show — Reading
+Verified SOW:
+- Recycles topic vocabulary and likes/dislikes.
+- Main skill: Reading for specific information/details.
+- Complementary: Speaking likes/dislikes.
+- SOW reuses Lesson 85 pelmanism cards, then uses a yes/no or tick/cross reading table.
+
+Engine behaviour:
+- Reading sentences for detail must be the evidence spine.
+- Speaking personalisation follows reading.
+- If source uses tick/cross table, CikguLaju alternate format should differ: profile matching, information hunt, read-and-sort.
+- Reuse of earlier BBM is allowed and encouraged when mapped.
+
+### Lesson 89 — Pet Show — Writing
+Verified SOW:
+- Recycles animals + prepositions + and.
+- Main skill: Writing using and.
+- Complementary: planning/writing words and phrases.
+- SOW uses object placement, false sentences, oral correction, pupil-created picture, written peer correction and final correct sentence.
+
+Engine behaviour:
+- Require written correction + final correct sentence.
+- Use and meaningfully to connect two pieces of information.
+- Strong route: manipulate/observe -> read false sentence -> correct orally -> write -> peer correct -> final rewrite.
+- Alternate format: error-correction cards, picture-to-sentence correction, two-clause caption.
+
+### Lesson 90 — Pet Show — Language Arts
+Verified SOW:
+- Animal vocabulary review/extension.
+- Main + complementary: enjoy/respond to chants/raps/songs.
+- SOW suggests listening, miming and joining in with an animal chant/rap.
+
+Engine behaviour:
+- Performance, rhythm and non-verbal response are mandatory.
+- Recycled animal vocabulary should be prioritised before extension.
+- Alternate formats: animal action chant, group rap, call-and-response.
+- Do not convert into a worksheet-led lesson.
