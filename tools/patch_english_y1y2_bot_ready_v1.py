@@ -256,7 +256,11 @@ def _eng12_commit_lesson(cid,idx):
         "lesson_no":ln,"lesson":ln,
         "lesson_title":(_skill or ("Lesson "+ln)),
         "lesson_skill":_skill,
+        "selected_lesson":ln,
+        "selected_lesson_no":ln,
         "topic":str(r.get("unit_title") or r.get("topic") or "").strip(),
+        "unit":str(r.get("unit_title") or r.get("topic") or "").strip(),
+        "unit_title":str(r.get("unit_title") or r.get("topic") or "").strip(),
         "subtopic":str(r.get("topic") or "").strip(),
         "textbook_page_start":r.get("textbook_page_start"),
         "textbook_page_end":r.get("textbook_page_end"),
@@ -269,6 +273,11 @@ def _eng12_commit_lesson(cid,idx):
         "assessment_mode":"formative",
     })
     _commit_multi_sp(ss,mapped[:8])
+    if len(mapped)>=1:
+        ss["main_sk"]=mapped[0]["sk_code"]; ss["main_sp"]=mapped[0]["sp_code"]
+    if len(mapped)>=2:
+        ss["complementary_sk"]=mapped[1]["sk_code"]; ss["complementary_sp"]=mapped[1]["sp_code"]
+    ss["curriculum_source"]="SOW_VERIFIED"
     _unit=str(r.get("topic") or r.get("unit_title") or "").strip()
     _summary=f"✅ <b>Lesson {ln}</b>"
     if _skill: _summary+=f" — {_skill}"
