@@ -90,7 +90,7 @@ def _eng12_unit_menu(cid,page=0):
     for i in range(a,b):
         u,t=units[i]
         label=t or u or f"Unit {i+1}"
-        kb.append([{"text":("📘 "+label)[:60],"callback_data":f"eng12_unit_{i}"}])
+        kb.append([{"text":("📘 "+label)[:60],"callback_data":f"eng12_lsnunit_{i}"}])
     nav=[]
     if a: nav.append({"text":"⬅️ Sebelum","callback_data":f"eng12_up_{page-1}"})
     if b<len(units): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_up_{page+1}"})
@@ -217,7 +217,7 @@ def _eng12_commit_lesson(cid,idx):
             mapped.append({"sk_code":cs,"sk_text":"","sp_code":ls,"sp_text":""})
     if not mapped:
         return send(cid,"🚧 <b>SK/SP verified untuk Lesson ini belum lengkap.</b>",
-                    [[{"text":"⬅️ Pilih Lesson Lain","callback_data":f"eng12_unit_{ss.get('_eng12_unit_index',0)}"},
+                    [[{"text":"⬅️ Pilih Lesson Lain","callback_data":f"eng12_lsnunit_{ss.get('_eng12_unit_index',0)}"},
                       {"text":"🏠 Menu Utama","callback_data":"home"}]])
     ss.update({
         "lesson_no":ln,"lesson":ln,
@@ -256,6 +256,11 @@ def callback(cid,d):
     if ds.startswith("eng12_up_"):
         try: return _eng12_unit_menu(cid,int(ds.rsplit("_",1)[1]))
         except Exception: return _eng12_unit_menu(cid,0)
+    if ds.startswith("eng12_lsnunit_"):
+        try: return _eng12_lesson_menu(cid,int(ds.rsplit("_",1)[1]),0)
+        except Exception as e:
+            print("English Y1Y2 lsnunit->lesson route error:",repr(e),flush=True)
+            return _eng12_unit_menu(cid,0)
     if ds.startswith("eng12_unit_"):
         try: return _eng12_lesson_menu(cid,int(ds.rsplit("_",1)[1]),0)
         except Exception as e:
@@ -299,6 +304,11 @@ if PRIORITY_MARK not in s:
         if _eng_ds.startswith("eng12_up_"):
             try: return _eng12_unit_menu(cid,int(_eng_ds.rsplit("_",1)[1]))
             except Exception: return _eng12_unit_menu(cid,0)
+        if _eng_ds.startswith("eng12_lsnunit_"):
+            try: return _eng12_lesson_menu(cid,int(_eng_ds.rsplit("_",1)[1]),0)
+            except Exception as _eng_e:
+                print("English Y1Y2 priority lsnunit->lesson error:",repr(_eng_e),flush=True)
+                return _eng12_unit_menu(cid,0)
         if _eng_ds.startswith("eng12_unit_"):
             try: return _eng12_lesson_menu(cid,int(_eng_ds.rsplit("_",1)[1]),0)
             except Exception as _eng_e:
