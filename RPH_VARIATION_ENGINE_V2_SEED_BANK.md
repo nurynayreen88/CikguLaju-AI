@@ -2719,3 +2719,117 @@ Verified progression:
 Engine behaviour:
 - Performance/product can combine clothing vocabulary with speaking/writing.
 - No invented copyrighted text.
+
+
+## PRIMARY YEAR 2 ENGLISH — GET DRESSED! EXEMPLARS 71–80
+
+Source status: WEB_VERIFIED_PENDING_DRIVE_COPY
+Primary cross-check: Primary Year 2 SK Scheme of Work.
+
+### Lesson 71 — Get dressed! — Listening
+Verified SOW:
+- Theme: World of Self, Family and Friends.
+- Topic: Get dressed!
+- Language focus: further practice of present continuous 3rd person singular statements/questions.
+- Main: Listening 1.1.1 recognise/reproduce high-frequency target phonemes.
+- Complementary: Reading 3.1.4 segment phonemes (CVC, CCVC, CVCV, CCV).
+
+Engine behaviour:
+- Listening/phoneme recognition is the evidence spine.
+- Keep present continuous 3rd-person language explicit.
+- Alternate formats: sound discrimination, listen-and-segment, picture + sound match.
+
+### Lesson 72 — Get dressed! — Speaking
+Verified progression:
+- Continues present continuous and clothing context.
+- Main skill: Speaking.
+
+Engine behaviour:
+- Oral question/answer and description should dominate.
+- Alternate formats: what-is-he/she-wearing talk, action-picture prompts, pair describe-and-guess.
+- Preserve 3rd-person singular forms.
+
+### Lesson 73 — Get dressed! — Reading
+Verified progression:
+- Reading focus in same unit cycle.
+
+Engine behaviour:
+- Read simple clothing/action descriptions for specific detail.
+- Alternate formats: sentence-picture match, read-and-identify person, true/false/correct.
+- Do not invent textbook text.
+
+### Lesson 74 — Get dressed! — Writing
+Verified progression:
+- Writing focus on simple present-continuous clothing descriptions.
+
+Engine behaviour:
+- Pupils produce short accurate sentences based on verified visuals/content.
+- Alternate formats: outfit captions, sentence completion-to-free write, picture-to-sentence.
+- Check spelling/punctuation and subject-verb form.
+
+### Lesson 75 — Get dressed! — Language Arts
+Verified progression:
+- Language Arts tied to unit theme.
+
+Engine behaviour:
+- Creative response may use clothing/action language.
+- Suitable alternates: chant/rap, mime-and-say, mini character card.
+- No invented copyrighted text.
+
+### Lesson 76 — Get dressed! — Listening
+Verified progression:
+- Review/extension listening.
+
+Engine behaviour:
+- Listen for clothing/material/action details.
+- Alternate formats: listen-and-tick outfit grid, detail match, listen-and-place.
+
+### Lesson 77 — Get dressed! — Speaking
+Verified progression:
+- Speaking review/extension.
+
+Engine behaviour:
+- Pair/group talk about clothing/materials or actions.
+- Alternate formats: outfit interview, describe-and-find, information gap.
+- Keep source vocabulary controlled.
+
+### Lesson 78 — Get dressed! — Listening
+Verified SOW:
+- Language focus: recycled clothes vocabulary; materials vocabulary including cotton, wool, woollen, leather.
+- Main: Listening 1.3.1 understand teacher/classmate message using visual clues.
+- Complementary: Speaking 2.1.5 describe objects using suitable words/phrases.
+- Textbook: Superminds 1 p.90.
+- SOW note: use CD or read the short text aloud for Activity 1.
+- Cross-curricular: Science and technology.
+
+Engine behaviour:
+- Listening to material/clothing descriptions is primary.
+- Speaking follow-up describes clothing objects/materials.
+- Alternate formats: material sorting, listen-and-identify garment/material, object description cards.
+
+### Lesson 79 — Get dressed! — Writing
+Verified SOW:
+- Language focus: adjectives to describe materials.
+- Main: Writing 4.3.2 spell familiar high-frequency words accurately.
+- Complementary: Speaking 2.1.5 describe objects using suitable words/phrases.
+- Textbook: Superminds 1 p.91.
+- SOW note: pupils work on posters and discuss poster content in English.
+- Cross-curricular: Science and technology; Creativity and Innovation.
+
+Engine behaviour:
+- Written poster content is primary evidence.
+- Include peer talk about poster while writing.
+- Alternate formats: materials poster, object-material fact card, label-and-describe panel.
+
+### Lesson 80 — Get dressed! — Language Arts
+Verified SOW:
+- Main: Language Arts 5.3.1 respond imaginatively/intelligibly through simple short chants or raps / other imaginative responses.
+- Complementary: Speaking 2.1.5 describe objects using suitable words/phrases.
+- Review/extend p.88–91.
+- SOW suggests using/creating a text describing a person, similar to Activity 3 p.89, with creative response through mime or dressing up/acting.
+- Cross-curricular: Creativity and Innovation.
+
+Engine behaviour:
+- Creative response must use verified person/clothing description language.
+- Suitable outputs: mime, dress-up acting, short original chant/rap, character description performance.
+- Do not reproduce copyrighted textbook text.
