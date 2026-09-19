@@ -1917,3 +1917,104 @@ Engine:
 - Encourage pupils to talk/write about their own eating habits.
 - Source may be p.55 or another verified teacher-selected text.
 - Do not moralise beyond age-appropriate balanced-diet messaging.
+
+
+## PRIMARY YEAR 1 ENGLISH — VERIFIED LESSON EXEMPLARS 151–160
+
+### Lesson 151 — Year 1 Revision — Listening
+- Revises all Year 1 topics: Friends, At School, Let's Play!, Pet Show, Lunchtime.
+- Main: Listening to supported questions; Complementary: Speaking / naming-describing.
+- SOW uses a noughts-and-crosses revision grid with topic questions, "Correct it!", "Listen and do", and mixed revision prompts.
+Engine:
+- Treat as cumulative retrieval, not new content.
+- Questions must be drawn only from verified Year 1 content.
+- Listening response must remain observable.
+- Alternate format: team quiz board, category wheel, topic challenge cards.
+- Avoid introducing unverified vocabulary.
+
+### Lesson 152 — Year 1 Revision — Speaking
+- Main: Speaking / naming-describing; Complementary: Listening to supported questions.
+- Uses Superminds pages as visual prompts; pupils create and ask their own revision questions.
+Engine:
+- Textbook pages act as verified visual retrieval prompts.
+- Pupils should both ask and answer.
+- Alternate formats: picture-question carousel, group quiz cards, page-hunt speaking challenge.
+- Do not make teacher questioning the only speaking evidence.
+
+### Lesson 153 — Year 1 Revision — Reading
+- Main: Reading for specific details; Complementary: Speaking.
+- SOW uses a Year 1 revision board game, dice/counters, topic squares and free-question squares.
+- Includes reflection on cooperation and handling language/content challenges.
+Engine:
+- Reading of instructions/prompts is the task spine.
+- Speaking response follows the square/prompt.
+- Reflection may use L1 where the focus is metacognition/cooperation.
+- Alternate formats: revision path game, reading challenge board, topic mission cards.
+
+### Lesson 154 — Year 1 Revision — Writing
+- Main: Writing using "and"; Complementary: Reading details.
+- Uses 24–30 Year 1 vocabulary pictures, sentence frames "A ___ and a ___ are..." / "have got...", group connection generation, true/false sentence writing and peer correction.
+Engine:
+- Connection-making across known vocabulary is required.
+- Written true/false set + peer correction is primary evidence.
+- Alternate formats: connection cards, classify-and-connect, two-item fact sentences.
+- Do not add vocabulary outside verified Year 1 bank.
+
+### Lesson 155 — Year 1 Revision — Language Arts
+- Main: imaginative response; Complementary: Speaking to audience.
+- Matches textbook units to themes, brainstorms language by unit, checks textbook, presents, then writes unit-based dialogues for later performance.
+- Explicitly prepares Lesson 160.
+Engine:
+- Add continuity key: linked_next_lesson = 160.
+- Dialogue writing must be based on verified unit language.
+- Teacher feedback/self-correction should occur before performance lesson.
+- Do not copy supplied dialogue examples wholesale.
+
+### Lesson 156 — Year 1 Revision — Listening
+- Main: Listening to supported questions; Complementary: Speaking to find out personal information.
+- Uses "Find a friend who..." grid with Year 1 language, then pupils create their own grid.
+Engine:
+- Listening + oral interaction are both required.
+- Pupil-created prompts must stay within verified language.
+- Alternate formats: mingle grid, peer-find cards, group question hunt.
+- Grid construction is extension, not substitute for listening/speaking.
+
+### Lesson 157 — Year 1 Revision — Speaking
+- Main: Speaking basic personal information; Complementary: Listening for details.
+- Uses "Me and my friends" grid: age, siblings, favourite food/animal/toy.
+- Pupils exchange information and report an interesting group connection.
+Engine:
+- Oral exchange and third-person reporting are required.
+- Alternate formats: mini profile exchange, friend fact cards, compare-and-report.
+- Written grid is support only.
+
+### Lesson 158 — Year 1 Revision — Writing
+- Main: spelling familiar high-frequency words; Complementary: Reading using visuals/patterns.
+- Pupils create an ABC poster of Year 1 vocabulary using Superminds as reference.
+- Posters and word slips are intentionally saved for Lesson 159.
+Engine:
+- Add continuity key: linked_next_lesson = 159.
+- Only verified Year 1 vocabulary may be used.
+- Writing/spelling accuracy must be checked.
+- Preserve reusable-BBM logic: poster becomes next-lesson reading material.
+
+### Lesson 159 — Year 1 Revision — Reading
+- Main: Reading simple word-level games; Complementary: Reading using visuals/patterns.
+- Explicit continuation of Lesson 158 ABC posters/word slips.
+- Groups swap posters and match words to pictures; then Listen-and-Point review.
+Engine:
+- Add continuity key: linked_previous_lesson = 158.
+- Must reuse Lesson 158 artefacts where available.
+- Alternate format: poster exchange, word-picture relay, category match.
+- Do not generate a fresh unrelated word set.
+
+### Lesson 160 — Year 1 Revision — Language Arts
+- Final Year 1 lesson.
+- Main: imaginative response; Complementary: Speaking to audience.
+- Pupils revise dialogues from Lesson 155 using teacher feedback, practise, introduce themselves, then perform to an audience.
+Engine:
+- Add continuity key: linked_previous_lesson = 155.
+- Performance must use the previously prepared/revised dialogues.
+- Props are optional; audience may be class/parents/staff/other classes subject to permission.
+- Do not silently replace dialogues with newly generated unrelated scripts.
+- This lesson closes the Year 1 sequence; mark YEAR1_SEQUENCE_COMPLETE once source QA passes.
