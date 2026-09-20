@@ -182,3 +182,60 @@ if _eng_patch.exists():
         raise SystemExit("English Y1Y2 BOT_READY runtime route was not installed")
 else:
     raise SystemExit("English Y1Y2 BOT_READY patch helper missing: "+str(_eng_patch))
+
+
+# MAIN_PDP_ENTRY_V2500
+# Final runtime UI guard: keep the main PdP entry stable and remove the legacy
+# "Guna Bahan Cikgu" choice without touching curriculum/database content.
+_txt=P.read_text(encoding="utf-8")
+if "# MAIN_PDP_ENTRY_V2500" not in _txt:
+    _txt += r'''
+
+# MAIN_PDP_ENTRY_V2500
+_send_v2500_base = send
+
+def send(cid, text, kb=None, *args, **kwargs):
+    """Normalize the main PdP keyboard at render time."""
+    if isinstance(kb, list):
+        cleaned=[]
+        for row in kb:
+            if not isinstance(row, list):
+                cleaned.append(row); continue
+            nr=[]
+            for btn in row:
+                if not isinstance(btn, dict):
+                    nr.append(btn); continue
+                label=str(btn.get("text") or "")
+                low=label.lower()
+                if "guna bahan cikgu" in low:
+                    continue
+                b=dict(btn)
+                if "sediakan bahan pdp" in low:
+                    b["callback_data"]="pdp_material_start_v2500"
+                nr.append(b)
+            if nr: cleaned.append(nr)
+        kb=cleaned
+    return _send_v2500_base(cid,text,kb,*args,**kwargs)
+
+_callback_v2500_base = callback
+
+def callback(cid,d):
+    ds=str(d or "")
+    if ds=="pdp_material_start_v2500":
+        ss=state.setdefault(cid,{})
+        ss["task"]="quick_material"
+        ss["quick_material_flow"]=True
+        ss["assessment_mode"]="formative"
+        for k in ("topic","subtopic","selected_sk","selected_sp","lesson","lesson_no",
+                  "selected_lesson","selected_lesson_no","rpt_entry_id",
+                  "_eng12_rows","_eng12_units","_eng12_lesson_rows"):
+            ss.pop(k,None)
+        # Reuse the app's established grade selector instead of duplicating it.
+        return _callback_v2500_base(cid,"choose_grade")
+    return _callback_v2500_base(cid,d)
+
+APP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2500"
+# END MAIN_PDP_ENTRY_V2500
+'''
+    P.write_text(_txt,encoding="utf-8")
+    print("MAIN PDP entry v2500 installed",flush=True)
