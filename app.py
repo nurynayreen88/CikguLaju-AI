@@ -23836,19 +23836,19 @@ def _eng12_is_english_subject_callback(ds):
 
 def _eng12_db_path():
     import os, requests
-    # v25.03: prefer the audited v15 English Y1/Y2 DB. Keep BOT_READY_v1 as
-    # a non-destructive fallback so older deployments continue to start.
-    env_path=os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_DB_PATH","").strip()
+    # v25.04: audited v15 is authoritative for English Y1/Y2.
+    # Legacy/env DBs are fallback only; never let an older Render env path
+    # silently override the remapped v15 curriculum/audio data.
     local_v15=os.path.join(os.path.dirname(__file__),"CikguLaju_English_Primary_Year1_Year2_MASTER_320_v15_Y2_UNIT5_AUDIO_COMPLETE.db")
-    fallback=os.path.join(os.path.dirname(__file__),"CikguLaju_English_Primary_Year1_Year2_BOT_READY_v1.db")
-    for x in (env_path,local_v15):
-        if x and os.path.exists(x) and os.path.getsize(x)>100000:
-            return x
-    # The audited v15 copy is backed up in Drive. Cache it in /tmp on Render;
-    # never overwrite the checked-in legacy DB.
     cached="/tmp/CikguLaju_English_Primary_Year1_Year2_MASTER_320_v15.db"
+    fallback=os.path.join(os.path.dirname(__file__),"CikguLaju_English_Primary_Year1_Year2_BOT_READY_v1.db")
+    env_path=os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_DB_PATH","").strip()
+
+    if os.path.exists(local_v15) and os.path.getsize(local_v15)>100000:
+        return local_v15
     if os.path.exists(cached) and os.path.getsize(cached)>100000:
         return cached
+
     drive_id=os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_V15_DRIVE_ID","1O7UHbE9VpKrCQ7z-74zDQ3VUOB3RbuwA").strip()
     if drive_id:
         try:
@@ -23862,9 +23862,12 @@ def _eng12_db_path():
             print("English v15 DB download rejected:",rr.status_code,rr.headers.get("content-type"),len(rr.content),flush=True)
         except Exception as e:
             print("English v15 DB download error:",repr(e),flush=True)
-    if os.path.exists(fallback):
-        print("English runtime using legacy BOT_READY_v1 fallback",flush=True)
-        return fallback
+
+    # Non-destructive emergency fallbacks only.
+    for x in (env_path,fallback):
+        if x and os.path.exists(x) and os.path.getsize(x)>100000:
+            print("English runtime using legacy fallback:",x,flush=True)
+            return x
     return ""
 
 def _eng12_rows(year_label):
