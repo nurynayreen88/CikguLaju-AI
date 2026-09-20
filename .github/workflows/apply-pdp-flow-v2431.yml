@@ -9,6 +9,7 @@ on:
       - '.github/workflows/apply-pdp-flow-v2431.yml'
       - 'tools/patch_english_y1y2_bot_ready_v1.py'
       - 'data/english_y1y2_sow_master_320.json'
+      - 'apply_beta50_patch.py'
 
 permissions:
   contents: write
@@ -35,6 +36,7 @@ jobs:
           python tools/patch_remove_page_step_v2440.py app.py
           python tools/patch_english_y1y2_bot_ready_v1.py app.py
           python -m py_compile app.py
+          python -m py_compile apply_beta50_patch.py
           python - <<'PY'
           import ast, pathlib, re
           s=pathlib.Path('app.py').read_text(encoding='utf-8'); ast.parse(s)
