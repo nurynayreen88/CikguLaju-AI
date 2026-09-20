@@ -23999,8 +23999,15 @@ def _eng12_material_pack(cid):
         ss["ending_lesson"]=g.get("ending_lesson","")
         ss["extension_optional"]=g.get("extension_optional","")
         ss["rph_verified_teacher_guidance"]=g
-        # Exact audio references in verified Teacher's Book guidance are legitimate
-        # lesson context even when the BOT_READY DB overlay is unavailable.
+        # Feed the verified Teacher's Book plan into the existing RPH engine rather
+        # than letting English fall back to a generic activity template.
+        ss["rph_teacher_aims"]=g.get("aims","")
+        ss["rph_teacher_warm_up"]=g.get("warm_up","")
+        ss["rph_teacher_student_book_procedure"]=g.get("student_book_procedure","")
+        ss["rph_teacher_workbook_procedure"]=g.get("workbook_procedure","")
+        ss["rph_teacher_checking_feedback"]=g.get("checking_feedback","")
+        ss["rph_teacher_ending_lesson"]=g.get("ending_lesson","")
+        ss["rph_teacher_extension"]=g.get("extension_optional","")
         if g.get("audio_procedure"):
             ss["rph_audio_procedure"]=g.get("audio_procedure")
     
