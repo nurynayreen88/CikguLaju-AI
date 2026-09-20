@@ -416,6 +416,21 @@ def callback(cid,d):
         ss["bbm_require_main_sp_match"]=True
         ss["bbm_allow_generic_content"]=False
         ss["bbm_use_verified_source_content_only"]=True
+        # Year 1/2 QA contract shared by all three material engines.
+        ss["eng12_material_qa"]={
+            "year":_eng12_year_label(ss),
+            "lesson_no":int(ss.get("lesson_no") or 0),
+            "unit":ss.get("unit_title") or ss.get("topic",""),
+            "skill":ss.get("lesson_skill",""),
+            "main_sk":ss.get("main_sk",""),
+            "main_sp":ss.get("main_sp",""),
+            "complementary_sk":ss.get("complementary_sk",""),
+            "complementary_sp":ss.get("complementary_sp",""),
+            "source_mode":ss.get("lesson_source_mode","SOW_ONLY"),
+            "textbook_page":ss.get("textbook_page_start"),
+            "workbook_status":ss.get("workbook_status"),
+            "audio_status":ss.get("audio_status"),
+        }
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
