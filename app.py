@@ -23979,8 +23979,14 @@ def _eng12_commit_lesson(cid,idx):
             _eng12_send_verified_audio(cid,ss.get("audio_reference"))
         except Exception as e:
             print("English Y1Y2 verified audio send error:",repr(e),flush=True)
-    nxt=globals().get("after_curriculum_selected") or globals().get("_temporary_auto_pack_v2386")
-    return nxt(cid) if callable(nxt) else None
+    # Continue through the known material flow. Some legacy builds expose
+    # after_curriculum_selected but it can be a no-op for this injected route.
+    # The stable auto-pack function is the canonical continuation after SK/SP.
+    nxt=globals().get("_temporary_auto_pack_v2386") or globals().get("after_curriculum_selected")
+    if callable(nxt):
+        return nxt(cid)
+    return send(cid,"✅ <b>SK/SP telah dipadankan.</b>\n\nPilih bahan untuk diteruskan.",
+                [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
 
 _callback_eng12_base=callback
 def callback(cid,d):
