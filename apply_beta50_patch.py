@@ -232,7 +232,12 @@ def callback(cid,d):
                   "_eng12_rows","_eng12_units","_eng12_lesson_rows"):
             ss.pop(k,None)
         # Reuse the app's established grade selector instead of duplicating it.
-        return _callback_v2500_base(cid,"choose_grade")
+        # Start the same proven curriculum entry used by material tasks.
+        # "task_rph" is handled by the legacy dispatcher and then the later
+        # English/BM lesson routers take ownership after year/subject selection.
+        ss["task"]="rph"
+        ss["requested_material"]="rph"
+        return _callback_v2500_base(cid,"task_rph")
     return _callback_v2500_base(cid,d)
 
 APP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2500"
