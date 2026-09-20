@@ -55,10 +55,15 @@ jobs:
           assert '_ENG12_SOW_MASTER' in s
           assert 'DB_SOW_MASTER_320' in s
           assert 'EMBEDDED_SOW_FALLBACK' in s
-          assert 'MAIN_PDP_ENTRY_V2501' in s
-          assert 'pdp_material_start_v2500' in s
-          assert 'return show_grades(cid)' in s
-          assert '_eng12_is_english_subject_callback' in s
+          checks = {
+              'MAIN_PDP_ENTRY_V2501': 'MAIN_PDP_ENTRY_V2501' in s,
+              'pdp_material_callback': 'pdp_material_start_v2500' in s,
+              'direct_show_grades': 'return show_grades(cid)' in s,
+              'english_router': '_eng12_is_english_subject_callback' in s,
+          }
+          print('V2501_QA', checks)
+          missing=[k for k,v in checks.items() if not v]
+          assert not missing, 'Missing V2501 runtime guards: '+','.join(missing)
           assert not re.search(r'(?s)def _pdp_pick_date_v2393\(cid\):.*?dates=\[today\+timedelta\(days=i\) for i in range\((?:7|14)\)\]',s)
           print('QA PASS',len(s.encode('utf-8')))
           PY
