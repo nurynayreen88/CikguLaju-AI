@@ -4547,9 +4547,18 @@ def _temporary_auto_pack_v2386(cid):
         except Exception as e:
             print('v23.86 auto-pack worksheet:',repr(e),flush=True); status['📝 Worksheet']='🚧 Dalam pembinaan'
 
-        # Media/audio source bank is intentionally not fabricated in this temporary build.
+        # Audio is source-locked: expose it only when the selected BOT_READY
+        # lesson already carries a verified reference. Never infer a track.
         _generation_progress_update(cid,pmid,85,'Menyemak audio dan media berkaitan...','Bahan Pantas')
-        status['🔊 Audio / Media']='🚧 Dalam pembinaan'
+        if ss.get('audio_status')=='VERIFIED_AUDIO' and ss.get('audio_reference'):
+            try:
+                _eng12_send_verified_audio(cid,ss.get('audio_reference'))
+                status['🔊 Audio / Media']='dihantar'
+            except Exception as e:
+                print('v25.01 verified audio:',repr(e),flush=True)
+                status['🔊 Audio / Media']='🚧 Rujukan verified ada, penghantaran gagal'
+        else:
+            status['🔊 Audio / Media']='🚧 Belum ada audio verified untuk lesson ini'
 
         _generation_progress_update(cid,pmid,95,'Menyusun status semua bahan...','Bahan Pantas')
         _generation_progress_update(cid,pmid,100,'Selesai. Semua bahan yang ada telah dihantar.','Bahan Pantas')
