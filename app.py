@@ -23756,8 +23756,15 @@ def _eng12_rows(year_label):
     if len(master)!=160:
         jp=os.path.join(os.path.dirname(__file__),"data","english_y1y2_sow_master_320.json")
         try:
-            with open(jp,"r",encoding="utf-8") as fh: master=json.load(fh).get(year_label,[])
-        except Exception: master=[]
+            with open(jp,"r",encoding="utf-8") as fh:
+                payload=json.load(fh)
+            # tolerate legacy year labels in state/runtime while keeping canonical keys
+            aliases={"Tahun 1":["Tahun 1","Year 1","1"],"Tahun 2":["Tahun 2","Year 2","2"]}
+            keys=aliases.get(year_label,[year_label])
+            master=next((payload.get(k,[]) for k in keys if len(payload.get(k,[]))==160),[])
+        except Exception as e:
+            print("English Y1Y2 canonical master load error:",repr(e),flush=True)
+            master=[]
     if len(master)!=160: return list(verified.values())
     out=[]
     for r in master:
@@ -23816,7 +23823,7 @@ def _eng12_unit_menu(cid,page=0):
     ss=state.setdefault(cid,{})
     rows=_eng12_rows(_eng12_year_label(ss))
     if not rows:
-        return send(cid,"🚧 <b>Data English BOT_READY Tahun 1–2 belum tersedia.</b>",
+        return send(cid,"🚧 <b>Master English Tahun 1–2 gagal dimuatkan pada runtime.</b>",
                     [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
     units=_eng12_unit_catalog(_eng12_year_label(ss),rows)
     ss["_eng12_rows"]=rows; ss["_eng12_units"]=units
