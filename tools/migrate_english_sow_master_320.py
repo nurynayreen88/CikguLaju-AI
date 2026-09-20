@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-import os, sqlite3, importlib.util, argparse
+import os, sqlite3, importlib.util, argparse, json
 
-def load_master(patch_path):
-    spec=importlib.util.spec_from_file_location("eng_patch", patch_path)
-    mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-    master=getattr(mod,"_ENG12_SOW_MASTER")
+def load_master(patch_path=None, json_path=None):
+    if json_path:
+        with open(json_path,"r",encoding="utf-8") as fh:
+            master=json.load(fh)
+    else:
+        spec=importlib.util.spec_from_file_location("eng_patch", patch_path)
+        mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+        master=getattr(mod,"_ENG12_SOW_MASTER")
     for year in ("Tahun 1","Tahun 2"):
         rows=master.get(year,[]); nums=[int(r[0]) for r in rows]
         assert len(rows)==160 and len(set(nums))==160 and set(nums)==set(range(1,161)), (year,len(rows))
         assert all(len(r)>=7 and all(str(x).strip() for x in r[:7]) for r in rows)
     return master
 
-def migrate(db_path, patch_path):
-    master=load_master(patch_path)
+def migrate(db_path, patch_path=None, json_path=None):
+    master=load_master(patch_path, json_path)
     con=sqlite3.connect(db_path); con.row_factory=sqlite3.Row; c=con.cursor()
     c.execute("""CREATE TABLE IF NOT EXISTS sow_master_320(
       year_label TEXT NOT NULL, lesson_no INTEGER NOT NULL, skill_lesson TEXT NOT NULL,
@@ -57,4 +61,5 @@ def migrate(db_path, patch_path):
 if __name__=="__main__":
     ap=argparse.ArgumentParser(); ap.add_argument("db")
     ap.add_argument("--patch",default=os.path.join(os.path.dirname(__file__),"patch_english_y1y2_bot_ready_v1.py"))
-    a=ap.parse_args(); print(migrate(a.db,a.patch))
+    ap.add_argument("--json",default=os.path.join(os.path.dirname(os.path.dirname(__file__)),"data","english_y1y2_sow_master_320.json"))
+    a=ap.parse_args(); print(migrate(a.db,a.patch,a.json if os.path.exists(a.json) else None))
