@@ -420,6 +420,22 @@ def callback(cid,d):
             "UNIT_0_TO_4" if _eng12_year_label(ss)=="Tahun 1" else
             "UNIT_5_TO_9" if _eng12_year_label(ss)=="Tahun 2" else ""
         )
+        ss["super_minds_1_unit_pages"]={
+            "friends":{"unit":0,"sb_start":4,"tb_start":4},
+            "at school":{"unit":1,"sb_start":10,"tb_start":10},
+            "let’s play!":{"unit":2,"sb_start":22,"tb_start":22},
+            "let's play!":{"unit":2,"sb_start":22,"tb_start":22},
+            "pet show":{"unit":3,"sb_start":34,"tb_start":34},
+            "lunchtime":{"unit":4,"sb_start":46,"tb_start":46},
+            "free time":{"unit":5,"sb_start":58,"tb_start":58},
+            "the old house":{"unit":6,"sb_start":70,"tb_start":70},
+            "get dressed!":{"unit":7,"sb_start":82,"tb_start":82},
+            "get dressed":{"unit":7,"sb_start":82,"tb_start":82},
+            "the robot":{"unit":8,"sb_start":94,"tb_start":94},
+            "at the beach":{"unit":9,"sb_start":106,"tb_start":106},
+        }
+        _smkey=" ".join(str(ss.get("unit_title") or ss.get("topic") or "").lower().split())
+        ss["super_minds_1_unit_page_map"]=ss["super_minds_1_unit_pages"].get(_smkey,{})
         ss["reject_super_minds_level_2"]=True
         ss["teacher_book_integration_rule"]=(
             "Map the selected SB/WB page to its Teacher's Book teaching notes; "
