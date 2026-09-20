@@ -24002,7 +24002,7 @@ def _eng12_lesson_menu(cid,ui,page=0):
     return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
 
 def _eng12_audio_zip_path():
-    import os, requests, re
+    import os,requests,re
     candidates=[
         os.environ.get("CIKGULAJU_SUPERMINDS_AUDIO_ZIP","").strip(),
         os.path.join(os.path.dirname(__file__),"super_minds_1_audio_cds.zip"),
@@ -24012,39 +24012,36 @@ def _eng12_audio_zip_path():
         if x and os.path.exists(x) and os.path.getsize(x)>1000000:
             return x
     drive_id=os.environ.get("CIKGULAJU_SUPERMINDS_AUDIO_DRIVE_ID","1zN35ALOo0-1N9BYkkZ53_c4t_movwHar").strip()
-    if not drive_id: return ""
-    out=os.path.join("/tmp","super_minds_1_audio_cds.zip")
+    if not drive_id:return ""
+    out="/tmp/super_minds_1_audio_cds.zip"
     try:
-        sess=requests.Session()
-        url="https://drive.google.com/uc?export=download&id="+drive_id
-        rr=sess.get(url,timeout=60,allow_redirects=True)
-        # New Drive large-file flow often returns an HTML warning page with a
-        # confirm token and uuid instead of the legacy download_warning cookie.
-        if "text/html" in (rr.headers.get("content-type") or "").lower():
-            html=rr.text
-            confirm=re.search(r'name="confirm" value="([^"]+)"',html)
-            uuid=re.search(r'name="uuid" value="([^"]+)"',html)
-            form=re.search(r'<form[^>]+action="([^"]+)"',html)
-            if confirm:
-                params={"id":drive_id,"export":"download","confirm":confirm.group(1)}
-                if uuid: params["uuid"]=uuid.group(1)
-                dl=(form.group(1).replace("&amp;","&") if form else "https://drive.usercontent.google.com/download")
-                rr=sess.get(dl,params=params,timeout=180,stream=True,allow_redirects=True)
-        else:
-            # Legacy cookie confirmation.
-            token=next((v for k,v in rr.cookies.items() if k.startswith("download_warning")),None)
-            if token:
-                rr=sess.get(url+"&confirm="+token,timeout=180,stream=True,allow_redirects=True)
+        s=requests.Session()
+        # Use Drive's current usercontent endpoint first. Its large-file warning
+        # page contains a form whose hidden fields must ALL be replayed.
+        url="https://drive.usercontent.google.com/download"
+        rr=s.get(url,params={"id":drive_id,"export":"download","confirm":"t"},timeout=60,allow_redirects=True)
         ctype=(rr.headers.get("content-type") or "").lower()
+        if "text/html" in ctype:
+            html=rr.text
+            action=re.search(r'<form[^>]+action="([^"]+)"',html,re.I)
+            params={}
+            for name,val in re.findall(r'<input[^>]+name="([^"]+)"[^>]+value="([^"]*)"',html,re.I):
+                params[name]=val.replace("&amp;","&")
+            if not params:
+                for name,val in re.findall(r'<input[^>]+value="([^"]*)"[^>]+name="([^"]+)"',html,re.I):
+                    params[val]=name
+            dl=(action.group(1).replace("&amp;","&") if action else url)
+            if params:
+                rr=s.get(dl,params=params,timeout=240,stream=True,allow_redirects=True)
         with open(out,"wb") as fh:
             for chunk in rr.iter_content(1024*1024):
-                if chunk: fh.write(chunk)
+                if chunk:fh.write(chunk)
         if rr.ok and os.path.getsize(out)>1000000:
             with open(out,"rb") as fh:
-                if fh.read(2)==b"PK": return out
-        try: os.unlink(out)
-        except Exception: pass
-        print("English Y1Y2 audio Drive ZIP download failed:",rr.status_code,ctype,flush=True)
+                if fh.read(2)==b"PK":return out
+        try:os.unlink(out)
+        except Exception:pass
+        print("English Y1Y2 audio Drive ZIP download failed:",rr.status_code,(rr.headers.get("content-type") or ""),flush=True)
     except Exception as e:
         print("English Y1Y2 audio Drive ZIP download error:",repr(e),flush=True)
     return ""
