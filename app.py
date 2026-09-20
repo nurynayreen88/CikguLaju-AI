@@ -23846,8 +23846,6 @@ def _eng12_db_path():
 
     if os.path.exists(local_v15) and os.path.getsize(local_v15)>100000:
         return local_v15
-    if os.path.exists(cached) and os.path.getsize(cached)>100000:
-        return cached
 
     drive_id=os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_V15_DRIVE_ID","1O7UHbE9VpKrCQ7z-74zDQ3VUOB3RbuwA").strip()
     if drive_id:
@@ -23862,6 +23860,11 @@ def _eng12_db_path():
             print("English v15 DB download rejected:",rr.status_code,rr.headers.get("content-type"),len(rr.content),flush=True)
         except Exception as e:
             print("English v15 DB download error:",repr(e),flush=True)
+
+    # Use an existing cache only if a fresh v15 download is temporarily unavailable.
+    if os.path.exists(cached) and os.path.getsize(cached)>100000:
+        print("English runtime using cached v15 after refresh failure",flush=True)
+        return cached
 
     # Non-destructive emergency fallbacks only.
     for x in (env_path,fallback):
