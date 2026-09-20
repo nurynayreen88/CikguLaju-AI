@@ -23754,17 +23754,33 @@ def _eng12_rows(year_label):
             except sqlite3.Error: master=[]
         finally: con.close()
     if len(master)!=160:
-        jp=os.path.join(os.path.dirname(__file__),"data","english_y1y2_sow_master_320.json")
-        try:
-            with open(jp,"r",encoding="utf-8") as fh:
-                payload=json.load(fh)
-            # tolerate legacy year labels in state/runtime while keeping canonical keys
+        # Primary source is the checked-in canonical JSON. Resolve from several
+        # deployment roots because Render/Gunicorn may start with a different CWD.
+        roots=[os.path.dirname(os.path.abspath(__file__)), os.getcwd()]
+        paths=[]
+        for root in roots:
+            paths.extend([
+                os.path.join(root,"data","english_y1y2_sow_master_320.json"),
+                os.path.join(root,"english_y1y2_sow_master_320.json"),
+            ])
+        payload=None
+        for jp in paths:
+            try:
+                if os.path.exists(jp):
+                    with open(jp,"r",encoding="utf-8") as fh: payload=json.load(fh)
+                    break
+            except Exception as e:
+                print("English Y1Y2 canonical master load error:",jp,repr(e),flush=True)
+        if isinstance(payload,dict):
             aliases={"Tahun 1":["Tahun 1","Year 1","1"],"Tahun 2":["Tahun 2","Year 2","2"]}
             keys=aliases.get(year_label,[year_label])
-            master=next((payload.get(k,[]) for k in keys if len(payload.get(k,[]))==160),[])
-        except Exception as e:
-            print("English Y1Y2 canonical master load error:",repr(e),flush=True)
-            master=[]
+            master=next((payload.get(k,[]) for k in keys if isinstance(payload.get(k),list) and len(payload.get(k))==160),[])
+        if len(master)!=160:
+            # Last-resort embedded master from the stable English runtime block.
+            try:
+                emb=globals().get("_ENG12_SOW_MASTER") or {}
+                master=emb.get(year_label,[]) if isinstance(emb,dict) else []
+            except Exception: master=[]
     if len(master)!=160: return list(verified.values())
     out=[]
     for r in master:
