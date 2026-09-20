@@ -240,7 +240,7 @@ def callback(cid,d):
         return show_grades(cid)
     return _callback_v2501_base(cid,d)
 
-APP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2501"
+def _main_pdp_entry_v2502(cid):\n    ss=state.setdefault(cid,{})\n    ss["task"]="rph"\n    ss["requested_material"]="rph"\n    ss["quick_material_flow"]=True\n    ss["assessment_mode"]="formative"\n    return show_grades(cid)\n\nAPP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2502"
 # END MAIN_PDP_ENTRY_V2501
 '''
     P.write_text(_txt,encoding="utf-8")
