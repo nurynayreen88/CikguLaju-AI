@@ -23731,38 +23731,53 @@ def _eng12_db_path():
     return ""
 
 def _eng12_rows(year_label):
-    import sqlite3
+    import sqlite3, json, os
     path=_eng12_db_path()
-    if not path: return []
-    con=sqlite3.connect(path); con.row_factory=sqlite3.Row
-    try:
-        rs=con.execute("""
-        SELECT year_label,subject,lesson_no,unit_title,topic,textbook_title,
-               textbook_page_start,textbook_page_end,workbook_page_start,workbook_page_end,
-               workbook_status,audio_status,audio_reference,ready_for_bot,notes
-        FROM bot_lesson_index
-        WHERE year_label=? AND ready_for_bot=1
-        ORDER BY CAST(lesson_no AS INTEGER)
-        """,(year_label,)).fetchall()
-        return [dict(r) for r in rs]
-    finally:
-        con.close()
+    verified={}
+    master=[]
+    if path:
+        con=sqlite3.connect(path); con.row_factory=sqlite3.Row
+        try:
+            try:
+                rs=con.execute("""SELECT year_label,subject,lesson_no,unit_title,topic,textbook_title,
+                    textbook_page_start,textbook_page_end,workbook_page_start,workbook_page_end,
+                    workbook_status,audio_status,audio_reference,ready_for_bot,notes
+                    FROM bot_lesson_index WHERE year_label=? AND ready_for_bot=1
+                    ORDER BY CAST(lesson_no AS INTEGER)""",(year_label,)).fetchall()
+                verified={int(r["lesson_no"]):dict(r) for r in rs}
+            except sqlite3.Error: verified={}
+            try:
+                master=con.execute("""SELECT lesson_no,skill_lesson,unit_title,main_content_standard,
+                    main_learning_standard,complementary_content_standard,
+                    complementary_learning_standard,source_mode
+                    FROM sow_master_320 WHERE year_label=? ORDER BY lesson_no""",(year_label,)).fetchall()
+            except sqlite3.Error: master=[]
+        finally: con.close()
+    if len(master)!=160:
+        jp=os.path.join(os.path.dirname(__file__),"data","english_y1y2_sow_master_320.json")
+        try:
+            with open(jp,"r",encoding="utf-8") as fh: master=json.load(fh).get(year_label,[])
+        except Exception: master=[]
+    if len(master)!=160: return list(verified.values())
+    out=[]
+    for r in master:
+        vals=list(r); ln,skill,unit,mcs,mls,ccs,cls=vals[:7]
+        item=dict(verified.get(int(ln),{}))
+        item.update({"year_label":year_label,"subject":"Bahasa Inggeris","lesson_no":int(ln),
+                     "unit_title":unit,"topic":unit,"ready_for_bot":1,
+                     "_sow_skill":skill,"_sow_main_cs":mcs,"_sow_main_ls":mls,
+                     "_sow_comp_cs":ccs,"_sow_comp_ls":cls})
+        out.append(item)
+    return out
 
 def _eng12_standards(year_label,lesson_no):
-    import sqlite3
-    path=_eng12_db_path()
-    if not path: return []
-    con=sqlite3.connect(path); con.row_factory=sqlite3.Row
-    try:
-        rs=con.execute("""
-        SELECT role,content_standard,learning_standard
-        FROM bot_lesson_standards
-        WHERE year_label=? AND lesson_no=?
-        ORDER BY CASE role WHEN 'MAIN' THEN 0 ELSE 1 END,id
-        """,(year_label,str(lesson_no))).fetchall()
-        return [dict(r) for r in rs]
-    finally:
-        con.close()
+    rows=_eng12_rows(year_label)
+    for r in rows:
+        if int(r.get("lesson_no") or 0)==int(lesson_no):
+            if r.get("_sow_main_cs"):
+                return [{"role":"MAIN","content_standard":r["_sow_main_cs"],"learning_standard":r["_sow_main_ls"]},
+                        {"role":"COMPLEMENTARY","content_standard":r["_sow_comp_cs"],"learning_standard":r["_sow_comp_ls"]}]
+    return []
 
 def _eng12_unit_catalog(year_label,rows):
     # Canonical textbook units. Aliases prevent duplicate buttons caused by
