@@ -24008,20 +24008,26 @@ def _eng12_send_verified_audio(cid,audio_reference):
 
 def _eng12_teacher_guidance(year_label,lesson_no):
     import json,glob,os
-    if year_label!="Tahun 1": return {}
+    # v25.01: load verified Teacher Book guidance for both primary years.
+    if year_label not in ("Tahun 1","Tahun 2"): return {}
     roots=[os.path.dirname(os.path.abspath(__file__)),os.getcwd()]
+    patterns=("teacher_book_guidance_y1*.json","teacher_book_guidance_y2*.json",
+              "teacher_book_guidance_year1*.json","teacher_book_guidance_year2*.json",
+              "teacher_book_guidance*.json")
     seen=set()
     for root in roots:
-        for p in glob.glob(os.path.join(root,"data","teacher_book_guidance_y1*.json")):
-            if p in seen: continue
-            seen.add(p)
-            try:
-                with open(p,"r",encoding="utf-8") as fh: payload=json.load(fh)
-                for g in payload.get("guidance",[]):
-                    if str(g.get("year"))==year_label and int(g.get("lesson_no"))==int(lesson_no):
-                        return g
-            except Exception as e:
-                print("English teacher guidance load error:",p,repr(e),flush=True)
+        for pattern in patterns:
+            for p in glob.glob(os.path.join(root,"data",pattern)):
+                if p in seen: continue
+                seen.add(p)
+                try:
+                    with open(p,"r",encoding="utf-8") as fh: payload=json.load(fh)
+                    rows=payload.get("guidance",[]) if isinstance(payload,dict) else payload
+                    for g in rows if isinstance(rows,list) else []:
+                        if str(g.get("year"))==year_label and int(g.get("lesson_no"))==int(lesson_no):
+                            return g
+                except Exception as e:
+                    print("English teacher guidance load error:",p,repr(e),flush=True)
     return {}
 
 def _eng12_material_pack(cid):
