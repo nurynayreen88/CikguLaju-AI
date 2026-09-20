@@ -402,8 +402,20 @@ def callback(cid,d):
         ss["rph_allow_generic_activity"]=False
         ss["worksheet_topic"]=ss.get("topic","")
         ss["worksheet_skill"]=ss.get("lesson_skill","")
+        ss["worksheet_curriculum_context"]=ss.get("material_curriculum_context","")
+        ss["worksheet_source_mode"]=ss.get("lesson_source_mode","SOW_ONLY")
+        ss["worksheet_require_skill_match"]=True
+        ss["worksheet_require_main_sp_match"]=True
+        ss["worksheet_allow_generic_questions"]=False
+        ss["worksheet_require_answer_key"]=True
         ss["bbm_topic"]=ss.get("topic","")
         ss["bbm_skill"]=ss.get("lesson_skill","")
+        ss["bbm_curriculum_context"]=ss.get("material_curriculum_context","")
+        ss["bbm_source_mode"]=ss.get("lesson_source_mode","SOW_ONLY")
+        ss["bbm_require_skill_match"]=True
+        ss["bbm_require_main_sp_match"]=True
+        ss["bbm_allow_generic_content"]=False
+        ss["bbm_use_verified_source_content_only"]=True
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
