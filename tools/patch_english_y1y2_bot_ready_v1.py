@@ -418,6 +418,7 @@ def callback(cid,d):
         ss["bbm_use_verified_source_content_only"]=True
         # Year 1/2 QA contract shared by all three material engines.
         ss["eng12_material_qa"]={
+            "qa_version":"ENG12_QA_V1",
             "year":_eng12_year_label(ss),
             "lesson_no":int(ss.get("lesson_no") or 0),
             "unit":ss.get("unit_title") or ss.get("topic",""),
@@ -430,7 +431,18 @@ def callback(cid,d):
             "textbook_page":ss.get("textbook_page_start"),
             "workbook_status":ss.get("workbook_status"),
             "audio_status":ss.get("audio_status"),
+            "ready_rule":"lesson+skill+main_sp+complementary_sp must match selected SOW lesson",
         }
+        _qa=ss["eng12_material_qa"]
+        _qa_errors=[]
+        if _qa["year"] not in ("Tahun 1","Tahun 2"): _qa_errors.append("year")
+        if not (1 <= int(_qa["lesson_no"] or 0) <= 160): _qa_errors.append("lesson_no")
+        for _f in ("unit","skill","main_sk","main_sp","complementary_sk","complementary_sp"):
+            if not str(_qa.get(_f) or "").strip(): _qa_errors.append(_f)
+        if _qa_errors:
+            print("ENG12 MATERIAL QA BLOCKED",kind,_qa_errors,_qa,flush=True)
+            return send(cid,"⚠️ <b>Bahan belum boleh dijana.</b>\nData SOW Lesson tidak lengkap: "+", ".join(_qa_errors)+".\nSila pilih Lesson semula.",[[{"text":"📚 Pilih Unit/Lesson","callback_data":"eng12_units"}]])
+        ss["eng12_material_qa_status"]="PASS"
         aliases={
             "rph":["task_rph","rph","buat_rph","generate_rph"],
             "worksheet":["task_worksheet","worksheet","buat_worksheet","generate_worksheet"],
