@@ -24002,7 +24002,7 @@ def _eng12_lesson_menu(cid,ui,page=0):
     return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
 
 def _eng12_audio_zip_path():
-    import os, requests
+    import os, requests, re
     candidates=[
         os.environ.get("CIKGULAJU_SUPERMINDS_AUDIO_ZIP","").strip(),
         os.path.join(os.path.dirname(__file__),"super_minds_1_audio_cds.zip"),
@@ -24016,15 +24016,25 @@ def _eng12_audio_zip_path():
     out=os.path.join("/tmp","super_minds_1_audio_cds.zip")
     try:
         sess=requests.Session()
-        # Google Drive large files may require a download warning/confirm token.
         url="https://drive.google.com/uc?export=download&id="+drive_id
-        rr=sess.get(url,timeout=60,stream=True,allow_redirects=True)
-        token=None
-        for k,v in rr.cookies.items():
-            if k.startswith("download_warning"): token=v; break
-        if token:
-            rr.close()
-            rr=sess.get(url+"&confirm="+token,timeout=180,stream=True,allow_redirects=True)
+        rr=sess.get(url,timeout=60,allow_redirects=True)
+        # New Drive large-file flow often returns an HTML warning page with a
+        # confirm token and uuid instead of the legacy download_warning cookie.
+        if "text/html" in (rr.headers.get("content-type") or "").lower():
+            html=rr.text
+            confirm=re.search(r'name="confirm" value="([^"]+)"',html)
+            uuid=re.search(r'name="uuid" value="([^"]+)"',html)
+            form=re.search(r'<form[^>]+action="([^"]+)"',html)
+            if confirm:
+                params={"id":drive_id,"export":"download","confirm":confirm.group(1)}
+                if uuid: params["uuid"]=uuid.group(1)
+                dl=(form.group(1).replace("&amp;","&") if form else "https://drive.usercontent.google.com/download")
+                rr=sess.get(dl,params=params,timeout=180,stream=True,allow_redirects=True)
+        else:
+            # Legacy cookie confirmation.
+            token=next((v for k,v in rr.cookies.items() if k.startswith("download_warning")),None)
+            if token:
+                rr=sess.get(url+"&confirm="+token,timeout=180,stream=True,allow_redirects=True)
         ctype=(rr.headers.get("content-type") or "").lower()
         with open(out,"wb") as fh:
             for chunk in rr.iter_content(1024*1024):
