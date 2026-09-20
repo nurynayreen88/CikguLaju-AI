@@ -3193,7 +3193,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
     phases=[('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))]
     for phase,text in phases:
-        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=text or '—'; cells[2].text=''
+        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=_rph_format_activity_lines(text) if text else '—'; cells[2].text=''
     for row in t2.rows:
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
@@ -3595,7 +3595,7 @@ def create_pdf_file(s, ai_text, cid):
         story.extend([info,Spacer(1,3*mm)])
         phase_rows=[[Paragraph('<b>Fasa / Masa</b>',body_style),Paragraph('<b>Aktiviti Pengajaran & Pembelajaran</b>',body_style),Paragraph('<b>Catatan</b>',body_style)]]
         for phase,key in [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]:
-            val=escape(rph.get(key) or '—').replace('\n','<br/>')
+            val=escape(_rph_format_activity_lines(rph.get(key) or '—')).replace('\n','<br/>')
             phase_rows.append([Paragraph('<b>'+phase+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('BACKGROUND',(0,0),(-1,0),colors.whitesmoke),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
@@ -9962,7 +9962,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
     phases=([('Set Induction',rph.get('SET INDUKSI','')),('Main Activities',rph.get('AKTIVITI UTAMA','')),('Closure',rph.get('PENUTUP',''))] if _is_english_subject(s) else [('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))])
     for phase,text in phases:
-        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=text or '—'; cells[2].text=''
+        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=_rph_format_activity_lines(text) if text else '—'; cells[2].text=''
     for row in t2.rows:
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
@@ -10469,7 +10469,7 @@ def create_pdf_file(s, ai_text, cid):
             story.append(Spacer(1,2*mm))
         phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else 'Fasa / Masa')+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else 'Aktiviti Pengajaran & Pembelajaran')+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else 'Catatan')+'</b>',body_style)]]
         for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]):
-            val=escape(rph.get(key) or '—').replace('\n','<br/>')
+            val=escape(_rph_format_activity_lines(rph.get(key) or '—')).replace('\n','<br/>')
             phase_rows.append([Paragraph('<b>'+phase+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
