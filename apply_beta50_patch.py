@@ -235,8 +235,15 @@ def callback(cid,d):
         # Start the same proven curriculum entry used by material tasks.
         # "task_rph" is handled by the legacy dispatcher and then the later
         # English/BM lesson routers take ownership after year/subject selection.
+        ss["task"]="quick_material"
+        ss["requested_material"]="rph"
+        return send(cid,"📚 <b>Sediakan Bahan PdP</b>\\n\\nPilih <b>Teruskan</b> untuk memilih Tahun/Tingkatan dan menyediakan bahan berdasarkan Lesson/PdP yang disusun mengikut RPT/SOW.",[[{"text":"Teruskan ➡️","callback_data":"pdp_material_continue_v2503"}],[{"text":"🏠 Menu Utama","callback_data":"home"}]])
+    if ds=="pdp_material_continue_v2503":
+        ss=state.setdefault(cid,{})
         ss["task"]="rph"
         ss["requested_material"]="rph"
+        ss["quick_material_flow"]=True
+        ss["assessment_mode"]="formative"
         return show_grades(cid)
     return _callback_v2501_base(cid,d)
 
