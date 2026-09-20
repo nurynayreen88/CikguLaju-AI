@@ -441,6 +441,22 @@ def callback(cid,d):
         _smkey=" ".join(str(ss.get("unit_title") or ss.get("topic") or "").lower().split())
         ss["super_minds_1_unit_page_map"]=ss["super_minds_1_unit_pages"].get(_smkey,{})
         ss["reject_super_minds_level_2"]=True
+        ss["rph_source_priority"]=["SOW_RPT","SUPER_MINDS_1_FIRST_EDITION","TEACHER_BOOK_GUIDANCE","PEDAGOGICAL_ENRICHMENT"]
+        ss["rph_source_labels"]={
+            "curriculum":"VERIFIED_SOW_RPT",
+            "book_mapping":"VERIFIED_SUPER_MINDS_1_FIRST_EDITION",
+            "teacher_guidance":"TEACHER_BOOK_GUIDED",
+            "added_activity":"AI_ENRICHED"
+        }
+        ss["rph_generation_guardrails"]={
+            "preserve_verified_mapping":True,
+            "allow_activity_variation":True,
+            "allow_bbm_variation":True,
+            "allow_differentiation":True,
+            "forbid_fake_page_numbers":True,
+            "forbid_fake_audio_tracks":True,
+            "forbid_fake_sk_sp":True
+        }
         ss["teacher_book_first_edition_runtime_contract"]={
             "source":"Super Minds Level 1 Teacher's Book",
             "isbn":"9780521220613",
