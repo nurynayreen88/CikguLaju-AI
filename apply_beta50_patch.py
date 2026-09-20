@@ -171,7 +171,7 @@ if _eng_patch.exists():
           "eng12_block=",("ENGLISH Y1Y2 BOT READY V1" in _txt),
           "eng12_unit=",("eng12_lsnunit_" in _txt),
           "eng12_lesson=",("eng12_lesson_" in _txt),
-          "callback_defs=",len(re.findall(r"(?m)^def callback\\s*\\(",_txt)),
+          "callback_defs=",_txt.count("\ndef callback("),
           flush=True)
     # Final guard: remove the legacy English unit->SK route after all runtime patches.
     _txt=P.read_text(encoding="utf-8")
