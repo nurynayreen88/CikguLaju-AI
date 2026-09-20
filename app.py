@@ -4597,8 +4597,8 @@ def _temporary_auto_pack_v2386(cid):
         _generation_progress_update(cid,pmid,85,'Menyemak audio dan media berkaitan...','Bahan Pantas')
         if ss.get('audio_status')=='VERIFIED_AUDIO' and ss.get('audio_reference'):
             try:
-                _eng12_send_verified_audio(cid,ss.get('audio_reference'))
-                status['🔊 Audio / Media']='dihantar'
+                audio_sent=_eng12_send_verified_audio(cid,ss.get('audio_reference'))
+                status['🔊 Audio / Media']='dihantar' if audio_sent else '🚧 Audio verified ada tetapi fail audio belum berjaya dihantar'
             except Exception as e:
                 print('v25.01 verified audio:',repr(e),flush=True)
                 status['🔊 Audio / Media']='🚧 Rujukan verified ada, penghantaran gagal'
@@ -24026,15 +24026,16 @@ def _eng12_audio_member_for_ref(ref):
 def _eng12_send_verified_audio(cid,audio_reference):
     import os,zipfile,tempfile,requests
     refs=[x.strip() for x in str(audio_reference or "").replace(",", ";").split(";") if x.strip()]
-    if not refs: return
+    if not refs: return False
     zpath=_eng12_audio_zip_path()
-    if not zpath: 
+    if not zpath:
         print("English Y1Y2 audio zip missing",flush=True)
-        return
+        return False
     token=(globals().get("BOT_TOKEN") or globals().get("TOKEN") or os.environ.get("BOT_TOKEN") or "").strip()
     if not token:
         print("English Y1Y2 Telegram token missing",flush=True)
-        return
+        return False
+    sent=0
     with zipfile.ZipFile(zpath) as z:
         for ref in refs:
             member=_eng12_audio_member_for_ref(ref)
@@ -24056,9 +24057,12 @@ def _eng12_send_verified_audio(cid,audio_reference):
                         rr=requests.post(f"https://api.telegram.org/bot{token}/sendDocument",data=data,files=files,timeout=60)
                     if not rr.ok:
                         print("English Y1Y2 audio send failed:",ref,rr.status_code,rr.text[:300],flush=True)
+                    else:
+                        sent += 1
             finally:
                 try: os.unlink(tpath)
                 except Exception: pass
+    return sent > 0
 
 def _eng12_teacher_guidance(year_label,lesson_no):
     import json,glob,os
