@@ -410,6 +410,15 @@ def callback(cid,d):
             "rujuk teacher's book","ikut teacher's book","rujuk buku panduan guru"
         ]
         ss["rph_teacher_book_content_mode"]="PARAPHRASE_ACTIONABLE_STEPS"
+        ss["teacher_book_required_fields"]=[
+            "warm_up","student_book_procedure","workbook_procedure",
+            "audio_procedure","checking_feedback","ending_lesson"
+        ] if ss.get("has_textbook_link") else []
+        ss["teacher_book_integration_rule"]=(
+            "Map the selected SB/WB page to its Teacher's Book teaching notes; "
+            "extract the relevant procedure and paraphrase it into executable RPH steps. "
+            "Do not output a Teacher's Book reference as a substitute for the procedure."
+        ) if ss.get("has_textbook_link") else ""
         ss["worksheet_topic"]=ss.get("topic","")
         ss["worksheet_skill"]=ss.get("lesson_skill","")
         ss["worksheet_curriculum_context"]=ss.get("material_curriculum_context","")
