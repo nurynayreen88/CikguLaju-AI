@@ -441,6 +441,17 @@ def callback(cid,d):
         _smkey=" ".join(str(ss.get("unit_title") or ss.get("topic") or "").lower().split())
         ss["super_minds_1_unit_page_map"]=ss["super_minds_1_unit_pages"].get(_smkey,{})
         ss["reject_super_minds_level_2"]=True
+        ss["teacher_book_first_edition_runtime_contract"]={
+            "source":"Super Minds Level 1 Teacher's Book",
+            "isbn":"9780521220613",
+            "edition":"First Edition",
+            "year1_units":[0,1,2,3,4],
+            "year2_units":[5,6,7,8,9],
+            "unit_tb_starts":{"0":4,"1":10,"2":22,"3":34,"4":46,"5":58,"6":70,"7":82,"8":94,"9":106},
+            "required_rph_sections":["aims","warm_up","student_book_procedure","workbook_procedure","audio_procedure","checking_feedback","ending_lesson","extension_optional"],
+            "placeholder_reference_forbidden":True,
+            "unverified_guidance_policy":"DO_NOT_INVENT"
+        }
         ss["teacher_book_integration_rule"]=(
             "Map the selected SB/WB page to its Teacher's Book teaching notes; "
             "extract the relevant procedure and paraphrase it into executable RPH steps. "
