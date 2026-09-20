@@ -24269,7 +24269,7 @@ def _eng12_send_verified_audio(cid,audio_reference):
         return False
     sent=0
     for ref in refs:
-        m=re.search(r"CD\\s*([123])\\s*[-–:]?\\s*(?:Track\\s*)?(\\d{1,2})",str(ref),re.I)
+        m=re.search(r"CD\s*([123])\s*[-–:]?\s*(?:Track\s*)?(\d{1,2})",str(ref),re.I)
         if not m:
             print("English audio invalid reference:",ref,flush=True); continue
         key=f"CD{int(m.group(1))}-{int(m.group(2)):02d}"
