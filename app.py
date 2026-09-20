@@ -24151,9 +24151,8 @@ def _eng12_material_pack(cid):
     ss["curriculum_focus"]="; ".join([x for x in ["Lesson "+ln,skill,str(ss.get("topic") or "")," / ".join(refs)] if x])
     ss["textbook_note"]="; ".join(refs)
     ss["lesson_context"]=ss["curriculum_focus"]
-    if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
-        try: _eng12_send_verified_audio(cid,ss.get("audio_reference"))
-        except Exception as e: print("English Y1Y2 lesson audio error:",repr(e),flush=True)
+    # Audio is sent once by the material pack so its status reflects the real
+    # Telegram delivery result. Do not pre-send it here.
     return _temporary_auto_pack_v2386(cid)
 
 def _eng12_commit_lesson(cid,idx):
@@ -24190,11 +24189,8 @@ def _eng12_commit_lesson(cid,idx):
     })
     _commit_multi_sp(ss,mapped[:8])
     send(cid,f"✅ <b>Lesson {ln}</b> dipilih.\nSK/SP dipadankan automatik daripada DB BOT_READY verified.",None)
-    if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
-        try:
-            _eng12_send_verified_audio(cid,ss.get("audio_reference"))
-        except Exception as e:
-            print("English Y1Y2 verified audio send error:",repr(e),flush=True)
+    # Do not send audio here: the material pack performs the single canonical
+    # delivery attempt and reports success/failure accurately.
     # Continue through the known material flow. Some legacy builds expose
     # after_curriculum_selected but it can be a no-op for this injected route.
     # The stable auto-pack function is the canonical continuation after SK/SP.
