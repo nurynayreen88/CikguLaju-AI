@@ -20401,7 +20401,7 @@ def callback(cid,d):
     try:
         _eng_ds=str(d or "")
         _eng_ss=state.setdefault(cid,{})
-        if globals().get("_eng12_is_english_subject_callback") and _eng12_is_english_subject_callback(_eng_ds) and globals().get("_eng12_year_label") and _eng12_year_label(_eng_ss) and globals().get("_eng12_db_path") and _eng12_db_path():
+        if globals().get("_eng12_is_english_subject_callback") and _eng12_is_english_subject_callback(_eng_ds) and globals().get("_eng12_year_label") and _eng12_year_label(_eng_ss):
             _eng_ss["subject"]="Bahasa Inggeris"
             for _eng_k in ("topic","subtopic","selected_sk","selected_sp","_eng12_rows","_eng12_units","_eng12_lesson_rows"):
                 _eng_ss.pop(_eng_k,None)
@@ -23992,7 +23992,7 @@ _callback_eng12_base=callback
 def callback(cid,d):
     ss=state.setdefault(cid,{})
     ds=str(d or "")
-    if _eng12_is_english_subject_callback(ds) and _eng12_year_label(ss) and _eng12_db_path():
+    if _eng12_is_english_subject_callback(ds) and _eng12_year_label(ss):
         ss["subject"]="Bahasa Inggeris"
         for k in ("topic","subtopic","selected_sk","selected_sp","_eng12_rows","_eng12_units","_eng12_lesson_rows"):
             ss.pop(k,None)
