@@ -52,7 +52,7 @@ jobs:
           assert "'✏️ Masukkan Kelas Manual'" in s
           assert "return _lesson_to_class_v2439(cid)" in s
           assert "return _lesson_entry_v2440(cid)" in s
-          assert 'ENGLISH Y1Y2 BOT READY V1' in s
+          assert s.count('# ===== ENGLISH Y1Y2 BOT READY V1 =====') == 1, 'duplicate English runtime block remains'
           assert 'eng12_lesson_' in s
           assert '_ENG12_SOW_MASTER' in s
           assert 'DB_SOW_MASTER_320' in s
