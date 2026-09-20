@@ -23964,6 +23964,23 @@ def _eng12_send_verified_audio(cid,audio_reference):
                 try: os.unlink(tpath)
                 except Exception: pass
 
+def _eng12_material_pack(cid):
+    ss=state.setdefault(cid,{})
+    ln=str(ss.get("lesson_no") or "")
+    skill=str(ss.get("_sow_skill") or "")
+    ps,pe=ss.get("textbook_page_start"),ss.get("textbook_page_end")
+    wp,we=ss.get("workbook_page_start"),ss.get("workbook_page_end")
+    refs=[]
+    if ps not in (None,""): refs.append("Student's Book m/s "+(str(ps) if pe in (None,"",ps) else str(ps)+"-"+str(pe)))
+    if wp not in (None,""): refs.append("Workbook m/s "+(str(wp) if we in (None,"",wp) else str(wp)+"-"+str(we)))
+    ss["curriculum_focus"]="; ".join([x for x in ["Lesson "+ln,skill,str(ss.get("topic") or "")," / ".join(refs)] if x])
+    ss["textbook_note"]="; ".join(refs)
+    ss["lesson_context"]=ss["curriculum_focus"]
+    if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
+        try: _eng12_send_verified_audio(cid,ss.get("audio_reference"))
+        except Exception as e: print("English Y1Y2 lesson audio error:",repr(e),flush=True)
+    return _temporary_auto_pack_v2386(cid)
+
 def _eng12_commit_lesson(cid,idx):
     ss=state.setdefault(cid,{})
     rows=ss.get("_eng12_lesson_rows") or []
@@ -23983,6 +24000,7 @@ def _eng12_commit_lesson(cid,idx):
                       {"text":"🏠 Menu Utama","callback_data":"home"}]])
     ss.update({
         "lesson_no":ln,"lesson":ln,
+        "_sow_skill":str(r.get("_sow_skill") or "").strip(),
         "topic":str(r.get("unit_title") or r.get("topic") or "").strip(),
         "subtopic":str(r.get("topic") or "").strip(),
         "textbook_page_start":r.get("textbook_page_start"),
@@ -24005,7 +24023,7 @@ def _eng12_commit_lesson(cid,idx):
     # Continue through the known material flow. Some legacy builds expose
     # after_curriculum_selected but it can be a no-op for this injected route.
     # The stable auto-pack function is the canonical continuation after SK/SP.
-    nxt=globals().get("_temporary_auto_pack_v2386") or globals().get("after_curriculum_selected")
+    nxt=globals().get("_eng12_material_pack") or globals().get("_temporary_auto_pack_v2386") or globals().get("after_curriculum_selected")
     if callable(nxt):
         return nxt(cid)
     return send(cid,"✅ <b>SK/SP telah dipadankan.</b>\n\nPilih bahan untuk diteruskan.",
