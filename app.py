@@ -901,20 +901,27 @@ def _semantic_full_rph_text(s):
     ])
 
 def _eng_verified_teacher_rph_text(s):
-    """Build English RPH directly from verified Teacher's Book guidance when available."""
+    """Build parser-compatible English RPH from verified Teacher's Book guidance."""
     g=s.get("rph_verified_teacher_guidance") or {}
     if not isinstance(g,dict) or str(g.get("verification_status") or "")!="VERIFIED_TB_SCAN":
         return ""
-    year=str(s.get("year") or "").replace("Tahun ","Year ")
     topic=str(s.get("topic") or g.get("unit") or "").strip()
-    lesson=str(s.get("lesson_no") or s.get("lesson") or "").strip()
-    sk=(str(s.get("sk_code") or "").strip()+" "+str(s.get("sk_text") or "").strip()).strip()
-    sp=(str(s.get("sp_code") or "").strip()+" "+str(s.get("sp_text") or "").strip()).strip()
-    refs=[]
-    ps,pe=s.get("textbook_page_start"),s.get("textbook_page_end")
-    wp,we=s.get("workbook_page_start"),s.get("workbook_page_end")
-    if ps not in (None,""): refs.append("Student's Book p."+ (str(ps) if pe in (None,"",ps) else str(ps)+"-"+str(pe)))
-    if wp not in (None,""): refs.append("Workbook p."+ (str(wp) if we in (None,"",wp) else str(wp)+"-"+str(we)))
+    sk_codes=[]
+    sp_codes=[]
+    for item in (s.get("selected_standards") or s.get("multi_sp") or []):
+        if isinstance(item,dict):
+            x=str(item.get("sk_code") or "").strip()
+            y=str(item.get("sp_code") or "").strip()
+            if x and x not in sk_codes: sk_codes.append(x)
+            if y and y not in sp_codes: sp_codes.append(y)
+    if not sk_codes:
+        for x in str(s.get("sk_code") or "").replace(",",";").split(";"):
+            x=x.strip()
+            if x and x not in sk_codes: sk_codes.append(x)
+    if not sp_codes:
+        for x in str(s.get("sp_code") or "").replace(",",";").split(";"):
+            x=x.strip()
+            if x and x not in sp_codes: sp_codes.append(x)
     aims=str(g.get("aims") or "").strip()
     warm=str(g.get("warm_up") or "").strip()
     sb=str(g.get("student_book_procedure") or "").strip()
@@ -923,23 +930,35 @@ def _eng_verified_teacher_rph_text(s):
     check=str(g.get("checking_feedback") or "").strip()
     ending=str(g.get("ending_lesson") or "").strip()
     ext=str(g.get("extension_optional") or "").strip()
-    stages=[]
-    if warm: stages.append("SET INDUCTION / WARM-UP:\n"+warm)
-    if sb: stages.append("MAIN ACTIVITY — STUDENT'S BOOK:\n"+sb)
-    if wb: stages.append("PRACTICE / CONSOLIDATION — WORKBOOK:\n"+wb)
-    if aud: stages.append("AUDIO:\n"+aud)
-    if check: stages.append("ASSESSMENT / CHECKING:\n"+check)
-    if ending: stages.append("CLOSURE:\n"+ending)
-    if ext: stages.append("OPTIONAL EXTENSION:\n"+ext)
+    main=[]
+    if sb: main.append("Student's Book: "+sb)
+    if wb: main.append("Workbook: "+wb)
+    if aud: main.append("Audio: "+aud)
+    if check: main.append("Checking / assessment: "+check)
+    if ext: main.append("Extension (if appropriate): "+ext)
+    ps=s.get("textbook_page_start"); wp=s.get("workbook_page_start")
+    materials=["Student's Book"]
+    if wp not in (None,""): materials.append("Workbook")
+    if aud: materials.append("verified lesson audio")
+    materials.append("classroom-object / lesson flashcards")
     return "\n".join([
-        "SUBJECT: English","YEAR / FORM: "+year,
-        "LESSON: "+lesson,"TOPIC: "+topic,
-        "TEXTBOOK / WORKBOOK REFERENCE: "+("; ".join(refs) if refs else "Use verified Teacher's Book-linked source"),
-        "CONTENT STANDARD: "+sk,"LEARNING STANDARD: "+sp,
-        "LEARNING OBJECTIVES: "+(aims or "Follow the verified Teacher's Book aim for this lesson."),
-        "SUCCESS CRITERIA: Pupils complete the verified lesson tasks and demonstrate the selected Learning Standard.",
-        "TEACHING AND LEARNING ACTIVITIES:","\n\n".join(stages),
-        "SOURCE STATUS: VERIFIED_TB_SCAN"
+        "MATA PELAJARAN: English",
+        "TAHUN/TINGKATAN: "+str(s.get("year") or ""),
+        "TAJUK: "+topic,
+        "STANDARD KANDUNGAN: "+"; ".join(sk_codes),
+        "STANDARD PEMBELAJARAN: "+"; ".join(sp_codes),
+        "OBJEKTIF PEMBELAJARAN: "+aims,
+        "KRITERIA KEJAYAAN: Pupils can complete the lesson tasks using the target language with teacher observation and task checking.",
+        "PENGETAHUAN SEDIA ADA: Pupils recall the familiar vocabulary and language from the preceding lesson(s) in this unit.",
+        "BAHAN BANTU MENGAJAR: "+", ".join(materials)+".",
+        "EMK / NILAI: Communication, confidence, cooperation and responsibility.",
+        "KBAT / PAK21: Pair work, personalisation, matching and oral response.",
+        "PENTAKSIRAN: Teacher observation, oral responses and checking of the Student's Book / Workbook task.",
+        "SET INDUKSI: "+warm,
+        "AKTIVITI UTAMA: "+"\n".join(main),
+        "PENUTUP: "+ending,
+        "PEMULIHAN / PENGAYAAN: Support pupils with picture/word prompts; use the verified extension only for pupils ready for further practice.",
+        "REFLEKSI: ____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: __________________________"
     ])
 
 def _local_rph_text_english(s):
