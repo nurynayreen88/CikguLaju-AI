@@ -419,6 +419,21 @@ def callback(cid,d):
         ss["rph_complementary_sk"]=ss.get("complementary_sk","")
         ss["rph_complementary_sp"]=ss.get("complementary_sp","")
         # RPH engine policy: activities/objectives must be anchored to the selected SOW skill.
+        # Audio contract: only verified tracks are exposed to materials/RPH.
+        _ast=str(ss.get("audio_status") or "")
+        _aref=str(ss.get("audio_reference") or "") if _ast=="VERIFIED_AUDIO" else ""
+        ss["rph_audio_status"]=_ast
+        ss["rph_audio_reference"]=_aref
+        ss["rph_require_audio_procedure"]=bool(_ast=="VERIFIED_AUDIO" and _aref)
+        ss["rph_audio_policy"]=(
+            "USE_VERIFIED_AUDIO_IN_PDP" if _ast=="VERIFIED_AUDIO" and _aref else
+            "NO_AUDIO_REQUIRED" if _ast=="NO_AUDIO_VERIFIED" else
+            "HIDE_UNVERIFIED_TRACK"
+        )
+        ss["worksheet_audio_status"]=_ast
+        ss["worksheet_audio_reference"]=_aref
+        ss["bbm_audio_status"]=_ast
+        ss["bbm_audio_reference"]=_aref
         ss["rph_curriculum_context"]=ss.get("material_curriculum_context","")
         ss["rph_source_mode"]=ss.get("lesson_source_mode","SOW_ONLY")
         ss["rph_require_main_skill_match"]=True
