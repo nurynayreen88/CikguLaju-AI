@@ -578,9 +578,7 @@ def callback(cid,d):
         if aliases:
             print("ENG12 material fallback",kind,aliases[0],ss.get("material_curriculum_context",""),flush=True)
             return _callback_eng12_base(cid,aliases[0])
-    return _callback_eng12_base(cid,d)
-
-APP_VERSION=str(globals().get("APP_VERSION",""))+"+ENG12-BOTREADY"
+    if ds in ("pdp_material_start_v2500","pdp_material_start_v2501") and globals().get("_main_pdp_entry_v2502"):\n        return _main_pdp_entry_v2502(cid)\n    return _callback_eng12_base(cid,d)\n\nAPP_VERSION=str(globals().get("APP_VERSION",""))+"+ENG12-BOTREADY-V2502"
 # ===== END ENGLISH Y1Y2 BOT READY V1 =====
 '''
 
