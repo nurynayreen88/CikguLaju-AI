@@ -23964,9 +23964,46 @@ def _eng12_send_verified_audio(cid,audio_reference):
                 try: os.unlink(tpath)
                 except Exception: pass
 
+def _eng12_teacher_guidance(year_label,lesson_no):
+    import json,glob,os
+    if year_label!="Tahun 1": return {}
+    roots=[os.path.dirname(os.path.abspath(__file__)),os.getcwd()]
+    seen=set()
+    for root in roots:
+        for p in glob.glob(os.path.join(root,"data","teacher_book_guidance_y1*.json")):
+            if p in seen: continue
+            seen.add(p)
+            try:
+                with open(p,"r",encoding="utf-8") as fh: payload=json.load(fh)
+                for g in payload.get("guidance",[]):
+                    if str(g.get("year"))==year_label and int(g.get("lesson_no"))==int(lesson_no):
+                        return g
+            except Exception as e:
+                print("English teacher guidance load error:",p,repr(e),flush=True)
+    return {}
+
 def _eng12_material_pack(cid):
     ss=state.setdefault(cid,{})
     ln=str(ss.get("lesson_no") or "")
+    g=_eng12_teacher_guidance(_eng12_year_label(ss),ln) if ln else {}
+    if g:
+        pages=g.get("sb_pages") or []
+        if pages:
+            ss["textbook_page_start"]=pages[0]; ss["textbook_page_end"]=pages[-1]
+        ss["teacher_book_aims"]=g.get("aims","")
+        ss["teacher_book_warm_up"]=g.get("warm_up","")
+        ss["teacher_book_procedure"]=g.get("student_book_procedure","")
+        ss["workbook_procedure"]=g.get("workbook_procedure","")
+        ss["audio_procedure"]=g.get("audio_procedure","")
+        ss["checking_feedback"]=g.get("checking_feedback","")
+        ss["ending_lesson"]=g.get("ending_lesson","")
+        ss["extension_optional"]=g.get("extension_optional","")
+        ss["rph_verified_teacher_guidance"]=g
+        # Exact audio references in verified Teacher's Book guidance are legitimate
+        # lesson context even when the BOT_READY DB overlay is unavailable.
+        if g.get("audio_procedure"):
+            ss["rph_audio_procedure"]=g.get("audio_procedure")
+    
     skill=str(ss.get("_sow_skill") or "")
     ps,pe=ss.get("textbook_page_start"),ss.get("textbook_page_end")
     wp,we=ss.get("workbook_page_start"),ss.get("workbook_page_end")
