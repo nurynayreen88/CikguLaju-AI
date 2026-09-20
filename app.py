@@ -9914,36 +9914,29 @@ _EN_RPH_LABELS={
 def _is_english_subject(s): return str((s or {}).get('subject') or '').strip()=='Bahasa Inggeris'
 def _rph_display_label(s,key): return _EN_RPH_LABELS.get(key,key.title()) if _is_english_subject(s) else (key if key in ('EMK / NILAI','KBAT / PAK21') else key.title())
 def _rph_format_activity_lines(value):
-    """Render RPH activities as a clean, sequential teacher-facing numbered list."""
+    """Render each RPH phase as a clean sequential numbered list."""
     v=str(value or '').replace('\\r\\n','\\n').replace('\\r','\\n').strip()
     if not v:
         return v
 
-    # Normalize legacy explicit activity markers first.
+    # Normalize legacy activity markers and force known lesson-bank labels onto
+    # their own logical lines even when the source text was stored as one block.
     v=re.sub(r'(?im)^\\s*(?:Activity|Aktiviti)\\s+(\\d+)\\s*[–—-]\\s*',r'\\1. ',v)
-    v=re.sub(r'(?<!\\n)\\s+(?=(?:Activity|Aktiviti)\\s+\\d+\\s*[–—-])','\\n',v,flags=re.I)
-    v=re.sub(r'(?im)^(?:Activity|Aktiviti)\\s+(\\d+)\\s*[–—-]\\s*',r'\\1. ',v)
-    v=re.sub(r'(?<!^)(?<!\\n)\\s+(?=(?:[1-9]|[1-9]\\d)\\.\\s)','\\n',v)
+    v=re.sub(r'(?<!\\n)\\s+(?=(?:[1-9]|[1-9]\\d)\\.\\s)','\\n',v)
+    labels=r"Student(?:'s)? Book|Workbook|Audio|Checking\\s*/\\s*assessment|Checking|Assessment|Extension(?: if appropriate)?"
+    v=re.sub(r'(?<!^)(?<!\\n)\\s+(?=(?:'+labels+r')\\s*:)', '\\n', v, flags=re.I)
 
-    # Lesson-bank content often stores meaningful steps as separate lines without
-    # numbering (Student's Book:, Workbook:, Audio:, Checking / assessment:, etc.).
-    # Preserve each non-empty source line as one activity instead of joining them.
-    raw_lines=[re.sub(r'\\s+',' ',x).strip() for x in v.split('\\n') if x.strip()]
+    lines=[re.sub(r'\\s+',' ',x).strip() for x in v.split('\\n') if x.strip()]
     steps=[]
-    for line in raw_lines:
-        # If an old line itself contains multiple numbered steps, split safely.
+    for line in lines:
+        # Split any remaining embedded explicit numbering.
         parts=re.split(r'\\s+(?=(?:[1-9]|[1-9]\\d)\\.\\s)',line)
-        steps.extend([p.strip() for p in parts if p.strip()])
+        for part in parts:
+            part=part.strip()
+            if part:
+                steps.append(part)
 
-    # If source arrived as a single paragraph, split at known pedagogical labels.
-    if len(steps)==1:
-        marker=r"(?=(?:Student(?:'s)? Book|Workbook|Audio|Checking(?:\\s*/\\s*assessment)?|Assessment|Extension(?: if appropriate)?|Teacher|Pupils?)\\s*:)"
-        parts=[p.strip() for p in re.split(marker,steps[0],flags=re.I) if p.strip()]
-        if len(parts)>1:
-            steps=parts
-
-    # Renumber the complete phase consistently. Existing numbering is removed so
-    # mixed content such as unnumbered lines followed by '5.'/'6.' cannot survive.
+    # Remove all inherited numbering, then renumber the complete phase.
     cleaned=[]
     for step in steps:
         step=re.sub(r'^\\s*(?:[1-9]|[1-9]\\d)\\.\\s*','',step).strip()
