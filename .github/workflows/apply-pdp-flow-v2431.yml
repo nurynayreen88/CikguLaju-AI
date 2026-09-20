@@ -11,6 +11,7 @@ on:
       - 'tools/patch_english_y1y2_bot_ready_v1.py'
       - 'data/english_y1y2_sow_master_320.json'
       - 'apply_beta50_patch.py'
+      - 'app.py'
       - 'tools/patch_pdp_flow_v2431.py'
 
 permissions:
@@ -61,10 +62,11 @@ jobs:
               'pdp_material_callback': 'pdp_material_start_v2500' in s,
               'direct_show_grades': 'return show_grades(cid)' in s,
               'english_router': '_eng12_is_english_subject_callback' in s,
+              'pdp_continue_v2503': 'pdp_material_continue_v2503' in s,
           }
           print('V2501_QA', checks)
           missing=[k for k,v in checks.items() if not v]
-          assert not missing, 'Missing V2501 runtime guards: '+','.join(missing)
+          assert not missing, 'Missing PdP runtime guards: '+','.join(missing)
           assert not re.search(r'(?s)def _pdp_pick_date_v2393\(cid\):.*?dates=\[today\+timedelta\(days=i\) for i in range\((?:7|14)\)\]',s)
           print('QA PASS',len(s.encode('utf-8')))
           PY
