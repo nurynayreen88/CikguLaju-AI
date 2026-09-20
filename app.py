@@ -23835,14 +23835,36 @@ def _eng12_is_english_subject_callback(ds):
     return ("bahasa inggeris" in x or "english" in x) and (x.startswith("sub_") or x.startswith("subject_") or x.startswith("subjek_") or x in ("bahasa inggeris","english"))
 
 def _eng12_db_path():
-    import os
-    candidates=[
-        os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_DB_PATH","").strip(),
-        os.path.join(os.path.dirname(__file__),"CikguLaju_English_Primary_Year1_Year2_BOT_READY_v1.db"),
-    ]
-    for x in candidates:
-        if x and os.path.exists(x):
+    import os, requests
+    # v25.03: prefer the audited v15 English Y1/Y2 DB. Keep BOT_READY_v1 as
+    # a non-destructive fallback so older deployments continue to start.
+    env_path=os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_DB_PATH","").strip()
+    local_v15=os.path.join(os.path.dirname(__file__),"CikguLaju_English_Primary_Year1_Year2_MASTER_320_v15_Y2_UNIT5_AUDIO_COMPLETE.db")
+    fallback=os.path.join(os.path.dirname(__file__),"CikguLaju_English_Primary_Year1_Year2_BOT_READY_v1.db")
+    for x in (env_path,local_v15):
+        if x and os.path.exists(x) and os.path.getsize(x)>100000:
             return x
+    # The audited v15 copy is backed up in Drive. Cache it in /tmp on Render;
+    # never overwrite the checked-in legacy DB.
+    cached="/tmp/CikguLaju_English_Primary_Year1_Year2_MASTER_320_v15.db"
+    if os.path.exists(cached) and os.path.getsize(cached)>100000:
+        return cached
+    drive_id=os.environ.get("CIKGULAJU_ENGLISH_Y1Y2_V15_DRIVE_ID","1O7UHbE9VpKrCQ7z-74zDQ3VUOB3RbuwA").strip()
+    if drive_id:
+        try:
+            rr=requests.get("https://drive.usercontent.google.com/download",
+                params={"id":drive_id,"export":"download","confirm":"t"},
+                timeout=60,allow_redirects=True)
+            if rr.ok and rr.content[:16].startswith(b"SQLite format 3") and len(rr.content)>100000:
+                with open(cached+".tmp","wb") as fh: fh.write(rr.content)
+                os.replace(cached+".tmp",cached)
+                return cached
+            print("English v15 DB download rejected:",rr.status_code,rr.headers.get("content-type"),len(rr.content),flush=True)
+        except Exception as e:
+            print("English v15 DB download error:",repr(e),flush=True)
+    if os.path.exists(fallback):
+        print("English runtime using legacy BOT_READY_v1 fallback",flush=True)
+        return fallback
     return ""
 
 def _eng12_rows(year_label):
