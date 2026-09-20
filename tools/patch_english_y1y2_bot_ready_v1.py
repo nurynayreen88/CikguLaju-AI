@@ -175,25 +175,23 @@ def _eng12_lesson_menu(cid,ui,page=0):
           " ".join(str(r.get("topic") or r.get("unit_title") or "").strip().lower().split())==norm]
     rows=sorted(rows,key=lambda r:int(str(r.get("lesson_no") or "0").strip() or 0))
     ss["_eng12_unit_index"]=ui; ss["_eng12_lesson_rows"]=rows
-    per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(rows)); kb=[]
-    for i in range(a,b):
-        r=rows[i]; ln=str(r.get("lesson_no") or "")
+    # Show every lesson in the selected unit at once, two buttons per row.
+    # Textbook page is only shown when a verified Student's Book mapping exists.
+    kb=[]; lesson_buttons=[]
+    for i,r in enumerate(rows):
+        ln=str(r.get("lesson_no") or "")
         ps=r.get("textbook_page_start"); pe=r.get("textbook_page_end")
-        skill=str(r.get("_sow_skill") or "").strip()
-        label=f"{'📖' if ps not in (None,'') else '📚'} Lesson {ln}"
-        if skill: label+=f" · {skill}"
+        label=f"Lesson {ln}"
         if ps not in (None,""):
             pg=str(ps) if pe in (None,"",ps) else f"{ps}–{pe}"
-            label+=f" · m/s {pg}"
-        kb.append([{"text":label[:60],"callback_data":f"eng12_lesson_{i}"}])
-    nav=[]
-    if a: nav.append({"text":"⬅️ Sebelum","callback_data":f"eng12_lp_{ui}_{page-1}"})
-    if b<len(rows): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_lp_{ui}_{page+1}"})
-    if nav: kb.append(nav)
+            label+=f" · TB Pg. {pg}"
+        lesson_buttons.append({"text":label[:60],"callback_data":f"eng12_lesson_{i}"})
+    for i in range(0,len(lesson_buttons),2):
+        kb.append(lesson_buttons[i:i+2])
     kb.append([{"text":"⬅️ Unit/Tajuk","callback_data":"eng12_units"},{"text":"🏠 Menu Utama","callback_data":"home"}])
     title=unit.get("title",""); uno=unit.get("unit_no")
     heading=(f"Unit {uno} — {title}" if uno is not None else title)
-    return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.\n📖 = ada buku teks · 📚 = SOW sahaja",kb)
+    return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP dipadankan automatik.\nTB Pg. hanya dipaparkan untuk lesson yang mempunyai pautan buku teks murid.",kb)
 
 
 def _eng12_audio_zip_path():
