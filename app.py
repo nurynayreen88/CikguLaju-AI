@@ -23764,23 +23764,52 @@ def _eng12_standards(year_label,lesson_no):
     finally:
         con.close()
 
+def _eng12_unit_catalog(year_label,rows):
+    # Canonical textbook units. Aliases prevent duplicate buttons caused by
+    # punctuation/capitalisation/review labels in SOW rows.
+    maps={
+        "Tahun 1":{
+            "friends":(0,"Friends"), "at school":(1,"At School"),
+            "let's play":(2,"Let's Play!"), "lets play":(2,"Let's Play!"),
+            "pet show":(3,"Pet Show"), "lunchtime":(4,"Lunchtime"),
+        },
+        "Tahun 2":{
+            "free time":(5,"Free Time"), "the old house":(6,"The Old House"),
+            "get dressed":(7,"Get Dressed!"), "the robot":(8,"The Robot"),
+            "at the beach":(9,"At The Beach"),
+        },
+    }.get(year_label,{})
+    units=[]; bykey={}
+    for r in rows:
+        raw=str(r.get("topic") or r.get("unit_title") or "").strip()
+        norm=" ".join(raw.lower().replace("’","'").replace("!","").split())
+        # SOW review rows belong to the same textbook unit.
+        if norm.endswith(" review"): norm=norm[:-7].strip()
+        if norm in ("year 1 revision","year 2 revision","revision"):
+            key=("extra",norm); title=raw; uno=None
+        elif norm in maps:
+            uno,title=maps[norm]; key=("unit",uno)
+        else:
+            key=("extra",norm); title=raw; uno=None
+        if key not in bykey:
+            bykey[key]={"title":title,"unit_no":uno,"keys":set()}
+            units.append(bykey[key])
+        bykey[key]["keys"].add(norm)
+    return units
+
 def _eng12_unit_menu(cid,page=0):
     ss=state.setdefault(cid,{})
     rows=_eng12_rows(_eng12_year_label(ss))
     if not rows:
         return send(cid,"🚧 <b>Data English BOT_READY Tahun 1–2 belum tersedia.</b>",
                     [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
-    units=[]; seen=set()
-    for r in rows:
-        key=(str(r.get("unit_title") or "").strip(),str(r.get("topic") or "").strip())
-        if key not in seen:
-            seen.add(key); units.append(key)
+    units=_eng12_unit_catalog(_eng12_year_label(ss),rows)
     ss["_eng12_rows"]=rows; ss["_eng12_units"]=units
     per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(units)); kb=[]
     for i in range(a,b):
-        u,t=units[i]
-        label=t or u or f"Unit {i+1}"
-        kb.append([{"text":("📘 "+label)[:60],"callback_data":f"eng12_lsnunit_{i}"}])
+        u=units[i]; uno=u.get("unit_no"); title=u.get("title") or f"Unit {i}"
+        label=(f"📘 Unit {uno} - {title}" if uno is not None else f"📚 {title}")
+        kb.append([{"text":label[:60],"callback_data":f"eng12_lsnunit_{i}"}])
     nav=[]
     if a: nav.append({"text":"⬅️ Sebelum","callback_data":f"eng12_up_{page-1}"})
     if b<len(units): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_up_{page+1}"})
@@ -23792,9 +23821,14 @@ def _eng12_lesson_menu(cid,ui,page=0):
     ss=state.setdefault(cid,{})
     units=ss.get("_eng12_units") or []
     if ui<0 or ui>=len(units): return _eng12_unit_menu(cid,0)
-    unit,topic=units[ui]
-    rows=[r for r in (ss.get("_eng12_rows") or []) if
-          str(r.get("unit_title") or "").strip()==unit and str(r.get("topic") or "").strip()==topic]
+    unit=units[ui]; keys=set(unit.get("keys") or [])
+    def _norm(r):
+        raw=str(r.get("topic") or r.get("unit_title") or "").strip()
+        n=" ".join(raw.lower().replace("’","'").replace("!","").split())
+        if n.endswith(" review"): n=n[:-7].strip()
+        return n
+    rows=[r for r in (ss.get("_eng12_rows") or []) if _norm(r) in keys]
+    rows=sorted(rows,key=lambda r:int(str(r.get("lesson_no") or "0").strip() or 0))
     ss["_eng12_unit_index"]=ui; ss["_eng12_lesson_rows"]=rows
     per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(rows)); kb=[]
     for i in range(a,b):
@@ -23810,9 +23844,9 @@ def _eng12_lesson_menu(cid,ui,page=0):
     if b<len(rows): nav.append({"text":"Seterusnya ➡️","callback_data":f"eng12_lp_{ui}_{page+1}"})
     if nav: kb.append(nav)
     kb.append([{"text":"⬅️ Unit/Tajuk","callback_data":"eng12_units"},{"text":"🏠 Menu Utama","callback_data":"home"}])
-    title=topic or unit
-    return send(cid,f"📖 <b>{title}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
-
+    uno=unit.get("unit_no"); title=unit.get("title","")
+    heading=(f"Unit {uno} - {title}" if uno is not None else title)
+    return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
 
 def _eng12_audio_zip_path():
     import os, tempfile, requests
