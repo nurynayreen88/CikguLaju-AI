@@ -442,6 +442,10 @@ def callback(cid,d):
         ss["super_minds_1_unit_page_map"]=ss["super_minds_1_unit_pages"].get(_smkey,{})
         ss["reject_super_minds_level_2"]=True
         ss["rph_source_priority"]=["SOW_RPT","SUPER_MINDS_1_FIRST_EDITION","TEACHER_BOOK_GUIDANCE","PEDAGOGICAL_ENRICHMENT"]
+        ss["teacher_book_drive_file_id"]="1-tfy1OH9Cjsg5YLZOyBOY8PM5DLCQU2g"
+        ss["teacher_book_source_title"]="super_minds_1_ 2 teacher_s_book.pdf"
+        ss["teacher_book_source_scope"]="SUPER_MINDS_1_FIRST_EDITION_UNIT_0_TO_9"
+        ss["teacher_book_year_unit_split"]={"Tahun 1":[0,1,2,3,4],"Tahun 2":[5,6,7,8,9]}
         ss["rph_source_labels"]={
             "curriculum":"VERIFIED_SOW_RPT",
             "book_mapping":"VERIFIED_SUPER_MINDS_1_FIRST_EDITION",
