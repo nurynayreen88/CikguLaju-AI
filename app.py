@@ -9924,7 +9924,10 @@ def _rph_format_activity_lines(value):
     v=re.sub(r'(?im)^\\s*(?:Activity|Aktiviti)\\s+(\\d+)\\s*[–—-]\\s*',r'\\1. ',v)
     v=re.sub(r'(?<!\\n)\\s+(?=(?:[1-9]|[1-9]\\d)\\.\\s)','\\n',v)
     labels=r"Student(?:'s)? Book|Workbook|Audio|Checking\\s*/\\s*assessment|Checking|Assessment|Extension(?: if appropriate)?"
-    v=re.sub(r'(?<!^)(?<!\\n)\\s+(?=(?:'+labels+r')\\s*:)', '\\n', v, flags=re.I)
+    # Use a consuming replacement rather than a zero-width lookahead. Python's
+    # regex engine can otherwise leave inline lesson labels untouched in some
+    # source strings. Preserve the label while inserting a real newline.
+    v=re.sub(r'\\s+((?:'+labels+r')\\s*:)', r'\\n\\1', v, flags=re.I)
 
     lines=[re.sub(r'\\s+',' ',x).strip() for x in v.split('\\n') if x.strip()]
     steps=[]
