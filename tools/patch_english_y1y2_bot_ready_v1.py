@@ -630,6 +630,21 @@ if PRIORITY_MARK not in s:
 """
     s=s[:body_start+1]+priority+s[body_start+1:]
 
-if "# ===== ENGLISH Y1Y2 BOT READY V1 =====" not in s:\n    s += "\n\n"+block
+# Recovery guard: remove duplicate English runtime blocks already present in app.py.
+_start_marker="# ===== ENGLISH Y1Y2 BOT READY V1 ====="
+_end_marker="# ===== END ENGLISH Y1Y2 BOT READY V1 ====="
+_first=s.find(_start_marker)
+if _first>=0:
+    _scan=_first+len(_start_marker)
+    while True:
+        _dup=s.find(_start_marker,_scan)
+        if _dup<0: break
+        _dup_end=s.find(_end_marker,_dup)
+        if _dup_end<0: break
+        _dup_end += len(_end_marker)
+        s=s[:_dup]+s[_dup_end:]
+        _scan=_first+len(_start_marker)
+else:
+    s += "\n\n"+block
 p.write_text(s,encoding="utf-8")
 print("patched",p,p.stat().st_size)
