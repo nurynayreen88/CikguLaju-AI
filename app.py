@@ -9913,11 +9913,25 @@ _EN_RPH_LABELS={
 'STANDARD KANDUNGAN':'Content Standard','STANDARD PEMBELAJARAN':'Learning Standard','OBJEKTIF PEMBELAJARAN':'Learning Objectives','KRITERIA KEJAYAAN':'Success Criteria','PENGETAHUAN SEDIA ADA':'Prior Knowledge','BAHAN BANTU MENGAJAR':'Teaching and Learning Materials','EMK / NILAI':'Cross-Curricular Elements / Values','KBAT / PAK21':'HOTS / 21st Century Learning','PENTAKSIRAN':'Assessment','SET INDUKSI':'Set Induction','AKTIVITI UTAMA':'Main Activities','PENUTUP':'Closure','PEMULIHAN / PENGAYAAN':'Remedial / Enrichment','REFLEKSI':'Reflection'}
 def _is_english_subject(s): return str((s or {}).get('subject') or '').strip()=='Bahasa Inggeris'
 def _rph_display_label(s,key): return _EN_RPH_LABELS.get(key,key.title()) if _is_english_subject(s) else (key if key in ('EMK / NILAI','KBAT / PAK21') else key.title())
+def _rph_format_activity_lines(value):
+    """Keep every numbered RPH activity on its own line for clean teacher-facing output."""
+    v=str(value or '').replace('\\r\\n','\\n').replace('\\r','\\n').strip()
+    # Normalize legacy labels such as "Activity 1 – ..." / "Aktiviti 1 - ..."
+    # into a simple numbered sequence, with each new number starting a new line.
+    v=re.sub(r'(?im)^\\s*(?:Activity|Aktiviti)\\s+(\\d+)\\s*[–—-]\\s*',r'\\1. ',v)
+    v=re.sub(r'(?<!\\n)\\s+(?=(?:Activity|Aktiviti)\\s+\\d+\\s*[–—-])','\\n',v,flags=re.I)
+    v=re.sub(r'(?im)^(?:Activity|Aktiviti)\\s+(\\d+)\\s*[–—-]\\s*',r'\\1. ',v)
+    # Also protect already-numbered steps that were accidentally joined inline.
+    v=re.sub(r'(?<!^)(?<!\\n)\\s+(?=(?:[1-9]|1\\d)\\.\\s)','\\n',v)
+    return v
+
 def _rph_display_value(s,key,value):
     v=str(value or '')
+    if key in ('AKTIVITI UTAMA','SET INDUKSI','PENUTUP'):
+        v=_rph_format_activity_lines(v)
     if not _is_english_subject(s): return v
     if key=='MATA PELAJARAN': return 'English'
-    if key=='TAHUN/TINGKATAN': return re.sub(r'^Tahun\s+','Year ',v,flags=re.I)
+    if key=='TAHUN/TINGKATAN': return re.sub(r'^Tahun\\s+','Year ',v,flags=re.I)
     if key=='TAJUK': return v.replace('Semua Subtopik','All Subtopics')
     return v
 
