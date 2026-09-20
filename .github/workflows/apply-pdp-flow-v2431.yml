@@ -3,8 +3,12 @@ name: Apply CikguLaju flow updates
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - '.github/workflows/apply-pdp-flow-v2431.yml'
+      - 'tools/patch_english_y1y2_bot_ready_v1.py'
+      - 'data/english_y1y2_sow_master_320.json'
 
 permissions:
   contents: write
@@ -44,6 +48,9 @@ jobs:
           assert "return _lesson_entry_v2440(cid)" in s
           assert 'ENGLISH Y1Y2 BOT READY V1' in s
           assert 'eng12_lesson_' in s
+          assert '_ENG12_SOW_MASTER' in s
+          assert 'DB_SOW_MASTER_320' in s
+          assert 'EMBEDDED_SOW_FALLBACK' in s
           assert '_eng12_is_english_subject_callback' in s
           assert not re.search(r'(?s)def _pdp_pick_date_v2393\(cid\):.*?dates=\[today\+timedelta\(days=i\) for i in range\((?:7|14)\)\]',s)
           print('QA PASS',len(s.encode('utf-8')))
