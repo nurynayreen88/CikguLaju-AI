@@ -400,6 +400,16 @@ def callback(cid,d):
         ss["rph_require_main_sp_match"]=True
         ss["rph_require_complementary_sp_match"]=True
         ss["rph_allow_generic_activity"]=False
+        # For textbook-linked lessons, RPH must contain the usable teaching procedure
+        # extracted/paraphrased from the mapped Teacher's Book guidance, not a pointer to it.
+        ss["teacher_book_policy"]="EXTRACT_INTO_RPH" if ss.get("has_textbook_link") else "NOT_REQUIRED"
+        ss["rph_require_teacher_book_procedure"]=bool(ss.get("has_textbook_link"))
+        ss["rph_forbid_teacher_book_placeholder"]=True
+        ss["rph_forbidden_placeholders"]=[
+            "follow teacher's book","refer teacher's book","see teacher's book",
+            "rujuk teacher's book","ikut teacher's book","rujuk buku panduan guru"
+        ]
+        ss["rph_teacher_book_content_mode"]="PARAPHRASE_ACTIONABLE_STEPS"
         ss["worksheet_topic"]=ss.get("topic","")
         ss["worksheet_skill"]=ss.get("lesson_skill","")
         ss["worksheet_curriculum_context"]=ss.get("material_curriculum_context","")
