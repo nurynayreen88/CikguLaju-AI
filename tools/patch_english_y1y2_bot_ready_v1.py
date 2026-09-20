@@ -415,6 +415,12 @@ def callback(cid,d):
             "audio_procedure","checking_feedback","ending_lesson","extension_optional"
         ] if ss.get("has_textbook_link") else []
         ss["teacher_book_verified_structure"]="AIMS+SB+WB+WARMUP+ENDING+EXTENSION+TAPESCRIPT_ANSWERS"
+        ss["super_minds_source_lock"]="SUPER_MINDS_1_ONLY"
+        ss["super_minds_unit_scope"]=(
+            "UNIT_0_TO_4" if _eng12_year_label(ss)=="Tahun 1" else
+            "UNIT_5_TO_9" if _eng12_year_label(ss)=="Tahun 2" else ""
+        )
+        ss["reject_super_minds_level_2"]=True
         ss["teacher_book_integration_rule"]=(
             "Map the selected SB/WB page to its Teacher's Book teaching notes; "
             "extract the relevant procedure and paraphrase it into executable RPH steps. "
