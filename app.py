@@ -24032,24 +24032,31 @@ def _eng12_audio_zip_path():
         print("English Y1Y2 audio Drive ZIP download error:",repr(e),flush=True)
     return ""
 
-def _eng12_audio_member_for_ref(ref):
-    import zipfile,re
-    zpath=_eng12_audio_zip_path()
+def _eng12_audio_member_for_ref(ref,zpath=None):
+    import zipfile,re,os
+    zpath=zpath or _eng12_audio_zip_path()
     if not zpath: return None
-    m=re.fullmatch(r"CD([123])-(\d{1,2})",str(ref or "").strip(),re.I)
+    raw=str(ref or "").strip()
+    m=re.search(r"CD\s*([123])\s*[-–:]?\s*(?:Track\s*)?(\d{1,2})",raw,re.I)
     if not m: return None
     cd=int(m.group(1)); track=int(m.group(2))
-    cd_token={1:"CD 1",2:"CD 2",3:"CD 3"}[cd]
     with zipfile.ZipFile(zpath) as z:
         names=[n for n in z.namelist() if not n.endswith("/")]
         for n in names:
-            base=n.rsplit("/",1)[-1]
-            if cd_token.lower() in n.lower() and re.match(rf"0*{track}\b",base):
+            low=n.lower()
+            base=os.path.basename(n)
+            if cd==1:
+                cd_ok="/cd 1/" in low or "/cd1/" in low
+            elif cd==2:
+                cd_ok="/cd 2 " in low or "/cd2 " in low or "/cd 2/" in low or "/cd2/" in low
+            else:
+                cd_ok="/cd 3" in low or "/cd3" in low
+            if cd_ok and re.match(rf"0*{track}(?:\D|$)",base):
                 return n
     return None
 
 def _eng12_send_verified_audio(cid,audio_reference):
-    import os,zipfile,tempfile,requests
+    import os,zipfile,tempfile,requests,mimetypes
     refs=[x.strip() for x in str(audio_reference or "").replace(",", ";").split(";") if x.strip()]
     if not refs: return False
     zpath=_eng12_audio_zip_path()
@@ -24063,27 +24070,25 @@ def _eng12_send_verified_audio(cid,audio_reference):
     sent=0
     with zipfile.ZipFile(zpath) as z:
         for ref in refs:
-            member=_eng12_audio_member_for_ref(ref)
+            member=_eng12_audio_member_for_ref(ref,zpath)
             if not member:
                 print("English Y1Y2 audio member not found:",ref,flush=True)
                 continue
             suffix=os.path.splitext(member)[1] or ".wma"
             with tempfile.NamedTemporaryFile(delete=False,suffix=suffix) as tmp:
-                tmp.write(z.read(member))
-                tpath=tmp.name
+                tmp.write(z.read(member)); tpath=tmp.name
             try:
+                # WMA is not a reliable Telegram sendAudio format. Send it as a
+                # document first so the verified original file is delivered intact.
+                mime=mimetypes.guess_type("x"+suffix)[0] or "application/octet-stream"
                 with open(tpath,"rb") as fh:
-                    files={"audio":(f"{ref}{suffix}",fh,"audio/x-ms-wma")}
+                    files={"document":(f"{ref}{suffix}",fh,mime)}
                     data={"chat_id":str(cid),"caption":f"🎧 {ref}"}
-                    rr=requests.post(f"https://api.telegram.org/bot{token}/sendAudio",data=data,files=files,timeout=60)
-                    if not rr.ok:
-                        fh.seek(0)
-                        files={"document":(f"{ref}{suffix}",fh,"audio/x-ms-wma")}
-                        rr=requests.post(f"https://api.telegram.org/bot{token}/sendDocument",data=data,files=files,timeout=60)
-                    if not rr.ok:
-                        print("English Y1Y2 audio send failed:",ref,rr.status_code,rr.text[:300],flush=True)
-                    else:
-                        sent += 1
+                    rr=requests.post(f"https://api.telegram.org/bot{token}/sendDocument",data=data,files=files,timeout=120)
+                if not rr.ok:
+                    print("English Y1Y2 audio send failed:",ref,rr.status_code,rr.text[:500],flush=True)
+                else:
+                    sent += 1
             finally:
                 try: os.unlink(tpath)
                 except Exception: pass
