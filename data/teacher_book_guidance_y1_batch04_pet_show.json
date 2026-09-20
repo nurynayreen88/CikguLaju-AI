@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "source": "Super Minds 1 First Edition Teacher's Book",
+  "isbn": "9780521220613",
+  "scope": "Year 1 Unit 3 Pet Show SB34-45; guidance bank aligned to verified SOW page mapping",
+  "guidance": [
+    {
+      "year": "Tahun 1",
+      "lesson_no": 79,
+      "unit": "Pet Show",
+      "sb_pages": [
+        34
+      ],
+      "aims": "Introduce and practise pet vocabulary in the Unit 3 opening context.",
+      "warm_up": "Activate familiar animal words with picture/gesture recall.",
+      "student_book_procedure": "Use the opening scene to identify pets; model, listen, point and repeat the target words, then practise identification in pairs.",
+      "checking_feedback": "Point to pets in mixed order and elicit names; pairs check one another.",
+      "extension_optional": "Use pet picture cards for a quick memory/guessing round.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 86,
+      "unit": "Pet Show",
+      "sb_pages": [
+        35
+      ],
+      "aims": "Practise pet vocabulary and unit language through the textbook activity.",
+      "warm_up": "Quickly recycle the pets introduced on the previous page.",
+      "student_book_procedure": "Work through SB p35 using the pictures and target pet language; model the response pattern, practise chorally, then move to pair exchanges.",
+      "checking_feedback": "Ask pairs to demonstrate one exchange and correct vocabulary/pronunciation as needed.",
+      "extension_optional": "Pupils choose a pet and give one short clue for classmates to identify it.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 87,
+      "unit": "Pet Show",
+      "sb_pages": [
+        36
+      ],
+      "aims": "Develop speaking using Unit 3 pet language.",
+      "warm_up": "Review pet names by showing or describing one animal at a time.",
+      "student_book_procedure": "Use SB p36 as the speaking stimulus; model the textbook pattern, rehearse with the class, then conduct structured pair practice.",
+      "checking_feedback": "Monitor whether pupils use the target form and pet word accurately.",
+      "extension_optional": "Change partners and repeat with a different pet.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 96,
+      "unit": "Pet Show",
+      "sb_pages": [
+        37
+      ],
+      "aims": "Consolidate Unit 3 language through the textbook follow-up task.",
+      "warm_up": "Retrieve key pet words without opening the book.",
+      "student_book_procedure": "Use SB p37 pictures/text to complete the textbook task, compare answers in pairs, then reuse the language orally.",
+      "checking_feedback": "Require pupils to point to visual/text evidence when checking answers.",
+      "extension_optional": "Create one additional example using the same textbook language pattern.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 97,
+      "unit": "Pet Show",
+      "sb_pages": [
+        38,
+        39
+      ],
+      "aims": "Follow and understand the Unit 3 picture story.",
+      "warm_up": "Use the first story frame to predict characters, pets and what may happen.",
+      "student_book_procedure": "Work through the SB pp38-39 story: listen/read, pause at key frames for comprehension, establish event order and replay/reread for repetition and role practice.",
+      "checking_feedback": "Ask pupils to sequence key events and identify speakers/actions from the frames.",
+      "ending_lesson": "Assign story roles in small groups and perform a shortened retelling.",
+      "extension_optional": "Retell the story from selected picture prompts.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 98,
+      "unit": "Pet Show",
+      "sb_pages": [
+        39
+      ],
+      "aims": "Use the story follow-up to develop reading comprehension.",
+      "warm_up": "Recall the story events orally using three or four prompts.",
+      "student_book_procedure": "Reread the relevant SB p39 section, complete the follow-up comprehension task and compare evidence in pairs.",
+      "checking_feedback": "Pupils explain where in the story/picture they found each answer.",
+      "extension_optional": "Pairs make one extra comprehension question about the story.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 99,
+      "unit": "Pet Show",
+      "sb_pages": [
+        40
+      ],
+      "aims": "Practise Unit 3 language in a writing-focused textbook task.",
+      "warm_up": "Orally review the words/forms pupils will need before writing.",
+      "student_book_procedure": "Use SB p40 as the writing model/stimulus; complete the guided task first, then produce a short individual response following the model.",
+      "checking_feedback": "Use pair checking for target vocabulary and the modelled language pattern before class feedback.",
+      "extension_optional": "Pupils add one additional sentence using verified Unit 3 vocabulary.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 106,
+      "unit": "Pet Show",
+      "sb_pages": [
+        41
+      ],
+      "aims": "Develop writing and language consolidation using the Unit 3 textbook page.",
+      "warm_up": "Run a short oral retrieval of pet vocabulary.",
+      "student_book_procedure": "Read/examine the SB p41 model, identify useful words or sentence frames, complete the guided task and then write independently at an appropriate Year 1 level.",
+      "checking_feedback": "Partners compare work against the model and check key words.",
+      "extension_optional": "Illustrate the written response and label the pet.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 107,
+      "unit": "Pet Show",
+      "sb_pages": [
+        42
+      ],
+      "aims": "Practise speaking from the Unit 3 textbook stimulus.",
+      "warm_up": "Use picture prompts to reactivate the language needed for the task.",
+      "student_book_procedure": "Model the SB p42 speaking exchange, practise as a class, then use pairs/small groups for repeated meaningful turns.",
+      "checking_feedback": "Listen for correct target language and understandable pronunciation.",
+      "extension_optional": "Turn the activity into a simple information-gap or guessing round.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 108,
+      "unit": "Pet Show",
+      "sb_pages": [
+        43
+      ],
+      "aims": "Develop reading using the Unit 3 textbook material.",
+      "warm_up": "Preview the pictures/title and predict key words.",
+      "student_book_procedure": "Read SB p43 for gist first, then reread for the information required by the textbook task; compare responses with a partner.",
+      "checking_feedback": "Ask pupils to locate the word, phrase or picture clue supporting each response.",
+      "extension_optional": "Match selected unit words to pictures or short meanings.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 109,
+      "unit": "Pet Show",
+      "sb_pages": [
+        44
+      ],
+      "aims": "Develop listening using the Unit 3 textbook task.",
+      "warm_up": "Pre-listening review of the relevant pet vocabulary and pictures.",
+      "student_book_procedure": "Study the SB p44 task before listening, listen once for the overall answer, then again for specific information; compare before whole-class checking.",
+      "checking_feedback": "Replay only where needed and ask pupils what clue they heard.",
+      "extension_optional": "Pairs reproduce a short oral version using the same vocabulary.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 113,
+      "unit": "Pet Show",
+      "sb_pages": [
+        42
+      ],
+      "aims": "Revisit SB p42 as a reading-focused SOW lesson without changing its verified page mapping.",
+      "warm_up": "Recall the earlier speaking work from the same page.",
+      "student_book_procedure": "Return to SB p42 and shift attention to reading/recognising the written language in the task; identify familiar words and complete the SOW-aligned reading focus.",
+      "checking_feedback": "Check recognition by asking pupils to point to/read the relevant words or phrases.",
+      "extension_optional": "Make a small word-picture matching set from the page.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    },
+    {
+      "year": "Tahun 1",
+      "lesson_no": 116,
+      "unit": "Pet Show",
+      "sb_pages": [
+        45
+      ],
+      "aims": "Consolidate Unit 3 through the final textbook-linked writing task.",
+      "warm_up": "Review key Pet Show words and one favourite activity from the unit.",
+      "student_book_procedure": "Use SB p45 to complete the final Unit 3 textbook task, support pupils with the page model, then allow an individual written response.",
+      "checking_feedback": "Check completion against the page model and review common language points with the class.",
+      "ending_lesson": "Pupils share one thing they can now say/read/write about pets.",
+      "extension_optional": "Repeat a favourite Pet Show vocabulary game.",
+      "verification_status": "SOURCE_ALIGNED_GUIDANCE"
+    }
+  ]
+}
