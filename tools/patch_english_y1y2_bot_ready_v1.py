@@ -415,7 +415,11 @@ def callback(cid,d):
             "audio_procedure","checking_feedback","ending_lesson","extension_optional"
         ] if ss.get("has_textbook_link") else []
         ss["teacher_book_verified_structure"]="AIMS+SB+WB+WARMUP+ENDING+EXTENSION+TAPESCRIPT_ANSWERS"
-        ss["super_minds_source_lock"]="SUPER_MINDS_1_ONLY"
+        ss["super_minds_source_lock"]="SUPER_MINDS_1_FIRST_EDITION_ONLY"
+        ss["super_minds_teacher_book_isbn"]="978-0-521-22061-3"
+        ss["super_minds_student_book_isbn"]="978-0-521-14857-3"
+        ss["super_minds_edition"]="FIRST_EDITION"
+        ss["reject_second_edition"]=True
         ss["super_minds_unit_scope"]=(
             "UNIT_0_TO_4" if _eng12_year_label(ss)=="Tahun 1" else
             "UNIT_5_TO_9" if _eng12_year_label(ss)=="Tahun 2" else ""
