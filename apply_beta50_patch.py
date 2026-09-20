@@ -189,11 +189,11 @@ else:
 # Final runtime UI guard: keep the main PdP entry stable and remove the legacy
 # "Guna Bahan Cikgu" choice without touching curriculum/database content.
 _txt=P.read_text(encoding="utf-8")
-if "# MAIN_PDP_ENTRY_V2500" not in _txt:
+if "# MAIN_PDP_ENTRY_V2501" not in _txt:
     _txt += r'''
 
-# MAIN_PDP_ENTRY_V2500
-_send_v2500_base = send
+# MAIN_PDP_ENTRY_V2501
+_send_v2501_base = send
 
 def send(cid, text, kb=None, *args, **kwargs):
     """Normalize the main PdP keyboard at render time."""
@@ -216,13 +216,13 @@ def send(cid, text, kb=None, *args, **kwargs):
                 nr.append(b)
             if nr: cleaned.append(nr)
         kb=cleaned
-    return _send_v2500_base(cid,text,kb,*args,**kwargs)
+    return _send_v2501_base(cid,text,kb,*args,**kwargs)
 
-_callback_v2500_base = callback
+_callback_v2501_base = callback
 
 def callback(cid,d):
     ds=str(d or "")
-    if ds=="pdp_material_start_v2500":
+    if ds in ("pdp_material_start_v2500","pdp_material_start_v2501"):
         ss=state.setdefault(cid,{})
         ss["task"]="quick_material"
         ss["quick_material_flow"]=True
@@ -237,11 +237,11 @@ def callback(cid,d):
         # English/BM lesson routers take ownership after year/subject selection.
         ss["task"]="rph"
         ss["requested_material"]="rph"
-        return _callback_v2500_base(cid,"task_rph")
-    return _callback_v2500_base(cid,d)
+        return show_grades(cid)
+    return _callback_v2501_base(cid,d)
 
-APP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2500"
-# END MAIN_PDP_ENTRY_V2500
+APP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2501"
+# END MAIN_PDP_ENTRY_V2501
 '''
     P.write_text(_txt,encoding="utf-8")
-    print("MAIN PDP entry v2500 installed",flush=True)
+    print("MAIN PDP entry v2501 installed",flush=True)
