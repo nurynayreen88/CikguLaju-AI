@@ -24070,40 +24070,215 @@ def _eng12_audio_member_for_ref(ref,zpath=None):
     return None
 
 def _eng12_send_verified_audio(cid,audio_reference):
-    import os,zipfile,tempfile,requests,mimetypes
+    """Send verified Super Minds audio from individual Drive files.
+    v25.02: avoids downloading the 160 MB archive during a teacher request.
+    """
+    import os,re,requests,tempfile
     refs=[x.strip() for x in str(audio_reference or "").replace(",", ";").split(";") if x.strip()]
     if not refs: return False
-    zpath=_eng12_audio_zip_path()
-    if not zpath:
-        print("English Y1Y2 audio zip missing",flush=True)
-        return False
+    drive_files={
+  "CD1-63": "1mewALx_-CoAgI4iAzkyyLcGPFVD-VHJu",
+  "CD1-62": "1KWBc9FTOIfNyD5U9D5haEN5HTBlDfUwc",
+  "CD1-61": "1pHZtmTX98352O8oYMv86OqaOMLLV5GmY",
+  "CD1-60": "1w_kHb8036iDIjWF5CFccO385OiHrphiH",
+  "CD1-59": "1t5u6daacqpxQtSgMvqlh5NY87TCGmnEG",
+  "CD1-58": "1Oa7jNm0oQJu3rOk1Ry9Jrdl_TeM5LKMr",
+  "CD1-57": "1-AnpWsUTIsgP5id5jtLNSs4lFK5V0-SY",
+  "CD1-56": "1IvI3-YC-qaZ9Hb23r0-sqA6ehS4gbkqn",
+  "CD1-55": "1IZuhLgaHzi-Q9bbAswTATgmZEtHevnDg",
+  "CD1-54": "1NveQq2y4XouFrT-w6BZpC4Eb6-cicOOj",
+  "CD1-53": "1u7efH-F1XDxGTpMHOPfeZlVvVju-7C3e",
+  "CD1-52": "1agJsUrcYrJwcQjh4rEbeA9aQ_2j9kCh_",
+  "CD1-51": "1bIvShBruLIYJNVy3i3iY_-L8tudecOQj",
+  "CD1-50": "1O1KYQlFPolqtotHC4WJ-16y7lPaytEFa",
+  "CD1-49": "1XrgsW-EDml4G3CRjJm06DfeWltzMPgGr",
+  "CD1-48": "19knW9YIjUlwqJoHQX78xZNYK5oXV1mjv",
+  "CD1-47": "1S43c3qd1Un1GvFXYY9kPIeIZ49gGUedJ",
+  "CD1-46": "180P1vp_r1PJc_0hYHtIUYukFWD6TWYeX",
+  "CD1-45": "1WHRXWz5AUNPBMSuwZoeiJIHyo36dUsDd",
+  "CD1-44": "1_3qDi2HTMOGRlRUagfhu99xGdamTxScD",
+  "CD1-43": "1Zt3FpB_8zcWV6FVGHR2Kwz5hZd_dQlTa",
+  "CD1-42": "1xcQUqTvN80IsBbq1slyJwIdxWwZqdROi",
+  "CD1-41": "1Cjhzw2MFzfdDiJb3QqSYi1t7drmgAk-l",
+  "CD1-40": "1fdR18h1kLs2toEj9r4U50vJ2-z05LtP_",
+  "CD1-39": "1wwJXWwReqqv0dlm9J_ux4dII-lhUF37B",
+  "CD1-38": "120Pz69NL806IRZl05AMa9KRLEXthnFU6",
+  "CD1-37": "1XdsJFI-g9W2G73Dy0P0YqUc_iujJs3gh",
+  "CD1-36": "18EUpIGuG87WIzjYifdnPWjXf6OZl41F3",
+  "CD1-35": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+  "CD1-34": "1OPeBdEqXUiJjSAQxUHy5FdTl3wpHLf5i",
+  "CD1-33": "18M4eSEyUBg6n4glhuK1s2mF4dnBaVwd-",
+  "CD1-32": "1k40DcM_HPrWEw6d5BzqhF2qEfLIK2lEw",
+  "CD1-31": "1vWuQau046dF-cBeawOSRnzn55ovkcv7N",
+  "CD1-30": "1_Nip4WphbCnPuLLxq3FV-ijeWiZi6yti",
+  "CD1-29": "10fsGU3OmSAy-4xq9dnXwoiz-cpbJi3xc",
+  "CD1-28": "1rkepjeMMzJ1iGUOXhXRnzD4z1xLSS8h3",
+  "CD1-27": "1DMBHL_-pZkXsiwciYYVrAvoCvAvxk1Xq",
+  "CD1-26": "1ajaQG8srMEoVUbcbUp4yQtUMT6V_iIfH",
+  "CD1-25": "12AuYsXvPu1BUI6BCUVTX67EPQzRxYadW",
+  "CD1-24": "1rSkMgNNOgqZcOokxGU54pNEOkjPkj0c2",
+  "CD1-23": "1-AGrctNb-dQUT8crpQ-hVnk2cpKSBLrQ",
+  "CD1-22": "1bOffmpd3jucdHKNaKleJpZB7nl9HDCVY",
+  "CD1-21": "1wGFYKMLUhSoT6P9mjWEvZu65FE614qxt",
+  "CD1-20": "1DmahPihSE5rgJcKD5_ZO1EObLBfgQie_",
+  "CD1-19": "1J7bjab5zvMHsf8nn_HM7dzDZb3wrNJAl",
+  "CD1-18": "1-5beFdUjsmH8qYUisp150plbExXBjqiP",
+  "CD1-17": "1f083A06NlIo0NkZqbRH_XM_OkobuU4oY",
+  "CD1-16": "1OzT7ZXRtOKwNBcQ9kYcHHjT2o_X8uOqa",
+  "CD1-15": "1zIwKowMnCcZCzPp9AzamDD-hTrLJMCUv",
+  "CD1-14": "1y6f44jqrqq2sBSRk54qvlbntWmfx7GaK",
+  "CD1-13": "1XHx5n_Ajd8uhnm-0kV7TzGcOu510_WBH",
+  "CD1-12": "1eaoHB3Mv1yZWj53KaVJNY_9q7M3ag3C1",
+  "CD1-11": "1vf0CXmq7XumG9aAa_tglZ_haghztiG9G",
+  "CD1-10": "1VGXYQDzSV7a3YwFMgfFaSLcc18OrbCtR",
+  "CD1-09": "1FWD8yWIYH8qw0qgXRsjLgpcakl-FV5Jd",
+  "CD1-08": "1YgZmPpsQP4BEyOeKZA-e7s2ysg7O6nKd",
+  "CD1-07": "1P1hvO2nghWnGRVc5q3PB6Ruq2O5mOA-A",
+  "CD1-06": "19dAki0a1GrihqCGr2MDbjc75WJuB6Ztu",
+  "CD1-05": "1qFvwFau16xp4A5ESKh864J6a8kAcj4_C",
+  "CD1-04": "1Xa6lXXQ70elpS5vXtgPqUcKT5hcEV43B",
+  "CD1-03": "1bHy9SC4vHieBPqFBW96-xSZrj_aEWVhm",
+  "CD1-02": "1KBvki5OFdsfstdwanI6OzQK7QHhZcnw1",
+  "CD1-01": "1bLDkeFh3kf-o91eubsaVuLkr-SQAms8R",
+  "CD2-51": "1fk-NenI3cLjmN1D8KSvbHyDOzzQRrlsX",
+  "CD2-50": "12dHue3P1j6QrUMY0PJlrVRT-2pqBQ5yh",
+  "CD2-49": "1UGmgoS-CtYZLVrjna_yjqz3AbXadbVH6",
+  "CD2-48": "1K2d0_K_s2452nFpwkrcn9A3ptptyK5rc",
+  "CD2-47": "1gVtRNiGlqST9I43FSNEN4IP-aBhTAPj1",
+  "CD2-46": "1pO38u2-POiucpzby29ATXfKc6XZm_7si",
+  "CD2-45": "1ZV1aYbfSnulRINSzl2Cd1JJPtqUfAG1X",
+  "CD2-44": "1FNbhs1O1Uc49yNd-Z3zrucQ6iz8zPzyx",
+  "CD2-43": "1fiMT41Y9PYMVBaYN5D_adxhrYMoBbr11",
+  "CD2-42": "1yxRjQaqDAgS5aA9zS_1mcQZvJvMHhyCj",
+  "CD2-41": "1vL53P0HfgFjxvePWpIA9EJIcnPLZHsJL",
+  "CD2-40": "1GngRTwaqv-uXxokcGy4rDZW4rAQqDug0",
+  "CD2-39": "1HBVT52tKdj3ekRVB8gHvg3c7CBgfKha8",
+  "CD2-38": "1mdwKA-PsqAvoJ0smfQxaOlzqMeNpKwRu",
+  "CD2-37": "1lALVLnBi4r9FgV_RXo6vaZIjfmioonEu",
+  "CD2-36": "1DZnb_IvBrqYfNZqWxuliQlJ-uGPgqIz9",
+  "CD2-35": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
+  "CD2-34": "1nk3TNOEUIL7gjIuR7LRFoaKHATh46E_P",
+  "CD2-33": "1bg-g73NV1eIgVL8qKi4BxwDz7dUiQYm9",
+  "CD2-32": "1t44G8OrP3Zj4Rb7kWUAV_u08PUxl4HhU",
+  "CD2-31": "1bohxCDWg5pwB4IZnpibBlFoM3z6FkPyP",
+  "CD2-30": "16LfOMCkuY-PfaToO932aSE35yGJ5jYXJ",
+  "CD2-29": "1s-eJwkUYYRbPOBNjXRKhkuUsT1yj3C3o",
+  "CD2-28": "1EMV_qy19Ktx3F_lPWtt3JFHPibyHt5du",
+  "CD2-27": "10g7LyS5-rGCPgoOgPoYfw-zpBrUZVt9-",
+  "CD2-26": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H",
+  "CD2-25": "1dZfNW0fnedxJjSARaHw2fIi8x_k0-vO4",
+  "CD2-24": "17GXqR69gZa1ARaqjb59vylcH5vqvKAHT",
+  "CD2-23": "1NINHVmxH_tX1sO2WGYDAgfmIZh5i-Mqh",
+  "CD2-22": "1aUGlOIiWw4-lFvOtfgoJTna4NXGG5jbc",
+  "CD2-21": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+  "CD2-20": "1T8j14lzwH_gDMg-3fHFAYAhbhIUSX61U",
+  "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC",
+  "CD2-18": "14nIKU6l5utMudXb9HS8Zc9aZsYOVul1a",
+  "CD2-17": "1ekj5fIOB0J586F0o7FM61Suw4kPPqhuG",
+  "CD2-16": "1nvVL0Qyz1MqQ5nrpPjt2VAqVqp-T10j7",
+  "CD2-15": "1-t6GbrfhyGjtVfoi-1YcIdYUfBMS0PXc",
+  "CD2-14": "1FH6-MIkmyw1B6Bg_EuzrfImBtb1z-I4Y",
+  "CD2-13": "1B1-ZIOr4BLC1YXUwuIFDU0KENcwH65P-",
+  "CD2-12": "1PoKSWp3aP5AzcfNsOn27m_tMqBk3BrMg",
+  "CD2-11": "1K5jtumlm4ldnh9lKoQtqDWJEjrM2lELr",
+  "CD2-10": "1785jM4_82aewODHullc_RN03XCCmtHDE",
+  "CD2-06": "1xyeqwQOy-IrZpUU3W-9_sWYi3EzqKIcI",
+  "CD2-05": "13VCayyz_hvpXvdoHC1Fz1KOtGJvTPJIm",
+  "CD2-04": "1lx6g5T4FGT2abWqiYT-y2xxfETpT9xV0",
+  "CD2-03": "1_3xEX84Hd3RgmdEzsW53qrI-aO8YauhQ",
+  "CD2-02": "1so2aXL-7Nxpv9ONXbwGlwQTHJ1yq4V54",
+  "CD2-01": "1ItJi2yl8Xjm8WRu0nywIIb5KD6FumUkn",
+  "CD2-09": "1W3UnHx4mDS1zFBcbT_MXfwTqe7QR435-",
+  "CD2-08": "1Yh5hYRZd2RRwZFe--KBWKzTq7CAtkB_O",
+  "CD2-07": "10Z-khFFd9NbV_Zx9Ln49tvz5XMCU2PBJ",
+  "CD3-49": "1BF3c1Zum_J_gc4K03Cy2de9cjvnWje0p",
+  "CD3-48": "1rTGk7reWr8ES0kGR4-jHX_ojIens-uQj",
+  "CD3-47": "1f_1TRT0kI34tYGX_VvxIJUyw8tGQttWo",
+  "CD3-46": "1SRGmGyKu9cDmQyyi2RD5SjfevpaR11F5",
+  "CD3-45": "1OZNkiZYvdD5_Cp-pywsB530Hk_QLLdzb",
+  "CD3-44": "1rpmMiue_pZkAKTsPeTLYZZpc2ALy-wXL",
+  "CD3-43": "1Lwu3pgFWQsfn5u67ErKgSs0LGtKah6Uq",
+  "CD3-42": "1Ppb43NNsKfQpGxfUf6JszQfcLWHCd7J3",
+  "CD3-41": "1GqLqE6EntsZACqd93g-IX-AfMIqmUwPC",
+  "CD3-40": "1uO3orq4gonX_YBzxOGI5EX3F9y_NpfbB",
+  "CD3-39": "1ffLqE601q1Wtgd_TI36okoqtCBK_PZKb",
+  "CD3-38": "173GIORr-aUO2Iww7j9rCsOiWW3XNhXVk",
+  "CD3-37": "1Kd0kLZo4lwM5ZbxliJHoHgn0e3PKsfvz",
+  "CD3-36": "1UnG0RwD8flFNz0UpFgNWqJ8BgT8XzTM5",
+  "CD3-35": "1CYkpnETZJAQxFk8xacljNQD-TBS4danc",
+  "CD3-34": "1sY7S0EVVbENv5gmUnMb0SFIujfg6XGpK",
+  "CD3-33": "1vWg2Dw-1Vbm19JsUuqgEy21yuQyH2zOb",
+  "CD3-32": "1ohHvL4cQ26aNIyp97qexlEOZsYA_OMbp",
+  "CD3-31": "1wyhMvVojLHvfhcuWQDxlPzEIjdDp69ZL",
+  "CD3-30": "1M01-6uPokXgXnOF78vPQZ5i0apdjDmWt",
+  "CD3-29": "1jfzvwPt92qebONMhoQMABhaPcChmG0pF",
+  "CD3-28": "1UKcSHeY_s6Sc5Su859fDSHD0bthksXs2",
+  "CD3-27": "1ydVjR7Z9XBL5s3c47PwMkvJrg-etKOXu",
+  "CD3-26": "1ZRcaKXVwlBn94woeQOX20EWyVijloFE6",
+  "CD3-25": "1iA-FDSGoydonKqSnOXMdfyxerMWCVXSV",
+  "CD3-24": "1bns47o67HLRpXpfHXjBwY-lU3Vb8lV2p",
+  "CD3-23": "1-I0iGq290CG99f0ZBMnkMPnZkuuMQzSU",
+  "CD3-22": "1yjoziyRgQWHnwZ4wy-sFnJcGorXK_98J",
+  "CD3-21": "1Qa9AfemBu-etancAHnryknAC1XZNK0FR",
+  "CD3-20": "1FXuafk4GK--evadlcaR3bbgQmUK2bbue",
+  "CD3-19": "1GXJmGrb4OJ6bp9vbrTGLUwbMWrN4Iv6c",
+  "CD3-18": "1pKoaMY8-6Kg_0hF8jnOBXS7_5mtXCt8a",
+  "CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKk9K8Du",
+  "CD3-16": "12GfEs-yBivczu4stIKMfm8BrS4AyYW2M",
+  "CD3-15": "1cJiT8FzVnxl3YrRIFpESLS-A16aBPC7Z",
+  "CD3-14": "1gdfLJPCySLr7czH4pTRu3TWxRYZ-Lr-s",
+  "CD3-13": "1JAfqE_ieNNsEYbhDCMH8f-rj449a23Du",
+  "CD3-12": "1PjQuJwy8SVrh4Y8sZYdFJKxKTCmtRjsh",
+  "CD3-11": "1aFRRk2mzGa1BLhVe7kzhfqRCnCp3ZWpt",
+  "CD3-10": "1x7LIPuPvbl9oGZXg3fDROUVE0H-cjg_2",
+  "CD3-09": "1SRZv1CganXHWXVD5WXRTQaJgqrNT8sBZ",
+  "CD3-08": "1Y6nG2rpOOGwKZQCwc0GbsxFtRtdOOVdh",
+  "CD3-07": "1LdCFIJ-x6o1abQY0zEqi1gpsNeKBrDFy",
+  "CD3-06": "1Of8zmJv5QoSFsxM9mMG3mArtxhpnh19a",
+  "CD3-05": "1FM3Y5WOaR2-sAAO9cQUW9jsI3j7hxIcg",
+  "CD3-04": "1tFuOSFddrVFagQYTn5xzD8R7u7EkVVwc",
+  "CD3-03": "17lqds1s5vGojKpMacwczirCDXWXAPyeU",
+  "CD3-02": "1CWEtMxq1EITbN9LG_tzxESe6ETkoeUrZ",
+  "CD3-01": "1LZ9gPRuabrJGYNkzGyo8ZD38klnzuyBY"
+}
     token=(globals().get("BOT_TOKEN") or globals().get("TOKEN") or os.environ.get("BOT_TOKEN") or "").strip()
     if not token:
         print("English Y1Y2 Telegram token missing",flush=True)
         return False
     sent=0
-    with zipfile.ZipFile(zpath) as z:
-        for ref in refs:
-            member=_eng12_audio_member_for_ref(ref,zpath)
-            if not member:
-                print("English Y1Y2 audio member not found:",ref,flush=True)
-                continue
-            suffix=os.path.splitext(member)[1] or ".wma"
-            with tempfile.NamedTemporaryFile(delete=False,suffix=suffix) as tmp:
-                tmp.write(z.read(member)); tpath=tmp.name
-            try:
-                # WMA is not a reliable Telegram sendAudio format. Send it as a
-                # document first so the verified original file is delivered intact.
-                mime=mimetypes.guess_type("x"+suffix)[0] or "application/octet-stream"
-                with open(tpath,"rb") as fh:
-                    files={"document":(f"{ref}{suffix}",fh,mime)}
-                    data={"chat_id":str(cid),"caption":f"🎧 {ref}"}
-                    rr=requests.post(f"https://api.telegram.org/bot{token}/sendDocument",data=data,files=files,timeout=120)
-                if not rr.ok:
-                    print("English Y1Y2 audio send failed:",ref,rr.status_code,rr.text[:500],flush=True)
-                else:
-                    sent += 1
-            finally:
+    for ref in refs:
+        m=re.search(r"CD\\s*([123])\\s*[-–:]?\\s*(?:Track\\s*)?(\\d{1,2})",str(ref),re.I)
+        if not m:
+            print("English audio invalid reference:",ref,flush=True); continue
+        key=f"CD{int(m.group(1))}-{int(m.group(2)):02d}"
+        fid=drive_files.get(key)
+        if not fid:
+            print("English audio Drive file id missing:",key,flush=True); continue
+        tpath=""
+        try:
+            rr=requests.get("https://drive.usercontent.google.com/download",
+                            params={"id":fid,"export":"download","confirm":"t"},
+                            timeout=60,stream=True,allow_redirects=True)
+            ctype=(rr.headers.get("content-type") or "").lower()
+            if not rr.ok or "text/html" in ctype:
+                print("English individual audio download failed:",key,rr.status_code,ctype,flush=True); continue
+            with tempfile.NamedTemporaryFile(delete=False,suffix=".wma") as tmp:
+                for chunk in rr.iter_content(256*1024):
+                    if chunk: tmp.write(chunk)
+                tpath=tmp.name
+            if os.path.getsize(tpath)<1000:
+                print("English individual audio too small:",key,flush=True); continue
+            with open(tpath,"rb") as fh:
+                files={"document":(key+".wma",fh,"audio/x-ms-wma")}
+                data={"chat_id":str(cid),"caption":f"🎧 {key}"}
+                tr=requests.post(f"https://api.telegram.org/bot{token}/sendDocument",
+                                 data=data,files=files,timeout=120)
+            if tr.ok: sent += 1
+            else: print("English Y1Y2 audio send failed:",key,tr.status_code,tr.text[:500],flush=True)
+        except Exception as e:
+            print("English individual audio error:",key,repr(e),flush=True)
+        finally:
+            if tpath:
                 try: os.unlink(tpath)
                 except Exception: pass
     return sent > 0
