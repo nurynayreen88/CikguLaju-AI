@@ -10,6 +10,7 @@ on:
       - 'tools/patch_english_y1y2_bot_ready_v1.py'
       - 'data/english_y1y2_sow_master_320.json'
       - 'apply_beta50_patch.py'
+      - 'tools/patch_pdp_flow_v2431.py'
 
 permissions:
   contents: write
