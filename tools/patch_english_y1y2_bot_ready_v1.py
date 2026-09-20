@@ -393,6 +393,13 @@ def callback(cid,d):
         ss["rph_main_sp"]=ss.get("main_sp","")
         ss["rph_complementary_sk"]=ss.get("complementary_sk","")
         ss["rph_complementary_sp"]=ss.get("complementary_sp","")
+        # RPH engine policy: activities/objectives must be anchored to the selected SOW skill.
+        ss["rph_curriculum_context"]=ss.get("material_curriculum_context","")
+        ss["rph_source_mode"]=ss.get("lesson_source_mode","SOW_ONLY")
+        ss["rph_require_main_skill_match"]=True
+        ss["rph_require_main_sp_match"]=True
+        ss["rph_require_complementary_sp_match"]=True
+        ss["rph_allow_generic_activity"]=False
         ss["worksheet_topic"]=ss.get("topic","")
         ss["worksheet_skill"]=ss.get("lesson_skill","")
         ss["bbm_topic"]=ss.get("topic","")
