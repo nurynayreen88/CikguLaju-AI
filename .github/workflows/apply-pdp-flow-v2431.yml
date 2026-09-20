@@ -55,9 +55,9 @@ jobs:
           assert '_ENG12_SOW_MASTER' in s
           assert 'DB_SOW_MASTER_320' in s
           assert 'EMBEDDED_SOW_FALLBACK' in s
-          assert 'MAIN_PDP_ENTRY_V2500' in s
+          assert 'MAIN_PDP_ENTRY_V2501' in s
           assert 'pdp_material_start_v2500' in s
-          assert '_callback_v2500_base(cid,"task_rph")' in s
+          assert 'return show_grades(cid)' in s
           assert '_eng12_is_english_subject_callback' in s
           assert not re.search(r'(?s)def _pdp_pick_date_v2393\(cid\):.*?dates=\[today\+timedelta\(days=i\) for i in range\((?:7|14)\)\]',s)
           print('QA PASS',len(s.encode('utf-8')))
