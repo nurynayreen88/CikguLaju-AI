@@ -450,7 +450,11 @@ def callback(cid,d):
             "unit_tb_starts":{"0":4,"1":10,"2":22,"3":34,"4":46,"5":58,"6":70,"7":82,"8":94,"9":106},
             "required_rph_sections":["aims","warm_up","student_book_procedure","workbook_procedure","audio_procedure","checking_feedback","ending_lesson","extension_optional"],
             "placeholder_reference_forbidden":True,
-            "unverified_guidance_policy":"DO_NOT_INVENT"
+            "unverified_guidance_policy":"ALLOW_PEDAGOGICAL_ENRICHMENT",
+            "invention_scope":"RPH_ACTIVITY_ONLY",
+            "verified_mapping_fields_locked":["lesson_no","unit","main_content_standard","main_learning_standard","complementary_content_standard","complementary_learning_standard","textbook_page","workbook_page","audio_reference"],
+            "ai_may_enrich":["aims","warm_up","student_book_procedure","workbook_procedure","audio_procedure","checking_feedback","ending_lesson","extension_optional","bbm","differentiation"],
+            "enrichment_rule":"Teacher's Book is the primary guide. AI may add age-appropriate teaching steps and activities, but must not alter verified curriculum or source mappings."
         }
         ss["teacher_book_integration_rule"]=(
             "Map the selected SB/WB page to its Teacher's Book teaching notes; "
