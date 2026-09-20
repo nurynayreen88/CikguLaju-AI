@@ -900,8 +900,53 @@ def _semantic_full_rph_text(s):
         'REFLEKSI: ________ / ________ murid mencapai objektif. ________ murid belum mencapai objektif dan akan diberi tindakan susulan khusus.'
     ])
 
+def _eng_verified_teacher_rph_text(s):
+    """Build English RPH directly from verified Teacher's Book guidance when available."""
+    g=s.get("rph_verified_teacher_guidance") or {}
+    if not isinstance(g,dict) or str(g.get("verification_status") or "")!="VERIFIED_TB_SCAN":
+        return ""
+    year=str(s.get("year") or "").replace("Tahun ","Year ")
+    topic=str(s.get("topic") or g.get("unit") or "").strip()
+    lesson=str(s.get("lesson_no") or s.get("lesson") or "").strip()
+    sk=(str(s.get("sk_code") or "").strip()+" "+str(s.get("sk_text") or "").strip()).strip()
+    sp=(str(s.get("sp_code") or "").strip()+" "+str(s.get("sp_text") or "").strip()).strip()
+    refs=[]
+    ps,pe=s.get("textbook_page_start"),s.get("textbook_page_end")
+    wp,we=s.get("workbook_page_start"),s.get("workbook_page_end")
+    if ps not in (None,""): refs.append("Student's Book p."+ (str(ps) if pe in (None,"",ps) else str(ps)+"-"+str(pe)))
+    if wp not in (None,""): refs.append("Workbook p."+ (str(wp) if we in (None,"",wp) else str(wp)+"-"+str(we)))
+    aims=str(g.get("aims") or "").strip()
+    warm=str(g.get("warm_up") or "").strip()
+    sb=str(g.get("student_book_procedure") or "").strip()
+    wb=str(g.get("workbook_procedure") or "").strip()
+    aud=str(g.get("audio_procedure") or "").strip()
+    check=str(g.get("checking_feedback") or "").strip()
+    ending=str(g.get("ending_lesson") or "").strip()
+    ext=str(g.get("extension_optional") or "").strip()
+    stages=[]
+    if warm: stages.append("SET INDUCTION / WARM-UP:\n"+warm)
+    if sb: stages.append("MAIN ACTIVITY — STUDENT'S BOOK:\n"+sb)
+    if wb: stages.append("PRACTICE / CONSOLIDATION — WORKBOOK:\n"+wb)
+    if aud: stages.append("AUDIO:\n"+aud)
+    if check: stages.append("ASSESSMENT / CHECKING:\n"+check)
+    if ending: stages.append("CLOSURE:\n"+ending)
+    if ext: stages.append("OPTIONAL EXTENSION:\n"+ext)
+    return "\n".join([
+        "SUBJECT: English","YEAR / FORM: "+year,
+        "LESSON: "+lesson,"TOPIC: "+topic,
+        "TEXTBOOK / WORKBOOK REFERENCE: "+("; ".join(refs) if refs else "Use verified Teacher's Book-linked source"),
+        "CONTENT STANDARD: "+sk,"LEARNING STANDARD: "+sp,
+        "LEARNING OBJECTIVES: "+(aims or "Follow the verified Teacher's Book aim for this lesson."),
+        "SUCCESS CRITERIA: Pupils complete the verified lesson tasks and demonstrate the selected Learning Standard.",
+        "TEACHING AND LEARNING ACTIVITIES:","\n\n".join(stages),
+        "SOURCE STATUS: VERIFIED_TB_SCAN"
+    ])
+
 def _local_rph_text_english(s):
     """Topic- and skill-specific English RPH generated locally."""
+    _verified=_eng_verified_teacher_rph_text(s)
+    if _verified:
+        return _verified
     _semantic=_semantic_full_rph_text(s)
     if _semantic:
         return _semantic
