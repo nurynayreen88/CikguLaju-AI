@@ -59,6 +59,7 @@ def _eng12_rows(year_label):
     import sqlite3
     path=_eng12_db_path()
     verified={}
+    master_rows=[]
     if path:
         con=sqlite3.connect(path); con.row_factory=sqlite3.Row
         try:
@@ -70,41 +71,65 @@ def _eng12_rows(year_label):
             ORDER BY CAST(lesson_no AS INTEGER)
             """,(year_label,)).fetchall()
             verified={int(r["lesson_no"]):dict(r) for r in rs}
+            try:
+                master_rows=con.execute("""
+                SELECT lesson_no,skill_lesson,unit_title,main_content_standard,
+                       main_learning_standard,complementary_content_standard,
+                       complementary_learning_standard,source_mode
+                FROM sow_master_320 WHERE year_label=?
+                ORDER BY lesson_no
+                """,(year_label,)).fetchall()
+            except sqlite3.Error:
+                master_rows=[]
         finally: con.close()
-    sow=_ENG12_SOW_MASTER.get(year_label,[])
+    sow=[list(r) for r in master_rows] if len(master_rows)==160 else _ENG12_SOW_MASTER.get(year_label,[])
     rows=[]
-    for n,skill,topic,mcs,mls,ccs,cls in sow:
+    for r in sow:
+        n,skill,topic,mcs,mls,ccs,cls=r[:7]
         item=dict(verified.get(int(n),{}))
         item.update({"year_label":year_label,"subject":"Bahasa Inggeris","lesson_no":int(n),
                      "unit_title":topic,"topic":topic,"ready_for_bot":1,
                      "_sow_skill":skill,"_sow_main_cs":mcs,"_sow_main_ls":mls,
-                     "_sow_comp_cs":ccs,"_sow_comp_ls":cls})
+                     "_sow_comp_cs":ccs,"_sow_comp_ls":cls,
+                     "_sow_source":"DB_SOW_MASTER_320" if len(master_rows)==160 else "EMBEDDED_SOW_FALLBACK"})
         rows.append(item)
     return rows if len(rows)==160 else list(verified.values())
 
 def _eng12_standards(year_label,lesson_no):
     import sqlite3
     path=_eng12_db_path()
-    if not path: return []
-    con=sqlite3.connect(path); con.row_factory=sqlite3.Row
-    try:
-        rs=con.execute("""
-        SELECT role,content_standard,learning_standard
-        FROM bot_lesson_standards
-        WHERE year_label=? AND lesson_no=?
-        ORDER BY CASE role WHEN 'MAIN' THEN 0 ELSE 1 END,id
-        """,(year_label,str(lesson_no))).fetchall()
-        out=[dict(r) for r in rs]
-        if out: return out
-        for n,skill,topic,mcs,mls,ccs,cls in _ENG12_SOW_MASTER.get(year_label,[]):
-            if int(n)==int(lesson_no):
+    if path:
+        con=sqlite3.connect(path); con.row_factory=sqlite3.Row
+        try:
+            try:
+                r=con.execute("""
+                SELECT main_content_standard,main_learning_standard,
+                       complementary_content_standard,complementary_learning_standard
+                FROM sow_master_320 WHERE year_label=? AND lesson_no=?
+                """,(year_label,int(lesson_no))).fetchone()
+            except sqlite3.Error:
+                r=None
+            if r:
                 return [
-                    {"role":"MAIN","content_standard":mcs,"learning_standard":mls},
-                    {"role":"COMPLEMENTARY","content_standard":ccs,"learning_standard":cls}
+                    {"role":"MAIN","content_standard":r["main_content_standard"],"learning_standard":r["main_learning_standard"]},
+                    {"role":"COMPLEMENTARY","content_standard":r["complementary_content_standard"],"learning_standard":r["complementary_learning_standard"]},
                 ]
-        return []
-    finally:
-        con.close()
+            rs=con.execute("""
+            SELECT role,content_standard,learning_standard
+            FROM bot_lesson_standards
+            WHERE year_label=? AND lesson_no=?
+            ORDER BY CASE role WHEN 'MAIN' THEN 0 ELSE 1 END,id
+            """,(year_label,str(lesson_no))).fetchall()
+            out=[dict(r) for r in rs]
+            if out: return out
+        finally: con.close()
+    for n,skill,topic,mcs,mls,ccs,cls in _ENG12_SOW_MASTER.get(year_label,[]):
+        if int(n)==int(lesson_no):
+            return [
+                {"role":"MAIN","content_standard":mcs,"learning_standard":mls},
+                {"role":"COMPLEMENTARY","content_standard":ccs,"learning_standard":cls},
+            ]
+    return []
 
 def _eng12_unit_menu(cid,page=0):
     ss=state.setdefault(cid,{})
@@ -394,6 +419,21 @@ def callback(cid,d):
         ss["rph_complementary_sk"]=ss.get("complementary_sk","")
         ss["rph_complementary_sp"]=ss.get("complementary_sp","")
         # RPH engine policy: activities/objectives must be anchored to the selected SOW skill.
+        # Audio contract: only verified tracks are exposed to materials/RPH.
+        _ast=str(ss.get("audio_status") or "")
+        _aref=str(ss.get("audio_reference") or "") if _ast=="VERIFIED_AUDIO" else ""
+        ss["rph_audio_status"]=_ast
+        ss["rph_audio_reference"]=_aref
+        ss["rph_require_audio_procedure"]=bool(_ast=="VERIFIED_AUDIO" and _aref)
+        ss["rph_audio_policy"]=(
+            "USE_VERIFIED_AUDIO_IN_PDP" if _ast=="VERIFIED_AUDIO" and _aref else
+            "NO_AUDIO_REQUIRED" if _ast=="NO_AUDIO_VERIFIED" else
+            "HIDE_UNVERIFIED_TRACK"
+        )
+        ss["worksheet_audio_status"]=_ast
+        ss["worksheet_audio_reference"]=_aref
+        ss["bbm_audio_status"]=_ast
+        ss["bbm_audio_reference"]=_aref
         ss["rph_curriculum_context"]=ss.get("material_curriculum_context","")
         ss["rph_source_mode"]=ss.get("lesson_source_mode","SOW_ONLY")
         ss["rph_require_main_skill_match"]=True
