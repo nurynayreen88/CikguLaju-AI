@@ -153,6 +153,7 @@ if _eng_patch.exists():
     # Runtime audit: print the exact functions/lines still containing legacy English SK-flow wording.
     import re
     _needles=("unit buku teks","pilih **sk**","pilih <b>sk</b>","standard kandungan (sk)")
+    _txt=P.read_text(encoding="utf-8")
     _low=_txt.lower()
     for _needle in _needles:
         _start=0
