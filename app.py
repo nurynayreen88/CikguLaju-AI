@@ -23235,6 +23235,48 @@ def _pdp_pick_class_v2393(cid):
     msg='🏫 <b>Pilih Kelas</b>' if rows else '🏫 <b>Tiada kelas dipautkan</b>\n\nMasukkan kelas secara manual untuk sesi ini.'
     return send(cid,msg,kb)
 
+# v24.35a LEGACY CLASS LINK RECOVERY
+# Preserve existing profile classes even when old rows do not yet carry the
+# newer year/subject metadata. Prefer exact context matches, then year/name
+# matches, then legacy profile rows. Never force teachers to recreate classes.
+def _profile_class_candidates_recovered(cid,year_label,subject):
+    all_rows=list(_profile_class_records(cid) or [])
+    want_year=_year_number_v2393(year_label)
+    want_sub=_norm_subject_v2393(subject)
+    exact=[]; level=[]; legacy=[]
+    for i,r0 in enumerate(all_rows):
+        r=dict(r0); r['_profile_idx']=i
+        explicit=str(r.get('year_label') or '').strip()
+        got=_year_number_v2393(explicit) or _class_level_guess_v2393(r.get('name'))
+        subs=[_norm_subject_v2393(x) for x in (r.get('subjects') or []) if str(x).strip()]
+        if want_year and got==want_year:
+            level.append(r)
+            if not subs or not want_sub or any(want_sub==x or want_sub in x or x in want_sub for x in subs if x):
+                exact.append(r)
+        elif not explicit and not got:
+            legacy.append(r)
+    if exact: return exact
+    if level: return level
+    # Last-resort compatibility for old profiles created before year/subject
+    # linking existed. This is display-only; it does not rewrite profile data.
+    return legacy or all_rows
+
+def _pdp_pick_class_v2393(cid):
+    ss=state.setdefault(cid,{})
+    rows=_profile_class_candidates_recovered(cid,ss.get('year',''),ss.get('subject',''))
+    ss['_pdp_classes_v2393']=rows
+    kb=[]
+    for i,r in enumerate(rows[:20]):
+        name=str(r.get('name') or '').strip()
+        if not name: continue
+        extra=f" • {r.get('students')} murid" if r.get('students') else ''
+        kb.append([{'text':('🏫 '+name+extra)[:60],'callback_data':f'pdpclass93_{i}'}])
+    kb.append([{'text':'✏️ Masukkan Kelas Manual','callback_data':'pdpclass34_manual'}])
+    kb.append([{'text':'🏫 Urus Kelas','callback_data':'profclass_manage'}])
+    if rows:
+        return send(cid,'🏫 <b>Pilih Kelas</b>\n\nKelas profil lama turut dikekalkan supaya pautan sedia ada tidak hilang.',kb)
+    return send(cid,'🏫 <b>Tiada kelas disimpan dalam profil.</b>\n\nMasukkan kelas manual untuk sesi ini atau tambah kelas dalam profil.',kb)
+
 # Once end time is valid, mark the PDP context complete and continue through
 # the pre-v23.93 pack function. This is the continuation used by the historical
 # timetable/manual-time flow and avoids the v24.35 return-None dead end.
