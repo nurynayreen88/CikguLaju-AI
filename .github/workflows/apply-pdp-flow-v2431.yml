@@ -35,6 +35,7 @@ jobs:
           python tools/patch_restore_class_time_continuation_v2439.py app.py
           python tools/patch_remove_page_step_v2440.py app.py
           python tools/patch_english_y1y2_bot_ready_v1.py app.py
+          python apply_beta50_patch.py
           python -m py_compile app.py
           python -m py_compile apply_beta50_patch.py
           python - <<'PY'
