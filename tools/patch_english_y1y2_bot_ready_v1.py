@@ -630,6 +630,6 @@ if PRIORITY_MARK not in s:
 """
     s=s[:body_start+1]+priority+s[body_start+1:]
 
-s += "\n\n"+block
+if "# ===== ENGLISH Y1Y2 BOT READY V1 =====" not in s:\n    s += "\n\n"+block
 p.write_text(s,encoding="utf-8")
 print("patched",p,p.stat().st_size)
