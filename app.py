@@ -24002,7 +24002,7 @@ def _eng12_lesson_menu(cid,ui,page=0):
     return send(cid,f"📖 <b>{heading}</b>\n\nPilih <b>Lesson</b>. SK/SP tidak perlu dipilih kali kedua.",kb)
 
 def _eng12_audio_zip_path():
-    import os, requests, re
+    import os, requests
     candidates=[
         os.environ.get("CIKGULAJU_SUPERMINDS_AUDIO_ZIP","").strip(),
         os.path.join(os.path.dirname(__file__),"super_minds_1_audio_cds.zip"),
@@ -24016,8 +24016,15 @@ def _eng12_audio_zip_path():
     out=os.path.join("/tmp","super_minds_1_audio_cds.zip")
     try:
         sess=requests.Session()
-        url=f"https://drive.usercontent.google.com/download?id={drive_id}&export=download&confirm=t"
-        rr=sess.get(url,timeout=180,stream=True,allow_redirects=True)
+        # Google Drive large files may require a download warning/confirm token.
+        url="https://drive.google.com/uc?export=download&id="+drive_id
+        rr=sess.get(url,timeout=60,stream=True,allow_redirects=True)
+        token=None
+        for k,v in rr.cookies.items():
+            if k.startswith("download_warning"): token=v; break
+        if token:
+            rr.close()
+            rr=sess.get(url+"&confirm="+token,timeout=180,stream=True,allow_redirects=True)
         ctype=(rr.headers.get("content-type") or "").lower()
         with open(out,"wb") as fh:
             for chunk in rr.iter_content(1024*1024):
