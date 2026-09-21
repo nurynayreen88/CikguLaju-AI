@@ -25692,3 +25692,199 @@ for _fn_name in ('_quick_rph_pdf','_rph_pdf','build_rph_pdf','generate_rph_pdf')
         pass
 # ===== END v25.19 ENGLISH RPH LEVEL/SKILL + HOTS LAYOUT SAFE PATCH =====
 
+
+
+
+# ===== v25.20 RPH PDF ROW BINDING FIX =====
+def _rph_rows_v2520(s, ai_text):
+    r = _rph_rows(s, ai_text)
+
+    # Bind verified English Y3-Y6 state directly into the formatter rows.
+    if _en_rph_is_target_v2519(s):
+        try:
+            _en_rph_prepare_state_v2519(s)
+        except Exception:
+            pass
+
+        # Standards: always prefer mapped state over parsed placeholder.
+        main_cs=str(s.get('content_standard') or s.get('sk_code') or '').strip()
+        main_ls=str(s.get('learning_standard') or s.get('sp_code') or '').strip()
+        comp_cs=str(s.get('complementary_content_standard') or s.get('comp_sk_code') or '').strip()
+        comp_ls=str(s.get('complementary_learning_standard') or s.get('comp_sp_code') or '').strip()
+
+        if main_cs:
+            r['STANDARD KANDUNGAN']=main_cs + ((f"; Complementary: {comp_cs}") if comp_cs else '')
+        if main_ls:
+            r['STANDARD PEMBELAJARAN']=main_ls + ((f"; Complementary: {comp_ls}") if comp_ls else '')
+
+        # Objectives from v25.19 state.
+        objs=s.get('learning_objectives_v2519') or []
+        if objs:
+            r['OBJEKTIF PEMBELAJARAN']='\n'.join(f'{i}. {x}' for i,x in enumerate(objs,1))
+
+        # Populate both the summary Teaching and Learning row and phase table.
+        pre=str(s.get('pre_lesson') or '').strip()
+        dev=s.get('lesson_development') or []
+        post=str(s.get('post_lesson') or '').strip()
+        if isinstance(dev,str):
+            dev=[x.strip() for x in dev.splitlines() if x.strip()]
+        dev_text='\n'.join(f'{i}. {x}' for i,x in enumerate(dev,1)) if dev else ''
+
+        r['PENGETAHUAN SEDIA ADA']=r.get('PENGETAHUAN SEDIA ADA') or 'Pupils recall prior knowledge related to the lesson topic and target language.'
+        r['BAHAN BANTU MENGAJAR']=r.get('BAHAN BANTU MENGAJAR') or 'Student Book / Workbook / verified audio / suitable teaching aids as mapped'
+        r['EMK / NILAI']=r.get('EMK / NILAI') or 'Language; Values; 21st Century Learning'
+        r['KBAT / PAK21']=str(s.get('hots_21c') or s.get('hots') or r.get('KBAT / PAK21') or '').strip()
+        r['SET INDUKSI']=pre
+        r['AKTIVITI UTAMA']=dev_text
+        r['PENUTUP']=post
+
+        # Remove legacy mixed-language worksheet sentence from reflection.
+        refl=str(r.get('REFLEKSI') or '')
+        refl=re.sub(r'(?is)\n?5\.\s*Guru mengagihkan Lembaran Kerja.*$','',refl).strip()
+        if not refl:
+            refl='Attendance: ____ / ____\n____ pupils achieved the lesson objectives.\n____ pupils require further support.\nFollow-up / enrichment action: __________________________'
+        r['REFLEKSI']=refl
+
+        # A compact summary row used in the info table instead of leaving T&L blank.
+        r['PENGAJARAN DAN PEMBELAJARAN']='; '.join(x for x in [
+            ('Pre-Lesson: '+pre) if pre else '',
+            ('Lesson Development: '+(' / '.join(dev))) if dev else '',
+            ('Post-Lesson: '+post) if post else ''
+        ] if x)
+    return r
+
+# Replace formatter row source for Word/PDF by wrapping the existing _rph_rows symbol.
+try:
+    _rph_rows_before_v2520=_rph_rows
+    def _rph_rows(s, ai_text):
+        base=_rph_rows_before_v2520(s, ai_text)
+        if not _en_rph_is_target_v2519(s):
+            return base
+        # Re-run via the v25.20 binding logic without recursion by patching from base.
+        r=base
+        try:
+            _en_rph_prepare_state_v2519(s)
+        except Exception:
+            pass
+        main_cs=str(s.get('content_standard') or s.get('sk_code') or '').strip()
+        main_ls=str(s.get('learning_standard') or s.get('sp_code') or '').strip()
+        comp_cs=str(s.get('complementary_content_standard') or s.get('comp_sk_code') or '').strip()
+        comp_ls=str(s.get('complementary_learning_standard') or s.get('comp_sp_code') or '').strip()
+        if main_cs: r['STANDARD KANDUNGAN']=main_cs + ((f"; Complementary: {comp_cs}") if comp_cs else '')
+        if main_ls: r['STANDARD PEMBELAJARAN']=main_ls + ((f"; Complementary: {comp_ls}") if comp_ls else '')
+        objs=s.get('learning_objectives_v2519') or []
+        if objs: r['OBJEKTIF PEMBELAJARAN']='\n'.join(f'{i}. {x}' for i,x in enumerate(objs,1))
+        pre=str(s.get('pre_lesson') or '').strip()
+        dev=s.get('lesson_development') or []
+        if isinstance(dev,str): dev=[x.strip() for x in dev.splitlines() if x.strip()]
+        post=str(s.get('post_lesson') or '').strip()
+        r['SET INDUKSI']=pre
+        r['AKTIVITI UTAMA']='\n'.join(f'{i}. {x}' for i,x in enumerate(dev,1))
+        r['PENUTUP']=post
+        r['KBAT / PAK21']=str(s.get('hots_21c') or s.get('hots') or '').strip()
+        r['PENGETAHUAN SEDIA ADA']=r.get('PENGETAHUAN SEDIA ADA') or 'Pupils recall prior knowledge related to the lesson topic and target language.'
+        r['BAHAN BANTU MENGAJAR']=r.get('BAHAN BANTU MENGAJAR') or 'Student Book / Workbook / verified audio / suitable teaching aids as mapped'
+        r['EMK / NILAI']=r.get('EMK / NILAI') or 'Language; Values; 21st Century Learning'
+        refl=str(r.get('REFLEKSI') or '')
+        refl=re.sub(r'(?is)\n?5\.\s*Guru mengagihkan Lembaran Kerja.*$','',refl).strip()
+        if not refl:
+            refl='Attendance: ____ / ____\n____ pupils achieved the lesson objectives.\n____ pupils require further support.\nFollow-up / enrichment action: __________________________'
+        r['REFLEKSI']=refl
+        return r
+except NameError:
+    pass
+
+# Inject a dedicated Teaching and Learning summary row into English RPH PDF/Word tables by aliasing
+# the previously blank field through Prior Knowledge block is avoided; phase table is now authoritative.
+# ===== END v25.20 RPH PDF ROW BINDING FIX =====
+
+
+
+
+# ===== v25.21 DATE/TIME PICKER SELECTED-TICK + HOUR/MINUTE SEPARATOR =====
+def _rph_date_picker(cid, offset=0):
+    from datetime import date, timedelta, datetime as _dt
+    s=state.setdefault(cid,{})
+    base=date.today()+timedelta(days=offset)
+
+    selected_raw=str(s.get('rph_date') or '').strip()
+    selected_key=''
+    if selected_raw:
+        for fmt in ('%d/%m/%Y','%Y-%m-%d','%Y%m%d'):
+            try:
+                selected_key=_dt.strptime(selected_raw,fmt).strftime('%Y%m%d')
+                break
+            except Exception:
+                pass
+
+    kb=[]
+    for r in range(0,7,2):
+        row=[]
+        for j in range(2):
+            i=r+j
+            if i>=7: break
+            d=base+timedelta(days=i)
+            key=d.strftime('%Y%m%d')
+            if _is_english_subject(s):
+                label=d.strftime('%a %d/%m')
+            else:
+                _ms=['Isn','Sel','Rab','Kha','Jum','Sab','Ahd']
+                label=f'{_ms[d.weekday()]} {d.strftime("%d/%m")}'
+            if key==selected_key:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':'rphdate|'+key})
+        kb.append(row)
+    kb.append([{'text':'⬅️ 7 hari','callback_data':f'rphdatepage|{offset-7}'},{'text':'7 hari ➡️','callback_data':f'rphdatepage|{offset+7}'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    selected_note=f'\n\n✅ Dipilih: <b>{html.escape(selected_raw)}</b>' if selected_raw else ''
+    send(cid,'📅 <b>Pilih tarikh RPH</b>\n\nTekan tarikh — tidak perlu menaip.'+selected_note,kb)
+
+def _rph_time_picker(cid, mode='start', page=0):
+    """
+    v25.21:
+    - show selected value with ✅
+    - separate hour and minute visually
+    - use explicit separator between hour and minute
+    """
+    s=state.setdefault(cid,{})
+    start_min=max(0,min(23*60+50,int(page)*180))
+    end_min=min(24*60,start_min+180)
+    selected = s.get('rph_start_minutes') if mode=='start' else s.get('rph_end_minutes')
+    try:
+        selected=int(selected) if selected is not None else None
+    except Exception:
+        selected=None
+
+    kb=[]; row=[]
+    for m in range(start_min,end_min,10):
+        hh=m//60; mm=m%60
+        # Keep Telegram button text compact but visibly separated.
+        label=f'{hh:02d}  |  {mm:02d}'
+        if selected==m:
+            label='✅ '+label
+        row.append({'text':label,'callback_data':f'rphtime|{mode}|{m}'})
+        if len(row)==3:
+            kb.append(row); row=[]
+    if row: kb.append(row)
+
+    nav=[]
+    if start_min>0:
+        nav.append({'text':'⬅️ Awal','callback_data':f'rphtimepage|{mode}|{max(0,page-1)}'})
+    if end_min<24*60:
+        nav.append({'text':'Lewat ➡️','callback_data':f'rphtimepage|{mode}|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+
+    title='masa mula' if mode=='start' else 'masa tamat'
+    selected_note=''
+    if selected is not None:
+        sh,sm=divmod(selected,60)
+        selected_note=f'\n\n✅ Dipilih: <b>Jam {sh:02d}   |   Minit {sm:02d}</b>'
+    send(cid,
+         f'⏰ <b>Pilih {title} PdP</b>\n\n'
+         f'Jam   |   Minit\n'
+         f'Pilih terus daripada butang masa.'
+         f'{selected_note}',
+         kb)
+# ===== END v25.21 DATE/TIME PICKER SELECTED-TICK + HOUR/MINUTE SEPARATOR =====
+
