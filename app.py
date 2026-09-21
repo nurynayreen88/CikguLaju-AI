@@ -25400,3 +25400,295 @@ if _READY_DB_V2518 and os.path.exists(_READY_DB_V2518):
     DB_PATH=_READY_DB_V2518
 # ===== END v25.18 READY-TO-USE DB BOOTSTRAP =====
 
+
+
+
+# ===== v25.19 ENGLISH RPH LEVEL/SKILL + HOTS LAYOUT SAFE PATCH =====
+def _en_rph_year_level_v2519(s):
+    import re as _re
+    raw = str((s or {}).get('year') or (s or {}).get('year_label') or '')
+    m = _re.search(r'([1-6])', raw)
+    return int(m.group(1)) if m else None
+
+def _en_rph_is_target_v2519(s):
+    subj = str((s or {}).get('subject') or '').strip().lower()
+    y = _en_rph_year_level_v2519(s)
+    return subj in ('english','bahasa inggeris') and y in (3,4,5,6)
+
+def _en_rph_clean_focus_v2519(s):
+    vals = [
+        (s or {}).get('language_grammar_focus'),
+        (s or {}).get('language_focus'),
+        (s or {}).get('grammar_focus'),
+        (s or {}).get('focus'),
+        (s or {}).get('sow_focus'),
+    ]
+    for v in vals:
+        v = str(v or '').strip()
+        if v and v not in ('-','—'):
+            return v
+    return ''
+
+def _en_rph_skill_name_v2519(s):
+    for k in ('main_skill','skill_focus','sow_focus'):
+        v = str((s or {}).get(k) or '').strip()
+        if v:
+            low=v.lower()
+            for name in ('listening','speaking','reading','writing','language arts'):
+                if name in low:
+                    return name.title()
+    return 'Integrated Skills'
+
+def _en_rph_level_band_v2519(s):
+    y=_en_rph_year_level_v2519(s)
+    if y in (3,4): return 'semi_guided'
+    if y in (5,6): return 'independent'
+    return 'guided'
+
+def _en_rph_hots_short_v2519(s):
+    # Intentionally short: no activity/differentiation text is allowed here.
+    skill=_en_rph_skill_name_v2519(s).lower()
+    band=_en_rph_level_band_v2519(s)
+    if band=='semi_guided':
+        if 'reading' in skill: return 'Apply / Analyse'
+        if 'writing' in skill: return 'Apply / Create'
+        if 'speaking' in skill: return 'Apply / Evaluate'
+        if 'listening' in skill: return 'Understand / Apply'
+        if 'language arts' in skill: return 'Create / Evaluate'
+        return 'Apply / Analyse'
+    if band=='independent':
+        if 'writing' in skill: return 'Analyse / Create'
+        if 'reading' in skill: return 'Analyse / Evaluate'
+        if 'speaking' in skill: return 'Evaluate / Create'
+        if 'listening' in skill: return 'Analyse / Evaluate'
+        if 'language arts' in skill: return 'Create / Evaluate'
+        return 'Analyse / Create'
+    return 'Understand / Apply'
+
+def _en_rph_activity_bank_v2519(s):
+    """Return level- and skill-aware English activities. Y3-4 semi-guided; Y5-6 more independent."""
+    topic = str((s or {}).get('topic') or '').strip() or 'the lesson topic'
+    focus = _en_rph_clean_focus_v2519(s)
+    skill = _en_rph_skill_name_v2519(s)
+    band = _en_rph_level_band_v2519(s)
+    lang = focus or 'the target language'
+    if band=='semi_guided':
+        banks={
+            'Listening': {
+                'pre': f"Teacher activates prior knowledge about {topic} using two or three visual prompts and pre-teaches only essential words.",
+                'dev': [
+                    f"Pupils predict key words or ideas they may hear about {topic}.",
+                    "Pupils listen once for the main idea and select the most suitable response.",
+                    "Pupils listen again and complete a guided table, sequence or short information-gap task.",
+                    f"In pairs, pupils compare answers and use {lang} in a short follow-up response."
+                ],
+                'post': "Pupils give one key piece of information from the listening and complete a short exit check."
+            },
+            'Speaking': {
+                'pre': f"Teacher models two short exchanges related to {topic} and highlights {lang}.",
+                'dev': [
+                    "Pupils rehearse the model with sentence frames or cue cards.",
+                    "Pupils complete a structured pair information-gap or question-and-answer task.",
+                    "Pairs change partners and repeat with one added detail or reason.",
+                    "Selected pupils share a response with the class using the target language."
+                ],
+                'post': "Pupils self-check one speaking criterion and give one final spoken response."
+            },
+            'Reading': {
+                'pre': f"Teacher shows the title/visuals for {topic}; pupils predict two ideas before reading.",
+                'dev': [
+                    "Pupils skim the text to confirm or revise their predictions.",
+                    "Pupils read again and complete guided comprehension questions or a graphic organiser.",
+                    "Pairs locate evidence in the text for selected answers.",
+                    f"Pupils respond to one short question using {lang} or vocabulary from the text."
+                ],
+                'post': "Pupils state one new fact or idea from the text and complete an exit question."
+            },
+            'Writing': {
+                'pre': f"Teacher analyses a short model related to {topic} and highlights useful {lang}.",
+                'dev': [
+                    "Pupils organise ideas with prompts, notes, a graphic organiser or a word bank.",
+                    "Pupils draft a short text using the model and agreed success criteria.",
+                    "Pupils peer-check one or two features such as content, target language or punctuation.",
+                    "Pupils revise and produce a final response with reduced teacher support."
+                ],
+                'post': "Pupils compare their final work with the success criteria and identify one improvement."
+            },
+            'Language Arts': {
+                'pre': f"Teacher introduces the text, poem, story or creative stimulus connected to {topic}.",
+                'dev': [
+                    "Pupils identify a key character, image, feeling or message.",
+                    "Pupils respond through a guided creative task such as a short dialogue, illustration, role-play or alternative ending.",
+                    "Pairs/groups explain one creative choice using simple evidence from the text.",
+                    "Selected groups share their response."
+                ],
+                'post': "Pupils state one part they enjoyed and one idea or message they understood."
+            },
+        }
+    else:
+        banks={
+            'Listening': {
+                'pre': f"Pupils examine a brief stimulus about {topic}, predict content and identify what information they need to listen for.",
+                'dev': [
+                    "Pupils listen for gist and record the central idea independently.",
+                    "Pupils listen again for specific details, attitude, sequence or supporting evidence.",
+                    "In groups, pupils compare interpretations and justify answers using evidence from the recording.",
+                    "Pupils complete a short transfer task such as a summary, decision or spoken response."
+                ],
+                'post': "Pupils reflect on which listening strategy helped most and complete an independent exit task."
+            },
+            'Speaking': {
+                'pre': f"Pupils analyse a model response about {topic} and identify effective language or interaction strategies.",
+                'dev': [
+                    "Pupils prepare key points independently using minimal prompts.",
+                    "Pupils complete a pair/group discussion, problem-solving task, role-play or mini-presentation.",
+                    "Peers ask follow-up questions and give feedback against clear criteria.",
+                    "Pupils refine and deliver a stronger final response with a reason, example or supporting detail."
+                ],
+                'post': "Pupils evaluate their speaking against the success criteria and record one target for improvement."
+            },
+            'Reading': {
+                'pre': f"Pupils preview the text about {topic}, generate questions and predict the writer's purpose or content.",
+                'dev': [
+                    "Pupils read independently for gist and identify the main idea.",
+                    "Pupils analyse details, vocabulary in context, organisation or viewpoint.",
+                    "Pairs/groups justify answers using textual evidence.",
+                    "Pupils complete a higher-order response such as comparing, inferring, evaluating or summarising."
+                ],
+                'post': "Pupils write or share one evidence-based conclusion from the text."
+            },
+            'Writing': {
+                'pre': f"Pupils analyse a model text related to {topic} and identify how {lang} and text organisation support the purpose.",
+                'dev': [
+                    "Pupils plan content independently using an outline, mind map or success criteria.",
+                    "Pupils produce a first draft with appropriate organisation and target language.",
+                    "Peers review content, clarity and one language feature using a concise checklist.",
+                    "Pupils edit and produce an improved final version for a clear audience or purpose."
+                ],
+                'post': "Pupils evaluate one strength and one next step in their final writing."
+            },
+            'Language Arts': {
+                'pre': f"Pupils respond to a creative or literary stimulus related to {topic} and identify a key theme, mood or perspective.",
+                'dev': [
+                    "Pupils explore how language, character, image or structure creates meaning.",
+                    "Groups create an original response such as a performance, adaptation, visual interpretation or alternative scene.",
+                    "Pupils explain and defend creative choices with reference to the source.",
+                    "Groups present and receive focused peer feedback."
+                ],
+                'post': "Pupils reflect on how their interpretation changed after the creative task."
+            },
+        }
+    return banks.get(skill, {
+        'pre': f"Teacher activates prior knowledge about {topic} and introduces {lang}.",
+        'dev': [
+            "Pupils complete a guided input task.",
+            "Pupils practise the target skill in pairs or groups.",
+            "Pupils complete an independent response.",
+            "Pupils check the response against success criteria."
+        ],
+        'post': "Pupils complete a short exit task."
+    })
+
+def _en_rph_differentiation_v2519(s):
+    y=_en_rph_year_level_v2519(s)
+    if y in (3,4):
+        return ("Support: provide visuals, sentence frames, word banks or a partially completed organiser. "
+                "Challenge: pupils add one relevant detail, reason or independently formed sentence.")
+    return ("Support: provide a focused planning frame, key vocabulary or reduced task load. "
+            "Challenge: pupils extend the response with justification, evidence, comparison or an additional independent outcome.")
+
+def _en_rph_objectives_v2519(s):
+    skill=_en_rph_skill_name_v2519(s)
+    cskill=str((s or {}).get('complementary_skill') or '').strip() or 'complementary skill'
+    topic=str((s or {}).get('topic') or '').strip() or 'the lesson topic'
+    focus=_en_rph_clean_focus_v2519(s)
+    ftxt=f" using {focus}" if focus else ""
+    if skill=='Writing':
+        return [
+            f"By the end of the lesson, pupils can produce a short written response about {topic}{ftxt} that meets the stated success criteria.",
+            f"By the end of the lesson, pupils can use the {cskill} task to support, check or extend their written response."
+        ]
+    if skill=='Reading':
+        return [
+            f"By the end of the lesson, pupils can identify the main idea and relevant details in a text about {topic}.",
+            f"By the end of the lesson, pupils can use the {cskill} task to respond to information from the text."
+        ]
+    if skill=='Listening':
+        return [
+            f"By the end of the lesson, pupils can identify the main idea and selected details in a listening text about {topic}.",
+            f"By the end of the lesson, pupils can use the {cskill} task to respond appropriately to what they heard."
+        ]
+    if skill=='Speaking':
+        return [
+            f"By the end of the lesson, pupils can communicate relevant information about {topic}{ftxt} with appropriate support for their level.",
+            f"By the end of the lesson, pupils can use the {cskill} task to extend or support the spoken interaction."
+        ]
+    if skill=='Language Arts':
+        return [
+            f"By the end of the lesson, pupils can respond creatively to the text or stimulus related to {topic}.",
+            f"By the end of the lesson, pupils can use the {cskill} task to explain or extend their creative response."
+        ]
+    return [
+        f"By the end of the lesson, pupils can complete the target {skill} task related to {topic}.",
+        f"By the end of the lesson, pupils can complete the complementary {cskill} task successfully."
+    ]
+
+def _en_rph_prepare_state_v2519(s):
+    if not _en_rph_is_target_v2519(s):
+        return s
+    # Re-apply exact SOW mapping first, if the v25.17 mapper is available.
+    try:
+        _english_y3_y6_apply_sow_v2517(s, s.get('lesson_no') or s.get('lesson'))
+    except Exception:
+        pass
+    focus=_en_rph_clean_focus_v2519(s)
+    if focus:
+        s['language_focus']=focus
+        s['grammar_focus']=focus
+        s['focus']=focus
+    bank=_en_rph_activity_bank_v2519(s)
+    s['pre_lesson']=bank['pre']
+    s['lesson_development']=bank['dev']
+    s['post_lesson']=bank['post']
+    s['differentiation']=_en_rph_differentiation_v2519(s)
+    s['hots_21c']=_en_rph_hots_short_v2519(s)
+    s['hots']=_en_rph_hots_short_v2519(s)
+    s['learning_objectives_v2519']=_en_rph_objectives_v2519(s)
+    # Explicit standards fields for PDF formatter aliases.
+    s['content_standard']=str(s.get('sk_code') or '')
+    s['learning_standard']=str(s.get('sp_code') or '')
+    s['complementary_content_standard']=str(s.get('comp_sk_code') or '')
+    s['complementary_learning_standard']=str(s.get('comp_sp_code') or '')
+    return s
+
+# Wrap local RPH text once more, late in the file, so v25.19 preparation wins over generic legacy fallbacks.
+try:
+    _local_rph_text_before_v2519 = _local_rph_text
+    def _local_rph_text(s, *args, **kwargs):
+        try:
+            _en_rph_prepare_state_v2519(s)
+        except Exception:
+            pass
+        return _local_rph_text_before_v2519(s, *args, **kwargs)
+except NameError:
+    pass
+
+# Wrap PDF builder/state consumer when a known function exists.
+for _fn_name in ('_quick_rph_pdf','_rph_pdf','build_rph_pdf','generate_rph_pdf'):
+    try:
+        _old_fn = globals().get(_fn_name)
+        if callable(_old_fn) and not getattr(_old_fn,'_v2519_wrapped',False):
+            def _make_wrap_v2519(fn):
+                def _w(s,*a,**kw):
+                    try:
+                        if isinstance(s,dict): _en_rph_prepare_state_v2519(s)
+                    except Exception:
+                        pass
+                    return fn(s,*a,**kw)
+                _w._v2519_wrapped=True
+                return _w
+            globals()[_fn_name]=_make_wrap_v2519(_old_fn)
+    except Exception:
+        pass
+# ===== END v25.19 ENGLISH RPH LEVEL/SKILL + HOTS LAYOUT SAFE PATCH =====
+
