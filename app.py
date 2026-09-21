@@ -5828,6 +5828,54 @@ def callback(cid, d):
         else:
             generate_v3(cid,ss,'generate_selected_material')
 
+    elif d.startswith('rphhourss|'):
+        try:
+            _,mode,h=d.split('|')
+            h=int(h)
+            ss=state.setdefault(cid,{})
+            pkey='rph_pending_start_hour' if mode=='start' else 'rph_pending_end_hour'
+            ss[pkey]=h
+            # Re-render same screen immediately with hour tick.
+            _rph_time_single_screen_v2526(cid,mode)
+        except Exception:
+            _rph_time_single_screen_v2526(cid,'start')
+
+    elif d.startswith('rphminss|'):
+        try:
+            _,mode,mm=d.split('|')
+            mm=int(mm)
+            ss=state.setdefault(cid,{})
+            pkey='rph_pending_start_hour' if mode=='start' else 'rph_pending_end_hour'
+            h=ss.get(pkey)
+            if h is None:
+                return send(cid,'⚠️ Pilih JAM dahulu.',[[{'text':'⏰ Pilih Masa','callback_data':'rphtimepage|start|2'}]])
+            h=int(h)
+            mins=h*60+mm
+            if mode=='start':
+                ss['rph_start_minutes']=mins
+                ss.pop(pkey,None)
+                # Re-render same screen with both hour and minute ticks.
+                _rph_time_single_screen_v2526(cid,'start')
+                # Then allow choosing end time from same style screen.
+                _rph_time_single_screen_v2526(cid,'end')
+            else:
+                start=int(ss.get('rph_start_minutes') if ss.get('rph_start_minutes') is not None else -1)
+                if start < 0 or mins <= start:
+                    return send(cid,'⚠️ Masa tamat mesti selepas masa mula.',[[{'text':'⏰ Pilih Semula Masa Tamat','callback_data':'rphtimepage|end|2'}]])
+                duration=mins-start
+                if duration < 20 or duration > 180:
+                    return send(cid,f'⚠️ Tempoh <b>{duration} minit</b> kurang sesuai. Pilih semula masa tamat.',[[{'text':'⏰ Pilih Semula Masa Tamat','callback_data':'rphtimepage|end|2'}]])
+                ss['rph_end_minutes']=mins
+                ss.pop(pkey,None)
+                ss['rph_duration_minutes']=duration
+                sh,sm=divmod(start,60); eh,em=divmod(mins,60)
+                ss['rph_time']=f'{sh:02d}:{sm:02d} - {eh:02d}:{em:02d}'
+                ss['rph_periods']=1 if duration < 45 else (2 if duration < 75 else max(2,round(duration/30)))
+                _rph_time_single_screen_v2526(cid,'end')
+                _continue_after_rph_time(cid,ss)
+        except Exception:
+            return send(cid,'⚠️ Pilihan masa tidak dapat diproses. Sila pilih semula.',[[{'text':'⏰ Pilih Masa','callback_data':'rphtimepage|start|2'}]])
+
     elif d.startswith('rphhourpage|'):
         try:
             _,mode=d.split('|',1)
@@ -26281,4 +26329,83 @@ def _rph_minute_picker_v2522(cid, mode='start', hour=8):
 def _rph_time_picker(cid, mode='start', page=0):
     return _rph_hour_picker_v2525(cid,mode)
 # ===== END v25.25 CLEAR DATE/TIME PICKER UI WITH PERSISTENT TICKS =====
+
+
+
+
+# ===== v25.26 SINGLE-SCREEN HOUR+MINUTE PICKER =====
+def _rph_time_single_screen_v2526(cid, mode='start'):
+    s=state.setdefault(cid,{})
+    key='rph_start_minutes' if mode=='start' else 'rph_end_minutes'
+    pending_hour_key='rph_pending_start_hour' if mode=='start' else 'rph_pending_end_hour'
+
+    selected_total=s.get(key)
+    try:
+        selected_total=int(selected_total) if selected_total is not None else None
+    except Exception:
+        selected_total=None
+
+    selected_hour=None
+    selected_min=None
+    if selected_total is not None:
+        selected_hour,selected_min=divmod(selected_total,60)
+
+    # Pending hour is used before minute is committed, so both stay on the same screen.
+    try:
+        pending_hour=int(s.get(pending_hour_key)) if s.get(pending_hour_key) is not None else None
+    except Exception:
+        pending_hour=None
+
+    active_hour = pending_hour if pending_hour is not None else selected_hour
+
+    kb=[]
+    kb.append([{'text':'🕐  J A M','callback_data':'noop'}])
+
+    hours=list(range(6,19))
+    for i in range(0,len(hours),4):
+        row=[]
+        for h in hours[i:i+4]:
+            label=f'{h:02d}'
+            if active_hour==h:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':f'rphhourss|{mode}|{h}'})
+        kb.append(row)
+
+    kb.append([{'text':'────────────','callback_data':'noop'}])
+    kb.append([{'text':'⏱  M I N I T','callback_data':'noop'}])
+
+    mins=[0,10,20,30,40,50]
+    for i in range(0,len(mins),3):
+        row=[]
+        for mm in mins[i:i+3]:
+            label=f'{mm:02d}'
+            if active_hour is not None and selected_hour==active_hour and selected_min==mm:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':f'rphminss|{mode}|{mm}'})
+        kb.append(row)
+
+    kb.append([{'text':'────────────','callback_data':'noop'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+
+    title='MULA' if mode=='start' else 'TAMAT'
+    summary=[]
+    if active_hour is not None:
+        summary.append(f'Jam: <b>{active_hour:02d}</b>')
+    if selected_total is not None:
+        sh,sm=divmod(selected_total,60)
+        summary.append(f'✅ Masa dipilih: <b>{sh:02d} : {sm:02d}</b>')
+    summary_text=('\n\n'+'   |   '.join(summary)) if summary else ''
+
+    send(cid,
+         f'⏰ <b>Pilih MASA {title}</b>\n\n'
+         f'Pilih JAM di bahagian atas dan MINIT di bahagian bawah.\n'
+         f'Kedua-duanya kekal pada skrin yang sama.'
+         f'{summary_text}',
+         kb)
+
+# Compatibility route old picker calls here.
+def _rph_time_picker(cid, mode='start', page=0):
+    return _rph_time_single_screen_v2526(cid,mode)
+
+# ===== END v25.26 SINGLE-SCREEN HOUR+MINUTE PICKER =====
 
