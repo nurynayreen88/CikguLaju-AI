@@ -23924,6 +23924,35 @@ def _eng12_rows(year_label):
                     FROM bot_lesson_index WHERE year_label=? AND ready_for_bot=1
                     ORDER BY CAST(lesson_no AS INTEGER)""",(year_label,)).fetchall()
                 verified={int(r["lesson_no"]):dict(r) for r in rs}
+                # v25.05: merge only explicit audio tracks from VERIFIED Teacher Book
+                # guidance. This closes gaps where bot_lesson_index contains SB audio
+                # but the verified WB track is stored in audio_procedure (e.g. Y1 L19).
+                try:
+                    gs=con.execute("""SELECT lesson_no,audio_procedure,verification_status
+                        FROM teacher_book_lesson_guidance
+                        WHERE year_label=? AND verification_status LIKE 'VERIFIED%'""",(year_label,)).fetchall()
+                    for g in gs:
+                        ln=int(g["lesson_no"])
+                        if ln not in verified: continue
+                        proc=str(g["audio_procedure"] or "")
+                        explicit=[]
+                        for cd,tr in re.findall(r"CD\\s*([123])(?:\\s*[-–:]?\\s*(?:Tracks?|Track)?)?\\s*(\\d{1,2})",proc,re.I):
+                            ref=f"CD{int(cd)}-{int(tr):02d}"
+                            if ref not in explicit: explicit.append(ref)
+                        # Handle ranges such as "CD1 Tracks 14–15" without guessing:
+                        # both endpoints are explicitly printed in verified guidance.
+                        for cd,a,z in re.findall(r"CD\\s*([123])\\s*(?:Tracks?|Track)?\\s*(\\d{1,2})\\s*[–-]\\s*(\\d{1,2})",proc,re.I):
+                            for tr in (a,z):
+                                ref=f"CD{int(cd)}-{int(tr):02d}"
+                                if ref not in explicit: explicit.append(ref)
+                        current=[x.strip() for x in str(verified[ln].get("audio_reference") or "").replace(",", ";").split(";") if x.strip()]
+                        for ref in explicit:
+                            if ref not in current: current.append(ref)
+                        if current:
+                            verified[ln]["audio_reference"]="; ".join(current)
+                            verified[ln]["audio_status"]="VERIFIED_AUDIO"
+                except sqlite3.Error as e:
+                    print("English verified TB audio merge:",repr(e),flush=True)
             except sqlite3.Error: verified={}
             try:
                 master=con.execute("""SELECT lesson_no,skill_lesson,unit_title,main_content_standard,
