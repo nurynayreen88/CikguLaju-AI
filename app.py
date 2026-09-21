@@ -26018,3 +26018,126 @@ def _rph_time_picker(cid, mode='start', page=0):
     return _rph_hour_picker_v2522(cid,mode)
 # ===== END v25.22 PICKER REFRESH + SEPARATE HOUR/MINUTE FLOW =====
 
+
+
+
+# ===== v25.23 FIX AUTO-SOW FALLBACK TO MANUAL SK AFTER DATE/TIME =====
+try:
+    _continue_after_rph_time_before_v2523 = _continue_after_rph_time
+except NameError:
+    _continue_after_rph_time_before_v2523 = None
+
+def _continue_after_rph_time(cid, ss):
+    """
+    For English Y3-Y6 verified SOW lessons:
+    - normal lesson: never fall back to manual SK/SP after date/time
+    - official teacher-select/open lesson: keep manual standard selection
+    """
+    try:
+        is_target = _en_rph_is_target_v2519(ss)
+    except Exception:
+        is_target = False
+
+    if is_target:
+        try:
+            _english_y3_y6_apply_sow_v2517(ss, ss.get('lesson_no') or ss.get('lesson'))
+        except Exception:
+            pass
+
+        if ss.get('requires_teacher_standard_selection'):
+            # Official SOW row intentionally requires teacher choice.
+            try:
+                return show_curriculum_sk(cid, ss)
+            except Exception:
+                if _continue_after_rph_time_before_v2523:
+                    return _continue_after_rph_time_before_v2523(cid, ss)
+
+        if ss.get('auto_sow_mapping') or ss.get('skip_manual_sk_sp') or (ss.get('sk_code') and ss.get('sp_code')):
+            # Verified exact SOW mapping already exists. Continue directly.
+            try:
+                return _rph_session_question(cid)
+            except Exception:
+                pass
+
+    if _continue_after_rph_time_before_v2523:
+        return _continue_after_rph_time_before_v2523(cid, ss)
+    return _rph_session_question(cid)
+# ===== END v25.23 FIX AUTO-SOW FALLBACK TO MANUAL SK AFTER DATE/TIME =====
+
+
+
+
+# ===== v25.24 REMOVE TEACHER-SELECT OPTION FOR ENGLISH Y3-Y6 =====
+def _english_y3_y6_apply_sow_no_teacher_select_v2524(s, lesson_value=None):
+    """
+    Apply the existing v25.17 SOW mapping, then force English Y3-Y6 to remain
+    auto-routed with no manual SK/SP selection path.
+    """
+    try:
+        _english_y3_y6_apply_sow_v2517(s, lesson_value)
+    except Exception:
+        pass
+
+    try:
+        is_target=_en_rph_is_target_v2519(s)
+    except Exception:
+        is_target=False
+
+    if is_target:
+        s['requires_teacher_standard_selection']=False
+        s['auto_sow_mapping']=True
+        s['skip_manual_sk_sp']=True
+    return s
+
+# Re-wrap the lesson apply callback so open/project rows also stay in auto flow.
+try:
+    _en98_apply_lesson_before_v2524=_en98_apply_lesson
+    def _en98_apply_lesson(cid, idx):
+        ss=state.setdefault(cid,{})
+        # Let existing callback resolve the lesson index/state first.
+        try:
+            lesson_rows=ss.get('_en97_rows') or []
+            if 0 <= int(idx) < len(lesson_rows):
+                row=lesson_rows[int(idx)]
+                lesson_val=row.get('lesson_no') or row.get('lesson') or row.get('sequence_no')
+                if lesson_val is not None:
+                    ss['lesson_no']=lesson_val
+                    ss['lesson']=lesson_val
+                    _english_y3_y6_apply_sow_no_teacher_select_v2524(ss,lesson_val)
+        except Exception:
+            pass
+
+        # For English Y3-Y6, bypass any manual teacher-select branch.
+        try:
+            if _en_rph_is_target_v2519(ss):
+                lesson_val=ss.get('lesson_no') or ss.get('lesson')
+                _english_y3_y6_apply_sow_no_teacher_select_v2524(ss,lesson_val)
+                if globals().get('_lesson_to_class_v2439'):
+                    return _lesson_to_class_v2439(cid,ss)
+        except Exception:
+            pass
+
+        return _en98_apply_lesson_before_v2524(cid,idx)
+except NameError:
+    pass
+
+# Date/time continuation must never re-open SK/SP for English Y3-Y6.
+try:
+    _continue_after_rph_time_before_v2524=_continue_after_rph_time
+except NameError:
+    _continue_after_rph_time_before_v2524=None
+
+def _continue_after_rph_time(cid, ss):
+    try:
+        if _en_rph_is_target_v2519(ss):
+            _english_y3_y6_apply_sow_no_teacher_select_v2524(
+                ss, ss.get('lesson_no') or ss.get('lesson')
+            )
+            return _rph_session_question(cid)
+    except Exception:
+        pass
+    if _continue_after_rph_time_before_v2524:
+        return _continue_after_rph_time_before_v2524(cid,ss)
+    return _rph_session_question(cid)
+# ===== END v25.24 REMOVE TEACHER-SELECT OPTION FOR ENGLISH Y3-Y6 =====
+
