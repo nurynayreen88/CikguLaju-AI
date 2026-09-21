@@ -5828,6 +5828,48 @@ def callback(cid, d):
         else:
             generate_v3(cid,ss,'generate_selected_material')
 
+    elif d.startswith('rphhourpage|'):
+        try:
+            _,mode=d.split('|',1)
+            _rph_hour_picker_v2522(cid,mode)
+        except Exception:
+            _rph_hour_picker_v2522(cid,'start')
+
+    elif d.startswith('rphhour|'):
+        try:
+            _,mode,h=d.split('|')
+            _rph_minute_picker_v2522(cid,mode,int(h))
+        except Exception:
+            _rph_hour_picker_v2522(cid,'start')
+
+    elif d.startswith('rphminute|'):
+        try:
+            _,mode,h,mm=d.split('|')
+            h=int(h); mm=int(mm); mins=h*60+mm
+            ss=state.setdefault(cid,{})
+            if mode=='start':
+                ss['rph_start_minutes']=mins
+                # Show chosen minute with tick once before advancing.
+                _rph_minute_picker_v2522(cid,'start',h)
+                _rph_hour_picker_v2522(cid,'end')
+            else:
+                start=int(ss.get('rph_start_minutes') if ss.get('rph_start_minutes') is not None else -1)
+                if start < 0 or mins <= start:
+                    return send(cid,'⚠️ Masa tamat mesti selepas masa mula.',[[{'text':'⏰ Pilih Semula Masa Tamat','callback_data':'rphhourpage|end'}]])
+                duration=mins-start
+                if duration < 20 or duration > 180:
+                    return send(cid,f'⚠️ Tempoh <b>{duration} minit</b> kurang sesuai. Pilih semula masa tamat.',[[{'text':'⏰ Pilih Semula Masa Tamat','callback_data':'rphhourpage|end'}]])
+                ss['rph_end_minutes']=mins
+                ss['rph_duration_minutes']=duration
+                sh,sm=divmod(start,60); eh,em=divmod(mins,60)
+                ss['rph_time']=f'{sh:02d}:{sm:02d} - {eh:02d}:{em:02d}'
+                ss['rph_periods']=1 if duration < 45 else (2 if duration < 75 else max(2,round(duration/30)))
+                # Re-render selected end minute so the tick is visible.
+                _rph_minute_picker_v2522(cid,'end',h)
+                _continue_after_rph_time(cid,ss)
+        except Exception:
+            return send(cid,'⚠️ Pilihan masa tidak dapat diproses. Sila pilih semula.',[[{'text':'⏰ Pilih Masa','callback_data':'rphhourpage|start'}]])
+
     elif d.startswith('rphdatepage|'):
         try: _rph_date_picker(cid,int(d.split('|',1)[1]))
         except Exception: _rph_date_picker(cid,0)
@@ -15183,7 +15225,12 @@ def callback(cid, d):
             ss['rph_date']=parsed_date or date_text; ss['rph_day']=(dt.strftime('%A') if _is_english_subject(ss) else (day or dt.strftime('%A')))
             if ss.pop('timetable_pending_date',False):
                 return preview_v3(cid,ss,'generate_selected_material')
-            _rph_time_picker(cid,'start',2)  # starts around 06:00, practical school hours
+            # Re-render same date page so selected date visibly shows ✅, then continue.
+            try:
+                _rph_date_picker(cid,0)
+            except Exception:
+                pass
+            _rph_hour_picker_v2522(cid,'start')
         except Exception:
             _rph_date_picker(cid,0)
 
@@ -25887,4 +25934,87 @@ def _rph_time_picker(cid, mode='start', page=0):
          f'{selected_note}',
          kb)
 # ===== END v25.21 DATE/TIME PICKER SELECTED-TICK + HOUR/MINUTE SEPARATOR =====
+
+
+
+
+# ===== v25.22 PICKER REFRESH + SEPARATE HOUR/MINUTE FLOW =====
+def _rph_hour_picker_v2522(cid, mode='start'):
+    s=state.setdefault(cid,{})
+    selected_total=s.get('rph_start_minutes') if mode=='start' else s.get('rph_end_minutes')
+    try:
+        selected_hour=int(selected_total)//60 if selected_total is not None else None
+    except Exception:
+        selected_hour=None
+    kb=[]
+    for h0 in range(6,19,4):
+        row=[]
+        for h in range(h0,min(h0+4,19)):
+            label=f'{h:02d}'
+            if selected_hour==h:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':f'rphhour|{mode}|{h}'})
+        kb.append(row)
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    title='mula' if mode=='start' else 'tamat'
+    send(cid,f'⏰ <b>Pilih JAM {title}</b>\n\nJam dipilih akan ditanda ✅.',kb)
+
+def _rph_minute_picker_v2522(cid, mode='start', hour=8):
+    s=state.setdefault(cid,{})
+    key='rph_start_minutes' if mode=='start' else 'rph_end_minutes'
+    selected=s.get(key)
+    try:
+        selected_min=int(selected)%60 if selected is not None and int(selected)//60==int(hour) else None
+    except Exception:
+        selected_min=None
+    mins=[0,10,20,30,40,50]
+    kb=[]
+    row=[]
+    for mm in mins:
+        label=f'{mm:02d}'
+        if selected_min==mm:
+            label='✅ '+label
+        row.append({'text':label,'callback_data':f'rphminute|{mode}|{hour}|{mm}'})
+        if len(row)==3:
+            kb.append(row); row=[]
+    if row: kb.append(row)
+    kb.append([{'text':'⬅️ Tukar Jam','callback_data':f'rphhourpage|{mode}'},{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,f'⏰ <b>Pilih MINIT</b>\n\nJam: <b>{int(hour):02d}</b>   |   Minit: pilih di bawah\n\nPilihan minit akan ditanda ✅.',kb)
+
+def _rph_date_picker(cid, offset=0):
+    from datetime import date, timedelta, datetime as _dt
+    s=state.setdefault(cid,{})
+    base=date.today()+timedelta(days=offset)
+    selected_raw=str(s.get('rph_date') or '').strip()
+    selected_key=''
+    if selected_raw:
+        for fmt in ('%d/%m/%Y','%Y-%m-%d','%Y%m%d'):
+            try:
+                selected_key=_dt.strptime(selected_raw,fmt).strftime('%Y%m%d'); break
+            except Exception:
+                pass
+    kb=[]
+    for r0 in range(0,7,2):
+        row=[]
+        for j in range(2):
+            i=r0+j
+            if i>=7: break
+            d=base+timedelta(days=i)
+            key=d.strftime('%Y%m%d')
+            if _is_english_subject(s):
+                label=d.strftime('%a %d/%m')
+            else:
+                _ms=['Isn','Sel','Rab','Kha','Jum','Sab','Ahd']; label=f'{_ms[d.weekday()]} {d.strftime("%d/%m")}'
+            if key==selected_key:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':'rphdate|'+key})
+        kb.append(row)
+    kb.append([{'text':'⬅️ 7 hari','callback_data':f'rphdatepage|{offset-7}'},{'text':'7 hari ➡️','callback_data':f'rphdatepage|{offset+7}'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,'📅 <b>Pilih tarikh RPH</b>\n\nTarikh yang dipilih akan ditanda ✅.',kb)
+
+# Keep compatibility: route old time picker calls into hour picker.
+def _rph_time_picker(cid, mode='start', page=0):
+    return _rph_hour_picker_v2522(cid,mode)
+# ===== END v25.22 PICKER REFRESH + SEPARATE HOUR/MINUTE FLOW =====
 
