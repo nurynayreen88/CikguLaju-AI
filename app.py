@@ -9911,7 +9911,7 @@ def _rph_rows(s, ai_text):
 _EN_RPH_LABELS={
 'MATA PELAJARAN':'Subject','TAHUN/TINGKATAN':'Year / Form','TARIKH':'Date','HARI':'Day','MASA':'Time','KELAS':'Class','BILANGAN MURID':'Number of Pupils','TAJUK':'Topic',
 'STANDARD KANDUNGAN':'Content Standard','STANDARD PEMBELAJARAN':'Learning Standard','OBJEKTIF PEMBELAJARAN':'Learning Objectives','KRITERIA KEJAYAAN':'Success Criteria','PENGETAHUAN SEDIA ADA':'Prior Knowledge','BAHAN BANTU MENGAJAR':'Teaching and Learning Materials','EMK / NILAI':'Cross-Curricular Elements / Values','KBAT / PAK21':'HOTS / 21st Century Learning','PENTAKSIRAN':'Assessment','SET INDUKSI':'Set Induction','AKTIVITI UTAMA':'Main Activities','PENUTUP':'Closure','PEMULIHAN / PENGAYAAN':'Remedial / Enrichment','REFLEKSI':'Reflection'}
-def _is_english_subject(s): return str((s or {}).get('subject') or '').strip()=='Bahasa Inggeris'
+def _is_english_subject(s): return str((s or {}).get('subject') or '').strip().lower() in ('bahasa inggeris','english')
 def _rph_display_label(s,key): return _EN_RPH_LABELS.get(key,key.title()) if _is_english_subject(s) else (key if key in ('EMK / NILAI','KBAT / PAK21') else key.title())
 def _rph_format_activity_lines(value):
     """Render each RPH phase as a clean sequential numbered list."""
@@ -24679,3 +24679,724 @@ def callback(cid,d):
 
 APP_VERSION=str(globals().get('APP_VERSION',''))+'+v25.10-LEVEL-ACTIVITY-TIME-COMBINED'
 # ===== END v25.10 =====
+
+
+# === v25.14 UNIFIED ENGLISH RPH LAYOUT SAFE ===
+# Non-destructive formatter layer. Keeps legacy generators and DB untouched.
+def _english_rph_level_band_v2514(year_label):
+    y = str(year_label or '').lower()
+    if 'tahun 1' in y or 'year 1' in y or 'tahun 2' in y or 'year 2' in y:
+        return 'lower_primary'
+    if 'tahun 3' in y or 'year 3' in y or 'tahun 4' in y or 'year 4' in y:
+        return 'middle_primary'
+    if 'tahun 5' in y or 'year 5' in y or 'tahun 6' in y or 'year 6' in y:
+        return 'upper_primary'
+    return 'secondary'
+
+def _english_rph_profile_v2514(year_label):
+    band = _english_rph_level_band_v2514(year_label)
+    profiles = {
+        'lower_primary': {
+            'mode':'guided',
+            'differentiation':'Use visuals, modelling, repetition and sentence/word cues. Reduce language load for pupils who need support; extend confident pupils with one extra oral response.',
+            'assessment':'Teacher observation, oral response, matching/pointing/checking task and a short exit check.'
+        },
+        'middle_primary': {
+            'mode':'semi-guided',
+            'differentiation':'Provide prompts, word banks or model sentences where needed. More confident pupils complete an additional detail, reason or independent response.',
+            'assessment':'Teacher observation, pair/group response, task completion and a short independent check.'
+        },
+        'upper_primary': {
+            'mode':'independent',
+            'differentiation':'Use targeted scaffolds only where required. Support pupils with structured prompts; extend stronger pupils with justification, elaboration or a more independent product.',
+            'assessment':'Task product, peer/teacher feedback, speaking/reading/writing evidence and success-criteria check.'
+        },
+        'secondary': {
+            'mode':'mature',
+            'differentiation':'Adjust task complexity, language support and output length. Provide scaffolds for access while extending stronger learners through analysis, justification, synthesis or presentation.',
+            'assessment':'Performance evidence, written/oral product, peer/teacher feedback and explicit success-criteria review.'
+        }
+    }
+    return profiles[band]
+
+def _normalize_rph_activity_numbering_v2514(lines):
+    import re as _re
+    if isinstance(lines, str):
+        raw = [x.rstrip() for x in lines.splitlines()]
+    else:
+        raw = [str(x).rstrip() for x in (lines or [])]
+    out, n = [], 0
+    for line in raw:
+        s = line.strip()
+        if not s:
+            out.append(line)
+            continue
+        if _re.match(r'^(activity|aktiviti)\s*\d+\b', s, flags=_re.I):
+            n += 1
+            s = _re.sub(r'^(activity|aktiviti)\s*\d+\b', lambda m: f"{m.group(1)} {n}", s, flags=_re.I)
+            out.append(s)
+        else:
+            out.append(line)
+    return '\n'.join(out)
+
+def _unified_english_rph_text_v2514(s, legacy_text=None):
+    """Create one consistent English RPH layout while preserving verified curriculum data from state."""
+    s = dict(s or {})
+    profile = _english_rph_profile_v2514(s.get('year'))
+    topic = str(s.get('topic') or s.get('unit') or s.get('title') or '-')
+    theme = str(s.get('theme') or '-')
+    lang = str(s.get('language_focus') or s.get('grammar_focus') or s.get('focus') or '-')
+    main_skill = str(s.get('main_skill') or s.get('skill') or '-')
+    comp_skill = str(s.get('complementary_skill') or s.get('comp_skill') or '-')
+    sk_code = str(s.get('sk_code') or '').strip()
+    sk_text = str(s.get('sk_text') or '').strip()
+    sp_code = str(s.get('sp_code') or '').strip()
+    sp_text = str(s.get('sp_text') or '').strip()
+    csk_code = str(s.get('comp_sk_code') or '').strip()
+    csk_text = str(s.get('comp_sk_text') or '').strip()
+    csp_code = str(s.get('comp_sp_code') or '').strip()
+    csp_text = str(s.get('comp_sp_text') or '').strip()
+
+    def join_code(code, text):
+        return (' '.join(x for x in (code, text) if x)).strip() or '-'
+
+    obj1 = str(s.get('objective_1') or s.get('learning_objective') or '').strip()
+    obj2 = str(s.get('objective_2') or '').strip()
+    if not obj1 and sp_text:
+        obj1 = f"By the end of the lesson, pupils should be able to demonstrate the target learning standard: {sp_text}"
+    if not obj1:
+        obj1 = "By the end of the lesson, pupils should be able to complete the lesson task successfully."
+    if not obj2 and comp_skill != '-':
+        obj2 = f"Use {comp_skill.lower()} appropriately in a guided or independent response according to their level."
+
+    success = str(s.get('success_criteria') or '').strip()
+    if not success:
+        success = "Pupils meet the lesson objective and complete the target task with evidence aligned to the selected Learning Standard."
+
+    teaching_aids = str(s.get('teaching_aids') or s.get('materials') or 'Student Book / Workbook / verified audio / suitable teaching aids as mapped').strip()
+    cce = str(s.get('cce') or s.get('emk') or 'Language; Values; 21st Century Learning').strip()
+    hots = str(s.get('hots') or 'Apply / Analyse / Create according to lesson level').strip()
+
+    pre = str(s.get('pre_lesson') or '').strip()
+    dev = str(s.get('lesson_delivery') or s.get('activities') or '').strip()
+    post = str(s.get('post_lesson') or '').strip()
+    if not pre:
+        if profile['mode'] == 'guided':
+            pre = "Teacher activates prior knowledge using a short visual/oral recall activity and models the target language."
+        elif profile['mode'] == 'semi-guided':
+            pre = "Teacher activates prior knowledge with a short prompt, prediction or retrieval task linked to the lesson focus."
+        elif profile['mode'] == 'independent':
+            pre = "Pupils complete a brief retrieval/prediction task before sharing responses with a partner or the class."
+        else:
+            pre = "Students complete a brief retrieval, prediction or discussion prompt that activates prior knowledge and frames the lesson purpose."
+    if not dev:
+        if profile['mode'] == 'guided':
+            dev = "Activity 1\nTeacher models the target language or task using verified lesson resources.\nActivity 2\nPupils practise with strong support in pairs/groups.\nActivity 3\nPupils complete a short individual check."
+        elif profile['mode'] == 'semi-guided':
+            dev = "Activity 1\nTeacher models or reviews the target skill using the mapped lesson resource.\nActivity 2\nPupils complete guided pair/group practice.\nActivity 3\nPupils produce a short semi-independent response."
+        elif profile['mode'] == 'independent':
+            dev = "Activity 1\nPupils analyse/model the target language or text using the mapped lesson resource.\nActivity 2\nPupils collaborate on a structured task.\nActivity 3\nPupils produce an independent response, presentation or written product."
+        else:
+            dev = "Activity 1\nStudents examine the target text/language/task and identify key features.\nActivity 2\nStudents collaborate to apply the target skill in a structured task.\nActivity 3\nStudents produce, justify or present an independent response aligned to the lesson objective."
+    if not post:
+        post = "Pupils review the success criteria, demonstrate one final response and complete a short reflection/exit check."
+
+    body = f"""DAILY LESSON PLAN
+ENGLISH
+
+WEEK: {s.get('week','-')}
+DAY/DATE: {s.get('day','-')} / {s.get('date','-')}
+TIME: {s.get('time','-')}
+CLASS: {s.get('class','-')}
+LESSON: {s.get('lesson_no', s.get('lesson','-'))}
+YEAR/FORM: {s.get('year','-')}
+
+THEME: {theme}
+TOPIC: {topic}
+LANGUAGE / GRAMMAR FOCUS: {lang}
+
+MAIN FOCUSED SKILL: {main_skill}
+COMPLEMENTARY FOCUSED SKILL: {comp_skill}
+
+MAIN CONTENT STANDARD:
+{join_code(sk_code, sk_text)}
+
+MAIN LEARNING STANDARD:
+{join_code(sp_code, sp_text)}
+
+COMPLEMENTARY CONTENT STANDARD:
+{join_code(csk_code, csk_text)}
+
+COMPLEMENTARY LEARNING STANDARD:
+{join_code(csp_code, csp_text)}
+
+LEARNING OBJECTIVES:
+1. {obj1}
+2. {obj2 or '-'}
+
+SUCCESS CRITERIA:
+{success}
+
+TEACHING AIDS:
+{teaching_aids}
+
+CCE / EMK:
+{cce}
+
+HOTS / 21ST CENTURY LEARNING:
+{hots}
+
+DIFFERENTIATION:
+{profile['differentiation']}
+
+PRE-LESSON:
+{pre}
+
+LESSON DEVELOPMENT:
+{dev}
+
+POST-LESSON:
+{post}
+
+ASSESSMENT:
+{profile['assessment']}
+
+REFLECTION:
+Attendance: ____ / ____
+_____ pupils achieved the lesson objectives.
+_____ pupils require further support.
+Follow-up / enrichment action: __________________________________________
+"""
+    return _normalize_rph_activity_numbering_v2514(body)
+
+# Preserve a reference for safe fallback without rewriting legacy internals.
+try:
+    _legacy_local_rph_text_v2514 = _local_rph_text
+    def _local_rph_text(s):
+        legacy = _legacy_local_rph_text_v2514(s)
+        if str((s or {}).get('subject','')).strip().lower() in ('english','bahasa inggeris'):
+            return _unified_english_rph_text_v2514(s, legacy_text=legacy)
+        return legacy
+except NameError:
+    pass
+# === END v25.14 ===
+
+
+# === v25.15 SKILL-AWARE UNIFIED ENGLISH RPH SAFE ===
+def _english_skill_plan_v2515(skill, band, topic, lang_focus):
+    sk = str(skill or '').strip().lower()
+    topic = str(topic or 'the lesson topic').strip()
+    lang = str(lang_focus or 'the target language').strip()
+    if 'listen' in sk:
+        if band == 'lower_primary':
+            return (
+                f"Teacher introduces/reviews key words for {topic} using visuals or realia.",
+                f"Pupils listen to the verified recording/text and identify or point to specific information. Teacher replays short parts where needed.",
+                f"Pupils compare answers with a partner, then respond orally using {lang}.",
+                "Pupils complete one short listening check independently."
+            )
+        if band == 'middle_primary':
+            return (
+                f"Pupils predict key information about {topic} from a visual/title.",
+                f"Pupils listen for gist, then listen again for specific details linked to {lang}.",
+                "Pupils check responses in pairs and justify one answer using evidence from the listening text.",
+                "Pupils complete a short independent listening/response task."
+            )
+        return (
+            f"Learners predict content and identify a listening purpose related to {topic}.",
+            f"Learners listen once for overall meaning and again for specific information, inference or speaker purpose as appropriate.",
+            f"Learners compare and justify responses using evidence and {lang}.",
+            "Learners complete an individual follow-up or exit response."
+        )
+    if 'speak' in sk:
+        if band == 'lower_primary':
+            return (
+                f"Teacher models useful words/sentence frames for {topic}.",
+                "Pupils repeat and practise the model with visual or word support.",
+                "Pupils practise in pairs using a simple substitution, question-answer or information-gap task.",
+                "Selected pupils give one short independent oral response."
+            )
+        if band == 'middle_primary':
+            return (
+                f"Teacher elicits/model phrases needed to speak about {topic}.",
+                "Pupils rehearse the target language in pairs with prompts.",
+                "Pupils complete a pair/group speaking task with reduced scaffolding.",
+                "Pupils share one response and receive brief peer/teacher feedback."
+            )
+        return (
+            f"Learners review useful language for discussing {topic}.",
+            "Learners plan key points individually or with a partner.",
+            "Learners discuss, present, role-play or justify ideas with progressively less support.",
+            "Learners reflect on clarity, accuracy and task achievement using the success criteria."
+        )
+    if 'read' in sk:
+        if band == 'lower_primary':
+            return (
+                f"Teacher previews key vocabulary and pictures from {topic}.",
+                "Pupils read/track a short text with teacher support and identify familiar words or key information.",
+                "Pupils match, sequence, choose or answer simple comprehension items.",
+                "Pupils reread one part and give a short oral/written response."
+            )
+        if band == 'middle_primary':
+            return (
+                f"Pupils predict content from headings, visuals or key words about {topic}.",
+                "Pupils read for gist, then locate specific information.",
+                "Pupils compare answers and identify evidence from the text.",
+                "Pupils complete a short comprehension or response task independently."
+            )
+        return (
+            f"Learners preview the text and establish a reading purpose related to {topic}.",
+            "Learners read for gist and then for detail, inference, viewpoint or text organisation as appropriate.",
+            "Learners discuss textual evidence and compare interpretations.",
+            "Learners complete an independent written/oral response linked to the text."
+        )
+    if 'writ' in sk:
+        if band == 'lower_primary':
+            return (
+                f"Teacher models key words/sentence pattern for {topic}.",
+                "Pupils complete guided copying, gap-fill, labelling or sentence-building with support.",
+                "Pupils write one or more short responses using a model/word bank.",
+                "Teacher checks one target feature and pupils make a simple correction."
+            )
+        if band == 'middle_primary':
+            return (
+                f"Teacher analyses a short model related to {topic} and highlights useful {lang}.",
+                "Pupils plan ideas using prompts, notes, a graphic organiser or word bank.",
+                "Pupils draft a short text and check it against simple criteria.",
+                "Pupils revise one feature and submit/share a final response."
+            )
+        return (
+            f"Learners examine a model and identify organisation/language features relevant to {topic}.",
+            "Learners plan content and language independently or collaboratively.",
+            "Learners draft an extended response, then self/peer-check against explicit criteria.",
+            "Learners revise and produce a final version or selected excerpt."
+        )
+    if 'language art' in sk or 'liter' in sk:
+        return (
+            f"Teacher activates prior knowledge and introduces the literary/creative focus for {topic}.",
+            "Pupils respond to the text, image, poem, story or performance through guided interpretation.",
+            "Pupils create, adapt, perform or present an imaginative response.",
+            "Pupils share and reflect on one creative choice."
+        )
+    return (
+        f"Teacher activates relevant prior knowledge about {topic}.",
+        "Pupils engage with the mapped lesson resource and identify the target language/skill.",
+        "Pupils apply the target in a pair/group task.",
+        "Pupils complete a short independent response aligned to the Learning Standard."
+    )
+
+def _measurable_objective_v2515(skill, sp_text, band, topic):
+    sk = str(skill or '').lower()
+    target = str(sp_text or '').strip()
+    if target:
+        if 'listen' in sk:
+            return f"identify the required main idea/specific information from the listening text in line with: {target}"
+        if 'speak' in sk:
+            return f"give an intelligible oral response about {topic} in line with: {target}"
+        if 'read' in sk:
+            return f"locate and respond to relevant information in the text in line with: {target}"
+        if 'writ' in sk:
+            return f"produce a written response about {topic} in line with: {target}"
+        if 'language art' in sk or 'liter' in sk:
+            return f"produce an imaginative or personal response in line with: {target}"
+        return f"demonstrate the selected Learning Standard: {target}"
+    return f"complete the target {skill or 'language'} task successfully"
+
+def _unified_english_rph_text_v2515(s, legacy_text=None):
+    s = dict(s or {})
+    band = _english_rph_level_band_v2514(s.get('year'))
+    profile = _english_rph_profile_v2514(s.get('year'))
+    topic = str(s.get('topic') or s.get('unit') or s.get('title') or '-')
+    theme = str(s.get('theme') or '-')
+    lang = str(s.get('language_focus') or s.get('grammar_focus') or s.get('focus') or '-')
+    main_skill = str(s.get('main_skill') or s.get('skill') or '-')
+    comp_skill = str(s.get('complementary_skill') or s.get('comp_skill') or '-')
+
+    def jt(code, txt):
+        return (' '.join(x for x in (str(code or '').strip(), str(txt or '').strip()) if x)).strip() or '-'
+
+    sp_text = str(s.get('sp_text') or '').strip()
+    csp_text = str(s.get('comp_sp_text') or '').strip()
+
+    objective1 = str(s.get('objective_1') or '').strip() or (
+        "By the end of the lesson, pupils should be able to " +
+        _measurable_objective_v2515(main_skill, sp_text, band, topic) + "."
+    )
+    objective2 = str(s.get('objective_2') or '').strip()
+    if not objective2 and comp_skill != '-':
+        objective2 = (
+            "By the end of the lesson, pupils should also be able to " +
+            _measurable_objective_v2515(comp_skill, csp_text, band, topic) + "."
+        )
+
+    success = str(s.get('success_criteria') or '').strip()
+    if not success:
+        if band == 'lower_primary':
+            success = "Most pupils complete the target task with visual/verbal support and give at least one correct response."
+        elif band == 'middle_primary':
+            success = "Most pupils complete the target task and provide relevant information with limited support."
+        elif band == 'upper_primary':
+            success = "Most pupils complete the target task accurately and give an increasingly independent response that meets the stated criteria."
+        else:
+            success = "Most learners produce a relevant, intelligible response supported by appropriate detail/evidence and meet the stated task criteria."
+
+    a1,a2,a3,a4 = _english_skill_plan_v2515(main_skill, band, topic, lang)
+    custom_pre = str(s.get('pre_lesson') or '').strip()
+    custom_dev = str(s.get('lesson_delivery') or s.get('activities') or '').strip()
+    custom_post = str(s.get('post_lesson') or '').strip()
+
+    pre = custom_pre or a1
+    dev = custom_dev or f"Activity 1\n{a2}\n\nActivity 2\n{a3}\n\nActivity 3\n{a4}"
+    post = custom_post or "Teacher revisits the success criteria. Pupils give one final response/exit ticket and identify what they can now do."
+
+    body = f"""DAILY LESSON PLAN
+ENGLISH
+
+WEEK: {s.get('week','-')}
+DAY/DATE: {s.get('day','-')} / {s.get('date','-')}
+TIME: {s.get('time','-')}
+CLASS: {s.get('class','-')}
+LESSON: {s.get('lesson_no', s.get('lesson','-'))}
+YEAR/FORM: {s.get('year','-')}
+
+THEME: {theme}
+TOPIC: {topic}
+LANGUAGE / GRAMMAR FOCUS: {lang}
+
+MAIN FOCUSED SKILL: {main_skill}
+COMPLEMENTARY FOCUSED SKILL: {comp_skill}
+
+MAIN CONTENT STANDARD:
+{jt(s.get('sk_code'), s.get('sk_text'))}
+
+MAIN LEARNING STANDARD:
+{jt(s.get('sp_code'), s.get('sp_text'))}
+
+COMPLEMENTARY CONTENT STANDARD:
+{jt(s.get('comp_sk_code'), s.get('comp_sk_text'))}
+
+COMPLEMENTARY LEARNING STANDARD:
+{jt(s.get('comp_sp_code'), s.get('comp_sp_text'))}
+
+LEARNING OBJECTIVES:
+1. {objective1}
+2. {objective2 or '-'}
+
+SUCCESS CRITERIA:
+{success}
+
+TEACHING AIDS:
+{str(s.get('teaching_aids') or s.get('materials') or 'Student Book / Workbook / verified audio / suitable teaching aids as mapped')}
+
+CCE / EMK:
+{str(s.get('cce') or s.get('emk') or 'Language; Values; 21st Century Learning')}
+
+HOTS / 21ST CENTURY LEARNING:
+{str(s.get('hots') or ('Apply / Analyse' if band in ('lower_primary','middle_primary') else 'Apply / Analyse / Evaluate / Create as appropriate'))}
+
+DIFFERENTIATION:
+{profile['differentiation']}
+
+PRE-LESSON:
+{pre}
+
+LESSON DEVELOPMENT:
+{dev}
+
+POST-LESSON:
+{post}
+
+ASSESSMENT:
+{profile['assessment']}
+
+REFLECTION:
+Attendance: ____ / ____
+_____ pupils achieved the lesson objectives.
+_____ pupils require further support.
+Follow-up / enrichment action: __________________________________________
+"""
+    return _normalize_rph_activity_numbering_v2514(body)
+
+try:
+    _legacy_local_rph_text_v2515 = _local_rph_text
+    def _local_rph_text(s):
+        legacy = _legacy_local_rph_text_v2515(s)
+        if str((s or {}).get('subject','')).strip().lower() in ('english','bahasa inggeris'):
+            return _unified_english_rph_text_v2515(s, legacy_text=legacy)
+        return legacy
+except NameError:
+    pass
+# === END v25.15 ===
+
+
+
+# === v25.17 ENGLISH YEAR 3-6 AUTO SOW ROUTING SAFE ===
+def _english_y3_y6_sow_db_path_v2517():
+    """Prefer an explicitly configured DB; otherwise use the local bundled curriculum DB."""
+    import os
+    candidates = [
+        os.getenv("CIKGULAJU_CURRICULUM_DB_PATH"),
+        os.getenv("CIKGULAJU_DB_PATH"),
+        os.getenv("DATABASE_PATH"),
+        os.path.join(os.path.dirname(__file__), "CikguLaju_Curriculum_Master_v25_11_ENGLISH_Y3_Y6_ROUTING_READY.db"),
+        os.path.join(os.path.dirname(__file__), "CikguLaju_Curriculum_Master_v25_10_ENGLISH_Y3_Y6_STAGING_MERGE.db"),
+        os.path.join(os.path.dirname(__file__), "CikguLaju_Curriculum_Master_v25_09_MERGED_RECOVERY.db"),
+    ]
+    for p in candidates:
+        if p and os.path.exists(p):
+            return p
+    return None
+
+def _english_primary_year_number_v2517(value):
+    import re
+    s=str(value or "").strip()
+    m=re.search(r'(\d+)',s)
+    return int(m.group(1)) if m else None
+
+def _english_y3_y6_lookup_v2517(year_value, lesson_value, db_path=None):
+    """Return one verified Year 3-6 SOW lesson row; never infer missing standards."""
+    import sqlite3
+    year_no=_english_primary_year_number_v2517(year_value)
+    try:
+        lesson_no=int(str(lesson_value or '').strip())
+    except Exception:
+        return None
+    if year_no not in (3,4,5,6) or not (1 <= lesson_no <= 160):
+        return None
+    path=db_path or _english_y3_y6_sow_db_path_v2517()
+    if not path:
+        return None
+    try:
+        con=sqlite3.connect(path)
+        con.row_factory=sqlite3.Row
+        row=con.execute("""
+            SELECT year_label,lesson_no,focus,topic,language_grammar_focus,
+                   main_skill,main_cs,main_ls,
+                   complementary_skill,complementary_cs,complementary_ls,
+                   lesson_type,references_text,sow_pdf_page,verification_status
+            FROM english_primary_y3_y6_sow_staging
+            WHERE year_label=? AND lesson_no=?
+            LIMIT 1
+        """,(f"Year {year_no}",lesson_no)).fetchone()
+        con.close()
+        return dict(row) if row else None
+    except Exception:
+        return None
+
+def _english_y3_y6_apply_sow_v2517(s, lesson_value=None):
+    """Auto-commit SOW mapping into state after lesson selection. No manual SK/SP step."""
+    if not isinstance(s,dict):
+        return False
+    subject=str(s.get('subject') or '').strip().lower()
+    if subject not in ('english','bahasa inggeris'):
+        return False
+    year_no=_english_primary_year_number_v2517(s.get('year'))
+    if year_no not in (3,4,5,6):
+        return False
+    lesson=lesson_value
+    if lesson is None:
+        lesson = s.get('lesson_no') or s.get('lesson') or s.get('textbook_lesson_no')
+    row=_english_y3_y6_lookup_v2517(year_no,lesson)
+    if not row:
+        return False
+
+    # Preserve existing keys while adding exact SOW mapping fields.
+    s['lesson_no']=int(row['lesson_no'])
+    s['lesson']=int(row['lesson_no'])
+    s['sow_focus']=row.get('focus') or ''
+    s['topic']=row.get('topic') or s.get('topic') or ''
+    s['language_grammar_focus']=row.get('language_grammar_focus') or ''
+    s['main_skill']=row.get('main_skill') or ''
+    s['complementary_skill']=row.get('complementary_skill') or ''
+    s['sk_code']=row.get('main_cs') or ''
+    s['sp_code']=row.get('main_ls') or ''
+    s['comp_sk_code']=row.get('complementary_cs') or ''
+    s['comp_sp_code']=row.get('complementary_ls') or ''
+    s['bi_main_sp_code']=s['sp_code']
+    s['bi_comp_sp_code']=s['comp_sp_code']
+    s['textbook_page_focus']=row.get('references_text') or ''
+    s['sow_pdf_page']=row.get('sow_pdf_page')
+    s['sow_verification_status']=row.get('verification_status') or ''
+    s['lesson_type']=row.get('lesson_type') or ''
+
+    main={
+        'sk_code':s['sk_code'],'sk_text':'',
+        'sp_code':s['sp_code'],'sp_text':'',
+        'role':'main','skill':s['main_skill']
+    }
+    comp={
+        'sk_code':s['comp_sk_code'],'sk_text':'',
+        'sp_code':s['comp_sp_code'],'sp_text':'',
+        'role':'complementary','skill':s['complementary_skill']
+    }
+    s['bi_main_row']=main
+    s['bi_comp_row']=comp
+    s['selected_sp_codes']=[x for x in (s['sp_code'],s['comp_sp_code']) if x]
+    s['auto_sow_mapping']=True
+    s['skip_manual_sk_sp']=True
+    return True
+
+# Wrap existing RPH generation state so Year 3-6 always receives exact SOW mapping.
+try:
+    _local_rph_text_before_v2517 = _local_rph_text
+    def _local_rph_text(s):
+        try:
+            _english_y3_y6_apply_sow_v2517(s)
+        except Exception:
+            pass
+        return _local_rph_text_before_v2517(s)
+except NameError:
+    pass
+# === END v25.17 ===
+
+
+
+# === v25.17a OPEN-SOW SAFEGUARD ===
+try:
+    _english_y3_y6_apply_sow_before_v2517a = _english_y3_y6_apply_sow_v2517
+    def _english_y3_y6_apply_sow_v2517(s, lesson_value=None):
+        ok=_english_y3_y6_apply_sow_before_v2517a(s, lesson_value)
+        if not ok:
+            return False
+        if str(s.get('sow_verification_status') or '') == 'SOW_OPEN_TEACHER_SELECT':
+            # Official SOW deliberately leaves standards/topic for teacher selection.
+            # Never fabricate standards or present this as a fixed auto-mapped lesson.
+            s['skip_manual_sk_sp']=False
+            s['auto_sow_mapping']=False
+            s['requires_teacher_standard_selection']=True
+            s['sow_open_note']='Official SOW requires teacher to select suitable Main and Complementary standards for this lesson.'
+        else:
+            s['requires_teacher_standard_selection']=False
+        return True
+except NameError:
+    pass
+# === END v25.17a ===
+
+
+
+
+# === v25.18 ENGLISH YEAR 3-6 CALLBACK ROUTING SAFE ===
+try:
+    _en98_apply_lesson_before_v2518 = _en98_apply_lesson
+
+    def _en98_apply_lesson(cid,idx):
+        ss=state.setdefault(cid,{})
+        items=ss.get('_en98_items') or []
+        if idx<0 or idx>=len(items):
+            return _en97_unit_menu(cid)
+
+        r=dict(items[idx])
+        lesson=str(r.get('lesson_no') or '').strip()
+        ss['lesson_no']=lesson
+        ss['lesson']=lesson
+        ss['textbook_lesson_no']=lesson
+
+        # For English Primary Y3-Y6, use exact SOW lesson mapping first.
+        year_no=_english_primary_year_number_v2517(ss.get('year'))
+        subject=str(ss.get('subject') or '').strip().lower()
+        if subject in ('english','bahasa inggeris') and year_no in (3,4,5,6):
+            applied=_english_y3_y6_apply_sow_v2517(ss,lesson)
+            if applied:
+                # Preserve verified textbook/UI context when present in legacy rows.
+                ss['textbook_page_focus']=str(r.get('focus') or ss.get('sow_focus') or '')
+                ss['textbook_content_topic']=str(r.get('content_topic') or r.get('unit_title') or ss.get('topic') or '')
+                ss['textbook_book_title']=str(r.get('book_title') or '')
+                ss['textbook_page_start']=r.get('page_start')
+                ss['textbook_page_end']=r.get('page_end')
+                ss['textbook_page']=r.get('page_start')
+                ss['book_page']=r.get('page_start')
+                ss['page']=r.get('page_start')
+                ss['_verified_lesson_row_v2404']=r
+
+                if ss.get('requires_teacher_standard_selection'):
+                    # Official SOW deliberately leaves standards open.
+                    # Route to existing curriculum-standard flow rather than fabricating.
+                    ss['quick_material_flow']=False
+                    send(cid,
+                         f"📚 <b>Lesson {lesson}</b> dipilih.\n\n"
+                         "SOW rasmi menetapkan guru memilih Main dan Complementary Standard yang sesuai untuk lesson ini. "
+                         "Sistem tidak akan mereka SK/SP.",
+                         None)
+                    chooser=(globals().get('choose_sk') or globals().get('curriculum_sk_menu')
+                             or globals().get('show_sk_options') or globals().get('choose_curriculum_standard'))
+                    if callable(chooser):
+                        return chooser(cid)
+                    return send(cid,
+                        "🚧 Pemilihan standard manual diperlukan untuk lesson SOW terbuka ini.",
+                        [[{'text':'⬅️ Pilih Lesson Lain','callback_data':'en98_back'},
+                          {'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+                # Normal Y3-Y6 lesson: standards already committed from exact SOW.
+                ss['quick_material_flow']=True
+                ss['assessment_mode']=ss.get('assessment_mode') or 'formative'
+                try:
+                    ss['_pdp_source_trace_v2405']=_lesson_context_trace_v2405(ss)
+                except Exception:
+                    pass
+
+                send(cid,
+                     f"✅ <b>Lesson {lesson}</b> dipilih.\n"
+                     "Main dan Complementary SK/SP dipadankan automatik daripada SOW verified.",
+                     None)
+
+                # Preserve the existing post-lesson route: class selection first where available.
+                nxt=(globals().get('_lesson_to_class_v2439')
+                     or globals().get('_pdp_class_options_v2393')
+                     or globals().get('_quick_class_options_v2393')
+                     or globals().get('show_classes'))
+                if callable(nxt):
+                    return nxt(cid)
+
+                # Final fallback to material pack if a build has no class-selection layer.
+                pack=(globals().get('_temporary_auto_pack_v2386')
+                      or globals().get('after_curriculum_selected'))
+                if callable(pack):
+                    return pack(cid)
+                return None
+
+        # Preserve all existing behaviour for Year 1-2 and non-target flows.
+        return _en98_apply_lesson_before_v2518(cid,idx)
+
+except NameError:
+    pass
+# === END v25.18 ===
+
+
+
+
+# ===== v25.18 READY-TO-USE DB BOOTSTRAP =====
+def _bootstrap_split_db_v2518():
+    import os as _os
+    base=_os.path.dirname(_os.path.abspath(__file__))
+    target=_os.path.join(base,'CikguLaju_Curriculum_Master_v25_11_ENGLISH_Y3_Y6_ROUTING_READY.db')
+    parts=[
+        _os.path.join(base,'CikguLaju_Curriculum_Master_v25_11_ENGLISH_Y3_Y6_ROUTING_READY.part00'),
+        _os.path.join(base,'CikguLaju_Curriculum_Master_v25_11_ENGLISH_Y3_Y6_ROUTING_READY.part01'),
+        _os.path.join(base,'CikguLaju_Curriculum_Master_v25_11_ENGLISH_Y3_Y6_ROUTING_READY.part02'),
+    ]
+    if _os.path.exists(target):
+        return target
+    if not all(_os.path.isfile(x) for x in parts):
+        return target
+    tmp=target+'.rebuilding'
+    try:
+        with open(tmp,'wb') as out:
+            for part in parts:
+                with open(part,'rb') as src:
+                    while True:
+                        chunk=src.read(1024*1024)
+                        if not chunk: break
+                        out.write(chunk)
+        _os.replace(tmp,target)
+    except Exception:
+        try:
+            if _os.path.exists(tmp): _os.remove(tmp)
+        except Exception:
+            pass
+    return target
+
+_READY_DB_V2518=_bootstrap_split_db_v2518()
+if _READY_DB_V2518 and os.path.exists(_READY_DB_V2518):
+    DB_PATH=_READY_DB_V2518
+# ===== END v25.18 READY-TO-USE DB BOOTSTRAP =====
+
