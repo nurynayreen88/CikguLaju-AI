@@ -26141,3 +26141,144 @@ def _continue_after_rph_time(cid, ss):
     return _rph_session_question(cid)
 # ===== END v25.24 REMOVE TEACHER-SELECT OPTION FOR ENGLISH Y3-Y6 =====
 
+
+
+
+# ===== v25.25 CLEAR DATE/TIME PICKER UI WITH PERSISTENT TICKS =====
+def _rph_date_picker(cid, offset=0):
+    from datetime import date, timedelta, datetime as _dt
+    s=state.setdefault(cid,{})
+    base=date.today()+timedelta(days=offset)
+    selected_raw=str(s.get('rph_date') or '').strip()
+    selected_key=''
+    if selected_raw:
+        for fmt in ('%d/%m/%Y','%Y-%m-%d','%Y%m%d'):
+            try:
+                selected_key=_dt.strptime(selected_raw,fmt).strftime('%Y%m%d')
+                break
+            except Exception:
+                pass
+
+    kb=[]
+    for r0 in range(0,7,2):
+        row=[]
+        for j in range(2):
+            i=r0+j
+            if i>=7: break
+            d=base+timedelta(days=i)
+            key=d.strftime('%Y%m%d')
+            if _is_english_subject(s):
+                label=d.strftime('%a %d/%m')
+            else:
+                _ms=['Isn','Sel','Rab','Kha','Jum','Sab','Ahd']
+                label=f'{_ms[d.weekday()]} {d.strftime("%d/%m")}'
+            if key==selected_key:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':'rphdate|'+key})
+        kb.append(row)
+
+    kb.append([{'text':'⬅️ 7 hari','callback_data':f'rphdatepage|{offset-7}'},
+               {'text':'7 hari ➡️','callback_data':f'rphdatepage|{offset+7}'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+
+    selected_note=''
+    if selected_raw:
+        selected_note=f'\n\n✅ <b>Tarikh dipilih:</b> {html.escape(selected_raw)}'
+
+    send(cid,
+         '📅 <b>Pilih tarikh RPH</b>\n\n'
+         'Tarikh yang aktif akan kekal ditanda ✅.'
+         + selected_note,
+         kb)
+
+def _rph_hour_picker_v2525(cid, mode='start'):
+    s=state.setdefault(cid,{})
+    key='rph_start_minutes' if mode=='start' else 'rph_end_minutes'
+    selected=s.get(key)
+    try:
+        selected_hour=int(selected)//60 if selected is not None else None
+    except Exception:
+        selected_hour=None
+
+    kb=[]
+    # clear visual heading inside Telegram keyboard
+    kb.append([{'text':'🕐  J A M','callback_data':'noop'}])
+
+    hours=list(range(6,19))
+    for i in range(0,len(hours),4):
+        row=[]
+        for h in hours[i:i+4]:
+            label=f'{h:02d}'
+            if selected_hour==h:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':f'rphhour|{mode}|{h}'})
+        kb.append(row)
+
+    kb.append([{'text':'────────────','callback_data':'noop'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+
+    title='MULA' if mode=='start' else 'TAMAT'
+    selected_note=''
+    if selected_hour is not None:
+        selected_note=f'\n\n✅ <b>Jam dipilih:</b> {selected_hour:02d}'
+
+    send(cid,
+         f'⏰ <b>Pilih JAM {title}</b>\n\n'
+         f'JAM dipilih akan kekal ditanda ✅.'
+         f'{selected_note}',
+         kb)
+
+def _rph_minute_picker_v2525(cid, mode='start', hour=8):
+    s=state.setdefault(cid,{})
+    key='rph_start_minutes' if mode=='start' else 'rph_end_minutes'
+    selected=s.get(key)
+
+    selected_min=None
+    try:
+        if selected is not None and int(selected)//60==int(hour):
+            selected_min=int(selected)%60
+    except Exception:
+        pass
+
+    kb=[]
+    kb.append([{'text':f'🕐  JAM  {int(hour):02d}','callback_data':'noop'}])
+    kb.append([{'text':'────────────','callback_data':'noop'}])
+    kb.append([{'text':'⏱  M I N I T','callback_data':'noop'}])
+
+    mins=[0,10,20,30,40,50]
+    for i in range(0,len(mins),3):
+        row=[]
+        for mm in mins[i:i+3]:
+            label=f'{mm:02d}'
+            if selected_min==mm:
+                label='✅ '+label
+            row.append({'text':label,'callback_data':f'rphminute|{mode}|{hour}|{mm}'})
+        kb.append(row)
+
+    kb.append([{'text':'────────────','callback_data':'noop'}])
+    kb.append([{'text':'⬅️ Tukar Jam','callback_data':f'rphhourpage|{mode}'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+
+    selected_note=''
+    if selected_min is not None:
+        selected_note=f'\n\n✅ <b>Pilihan:</b> JAM {int(hour):02d}   |   MINIT {selected_min:02d}'
+
+    send(cid,
+         '⏱ <b>Pilih MINIT</b>\n\n'
+         f'<b>JAM {int(hour):02d}</b>\n'
+         f'────────────\n'
+         f'<b>MINIT</b>'
+         f'{selected_note}',
+         kb)
+
+# compatibility aliases used by callbacks
+def _rph_hour_picker_v2522(cid, mode='start'):
+    return _rph_hour_picker_v2525(cid,mode)
+
+def _rph_minute_picker_v2522(cid, mode='start', hour=8):
+    return _rph_minute_picker_v2525(cid,mode,hour)
+
+def _rph_time_picker(cid, mode='start', page=0):
+    return _rph_hour_picker_v2525(cid,mode)
+# ===== END v25.25 CLEAR DATE/TIME PICKER UI WITH PERSISTENT TICKS =====
+
