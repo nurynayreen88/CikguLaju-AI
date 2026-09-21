@@ -58,7 +58,7 @@ def _bootstrap_split_db_v2426():
     """
     import os as _os
     base = _os.path.dirname(_os.path.abspath(__file__))
-    target = _os.getenv('CIKGULAJU_DB_PATH', _os.path.join(base, 'CikguLaju_Curriculum_Master_v24_95_CORE.db'))
+    target = _os.getenv('CIKGULAJU_DB_PATH', _os.path.join(base, 'CikguLaju_Curriculum_Master_v24_99_BM_RUNTIME_FREEZE.db'))
     parts = [_os.path.join(base, 'CikguLaju_DB_v24_24.part00'),
              _os.path.join(base, 'CikguLaju_DB_v24_24.part01')]
     if _os.path.exists(target):
@@ -89,34 +89,7 @@ def _bootstrap_split_db_v2426():
 _bootstrap_split_db_v2426()
 # ===== END v24.26 SPLIT-DB BOOTSTRAP =====
 
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_95_CORE.db'))
-# ===== v25.08 MASTER CORE + ENGLISH SECONDARY BOOTSTRAP =====
-# Non-destructive: v24.95 remains untouched and is the fallback.
-if not os.getenv('CIKGULAJU_DB_PATH'):
-    _v2508_base = os.path.dirname(os.path.abspath(__file__))
-    _v2508_path = os.path.join(_v2508_base, 'CikguLaju_Curriculum_Master_v25_08_CORE_PLUS_ENGLISH_SECONDARY.db')
-    _v2508_parts = [os.path.join(_v2508_base, f'CikguLaju_Curriculum_Master_v25_08.part{i:02d}') for i in range(3)]
-    if not os.path.exists(_v2508_path) and all(os.path.isfile(p) for p in _v2508_parts):
-        _v2508_tmp = _v2508_path + '.rebuilding'
-        try:
-            with open(_v2508_tmp, 'wb') as _v2508_out:
-                for _v2508_part in _v2508_parts:
-                    with open(_v2508_part, 'rb') as _v2508_in:
-                        while True:
-                            _v2508_chunk = _v2508_in.read(1024 * 1024)
-                            if not _v2508_chunk:
-                                break
-                            _v2508_out.write(_v2508_chunk)
-            os.replace(_v2508_tmp, _v2508_path)
-        except Exception as _v2508_err:
-            try:
-                if os.path.exists(_v2508_tmp): os.remove(_v2508_tmp)
-            except Exception:
-                pass
-            print('v25.08 DB rebuild failed:', repr(_v2508_err), flush=True)
-    if os.path.exists(_v2508_path):
-        DB_PATH = _v2508_path
-# ===== END v25.08 BOOTSTRAP =====
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_99_BM_RUNTIME_FREEZE.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 ADMIN_CHAT_ID = str(os.getenv('ADMIN_CHAT_ID','')).strip()
 
@@ -6322,7 +6295,7 @@ _seen_updates = set()
 _runtime_lock = threading.Lock()
 
 # Local database: kurikulum + cache. Tujuan utama ialah mengurangkan panggilan Gemini.
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_95_CORE.db'))
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_99_BM_RUNTIME_FREEZE.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 
 
@@ -23619,7 +23592,7 @@ def callback(cid,d):
         return _bm96_commit_pdp(cid,idx)
     return _callback_dispatch_v2496_base(cid,d)
 
-APP_VERSION='v24.96-BM-THEME-UNIT-PDP'
+APP_VERSION='v25.09-BM-RUNTIME-FREEZE-SAFE'
 # ===== END v24.96 =====
 
 
