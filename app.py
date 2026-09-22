@@ -26509,12 +26509,12 @@ def _rph_time_picker(cid, mode='start', page=0):
         pending_hour=None
     active_hour = pending_hour if pending_hour is not None else selected_hour
 
-    # Locked layout: 5 JAM buttons + 4 MINIT buttons per row.
-    # JAM 06-20; MINIT 00-55 in 5-minute steps.
+    # Locked layout: 4 JAM buttons + 3 MINIT buttons per row.
+    # JAM 06-21; MINIT 00-55 in 5-minute steps.
     kb=[[{'text':'🕐       J A M','callback_data':'noop'},
          {'text':'⏱       M I N I T','callback_data':'noop'}]]
-    hour_rows=[list(range(6,11)), list(range(11,16)), list(range(16,21))]
-    minute_rows=[[0,5,10,15],[20,25,30,35],[40,45,50,55]]
+    hour_rows=[[6,7,8,9],[10,11,12,13],[14,15,16,17],[18,19,20,21]]
+    minute_rows=[[0,5,10],[15,20,25],[30,35,40],[45,50,55]]
     for hs, ms in zip(hour_rows, minute_rows):
         row=[]
         for h in hs:
@@ -26896,7 +26896,7 @@ def _eng12_commit_lesson(cid,idx):
 
 
 # ===== v25.31 TIME 5+4 + MATERIAL PICKER IN-PLACE TOGGLE =====
-APP_VERSION='v25.31-TIME-5PLUS4-MATERIAL-INPLACE'
+APP_VERSION='v25.34-TIME-4JAM-3MINIT-MATERIAL-INPLACE'
 
 def _time_combined_menu_v2510(cid, which='start'):
     ss=state.setdefault(cid,{})
@@ -26904,19 +26904,19 @@ def _time_combined_menu_v2510(cid, which='start'):
     ss.pop(f'_time_{which}_hour_v2435',None)
     ss.pop(f'_time_{which}_min_v2435',None)
 
-    # Locked layout requested by user:
-    # JAM:   06 07 08 09 10 | 11 12 13 14 15 | 16 17 18 19 20
-    # MINIT: 00 05 10 15    | 20 25 30 35    | 40 45 50 55
-    hour_rows=[[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]]
-    minute_rows=[[0,5,10,15],[20,25,30,35],[40,45,50,55]]
+    # Locked layout requested by user: 4 JAM + 3 MINIT on the SAME row.
+    # 06 07 08 09 | 00 05 10
+    # 10 11 12 13 | 15 20 25
+    # 14 15 16 17 | 30 35 40
+    # 18 19 20 21 | 45 50 55
+    hour_rows=[[6,7,8,9],[10,11,12,13],[14,15,16,17],[18,19,20,21]]
+    minute_rows=[[0,5,10],[15,20,25],[30,35,40],[45,50,55]]
 
-    rows=[[{'text':'JAM','callback_data':'tr510_noop'},
-           {'text':'MINIT','callback_data':'tr510_noop'}]]
+    rows=[]
     for hs,ms in zip(hour_rows,minute_rows):
-        rows.append(
-            [{'text':f'{h:02d}','callback_data':f'tr510_h_{which}_{h:02d}'} for h in hs] +
-            [{'text':f'{m:02d}','callback_data':f'tr510_m_{which}_{m:02d}'} for m in ms]
-        )
+        row=[{'text':f'{h:02d}','callback_data':f'tr510_h_{which}_{h:02d}'} for h in hs]
+        row += [{'text':f'{m:02d}','callback_data':f'tr510_m_{which}_{m:02d}'} for m in ms]
+        rows.append(row)
     title='🕐 <b>Pilih Masa Mula</b>' if which=='start' else '🕑 <b>Pilih Masa Tamat</b>'
     return send(cid,title+'\n\nPilih satu <b>JAM</b> di kiri dan satu <b>MINIT</b> di kanan.',rows)
 
