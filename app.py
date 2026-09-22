@@ -26509,24 +26509,20 @@ def _rph_time_picker(cid, mode='start', page=0):
         pending_hour=None
     active_hour = pending_hour if pending_hour is not None else selected_hour
 
-    kb=[[{'text':'🕐  J A M','callback_data':'noop'}]]
-    hours=list(range(6,19))
-    for i in range(0,len(hours),4):
+    # Locked layout: 5 JAM buttons + 4 MINIT buttons per row.
+    # JAM 06-20; MINIT 00-55 in 5-minute steps.
+    kb=[[{'text':'🕐       J A M','callback_data':'noop'},
+         {'text':'⏱       M I N I T','callback_data':'noop'}]]
+    hour_rows=[list(range(6,11)), list(range(11,16)), list(range(16,21))]
+    minute_rows=[[0,5,10,15],[20,25,30,35],[40,45,50,55]]
+    for hs, ms in zip(hour_rows, minute_rows):
         row=[]
-        for h in hours[i:i+4]:
+        for h in hs:
             label=f'{h:02d}'
             if active_hour==h:
                 label='✅ '+label
             row.append({'text':label,'callback_data':f'rphtimehour|{mode}|{h}'})
-        kb.append(row)
-
-    kb.append([{'text':'────────────','callback_data':'noop'}])
-    kb.append([{'text':'⏱  M I N I T','callback_data':'noop'}])
-
-    mins=[0,10,20,30,40,50]
-    for i in range(0,len(mins),3):
-        row=[]
-        for mm in mins[i:i+3]:
+        for mm in ms:
             label=f'{mm:02d}'
             if active_hour is not None and selected_hour==active_hour and selected_min==mm:
                 label='✅ '+label
