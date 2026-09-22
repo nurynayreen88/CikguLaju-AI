@@ -26706,3 +26706,79 @@ def callback(cid,d):
         return _submit_materials_v2528(cid)
     return _callback_before_v2528(cid,d)
 # ===== END v25.28 =====
+
+# ===== v25.29 LIVE CALLBACK FLOW FIX =====
+APP_VERSION = 'v25.29-LIVE-FLOW-MATERIAL-PICKER'
+
+# Entry copy: curriculum sources remain internal; teacher follows one universal flow.
+def quick(cid):
+    state[cid]={'task':'quick_material','quick_material_flow':True,'_cid':cid}
+    return send(cid,
+        '📚 <b>Sediakan Bahan PdP</b>\n\n'
+        'Pilih <b>Tahun/Tingkatan → Subjek → Tema/Unit/Tajuk → Lesson/PdP</b>.\n\n'
+        'SK/SP, RPT/SOW, buku teks dan buku aktiviti dipadankan secara automatik di belakang tabir. '
+        'Selepas memilih kelas, tarikh dan masa, pilih sendiri bahan yang diperlukan dan tekan <b>✅ SUBMIT</b>.',
+        [[{'text':'➡️ Teruskan','callback_data':'choose_grade'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+# Date picker with persistent selection tick.
+def _rph_date_picker(cid, offset=0):
+    from datetime import date, timedelta
+    s=state.setdefault(cid,{})
+    base=date.today()+timedelta(days=offset)
+    selected=str(s.get('rph_date') or '').strip()
+    kb=[]
+    for r in range(0,7,2):
+        row=[]
+        for j in range(2):
+            i=r+j
+            if i>=7: break
+            dt=base+timedelta(days=i)
+            if _is_english_subject(s): label=dt.strftime('%a %d/%m')
+            else:
+                _ms=['Isn','Sel','Rab','Kha','Jum','Sab','Ahd']; label=f'{_ms[dt.weekday()]} {dt.strftime("%d/%m")}'
+            if selected in (dt.strftime('%d/%m/%Y'),dt.strftime('%Y-%m-%d')):
+                label='✅ '+label
+            row.append({'text':label,'callback_data':'rphdate|'+dt.strftime('%Y%m%d')})
+        kb.append(row)
+    kb.append([{'text':'⬅️ 7 hari','callback_data':f'rphdatepage|{offset-7}'},{'text':'7 hari ➡️','callback_data':f'rphdatepage|{offset+7}'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,'📅 <b>Pilih tarikh RPH</b>\n\nTarikh yang dipilih ditanda ✅.',kb)
+
+# HARD STOP for every legacy quick-material auto-pack route.
+# Any old callback that still calls the old auto-pack is redirected to the selector.
+def _temporary_auto_pack_v2386(cid):
+    ss=state.setdefault(cid,{})
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+def _quick_material_output_choice(cid):
+    ss=state.setdefault(cid,{})
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+# Final post-time route: NEVER send material before teacher submits selection.
+def _continue_after_rph_time(cid, ss):
+    try:
+        if '_english_y3_y6_apply_sow_no_teacher_select_v2524' in globals() and _en_rph_is_target_v2519(ss):
+            _english_y3_y6_apply_sow_no_teacher_select_v2524(ss,ss.get('lesson_no') or ss.get('textbook_lesson_no'))
+    except Exception:
+        pass
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+# Final callback guard sits outermost, so material selection cannot fall through to legacy callback.
+_callback_before_v2529=callback
+def callback(cid,d):
+    if d.startswith('matpick2528|'):
+        key=d.split('|',1)[1]; ss=state.setdefault(cid,{})
+        available=set(_available_materials_v2528(ss))
+        if key not in available: return _material_picker_v2528(cid)
+        chosen=set(ss.get('_materials_selected_v2528') or [])
+        if key in chosen: chosen.remove(key)
+        else: chosen.add(key)
+        ss['_materials_selected_v2528']=list(chosen)
+        return _material_picker_v2528(cid)
+    if d=='matsubmit2528':
+        return _submit_materials_v2528(cid)
+    return _callback_before_v2529(cid,d)
+# ===== END v25.29 =====
