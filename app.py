@@ -26332,9 +26332,8 @@ def _rph_minute_picker_v2525(cid, mode='start', hour=8):
 
     kb=[]
     kb.append([{'text':f'🕐  JAM  {int(hour):02d}','callback_data':'noop'}])
-    kb.append([{'text':'                              ','callback_data':'noop'}])
-    kb.append([{'text':'──────────────','callback_data':'noop'}])
-    kb.append([{'text':'⏱   M I N I T   ⏱','callback_data':'noop'}])
+    kb.append([{'text':'────────────','callback_data':'noop'}])
+    kb.append([{'text':'⏱  M I N I T','callback_data':'noop'}])
 
     mins=[0,10,20,30,40,50]
     for i in range(0,len(mins),3):
@@ -26510,8 +26509,7 @@ def _rph_time_picker(cid, mode='start', page=0):
         pending_hour=None
     active_hour = pending_hour if pending_hour is not None else selected_hour
 
-    # Keep JAM and MINIT as clearly separated visual groups in Telegram.
-    kb=[[{'text':'🕐     J A M     🕐','callback_data':'noop'}]]
+    kb=[[{'text':'🕐  J A M','callback_data':'noop'}]]
     hours=list(range(6,19))
     for i in range(0,len(hours),4):
         row=[]
@@ -26547,10 +26545,164 @@ def _rph_time_picker(cid, mode='start', page=0):
 
     send(cid,
          f'⏰ <b>Pilih MASA {title}</b>\n\n'
-         f'🕐 <b>JAM</b> — pilih daripada kotak bahagian atas\n\n'
-         f'──────────────\n\n'
-         f'⏱ <b>MINIT</b> — pilih daripada kotak bahagian bawah'
+         f'<b>JAM</b>\n'
+         f'────────────\n'
+         f'<b>MINIT</b>'
          f'{note}',
          kb)
 # ===== END v25.27 CANONICAL DATE/TIME PICKER =====
 
+
+# ===== v25.28 USER-SELECTED MATERIALS AFTER TIME =====
+# Flow: complete date/time -> detect available materials -> user selects -> SUBMIT -> send selected only.
+APP_VERSION='v25.28-MATERIAL-PICKER-AFTER-TIME'
+
+_MAT_META_V2528={
+    'rph':('📘','RPH'),'worksheet':('📝','Worksheet'),'bbm':('🎨','BBM'),
+    'textbook':('📖','Buku Teks'),'activity':('📚','Buku Aktiviti'),'media':('🔊','Audio/Media'),
+}
+
+def _available_materials_v2528(ss):
+    """Return only materials supported by the verified lesson/material manifest."""
+    out=[]
+    try:
+        manifest=_lesson_package_manifest_v2407(ss) or {}
+    except Exception:
+        manifest={}
+    status_to_key={'RPH':'rph','Worksheet':'worksheet','BBM':'bbm','Buku Teks':'textbook','Buku Aktiviti':'activity','Audio/Media':'media'}
+    for label,key in status_to_key.items():
+        st=str((manifest.get(label) or {}).get('status') or '')
+        if st in ('ready_to_build','mapped'):
+            out.append(key)
+    # English Y1/Y2 verified audio has its own proven route.
+    if ss.get('audio_status')=='VERIFIED_AUDIO' and ss.get('audio_reference') and 'media' not in out:
+        out.append('media')
+    return out
+
+def _material_picker_v2528(cid, note=''):
+    ss=state.setdefault(cid,{})
+    available=_available_materials_v2528(ss)
+    ss['_materials_available_v2528']=available
+    chosen=set(x for x in (ss.get('_materials_selected_v2528') or []) if x in available)
+    ss['_materials_selected_v2528']=list(chosen)
+    if not available:
+        return send(cid,'⚠️ <b>Tiada bahan yang telah disahkan tersedia untuk PdP ini.</b>\n\nCikguLaju tidak akan memaparkan atau menghantar bahan yang belum tersedia.',[[{'text':'⬅️ Pilih Lesson/PdP Lain','callback_data':'quick'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    kb=[]
+    for key in available:
+        icon,label=_MAT_META_V2528[key]
+        mark='☑️' if key in chosen else '⬜'
+        kb.append([{'text':f'{mark} {icon} {label}','callback_data':f'matpick2528|{key}'}])
+    kb.append([{'text':'✅ SUBMIT','callback_data':'matsubmit2528'}])
+    kb.append([{'text':'⬅️ Tukar Masa','callback_data':'rphtimepage|start|0'},{'text':'🏠 Menu Utama','callback_data':'home'}])
+    ctx=[]
+    if ss.get('rph_date'): ctx.append(str(ss.get('rph_date')))
+    if ss.get('rph_time'): ctx.append(str(ss.get('rph_time')))
+    extra=('\n\n'+note) if note else ''
+    return send(cid,'📚 <b>Pilih bahan yang cikgu mahu</b>\n\n'+(' • '.join(ctx) if ctx else '')+'\n\nTekan bahan untuk pilih ☑️. Bahan yang tidak tersedia tidak dipaparkan.'+extra,kb)
+
+def _send_reference_material_v2528(cid,ss,key):
+    if key=='textbook':
+        p1=ss.get('textbook_page_start') or ss.get('textbook_page') or ss.get('page'); p2=ss.get('textbook_page_end')
+        book=str(ss.get('textbook_book_title') or 'Buku Teks')
+        pg=(f'ms. {p1}–{p2}' if p1 and p2 and str(p2)!=str(p1) else (f'ms. {p1}' if p1 else ''))
+        return send(cid,f'📖 <b>{html.escape(book)}</b>'+('\n'+html.escape(pg) if pg else ''))
+    if key=='activity':
+        rows=[]
+        try: rows=_lesson_activity_book_rows_v2407(ss) or []
+        except Exception: pass
+        if not rows: return False
+        lines=['📚 <b>Buku Aktiviti</b>']
+        for r in rows[:8]:
+            page=r.get('page_no') or r.get('page') or r.get('page_start') or ''
+            title=r.get('book_title') or r.get('title') or 'Buku Aktiviti'
+            lines.append('• '+html.escape(str(title))+(f' — ms. {html.escape(str(page))}' if page else ''))
+        send(cid,'\n'.join(lines)); return True
+    if key=='media':
+        if ss.get('audio_status')=='VERIFIED_AUDIO' and ss.get('audio_reference'):
+            try: return bool(_eng12_send_verified_audio(cid,ss.get('audio_reference')))
+            except Exception: pass
+        rows=[]
+        try: rows=_lesson_media_rows_v2407(ss) or []
+        except Exception: pass
+        if not rows: return False
+        lines=['🔊 <b>Audio / Media</b>']
+        for r in rows[:8]:
+            ref=r.get('media_ref') or r.get('reference') or r.get('source_url') or r.get('title') or r.get('name') or 'Media berkaitan'
+            lines.append('• '+html.escape(str(ref)))
+        send(cid,'\n'.join(lines)); return True
+    return False
+
+def _submit_materials_v2528(cid):
+    ss=state.setdefault(cid,{})
+    available=set(_available_materials_v2528(ss)); selected=[x for x in (ss.get('_materials_selected_v2528') or []) if x in available]
+    if not selected:
+        return _material_picker_v2528(cid,'⚠️ Sila pilih sekurang-kurangnya satu bahan sebelum SUBMIT.')
+    with _runtime_lock:
+        if cid in _processing_chats:
+            return send(cid,'⏳ <b>Bahan sedang disediakan.</b>')
+        _processing_chats.add(cid)
+    paths=[]; ok=[]; failed=[]; pmid=None
+    try:
+        pmid=_generation_progress_start(cid,'Menyediakan bahan yang dipilih')
+        total=max(1,len(selected))
+        for n,key in enumerate(selected,1):
+            icon,label=_MAT_META_V2528[key]
+            try: _generation_progress_update(cid,pmid,min(95,10+int((n-1)*80/total)),f'Menyediakan {label}...','Bahan Dipilih')
+            except Exception: pass
+            try:
+                if key=='rph':
+                    ctx=dict(ss); ctx['task']='rph'
+                    txt=_inject_worksheet_differentiation_into_rph(_local_rph_text(ctx))
+                    if not txt: raise RuntimeError('RPH unavailable')
+                    p=create_pdf_file(ctx,txt,str(cid)+'_selected_rph'); paths.append(p); send_document(cid,p,'📘 RPH CikguLaju'); ok.append(label)
+                elif key=='worksheet':
+                    ctx=dict(ss); ctx['task']='worksheet'; ctx.setdefault('worksheet_questions',8); ctx['difficulty']='all4'; ctx['worksheet_pack_4levels']=True
+                    res=_generate_four_level_worksheets(ctx)
+                    if not res: raise RuntimeError('Worksheet unavailable')
+                    p=create_four_level_worksheet_pdf(ctx,res,cid); paths.append(p); send_document(cid,p,'📝 Worksheet CikguLaju'); ok.append(label)
+                elif key=='bbm':
+                    ctx=dict(ss); ctx['task']='bbm'; ctx['bbm_variation_seed']=secrets.token_hex(6)
+                    p=create_bbm_flashcards_pdf(ctx,cid); paths.append(p); send_document(cid,p,'🎨 BBM CikguLaju - sedia untuk cetak'); ok.append(label)
+                else:
+                    if _send_reference_material_v2528(cid,ss,key): ok.append(label)
+                    else: failed.append(label)
+            except Exception as e:
+                print('v25.28 selected material',key,repr(e),flush=True); failed.append(label)
+        try: _generation_progress_update(cid,pmid,100,'Selesai.','Bahan Dipilih')
+        except Exception: pass
+        lines=['✅ <b>Bahan pilihan selesai diproses.</b>']
+        if ok: lines.append('\nDihantar: '+', '.join(ok))
+        if failed: lines.append('\nBelum berjaya dihantar: '+', '.join(failed))
+        send(cid,'\n'.join(lines),[[{'text':'📚 Sediakan Bahan Lagi','callback_data':'quick'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    finally:
+        for p in paths:
+            try:
+                if p and os.path.exists(p): os.remove(p)
+            except Exception: pass
+        with _runtime_lock: _processing_chats.discard(cid)
+
+# Replace the post-time continuation universally. It now detects first and sends nothing until SUBMIT.
+def _continue_after_rph_time(cid, ss):
+    try:
+        if '_english_y3_y6_apply_sow_no_teacher_select_v2524' in globals() and _en_rph_is_target_v2519(ss):
+            _english_y3_y6_apply_sow_no_teacher_select_v2524(ss,ss.get('lesson_no') or ss.get('textbook_lesson_no'))
+    except Exception:
+        pass
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+_callback_before_v2528=callback
+def callback(cid,d):
+    if d.startswith('matpick2528|'):
+        key=d.split('|',1)[1]; ss=state.setdefault(cid,{})
+        available=set(_available_materials_v2528(ss))
+        if key not in available: return _material_picker_v2528(cid)
+        chosen=set(ss.get('_materials_selected_v2528') or [])
+        if key in chosen: chosen.remove(key)
+        else: chosen.add(key)
+        ss['_materials_selected_v2528']=list(chosen)
+        return _material_picker_v2528(cid)
+    if d=='matsubmit2528':
+        return _submit_materials_v2528(cid)
+    return _callback_before_v2528(cid,d)
+# ===== END v25.28 =====
