@@ -26896,7 +26896,7 @@ def _eng12_commit_lesson(cid,idx):
 
 
 # ===== v25.31 TIME 5+4 + MATERIAL PICKER IN-PLACE TOGGLE =====
-APP_VERSION='v25.36-TIME-VERTICAL-SEPARATOR-MATERIAL-INPLACE'
+APP_VERSION='v25.37-LARGE-TIME-HEADER-SEPARATOR-MATERIAL-INPLACE'
 
 def _time_combined_menu_v2510(cid, which='start'):
     ss=state.setdefault(cid,{})
@@ -26912,19 +26912,12 @@ def _time_combined_menu_v2510(cid, which='start'):
     hour_rows=[[6,7,8,9],[10,11,12,13],[14,15,16,17],[18,19,20,21]]
     minute_rows=[[0,5,10],[15,20,25],[30,35,40],[45,50,55]]
 
-    # 8-column layout: 4 JAM + 1 visual separator + 3 MINIT.
-    # Separator is present in the header and every time row to form one vertical divider.
-    # Use a no-op callback for compatibility with the existing keyboard sender; it performs no action.
+    # Large two-button header. Telegram sizes this row independently, so JAM/MINIT stay wide.
+    # Time rows below keep the requested 4 JAM + separator + 3 MINIT layout.
     sep={'text':'│','callback_data':'tr510_noop'}
     rows=[[
         {'text':'JAM','callback_data':'tr510_noop'},
-        {'text':' ','callback_data':'tr510_noop'},
-        {'text':' ','callback_data':'tr510_noop'},
-        {'text':' ','callback_data':'tr510_noop'},
-        dict(sep),
         {'text':'MINIT','callback_data':'tr510_noop'},
-        {'text':' ','callback_data':'tr510_noop'},
-        {'text':' ','callback_data':'tr510_noop'},
     ]]
     for hs,ms in zip(hour_rows,minute_rows):
         row=[{'text':f'{h:02d}','callback_data':f'tr510_h_{which}_{h:02d}'} for h in hs]
