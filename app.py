@@ -26897,3 +26897,114 @@ def _eng12_commit_lesson(cid,idx):
     send(cid,f'✅ <b>Lesson {html.escape(ln)}</b> dipilih.\nSK/SP dipadankan automatik daripada DB BOT_READY verified.')
     return _lesson_to_class_v2439(cid)
 # ===== END v25.30 =====
+
+
+# ===== v25.31 TIME 5+4 + MATERIAL PICKER IN-PLACE TOGGLE =====
+APP_VERSION='v25.31-TIME-5PLUS4-MATERIAL-INPLACE'
+
+def _time_combined_menu_v2510(cid, which='start'):
+    ss=state.setdefault(cid,{})
+    ss['_time_range_stage_v2435']=which
+    ss.pop(f'_time_{which}_hour_v2435',None)
+    ss.pop(f'_time_{which}_min_v2435',None)
+
+    # Locked layout requested by user:
+    # JAM:   06 07 08 09 10 | 11 12 13 14 15 | 16 17 18 19 20
+    # MINIT: 00 05 10 15    | 20 25 30 35    | 40 45 50 55
+    hour_rows=[[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]]
+    minute_rows=[[0,5,10,15],[20,25,30,35],[40,45,50,55]]
+
+    rows=[[{'text':'JAM','callback_data':'tr510_noop'},
+           {'text':'MINIT','callback_data':'tr510_noop'}]]
+    for hs,ms in zip(hour_rows,minute_rows):
+        rows.append(
+            [{'text':f'{h:02d}','callback_data':f'tr510_h_{which}_{h:02d}'} for h in hs] +
+            [{'text':f'{m:02d}','callback_data':f'tr510_m_{which}_{m:02d}'} for m in ms]
+        )
+    title='🕐 <b>Pilih Masa Mula</b>' if which=='start' else '🕑 <b>Pilih Masa Tamat</b>'
+    return send(cid,title+'\n\nPilih satu <b>JAM</b> di kiri dan satu <b>MINIT</b> di kanan.',rows)
+
+
+def _material_picker_render_v2531(cid, note='', edit_current=False):
+    ss=state.setdefault(cid,{})
+    available=_available_materials_v2528(ss)
+    ss['_materials_available_v2528']=available
+    chosen=set(x for x in (ss.get('_materials_selected_v2528') or []) if x in available)
+    ss['_materials_selected_v2528']=list(chosen)
+
+    if not available:
+        text='⚠️ <b>Tiada bahan yang telah disahkan tersedia untuk PdP ini.</b>\n\nCikguLaju tidak akan memaparkan atau menghantar bahan yang belum tersedia.'
+        kb=[[{'text':'⬅️ Pilih Lesson/PdP Lain','callback_data':'quick'}],
+            [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    else:
+        kb=[]
+        for key in available:
+            icon,label=_MAT_META_V2528[key]
+            mark='☑️' if key in chosen else '⬜'
+            kb.append([{'text':f'{mark} {icon} {label}','callback_data':f'matpick2528|{key}'}])
+        kb.append([{'text':'✅ SUBMIT','callback_data':'matsubmit2528'}])
+        kb.append([{'text':'⬅️ Tukar Masa','callback_data':'rphtimepage|start|0'},
+                   {'text':'🏠 Menu Utama','callback_data':'home'}])
+        ctx=[]
+        if ss.get('rph_date'): ctx.append(str(ss.get('rph_date')))
+        if ss.get('rph_time'): ctx.append(str(ss.get('rph_time')))
+        extra=('\n\n'+note) if note else ''
+        text='📚 <b>Pilih bahan yang cikgu mahu</b>\n\n'+(' • '.join(ctx) if ctx else '')+\
+             '\n\nTekan bahan untuk pilih ☑️. Bahan yang tidak tersedia tidak dipaparkan.'+extra
+
+    if edit_current:
+        mid=ss.get('_callback_message_id')
+        if mid:
+            payload={'chat_id':cid,'message_id':mid,'text':text,'parse_mode':'HTML',
+                     'reply_markup':{'inline_keyboard':kb}}
+            try:
+                r=requests.post(f'{API}/editMessageText',json=payload,timeout=20)
+                if getattr(r,'ok',False):
+                    ss['_material_picker_message_id_v2531']=mid
+                    return r
+                try:
+                    desc=str((r.json() or {}).get('description','')).lower()
+                    if 'message is not modified' in desc:
+                        return r
+                except Exception:
+                    pass
+            except Exception as e:
+                print('v25.31 material picker edit warning:',repr(e),flush=True)
+
+    r=send(cid,text,kb)
+    try:
+        if getattr(r,'ok',False):
+            ss['_material_picker_message_id_v2531']=(r.json() or {}).get('result',{}).get('message_id')
+    except Exception:
+        pass
+    return r
+
+
+def _material_picker_v2528(cid, note=''):
+    # Normal entry sends the picker once. Toggle callbacks below edit that same message.
+    return _material_picker_render_v2531(cid,note,False)
+
+
+_callback_before_v2531=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith('matpick2528|'):
+        key=ds.split('|',1)[1]
+        ss=state.setdefault(cid,{})
+        available=set(_available_materials_v2528(ss))
+        if key not in available:
+            return _material_picker_render_v2531(cid,'',True)
+        chosen=set(ss.get('_materials_selected_v2528') or [])
+        if key in chosen:
+            chosen.remove(key)
+        else:
+            chosen.add(key)
+        ss['_materials_selected_v2528']=list(chosen)
+        # Critical: edit the SAME Telegram material-picker message.
+        return _material_picker_render_v2531(cid,'',True)
+    if ds=='matsubmit2528':
+        # Existing submit engine sends only selected materials.
+        return _submit_materials_v2528(cid)
+    return _callback_before_v2531(cid,d)
+
+# ===== END v25.31 =====
