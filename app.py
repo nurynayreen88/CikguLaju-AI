@@ -26782,3 +26782,118 @@ def callback(cid,d):
         return _submit_materials_v2528(cid)
     return _callback_before_v2529(cid,d)
 # ===== END v25.29 =====
+
+# ===== v25.30 FLOW ORDER + CAPABILITY AVAILABILITY FIX =====
+APP_VERSION='v25.30-FLOW-ORDER-AVAILABILITY-FIX'
+
+def _pdp_context_complete_v2530(ss):
+    has_class=bool(str(ss.get('rph_class') or ss.get('class_name') or '').strip())
+    has_date=bool(str(ss.get('rph_date') or '').strip())
+    has_time=bool(str(ss.get('rph_time') or '').strip())
+    return has_class and has_date and has_time
+
+def _available_materials_v2528(ss):
+    """Availability means an existing proven route can deliver/build the item.
+    Printable generators are capabilities; references/media remain evidence-based.
+    """
+    out=[]
+    mapped=bool(str(ss.get('sp_code') or '').strip() or (ss.get('selected_sp_codes') or []))
+    # Existing local engines are valid availability, even when no prebuilt bank row exists.
+    if mapped and callable(globals().get('_local_rph_text')) and callable(globals().get('create_pdf_file')):
+        out.append('rph')
+    if mapped and callable(globals().get('_generate_four_level_worksheets')) and callable(globals().get('create_four_level_worksheet_pdf')):
+        out.append('worksheet')
+    if mapped and callable(globals().get('create_bbm_flashcards_pdf')):
+        out.append('bbm')
+
+    # Reference materials only appear when a real mapping/reference exists.
+    tb=ss.get('textbook_page_start') or ss.get('textbook_page') or ss.get('page') or ss.get('textbook_ref')
+    if tb not in (None,''):
+        out.append('textbook')
+    try:
+        ab_rows=_lesson_activity_book_rows_v2407(ss) or []
+    except Exception:
+        ab_rows=[]
+    if ab_rows or str(ss.get('activitybook_ref') or ss.get('workbook_page_start') or '').strip():
+        out.append('activity')
+
+    # Audio/media stays strict: verified audio or a real media row only.
+    media_ok=bool(ss.get('audio_status')=='VERIFIED_AUDIO' and str(ss.get('audio_reference') or '').strip())
+    if not media_ok:
+        try: media_ok=bool(_lesson_media_rows_v2407(ss) or [])
+        except Exception: media_ok=False
+    if media_ok: out.append('media')
+    return out
+
+def _temporary_auto_pack_v2386(cid):
+    """Compatibility gate: lesson selection must go to class/date/time first.
+    Only a complete PdP context may open the material picker.
+    """
+    ss=state.setdefault(cid,{})
+    if not _pdp_context_complete_v2530(ss):
+        return _lesson_to_class_v2439(cid)
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+def _quick_material_output_choice(cid):
+    return _temporary_auto_pack_v2386(cid)
+
+def _finish_time_range_v2435(cid):
+    ss=state.setdefault(cid,{})
+    sh=int(ss.get('_time_start_hour_v2435',0)); sm=int(ss.get('_time_start_min_v2435',0))
+    eh=int(ss.get('_time_end_hour_v2435',0)); em=int(ss.get('_time_end_min_v2435',0))
+    start=sh*60+sm; end=eh*60+em
+    if end<=start:
+        send(cid,'⚠️ Masa akhir mesti selepas masa mula. Sila pilih masa akhir semula.')
+        return _time_hour_menu_v2435(cid,'end')
+    ss['rph_start_time']=f'{sh:02d}:{sm:02d}'; ss['rph_end_time']=f'{eh:02d}:{em:02d}'
+    ss['rph_time']=f'{sh:02d}:{sm:02d} - {eh:02d}:{em:02d}'
+    ss['duration_minutes']=end-start; ss['rph_duration_minutes']=end-start
+    ss['_pdp_context_ready_v2393']=True
+    send(cid,f"✅ Masa: <b>{ss['rph_time']}</b> ({end-start} minit)")
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+def _continue_after_rph_time(cid, ss):
+    # This function is called only after the canonical RPH time picker completes.
+    ss['_pdp_context_ready_v2393']=True
+    ss.pop('_materials_selected_v2528',None)
+    return _material_picker_v2528(cid)
+
+# English Y1/Y2 lesson commit must NOT invoke material pack at lesson-selection stage.
+_eng12_commit_lesson_v2530_base=globals().get('_eng12_commit_lesson')
+def _eng12_commit_lesson(cid,idx):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_eng12_lesson_rows') or []
+    try: r=rows[int(idx)]
+    except Exception: return _eng12_unit_menu(cid,0)
+    ln=str(r.get('lesson_no') or '').strip(); std=_eng12_standards(_eng12_year_label(ss),ln)
+    mapped=[]
+    for x in std:
+        cs=str(x.get('content_standard') or '').strip(); ls=str(x.get('learning_standard') or '').strip()
+        if cs and ls: mapped.append({'sk_code':cs,'sk_text':'','sp_code':ls,'sp_text':''})
+    if not mapped:
+        return send(cid,'🚧 <b>SK/SP verified untuk Lesson ini belum lengkap.</b>',[[{'text':'⬅️ Pilih Lesson Lain','callback_data':f"eng12_lsnunit_{ss.get('_eng12_unit_index',0)}"}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    ss.update({'lesson_no':ln,'lesson':ln,'_sow_skill':str(r.get('_sow_skill') or '').strip(),
+        'topic':str(r.get('unit_title') or r.get('topic') or '').strip(),'subtopic':str(r.get('topic') or '').strip(),
+        'textbook_page_start':r.get('textbook_page_start'),'textbook_page_end':r.get('textbook_page_end'),
+        'workbook_page_start':r.get('workbook_page_start'),'workbook_page_end':r.get('workbook_page_end'),
+        'workbook_status':str(r.get('workbook_status') or ''),'audio_status':str(r.get('audio_status') or ''),
+        'audio_reference':str(r.get('audio_reference') or '') if str(r.get('audio_status') or '')=='VERIFIED_AUDIO' else '',
+        'quick_material_flow':True,'assessment_mode':'formative'})
+    _commit_multi_sp(ss,mapped[:8])
+    # Enrich guidance/mappings without sending anything.
+    try:
+        g=_eng12_teacher_guidance(_eng12_year_label(ss),ln) or {}
+        if g:
+            pages=g.get('sb_pages') or []
+            if pages: ss['textbook_page_start']=pages[0]; ss['textbook_page_end']=pages[-1]
+            ss['rph_verified_teacher_guidance']=g
+            ss['teacher_book_aims']=g.get('aims',''); ss['teacher_book_warm_up']=g.get('warm_up','')
+            ss['teacher_book_procedure']=g.get('student_book_procedure',''); ss['workbook_procedure']=g.get('workbook_procedure','')
+            ss['audio_procedure']=g.get('audio_procedure',''); ss['checking_feedback']=g.get('checking_feedback','')
+            ss['ending_lesson']=g.get('ending_lesson',''); ss['extension_optional']=g.get('extension_optional','')
+    except Exception as e: print('v25.30 guidance:',repr(e),flush=True)
+    send(cid,f'✅ <b>Lesson {html.escape(ln)}</b> dipilih.\nSK/SP dipadankan automatik daripada DB BOT_READY verified.')
+    return _lesson_to_class_v2439(cid)
+# ===== END v25.30 =====
