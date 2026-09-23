@@ -27011,3 +27011,107 @@ def callback(cid,d):
     return _callback_before_v2531(cid,d)
 
 # ===== END v25.31 =====
+
+# ===== v25.38 MATERIAL PICKER + PDP REFERENCE SUMMARY =====
+# Textbook/activity book are references, not downloadable picker items.
+# Audio/media remains selectable only when verified/available.
+_available_materials_before_v2538 = _available_materials_v2528
+
+def _available_materials_v2528(ss):
+    items = _available_materials_before_v2538(ss)
+    return [x for x in items if x not in ('textbook', 'activity')]
+
+def _v2538_page_range(start, end=None):
+    if start in (None, ''):
+        return ''
+    a=str(start).strip(); b='' if end in (None,'') else str(end).strip()
+    return f'm/s {a}–{b}' if b and b != a else f'm/s {a}'
+
+def _v2538_media_source_label(row, ss):
+    blob=' '.join(str(row.get(k) or '') for k in (
+        'source_type','source','book_type','material_type','book_title','title','notes','description'
+    )).lower()
+    if any(x in blob for x in ('workbook','activity book','buku aktiviti','activitybook')):
+        return 'Buku Aktiviti/Workbook'
+    if any(x in blob for x in ('student book','textbook','buku teks','student\'s book')):
+        return 'Buku Teks'
+    # Use page evidence only when it is explicit in the media row; never guess a source.
+    return ''
+
+def _send_pdp_reference_v2538(cid, ss):
+    lines=['📚 <b>Rujukan PdP</b>']
+    added=False
+
+    tb1=ss.get('textbook_page_start') or ss.get('textbook_page') or ss.get('page')
+    tb2=ss.get('textbook_page_end')
+    if tb1 not in (None,''):
+        title=str(ss.get('textbook_book_title') or 'Buku Teks')
+        lines.append(f'📘 <b>{html.escape(title)}</b>: {html.escape(_v2538_page_range(tb1,tb2))}')
+        added=True
+
+    try:
+        ab_rows=_lesson_activity_book_rows_v2407(ss) or []
+    except Exception:
+        ab_rows=[]
+    seen=set()
+    for r in ab_rows[:8]:
+        p1=r.get('page_start') or r.get('page_no') or r.get('page')
+        p2=r.get('page_end')
+        title=str(r.get('book_title') or r.get('title') or 'Buku Aktiviti/Workbook')
+        sig=(title,str(p1),str(p2))
+        if sig in seen: continue
+        seen.add(sig)
+        page=_v2538_page_range(p1,p2)
+        lines.append('📗 <b>'+html.escape(title)+'</b>'+(': '+html.escape(page) if page else ''))
+        added=True
+    if not ab_rows:
+        wb1=ss.get('workbook_page_start') or ss.get('activitybook_page') or ss.get('activity_book_page')
+        wb2=ss.get('workbook_page_end')
+        if wb1 not in (None,''):
+            lines.append('📗 <b>Buku Aktiviti/Workbook</b>: '+html.escape(_v2538_page_range(wb1,wb2)))
+            added=True
+
+    try:
+        media_rows=_lesson_media_rows_v2407(ss) or []
+    except Exception:
+        media_rows=[]
+    for r in media_rows[:12]:
+        ref=r.get('media_ref') or r.get('reference') or r.get('audio_reference') or r.get('track') or r.get('title') or r.get('name')
+        if not ref: continue
+        src=_v2538_media_source_label(r,ss)
+        p1=r.get('page_start') or r.get('page_no') or r.get('page')
+        p2=r.get('page_end')
+        detail=[]
+        if src: detail.append(src)
+        pg=_v2538_page_range(p1,p2)
+        if pg: detail.append(pg)
+        suffix=(' — '+', '.join(detail)) if detail else ''
+        lines.append('🔊 '+html.escape(str(ref))+html.escape(suffix))
+        added=True
+
+    # English Y1/Y2 verified audio fallback. State source only when mapping explicitly tells us.
+    if not media_rows and ss.get('audio_status')=='VERIFIED_AUDIO' and ss.get('audio_reference'):
+        ref=str(ss.get('audio_reference'))
+        source=str(ss.get('audio_source_type') or ss.get('audio_book_type') or '').strip()
+        page=ss.get('audio_page') or ss.get('audio_page_start')
+        detail=[]
+        if source: detail.append(source)
+        if page not in (None,''): detail.append(_v2538_page_range(page,ss.get('audio_page_end')))
+        lines.append('🔊 '+html.escape(ref)+((' — '+html.escape(', '.join(detail))) if detail else ''))
+        added=True
+
+    if added:
+        return send(cid,'\n'.join(lines))
+    return False
+
+_submit_materials_before_v2538 = _submit_materials_v2528
+
+def _submit_materials_v2528(cid):
+    result=_submit_materials_before_v2538(cid)
+    try:
+        _send_pdp_reference_v2538(cid,state.setdefault(cid,{}))
+    except Exception as e:
+        print('v25.38 reference summary warning:',repr(e),flush=True)
+    return result
+
+# ===== END v25.38 =====
