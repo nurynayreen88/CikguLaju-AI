@@ -1,4 +1,5 @@
 import os
+RECOVERY_CHECKPOINT = "v25_69_MINIMUM_UPLOAD_READY_2026-09-25"
 
 APP_VERSION = 'v23.90-UNIT-LESSON-SOURCE-FLOW'
 import base64
@@ -89,7 +90,7 @@ def _bootstrap_split_db_v2426():
 _bootstrap_split_db_v2426()
 # ===== END v24.26 SPLIT-DB BOOTSTRAP =====
 
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_99_BM_RUNTIME_FREEZE.db'))
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Recovery_v25_69.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 ADMIN_CHAT_ID = str(os.getenv('ADMIN_CHAT_ID','')).strip()
 
@@ -6427,7 +6428,7 @@ _seen_updates = set()
 _runtime_lock = threading.Lock()
 
 # Local database: kurikulum + cache. Tujuan utama ialah mengurangkan panggilan Gemini.
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v24_99_BM_RUNTIME_FREEZE.db'))
+DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Recovery_v25_69.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 
 
@@ -7958,6 +7959,11 @@ def _clean_page_range_text(v):
     return str(vals[0])
 
 def _local_rph_text(s):
+    # v25.45 final RPH gate: exact SP action semantics take priority for all subjects.
+    # This prevents Science/Mathematics from falling through to a generic activity shell.
+    _semantic=_semantic_full_rph_text(s)
+    if _semantic:
+        return _semantic
     if str(s.get('subject') or '').strip()=='Bahasa Inggeris':
         return _local_rph_text_english(s)
     sk=(str(s.get('sk_code') or '').strip()+' '+str(s.get('sk_text') or '').strip()).strip()
@@ -27115,3 +27121,212 @@ def _submit_materials_v2528(cid):
     return result
 
 # ===== END v25.38 =====
+
+
+# ===== v25.40 SCIENCE + MATHEMATICS COMBINED BASELINE =====
+APP_VERSION='v25.40-SCIENCE-MATH-v25.66'
+# Default curriculum DB upgraded non-destructively to v25_68 Science+Math upload-ready baseline.
+# ===== END v25.40 =====
+
+# ===== v25.42 SCIENCE + MATHEMATICS VERIFIED PDP RUNTIME =====
+# Runtime source: verified_pdp_sequence. One menu item per pdp_sequence_code;
+# multiple SK/SP rows under the same code are committed together behind the scenes.
+_callback_before_v2542 = callback
+
+
+def _sm2542_rows(year_label, subject):
+    if subject not in ('Sains','Matematik'):
+        return []
+    con=_db()
+    try:
+        rs=con.execute("""SELECT * FROM verified_pdp_sequence
+            WHERE year_label=? AND subject=?
+              AND COALESCE(pdp_sequence_code,'')<>''
+              AND COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')
+            ORDER BY COALESCE(source_sequence_no,9999), id""",
+            (str(year_label or '').strip(),subject)).fetchall()
+        return [dict(r) for r in rs]
+    finally:
+        con.close()
+
+
+def _sm2542_unique_units(rows):
+    out=[]; seen=set()
+    for r in rows:
+        key=(str(r.get('unit_code') or '').strip(),str(r.get('unit_title') or '').strip())
+        if not key[1]:
+            key=('',str(r.get('theme') or '').strip())
+        if key[1] and key not in seen:
+            seen.add(key); out.append(key)
+    return out
+
+
+def _sm2542_unit_menu(cid,page=0):
+    ss=state.setdefault(cid,{})
+    subject=str(ss.get('subject') or '')
+    rows=_sm2542_rows(ss.get('year',''),subject)
+    units=_sm2542_unique_units(rows)
+    ss['_sm2542_rows']=rows; ss['_sm2542_units']=units
+    if not rows or not units:
+        return send(cid,f'🚧 <b>Urutan PdP {html.escape(subject)} yang disahkan belum tersedia untuk tahap ini.</b>',
+                    [[{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    per=10; page=max(0,int(page or 0)); start=page*per; end=min(start+per,len(units)); kb=[]
+    for i in range(start,end):
+        code,title=units[i]
+        label=(f'{code} • ' if code else '')+title
+        kb.append([{'text':('📘 '+label)[:60],'callback_data':f'sm2542_unit_{i}'}])
+    nav=[]
+    if start: nav.append({'text':'⬅️ Sebelum','callback_data':f'sm2542_up_{page-1}'})
+    if end<len(units): nav.append({'text':'Seterusnya ➡️','callback_data':f'sm2542_up_{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},{'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,f"📚 <b>{html.escape(subject)} • {html.escape(str(ss.get('year') or ''))}</b>\n\nPilih <b>Unit/Tajuk</b>. Selepas itu pilih PdP; SK/SP dipadankan automatik.",kb)
+
+
+def _sm2542_pdp_menu(cid,unit_idx,page=0):
+    ss=state.setdefault(cid,{})
+    units=ss.get('_sm2542_units') or []
+    if unit_idx<0 or unit_idx>=len(units): return _sm2542_unit_menu(cid)
+    code,title=units[unit_idx]
+    rows=[r for r in (ss.get('_sm2542_rows') or [])
+          if ((str(r.get('unit_code') or '').strip(),str(r.get('unit_title') or '').strip())==(code,title)
+              or (not code and not str(r.get('unit_title') or '').strip() and str(r.get('theme') or '').strip()==title))]
+    groups=[]; bycode={}
+    for r in rows:
+        k=str(r.get('pdp_sequence_code') or '').strip()
+        if not k: continue
+        if k not in bycode:
+            bycode[k]=[]; groups.append(k)
+        bycode[k].append(r)
+    ss['_sm2542_unit_index']=unit_idx; ss['_sm2542_unit']=(code,title)
+    ss['_sm2542_pdp_codes']=groups; ss['_sm2542_pdp_bycode']=bycode
+    per=10; page=max(0,int(page or 0)); start=page*per; end=min(start+per,len(groups)); kb=[]
+    for i in range(start,end):
+        rs=bycode[groups[i]]; r0=rs[0]
+        seq=r0.get('source_sequence_no')
+        pdpt=str(r0.get('pdp_title') or groups[i]).strip()
+        prefix=(f'PdP {seq} • ' if seq not in (None,'') else '')
+        kb.append([{'text':('▶️ '+prefix+pdpt)[:60],'callback_data':f'sm2542_pdp_{i}'}])
+    nav=[]
+    if start: nav.append({'text':'⬅️ Sebelum','callback_data':f'sm2542_pp_{unit_idx}_{page-1}'})
+    if end<len(groups): nav.append({'text':'Seterusnya ➡️','callback_data':f'sm2542_pp_{unit_idx}_{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Unit','callback_data':'sm2542_up_0'}])
+    return send(cid,f"📘 <b>{html.escape((f'{code} • ' if code else '')+title)}</b>\n\nPilih <b>PdP</b>. Setiap PdP dipaparkan sekali walaupun mempunyai beberapa SK/SP.",kb)
+
+
+def _sm2542_commit(cid,pdp_idx):
+    ss=state.setdefault(cid,{})
+    codes=ss.get('_sm2542_pdp_codes') or []
+    if pdp_idx<0 or pdp_idx>=len(codes):
+        return _sm2542_unit_menu(cid)
+    code=codes[pdp_idx]; rows=(ss.get('_sm2542_pdp_bycode') or {}).get(code) or []
+    if not rows: return _sm2542_unit_menu(cid)
+    r0=rows[0]; mapped=[]; seen=set()
+    for r in rows:
+        sk=str(r.get('sk_code') or '').strip(); sp=str(r.get('sp_code') or '').strip()
+        key=(sk,sp)
+        if sp and key not in seen:
+            seen.add(key); mapped.append({'sk_code':sk,'sk_text':'','sp_code':sp,'sp_text':''})
+    if not mapped:
+        return send(cid,'🚧 <b>SK/SP yang disahkan untuk PdP ini belum lengkap.</b>',
+                    [[{'text':'⬅️ Pilih PdP Lain','callback_data':f"sm2542_unit_{ss.get('_sm2542_unit_index',0)}"}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    unit_code,unit_title=ss.get('_sm2542_unit') or ('','')
+    def _uniq_join(field):
+        vals=[]
+        for rr in rows:
+            v=str(rr.get(field) or '').strip()
+            if v and v not in vals: vals.append(v)
+        return '; '.join(vals)
+    ss.update({
+        'task':'quick_material','quick_material_flow':True,'assessment_mode':'formative',
+        'topic':unit_title,'subtopic':str(r0.get('pdp_title') or '').strip(),
+        'pdp_title':str(r0.get('pdp_title') or '').strip(),
+        'pdp_sequence_code':code,'source_sequence_no':r0.get('source_sequence_no'),
+        'rpt_theme':str(r0.get('theme') or ''),'rpt_unit_title':unit_title,
+        'rpt_topic':str(r0.get('pdp_title') or ''),'skill_metadata':_uniq_join('skill_metadata'),
+        'textbook_ref':_uniq_join('textbook_ref'),'activitybook_ref':_uniq_join('activitybook_ref')
+    })
+    _commit_multi_sp(ss,mapped)
+    # Explicit aliases for downstream material engines: preserve every SP in a grouped PdP.
+    ss['selected_sp_codes']=list(ss.get('grouped_sp_codes') or [])
+    fn=globals().get('_lesson_to_class_v2439') or globals().get('_pdp_pick_class_v2393')
+    if callable(fn): return fn(cid)
+    return _temporary_auto_pack_v2386(cid)
+
+
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds.startswith('sub_') and ds[4:] in ('Sains','Matematik') and _is_quick_pdp_v2428(ss):
+        subject=ds[4:]
+        ss['task']='quick_material'; ss['quick_material_flow']=True; ss['subject']=subject; ss['assessment_mode']='formative'
+        for k in ('topic','subtopic','selected_sk','selected_sp','quick_content_v2391','_sm2542_rows','_sm2542_units','_sm2542_pdp_codes','_sm2542_pdp_bycode'):
+            ss.pop(k,None)
+        return _sm2542_unit_menu(cid,0)
+    if ds.startswith('sm2542_up_'):
+        try: p=int(ds.rsplit('_',1)[1])
+        except Exception: p=0
+        return _sm2542_unit_menu(cid,p)
+    if ds.startswith('sm2542_unit_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _sm2542_pdp_menu(cid,i,0)
+    if ds.startswith('sm2542_pp_'):
+        try:
+            _,_,ui,pg=ds.split('_'); return _sm2542_pdp_menu(cid,int(ui),int(pg))
+        except Exception: return _sm2542_unit_menu(cid,0)
+    if ds.startswith('sm2542_pdp_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _sm2542_commit(cid,i)
+    return _callback_before_v2542(cid,d)
+
+APP_VERSION='v25.43-SCIENCE-MATH-MATERIAL-QA'
+# ===== END v25.42 =====
+
+# ===== v25.44 SCIENCE + MATHEMATICS SKILL-SPECIFIC RPH LOCK =====
+# RPH activities must follow the actual subject skill/action in the selected SP.
+_specific_activity_variant_bank_v2544_base = _specific_activity_variant_bank
+
+def _specific_activity_variant_bank(subject, topic, focus, sp_code, sp_text, materials, variation_seed='', year_label=''):
+    subj=str(subject or '').strip(); txt=f'{topic} {focus} {sp_text}'.lower()
+    mats=[x.strip() for x in str(materials or '').split(',') if x.strip()]
+    def m(i, fallback): return mats[i] if i < len(mats) else fallback
+    a,b,c,d=m(0,'bahan sebenar'),m(1,'kad tugasan'),m(2,'alat/visual'),m(3,'jadual rekod')
+    if subj=='Sains':
+        if any(w in txt for w in ('mengelas','mengklasifikasi','mengumpulkan mengikut','mengasingkan')):
+            return [(f'5 minit\n1. Guru mempamerkan beberapa sampel/gambar berkaitan {focus}.\n2. Murid mencadangkan satu cara mengumpulkan sampel berdasarkan ciri yang boleh diperhatikan.\n3. Guru mengaitkan cadangan murid dengan kemahiran mengelas dalam SP {sp_code}.',
+                     f'Aktiviti 1 – Kenal Ciri (15 minit)\nMurid memerhati {a} dan merekod sekurang-kurangnya tiga ciri yang relevan pada {d}.\n\nAktiviti 2 – Bina Kumpulan (15 minit)\nPasangan mengelaskan sampel kepada kumpulan berdasarkan satu ciri yang jelas. Setiap kumpulan mesti mempunyai kriteria pengelasan yang dinyatakan.\n\nAktiviti 3 – Uji Pengelasan (15 minit)\nGuru memberi satu sampel baharu. Murid menentukan kumpulannya dan mempertahankan keputusan menggunakan ciri yang diperhatikan. Jika sesuai, murid membina cara pengelasan kedua.\n\nAktiviti 4 – PBD Individu (10 minit)\nMurid mengelaskan set baharu dan menulis kriteria pengelasan; guru menilai ketepatan kumpulan dan alasan.')]
+        if any(w in txt for w in ('mengukur','ukuran','menggunakan nombor','bacaan','suhu','panjang','jisim','isipadu','isi padu')):
+            return [(f'5 minit\n1. Guru menunjukkan {a} dan meminta murid menganggar satu kuantiti yang berkaitan dengan {focus}.\n2. Murid menyatakan alat/unit yang patut digunakan.\n3. Guru menekankan bacaan skala dan unit yang betul.',
+                     f'Aktiviti 1 – Anggar dan Pilih Alat (10 minit)\nMurid membuat anggaran awal dan memilih alat yang sesuai daripada {materials}.\n\nAktiviti 2 – Ukur Secara Sistematik (20 minit)\nPasangan mengambil sekurang-kurangnya tiga bacaan, merekod nombor bersama unit pada {d} dan mengulang satu bacaan untuk semakan.\n\nAktiviti 3 – Banding dan Tafsir (15 minit)\nMurid membandingkan bacaan, mengenal pasti nilai tertinggi/terendah atau perubahan dan menerangkan pola berdasarkan data sebenar.\n\nAktiviti 4 – PBD Individu (10 minit)\nMurid membaca satu skala/rekod baharu dan membuat satu kesimpulan berdasarkan nombor dan unit yang betul.')]
+        if any(w in txt for w in ('inferens','membuat inferens','sebab','menerangkan pemerhatian')):
+            return [(f'5 minit\n1. Guru menunjukkan satu pemerhatian berkaitan {focus} tanpa menerangkan puncanya.\n2. Murid membezakan “apa yang dilihat” dengan “mengapa perkara itu berlaku”.\n3. Guru memperkenalkan inferens sebagai penerangan munasabah berdasarkan bukti.',
+                     f'Aktiviti 1 – Pemerhatian Dahulu (12 minit)\nMurid meneliti {a} dan menulis fakta yang benar-benar boleh diperhatikan tanpa memasukkan sebab.\n\nAktiviti 2 – Bina Inferens (18 minit)\nBerdasarkan setiap pemerhatian, pasangan mencadangkan inferens dan menyatakan bukti yang menyokongnya.\n\nAktiviti 3 – Bukti Baharu (15 minit)\nGuru memberi maklumat/dapatan tambahan. Murid menilai sama ada inferens asal perlu dikekalkan atau diubah dan menerangkan sebab.\n\nAktiviti 4 – PBD Individu (10 minit)\nMurid menulis satu pemerhatian, satu inferens dan bukti yang menghubungkan kedua-duanya.')]
+        if any(w in txt for w in ('meramal','ramalan','meramalkan')):
+            return [(f'5 minit\n1. Guru memaparkan pola/dapatan awal berkaitan {focus}.\n2. Murid meramal apa yang mungkin berlaku seterusnya dan menyatakan bukti yang digunakan.\n3. Guru membezakan ramalan berasaskan bukti daripada tekaan.',
+                     f'Aktiviti 1 – Kenal Pola (15 minit)\nMurid meneliti siri pemerhatian/data menggunakan {a} dan menandakan pola yang dapat dikenal pasti.\n\nAktiviti 2 – Buat Ramalan (15 minit)\nPasangan menulis ramalan bagi keadaan seterusnya serta alasan berdasarkan pola/bukti.\n\nAktiviti 3 – Uji Ramalan (15 minit)\nJika sesuai dan selamat, murid menjalankan pemerhatian/ujian ringkas atau menerima data seterusnya untuk membandingkan ramalan dengan keputusan.\n\nAktiviti 4 – Baiki Ramalan (10 minit)\nMurid menerangkan sama ada ramalan disokong dan bagaimana bukti baharu mengubah ramalan mereka.')]
+        if any(w in txt for w in ('mengeksperimen','eksperimen','penyiasatan','menyiasat','uji kaji')):
+            return [(f'5 minit\n1. Guru mengemukakan persoalan penyiasatan berkaitan {focus}.\n2. Murid mengenal pasti perkara yang hendak diubah, diperhatikan/diukur dan dikekalkan pada tahap yang sesuai.\n3. Murid membuat jangkaan berasaskan pengetahuan sedia ada.',
+                     f'Aktiviti 1 – Rancang Penyiasatan (12 minit)\nKumpulan menyusun langkah kerja, bahan {materials} dan cara merekod keputusan. Guru menyemak aspek keselamatan sebelum aktiviti bermula.\n\nAktiviti 2 – Jalankan dan Rekod (20 minit)\nMurid menjalankan penyiasatan secara sistematik, membuat pemerhatian/ukuran dan merekod semua dapatan pada {d}.\n\nAktiviti 3 – Analisis Bukti (15 minit)\nKumpulan membandingkan keputusan, mengenal pola/perbezaan dan membina kesimpulan yang menjawab persoalan penyiasatan.\n\nAktiviti 4 – Nilai Penyiasatan (8 minit)\nMurid menyatakan sama ada jangkaan disokong serta satu cara meningkatkan ketepatan/kebolehpercayaan penyiasatan.')]
+        if any(w in txt for w in ('berkomunikasi','melaporkan','merekod','melakar','melabel','membentangkan')):
+            return [(f'5 minit\n1. Guru menunjukkan dua cara merekod maklumat tentang {focus}.\n2. Murid menentukan cara yang lebih jelas dan memberi sebab.\n3. Guru mengaitkan ciri rekod saintifik yang tepat dengan SP {sp_code}.',
+                     f'Aktiviti 1 – Kumpul Maklumat (15 minit)\nMurid membuat pemerhatian menggunakan {a} dan memilih maklumat yang relevan sahaja.\n\nAktiviti 2 – Tukar Kepada Representasi (15 minit)\nMurid menyusun dapatan dalam jadual, lakaran berlabel, carta atau bentuk komunikasi yang dikehendaki SP.\n\nAktiviti 3 – Komunikasi Saintifik (15 minit)\nPasangan bertukar hasil; penerima perlu dapat menerangkan semula dapatan hanya berdasarkan rekod tersebut. Murid membaiki label/tajuk/unit yang tidak jelas.\n\nAktiviti 4 – PBD Individu (10 minit)\nMurid menghasilkan satu rekod/komunikasi ringkas yang lengkap, tepat dan berkaitan dengan bukti.')]
+        # Default Science is observation-specific rather than generic cross-subject activity.
+        return [(f'5 minit\n1. Guru menunjukkan {a} berkaitan terus dengan {focus}.\n2. Murid menyatakan pemerhatian menggunakan deria yang sesuai dan selamat.\n3. Guru memastikan murid membezakan pemerhatian daripada tekaan.',
+                 f'Aktiviti 1 – Perhati Secara Sistematik (15 minit)\nMurid meneliti {a} dan merekod sekurang-kurangnya tiga ciri/perubahan yang benar-benar diperhatikan pada {d}.\n\nAktiviti 2 – Banding Bukti (15 minit)\nPasangan membandingkan dua sampel/keadaan berkaitan {focus} dan merekod persamaan serta perbezaan.\n\nAktiviti 3 – Bina Penjelasan (15 minit)\nMurid menggunakan pemerhatian untuk menjawab tugasan SP {sp_code}; setiap jawapan perlu merujuk bukti daripada aktiviti.\n\nAktiviti 4 – PBD Individu (10 minit)\nMurid menerima contoh baharu dan merekod pemerhatian serta satu kesimpulan yang disokong bukti.')]
+    if subj=='Matematik':
+        if any(w in txt for w in ('penyelesaian masalah','menyelesaikan masalah','situasi harian')):
+            return [(f'5 minit\n1. Guru memaparkan masalah ringkas berkaitan {focus}.\n2. Murid menyatakan apa yang diketahui dan apa yang perlu dicari.\n3. Murid menganggar jawapan sebelum memilih strategi.',
+                     f'Aktiviti 1 – Fahami Masalah (12 minit)\nMurid menanda maklumat penting, mengenal kehendak soalan dan melakar/modelkan situasi menggunakan {a}.\n\nAktiviti 2 – Pilih dan Laksana Strategi (18 minit)\nPasangan memilih operasi/representasi yang sesuai, menunjukkan jalan kerja lengkap dan menulis unit/ayat jawapan jika perlu.\n\nAktiviti 3 – Semak Kewajaran (15 minit)\nMurid menyemak jawapan menggunakan anggaran, operasi songsangan atau strategi kedua; pasangan menerangkan jika terdapat perbezaan.\n\nAktiviti 4 – Masalah Baharu Individu (10 minit)\nMurid menyelesaikan satu masalah konteks baharu dan menulis sebab strategi yang dipilih.')]
+        if any(w in txt for w in ('menganggar','anggaran')):
+            return [(f'5 minit\n1. Guru menunjukkan kuantiti/situasi berkaitan {focus} tanpa membenarkan pengiraan tepat.\n2. Murid memberi anggaran dan menerangkan rujukan yang digunakan.\n3. Guru menekankan maksud anggaran munasabah.',
+                     f'Aktiviti 1 – Bina Rujukan (15 minit)\nMurid menggunakan {a} untuk membina nilai rujukan yang mudah dibandingkan.\n\nAktiviti 2 – Anggar Sebelum Kira/Ukur (15 minit)\nPasangan menganggar beberapa nilai dan merekod sebab anggaran pada {d}.\n\nAktiviti 3 – Banding Dengan Nilai Sebenar (15 minit)\nMurid mendapatkan nilai sebenar, mengira/memerhati beza dan membincangkan anggaran yang lebih munasabah.\n\nAktiviti 4 – PBD Individu (10 minit)\nMurid memberi anggaran bagi situasi baharu serta justifikasi ringkas.')]
+        if any(w in txt for w in ('membundar','bundarkan','pembundaran')):
+            return [(f'5 minit\n1. Guru meletakkan satu nombor pada garis nombor menggunakan {a}.\n2. Murid menentukan dua gandaan terdekat dan meneka yang lebih hampir.\n3. Guru menghubungkan jarak dengan peraturan pembundaran.',
+                     f'Aktiviti 1 – Kedudukan Pada Garis Nombor (15 minit)\nMurid meletakkan nombor pada {a}, menanda dua nilai sasaran terdekat dan menentukan jarak.\n\nAktiviti 2 – Bundar dan Buktikan (15 minit)\nPasangan membundarkan kad nombor dan mesti membuktikan sekurang-kurangnya dua jawapan menggunakan garis nombor/nilai tempat.\n\nAktiviti 3 – Detektif Kesilapan (15 minit)\nMurid membetulkan contoh pembundaran yang salah dan menerangkan digit penentu.\n\nAktiviti 4 – PBD Individu (10 minit)\nLima nombor dibundarkan mengikut nilai tempat yang ditetapkan, termasuk satu item penerangan.')]
+    return _specific_activity_variant_bank_v2544_base(subject, topic, focus, sp_code, sp_text, materials, variation_seed, year_label)
+
+APP_VERSION=str(globals().get('APP_VERSION',''))+'+v25.44-SCI-MATH-RPH-SKILL-SPECIFIC'
+# ===== END v25.44 =====
