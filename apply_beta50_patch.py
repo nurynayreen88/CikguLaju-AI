@@ -326,3 +326,53 @@ APP_VERSION=str(globals().get("APP_VERSION",""))+"+MATH-V2599"
 '''
     P.write_text(_txt,encoding="utf-8")
     print("MATH v25_99 canonical runtime installed",flush=True)
+
+
+# MATH_V2599_FORCE_ROUTE
+# Final callback guard: all primary Mathematics subject selections must use the
+# canonical v25_99 PdP runtime, regardless of legacy quick-flow state flags.
+_txt=P.read_text(encoding="utf-8")
+if "# MATH_V2599_FORCE_ROUTE" not in _txt:
+    _txt += r'''
+
+# MATH_V2599_FORCE_ROUTE
+_callback_before_math_v2599_force = callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds=='sub_Matematik':
+        yr=str(ss.get('year') or '').strip()
+        if yr in ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6'):
+            ss['task']='quick_material'
+            ss['quick_material_flow']=True
+            ss['subject']='Matematik'
+            ss['assessment_mode']='formative'
+            for k in ('topic','subtopic','selected_sk','selected_sp','quick_content_v2391',
+                      '_sm2542_rows','_sm2542_units','_sm2542_pdp_codes','_sm2542_pdp_bycode'):
+                ss.pop(k,None)
+            return _sm2542_unit_menu(cid,0)
+    if ds.startswith('sm2542_up_'):
+        try: p=int(ds.rsplit('_',1)[1])
+        except Exception: p=0
+        return _sm2542_unit_menu(cid,p)
+    if ds.startswith('sm2542_unit_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _sm2542_pdp_menu(cid,i,0)
+    if ds.startswith('sm2542_pp_'):
+        try:
+            _,_,ui,pg=ds.split('_')
+            return _sm2542_pdp_menu(cid,int(ui),int(pg))
+        except Exception:
+            return _sm2542_unit_menu(cid,0)
+    if ds.startswith('sm2542_pdp_'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _sm2542_commit(cid,i)
+    return _callback_before_math_v2599_force(cid,d)
+
+APP_VERSION=str(globals().get("APP_VERSION",""))+"+MATH-V2599-FORCE-ROUTE"
+# END MATH_V2599_FORCE_ROUTE
+'''
+    P.write_text(_txt,encoding="utf-8")
+    print("MATH v25_99 force route installed",flush=True)
