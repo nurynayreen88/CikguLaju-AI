@@ -1,0 +1,21 @@
+{
+  "source_name": "CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL.db",
+  "source_size": 28024832,
+  "source_sha256": "74f1e139ae6e7f64379ee3fb103334f450c683152186b03368bb02dfe3b8c821",
+  "chunk_size": 12582912,
+  "parts": [
+    {
+      "file": "CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL.part00",
+      "size": 12582912
+    },
+    {
+      "file": "CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL.part01",
+      "size": 12582912
+    },
+    {
+      "file": "CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL.part02",
+      "size": 2859008
+    }
+  ],
+  "reassemble_linux_mac": "cat CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL.part* > CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL.db"
+}
