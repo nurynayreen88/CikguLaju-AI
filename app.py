@@ -27139,7 +27139,10 @@ def _sm2542_rows(year_label, subject):
         return []
     con=_db()
     try:
-        rs=con.execute("""SELECT * FROM verified_pdp_sequence
+        # v25.99: Matematik uses the new canonical sequence exclusively.
+        # Sains remains on the existing verified_pdp_sequence table.
+        table = 'verified_pdp_sequence_v2' if subject == 'Matematik' else 'verified_pdp_sequence'
+        rs=con.execute(f"""SELECT * FROM {table}
             WHERE year_label=? AND subject=?
               AND COALESCE(pdp_sequence_code,'')<>''
               AND COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')
