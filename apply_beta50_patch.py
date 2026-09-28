@@ -318,6 +318,9 @@ def _sm2542_rows(year_label, subject):
     finally:
         con.close()
 
+# Build and verify once during process startup, not on the user's first click.
+_MATH_V2599_RUNTIME_DB=_math_v2599_db_path()
+
 APP_VERSION=str(globals().get("APP_VERSION",""))+"+MATH-V2599"
 # END MATH_V2599_CANONICAL_RUNTIME
 '''
