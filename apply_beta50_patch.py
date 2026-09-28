@@ -252,3 +252,74 @@ def _main_pdp_entry_v2502(cid):\n    ss=state.setdefault(cid,{})\n    ss["task"]
 '''
     P.write_text(_txt,encoding="utf-8")
     print("MAIN PDP entry v2501 installed",flush=True)
+
+
+# MATH_V2599_CANONICAL_RUNTIME
+# Non-destructive: reconstruct the dedicated Math DB from Git-safe parts and
+# override only the Sains/Matematik sequence reader. Sains continues to use _db().
+_txt=P.read_text(encoding="utf-8")
+if "# MATH_V2599_CANONICAL_RUNTIME" not in _txt:
+    _txt += r'''
+
+# MATH_V2599_CANONICAL_RUNTIME
+def _math_v2599_db_path():
+    import os as _os, hashlib as _hashlib, sqlite3 as _sqlite3
+    _base=_os.path.dirname(__file__)
+    _stem="CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL"
+    _parts=[_os.path.join(_base,_stem+f".part{i:02d}") for i in range(3)]
+    if not all(_os.path.isfile(p) for p in _parts):
+        raise RuntimeError("Math v25_99 incomplete: part00-part02 required")
+    _target=_os.path.join("/tmp",_stem+".db")
+    _expected="74f1e139ae6e7f64379ee3fb103334f450c683152186b03368bb02dfe3b8c821"
+    def _sha(path):
+        h=_hashlib.sha256()
+        with open(path,"rb") as fh:
+            for chunk in iter(lambda:fh.read(1024*1024),b""): h.update(chunk)
+        return h.hexdigest()
+    if not _os.path.isfile(_target) or _sha(_target)!=_expected:
+        _tmp=_target+".tmp"
+        with open(_tmp,"wb") as out:
+            for p in _parts:
+                with open(p,"rb") as src:
+                    for chunk in iter(lambda:src.read(1024*1024),b""): out.write(chunk)
+        if _sha(_tmp)!=_expected:
+            try: _os.remove(_tmp)
+            except OSError: pass
+            raise RuntimeError("Math v25_99 SHA256 verification failed")
+        con=_sqlite3.connect(_tmp)
+        try:
+            ok=con.execute("PRAGMA integrity_check").fetchone()[0]
+            if ok!="ok": raise RuntimeError("Math v25_99 integrity_check failed: "+str(ok))
+            if not con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='verified_pdp_sequence_v2'").fetchone():
+                raise RuntimeError("Math v25_99 verified_pdp_sequence_v2 missing")
+        finally: con.close()
+        _os.replace(_tmp,_target)
+    return _target
+
+def _sm2542_rows(year_label, subject):
+    if subject not in ('Sains','Matematik'):
+        return []
+    if subject=='Matematik':
+        import sqlite3 as _sqlite3
+        con=_sqlite3.connect(_math_v2599_db_path())
+        con.row_factory=_sqlite3.Row
+        table='verified_pdp_sequence_v2'
+    else:
+        con=_db()
+        table='verified_pdp_sequence'
+    try:
+        rs=con.execute(f"""SELECT * FROM {table}
+            WHERE year_label=? AND subject=?
+              AND COALESCE(pdp_sequence_code,'')<>''
+              AND COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')
+            ORDER BY COALESCE(source_sequence_no,9999), id""",
+            (str(year_label or '').strip(),subject)).fetchall()
+        return [dict(r) for r in rs]
+    finally:
+        con.close()
+
+APP_VERSION=str(globals().get("APP_VERSION",""))+"+MATH-V2599"
+# END MATH_V2599_CANONICAL_RUNTIME
+'''
+    P.write_text(_txt,encoding="utf-8")
+    print("MATH v25_99 canonical runtime installed",flush=True)
