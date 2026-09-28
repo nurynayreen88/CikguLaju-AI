@@ -301,7 +301,7 @@ def _sm2542_rows(year_label, subject):
         return []
     if subject=='Matematik':
         import sqlite3 as _sqlite3
-        con=_sqlite3.connect(_math_v2599_db_path())
+        con=_sqlite3.connect(globals().get('_MATH_V2599_RUNTIME_DB') or _math_v2599_db_path())
         con.row_factory=_sqlite3.Row
         table='verified_pdp_sequence_v2'
     else:
