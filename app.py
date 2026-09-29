@@ -27852,3 +27852,57 @@ try:
 except NameError:
     pass
 # ===== END v25.109 RPH FLOW QA =====
+
+
+# ===== v25.110 RPH DURATION AND VARIATION QA =====
+# Keep generated RPH activities practical for the selected duration and vary generic fallback wording.
+def _rph_duration_minutes_v25110(state):
+    for k in ('duration_minutes','duration','lesson_duration','minutes'):
+        v=str(state.get(k) or '')
+        m=re.search(r'\\d+',v)
+        if m:
+            n=int(m.group())
+            if 20 <= n <= 180: return n
+    return 60
+
+def _rph_variation_seed_v25110(state):
+    raw='|'.join(str(state.get(k) or '') for k in ('subject','grade','year','form','topic','subtopic','lesson_no','pdp_no','sp_code'))
+    return sum(ord(c) for c in raw)%3
+
+def _rph_duration_variation_v25110(state,rows):
+    r=dict(rows or {})
+    dur=_rph_duration_minutes_v25110(state)
+    sub=str(state.get('subject') or '').lower()
+    topic=str(state.get('topic') or state.get('lesson_title') or state.get('subtopic') or 'fokus PdP')
+    seed=_rph_variation_seed_v25110(state)
+    # Only replace a clearly generic fallback activity; preserve specific curriculum-driven activities.
+    act=' '.join(str(r.get('AKTIVITI UTAMA') or '').lower().split())
+    generic=any(x in act for x in ('penerokaan konsep','latihan berpandu','semakan individu')) and len(act)<1200
+    if generic and ('matematik' in sub or 'sains' in sub or 'science' in sub):
+        main=max(15,dur-10)
+        a=max(5,round(main*.22)); b=max(5,round(main*.28)); c=max(5,round(main*.34)); d=max(5,main-a-b-c)
+        if 'matematik' in sub:
+            variants=[
+                ('Bina Konsep','Strategi Berpandu','Aplikasi Kontekstual','Semakan Kendiri'),
+                ('Teroka Contoh','Bimbing dan Cuba','Cabaran Aplikasi','Exit Check'),
+                ('Kenal Pasti Strategi','Latihan Berpasangan','Penyelesaian Masalah','Semakan Individu')
+            ]
+            n=variants[seed]
+            r['AKTIVITI UTAMA']=f"Aktiviti 1 – {n[0]} ({a} minit)\nMurid meneroka {topic} melalui contoh atau representasi yang sesuai dan menerangkan pola/konsep yang diperhatikan.\n\nAktiviti 2 – {n[1]} ({b} minit)\nGuru membimbing strategi yang tepat; murid mencuba beberapa item dan membandingkan langkah dengan rakan.\n\nAktiviti 3 – {n[2]} ({c} minit)\nMurid menggunakan kemahiran sasaran untuk menyelesaikan tugasan atau masalah yang sesuai dengan tahap.\n\nAktiviti 4 – {n[3]} ({d} minit)\nMurid melengkapkan semakan ringkas secara individu dan guru mengenal pasti keperluan susulan."
+        else:
+            variants=[
+                ('Pemerhatian Fokus','Penyiasatan Berpandu','Analisis Bukti','Semakan Kefahaman'),
+                ('Teroka Fenomena','Kumpul Bukti','Bincang Dapatan','Exit Check'),
+                ('Pemerhatian Awal','Aktiviti Siasatan','Komunikasi Dapatan','Semakan Individu')
+            ]
+            n=variants[seed]
+            r['AKTIVITI UTAMA']=f"Aktiviti 1 – {n[0]} ({a} minit)\nMurid meneroka {topic}, membuat pemerhatian dan merekod maklumat yang relevan.\n\nAktiviti 2 – {n[1]} ({b} minit)\nMurid menjalankan tugasan/penyiasatan dengan prosedur yang jelas serta menggunakan kemahiran proses sains yang relevan.\n\nAktiviti 3 – {n[2]} ({c} minit)\nMurid membandingkan bukti, menerangkan dapatan dan membuat inferens atau kesimpulan yang disokong pemerhatian.\n\nAktiviti 4 – {n[3]} ({d} minit)\nMurid memberi respons individu berdasarkan dapatan dan guru menyemak penguasaan sebelum penutup."
+    return r
+
+try:
+    _rph_rows_before_v25110=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_duration_variation_v25110(s,_rph_rows_before_v25110(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.110 RPH DURATION AND VARIATION QA =====
