@@ -28322,3 +28322,54 @@ try:
 except NameError:
     pass
 # ===== END v25.120 MATHEMATICS TOPIC-SPECIFIC ACTIVITY PRIORITY =====
+
+# ===== v25.121 MATH + SCIENCE CONTEXT QA =====
+# Conservative late QA layer. It does not alter curriculum mappings or strong activities.
+# It only grounds generic induction/BBM wording in the already-selected Math/Science topic.
+def _rph_context_qa_v25121(state, rows):
+    r=dict(rows or {})
+    sub=str(state.get('subject') or '').lower()
+    hay=' '.join(str(state.get(k) or '') for k in ('topic','subtopic','focus','lesson_title','sp_text')).lower()
+    induction=str(r.get('SET INDUKSI') or '')
+    bbm=str(r.get('BAHAN BANTU MENGAJAR') or '')
+
+    if 'matematik' in sub:
+        # v25.120 already owns Wang. These guards only replace clearly generic induction wording.
+        generic_ind=any(x in induction.lower() for x in ('situasi harian', 'bahan konkrit', 'contoh berkaitan', 'berkaitan '+str(state.get('topic') or '').lower()))
+        if generic_ind:
+            if 'masa' in hay or 'waktu' in hay:
+                r['SET INDUKSI']='5 minit\nGuru memaparkan jam analog/digital atau jadual masa ringkas. Murid membaca masa atau mengenal hubungan unit masa mengikut fokus PdP sebelum strategi formal dibincangkan.'
+            elif 'pecahan' in hay:
+                r['SET INDUKSI']='5 minit\nGuru memaparkan satu model yang dibahagi kepada bahagian sama besar. Murid menyatakan bahagian yang ditunjukkan dan menerangkan pemerhatian menggunakan bahasa pecahan yang sesuai.'
+            elif 'perpuluhan' in hay:
+                r['SET INDUKSI']='5 minit\nGuru memaparkan grid/nilai tempat atau situasi ukuran yang melibatkan perpuluhan. Murid membaca nilai dan mengenal kedudukan digit sebelum aktiviti utama.'
+            elif any(x in hay for x in ('panjang','jisim','isipadu','isi padu','ukuran')):
+                r['SET INDUKSI']='5 minit\nGuru menunjukkan objek dan alat ukuran yang berkaitan. Murid membuat anggaran awal serta memilih unit/alatan yang sesuai sebelum ukuran sebenar dibuat.'
+            elif any(x in hay for x in ('bentuk','ruang','sudut')):
+                r['SET INDUKSI']='5 minit\nGuru memaparkan objek atau bentuk daripada persekitaran. Murid mengenal satu ciri geometri yang dapat diperhatikan dan membandingkannya dengan contoh lain.'
+            elif any(x in hay for x in ('data','graf','carta','piktograf')):
+                r['SET INDUKSI']='5 minit\nGuru memaparkan jadual/carta/graf ringkas. Murid menyatakan satu maklumat yang dapat dibaca terus dan satu perbandingan awal daripada data.'
+
+    if 'sains' in sub or 'science' in sub:
+        generic_ind=any(x in induction.lower() for x in ('berkaitan topik', 'berkaitan '+str(state.get('topic') or '').lower(), 'pemerhatian/ramalan awal'))
+        if generic_ind:
+            if any(x in hay for x in ('tumbuhan','pokok','daun','akar','bunga','biji benih','haiwan','habitat')):
+                r['SET INDUKSI']='5 minit\nGuru memaparkan spesimen/gambar yang berkaitan. Murid menyatakan satu pemerhatian yang boleh dilihat dan satu soalan tentang ciri atau hubungan yang akan diteroka.'
+            elif any(x in hay for x in ('bahan','sifat bahan','serap','kalis','jirim','campuran','asid','alkali','pengaratan')):
+                r['SET INDUKSI']='5 minit\nGuru menunjukkan dua sampel/keadaan bahan. Murid membandingkan sifat yang boleh diperhatikan dan membuat ramalan yang boleh diuji dalam aktiviti seterusnya.'
+            elif any(x in hay for x in ('magnet','elektrik','litar','cahaya','bayang','haba','suhu','daya','gerakan','kelajuan')):
+                r['SET INDUKSI']='5 minit\nGuru menjalankan demonstrasi ringkas yang selamat berkaitan fokus PdP. Murid merekod satu pemerhatian dan membuat ramalan sebelum penyiasatan/perbandingan dijalankan.'
+            elif any(x in hay for x in ('bumi','planet','sistem suria','bulan','buruj','gerhana','galaksi')):
+                r['SET INDUKSI']='5 minit\nGuru memaparkan model/rajah atau siri imej berkaitan Bumi dan angkasa. Murid mengenal satu pola, kedudukan atau ciri yang akan diterangkan menggunakan bukti.'
+        # Never overwrite a useful BBM list; only replace a very generic placeholder.
+        if bbm.strip().lower() in ('bahan yang sesuai.', 'bahan yang sesuai', 'bahan bantu mengajar yang sesuai.', 'bahan bantu mengajar yang sesuai'):
+            r['BAHAN BANTU MENGAJAR']='Buku teks/rajah yang berkaitan, bahan pemerhatian atau model yang selamat, lembaran/jadual rekod dan alat tulis.'
+    return r
+
+try:
+    _rph_rows_before_v25121=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_context_qa_v25121(s,_rph_rows_before_v25121(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.121 MATH + SCIENCE CONTEXT QA =====
