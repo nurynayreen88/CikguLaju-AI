@@ -27818,3 +27818,37 @@ try:
 except NameError:
     pass
 # ===== END v25.108 RPH ALIGNMENT GUARD =====
+
+
+# ===== v25.109 RPH FLOW QA =====
+def _rph_flow_qa_v25109(state, rows):
+    r=dict(rows or {})
+    sub=str(state.get('subject') or '').lower()
+    topic=str(state.get('topic') or state.get('lesson_title') or state.get('subtopic') or '').strip()
+    def weak(value):
+        x=' '.join(str(value or '').split()).lower()
+        return (not x) or len(x)<35
+    if weak(r.get('SET INDUKSI')):
+        if 'english' in sub or 'bahasa inggeris' in sub:
+            r['SET INDUKSI']="5 minutes\nTeacher activates pupils' prior knowledge about "+(topic or "the lesson context")+" using a short visual, question or language prompt. Pupils respond briefly and identify the lesson focus."
+        else:
+            r['SET INDUKSI']="5 minit\nGuru mengaktifkan pengetahuan sedia ada murid tentang "+(topic or "fokus PdP")+" melalui bahan rangsangan atau soalan ringkas. Murid memberi respons dan menghubungkannya dengan fokus pembelajaran."
+    if weak(r.get('PENUTUP')):
+        if 'english' in sub or 'bahasa inggeris' in sub:
+            r['PENUTUP']="5 minutes\nPupils state or demonstrate the key learning. Teacher checks one final response, gives concise feedback and reinforces the target skill."
+        else:
+            r['PENUTUP']="5 minit\nMurid menyatakan semula pembelajaran utama atau menunjukkan satu contoh penguasaan. Guru membuat semakan akhir, memberi maklum balas ringkas dan menegaskan kemahiran utama PdP."
+    if weak(r.get('PEMULIHAN / PENGAYAAN')):
+        if 'english' in sub or 'bahasa inggeris' in sub:
+            r['PEMULIHAN / PENGAYAAN']="Remedial: Provide guided prompts or models while retaining the same target skill.\nEnrichment: Extend the same skill through a less-supported or more challenging application task."
+        else:
+            r['PEMULIHAN / PENGAYAAN']="Pemulihan: Beri bimbingan, contoh atau tugasan lebih berstruktur tetapi kekalkan kemahiran sasaran yang sama.\nPengayaan: Lanjutkan kemahiran yang sama melalui aplikasi yang lebih mencabar dan kurang bimbingan."
+    return r
+
+try:
+    _rph_rows_before_v25109=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_flow_qa_v25109(s,_rph_rows_before_v25109(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.109 RPH FLOW QA =====
