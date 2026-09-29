@@ -27947,3 +27947,53 @@ try:
 except NameError:
     pass
 # ===== END v25.111 RPH STAGE APPROPRIATENESS QA =====
+
+
+# ===== v25.112 RPH TERMINOLOGY AND REPETITION QA =====
+# Polish subject terminology and reduce repetitive generic activity labels without changing curriculum facts.
+def _rph_term_repeat_qa_v25112(state,rows):
+    r=dict(rows or {})
+    sub=str(state.get('subject') or '').lower()
+    seed=_rph_variation_seed_v25110(state) if '_rph_variation_seed_v25110' in globals() else 0
+    act=str(r.get('AKTIVITI UTAMA') or '')
+
+    if 'sains' in sub or 'science' in sub:
+        replacements={
+            'buat tekaan':'membuat ramalan',
+            'tekaan berdasarkan':'ramalan berdasarkan',
+            'apa yang dilihat':'pemerhatian yang dibuat',
+            'hasil eksperimen':'dapatan penyiasatan'
+        }
+        for a,b in replacements.items(): act=re.sub(a,b,act,flags=re.I)
+        labels=[
+            ('Pemerhatian Fokus','Pemerhatian Berstruktur','Teroka dan Perhati'),
+            ('Penyiasatan Berpandu','Siasatan Berpandukan Prosedur','Kumpul Bukti'),
+            ('Analisis Bukti','Tafsir Dapatan','Bincang Bukti'),
+            ('Semakan Kefahaman','Komunikasi Sains','Semakan Individu')
+        ]
+        for opts in labels:
+            for old in opts:
+                if old in act:
+                    act=act.replace(old,opts[seed%len(opts)],1); break
+    elif 'matematik' in sub:
+        replacements={
+            'cara kira':'kaedah pengiraan',
+            'kira jawapan':'menentukan jawapan',
+            'betul atau salah jawapan':'menyemak ketepatan jawapan'
+        }
+        for a,b in replacements.items(): act=re.sub(a,b,act,flags=re.I)
+    elif 'bahasa melayu' in sub or sub.strip()=='bm':
+        # Keep PdP terminology in Malay and avoid generic "lesson".
+        for k,v in list(r.items()):
+            if isinstance(v,str):
+                r[k]=re.sub(r'\\blesson\\b','PdP',v,flags=re.I)
+    r['AKTIVITI UTAMA']=act
+    return r
+
+try:
+    _rph_rows_before_v25112=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_term_repeat_qa_v25112(s,_rph_rows_before_v25112(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.112 RPH TERMINOLOGY AND REPETITION QA =====
