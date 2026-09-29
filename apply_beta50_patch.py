@@ -255,14 +255,27 @@ def _main_pdp_entry_v2502(cid):\n    ss=state.setdefault(cid,{})\n    ss["task"]
 
 
 # MATH_V2599_CANONICAL_RUNTIME
-# Non-destructive: reconstruct the dedicated Math DB from Git-safe parts and
-# override only the Sains/Matematik sequence reader. Sains continues to use _db().
+# Patch the ORIGINAL v25.42 Math reader in app.py before import. No callback wrappers.
 _txt=P.read_text(encoding="utf-8")
-if "# MATH_V2599_CANONICAL_RUNTIME" not in _txt:
-    _txt += r'''
-
-# MATH_V2599_CANONICAL_RUNTIME
-def _math_v2599_db_path():
+_old=r'''def _sm2542_rows(year_label, subject):
+    if subject not in ('Sains','Matematik'):
+        return []
+    con=_db()
+    try:
+        # v25.99: Matematik uses the new canonical sequence exclusively.
+        # Sains remains on the existing verified_pdp_sequence table.
+        table = 'verified_pdp_sequence_v2' if subject == 'Matematik' else 'verified_pdp_sequence'
+        rs=con.execute(f"""SELECT * FROM {table}
+            WHERE year_label=? AND subject=?
+              AND COALESCE(pdp_sequence_code,'')<>''
+              AND COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')
+            ORDER BY COALESCE(source_sequence_no,9999), id""",
+            (str(year_label or '').strip(),subject)).fetchall()
+        return [dict(r) for r in rs]
+    finally:
+        con.close()
+'''
+_new=r'''def _math_v2599_db_path():
     import os as _os, hashlib as _hashlib, sqlite3 as _sqlite3
     _base=_os.path.dirname(__file__)
     _stem="CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL"
@@ -288,10 +301,8 @@ def _math_v2599_db_path():
             raise RuntimeError("Math v25_99 SHA256 verification failed")
         con=_sqlite3.connect(_tmp)
         try:
-            ok=con.execute("PRAGMA integrity_check").fetchone()[0]
-            if ok!="ok": raise RuntimeError("Math v25_99 integrity_check failed: "+str(ok))
-            if not con.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='verified_pdp_sequence_v2'").fetchone():
-                raise RuntimeError("Math v25_99 verified_pdp_sequence_v2 missing")
+            if con.execute("PRAGMA integrity_check").fetchone()[0]!="ok":
+                raise RuntimeError("Math v25_99 integrity_check failed")
         finally: con.close()
         _os.replace(_tmp,_target)
     return _target
@@ -301,7 +312,7 @@ def _sm2542_rows(year_label, subject):
         return []
     if subject=='Matematik':
         import sqlite3 as _sqlite3
-        con=_sqlite3.connect(globals().get('_MATH_V2599_RUNTIME_DB') or _math_v2599_db_path())
+        con=_sqlite3.connect(_math_v2599_db_path())
         con.row_factory=_sqlite3.Row
         table='verified_pdp_sequence_v2'
     else:
@@ -317,62 +328,9 @@ def _sm2542_rows(year_label, subject):
         return [dict(r) for r in rs]
     finally:
         con.close()
-
-# Build and verify once during process startup, not on the user's first click.
-_MATH_V2599_RUNTIME_DB=_math_v2599_db_path()
-
-APP_VERSION=str(globals().get("APP_VERSION",""))+"+MATH-V2599"
-# END MATH_V2599_CANONICAL_RUNTIME
 '''
-    P.write_text(_txt,encoding="utf-8")
-    print("MATH v25_99 canonical runtime installed",flush=True)
-
-
-# MATH_V2599_FORCE_ROUTE
-# Final callback guard: all primary Mathematics subject selections must use the
-# canonical v25_99 PdP runtime, regardless of legacy quick-flow state flags.
-_txt=P.read_text(encoding="utf-8")
-if "# MATH_V2599_FORCE_ROUTE" not in _txt:
-    _txt += r'''
-
-# MATH_V2599_FORCE_ROUTE
-_callback_before_math_v2599_force = callback
-def callback(cid,d):
-    ss=state.setdefault(cid,{})
-    ds=str(d or '')
-    if ds=='sub_Matematik':
-        yr=str(ss.get('year') or '').strip()
-        if yr in ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6'):
-            ss['task']='quick_material'
-            ss['quick_material_flow']=True
-            ss['subject']='Matematik'
-            ss['assessment_mode']='formative'
-            for k in ('topic','subtopic','selected_sk','selected_sp','quick_content_v2391',
-                      '_sm2542_rows','_sm2542_units','_sm2542_pdp_codes','_sm2542_pdp_bycode'):
-                ss.pop(k,None)
-            return _sm2542_unit_menu(cid,0)
-    if ds.startswith('sm2542_up_'):
-        try: p=int(ds.rsplit('_',1)[1])
-        except Exception: p=0
-        return _sm2542_unit_menu(cid,p)
-    if ds.startswith('sm2542_unit_'):
-        try: i=int(ds.rsplit('_',1)[1])
-        except Exception: i=-1
-        return _sm2542_pdp_menu(cid,i,0)
-    if ds.startswith('sm2542_pp_'):
-        try:
-            _,_,ui,pg=ds.split('_')
-            return _sm2542_pdp_menu(cid,int(ui),int(pg))
-        except Exception:
-            return _sm2542_unit_menu(cid,0)
-    if ds.startswith('sm2542_pdp_'):
-        try: i=int(ds.rsplit('_',1)[1])
-        except Exception: i=-1
-        return _sm2542_commit(cid,i)
-    return _callback_before_math_v2599_force(cid,d)
-
-APP_VERSION=str(globals().get("APP_VERSION",""))+"+MATH-V2599-FORCE-ROUTE"
-# END MATH_V2599_FORCE_ROUTE
-'''
-    P.write_text(_txt,encoding="utf-8")
-    print("MATH v25_99 force route installed",flush=True)
+if _old not in _txt:
+    raise SystemExit("Math v25.99 source patch anchor missing")
+_txt=_txt.replace(_old,_new,1)
+P.write_text(_txt,encoding="utf-8")
+print("MATH v25.99 original reader patched",flush=True)
