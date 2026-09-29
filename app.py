@@ -5354,7 +5354,7 @@ def _inject_worksheet_differentiation_into_rph(text):
         return text
     is_english=('MATA PELAJARAN: English' in text or 'SUBJECT: English' in text)
     note=("\n5. Teacher distributes Level 1, 2, 3 or 4 worksheets according to pupils’ current level of mastery. Pupils may progress to the next level after demonstrating mastery of the assigned task.\n" if is_english else
-          "\n5. Guru mengagihkan Lembaran Kerja Aras 1, 2, 3 atau 4 mengikut tahap penguasaan semasa murid. Murid boleh bergerak ke aras seterusnya selepas menunjukkan penguasaan pada tugasan yang diberikan.\n")
+          "\n")
     if is_english and 'CLOSURE' in text:
         return text.replace('CLOSURE', note+'CLOSURE',1)
     if 'PENUTUP' in text:
@@ -14082,7 +14082,7 @@ def _inject_worksheet_differentiation_into_rph(text):
         return text
     is_english=('MATA PELAJARAN: English' in text or 'SUBJECT: English' in text)
     note=("\n5. Teacher distributes Level 1, 2, 3 or 4 worksheets according to pupils’ current level of mastery. Pupils may progress to the next level after demonstrating mastery of the assigned task.\n" if is_english else
-          "\n5. Guru mengagihkan Lembaran Kerja Aras 1, 2, 3 atau 4 mengikut tahap penguasaan semasa murid. Murid boleh bergerak ke aras seterusnya selepas menunjukkan penguasaan pada tugasan yang diberikan.\n")
+          "\n")
     if is_english and 'CLOSURE' in text:
         return text.replace('CLOSURE', note+'CLOSURE',1)
     if 'PENUTUP' in text:
