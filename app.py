@@ -27582,3 +27582,48 @@ try:
 except NameError:
     pass
 # ===== END v25.103 GLOBAL REMOVE 4-LEVEL TASK FROM RPH =====
+
+
+# ===== v25.104 GLOBAL RPH QA CLEANUP =====
+# Global formatter QA: deduplicate repeated standards and prevent obviously mismatched Mathematics BBM.
+def _dedup_standard_display_v25104(value):
+    raw=str(value or '').strip()
+    if not raw: return raw
+    # preserve descriptive text; only collapse exact adjacent repeated code tokens.
+    raw=re.sub(r'\\b(\\d+(?:\\.\\d+)*(?:\\([^)]+\\))?)\\s+\\1\\b',r'\\1',raw)
+    raw=re.sub(r'\\b(\\d+(?:\\.\\d+)*(?:\\([^)]+\\))?)\\s*[;,]\\s*\\1\\b',r'\\1',raw)
+    return raw.strip()
+
+def _math_bbm_v25104(s,current=''):
+    hay=' '.join(str(x or '') for x in [
+        s.get('topic'),s.get('subtopic'),s.get('focus'),s.get('lesson_title'),
+        s.get('sp_text'),' '.join(s.get('grouped_sp_texts') or [])
+    ]).lower()
+    if 'masa' in hay or 'waktu' in hay:
+        if any(x in hay for x in ('tambah','tolak','darab','bahagi')):
+            return 'Buku teks, model jam analog, kad masa digital, garis masa, kad situasi masa, papan mini dan alat tulis.'
+        return 'Buku teks, model jam analog, kad masa digital, kalendar/jadual masa mengikut fokus PdP, papan mini dan alat tulis.'
+    if 'wang' in hay:
+        return 'Buku teks, wang contoh/simulasi, kad harga, resit atau senarai harga, papan mini dan alat tulis.'
+    if any(x in hay for x in ('panjang','jisim','isipadu','ukuran')):
+        return 'Buku teks, alat pengukuran sebenar yang sesuai dengan kemahiran, objek maujud, kad tugasan, papan mini dan alat tulis.'
+    if any(x in hay for x in ('data','graf','carta')):
+        return 'Buku teks, set data/kad data, kertas graf atau carta yang sesuai, papan mini dan alat tulis.'
+    if any(x in hay for x in ('bentuk','ruang','sudut','prisma','poligon')):
+        return 'Buku teks, model bentuk 2D/3D yang sesuai, kad ciri bentuk, pembaris atau alat geometri berkaitan, papan mini dan alat tulis.'
+    return current
+
+try:
+    _rph_rows_before_v25104=_rph_rows
+    def _rph_rows(s, ai_text):
+        r=_rph_rows_before_v25104(s, ai_text)
+        if not isinstance(r,dict): return r
+        r=dict(r)
+        r['STANDARD KANDUNGAN']=_dedup_standard_display_v25104(r.get('STANDARD KANDUNGAN'))
+        r['STANDARD PEMBELAJARAN']=_dedup_standard_display_v25104(r.get('STANDARD PEMBELAJARAN'))
+        if 'matematik' in str(s.get('subject') or '').lower():
+            r['BAHAN BANTU MENGAJAR']=_math_bbm_v25104(s,r.get('BAHAN BANTU MENGAJAR',''))
+        return r
+except NameError:
+    pass
+# ===== END v25.104 GLOBAL RPH QA CLEANUP =====
