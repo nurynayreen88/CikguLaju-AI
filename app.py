@@ -28460,3 +28460,68 @@ def callback(cid, d, *args, **kwargs):
 
 APP_VERSION='v25.123-SCIENCE-PRIMARY-EXISTING-PDP-ROUTE'
 # ===== END v25.123 =====
+
+
+# ===== v25.124 SCIENCE PRIMARY v25.68 RUNTIME SOURCE =====
+# Non-destructive: Science Primary reads its verified PdP sequence from the
+# recovered v25.68 Science+Math DB. Other subjects continue using existing DB_PATH.
+def _science_v2568_db_path_v25124():
+    import os as _os
+    base=_os.path.dirname(_os.path.abspath(__file__))
+    full=_os.path.join(base,'CikguLaju_Curriculum_Master_v25_68_SCIENCE_MATH_UPLOAD_READY.db')
+    if _os.path.isfile(full) and _os.path.getsize(full)>0:
+        return full
+    parts=[full+'.part00', full+'.part01', full+'.part02']
+    if all(_os.path.isfile(p) for p in parts):
+        tmp=full+'.rebuilding'
+        try:
+            with open(tmp,'wb') as dst:
+                for p in parts:
+                    with open(p,'rb') as src:
+                        while True:
+                            chunk=src.read(1024*1024)
+                            if not chunk: break
+                            dst.write(chunk)
+            _os.replace(tmp,full)
+            return full
+        except Exception as e:
+            try:
+                if _os.path.exists(tmp): _os.remove(tmp)
+            except Exception:
+                pass
+            print('v25.124 Science DB rebuild failed:',repr(e),flush=True)
+    return full
+
+_sm2542_rows_v25124_base=_sm2542_rows
+
+def _sm2542_rows(year_label, subject):
+    if subject!='Sains':
+        return _sm2542_rows_v25124_base(year_label,subject)
+    path=_science_v2568_db_path_v25124()
+    if not os.path.isfile(path):
+        return []
+    con=sqlite3.connect(path,timeout=15)
+    con.row_factory=sqlite3.Row
+    try:
+        table='verified_pdp_sequence'
+        cols={str(r[1]) for r in con.execute(f'PRAGMA table_info({table})').fetchall()}
+        if not cols:
+            return []
+        where=['year_label=?','subject=?']
+        params=[str(year_label or '').strip(),'Sains']
+        if 'pdp_sequence_code' in cols:
+            where.append("COALESCE(pdp_sequence_code,'')<>''")
+        if 'verification_status' in cols:
+            where.append("COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')")
+        order=[]
+        if 'source_sequence_no' in cols: order.append('COALESCE(source_sequence_no,9999)')
+        elif 'week_no' in cols: order.append('COALESCE(week_no,9999)')
+        if 'id' in cols: order.append('id')
+        sql=f"SELECT * FROM {table} WHERE "+' AND '.join(where)
+        if order: sql+=' ORDER BY '+', '.join(order)
+        return [dict(r) for r in con.execute(sql,params).fetchall()]
+    finally:
+        con.close()
+
+APP_VERSION='v25.124-SCIENCE-v25.68-RUNTIME'
+# ===== END v25.124 =====
