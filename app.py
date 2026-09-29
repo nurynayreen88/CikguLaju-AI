@@ -28183,3 +28183,55 @@ try:
 except NameError:
     pass
 # ===== END v25.117 RPH FINAL REFINEMENT GUARD =====
+
+
+# ===== v25.119 SCHOOL LEVEL GATE =====
+# UI-only gate: Primary is active; Secondary remains visible but closed until ready.
+def choose_grade(cid):
+    kb=[
+        [{'text':'🏫 Sekolah Rendah','callback_data':'level_primary'}],
+        [{'text':'🔒 Sekolah Menengah — Akan Datang','callback_data':'level_secondary_locked'}],
+        [{'text':'⬅️ Kembali','callback_data':'quick'}],
+    ]
+    send(cid,'🎓 <b>Pilih Peringkat Sekolah:</b>\n\nSekolah Rendah tersedia untuk digunakan.\nSekolah Menengah sedang dimurnikan dan akan dibuka kemudian.',kb)
+
+
+def year(cid, lv):
+    # Primary-only selector while Secondary is gated.
+    if str(lv).lower() != 'primary':
+        return _secondary_locked_v25119(cid)
+    kb=[]
+    grades=[f'Tahun {i}' for i in range(1,7)]
+    for i in range(0,len(grades),2):
+        row=[]
+        for g in grades[i:i+2]:
+            row.append({'text':g,'callback_data':'year_'+g.split()[-1]})
+        kb.append(row)
+    kb.append([{'text':'⬅️ Pilih Peringkat Sekolah','callback_data':'choose_grade'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    send(cid,'🏫 <b>Sekolah Rendah</b>\n\nPilih Tahun:',kb)
+
+
+def _secondary_locked_v25119(cid):
+    return send(cid,
+        '🔒 <b>Sekolah Menengah — Akan Datang</b>\n\n'
+        'Bahagian Sekolah Menengah sedang dimurnikan dan belum dibuka untuk penggunaan.\n'
+        'Buat masa ini, sila gunakan Sekolah Rendah.',
+        [[{'text':'🏫 Sekolah Rendah','callback_data':'level_primary'}],
+         [{'text':'⬅️ Kembali','callback_data':'choose_grade'}],
+         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+# Hard gate at the subject entry point as well, so legacy form_* callbacks cannot bypass the lock.
+_subjects_before_v25119 = subjects
+def subjects(cid, label):
+    if str(label or '').startswith('Tingkatan'):
+        return _secondary_locked_v25119(cid)
+    return _subjects_before_v25119(cid,label)
+
+# Wrap the final callback handler to intercept the locked button and legacy Secondary callbacks.
+# Existing primary callbacks continue through the established handler unchanged.
+_callback_before_v25119 = callback
+def callback(cid, d, *args, **kwargs):
+    if d == 'level_secondary_locked' or d == 'level_secondary' or str(d or '').startswith('form_'):
+        return _secondary_locked_v25119(cid)
+    return _callback_before_v25119(cid,d,*args,**kwargs)
