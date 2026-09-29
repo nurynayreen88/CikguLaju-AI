@@ -28034,3 +28034,36 @@ try:
 except NameError:
     pass
 # ===== END v25.113 RPH MEASURABLE OBJECTIVE QA =====
+
+
+# ===== v25.114 RPH ONE-PAGE CONTENT COMPACTION =====
+# Content-level compaction for RPH only: preserve substantive activities, trim accidental repetition.
+def _rph_compact_repeat_v25114(value):
+    text=str(value or '').strip()
+    if not text: return text
+    paras=[p.strip() for p in re.split(r'\\n{2,}',text) if p.strip()]
+    out=[]; seen=set()
+    for p in paras:
+        key=re.sub(r'\\W+',' ',p.lower()).strip()
+        if key and key not in seen:
+            seen.add(key); out.append(p)
+    return '\n\n'.join(out)
+
+def _rph_onepage_content_v25114(state,rows):
+    r=dict(rows or {})
+    # Never shorten core activity content merely to fit A4.
+    # Remove only duplicate paragraphs/lines and excess whitespace.
+    for k in ('OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA',
+              'BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN',
+              'SET INDUKSI','AKTIVITI UTAMA','PENUTUP','PEMULIHAN / PENGAYAAN'):
+        if k in r:
+            r[k]=_rph_compact_repeat_v25114(r[k])
+    return r
+
+try:
+    _rph_rows_before_v25114=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_onepage_content_v25114(s,_rph_rows_before_v25114(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.114 RPH ONE-PAGE CONTENT COMPACTION =====
