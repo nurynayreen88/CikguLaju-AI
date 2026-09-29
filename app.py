@@ -27678,3 +27678,47 @@ try:
 except NameError:
     pass
 # ===== END v25.105 GLOBAL RPH SUBJECT QA =====
+
+
+# ===== v25.106 RPH COMBINED SKILL + SUBJECT MATERIAL QA =====
+def _math_combined_time_v25106(s,r):
+    if 'matematik' not in str(s.get('subject') or '').lower(): return r
+    hay=' '.join(str(x or '') for x in [s.get('topic'),s.get('subtopic'),s.get('focus'),s.get('lesson_title'),s.get('sp_text'),' '.join(s.get('grouped_sp_texts') or [])]).lower()
+    if ('masa' in hay or 'waktu' in hay) and 'tambah' in hay and 'tolak' in hay:
+        r=dict(r)
+        r['OBJEKTIF PEMBELAJARAN']='Pada akhir PdP, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 pengiraan tambah dan tolak masa dengan unit yang betul.'
+        r['KRITERIA KEJAYAAN']='Murid berjaya apabila dapat memilih operasi tambah atau tolak yang sesuai, menunjukkan langkah pengiraan dan memperoleh sekurang-kurangnya 4 daripada 5 jawapan tepat.'
+        r['PENGETAHUAN SEDIA ADA']='Murid telah mengenal unit masa serta boleh melakukan operasi tambah dan tolak asas.'
+        r['PENTAKSIRAN']='Pemerhatian pemilihan operasi, langkah pengiraan, penggunaan unit masa dan semakan 5 item individu tambah/tolak masa.'
+        r['SET INDUKSI']='5 minit\n1. Guru memaparkan dua situasi masa: satu memerlukan jumlah tempoh dan satu memerlukan beza tempoh.\n2. Murid menentukan sama ada operasi tambah atau tolak perlu digunakan dan memberikan sebab.'
+        r['AKTIVITI UTAMA']=(
+            'Aktiviti 1 – Bezakan Operasi (10 minit)\nMurid meneliti kad situasi masa dan mengelaskan situasi kepada tambah atau tolak dengan alasan ringkas.\n\n'
+            'Aktiviti 2 – Pengiraan Berpandu (15 minit)\nSecara berpasangan, murid menyelesaikan contoh tambah dan tolak masa, menyusun nilai mengikut unit dan membuat penukaran unit apabila diperlukan.\n\n'
+            'Aktiviti 3 – Aplikasi Kontekstual (20 minit)\nKumpulan menyelesaikan masalah tempoh aktiviti/perjalanan yang bercampur operasi tambah dan tolak. Murid membina ayat matematik, menunjukkan langkah dan menyemak kewajaran jawapan.\n\n'
+            'Aktiviti 4 – Semakan Individu (10 minit)\nMurid menjawab 5 item bercampur tambah/tolak masa dan menerangkan pemilihan operasi bagi satu item.'
+        )
+        r['PEMULIHAN / PENGAYAAN']='Pemulihan: Gunakan model jam/garis masa dan soalan satu operasi sebelum beralih kepada item bercampur.\nPengayaan: Berikan masalah masa dua langkah yang menggabungkan operasi tambah dan tolak serta penukaran unit.'
+        r['BAHAN BANTU MENGAJAR']='Buku teks, model jam analog, kad masa digital, garis masa, kad situasi tambah/tolak masa, papan mini dan alat tulis.'
+    return r
+
+def _subject_material_qa_v25106(s,r):
+    r=dict(r or {}); subject=str(s.get('subject') or '').lower()
+    if 'sains' in subject or 'science' in subject:
+        cur=str(r.get('BAHAN BANTU MENGAJAR') or '')
+        if not cur or cur.lower().strip() in ('buku teks','buku teks.'):
+            r['BAHAN BANTU MENGAJAR']='Buku teks, bahan/objek maujud atau alat penyiasatan yang sesuai dengan fokus PdP, kad pemerhatian dan alat tulis.'
+    elif 'bahasa melayu' in subject or subject.strip()=='bm':
+        cur=str(r.get('BAHAN BANTU MENGAJAR') or '')
+        if not cur:
+            r['BAHAN BANTU MENGAJAR']='Buku teks, petikan/bahan rangsangan yang sesuai dengan kemahiran, kad perkataan/ayat dan alat tulis.'
+    return r
+
+try:
+    _rph_rows_before_v25106=_rph_rows
+    def _rph_rows(s, ai_text):
+        r=_rph_rows_before_v25106(s,ai_text)
+        r=_math_combined_time_v25106(s,r)
+        return _subject_material_qa_v25106(s,r)
+except NameError:
+    pass
+# ===== END v25.106 RPH COMBINED SKILL + SUBJECT MATERIAL QA =====
