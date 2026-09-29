@@ -27767,3 +27767,54 @@ try:
 except NameError:
     pass
 # ===== END v25.107 RPH QUALITY GUARD =====
+
+
+# ===== v25.108 RPH ALIGNMENT GUARD =====
+# Ensure objective -> success criteria -> assessment stay aligned without changing SK/SP.
+def _rph_alignment_guard_v25108(s,r):
+    r=dict(r or {})
+    sub=str(s.get('subject') or '').lower()
+    obj=str(r.get('OBJEKTIF PEMBELAJARAN') or '')
+    crit=str(r.get('KRITERIA KEJAYAAN') or '')
+    assess=str(r.get('PENTAKSIRAN') or '')
+    hay=(' '.join([str(s.get('topic') or ''),str(s.get('subtopic') or ''),str(s.get('focus') or ''),str(s.get('sp_text') or ''),obj])).lower()
+
+    # Only intervene when final criteria/assessment are empty or clearly disconnected/generic.
+    weakcrit=(not crit.strip()) or _rph_generic_field_v25107(crit)
+    weakass=(not assess.strip()) or _rph_generic_field_v25107(assess)
+
+    if 'matematik' in sub:
+        if weakcrit:
+            r['KRITERIA KEJAYAAN']='Murid menunjukkan kaedah/strategi yang sesuai dan mencapai ketepatan yang ditetapkan dalam objektif pembelajaran.'
+        if weakass:
+            r['PENTAKSIRAN']='Semakan langkah/strategi dan jawapan murid melalui latihan berpandu serta tugasan individu yang mengukur kemahiran dalam objektif.'
+    elif 'sains' in sub or 'science' in sub:
+        if weakcrit:
+            r['KRITERIA KEJAYAAN']='Murid merekod pemerhatian/dapatan dengan tepat, menggunakan kemahiran proses sains yang relevan dan memberikan respons yang selaras dengan objektif pembelajaran.'
+        if weakass:
+            r['PENTAKSIRAN']='Pemerhatian kemahiran proses sains, semakan rekod/dapatan dan respons individu berdasarkan objektif pembelajaran.'
+    elif 'bahasa melayu' in sub or sub.strip()=='bm':
+        if weakcrit:
+            if any(x in hay for x in ('membaca','bacaan')):
+                r['KRITERIA KEJAYAAN']='Murid membaca bahan sasaran mengikut fokus kemahiran dan menunjukkan kefahaman melalui respons yang tepat.'
+            elif any(x in hay for x in ('menulis','penulisan')):
+                r['KRITERIA KEJAYAAN']='Murid menghasilkan respons/penulisan yang menepati tugasan dan fokus kemahiran bahasa dalam objektif.'
+            else:
+                r['KRITERIA KEJAYAAN']='Murid memberikan respons bahasa yang relevan dan menepati fokus kemahiran dalam objektif pembelajaran.'
+    elif 'english' in sub or 'bahasa inggeris' in sub or sub.strip()=='bi':
+        if weakcrit:
+            if 'reading' in hay:
+                r['KRITERIA KEJAYAAN']='Pupils demonstrate the target reading skill and give accurate responses that match the learning objective.'
+            elif 'writing' in hay:
+                r['KRITERIA KEJAYAAN']='Pupils produce a relevant written response that meets the task and target-language requirements in the learning objective.'
+            elif 'listening' in hay or 'speaking' in hay:
+                r['KRITERIA KEJAYAAN']='Pupils complete the target listening/speaking task with relevant and understandable responses aligned to the learning objective.'
+    return r
+
+try:
+    _rph_rows_before_v25108=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_alignment_guard_v25108(s,_rph_rows_before_v25108(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.108 RPH ALIGNMENT GUARD =====
