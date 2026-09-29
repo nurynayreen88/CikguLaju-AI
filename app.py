@@ -28420,3 +28420,43 @@ def _sm2542_rows(year_label, subject):
 
 APP_VERSION='v25.122-SCIENCE-SCHEMA-COMPAT'
 # ===== END v25.122 =====
+
+# ===== v25.123 SCIENCE PRIMARY EXISTING-PDP ROUTE LOCK =====
+# Science Primary already has a verified PdP sequence. The main material flow must
+# enter that sequence directly and must not fall back to the legacy manual SK/SP UI.
+# No curriculum rows or SK/SP mappings are created here.
+_callback_before_v25123 = callback
+
+def _science_primary_existing_pdp_v25123(ss):
+    return (str(ss.get('subject') or '') == 'Sains'
+            and str(ss.get('year') or '').startswith('Tahun ')
+            and str(ss.get('rph_mode') or '') != 'fast_custom')
+
+def callback(cid, d, *args, **kwargs):
+    ss = state.setdefault(cid,{})
+    ds = str(d or '')
+
+    # Main Primary Science subject button: always use the verified PdP sequence
+    # already stored in verified_pdp_sequence (schema compatibility from v25.122).
+    if ds == 'sub_Sains' and str(ss.get('year') or '').startswith('Tahun ') and str(ss.get('rph_mode') or '') != 'fast_custom':
+        ss['task']='quick_material'
+        ss['quick_material_flow']=True
+        ss['subject']='Sains'
+        ss['assessment_mode']='formative'
+        for k in ('topic','subtopic','selected_topic_index','topic_list','selected_sk','selected_sp',
+                  'curr_sk_options','curr_sp_options','rph_sk_options','rph_sp_options',
+                  '_sm2542_rows','_sm2542_units','_sm2542_pdp_codes','_sm2542_pdp_bycode'):
+            ss.pop(k,None)
+        return _sm2542_unit_menu(cid,0)
+
+    # Defensive guard for stale Telegram buttons / older screens. In the normal
+    # Science Primary flow, SK/SP are derived from the selected verified PdP.
+    if _science_primary_existing_pdp_v25123(ss):
+        legacy_prefixes=('sk_','sp_','csk_','csp_','rsk_','rsp_','skpage_','sppage_')
+        if ds.startswith(legacy_prefixes):
+            return _sm2542_unit_menu(cid,0)
+
+    return _callback_before_v25123(cid,d,*args,**kwargs)
+
+APP_VERSION='v25.123-SCIENCE-PRIMARY-EXISTING-PDP-ROUTE'
+# ===== END v25.123 =====
