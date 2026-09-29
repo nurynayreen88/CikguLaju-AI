@@ -27515,3 +27515,31 @@ try:
 except NameError:
     pass
 # ===== END v25.101 MATH RPH SKILL ENGINE =====
+
+
+# ===== v25.102 REMOVE 4-LEVEL RPH TASK =====
+# User decision: RPH must not include/distribute 4-level worksheet tasks.
+def _remove_rph_4level_task_v25102(rows):
+    r=dict(rows or {})
+    for key in ('AKTIVITI UTAMA','PENGAJARAN DAN PEMBELAJARAN','REFLEKSI','PENUTUP'):
+        val=str(r.get(key) or '')
+        if not val:
+            continue
+        val=re.sub(
+            r'(?im)^\\s*\\d+\\.\\s*Guru mengagihkan Lembaran Kerja Aras 1, 2, 3 atau 4.*(?:\\n(?!\\s*(?:Aktiviti|Penutup|Pemulihan|Pengayaan|Refleksi)\\b).*)?',
+            '', val
+        )
+        val=re.sub(
+            r'(?im)^.*(?:Lembaran Kerja|worksheet)\\s*(?:Aras|Level)\\s*1\\s*,?\\s*2\\s*,?\\s*3\\s*(?:atau|or|,)\\s*4.*$',
+            '', val
+        )
+        r[key]=re.sub(r'\\n{3,}','\\n\\n',val).strip()
+    return r
+
+try:
+    _rph_rows_before_v25102=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _remove_rph_4level_task_v25102(_rph_rows_before_v25102(s, ai_text))
+except NameError:
+    pass
+# ===== END v25.102 REMOVE 4-LEVEL RPH TASK =====
