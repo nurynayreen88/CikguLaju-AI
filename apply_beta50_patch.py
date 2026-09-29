@@ -397,7 +397,7 @@ def _math2599_auto_commit(cid, idx):
 def callback(cid,d):
     ss=state.setdefault(cid,{})
     ds=str(d or "")
-    if ss.get("subject")=="Matematik" and ds.startswith("sm2542_pdp_"):
+    if ds.startswith("sm2542_pdp_") and (ss.get("subject")=="Matematik" or bool(ss.get("_sm2542_pdp_rows"))):
         try: idx=int(ds.rsplit("_",1)[1])
         except Exception: idx=-1
         return _math2599_auto_commit(cid,idx)
