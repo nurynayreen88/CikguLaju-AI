@@ -28067,3 +28067,119 @@ try:
 except NameError:
     pass
 # ===== END v25.114 RPH ONE-PAGE CONTENT COMPACTION =====
+
+
+# ===== v25.115 MATH RPH SPECIFIC SKILL BANK =====
+# Non-destructive final QA layer: replace only clearly generic Mathematics fallback activities.
+def _math_specific_activity_v25115(state, rows):
+    r=dict(rows or {})
+    if 'matematik' not in str(state.get('subject') or '').lower(): return r
+    skill=_math_rph_skill_v25101(state) if '_math_rph_skill_v25101' in globals() else ''
+    act=str(r.get('AKTIVITI UTAMA') or '')
+    generic=any(x in act for x in ('Bina Konsep','Teroka Contoh','Kenal Pasti Strategi','tugasan atau masalah yang sesuai dengan tahap','tugasan pendek menggunakan bahan, gambar atau situasi harian yang sesuai dengan tahap','masalah kontekstual yang memerlukan pemilihan strategi'))
+    if not generic: return r
+    banks={
+      'nilai_tempat':('Murid membina nombor menggunakan blok asas 10/kad digit, meletakkan digit pada carta nilai tempat dan menyatakan nilai digit.','Pasangan memadankan nombor, bentuk cerakin dan nilai digit serta menerangkan hubungan antara digit dengan kedudukannya.','Murid menyelesaikan item nilai tempat/nilai digit dan membuktikan satu jawapan menggunakan model atau carta.'),
+      'susun_nombor':('Murid membina atau membaca beberapa nombor sasaran, kemudian membandingkan digit bermula daripada nilai tempat terbesar.','Pasangan menyusun kad nombor secara menaik dan menurun serta menerangkan sebab kedudukan setiap nombor.','Murid menyelesaikan susunan nombor dalam konteks dan menyemak tertib menggunakan garis nombor atau nilai tempat.'),
+      'bundar_nombor':('Murid meletakkan nombor pada garis nombor di antara dua gandaan sasaran dan mengenal pasti nilai yang paling hampir.','Guru membimbing murid menggunakan digit penentu untuk membundarkan; pasangan menerangkan keputusan naik atau kekal.','Murid membundarkan nombor dalam beberapa situasi dan menyemak kewajaran jawapan menggunakan anggaran/garis nombor.'),
+      'tambah':('Murid memodelkan dua kuantiti menggunakan blok asas 10, abakus, garis nombor atau representasi yang sesuai lalu membina ayat tambah.','Pasangan menyelesaikan pengiraan tambah dengan strategi nilai tempat/kaedah yang sesuai dan membandingkan langkah.','Murid menyelesaikan masalah tambah kontekstual, memilih maklumat penting, menunjukkan pengiraan dan menyemak kewajaran jawapan.'),
+      'tolak':('Murid memodelkan situasi mengambil keluar atau mencari beza menggunakan objek, blok asas 10 atau garis nombor lalu membina ayat tolak.','Pasangan menyelesaikan pengiraan tolak menggunakan nilai tempat/strategi yang sesuai dan menerangkan baki atau beza.','Murid menyelesaikan masalah tolak kontekstual, menunjukkan langkah dan menyemak jawapan dengan operasi songsang atau anggaran apabila sesuai.'),
+      'darab':('Murid membina kumpulan sama banyak/susunan tatasusunan dan menghubungkannya dengan tambah berulang serta ayat darab.','Pasangan menggunakan fakta darab atau strategi pengiraan yang sesuai untuk menyelesaikan beberapa item dan menerangkan hubungan faktor dengan hasil darab.','Murid menyelesaikan masalah darab dalam situasi harian, membina ayat matematik dan menyemak kewajaran jawapan.'),
+      'bahagi':('Murid membahagi objek kepada kumpulan sama banyak atau membentuk bilangan kumpulan, kemudian menghubungkannya dengan ayat bahagi.','Pasangan menggunakan fakta bahagi/hubungan darab-bahagi untuk menyelesaikan item dan menerangkan baki jika berkaitan.','Murid menyelesaikan masalah bahagi kontekstual, memilih tafsiran kumpulan atau perkongsian dan menyemak jawapan dengan darab.'),
+      'pecahan':('Murid melipat, melorek atau menggunakan model pecahan untuk menunjukkan bahagian sama besar dan menamakan pecahan yang terlibat.','Pasangan memadankan model, simbol dan nilai pecahan serta membandingkan/mengendalikan pecahan mengikut fokus PdP.','Murid menyelesaikan item pecahan menggunakan model visual sebelum menerangkan satu jawapan dengan istilah pengangka dan penyebut apabila sesuai.'),
+      'perpuluhan':('Murid mewakilkan perpuluhan menggunakan grid, nilai tempat atau hubungan pecahan-perpuluhan mengikut fokus PdP.','Pasangan membaca, menulis, membandingkan atau mengira perpuluhan dengan menyusun digit mengikut nilai tempat yang betul.','Murid menyelesaikan item/aplikasi perpuluhan dan menyemak jawapan menggunakan anggaran atau representasi nilai tempat.'),
+      'wang':('Murid mengenal/menggabungkan wang mainan Malaysia atau nilai pada tanda harga untuk mewakilkan amaun sasaran.','Pasangan menjalankan simulasi jual beli atau pengiraan wang mengikut fokus PdP, merekod ayat matematik dan baki/jumlah dengan unit RM dan sen yang betul.','Murid menyelesaikan masalah wang harian, memilih operasi, menunjukkan pengiraan dan menyemak sama ada jawapan munasabah.'),
+      'ukuran':('Murid membuat anggaran terlebih dahulu, kemudian mengukur/menyukat objek atau kuantiti menggunakan alat dan unit yang sesuai dengan fokus PdP.','Pasangan merekod bacaan dengan unit yang betul, membandingkan ukuran dan membincangkan perbezaan antara anggaran dengan ukuran sebenar.','Murid menyelesaikan tugasan ukuran kontekstual dan menunjukkan bacaan, unit serta langkah pengiraan yang diperlukan.'),
+      'ruang':('Murid meneroka model/bentuk sebenar, mengenal pasti ciri seperti sisi, bucu, permukaan, garis atau sudut mengikut fokus PdP.','Pasangan mengelas, memadankan atau membina bentuk berdasarkan ciri dan menerangkan persamaan/perbezaan menggunakan istilah geometri yang betul.','Murid menyelesaikan tugasan ruang melalui lukisan, model atau aplikasi persekitaran dan memberikan alasan berdasarkan ciri bentuk.'),
+      'data':('Murid mengumpul atau membaca data daripada jadual, piktograf, carta atau graf mengikut fokus PdP serta mengenal pasti tajuk/petunjuk/skala yang berkaitan.','Pasangan mentafsir data dengan membandingkan kategori, menentukan nilai dan membina respons berdasarkan maklumat yang dipaparkan.','Murid menyelesaikan soalan data termasuk perbandingan atau beza dan menyokong jawapan dengan bukti daripada jadual/graf.'),
+    }
+    bank=banks.get(skill)
+    if not bank: return r
+    dur=_rph_duration_minutes_v25110(state) if '_rph_duration_minutes_v25110' in globals() else 60
+    main=max(15,dur-10); a=max(5,round(main*.25)); b=max(5,round(main*.35)); c=max(5,main-a-b)
+    r['AKTIVITI UTAMA']=f'Aktiviti 1 – Bina Kefahaman ({a} minit)\n{bank[0]}\n\nAktiviti 2 – Latihan Berpandu dan Komunikasi Matematik ({b} minit)\n{bank[1]}\n\nAktiviti 3 – Aplikasi dan Penyelesaian Masalah ({c} minit)\n{bank[2]}\n\nAktiviti 4 – Semakan Individu (5 minit)\nMurid menjawab semakan ringkas yang mengukur kemahiran sasaran; guru menyemak strategi, ketepatan dan penggunaan istilah/unit Matematik yang berkaitan.'
+    return r
+
+try:
+    _rph_rows_before_v25115=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _math_specific_activity_v25115(s,_rph_rows_before_v25115(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.115 MATH RPH SPECIFIC SKILL BANK =====
+
+# ===== v25.116 SCIENCE RPH TOPIC-SPECIFIC FALLBACK BANK =====
+# Final non-destructive QA layer: preserve verified/process-specific Science activities;
+# replace only the clearly generic v25.107/v25.110 Science fallback with topic-grounded work.
+def _science_topic_activity_v25116(state, rows):
+    r=dict(rows or {})
+    sub=str(state.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub: return r
+    act=str(r.get('AKTIVITI UTAMA') or '')
+    generic=any(x in act for x in (
+        'kemahiran proses sains yang relevan',
+        'meneroka fokus pdp menggunakan bahan yang sesuai',
+        'meneroka '+str(state.get('topic') or state.get('lesson_title') or state.get('subtopic') or 'fokus PdP')+', membuat pemerhatian',
+    ))
+    if not generic: return r
+    hay=' '.join(str(state.get(k) or '') for k in ('topic','subtopic','focus','lesson_title','sp_text')).lower()
+    banks=[
+      (('tumbuhan','pokok','daun','akar','bunga','biji benih'),('Murid memerhati spesimen/gambar tumbuhan dan merekod ciri struktur atau perubahan yang berkaitan dengan fokus PdP.','Pasangan membandingkan sekurang-kurangnya dua spesimen/keadaan, kemudian mengelas atau menyusun dapatan berdasarkan ciri yang benar-benar diperhatikan.','Murid menggunakan bukti pemerhatian untuk menerangkan fungsi, keperluan, pertumbuhan atau hubungan struktur tumbuhan mengikut fokus SP.')),
+      (('haiwan','habitat','makanan haiwan'),('Murid memerhati gambar/model haiwan dan mengenal pasti ciri yang berkaitan dengan fokus PdP tanpa membuat andaian yang tidak disokong.','Pasangan membanding dan mengelaskan haiwan berdasarkan ciri, habitat, makanan atau keperluan yang dinyatakan dalam fokus pembelajaran.','Murid menerangkan pengelasan/hubungan menggunakan bukti daripada ciri yang diperhatikan dan istilah Sains yang sesuai.')),
+      (('manusia','deria','anggota','gigi','pencernaan','pernafasan','peredaran'),('Murid meneliti model, rajah atau aktiviti pemerhatian selamat untuk mengenal pasti struktur/proses manusia yang menjadi fokus PdP.','Pasangan memadankan struktur dengan fungsi atau menyusun urutan proses berdasarkan bukti daripada model/rajah dan rekod pemerhatian.','Murid menerangkan hubungan struktur-fungsi/proses menggunakan istilah Sains yang betul serta satu contoh situasi harian yang berkaitan.')),
+      (('bahan','sifat bahan','serap','kalis','jirim','campuran','asid','alkali','pengaratan'),('Murid memerhati beberapa sampel bahan dan merekod sifat yang boleh dikenal pasti atau diuji dengan selamat.','Pasangan menjalankan ujian/perbandingan mudah yang sesuai dengan fokus PdP dan merekod keputusan dalam jadual pemerhatian.','Murid mengelas atau membuat kesimpulan tentang bahan berdasarkan keputusan ujian, bukan tekaan, serta menyatakan bukti yang menyokong jawapan.')),
+      (('magnet','kemagnetan'),('Murid membuat ramalan tentang tindak balas magnet terhadap beberapa objek atau kedudukan kutub sebelum ujian dijalankan.','Pasangan menguji ramalan secara sistematik, merekod objek/keadaan dan keputusan tarikan atau tolakan.','Murid membandingkan ramalan dengan keputusan dan merumuskan pola berdasarkan bukti penyiasatan.')),
+      (('elektrik','litar'),('Murid mengenal pasti komponen litar dan fungsi asasnya menggunakan set/rajah litar yang selamat.','Pasangan membina atau menilai litar mengikut fokus PdP, memerhati keadaan yang menyebabkan komponen berfungsi dan merekod keputusan.','Murid menggunakan bukti daripada litar untuk menerangkan hubungan komponen/sambungan dan membetulkan satu contoh litar yang tidak berfungsi apabila sesuai.')),
+      (('cahaya','bayang','optik'),('Murid memerhati interaksi cahaya dengan objek/bahan atau pembentukan bayang dalam keadaan terkawal dan merekod apa yang berubah.','Pasangan mengubah satu keadaan yang sesuai seperti kedudukan sumber/objek atau jenis bahan, kemudian membandingkan hasil pemerhatian.','Murid mengenal pola dan menerangkan dapatan tentang cahaya/bayang berdasarkan bukti, termasuk pemboleh ubah yang diubah jika penyiasatan dijalankan.')),
+      (('haba','suhu'),('Murid membuat anggaran/perbandingan awal keadaan haba atau suhu dan memilih alat/kaedah pemerhatian yang sesuai.','Pasangan mengambil bacaan atau memerhati perubahan pada sela yang sesuai, merekod nilai bersama unit dan membandingkan data.','Murid mentafsir perubahan suhu/haba daripada data dan membuat kesimpulan yang sepadan dengan bukti.')),
+      (('bumi','planet','sistem suria','bulan','buruj','gerhana','galaksi'),('Murid meneliti model, glob, rajah atau siri imej dan merekod kedudukan/ciri yang berkaitan dengan fokus PdP.','Pasangan menyusun, memadankan atau memodelkan hubungan/kedudukan objek angkasa mengikut maklumat yang dipelajari.','Murid menerangkan fenomena atau pola menggunakan model/rajah sebagai bukti dan membezakan model daripada objek sebenar.')),
+      (('daya','kelajuan','gerakan'),('Murid memerhati kesan tolakan/tarikan atau pergerakan objek dan merekod perubahan yang dapat dilihat/diukur.','Pasangan menjalankan perbandingan terkawal yang sesuai, mengukur masa/jarak atau merekod kesan daya mengikut fokus PdP.','Murid membandingkan data dan menerangkan hubungan daya, gerakan atau kelajuan berdasarkan bukti yang dikumpulkan.')),
+      (('mikroorganisma',),('Murid meneliti foto/rajah, rekod atau contoh kesan mikroorganisma yang selamat tanpa mengendalikan kultur tidak diketahui.','Pasangan membandingkan keadaan/kesan dan mengelaskan maklumat kepada manfaat, kemudaratan atau syarat pertumbuhan mengikut fokus PdP.','Murid membuat kesimpulan berdasarkan bukti yang diberikan dan mengaitkan dapatan dengan amalan kebersihan/keselamatan yang relevan.')),
+      (('tenaga','bunyi'),('Murid memerhati sumber, bentuk atau kesan tenaga/bunyi melalui demonstrasi atau bahan yang sesuai dan merekod pemerhatian.','Pasangan membandingkan dua keadaan, mengenal perubahan/pemindahan yang berkaitan dan menyusun bukti dalam jadual atau rajah.','Murid menerangkan pola atau hubungan berdasarkan pemerhatian dan menggunakan istilah Sains yang tepat mengikut fokus PdP.')),
+    ]
+    bank=None
+    for keys,val in banks:
+        if any(k in hay for k in keys): bank=val; break
+    if not bank: return r
+    dur=_rph_duration_minutes_v25110(state) if '_rph_duration_minutes_v25110' in globals() else 60
+    main=max(15,dur-10); a=max(5,round(main*.27)); b=max(5,round(main*.38)); c=max(5,main-a-b)
+    r['AKTIVITI UTAMA']=f'Aktiviti 1 – Pemerhatian Berfokus ({a} minit)\n{bank[0]}\n\nAktiviti 2 – Penerokaan/Penyiasatan dan Rekod Bukti ({b} minit)\n{bank[1]}\n\nAktiviti 3 – Analisis dan Komunikasi Sains ({c} minit)\n{bank[2]}\n\nAktiviti 4 – Semakan Individu (5 minit)\nMurid memberi respons berdasarkan bukti pemerhatian/data/rajah yang digunakan dalam PdP; guru menyemak ketepatan istilah Sains dan keselarasan jawapan dengan bukti.'
+    return r
+
+try:
+    _rph_rows_before_v25116=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _science_topic_activity_v25116(s,_rph_rows_before_v25116(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.116 SCIENCE RPH TOPIC-SPECIFIC FALLBACK BANK =====
+
+# ===== v25.117 RPH FINAL REFINEMENT GUARD =====
+# Non-destructive final QA: preserve specific Math/Science activities and prevent
+# generic fallback wording from surviving when a specific late bank has applied.
+def _rph_final_refine_v25117(state, rows):
+    r=dict(rows or {})
+    sub=str(state.get('subject') or '').lower()
+    act=str(r.get('AKTIVITI UTAMA') or '').strip()
+    # Normalise only harmless whitespace; never shorten substantive activities.
+    if act:
+        act=re.sub(r'\n[ \t]+', '\n', act)
+        act=re.sub(r'\n{3,}', '\n\n', act).strip()
+        r['AKTIVITI UTAMA']=act
+    # Legacy four-level worksheet/task wording must never return through an RPH row.
+    for key in ('AKTIVITI UTAMA','PEMULIHAN / PENGAYAAN'):
+        val=str(r.get(key) or '')
+        val=re.sub(r'(?im)^.*(?:tugasan|lembaran kerja)\s*4\s*aras.*(?:\n|$)', '', val)
+        r[key]=re.sub(r'\n{3,}', '\n\n', val).strip()
+    # Subject terminology guard only; no curriculum facts are invented here.
+    if 'sains' in sub or 'science' in sub:
+        r['AKTIVITI UTAMA']=str(r.get('AKTIVITI UTAMA') or '').replace('komunikasi saintifik','komunikasi Sains').replace('Komunikasi Saintifik','Komunikasi Sains')
+    return r
+
+try:
+    _rph_rows_before_v25117=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_final_refine_v25117(s,_rph_rows_before_v25117(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.117 RPH FINAL REFINEMENT GUARD =====
