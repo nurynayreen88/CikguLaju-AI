@@ -27722,3 +27722,48 @@ try:
 except NameError:
     pass
 # ===== END v25.106 RPH COMBINED SKILL + SUBJECT MATERIAL QA =====
+
+
+# ===== v25.107 RPH QUALITY GUARD =====
+# Final conservative guard for all subjects: flag/repair only clearly generic final RPH fields.
+def _rph_generic_field_v25107(v):
+    x=re.sub(r'\\s+',' ',str(v or '')).strip().lower()
+    if not x: return True
+    generic=(
+        'guru menerangkan isi pelajaran',
+        'murid menjawab soalan',
+        'murid membuat latihan',
+        'murid melengkapkan tugasan',
+        'teacher explains the lesson',
+        'pupils answer questions',
+        'pupils complete the task'
+    )
+    return any(g in x for g in generic) and len(x)<260
+
+def _rph_quality_guard_v25107(s,r):
+    r=dict(r or {}); sub=str(s.get('subject') or '').lower()
+    topic=str(s.get('topic') or s.get('lesson_title') or s.get('subtopic') or '').strip()
+    if _rph_generic_field_v25107(r.get('PENTAKSIRAN')):
+        if 'matematik' in sub:
+            r['PENTAKSIRAN']='Pemerhatian strategi/kaedah yang digunakan, soal jawab semasa penyelesaian dan semakan tugasan individu berdasarkan kemahiran Matematik dalam PdP.'
+        elif 'sains' in sub or 'science' in sub:
+            r['PENTAKSIRAN']='Pemerhatian kemahiran proses sains, ketepatan rekod/pemerhatian, soal jawab berasaskan bukti dan semakan hasil tugasan murid.'
+        elif 'english' in sub or 'bahasa inggeris' in sub:
+            r['PENTAKSIRAN']='Teacher checks pupils’ performance against the target language skill through observation, task responses and a short individual check.'
+        elif 'bahasa melayu' in sub:
+            r['PENTAKSIRAN']='Pemerhatian penguasaan kemahiran bahasa, respons murid dan semakan hasil tugasan berdasarkan fokus PdP.'
+    # Do not invent activities. If a short generic activity survives, make the required teaching sequence explicit.
+    if _rph_generic_field_v25107(r.get('AKTIVITI UTAMA')):
+        if 'matematik' in sub:
+            r['AKTIVITI UTAMA']=f'Aktiviti 1 – Penerokaan\nGuru membimbing murid mengenal pasti konsep/kemahiran Matematik bagi {topic or "fokus PdP"} menggunakan contoh yang sesuai.\n\nAktiviti 2 – Latihan Berpandu\nMurid menunjukkan langkah atau strategi penyelesaian dengan bimbingan guru dan membandingkan kaedah bersama rakan.\n\nAktiviti 3 – Aplikasi\nMurid menyelesaikan tugasan kontekstual yang mengukur kemahiran sasaran dan menerangkan jawapan/strategi.\n\nAktiviti 4 – Semakan Individu\nMurid melengkapkan semakan ringkas secara individu; guru mengenal pasti murid yang memerlukan pemulihan atau pengayaan.'
+        elif 'sains' in sub or 'science' in sub:
+            r['AKTIVITI UTAMA']=f'Aktiviti 1 – Pemerhatian/Penerokaan\nMurid meneroka {topic or "fokus PdP"} menggunakan bahan yang sesuai dan merekod pemerhatian.\n\nAktiviti 2 – Penyiasatan Berpandu\nMurid menjalankan tugasan dengan prosedur yang jelas, menggunakan kemahiran proses sains yang relevan dan merekod bukti.\n\nAktiviti 3 – Perbincangan Bukti\nMurid membandingkan dapatan, membuat inferens/kesimpulan yang disokong pemerhatian dan berkomunikasi menggunakan istilah Sains yang betul.\n\nAktiviti 4 – Semakan Individu\nMurid menjawab tugasan ringkas berdasarkan pemerhatian/dapatan; guru menyemak kefahaman sebelum penutup.'
+    return r
+
+try:
+    _rph_rows_before_v25107=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_quality_guard_v25107(s,_rph_rows_before_v25107(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.107 RPH QUALITY GUARD =====
