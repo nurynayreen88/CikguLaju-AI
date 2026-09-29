@@ -27333,3 +27333,69 @@ def _specific_activity_variant_bank(subject, topic, focus, sp_code, sp_text, mat
 
 APP_VERSION=str(globals().get('APP_VERSION',''))+'+v25.44-SCI-MATH-RPH-SKILL-SPECIFIC'
 # ===== END v25.44 =====
+
+
+# ===== v25.100 MATH RPH QUALITY PATCH =====
+# Non-destructive late patch: improve Mathematics RPH specificity and remove duplicate SK/SP codes.
+def _rph_unique_codes_v25100(value):
+    parts=re.split(r'\s*[;,]\s*', str(value or '').strip())
+    out=[]
+    for p in parts:
+        p=p.strip()
+        if p and p not in out:
+            out.append(p)
+    return ';'.join(out)
+
+def _math_rph_quality_v25100(s, rows):
+    if 'matematik' not in str(s.get('subject') or '').lower():
+        return rows
+    r=dict(rows or {})
+    r['STANDARD KANDUNGAN']=_rph_unique_codes_v25100(r.get('STANDARD KANDUNGAN') or s.get('sk_code'))
+    r['STANDARD PEMBELAJARAN']=_rph_unique_codes_v25100(r.get('STANDARD PEMBELAJARAN') or s.get('sp_code'))
+    topic=str(s.get('topic') or s.get('subtopic') or '').strip()
+    focus=' '.join(str(x or '') for x in [topic,s.get('focus'),s.get('lesson_title'),s.get('subtopic')]).lower()
+    if ('susun' in focus and 'bilang' in focus) or ('nombor hingga 10 000' in focus):
+        r['OBJEKTIF PEMBELAJARAN']=(
+            'Pada akhir PdP, murid dapat membilang nombor hingga 10 000, '
+            'menyusun sekurang-kurangnya lima nombor mengikut tertib menaik atau menurun, '
+            'dan melengkapkan urutan nombor yang diberi dengan betul.'
+        )
+        r['KRITERIA KEJAYAAN']=(
+            'Murid berjaya apabila dapat menyusun sekurang-kurangnya 4 daripada 5 set nombor '
+            'dengan betul serta menerangkan sekurang-kurangnya satu susunan menggunakan nilai tempat.'
+        )
+        r['PENGETAHUAN SEDIA ADA']=(
+            'Murid telah mengenal digit dan nilai tempat asas serta boleh membaca nombor yang telah dipelajari.'
+        )
+        r['PENTAKSIRAN']=(
+            'Pemerhatian penggunaan nilai tempat, semakan susunan nombor, soal jawab alasan matematik '
+            'dan semakan 5 item individu.'
+        )
+        r['SET INDUKSI']=(
+            '5 minit\n1. Guru mempamerkan empat kad nombor hingga 10 000 dalam susunan rawak.\n'
+            '2. Murid membaca nombor dan mencadangkan nombor paling kecil serta paling besar.\n'
+            '3. Guru meminta murid menerangkan digit/nilai tempat yang digunakan untuk membuat perbandingan.'
+        )
+        r['AKTIVITI UTAMA']=(
+            'Aktiviti 1 – Bina dan Bilang (12 minit)\n'
+            'Murid membina nombor menggunakan kad digit/cawan nilai tempat, membaca nombor tersebut dan membilang maju atau mundur mengikut selang yang ditetapkan.\n\n'
+            'Aktiviti 2 – Susun Nombor (15 minit)\n'
+            'Secara berpasangan, murid menerima 5 kad nombor. Murid membandingkan digit dari nilai tempat terbesar dan menyusun nombor mengikut tertib menaik, kemudian menurun. Murid menerangkan sebab kedudukan dua nombor yang dipilih.\n\n'
+            'Aktiviti 3 – Lengkapkan Urutan (18 minit)\n'
+            'Dalam kumpulan, murid melengkapkan urutan nombor hingga 10 000 yang mempunyai nombor hilang. Murid mengenal pasti pola/selang dan merekod jawapan pada kad tugasan.\n\n'
+            'Aktiviti 4 – Semakan Individu (10 minit)\n'
+            'Murid menjawab 5 item: dua item susun menaik, satu item susun menurun dan dua item melengkapkan urutan. Guru menyemak strategi serta ketepatan jawapan.'
+        )
+        r['PEMULIHAN / PENGAYAAN']=(
+            'Pemulihan: Murid menggunakan carta nilai tempat dan set nombor yang lebih kecil sebelum kembali kepada nombor hingga 10 000.\n'
+            'Pengayaan: Murid membina sendiri lima nombor daripada digit diberi, menyusunnya dan mencipta satu urutan nombor untuk diselesaikan rakan.'
+        )
+    return r
+
+try:
+    _rph_rows_before_v25100=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _math_rph_quality_v25100(s, _rph_rows_before_v25100(s, ai_text))
+except NameError:
+    pass
+# ===== END v25.100 MATH RPH QUALITY PATCH =====
