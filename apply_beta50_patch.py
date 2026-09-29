@@ -244,7 +244,7 @@ def callback(cid,d):
         ss["requested_material"]="rph"
         ss["quick_material_flow"]=True
         ss["assessment_mode"]="formative"
-        return show_grades(cid)
+        return choose_grade(cid)
     return _callback_v2501_base(cid,d)
 
 def _main_pdp_entry_v2502(cid):
@@ -253,7 +253,7 @@ def _main_pdp_entry_v2502(cid):
     ss["requested_material"]="rph"
     ss["quick_material_flow"]=True
     ss["assessment_mode"]="formative"
-    return show_grades(cid)
+    return choose_grade(cid)
 
 APP_VERSION=str(globals().get("APP_VERSION",""))+"+MAIN-PDP-V2502"
 # END MAIN_PDP_ENTRY_V2501
