@@ -27627,3 +27627,54 @@ try:
 except NameError:
     pass
 # ===== END v25.104 GLOBAL RPH QA CLEANUP =====
+
+
+# ===== v25.105 GLOBAL RPH SUBJECT QA =====
+# Conservative cross-subject QA at final formatter boundary.
+# Do not fabricate curriculum standards; improve generic pedagogy only when subject context is known.
+def _rph_is_generic_v25105(v):
+    x=str(v or '').lower().strip()
+    return (not x) or any(p in x for p in (
+        'menunjukkan penguasaan berkaitan',
+        'bukti pencapaian melalui tugasan yang selaras',
+        'mengaktifkan pengetahuan sedia ada murid berkaitan',
+        'pemerhatian, soal jawab dan semakan hasil kerja berdasarkan standard pembelajaran'
+    ))
+
+def _subject_rph_qa_v25105(s,r):
+    r=dict(r or {})
+    subject=str(s.get('subject') or '').lower()
+    topic=str(s.get('topic') or s.get('lesson_title') or '').strip()
+    focus=str(s.get('subtopic') or s.get('focus') or topic).strip()
+    hay=(' '.join([topic,focus,str(s.get('sp_text') or '')])).lower()
+
+    if ('sains' in subject or 'science' in subject) and _rph_is_generic_v25105(r.get('PENTAKSIRAN')):
+        r['PENTAKSIRAN']='Pemerhatian kemahiran proses sains yang digunakan, soal jawab berdasarkan bukti/pemerhatian dan semakan hasil tugasan murid.'
+    if ('sains' in subject or 'science' in subject) and _rph_is_generic_v25105(r.get('KBAT / PAK21')):
+        r['KBAT / PAK21']='Membuat pemerhatian, mengelas, mengukur, membuat inferens, meramal atau berkomunikasi mengikut kemahiran yang relevan dengan PdP.'
+
+    if ('bahasa melayu' in subject or subject.strip()=='bm') and _rph_is_generic_v25105(r.get('PENTAKSIRAN')):
+        if any(x in hay for x in ('membaca','bacaan')):
+            r['PENTAKSIRAN']='Pemerhatian bacaan murid, sebutan/kelancaran mengikut fokus dan semakan kefahaman melalui respons lisan atau bertulis.'
+        elif any(x in hay for x in ('menulis','penulisan')):
+            r['PENTAKSIRAN']='Semakan hasil penulisan berdasarkan fokus kemahiran, penggunaan bahasa dan ketepatan respons murid.'
+        elif any(x in hay for x in ('mendengar','bertutur','lisan')):
+            r['PENTAKSIRAN']='Pemerhatian respons lisan, kejelasan penyampaian dan penggunaan bahasa mengikut fokus PdP.'
+
+    if ('english' in subject or 'bahasa inggeris' in subject or subject.strip()=='bi') and _rph_is_generic_v25105(r.get('PENTAKSIRAN')):
+        if 'reading' in hay:
+            r['PENTAKSIRAN']='Teacher observes pupils’ reading performance and checks comprehension responses against the lesson focus.'
+        elif 'writing' in hay:
+            r['PENTAKSIRAN']='Teacher checks pupils’ written work for task completion, relevant language use and accuracy appropriate to the lesson focus.'
+        elif 'listening' in hay or 'speaking' in hay:
+            r['PENTAKSIRAN']='Teacher observes pupils’ listening/speaking responses and checks successful completion of the target communication task.'
+
+    return r
+
+try:
+    _rph_rows_before_v25105=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _subject_rph_qa_v25105(s,_rph_rows_before_v25105(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.105 GLOBAL RPH SUBJECT QA =====
