@@ -27543,3 +27543,42 @@ try:
 except NameError:
     pass
 # ===== END v25.102 REMOVE 4-LEVEL RPH TASK =====
+
+
+# ===== v25.103 GLOBAL REMOVE 4-LEVEL TASK FROM RPH =====
+# Locked rule for ALL subjects: no 4-level worksheet/tugasan instruction inside RPH.
+# Worksheet generation remains a separate material feature; this only cleans RPH text/rows.
+def _strip_4level_rph_text_v25103(value):
+    v=str(value or '')
+    if not v:
+        return v
+    patterns=[
+        r'(?im)^\\s*\\d+\\.\\s*Guru mengagihkan Lembaran Kerja Aras 1, 2, 3 atau 4[^\\n]*(?:\\n(?!\\s*(?:Aktiviti|Penutup|Pemulihan|Pengayaan|Refleksi|Closure|Remedial|Enrichment)\\b)[^\\n]*)?',
+        r'(?im)^\\s*\\d+\\.\\s*Teacher distributes Level 1, 2, 3 or 4 worksheets[^\\n]*(?:\\n(?!\\s*(?:Activity|Closure|Remedial|Enrichment|Reflection)\\b)[^\\n]*)?',
+        r'(?im)^.*(?:worksheet|lembaran kerja).*?(?:4\\s*aras|four\\s*levels?|aras\\s*1\\s*,?\\s*2\\s*,?\\s*3\\s*(?:atau|dan|,)\\s*4|level\\s*1\\s*,?\\s*2\\s*,?\\s*3\\s*(?:or|and|,)\\s*4).*?$'
+    ]
+    for p in patterns:
+        v=re.sub(p,'',v)
+    return re.sub(r'\\n{3,}','\\n\\n',v).strip()
+
+try:
+    _rph_rows_before_v25103=_rph_rows
+    def _rph_rows(s, ai_text):
+        r=_rph_rows_before_v25103(s, ai_text)
+        if not isinstance(r,dict):
+            return r
+        out=dict(r)
+        for k in list(out.keys()):
+            out[k]=_strip_4level_rph_text_v25103(out[k])
+        return out
+except NameError:
+    pass
+
+# Also clean local RPH text before any downstream formatter parses it.
+try:
+    _local_rph_text_before_v25103=_local_rph_text
+    def _local_rph_text(s,*a,**kw):
+        return _strip_4level_rph_text_v25103(_local_rph_text_before_v25103(s,*a,**kw))
+except NameError:
+    pass
+# ===== END v25.103 GLOBAL REMOVE 4-LEVEL TASK FROM RPH =====
