@@ -27399,3 +27399,119 @@ try:
 except NameError:
     pass
 # ===== END v25.100 MATH RPH QUALITY PATCH =====
+
+
+# ===== v25.101 MATH RPH SKILL ENGINE =====
+# Late, non-destructive Mathematics RPH skill engine.
+# Uses topic/focus/SP text already present in state; falls back safely to legacy rows.
+def _math_rph_skill_v25101(s):
+    topic=str(s.get('topic') or s.get('lesson_title') or '').strip()
+    sub=str(s.get('subtopic') or s.get('focus') or '').strip()
+    sp_text=' '.join(str(x or '') for x in [
+        s.get('sp_text'), ' '.join(s.get('grouped_sp_texts') or []),
+        s.get('lesson_focus'), s.get('focus')
+    ]).strip()
+    hay=(' '.join([topic,sub,sp_text])).lower()
+    if ('darab' in hay and ('masa' in hay or 'waktu' in hay)):
+        return 'darab_masa'
+    if ('bahagi' in hay and ('masa' in hay or 'waktu' in hay)):
+        return 'bahagi_masa'
+    if ('tambah' in hay and ('masa' in hay or 'waktu' in hay)):
+        return 'tambah_masa'
+    if ('tolak' in hay and ('masa' in hay or 'waktu' in hay)):
+        return 'tolak_masa'
+    if ('susun' in hay and ('nombor' in hay or 'tertib' in hay)):
+        return 'susun_nombor'
+    if ('bundar' in hay):
+        return 'bundar_nombor'
+    if ('nilai tempat' in hay or 'nilai digit' in hay):
+        return 'nilai_tempat'
+    if ('darab' in hay):
+        return 'darab'
+    if ('bahagi' in hay):
+        return 'bahagi'
+    if ('tambah' in hay):
+        return 'tambah'
+    if ('tolak' in hay):
+        return 'tolak'
+    if ('pecahan' in hay):
+        return 'pecahan'
+    if ('perpuluhan' in hay):
+        return 'perpuluhan'
+    if ('wang' in hay):
+        return 'wang'
+    if ('masa' in hay or 'waktu' in hay):
+        return 'masa'
+    if ('panjang' in hay or 'jisim' in hay or 'isipadu' in hay or 'ukuran' in hay):
+        return 'ukuran'
+    if ('bentuk' in hay or 'ruang' in hay or 'sudut' in hay):
+        return 'ruang'
+    if ('data' in hay or 'graf' in hay or 'carta' in hay):
+        return 'data'
+    return ''
+
+def _math_rph_apply_skill_v25101(s,r):
+    if 'matematik' not in str(s.get('subject') or '').lower():
+        return r
+    r=dict(r or {})
+    # Always deduplicate standards at formatter boundary.
+    r['STANDARD KANDUNGAN']=_rph_unique_codes_v25100(r.get('STANDARD KANDUNGAN') or s.get('sk_code'))
+    r['STANDARD PEMBELAJARAN']=_rph_unique_codes_v25100(r.get('STANDARD PEMBELAJARAN') or s.get('sp_code'))
+    skill=_math_rph_skill_v25101(s)
+
+    banks={
+      'darab_masa':{
+       'obj':'Pada akhir PdP, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 pengiraan darab melibatkan unit masa dengan langkah pengiraan yang betul.',
+       'crit':'Murid berjaya apabila dapat memilih unit masa yang betul, melakukan operasi darab dan memperoleh sekurang-kurangnya 4 daripada 5 jawapan tepat.',
+       'prior':'Murid telah mengenal unit masa dan mempunyai kemahiran asas fakta darab.',
+       'assess':'Pemerhatian langkah pengiraan, soal jawab unit masa dan semakan 5 item individu operasi darab masa.',
+       'ind':'5 minit\n1. Guru memaparkan satu situasi berulang, contohnya aktiviti mengambil masa 15 minit dan dilakukan 3 kali.\n2. Murid menganggarkan jumlah masa dan menyatakan operasi yang sesuai.\n3. Guru menghubungkan jawapan murid dengan operasi darab masa.',
+       'act':'Aktiviti 1 – Model Darab Masa (12 minit)\nMurid menggunakan model jam/kad masa untuk menunjukkan kumpulan masa yang sama, kemudian menulis ayat matematik darab yang sepadan.\n\nAktiviti 2 – Pengiraan Berpandu (15 minit)\nSecara berpasangan, murid menyelesaikan pengiraan darab masa. Murid mengenal pasti unit, mendarab nilai masa dan menulis jawapan bersama unit yang betul. Guru membimbing penukaran unit apabila diperlukan oleh item.\n\nAktiviti 3 – Aplikasi Kontekstual (18 minit)\nKumpulan menyelesaikan situasi seperti tempoh perjalanan, kelas atau aktiviti berulang. Murid memilih maklumat, membina ayat matematik, menunjukkan langkah pengiraan dan menyemak kewajaran jawapan.\n\nAktiviti 4 – Semakan Individu (10 minit)\nMurid menjawab 5 item darab masa secara individu dan menerangkan langkah bagi satu item pilihan.',
+       'rem':'Pemulihan: Gunakan fakta darab mudah dan model jam/kad masa sebelum beralih kepada pengiraan berbilang langkah.\nPengayaan: Berikan masalah darab masa yang memerlukan penukaran unit atau lebih daripada satu langkah.'
+      },
+      'bahagi_masa':{
+       'obj':'Pada akhir PdP, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 pengiraan bahagi melibatkan unit masa dengan langkah yang betul.',
+       'crit':'Murid berjaya apabila dapat mengenal pasti operasi bahagi, menggunakan unit masa yang sesuai dan memperoleh sekurang-kurangnya 4 daripada 5 jawapan tepat.',
+       'prior':'Murid telah mengenal unit masa dan mempunyai kemahiran asas fakta bahagi.',
+       'assess':'Pemerhatian strategi bahagi, soal jawab unit masa dan semakan 5 item individu.',
+       'ind':'5 minit\n1. Guru memberi situasi satu tempoh masa dibahagi sama rata kepada beberapa bahagian.\n2. Murid mencadangkan operasi yang sesuai dan menganggarkan jawapan.',
+       'act':'Aktiviti 1 – Kongsi Masa Sama Rata (12 minit)\nMurid menggunakan kad masa/model jam untuk membahagikan tempoh masa kepada kumpulan sama rata dan menulis ayat matematik.\n\nAktiviti 2 – Pengiraan Berpandu (15 minit)\nPasangan menyelesaikan operasi bahagi masa dengan unit yang betul dan menunjukkan langkah pengiraan.\n\nAktiviti 3 – Masalah Kontekstual (18 minit)\nKumpulan menyelesaikan masalah pembahagian tempoh aktiviti/perjalanan dan menerangkan strategi.\n\nAktiviti 4 – Semakan Individu (10 minit)\nMurid menjawab 5 item bahagi masa dan menerangkan satu jawapan.',
+       'rem':'Pemulihan: Gunakan nombor dan fakta bahagi mudah bersama model masa.\nPengayaan: Selesaikan masalah bahagi masa yang melibatkan penukaran unit atau lebih daripada satu langkah.'
+      },
+      'tambah_masa':{
+       'obj':'Pada akhir PdP, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 pengiraan tambah melibatkan masa dengan unit yang betul.',
+       'crit':'Murid berjaya apabila dapat menambah tempoh masa dan memperoleh sekurang-kurangnya 4 daripada 5 jawapan tepat.',
+       'prior':'Murid telah mengenal unit masa dan boleh melakukan operasi tambah asas.',
+       'assess':'Pemerhatian langkah tambah masa dan semakan 5 item individu.',
+       'ind':'5 minit\nGuru memaparkan dua tempoh aktiviti dan meminta murid menentukan jumlah masa.',
+       'act':'Aktiviti 1 – Gabung Tempoh (12 minit)\nMurid memodelkan dua tempoh masa dan menulis ayat tambah.\n\nAktiviti 2 – Pengiraan Berpandu (15 minit)\nPasangan menambah masa dengan menyusun nilai mengikut unit dan membuat penukaran unit apabila diperlukan.\n\nAktiviti 3 – Aplikasi (18 minit)\nKumpulan menyelesaikan masalah jumlah tempoh aktiviti/perjalanan dan menunjukkan langkah.\n\nAktiviti 4 – Semakan Individu (10 minit)\nMurid menjawab 5 item tambah masa.',
+       'rem':'Pemulihan: Gunakan model jam dan nilai masa mudah.\nPengayaan: Masalah tambah masa berbilang langkah dan penukaran unit.'
+      },
+      'tolak_masa':{
+       'obj':'Pada akhir PdP, murid dapat menyelesaikan sekurang-kurangnya 4 daripada 5 pengiraan tolak melibatkan masa dengan unit yang betul.',
+       'crit':'Murid berjaya apabila dapat menentukan beza/tempoh masa dan memperoleh sekurang-kurangnya 4 daripada 5 jawapan tepat.',
+       'prior':'Murid telah mengenal unit masa dan boleh melakukan operasi tolak asas.',
+       'assess':'Pemerhatian langkah tolak masa dan semakan 5 item individu.',
+       'ind':'5 minit\nGuru memaparkan masa mula dan masa tamat mudah; murid menganggarkan tempohnya.',
+       'act':'Aktiviti 1 – Cari Beza Masa (12 minit)\nMurid menggunakan model jam/garis masa untuk menunjukkan beza dua masa.\n\nAktiviti 2 – Pengiraan Berpandu (15 minit)\nPasangan melakukan operasi tolak masa dengan unit yang betul dan penukaran unit apabila diperlukan.\n\nAktiviti 3 – Aplikasi (18 minit)\nKumpulan menyelesaikan masalah tempoh perjalanan/aktiviti dan menunjukkan langkah.\n\nAktiviti 4 – Semakan Individu (10 minit)\nMurid menjawab 5 item tolak masa.',
+       'rem':'Pemulihan: Gunakan garis masa/model jam dan contoh mudah.\nPengayaan: Masalah beza masa berbilang langkah dan penukaran unit.'
+      }
+    }
+    bank=banks.get(skill)
+    if bank:
+        r['OBJEKTIF PEMBELAJARAN']=bank['obj']
+        r['KRITERIA KEJAYAAN']=bank['crit']
+        r['PENGETAHUAN SEDIA ADA']=bank['prior']
+        r['PENTAKSIRAN']=bank['assess']
+        r['SET INDUKSI']=bank['ind']
+        r['AKTIVITI UTAMA']=bank['act']
+        r['PEMULIHAN / PENGAYAAN']=bank['rem']
+    return r
+
+try:
+    _rph_rows_before_v25101=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _math_rph_apply_skill_v25101(s, _rph_rows_before_v25101(s, ai_text))
+except NameError:
+    pass
+# ===== END v25.101 MATH RPH SKILL ENGINE =====
