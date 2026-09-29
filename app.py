@@ -27906,3 +27906,44 @@ try:
 except NameError:
     pass
 # ===== END v25.110 RPH DURATION AND VARIATION QA =====
+
+
+# ===== v25.111 RPH STAGE APPROPRIATENESS QA =====
+# Guard generic fallback language by school stage without overriding specific curriculum-driven content.
+def _rph_stage_v25111(state):
+    raw=' '.join(str(state.get(k) or '') for k in ('grade','year','form','level','class_level')).lower()
+    m=re.search(r'(?:tahun|year)\\s*([1-6])',raw)
+    if m: return ('primary',int(m.group(1)))
+    m=re.search(r'(?:tingkatan|form)\\s*([1-5])',raw)
+    if m: return ('secondary',int(m.group(1)))
+    return (None,None)
+
+def _rph_stage_qa_v25111(state,rows):
+    r=dict(rows or {})
+    stage,n=_rph_stage_v25111(state)
+    if not stage: return r
+    act=str(r.get('AKTIVITI UTAMA') or '')
+    # Only tune generic/fallback activities produced by the quality guards.
+    marker=any(x in act for x in ('Bina Konsep','Teroka Contoh','Kenal Pasti Strategi','Pemerhatian Fokus','Teroka Fenomena','Pemerhatian Awal'))
+    if not marker: return r
+    if stage=='primary' and n<=2:
+        act=act.replace('menerangkan pola/konsep yang diperhatikan','menyatakan apa yang diperhatikan dengan perkataan, gambar atau contoh mudah')
+        act=act.replace('membandingkan langkah dengan rakan','mencuba langkah bersama rakan dengan bimbingan guru')
+        act=act.replace('membandingkan bukti, menerangkan dapatan dan membuat inferens atau kesimpulan yang disokong pemerhatian','membandingkan pemerhatian dan menyatakan dapatan mudah berdasarkan apa yang dilihat atau dilakukan')
+        act=act.replace('tugasan atau masalah yang sesuai dengan tahap','tugasan pendek menggunakan bahan, gambar atau situasi harian yang sesuai dengan tahap')
+    elif stage=='primary' and n>=5:
+        act=act.replace('tugasan atau masalah yang sesuai dengan tahap','masalah kontekstual yang memerlukan pemilihan strategi dan penerangan jawapan')
+        act=act.replace('memberi respons individu berdasarkan dapatan','memberi respons individu, menyokong jawapan dengan bukti/dapatan')
+    elif stage=='secondary':
+        act=act.replace('tugasan atau masalah yang sesuai dengan tahap','masalah/aplikasi yang memerlukan pemilihan strategi, justifikasi dan semakan kewajaran jawapan')
+        act=act.replace('menerangkan dapatan dan membuat inferens atau kesimpulan yang disokong pemerhatian','menganalisis dapatan, membuat inferens/kesimpulan dan menyokongnya dengan bukti yang diperoleh')
+    r['AKTIVITI UTAMA']=act
+    return r
+
+try:
+    _rph_rows_before_v25111=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_stage_qa_v25111(s,_rph_rows_before_v25111(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.111 RPH STAGE APPROPRIATENESS QA =====
