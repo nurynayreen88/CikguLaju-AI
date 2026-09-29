@@ -28373,3 +28373,50 @@ try:
 except NameError:
     pass
 # ===== END v25.121 MATH + SCIENCE CONTEXT QA =====
+
+# ===== v25.122 SCIENCE VERIFIED-PDP SCHEMA COMPATIBILITY HOTFIX =====
+# Older Science verified_pdp_sequence DBs do not necessarily contain
+# pdp_sequence_code. Read the schema first and synthesise a stable runtime
+# grouping key from existing sequence/title fields when that column is absent.
+_sm2542_rows_v25122_base = _sm2542_rows
+
+def _sm2542_rows(year_label, subject):
+    if subject not in ('Sains','Matematik'):
+        return []
+    con=_db()
+    try:
+        table = 'verified_pdp_sequence_v2' if subject == 'Matematik' else 'verified_pdp_sequence'
+        cols={str(r[1]) for r in con.execute(f'PRAGMA table_info({table})').fetchall()}
+        where=["year_label=?", "subject=?"]
+        params=[str(year_label or '').strip(), subject]
+        if 'pdp_sequence_code' in cols:
+            where.append("COALESCE(pdp_sequence_code,'')<>''")
+        if 'verification_status' in cols:
+            where.append("COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')")
+        order=[]
+        if 'source_sequence_no' in cols:
+            order.append('COALESCE(source_sequence_no,9999)')
+        elif 'week_no' in cols:
+            order.append('COALESCE(week_no,9999)')
+        if 'id' in cols:
+            order.append('id')
+        sql=f"SELECT * FROM {table} WHERE " + ' AND '.join(where)
+        if order:
+            sql += ' ORDER BY ' + ', '.join(order)
+        rs=[dict(r) for r in con.execute(sql,params).fetchall()]
+        if 'pdp_sequence_code' not in cols:
+            for pos,r in enumerate(rs,1):
+                seq=r.get('source_sequence_no')
+                title=str(r.get('pdp_title') or r.get('topic') or r.get('subtopic') or '').strip()
+                # Rows belonging to the same PdP normally share source_sequence_no.
+                # Title is retained in the key to avoid accidental cross-topic grouping.
+                if seq not in (None,''):
+                    r['pdp_sequence_code']=f"LEGACY-{seq}-{title}" if title else f"LEGACY-{seq}"
+                else:
+                    r['pdp_sequence_code']=f"LEGACY-ROW-{r.get('id',pos)}-{title}" if title else f"LEGACY-ROW-{r.get('id',pos)}"
+        return rs
+    finally:
+        con.close()
+
+APP_VERSION='v25.122-SCIENCE-SCHEMA-COMPAT'
+# ===== END v25.122 =====
