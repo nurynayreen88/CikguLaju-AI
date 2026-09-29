@@ -28235,3 +28235,90 @@ def callback(cid, d, *args, **kwargs):
     if d == 'level_secondary_locked' or d == 'level_secondary' or str(d or '').startswith('form_'):
         return _secondary_locked_v25119(cid)
     return _callback_before_v25119(cid,d,*args,**kwargs)
+
+# ===== v25.120 MATHEMATICS TOPIC-SPECIFIC ACTIVITY PRIORITY =====
+# Fix cross-topic collisions such as "Wang — Tambah Wang" being classified as generic addition.
+def _math_topic_hay_v25120(s):
+    vals=[s.get('topic'),s.get('lesson_title'),s.get('subtopic'),s.get('focus'),s.get('lesson_focus'),s.get('sp_text')]
+    vals += list(s.get('grouped_sp_texts') or [])
+    return ' '.join(str(x or '') for x in vals).lower()
+
+def _math_rph_skill_v25101(s):
+    hay=_math_topic_hay_v25120(s)
+    # Compound domains must win before generic operations.
+    if 'masa' in hay or 'waktu' in hay:
+        if 'darab' in hay: return 'darab_masa'
+        if 'bahagi' in hay: return 'bahagi_masa'
+        if 'tambah' in hay: return 'tambah_masa'
+        if 'tolak' in hay: return 'tolak_masa'
+        return 'masa'
+    if 'wang' in hay or 'rm' in hay or 'sen' in hay:
+        return 'wang'
+    if 'pecahan' in hay:
+        return 'pecahan'
+    if 'perpuluhan' in hay:
+        return 'perpuluhan'
+    if 'panjang' in hay or 'jisim' in hay or 'isipadu' in hay or 'isi padu' in hay or 'ukuran' in hay:
+        return 'ukuran'
+    if 'bentuk' in hay or 'ruang' in hay or 'sudut' in hay:
+        return 'ruang'
+    if 'data' in hay or 'graf' in hay or 'carta' in hay or 'piktograf' in hay:
+        return 'data'
+    if 'susun' in hay and ('nombor' in hay or 'tertib' in hay): return 'susun_nombor'
+    if 'bundar' in hay: return 'bundar_nombor'
+    if 'nilai tempat' in hay or 'nilai digit' in hay: return 'nilai_tempat'
+    if 'darab' in hay: return 'darab'
+    if 'bahagi' in hay: return 'bahagi'
+    if 'tambah' in hay: return 'tambah'
+    if 'tolak' in hay: return 'tolak'
+    return ''
+
+def _math_topic_specific_v25120(state, rows):
+    r=dict(rows or {})
+    if 'matematik' not in str(state.get('subject') or '').lower(): return r
+    hay=_math_topic_hay_v25120(state)
+    if 'wang' not in hay and 'rm' not in hay and 'sen' not in hay: return r
+    dur=_rph_duration_minutes_v25110(state) if '_rph_duration_minutes_v25110' in globals() else 60
+    main=max(15,dur-10); a=max(5,round(main*.25)); b=max(5,round(main*.35)); c=max(5,main-a-b)
+    if 'tambah' in hay:
+        bank=(
+          'Murid membina dua amaun menggunakan wang contoh Malaysia atau kad nilai, kemudian menulis ayat tambah dalam RM dan sen dengan notasi yang betul.',
+          'Secara berpasangan, murid memilih dua kad harga, menentukan jumlah harga barangan dan membandingkan strategi pengiraan. Guru menyemak penjajaran nilai ringgit/sen dan penukaran 100 sen = RM1 apabila berkaitan.',
+          'Murid menyelesaikan situasi pembelian berdasarkan kad harga, resit atau senarai harga, memilih maklumat penting, menunjukkan pengiraan jumlah wang dan menyemak kewajaran jawapan.'
+        )
+    elif 'tolak' in hay or 'baki' in hay:
+        bank=(
+          'Murid membina situasi harga dan bayaran menggunakan wang contoh Malaysia, kemudian menentukan beza atau baki yang perlu dicari.',
+          'Pasangan menggunakan kad harga dan wang contoh untuk mengira beza harga atau baki selepas pembayaran serta merekod ayat matematik dalam RM dan sen.',
+          'Murid menyelesaikan situasi jual beli/resit, menentukan baki atau beza, menunjukkan langkah pengiraan dan menyemak sama ada nilai baki munasabah.'
+        )
+    elif 'darab' in hay:
+        bank=(
+          'Murid menggunakan beberapa kad harga yang sama untuk memodelkan pembelian berulang dan menghubungkannya dengan operasi darab wang.',
+          'Pasangan mengira jumlah kos bagi beberapa unit barang yang sama, merekod ayat darab dan menulis jawapan menggunakan RM/sen dengan betul.',
+          'Murid menyelesaikan masalah pembelian berbilang unit, memilih operasi, menunjukkan pengiraan dan menyemak jumlah kos dengan strategi kedua apabila sesuai.'
+        )
+    elif 'bahagi' in hay:
+        bank=(
+          'Murid menggunakan wang contoh untuk membahagikan satu amaun kepada kumpulan sama banyak dan menerangkan maksud bahagi dalam konteks wang.',
+          'Pasangan membahagikan amaun/kos secara sama rata mengikut situasi yang diberi serta merekod ayat bahagi dan unit RM/sen dengan betul.',
+          'Murid menyelesaikan masalah perkongsian kos atau pembahagian amaun, menunjukkan langkah dan menyemak jawapan menggunakan hubungan darab-bahagi apabila sesuai.'
+        )
+    else:
+        bank=(
+          'Murid mengenal nilai wang contoh Malaysia, memadankan syiling/wang kertas dengan nilai dan membina amaun sasaran menggunakan lebih daripada satu gabungan.',
+          'Pasangan membaca kad harga, membina amaun yang tepat dan menerangkan gabungan wang yang digunakan dengan istilah RM dan sen yang betul.',
+          'Murid menyelesaikan situasi wang harian berdasarkan kad harga atau senarai harga dan menyemak kewajaran amaun yang diperoleh.'
+        )
+    r['AKTIVITI UTAMA']=f'Aktiviti 1 – Bina Kefahaman ({a} minit)\n{bank[0]}\n\nAktiviti 2 – Latihan Berpandu dan Komunikasi Matematik ({b} minit)\n{bank[1]}\n\nAktiviti 3 – Aplikasi dan Penyelesaian Masalah ({c} minit)\n{bank[2]}\n\nAktiviti 4 – Semakan Individu (5 minit)\nMurid menjawab semakan ringkas berkaitan kemahiran wang sasaran; guru menyemak operasi/strategi, ketepatan pengiraan serta penggunaan RM dan sen.'
+    # Keep induction grounded in the same topic instead of generic number manipulatives.
+    r['SET INDUKSI']='5 minit\nGuru memaparkan wang contoh Malaysia bersama kad harga/resit ringkas. Murid menyatakan amaun atau menganggarkan jumlah/baki mengikut fokus PdP sebelum strategi formal dibincangkan.'
+    return r
+
+try:
+    _rph_rows_before_v25120=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _math_topic_specific_v25120(s,_rph_rows_before_v25120(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.120 MATHEMATICS TOPIC-SPECIFIC ACTIVITY PRIORITY =====
