@@ -27997,3 +27997,40 @@ try:
 except NameError:
     pass
 # ===== END v25.112 RPH TERMINOLOGY AND REPETITION QA =====
+
+
+# ===== v25.113 RPH MEASURABLE OBJECTIVE QA =====
+# Guard measurable objectives and criteria only when final output is clearly generic.
+def _rph_measurable_qa_v25113(state,rows):
+    r=dict(rows or {})
+    sub=str(state.get('subject') or '').lower()
+    obj=' '.join(str(r.get('OBJEKTIF PEMBELAJARAN') or '').split())
+    crit=' '.join(str(r.get('KRITERIA KEJAYAAN') or '').split())
+    generic_obj=(not obj) or any(x in obj.lower() for x in ('memahami topik','memahami tajuk','menguasai pembelajaran','mengetahui tentang'))
+    generic_crit=(not crit) or any(x in crit.lower() for x in ('memahami dengan baik','menguasai dengan baik','berjaya mengikuti aktiviti'))
+    topic=str(state.get('topic') or state.get('subtopic') or state.get('lesson_title') or 'fokus PdP')
+
+    if generic_obj:
+        if 'matematik' in sub:
+            r['OBJEKTIF PEMBELAJARAN']=f'Pada akhir PdP, murid dapat menunjukkan kemahiran Matematik bagi {topic} melalui sekurang-kurangnya 4 daripada 5 respons/tugasan yang tepat.'
+        elif 'sains' in sub or 'science' in sub:
+            r['OBJEKTIF PEMBELAJARAN']=f'Pada akhir PdP, murid dapat menunjukkan pemahaman tentang {topic} melalui pemerhatian/rekod yang relevan dan sekurang-kurangnya 4 daripada 5 respons yang tepat.'
+        elif 'bahasa melayu' in sub or sub.strip()=='bm':
+            r['OBJEKTIF PEMBELAJARAN']=f'Pada akhir PdP, murid dapat melaksanakan kemahiran bahasa bagi {topic} dan memberikan sekurang-kurangnya 4 daripada 5 respons yang menepati tugasan.'
+        elif 'english' in sub or 'bahasa inggeris' in sub or sub.strip()=='bi':
+            r['OBJEKTIF PEMBELAJARAN']=f'By the end of the lesson, pupils can demonstrate the target language skill for {topic} by completing at least 4 out of 5 task responses successfully.'
+
+    if generic_crit:
+        if 'english' in sub or 'bahasa inggeris' in sub or sub.strip()=='bi':
+            r['KRITERIA KEJAYAAN']='Pupils meet the task requirements and achieve the measurable target stated in the learning objective.'
+        else:
+            r['KRITERIA KEJAYAAN']='Murid memenuhi kehendak tugasan dan mencapai sasaran boleh ukur yang dinyatakan dalam objektif pembelajaran.'
+    return r
+
+try:
+    _rph_rows_before_v25113=_rph_rows
+    def _rph_rows(s, ai_text):
+        return _rph_measurable_qa_v25113(s,_rph_rows_before_v25113(s,ai_text))
+except NameError:
+    pass
+# ===== END v25.113 RPH MEASURABLE OBJECTIVE QA =====
