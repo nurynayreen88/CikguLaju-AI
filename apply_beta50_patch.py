@@ -342,3 +342,67 @@ if _old not in _txt:
 _txt=_txt.replace(_old,_new,1)
 P.write_text(_txt,encoding="utf-8")
 print("MATH v25.99 original reader patched",flush=True)
+
+
+# MATH_V2599_AUTO_SKSP_V1
+# Final generated-app patch: Math PdP owns its verified SK/SP and skips legacy manual SK/SP screens.
+_txt=P.read_text(encoding="utf-8")
+_math_auto = r'''
+# MATH_V2599_AUTO_SKSP_V1
+_math2599_callback_base = callback
+
+def _math2599_auto_commit(cid, idx):
+    ss=state.setdefault(cid,{})
+    rows=ss.get("_sm2542_pdp_rows") or ss.get("_sm2542_rows") or []
+    titles=ss.get("_sm2542_pdp_titles") or ss.get("_sm2542_pdp_codes") or []
+    selected=[]
+    if 0 <= idx < len(titles):
+        key=titles[idx]
+        for r in rows:
+            if str(r.get("pdp_sequence_code") or "")==str(key) or str(r.get("pdp_title") or "")==str(key):
+                selected.append(r)
+    if not selected and 0 <= idx < len(rows):
+        selected=[rows[idx]]
+    if not selected:
+        return _math2599_callback_base(cid,"home")
+    r0=selected[0]
+    ss.update({
+        "task":"quick_material","quick_material_flow":True,"rph_mode":"fast_rpt","assessment_mode":"formative",
+        "topic":str(r0.get("unit_title") or r0.get("theme") or ""),
+        "subtopic":str(r0.get("pdp_title") or ""),
+        "pdp_title":str(r0.get("pdp_title") or ""),
+        "pdp_sequence_code":str(r0.get("pdp_sequence_code") or ""),
+        "rpt_theme":str(r0.get("theme") or ""),
+        "rpt_unit_title":str(r0.get("unit_title") or ""),
+        "rpt_topic":str(r0.get("pdp_title") or ""),
+        "skill_metadata":str(r0.get("skill_metadata") or ""),
+        "textbook_ref":str(r0.get("textbook_ref") or ""),
+        "activitybook_ref":str(r0.get("activitybook_ref") or "")
+    })
+    mapped=[]
+    seen=set()
+    for r in selected:
+        sk=str(r.get("sk_code") or "").strip()
+        sp=str(r.get("sp_code") or "").strip()
+        if not sp: continue
+        k=(sk,sp)
+        if k in seen: continue
+        seen.add(k)
+        mapped.append({"sk_code":sk,"sk_text":str(r.get("sk_text") or ""),"sp_code":sp,"sp_text":str(r.get("sp_text") or "")})
+    if not mapped:
+        return send(cid,"⚠️ <b>SK/SP verified untuk PdP Matematik ini belum lengkap.</b>",[[{"text":"🏠 Menu Utama","callback_data":"home"}]])
+    _commit_multi_sp(ss,mapped[:12])
+    return _temporary_auto_pack_v2386(cid)
+
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or "")
+    if ss.get("subject")=="Matematik" and ds.startswith("sm2542_pdp_"):
+        try: idx=int(ds.rsplit("_",1)[1])
+        except Exception: idx=-1
+        return _math2599_auto_commit(cid,idx)
+    return _math2599_callback_base(cid,d)
+'''
+_txt += _math_auto
+P.write_text(_txt,encoding="utf-8")
+print("MATH v25.99 auto SK/SP route installed",flush=True)
