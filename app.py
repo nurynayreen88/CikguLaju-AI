@@ -31624,3 +31624,33 @@ if '_science_sp_focus_v25128' not in globals():
     def _science_sp_focus_v25128(s, r):
         return _science_sp_focus_v25127(s, r)
 # ===== END v25.176 =====
+
+# ===== v25.177 SCIENCE RPH RECURSION FIX =====
+# v25.128 and v25.129 reused the same mutable global *_base names.
+# After v25.129 reassignment, fallback paths in the older wrappers could call
+# themselves recursively. Pin those fallback bases to the stable v25.127
+# implementations. Later v25.129/v25.130/v25.132 wrappers remain active.
+APP_VERSION='v25.177-RPH-SCIENCE-RECURSION-FIX'
+
+# Stable non-recursive fallbacks.
+_science_action_v25128_base = _science_action_v25127
+_science_sp_activity_v25128_base = _science_sp_activity_v25127
+
+# Keep the missing v25.128 focus compatibility name explicit.
+def _science_sp_focus_v25128(s, r):
+    return _science_sp_focus_v25127(s, r)
+
+# Runtime sanity checks: exercise fallback paths that previously recursed.
+def _science_v25177_recursion_sanity():
+    # Unknown text must safely fall through rather than recurse.
+    _science_action_v25128('teks tanpa kata kerja pemetaan khas')
+    sample_s={'subject':'Sains','year':'Tahun 1','topic':'Contoh','sp_text':'Menyatakan contoh.'}
+    sample_r={'TAJUK':'Contoh','STANDARD PEMBELAJARAN':'Menyatakan contoh.'}
+    _science_sp_activity_v25128(sample_s, sample_r)
+    return True
+
+try:
+    _science_v25177_recursion_sanity()
+except RecursionError as _e:
+    raise RuntimeError('SCIENCE_V25177_RECURSION_SANITY_FAIL') from _e
+# ===== END v25.177 =====
