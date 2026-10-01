@@ -4,8 +4,6 @@ P=Path(__file__).with_name("app.py")
 s=P.read_text(encoding="utf-8")
 MARK="# BETA50_LESSON_FIRST_QA16"
 
-# HOTFIX v25.172 rolled back — restore last startup behavior
-
 # Runtime core is already a Git-safe 24,485,888-byte DB in the repository.
 s=s.replace(
     "os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v1.db')",
