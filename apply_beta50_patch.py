@@ -6,14 +6,17 @@ MARK="# BETA50_LESSON_FIRST_QA16"
 
 # HOTFIX v25.167 — repair two misnamed Science v25.128 definitions before app import.
 
-# HOTFIX v25.170 — break v25.164 worksheet self-recursion and Science focus recursion
+# HOTFIX v25.171 — repair actual generated Science names + all worksheet self-fallback variants
+s=s.replace("def _science_sp_focus_v25127(s):", "def _science_sp_focus_v25128(s):", 1)
+s=s.replace("_science_sp_focus_v25128_base = _science_sp_focus_v25128", "_science_sp_focus_v25128_base = globals().get('_science_sp_focus_v25128', globals().get('_science_sp_focus_v25127'))", 1)
+s=s.replace("_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25127(text):", "_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25128(text):", 1)
+s=s.replace("_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25127(s, rows):", "_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25128(s, rows):", 1)
 s=s.replace("return _ws151_language(s, contract, c, fmt)", "return _ws151_language_before_v25164(s, contract, c, fmt)")
 s=s.replace("return _ws151_math(s, contract, c, fmt)", "return _ws151_math_before_v25164(s, contract, c, fmt)")
 s=s.replace("return _ws151_science(s, contract, c, fmt)", "return _ws151_science_before_v25164(s, contract, c, fmt)")
-s=s.replace("_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25127(text):", "_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25128(text):", 1)
-s=s.replace("_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25127(s, rows):", "_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25128(s, rows):", 1)
-s=s.replace("_science_sp_focus_v25128_base = _science_sp_focus_v25128", "_science_sp_focus_v25128_base = globals().get('_science_sp_focus_v25128', _science_sp_focus_v25127)", 1)
-s=s.replace("    if not fmt:\n        raise RuntimeError('WORKSHEET_FORMAT_MISSING')", "    if not fmt:\n        sub=str(state.get('subject') or '').lower()\n        if 'sains' in sub or 'science' in sub:\n            c=dict(c or {}); c['format_key']='science_scenario'; return c\n        raise RuntimeError('WORKSHEET_FORMAT_MISSING')", 1)
+s=s.replace("return _ws164_language(s, contract, c, fmt)", "return _ws151_language_before_v25164(s, contract, c, fmt)")
+s=s.replace("return _ws164_math(s, contract, c, fmt)", "return _ws151_math_before_v25164(s, contract, c, fmt)")
+s=s.replace("return _ws164_science(s, contract, c, fmt)", "return _ws151_science_before_v25164(s, contract, c, fmt)")
 
 # Runtime core is already a Git-safe 24,485,888-byte DB in the repository.
 s=s.replace(
