@@ -3216,7 +3216,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
     phases=[('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))]
     for phase,text in phases:
-        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=_rph_format_activity_lines(text) if text else '—'; cells[2].text=''
+        phase_label, phase_text = _rph_phase_time_v25179(phase, text or '—')
+        cells=t2.add_row().cells; cells[0].text=phase_label; cells[1].text=phase_text or '—'; cells[2].text=''
     for row in t2.rows:
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
@@ -10651,8 +10652,9 @@ def create_pdf_file(s, ai_text, cid):
             story.append(Spacer(1,2*mm))
         phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else 'Fasa / Masa')+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else 'Aktiviti Pengajaran & Pembelajaran')+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else 'Catatan')+'</b>',body_style)]]
         for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]):
-            val=escape(_rph_format_activity_lines(rph.get(key) or '—')).replace('\n','<br/>')
-            phase_rows.append([Paragraph('<b>'+phase+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
+            phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
+            val=escape(phase_text or '—').replace('\n','<br/>')
+            phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
         story.extend([pt,Spacer(1,3*mm)])
@@ -31782,3 +31784,47 @@ def _science_v25178_sanity():
     return True
 _science_v25178_sanity()
 # ===== END v25.178 =====
+
+
+# ===== v25.179 RPH NUMBERING / PHASE-TIME PRESENTATION POLISH =====
+# Presentation-only normalization shared by RPH subjects. Do not alter DB/SK/SP/content.
+APP_VERSION='v25.179-RPH-NUMBERING-POLISH'
+
+def _rph_format_activity_lines(value):
+    """Keep activity headings unnumbered; number only genuine step sentences.
+    Time-only lines are kept unnumbered so PDF/Word phase renderers can attach them
+    to the phase label (e.g. Set Induksi (5 minit)).
+    """
+    v=str(value or '').replace('\\r\\n','\\n').replace('\\r','\\n').strip()
+    if not v:
+        return v
+    # Force Activity headings onto their own line without converting them to list items.
+    v=re.sub(r'(?<!\\n)\\s+(?=(?:Aktiviti|Activity)\\s+\\d+\\s*[–—-])','\\n',v,flags=re.I)
+    # Split embedded numbered steps.
+    v=re.sub(r'(?<!\\n)\\s+(?=(?:[1-9]|[1-9]\\d)\\.\\s)','\\n',v)
+    lines=[re.sub(r'\\s+',' ',x).strip() for x in v.split('\\n') if x.strip()]
+    out=[]; step_no=0
+    for line in lines:
+        # Remove inherited numbering first.
+        bare=re.sub(r'^\\s*(?:[1-9]|[1-9]\\d)\\.\\s*','',line).strip()
+        # Activity block titles are structural headings, never numbered list items.
+        if re.match(r'^(?:Aktiviti|Activity)\\s+\\d+\\s*[–—-]',bare,re.I):
+            out.append(bare); step_no=0; continue
+        # Duration-only line is metadata, not step 1.
+        if re.match(r'^\\(?\\s*\\d+\\s*(?:minit|minutes?|mins?)\\s*\\)?$',bare,re.I):
+            out.append(bare); continue
+        # Ordinary instructional lines are numbered. Reset happens per activity heading.
+        step_no += 1
+        out.append(f'{step_no}. {bare}')
+    return '\\n'.join(out)
+
+def _rph_phase_time_v25179(phase, text):
+    """Move a leading duration-only line from activity text into the phase label."""
+    formatted=_rph_format_activity_lines(text or '')
+    lines=formatted.split('\\n') if formatted else []
+    if lines:
+        m=re.match(r'^\\(?\\s*(\\d+\\s*(?:minit|minutes?|mins?))\\s*\\)?$',lines[0],re.I)
+        if m:
+            return f'{phase} ({m.group(1)})', '\\n'.join(lines[1:]).strip()
+    return phase, formatted
+# ===== END v25.179 =====
