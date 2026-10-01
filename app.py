@@ -31889,3 +31889,128 @@ def _science_v25181_sanity():
     return True
 _science_v25181_sanity()
 # ===== END v25.181 =====
+
+# ===== v25.182 SCIENCE TEACHER-NATURAL ACTIVITY ENGINE =====
+# Uses verified curriculum context + the already-resolved BBM in the RPH row.
+# No topic keyword bank and no DB mutation.
+APP_VERSION='v25.182-RPH-SCIENCE-TEACHER-NATURAL'
+
+
+def _science_clean_context_v25182(text, max_words=16):
+    s=re.sub(r'\s+',' ',str(text or '')).strip(' .;:-')
+    # Prefer the topic label before an em dash; this prevents full SP duplication
+    # in teacher-facing fields such as prior knowledge.
+    if '—' in s:
+        head=s.split('—',1)[0].strip()
+        if head:
+            s=head
+    words=s.split()
+    if len(words)>max_words:
+        s=' '.join(words[:max_words]).rstrip(',;:')
+    return s
+
+
+def _science_bbm_items_v25182(r):
+    raw=str((r or {}).get('BAHAN BANTU MENGAJAR') or (r or {}).get('BBM') or '').strip()
+    if not raw:
+        return 'bahan yang disediakan guru'
+    raw=re.sub(r'(?i)^buku teks\s*,?\s*','',raw).strip(' ,;')
+    # Keep resolved materials as one natural phrase. Do not infer new topic facts.
+    return raw or 'bahan yang disediakan guru'
+
+
+def _science_action_family_v25182(action):
+    a=str(action or '').strip().lower()
+    # This is linguistic intent, not a subject/topic keyword bank.
+    if a.startswith(('membanding','membezakan')) or 'banding' in a or 'beza' in a:
+        return 'compare'
+    if a.startswith(('memerhati','mengenal pasti','menyatakan','memerihal','menerangkan','menjelaskan')):
+        return 'observe_explain'
+    if a.startswith(('mengelas','mengumpul')):
+        return 'classify'
+    if a.startswith(('mengukur','mengira')):
+        return 'measure'
+    if a.startswith(('meramal','membuat ramalan')):
+        return 'predict'
+    if a.startswith(('membuat inferens','menginferens')):
+        return 'infer'
+    if a.startswith(('memberi contoh','memberikan contoh')):
+        return 'examples'
+    return 'investigate'
+
+
+_rph_rows_before_v25182=_rph_rows
+def _rph_rows(s, ai_text):
+    r=_rph_rows_before_v25182(s, ai_text)
+    sub=str((s or {}).get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    sp=_science_verified_sp_text_v25178(s,r)
+    if not sp:
+        return r
+    action,target=_science_sp_core_v25178(sp)
+    family=_science_action_family_v25182(action)
+    topic=_science_clean_context_v25182((s or {}).get('pdp_title') or (s or {}).get('subtopic') or (s or {}).get('topic') or r.get('TAJUK') or '',10)
+    concept=re.sub(r'\s+',' ',str(target or '')).strip(' .')
+    bbm=_science_bbm_items_v25182(r)
+    dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+    usable=max(25,int(dur)-10)
+    a=max(5,round(usable*.28)); b=max(8,round(usable*.40)); c=max(5,usable-a-b)
+
+    # Short prior knowledge: topic context only, never a copied SP sentence.
+    if topic:
+        r['PENGETAHUAN SEDIA ADA']=f'Murid berkongsi pengalaman atau pengetahuan sedia ada tentang {topic}.'
+
+    if family=='compare':
+        act1=(f'Guru menyediakan {bbm}. Murid memerhati bahan atau hasil yang ditunjukkan dan mencatat ciri yang dapat dilihat dengan jelas dalam jadual ringkas.')
+        act2=(f'Secara berpasangan, murid menjalankan aktiviti menggunakan bahan yang sama pada keadaan yang dikekalkan. Murid merekod setiap hasil, kemudian menyusun dapatan supaya persamaan dan perbezaan dapat dibandingkan dengan jelas.')
+        act3=(f'Pasangan membentangkan perbandingan mereka dan menerangkan bukti yang menyokong dapatan. Guru mengemukakan satu keadaan atau bahan baharu untuk menguji sama ada murid dapat menggunakan pola yang telah dikenal pasti tanpa mengulang prosedur secara hafalan.')
+        pbd=(f'Secara individu, murid melengkapkan satu jadual atau respons ringkas untuk membandingkan hasil bagi situasi baharu dan menulis satu kesimpulan berdasarkan bukti pemerhatian.')
+    elif family=='examples':
+        act1=(f'Guru menggunakan {bbm} untuk mencetuskan pemerhatian. Murid menyatakan ciri penting yang perlu ada sebelum sesuatu situasi boleh diterima sebagai contoh yang tepat.')
+        act2=(f'Dalam pasangan, murid meneliti beberapa situasi atau pengalaman harian, memilih contoh yang sesuai dan mencatat bukti yang menyokong setiap pilihan.')
+        act3=(f'Murid bertukar jawapan dengan pasangan lain, menilai contoh yang diberi dan membetulkan pilihan yang tidak disokong oleh bukti. Guru membincangkan salah konsep yang muncul.')
+        pbd=(f'Secara individu, murid memberikan dua contoh baharu dan satu sebab ringkas bagi setiap contoh untuk menunjukkan kefahaman konsep.')
+    elif family=='classify':
+        act1=(f'Guru menyediakan {bbm}. Murid memerhati setiap bahan atau contoh dan mencatat ciri yang boleh digunakan untuk mengumpulkannya.')
+        act2=(f'Secara berkumpulan kecil, murid mengelaskan bahan atau contoh berdasarkan ciri yang diperhatikan, melabel kumpulan dan menerangkan asas pengelasan mereka.')
+        act3=(f'Guru menambah satu contoh baharu. Murid menentukan kumpulan yang sesuai dan mempertahankan keputusan menggunakan ciri yang telah dikenal pasti.')
+        pbd=(f'Secara individu, murid mengelaskan beberapa contoh baharu dan memberikan sebab ringkas bagi sekurang-kurangnya satu pengelasan.')
+    elif family=='measure':
+        act1=(f'Guru menyediakan {bbm} dan menunjukkan cara menggunakan bahan atau alat dengan betul. Murid mengenal pasti perkara yang perlu diukur atau direkod.')
+        act2=(f'Secara berpasangan, murid menjalankan pengukuran atau pengiraan, merekod bacaan dengan unit yang sesuai dan mengulangi bacaan apabila perlu untuk menyemak ketepatan.')
+        act3=(f'Murid membandingkan bacaan, mengenal pasti perbezaan dan menerangkan dapatan berdasarkan data yang direkod. Guru membetulkan penggunaan unit atau kaedah yang tidak tepat.')
+        pbd=(f'Secara individu, murid menyelesaikan satu pengukuran atau pengiraan baharu dan merekod jawapan bersama unit yang betul.')
+    elif family in ('predict','infer'):
+        act1=(f'Guru menyediakan {bbm}. Murid membuat pemerhatian awal dan membezakan fakta yang dapat dilihat daripada andaian.')
+        act2=(f'Secara berpasangan, murid merekod bukti daripada aktiviti dan menggunakan bukti tersebut untuk membina {"ramalan" if family=="predict" else "inferens"}.')
+        act3=(f'Guru mengubah satu keadaan atau memberikan data baharu. Murid menyemak semula jawapan dan menerangkan bagaimana bukti menyokong atau mengubah pemikiran mereka.')
+        pbd=(f'Secara individu, murid menulis satu {"ramalan" if family=="predict" else "inferens"} bagi situasi baharu berserta bukti yang menyokongnya.')
+    else:
+        act1=(f'Guru menyediakan {bbm}. Murid memerhati bahan, fenomena atau data dan mencatat dua perkara penting yang berkaitan dengan pembelajaran hari ini.')
+        act2=(f'Secara berpasangan, murid menjalankan tugasan atau penyiasatan menggunakan bahan yang disediakan, merekod hasil secara sistematik dan menyemak dapatan bersama pasangan.')
+        act3=(f'Murid menggunakan dapatan untuk menerangkan konsep dalam situasi baharu. Guru menyoal sebab di sebalik jawapan dan membetulkan salah konsep atau istilah Sains.')
+        pbd=(f'Secara individu, murid menyelesaikan satu item aplikasi baharu dan memberikan bukti atau sebab yang menyokong jawapan.')
+
+    r['AKTIVITI UTAMA']=(
+        f'Aktiviti 1 – Pemerhatian Awal ({a} minit)\n{act1}\n'
+        f'Aktiviti 2 – Penerokaan dan Rekod ({b} minit)\n{act2}\n'
+        f'Aktiviti 3 – Analisis dan Aplikasi ({c} minit)\n{act3}\n'
+        f'Aktiviti 4 – PBD Individu (5 minit)\n{pbd}'
+    )
+    return r
+
+
+def _science_v25182_sanity():
+    ss={'subject':'Sains','year':'Tahun 4','topic':'Sifat Cahaya','pdp_title':'Sifat Cahaya',
+        'sp_text':'Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.'}
+    rr=_rph_rows(ss,'BAHAN BANTU MENGAJAR: Buku teks, lampu suluh; skrin putih; objek lutsinar, lutcahaya dan legap')
+    body=str(rr.get('AKTIVITI UTAMA') or '')
+    # Teacher-facing activity should not echo the full SP repeatedly.
+    assert body.lower().count('membanding dan membezakan bayang-bayang') <= 1
+    assert 'kehendak SP' not in body and 'SP yang dipilih' not in body
+    assert 'Aktiviti 4' in body
+    assert len(str(rr.get('PENGETAHUAN SEDIA ADA') or '').split()) < 16
+    return True
+_science_v25182_sanity()
+# ===== END v25.182 =====
