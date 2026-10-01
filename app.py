@@ -28878,7 +28878,7 @@ APP_VERSION='v25.127-SCIENCE-v25.70-SP-DRIVEN'
 # ===== v25.128 SCIENCE SP-ACTION COVERAGE EXPANSION =====
 # Extends v25.127 for additional DSKP verbs found in the 385 verified Science PdP.
 _science_action_v25128_base = _science_action_v25127
-def _science_action_v25127(text):
+def _science_action_v25128(text):
     t = str(text or '').lower()
     extra = [
       ('safety', ('mematuhi peraturan','mengamalkan peraturan','langkah keselamatan')),
@@ -28896,7 +28896,7 @@ def _science_action_v25127(text):
     return _science_action_v25128_base(text)
 
 _science_sp_activity_v25128_base = _science_sp_activity_v25127
-def _science_sp_activity_v25127(s, rows):
+def _science_sp_activity_v25128(s, rows):
     r = dict(rows or {})
     sub = str(s.get('subject') or '').lower()
     if 'sains' not in sub and 'science' not in sub: return r
@@ -31208,10 +31208,10 @@ def _worksheet_language_qa_contract_v25166():
 
 
 
-# ===== v25.168 MATH v25.99 AUTO SK/SP ROUTE RESTORE =====
-_math2599_callback_base_v25168 = callback
+# ===== v25.169 MATH v25.99 AUTO SK/SP ROUTE RESTORE + SCIENCE BOOT FIX =====
+_math2599_callback_base_v25169 = callback
 
-def _math2599_auto_commit_v25168(cid, idx):
+def _math2599_auto_commit_v25169(cid, idx):
     ss=state.setdefault(cid,{})
     rows=ss.get("_sm2542_pdp_rows") or ss.get("_sm2542_rows") or []
     titles=ss.get("_sm2542_pdp_titles") or ss.get("_sm2542_pdp_codes") or []
@@ -31224,7 +31224,7 @@ def _math2599_auto_commit_v25168(cid, idx):
     if not selected and 0 <= idx < len(rows):
         selected=[rows[idx]]
     if not selected:
-        return _math2599_callback_base_v25168(cid,"home")
+        return _math2599_callback_base_v25169(cid,"home")
     r0=selected[0]
     ss.update({
         "task":"quick_material","quick_material_flow":True,"rph_mode":"fast_rpt","assessment_mode":"formative",
@@ -31254,8 +31254,8 @@ def callback(cid,d):
     if ds.startswith("sm2542_pdp_") and ss.get("subject")=="Matematik":
         try: idx=int(ds.rsplit("_",1)[1])
         except Exception: idx=-1
-        return _math2599_auto_commit_v25168(cid,idx)
-    return _math2599_callback_base_v25168(cid,d)
+        return _math2599_auto_commit_v25169(cid,idx)
+    return _math2599_callback_base_v25169(cid,d)
 
-APP_VERSION='v25.168-MATH-CANONICAL-RUNTIME-RESTORE'
-# ===== END v25.168 =====
+APP_VERSION='v25.169-DEPLOY-BOOT-FIX-MATH-CANONICAL'
+# ===== END v25.169 =====
