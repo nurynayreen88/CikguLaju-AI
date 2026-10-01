@@ -112,7 +112,7 @@ def _bootstrap_split_db_v2426():
 _bootstrap_split_db_v2426()
 # ===== END v24.26 SPLIT-DB BOOTSTRAP =====
 
-DB_PATH = os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Recovery_v25_69.db'))
+DB_PATH = CIKGULAJU_BUNDLED_DB_PATH if os.path.exists(CIKGULAJU_BUNDLED_DB_PATH) else os.getenv('CIKGULAJU_DB_PATH', os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Recovery_v25_69.db'))
 CURRICULUM_ADMIN_KEY = os.getenv('CURRICULUM_ADMIN_KEY', '')
 ADMIN_CHAT_ID = str(os.getenv('ADMIN_CHAT_ID','')).strip()
 
@@ -29262,6 +29262,7 @@ APP_VERSION='v25.136-ENGLISH-Y3-Y6-FULL-160-RUNTIME'
 def _english_y3_y6_sow_db_path_v25136():
     import os, sqlite3
     candidates=[
+        globals().get("CIKGULAJU_BUNDLED_DB_PATH"),
         os.getenv("CIKGULAJU_CURRICULUM_DB_PATH"),
         os.getenv("CIKGULAJU_DB_PATH"),
         os.getenv("DATABASE_PATH"),
