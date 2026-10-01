@@ -31509,3 +31509,118 @@ def _worksheet_format_coverage_guard_v25154(state):
         raise RuntimeError('WORKSHEET_FORMAT_UNSUPPORTED:'+fmt)
     return c
 # === END v25.174 ===
+
+# === v25.175 VERIFIED-CURRICULUM WORKSHEET FALLBACK ===
+APP_VERSION='v25.175-WORKSHEET-VERIFIED-CURRICULUM-FALLBACK'
+
+_ws_contract_before_v25175 = _worksheet_verified_mapping_contract_v25145
+
+def _worksheet_verified_mapping_contract_v25145(state):
+    try:
+        return _ws_contract_before_v25175(state)
+    except RuntimeError as e:
+        msg=str(e)
+        if 'Worksheet belum mempunyai mapping SP yang disahkan.' not in msg:
+            raise
+
+    year=str(state.get('year') or state.get('year_label') or '').strip()
+    subject=str(state.get('subject') or '').strip()
+    sp=str(state.get('sp_code') or state.get('sp') or '').strip()
+    if not year or not subject or not sp:
+        raise RuntimeError('Worksheet memerlukan Tahun, Subjek dan SP yang sah.')
+
+    # Safety gate: fallback is allowed ONLY for an SP already verified in the
+    # curriculum database. We never invent or silently substitute an SK/SP.
+    with _db() as con:
+        row=con.execute("""
+            SELECT id, sk_code, sk_text, sp_code, sp_text, topic, subtopic
+            FROM curriculum_standards
+            WHERE year_label=? AND subject=? AND sp_code=? AND verified=1
+            ORDER BY id LIMIT 1
+        """,(year,subject,sp)).fetchone()
+    if not row:
+        raise RuntimeError('Worksheet SP tidak ditemui sebagai standard kurikulum yang disahkan.')
+
+    r=dict(row)
+    # Preserve the real verified curriculum wording in runtime context when the
+    # selected lesson did not carry the full text forward.
+    if not str(state.get('sk_code') or '').strip(): state['sk_code']=r.get('sk_code') or ''
+    if not str(state.get('sk_text') or '').strip(): state['sk_text']=r.get('sk_text') or ''
+    if not str(state.get('sp_text') or '').strip(): state['sp_text']=r.get('sp_text') or ''
+    if not str(state.get('topic') or '').strip(): state['topic']=r.get('topic') or ''
+    if not str(state.get('subtopic') or '').strip(): state['subtopic']=r.get('subtopic') or ''
+
+    # Minimal runtime contract. The v25.174 semantic format resolver below will
+    # choose the worksheet geometry from the verified SP text/subject.
+    c={
+        'curriculum_standard_id': r.get('id'),
+        'action_family': '', 'recipe_key': '', 'task_mode': '',
+        'stimulus_family': '', 'visual_family': '', 'visual_policy': 'optional',
+        'context_category': '', 'action_keyword': '', 'recipe_levels': 1,
+        'verification_status': 'verified_curriculum_fallback',
+        'semantic_verification': 'verified_curriculum_fallback'
+    }
+
+    # Reuse the same v25.174 semantic format rules, without calling the old
+    # verified-mapping chain again (which is exactly what failed above).
+    text=' '.join(str(state.get(k) or '') for k in ('topic','subtopic','sp_text','skill_focus')).lower()
+    fmt=''
+    if subject=='Matematik':
+        if any(x in text for x in ('masa','waktu','jam','tempoh')): fmt='clock_timeline'
+        elif any(x in text for x in ('wang','ringgit','sen','harga')): fmt='money_document'
+        elif any(x in text for x in ('pecahan','perpuluhan','peratus')): fmt='fraction_model'
+        elif any(x in text for x in ('bentuk','geometri','sudut','ruang','perimeter','luas')): fmt='geometry_diagram'
+        elif any(x in text for x in ('panjang','jisim','isipadu','isi padu','ukur','sukatan')): fmt='measurement_scale'
+        elif any(x in text for x in ('data','graf','piktograf','carta')): fmt='data_table_chart'
+        elif any(x in text for x in ('nilai tempat','nilai digit')): fmt='place_value_table'
+        elif any(x in text for x in ('genap','ganjil','perdana','gubahan','kelas')): fmt='classification_table'
+        elif any(x in text for x in ('hilang','melengkapkan','lengkapkan')): fmt='missing_number'
+        else: fmt='word_problem'
+    elif subject=='Sains':
+        if any(x in text for x in ('eksperimen','penyiasatan','hipotesis','pemboleh ubah')): fmt='experiment_table'
+        elif any(x in text for x in ('label','rajah','struktur','bahagian')): fmt='diagram_label'
+        elif any(x in text for x in ('data','jadual','graf','keputusan')): fmt='science_data'
+        elif any(x in text for x in ('memerhati','pemerhatian','merekod')): fmt='observation_record'
+        elif any(x in text for x in ('mengelas','mengelaskan','membanding','banding beza')): fmt='compare_classify'
+        elif any(x in text for x in ('membina','menghasilkan','model')): fmt='construction_task'
+        else: fmt='science_scenario'
+    elif subject=='Bahasa Inggeris':
+        if any(x in text for x in ('listen','listening')): fmt='listening_response'
+        elif any(x in text for x in ('speak','speaking','oral')): fmt='speaking_task_card'
+        elif any(x in text for x in ('write','writing')): fmt='guided_writing_en'
+        elif any(x in text for x in ('read','reading')): fmt='reading_text'
+        elif any(x in text for x in ('literature','poem','story','language arts')): fmt='literature_response'
+        else: fmt='grammar_context'
+    elif subject=='Bahasa Melayu':
+        if any(x in text for x in ('mendengar','bertutur','lisan')): fmt='oral_response'
+        elif any(x in text for x in ('menulis','penulisan')): fmt='guided_writing'
+        elif any(x in text for x in ('membaca','bacaan')): fmt='single_passage'
+        elif any(x in text for x in ('sastera','puisi','pantun','cerita')): fmt='literature_response'
+        else: fmt='grammar_context'
+    else:
+        fmt='single_passage'
+    c['format_key']=fmt
+    c['format_fallback']='v25.175_verified_curriculum'
+    print('WS175_VERIFIED_CURRICULUM_FALLBACK:',year,subject,sp,fmt,flush=True)
+    return c
+
+# Ensure all existing guards resolve through the new verified-curriculum fallback.
+def _worksheet_format_coverage_guard_v25154(state):
+    c=_worksheet_verified_mapping_contract_v25145(state)
+    fmt=str(c.get('format_key') or '').strip()
+    if not fmt: raise RuntimeError('WORKSHEET_FORMAT_MISSING')
+    if fmt not in _WS154_SUPPORTED_FORMATS:
+        raise RuntimeError('WORKSHEET_FORMAT_UNSUPPORTED:'+fmt)
+    return c
+# === END v25.175 ===
+
+# ===== v25.176 SCIENCE RPH MISSING HELPER COMPATIBILITY FIX =====
+# v25.128+ callers reference _science_sp_focus_v25128, but the focus extractor
+# was retained under its v25.127 name. Keep one authoritative extractor and
+# provide the missing compatibility name. No curriculum/DB mutation.
+APP_VERSION='v25.176-RPH-SCIENCE-NAMEERROR-FIX'
+
+if '_science_sp_focus_v25128' not in globals():
+    def _science_sp_focus_v25128(s, r):
+        return _science_sp_focus_v25127(s, r)
+# ===== END v25.176 =====
