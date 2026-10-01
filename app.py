@@ -30975,7 +30975,7 @@ def _ws164_language(state,qcount,rng,contract):
                     '3. Bina satu respons baharu yang menunjukkan penggunaan yang betul. [ANSWERSPACE: 4]']
         ans=['Jawapan mesti menunjukkan unsur bahasa/estetik yang dinyatakan dalam SP dan digunakan dalam konteks yang betul.']
         return _ws151_finish(student,ans,False)
-    return _ws151_language(state,qcount,rng,contract)
+    return _ws151_language_before_v25164(state,qcount,rng,contract)
 
 def _ws164_math(state,qcount,rng,contract):
     fmt=str(contract.get('format_key') or '')
@@ -31004,7 +31004,7 @@ def _ws164_math(state,qcount,rng,contract):
                     '3. Siti mempunyai RM50. Dia membeli barang berharga RM18.50 dan RM12.30. Berapakah baki wangnya? [ANSWERSPACE: 5]']
         ans=['1. 172','2. 303','3. RM19.20']
         return _ws151_finish(student,ans,False)
-    return _ws151_math(state,qcount,rng,contract)
+    return _ws151_math_before_v25164(state,qcount,rng,contract)
 
 def _ws164_science(state,qcount,rng,contract):
     fmt=str(contract.get('format_key') or '')
@@ -31049,7 +31049,7 @@ def _ws164_science(state,qcount,rng,contract):
                     '3. Nyatakan satu penambahbaikan selepas ujian. [ANSWERSPACE: 3]']
         ans=['Lakaran, bahan, langkah dan penambahbaikan mestilah relevan dengan binaan/model dalam SP.']
         return _ws151_finish(student,ans,False)
-    return _ws151_science(state,qcount,rng,contract)
+    return _ws151_science_before_v25164(state,qcount,rng,contract)
 
 # Install deeper content generators while retaining existing verified mapping and renderer.
 _ws151_language_before_v25164=_ws151_language
@@ -31298,3 +31298,8 @@ def _sm2542_rows(year_label, subject):
 
 APP_VERSION='v25.170-MATH-CANONICAL-DB-ROUTE-LOCK'
 # ===== END v25.170 =====
+
+
+# === v25.171 WORKSHEET RECURSION FIX ===
+APP_VERSION='v25.171-WORKSHEET-RECURSION-FIX'
+# === END v25.171 ===
