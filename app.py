@@ -10653,7 +10653,7 @@ def create_pdf_file(s, ai_text, cid):
         phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else 'Fasa / Masa')+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else 'Aktiviti Pengajaran & Pembelajaran')+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else 'Catatan')+'</b>',body_style)]]
         for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]):
             phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
-            val=escape(phase_text or '—').replace('\n','<br/>')
+            val=_rph_activity_heading_markup_v25184(phase_text or '—')
             phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
@@ -32092,3 +32092,65 @@ def _science_v25183_sanity():
     return True
 _science_v25183_sanity()
 # ===== END v25.183 =====
+
+
+# ===== v25.184 GLOBAL RPH ACTIVITY HEADING + ENGLISH DEPTH =====
+APP_VERSION='v25.184-RPH-ACTIVITY-BOLD-ENGLISH-DEPTH'
+
+def _rph_activity_heading_markup_v25184(text):
+    raw=str(text or '—')
+    lines=[]
+    for line in raw.splitlines():
+        e=escape(line)
+        if re.match(r'^\s*(?:Aktiviti|Activity)\s+\d+\s*[–-]', line, re.I):
+            e='<b>'+e+'</b>'
+        lines.append(e)
+    return '<br/>'.join(lines)
+
+def _science_strip_compound_action_v25184(action,target):
+    a=re.sub(r'\s+',' ',str(action or '')).strip()
+    t=re.sub(r'\s+',' ',str(target or '')).strip()
+    t=re.sub(r'^(?:dan\s+)?(?:membezakan|membandingkan|membanding|mengenal pasti|menentukan|menjelaskan|memerihalkan|menyatakan)\s+', '', t, flags=re.I)
+    return a,t.strip(' ,;.')
+
+_rph_rows_before_v25184=_rph_rows
+def _rph_rows(s, ai_text):
+    r=_rph_rows_before_v25184(s, ai_text)
+    sub=str((s or {}).get('subject') or '').lower()
+    if 'sains' in sub or 'science' in sub:
+        sp=_science_verified_sp_text_v25178(s,r) if '_science_verified_sp_text_v25178' in globals() else ''
+        if sp:
+            action,target=_science_sp_core_v25178(sp)
+            action,target=_science_strip_compound_action_v25184(action,target)
+            if _science_action_family_v25182(action)=='compare' and target:
+                focus=_science_focus_noun_v25183(target); condition=_science_condition_v25183(target); materials=_science_material_phrase_v25183(r)
+                dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+                usable=max(25,int(dur)-10); a=max(5,round(usable*.28)); b=max(8,round(usable*.40)); c=max(5,usable-a-b); cond=f' apabila {condition}' if condition else ''
+                r['AKTIVITI UTAMA']=(
+                    f'Aktiviti 1 – Pemerhatian Awal ({a} minit)\nGuru menyediakan {materials}. Murid mengenal pasti bahan yang digunakan dan memerhati {focus} sebelum ujian dijalankan. Murid menyatakan ciri awal yang dapat diperhatikan tanpa membuat tekaan.\n'
+                    f'Aktiviti 2 – Penyiasatan dan Rekod ({b} minit)\nSecara berpasangan, murid menggunakan bahan satu demi satu dalam keadaan yang sama. Murid memerhati {focus}{cond}, merekod hasil setiap ujian dalam jadual serta menandakan persamaan dan perbezaan yang ditemui.\n'
+                    f'Aktiviti 3 – Banding, Bukti dan Kesimpulan ({c} minit)\nMurid membandingkan rekod setiap ujian, memilih bukti pemerhatian yang menunjukkan perbezaan paling jelas dan menerangkan hubungan antara bahan atau keadaan dengan {focus}. Pasangan berkongsi dapatan dan menyemak kesimpulan berdasarkan bukti.\n'
+                    f'Aktiviti 4 – PBD Individu (5 minit)\nSecara individu, murid meneliti satu keputusan ujian yang belum dibincangkan, membandingkan {focus} yang terhasil dan menulis satu kesimpulan ringkas berserta bukti pemerhatian.')
+    if _is_english_subject(s):
+        body=str(r.get('AKTIVITI UTAMA') or '')
+        if len(re.sub(r'\s+',' ',body)) < 900:
+            focus=str((s or {}).get('focus') or (s or {}).get('lesson_focus') or (s or {}).get('subtopic') or (s or {}).get('topic') or '').strip() or 'the selected lesson focus'
+            main=str((s or {}).get('main_skill') or '').strip() or 'main skill'; comp=str((s or {}).get('complementary_skill') or '').strip() or 'complementary skill'
+            lang=str((s or {}).get('language_grammar_focus') or (s or {}).get('language_focus') or '').strip(); lang_note=f' Teacher explicitly highlights {lang} in context.' if lang else ''
+            dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+            usable=max(30,int(dur)-10); a=max(7,round(usable*.24)); b=max(9,round(usable*.30)); c=max(9,round(usable*.30)); d=max(5,usable-a-b-c)
+            r['AKTIVITI UTAMA']=(
+                f'Activity 1 – Presentation and Modelling ({a} minutes)\nTeacher introduces {focus} through the verified lesson context and models the target {main}. Pupils work with the lesson material, identify key language or information and explain what they are expected to do.{lang_note} Teacher checks understanding before pupils proceed.\n'
+                f'Activity 2 – Guided Practice ({b} minutes)\nPupils work in pairs or small groups on a structured {main} task based on {focus}. Teacher circulates, prompts pupils to use evidence from the lesson material, checks accuracy and gives immediate feedback. Pupils correct responses and explain one answer or choice to a partner.\n'
+                f'Activity 3 – Production and Complementary Skill ({c} minutes)\nPupils complete a fresh task that requires them to apply the {main} while integrating the {comp}. Pupils produce a response appropriate to the selected skills, then review their work using the success criteria. Teacher samples responses and addresses a common error.\n'
+                f'Activity 4 – Individual Assessment and Feedback ({d} minutes)\nEach pupil completes a short individual check using new but lesson-aligned content. Teacher records evidence against the selected Learning Standard, gives concise feedback and identifies pupils for targeted support or extension.')
+    return r
+
+def _v25184_sanity():
+    x=_rph_activity_heading_markup_v25184('Aktiviti 1 – Pemerhatian Awal (10 minit)\nIsi biasa\nActivity 2 – Guided Practice (10 minutes)\nNormal text')
+    assert '<b>Aktiviti 1' in x and '<b>Activity 2' in x and '<b>Isi biasa' not in x
+    _,t=_science_strip_compound_action_v25184('membanding','membezakan bayang-bayang yang terhasil apabila cahaya dihalang')
+    assert t.startswith('bayang-bayang')
+    return True
+_v25184_sanity()
+# ===== END v25.184 =====
