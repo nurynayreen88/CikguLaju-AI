@@ -32014,3 +32014,81 @@ def _science_v25182_sanity():
     return True
 _science_v25182_sanity()
 # ===== END v25.182 =====
+
+# ===== v25.183 SCIENCE CONCRETE ACTION PLANNER =====
+# Converts the verified SP + resolved BBM into observable classroom actions.
+# Generic semantic rules only; no topic keyword bank and no DB mutation.
+APP_VERSION='v25.183-RPH-SCIENCE-CONCRETE-ACTIONS'
+
+
+def _science_focus_noun_v25183(target):
+    t=re.sub(r'\s+',' ',str(target or '')).strip(' .')
+    # The grammatical head before a relative/condition clause is normally the
+    # observable result pupils need to inspect (e.g. "bayang-bayang").
+    head=re.split(r'\b(?:yang|apabila|ketika|semasa|dengan)\b',t,maxsplit=1,flags=re.I)[0].strip(' ,;')
+    return head or t
+
+
+def _science_condition_v25183(target):
+    t=re.sub(r'\s+',' ',str(target or '')).strip(' .')
+    m=re.search(r'\b(apabila|ketika|semasa)\s+(.+?)(?:\s+dengan\s+menjalankan\s+aktiviti)?$',t,re.I)
+    return (m.group(2).strip(' .') if m else '')
+
+
+def _science_material_phrase_v25183(r):
+    raw=_science_bbm_items_v25182(r)
+    raw=re.sub(r'\s*;\s*',', ',raw)
+    raw=re.sub(r'\s*/\s*',' atau ',raw)
+    return re.sub(r'\s+',' ',raw).strip(' ,;')
+
+
+_rph_rows_before_v25183=_rph_rows
+def _rph_rows(s, ai_text):
+    r=_rph_rows_before_v25183(s, ai_text)
+    sub=str((s or {}).get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    sp=_science_verified_sp_text_v25178(s,r)
+    if not sp:
+        return r
+    action,target=_science_sp_core_v25178(sp)
+    family=_science_action_family_v25182(action)
+    if family!='compare':
+        return r
+
+    focus=_science_focus_noun_v25183(target)
+    condition=_science_condition_v25183(target)
+    materials=_science_material_phrase_v25183(r)
+    dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+    usable=max(25,int(dur)-10)
+    a=max(5,round(usable*.28)); b=max(8,round(usable*.40)); c=max(5,usable-a-b)
+
+    condition_note=(f' apabila {condition}' if condition else '')
+    act1=(f'Guru menyediakan {materials}. Murid mengenal pasti bahan yang akan digunakan, kemudian membuat pemerhatian awal terhadap {focus} dan menyatakan ciri yang boleh dilihat tanpa membuat tekaan.')
+    act2=(f'Secara berpasangan, murid menggunakan bahan yang disediakan satu demi satu dalam keadaan yang sama. Murid memerhati {focus}{condition_note}, merekod hasil setiap ujian dalam jadual dan menandakan persamaan serta perbezaan yang ditemui.')
+    act3=(f'Murid membandingkan rekod bagi setiap ujian, memilih bukti pemerhatian yang menunjukkan perbezaan paling jelas dan menerangkan hubungan antara perubahan bahan atau keadaan dengan {focus}. Pasangan berkongsi dapatan dan membetulkan kesimpulan jika bukti tidak menyokongnya.')
+    pbd=(f'Secara individu, murid meneliti satu contoh atau keputusan ujian yang belum dibincangkan, membandingkan {focus} yang terhasil dan menulis satu kesimpulan ringkas berserta bukti pemerhatian.')
+
+    r['AKTIVITI UTAMA']=(
+        f'Aktiviti 1 – Pemerhatian Awal ({a} minit)\n{act1}\n'
+        f'Aktiviti 2 – Penyiasatan dan Rekod ({b} minit)\n{act2}\n'
+        f'Aktiviti 3 – Banding, Bukti dan Kesimpulan ({c} minit)\n{act3}\n'
+        f'Aktiviti 4 – PBD Individu (5 minit)\n{pbd}'
+    )
+    return r
+
+
+def _science_v25183_sanity():
+    ss={'subject':'Sains','year':'Tahun 4','topic':'Sifat Cahaya','pdp_title':'Sifat Cahaya',
+        'sp_text':'Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.'}
+    rr=_rph_rows(ss,'BAHAN BANTU MENGAJAR: Buku teks, lampu suluh; skrin putih; objek lutsinar, lutcahaya dan legap')
+    body=str(rr.get('AKTIVITI UTAMA') or '')
+    assert 'bayang-bayang' in body.lower()
+    assert 'objek lutsinar' in body.lower()
+    assert 'merekod hasil setiap ujian' in body.lower()
+    assert body.lower().count('membanding dan membezakan bayang-bayang') == 0
+    assert 'bahan yang sama pada keadaan yang dikekalkan' not in body.lower()
+    assert 'Aktiviti 4' in body
+    return True
+_science_v25183_sanity()
+# ===== END v25.183 =====
