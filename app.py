@@ -31259,3 +31259,42 @@ def callback(cid,d):
 
 APP_VERSION='v25.169-DEPLOY-BOOT-FIX-MATH-CANONICAL'
 # ===== END v25.169 =====
+
+# ===== v25.170 MATH CANONICAL DB ROUTE LOCK =====
+# Runtime fix: later Science compatibility layers wrapped _sm2542_rows and could
+# route Matematik back through _db(), where verified_pdp_sequence_v2 does not exist.
+# Keep every non-Math path unchanged; force Math to canonical v25.99 only.
+_sm2542_rows_before_v25170 = _sm2542_rows
+
+def _sm2542_rows(year_label, subject):
+    if subject != 'Matematik':
+        return _sm2542_rows_before_v25170(year_label, subject)
+    import sqlite3 as _sqlite3
+    con = _sqlite3.connect(_math_v2599_db_path(), timeout=15)
+    con.row_factory = _sqlite3.Row
+    try:
+        cols = {str(r[1]) for r in con.execute('PRAGMA table_info(verified_pdp_sequence_v2)').fetchall()}
+        if not cols:
+            raise RuntimeError('Math v25_99 missing verified_pdp_sequence_v2')
+        where = ['year_label=?', 'subject=?']
+        params = [str(year_label or '').strip(), 'Matematik']
+        if 'pdp_sequence_code' in cols:
+            where.append("COALESCE(pdp_sequence_code,'')<>''")
+        if 'verification_status' in cols:
+            where.append("COALESCE(verification_status,'') NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')")
+        order = []
+        if 'source_sequence_no' in cols:
+            order.append('COALESCE(source_sequence_no,9999)')
+        elif 'week_no' in cols:
+            order.append('COALESCE(week_no,9999)')
+        if 'id' in cols:
+            order.append('id')
+        sql = 'SELECT * FROM verified_pdp_sequence_v2 WHERE ' + ' AND '.join(where)
+        if order:
+            sql += ' ORDER BY ' + ', '.join(order)
+        return [dict(r) for r in con.execute(sql, params).fetchall()]
+    finally:
+        con.close()
+
+APP_VERSION='v25.170-MATH-CANONICAL-DB-ROUTE-LOCK'
+# ===== END v25.170 =====
