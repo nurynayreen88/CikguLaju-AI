@@ -31654,3 +31654,131 @@ try:
 except RecursionError as _e:
     raise RuntimeError('SCIENCE_V25177_RECURSION_SANITY_FAIL') from _e
 # ===== END v25.177 =====
+
+# ===== v25.178 SCIENCE DB-AS-KNOWLEDGE SEMANTIC RPH ENGINE =====
+# Runtime remains database/local only. No topic keyword bank is added to the DB.
+# The selected verified SP itself is treated as the instruction/knowledge target.
+APP_VERSION='v25.178-RPH-SCIENCE-DB-SEMANTIC-ACTIVITY'
+
+
+def _science_verified_sp_text_v25178(s, rows):
+    """Return the cleanest available selected SP wording without inventing content."""
+    candidates=[]
+    for k in ('sp_text','skill_metadata'):
+        v=s.get(k)
+        if v: candidates.append(v)
+    v=(rows or {}).get('STANDARD PEMBELAJARAN')
+    if v: candidates.append(v)
+    for raw in candidates:
+        txt=str(raw or '').strip()
+        if not txt: continue
+        if txt.startswith('{'):
+            try:
+                obj=json.loads(txt)
+                txt=str(obj.get('sp_text') or obj.get('standard_pembelajaran') or '').strip()
+            except Exception:
+                pass
+        txt=re.sub(r'^\s*\d+(?:\.\d+){1,3}\s*[-–—:]?\s*','',txt)
+        txt=re.sub(r'\s+',' ',txt).strip(' .;')
+        # Prefer actual descriptive SP text rather than a bare code.
+        if len(txt) >= 12 and re.search(r'[A-Za-zÀ-ÿ]',txt):
+            return txt
+    return ''
+
+
+def _science_sp_core_v25178(sp):
+    """Split the SP into its requested action phrase and learning object.
+    This is linguistic parsing of the selected SP, not a topic/keyword lookup table.
+    """
+    txt=re.sub(r'\s+',' ',str(sp or '')).strip(' .;')
+    if not txt: return ('melaksanakan', 'kehendak Standard Pembelajaran')
+    words=txt.split()
+    # Keep the opening verb phrase as written by curriculum. Multiword curriculum
+    # constructions are detected structurally; the subject-matter content remains
+    # entirely whatever follows in the verified SP.
+    n=1
+    if len(words)>=2 and words[0].lower() in {'memberi','membuat','mengenal','menjalankan','membina','menjana','menghubung','membanding','menyelesaikan'}:
+        n=2
+    action=' '.join(words[:n])
+    target=' '.join(words[n:]).strip(' .;') or txt
+    return action, target
+
+
+def _science_semantic_activity_v25178(s, rows):
+    r=dict(rows or {})
+    sub=str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    sp=_science_verified_sp_text_v25178(s,r)
+    if not sp:
+        return r
+    action,target=_science_sp_core_v25178(sp)
+    topic=str(s.get('pdp_title') or s.get('subtopic') or s.get('topic') or r.get('TAJUK') or '').strip()
+    # Avoid duplicating "topic — SP" in activity prose.
+    context=target if target else (topic or sp)
+    dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+    usable=max(25,int(dur)-10)
+    a=max(5,round(usable*.28)); b=max(8,round(usable*.40)); c=max(5,usable-a-b)
+
+    # The engine works from the whole SP meaning. It does not map subject keywords
+    # such as bunyi/haiwan/tumbuhan to canned activities.
+    low_action=action.lower()
+    if low_action == 'memberi contoh':
+        act1=(f'Guru memaparkan beberapa situasi yang berkaitan dengan {context}. Murid meneliti setiap situasi dan '
+              f'menerangkan ciri yang menyebabkan situasi itu menepati atau tidak menepati maksud “{context}”.')
+        act2=(f'Secara berpasangan, murid mencari dan mencatat contoh daripada pengalaman atau kehidupan harian yang benar-benar menunjukkan {context}. '
+              'Bagi setiap contoh, murid menyatakan bukti/ciri yang menyokong pilihan mereka; pasangan menyemak sama ada contoh tersebut benar-benar memenuhi SP.')
+        act3=(f'Guru memberikan situasi baharu. Murid menentukan situasi yang menunjukkan {context} dan situasi yang tidak, kemudian mempertahankan jawapan '
+              'dengan pemerhatian, sebab atau konsep Sains yang berkaitan. Guru membetulkan salah konsep berdasarkan respons murid.')
+        pbd=(f'Secara individu, murid {sp[0].lower()+sp[1:] if sp else sp} pada sekurang-kurangnya dua situasi/contoh baharu dan menulis sebab ringkas '
+             'yang menunjukkan setiap contoh memenuhi kehendak SP. Guru merekod ketepatan contoh dan alasan.')
+    else:
+        act1=(f'Guru memperkenalkan tugasan berdasarkan SP: “{sp}”. Murid meneliti bahan, situasi, rajah, model atau data yang disediakan dan mengenal pasti '
+              f'bukti yang diperlukan untuk {action.lower()} {context}.')
+        act2=(f'Secara berpasangan, murid melaksanakan tindakan dalam SP secara terus: {sp[0].lower()+sp[1:]}. '
+              'Murid merekod hasil, pemerhatian, jawapan atau bukti yang terhasil dan menyemaknya dengan pasangan berdasarkan kehendak SP, bukan hafalan umum topik.')
+        act3=(f'Guru memberikan bahan atau situasi baharu yang masih dalam skop {context}. Murid menggunakan dapatan Aktiviti 2 untuk {action.lower()} {context} '
+              'pada konteks baharu serta menerangkan bukti atau sebab bagi respons mereka. Guru membetulkan salah konsep dan penggunaan istilah Sains.')
+        pbd=(f'Secara individu, murid melaksanakan kehendak “{sp}” pada item/situasi baharu. Guru menilai sama ada tindakan, konsep, bukti dan istilah yang digunakan '
+             'benar-benar menepati SP yang dipilih.')
+
+    r['AKTIVITI UTAMA']=(
+        f'Aktiviti 1 – Fahami Bukti SP ({a} minit)\n{act1}\n'
+        f'Aktiviti 2 – Laksanakan SP ({b} minit)\n{act2}\n'
+        f'Aktiviti 3 – Aplikasi Konteks Baharu ({c} minit)\n{act3}\n'
+        f'Aktiviti 4 – PBD Individu (5 minit)\n{pbd}'
+    )
+    # Make objective/criteria derive from the same verified SP rather than a topic keyword bank.
+    r['OBJEKTIF PEMBELAJARAN']=f'Pada akhir PdP, murid dapat {sp[0].lower()+sp[1:]} dengan tepat berdasarkan aktiviti dan bukti yang diberikan.'
+    if low_action == 'memberi contoh':
+        r['KRITERIA KEJAYAAN']=f'Murid dapat memberi sekurang-kurangnya dua contoh yang benar-benar menunjukkan {context} serta memberikan sebab/bukti yang sesuai.'
+    else:
+        r['KRITERIA KEJAYAAN']=f'Murid dapat melaksanakan kehendak SP “{sp}” dengan betul pada sekurang-kurangnya 4 daripada 5 item/situasi yang diberi.'
+    return r
+
+
+_rph_rows_before_v25178=_rph_rows
+def _rph_rows(s, ai_text):
+    return _science_semantic_activity_v25178(s,_rph_rows_before_v25178(s,ai_text))
+
+# Final presentation guard: exactly one line break between Science activity blocks.
+_rph_format_activity_lines_before_v25178=_rph_format_activity_lines
+def _rph_format_activity_lines(value):
+    formatted=_rph_format_activity_lines_before_v25178(value)
+    # Earlier v25.125/v25.126 intentionally inserted extra blank lines. Collapse
+    # them only at Aktiviti/Activity 2-4 boundaries; do not compact other RPH text.
+    formatted=re.sub(r'\n{2,}(?=(?:\d+\.\s*)?(?:Aktiviti|Activity)\s+[2-4]\b)', '\n', formatted)
+    return formatted
+
+# Minimal deterministic sanity check using the verified-SP pattern reported at runtime.
+def _science_v25178_sanity():
+    s={'subject':'Sains','year':'Tahun 4','sp_text':'Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan.',
+       'topic':'Bunyi','pdp_title':'Bunyi'}
+    r=_science_semantic_activity_v25178(s,{'TAJUK':'Bunyi','STANDARD PEMBELAJARAN':s['sp_text']})
+    body=str(r.get('AKTIVITI UTAMA') or '')
+    assert 'bunyi boleh dipantulkan' in body.lower()
+    assert 'kehidupan harian' in body.lower()
+    assert 'Aktiviti 4' in body
+    return True
+_science_v25178_sanity()
+# ===== END v25.178 =====
