@@ -4,24 +4,7 @@ P=Path(__file__).with_name("app.py")
 s=P.read_text(encoding="utf-8")
 MARK="# BETA50_LESSON_FIRST_QA16"
 
-# HOTFIX v25.172 — deterministic source-level repairs before import
-# Repair every misnamed v25.128 Science definition, not only the first occurrence.
-s=s.replace("def _science_sp_focus_v25127(s):", "def _science_sp_focus_v25128(s):")
-s=s.replace("def _science_action_v25127(text):", "def _science_action_v25128(text):")
-s=s.replace("def _science_sp_activity_v25127(s, rows):", "def _science_sp_activity_v25128(s, rows):")
-# If a v25.129 base assignment appears before a usable v25.128 symbol, fall back to v25.127 safely.
-s=s.replace("_science_sp_focus_v25128_base = _science_sp_focus_v25128", "_science_sp_focus_v25128_base = globals().get('_science_sp_focus_v25128', globals().get('_science_sp_focus_v25127'))")
-s=s.replace("_science_action_v25128_base = _science_action_v25128", "_science_action_v25128_base = globals().get('_science_action_v25128', globals().get('_science_action_v25127'))")
-s=s.replace("_science_sp_activity_v25128_base = _science_sp_activity_v25128", "_science_sp_activity_v25128_base = globals().get('_science_sp_activity_v25128', globals().get('_science_sp_activity_v25127'))")
-# Break worksheet v25.164 self-recursion at every occurrence.
-s=s.replace("return _ws151_language(s, contract, c, fmt)", "return _ws151_language_before_v25164(s, contract, c, fmt)")
-s=s.replace("return _ws151_math(s, contract, c, fmt)", "return _ws151_math_before_v25164(s, contract, c, fmt)")
-s=s.replace("return _ws151_science(s, contract, c, fmt)", "return _ws151_science_before_v25164(s, contract, c, fmt)")
-s=s.replace("return _ws164_language(s, contract, c, fmt)", "return _ws151_language_before_v25164(s, contract, c, fmt)")
-s=s.replace("return _ws164_math(s, contract, c, fmt)", "return _ws151_math_before_v25164(s, contract, c, fmt)")
-s=s.replace("return _ws164_science(s, contract, c, fmt)", "return _ws151_science_before_v25164(s, contract, c, fmt)")
-# Science must not fail closed merely because a legacy format_key is absent.
-s=s.replace("    if not fmt:\n        raise RuntimeError('WORKSHEET_FORMAT_MISSING')", "    if not fmt:\n        sub=str(state.get('subject') or '').lower()\n        if 'sains' in sub or 'science' in sub:\n            c=dict(c or {}); c['format_key']='science_scenario'; return c\n        raise RuntimeError('WORKSHEET_FORMAT_MISSING')")
+# HOTFIX v25.172 rolled back — restore last startup behavior
 
 # Runtime core is already a Git-safe 24,485,888-byte DB in the repository.
 s=s.replace(
