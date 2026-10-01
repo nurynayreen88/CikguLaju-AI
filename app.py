@@ -27158,14 +27158,50 @@ APP_VERSION='v25.40-SCIENCE-MATH-v25.66'
 _callback_before_v2542 = callback
 
 
+def _math_v2599_db_path():
+    import os as _os, hashlib as _hashlib, sqlite3 as _sqlite3
+    _base=_os.path.dirname(__file__)
+    _stem="CikguLaju_Curriculum_Master_v25_99_MATH_T1_T6_CANONICAL"
+    _parts=[_os.path.join(_base,_stem+f".part{i:02d}") for i in range(3)]
+    if not all(_os.path.isfile(p) for p in _parts):
+        raise RuntimeError("Math v25_99 incomplete: part00-part02 required")
+    _target=_os.path.join("/tmp",_stem+".db")
+    _expected="74f1e139ae6e7f64379ee3fb103334f450c683152186b03368bb02dfe3b8c821"
+    def _sha(path):
+        h=_hashlib.sha256()
+        with open(path,"rb") as fh:
+            for chunk in iter(lambda:fh.read(1024*1024),b""): h.update(chunk)
+        return h.hexdigest()
+    if not _os.path.isfile(_target) or _sha(_target)!=_expected:
+        _tmp=_target+".tmp"
+        with open(_tmp,"wb") as out_fh:
+            for p in _parts:
+                with open(p,"rb") as src_fh:
+                    for chunk in iter(lambda:src_fh.read(1024*1024),b""): out_fh.write(chunk)
+        if _sha(_tmp)!=_expected:
+            try: _os.remove(_tmp)
+            except OSError: pass
+            raise RuntimeError("Math v25_99 SHA256 verification failed")
+        con=_sqlite3.connect(_tmp)
+        try:
+            if con.execute("PRAGMA integrity_check").fetchone()[0]!="ok":
+                raise RuntimeError("Math v25_99 integrity_check failed")
+        finally: con.close()
+        _os.replace(_tmp,_target)
+    return _target
+
 def _sm2542_rows(year_label, subject):
     if subject not in ('Sains','Matematik'):
         return []
-    con=_db()
+    if subject=='Matematik':
+        import sqlite3 as _sqlite3
+        con=_sqlite3.connect(_math_v2599_db_path())
+        con.row_factory=_sqlite3.Row
+        table='verified_pdp_sequence_v2'
+    else:
+        con=_db()
+        table='verified_pdp_sequence'
     try:
-        # v25.99: Matematik uses the new canonical sequence exclusively.
-        # Sains remains on the existing verified_pdp_sequence table.
-        table = 'verified_pdp_sequence_v2' if subject == 'Matematik' else 'verified_pdp_sequence'
         rs=con.execute(f"""SELECT * FROM {table}
             WHERE year_label=? AND subject=?
               AND COALESCE(pdp_sequence_code,'')<>''
@@ -31170,3 +31206,56 @@ def _worksheet_language_qa_contract_v25166():
     }
 # === END v25.166 ===
 
+
+
+# ===== v25.168 MATH v25.99 AUTO SK/SP ROUTE RESTORE =====
+_math2599_callback_base_v25168 = callback
+
+def _math2599_auto_commit_v25168(cid, idx):
+    ss=state.setdefault(cid,{})
+    rows=ss.get("_sm2542_pdp_rows") or ss.get("_sm2542_rows") or []
+    titles=ss.get("_sm2542_pdp_titles") or ss.get("_sm2542_pdp_codes") or []
+    selected=[]
+    if 0 <= idx < len(titles):
+        key=titles[idx]
+        for r in rows:
+            if str(r.get("pdp_sequence_code") or "")==str(key) or str(r.get("pdp_title") or "")==str(key):
+                selected.append(r)
+    if not selected and 0 <= idx < len(rows):
+        selected=[rows[idx]]
+    if not selected:
+        return _math2599_callback_base_v25168(cid,"home")
+    r0=selected[0]
+    ss.update({
+        "task":"quick_material","quick_material_flow":True,"rph_mode":"fast_rpt","assessment_mode":"formative",
+        "topic":str(r0.get("unit_title") or r0.get("theme") or ""),
+        "subtopic":str(r0.get("pdp_title") or ""),"pdp_title":str(r0.get("pdp_title") or ""),
+        "pdp_sequence_code":str(r0.get("pdp_sequence_code") or ""),"rpt_theme":str(r0.get("theme") or ""),
+        "rpt_unit_title":str(r0.get("unit_title") or ""),"rpt_topic":str(r0.get("pdp_title") or ""),
+        "skill_metadata":str(r0.get("skill_metadata") or ""),"textbook_ref":str(r0.get("textbook_ref") or ""),
+        "activitybook_ref":str(r0.get("activitybook_ref") or "")
+    })
+    mapped=[]; seen=set()
+    for r in selected:
+        sk=str(r.get("sk_code") or "").strip(); sp=str(r.get("sp_code") or "").strip()
+        if not sp: continue
+        k=(sk,sp)
+        if k in seen: continue
+        seen.add(k)
+        mapped.append({"sk_code":sk,"sk_text":str(r.get("sk_text") or ""),"sp_code":sp,"sp_text":str(r.get("sp_text") or "")})
+    if not mapped:
+        return send(cid,"⚠️ <b>SK/SP verified untuk PdP Matematik ini belum lengkap.</b>",[[{"text":"🏠 Menu Utama","callback_data":"home"}]])
+    _commit_multi_sp(ss,mapped[:12])
+    return _temporary_auto_pack_v2386(cid)
+
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or "")
+    if ds.startswith("sm2542_pdp_") and ss.get("subject")=="Matematik":
+        try: idx=int(ds.rsplit("_",1)[1])
+        except Exception: idx=-1
+        return _math2599_auto_commit_v25168(cid,idx)
+    return _math2599_callback_base_v25168(cid,d)
+
+APP_VERSION='v25.168-MATH-CANONICAL-RUNTIME-RESTORE'
+# ===== END v25.168 =====
