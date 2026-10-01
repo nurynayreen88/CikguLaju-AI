@@ -3,6 +3,11 @@ from pathlib import Path
 P=Path(__file__).with_name("app.py")
 s=P.read_text(encoding="utf-8")
 MARK="# BETA50_LESSON_FIRST_QA16"
+# BOOT FIX v25.173 — minimal Science symbol repair only.
+# Keep this isolated: no worksheet/menu/other-subject changes here.
+s=s.replace("_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25127(text):", "_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25128(text):", 1)
+s=s.replace("_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25127(s, rows):", "_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25128(s, rows):", 1)
+
 
 # Runtime core is already a Git-safe 24,485,888-byte DB in the repository.
 s=s.replace(
