@@ -31344,3 +31344,106 @@ def _worksheet_single_runtime_v25140(cid, ss=None):
             pass
     return True
 # === END v25.171 ===
+
+# === v25.172 WORKSHEET RUNTIME DIAGNOSTIC + SUBMIT ROUTE FIX ===
+APP_VERSION='v25.172-WORKSHEET-RUNTIME-DIAGNOSTIC-FIX'
+
+def _worksheet_build_pdf_v25172(cid, ss=None, suffix='worksheet'):
+    """Single canonical worksheet build path with stage-specific diagnostics."""
+    ss=state.setdefault(cid,{}) if ss is None else ss
+    ctx=dict(ss or {})
+    for k in ('worksheet_pack_4levels','worksheet_pack_results','worksheet_pack_context','difficulty'):
+        ctx.pop(k,None)
+    ctx['task']='worksheet'
+    ctx.setdefault('worksheet_questions',8)
+    try:
+        text=_local_worksheet_text(ctx)
+    except Exception as e:
+        print('WS172_TEXT:',type(e).__name__,repr(e),flush=True)
+        raise RuntimeError('WS172_TEXT:'+str(e)) from e
+    if not str(text or '').strip():
+        raise RuntimeError('WS172_TEXT:empty')
+    try:
+        p=create_pdf_file(ctx,text,str(cid)+'_'+suffix)
+    except Exception as e:
+        print('WS172_PDF:',type(e).__name__,repr(e),flush=True)
+        raise RuntimeError('WS172_PDF:'+str(e)) from e
+    if not p or not os.path.exists(p):
+        raise RuntimeError('WS172_PDF:file_not_created')
+    return p
+
+def _worksheet_single_runtime_v25140(cid, ss=None):
+    p=None
+    try:
+        p=_worksheet_build_pdf_v25172(cid,ss,'worksheet')
+        try:
+            send_document(cid,p,'📝 Worksheet CikguLaju')
+        except Exception as e:
+            print('WS172_SEND:',type(e).__name__,repr(e),flush=True)
+            raise RuntimeError('WS172_SEND:'+str(e)) from e
+        return True
+    finally:
+        try:
+            if p and os.path.exists(p): os.remove(p)
+        except Exception:
+            pass
+
+# Rebind material submission so the live picker uses the canonical worksheet runtime.
+_submit_materials_before_v25172=_submit_materials_v2528
+def _submit_materials_v2528(cid):
+    ss=state.setdefault(cid,{})
+    available=set(_available_materials_v2528(ss)); selected=[x for x in (ss.get('_materials_selected_v2528') or []) if x in available]
+    if selected==['worksheet']:
+        with _runtime_lock:
+            if cid in _processing_chats:
+                return send(cid,'⏳ <b>Bahan sedang disediakan.</b>')
+            _processing_chats.add(cid)
+        try:
+            _worksheet_single_runtime_v25140(cid,ss)
+            return send(cid,'✅ <b>Worksheet siap.</b>',[[{'text':'📚 Sediakan Bahan Lagi','callback_data':'quick'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        except Exception as e:
+            print('WS172_RUNTIME:',repr(e),flush=True)
+            # Keep user message concise; exact stage remains visible in Render logs.
+            return send(cid,'⚠️ Worksheet belum berjaya disediakan. Kod diagnostik: <code>'+html.escape(str(e)[:180])+'</code>',[[{'text':'🔄 Cuba Lagi','callback_data':'matsubmit2528'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        finally:
+            with _runtime_lock: _processing_chats.discard(cid)
+    return _submit_materials_before_v25172(cid)
+# === END v25.172 ===
+
+# === v25.173 OPTIONAL CLASS / DATE / TIME SKIP ===
+APP_VERSION='v25.173-OPTIONAL-CLASS-DATE-TIME-SKIP'
+
+# Add a single skip button to the active class menu. Existing class/profile flow is preserved.
+_pdp_pick_class_before_v25173 = _pdp_pick_class_v2393
+def _pdp_pick_class_v2393(cid):
+    ss=state.setdefault(cid,{})
+    rows=_profile_class_candidates_recovered(cid,ss.get('year',''),ss.get('subject',''))
+    ss['_pdp_classes_v2393']=rows
+    kb=[]
+    for i,r in enumerate(rows[:20]):
+        name=str(r.get('name') or '').strip()
+        if not name: continue
+        extra=f" • {r.get('students')} murid" if r.get('students') else ''
+        kb.append([{'text':('🏫 '+name+extra)[:60],'callback_data':f'pdpclass93_{i}'}])
+    kb.append([{'text':'⏭️ Skip Kelas, Tarikh & Masa','callback_data':'skipctx25173'}])
+    kb.append([{'text':'✏️ Masukkan Kelas Manual','callback_data':'pdpclass34_manual'}])
+    kb.append([{'text':'🏫 Urus Kelas','callback_data':'profclass_manage'}])
+    if rows:
+        return send(cid,'🏫 <b>Pilih Kelas</b>\n\nPilih kelas seperti biasa atau tekan <b>Skip</b> untuk terus memilih bahan.',kb)
+    return send(cid,'🏫 <b>Kelas (pilihan)</b>\n\nCikgu boleh masukkan kelas manual atau tekan <b>Skip</b> untuk terus memilih bahan.',kb)
+
+_callback_before_v25173 = callback
+def callback(cid,d):
+    if d=='skipctx25173':
+        ss=state.setdefault(cid,{})
+        # Clear only session context fields; curriculum/lesson mapping stays intact.
+        for k in ('rph_class','class_name','student_count','rph_students','rph_date','rph_day',
+                  'rph_time','rph_start_time','rph_end_time','duration_minutes','rph_duration_minutes',
+                  '_pdp_context_ready_v2393','_time_start_hour_v2435','_time_start_min_v2435',
+                  '_time_end_hour_v2435','_time_end_min_v2435'):
+            ss.pop(k,None)
+        ss['_skip_class_date_time_v25173']=True
+        ss.pop('_materials_selected_v2528',None)
+        return _material_picker_v2528(cid,'⏭️ Kelas, tarikh dan masa dilangkau untuk sesi ini.')
+    return _callback_before_v25173(cid,d)
+# === END v25.173 ===
