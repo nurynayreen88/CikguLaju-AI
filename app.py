@@ -3606,8 +3606,8 @@ def create_pdf_file(s, ai_text, cid):
     # RPH uses a professional table layout rather than plain paragraphs.
     if s.get('task') == 'rph':
         # v23.61: compact professional RPH; worksheet design remains untouched.
-        body_style.fontSize=8.25; body_style.leading=9.7
-        section_style.fontSize=9.3; section_style.leading=11
+        body_style.fontSize=7.75; body_style.leading=8.85
+        section_style.fontSize=8.8; section_style.leading=9.8
         rph = _rph_rows(s, ai_text)
         story = [Paragraph('RANCANGAN PENGAJARAN HARIAN', title_style), Spacer(1,2*mm)]
         rows=[]
@@ -3615,20 +3615,20 @@ def create_pdf_file(s, ai_text, cid):
             val=(((_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else (rph.get(label) or '—'))).replace('\n','<br/>')
             rows.append([Paragraph('<b>'+escape(label.title() if label not in ('EMK / NILAI','KBAT / PAK21') else label)+'</b>', body_style), Paragraph(escape(val).replace('&lt;br/&gt;','<br/>'), body_style)])
         info=Table(rows,colWidths=[48*mm,124*mm])
-        info.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),2.5),('BOTTOMPADDING',(0,0),(-1,-1),2.5)]))
-        story.extend([info,Spacer(1,3*mm)])
+        info.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),1.7),('BOTTOMPADDING',(0,0),(-1,-1),1.7)]))
+        story.extend([info,Spacer(1,1.5*mm)])
         phase_rows=[[Paragraph('<b>Fasa / Masa</b>',body_style),Paragraph('<b>Aktiviti Pengajaran & Pembelajaran</b>',body_style),Paragraph('<b>Catatan</b>',body_style)]]
         for phase,key in [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]:
             val=escape(_rph_format_activity_lines(rph.get(key) or '—')).replace('\n','<br/>')
             phase_rows.append([Paragraph('<b>'+phase+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
-        pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('BACKGROUND',(0,0),(-1,0),colors.whitesmoke),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
-        story.extend([pt,Spacer(1,3*mm)])
+        pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('BACKGROUND',(0,0),(-1,0),colors.whitesmoke),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),2),('BOTTOMPADDING',(0,0),(-1,-1),2)]))
+        story.extend([pt,Spacer(1,1.5*mm)])
         tail=[]
         for label,key in [('Pemulihan / Pengayaan','PEMULIHAN / PENGAYAAN'),('Refleksi','REFLEKSI')]:
             val=rph.get(key) or ('____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: __________________________' if key=='REFLEKSI' else '—')
             tail.append([Paragraph('<b>'+label+'</b>',body_style),Paragraph(escape(val).replace('\n','<br/>'),body_style)])
-        tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)])); story.append(tt)
+        tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),2),('BOTTOMPADDING',(0,0),(-1,-1),2)])); story.append(tt)
         _hf=_pdf_header_footer_en if _is_english_subject(s) else _pdf_header_footer
         pdf.build(story,onFirstPage=_hf,onLaterPages=_hf); return path
 
@@ -10614,8 +10614,8 @@ def create_pdf_file(s, ai_text, cid):
     # RPH uses a professional table layout rather than plain paragraphs.
     if s.get('task') == 'rph':
         # v23.61: compact professional RPH; worksheet design remains untouched.
-        body_style.fontSize=8.25; body_style.leading=9.7
-        section_style.fontSize=9.3; section_style.leading=11
+        body_style.fontSize=7.75; body_style.leading=8.85
+        section_style.fontSize=8.8; section_style.leading=9.8
         rph = _rph_rows(s, ai_text)
         story = [Paragraph(_rph_title(s), title_style), Spacer(1,2*mm)]
         rows=[]
@@ -31830,3 +31830,62 @@ def _rph_phase_time_v25179(phase, text):
             return f'{phase} ({m.group(1)})', '\n'.join(lines[1:]).strip()
     return phase, formatted
 # ===== END v25.180 =====
+
+
+# ===== v25.181 SCIENCE CONTEXT / NATURAL LANGUAGE / ONE-PAGE POLISH =====
+APP_VERSION='v25.181-RPH-SCIENCE-CONTEXT-NATURAL-ONEPAGE'
+
+_rph_rows_before_v25181=_rph_rows
+def _rph_rows(s, ai_text):
+    r=_rph_rows_before_v25181(s, ai_text)
+    sub=str((s or {}).get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    # Session topic/PdP context is authoritative. Never retain prior-knowledge text
+    # leaked from another topic generated earlier in the pipeline.
+    topic=str((s or {}).get('pdp_title') or (s or {}).get('subtopic') or (s or {}).get('topic') or r.get('TAJUK') or '').strip()
+    if topic:
+        r['PENGETAHUAN SEDIA ADA']=f'Murid berkongsi pengetahuan atau pengalaman sedia ada yang berkaitan dengan {topic}.'
+    sp=_science_verified_sp_text_v25178(s,r)
+    if sp:
+        action,target=_science_sp_core_v25178(sp)
+        context=target or topic or sp
+        dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+        usable=max(25,int(dur)-10)
+        a=max(5,round(usable*.28)); b=max(8,round(usable*.40)); c=max(5,usable-a-b)
+        verb=sp[0].lower()+sp[1:] if sp else sp
+        low=action.lower()
+        if low=='memberi contoh':
+            act1=(f'Guru memaparkan beberapa situasi yang berkaitan dengan {context}. Murid meneliti setiap situasi dan menerangkan ciri atau bukti yang dapat diperhatikan.')
+            act2=(f'Secara berpasangan, murid mencari dan mencatat contoh daripada pengalaman atau kehidupan harian yang menunjukkan {context}. Bagi setiap contoh, murid menyatakan sebab atau bukti yang menyokong pilihan mereka dan membuat semakan bersama pasangan.')
+            act3=(f'Guru memberikan situasi baharu. Murid menentukan situasi yang menunjukkan {context} dan yang tidak, kemudian mempertahankan jawapan menggunakan pemerhatian, sebab atau konsep Sains yang sesuai. Guru membetulkan salah konsep dan istilah Sains.')
+            pbd=(f'Secara individu, murid {verb} pada sekurang-kurangnya dua situasi atau contoh baharu serta menulis sebab ringkas bagi setiap jawapan. Guru merekod ketepatan contoh dan alasan murid.')
+            crit=f'Murid dapat memberi sekurang-kurangnya dua contoh yang menunjukkan {context} serta memberikan sebab atau bukti yang sesuai.'
+        else:
+            act1=(f'Guru menyediakan bahan, situasi, rajah, model atau data berkaitan {context}. Murid membuat pemerhatian awal dan mengenal pasti persamaan, perbezaan, pola atau bukti yang diperlukan untuk {action.lower()} {context}.')
+            act2=(f'Secara berpasangan, murid {verb}. Murid merekod hasil pemerhatian, jawapan atau bukti dalam bentuk yang sesuai, kemudian membandingkan dapatan dan membuat pembetulan berdasarkan bukti yang diperoleh.')
+            act3=(f'Guru memberikan bahan atau situasi baharu yang masih berkaitan dengan {context}. Murid menggunakan dapatan sebelumnya untuk {action.lower()} {context} dalam situasi tersebut serta menerangkan bukti atau sebab bagi respons mereka. Guru membetulkan salah konsep dan penggunaan istilah Sains.')
+            pbd=(f'Secara individu, murid {verb} menggunakan item atau situasi baharu. Guru menilai ketepatan konsep, bukti dan istilah Sains yang digunakan.')
+            crit=f'Murid dapat {verb} dengan betul pada sekurang-kurangnya 4 daripada 5 item atau situasi yang diberi.'
+        r['AKTIVITI UTAMA']=(
+            f'Aktiviti 1 – Pemerhatian dan Bukti ({a} minit)\n{act1}\n'
+            f'Aktiviti 2 – Penerokaan ({b} minit)\n{act2}\n'
+            f'Aktiviti 3 – Aplikasi ({c} minit)\n{act3}\n'
+            f'Aktiviti 4 – PBD Individu (5 minit)\n{pbd}'
+        )
+        r['KRITERIA KEJAYAAN']=crit
+    return r
+
+# Sanity: context from another topic must not survive and teacher-facing prose must
+# not expose internal engine phrases such as "kehendak SP" or "SP yang dipilih".
+def _science_v25181_sanity():
+    ss={'subject':'Sains','year':'Tahun 4','topic':'Sifat Cahaya','pdp_title':'Sifat Cahaya',
+        'sp_text':'Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.'}
+    rr=_rph_rows(ss,'PENGETAHUAN SEDIA ADA: Murid mengingat semula pengetahuan berkaitan Tumbuhan.')
+    blob=' '.join(str(rr.get(k) or '') for k in ('PENGETAHUAN SEDIA ADA','AKTIVITI UTAMA','KRITERIA KEJAYAAN'))
+    assert 'Tumbuhan' not in rr.get('PENGETAHUAN SEDIA ADA','')
+    assert 'Sifat Cahaya' in rr.get('PENGETAHUAN SEDIA ADA','')
+    assert 'kehendak SP' not in blob and 'SP yang dipilih' not in blob and 'berdasarkan SP' not in blob
+    return True
+_science_v25181_sanity()
+# ===== END v25.181 =====
