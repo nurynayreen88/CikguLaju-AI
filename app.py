@@ -1,3 +1,25 @@
+
+# === CIKGULAJU DB TWO-PART BOOTSTRAP ===
+def _cikgulaju_rebuild_split_db():
+    import os as _os
+    _base=_os.path.dirname(_os.path.abspath(__file__))
+    _name='CikguLaju_Curriculum_Master_v25_82_PRIMARY_LANGUAGE_SCIENCE_VERB_QA.db'
+    _db=_os.path.join(_base,_name)
+    if not _os.path.exists(_db):
+        _parts=[_os.path.join(_base,_name+'.part1'), _os.path.join(_base,_name+'.part2')]
+        if not all(_os.path.exists(p) for p in _parts):
+            raise RuntimeError('CikguLaju DB part1/part2 tidak lengkap.')
+        with open(_db,'wb') as w:
+            for p in _parts:
+                with open(p,'rb') as r:
+                    while True:
+                        b=r.read(1024*1024)
+                        if not b: break
+                        w.write(b)
+    return _db
+CIKGULAJU_BUNDLED_DB_PATH=_cikgulaju_rebuild_split_db()
+# === END DB TWO-PART BOOTSTRAP ===
+
 import os
 RECOVERY_CHECKPOINT = "v25_69_MINIMUM_UPLOAD_READY_2026-09-25"
 
@@ -10681,12 +10703,11 @@ def create_pdf_file(s, ai_text, cid):
         ]
     else:
         story = [
-            Paragraph('CIKGULAJU  •  LEMBARAN KERJA', title_style),
             Paragraph(escape(clean_doc_text(str(s.get('subject',''))).upper()), subject_style),
             Paragraph(escape(clean_doc_text(f"{s.get('year','')}  |  Tajuk: {s.get('topic','')}  |  Subtopik: {s.get('subtopic','Semua Subtopik')}")), sub_style),
         ]
         name_label='Nama'; class_label='Kelas'; date_label='Tarikh'; score_label='Markah'
-        instruction_text='Jawab semua soalan dengan teliti. Tulis jawapan pada ruang yang disediakan.'
+        instruction_text='Jawab semua soalan.'
 
     # Compact pupil details
     info_data = [
@@ -10725,7 +10746,7 @@ def create_pdf_file(s, ai_text, cid):
         story.extend([_ct,Spacer(1,3*mm)])
 
     instruction = Table(
-        [[Paragraph(('<b>INSTRUCTIONS:</b> ' if is_summative and _is_english_subject(s) else '<b>ARAHAN:</b> ') + instruction_text, body_style)]],
+        [[Paragraph('<b>ARAHAN:</b> ' + ('Jawab semua soalan.' if not is_summative else instruction_text), body_style)]],
         colWidths=[172*mm]
     )
     instruction.setStyle(TableStyle([
@@ -26658,10 +26679,13 @@ def _submit_materials_v2528(cid):
                     if not txt: raise RuntimeError('RPH unavailable')
                     p=create_pdf_file(ctx,txt,str(cid)+'_selected_rph'); paths.append(p); send_document(cid,p,'📘 RPH CikguLaju'); ok.append(label)
                 elif key=='worksheet':
-                    ctx=dict(ss); ctx['task']='worksheet'; ctx.setdefault('worksheet_questions',8); ctx['difficulty']='all4'; ctx['worksheet_pack_4levels']=True
-                    res=_generate_four_level_worksheets(ctx)
-                    if not res: raise RuntimeError('Worksheet unavailable')
-                    p=create_four_level_worksheet_pdf(ctx,res,cid); paths.append(p); send_document(cid,p,'📝 Worksheet CikguLaju'); ok.append(label)
+                    ctx=dict(ss); ctx['task']='worksheet'; ctx.setdefault('worksheet_questions',8)
+                    # One curriculum-appropriate worksheet set; no forced 4-level pack.
+                    ctx.pop('worksheet_pack_4levels',None); ctx.pop('difficulty',None)
+                    wtxt=_local_worksheet_text(ctx)
+                    if not wtxt: raise RuntimeError('Worksheet unavailable')
+                    p=create_pdf_file(ctx,wtxt,str(cid)+'_selected_worksheet')
+                    paths.append(p); send_document(cid,p,'📝 Worksheet CikguLaju'); ok.append(label)
                 elif key=='bbm':
                     ctx=dict(ss); ctx['task']='bbm'; ctx['bbm_variation_seed']=secrets.token_hex(6)
                     p=create_bbm_flashcards_pdf(ctx,cid); paths.append(p); send_document(cid,p,'🎨 BBM CikguLaju - sedia untuk cetak'); ok.append(label)
@@ -28125,6 +28149,7 @@ def _science_topic_activity_v25116(state, rows):
     hay=' '.join(str(state.get(k) or '') for k in ('topic','subtopic','focus','lesson_title','sp_text')).lower()
     banks=[
       (('tumbuhan','pokok','daun','akar','bunga','biji benih'),('Murid memerhati spesimen/gambar tumbuhan dan merekod ciri struktur atau perubahan yang berkaitan dengan fokus PdP.','Pasangan membandingkan sekurang-kurangnya dua spesimen/keadaan, kemudian mengelas atau menyusun dapatan berdasarkan ciri yang benar-benar diperhatikan.','Murid menggunakan bukti pemerhatian untuk menerangkan fungsi, keperluan, pertumbuhan atau hubungan struktur tumbuhan mengikut fokus SP.')),
+      (('membiak','pembiakan','bertelur','melahirkan'),('Murid meneliti gambar/model beberapa haiwan dan mengenal pasti cara haiwan membiak, iaitu bertelur atau melahirkan anak, berdasarkan contoh yang dipelajari.','Pasangan mengelaskan kad/gambar haiwan kepada kumpulan bertelur dan melahirkan anak, kemudian merekod sekurang-kurangnya tiga contoh bagi setiap kumpulan dalam jadual.','Murid membentangkan hasil pengelasan, membetulkan contoh yang tersalah kumpulan dan menerangkan bahawa haiwan menghasilkan anak melalui cara pembiakan yang berbeza menggunakan istilah Sains yang tepat.')),
       (('haiwan','habitat','makanan haiwan'),('Murid memerhati gambar/model haiwan dan mengenal pasti ciri yang berkaitan dengan fokus PdP tanpa membuat andaian yang tidak disokong.','Pasangan membanding dan mengelaskan haiwan berdasarkan ciri, habitat, makanan atau keperluan yang dinyatakan dalam fokus pembelajaran.','Murid menerangkan pengelasan/hubungan menggunakan bukti daripada ciri yang diperhatikan dan istilah Sains yang sesuai.')),
       (('manusia','deria','anggota','gigi','pencernaan','pernafasan','peredaran'),('Murid meneliti model, rajah atau aktiviti pemerhatian selamat untuk mengenal pasti struktur/proses manusia yang menjadi fokus PdP.','Pasangan memadankan struktur dengan fungsi atau menyusun urutan proses berdasarkan bukti daripada model/rajah dan rekod pemerhatian.','Murid menerangkan hubungan struktur-fungsi/proses menggunakan istilah Sains yang betul serta satu contoh situasi harian yang berkaitan.')),
       (('bahan','sifat bahan','serap','kalis','jirim','campuran','asid','alkali','pengaratan'),('Murid memerhati beberapa sampel bahan dan merekod sifat yang boleh dikenal pasti atau diuji dengan selamat.','Pasangan menjalankan ujian/perbandingan mudah yang sesuai dengan fokus PdP dan merekod keputusan dalam jadual pemerhatian.','Murid mengelas atau membuat kesimpulan tentang bahan berdasarkan keputusan ujian, bukan tekaan, serta menyatakan bukti yang menyokong jawapan.')),
@@ -28525,3 +28550,2622 @@ def _sm2542_rows(year_label, subject):
 
 APP_VERSION='v25.124-SCIENCE-v25.68-RUNTIME'
 # ===== END v25.124 =====
+
+
+# ===== v25.125 SCIENCE RPH CONTENT + ACTIVITY SPACING REFINEMENT =====
+# Non-destructive final layer: improve Science SP-specific content and presentation.
+_rph_rows_before_v25125 = _rph_rows
+
+def _rph_rows(s, ai_text):
+    r = dict(_rph_rows_before_v25125(s, ai_text) or {})
+    sub = str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    # Clean harmless duplicate metadata caused by joined topic/focus labels.
+    title = str(r.get('TAJUK') or '').strip()
+    parts = [x.strip() for x in title.split('—') if x.strip()]
+    if parts:
+        dedup=[]
+        for x in parts:
+            if not dedup or x.lower()!=dedup[-1].lower(): dedup.append(x)
+        r['TAJUK']=' — '.join(dedup)
+    sk = str(r.get('STANDARD KANDUNGAN') or '').strip()
+    toks=sk.split()
+    if len(toks)==2 and toks[0]==toks[1]: r['STANDARD KANDUNGAN']=toks[0]
+
+    hay=' '.join(str(s.get(k) or '') for k in ('topic','subtopic','focus','lesson_title','sp_text')).lower()
+    hay += ' ' + str(r.get('TAJUK') or '').lower()
+    if any(k in hay for k in ('membiak','pembiakan','bertelur','melahirkan')):
+        dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+        main=max(15,dur-10); a=max(5,round(main*.27)); b=max(5,round(main*.38)); c=max(5,main-a-b)
+        r['OBJEKTIF PEMBELAJARAN']='Pada akhir pembelajaran, murid dapat menyatakan sekurang-kurangnya dua cara haiwan membiak dan mengelaskan contoh haiwan kepada kumpulan bertelur atau melahirkan anak dengan betul.'
+        r['KRITERIA KEJAYAAN']='Murid dapat mengenal pasti cara pembiakan haiwan, mengelaskan contoh haiwan dengan tepat dan memberi sekurang-kurangnya dua contoh bagi setiap cara pembiakan.'
+        r['BAHAN BANTU MENGAJAR']='Buku teks; kad/gambar haiwan; kad kategori bertelur dan melahirkan anak; jadual pengelasan.'
+        r['AKTIVITI UTAMA']=(
+            f'Aktiviti 1 – Kenal Cara Haiwan Membiak ({a} minit)\n'
+            'Murid meneliti kad/gambar beberapa haiwan. Guru membimbing murid mengenal pasti dua cara pembiakan yang dipelajari, iaitu bertelur dan melahirkan anak, kemudian murid menyatakan contoh secara lisan.\n\n'
+            f'Aktiviti 2 – Kelaskan Haiwan ({b} minit)\n'
+            'Secara berpasangan, murid mengelaskan kad/gambar haiwan kepada kumpulan bertelur atau melahirkan anak. Murid merekod hasil dalam jadual dan menyemak pengelasan bersama pasangan.\n\n'
+            f'Aktiviti 3 – Jelaskan dan Semak ({c} minit)\n'
+            'Murid membentangkan beberapa contoh daripada setiap kumpulan. Rakan menyemak, guru membetulkan salah konsep dan murid menggunakan istilah bertelur, melahirkan anak dan membiak dengan tepat.\n\n'
+            'Aktiviti 4 – PBD Individu (5 minit)\n'
+            'Murid mengelaskan sekurang-kurangnya enam contoh haiwan secara individu dan menulis dua contoh haiwan bertelur serta dua contoh haiwan yang melahirkan anak. Guru merekod penguasaan berdasarkan ketepatan jawapan.'
+        )
+    return r
+
+_rph_format_activity_lines_before_v25125 = _rph_format_activity_lines
+
+def _rph_format_activity_lines(value):
+    formatted = _rph_format_activity_lines_before_v25125(value)
+    # Preserve a clear visual gap before Aktiviti/Activity 2-4, matching the Math RPH layout.
+    formatted = re.sub(r'\n(?=(?:\d+\.\s*)?(?:Aktiviti|Activity)\s+[2-4]\b)', '\n\n', formatted)
+    return formatted
+
+APP_VERSION='v25.125-SCIENCE-RPH-SP-SPECIFIC-SPACING'
+# ===== END v25.125 =====
+
+# ===== v25.126 SCIENCE RPH PRESENTATION POLISH =====
+# Preserve v25.125 content; make Science activity blocks visually match Math,
+# with a real blank line before Aktiviti 2-4 after the legacy renumbering formatter.
+_rph_format_activity_lines_before_v25126 = _rph_format_activity_lines
+
+def _rph_format_activity_lines(value):
+    raw = str(value or '')
+    # Mark boundaries before the legacy formatter removes "Aktiviti N" labels.
+    marked = re.sub(r'(?im)^(\s*)(Aktiviti|Activity)\s+([2-4])\s*[–—-]\s*',
+                    r'\1__RPHGAP__ \2 \3 – ', raw)
+    formatted = _rph_format_activity_lines_before_v25126(marked)
+    # Formatter renumbers lines; remove marker while retaining one empty line.
+    formatted = re.sub(r'\n(?=(?:\d+\.\s*)?__RPHGAP__)', '\n\n', formatted)
+    formatted = formatted.replace('__RPHGAP__ ', '')
+    return formatted
+
+_rph_rows_before_v25126 = _rph_rows
+
+def _rph_rows(s, ai_text):
+    r = dict(_rph_rows_before_v25126(s, ai_text) or {})
+    sub = str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    hay = (' '.join(str(s.get(k) or '') for k in ('topic','subtopic','focus','lesson_title','sp_text'))
+           + ' ' + str(r.get('TAJUK') or '')).lower()
+    if any(k in hay for k in ('membiak','pembiakan','bertelur','melahirkan')):
+        r['PENGETAHUAN SEDIA ADA']='Murid pernah melihat haiwan dan anak haiwan dalam kehidupan harian serta boleh menamakan beberapa jenis haiwan.'
+        r['PENTAKSIRAN']='Pemerhatian semasa pengelasan, soal jawab lisan dan PBD individu berdasarkan ketepatan murid mengenal pasti haiwan bertelur atau melahirkan anak.'
+        r['SET INDUKSI']=(
+            'Guru menunjukkan dua pasangan gambar, contohnya ayam dengan anak ayam dan kucing dengan anak kucing.\n'
+            'Murid menyatakan persamaan dan perbezaan yang diperhatikan pada cara anak haiwan tersebut hadir.\n'
+            'Guru mengaitkan respons murid dengan fokus PdP: haiwan membiak dengan cara yang berbeza.'
+        )
+        r['PENUTUP']=(
+            'Murid menyebut semula dua cara haiwan membiak dan memberi satu contoh bagi setiap cara.\n'
+            'Guru membuat semakan cepat menggunakan dua gambar haiwan baharu; murid menunjukkan kategori bertelur atau melahirkan anak dan guru membetulkan salah konsep jika ada.'
+        )
+    # Harmless typography cleanup only.
+    for key in ('TAJUK','SET INDUKSI','AKTIVITI UTAMA','PENUTUP'):
+        val=str(r.get(key) or '')
+        val=re.sub(r'\.\s*\.(?=\s|$)', '.', val)
+        val=re.sub(r'[ \t]{2,}', ' ', val)
+        r[key]=val.strip()
+    return r
+
+APP_VERSION='v25.126-SCIENCE-RPH-POLISHED'
+# ===== END v25.126 =====
+
+
+# ===== v25.127 SCIENCE PRIMARY v25.70 + SP-DRIVEN ACTIVITY ENGINE =====
+# Non-destructive: v25.70 becomes the Science Primary sequence source.
+# Activity refinement reads the actual selected PdP/SP meaning from pdp_title /
+# skill_metadata and only replaces Science fallback content when a clear SP action is found.
+
+def _science_v2570_db_path_v25127():
+    import os as _os
+    base = _os.path.dirname(_os.path.abspath(__file__))
+    p = _os.path.join(base, 'CikguLaju_Curriculum_Master_v25_70_SCIENCE_SEQUENCE_REPAIRED.db')
+    return p
+
+_sm2542_rows_v25127_base = _sm2542_rows
+def _sm2542_rows(year_label, subject):
+    if subject != 'Sains':
+        return _sm2542_rows_v25127_base(year_label, subject)
+    path = _science_v2570_db_path_v25127()
+    if not os.path.isfile(path):
+        return _sm2542_rows_v25127_base(year_label, subject)
+    con = sqlite3.connect(path, timeout=15)
+    con.row_factory = sqlite3.Row
+    try:
+        rs = con.execute("""SELECT * FROM verified_pdp_sequence
+            WHERE year_label=? AND subject='Sains'
+              AND COALESCE(pdp_sequence_code,'')<>''
+              AND COALESCE(verification_status,'') NOT IN
+                  ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')
+            ORDER BY COALESCE(source_sequence_no,9999), id""",
+            (str(year_label or '').strip(),)).fetchall()
+        return [dict(r) for r in rs]
+    finally:
+        con.close()
+
+def _science_sp_focus_v25127(s, r):
+    pieces = []
+    for k in ('sp_text','skill_metadata','pdp_title','lesson_title','subtopic','focus','topic'):
+        v = s.get(k)
+        if v: pieces.append(str(v))
+    for k in ('TAJUK','STANDARD PEMBELAJARAN'):
+        v = r.get(k)
+        if v: pieces.append(str(v))
+    txt = ' '.join(pieces)
+    # skill_metadata in v25.70 often stores JSON with the authoritative SP text.
+    try:
+        sm = s.get('skill_metadata')
+        if isinstance(sm, str) and sm.lstrip().startswith('{'):
+            obj = json.loads(sm)
+            if obj.get('sp_text'): txt = str(obj['sp_text']) + ' ' + txt
+    except Exception:
+        pass
+    return re.sub(r'\s+', ' ', txt).strip()
+
+def _science_action_v25127(text):
+    t = str(text or '').lower()
+    rules = [
+        ('investigate', ('mengeksperimen','menjalankan penyiasatan','menyiasat','uji kaji','eksperimen')),
+        ('measure', ('mengukur','menyukat','mengira masa','menggunakan alat pengukur')),
+        ('classify', ('mengelaskan','mengelompokkan','mengumpulkan mengikut')),
+        ('compare', ('membanding dan membezakan','membandingkan','membezakan')),
+        ('sequence', ('membuat urutan','menyusun mengikut urutan','urutan','peringkat pertumbuhan','kitar hidup')),
+        ('predict', ('meramalkan','membuat ramalan')),
+        ('infer', ('membuat inferens','menginferens','menaakul')),
+        ('communicate', ('berkomunikasi','melaporkan','membentangkan')),
+        ('label', ('melabelkan','melabel')),
+        ('identify', ('mengenal pasti','menamakan')),
+        ('describe', ('memerihalkan','menerangkan','menjelaskan')),
+        ('state', ('menyatakan','memberi contoh')),
+        ('observe', ('memerhati','membuat pemerhatian')),
+    ]
+    for action, keys in rules:
+        if any(k in t for k in keys):
+            return action
+    return ''
+
+def _science_sp_activity_v25127(s, rows):
+    r = dict(rows or {})
+    sub = str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+
+    focus = _science_sp_focus_v25127(s, r)
+    action = _science_action_v25127(focus)
+    if not action:
+        return r
+
+    dur = _rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+    main = max(15, dur-10)
+    a = max(5, round(main*.27)); b = max(5, round(main*.38)); c = max(5, main-a-b)
+    topic = str(s.get('pdp_title') or s.get('subtopic') or s.get('topic') or r.get('TAJUK') or 'fokus PdP').strip()
+
+    banks = {
+      'classify': (
+        'Murid memerhati contoh/bahan yang berkaitan dengan fokus PdP dan mengenal pasti ciri yang boleh digunakan untuk pengelasan.',
+        'Secara berpasangan, murid mengelaskan contoh kepada kumpulan yang sesuai, merekod ciri pengelasan dalam jadual dan menyemak item yang meragukan berdasarkan bukti.',
+        'Murid membandingkan hasil pengelasan, menerangkan sebab sesuatu contoh berada dalam kumpulan tertentu dan membetulkan pengelasan yang tidak disokong oleh ciri.'
+      ),
+      'compare': (
+        'Murid memerhati dua atau lebih contoh/keadaan dan merekod ciri atau data yang boleh dibandingkan.',
+        'Pasangan membina jadual/peta perbandingan dengan membezakan persamaan dan perbezaan berdasarkan pemerhatian atau maklumat yang diberikan.',
+        'Murid menerangkan sekurang-kurangnya satu persamaan dan satu perbezaan dengan menggunakan bukti serta istilah Sains yang tepat.'
+      ),
+      'measure': (
+        'Murid mengenal pasti kuantiti yang hendak diukur, memilih alat dan unit yang sesuai serta membuat anggaran awal apabila sesuai.',
+        'Pasangan menjalankan pengukuran secara sistematik, membaca skala dengan betul dan merekod bacaan bersama unit dalam jadual.',
+        'Murid membandingkan bacaan, mengenal pasti pola/perbezaan dan menyatakan dapatan berdasarkan data sebenar.'
+      ),
+      'predict': (
+        'Murid meneliti situasi atau data awal dan mengenal pasti bukti yang boleh digunakan untuk membuat ramalan.',
+        'Murid menulis ramalan berserta sebab, kemudian memerhati demonstrasi/hasil atau data tambahan untuk menguji ramalan tersebut.',
+        'Murid membandingkan ramalan dengan hasil sebenar dan menerangkan sama ada ramalan disokong oleh bukti.'
+      ),
+      'infer': (
+        'Murid memerhati bukti, data, rajah atau situasi yang diberi dan membezakan perkara yang diperhatikan daripada perkara yang hendak diterangkan.',
+        'Pasangan mencadangkan penerangan yang munasabah bagi pemerhatian dan menyatakan bukti yang menyokong penerangan tersebut.',
+        'Murid menilai inferens, memilih penerangan yang paling selaras dengan bukti dan memberikan alasan menggunakan istilah Sains yang sesuai.'
+      ),
+      'investigate': (
+        'Murid mengenal pasti persoalan penyiasatan dan membuat jangkaan awal berdasarkan pengetahuan sedia ada.',
+        'Dengan bimbingan guru, murid menjalankan penyiasatan yang sesuai dan selamat, mengubah/memerhati faktor yang berkaitan serta merekod pemerhatian atau data secara sistematik.',
+        'Murid mentafsir data, mengenal pasti pola dan membuat kesimpulan yang menjawab persoalan penyiasatan tanpa melangkaui bukti.'
+      ),
+      'sequence': (
+        'Murid meneliti gambar, model atau maklumat beberapa peringkat dan mengenal pasti petunjuk perubahan antara peringkat.',
+        'Pasangan menyusun kad/peringkat mengikut urutan yang betul dan mencatat sebab bagi susunan tersebut.',
+        'Murid menerangkan urutan dari awal hingga akhir menggunakan istilah Sains yang berkaitan dan membetulkan susunan berdasarkan bukti.'
+      ),
+      'label': (
+        'Murid meneliti model/rajah dan mengenal pasti bahagian yang berkaitan dengan fokus PdP.',
+        'Pasangan memadankan nama bahagian dengan kedudukan yang betul sebelum melabel rajah secara lengkap.',
+        'Murid menyemak label dan menerangkan fungsi/ciri bahagian yang dilabel apabila berkaitan dengan SP.'
+      ),
+      'identify': (
+        'Murid meneliti contoh, rajah, model atau bahan sebenar yang sesuai dan mencari ciri penting berkaitan fokus PdP.',
+        'Pasangan mengenal pasti dan menamakan contoh/bahagian/ciri yang diperlukan sambil memadankan jawapan dengan bukti pada bahan.',
+        'Murid memberi respons individu pada contoh baharu dan menerangkan petunjuk yang digunakan untuk mengenal pasti jawapan.'
+      ),
+      'describe': (
+        'Murid meneliti model, rajah, demonstrasi atau maklumat yang berkaitan dan mencatat kata kunci penting.',
+        'Pasangan membina penerangan langkah demi langkah atau hubungan struktur-fungsi berdasarkan bukti yang diperhatikan.',
+        'Murid menerangkan semula konsep/proses menggunakan istilah Sains yang tepat dan guru membetulkan salah konsep.'
+      ),
+      'state': (
+        'Murid meneliti contoh/gambar/model yang berkaitan dan mengaktifkan pengetahuan sedia ada melalui soal jawab berfokus.',
+        'Pasangan mengenal pasti maklumat utama dan menyatakan fakta/contoh yang diperlukan oleh SP dengan merujuk bahan yang diberi.',
+        'Murid memberi respons pada contoh baharu dan menyatakan jawapan menggunakan istilah Sains yang tepat.'
+      ),
+      'communicate': (
+        'Murid menyusun pemerhatian, data atau dapatan PdP dalam bentuk yang mudah dibaca seperti jadual, rajah atau nota ringkas.',
+        'Pasangan menyediakan penerangan/pembentangan ringkas yang menunjukkan bukti, dapatan dan istilah Sains yang berkaitan.',
+        'Murid berkomunikasi tentang dapatan secara lisan, tulisan, jadual atau rajah; rakan memberi semakan berdasarkan ketepatan bukti.'
+      ),
+      'observe': (
+        'Murid membuat pemerhatian berfokus menggunakan deria atau alat yang sesuai dan merekod hanya ciri/perubahan yang benar-benar diperhatikan.',
+        'Pasangan membandingkan rekod pemerhatian dan mengorganisasikan dapatan dalam jadual, lakaran atau catatan berlabel.',
+        'Murid menerangkan pola/ciri berdasarkan rekod pemerhatian dan membezakan pemerhatian daripada andaian.'
+      ),
+    }
+    bank = banks.get(action)
+    if not bank:
+        return r
+
+    labels = {
+      'classify':'Pengelasan Berasaskan Ciri','compare':'Banding dan Bezakan',
+      'measure':'Pengukuran dan Rekod Data','predict':'Ramalan Berasaskan Bukti',
+      'infer':'Inferens Berasaskan Bukti','investigate':'Penyiasatan Saintifik',
+      'sequence':'Susun Urutan','label':'Kenal dan Label','identify':'Kenal Pasti',
+      'describe':'Terangkan Konsep/Proses','state':'Kenal Fakta Utama',
+      'communicate':'Komunikasi Sains','observe':'Pemerhatian Berfokus'
+    }
+    r['AKTIVITI UTAMA'] = (
+        f'Aktiviti 1 – {labels[action]} ({a} minit)\n{bank[0]}\n\n'
+        f'Aktiviti 2 – Penerokaan dan Rekod Bukti ({b} minit)\n{bank[1]}\n\n'
+        f'Aktiviti 3 – Analisis dan Komunikasi Sains ({c} minit)\n{bank[2]}\n\n'
+        'Aktiviti 4 – PBD Individu (5 minit)\n'
+        'Murid menyelesaikan tugasan ringkas yang mengukur tindakan dalam SP pada contoh baharu; '
+        'guru merekod ketepatan konsep, penggunaan bukti dan istilah Sains yang berkaitan.'
+    )
+    return r
+
+_rph_rows_before_v25127 = _rph_rows
+def _rph_rows(s, ai_text):
+    return _science_sp_activity_v25127(s, _rph_rows_before_v25127(s, ai_text))
+
+APP_VERSION='v25.127-SCIENCE-v25.70-SP-DRIVEN'
+# ===== END v25.127 =====
+
+
+# ===== v25.128 SCIENCE SP-ACTION COVERAGE EXPANSION =====
+# Extends v25.127 for additional DSKP verbs found in the 385 verified Science PdP.
+_science_action_v25128_base = _science_action_v25127
+def _science_action_v25127(text):
+    t = str(text or '').lower()
+    extra = [
+      ('safety', ('mematuhi peraturan','mengamalkan peraturan','langkah keselamatan')),
+      ('create', ('mereka cipta','mereka bentuk','mencipta','membina model','membina litar')),
+      ('investigate', ('meneroka','menentukan faktor','menguji')),
+      ('compare', ('membanding beza','banding beza')),
+      ('infer', ('menghubung kait','menghubungkait','mengitlak','membuat kesimpulan')),
+      ('describe', ('menjelas dengan contoh','menjelaskan dengan contoh')),
+      ('state', ('menyenaraikan','menyebut')),
+      ('calculate', ('mengira','menentukan kelajuan','menentukan luas','menentukan isi padu')),
+      ('record', ('merekod','mencatat')),
+    ]
+    for action, keys in extra:
+        if any(k in t for k in keys): return action
+    return _science_action_v25128_base(text)
+
+_science_sp_activity_v25128_base = _science_sp_activity_v25127
+def _science_sp_activity_v25127(s, rows):
+    r = dict(rows or {})
+    sub = str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub: return r
+    focus = _science_sp_focus_v25127(s, r)
+    action = _science_action_v25127(focus)
+    if action not in ('safety','create','calculate','record'):
+        return _science_sp_activity_v25128_base(s, r)
+    dur = _rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+    main=max(15,dur-10); a=max(5,round(main*.27)); b=max(5,round(main*.38)); c=max(5,main-a-b)
+    banks={
+      'safety':('Murid meneliti situasi/gambar bilik Sains dan mengenal pasti tingkah laku yang selamat serta yang perlu dielakkan.','Pasangan menilai beberapa situasi, memilih tindakan yang mematuhi peraturan dan menerangkan sebab peraturan tersebut perlu dipatuhi.','Murid mempraktikkan rutin keselamatan yang berkaitan dan memberi respons kepada situasi baharu dengan tindakan yang betul.'),
+      'create':('Murid meneliti keperluan tugasan, bahan yang tersedia dan ciri produk/model yang perlu berfungsi.','Pasangan melakar idea, memilih bahan dan membina/mereka cipta model atau objek mengikut kriteria sambil membuat penambahbaikan apabila diperlukan.','Murid menguji hasil binaan, merekod perkara yang berfungsi/tidak berfungsi dan menerangkan satu penambahbaikan berdasarkan hasil ujian.'),
+      'calculate':('Murid mengenal pasti data, kuantiti dan unit yang diperlukan daripada situasi atau hasil pengukuran.','Pasangan menjalankan pengiraan menggunakan data yang betul, merekod langkah dan memastikan unit dinyatakan dengan tepat.','Murid menyemak kewajaran nilai, membandingkan keputusan apabila sesuai dan mentafsir maksud jawapan dalam konteks Sains.'),
+      'record':('Murid mengenal pasti perkara yang perlu diperhatikan atau diukur dan menyediakan jadual/format rekod yang sesuai.','Murid menjalankan pemerhatian/pengukuran dan merekod data secara sistematik dengan label serta unit yang betul apabila berkaitan.','Murid membaca semula rekod, mengenal pasti pola/perubahan dan menyampaikan dapatan berdasarkan data yang direkodkan.')}
+    labels={'safety':'Amalan Keselamatan','create':'Reka Cipta dan Bina','calculate':'Kira dan Tafsir Data','record':'Rekod Data Sistematik'}
+    bank=banks[action]
+    r['AKTIVITI UTAMA']=(f'Aktiviti 1 – {labels[action]} ({a} minit)\n{bank[0]}\n\nAktiviti 2 – Penerokaan dan Rekod Bukti ({b} minit)\n{bank[1]}\n\nAktiviti 3 – Analisis dan Komunikasi Sains ({c} minit)\n{bank[2]}\n\nAktiviti 4 – PBD Individu (5 minit)\nMurid melaksanakan tugasan individu ringkas yang mengukur tindakan utama dalam SP; guru merekod ketepatan konsep, proses dan istilah Sains yang digunakan.')
+    return r
+
+APP_VERSION='v25.128-SCIENCE-v25.70-SP-DRIVEN-FULL'
+# ===== END v25.128 =====
+
+
+# ===== v25.129 SCIENCE SP ACTION EXPANSION =====
+# Extends the v25.128 SP-action matcher for verbs actually present in v25.70.
+_science_action_v25128_base = _science_action_v25128
+def _science_action_v25128(text):
+    t = str(text or '').lower()
+    extra_rules = [
+      ('safety', ('mematuhi peraturan','langkah keselamatan')),
+      ('generalize', ('mengitlak','merumuskan','merumus tentang','membuat kesimpulan')),
+      ('relate', ('menghubungkait','menghubung kait','perhubungan ruang dan masa')),
+      ('create', ('mereka cipta','mereka bentuk','mencipta','membina','memasang')),
+      ('idea', ('menjana idea',)),
+      ('solve', ('menyelesaikan masalah','menentukan kelajuan','menentukan jarak','menentukan masa')),
+      ('draw', ('melakar','melukis gambar rajah')),
+      ('explore', ('meneroka','mencirikan')),
+      ('select', ('memilih',)),
+      ('list', ('menyenaraikan',)),
+      ('simulate', ('menjalankan simulasi','simulasi')),
+      ('project', ('menjalankan projek',)),
+      ('explain_example', ('menjelas dengan contoh','menjelas melalui contoh','menjelas dengan')),
+      ('classify', ('mengelas ',)),
+      ('compare', ('membanding beza',)),
+    ]
+    for a,ks in extra_rules:
+        if any(k in t for k in ks):
+            return a
+    return _science_action_v25128_base(text)
+
+_science_sp_activity_v25128_base = _science_sp_activity_v25128
+def _science_sp_activity_v25128(s, rows):
+    r = dict(rows or {})
+    sub = str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    focus = _science_sp_focus_v25128(s, r)
+    act = _science_action_v25128(focus)
+    if act not in {'safety','generalize','relate','create','idea','solve','draw','explore',
+                   'select','list','simulate','project','explain_example'}:
+        return _science_sp_activity_v25128_base(s, r)
+    topic=str(s.get('pdp_title') or s.get('subtopic') or s.get('topic') or r.get('TAJUK') or 'fokus PdP').strip()
+    banks={
+    'safety':(
+      'Murid meneliti situasi di bilik Sains dan mengenal pasti tindakan yang selamat serta tindakan yang perlu dielakkan.',
+      'Murid memadankan situasi dengan peraturan yang betul dan melakukan simulasi ringkas amalan selamat dengan bimbingan guru.',
+      'Murid menerangkan sebab peraturan dipatuhi dan memilih tindakan yang betul bagi situasi baharu.'
+    ),
+    'generalize':(
+      'Murid meneliti beberapa contoh, pemerhatian atau data dan mengenal pasti pola yang sama.',
+      'Pasangan mengumpulkan bukti yang menyokong pola tersebut serta menyemak contoh yang mungkin bercanggah.',
+      'Murid membina rumusan/pengitlakan yang tidak melangkaui bukti dan mengujinya pada satu contoh baharu.'
+    ),
+    'relate':(
+      'Murid mengenal pasti dua faktor/ciri/peristiwa yang dinyatakan dalam SP dan merekod maklumat penting bagi setiap satunya.',
+      'Pasangan menyusun bukti dalam jadual atau rajah untuk menunjukkan bagaimana perubahan/ciri pada satu perkara berkaitan dengan perkara yang lain.',
+      'Murid menerangkan hubungan tersebut menggunakan bukti dan istilah Sains yang tepat.'
+    ),
+    'create':(
+      'Murid mengenal pasti fungsi, kriteria atau masalah yang perlu dipenuhi oleh binaan/model/produk.',
+      'Pasangan melakar idea, memilih bahan/komponen yang sesuai dan membina atau memasang model mengikut kriteria serta amalan selamat.',
+      'Murid menguji hasil, mengenal pasti kelemahan dan membuat penambahbaikan berdasarkan bukti ujian.'
+    ),
+    'idea':(
+      'Murid meneliti situasi atau masalah dan mengenal pasti fakta Sains yang berkaitan.',
+      'Secara berkumpulan, murid menjana beberapa idea penyelesaian/tindakan dan menghubungkan setiap idea dengan konsep atau bukti.',
+      'Murid memilih idea yang munasabah, memberikan alasan dan menerangkan kesannya.'
+    ),
+    'solve':(
+      'Murid mengenal pasti maklumat diberi, perkara yang perlu dicari dan konsep/rumus/kaedah yang sesuai.',
+      'Murid menyelesaikan masalah secara berperingkat, menunjukkan unit atau bukti pengiraan/pemerhatian dan menyemak kewajaran jawapan.',
+      'Murid menggunakan kaedah yang sama pada situasi baharu dan menerangkan sebab langkah yang dipilih.'
+    ),
+    'draw':(
+      'Murid meneliti objek, laluan, litar, proses atau fenomena dan mengenal pasti komponen yang mesti ditunjukkan.',
+      'Murid menghasilkan lakaran/rajah menggunakan simbol, label dan arah yang sesuai dengan SP.',
+      'Pasangan menyemak rajah berdasarkan ketepatan komponen, hubungan, simbol dan label sebelum pembetulan.'
+    ),
+    'explore':(
+      'Murid meneroka bahan/fenomena melalui aktiviti atau pemerhatian yang sesuai dan merekod ciri yang ditemui.',
+      'Pasangan membandingkan dapatan daripada beberapa contoh serta mengorganisasikan bukti dalam jadual atau catatan.',
+      'Murid membina penerangan tentang ciri/pola berdasarkan dapatan penerokaan.'
+    ),
+    'select':(
+      'Murid mengenal pasti tujuan dan kriteria pilihan yang dinyatakan dalam tugasan.',
+      'Murid menilai beberapa pilihan berdasarkan ciri/fungsi yang sesuai dan merekod alasan bagi pilihan.',
+      'Murid membuat pilihan serta mempertahankannya menggunakan bukti yang berkaitan.'
+    ),
+    'list':(
+      'Murid meneliti bahan rujukan, model, gambar atau media yang berkaitan dan mengenal pasti item yang diperlukan oleh SP.',
+      'Pasangan menyenaraikan item secara teratur serta menyemak ketepatan dan kelengkapan senarai.',
+      'Murid menggunakan senarai untuk menjawab soalan atau mengenal pasti item pada contoh baharu.'
+    ),
+    'simulate':(
+      'Murid mengenal pasti komponen dan hubungan yang perlu ditunjukkan dalam simulasi.',
+      'Dengan bimbingan guru, murid menjalankan simulasi menggunakan model/peranan yang sesuai sambil merekod pemerhatian.',
+      'Murid menerangkan perkara yang diwakili oleh simulasi serta menghubungkannya dengan konsep Sains sebenar.'
+    ),
+    'project':(
+      'Murid mengenal pasti tujuan projek, bahan, langkah kerja dan aspek keselamatan yang diperlukan.',
+      'Murid menjalankan projek secara sistematik, merekod proses/pemerhatian dan membuat pelarasan apabila diperlukan.',
+      'Murid menilai hasil projek berdasarkan kriteria dan membuat rumusan berdasarkan bukti.'
+    ),
+    'explain_example':(
+      'Murid meneliti beberapa contoh yang berkaitan dengan konsep dalam SP dan mengenal pasti ciri penting.',
+      'Pasangan menghubungkan setiap contoh dengan konsep serta mencatat bukti yang menunjukkan hubungan tersebut.',
+      'Murid menerangkan konsep menggunakan contoh yang tepat dan membezakan contoh dengan bukan contoh apabila sesuai.'
+    )}
+    labels={'safety':'Amalan dan Keselamatan Sains','generalize':'Bina Rumusan daripada Bukti',
+    'relate':'Hubung Kait Berasaskan Bukti','create':'Reka Bentuk, Bina dan Uji',
+    'idea':'Jana Idea Berasaskan Konsep','solve':'Penyelesaian Masalah',
+    'draw':'Lakaran/Rajah Saintifik','explore':'Penerokaan Berfokus','select':'Pilih Berdasarkan Kriteria',
+    'list':'Kenal Pasti dan Senaraikan','simulate':'Simulasi Konsep','project':'Projek Sains',
+    'explain_example':'Terangkan melalui Contoh'}
+    b=banks[act]
+    r['AKTIVITI UTAMA']=(f'Aktiviti 1 – {labels[act]}\n{b[0]}\n\n'
+                         f'Aktiviti 2 – Penerokaan dan Bukti\n{b[1]}\n\n'
+                         f'Aktiviti 3 – Analisis dan Komunikasi Sains\n{b[2]}\n\n'
+                         'Aktiviti 4 – PBD Individu\n'
+                         'Murid menyelesaikan tugasan ringkas pada contoh baharu yang mengukur tindakan sebenar dalam SP; '
+                         'guru merekod ketepatan konsep, penggunaan bukti dan istilah Sains.')
+    return r
+
+APP_VERSION='v25.129-SCIENCE-v25.70-SP-DRIVEN-385'
+# ===== END v25.129 =====
+
+
+# ===== v25.130 FINAL SP-ACTION COVERAGE =====
+_science_action_v25128_base_v25130 = _science_action_v25128
+def _science_action_v25128(text):
+    t=str(text or '').lower()
+    # Variants verified in v25.70.
+    if 'meramal' in t: return 'predict'
+    if 'perhubungan ruang dan masa' in t: return 'relate'
+    return _science_action_v25128_base_v25130(text)
+
+APP_VERSION='v25.130-SCIENCE-v25.70-SP-DRIVEN-COMPLETE'
+# ===== END v25.130 =====
+
+
+# ===== v25.131 SCIENCE FULL SP ALIGNMENT =====
+# Align Objective, Success Criteria and BBM to the actual Science SP/action.
+def _science_support_fields_v25131(s, rows):
+    r=dict(rows or {})
+    sub=str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    focus=_science_sp_focus_v25128(s,r)
+    act=_science_action_v25128(focus)
+    # Prefer the actual SP wording as the learning target; strip trailing punctuation only.
+    sp=re.sub(r'\s+',' ',str(focus or '')).strip(' .')
+    # If focus concatenates metadata/title, use the most meaningful title after dash when compact.
+    title=str(s.get('pdp_title') or s.get('subtopic') or s.get('topic') or r.get('TAJUK') or '').strip()
+    target=title.split('—',1)[-1].strip(' .') if '—' in title else (title or sp)
+    if not target: return r
+
+    objmap={
+      'safety':f'Murid dapat mematuhi dan menerangkan peraturan/amalan keselamatan yang berkaitan dengan {target.lower()}.',
+      'classify':f'Murid dapat mengelaskan contoh yang berkaitan dengan {target.lower()} berdasarkan ciri yang sesuai.',
+      'compare':f'Murid dapat membanding dan membezakan aspek yang dinyatakan dalam {target.lower()} berdasarkan bukti.',
+      'measure':f'Murid dapat membuat pengukuran berkaitan {target.lower()} menggunakan alat/unit yang sesuai dan merekod bacaan dengan betul.',
+      'predict':f'Murid dapat membuat ramalan berkaitan {target.lower()} serta memberikan sebab berdasarkan bukti.',
+      'infer':f'Murid dapat membuat inferens berkaitan {target.lower()} berdasarkan pemerhatian atau data.',
+      'investigate':f'Murid dapat menjalankan penyiasatan berkaitan {target.lower()}, merekod dapatan dan membuat kesimpulan berdasarkan bukti.',
+      'relate':f'Murid dapat menerangkan hubung kait yang dinyatakan dalam {target.lower()} menggunakan bukti yang sesuai.',
+      'generalize':f'Murid dapat membina rumusan/pengitlakan berkaitan {target.lower()} berdasarkan beberapa bukti atau contoh.',
+      'create':f'Murid dapat mereka bentuk/membina hasil berkaitan {target.lower()}, menguji dan menambah baik hasil berdasarkan kriteria.',
+      'idea':f'Murid dapat menjana idea berkaitan {target.lower()} dan memberikan alasan berdasarkan konsep Sains.',
+      'solve':f'Murid dapat menyelesaikan masalah berkaitan {target.lower()} menggunakan kaedah, bukti atau pengiraan yang sesuai.',
+      'draw':f'Murid dapat menghasilkan lakaran/rajah berkaitan {target.lower()} dengan simbol, label atau arah yang tepat.',
+      'explore':f'Murid dapat meneroka {target.lower()}, merekod ciri/dapatan dan menerangkan pola yang diperhatikan.',
+      'select':f'Murid dapat memilih pilihan yang sesuai bagi {target.lower()} berdasarkan kriteria dan memberikan alasan.',
+      'list':f'Murid dapat menyenaraikan maklumat yang diperlukan bagi {target.lower()} dengan tepat.',
+      'simulate':f'Murid dapat menjalankan simulasi berkaitan {target.lower()} dan menerangkan konsep yang diwakili.',
+      'project':f'Murid dapat menjalankan projek berkaitan {target.lower()} secara sistematik dan menilai hasil berdasarkan kriteria.',
+      'communicate':f'Murid dapat berkomunikasi tentang {target.lower()} menggunakan bukti dan istilah Sains yang sesuai.',
+      'observe':f'Murid dapat membuat dan merekod pemerhatian berfokus berkaitan {target.lower()} tanpa mencampurkan andaian.',
+      'identify':f'Murid dapat mengenal pasti aspek yang diperlukan dalam {target.lower()} berdasarkan ciri/bukti.',
+      'describe':f'Murid dapat menerangkan {target.lower()} menggunakan istilah Sains dan bukti/contoh yang sesuai.',
+      'state':f'Murid dapat menyatakan fakta/contoh yang diperlukan berkaitan {target.lower()} dengan tepat.',
+      'sequence':f'Murid dapat menyusun dan menerangkan urutan berkaitan {target.lower()} berdasarkan bukti.',
+      'label':f'Murid dapat melabel bahagian berkaitan {target.lower()} dengan tepat.',
+      'explain_example':f'Murid dapat menerangkan {target.lower()} menggunakan contoh yang tepat.'
+    }
+    obj=objmap.get(act, f'Murid dapat melaksanakan kehendak Standard Pembelajaran berkaitan {target.lower()} dengan tepat.')
+    r['OBJEKTIF PEMBELAJARAN']=obj
+
+    critmap={
+      'classify':'Mengelaskan sekurang-kurangnya 4 daripada 5 contoh dengan ciri pengelasan yang betul.',
+      'compare':'Menyatakan sekurang-kurangnya dua persamaan/perbezaan yang disokong bukti.',
+      'measure':'Merekod sekurang-kurangnya tiga bacaan dengan alat/unit yang betul.',
+      'predict':'Membuat satu ramalan dan memberikan sekurang-kurangnya satu sebab berasaskan bukti.',
+      'infer':'Membuat satu inferens yang munasabah dan menyatakan bukti pemerhatian/data.',
+      'investigate':'Melengkapkan rekod penyiasatan dan membuat kesimpulan yang menjawab persoalan.',
+      'relate':'Menerangkan sekurang-kurangnya satu hubungan sebab/pola dengan bukti yang tepat.',
+      'generalize':'Menghasilkan satu rumusan yang disokong sekurang-kurangnya dua bukti/contoh.',
+      'create':'Menghasilkan binaan/model yang memenuhi kriteria dan membuat sekurang-kurangnya satu penambahbaikan selepas ujian.',
+      'solve':'Menunjukkan langkah/kaedah yang sesuai dan memperoleh jawapan atau penyelesaian yang munasabah.',
+      'draw':'Menghasilkan rajah/lakaran dengan komponen, label/simbol dan hubungan yang tepat.',
+      'idea':'Mengemukakan sekurang-kurangnya dua idea dan memilih satu dengan alasan berasaskan konsep Sains.',
+      'observe':'Merekod sekurang-kurangnya tiga pemerhatian yang boleh disahkan.',
+      'communicate':'Menyampaikan dapatan dengan sekurang-kurangnya dua bukti dan istilah Sains yang sesuai.',
+      'safety':'Memilih dan mempraktikkan tindakan selamat dengan betul dalam sekurang-kurangnya 4 daripada 5 situasi.'
+    }
+    r['KRITERIA KEJAYAAN']=critmap.get(act,'Menunjukkan kefahaman terhadap kehendak SP pada sekurang-kurangnya 4 daripada 5 item/tugasan yang diberi.')
+
+    bbmmap={
+      'classify':'Kad/gambar contoh sebenar yang berkaitan dengan SP, kad ciri/kategori, jadual pengelasan.',
+      'compare':'Dua atau lebih contoh/model/rajah berkaitan SP, jadual atau peta perbandingan.',
+      'measure':'Bahan/objek berkaitan SP, alat pengukur dan unit yang sesuai, jadual rekod data.',
+      'predict':'Situasi/data awal berkaitan SP, kad ramalan-sebab, bahan demonstrasi atau data semakan.',
+      'infer':'Bahan pemerhatian/data/rajah berkaitan SP, kad bukti-inferens.',
+      'investigate':'Bahan dan radas penyiasatan yang sesuai dengan SP, lembaran rekod data, peralatan keselamatan jika diperlukan.',
+      'relate':'Model/rajah/data berkaitan dua faktor dalam SP, kad hubung kait atau jadual bukti.',
+      'generalize':'Beberapa contoh/data berkaitan SP, jadual pola-bukti-rumusan.',
+      'create':'Bahan binaan/model yang sesuai dan selamat, alat ringkas, kad kriteria reka bentuk dan ujian.',
+      'idea':'Kad situasi/masalah berkaitan SP, bahan rujukan konsep, peta idea.',
+      'solve':'Kad masalah/data berkaitan SP, alat/bahan atau formula yang diperlukan, ruang kerja penyelesaian.',
+      'draw':'Model/rajah rujukan berkaitan SP, kad simbol/label yang sah, kertas/grid jika sesuai.',
+      'simulate':'Model/bahan simulasi berkaitan SP dan kad peranan/urutan.',
+      'project':'Bahan projek yang sesuai dengan SP, senarai langkah dan kriteria penilaian.',
+      'safety':'Kad situasi bilik Sains, simbol/peralatan keselamatan yang berkaitan, kad peraturan.',
+      'observe':'Objek/model/spesimen atau media berkaitan SP, alat pemerhatian jika sesuai, jadual/lakaran rekod.',
+    }
+    r['BBM']=bbmmap.get(act,'Bahan/model/rajah yang khusus kepada SP, kad tugasan dan bahan rekod bukti.')
+    return r
+
+_rph_rows_before_v25131=_rph_rows
+def _rph_rows(s, ai_text):
+    return _science_support_fields_v25131(s,_rph_rows_before_v25131(s,ai_text))
+
+APP_VERSION='v25.131-SCIENCE-v25.70-FULL-SP-ALIGNMENT'
+# ===== END v25.131 =====
+
+
+# ===== v25.132 SCIENCE PRIMARY LEVEL + TIME POLISH =====
+# Final presentation guard: adapt PBD wording to primary stage and ensure activity
+# durations are computed from the selected PdP duration without shrinking the science content.
+
+_science_support_fields_v25131_base=_science_support_fields_v25131
+def _science_support_fields_v25131(s, rows):
+    r=_science_support_fields_v25131_base(s, rows)
+    sub=str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    yl=str(s.get('year_label') or s.get('year') or '')
+    m=re.search(r'([1-6])',yl)
+    year=int(m.group(1)) if m else 0
+    act=_science_action_v25128(_science_sp_focus_v25128(s,r))
+    # Tahap I: observable, concrete evidence; avoid demanding formal scientific prose.
+    if year in (1,2,3):
+        tahap1={
+          'classify':'Mengelaskan sekurang-kurangnya 4 daripada 5 contoh dengan betul dan menyatakan satu ciri pengelasan.',
+          'compare':'Menunjukkan sekurang-kurangnya satu persamaan dan satu perbezaan dengan betul.',
+          'measure':'Membuat dan merekod sekurang-kurangnya dua bacaan menggunakan alat/unit yang sesuai.',
+          'predict':'Membuat satu ramalan dan memberikan satu sebab berdasarkan apa yang diperhatikan.',
+          'infer':'Memberikan satu penerangan yang munasabah berdasarkan pemerhatian.',
+          'investigate':'Mengikuti langkah penyiasatan, merekod dapatan dan menyatakan kesimpulan mudah berdasarkan hasil.',
+          'create':'Menghasilkan model/binaan yang memenuhi kriteria asas dan mencadangkan satu penambahbaikan.',
+          'generalize':'Menyatakan satu rumusan mudah berdasarkan sekurang-kurangnya dua contoh/pemerhatian.',
+          'relate':'Menerangkan satu hubung kait dengan merujuk contoh, rajah atau pemerhatian.',
+          'safety':'Memilih dan menunjukkan tindakan selamat dengan betul dalam sekurang-kurangnya 4 daripada 5 situasi.'
+        }
+        if act in tahap1: r['KRITERIA KEJAYAAN']=tahap1[act]
+    # Tahap II: retain stronger evidence/reasoning criteria from v25.131.
+    return r
+
+_science_sp_activity_v25128_base_v25132=_science_sp_activity_v25128
+def _science_sp_activity_v25128(s, rows):
+    r=_science_sp_activity_v25128_base_v25132(s,rows)
+    sub=str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    # Normalize any activity headings that have no displayed duration, while preserving
+    # blank-line separation. Use total duration as a guard only; content is not truncated.
+    dur=_rph_duration_minutes_v25110(s) if '_rph_duration_minutes_v25110' in globals() else 60
+    body=str(r.get('AKTIVITI UTAMA') or '')
+    if dur and body and 'Aktiviti 1' in body:
+        # 4 activities: reserve 5 min for PBD; distribute the main block.
+        usable=max(25,int(dur)-10)
+        a=max(5,round(usable*.28)); b=max(8,round(usable*.40)); c=max(5,usable-a-b)
+        body=re.sub(r'(Aktiviti 1\s*[–-][^\n(]+)(?!\s*\(\d+\s*minit\))',
+                    lambda m:m.group(1).rstrip()+f' ({a} minit)',body, count=1)
+        body=re.sub(r'(Aktiviti 2\s*[–-][^\n(]+)(?!\s*\(\d+\s*minit\))',
+                    lambda m:m.group(1).rstrip()+f' ({b} minit)',body, count=1)
+        body=re.sub(r'(Aktiviti 3\s*[–-][^\n(]+)(?!\s*\(\d+\s*minit\))',
+                    lambda m:m.group(1).rstrip()+f' ({c} minit)',body, count=1)
+        body=re.sub(r'(Aktiviti 4\s*[–-][^\n(]+)(?!\s*\(\d+\s*minit\))',
+                    lambda m:m.group(1).rstrip()+' (5 minit)',body, count=1)
+        r['AKTIVITI UTAMA']=body
+    return r
+
+APP_VERSION='v25.132-SCIENCE-v25.70-PRIMARY-LEVEL-TIME-POLISH'
+# ===== END v25.132 =====
+
+
+# ===== v25.133 SCIENCE PRIMARY USABLE CHECKPOINT =====
+# Presentation-only guards after full 385-PdP QA. DB v25.70 remains unchanged.
+_rph_rows_before_v25133=_rph_rows
+def _rph_rows(s, ai_text):
+    r=_rph_rows_before_v25133(s,ai_text)
+    sub=str(s.get('subject') or '').lower()
+    if 'sains' not in sub and 'science' not in sub:
+        return r
+    # Clean accidental repeated separators/whitespace without changing curriculum content.
+    for k in ('TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN',
+              'OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','BBM'):
+        if k in r and r[k] is not None:
+            v=re.sub(r'[ \t]+',' ',str(r[k])).strip()
+            v=re.sub(r'\s*[—–-]\s*\1', lambda m:m.group(0), v) if False else v
+            r[k]=v
+    # Preserve intentional blank line between numbered Science activities.
+    if r.get('AKTIVITI UTAMA'):
+        v=str(r['AKTIVITI UTAMA']).replace('\r\n','\n')
+        v=re.sub(r'\n[ \t]*\n[ \t]*\n+', '\n\n', v)
+        v=re.sub(r'(?<!\n)\n(?=Aktiviti [2-4]\b)', '\n\n', v)
+        r['AKTIVITI UTAMA']=v.strip()
+    return r
+
+APP_VERSION='v25.133-SCIENCE-v25.70-USABLE-CHECKPOINT'
+# ===== END v25.133 =====
+
+
+# ===== v25.134 PRIMARY QA CHECKPOINT =====
+# Prefer v25.71 (non-destructive copy of v25.70 with one verified BM Y1 SK recovery).
+_science_v2570_db_path_v25127_base_v25134=_science_v2570_db_path_v25127
+def _science_v2570_db_path_v25127():
+    import os as _os
+    base=_os.path.dirname(_os.path.abspath(__file__))
+    p=_os.path.join(base,'CikguLaju_Curriculum_Master_v25_71_PRIMARY_QA_FIX.db')
+    if _os.path.isfile(p):
+        return p
+    return _science_v2570_db_path_v25127_base_v25134()
+
+APP_VERSION='v25.134-PRIMARY-QA-CHECKPOINT-v25.71'
+# ===== END v25.134 =====
+
+
+# ===== v25.135 PRIMARY SK-ONLY RUNTIME GUARD =====
+# Current CikguLaju Primary scope is SK. Legacy SJK evidence is preserved in DB
+# for possible future SJKC/SJKT support, but must not hydrate the current SK flow.
+
+_textbook_exact_page_lessons_base_v25135 = _textbook_exact_page_lessons
+def _textbook_exact_page_lessons(year_label, subject, page_no, book_title=''):
+    rows = _textbook_exact_page_lessons_base_v25135(year_label, subject, page_no, book_title)
+    # English Primary: exclude legacy SJK-labelled evidence from current SK menus.
+    if str(year_label).startswith('Tahun') and str(subject).strip() == 'Bahasa Inggeris':
+        rows = [r for r in rows if 'sjk' not in str(r.get('source_url') or '').casefold()
+                and 'sjk' not in str(r.get('notes') or '').casefold()]
+    return rows
+
+_verified_lesson_rows_v2404_base_v25135 = _verified_lesson_rows_v2404
+def _verified_lesson_rows_v2404(year_label, subject, selected_content=''):
+    rows = _verified_lesson_rows_v2404_base_v25135(year_label, subject, selected_content)
+    if str(year_label).startswith('Tahun') and str(subject).strip() == 'Bahasa Inggeris':
+        rows = [r for r in rows if 'sjk' not in str(r.get('source_url') or '').casefold()
+                and 'sjk' not in str(r.get('notes') or '').casefold()]
+    return rows
+
+# Page→SP hydration itself also receives an SK-only guard.
+_textbook_exact_page_standards_base_v25135 = _textbook_exact_page_standards
+def _textbook_exact_page_standards(year_label, subject, page_no, book_title=''):
+    rows = _textbook_exact_page_standards_base_v25135(year_label, subject, page_no, book_title)
+    if str(year_label).startswith('Tahun') and str(subject).strip() == 'Bahasa Inggeris':
+        rows = [r for r in rows if 'sjk' not in str(r.get('source_url') or '').casefold()]
+    return rows
+
+APP_VERSION='v25.135-PRIMARY-SK-ONLY-RUNTIME'
+# ===== END v25.135 =====
+
+
+# ===== v25.136 ENGLISH PRIMARY Y3-Y6 FULL SOW 160 RUNTIME =====
+# Y1-Y2 remain on their existing full SOW engine.
+# Y3-Y6 unit/lesson menus are sourced from english_primary_y3_y6_sow_staging,
+# not from sparse textbook page mappings.
+
+APP_VERSION='v25.136-ENGLISH-Y3-Y6-FULL-160-RUNTIME'
+
+def _english_y3_y6_sow_db_path_v25136():
+    import os, sqlite3
+    candidates=[
+        os.getenv("CIKGULAJU_CURRICULUM_DB_PATH"),
+        os.getenv("CIKGULAJU_DB_PATH"),
+        os.getenv("DATABASE_PATH"),
+        os.path.join(os.path.dirname(__file__),"CikguLaju_Curriculum_Master_v25_73_ENGLISH_Y3_REFINED.db"),
+        os.path.join(os.path.dirname(__file__),"CikguLaju_Curriculum_Master_v25_72_ENGLISH_Y3_Y6_640_STAGING.db"),
+    ]
+    # Prefer a DB that actually contains the 640-row staging table.
+    for p in candidates:
+        if not p or not os.path.exists(p):
+            continue
+        try:
+            con=sqlite3.connect(p)
+            n=con.execute("SELECT COUNT(*) FROM english_primary_y3_y6_sow_staging").fetchone()[0]
+            con.close()
+            if int(n) >= 640:
+                return p
+        except Exception:
+            pass
+    return None
+
+# Make all existing exact SOW lookups use the current verified staging DB.
+_english_y3_y6_sow_db_path_v2517 = _english_y3_y6_sow_db_path_v25136
+
+def _en136_staging_rows(year_value):
+    import sqlite3
+    y=_english_primary_year_number_v2517(year_value)
+    if y not in (3,4,5,6):
+        return []
+    p=_english_y3_y6_sow_db_path_v25136()
+    if not p:
+        return []
+    con=sqlite3.connect(p); con.row_factory=sqlite3.Row
+    rows=con.execute("""
+      SELECT lesson_no,unit_no,unit_name,focus,topic,language_grammar_focus,
+             main_skill,main_cs,main_ls,complementary_skill,complementary_cs,
+             complementary_ls,lesson_type,references_text,sow_pdf_page,
+             verification_status
+      FROM english_primary_y3_y6_sow_staging
+      WHERE year_label=?
+      ORDER BY lesson_no
+    """,(f"Year {y}",)).fetchall()
+    con.close()
+    out=[]
+    for x in rows:
+        r=dict(x)
+        # Compatibility keys for existing menus without pretending topic == unit.
+        r['unit_title']=r.get('unit_name') or ''
+        r['content_topic']=r.get('topic') or ''
+        r['page_start']=None; r['page_end']=None; r['book_title']=''
+        out.append(r)
+    return out
+
+_en97_units_before_v25136=_en97_units
+def _en97_units(year_label):
+    y=_english_primary_year_number_v2517(year_label)
+    if y in (3,4,5,6):
+        rows=_en136_staging_rows(year_label)
+        units=[]; seen=set()
+        for r in rows:
+            u=str(r.get('unit_name') or '').strip()
+            if u and u.casefold() not in seen:
+                seen.add(u.casefold()); units.append(u)
+        if rows and units:
+            return rows,units
+    return _en97_units_before_v25136(year_label)
+
+def _en98_lesson_menu(cid,unit_idx):
+    ss=state.setdefault(cid,{})
+    # Refresh from source so stale sparse rows cannot survive an old state.
+    rows,units=_en97_units(ss.get('year',''))
+    ss['_en97_rows']=rows; ss['_en97_units']=units
+    if unit_idx<0 or unit_idx>=len(units):
+        return _en97_unit_menu(cid)
+    unit=units[unit_idx]
+    items=[r for r in rows
+           if str(r.get('unit_name') or r.get('unit_title') or '').strip()==unit
+           and str(r.get('lesson_no') or '').strip()]
+    if not items:
+        return _en97_unit_menu(cid)
+    ss['_en98_items']=items
+    ss['quick_content_v2391']=unit
+    ss['unit']=unit
+    ss['subtopic']=unit
+    kb=[]
+    for i,r in enumerate(items):
+        lesson=str(r.get('lesson_no') or '').strip()
+        focus=str(r.get('focus') or '').strip()
+        topic=str(r.get('topic') or '').strip()
+        label=f'📚 Lesson {lesson}'
+        if focus: label+=f' • {focus}'
+        if topic and topic.casefold() not in unit.casefold(): label+=f' • {topic}'
+        kb.append([{'text':label[:60],'callback_data':f'en98_lesson_{i}'}])
+    kb.append([{'text':'⬅️ Pilih Unit Lain','callback_data':'en97_up_0'}])
+    return send(cid,f"📚 <b>{html.escape(unit)}</b>\n\nPilih <b>Lesson</b>. SK/SP ditentukan automatik daripada SOW.",kb)
+
+def _en98_apply_lesson(cid,idx):
+    ss=state.setdefault(cid,{})
+    items=ss.get('_en98_items') or []
+    try: idx=int(idx)
+    except Exception: idx=-1
+    if idx<0 or idx>=len(items):
+        return _en97_unit_menu(cid)
+    r=dict(items[idx])
+    lesson=int(r.get('lesson_no'))
+    ss['lesson_no']=lesson; ss['lesson']=lesson; ss['textbook_lesson_no']=lesson
+    ss['unit']=str(r.get('unit_name') or r.get('unit_title') or '')
+    ss['topic']=str(r.get('topic') or '')
+    ss['subtopic']=ss['topic'] or ss['unit']
+    ss['_en98_selected_staging_row']=r
+
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    subject=str(ss.get('subject') or '').strip().lower()
+    if subject in ('english','bahasa inggeris') and y in (3,4,5,6):
+        if not _english_y3_y6_apply_sow_v2517(ss,lesson):
+            return send(cid,'🚧 Mapping SOW Lesson ini belum dapat dibaca.',
+                        [[{'text':'⬅️ Pilih Lesson Lain','callback_data':'en98_back'},
+                          {'text':'🏠 Menu Utama','callback_data':'home'}]])
+        # Preserve the real unit separately; do not overwrite it with lesson topic.
+        ss['unit']=str(r.get('unit_name') or '')
+        ss['quick_content_v2391']=ss['unit']
+        ss['_pdp_source_trace_v2405']={
+            'source':'english_primary_y3_y6_sow_staging',
+            'year':y,'lesson_no':lesson,'unit':ss['unit'],
+            'verification_status':r.get('verification_status') or ''
+        }
+        ss['quick_material_flow']=True
+        ss['assessment_mode']=ss.get('assessment_mode') or 'formative'
+        return _lesson_to_class_v2439(cid)
+
+    # Non-target safety fallback should normally never be reached here.
+    return _en97_unit_menu(cid)
+
+# Ensure callback routes the Y3-Y6 unit menu to the full staging lesson menu.
+_callback_before_v25136=callback
+def callback(cid,d):
+    ds=str(d or '')
+    ss=state.setdefault(cid,{})
+    if ds.startswith('en97_unit_'):
+        y=_english_primary_year_number_v2517(ss.get('year'))
+        if y in (3,4,5,6) and str(ss.get('subject') or '').strip().lower() in ('english','bahasa inggeris'):
+            try: i=int(ds.rsplit('_',1)[1])
+            except Exception: i=-1
+            return _en98_lesson_menu(cid,i)
+    if ds.startswith('en98_lesson_'):
+        y=_english_primary_year_number_v2517(ss.get('year'))
+        if y in (3,4,5,6) and str(ss.get('subject') or '').strip().lower() in ('english','bahasa inggeris'):
+            try: i=int(ds.rsplit('_',1)[1])
+            except Exception: i=-1
+            return _en98_apply_lesson(cid,i)
+    return _callback_before_v25136(cid,d)
+# ===== END v25.136 =====
+
+
+
+# ===== v25.137 PRIMARY FLOW FINAL QA =====
+# Keep the proven flow:
+# Lesson/PdP -> Class -> Date -> Time -> detect available materials -> select -> SUBMIT.
+# Legacy multi-level worksheet menu remains removed. Worksheet is one selectable material item.
+APP_VERSION='v25.137-PRIMARY-FLOW-FINAL-QA'
+
+_submit_materials_before_v25137 = _submit_materials_v2528
+
+def _submit_materials_v2528(cid):
+    """Canonical selected-material submit.
+    Prevent legacy 4-level state from leaking into the current user flow.
+    """
+    ss=state.setdefault(cid,{})
+    # Current product flow has no legacy multi-level worksheet option.
+    ss.pop('worksheet_pack_4levels',None)
+    ss.pop('difficulty',None)
+    return _submit_materials_before_v25137(cid)
+
+# Ensure every new Lesson/PdP selection clears stale material choices and legacy worksheet mode.
+_lesson_to_class_before_v25137 = _lesson_to_class_v2439
+def _lesson_to_class_v2439(cid):
+    ss=state.setdefault(cid,{})
+    ss.pop('_materials_selected_v2528',None)
+    ss.pop('_materials_available_v2528',None)
+    ss.pop('worksheet_pack_4levels',None)
+    ss.pop('difficulty',None)
+    return _lesson_to_class_before_v25137(cid)
+# ===== END v25.137 =====
+
+
+# v25.138 clean checkpoint: no legacy multi-level worksheet menu wording.
+APP_VERSION='v25.138-PRIMARY-CLEAN-CHECKPOINT'
+
+APP_VERSION='v25.139-WORKSHEET-SINGLE-FLOW-FIX'
+
+
+# ===== v25.140 WORKSHEET SINGLE-ONLY RUNTIME LOCK =====
+APP_VERSION='v25.140-WORKSHEET-SINGLE-ONLY-RUNTIME'
+
+# Availability now checks the single worksheet engine, not the retired 4-level pack engine.
+_available_materials_before_v25140 = _available_materials_v2528
+def _available_materials_v2528(ss):
+    items=list(_available_materials_before_v25140(ss) or [])
+    mapped=bool(str(ss.get('sp_code') or '').strip() or (ss.get('selected_sp_codes') or []))
+    if mapped and callable(globals().get('_local_worksheet_text')) and callable(globals().get('create_pdf_file')):
+        if 'worksheet' not in items:
+            items.append('worksheet')
+    return items
+
+def _worksheet_single_runtime_v25140(cid, ss=None):
+    ss=state.setdefault(cid,{}) if ss is None else ss
+    ss.pop('worksheet_pack_4levels',None)
+    ss.pop('worksheet_pack_results',None)
+    ss.pop('worksheet_pack_context',None)
+    ss.pop('difficulty',None)
+    ctx=dict(ss); ctx['task']='worksheet'
+    ctx.setdefault('worksheet_questions',8)
+    wtxt=_local_worksheet_text(ctx)
+    if not wtxt:
+        raise RuntimeError('Worksheet unavailable')
+    p=create_pdf_file(ctx,wtxt,str(cid)+'_worksheet')
+    try:
+        send_document(cid,p,'📝 Worksheet CikguLaju')
+    finally:
+        try:
+            if p and os.path.exists(p): os.remove(p)
+        except Exception:
+            pass
+    return True
+
+# Any old worksheet-pack entry point is redirected to the single worksheet runtime.
+def generate_worksheet_pack(cid, s, regen_cb='generate_selected_material'):
+    try:
+        _worksheet_single_runtime_v25140(cid,s)
+        return send(cid,'✅ <b>Worksheet siap.</b>',
+                    [[{'text':'🔄 Jana Semula Worksheet','callback_data':regen_cb}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    except Exception as e:
+        print('v25.140 single worksheet error:',repr(e),flush=True)
+        return send(cid,'⚠️ Worksheet belum berjaya disediakan. Cuba lagi.',
+                    [[{'text':'🔄 Cuba Lagi','callback_data':regen_cb}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+# Intercept retired callback families before any legacy callback can activate multi-level state.
+_callback_before_v25140 = callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith(('lv3|','gw3|')):
+        ss=state.setdefault(cid,{})
+        ss.pop('worksheet_pack_4levels',None); ss.pop('difficulty',None)
+        return generate_worksheet_pack(cid,ss,'generate_selected_material')
+    return _callback_before_v25140(cid,d)
+# ===== END v25.140 =====
+
+
+
+# ===== v25.141 RPH + WORKSHEET SINGLE STANDARD =====
+APP_VERSION='v25.141-RPH-WORKSHEET-SINGLE-STANDARD'
+
+# Retire the old RPH note that assigned Level 1/2/3/4 worksheets.
+def _inject_worksheet_differentiation_into_rph(text):
+    return text
+
+# Canonical single worksheet text engine for current Primary runtime.
+def _local_worksheet_text(s):
+    ctx=dict(s or {})
+    ctx.pop('worksheet_pack_4levels',None)
+    # Do not inherit retired all-level mode from stale Telegram state.
+    if str(ctx.get('difficulty') or '').lower()=='all4':
+        ctx.pop('difficulty',None)
+    ctx.setdefault('worksheet_questions', _worksheet_auto_qcount(ctx) if callable(globals().get('_worksheet_auto_qcount')) else 8)
+    result=_db_only_single_worksheet(ctx)
+    if not result:
+        return ''
+    return _hybrid_postprocess_worksheet(result,ctx)
+
+# Effective selected-material submit: same picker, but RPH has no 4-level injection
+# and Worksheet uses the canonical single worksheet engine.
+# Existing v25.139 submit block already calls _local_worksheet_text.
+# ===== END v25.141 =====
+
+
+
+# ===== v25.142 PRIMARY CONTENT QUALITY GATE =====
+APP_VERSION='v25.142-PRIMARY-CONTENT-QUALITY-GATE'
+
+def _content_identity_v25142(s):
+    return {
+        'subject':str(s.get('subject') or '').strip(),
+        'year':str(s.get('year') or s.get('year_label') or '').strip(),
+        'topic':str(s.get('topic') or '').strip(),
+        'sp':str(s.get('sp_code') or '').strip(),
+        'sp_text':str(s.get('sp_text') or s.get('learning_standard') or '').strip(),
+    }
+
+def _rph_quality_gate_v25142(text,s):
+    """Fail safely if a generated RPH loses the selected curriculum identity or usable activity structure."""
+    if not text or len(str(text).strip())<500:
+        raise RuntimeError('RPH terlalu ringkas untuk digunakan.')
+    ident=_content_identity_v25142(s)
+    low=str(text).lower()
+    if ident['sp'] and ident['sp'].lower() not in low:
+        raise RuntimeError('RPH tidak mengekalkan Standard Pembelajaran yang dipilih.')
+    # Activity must be substantive; headings alone are not enough.
+    activity_hits=sum(low.count(k) for k in ('aktiviti','activity '))
+    if activity_hits<3:
+        raise RuntimeError('Aktiviti RPH belum cukup substantif.')
+    return text
+
+_local_rph_text_before_v25142=_local_rph_text
+def _local_rph_text(s):
+    text=_local_rph_text_before_v25142(s)
+    return _rph_quality_gate_v25142(text,s)
+
+def _worksheet_quality_gate_v25142(text,s):
+    if not text or len(str(text).strip())<250:
+        raise RuntimeError('Worksheet terlalu ringkas untuk digunakan.')
+    # Existing DB skill/response contracts remain authoritative; this gate only prevents empty/generic output.
+    low=str(text).lower()
+    generic=('isi jawapan di sini','soalan berkaitan tajuk','buat latihan berikut')
+    if sum(x in low for x in generic)>=2:
+        raise RuntimeError('Worksheet terlalu generik.')
+    return text
+
+_local_worksheet_text_before_v25142=_local_worksheet_text
+def _local_worksheet_text(s):
+    text=_local_worksheet_text_before_v25142(s)
+    return _worksheet_quality_gate_v25142(text,s)
+
+# BBM already has the strongest safe gate in the current app:
+# exact verified curriculum mapping, no generic subject fallback for selected SP,
+# and approved visual assets only. Keep that engine unchanged.
+# ===== END v25.142 =====
+
+
+# ===== v25.143 QA RESOLVER LOCK =====
+APP_VERSION='v25.143-QA-RESOLVER-LOCK'
+# Production routing is not changed. This helper is only for controlled QA/sample generation.
+def _qa_curriculum_db_v25143():
+    p=os.path.join(os.path.dirname(__file__),'CikguLaju_Curriculum_Master_v25_73_ENGLISH_Y3_REFINED.db')
+    if not os.path.isfile(p):
+        raise RuntimeError('QA curriculum DB v25.73 not found')
+    con=sqlite3.connect(p)
+    try:
+        ok=con.execute('PRAGMA integrity_check').fetchone()[0]
+        if str(ok).lower()!='ok': raise RuntimeError('QA DB integrity failed: '+str(ok))
+    finally: con.close()
+    return p
+# ===== END v25.143 =====
+
+# ===== v25.144 ENGLISH PRIMARY SOW-SPECIFIC RPH =====
+APP_VERSION='v25.144-ENGLISH-RPH-SOW-SPECIFIC'
+
+_local_rph_text_before_v25144=_local_rph_text
+
+def _english_rph_sow_specific_v25144(s, text):
+    if not _is_english_subject(s) or not text:
+        return text
+    year=str(s.get('year') or s.get('year_label') or '').strip()
+    m=re.search(r'([1-6])',year)
+    if not m or int(m.group(1)) not in (3,4,5,6):
+        return text
+    focus=str(s.get('focus') or s.get('lesson_focus') or s.get('subtopic') or s.get('topic') or '').strip()
+    topic=str(s.get('topic') or '').strip()
+    lang=str(s.get('language_grammar_focus') or s.get('language_focus') or '').strip()
+    main=str(s.get('main_skill') or '').strip()
+    comp=str(s.get('complementary_skill') or '').strip()
+    refs=str(s.get('references_text') or '').strip()
+    lesson=str(s.get('lesson_no') or s.get('lesson') or '').strip()
+    details=[]
+    if lesson: details.append('Lesson '+lesson)
+    if focus: details.append(focus)
+    if lang: details.append('Language/grammar focus: '+lang)
+    if main: details.append('Main skill: '+main)
+    if comp: details.append('Complementary skill: '+comp)
+    if refs: details.append('Verified SOW reference: '+refs)
+    if not details:
+        return text
+    anchor='TEACHING AND LEARNING MATERIALS:'
+    block='SOW LESSON CONTEXT: '+' | '.join(details)+'\n'
+    if block.strip() not in text:
+        pos=text.find(anchor)
+        text=(text[:pos]+block+text[pos:]) if pos>=0 else block+text
+    # Replace only the generic three-activity shell; preserve exact standards/objectives already generated.
+    pat=r'MAIN ACTIVITIES: Activity 1 \((\d+) minutes\).*?(?=\nCLOSURE:)'
+    mm=re.search(pat,text,re.S)
+    if mm:
+        mins=re.findall(r'Activity [123] \((\d+) minutes\)',mm.group(0))
+        a1,a2,a3=(mins+['15','15','15'])[:3]
+        skill_label=main or 'selected main skill'
+        comp_label=comp or 'selected complementary skill'
+        material=(refs if refs else (topic or focus or 'the verified lesson material'))
+        replacement=(
+          f'MAIN ACTIVITIES: Activity 1 ({a1} minutes) – Main Skill\n'
+          f'Teacher introduces the {skill_label} task using {material}. Pupils work with the lesson content on {focus or topic}, following the exact selected Learning Standard. Teacher models one example and checks that pupils understand what evidence is required.\n'
+          f'Activity 2 ({a2} minutes) – Guided Practice\n'
+          f'Pupils complete a paired or small-group {skill_label} task using the same SOW lesson context. '
+          +(f'The language/grammar focus is {lang}. ' if lang else '')+
+          f'Teacher checks responses against the selected Main Learning Standard and gives immediate correction or support.\n'
+          f'Activity 3 ({a3} minutes) – Complementary Skill & Assessment\n'
+          f'Pupils complete a fresh task that integrates {comp_label} without changing the selected lesson context. '
+          f'Teacher records evidence for the selected Main and Complementary Learning Standards and identifies pupils who require follow-up support.'
+        )
+        text=text[:mm.start()]+replacement+text[mm.end():]
+    return text
+
+def _local_rph_text(s):
+    return _english_rph_sow_specific_v25144(s,_local_rph_text_before_v25144(s))
+# ===== END v25.144 =====
+
+
+# === v25.145 WORKSHEET VERIFIED-MAPPING RUNTIME ===
+# Non-destructive compatibility layer:
+# the current curriculum DB already contains complete verified worksheet mappings
+# in worksheet_sp_action_map + worksheet_sp_quality_layer + worksheet_recipe_map.
+APP_VERSION='v25.145-WORKSHEET-VERIFIED-MAPPING-RUNTIME'
+
+def _worksheet_verified_mapping_contract_v25145(state):
+    year=str(state.get("year") or state.get("year_label") or "").strip()
+    subject=str(state.get("subject") or "").strip()
+    sp=str(state.get("sp_code") or state.get("sp") or "").strip()
+    if not year or not subject or not sp:
+        raise RuntimeError("Worksheet memerlukan Tahun, Subjek dan SP yang sah.")
+    with _db() as con:
+        row=con.execute("""
+          SELECT s.id AS curriculum_standard_id,
+                 a.action_family,
+                 q.recipe_key,q.task_mode,q.stimulus_family,q.visual_family,
+                 q.visual_policy,q.context_category,q.action_keyword,
+                 COUNT(DISTINCT r.level) AS recipe_levels
+          FROM curriculum_standards s
+          JOIN worksheet_sp_action_map a
+            ON a.curriculum_standard_id=s.id AND a.verified=1
+          JOIN worksheet_sp_quality_layer q
+            ON q.curriculum_standard_id=s.id AND q.verified=1
+          JOIN worksheet_recipe_map r
+            ON r.curriculum_standard_id=s.id AND r.verified=1
+          WHERE s.year_label=? AND s.subject=? AND s.sp_code=?
+          GROUP BY s.id,a.action_family,q.recipe_key,q.task_mode,q.stimulus_family,
+                   q.visual_family,q.visual_policy,q.context_category,q.action_keyword
+          LIMIT 1
+        """,(year,subject,sp)).fetchone()
+    if not row:
+        raise RuntimeError("Worksheet belum mempunyai mapping SP yang disahkan.")
+    d=dict(row)
+    if int(d.get("recipe_levels") or 0) < 1:
+        raise RuntimeError("Worksheet recipe belum tersedia untuk SP ini.")
+    return d
+
+# Use the verified mapping that exists in the current DB as the launch contract.
+# Do not fabricate missing skill/activity metadata.
+def _worksheet_launch_contract_v2339(state):
+    return _worksheet_verified_mapping_contract_v25145(state)
+
+def _worksheet_response_contract_guard_v2345(state):
+    # Existing verified mapping layers are the authoritative compatibility gate
+    # for the current checkpoint. Response geometry remains enforced by the
+    # renderer/runtime QA rules already present in the DB and app.
+    _worksheet_verified_mapping_contract_v25145(state)
+    return True
+
+# Retain the old function name used by DB-first generators, but source it from
+# the verified mapping tables that are actually present in the current DB.
+def _worksheet_skill_contract_v2337(state):
+    d=_worksheet_verified_mapping_contract_v25145(state)
+    return {
+        "skill_family": d.get("action_family") or d.get("task_mode") or "",
+        "allowed_activity_types": d.get("task_mode") or d.get("recipe_key") or "",
+        "response_geometry": d.get("recipe_key") or "",
+        "answer_key_required": 1,
+        "visual_optional": 1 if str(d.get("visual_policy") or "").lower()!="required" else 0,
+    }
+
+# Final single-worksheet lock. Legacy four-level recipe data remains preserved
+# in DB, but runtime requests one age-appropriate worksheet only.
+_local_worksheet_text_before_v25145=_local_worksheet_text
+def _local_worksheet_text(s):
+    ctx=dict(s or {})
+    ctx.pop("worksheet_pack_4levels",None)
+    ctx.pop("worksheet_pack_results",None)
+    ctx.pop("worksheet_pack_context",None)
+    if str(ctx.get("difficulty") or "").lower()=="all4":
+        ctx.pop("difficulty",None)
+    _worksheet_verified_mapping_contract_v25145(ctx)
+    return _local_worksheet_text_before_v25145(ctx)
+
+
+
+# === v25.146 SCIENCE WORKSHEET SEMANTIC RUNTIME ===
+APP_VERSION='v25.146-SCIENCE-WORKSHEET-SEMANTIC-RUNTIME'
+_worksheet_verified_mapping_contract_before_v25146=_worksheet_verified_mapping_contract_v25145
+
+def _worksheet_verified_mapping_contract_v25145(state):
+    d=_worksheet_verified_mapping_contract_before_v25146(state)
+    year=str(state.get("year") or state.get("year_label") or "").strip()
+    subject=str(state.get("subject") or "").strip()
+    sp=str(state.get("sp_code") or state.get("sp") or "").strip()
+    if subject!="Sains" or not year.startswith("Tahun "):
+        return d
+    with _db() as con:
+        try:
+            row=con.execute("""
+              SELECT action_family,recipe_key,task_mode,format_key,verification_status
+              FROM worksheet_science_effective_mapping_v2575
+              WHERE year_label=? AND sp_code=? LIMIT 1
+            """,(year,sp)).fetchone()
+        except Exception:
+            row=None
+    if row:
+        x=dict(row)
+        d.update({
+          "action_family":x.get("action_family") or d.get("action_family"),
+          "recipe_key":x.get("recipe_key") or d.get("recipe_key"),
+          "task_mode":x.get("task_mode") or d.get("task_mode"),
+          "format_key":x.get("format_key") or d.get("format_key"),
+          "semantic_verification":x.get("verification_status") or ""
+        })
+    return d
+
+
+
+# === v25.147 MATH + SCIENCE WORKSHEET SEMANTIC RUNTIME ===
+APP_VERSION='v25.147-MATH-SCIENCE-WORKSHEET-SEMANTIC-RUNTIME'
+_worksheet_verified_mapping_contract_before_v25147=_worksheet_verified_mapping_contract_v25145
+
+def _worksheet_verified_mapping_contract_v25145(state):
+    d=_worksheet_verified_mapping_contract_before_v25147(state)
+    year=str(state.get("year") or state.get("year_label") or "").strip()
+    subject=str(state.get("subject") or "").strip()
+    sp=str(state.get("sp_code") or state.get("sp") or "").strip()
+    if subject!="Matematik" or not year.startswith("Tahun "):
+        return d
+    with _db() as con:
+        try:
+            row=con.execute("""
+              SELECT action_family,recipe_key,task_mode,format_key,verification_status
+              FROM worksheet_math_effective_mapping_v2576
+              WHERE year_label=? AND sp_code=? LIMIT 1
+            """,(year,sp)).fetchone()
+        except Exception:
+            row=None
+    if row:
+        x=dict(row)
+        d.update({
+          "action_family":x.get("action_family") or d.get("action_family"),
+          "recipe_key":x.get("recipe_key") or d.get("recipe_key"),
+          "task_mode":x.get("task_mode") or d.get("task_mode"),
+          "format_key":x.get("format_key") or d.get("format_key"),
+          "semantic_verification":x.get("verification_status") or ""
+        })
+    return d
+
+
+
+# === v25.148 PRIMARY WORKSHEET SEMANTIC RUNTIME ===
+APP_VERSION='v25.148-PRIMARY-WORKSHEET-SEMANTIC-RUNTIME'
+_worksheet_verified_mapping_contract_before_v25148=_worksheet_verified_mapping_contract_v25145
+
+def _worksheet_verified_mapping_contract_v25145(state):
+    d=_worksheet_verified_mapping_contract_before_v25148(state)
+    year=str(state.get("year") or state.get("year_label") or "").strip()
+    subject=str(state.get("subject") or "").strip()
+    sp=str(state.get("sp_code") or state.get("sp") or "").strip()
+    if subject not in ("Bahasa Melayu","Bahasa Inggeris") or not year.startswith("Tahun "):
+        return d
+    with _db() as con:
+        try:
+            row=con.execute("""
+              SELECT action_family,recipe_key,task_mode,format_key,verification_status
+              FROM worksheet_language_effective_mapping_v2577
+              WHERE year_label=? AND subject=? AND sp_code=? LIMIT 1
+            """,(year,subject,sp)).fetchone()
+        except Exception:
+            row=None
+    if row:
+        x=dict(row)
+        d.update({
+          "action_family":x.get("action_family") or d.get("action_family"),
+          "recipe_key":x.get("recipe_key") or d.get("recipe_key"),
+          "task_mode":x.get("task_mode") or d.get("task_mode"),
+          "format_key":x.get("format_key") or d.get("format_key"),
+          "semantic_verification":x.get("verification_status") or ""
+        })
+    return d
+
+
+# === v25.149 WORKSHEET SEMANTIC -> COMMERCIAL RENDERER BRIDGE ===
+APP_VERSION='v25.149-WORKSHEET-SEMANTIC-RENDERER-BRIDGE'
+
+# User-facing worksheet is one age/SP-appropriate set. Legacy recipe levels stay in DB only.
+def _db_ws_pack_header(state, level):
+    subj=str(state.get('subject') or '')
+    if subj=='Bahasa Inggeris':
+        return ['WORKSHEET','Instruction: Answer all questions. Show your working or evidence where needed.']
+    return ['LEMBARAN KERJA','Arahan: Jawab semua soalan. Tunjukkan langkah kerja atau bukti apabila diperlukan.']
+
+_db_first_generate_one_level_before_v25149=_db_first_generate_one_level
+
+def _db_first_generate_one_level(state, level, qcount):
+    """Drive worksheet content from the verified effective SP mapping, not legacy level choice."""
+    contract=_worksheet_verified_mapping_contract_v25145(state)
+    recipe=str(contract.get('recipe_key') or '').strip()
+    if not recipe:
+        return _db_first_generate_one_level_before_v25149(state,level,qcount)
+    seed=f"{state.get('variation_seed','')}-{state.get('year','')}-{state.get('subject','')}-{state.get('sp_code','')}-single"
+    rng=random.Random(seed)
+    if recipe=='math_scale':
+        return _db_ws_math_scale(state,2,qcount,rng)
+    if recipe.startswith('math_'):
+        return _db_ws_math_generic(state,2,qcount,rng,recipe)
+    if recipe.startswith('bm_') or recipe.startswith('en_'):
+        return _db_ws_language_generic(state,2,qcount,rng,recipe)
+    # Science/other subject generators receive the verified semantic recipe;
+    # renderer response geometry is still enforced by v23.20/v23.26.
+    return _db_ws_other_generic(state,2,qcount,rng,recipe)
+
+# Canonical single route: fixed neutral internal level, never exposed to pupil/teacher.
+def _db_only_single_worksheet(s):
+    ctx=dict(s or {})
+    ctx.pop('difficulty',None)
+    q=_worksheet_auto_qcount(ctx) if callable(globals().get('_worksheet_auto_qcount')) else _worksheet_question_count(ctx)
+    return _db_first_generate_one_level(ctx,2,q)
+
+# Hard QA: retired level labels must never leak into current worksheet output.
+_local_worksheet_text_before_v25149=_local_worksheet_text
+def _local_worksheet_text(s):
+    text=_local_worksheet_text_before_v25149(s)
+    bad=('ARAS 1','ARAS 2','ARAS 3','ARAS 4','PEMULIHAN / ASAS','PENGAYAAN / KBAT')
+    if any(x in str(text).upper() for x in bad):
+        raise RuntimeError('Worksheet runtime masih mengandungi label aras lama.')
+    return text
+# === END v25.149 ===
+
+# === v25.150 PRIMARY WORKSHEET QUALITY ENGINE ===
+APP_VERSION='v25.150-PRIMARY-WORKSHEET-QUALITY-ENGINE'
+
+# Neutral, age-appropriate instruction. Legacy level parameter is an internal compatibility
+# argument only and must not alter or appear in the pupil-facing worksheet.
+def _ws_level_instruction(level, subject):
+    if str(subject)=='Bahasa Inggeris':
+        return 'Complete the tasks according to the skill and learning standard. Use the space provided.'
+    return 'Lengkapkan tugasan mengikut kemahiran dan standard pembelajaran. Gunakan ruang yang disediakan.'
+
+# Response geometry and question density are driven by the verified SP semantic contract.
+def _worksheet_quality_context_v25150(s):
+    ctx=dict(s or {})
+    c=_worksheet_verified_mapping_contract_v25145(ctx)
+    for k in ('action_family','recipe_key','task_mode','format_key','response_geometry','visual_policy'):
+        if c.get(k): ctx[k]=c.get(k)
+    ctx['worksheet_skill_family']=c.get('action_family') or ctx.get('worksheet_skill_family') or ''
+    fmt=str(c.get('format_key') or '')
+    fam=str(c.get('action_family') or '')
+    if fmt in ('guided_writing','guided_writing_en','literature_response','language_arts_response') or fam in ('menulis','writing','sastera','language'):
+        ctx['worksheet_response_space']='extended'
+    elif fmt in ('experiment_table','science_data','construction_task','diagram_label','geometry_diagram','measurement_scale','clock_timeline','fraction_model','data_table_chart'):
+        ctx['worksheet_response_space']='structured'
+    elif fmt in ('speaking_task_card','oral_response','listening_response') or fam in ('bertutur','speaking','listening'):
+        ctx['worksheet_response_space']='task_card'
+    else:
+        ctx['worksheet_response_space']='short'
+    ctx['worksheet_visual_required']=fmt in ('diagram_label','geometry_diagram','measurement_scale','clock_timeline','fraction_model','data_table_chart','construction_task','observation_record')
+    return ctx
+
+_db_only_single_worksheet_before_v25150=_db_only_single_worksheet
+def _db_only_single_worksheet(s):
+    ctx=_worksheet_quality_context_v25150(s)
+    ctx.pop('difficulty',None)
+    q=_worksheet_auto_qcount(ctx) if callable(globals().get('_worksheet_auto_qcount')) else _worksheet_question_count(ctx)
+    text=_db_first_generate_one_level(ctx,2,q)
+    # Final content contract: one worksheet, no level labels, answer scheme mandatory.
+    u=str(text).upper()
+    retired=('ARAS 1','ARAS 2','ARAS 3','ARAS 4','PEMULIHAN / ASAS','PENGAYAAN / KBAT','TUGASAN 4 ARAS')
+    if any(x in u for x in retired):
+        raise RuntimeError('Worksheet masih mengandungi struktur aras lama.')
+    if not any(x in u for x in ('SKEMA JAWAPAN','ANSWER SCHEME','ANSWER KEY')):
+        raise RuntimeError('Worksheet tiada skema jawapan.')
+    return text
+
+# Current single worksheet text route must use the quality context before generation/rendering.
+_local_worksheet_text_before_v25150=_local_worksheet_text
+def _local_worksheet_text(s):
+    return _local_worksheet_text_before_v25150(_worksheet_quality_context_v25150(s))
+
+# Diagnostic used before release/deploy.
+def _worksheet_quality_diagnostic_v25150(state):
+    ctx=_worksheet_quality_context_v25150(state)
+    return {
+        'year':ctx.get('year'),'subject':ctx.get('subject'),'sp_code':ctx.get('sp_code'),
+        'action_family':ctx.get('action_family'),'recipe_key':ctx.get('recipe_key'),
+        'format_key':ctx.get('format_key'),'response_space':ctx.get('worksheet_response_space'),
+        'visual_required':bool(ctx.get('worksheet_visual_required')),
+        'question_count':_worksheet_auto_qcount(dict(ctx))
+    }
+# === END v25.150 ===
+
+# === v25.151 WORKSHEET FAMILY-ACCURATE CONTENT ENGINE ===
+APP_VERSION='v25.151-WORKSHEET-FAMILY-ACCURATE-CONTENT'
+
+# These generators use the verified SP semantic contract. They do not expose or use
+# legacy four-level pedagogy; the level argument remains compatibility-only.
+def _ws151_header(state, instruction=None):
+    subject=str(state.get('subject') or '')
+    out=_db_ws_pack_header(state,2)
+    out += ['FOKUS PEMBELAJARAN', _ws_sp_focus_line(state)]
+    if instruction:
+        out.append(instruction)
+    return out
+
+def _ws151_finish(student, answers, english=False):
+    student += [('ANSWER SCHEME:' if english else 'SKEMA JAWAPAN:')] + answers
+    return '\n'.join(student)
+
+def _ws151_language(state,qcount,rng,contract):
+    subject=str(state.get('subject') or '')
+    english=subject=='Bahasa Inggeris'
+    fmt=str(contract.get('format_key') or '')
+    topic=str(state.get('topic') or ('the lesson' if english else 'pembelajaran'))
+    sptext=str(state.get('sp_text') or '')
+    seed=f"v25151|{state.get('year')}|{subject}|{state.get('sp_code')}|{state.get('variation_seed','')}"
+    task_rule,ans_rule,_=_ws_action_task(state,2,seed)
+    student=_ws151_header(state, 'Complete the tasks using the space provided.' if english else 'Lengkapkan tugasan menggunakan ruang yang disediakan.')
+    ans=[]
+    if fmt in ('reading_text','single_passage'):
+        if english:
+            passage=f"Aina gets ready for school early. She packs her books and water bottle. At school, she greets her teacher and joins her friends for the first activity."
+            student += ['READING TEXT',passage]
+            base=[('What is the text mainly about?','Aina getting ready for and starting school.'),('Name one thing Aina packs.','Books / a water bottle.'),('Who does Aina greet?','Her teacher.'),('What does Aina do after greeting her teacher?','She joins her friends for the first activity.'),('Write one detail that supports the main idea.','Accept a relevant detail from the text.')]
+        else:
+            passage=f"Pada waktu pagi, Aina bersiap untuk ke sekolah. Dia memasukkan buku dan botol air ke dalam beg. Setibanya di sekolah, Aina memberi salam kepada guru lalu menyertai rakan-rakannya dalam aktiviti pembelajaran."
+            student += ['PETIKAN',passage]
+            base=[('Apakah idea utama petikan?','Persediaan dan aktiviti Aina sebelum memulakan pembelajaran di sekolah.'),('Nyatakan satu barang yang dibawa oleh Aina.','Buku / botol air.'),('Siapakah yang diberi salam oleh Aina?','Guru.'),('Apakah yang dilakukan oleh Aina selepas memberi salam?','Menyertai rakan-rakan dalam aktiviti pembelajaran.'),('Nyatakan satu bukti daripada petikan yang menyokong jawapan kamu.','Terima bukti tepat daripada petikan.')]
+        for i in range(min(qcount,len(base))):
+            q,a=base[i]; student.append(f"{i+1}. {q} [ANSWERSPACE: {2 if i<3 else 3}]"); ans.append(f"{i+1}. {a}")
+    elif fmt in ('guided_writing','guided_writing_en'):
+        student += [('WRITING TASK' if english else 'TUGASAN MENULIS'), (task_rule or (f"Write about {topic}." if english else f"Tulis tentang {topic}."))]
+        prompts=(['Plan: write 3 key words or ideas.','Write 3–5 complete sentences.','Check capital letters, punctuation and spelling.'] if english else ['Rancang: tulis 3 kata kunci atau isi.','Tulis 3–5 ayat yang lengkap.','Semak ejaan, tanda baca dan struktur ayat.'])
+        spaces=(2,7,3)
+        for i,(q,n) in enumerate(zip(prompts,spaces),1): student.append(f"{i}. {q} [ANSWERSPACE: {n}]")
+        ans=[f"1. {'Accept relevant key words/ideas.' if english else 'Terima kata kunci/isi yang relevan.'}",f"2. {ans_rule or ('Accept coherent sentences that meet the SP.' if english else 'Terima ayat gramatis yang menepati SP.')}",f"3. {'Evidence of editing is present.' if english else 'Terdapat bukti semakan/penyuntingan.'}"]
+    elif fmt in ('speaking_task_card','oral_response','listening_response'):
+        student += [('ORAL / LISTENING TASK CARD' if english else 'KAD TUGASAN LISAN / MENDENGAR'), (task_rule or (f"Respond orally about {topic}." if english else f"Berikan respons lisan tentang {topic}."))]
+        checks=(['Listen to the teacher stimulus.','Prepare key words before responding.','Give the response clearly.'] if english else ['Dengar stimulus/arahan guru.','Sediakan kata kunci sebelum memberikan respons.','Berikan respons dengan jelas.'])
+        for i,q in enumerate(checks,1): student.append(f"{i}. {q} [CHECKBOXES: 1]")
+        student.append(('Teacher evidence / notes: ' if english else 'Catatan / evidens guru: ')+'[ANSWERSPACE: 4]')
+        ans=[('Teacher assesses the oral/listening response against the stated SP.' if english else 'Guru menilai respons lisan/mendengar berdasarkan SP yang dinyatakan.')]
+    elif fmt in ('grammar_context','language_arts_response','literature_response'):
+        stim=('Maya and her brother visit the library every Saturday. They choose books carefully and read quietly.' if english else 'Aina dan adiknya pergi ke perpustakaan pada hari Sabtu. Mereka memilih buku dengan teliti dan membaca dengan senyap.')
+        student += [('TEXT / CONTEXT' if english else 'TEKS / KONTEKS'),stim]
+        for i in range(1,qcount+1):
+            q=task_rule if i==1 and task_rule else (('Complete a language task based on the text and the learning standard.' if english else 'Lengkapkan tugasan bahasa berdasarkan teks dan standard pembelajaran.'))
+            student.append(f"{i}. {q} [ANSWERSPACE: {3 if i<3 else 4}]"); ans.append(f"{i}. {ans_rule or ('Accept an accurate response supported by the text/SP.' if english else 'Terima respons tepat yang disokong teks/SP.')}" )
+    else:
+        return _db_ws_language_generic(state,2,qcount,rng,str(contract.get('recipe_key') or ''))
+    return _ws151_finish(student,ans,english)
+
+def _ws151_math(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or ''); topic=str(state.get('topic') or 'Matematik')
+    student=_ws151_header(state,'Tunjukkan langkah kerja pada ruang yang disediakan.'); ans=[]
+    for i in range(1,qcount+1):
+        if fmt=='clock_timeline':
+            h=rng.randint(7,16); m=rng.choice([0,15,30,45]); dur=rng.choice([30,45,60,75]); end=h*60+m+dur
+            student.append(f"{i}. Aktiviti bermula pada pukul {h:02d}:{m:02d}. [CLOCK: {h}, {m}] Tempohnya {dur} minit. Tandakan/nyatakan waktu tamat. [ANSWERSPACE: 4]")
+            ans.append(f"{i}. {end//60:02d}:{end%60:02d}.")
+        elif fmt=='fraction_model':
+            den=rng.choice([4,5,6,8,10]); num=rng.randint(1,den-1)
+            student.append(f"{i}. Perhatikan model pecahan. [FRACTION_BAR: {num}, {den}] (a) Tulis pecahan berlorek. (b) Nyatakan pengangka dan penyebut. [ANSWERSPACE: 4]")
+            ans.append(f"{i}. {num}/{den}; pengangka {num}, penyebut {den}.")
+        elif fmt=='geometry_diagram':
+            l=rng.randint(4,12); w=rng.randint(3,9)
+            student.append(f"{i}. Perhatikan rajah. [GEOMETRY: rectangle, {l}, {w}] Hitung perimeter segi empat tepat itu. Tunjukkan pengiraan. [ANSWERSPACE: 5]")
+            ans.append(f"{i}. 2({l}+{w}) = {2*(l+w)} cm.")
+        elif fmt=='measurement_scale':
+            cm=rng.randint(120,890)
+            student.append(f"{i}. Panjang reben ialah {cm} cm. Tukarkan kepada meter dan sentimeter. [RULER: 0, 10, 1] [ANSWERSPACE: 4]")
+            ans.append(f"{i}. {cm//100} m {cm%100} cm.")
+        elif fmt=='data_table_chart':
+            vals=[rng.randint(2,12) for _ in range(4)]
+            student.append(f"{i}. Teliti carta. [BAR_CHART: A={vals[0]}|B={vals[1]}|C={vals[2]}|D={vals[3]}] Nyatakan nilai tertinggi dan beza antara nilai tertinggi dengan terendah. [ANSWERSPACE: 4]")
+            ans.append(f"{i}. Tertinggi {max(vals)}; beza {max(vals)-min(vals)}.")
+        elif fmt=='money_document':
+            p=rng.randint(2,25); qty=rng.randint(2,4); total=p*qty
+            student.append(f"{i}. Harga satu barang ialah RM{p}.00. [PRICE_TAG: {p}] Hitung harga {qty} barang. Tunjukkan pengiraan. [ANSWERSPACE: 4]")
+            ans.append(f"{i}. RM{total}.00.")
+        elif fmt=='place_value_table':
+            n=rng.randint(100,9999); student.append(f"{i}. Lengkapkan nilai tempat bagi nombor {n}. [TABLE: 2, 5] [ANSWERSPACE: 3]"); ans.append(f"{i}. Terima pecahan nilai tempat yang tepat bagi {n}.")
+        else:
+            return _db_ws_math_generic(state,2,qcount,rng,str(contract.get('recipe_key') or ''))
+    return _ws151_finish(student,ans,False)
+
+def _ws151_science(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or ''); topic=str(state.get('topic') or 'Sains')
+    seed=f"v25151|{state.get('year')}|Sains|{state.get('sp_code')}"; task_rule,ans_rule,_=_ws_action_task(state,2,seed)
+    student=_ws151_header(state,'Gunakan istilah Sains yang tepat. Rekod pemerhatian/data pada ruang yang disediakan.'); ans=[]
+    if fmt=='experiment_table':
+        student += ['PENYIASATAN', task_rule or f"Jalankan/analisis penyiasatan berkaitan {topic}.", 'Jadual keputusan: [TABLE: 5, 3]']
+        base=[('Nyatakan satu pemerhatian.','Terima pemerhatian yang boleh diperhatikan/diukur.'),('Nyatakan pola berdasarkan data.','Terima pola yang disokong data.'),('Buat satu inferens berdasarkan pemerhatian.','Terima inferens saintifik yang munasabah.'),('Nyatakan satu cara meningkatkan kebolehpercayaan penyiasatan.','Ulang penyiasatan / ambil purata / kawal pemboleh ubah yang sesuai.')]
+    elif fmt=='diagram_label':
+        student += ['RAJAH',f"Perhatikan rajah berkaitan {topic}. [SCIENCE_DIAGRAM: {topic}]",'Labelkan bahagian yang diminta pada ruang label.']
+        base=[(task_rule or 'Labelkan bahagian pada rajah mengikut SP.',ans_rule or 'Terima label saintifik yang tepat.'),('Nyatakan fungsi/peranan satu bahagian yang dilabel.','Terima fungsi saintifik yang tepat.')]
+    elif fmt=='compare_classify':
+        student += ['PENGELASAN',f"Kelaskan item/ciri berkaitan {topic} mengikut ciri yang boleh diperhatikan. [TABLE: 5, 3]"]
+        base=[(task_rule or 'Kelaskan item mengikut ciri yang sesuai.',ans_rule or 'Terima pengelasan yang tepat.'),('Nyatakan satu ciri yang digunakan untuk pengelasan.','Terima ciri yang boleh diperhatikan/ditentukan.'),('Jelaskan satu persamaan atau perbezaan.','Terima perbandingan saintifik yang tepat.')]
+    elif fmt=='observation_record':
+        student += ['REKOD PEMERHATIAN',f"Perhatikan objek/situasi berkaitan {topic}. Catat apa yang benar-benar dapat diperhatikan. [TABLE: 5, 2]"]
+        base=[('Catat satu pemerhatian menggunakan deria atau alat yang sesuai.','Terima pemerhatian objektif.'),('Nyatakan satu ciri yang diperhatikan.','Terima ciri tepat.'),('Bezakan pemerhatian daripada inferens dengan menulis satu inferens berasingan.','Terima inferens yang munasabah dan berasingan daripada pemerhatian.')]
+    elif fmt=='construction_task':
+        student += ['TUGASAN MEMBINA / MEREKA BENTUK', task_rule or f"Bina/modelkan sesuatu berkaitan {topic} mengikut SP.", 'Ruang lakaran: [ANSWERSPACE: 7]']
+        base=[('Labelkan bahan/bahagian utama pada lakaran.','Terima label yang sesuai.'),('Nyatakan satu langkah pembinaan yang penting.','Terima langkah yang logik dan selamat.'),('Terangkan bagaimana hasil binaan memenuhi tugasan.','Terima penerangan berasaskan fungsi/kriteria.')]
+    elif fmt in ('science_data','science_scenario'):
+        vals=[rng.randint(2,6)];
+        for _ in range(3): vals.append(vals[-1]+rng.randint(1,4))
+        student += ['STIMULUS SAINS',f"Data berkaitan {topic}: A={vals[0]}, B={vals[1]}, C={vals[2]}, D={vals[3]}. [TABLE: 5, 2]"]
+        base=[('Nyatakan satu pemerhatian berdasarkan data.',f"Terima pemerhatian tepat berdasarkan {vals}."),('Nyatakan pola data.','Nilai meningkat.'),('Buat satu inferens yang disokong data.','Terima inferens saintifik berasas.'),(task_rule or 'Jawab tugasan proses Sains yang dinyatakan dalam SP.',ans_rule or 'Terima jawapan saintifik tepat.')]
+    else:
+        return _db_ws_other_generic(state,2,qcount,rng,str(contract.get('recipe_key') or ''))
+    for i in range(1,qcount+1):
+        q,a=base[(i-1)%len(base)]; space=5 if fmt in ('experiment_table','construction_task') else 3
+        student.append(f"{i}. {q} [ANSWERSPACE: {space}]"); ans.append(f"{i}. {a}")
+    return _ws151_finish(student,ans,False)
+
+_db_first_generate_one_level_before_v25151=_db_first_generate_one_level
+def _db_first_generate_one_level(state, level, qcount):
+    contract=_worksheet_verified_mapping_contract_v25145(state)
+    subject=str(state.get('subject') or '')
+    seed=f"v25151|{state.get('variation_seed','')}|{state.get('year','')}|{subject}|{state.get('sp_code','')}"
+    rng=random.Random(seed)
+    if subject in ('Bahasa Melayu','Bahasa Inggeris'):
+        return _ws151_language(state,qcount,rng,contract)
+    if subject=='Matematik':
+        return _ws151_math(state,qcount,rng,contract)
+    if subject=='Sains':
+        return _ws151_science(state,qcount,rng,contract)
+    return _db_first_generate_one_level_before_v25151(state,2,qcount)
+# === END v25.151 ===
+
+# === v25.152 WORKSHEET RESPONSE-GEOMETRY + CONTENT QA LOCK ===
+APP_VERSION='v25.152-WORKSHEET-RESPONSE-GEOMETRY-QA'
+
+def _ws152_expected_response_contract(state):
+    """Canonical response geometry for the effective semantic worksheet format."""
+    c=_worksheet_quality_context_v25150(state)
+    fmt=str(c.get('format_key') or '').strip().lower()
+    rules={
+      'reading_text':('short_lines',2,False),'single_passage':('short_lines',2,False),
+      'guided_writing':('extended_lines',7,False),'guided_writing_en':('extended_lines',7,False),
+      'speaking_task_card':('teacher_evidence',4,False),'oral_response':('teacher_evidence',4,False),
+      'listening_response':('teacher_evidence',4,False),'grammar_context':('context_response',3,False),
+      'language_arts_response':('extended_lines',4,False),'literature_response':('extended_lines',4,False),
+      'clock_timeline':('working_box',4,True),'fraction_model':('working_box',4,True),
+      'geometry_diagram':('working_box',5,True),'measurement_scale':('working_box',4,True),
+      'data_table_chart':('working_box',4,True),'money_document':('working_box',4,True),
+      'place_value_table':('structured_grid',3,True),'experiment_table':('science_table_plus_lines',4,True),
+      'observation_record':('observation_table',4,True),'compare_classify':('classification_grid',3,True),
+      'diagram_label':('label_slots',3,True),'construction_task':('plan_evidence_box',5,True),
+      'science_scenario':('short_science_lines',3,False),'science_data':('data_table_plus_reason',4,True),
+    }
+    geometry,space,visual=rules.get(fmt,(str(c.get('worksheet_response_space') or 'short'),2,bool(c.get('worksheet_visual_required'))))
+    return {'format_key':fmt,'response_geometry':geometry,'min_answer_space':space,'visual_required':visual}
+
+def _ws152_quality_gate(state, text):
+    """Fail closed when a generated worksheet contradicts its semantic/response contract."""
+    t=str(text or '')
+    low=t.lower()
+    contract=_ws152_expected_response_contract(state)
+    failures=[]
+    if not t.strip(): failures.append('empty_worksheet')
+    if 'skema jawapan:' not in low and 'answer scheme:' not in low: failures.append('missing_answer_scheme')
+    if any(x in low for x in ('tugasan 4 aras','aras 1','aras 2','aras 3','aras 4','level 1','level 2','level 3','level 4')):
+        failures.append('legacy_level_leak')
+    if contract['visual_required']:
+        visual_tokens=('[clock:','[fraction_bar:','[geometry:','[ruler:','[bar_chart:','[price_tag:','[table:','[visual:','[image:')
+        if not any(x in low for x in visual_tokens): failures.append('required_visual_missing')
+    if '[answerspace:' not in low and '[checkboxes:' not in low:
+        failures.append('response_target_missing')
+    return {'ok':not failures,'failures':failures,**contract}
+
+_local_worksheet_text_before_v25152=_local_worksheet_text
+def _local_worksheet_text(s):
+    text=_local_worksheet_text_before_v25152(s)
+    qa=_ws152_quality_gate(s,text)
+    if not qa['ok']:
+        raise RuntimeError('WORKSHEET_QA_FAIL:'+','.join(qa['failures']))
+    return text
+# === END v25.152 ===
+
+# === v25.153 WORKSHEET ACCURACY HARDENING ===
+APP_VERSION='v25.153-WORKSHEET-ACCURACY-HARDENED'
+
+# Fix QA vocabulary: science diagrams are functional visuals too.
+def _ws152_quality_gate(state, text):
+    t=str(text or ''); low=t.lower(); contract=_ws152_expected_response_contract(state); failures=[]
+    if not t.strip(): failures.append('empty_worksheet')
+    if 'skema jawapan:' not in low and 'answer scheme:' not in low: failures.append('missing_answer_scheme')
+    if any(x in low for x in ('tugasan 4 aras','aras 1','aras 2','aras 3','aras 4','level 1','level 2','level 3','level 4')): failures.append('legacy_level_leak')
+    if contract['visual_required']:
+        visual_tokens=('[clock:','[fraction_bar:','[geometry:','[ruler:','[bar_chart:','[price_tag:','[table:','[visual:','[image:','[science_diagram:')
+        if not any(x in low for x in visual_tokens): failures.append('required_visual_missing')
+    if '[answerspace:' not in low and '[checkboxes:' not in low: failures.append('response_target_missing')
+    return {'ok':not failures,'failures':failures,**contract}
+
+# Better language item diversity. Avoid repeating the same generic task for every item.
+_ws151_language_before_v25153=_ws151_language
+def _ws151_language(state,qcount,rng,contract):
+    subject=str(state.get('subject') or ''); english=subject=='Bahasa Inggeris'; fmt=str(contract.get('format_key') or '')
+    if fmt not in ('grammar_context','language_arts_response','literature_response'):
+        return _ws151_language_before_v25153(state,qcount,rng,contract)
+    seed=f"v25153|{state.get('year')}|{subject}|{state.get('sp_code')}|{state.get('variation_seed','')}"
+    task_rule,ans_rule,_=_ws_action_task(state,2,seed)
+    student=_ws151_header(state,'Use the text/context and complete each task.' if english else 'Gunakan teks/konteks dan lengkapkan setiap tugasan.')
+    if english:
+        stim='Maya and her brother visit the library every Saturday. They choose suitable books, read quietly and share one interesting idea before going home.'
+        bank=[('Write one detail from the text.','Accept one accurate detail from the text.'),('Identify a suitable word or language feature from the text that matches the learning focus.','Accept an accurate example that meets the SP.'),('Use the selected word/language feature in a complete sentence.','Accept a grammatical sentence that demonstrates the target feature.'),('Explain how the text or language feature helps you understand the message.','Accept a relevant explanation supported by the text.'),('Give a personal response connected to the text or literary/language focus.','Accept a relevant response that meets the SP.')]
+        label='TEXT / CONTEXT'
+    else:
+        stim='Aina dan adiknya pergi ke perpustakaan pada hari Sabtu. Mereka memilih buku yang sesuai, membaca dengan senyap dan berkongsi satu idea menarik sebelum pulang.'
+        bank=[('Nyatakan satu maklumat daripada teks.','Terima satu maklumat tepat daripada teks.'),('Kenal pasti perkataan atau unsur bahasa yang menepati fokus pembelajaran.','Terima contoh tepat yang menepati SP.'),('Gunakan perkataan atau unsur bahasa tersebut dalam satu ayat yang lengkap.','Terima ayat gramatis yang menunjukkan penggunaan unsur sasaran.'),('Jelaskan maksud atau kesan penggunaan bahasa dalam konteks tersebut.','Terima penerangan relevan yang disokong konteks.'),('Berikan respons peribadi yang berkaitan dengan teks atau fokus sastera/bahasa.','Terima respons relevan yang menepati SP.')]
+        label='TEKS / KONTEKS'
+    student += [label,stim]
+    for i in range(1,qcount+1):
+        q,a=bank[(i-1)%len(bank)]
+        if i==1 and task_rule: q=task_rule
+        if i==1 and ans_rule: a=ans_rule
+        student.append(f"{i}. {q} [ANSWERSPACE: {3 if i<=2 else 4}]")
+        ans_text=a
+        # do not silently award a single rigid answer for open literary/language responses
+        student_ans=f"{i}. {ans_text}"
+        if i==1: answers=[student_ans]
+        else: answers.append(student_ans)
+    return _ws151_finish(student,answers,english)
+
+# QA diagnostic that verifies generated content and response contract together.
+def _worksheet_accuracy_diagnostic_v25153(state):
+    ctx=_worksheet_quality_context_v25150(state)
+    q=_worksheet_auto_qcount(dict(ctx))
+    text=_db_first_generate_one_level(ctx,2,q)
+    qa=_ws152_quality_gate(ctx,text)
+    return {'year':ctx.get('year'),'subject':ctx.get('subject'),'sp_code':ctx.get('sp_code'),'sp_text':ctx.get('sp_text'),'action_family':ctx.get('action_family'),'recipe_key':ctx.get('recipe_key'),'format_key':ctx.get('format_key'),'question_count':q,'qa':qa,'preview':text[:1200]}
+# === END v25.153 ===
+
+# === v25.153b FORMAT COVERAGE PATCH ===
+_ws151_language_before_v25153b=_ws151_language
+def _ws151_language(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    if fmt!='cloze_language': return _ws151_language_before_v25153b(state,qcount,rng,contract)
+    english=str(state.get('subject') or '')=='Bahasa Inggeris'
+    student=_ws151_header(state,'Choose or write the correct word for each blank.' if english else 'Pilih atau tulis perkataan yang tepat bagi setiap tempat kosong.')
+    if english:
+        stem='Aina ___ to school every morning. She ___ her teacher and ___ her books carefully.'; pool='goes | greets | arranges | sleeps'; keys=['goes','greets','arranges']
+    else:
+        stem='Aina ___ ke sekolah pada setiap pagi. Dia ___ gurunya dan ___ buku dengan kemas.'; pool='pergi | menyapa | menyusun | tidur'; keys=['pergi','menyapa','menyusun']
+    student += [('WORD BANK' if english else 'PILIHAN PERKATAAN'),pool,('TEXT' if english else 'TEKS'),stem]
+    ans=[]
+    for i in range(1,min(qcount,3)+1): student.append(f"{i}. Blank {i}: [ANSWERSPACE: 2]"); ans.append(f"{i}. {keys[i-1]}")
+    return _ws151_finish(student,ans,english)
+
+_ws151_math_before_v25153b=_ws151_math
+def _ws151_math(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    if fmt not in ('word_problem','vertical_form','missing_number'):
+        return _ws151_math_before_v25153b(state,qcount,rng,contract)
+    student=_ws151_header(state,'Baca dengan teliti dan tunjukkan langkah kerja.'); ans=[]
+    for i in range(1,qcount+1):
+        if fmt=='word_problem':
+            a=rng.randint(12,85); b=rng.randint(5,35); op=rng.choice(['+','-']);
+            if op=='-' and b>a: a,b=b,a
+            verb='bertambah' if op=='+' else 'digunakan'
+            q=f"Sebuah bekas mempunyai {a} objek. Sebanyak {b} objek {'ditambah' if op=='+' else 'digunakan'}. Berapakah bilangannya sekarang?"
+            val=a+b if op=='+' else a-b
+            student.append(f"{i}. {q} [ANSWERSPACE: 5]"); ans.append(f"{i}. {a} {op} {b} = {val}.")
+        elif fmt=='vertical_form':
+            a=rng.randint(20,999); b=rng.randint(10,min(499,a)); op=rng.choice(['+','-']); val=a+b if op=='+' else a-b
+            student.append(f"{i}. Susun dan hitung dalam bentuk lazim: {a} {op} {b}. [ANSWERSPACE: 5]"); ans.append(f"{i}. {val}.")
+        else:
+            a=rng.randint(2,30); b=rng.randint(2,30); total=a+b
+            student.append(f"{i}. Lengkapkan nombor yang hilang: {a} + □ = {total}. [ANSWERSPACE: 3]"); ans.append(f"{i}. {b}.")
+    return _ws151_finish(student,ans,False)
+# === END v25.153b ===
+
+# === v25.154 FULL PRIMARY FORMAT COVERAGE QA ===
+APP_VERSION='v25.154-WORKSHEET-1199-FORMAT-COVERAGE'
+# All semantic formats currently emitted by the Primary effective mapping views.
+_WS154_SUPPORTED_FORMATS={
+ 'grammar_context','single_passage','speaking_task_card','guided_writing','reading_text','guided_writing_en','listening_response','literature_response','oral_response','language_arts_response','cloze_language',
+ 'word_problem','geometry_diagram','clock_timeline','measurement_scale','data_table_chart','vertical_form','missing_number','money_document','fraction_model','place_value_table',
+ 'compare_classify','science_scenario','experiment_table','observation_record','diagram_label','science_data','construction_task'
+}
+
+def _worksheet_format_coverage_guard_v25154(state):
+    c=_worksheet_verified_mapping_contract_v25145(state)
+    fmt=str(c.get('format_key') or '').strip()
+    if not fmt:
+        raise RuntimeError('WORKSHEET_FORMAT_MISSING')
+    if fmt not in _WS154_SUPPORTED_FORMATS:
+        raise RuntimeError('WORKSHEET_FORMAT_UNSUPPORTED:'+fmt)
+    return c
+
+_db_first_generate_one_level_before_v25154=_db_first_generate_one_level
+def _db_first_generate_one_level(state, level, qcount):
+    _worksheet_format_coverage_guard_v25154(state)
+    return _db_first_generate_one_level_before_v25154(state,2,qcount)
+
+_local_worksheet_text_before_v25154=_local_worksheet_text
+def _local_worksheet_text(s):
+    _worksheet_format_coverage_guard_v25154(s)
+    return _local_worksheet_text_before_v25154(s)
+# === END v25.154 ===
+
+# === v25.155 PRIMARY 1199 SEMANTIC QA + PIE CHART SUPPORT ===
+APP_VERSION='v25.155-WORKSHEET-1199-SEMANTIC-QA'
+
+# Add a real pie-chart visual needed by Mathematics Year 6 data SP 8.1.1.
+_find_advanced_visual_token_before_v25155=_find_advanced_visual_token
+def _find_advanced_visual_token(lines):
+    text=' '.join(str(x or '') for x in lines)
+    m=re.search(r'\[PIE_CHART:\s*([^\]]+)\]',text,re.I)
+    if m:
+        vals=[]
+        for part in m.group(1).split('|'):
+            mm=re.match(r'\s*([^=|:]+)\s*[=:]\s*(\d+(?:\.\d+)?)\s*$',part)
+            if mm: vals.append((mm.group(1).strip()[:12],float(mm.group(2))))
+        if vals: return ('pie_chart',{'values':vals[:8]})
+    return _find_advanced_visual_token_before_v25155(lines)
+
+_AdvancedWorksheetVisual_before_v25155=AdvancedWorksheetVisual
+class AdvancedWorksheetVisual(_AdvancedWorksheetVisual_before_v25155):
+    def draw(self):
+        if self.spec[0] != 'pie_chart':
+            return _AdvancedWorksheetVisual_before_v25155.draw(self)
+        import math
+        c=self.canv; vals=self.spec[1].get('values') or []; W=self.width; H=self.height
+        total=sum(v for _,v in vals) or 360.0
+        r=min(H*.38,W*.16); cx=W*.38; cy=H*.53; start=90.0
+        c.setLineWidth(1.2); c.setStrokeGray(0); c.setFillGray(0); c.circle(cx,cy,r,stroke=1,fill=0)
+        for lab,val in vals:
+            a0=start; a1=start-(360.0*val/total)
+            for a in (a0,a1):
+                rad=math.radians(a); c.line(cx,cy,cx+r*math.cos(rad),cy+r*math.sin(rad))
+            mid=math.radians((a0+a1)/2); tx=cx+r*.62*math.cos(mid); ty=cy+r*.62*math.sin(mid)
+            c.setFont('Helvetica-Bold',7); c.drawCentredString(tx,ty-2,f'{lab}: {val:g}°')
+            start=a1
+        c.setFont('Helvetica',7); c.drawString(W*.62,H*.67,'Lengkapkan / tafsir carta pai')
+        c.drawString(W*.62,H*.50,'berdasarkan sudut dan kuantiti')
+        c.drawString(W*.62,H*.33,'yang diberikan.')
+
+# SP-specific correction: pie-chart/data SP must not receive a generic bar chart.
+_ws151_math_before_v25155=_ws151_math
+def _ws151_math(state,qcount,rng,contract):
+    sp=str(state.get('sp_code') or state.get('sp') or '').strip()
+    year=str(state.get('year') or state.get('year_label') or '').strip()
+    fmt=str(contract.get('format_key') or '')
+    sptext=str(state.get('sp_text') or '').lower()
+    if year=='Tahun 6' and sp=='8.1.1' and ('carta pai' in sptext or fmt=='data_table_chart'):
+        student=_ws151_header(state,'Lengkapkan dan tafsir carta pai. Tunjukkan pengiraan apabila diperlukan.'); ans=[]
+        # 360° split into sectors explicitly named by the SP: 45°, 90°, 180° and remaining 45°.
+        angles=[('A',45),('B',90),('C',180),('D',45)]
+        quantities=[5,10,20,5]
+        student += ['DATA CARTA PAI','Jumlah = 40 murid. A=5, B=10, C=20, D=5.',
+                    '[PIE_CHART: A=45|B=90|C=180|D=45]']
+        bank=[
+          ('Lengkapkan sektor carta pai menggunakan sudut yang diberikan bagi A, B, C dan D.','A=45°, B=90°, C=180°, D=45°.'),
+          ('Nyatakan kategori yang mewakili separuh daripada keseluruhan data.','C, kerana 180° ialah separuh daripada 360°.'),
+          ('Berapakah beza kuantiti antara kategori C dengan A?','20 - 5 = 15 murid.'),
+          ('Nyatakan satu tafsiran yang betul berdasarkan carta pai.','Contoh: Kategori C mempunyai kuantiti paling tinggi; terima tafsiran tepat berdasarkan carta.')]
+        for i in range(1,min(qcount,len(bank))+1):
+            q,a=bank[i-1]; student.append(f'{i}. {q} [ANSWERSPACE: {4 if i==1 else 3}]'); ans.append(f'{i}. {a}')
+        return _ws151_finish(student,ans,False)
+    return _ws151_math_before_v25155(state,qcount,rng,contract)
+
+# Semantic/content audit guard: mapping must be present, supported, and obvious construct/format
+# contradictions are blocked rather than silently generating a polished but wrong worksheet.
+def _worksheet_semantic_accuracy_guard_v25155(state):
+    c=_worksheet_format_coverage_guard_v25154(state)
+    subj=str(state.get('subject') or ''); year=str(state.get('year') or state.get('year_label') or '')
+    sp=str(state.get('sp_code') or state.get('sp') or ''); text=str(state.get('sp_text') or '').lower(); fmt=str(c.get('format_key') or '')
+    if subj=='Matematik':
+        if 'carta pai' in text and fmt!='data_table_chart': raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:pie_chart_requires_data_table_chart')
+        if re.search(r'\b(wang|ringgit|harga|rm\b)',text) and fmt not in ('money_document','word_problem'): raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:money')
+        if re.search(r'\b(piktograf|carta palang|graf|data)\b',text) and fmt not in ('data_table_chart','word_problem'): raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:data')
+    return c
+
+_db_first_generate_one_level_before_v25155=_db_first_generate_one_level
+def _db_first_generate_one_level(state, level, qcount):
+    _worksheet_semantic_accuracy_guard_v25155(state)
+    return _db_first_generate_one_level_before_v25155(state,2,qcount)
+# === END v25.155 ===
+
+
+# === v25.156 VERB-ACCURATE WORKSHEET QA ===
+APP_VERSION='v25.156-WORKSHEET-VERB-ACCURACY-QA'
+_WS154_SUPPORTED_FORMATS=set(_WS154_SUPPORTED_FORMATS)|{'classification_table'}
+
+# Prefer v25.80 Maths semantic refinement where available.
+_verified_mapping_before_v25156=_worksheet_verified_mapping_contract_v25145
+def _worksheet_verified_mapping_contract_v25145(state):
+    c=_verified_mapping_before_v25156(state)
+    if str(state.get('subject') or '')!='Matematik':
+        return c
+    try:
+        year=str(state.get('year') or state.get('year_label') or '')
+        sp=str(state.get('sp_code') or state.get('sp') or '')
+        with _db() as con:
+            r=con.execute("""SELECT action_family,recipe_key,task_mode,format_key,verification_status
+              FROM worksheet_math_effective_mapping_v2580
+              WHERE year_label=? AND sp_code=? LIMIT 1""",(year,sp)).fetchone()
+        if r:
+            keys=('action_family','recipe_key','task_mode','format_key','verification_status')
+            c.update(dict(zip(keys,r)))
+    except Exception:
+        pass
+    return c
+
+_ws151_math_before_v25156=_ws151_math
+def _ws151_math(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    text=str(state.get('sp_text') or '').lower()
+    student=_ws151_header(state,'Baca arahan dengan teliti. Tunjukkan kerja atau rekodkan jawapan pada ruang yang sesuai.'); ans=[]
+
+    if fmt=='classification_table':
+        if 'genap' in text and 'ganjil' in text:
+            nums=[rng.randint(10,99) for _ in range(10)]
+            student += ['PENGELASAN NOMBOR','Kelaskan setiap nombor kepada GENAP atau GANJIL.',
+                        'Nombor: '+', '.join(map(str,nums)),
+                        '[TABLE: 6, 2]']
+            student.append('Tuliskan nombor genap pada lajur pertama dan nombor ganjil pada lajur kedua. [ANSWERSPACE: 5]')
+            ans=['Genap: '+', '.join(str(n) for n in nums if n%2==0),
+                 'Ganjil: '+', '.join(str(n) for n in nums if n%2)]
+        else:
+            nums=[2,3,4,5,7,9,11,12,13,15,17,21,23,25]
+            student += ['PENGELASAN NOMBOR','Kelaskan nombor kepada NOMBOR PERDANA atau NOMBOR GUBAHAN.',
+                        'Nombor: '+', '.join(map(str,nums)),
+                        '[TABLE: 8, 2]']
+            student.append('Rekodkan pengelasan kamu dalam jadual. [ANSWERSPACE: 6]')
+            ans=['Perdana: 2, 3, 5, 7, 11, 13, 17, 23',
+                 'Gubahan: 4, 9, 12, 15, 21, 25']
+        return _ws151_finish(student,ans,False)
+
+    if fmt=='clock_timeline' and ('merekod waktu' in text or 'membaca dan merekod waktu' in text):
+        for i in range(1,qcount+1):
+            h=rng.randint(7,16); m=rng.choice([0,5,10,15,20,25,30,35,40,45,50,55])
+            student.append(f"{i}. Baca waktu pada jam dan rekodkan dalam jam dan minit. [CLOCK: {h}, {m}] [ANSWERSPACE: 2]")
+            ans.append(f"{i}. {h:02d}:{m:02d}.")
+        return _ws151_finish(student,ans,False)
+
+    if fmt=='money_document' and ('merekod simpanan' in text or 'merekod' in text and 'perbelanjaan' in text):
+        student += ['REKOD KEWANGAN','Lengkapkan rekod simpanan dan perbelanjaan berdasarkan maklumat yang diberi.',
+                    '[TABLE: 6, 4]']
+        cases=[('Isnin',10,3),('Selasa',8,2),('Rabu',12,5),('Khamis',9,4)]
+        for day,receive,spend in cases:
+            student.append(f"{day}: wang diterima RM{receive}.00; dibelanjakan RM{spend}.00. Rekodkan baki. [ANSWERSPACE: 2]")
+            ans.append(f"{day}: baki RM{receive-spend}.00.")
+        return _ws151_finish(student,ans,False)
+
+    if fmt=='geometry_diagram' and ('mengukur sudut' in text or 'sudut pedalaman' in text):
+        for i,angle in enumerate([60,90,120,135][:max(1,min(qcount,4))],1):
+            student.append(f"{i}. Ukur/nyatakan sudut yang ditunjukkan pada rajah poligon. [GEOMETRY_ANGLE: {angle}] [ANSWERSPACE: 3]")
+            ans.append(f"{i}. {angle}°.")
+        return _ws151_finish(student,ans,False)
+
+    if fmt=='geometry_diagram' and ('bulatan' in text and ('jejari' in text or 'diameter' in text)):
+        student += ['PEMBINAAN BULATAN',
+                    'Lukis satu bulatan dengan jejari 4 cm. Labelkan pusat O, satu jejari dan satu diameter.',
+                    '[CIRCLE_CONSTRUCTION: radius=4]',
+                    'Ruang lukisan dan label: [ANSWERSPACE: 8]']
+        ans=['Bulatan berjari-jari 4 cm; pusat, jejari dan diameter dilabel dengan tepat.']
+        return _ws151_finish(student,ans,False)
+
+    if fmt=='data_table_chart' and ('mengumpul' in text and 'mengelas' in text):
+        student += ['DATA HARIAN','Data: epal, oren, epal, pisang, oren, epal, pisang, epal.',
+                    'Kelaskan data mengikut jenis buah dan lengkapkan jadual kekerapan. [TABLE: 4, 2] [ANSWERSPACE: 4]']
+        ans=['Epal 4; oren 2; pisang 2.']
+        return _ws151_finish(student,ans,False)
+
+    return _ws151_math_before_v25156(state,qcount,rng,contract)
+
+# Extra fail-closed checks for verbs that require specific response modes.
+_semantic_guard_before_v25156=_worksheet_semantic_accuracy_guard_v25155
+def _worksheet_semantic_accuracy_guard_v25155(state):
+    c=_semantic_guard_before_v25156(state)
+    if str(state.get('subject') or '')=='Matematik':
+        text=str(state.get('sp_text') or '').lower()
+        fmt=str(c.get('format_key') or '')
+        if ('genap' in text and 'ganjil' in text) or ('perdana' in text and 'gubahan' in text):
+            if fmt!='classification_table':
+                raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:number_classification')
+        if 'merekod waktu' in text and fmt!='clock_timeline':
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:record_time')
+        if 'merekod' in text and 'perbelanjaan' in text and fmt!='money_document':
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:financial_record')
+    return c
+# === END v25.156 ===
+
+
+
+# === v25.157 LANGUAGE + SCIENCE VERB ACCURACY QA ===
+APP_VERSION='v25.157-LANGUAGE-SCIENCE-VERB-ACCURACY-QA'
+
+_semantic_guard_before_v25157=_worksheet_semantic_accuracy_guard_v25155
+def _worksheet_semantic_accuracy_guard_v25155(state):
+    c=_semantic_guard_before_v25157(state)
+    subject=str(state.get('subject') or '')
+    text=str(state.get('sp_text') or '').lower()
+    fmt=str(c.get('format_key') or '')
+
+    if subject=='Sains':
+        if any(k in text for k in ('melakar','melukis','melabel')) and fmt!='diagram_label':
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:science_diagram_verb')
+        if any(k in text for k in ('mengelas','mengelaskan','pengelasan')) and fmt not in ('compare_classify','science_data'):
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:science_classification_verb')
+        if any(k in text for k in ('menyiasat','penyiasatan','eksperimen')) and fmt not in ('experiment_table','science_data'):
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:science_investigation_verb')
+        if (text.startswith('memerhati') or ' pemerhatian' in text) and fmt not in ('observation_record','science_data'):
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:science_observation_verb')
+
+    if subject=='Bahasa Melayu':
+        if text.startswith('membaca') and fmt not in ('single_passage','reading_text'):
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:bm_reading_verb')
+        if text.startswith('menulis') and fmt not in ('guided_writing','short_writing','grammar_context'):
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:bm_writing_verb')
+
+    if subject=='English':
+        # Skill strand remains authoritative; written response must not replace oral/listening evidence.
+        skill=str(c.get('action_family') or '')
+        if skill=='en_speaking' and fmt!='speaking_task_card':
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:en_speaking_format')
+        if skill=='en_listening' and fmt!='listening_response':
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:en_listening_format')
+        if skill=='en_writing' and fmt!='guided_writing_en':
+            raise RuntimeError('WORKSHEET_SEMANTIC_MISMATCH:en_writing_format')
+    return c
+
+# Quality rule: oral/listening worksheets must carry evidence/check space, not fake essay lines.
+_ws151_language_before_v25157=_ws151_language
+def _ws151_language(state,qcount,rng,contract):
+    out=_ws151_language_before_v25157(state,qcount,rng,contract)
+    fmt=str(contract.get('format_key') or '')
+    if fmt in ('speaking_task_card','oral_response','listening_response'):
+        if '[ANSWERSPACE:' not in out:
+            out += '\nTeacher evidence/check: [ANSWERSPACE: 3]\n'
+    return out
+# === END v25.157 ===
+
+
+
+# === v25.158 PRIMARY SCOPE LOCK ===
+APP_VERSION='v25.158-PRIMARY-LANGUAGE-SCIENCE-VERB-QA'
+_semantic_guard_before_v25158=_worksheet_semantic_accuracy_guard_v25155
+def _worksheet_semantic_accuracy_guard_v25155(state):
+    year=str(state.get('year') or state.get('year_label') or '')
+    if year.startswith('Tingkatan '):
+        # Secondary is locked and must not be governed by this Primary worksheet QA layer.
+        return _worksheet_verified_mapping_contract_v25145(state)
+    return _semantic_guard_before_v25158(state)
+# === END v25.158 ===
+
+
+
+# === v25.159 PRIMARY WORKSHEET PRODUCTION QUALITY QA ===
+APP_VERSION='v25.159-WORKSHEET-PRODUCTION-QUALITY-QA'
+
+def _worksheet_year_band_v25159(state):
+    s=str(state.get('year') or state.get('year_label') or '')
+    m=re.search(r'([1-6])',s)
+    y=int(m.group(1)) if m else 3
+    return y, ('lower' if y<=2 else 'middle' if y<=4 else 'upper')
+
+def _worksheet_density_contract_v25159(state, fmt):
+    y,band=_worksheet_year_band_v25159(state)
+    long_formats={'guided_writing','guided_writing_en','literature_response',
+                  'language_arts_response','construction_task','experiment_table',
+                  'science_data','geometry_diagram'}
+    oral_formats={'speaking_task_card','oral_response','listening_response'}
+    if band=='lower':
+        qmin,qmax=(4,6)
+        min_space=2
+    elif band=='middle':
+        qmin,qmax=(5,8)
+        min_space=2
+    else:
+        qmin,qmax=(6,10)
+        min_space=2
+    if fmt in long_formats:
+        qmin=max(3,qmin-2); qmax=max(4,qmax-2); min_space=4
+    if fmt in oral_formats:
+        qmin=3; qmax=5; min_space=3
+    return {'year':y,'band':band,'qmin':qmin,'qmax':qmax,'min_space':min_space}
+
+def _worksheet_output_quality_gate_v25159(state, text):
+    c=_worksheet_verified_mapping_contract_v25145(state)
+    fmt=str(c.get('format_key') or '')
+    dc=_worksheet_density_contract_v25159(state,fmt)
+    s=str(text or '')
+    if not s.strip():
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:empty_output')
+
+    # No user-facing legacy four-level model.
+    if re.search(r'\b(?:Aras|Level)\s*[1-4]\b',s,re.I):
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:legacy_level_leak')
+
+    # Answer scheme is compulsory.
+    if 'SKEMA JAWAPAN' not in s.upper() and 'ANSWER SCHEME' not in s.upper():
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:missing_answer_scheme')
+
+    # Response geometry must exist except pure teacher-evidence cards.
+    spaces=[int(x) for x in re.findall(r'\[ANSWERSPACE:\s*(\d+)\]',s,re.I)]
+    if not spaces:
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:no_response_geometry')
+    if fmt in {'guided_writing','guided_writing_en','literature_response',
+               'language_arts_response','construction_task','experiment_table',
+               'science_data','geometry_diagram'} and max(spaces)<dc['min_space']:
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:insufficient_extended_space')
+
+    # Visual-required formats need a functional visual token, not decoration.
+    visual_formats={'diagram_label','geometry_diagram','data_table_chart','measurement_scale',
+                    'clock_timeline','fraction_model','place_value_table','construction_task'}
+    if fmt in visual_formats:
+        tokens=('FRACTION_BAR','CLOCK:','BAR_CHART:','PIE_CHART:','GEOMETRY:',
+                'GEOMETRY_ANGLE:','RULER:','TABLE:','CIRCLE_CONSTRUCTION:',
+                'SCIENCE_DIAGRAM','VISUAL:')
+        if not any(t in s for t in tokens):
+            raise RuntimeError('WORKSHEET_QUALITY_FAIL:missing_functional_visual')
+
+    # Repetition heuristic: same numbered prompt should not dominate.
+    prompts=[]
+    for line in s.splitlines():
+        z=re.sub(r'^\s*\d+[\.\)]\s*','',line.strip())
+        z=re.sub(r'\[[A-Z_]+:[^\]]*\]','',z)
+        z=re.sub(r'\d+','{n}',z).strip().lower()
+        if len(z)>18 and not z.startswith(('skema','answer scheme')):
+            prompts.append(z)
+    if len(prompts)>=4:
+        unique=len(set(prompts))
+        if unique/max(1,len(prompts))<0.35:
+            raise RuntimeError('WORKSHEET_QUALITY_FAIL:excessive_prompt_repetition')
+    return {'contract':c,'density':dc,'answer_spaces':spaces}
+
+_local_worksheet_text_before_v25159=_local_worksheet_text
+def _local_worksheet_text(state):
+    out=_local_worksheet_text_before_v25159(state)
+    _worksheet_output_quality_gate_v25159(state,out)
+    return out
+# === END v25.159 ===
+
+
+
+# === v25.160 PAGE COMPOSITION + AGE APPROPRIATENESS QA ===
+APP_VERSION='v25.160-WORKSHEET-PAGE-COMPOSITION-QA'
+
+_quality_gate_before_v25160=_worksheet_output_quality_gate_v25159
+def _worksheet_output_quality_gate_v25159(state,text):
+    result=_quality_gate_before_v25160(state,text)
+    c=result['contract']; dc=result['density']
+    fmt=str(c.get('format_key') or '')
+    s=str(text or '')
+    y=int(dc['year'])
+
+    # Estimate actual pupil work, not merely number of printed lines.
+    numbered=len(re.findall(r'(?m)^\s*\d+[\.\)]\s+',s))
+    answer_spaces=len(re.findall(r'\[ANSWERSPACE:\s*\d+\]',s,re.I))
+    table_cells=0
+    for rr,cc in re.findall(r'\[TABLE:\s*(\d+)\s*,\s*(\d+)\s*\]',s,re.I):
+        table_cells += max(0,(int(rr)-1)*int(cc))
+
+    # Classification is one task but must carry enough sortable evidence.
+    if fmt=='classification_table':
+        # Count comma-separated source items on the "Nombor:" line.
+        m=re.search(r'(?mi)^\s*Nombor\s*:\s*(.+)$',s)
+        item_count=len([x for x in (m.group(1).split(',') if m else []) if x.strip()])
+        if item_count < (8 if y<=3 else 10):
+            raise RuntimeError('WORKSHEET_COMPOSITION_FAIL:classification_too_thin')
+
+    # Early-primary scenario sheets should not become text-heavy mini exams.
+    if y<=2 and fmt in {'science_scenario','visual_mcq','observation_record'}:
+        visual_tokens=('VISUAL:','SCIENCE_DIAGRAM','TABLE:')
+        if not any(t in s for t in visual_tokens) and numbered>=5:
+            raise RuntimeError('WORKSHEET_COMPOSITION_FAIL:early_primary_needs_functional_visual')
+
+    # Upper primary must contain a meaningful amount of pupil work.
+    if y>=5 and fmt not in {'speaking_task_card','oral_response','listening_response'}:
+        workload=numbered + min(answer_spaces,6) + min(table_cells//4,4)
+        if workload < 5:
+            raise RuntimeError('WORKSHEET_COMPOSITION_FAIL:upper_primary_too_sparse')
+
+    # Long/open response needs at least one substantial response area.
+    if fmt in {'guided_writing','guided_writing_en','literature_response','language_arts_response'}:
+        spaces=[int(x) for x in re.findall(r'\[ANSWERSPACE:\s*(\d+)\]',s,re.I)]
+        if not spaces or max(spaces)<5:
+            raise RuntimeError('WORKSHEET_COMPOSITION_FAIL:writing_space_too_small')
+
+    return result
+
+# Improve the two sparse families identified by rendered QA.
+_ws151_math_before_v25160=_ws151_math
+def _ws151_math(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    if fmt=='classification_table':
+        text=str(state.get('sp_text') or '').lower()
+        student=_ws151_header(state,'Kelaskan setiap nombor kepada kumpulan yang betul.'); ans=[]
+        if 'perdana' in text and 'gubahan' in text:
+            nums=[2,3,4,5,7,9,11,12,13,15,17,21,23,25]
+            student += ['BAHAGIAN A — PENGELASAN NOMBOR',
+                        'Nombor: '+', '.join(map(str,nums)),
+                        'Lengkapkan jadual pengelasan. [TABLE: 8, 2] [ANSWERSPACE: 5]',
+                        'BAHAGIAN B — PENGUKUHAN',
+                        '1. Kelaskan 29. [ANSWERSPACE: 1]',
+                        '2. Kelaskan 35. [ANSWERSPACE: 1]',
+                        '3. Kelaskan 41. [ANSWERSPACE: 1]',
+                        '4. Kelaskan 49. [ANSWERSPACE: 1]']
+            ans=['Perdana: 2, 3, 5, 7, 11, 13, 17, 23',
+                 'Gubahan: 4, 9, 12, 15, 21, 25',
+                 '1. Perdana','2. Gubahan','3. Perdana','4. Gubahan']
+        else:
+            nums=[12,17,20,23,28,31,34,39,42,45,50,53]
+            student += ['BAHAGIAN A — PENGELASAN NOMBOR','Nombor: '+', '.join(map(str,nums)),
+                        'Lengkapkan jadual pengelasan. [TABLE: 7, 2] [ANSWERSPACE: 5]']
+            ans=['Jawapan mengikut kategori yang dinyatakan dalam SP.']
+        return _ws151_finish(student,ans,False)
+    return _ws151_math_before_v25160(state,qcount,rng,contract)
+
+_ws151_science_before_v25160=_ws151_science
+def _ws151_science(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    y,_=_worksheet_year_band_v25159(state)
+    text=str(state.get('sp_text') or '').lower()
+    if y<=2 and fmt=='science_scenario' and 'peraturan bilik sains' in text:
+        student=_ws151_header(state,'Perhatikan setiap situasi. Tandakan betul atau tidak betul.')
+        student += ['BAHAGIAN A — AMALAN SELAMAT',
+                    '1. Murid berlari sambil membawa radas. [VISUAL: student_lab_running,1] Jawapan: [ANSWERSPACE: 1]',
+                    '2. Murid mendengar arahan guru sebelum aktiviti. [VISUAL: student_listening_teacher,1] Jawapan: [ANSWERSPACE: 1]',
+                    '3. Murid merasa bahan tanpa kebenaran. [VISUAL: student_tasting_material,1] Jawapan: [ANSWERSPACE: 1]',
+                    '4. Murid menyimpan radas selepas digunakan. [VISUAL: student_storing_apparatus,1] Jawapan: [ANSWERSPACE: 1]',
+                    '5. Murid menolak rakannya semasa eksperimen. [VISUAL: student_pushing_lab,1] Jawapan: [ANSWERSPACE: 1]',
+                    '6. Murid melaporkan radas pecah kepada guru. [VISUAL: broken_apparatus_report,1] Jawapan: [ANSWERSPACE: 1]',
+                    'BAHAGIAN B — JELASKAN',
+                    '7. Mengapakah kita perlu mematuhi peraturan bilik sains? [ANSWERSPACE: 3]']
+        ans=['1. Tidak betul','2. Betul','3. Tidak betul','4. Betul','5. Tidak betul','6. Betul',
+             '7. Contoh: untuk menjaga keselamatan diri dan orang lain.']
+        return _ws151_finish(student,ans,False)
+    return _ws151_science_before_v25160(state,qcount,rng,contract)
+# === END v25.160 ===
+
+
+# === v25.161 APPROVED HEADER + MAIN INSTRUCTION LOCK ===
+APP_VERSION='v25.161-WORKSHEET-HEADER-INSTRUCTION-LOCK'
+
+# Keep the existing approved renderer/header. Do not inject a second worksheet title
+# or verbose global instruction into the content stream.
+def _db_ws_pack_header(state, level):
+    return ['Arahan: Jawab semua soalan.']
+
+_ws151_header_before_v25161 = _ws151_header
+def _ws151_header(state, instruction=None):
+    # Main instruction is fixed. Task-specific directions belong inside each section/item.
+    out = _db_ws_pack_header(state, 2)
+    out += ['FOKUS PEMBELAJARAN', _ws_sp_focus_line(state)]
+    return out
+
+# User-facing renderer rule: exact concise global instruction for all current Primary worksheets.
+def _worksheet_main_instruction_v25161(state=None):
+    return 'Jawab semua soalan.'
+# === END v25.161 ===
+
+
+# === v25.162 APPROVED TEMPLATE RUNTIME LOCK ===
+APP_VERSION='v25.162-APPROVED-TEMPLATE-RUNTIME-LOCK'
+
+def _worksheet_template_runtime_contract_v25162():
+    return {
+        'extra_top_banner': False,
+        'subject_title_first': True,
+        'pupil_detail_panel': True,
+        'curriculum_panel': True,
+        'main_instruction': 'Jawab semua soalan.',
+        'task_specific_instruction_location': 'section_or_item',
+        'footer_brand': 'CikguLaju',
+        'template_source': 'approved_existing_renderer',
+    }
+# === END v25.162 ===
+
+
+# === v25.163 WORKSHEET FORMAT + CONTENT QUALITY ENGINE ===
+APP_VERSION='v25.163-WORKSHEET-FORMAT-QUALITY-ENGINE'
+
+def _worksheet_format_contract_v25163(state, contract):
+    """Response geometry and presentation must follow what pupils actually do."""
+    fmt=str((contract or {}).get('format_key') or '')
+    subject=str(state.get('subject') or '').lower()
+    try:
+        year=int(re.search(r'(\d+)',str(state.get('year') or '1')).group(1))
+    except Exception:
+        year=1
+
+    rules={
+      'visual_mcq':              {'response':'choice_mark','visual':'required','space':'compact'},
+      'picture_word_match':      {'response':'matching_lines','visual':'required','space':'connector'},
+      'complete_word':           {'response':'exact_letter_slots','visual':'preferred','space':'exact'},
+      'oral_response':           {'response':'teacher_evidence','visual':'preferred','space':'compact'},
+      'speaking_task_card':      {'response':'teacher_evidence','visual':'preferred','space':'compact'},
+      'listening_response':      {'response':'choice_or_short','visual':'optional','space':'compact'},
+      'reading_text':            {'response':'mixed_comprehension','visual':'optional','space':'adaptive'},
+      'single_passage':          {'response':'mixed_comprehension','visual':'optional','space':'adaptive'},
+      'guided_writing':          {'response':'lined_writing','visual':'optional','space':'large'},
+      'guided_writing_en':       {'response':'lined_writing','visual':'optional','space':'large'},
+      'grammar_context':         {'response':'context_item','visual':'optional','space':'compact'},
+      'literature_response':     {'response':'short_and_open','visual':'optional','space':'large'},
+      'language_arts_response':  {'response':'short_and_open','visual':'optional','space':'large'},
+      'place_value_table':       {'response':'number_box_or_table','visual':'preferred','space':'structured'},
+      'classification_table':    {'response':'classification_table','visual':'optional','space':'structured'},
+      'money_document':          {'response':'working_plus_answer','visual':'preferred','space':'working'},
+      'word_problem':            {'response':'working_plus_answer','visual':'optional','space':'working'},
+      'vertical_form':           {'response':'working_plus_answer','visual':'optional','space':'working'},
+      'missing_number':          {'response':'number_box_or_slot','visual':'optional','space':'structured'},
+      'clock_timeline':          {'response':'clock_or_timeline','visual':'required','space':'structured'},
+      'geometry_diagram':        {'response':'diagram_working','visual':'required','space':'drawing'},
+      'data_table_chart':        {'response':'chart_table','visual':'required','space':'structured'},
+      'measurement_scale':       {'response':'scale_working','visual':'required','space':'working'},
+      'fraction_model':          {'response':'fraction_model','visual':'required','space':'structured'},
+      'science_scenario':        {'response':'choice_plus_reason','visual':'preferred','space':'adaptive'},
+      'observation_record':      {'response':'observation_table','visual':'preferred','space':'structured'},
+      'compare_classify':        {'response':'classification_table','visual':'preferred','space':'structured'},
+      'diagram_label':           {'response':'label_slots','visual':'required','space':'drawing'},
+      'experiment_table':        {'response':'data_table','visual':'optional','space':'structured'},
+      'science_data':            {'response':'table_plus_interpretation','visual':'optional','space':'structured'},
+      'construction_task':       {'response':'plan_diagram_record','visual':'preferred','space':'large'},
+    }
+    r=rules.get(fmt,{'response':'adaptive','visual':'optional','space':'adaptive'})
+    # Age appropriateness: less text + more visual support in Y1–2; mature layout in Y5–6.
+    r=dict(r)
+    r['year_band']='lower' if year<=2 else ('middle' if year<=4 else 'upper')
+    r['max_instruction_sentences']=1
+    r['global_instruction']='Jawab semua soalan.'
+    return r
+
+def _worksheet_content_quality_guard_v25163(state, text, contract):
+    """Fail closed on weak/generic or format-incompatible worksheet content."""
+    s=str(text or '')
+    fmt=str((contract or {}).get('format_key') or '')
+    spec=_worksheet_format_contract_v25163(state,contract)
+    try:
+        year=int(re.search(r'(\d+)',str(state.get('year') or '1')).group(1))
+    except Exception:
+        year=1
+
+    # No reintroduction of level packs or verbose global instructions.
+    forbidden=('Tugasan 4 Aras','Aras 1','Aras 2','Aras 3','Aras 4',
+               'Jawab semua soalan dengan teliti. Tulis jawapan pada ruang yang disediakan.')
+    if any(x.lower() in s.lower() for x in forbidden):
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:forbidden_old_pattern')
+
+    # Exact response geometry by format.
+    if spec['response']=='exact_letter_slots' and '[ANSWERSPACE:' not in s:
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:missing_exact_response_slots')
+    if spec['visual']=='required' and not any(x in s for x in ('[VISUAL:','[TABLE:','SCIENCE_DIAGRAM','[CLOCK:','[CHART:','[DIAGRAM:')):
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:functional_visual_required')
+    if spec['space'] in ('large','drawing','working') and '[ANSWERSPACE:' not in s:
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:insufficient_working_space')
+
+    # Lower primary cannot be a wall of text.
+    if year<=2:
+        long_lines=sum(1 for x in s.splitlines() if len(x.strip())>110)
+        if long_lines>3:
+            raise RuntimeError('WORKSHEET_QUALITY_FAIL:lower_primary_text_too_dense')
+
+    # Upper primary should not be just repetitive one-line recall.
+    if year>=5:
+        prompts=[re.sub(r'\s+',' ',x.strip().lower()) for x in s.splitlines()
+                 if re.match(r'^\s*\d+[\.\)]',x)]
+        stems=[re.sub(r'\d+','',x)[:45] for x in prompts]
+        if len(stems)>=5 and len(set(stems))<=2:
+            raise RuntimeError('WORKSHEET_QUALITY_FAIL:upper_primary_repetitive')
+
+    # Scheme remains compulsory.
+    if 'SKEMA JAWAPAN' not in s.upper() and 'ANSWER SCHEME' not in s.upper():
+        raise RuntimeError('WORKSHEET_QUALITY_FAIL:answer_scheme_missing')
+    return {'status':'PASS','format':fmt,'contract':spec}
+
+# Run the new guard after the existing v25.159 production guard.
+_prev_output_gate_v25163=_worksheet_output_quality_gate_v25159
+def _worksheet_output_quality_gate_v25159(state,text):
+    result=_prev_output_gate_v25163(state,text)
+    c=result.get('contract') or _worksheet_verified_mapping_contract_v25145(state)
+    result['v25163']=_worksheet_content_quality_guard_v25163(state,text,c)
+    return result
+
+def _worksheet_format_matrix_v25163():
+    """Canonical runtime format matrix for QA/audit."""
+    return {
+      'language': ['visual_mcq','picture_word_match','complete_word','oral_response',
+                   'speaking_task_card','listening_response','reading_text','single_passage',
+                   'guided_writing','guided_writing_en','grammar_context',
+                   'literature_response','language_arts_response'],
+      'mathematics': ['place_value_table','classification_table','money_document','word_problem',
+                      'vertical_form','missing_number','clock_timeline','geometry_diagram','data_table_chart',
+                      'measurement_scale','fraction_model'],
+      'science': ['science_scenario','observation_record','compare_classify','diagram_label',
+                  'experiment_table','science_data','construction_task'],
+    }
+# === END v25.163 ===
+
+
+
+# === v25.164 WORKSHEET CONTENT DEPTH ENGINE ===
+APP_VERSION='v25.164-WORKSHEET-CONTENT-DEPTH-ENGINE'
+
+def _ws164_year(state):
+    try: return int(re.search(r'(\d+)',str(state.get('year') or '1')).group(1))
+    except Exception: return 1
+
+def _ws164_language(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    y=_ws164_year(state)
+    sp=str(state.get('sp_text') or '')
+    student=_ws151_header(state,'Jawab tugasan pada setiap bahagian.'); ans=[]
+
+    if fmt in ('reading_text','single_passage'):
+        # Passage length and question demand scale with age.
+        if y<=2:
+            passage="Aina ada seekor kucing. Kucing itu berwarna putih. Aina memberi kucingnya makanan dan air setiap hari."
+            student += ['BAHAGIAN A — BACAAN', passage,
+                        '1. Siapakah yang mempunyai kucing? [ANSWERSPACE: 1]',
+                        '2. Apakah warna kucing itu? [ANSWERSPACE: 1]',
+                        '3. Tandakan dua perkara yang Aina berikan kepada kucingnya. [ANSWERSPACE: 1]']
+            ans=['1. Aina','2. Putih','3. Makanan dan air']
+        else:
+            passage=("Pada hari Sabtu, Amir dan keluarganya menyertai gotong-royong di taman perumahan. "
+                     "Amir mengutip sampah manakala kakaknya mengasingkan bahan yang boleh dikitar semula. "
+                     "Selepas selesai, kawasan permainan kelihatan lebih bersih dan selamat. "
+                     "Mereka berasa gembira kerana dapat membantu komuniti.")
+            student += ['BAHAGIAN A — BACA DAN FAHAMI',passage,
+                        '1. Apakah aktiviti yang disertai oleh Amir dan keluarganya? [ANSWERSPACE: 1]',
+                        '2. Nyatakan dua tindakan yang dilakukan semasa aktiviti. [ANSWERSPACE: 2]',
+                        '3. Mengapakah kawasan permainan menjadi lebih selamat? [ANSWERSPACE: 2]',
+                        '4. Apakah nilai yang ditunjukkan oleh keluarga Amir? Berikan sebab. [ANSWERSPACE: 3]']
+            ans=['1. Gotong-royong.','2. Mengutip sampah; mengasingkan bahan kitar semula.',
+                 '3. Kawasan dibersihkan daripada sampah/bahan berbahaya.',
+                 '4. Contoh: kerjasama/prihatin; sebab yang relevan diterima.']
+        return _ws151_finish(student,ans,False)
+
+    if fmt in ('guided_writing','guided_writing_en'):
+        english=fmt.endswith('_en')
+        if english:
+            if y<=3:
+                student += ['BAHAGIAN A — PLAN','Use the prompts: who / where / what / feeling. [TABLE: 5, 2] [ANSWERSPACE: 3]',
+                            'BAHAGIAN B — WRITE','Write 4–5 complete sentences. [ANSWERSPACE: 7]',
+                            'BAHAGIAN C — CHECK','Check capital letters, full stops and spelling.']
+                ans=['Accept a relevant 4–5 sentence response that uses the prompts and basic punctuation.']
+            else:
+                student += ['SECTION A — PLAN','Organise your ideas: opening / key details / ending. [TABLE: 4, 2] [ANSWERSPACE: 4]',
+                            'SECTION B — WRITE','Write one organised paragraph using suitable linking words. [ANSWERSPACE: 9]',
+                            'SECTION C — EDIT','Check meaning, grammar, spelling and punctuation.']
+                ans=['Accept an organised paragraph relevant to the task; assess content, organisation and language.']
+        else:
+            if y<=2:
+                student += ['BAHAGIAN A — RANCANG','Lengkapkan kata kunci: siapa / di mana / apa berlaku. [TABLE: 4, 2] [ANSWERSPACE: 3]',
+                            'BAHAGIAN B — TULIS','Tulis 3–4 ayat lengkap berdasarkan rancangan. [ANSWERSPACE: 6]']
+                ans=['Terima 3–4 ayat lengkap yang menepati rangsangan dan menggunakan ejaan/tanda baca asas.']
+            else:
+                student += ['BAHAGIAN A — RANCANG','Susun idea: pendahuluan / isi penting / penutup. [TABLE: 4, 2] [ANSWERSPACE: 4]',
+                            'BAHAGIAN B — TULIS','Tulis satu perenggan yang tersusun. [ANSWERSPACE: 9]',
+                            'BAHAGIAN C — SEMAK','Semak struktur ayat, ejaan dan tanda baca.']
+                ans=['Terima perenggan yang relevan, tersusun dan menggunakan bahasa yang sesuai.']
+        return _ws151_finish(student,ans,False)
+
+    if fmt in ('oral_response','speaking_task_card','listening_response'):
+        # No fake essay space for oral/listening.
+        student += ['BAHAGIAN A — TUGASAN',
+                    '1. Respons kepada rangsangan pertama. [ANSWERSPACE: 1]',
+                    '2. Respons kepada rangsangan kedua. [ANSWERSPACE: 1]',
+                    '3. Respons kepada rangsangan ketiga. [ANSWERSPACE: 1]',
+                    'BAHAGIAN B — EVIDENS GURU',
+                    'Kejelasan / ketepatan / kefahaman. [TABLE: 4, 3] [ANSWERSPACE: 2]']
+        ans=['Evidens dinilai berdasarkan respons lisan/mendengar murid mengikut SP.']
+        return _ws151_finish(student,ans,False)
+
+    if fmt in ('grammar_context','language_arts_response','literature_response'):
+        student += ['BAHAGIAN A — KONTEKS',
+                    'Baca bahan/rangsangan yang diberikan oleh guru berdasarkan tajuk PdP.',
+                    '1. Kenal pasti unsur bahasa yang dikehendaki dalam SP. [ANSWERSPACE: 2]',
+                    '2. Gunakan unsur tersebut dalam respons yang sesuai. [ANSWERSPACE: 3]',
+                    'BAHAGIAN B — APLIKASI',
+                    '3. Bina satu respons baharu yang menunjukkan penggunaan yang betul. [ANSWERSPACE: 4]']
+        ans=['Jawapan mesti menunjukkan unsur bahasa/estetik yang dinyatakan dalam SP dan digunakan dalam konteks yang betul.']
+        return _ws151_finish(student,ans,False)
+    return _ws151_language(state,qcount,rng,contract)
+
+def _ws164_math(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    y=_ws164_year(state)
+    student=_ws151_header(state,'Selesaikan semua tugasan.'); ans=[]
+    if fmt=='vertical_form':
+        nums=[(347,126),(582,239),(704,185),(936,408)] if y>=3 else [(34,12),(56,23),(71,18),(85,42)]
+        student += ['BAHAGIAN A — KIRA']
+        for i,(a,b) in enumerate(nums,1):
+            student += [f'{i}. {a} + {b} = [ANSWERSPACE: 3]']
+            ans.append(f'{i}. {a+b}')
+        return _ws151_finish(student,ans,False)
+    if fmt=='missing_number':
+        items=[(18,7),(25,9),(42,16),(60,23)] if y<=3 else [(125,48),(360,175),(504,226),(900,347)]
+        student += ['BAHAGIAN A — NOMBOR HILANG']
+        for i,(total,part) in enumerate(items,1):
+            student += [f'{i}. □ + {part} = {total} [ANSWERSPACE: 1]']
+            ans.append(f'{i}. {total-part}')
+        student += ['BAHAGIAN B — SEMAK','Pilih satu jawapan dan tunjuk cara semakan. [ANSWERSPACE: 3]']
+        ans.append('Kaedah semakan yang betul diterima.')
+        return _ws151_finish(student,ans,False)
+    if fmt=='word_problem':
+        student += ['BAHAGIAN A — PENYELESAIAN MASALAH',
+                    '1. Sebuah kedai mempunyai 248 buah buku. 76 buah telah dijual. Berapa buah buku yang tinggal? [ANSWERSPACE: 4]',
+                    '2. Sebuah sekolah membeli 135 batang pensel pada hari Isnin dan 168 batang pada hari Selasa. Berapa jumlah pensel? [ANSWERSPACE: 4]',
+                    '3. Siti mempunyai RM50. Dia membeli barang berharga RM18.50 dan RM12.30. Berapakah baki wangnya? [ANSWERSPACE: 5]']
+        ans=['1. 172','2. 303','3. RM19.20']
+        return _ws151_finish(student,ans,False)
+    return _ws151_math(state,qcount,rng,contract)
+
+def _ws164_science(state,qcount,rng,contract):
+    fmt=str(contract.get('format_key') or '')
+    y=_ws164_year(state)
+    student=_ws151_header(state,'Jawab berdasarkan pemerhatian, data atau situasi yang diberikan.'); ans=[]
+    if fmt=='observation_record':
+        student += ['BAHAGIAN A — PEMERHATIAN',
+                    'Perhatikan objek/rangsangan yang disediakan. [VISUAL: science_observation_object,1]',
+                    '1. Rekod dua pemerhatian menggunakan ciri yang boleh diperhatikan. [TABLE: 3, 2] [ANSWERSPACE: 3]',
+                    '2. Nyatakan satu persamaan atau perbezaan. [ANSWERSPACE: 2]']
+        ans=['Pemerhatian mesti berdasarkan ciri yang boleh diperhatikan.','Persamaan/perbezaan relevan diterima.']
+        return _ws151_finish(student,ans,False)
+    if fmt=='compare_classify':
+        student += ['BAHAGIAN A — KELASKAN',
+                    'Perhatikan enam objek/rangsangan. [VISUAL: science_classification_set,6]',
+                    '1. Kelaskan objek mengikut satu ciri yang sesuai. [TABLE: 4, 3] [ANSWERSPACE: 4]',
+                    '2. Nyatakan ciri yang digunakan untuk pengelasan. [ANSWERSPACE: 2]',
+                    '3. Jelaskan satu objek yang boleh berpindah kumpulan jika cirinya berubah. [ANSWERSPACE: 3]']
+        ans=['Pengelasan mesti konsisten dengan ciri yang dipilih.','Ciri yang boleh diperhatikan diterima.','Penjelasan munasabah diterima.']
+        return _ws151_finish(student,ans,False)
+    if fmt=='diagram_label':
+        student += ['BAHAGIAN A — RAJAH',
+                    'Perhatikan rajah. [SCIENCE_DIAGRAM: curriculum_object]',
+                    '1. Label bahagian yang ditunjukkan. [ANSWERSPACE: 4]',
+                    '2. Nyatakan fungsi/ciri satu bahagian berdasarkan SP. [ANSWERSPACE: 2]']
+        ans=['Label dan fungsi/ciri mestilah tepat mengikut objek dalam SP.']
+        return _ws151_finish(student,ans,False)
+    if fmt in ('experiment_table','science_data'):
+        student += ['BAHAGIAN A — DATA',
+                    'Rekod maklumat dalam jadual. [TABLE: 5, 3] [ANSWERSPACE: 4]',
+                    '1. Nyatakan satu pola daripada data. [ANSWERSPACE: 2]',
+                    '2. Buat satu inferens berdasarkan data. [ANSWERSPACE: 3]',
+                    '3. Nyatakan satu kesimpulan yang disokong oleh data. [ANSWERSPACE: 3]']
+        ans=['Pola mesti berpandukan data.','Inferens munasabah dan berkaitan diterima.','Kesimpulan mesti disokong oleh data.']
+        return _ws151_finish(student,ans,False)
+    if fmt=='construction_task':
+        student += ['BAHAGIAN A — RANCANG',
+                    'Lakar reka bentuk/model berdasarkan kehendak SP. [DIAGRAM: planning_area] [ANSWERSPACE: 6]',
+                    'BAHAGIAN B — BINA DAN REKOD',
+                    '1. Senaraikan bahan/komponen yang digunakan. [ANSWERSPACE: 3]',
+                    '2. Rekod langkah utama pembinaan. [ANSWERSPACE: 5]',
+                    '3. Nyatakan satu penambahbaikan selepas ujian. [ANSWERSPACE: 3]']
+        ans=['Lakaran, bahan, langkah dan penambahbaikan mestilah relevan dengan binaan/model dalam SP.']
+        return _ws151_finish(student,ans,False)
+    return _ws151_science(state,qcount,rng,contract)
+
+# Install deeper content generators while retaining existing verified mapping and renderer.
+_ws151_language_before_v25164=_ws151_language
+_ws151_math_before_v25164=_ws151_math
+_ws151_science_before_v25164=_ws151_science
+_ws151_language=_ws164_language
+_ws151_math=_ws164_math
+_ws151_science=_ws164_science
+
+def _worksheet_content_depth_contract_v25164():
+    return {
+      'language':'skill-specific passage/oral/listening/writing/grammar response geometry',
+      'mathematics':'operation-specific working, answer and structured problem-solving',
+      'science':'observe/classify/diagram/data/construct evidence matched to science skill',
+      'year_scaling':'Y1-2 visual/short; Y3-4 balanced; Y5-6 mature/multi-step',
+      'template':'v25.162 approved header/layout unchanged'
+    }
+# === END v25.164 ===
+
+
+
+# === v25.165 EXACT SP ALIGNMENT GATE ===
+APP_VERSION='v25.165-WORKSHEET-SP-ALIGNMENT-GATE'
+
+def _ws165_sp_family(state):
+    t=str(state.get('sp_text') or '').lower()
+    if any(x in t for x in ('mengelas','mengelaskan','classify','classification')): return 'classify'
+    if any(x in t for x in ('melabel','label')): return 'label'
+    if any(x in t for x in ('melakar','melukis','draw','sketch')): return 'diagram'
+    if any(x in t for x in ('memerhati','observe','observation')): return 'observe'
+    if any(x in t for x in ('mengukur','measure','measurement')): return 'measure'
+    if any(x in t for x in ('merekod','record')): return 'record'
+    if any(x in t for x in ('membina piktograf','membina carta','construct chart')): return 'data'
+    if any(x in t for x in ('membina','menghasilkan','mereka bentuk','construct','design','model')): return 'construct'
+    if any(x in t for x in ('membaca','reading','read')): return 'read'
+    if any(x in t for x in ('menulis','writing','write')): return 'write'
+    if any(x in t for x in ('bertutur','speaking','speak')): return 'speak'
+    if any(x in t for x in ('mendengar','listening','listen')): return 'listen'
+    if any(x in t for x in ('kata nama','kata kerja','kata adjektif','tatabahasa','grammar')): return 'grammar'
+    if any(x in t for x in ('wang','money')): return 'money'
+    if any(x in t for x in ('masa','waktu','jam','time','clock')): return 'time'
+    if any(x in t for x in ('pecahan','fraction')): return 'fraction'
+    if any(x in t for x in ('geometri','sudut','bentuk','geometry','angle','shape')): return 'geometry'
+    if any(x in t for x in ('carta','graf','chart','graph')): return 'data'
+    return 'other'
+
+def _ws165_alignment_guard(state, contract):
+    fam=_ws165_sp_family(state); fmt=str((contract or {}).get('format_key') or '')
+    allowed={
+      'classify': {'classification_table','compare_classify','science_data','data_table_chart'},
+      'label': {'diagram_label','geometry_diagram'},
+      'diagram': {'diagram_label','geometry_diagram','construction_task'},
+      'observe': {'observation_record','science_scenario','science_data','compare_classify'},
+      'measure': {'measurement_scale','experiment_table','science_data','word_problem'},
+      'record': {'science_data','experiment_table','observation_record','data_table_chart'},
+      'construct': {'construction_task','geometry_diagram'},
+      'read': {'reading_text','single_passage'},
+      'write': {'guided_writing','guided_writing_en'},
+      'speak': {'oral_response','speaking_task_card'},
+      'listen': {'listening_response'},
+      'grammar': {'grammar_context'},
+      'money': {'money_document','word_problem'},
+      'time': {'clock_timeline','word_problem'},
+      'fraction': {'fraction_model','word_problem'},
+      'geometry': {'geometry_diagram','measurement_scale','word_problem'},
+      'data': {'data_table_chart','science_data','experiment_table'},
+    }
+    if fam in allowed and fmt and fmt not in allowed[fam]:
+        raise RuntimeError('WORKSHEET_SP_ALIGNMENT_FAIL:%s:%s'%(fam,fmt))
+    return {'status':'PASS','sp_family':fam,'format_key':fmt}
+
+_prev_gate_v25165=_worksheet_output_quality_gate_v25159
+def _worksheet_output_quality_gate_v25159(state,text):
+    result=_prev_gate_v25165(state,text)
+    c=result.get('contract') or _worksheet_verified_mapping_contract_v25145(state)
+    result['v25165_alignment']=_ws165_alignment_guard(state,c)
+    return result
+
+def _worksheet_sp_alignment_contract_v25165():
+    return {'principle':'SP action/skill determines assessment format before rendering',
+            'fail_closed':True,'no_generic_substitution':True,
+            'template':'v25.162 approved template remains locked','content_engine':'v25.164'}
+# === END v25.165 ===
+
+
+
+# === v25.166 LANGUAGE EXACT-SKILL QA ===
+APP_VERSION='v25.166-LANGUAGE-EXACT-SKILL-QA'
+
+def _ws166_language_skill(state):
+    """Prefer SK strand, then explicit SP verb. Avoid guessing from generic topic words."""
+    sk=str(state.get('sk_code') or '').strip()
+    sp=str(state.get('sp_text') or '').lower()
+    subject=str(state.get('subject') or '').lower()
+    try: strand=int(sk.split('.')[0])
+    except Exception: strand=None
+
+    is_en=('english' in subject or 'bahasa inggeris' in subject)
+    if is_en:
+        return {1:'listening',2:'speaking',3:'reading',4:'writing',5:'language_arts'}.get(strand,'other')
+    if 'bahasa melayu' in subject or subject in ('bm','bahasa'):
+        return {1:'speaking',2:'reading',3:'writing',4:'literature',5:'grammar'}.get(strand,'other')
+
+    # Fallback only when subject metadata is incomplete.
+    if any(x in sp for x in ('mendengar','listening')): return 'listening'
+    if any(x in sp for x in ('bertutur','speaking')): return 'speaking'
+    if any(x in sp for x in ('membaca','reading')): return 'reading'
+    if any(x in sp for x in ('menulis','writing')): return 'writing'
+    return 'other'
+
+def _ws166_language_format_guard(state,contract):
+    skill=_ws166_language_skill(state)
+    fmt=str((contract or {}).get('format_key') or '')
+    allowed={
+      'listening': {'listening_response'},
+      'speaking': {'speaking_task_card','oral_response'},
+      'reading': {'reading_text','single_passage'},
+      'writing': {'guided_writing','guided_writing_en'},
+      'grammar': {'grammar_context'},
+      'literature': {'literature_response','language_arts_response'},
+      'language_arts': {'language_arts_response','literature_response'},
+    }
+    if skill in allowed and fmt and fmt not in allowed[skill]:
+        raise RuntimeError('WORKSHEET_LANGUAGE_SKILL_FAIL:%s:%s'%(skill,fmt))
+    return {'status':'PASS','skill':skill,'format_key':fmt}
+
+def _ws166_language_content_guard(state,text,contract):
+    """Check that evidence requested from pupil matches the language skill."""
+    skill=_ws166_language_skill(state); s=str(text or '').lower()
+    if skill in ('listening','speaking'):
+        # Oral/listening must have observable evidence; don't turn them into essays.
+        if not any(x in s for x in ('evidens guru','teacher evidence','[table:')):
+            raise RuntimeError('WORKSHEET_LANGUAGE_EVIDENCE_FAIL:'+skill)
+    if skill=='reading' and not any(x in s for x in ('bacaan','read','passage','petikan')):
+        raise RuntimeError('WORKSHEET_LANGUAGE_READING_STIMULUS_MISSING')
+    if skill=='writing' and '[answerspace:' not in s:
+        raise RuntimeError('WORKSHEET_LANGUAGE_WRITING_SPACE_MISSING')
+    return {'status':'PASS','skill':skill}
+
+_prev_gate_v25166=_worksheet_output_quality_gate_v25159
+def _worksheet_output_quality_gate_v25159(state,text):
+    result=_prev_gate_v25166(state,text)
+    c=result.get('contract') or _worksheet_verified_mapping_contract_v25145(state)
+    result['v25166_format']=_ws166_language_format_guard(state,c)
+    result['v25166_content']=_ws166_language_content_guard(state,text,c)
+    return result
+
+def _worksheet_language_qa_contract_v25166():
+    return {
+      'BM': {'SK1':'speaking','SK2':'reading','SK3':'writing','SK4':'literature','SK5':'grammar'},
+      'English': {'SK1':'listening','SK2':'speaking','SK3':'reading','SK4':'writing','SK5':'language_arts'},
+      'rule':'skill evidence must match exact SK/SP; no generic worksheet substitution',
+      'template':'v25.162 locked'
+    }
+# === END v25.166 ===
+
