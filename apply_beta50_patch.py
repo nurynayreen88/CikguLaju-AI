@@ -5,6 +5,10 @@ s=P.read_text(encoding="utf-8")
 MARK="# BETA50_LESSON_FIRST_QA16"
 
 # HOTFIX v25.167 — repair two misnamed Science v25.128 definitions before app import.
+
+# HOTFIX v25.168 — Science runtime aliases + worksheet format fallback
+s=s.replace("_science_sp_focus_v25128_base = _science_sp_focus_v25128", "_science_sp_focus_v25128_base = globals().get('_science_sp_focus_v25128', globals().get('_science_sp_focus_v25127'))", 1)
+s=s.replace("raise RuntimeError('WORKSHEET_FORMAT_MISSING')", "return _worksheet_format_contract_v25163(s, contract) if '_worksheet_format_contract_v25163' in globals() else contract", 1)
 s=s.replace("_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25127(text):", "_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25128(text):", 1)
 s=s.replace("_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25127(s, rows):", "_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25128(s, rows):", 1)
 
