@@ -31447,3 +31447,65 @@ def callback(cid,d):
         return _material_picker_v2528(cid,'⏭️ Kelas, tarikh dan masa dilangkau untuk sesi ini.')
     return _callback_before_v25173(cid,d)
 # === END v25.173 ===
+
+# === v25.174 WORKSHEET FORMAT-MISSING FALLBACK FIX ===
+APP_VERSION='v25.174-WORKSHEET-FORMAT-MISSING-FIX'
+
+_ws_contract_before_v25174 = _worksheet_verified_mapping_contract_v25145
+def _worksheet_verified_mapping_contract_v25145(state):
+    c = _ws_contract_before_v25174(state)
+    if str(c.get('format_key') or '').strip():
+        return c
+    subject = str(state.get('subject') or '').strip()
+    text = ' '.join(str(state.get(k) or '') for k in ('topic','subtopic','sp_text','skill_focus')).lower()
+    fmt = ''
+    if subject == 'Matematik':
+        if any(x in text for x in ('masa','waktu','jam','tempoh')): fmt='clock_timeline'
+        elif any(x in text for x in ('wang','ringgit','sen','harga')): fmt='money_document'
+        elif any(x in text for x in ('pecahan','perpuluhan','peratus')): fmt='fraction_model'
+        elif any(x in text for x in ('bentuk','geometri','sudut','ruang','perimeter','luas')): fmt='geometry_diagram'
+        elif any(x in text for x in ('panjang','jisim','isipadu','isi padu','ukur','sukatan')): fmt='measurement_scale'
+        elif any(x in text for x in ('data','graf','piktograf','carta')): fmt='data_table_chart'
+        elif any(x in text for x in ('nilai tempat','nilai digit')): fmt='place_value_table'
+        elif any(x in text for x in ('genap','ganjil','perdana','gubahan','kelas')): fmt='classification_table'
+        elif any(x in text for x in ('hilang','melengkapkan','lengkapkan')): fmt='missing_number'
+        else: fmt='word_problem'
+    elif subject == 'Sains':
+        if any(x in text for x in ('eksperimen','penyiasatan','hipotesis','pemboleh ubah')): fmt='experiment_table'
+        elif any(x in text for x in ('label','rajah','struktur','bahagian')): fmt='diagram_label'
+        elif any(x in text for x in ('data','jadual','graf','keputusan')): fmt='science_data'
+        elif any(x in text for x in ('memerhati','pemerhatian','merekod')): fmt='observation_record'
+        elif any(x in text for x in ('mengelas','mengelaskan','membanding','banding beza')): fmt='compare_classify'
+        elif any(x in text for x in ('membina','menghasilkan','model')): fmt='construction_task'
+        else: fmt='science_scenario'
+    elif subject == 'Bahasa Inggeris':
+        if any(x in text for x in ('listen','listening')): fmt='listening_response'
+        elif any(x in text for x in ('speak','speaking','oral')): fmt='speaking_task_card'
+        elif any(x in text for x in ('write','writing')): fmt='guided_writing_en'
+        elif any(x in text for x in ('read','reading')): fmt='reading_text'
+        elif any(x in text for x in ('literature','poem','story','language arts')): fmt='literature_response'
+        else: fmt='grammar_context'
+    elif subject == 'Bahasa Melayu':
+        if any(x in text for x in ('mendengar','bertutur','lisan')): fmt='oral_response'
+        elif any(x in text for x in ('menulis','penulisan')): fmt='guided_writing'
+        elif any(x in text for x in ('membaca','bacaan')): fmt='single_passage'
+        elif any(x in text for x in ('sastera','puisi','pantun','cerita')): fmt='literature_response'
+        else: fmt='grammar_context'
+    else:
+        # Do not invent an unsupported subject-specific format.
+        fmt='single_passage'
+    c['format_key']=fmt
+    c['format_fallback']='v25.174'
+    print('WS174_FORMAT_FALLBACK:', subject, state.get('year'), state.get('sp_code'), fmt, flush=True)
+    return c
+
+# Rebind the guard so all later worksheet generators use the repaired contract.
+def _worksheet_format_coverage_guard_v25154(state):
+    c=_worksheet_verified_mapping_contract_v25145(state)
+    fmt=str(c.get('format_key') or '').strip()
+    if not fmt:
+        raise RuntimeError('WORKSHEET_FORMAT_MISSING')
+    if fmt not in _WS154_SUPPORTED_FORMATS:
+        raise RuntimeError('WORKSHEET_FORMAT_UNSUPPORTED:'+fmt)
+    return c
+# === END v25.174 ===
