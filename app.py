@@ -31786,45 +31786,47 @@ _science_v25178_sanity()
 # ===== END v25.178 =====
 
 
-# ===== v25.179 RPH NUMBERING / PHASE-TIME PRESENTATION POLISH =====
-# Presentation-only normalization shared by RPH subjects. Do not alter DB/SK/SP/content.
-APP_VERSION='v25.179-RPH-NUMBERING-POLISH'
+# ===== v25.180 RPH NUMBERING / PHASE-TIME PRESENTATION POLISH =====
+# Safe runtime normalization. Keeps v25.178 Science semantic engine unchanged.
+APP_VERSION='v25.180-RPH-NUMBERING-REGEX-FIX'
 
 def _rph_format_activity_lines(value):
-    """Keep activity headings unnumbered; number only genuine step sentences.
-    Time-only lines are kept unnumbered so PDF/Word phase renderers can attach them
-    to the phase label (e.g. Set Induksi (5 minit)).
-    """
-    v=str(value or '').replace('\\r\\n','\\n').replace('\\r','\\n').strip()
+    """Normalize RPH numbering without regex look-behind/look-ahead patterns."""
+    v=str(value or '').replace('\r\n','\n').replace('\r','\n').strip()
     if not v:
         return v
-    # Force Activity headings onto their own line without converting them to list items.
-    v=re.sub(r'(?<!\\n)\\s+(?=(?:Aktiviti|Activity)\\s+\\d+\\s*[–—-])','\\n',v,flags=re.I)
-    # Split embedded numbered steps.
-    v=re.sub(r'(?<!\\n)\\s+(?=(?:[1-9]|[1-9]\\d)\\.\\s)','\\n',v)
-    lines=[re.sub(r'\\s+',' ',x).strip() for x in v.split('\\n') if x.strip()]
-    out=[]; step_no=0
+    # Existing RPH content already carries line boundaries. Only normalize each line;
+    # do not use look-around regexes that can fail in runtime regex implementations.
+    raw_lines=v.split('\n')
+    lines=[]
+    for x in raw_lines:
+        x=re.sub(r'\s+',' ',x).strip()
+        if x:
+            lines.append(x)
+    out=[]
     for line in lines:
-        # Remove inherited numbering first.
-        bare=re.sub(r'^\\s*(?:[1-9]|[1-9]\\d)\\.\\s*','',line).strip()
-        # Activity block titles are structural headings, never numbered list items.
-        if re.match(r'^(?:Aktiviti|Activity)\\s+\\d+\\s*[–—-]',bare,re.I):
-            out.append(bare); step_no=0; continue
-        # Duration-only line is metadata, not step 1.
-        if re.match(r'^\\(?\\s*\\d+\\s*(?:minit|minutes?|mins?)\\s*\\)?$',bare,re.I):
-            out.append(bare); continue
-        # Ordinary instructional lines are numbered. Reset happens per activity heading.
-        step_no += 1
-        out.append(f'{step_no}. {bare}')
-    return '\\n'.join(out)
+        bare=re.sub(r'^\s*\d+\.\s*','',line).strip()
+        if re.match(r'^(?:Aktiviti|Activity)\s+\d+\s*[–—-]',bare,re.I):
+            out.append(bare)
+            continue
+        if re.match(r'^\(?\s*\d+\s*(?:minit|minutes?|mins?)\s*\)?$',bare,re.I):
+            out.append(bare)
+            continue
+        # Preserve genuine step numbering if already present; do not invent numbering
+        # for semantic activity paragraphs.
+        if re.match(r'^\s*\d+\.\s+',line):
+            out.append(line.strip())
+        else:
+            out.append(bare)
+    return '\n'.join(out)
 
 def _rph_phase_time_v25179(phase, text):
-    """Move a leading duration-only line from activity text into the phase label."""
+    """Move a leading duration-only line into the phase label safely."""
     formatted=_rph_format_activity_lines(text or '')
-    lines=formatted.split('\\n') if formatted else []
+    lines=formatted.split('\n') if formatted else []
     if lines:
-        m=re.match(r'^\\(?\\s*(\\d+\\s*(?:minit|minutes?|mins?))\\s*\\)?$',lines[0],re.I)
+        m=re.match(r'^\(?\s*(\d+\s*(?:minit|minutes?|mins?))\s*\)?$',lines[0],re.I)
         if m:
-            return f'{phase} ({m.group(1)})', '\\n'.join(lines[1:]).strip()
+            return f'{phase} ({m.group(1)})', '\n'.join(lines[1:]).strip()
     return phase, formatted
-# ===== END v25.179 =====
+# ===== END v25.180 =====
