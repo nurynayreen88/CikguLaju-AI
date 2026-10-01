@@ -31302,4 +31302,45 @@ APP_VERSION='v25.170-MATH-CANONICAL-DB-ROUTE-LOCK'
 
 # === v25.171 WORKSHEET RECURSION FIX ===
 APP_VERSION='v25.171-WORKSHEET-RECURSION-FIX'
+
+# Final worksheet runtime entry point.  Bypass the historical wrapper/alias chain
+# accumulated by v25.149-v25.160; that chain can re-enter an older _local_worksheet_text
+# and prevent an otherwise valid single worksheet from reaching the PDF renderer.
+def _local_worksheet_text(state):
+    ctx=_worksheet_quality_context_v25150(dict(state or {}))
+    ctx.pop('worksheet_pack_4levels',None)
+    ctx.pop('worksheet_pack_results',None)
+    ctx.pop('worksheet_pack_context',None)
+    ctx.pop('difficulty',None)
+
+    # Require the verified semantic mapping used by the current Primary engine.
+    _worksheet_format_coverage_guard_v25154(ctx)
+    q=_worksheet_auto_qcount(ctx) if callable(globals().get('_worksheet_auto_qcount')) else _worksheet_question_count(ctx)
+    text=_db_first_generate_one_level(ctx,2,q)
+    if not str(text or '').strip():
+        raise RuntimeError('WORKSHEET_EMPTY_OUTPUT')
+
+    # Keep the current hard content/response checks, but run them once only.
+    qa=_ws152_quality_gate(ctx,text)
+    if not qa.get('ok'):
+        raise RuntimeError('WORKSHEET_QA_FAIL:'+','.join(qa.get('failures') or []))
+    _worksheet_output_quality_gate_v25159(ctx,text)
+    return _hybrid_postprocess_worksheet(text,ctx)
+
+# Keep the old public entry point, but force it through the final single-set route.
+def _worksheet_single_runtime_v25140(cid, ss=None):
+    ss=state.setdefault(cid,{}) if ss is None else ss
+    for k in ('worksheet_pack_4levels','worksheet_pack_results','worksheet_pack_context','difficulty'):
+        ss.pop(k,None)
+    ctx=dict(ss); ctx['task']='worksheet'
+    text=_local_worksheet_text(ctx)
+    p=create_pdf_file(ctx,text,str(cid)+'_worksheet')
+    try:
+        send_document(cid,p,'📝 Worksheet CikguLaju')
+    finally:
+        try:
+            if p and os.path.exists(p): os.remove(p)
+        except Exception:
+            pass
+    return True
 # === END v25.171 ===
