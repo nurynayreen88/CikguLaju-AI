@@ -4,6 +4,10 @@ P=Path(__file__).with_name("app.py")
 s=P.read_text(encoding="utf-8")
 MARK="# BETA50_LESSON_FIRST_QA16"
 
+# HOTFIX v25.167 — repair two misnamed Science v25.128 definitions before app import.
+s=s.replace("_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25127(text):", "_science_action_v25128_base = _science_action_v25127\ndef _science_action_v25128(text):", 1)
+s=s.replace("_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25127(s, rows):", "_science_sp_activity_v25128_base = _science_sp_activity_v25127\ndef _science_sp_activity_v25128(s, rows):", 1)
+
 # Runtime core is already a Git-safe 24,485,888-byte DB in the repository.
 s=s.replace(
     "os.path.join(os.path.dirname(__file__), 'CikguLaju_Curriculum_Master_v1.db')",
