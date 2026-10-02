@@ -13668,6 +13668,67 @@ def choose_topic(cid, idx):
     s['topic']=topics[idx]
     s['subtopic']='Semua Subtopik'
     if s.get('task') == 'quick_material':
+        # v25.204: Pendidikan Islam primary must never enter the generic
+        # manual SK/SP selector from a topic button. Resolve verified standards
+        # for the selected topic automatically.
+        if (str(s.get('subject') or '').strip().casefold() in
+                ('pendidikan islam','pendidikan agama islam')
+                and str(s.get('year') or '').strip().startswith('Tahun ')):
+            rows=[]
+            try:
+                con=sqlite3.connect(DB_PATH, timeout=15)
+                con.row_factory=sqlite3.Row
+                try:
+                    rows=[dict(r) for r in con.execute("""
+                        SELECT * FROM curriculum_standards
+                        WHERE TRIM(year_label)=?
+                          AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
+                          AND verified=1 AND TRIM(topic)=?
+                        ORDER BY id
+                    """,(str(s.get('year') or '').strip(),
+                           str(s.get('topic') or '').strip())).fetchall()]
+                finally:
+                    con.close()
+            except Exception as e:
+                print('v25.204 PI topic lookup:',repr(e),flush=True)
+
+            print('v25.204 PI topic route:',
+                  repr(s.get('year')),repr(s.get('topic')),
+                  'verified_rows=',len(rows),'DB=',DB_PATH,flush=True)
+
+            if not rows:
+                return send(cid,
+                    '⚠️ <b>Topik ini belum mempunyai SK/SP Pendidikan Islam verified dalam database runtime.</b>',
+                    [[{'text':'⬅️ Pilih Topik Lain','callback_data':'sub_'+str(s.get('subject',''))},
+                      {'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+            s['_verified_standard_rows_v2406']=rows
+            s['_pi_primary_verified_rows']=rows
+            try:
+                _commit_multi_sp(s,rows)
+            except Exception:
+                sks=[]; sps=[]
+                for r in rows:
+                    sk=str(r.get('sk_code') or '').strip()
+                    sp=str(r.get('sp_code') or '').strip()
+                    if sk and sk not in sks: sks.append(sk)
+                    if sp and sp not in sps: sps.append(sp)
+                s['grouped_sk_codes']=sks
+                s['grouped_sp_codes']=sps
+                s['selected_sk_codes']=sks
+                s['selected_sp_codes']=sps
+                if sks: s['selected_sk']=sks[0]
+                if sps: s['selected_sp']=sps[0]
+
+            s['quick_content_v2391']=str(s.get('topic') or '').strip()
+            s['rph_mode']='fast_curriculum_topic'
+            s['skip_manual_sk_sp']=True
+            state[cid]=s
+            # Continue into the normal PdP execution context.
+            fn=globals().get('_pdp_calendar_month_v2429') or globals().get('_rph_date_picker')
+            if fn:
+                return fn(cid)
+            return _rph_session_question(cid)
         return show_curriculum_sk(cid,s)
     if s.get('task') == 'bbm':
         # BBM must follow explicit SK/SP selection, not a broad topic alone.
@@ -33006,105 +33067,6 @@ APP_VERSION = 'v25.196-PI-PRIMARY-DIRECT-VERIFIED-SKSP-RPH'
 APP_VERSION='v25.202-DB-PATH-V2589-LOCK-FIX'
 # ===== END v25.202 =====
 
-# ===== v25.203 PI DB + PDP ROUTE FIX =====
-# Keep v25_89 DB fix from v25.202, and intercept PI at the FINAL active callback.
-# Topic selection must not fall through to the generic manual SK selector.
-
-def _pi_is_primary_v25203(ss):
-    return (str(ss.get('year') or '').strip().startswith('Tahun ') and
-            str(ss.get('subject') or '').strip().casefold() in
-            ('pendidikan islam','pendidikan agama islam'))
-
-def _pi_verified_topic_rows_v25203(ss):
-    yr=str(ss.get('year') or '').strip()
-    topic=str(ss.get('quick_content_v2391') or ss.get('topic') or '').strip()
-    rows=[]
-    try:
-        con=sqlite3.connect(DB_PATH, timeout=15)
-        con.row_factory=sqlite3.Row
-        try:
-            rows=con.execute("""
-                SELECT *
-                FROM curriculum_standards
-                WHERE TRIM(year_label)=?
-                  AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
-                  AND verified=1
-                  AND TRIM(topic)=?
-                ORDER BY id
-            """,(yr,topic)).fetchall()
-            rows=[dict(r) for r in rows]
-        finally:
-            con.close()
-    except Exception as e:
-        print('v25.203 PI topic standards error:',repr(e),flush=True)
-    return rows
-
-def _pi_after_topic_v25203(cid):
-    ss=state.setdefault(cid,{})
-    # RPT remains first choice.  If actual RPT rows exist for this selected content,
-    # expose those PdP rows and let the existing verified RPT commit resolve SK/SP.
-    try:
-        rr=[r for r in (_rpt_rows(ss.get('year',''),ss.get('subject','')) or [])
-            if _same_content_v2391(_rpt_unit_key_v2390(r),
-                                   ss.get('quick_content_v2391') or ss.get('topic'))]
-    except Exception:
-        rr=[]
-    if rr:
-        ss['_quick_rpt_rows_content_v2391']=rr
-        return _quick_rpt_for_content_v2391(cid)
-
-    # No RPT row for this content: do NOT open manual SK/SP.
-    # Use only the verified curriculum rows already stored for this exact PI topic.
-    rows=_pi_verified_topic_rows_v25203(ss)
-    if not rows:
-        return send(cid,
-            '⚠️ <b>Topik Pendidikan Islam ini belum mempunyai mapping PdP/RPT atau SK/SP verified.</b>',
-            [[{'text':'⬅️ Pilih Topik Lain','callback_data':'sub_'+str(ss.get('subject',''))},
-              {'text':'🏠 Menu Utama','callback_data':'home'}]])
-
-    # Commit verified standards automatically; teacher does not manually choose SK/SP.
-    ss['_pi_primary_verified_rows']=rows
-    ss['_verified_standard_rows_v2406']=rows
-    try:
-        _commit_multi_sp(ss, rows)
-    except Exception as e:
-        print('v25.203 PI commit verified standards:',repr(e),flush=True)
-        # Compatibility with rows returned directly from SQLite.
-        sp_codes=[str(r.get('sp_code') or '').strip() for r in rows if str(r.get('sp_code') or '').strip()]
-        sk_codes=[]
-        for r in rows:
-            c=str(r.get('sk_code') or '').strip()
-            if c and c not in sk_codes: sk_codes.append(c)
-        ss['grouped_sp_codes']=sp_codes
-        ss['grouped_sk_codes']=sk_codes
-        if sk_codes: ss['selected_sk']=sk_codes[0]
-        if sp_codes: ss['selected_sp']=sp_codes[0]
-
-    ss['rph_mode']='fast_curriculum_topic'
-    ss['_pi_primary_direct_verified']=True
-    # Continue to normal execution context/date/time rather than show_curriculum_sk().
-    fn=globals().get('_pdp_calendar_month_v2429') or globals().get('_rph_date_picker')
-    if fn and (not ss.get('rph_date') or not ss.get('rph_time')):
-        return fn(cid)
-    return _rph_session_question(cid)
-
-_callback_dispatch_v25203_base=callback
-def callback(cid,d):
-    ds=str(d or '')
-    ss=state.setdefault(cid,{})
-    if ds.startswith('qctx91_') and _pi_is_primary_v25203(ss):
-        try: i=int(ds.rsplit('_',1)[1])
-        except Exception: i=-1
-        opts=ss.get('_quick_content_opts_v2391') or []
-        if i<0 or i>=len(opts):
-            # Use the existing content menu; v25.202 guarantees DB_PATH is v25_89.
-            return _quick_content_menu_v2427(cid,0)
-        selected=str(opts[i]).strip()
-        ss['quick_content_v2391']=selected
-        ss['topic']=selected
-        ss['subtopic']=''
-        return _pi_after_topic_v25203(cid)
-    return _callback_dispatch_v25203_base(cid,d)
-
-APP_VERSION='v25.203-PI-DB-AND-PDP-ROUTE-FIX'
-# ===== END v25.203 =====
+# ===== v25.204 PI REAL TOPIC ROUTE FIX =====
+APP_VERSION='v25.204-PI-REAL-TOPIC-ROUTE-FIX'
+# ===== END v25.204 =====
