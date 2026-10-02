@@ -33000,86 +33000,116 @@ APP_VERSION = 'v25.197-PI-RPT-PDP-FLOW'
 APP_VERSION = 'v25.196-PI-PRIMARY-DIRECT-VERIFIED-SKSP-RPH'
 # ===== END v25.196 =====
 
-# ===== v25.200 PI CONTENT GATE RUNTIME FIX =====
-# Pendidikan Islam primary: expose verified source-backed content safely.
-# RPT/textbook remains first priority; verified curriculum_standards is fallback only.
-_pi_quick_content_options_v25200_base = _quick_content_options_v2429
+# ===== v25.201 PI DIRECT CONTENT MENU FIX =====
+# Final active callback override.  PI primary no longer enters the legacy
+# source-content gate used by the generic quick-material flow.
 
-def _quick_content_options_v25200(year_label, subject):
-    yr = str(year_label or '').strip()
-    sub = str(subject or '').strip()
-
-    # Leave every non-PI subject on the existing tested route.
-    if not (yr.startswith('Tahun ') and sub.casefold() in
-            ('pendidikan islam', 'pendidikan agama islam')):
-        return _pi_quick_content_options_v25200_base(yr, sub)
-
-    out, seen = [], set()
-    def add(v):
-        v = str(v or '').strip()
-        k = v.casefold()
-        if v and k not in seen:
-            seen.add(k)
-            out.append(v)
-
-    # 1. Existing source-first resolver (RPT/textbook).
+def _pi_content_options_v25201(year_label):
+    yr=str(year_label or '').strip()
+    out=[]; seen=set()
     try:
-        for v in (_pi_quick_content_options_v25200_base(yr, sub) or []):
-            add(v)
-    except Exception as e:
-        print('v25.200 PI source-first lookup:', repr(e), flush=True)
-    if out:
-        return out
-
-    # 2. Runtime DB verified curriculum fallback.
-    # Use case-insensitive subject matching to survive harmless naming/case variation.
-    try:
-        con = sqlite3.connect(DB_PATH, timeout=15)
-        con.row_factory = sqlite3.Row
+        con=sqlite3.connect(DB_PATH, timeout=15)
+        con.row_factory=sqlite3.Row
         try:
-            rows = con.execute("""
-                SELECT topic, MIN(id) AS first_id
-                FROM curriculum_standards
+            # Prefer verified RPT headings when available.
+            rows=con.execute("""
+                SELECT unit_title,topic,theme,MIN(id) AS first_id
+                FROM rpt_entries
                 WHERE TRIM(year_label)=?
                   AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
                   AND verified=1
-                  AND COALESCE(TRIM(topic),'') <> ''
-                GROUP BY TRIM(topic)
+                  AND LOWER(COALESCE(notes,'')) NOT LIKE '%superseded%'
+                GROUP BY unit_title,topic,theme
                 ORDER BY first_id
-            """, (yr,)).fetchall()
+            """,(yr,)).fetchall()
             for r in rows:
-                add(r['topic'])
+                v=str(r['unit_title'] or r['topic'] or r['theme'] or '').strip()
+                if v and v.casefold() not in seen:
+                    seen.add(v.casefold()); out.append(v)
 
-            total = con.execute("""
-                SELECT COUNT(*) AS n
-                FROM curriculum_standards
-                WHERE TRIM(year_label)=?
-                  AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
-                  AND verified=1
-            """, (yr,)).fetchone()
-            print(
-                'v25.200 PI runtime diagnostic:',
-                'year=', repr(yr),
-                'subject=', repr(sub),
-                'DB=', DB_PATH,
-                'verified_rows=', int(total['n'] if total else 0),
-                'content_options=', len(out),
-                flush=True
-            )
+            # If the RPT layer is absent/incomplete, expose only topic labels that
+            # already exist in verified PI curriculum_standards.
+            if not out:
+                rows=con.execute("""
+                    SELECT topic,MIN(id) AS first_id
+                    FROM curriculum_standards
+                    WHERE TRIM(year_label)=?
+                      AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
+                      AND verified=1
+                      AND COALESCE(TRIM(topic),'')<>''
+                    GROUP BY TRIM(topic)
+                    ORDER BY first_id
+                """,(yr,)).fetchall()
+                for r in rows:
+                    v=str(r['topic'] or '').strip()
+                    if v and v.casefold() not in seen:
+                        seen.add(v.casefold()); out.append(v)
         finally:
             con.close()
     except Exception as e:
-        print(
-            'v25.200 PI runtime diagnostic ERROR:',
-            'year=', repr(yr),
-            'subject=', repr(sub),
-            'DB=', DB_PATH,
-            'error=', repr(e),
-            flush=True
-        )
+        print('v25.201 PI content DB error:',repr(e),'DB=',DB_PATH,flush=True)
+    print('v25.201 PI content:',repr(yr),'count=',len(out),'DB=',DB_PATH,flush=True)
     return out
 
-# Replace the active content resolver used by _quick_content_menu_v2427.
-_quick_content_options_v2429 = _quick_content_options_v25200
-APP_VERSION = 'v25.200-PI-CONTENT-GATE-RUNTIME-FIX'
-# ===== END v25.200 =====
+def _pi_content_menu_v25201(cid,page=0):
+    ss=state.setdefault(cid,{})
+    opts=_pi_content_options_v25201(ss.get('year',''))
+    if not opts:
+        return send(cid,
+            '⚠️ <b>Data Pendidikan Islam tidak ditemui dalam database runtime.</b>\n\n'
+            'Semak log Render: <code>v25.201 PI content</code>.',
+            [[{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+              {'text':'🏠 Menu Utama','callback_data':'home'}]])
+    ss['_quick_content_opts_v2391']=opts
+    per=10; page=max(0,int(page or 0)); start=page*per; end=min(start+per,len(opts))
+    kb=[]
+    for i in range(start,end):
+        kb.append([{'text':('📘 '+opts[i])[:60],'callback_data':f'qctx91_{i}'}])
+    nav=[]
+    if start>0: nav.append({'text':'⬅️ Sebelum','callback_data':f'pi201p_{page-1}'})
+    if end<len(opts): nav.append({'text':'Seterusnya ➡️','callback_data':f'pi201p_{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,'☪️ <b>Pilih Bidang / Topik Pendidikan Islam</b>',kb)
+
+_callback_dispatch_v25201_base=callback
+def callback(cid,d):
+    ds=str(d or '')
+    ss=state.setdefault(cid,{})
+    is_pi_primary=(str(ss.get('year') or '').strip().startswith('Tahun ') and
+                   str(ss.get('subject') or '').strip().casefold() in
+                   ('pendidikan islam','pendidikan agama islam'))
+
+    # Intercept the subject button BEFORE the generic v24.28 source gate.
+    if ds.startswith('sub_') and str(ds[4:]).strip().casefold() in (
+            'pendidikan islam','pendidikan agama islam'):
+        ss['subject']=str(ds[4:]).strip()
+        ss['assessment_mode']='formative'
+        if ss.get('task')=='quick_material' or ss.get('quick_material_flow'):
+            for k in ('topic','subtopic','quick_content_v2391',
+                      '_quick_tb_rows_v2391','_quick_rpt_rows_content_v2391'):
+                ss.pop(k,None)
+            return _pi_content_menu_v25201(cid,0)
+
+    if ds.startswith('pi201p_') and is_pi_primary:
+        try: p=int(ds.rsplit('_',1)[1])
+        except Exception: p=0
+        return _pi_content_menu_v25201(cid,p)
+
+    # PI content click: preserve the existing downstream RPT/PdP resolver.
+    if ds.startswith('qctx91_') and is_pi_primary:
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        opts=ss.get('_quick_content_opts_v2391') or []
+        if i<0 or i>=len(opts):
+            return _pi_content_menu_v25201(cid,0)
+        ss['quick_content_v2391']=opts[i]
+        ss['topic']=opts[i]
+        ss['subtopic']=''
+        return _quick_rpt_for_content_v2391(cid)
+
+    return _callback_dispatch_v25201_base(cid,d)
+
+APP_VERSION='v25.201-PI-DIRECT-CONTENT-MENU-FIX'
+# ===== END v25.201 =====
