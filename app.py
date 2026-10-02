@@ -10091,7 +10091,7 @@ def _rph_rows(s, ai_text):
 
 _EN_RPH_LABELS={
 'MATA PELAJARAN':'Subject','TAHUN/TINGKATAN':'Year / Form','TARIKH':'Date','HARI':'Day','MASA':'Time','KELAS':'Class','BILANGAN MURID':'Number of Pupils','TAJUK':'Topic',
-'STANDARD KANDUNGAN':'Content Standard','STANDARD PEMBELAJARAN':'Learning Standard','OBJEKTIF PEMBELAJARAN':'Learning Objectives','KRITERIA KEJAYAAN':'Success Criteria','PENGETAHUAN SEDIA ADA':'Prior Knowledge','BAHAN BANTU MENGAJAR':'Teaching and Learning Materials','EMK / NILAI':'Cross-Curricular Elements / Values','KBAT / PAK21':'HOTS / 21st Century Learning','PENTAKSIRAN':'Assessment','SET INDUKSI':'Set Induction','AKTIVITI UTAMA':'Main Activities','PENUTUP':'Closure','PEMULIHAN / PENGAYAAN':'Remedial / Enrichment','REFLEKSI':'Reflection'}
+'STANDARD KANDUNGAN':'Content Standard','STANDARD PEMBELAJARAN':'Learning Standard','MAIN CONTENT STANDARD':'Main Content Standard','MAIN LEARNING STANDARD':'Main Learning Standard','COMPLEMENTARY CONTENT STANDARD':'Complementary Content Standard','COMPLEMENTARY LEARNING STANDARD':'Complementary Learning Standard','OBJEKTIF PEMBELAJARAN':'Learning Objectives','KRITERIA KEJAYAAN':'Success Criteria','PENGETAHUAN SEDIA ADA':'Prior Knowledge','BAHAN BANTU MENGAJAR':'Teaching and Learning Materials','EMK / NILAI':'Cross-Curricular Elements / Values','KBAT / PAK21':'HOTS / 21st Century Learning','PENTAKSIRAN':'Assessment','SET INDUKSI':'Set Induction','AKTIVITI UTAMA':'Main Activities','PENUTUP':'Closure','PEMULIHAN / PENGAYAAN':'Remedial / Enrichment','REFLEKSI':'Reflection'}
 def _is_english_subject(s): return str((s or {}).get('subject') or '').strip().lower() in ('bahasa inggeris','english')
 def _rph_display_label(s,key): return _EN_RPH_LABELS.get(key,key.title()) if _is_english_subject(s) else (key if key in ('EMK / NILAI','KBAT / PAK21') else key.title())
 def _rph_format_activity_lines(value):
@@ -10157,7 +10157,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
 
     table=doc.add_table(rows=0, cols=2); table.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for label in ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN']:
+    _info_labels=(['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','MAIN CONTENT STANDARD','MAIN LEARNING STANDARD','COMPLEMENTARY CONTENT STANDARD','COMPLEMENTARY LEARNING STANDARD','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'] if _is_english_subject(s) else ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'])
+    for label in _info_labels:
         value=(_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''); add_row(table,_rph_display_label(s,label),_rph_display_value(s,label,value))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
@@ -10639,7 +10640,7 @@ def create_pdf_file(s, ai_text, cid):
         rph = _rph_rows(s, ai_text)
         story = [Paragraph(_rph_title(s), title_style), Spacer(1,2*mm)]
         rows=[]
-        info_labels=['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN']
+        info_labels=(['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','MAIN CONTENT STANDARD','MAIN LEARNING STANDARD','COMPLEMENTARY CONTENT STANDARD','COMPLEMENTARY LEARNING STANDARD','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'] if _is_english_subject(s) else ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'])
         # RPH sumatif boleh merangkumi banyak SK/SP. Jangan letakkan teks SK/SP yang sangat
         # panjang dalam satu sel Table ReportLab kerana satu row tidak boleh dipecahkan
         # merentas halaman dan boleh mencetuskan LayoutError. Render SK/SP sebagai Paragraph
@@ -32377,3 +32378,79 @@ def _rph_rows(st, ai_text):
     r['PENTAKSIRAN']=f'Teacher observation and a short individual {skill} check.'
     return r
 CIKGULAJU_PATCH_V25188='ENGLISH_SIMPLE_PRECISE'
+
+
+
+# ===== v25.189 ENGLISH MAIN / COMPLEMENTARY STANDARD LAYOUT =====
+APP_VERSION='v25.189-RPH-ENGLISH-MAIN-COMPLEMENTARY'
+_en189_base=_rph_rows
+
+def _en189_verified_standard_text(st, code, kind='SP'):
+    """Return verified text only when it already exists in lesson state/verified DB."""
+    code=str(code or '').strip()
+    if not code: return ''
+    # First use text already carried by the selected lesson.
+    pools=[]
+    for k in ('_en187_verified_sow_row',):
+        x=st.get(k)
+        if isinstance(x,dict): pools.append(x)
+    pools.append(st)
+    aliases=(('learning_standard_text','sp_text','standard_text','main_ls_text','complementary_ls_text') if kind=='SP'
+             else ('content_standard_text','sk_text','standard_text','main_cs_text','complementary_cs_text'))
+    for p in pools:
+        for k in aliases:
+            v=p.get(k)
+            if isinstance(v,str) and v.strip() and not v.strip()==code:
+                return ' '.join(v.split()).strip()
+    # Then query verified curriculum standards if the active DB exposes them.
+    paths=[]
+    for fn in ('_eng12_db_path','_english_y3_y6_sow_db_path_v25136','_english_y3_y6_sow_db_path_v2517'):
+        f=globals().get(fn)
+        if callable(f):
+            try:
+                p=f()
+                if p and p not in paths: paths.append(p)
+            except Exception: pass
+    for p in paths:
+        try:
+            con=sqlite3.connect(p); con.row_factory=sqlite3.Row
+            try:
+                row=con.execute("SELECT standard_text FROM rpt_entry_standards WHERE standard_code=? AND standard_type=? AND verified=1 AND TRIM(COALESCE(standard_text,''))<>'' ORDER BY id LIMIT 1",(code,kind)).fetchone()
+                if row and str(row['standard_text']).strip(): return ' '.join(str(row['standard_text']).split())
+            finally: con.close()
+        except Exception: pass
+    return ''
+
+def _en189_full_standard(code,text):
+    code=str(code or '').strip(); text=str(text or '').strip()
+    return (code + (' – '+text if text else '')).strip() or '—'
+
+def _rph_rows(st, ai_text):
+    r=_en189_base(st,ai_text)
+    if not _is_english_subject(st): return r
+    main_cs=str(st.get('content_standard') or st.get('sk_code_main') or '').strip()
+    main_ls=str(st.get('learning_standard') or st.get('sp_code_main') or '').strip()
+    comp_cs=str(st.get('complementary_content_standard') or st.get('comp_sk_code') or '').strip()
+    comp_ls=str(st.get('complementary_learning_standard') or st.get('comp_sp_code') or '').strip()
+    mcs_text=_en189_verified_standard_text(st,main_cs,'SK')
+    mls_text=_en189_verified_standard_text(st,main_ls,'SP')
+    ccs_text=_en189_verified_standard_text(st,comp_cs,'SK')
+    cls_text=_en189_verified_standard_text(st,comp_ls,'SP')
+    r['MAIN CONTENT STANDARD']=_en189_full_standard(main_cs,mcs_text)
+    r['MAIN LEARNING STANDARD']=_en189_full_standard(main_ls,mls_text)
+    r['COMPLEMENTARY CONTENT STANDARD']=_en189_full_standard(comp_cs,ccs_text)
+    r['COMPLEMENTARY LEARNING STANDARD']=_en189_full_standard(comp_ls,cls_text)
+    # Feed verified LS text into the simple-precise objective path when available.
+    if mls_text:
+        d=mls_text.rstrip('.')
+        obj1='Pupils can '+d[:1].lower()+d[1:]+'.'
+        if cls_text:
+            d2=cls_text.rstrip('.')
+            r['OBJEKTIF PEMBELAJARAN']='1. '+obj1+'\n2. Pupils can '+d2[:1].lower()+d2[1:]+'.'
+        else:
+            r['OBJEKTIF PEMBELAJARAN']='1. '+obj1
+    return r
+
+CIKGULAJU_PATCH_V25189='ENGLISH_MAIN_COMPLEMENTARY_SEPARATE_VERIFIED_TEXT'
+# ===== END v25.189 =====
+
