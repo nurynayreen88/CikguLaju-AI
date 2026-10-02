@@ -32856,3 +32856,142 @@ CIKGULAJU_PATCH_V25194='ENGLISH_Y12_TB_GUIDED_ACTIVITY_BUILDER'
 # ===== v25.195 PI PRIMARY CONTENT FALLBACK =====
 # PI primary falls back to verified curriculum_standards topics when RPT/textbook
 # content rows are unavailable, preventing the 'still in construction' block.
+
+# ===== v25.196 PI PRIMARY DIRECT TOPIC -> VERIFIED SK/SP =====
+# PI primary already has verified curriculum_standards in the runtime DB, but
+# may not yet have lesson-level RPT/textbook rows. Do not block RPH generation
+# on those optional source layers. Resolve the selected topic directly to the
+# verified SK/SP rows, then continue with the existing RPH session flow.
+_PI_PRIMARY_DIRECT_TOPICS_PATCH = 'v25.196'
+
+_pi_source_choice_v25196_base = _quick_source_choice_v2391
+
+def _pi_primary_verified_topic_rows_v25196(ss):
+    yr = str(ss.get('year') or '').strip()
+    sub = str(ss.get('subject') or '').strip()
+    topic = str(ss.get('quick_content_v2391') or ss.get('topic') or '').strip()
+    if sub != 'Pendidikan Islam' or not yr.startswith('Tahun '):
+        return []
+    con = _db()
+    try:
+        rows = con.execute("""SELECT id,topic,sk_code,sk_text,sp_code,sp_text,verified
+            FROM curriculum_standards
+            WHERE year_label=? AND subject=? AND verified=1
+              AND TRIM(COALESCE(topic,''))=TRIM(?)
+            ORDER BY id""", (yr, sub, topic)).fetchall()
+        if rows:
+            return [dict(r) for r in rows]
+        # Defensive normalization for whitespace/case differences only; no
+        # curriculum content is synthesized.
+        candidates = con.execute("""SELECT id,topic,sk_code,sk_text,sp_code,sp_text,verified
+            FROM curriculum_standards
+            WHERE year_label=? AND subject=? AND verified=1
+              AND TRIM(COALESCE(topic,''))<>''
+            ORDER BY id""", (yr, sub)).fetchall()
+        key = ' '.join(topic.split()).casefold()
+        return [dict(r) for r in candidates
+                if ' '.join(str(r['topic'] or '').split()).casefold() == key]
+    finally:
+        con.close()
+
+def _pi_primary_direct_topic_to_rph_v25196(cid):
+    ss = state.setdefault(cid, {})
+    rows = _pi_primary_verified_topic_rows_v25196(ss)
+    if not rows:
+        return send(cid,
+            '🚧 <b>SK/SP Pendidikan Islam untuk topik ini belum ditemui dalam database.</b>\n\n'
+            'Saya tidak akan mereka SK/SP yang tiada dalam sumber disahkan.',
+            [[{'text':'⬅️ Tukar Topik','callback_data':'qctxp27_0'},
+              {'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+    selected=[]; seen=set()
+    for r in rows:
+        sp=str(r.get('sp_code') or '').strip()
+        if not sp or sp in seen:
+            continue
+        seen.add(sp)
+        selected.append(r)
+    if not selected:
+        return send(cid,'🚧 <b>SP Pendidikan Islam untuk topik ini belum mempunyai rekod disahkan.</b>',
+                    [[{'text':'⬅️ Tukar Topik','callback_data':'qctxp27_0'}]])
+
+    # Mark this as a direct verified-curriculum PI route. Lesson-level RPT is
+    # intentionally not fabricated; RPH uses the verified SK/SP content.
+    ss['task'] = 'quick_material'
+    ss['quick_material_flow'] = True
+    ss['rph_mode'] = 'fast_curriculum_topic'
+    ss['quick_content_v2391'] = str(rows[0].get('topic') or ss.get('topic') or '').strip()
+    ss['topic'] = ss['quick_content_v2391']
+    ss['subtopic'] = ''
+    ss['_pi_primary_direct_verified'] = True
+    ss['_pi_primary_verified_rows'] = selected
+    _commit_multi_sp(ss, selected)
+
+    # Keep all verified SK/SP rows available to the existing RPH builder.
+    ss['_verified_standard_rows_v2406'] = selected
+    ss['_pdp_source_trace_v2405'] = {
+        'year': ss.get('year',''), 'subject': ss.get('subject',''),
+        'content': ss.get('quick_content_v2391',''), 'source': 'DSKP / curriculum_standards',
+        'lesson_no': '', 'focus': ss.get('quick_content_v2391',''),
+        'page_start': None, 'page_end': None,
+        'content_topic': ss.get('quick_content_v2391',''), 'language_focus': '',
+        'activity_ref': '',
+        'sk_codes': list(ss.get('grouped_sk_codes') or []),
+        'sp_codes': list(ss.get('grouped_sp_codes') or []),
+        'lesson_verified': True,
+        'standards_verified': True,
+        'standards_not_applicable': False,
+        'standard_requirement': None,
+        'verified': True,
+    }
+    ss['_lesson_material_gate_v2406'] = {
+        'lesson_verified': True,
+        'standards_verified': True,
+        'standards_not_applicable': False,
+        'standard_requirement': None,
+        'page_verified': False,
+        'worksheet_required': True,
+        'bbm_required': True,
+        'activity_book': None,
+        'activity_book_rows': [],
+        'media_required': None,
+        'media_rows': [],
+        'requirements_verified': False,
+        'ready_for_generation': True,
+    }
+
+    # If the normal date/time picker has not been completed, enter it; otherwise
+    # continue exactly where the established RPH flow expects to continue.
+    if not ss.get('rph_date') or not ss.get('rph_time'):
+        fn = globals().get('_pdp_calendar_month_v2429') or globals().get('_rph_date_picker')
+        if fn:
+            return fn(cid)
+    return _rph_session_question(cid)
+
+def _quick_source_choice_v2391(cid):
+    ss = state.setdefault(cid, {})
+    if str(ss.get('subject') or '').strip() == 'Pendidikan Islam' and str(ss.get('year') or '').strip().startswith('Tahun '):
+        return _pi_primary_direct_topic_to_rph_v25196(cid)
+    return _pi_source_choice_v25196_base(cid)
+
+# qctx91 is the actual topic-selection callback. Route PI primary directly to
+# the verified SK/SP resolver so it cannot fall into the lesson-level gate.
+_callback_dispatch_v25196_base = callback
+def callback(cid, d):
+    ds = str(d or '')
+    ss = state.setdefault(cid, {})
+    if ds.startswith('qctx91_') and str(ss.get('subject') or '').strip() == 'Pendidikan Islam' and str(ss.get('year') or '').strip().startswith('Tahun '):
+        try:
+            i = int(ds.rsplit('_', 1)[1])
+        except Exception:
+            i = -1
+        opts = ss.get('_quick_content_opts_v2391') or []
+        if 0 <= i < len(opts):
+            ss['quick_content_v2391'] = str(opts[i]).strip()
+            ss['topic'] = ss['quick_content_v2391']
+            ss['subtopic'] = ''
+            return _pi_primary_direct_topic_to_rph_v25196(cid)
+    return _callback_dispatch_v25196_base(cid, d)
+
+APP_VERSION = 'v25.196-PI-PRIMARY-DIRECT-VERIFIED-SKSP-RPH'
+# ===== END v25.196 =====
