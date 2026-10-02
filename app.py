@@ -32730,3 +32730,83 @@ APP_VERSION='v25.192-BETA-VIP-FOUNDERS'
 APP_VERSION='v25.193-BETA-VIP-COPY-FIX'
 CIKGULAJU_PATCH_V25193='REMOVE_VOLUNTARY_DONATION_SENTENCE'
 # ===== END v25.193 =====
+
+# ===== v25.194 ENGLISH Y1/Y2 TEACHER BOOK PRIORITY =====
+# Content-only patch: preserve current RPH layout / Activity labels.
+APP_VERSION='v25.194-ENGLISH-Y12-TB-PRIORITY'
+_en194_base=_rph_rows
+
+def _en194_clean(v):
+    return ' '.join(str(v or '').split()).strip()
+
+def _en194_lesson_no(st):
+    for k in ('lesson_no','_lesson_no','lesson','textbook_lesson_no','sow_lesson_no','_sow_lesson_no'):
+        v=st.get(k)
+        if v not in (None,''):
+            try: return int(str(v).strip())
+            except Exception: pass
+    return None
+
+def _en194_tb_guidance(st):
+    # Prefer guidance already resolved into lesson state by _eng12_material_pack.
+    g=st.get('rph_verified_teacher_guidance')
+    if isinstance(g,dict) and any(_en194_clean(g.get(k)) for k in (
+        'warm_up','student_book_procedure','workbook_procedure','audio_procedure',
+        'checking_feedback','ending_lesson','extension_optional')):
+        return g
+    yl=_eng12_year_label(st)
+    ln=_en194_lesson_no(st)
+    if yl in ('Tahun 1','Tahun 2') and ln is not None:
+        try: return _eng12_teacher_guidance(yl,ln) or {}
+        except Exception: return {}
+    return {}
+
+def _rph_rows(st, ai_text):
+    r=_en194_base(st,ai_text)
+    if not _is_english_subject(st):
+        return r
+    yl=_eng12_year_label(st)
+    if yl not in ('Tahun 1','Tahun 2'):
+        return r
+    g=_en194_tb_guidance(st)
+    if not g:
+        return r  # Non-TB/SOW lesson: preserve the existing specific SOW path.
+
+    warm=_en194_clean(g.get('warm_up') or st.get('rph_teacher_warm_up'))
+    sb=_en194_clean(g.get('student_book_procedure') or st.get('rph_teacher_student_book_procedure'))
+    wb=_en194_clean(g.get('workbook_procedure') or st.get('rph_teacher_workbook_procedure'))
+    aud=_en194_clean(g.get('audio_procedure') or st.get('rph_audio_procedure'))
+    chk=_en194_clean(g.get('checking_feedback') or st.get('rph_teacher_checking_feedback'))
+    end=_en194_clean(g.get('ending_lesson') or st.get('rph_teacher_ending_lesson'))
+    ext=_en194_clean(g.get('extension_optional') or st.get('rph_teacher_extension'))
+
+    # Teacher's Book warm-up has first priority for Set Induction.
+    if warm:
+        r['SET INDUKSI']='5 minutes\n'+warm
+
+    # Keep the current four bold Activity headings; replace CONTENT only.
+    old=str(r.get('AKTIVITI UTAMA') or '')
+    import re as _re
+    chunks=_re.split(r'Activity\s+[1-4]\s+[^\n]*\n',old)
+    fallback=[x.strip() for x in chunks[1:5]] if len(chunks)>=5 else ['','','','']
+    while len(fallback)<4: fallback.append('')
+
+    a1=sb or fallback[0]
+    a2=' '.join(x for x in (wb,aud) if x).strip() or fallback[1]
+    a3=ext or fallback[2]
+    a4=chk or fallback[3]
+
+    r['AKTIVITI UTAMA']=(
+        'Activity 1 – Introduction and Model (10 minutes)\n'+a1+'\n'
+        'Activity 2 – Guided Practice (15 minutes)\n'+a2+'\n'
+        'Activity 3 – Apply (15 minutes)\n'+a3+'\n'
+        'Activity 4 – Assessment (10 minutes)\n'+a4
+    )
+    if end:
+        r['PENUTUP']='5 minutes\n'+end
+    if chk:
+        r['PENTAKSIRAN']=chk
+    return r
+
+CIKGULAJU_PATCH_V25194='ENGLISH_Y12_TEACHER_BOOK_PRIORITY'
+# ===== END v25.194 =====
