@@ -33105,3 +33105,37 @@ def callback(cid,d):
 
 APP_VERSION='v25.205-PI-FINAL-TOPIC-CALLBACK-INTERCEPT'
 # ===== END v25.205 =====
+
+# ===== v25.206 RUNTIME DIAGNOSTIC =====
+APP_VERSION='v25.206-RUNTIME-DIAGNOSTIC'
+
+# Replace the existing root endpoint in Flask's URL map without adding
+# a duplicate route rule. This proves which module/version/DB/callback
+# Gunicorn is actually serving.
+def _runtime_index_v25206():
+    import os as _os
+    cb=globals().get('callback')
+    return jsonify({
+        'status':'ok',
+        'app':'CikguLaju AI',
+        'app_version':APP_VERSION,
+        'module_file':_os.path.abspath(__file__),
+        'db_path':str(globals().get('DB_PATH','')),
+        'db_exists':_os.path.exists(str(globals().get('DB_PATH',''))),
+        'callback_name':getattr(cb,'__name__',None),
+        'callback_module':getattr(cb,'__module__',None),
+        'diagnostic':'v25.206'
+    })
+
+try:
+    app.view_functions['index']=_runtime_index_v25206
+except Exception as e:
+    print('v25.206 diagnostic route install ERROR:',repr(e),flush=True)
+
+print('v25.206 STARTUP',
+      'file=',__file__,
+      'version=',APP_VERSION,
+      'DB_PATH=',globals().get('DB_PATH'),
+      'callback=',repr(globals().get('callback')),
+      flush=True)
+# ===== END v25.206 =====
