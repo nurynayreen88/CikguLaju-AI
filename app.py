@@ -32454,3 +32454,94 @@ def _rph_rows(st, ai_text):
 CIKGULAJU_PATCH_V25189='ENGLISH_MAIN_COMPLEMENTARY_SEPARATE_VERIFIED_TEXT'
 # ===== END v25.189 =====
 
+
+
+
+# ===== v25.190 ENGLISH CONTENT STANDARD TEXT FIX =====
+APP_VERSION='v25.190-RPH-ENGLISH-CS-TEXT-FIX'
+_en190_base=_rph_rows
+
+def _en190_clean_cs_text(text, code, other_code=''):
+    """Reject code-only/combined-code values accidentally treated as CS descriptions."""
+    t=' '.join(str(text or '').split()).strip()
+    c=str(code or '').strip()
+    o=str(other_code or '').strip()
+    if not t:
+        return ''
+    # A real descriptor must contain alphabetic text.
+    if not re.search(r'[A-Za-z]', t):
+        return ''
+    # Reject obvious combined code strings such as "3.2; 2.1".
+    compact=re.sub(r'\s+','',t)
+    codeish=re.fullmatch(r'[0-9.;,/&+\\-]+',compact)
+    if codeish:
+        return ''
+    if t in {c,o,f'{c}; {o}',f'{o}; {c}'}:
+        return ''
+    return t
+
+def _en190_cs_from_verified_db(st, code):
+    code=str(code or '').strip()
+    if not code:
+        return ''
+    paths=[]
+    for fn in ('_eng12_db_path','_english_y3_y6_sow_db_path_v25136','_english_y3_y6_sow_db_path_v2517'):
+        f=globals().get(fn)
+        if callable(f):
+            try:
+                p=f()
+                if p and p not in paths: paths.append(p)
+            except Exception:
+                pass
+    for p in paths:
+        try:
+            con=sqlite3.connect(p); con.row_factory=sqlite3.Row
+            try:
+                # Primary verified standards table.
+                row=con.execute(
+                    """SELECT standard_text FROM rpt_entry_standards
+                       WHERE standard_code=? AND standard_type='SK'
+                         AND verified=1 AND TRIM(COALESCE(standard_text,''))<>''
+                       ORDER BY id LIMIT 1""",(code,)
+                ).fetchone()
+                if row:
+                    t=_en190_clean_cs_text(row['standard_text'],code)
+                    if t: return t
+            finally:
+                con.close()
+        except Exception:
+            pass
+    return ''
+
+def _rph_rows(st, ai_text):
+    r=_en190_base(st,ai_text)
+    if not _is_english_subject(st):
+        return r
+
+    main_cs=str(st.get('content_standard') or st.get('sk_code_main') or '').strip()
+    comp_cs=str(st.get('complementary_content_standard') or st.get('comp_sk_code') or '').strip()
+
+    # First try the text already resolved by v25.189, but reject combined/code-only values.
+    def desc_from_rendered(key, code, other):
+        val=str(r.get(key) or '').strip()
+        if ' – ' in val:
+            _,desc=val.split(' – ',1)
+            return _en190_clean_cs_text(desc,code,other)
+        return ''
+
+    mtxt=desc_from_rendered('MAIN CONTENT STANDARD',main_cs,comp_cs)
+    ctxt=desc_from_rendered('COMPLEMENTARY CONTENT STANDARD',comp_cs,main_cs)
+
+    # If v25.189 picked a combined code instead of a descriptor, fetch verified CS text.
+    if not mtxt:
+        mtxt=_en190_cs_from_verified_db(st,main_cs)
+    if not ctxt:
+        ctxt=_en190_cs_from_verified_db(st,comp_cs)
+
+    r['MAIN CONTENT STANDARD']=_en189_full_standard(main_cs,mtxt)
+    r['COMPLEMENTARY CONTENT STANDARD']=_en189_full_standard(comp_cs,ctxt)
+    return r
+
+CIKGULAJU_PATCH_V25190='ENGLISH_CONTENT_STANDARD_REAL_TEXT_ONLY'
+# ===== END v25.190 =====
+
