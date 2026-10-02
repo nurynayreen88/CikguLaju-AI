@@ -32176,3 +32176,143 @@ def _v25184_sanity():
     return True
 _v25184_sanity()
 # ===== END v25.184 =====
+
+
+
+# ===== v25.187 ENGLISH RPH VERIFIED MAPPING + PRECISE ACTIVITIES =====
+APP_VERSION='v25.187-RPH-ENGLISH-MAPPING-PRECISE'
+
+def _en187_skill_name(value):
+    import re
+    x=re.sub(r'\s+',' ',str(value or '')).strip()
+    low=x.lower()
+    for name in ('Listening','Speaking','Reading','Writing','Language Arts'):
+        if name.lower() in low:
+            return name
+    return x
+
+def _en187_materials(s):
+    items=[]
+    ps=s.get('textbook_page_start'); pe=s.get('textbook_page_end')
+    ws=s.get('workbook_page_start'); we=s.get('workbook_page_end')
+    if ps not in (None,''):
+        items.append("Student's Book p. "+(str(ps) if pe in (None,'',ps) else f"{ps}-{pe}"))
+    if ws not in (None,''):
+        items.append("Workbook p. "+(str(ws) if we in (None,'',ws) else f"{ws}-{we}"))
+    ar=str(s.get('audio_reference') or '').strip()
+    if ar:
+        items.append("verified audio "+ar)
+    return '; '.join(items)
+
+# Y1/Y2 already has exact SOW rows, but the old commit stored them only in
+# grouped generic fields. Preserve explicit Main/Complementary roles for RPH.
+_en187_eng12_commit_base=globals().get('_eng12_commit_lesson')
+if callable(_en187_eng12_commit_base):
+    def _eng12_commit_lesson(cid,idx):
+        ss=state.setdefault(cid,{})
+        rows=ss.get('_eng12_lesson_rows') or []
+        row=None
+        try: row=dict(rows[int(idx)])
+        except Exception: pass
+        result=_en187_eng12_commit_base(cid,idx)
+        if row:
+            main_cs=str(row.get('_sow_main_cs') or '').strip()
+            main_ls=str(row.get('_sow_main_ls') or '').strip()
+            comp_cs=str(row.get('_sow_comp_cs') or '').strip()
+            comp_ls=str(row.get('_sow_comp_ls') or '').strip()
+            skill=_en187_skill_name(row.get('_sow_skill'))
+            if main_cs: ss['content_standard']=ss['sk_code_main']=main_cs
+            if main_ls: ss['learning_standard']=ss['sp_code_main']=main_ls
+            if comp_cs: ss['complementary_content_standard']=ss['comp_sk_code']=comp_cs
+            if comp_ls: ss['complementary_learning_standard']=ss['comp_sp_code']=comp_ls
+            if skill: ss['main_skill']=skill
+            ss['_en187_verified_sow_row']=row
+        return result
+
+_en187_rph_rows_base=_rph_rows
+def _rph_rows(s, ai_text):
+    r=_en187_rph_rows_base(s,ai_text)
+    if not _is_english_subject(s):
+        return r
+
+    # Bind exact verified curriculum codes from state. Never invent missing SK/SP.
+    main_cs=str(s.get('content_standard') or s.get('sk_code_main') or '').strip()
+    main_ls=str(s.get('learning_standard') or s.get('sp_code_main') or '').strip()
+    comp_cs=str(s.get('complementary_content_standard') or s.get('comp_sk_code') or '').strip()
+    comp_ls=str(s.get('complementary_learning_standard') or s.get('comp_sp_code') or '').strip()
+
+    # Compatibility for Y1/Y2 state created before the explicit-role patch.
+    if not main_cs:
+        codes=s.get('selected_sk_codes') or s.get('grouped_sk_codes') or []
+        if codes: main_cs=str(codes[0]).strip()
+        if len(codes)>1 and not comp_cs: comp_cs=str(codes[1]).strip()
+    if not main_ls:
+        codes=s.get('grouped_sp_codes') or s.get('selected_sp_codes') or []
+        if codes: main_ls=str(codes[0]).strip()
+        if len(codes)>1 and not comp_ls: comp_ls=str(codes[1]).strip()
+
+    if main_cs:
+        r['STANDARD KANDUNGAN']=main_cs+(f'; Complementary: {comp_cs}' if comp_cs else '')
+    if main_ls:
+        r['STANDARD PEMBELAJARAN']=main_ls+(f'; Complementary: {comp_ls}' if comp_ls else '')
+
+    topic=str(s.get('topic') or r.get('TAJUK') or '').strip()
+    main=_en187_skill_name(s.get('main_skill') or s.get('_sow_skill'))
+    comp=_en187_skill_name(s.get('complementary_skill'))
+    materials=_en187_materials(s)
+
+    # Fill formerly blank teacher-facing fields from actual selected lesson context.
+    if not str(r.get('PENGETAHUAN SEDIA ADA') or '').strip():
+        r['PENGETAHUAN SEDIA ADA']=f'Pupils recall what they already know about {topic}.' if topic else 'Pupils recall relevant prior learning.'
+    if materials:
+        r['BAHAN BANTU MENGAJAR']=materials
+    if not str(r.get('EMK / NILAI') or '').strip():
+        r['EMK / NILAI']='Language; Communication; Collaboration'
+    r['KBAT / PAK21']=str(r.get('KBAT / PAK21') or 'Apply / Analyse').strip()
+
+    # Objectives: concise and tied to the verified skill/standard codes.
+    if main and main_ls:
+        obj1=f'By the end of the lesson, pupils can complete the {main.lower()} task aligned to Learning Standard {main_ls}.'
+        obj2=(f'By the end of the lesson, pupils can complete the {comp.lower()} task aligned to Learning Standard {comp_ls}.'
+              if comp and comp_ls else '')
+        r['OBJEKTIF PEMBELAJARAN']='1. '+obj1+('\n2. '+obj2 if obj2 else '')
+
+    # Precise > long. Avoid placeholder phrases such as target main skill,
+    # selected skills and verified lesson context.
+    focus=topic or 'the lesson topic'
+    resource=materials or 'the mapped lesson material'
+    skill=(main or 'language').lower()
+    cskill=(comp or '').lower()
+    if main:
+        if main=='Listening':
+            a1=f'Teacher introduces {focus} and previews the listening task using {resource}. Pupils identify what information they need to listen for.'
+            a2='Pupils listen and complete the mapped task. They compare answers with a partner before the teacher checks key responses.'
+            a3=(f'Pupils use the information heard in a short {cskill} follow-up task.' if cskill else 'Pupils use the information heard in a short follow-up task.')
+        elif main=='Speaking':
+            a1=f'Teacher models the target spoken response for {focus} using {resource}. Pupils listen and rehearse the key language.'
+            a2='In pairs, pupils practise the speaking task, taking turns and responding to their partner. Teacher checks intelligibility and appropriate language.'
+            a3=(f'Pupils complete a fresh speaking task and integrate a short {cskill} response.' if cskill else 'Pupils complete a fresh speaking task with less teacher support.')
+        elif main=='Reading':
+            a1=f'Teacher introduces the text for {focus} using {resource}. Pupils predict the content and identify the purpose for reading.'
+            a2='Pupils read and locate the required information. They compare evidence from the text with a partner and correct answers after feedback.'
+            a3=(f'Pupils use information from the text in a short {cskill} follow-up task.' if cskill else 'Pupils apply information from the text to a new question.')
+        elif main=='Writing':
+            a1=f'Teacher models the required written response for {focus} using {resource}. Pupils identify the features and language needed.'
+            a2='Pupils draft the response with guided support, then check content and language with a partner.'
+            a3=(f'Pupils revise and complete the writing, using a short {cskill} task to support the final response.' if cskill else 'Pupils revise and complete the writing independently.')
+        else:
+            a1=f'Teacher introduces {focus} using {resource} and models the required {skill} response.'
+            a2=f'Pupils complete a guided {skill} task in pairs. Teacher checks understanding and gives immediate feedback.'
+            a3=(f'Pupils apply the {skill} in a fresh task and integrate the {cskill} skill.' if cskill else f'Pupils apply the {skill} in a fresh task.')
+
+        r['AKTIVITI UTAMA']=(
+            'Activity 1 – Model and Understand (10 minutes)\n'+a1+'\n'
+            'Activity 2 – Guided Practice (15 minutes)\n'+a2+'\n'
+            'Activity 3 – Apply the Skill (15 minutes)\n'+a3+'\n'
+            f'Activity 4 – Individual Assessment (10 minutes)\nEach pupil completes one individual {skill} check aligned to Learning Standard {main_ls}. Teacher records evidence and gives brief feedback.'
+        )
+    return r
+
+CIKGULAJU_PATCH_V25187='ENGLISH_VERIFIED_MAPPING_PRECISE'
+# ===== END v25.187 =====
+
