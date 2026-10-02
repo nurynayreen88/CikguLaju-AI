@@ -1926,7 +1926,7 @@ def send_donation_qr(cid):
         'CikguLaju AI boleh digunakan <b>secara percuma</b>. Tiada bayaran wajib.\n\n'
         'Jika bot ini membantu urusan cikgu, sumbangan ikhlas amat dihargai untuk membantu kos operasi, penyelenggaraan, pembangunan ciri baharu serta menghargai masa dan usaha pembangunan CikguLaju.\n\n'
         '📱 <b>Cara menyumbang:</b> Imbas QR DuitNow di atas menggunakan aplikasi bank atau e-Wallet yang menyokong DuitNow QR.\n\n'
-        '🙏 <i>Sumbangan adalah sepenuhnya sukarela. Tidak menyumbang tidak menjejaskan penggunaan bot.</i>'
+        ''
     )
     kb = {'inline_keyboard': [[{'text':'📎 Upload Resit Sumbangan','callback_data':'donation_receipt'}], [{'text':'🏠 Menu Utama','callback_data':'home'}]]}
     data = {
@@ -8814,11 +8814,11 @@ def send_donation_qr(cid):
     """Hantar QR DuitNow sumbangan; selepas muat naik pertama, guna Telegram file_id."""
     global _donation_qr_file_id
     caption = (
-        '💛 <b>SUMBANGAN IKHLAS CIKGULAJU AI</b>\n\n'
+        '💛 <b>SUMBANGAN BETA CIKGULAJU AI</b>\n\n'
         'CikguLaju AI boleh digunakan <b>secara percuma</b>. Tiada bayaran wajib.\n\n'
-        'Jika bot ini membantu urusan cikgu, sumbangan ikhlas amat dihargai untuk membantu kos operasi, penyelenggaraan, pembangunan ciri baharu serta menghargai masa dan usaha pembangunan CikguLaju.\n\n'
-        '📱 <b>Cara menyumbang:</b> Imbas QR DuitNow di atas menggunakan aplikasi bank atau e-Wallet yang menyokong DuitNow QR.\n\n'
-        '🙏 <i>Sumbangan adalah sepenuhnya sukarela. Tidak menyumbang tidak menjejaskan penggunaan bot.</i>'
+        'Sumbangan Beta membantu menampung kos operasi, penyelenggaraan dan pembangunan CikguLaju sepanjang tempoh Beta. Selepas sumbangan disahkan, akaun cikgu menerima status VIP kekal mengikut jumlah sumbangan terkumpul.\n\n'
+        '⭐ <b>Tahap VIP Beta:</b>\n''RM1–RM9: VIP\n''RM10–RM29: VIP Plus\n''RM30–RM49: VIP Gold\n''RM50 ke atas: VIP Founder — akses asas tanpa yuran langganan selepas Beta.\n\n''📱 <b>Cara menyumbang:</b> Imbas QR DuitNow di atas menggunakan aplikasi bank atau e-Wallet yang menyokong DuitNow QR.\n\n'
+        ''
     )
     kb = {'inline_keyboard': [[{'text':'📎 Upload Resit Sumbangan','callback_data':'donation_receipt'}], [{'text':'🏠 Menu Utama','callback_data':'home'}]]}
     data = {
@@ -12888,7 +12888,7 @@ def menu(cid, show_persistent=False):
     kb=[[{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
         [{'text':'📚 GUNA BAHAN CIKGU','callback_data':'material'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'},
-         {'text':'❤️ SOKONG CIKGULAJU','callback_data':'donate'}],
+         {'text':'💛 SUMBANGAN BETA','callback_data':'donate'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'},
          {'text':'ℹ️ TENTANG','callback_data':'about_beta'}]]
     # v23.64: Admin Panel is discoverable only by the configured admin account.
@@ -12901,8 +12901,8 @@ def menu(cid, show_persistent=False):
          "🧪 <b>PUBLIC BETA</b> — akses <b>TANPA HAD hingga 14 Oktober 2026</b>.\n"
          "Cuba fungsi yang tersedia dan bantu kami memperbaiki CikguLaju.\n\n"
          "📚 Sediakan Bahan PdP — pilih konteks kurikulum sekali; CikguLaju menghantar semua bahan yang sudah siap sekaligus.\n"
-         "💬 Jumpa masalah atau ada idea? Hantar terus melalui <b>Komen & Cadangan</b>.\n"
-         "❤️ Sumbangan pembangunan adalah sukarela dan tidak menjejaskan penggunaan beta.", kb)
+         "💬 Jumpa masalah atau ada idea? Hantar terus melalui <b>Komen & Cadangan</b>.\n\n"
+         "💛 <b>Sumbangan Beta</b> — sumbangan membantu menampung kos operasi dan pembangunan CikguLaju sepanjang tempoh Beta. Sumbangan adalah sukarela dan tidak menjejaskan penggunaan beta.", kb)
 
 def _save_beta_feedback(cid, text, category='Umum'):
     text=' '.join(str(text or '').strip().split())[:2000]
@@ -14804,7 +14804,7 @@ def callback(cid, d):
         state.setdefault(cid,{})['waiting']='beta_feedback'
         send(cid,'💬 <b>KOMEN & CADANGAN BETA</b>\n\nTaip apa sahaja yang cikgu mahu kami perbaiki — bug, kandungan worksheet/RPH, reka bentuk atau idea fungsi baharu.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     elif d == 'about_beta':
-        send(cid,'ℹ️ <b>TENTANG CIKGULAJU AI</b>\n\nCikguLaju membantu guru menyediakan RPH, worksheet, BBM dan RPT dengan lebih pantas.\n\n🧪 Versi ini ialah <b>Public Beta</b> dengan akses tanpa had sehingga <b>14 Oktober 2026</b>.\n\n❤️ Sumbangan adalah sukarela untuk membantu kos server dan pembangunan.',[[{'text':'💬 Beri Komen','callback_data':'beta_feedback'}],[{'text':'❤️ Sokong CikguLaju','callback_data':'donate'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        send(cid,'ℹ️ <b>TENTANG CIKGULAJU AI</b>\n\nCikguLaju membantu guru menyediakan RPH, worksheet, BBM dan RPT dengan lebih pantas.\n\n🧪 Versi ini ialah <b>Public Beta</b> dengan akses tanpa had sehingga <b>14 Oktober 2026</b>.\n\n💛 <b>Sumbangan Beta</b> adalah sukarela untuk membantu kos operasi dan pembangunan sepanjang tempoh Beta.',[[{'text':'💬 Beri Komen','callback_data':'beta_feedback'}],[{'text':'💛 Sumbangan Beta','callback_data':'donate'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     elif d == 'donation_receipt':
         state.setdefault(cid,{})['waiting']='donation_receipt'
         send(cid,'📎 <b>UPLOAD RESIT SUMBANGAN</b>\n\nHantar gambar atau PDF resit sumbangan di sini.',[[{'text':'⬅️ Kembali','callback_data':'donate'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
@@ -32591,3 +32591,142 @@ def _rph_rows(st, ai_text):
 CIKGULAJU_PATCH_V25190='ENGLISH_CONTENT_STANDARD_REAL_TEXT_ONLY'
 # ===== END v25.190 =====
 
+
+
+# ===== v25.191 BETA DONATION MENU =====
+APP_VERSION='v25.191-BETA-DONATION-MENU'
+CIKGULAJU_PATCH_V25191='BETA_DONATION_MENU'
+# ===== END v25.191 =====
+
+
+
+# ===== v25.192 BETA VIP / FOUNDING SUPPORTER =====
+# Non-destructive VIP ledger. Existing donation receipt/payment flow is preserved.
+VIP_BETA_TIERS = (
+    (50.0, '👑 VIP Founder', 'lifetime_basic'),
+    (30.0, '⭐⭐⭐ VIP Gold', 'future_subscription_privilege'),
+    (10.0, '⭐⭐ VIP Plus', 'future_subscription_discount'),
+    (0.01, '⭐ VIP', 'supporter'),
+)
+
+def _ensure_beta_vip_schema():
+    con=_db()
+    try:
+        con.executescript("""
+        CREATE TABLE IF NOT EXISTS beta_vip_supporters (
+            chat_id TEXT PRIMARY KEY,
+            total_donation REAL NOT NULL DEFAULT 0,
+            vip_level TEXT NOT NULL DEFAULT '',
+            post_beta_benefit TEXT NOT NULL DEFAULT '',
+            lifetime_basic INTEGER NOT NULL DEFAULT 0,
+            first_donation_at TEXT,
+            last_donation_at TEXT,
+            updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            notes TEXT NOT NULL DEFAULT ''
+        );
+        CREATE TABLE IF NOT EXISTS beta_vip_donation_ledger (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            chat_id TEXT NOT NULL,
+            amount REAL NOT NULL,
+            receipt_id INTEGER,
+            recorded_by TEXT NOT NULL DEFAULT '',
+            created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(chat_id, receipt_id)
+        );
+        CREATE INDEX IF NOT EXISTS idx_beta_vip_ledger_chat
+            ON beta_vip_donation_ledger(chat_id, created_at DESC);
+        """)
+        con.commit()
+    finally:
+        con.close()
+
+def _beta_vip_tier(total):
+    total=float(total or 0)
+    for minimum,label,benefit in VIP_BETA_TIERS:
+        if total >= minimum:
+            return label,benefit
+    return '', ''
+
+def _beta_vip_profile(chat_id):
+    _ensure_beta_vip_schema()
+    con=_db()
+    try:
+        r=con.execute("SELECT * FROM beta_vip_supporters WHERE chat_id=?",(str(chat_id),)).fetchone()
+        return dict(r) if r else {
+            'chat_id':str(chat_id),'total_donation':0.0,'vip_level':'',
+            'post_beta_benefit':'','lifetime_basic':0
+        }
+    finally:
+        con.close()
+
+def _record_beta_vip_donation(chat_id, amount, receipt_id=None, admin_cid=''):
+    """Admin-confirmed amount -> cumulative permanent Beta VIP status."""
+    amount=round(float(amount),2)
+    if amount <= 0:
+        raise ValueError('Nilai sumbangan mesti melebihi RM0.')
+    _ensure_beta_vip_schema()
+    con=_db()
+    try:
+        # Idempotent for the same receipt: never count one receipt twice.
+        if receipt_id is not None:
+            old=con.execute(
+                "SELECT id FROM beta_vip_donation_ledger WHERE chat_id=? AND receipt_id=?",
+                (str(chat_id),int(receipt_id))
+            ).fetchone()
+            if old:
+                return _beta_vip_profile(chat_id)
+
+        con.execute("""INSERT INTO beta_vip_donation_ledger(chat_id,amount,receipt_id,recorded_by)
+                       VALUES(?,?,?,?)""",
+                    (str(chat_id),amount,int(receipt_id) if receipt_id is not None else None,str(admin_cid or '')))
+        total=con.execute(
+            "SELECT COALESCE(SUM(amount),0) FROM beta_vip_donation_ledger WHERE chat_id=?",
+            (str(chat_id),)
+        ).fetchone()[0]
+        level,benefit=_beta_vip_tier(total)
+        lifetime=1 if benefit=='lifetime_basic' else 0
+        con.execute("""
+            INSERT INTO beta_vip_supporters(
+                chat_id,total_donation,vip_level,post_beta_benefit,lifetime_basic,
+                first_donation_at,last_donation_at,updated_at
+            ) VALUES(?,?,?,?,?,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)
+            ON CONFLICT(chat_id) DO UPDATE SET
+                total_donation=excluded.total_donation,
+                vip_level=excluded.vip_level,
+                post_beta_benefit=excluded.post_beta_benefit,
+                lifetime_basic=MAX(beta_vip_supporters.lifetime_basic,excluded.lifetime_basic),
+                last_donation_at=CURRENT_TIMESTAMP,
+                updated_at=CURRENT_TIMESTAMP
+        """,(str(chat_id),float(total),level,benefit,lifetime))
+        con.commit()
+    finally:
+        con.close()
+    return _beta_vip_profile(chat_id)
+
+def _beta_vip_status_text(chat_id):
+    p=_beta_vip_profile(chat_id)
+    total=float(p.get('total_donation') or 0)
+    if total <= 0:
+        return 'Belum VIP'
+    return f"{p.get('vip_level') or '⭐ VIP'} · RM{total:.2f} terkumpul"
+
+def _beta_vip_future_note(profile):
+    benefit=str(profile.get('post_beta_benefit') or '')
+    if benefit=='lifetime_basic':
+        return 'Akses asas CikguLaju kekal tanpa yuran langganan selepas Beta.'
+    if benefit=='future_subscription_privilege':
+        return 'Menerima keistimewaan langganan selepas Beta; tempoh/skop akan ditetapkan sebelum pelancaran rasmi.'
+    if benefit=='future_subscription_discount':
+        return 'Menerima keistimewaan/diskaun langganan selepas Beta; kadar akan ditetapkan sebelum pelancaran rasmi.'
+    return 'Status VIP kekal sebagai penghargaan penyumbang Beta.'
+
+CIKGULAJU_PATCH_V25192='BETA_VIP_FOUNDING_SUPPORTER'
+# ===== END v25.192 =====
+
+APP_VERSION='v25.192-BETA-VIP-FOUNDERS'
+
+
+# ===== v25.193 BETA VIP COPY FIX =====
+APP_VERSION='v25.193-BETA-VIP-COPY-FIX'
+CIKGULAJU_PATCH_V25193='REMOVE_VOLUNTARY_DONATION_SENTENCE'
+# ===== END v25.193 =====
