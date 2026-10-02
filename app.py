@@ -22959,6 +22959,27 @@ def _quick_content_options_v2427(year_label, subject):
         print('v24.27 normal content lookup:',repr(e),flush=True)
     if out:
         return out
+    # Pendidikan Islam primary: when a verified RPT/textbook content layer is
+    # not present for a year, use the verified curriculum topic labels as the
+    # source-backed selection layer. This does not invent curriculum labels;
+    # the labels come directly from verified curriculum_standards.
+    if sub == 'Pendidikan Islam' and yr.startswith('Tahun '):
+        try:
+            con=sqlite3.connect(DB_PATH, timeout=15)
+            con.row_factory=sqlite3.Row
+            try:
+                rows=con.execute("""SELECT topic, MIN(id) AS id
+                                    FROM curriculum_standards
+                                    WHERE year_label=? AND subject=? AND verified=1
+                                      AND COALESCE(TRIM(topic),'') <> ''
+                                    GROUP BY topic ORDER BY MIN(id)""",(yr,sub)).fetchall()
+                for r in rows: add(r['topic'])
+            finally:
+                con.close()
+        except Exception as e:
+            print('v24.27 PI curriculum topic fallback:',repr(e),flush=True)
+        if out:
+            return out
     # Deployment-safe fallback: same verified tables, direct SQLite connection.
     try:
         con=sqlite3.connect(DB_PATH, timeout=15)
@@ -32831,3 +32852,7 @@ def _rph_rows(st, ai_text):
 
 CIKGULAJU_PATCH_V25194='ENGLISH_Y12_TB_GUIDED_ACTIVITY_BUILDER'
 # ===== END v25.194 =====
+
+# ===== v25.195 PI PRIMARY CONTENT FALLBACK =====
+# PI primary falls back to verified curriculum_standards topics when RPT/textbook
+# content rows are unavailable, preventing the 'still in construction' block.
