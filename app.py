@@ -33139,3 +33139,72 @@ print('v25.206 STARTUP',
       'callback=',repr(globals().get('callback')),
       flush=True)
 # ===== END v25.206 =====
+
+# ===== v25.208 RUNTIME DB v25_90 =====
+# v25_90 is based on the previously active v25_11 runtime DB with only
+# verified Pendidikan Islam Tahun 1-6 data merged in. Rebuild from Git-safe
+# parts and make it the general runtime DB. Specialist subject resolvers
+# remain untouched.
+def _cikgulaju_runtime_db_v2590():
+    import os as _os
+    base=_os.path.dirname(_os.path.abspath(__file__))
+    name='CikguLaju_Curriculum_Master_v25_90_RUNTIME_PLUS_PI_T1_T6.db'
+    full=_os.path.join(base,name)
+    p1=full+'.part1'
+    p2=full+'.part2'
+
+    if not _os.path.exists(full):
+        if _os.path.exists(p1) and _os.path.exists(p2):
+            tmp=full+'.tmp'
+            with open(tmp,'wb') as w:
+                for part in (p1,p2):
+                    with open(part,'rb') as r:
+                        while True:
+                            chunk=r.read(1024*1024)
+                            if not chunk:
+                                break
+                            w.write(chunk)
+            _os.replace(tmp,full)
+        else:
+            raise RuntimeError('v25_90 DB parts missing: '+p1+' / '+p2)
+
+    # Lightweight validation before switching DB_PATH.
+    import sqlite3 as _sqlite3
+    con=_sqlite3.connect(full)
+    try:
+        chk=con.execute('PRAGMA integrity_check').fetchone()
+        if not chk or str(chk[0]).lower()!='ok':
+            raise RuntimeError('v25_90 integrity_check failed: '+repr(chk))
+    finally:
+        con.close()
+    return full
+
+try:
+    DB_PATH=_cikgulaju_runtime_db_v2590()
+except Exception as e:
+    print('v25.208 DB v25_90 activation ERROR:',repr(e),flush=True)
+    raise
+
+APP_VERSION='v25.208-RUNTIME-DB-V2590'
+
+def _runtime_index_v25208():
+    import os as _os
+    cb=globals().get('callback')
+    return jsonify({
+        'status':'ok',
+        'app':'CikguLaju AI',
+        'app_version':APP_VERSION,
+        'module_file':_os.path.abspath(__file__),
+        'db_path':str(globals().get('DB_PATH','')),
+        'db_exists':_os.path.exists(str(globals().get('DB_PATH',''))),
+        'callback_name':getattr(cb,'__name__',None),
+        'diagnostic':'v25.208'
+    })
+
+app.view_functions['index']=_runtime_index_v25208
+print('v25.208 STARTUP',
+      'file=',__file__,
+      'version=',APP_VERSION,
+      'DB_PATH=',DB_PATH,
+      flush=True)
+# ===== END v25.208 =====
