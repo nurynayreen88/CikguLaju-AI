@@ -1926,7 +1926,7 @@ def send_donation_qr(cid):
         'CikguLaju AI boleh digunakan <b>secara percuma</b>. Tiada bayaran wajib.\n\n'
         'Jika bot ini membantu urusan cikgu, sumbangan ikhlas amat dihargai untuk membantu kos operasi, penyelenggaraan, pembangunan ciri baharu serta menghargai masa dan usaha pembangunan CikguLaju.\n\n'
         '📱 <b>Cara menyumbang:</b> Imbas QR DuitNow di atas menggunakan aplikasi bank atau e-Wallet yang menyokong DuitNow QR.\n\n'
-        '🙏 <i>Sumbangan adalah sepenuhnya sukarela. Tidak menyumbang tidak menjejaskan penggunaan bot.</i>'
+        ''
     )
     kb = {'inline_keyboard': [[{'text':'📎 Upload Resit Sumbangan','callback_data':'donation_receipt'}], [{'text':'🏠 Menu Utama','callback_data':'home'}]]}
     data = {
@@ -8818,7 +8818,7 @@ def send_donation_qr(cid):
         'CikguLaju AI boleh digunakan <b>secara percuma</b>. Tiada bayaran wajib.\n\n'
         'Sumbangan Beta membantu menampung kos operasi, penyelenggaraan dan pembangunan CikguLaju sepanjang tempoh Beta. Selepas sumbangan disahkan, akaun cikgu menerima status VIP kekal mengikut jumlah sumbangan terkumpul.\n\n'
         '⭐ <b>Tahap VIP Beta:</b>\n''RM1–RM9: VIP\n''RM10–RM29: VIP Plus\n''RM30–RM49: VIP Gold\n''RM50 ke atas: VIP Founder — akses asas tanpa yuran langganan selepas Beta.\n\n''📱 <b>Cara menyumbang:</b> Imbas QR DuitNow di atas menggunakan aplikasi bank atau e-Wallet yang menyokong DuitNow QR.\n\n'
-        '🙏 <i>Sumbangan adalah sepenuhnya sukarela. Tidak menyumbang tidak menjejaskan penggunaan bot.</i>'
+        ''
     )
     kb = {'inline_keyboard': [[{'text':'📎 Upload Resit Sumbangan','callback_data':'donation_receipt'}], [{'text':'🏠 Menu Utama','callback_data':'home'}]]}
     data = {
@@ -32678,3 +32678,9 @@ CIKGULAJU_PATCH_V25192='BETA_VIP_FOUNDING_SUPPORTER'
 # ===== END v25.192 =====
 
 APP_VERSION='v25.192-BETA-VIP-FOUNDERS'
+
+
+# ===== v25.193 BETA VIP COPY FIX =====
+APP_VERSION='v25.193-BETA-VIP-COPY-FIX'
+CIKGULAJU_PATCH_V25193='REMOVE_VOLUNTARY_DONATION_SENTENCE'
+# ===== END v25.193 =====
