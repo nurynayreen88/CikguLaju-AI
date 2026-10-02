@@ -20594,6 +20594,8 @@ def _bbm_activity_material_v2398(resource_key):
     finally:con.close()
 # ===== END v23.102 PHYSICAL TEMPLATE SHARD COMPATIBILITY =====
 
+
+CIKGULAJU_PATCH_V25185 = "ENGLISH_HOTS_COMPACT_ONEPAGE"
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.getenv('PORT','10000')))
 
@@ -25012,18 +25014,6 @@ CCE / EMK:
 HOTS / 21ST CENTURY LEARNING:
 {hots}
 
-DIFFERENTIATION:
-{profile['differentiation']}
-
-PRE-LESSON:
-{pre}
-
-LESSON DEVELOPMENT:
-{dev}
-
-POST-LESSON:
-{post}
-
 ASSESSMENT:
 {profile['assessment']}
 
@@ -25259,18 +25249,6 @@ CCE / EMK:
 
 HOTS / 21ST CENTURY LEARNING:
 {str(s.get('hots') or ('Apply / Analyse' if band in ('lower_primary','middle_primary') else 'Apply / Analyse / Evaluate / Create as appropriate'))}
-
-DIFFERENTIATION:
-{profile['differentiation']}
-
-PRE-LESSON:
-{pre}
-
-LESSON DEVELOPMENT:
-{dev}
-
-POST-LESSON:
-{post}
 
 ASSESSMENT:
 {profile['assessment']}
