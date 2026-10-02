@@ -32316,3 +32316,64 @@ def _rph_rows(s, ai_text):
 CIKGULAJU_PATCH_V25187='ENGLISH_VERIFIED_MAPPING_PRECISE'
 # ===== END v25.187 =====
 
+
+
+# ===== v25.188 ENGLISH SIMPLE BUT PRECISE =====
+
+APP_VERSION='v25.188-RPH-ENGLISH-SIMPLE-PRECISE'
+_en188_base=_rph_rows
+def _rph_rows(st, ai_text):
+    r=_en188_base(st, ai_text)
+    if not _is_english_subject(st): return r
+    topic=str(st.get('topic') or r.get('TAJUK') or '').strip()
+    main=_en187_skill_name(st.get('main_skill') or st.get('_sow_skill'))
+    comp=_en187_skill_name(st.get('complementary_skill'))
+    materials=_en187_materials(st)
+    def first(*ks):
+        for k in ks:
+            v=st.get(k)
+            if isinstance(v,str) and v.strip(): return ' '.join(v.split()).strip()
+        return ''
+    md=first('learning_standard_text','sp_text_main','main_learning_standard_text','_sow_main_ls_text','main_ls_text','sp_description_main')
+    cd=first('complementary_learning_standard_text','comp_sp_text','_sow_comp_ls_text','complementary_ls_text','sp_description_comp')
+    def objective(skill,desc):
+        if desc:
+            d=desc.strip().rstrip('.')
+            return 'Pupils can '+d[:1].lower()+d[1:]+'.'
+        return f"Pupils can complete a simple {(skill or 'language').lower()} task about {topic or 'the topic'}."
+    r['OBJEKTIF PEMBELAJARAN']='1. '+objective(main,md)+(('\n2. '+objective(comp,cd)) if comp else '')
+    skill=(main or 'language').lower()
+    r['KRITERIA KEJAYAAN']=f'Pupils complete the {skill} task correctly with appropriate support.'
+    focus=topic or 'the topic'; resource=materials or 'the lesson material'
+    if main=='Speaking':
+        a=[f'Teacher introduces {focus} using {resource} and models suitable words or responses. Pupils listen and repeat.',
+           'Pupils practise the speaking task in pairs. Teacher checks pronunciation, meaning and appropriate responses.',
+           f'Pupils use the language in a short speaking task about {focus} with less support.',
+           'Each pupil gives a short individual response. Teacher observes and records achievement.']
+    elif main=='Listening':
+        a=[f'Teacher introduces {focus} using {resource} and explains what pupils need to listen for.',
+           'Pupils listen and complete the task, then compare answers with a partner.',
+           f'Pupils use the information heard to complete a short task about {focus}.',
+           'Each pupil completes a short individual listening check. Teacher records achievement.']
+    elif main=='Reading':
+        a=[f'Teacher introduces the text about {focus} using {resource}. Pupils identify key words and the reading purpose.',
+           'Pupils read and find the required information, then compare answers with a partner.',
+           f'Pupils use information from the text to complete a short task about {focus}.',
+           'Each pupil completes a short individual reading check. Teacher records achievement.']
+    elif main=='Writing':
+        a=[f'Teacher introduces {focus} using {resource} and models a suitable written response.',
+           'Pupils complete a guided writing task and check their work with a partner.',
+           f'Pupils write a short response about {focus} with less support.',
+           'Each pupil completes a short individual writing task. Teacher records achievement.']
+    else:
+        a=[f'Teacher introduces {focus} using {resource} and models the required response.',
+           f'Pupils complete a guided {skill} task with a partner.',
+           f'Pupils apply the {skill} in a short task about {focus}.',
+           'Each pupil completes a short individual check. Teacher records achievement.']
+    r['AKTIVITI UTAMA']=('Activity 1 – Introduction and Model (10 minutes)\n'+a[0]+'\n'
+      'Activity 2 – Guided Practice (15 minutes)\n'+a[1]+'\n'
+      'Activity 3 – Apply (15 minutes)\n'+a[2]+'\n'
+      'Activity 4 – Assessment (10 minutes)\n'+a[3])
+    r['PENTAKSIRAN']=f'Teacher observation and a short individual {skill} check.'
+    return r
+CIKGULAJU_PATCH_V25188='ENGLISH_SIMPLE_PRECISE'
