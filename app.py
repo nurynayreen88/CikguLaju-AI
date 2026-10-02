@@ -16602,21 +16602,8 @@ def curriculum_sp_options(s,sk_code):
 # Override the active SK selector so English follows the same explicit
 # textbook title -> SK -> SP hierarchy as other subjects.
 def show_curriculum_sk(cid, s):
-    # v25.199 HARD GUARD: Pendidikan Islam primary is RPT/PdP-first.
-    # Never send PI straight from Topic to the generic SK/SP selector.
-    state[cid]=s
-    if (str(s.get('subject') or '').strip() == 'Pendidikan Islam'
-            and str(s.get('year') or '').strip().startswith('Tahun ')):
-        selected = str(s.get('quick_content_v2391') or s.get('topic') or '').strip()
-        if selected:
-            s['quick_content_v2391'] = selected
-            s['topic'] = selected
-            s['subtopic'] = ''
-        fn = globals().get('_quick_rpt_for_content_v2391')
-        if fn:
-            return fn(cid)
-        return send(cid,'📘 <b>RPT/PdP Pendidikan Islam belum dapat dibuka untuk pilihan ini.</b>',[[{'text':'⬅️ Pilih Topik Lain','callback_data':'sub_Pendidikan Islam'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
     # HARD GUARD: exact textbook mapping owns SK/SP selection.
+    state[cid]=s
     if _textbook_auto_standards_ready(s):
         return _rph_session_question(cid)
     if str(s.get('rph_mode') or '').startswith('fast_textbook'):
@@ -33008,5 +32995,91 @@ def callback(cid, d):
             return _quick_rpt_for_content_v2391(cid)
     return _callback_dispatch_v25197_base(cid, d)
 
-APP_VERSION = 'v25.199-PI-ACTIVE-SK-GATE-FIX'
-# ===== END v25.199 =====
+APP_VERSION = 'v25.197-PI-RPT-PDP-FLOW'
+
+APP_VERSION = 'v25.196-PI-PRIMARY-DIRECT-VERIFIED-SKSP-RPH'
+# ===== END v25.196 =====
+
+# ===== v25.200 PI CONTENT GATE RUNTIME FIX =====
+# Pendidikan Islam primary: expose verified source-backed content safely.
+# RPT/textbook remains first priority; verified curriculum_standards is fallback only.
+_pi_quick_content_options_v25200_base = _quick_content_options_v2429
+
+def _quick_content_options_v25200(year_label, subject):
+    yr = str(year_label or '').strip()
+    sub = str(subject or '').strip()
+
+    # Leave every non-PI subject on the existing tested route.
+    if not (yr.startswith('Tahun ') and sub.casefold() in
+            ('pendidikan islam', 'pendidikan agama islam')):
+        return _pi_quick_content_options_v25200_base(yr, sub)
+
+    out, seen = [], set()
+    def add(v):
+        v = str(v or '').strip()
+        k = v.casefold()
+        if v and k not in seen:
+            seen.add(k)
+            out.append(v)
+
+    # 1. Existing source-first resolver (RPT/textbook).
+    try:
+        for v in (_pi_quick_content_options_v25200_base(yr, sub) or []):
+            add(v)
+    except Exception as e:
+        print('v25.200 PI source-first lookup:', repr(e), flush=True)
+    if out:
+        return out
+
+    # 2. Runtime DB verified curriculum fallback.
+    # Use case-insensitive subject matching to survive harmless naming/case variation.
+    try:
+        con = sqlite3.connect(DB_PATH, timeout=15)
+        con.row_factory = sqlite3.Row
+        try:
+            rows = con.execute("""
+                SELECT topic, MIN(id) AS first_id
+                FROM curriculum_standards
+                WHERE TRIM(year_label)=?
+                  AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
+                  AND verified=1
+                  AND COALESCE(TRIM(topic),'') <> ''
+                GROUP BY TRIM(topic)
+                ORDER BY first_id
+            """, (yr,)).fetchall()
+            for r in rows:
+                add(r['topic'])
+
+            total = con.execute("""
+                SELECT COUNT(*) AS n
+                FROM curriculum_standards
+                WHERE TRIM(year_label)=?
+                  AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
+                  AND verified=1
+            """, (yr,)).fetchone()
+            print(
+                'v25.200 PI runtime diagnostic:',
+                'year=', repr(yr),
+                'subject=', repr(sub),
+                'DB=', DB_PATH,
+                'verified_rows=', int(total['n'] if total else 0),
+                'content_options=', len(out),
+                flush=True
+            )
+        finally:
+            con.close()
+    except Exception as e:
+        print(
+            'v25.200 PI runtime diagnostic ERROR:',
+            'year=', repr(yr),
+            'subject=', repr(sub),
+            'DB=', DB_PATH,
+            'error=', repr(e),
+            flush=True
+        )
+    return out
+
+# Replace the active content resolver used by _quick_content_menu_v2427.
+_quick_content_options_v2429 = _quick_content_options_v25200
+APP_VERSION = 'v25.200-PI-CONTENT-GATE-RUNTIME-FIX'
+# ===== END v25.200 =====
