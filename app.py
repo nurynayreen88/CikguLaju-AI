@@ -3,7 +3,7 @@
 def _cikgulaju_rebuild_split_db():
     import os as _os
     _base=_os.path.dirname(_os.path.abspath(__file__))
-    _name='CikguLaju_Curriculum_Master_v25_82_PRIMARY_LANGUAGE_SCIENCE_VERB_QA.db'
+    _name='CikguLaju_Curriculum_Master_v25_89_PI_T1_T6_JAWI_COMPLETE_FINAL.db'
     _db=_os.path.join(_base,_name)
     if not _os.path.exists(_db):
         _parts=[_os.path.join(_base,_name+'.part1'), _os.path.join(_base,_name+'.part2')]
@@ -1848,12 +1848,12 @@ SUBJECTS = [
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 5': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 6': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 5': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 6': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tingkatan 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
     'Tingkatan 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
     'Tingkatan 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
@@ -8664,12 +8664,12 @@ SUBJECTS = [
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 5': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
-    'Tahun 6': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 5': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 6': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tingkatan 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
     'Tingkatan 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
     'Tingkatan 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Sejarah','Pendidikan Islam'],
