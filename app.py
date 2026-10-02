@@ -33208,3 +33208,101 @@ print('v25.208 STARTUP',
       'DB_PATH=',DB_PATH,
       flush=True)
 # ===== END v25.208 =====
+
+# ===== v25.209 PI PRIMARY AUTO SK/SP GATE =====
+# Final choke-point override: Pendidikan Islam Tahun 1-6 must not ask teachers
+# to manually choose SK/SP. Resolve verified rows for the already-selected
+# curriculum topic and continue the existing RPH/PdP metadata flow.
+_show_curriculum_sk_v25209_base = show_curriculum_sk
+
+def _pi_primary_v25209(st):
+    y=str(st.get('year') or '').strip()
+    sub=str(st.get('subject') or '').strip().lower()
+    return y.startswith('Tahun ') and sub in ('pendidikan islam','pendidikan agama islam')
+
+def _pi_verified_rows_v25209(st):
+    import sqlite3 as _sqlite3
+    y=str(st.get('year') or '').strip()
+    sub=str(st.get('subject') or '').strip()
+    topic=str(st.get('topic') or '').strip()
+    if not (y and sub and topic):
+        return []
+    con=_sqlite3.connect(DB_PATH)
+    con.row_factory=_sqlite3.Row
+    try:
+        rows=con.execute("""
+            SELECT *
+            FROM curriculum_standards
+            WHERE TRIM(year_label)=TRIM(?)
+              AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
+              AND verified=1
+              AND LOWER(TRIM(topic))=LOWER(TRIM(?))
+            ORDER BY sk_code, sp_code
+        """,(y,topic)).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        con.close()
+
+def _pi_commit_verified_v25209(st, rows):
+    def uniq(vals):
+        out=[]
+        for v in vals:
+            v=str(v or '').strip()
+            if v and v not in out: out.append(v)
+        return out
+    sk_codes=uniq(r.get('sk_code') for r in rows)
+    sp_codes=uniq(r.get('sp_code') for r in rows)
+    sk_texts=uniq(r.get('sk_text') for r in rows)
+    sp_texts=uniq(r.get('sp_text') for r in rows)
+    st['_verified_standard_rows_v2406']=rows
+    st['_pi_primary_verified_rows']=rows
+    st['grouped_sk_codes']=sk_codes
+    st['grouped_sp_codes']=sp_codes
+    st['grouped_sk_texts']=sk_texts
+    st['grouped_sp_texts']=sp_texts
+    st['selected_sk_codes']=sk_codes
+    st['selected_sp_codes']=sp_codes
+    st['sk_code']='; '.join(sk_codes)
+    st['sp_code']='; '.join(sp_codes)
+    st['sk']='; '.join(sk_texts)
+    st['sp']='; '.join(sp_texts)
+    st['skip_manual_sk_sp']=True
+    st['_pi_primary_direct_verified']=True
+
+def show_curriculum_sk(cid, st):
+    if _pi_primary_v25209(st) and (st.get('task')=='quick_material' or st.get('quick_material_flow')):
+        rows=_pi_verified_rows_v25209(st)
+        print('v25.209 PI AUTO SKSP',
+              'year=',st.get('year'),
+              'topic=',st.get('topic'),
+              'rows=',len(rows),
+              flush=True)
+        if rows:
+            _pi_commit_verified_v25209(st, rows)
+            # Continue to the established date/time flow instead of SK/SP buttons.
+            fn=globals().get('_pdp_calendar_month_v2429')
+            if callable(fn):
+                return fn(cid)
+            fn=globals().get('_rph_date_picker')
+            if callable(fn):
+                return fn(cid, st)
+            fn=globals().get('_rph_session_question')
+            if callable(fn):
+                return fn(cid)
+    return _show_curriculum_sk_v25209_base(cid, st)
+
+APP_VERSION='v25.209-PI-PRIMARY-AUTO-SKSP'
+# retain runtime diagnostic
+def _runtime_index_v25209():
+    import os as _os
+    return jsonify({
+        'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+        'module_file':_os.path.abspath(__file__),
+        'db_path':str(globals().get('DB_PATH','')),
+        'db_exists':_os.path.exists(str(globals().get('DB_PATH',''))),
+        'callback_name':getattr(globals().get('callback'),'__name__',None),
+        'diagnostic':'v25.209'
+    })
+app.view_functions['index']=_runtime_index_v25209
+print('v25.209 STARTUP','DB_PATH=',DB_PATH,flush=True)
+# ===== END v25.209 =====
