@@ -32968,15 +32968,13 @@ def _pi_primary_direct_topic_to_rph_v25196(cid):
             return fn(cid)
     return _rph_session_question(cid)
 
-def _quick_source_choice_v2391(cid):
-    ss = state.setdefault(cid, {})
-    if str(ss.get('subject') or '').strip() == 'Pendidikan Islam' and str(ss.get('year') or '').strip().startswith('Tahun '):
-        return _pi_primary_direct_topic_to_rph_v25196(cid)
-    return _pi_source_choice_v25196_base(cid)
+# v25.197: PI PRIMARY MUST FOLLOW ITS RPT/PDP STRUCTURE.
+# Do not bypass the RPT lesson layer with Topic -> SK/SP direct routing.
+_PI_RPT_PDP_FLOW_V25197 = 'v25.197'
 
-# qctx91 is the actual topic-selection callback. Route PI primary directly to
-# the verified SK/SP resolver so it cannot fall into the lesson-level gate.
-_callback_dispatch_v25196_base = callback
+_quick_source_choice_v2391 = _pi_source_choice_v25196_base
+
+_callback_dispatch_v25197_base = callback
 def callback(cid, d):
     ds = str(d or '')
     ss = state.setdefault(cid, {})
@@ -32987,11 +32985,17 @@ def callback(cid, d):
             i = -1
         opts = ss.get('_quick_content_opts_v2391') or []
         if 0 <= i < len(opts):
-            ss['quick_content_v2391'] = str(opts[i]).strip()
-            ss['topic'] = ss['quick_content_v2391']
+            selected = str(opts[i]).strip()
+            ss['quick_content_v2391'] = selected
+            ss['topic'] = selected
             ss['subtopic'] = ''
-            return _pi_primary_direct_topic_to_rph_v25196(cid)
-    return _callback_dispatch_v25196_base(cid, d)
+            # For PI, Topic is the RPT content heading. The next screen must
+            # expose the actual RPT/PdP records under that topic so that SK/SP
+            # is resolved from the selected PdP, not from the topic name alone.
+            return _quick_rpt_for_content_v2391(cid)
+    return _callback_dispatch_v25197_base(cid, d)
+
+APP_VERSION = 'v25.197-PI-RPT-PDP-FLOW'
 
 APP_VERSION = 'v25.196-PI-PRIMARY-DIRECT-VERIFIED-SKSP-RPH'
 # ===== END v25.196 =====
