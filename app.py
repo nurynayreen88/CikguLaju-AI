@@ -32731,70 +32731,91 @@ APP_VERSION='v25.193-BETA-VIP-COPY-FIX'
 CIKGULAJU_PATCH_V25193='REMOVE_VOLUNTARY_DONATION_SENTENCE'
 # ===== END v25.193 =====
 
-# ===== v25.194 ENGLISH Y1/Y2 TEACHER BOOK PRIORITY =====
-# Content-only patch: preserve current RPH layout / Activity labels.
-APP_VERSION='v25.194-ENGLISH-Y12-TB-PRIORITY'
+# ===== v25.194 ENGLISH Y1/Y2 TB-GUIDED ACTIVITY BUILDER =====
+# Teacher's Book is the content anchor; RPH keeps the existing Activity 1-4 layout.
+APP_VERSION='v25.194-ENGLISH-Y12-TB-GUIDED-ACTIVITIES'
 _en194_base=_rph_rows
 
 def _en194_clean(v):
     return ' '.join(str(v or '').split()).strip()
 
-def _en194_lesson_no(st):
-    for k in ('lesson_no','_lesson_no','lesson','textbook_lesson_no','sow_lesson_no','_sow_lesson_no'):
-        v=st.get(k)
-        if v not in (None,''):
-            try: return int(str(v).strip())
-            except Exception: pass
-    return None
+def _en194_sentence(v):
+    v=_en194_clean(v)
+    if not v: return ''
+    return v if v.endswith(('.', '!', '?')) else v+'.'
 
-def _en194_tb_guidance(st):
-    # Prefer guidance already resolved into lesson state by _eng12_material_pack.
-    g=st.get('rph_verified_teacher_guidance')
-    if isinstance(g,dict) and any(_en194_clean(g.get(k)) for k in (
-        'warm_up','student_book_procedure','workbook_procedure','audio_procedure',
-        'checking_feedback','ending_lesson','extension_optional')):
-        return g
-    yl=_eng12_year_label(st)
-    ln=_en194_lesson_no(st)
-    if yl in ('Tahun 1','Tahun 2') and ln is not None:
-        try: return _eng12_teacher_guidance(yl,ln) or {}
-        except Exception: return {}
-    return {}
+def _en194_tb_step(raw, lead='Teacher guides pupils to'):
+    """Turn terse verified TB notes into readable teacher/pupil procedure without inventing lesson content."""
+    x=_en194_clean(raw)
+    if not x: return ''
+    low=x.lower()
+    if low.startswith(('teacher ', 'pupils ', 'students ', 'ask ', 'tell ', 'show ', 'play ', 'listen ', 'read ', 'write ', 'check ', 'review ', 'repeat ', 'model ')):
+        return _en194_sentence(x)
+    return _en194_sentence(f'{lead} {x[:1].lower()+x[1:]}')
 
 def _rph_rows(st, ai_text):
-    r=_en194_base(st,ai_text)
-    if not _is_english_subject(st):
-        return r
-    yl=_eng12_year_label(st)
-    if yl not in ('Tahun 1','Tahun 2'):
-        return r
-    g=_en194_tb_guidance(st)
+    r=_en194_base(st, ai_text)
+    if not _is_english_subject(st): return r
+    try:
+        yl=_eng12_year_label(st)
+        ln=st.get('lesson_no') or st.get('_lesson_no') or st.get('lesson') or st.get('textbook_lesson_no')
+        g=_eng12_teacher_guidance(yl,ln) if yl in ('Tahun 1','Tahun 2') and ln not in (None,'') else {}
+    except Exception:
+        g={}
     if not g:
-        return r  # Non-TB/SOW lesson: preserve the existing specific SOW path.
+        return r
 
-    warm=_en194_clean(g.get('warm_up') or st.get('rph_teacher_warm_up'))
-    sb=_en194_clean(g.get('student_book_procedure') or st.get('rph_teacher_student_book_procedure'))
-    wb=_en194_clean(g.get('workbook_procedure') or st.get('rph_teacher_workbook_procedure'))
-    aud=_en194_clean(g.get('audio_procedure') or st.get('rph_audio_procedure'))
-    chk=_en194_clean(g.get('checking_feedback') or st.get('rph_teacher_checking_feedback'))
-    end=_en194_clean(g.get('ending_lesson') or st.get('rph_teacher_ending_lesson'))
-    ext=_en194_clean(g.get('extension_optional') or st.get('rph_teacher_extension'))
+    warm=_en194_clean(g.get('warm_up'))
+    sb=_en194_clean(g.get('student_book_procedure'))
+    wb=_en194_clean(g.get('workbook_procedure'))
+    aud=_en194_clean(g.get('audio_procedure'))
+    chk=_en194_clean(g.get('checking_feedback'))
+    end=_en194_clean(g.get('ending_lesson'))
+    ext=_en194_clean(g.get('extension_optional'))
+    topic=_en194_clean(st.get('topic') or r.get('TAJUK') or 'the lesson topic')
+    main=_en187_skill_name(st.get('main_skill') or st.get('_sow_skill')) or 'Language'
+    skill=main.lower()
+    materials=_en187_materials(st) or _en194_clean(r.get('BAHAN BANTU MENGAJAR')) or 'the lesson materials'
 
-    # Teacher's Book warm-up has first priority for Set Induction.
-    if warm:
-        r['SET INDUKSI']='5 minutes\n'+warm
-
-    # Keep the current four bold Activity headings; replace CONTENT only.
+    # Preserve existing generic rows as safe fallbacks, but use TB as the content anchor wherever evidence exists.
     old=str(r.get('AKTIVITI UTAMA') or '')
-    import re as _re
-    chunks=_re.split(r'Activity\s+[1-4]\s+[^\n]*\n',old)
-    fallback=[x.strip() for x in chunks[1:5]] if len(chunks)>=5 else ['','','','']
-    while len(fallback)<4: fallback.append('')
+    import re as _re194
+    chunks=_re194.split(r'Activity\s+[1-4]\s+[^\n]*\n', old)
+    fallbacks=[c.strip() for c in chunks[1:5]] if len(chunks)>=5 else []
+    while len(fallbacks)<4: fallbacks.append('')
 
-    a1=sb or fallback[0]
-    a2=' '.join(x for x in (wb,aud) if x).strip() or fallback[1]
-    a3=ext or fallback[2]
-    a4=chk or fallback[3]
+    if warm:
+        r['SET INDUKSI']=_en194_tb_step(warm, 'Teacher activates prior knowledge by asking pupils to')
+
+    # Activity 1: teach/model the actual Student's Book procedure; audio supports it, never stands alone.
+    if sb:
+        a1=_en194_tb_step(sb, 'Teacher uses the Student’s Book to guide pupils to')
+        if aud and aud.lower() not in a1.lower():
+            a1 += ' '+_en194_tb_step(aud, 'Teacher uses the verified audio while pupils')
+    else:
+        a1=fallbacks[0]
+
+    # Activity 2: guided practice from Workbook when available; otherwise continue the verified SB procedure.
+    if wb:
+        a2=_en194_tb_step(wb, 'Pupils complete the Workbook practice while the teacher guides them to')
+    elif sb:
+        a2=f'Pupils repeat the verified {skill} procedure with teacher support, using {materials}. Teacher checks responses before pupils continue.'
+    else:
+        a2=fallbacks[1]
+
+    # Activity 3: only use an explicit TB extension when one exists; otherwise apply the SAME verified task with reduced support.
+    if ext:
+        a3=_en194_tb_step(ext, 'Pupils extend the Teacher’s Book task by')
+    elif sb or wb:
+        a3=f'Pupils apply the same {skill} focus from the verified Teacher’s Book task about {topic} with less teacher support. Teacher monitors and prompts only when needed.'
+    else:
+        a3=fallbacks[2]
+
+    # Activity 4: checking/feedback from TB is assessment evidence, not a generic replacement.
+    if chk:
+        a4=_en194_tb_step(chk, 'Teacher checks pupils’ responses by')
+    else:
+        a4=fallbacks[3]
 
     r['AKTIVITI UTAMA']=(
         'Activity 1 – Introduction and Model (10 minutes)\n'+a1+'\n'
@@ -32802,11 +32823,11 @@ def _rph_rows(st, ai_text):
         'Activity 3 – Apply (15 minutes)\n'+a3+'\n'
         'Activity 4 – Assessment (10 minutes)\n'+a4
     )
-    if end:
-        r['PENUTUP']='5 minutes\n'+end
     if chk:
-        r['PENTAKSIRAN']=chk
+        r['PENTAKSIRAN']=_en194_tb_step(chk, 'Teacher checks pupils’ responses by')
+    if end:
+        r['PENUTUP']=_en194_tb_step(end, 'Teacher ends the lesson by asking pupils to')
     return r
 
-CIKGULAJU_PATCH_V25194='ENGLISH_Y12_TEACHER_BOOK_PRIORITY'
+CIKGULAJU_PATCH_V25194='ENGLISH_Y12_TB_GUIDED_ACTIVITY_BUILDER'
 # ===== END v25.194 =====
