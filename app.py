@@ -32999,3 +32999,74 @@ APP_VERSION = 'v25.197-PI-RPT-PDP-FLOW'
 
 APP_VERSION = 'v25.196-PI-PRIMARY-DIRECT-VERIFIED-SKSP-RPH'
 # ===== END v25.196 =====
+
+# ===== v25.198 PI PDP RESOLVER FIX =====
+def _pi_primary_v25198(ss):
+    return str(ss.get('subject') or '').strip()=='Pendidikan Islam' and str(ss.get('year') or '').strip() in tuple('Tahun %d'%i for i in range(1,7))
+
+def _pi_verified_pdp_rows_v25198(ss):
+    con=_db()
+    try:
+        rows=[dict(r) for r in con.execute("SELECT id,topic,subtopic,sk_code,sk_text,sp_code,sp_text,source,verified FROM curriculum_standards WHERE year_label=? AND subject='Pendidikan Islam' AND verified=1 ORDER BY id",(str(ss.get('year') or '').strip(),)).fetchall()]
+        selected=str(ss.get('quick_content_v2391') or ss.get('topic') or '').strip()
+        if selected:
+            exact=[r for r in rows if _same_content_v2391(r.get('topic'),selected) or _same_content_v2391(r.get('subtopic'),selected)]
+            if exact: rows=exact
+        return rows
+    finally: con.close()
+
+def _pi_pdp_menu_v25198(cid):
+    ss=state.setdefault(cid,{})
+    selected=str(ss.get('quick_content_v2391') or ss.get('topic') or '').strip()
+    rr=[r for r in (_rpt_rows(ss.get('year',''),ss.get('subject','')) or []) if _same_content_v2391(_rpt_unit_key_v2390(r),selected)]
+    if rr:
+        ss['_quick_rpt_rows_content_v2391']=rr
+        return _quick_rpt_for_content_v2391(cid)
+    rows=_pi_verified_pdp_rows_v25198(ss)
+    if not rows:
+        return send(cid,'🚧 <b>PdP Pendidikan Islam yang disahkan untuk pilihan ini belum tersedia.</b>',[[{'text':'⬅️ Tukar Topik','callback_data':'qctxp27_0'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    ss['_pi_pdp_rows_v25198']=rows
+    kb=[]
+    for i,r in enumerate(rows[:80]):
+        sp=str(r.get('sp_code') or '').strip(); focus=str(r.get('subtopic') or r.get('sp_text') or '').strip()
+        label=('PdP %d • %s'%(i+1,sp)) if sp else ('PdP %d'%(i+1))
+        if focus: label+=' • '+focus
+        kb.append([{'text':label[:60],'callback_data':'pipdp198_%d'%i}])
+    kb.append([{'text':'⬅️ Tukar Topik','callback_data':'qctxp27_0'}])
+    return send(cid,'📘 <b>%s</b>\n\nPilih <b>PdP</b>. SK/SP dipadankan automatik daripada rekod disahkan.'%html.escape(selected or 'Pendidikan Islam'),kb)
+
+def _pi_pdp_commit_v25198(cid,idx):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_pi_pdp_rows_v25198') or []
+    if idx<0 or idx>=len(rows): return _pi_pdp_menu_v25198(cid)
+    r=rows[idx]
+    ss['task']='quick_material'; ss['quick_material_flow']=True; ss['rph_mode']='fast_pi_verified_pdp'
+    ss['topic']=str(r.get('topic') or ss.get('topic') or '').strip(); ss['subtopic']=str(r.get('subtopic') or '').strip()
+    one={'sk_code':str(r.get('sk_code') or '').strip(),'sk_text':str(r.get('sk_text') or '').strip(),'sp_code':str(r.get('sp_code') or '').strip(),'sp_text':str(r.get('sp_text') or '').strip()}
+    _commit_multi_sp(ss,[one]); ss['_verified_standard_rows_v2406']=[one]; ss['_pi_primary_direct_verified']=True
+    ss['_pdp_source_trace_v2405']={'year':ss.get('year',''),'subject':'Pendidikan Islam','content':ss.get('topic',''),'source':str(r.get('source') or 'curriculum_standards'),'lesson_no':idx+1,'focus':ss.get('subtopic') or one['sp_text'],'sk_codes':[one['sk_code']],'sp_codes':[one['sp_code']],'lesson_verified':True,'standards_verified':True,'standards_not_applicable':False,'verified':True}
+    ss['_lesson_material_gate_v2406']={'lesson_verified':True,'standards_verified':True,'standards_not_applicable':False,'standard_requirement':None,'page_verified':False,'worksheet_required':True,'bbm_required':True,'activity_book':None,'activity_book_rows':[],'media_required':None,'media_rows':[],'requirements_verified':False,'ready_for_generation':True}
+    if not ss.get('rph_date') or not ss.get('rph_time'):
+        fn=globals().get('_pdp_calendar_month_v2429') or globals().get('_rph_date_picker')
+        if fn: return fn(cid)
+    return _rph_session_question(cid)
+
+_callback_dispatch_v25198_base=callback
+def callback(cid,d):
+    ds=str(d or ''); ss=state.setdefault(cid,{})
+    if _pi_primary_v25198(ss):
+        if ds.startswith('qctx91_'):
+            try: i=int(ds.rsplit('_',1)[1])
+            except Exception: i=-1
+            opts=ss.get('_quick_content_opts_v2391') or []
+            if 0<=i<len(opts):
+                ss['quick_content_v2391']=str(opts[i]).strip(); ss['topic']=ss['quick_content_v2391']; ss['subtopic']=''
+                return _pi_pdp_menu_v25198(cid)
+        if ds.startswith('pipdp198_'):
+            try: i=int(ds.rsplit('_',1)[1])
+            except Exception: i=-1
+            return _pi_pdp_commit_v25198(cid,i)
+    return _callback_dispatch_v25198_base(cid,d)
+
+APP_VERSION='v25.198-PI-PDP-RESOLVER-FIX'
+# ===== END v25.198 =====
