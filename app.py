@@ -3170,6 +3170,16 @@ def _parse_rph_sections(ai_text):
             current = key
             if rest.strip(): out[key] = rest.strip()
             continue
+        # v25.186: keep legacy English source text for quality validation, but
+        # do not render these duplicate sections as continuation of HOTS.
+        legacy_english_heading = keypart.strip().upper() in (
+            'DIFFERENTIATION', 'PRE-LESSON', 'PRE LESSON',
+            'LESSON DEVELOPMENT', 'POST-LESSON', 'POST LESSON',
+            'TEACHING AIDS', 'CCE / EMK', 'CCE/EMK'
+        )
+        if legacy_english_heading:
+            current = None
+            continue
         if current:
             out[current] = (out[current] + '\n' + line).strip()
     return out
@@ -10047,6 +10057,16 @@ def _parse_rph_sections(ai_text):
         if key:
             current = key
             if rest.strip(): out[key] = rest.strip()
+            continue
+        # v25.186: keep legacy English source text for quality validation, but
+        # do not render these duplicate sections as continuation of HOTS.
+        legacy_english_heading = keypart.strip().upper() in (
+            'DIFFERENTIATION', 'PRE-LESSON', 'PRE LESSON',
+            'LESSON DEVELOPMENT', 'POST-LESSON', 'POST LESSON',
+            'TEACHING AIDS', 'CCE / EMK', 'CCE/EMK'
+        )
+        if legacy_english_heading:
+            current = None
             continue
         if current:
             out[current] = (out[current] + '\n' + line).strip()
@@ -20595,7 +20615,7 @@ def _bbm_activity_material_v2398(resource_key):
 # ===== END v23.102 PHYSICAL TEMPLATE SHARD COMPATIBILITY =====
 
 
-CIKGULAJU_PATCH_V25185 = "ENGLISH_HOTS_COMPACT_ONEPAGE"
+CIKGULAJU_PATCH_V25186 = "ENGLISH_HOTS_RENDER_ONLY_FIX"
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.getenv('PORT','10000')))
 
@@ -25014,6 +25034,18 @@ CCE / EMK:
 HOTS / 21ST CENTURY LEARNING:
 {hots}
 
+DIFFERENTIATION:
+{profile['differentiation']}
+
+PRE-LESSON:
+{pre}
+
+LESSON DEVELOPMENT:
+{dev}
+
+POST-LESSON:
+{post}
+
 ASSESSMENT:
 {profile['assessment']}
 
@@ -25249,6 +25281,18 @@ CCE / EMK:
 
 HOTS / 21ST CENTURY LEARNING:
 {str(s.get('hots') or ('Apply / Analyse' if band in ('lower_primary','middle_primary') else 'Apply / Analyse / Evaluate / Create as appropriate'))}
+
+DIFFERENTIATION:
+{profile['differentiation']}
+
+PRE-LESSON:
+{pre}
+
+LESSON DEVELOPMENT:
+{dev}
+
+POST-LESSON:
+{post}
 
 ASSESSMENT:
 {profile['assessment']}
