@@ -34850,3 +34850,26 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2601_stable):
 
 APP_VERSION='v26.01-PI-SAFE-ROLLBACK'
 # ===== END v26.01 =====
+
+
+# ===== v26.02 PI SAFE TEXT NORMALIZATION =====
+# Keep the stable v26.01 renderer unchanged.
+# Normalize only invisible/control Unicode that can render as odd boxes/marks.
+def _pi_safe_unicode_v2602(s):
+    import unicodedata
+    t=unicodedata.normalize('NFC',str(s or ''))
+    # Strip BOM/object/replacement and bidi isolate/control chars only.
+    bad={0xFEFF,0xFFFC,0xFFFD,0x25A1,0x25A0,
+         0x200B,0x200C,0x200D,0x2060,
+         0x202A,0x202B,0x202C,0x202D,0x202E,
+         0x2066,0x2067,0x2068,0x2069}
+    return ''.join(ch for ch in t if ord(ch) not in bad)
+
+_JawiRasterParagraph_v2602_stable=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2602_stable):
+    def __init__(self,text,style):
+        # English activity cleanup remains from v26.01; renderer/layout untouched.
+        super().__init__(_pi_safe_unicode_v2602(text),style)
+
+APP_VERSION='v26.02-PI-SAFE-TEXT-NORMALIZATION'
+# ===== END v26.02 =====
