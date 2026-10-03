@@ -34025,3 +34025,62 @@ app.view_functions['index']=_runtime_index_v25221
 print('v25.221 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.221 =====
 
+
+
+# ===== v25.222 PI RPH SEND RECOVERY =====
+# v25.221 could fail during PDF generation when Noto Naskh was not installed
+# on the Render image. Never return a nonexistent font path.
+def _jawi_font_path_v25213(bold=False):
+    import os, tempfile, urllib.request
+    local = ([
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+    ] if bold else [
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+    ])
+    for p in local:
+        if os.path.isfile(p):
+            return p
+
+    # Cache a Jawi-capable Noto font if the cloud image has no Arabic font package.
+    fn='NotoSansArabic-Bold.ttf' if bold else 'NotoSansArabic-Regular.ttf'
+    dst=os.path.join(tempfile.gettempdir(),fn)
+    if os.path.isfile(dst) and os.path.getsize(dst)>10000:
+        return dst
+    try:
+        url='https://raw.githubusercontent.com/notofonts/arabic/main/fonts/ttf/NotoSansArabic/'+fn
+        urllib.request.urlretrieve(url,dst)
+        if os.path.isfile(dst) and os.path.getsize(dst)>10000:
+            return dst
+    except Exception as e:
+        print('v25.222 JAWI FONT DOWNLOAD FALLBACK',repr(e),flush=True)
+
+    # Absolute last resort must EXIST so RPH generation never dies on font loading.
+    for p in ('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+              '/usr/share/fonts/truetype/freefont/FreeSans.ttf'):
+        if os.path.isfile(p):
+            return p
+    raise RuntimeError('No usable TrueType font found for PI PDF')
+
+APP_VERSION='v25.222-PI-RPH-SEND-RECOVERY'
+def _runtime_index_v25222():
+    import os as _os
+    try:
+        fp=_jawi_font_path_v25213(False)
+    except Exception as e:
+        fp='ERROR:'+str(e)
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_font_resolved':fp,'pi_kbat_pak21_alignment':'right-cell',
+      'pi_year_source':'selected-year','pi_activity_structure':'preserved',
+      'empty_pdf_fields_all_subjects':'blank-no-underscores',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.222'})
+app.view_functions['index']=_runtime_index_v25222
+print('v25.222 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.222 =====
+
