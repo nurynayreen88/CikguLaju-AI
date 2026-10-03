@@ -34084,3 +34084,91 @@ app.view_functions['index']=_runtime_index_v25222
 print('v25.222 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.222 =====
 
+
+
+# ===== v25.223 PI FINAL RENDER TRACE FIX =====
+# Fix at the FINAL values consumed by create_pdf_file, not earlier intermediate layers.
+# Approved Set Induksi/Aktiviti structure remains unchanged.
+
+# 1) Resolve year from the selected verified RPT row/state robustly.
+_rph_rows_v25223_base=_rph_rows
+def _rph_rows(s,ai_text):
+    r=_rph_rows_v25223_base(s,ai_text)
+    if not _pi_primary_v25210(s):
+        return r
+    src=s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+    candidates=[
+        s.get('year'), src.get('year_label'), src.get('year'),
+        s.get('grade'), s.get('selected_year')
+    ]
+    n=None
+    for v in candidates:
+        m=re.search(r'([1-6])',str(v or ''))
+        if m:
+            n=int(m.group(1)); break
+    if n:
+        r['TAHUN/TINGKATAN']={1:'تاهون ١',2:'تاهون ٢',3:'تاهون ٣',
+                              4:'تاهون ٤',5:'تاهون ٥',6:'تاهون ٦'}[n]
+    return r
+
+# 2) Make the Latin KBAT/PAK21 label enter the RTL raster renderer without
+# changing its visible wording. U+061C is an invisible Arabic Letter Mark.
+_rph_display_label_v25223_base=_rph_display_label
+def _rph_display_label(s,key):
+    v=_rph_display_label_v25223_base(s,key)
+    if _pi_primary_v25210(s) and key=='KBAT / PAK21':
+        return '\u061cKBAT / PAK21'
+    return v
+
+# 3) Force a downloaded Noto Sans Arabic for PI raster text when available.
+# This avoids Render silently falling back to a font with incomplete Jawi extensions.
+_jawi_font_path_v25223_base=_jawi_font_path_v25213
+def _jawi_font_path_v25213(bold=False):
+    import os,tempfile,urllib.request
+    fn='NotoSansArabic-Bold.ttf' if bold else 'NotoSansArabic-Regular.ttf'
+    dst=os.path.join(tempfile.gettempdir(),'cikgulaju_'+fn)
+    if os.path.isfile(dst) and os.path.getsize(dst)>10000:
+        return dst
+    urls=[
+      'https://raw.githubusercontent.com/notofonts/arabic/main/fonts/ttf/NotoSansArabic/'+fn,
+      'https://github.com/notofonts/arabic/raw/main/fonts/ttf/NotoSansArabic/'+fn,
+    ]
+    for url in urls:
+        try:
+            urllib.request.urlretrieve(url,dst)
+            if os.path.isfile(dst) and os.path.getsize(dst)>10000:
+                return dst
+        except Exception as e:
+            print('v25.223 font fetch failed',url,repr(e),flush=True)
+    return _jawi_font_path_v25223_base(bold)
+
+# 4) Trace the exact final PI render context in Render logs for any remaining glyph issue.
+_create_pdf_file_v25223_base=create_pdf_file
+def create_pdf_file(s,ai_text,cid):
+    if _pi_primary_v25210(s) and s.get('task')=='rph':
+        try:
+            rr=_rph_rows(s,ai_text)
+            fp=_jawi_font_path_v25213(False)
+            print('v25.223 PI FINAL',
+                  'year_state=',repr(s.get('year')),
+                  'year_pdf=',repr(rr.get('TAHUN/TINGKATAN')),
+                  'font=',fp,
+                  'font_exists=',os.path.isfile(fp),
+                  'font_size=',os.path.getsize(fp) if os.path.isfile(fp) else -1,
+                  flush=True)
+        except Exception as e:
+            print('v25.223 PI TRACE ERROR',repr(e),flush=True)
+    return _create_pdf_file_v25223_base(s,ai_text,cid)
+
+APP_VERSION='v25.223-PI-FINAL-RENDER-TRACE-FIX'
+def _runtime_index_v25223():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_year_fix':'final-rph-row','pi_kbat_label':'rtl-raster-visible-latin',
+      'pi_font_strategy':'forced-NotoSansArabic-download-with-existing-fallback',
+      'pi_activity_structure':'preserved','diagnostic':'v25.223'})
+app.view_functions['index']=_runtime_index_v25223
+print('v25.223 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.223 =====
+
