@@ -34769,3 +34769,51 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2598_base):
 
 APP_VERSION='v25.98-PI-JAWI-GLYPH-FIX'
 # ===== END v25.98 =====
+
+
+# ===== v25.99 PI JAWI GLYPH FALLBACK + GALLERY WALK FIX =====
+# v25.98 forced one Noto font and unintentionally bypassed the older
+# per-paragraph coverage chooser. Restore coverage-based selection.
+# Scope remains PI PDF raster text only.
+
+def _pi_clean_text_v2599(text):
+    import re, unicodedata
+    t=unicodedata.normalize('NFC',str(text or ''))
+    # User-approved terminology: KBAT / PAK21 remain Rumi.
+    # Only the stray English activity term is converted.
+    t=re.sub(r'\(\s*gallery\s+walk\s*\)', '（ݢاليري برجرق）', t, flags=re.I)
+    t=re.sub(r'\bgallery\s+walk\b', 'ݢاليري برجرق', t, flags=re.I)
+    # Strip only literal broken-glyph/object markers, never valid Jawi.
+    return ''.join(ch for ch in t if ch not in ('\ufffd','\ufffc','\u25a1','\u25a0'))
+
+_JawiRasterParagraph_v2599_base=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2599_base):
+    def __init__(self,text,style):
+        cleaned=_pi_clean_text_v2599(text)
+        super().__init__(cleaned,style)
+        # Critical correction: do NOT force one font for every paragraph.
+        # Pick the installed Arabic font with the best/full codepoint coverage
+        # for the actual paragraph, preserving Malay Jawi extensions.
+        self._v2599_font_path=_best_jawi_font_v25226(self.text, bool(getattr(self,'bold',False)))
+
+        # Diagnostic: report any Arabic/Jawi codepoints still not covered.
+        try:
+            cmap=_font_cmap_v25226(self._v2599_font_path)
+            missing=[]
+            import unicodedata
+            for ch in sorted(set(self.text), key=ord):
+                cp=ord(ch)
+                if 0x0600 <= cp <= 0x08FF and cp not in cmap:
+                    missing.append((ch,f'U+{cp:04X}',unicodedata.name(ch,'?')))
+            if missing:
+                print('v25.99 PI MISSING GLYPHS',missing,'FONT',self._v2599_font_path,
+                      'TEXT',repr(self.text),flush=True)
+        except Exception as e:
+            print('v25.99 PI GLYPH CHECK ERROR',repr(e),flush=True)
+
+    def _font(self,px):
+        from PIL import ImageFont
+        return ImageFont.truetype(self._v2599_font_path,px)
+
+APP_VERSION='v25.99-PI-JAWI-FALLBACK-GALLERY-FIX'
+# ===== END v25.99 =====
