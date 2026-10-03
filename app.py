@@ -33663,3 +33663,35 @@ app.view_functions['index']=_runtime_index_v25214
 print('v25.214 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.214 =====
 
+
+
+# ===== v25.215 PI RPH YEAR VALUE IN JAWI =====
+# Bot menu stays Rumi. Inside PI RPH PDF, year values are Jawi.
+_PI_YEAR_JAWI_V25215 = {
+    'Tahun 1':'تاهون ١','Tahun 2':'تاهون ٢','Tahun 3':'تاهون ٣',
+    'Tahun 4':'تاهون ٤','Tahun 5':'تاهون ٥','Tahun 6':'تاهون ٦',
+}
+_RL_Paragraph_v25215 = Paragraph
+
+def Paragraph(text,style,*args,**kwargs):
+    raw=str(text or '')
+    # Exact PDF cell values only; menu text is not passed through ReportLab Paragraph.
+    repl=_PI_YEAR_JAWI_V25215.get(raw.strip())
+    if repl:
+        text=repl
+    return _RL_Paragraph_v25215(text,style,*args,**kwargs)
+
+APP_VERSION='v25.215-PI-RPH-YEAR-JAWI'
+def _runtime_index_v25215():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi',
+      'pi_rph_year_values':'Jawi ١-٦',
+      'pi_pdf_jawi_renderer':'Pillow-RAQM','pi_rph_table_direction':'RTL-labels-right',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.215'})
+app.view_functions['index']=_runtime_index_v25215
+print('v25.215 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.215 =====
+
