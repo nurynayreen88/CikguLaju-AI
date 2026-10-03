@@ -34819,90 +34819,34 @@ APP_VERSION='v25.99-PI-JAWI-FALLBACK-GALLERY-FIX'
 # ===== END v25.99 =====
 
 
-# ===== v26.00 PI FINAL CLEAN RENDERER / ENGLISH ACTIVITY SANITIZER =====
-# Scope strictly Pendidikan Islam PDF text rendering.
-# Preserve approved Roman abbreviations such as KBAT / PAK21 / EMK / RPT.
+# ===== v26.01 PI SAFE ROLLBACK =====
+# Base intentionally returns to v25.99. Do not use the v26.00 renderer.
+# Fix English activity terms BEFORE the existing Jawi renderer sees them,
+# while preserving HTML markup handling from the stable renderer.
 
-def _pi_activity_term_cleanup_v2600(text):
-    import re, unicodedata
-    t=unicodedata.normalize('NFC',str(text or ''))
-    replacements=[
-        (r'\(\s*gallery\s+walk\s*\)', '（ݢاليري برجرق）'),
+def _pi_term_cleanup_v2601(s):
+    import re
+    t=str(s or '')
+    replacements = [
         (r'\bgallery\s+walk\b', 'ݢاليري برجرق'),
-        (r'\(\s*round\s+robin\s*\)', '（ݢيليرن برکومڤولن）'),
         (r'\bround\s+robin\b', 'ݢيليرن برکومڤولن'),
-        (r'\(\s*think[\s-]*pair[\s-]*share\s*\)', '（فيکير، ڤاسڠ، کوڠسي）'),
         (r'\bthink[\s-]*pair[\s-]*share\b', 'فيکير، ڤاسڠ، کوڠسي'),
-        (r'\(\s*role[\s-]*play\s*\)', '（لاكونن ڤرانن）'),
         (r'\brole[\s-]*play\b', 'لاكونن ڤرانن'),
-        (r'\(\s*brainstorm(?:ing)?\s*\)', '（سومبڠ سارن）'),
         (r'\bbrainstorm(?:ing)?\b', 'سومبڠ سارن'),
-        (r'\(\s*pair\s+work\s*\)', '（کرجا برڤاسڠن）'),
         (r'\bpair\s+work\b', 'کرجا برڤاسڠن'),
-        (r'\(\s*group\s+work\s*\)', '（کرجا برکومڤولن）'),
         (r'\bgroup\s+work\b', 'کرجا برکومڤولن'),
     ]
-    for pat,rep in replacements:
-        t=re.sub(pat,rep,t,flags=re.I)
-    # Remove literal broken object/replacement/tofu markers only.
-    t=''.join(ch for ch in t if ch not in ('\ufffd','\ufffc','\u25a1','\u25a0'))
+    for pat, rep in replacements:
+        t = re.sub(pat, rep, t, flags=re.I)
     return t
 
-def _pi_font_covering_text_v2600(text,bold=False):
-    import os
-    # Use one deterministic coverage chooser at the final renderer layer.
-    candidates=[]
-    # First reuse the app's audited installed-font candidates where available.
-    try:
-        p=_best_jawi_font_v25226(text,bold)
-        if p and os.path.isfile(p): candidates.append(p)
-    except Exception:
-        pass
-    extra=[
-      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf' if bold else '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
-      '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf' if bold else '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
-      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf' if bold else '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
-      '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf' if bold else '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
-    ]
-    candidates += [p for p in extra if os.path.isfile(p) and p not in candidates]
-    if not candidates:
-        raise RuntimeError('No Arabic/Jawi font available')
+# Patch the stable PI paragraph constructor only at its input boundary.
+# Crucially, we do not overwrite self.text after the parent constructor,
+# so its HTML/tag parsing remains intact.
+_JawiRasterParagraph_v2601_stable = _JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2601_stable):
+    def __init__(self, text, style):
+        super().__init__(_pi_term_cleanup_v2601(text), style)
 
-    arabic={ord(ch) for ch in str(text) if 0x0600 <= ord(ch) <= 0x08FF}
-    best=candidates[0]; best_missing=10**9
-    for p in candidates:
-        try:
-            cmap=_font_cmap_v25226(p)
-            missing=len(arabic-set(cmap))
-            if missing < best_missing:
-                best,best_missing=p,missing
-            if missing==0: break
-        except Exception:
-            continue
-    if best_missing:
-        try:
-            cmap=_font_cmap_v25226(best)
-            miss=sorted(arabic-set(cmap))
-            print('v26.00 PI uncovered codepoints:',
-                  [f'U+{cp:04X}' for cp in miss],
-                  'font=',best,flush=True)
-        except Exception: pass
-    return best
-
-# Replace the final class symbol once. Older classes remain in source for safety/history,
-# but all later PI construction resolves this final symbol.
-_JawiRasterParagraph_v2600_parent=_JawiRasterParagraph_v25213
-class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2600_parent):
-    def __init__(self,text,style):
-        cleaned=_pi_activity_term_cleanup_v2600(text)
-        super().__init__(cleaned,style)
-        self.text=cleaned
-        self._v2600_font_path=_pi_font_covering_text_v2600(
-            cleaned, bool(getattr(self,'bold',False))
-        )
-    def _font(self,px):
-        from PIL import ImageFont
-        return ImageFont.truetype(self._v2600_font_path,px)
-
-APP_VERSION='v26.00-PI-CLEAN-RENDERER'
-# ===== END v26.00 =====
+APP_VERSION='v26.01-PI-SAFE-ROLLBACK'
+# ===== END v26.01 =====
