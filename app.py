@@ -33695,3 +33695,80 @@ app.view_functions['index']=_runtime_index_v25215
 print('v25.215 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.215 =====
 
+
+
+# ===== v25.216 PI RPH CLEAN LISTS + SP DEDUP =====
+# Presentation-only cleanup for PI RPH:
+# 1) duplicate SK/SP entries are removed by code+normalized text;
+# 2) every new SK/SP code starts a new line;
+# 3) numbered success criteria / activities start on separate lines.
+# Mapping DB is NOT modified.
+
+import re as _re_v25216
+import html as _html_v25216
+
+def _norm_v25216(x):
+    x=_html_v25216.unescape(str(x or ''))
+    x=_re_v25216.sub(r'<[^>]+>',' ',x)
+    x=_re_v25216.sub(r'\s+',' ',x).strip()
+    return x
+
+def _dedup_standard_lines_v25216(text):
+    raw=_norm_v25216(text)
+    if not raw: return raw
+    # Split before curriculum codes such as 1.6.1 / 2.3.4.
+    parts=_re_v25216.split(r'(?=(?<![\d.])\d+\.\d+\.\d+(?:\.\d+)?\b)',raw)
+    parts=[p.strip(' ;،,') for p in parts if p.strip(' ;،,')]
+    if len(parts)<=1:
+        return raw
+    seen=set(); kept=[]
+    for p in parts:
+        m=_re_v25216.match(r'(\d+(?:\.\d+){2,3})\b\s*[:\-–—]?\s*(.*)',p,re.S)
+        if not m:
+            key=('txt',_re_v25216.sub(r'\s+',' ',p).casefold())
+        else:
+            code=m.group(1)
+            body=_re_v25216.sub(r'\s+',' ',m.group(2)).strip().casefold()
+            key=(code,body)
+        if key in seen: continue
+        seen.add(key); kept.append(p)
+    return '<br/>'.join(kept)
+
+def _newlines_numbered_v25216(text):
+    raw=_norm_v25216(text)
+    if not raw: return raw
+    # Put 1., 2., 3. ... on their own lines without touching SK/SP codes.
+    raw=_re_v25216.sub(r'\s+(?=(?:[1-9]|1\d)\.\s)', '<br/>', raw)
+    return raw
+
+_RL_Paragraph_v25216 = Paragraph
+def Paragraph(text,style,*args,**kwargs):
+    raw=str(text or '')
+    plain=_norm_v25216(raw)
+
+    # Standards: multiple SP/SK codes each begin a new line and exact duplicates disappear.
+    if len(_re_v25216.findall(r'(?<![\d.])\d+\.\d+\.\d+(?:\.\d+)?\b',plain)) >= 1:
+        raw=_dedup_standard_lines_v25216(raw)
+
+    # Success criteria and numbered activity content: each item starts a new line.
+    # Avoid converting curriculum decimal codes because regex requires number + ". " pattern.
+    if _re_v25216.search(r'(?:^|\s)(?:[1-9]|1\d)\.\s',plain):
+        raw=_newlines_numbered_v25216(raw)
+
+    return _RL_Paragraph_v25216(raw,style,*args,**kwargs)
+
+APP_VERSION='v25.216-PI-RPH-CLEAN-LISTS-DEDUP-SP'
+def _runtime_index_v25216():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi','pi_rph_year_values':'Jawi ١-٦',
+      'pi_pdf_jawi_renderer':'Pillow-RAQM','pi_rph_table_direction':'RTL-labels-right',
+      'pi_standard_format':'dedup+one-code-per-line',
+      'pi_numbered_format':'one-item-per-line',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.216'})
+app.view_functions['index']=_runtime_index_v25216
+print('v25.216 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.216 =====
+
