@@ -34310,3 +34310,78 @@ app.view_functions['index']=_runtime_index_v25225
 print('v25.225 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.225 =====
 
+
+
+# ===== v25.226 PI DYNAMIC JAWI FONT FALLBACK =====
+# Scope: glyph rendering only. Preserve layout, KBAT alignment, year, SK/SP,
+# Set Induksi and activity numbering exactly as approved.
+
+def _font_cmap_v25226(path):
+    try:
+        from fontTools.ttLib import TTFont
+        if not hasattr(_font_cmap_v25226, 'cache'):
+            _font_cmap_v25226.cache = {}
+        if path not in _font_cmap_v25226.cache:
+            cmap=set()
+            for tb in TTFont(path, lazy=True)['cmap'].tables:
+                cmap.update(tb.cmap.keys())
+            _font_cmap_v25226.cache[path]=cmap
+        return _font_cmap_v25226.cache[path]
+    except Exception:
+        return set()
+
+def _font_candidates_v25226(bold=False):
+    import os
+    cand = ([
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+      _jawi_font_path_v25213(True),
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+    ] if bold else [
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+      _jawi_font_path_v25213(False),
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+    ])
+    return [p for p in dict.fromkeys(cand) if p and os.path.isfile(p)]
+
+def _best_jawi_font_v25226(text, bold=False):
+    # Choose ONE font that supports every Arabic/Jawi character in this paragraph.
+    cps={ord(ch) for ch in str(text or '')
+         if (0x0600 <= ord(ch) <= 0x08FF)}
+    candidates=_font_candidates_v25226(bold)
+    for p in candidates:
+        cmap=_font_cmap_v25226(p)
+        if cps.issubset(cmap):
+            return p
+    # If no single font covers all, choose the font covering the most codepoints.
+    if candidates:
+        return max(candidates, key=lambda p: len(cps & _font_cmap_v25226(p)))
+    return _jawi_font_path_v25213(bold)
+
+_JawiRasterParagraph_v25226_base = _JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v25226_base):
+    def __init__(self, text, style):
+        repaired=_trace_and_repair_jawi_v25225(text)
+        super().__init__(repaired, style)
+        self._v25226_font_path=_best_jawi_font_v25226(self.text, self.bold)
+
+    def _font(self, px):
+        from PIL import ImageFont
+        return ImageFont.truetype(self._v25226_font_path, px)
+
+APP_VERSION='v25.226-PI-DYNAMIC-JAWI-FONT-FALLBACK'
+def _runtime_index_v25226():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_fix_scope':'glyph-only',
+      'pi_font_strategy':'per-paragraph-full-glyph-coverage',
+      'pi_layout':'preserved','pi_kbat_alignment':'preserved-right',
+      'pi_activity_structure':'preserved','diagnostic':'v25.226'})
+app.view_functions['index']=_runtime_index_v25226
+print('v25.226 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.226 =====
+
