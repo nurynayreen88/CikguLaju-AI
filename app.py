@@ -33772,3 +33772,54 @@ app.view_functions['index']=_runtime_index_v25216
 print('v25.216 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.216 =====
 
+
+
+# ===== v25.217 PI RPH EMPTY FIELDS CLEAN =====
+# PI RPH only: do not print underscore placeholders for unselected/empty
+# Tarikh, Hari, Masa, Kelas (and similar blank metadata values).
+_RL_Paragraph_v25217 = Paragraph
+def Paragraph(text,style,*args,**kwargs):
+    raw=str(text or '')
+    # A cell consisting only of underscore/blank placeholder characters becomes truly blank.
+    if _re_v25216.fullmatch(r'\s*(?:_{2,}|＿{2,}|-{3,}|—{2,})\s*', raw):
+        raw=''
+    return _RL_Paragraph_v25217(raw,style,*args,**kwargs)
+
+APP_VERSION='v25.217-PI-RPH-EMPTY-FIELDS-CLEAN'
+def _runtime_index_v25217():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi',
+      'pi_rph_table_direction':'RTL-labels-right',
+      'pi_empty_metadata':'blank-no-underscores',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.217'})
+app.view_functions['index']=_runtime_index_v25217
+print('v25.217 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.217 =====
+
+
+
+# ===== v25.218 ALL SUBJECTS: NO UNDERSCORE PLACEHOLDERS =====
+# Global PDF cleanup: empty metadata/content cells remain blank for ALL subjects.
+# No more ______ / full-width underscores / long dash placeholders.
+_RL_Paragraph_v25218 = Paragraph
+def Paragraph(text,style,*args,**kwargs):
+    raw=str(text or '')
+    if _re_v25216.fullmatch(r'\s*(?:_{2,}|＿{2,}|-{3,}|—{2,})\s*', raw):
+        raw=''
+    return _RL_Paragraph_v25218(raw,style,*args,**kwargs)
+
+APP_VERSION='v25.218-ALL-SUBJECTS-NO-UNDERSCORE-PLACEHOLDERS'
+def _runtime_index_v25218():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'empty_pdf_fields_all_subjects':'blank-no-underscores',
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.218'})
+app.view_functions['index']=_runtime_index_v25218
+print('v25.218 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.218 =====
+
