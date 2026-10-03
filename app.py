@@ -33601,3 +33601,65 @@ app.view_functions['index']=_runtime_index_v25213
 print('v25.213 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.213 =====
 
+
+
+# ===== v25.214 PI RPH RTL TABLE LAYOUT =====
+# For Pendidikan Islam RPH only: reverse 2/3-column metadata/content tables so
+# field labels/titles render on the RIGHT, matching Jawi RTL document convention.
+# Other subjects remain untouched.
+_RL_Table_v25214 = Table
+
+def _pi_pdf_context_v25214():
+    try:
+        # create_pdf_file/rph generation uses the current state object in surrounding call paths.
+        for _name in ('s','ss','state_data','data'):
+            _v=globals().get(_name)
+            if isinstance(_v,dict):
+                subj=str(_v.get('subject') or _v.get('subjek') or '')
+                if subj in ('Pendidikan Islam','Pendidikan_Islam'):
+                    return True
+    except Exception:
+        pass
+    return False
+
+def _row_has_jawi_v25214(row):
+    try:
+        for cell in row:
+            txt=getattr(cell,'text',None)
+            if txt is None: txt=str(cell)
+            if _has_jawi_v25213(txt):
+                return True
+    except Exception:
+        return False
+    return False
+
+def Table(data, colWidths=None, rowHeights=None, *args, **kwargs):
+    # Detect PI/Jawi RPH tables from actual row content rather than changing global UI.
+    # This safely leaves Latin-only/non-PI tables unchanged.
+    rtl = bool(data) and any(_row_has_jawi_v25214(r) for r in data if isinstance(r,(list,tuple)))
+    if rtl and all(isinstance(r,(list,tuple)) for r in data):
+        n=max((len(r) for r in data), default=0)
+        # Main RPH field tables are 2 or 3 columns. Reverse physical columns:
+        # [label | content] -> [content | label].
+        if n in (2,3):
+            data=[list(reversed(r)) for r in data]
+            if isinstance(colWidths,(list,tuple)) and len(colWidths)==n:
+                colWidths=list(reversed(colWidths))
+            if isinstance(rowHeights,(list,tuple)) and len(rowHeights)==len(data):
+                rowHeights=list(rowHeights)
+    return _RL_Table_v25214(data,colWidths=colWidths,rowHeights=rowHeights,*args,**kwargs)
+
+APP_VERSION='v25.214-PI-RPH-RTL-TABLE-LAYOUT'
+def _runtime_index_v25214():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi',
+      'pi_pdf_jawi_renderer':'Pillow-RAQM','pi_rph_table_direction':'RTL-labels-right',
+      'pi_rph_available_after_pdp':True,'worksheet_bbm_generation':'temporarily_hidden',
+      'diagnostic':'v25.214'})
+app.view_functions['index']=_runtime_index_v25214
+print('v25.214 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.214 =====
+
