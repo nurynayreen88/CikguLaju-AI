@@ -3,7 +3,7 @@
 def _cikgulaju_rebuild_split_db():
     import os as _os
     _base=_os.path.dirname(_os.path.abspath(__file__))
-    _name='CikguLaju_Curriculum_Master_v25_89_PI_T1_T6_JAWI_COMPLETE_FINAL.db'
+    _name='CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db'
     _db=_os.path.join(_base,_name)
     if not _os.path.exists(_db):
         _parts=[_os.path.join(_base,_name+'.part1'), _os.path.join(_base,_name+'.part2')]
@@ -33148,7 +33148,7 @@ print('v25.206 STARTUP',
 def _cikgulaju_runtime_db_v2590():
     import os as _os
     base=_os.path.dirname(_os.path.abspath(__file__))
-    name='CikguLaju_Curriculum_Master_v25_90_RUNTIME_PLUS_PI_T1_T6.db'
+    name='CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db'
     full=_os.path.join(base,name)
     p1=full+'.part1'
     p2=full+'.part2'
@@ -33218,7 +33218,7 @@ def _pi_primary_v25210(s):
 def _cikgulaju_runtime_db_v2591():
     import os as _os, sqlite3 as _sqlite3
     base=_os.path.dirname(_os.path.abspath(__file__))
-    name='CikguLaju_Curriculum_Master_v25_91_PI_RPT_T1_T6_COMPLETE.db'
+    name='CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db'
     full=_os.path.join(base,name)
     parts=(full+'.part1',full+'.part2')
     if not _os.path.exists(full):
@@ -34385,3 +34385,58 @@ app.view_functions['index']=_runtime_index_v25226
 print('v25.226 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.226 =====
 
+
+
+# ===== v25.212 ENGLISH Y1-Y3 SAFE MASTER DB =====
+APP_VERSION='v25.212-ENGLISH-Y1-Y3-SAFE-MASTER-V2592'
+
+def _lesson_media_rows_v2407(ss):
+    """v25.212: verified media lookup with English Year/Tahun normalization."""
+    r=ss.get('_verified_lesson_row_v2404') or {}
+    year=str(ss.get('year','') or '')
+    subject=str(ss.get('subject','') or '')
+    unit=str(r.get('unit_title') or ss.get('quick_content_v2391') or '')
+    lesson=str(r.get('lesson_no') or ss.get('textbook_lesson_no') or '')
+    years=[year]
+    if subject.strip().casefold() in ('bahasa inggeris','english'):
+        import re as _re
+        m=_re.search(r'(\d+)',year)
+        if m:
+            years=list(dict.fromkeys([year,'Year '+m.group(1),'Tahun '+m.group(1)]))
+    con=_db()
+    try:
+        qmarks=','.join('?' for _ in years)
+        sql=f"""SELECT * FROM lesson_media_map
+          WHERE year_label IN ({qmarks}) AND subject=? AND unit_title=? AND lesson_no=?
+            AND verified=1 ORDER BY id"""
+        return [dict(x) for x in con.execute(sql,years+[subject,unit,lesson]).fetchall()]
+    except Exception:
+        return []
+    finally:
+        con.close()
+
+def _v2592_release_guard():
+    import sqlite3 as _sqlite3
+    con=_sqlite3.connect(DB_PATH)
+    try:
+        chk=con.execute('PRAGMA integrity_check').fetchone()
+        if not chk or str(chk[0]).lower()!='ok':
+            raise RuntimeError('v25_92 integrity_check failed: '+repr(chk))
+        pi=con.execute("""SELECT COUNT(*) FROM rpt_entries
+          WHERE subject='Pendidikan Islam'
+          AND year_label IN ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6')""").fetchone()[0]
+        if int(pi)!=809:
+            raise RuntimeError('v25_92 PI PdP count != 809: '+str(pi))
+        y3=con.execute("SELECT COUNT(*) FROM english_primary_y3_y6_sow_staging WHERE year_label='Year 3'").fetchone()[0]
+        if int(y3)!=160:
+            raise RuntimeError('v25_92 English Year 3 lesson count != 160: '+str(y3))
+        aud=con.execute("""SELECT COUNT(DISTINCT lesson_no) FROM lesson_media_map
+          WHERE year_label='Year 3' AND subject='Bahasa Inggeris' AND verified=1""").fetchone()[0]
+        if int(aud)!=99:
+            raise RuntimeError('v25_92 English Year 3 verified audio lesson count != 99: '+str(aud))
+    finally:
+        con.close()
+    return True
+
+_v2592_release_guard()
+# ===== END v25.212 =====
