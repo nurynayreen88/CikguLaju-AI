@@ -10673,8 +10673,8 @@ def create_pdf_file(s, ai_text, cid):
             for part in parts:
                 story.append(Paragraph('• '+escape(part), body_style))
             story.append(Spacer(1,2*mm))
-        phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else 'Fasa / Masa')+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else 'Aktiviti Pengajaran & Pembelajaran')+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else 'Catatan')+'</b>',body_style)]]
-        for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]):
+        phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else ('فاسا / ماس' if _pi_primary_v25210(s) else 'Fasa / Masa'))+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else ('اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن' if _pi_primary_v25210(s) else 'Aktiviti Pengajaran & Pembelajaran'))+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else ('چاتتن' if _pi_primary_v25210(s) else 'Catatan'))+'</b>',body_style)]]
+        for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else ([('ست ايندوکسي','SET INDUKSI'),('اکتيۏيتي اوتام','AKTIVITI UTAMA'),('ڤنوتوڤ','PENUTUP')] if _pi_primary_v25210(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')])):
             phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
             val=_rph_activity_heading_markup_v25184(phase_text or '—')
             phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
@@ -10682,7 +10682,7 @@ def create_pdf_file(s, ai_text, cid):
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
         story.extend([pt,Spacer(1,3*mm)])
         tail=[]
-        for label,key in ([('Remedial / Enrichment','PEMULIHAN / PENGAYAAN'),('Reflection','REFLEKSI')] if _is_english_subject(s) else [('Pemulihan / Pengayaan','PEMULIHAN / PENGAYAAN'),('Refleksi','REFLEKSI')]):
+        for label,key in ([('Remedial / Enrichment','PEMULIHAN / PENGAYAAN'),('Reflection','REFLEKSI')] if _is_english_subject(s) else ([('ڤموليهن / ڤڠاياءن','PEMULIHAN / PENGAYAAN'),('رفليكسي','REFLEKSI')] if _pi_primary_v25210(s) else [('Pemulihan / Pengayaan','PEMULIHAN / PENGAYAAN'),('Refleksi','REFLEKSI')])):
             val=rph.get(key) or (('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: __________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: __________________________') if key=='REFLEKSI' else '—')
             tail.append([Paragraph('<b>'+label+'</b>',body_style),Paragraph(escape(val).replace('\n','<br/>'),body_style)])
         tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)])); story.append(tt)
@@ -33209,100 +33209,202 @@ print('v25.208 STARTUP',
       flush=True)
 # ===== END v25.208 =====
 
-# ===== v25.209 PI PRIMARY AUTO SK/SP GATE =====
-# Final choke-point override: Pendidikan Islam Tahun 1-6 must not ask teachers
-# to manually choose SK/SP. Resolve verified rows for the already-selected
-# curriculum topic and continue the existing RPH/PdP metadata flow.
-_show_curriculum_sk_v25209_base = show_curriculum_sk
 
-def _pi_primary_v25209(st):
-    y=str(st.get('year') or '').strip()
-    sub=str(st.get('subject') or '').strip().lower()
-    return y.startswith('Tahun ') and sub in ('pendidikan islam','pendidikan agama islam')
+# ===== v25.210 PI PRIMARY 809 PDP + FULL JAWI RPH =====
+def _pi_primary_v25210(s):
+    return (str((s or {}).get('subject') or '').strip().casefold() in ('pendidikan islam','pendidikan agama islam')
+            and str((s or {}).get('year') or '').strip() in tuple('Tahun '+str(i) for i in range(1,7)))
 
-def _pi_verified_rows_v25209(st):
-    import sqlite3 as _sqlite3
-    y=str(st.get('year') or '').strip()
-    sub=str(st.get('subject') or '').strip()
-    topic=str(st.get('topic') or '').strip()
-    if not (y and sub and topic):
-        return []
-    con=_sqlite3.connect(DB_PATH)
-    con.row_factory=_sqlite3.Row
+def _cikgulaju_runtime_db_v2591():
+    import os as _os, sqlite3 as _sqlite3
+    base=_os.path.dirname(_os.path.abspath(__file__))
+    name='CikguLaju_Curriculum_Master_v25_91_PI_RPT_T1_T6_COMPLETE.db'
+    full=_os.path.join(base,name)
+    parts=(full+'.part1',full+'.part2')
+    if not _os.path.exists(full):
+        if all(_os.path.exists(x) for x in parts):
+            tmp=full+'.tmp'
+            with open(tmp,'wb') as w:
+                for part in parts:
+                    with open(part,'rb') as r:
+                        while True:
+                            b=r.read(1024*1024)
+                            if not b: break
+                            w.write(b)
+            _os.replace(tmp,full)
+        else:
+            raise RuntimeError('v25_91 DB/parts missing')
+    con=_sqlite3.connect(full)
     try:
-        rows=con.execute("""
-            SELECT *
-            FROM curriculum_standards
-            WHERE TRIM(year_label)=TRIM(?)
-              AND LOWER(TRIM(subject)) IN ('pendidikan islam','pendidikan agama islam')
-              AND verified=1
-              AND LOWER(TRIM(topic))=LOWER(TRIM(?))
-            ORDER BY sk_code, sp_code
-        """,(y,topic)).fetchall()
-        return [dict(r) for r in rows]
-    finally:
-        con.close()
+        chk=con.execute('PRAGMA integrity_check').fetchone()
+        if not chk or str(chk[0]).lower()!='ok':
+            raise RuntimeError('v25_91 integrity_check failed: '+repr(chk))
+        n=con.execute("""SELECT COUNT(*) FROM rpt_entries WHERE subject='Pendidikan Islam'
+                         AND year_label IN ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6')""").fetchone()[0]
+        if int(n)!=809: raise RuntimeError('v25_91 PI PdP count != 809: '+str(n))
+    finally: con.close()
+    return full
 
-def _pi_commit_verified_v25209(st, rows):
-    def uniq(vals):
-        out=[]
-        for v in vals:
-            v=str(v or '').strip()
-            if v and v not in out: out.append(v)
-        return out
-    sk_codes=uniq(r.get('sk_code') for r in rows)
-    sp_codes=uniq(r.get('sp_code') for r in rows)
-    sk_texts=uniq(r.get('sk_text') for r in rows)
-    sp_texts=uniq(r.get('sp_text') for r in rows)
-    st['_verified_standard_rows_v2406']=rows
-    st['_pi_primary_verified_rows']=rows
-    st['grouped_sk_codes']=sk_codes
-    st['grouped_sp_codes']=sp_codes
-    st['grouped_sk_texts']=sk_texts
-    st['grouped_sp_texts']=sp_texts
-    st['selected_sk_codes']=sk_codes
-    st['selected_sp_codes']=sp_codes
-    st['sk_code']='; '.join(sk_codes)
-    st['sp_code']='; '.join(sp_codes)
-    st['sk']='; '.join(sk_texts)
-    st['sp']='; '.join(sp_texts)
-    st['skip_manual_sk_sp']=True
-    st['_pi_primary_direct_verified']=True
+DB_PATH=_cikgulaju_runtime_db_v2591()
 
-def show_curriculum_sk(cid, st):
-    if _pi_primary_v25209(st) and (st.get('task')=='quick_material' or st.get('quick_material_flow')):
-        rows=_pi_verified_rows_v25209(st)
-        print('v25.209 PI AUTO SKSP',
-              'year=',st.get('year'),
-              'topic=',st.get('topic'),
-              'rows=',len(rows),
-              flush=True)
-        if rows:
-            _pi_commit_verified_v25209(st, rows)
-            # Continue to the established date/time flow instead of SK/SP buttons.
-            fn=globals().get('_pdp_calendar_month_v2429')
-            if callable(fn):
-                return fn(cid)
-            fn=globals().get('_rph_date_picker')
-            if callable(fn):
-                return fn(cid, st)
-            fn=globals().get('_rph_session_question')
-            if callable(fn):
-                return fn(cid)
-    return _show_curriculum_sk_v25209_base(cid, st)
+def _pi_pdp_rows_v25210(year):
+    con=sqlite3.connect(DB_PATH); con.row_factory=sqlite3.Row
+    try:
+        rows=[dict(r) for r in con.execute("""SELECT * FROM rpt_entries
+          WHERE subject='Pendidikan Islam' AND year_label=? AND verified=1
+          ORDER BY sequence_no,id""",(str(year),)).fetchall()]
+        for r in rows:
+            std=[dict(x) for x in con.execute("""SELECT standard_type,standard_code,standard_text,sequence_no
+                FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
+                ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",(r['id'],)).fetchall()]
+            r['_std']=std
+            det=con.execute("""SELECT jenis,objective_jawi,textbook_unit,textbook_pages,mapping_status
+                 FROM pi_pdp_details_v2591 WHERE year_label=? AND pdp_no=? AND verified=1 LIMIT 1""",
+                 (str(year),r.get('sequence_no'))).fetchone()
+            if det:
+                for _k in det.keys(): r[_k]=det[_k]
+        return rows
+    finally: con.close()
 
-APP_VERSION='v25.209-PI-PRIMARY-AUTO-SKSP'
-# retain runtime diagnostic
-def _runtime_index_v25209():
+def _pi_pdp_menu_v25210(cid,page=0):
+    ss=state.setdefault(cid,{})
+    rows=_pi_pdp_rows_v25210(ss.get('year',''))
+    ss['_pi_pdp_rows_v25210']=rows
+    page=max(0,int(page)); per=18; start=page*per
+    kb=[]
+    for i,r in enumerate(rows[start:start+per],start):
+        seq=r.get('sequence_no'); wk=r.get('week_from')
+        focus=str(r.get('skill_focus') or r.get('topic') or 'ڤنديديقن اسلام').strip()
+        label=f"ڤدڤ {seq}"
+        if wk: label+=f" • مڠݢو {wk}"
+        if focus: label+=f" • {focus}"
+        kb.append([{'text':label[:60],'callback_data':f'pipdp210|{i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️','callback_data':f'pipage210|{page-1}'})
+    if start+per<len(rows): nav.append({'text':'➡️','callback_data':f'pipage210|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ توکر سوبجيک','callback_data':'choose_grade'},{'text':'🏠 مينو اوتام','callback_data':'home'}])
+    return send(cid,f"☪️ <b>ڤنديديقن اسلام • {html.escape(str(ss.get('year') or ''))}</b>\n\nڤيليه <b>ڤدڤ</b> مڠيکوت RPT 2026. SK/SP اکن دڤيليه سچارا اٴوتوماتيک.",kb)
+
+def _pi_commit_pdp_v25210(cid,idx):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_pi_pdp_rows_v25210') or _pi_pdp_rows_v25210(ss.get('year',''))
+    try: r=rows[int(idx)]
+    except Exception: return _pi_pdp_menu_v25210(cid,0)
+    ss['task']='quick_material'; ss['quick_material_flow']=True; ss['rph_mode']='fast_rpt'
+    ss['_quick_selected_rpt_row_v2388']=dict(r); ss['quick_rpt_row']=dict(r)
+    ss['rpt_entry_id']=r.get('id'); ss['pdp_no']=r.get('sequence_no'); ss['lesson_no']=str(r.get('sequence_no') or '')
+    ss['topic']=str(r.get('topic') or r.get('skill_focus') or 'ڤنديديقن اسلام').strip()
+    ss['subtopic']=str(r.get('subtopic') or '').strip()
+    ss['rpt_activity_note']=str(r.get('activity_note') or '').strip()
+    ss['rpt_assessment_note']=str(r.get('assessment_note') or '').strip()
+    ss['rpt_objective_jawi']=str(r.get('objective_jawi') or '').strip()
+    ss['textbook_unit']=str(r.get('textbook_unit') or '').strip()
+    ss['textbook_pages']=str(r.get('textbook_pages') or '').strip()
+    if ss['textbook_pages']:
+        ss['textbook_ref']='بوکو تيکس • '+ss['textbook_pages']
+    ss['_pi_full_jawi_rph_v25210']=True
+    sks=[]; sps=[]; sktexts=[]; sptexts=[]
+    for x in r.get('_std') or []:
+        code=str(x.get('standard_code') or '').strip()
+        txt=str(x.get('standard_text') or '').strip()
+        # DB source text can include its code; keep source wording but avoid duplicated code in display.
+        txt=re.sub(r'^\s*'+re.escape(code)+r'\s*','',txt).strip() if code else txt
+        if x.get('standard_type')=='SK' and code and code not in sks:
+            sks.append(code); sktexts.append(txt)
+        elif x.get('standard_type')=='SP' and code and code not in sps:
+            sps.append(code); sptexts.append(txt)
+    ss['grouped_sk_codes']=sks; ss['selected_sk_codes']=sks; ss['grouped_sk_texts']=sktexts
+    ss['grouped_sp_codes']=sps; ss['selected_sp_codes']=sps; ss['grouped_sp_texts']=sptexts
+    if sks: ss['selected_sk']=sks[0]; ss['sk_code']=sks[0]; ss['sk_text']=sktexts[0]
+    if sps: ss['selected_sp']=sps[0]; ss['sp_code']=sps[0]; ss['sp_text']=sptexts[0]
+    # Khatam/Tasmik rows legitimately have no normal coded SK/SP; retain source row and do not fabricate.
+    ss['_pi_khatam_tasmik_v25210']=not bool(sps)
+    return _lesson_to_class_v2439(cid)
+
+# Full-Jawi display labels for PI only. Internal dictionary keys stay unchanged for compatibility.
+_rph_display_label_v25210_base=_rph_display_label
+_PI_LABELS_V25210={
+'MATA PELAJARAN':'مات ڤلاجرن','TAHUN/TINGKATAN':'تاهون / تيڠکتن','TARIKH':'تاريخ','HARI':'هاري','MASA':'ماس',
+'KELAS':'کلس','BILANGAN MURID':'بيلڠن موريد','TAJUK':'تاجوق','STANDARD KANDUNGAN':'ستاندرد کاندوڠن',
+'STANDARD PEMBELAJARAN':'ستاندرد ڤمبلاجرن','OBJEKTIF PEMBELAJARAN':'اوبجيکتيف ڤمبلاجرن',
+'KRITERIA KEJAYAAN':'کريتيريا کجاياءن','PENGETAHUAN SEDIA ADA':'ڤڠتاهوان سديا ادا',
+'BAHAN BANTU MENGAJAR':'باهن بنتو مڠاجر','EMK / NILAI':'EMK / نيلاي','KBAT / PAK21':'KBAT / PAK21','PENTAKSIRAN':'ڤنتاکسيرن'}
+def _rph_display_label(s,key):
+    if _pi_primary_v25210(s): return _PI_LABELS_V25210.get(key,key)
+    return _rph_display_label_v25210_base(s,key)
+
+_rph_title_v25210_base=_rph_title
+def _rph_title(s):
+    return 'رنچڠن ڤڠاجرن هارين' if _pi_primary_v25210(s) else _rph_title_v25210_base(s)
+
+# Final content layer: use verified Jawi RPT wording as the anchor, never transliterate/invent SK/SP.
+_rph_rows_v25210_base=_rph_rows
+def _rph_rows(s,ai_text):
+    r=_rph_rows_v25210_base(s,ai_text)
+    if not _pi_primary_v25210(s): return r
+    src=s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+    activity=str(src.get('activity_note') or s.get('rpt_activity_note') or '').strip()
+    assess=str(src.get('assessment_note') or s.get('rpt_assessment_note') or '').strip()
+    skcodes=list(s.get('selected_sk_codes') or []); sktexts=list(s.get('grouped_sk_texts') or [])
+    spcodes=list(s.get('selected_sp_codes') or []); sptexts=list(s.get('grouped_sp_texts') or [])
+    if skcodes:
+        r['STANDARD KANDUNGAN']='; '.join((c+' '+(sktexts[i] if i<len(sktexts) else '')).strip() for i,c in enumerate(skcodes))
+    if spcodes:
+        r['STANDARD PEMBELAJARAN']='; '.join((c+' '+(sptexts[i] if i<len(sptexts) else '')).strip() for i,c in enumerate(spcodes))
+    elif s.get('_pi_khatam_tasmik_v25210'):
+        r['STANDARD PEMBELAJARAN']='ختام / تسميع مڠيکوت RPT 2026'
+    # Source RPT activity is already Jawi and is safer than automatic Rumi fallback.
+    if activity:
+        r['AKTIVITI UTAMA']=activity
+    if assess:
+        r['PENTAKSIRAN']=assess
+    # Jawi-only fixed scaffolding around source-specific content.
+    r['MATA PELAJARAN']='ڤنديديقن اسلام'
+    r['OBJEKTIF PEMBELAJARAN']=str(s.get('rpt_objective_jawi') or '').strip() or 'ڤد اخير ڤدڤ، موريد داڤت منچاپاي استاندرد ڤمبلاجرن يڠ دتتڤکن مڠيکوت فوکوس RPT دڠن بيمبيڠن ݢورو.'
+    r['KRITERIA KEJAYAAN']='موريد داڤت مڽلسايکن توݢسن دان منونجوقکن ڤڠواساءن ترهادڤ فوکوس ڤمبلاجرن يڠ دتتڤکن.'
+    r['PENGETAHUAN SEDIA ADA']='موريد مڠايتکن ڤڠتاهوان دان ڤڠالمن سديا ادا دڠن تاجوق ڤمبلاجرن.'
+    r['BAHAN BANTU MENGAJAR']='بوکو تيکس ڤنديديقن اسلام، باهن RPT دان باهن سوکوڠن يڠ برکاءيتن.'
+    r['EMK / NILAI']='نيلاي مورني، ڤڠحياتن اسلام دان عملن دالم کهيدوڤن هارين.'
+    r['KBAT / PAK21']='کومونيکاسي، کولابوراسي، ڤميکيرن کريتيس دان اڤليکاسي.'
+    r['SET INDUKSI']='ݢورو مڠايتکن ڤڠتاهوان سديا ادا موريد دڠن تاجوق دان فوکوس ڤدڤ.'
+    r['PENUTUP']='موريد مروموسکن ڤمبلاجرن دان مڽاتاکن ڤڠاجرن اتاو عملن يڠ بوليه دعملکن دالم کهيدوڤن هارين.'
+    r['PEMULIHAN / PENGAYAAN']='ڤموليهن: موريد يڠ بلوم مڠواساءي دبمبيڠ سمولا. ڤڠاياءن: موريد يڠ مڠواساءي دبرکن توݢسن اڤليکاسي لنجوتن.'
+    r['REFLEKSI']='____ / ____ موريد منچاپاي اوبجيکتيف. ____ / ____ موريد ممرلوکن بيمبيڠن لنجوتن.'
+    return r
+
+# Keep Worksheet and BBM code/assets intact but hide them from generation menu for now.
+_available_materials_v25210_base=_available_materials_v2528
+def _available_materials_v2528(ss):
+    out=_available_materials_v25210_base(ss)
+    return [x for x in out if x not in ('worksheet','bbm')]
+
+_callback_v25210_base=callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds=='sub_Pendidikan Islam' and str(ss.get('year') or '') in tuple('Tahun '+str(i) for i in range(1,7)):
+        ss['subject']='Pendidikan Islam'; ss['task']='quick_material'; ss['quick_material_flow']=True
+        return _pi_pdp_menu_v25210(cid,0)
+    if ds.startswith('pipage210|'):
+        try: pg=int(ds.split('|',1)[1])
+        except Exception: pg=0
+        return _pi_pdp_menu_v25210(cid,pg)
+    if ds.startswith('pipdp210|'):
+        try: idx=int(ds.split('|',1)[1])
+        except Exception: idx=-1
+        return _pi_commit_pdp_v25210(cid,idx)
+    return _callback_v25210_base(cid,d)
+
+APP_VERSION='v25.210-PI-809PDP-FULL-JAWI-RPH'
+
+def _runtime_index_v25210():
     import os as _os
-    return jsonify({
-        'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
-        'module_file':_os.path.abspath(__file__),
-        'db_path':str(globals().get('DB_PATH','')),
-        'db_exists':_os.path.exists(str(globals().get('DB_PATH',''))),
-        'callback_name':getattr(globals().get('callback'),'__name__',None),
-        'diagnostic':'v25.209'
-    })
-app.view_functions['index']=_runtime_index_v25209
-print('v25.209 STARTUP','DB_PATH=',DB_PATH,flush=True)
-# ===== END v25.209 =====
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_rph_script':'Jawi','worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.210'})
+app.view_functions['index']=_runtime_index_v25210
+print('v25.210 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.210 =====
+
