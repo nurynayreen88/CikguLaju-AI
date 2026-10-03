@@ -33823,3 +33823,82 @@ app.view_functions['index']=_runtime_index_v25218
 print('v25.218 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.218 =====
 
+
+
+# ===== v25.219 PI: SP DEDUP + ACTIVITY NUMBERING + JAWI FONT =====
+# Keep v25.218 layout. Fix three visible PI RPH defects:
+# - one SP code appears once only;
+# - numbered activity lists are normalized to 1,2,3... without a missing first item;
+# - prefer Noto Sans Arabic for complete modern Arabic/Jawi shaping.
+
+def _dedup_standard_lines_v25216(text):
+    raw=_norm_v25216(text)
+    if not raw: return raw
+    parts=_re_v25216.split(r'(?=(?<![\d.])\d+\.\d+\.\d+(?:\.\d+)?\b)',raw)
+    parts=[p.strip(' ;،,') for p in parts if p.strip(' ;،,')]
+    if len(parts)<=1: return raw
+    seen_codes=set(); kept=[]
+    for p in parts:
+        m=_re_v25216.match(r'(\d+(?:\.\d+){2,3})\b\s*[:\-–—]?\s*(.*)',p,_re_v25216.S)
+        if m:
+            code=m.group(1)
+            if code in seen_codes:
+                continue
+            seen_codes.add(code)
+        kept.append(p)
+    return '<br/>'.join(kept)
+
+def _newlines_numbered_v25216(text):
+    raw=_norm_v25216(text)
+    if not raw: return raw
+    # Split existing numbered prose, retain item bodies, then renumber consecutively.
+    parts=_re_v25216.split(r'(?:^|\s)(?=(?:[1-9]|1\d)\.\s)',raw)
+    parts=[p.strip() for p in parts if p.strip()]
+    numbered=[]
+    prefix=[]
+    for p in parts:
+        m=_re_v25216.match(r'(?:[1-9]|1\d)\.\s*(.*)',p,_re_v25216.S)
+        if m: numbered.append(m.group(1).strip())
+        else: prefix.append(p)
+    if numbered:
+        rows=[]
+        if prefix: rows.append(' '.join(prefix))
+        rows.extend(f'{i}. {body}' for i,body in enumerate(numbered,1))
+        return '<br/>'.join(rows)
+    return raw
+
+def _jawi_font_path_v25213(bold=False):
+    import os, tempfile, urllib.request
+    # Prefer Noto Sans Arabic: strong Arabic/Jawi glyph coverage and reliable RAQM shaping.
+    candidates=([
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+      '/usr/share/fonts/opentype/noto/NotoSansArabic-Bold.ttf',
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+    ] if bold else [
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+      '/usr/share/fonts/opentype/noto/NotoSansArabic-Regular.ttf',
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+    ])
+    for p in candidates:
+        if os.path.exists(p): return p
+    fn='NotoSansArabic-Bold.ttf' if bold else 'NotoSansArabic-Regular.ttf'
+    dst=os.path.join(tempfile.gettempdir(),fn)
+    if not os.path.exists(dst):
+        url='https://raw.githubusercontent.com/notofonts/arabic/main/fonts/ttf/NotoSansArabic/'+fn
+        urllib.request.urlretrieve(url,dst)
+    return dst
+
+APP_VERSION='v25.219-PI-SP-ACTIVITY-FONT-FIX'
+def _runtime_index_v25219():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_font':'Noto Sans Arabic','pi_sp_dedup':'by-code',
+      'pi_activity_numbering':'normalized-from-1',
+      'empty_pdf_fields_all_subjects':'blank-no-underscores',
+      'pi_rph_table_direction':'RTL-labels-right',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.219'})
+app.view_functions['index']=_runtime_index_v25219
+print('v25.219 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.219 =====
+
