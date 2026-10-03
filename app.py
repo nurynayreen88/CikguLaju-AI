@@ -34725,3 +34725,47 @@ def show_curriculum_sp(cid, sk_index):
 
 APP_VERSION='v25.97-Y3-AUTO-SK-SP'
 # ===== END v25.97 =====
+
+
+# ===== v25.98 PI JAWI TOFU-BOX FIX =====
+# Scope: Pendidikan Islam raster glyph rendering only.
+# English v25.97 flow/audio/book refs and all non-PI LTR rendering remain untouched.
+
+def _pi_jawi_font_v2598(bold=False):
+    import os
+    # Noto Naskh Arabic in the runtime has full coverage for core Malay Jawi
+    # letters (ڠ ڽ ڤ چ ݢ ۏ). Prefer it consistently instead of mixing fonts.
+    candidates = ([
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-SemiBold.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Medium.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+    ])
+    for p in candidates:
+        if os.path.isfile(p):
+            return p
+    return _best_jawi_font_v25226('ڠڽڤچݢۏ', bold)
+
+def _pi_clean_tofu_v2598(text):
+    import unicodedata
+    t=unicodedata.normalize('NFC',str(text or ''))
+    # Remove only literal replacement/tofu artifacts already present in source.
+    # Never remove valid Arabic/Jawi letters.
+    return ''.join(ch for ch in t if ch not in ('\ufffd','\ufffc','\u25a1','\u25a0'))
+
+_JawiRasterParagraph_v2598_base=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2598_base):
+    def __init__(self,text,style):
+        cleaned=_pi_clean_tofu_v2598(text)
+        super().__init__(cleaned,style)
+        self._v2598_font_path=_pi_jawi_font_v2598(bool(getattr(self,'bold',False)))
+
+    def _font(self,px):
+        from PIL import ImageFont
+        return ImageFont.truetype(self._v2598_font_path,px)
+
+APP_VERSION='v25.98-PI-JAWI-GLYPH-FIX'
+# ===== END v25.98 =====
