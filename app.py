@@ -34680,3 +34680,48 @@ def _en3_book_refs_v2595(r):
 
 APP_VERSION='v25.96-Y3-BOOK-PAGE-QA'
 # ===== END v25.96 =====
+
+
+# ===== v25.97 ENGLISH YEAR 3 HARD AUTO SK/SP LOCK =====
+def _en3_auto_standard_guard_v2597(ss):
+    if str(ss.get('subject') or '').strip().lower() not in ('english','bahasa inggeris'):
+        return False
+    if _english_primary_year_number_v2517(ss.get('year')) != 3:
+        return False
+    lesson=ss.get('lesson_no') or ss.get('lesson') or ss.get('textbook_lesson_no')
+    if not lesson:
+        return False
+    ok=_english_y3_y6_apply_sow_v2517(ss,lesson)
+    if ok:
+        ss['requires_teacher_standard_selection']=False
+        ss['auto_sow_mapping']=True
+        ss['skip_manual_sk_sp']=True
+        ss['teacher_select_standards']=False
+        ss['manual_standard_selection']=False
+    return bool(ok)
+
+# If any older route tries to open SP selection for English Y3, suppress it and
+# continue with the lesson's exact SOW mapping instead.
+_render_rph_sp_multiselect_before_v2597=_render_rph_sp_multiselect
+def _render_rph_sp_multiselect(cid):
+    ss=state.setdefault(cid,{})
+    if _en3_auto_standard_guard_v2597(ss):
+        return _lesson_to_class_v2439(cid)
+    return _render_rph_sp_multiselect_before_v2597(cid)
+
+_show_rph_sp_before_v2597=show_rph_sp
+def show_rph_sp(cid, sk_index):
+    ss=state.setdefault(cid,{})
+    if _en3_auto_standard_guard_v2597(ss):
+        return _lesson_to_class_v2439(cid)
+    return _show_rph_sp_before_v2597(cid,sk_index)
+
+_show_curriculum_sp_before_v2597=show_curriculum_sp
+def show_curriculum_sp(cid, sk_index):
+    ss=state.setdefault(cid,{})
+    if _en3_auto_standard_guard_v2597(ss):
+        return _lesson_to_class_v2439(cid)
+    return _show_curriculum_sp_before_v2597(cid,sk_index)
+
+APP_VERSION='v25.97-Y3-AUTO-SK-SP'
+# ===== END v25.97 =====
