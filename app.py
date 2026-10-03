@@ -34241,3 +34241,72 @@ app.view_functions['index']=_runtime_index_v25224
 print('v25.224 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.224 =====
 
+
+
+# ===== v25.225 PI GLYPH TRACE + SAFE SANITIZE =====
+# Scope remains glyph-only. No changes to year/layout/SK-SP/activity/KBAT.
+
+def _trace_and_repair_jawi_v25225(text, font_path=None):
+    import unicodedata
+    t=unicodedata.normalize('NFC',str(text or ''))
+    # These are non-letter artifacts that can arrive from copied/OCR/source text
+    # and display as tofu boxes. Remove only controls/replacement/object markers;
+    # NEVER remove Arabic/Jawi letters.
+    cleaned=[]
+    bad=[]
+    for ch in t:
+        cp=ord(ch)
+        cat=unicodedata.category(ch)
+        # preserve line/tab and Arabic Letter Mark used for RTL label handling
+        if ch in ('\n','\t','\u061c'):
+            cleaned.append(ch); continue
+        if ch in ('\ufffd','\ufffc','\u25a1','\u25a0'):
+            bad.append((ch,f'U+{cp:04X}',unicodedata.name(ch,'?')))
+            continue
+        # Strip invisible format/control chars except ZWJ/ZWNJ, which Arabic shaping may use.
+        if cat in ('Cc','Cf') and ch not in ('\u200c','\u200d'):
+            bad.append((ch,f'U+{cp:04X}',unicodedata.name(ch,'?')))
+            continue
+        cleaned.append(ch)
+    if bad:
+        print('v25.225 REMOVED NONLETTER GLYPHS',bad,'FROM',repr(t),flush=True)
+    return ''.join(cleaned)
+
+# Replace the earlier repair function at the final raster-text entry point.
+def _repair_jawi_text_v25224(text):
+    return _trace_and_repair_jawi_v25225(text)
+
+# Add exact codepoint diagnostics for every Arabic/Jawi character unsupported
+# by the font actually selected on Render.
+_JawiRasterParagraph_v25225_base=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v25225_base):
+    def __init__(self,text,style):
+        repaired=_trace_and_repair_jawi_v25225(text)
+        try:
+            fp=_jawi_font_path_v25213(False)
+            unsupported=[]
+            for ch in set(repaired):
+                cp=ord(ch)
+                if (0x0600 <= cp <= 0x08FF) and not _font_supports_v25224(fp,ch):
+                    import unicodedata
+                    unsupported.append((ch,f'U+{cp:04X}',unicodedata.name(ch,'?')))
+            if unsupported:
+                print('v25.225 UNSUPPORTED JAWI CODEPOINTS',
+                      unsupported,'FONT',fp,'TEXT',repr(repaired),flush=True)
+        except Exception as e:
+            print('v25.225 GLYPH TRACE ERROR',repr(e),flush=True)
+        super().__init__(repaired,style)
+
+APP_VERSION='v25.225-PI-GLYPH-TRACE-SANITIZE'
+def _runtime_index_v25225():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_fix_scope':'glyph-only','pi_glyph_trace':'exact-codepoints-in-render-log',
+      'pi_nonletter_artifacts':'sanitized','pi_layout':'preserved',
+      'pi_activity_structure':'preserved','pi_kbat_alignment':'preserved-right',
+      'diagnostic':'v25.225'})
+app.view_functions['index']=_runtime_index_v25225
+print('v25.225 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.225 =====
+
