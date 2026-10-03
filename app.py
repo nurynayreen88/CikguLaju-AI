@@ -34664,3 +34664,19 @@ def _send_pdp_reference_v2538(cid,ss):
 
 APP_VERSION='v25.95-Y3-VERIFIED-BOOK-REFERENCES'
 # ===== END v25.95 =====
+
+
+# ===== v25.96 YEAR 3 VERIFIED STUDENT'S BOOK PAGE LOCK =====
+_EN3_SB_VERIFIED_V2596={1: 'p.5 Activity 1', 2: 'p.5 Activity 2', 3: 'p.6 Activity 1; p.7 Activity 2', 6: 'p.7 Activity 3', 7: 'p.7 Activity 4', 8: 'p.8 Activity 1; p.9 Activity 2', 9: 'p.9 Activities 3–4', 11: 'p.9 Activity 5', 12: 'p.10 Activity 1', 13: 'p.11 Activity 1', 14: 'p.11 Activity 1', 15: 'pp.12–13', 16: 'p.14 Activities 1–3', 17: 'p.15 Activity 1', 18: 'p.15 Activities 1–2', 19: 'pp.16–17 Activities 1–2', 22: 'p.17 Activity 3', 23: 'p.17 Activity 4', 24: 'pp.18–19 Activities 1–2', 25: 'p.19 Activity 3', 27: 'p.19 Activity 4', 28: 'p.20 Activity 1', 29: 'p.115', 30: 'p.21 Activity 1', 31: 'pp.22–23 Activity 1', 32: 'p.24 Revision Activity 1', 33: 'p.25 Activity 1', 34: 'p.25 Activity 2', 35: 'pp.26–27 Activity 1', 36: 'pp.26–27 Activity 2', 37: 'p.26', 38: 'p.27 Activity 3', 39: 'p.27 Activity 4', 40: 'pp.28–29 Activities 1–2', 41: 'p.29 Activity 3', 43: 'p.29 Activity 3', 44: 'pp.29–30 Activities 4 & 1', 45: 'pp.32–33 Activity 1', 48: 'p.34 Revision', 49: 'p.35 Activity 1', 50: 'p.35 Activities 1–2', 51: 'p.36 Activity 1', 52: 'pp.36–37 Activity 2', 54: 'p.37 Activity 3', 55: 'p.37 Activities 4–5', 56: 'pp.38–39 Activities 1–2', 57: 'p.38 model texts', 59: 'p.116 Activity 2', 60: 'p.39 Activities 3–4', 61: 'p.40 Activity 1', 62: 'p.41 project', 64: 'p.44 Revision', 65: 'p.45 Activity 1', 66: 'p.45 Activities 1–2', 67: 'p.46 Activity 1', 68: 'pp.46–47 Activity 2', 70: 'p.47 Activity 3', 71: 'p.47 Activity 4', 72: 'pp.48–49 Activities 1–2', 75: 'p.49 Activity 3; p.50 Activity 1', 76: 'pp.48–49 Activity 4', 77: 'p.51 Activity 1', 78: 'p.51 Activity 1 / Writing Tip', 79: 'pp.52–53 Story time', 89: 'p.58 model text', 96: 'p.64 Revision', 112: 'p.131 review/cards', 128: 'p.84 Revision', 130: 'p.85 Activity 2', 134: 'p.87 Activity 3', 135: 'p.87 Activity 4', 137: 'p.89 Activities 2–3', 139: 'p.90', 140: 'p.90 Activity 1', 141: 'p.91 Writing Tip', 142: 'p.91 writing task', 143: 'pp.92–93 story', 144: 'pp.94, 85, 87, 91 Revision', 150: 'p.97 Activity 3', 151: 'p.97 Activity 4', 152: 'pp.98–99 Activity 1', 153: 'p.99 questions', 155: 'p.99 Activity 3', 156: 'p.100 Activity 1', 157: 'p.101 Activities 1–2', 160: 'p.119 project'}
+_en3_book_refs_before_v2596=_en3_book_refs_v2595
+def _en3_book_refs_v2595(r):
+    base=_en3_book_refs_before_v2596(r)
+    try: ln=int((r or {}).get('lesson_no') or 0)
+    except Exception: ln=0
+    # Only display SB when the lesson has an explicit verified SOW reference.
+    v=_EN3_SB_VERIFIED_V2596.get(ln,'')
+    base['sb']=[v] if v else []
+    return base
+
+APP_VERSION='v25.96-Y3-BOOK-PAGE-QA'
+# ===== END v25.96 =====
