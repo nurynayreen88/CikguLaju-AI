@@ -33481,3 +33481,123 @@ app.view_functions['index']=_runtime_index_v25212
 print('v25.212 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.212 =====
 
+
+
+# ===== v25.213 PI JAWI PDF RENDER FIX =====
+# UI remains Rumi. Only PDF text containing Arabic/Jawi is rendered through
+# Pillow/RAQM so joining, RTL order and Jawi glyphs are preserved.
+_RL_Paragraph_v25213 = Paragraph
+
+def _jawi_font_path_v25213(bold=False):
+    import os, tempfile, urllib.request
+    names = ([
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+    ])
+    for p in names:
+        if os.path.exists(p):
+            return p
+    # Render fallback for minimal cloud images: cache an open Noto font in /tmp.
+    fn='NotoSansArabic-Bold.ttf' if bold else 'NotoSansArabic-Regular.ttf'
+    dst=os.path.join(tempfile.gettempdir(),fn)
+    if not os.path.exists(dst):
+        url='https://raw.githubusercontent.com/notofonts/arabic/main/fonts/ttf/NotoSansArabic/'+fn
+        urllib.request.urlretrieve(url,dst)
+    return dst
+
+def _has_jawi_v25213(text):
+    import re
+    plain=re.sub(r'<[^>]+>','',str(text or ''))
+    return bool(re.search(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]',plain))
+
+class _JawiRasterParagraph_v25213(Flowable):
+    def __init__(self,text,style):
+        Flowable.__init__(self)
+        import html as _html, re
+        self.style=style
+        raw=str(text or '').replace('<br/>','\n').replace('<br>','\n')
+        self.bold=bool(re.fullmatch(r'\s*<b>.*</b>\s*',raw,re.S))
+        raw=re.sub(r'<[^>]+>','',raw)
+        self.text=_html.unescape(raw)
+        self._img=None; self._draw_w=1; self._draw_h=1
+
+    def _font(self,px):
+        from PIL import ImageFont
+        return ImageFont.truetype(_jawi_font_path_v25213(self.bold),px)
+
+    def _measure(self,draw,text,font):
+        try:
+            b=draw.textbbox((0,0),text,font=font,direction='rtl',language='ms')
+        except Exception:
+            b=draw.textbbox((0,0),text,font=font)
+        return max(0,b[2]-b[0])
+
+    def _wrap_line(self,draw,line,font,maxpx):
+        words=line.split()
+        if not words: return ['']
+        lines=[]; cur=''
+        for w in words:
+            test=w if not cur else cur+' '+w
+            if cur and self._measure(draw,test,font)>maxpx:
+                lines.append(cur); cur=w
+            else: cur=test
+        if cur: lines.append(cur)
+        return lines
+
+    def wrap(self,availWidth,availHeight):
+        from PIL import Image, ImageDraw
+        from reportlab.lib.utils import ImageReader
+        scale=3.0
+        fs=max(7.0,float(getattr(self.style,'fontSize',9.5)))
+        leading=max(fs*1.25,float(getattr(self.style,'leading',fs*1.3)))
+        font=self._font(max(18,int(fs*scale)))
+        dummy=Image.new('RGBA',(16,16),(255,255,255,0)); d=ImageDraw.Draw(dummy)
+        maxpx=max(10,int(availWidth*scale)-8)
+        lines=[]
+        for logical in self.text.split('\n'):
+            lines.extend(self._wrap_line(d,logical,font,maxpx))
+        if not lines: lines=['']
+        hpx=max(1,int(len(lines)*leading*scale+8))
+        wpx=max(1,int(availWidth*scale))
+        im=Image.new('RGBA',(wpx,hpx),(255,255,255,0)); dr=ImageDraw.Draw(im)
+        y=0
+        for line in lines:
+            try:
+                dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra',
+                        direction='rtl',language='ms')
+            except Exception:
+                dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra')
+            y+=int(leading*scale)
+        self._img=ImageReader(im)
+        self._draw_w=availWidth
+        self._draw_h=hpx/scale
+        return availWidth,self._draw_h
+
+    def draw(self):
+        if self._img:
+            self.canv.drawImage(self._img,0,0,width=self._draw_w,height=self._draw_h,
+                                mask='auto',preserveAspectRatio=True)
+
+def Paragraph(text,style,*args,**kwargs):
+    if _has_jawi_v25213(text):
+        return _JawiRasterParagraph_v25213(text,style)
+    return _RL_Paragraph_v25213(text,style,*args,**kwargs)
+
+APP_VERSION='v25.213-PI-JAWI-PDF-RENDER-FIX'
+def _runtime_index_v25213():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi','pi_pdf_jawi_renderer':'Pillow-RAQM',
+      'pi_rph_available_after_pdp':True,'worksheet_bbm_generation':'temporarily_hidden',
+      'diagnostic':'v25.213'})
+app.view_functions['index']=_runtime_index_v25213
+print('v25.213 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.213 =====
+
