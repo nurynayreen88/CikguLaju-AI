@@ -33902,3 +33902,54 @@ app.view_functions['index']=_runtime_index_v25219
 print('v25.219 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.219 =====
 
+
+
+# ===== v25.220 PI GLYPH + KBAT/PAK21 ALIGN FIX =====
+# Do NOT change Set Induksi / Aktiviti Utama numbering structure.
+# Fix only:
+# 1) unsupported/private glyph artifacts in Jawi source text;
+# 2) KBAT / PAK21 label alignment to the right in PI RTL tables.
+
+def _clean_jawi_glyphs_v25220(text):
+    import unicodedata, re
+    t=str(text or '')
+    # Normalize presentation forms/compatibility variants into normal Arabic/Jawi codepoints.
+    t=unicodedata.normalize('NFKC',t)
+    # Remove Unicode replacement/object/private-use glyphs that render as □.
+    t=t.replace('\ufffd','').replace('\ufffc','')
+    t=''.join(ch for ch in t if not (0xE000 <= ord(ch) <= 0xF8FF))
+    # Collapse only accidental spacing introduced by removed unsupported glyphs.
+    t=re.sub(r'[ \t]{2,}',' ',t)
+    return t
+
+# Wrap the current v25.219 Paragraph, preserving all existing list/dedup/Jawi behavior.
+_Paragraph_v25220_base = Paragraph
+def Paragraph(text,style,*args,**kwargs):
+    raw=_clean_jawi_glyphs_v25220(text)
+    # PI label KBAT/PAK21 is Latin, so force its paragraph alignment right.
+    if raw.strip().upper().replace(' ','') in ('KBAT/PAK21','KBAT/PAK-21'):
+        try:
+            from copy import copy
+            st=copy(style)
+            st.alignment=2  # reportlab TA_RIGHT
+            style=st
+        except Exception:
+            pass
+    return _Paragraph_v25220_base(raw,style,*args,**kwargs)
+
+APP_VERSION='v25.220-PI-GLYPH-KBAT-ALIGN-FIX'
+def _runtime_index_v25220():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_font':'Noto Sans Arabic + Unicode normalization',
+      'pi_unsupported_glyph_cleanup':True,
+      'pi_kbat_pak21_alignment':'right',
+      'pi_activity_structure':'preserved',
+      'pi_rph_table_direction':'RTL-labels-right',
+      'empty_pdf_fields_all_subjects':'blank-no-underscores',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.220'})
+app.view_functions['index']=_runtime_index_v25220
+print('v25.220 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.220 =====
+
