@@ -34460,3 +34460,96 @@ def create_pdf_file(s, ai_text, cid):
 
 APP_VERSION='v25.93-PI-RTL-JAWI-OTHERS-LTR'
 # ===== END v25.93 =====
+
+
+# ===== v25.94 ENGLISH VERIFIED MEDIA FILE DELIVERY =====
+# Send the actual verified lesson_media_map file, not only its title/reference.
+def _send_verified_media_rows_v2594(cid, rows):
+    import os as _os, tempfile as _tempfile, requests as _requests
+    token=(globals().get("BOT_TOKEN") or _os.environ.get("BOT_TOKEN") or "").strip()
+    if not token:
+        print("v25.94 BOT_TOKEN missing", flush=True)
+        return False
+    sent=0
+    for r in (rows or []):
+        if not int(r.get("verified") or 0):
+            continue
+        fid=str(r.get("storage_file_id") or "").strip()
+        if not fid:
+            continue
+        title=str(r.get("title") or r.get("name") or "English Audio").strip()
+        tpath=""
+        try:
+            rr=_requests.get(
+                "https://drive.usercontent.google.com/download",
+                params={"id":fid,"export":"download","confirm":"t"},
+                timeout=90,stream=True,allow_redirects=True
+            )
+            ctype=(rr.headers.get("content-type") or "").lower()
+            if not rr.ok or "text/html" in ctype:
+                print("v25.94 Drive audio download failed",title,rr.status_code,ctype,flush=True)
+                continue
+            suffix=".mp3"
+            with _tempfile.NamedTemporaryFile(delete=False,suffix=suffix) as tmp:
+                for chunk in rr.iter_content(256*1024):
+                    if chunk: tmp.write(chunk)
+                tpath=tmp.name
+            if _os.path.getsize(tpath)<1000:
+                print("v25.94 audio too small",title,flush=True)
+                continue
+
+            # Prefer Telegram's audio player. Fall back to document if Telegram
+            # rejects the media as playable audio.
+            with open(tpath,"rb") as fh:
+                tr=_requests.post(
+                    f"https://api.telegram.org/bot{token}/sendAudio",
+                    data={"chat_id":str(cid),"caption":"🎧 "+title,
+                          "title":title,"performer":"CikguLaju English"},
+                    files={"audio":(title.replace("/","-")+".mp3",fh,"audio/mpeg")},
+                    timeout=120
+                )
+            if tr.ok:
+                sent+=1
+                continue
+            print("v25.94 sendAudio fallback",title,tr.status_code,tr.text[:300],flush=True)
+            with open(tpath,"rb") as fh:
+                tr=_requests.post(
+                    f"https://api.telegram.org/bot{token}/sendDocument",
+                    data={"chat_id":str(cid),"caption":"🎧 "+title},
+                    files={"document":(title.replace("/","-")+".mp3",fh,"audio/mpeg")},
+                    timeout=120
+                )
+            if tr.ok: sent+=1
+            else: print("v25.94 sendDocument failed",title,tr.status_code,tr.text[:300],flush=True)
+        except Exception as e:
+            print("v25.94 verified media error",title,repr(e),flush=True)
+        finally:
+            if tpath:
+                try: _os.unlink(tpath)
+                except Exception: pass
+    return sent>0
+
+_send_reference_material_v2594_base=_send_reference_material_v2528
+def _send_reference_material_v2528(cid,ss,key):
+    if key=="media":
+        # Y1/Y2 keep their proven audio resolver.
+        if ss.get("audio_status")=="VERIFIED_AUDIO" and ss.get("audio_reference"):
+            try:
+                if _eng12_send_verified_audio(cid,ss.get("audio_reference")):
+                    return True
+            except Exception as e:
+                print("v25.94 eng12 audio fallback:",repr(e),flush=True)
+
+        # Y3+ verified lesson_media_map rows carry the real Google Drive file ID.
+        try:
+            rows=_lesson_media_rows_v2407(ss) or []
+        except Exception as e:
+            print("v25.94 media lookup:",repr(e),flush=True)
+            rows=[]
+        if rows:
+            return _send_verified_media_rows_v2594(cid,rows)
+        return False
+    return _send_reference_material_v2594_base(cid,ss,key)
+
+APP_VERSION='v25.94-Y3-VERIFIED-AUDIO-DELIVERY'
+# ===== END v25.94 =====
