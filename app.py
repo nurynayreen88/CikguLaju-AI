@@ -34553,3 +34553,114 @@ def _send_reference_material_v2528(cid,ss,key):
 
 APP_VERSION='v25.94-Y3-VERIFIED-AUDIO-DELIVERY'
 # ===== END v25.94 =====
+
+
+# ===== v25.95 ENGLISH YEAR 3 VERIFIED BOOK REFERENCES =====
+# Source: verified Year 3 SOW references already stored in
+# english_primary_y3_y6_sow_staging.references_text.
+# Workbook is shown only where the verified staging audit has explicit evidence.
+import re as _re_v2595
+
+def _en3_book_refs_v2595(r):
+    raw=str((r or {}).get('references_text') or '')
+    sb=[]; tb=[]
+    # Capture explicit SOW wording such as "Student's Book, p.37",
+    # "Student’s Book p.5" and "Teacher's Book (p.63)".
+    for m in _re_v2595.finditer(r"Student[’']s Book(?:,)?\s*(?:\(|)\s*(p{1,2}\.\s*[0-9]+(?:\s*[–-]\s*[0-9]+)?)",raw,_re_v2595.I):
+        x=m.group(1).strip()
+        if x not in sb: sb.append(x)
+    for m in _re_v2595.finditer(r"Teacher[’']s Book(?:,)?\s*(?:\(|)\s*(p{1,2}\.\s*[0-9]+(?:\s*[–-]\s*[0-9]+)?)",raw,_re_v2595.I):
+        x=m.group(1).strip()
+        if x not in tb: tb.append(x)
+
+    # Some SOW lines put the page before the book name.
+    for m in _re_v2595.finditer(r"Student[’']s Book\s*,?\s*(p{1,2}\.\s*[0-9]+(?:\s*[–-]\s*[0-9]+)?)",raw,_re_v2595.I):
+        x=m.group(1).strip()
+        if x not in sb: sb.append(x)
+    for m in _re_v2595.finditer(r"Teacher[’']s Book\s*,?\s*(p{1,2}\.\s*[0-9]+(?:\s*[–-]\s*[0-9]+)?)",raw,_re_v2595.I):
+        x=m.group(1).strip()
+        if x not in tb: tb.append(x)
+
+    # Explicit audited Workbook evidence currently exists only for Lesson 2;
+    # page is still pending, so no page number is invented.
+    wb=''
+    try:
+        if int((r or {}).get('lesson_no') or 0)==2:
+            wb='Workbook Activities 1–3 (m/s belum disahkan)'
+    except Exception:
+        pass
+    return {'sb':sb,'tb':tb,'wb':wb}
+
+_en98_lesson_menu_before_v2595=_en98_lesson_menu
+def _en98_lesson_menu(cid,unit_idx):
+    ss=state.setdefault(cid,{})
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    if y!=3 or str(ss.get('subject') or '').strip().lower() not in ('english','bahasa inggeris'):
+        return _en98_lesson_menu_before_v2595(cid,unit_idx)
+
+    rows,units=_en97_units(ss.get('year',''))
+    ss['_en97_rows']=rows; ss['_en97_units']=units
+    if unit_idx<0 or unit_idx>=len(units): return _en97_unit_menu(cid)
+    unit=units[unit_idx]
+    items=[r for r in rows if str(r.get('unit_name') or r.get('unit_title') or '').strip()==unit
+           and str(r.get('lesson_no') or '').strip()]
+    if not items: return _en97_unit_menu(cid)
+    ss['_en98_items']=items; ss['quick_content_v2391']=unit; ss['unit']=unit; ss['subtopic']=unit
+    kb=[]
+    for i,r in enumerate(items):
+        lesson=str(r.get('lesson_no') or '').strip()
+        focus=str(r.get('focus') or '').strip()
+        refs=_en3_book_refs_v2595(r)
+        label=f'📚 Lesson {lesson}'
+        if focus: label+=f' • {focus}'
+        if refs['sb']:
+            pg='; '.join(refs['sb']).replace('pp.','m/s').replace('p.','m/s')
+            label+=f' • SB {pg}'
+        kb.append([{'text':label[:64],'callback_data':f'en98_lesson_{i}'}])
+    kb.append([{'text':'⬅️ Pilih Unit Lain','callback_data':'en97_up_0'}])
+    return send(cid,f"📚 <b>{html.escape(unit)}</b>\n\nPilih <b>Lesson</b>. M/s Student’s Book dipaparkan apabila disahkan dalam SOW. SK/SP ditentukan automatik.",kb)
+
+_en98_apply_lesson_before_v2595=_en98_apply_lesson
+def _en98_apply_lesson(cid,idx):
+    ss=state.setdefault(cid,{})
+    items=ss.get('_en98_items') or []
+    try: r=dict(items[int(idx)])
+    except Exception: r={}
+    refs=_en3_book_refs_v2595(r) if r else {'sb':[],'tb':[],'wb':''}
+    result=_en98_apply_lesson_before_v2595(cid,idx)
+    # Persist verified source references for the later material/reference summary.
+    if r and _english_primary_year_number_v2517(ss.get('year'))==3:
+        ss['_en3_book_refs_v2595']=refs
+        ss['english_sb_reference']='; '.join(refs['sb'])
+        ss['english_tb_reference']='; '.join(refs['tb'])
+        ss['english_wb_reference']=refs['wb']
+    return result
+
+_send_pdp_reference_before_v2595=_send_pdp_reference_v2538
+def _send_pdp_reference_v2538(cid,ss):
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    if y==3 and str(ss.get('subject') or '').strip().lower() in ('english','bahasa inggeris'):
+        r=ss.get('_en98_selected_staging_row') or {}
+        refs=ss.get('_en3_book_refs_v2595') or _en3_book_refs_v2595(r)
+        lines=['📚 <b>Rujukan PdP</b>']; added=False
+        if refs.get('sb'):
+            lines.append('📘 <b>Student’s Book</b>: '+html.escape('; '.join(refs['sb'])))
+            added=True
+        if refs.get('tb'):
+            lines.append('📙 <b>Teacher’s Book</b>: '+html.escape('; '.join(refs['tb'])))
+            added=True
+        if refs.get('wb'):
+            lines.append('📗 <b>Workbook</b>: '+html.escape(refs['wb']))
+            added=True
+        try: media_rows=_lesson_media_rows_v2407(ss) or []
+        except Exception: media_rows=[]
+        for m in media_rows[:12]:
+            ref=m.get('media_ref') or m.get('reference') or m.get('audio_reference') or m.get('track') or m.get('title') or m.get('name')
+            if ref:
+                lines.append('🔊 '+html.escape(str(ref))); added=True
+        if added: return send(cid,'\n'.join(lines))
+        return False
+    return _send_pdp_reference_before_v2595(cid,ss)
+
+APP_VERSION='v25.95-Y3-VERIFIED-BOOK-REFERENCES'
+# ===== END v25.95 =====
