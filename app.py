@@ -33953,3 +33953,75 @@ app.view_functions['index']=_runtime_index_v25220
 print('v25.220 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.220 =====
 
+
+
+# ===== v25.221 PI JAWI NASKH + KBAT CELL ALIGN + YEAR SOURCE FIX =====
+# Keep the approved activity structure unchanged.
+
+def _jawi_font_path_v25213(bold=False):
+    import os
+    # Noto Naskh Arabic is installed on Render-compatible Debian images and
+    # covers Jawi extensions including ݢ ڠ ڤ چ ڽ.
+    candidates=([
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-SemiBold.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+    ] if bold else [
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+    ])
+    for p in candidates:
+        if os.path.exists(p):
+            return p
+    # Last resort remains the previous Arabic font, never DejaVu for Jawi ݢ.
+    return '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf'
+
+# Force PI year from the user's actual selected year, never from a derived numeric fallback.
+_rph_rows_v25221_base=_rph_rows
+def _rph_rows(s,ai_text):
+    r=_rph_rows_v25221_base(s,ai_text)
+    if _pi_primary_v25210(s):
+        y=str(s.get('year') or '').strip()
+        ymap={'Tahun 1':'تاهون ١','Tahun 2':'تاهون ٢','Tahun 3':'تاهون ٣',
+              'Tahun 4':'تاهون ٤','Tahun 5':'تاهون ٥','Tahun 6':'تاهون ٦'}
+        if y in ymap:
+            r['TAHUN/TINGKATAN']=ymap[y]
+    return r
+
+# Cell-level alignment: KBAT/PAK21 must sit against the RIGHT edge of its label cell.
+_Table_v25221_base=Table
+def _cell_text_v25221(cell):
+    for attr in ('text','_text'):
+        v=getattr(cell,attr,None)
+        if v is not None: return str(v)
+    return str(cell)
+
+def Table(data,colWidths=None,rowHeights=None,*args,**kwargs):
+    t=_Table_v25221_base(data,colWidths=colWidths,rowHeights=rowHeights,*args,**kwargs)
+    try:
+        from reportlab.platypus import TableStyle
+        for ri,row in enumerate(data or []):
+            for ci,cell in enumerate(row or []):
+                z=_cell_text_v25221(cell).upper().replace(' ','')
+                if 'KBAT/PAK21' in z or 'KBAT/PAK-21' in z:
+                    t.setStyle(TableStyle([
+                      ('ALIGN',(ci,ri),(ci,ri),'RIGHT'),
+                      ('RIGHTPADDING',(ci,ri),(ci,ri),4),
+                    ]))
+    except Exception:
+        pass
+    return t
+
+APP_VERSION='v25.221-PI-JAWI-NASKH-KBAT-YEAR-FIX'
+def _runtime_index_v25221():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_font':'Noto Naskh Arabic','pi_kbat_pak21_alignment':'right-cell',
+      'pi_year_source':'selected-year','pi_activity_structure':'preserved',
+      'empty_pdf_fields_all_subjects':'blank-no-underscores',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.221'})
+app.view_functions['index']=_runtime_index_v25221
+print('v25.221 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.221 =====
+
