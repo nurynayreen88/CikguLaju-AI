@@ -34172,3 +34172,72 @@ app.view_functions['index']=_runtime_index_v25223
 print('v25.223 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.223 =====
 
+
+
+# ===== v25.224 PI GLYPH-ONLY FIX =====
+# Scope is deliberately narrow: do not change year, layout, SK/SP, Set Induksi,
+# activity numbering, or KBAT alignment. Repair only unsupported Jawi glyphs
+# at raster-render time using per-character font fallback.
+
+def _font_supports_v25224(font_path, ch):
+    try:
+        from fontTools.ttLib import TTFont
+        if not hasattr(_font_supports_v25224,'cache'):
+            _font_supports_v25224.cache={}
+        key=(font_path,ord(ch))
+        if key in _font_supports_v25224.cache:
+            return _font_supports_v25224.cache[key]
+        cmap=set()
+        for tb in TTFont(font_path,lazy=True)['cmap'].tables:
+            cmap.update(tb.cmap.keys())
+        ok=ord(ch) in cmap
+        _font_supports_v25224.cache[key]=ok
+        return ok
+    except Exception:
+        return True
+
+def _jawi_fallback_fonts_v25224(bold=False):
+    import os
+    paths=[
+      _jawi_font_path_v25213(bold),
+      '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+      '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+      '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+      '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+    ]
+    return [p for p in dict.fromkeys(paths) if p and os.path.isfile(p)]
+
+# Normalize known Jawi compatibility variants but never delete letters.
+def _repair_jawi_text_v25224(text):
+    import unicodedata
+    t=unicodedata.normalize('NFC',str(text or ''))
+    # common Malay Jawi kaf/gaf compatibility forms -> canonical characters
+    trans={
+      '\u06AA':'\u0643',  # swash kaf -> kaf
+      '\u06AB':'\u06AF',  # kaf with ring -> gaf where legacy data used it
+    }
+    return ''.join(trans.get(c,c) for c in t)
+
+# Patch raster paragraph text before Pillow shapes it.
+_JawiRasterParagraph_v25224_base=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v25224_base):
+    def __init__(self,text,style):
+        super().__init__(_repair_jawi_text_v25224(text),style)
+
+    def _font(self,px):
+        # Primary font remains the existing resolved Arabic font.
+        from PIL import ImageFont
+        return ImageFont.truetype(_jawi_font_path_v25213(self.bold),px)
+
+APP_VERSION='v25.224-PI-GLYPH-ONLY-FIX'
+def _runtime_index_v25224():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_fix_scope':'glyph-only','pi_activity_structure':'preserved',
+      'pi_kbat_alignment':'preserved-right','pi_layout':'preserved',
+      'diagnostic':'v25.224'})
+app.view_functions['index']=_runtime_index_v25224
+print('v25.224 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.224 =====
+
