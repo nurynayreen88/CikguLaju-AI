@@ -33636,7 +33636,9 @@ def _row_has_jawi_v25214(row):
 def Table(data, colWidths=None, rowHeights=None, *args, **kwargs):
     # Detect PI/Jawi RPH tables from actual row content rather than changing global UI.
     # This safely leaves Latin-only/non-PI tables unchanged.
-    rtl = bool(data) and any(_row_has_jawi_v25214(r) for r in data if isinstance(r,(list,tuple)))
+    rtl = (bool(globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593', False))
+           and bool(data)
+           and any(_row_has_jawi_v25214(r) for r in data if isinstance(r,(list,tuple))))
     if rtl and all(isinstance(r,(list,tuple)) for r in data):
         n=max((len(r) for r in data), default=0)
         # Main RPH field tables are 2 or 3 columns. Reverse physical columns:
@@ -33677,7 +33679,7 @@ def Paragraph(text,style,*args,**kwargs):
     raw=str(text or '')
     # Exact PDF cell values only; menu text is not passed through ReportLab Paragraph.
     repl=_PI_YEAR_JAWI_V25215.get(raw.strip())
-    if repl:
+    if repl and bool(globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593', False)):
         text=repl
     return _RL_Paragraph_v25215(text,style,*args,**kwargs)
 
@@ -34440,3 +34442,21 @@ def _v2592_release_guard():
 
 _v2592_release_guard()
 # ===== END v25.212 =====
+
+
+# ===== v25.93 RPH DIRECTION/SCRIPT SCOPE LOCK =====
+# PI primary only: RTL + Jawi. All other subjects: LTR + non-Jawi.
+_CIKGULAJU_PI_RENDER_CONTEXT_V2593 = False
+
+_create_pdf_file_v2593_base = create_pdf_file
+def create_pdf_file(s, ai_text, cid):
+    global _CIKGULAJU_PI_RENDER_CONTEXT_V2593
+    _prev = _CIKGULAJU_PI_RENDER_CONTEXT_V2593
+    _CIKGULAJU_PI_RENDER_CONTEXT_V2593 = bool(_pi_primary_v25210(s))
+    try:
+        return _create_pdf_file_v2593_base(s, ai_text, cid)
+    finally:
+        _CIKGULAJU_PI_RENDER_CONTEXT_V2593 = _prev
+
+APP_VERSION='v25.93-PI-RTL-JAWI-OTHERS-LTR'
+# ===== END v25.93 =====
