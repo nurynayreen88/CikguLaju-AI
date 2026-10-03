@@ -33408,3 +33408,76 @@ app.view_functions['index']=_runtime_index_v25210
 print('v25.210 STARTUP',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.210 =====
 
+
+
+# ===== v25.211 PI RPH AVAILABILITY FIX =====
+# v25.210 selected a verified PI RPT row, but the older material manifest did not know
+# about the new v25_91 PI mapping, so it incorrectly returned "no verified materials".
+_available_materials_v25211_base=_available_materials_v2528
+def _available_materials_v2528(ss):
+    items=list(_available_materials_v25211_base(ss) or [])
+    if _pi_primary_v25210(ss) and ss.get('rpt_entry_id') and ss.get('pdp_no'):
+        # RPH is buildable from the verified v25_91 RPT/PdP row.
+        if 'rph' not in items:
+            items.insert(0,'rph')
+        # Show textbook only when this exact PdP has a verified mapped page/reference.
+        if str(ss.get('textbook_pages') or '').strip() and 'textbook' not in items:
+            items.append('textbook')
+    # Worksheet and BBM remain intentionally hidden; code/data are preserved.
+    return [x for x in items if x not in ('worksheet','bbm')]
+
+APP_VERSION='v25.211-PI-RPH-AVAILABILITY-FIX'
+
+def _runtime_index_v25211():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_rph_available_after_pdp':True,'pi_rph_script':'Jawi',
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.211'})
+app.view_functions['index']=_runtime_index_v25211
+print('v25.211 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.211 =====
+
+
+
+# ===== v25.212 PI MENU RUMI / RPH JAWI =====
+def _pi_pdp_menu_v25210(cid,page=0):
+    ss=state.setdefault(cid,{})
+    rows=_pi_pdp_rows_v25210(ss.get('year',''))
+    ss['_pi_pdp_rows_v25210']=rows
+    page=max(0,int(page)); per=18; start=page*per
+    kb=[]
+    for i,r in enumerate(rows[start:start+per],start):
+        seq=r.get('sequence_no'); wk=r.get('week_from')
+        # Navigation stays Rumi. Source focus may remain Jawi because it is curriculum content.
+        focus=str(r.get('skill_focus') or r.get('topic') or 'Pendidikan Islam').strip()
+        label=f"PdP {seq}"
+        if wk: label+=f" • Minggu {wk}"
+        if focus: label+=f" • {focus}"
+        kb.append([{'text':label[:60],'callback_data':f'pipdp210|{i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️ Sebelum','callback_data':f'pipage210|{page-1}'})
+    if start+per<len(rows): nav.append({'text':'Seterusnya ➡️','callback_data':f'pipage210|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+      f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+      "Pilih <b>PdP</b> mengikut RPT 2026. SK/SP akan dipilih secara automatik.",
+      kb)
+
+APP_VERSION='v25.212-PI-MENU-RUMI-RPH-JAWI'
+
+def _runtime_index_v25212():
+    import os as _os
+    return jsonify({'status':'ok','app':'CikguLaju AI','app_version':APP_VERSION,
+      'module_file':_os.path.abspath(__file__),'db_path':DB_PATH,'db_exists':_os.path.exists(DB_PATH),
+      'pi_primary_pdp_count':sum(len(_pi_pdp_rows_v25210('Tahun '+str(i))) for i in range(1,7)),
+      'pi_menu_script':'Rumi','pi_rph_script':'Jawi',
+      'pi_rph_available_after_pdp':True,
+      'worksheet_bbm_generation':'temporarily_hidden','diagnostic':'v25.212'})
+app.view_functions['index']=_runtime_index_v25212
+print('v25.212 STARTUP',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.212 =====
+
