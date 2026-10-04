@@ -1,50 +1,12 @@
-# CikguLaju English Year 1 Workbook recovery
-# Recovered from: English Year 1 - Mapping Lesson / SK / SP / SB / WB / Audio (Audit)
-# IMPORTANT: Do not infer Lesson->WB from SB page alone.
-#
-# VERIFIED_PAGE_EVIDENCE stores Workbook pages explicitly verified in prior audit.
-# It is NOT automatically a lesson runtime map unless lesson linkage is explicit.
-
-Y1_WB_VERIFIED_PAGE_EVIDENCE = {
-    # Unit 1 - At School
-    10: {"page_end":11, "evidence":"WB pp.10-11 includes audio task CD1-16"},
-    14: {"page_end":14, "evidence":"WB p.14 CD1-22"},
-    15: {"page_end":15, "evidence":"WB p.15 CD1-24"},
-    17: {"page_end":17, "evidence":"WB p.17 CD1-26"},
-
-    # Unit 2 - Let's Play!
-    22: {"page_end":22, "evidence":"WB p.22 CD1-30"},
-    30: {"page_end":30, "evidence":"WB p.30 CD1-45"},
-
-    # Unit 3 - Pet Show
-    34: {"page_end":34, "evidence":"SB/WB p.34 verified"},
-    35: {"page_end":35, "evidence":"SB/WB p.35 verified"},
-    36: {"page_end":36, "evidence":"SB/WB p.36 verified"},
-    37: {"page_end":37, "evidence":"WB p.37 CD1-56"},
-    38: {"page_end":38, "evidence":"WB p.38 CD1-58"},
-    39: {"page_end":39, "evidence":"WB p.39 CD1-60"},
-    40: {"page_end":40, "evidence":"WB p.40 CD1-62"},
-    41: {"page_end":41, "evidence":"SB/WB p.41 teacher-read"},
-    42: {"page_end":42, "evidence":"SB/WB p.42 verified no audio"},
-    43: {"page_end":43, "evidence":"SB/WB p.43 verified no audio"},
-    44: {"page_end":44, "evidence":"SB/WB p.44 verified"},
-    45: {"page_end":45, "evidence":"SB/WB p.45 verified no audio"},
-
-    # Unit 4 - Lunchtime
-    46: {"page_end":46, "evidence":"SB/WB p.46 verified"},
-    47: {"page_end":47, "evidence":"WB p.47 CD2-05"},
-    48: {"page_end":48, "evidence":"SB/WB p.48 verified"},
-    49: {"page_end":49, "evidence":"SB/WB p.49 verified"},
-    50: {"page_end":50, "evidence":"WB p.50 CD2-12"},
-    51: {"page_end":51, "evidence":"WB p.51 CD2-14"},
-    52: {"page_end":52, "evidence":"SB/WB p.52 verified"},
-    53: {"page_end":53, "evidence":"SB/WB p.53 verified no audio"},
-    54: {"page_end":54, "evidence":"SB/WB p.54 verified no audio"},
-    55: {"page_end":55, "evidence":"SB/WB p.55 verified no audio"},
-    56: {"page_end":56, "evidence":"SB/WB p.56 verified"},
-    57: {"page_end":57, "evidence":"SB/WB p.57 verified no audio"},
+# CikguLaju English Year 1 verified Workbook lesson map
+# Source: CikguLaju_English_Primary_Year1_Year2_BOT_READY_v1.db / bot_lesson_index
+# Only workbook_status=LINKED_VERIFIED rows.
+Y1_WB_VERIFIED_LESSON_MAP = {
+6:(4,4),7:(5,5),8:(6,6),9:(7,7),16:(8,9),17:(9,9),18:(10,10),19:(11,11),
+26:(12,12),27:(13,13),28:(14,14),29:(15,15),36:(16,16),37:(17,17),38:(18,18),39:(19,19),
+46:(20,20),47:(21,21),48:(22,22),49:(23,23),56:(24,24),57:(25,25),59:(26,26),66:(27,27),
+67:(28,28),68:(29,29),69:(30,30),76:(31,31),77:(32,32),78:(33,33),79:(34,34),86:(35,35),
+87:(36,36),96:(37,37),97:(38,38),98:(39,39),99:(40,40),106:(41,41),107:(42,42),108:(43,43),
+109:(44,44),116:(45,45),117:(46,46),118:(47,47),119:(48,48),126:(49,49),127:(50,50),
+129:(51,51),136:(52,52),137:(53,53),138:(54,54),146:(55,55),147:(56,56),148:(57,57),
 }
-
-# Keep empty until lesson linkage is explicitly verified.
-# Runtime must NOT derive this from Student's Book page equality.
-Y1_WB_VERIFIED_LESSON_MAP = {}
