@@ -35578,3 +35578,75 @@ def _drive_pdf_v25232(file_id):
 
 APP_VERSION='v25.233-ENGLISH-PRIVATE-DRIVE-BOOK-DOWNLOAD'
 # ===== END v25.233 =====
+
+# ===== v25.234 ENGLISH BOOK DELIVERY - LOCAL REPO SOURCE (NO GOOGLE CLOUD) =====
+# English-only. Prefer book chunks deployed with the app; no Google credentials required.
+# Other subjects and existing RPH/material flows are untouched.
+_EN_LOCAL_BOOK_CHUNKS_V25234 = {
+    (4,'textbook'): [
+        (1,15,'books/english/y4_student_book_001_015.pdf'),
+        (16,30,'books/english/y4_student_book_016_030.pdf'),
+        (31,45,'books/english/y4_student_book_031_045.pdf'),
+        (46,90,'books/english/y4_student_book_046_090.pdf'),
+        (91,135,'books/english/y4_student_book_091_135.pdf'),
+        (136,177,'books/english/y4_student_book_136_177.pdf'),
+    ],
+}
+
+def _v25234_app_root():
+    try: return _os_v25232.path.dirname(_os_v25232.path.abspath(__file__))
+    except Exception: return _os_v25232.getcwd()
+
+def _local_book_chunk_v25234(ss,key,page):
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    kind='textbook' if key=='textbook' else 'workbook'
+    for a,b,rel in _EN_LOCAL_BOOK_CHUNKS_V25234.get((y,kind),[]):
+        if a<=int(page)<=b:
+            path=_os_v25232.path.join(_v25234_app_root(),rel)
+            if _os_v25232.path.isfile(path): return path,a,b
+    return None
+
+def _slice_local_chunks_v25234(ss,key,pages,out):
+    try:
+        from pypdf import PdfReader, PdfWriter
+    except Exception:
+        from PyPDF2 import PdfReader, PdfWriter
+    wr=PdfWriter(); cache={}
+    for p in pages:
+        hit=_local_book_chunk_v25234(ss,key,p)
+        if not hit: return False
+        path,a,b=hit
+        if path not in cache: cache[path]=PdfReader(path)
+        idx=int(p)-a
+        if idx<0 or idx>=len(cache[path].pages): return False
+        wr.add_page(cache[path].pages[idx])
+    with open(out,'wb') as f: wr.write(f)
+    return True
+
+_send_en_book_pages_before_v25234=_send_en_book_pages_v25232
+def _send_en_book_pages_v25232(cid,ss,key):
+    if not _en_primary_v25232(ss): return False
+    pages=_en_book_pages_v25232(ss,key)
+    if not pages: return False
+    # First choice: repo-local chunks. This path requires no Google Cloud/API/token.
+    if all(_local_book_chunk_v25234(ss,key,p) for p in pages):
+        lesson=(ss or {}).get('lesson_no') or (ss or {}).get('textbook_lesson_no') or ''
+        label='Student Book' if key=='textbook' else 'Workbook'
+        pg='-'.join(map(str,(pages[0],pages[-1]))) if len(pages)>1 else str(pages[0])
+        out_path=_os_v25232.path.join(_tmp_v25232.gettempdir(),f'English_Y{_english_primary_year_number_v2517(ss.get("year"))}_Lesson_{lesson}_{label.replace(" ","_")}_ms_{pg}.pdf')
+        try:
+            if not _slice_local_chunks_v25234(ss,key,pages,out_path): return False
+            send_document(cid,out_path,f'📘 {label} • Lesson {lesson} • m/s {pg}')
+            return True
+        except Exception as e:
+            print('v25.234 local English book page delivery',key,repr(e),flush=True)
+            return False
+        finally:
+            try:
+                if _os_v25232.path.exists(out_path): _os_v25232.unlink(out_path)
+            except Exception: pass
+    # Existing source mechanism remains fallback for years/books not yet bundled.
+    return _send_en_book_pages_before_v25234(cid,ss,key)
+
+APP_VERSION='v25.234-ENGLISH-LOCAL-BOOK-DELIVERY-NO-GCLOUD'
+# ===== END v25.234 =====
