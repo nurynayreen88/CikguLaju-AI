@@ -35523,3 +35523,58 @@ def _send_reference_material_v2528(cid,ss,key):
 
 APP_VERSION='v25.232-ENGLISH-Y1-Y6-BOOK-PAGE-DOWNLOAD'
 # ===== END v25.232 =====
+
+# ===== v25.233 ENGLISH BOOK DELIVERY - AUTHENTICATED DRIVE SUPPORT =====
+# Fixes private Google Drive source PDFs on Render. Public-download URLs remain a fallback.
+# Configure ONE of these Render secrets:
+#   GOOGLE_DRIVE_ACCESS_TOKEN=<OAuth access token>
+#   GOOGLE_SERVICE_ACCOUNT_JSON=<full service-account JSON>; share source PDFs/folder with that service-account email.
+import json as _json_v25233, io as _io_v25233
+
+_drive_pdf_before_v25233 = _drive_pdf_v25232
+
+def _drive_pdf_v25232(file_id):
+    import requests as _rq_v25233
+    fd,path=_tmp_v25232.mkstemp(prefix='cikgulaju_book_',suffix='.pdf'); _os_v25232.close(fd)
+    try:
+        headers={}
+        token=str(_os_v25232.getenv('GOOGLE_DRIVE_ACCESS_TOKEN') or '').strip()
+        if token:
+            headers={'Authorization':'Bearer '+token}
+        else:
+            raw=str(_os_v25232.getenv('GOOGLE_SERVICE_ACCOUNT_JSON') or '').strip()
+            if raw:
+                try:
+                    from google.oauth2 import service_account as _sa_v25233
+                    from google.auth.transport.requests import Request as _Req_v25233
+                    info=_json_v25233.loads(raw)
+                    cred=_sa_v25233.Credentials.from_service_account_info(
+                        info,scopes=['https://www.googleapis.com/auth/drive.readonly'])
+                    cred.refresh(_Req_v25233())
+                    headers={'Authorization':'Bearer '+cred.token}
+                except Exception as e:
+                    print('v25.233 service account auth unavailable',repr(e),flush=True)
+        # Authenticated Drive API is the correct route for private source books.
+        if headers:
+            rr=_rq_v25233.get(
+                f'https://www.googleapis.com/drive/v3/files/{file_id}?alt=media',
+                headers=headers,timeout=120,allow_redirects=True)
+            if rr.ok and rr.content[:4]==b'%PDF':
+                with open(path,'wb') as f: f.write(rr.content)
+                return path
+            print('v25.233 authenticated Drive download failed',rr.status_code,rr.text[:160],flush=True)
+        # Backward-compatible fallback for files that are publicly downloadable.
+        for url in (f'https://drive.usercontent.google.com/download?id={file_id}&export=download&confirm=t',
+                    f'https://drive.google.com/uc?export=download&id={file_id}'):
+            rr=_rq_v25233.get(url,timeout=120,allow_redirects=True)
+            if rr.ok and rr.content[:4]==b'%PDF':
+                with open(path,'wb') as f: f.write(rr.content)
+                return path
+        raise RuntimeError('private Drive source unavailable: configure GOOGLE_SERVICE_ACCOUNT_JSON or GOOGLE_DRIVE_ACCESS_TOKEN')
+    except Exception:
+        try: _os_v25232.unlink(path)
+        except Exception: pass
+        raise
+
+APP_VERSION='v25.233-ENGLISH-PRIVATE-DRIVE-BOOK-DOWNLOAD'
+# ===== END v25.233 =====
