@@ -36061,3 +36061,41 @@ def _book_physical_page_v25237(ss,key,page):
 
 APP_VERSION='v25.244-ENGLISH-Y4-VERIFIED-WORKBOOK-RUNTIME'
 # ===== END v25.244 =====
+
+
+# ===== v25.245 ENGLISH Y4 VERIFIED WORKBOOK EXPANSION =====
+# Expanded direct SOW -> TB Workbook-block -> visible Workbook-page matches.
+_EN_WB_VERIFIED_Y4_V25245 = {2:(3,2),3:(4,3),6:(4,3),7:(4,3),8:(5,4),9:(5,4),14:(7,6),16:(9,8),40:(23,22),41:(23,22),64:(36,35),67:(39,38),97:(59,58),112:(65,64),124:(71,70),128:(74,73),146:(86,85),158:(92,91)}
+_v25245_book_pages_base = globals().get('_en_book_pages_v25232')
+def _en_book_pages_v25232(ss,key):
+    if key == 'activity' and _en_primary_v25232(ss):
+        try:
+            y=_english_primary_year_number_v2517((ss or {}).get('year'))
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            if y == 4:
+                item=_EN_WB_VERIFIED_Y4_V25245.get(lesson)
+                if item:
+                    return [int(item[0])]
+        except Exception:
+            pass
+    if callable(_v25245_book_pages_base):
+        return _v25245_book_pages_base(ss,key)
+    return []
+
+_v25245_physical_base = globals().get('_book_physical_page_v25237')
+def _book_physical_page_v25237(ss,key,page):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        if y == 4 and key == 'activity':
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            item=_EN_WB_VERIFIED_Y4_V25245.get(lesson)
+            if item and int(page) == int(item[0]):
+                return int(item[1])
+    except Exception:
+        pass
+    if callable(_v25245_physical_base):
+        return _v25245_physical_base(ss,key,page)
+    return int(page)
+
+APP_VERSION='v25.245-ENGLISH-Y4-WORKBOOK-18-VERIFIED'
+# ===== END v25.245 =====
