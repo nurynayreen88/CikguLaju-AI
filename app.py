@@ -35819,3 +35819,56 @@ def show_curriculum_sp(cid,sk_index):
 
 APP_VERSION='v25.238-ENGLISH-Y3-AUTO-SK-SP-FLOW-RESTORE'
 # ===== END v25.238 =====
+
+
+# ===== v25.239 ENGLISH PRIMARY EXACT BOOK RANGE DELIVERY =====
+# Preserve the verified page cardinality from the lesson mapping:
+# one printed page -> one output page; a-b -> every printed page a..b.
+# For Y3, prefer the audited verified SB reference table because some staging
+# reference strings contain multiple activity references. Supplementary pages
+# remain separate under v25.231. Y3 physical PDF offset remains v25.237.
+def _en_exact_main_book_pages_v25239(ss,key):
+    if key!='textbook':
+        return _en_book_pages_v25232(ss,key)
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    r=(ss or {}).get('_en98_selected_staging_row') or {}
+    try:
+        lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('textbook_lesson_no') or r.get('lesson_no') or 0)
+    except Exception:
+        lesson=0
+
+    # Year 3 has an audited lesson-by-lesson Student Book reference bank.
+    # Use it first so ranges such as L72 pp.48-49 always produce two pages.
+    if y==3 and lesson:
+        raw=_EN3_SB_VERIFIED_V2596.get(lesson,'')
+        nums=_v25232_nums(raw)
+        if nums:
+            return nums
+
+    # Y3/Y4 final menu resolver is the next authoritative main-page source.
+    if y in (3,4) and r:
+        try: raw=_en34_verified_sb_pages_v25230(r,y)
+        except Exception: raw=''
+        nums=_v25232_nums('m/s '+str(raw)) if raw else []
+        if nums:
+            return nums
+
+    # Other English Primary years retain the verified start/end mapping.
+    for raw in ((ss or {}).get('textbook_page_start'),(ss or {}).get('textbook_page'),(ss or {}).get('page')):
+        if raw not in (None,''):
+            try:
+                a=int(raw); b=int((ss or {}).get('textbook_page_end') or a)
+                if 1<=a<=b and b-a<=20:
+                    return list(range(a,b+1))
+            except Exception:
+                pass
+    return []
+
+_en_book_pages_before_v25239=_en_book_pages_v25232
+def _en_book_pages_v25232(ss,key):
+    if _en_primary_v25232(ss) and key=='textbook':
+        return _en_exact_main_book_pages_v25239(ss,key)
+    return _en_book_pages_before_v25239(ss,key)
+
+APP_VERSION='v25.239-ENGLISH-PRIMARY-EXACT-BOOK-RANGE-DELIVERY'
+# ===== END v25.239 =====
