@@ -34991,3 +34991,42 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2604_stable):
 
 APP_VERSION='v26.04-PI-EXACT-JAWI-GLYPH-PRESERVATION'
 # ===== END v26.04 =====
+
+# ===== v26.05 PI EXACT JAWI + MARKUP SAFE RENDER =====
+# Regression fix for v26.04: preserve exact Jawi glyphs while ensuring ReportLab
+# paragraph markup (<b>, </b>, <br/>) is interpreted for the raster renderer and
+# never printed literally. DB/content/layout are unchanged.
+
+def _pi_markup_to_plain_v2605(text):
+    import re, html as _html
+    # Keep the existing PI terminology/unicode cleanup, but process markup exactly
+    # as the stable v25.213 raster renderer did before drawing with Pillow.
+    raw=_pi_safe_unicode_v2602(_pi_term_cleanup_v2601(str(text or '')))
+    raw=raw.replace('<br/>','\n').replace('<br />','\n').replace('<br>','\n')
+    bold=bool(re.fullmatch(r'\s*<b>.*</b>\s*',raw,re.S))
+    plain=re.sub(r'<[^>]+>','',raw)
+    plain=_html.unescape(plain)
+    return plain,bold
+
+_JawiRasterParagraph_v2605_stable=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2605_stable):
+    def __init__(self,text,style):
+        exact_plain, exact_bold=_pi_markup_to_plain_v2605(text)
+        # Let the inherited renderer initialise all Flowable/layout state.
+        super().__init__(text,style)
+        # Critical v26.05 correction: self.text must be PLAIN render text, not the
+        # original XML/HTML markup. This restores <br/> line breaks and prevents
+        # <b>/</b> from appearing in the generated PDF.
+        self.text=exact_plain
+        self.bold=exact_bold
+        self._v2605_font_path=_pi_exact_jawi_font_v2604(self.text,self.bold)
+        self._v2604_font_path=self._v2605_font_path
+        self._v2599_font_path=self._v2605_font_path
+        self._v25226_font_path=self._v2605_font_path
+
+    def _font(self,px):
+        from PIL import ImageFont
+        return ImageFont.truetype(self._v2605_font_path,px)
+
+APP_VERSION='v26.05-PI-EXACT-JAWI-MARKUP-SAFE'
+# ===== END v26.05 =====
