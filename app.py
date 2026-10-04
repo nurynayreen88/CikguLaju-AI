@@ -3,7 +3,7 @@
 def _cikgulaju_rebuild_split_db():
     import os as _os
     _base=_os.path.dirname(_os.path.abspath(__file__))
-    _name='CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db'
+    _name='CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db'
     _db=_os.path.join(_base,_name)
     if not _os.path.exists(_db):
         _parts=[_os.path.join(_base,_name+'.part1'), _os.path.join(_base,_name+'.part2')]
@@ -33148,7 +33148,7 @@ print('v25.206 STARTUP',
 def _cikgulaju_runtime_db_v2590():
     import os as _os
     base=_os.path.dirname(_os.path.abspath(__file__))
-    name='CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db'
+    name='CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db'
     full=_os.path.join(base,name)
     p1=full+'.part1'
     p2=full+'.part2'
@@ -33218,7 +33218,7 @@ def _pi_primary_v25210(s):
 def _cikgulaju_runtime_db_v2591():
     import os as _os, sqlite3 as _sqlite3
     base=_os.path.dirname(_os.path.abspath(__file__))
-    name='CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db'
+    name='CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db'
     full=_os.path.join(base,name)
     parts=(full+'.part1',full+'.part2')
     if not _os.path.exists(full):
@@ -35074,3 +35074,50 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
 
 APP_VERSION='v26.06-PI-EXACT-JAWI-RAQM-SHAPING'
 # ===== END v26.06 =====
+
+
+# ===== v25.227 ENGLISH YEAR 4 VERIFIED DB RELEASE =====
+APP_VERSION='v25.227-ENGLISH-Y4-160-VERIFIED-DB'
+
+def _v25227_english_y4_release_guard():
+    import sqlite3 as _sqlite3
+    con=_sqlite3.connect(DB_PATH)
+    try:
+        chk=con.execute('PRAGMA integrity_check').fetchone()
+        if not chk or str(chk[0]).lower()!='ok':
+            raise RuntimeError('v25.227 DB integrity failed: '+repr(chk))
+        y4=con.execute("SELECT COUNT(*) FROM english_primary_y3_y6_sow_staging WHERE year_label='Year 4'").fetchone()[0]
+        if int(y4)!=160:
+            raise RuntimeError('v25.227 English Year 4 lesson count != 160: '+str(y4))
+        mf=con.execute("SELECT COUNT(*) FROM english_y4_resource_manifest").fetchone()[0]
+        if int(mf)!=160:
+            raise RuntimeError('v25.227 English Year 4 manifest count != 160: '+str(mf))
+        bad=con.execute("SELECT COUNT(*) FROM english_y4_resource_manifest WHERE verification_tier NOT IN ('A_STRONG','B_EVIDENCE_BACKED_PARTIAL','DONE_NON_TEXTBOOK')").fetchone()[0]
+        if int(bad)!=0:
+            raise RuntimeError('v25.227 English Year 4 unresolved resource rows: '+str(bad))
+        # Existing release invariants remain protected.
+        pi=con.execute("SELECT COUNT(*) FROM rpt_entries WHERE subject='Pendidikan Islam' AND year_label IN ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6')").fetchone()[0]
+        y3=con.execute("SELECT COUNT(*) FROM english_primary_y3_y6_sow_staging WHERE year_label='Year 3'").fetchone()[0]
+        aud3=con.execute("SELECT COUNT(DISTINCT lesson_no) FROM lesson_media_map WHERE year_label='Year 3' AND subject='Bahasa Inggeris' AND verified=1").fetchone()[0]
+        if int(pi)!=809 or int(y3)!=160 or int(aud3)!=99:
+            raise RuntimeError('v25.227 regression guard failed PI/Y3/audio: '+repr((pi,y3,aud3)))
+    finally:
+        con.close()
+    return True
+
+_v25227_english_y4_release_guard()
+
+def _english_y4_resource_manifest_v25227(lesson_no):
+    """Return only evidence-backed Year 4 resource metadata; never infer missing pages/tracks."""
+    import sqlite3 as _sqlite3
+    try: ln=int(str(lesson_no).strip())
+    except Exception: return {}
+    con=_sqlite3.connect(DB_PATH); con.row_factory=_sqlite3.Row
+    try:
+        r=con.execute('SELECT * FROM english_y4_resource_manifest WHERE lesson_no=? LIMIT 1',(ln,)).fetchone()
+        return dict(r) if r else {}
+    finally:
+        con.close()
+
+print('v25.227 ENGLISH Y4 READY',APP_VERSION,DB_PATH,flush=True)
+# ===== END v25.227 =====
