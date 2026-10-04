@@ -35944,3 +35944,42 @@ def _en_book_pages_v25232(ss,key):
 
 APP_VERSION='v25.241-ENGLISH-Y1Y2-VERIFIED-WORKBOOK-RUNTIME'
 # ===== END v25.241 =====
+
+
+# ===== v25.242 ENGLISH Y3 VERIFIED WORKBOOK RUNTIME =====
+# Direct TB/SOW -> Workbook visual matches only.
+# Values: lesson -> (teacher-facing printed page, 1-based physical PDF page)
+_EN_WB_VERIFIED_Y3_V25242 = {9:(4,3),11:(4,3),13:(6,5),14:(6,5),15:(7,6),16:(8,7),18:(10,9),19:(11,10),24:(12,11),28:(13,12),31:(15,14),32:(16,15),33:(18,17),34:(18,17),35:(19,18),36:(19,18),38:(19,18),39:(19,18),40:(20,19),43:(20,19),45:(23,22),46:(22,21),48:(24,23),49:(26,25),50:(26,25),51:(27,26),52:(27,26),54:(27,26),55:(27,26),56:(28,27),60:(28,27),61:(29,28),62:(30,29),65:(34,35),66:(34,35),68:(35,36),70:(35,36),71:(35,36),72:(36,37),75:(36,37),76:(36,37),79:(39,40),96:(50,50),128:(66,66),130:(68,68),134:(69,69),135:(69,69),137:(70,70),139:(71,71),140:(71,71),150:(77,77),151:(77,77),152:(78,78),153:(78,78),155:(78,78),156:(79,79),157:(79,79),158:(80,80)}
+_v25242_book_pages_base = globals().get('_en_book_pages_v25232')
+def _en_book_pages_v25232(ss,key):
+    if key == 'activity' and _en_primary_v25232(ss):
+        try:
+            y=_english_primary_year_number_v2517((ss or {}).get('year'))
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            if y == 3:
+                item=_EN_WB_VERIFIED_Y3_V25242.get(lesson)
+                if item:
+                    return [int(item[0])]
+        except Exception:
+            pass
+    if callable(_v25242_book_pages_base):
+        return _v25242_book_pages_base(ss,key)
+    return []
+
+_v25242_physical_base = globals().get('_book_physical_page_v25237')
+def _book_physical_page_v25237(ss,key,page):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        if y == 3 and key == 'activity':
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            item=_EN_WB_VERIFIED_Y3_V25242.get(lesson)
+            if item and int(page) == int(item[0]):
+                return int(item[1])
+    except Exception:
+        pass
+    if callable(_v25242_physical_base):
+        return _v25242_physical_base(ss,key,page)
+    return int(page)
+
+APP_VERSION='v25.242-ENGLISH-Y3-VERIFIED-WORKBOOK-RUNTIME'
+# ===== END v25.242 =====
