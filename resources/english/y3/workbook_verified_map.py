@@ -37,5 +37,15 @@ Y3_WB_VERIFIED_LESSON_MAP = {
     56: {"printed": 28, "pdf": 27, "tb_page": 64, "evidence": "TB Our world Workbook block matches WB p.28"},
     60: {"printed": 28, "pdf": 27, "tb_page": 65, "evidence": "TB p.65 Workbook block matches WB p.28"},
     61: {"printed": 29, "pdf": 28, "tb_page": 66, "evidence": "TB Let's play Workbook block matches WB p.29"},
-    62: {"printed": 30, "pdf": 29, "tb_page": 68, "evidence": "TB Project Workbook block matches WB p.30"},
+    62: {"printed": 30, "pdf": 29, "tb_page": 68, "evidence": "TB Project Workbook block matches WB p.30"},,
+    65: {"printed": 34, "pdf": 35, "tb_page": 75, "evidence": "TB Workbook house/preposition activities match WB p.34"},
+    66: {"printed": 34, "pdf": 35, "tb_page": 75, "evidence": "Same verified TB pp.74-75 Workbook activity block"},
+    68: {"printed": 35, "pdf": 36, "tb_page": 77, "evidence": "TB Workbook whose/clothes activities match WB Smart kids p.35"},
+    70: {"printed": 35, "pdf": 36, "tb_page": 77, "evidence": "Same verified TB p.77 Workbook activity block"},
+    71: {"printed": 35, "pdf": 36, "tb_page": 77, "evidence": "Same verified TB p.77 Workbook activity block"},
+    72: {"printed": 36, "pdf": 37, "tb_page": 79, "evidence": "TB Workbook traditional house/differences activities match WB Our world p.36"},
+    75: {"printed": 36, "pdf": 37, "tb_page": 79, "evidence": "Same verified TB p.79 Workbook activity block"},
+    76: {"printed": 36, "pdf": 37, "tb_page": 79, "evidence": "Same verified TB p.79 Workbook activity block"},
+    79: {"printed": 39, "pdf": 40, "tb_page": 85, "evidence": "TB Workbook story activities match WB Story time p.39"},
+
 }
