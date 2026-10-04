@@ -154,3 +154,43 @@ def _book_physical_page_v25237(ss,key,page):
     return _v25251_phys_base(ss,key,page) if callable(_v25251_phys_base) else int(page)
 APP_VERSION='v25.251-ENGLISH-Y4-WORKBOOK-CROSS-VERIFIED'
 # ===== END v25.251 =====
+
+
+# ===== v25.252 ENGLISH Y4 COMPLETE RESOURCE COVERAGE =====
+# Explicit fallback for the 23 verified Year 4 lessons which intentionally have no WB page.
+_EN4_NON_WB_V25252 = {
+1:("SB/TB + audio","Activity 1; TB p.18; CD1 Track 3; flag flashcards"),
+4:("SOW/custom","Non-textbook writing; teacher worksheet or pupil-made materials"),
+11:("SB/TB + audio/phonics","SB pp.12-13; Track 16; Phonics 1 TB p.98"),
+12:("SB/TB + audio","Revision/Activity 1 TB p.30; Track 17; SB p.14 cards"),
+13:("SB/TB","SB p.11 email; Activities 1-2 TB p.26; Track 15"),
+23:("SOW/custom","Timetable speaking/writing; timetable and paper strips"),
+29:("SB/TB + audio/CLIL","Social Studies CLIL 1; SB p.129; TB p.193; Tracks 35-36; dictionaries"),
+39:("SOW/custom","Past simple review; teacher-selected materials"),
+43:("SB/TB + audio/phonics","Phonics 3; SB p.121; TB pp.177-178; CD3 Tracks 10-11"),
+44:("SOW/custom","Historical figures narration; teacher-prepared materials"),
+45:("SB/TB + teacher worksheet","SB p.32; TB pp.54-55; Track 47; Egypt sentence worksheet"),
+46:("SB/TB + digital/email","SB p.33; TB p.56; Track 49; email writing"),
+77:("SB/TB + teacher worksheet","Eating right supplementary reading/vocabulary matching"),
+78:("SOW/custom project","Healthy-food poster project"),
+84:("SB/TB + project material","Famous-building pictures/planning"),
+89:("SOW/custom continuation","Famous-building writing continuation from L84"),
+109:("SB/TB/SOW","Helping out reading; no verified Workbook page"),
+118:("SOW/custom listening","Malaysia endangered animals; pictures/listening/worksheet"),
+123:("SB/TB + phonics/dictionaries","Amazing animals pronunciation/reading extension"),
+132:("SOW/custom writing","Activities-day invitation/report"),
+151:("SOW/custom speaking","Should/shouldn't learning-English lesson"),
+153:("SOW/custom poster","Health poster"),
+160:("Project-Based Learning","Teacher-selected topic/theme/skills/materials"),
+}
+def _en_y4_non_wb_resource_v25252(ss):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        n=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+        if y != 4 or n not in _EN4_NON_WB_V25252: return None
+        kind,detail=_EN4_NON_WB_V25252[n]
+        return {"lesson":n,"resource_type":kind,"detail":detail,"workbook_expected":False}
+    except Exception:
+        return None
+APP_VERSION='v25.252-ENGLISH-Y4-RESOURCE-COVERAGE-160'
+# ===== END v25.252 =====
