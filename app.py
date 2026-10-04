@@ -59,3 +59,50 @@ def _book_physical_page_v25237(ss,key,page):
     except Exception: pass
     return _v25248_phys_base(ss,key,page) if callable(_v25248_phys_base) else int(page)
 APP_VERSION='v25.248-ENGLISH-Y4-WORKBOOK-U5-U10-GAP-FILL'
+
+
+# ===== v25.249 ENGLISH Y4 VERIFIED LITERATURE RESOURCES =====
+# Additive metadata resolver. Workbook/SB/TB page resolvers remain unchanged.
+_EN4_LIT_V25249 = {
+5:("Holiday Memories","Poetry","7, 8-11, 13, 14",""),
+10:("At the Playground","Poetry","26, 27, 30, 31",""),
+15:("Sounds like Magic","Poetry","38, 40",""),
+21:("Grandma's House","Poetry","46, 47, 55",""),
+26:("Clap your hands","Poetry","59, 60",""),
+31:("Noisy Food","Poetry","65, 67-70",""),
+37:("Woodpecker","Poetry","75, 79",""),
+42:("Sand Castle","Poetry","85, 86-89, 96-97",""),
+47:("The King of Kites","Short Story","70-73","book cover / prediction"),
+53:("The King of Kites","Short Story","9-10","kite-making and sewing vocabulary"),
+58:("The King of Kites","Short Story","28, 30","events / sequencing"),
+63:("The King of Kites","Short Story","38-39","character adjectives"),
+69:("The King of Kites","Short Story","80-81","feelings / adjectives"),
+74:("The King of Kites","Short Story","41-44","setting / creative response"),
+79:("The King of Kites","Short Story","52-53","values / advice"),
+85:("The King of Kites","Short Story","56","values"),
+90:("The King of Kites","Short Story","66","invitation / congratulatory card"),
+95:("The King of Kites","Short Story","60, 62-64","encouragement / role play"),
+101:("The Jungle Book","Graphic Novel","27",""),
+106:("The Jungle Book","Graphic Novel","6-12","features / Chapters 1-2"),
+111:("The Jungle Book","Graphic Novel","35-36","Chapters 3-4 / sequence"),
+117:("The Jungle Book","Graphic Novel","33-34, 63","Chapter 5 / feelings"),
+122:("The Jungle Book","Graphic Novel","48",""),
+127:("The Jungle Book","Graphic Novel","62","verbs / jazz chant"),
+133:("The Jungle Book","Graphic Novel","63","The Red Flower"),
+138:("The Jungle Book","Graphic Novel","68-69, 128","Shere Khan / creative response / assessment"),
+143:("The Jungle Book","Graphic Novel","70","Akela's death / poem"),
+149:("The Jungle Book","Graphic Novel","73","Mowgli: jungle or village"),
+154:("The Jungle Book","Graphic Novel","77","characters / values"),
+159:("The Jungle Book","Graphic Novel","84-88, 128","Readers' Theatre / assessment"),
+}
+def _en_y4_literature_resource_v25249(ss):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        n=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+        if y != 4 or n not in _EN4_LIT_V25249: return None
+        title,kind,pages,focus=_EN4_LIT_V25249[n]
+        return {"lesson":n,"title":title,"type":kind,"guide_pages":pages,"focus":focus,"source":"CCL Teaching Guidebook (BPK)"}
+    except Exception:
+        return None
+APP_VERSION='v25.249-ENGLISH-Y4-LITERATURE-30-VERIFIED'
+# ===== END v25.249 =====
