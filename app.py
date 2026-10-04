@@ -35724,3 +35724,45 @@ _EN_LOCAL_BOOK_CHUNKS_V25234.update({
 })
 APP_VERSION='v25.236-ENGLISH-Y1-Y4-COMPLETE-BOOK-RUNTIME'
 # ===== END v25.236 =====
+
+# ===== v25.237 ENGLISH Y3 STUDENT BOOK PRINTED-PAGE OFFSET FIX =====
+# Verified runtime QA: Lesson 72 requests printed SB pp.48-49 but PDF physical
+# pages 48-49 display printed pp.46-47. For Y3 Student's Book only, printed
+# page N therefore maps to physical PDF page N+2. Other years/books untouched.
+def _book_physical_page_v25237(ss,key,page):
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    p=int(page)
+    if y==3 and key=='textbook':
+        return p+2
+    return p
+
+def _local_book_chunk_v25234(ss,key,page):
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    kind='textbook' if key=='textbook' else 'workbook'
+    physical=_book_physical_page_v25237(ss,key,page)
+    for a,b,rel in _EN_LOCAL_BOOK_CHUNKS_V25234.get((y,kind),[]):
+        if a<=physical<=b:
+            path=_os_v25232.path.join(_v25234_app_root(),rel)
+            if _os_v25232.path.isfile(path): return path,a,b
+    return None
+
+def _slice_local_chunks_v25234(ss,key,pages,out):
+    try:
+        from pypdf import PdfReader, PdfWriter
+    except Exception:
+        from PyPDF2 import PdfReader, PdfWriter
+    wr=PdfWriter(); cache={}
+    for p in pages:
+        hit=_local_book_chunk_v25234(ss,key,p)
+        if not hit: return False
+        path,a,b=hit
+        if path not in cache: cache[path]=PdfReader(path)
+        physical=_book_physical_page_v25237(ss,key,p)
+        idx=physical-a
+        if idx<0 or idx>=len(cache[path].pages): return False
+        wr.add_page(cache[path].pages[idx])
+    with open(out,'wb') as f: wr.write(f)
+    return True
+
+APP_VERSION='v25.237-ENGLISH-Y3-STUDENT-BOOK-PAGE-OFFSET-FIX'
+# ===== END v25.237 =====
