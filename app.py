@@ -35872,3 +35872,49 @@ def _en_book_pages_v25232(ss,key):
 
 APP_VERSION='v25.239-ENGLISH-PRIMARY-EXACT-BOOK-RANGE-DELIVERY'
 # ===== END v25.239 =====
+
+
+# ===== v25.240 ENGLISH WORKBOOK VERIFIED-STATE FALLBACK =====
+# Preserve verified activity_book_mappings first; fall back only to verified
+# Workbook page fields already carried by the selected English Primary lesson.
+_v25240_activity_rows_base = globals().get('_lesson_activity_book_rows_v2407')
+
+def _lesson_activity_book_rows_v2407(ss):
+    rows=[]
+    if callable(_v25240_activity_rows_base):
+        try:
+            rows=_v25240_activity_rows_base(ss) or []
+        except Exception:
+            rows=[]
+    if rows:
+        return rows
+    try:
+        if str((ss or {}).get('subject') or '').strip().lower() not in ('bahasa inggeris','english','english language'):
+            return []
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        if y not in (1,2,3,4):
+            return []
+        status=str((ss or {}).get('workbook_status') or '').strip().lower()
+        if status and any(x in status for x in ('pending','unverified','unknown','not verified')):
+            return []
+        p1=(ss or {}).get('workbook_page_start')
+        p2=(ss or {}).get('workbook_page_end')
+        if p1 in (None,''):
+            return []
+        a=int(p1); b=int(p2 if p2 not in (None,'') else a)
+        if not (1 <= a <= b and b-a <= 20):
+            return []
+        return [{
+            'year_label':(ss or {}).get('year',''),
+            'subject':(ss or {}).get('subject',''),
+            'unit_title':(ss or {}).get('topic') or (ss or {}).get('quick_content_v2391') or '',
+            'lesson_title':str((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no') or ''),
+            'page_start':a,'page_end':b,
+            'mapping_status':status or 'verified_lesson_state',
+            'source':'verified_lesson_state',
+        }]
+    except Exception:
+        return []
+
+APP_VERSION='v25.240-ENGLISH-WORKBOOK-VERIFIED-STATE-FALLBACK'
+# ===== END v25.240 =====
