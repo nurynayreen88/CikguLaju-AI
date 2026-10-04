@@ -35766,3 +35766,56 @@ def _slice_local_chunks_v25234(ss,key,pages,out):
 
 APP_VERSION='v25.237-ENGLISH-Y3-STUDENT-BOOK-PAGE-OFFSET-FIX'
 # ===== END v25.237 =====
+
+
+# ===== v25.238 ENGLISH Y3 FINAL AUTO SK/SP FLOW LOCK =====
+# Regression guard only: a selected Year 3 English Lesson must never reopen the
+# legacy manual SK/SP screens. Rehydrate the verified SOW mapping if needed and
+# continue through the existing Lesson -> Class flow. Other subjects/years untouched.
+def _en3_selected_lesson_v25238(ss):
+    if _english_primary_year_number_v2517((ss or {}).get('year')) != 3:
+        return 0
+    subj=str((ss or {}).get('subject') or '').strip().casefold()
+    if subj not in ('english','bahasa inggeris'):
+        return 0
+    r=(ss or {}).get('_en98_selected_staging_row') or {}
+    raw=(ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no') or r.get('lesson_no')
+    try: return int(raw)
+    except Exception: return 0
+
+def _en3_resume_after_standard_guard_v25238(cid):
+    ss=state.setdefault(cid,{})
+    lesson=_en3_selected_lesson_v25238(ss)
+    if not lesson:
+        return False
+    ss['lesson_no']=lesson; ss['lesson']=lesson; ss['textbook_lesson_no']=lesson
+    if not _english_y3_y6_apply_sow_v2517(ss,lesson):
+        return False
+    ss['requires_teacher_standard_selection']=False
+    ss['auto_sow_mapping']=True
+    ss['skip_manual_sk_sp']=True
+    ss['teacher_select_standards']=False
+    ss['manual_standard_selection']=False
+    ss['quick_material_flow']=True
+    return True
+
+_render_rph_sp_multiselect_before_v25238=_render_rph_sp_multiselect
+def _render_rph_sp_multiselect(cid):
+    if _en3_resume_after_standard_guard_v25238(cid):
+        return _lesson_to_class_v2439(cid)
+    return _render_rph_sp_multiselect_before_v25238(cid)
+
+_show_rph_sp_before_v25238=show_rph_sp
+def show_rph_sp(cid,sk_index):
+    if _en3_resume_after_standard_guard_v25238(cid):
+        return _lesson_to_class_v2439(cid)
+    return _show_rph_sp_before_v25238(cid,sk_index)
+
+_show_curriculum_sp_before_v25238=show_curriculum_sp
+def show_curriculum_sp(cid,sk_index):
+    if _en3_resume_after_standard_guard_v25238(cid):
+        return _lesson_to_class_v2439(cid)
+    return _show_curriculum_sp_before_v25238(cid,sk_index)
+
+APP_VERSION='v25.238-ENGLISH-Y3-AUTO-SK-SP-FLOW-RESTORE'
+# ===== END v25.238 =====
