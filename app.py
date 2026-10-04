@@ -128,3 +128,29 @@ def _en_y4_literature_resource_v25249(ss):
     return item
 APP_VERSION='v25.250-ENGLISH-Y4-LITERATURE-DOWNLOAD-SOURCES'
 # ===== END v25.250 =====
+
+
+# ===== v25.251 ENGLISH Y4 WORKBOOK CROSS-VERIFIED ADDITIONS =====
+_EN_WB_VERIFIED_Y4_V25251 = dict(_EN_WB_VERIFIED_Y4_V25248)
+_EN_WB_VERIFIED_Y4_V25251.update({105:(61,60),107:(64,63),125:(73,72),141:(82,81)})
+_v25251_pages_base = _en_book_pages_v25232
+def _en_book_pages_v25232(ss,key):
+    if key == 'activity' and _en_primary_v25232(ss):
+        try:
+            y=_english_primary_year_number_v2517((ss or {}).get('year'))
+            n=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            if y == 4 and n in _EN_WB_VERIFIED_Y4_V25251: return [int(_EN_WB_VERIFIED_Y4_V25251[n][0])]
+        except Exception: pass
+    return _v25251_pages_base(ss,key) if callable(_v25251_pages_base) else []
+_v25251_phys_base = _book_physical_page_v25237
+def _book_physical_page_v25237(ss,key,page):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        n=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+        if y == 4 and key == 'activity' and n in _EN_WB_VERIFIED_Y4_V25251:
+            item=_EN_WB_VERIFIED_Y4_V25251[n]
+            if int(page)==int(item[0]): return int(item[1])
+    except Exception: pass
+    return _v25251_phys_base(ss,key,page) if callable(_v25251_phys_base) else int(page)
+APP_VERSION='v25.251-ENGLISH-Y4-WORKBOOK-CROSS-VERIFIED'
+# ===== END v25.251 =====
