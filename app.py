@@ -34917,3 +34917,77 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2603_stable):
 
 APP_VERSION='v26.03-PI-JAWI-RENDER-GLYPH-COMPAT'
 # ===== END v26.03 =====
+
+# ===== v26.04 PI EXACT JAWI GLYPH PRESERVATION =====
+# Do not replace valid Malay Jawi codepoints (e.g. ݢ U+0762 or ۏ U+06CF).
+# Resolve a font that actually contains the source glyphs. DB/source text is untouched.
+
+def _pi_exact_jawi_font_v2604(text, bold=False):
+    import os, tempfile, urllib.request
+    required={ord(ch) for ch in str(text or '') if 0x0600 <= ord(ch) <= 0x08FF}
+    local=([] if bold else []) + ([
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+        '/usr/share/fonts/opentype/freefont/FreeSerifBold.otf',
+        '/usr/share/fonts/truetype/freefont/FreeSerifBold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+        '/usr/share/fonts/opentype/freefont/FreeSerif.otf',
+        '/usr/share/fonts/truetype/freefont/FreeSerif.ttf',
+    ])
+    for p in local:
+        if os.path.isfile(p) and required.issubset(_font_cmap_v25226(p)):
+            return p
+
+    fn='NotoNaskhArabic-Bold.ttf' if bold else 'NotoNaskhArabic-Regular.ttf'
+    dst=os.path.join(tempfile.gettempdir(),'cikgulaju_v2604_'+fn)
+    urls=[
+      'https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoNaskhArabic/hinted/ttf/'+fn,
+      'https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/ttf/NotoNaskhArabic/'+fn,
+    ]
+    if os.path.isfile(dst) and os.path.getsize(dst)>10000:
+        try:
+            if required.issubset(_font_cmap_v25226(dst)):
+                return dst
+        except Exception:
+            pass
+    for url in urls:
+        try:
+            urllib.request.urlretrieve(url,dst)
+            # invalidate cmap cache if this path was previously inspected
+            try: _font_cmap_v25226.cache.pop(dst,None)
+            except Exception: pass
+            if os.path.isfile(dst) and os.path.getsize(dst)>10000 and required.issubset(_font_cmap_v25226(dst)):
+                return dst
+        except Exception as e:
+            print('v26.04 exact Jawi font fetch failed',url,repr(e),flush=True)
+
+    # Never silently change a valid Jawi letter to another letter.
+    # Use the best installed font and log missing codepoints for diagnosis.
+    p=_best_jawi_font_v25226(text,bold)
+    missing=sorted(required-_font_cmap_v25226(p))
+    if missing:
+        print('v26.04 EXACT JAWI FONT MISSING', [f'U+{x:04X}' for x in missing], 'FONT',p,flush=True)
+    return p
+
+_JawiRasterParagraph_v2604_stable=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2604_stable):
+    def __init__(self,text,style):
+        # Bypass v26.03's render-only letter substitution by restoring the exact
+        # cleaned source text after the stable constructor has set layout state.
+        exact=_pi_safe_unicode_v2602(_pi_term_cleanup_v2601(text))
+        super().__init__(exact,style)
+        self.text=exact
+        self._v2604_font_path=_pi_exact_jawi_font_v2604(self.text,bool(getattr(self,'bold',False)))
+        self._v2599_font_path=self._v2604_font_path
+        self._v25226_font_path=self._v2604_font_path
+
+    def _font(self,px):
+        from PIL import ImageFont
+        return ImageFont.truetype(self._v2604_font_path,px)
+
+APP_VERSION='v26.04-PI-EXACT-JAWI-GLYPH-PRESERVATION'
+# ===== END v26.04 =====
