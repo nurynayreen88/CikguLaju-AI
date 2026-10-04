@@ -5,6 +5,25 @@
 # NOTE: printed pp.2-3 are absent from the available Workbook PDF and are not promoted here.
 
 Y3_WB_VERIFIED_LESSON_MAP = {
+
+    1:  {"printed": 2, "pdf": null, "tb_page": 18, "evidence": "TB p.18 Workbook block explicitly covers Welcome Workbook opening activity; source PDF page missing"},
+    2:  {"printed": 2, "pdf": null, "tb_page": 19, "evidence": "TB p.19 Workbook Activities 1-3; printed p.2 absent from available source PDF"},
+    3:  {"printed": 3, "pdf": null, "tb_page": 20, "evidence": "TB p.20 Workbook block continues Welcome opening spread; printed p.3 absent from available source PDF"},
+    6:  {"printed": 3, "pdf": null, "tb_page": 21, "evidence": "TB p.21 Workbook block on Welcome opening spread; printed p.3 absent from available source PDF"},
+    7:  {"printed": 3, "pdf": null, "tb_page": 21, "evidence": "Same verified TB p.21 Workbook block; source PDF p.3 missing"},
+    8:  {"printed": 4, "pdf": 3, "tb_page": 22, "evidence": "TB p.22 Workbook block aligns with available WB p.4"},
+    12: {"printed": 5, "pdf": 4, "tb_page": 25, "evidence": "TB pp.24-25 Workbook block aligns with WB p.5"},
+    17: {"printed": 10, "pdf": 9, "tb_page": 32, "evidence": "TB p.32 Workbook opening block aligns with WB Unit 2 p.10"},
+    22: {"printed": 11, "pdf": 10, "tb_page": 35, "evidence": "TB p.35 Workbook block aligns with WB p.11"},
+    23: {"printed": 11, "pdf": 10, "tb_page": 35, "evidence": "Same verified TB p.35 Workbook block"},
+    25: {"printed": 12, "pdf": 11, "tb_page": 37, "evidence": "TB p.37 Workbook block aligns with WB p.12"},
+    27: {"printed": 12, "pdf": 11, "tb_page": 37, "evidence": "Same verified TB p.37 Workbook block"},
+    30: {"printed": 14, "pdf": 13, "tb_page": 40, "evidence": "TB p.40 Workbook block aligns with WB Project p.14"},
+    44: {"printed": 21, "pdf": 20, "tb_page": 53, "evidence": "TB pp.51-53 Workbook/Let's play sequence aligns with WB p.21"},
+    67: {"printed": 34, "pdf": 35, "tb_page": 76, "evidence": "TB p.76 continuation of verified Unit 5 opening Workbook block"},
+    77: {"printed": 38, "pdf": 39, "tb_page": 82, "evidence": "TB p.82 Workbook block aligns with Unit 5 writing/story sequence"},
+    78: {"printed": 38, "pdf": 39, "tb_page": 82, "evidence": "Same verified TB p.82 Workbook block"},
+
     9:  {"printed": 4, "pdf": 3, "tb_page": 23, "evidence": "TB Workbook can/can't activities match WB p.4"},
     11: {"printed": 4, "pdf": 3, "tb_page": 23, "evidence": "Same verified TB p.23 Workbook activity block"},
     13: {"printed": 6, "pdf": 5, "tb_page": 27, "evidence": "TB Workbook family/hair activities match WB Project p.6"},
