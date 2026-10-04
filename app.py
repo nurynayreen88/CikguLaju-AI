@@ -35650,3 +35650,77 @@ def _send_en_book_pages_v25232(cid,ss,key):
 
 APP_VERSION='v25.234-ENGLISH-LOCAL-BOOK-DELIVERY-NO-GCLOUD'
 # ===== END v25.234 =====
+
+# ===== v25.235 ENGLISH PRIMARY Y1-Y4 COMPLETE LOCAL BOOK LIBRARY =====
+# Full local runtime coverage for verified English Y1-Y4 Student Book / Workbook sources.
+# Y1/Y2 share Super Minds 1 sources. Other subjects remain untouched.
+_EN_LOCAL_BOOK_CHUNKS_V25234.update({
+    (1,'textbook'):[
+        (1,20,'books/english/y12_student_001_020.pdf'),(21,40,'books/english/y12_student_021_040.pdf'),
+        (41,60,'books/english/y12_student_041_060.pdf'),(61,80,'books/english/y12_student_061_080.pdf'),
+        (81,100,'books/english/y12_student_081_100.pdf'),(101,120,'books/english/y12_student_101_120.pdf'),
+        (121,133,'books/english/y12_student_121_133.pdf')],
+    (2,'textbook'):[
+        (1,20,'books/english/y12_student_001_020.pdf'),(21,40,'books/english/y12_student_021_040.pdf'),
+        (41,60,'books/english/y12_student_041_060.pdf'),(61,80,'books/english/y12_student_061_080.pdf'),
+        (81,100,'books/english/y12_student_081_100.pdf'),(101,120,'books/english/y12_student_101_120.pdf'),
+        (121,133,'books/english/y12_student_121_133.pdf')],
+    (1,'workbook'):[
+        (1,20,'books/english/y12_workbook_001_020.pdf'),(21,40,'books/english/y12_workbook_021_040.pdf'),
+        (41,60,'books/english/y12_workbook_041_060.pdf'),(61,80,'books/english/y12_workbook_061_080.pdf'),
+        (81,100,'books/english/y12_workbook_081_100.pdf'),(101,120,'books/english/y12_workbook_101_120.pdf'),
+        (121,129,'books/english/y12_workbook_121_129.pdf')],
+    (2,'workbook'):[
+        (1,20,'books/english/y12_workbook_001_020.pdf'),(21,40,'books/english/y12_workbook_021_040.pdf'),
+        (41,60,'books/english/y12_workbook_041_060.pdf'),(61,80,'books/english/y12_workbook_061_080.pdf'),
+        (81,100,'books/english/y12_workbook_081_100.pdf'),(101,120,'books/english/y12_workbook_101_120.pdf'),
+        (121,129,'books/english/y12_workbook_121_129.pdf')],
+    (3,'textbook'):[
+        (1,20,'books/english/y3_student_001_020.pdf'),(21,40,'books/english/y3_student_021_040.pdf'),
+        (41,60,'books/english/y3_student_041_060.pdf'),(61,80,'books/english/y3_student_061_080.pdf'),
+        (81,100,'books/english/y3_student_081_100.pdf'),(101,120,'books/english/y3_student_101_120.pdf'),
+        (121,136,'books/english/y3_student_121_136.pdf')],
+    (3,'workbook'):[
+        (1,20,'books/english/y3_workbook_001_020.pdf'),(21,40,'books/english/y3_workbook_021_040.pdf'),
+        (41,60,'books/english/y3_workbook_041_060.pdf'),(61,80,'books/english/y3_workbook_061_080.pdf'),
+        (81,96,'books/english/y3_workbook_081_096.pdf')],
+    (4,'textbook'):[
+        (1,20,'books/english/y4_student_001_020.pdf'),(21,40,'books/english/y4_student_021_040.pdf'),
+        (41,60,'books/english/y4_student_041_060.pdf'),(61,80,'books/english/y4_student_061_080.pdf'),
+        (81,100,'books/english/y4_student_081_100.pdf'),(101,120,'books/english/y4_student_101_120.pdf'),
+        (121,140,'books/english/y4_student_121_140.pdf'),(141,160,'books/english/y4_student_141_160.pdf'),
+        (161,177,'books/english/y4_student_161_177.pdf')],
+    (4,'workbook'):[
+        (2,20,'books/english/y4_workbook_002_020.pdf'),(21,40,'books/english/y4_workbook_021_040.pdf'),
+        (41,60,'books/english/y4_workbook_041_060.pdf'),(61,80,'books/english/y4_workbook_061_080.pdf'),
+        (81,100,'books/english/y4_workbook_081_100.pdf'),(101,110,'books/english/y4_workbook_101_110.pdf')],
+})
+
+# Local bundles are authoritative for material availability; do not require a Drive source entry.
+_available_materials_before_v25235=_available_materials_v2528
+def _available_materials_v2528(ss):
+    items=list(_available_materials_before_v25235(ss) or [])
+    if not _en_primary_v25232(ss): return items
+    for key,kind in (('textbook','textbook'),('activity','workbook')):
+        pages=_en_book_pages_v25232(ss,key)
+        if pages and all(_local_book_chunk_v25234(ss,key,p) for p in pages) and key not in items:
+            items.append(key)
+    return items
+
+APP_VERSION='v25.235-ENGLISH-Y1-Y4-COMPLETE-LOCAL-BOOK-LIBRARY'
+# ===== END v25.235 =====
+
+# ===== v25.236 COMPACT Y1-Y4 BOOK CHUNK MAP =====
+# Compact deployment map: all files stay below GitHub browser's 25 MiB limit.
+_Y12_SB_LOCAL_V25236=[(1,40,'books/english/y12_student_001_040.pdf'),(41,60,'books/english/y12_student_041_060.pdf'),(61,80,'books/english/y12_student_061_080.pdf'),(81,120,'books/english/y12_student_081_120.pdf'),(121,133,'books/english/y12_student_121_133.pdf')]
+_Y12_WB_LOCAL_V25236=[(1,40,'books/english/y12_workbook_001_040.pdf'),(41,80,'books/english/y12_workbook_041_080.pdf'),(81,120,'books/english/y12_workbook_081_120.pdf'),(121,129,'books/english/y12_workbook_121_129.pdf')]
+_EN_LOCAL_BOOK_CHUNKS_V25234.update({
+ (1,'textbook'):_Y12_SB_LOCAL_V25236,(2,'textbook'):_Y12_SB_LOCAL_V25236,
+ (1,'workbook'):_Y12_WB_LOCAL_V25236,(2,'workbook'):_Y12_WB_LOCAL_V25236,
+ (3,'textbook'):[(1,60,'books/english/y3_student_001_060.pdf'),(61,120,'books/english/y3_student_061_120.pdf'),(121,136,'books/english/y3_student_121_136.pdf')],
+ (3,'workbook'):[(1,80,'books/english/y3_workbook_001_080.pdf'),(81,96,'books/english/y3_workbook_081_096.pdf')],
+ (4,'textbook'):[(1,20,'books/english/y4_student_001_020.pdf'),(21,100,'books/english/y4_student_021_100.pdf'),(101,177,'books/english/y4_student_101_177.pdf')],
+ (4,'workbook'):[(2,60,'books/english/y4_workbook_002_060.pdf'),(61,110,'books/english/y4_workbook_061_110.pdf')],
+})
+APP_VERSION='v25.236-ENGLISH-Y1-Y4-COMPLETE-BOOK-RUNTIME'
+# ===== END v25.236 =====
