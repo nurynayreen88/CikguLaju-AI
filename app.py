@@ -35121,3 +35121,80 @@ def _english_y4_resource_manifest_v25227(lesson_no):
 
 print('v25.227 ENGLISH Y4 READY',APP_VERSION,DB_PATH,flush=True)
 # ===== END v25.227 =====
+
+# ===== v25.228 ENGLISH Y3-Y4 CLEAN UNIT MENU =====
+# UI-only patch. Keep curriculum/media/RPH logic and all other subjects unchanged.
+_en97_unit_menu_before_v25228 = _en97_unit_menu
+
+def _en97_unit_menu(cid,page=0):
+    ss=state.setdefault(cid,{})
+    y=_english_primary_year_number_v2517(ss.get('year',''))
+    subj=str(ss.get('subject') or '').strip().casefold()
+    if y not in (3,4) or subj not in ('english','bahasa inggeris'):
+        return _en97_unit_menu_before_v25228(cid,page)
+    rows,units=_en97_units(ss.get('year',''))
+    ss['_en97_rows']=rows; ss['_en97_units']=units
+    if not units:
+        return send(cid,'🚧 <b>Unit/Lesson Bahasa Inggeris yang disahkan belum tersedia untuk tahun ini.</b>',
+                    [[{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    # Derive the canonical unit number from staging rows; fall back to display order only
+    # when a legacy row genuinely has no unit_no. No curriculum data is modified.
+    labels=[]
+    for pos,u in enumerate(units,1):
+        uno=None
+        for r in rows:
+            if str(r.get('unit_name') or r.get('unit_title') or '').strip()==u:
+                try:
+                    v=r.get('unit_no')
+                    if v not in (None,''): uno=int(v)
+                except Exception: pass
+                if uno is not None: break
+        labels.append((uno if uno is not None else pos,u))
+    per=10; page=max(0,int(page or 0)); a=page*per; b=min(a+per,len(labels)); kb=[]
+    for i in range(a,b):
+        uno,title=labels[i]
+        kb.append([{'text':f'📘 Unit {uno} - {title}'[:64],'callback_data':f'en97_unit_{i}'}])
+    nav=[]
+    if a: nav.append({'text':'⬅️ Sebelum','callback_data':f'en97_up_{page-1}'})
+    if b<len(labels): nav.append({'text':'Seterusnya ➡️','callback_data':f'en97_up_{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},{'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,f"🇬🇧 <b>Bahasa Inggeris • {html.escape(str(ss.get('year') or ''))}</b>\n\nPilih <b>Unit/Tajuk</b>. Selepas itu pilih Lesson; SK/SP dipadankan automatik.",kb)
+
+APP_VERSION='v25.228-ENGLISH-Y3-Y4-CLEAN-UNIT-MENU'
+# ===== END v25.228 =====
+
+# ===== v25.229 ENGLISH Y3-Y4 CANONICAL UNIT GROUPING =====
+# SOW contains lesson-specific literature/CLIL titles in unit_name for some Y4 rows.
+# Group UI by official unit_no and use the dominant unit title, without changing DB rows.
+_en97_units_before_v25229 = _en97_units
+
+def _en97_units(year_label):
+    y=_english_primary_year_number_v2517(year_label)
+    if y not in (3,4):
+        return _en97_units_before_v25229(year_label)
+    src=_en136_staging_rows(year_label)
+    if not src: return _en97_units_before_v25229(year_label)
+    from collections import Counter
+    byno={}
+    for r in src:
+        try: n=int(r.get('unit_no'))
+        except Exception: continue
+        title=str(r.get('unit_name') or '').strip()
+        if title: byno.setdefault(n,[]).append(title)
+    canon={n:Counter(v).most_common(1)[0][0] for n,v in byno.items() if v}
+    rows=[]
+    for r0 in src:
+        r=dict(r0)
+        try: n=int(r.get('unit_no'))
+        except Exception: n=None
+        if n in canon:
+            # Keep original lesson-specific source title as metadata only.
+            r['_source_unit_name']=r.get('unit_name')
+            r['unit_name']=canon[n]; r['unit_title']=canon[n]
+        rows.append(r)
+    units=[canon[n] for n in sorted(canon)]
+    return rows,units
+
+APP_VERSION='v25.229-ENGLISH-Y3-Y4-CANONICAL-UNIT-GROUPING'
+# ===== END v25.229 =====
