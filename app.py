@@ -36099,3 +36099,33 @@ def _book_physical_page_v25237(ss,key,page):
 
 APP_VERSION='v25.245-ENGLISH-Y4-WORKBOOK-18-VERIFIED'
 # ===== END v25.245 =====
+
+
+# ===== v25.246 ENGLISH Y4 VERIFIED WORKBOOK UNITS 2-4 =====
+_EN_WB_VERIFIED_Y4_V25246 = dict(globals().get('_EN_WB_VERIFIED_Y4_V25245', {}))
+_EN_WB_VERIFIED_Y4_V25246.update({17:(12,11),18:(12,11),19:(13,12),20:(13,12),22:(13,12),24:(14,13),25:(14,13),27:(14,13),28:(16,15),30:(15,14),32:(20,19),33:(21,20),34:(21,20),35:(22,21),36:(22,21),38:(22,21),48:(29,28),49:(30,29),50:(30,29),51:(31,30),52:(31,30),54:(31,30),55:(31,30),56:(32,31),57:(32,31),59:(32,31),60:(33,32),61:(34,33),62:(34,33)})
+_v25246_book_pages_base = globals().get('_en_book_pages_v25232')
+def _en_book_pages_v25232(ss,key):
+    if key == 'activity' and _en_primary_v25232(ss):
+        try:
+            y=_english_primary_year_number_v2517((ss or {}).get('year'))
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            if y == 4:
+                item=_EN_WB_VERIFIED_Y4_V25246.get(lesson)
+                if item: return [int(item[0])]
+        except Exception: pass
+    if callable(_v25246_book_pages_base): return _v25246_book_pages_base(ss,key)
+    return []
+_v25246_physical_base = globals().get('_book_physical_page_v25237')
+def _book_physical_page_v25237(ss,key,page):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        if y == 4 and key == 'activity':
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            item=_EN_WB_VERIFIED_Y4_V25246.get(lesson)
+            if item and int(page)==int(item[0]): return int(item[1])
+    except Exception: pass
+    if callable(_v25246_physical_base): return _v25246_physical_base(ss,key,page)
+    return int(page)
+APP_VERSION='v25.246-ENGLISH-Y4-WORKBOOK-47-VERIFIED'
+# ===== END v25.246 =====
