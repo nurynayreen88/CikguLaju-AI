@@ -35332,3 +35332,194 @@ def _en98_lesson_menu(cid,unit_idx):
 
 APP_VERSION='v25.230-ENGLISH-Y3-Y4-TEXTBOOK-PAGE-MENU'
 # ===== END v25.230 =====
+
+# ===== v25.231 ENGLISH PRIMARY MAIN/SUPPLEMENTARY SB PAGE SEPARATION =====
+# UI rule: lesson button shows only the main Student's Book page(s).
+# Verified supplementary/cut-out/resource pages remain available as named material references.
+# Scope is intentionally limited to English Primary Y3/Y4; all other subjects/years delegate unchanged.
+_EN34_MAIN_SB_V25231 = {
+    (3,108): '70',
+    (4,157): '110',
+}
+_EN34_SUPP_SB_V25231 = {
+    (3,108): [('Cut-out Cards – Places', '131')],
+    (4,157): [('Supplementary Student’s Book Resource', '133')],
+}
+
+_en34_verified_sb_pages_before_v25231 = _en34_verified_sb_pages_v25230
+def _en34_verified_sb_pages_v25230(r, y):
+    try: lesson=int((r or {}).get('lesson_no') or 0)
+    except Exception: lesson=0
+    forced=_EN34_MAIN_SB_V25231.get((y,lesson))
+    if forced is not None:
+        return forced
+    return _en34_verified_sb_pages_before_v25231(r,y)
+
+def _en34_supplementary_sb_v25231(ss):
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    if y not in (3,4) or str((ss or {}).get('subject') or '').strip().casefold() not in ('english','bahasa inggeris'):
+        return []
+    r=(ss or {}).get('_en98_selected_staging_row') or {}
+    try: lesson=int(r.get('lesson_no') or (ss or {}).get('textbook_lesson_no') or 0)
+    except Exception: lesson=0
+    return list(_EN34_SUPP_SB_V25231.get((y,lesson),[]))
+
+_send_reference_material_before_v25231 = _send_reference_material_v2528
+def _send_reference_material_v2528(cid,ss,key):
+    result=_send_reference_material_before_v25231(cid,ss,key)
+    if key=='textbook':
+        extras=_en34_supplementary_sb_v25231(ss)
+        if extras:
+            lines=['📎 <b>Bahan Tambahan Student’s Book</b>']
+            for name,page in extras:
+                lines.append('• '+html.escape(name)+' — SB m/s '+html.escape(str(page)))
+            send(cid,'\n'.join(lines))
+    return result
+
+APP_VERSION='v25.231-ENGLISH-PRIMARY-MAIN-SUPPLEMENTARY-SB'
+# ===== END v25.231 =====
+
+# ===== v25.232 ENGLISH PRIMARY Y1-Y6 BOOK-PAGE DOWNLOAD ENGINE =====
+# Non-destructive scope: English Primary only. Other subjects keep the v25.38 behaviour.
+# A book is offered only when both (a) a verified lesson page mapping exists and
+# (b) a verified source PDF is registered. Missing mappings/files are never guessed.
+import re as _re_v25232, os as _os_v25232, tempfile as _tmp_v25232
+
+_EN_PRIMARY_BOOK_SOURCES_V25232 = {
+    # year: source PDFs verified in the user's English Drive library
+    1: {'workbook': ('1_pOiQrz0uYTNz1Jwj2Zy-h99Yt-NjMVL','Super Minds 1 Workbook')},
+    2: {'workbook': ('1_pOiQrz0uYTNz1Jwj2Zy-h99Yt-NjMVL','Super Minds 1 Workbook')},
+    3: {'textbook': ('1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q',"Get Smart Plus 3 Student's Book"),
+        'workbook': ('1fg-U2iUX-S2HvQBYCXGBag6CDosfZJY2','Get Smart Plus 3 Workbook')},
+    4: {'textbook': ('12IyGg-Mw3Pn38GxZGkVrqGkjMVJsgZfN',"Get Smart Plus 4 Student's Book"),
+        'workbook': ('1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX','Get Smart Plus 4 Workbook')},
+    # Y5/Y6 intentionally stay empty until their actual SB/WB PDFs are present/verified.
+    5: {}, 6: {},
+}
+
+def _en_primary_v25232(ss):
+    return (_english_primary_year_number_v2517((ss or {}).get('year')) in (1,2,3,4,5,6)
+            and str((ss or {}).get('subject') or '').strip().casefold() in ('english','bahasa inggeris'))
+
+def _v25232_nums(raw):
+    """Extract printed page numbers/ranges only; activity numbers are ignored by using the first page token."""
+    s=str(raw or '').replace('–','-')
+    m=_re_v25232.search(r'(?:pp?\.|m/s|ms\.)\s*(\d+)(?:\s*-\s*(\d+))?',s,_re_v25232.I)
+    if not m: return []
+    a=int(m.group(1)); b=int(m.group(2) or a)
+    if a<1 or b<a or b-a>20: return []
+    return list(range(a,b+1))
+
+def _en_book_pages_v25232(ss,key):
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    if key=='textbook':
+        # Y3/Y4: use the final lesson-menu main-page resolver so supplementary pages
+        # (e.g. Y3 L108 p.131 cut-out cards) are not mixed into the main SB download.
+        r=(ss or {}).get('_en98_selected_staging_row') or {}
+        if y in (3,4) and r:
+            try: raw=_en34_verified_sb_pages_v25230(r,y)
+            except Exception: raw=''
+            nums=_v25232_nums('m/s '+str(raw)) if raw else []
+            if nums: return nums
+        for raw in ((ss or {}).get('textbook_page_start'),(ss or {}).get('textbook_page'),(ss or {}).get('page')):
+            if raw not in (None,''):
+                try:
+                    a=int(raw); b=int((ss or {}).get('textbook_page_end') or a)
+                    if 1<=a<=b and b-a<=20: return list(range(a,b+1))
+                except Exception: pass
+        # Y3 verified reference fallback.
+        if y==3:
+            refs=(ss or {}).get('_en3_book_refs_v2595') or _en3_book_refs_v2595(r)
+            if refs.get('sb'): return _v25232_nums(refs['sb'][0])
+        return []
+    if key=='activity':
+        try: rows=_lesson_activity_book_rows_v2407(ss) or []
+        except Exception: rows=[]
+        pages=[]
+        for r in rows:
+            try:
+                a=int(r.get('page_start') or r.get('page_no') or r.get('page'))
+                b=int(r.get('page_end') or a)
+                if 1<=a<=b and b-a<=20:
+                    pages.extend(range(a,b+1))
+            except Exception: pass
+        return sorted(set(pages))
+    return []
+
+def _en_book_source_v25232(ss,key):
+    y=_english_primary_year_number_v2517((ss or {}).get('year'))
+    return (_EN_PRIMARY_BOOK_SOURCES_V25232.get(y) or {}).get('textbook' if key=='textbook' else 'workbook')
+
+def _drive_pdf_v25232(file_id):
+    import requests as _rq_v25232
+    fd,path=_tmp_v25232.mkstemp(prefix='cikgulaju_book_',suffix='.pdf'); _os_v25232.close(fd)
+    try:
+        urls=[f'https://drive.usercontent.google.com/download?id={file_id}&export=download&confirm=t',
+              f'https://drive.google.com/uc?export=download&id={file_id}']
+        for url in urls:
+            rr=_rq_v25232.get(url,timeout=120,allow_redirects=True)
+            if rr.ok and rr.content[:4]==b'%PDF':
+                with open(path,'wb') as f: f.write(rr.content)
+                return path
+        raise RuntimeError('source PDF download failed')
+    except Exception:
+        try: _os_v25232.unlink(path)
+        except Exception: pass
+        raise
+
+def _slice_pdf_v25232(src,pages,out):
+    try:
+        from pypdf import PdfReader, PdfWriter
+    except Exception:
+        from PyPDF2 import PdfReader, PdfWriter
+    rd=PdfReader(src); wr=PdfWriter()
+    for p in pages:
+        idx=int(p)-1
+        if idx<0 or idx>=len(rd.pages): raise RuntimeError('book page outside PDF')
+        wr.add_page(rd.pages[idx])
+    with open(out,'wb') as f: wr.write(f)
+    return out
+
+def _send_en_book_pages_v25232(cid,ss,key):
+    if not _en_primary_v25232(ss): return False
+    src=_en_book_source_v25232(ss,key); pages=_en_book_pages_v25232(ss,key)
+    if not src or not pages: return False
+    fid,title=src; lesson=(ss or {}).get('lesson_no') or (ss or {}).get('textbook_lesson_no') or ''
+    source_path=out_path=None
+    try:
+        source_path=_drive_pdf_v25232(fid)
+        label='Student Book' if key=='textbook' else 'Workbook'
+        pg='-'.join(map(str,(pages[0],pages[-1]))) if len(pages)>1 else str(pages[0])
+        out_path=_os_v25232.path.join(_tmp_v25232.gettempdir(),f'English_Y{_english_primary_year_number_v2517(ss.get("year"))}_Lesson_{lesson}_{label.replace(" ","_")}_ms_{pg}.pdf')
+        _slice_pdf_v25232(source_path,pages,out_path)
+        send_document(cid,out_path,f'📘 {label} • Lesson {lesson} • m/s {pg}')
+        return True
+    except Exception as e:
+        print('v25.232 English book page delivery',key,repr(e),flush=True)
+        return False
+    finally:
+        for p in (source_path,out_path):
+            try:
+                if p and _os_v25232.path.exists(p): _os_v25232.unlink(p)
+            except Exception: pass
+
+_available_materials_before_v25232=_available_materials_v2528
+def _available_materials_v2528(ss):
+    items=list(_available_materials_before_v25232(ss) or [])
+    if not _en_primary_v25232(ss): return items
+    # Re-enable only real downloadable English book materials; v25.38 remains intact elsewhere.
+    if _en_book_source_v25232(ss,'textbook') and _en_book_pages_v25232(ss,'textbook') and 'textbook' not in items:
+        items.append('textbook')
+    if _en_book_source_v25232(ss,'activity') and _en_book_pages_v25232(ss,'activity') and 'activity' not in items:
+        items.append('activity')
+    return items
+
+_send_reference_material_before_v25232=_send_reference_material_v2528
+def _send_reference_material_v2528(cid,ss,key):
+    if key in ('textbook','activity') and _en_primary_v25232(ss):
+        if _send_en_book_pages_v25232(cid,ss,key): return True
+        return False
+    return _send_reference_material_before_v25232(cid,ss,key)
+
+APP_VERSION='v25.232-ENGLISH-Y1-Y6-BOOK-PAGE-DOWNLOAD'
+# ===== END v25.232 =====
