@@ -35030,3 +35030,47 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2605_stable):
 
 APP_VERSION='v26.05-PI-EXACT-JAWI-MARKUP-SAFE'
 # ===== END v26.05 =====
+
+# ===== v26.06 PI EXACT JAWI RAQM SHAPING =====
+# Preserve source Jawi codepoints exactly. Force a full-coverage Noto Sans Arabic
+# font and Pillow RAQM/HarfBuzz shaping for Malay Jawi. No DB/content changes.
+def _pi_jawi_font_v2606(text, bold=False):
+    import os
+    required={ord(ch) for ch in str(text or '') if 0x0600 <= ord(ch) <= 0x08FF}
+    candidates=([
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+    ])
+    for p in candidates:
+        if os.path.isfile(p) and required.issubset(_font_cmap_v25226(p)):
+            return p
+    # v26.04 resolver can fetch a full Noto font if cloud image is minimal.
+    return _pi_exact_jawi_font_v2604(text,bold)
+
+_JawiRasterParagraph_v2606_stable=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
+    def __init__(self,text,style):
+        # Start from v26.05 markup-safe plain text; never substitute Jawi letters.
+        super().__init__(text,style)
+        self.text=_pi_markup_to_plain_v2605(text)[0]
+        self._v2606_font_path=_pi_jawi_font_v2606(self.text,bool(getattr(self,'bold',False)))
+        missing=sorted({ord(c) for c in self.text if 0x0600 <= ord(c) <= 0x08FF}-_font_cmap_v25226(self._v2606_font_path))
+        if missing:
+            print('v26.06 JAWI MISSING', [f'U+{x:04X}' for x in missing], self._v2606_font_path, flush=True)
+
+    def _font(self,px):
+        from PIL import ImageFont
+        # RAQM invokes FriBiDi + HarfBuzz and is required for correct contextual
+        # Arabic/Jawi shaping. Fall back only if this Pillow build lacks RAQM.
+        try:
+            return ImageFont.truetype(self._v2606_font_path,px,layout_engine=ImageFont.Layout.RAQM)
+        except Exception:
+            return ImageFont.truetype(self._v2606_font_path,px)
+
+APP_VERSION='v26.06-PI-EXACT-JAWI-RAQM-SHAPING'
+# ===== END v26.06 =====
