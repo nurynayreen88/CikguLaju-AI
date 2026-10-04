@@ -35198,3 +35198,137 @@ def _en97_units(year_label):
 
 APP_VERSION='v25.229-ENGLISH-Y3-Y4-CANONICAL-UNIT-GROUPING'
 # ===== END v25.229 =====
+
+# ===== v25.230 ENGLISH YEAR 3-4 VERIFIED STUDENT BOOK PAGE MENU =====
+# Narrow UI-only patch. Restores verified Year 3 SOW page display after later menu overrides
+# and exposes only evidence-backed Year 4 Student's Book pages. No other subject/year changed.
+import re as _re_v25230
+
+_Y4_SB_PAGES_V25230 = {
+    8:'8',
+    11:'12–13',
+    12:'14',
+    13:'11',
+    14:'27',
+    17:'15',
+    18:'15, 16',
+    22:'16–17',
+    24:'18–19',
+    25:'18',
+    27:'19',
+    28:'21',
+    30:'20',
+    33:'118',
+    34:'27',
+    35:'50',
+    38:'29',
+    40:'30',
+    41:'31',
+    43:'27, 28, 29, 30, 31',
+    45:'32',
+    46:'33',
+    48:'36',
+    49:'37',
+    50:'37',
+    51:'38',
+    52:'38',
+    54:'38–39',
+    56:'40',
+    57:'40',
+    59:'40–41',
+    61:'43',
+    62:'43',
+    64:'48',
+    65:'120',
+    66:'49',
+    67:'51',
+    70:'52–53',
+    73:'55',
+    75:'57',
+    76:'54',
+    81:'59',
+    82:'59',
+    83:'60–61',
+    87:'61',
+    88:'62',
+    91:'63',
+    92:'65',
+    93:'66–67',
+    94:'64',
+    97:'71',
+    98:'71',
+    100:'73',
+    102:'73',
+    103:'73, 74–75',
+    105:'75',
+    107:'66–67',
+    108:'76',
+    113:'81',
+    115:'82',
+    116:'82',
+    119:'83',
+    120:'84',
+    121:'84–85',
+    124:'86',
+    125:'88–89',
+    126:'87',
+    129:'93',
+    134:'93',
+    136:'96',
+    137:'97',
+    139:'97',
+    140:'98',
+    141:'100',
+    142:'99',
+    145:'103',
+    146:'103',
+    147:'104',
+    152:'106–107',
+    157:'110–133',
+    158:'109',
+}
+
+def _en34_verified_sb_pages_v25230(r, y):
+    try: lesson=int((r or {}).get('lesson_no') or 0)
+    except Exception: lesson=0
+    if y==4:
+        return _Y4_SB_PAGES_V25230.get(lesson,'')
+    if y!=3:
+        return ''
+    raw=str((r or {}).get('references_text') or '')
+    found=[]
+    # Only explicit Student's Book page references present in the verified SOW row.
+    pat=r"Student[’']s Book(?:,)?\s*(?:\(|)\s*(p{1,2}\.\s*[0-9]+(?:\s*[–-]\s*[0-9]+)?)"
+    for m in _re_v25230.finditer(pat,raw,_re_v25230.I):
+        x=m.group(1)
+        x=_re_v25230.sub(r'^pp?\.\s*','',x,flags=_re_v25230.I)
+        x=x.replace('-','–').strip()
+        if x and x not in found: found.append(x)
+    return ', '.join(found)
+
+_en98_lesson_menu_before_v25230=_en98_lesson_menu
+def _en98_lesson_menu(cid,unit_idx):
+    ss=state.setdefault(cid,{})
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    if y not in (3,4) or str(ss.get('subject') or '').strip().casefold() not in ('english','bahasa inggeris'):
+        return _en98_lesson_menu_before_v25230(cid,unit_idx)
+    rows,units=_en97_units(ss.get('year',''))
+    ss['_en97_rows']=rows; ss['_en97_units']=units
+    if unit_idx<0 or unit_idx>=len(units): return _en97_unit_menu(cid)
+    unit=units[unit_idx]
+    items=[r for r in rows if str(r.get('unit_name') or r.get('unit_title') or '').strip()==unit and str(r.get('lesson_no') or '').strip()]
+    if not items: return _en97_unit_menu(cid)
+    ss['_en98_items']=items; ss['quick_content_v2391']=unit; ss['unit']=unit; ss['subtopic']=unit
+    kb=[]
+    for i,r in enumerate(items):
+        lesson=str(r.get('lesson_no') or '').strip(); focus=str(r.get('focus') or '').strip()
+        pg=_en34_verified_sb_pages_v25230(r,y)
+        label=f'📚 Lesson {lesson}'
+        if focus: label+=f' • {focus}'
+        if pg: label+=f' • SB m/s {pg}'
+        kb.append([{'text':label[:64],'callback_data':f'en98_lesson_{i}'}])
+    kb.append([{'text':'⬅️ Pilih Unit Lain','callback_data':'en97_up_0'}])
+    return send(cid,f"📚 <b>{html.escape(unit)}</b>\n\nPilih <b>Lesson</b>. M/s Student’s Book dipaparkan apabila telah disahkan. SK/SP ditentukan automatik daripada SOW.",kb)
+
+APP_VERSION='v25.230-ENGLISH-Y3-Y4-TEXTBOOK-PAGE-MENU'
+# ===== END v25.230 =====
