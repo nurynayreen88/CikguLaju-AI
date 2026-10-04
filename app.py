@@ -34873,3 +34873,47 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2602_stable):
 
 APP_VERSION='v26.02-PI-SAFE-TEXT-NORMALIZATION'
 # ===== END v26.02 =====
+
+# ===== v26.03 PI JAWI RENDER-GLYPH COMPATIBILITY FIX =====
+# Fix the remaining tofu box seen on Render for Jawi GA (U+0762 ݢ).
+# Some minimal Linux images fall back to DejaVu Sans, which does not contain
+# U+0762 even though it can shape the rest of Malay Jawi.  Keep the source/DB
+# text unchanged; only the raster-render copy uses the compatible Arabic GA
+# glyph U+06AC (ڬ) when the selected runtime font lacks U+0762.
+
+def _pi_runtime_glyph_compat_v2603(text, font_path):
+    t=str(text or '')
+    try:
+        cmap=_font_cmap_v25226(font_path)
+    except Exception:
+        cmap=set()
+    # Standard DB/source remains ݢ.  This substitution is render-only and is
+    # activated solely when the runtime font cannot draw that codepoint.
+    if 0x0762 not in cmap:
+        t=t.replace('\u0762','\u06AC')  # ݢ -> ڬ; avoids □ on minimal Render image
+    # Wau with dot above is also absent from DejaVu Sans. Use the closest
+    # supported Jawi/Persian wau form only as a last-resort render fallback.
+    if 0x06CF not in cmap:
+        t=t.replace('\u06CF','\u06CB')  # ۏ -> ۋ, render-only fallback
+    return t
+
+_JawiRasterParagraph_v2603_stable=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2603_stable):
+    def __init__(self,text,style):
+        # Let the stable renderer clean/shape/select its best available font.
+        super().__init__(text,style)
+        fp=(getattr(self,'_v2599_font_path',None)
+            or getattr(self,'_v25226_font_path',None)
+            or _jawi_font_path_v25213(bool(getattr(self,'bold',False))))
+        fixed=_pi_runtime_glyph_compat_v2603(self.text,fp)
+        if fixed != self.text:
+            self.text=fixed
+            # Re-resolve after compatibility substitution so the final font
+            # covers the complete rendered paragraph.
+            try:
+                self._v2599_font_path=_best_jawi_font_v25226(self.text,bool(getattr(self,'bold',False)))
+            except Exception:
+                pass
+
+APP_VERSION='v26.03-PI-JAWI-RENDER-GLYPH-COMPAT'
+# ===== END v26.03 =====
