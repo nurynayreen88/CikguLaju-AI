@@ -36518,7 +36518,7 @@ def _en4_audio_rows_v25258(ss):
     except Exception: lesson_no=0
     return list(_EN4_AUDIO_ALL_V25258.get(lesson_no) or [])
 
-_send_reference_material_before_v25258=_send_reference_material
+_send_reference_material_before_v25258=_send_reference_material_v2528
 def _send_reference_material(cid,ss,key):
     if str((ss or {}).get('subject') or '').strip().lower() in ('english','bahasa inggeris') and int((ss or {}).get('year') or (ss or {}).get('grade') or 0)==4:
         rows=_en4_audio_rows_v25258(ss)
@@ -36941,3 +36941,12 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V25260='ENGLISH_Y3Y6_SOW_TB_GUIDED_RPH'
 # ===== END v25.260 =====
+
+
+# ===== v25.261 STARTUP ORDER FIX =====
+# Fix v25.258 binding: at that point in module load order the verified base
+# sender is named _send_reference_material_v2528. Preserve all later v25.259
+# audio mapping and v25.260 English TB-guided RPH layers unchanged.
+APP_VERSION='v25.261-STARTUP-ORDER-FIX'
+CIKGULAJU_PATCH_V25261='V25258_REFERENCE_MATERIAL_BINDING_FIX'
+# ===== END v25.261 =====
