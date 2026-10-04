@@ -35908,3 +35908,26 @@ def _send_reference_material_v2528(cid,ss,key):
 
 APP_VERSION='v25.253-ENGLISH-Y4-LITERATURE-DOWNLOAD'
 # ===== END v25.253 =====
+
+
+# ===== v25.254 ENGLISH Y4 WORKBOOK LOCAL-PAGE COORDINATE FIX =====
+# Runtime QA showed Lesson 73 labelled Workbook m/s 43 but local slice displayed
+# printed m/s 42. The verified map's second value was recorded as a 1-based PDF
+# page reference, while the local chunk slicer uses its own physical coordinate.
+# For Y4 Workbook local chunks, use the requested printed page as the chunk
+# coordinate. Keep all verified lesson->printed-page mappings unchanged.
+_v25254_physical_base=_book_physical_page_v25237
+def _book_physical_page_v25237(ss,key,page):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        n=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+        if y==4 and key=='activity' and n in _EN4_WB_VERIFIED_V25252:
+            printed,_stored_pdf_ref=_EN4_WB_VERIFIED_V25252[n]
+            if int(page)==int(printed):
+                return int(printed)
+    except Exception:
+        pass
+    return _v25254_physical_base(ss,key,page)
+
+APP_VERSION='v25.254-ENGLISH-Y4-WORKBOOK-PAGE-COORDINATE-FIX'
+# ===== END v25.254 =====
