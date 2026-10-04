@@ -36818,3 +36818,126 @@ def _send_reference_material(cid,ss,key):
     return _send_reference_material_before_v25259(cid,ss,key)
 APP_VERSION='v25.259-ENGLISH-Y4-AUDIO-56LESSON-FINAL'
 # ===== END v25.259 =====
+
+
+# ===== v25.260 ENGLISH Y3-Y6 SOW/TB-GUIDED RPH CONTENT =====
+# Non-destructive late formatter layer.
+# SOW remains authoritative. For textbook lessons, use verified TB/SB procedures
+# already loaded into state/master; never invent missing Teacher's Book content.
+APP_VERSION='v25.260-ENGLISH-Y3Y6-SOW-TB-GUIDED-RPH'
+
+_en260_base=_rph_rows
+
+def _en260_clean(v):
+    return ' '.join(str(v or '').split()).strip()
+
+def _en260_year(st):
+    raw=' '.join(str(st.get(k) or '') for k in ('year','grade','year_label')).strip()
+    m=re.search(r'(?:Tahun|Year)\s*([1-6])',raw,re.I)
+    return int(m.group(1)) if m else 0
+
+def _en260_guidance(st):
+    # Prefer a verified guidance dict if the lesson-selection layer supplied one.
+    g=st.get('rph_verified_teacher_guidance')
+    if isinstance(g,dict) and g:
+        return dict(g)
+    # Y3-Y6 master/state may expose the fields directly rather than as a dict.
+    g={
+      'aims':st.get('teacher_book_aims') or st.get('rph_teacher_aims'),
+      'warm_up':st.get('teacher_book_warm_up') or st.get('rph_teacher_warm_up'),
+      'student_book_procedure':st.get('teacher_book_procedure') or st.get('rph_teacher_student_book_procedure') or st.get('student_book_procedure'),
+      'workbook_procedure':st.get('workbook_procedure') or st.get('rph_teacher_workbook_procedure'),
+      'audio_procedure':st.get('audio_procedure'),
+      'checking_feedback':st.get('checking_feedback') or st.get('rph_teacher_checking_feedback'),
+      'ending_lesson':st.get('ending_lesson') or st.get('rph_teacher_ending_lesson'),
+      'extension_optional':st.get('extension_optional') or st.get('rph_teacher_extension'),
+    }
+    return g if any(_en260_clean(v) for v in g.values()) else {}
+
+def _en260_step(raw,lead):
+    x=_en260_clean(raw)
+    if not x: return ''
+    if x[-1:] not in '.!?': x+='.'
+    low=x.lower()
+    if low.startswith(('teacher ','pupils ','students ','ask ','tell ','show ','play ','listen ','read ','write ','check ','review ','repeat ','model ','follow ')):
+        return x
+    return lead+' '+x[:1].lower()+x[1:]
+
+def _en260_is_nontextbook(st):
+    lt=_en260_clean(st.get('lesson_type')).upper()
+    if lt=='NON-TEXTBOOK': return True
+    # Do not infer non-textbook from focus alone when lesson_type is known.
+    return False
+
+def _en260_apply(st,r):
+    if not _is_english_subject(st): return r
+    y=_en260_year(st)
+    if y not in (3,4,5,6): return r
+    if _en260_is_nontextbook(st): return r  # SOW route remains untouched.
+
+    g=_en260_guidance(st)
+    if not g: return r  # no verified TB/SB guidance => preserve existing SOW output.
+
+    sb=_en260_clean(g.get('student_book_procedure'))
+    wb=_en260_clean(g.get('workbook_procedure'))
+    aud=_en260_clean(g.get('audio_procedure'))
+    warm=_en260_clean(g.get('warm_up'))
+    chk=_en260_clean(g.get('checking_feedback'))
+    end=_en260_clean(g.get('ending_lesson'))
+    ext=_en260_clean(g.get('extension_optional'))
+    if not any((sb,wb,aud,warm,chk,end,ext)): return r
+
+    out=dict(r or {})
+    old=str(out.get('AKTIVITI UTAMA') or '')
+    # Keep legacy activities only as a fallback for a missing verified stage.
+    parts=re.split(r'Activity\s+[1-4][^\n]*\n',old,flags=re.I)
+    fb=[x.strip() for x in parts[1:5]] if len(parts)>=5 else []
+    while len(fb)<4: fb.append('')
+
+    if warm:
+        out['SET INDUKSI']=_en260_step(warm,'Teacher follows the verified Teacher’s Book warm-up and guides pupils to')
+
+    a1=_en260_step(sb,'Teacher follows the verified Teacher’s Book procedure for the Student’s Book and guides pupils to') if sb else fb[0]
+    if aud:
+        astep=_en260_step(aud,'Teacher uses the specified audio while pupils')
+        if astep and astep.lower() not in (a1 or '').lower():
+            a1=((a1+' ') if a1 else '')+astep
+
+    if wb:
+        a2=_en260_step(wb,'Pupils complete the verified Workbook follow-up while the teacher guides them to')
+    elif sb:
+        a2='Teacher continues the same verified Student’s Book task with guided pupil practice and checks responses before pupils proceed.'
+    else:
+        a2=fb[1]
+
+    if ext:
+        a3=_en260_step(ext,'Pupils carry out the verified Teacher’s Book extension by')
+    elif sb or wb:
+        a3='Pupils repeat or apply the same verified lesson focus with reduced teacher support; no new task content is introduced.'
+    else:
+        a3=fb[2]
+
+    a4=_en260_step(chk,'Teacher follows the verified checking/feedback procedure and') if chk else fb[3]
+
+    acts=[]
+    for label,mins,text in (
+      ('Activity 1 – Student’s Book / Teacher’s Book Procedure','10–15 minutes',a1),
+      ('Activity 2 – Guided Practice','10–15 minutes',a2),
+      ('Activity 3 – Apply / Extend','10–15 minutes',a3),
+      ('Activity 4 – Assessment / Feedback','5–10 minutes',a4),
+    ):
+        if _en260_clean(text):
+            acts.append(f'{label} ({mins})\n{text}')
+    if acts:
+        out['AKTIVITI UTAMA']='\n\n'.join(acts)
+    if chk:
+        out['PENTAKSIRAN']=_en260_step(chk,'Teacher assesses pupils by following the verified Teacher’s Book checking procedure and')
+    if end:
+        out['PENUTUP']=_en260_step(end,'Teacher follows the verified Teacher’s Book ending and guides pupils to')
+    return out
+
+def _rph_rows(s,ai_text):
+    return _en260_apply(s,_en260_base(s,ai_text))
+
+CIKGULAJU_PATCH_V25260='ENGLISH_Y3Y6_SOW_TB_GUIDED_RPH'
+# ===== END v25.260 =====
