@@ -35931,3 +35931,56 @@ def _book_physical_page_v25237(ss,key,page):
 
 APP_VERSION='v25.254-ENGLISH-Y4-WORKBOOK-PAGE-COORDINATE-FIX'
 # ===== END v25.254 =====
+
+
+# ===== v25.255 ENGLISH Y4 AUTO SK/SP FLOW RESTORE =====
+# Regression guard: Year 4 English follows the verified SOW lesson mapping.
+# A selected Lesson must not reopen legacy manual SK/SP screens.
+# Lessons explicitly marked by the SOW as teacher-standard-selection remain
+# untouched; this guard only skips manual selection when exact standards exist.
+def _en4_resume_after_standard_guard_v25255(cid):
+    ss=state.setdefault(cid,{})
+    if str(ss.get('subject') or '').strip().casefold() not in ('english','bahasa inggeris'):
+        return False
+    if _english_primary_year_number_v2517((ss or {}).get('year')) != 4:
+        return False
+    r=(ss or {}).get('_en98_selected_staging_row') or {}
+    raw=(ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no') or r.get('lesson_no')
+    try:
+        lesson=int(raw)
+    except Exception:
+        return False
+    ss['lesson_no']=lesson; ss['lesson']=lesson; ss['textbook_lesson_no']=lesson
+    if not _english_y3_y6_apply_sow_v2517(ss,lesson):
+        return False
+    # Respect genuinely open SOW lessons; never invent standards.
+    if ss.get('requires_teacher_standard_selection'):
+        return False
+    ss['requires_teacher_standard_selection']=False
+    ss['auto_sow_mapping']=True
+    ss['skip_manual_sk_sp']=True
+    ss['teacher_select_standards']=False
+    ss['manual_standard_selection']=False
+    ss['quick_material_flow']=True
+    return True
+
+_render_rph_sp_multiselect_before_v25255=_render_rph_sp_multiselect
+def _render_rph_sp_multiselect(cid):
+    if _en4_resume_after_standard_guard_v25255(cid):
+        return _lesson_to_class_v2439(cid)
+    return _render_rph_sp_multiselect_before_v25255(cid)
+
+_show_rph_sp_before_v25255=show_rph_sp
+def show_rph_sp(cid,sk_index):
+    if _en4_resume_after_standard_guard_v25255(cid):
+        return _lesson_to_class_v2439(cid)
+    return _show_rph_sp_before_v25255(cid,sk_index)
+
+_show_curriculum_sp_before_v25255=show_curriculum_sp
+def show_curriculum_sp(cid,sk_index):
+    if _en4_resume_after_standard_guard_v25255(cid):
+        return _lesson_to_class_v2439(cid)
+    return _show_curriculum_sp_before_v25255(cid,sk_index)
+
+APP_VERSION='v25.255-ENGLISH-Y4-AUTO-SK-SP-RESTORE'
+# ===== END v25.255 =====
