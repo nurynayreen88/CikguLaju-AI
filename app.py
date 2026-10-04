@@ -106,3 +106,25 @@ def _en_y4_literature_resource_v25249(ss):
         return None
 APP_VERSION='v25.249-ENGLISH-Y4-LITERATURE-30-VERIFIED'
 # ===== END v25.249 =====
+
+
+# ===== v25.250 ENGLISH Y4 LITERATURE DOWNLOAD SOURCES =====
+# Verified Drive assets in the same Year 4 resource folder. Additive only.
+_EN4_LIT_SOURCE_V25250 = {
+ "Poetry":{"name":"Anthology of Poems.pdf","drive_id":"1-GGW14NGcz7Eaii9JUJEofRsWd0YO0Hx"},
+ "Short Story":{"name":"The King of Kites YEAR 4.pdf","drive_id":"1AAR6_6hoQkkl8U73b6MNXKA2ZEW-g8eU"},
+ "Graphic Novel":{"name":"The Jungle Book YEAR 4.pdf","drive_id":"1oeQo76j1GUbo7hdBQK09g4QrN2dd7FsC"},
+}
+_v25250_lit_base = _en_y4_literature_resource_v25249
+def _en_y4_literature_resource_v25249(ss):
+    item=_v25250_lit_base(ss) if callable(_v25250_lit_base) else None
+    if not item: return item
+    src=_EN4_LIT_SOURCE_V25250.get(item.get("type"))
+    if src:
+        item=dict(item)
+        item["resource_name"]=src["name"]
+        item["drive_id"]=src["drive_id"]
+        item["drive_view_url"]="https://drive.google.com/file/d/%s/view" % src["drive_id"]
+    return item
+APP_VERSION='v25.250-ENGLISH-Y4-LITERATURE-DOWNLOAD-SOURCES'
+# ===== END v25.250 =====
