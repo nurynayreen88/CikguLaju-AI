@@ -107,4 +107,8 @@ EN4_WB_VERIFIED = {
     156: {"printed": 89, "pdf": 88, "section": "Let's play", "evidence": "SOW L156 -> SB p.108 / TB p.159; visual Unit 10 Let's play WB p.89"},
     157: {"printed": 91, "pdf": 90, "section": "Story time", "evidence": "SOW L157 -> SB pp.110-111 / TB pp.162-163; visual Unit 10 Story time WB p.91"},
 
+    105: {"printed": 61, "pdf": 60, "section": "Our world", "evidence": "SOW L105 Activity 3/4 Track 29 -> TB p.113; TB Workbook block matches visual WB p.61"},
+    107: {"printed": 64, "pdf": 63, "section": "Story time", "evidence": "SOW L107 -> SB pp.66-67 / TB pp.118-119 The lost boy 2; TB Workbook block matches visual WB Story time p.64"},
+    125: {"printed": 73, "pdf": 72, "section": "Story time", "evidence": "SOW L125 -> SB pp.88-89; TB pp.132-133 Unit 8 Story time and Workbook block match visual WB p.73"},
+    141: {"printed": 82, "pdf": 81, "section": "Story time", "evidence": "SOW L141 -> SB pp.100-101 / TB pp.148-149 Unit 9 Story time; TB Workbook block matches visual WB p.82"},
 }
