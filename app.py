@@ -37611,3 +37611,46 @@ Status VIP Founder yang telah disahkan sebelum ini kekal.',[[{'text':'🏠 Menu 
 
 CIKGULAJU_PATCH_V25268='EARLY_SUPPORTER_RM50_TIME_LIMIT_CLEAN_MENU'
 # ===== END v25.268 =====
+
+# ===== v25.269 MAIN MENU TELEGRAM SPACING FIX =====
+APP_VERSION='v25.269-MAIN-MENU-SPACING-FIX'
+
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    supporter_open,_=_early_supporter_open_v25268()
+    kb=[
+        [{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
+        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+    ]
+    if supporter_open:
+        kb.append([{'text':'👑 PENYOKONG AWAL • RM50','callback_data':'donate'}])
+    kb.append([
+        {'text':'👤 PROFIL SAYA','callback_data':'account'},
+        {'text':'ℹ️ TENTANG','callback_data':'about_beta'}
+    ])
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+
+    supporter_line = ''
+    if supporter_open:
+        supporter_line = '\n👑 <b>Penyokong Awal</b>\nRM50 sekali sahaja • VIP Founder\n'
+
+    text = (
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\n\n'
+        '📚 Ikut RPT/SOW & kurikulum sebenar\n'
+        '🎯 SK & SP dipadankan automatik\n'
+        '📝 Jana RPH dengan cepat\n'
+        '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '👥 <b>Ajak Rakan</b>\n'
+        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
+        + supporter_line +
+        '\n<b>Pilih menu di bawah 👇</b>'
+    )
+    return send(cid,text,kb)
+
+CIKGULAJU_PATCH_V25269='MAIN_MENU_TELEGRAM_SPACING_FIX'
+# ===== END v25.269 =====
