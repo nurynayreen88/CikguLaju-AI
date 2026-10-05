@@ -40535,3 +40535,115 @@ def callback(cid, d):
 APP_VERSION = 'v26.01-PM-PRIMARY-MENU-ROUTING'
 CIKGULAJU_PATCH_V2601 = 'PM_T1_T6_VISIBLE_VERIFIED_RPT_ROUTING'
 # ===== END v26.01 =====
+
+
+# ===== v26.02 PENDIDIKAN MORAL DIRECT VERIFIED PDP FLOW =====
+# PM bypasses legacy Buku Teks / RPT-SOW source-choice screens.
+def _pm_pdp_rows_v2602(year):
+    con=_db()
+    try:
+        rows=[dict(r) for r in con.execute("""SELECT * FROM rpt_entries
+            WHERE subject='Pendidikan Moral' AND year_label=? AND verified=1
+            ORDER BY sequence_no,id""",(str(year),)).fetchall()]
+        for r in rows:
+            r['_std']=[dict(x) for x in con.execute("""SELECT standard_type,standard_code,standard_text,sequence_no
+                FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
+                ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",(r['id'],)).fetchall()]
+        return rows
+    finally:
+        con.close()
+
+def _pm_pdp_menu_v2602(cid,page=0):
+    ss=state.setdefault(cid,{})
+    rows=_pm_pdp_rows_v2602(ss.get('year',''))
+    ss['_pm_pdp_rows_v2602']=rows
+    if not rows:
+        return send(cid,'🚧 <b>Pendidikan Moral belum mempunyai PdP verified dalam database aktif.</b>',
+                    [[{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    page=max(0,int(page or 0)); per=14; start=page*per
+    kb=[]
+    for i,r in enumerate(rows[start:start+per],start):
+        seq=r.get('sequence_no')
+        unit=str(r.get('unit_title') or '').strip()
+        phase=str(r.get('topic') or '').strip()
+        label=f"PdP {seq}"
+        if unit: label+=f" • {unit}"
+        if phase: label+=f" • {phase}"
+        kb.append([{'text':label[:60],'callback_data':f'pmpdp2602|{i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️','callback_data':f'pmpage2602|{page-1}'})
+    if start+per<len(rows): nav.append({'text':'➡️','callback_data':f'pmpage2602|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+        f"🤝 <b>Pendidikan Moral • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+        "Pilih <b>PdP</b>. Unit/Tajuk dan SK/SP dipadankan secara automatik daripada database verified.",
+        kb)
+
+def _pm_commit_pdp_v2602(cid,idx):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_pm_pdp_rows_v2602') or _pm_pdp_rows_v2602(ss.get('year',''))
+    try: r=rows[int(idx)]
+    except Exception: return _pm_pdp_menu_v2602(cid,0)
+    ss['task']='quick_material'; ss['quick_material_flow']=True; ss['rph_mode']='fast_rpt'
+    ss['_quick_selected_rpt_row_v2388']=dict(r); ss['quick_rpt_row']=dict(r)
+    ss['rpt_entry_id']=r.get('id'); ss['pdp_no']=r.get('sequence_no')
+    ss['lesson_no']=str(r.get('sequence_no') or '')
+    ss['theme']=str(r.get('theme') or '').strip()
+    ss['unit']=str(r.get('unit_title') or '').strip()
+    ss['unit_title']=ss['unit']
+    ss['topic']=str(r.get('topic') or r.get('skill_focus') or '').strip()
+    ss['subtopic']=str(r.get('subtopic') or '').strip()
+    ss['skill_focus']=str(r.get('skill_focus') or '').strip()
+    ss['quick_content_v2391']=ss['unit']
+    ss['rpt_activity_note']=str(r.get('activity_note') or '').strip()
+    ss['rpt_assessment_note']=str(r.get('assessment_note') or '').strip()
+    sks=[]; sps=[]; sktexts=[]; sptexts=[]
+    for x in r.get('_std') or []:
+        code=str(x.get('standard_code') or '').strip()
+        txt=str(x.get('standard_text') or '').strip()
+        if x.get('standard_type')=='SK' and code and code not in sks:
+            sks.append(code); sktexts.append(txt)
+        elif x.get('standard_type')=='SP' and code and code not in sps:
+            sps.append(code); sptexts.append(txt)
+    ss['grouped_sk_codes']=sks; ss['selected_sk_codes']=sks; ss['grouped_sk_texts']=sktexts
+    ss['grouped_sp_codes']=sps; ss['selected_sp_codes']=sps; ss['grouped_sp_texts']=sptexts
+    if sks:
+        ss['selected_sk']=sks[0]; ss['sk_code']=sks[0]; ss['sk_text']=sktexts[0]
+    if sps:
+        ss['selected_sp']=sps[0]; ss['sp_code']=sps[0]; ss['sp_text']=sptexts[0]
+    return _lesson_to_class_v2439(cid)
+
+_callback_before_v2602=callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds=='sub_Pendidikan Moral' and str(ss.get('year') or '').startswith('Tahun '):
+        ss['subject']='Pendidikan Moral'
+        ss['task']='quick_material'; ss['quick_material_flow']=True
+        for k in ('quick_content_v2391','_quick_content_opts_v2391','_quick_tb_rows_v2391',
+                  '_quick_rpt_rows_content_v2391','_quick_verified_lesson_rows_v2404',
+                  'selected_sk','selected_sp','selected_sk_codes','selected_sp_codes'):
+            ss.pop(k,None)
+        return _pm_pdp_menu_v2602(cid,0)
+    if ds.startswith('pmpage2602|'):
+        try: p=int(ds.split('|',1)[1])
+        except Exception: p=0
+        return _pm_pdp_menu_v2602(cid,p)
+    if ds.startswith('pmpdp2602|'):
+        try: i=int(ds.split('|',1)[1])
+        except Exception: i=-1
+        return _pm_commit_pdp_v2602(cid,i)
+    # Defensive: if an old PM message reaches legacy source-choice callbacks,
+    # redirect to direct PM PdP list instead of showing construction notices.
+    if str(ss.get('subject') or '')=='Pendidikan Moral' and ds in (
+        'qsrc91_textbook','qsrc91_rpt','qsrc92_custom','qsrc91_back'
+    ):
+        return _pm_pdp_menu_v2602(cid,0)
+    return _callback_before_v2602(cid,d)
+
+APP_VERSION='v26.02-PM-DIRECT-VERIFIED-PDP-FLOW'
+CIKGULAJU_PATCH_V2602='PM_BYPASS_TEXTBOOK_SOW_SOURCE_CHOICE'
+# ===== END v26.02 =====
