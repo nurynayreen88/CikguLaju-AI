@@ -40463,3 +40463,75 @@ except Exception as _v2600_error:
 APP_VERSION = 'v26.00-PM-T1-T6-MASTER-DB'
 CIKGULAJU_PATCH_V2600 = 'PRIMARY_MASTER_DB_V2600_SAFE_FALLBACK_V2593'
 # ===== END v26.00 =====
+
+
+# ===== v26.01 PENDIDIKAN MORAL PRIMARY MENU + ROUTING =====
+# UI/routing-only patch. Existing subjects and DBs are preserved.
+def _enable_pm_primary_v2601():
+    global SUBJECTS, SUBJECT_LABEL, SUBJECTS_BY_GRADE
+    if not any(str(sub) == 'Pendidikan Moral' for _label, sub in SUBJECTS):
+        new_subjects = []
+        inserted = False
+        for label, sub in SUBJECTS:
+            if sub == 'Subjek Lain' and not inserted:
+                new_subjects.append(('🤝 Pendidikan Moral', 'Pendidikan Moral'))
+                inserted = True
+            new_subjects.append((label, sub))
+        if not inserted:
+            new_subjects.append(('🤝 Pendidikan Moral', 'Pendidikan Moral'))
+        SUBJECTS = new_subjects
+    SUBJECT_LABEL = {sub: label for label, sub in SUBJECTS}
+    SUBJECT_LABEL['Pendidikan Moral'] = '🤝 Pendidikan Moral'
+    for i in range(1, 7):
+        yl = f'Tahun {i}'
+        vals = list(SUBJECTS_BY_GRADE.get(yl, []) or [])
+        if 'Pendidikan Moral' not in vals:
+            try:
+                pos = vals.index('Pendidikan Islam') + 1
+            except ValueError:
+                pos = len(vals)
+            vals.insert(pos, 'Pendidikan Moral')
+        SUBJECTS_BY_GRADE[yl] = vals
+
+_enable_pm_primary_v2601()
+
+def _pm_verified_count_v2601(year_label):
+    con = _db()
+    try:
+        row = con.execute(
+            """SELECT COUNT(*) FROM rpt_entries
+               WHERE subject='Pendidikan Moral' AND year_label=? AND verified=1""",
+            (str(year_label),)
+        ).fetchone()
+        return int(row[0] if row else 0)
+    finally:
+        con.close()
+
+_callback_before_v2601 = callback
+def callback(cid, d):
+    ss = state.setdefault(cid, {})
+    ds = str(d or '')
+    if ds == 'sub_Pendidikan Moral' and str(ss.get('year') or '').startswith('Tahun '):
+        ss['task'] = 'quick_material'
+        ss['quick_material_flow'] = True
+        ss['subject'] = 'Pendidikan Moral'
+        ss['assessment_mode'] = 'formative'
+        for k in (
+            'topic','subtopic','selected_topic_index','topic_list',
+            'quick_content_v2391','_quick_tb_rows_v2391',
+            '_quick_rpt_rows_content_v2391','selected_sk','selected_sp'
+        ):
+            ss.pop(k, None)
+        if _pm_verified_count_v2601(ss.get('year')) <= 0:
+            return send(
+                cid,
+                '🚧 <b>Pendidikan Moral untuk tahun ini belum mempunyai PdP verified dalam database aktif.</b>',
+                [[{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'}],
+                 [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+            )
+        return _quick_content_menu_v2427(cid, 0)
+    return _callback_before_v2601(cid, d)
+
+APP_VERSION = 'v26.01-PM-PRIMARY-MENU-ROUTING'
+CIKGULAJU_PATCH_V2601 = 'PM_T1_T6_VISIBLE_VERIFIED_RPT_ROUTING'
+# ===== END v26.01 =====
