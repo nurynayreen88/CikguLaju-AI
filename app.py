@@ -37085,3 +37085,140 @@ def _en_workbook_pdf_part_groups_v25263(ss):
 
 CIKGULAJU_PATCH_V25263='ENGLISH_Y5Y6_WORKBOOK_PDF_PART_ROUTING'
 # ===== END v25.263 =====
+
+
+# ===== v25.264 ENGLISH Y5/Y6 CLEAN UNIT + VERIFIED SB/PB PAGE MENU =====
+# UI-only late override. No DB/RPH/audio/literature/workbook data is modified.
+APP_VERSION='v25.264-ENGLISH-Y5Y6-CLEAN-UNIT-SB-PB-MENU'
+import re as _re_v25264
+
+_EN5_UNIT_V25264 = (
+    (1,16,'Starter','Free time'),
+    (17,34,'Unit 1','Towns and cities'),
+    (35,52,'Unit 2','Days'),
+    (53,70,'Unit 3','Wild Life'),
+    (71,88,'Unit 4','Learning World'),
+    (89,106,'Unit 5','Food and health'),
+    (107,124,'Unit 6','Sport'),
+    (125,142,'Unit 7','Growing up'),
+    (143,160,'Unit 8','Going away'),
+)
+_EN6_UNIT_V25264 = (
+    (1,4,'Welcome','Welcome'),
+    (6,16,'Unit 1',"It's an emergency!"),
+    (17,32,'Unit 2','Life in the past'),
+    (33,48,'Unit 3','Adventure time'),
+    (49,64,'Unit 4','Cool jobs'),
+    (65,80,'Unit 5','Getting around'),
+    (81,96,'Unit 6','How is it made?'),
+    (97,112,'Unit 7','Music and Song'),
+    (113,128,'Unit 8','Tell me a story'),
+    (129,144,'Unit 9',"What's your opinion?"),
+    (145,160,'Unit 10',"It's a mystery!"),
+)
+
+def _en56_unit_meta_v25264(y,lesson,topic=''):
+    try: lesson=int(lesson)
+    except Exception: lesson=0
+    blocks=_EN5_UNIT_V25264 if y==5 else _EN6_UNIT_V25264
+    for a,b,label,title in blocks:
+        if a<=lesson<=b:
+            return label,title
+    # Language Arts rows between core lessons retain their source title but belong
+    # to the surrounding curriculum block. Resolve by nearest block boundaries.
+    if y==6:
+        la_bridge=((5,'Welcome','Welcome'),)
+        for ln,label,title in la_bridge:
+            if lesson==ln: return label,title
+    return '',str(topic or '').strip()
+
+def _en56_book_pages_v25264(r,y):
+    raw=str((r or {}).get('references_text') or (r or {}).get('sow_references') or '')
+    if not raw: return ''
+    book=r"Student[’']s Book" if y==5 else r"Pupil[’']s Book"
+    found=[]
+    # Accept p.12, pp.12-13, and explicit page references occurring immediately
+    # after the named main book. Do not parse Teacher's Book/Workbook numbers.
+    pat=book+r"(?:\s*,|\s*)\s*(?:pp?\.)\s*(\d+)(?:\s*[-–]\s*(\d+))?"
+    for m in _re_v25264.finditer(pat,raw,_re_v25264.I):
+        a=m.group(1); b=m.group(2)
+        x=a+('–'+b if b and b!=a else '')
+        if x not in found: found.append(x)
+    return ', '.join(found)
+
+_en97_unit_menu_before_v25264=_en97_unit_menu
+def _en97_unit_menu(cid,page=0):
+    ss=state.setdefault(cid,{})
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    subj=str(ss.get('subject') or '').strip().casefold()
+    if y not in (5,6) or subj not in ('english','bahasa inggeris'):
+        return _en97_unit_menu_before_v25264(cid,page)
+    rows,old_units=_en97_units(ss.get('year',''))
+    blocks=_EN5_UNIT_V25264 if y==5 else _EN6_UNIT_V25264
+    labels=[]
+    for a,b,label,title in blocks:
+        # Show a block only when at least one real staging lesson exists in it.
+        exists=False
+        for r in rows:
+            try: ln=int(r.get('lesson_no') or 0)
+            except Exception: continue
+            if a<=ln<=b: exists=True; break
+        if exists: labels.append((a,b,label,title))
+    ss['_en97_rows']=rows
+    ss['_en56_blocks_v25264']=labels
+    per=10; page=max(0,int(page or 0)); a0=page*per; b0=min(a0+per,len(labels)); kb=[]
+    for i in range(a0,b0):
+        _a,_b,label,title=labels[i]
+        kb.append([{'text':f'📘 {label} • {title}'[:64],'callback_data':f'en97_unit_{i}'}])
+    nav=[]
+    if a0: nav.append({'text':'⬅️ Sebelum','callback_data':f'en97_up_{page-1}'})
+    if b0<len(labels): nav.append({'text':'Seterusnya ➡️','callback_data':f'en97_up_{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},{'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,f"🇬🇧 <b>Bahasa Inggeris • {html.escape(str(ss.get('year') or ''))}</b>\n\nPilih <b>Unit/Module</b>. Nama unit dipaparkan bersama nombor unit.",kb)
+
+_en98_lesson_menu_before_v25264=_en98_lesson_menu
+def _en98_lesson_menu(cid,unit_idx):
+    ss=state.setdefault(cid,{})
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    subj=str(ss.get('subject') or '').strip().casefold()
+    if y not in (5,6) or subj not in ('english','bahasa inggeris'):
+        return _en98_lesson_menu_before_v25264(cid,unit_idx)
+    rows,_=_en97_units(ss.get('year',''))
+    blocks=ss.get('_en56_blocks_v25264')
+    if not blocks:
+        src=_EN5_UNIT_V25264 if y==5 else _EN6_UNIT_V25264
+        blocks=[]
+        for a,b,label,title in src:
+            if any(a<=int(r.get('lesson_no') or 0)<=b for r in rows if str(r.get('lesson_no') or '').isdigit()):
+                blocks.append((a,b,label,title))
+    if unit_idx<0 or unit_idx>=len(blocks): return _en97_unit_menu(cid)
+    lo,hi,unit_label,unit_title=blocks[unit_idx]
+    items=[]
+    for r in rows:
+        try: ln=int(r.get('lesson_no') or 0)
+        except Exception: continue
+        if lo<=ln<=hi: items.append(r)
+    items.sort(key=lambda r:int(r.get('lesson_no') or 0))
+    if not items: return _en97_unit_menu(cid)
+    ss['_en98_items']=items
+    ss['quick_content_v2391']=unit_title; ss['unit']=unit_title; ss['subtopic']=unit_title
+    ss['_en56_unit_label_v25264']=unit_label
+    kb=[]
+    for i,r in enumerate(items):
+        lesson=str(r.get('lesson_no') or '').strip()
+        focus=str(r.get('focus') or r.get('skill_focus') or '').replace('\n',' ').strip()
+        pg=_en56_book_pages_v25264(r,y)
+        label=f'📚 Lesson {lesson}'
+        if focus: label+=f' • {focus}'
+        if pg: label+=f" • {'SB' if y==5 else 'PB'} m/s {pg}"
+        kb.append([{'text':label[:64],'callback_data':f'en98_lesson_{i}'}])
+    kb.append([{'text':'⬅️ Pilih Unit Lain','callback_data':'en97_up_0'}])
+    bookname="Student’s Book" if y==5 else "Pupil’s Book"
+    return send(cid,
+        f"📚 <b>{html.escape(unit_label)} • {html.escape(unit_title)}</b>\n\n"
+        f"Pilih <b>Lesson</b>. M/s {bookname} dipaparkan hanya apabila dinyatakan dalam SOW. SK/SP ditentukan automatik.",
+        kb)
+
+CIKGULAJU_PATCH_V25264='ENGLISH_Y5Y6_CLEAN_UNIT_SB_PB_MENU'
+# ===== END v25.264 =====
