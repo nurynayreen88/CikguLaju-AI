@@ -40184,3 +40184,121 @@ def _generate_daily_suggestions_v25292(cid):
 APP_VERSION='v25.293-ALL-SUBJECTS-DAILY-RPH'
 CIKGULAJU_PATCH_V25293='ALL_SUBJECTS_VERIFIED_RPT_SOW_CALENDAR_BOOTSTRAP_CHECKPOINT_PRIORITY'
 # ===== END v25.293 =====
+
+# ===== v25.294 SUBJECT ALIAS RESOLVER FOR DAILY RPH =====
+_SUBJECT_ALIASES_V25294={
+    'ba':['Bahasa Arab'],
+    'bahasaarab':['Bahasa Arab'],
+    'bm':['Bahasa Melayu'],
+    'bahasamelayu':['Bahasa Melayu'],
+    'bi':['Bahasa Inggeris','English'],
+    'bahasainggeris':['Bahasa Inggeris','English'],
+    'english':['English','Bahasa Inggeris'],
+    'mt':['Matematik'],'mm':['Matematik'],'math':['Matematik'],'matematik':['Matematik'],
+    'sn':['Sains'],'sc':['Sains'],'science':['Sains','Science'],'sains':['Sains'],
+    'pi':['Pendidikan Islam'],'pai':['Pendidikan Islam'],'pendidikanislam':['Pendidikan Islam'],
+    'pm':['Pendidikan Moral'],'moral':['Pendidikan Moral'],'pendidikanmoral':['Pendidikan Moral'],
+    'pj':['Pendidikan Jasmani'],'pjpk':['Pendidikan Jasmani dan Pendidikan Kesihatan','Pendidikan Jasmani'],
+    'pk':['Pendidikan Kesihatan'],
+    'psv':['Pendidikan Seni Visual'],'seni':['Pendidikan Seni Visual'],
+    'muzik':['Pendidikan Muzik'],'pmuzik':['Pendidikan Muzik'],
+    'rbt':['Reka Bentuk dan Teknologi'],
+    'sejarah':['Sejarah'],'sj':['Sejarah'],
+}
+
+def _subject_alias_candidates_v25294(cid,entry):
+    raw=str(entry.get('subject') or '').strip()
+    norm=_norm_subject_v2393(raw)
+    rec=_profile_class_record(cid,entry.get('class_name')) or {}
+    class_subs=[str(x).strip() for x in (rec.get('subjects') or []) if str(x).strip()]
+    # Combined timetable labels must be resolved from the class's actual subject assignment.
+    if norm in ('pipm','pmpI'.casefold(),'pendidikanislampendidikanmoral'):
+        matched=[]
+        for x in class_subs:
+            nx=_norm_subject_v2393(x)
+            if nx in ('pi','pai','pendidikanislam'): matched.append('Pendidikan Islam')
+            if nx in ('pm','moral','pendidikanmoral'): matched.append('Pendidikan Moral')
+        # Do not guess religion/moral when class profile does not disambiguate it.
+        return list(dict.fromkeys(matched)), ('class_profile' if matched else 'ambiguous_pi_pm')
+    cands=list(_SUBJECT_ALIASES_V25294.get(norm) or [])
+    # Exact profile subject is strongest if it corresponds to the timetable alias.
+    for x in class_subs:
+        nx=_norm_subject_v2393(x)
+        aliases=[_norm_subject_v2393(a) for a in cands]
+        if nx==norm or nx in aliases:
+            cands.insert(0,x)
+    if not cands and raw: cands=[raw]
+    return list(dict.fromkeys(cands)),'alias'
+
+def _entry_with_subject_v25294(entry,subject):
+    e=dict(entry); e['_timetable_subject']=e.get('subject'); e['subject']=subject
+    return e
+
+def _daily_candidate_v25292(cid,entry):
+    # Resolve timetable abbreviation before progress/RPT/SOW lookup.
+    candidates,why=_subject_alias_candidates_v25294(cid,entry)
+    if not candidates:
+        return None,why
+    # Prefer an existing checkpoint under any canonical alias.
+    for subject in candidates:
+        e=_entry_with_subject_v25294(entry,subject)
+        p=_get_rph_progress_v25274(cid,e.get('class_name'),subject)
+        if p:
+            row=_resolve_next_curriculum_v25276(cid,e.get('class_name'),subject,p)
+            if row:
+                row=dict(row); row['_resolved_subject_v25294']=subject
+                return row,'checkpoint'
+    # No checkpoint: try verified calendar mapping for each canonical subject.
+    for subject in candidates:
+        e=_entry_with_subject_v25294(entry,subject)
+        row,source=_calendar_curriculum_row_v25293(cid,e)
+        if row:
+            row=dict(row); row['_resolved_subject_v25294']=subject
+            return row,source
+    return None,'no_verified_mapping_for_subject_alias'
+
+def _today_rpt_suggestions_v25292(cid):
+    from datetime import date as _date
+    day,rows=_today_rows_v25272(cid)
+    try: prof=_teacher_profile(cid) or {}
+    except Exception: prof={}
+    negeri=str(prof.get('state_name') or '').strip()
+    week=_calendar_week_for_date_v25292(negeri,_date.today()) if negeri else None
+    lines=[f'⚡ <b>RPH HARI INI • {html.escape(day.upper())}</b>','']
+    if negeri: lines.append('📍 '+html.escape(negeri)+(f' • Minggu persekolahan {week}' if week else ''))
+    lines += ['📚 Cadangan berdasarkan <b>RPT/SOW verified</b> dan kemajuan kelas.','']
+    if not rows:
+        lines += ['Tiada kelas dalam jadual cikgu untuk hari ini.']
+        return send(cid,'\n'.join(lines),
+                    [[{'text':'📅 Lihat / Urus Jadual','callback_data':'timetable'}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    suggestions=[]; unresolved=[]
+    for idx,e0 in rows:
+        row,source=_daily_candidate_v25292(cid,e0)
+        if row:
+            subject=str(row.get('_resolved_subject_v25294') or e0.get('subject') or '')
+            e=_entry_with_subject_v25294(e0,subject)
+            suggestions.append({'idx':idx,'entry':e,'row':row,'source':source})
+            lines.append('✓ '+html.escape(
+                f"{e0.get('start','')}–{e0.get('end','')} • {e0.get('class_name','')} • {subject} • {_next_curriculum_summary_v25276(row)}"))
+        else:
+            unresolved.append({'idx':idx,'entry':dict(e0),'reason':source})
+            label=f"{e0.get('start','')} • {e0.get('class_name','')} • {e0.get('subject','')}"
+            if source=='ambiguous_pi_pm':
+                lines.append('⚠️ '+html.escape(label)+' — tetapkan PI atau PM pada profil kelas')
+            else:
+                lines.append('⚠️ '+html.escape(label)+' — mapping RPT/SOW verified belum ditemui')
+    ss=state.setdefault(cid,{})
+    ss['_daily_suggestions_v25292']=suggestions; ss['_daily_unresolved_v25292']=unresolved
+    kb=[]
+    if suggestions:
+        kb.append([{'text':f'✨ JANA SEMUA RPH HARI INI ({len(suggestions)})','callback_data':'daily292_generate'}])
+    if any(x.get('reason')=='ambiguous_pi_pm' for x in unresolved):
+        kb.append([{'text':'🏫 Urus Kelas','callback_data':'profile_classes_manage'}])
+    kb += [[{'text':'📅 Lihat / Urus Jadual','callback_data':'timetable'}],
+           [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+APP_VERSION='v25.294-SUBJECT-ALIAS-RESOLVER'
+CIKGULAJU_PATCH_V25294='TIMETABLE_SUBJECT_ALIASES_CANONICAL_RPT_SOW_LOOKUP'
+# ===== END v25.294 =====
