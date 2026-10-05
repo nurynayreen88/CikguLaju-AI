@@ -39365,3 +39365,31 @@ def callback(cid,d):
 APP_VERSION='v25.283-QA-FINAL'
 CIKGULAJU_PATCH_V25283='FREE_ONCE_PER_SUCCESS_QUICK_RPH_GATED_TIMETABLE_UPLOAD_RETAINED'
 # ===== END v25.283 =====
+
+# ===== v25.284 MAKE TIMETABLE UPLOAD VISIBLE =====
+# Surface timetable upload directly in the active profile/account screen.
+_callback_before_v25284=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds in ('account','profile','my_account'):
+        p=_teacher_profile(cid)
+        if not p:
+            return _profile_start(cid)
+        score,ready,_=_profile_completion_v25272(cid)
+        kb=[
+            [{'text':'📤 UPLOAD JADUAL WAKTU','callback_data':'ttupload281_start'}],
+            [{'text':'📅 Lihat / Urus Jadual','callback_data':'timetable'}],
+            [{'text':'✏️ Kemas Kini Profil','callback_data':'profile_edit'}],
+            [{'text':'🏫 Urus Kelas','callback_data':'profclass_manage'}],
+        ]
+        if not ready:
+            kb.append([{'text':f'⚡ Lengkapkan Profil • {score}%','callback_data':'smartprof272'}])
+        kb.append([{'text':'⬅️ Menu Utama','callback_data':'home'}])
+        txt=_account_profile_text_v25271(cid)
+        txt += f'\n\n⚡ Kelengkapan profil pintar: <b>{score}%</b>'
+        return send(cid,txt,kb)
+    return _callback_before_v25284(cid,d)
+
+APP_VERSION='v25.284-UPLOAD-TIMETABLE-MENU-VISIBLE'
+CIKGULAJU_PATCH_V25284='UPLOAD_TIMETABLE_DIRECTLY_VISIBLE_IN_PROFILE'
+# ===== END v25.284 =====
