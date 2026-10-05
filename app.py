@@ -39611,3 +39611,142 @@ def callback(cid,d):
 APP_VERSION='v25.286-CLASS-CONFIRM-BEFORE-TIMETABLE'
 CIKGULAJU_PATCH_V25286='AI_CLASSES_REVIEW_MULTI_RENAME_GLOBAL_APPLY_AUTO_ADD_AFTER_CONFIRM'
 # ===== END v25.286 =====
+
+# ===== v25.287 MAIN MENU PRIORITY =====
+# PdP generation is the primary action. Timetable tools remain prominent but secondary.
+_menu_before_v25287=menu
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    score,ready,_=_profile_completion_v25272(cid)
+    supporter_open,_=_early_supporter_open_v25268()
+    kb=[
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+    ]
+    if ready:
+        kb.append([{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}])
+    else:
+        kb.append([{'text':f'⚡ LENGKAPKAN PROFIL • {score}%','callback_data':'smartprof272'}])
+    kb += [
+        [{'text':'📤 UPLOAD JADUAL WAKTU','callback_data':'ttupload281_start'}],
+        [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
+        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+    ]
+    if supporter_open:
+        kb.append([{'text':'👑 PENYOKONG AWAL • RM50','callback_data':'donate'}])
+    kb.append([
+        {'text':'👤 PROFIL SAYA','callback_data':'account'},
+        {'text':'ℹ️ TENTANG','callback_data':'about_beta'}
+    ])
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    supporter_line='\n👑 <b>Penyokong Awal</b>\nRM50 sekali sahaja • VIP Founder\n' if supporter_open else ''
+    smart_line=(
+        '⚡ <b>RPH Hari Ini tersedia</b>\nCikguLaju gunakan kelas, subjek & jadual cikgu.\n\n'
+        if ready else
+        f'⚡ <b>Profil {score}% lengkap</b>\nLengkapkan jadual untuk aktifkan RPH Hari Ini. <i>Boleh buat kemudian.</i>\n\n'
+    )
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\n\n'
+        + smart_line +
+        '📚 Ikut RPT/SOW & kurikulum sebenar\n'
+        '🎯 SK & SP dipadankan automatik\n'
+        '📝 Jana RPH dengan cepat\n'
+        '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '👥 <b>Ajak Rakan</b>\n'
+        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
+        + supporter_line
+    )
+    return send(cid,body,kb)
+
+APP_VERSION='v25.287-MAIN-MENU-PDP-PRIORITY'
+CIKGULAJU_PATCH_V25287='PDP_PRIMARY_ACTION_FIRST_FULL_ROW'
+# ===== END v25.287 =====
+
+# ===== v25.288 CLEAN MAIN MENU =====
+# Keep home focused on the four actions teachers need most.
+_menu_before_v25288=menu
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    score,ready,_=_profile_completion_v25272(cid)
+    kb=[
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+    ]
+    if ready:
+        kb.append([{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}])
+    else:
+        kb.append([{'text':f'⚡ RPH HARI INI • PROFIL {score}%','callback_data':'smartprof272'}])
+    kb += [
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
+    ]
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+
+    smart_line=(
+        '⚡ <b>RPH Hari Ini tersedia</b>\n'
+        if ready else
+        f'⚡ <b>Lengkapkan profil untuk RPH Hari Ini • {score}%</b>\n'
+    )
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
+        + smart_line +
+        '📚 Ikut RPT/SOW & kurikulum sebenar\n'
+        '🎯 SK & SP dipadankan automatik\n'
+        '📝 Jana RPH dengan cepat\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>'
+    )
+    return send(cid,body,kb)
+
+APP_VERSION='v25.288-CLEAN-MAIN-MENU'
+CIKGULAJU_PATCH_V25288='HOME_ONLY_PDP_TODAY_PROFILE_REFERRAL_VIP'
+# ===== END v25.288 =====
+
+# ===== v25.289 SIMPLE MENU EXPLANATIONS =====
+_menu_before_v25289=menu
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    score,ready,_=_profile_completion_v25272(cid)
+    kb=[
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+    ]
+    if ready:
+        kb.append([{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}])
+    else:
+        kb.append([{'text':f'⚡ RPH HARI INI • PROFIL {score}%','callback_data':'smartprof272'}])
+    kb += [
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
+    ]
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
+
+        '📚 <b>SEDIAKAN BAHAN PdP</b>\n'
+        'Pilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
+
+        '⚡ <b>RPH HARI INI</b>\n'
+        'Jana RPH berdasarkan jadual waktu cikgu.\n\n'
+
+        '👤 <b>PROFIL SAYA</b>\n'
+        'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
+
+        '🎁 <b>REFERRAL & VIP</b>\n'
+        'Ajak rakan dan dapatkan akses VIP.\n\n'
+
+        '🎁 <b>5 JANAAN PERCUMA</b>'
+    )
+    return send(cid,body,kb)
+
+APP_VERSION='v25.289-MENU-WITH-SIMPLE-GUIDE'
+CIKGULAJU_PATCH_V25289='FOUR_HOME_ACTIONS_WITH_ONE_LINE_EXPLANATIONS'
+# ===== END v25.289 =====
