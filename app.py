@@ -15826,6 +15826,120 @@ except Exception as e:
 def index():
     return jsonify({'status':'ok','app':'CikguLaju AI','gemini_ready':bool(GEMINI_API_KEY),'gemini_model':GEMINI_MODEL,'local_curriculum_db':True,'rph_zero_gemini':True})
 
+
+# ===== v25.281 TIMETABLE IMAGE/PDF UPLOAD DRAFT =====
+def _tt_upload_menu_v25281(cid):
+    state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+    return send(cid,'📤 <b>UPLOAD JADUAL WAKTU</b>\n\nHantar <b>gambar/screenshot (JPG/PNG)</b> atau <b>PDF</b> jadual waktu cikgu.\n\nCikguLaju akan baca <b>hari, masa, subjek dan kelas</b> sebagai draf. <b>Jadual sedia ada tidak akan berubah</b> sehingga cikgu semak dan tekan SAHKAN.',
+        [[{'text':'✏️ Isi Manual','callback_data':'tt_add'}],[{'text':'⬅️ Jadual Waktu','callback_data':'timetable'}]])
+
+def _telegram_media_bytes_v25281(m):
+    if m.get('photo'):
+        item=(m.get('photo') or [])[-1]; fid=item.get('file_id'); mime='image/jpeg'
+    else:
+        doc=m.get('document') or {}; fid=doc.get('file_id'); mime=str(doc.get('mime_type') or 'application/octet-stream')
+        fn=str(doc.get('file_name') or '').lower()
+        if mime=='application/octet-stream' and fn.endswith('.pdf'): mime='application/pdf'
+    if not fid: raise ValueError('Fail Telegram tidak mempunyai file_id.')
+    if mime not in ('image/jpeg','image/png','image/webp','application/pdf'): raise ValueError('Gunakan JPG, PNG atau PDF sahaja.')
+    r=requests.get(f'{API}/getFile',params={'file_id':fid},timeout=20)
+    if not r.ok or not (r.json().get('ok') if r.content else False): raise RuntimeError('Telegram getFile gagal.')
+    fp=(r.json().get('result') or {}).get('file_path')
+    if not fp: raise RuntimeError('Telegram file_path tidak ditemui.')
+    rr=requests.get(f'https://api.telegram.org/file/bot{BOT_TOKEN}/{fp}',timeout=40)
+    if not rr.ok: raise RuntimeError('Fail jadual tidak dapat dimuat turun.')
+    if len(rr.content)>12*1024*1024: raise ValueError('Fail terlalu besar. Maksimum 12 MB.')
+    return rr.content,mime
+
+def _gemini_timetable_extract_v25281(data,mime):
+    import base64, json as _json
+    prompt="""Baca jadual waktu guru Malaysia ini. Ekstrak HANYA waktu mengajar guru tersebut.
+Pulangkan JSON tulen sahaja, tanpa markdown:
+{"entries":[{"day":"Isnin","start":"07:40","end":"08:40","class_name":"3 Amanah","subject":"Matematik"}]}
+Peraturan:
+- day mesti salah satu Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu, Ahad.
+- masa format 24 jam HH:MM.
+- jangan reka data yang tidak jelas.
+- abaikan rehat/perhimpunan/aktiviti yang bukan waktu mengajar jika bukan subjek.
+- kekalkan nama kelas dan subjek sebagaimana dapat dibaca.
+- jika sel kosong/tidak pasti, jangan masukkan entry itu."""
+    models=[]
+    for model in [GEMINI_MODEL]+list(GEMINI_FALLBACK_MODELS or []):
+        if model and model not in models: models.append(model)
+    last=None
+    for model in models:
+        try:
+            url=f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
+            payload={'contents':[{'role':'user','parts':[{'text':prompt},{'inline_data':{'mime_type':mime,'data':base64.b64encode(data).decode('ascii')}}]}],
+                     'generationConfig':{'temperature':0.0,'maxOutputTokens':3500,'responseMimeType':'application/json'}}
+            r=requests.post(url,headers={'Content-Type':'application/json','x-goog-api-key':GEMINI_API_KEY},json=payload,timeout=(15,GEMINI_TIMEOUT))
+            if not r.ok: last=f'Gemini HTTP {r.status_code}'; continue
+            parts=((r.json().get('candidates') or [{}])[0].get('content') or {}).get('parts') or []
+            raw=''.join(str(x.get('text') or '') for x in parts).strip()
+            raw=re.sub(r'^```(?:json)?\s*|\s*```$','',raw,flags=re.I|re.S).strip()
+            return (_json.loads(raw).get('entries') or [])
+        except Exception as e: last=str(e)
+    raise RuntimeError(last or 'Jadual tidak dapat dibaca.')
+
+def _norm_time_v25281(v):
+    x=str(v or '').strip().replace('.',':'); m=re.fullmatch(r'(\d{1,2}):(\d{2})',x)
+    if not m: return None
+    h,mi=map(int,m.groups())
+    return f'{h:02d}:{mi:02d}' if 0<=h<=23 and 0<=mi<=59 else None
+
+def _prepare_timetable_draft_v25281(cid,raw_entries):
+    days={x.lower():x for x in _TIMETABLE_DAYS}; classes=_profile_class_records(cid)
+    cmap={re.sub(r'\s+',' ',str(r.get('name') or '').strip()).lower():r['name'] for r in classes}
+    good=[]; unmatched=[]; seen=set()
+    for x in raw_entries or []:
+        day=days.get(str(x.get('day') or '').strip().lower()); start=_norm_time_v25281(x.get('start')); end=_norm_time_v25281(x.get('end'))
+        cls=' '.join(str(x.get('class_name') or '').split()); sub=' '.join(str(x.get('subject') or '').split()); canonical=cmap.get(cls.lower())
+        try: sm=int(start[:2])*60+int(start[3:]) if start else -1; em=int(end[:2])*60+int(end[3:]) if end else -1
+        except Exception: sm=em=-1
+        if not (day and start and end and em>sm and cls and sub): continue
+        if not canonical: unmatched.append({'day':day,'start':start,'end':end,'class_name':cls,'subject':sub}); continue
+        e={'day':day,'start':start,'end':end,'class_name':canonical,'subject':sub}; k=(day,start,end,canonical.lower(),sub.lower())
+        if k not in seen: seen.add(k); good.append(e)
+    order={d:i for i,d in enumerate(_TIMETABLE_DAYS)}; good.sort(key=lambda e:(order.get(e['day'],99),e['start'],e['class_name']))
+    return good,unmatched
+
+def _show_timetable_draft_v25281(cid,good,unmatched):
+    ss=state.setdefault(cid,{}); ss['_tt_upload_draft_v25281']=good; ss['_tt_upload_unmatched_v25281']=unmatched; ss.pop('waiting',None)
+    lines=['📋 <b>DRAF JADUAL DIKESAN</b>','']
+    for e in good[:50]: lines.append(f"• {html.escape(e['day'])} {html.escape(e['start'])}–{html.escape(e['end'])} • {html.escape(e['class_name'])} • {html.escape(e['subject'])}")
+    if not good: lines.append('Tiada waktu yang dapat dipadankan dengan kelas dalam profil.')
+    if unmatched:
+        lines += ['','⚠️ <b>Kelas belum sepadan dengan Profil:</b>']
+        for e in unmatched[:15]: lines.append('• '+html.escape(f"{e['day']} {e['start']}–{e['end']} • {e['class_name']} • {e['subject']}"))
+        lines.append('\nTambah/betulkan kelas dalam Profil atau upload semula. Item ini <b>tidak akan disimpan</b>.')
+    lines += ['','Jadual lama masih belum diubah.']
+    kb=[]
+    if good: kb.append([{'text':'✅ SAHKAN & GANTI JADUAL','callback_data':'ttupload281_confirm'}])
+    kb += [[{'text':'🔄 Upload Semula','callback_data':'ttupload281_start'},{'text':'✏️ Isi Manual','callback_data':'tt_add'}],[{'text':'❌ Batal','callback_data':'timetable'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+def _handle_timetable_upload_v25281(cid,m):
+    try:
+        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nJadual sedia ada belum diubah.')
+        data,mime=_telegram_media_bytes_v25281(m); raw=_gemini_timetable_extract_v25281(data,mime)
+        good,bad=_prepare_timetable_draft_v25281(cid,raw); return _show_timetable_draft_v25281(cid,good,bad)
+    except Exception as e:
+        print('v25.281 timetable upload:',repr(e),flush=True); state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+        return send(cid,'⚠️ Jadual belum dapat dibaca dengan yakin. <b>Tiada data lama diubah.</b>\n\nCuba gambar/PDF yang lebih jelas atau gunakan Isi Manual.',
+                    [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],[{'text':'✏️ Isi Manual','callback_data':'tt_add'},{'text':'⬅️ Kembali','callback_data':'timetable'}]])
+
+def _commit_timetable_draft_v25281(cid):
+    ss=state.setdefault(cid,{}); draft=list(ss.get('_tt_upload_draft_v25281') or [])
+    if not draft: return _timetable_menu(cid,'⚠️ Draf upload sudah tiada. Upload semula.')
+    rows=_profile_class_records(cid); byname={str(r.get('name') or '').strip().lower():i for i,r in enumerate(rows)}
+    for r in rows: r['timetable']=[]
+    for e in draft:
+        ci=byname.get(str(e.get('class_name') or '').strip().lower())
+        if ci is not None: rows[ci].setdefault('timetable',[]).append({'day':e['day'],'start':e['start'],'end':e['end'],'subject':e['subject']})
+    _save_profile_class_records(cid,rows); ss.pop('_tt_upload_draft_v25281',None); ss.pop('_tt_upload_unmatched_v25281',None)
+    return _timetable_menu(cid,'✅ <b>Jadual upload telah disahkan dan disimpan.</b>')
+# ===== END v25.281 HELPERS =====
+
 @app.route('/webhook', methods=['POST'])
 def webhook():
     u = request.get_json(silent=True) or {}
@@ -16172,6 +16286,9 @@ def webhook():
                     menu(cid)
         elif 'document' in m or 'photo' in m:
             waiting_now=(state.get(cid,{}) or {}).get('waiting')
+            if waiting_now=='timetable_upload_v25281':
+                _handle_timetable_upload_v25281(cid,m)
+                return jsonify({'ok':True})
             if waiting_now=='donation_receipt':
                 try:
                     rid=_new_donation_receipt(cid,m.get('message_id'))
@@ -39072,3 +39189,179 @@ def _upsert_rph_progress_v25274(cid,class_name,subject,checkpoint):
 
 CIKGULAJU_PATCH_V25280='RPH_STORE_REUSES_EXISTING_SUPABASE_SECRET_KEY'
 # ===== END v25.280 =====
+
+# ===== v25.281 TIMETABLE UPLOAD UI/CALLBACK =====
+_timetable_menu_before_v25281=_timetable_menu
+def _timetable_menu(cid,note=''):
+    rows=_timetable_entries(cid); lines=['📅 <b>JADUAL WAKTU SAYA</b>','']
+    if rows:
+        cur=None
+        for e in rows:
+            if e['day']!=cur: cur=e['day']; lines.append(f'<b>{html.escape(cur)}</b>')
+            lines.append(f"• {html.escape(e['start'])}–{html.escape(e['end'])}  {html.escape(e['class_name'])}  •  {html.escape(e['subject'])}")
+    else: lines.append('Belum ada jadual disimpan. Cikgu boleh upload jadual sedia ada atau isi secara manual.')
+    if note: lines.insert(0,note+'\n')
+    kb=[[{'text':'📤 Upload Jadual Waktu','callback_data':'ttupload281_start'}],[{'text':'➕ Isi / Tambah Manual','callback_data':'tt_add'}]]
+    if rows: kb.append([{'text':'🗑️ Padam Waktu','callback_data':'tt_delete'}])
+    kb += [[{'text':'⬅️ Akaun & Profil','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+_callback_before_v25281=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='ttupload281_start': return _tt_upload_menu_v25281(cid)
+    if ds=='ttupload281_confirm': return _commit_timetable_draft_v25281(cid)
+    return _callback_before_v25281(cid,d)
+
+APP_VERSION='v25.281-UPLOAD-TIMETABLE-DRAFT-CONFIRM'
+CIKGULAJU_PATCH_V25281='UPLOAD_IMAGE_PDF_TIMETABLE_REVIEW_BEFORE_SAVE'
+# ===== END v25.281 =====
+
+# ===== v25.282 FIVE FREE SUCCESSFUL GENERATIONS =====
+# Product rule: FREE = 5 successful generations. A failed generation/delivery costs nothing.
+FREE_START_CREDITS=5
+FREE_SUCCESSFUL_GENERATIONS_V25282=5
+
+def _ensure_trial_user(cid):
+    """Create new FREE users with 5 trials; never reset an existing user's balance here."""
+    uid=int(cid)
+    rows=_sb_request('GET',f'cikgulaju_users?telegram_user_id=eq.{uid}&select=telegram_user_id,trial_remaining') or []
+    if rows:
+        return max(0,int(rows[0].get('trial_remaining') or 0))
+    _sb_request('POST','cikgulaju_users',json={'telegram_user_id':uid,'trial_remaining':FREE_SUCCESSFUL_GENERATIONS_V25282},prefer='return=minimal')
+    return FREE_SUCCESSFUL_GENERATIONS_V25282
+
+def _free_generation_available_v25282(cid):
+    try:
+        return _trial_balance(cid)>0
+    except Exception:
+        raise
+
+def _credit_gate(cid,s):
+    """Eligibility gate only. It MUST NOT consume a FREE generation."""
+    if _is_permanent_vip_v25267(cid):
+        return True
+    try:
+        a=_access_info(cid)
+        if a.get('active'):
+            return True
+        remaining=_trial_balance(cid)
+    except CreditStoreUnavailable as e:
+        print('Supabase access store error:',repr(e),flush=True)
+        send(cid,'⚠️ <b>Status akaun sedang tidak dapat disemak.</b>\n\nData akses dan baki cikgu tidak direset. Cuba lagi sebentar.',
+             [[{'text':'🔄 Cuba Lagi','callback_data':'generate_selected_material'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        return False
+    if remaining>0:
+        # Mark this attempt as FREE-eligible; debit happens only after confirmed success.
+        ss=state.setdefault(cid,{})
+        ss['_free_generation_pending_v25282']=True
+        return True
+    send(cid,'🔒 <b>5 janaan percuma telah digunakan.</b>\n\nCikgu boleh dapatkan akses VIP melalui program referral.',
+         [[{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
+          [{'text':'👤 Profil Saya','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    return False
+
+def _consume_free_after_success_v25282(cid,reason='successful_generation'):
+    """Atomic debit after success only. VIP users are never debited."""
+    ss=state.setdefault(cid,{})
+    if not ss.pop('_free_generation_pending_v25282',False):
+        return None
+    try:
+        if _is_permanent_vip_v25267(cid) or _access_info(cid).get('active'):
+            return None
+        ok,remaining=_use_trial(cid,reason)
+        if ok:
+            send(cid,f'🎁 <b>Janaan berjaya.</b> Baki percuma: <b>{remaining}</b>')
+            return remaining
+        # If another concurrent request consumed the last trial, do not falsify success.
+        print('v25.282 post-success trial debit was not accepted',cid,flush=True)
+        return None
+    except Exception as e:
+        # Generation/delivery already succeeded; never convert that success into a user-facing failure.
+        # Pending flag has been cleared to prevent accidental double debit on retry callbacks.
+        print('v25.282 post-success trial debit warning:',repr(e),flush=True)
+        return None
+
+# Wrap current final Telegram document sender. Debit only on confirmed document delivery.
+_send_document_before_v25282=send_document
+def send_document(cid,path,caption=''):
+    result=_send_document_before_v25282(cid,path,caption)
+    if _telegram_delivery_ok_v25279(result):
+        _consume_free_after_success_v25282(cid,'successful_document_delivery')
+    return result
+
+# Text-generation success path needs an explicit success hook because PDF download may happen later.
+_generate_v3_before_v25282=generate_v3
+def generate_v3(cid,s,regen_cb):
+    before_pending=bool(state.setdefault(cid,{}).get('_free_generation_pending_v25282'))
+    result=_generate_v3_before_v25282(cid,s,regen_cb)
+    ss=state.setdefault(cid,{})
+    # Existing generator stores last_result only on successful generation.
+    if before_pending and ss.get('last_result') and ss.get('last_result_context'):
+        _consume_free_after_success_v25282(cid,'successful_material_generation')
+    return result
+
+APP_VERSION='v25.282-FIVE-FREE-SUCCESS-ONLY'
+CIKGULAJU_PATCH_V25282='FIVE_FREE_DEBIT_AFTER_SUCCESS_ONLY'
+# ===== END v25.282 =====
+
+# ===== v25.283 FINAL QA HARDENING =====
+# FREE is a generation allowance, not a download allowance.
+# Debit once after the generation itself succeeds; later PDF downloads must not debit again.
+
+def _mark_free_attempt_v25283(cid):
+    state.setdefault(cid,{})['_free_generation_pending_v25282']=True
+
+def _consume_if_result_created_v25283(cid,before_result_marker=None,reason='successful_material_generation'):
+    ss=state.setdefault(cid,{})
+    if not ss.get('_free_generation_pending_v25282'):
+        return None
+    if ss.get('last_result') and ss.get('last_result_context'):
+        return _consume_free_after_success_v25282(cid,reason)
+    return None
+
+# PDF/document delivery is not itself a new generation.
+# Keep v25.279 delivery/history semantics, but remove the v25.282 document-based FREE debit.
+send_document=_send_document_before_v25282
+
+# Preserve active generator hook: one debit after a successful generated result.
+def generate_v3(cid,s,regen_cb):
+    pending=bool(state.setdefault(cid,{}).get('_free_generation_pending_v25282'))
+    result=_generate_v3_before_v25282(cid,s,regen_cb)
+    if pending:
+        _consume_if_result_created_v25283(cid,reason='successful_material_generation')
+    return result
+
+# The daily quick-RPH path bypasses generate_v3, so it needs its own eligibility gate.
+_generate_one_quick_rph_before_v25283=_generate_one_quick_rph_v25278
+def _generate_one_quick_rph_v25278(cid,entry):
+    ss=state.setdefault(cid,{})
+    # Reuse the same eligibility rules as manual generation.
+    if not _credit_gate(cid,ss):
+        return {'ok':False,'reason':'free_limit_or_access_unavailable','row':None,'entry':dict(entry)}
+    result=_generate_one_quick_rph_before_v25283(cid,entry)
+    if result.get('ok'):
+        _consume_free_after_success_v25282(cid,'successful_quick_rph_generation')
+    else:
+        # Failure is free: clear the pending marker without consuming.
+        ss.pop('_free_generation_pending_v25282',None)
+    return result
+
+# Summative RPH creates a result without passing through generate_v3.
+# Wrap the active callback only for that exact successful branch.
+_callback_before_v25283=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='generate_selected_material':
+        ss=state.setdefault(cid,{})
+        is_sum_rph=(ss.get('assessment_mode')=='summative' and ss.get('task')=='rph')
+        before=ss.get('last_result')
+        out=_callback_before_v25283(cid,d)
+        if is_sum_rph and ss.get('_free_generation_pending_v25282') and ss.get('last_result') is not None and ss.get('last_result') is not before:
+            _consume_free_after_success_v25282(cid,'successful_summative_rph_generation')
+        return out
+    return _callback_before_v25283(cid,d)
+
+APP_VERSION='v25.283-QA-FINAL'
+CIKGULAJU_PATCH_V25283='FREE_ONCE_PER_SUCCESS_QUICK_RPH_GATED_TIMETABLE_UPLOAD_RETAINED'
+# ===== END v25.283 =====
