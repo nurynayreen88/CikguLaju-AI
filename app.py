@@ -36950,3 +36950,63 @@ CIKGULAJU_PATCH_V25260='ENGLISH_Y3Y6_SOW_TB_GUIDED_RPH'
 APP_VERSION='v25.261-STARTUP-ORDER-FIX'
 CIKGULAJU_PATCH_V25261='V25258_REFERENCE_MATERIAL_BINDING_FIX'
 # ===== END v25.261 =====
+
+
+# ===== v25.262 ENGLISH Y5/Y6 VERIFIED WORKBOOK RUNTIME =====
+# Non-destructive late runtime layer. Only verified Workbook lessons are exposed.
+APP_VERSION='v25.262-ENGLISH-Y5Y6-VERIFIED-WORKBOOK-RUNTIME'
+import runpy as _runpy_v25262, os as _os_v25262, re as _re_v25262
+
+def _en25262_load_map(rel,var):
+    try:
+        p=_os_v25262.path.join(_os_v25262.path.dirname(__file__),rel)
+        return dict(_runpy_v25262.run_path(p).get(var) or {})
+    except Exception:
+        return {}
+
+_EN5_WB_VERIFIED_V25262=_en25262_load_map('resources/english/y5/workbook_verified_map.py','EN5_WB_VERIFIED')
+_EN6_WB_VERIFIED_V25262=_en25262_load_map('resources/english/y6/workbook_verified_map.py','EN6_WB_VERIFIED')
+
+def _en25262_pages(raw):
+    if isinstance(raw,(list,tuple)) and raw: raw=raw[0]
+    if isinstance(raw,dict): raw=raw.get('printed')
+    out=[]
+    for part in str(raw or '').split(','):
+        part=part.strip()
+        m=_re_v25262.fullmatch(r'(\d+)\s*[-–]\s*(\d+)',part)
+        if m:
+            a,b=map(int,m.groups()); out.extend(range(min(a,b),max(a,b)+1))
+        elif part.isdigit(): out.append(int(part))
+    return sorted(set(out))
+
+_en25262_book_pages_base=globals().get('_en_book_pages_v25232')
+def _en_book_pages_v25232(ss,key):
+    if key=='activity' and _en_primary_v25232(ss):
+        try:
+            y=_english_primary_year_number_v2517((ss or {}).get('year'))
+            lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+            mp=_EN5_WB_VERIFIED_V25262 if y==5 else (_EN6_WB_VERIFIED_V25262 if y==6 else {})
+            if lesson in mp:
+                pages=_en25262_pages(mp[lesson])
+                if pages: return pages
+        except Exception:
+            pass
+    if callable(_en25262_book_pages_base): return _en25262_book_pages_base(ss,key)
+    return []
+
+_en25262_physical_base=globals().get('_book_physical_page_v25237')
+def _book_physical_page_v25237(ss,key,page):
+    try:
+        y=_english_primary_year_number_v2517((ss or {}).get('year'))
+        lesson=int((ss or {}).get('lesson_no') or (ss or {}).get('lesson') or (ss or {}).get('textbook_lesson_no'))
+        mp=_EN5_WB_VERIFIED_V25262 if y==5 else (_EN6_WB_VERIFIED_V25262 if y==6 else {})
+        if key=='activity' and lesson in mp and int(page) in _en25262_pages(mp[lesson]):
+            # Y5 Workbook: printed p4 is physical PDF page 3. Y6: printed p4 is physical PDF page 6.
+            return int(page)-1 if y==5 else int(page)+2
+    except Exception:
+        pass
+    if callable(_en25262_physical_base): return _en25262_physical_base(ss,key,page)
+    return int(page)
+
+CIKGULAJU_PATCH_V25262='ENGLISH_Y5Y6_VERIFIED_WORKBOOK_RUNTIME'
+# ===== END v25.262 =====
