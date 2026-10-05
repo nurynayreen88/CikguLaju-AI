@@ -37222,3 +37222,51 @@ def _en98_lesson_menu(cid,unit_idx):
 
 CIKGULAJU_PATCH_V25264='ENGLISH_Y5Y6_CLEAN_UNIT_SB_PB_MENU'
 # ===== END v25.264 =====
+
+
+# ===== v25.265 ENGLISH Y5/Y6 FLOW ROUTE LOCK =====
+# Final callback guard: Y5/Y6 English must always follow Unit -> Lesson -> Class.
+# SK/SP are hydrated automatically only after a verified Lesson is selected.
+APP_VERSION='v25.265-ENGLISH-Y5Y6-UNIT-LESSON-FLOW-LOCK'
+
+_callback_before_v25265=callback
+def callback(cid,d):
+    ds=str(d or '')
+    ss=state.setdefault(cid,{})
+    y=_english_primary_year_number_v2517(ss.get('year'))
+    subj=str(ss.get('subject') or '').strip().casefold()
+
+    # Subject entry: prevent legacy Topic/SK selector from taking Y5/Y6 English.
+    if ds in ('sub_Bahasa Inggeris','sub_English','sub_Bahasa_Inggeris'):
+        if y in (5,6):
+            ss['subject']='Bahasa Inggeris'
+            ss['task']='quick_material'; ss['quick_material_flow']=True
+            for k in ('selected_sk','selected_sp','sk_code','sp_code','_en98_items',
+                      '_en56_blocks_v25264','quick_content_v2391','unit','topic','subtopic'):
+                ss.pop(k,None)
+            return _en97_unit_menu(cid,0)
+
+    # Unit -> Lesson is mandatory for Y5/Y6 English.
+    if ds.startswith('en97_unit_') and y in (5,6) and subj in ('english','bahasa inggeris'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _en98_lesson_menu(cid,i)
+
+    # Lesson -> automatic SOW SK/SP hydration -> Class.
+    if ds.startswith('en98_lesson_') and y in (5,6) and subj in ('english','bahasa inggeris'):
+        try: i=int(ds.rsplit('_',1)[1])
+        except Exception: i=-1
+        return _en98_apply_lesson(cid,i)
+
+    if ds=='en98_back' and y in (5,6) and subj in ('english','bahasa inggeris'):
+        label=str(ss.get('_en56_unit_label_v25264') or '')
+        blocks=ss.get('_en56_blocks_v25264') or []
+        for i,b in enumerate(blocks):
+            if str(b[2])==label:
+                return _en98_lesson_menu(cid,i)
+        return _en97_unit_menu(cid,0)
+
+    return _callback_before_v25265(cid,d)
+
+CIKGULAJU_PATCH_V25265='ENGLISH_Y5Y6_UNIT_LESSON_FLOW_LOCK'
+# ===== END v25.265 =====
