@@ -16076,6 +16076,9 @@ def webhook():
                 _save_teacher_profile(cid,state_name=value)
             state[cid]={}
             return _profile_edit_menu(cid)
+        elif m.get('text') and state.get(cid,{}).get('waiting') == 'tt286_class_rename':
+            _tt286_apply_rename(cid,m.get('text','').strip())
+            return jsonify({'ok':True})
         elif m.get('text') and state.get(cid,{}).get('waiting') == 'profile_class_add_name':
             ss=state.setdefault(cid,{})
             yl=str(ss.get('_profile_add_year_v2398') or '').strip()
@@ -39446,3 +39449,165 @@ def menu(cid,show_persistent=False):
 APP_VERSION='v25.285-UPLOAD-ON-MAIN-MENU'
 CIKGULAJU_PATCH_V25285='DIRECT_UPLOAD_TIMETABLE_ON_ACTIVE_HOME_MENU'
 # ===== END v25.285 =====
+
+# ===== v25.286 CLASS-NAME CONFIRMATION BEFORE TIMETABLE COMMIT =====
+def _tt286_normalize_raw_entries(raw_entries):
+    days={x.lower():x for x in _TIMETABLE_DAYS}; out=[]; seen=set()
+    for x in raw_entries or []:
+        day=days.get(str(x.get('day') or '').strip().lower())
+        start=_norm_time_v25281(x.get('start')); end=_norm_time_v25281(x.get('end'))
+        cls=' '.join(str(x.get('class_name') or '').split())
+        sub=' '.join(str(x.get('subject') or '').split())
+        try:
+            sm=int(start[:2])*60+int(start[3:]) if start else -1
+            em=int(end[:2])*60+int(end[3:]) if end else -1
+        except Exception: sm=em=-1
+        if not (day and start and end and em>sm and cls and sub): continue
+        e={'day':day,'start':start,'end':end,'class_name':cls,'subject':sub}
+        k=(day,start,end,cls.casefold(),sub.casefold())
+        if k not in seen: seen.add(k); out.append(e)
+    order={d:i for i,d in enumerate(_TIMETABLE_DAYS)}
+    out.sort(key=lambda e:(order.get(e['day'],99),e['start'],e['class_name'].casefold()))
+    return out
+
+def _tt286_class_names(entries):
+    out=[]; seen=set()
+    for e in entries or []:
+        n=' '.join(str(e.get('class_name') or '').split())
+        k=n.casefold()
+        if n and k not in seen: seen.add(k); out.append(n)
+    return out
+
+def _tt286_show_class_confirmation(cid,note=''):
+    ss=state.setdefault(cid,{})
+    entries=list(ss.get('_tt286_raw_draft') or [])
+    names=_tt286_class_names(entries)
+    if not names: return _tt_upload_menu_v25281(cid)
+    lines=['🏫 <b>SAHKAN NAMA KELAS</b>','',
+           'AI mengesan kelas berikut. Semak nama kelas dahulu sebelum CikguLaju membina jadual.','']
+    for i,n in enumerate(names,1): lines.append(f'{i}. <b>{html.escape(n)}</b>')
+    if note: lines += ['',note]
+    lines += ['','Jika ada yang salah, tekan nama kelas untuk betulkan. Pembetulan akan digunakan pada <b>semua slot</b> kelas tersebut.']
+    kb=[]
+    for i,n in enumerate(names[:30]):
+        kb.append([{'text':('✏️ '+n)[:64],'callback_data':f'tt286_edit_{i}'}])
+    kb += [[{'text':'✅ SAHKAN SEMUA KELAS','callback_data':'tt286_classes_ok'}],
+           [{'text':'🔄 Upload Semula','callback_data':'ttupload281_start'},{'text':'❌ Batal','callback_data':'timetable'}]]
+    ss.pop('waiting',None)
+    return send(cid,'\n'.join(lines),kb)
+
+def _tt286_start_edit(cid,idx):
+    ss=state.setdefault(cid,{})
+    names=_tt286_class_names(ss.get('_tt286_raw_draft') or [])
+    if not (0<=idx<len(names)): return _tt286_show_class_confirmation(cid,'⚠️ Kelas tidak ditemui.')
+    ss['_tt286_edit_old']=names[idx]; ss['waiting']='tt286_class_rename'
+    return send(cid,
+        f"✏️ <b>BETULKAN NAMA KELAS</b>\n\nNama dibaca AI: <b>{html.escape(names[idx])}</b>\n\nTaip nama kelas yang betul. Contoh: <b>5 Bestari A</b>",
+        [[{'text':'❌ Batal Pembetulan','callback_data':'tt286_edit_cancel'}]])
+
+def _tt286_apply_rename(cid,new_name):
+    ss=state.setdefault(cid,{})
+    old=' '.join(str(ss.get('_tt286_edit_old') or '').split())
+    new=' '.join(str(new_name or '').split())
+    if not old or not new: return _tt286_show_class_confirmation(cid,'⚠️ Nama kelas tidak boleh kosong.')
+    if len(new)>80:
+        ss['waiting']='tt286_class_rename'
+        return send(cid,'⚠️ Nama kelas terlalu panjang. Taip nama kelas yang lebih ringkas.')
+    changed=0
+    for e in ss.get('_tt286_raw_draft') or []:
+        if str(e.get('class_name') or '').strip().casefold()==old.casefold():
+            e['class_name']=new; changed+=1
+    ss.pop('_tt286_edit_old',None); ss.pop('waiting',None)
+    return _tt286_show_class_confirmation(cid,f'✅ <b>{html.escape(old)}</b> → <b>{html.escape(new)}</b> ({changed} slot dikemas kini)')
+
+def _tt286_show_full_draft(cid):
+    ss=state.setdefault(cid,{})
+    draft=list(ss.get('_tt286_raw_draft') or [])
+    if not draft: return _tt_upload_menu_v25281(cid)
+    existing={str(r.get('name') or '').strip().casefold() for r in _profile_class_records(cid)}
+    newclasses=[n for n in _tt286_class_names(draft) if n.casefold() not in existing]
+    ss['_tt_upload_draft_v25281']=draft
+    lines=['📋 <b>SEMAKAN JADUAL PENUH</b>','']
+    if newclasses:
+        lines += ['🆕 <b>Kelas baharu akan ditambah selepas pengesahan:</b>']
+        lines += ['• '+html.escape(n) for n in newclasses]
+        lines.append('')
+    for e in draft[:70]:
+        lines.append(f"• {html.escape(e['day'])} {html.escape(e['start'])}–{html.escape(e['end'])} • {html.escape(e['class_name'])} • {html.escape(e['subject'])}")
+    if len(draft)>70: lines.append(f"… dan {len(draft)-70} slot lagi.")
+    lines += ['','Jadual dan profil lama masih belum diubah.']
+    kb=[[{'text':'✅ SAHKAN & SIMPAN JADUAL','callback_data':'tt286_commit'}],
+        [{'text':'🏫 Semak Nama Kelas Semula','callback_data':'tt286_classes_review'}],
+        [{'text':'🔄 Upload Semula','callback_data':'ttupload281_start'},{'text':'❌ Batal','callback_data':'timetable'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+def _tt286_commit(cid):
+    ss=state.setdefault(cid,{})
+    draft=list(ss.get('_tt286_raw_draft') or [])
+    if not draft: return _timetable_menu(cid,'⚠️ Draf upload sudah tiada. Upload semula.')
+    oldrows=_profile_class_records(cid)
+    rows=[dict(r) for r in oldrows]
+    byname={str(r.get('name') or '').strip().casefold():i for i,r in enumerate(rows)}
+    # Add only confirmed class names. Preserve every existing class and its metadata.
+    for n in _tt286_class_names(draft):
+        k=n.casefold()
+        if k not in byname:
+            rows.append({'name':n,'students':None,'subjects':[],'timetable':[]})
+            byname[k]=len(rows)-1
+    # Replace timetable only after final confirmation; preserve class metadata/progress.
+    for r in rows: r['timetable']=[]
+    for e in draft:
+        ci=byname.get(str(e.get('class_name') or '').strip().casefold())
+        if ci is None: continue
+        rows[ci].setdefault('timetable',[]).append(
+            {'day':e['day'],'start':e['start'],'end':e['end'],'subject':e['subject']})
+        subs=list(rows[ci].get('subjects') or [])
+        if e['subject'] and e['subject'] not in subs: subs.append(e['subject'])
+        rows[ci]['subjects']=subs
+    _save_profile_class_records(cid,rows)
+    for k in ('_tt286_raw_draft','_tt286_edit_old','_tt_upload_draft_v25281','_tt_upload_unmatched_v25281'):
+        ss.pop(k,None)
+    ss.pop('waiting',None)
+    return _timetable_menu(cid,'✅ <b>Nama kelas dan jadual telah disahkan serta disimpan.</b>')
+
+# Replace upload result flow: class confirmation comes before timetable review.
+_handle_timetable_upload_before_v25286=_handle_timetable_upload_v25281
+def _handle_timetable_upload_v25281(cid,m):
+    try:
+        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nJadual sedia ada belum diubah.')
+        data,mime=_telegram_media_bytes_v25281(m)
+        raw=_gemini_timetable_extract_v25281(data,mime)
+        draft=_tt286_normalize_raw_entries(raw)
+        if not draft:
+            state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+            return send(cid,'⚠️ Tiada slot kelas yang dapat dibaca dengan yakin. <b>Tiada data lama diubah.</b>',
+                        [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+                         [{'text':'✏️ Isi Manual','callback_data':'tt_add'}]])
+        ss=state.setdefault(cid,{})
+        ss['_tt286_raw_draft']=draft
+        ss.pop('_tt_upload_draft_v25281',None); ss.pop('_tt_upload_unmatched_v25281',None)
+        return _tt286_show_class_confirmation(cid)
+    except Exception as e:
+        print('v25.286 timetable upload:',repr(e),flush=True)
+        state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+        return send(cid,'⚠️ Jadual belum dapat dibaca dengan yakin. <b>Tiada data lama diubah.</b>\n\nCuba gambar/PDF yang lebih jelas atau gunakan Isi Manual.',
+                    [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+                     [{'text':'✏️ Isi Manual','callback_data':'tt_add'},{'text':'⬅️ Kembali','callback_data':'timetable'}]])
+
+_callback_before_v25286=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith('tt286_edit_') and ds!='tt286_edit_cancel':
+        try: return _tt286_start_edit(cid,int(ds.rsplit('_',1)[1]))
+        except Exception: return _tt286_show_class_confirmation(cid,'⚠️ Pilihan kelas tidak sah.')
+    if ds=='tt286_edit_cancel':
+        state.setdefault(cid,{}).pop('waiting',None); state.setdefault(cid,{}).pop('_tt286_edit_old',None)
+        return _tt286_show_class_confirmation(cid)
+    if ds in ('tt286_classes_review',): return _tt286_show_class_confirmation(cid)
+    if ds=='tt286_classes_ok': return _tt286_show_full_draft(cid)
+    if ds=='tt286_commit': return _tt286_commit(cid)
+    return _callback_before_v25286(cid,d)
+
+APP_VERSION='v25.286-CLASS-CONFIRM-BEFORE-TIMETABLE'
+CIKGULAJU_PATCH_V25286='AI_CLASSES_REVIEW_MULTI_RENAME_GLOBAL_APPLY_AUTO_ADD_AFTER_CONFIRM'
+# ===== END v25.286 =====
