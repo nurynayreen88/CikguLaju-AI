@@ -40387,6 +40387,79 @@ def callback(cid,d):
         return _clean_profile_page_v25296(cid)
     return _callback_before_v25296(cid,d)
 
-APP_VERSION='v25.296-CLEAN-PROFILE-UI'
+APP_VERSION='v25.297-PM-INTEGRATION-READY'
 CIKGULAJU_PATCH_V25296='CLEAN_PROFILE_IDENTITY_ACCESS_DAILY_READINESS'
 # ===== END v25.296 =====
+
+
+# ===== v25.297 PM INTEGRATION READINESS =====
+CIKGULAJU_PATCH_V25297='PM_T1_T6_252PDP_RPT_ENTRIES_INTEGRATION_READY'
+# No existing PM/runtime function removed. Curriculum rows remain DB-driven.
+
+# ===== v26.00 PRIMARY MASTER DB WITH SAFE FALLBACK =====
+# Non-destructive runtime switch. Existing v25_93 and specialist resolvers remain intact.
+def _cikgulaju_primary_db_v2600():
+    import os as _os, sqlite3 as _sqlite3
+    base = _os.path.dirname(_os.path.abspath(__file__))
+    candidate = _os.getenv('CIKGULAJU_V2600_DB_PATH', _os.path.join(base, 'CikguLaju_Curriculum_Master_v26_00.db'))
+    # Git-safe bootstrap: rebuild v26_00 from the three committed binary parts.
+    # Never overwrite an existing DB; build to a temporary file then atomically rename.
+    if not _os.path.isfile(candidate):
+        parts = [
+            _os.path.join(base, 'v26_00_part1.bin'),
+            _os.path.join(base, 'v26_00_part2.bin'),
+            _os.path.join(base, 'v26_00_part3.bin'),
+        ]
+        if not all(_os.path.isfile(x) for x in parts):
+            raise RuntimeError('v26_00 DB/parts not complete')
+        tmp = candidate + '.rebuilding'
+        try:
+            with open(tmp, 'wb') as out:
+                for part in parts:
+                    with open(part, 'rb') as src:
+                        while True:
+                            chunk = src.read(1024 * 1024)
+                            if not chunk:
+                                break
+                            out.write(chunk)
+            _os.replace(tmp, candidate)
+        except Exception:
+            try:
+                if _os.path.exists(tmp):
+                    _os.remove(tmp)
+            except Exception:
+                pass
+            raise
+    con = _sqlite3.connect(candidate, timeout=15)
+    try:
+        chk = con.execute('PRAGMA integrity_check').fetchone()
+        if not chk or str(chk[0]).lower() != 'ok':
+            raise RuntimeError('v26_00 integrity_check failed: ' + repr(chk))
+        required = {'rpt_entries','rpt_entry_standards'}
+        tables = {str(r[0]) for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()}
+        missing = sorted(required - tables)
+        if missing:
+            raise RuntimeError('v26_00 required tables missing: ' + ','.join(missing))
+        pm = int(con.execute("SELECT COUNT(*) FROM rpt_entries WHERE subject='Pendidikan Moral' AND year_label IN ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6') AND verified=1").fetchone()[0])
+        if pm != 252:
+            raise RuntimeError('v26_00 PM verified PdP count != 252: ' + str(pm))
+        pmstd = int(con.execute("SELECT COUNT(*) FROM rpt_entry_standards s JOIN rpt_entries r ON r.id=s.rpt_entry_id WHERE r.subject='Pendidikan Moral' AND r.year_label IN ('Tahun 1','Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6') AND r.verified=1 AND s.verified=1").fetchone()[0])
+        if pmstd != 672:
+            raise RuntimeError('v26_00 PM verified standards count != 672: ' + str(pmstd))
+    finally:
+        con.close()
+    return candidate
+
+_DB_PATH_BEFORE_V2600 = globals().get('DB_PATH')
+try:
+    DB_PATH = _cikgulaju_primary_db_v2600()
+    CIKGULAJU_DB_V2600_ACTIVE = True
+    print('v26.00 PRIMARY DB ACTIVE', DB_PATH, flush=True)
+except Exception as _v2600_error:
+    DB_PATH = _DB_PATH_BEFORE_V2600
+    CIKGULAJU_DB_V2600_ACTIVE = False
+    print('v26.00 PRIMARY DB FALLBACK', repr(_v2600_error), 'DB_PATH=', DB_PATH, flush=True)
+
+APP_VERSION = 'v26.00-PM-T1-T6-MASTER-DB'
+CIKGULAJU_PATCH_V2600 = 'PRIMARY_MASTER_DB_V2600_SAFE_FALLBACK_V2593'
+# ===== END v26.00 =====
