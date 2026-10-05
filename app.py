@@ -39750,3 +39750,40 @@ def menu(cid,show_persistent=False):
 APP_VERSION='v25.289-MENU-WITH-SIMPLE-GUIDE'
 CIKGULAJU_PATCH_V25289='FOUR_HOME_ACTIONS_WITH_ONE_LINE_EXPLANATIONS'
 # ===== END v25.289 =====
+
+# ===== v25.290 REMOVE DUPLICATE UPLOAD FROM PROFILE =====
+_callback_before_v25290=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='account':
+        p=_get_teacher_profile(cid)
+        score,ready,_=_profile_completion_v25272(cid)
+        lines=['👤 <b>PROFIL SAYA</b>','']
+        try:
+            profile_text=_profile_text(cid)
+            if profile_text:
+                lines.append(profile_text)
+        except Exception:
+            pass
+        lines += ['',f'⚡ Kelengkapan profil: <b>{score}%</b>']
+        if ready:
+            lines.append('✅ Profil sedia untuk RPH Hari Ini.')
+        else:
+            lines.append('Lengkapkan kelas dan jadual apabila bersedia.')
+        kb=[
+            [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
+            [{'text':'🏫 URUS KELAS','callback_data':'profile_classes_manage'}],
+            [{'text':'✏️ KEMAS KINI PROFIL','callback_data':'profile_edit'}],
+        ]
+        if not ready:
+            kb.append([{'text':f'⚡ LENGKAPKAN PROFIL • {score}%','callback_data':'smartprof272'}])
+        kb += [
+            [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+            [{'text':'🏠 MENU UTAMA','callback_data':'home'}],
+        ]
+        return send(cid,'\n'.join(lines),kb)
+    return _callback_before_v25290(cid,d)
+
+APP_VERSION='v25.290-PROFILE-NO-DUPLICATE-UPLOAD'
+CIKGULAJU_PATCH_V25290='UPLOAD_ONLY_INSIDE_TIMETABLE_MANAGEMENT_NOT_PROFILE'
+# ===== END v25.290 =====
