@@ -40302,3 +40302,91 @@ def _today_rpt_suggestions_v25292(cid):
 APP_VERSION='v25.294-SUBJECT-ALIAS-RESOLVER'
 CIKGULAJU_PATCH_V25294='TIMETABLE_SUBJECT_ALIASES_CANONICAL_RPT_SOW_LOOKUP'
 # ===== END v25.294 =====
+
+# ===== v25.295 REMOVE MANAGE CLASSES FROM PROFILE MENU =====
+_callback_before_v25295=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='account':
+        _score,ready,_=_profile_completion_v25272(cid)
+        lines=['👤 <b>PROFIL SAYA</b>','']
+        try:
+            profile_text=_profile_text(cid)
+            if profile_text:
+                lines.append(profile_text)
+        except Exception:
+            pass
+        if ready:
+            lines += ['','✅ Profil sedia untuk RPH Hari Ini.']
+        kb=[
+            [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
+            [{'text':'✏️ KEMAS KINI PROFIL','callback_data':'profile_edit'}],
+            [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+            [{'text':'🏠 MENU UTAMA','callback_data':'home'}],
+        ]
+        return send(cid,'\n'.join(lines),kb)
+    return _callback_before_v25295(cid,d)
+
+APP_VERSION='v25.295-PROFILE-NO-MANAGE-CLASSES'
+CIKGULAJU_PATCH_V25295='REMOVE_MANAGE_CLASSES_BUTTON_FROM_PROFILE_MENU_ONLY'
+# ===== END v25.295 =====
+
+# ===== v25.296 CLEAN PROFILE UI =====
+def _profile_access_label_v25296(cid):
+    try:
+        if _is_permanent_vip_v25267(cid):
+            return '👑 VIP FOUNDER'
+        a=_access_info(cid)
+        if a.get('active'):
+            until=str(a.get('access_until') or '')[:10]
+            return '⭐ VIP'+(f' • sehingga {until}' if until else '')
+        remaining=_trial_balance(cid)
+        return f'🎁 FREE • baki {max(0,int(remaining))} janaan'
+    except Exception:
+        return 'Status akses tidak dapat disemak'
+
+def _profile_daily_readiness_v25296(cid):
+    try:
+        rows=_timetable_entries(cid)
+    except Exception:
+        rows=[]
+    if rows:
+        classes=len({str(x.get('class_name') or '').strip().casefold() for x in rows if str(x.get('class_name') or '').strip()})
+        return '📅 Jadual waktu: <b>Tersedia</b>\n🏫 Kelas: <b>Dikesan daripada jadual</b>' + (f' ({classes})' if classes else '')
+    return '📅 Jadual waktu: <b>Belum tersedia</b>\n🏫 Kelas: <b>Akan dikesan daripada jadual</b>'
+
+def _clean_profile_page_v25296(cid):
+    p=_teacher_profile(cid)
+    if not p:
+        return _profile_start(cid)
+    name=html.escape(str(p.get('display_name') or '-'))
+    negeri=html.escape(str(p.get('state_name') or '-'))
+    access=html.escape(_profile_access_label_v25296(cid))
+    readiness=_profile_daily_readiness_v25296(cid)
+    body=(
+        '👤 <b>PROFIL SAYA</b>\n\n'
+        '<b>Maklumat Cikgu</b>\n'
+        f'Nama: <b>{name}</b>\n'
+        f'Negeri: <b>{negeri}</b>\n\n'
+        '<b>Akses CikguLaju</b>\n'
+        f'{access}\n\n'
+        '<b>Persediaan RPH Hari Ini</b>\n'
+        f'{readiness}'
+    )
+    kb=[
+        [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
+        [{'text':'✏️ KEMAS KINI PROFIL','callback_data':'profile_edit'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+        [{'text':'🏠 MENU UTAMA','callback_data':'home'}],
+    ]
+    return send(cid,body,kb)
+
+_callback_before_v25296=callback
+def callback(cid,d):
+    if str(d or '')=='account':
+        return _clean_profile_page_v25296(cid)
+    return _callback_before_v25296(cid,d)
+
+APP_VERSION='v25.296-CLEAN-PROFILE-UI'
+CIKGULAJU_PATCH_V25296='CLEAN_PROFILE_IDENTITY_ACCESS_DAILY_READINESS'
+# ===== END v25.296 =====
