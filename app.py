@@ -39393,3 +39393,56 @@ def callback(cid,d):
 APP_VERSION='v25.284-UPLOAD-TIMETABLE-MENU-VISIBLE'
 CIKGULAJU_PATCH_V25284='UPLOAD_TIMETABLE_DIRECTLY_VISIBLE_IN_PROFILE'
 # ===== END v25.284 =====
+
+# ===== v25.285 UPLOAD TIMETABLE ON MAIN MENU =====
+# Make timetable setup impossible to miss: direct button on the actual active home menu.
+_menu_before_v25285=menu
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    score,ready,_=_profile_completion_v25272(cid)
+    supporter_open,_=_early_supporter_open_v25268()
+    kb=[]
+    if ready:
+        kb.append([{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}])
+    else:
+        kb.append([{'text':f'⚡ LENGKAPKAN PROFIL • {score}%','callback_data':'smartprof272'}])
+    kb += [
+        [{'text':'📤 UPLOAD JADUAL WAKTU','callback_data':'ttupload281_start'}],
+        [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
+        [{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
+        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+    ]
+    if supporter_open:
+        kb.append([{'text':'👑 PENYOKONG AWAL • RM50','callback_data':'donate'}])
+    kb.append([
+        {'text':'👤 PROFIL SAYA','callback_data':'account'},
+        {'text':'ℹ️ TENTANG','callback_data':'about_beta'}
+    ])
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    supporter_line='\n👑 <b>Penyokong Awal</b>\nRM50 sekali sahaja • VIP Founder\n' if supporter_open else ''
+    smart_line=(
+        '⚡ <b>RPH Hari Ini tersedia</b>\nCikguLaju gunakan kelas, subjek & jadual cikgu.\n\n'
+        if ready else
+        f'⚡ <b>Profil {score}% lengkap</b>\nUpload atau isi jadual untuk aktifkan RPH Hari Ini. <i>Boleh buat kemudian.</i>\n\n'
+    )
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\n\n'
+        + smart_line +
+        '📚 Ikut RPT/SOW & kurikulum sebenar\n'
+        '🎯 SK & SP dipadankan automatik\n'
+        '📝 Jana RPH dengan cepat\n'
+        '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '👥 <b>Ajak Rakan</b>\n'
+        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
+        + supporter_line
+    )
+    return send(cid,body,kb)
+
+APP_VERSION='v25.285-UPLOAD-ON-MAIN-MENU'
+CIKGULAJU_PATCH_V25285='DIRECT_UPLOAD_TIMETABLE_ON_ACTIVE_HOME_MENU'
+# ===== END v25.285 =====
