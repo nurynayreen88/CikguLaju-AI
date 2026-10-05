@@ -37309,3 +37309,167 @@ def menu(cid, show_persistent=False):
 
 CIKGULAJU_PATCH_V25266='MAIN_MENU_VALUE_CONTINUOUS_UPDATE_VIP_INFO'
 # ===== END v25.266 =====
+
+
+# ===== v25.267 END UNLIMITED BETA + LIVE REFERRAL VIP =====
+# Public unlimited bypass ends immediately. Existing subscription/trial logic remains.
+# Founding/donor lifetime VIP remains protected. Referral: 1 new user = +3 VIP days.
+APP_VERSION='v25.267-LIVE-REFERRAL-VIP-END-UNLIMITED-BETA'
+REFERRAL_VIP_DAYS_V25267=3
+
+def _public_beta_info():
+    now_my=datetime.now(timezone.utc)+timedelta(hours=8)
+    today=now_my.date()
+    return {'active':False,'start':datetime(2026,9,14).date(),'end':today,
+            'end_label':today.strftime('%d/%m/%Y'),'days_left':0}
+
+def _is_beta_tester(cid):
+    return False
+
+def _is_permanent_vip_v25267(cid):
+    try:
+        p=_beta_vip_profile(cid) or {}
+        return bool(int(p.get('lifetime_basic') or 0))
+    except Exception:
+        return False
+
+_credit_gate_before_v25267=_credit_gate
+def _credit_gate(cid,s):
+    if _is_permanent_vip_v25267(cid):
+        return True
+    return _credit_gate_before_v25267(cid,s)
+
+def _ensure_referral_schema_v25267():
+    con=_db()
+    try:
+        con.executescript("""
+        CREATE TABLE IF NOT EXISTS referral_vip (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          referrer_chat_id TEXT NOT NULL,
+          referred_chat_id TEXT NOT NULL UNIQUE,
+          vip_days INTEGER NOT NULL DEFAULT 3,
+          created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE INDEX IF NOT EXISTS idx_referral_vip_referrer
+          ON referral_vip(referrer_chat_id,created_at DESC);
+        """)
+        con.commit()
+    finally: con.close()
+
+def _referral_count_v25267(cid):
+    _ensure_referral_schema_v25267()
+    con=_db()
+    try:
+        return int(con.execute("SELECT COUNT(*) FROM referral_vip WHERE referrer_chat_id=?",(str(cid),)).fetchone()[0])
+    finally: con.close()
+
+def _bot_username_v25267():
+    try:
+        r=requests.get(f'{API}/getMe',timeout=10)
+        j=r.json() if r.ok else {}
+        return str((j.get('result') or {}).get('username') or '').strip()
+    except Exception:
+        return ''
+
+def _referral_link_v25267(cid):
+    u=_bot_username_v25267()
+    return f'https://t.me/{u}?start=ref_{cid}' if u else ''
+
+def _show_referral_v25267(cid):
+    link=_referral_link_v25267(cid)
+    n=_referral_count_v25267(cid)
+    if not link:
+        return send(cid,'⚠️ Pautan referral belum dapat dijana. Cuba semula sebentar lagi.',
+                    [[{'text':'🔄 Cuba Lagi','callback_data':'referral_vip'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    msg=(f'👥 <b>AJAK RAKAN • DAPAT VIP</b>\n\n'
+         f'Kongsi pautan unik cikgu kepada rakan guru.\n'
+         f'Setiap <b>1 rakan baharu</b> yang mula menggunakan CikguLaju melalui pautan ini '
+         f'memberi cikgu <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>.\n\n'
+         f'🔗 <b>Pautan referral cikgu:</b>\n<code>{html.escape(link)}</code>\n\n'
+         f'👤 Referral berjaya: <b>{n}</b>\n'
+         f'⭐ VIP diperoleh melalui referral: <b>{n*REFERRAL_VIP_DAYS_V25267} hari</b>\n\n'
+         'Hari VIP akan ditambah secara automatik apabila referral baharu disahkan.')
+    share='https://t.me/share/url?url='+__import__('urllib.parse',fromlist=['quote']).quote(link,safe='')+'&text='+__import__('urllib.parse',fromlist=['quote']).quote('Cuba CikguLaju AI untuk mudahkan persediaan PdP 👩‍🏫',safe='')
+    return send(cid,msg,[[{'text':'📤 KONGSI KEPADA RAKAN','url':share}],
+                         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+def _register_referral_v25267(new_cid,referrer_cid):
+    if str(new_cid)==str(referrer_cid): return False
+    _ensure_referral_schema_v25267()
+    con=_db()
+    try:
+        old=con.execute("SELECT 1 FROM referral_vip WHERE referred_chat_id=?",(str(new_cid),)).fetchone()
+        if old: return False
+        # Only count a genuinely new local bot user record (created by current start event is allowed).
+        con.execute("INSERT INTO referral_vip(referrer_chat_id,referred_chat_id,vip_days) VALUES(?,?,?)",
+                    (str(referrer_cid),str(new_cid),REFERRAL_VIP_DAYS_V25267))
+        con.commit()
+    finally: con.close()
+    try:
+        _activate_access(referrer_cid,REFERRAL_VIP_DAYS_V25267,'referral',
+                         notes=f'Referral {new_cid}',payment_reference=f'referral:{new_cid}',amount_rm=0)
+        send(referrer_cid,
+             f'🎉 <b>REFERRAL BERJAYA!</b>\n\nSeorang rakan baharu menyertai CikguLaju melalui pautan cikgu.\n'
+             f'⭐ <b>+{REFERRAL_VIP_DAYS_V25267} hari VIP</b> telah ditambah.',
+             [[{'text':'👥 Lihat Referral','callback_data':'referral_vip'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    except Exception as e:
+        print('v25.267 referral activation error:',repr(e),flush=True)
+    return True
+
+# Final menu: no more "unlimited beta"; referral is live now.
+def menu(cid, show_persistent=False):
+    if show_persistent: install_menu_button(cid)
+    kb=[[{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
+        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
+        [{'text':'📚 GUNA BAHAN CIKGU','callback_data':'material'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'},
+         {'text':'💛 SUMBANGAN','callback_data':'donate'}],
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'},
+         {'text':'ℹ️ TENTANG','callback_data':'about_beta'}]]
+    if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    return send(cid,
+      "🚀 <b>CIKGULAJU AI</b>\n<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\n\n"
+      "✨ <b>Kenapa CikguLaju?</b>\n"
+      "📚 Disusun mengikut <b>RPT/SOW & kurikulum sebenar</b>\n"
+      "🎯 <b>SK & SP dipadankan automatik</b> mengikut Lesson/PdP\n"
+      "📝 Jana <b>RPH dengan cepat</b> mengikut pembelajaran yang dipilih\n"
+      "📖 Akses bahan berkaitan <b>buku teks & buku aktiviti</b> apabila tersedia\n"
+      "🎧 Audio, literature & sumber pembelajaran untuk Lesson berkaitan\n"
+      "⏱️ Kurangkan masa mencari dan menyediakan bahan PdP\n\n"
+      "🔄 <b>Sentiasa Dikemas Kini</b>\nPemetaan, bahan dan fungsi akan terus ditambah baik.\n\n"
+      "⭐ <b>VIP CikguLaju</b>\n"
+      "💛 Penyumbang yang layak menerima status VIP kekal.\n"
+      f"👥 Ajak rakan: <b>1 referral berjaya = {REFERRAL_VIP_DAYS_V25267} hari VIP</b>.\n\n"
+      "<b>Pilih menu di bawah untuk mula 👇</b>",kb)
+
+_callback_before_v25267=callback
+def callback(cid,d):
+    if str(d or '')=='referral_vip':
+        return _show_referral_v25267(cid)
+    return _callback_before_v25267(cid,d)
+
+# Intercept Telegram deep-link starts before the existing webhook parser.
+_webhook_before_v25267=webhook
+def _webhook_v25267():
+    try:
+        u=request.get_json(silent=True) or {}
+        m=u.get('message') or {}
+        cid=(m.get('chat') or {}).get('id')
+        txt=str(m.get('text') or '').strip()
+        mt=re.fullmatch(r'/start(?:@\w+)?\s+ref_(-?\d+)',txt)
+        if cid is not None and mt:
+            ref=mt.group(1)
+            _upsert_user(m.get('from',{}),cid)
+            try: _register_referral_v25267(cid,ref)
+            except Exception as e: print('v25.267 referral register error:',repr(e),flush=True)
+            state[cid]={}
+            menu(cid,show_persistent=True)
+            return jsonify({'ok':True,'referral':True})
+    except Exception as e:
+        print('v25.267 deep-link intercept error:',repr(e),flush=True)
+    return _webhook_before_v25267()
+
+app.view_functions['webhook']=_webhook_v25267
+
+CIKGULAJU_PATCH_V25267='END_UNLIMITED_BETA_LIVE_REFERRAL_VIP'
+# ===== END v25.267 =====
