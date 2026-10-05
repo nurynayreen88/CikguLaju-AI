@@ -37473,3 +37473,141 @@ app.view_functions['webhook']=_webhook_v25267
 
 CIKGULAJU_PATCH_V25267='END_UNLIMITED_BETA_LIVE_REFERRAL_VIP'
 # ===== END v25.267 =====
+
+
+# ===== v25.268 EARLY SUPPORTER + CLEAN MAIN MENU =====
+# Non-destructive: legacy donation/VIP data and hidden material feature are preserved.
+APP_VERSION='v25.268-EARLY-SUPPORTER-RM50-CLEAN-MENU'
+EARLY_SUPPORTER_AMOUNT_V25268=50.00
+EARLY_SUPPORTER_END_V25268=os.getenv('CIKGULAJU_EARLY_SUPPORTER_END','2026-10-14').strip()
+
+def _early_supporter_open_v25268():
+    try:
+        end=datetime.strptime(EARLY_SUPPORTER_END_V25268,'%Y-%m-%d').date()
+    except Exception:
+        end=datetime(2026,10,14).date()
+    today=(datetime.now(timezone.utc)+timedelta(hours=8)).date()
+    return today <= end, end
+
+def _early_supporter_end_label_v25268():
+    _,end=_early_supporter_open_v25268()
+    months=('Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember')
+    return f'{end.day} {months[end.month-1]} {end.year}'
+
+_send_donation_qr_before_v25268=send_donation_qr
+def send_donation_qr(cid):
+    opened,_=_early_supporter_open_v25268()
+    if not opened:
+        return send(cid,
+          '⏳ <b>PROGRAM PENYOKONG AWAL TELAH DITUTUP</b>\
+\
+'
+          'Program khas pra-pelancaran CikguLaju telah tamat. Status VIP Founder bagi penyokong awal yang telah disahkan kekal dilindungi.',
+          [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    global _donation_qr_file_id
+    caption=(
+      '👑 <b>PROGRAM PENYOKONG AWAL CIKGULAJU</b>\
+\
+'
+      'Program khas ini dibuka untuk tempoh terhad sebelum pelancaran rasmi CikguLaju.\
+\
+'
+      f'💛 <b>RM{EARLY_SUPPORTER_AMOUNT_V25268:.0f} sekali sahaja</b>\
+'
+      '👑 Status <b>VIP Founder</b> kekal\
+'
+      '⭐ Akses asas CikguLaju kekal tanpa yuran langganan\
+'
+      f'⏳ Penyertaan sehingga <b>{_early_supporter_end_label_v25268()}</b>\
+\
+'
+      '📱 <b>Cara menyertai:</b> Imbas QR DuitNow di atas dan buat bayaran tepat RM50. Selepas itu, upload resit untuk pengesahan.'
+    )
+    kb={'inline_keyboard':[[{'text':'📎 Upload Resit RM50','callback_data':'donation_receipt'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]]}
+    data={'chat_id':str(cid),'caption':caption,'parse_mode':'HTML','reply_markup':__import__('json').dumps(kb,ensure_ascii=False)}
+    try:
+        if _donation_qr_file_id:
+            data['photo']=_donation_qr_file_id
+            r=requests.post(f'{API}/sendPhoto',data=data,timeout=30)
+        else:
+            qr_bytes=base64.b64decode(DONATION_QR_B64)
+            r=requests.post(f'{API}/sendPhoto',data=data,files={'photo':('CikguLaju_DuitNow_QR.jpg',BytesIO(qr_bytes),'image/jpeg')},timeout=45)
+            if r.ok:
+                try:
+                    photos=r.json().get('result',{}).get('photo',[])
+                    if photos: _donation_qr_file_id=photos[-1].get('file_id') or _donation_qr_file_id
+                except Exception: pass
+        if not r.ok: raise RuntimeError(f'Telegram sendPhoto HTTP {r.status_code}: {r.text[:160]}')
+        return r
+    except Exception as e:
+        print('Early supporter QR send error:',repr(e),flush=True)
+        return send(cid,caption+'\
+\
+⚠️ QR tidak dapat dipaparkan buat sementara waktu. Sila cuba semula.',
+          [[{'text':'📎 Upload Resit RM50','callback_data':'donation_receipt'}],[{'text':'🔄 Cuba Papar QR','callback_data':'donate'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+_record_beta_vip_donation_before_v25268=_record_beta_vip_donation
+def _record_beta_vip_donation(chat_id,amount,receipt_id=None,admin_cid=''):
+    # Existing confirmed records remain untouched. New early-supporter confirmations use one fixed amount.
+    amount=round(float(amount),2)
+    if receipt_id is not None and amount != EARLY_SUPPORTER_AMOUNT_V25268:
+        raise ValueError(f'Program Penyokong Awal menetapkan bayaran RM{EARLY_SUPPORTER_AMOUNT_V25268:.2f}.')
+    return _record_beta_vip_donation_before_v25268(chat_id,amount,receipt_id,admin_cid)
+
+def menu(cid,show_persistent=False):
+    if show_persistent: install_menu_button(cid)
+    supporter_open,_=_early_supporter_open_v25268()
+    kb=[[{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
+        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}]]
+    if supporter_open:
+        kb.append([{'text':'👑 PENYOKONG AWAL • RM50','callback_data':'donate'}])
+    kb.append([{'text':'👤 PROFIL SAYA','callback_data':'account'},{'text':'ℹ️ TENTANG','callback_data':'about_beta'}])
+    if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    supporter_note=(f'👑 <b>Penyokong Awal</b>: RM50 sekali sahaja • sehingga {_early_supporter_end_label_v25268()}\
+' if supporter_open else '')
+    return send(cid,
+      '🚀 <b>CIKGULAJU AI</b>\
+<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\
+\
+'
+      '✨ <b>Kenapa CikguLaju?</b>\
+'
+      '📚 Disusun mengikut <b>RPT/SOW & kurikulum sebenar</b>\
+'
+      '🎯 <b>SK & SP dipadankan automatik</b> mengikut Lesson/PdP\
+'
+      '📝 Jana <b>RPH dengan cepat</b> mengikut pembelajaran yang dipilih\
+'
+      '📖 Akses bahan berkaitan <b>buku teks & buku aktiviti</b> apabila tersedia\
+'
+      '🎧 Audio, literature & sumber pembelajaran untuk Lesson berkaitan\
+'
+      '⏱️ Kurangkan masa mencari dan menyediakan bahan PdP\
+\
+'
+      '🔄 <b>Sentiasa Dikemas Kini</b>\
+Pemetaan, bahan dan fungsi akan terus ditambah baik.\
+\
+'
+      '⭐ <b>VIP CikguLaju</b>\
+'
+      +supporter_note+
+      f'👥 Ajak rakan: <b>1 referral berjaya = {REFERRAL_VIP_DAYS_V25267} hari VIP</b>.\
+\
+'
+      '<b>Pilih menu di bawah untuk mula 👇</b>',kb)
+
+_callback_before_v25268=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds in ('donate','donation_receipt'):
+        opened,_=_early_supporter_open_v25268()
+        if not opened:
+            return send(cid,'⏳ <b>Program Penyokong Awal telah ditutup.</b>\
+\
+Status VIP Founder yang telah disahkan sebelum ini kekal.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    return _callback_before_v25268(cid,d)
+
+CIKGULAJU_PATCH_V25268='EARLY_SUPPORTER_RM50_TIME_LIMIT_CLEAN_MENU'
+# ===== END v25.268 =====
