@@ -37789,3 +37789,1286 @@ def callback(cid,d):
 
 CIKGULAJU_PATCH_V25271='CLEAN_PROFILE_NO_SUBSCRIPTION_UI_SUPPORTER_SPACING'
 # ===== END v25.271 =====
+
+
+# ===== v25.272 OPTIONAL SMART PROFILE ONBOARDING + TODAY RPH ENTRY =====
+# Non-destructive UX layer:
+# - profile completion is encouraged, never required
+# - manual PdP flow remains available
+# - timetable-ready teachers get a fast "RPH Hari Ini" entry
+APP_VERSION='v25.272-SMART-PROFILE-OPTIONAL-TODAY-RPH'
+
+def _profile_completion_v25272(cid):
+    """Return a simple readiness score for smart RPH suggestions."""
+    try:
+        p=_teacher_profile(cid) or {}
+        rows=_profile_class_records(cid)
+    except Exception:
+        p={}; rows=[]
+    checks={
+        'name': bool(str(p.get('display_name') or '').strip()),
+        'state': bool(str(p.get('state_name') or '').strip()),
+        'class': bool(rows),
+        'level': bool(rows) and all(bool(str(r.get('year_label') or '').strip()) for r in rows),
+        'subject': bool(rows) and all(bool(r.get('subjects')) for r in rows),
+        'timetable': bool(_timetable_entries(cid)) if rows else False,
+    }
+    # Name/state are useful profile context; class+level+subject+timetable unlock smart daily RPH.
+    score=round(sum(1 for v in checks.values() if v)*100/len(checks))
+    ready=checks['class'] and checks['level'] and checks['subject'] and checks['timetable']
+    return score,ready,checks
+
+def _smart_profile_prompt_v25272(cid):
+    score,ready,_=_profile_completion_v25272(cid)
+    if ready:
+        return _today_rph_menu_v25272(cid)
+    return send(cid,
+        '⚡ <b>Jadikan CikguLaju lebih pantas</b>\n\n'
+        f'Kelengkapan profil: <b>{score}%</b>\n\n'
+        'Lengkapkan kelas, subjek dan jadual waktu sekali sahaja. '
+        'Selepas itu CikguLaju boleh mengenal pasti kelas hari ini dan mencadangkan RPH dengan lebih cepat.\n\n'
+        'Tidak mahu isi sekarang? Tiada masalah — cikgu masih boleh gunakan semua pilihan manual seperti biasa.',
+        [[{'text':'⚡ Lengkapkan Profil Sekarang','callback_data':'smartprof272_start'}],
+         [{'text':'➡️ Buat Kemudian','callback_data':'quick'}],
+         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+def _today_rows_v25272(cid):
+    # Malaysia school-use context; avoids server UTC day mismatch.
+    try:
+        now=datetime.now(timezone(timedelta(hours=8)))
+    except Exception:
+        now=datetime.now()
+    day=_TIMETABLE_DAYS[now.weekday()]
+    allrows=_timetable_entries(cid)
+    return day,[(i,e) for i,e in enumerate(allrows) if str(e.get('day') or '')==day]
+
+def _today_rph_menu_v25272(cid):
+    score,ready,_=_profile_completion_v25272(cid)
+    if not ready:
+        return _smart_profile_prompt_v25272(cid)
+    day,rows=_today_rows_v25272(cid)
+    lines=[f'⚡ <b>RPH HARI INI • {html.escape(day.upper())}</b>','']
+    kb=[]
+    if not rows:
+        lines += ['Tiada waktu mengajar dalam jadual cikgu untuk hari ini.',
+                  '',
+                  'Cikgu masih boleh menyediakan RPH secara manual.']
+    else:
+        lines.append('Pilih kelas untuk teruskan RPH:')
+        for global_i,e in rows:
+            label=f"{e.get('start','')}–{e.get('end','')} • {e.get('subject','')} • {e.get('class_name','')}"
+            lines.append('• '+html.escape(label))
+            kb.append([{'text':('📝 '+label)[:64],'callback_data':f'todayrph272_{global_i}'}])
+        lines += ['','📌 Kemajuan PdP/Lesson hanya akan bergerak selepas RPH berjaya dijana.']
+    kb.append([{'text':'📚 Sediakan Bahan Secara Manual','callback_data':'quick'}])
+    kb.append([{'text':'📅 Jadual Waktu Saya','callback_data':'timetable'}])
+    kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,'\n'.join(lines),kb)
+
+_menu_before_v25272=menu
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    score,ready,_=_profile_completion_v25272(cid)
+    supporter_open,_=_early_supporter_open_v25268()
+    kb=[]
+    if ready:
+        kb.append([{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}])
+    else:
+        kb.append([{'text':f'⚡ LENGKAPKAN PROFIL • {score}%','callback_data':'smartprof272'}])
+    kb += [
+        [{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
+        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+    ]
+    if supporter_open:
+        kb.append([{'text':'👑 PENYOKONG AWAL • RM50','callback_data':'donate'}])
+    kb.append([
+        {'text':'👤 PROFIL SAYA','callback_data':'account'},
+        {'text':'ℹ️ TENTANG','callback_data':'about_beta'}
+    ])
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    supporter_line = '\n👑 <b>Penyokong Awal</b>\nRM50 sekali sahaja • VIP Founder\n' if supporter_open else ''
+    smart_line = (
+        '⚡ <b>RPH Hari Ini tersedia</b>\nCikguLaju gunakan kelas, subjek & jadual cikgu.\n\n'
+        if ready else
+        f'⚡ <b>Profil {score}% lengkap</b>\nLengkapkan jadual untuk aktifkan RPH Hari Ini. <i>Boleh buat kemudian.</i>\n\n'
+    )
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\n\n'
+        + smart_line +
+        '📚 Ikut RPT/SOW & kurikulum sebenar\n'
+        '🎯 SK & SP dipadankan automatik\n'
+        '📝 Jana RPH dengan cepat\n'
+        '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '👥 <b>Ajak Rakan</b>\n'
+        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
+        + supporter_line +
+        '\n<b>Pilih menu di bawah 👇</b>'
+    )
+    return send(cid,body,kb)
+
+_callback_before_v25272=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='smartprof272':
+        return _smart_profile_prompt_v25272(cid)
+    if ds=='smartprof272_start':
+        # Existing users go to profile management; new users start normal onboarding.
+        if _teacher_profile(cid):
+            return _profile_edit_menu(cid)
+        return _profile_start(cid)
+    if ds=='todayrph272':
+        return _today_rph_menu_v25272(cid)
+    if ds.startswith('todayrph272_'):
+        try:
+            idx=int(ds.rsplit('_',1)[1])
+        except Exception:
+            return _today_rph_menu_v25272(cid)
+        # Reuse the proven timetable→RPH path rather than duplicating generation logic.
+        return _callback_before_v25272(cid,f'tt_rph_{idx}')
+    if ds in ('account','profile','my_account'):
+        p=_teacher_profile(cid)
+        if not p:
+            return _profile_start(cid)
+        score,ready,_=_profile_completion_v25272(cid)
+        kb=[
+            [{'text':'📅 Jadual Waktu Saya','callback_data':'timetable'}],
+            [{'text':'🏫 Kelas & Subjek Saya','callback_data':'profclass_manage'}],
+            [{'text':'✏️ Kemas Kini Profil','callback_data':'profile_edit'}],
+        ]
+        if ready:
+            kb.append([{'text':'⚡ RPH Hari Ini','callback_data':'todayrph272'}])
+        else:
+            kb.append([{'text':f'⚡ Lengkapkan Profil • {score}%','callback_data':'smartprof272'}])
+        kb += [
+            [{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
+            [{'text':'🏠 Menu Utama','callback_data':'home'}]
+        ]
+        txt=_account_profile_text_v25271(cid)
+        txt += f'\n\n⚡ Kelengkapan profil pintar: <b>{score}%</b>'
+        if not ready:
+            txt += '\nLengkapkan kelas, subjek dan jadual untuk aktifkan <b>RPH Hari Ini</b>.'
+        return send(cid,txt,kb)
+    return _callback_before_v25272(cid,d)
+
+CIKGULAJU_PATCH_V25272='OPTIONAL_SMART_PROFILE_TODAY_RPH_ENTRY'
+# ===== END v25.272 =====
+
+
+# ===== v25.273 SAFE DAILY-RPH BATCH FOUNDATION =====
+# Adds persistent per-class+subject RPH progress storage without changing legacy DB schema.
+# Progress lives inside teacher_profiles.class_profiles JSON and survives profile saves.
+APP_VERSION='v25.273-DAILY-RPH-BATCH-PROGRESS-FOUNDATION'
+
+_clean_profile_class_records_v25273_base=_clean_profile_class_records
+def _clean_profile_class_records(records):
+    base=_clean_profile_class_records_v25273_base(records)
+    src=[x if isinstance(x,dict) else {'name':x} for x in (records or [])]
+    byname={str(x.get('name') or x.get('class_name') or '').strip().casefold():x for x in src if isinstance(x,dict)}
+    for r in base:
+        old=byname.get(str(r.get('name') or '').strip().casefold()) or {}
+        progress=old.get('rph_progress')
+        if isinstance(progress,dict):
+            clean={}
+            for subject,val in progress.items():
+                subject=' '.join(str(subject or '').strip().split())[:80]
+                if not subject or not isinstance(val,dict):
+                    continue
+                item={}
+                for k in ('sequence','kind','year','unit','topic','lesson','pdp','title','updated_at'):
+                    if k in val and val.get(k) not in (None,''):
+                        item[k]=val.get(k)
+                # Snapshot is deliberately restricted to curriculum identity fields only.
+                snap=val.get('curriculum')
+                if isinstance(snap,dict):
+                    allowed=('year','subject','unit','topic','lesson','lesson_no','pdp','pdp_no','sk','sp','source','book_page')
+                    item['curriculum']={k:snap.get(k) for k in allowed if snap.get(k) not in (None,'')}
+                clean[subject]=item
+            if clean:
+                r['rph_progress']=clean
+    return base
+
+def _rph_progress_v25273(cid,class_name,subject):
+    rec=_profile_class_record(cid,class_name) or {}
+    prog=rec.get('rph_progress') or {}
+    want=_norm_subject_v2393(subject)
+    for k,v in prog.items():
+        if _norm_subject_v2393(k)==want and isinstance(v,dict):
+            return dict(v)
+    return {}
+
+def _save_rph_progress_v25273(cid,class_name,subject,progress):
+    rows=_profile_class_records(cid)
+    target=str(class_name or '').strip().casefold()
+    for r in rows:
+        if str(r.get('name') or '').strip().casefold()!=target:
+            continue
+        bank=dict(r.get('rph_progress') or {})
+        # replace case-insensitive duplicate key
+        for k in list(bank):
+            if _norm_subject_v2393(k)==_norm_subject_v2393(subject):
+                bank.pop(k,None)
+        bank[str(subject).strip()]=dict(progress or {})
+        r['rph_progress']=bank
+        _save_profile_class_records(cid,rows)
+        return True
+    return False
+
+def _today_batch_status_v25273(cid):
+    day,rows=_today_rows_v25272(cid)
+    jobs=[]
+    for idx,e in rows:
+        p=_rph_progress_v25273(cid,e.get('class_name'),e.get('subject'))
+        jobs.append({'idx':idx,'entry':e,'progress':p,'ready':bool(p)})
+    return day,jobs
+
+def _today_batch_menu_v25273(cid):
+    day,jobs=_today_batch_status_v25273(cid)
+    if not jobs:
+        return send(cid,
+            f'⚡ <b>RPH HARI INI • {html.escape(day.upper())}</b>\n\n'
+            'Tiada waktu mengajar dalam jadual cikgu untuk hari ini.',
+            [[{'text':'📅 Jadual Waktu Saya','callback_data':'timetable'}],
+             [{'text':'📚 Sediakan Bahan Secara Manual','callback_data':'quick'}],
+             [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    ready=sum(1 for j in jobs if j['ready'])
+    lines=[f'⚡ <b>RPH HARI INI • {html.escape(day.upper())}</b>','']
+    for j in jobs:
+        e=j['entry']; p=j['progress']
+        mark='✅' if j['ready'] else '⚠️'
+        nxt=''
+        if p:
+            n=p.get('lesson') or p.get('pdp') or p.get('sequence')
+            kind=p.get('kind') or ('Lesson' if p.get('lesson') else 'PdP')
+            if n not in (None,''): nxt=f' • terakhir {kind} {n}'
+        lines.append(f"{mark} {html.escape(e.get('start',''))}–{html.escape(e.get('end',''))} • {html.escape(e.get('subject',''))} • {html.escape(e.get('class_name',''))}{html.escape(nxt)}")
+    lines += ['',
+              f'Progress tersimpan: <b>{ready}/{len(jobs)}</b> kelas/subjek.',
+              'CikguLaju hanya akan jana secara automatik apabila checkpoint PdP/Lesson kelas itu telah disahkan. Ini mengelakkan RPH tersalah lompat.']
+    kb=[]
+    if ready==len(jobs):
+        kb.append([{'text':'⚡ JANA SEMUA RPH HARI INI','callback_data':'todaybatch273_run'}])
+    else:
+        kb.append([{'text':'🧭 Tetapkan Progress Yang Belum Ada','callback_data':'todaybatch273_setup'}])
+    kb += [[{'text':'📝 Pilih & Jana Satu-satu','callback_data':'todayrph272'}],
+           [{'text':'📚 Flow Manual','callback_data':'quick'}],
+           [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+_callback_before_v25273=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='todayrph272':
+        return _today_batch_menu_v25273(cid)
+    if ds=='todaybatch273_setup':
+        # Use the existing proven manual curriculum flow to establish the first checkpoint.
+        # No guessed PdP/Lesson number is written.
+        return send(cid,
+            '🧭 <b>Tetapkan checkpoint pertama</b>\n\n'
+            'Untuk kelas/subjek yang belum pernah menjana RPH, pilih PdP/Lesson sebenar sekali melalui flow manual. '
+            'Selepas RPH berjaya, checkpoint itu boleh digunakan untuk sambungan automatik seterusnya.\n\n'
+            'Saya tidak akan meneka nombor PdP/Lesson daripada minggu.',
+            [[{'text':'📚 Pilih PdP/Lesson Sekarang','callback_data':'quick'}],
+             [{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+    if ds=='todaybatch273_run':
+        day,jobs=_today_batch_status_v25273(cid)
+        if not jobs:
+            return _today_batch_menu_v25273(cid)
+        missing=[j for j in jobs if not j['ready']]
+        if missing:
+            return _today_batch_menu_v25273(cid)
+        # Guard: v25.273 intentionally does not guess the next curriculum row.
+        # The next patch will bind each stored curriculum checkpoint to the verified RPT/SOW resolver.
+        return send(cid,
+            '✅ Semua kelas hari ini sudah mempunyai checkpoint.\n\n'
+            'Lapisan batch sudah bersedia. Langkah seterusnya ialah resolver <b>checkpoint → PdP/Lesson berikutnya</b> '
+            'mengikut mapping RPT/SOW setiap subjek sebelum janaan serentak diaktifkan.\n\n'
+            'Butang ini belum menggerakkan progress atau menggunakan kredit.',
+            [[{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}],
+             [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    return _callback_before_v25273(cid,d)
+
+CIKGULAJU_PATCH_V25273='SAFE_PERSISTENT_CLASS_SUBJECT_RPH_PROGRESS'
+# ===== END v25.273 =====
+
+
+# ===== v25.274 RPH HISTORY + PROGRESS STORE =====
+# Architecture:
+# 1) teacher profile/timetable = teacher setup
+# 2) rph_generation_history = append-only generation audit
+# 3) rph_progress = latest successful checkpoint per user+class+subject
+# Uses Supabase REST when available; JSON profile remains fallback for backward compatibility.
+APP_VERSION='v25.274-RPH-HISTORY-PROGRESS-STORE'
+
+RPH_PROGRESS_TABLE_V25274=os.getenv('CIKGULAJU_RPH_PROGRESS_TABLE','rph_progress')
+RPH_HISTORY_TABLE_V25274=os.getenv('CIKGULAJU_RPH_HISTORY_TABLE','rph_generation_history')
+
+def _sb_rest_v25274(method,table,params=None,payload=None):
+    """Small Supabase REST helper. Returns (ok, data). Never raises into user flow."""
+    try:
+        base=(SUPABASE_URL or '').rstrip('/')
+        key=SUPABASE_KEY or ''
+        if not base or not key:
+            return False,None
+        url=f"{base}/rest/v1/{table}"
+        headers={
+            'apikey':key,
+            'Authorization':f'Bearer {key}',
+            'Content-Type':'application/json',
+            'Prefer':'return=representation'
+        }
+        r=requests.request(method,url,headers=headers,params=params,json=payload,timeout=12)
+        if 200 <= r.status_code < 300:
+            try: return True,r.json()
+            except Exception: return True,None
+        return False,{'status':r.status_code,'text':(r.text or '')[:500]}
+    except Exception:
+        return False,None
+
+def _progress_key_v25274(cid,class_name,subject):
+    return str(cid), ' '.join(str(class_name or '').split()), ' '.join(str(subject or '').split())
+
+def _get_rph_progress_v25274(cid,class_name,subject):
+    uid,cls,sub=_progress_key_v25274(cid,class_name,subject)
+    ok,data=_sb_rest_v25274('GET',RPH_PROGRESS_TABLE_V25274,{
+        'telegram_user_id':f'eq.{uid}',
+        'class_name':f'eq.{cls}',
+        'subject':f'eq.{sub}',
+        'select':'*',
+        'limit':'1'
+    })
+    if ok and isinstance(data,list) and data:
+        return dict(data[0])
+    # Safe fallback for users created before the dedicated tables exist.
+    return _rph_progress_v25273(cid,class_name,subject)
+
+def _upsert_rph_progress_v25274(cid,class_name,subject,checkpoint):
+    uid,cls,sub=_progress_key_v25274(cid,class_name,subject)
+    cp=dict(checkpoint or {})
+    payload={
+        'telegram_user_id':uid,
+        'class_name':cls,
+        'subject':sub,
+        'sequence_no':cp.get('sequence') or cp.get('lesson') or cp.get('pdp'),
+        'sequence_kind':cp.get('kind') or ('Lesson' if cp.get('lesson') else 'PdP'),
+        'year_label':cp.get('year'),
+        'unit_name':cp.get('unit'),
+        'topic_name':cp.get('topic') or cp.get('title'),
+        'curriculum_json':cp.get('curriculum') or {},
+        'last_success_at':datetime.now(timezone.utc).isoformat(),
+        'updated_at':datetime.now(timezone.utc).isoformat()
+    }
+    # Supabase upsert through POST + resolution=merge-duplicates.
+    try:
+        base=(SUPABASE_URL or '').rstrip('/'); key=SUPABASE_KEY or ''
+        if base and key:
+            headers={
+                'apikey':key,'Authorization':f'Bearer {key}',
+                'Content-Type':'application/json',
+                'Prefer':'resolution=merge-duplicates,return=representation'
+            }
+            r=requests.post(
+                f"{base}/rest/v1/{RPH_PROGRESS_TABLE_V25274}",
+                headers=headers,
+                params={'on_conflict':'telegram_user_id,class_name,subject'},
+                json=payload,timeout=12
+            )
+            if 200 <= r.status_code < 300:
+                return True
+    except Exception:
+        pass
+    # Backward-compatible fallback. Never blocks a successful RPH download.
+    return _save_rph_progress_v25273(cid,class_name,subject,cp)
+
+def _log_rph_generation_v25274(cid,class_name,subject,status,checkpoint=None,file_ref=None,error_text=None):
+    uid,cls,sub=_progress_key_v25274(cid,class_name,subject)
+    cp=dict(checkpoint or {})
+    payload={
+        'telegram_user_id':uid,
+        'class_name':cls,
+        'subject':sub,
+        'sequence_no':cp.get('sequence') or cp.get('lesson') or cp.get('pdp'),
+        'sequence_kind':cp.get('kind') or ('Lesson' if cp.get('lesson') else 'PdP'),
+        'year_label':cp.get('year'),
+        'unit_name':cp.get('unit'),
+        'topic_name':cp.get('topic') or cp.get('title'),
+        'curriculum_json':cp.get('curriculum') or {},
+        'status':str(status or '')[:24],
+        'file_ref':str(file_ref or '')[:500] or None,
+        'error_text':str(error_text or '')[:1000] or None,
+        'generated_at':datetime.now(timezone.utc).isoformat()
+    }
+    ok,_=_sb_rest_v25274('POST',RPH_HISTORY_TABLE_V25274,payload=payload)
+    return ok
+
+def _record_successful_rph_v25274(cid,class_name,subject,checkpoint,file_ref=None):
+    """ONLY this success path advances progress."""
+    _log_rph_generation_v25274(cid,class_name,subject,'success',checkpoint,file_ref=file_ref)
+    return _upsert_rph_progress_v25274(cid,class_name,subject,checkpoint)
+
+def _record_failed_rph_v25274(cid,class_name,subject,checkpoint=None,error_text=None):
+    """Failure is audit-only; progress is intentionally untouched."""
+    return _log_rph_generation_v25274(cid,class_name,subject,'failed',checkpoint,error_text=error_text)
+
+def _today_batch_status_v25274(cid):
+    day,rows=_today_rows_v25272(cid)
+    jobs=[]
+    for idx,e in rows:
+        p=_get_rph_progress_v25274(cid,e.get('class_name'),e.get('subject'))
+        jobs.append({'idx':idx,'entry':e,'progress':p or {},'ready':bool(p)})
+    return day,jobs
+
+# Replace v25.273 batch reader with the dedicated store reader.
+_today_batch_status_v25273=_today_batch_status_v25274
+
+RPH_PROGRESS_SQL_V25274=r"""
+-- Run once in Supabase SQL Editor.
+create table if not exists public.rph_progress (
+  id bigint generated by default as identity primary key,
+  telegram_user_id text not null,
+  class_name text not null,
+  subject text not null,
+  sequence_no integer,
+  sequence_kind text,
+  year_label text,
+  unit_name text,
+  topic_name text,
+  curriculum_json jsonb not null default '{}'::jsonb,
+  last_success_at timestamptz,
+  updated_at timestamptz not null default now(),
+  unique (telegram_user_id,class_name,subject)
+);
+
+create table if not exists public.rph_generation_history (
+  id bigint generated by default as identity primary key,
+  telegram_user_id text not null,
+  class_name text not null,
+  subject text not null,
+  sequence_no integer,
+  sequence_kind text,
+  year_label text,
+  unit_name text,
+  topic_name text,
+  curriculum_json jsonb not null default '{}'::jsonb,
+  status text not null,
+  file_ref text,
+  error_text text,
+  generated_at timestamptz not null default now()
+);
+
+create index if not exists idx_rph_history_user_time
+on public.rph_generation_history (telegram_user_id, generated_at desc);
+
+create index if not exists idx_rph_history_class_subject
+on public.rph_generation_history (telegram_user_id,class_name,subject,generated_at desc);
+"""
+
+CIKGULAJU_PATCH_V25274='DEDICATED_RPH_HISTORY_AND_PROGRESS_STORE'
+# ===== END v25.274 =====
+
+
+# ===== v25.275 ADDITIVE QUICK-GENERATION INTEGRATION =====
+APP_VERSION='v25.275-ADDITIVE-QUICK-RPH-INTEGRATION'
+
+def _quick_rph_context_v25275(cid):
+    """Session-only context used to distinguish quick/manual entry. Legacy flow is untouched."""
+    try:
+        s=S(cid)
+        return s.setdefault('_quick_rph_v25275',{})
+    except Exception:
+        return {}
+
+def _set_quick_rph_context_v25275(cid,entry=None,mode='single'):
+    q=_quick_rph_context_v25275(cid)
+    q.clear()
+    q['mode']=mode
+    if isinstance(entry,dict):
+        q['class_name']=entry.get('class_name')
+        q['subject']=entry.get('subject')
+        q['start']=entry.get('start')
+        q['end']=entry.get('end')
+        q['day']=entry.get('day')
+    return q
+
+def _clear_quick_rph_context_v25275(cid):
+    try: _quick_rph_context_v25275(cid).clear()
+    except Exception: pass
+
+def _manual_or_quick_success_v25275(cid,class_name,subject,checkpoint,file_ref=None):
+    """
+    Shared success recorder.
+    Call ONLY after the existing RPH generator has successfully produced/sent the RPH.
+    This does not generate anything and therefore cannot interfere with legacy generation.
+    """
+    if not class_name or not subject or not checkpoint:
+        return False
+    return _record_successful_rph_v25274(cid,class_name,subject,checkpoint,file_ref=file_ref)
+
+def _manual_or_quick_failure_v25275(cid,class_name,subject,checkpoint=None,error_text=None):
+    # Audit only. Never advances progress.
+    if not class_name or not subject:
+        return False
+    return _record_failed_rph_v25274(cid,class_name,subject,checkpoint,error_text=error_text)
+
+def _quick_today_pick_v25275(cid,idx):
+    entries=_timetable_entries(cid)
+    if idx<0 or idx>=len(entries):
+        return _today_batch_menu_v25273(cid)
+    e=entries[idx]
+    _set_quick_rph_context_v25275(cid,e,'single')
+    p=_get_rph_progress_v25274(cid,e.get('class_name'),e.get('subject'))
+    if not p:
+        # First use: reuse normal curriculum selection so no PdP/Lesson is guessed.
+        return send(cid,
+            '⚡ <b>Janaan Pantas</b>\n\n'
+            f"{html.escape(e.get('subject',''))} • {html.escape(e.get('class_name',''))}\n\n"
+            'Belum ada checkpoint RPH untuk kelas ini. Pilih PdP/Lesson sebenar sekali melalui flow biasa. '
+            'Selepas janaan berjaya, CikguLaju akan mengingatinya untuk cadangan seterusnya.',
+            [[{'text':'📚 Pilih PdP/Lesson','callback_data':'quick'}],
+             [{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+    # We deliberately do not do sequence_no + 1 here.
+    # Resolver binding will map the stored checkpoint to the verified next curriculum row.
+    return send(cid,
+        '⚡ <b>Janaan Pantas</b>\n\n'
+        f"{html.escape(e.get('subject',''))} • {html.escape(e.get('class_name',''))}\n"
+        f"Checkpoint terakhir: <b>{html.escape(str(p.get('sequence_kind') or p.get('kind') or 'PdP'))} "
+        f"{html.escape(str(p.get('sequence_no') or p.get('sequence') or p.get('lesson') or p.get('pdp') or ''))}</b>\n\n"
+        'Checkpoint ditemui. CikguLaju akan menggunakan mapping RPT/SOW sebenar untuk menentukan PdP/Lesson berikutnya.',
+        [[{'text':'➡️ Cari RPH Seterusnya','callback_data':f'quicknext275_{idx}'}],
+         [{'text':'📚 Guna Flow Manual','callback_data':'quick'}],
+         [{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+
+# Extend today's screen with explicit quick-generation naming.
+_today_batch_menu_before_v25275=_today_batch_menu_v25273
+def _today_batch_menu_v25273(cid):
+    day,jobs=_today_batch_status_v25273(cid)
+    if not jobs:
+        return _today_batch_menu_before_v25275(cid)
+    ready=sum(1 for j in jobs if j['ready'])
+    lines=[f'⚡ <b>JANAAN PANTAS • {html.escape(day.upper())}</b>','']
+    kb=[]
+    for j in jobs:
+        e=j['entry']; p=j['progress']
+        mark='✅' if j['ready'] else '🆕'
+        tail=''
+        if p:
+            n=p.get('sequence_no') or p.get('sequence') or p.get('lesson') or p.get('pdp')
+            k=p.get('sequence_kind') or p.get('kind') or ('Lesson' if p.get('lesson') else 'PdP')
+            if n not in (None,''): tail=f' • terakhir {k} {n}'
+        label=f"{e.get('start','')}–{e.get('end','')} • {e.get('subject','')} • {e.get('class_name','')}"
+        lines.append(f"{mark} {html.escape(label+tail)}")
+        kb.append([{'text':('⚡ '+label)[:64],'callback_data':f'quickpick275_{j["idx"]}'}])
+    lines += ['',
+              '📌 Flow manual sedia ada kekal.',
+              '📌 Progress hanya berubah selepas RPH berjaya dijana.']
+    if ready==len(jobs):
+        kb.insert(0,[{'text':'⚡ JANA SEMUA RPH HARI INI','callback_data':'todaybatch273_run'}])
+    kb += [[{'text':'📚 SEDIAKAN BAHAN PDP • MANUAL','callback_data':'quick'}],
+           [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+_callback_before_v25275=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith('quickpick275_'):
+        try: idx=int(ds.rsplit('_',1)[1])
+        except Exception: return _today_batch_menu_v25273(cid)
+        return _quick_today_pick_v25275(cid,idx)
+    if ds.startswith('quicknext275_'):
+        try: idx=int(ds.rsplit('_',1)[1])
+        except Exception: return _today_batch_menu_v25273(cid)
+        entries=_timetable_entries(cid)
+        if idx<0 or idx>=len(entries): return _today_batch_menu_v25273(cid)
+        e=entries[idx]
+        _set_quick_rph_context_v25275(cid,e,'single')
+        # Safe stop until verified curriculum resolver is bound in next patch.
+        return send(cid,
+            '🔎 Checkpoint sudah dikenal pasti.\n\n'
+            'Resolver RPT/SOW sedang digunakan untuk menentukan rekod kurikulum berikutnya. '
+            'Tiada progress diubah dan tiada kredit digunakan pada langkah ini.',
+            [[{'text':'📚 Guna Flow Manual Sekarang','callback_data':'quick'}],
+             [{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+    return _callback_before_v25275(cid,d)
+
+CIKGULAJU_PATCH_V25275='ADDITIVE_QUICK_RPH_WITH_SHARED_SUCCESS_RECORDER'
+# ===== END v25.275 =====
+
+
+# ===== v25.276 VERIFIED NEXT-CURRICULUM RESOLVER =====
+APP_VERSION='v25.276-VERIFIED-NEXT-CURRICULUM-RESOLVER'
+
+def _year_aliases_v25276(value):
+    s=' '.join(str(value or '').strip().split())
+    m=re.search(r'(\d+)',s)
+    if not m: return [s] if s else []
+    n=m.group(1)
+    out=[s,f'Tahun {n}',f'Year {n}']
+    return list(dict.fromkeys(x for x in out if x))
+
+def _checkpoint_no_v25276(p):
+    for k in ('sequence_no','sequence','lesson','pdp','lesson_no','pdp_no'):
+        try:
+            v=p.get(k)
+            if v not in (None,''): return int(v)
+        except Exception: pass
+    return None
+
+def _resolve_next_english_v25276(year,last_no):
+    yn=_english_primary_year_number_v2517(year)
+    if yn in (3,4,5,6):
+        # Important: ask DB for the first VERIFIED row greater than checkpoint;
+        # never assume last_no+1 exists.
+        path=_english_y3_y6_sow_db_path_v2517()
+        if not path: return None
+        try:
+            con=sqlite3.connect(path); con.row_factory=sqlite3.Row
+            row=con.execute("""SELECT year_label,lesson_no,focus,topic,language_grammar_focus,
+                       main_skill,main_cs,main_ls,complementary_skill,complementary_cs,
+                       complementary_ls,lesson_type,references_text,sow_pdf_page,verification_status
+                FROM english_primary_y3_y6_sow_staging
+                WHERE year_label=? AND lesson_no>? AND UPPER(COALESCE(verification_status,'')) LIKE '%VERIF%'
+                ORDER BY lesson_no ASC LIMIT 1""",(f'Year {yn}',int(last_no))).fetchone()
+            con.close()
+            if row:
+                d=dict(row); d['_resolver']='english_y3_y6_verified_sow'
+                d['_sequence_kind']='Lesson'; d['_sequence_no']=d.get('lesson_no')
+                return d
+        except Exception: return None
+    if yn in (1,2):
+        # Reuse the exact lesson rows already used by the current Y1/Y2 menu.
+        try:
+            rows=_eng12_rows(f'Tahun {yn}')
+        except Exception:
+            try: rows=_eng12_lesson_rows(f'Tahun {yn}')
+            except Exception: rows=[]
+        candidates=[]
+        for r in rows or []:
+            try:
+                n=int(r.get('lesson_no'))
+                if n>int(last_no): candidates.append((n,r))
+            except Exception: pass
+        if candidates:
+            d=dict(sorted(candidates,key=lambda x:x[0])[0][1])
+            d['_resolver']='english_y1_y2_verified_rows'
+            d['_sequence_kind']='Lesson'; d['_sequence_no']=int(d.get('lesson_no'))
+            return d
+    return None
+
+def _resolve_next_rpt_entry_v25276(year,subject,last_no):
+    path=globals().get('DB_PATH')
+    if not path or not os.path.exists(path): return None
+    aliases=_year_aliases_v25276(year)
+    if not aliases: return None
+    try:
+        con=sqlite3.connect(path); con.row_factory=sqlite3.Row
+        # Exact subject first; normalized aliases are only attempted if needed.
+        subs=[str(subject or '').strip()]
+        norm=_norm_subject_v2393(subject)
+        known={
+            'matematik':['Matematik','Mathematics'],
+            'sains':['Sains','Science'],
+            'bahasa melayu':['Bahasa Melayu'],
+            'pendidikan islam':['Pendidikan Islam'],
+            'pendidikan moral':['Pendidikan Moral']
+        }
+        for x in known.get(norm,[]): 
+            if x not in subs: subs.append(x)
+        for y in aliases:
+            for sub in subs:
+                row=con.execute("""SELECT * FROM rpt_entries
+                    WHERE year_label=? AND subject=? AND verified=1 AND sequence_no>?
+                    ORDER BY sequence_no ASC,id ASC LIMIT 1""",(y,sub,int(last_no))).fetchone()
+                if row:
+                    d=dict(row)
+                    try:
+                        std=[dict(x) for x in con.execute("""SELECT standard_type,standard_code,standard_text,sequence_no
+                          FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
+                          ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",(d['id'],)).fetchall()]
+                    except Exception: std=[]
+                    d['_std']=std; d['_resolver']='verified_rpt_entries'
+                    d['_sequence_kind']='PdP'; d['_sequence_no']=d.get('sequence_no')
+                    con.close(); return d
+        con.close()
+    except Exception:
+        try: con.close()
+        except Exception: pass
+    return None
+
+def _resolve_next_curriculum_v25276(cid,class_name,subject,progress=None):
+    p=dict(progress or _get_rph_progress_v25274(cid,class_name,subject) or {})
+    last_no=_checkpoint_no_v25276(p)
+    if last_no is None: return None
+    year=p.get('year_label') or p.get('year') or (p.get('curriculum_json') or {}).get('year')
+    if not year:
+        rec=_profile_class_record(cid,class_name) or {}
+        year=rec.get('year_label') or rec.get('year')
+    subnorm=_norm_subject_v2393(subject)
+    if subnorm in ('english','bahasa inggeris'):
+        return _resolve_next_english_v25276(year,last_no)
+    return _resolve_next_rpt_entry_v25276(year,subject,last_no)
+
+def _next_curriculum_summary_v25276(row):
+    if not row: return ''
+    kind=row.get('_sequence_kind') or 'PdP'
+    no=row.get('_sequence_no')
+    title=row.get('unit_title') or row.get('topic') or row.get('skill_focus') or row.get('focus') or ''
+    return f"{kind} {no}" + (f" • {title}" if title else '')
+
+def _quick_next_preview_v25276(cid,idx):
+    entries=_timetable_entries(cid)
+    if idx<0 or idx>=len(entries): return _today_batch_menu_v25273(cid)
+    e=entries[idx]
+    p=_get_rph_progress_v25274(cid,e.get('class_name'),e.get('subject'))
+    row=_resolve_next_curriculum_v25276(cid,e.get('class_name'),e.get('subject'),p)
+    if not row:
+        return send(cid,
+          '⚠️ <b>RPH seterusnya belum dapat disahkan secara automatik.</b>\n\n'
+          'Cikgu boleh terus gunakan flow manual. CikguLaju tidak akan meneka PdP/Lesson.',
+          [[{'text':'📚 Guna Flow Manual','callback_data':'quick'},
+            {'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+    q=_set_quick_rph_context_v25275(cid,e,'single')
+    q['next_row']=row
+    q['next_summary']=_next_curriculum_summary_v25276(row)
+    return send(cid,
+      '⚡ <b>RPH SETERUSNYA</b>\n\n'
+      f"{html.escape(e.get('subject',''))} • {html.escape(e.get('class_name',''))}\n"
+      f"Seterusnya: <b>{html.escape(q['next_summary'])}</b>\n\n"
+      f"Sumber resolver: <code>{html.escape(str(row.get('_resolver') or 'verified'))}</code>\n"
+      'SK/SP dan kandungan akan diambil daripada rekod verified yang sama.',
+      [[{'text':'⚡ Teruskan Janaan Pantas','callback_data':f'quickapply276_{idx}'},
+        {'text':'📚 Flow Manual','callback_data':'quick'}],
+       [{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+
+_callback_before_v25276=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith('quicknext275_'):
+        try: idx=int(ds.rsplit('_',1)[1])
+        except Exception: return _today_batch_menu_v25273(cid)
+        return _quick_next_preview_v25276(cid,idx)
+    if ds.startswith('quickapply276_'):
+        try: idx=int(ds.rsplit('_',1)[1])
+        except Exception: return _today_batch_menu_v25273(cid)
+        entries=_timetable_entries(cid)
+        if idx<0 or idx>=len(entries): return _today_batch_menu_v25273(cid)
+        e=entries[idx]; q=_quick_rph_context_v25275(cid)
+        row=q.get('next_row') if isinstance(q,dict) else None
+        if not row:
+            return _quick_next_preview_v25276(cid,idx)
+        # v25.276 stops at verified context handoff.
+        # Existing RPH generator remains untouched; next patch binds this row to its normal state fields.
+        return send(cid,
+          '✅ Rekod PdP/Lesson seterusnya telah disahkan.\n\n'
+          f"<b>{html.escape(_next_curriculum_summary_v25276(row))}</b>\n\n"
+          'Langkah berikutnya akan mengisi state RPH sedia ada daripada rekod ini dan memanggil generator lama. '
+          'Tiada generator baru dibina.',
+          [[{'text':'📚 Guna Flow Manual Sementara','callback_data':'quick'},
+            {'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+    return _callback_before_v25276(cid,d)
+
+CIKGULAJU_PATCH_V25276='VERIFIED_NEXT_ROW_RESOLVER_NO_BLIND_INCREMENT'
+# ===== END v25.276 =====
+
+
+# ===== v25.277 QUICK ROW -> LEGACY RPH STATE HANDOFF =====
+APP_VERSION='v25.277-QUICK-TO-LEGACY-RPH-HANDOFF'
+
+def _apply_std_rows_v25277(ss,std):
+    mapped=[]
+    for x in std or []:
+        typ=str(x.get('standard_type') or '').upper()
+        code=str(x.get('standard_code') or '').strip()
+        txt=str(x.get('standard_text') or '').strip()
+        if not code: continue
+        if typ=='SK':
+            # pair later with SP; preserve all codes/texts
+            pass
+        elif typ=='SP':
+            pass
+    sks=[x for x in (std or []) if str(x.get('standard_type') or '').upper()=='SK' and str(x.get('standard_code') or '').strip()]
+    sps=[x for x in (std or []) if str(x.get('standard_type') or '').upper()=='SP' and str(x.get('standard_code') or '').strip()]
+    # Existing multi-SP state accepts pairs. Use source order; never fabricate missing pair.
+    if sks and sps:
+        for i,sp in enumerate(sps):
+            sk=sks[min(i,len(sks)-1)]
+            mapped.append({'sk_code':str(sk.get('standard_code') or '').strip(),
+                           'sk_text':str(sk.get('standard_text') or '').strip(),
+                           'sp_code':str(sp.get('standard_code') or '').strip(),
+                           'sp_text':str(sp.get('standard_text') or '').strip()})
+    if mapped:
+        _commit_multi_sp(ss,mapped[:12])
+        return True
+    return False
+
+def _apply_verified_next_row_v25277(cid,entry,row):
+    """Populate the SAME state fields used by the established manual generator."""
+    ss=state.setdefault(cid,{})
+    # Clear execution-only state, preserve curriculum keys only after rebuilding below.
+    for k in ('_materials_selected_v2528','_materials_available_v2528','_skip_class_date_time_v25173'):
+        ss.pop(k,None)
+    subject=str(entry.get('subject') or '').strip()
+    cls=str(entry.get('class_name') or '').strip()
+    rec=_profile_class_record(cid,cls) or {}
+    year=(row.get('year_label') or rec.get('year_label') or rec.get('year') or
+          (_get_rph_progress_v25274(cid,cls,subject) or {}).get('year_label') or '')
+    # Normalize English DB Year label to product Tahun label where appropriate.
+    yn=_english_primary_year_number_v2517(year)
+    if subject.lower() in ('english','bahasa inggeris') and yn:
+        year=f'Tahun {yn}'
+    ss.update({
+        'task':'quick_material','quick_material_flow':True,'rph_mode':'fast_rpt',
+        'subject':subject,'year':year,'year_label':year,
+        'rph_class':cls,'class_name':cls,
+        'rph_start_time':str(entry.get('start') or ''),
+        'rph_end_time':str(entry.get('end') or ''),
+        'rph_time':(str(entry.get('start') or '')+' - '+str(entry.get('end') or '')).strip(' -'),
+        '_pdp_context_ready_v2393':True,
+        '_quick_generation_v25277':True,
+    })
+    # Today is intentionally derived at click time, not stored in timetable.
+    try:
+        now=datetime.now(timezone(timedelta(hours=8)))
+    except Exception:
+        now=datetime.now()
+    ss['rph_date']=now.strftime('%d/%m/%Y'); ss['rph_day']=entry.get('day') or ''
+    try:
+        a=[int(x) for x in str(entry.get('start') or '').split(':')[:2]]
+        b=[int(x) for x in str(entry.get('end') or '').split(':')[:2]]
+        ss['duration_minutes']=(b[0]*60+b[1])-(a[0]*60+a[1]); ss['rph_duration_minutes']=ss['duration_minutes']
+    except Exception: pass
+
+    resolver=str(row.get('_resolver') or '')
+    if resolver.startswith('english_y3_y6'):
+        ln=int(row.get('lesson_no'))
+        ss['lesson_no']=ln; ss['lesson']=ln
+        if not _english_y3_y6_apply_sow_v2517(ss,ln):
+            return False
+        ss['topic']=row.get('topic') or ss.get('topic') or ''
+        ss['_quick_verified_row_v25277']=dict(row)
+        return True
+    if resolver=='english_y1_y2_verified_rows':
+        ln=str(row.get('lesson_no') or '')
+        std=_eng12_standards(f'Tahun {yn}',ln)
+        mapped=[]
+        for x in std:
+            cs=str(x.get('content_standard') or '').strip(); ls=str(x.get('learning_standard') or '').strip()
+            if cs and ls: mapped.append({'sk_code':cs,'sk_text':'','sp_code':ls,'sp_text':''})
+        if not mapped: return False
+        ss.update({'lesson_no':ln,'lesson':ln,'_sow_skill':str(row.get('_sow_skill') or '').strip(),
+                   'topic':str(row.get('unit_title') or row.get('topic') or '').strip(),
+                   'subtopic':str(row.get('topic') or '').strip(),
+                   'textbook_page_start':row.get('textbook_page_start'),'textbook_page_end':row.get('textbook_page_end'),
+                   'workbook_page_start':row.get('workbook_page_start'),'workbook_page_end':row.get('workbook_page_end'),
+                   'workbook_status':str(row.get('workbook_status') or ''),
+                   'audio_status':str(row.get('audio_status') or ''),
+                   'audio_reference':str(row.get('audio_reference') or '') if str(row.get('audio_status') or '')=='VERIFIED_AUDIO' else ''})
+        _commit_multi_sp(ss,mapped[:8]); ss['_quick_verified_row_v25277']=dict(row)
+        return True
+    if resolver=='verified_rpt_entries':
+        ss['rpt_entry_id']=row.get('id')
+        ss['pdp_no']=row.get('sequence_no'); ss['lesson_no']=str(row.get('sequence_no') or '')
+        ss['topic']=str(row.get('topic') or row.get('skill_focus') or '').strip()
+        ss['subtopic']=str(row.get('subtopic') or '').strip()
+        ss['rpt_activity_note']=str(row.get('activity_note') or '').strip()
+        ss['rpt_assessment_note']=str(row.get('assessment_note') or '').strip()
+        ss['_quick_selected_rpt_row_v2388']=dict(row); ss['quick_rpt_row']=dict(row)
+        if not _apply_std_rows_v25277(ss,row.get('_std') or []): return False
+        ss['_quick_verified_row_v25277']=dict(row)
+        return True
+    return False
+
+def _checkpoint_from_state_v25277(ss):
+    is_en=str(ss.get('subject') or '').strip().lower() in ('english','bahasa inggeris')
+    n=ss.get('lesson_no') if is_en else (ss.get('pdp_no') or ss.get('lesson_no'))
+    try: n=int(n)
+    except Exception: return {}
+    return {
+        'sequence':n,
+        'lesson':n if is_en else None,
+        'pdp':None if is_en else n,
+        'kind':'Lesson' if is_en else 'PdP',
+        'year':ss.get('year') or ss.get('year_label'),
+        'unit':ss.get('unit') or ss.get('unit_title') or ss.get('textbook_unit'),
+        'topic':ss.get('topic'),
+        'title':ss.get('topic'),
+        'curriculum':{
+            'year':ss.get('year') or ss.get('year_label'),
+            'subject':ss.get('subject'),
+            'unit':ss.get('unit') or ss.get('unit_title') or ss.get('textbook_unit'),
+            'topic':ss.get('topic'),
+            'lesson_no':n if is_en else None,
+            'pdp_no':None if is_en else n,
+            'sk':ss.get('sk_code'),
+            'sp':ss.get('sp_code'),
+            'book_page':ss.get('textbook_page_start') or ss.get('textbook_pages')
+        }
+    }
+
+def _quick_generate_rph_v25277(cid,idx):
+    entries=_timetable_entries(cid)
+    if idx<0 or idx>=len(entries): return _today_batch_menu_v25273(cid)
+    e=entries[idx]
+    p=_get_rph_progress_v25274(cid,e.get('class_name'),e.get('subject'))
+    row=_resolve_next_curriculum_v25276(cid,e.get('class_name'),e.get('subject'),p)
+    if not row: return _quick_next_preview_v25276(cid,idx)
+    if not _apply_verified_next_row_v25277(cid,e,row):
+        return send(cid,'⚠️ Mapping verified ditemui tetapi belum serasi dengan handoff automatik. Flow manual masih boleh digunakan.',
+                    [[{'text':'📚 Flow Manual','callback_data':'quick'},{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}]])
+    ss=state.setdefault(cid,{})
+    # Quick mode chooses RPH only; BBM/Worksheet remain off and legacy manual picker is unchanged.
+    if 'rph' not in set(_available_materials_v2528(ss)):
+        return send(cid,'⚠️ RPH untuk mapping ini belum melepasi availability gate. Gunakan flow manual.',
+                    [[{'text':'📚 Flow Manual','callback_data':'quick'}]])
+    ss['_materials_selected_v2528']=['rph']
+    return _submit_materials_v2528(cid)
+
+# Hook successful RPH completion at the lowest stable text/PDF path without replacing manual generator.
+# The canonical submit chain calls _local_rph_text then create_pdf_file then send_document.
+# We mark a pending checkpoint before submit; recording is finalized by the send_document wrapper below.
+_send_document_before_v25277=send_document
+def send_document(cid,path,caption=''):
+    result=_send_document_before_v25277(cid,path,caption)
+    try:
+        ss=state.setdefault(cid,{})
+        if 'RPH' in str(caption or '').upper():
+            cls=str(ss.get('rph_class') or ss.get('class_name') or '').strip()
+            sub=str(ss.get('subject') or '').strip()
+            cp=_checkpoint_from_state_v25277(ss)
+            if cls and sub and cp:
+                _manual_or_quick_success_v25275(cid,cls,sub,cp,file_ref=os.path.basename(str(path or '')))
+    except Exception as e:
+        print('v25.277 RPH history warning:',repr(e),flush=True)
+    return result
+
+_callback_before_v25277=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds.startswith('quickapply276_'):
+        try: idx=int(ds.rsplit('_',1)[1])
+        except Exception: return _today_batch_menu_v25273(cid)
+        return _quick_generate_rph_v25277(cid,idx)
+    return _callback_before_v25277(cid,d)
+
+CIKGULAJU_PATCH_V25277='QUICK_VERIFIED_ROW_USES_EXISTING_RPH_GENERATOR'
+# ===== END v25.277 =====
+
+
+# ===== v25.278 SAFE DAILY RPH BATCH =====
+APP_VERSION='v25.278-SAFE-DAILY-RPH-BATCH'
+
+def _prepare_quick_rph_v25278(cid,entry):
+    """Resolve + hand off one timetable entry without generating yet."""
+    cls=str(entry.get('class_name') or '').strip()
+    sub=str(entry.get('subject') or '').strip()
+    p=_get_rph_progress_v25274(cid,cls,sub)
+    if not p:
+        return False,'checkpoint_missing',None
+    row=_resolve_next_curriculum_v25276(cid,cls,sub,p)
+    if not row:
+        return False,'next_mapping_unverified',None
+    if not _apply_verified_next_row_v25277(cid,entry,row):
+        return False,'state_handoff_failed',row
+    ss=state.setdefault(cid,{})
+    if 'rph' not in set(_available_materials_v2528(ss)):
+        return False,'rph_unavailable',row
+    return True,'ready',row
+
+def _generate_one_quick_rph_v25278(cid,entry):
+    """Generate exactly one RPH through the existing engine.
+    Success checkpoint is still finalized only by send_document v25.277.
+    """
+    ok,reason,row=_prepare_quick_rph_v25278(cid,entry)
+    if not ok:
+        return {'ok':False,'reason':reason,'row':row,'entry':dict(entry)}
+    ss=state.setdefault(cid,{})
+    ctx=dict(ss); ctx['task']='rph'
+    path=None
+    try:
+        txt=_inject_worksheet_differentiation_into_rph(_local_rph_text(ctx))
+        if not txt:
+            raise RuntimeError('RPH unavailable')
+        path=create_pdf_file(ctx,txt,str(cid)+'_quick_rph_'+secrets.token_hex(4))
+        # This wrapper records progress/history only after the established sender returns.
+        send_document(cid,path,'📘 RPH CikguLaju')
+        return {'ok':True,'reason':'success','row':row,'entry':dict(entry)}
+    except Exception as e:
+        cp=_checkpoint_from_state_v25277(ss)
+        try:
+            _manual_or_quick_failure_v25275(
+                cid,entry.get('class_name'),entry.get('subject'),cp,error_text=str(e)[:900])
+        except Exception:
+            pass
+        print('v25.278 batch RPH:',repr(e),flush=True)
+        return {'ok':False,'reason':str(e)[:180] or 'generation_failed','row':row,'entry':dict(entry)}
+    finally:
+        if path:
+            try:
+                if os.path.exists(path): os.remove(path)
+            except Exception: pass
+
+def _daily_rph_batch_v25278(cid):
+    day,rows=_today_rows_v25272(cid)
+    if not rows:
+        return send(cid,'📅 <b>Tiada kelas dalam jadual hari ini.</b>',
+                    [[{'text':'📚 Guna Flow Manual','callback_data':'quick'},
+                      {'text':'🏠 Menu Utama','callback_data':'home'}]])
+    # Preflight first: do not start a batch when some classes have never established a checkpoint.
+    missing=[]
+    for idx,e in rows:
+        if not _get_rph_progress_v25274(cid,e.get('class_name'),e.get('subject')):
+            missing.append((idx,e))
+    if missing:
+        lines=['🧭 <b>Checkpoint diperlukan dahulu</b>','',
+               'Janaan batch tidak akan meneka PdP/Lesson pertama untuk kelas berikut:']
+        kb=[]
+        for idx,e in missing:
+            label=f"{e.get('subject','')} • {e.get('class_name','')}"
+            lines.append('• '+html.escape(label))
+            kb.append([{'text':('📚 Tetapkan '+label)[:64],'callback_data':f'quickpick275_{idx}'}])
+        kb.append([{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'}])
+        return send(cid,'\n'.join(lines),kb)
+
+    # Process independently. A failure never advances that class and never blocks later slots.
+    results=[]
+    for idx,e in rows:
+        try:
+            results.append(_generate_one_quick_rph_v25278(cid,e))
+        except Exception as ex:
+            print('v25.278 isolated job error:',repr(ex),flush=True)
+            results.append({'ok':False,'reason':str(ex)[:180],'entry':dict(e),'row':None})
+
+    good=[r for r in results if r.get('ok')]
+    bad=[r for r in results if not r.get('ok')]
+    lines=[f"⚡ <b>RPH HARI INI • {html.escape(day.upper())}</b>",
+           '',f"✅ Berjaya: <b>{len(good)}</b> / {len(results)}"]
+    for r in good:
+        e=r['entry']; row=r.get('row') or {}
+        lines.append('✓ '+html.escape(
+            f"{e.get('start','')} {e.get('subject','')} • {e.get('class_name','')} • {_next_curriculum_summary_v25276(row)}"))
+    if bad:
+        lines += ['',f"⚠️ Belum berjaya: <b>{len(bad)}</b>"]
+        for r in bad:
+            e=r['entry']
+            lines.append('• '+html.escape(f"{e.get('subject','')} • {e.get('class_name','')}")+
+                         ' — '+html.escape(str(r.get('reason') or 'gagal')))
+    lines += ['','Checkpoint hanya dikemas kini untuk RPH yang berjaya dihantar.']
+    kb=[[{'text':'📥 RPH yang telah dijana','callback_data':'rphhist278'}],
+        [{'text':'📚 Sediakan Bahan PdP • Manual','callback_data':'quick'},
+         {'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+def _recent_rph_history_v25278(cid,limit=20):
+    ok,data=_sb_rest_v25274('GET',RPH_HISTORY_TABLE_V25274,{
+        'telegram_user_id':f'eq.{cid}',
+        'status':'eq.success',
+        'select':'*',
+        'order':'generated_at.desc',
+        'limit':str(max(1,min(int(limit),50)))
+    })
+    return data if ok and isinstance(data,list) else []
+
+def _show_rph_history_v25278(cid):
+    rows=_recent_rph_history_v25278(cid,20)
+    if not rows:
+        return send(cid,'📥 <b>RPH yang telah dijana</b>\n\nBelum ada rekod history dalam table baharu.',
+                    [[{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'},
+                      {'text':'🏠 Menu Utama','callback_data':'home'}]])
+    lines=['📥 <b>RPH YANG TELAH DIJANA</b>','']
+    for r in rows:
+        kind=r.get('sequence_kind') or 'PdP'; no=r.get('sequence_no') or ''
+        when=str(r.get('generated_at') or '')[:10]
+        lines.append('• '+html.escape(f"{when} • {r.get('subject','')} • {r.get('class_name','')} • {kind} {no}"))
+    return send(cid,'\n'.join(lines),
+                [[{'text':'⬅️ RPH Hari Ini','callback_data':'todayrph272'},
+                  {'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+_callback_before_v25278=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='todaybatch273_run':
+        return _daily_rph_batch_v25278(cid)
+    if ds=='rphhist278':
+        return _show_rph_history_v25278(cid)
+    return _callback_before_v25278(cid,d)
+
+CIKGULAJU_PATCH_V25278='SAFE_DAILY_BATCH_INDEPENDENT_CHECKPOINTS'
+# ===== END v25.278 =====
+
+
+# ===== v25.279 FINAL QUICK-RPH DELIVERY SAFETY + STATE ISOLATION =====
+APP_VERSION='v25.279-QUICK-RPH-UPLOAD-READY'
+
+def _telegram_delivery_ok_v25279(result):
+    """Telegram success must be explicit; an HTTP response object alone is not success."""
+    try:
+        if result is None or not bool(getattr(result,'ok',False)):
+            return False
+        data=result.json()
+        return isinstance(data,dict) and data.get('ok') is True
+    except Exception:
+        return False
+
+# Replace the v25.277 wrapper with strict Telegram acknowledgement semantics.
+_send_document_transport_v25279=_send_document_before_v25277
+def send_document(cid,path,caption=''):
+    result=_send_document_transport_v25279(cid,path,caption)
+    try:
+        ss=state.setdefault(cid,{})
+        if 'RPH' in str(caption or '').upper():
+            cls=str(ss.get('rph_class') or ss.get('class_name') or '').strip()
+            sub=str(ss.get('subject') or '').strip()
+            cp=_checkpoint_from_state_v25277(ss)
+            if cls and sub and cp:
+                if _telegram_delivery_ok_v25279(result):
+                    _manual_or_quick_success_v25275(
+                        cid,cls,sub,cp,file_ref=os.path.basename(str(path or '')))
+                else:
+                    _manual_or_quick_failure_v25275(
+                        cid,cls,sub,cp,error_text='TELEGRAM_SEND_DOCUMENT_NOT_CONFIRMED')
+    except Exception as e:
+        print('v25.279 RPH delivery/history warning:',repr(e),flush=True)
+    return result
+
+def _snapshot_curriculum_state_v25279(ss):
+    """Protect unrelated manual state while a daily batch iterates multiple classes."""
+    # A shallow copy is enough because the batch replaces, rather than mutates,
+    # nested curriculum collections. Preserve all keys to avoid leaking the final slot.
+    return dict(ss)
+
+def _restore_curriculum_state_v25279(cid,snap):
+    state[cid]=snap
+    return state[cid]
+
+_generate_one_quick_rph_before_v25279=_generate_one_quick_rph_v25278
+def _generate_one_quick_rph_v25278(cid,entry):
+    before=_snapshot_curriculum_state_v25279(state.setdefault(cid,{}))
+    try:
+        result=_generate_one_quick_rph_before_v25279(cid,entry)
+        # Do not trust the inner function's optimistic return if Telegram did not confirm.
+        # Re-read progress and verify it reached this exact generated sequence.
+        if result.get('ok'):
+            row=result.get('row') or {}
+            expected=row.get('_sequence_no') or row.get('lesson_no') or row.get('sequence_no')
+            latest=_get_rph_progress_v25274(cid,entry.get('class_name'),entry.get('subject')) or {}
+            actual=_checkpoint_no_v25276(latest)
+            try:
+                confirmed=(int(actual)==int(expected))
+            except Exception:
+                confirmed=False
+            if not confirmed:
+                result['ok']=False
+                result['reason']='delivery_not_confirmed'
+        return result
+    finally:
+        _restore_curriculum_state_v25279(cid,before)
+
+def _same_daily_slot_key_v25279(e):
+    return (
+        str(e.get('day') or '').strip().lower(),
+        str(e.get('start') or '').strip(),
+        str(e.get('end') or '').strip(),
+        str(e.get('class_name') or '').strip().lower(),
+        str(e.get('subject') or '').strip().lower(),
+    )
+
+_daily_rph_batch_before_v25279=_daily_rph_batch_v25278
+def _daily_rph_batch_v25278(cid):
+    day,rows=_today_rows_v25272(cid)
+    # Deduplicate accidental identical timetable rows, while preserving two genuinely
+    # separate periods of the same class/subject at different times.
+    seen=set(); clean=[]
+    for idx,e in rows:
+        k=_same_daily_slot_key_v25279(e)
+        if k in seen: continue
+        seen.add(k); clean.append((idx,e))
+    if len(clean)==len(rows):
+        return _daily_rph_batch_before_v25279(cid)
+
+    # Temporarily supply de-duplicated rows to the same batch implementation.
+    original=globals().get('_today_rows_v25272')
+    def _once(_cid):
+        return day,clean
+    globals()['_today_rows_v25272']=_once
+    try:
+        return _daily_rph_batch_before_v25279(cid)
+    finally:
+        globals()['_today_rows_v25272']=original
+
+CIKGULAJU_PATCH_V25279='STRICT_TELEGRAM_SUCCESS_STATE_ISOLATION_DUPLICATE_SLOT_GUARD'
+# ===== END v25.279 =====
+
+
+# ===== v25.280 SUPABASE SECRET-KEY CONSOLIDATION =====
+APP_VERSION='v25.280-SUPABASE-SECRET-KEY-RPH-STORE'
+
+def _rph_supabase_key_v25280():
+    """RPH store is server-side only. Reuse the established backend secret key."""
+    return str(globals().get('SUPABASE_SECRET_KEY') or globals().get('SUPABASE_KEY') or '').strip()
+
+def _sb_rest_v25274(method,table,params=None,payload=None):
+    """Supabase REST helper for server-side RPH store. Never raises into user flow."""
+    try:
+        base=(SUPABASE_URL or '').rstrip('/')
+        key=_rph_supabase_key_v25280()
+        if not base or not key:
+            return False,None
+        url=f"{base}/rest/v1/{table}"
+        headers={
+            'apikey':key,
+            'Authorization':f'Bearer {key}',
+            'Content-Type':'application/json',
+            'Prefer':'return=representation'
+        }
+        r=requests.request(method,url,headers=headers,params=params,json=payload,timeout=12)
+        if 200 <= r.status_code < 300:
+            try: return True,r.json()
+            except Exception: return True,None
+        return False,{'status':r.status_code,'text':(r.text or '')[:500]}
+    except Exception as e:
+        print('v25.280 RPH Supabase REST warning:',repr(e),flush=True)
+        return False,None
+
+def _upsert_rph_progress_v25274(cid,class_name,subject,checkpoint):
+    uid,cls,sub=_progress_key_v25274(cid,class_name,subject)
+    cp=dict(checkpoint or {})
+    payload={
+        'telegram_user_id':uid,
+        'class_name':cls,
+        'subject':sub,
+        'sequence_no':cp.get('sequence') or cp.get('lesson') or cp.get('pdp'),
+        'sequence_kind':cp.get('kind') or ('Lesson' if cp.get('lesson') else 'PdP'),
+        'year_label':cp.get('year'),
+        'unit_name':cp.get('unit'),
+        'topic_name':cp.get('topic') or cp.get('title'),
+        'curriculum_json':cp.get('curriculum') or {},
+        'last_success_at':datetime.now(timezone.utc).isoformat(),
+        'updated_at':datetime.now(timezone.utc).isoformat()
+    }
+    try:
+        base=(SUPABASE_URL or '').rstrip('/')
+        key=_rph_supabase_key_v25280()
+        if base and key:
+            headers={
+                'apikey':key,'Authorization':f'Bearer {key}',
+                'Content-Type':'application/json',
+                'Prefer':'resolution=merge-duplicates,return=representation'
+            }
+            r=requests.post(
+                f"{base}/rest/v1/{RPH_PROGRESS_TABLE_V25274}",
+                headers=headers,
+                params={'on_conflict':'telegram_user_id,class_name,subject'},
+                json=payload,timeout=12
+            )
+            if 200 <= r.status_code < 300:
+                return True
+            print('v25.280 RPH progress HTTP',r.status_code,(r.text or '')[:240],flush=True)
+    except Exception as e:
+        print('v25.280 RPH progress warning:',repr(e),flush=True)
+    return _save_rph_progress_v25273(cid,class_name,subject,cp)
+
+CIKGULAJU_PATCH_V25280='RPH_STORE_REUSES_EXISTING_SUPABASE_SECRET_KEY'
+# ===== END v25.280 =====
