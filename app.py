@@ -37654,3 +37654,138 @@ def menu(cid,show_persistent=False):
 
 CIKGULAJU_PATCH_V25269='MAIN_MENU_TELEGRAM_SPACING_FIX'
 # ===== END v25.269 =====
+
+# ===== v25.270/v25.271 SUPPORTER SPACING + CLEAN PROFILE =====
+# Non-destructive UI overrides. Legacy subscription/payment data and callbacks remain preserved.
+APP_VERSION='v25.271-CLEAN-PROFILE-NO-SUBSCRIPTION-UI'
+
+# Fix Telegram caption spacing for Early Supporter screen.
+def send_donation_qr(cid):
+    opened,_=_early_supporter_open_v25268()
+    if not opened:
+        return send(cid,
+            '⏳ <b>PROGRAM PENYOKONG AWAL TELAH DITUTUP</b>\n\n'
+            'Program khas pra-pelancaran CikguLaju telah tamat.\n\n'
+            '👑 Status VIP Founder bagi penyokong awal yang telah disahkan kekal dilindungi.',
+            [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    global _donation_qr_file_id
+    caption=(
+        '👑 <b>PROGRAM PENYOKONG AWAL CIKGULAJU</b>\n\n'
+        f'💛 <b>RM{EARLY_SUPPORTER_AMOUNT_V25268:.0f} SEKALI SAHAJA</b>\n\n'
+        '⭐ <b>VIP FOUNDER KEKAL</b>\n\n'
+        'Program khas untuk guru yang menyokong pembangunan CikguLaju sebelum pelancaran rasmi.\n\n'
+        '🎁 <b>Keistimewaan</b>\n'
+        '• Status VIP Founder kekal\n'
+        '• Penyokong awal pembangunan CikguLaju\n'
+        '• Akses asas CikguLaju kekal tanpa yuran langganan\n\n'
+        '⏳ <b>TEMPOH TERHAD</b>\n'
+        f'Penyertaan sehingga <b>{_early_supporter_end_label_v25268()}</b>.\n\n'
+        '📱 Imbas QR DuitNow dan buat bayaran tepat <b>RM50</b>.\n\n'
+        '📎 Selepas bayaran, upload resit untuk pengesahan.'
+    )
+    kb={'inline_keyboard':[
+        [{'text':'📎 Upload Resit RM50','callback_data':'donation_receipt'}],
+        [{'text':'🏠 Menu Utama','callback_data':'home'}]
+    ]}
+    data={'chat_id':str(cid),'caption':caption,'parse_mode':'HTML','reply_markup':__import__('json').dumps(kb,ensure_ascii=False)}
+    try:
+        if _donation_qr_file_id:
+            data['photo']=_donation_qr_file_id
+            r=requests.post(f'{API}/sendPhoto',data=data,timeout=30)
+        else:
+            qr_bytes=base64.b64decode(DONATION_QR_B64)
+            r=requests.post(f'{API}/sendPhoto',data=data,files={'photo':('CikguLaju_DuitNow_QR.jpg',BytesIO(qr_bytes),'image/jpeg')},timeout=45)
+            if r.ok:
+                try:
+                    photos=r.json().get('result',{}).get('photo',[])
+                    if photos: _donation_qr_file_id=photos[-1].get('file_id') or _donation_qr_file_id
+                except Exception:
+                    pass
+        if not r.ok:
+            raise RuntimeError(f'Telegram sendPhoto HTTP {r.status_code}: {r.text[:160]}')
+        return r
+    except Exception as e:
+        print('Early supporter QR send error:',repr(e),flush=True)
+        return send(cid,caption+'\n\n⚠️ QR tidak dapat dipaparkan buat sementara waktu. Sila cuba semula.',[
+            [{'text':'📎 Upload Resit RM50','callback_data':'donation_receipt'}],
+            [{'text':'🔄 Cuba Papar QR','callback_data':'donate'}],
+            [{'text':'🏠 Menu Utama','callback_data':'home'}]
+        ])
+
+def _account_profile_text_v25271(cid):
+    """User-facing profile without legacy subscription wording/buttons."""
+    try:
+        p=_teacher_profile(cid) or {}
+        class_rows=_profile_class_records(cid)
+        trials=_trial_balance(cid)
+        permanent=_is_permanent_vip_v25267(cid)
+        access=_access_info(cid)
+        referrals=_referral_count_v25267(cid)
+    except CreditStoreUnavailable:
+        return ('👤 <b>PROFIL SAYA</b>\n\n'
+                '⚠️ Status akaun tidak dapat disemak buat sementara waktu.\n'
+                'Data profil dan akses cikgu tidak direset. Cuba lagi sebentar.')
+    except Exception as e:
+        print('v25.271 account profile read:',repr(e),flush=True)
+        return '👤 <b>PROFIL SAYA</b>\n\n⚠️ Maklumat profil tidak dapat dipaparkan buat sementara waktu.'
+
+    state_name=str(p.get('state_name') or '-')
+    class_text=', '.join(
+        f"{r['name']} — {r['students']} murid" if r.get('students') else r['name']
+        for r in class_rows
+    ) if class_rows else '-'
+
+    if permanent:
+        access_text='👑 Status: <b>VIP FOUNDER</b>\n⭐ VIP Founder: <b>KEKAL</b>'
+    elif access.get('active'):
+        until=str(access.get('access_until') or '')[:10] or '-'
+        access_text=(
+            '⭐ Status: <b>VIP</b>\n'
+            f'⏳ VIP sehingga: <b>{html.escape(until)}</b>'
+        )
+    else:
+        access_text=(
+            '🎁 Status: <b>FREE</b>\n'
+            f'🎁 Baki janaan percuma: <b>{int(trials)}</b>'
+        )
+
+    return (
+        '👤 <b>PROFIL SAYA</b>\n\n'
+        f'Nama/Panggilan: <b>{html.escape(str(p.get("display_name") or "-"))}</b>\n'
+        f'Negeri: <b>{html.escape(state_name)}</b>\n'
+        f'Kumpulan: <b>{_profile_group(state_name) if state_name != "-" else "-"}</b>\n'
+        f'Kelas & murid: <b>{html.escape(class_text)}</b>\n\n'
+        f'{access_text}\n'
+        f'👥 Referral berjaya: <b>{int(referrals)}</b>\n\n'
+        '☁️ Profil dan kelas disimpan secara kekal.'
+    )
+
+_callback_before_v25271=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds in ('account','profile','my_account'):
+        p=_teacher_profile(cid)
+        if not p:
+            return _profile_start(cid)
+        kb=[
+            [{'text':'📅 Jadual Waktu Saya','callback_data':'timetable'}],
+            [{'text':'✏️ Kemas Kini Profil','callback_data':'profile_edit'}],
+            [{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
+            [{'text':'🏠 Menu Utama','callback_data':'home'}]
+        ]
+        return send(cid,_account_profile_text_v25271(cid),kb)
+    if ds=='donate':
+        return send_donation_qr(cid)
+    if ds=='donation_receipt':
+        opened,_=_early_supporter_open_v25268()
+        if not opened:
+            return send(cid,'⏳ <b>Program Penyokong Awal telah ditutup.</b>\n\nStatus VIP Founder yang telah disahkan sebelum ini kekal.',[[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        state.setdefault(cid,{})['waiting']='donation_receipt'
+        return send(cid,
+            '📎 <b>UPLOAD RESIT PENYOKONG AWAL</b>\n\n'
+            'Hantar gambar atau PDF resit bayaran <b>RM50</b> di sini untuk pengesahan.',
+            [[{'text':'⬅️ Kembali','callback_data':'donate'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    return _callback_before_v25271(cid,d)
+
+CIKGULAJU_PATCH_V25271='CLEAN_PROFILE_NO_SUBSCRIPTION_UI_SUPPORTER_SPACING'
+# ===== END v25.271 =====
