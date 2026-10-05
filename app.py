@@ -40647,3 +40647,48 @@ def callback(cid,d):
 APP_VERSION='v26.02-PM-DIRECT-VERIFIED-PDP-FLOW'
 CIKGULAJU_PATCH_V2602='PM_BYPASS_TEXTBOOK_SOW_SOURCE_CHOICE'
 # ===== END v26.02 =====
+
+
+# ===== v26.03 PM RPH ACTIVITY HEADING FORMAT LOCK =====
+# Keep the established RPH format: Activity 1/2/3/4 headings are bold.
+# Applied at PDF text-markup stage without changing PM curriculum content.
+_rph_pdf_markup_before_v2603 = globals().get('_rph_pdf_markup')
+
+def _pm_bold_activity_headings_v2603(text):
+    import re as _re
+    s=str(text or '')
+    # Avoid double wrapping if upstream already supplied bold markup.
+    # Bold from "Aktiviti N" through the activity title/time on that same line.
+    lines=s.splitlines()
+    out=[]
+    for line in lines:
+        raw=line.strip()
+        if _re.match(r'^Aktiviti\s+[1-9]\d*\b', raw, flags=_re.I) and not raw.startswith('<b>'):
+            lead=line[:len(line)-len(line.lstrip())]
+            out.append(lead+'<b>'+raw+'</b>')
+        else:
+            out.append(line)
+    return '\n'.join(out)
+
+# Patch the common paragraph formatter used by the one-page RPH table.
+# This is intentionally PM-only so existing subject formatting is untouched.
+if '_fmt_activity_text' in globals():
+    _fmt_activity_text_before_v2603=_fmt_activity_text
+    def _fmt_activity_text(text,*args,**kwargs):
+        if str(state.get(globals().get('_ACTIVE_CID_V2603',''),{}).get('subject') or '')=='Pendidikan Moral':
+            text=_pm_bold_activity_headings_v2603(text)
+        return _fmt_activity_text_before_v2603(text,*args,**kwargs)
+
+# Generic ReportLab safety hook: when PM activity block is passed as text,
+# convert each Activity heading to bold markup before Paragraph parsing.
+if '_safe_para' in globals():
+    _safe_para_before_v2603=_safe_para
+    def _safe_para(text,*args,**kwargs):
+        s=str(text or '')
+        if 'Aktiviti 1' in s or 'Aktiviti 2' in s or 'Aktiviti 3' in s or 'Aktiviti 4' in s:
+            s=_pm_bold_activity_headings_v2603(s)
+        return _safe_para_before_v2603(s,*args,**kwargs)
+
+APP_VERSION='v26.03-PM-ACTIVITY-HEADING-BOLD'
+CIKGULAJU_PATCH_V2603='PM_RPH_ACTIVITY_1_4_BOLD_FORMAT_LOCK'
+# ===== END v26.03 =====
