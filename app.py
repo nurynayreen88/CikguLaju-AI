@@ -39787,3 +39787,400 @@ def callback(cid,d):
 APP_VERSION='v25.290-PROFILE-NO-DUPLICATE-UPLOAD'
 CIKGULAJU_PATCH_V25290='UPLOAD_ONLY_INSIDE_TIMETABLE_MANAGEMENT_NOT_PROFILE'
 # ===== END v25.290 =====
+
+# ===== v25.291 REMOVE PROFILE PERCENTAGE FROM UI =====
+_menu_before_v25291=menu
+def menu(cid,show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    _score,ready,_=_profile_completion_v25272(cid)
+    kb=[
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+        [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272' if ready else 'smartprof272'}],
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
+    ]
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n'
+        '<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
+        '📚 <b>SEDIAKAN BAHAN PdP</b>\n'
+        'Pilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
+        '⚡ <b>RPH HARI INI</b>\n'
+        'Jana RPH berdasarkan jadual waktu cikgu.\n\n'
+        '👤 <b>PROFIL SAYA</b>\n'
+        'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
+        '🎁 <b>REFERRAL & VIP</b>\n'
+        'Ajak rakan dan dapatkan akses VIP.\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>'
+    )
+    return send(cid,body,kb)
+
+_callback_before_v25291=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='account':
+        _score,ready,_=_profile_completion_v25272(cid)
+        lines=['👤 <b>PROFIL SAYA</b>','']
+        try:
+            profile_text=_profile_text(cid)
+            if profile_text:
+                lines.append(profile_text)
+        except Exception:
+            pass
+        if ready:
+            lines += ['','✅ Profil sedia untuk RPH Hari Ini.']
+        kb=[
+            [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
+            [{'text':'🏫 URUS KELAS','callback_data':'profile_classes_manage'}],
+            [{'text':'✏️ KEMAS KINI PROFIL','callback_data':'profile_edit'}],
+            [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
+            [{'text':'🏠 MENU UTAMA','callback_data':'home'}],
+        ]
+        return send(cid,'\n'.join(lines),kb)
+    return _callback_before_v25291(cid,d)
+
+APP_VERSION='v25.291-NO-PROFILE-PERCENT'
+CIKGULAJU_PATCH_V25291='REMOVE_PROFILE_PERCENTAGE_FROM_HOME_AND_PROFILE_UI'
+# ===== END v25.291 =====
+
+# ===== v25.292 RPT/SOW + NEGERI CALENDAR DAILY SUGGESTION =====
+def _calendar_week_for_date_v25292(state_name, dt=None):
+    from datetime import date as _date
+    dt=dt or _date.today()
+    if str(dt.year)!='2026': return None
+    for i,(a,b) in enumerate(_rpt_school_weeks_2026(state_name),1):
+        if a<=dt<=b: return i
+    return None
+
+def _calendar_rpt_row_v25292(cid,entry,dt=None):
+    """Use verified RPT week only as a calendar suggestion; never fabricate a curriculum row."""
+    from datetime import date as _date
+    dt=dt or _date.today()
+    rec=_profile_class_record(cid,entry.get('class_name')) or {}
+    year=str(rec.get('year_label') or rec.get('year') or '').strip()
+    if not year: return None,'class_level_missing'
+    try: prof=_teacher_profile(cid) or {}
+    except Exception: prof={}
+    state_name=str(prof.get('state_name') or '').strip()
+    if not state_name: return None,'state_missing'
+    week=_calendar_week_for_date_v25292(state_name,dt)
+    if week is None: return None,'outside_school_calendar'
+    subject=str(entry.get('subject') or '').strip()
+    # English SOW is sequence-based in the verified resolver. Without a checkpoint, do not
+    # invent a Lesson number from a calendar week.
+    if _norm_subject_v2393(subject) in ('english','bahasa inggeris'):
+        return None,'english_checkpoint_required'
+    rows=_rpt_db_rows(year,subject,str(dt.year),state_name)
+    candidates=[r for r in rows if int(r.get('week_from') or 0)<=week<=int(r.get('week_to') or 0)]
+    if not candidates: return None,'no_verified_rpt_for_calendar_week'
+    # If several verified rows share a week, select the first verified source order only as a suggestion.
+    r=dict(candidates[0])
+    r['_resolver']='verified_rpt_calendar'
+    r['_calendar_week']=week
+    # Recover canonical sequence/id/std from DB so the existing handoff/generator is reused.
+    rid=r.get('id')
+    if rid:
+        con=_db()
+        try:
+            base=con.execute("SELECT * FROM rpt_entries WHERE id=? AND verified=1 LIMIT 1",(rid,)).fetchone()
+            if base:
+                d=dict(base)
+                std=[dict(x) for x in con.execute("""SELECT standard_type,standard_code,standard_text,sequence_no
+                    FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
+                    ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",(rid,)).fetchall()]
+                d['_std']=std; d['_resolver']='verified_rpt_calendar'; d['_calendar_week']=week
+                d['_sequence_kind']='PdP'; d['_sequence_no']=d.get('sequence_no')
+                return d,'calendar'
+        finally:
+            con.close()
+    return None,'verified_row_unavailable'
+
+def _daily_candidate_v25292(cid,entry):
+    """Checkpoint wins. Calendar is a safe bootstrap suggestion only when verified RPT supports it."""
+    p=_get_rph_progress_v25274(cid,entry.get('class_name'),entry.get('subject'))
+    if p:
+        row=_resolve_next_curriculum_v25276(cid,entry.get('class_name'),entry.get('subject'),p)
+        return row,'checkpoint' if row else 'checkpoint_unresolved'
+    return _calendar_rpt_row_v25292(cid,entry)
+
+def _today_rpt_suggestions_v25292(cid):
+    from datetime import date as _date
+    day,rows=_today_rows_v25272(cid)
+    try: prof=_teacher_profile(cid) or {}
+    except Exception: prof={}
+    negeri=str(prof.get('state_name') or '').strip()
+    week=_calendar_week_for_date_v25292(negeri,_date.today()) if negeri else None
+    lines=[f'⚡ <b>RPH HARI INI • {html.escape(day.upper())}</b>','']
+    if negeri:
+        lines.append('📍 '+html.escape(negeri)+(f' • Minggu persekolahan {week}' if week else ''))
+    lines += ['📚 Cadangan berdasarkan <b>RPT/SOW verified</b> dan kemajuan kelas.','']
+    if not rows:
+        lines += ['Tiada kelas dalam jadual cikgu untuk hari ini.','',
+                  'Cikgu masih boleh menyediakan RPH secara manual.']
+        return send(cid,'\n'.join(lines),
+                    [[{'text':'📅 Lihat / Urus Jadual','callback_data':'timetable'}],
+                     [{'text':'📚 Sediakan Bahan PdP','callback_data':'quick'}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    suggestions=[]; unresolved=[]
+    for idx,e in rows:
+        row,source=_daily_candidate_v25292(cid,e)
+        if row:
+            suggestions.append({'idx':idx,'entry':e,'row':row,'source':source})
+            lines.append('✓ '+html.escape(
+                f"{e.get('start','')}–{e.get('end','')} • {e.get('class_name','')} • {e.get('subject','')} • {_next_curriculum_summary_v25276(row)}"))
+        else:
+            unresolved.append({'idx':idx,'entry':e,'reason':source})
+            lines.append('• '+html.escape(
+                f"{e.get('start','')} • {e.get('class_name','')} • {e.get('subject','')}")+" — perlu pilihan manual")
+    ss=state.setdefault(cid,{})
+    ss['_daily_suggestions_v25292']=suggestions
+    ss['_daily_unresolved_v25292']=unresolved
+    kb=[]
+    if suggestions:
+        kb.append([{'text':f'✨ JANA SEMUA RPH HARI INI ({len(suggestions)})','callback_data':'daily292_generate'}])
+    if unresolved:
+        kb.append([{'text':'✏️ Pilih Manual','callback_data':'quick'}])
+    kb += [[{'text':'📅 Lihat / Urus Jadual','callback_data':'timetable'}],
+           [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+def _generate_daily_suggestions_v25292(cid):
+    ss=state.setdefault(cid,{})
+    suggestions=list(ss.get('_daily_suggestions_v25292') or [])
+    if not suggestions: return _today_rpt_suggestions_v25292(cid)
+    results=[]
+    for item in suggestions:
+        e=dict(item['entry']); row=dict(item['row'])
+        try:
+            # Re-resolve checkpoint-based items at execution time; calendar bootstrap stays on
+            # the exact verified row shown to the teacher.
+            if item.get('source')=='checkpoint':
+                p=_get_rph_progress_v25274(cid,e.get('class_name'),e.get('subject'))
+                row=_resolve_next_curriculum_v25276(cid,e.get('class_name'),e.get('subject'),p)
+            if not row or not _apply_verified_next_row_v25277(cid,e,row):
+                results.append({'ok':False,'entry':e,'reason':'mapping/handoff tidak tersedia'}); continue
+            if 'rph' not in set(_available_materials_v2528(state.setdefault(cid,{}))):
+                results.append({'ok':False,'entry':e,'reason':'RPH belum tersedia'}); continue
+            # Existing generator + v25.283 success-only FREE debit/checkpoint semantics.
+            result=_generate_one_quick_rph_v25278(cid,e) if item.get('source')=='checkpoint' else None
+            if item.get('source')!='checkpoint':
+                ctx=dict(state.setdefault(cid,{})); ctx['task']='rph'; path=None
+                try:
+                    txt=_inject_worksheet_differentiation_into_rph(_local_rph_text(ctx))
+                    if not txt: raise RuntimeError('RPH unavailable')
+                    path=create_pdf_file(ctx,txt,str(cid)+'_calendar_rph_'+secrets.token_hex(4))
+                    send_document(cid,path,'📘 RPH CikguLaju')
+                    result={'ok':True,'entry':e,'row':row,'reason':'success'}
+                    # The established send_document wrapper records the successful checkpoint.
+                except Exception as ex:
+                    result={'ok':False,'entry':e,'row':row,'reason':str(ex)[:180]}
+                finally:
+                    if path:
+                        try:
+                            if os.path.exists(path): os.remove(path)
+                        except Exception: pass
+            results.append(result or {'ok':False,'entry':e,'reason':'generation_failed'})
+        except Exception as ex:
+            results.append({'ok':False,'entry':e,'reason':str(ex)[:180]})
+    good=[x for x in results if x.get('ok')]; bad=[x for x in results if not x.get('ok')]
+    lines=['✨ <b>RPH SEHARI</b>','',f'✅ Berjaya: <b>{len(good)}</b> / {len(results)}']
+    for r in good:
+        e=r.get('entry') or {}; lines.append('✓ '+html.escape(f"{e.get('subject','')} • {e.get('class_name','')}"))
+    if bad:
+        lines += ['',f'⚠️ Belum berjaya: <b>{len(bad)}</b>']
+        for r in bad:
+            e=r.get('entry') or {}; lines.append('• '+html.escape(f"{e.get('subject','')} • {e.get('class_name','')} — {r.get('reason','gagal')}"))
+    lines += ['','Progress hanya berubah selepas RPH berjaya dihantar.']
+    return send(cid,'\n'.join(lines),
+                [[{'text':'⚡ RPH Hari Ini','callback_data':'todayrph272'}],
+                 [{'text':'📚 Pilih Manual','callback_data':'quick'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+_callback_before_v25292=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if ds=='todayrph272': return _today_rpt_suggestions_v25292(cid)
+    if ds=='daily292_generate': return _generate_daily_suggestions_v25292(cid)
+    return _callback_before_v25292(cid,d)
+
+# RPH Hari Ini must always open; missing setup is handled inside the suggestion screen.
+_menu_before_v25292=menu
+def menu(cid,show_persistent=False):
+    if show_persistent: install_menu_button(cid)
+    kb=[
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+        [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
+    ]
+    if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    body=(
+        '🚀 <b>CIKGULAJU AI</b>\n<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
+        '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
+        '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
+        '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
+        '🎁 <b>REFERRAL & VIP</b>\nAjak rakan dan dapatkan akses VIP.\n\n'
+        '🎁 <b>5 JANAAN PERCUMA</b>'
+    )
+    return send(cid,body,kb)
+
+APP_VERSION='v25.292-RPT-CALENDAR-DAILY-SUGGESTION'
+CIKGULAJU_PATCH_V25292='STATE_CALENDAR_RPT_SOW_DAILY_RPH_SUGGESTION_BATCH'
+# ===== END v25.292 =====
+
+# ===== v25.293 ALL-SUBJECT VERIFIED DAILY RPH =====
+def _english_verified_rows_v25293(year):
+    yn=_english_primary_year_number_v2517(year)
+    out=[]
+    if yn in (3,4,5,6):
+        path=_english_y3_y6_sow_db_path_v2517()
+        if path:
+            try:
+                con=sqlite3.connect(path); con.row_factory=sqlite3.Row
+                rows=con.execute("""SELECT year_label,lesson_no,focus,topic,language_grammar_focus,
+                           main_skill,main_cs,main_ls,complementary_skill,complementary_cs,
+                           complementary_ls,lesson_type,references_text,sow_pdf_page,verification_status
+                    FROM english_primary_y3_y6_sow_staging
+                    WHERE year_label=? AND UPPER(COALESCE(verification_status,'')) LIKE '%VERIF%'
+                    ORDER BY lesson_no ASC""",(f'Year {yn}',)).fetchall()
+                con.close()
+                for r in rows:
+                    d=dict(r); d['_resolver']='english_y3_y6_verified_sow'
+                    d['_sequence_kind']='Lesson'; d['_sequence_no']=d.get('lesson_no'); out.append(d)
+            except Exception: out=[]
+    elif yn in (1,2):
+        try: rows=_eng12_rows(f'Tahun {yn}')
+        except Exception:
+            try: rows=_eng12_lesson_rows(f'Tahun {yn}')
+            except Exception: rows=[]
+        for r in rows or []:
+            try:
+                d=dict(r); d['_resolver']='english_y1_y2_verified_rows'
+                d['_sequence_kind']='Lesson'; d['_sequence_no']=int(d.get('lesson_no')); out.append(d)
+            except Exception: pass
+        out.sort(key=lambda x:int(x.get('_sequence_no') or 0))
+    return out
+
+def _calendar_sequence_pick_v25293(rows,week,total_weeks=43):
+    """Calendar-position bootstrap over VERIFIED sequence only.
+    This does not manufacture a lesson number; it selects an existing verified row.
+    """
+    rows=[dict(r) for r in (rows or []) if r]
+    if not rows or not week or total_weeks<1: return None
+    # Map current teaching-week position into the existing verified sequence.
+    pos=max(0,min(len(rows)-1, int(((int(week)-1)*len(rows))/int(total_weeks))))
+    return dict(rows[pos])
+
+def _calendar_curriculum_row_v25293(cid,entry,dt=None):
+    from datetime import date as _date
+    dt=dt or _date.today()
+    rec=_profile_class_record(cid,entry.get('class_name')) or {}
+    year=str(rec.get('year_label') or rec.get('year') or '').strip()
+    if not year: return None,'class_level_missing'
+    try: prof=_teacher_profile(cid) or {}
+    except Exception: prof={}
+    negeri=str(prof.get('state_name') or '').strip()
+    if not negeri: return None,'state_missing'
+    weeks=_rpt_school_weeks_2026(negeri) if str(dt.year)=='2026' else []
+    week=_calendar_week_for_date_v25292(negeri,dt)
+    if week is None: return None,'outside_school_calendar'
+    subject=str(entry.get('subject') or '').strip()
+    if _norm_subject_v2393(subject) in ('english','bahasa inggeris'):
+        rows=_english_verified_rows_v25293(year)
+        row=_calendar_sequence_pick_v25293(rows,week,len(weeks) or 43)
+        if not row: return None,'no_verified_sow_sequence'
+        row['_calendar_week']=week; row['_calendar_bootstrap']=True
+        return row,'calendar_verified_sow'
+    # All other subjects: prefer exact verified RPT week mapping. No synthetic PdP number.
+    rows=_rpt_db_rows(year,subject,str(dt.year),negeri)
+    candidates=[r for r in rows if int(r.get('week_from') or 0)<=week<=int(r.get('week_to') or 0)]
+    if not candidates: return None,'no_verified_rpt_for_calendar_week'
+    chosen=dict(candidates[0]); rid=chosen.get('id')
+    if not rid: return None,'verified_row_unavailable'
+    con=_db()
+    try:
+        base=con.execute("SELECT * FROM rpt_entries WHERE id=? AND verified=1 LIMIT 1",(rid,)).fetchone()
+        if not base: return None,'verified_row_unavailable'
+        d=dict(base)
+        d['_std']=[dict(x) for x in con.execute("""SELECT standard_type,standard_code,standard_text,sequence_no
+            FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
+            ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",(rid,)).fetchall()]
+        d['_resolver']='verified_rpt_entries'; d['_sequence_kind']='PdP'
+        d['_sequence_no']=d.get('sequence_no'); d['_calendar_week']=week; d['_calendar_bootstrap']=True
+        return d,'calendar_verified_rpt'
+    finally:
+        con.close()
+
+def _daily_candidate_v25292(cid,entry):
+    # Existing progress always wins over calendar.
+    p=_get_rph_progress_v25274(cid,entry.get('class_name'),entry.get('subject'))
+    if p:
+        row=_resolve_next_curriculum_v25276(cid,entry.get('class_name'),entry.get('subject'),p)
+        return row,'checkpoint' if row else 'checkpoint_unresolved'
+    return _calendar_curriculum_row_v25293(cid,entry)
+
+def _generate_calendar_row_v25293(cid,e,row):
+    if not row or not _apply_verified_next_row_v25277(cid,e,row):
+        return {'ok':False,'entry':e,'row':row,'reason':'mapping/handoff tidak tersedia'}
+    ss=state.setdefault(cid,{})
+    if 'rph' not in set(_available_materials_v2528(ss)):
+        return {'ok':False,'entry':e,'row':row,'reason':'RPH belum tersedia'}
+    # Match v25.283 FREE semantics: reserve/gate before generation, consume only after success.
+    if not _credit_gate(cid,ss):
+        return {'ok':False,'entry':e,'row':row,'reason':'had FREE/VIP'}
+    path=None
+    try:
+        txt=_inject_worksheet_differentiation_into_rph(_local_rph_text(dict(ss,task='rph')))
+        if not txt: raise RuntimeError('RPH unavailable')
+        path=create_pdf_file(dict(ss,task='rph'),txt,str(cid)+'_calendar_rph_'+secrets.token_hex(4))
+        result=send_document(cid,path,'📘 RPH CikguLaju')
+        if not _telegram_delivery_ok_v25279(result):
+            raise RuntimeError('Telegram delivery failed')
+        _consume_free_after_success_v25282(cid,'successful_calendar_rph_generation')
+        return {'ok':True,'entry':e,'row':row,'reason':'success'}
+    except Exception as ex:
+        ss.pop('_free_generation_pending_v25282',None)
+        try:
+            _manual_or_quick_failure_v25275(cid,e.get('class_name'),e.get('subject'),
+                _checkpoint_from_state_v25277(ss),error_text=str(ex)[:900])
+        except Exception: pass
+        return {'ok':False,'entry':e,'row':row,'reason':str(ex)[:180]}
+    finally:
+        if path:
+            try:
+                if os.path.exists(path): os.remove(path)
+            except Exception: pass
+
+def _generate_daily_suggestions_v25292(cid):
+    ss=state.setdefault(cid,{})
+    suggestions=list(ss.get('_daily_suggestions_v25292') or [])
+    if not suggestions: return _today_rpt_suggestions_v25292(cid)
+    results=[]
+    for item in suggestions:
+        e=dict(item['entry']); row=dict(item['row']); source=str(item.get('source') or '')
+        try:
+            if source=='checkpoint':
+                results.append(_generate_one_quick_rph_v25278(cid,e))
+            else:
+                results.append(_generate_calendar_row_v25293(cid,e,row))
+        except Exception as ex:
+            results.append({'ok':False,'entry':e,'row':row,'reason':str(ex)[:180]})
+    good=[x for x in results if x.get('ok')]; bad=[x for x in results if not x.get('ok')]
+    lines=['✨ <b>RPH SEHARI SIAP</b>','',f'✅ Berjaya: <b>{len(good)}</b> / {len(results)}']
+    for r in good:
+        e=r.get('entry') or {}; row=r.get('row') or {}
+        lines.append('✓ '+html.escape(f"{e.get('subject','')} • {e.get('class_name','')} • {_next_curriculum_summary_v25276(row)}"))
+    if bad:
+        lines += ['',f'⚠️ Belum berjaya: <b>{len(bad)}</b>']
+        for r in bad:
+            e=r.get('entry') or {}
+            lines.append('• '+html.escape(f"{e.get('subject','')} • {e.get('class_name','')} — {r.get('reason','gagal')}"))
+    lines += ['','Progress hanya bergerak selepas RPH berjaya dihantar.']
+    return send(cid,'\n'.join(lines),
+                [[{'text':'⚡ RPH Hari Ini','callback_data':'todayrph272'}],
+                 [{'text':'📚 Pilih Manual','callback_data':'quick'},{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+APP_VERSION='v25.293-ALL-SUBJECTS-DAILY-RPH'
+CIKGULAJU_PATCH_V25293='ALL_SUBJECTS_VERIFIED_RPT_SOW_CALENDAR_BOOTSTRAP_CHECKPOINT_PRIORITY'
+# ===== END v25.293 =====
