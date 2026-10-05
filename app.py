@@ -37270,3 +37270,42 @@ def callback(cid,d):
 
 CIKGULAJU_PATCH_V25265='ENGLISH_Y5Y6_UNIT_LESSON_FLOW_LOCK'
 # ===== END v25.265 =====
+
+
+# ===== v25.266 MAIN MENU VALUE + CONTINUOUS UPDATE + VIP INFO =====
+# Presentation-only override. Existing menu actions and beta access remain unchanged.
+APP_VERSION='v25.266-MAIN-MENU-VALUE-VIP-INFO'
+
+_menu_before_v25266=menu
+def menu(cid, show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    kb=[[{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
+        [{'text':'📚 GUNA BAHAN CIKGU','callback_data':'material'}],
+        [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'},
+         {'text':'💛 SUMBANGAN BETA','callback_data':'donate'}],
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'},
+         {'text':'ℹ️ TENTANG','callback_data':'about_beta'}]]
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    return send(cid,
+         "🚀 <b>CIKGULAJU AI</b>\n"
+         "<i>Pembantu pintar untuk mudahkan persediaan PdP guru.</i>\n\n"
+         "🧪 <b>PUBLIC BETA</b> — akses <b>TANPA HAD hingga 14 Oktober 2026</b>.\n\n"
+         "✨ <b>Kenapa CikguLaju?</b>\n"
+         "📚 Disusun mengikut <b>RPT/SOW & kurikulum sebenar</b>\n"
+         "🎯 <b>SK & SP dipadankan automatik</b> mengikut Lesson/PdP\n"
+         "📝 Jana <b>RPH dengan cepat</b> mengikut pembelajaran yang dipilih\n"
+         "📖 Akses bahan berkaitan <b>buku teks & buku aktiviti</b> apabila tersedia\n"
+         "🎧 Bahan sokongan seperti <b>audio, literature & sumber pembelajaran</b> untuk Lesson berkaitan\n"
+         "⏱️ Kurangkan masa mencari, menyusun dan menyediakan bahan PdP\n\n"
+         "🔄 <b>Sentiasa Dikemas Kini</b>\n"
+         "Pemetaan kurikulum, bahan dan fungsi CikguLaju akan terus ditambah baik dari semasa ke semasa.\n\n"
+         "⭐ <b>Status VIP</b>\n"
+         "💛 Penyumbang pembangunan CikguLaju boleh menerima <b>status VIP</b> mengikut program yang ditetapkan.\n"
+         "👥 Program referral dengan <b>VIP sementara</b> akan diperkenalkan untuk cikgu yang membantu memperkenalkan CikguLaju kepada rakan guru.\n\n"
+         "💬 Jumpa masalah atau ada idea? Hantar melalui <b>Komen & Cadangan</b>.\n\n"
+         "<b>Pilih menu di bawah untuk mula 👇</b>", kb)
+
+CIKGULAJU_PATCH_V25266='MAIN_MENU_VALUE_CONTINUOUS_UPDATE_VIP_INFO'
+# ===== END v25.266 =====
