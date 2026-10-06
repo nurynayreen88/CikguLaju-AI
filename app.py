@@ -43300,3 +43300,85 @@ def callback(cid,d):
 
 CIKGULAJU_PATCH_V2629='PI_WEEK_SCREEN_REMOVED_UNIT_THEN_ALL_PDP_WEEK_SHOWN_ON_PDP'
 # ===== END v26.29 =====
+
+
+# ===== v26.30 PI ACTIVITY FORMAT-ONLY NORMALIZER =====
+# IMPORTANT: presentation-only patch.
+# It does NOT regenerate/rewrite the refined PI activity content.
+# It only separates existing Activity 1–4 blocks and renumbers the existing
+# internal steps from 1 for each activity.
+APP_VERSION='v26.30-PI-ACTIVITY-FORMAT-ONLY'
+
+_PI2630_HEAD_RE=re.compile(
+    r'^\s*(?:Aktiviti|اکتيۏيتي)\s*([١٢٣٤1-4])(?:\s*[-–—:]\s*(.*?))?\s*$',
+    re.I
+)
+_PI2630_STEP_RE=re.compile(r'^\s*(?:\d+|[١٢٣٤٥٦٧٨٩٠]+)[\.\)\-]\s*(.+?)\s*$')
+
+def _pi2630_is_head(line):
+    return _PI2630_HEAD_RE.match(str(line or '').strip())
+
+def _pi2630_split_inline_heads(lines):
+    """Split only explicit embedded Activity 1–4 labels; preserve all other words."""
+    out=[]
+    # Embedded labels seen in legacy PI prose are structural artifacts.
+    rx=re.compile(r'(?=(?:Aktiviti|اکتيۏيتي)\s*[١٢٣٤1-4]\s*[-–—:])',re.I)
+    for line in lines:
+        s=str(line or '')
+        if not s.strip():
+            out.append(s); continue
+        parts=[p.strip() for p in rx.split(s) if p.strip()]
+        out.extend(parts or [s])
+    return out
+
+def _pi2630_format_activity_block(block):
+    raw=_pi2630_split_inline_heads(str(block or '').splitlines())
+    groups=[]; current=None
+    for line in raw:
+        s=str(line or '').strip()
+        if not s: continue
+        hm=_pi2630_is_head(s)
+        if hm:
+            if current: groups.append(current)
+            current={'no':hm.group(1),'title':(hm.group(2) or '').strip(),'body':[]}
+            continue
+        # If no explicit heading yet, preserve line in a neutral first group.
+        if current is None:
+            current={'no':'1','title':'','body':[]}
+        current['body'].append(s)
+    if current: groups.append(current)
+    if not groups: return str(block or '')
+
+    rendered=[]
+    for g in groups:
+        title=g['title']
+        head=f"اکتيۏيتي {g['no']}"
+        if title: head+=f" - {title}"
+        rendered.append(head)
+
+        # Preserve sentences/steps; only remove their old numbering.
+        steps=[]
+        for bodyline in g['body']:
+            m=_PI2630_STEP_RE.match(bodyline)
+            steps.append((m.group(1) if m else bodyline).strip())
+        # Do not synthesize or paraphrase content.
+        for i,step in enumerate([x for x in steps if x],1):
+            rendered.append(f"{i}. {step}")
+    return '\n'.join(rendered)
+
+def _pi2630_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    for key in ('AKTIVITI UTAMA','activities'):
+        if r.get(key):
+            before=str(r[key])
+            r[key]=_pi2630_format_activity_block(before)
+            if isinstance(s,dict):
+                s['_pi2630_format_only']=True
+    return r
+
+_pi_rph_rows_before_v2630=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2630_apply(s,_pi_rph_rows_before_v2630(s,ai_text))
+
+CIKGULAJU_PATCH_V2630='PI_ACTIVITY_PRESENTATION_ONLY_KEEP_REFINED_CONTENT'
+# ===== END v26.30 =====
