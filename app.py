@@ -43609,3 +43609,72 @@ def callback(cid,d):
 
 CIKGULAJU_PATCH_V2633='PI_RESTORE_DIRECT_PDP_LIST_SORTED_BY_SEQUENCE'
 # ===== END v26.33 =====
+
+
+# ===== v26.34 PI ACTIVITY 4-BLOCK STRUCTURE =====
+# Presentation-only: when legacy PI runtime arrives as ONE Activity heading with
+# many numbered steps, redistribute those EXISTING steps into 4 readable blocks.
+# No step is rewritten, paraphrased, deleted, or newly generated.
+APP_VERSION='v26.34-PI-ACTIVITY-4-BLOCKS'
+
+def _pi2634_existing_steps(block):
+    s=str(block or '').strip()
+    if not s: return [], ''
+    # Preserve existing first heading/title if present.
+    hm=re.search(r'(?:Aktiviti|اکتيۏيتي)\s*[١1](?:\s*[-–—:]\s*([^\n]*))?',s,re.I)
+    title=(hm.group(1) or '').strip() if hm else ''
+    if hm: s=s[hm.end():].strip()
+
+    # Split only on existing numbered steps.
+    parts=re.split(r'(?=(?<!\d)[١٢٣٤٥٦٧٨٩٠1-9]+[\.\)]\s*)',s)
+    steps=[]
+    for p in parts:
+        p=p.strip()
+        if not p: continue
+        p=re.sub(r'^[١٢٣٤٥٦٧٨٩٠1-9]+[\.\)]\s*','',p).strip()
+        if p: steps.append(p)
+    return steps,title
+
+def _pi2634_partition(n):
+    # Balanced contiguous partition; preserves exact original order.
+    # 7 steps -> 2,2,2,1 (the current observed runtime case).
+    if n<=0: return []
+    k=min(4,n)
+    q,r=divmod(n,k)
+    sizes=[q+(1 if i<r else 0) for i in range(k)]
+    return sizes
+
+def _pi2634_format(block):
+    # If already contains 2+ explicit Activity headings, leave v26.32 structure alone.
+    heads=re.findall(r'(?:Aktiviti|اکتيۏيتي)\s*[١٢٣٤1-4]',str(block or ''),re.I)
+    if len(heads)>=2: return block
+
+    steps,title=_pi2634_existing_steps(block)
+    if len(steps)<4: return block
+
+    sizes=_pi2634_partition(len(steps))
+    rendered=[]; pos=0
+    for ai,size in enumerate(sizes,1):
+        # Keep existing Activity 1 title only; do not invent titles for 2–4.
+        head=f"اکتيۏيتي {ai}"
+        if ai==1 and title: head+=f" - {title}"
+        rendered.append(head)
+        chunk=steps[pos:pos+size]; pos+=size
+        for j,step in enumerate(chunk,1):
+            rendered.append(f"{j}. {step}")
+    return '\n'.join(rendered)
+
+def _pi2634_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    for key in ('AKTIVITI UTAMA','activities'):
+        if r.get(key):
+            r[key]=_pi2634_format(r[key])
+    if isinstance(s,dict): s['_pi2634_four_block_format']=True
+    return r
+
+_pi_rph_rows_before_v2634=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2634_apply(s,_pi_rph_rows_before_v2634(s,ai_text))
+
+CIKGULAJU_PATCH_V2634='PI_EXISTING_STEPS_SPLIT_INTO_4_ACTIVITY_BLOCKS_NO_CONTENT_REWRITE'
+# ===== END v26.34 =====
