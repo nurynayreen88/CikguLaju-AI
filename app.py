@@ -43491,3 +43491,121 @@ def callback(cid,d):
 
 CIKGULAJU_PATCH_V2631='PI_UNIT_MENU_POPULATE_AND_LITERAL_BACKSLASH_FIX'
 # ===== END v26.31 =====
+
+# ===== v26.32 PI FINAL FORMATTER FIX =====
+APP_VERSION='v26.32-PI-FINAL-FORMATTER-FIX'
+_PI2632_RUMI_ASSESSMENT_RE=re.compile(
+ r'Pentaksiran individu melalui penerangan isi utama dan aplikasi pada satu contoh/situasi\.?\s*'
+ r'Guru membuat semakan lisan atau bertulis ringkas(?: berdasarkan objektif PdP)?\.?\s*'
+ r'(?:Murid turut membuat semakan kendiri atau justifikasi ringkas\.?)?',re.I)
+_PI2632_JAWI_ASSESSMENT=('ڤنتکسيرن اينديۏيدو ملالوي ڤنرڠن ايسي اوتام دان اڤليکاسي ڤد ساتو چونتوه اتاو سيتواسي. '
+                         'ݢورو ممبوات سماکن ليسن اتاو برتوليس ريڠکس برداسرکن اوبجيکتيف ڤدڤ.')
+
+def _pi2632_fix_assessment_text(v):
+    s=str(v or '').strip()
+    return _PI2632_RUMI_ASSESSMENT_RE.sub(_PI2632_JAWI_ASSESSMENT,s).strip() if s else s
+
+def _pi2632_extract_activity_groups(block):
+    s=str(block or '').strip()
+    if not s: return []
+    pat=re.compile(r'(?:Aktiviti|اکتيۏيتي)\s*([١٢٣٤1-4])(?:\s*[-–—:]\s*([^\n]*))?',re.I)
+    ms=list(pat.finditer(s))
+    if not ms: return []
+    out=[]
+    for j,m in enumerate(ms):
+        end=ms[j+1].start() if j+1<len(ms) else len(s)
+        out.append([m.group(1),(m.group(2) or '').strip(),s[m.end():end].strip(' \n:;-–—')])
+    return out
+
+def _pi2632_steps(body):
+    b=str(body or '').strip()
+    if not b: return []
+    b=re.sub(r'(?<!\d)([1-9])\.\s+',r'\n\1. ',b)
+    out=[]
+    for x in [z.strip() for z in b.splitlines() if z.strip()]:
+        x=re.sub(r'^\s*[١٢٣٤٥٦٧٨٩٠1-9]+[\.\)\-]\s*','',x).strip()
+        if x: out.append(x)
+    return out
+
+def _pi2632_format_activities(block):
+    groups=_pi2632_extract_activity_groups(block)
+    if not groups: return str(block or '')
+    rendered=[]
+    for no,title,body in groups:
+        head=f"اکتيۏيتي {no}"+(f" - {title}" if title else "")
+        rendered.append(head)
+        for i,step in enumerate(_pi2632_steps(body),1):
+            rendered.append(f"{i}. {step}")
+    return '\n'.join(rendered)
+
+def _pi2632_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    for key,val in list(r.items()):
+        kl=str(key).casefold()
+        if 'pentaksir' in kl or 'assessment' in kl or 'ڤنتکسير' in str(key):
+            r[key]=_pi2632_fix_assessment_text(val)
+    for key in ('AKTIVITI UTAMA','activities'):
+        if r.get(key): r[key]=_pi2632_format_activities(r[key])
+    if isinstance(s,dict): s['_pi2632_final_formatter_fix']=True
+    return r
+
+_pi_rph_rows_before_v2632=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2632_apply(s,_pi_rph_rows_before_v2632(s,ai_text))
+
+CIKGULAJU_PATCH_V2632='PI_FINAL_FORMATTER_JAWI_ASSESSMENT_AND_ACTIVITY_BLOCKS'
+# ===== END v26.32 =====
+
+
+# ===== v26.33 PI ORIGINAL PDP FLOW RESTORE =====
+# Restore PI selection to the original direct PdP list.
+# No Week screen and no Unit screen.
+# PdP rows are displayed in their original sequence_no order.
+# Week remains informational on each PdP button when available.
+APP_VERSION='v26.33-PI-ORIGINAL-PDP-FLOW'
+
+def _pi2633_pdp_sort_key(item):
+    i,r=item
+    try: return (0,int(r.get('sequence_no')),i)
+    except Exception: return (1,str(r.get('sequence_no') or ''),i)
+
+def _pi_pdp_menu_v2633(cid,page=0):
+    ss=state.setdefault(cid,{})
+    rows=_pi_pdp_rows_v25210(ss.get('year',''))
+    indexed=sorted(list(enumerate(rows)),key=_pi2633_pdp_sort_key)
+    ss['_pi_pdp_rows_v25210']=rows
+    page=max(0,int(page)); per=18; start=page*per
+    kb=[]
+    for original_i,r in indexed[start:start+per]:
+        seq=r.get('sequence_no')
+        wk=_pi2629_week_label(r) if '_pi2629_week_label' in globals() else ''
+        focus=str(r.get('skill_focus') or r.get('topic') or '').strip()
+        label=f"PdP {seq}"
+        if wk: label+=f" • {wk}"
+        if focus: label+=f" • {focus}"
+        kb.append([{'text':label[:64],'callback_data':f'pipdp210|{original_i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️','callback_data':f'pipage2633|{page-1}'})
+    if start+per<len(indexed): nav.append({'text':'➡️','callback_data':f'pipage2633|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+        "Pilih <b>PdP</b>.",kb)
+
+_callback_before_v2633=callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds=='sub_Pendidikan Islam' and str(ss.get('year') or '') in tuple('Tahun '+str(i) for i in range(1,7)):
+        ss['subject']='Pendidikan Islam'; ss['task']='quick_material'; ss['quick_material_flow']=True
+        return _pi_pdp_menu_v2633(cid,0)
+    if ds.startswith('pipage2633|'):
+        try: pg=int(ds.split('|',1)[1])
+        except Exception: pg=0
+        return _pi_pdp_menu_v2633(cid,pg)
+    return _callback_before_v2633(cid,d)
+
+CIKGULAJU_PATCH_V2633='PI_RESTORE_DIRECT_PDP_LIST_SORTED_BY_SEQUENCE'
+# ===== END v26.33 =====
