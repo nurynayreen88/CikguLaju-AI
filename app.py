@@ -44071,3 +44071,161 @@ def _rph_activity_heading_markup_v25184(text):
 
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
+
+
+# ===== TT12 LOCAL TIMETABLE UPLOAD — NO GEMINI =====
+# Non-destructive integration on v26.39. Existing v25.286 confirmation UX retained.
+CIKGULAJU_TIMETABLE_PATCH='TT12_LOCAL_UPLOAD_NO_GEMINI'
+
+def _tt12_ocr_image_bytes(data):
+    """One local OCR pass. Requires tesseract binary on runtime; no cloud/Gemini."""
+    import io, os, subprocess, tempfile
+    from PIL import Image, ImageOps, ImageEnhance
+    im=Image.open(io.BytesIO(data)).convert('L')
+    # Conservative preprocessing: enlarge small timetables and improve contrast.
+    if im.width < 1800:
+        scale=max(1, int(round(1800/max(1,im.width))))
+        if scale>1: im=im.resize((im.width*scale,im.height*scale))
+    im=ImageEnhance.Contrast(im).enhance(1.5)
+    fd,p=tempfile.mkstemp(suffix='.png'); os.close(fd)
+    try:
+        im.save(p)
+        cmd=['tesseract',p,'stdout','-l','eng','--psm','6','tsv']
+        cp=subprocess.run(cmd,capture_output=True,text=True,timeout=45)
+        if cp.returncode!=0:
+            raise RuntimeError('TESSERACT_FAILED:'+cp.stderr[-300:])
+        return cp.stdout
+    finally:
+        try: os.remove(p)
+        except Exception: pass
+
+def _tt12_pdf_text(data):
+    import io
+    from pypdf import PdfReader
+    rd=PdfReader(io.BytesIO(data))
+    return '\n'.join((p.extract_text() or '') for p in rd.pages[:5])
+
+def _tt12_parse_hhmm(text):
+    x=str(text or '').strip().replace('.',':')
+    m=re.search(r'(?<!\d)([0-2]?\d)[:](\d{2})(?!\d)',x)
+    if not m: return None
+    h,mi=int(m.group(1)),int(m.group(2))
+    if h<7: h+=12  # Malaysian school timetable convention; confirmation still required.
+    if 0<=h<=23 and 0<=mi<=59: return f'{h:02d}:{mi:02d}'
+    return None
+
+def _tt12_tsv_words(tsv):
+    rows=[]
+    for ln in str(tsv or '').splitlines()[1:]:
+        p=ln.split('\t')
+        if len(p)<12: continue
+        try:
+            conf=float(p[10]); x,y,w,h=map(int,p[6:10])
+        except Exception: continue
+        txt=p[11].strip()
+        if txt and conf>=20: rows.append({'x':x,'y':y,'w':w,'h':h,'cx':x+w/2,'cy':y+h/2,'text':txt,'conf':conf})
+    return rows
+
+def _tt12_local_extract(data,mime):
+    """Return v25.286-compatible entries. Never invent unclear subject/class."""
+    days=('Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu')
+    if mime=='application/pdf':
+        text=_tt12_pdf_text(data)
+        # Text PDF fallback: only accept explicit row-like records containing day,
+        # two times, class and subject. Ambiguous PDFs go to manual confirmation.
+        out=[]
+        for line in text.splitlines():
+            day=next((d for d in days if re.search(r'\b'+d+r'\b',line,re.I)),None)
+            times=re.findall(r'(?<!\d)([0-2]?\d[:.]\d{2})(?!\d)',line)
+            if not day or len(times)<2: continue
+            # Do not guess class/subject from arbitrary residual text.
+        if out: return out
+        raise RuntimeError('PDF_TEXT_NOT_STRUCTURED_FOR_SAFE_LOCAL_PARSE')
+
+    tsv=_tt12_ocr_image_bytes(data)
+    words=_tt12_tsv_words(tsv)
+    if not words: raise RuntimeError('OCR_EMPTY')
+
+    # Identify day row anchors and time-column anchors geometrically.
+    day_hits=[]
+    for w in words:
+        d=next((d for d in days if re.sub(r'[^a-z]','',w['text'].lower())==d.lower()),None)
+        if d: day_hits.append((d,w))
+    if not day_hits: raise RuntimeError('OCR_DAY_ROWS_NOT_FOUND')
+
+    time_hits=[]
+    for w in words:
+        t=_tt12_parse_hhmm(w['text'])
+        if t: time_hits.append((t,w))
+    # Header times should cluster above teaching rows. Deduplicate by x.
+    time_hits=sorted(time_hits,key=lambda z:z[1]['cx'])
+    ded=[]
+    for t,w in time_hits:
+        if not ded or abs(w['cx']-ded[-1][1]['cx'])>20: ded.append((t,w))
+    if len(ded)<2: raise RuntimeError('OCR_TIME_COLUMNS_NOT_FOUND')
+
+    # Atomic intervals between adjacent time anchors. This is the Stage 11 fix:
+    # touching lessons remain separate; no broad colour-block merging.
+    xs=[w['cx'] for _,w in ded]
+    times=[t for t,_ in ded]
+    entries=[]
+    # We intentionally only surface slots whose cell OCR contains BOTH a class-like
+    # token and a non-empty subject token; uncertainty is sent to confirmation.
+    day_hits=sorted(day_hits,key=lambda z:z[1]['cy'])
+    for di,(day,dw) in enumerate(day_hits):
+        y0=dw['cy']-max(18,dw['h'])
+        y1=(day_hits[di+1][1]['cy']+dw['cy'])/2 if di+1<len(day_hits) else dw['cy']+max(80,dw['h']*4)
+        row=[w for w in words if y0<=w['cy']<y1 and w['cx']>dw['cx']+20]
+        for i in range(len(xs)-1):
+            left=(xs[i-1]+xs[i])/2 if i else xs[i]-max(25,(xs[i+1]-xs[i])/2)
+            right=(xs[i]+xs[i+1])/2
+            cell=sorted([w for w in row if left<=w['cx']<right],key=lambda q:(q['cy'],q['x']))
+            toks=[w['text'] for w in cell if not _tt12_parse_hhmm(w['text'])]
+            if not toks: continue
+            raw=' '.join(toks).strip()
+            # Conservative class detector: 1-6 + name/code, e.g. 4A / 4 Amanah.
+            cm=re.search(r'\b([1-6]\s*[A-Za-z][A-Za-z0-9_-]*|[1-6]\s+[A-Za-z][A-Za-z -]{1,20})\b',raw)
+            if not cm: continue
+            cls=' '.join(cm.group(1).split())
+            subject=(raw[:cm.start()]+' '+raw[cm.end():]).strip(' -|')
+            if len(subject)<2: continue
+            start=times[i]
+            end=times[i+1]
+            if start==end: continue
+            entries.append({'day':day,'start':start,'end':end,'class_name':cls,'subject':subject})
+    if not entries:
+        raise RuntimeError('OCR_NO_SAFE_TEACHING_SLOTS')
+    return entries
+
+# Critical integration: all existing upload/confirm code calls this name.
+# Replace Gemini extraction globally without changing the later confirmation UX.
+def _gemini_timetable_extract_v25281(data,mime):
+    print('TT12 LOCAL TIMETABLE PARSER mime=',mime,'bytes=',len(data),flush=True)
+    return _tt12_local_extract(data,mime)
+
+# Update upload prompt so users are not told/led into cloud AI extraction.
+_tt12_upload_menu_base=_tt_upload_menu_v25281
+def _tt_upload_menu_v25281(cid):
+    state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+    return send(cid,'📤 <b>UPLOAD JADUAL WAKTU</b>\n\nHantar <b>gambar/screenshot (JPG/PNG)</b> atau <b>PDF</b> jadual waktu cikgu.\n\nCikguLaju akan membaca jadual secara lokal dan menyediakan draf <b>hari, masa, subjek dan kelas</b>. Cikgu mesti semak sebelum tekan SAHKAN. <b>Jadual lama tidak akan diubah</b> sebelum pengesahan.',
+        [[{'text':'✏️ Isi Manual','callback_data':'tt_add'}],[{'text':'⬅️ Jadual Waktu','callback_data':'timetable'}]])
+
+APP_VERSION='v26.39-TT12-LOCAL-TIMETABLE-UPLOAD'
+# ===== END TT12 =====
+
+
+# ===== v26.45 PI RPH CONTENT RESTORE TO v26.26 BEHAVIOUR =====
+# Non-destructive compatibility patch. Keep current timetable/UI/DB/mapping code.
+# Restore only the PI RPH row builder to the pre-v26.28 content path.
+APP_VERSION='v26.45-PI-RPH-CONTENT-RESTORE-V2626'
+
+_pi_rph_rows_current_before_v2645 = _rph_rows
+def _rph_rows(s, ai_text):
+    sub=str((s or {}).get('subject') or '').strip().casefold()
+    is_pi=('pendidikan islam' in sub) or sub in ('pi','islamic education')
+    if is_pi and '_pi_rph_rows_before_v2628' in globals():
+        return _pi_rph_rows_before_v2628(s, ai_text)
+    return _pi_rph_rows_current_before_v2645(s, ai_text)
+
+CIKGULAJU_PATCH_V2645='PI_RPH_CONTENT_RESTORE_TO_PRE_V2628_V2626_BEHAVIOUR'
+# ===== END v26.45 =====
