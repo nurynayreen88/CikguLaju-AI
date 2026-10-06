@@ -40692,3 +40692,1576 @@ if '_safe_para' in globals():
 APP_VERSION='v26.03-PM-ACTIVITY-HEADING-BOLD'
 CIKGULAJU_PATCH_V2603='PM_RPH_ACTIVITY_1_4_BOLD_FORMAT_LOCK'
 # ===== END v26.03 =====
+
+# ===== v26.08 PI LARGE-BATCH RPH QUALITY ENGINE =====
+# Scope lock: Pendidikan Islam Tahun 1-6 RPH content quality only.
+# Preserve verified RPT/SK/SP wording, Jawi/RTL rendering, menus, DB, BBM/Worksheet state,
+# and every non-PI subject. The verified RPT activity_note remains the lesson anchor.
+APP_VERSION='v26.08-PI-LARGE-BATCH-RPH-QUALITY'
+
+_pi_rph_rows_before_v2608 = _rph_rows
+
+def _pi2608_clean(v):
+    return ' '.join(str(v or '').split()).strip()
+
+def _pi2608_level(s):
+    import re as _re
+    m=_re.search(r'(\d+)',str((s or {}).get('year') or ''))
+    try: return max(1,min(6,int(m.group(1))))
+    except Exception: return 1
+
+def _pi2608_field(s,src):
+    """Pedagogy classification only; never changes curriculum labels/SK/SP."""
+    raw=' '.join(str(x or '') for x in (
+        src.get('unit_title'),src.get('topic'),src.get('subtopic'),src.get('skill_focus'),
+        s.get('topic'),s.get('subtopic'),s.get('sk_text'),s.get('sp_text'),
+        ' '.join(s.get('grouped_sk_texts') or []),' '.join(s.get('grouped_sp_texts') or [])
+    )).casefold()
+    banks=(
+      ('quran',('al-quran','al quran','quran','قرآن','القرآن','تلاوة','تلاوه','حفظ','تسميع','تجويد','تجويد')),
+      ('hadis',('hadis','حديث','حدیث')),
+      ('akidah',('akidah','aqidah','عقيدة','عقيده','ايمان','إيمان')),
+      ('ibadah',('ibadah','عبادة','عباده','wuduk','wudhu','وضوء','solat','صلاة','صلاه','tayamum','تيمم','puasa','صوم','zakat','زكاة')),
+      ('sirah',('sirah','سيرة','سيره','rasul','رسول','nabi','نبي','hijrah','هجرة','هجرت')),
+      ('adab',('adab','اخلاق','أخلاق','ادب','أدب','akhlak','آداب')),
+      ('jawi',('jawi','جاوي','khat','خط','imlak','املاء','إملاء','ejaan','ايجاءن')),
+    )
+    for key,words in banks:
+        if any(w in raw for w in words): return key
+    return 'umum'
+
+def _pi2608_anchor(src,s):
+    return _pi2608_clean(src.get('activity_note') or s.get('rpt_activity_note'))
+
+def _pi2608_assess_anchor(src,s):
+    return _pi2608_clean(src.get('assessment_note') or s.get('rpt_assessment_note'))
+
+def _pi2608_build(s,src):
+    lvl=_pi2608_level(s); field=_pi2608_field(s,src); anchor=_pi2608_anchor(src,s)
+    focus=_pi2608_clean(src.get('skill_focus') or src.get('topic') or s.get('topic') or 'فوکس ڤدڤ')
+    # Source content is quoted as the verified task anchor; the surrounding steps are pedagogy only.
+    srcstep=('ݢورو ممبيمبيڠ موريد مڽلسايکن توݢسن RPT يڠ دصحکن: '+anchor) if anchor else ('ݢورو ممبيمبيڠ موريد مڠواساءي فوکس ڤدڤ: '+focus)
+    upper=lvl>=5
+    mid=lvl>=3
+    bank={
+      'quran':[
+        'ݢورو ممڤردڠرکن اتاو منونجوقکن چونتوه باچاءن يڠ بتول برداسرکن فوکس ڤدڤ. موريد مڠنل ڤستي سبوتن، حرکة، مخارج اتاو حکوم تجويد يڠ برکاءيتن سبلوم منيرو باچاءن.',
+        srcstep+' سچارا تلاقي دان مشافهة؛ موريد منيرو سچارا برکومڤولن، برڤاسڠن دان کمدين افرادي دڠن ڤمبتولن سرتا-مرتا.',
+        ('موريد ممباچ، مڠحفظ اتاو مڠاڤليکاسيکن حکوم باچاءن ڤد ڤتيکن يڠ دتتڤکن، کمدين منجلسکن سبب ڤمبتولن باچاءن کڤد راکن.' if upper else 'موريد مڠولڠ باچاءن ڤتيکن سچارا برڤاسڠن؛ راکن مڽمق مڠيکوت چونتوه دان ممبري ايشارت ڤمبتولن دڠن بيمبيڠن ݢورو.'),
+        'ݢورو منجالنکن تسميع افرادي. موريد ممباچ اتاو ممڤردڠرکن حفظن سچارا افرادي دان ݢورو مريکود کتيڤتن باچاءن، کلنچرن سرتا ڤڠواساءن فوکس يڠ دأجر.'
+      ],
+      'ibadah':[
+        'ݢورو ممڤرکنلکن ساتو سيتواسي هارين يڠ برکاءيتن دڠن عبادة يڠ دڤلاجرى. موريد مڠنل ڤستي تيندقن يڠ بتول دان مڠايتکنڽ دڠن فوکس ڤدڤ.',
+        srcstep+' ݢورو منونجوقکن اوروتن، شرط، رکن اتاو چارا عملن يڠ برکاءيتن؛ موريد مڽوسون دان منرڠکن سمولا لڠکه دڠن ترتيڤ.',
+        ('موريد ملقساناکن املي عبادة دالم کومڤولن کچيل، کمدين منilai کتيڤتن اوروتن دان ممبري جستيفيکاسي باݢي ڤمبتولن يڠ دبوأت.' if upper else 'موريد ملقساناکن املي سچارا برڤاسڠن مڠيکوت اوروتن؛ راکن مڽمق مڠݢوناکن سناراي سماق موده.'),
+        'موريد ملقساناکن املي اتاو ديمونستراسي افرادي. ݢورو منilai کتيڤتن اوروتن، ڤرلاکوأن دان کبولهن موريد منرڠکن عملن يڠ دلقساناکن.'
+      ],
+      'jawi':[
+        'ݢورو ممڤامرکن چونتوه حرف، سوکو کات، ڤرکاتاءن اتاو ايات جاوي برکاءيتن. موريد مڠنل ڤستي بنتوق حرف، سامبوڠن دان ڤولا ايجاءن يڠ منجادي فوکس.',
+        srcstep+' موريد ممباچ دان ممبينا ڤرکاتاءن اتاو ايات درڤد چونتوه، کمدين ممبنديڠکن بنتوق توليسن دڠن موديل ݢورو.',
+        ('موريد منوليس ايات اتاو ڤتيکن مليبتيکن ڤولا ايجاءن يڠ دڤلاجرى، کمدين مڽونتيڠ دان منرڠکن ڤمبتولن ايجاءن.' if upper else 'موريد منوليس سمولا ڤرکاتاءن دان ملقساناکن املاق ڤنديق. موريد مڽمق سامبوڠن حرف دان ايجاءن برسام راکن.'),
+        'ݢورو منجالنکن املاق اتاو توليسن افرادي. ڤنتاکسيرن ممبري فوکوس کڤد کتيڤتن حرف، سامبوڠن، ايجاءن دان کبولهن ممباچ سمولا توليسن.'
+      ],
+      'sirah':[
+        'ݢورو ممڤرکنلکن توکوه، ڤريستيوا اتاو لاتار سيرة مليلوءي سوالن ڤنچتوس. موريد مڽاتاکن ڤڠتاهوان سديا ادا دان مڠنل ڤستي ڤرسوءالن اوتام ڤدڤ.',
+        srcstep+' موريد مڽوسون ڤريستيوا، مڠنل ڤستي توکوه دان منچات سبب سرتا کسن يڠ دسبوت دالم باهن ڤمبلاجرن.',
+        ('موريد ممبينچڠکن هوبوڠن سبب-عاقبة، مڠموقاکن بوقتي درڤد کاندوڠن ڤدڤ دان منجستيفيکاسي ڤڠاجرن يڠ بوليه دعملکن.' if upper else ('موريد مڠهاسيلکن ڬاريس ماس اتاو ڤتا اوروتن ڤريستيوا دان منچريتاکن سمولا دڠن بهاس سنديري.' if mid else 'موريد مڽوسون کد ڬمبر/ڤريستيوا مڠيکوت اوروتن دان منچريتاکن سمولا سچارا ليسن.')),
+        'موريد منجاوب سوالن ليسن اتاو برتوليس تنتڠ ڤريستيوا، ڤڠاجرن دان اڤليکاسي. ݢورو منilai کتيڤتن فکت، اوروتن دان کبولهن مڠايتکن ڤڠاجرن.'
+      ],
+      'hadis':[
+        'ݢورو ممڤردڠرکن اتاو ممڤامرکن حديث/مقصود يڠ برکاءيتن دڠن فوکس ڤدڤ. موريد مڠنل ڤستي کات کونچي دان ايدي اوتام دڠن بيمبيڠن.',
+        srcstep+' موريد ممباچ، مڠولڠ دان مڽاتاکن مقصود اتاو ڤڠاجرن اوتام دالم کومڤولن کچيل.',
+        ('موريد منilai سيتواسي کهيدوڤن، مميليه تيندقن يڠ سلاري دڠن ڤڠاجرن حديث دان ممبري جستيفيکاسي.' if upper else 'موريد ممادانکن سيتواسي هارين دڠن ڤڠاجرن حديث دان منرڠکن ساتو چونتوه عملن يڠ بوليه دعملکن.'),
+        'موريد مڽاتاکن سمولا مقصود/ڤڠاجرن دان ممبري چونتوه اڤليکاسي. ݢورو منilai کتيڤتن ڤمهامن دان کبولهن مڠايتکنڽ دڠن کهيدوڤن.'
+      ],
+      'akidah':[
+        'ݢورو ممڤرکنلکن سيتواسي، ڤرڽاتاءن اتاو بوقتي کچيل برکاءيتن دڠن عقيدة. موريد مڽاتاکن اڤا يڠ دڤهمي دان مڠنل ڤستي کونسيڤ اوتام.',
+        srcstep+' موريد مڠومڤولکن معلومت، ممادانکن کونسيڤ دڠن چونتوه دان منرڠکن مقصودڽ دڠن بهاس سنديري.',
+        ('موريد ممبنديڠکن ڤرڽاتاءن، ممبري دليل/السن يڠ برساسکن کاندوڠن ڤدڤ دان منجستيفيکاسي ڤنديرين يڠ بتول.' if upper else 'موريد مڠلسکن چونتوه کڤد کاتݢوري يڠ بتول دان منرڠکن کسن کڤرچاياءن ترهادڤ عملن هارين.'),
+        'ݢورو مڠݢوناکن سوالن ليسن/برتوليس دان سيتواسي ڤنديق اونتوق منilai ڤمهامن کونسيڤ، کتيڤتن السن دان هوبوڠن دڠن عملن.'
+      ],
+      'adab':[
+        'ݢورو ممڤرکنلکن سيتواسي هارين يڠ ممڤوڽاءي ڤيليهن تيندقن. موريد مڠنل ڤستي تيندقن برادب دان تيدق برادب سرتا ممبري السن.',
+        srcstep+' موريد ممبينچڠکن چارا عملن يڠ بتول، کمدين منونجوقکنڽ مليلوءي لاکونن اتاو سيمولاسي ڤنديق.',
+        ('موريد منilai سيتواسي يڠ لبيه منچابر، مميليه تيندقن دان منجستيفيکاسي ڤيليهن برداسرکن ادب يڠ دڤلاجرى.' if upper else 'موريد برڤاسڠن اونتوق ممادانکن سيتواسي دڠن تيندقن برادب، کمدين ممڤرکتيقکن اوچڤن اتاو ڤرلاکوأن يڠ سسواي.'),
+        'موريد مڽلسايکن ساتو سيتواسي افرادي دان مڽاتاکن تيندقن يڠ اکن دعملکن. ݢورو منilai کبولهن مميليه، منرڠکن دان مڠحياتي ادب.'
+      ],
+      'umum':[
+        'ݢورو ممڤرکنلکن فوکس ڤدڤ مليلوءي چونتوه، سوالن ڤنچتوس اتاو سيتواسي يڠ برکاءيتن. موريد مڽاتاکن ڤڠتاهوان سديا ادا.',
+        srcstep+' موريد مڠنل ڤستي ايدي/کماهيرن اوتام دان مڽلسايکن توݢسن دڠن بيمبيڠن ݢورو.',
+        ('موريد مڠاڤليکاسيکن ڤمبلاجرن دالم سيتواسي بهارو، ممبري السن دان منجستيفيکاسي جاواڤن.' if upper else 'موريد مڠاڤليکاسيکن ڤمبلاجرن مليلوءي اکتيۏيتي برڤاسڠن اتاو کومڤولن کچيل دان منرڠکن دڤتن.'),
+        'موريد مڽلسايکن توݢسن افرادي/سوالن کلوار. ݢورو منilai ڤڠواساءن برداسرکن فوکس ڤدڤ دان ممبري ماکلوم بالاس.'
+      ]
+    }
+    return field,bank[field]
+
+def _pi2608_apply(s,r):
+    if not _pi_primary_v25210(s): return r
+    src=s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+    field,acts=_pi2608_build(s,src)
+    out=dict(r or {})
+    titles={
+      'quran':('چونتوه باچاءن دان ڤڠچامن','تلاقي دان مشافهة','لاتيه توبي / تسميع برڤاسڠن','ڤنتاکسيرن افرادي'),
+      'ibadah':('سيتواسي دان ڤڠاکتيفن ڤڠتاهوان','تونجوق چارا دان اوروتن','املي عبادة','ڤنتاکسيرن املي'),
+      'jawi':('ڤڠچامن حرف / ايجاءن','باچاءن دان ڤمبيناءن','توليسن / املاق','سماکن ايجاءن'),
+      'sirah':('لاتار ڤريستيوا','ڤنروسورن معلومت','ڤڠاجرن دان ڤڠحياتن','ڤنتاکسيرن ڤمهامن'),
+      'hadis':('باچاءن / مقصود','ڤمهامن ڤڠاجرن','اڤليکاسي حديث','ڤنتاکسيرن'),
+      'akidah':('کونسيڤ دان ڤڠتاهوان سديا ادا','ڤنروکاءن مقصود','ڤناعرن دان اڤليکاسي','ڤنتاکسيرن ڤمهامن'),
+      'adab':('سيتواسي ادب','ڤرلاکوأن دان چونتوه','اڤليکاسي / سيمولاسي','ڤنتاکسيرن ڤڠحياتن'),
+      'umum':('ڤڠاکتيفن ڤڠتاهوان','ڤنروکاءن فوکس','اڤليکاسي','ڤنتاکسيرن')
+    }[field]
+    out['AKTIVITI UTAMA']='\n'.join(f'اکتيۏيتي {i+1} – {titles[i]}\n{acts[i]}' for i in range(4))
+    srcass=_pi2608_assess_anchor(src,s)
+    if srcass:
+        out['PENTAKSIRAN']=srcass+' ݢورو مريکود ڤڠواساءن موريد برداسرکن بوقتي درڤد اکتيۏيتي دان توݢسن افرادي.'
+    else:
+        out['PENTAKSIRAN']=acts[3]
+    # Higher years require explanation/justification; lower years retain guided demonstration.
+    lvl=_pi2608_level(s)
+    if lvl>=5:
+        out['KRITERIA KEJAYAAN']='موريد داڤت منونجوقکن ڤڠواساءن فوکوس ڤدڤ، منرڠکن دڠن تيڤت دان ممبري السن اتاو جستيفيکاسي باݢي جاواڤن / تيندقن يڠ دڤيليه.'
+    elif lvl>=3:
+        out['KRITERIA KEJAYAAN']='موريد داڤت مڽلسايکن توݢسن، منونجوقکن کماهيرن يڠ دڤلاجرى دان منرڠکن ڤمهامن دڠن بيمبيڠن مينيموم.'
+    else:
+        out['KRITERIA KEJAYAAN']='موريد داڤت منيرو، منونجوقکن اتاو مڽلسايکن توݢسن يڠ برکاءيتن دڠن فوکوس ڤدڤ سچارا بتول دڠن بيمبيڠن ݢورو.'
+    return out
+
+def _rph_rows(s,ai_text):
+    return _pi2608_apply(s,_pi_rph_rows_before_v2608(s,ai_text))
+
+CIKGULAJU_PATCH_V2608='PI_T1_T6_FIELD_SPECIFIC_4_ACTIVITY_QUALITY_ENGINE'
+# ===== END v26.08 =====
+
+# ===== v26.09 PI RPH VARIATION LAYER =====
+# Scope lock: Pendidikan Islam RPH only.
+# Purpose: reduce repetitive lesson feel without changing verified RPT/SK/SP,
+# DB, menus, Jawi/RTL rendering, BBM/Worksheet, or any non-PI subject.
+APP_VERSION='v26.09-PI-RPH-VARIATION'
+
+_pi_rph_rows_before_v2609 = _rph_rows
+
+def _pi2609_variant_key(s):
+    """Stable per-PdP variation. No randomness between repeated generation."""
+    import hashlib as _hashlib
+    src=(s or {}).get('_quick_selected_rpt_row_v2388') or (s or {}).get('quick_rpt_row') or {}
+    raw='|'.join(str(x or '') for x in (
+        (s or {}).get('year'), src.get('sequence_no'), src.get('unit_title'),
+        src.get('topic'), src.get('subtopic'), src.get('skill_focus'),
+        src.get('activity_note'), (s or {}).get('sk_code'), (s or {}).get('sp_code')
+    ))
+    return int(_hashlib.sha256(raw.encode('utf-8')).hexdigest()[:8],16) % 4
+
+def _pi2609_enrich_activity_text(text,variant,lvl,field):
+    """Add a compact, field-appropriate participation pattern; source task is untouched."""
+    t=str(text or '').strip()
+    # These are pedagogical execution cues only, not curriculum claims.
+    low=[
+      ' موريد مڽمق جاواڤن برسام راکن سبلوم ماکلوم بالاس ݢورو.',
+      ' موريد مڠݢوناکن کد/چونتوه اونتوق منونجوقکن جاواڤن دان منرڠکن ساتو سبب.',
+      ' موريد برتوقر ڤران دالم ڤاسڠن سوڤاي کدوا-دوا موريد ملقساناکن توݢسن.',
+      ' ݢورو مميليه ببراڤ موريد اونتوق منونجوقکن حاصل کرجا دان ممبتولکن ککليتوان برسام.'
+    ]
+    high=[
+      ' موريد مڽمق حاصل راکن برداسرکن کريتيريا يڠ دتتڤکن دان ممبري ساتو کادڠن ڤمبتولن.',
+      ' موريد ممبنديڠکن دوا جاواڤن/تيندقن دان منرڠکن سبب ڤيليهن يڠ لبيه تيڤت.',
+      ' موريد ممبري بوقتي درڤد کاندوڠن ڤدڤ اونتوق مڽوکونڠ جاواڤن اتاو تيندقن يڠ دڤيليه.',
+      ' موريد ممبوات ريفليکسي ڤنديق تنتڠ ککواتن جاواڤن دان ساتو ڤرکارا يڠ ڤرلو دڤرباءيکي.'
+    ]
+    cues=high if lvl>=5 else low
+    return t+cues[variant % len(cues)]
+
+def _pi2609_apply(s,r):
+    if not _pi_primary_v25210(s):
+        return r
+    out=dict(r or {})
+    block=str(out.get('AKTIVITI UTAMA') or '')
+    if not block:
+        return out
+    src=(s or {}).get('_quick_selected_rpt_row_v2388') or (s or {}).get('quick_rpt_row') or {}
+    field=_pi2608_field(s,src)
+    lvl=_pi2608_level(s)
+    variant=_pi2609_variant_key(s)
+    # Preserve the four v26.08 activities and headings. Enrich execution differently
+    # per PdP instead of replacing verified/source-specific content.
+    parts=[]
+    import re as _re
+    chunks=_re.split(r'(?=اکتيۏيتي\s+[١٢٣٤1234]\s*[–-])',block)
+    for chunk in chunks:
+        if not chunk.strip():
+            continue
+        lines=chunk.split('\n',1)
+        if len(lines)==2:
+            head,body=lines
+            # Shift cue by activity number so a single lesson also has varied interaction.
+            m=_re.search(r'اکتيۏيتي\s+([١٢٣٤1234])',head)
+            n=0
+            if m:
+                trans={'١':1,'٢':2,'٣':3,'٤':4,'1':1,'2':2,'3':3,'4':4}
+                n=trans.get(m.group(1),1)-1
+            body=_pi2609_enrich_activity_text(body,(variant+n)%4,lvl,field)
+            parts.append(head+'\n'+body)
+        else:
+            parts.append(chunk)
+    if parts:
+        out['AKTIVITI UTAMA']='\n'.join(parts)
+    return out
+
+def _rph_rows(s,ai_text):
+    return _pi2609_apply(s,_pi_rph_rows_before_v2609(s,ai_text))
+
+CIKGULAJU_PATCH_V2609='PI_RPH_STABLE_PDP_VARIATION_WITH_SOURCE_ANCHOR_LOCK'
+# ===== END v26.09 =====
+
+# ===== v26.10 PI RPH SKILL-SPECIFIC REFINEMENT =====
+# Scope lock: Pendidikan Islam RPH only. Refines pedagogy by the actual skill focus
+# inside each field; verified RPT/SK/SP/source wording and all other app functions stay unchanged.
+APP_VERSION='v26.10-PI-RPH-SKILL-REFINEMENT'
+_pi_rph_rows_before_v2610 = _rph_rows
+
+def _pi2610_skill_mode(s):
+    src=(s or {}).get('_quick_selected_rpt_row_v2388') or (s or {}).get('quick_rpt_row') or {}
+    raw=' '.join(str(x or '') for x in (
+        src.get('unit_title'),src.get('topic'),src.get('subtopic'),src.get('skill_focus'),src.get('activity_note'),
+        (s or {}).get('topic'),(s or {}).get('subtopic'),(s or {}).get('sk_text'),(s or {}).get('sp_text'),
+        ' '.join((s or {}).get('grouped_sk_texts') or []),' '.join((s or {}).get('grouped_sp_texts') or [])
+    )).casefold()
+    tests=(
+      ('hafazan',('hafaz','hafazan','menghafaz','حفظ','تسميع')),
+      ('tajwid',('tajwid','تجويد','mad ','ikhfa','idgham','iqlab','qalqalah','ghunnah','مخارج','makhraj')),
+      ('bacaan',('membaca','bacaan','tilawah','talaqqi','musyafahah','تلاوة','تلاوه')),
+      ('amali',('amali','tunjuk cara','demonstrasi','wuduk','wudhu','tayamum','solat','وضوء','تيمم','صلاة')),
+      ('hukum',('hukum','syarat','rukun','sunat','batal','wajib','harus','makruh','sah ')),
+      ('menulis',('menulis','tulisan','imlak','ejaan','املاء','إملاء','ايجاءن')),
+      ('membaca_jawi',('membaca jawi','bacaan jawi','suku kata','perkataan jawi')),
+      ('fakta_sirah',('peristiwa','tokoh','kronologi','urutan','hijrah','peperangan')),
+      ('penghayatan',('pengajaran','iktibar','menghayati','mengamalkan','adab','akhlak','contohi','teladan')),
+      ('kefahaman',('maksud','pengertian','memahami','menjelaskan','menerangkan')),
+    )
+    for mode,words in tests:
+        if any(w in raw for w in words): return mode
+    return 'umum'
+
+def _pi2610_assessment(mode,lvl):
+    high=lvl>=5
+    bank={
+      'hafazan':'Pentaksiran melalui tasmi\' individu: ketepatan lafaz, kelancaran, tertib ayat dan keupayaan menyambung bacaan tanpa bantuan berlebihan.',
+      'tajwid':'Pentaksiran bacaan individu pada petikan sasaran: murid mengenal pasti hukum/kaedah yang dipelajari dan mengaplikasikannya dengan sebutan yang tepat.' + (' Murid turut menjelaskan sebab aplikasi hukum pada contoh yang dipilih.' if high else ''),
+      'bacaan':'Pentaksiran bacaan individu secara talaqqi/musyafahah dengan fokus pada ketepatan sebutan, makhraj, baris dan kelancaran mengikut fokus PdP.',
+      'amali':'Pentaksiran amali individu menggunakan senarai semak urutan dan perlakuan; murid melaksanakan tatacara tanpa sekadar menyebut langkah.' + (' Murid menjelaskan sebab bagi langkah kritikal yang dinilai.' if high else ''),
+      'hukum':'Pentaksiran menggunakan beberapa situasi baharu: murid menentukan hukum/ketetapan yang sesuai dan memberikan alasan berdasarkan kandungan PdP.',
+      'menulis':'Pentaksiran tulisan/imlak individu dengan semakan bentuk huruf, sambungan, ejaan dan kebolehbacaan; kesalahan sebenar ditanda untuk pembetulan semula.',
+      'membaca_jawi':'Pentaksiran bacaan Jawi individu pada perkataan/ayat baharu yang menggunakan pola sama, bukan mengulang contoh yang telah dihafal.',
+      'fakta_sirah':'Pentaksiran kefahaman melalui susunan peristiwa dan soalan sebab-akibat; fakta, urutan dan pengajaran mesti selaras dengan kandungan PdP.',
+      'penghayatan':'Pentaksiran melalui situasi harian baharu: murid memilih tindakan yang sesuai dan menerangkan bagaimana nilai/adab/pengajaran itu diamalkan.' + (' Jawapan perlu disertai justifikasi.' if high else ''),
+      'kefahaman':'Pentaksiran lisan/bertulis: murid menerangkan maksud dengan bahasa sendiri dan mengaplikasikan kefahaman pada satu contoh atau situasi baharu.',
+    }
+    return bank.get(mode,'')
+
+def _pi2610_apply(s,r):
+    if not _pi_primary_v25210(s):
+        return r
+    out=dict(r or {})
+    mode=_pi2610_skill_mode(s); lvl=_pi2608_level(s)
+    specific=_pi2610_assessment(mode,lvl)
+    if specific:
+        # Keep any verified RPT assessment note first; refine only the pedagogical evidence expected.
+        src=(s or {}).get('_quick_selected_rpt_row_v2388') or (s or {}).get('quick_rpt_row') or {}
+        verified=_pi2608_assess_anchor(src,s)
+        out['PENTAKSIRAN']=(verified+' ' if verified else '')+specific
+    return out
+
+def _rph_rows(s,ai_text):
+    return _pi2610_apply(s,_pi_rph_rows_before_v2610(s,ai_text))
+
+CIKGULAJU_PATCH_V2610='PI_RPH_ACTUAL_SKILL_ASSESSMENT_REFINEMENT'
+# ===== END v26.10 =====
+
+# ===== v26.11 PI LARGE-BATCH SUBSKILL QUALITY =====
+# Scope lock: Pendidikan Islam RPH only.
+# Deepens Activity 1-4 by actual subskill while preserving verified RPT anchors,
+# SK/SP, Jawi/RTL, DB, menus, BBM/Worksheet state and all non-PI subjects.
+APP_VERSION='v26.11-PI-LARGE-BATCH-SUBSKILL-QUALITY'
+_pi_rph_rows_before_v2611 = _rph_rows
+
+def _pi2611_subskill_cues(mode,lvl):
+    upper=lvl>=5
+    banks={
+      'hafazan':[
+        'موريد مندڠر دان مڠيکوت باچاءن چونتوه مڠيکوت ڤوتوڠن ايات يڠ ڤنديق سبلوم مڠݢابوڠکنڽ سچارا برتاهڤ.',
+        'موريد مڠݢوناکن تيکنيک لاتيه توبي: باچاءن برسام، باچاءن برکومڤولن کچيل، باچاءن برڤاسڠن دان اخيرڽ حفظن افرادي.',
+        ('موريد مڠوجي حفظن دڠن سامبوڠن ايات سچارا راواق دان منندا بهاݢين يڠ ماسيه تيدق لنچر اونتوق ڤموليهن سنديري.' if upper else 'موريد مڠوجي حفظن برڤاسڠن؛ راکن ممبري ايشارت هاڽ جک باچاءن ترهنتي اتاو ترساله.'),
+        'موريد ملقساناکن تسميع افرادي تنڤا ممباچ تيکس؛ ݢورو مريکود کتيڤتن، کلنچرن دان بهاݢين يڠ ڤرلو دأولڠ.'
+      ],
+      'tajwid':[
+        'موريد مندڠر دوا چونتوه باچاءن دان ممبنديڠکن باچاءن يڠ تيڤت دڠن يڠ ڤرلو دڤرباءيکي برداسرکن حکوم/قاعدة فوکس.',
+        'موريد منندا کات اتاو ڤتيکن يڠ مڠاندوڠي حکوم تجويد ساسرن، کمدين منرڠکن تندا يڠ دکنل ڤستي.',
+        ('موريد ممباچ ڤتيکن بهارو، مڠاڤليکاسيکن حکوم دان منجستيفيکاسي سبب باچاءن ڤد ببراڤ چونتوه.' if upper else 'موريد ممباچ چونتوه سچارا برڤاسڠن دان مڽمق اڤليکاسي حکوم مڠݢوناکن ڤندوان ݢورو.'),
+        'موريد ممباچ سچارا افرادي ڤد چونتوه بهارو؛ ݢورو منilai ڤڠچامن حکوم دان کتيڤتن اڤليکاسي دالم باچاءن.'
+      ],
+      'bacaan':[
+        'موريد ممڤرهاتيکن مولوت/سبوتن ݢورو دان مندڠر چونتوه باچاءن فوکس سبلوم منيرو سچارا برتاهڤ.',
+        'موريد ملقساناکن تلاقي دان مشافهة ڤد ڤوتوڠن ڤنديق؛ ڤمبتولن دبوات سرتا-مرتا ڤد سبوتن، باريس اتاو مخارج يڠ ترليبت.',
+        ('موريد ممباچ ڤتيکن لبيه ڤنجڠ سچارا برڤاسڠن دان مڠنل ڤستي بهاݢين باچاءن يڠ ڤرلو دڤرباءيکي.' if upper else 'موريد مڠولڠ باچاءن برڤاسڠن دڠن ڤندوان چونتوه دان تندا باچاءن.'),
+        'موريد ممباچ سچارا افرادي ڤد ڤتيکن ساسرن؛ ݢورو مريکود کتيڤتن سبوتن، باريس، مخارج دان کلنچرن.'
+      ],
+      'amali':[
+        'موريد ممڤرهاتيکن ساتو سيتواسي املي دان مڠنل ڤستي ڤرکارا يڠ بتول اتاو ککليتوان يڠ ڤرلو دڤرباءيکي.',
+        'ݢورو منونجوقکن تتاچارا سچارا برلڠکه؛ موريد مڽوسون سمولا لڠکه مڠيکوت اوروتن سبلوم ممبوات املي.',
+        ('موريد ملقساناکن املي دالم ڤاسڠن؛ ڤمريکسا مڠݢوناکن سناراي سماق دان ممينتا ڤلقسان منرڠکن سبب باݢي لڠکه کريتيکل.' if upper else 'موريد ملقساناکن املي برڤاسڠن؛ راکن مڽمق اوروتن دان ممبري ايشارت ڤمبتولن.'),
+        'موريد ملقساناکن املي افرادي تنڤا ڤندوان لڠکه؛ ݢورو منilai اوروتن، ڤرلاکوأن دان کتيڤتن تتاچارا.'
+      ],
+      'hukum':[
+        'ݢورو ممڤامرکن دوا سيتواسي يڠ برلاءينن؛ موريد مميليه کدودوقن/حکوم يڠ سسواي دان مڽاتاکن سبب اول.',
+        'موريد مڠومڤولکن شرط، رکن، ڤرکارا ممبتلکن اتاو کتيتڤن يڠ ترليبت دالم ڤدڤ دان مڽوسونڽ دالم ڤتا رينݢکس.',
+        ('موريد مڠاناليسيس سيتواسي بهارو، مننتوکن حکوم دان منجستيفيکاسي جاواڤن برداسرکن کاندوڠن ڤدڤ.' if upper else 'موريد ممادانکن سيتواسي دڠن حکوم/کتيتڤن يڠ بتول دان منرڠکن سبب دڠن بيمبيڠن.'),
+        'موريد مڽلسايکن سوالن سيتواسي افرادي يڠ تيدق سام دڠن چونتوه لاتيه توبي اونتوق منونجوقکن ڤمهامن.'
+      ],
+      'menulis':[
+        'موريد ممڤرهاتيکن بنتوق حرف، کدودوقن سامبوڠن دان ڤولا ايجاءن ڤد چونتوه يڠ دڤامرکن، کمدين مڠنل ڤستي چيري ڤنتيڠ.',
+        'موريد منيرو توليسن برڤندوان سبلوم منوليس سمولا تنڤا منچونتوه سچارا لڠسوڠ؛ ݢورو ممبتولکن بنتوق دان سامبوڠن حرف.',
+        ('موريد ملقساناکن املاق ايات/ڤتيکن، کمدين مڽونتيڠ ايجاءن سنديري دڠن مرجوع ڤولا يڠ دڤلاجرى.' if upper else 'موريد ملقساناکن املاق ڤرکاتاءن ڤنديق دان مڽمق ايجاءن برسام راکن.'),
+        'موريد منوليس سمولا item يڠ ساله سچارا بتول دان ممباچ توليسن سنديري باݢي ممستيکن ايجاءن دان کبولهبچاءن.'
+      ],
+      'membaca_jawi':[
+        'موريد مڠنل ڤستي ڤولا حرف/سوکو کات دالم ببراڤ ڤرکاتاءن جاوي سبلوم ممباچ ڤرکاتاءن ڤنوه.',
+        'موريد ممباچ ڤرکاتاءن درڤد موده کڤد لبيه منچابر دان مڠومڤولکن ڤرکاتاءن مڠيکوت ڤولا ايجاءن يڠ سام.',
+        ('موريد ممباچ ايات/ڤتيکن بهارو دان منرڠکن چارا مڠچم ڤرکاتاءن يڠ مڠݢوناکن ڤولا فوکس.' if upper else 'موريد ممباچ ايات ڤنديق برڤاسڠن؛ راکن منندا ڤرکاتاءن يڠ ڤرلو دأولڠ.'),
+        'موريد ممباچ سچارا افرادي ڤرکاتاءن اتاو ايات بهارو يڠ مڠݢوناکن ڤولا سام باݢي مڠوجي ڤڠواساءن سبنر.'
+      ],
+      'fakta_sirah':[
+        'موريد ممڤرهاتيکن کد توکوه/تمڤت/ڤريستيوا دان مڽاتاکن اڤا يڠ دکتاهوءي سبلوم ممبينا ڬمبارن ڤريستيوا.',
+        'موريد مڽوسون فکت دان ڤريستيوا مڠيکوت اوروتن، کمدين ممادانکن توکوه دڠن ڤران اتاو ڤريستيوا يڠ بتول.',
+        ('موريد مڠاناليسيس هوبوڠن سبب دان عاقبة سرتا ممبري بوقتي فکت اونتوق مڽوکونڠ ڤنرڠن.' if upper else 'موريد منچريتاکن سمولا اوروتن ڤريستيوا مڠݢوناکن کد ڬمبار/کات کونچي.'),
+        'موريد مڽلسايکن ڬاريس ماس اتاو سوالن اوروتن سچارا افرادي دان مڽاتاکن ساتو ڤڠاجرن يڠ تيڤت.'
+      ],
+      'penghayatan':[
+        'موريد ممڤرتيمبڠکن سيتواسي هارين دان مڠنل ڤستي نيلاي، ادب اتاو ڤڠاجرن يڠ برکاءيتن دڠن فوکس ڤدڤ.',
+        'موريد ممبنديڠکن تيندقن يڠ سسواي دان تيدق سسواي، کمدين منرڠکن کسن ستياڤ تيندقن ترهادڤ ديري/اورڠ لاءين.',
+        ('موريد مڠاناليسيس سيتواسي لبيه کومڤليکس، مميليه تيندقن دان منجستيفيکاسي ڤيليهن برداسرکن نيلاي يڠ دڤلاجرى.' if upper else 'موريد ملاکونکن چارا برتيندق يڠ بتول دالم سيتواسي ڤنديق دان منرڠکن سبب ڤيليهن.'),
+        'موريد منوليس/مڽاتاکن ساتو تيندقن کونکريت يڠ اکن دعملکن دالم کهيدوڤن سرتا چارا ممستيکنڽ دلقساناکن.'
+      ],
+      'kefahaman':[
+        'موريد مڠنل ڤستي کات کونچي دان مڽاتاکن ڤمهامن اول تنتڠ مقصود/ڤڠرتين فوکس دڠن بهاس سنديري.',
+        'موريد ممبينا ڤتا مقصود: تعريف/مقصود، چيري اوتام، چونتوه دان بوکن چونتوه برداسرکن کاندوڠن ڤدڤ.',
+        ('موريد مڠاڤليکاسيکن مقصود ڤد سيتواسي بهارو دان منجستيفيکاسي کنڤا چونتوه ايت سلاري اتاو تيدق سلاري دڠن کونسيڤ.' if upper else 'موريد ممادانکن چونتوه دڠن مقصود دان منرڠکن هوبوڠنڽ دڠن ايات موده.'),
+        'موريد منرڠکن سمولا مقصود تنڤا مڠهفال ايات موديل دان ممبري ساتو چونتوه بهارو سچارا افرادي.'
+      ]
+    }
+    return banks.get(mode)
+
+def _pi2611_apply(s,r):
+    if not _pi_primary_v25210(s):
+        return r
+    out=dict(r or {})
+    mode=_pi2610_skill_mode(s); lvl=_pi2608_level(s)
+    cues=_pi2611_subskill_cues(mode,lvl)
+    if not cues:
+        return out
+    block=str(out.get('AKTIVITI UTAMA') or '')
+    if not block:
+        return out
+    import re as _re
+    # Preserve every existing heading and especially the verified RPT anchor sentence.
+    chunks=_re.split(r'(?=اکتيۏيتي\s+[١٢٣٤1234]\s*[–-])',block)
+    rebuilt=[]
+    for chunk in chunks:
+        if not chunk.strip():
+            continue
+        lines=chunk.split('\n',1)
+        if len(lines)!=2:
+            rebuilt.append(chunk); continue
+        head,body=lines
+        m=_re.search(r'اکتيۏيتي\s+([١٢٣٤1234])',head)
+        trans={'١':1,'٢':2,'٣':3,'٤':4,'1':1,'2':2,'3':3,'4':4}
+        idx=trans.get(m.group(1),1)-1 if m else 0
+        # Activity 2 carries the verified RPT anchor from v26.08; retain it verbatim
+        # and append the subskill execution. Other activities are refined directly.
+        if idx==1:
+            body=body+' '+cues[idx]
+        else:
+            body=cues[idx]
+        rebuilt.append(head+'\n'+body)
+    if rebuilt:
+        out['AKTIVITI UTAMA']='\n'.join(rebuilt)
+    # Make success evidence match the actual skill, not a generic PI criterion.
+    crit={
+      'hafazan':'موريد داڤت ممڤردڠرکن حفظن دڠن ترتيب، کتيڤتن دان کلنچرن مڠيکوت تاهڤ يڠ دتتڤکن.',
+      'tajwid':'موريد داڤت مڠنل ڤستي قاعدة/حکوم فوکس دان مڠاڤليکاسيکنڽ دالم باچاءن دڠن تيڤت.',
+      'bacaan':'موريد داڤت ممباچ ڤتيکن ساسرن دڠن سبوتن، باريس، مخارج دان کلنچرن يڠ سسواي دڠن فوکس ڤدڤ.',
+      'amali':'موريد داڤت ملقساناکن تتاچارا املي مڠيکوت اوروتن دان ڤرلاکوأن يڠ بتول.',
+      'hukum':'موريد داڤت مننتوکن حکوم/کتيتڤن باݢي سيتواسي بهارو دان ممبري السن يڠ سلاري دڠن کاندوڠن ڤدڤ.',
+      'menulis':'موريد داڤت منوليس دڠن بنتوق حرف، سامبوڠن دان ايجاءن يڠ بتول سرتا ممبتولکن کسلڤن يڠ دکنل ڤستي.',
+      'membaca_jawi':'موريد داڤت ممباچ ڤرکاتاءن/ايات جاوي بهارو يڠ مڠݢوناکن ڤولا فوکس دڠن بتول.',
+      'fakta_sirah':'موريد داڤت مڽوسون فکت/ڤريستيوا دڠن تيڤت دان منرڠکن هوبوڠن سبب، کسن اتاو ڤڠاجرن.',
+      'penghayatan':'موريد داڤت مميليه تيندقن يڠ سلاري دڠن نيلاي/ادب/ڤڠاجرن دان منرڠکن چارا مڠعملکنڽ.',
+      'kefahaman':'موريد داڤت منرڠکن مقصود دڠن بهاس سنديري دان مڠاڤليکاسيکنڽ ڤد چونتوه بهارو.'
+    }.get(mode)
+    if crit:
+        if lvl>=5:
+            crit += ' موريد جوݢ داڤت ممبري السن اتاو جستيفيکاسي يڠ منونجوقکن ڤمهامن لبيه مندالم.'
+        out['KRITERIA KEJAYAAN']=crit
+    return out
+
+def _rph_rows(s,ai_text):
+    return _pi2611_apply(s,_pi_rph_rows_before_v2611(s,ai_text))
+
+CIKGULAJU_PATCH_V2611='PI_T1_T6_LARGE_BATCH_SUBSKILL_ACTIVITY_AND_EVIDENCE_REFINEMENT'
+# ===== END v26.11 =====
+
+
+# ===== v26.12 PI LARGE-BATCH RPH QA REFINEMENT =====
+# Scope lock: Pendidikan Islam RPH only. No DB/UI/BBM/Worksheet/other-subject changes.
+
+def _pi_v2612_normalize_focus_text(s):
+    """Collect only existing verified/selected PI context for pedagogical routing."""
+    if not isinstance(s, dict):
+        return ''
+    keys = (
+        'topic','subtopic','unit_title','theme','skill_focus','activity_note',
+        'sk_text','sp_text','textbook_page_focus','textbook_note'
+    )
+    return ' '.join(str(s.get(k,'') or '') for k in keys).lower()
+
+def _pi_v2612_stage(year_label):
+    m = re.search(r'(\d+)', str(year_label or ''))
+    y = int(m.group(1)) if m else 1
+    if y <= 2:
+        return 'asas'
+    if y <= 4:
+        return 'perkembangan'
+    return 'pengukuhan'
+
+def _pi_v2612_skill_route(s):
+    """Route PI pedagogy by real skill signals already present in the selected PdP."""
+    k = _pi_v2612_normalize_focus_text(s)
+
+    routes = [
+        ('hafazan', ('hafaz','menghafaz','hafazan')),
+        ('tajwid', ('tajwid','makhraj','mad ','qalqalah','ghunnah','dengung','hukum nun','hukum mim')),
+        ('tilawah', ('tilawah','membaca al-quran','bacaan al-quran','surah','ayat al-quran')),
+        ('imlak_jawi', ('imlak','dikte','menulis jawi','tulisan jawi','ejaan jawi')),
+        ('bacaan_jawi', ('membaca jawi','bacaan jawi','perkataan jawi','ayat jawi')),
+        ('amali_ibadah', ('amali','wuduk','tayamum','solat','azan','iqamah','mandi wajib','istinjak')),
+        ('hukum_ibadah', ('hukum','syarat','rukun','sunat','makruh','batal','sah','wajib')),
+        ('sirah_iktibar', ('iktibar','teladan','pengajaran','mencontohi','menghayati')),
+        ('sirah_fakta', ('sirah','rasulullah','nabi muhammad','peristiwa','hijrah','peperangan')),
+        ('adab_penghayatan', ('adab','akhlak','beradab','amanah','jujur','hormat','ihsan')),
+        ('akidah_kefahaman', ('akidah','iman','allah','malaikat','rasul','qada','qadar','asmaul')),
+        ('hadis_kefahaman', ('hadis','maksud hadis','pengajaran hadis')),
+    ]
+    for name, words in routes:
+        if any(w in k for w in words):
+            return name
+    return 'kefahaman_pi'
+
+def _pi_v2612_activity_bank(route, stage):
+    """Distinct activity forms; avoids one field-wide template being reused for every PdP."""
+    banks = {
+      'hafazan': {
+        'asas': [
+          "Guru memperdengarkan potongan bacaan secara talaqqi; murid mendengar sambil menjejak teks.",
+          "Murid mengikut bacaan guru secara berfrasa, kemudian mengulang tanpa melihat bagi potongan pendek.",
+          "Latih tubi pasangan: seorang memperdengarkan hafazan dan pasangan menyemak tertib potongan dengan panduan guru.",
+          "Murid memperdengarkan hafazan secara individu; guru menanda ketepatan lafaz dan kelancaran."
+        ],
+        'perkembangan': [
+          "Guru memodelkan bacaan mengikut potongan makna dan murid mengenal pasti tempat berhenti yang sesuai.",
+          "Murid menghafaz secara teknik potong-cantum sebelum menyambung keseluruhan petikan.",
+          "Murid bertasmik secara berpasangan menggunakan senarai semak tertib, ketepatan lafaz dan kelancaran.",
+          "Tasmi' individu dilaksanakan; murid membetulkan bahagian yang belum mantap dan mengulang semula."
+        ],
+        'pengukuhan': [
+          "Murid meneliti struktur ayat/petikan dan menandakan bahagian yang memerlukan perhatian sebelum hafazan.",
+          "Murid menggunakan teknik kendiri seperti potong-cantum, ulangan berjarak atau sambung ayat untuk memantapkan hafazan.",
+          "Tasmi' rakan sebaya dilaksanakan dengan maklum balas khusus pada ketepatan, tertib dan kelancaran.",
+          "Murid memperdengarkan hafazan individu serta membuat pembetulan kendiri berdasarkan teguran guru."
+        ]},
+      'tajwid': {
+        'asas': [
+          "Guru memodelkan bunyi/bacaan sasaran dan murid membezakan contoh betul dengan contoh yang perlu diperbaiki.",
+          "Murid mengenal pasti tanda atau contoh hukum pada petikan pendek dengan bimbingan guru.",
+          "Murid membaca contoh secara kumpulan kecil dan membetulkan sebutan berdasarkan model guru.",
+          "Bacaan individu dinilai pada sebutan, makhraj atau hukum tajwid yang menjadi fokus PdP."
+        ],
+        'perkembangan': [
+          "Murid membandingkan beberapa contoh bacaan untuk mengenal ciri hukum tajwid yang sedang dipelajari.",
+          "Murid menanda hukum pada petikan dan menerangkan sebab ringkas pemilihan hukum tersebut.",
+          "Latihan bacaan berpasangan dijalankan; rakan menyemak aplikasi hukum menggunakan kriteria yang diberi.",
+          "Murid membaca petikan baharu secara individu dan guru menilai aplikasi hukum secara konsisten."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis contoh dan bukan contoh untuk merumuskan ciri hukum tajwid sasaran.",
+          "Murid menjustifikasikan hukum pada beberapa potongan ayat sebelum membacanya dengan kaedah yang tepat.",
+          "Murid menjalankan klinik bacaan kumpulan kecil: kenal pasti kesilapan, cadang pembetulan dan ulang bacaan.",
+          "Pentaksiran individu menggunakan petikan baharu bagi menguji pemindahan kemahiran, bukan hafalan contoh."
+        ]},
+      'tilawah': {
+        'asas': [
+          "Guru membaca ayat sasaran secara talaqqi dan murid mendengar serta memerhati sebutan.",
+          "Murid mengikut bacaan secara kelas dan kumpulan kecil dengan penekanan pada kelancaran.",
+          "Murid membaca secara berpasangan; pasangan memberi isyarat pada tempat bacaan yang perlu diulang.",
+          "Guru mendengar bacaan individu dan merekod ketepatan serta kelancaran."
+        ],
+        'perkembangan': [
+          "Guru memperdengarkan bacaan contoh dan murid mengenal bahagian yang memerlukan kawalan sebutan atau waqaf.",
+          "Murid membaca secara bergilir mengikut potongan ayat sebelum menyambung keseluruhan petikan.",
+          "Murid menjalankan semakan rakan menggunakan kriteria bacaan yang telah diterangkan.",
+          "Bacaan individu dibuat pada petikan sasaran dan murid membaiki kesalahan selepas maklum balas."
+        ],
+        'pengukuhan': [
+          "Murid membuat persediaan bacaan dengan menanda bahagian mencabar pada petikan.",
+          "Murid membaca petikan secara individu/berkumpulan dan menerangkan pembetulan pada kesalahan yang dikenal pasti.",
+          "Klinik bacaan rakan sebaya digunakan untuk memperhalus kelancaran dan ketepatan.",
+          "Guru menjalankan bacaan individu akhir menggunakan kriteria khusus PdP."
+        ]},
+      'amali_ibadah': {
+        'asas': [
+          "Guru menunjukkan situasi harian yang berkaitan dan murid menyatakan tindakan yang patut dilakukan.",
+          "Guru mendemonstrasikan urutan amali satu demi satu; murid menyebut semula langkah mengikut tertib.",
+          "Murid melakukan amali secara kumpulan kecil dengan kad urutan sebagai panduan.",
+          "Murid melakukan amali secara individu dan guru menyemak tertib serta perlakuan utama."
+        ],
+        'perkembangan': [
+          "Murid menganalisis situasi ringkas untuk menentukan amali/kaedah yang sesuai.",
+          "Guru dan murid membina urutan amali sambil menerangkan tujuan langkah penting.",
+          "Murid melaksanakan amali berpasangan; pemerhati menggunakan senarai semak dan memberi pembetulan.",
+          "Pentaksiran amali individu dijalankan tanpa kad panduan, diikuti pembetulan segera."
+        ],
+        'pengukuhan': [
+          "Murid menilai beberapa situasi dan menjelaskan pilihan tindakan ibadah yang sesuai.",
+          "Murid menerangkan urutan serta rasional langkah penting sebelum demonstrasi.",
+          "Simulasi kes digunakan untuk menguji pelaksanaan amali dalam keadaan berbeza.",
+          "Pentaksiran individu menilai ketepatan, tertib dan keupayaan menjelaskan tindakan."
+        ]},
+      'hukum_ibadah': {
+        'asas': [
+          "Guru mengemukakan situasi mudah dan murid mengenal tindakan yang betul atau salah.",
+          "Murid mengelaskan kad contoh mengikut kategori hukum/ketetapan yang dipelajari.",
+          "Murid memadankan situasi dengan sebab ringkas menggunakan panduan guru.",
+          "Murid menjawab beberapa situasi baharu secara individu sebagai semakan kefahaman."
+        ],
+        'perkembangan': [
+          "Murid membaca beberapa situasi dan mengenal pasti hukum/ketetapan yang berkaitan.",
+          "Murid mengelaskan contoh dan bukan contoh serta menerangkan sebab pilihan.",
+          "Perbincangan kumpulan kecil digunakan untuk menyelesaikan kes yang hampir serupa tetapi berbeza pada syarat tertentu.",
+          "Pentaksiran individu meminta murid memilih jawapan dan memberi alasan ringkas."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis kes yang mempunyai maklumat relevan dan tidak relevan.",
+          "Murid menentukan hukum/ketetapan dan menyokong jawapan dengan sebab berdasarkan pembelajaran.",
+          "Kumpulan membandingkan dua kes serta menjelaskan mengapa keputusan boleh sama atau berbeza.",
+          "Murid menyelesaikan kes baharu secara individu dengan justifikasi yang jelas."
+        ]},
+      'imlak_jawi': {
+        'asas': [
+          "Guru memodelkan bentuk huruf/perkataan sasaran dan murid meneliti sambungan huruf.",
+          "Murid membina perkataan daripada kad huruf sebelum menyalinnya dengan bentuk yang betul.",
+          "Guru menjalankan imlak perkataan pendek; murid menyemak bentuk dan sambungan bersama rakan.",
+          "Murid menulis semula perkataan sasaran secara individu untuk semakan ejaan."
+        ],
+        'perkembangan': [
+          "Murid mengenal pola ejaan atau sambungan pada contoh perkataan yang diberi.",
+          "Murid menukar perkataan/frasa kepada tulisan Jawi dan membandingkan dengan contoh sah.",
+          "Imlak frasa/ayat pendek dijalankan, kemudian murid melakukan semakan rakan berpandukan kriteria ejaan.",
+          "Murid membetulkan kesalahan sendiri dan menulis semula item yang belum tepat."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis kesalahan ejaan Jawi yang lazim pada contoh terpilih.",
+          "Murid menerangkan pembetulan sebelum menulis perkataan/frasa dalam konteks baharu.",
+          "Imlak ayat dilaksanakan dan murid menanda sendiri bahagian yang diragui sebelum semakan.",
+          "Pentaksiran individu menilai ketepatan ejaan, sambungan huruf dan kekemasan."
+        ]},
+      'bacaan_jawi': {
+        'asas': [
+          "Guru memaparkan perkataan Jawi sasaran dan murid mengenal huruf serta bunyi.",
+          "Murid menggabungkan bunyi untuk membaca perkataan secara berpandu.",
+          "Murid membaca kad perkataan secara berpasangan dan memadankan dengan makna/gambar yang sesuai.",
+          "Murid membaca beberapa item baharu secara individu."
+        ],
+        'perkembangan': [
+          "Murid mengenal pola ejaan pada perkataan/frasa Jawi sebelum membaca.",
+          "Murid membaca frasa/ayat pendek secara bergilir dan membetulkan sebutan dengan bimbingan.",
+          "Aktiviti padanan teks dengan maksud/konteks digunakan untuk memastikan bacaan disertai kefahaman.",
+          "Murid membaca petikan pendek secara individu dan menjawab soalan kefahaman ringkas."
+        ],
+        'pengukuhan': [
+          "Murid meneliti perkataan mencabar dalam petikan dan menerangkan strategi membacanya.",
+          "Murid membaca petikan secara kendiri kemudian menyemak bacaan dalam pasangan.",
+          "Murid mengenal maklumat daripada petikan untuk membuktikan kefahaman bacaan.",
+          "Pentaksiran individu menilai kelancaran, ketepatan dan kefahaman petikan."
+        ]},
+      'sirah_fakta': {
+        'asas': [
+          "Guru memperkenalkan tokoh/peristiwa melalui gambar, garis masa atau cerita ringkas.",
+          "Murid menyusun kad peristiwa atau fakta mengikut urutan yang betul.",
+          "Murid menceritakan semula fakta utama dengan bantuan kata kunci.",
+          "Murid menjawab soalan individu tentang siapa, apa, bila atau urutan peristiwa."
+        ],
+        'perkembangan': [
+          "Murid meneliti sumber ringkas/garis masa untuk mengenal fakta penting peristiwa.",
+          "Murid membina urutan sebab-peristiwa-kesan dalam kumpulan kecil.",
+          "Murid menerangkan hubungan antara tindakan tokoh dengan perkembangan peristiwa.",
+          "Murid menghasilkan ringkasan individu menggunakan fakta utama yang tepat."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis kronologi dan mengenal titik perubahan penting dalam peristiwa.",
+          "Murid menghubungkan sebab, tindakan dan kesan berdasarkan fakta yang dipelajari.",
+          "Kumpulan membandingkan perspektif/keputusan dalam situasi sejarah dan mempertahankan dapatan.",
+          "Murid menulis atau menerangkan rumusan individu yang menggabungkan fakta dan pengajaran."
+        ]},
+      'sirah_iktibar': {
+        'asas': [
+          "Guru mengingatkan semula peristiwa/tokoh dan murid menyebut sifat baik yang dapat dicontohi.",
+          "Murid memadankan tindakan tokoh dengan nilai atau pengajaran yang sesuai.",
+          "Murid memilih satu contoh amalan di sekolah/rumah yang menunjukkan nilai tersebut.",
+          "Murid menyatakan satu iktibar dan satu tindakan yang boleh diamalkan."
+        ],
+        'perkembangan': [
+          "Murid mengenal tindakan penting dalam peristiwa dan menerangkan nilai yang ditunjukkan.",
+          "Murid menghubungkan iktibar dengan situasi kehidupan murid melalui perbincangan kes.",
+          "Kumpulan mencadangkan tindakan yang selari dengan nilai dan menerangkan sebab.",
+          "Murid menulis refleksi ringkas: iktibar, sebab dan cara mengamalkannya."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis keputusan/tindakan tokoh dan kesannya terhadap orang lain.",
+          "Murid merumuskan iktibar berdasarkan bukti daripada peristiwa yang dipelajari.",
+          "Murid menilai situasi semasa dan mempertahankan tindakan yang paling menepati iktibar.",
+          "Refleksi individu menuntut murid menjelaskan bagaimana nilai boleh diamalkan secara konsisten."
+        ]},
+      'adab_penghayatan': {
+        'asas': [
+          "Guru menunjukkan dua situasi mudah dan murid memilih perlakuan yang beradab.",
+          "Murid melakonkan cara yang betul dengan bahasa dan tindakan yang sesuai.",
+          "Murid memadankan situasi harian dengan adab yang perlu diamalkan.",
+          "Murid menyatakan satu amalan yang akan dilakukan selepas PdP."
+        ],
+        'perkembangan': [
+          "Murid membandingkan situasi beradab dan tidak beradab serta menerangkan kesannya.",
+          "Murid menjalankan lakonan situasi dengan fokus pada tutur kata, tindakan dan pertimbangan orang lain.",
+          "Kumpulan menyelesaikan dilema mudah dan mencadangkan tindakan beradab berserta sebab.",
+          "Murid menulis komitmen amalan dan indikator bagaimana amalan itu dapat dilihat."
+        ],
+        'pengukuhan': [
+          "Murid menilai situasi yang mempunyai pilihan tindakan berbeza dan mengenal implikasinya.",
+          "Murid mempertahankan tindakan yang paling beradab berdasarkan prinsip yang dipelajari.",
+          "Murid merancang respons terhadap situasi sebenar di sekolah/rumah dan menerima maklum balas rakan.",
+          "Refleksi individu menilai amalan diri serta menetapkan satu penambahbaikan yang boleh dilaksanakan."
+        ]},
+      'akidah_kefahaman': {
+        'asas': [
+          "Guru menggunakan gambar/situasi mudah untuk mencetuskan pengetahuan sedia ada berkaitan konsep akidah.",
+          "Murid mengenal istilah/fakta asas melalui padanan atau pengelasan berpandu.",
+          "Murid menerangkan maksud menggunakan ayat sendiri dengan bantuan kata kunci.",
+          "Murid menjawab soalan individu untuk membezakan contoh yang tepat dan tidak tepat."
+        ],
+        'perkembangan': [
+          "Murid mengenal konsep utama daripada contoh yang diberi dan membina hubungan antara istilah.",
+          "Murid membandingkan contoh/bukan contoh serta menerangkan sebab.",
+          "Murid menggunakan konsep dalam situasi kehidupan melalui perbincangan kes ringkas.",
+          "Murid menghasilkan penerangan individu yang menunjukkan kefahaman, bukan hafalan istilah semata-mata."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis konsep dan hubungan antara idea utama dalam tajuk.",
+          "Murid menggunakan bukti/contoh yang dipelajari untuk menjelaskan kefahaman.",
+          "Murid menilai situasi dan mempertahankan respons yang selari dengan konsep akidah.",
+          "Pentaksiran individu meminta penerangan dan justifikasi yang tersusun."
+        ]},
+      'hadis_kefahaman': {
+        'asas': [
+          "Guru memperdengarkan/membacakan hadis sasaran dan murid mengenal kata kunci penting.",
+          "Murid memadankan maksud mudah dengan frasa atau idea utama hadis.",
+          "Murid memilih contoh perlakuan yang selari dengan pengajaran hadis.",
+          "Murid menyatakan maksud/pengajaran utama secara individu."
+        ],
+        'perkembangan': [
+          "Murid membaca atau mendengar hadis dan mengenal idea utama serta kata kunci.",
+          "Murid menerangkan maksud dengan ayat sendiri dan menghubungkannya dengan pengajaran.",
+          "Kumpulan menilai situasi harian berdasarkan pengajaran hadis.",
+          "Murid menghasilkan respons individu yang mengandungi maksud dan aplikasi."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis hubungan antara maksud hadis, pengajaran dan tindakan.",
+          "Murid menggunakan pengajaran hadis untuk menilai beberapa situasi.",
+          "Murid mempertahankan pilihan tindakan dengan merujuk idea utama hadis yang dipelajari.",
+          "Pentaksiran individu menilai kefahaman, aplikasi dan justifikasi."
+        ]},
+      'kefahaman_pi': {
+        'asas': [
+          "Guru mencetuskan pengetahuan sedia ada melalui contoh atau situasi yang dekat dengan murid.",
+          "Murid mengenal fakta/istilah utama melalui padanan, pengelasan atau soal jawab berpandu.",
+          "Murid menggunakan pengetahuan dalam satu situasi mudah bersama rakan.",
+          "Murid menjawab tugasan individu ringkas untuk menunjukkan kefahaman."
+        ],
+        'perkembangan': [
+          "Murid mengenal idea utama daripada bahan/situasi yang diberikan.",
+          "Murid membandingkan contoh dan bukan contoh serta menerangkan perbezaannya.",
+          "Murid mengaplikasikan konsep dalam situasi baharu secara kumpulan kecil.",
+          "Murid menghasilkan penerangan individu dengan alasan ringkas."
+        ],
+        'pengukuhan': [
+          "Murid menganalisis idea utama dan hubungannya dengan situasi yang diberikan.",
+          "Murid menjelaskan konsep menggunakan bukti atau contoh yang relevan.",
+          "Murid menilai situasi baharu dan mempertahankan respons yang dipilih.",
+          "Murid menghasilkan rumusan individu yang mengandungi penerangan dan justifikasi."
+        ]}
+    }
+    return banks.get(route, banks['kefahaman_pi']).get(stage, banks['kefahaman_pi']['asas'])
+
+def _pi_v2612_apply_activity_qa(s, rph):
+    """PI-only post-refinement. Keeps verified RPT anchor; diversifies pedagogy by skill/stage."""
+    if not isinstance(s, dict) or str(s.get('subject','')).strip().lower() != 'pendidikan islam':
+        return rph
+    if not isinstance(rph, dict):
+        return rph
+
+    route = _pi_v2612_skill_route(s)
+    stage = _pi_v2612_stage(s.get('year',''))
+    bank = _pi_v2612_activity_bank(route, stage)
+
+    # Preserve the selected/verified RPT activity note as the anchor when present.
+    anchor = str(s.get('activity_note','') or '').strip()
+    if anchor:
+        anchor_line = "Fokus RPT: " + anchor
+    else:
+        anchor_line = ""
+
+    acts = []
+    for i, a in enumerate(bank, 1):
+        if i == 1 and anchor_line:
+            acts.append(f"**Aktiviti {i}:** {anchor_line}. {a}")
+        else:
+            acts.append(f"**Aktiviti {i}:** {a}")
+    rph['activities'] = "\n".join(acts)
+
+    # PI-specific success criteria, scaled by year stage.
+    criteria = {
+      'hafazan': "Murid memperdengarkan hafazan mengikut tertib dengan lafaz yang tepat dan kelancaran yang sesuai.",
+      'tajwid': "Murid mengenal pasti hukum/ciri bacaan sasaran dan mengaplikasikannya dengan tepat semasa membaca.",
+      'tilawah': "Murid membaca petikan sasaran dengan sebutan dan kelancaran yang semakin tepat.",
+      'amali_ibadah': "Murid melaksanakan amali mengikut tertib dan perlakuan utama yang betul.",
+      'hukum_ibadah': "Murid menentukan hukum/ketetapan bagi situasi yang diberi serta menerangkan sebab pada tahap yang sesuai.",
+      'imlak_jawi': "Murid menulis perkataan/frasa/ayat Jawi dengan ejaan dan sambungan huruf yang tepat.",
+      'bacaan_jawi': "Murid membaca teks Jawi dengan tepat serta menunjukkan kefahaman pada tahap yang sesuai.",
+      'sirah_fakta': "Murid menyusun dan menerangkan fakta/peristiwa utama dengan tepat.",
+      'sirah_iktibar': "Murid menyatakan iktibar berdasarkan peristiwa dan menghubungkannya dengan amalan kehidupan.",
+      'adab_penghayatan': "Murid memilih dan menunjukkan perlakuan beradab serta menerangkan sebab pada tahap yang sesuai.",
+      'akidah_kefahaman': "Murid menerangkan konsep akidah sasaran dan mengaplikasikannya pada contoh yang sesuai.",
+      'hadis_kefahaman': "Murid menerangkan maksud/pengajaran hadis dan menghubungkannya dengan tindakan yang sesuai.",
+      'kefahaman_pi': "Murid menerangkan isi utama PdP dan menggunakannya dalam situasi yang sesuai."
+    }
+    base = criteria.get(route, criteria['kefahaman_pi'])
+    if stage == 'pengukuhan' and route not in ('hafazan','tilawah','imlak_jawi','bacaan_jawi'):
+        base += " Murid turut memberikan justifikasi atau refleksi yang munasabah."
+    rph['success_criteria'] = base
+    return rph
+
+# Wrap the current PI engine without changing any non-PI path.
+try:
+    _pi_v2611_build_rph_core = _pi_build_rph_core
+    def _pi_build_rph_core(s, *args, **kwargs):
+        result = _pi_v2611_build_rph_core(s, *args, **kwargs)
+        return _pi_v2612_apply_activity_qa(s, result)
+except NameError:
+    pass
+
+# ===== END v26.12 PI LARGE-BATCH RPH QA REFINEMENT =====
+
+
+
+
+# ===== v26.13 PI TEXTBOOK-GROUNDED RPH LAYER =====
+# Scope: Pendidikan Islam primary RPH only.
+# Grounding rule: verified RPT/SK/SP remains authoritative. Textbook is used to shape
+# pedagogy only when a verified textbook mapping/reference already exists in the PdP row.
+# No page number, Quranic text, hadis text, hukum, fact or textbook content is invented.
+APP_VERSION='v26.13-PI-RPH-TEXTBOOK-GROUNDED'
+
+def _pi2613_has_verified_book(s):
+    if not isinstance(s, dict):
+        return False
+    src=s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+    pages=str(s.get('textbook_pages') or src.get('textbook_pages') or '').strip()
+    status=str(src.get('mapping_status') or '').strip().lower()
+    # Existing v25.210 data exposes textbook only for verified PdP details.
+    return bool(pages) and status in ('verified','ready','ok','mapped','') 
+
+def _pi2613_book_ref(s):
+    src=s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+    unit=str(s.get('textbook_unit') or src.get('textbook_unit') or '').strip()
+    pages=str(s.get('textbook_pages') or src.get('textbook_pages') or '').strip()
+    bits=[]
+    if unit: bits.append(unit)
+    if pages: bits.append('m/s '+pages if not pages.lower().startswith(('m/s','ms','page')) else pages)
+    return ' • '.join(bits)
+
+def _pi2613_textbook_method(route, stage):
+    """Methods observed in the actual PI textbook series; no lesson facts are injected."""
+    common = {
+      'hafazan': [
+        "Gunakan susun atur potongan ayat dalam buku sebagai panduan hafazan berperingkat; murid menjejak, mengulang dan menyambung potongan.",
+        "Gunakan pasangan/rakan tasmik seperti pola latihan buku; murid memperdengarkan hafazan dan membuat pembetulan."
+      ],
+      'tajwid': [
+        "Murid meneliti contoh berwarna/bertanda dalam buku untuk mengenal fokus bacaan sebelum membaca.",
+        "Murid membandingkan contoh dalam buku, kemudian membaca semula dengan pembetulan guru/rakan."
+      ],
+      'tilawah': [
+        "Guru menggunakan petikan pada halaman buku sebagai teks talaqqi; murid mendengar, menjejak dan membaca semula secara berfrasa.",
+        "Murid membaca secara bergilir menggunakan teks buku dan membuat semakan bacaan berpandukan fokus PdP."
+      ],
+      'amali_ibadah': [
+        "Gunakan ilustrasi/urutan dalam buku untuk murid menyusun langkah sebelum demonstrasi amali.",
+        "Murid merujuk visual buku ketika latihan pertama, kemudian mengulang amali tanpa rujukan."
+      ],
+      'hukum_ibadah': [
+        "Gunakan situasi/ilustrasi buku sebagai pencetus; murid mengelaskan tindakan mengikut fokus hukum PdP.",
+        "Murid menjelaskan pilihan berdasarkan maklumat pada halaman buku sebelum mencuba situasi baharu."
+      ],
+      'imlak_jawi': [
+        "Gunakan contoh ejaan/perkataan pada halaman buku sebagai model; murid meneliti bentuk dan sambungan sebelum menulis.",
+        "Murid menutup contoh selepas semakan dan menulis semula melalui imlak ringkas."
+      ],
+      'bacaan_jawi': [
+        "Gunakan perkataan/frasa/petikan Jawi pada halaman buku sebagai bahan bacaan sebenar PdP.",
+        "Murid membaca, memadankan maksud/konteks visual dan membaca semula item yang tersilap."
+      ],
+      'sirah_fakta': [
+        "Gunakan ilustrasi, dialog atau susunan maklumat buku untuk membina kronologi/fakta utama.",
+        "Murid menceritakan semula berdasarkan visual/kata kunci buku tanpa menyalin keseluruhan teks."
+      ],
+      'sirah_iktibar': [
+        "Murid mengenal tindakan/peristiwa pada buku, kemudian menghubungkannya dengan iktibar yang disokong PdP.",
+        "Gunakan situasi kehidupan yang setara untuk murid memilih aplikasi iktibar dan menerangkan sebab."
+      ],
+      'adab_penghayatan': [
+        "Gunakan ilustrasi/situasi sosial dalam buku untuk murid membandingkan perlakuan dan kesannya.",
+        "Murid melakonkan semula situasi dengan respons beradab, kemudian membuat refleksi amalan diri."
+      ],
+      'akidah_kefahaman': [
+        "Gunakan gambar rajah, kata kunci atau contoh pada buku untuk membina konsep secara berpandu.",
+        "Murid menerangkan semula konsep menggunakan ayat sendiri sebelum mengaplikasikannya pada contoh lain."
+      ],
+      'hadis_kefahaman': [
+        "Gunakan teks/kata kunci dan maksud yang terdapat pada halaman buku sebagai asas pemahaman.",
+        "Murid menghubungkan pengajaran yang dinyatakan dalam PdP dengan situasi harian yang sesuai."
+      ],
+      'kefahaman_pi': [
+        "Gunakan visual, dialog, kata kunci atau latihan pada halaman buku sebagai pencetus kefahaman.",
+        "Murid menjelaskan semula isi PdP dan mengaplikasikannya pada satu situasi baharu."
+      ],
+    }
+    return common.get(route, common['kefahaman_pi'])
+
+def _pi2613_apply(s, r):
+    if not isinstance(s,dict) or not isinstance(r,dict):
+        return r
+    if str(s.get('subject') or '').strip().casefold() not in ('pendidikan islam','pendidikan agama islam'):
+        return r
+    if not _pi2613_has_verified_book(s):
+        return r
+
+    route=_pi_v2612_skill_route(s) if '_pi_v2612_skill_route' in globals() else 'kefahaman_pi'
+    stage=_pi_v2612_stage(s.get('year','')) if '_pi_v2612_stage' in globals() else 'asas'
+    cues=_pi2613_textbook_method(route,stage)
+    ref=_pi2613_book_ref(s)
+
+    # Do not replace verified RPT anchor. Enrich the existing activity block only.
+    key='AKTIVITI UTAMA' if 'AKTIVITI UTAMA' in r else 'activities'
+    block=str(r.get(key) or '').strip()
+    if not block:
+        return r
+
+    lines=block.splitlines()
+    out=[]
+    inserted=0
+    for ln in lines:
+        out.append(ln)
+        if inserted < len(cues) and ('Aktiviti 1' in ln or 'اکتيۏيتي 1' in ln or
+                                     'Aktiviti 2' in ln or 'اکتيۏيتي 2' in ln):
+            out.append(("Rujukan buku teks" + (f" ({ref})" if ref else "") + ": " + cues[inserted]))
+            inserted += 1
+    # If headings are encoded differently, append compactly without destroying content.
+    while inserted < len(cues):
+        out.append(("Rujukan buku teks" + (f" ({ref})" if ref else "") + ": " + cues[inserted]))
+        inserted += 1
+    r[key]='\n'.join(out)
+
+    # BBM line may mention the verified page, but only because the PdP already has mapping.
+    bbm_key='BAHAN BANTU MENGAJAR'
+    if bbm_key in r and ref:
+        base=str(r.get(bbm_key) or '').strip()
+        note='بوکو تيکس ڤنديديقن اسلام ('+ref+')'
+        if note not in base:
+            r[bbm_key]=(base.rstrip(' .،')+'، '+note+'.').strip('، ')
+    return r
+
+_pi_rph_rows_before_v2613=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2613_apply(s,_pi_rph_rows_before_v2613(s,ai_text))
+
+CIKGULAJU_PATCH_V2613='PI_TEXTBOOK_GROUNDED_ONLY_WHEN_VERIFIED_MAPPING_EXISTS'
+# ===== END v26.13 =====
+
+
+
+# ===== v26.14 PI TEXTBOOK-INTEGRATED LARGE-BATCH =====
+# Scope lock: Pendidikan Islam primary RPH only.
+# Improvement over v26.13:
+# - textbook pedagogy is integrated INTO Activity 1-4, not appended as extra notes;
+# - verified RPT/SK/SP remains authoritative;
+# - textbook page/reference is used only when already verified in selected PdP data;
+# - no Quranic/hadis text, hukum, page or textbook fact is invented;
+# - keeps RPH compact for one-page A4 target.
+APP_VERSION='v26.14-PI-RPH-TEXTBOOK-INTEGRATED'
+
+def _pi2614_pi_only(s):
+    return isinstance(s,dict) and str(s.get('subject') or '').strip().casefold() in (
+        'pendidikan islam','pendidikan agama islam'
+    )
+
+def _pi2614_src(s):
+    if not isinstance(s,dict):
+        return {}
+    return s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+
+def _pi2614_verified_book(s):
+    if not _pi2614_pi_only(s):
+        return False
+    src=_pi2614_src(s)
+    pages=str(s.get('textbook_pages') or src.get('textbook_pages') or '').strip()
+    status=str(src.get('mapping_status') or '').strip().casefold()
+    # Do not create a book mapping. Only consume an existing one.
+    return bool(pages) and status in ('','verified','ready','ok','mapped')
+
+def _pi2614_ref(s):
+    src=_pi2614_src(s)
+    pages=str(s.get('textbook_pages') or src.get('textbook_pages') or '').strip()
+    unit=str(s.get('textbook_unit') or src.get('textbook_unit') or '').strip()
+    if pages and not pages.casefold().startswith(('m/s','ms','page')):
+        pages='m/s '+pages
+    return ' • '.join(x for x in (unit,pages) if x)
+
+def _pi2614_context(s):
+    src=_pi2614_src(s)
+    vals=[]
+    for k in ('unit_title','topic','subtopic','skill_focus','activity_note','rpt_activity_note',
+              'sk_text','sp_text','textbook_unit'):
+        v=s.get(k) if k in s else src.get(k)
+        if v:
+            vals.append(str(v).strip())
+    # Existing verified strings only; no new curriculum statement.
+    return ' | '.join(dict.fromkeys(vals))
+
+def _pi2614_methods(route,stage):
+    """Compact textbook-supported activity forms. They shape method, not curriculum facts."""
+    lower = stage == 'asas'
+    upper = stage == 'pengukuhan'
+    bank = {
+      'hafazan': [
+        "Murid menjejak potongan pada halaman buku semasa guru memperdengarkan bacaan, kemudian mengulang secara talaqqi.",
+        "Murid menggunakan teknik potong-cantum berdasarkan susunan teks buku sebelum menyambung hafazan.",
+        "Murid bertasmik secara berpasangan sambil menyemak tertib dan kelancaran.",
+        "Murid memperdengarkan hafazan individu dan membetulkan bahagian yang ditegur."
+      ],
+      'tajwid': [
+        "Murid meneliti contoh/tanda pada halaman buku dan mengenal ciri bacaan yang menjadi fokus PdP.",
+        "Murid membandingkan contoh sebelum menerangkan sebab pemilihan hukum/ciri pada tahap yang sesuai.",
+        "Murid membaca contoh daripada buku secara berpasangan dan melakukan semakan rakan.",
+        "Murid membaca item/petikan sasaran secara individu dengan aplikasi bacaan yang tepat."
+      ],
+      'tilawah': [
+        "Guru menggunakan petikan pada halaman buku untuk talaqqi; murid mendengar, menjejak dan mengikut bacaan berfrasa.",
+        "Murid membaca secara bergilir berdasarkan teks buku dengan fokus sebutan dan kelancaran.",
+        "Murid menyemak bacaan pasangan dan mengulang bahagian yang perlu diperbaiki.",
+        "Guru menjalankan bacaan individu pada petikan sasaran dan memberi pembetulan khusus."
+      ],
+      'amali_ibadah': [
+        "Murid meneliti ilustrasi/urutan pada halaman buku untuk mengenal langkah amali sebelum demonstrasi.",
+        "Guru memodelkan amali dan murid menyusun atau menyebut semula langkah mengikut tertib.",
+        "Murid melakukan amali berpasangan/kumpulan kecil menggunakan visual buku sebagai semakan awal.",
+        "Murid mengulang amali tanpa rujukan; guru menilai tertib dan perlakuan utama."
+      ],
+      'hukum_ibadah': [
+        "Murid meneliti situasi/ilustrasi pada halaman buku dan mengenal isu yang berkaitan dengan fokus PdP.",
+        "Murid mengelaskan contoh dan menerangkan sebab berdasarkan maklumat pembelajaran yang telah disahkan.",
+        "Murid membandingkan dua situasi dan menentukan tindakan/hukum yang sesuai pada tahap PdP.",
+        "Murid menyelesaikan situasi baharu secara individu dan memberikan alasan ringkas."
+      ],
+      'imlak_jawi': [
+        "Murid meneliti contoh ejaan pada halaman buku, khususnya bentuk dan sambungan huruf.",
+        "Murid membina atau menyalin perkataan/frasa sasaran sebelum membandingkannya dengan contoh buku.",
+        "Guru menjalankan imlak; murid menyemak ejaan dan membetulkan kesalahan.",
+        "Murid menulis semula item sasaran secara individu tanpa melihat contoh."
+      ],
+      'bacaan_jawi': [
+        "Murid meneliti perkataan/frasa/petikan Jawi pada halaman buku dan mengenal pola ejaan yang berkaitan.",
+        "Murid membaca secara berpandu sebelum membaca bergilir dalam pasangan.",
+        "Murid memadankan bacaan dengan maksud/konteks yang tersedia pada bahan PdP.",
+        "Murid membaca item baharu/petikan sasaran secara individu dan membetulkan kesalahan."
+      ],
+      'sirah_fakta': [
+        "Murid meneliti ilustrasi/dialog/susunan maklumat pada halaman buku untuk mengenal fakta utama.",
+        "Murid menyusun fakta atau peristiwa mengikut urutan berdasarkan bahan buku.",
+        "Murid menceritakan semula menggunakan kata kunci tanpa menyalin keseluruhan teks.",
+        "Murid menghasilkan rumusan individu tentang fakta/peristiwa utama."
+      ],
+      'sirah_iktibar': [
+        "Murid mengenal tindakan/peristiwa pada halaman buku yang berkaitan dengan fokus PdP.",
+        "Murid menerangkan iktibar yang dapat disokong oleh peristiwa tersebut.",
+        "Murid menghubungkan iktibar dengan situasi kehidupan dan membincangkan tindakan yang sesuai.",
+        "Murid menyatakan satu aplikasi/komitmen berserta sebab pada tahap yang sesuai."
+      ],
+      'adab_penghayatan': [
+        "Murid meneliti ilustrasi/situasi pada halaman buku dan mengenal perlakuan yang sesuai atau perlu diperbaiki.",
+        "Murid membandingkan kesan perlakuan dan menerangkan pilihan yang lebih beradab.",
+        "Murid melakonkan respons yang sesuai bagi situasi setara dengan konteks buku.",
+        "Murid membuat refleksi satu amalan yang boleh dipraktikkan selepas PdP."
+      ],
+      'akidah_kefahaman': [
+        "Murid meneliti visual/kata kunci pada halaman buku untuk membina konsep yang menjadi fokus PdP.",
+        "Murid mengelaskan atau memadankan contoh dengan konsep sebelum menerangkan maksud menggunakan ayat sendiri.",
+        "Murid mengaplikasikan konsep pada satu situasi lain dan membincangkan alasan.",
+        "Murid memberikan penerangan individu bagi menunjukkan kefahaman, bukan hafalan istilah sahaja."
+      ],
+      'hadis_kefahaman': [
+        "Murid meneliti teks/kata kunci dan maksud pada halaman buku yang telah dipadankan dengan PdP.",
+        "Murid menerangkan idea/pengajaran utama menggunakan ayat sendiri.",
+        "Murid menilai situasi harian berdasarkan pengajaran yang menjadi fokus PdP.",
+        "Murid memberikan respons individu yang menghubungkan kefahaman dengan tindakan."
+      ],
+      'kefahaman_pi': [
+        "Murid meneliti visual/dialog/kata kunci pada halaman buku untuk mengenal isi utama PdP.",
+        "Murid menerangkan semula isi menggunakan ayat sendiri melalui soal jawab atau padanan.",
+        "Murid mengaplikasikan isi dalam satu situasi baharu secara berpasangan/kumpulan kecil.",
+        "Murid memberikan respons individu sebagai semakan kefahaman."
+      ],
+    }
+    arr=list(bank.get(route,bank['kefahaman_pi']))
+    if lower:
+        # Keep lower primary concrete and teacher-guided.
+        arr=[x.replace("menerangkan sebab pemilihan hukum/ciri pada tahap yang sesuai",
+                       "menyatakan perbezaan dengan bimbingan guru") for x in arr]
+    if upper:
+        # Upper primary adds reasoning without inventing content.
+        if route not in ('hafazan','tilawah','imlak_jawi','bacaan_jawi'):
+            arr[2]=arr[2].rstrip('.')+" serta memberikan sebab berdasarkan isi PdP."
+    return arr
+
+def _pi2614_heading_and_body(line):
+    """Split common activity heading formats while preserving the original heading."""
+    patterns=[
+      r'^(\s*\*\*Aktiviti\s*[1-4][^*]*\*\*\s*:?\s*)(.*)$',
+      r'^(\s*Aktiviti\s*[1-4]\s*[:\-–]\s*)(.*)$',
+      r'^(\s*اکتيۏيتي\s*[1-4]\s*[:\-–]\s*)(.*)$',
+    ]
+    for p in patterns:
+        m=re.match(p,line,re.I)
+        if m:
+            return m.group(1),m.group(2)
+    return '',line
+
+def _pi2614_integrate_activity_block(block, methods, ref):
+    if not block:
+        return block
+    lines=str(block).splitlines()
+    out=[]
+    act_idx=0
+    for line in lines:
+        # Remove only v26.13 helper-note lines; never remove verified RPT content.
+        if line.strip().startswith('Rujukan buku teks'):
+            continue
+        head,body=_pi2614_heading_and_body(line)
+        if head and act_idx < 4:
+            method=methods[act_idx]
+            # Preserve existing RPT anchor/focus if it is already embedded in Activity 1.
+            if body.strip():
+                if act_idx == 0 and ('Fokus RPT:' in body or 'RPT' in body):
+                    newbody=body.rstrip(' .')+'. '+method
+                else:
+                    # Replace generic method text with textbook-grounded method;
+                    # headings and any explicit RPT anchor are retained.
+                    newbody=method
+            else:
+                newbody=method
+            out.append(head+newbody)
+            act_idx += 1
+        else:
+            out.append(line)
+    # If the prior renderer used a single block without recognizable headings,
+    # do not destroy it. Add nothing rather than risk changing verified content.
+    return '\n'.join(out)
+
+def _pi2614_apply(s,r):
+    if not _pi2614_pi_only(s) or not isinstance(r,dict):
+        return r
+    if not _pi2614_verified_book(s):
+        return r
+
+    route=_pi_v2612_skill_route(s) if '_pi_v2612_skill_route' in globals() else 'kefahaman_pi'
+    stage=_pi_v2612_stage(s.get('year','')) if '_pi_v2612_stage' in globals() else 'asas'
+    methods=_pi2614_methods(route,stage)
+    ref=_pi2614_ref(s)
+
+    # Integrate into whichever activity key the current renderer actually uses.
+    for key in ('AKTIVITI UTAMA','activities'):
+        if key in r and r.get(key):
+            r[key]=_pi2614_integrate_activity_block(r[key],methods,ref)
+
+    # Keep verified textbook reference compact; do not add a second paragraph.
+    if ref:
+        for key in ('BAHAN BANTU MENGAJAR','bbm'):
+            if key in r:
+                base=str(r.get(key) or '').strip()
+                tag='Buku Teks Pendidikan Islam ('+ref+')'
+                # Remove duplicated legacy Jawi tag from v26.13 if present.
+                base=re.sub(r'،?\s*بوکو تيکس ڤنديديقن اسلام\s*\([^)]*\)\.?','',base).strip(' ،,.')
+                if tag.casefold() not in base.casefold():
+                    r[key]=(base+', ' if base else '')+tag
+                break
+    return r
+
+_pi_rph_rows_before_v2614=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2614_apply(s,_pi_rph_rows_before_v2614(s,ai_text))
+
+CIKGULAJU_PATCH_V2614='PI_TEXTBOOK_METHOD_INTEGRATED_INTO_ACTIVITY_1_4_COMPACT'
+# ===== END v26.14 =====
+
+
+
+# ===== v26.15 PI TEXTBOOK VARIATION + QA =====
+# Scope lock: Pendidikan Islam primary RPH only.
+# Builds on v26.14 without changing DB, menus, BBM/Worksheet state, renderer or non-PI subjects.
+APP_VERSION='v26.15-PI-RPH-TEXTBOOK-VARIATION-QA'
+
+def _pi2615_seed(s):
+    if not isinstance(s,dict): return 0
+    src=_pi2614_src(s) if '_pi2614_src' in globals() else {}
+    vals=[]
+    for k in ('year','sequence','lesson_no','unit_title','topic','subtopic','skill_focus',
+              'activity_note','sk_text','sp_text','textbook_pages'):
+        vals.append(str(s.get(k) or src.get(k) or ''))
+    h=hashlib.sha256('|'.join(vals).encode('utf-8')).hexdigest()
+    return int(h[:8],16)
+
+def _pi2615_variants(route,stage):
+    """Alternative textbook-grounded participation forms; no curriculum facts added."""
+    simple = stage=='asas'
+    advanced = stage=='pengukuhan'
+    v={
+      'hafazan':[
+        ["Guru berhenti pada potongan tertentu dan murid menyambung hafazan secara bergilir.",
+         "Murid menyusun kad potongan mengikut tertib teks buku sebelum tasmi' pasangan."],
+        ["Murid menutup sebahagian teks dan melengkapkan sambungan secara lisan.",
+         "Murid menggunakan semakan rakan: tepat, perlu ulang, atau perlu bimbingan guru."]
+      ],
+      'tajwid':[
+        ["Murid mencari dan menanda contoh fokus bacaan pada halaman buku sebelum membacanya.",
+         "Guru memperdengarkan dua bacaan; murid mengenal bacaan yang lebih tepat dan menyatakan perbezaan."],
+        ["Murid mengelaskan contoh pada halaman buku mengikut ciri bacaan yang dipelajari.",
+         "Murid menjadi penyemak bacaan pasangan menggunakan satu kriteria khusus PdP."]
+      ],
+      'tilawah':[
+        ["Bacaan berantai digunakan: setiap murid menyambung potongan seterusnya daripada teks buku.",
+         "Murid menanda bahagian yang sukar sebelum mendapatkan model bacaan guru dan mengulangnya."],
+        ["Murid membaca dalam kumpulan kecil mengikut giliran dan rakan mengenal bahagian yang perlu diulang.",
+         "Guru memilih potongan berbeza daripada halaman yang sama untuk bacaan individu."]
+      ],
+      'amali_ibadah':[
+        ["Murid menyusun kad langkah berdasarkan ilustrasi buku sebelum melakukan demonstrasi.",
+         "Aktiviti kesan kesilapan: murid mengenal langkah yang tersalah susun lalu membetulkannya."],
+        ["Murid bergilir sebagai pelaksana dan pemerhati; pemerhati menyemak tertib menggunakan visual buku.",
+         "Murid menerangkan satu langkah penting sebelum menunjukkan perlakuannya."]
+      ],
+      'hukum_ibadah':[
+        ["Murid mengangkat kad pilihan bagi situasi buku, kemudian menerangkan sebab dengan bimbingan.",
+         "Murid membezakan contoh dan bukan contoh melalui aktiviti kumpulan."],
+        ["Murid membandingkan dua situasi hampir sama dan mengenal maklumat yang mengubah keputusan.",
+         "Murid membina satu situasi baharu yang menepati konsep, kemudian rakan menyemaknya."]
+      ],
+      'imlak_jawi':[
+        ["Murid melakukan aktiviti cari kesalahan pada ejaan contoh sebelum menulis bentuk yang betul.",
+         "Murid membina perkataan menggunakan kad huruf Jawi, kemudian menyalin hasil yang telah disemak."],
+        ["Imlak berpasangan: seorang membaca item, seorang menulis, kemudian peranan ditukar.",
+         "Murid menyunting tulisan sendiri dengan menanda kesalahan sambungan/ejaan sebelum pembetulan."]
+      ],
+      'bacaan_jawi':[
+        ["Murid melakukan bacaan berantai perkataan/frasa daripada halaman buku.",
+         "Murid mencari perkataan sasaran dalam petikan dan membacanya dalam konteks."],
+        ["Murid memadankan frasa Jawi dengan konteks/maksud sebelum membaca keseluruhan item.",
+         "Murid menjadi pembimbing rakan bagi satu perkataan yang sukar dibaca."]
+      ],
+      'sirah_fakta':[
+        ["Murid membina garis masa mini daripada fakta/visual pada halaman buku.",
+         "Aktiviti siapa-apa-bila digunakan untuk mendapatkan semula fakta utama."],
+        ["Murid menyusun kad sebab, peristiwa dan kesan berdasarkan maklumat PdP.",
+         "Murid menjalankan cerita semula 30 saat menggunakan tiga kata kunci daripada buku."]
+      ],
+      'sirah_iktibar':[
+        ["Murid memilih satu tindakan tokoh/peristiwa dan memadankannya dengan iktibar.",
+         "Murid melengkapkan ayat 'Saya boleh mencontohi dengan...' berdasarkan fokus PdP."],
+        ["Murid menilai dua pilihan tindakan dalam situasi baharu dan menghubungkannya dengan iktibar.",
+         "Murid menyokong satu iktibar dengan bukti daripada peristiwa yang dipelajari."]
+      ],
+      'adab_penghayatan':[
+        ["Murid mengelaskan kad situasi kepada perlakuan sesuai dan perlu diperbaiki.",
+         "Lakonan dua versi dilakukan: respons kurang sesuai dan respons yang lebih beradab."],
+        ["Murid menyelesaikan dilema ringkas dan mempertahankan tindakan yang dipilih.",
+         "Murid membuat semakan kendiri satu amalan sebelum menetapkan penambahbaikan."]
+      ],
+      'akidah_kefahaman':[
+        ["Murid membina peta kata kunci daripada visual/istilah pada halaman buku.",
+         "Murid melakukan aktiviti betul atau perlu diperbaiki bagi beberapa pernyataan konsep."],
+        ["Murid membandingkan contoh dan bukan contoh untuk menerangkan sempadan konsep.",
+         "Murid menerangkan konsep kepada rakan tanpa membaca ayat buku secara terus."]
+      ],
+      'hadis_kefahaman':[
+        ["Murid memadankan kata kunci dengan maksud/pengajaran yang terdapat dalam fokus PdP.",
+         "Murid memilih situasi yang paling selari dengan pengajaran dan menerangkan pilihan."],
+        ["Murid membina rantaian maksud → pengajaran → tindakan daripada bahan buku.",
+         "Murid menilai satu situasi dan mencadangkan tindakan berdasarkan pengajaran PdP."]
+      ],
+      'kefahaman_pi':[
+        ["Murid melakukan aktiviti lihat-fikir-kongsi berdasarkan visual/kata kunci halaman buku.",
+         "Murid mengelaskan maklumat utama sebelum menerangkan semula kepada pasangan."],
+        ["Murid membina peta ringkas isi PdP daripada bahan buku.",
+         "Murid menggunakan isi yang dipelajari untuk menyelesaikan satu situasi baharu."]
+      ]
+    }
+    return v.get(route,v['kefahaman_pi'])
+
+def _pi2615_activity_no(line):
+    m=re.search(r'(?:Aktiviti|اکتيۏيتي)\s*([1-4])',line,re.I)
+    return int(m.group(1)) if m else None
+
+def _pi2615_enrich(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s) or not _pi2614_verified_book(s):
+        return r
+    route=_pi_v2612_skill_route(s) if '_pi_v2612_skill_route' in globals() else 'kefahaman_pi'
+    stage=_pi_v2612_stage(s.get('year','')) if '_pi_v2612_stage' in globals() else 'asas'
+    seed=_pi2615_seed(s)
+    variants=_pi2615_variants(route,stage)
+    choice=variants[seed % len(variants)]
+
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block: continue
+        lines=block.splitlines()
+        out=[]
+        for line in lines:
+            # Old v26.13 note must never survive.
+            if line.strip().startswith('Rujukan buku teks'):
+                continue
+            n=_pi2615_activity_no(line)
+            if n in (2,3):
+                extra=choice[n-2]
+                # Keep the existing textbook-grounded activity, add one compact participation move.
+                line=line.rstrip()
+                if extra.casefold() not in line.casefold():
+                    line=line.rstrip(' .')+'. '+extra
+            out.append(line)
+        r[key]='\n'.join(out)
+    return r
+
+_pi_rph_rows_before_v2615=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2615_enrich(s,_pi_rph_rows_before_v2615(s,ai_text))
+
+CIKGULAJU_PATCH_V2615='PI_TEXTBOOK_GROUNDED_DETERMINISTIC_ACTIVITY_VARIATION_QA'
+# ===== END v26.15 =====
+
+
+
+# ===== v26.16 PI RPH RUNTIME-STRUCTURE FIX =====
+# Scope lock: Pendidikan Islam primary RPH only.
+# Critical fix:
+# Current PI renderer stores each activity as a heading line (اکتيۏيتي ١–٤)
+# followed by its body on the NEXT line. v26.14/v26.15 assumed same-line content.
+# This layer operates on the actual two-line structure and replaces the final
+# Activity 1-4 bodies only when an existing verified textbook mapping is present.
+APP_VERSION='v26.16-PI-RPH-RUNTIME-STRUCTURE-FIX'
+
+def _pi2616_activity_index(line):
+    s=str(line or '')
+    m=re.search(r'(?:Aktiviti|اکتيۏيتي)\s*([١٢٣٤1-4])',s,re.I)
+    if not m:
+        return None
+    return {'١':1,'٢':2,'٣':3,'٤':4,'1':1,'2':2,'3':3,'4':4}.get(m.group(1))
+
+def _pi2616_strip_legacy_noise(text):
+    # Remove only helper prose introduced by v26.13-15. Never remove RPT anchors.
+    s=str(text or '')
+    s=re.sub(r'\s*Rujukan buku teks(?:\s*\([^)]*\))?\s*:\s*[^.\n]+\.?', ' ', s, flags=re.I)
+    return re.sub(r'\s{2,}',' ',s).strip()
+
+def _pi2616_compact_method(route,stage,idx,seed):
+    base=_pi2614_methods(route,stage) if '_pi2614_methods' in globals() else []
+    if not base or idx<1 or idx>4:
+        return ''
+    text=base[idx-1]
+    # Use ONE participation variation only, integrated into Activity 2 or 3.
+    # This prevents v26.15's cumulative sentence growth.
+    if idx in (2,3) and '_pi2615_variants' in globals():
+        variants=_pi2615_variants(route,stage)
+        if variants:
+            pair=variants[seed % len(variants)]
+            extra=pair[idx-2]
+            # Keep compact: method + one short participation move.
+            text=text.rstrip(' .')+'. '+extra
+    return text.strip()
+
+def _pi2616_preserve_rpt_anchor(body):
+    s=str(body or '').strip()
+    # Existing v26.08/v26.11 anchor may be Jawi or Rumi. Preserve only explicit
+    # source/RPT anchor clauses; do not preserve generic old activity prose.
+    pats=[
+      r'(Fokus\s+RPT\s*:[^\n]+)',
+      r'(فوکس\s+RPT\s*:[^\n]+)',
+      r'((?:RPT|رڤت)\s*[:\-]\s*[^\n]+)'
+    ]
+    for p in pats:
+        m=re.search(p,s,re.I)
+        if m:
+            return m.group(1).strip()
+    return ''
+
+def _pi2616_rebuild_two_line(block,route,stage,seed):
+    lines=str(block or '').splitlines()
+    if not lines:
+        return block
+    out=[]
+    i=0
+    changed=0
+    while i<len(lines):
+        line=lines[i]
+        idx=_pi2616_activity_index(line)
+        if idx and i+1<len(lines):
+            # Actual runtime structure: heading then body.
+            nxt=lines[i+1]
+            # Do not treat another heading as a body.
+            if _pi2616_activity_index(nxt) is None:
+                old=_pi2616_strip_legacy_noise(nxt)
+                anchor=_pi2616_preserve_rpt_anchor(old)
+                method=_pi2616_compact_method(route,stage,idx,seed)
+                if method:
+                    out.append(line)  # heading untouched: preserves bold/Jawi renderer
+                    if anchor:
+                        out.append(anchor.rstrip(' .')+'. '+method)
+                    else:
+                        out.append(method)
+                    i+=2
+                    changed+=1
+                    continue
+        out.append(line)
+        i+=1
+    return '\n'.join(out) if changed else block
+
+def _pi2616_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s):
+        return r
+    # Hard safety gate: no verified existing textbook page => no textbook rewrite.
+    if not _pi2614_verified_book(s):
+        return r
+    route=_pi_v2612_skill_route(s) if '_pi_v2612_skill_route' in globals() else 'kefahaman_pi'
+    stage=_pi_v2612_stage(s.get('year','')) if '_pi_v2612_stage' in globals() else 'asas'
+    seed=_pi2615_seed(s) if '_pi2615_seed' in globals() else 0
+
+    for key in ('AKTIVITI UTAMA','activities'):
+        if key in r and r.get(key):
+            r[key]=_pi2616_rebuild_two_line(r[key],route,stage,seed)
+
+    # Final cleanup: one compact verified book reference in BBM, no legacy Jawi duplicate.
+    ref=_pi2614_ref(s) if '_pi2614_ref' in globals() else ''
+    if ref:
+        for key in ('BAHAN BANTU MENGAJAR','bbm'):
+            if key in r:
+                b=str(r.get(key) or '')
+                b=re.sub(r'،?\s*بوکو تيکس ڤنديديقن اسلام\s*\([^)]*\)\.?','',b).strip(' ،,.')
+                # collapse repeated Rumi textbook tags before adding one canonical tag
+                b=re.sub(r'(?:,\s*)?Buku Teks Pendidikan Islam\s*\([^)]*\)', '', b, flags=re.I).strip(' ,.')
+                tag='Buku Teks Pendidikan Islam ('+ref+')'
+                r[key]=(b+', ' if b else '')+tag
+                break
+    return r
+
+_pi_rph_rows_before_v2616=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2616_apply(s,_pi_rph_rows_before_v2616(s,ai_text))
+
+CIKGULAJU_PATCH_V2616='PI_ACTUAL_TWO_LINE_ACTIVITY_STRUCTURE_TEXTBOOK_INTEGRATION_FIX'
+# ===== END v26.16 =====
+
+
+
+# ===== v26.17 PI T1-T6 PROGRESSION + ASSESSMENT QA =====
+# Scope lock: Pendidikan Islam primary RPH only.
+# Builds on v26.16 actual two-line activity structure.
+APP_VERSION='v26.17-PI-RPH-T1-T6-PROGRESSION-QA'
+
+def _pi2617_year_num(s):
+    m=re.search(r'([1-6])',str((s or {}).get('year') or ''))
+    return int(m.group(1)) if m else 0
+
+def _pi2617_progression(stage,route):
+    # Method-level progression only; no curriculum fact is introduced.
+    if stage=='asas':
+        return {
+          'lead':'Guru memberi model/contoh yang jelas dan murid memberi respons secara berpandu.',
+          'independent':'Murid menunjukkan penguasaan asas secara individu dengan bimbingan minimum.'
+        }
+    if stage=='perkembangan':
+        return {
+          'lead':'Murid mengenal, membanding atau menyusun maklumat dengan bimbingan beransur dikurangkan.',
+          'independent':'Murid menerangkan atau menunjukkan kemahiran secara individu dan membetulkan kesilapan.'
+        }
+    return {
+      'lead':'Murid menganalisis atau menghubungkan maklumat sebelum memberikan justifikasi yang sesuai dengan fokus PdP.',
+      'independent':'Murid menunjukkan penguasaan secara individu, membuat semakan kendiri dan memberikan alasan/refleksi apabila sesuai.'
+    }
+
+def _pi2617_assessment(route,stage):
+    banks={
+      'hafazan':[
+        "Pentaksiran individu melalui tasmi': tertib, ketepatan dan kelancaran hafazan.",
+        "Guru merekod bahagian yang perlu diulang dan murid membuat pembetulan segera."
+      ],
+      'tajwid':[
+        "Pentaksiran bacaan individu: murid mengenal fokus hukum/ciri dan mengaplikasikannya ketika membaca.",
+        "Guru menyemak ketepatan aplikasi, bukan sekadar murid menyebut nama hukum."
+      ],
+      'tilawah':[
+        "Pentaksiran bacaan individu pada petikan sasaran dengan semakan sebutan, ketepatan dan kelancaran.",
+        "Murid mengulang bahagian yang ditegur untuk menunjukkan pembetulan."
+      ],
+      'amali_ibadah':[
+        "Pentaksiran demonstrasi individu: tertib langkah dan perlakuan utama diperhatikan menggunakan kriteria PdP.",
+        "Murid membetulkan langkah yang kurang tepat selepas maklum balas."
+      ],
+      'hukum_ibadah':[
+        "Pentaksiran situasi: murid menentukan tindakan/hukum mengikut fokus PdP dan memberikan sebab.",
+        "Guru menggunakan contoh baharu untuk memastikan kefahaman tidak bergantung pada hafalan contoh."
+      ],
+      'imlak_jawi':[
+        "Pentaksiran tulisan individu melalui imlak ringkas dengan semakan bentuk, sambungan dan ejaan sasaran.",
+        "Murid membetulkan kesalahan pada hasil sendiri selepas semakan."
+      ],
+      'bacaan_jawi':[
+        "Pentaksiran bacaan individu pada perkataan/frasa/petikan sasaran dengan semakan ketepatan bacaan.",
+        "Soalan ringkas digunakan untuk memastikan murid memahami konteks bacaan apabila berkaitan."
+      ],
+      'sirah_fakta':[
+        "Pentaksiran individu melalui susunan/cerita semula fakta atau peristiwa utama mengikut fokus PdP.",
+        "Guru menyemak ketepatan urutan dan hubungan antara fakta."
+      ],
+      'sirah_iktibar':[
+        "Pentaksiran respons individu: murid menyatakan iktibar dan satu aplikasi yang sesuai.",
+        "Bagi tahap lebih tinggi, murid memberikan sebab yang menghubungkan aplikasi dengan peristiwa."
+      ],
+      'adab_penghayatan':[
+        "Pentaksiran situasi: murid memilih atau menunjukkan perlakuan beradab dan menerangkan sebab.",
+        "Refleksi ringkas digunakan untuk menilai kesediaan mengamalkan adab dalam kehidupan."
+      ],
+      'akidah_kefahaman':[
+        "Pentaksiran kefahaman: murid menerangkan konsep menggunakan ayat sendiri dan mengaplikasikannya pada contoh.",
+        "Guru menyemak alasan murid supaya jawapan tidak sekadar mengulang istilah."
+      ],
+      'hadis_kefahaman':[
+        "Pentaksiran kefahaman: murid menerangkan maksud/pengajaran yang menjadi fokus dan menghubungkannya dengan tindakan.",
+        "Murid memberi respons kepada satu situasi baharu sebagai bukti aplikasi."
+      ],
+      'kefahaman_pi':[
+        "Pentaksiran individu melalui penerangan isi utama dan aplikasi pada satu contoh/situasi.",
+        "Guru membuat semakan lisan atau bertulis ringkas berdasarkan objektif PdP."
+      ],
+    }
+    a=list(banks.get(route,banks['kefahaman_pi']))
+    if stage=='asas':
+        a[0]=a[0].replace("memberikan sebab","memberikan sebab ringkas dengan bimbingan")
+        a[0]=a[0].replace("menerangkan konsep menggunakan ayat sendiri","menyatakan konsep dengan ayat mudah")
+    elif stage=='pengukuhan':
+        if route not in ('hafazan','tilawah','imlak_jawi','bacaan_jawi'):
+            a[1]=a[1].rstrip('.')+" Murid turut membuat semakan kendiri atau justifikasi ringkas."
+    return a
+
+def _pi2617_body_indices(lines):
+    """Return (heading index, body index, activity number) for actual two-line runtime format."""
+    out=[]
+    for i,line in enumerate(lines[:-1]):
+        n=_pi2616_activity_index(line) if '_pi2616_activity_index' in globals() else None
+        if n and not _pi2616_activity_index(lines[i+1]):
+            out.append((i,i+1,n))
+    return out
+
+def _pi2617_apply_progression(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s) or not _pi2614_verified_book(s):
+        return r
+    route=_pi_v2612_skill_route(s) if '_pi_v2612_skill_route' in globals() else 'kefahaman_pi'
+    stage=_pi_v2612_stage(s.get('year','')) if '_pi_v2612_stage' in globals() else 'asas'
+    prog=_pi2617_progression(stage,route)
+    assess=_pi2617_assessment(route,stage)
+
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block: continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines)
+        for hi,bi,n in pairs:
+            body=str(lines[bi]).strip()
+            # Activity 1: make level progression explicit but compact.
+            if n==1 and prog['lead'].casefold() not in body.casefold():
+                lines[bi]=body.rstrip(' .')+'. '+prog['lead']
+            # Activity 4 is the assessment/checkpoint: replace generic closure/testing
+            # with subskill-specific evidence of learning.
+            elif n==4:
+                anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+                final=assess[0]+' '+assess[1]
+                lines[bi]=(anchor.rstrip(' .')+'. ' if anchor else '')+final
+        r[key]='\n'.join(lines)
+
+    # Align explicit assessment field if present, without inventing curriculum facts.
+    for key in ('PENTAKSIRAN','pentaksiran','assessment'):
+        if key in r:
+            r[key]=' '.join(assess)
+            break
+    return r
+
+def _pi2617_dedupe_sentences(s):
+    """Conservative exact-sentence dedupe for patch-generated repetition only."""
+    text=str(s or '').strip()
+    if not text: return text
+    parts=re.split(r'(?<=[.!?])\s+',text)
+    seen=set(); out=[]
+    for p in parts:
+        k=re.sub(r'\s+',' ',p.strip()).casefold()
+        if k and k not in seen:
+            seen.add(k); out.append(p.strip())
+    return ' '.join(out)
+
+def _pi2617_compact(r):
+    if not isinstance(r,dict): return r
+    for key in ('AKTIVITI UTAMA','activities','PENTAKSIRAN','pentaksiran','assessment'):
+        if key in r and isinstance(r[key],str):
+            if key in ('AKTIVITI UTAMA','activities'):
+                r[key]='\n'.join(_pi2617_dedupe_sentences(x) for x in r[key].splitlines())
+            else:
+                r[key]=_pi2617_dedupe_sentences(r[key])
+    return r
+
+_pi_rph_rows_before_v2617=_rph_rows
+def _rph_rows(s,ai_text):
+    result=_pi_rph_rows_before_v2617(s,ai_text)
+    if _pi2614_pi_only(s):
+        result=_pi2617_apply_progression(s,result)
+        result=_pi2617_compact(result)
+    return result
+
+CIKGULAJU_PATCH_V2617='PI_T1_T6_LEVEL_PROGRESSION_SUBSKILL_ASSESSMENT_AND_DEDUPE'
+# ===== END v26.17 =====
+
+
+# ===== v26.18 PI RPH RELEASE CANDIDATE =====
+# FINAL READINESS LOCK — Pendidikan Islam RPH only.
+# No new pedagogy is added here. v26.18 freezes the tested v26.17 stack.
+APP_VERSION='v26.18-PI-RPH-RELEASE-CANDIDATE'
+CIKGULAJU_PATCH_V2618='PI_RPH_T1_T6_RELEASE_CANDIDATE_QUALITY_STACK_LOCKED'
+# ===== END v26.18 =====
