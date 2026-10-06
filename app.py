@@ -44245,3 +44245,55 @@ _JawiRasterParagraph_v25213.wrap=_pi2642_wrap
 
 CIKGULAJU_PATCH_V2642='PI_ACTUAL_PILLOW_RASTER_FONT_LOCK_AND_ACTIVITY_DELIMITERS'
 # ===== END v26.42 =====
+
+
+# ===== v26.43 PI SOURCE TOFU TRACE + FINAL ACTIVITY SPLIT =====
+APP_VERSION='v26.43-PI-SOURCE-TOFU-TRACE-ACTIVITY-SPLIT'
+
+# Important: v26.42 proved Noto is used and covers the raster text.
+# Therefore trace literal tofu BEFORE raster cleanup, at the RPH row boundary.
+_pi2643_rows_base=_rph_rows
+def _rph_rows(s,ai_text):
+    r=_pi2643_rows_base(s,ai_text)
+    if _pi_primary_v25210(s):
+        import unicodedata
+        for k,v in list(r.items()):
+            t=str(v or '')
+            bad=[]
+            for pos,ch in enumerate(t):
+                cp=ord(ch)
+                if ch in ('\u25a1','\u25a0','\ufffd','\ufffc'):
+                    bad.append((pos,ch,f'U+{cp:04X}',unicodedata.name(ch,'?')))
+            if bad:
+                print('v26.43 PI SOURCE TOFU field=',repr(k),
+                      'bad=',bad,'text=',repr(t),flush=True)
+    return r
+
+# Preserve content exactly. Remove only literal display-artifact characters
+# if they already exist in the final RPH source row; never substitute letters.
+def _pi2643_strip_literal_tofu(text):
+    return ''.join(ch for ch in str(text or '')
+                   if ch not in ('\u25a1','\u25a0','\ufffd','\ufffc'))
+
+# Apply only at PI Paragraph input boundary, before raster renderer.
+_pi2643_paragraph_base=Paragraph
+def Paragraph(text,style,*args,**kwargs):
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        text=_pi2643_strip_literal_tofu(text)
+    return _pi2643_paragraph_base(text,style,*args,**kwargs)
+
+# Activity labels in current PI source can be embedded mid-line.
+# Split exact existing labels before _rph_format_activity_lines' later escaping/render.
+_pi2643_activity_base=_rph_format_activity_lines
+def _rph_format_activity_lines(text):
+    t=str(text or '')
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        # Latin labels
+        t=re.sub(r'[ \t]*(?=(?:Aktiviti|Activity)\s*[1-4]\s*[-–—:])','\n',t,flags=re.I)
+        # Jawi activity word variants + Arabic/Latin digits.
+        t=re.sub(r'[ \t]*(?=(?:اکتي\S{0,12})\s*[١٢٣٤1-4]\s*[-–—:])','\n',t)
+        t=re.sub(r'\n{2,}','\n',t).strip()
+    return _pi2643_activity_base(t)
+
+CIKGULAJU_PATCH_V2643='PI_SOURCE_TOFU_TRACE_STRIP_AND_EXISTING_ACTIVITY_DELIMITER_SPLIT'
+# ===== END v26.43 =====
