@@ -44139,3 +44139,56 @@ def _rph_activity_heading_markup_v25184(text):
 
 CIKGULAJU_PATCH_V2640='PI_PROJECT_FONT_GLYPH_PREFLIGHT_AND_ACTIVITY_PRETRANSFORM_SPLIT'
 # ===== END v26.40 =====
+
+# ===== v26.41 PI FINAL RENDERER NOTO LOCK =====
+APP_VERSION='v26.41-PI-FINAL-RENDERER-NOTO-LOCK'
+
+def _pi2641_register_fonts():
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    reg=_pi2640_project_font(False)
+    bold=_pi2640_project_font(True) or reg
+    if not reg:
+        raise RuntimeError("PI_JAWI_FONT_NOT_PROVISIONED: NotoNaskhArabic-Regular.ttf")
+    probe='ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئڤچڠکݢڽ'
+    _pi2640_font_preflight(probe,False)
+    pdfmetrics.registerFont(TTFont('CikguLajuJawi',reg))
+    pdfmetrics.registerFont(TTFont('CikguLajuJawiBold',bold))
+    return 'CikguLajuJawi','CikguLajuJawiBold'
+
+def _pi2641_force_style_font(style,bold=False):
+    if not globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        return style
+    reg,bld=_pi2641_register_fonts()
+    style.fontName=bld if bold else reg
+    return style
+
+_pi2641_original_Paragraph=Paragraph
+def Paragraph(text,style,*args,**kwargs):
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        raw=str(text or '').lower()
+        style=_pi2641_force_style_font(style,('<b>' in raw or '<strong>' in raw))
+    return _pi2641_original_Paragraph(text,style,*args,**kwargs)
+
+def _pi2641_lock_flowable(obj):
+    if not globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        return obj
+    reg,bld=_pi2641_register_fonts()
+    try:
+        if isinstance(obj,_pi2641_original_Paragraph):
+            raw=str(getattr(obj,'text','')).lower()
+            obj.style.fontName=bld if ('<b>' in raw or '<strong>' in raw) else reg
+    except Exception:
+        pass
+    if isinstance(obj,(list,tuple)):
+        for x in obj: _pi2641_lock_flowable(x)
+    return obj
+
+_pi2641_original_Table=Table
+def Table(data,*args,**kwargs):
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        for row in data or []: _pi2641_lock_flowable(row)
+    return _pi2641_original_Table(data,*args,**kwargs)
+
+CIKGULAJU_PATCH_V2641='PI_FINAL_REPORTLAB_PARAGRAPH_TABLE_NOTO_LOCK'
+# ===== END v26.41 =====
