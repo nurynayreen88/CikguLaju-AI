@@ -43678,3 +43678,60 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V2634='PI_EXISTING_STEPS_SPLIT_INTO_4_ACTIVITY_BLOCKS_NO_CONTENT_REWRITE'
 # ===== END v26.34 =====
+
+
+# ===== v26.35 PI FORCE 4 ACTIVITY BLOCKS =====
+# Fix v26.34 key mismatch: final PI rows may use localized/Jawi labels rather
+# than literal 'AKTIVITI UTAMA'. Scan the final row dictionary by CONTENT.
+APP_VERSION='v26.35-PI-FORCE-4-ACTIVITY-BLOCKS'
+
+def _pi2635_is_activity_value(v):
+    s=str(v or '')
+    return bool(
+        re.search(r'(?:Aktiviti|اکتيۏيتي)',s,re.I)
+        and len(re.findall(r'(?<!\d)[١٢٣٤٥٦٧٨٩٠1-9]+[\.\)]\s+',s)) >= 4
+    )
+
+def _pi2635_force(v):
+    s=str(v or '').strip()
+    # Preserve already-correct multi-block output.
+    heads=re.findall(r'(?:Aktiviti|اکتيۏيتي)\s*[١٢٣٤1-4]',s,re.I)
+    if len(heads)>=4:
+        return s
+
+    steps,title=_pi2634_existing_steps(s)
+    if len(steps)<4:
+        return s
+
+    sizes=_pi2634_partition(len(steps))
+    rendered=[]; pos=0
+    for ai,size in enumerate(sizes,1):
+        head=f"اکتيۏيتي {ai}"
+        if ai==1 and title:
+            head+=f" - {title}"
+        rendered.append(head)
+        for j,step in enumerate(steps[pos:pos+size],1):
+            rendered.append(f"{j}. {step}")
+        pos+=size
+    return '\n'.join(rendered)
+
+def _pi2635_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s):
+        return r
+    changed=False
+    for key,val in list(r.items()):
+        if _pi2635_is_activity_value(val):
+            new=_pi2635_force(val)
+            if new != str(val):
+                r[key]=new
+                changed=True
+    if isinstance(s,dict):
+        s['_pi2635_force_four_blocks']=changed
+    return r
+
+_pi_rph_rows_before_v2635=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2635_apply(s,_pi_rph_rows_before_v2635(s,ai_text))
+
+CIKGULAJU_PATCH_V2635='PI_FINAL_ROW_CONTENT_SCAN_FORCE_4_ACTIVITY_BLOCKS'
+# ===== END v26.35 =====
