@@ -44071,3 +44071,71 @@ def _rph_activity_heading_markup_v25184(text):
 
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
+
+
+# ===== v26.40 PI FONT PREFLIGHT + PRE-TRANSFORM ACTIVITY SPLIT =====
+APP_VERSION='v26.40-PI-FONT-PREFLIGHT-ACTIVITY-SPLIT'
+
+# Production font must be provisioned into the project during build/deploy.
+# No DejaVu fallback is accepted for PI PDF if it cannot cover the actual Jawi.
+def _pi2640_project_font(bold=False):
+    import os
+    base=os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()
+    candidates = (
+        ['assets/fonts/NotoNaskhArabic-Bold.ttf',
+         'fonts/NotoNaskhArabic-Bold.ttf']
+        if bold else
+        ['assets/fonts/NotoNaskhArabic-Regular.ttf',
+         'fonts/NotoNaskhArabic-Regular.ttf']
+    )
+    for rel in candidates:
+        p=os.path.join(base,rel)
+        if os.path.isfile(p) and os.path.getsize(p)>10000:
+            return p
+    return None
+
+def _pi2640_font_preflight(text,bold=False):
+    p=_pi2640_project_font(bold)
+    if not p:
+        raise RuntimeError(
+            'PI_JAWI_FONT_NOT_PROVISIONED: assets/fonts/NotoNaskhArabic-'
+            + ('Bold.ttf' if bold else 'Regular.ttf')
+        )
+    req=_pi2637_required_cps(text)
+    cmap=_font_cmap_v25226(p)
+    missing=sorted(req-cmap)
+    if missing:
+        raise RuntimeError(
+            'PI_JAWI_FONT_GLYPH_PREFLIGHT_FAILED: '
+            + ','.join(f'U+{cp:04X}' for cp in missing)
+        )
+    return p
+
+def _pi_exact_jawi_font_v2604(text,bold=False):
+    return _pi2640_font_preflight(text,bold)
+
+def _pi_jawi_font_v2606(text,bold=False):
+    return _pi2640_font_preflight(text,bold)
+
+def _jawi_font_path_v25213(bold=False):
+    return _pi2640_font_preflight('ابتجدرڤچڠکݢڽ',bold)
+
+# Split the EXISTING activity labels before downstream Jawi/RTL shaping.
+# Content remains byte-for-byte apart from inserted line breaks.
+def _pi2640_activity_pretransform(raw):
+    s=str(raw or '')
+    # Existing Latin labels.
+    s=re.sub(r'\s*(?=(?:Aktiviti|AKTIVITI)\s*[1-4]\s*[-–—:])',
+             '\n',s,flags=re.I)
+    # Existing Jawi label "اکتيۏيتي/اکتيۏيتي"-like forms: match the stable
+    # numeric delimiter conservatively only when the activity word is present.
+    s=re.sub(r'\s*(?=(?:اکتي[^\s]{0,8})\s*[1-4]\s*[-–—:])',
+             '\n',s)
+    return s.strip()
+
+_pi2640_prev_activity_markup=_rph_activity_heading_markup_v25184
+def _rph_activity_heading_markup_v25184(text):
+    return _pi2640_prev_activity_markup(_pi2640_activity_pretransform(text))
+
+CIKGULAJU_PATCH_V2640='PI_PROJECT_FONT_GLYPH_PREFLIGHT_AND_ACTIVITY_PRETRANSFORM_SPLIT'
+# ===== END v26.40 =====
