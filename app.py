@@ -43801,3 +43801,101 @@ def _rph_activity_heading_markup_v25184(text):
 
 CIKGULAJU_PATCH_V2636='PI_REPORTLAB_PHASE_CELL_FORCE_4_ACTIVITY_BLOCKS'
 # ===== END v26.36 =====
+
+
+# ===== v26.37 PI STABLE JAWI FONT RESOLVER =====
+# Fix Render logs repeatedly attempting obsolete NotoSansArabic GitHub paths.
+# Preserve exact source Jawi, existing RTL/RAQM renderer, Activity 1-4 renderer,
+# SK/SP, textbook grounding and all non-PI flows.
+APP_VERSION='v26.37-PI-STABLE-JAWI-FONT-ACTIVITY4'
+
+def _pi2637_required_cps(text):
+    return {ord(c) for c in str(text or '') if 0x0600 <= ord(c) <= 0x08FF}
+
+def _pi2637_local_fonts(bold=False):
+    import os, glob
+    preferred = ([
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf',
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+    ])
+    discovered=[]
+    for pat in (
+        '/usr/share/fonts/truetype/noto/*Arabic*.ttf',
+        '/usr/share/fonts/opentype/fonts-hosny-amiri/*.ttf',
+        '/usr/share/fonts/truetype/freefont/FreeSerif*.ttf',
+    ):
+        discovered.extend(glob.glob(pat))
+    return [p for p in dict.fromkeys(preferred+discovered) if os.path.isfile(p)]
+
+def _pi2637_full_coverage_local(text,bold=False):
+    req=_pi2637_required_cps(text)
+    fonts=_pi2637_local_fonts(bold)
+    for p in fonts:
+        if req.issubset(_font_cmap_v25226(p)):
+            return p
+    return None
+
+def _pi2637_cached_noto(text,bold=False):
+    import os, tempfile, urllib.request
+    req=_pi2637_required_cps(text)
+    fn='NotoNaskhArabic-Bold.ttf' if bold else 'NotoNaskhArabic-Regular.ttf'
+    dst=os.path.join(tempfile.gettempdir(),'cikgulaju_v2637_'+fn)
+
+    if os.path.isfile(dst) and os.path.getsize(dst)>10000:
+        try:
+            if req.issubset(_font_cmap_v25226(dst)):
+                return dst
+        except Exception:
+            pass
+
+    # Current Noto Arabic published build. One stable source; no obsolete
+    # notofonts/arabic raw GitHub paths and no repeated 404 cascade.
+    url='https://notofonts.github.io/arabic/fonts/NotoNaskhArabic/hinted/ttf/'+fn
+    try:
+        urllib.request.urlretrieve(url,dst)
+        try:
+            _font_cmap_v25226.cache.pop(dst,None)
+        except Exception:
+            pass
+        if (os.path.isfile(dst) and os.path.getsize(dst)>10000
+                and req.issubset(_font_cmap_v25226(dst))):
+            print('v26.37 JAWI FONT READY',dst,flush=True)
+            return dst
+    except Exception as e:
+        print('v26.37 JAWI FONT FETCH FAILED',repr(e),flush=True)
+    return None
+
+def _pi_exact_jawi_font_v2604(text,bold=False):
+    p=_pi2637_full_coverage_local(text,bold)
+    if p:
+        return p
+    p=_pi2637_cached_noto(text,bold)
+    if p:
+        return p
+    # Last-resort diagnostic only. Do not alter/substitute valid Jawi text.
+    fonts=_pi2637_local_fonts(bold)
+    if fonts:
+        req=_pi2637_required_cps(text)
+        p=max(fonts,key=lambda x:len(req & _font_cmap_v25226(x)))
+        missing=sorted(req-_font_cmap_v25226(p))
+        if missing:
+            print('v26.37 JAWI FONT INCOMPLETE',
+                  [f'U+{x:04X}' for x in missing],'FONT',p,flush=True)
+        return p
+    raise RuntimeError('v26.37: no usable Arabic/Jawi font available')
+
+def _pi_jawi_font_v2606(text,bold=False):
+    return _pi_exact_jawi_font_v2604(text,bold)
+
+# Stop the legacy v25.223 resolver from repeatedly hitting obsolete URLs.
+def _jawi_font_path_v25213(bold=False):
+    sample='ابتجدرڤچڠکݢڽ'
+    return _pi_exact_jawi_font_v2604(sample,bold)
+
+CIKGULAJU_PATCH_V2637='PI_STABLE_NOTO_NASKH_FONT_NO_404_PRESERVE_ACTIVITY4'
+# ===== END v26.37 =====
