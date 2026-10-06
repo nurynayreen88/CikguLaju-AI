@@ -44192,3 +44192,56 @@ def Table(data,*args,**kwargs):
 
 CIKGULAJU_PATCH_V2641='PI_FINAL_REPORTLAB_PARAGRAPH_TABLE_NOTO_LOCK'
 # ===== END v26.41 =====
+
+
+# ===== v26.42 PI ACTUAL RASTER RENDERER FONT LOCK + ACTIVITY DELIMITERS =====
+APP_VERSION='v26.42-PI-RASTER-FONT-LOCK-ACTIVITY-DELIMITERS'
+
+# The actual PI/Jawi PDF path is _JawiRasterParagraph_v25213 -> Pillow ImageFont,
+# not ReportLab TTFont. Lock that exact path to the provisioned project font.
+def _jawi_font_path_v25213(bold=False):
+    p=_pi2640_project_font(bool(bold))
+    if not p and bold:
+        p=_pi2640_project_font(False)
+    if not p:
+        raise RuntimeError('PI_JAWI_FONT_NOT_PROVISIONED_V2642')
+    return p
+
+# Preflight every string immediately before Pillow loads/draws it.
+_pi2642_old_font_method=_JawiRasterParagraph_v25213._font
+def _pi2642_font(self,px):
+    p=_jawi_font_path_v25213(self.bold)
+    req=_pi2637_required_cps(self.text)
+    cmap=_font_cmap_v25226(p)
+    missing=sorted(req-cmap)
+    if missing:
+        raise RuntimeError('PI_JAWI_RASTER_MISSING_GLYPHS_V2642:'+
+                           ','.join('U+%04X'%x for x in missing))
+    from PIL import ImageFont
+    return ImageFont.truetype(p,px)
+_JawiRasterParagraph_v25213._font=_pi2642_font
+
+# The base PDF generator calls _rph_format_activity_lines() before Paragraph().
+# Split existing activity delimiters there, before Jawi rasterization.
+_pi2642_old_rph_format_activity_lines=_rph_format_activity_lines
+def _rph_format_activity_lines(text):
+    raw=_pi2642_old_rph_format_activity_lines(text)
+    if not globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        return raw
+    # Existing labels only. No generation/rebalancing/rewording.
+    raw=re.sub(r'\s*(?=(?:Aktiviti|Activity)\s*[1-4]\s*[-–—:])','\n',str(raw),flags=re.I)
+    # Jawi activity word variants, only when followed by activity number+delimiter.
+    raw=re.sub(r'\s*(?=(?:اکتي\S{0,10})\s*[1-4]\s*[-–—:])','\n',raw)
+    return raw.strip()
+
+# Runtime trace on the exact Pillow renderer path.
+_pi2642_old_wrap=_JawiRasterParagraph_v25213.wrap
+def _pi2642_wrap(self,availWidth,availHeight):
+    p=_jawi_font_path_v25213(self.bold)
+    print('v26.42 PI RASTER FONT',p,'size=',__import__('os').path.getsize(p),
+          'text_cp=',len(_pi2637_required_cps(self.text)),flush=True)
+    return _pi2642_old_wrap(self,availWidth,availHeight)
+_JawiRasterParagraph_v25213.wrap=_pi2642_wrap
+
+CIKGULAJU_PATCH_V2642='PI_ACTUAL_PILLOW_RASTER_FONT_LOCK_AND_ACTIVITY_DELIMITERS'
+# ===== END v26.42 =====
