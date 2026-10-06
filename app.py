@@ -43899,3 +43899,91 @@ def _jawi_font_path_v25213(bold=False):
 
 CIKGULAJU_PATCH_V2637='PI_STABLE_NOTO_NASKH_FONT_NO_404_PRESERVE_ACTIVITY4'
 # ===== END v26.37 =====
+
+
+# ===== v26.38 PI JAWI FONT NON-FATAL FALLBACK =====
+# Render may have no Noto/Amiri/FreeSerif Arabic font and may block font fetches.
+# Font resolution must NEVER abort RPH generation. Preserve source Jawi and use
+# the best font available in the runtime as a last resort.
+
+APP_VERSION='v26.38-PI-JAWI-FONT-NONFATAL'
+
+def _pi2638_any_font_candidates(bold=False):
+    import os, glob
+    preferred = ([
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+        '/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+        '/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf',
+    ])
+    found=[]
+    for pat in (
+        '/usr/share/fonts/**/*.ttf',
+        '/usr/local/share/fonts/**/*.ttf',
+        '/opt/render/project/src/**/*.ttf',
+        '/opt/render/project/src/**/*.otf',
+    ):
+        found.extend(glob.glob(pat,recursive=True))
+    return [p for p in dict.fromkeys(preferred+found) if os.path.isfile(p)]
+
+def _pi2638_best_nonfatal_font(text,bold=False):
+    req=_pi2637_required_cps(text)
+    candidates=_pi2637_local_fonts(bold)+_pi2638_any_font_candidates(bold)
+    best=None; best_score=-1
+    for p in dict.fromkeys(candidates):
+        try:
+            cmap=_font_cmap_v25226(p)
+            score=len(req & cmap)
+            if req.issubset(cmap):
+                return p
+            if score>best_score:
+                best,best_score=p,score
+        except Exception:
+            continue
+    return best
+
+# Override v26.37 resolver: network remains optional, but failure is non-fatal.
+_pi2638_v2637_cached_noto=_pi2637_cached_noto
+def _pi_exact_jawi_font_v2604(text,bold=False):
+    p=_pi2637_full_coverage_local(text,bold)
+    if p: return p
+
+    try:
+        p=_pi2638_v2637_cached_noto(text,bold)
+        if p: return p
+    except Exception as e:
+        print('v26.38 optional Jawi font fetch skipped',repr(e),flush=True)
+
+    p=_pi2638_best_nonfatal_font(text,bold)
+    if p:
+        req=_pi2637_required_cps(text)
+        try: missing=sorted(req-_font_cmap_v25226(p))
+        except Exception: missing=[]
+        if missing:
+            print('v26.38 JAWI FONT FALLBACK',
+                  [f'U+{x:04X}' for x in missing],'FONT',p,flush=True)
+        return p
+
+    # Extremely minimal image: return a conventional path only if it exists.
+    # Do not raise here; callers may still have their own fallback.
+    import os
+    for p in (
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+    ):
+        if os.path.isfile(p): return p
+    return None
+
+def _pi_jawi_font_v2606(text,bold=False):
+    return _pi_exact_jawi_font_v2604(text,bold)
+
+def _jawi_font_path_v25213(bold=False):
+    p=_pi_exact_jawi_font_v2604('ابتجدرڤچڠکݢڽ',bold)
+    if p: return p
+    # Preserve legacy app continuity instead of crashing.
+    return ('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf' if bold
+            else '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+
+CIKGULAJU_PATCH_V2638='PI_JAWI_FONT_RESOLUTION_NEVER_ABORTS_RPH'
+# ===== END v26.38 =====
