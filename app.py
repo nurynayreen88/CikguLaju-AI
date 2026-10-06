@@ -43382,3 +43382,112 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V2630='PI_ACTIVITY_PRESENTATION_ONLY_KEEP_REFINED_CONTENT'
 # ===== END v26.30 =====
+
+
+# ===== v26.31 PI UNIT MENU DATA/FALLBACK FIX =====
+# Fixes empty Unit menu: derive unit labels from the existing PI PdP row
+# without changing curriculum content or DB.
+APP_VERSION='v26.31-PI-UNIT-MENU-FIX'
+
+def _pi2631_unit_value(r):
+    r=r or {}
+    # Prefer existing curriculum/unit fields.
+    for key in ('unit','unit_name','textbook_unit','bidang','theme','topic_group','tajuk_unit'):
+        v=str(r.get(key) or '').strip()
+        if v and v not in ('—','-','None'):
+            return v
+    # Existing PI rows may carry the field/category in skill_focus/topic.
+    # Use only the leading existing label; do not invent a new unit.
+    for key in ('skill_focus','topic'):
+        v=str(r.get(key) or '').strip()
+        if v:
+            m=re.match(r'^\s*([^:|•\-–—]{2,40})\s*[:|•\-–—]\s*.+$',v)
+            if m:
+                return m.group(1).strip()
+    return None
+
+def _pi_unit_menu_v2631(cid):
+    ss=state.setdefault(cid,{})
+    rows=_pi_pdp_rows_v25210(ss.get('year',''))
+    ss['_pi_pdp_rows_v25210']=rows
+    groups={}
+    for i,r in enumerate(rows):
+        u=_pi2631_unit_value(r)
+        if u: groups.setdefault(u,[]).append(i)
+
+    # If rows do not expose unit metadata, do NOT show a blank menu:
+    # fall back to the original complete PdP list while retaining week labels.
+    if not groups:
+        kb=[]
+        for i,r in enumerate(rows[:18]):
+            seq=r.get('sequence_no')
+            wk=_pi2629_week_label(r)
+            focus=str(r.get('skill_focus') or r.get('topic') or '').strip()
+            label=f"PdP {seq}"
+            if wk: label+=f" • {wk}"
+            if focus: label+=f" • {focus}"
+            kb.append([{'text':label[:64],'callback_data':f'pipdp210|{i}'}])
+        kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+                   {'text':'🏠 Menu Utama','callback_data':'home'}])
+        return send(cid,
+            f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+            "Pilih <b>PdP</b>.",kb)
+
+    ss['_pi2629_unit_groups']=groups
+    ss['_pi2631_unit_names']=list(groups)
+    kb=[]
+    for n,u in enumerate(groups):
+        kb.append([{'text':u[:60],'callback_data':f'piunit2631|{n}'}])
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+        "Pilih <b>Unit</b>.",kb)
+
+def _pi_unit_pdp_menu_v2631(cid,token,page=0):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_pi_pdp_rows_v25210') or _pi_pdp_rows_v25210(ss.get('year',''))
+    groups=ss.get('_pi2629_unit_groups') or {}
+    units=ss.get('_pi2631_unit_names') or list(groups)
+    try: unit=units[int(token)]
+    except Exception: return _pi_unit_menu_v2631(cid)
+    idxs=groups.get(unit,[])
+    page=max(0,int(page)); per=18; start=page*per
+    kb=[]
+    for i in idxs[start:start+per]:
+        r=rows[i]
+        seq=r.get('sequence_no'); wk=_pi2629_week_label(r)
+        focus=str(r.get('skill_focus') or r.get('topic') or '').strip()
+        label=f"PdP {seq}"
+        if wk: label+=f" • {wk}"
+        if focus: label+=f" • {focus}"
+        kb.append([{'text':label[:64],'callback_data':f'pipdp210|{i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️','callback_data':f'piupage2631|{token}|{page-1}'})
+    if start+per<len(idxs): nav.append({'text':'➡️','callback_data':f'piupage2631|{token}|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Pilih Unit','callback_data':'piunits2631'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n"
+        f"<b>{html.escape(str(unit))}</b>\n\nPilih <b>PdP</b>.",kb)
+
+_callback_before_v2631=callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    if ds=='sub_Pendidikan Islam' and str(ss.get('year') or '') in tuple('Tahun '+str(i) for i in range(1,7)):
+        ss['subject']='Pendidikan Islam'; ss['task']='quick_material'; ss['quick_material_flow']=True
+        return _pi_unit_menu_v2631(cid)
+    if ds=='piunits2631': return _pi_unit_menu_v2631(cid)
+    if ds.startswith('piunit2631|'):
+        return _pi_unit_pdp_menu_v2631(cid,ds.split('|',1)[1],0)
+    if ds.startswith('piupage2631|'):
+        try:
+            _,tok,pg=ds.split('|',2); pg=int(pg)
+        except Exception: return _pi_unit_menu_v2631(cid)
+        return _pi_unit_pdp_menu_v2631(cid,tok,pg)
+    return _callback_before_v2631(cid,d)
+
+CIKGULAJU_PATCH_V2631='PI_UNIT_MENU_POPULATE_AND_LITERAL_BACKSLASH_FIX'
+# ===== END v26.31 =====
