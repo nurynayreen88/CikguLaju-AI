@@ -44071,3 +44071,46 @@ def _rph_activity_heading_markup_v25184(text):
 
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
+
+# ===== v26.40 PI G/V GLYPH-ONLY FIX (NO FONTTOOLS) =====
+# Scope: renderer only. Preserve source Jawi, RPH layout, DB and content.
+# Known Render issue: Malay Jawi G U+0762 (ݢ) and V U+06CF (ۏ) may tofu
+# under the selected Arabic font. For paragraphs containing either codepoint,
+# prefer DejaVu Sans, which provides both glyphs, without rewriting spelling.
+APP_VERSION='v26.40-PI-GV-GLYPH-ONLY-NO-FONTTOOLS'
+
+def _pi2640_gv_font_path(bold=False):
+    import os
+    candidates = ([
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+        '/usr/local/share/fonts/DejaVuSans-Bold.ttf',
+    ] if bold else [
+        '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+        '/usr/local/share/fonts/DejaVuSans.ttf',
+    ])
+    for p in candidates:
+        if os.path.isfile(p):
+            return p
+    return None
+
+# Keep the existing stable renderer; change only font selection for text that
+# actually contains the two problematic Malay Jawi letters.
+_JawiRasterParagraph_v2640_gv_base = _JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2640_gv_base):
+    def __init__(self,text,style):
+        super().__init__(text,style)
+        plain=str(getattr(self,'text','') or '')
+        self._v2640_has_gv = ('\u0762' in plain or '\u06cf' in plain)
+        self._v2640_gv_font = _pi2640_gv_font_path(bool(getattr(self,'bold',False))) if self._v2640_has_gv else None
+
+    def _font(self,px):
+        if self._v2640_gv_font:
+            from PIL import ImageFont
+            try:
+                return ImageFont.truetype(self._v2640_gv_font,px,layout_engine=ImageFont.Layout.RAQM)
+            except Exception:
+                return ImageFont.truetype(self._v2640_gv_font,px)
+        return super()._font(px)
+
+CIKGULAJU_PATCH_V2640_GV='PI_G_V_GLYPH_ONLY_NO_FONTTOOLS'
+# ===== END v26.40 PI G/V GLYPH-ONLY FIX =====
