@@ -43735,3 +43735,69 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V2635='PI_FINAL_ROW_CONTENT_SCAN_FORCE_4_ACTIVITY_BLOCKS'
 # ===== END v26.35 =====
+
+
+# ===== v26.36 PI PDF RENDERER 4-ACTIVITY FIX =====
+# Fix at the actual ReportLab render boundary.
+# v26.34/v26.35 acted on row dictionaries, but legacy activity headings can be
+# embedded inline by the time the phase cell is rendered. Normalize ONLY PI
+# activity display text immediately before Paragraph markup.
+APP_VERSION='v26.36-PI-RENDERER-4-ACTIVITY-BLOCKS'
+
+_rph_activity_heading_markup_before_v2636=_rph_activity_heading_markup_v25184
+
+def _pi2636_render_activity_text(raw):
+    s=str(raw or '—').replace('\r\n','\n').replace('\r','\n')
+
+    # Recover embedded legacy headings without changing their wording.
+    # Put every existing Activity 2/3/4 heading on its own line.
+    s=re.sub(
+        r'\s*(?=(?:Aktiviti|اکتيۏيتي)\s*[٢٣٤2-4]\s*(?:[-–—:]|\b))',
+        '\n',
+        s,
+        flags=re.I
+    )
+
+    # If runtime still supplies only Activity 1 + a flat numbered list,
+    # preserve every existing step verbatim and create four presentation blocks.
+    heads=re.findall(r'(?:Aktiviti|اکتيۏيتي)\s*[١٢٣٤1-4]',s,re.I)
+    if len(heads)<2:
+        hm=re.search(r'(?:Aktiviti|اکتيۏيتي)\s*[١1](?:\s*[-–—:]\s*([^\n]*))?',s,re.I)
+        title=(hm.group(1) or '').strip() if hm else ''
+        body=s[hm.end():].strip() if hm else s
+        parts=re.split(r'(?=(?<!\d)[١٢٣٤٥٦٧٨٩٠1-9]+[\.\)]\s*)',body)
+        steps=[]
+        for p in parts:
+            p=p.strip()
+            if not p: continue
+            p=re.sub(r'^[١٢٣٤٥٦٧٨٩٠1-9]+[\.\)]\s*','',p).strip()
+            if p: steps.append(p)
+        if len(steps)>=4:
+            k=4; q,r=divmod(len(steps),k)
+            sizes=[q+(1 if i<r else 0) for i in range(k)]
+            lines=[]; pos=0
+            for ai,size in enumerate(sizes,1):
+                head=f"اکتيۏيتي {ai}"
+                if ai==1 and title: head+=f" - {title}"
+                lines.append(head)
+                for j,step in enumerate(steps[pos:pos+size],1):
+                    lines.append(f"{j}. {step}")
+                pos+=size
+            s='\n'.join(lines)
+    return s
+
+def _rph_activity_heading_markup_v25184(text):
+    # This flag is set only while a primary PI PDF is being rendered.
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593',False):
+        raw=_pi2636_render_activity_text(text)
+        lines=[]
+        for line in raw.splitlines():
+            e=escape(line)
+            if re.match(r'^\s*(?:Aktiviti|اکتيۏيتي)\s*[١٢٣٤1-4](?:\s*[-–—:].*)?$',line,re.I):
+                e='<b>'+e+'</b>'
+            lines.append(e)
+        return '<br/>'.join(lines)
+    return _rph_activity_heading_markup_before_v2636(text)
+
+CIKGULAJU_PATCH_V2636='PI_REPORTLAB_PHASE_CELL_FORCE_4_ACTIVITY_BLOCKS'
+# ===== END v26.36 =====
