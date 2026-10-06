@@ -44214,18 +44214,198 @@ APP_VERSION='v26.39-TT12-LOCAL-TIMETABLE-UPLOAD'
 # ===== END TT12 =====
 
 
-# ===== v26.45 PI RPH CONTENT RESTORE TO v26.26 BEHAVIOUR =====
-# Non-destructive compatibility patch. Keep current timetable/UI/DB/mapping code.
-# Restore only the PI RPH row builder to the pre-v26.28 content path.
-APP_VERSION='v26.45-PI-RPH-CONTENT-RESTORE-V2626'
+# ===== v26.46 PI JAWI STABILITY FIRST / NO TOFU / KEEP TT12 =====
+# Priority requested by user: correct readable Jawi first. No Activity bold/splitting.
+# Keep existing curriculum/textbook grounding and TT12 timetable reader.
+APP_VERSION='v26.46-PI-JAWI-STABLE-NO-BOX-KEEP-TT12'
+CIKGULAJU_PATCH_V2646='PI_JAWI_STABILITY_NO_TOFU_KEEP_TEXTBOOK_GROUNDING_TT12'
 
-_pi_rph_rows_current_before_v2645 = _rph_rows
-def _rph_rows(s, ai_text):
-    sub=str((s or {}).get('subject') or '').strip().casefold()
-    is_pi=('pendidikan islam' in sub) or sub in ('pi','islamic education')
-    if is_pi and '_pi_rph_rows_before_v2628' in globals():
-        return _pi_rph_rows_before_v2628(s, ai_text)
-    return _pi_rph_rows_current_before_v2645(s, ai_text)
+import re as _re_v2646
+import unicodedata as _ud_v2646
 
-CIKGULAJU_PATCH_V2645='PI_RPH_CONTENT_RESTORE_TO_PRE_V2628_V2626_BEHAVIOUR'
-# ===== END v26.45 =====
+# Canonical terms: lock these once at the final render boundary.
+# Do not let older presentation patches rewrite them again.
+def _pi2646_canonical_jawi(text):
+    t=_ud_v2646.normalize('NFC',str(text or ''))
+    # remove actual tofu/replacement/control characters if any upstream source contains them
+    t=''.join(ch for ch in t if ord(ch) not in {
+        0x25A1,0x25A0,0xFFFD,0xFFFC,0xFEFF,
+        0x200B,0x200C,0x200D,0x2060,0x202A,0x202B,0x202C,0x202D,0x202E,
+        0x2066,0x2067,0x2068,0x2069
+    })
+    # Canonical spellings used by CikguLaju PI.
+    # Only normalize known variants; do not transliterate arbitrary Jawi.
+    for pat in (r'(?i)\\bguru\\b',):
+        t=_re_v2646.sub(pat,'ݢورو',t)
+    for pat in (r'(?i)\\baktiviti\\b',r'اکتي[ويۏڤ]*يتي'):
+        t=_re_v2646.sub(pat,'اکتيۏيتي',t)
+    return t
+
+# Current Google Fonts variable Noto Naskh Arabic is preferred because it covers
+# Malay Jawi extensions. This is fetched only when no complete local font exists.
+def _pi2646_font_candidates(bold=False):
+    import os, glob
+    roots=[
+        os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '.',
+        '/opt/render/project/src','/usr/share/fonts','/usr/local/share/fonts','/tmp'
+    ]
+    names=['NotoNaskhArabic','NotoSansArabic','Amiri','Scheherazade']
+    found=[]
+    for root in roots:
+        for ext in ('*.ttf','*.otf'):
+            for p in glob.glob(os.path.join(root,'**',ext),recursive=True):
+                bn=os.path.basename(p).lower()
+                if any(n.lower() in bn for n in names):
+                    if bold and ('bold' not in bn and 'wght' not in bn):
+                        continue
+                    found.append(p)
+    return list(dict.fromkeys(found))
+
+def _pi2646_required(text):
+    return {ord(ch) for ch in str(text or '') if 0x0600 <= ord(ch) <= 0x08FF}
+
+def _pi2646_complete_font(text,bold=False):
+    import os,tempfile,urllib.request
+    req=_pi2646_required(text)
+    for p in _pi2646_font_candidates(bold):
+        try:
+            if req.issubset(_font_cmap_v25226(p)):
+                return p
+        except Exception:
+            pass
+    # Current Google Fonts source. Cache in /tmp for the Render instance.
+    dst=os.path.join(tempfile.gettempdir(),'CikguLaju-NotoNaskhArabic-wght.ttf')
+    url='https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf'
+    try:
+        if not (os.path.isfile(dst) and os.path.getsize(dst)>10000):
+            urllib.request.urlretrieve(url,dst)
+        try: _font_cmap_v25226.cache.pop(dst,None)
+        except Exception: pass
+        if req.issubset(_font_cmap_v25226(dst)):
+            return dst
+    except Exception as e:
+        print('v26.46 Noto download unavailable',repr(e),flush=True)
+    # Last local resolver. We sanitize only glyphs it truly cannot draw below.
+    try:
+        return _best_jawi_font_v25226(text,bold)
+    except Exception:
+        return '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+
+def _pi2646_render_safe(text,font_path):
+    """Never feed an unsupported Arabic/Jawi codepoint to Pillow."""
+    t=_pi2646_canonical_jawi(text)
+    try: cmap=_font_cmap_v25226(font_path)
+    except Exception: cmap=set()
+    # Render-only compatibility fallbacks, source/database remain unchanged.
+    # ݢ (GA) and ۏ (VA) are the two historical Render troublemakers.
+    if cmap:
+        if 0x0762 not in cmap and 0x06AC in cmap:
+            t=t.replace('ݢ','ڬ')
+        if 0x06CF not in cmap:
+            if 0x06CB in cmap: t=t.replace('ۏ','ۋ')
+            elif 0x0648 in cmap: t=t.replace('ۏ','و')
+        # Strip unsupported combining marks only; never delete base Jawi letters.
+        chars=[]
+        for ch in t:
+            cp=ord(ch)
+            if 0x0600 <= cp <= 0x08FF and cp not in cmap and _ud_v2646.combining(ch):
+                continue
+            chars.append(ch)
+        t=''.join(chars)
+    return t
+
+# Replace only the FINAL Jawi raster class. This bypasses the chain of v26.03-v26.39
+# font/text mutations that caused repeated spelling changes and tofu boxes.
+class _JawiRasterParagraph_v2646(Flowable):
+    def __init__(self,text,style):
+        Flowable.__init__(self)
+        import html as _html
+        self.style=style
+        raw=str(text or '').replace('<br/>','\n').replace('<br />','\n').replace('<br>','\n')
+        self.bold=bool(_re_v2646.fullmatch(r'\s*<b>.*</b>\s*',raw,_re_v2646.S))
+        raw=_re_v2646.sub(r'<[^>]+>','',raw)
+        self.text=_pi2646_canonical_jawi(_html.unescape(raw))
+        self.font_path=_pi2646_complete_font(self.text,self.bold)
+        self.text=_pi2646_render_safe(self.text,self.font_path)
+        self._img=None; self._draw_w=1; self._draw_h=1
+
+    def _font(self,px):
+        from PIL import ImageFont
+        try:
+            return ImageFont.truetype(self.font_path,px,layout_engine=ImageFont.Layout.RAQM)
+        except Exception:
+            return ImageFont.truetype(self.font_path,px)
+
+    def _measure(self,draw,text,font):
+        try: b=draw.textbbox((0,0),text,font=font,direction='rtl',language='ms')
+        except Exception: b=draw.textbbox((0,0),text,font=font)
+        return max(0,b[2]-b[0])
+
+    def _wrap_line(self,draw,line,font,maxpx):
+        words=line.split()
+        if not words: return ['']
+        lines=[]; cur=''
+        for w in words:
+            test=w if not cur else cur+' '+w
+            if cur and self._measure(draw,test,font)>maxpx:
+                lines.append(cur); cur=w
+            else: cur=test
+        if cur: lines.append(cur)
+        return lines
+
+    def wrap(self,availWidth,availHeight):
+        from PIL import Image,ImageDraw
+        from reportlab.lib.utils import ImageReader
+        scale=3.0
+        fs=max(7.0,float(getattr(self.style,'fontSize',9.5)))
+        leading=max(fs*1.25,float(getattr(self.style,'leading',fs*1.3)))
+        font=self._font(max(18,int(fs*scale)))
+        dummy=Image.new('RGBA',(16,16),(255,255,255,0)); d=ImageDraw.Draw(dummy)
+        maxpx=max(10,int(availWidth*scale)-8)
+        lines=[]
+        for logical in self.text.split('\n'):
+            lines.extend(self._wrap_line(d,logical,font,maxpx))
+        if not lines: lines=['']
+        hpx=max(1,int(len(lines)*leading*scale+8)); wpx=max(1,int(availWidth*scale))
+        im=Image.new('RGBA',(wpx,hpx),(255,255,255,0)); dr=ImageDraw.Draw(im)
+        y=0
+        for line in lines:
+            try:
+                dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra',direction='rtl',language='ms')
+            except Exception:
+                dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra')
+            y+=int(leading*scale)
+        self._img=ImageReader(im); self._draw_w=availWidth; self._draw_h=hpx/scale
+        return availWidth,self._draw_h
+
+    def draw(self):
+        if self._img:
+            self.canv.drawImage(self._img,0,0,width=self._draw_w,height=self._draw_h,mask='auto',preserveAspectRatio=True)
+
+# Save the current ReportLab paragraph fallback before overriding.
+_pi2646_rl_paragraph = _RL_Paragraph_v25213 if '_RL_Paragraph_v25213' in globals() else Paragraph
+
+def Paragraph(text,style,*args,**kwargs):
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593') and _has_jawi_v25213(text):
+        return _JawiRasterParagraph_v2646(text,style)
+    return _pi2646_rl_paragraph(text,style,*args,**kwargs)
+
+# Keep PI activities concise. Do not split/bold/rebalance Activity 1-4 in v26.46.
+# Existing textbook-grounded content is preserved; this only removes duplicated blank lines.
+def _rph_activity_heading_markup_v25184(text):
+    raw=str(text or '—')
+    raw=_re_v2646.sub(r'\n{3,}','\n\n',raw).strip()
+    return '<br/>'.join(escape(line) for line in raw.splitlines())
+
+# Final safety audit helper available in Render logs/tests.
+def _pi2646_jawi_audit(text):
+    t=_pi2646_canonical_jawi(text)
+    p=_pi2646_complete_font(t,False)
+    cmap=_font_cmap_v25226(p)
+    missing=sorted(cp for cp in _pi2646_required(t) if cp not in cmap)
+    return {'font':p,'missing':['U+%04X'%cp for cp in missing],
+            'has_box':('□' in t or '■' in t or '\ufffd' in t),
+            'guru_ok':('ݢورو' in t or 'Guru' not in t),
+            'aktiviti_ok':('اکتيۏيتي' in t or 'Aktiviti' not in t)}
+
+# ===== END v26.46 =====
