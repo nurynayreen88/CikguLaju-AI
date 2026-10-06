@@ -44297,3 +44297,96 @@ def _rph_format_activity_lines(text):
 
 CIKGULAJU_PATCH_V2643='PI_SOURCE_TOFU_TRACE_STRIP_AND_EXISTING_ACTIVITY_DELIMITER_SPLIT'
 # ===== END v26.43 =====
+
+
+# ===== v26.44 PI RAQM SHAPING PROBE + ACTIVITY RENDER =====
+APP_VERSION='v26.44-PI-RAQM-SHAPING-PROBE-ACTIVITY-RENDER'
+
+# v26.42/43 proved source has no literal tofu and Noto cmap covers source chars.
+# Diagnose the remaining stage: HarfBuzz/RAQM shaped glyph output.
+def _pi2644_raqm_probe(text,font_path,px):
+    from PIL import ImageFont
+    import unicodedata
+    f=ImageFont.truetype(font_path,px,layout_engine=ImageFont.Layout.RAQM)
+    # Pillow getmask/getbbox exercises the same shaping stack used by draw.text.
+    failures=[]
+    for token in str(text or '').replace('\n',' ').split():
+        if not any(0x0600 <= ord(c) <= 0x08FF for c in token):
+            continue
+        try:
+            box=f.getbbox(token,direction='rtl',language='ar')
+            mask=f.getmask(token,direction='rtl',language='ar')
+            if box is None or mask.getbbox() is None:
+                failures.append((token,[f'U+{ord(c):04X}' for c in token]))
+        except Exception as e:
+            failures.append((token,'RAQM_ERROR:'+repr(e)))
+    if failures:
+        print('v26.44 RAQM SHAPING FAILURE',failures,'FONT',font_path,flush=True)
+    return f
+
+def _pi2644_font(self,px):
+    p=_jawi_font_path_v25213(self.bold)
+    req=_pi2637_required_cps(self.text)
+    missing=sorted(req-_font_cmap_v25226(p))
+    if missing:
+        raise RuntimeError('PI_JAWI_RASTER_MISSING_GLYPHS_V2644:'+
+                           ','.join('U+%04X'%x for x in missing))
+    return _pi2644_raqm_probe(self.text,p,px)
+_JawiRasterParagraph_v25213._font=_pi2644_font
+
+# Use Arabic shaping language tag for Jawi. "ms" is not an OpenType shaping
+# language tag expected by all HarfBuzz stacks; Arabic script shaping is the
+# required behaviour here.
+_pi2644_old_measure=_JawiRasterParagraph_v25213._measure
+def _pi2644_measure(self,draw,text,font):
+    try:
+        b=draw.textbbox((0,0),text,font=font,direction='rtl',language='ar')
+        return max(0,b[2]-b[0])
+    except Exception:
+        return _pi2644_old_measure(self,draw,text,font)
+_JawiRasterParagraph_v25213._measure=_pi2644_measure
+
+# Replace only draw/wrap methods on the final raster class so the same font,
+# RAQM and language tag are used consistently from measurement through drawing.
+def _pi2644_wrap(self,availWidth,availHeight):
+    from PIL import Image,ImageDraw
+    from reportlab.lib.utils import ImageReader
+    scale=3.0
+    fs=max(7.0,float(getattr(self.style,'fontSize',9.5)))
+    leading=max(fs*1.25,float(getattr(self.style,'leading',fs*1.3)))
+    font=self._font(max(18,int(fs*scale)))
+    dummy=Image.new('RGBA',(16,16),(255,255,255,0)); d=ImageDraw.Draw(dummy)
+    maxpx=max(10,int(availWidth*scale)-8)
+    lines=[]
+    for logical in self.text.split('\n'):
+        lines.extend(self._wrap_line(d,logical,font,maxpx))
+    if not lines: lines=['']
+    hpx=max(1,int(len(lines)*leading*scale+8)); wpx=max(1,int(availWidth*scale))
+    im=Image.new('RGBA',(wpx,hpx),(255,255,255,0)); dr=ImageDraw.Draw(im)
+    y=0
+    for line in lines:
+        try:
+            dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra',
+                    direction='rtl',language='ar')
+        except Exception as e:
+            print('v26.44 RAQM DRAW ERROR',repr(e),'TEXT',repr(line),flush=True)
+            dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra')
+        y+=int(leading*scale)
+    self._img=ImageReader(im); self._draw_w=availWidth; self._draw_h=hpx/scale
+    return availWidth,self._draw_h
+_JawiRasterParagraph_v25213.wrap=_pi2644_wrap
+
+# Activity: the current final cell receives Jawi activity labels after earlier
+# transformations. Put any existing label ending in 1/2/3/4 on its own line.
+_pi2644_activity_base=_rph_format_activity_lines
+def _rph_format_activity_lines(text):
+    t=_pi2644_activity_base(text)
+    if globals().get('_CIKGULAJU_PI_RENDER_CONTEXT_V2593'):
+        # Broad but content-preserving: only line-break before an existing
+        # activity-looking label with number 1-4 and dash/colon.
+        t=re.sub(r'[ \t]+(?=([^\n]{2,24})\s*[١٢٣٤1-4]\s*[-–—:])', '\n', str(t))
+        t=re.sub(r'\n{2,}','\n',t).strip()
+    return t
+
+CIKGULAJU_PATCH_V2644='PI_RAQM_ARABIC_SHAPING_PROBE_AND_FINAL_ACTIVITY_RENDER'
+# ===== END v26.44 =====
