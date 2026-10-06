@@ -44072,45 +44072,43 @@ def _rph_activity_heading_markup_v25184(text):
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
 
-# ===== v26.40 PI G/V GLYPH-ONLY FIX (NO FONTTOOLS) =====
-# Scope: renderer only. Preserve source Jawi, RPH layout, DB and content.
-# Known Render issue: Malay Jawi G U+0762 (ݢ) and V U+06CF (ۏ) may tofu
-# under the selected Arabic font. For paragraphs containing either codepoint,
-# prefer DejaVu Sans, which provides both glyphs, without rewriting spelling.
-APP_VERSION='v26.40-PI-GV-GLYPH-ONLY-NO-FONTTOOLS'
+# ===== v26.40 PI NASKH G/V FIX — NO FONTTOOLS =====
+# Baseline-preserving renderer patch. Do not rewrite Jawi text/layout.
+# Only paragraphs containing Malay Jawi G U+0762 (ݢ) or V U+06CF (ۏ)
+# are forced to a Noto Naskh Arabic font instead of DejaVu.
+APP_VERSION='v26.40-PI-NASKH-GV-NO-FONTTOOLS'
 
-def _pi2640_gv_font_path(bold=False):
-    import os
-    candidates = ([
-        '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
-        '/usr/local/share/fonts/DejaVuSans-Bold.ttf',
-    ] if bold else [
-        '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
-        '/usr/local/share/fonts/DejaVuSans.ttf',
-    ])
-    for p in candidates:
-        if os.path.isfile(p):
-            return p
+def _pi2640_naskh_gv_font(bold=False):
+    import os, glob
+    names=(['NotoNaskhArabic-Bold.ttf'] if bold else
+           ['NotoNaskhArabic-Regular.ttf','NotoNaskhArabic-Medium.ttf'])
+    roots=[
+        os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '.',
+        '/opt/render/project/src', '/usr/share/fonts', '/usr/local/share/fonts'
+    ]
+    for root in roots:
+        for name in names:
+            for p in glob.glob(os.path.join(root,'**',name),recursive=True):
+                if os.path.isfile(p):
+                    return p
     return None
 
-# Keep the existing stable renderer; change only font selection for text that
-# actually contains the two problematic Malay Jawi letters.
-_JawiRasterParagraph_v2640_gv_base = _JawiRasterParagraph_v25213
-class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2640_gv_base):
+_JawiRasterParagraph_v2640_naskh_base=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2640_naskh_base):
     def __init__(self,text,style):
         super().__init__(text,style)
         plain=str(getattr(self,'text','') or '')
-        self._v2640_has_gv = ('\u0762' in plain or '\u06cf' in plain)
-        self._v2640_gv_font = _pi2640_gv_font_path(bool(getattr(self,'bold',False))) if self._v2640_has_gv else None
+        self._v2640_naskh_gv = _pi2640_naskh_gv_font(bool(getattr(self,'bold',False))) \
+            if ('\u0762' in plain or '\u06cf' in plain) else None
 
     def _font(self,px):
-        if self._v2640_gv_font:
+        if self._v2640_naskh_gv:
             from PIL import ImageFont
             try:
-                return ImageFont.truetype(self._v2640_gv_font,px,layout_engine=ImageFont.Layout.RAQM)
+                return ImageFont.truetype(self._v2640_naskh_gv,px,layout_engine=ImageFont.Layout.RAQM)
             except Exception:
-                return ImageFont.truetype(self._v2640_gv_font,px)
+                return ImageFont.truetype(self._v2640_naskh_gv,px)
         return super()._font(px)
 
-CIKGULAJU_PATCH_V2640_GV='PI_G_V_GLYPH_ONLY_NO_FONTTOOLS'
-# ===== END v26.40 PI G/V GLYPH-ONLY FIX =====
+CIKGULAJU_PATCH_V2640_NASKH_GV='PI_NASKH_GV_ONLY_NO_FONTTOOLS'
+# ===== END v26.40 PI NASKH G/V FIX =====
