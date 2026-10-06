@@ -43017,3 +43017,181 @@ def create_pdf_file(s, ai_text, cid):
 
 CIKGULAJU_PATCH_V2626='REMOVE_FOOTER_FROM_ALL_RPH_PDF_ONLY'
 # ===== END v26.26 =====
+
+
+# ===== v26.27 PI WEEK -> PDP FILTER =====
+# UI-only split of the existing PI PdP list:
+# Tahun -> Pendidikan Islam -> Minggu -> PdP.
+# Existing week_from/week_to values in rpt_entries are reused; no curriculum
+# mapping, PdP numbering, SK/SP, textbook mapping, DB, BBM or Worksheet is changed.
+APP_VERSION='v26.27-PI-WEEK-FILTER'
+
+def _pi2627_week_key(r):
+    wf=r.get('week_from')
+    wt=r.get('week_to')
+    try: wf=int(wf) if wf not in (None,'') else None
+    except Exception: wf=str(wf).strip() or None
+    try: wt=int(wt) if wt not in (None,'') else None
+    except Exception: wt=str(wt).strip() or None
+    if wf is None: return None
+    if wt is None or wt==wf: return str(wf)
+    return f"{wf}-{wt}"
+
+def _pi2627_week_sort(k):
+    try: return (0,int(str(k).split('-',1)[0]))
+    except Exception: return (1,str(k))
+
+def _pi_week_menu_v2627(cid):
+    ss=state.setdefault(cid,{})
+    rows=_pi_pdp_rows_v25210(ss.get('year',''))
+    ss['_pi_pdp_rows_v25210']=rows
+    groups={}
+    for i,r in enumerate(rows):
+        k=_pi2627_week_key(r)
+        if k is not None: groups.setdefault(k,[]).append(i)
+    ss['_pi2627_week_groups']=groups
+    keys=sorted(groups,key=_pi2627_week_sort)
+    kb=[]
+    # compact two-column week selector
+    row=[]
+    for k in keys:
+        row.append({'text':f'مڠݢو {k}','callback_data':f'piweek2627|{k}'})
+        if len(row)==2:
+            kb.append(row); row=[]
+    if row: kb.append(row)
+    # Safety fallback only if a legacy row genuinely has no week value.
+    if any(_pi2627_week_key(r) is None for r in rows):
+        kb.append([{'text':'ڤدڤ تنڤا مڠݢو','callback_data':'piweek2627|__none__'}])
+    kb.append([{'text':'⬅️ توکر سوبجيک','callback_data':'choose_grade'},
+               {'text':'🏠 مينو اوتام','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>ڤنديديقن اسلام • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+        "ڤيليه <b>مڠݢو</b> ترلبيه دهولو.",kb)
+
+def _pi_week_pdp_menu_v2627(cid,week,page=0):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_pi_pdp_rows_v25210') or _pi_pdp_rows_v25210(ss.get('year',''))
+    if week=='__none__':
+        idxs=[i for i,r in enumerate(rows) if _pi2627_week_key(r) is None]
+        title='تنڤا مڠݢو'
+    else:
+        idxs=[i for i,r in enumerate(rows) if _pi2627_week_key(r)==str(week)]
+        title=f'مڠݢو {week}'
+    ss['_pi2627_selected_week']=week
+    page=max(0,int(page)); per=18; start=page*per
+    kb=[]
+    for i in idxs[start:start+per]:
+        r=rows[i]
+        seq=r.get('sequence_no')
+        focus=str(r.get('skill_focus') or r.get('topic') or 'ڤنديديقن اسلام').strip()
+        label=f"ڤدڤ {seq}"
+        if focus: label+=f" • {focus}"
+        kb.append([{'text':label[:60],'callback_data':f'pipdp210|{i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️','callback_data':f'piwpage2627|{week}|{page-1}'})
+    if start+per<len(idxs): nav.append({'text':'➡️','callback_data':f'piwpage2627|{week}|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ ڤيليه مڠݢو','callback_data':'piweeks2627'},
+               {'text':'🏠 مينو اوتام','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>ڤنديديقن اسلام • {html.escape(str(ss.get('year') or ''))}</b>\n"
+        f"<b>{html.escape(title)}</b>\n\nڤيليه <b>ڤدڤ</b>. SK/SP اکن دڤيليه سچارا اٴوتوماتيک.",kb)
+
+_callback_before_v2627=callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    # Intercept only primary Pendidikan Islam entry. Other subjects keep old flow.
+    if ds=='sub_Pendidikan Islam' and str(ss.get('year') or '') in tuple('Tahun '+str(i) for i in range(1,7)):
+        ss['subject']='Pendidikan Islam'; ss['task']='quick_material'; ss['quick_material_flow']=True
+        return _pi_week_menu_v2627(cid)
+    if ds=='piweeks2627':
+        return _pi_week_menu_v2627(cid)
+    if ds.startswith('piweek2627|'):
+        return _pi_week_pdp_menu_v2627(cid,ds.split('|',1)[1],0)
+    if ds.startswith('piwpage2627|'):
+        try:
+            _,wk,pg=ds.split('|',2)
+            pg=int(pg)
+        except Exception:
+            wk=ss.get('_pi2627_selected_week','__none__'); pg=0
+        return _pi_week_pdp_menu_v2627(cid,wk,pg)
+    return _callback_before_v2627(cid,d)
+
+CIKGULAJU_PATCH_V2627='PI_EXISTING_WEEK_METADATA_SPLIT_INTO_WEEK_THEN_PDP_UI'
+# ===== END v26.27 =====
+
+
+# ===== v26.28 PI RPH ACTIVITY/PENTAKSIRAN CLEANUP =====
+# Based on visual QA of the generated PI RPH:
+# - Activity 4 must not duplicate the separate Pentaksiran row.
+# - Activity bodies are kept compact and distinct.
+# - accidental Latin/English assessment prose is stripped from Aktiviti Utama.
+# - verified RPT/textbook grounding from v26.25 remains intact.
+APP_VERSION='v26.28-PI-RPH-ACTIVITY-CLEANUP'
+
+_PI2628_ASSESSMENT_NOISE=(
+    'pentaksiran individu melalui penerangan',
+    'guru membuat semakan lisan atau bertulis',
+    'murid turut membuat semakan kendiri',
+    'berdasarkan objektif pdp',
+)
+
+def _pi2628_strip_assessment_noise(body):
+    s=str(body or '').strip()
+    if not s: return s
+    low=s.casefold()
+    cuts=[low.find(x) for x in _PI2628_ASSESSMENT_NOISE if low.find(x)>=0]
+    if cuts:
+        s=s[:min(cuts)].rstrip(' .;:-')
+    # remove duplicate sentences while preserving order
+    parts=[p.strip() for p in re.split(r'(?<=[.!؟])\s+',s) if p.strip()]
+    seen=set(); keep=[]
+    for p in parts:
+        k=re.sub(r'\s+',' ',p).strip().casefold()
+        if k and k not in seen:
+            seen.add(k); keep.append(p)
+    return ' '.join(keep).strip()
+
+def _pi2628_activity4(route):
+    # Deliberately a short closure/reinforcement action, NOT the assessment row.
+    if route in ('hafazan','tilawah','tajwid'):
+        return 'موريد ممبوات ڤڠوکوهان باچاءن سچارا برݢيلير دان ممبتولکن کسلهاڤن برداسرکن بيمبيڠن ݢورو.'
+    if route in ('imlak_jawi','bacaan_jawi'):
+        return 'موريد ممبوات ڤڠوکوهان جاوي سچارا اينديۏيدو دان ممبتولکن کسلهاڤن دڠن بيمبيڠن ݢورو.'
+    if route in ('amali_ibadah','hukum_ibadah'):
+        return 'موريد مڠولڠ سمولا لڠکه دان ڤرينسيڤ اوتام عبادت، کمودين ممبتولکن کسلهاڤن دڠن بيمبيڠن ݢورو.'
+    if route in ('sirah_iktibar','sirah_fakta'):
+        return 'موريد مڽاتاکن سمولا فکتا دان ايکتبار اوتام، کمودين مڠايتکنڽ دڠن کهيدوڤن هارين.'
+    if route=='adab_penghayatan':
+        return 'موريد مڽاتاکن ڤرلاکوأن يڠ بتول دان مڠايتکن ادب يڠ دڤلاجري دڠن عملن هارين.'
+    if route=='akidah_kefahaman':
+        return 'موريد مڽاتاکن سمولا مفهوم عقيده يڠ دڤلاجري دان ممبري ساتو چونتوه ڤڠحياتن.'
+    if route=='hadis_kefahaman':
+        return 'موريد مڽاتاکن ڤڠاجرن اوتام حديث دان ساتو چونتوه عملن دالم کهيدوڤن هارين.'
+    return 'موريد مڽاتاکن سمولا ايسي اوتام ڤمبلاجرن دان ساتو چونتوه اڤليکاسي دالم کهيدوڤن هارين.'
+
+def _pi2628_clean_activities(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    route=_pi2614_route(s) if '_pi2614_route' in globals() else 'kefahaman_pi'
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block: continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            body=_pi2628_strip_assessment_noise(lines[bi])
+            if n==4:
+                body=_pi2628_activity4(route)
+            elif '_pi2619_compact_activity_body' in globals():
+                body=_pi2619_compact_activity_body(body,n)
+            lines[bi]=body
+        r[key]='\n'.join(lines)
+    return r
+
+_pi_rph_rows_before_v2628=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2628_clean_activities(s,_pi_rph_rows_before_v2628(s,ai_text))
+
+CIKGULAJU_PATCH_V2628='PI_ACTIVITY_1_4_CLEAN_DISTINCT_AND_ASSESSMENT_DEDUP'
+# ===== END v26.28 =====
