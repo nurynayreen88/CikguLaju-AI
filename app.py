@@ -42987,3 +42987,33 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V2625='PI_T1_T6_COMPLETE_ACTUAL_TEXTBOOK_PAGE_CONTENT_GROUNDING'
 # ===== END v26.25 =====
+
+
+# ===== v26.26 RPH FOOTER REMOVAL =====
+# User request: remove the bottom footer from every generated RPH.
+# Scope is RPH PDF only. Worksheet footer/header and other materials remain unchanged.
+APP_VERSION='v26.26-RPH-NO-FOOTER'
+
+def _rph_no_footer_v2626(canvas, doc):
+    """Intentionally blank page callback for RPH PDFs."""
+    return None
+
+_create_pdf_file_before_v2626 = create_pdf_file
+def create_pdf_file(s, ai_text, cid):
+    # Reuse the established generator, but temporarily neutralize only the
+    # RPH footer callbacks it resolves at runtime.
+    if isinstance(s, dict) and str(s.get('task') or '').strip() == 'rph':
+        global _pdf_header_footer, _pdf_header_footer_en
+        old_bm = _pdf_header_footer
+        old_en = _pdf_header_footer_en
+        try:
+            _pdf_header_footer = _rph_no_footer_v2626
+            _pdf_header_footer_en = _rph_no_footer_v2626
+            return _create_pdf_file_before_v2626(s, ai_text, cid)
+        finally:
+            _pdf_header_footer = old_bm
+            _pdf_header_footer_en = old_en
+    return _create_pdf_file_before_v2626(s, ai_text, cid)
+
+CIKGULAJU_PATCH_V2626='REMOVE_FOOTER_FROM_ALL_RPH_PDF_ONLY'
+# ===== END v26.26 =====
