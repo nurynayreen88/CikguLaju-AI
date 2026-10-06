@@ -42265,3 +42265,70 @@ CIKGULAJU_PATCH_V2617='PI_T1_T6_LEVEL_PROGRESSION_SUBSKILL_ASSESSMENT_AND_DEDUPE
 APP_VERSION='v26.18-PI-RPH-RELEASE-CANDIDATE'
 CIKGULAJU_PATCH_V2618='PI_RPH_T1_T6_RELEASE_CANDIDATE_QUALITY_STACK_LOCKED'
 # ===== END v26.18 =====
+
+# ===== v26.19 PI RPH COMPACT OUTPUT =====
+# Scope lock: Pendidikan Islam primary RPH only.
+# Purpose: preserve the approved Activity 1-4 pedagogy while reducing visual density.
+# No DB/menu/BBM/Worksheet/other-subject changes.
+APP_VERSION='v26.19-PI-RPH-COMPACT'
+
+def _pi2619_compact_sentence(text):
+    """Conservative compaction of patch-generated PI activity prose only."""
+    s=re.sub(r'\s+',' ',str(text or '')).strip()
+    if not s:
+        return s
+    # Remove explanatory tails that duplicate an already explicit classroom action.
+    replacements=(
+        (r'\s+untuk menunjukkan pembetulan\.?$', '.'),
+        (r'\s+untuk memastikan kefahaman tidak bergantung pada hafalan contoh\.?$', '.'),
+        (r'\s+sebagai bukti aplikasi\.?$', '.'),
+        (r'\s+berdasarkan objektif PdP\.?$', '.'),
+        (r'\s+dengan bimbingan beransur dikurangkan\.?$', '.'),
+    )
+    for pat,repl in replacements:
+        s=re.sub(pat,repl,s,flags=re.I)
+    return s.strip()
+
+def _pi2619_compact_activity_body(body, activity_no):
+    s=_pi2619_compact_sentence(body)
+    if not s:
+        return s
+    # Keep the verified RPT/source anchor, but avoid letting it consume a full paragraph.
+    anchor=_pi2616_preserve_rpt_anchor(s) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+    work=s
+    if anchor:
+        work=work.replace(anchor,'',1).strip(' .')
+    parts=[p.strip() for p in re.split(r'(?<=[.!?])\s+',work) if p.strip()]
+    # Approved target: Activity 1-3 <= 2 concise sentences; Activity 4 <= 2 evidence sentences.
+    parts=parts[:2]
+    compact=' '.join(parts)
+    compact=_pi2619_compact_sentence(compact)
+    if anchor:
+        compact=(anchor.rstrip(' .')+'. '+compact).strip()
+    return compact
+
+def _pi2619_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s):
+        return r
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block:
+            continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            lines[bi]=_pi2619_compact_activity_body(lines[bi],n)
+        r[key]='\n'.join(lines)
+    # Pentaksiran remains route-specific, but keep it to two concise evidence statements.
+    for key in ('PENTAKSIRAN','pentaksiran','assessment'):
+        if key in r and isinstance(r[key],str):
+            p=[x.strip() for x in re.split(r'(?<=[.!?])\s+',r[key]) if x.strip()]
+            r[key]=' '.join(_pi2619_compact_sentence(x) for x in p[:2])
+    return r
+
+_pi_rph_rows_before_v2619=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2619_apply(s,_pi_rph_rows_before_v2619(s,ai_text))
+
+CIKGULAJU_PATCH_V2619='PI_RPH_ACTIVITY_1_4_COMPACT_WITH_APPROVED_PEDAGOGY_PRESERVED'
+# ===== END v26.19 =====
