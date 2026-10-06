@@ -43987,3 +43987,87 @@ def _jawi_font_path_v25213(bold=False):
 
 CIKGULAJU_PATCH_V2638='PI_JAWI_FONT_RESOLUTION_NEVER_ABORTS_RPH'
 # ===== END v26.38 =====
+
+
+# ===== v26.39 PI JAWI GLYPH + EXISTING ACTIVITY LABEL SPLIT =====
+APP_VERSION='v26.39-PI-JAWI-GLYPH-ACTIVITY-SPLIT'
+
+# 1) Do not use a font with incomplete Jawi coverage for PI.
+# Bundle-friendly search: project assets/fonts first, then system fonts.
+def _pi2639_font_candidates(bold=False):
+    import os, glob
+    names = (
+        ['NotoNaskhArabic-Bold.ttf','Amiri-Bold.ttf','NotoSansArabic-Bold.ttf']
+        if bold else
+        ['NotoNaskhArabic-Regular.ttf','Amiri-Regular.ttf','NotoSansArabic-Regular.ttf']
+    )
+    roots=[
+        '/opt/render/project/src',
+        os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '.',
+        '/usr/share/fonts',
+        '/usr/local/share/fonts',
+    ]
+    found=[]
+    for root in roots:
+        for name in names:
+            found.extend(glob.glob(os.path.join(root,'**',name),recursive=True))
+    return [p for p in dict.fromkeys(found) if os.path.isfile(p)]
+
+def _pi2639_exact_font(text,bold=False):
+    req=_pi2637_required_cps(text)
+    for p in _pi2639_font_candidates(bold):
+        try:
+            if req.issubset(_font_cmap_v25226(p)):
+                return p
+        except Exception:
+            pass
+    # use v26.38 network/local resolver, but reject incomplete glyph font
+    try:
+        p=_pi2638_v2637_cached_noto(text,bold)
+        if p and req.issubset(_font_cmap_v25226(p)):
+            return p
+    except Exception:
+        pass
+    return None
+
+_pi2639_prev_exact=_pi_exact_jawi_font_v2604
+def _pi_exact_jawi_font_v2604(text,bold=False):
+    p=_pi2639_exact_font(text,bold)
+    if p:
+        return p
+    # Keep generation alive, but explicitly flag that exact font is unavailable.
+    # Never rewrite/substitute Jawi characters.
+    p=_pi2638_best_nonfatal_font(text,bold)
+    if p:
+        return p
+    return _pi2639_prev_exact(text,bold)
+
+def _pi_jawi_font_v2606(text,bold=False):
+    return _pi_exact_jawi_font_v2604(text,bold)
+
+# 2) Existing Activity 1/2/3/4 labels are delimiters, not prose.
+# Recover labels even when embedded mid-numbered-step.
+_PI2639_ACTIVITY_LABEL_RE = re.compile(
+    r'(?<!^)(?<!\n)\s*(?=(?:Aktiviti|AKTIVITI)\s*[1-4]\s*[-–—:])',
+    re.I
+)
+
+def _pi2639_split_existing_activity_labels(raw):
+    s=str(raw or '')
+    # Normalize explicit activity labels onto their own line.
+    s=_PI2639_ACTIVITY_LABEL_RE.sub('\n',s)
+    # Also handle labels following punctuation/numbers with no clean spacing.
+    s=re.sub(
+        r'([.!؟؛:])\s*((?:Aktiviti|AKTIVITI)\s*[1-4]\s*[-–—:])',
+        r'\1\n\2',s,flags=re.I
+    )
+    return s
+
+# Patch the actual activity markup boundary already used by v26.36.
+_pi2639_prev_activity_markup=_rph_activity_heading_markup_v25184
+def _rph_activity_heading_markup_v25184(text):
+    raw=_pi2639_split_existing_activity_labels(text)
+    return _pi2639_prev_activity_markup(raw)
+
+CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
+# ===== END v26.39 =====
