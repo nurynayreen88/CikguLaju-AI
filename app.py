@@ -43195,3 +43195,108 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V2628='PI_ACTIVITY_1_4_CLEAN_DISTINCT_AND_ASSESSMENT_DEDUP'
 # ===== END v26.28 =====
+
+
+# ===== v26.29 PI UNIT -> PDP FLOW =====
+# Restore week to its former role: information displayed on each PdP.
+# New PI selection flow: Tahun -> Pendidikan Islam -> Unit -> PdP.
+# Unit values are taken only from existing PI rows; no unit names are invented.
+APP_VERSION='v26.29-PI-UNIT-THEN-PDP'
+
+def _pi2629_unit_value(r):
+    for key in ('unit','unit_name','textbook_unit','theme','bidang'):
+        v=str((r or {}).get(key) or '').strip()
+        if v:
+            return v
+    return None
+
+def _pi2629_week_label(r):
+    wf=(r or {}).get('week_from'); wt=(r or {}).get('week_to')
+    if wf in (None,''): return ''
+    try: wf=int(wf)
+    except Exception: wf=str(wf).strip()
+    if wt in (None,''): wt=wf
+    try: wt=int(wt)
+    except Exception: wt=str(wt).strip()
+    return f"Minggu {wf}" if str(wf)==str(wt) else f"Minggu {wf}-{wt}"
+
+def _pi_unit_menu_v2629(cid):
+    ss=state.setdefault(cid,{})
+    rows=_pi_pdp_rows_v25210(ss.get('year',''))
+    ss['_pi_pdp_rows_v25210']=rows
+    groups={}
+    for i,r in enumerate(rows):
+        u=_pi2629_unit_value(r)
+        if u:
+            groups.setdefault(u,[]).append(i)
+    ss['_pi2629_unit_groups']=groups
+    kb=[]
+    for n,u in enumerate(groups):
+        kb.append([{'text':u[:60],'callback_data':f'piunit2629|{n}'}])
+    # Preserve access to any legacy rows whose unit is genuinely absent.
+    if any(_pi2629_unit_value(r) is None for r in rows):
+        kb.append([{'text':'PdP lain','callback_data':'piunit2629|__none__'}])
+    kb.append([{'text':'⬅️ Tukar Subjek','callback_data':'choose_grade'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n\n"
+        "Pilih <b>Unit</b>.",kb)
+
+def _pi_unit_pdp_menu_v2629(cid,token,page=0):
+    ss=state.setdefault(cid,{})
+    rows=ss.get('_pi_pdp_rows_v25210') or _pi_pdp_rows_v25210(ss.get('year',''))
+    groups=ss.get('_pi2629_unit_groups') or {}
+    units=list(groups)
+    if token=='__none__':
+        unit=None
+        idxs=[i for i,r in enumerate(rows) if _pi2629_unit_value(r) is None]
+        title='PdP lain'
+    else:
+        try: unit=units[int(token)]
+        except Exception: return _pi_unit_menu_v2629(cid)
+        idxs=groups.get(unit,[])
+        title=unit
+    ss['_pi2629_selected_unit']=token
+    page=max(0,int(page)); per=18; start=page*per
+    kb=[]
+    for i in idxs[start:start+per]:
+        r=rows[i]
+        seq=r.get('sequence_no')
+        wk=_pi2629_week_label(r)
+        focus=str(r.get('skill_focus') or r.get('topic') or '').strip()
+        label=f"PdP {seq}"
+        if wk: label+=f" • {wk}"
+        if focus: label+=f" • {focus}"
+        kb.append([{'text':label[:64],'callback_data':f'pipdp210|{i}'}])
+    nav=[]
+    if page>0: nav.append({'text':'⬅️','callback_data':f'piupage2629|{token}|{page-1}'})
+    if start+per<len(idxs): nav.append({'text':'➡️','callback_data':f'piupage2629|{token}|{page+1}'})
+    if nav: kb.append(nav)
+    kb.append([{'text':'⬅️ Pilih Unit','callback_data':'piunits2629'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}])
+    return send(cid,
+        f"☪️ <b>Pendidikan Islam • {html.escape(str(ss.get('year') or ''))}</b>\n"
+        f"<b>{html.escape(str(title))}</b>\n\nPilih <b>PdP</b>.",kb)
+
+_callback_before_v2629=callback
+def callback(cid,d):
+    ss=state.setdefault(cid,{})
+    ds=str(d or '')
+    # Override v26.27 week screen for primary PI: go straight to Unit.
+    if ds=='sub_Pendidikan Islam' and str(ss.get('year') or '') in tuple('Tahun '+str(i) for i in range(1,7)):
+        ss['subject']='Pendidikan Islam'; ss['task']='quick_material'; ss['quick_material_flow']=True
+        return _pi_unit_menu_v2629(cid)
+    if ds=='piunits2629':
+        return _pi_unit_menu_v2629(cid)
+    if ds.startswith('piunit2629|'):
+        return _pi_unit_pdp_menu_v2629(cid,ds.split('|',1)[1],0)
+    if ds.startswith('piupage2629|'):
+        try:
+            _,tok,pg=ds.split('|',2); pg=int(pg)
+        except Exception:
+            tok=ss.get('_pi2629_selected_unit','__none__'); pg=0
+        return _pi_unit_pdp_menu_v2629(cid,tok,pg)
+    return _callback_before_v2629(cid,d)
+
+CIKGULAJU_PATCH_V2629='PI_WEEK_SCREEN_REMOVED_UNIT_THEN_ALL_PDP_WEEK_SHOWN_ON_PDP'
+# ===== END v26.29 =====
