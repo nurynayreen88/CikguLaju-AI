@@ -42332,3 +42332,658 @@ def _rph_rows(s,ai_text):
 
 CIKGULAJU_PATCH_V2619='PI_RPH_ACTIVITY_1_4_COMPACT_WITH_APPROVED_PEDAGOGY_PRESERVED'
 # ===== END v26.19 =====
+
+# ===== v26.20 PI RPH OBJECTIVE + VERIFIED TEXTBOOK ALIGNMENT LOCK =====
+# Scope lock: Pendidikan Islam primary RPH only.
+# - Preserve approved Activity 1-4 pedagogy and v26.19 compactness.
+# - Keep activities tied to the selected verified RPT/SK/SP/objective route.
+# - Use textbook support only when the selected PdP already has verified page mapping.
+# - Do NOT invent page content that is not stored in the verified mapping.
+# - PI textbook mapping remains internal RPH support; no textbook download option.
+APP_VERSION='v26.20-PI-RPH-OBJECTIVE-TEXTBOOK-ALIGNMENT-LOCK'
+
+def _pi2620_source_anchor(s):
+    src=_pi2614_src(s) if '_pi2614_src' in globals() else {}
+    # Prefer the selected RPT activity/focus because it is verified source wording.
+    for v in (
+        src.get('activity_note'), s.get('rpt_activity_note'),
+        src.get('skill_focus'), s.get('skill_focus'),
+        src.get('topic'), s.get('topic')
+    ):
+        t=re.sub(r'\s+',' ',str(v or '')).strip()
+        if t:
+            return t
+    return ''
+
+def _pi2620_objective_text(s,r):
+    return re.sub(r'\s+',' ',str(
+        (r or {}).get('OBJEKTIF PEMBELAJARAN') or
+        (s or {}).get('rpt_objective_jawi') or ''
+    )).strip()
+
+def _pi2620_route(s):
+    return _pi_v2612_skill_route(s) if '_pi_v2612_skill_route' in globals() else 'kefahaman_pi'
+
+def _pi2620_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s):
+        return r
+
+    route=_pi2620_route(s)
+    stage=_pi_v2612_stage(s.get('year','')) if '_pi_v2612_stage' in globals() else 'asas'
+    verified_book=bool(_pi2614_verified_book(s)) if '_pi2614_verified_book' in globals() else False
+    source_anchor=_pi2620_source_anchor(s)
+    objective=_pi2620_objective_text(s,r)
+
+    # Keep the selected source focus as the curriculum anchor. Do not inject any
+    # unverified textbook claim; textbook page mapping only authorises the
+    # textbook-grounded method layer already built in v26.14-v26.19.
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block:
+            continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            body=_pi2619_compact_activity_body(lines[bi],n) if '_pi2619_compact_activity_body' in globals() else str(lines[bi]).strip()
+            # Activity 1 is the source/objective entry point. Preserve an existing
+            # RPT anchor if present; otherwise do not add long duplicate prose.
+            if n==1 and source_anchor:
+                existing=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+                if not existing and len(source_anchor) <= 150:
+                    # Only add when the source wording is already compact.
+                    body=(source_anchor.rstrip(' .')+'. '+body).strip()
+            # Activity 4 must remain evidence of the same routed objective.
+            if n==4 and '_pi2617_assessment' in globals():
+                assess=_pi2617_assessment(route,stage)
+                anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+                evidence=' '.join(assess[:2])
+                body=(anchor.rstrip(' .')+'. ' if anchor else '')+evidence
+                body=_pi2619_compact_activity_body(body,4) if '_pi2619_compact_activity_body' in globals() else body
+            lines[bi]=body
+        r[key]='\n'.join(lines)
+
+    # Keep assessment aligned to the same route used by Activity 4.
+    if '_pi2617_assessment' in globals():
+        assess=_pi2617_assessment(route,stage)
+        for key in ('PENTAKSIRAN','pentaksiran','assessment'):
+            if key in r:
+                r[key]=' '.join(assess[:2])
+                if '_pi2619_compact_sentence' in globals():
+                    r[key]=_pi2619_compact_sentence(r[key])
+                break
+
+    # Diagnostic state only; does not appear in the RPH.
+    if isinstance(s,dict):
+        s['_pi2620_alignment']={
+            'route':route,
+            'objective_present':bool(objective),
+            'source_anchor_present':bool(source_anchor),
+            'verified_textbook_mapping':verified_book,
+            'textbook_pages':str(s.get('textbook_pages') or '').strip(),
+        }
+    return r
+
+_pi_rph_rows_before_v2620=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2620_apply(s,_pi_rph_rows_before_v2620(s,ai_text))
+
+# PI textbook mapping is used internally to ground RPH; it is not offered as a
+# separate download material. English/other subject material menus are untouched.
+_available_materials_before_v2620=_available_materials_v2528
+def _available_materials_v2528(ss):
+    items=list(_available_materials_before_v2620(ss) or [])
+    if _pi2614_pi_only(ss):
+        items=[x for x in items if x!='textbook']
+    return items
+
+CIKGULAJU_PATCH_V2620='PI_OBJECTIVE_RPT_VERIFIED_TEXTBOOK_ALIGNMENT_AND_NO_PI_TEXTBOOK_DOWNLOAD'
+# ===== END v26.20 =====
+
+# ===== v26.21 PI TEXTBOOK PAGE-CONTENT LAYER — TAHUN 1 LARGE BATCH =====
+# Verified visually against the actual Tahun 1 textbook PDF.  Printed-page offset:
+# PDF page 10 == printed textbook page 1.  Descriptors are deliberately factual
+# and broad; they do not transcribe or invent textbook wording.
+APP_VERSION='v26.21-PI-TEXTBOOK-PAGE-CONTENT-T1-BATCH'
+
+_PI2621_T1_PAGE_CONTENT = (
+    (1, 5,  'huruf_hijaiyah', 'huruf hijaiyah, padanan bentuk huruf dan latihan bacaan asas'),
+    (6, 9,  'bacaan_hijaiyah', 'bacaan huruf dan perkataan Arab berbaris melalui contoh tersusun'),
+    (10, 13, 'bacaan_berperingkat', 'latihan bacaan perkataan dan rangkai kata Arab secara berperingkat'),
+    (14, 21, 'bacaan_ayat', 'latihan bacaan perkataan, rangkai kata dan ayat Arab melalui contoh pada halaman'),
+    (22, 25, 'bacaan_dan_padanan', 'bacaan serta padanan perkataan atau rangkai kata menggunakan contoh berwarna'),
+    (26, 30, 'bacaan_dan_pengukuhan', 'bacaan contoh, pengelasan/padanan dan pengukuhan melalui latihan halaman'),
+    (31, 36, 'bacaan_ayat_berstruktur', 'bacaan ayat atau rangkai kata berstruktur dengan contoh dan latihan halaman'),
+    (37, 45, 'surah_dan_bacaan', 'bacaan ayat/surah dengan penandaan contoh, bimbingan bacaan dan latihan pengukuhan'),
+    (46, 53, 'adab_dan_penghayatan', 'situasi bergambar, dialog dan contoh perlakuan untuk kefahaman serta penghayatan adab'),
+    (54, 60, 'jawi_asas', 'huruf dan suku kata Jawi melalui gambar, padanan, binaan dan latihan menulis/baca'),
+)
+
+def _pi2621_page_numbers(raw):
+    nums=[]
+    for x in re.findall(r'\d+', str(raw or '')):
+        try:
+            n=int(x)
+            if 1 <= n <= 999 and n not in nums: nums.append(n)
+        except Exception: pass
+    return nums
+
+def _pi2621_page_content(s):
+    if not _pi2614_pi_only(s) or str((s or {}).get('year') or '').strip()!='Tahun 1':
+        return None
+    # Hard gate: use only the existing verified textbook mapping.
+    if '_pi2614_verified_book' not in globals() or not _pi2614_verified_book(s):
+        return None
+    pages=_pi2621_page_numbers((s or {}).get('textbook_pages'))
+    if not pages: return None
+    hits=[]
+    for a,b,kind,desc in _PI2621_T1_PAGE_CONTENT:
+        if any(a <= p <= b for p in pages): hits.append((a,b,kind,desc))
+    # A wide mapping may cross multiple textbook sections.  Do not guess a single
+    # page-content claim in that case; retain the existing route-grounded method.
+    kinds={h[2] for h in hits}
+    if len(kinds)!=1: return None
+    a,b,kind,desc=hits[0]
+    return {'kind':kind,'description':desc,'pages':pages,'range':(a,b)}
+
+def _pi2621_method_cue(info, route):
+    if not info: return ''
+    kind=info['kind']
+    cues={
+      'huruf_hijaiyah':'Gunakan huruf/contoh sebenar pada halaman untuk aktiviti cam, sebut dan padan.',
+      'bacaan_hijaiyah':'Gunakan contoh bacaan pada halaman untuk talaqqi, ikut baca dan semakan individu.',
+      'bacaan_berperingkat':'Gunakan susunan contoh pada halaman daripada unit kecil kepada bacaan yang lebih lengkap.',
+      'bacaan_ayat':'Gunakan perkataan/rangkai kata/ayat sebenar pada halaman sebagai bahan bacaan dan semakan.',
+      'bacaan_dan_padanan':'Gunakan contoh dan padanan pada halaman untuk baca, pilih/padan dan beri sebab ringkas.',
+      'bacaan_dan_pengukuhan':'Gunakan latihan halaman sebagai pengukuhan selepas model dan bacaan berpandu.',
+      'bacaan_ayat_berstruktur':'Gunakan susunan ayat/rangkai kata pada halaman untuk bacaan berpandu kemudian individu.',
+      'surah_dan_bacaan':'Gunakan petikan ayat/surah pada halaman untuk talaqqi, bacaan berulang dan semakan ketepatan.',
+      'adab_dan_penghayatan':'Gunakan situasi/gambar/dialog pada halaman untuk kenal pasti perlakuan dan kaitkan dengan amalan.',
+      'jawi_asas':'Gunakan gambar, huruf dan suku kata pada halaman untuk padan, bina, baca dan tulis Jawi.'
+    }
+    return cues.get(kind,'')
+
+def _pi2621_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    info=_pi2621_page_content(s)
+    if not info: return r
+    route=_pi2620_route(s) if '_pi2620_route' in globals() else 'kefahaman_pi'
+    cue=_pi2621_method_cue(info,route)
+    # Diagnostic/content grounding state.  The approved compact activity engine
+    # remains authoritative; we only replace a generic textbook-use sentence when
+    # a single verified visual page-content class is unambiguous.
+    if isinstance(s,dict):
+        s['_pi2621_page_content']={**info,'method_cue':cue,'source':'actual_T1_textbook_visual_QA'}
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block: continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        # Activity 2 is the textbook interaction point. Keep compactness: one cue only.
+        for _hi,bi,n in pairs:
+            if n!=2: continue
+            body=str(lines[bi] or '').strip()
+            # Never append if it would create a long paragraph; replace only generic
+            # textbook wording, otherwise preserve the already-approved activity.
+            if re.search(r'(?i)rujuk|buku teks|بوکو تيکس',body):
+                anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+                lines[bi]=((anchor.rstrip(' .')+'. ') if anchor else '')+cue
+            elif len(body) < 115:
+                lines[bi]=(body.rstrip(' .')+'. '+cue).strip()
+            lines[bi]=_pi2619_compact_activity_body(lines[bi],2) if '_pi2619_compact_activity_body' in globals() else lines[bi]
+        r[key]='\n'.join(lines)
+    return r
+
+_pi_rph_rows_before_v2621=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2621_apply(s,_pi_rph_rows_before_v2621(s,ai_text))
+
+CIKGULAJU_PATCH_V2621='PI_T1_PRINTED_PAGES_1_60_ACTUAL_TEXTBOOK_VISUAL_CONTENT_LAYER'
+# ===== END v26.21 =====
+
+
+# ===== v26.22 PI TEXTBOOK PAGE-CONTENT — T1 COMPLETE + T2 COMPLETE =====
+# Visual QA source:
+# - Pendidikan Islam Tahun 1: actual textbook PDF, printed pp. 1-138.
+# - Pendidikan Islam Tahun 2 KSSR Semakan: actual textbook PDF + contents page,
+#   printed pp. 1-138.
+# Descriptors stay factual/broad. No textbook wording is transcribed and no
+# unverified page content is invented.
+APP_VERSION='v26.22-PI-TEXTBOOK-PAGE-CONTENT-T1-T2-FULL'
+
+_PI2622_PAGE_CONTENT = {
+ 'Tahun 1': (
+    # v26.21 verified ranges retained, then completed to end of printed content.
+    (1,5,'huruf_hijaiyah','huruf hijaiyah, padanan bentuk huruf dan latihan bacaan asas'),
+    (6,9,'bacaan_hijaiyah','bacaan huruf dan perkataan Arab berbaris melalui contoh tersusun'),
+    (10,13,'bacaan_berperingkat','latihan bacaan perkataan dan rangkai kata Arab secara berperingkat'),
+    (14,21,'bacaan_ayat','latihan bacaan perkataan, rangkai kata dan ayat Arab melalui contoh pada halaman'),
+    (22,25,'bacaan_dan_padanan','bacaan serta padanan perkataan atau rangkai kata menggunakan contoh berwarna'),
+    (26,30,'bacaan_dan_pengukuhan','bacaan contoh, pengelasan/padanan dan pengukuhan melalui latihan halaman'),
+    (31,36,'bacaan_ayat_berstruktur','bacaan ayat atau rangkai kata berstruktur dengan contoh dan latihan halaman'),
+    (37,45,'surah_dan_bacaan','bacaan ayat/surah dengan penandaan contoh, bimbingan bacaan dan latihan pengukuhan'),
+    (46,53,'adab_dan_penghayatan','situasi bergambar, dialog dan contoh perlakuan untuk kefahaman serta penghayatan adab'),
+    (54,60,'jawi_asas','huruf dan suku kata Jawi melalui gambar, padanan, binaan dan latihan menulis/baca'),
+    (61,75,'jawi_perkataan','perkataan Jawi melalui gambar, pecahan/binaan suku kata, padanan, bacaan dan permainan bahasa'),
+    (76,87,'akidah_asas','konsep asas akidah melalui ayat/dalil ringkas, gambar situasi, contoh ciptaan dan pengelasan'),
+    (88,101,'wuduk_dan_kebersihan','wuduk/kebersihan melalui situasi, urutan perbuatan, anggota, amali dan semakan langkah'),
+    (102,113,'solat_asas','solat melalui waktu, perlakuan, bacaan dan urutan amali yang ditunjukkan pada halaman'),
+    (114,125,'sirah_nabi','sirah Nabi Muhammad SAW melalui salasilah, peristiwa, sifat, keluarga dan aktiviti kefahaman'),
+    (126,138,'adab_harian','adab harian melalui situasi bergambar, perbandingan perlakuan, amalan dan refleksi')
+ ),
+ 'Tahun 2': (
+    # Unit boundaries verified from the textbook contents page: 1,7,13,19,25,31,
+    # 37,43,49,55,61,67,73,79,85,91,97,103,109,115,121,127,133.
+    (1,6,'quran_bacaan_1','petikan surah, potongan ayat, bacaan berpandu, padanan potongan dan pengukuhan bacaan'),
+    (7,12,'quran_bacaan_2','petikan surah dengan perkataan sasaran, talaqqi, bacaan berulang dan latihan kefahaman/bacaan'),
+    (13,18,'quran_bacaan_3','petikan surah dan latihan bacaan/hafazan melalui potongan ayat serta aktiviti pengukuhan'),
+    (19,24,'quran_hafazan','hafazan ayat/surah melalui pecahan teks, ulangan, susunan semula dan semakan rakan/guru'),
+    (25,30,'tajwid_mad_asli','contoh perkataan/ayat untuk mengenal dan membaca mad asli serta latihan pengelasan/aplikasi'),
+    (31,36,'tajwid_bacaan','contoh bunyi/huruf dan petikan ayat untuk latihan sebutan, bacaan serta aplikasi hukum bacaan'),
+    (37,42,'jawi_perkataan_1','perkataan Jawi berasaskan gambar/tema, bacaan, ejaan dan padanan makna'),
+    (43,48,'jawi_binaan_kata','binaan perkataan Jawi melalui gabungan bahagian/suku kata, gambar dan latihan ejaan'),
+    (49,54,'jawi_pengukuhan','perkataan dan ayat Jawi melalui tema, bacaan, kefahaman, binaan dan permainan bahasa'),
+    (55,60,'akidah_allah','kefahaman sifat/kebesaran Allah melalui contoh ciptaan, pernyataan, dalil dan aktiviti pengukuhan'),
+    (61,66,'akidah_ahad_samad','konsep al-Ahad dan al-Samad melalui dalil naqli/akli, contoh, perbandingan dan aplikasi kefahaman'),
+    (67,72,'akidah_malaikat','malaikat melalui maksud, nama/tugas, dalil, pengelasan dan pengukuhan kefahaman'),
+    (73,78,'ibadah_istinjak','istinjak melalui bahan yang sesuai/tidak sesuai, cara, situasi dan latihan amali/pemilihan'),
+    (79,84,'ibadah_syarat_solat','syarat wajib/sah solat melalui carta, situasi, pengelasan dan semakan kefahaman'),
+    (85,90,'ibadah_bacaan_solat','bacaan/perlakuan wajib solat melalui urutan, teks bacaan, demonstrasi dan semakan'),
+    (91,96,'ibadah_pengukuhan_solat','pengukuhan solat melalui bacaan, perlakuan, urutan dan aktiviti amali/kuiz'),
+    (97,102,'sirah_kelahiran_nabi','peristiwa sekitar kelahiran Nabi Muhammad SAW melalui naratif, gambar, urutan dan kefahaman'),
+    (103,108,'sirah_al_amin','sifat amanah/al-Amin Nabi Muhammad SAW melalui situasi, contoh perlakuan dan aplikasi'),
+    (109,114,'sirah_sahabat','sahabat Nabi Muhammad SAW melalui tokoh, sifat, sumbangan dan aktiviti kefahaman'),
+    (115,120,'adab_rezeki','adab berkaitan rezeki/makanan melalui situasi, amalan, dalil/nilai dan refleksi'),
+    (121,126,'adab_persahabatan','adab persahabatan melalui situasi, ciri sahabat, perlakuan dan penilaian tindakan'),
+    (127,132,'adab_berdoa','adab dan maksud berdoa melalui situasi, panduan, contoh dan amalan'),
+    (133,138,'adab_cinta_rasul','adab mencintai Rasulullah SAW melalui dalil, contoh amalan, situasi dan pengukuhan')
+ )
+}
+
+def _pi2622_page_content(s):
+    if not _pi2614_pi_only(s):
+        return None
+    year=str((s or {}).get('year') or '').strip()
+    ranges=_PI2622_PAGE_CONTENT.get(year)
+    if not ranges:
+        return None
+    if '_pi2614_verified_book' not in globals() or not _pi2614_verified_book(s):
+        return None
+    pages=_pi2621_page_numbers((s or {}).get('textbook_pages'))
+    if not pages:
+        return None
+    hits=[]
+    for a,b,kind,desc in ranges:
+        if any(a <= p <= b for p in pages):
+            hits.append((a,b,kind,desc))
+    kinds={h[2] for h in hits}
+    if len(kinds)!=1:
+        return None
+    a,b,kind,desc=hits[0]
+    return {'year':year,'kind':kind,'description':desc,'pages':pages,'range':(a,b)}
+
+def _pi2622_method_cue(info):
+    if not info:
+        return ''
+    kind=info['kind']
+    desc=info['description']
+    # Compact action cues by actual visual content class.
+    if kind.startswith('jawi_') or kind in ('jawi_asas','jawi_perkataan'):
+        action='Gunakan contoh sebenar pada halaman untuk baca/padan/bina/tulis Jawi.'
+    elif kind.startswith('quran_') or kind in ('surah_dan_bacaan','bacaan_hijaiyah','bacaan_berperingkat','bacaan_ayat','bacaan_ayat_berstruktur'):
+        action='Gunakan petikan/contoh sebenar pada halaman untuk talaqqi, ikut baca dan semakan individu.'
+    elif kind.startswith('tajwid_'):
+        action='Gunakan contoh sebenar pada halaman untuk kenal pasti hukum, baca dengan betul dan semak aplikasi.'
+    elif kind.startswith('ibadah_') or kind in ('wuduk_dan_kebersihan','solat_asas'):
+        action='Gunakan gambar/carta/urutan sebenar pada halaman untuk kenal pasti langkah dan laksanakan/semak amali.'
+    elif kind.startswith('sirah_') or kind=='sirah_nabi':
+        action='Gunakan naratif/gambar sebenar pada halaman untuk susun fakta, jelaskan peristiwa dan ambil iktibar.'
+    elif kind.startswith('adab_') or kind in ('adab_dan_penghayatan','adab_harian'):
+        action='Gunakan situasi/gambar sebenar pada halaman untuk nilai perlakuan dan kaitkan dengan amalan harian.'
+    elif kind.startswith('akidah_') or kind=='akidah_asas':
+        action='Gunakan dalil/contoh/gambar sebenar pada halaman untuk jelaskan konsep dan buktikan kefahaman.'
+    else:
+        action='Gunakan kandungan sebenar pada halaman sebagai bahan utama aktiviti dan semakan.'
+    return action
+
+def _pi2622_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s):
+        return r
+    info=_pi2622_page_content(s)
+    if not info:
+        return r
+    cue=_pi2622_method_cue(info)
+    if isinstance(s,dict):
+        s['_pi2622_page_content']={**info,'method_cue':cue,'source':'actual_T1_T2_textbook_visual_QA'}
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block:
+            continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            if n != 2:
+                continue
+            body=str(lines[bi] or '').strip()
+            anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+            # Activity 2 is deliberately the textbook-content interaction point.
+            # Replace generic reference language rather than stacking more prose.
+            if re.search(r'(?i)rujuk|buku teks|بوکو تيکس|halaman|muka surat',body) or len(body) < 150:
+                lines[bi]=((anchor.rstrip(' .')+'. ') if anchor else '')+cue
+            if '_pi2619_compact_activity_body' in globals():
+                lines[bi]=_pi2619_compact_activity_body(lines[bi],2)
+        r[key]='\n'.join(lines)
+    return r
+
+_pi_rph_rows_before_v2622=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2622_apply(s,_pi_rph_rows_before_v2622(s,ai_text))
+
+CIKGULAJU_PATCH_V2622='PI_T1_T2_COMPLETE_ACTUAL_TEXTBOOK_PAGE_CONTENT_GROUNDING'
+# ===== END v26.22 =====
+
+
+# ===== v26.23 PI TEXTBOOK PAGE-CONTENT — T3 + T4 VISUAL QA =====
+# T3/T4 unit boundaries were read from the actual textbook contents pages and
+# representative pages were visually checked. Descriptors are intentionally
+# broad and factual; no textbook prose is copied.
+APP_VERSION='v26.23-PI-TEXTBOOK-PAGE-CONTENT-T1-T4-FULL'
+
+_PI2623_PAGE_CONTENT = {
+ 'Tahun 3': (
+   (1,1,'quran_intro','pengenalan bidang al-Quran dan fokus pembelajaran pada halaman'),
+   (2,7,'quran_bacaan','petikan surah, potongan ayat, bacaan berpandu dan aktiviti semakan bacaan'),
+   (8,13,'quran_bacaan','petikan surah dengan potongan perkataan/ayat, talaqqi dan pengukuhan bacaan'),
+   (14,19,'quran_hafazan','hafazan surah melalui potongan ayat, ulangan, susunan dan semakan'),
+   (20,25,'quran_hafazan','hafazan surah menggunakan petikan sebenar, pecahan teks dan latihan ingatan'),
+   (26,31,'quran_kefahaman','petikan al-Quran disertai maksud, situasi dan aktiviti kefahaman/penghayatan'),
+   (32,36,'tajwid','contoh ayat/perkataan untuk mengenal hukum bacaan dan mengaplikasikannya dalam bacaan'),
+   (37,37,'hadis_intro','pengenalan bidang hadis dan fokus pembelajaran pada halaman'),
+   (38,44,'hadis_kefahaman','teks hadis/maksud, situasi dan aktiviti memahami serta mengamalkan pengajaran'),
+   (45,45,'jawi_intro','pengenalan bidang Jawi dan fokus pembelajaran'),
+   (46,51,'jawi_perkataan','perkataan Jawi melalui gambar, bacaan, ejaan, padanan dan binaan kata'),
+   (52,57,'jawi_perkataan','binaan/ejaan perkataan Jawi melalui contoh, pecahan kata dan latihan'),
+   (58,64,'jawi_ayat','perkataan dan ayat Jawi melalui bacaan, ejaan, binaan dan aktiviti pengukuhan'),
+   (65,65,'akidah_intro','pengenalan bidang akidah dan fokus pembelajaran'),
+   (66,71,'akidah_allah','kebesaran/kekuasaan Allah melalui dalil, alam ciptaan, contoh dan aktiviti kefahaman'),
+   (72,78,'akidah_kitab','iman kepada kitab melalui maksud, nama kitab/rasul, dalil dan aplikasi kefahaman'),
+   (79,79,'ibadah_intro','pengenalan bidang ibadah dan fokus pembelajaran'),
+   (80,85,'ibadah_solat','konsep/perlakuan solat melalui penerangan, situasi, urutan dan latihan amali'),
+   (86,91,'ibadah_solat','syarat/perkara berkaitan solat melalui contoh, pengelasan, situasi dan semakan'),
+   (92,98,'ibadah_amali','pengukuhan ibadah melalui urutan, bacaan/perlakuan, demonstrasi dan penilaian amali'),
+   (99,99,'sirah_intro','pengenalan bidang sirah dan fokus pembelajaran'),
+   (100,107,'sirah_nabi','peristiwa sirah Nabi Muhammad SAW melalui naratif, gambar, urutan fakta dan iktibar'),
+   (108,113,'sirah_sifat','sifat/peribadi Nabi Muhammad SAW melalui kisah, situasi dan aplikasi teladan'),
+   (114,120,'sirah_masyarakat','peristiwa dan hubungan dalam sirah melalui naratif, watak, fakta dan iktibar'),
+   (121,121,'adab_intro','pengenalan bidang adab dan fokus pembelajaran'),
+   (122,127,'adab_harian','adab melalui situasi bergambar, panduan perlakuan dan aplikasi harian'),
+   (128,133,'adab_harian','adab melalui perbandingan tindakan, situasi, nilai dan refleksi'),
+   (134,139,'adab_harian','adab dan akhlak melalui situasi, contoh amalan dan pengukuhan'),
+   (140,146,'adab_penghayatan','penghayatan adab melalui dalil/nilai, situasi, amalan dan refleksi')
+ ),
+ 'Tahun 4': (
+   (1,1,'quran_intro','pengenalan bidang al-Quran dan fokus pembelajaran pada halaman'),
+   (2,7,'quran_bacaan','petikan surah, potongan ayat, bacaan berpandu dan semakan bacaan'),
+   (8,13,'quran_bacaan','petikan surah dengan contoh perkataan/ayat, talaqqi dan pengukuhan'),
+   (14,19,'quran_hafazan','hafazan surah melalui pecahan teks, ulangan, susunan dan semakan'),
+   (20,25,'quran_hafazan','hafazan menggunakan petikan sebenar, potongan ayat dan aktiviti pengukuhan'),
+   (26,31,'quran_kefahaman','petikan al-Quran, maksud dan aktiviti kefahaman/penghayatan berdasarkan halaman'),
+   (32,36,'tajwid','contoh ayat/perkataan untuk mengenal hukum bacaan dan membaca dengan betul'),
+   (37,42,'tajwid','contoh hukum bacaan melalui petikan sebenar, pengelasan dan aplikasi bacaan'),
+   (43,48,'quran_kefahaman','petikan/dalil, maksud, situasi dan aktiviti kefahaman serta penghayatan'),
+   (49,49,'hadis_intro','pengenalan bidang hadis dan fokus pembelajaran'),
+   (50,56,'hadis_kefahaman','teks hadis/maksud, situasi dan aktiviti memahami serta mengamalkan pengajaran'),
+   (57,57,'jawi_intro','pengenalan bidang Jawi dan fokus pembelajaran'),
+   (58,63,'jawi_perkataan','perkataan Jawi melalui gambar, bacaan, ejaan, padanan dan binaan'),
+   (64,69,'jawi_perkataan','binaan/ejaan perkataan Jawi melalui contoh dan latihan'),
+   (70,75,'jawi_ayat','perkataan/ayat Jawi melalui bacaan, ejaan, binaan dan kefahaman'),
+   (76,82,'jawi_pengukuhan','pengukuhan Jawi melalui teks, padanan, binaan dan aktiviti bahasa'),
+   (83,83,'akidah_intro','pengenalan bidang akidah dan fokus pembelajaran'),
+   (84,90,'akidah_allah','konsep akidah melalui dalil, contoh alam/ciptaan, situasi dan kefahaman'),
+   (91,98,'akidah_rasul','iman kepada rasul melalui maksud, sifat/peranan, dalil dan aktiviti kefahaman'),
+   (99,105,'akidah_rasul','sifat/peranan rasul melalui contoh, pengelasan, situasi dan aplikasi'),
+   (106,112,'akidah_pengukuhan','pengukuhan konsep akidah melalui dalil, pernyataan, situasi dan refleksi'),
+   (113,113,'ibadah_intro','pengenalan bidang ibadah dan fokus pembelajaran'),
+   (114,121,'ibadah_amali','ibadah melalui penerangan, gambar/carta, urutan langkah dan demonstrasi'),
+   (122,128,'ibadah_amali','ibadah melalui syarat/perkara berkaitan, situasi, pengelasan dan amali'),
+   (129,136,'ibadah_pengukuhan','pengukuhan ibadah melalui urutan, perlakuan/bacaan dan penilaian amali'),
+   (137,137,'sirah_intro','pengenalan bidang sirah dan fokus pembelajaran'),
+   (138,145,'sirah_nabi','peristiwa sirah Nabi Muhammad SAW melalui naratif, gambar, fakta dan urutan'),
+   (146,153,'sirah_teladan','sifat/tindakan Nabi Muhammad SAW melalui kisah, situasi dan iktibar'),
+   (154,160,'sirah_penghayatan','peristiwa sirah, sebab/akibat, nilai dan aplikasi teladan'),
+   (161,161,'adab_intro','pengenalan bidang adab dan fokus pembelajaran'),
+   (162,167,'adab_harian','adab melalui situasi bergambar, panduan perlakuan dan aplikasi harian'),
+   (168,173,'adab_harian','adab melalui situasi, perbandingan tindakan, nilai dan refleksi'),
+   (174,179,'adab_harian','adab melalui contoh amalan, situasi dan pengukuhan penghayatan'),
+   (180,186,'adab_penghayatan','penghayatan adab melalui dalil/nilai, situasi, amalan dan refleksi')
+ )
+}
+
+def _pi2623_page_content(s):
+    if not _pi2614_pi_only(s):
+        return None
+    year=str((s or {}).get('year') or '').strip()
+    ranges=_PI2623_PAGE_CONTENT.get(year)
+    if not ranges:
+        # T1/T2 remain owned by v26.22.
+        return _pi2622_page_content(s) if '_pi2622_page_content' in globals() else None
+    if '_pi2614_verified_book' not in globals() or not _pi2614_verified_book(s):
+        return None
+    pages=_pi2621_page_numbers((s or {}).get('textbook_pages'))
+    if not pages:
+        return None
+    hits=[]
+    for a,b,kind,desc in ranges:
+        if any(a <= p <= b for p in pages):
+            hits.append((a,b,kind,desc))
+    # Do not infer when a PdP crosses distinct content classes.
+    kinds={h[2] for h in hits}
+    if len(kinds)!=1:
+        return None
+    a,b,kind,desc=hits[0]
+    return {'year':year,'kind':kind,'description':desc,'pages':pages,'range':(a,b)}
+
+def _pi2623_method_cue(info):
+    if not info:
+        return ''
+    kind=info['kind']
+    if kind.endswith('_intro'):
+        return 'Gunakan halaman pengenalan untuk mencetus pengetahuan sedia ada dan menetapkan fokus PdP.'
+    if kind.startswith('quran_'):
+        return 'Gunakan petikan/potongan sebenar pada halaman untuk talaqqi, ikut baca/hafaz dan semakan individu.'
+    if kind.startswith('tajwid'):
+        return 'Gunakan contoh sebenar pada halaman untuk kenal pasti hukum, baca dengan betul dan semak aplikasi.'
+    if kind.startswith('hadis_'):
+        return 'Gunakan teks/maksud dan situasi sebenar pada halaman untuk jelaskan pengajaran serta aplikasi.'
+    if kind.startswith('jawi_'):
+        return 'Gunakan contoh sebenar pada halaman untuk baca, eja, padan dan bina/tulis Jawi.'
+    if kind.startswith('akidah_'):
+        return 'Gunakan dalil/contoh/gambar sebenar pada halaman untuk jelaskan konsep dan buktikan kefahaman.'
+    if kind.startswith('ibadah_'):
+        return 'Gunakan gambar/carta/urutan sebenar pada halaman untuk kenal pasti langkah dan laksanakan/semak amali.'
+    if kind.startswith('sirah_'):
+        return 'Gunakan naratif/gambar sebenar pada halaman untuk susun fakta, jelaskan peristiwa dan ambil iktibar.'
+    if kind.startswith('adab_'):
+        return 'Gunakan situasi/gambar sebenar pada halaman untuk nilai perlakuan dan kaitkan dengan amalan harian.'
+    return 'Gunakan kandungan sebenar pada halaman sebagai bahan utama aktiviti dan semakan.'
+
+def _pi2623_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s):
+        return r
+    year=str((s or {}).get('year') or '').strip()
+    if year not in ('Tahun 3','Tahun 4'):
+        return r
+    info=_pi2623_page_content(s)
+    if not info:
+        return r
+    cue=_pi2623_method_cue(info)
+    if isinstance(s,dict):
+        s['_pi2623_page_content']={**info,'method_cue':cue,'source':'actual_T3_T4_textbook_contents_and_visual_QA'}
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block:
+            continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            if n!=2:
+                continue
+            body=str(lines[bi] or '').strip()
+            anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+            lines[bi]=((anchor.rstrip(' .')+'. ') if anchor else '')+cue
+            if '_pi2619_compact_activity_body' in globals():
+                lines[bi]=_pi2619_compact_activity_body(lines[bi],2)
+        r[key]='\n'.join(lines)
+    return r
+
+_pi_rph_rows_before_v2623=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2623_apply(s,_pi_rph_rows_before_v2623(s,ai_text))
+
+CIKGULAJU_PATCH_V2623='PI_T3_T4_ACTUAL_TEXTBOOK_PAGE_CONTENT_GROUNDING'
+# ===== END v26.23 =====
+
+
+# ===== v26.24 PI TEXTBOOK PAGE-CONTENT — T5 COMPLETE + T6 SAFE GATE =====
+# T5: unit boundaries verified from actual contents pages and representative
+# pages visually inspected. T6 source currently lacks a safely verified
+# printed-page/content-index correspondence, so T6 is deliberately NOT guessed.
+APP_VERSION='v26.24-PI-TEXTBOOK-PAGE-CONTENT-T1-T5-FULL-T6-SAFE-GATE'
+
+_PI2624_PAGE_CONTENT = {
+ 'Tahun 5': ((1, 5, 'quran_bacaan', 'petikan al-Quran, potongan ayat/perkataan, bacaan berpandu dan semakan bacaan'), (6, 11, 'quran_bacaan', 'petikan al-Quran, potongan ayat/perkataan, bacaan berpandu dan semakan bacaan'), (12, 15, 'quran_hafazan', 'hafazan melalui petikan sebenar, pecahan ayat, ulangan dan semakan'), (16, 21, 'quran_hafazan', 'hafazan melalui petikan sebenar, pecahan ayat, ulangan dan semakan'), (22, 27, 'quran_kefahaman', 'petikan/dalil, maksud, situasi dan aktiviti kefahaman serta penghayatan'), (28, 36, 'tajwid', 'contoh perkataan/ayat untuk mengenal hukum bacaan dan mengaplikasikannya'), (37, 37, 'hadis_intro', 'pengenalan bidang hadis dan fokus pembelajaran pada halaman'), (38, 44, 'hadis_kefahaman', 'teks hadis/maksud, situasi dan aktiviti memahami serta mengamalkan pengajaran'), (45, 45, 'jawi_intro', 'pengenalan bidang Jawi dan fokus pembelajaran'), (46, 51, 'jawi_perkataan', 'perkataan Jawi melalui gambar, bacaan, ejaan, padanan dan binaan'), (52, 57, 'jawi_perkataan', 'perkataan Jawi melalui gambar, bacaan, ejaan, padanan dan binaan'), (58, 64, 'jawi_ayat', 'perkataan/ayat Jawi melalui bacaan, ejaan, binaan dan kefahaman'), (65, 65, 'jawi_pengukuhan', 'pengukuhan Jawi melalui teks, padanan, binaan dan aktiviti bahasa'), (66, 73, 'akidah_intro', 'pengenalan bidang akidah dan fokus pembelajaran'), (74, 79, 'akidah_allah', 'konsep kebesaran/kekuasaan Allah melalui dalil, contoh dan kefahaman'), (80, 86, 'akidah_kefahaman', 'konsep akidah melalui dalil, pernyataan, contoh dan aplikasi kefahaman'), (87, 87, 'akidah_pengukuhan', 'pengukuhan akidah melalui dalil, situasi, pengelasan dan refleksi'), (88, 93, 'ibadah_intro', 'pengenalan bidang ibadah dan fokus pembelajaran'), (94, 99, 'ibadah_amali', 'ibadah melalui penerangan, gambar/carta, urutan langkah dan demonstrasi'), (100, 101, 'ibadah_amali', 'ibadah melalui penerangan, gambar/carta, urutan langkah dan demonstrasi'), (102, 109, 'ibadah_pengukuhan', 'pengukuhan ibadah melalui situasi, urutan, perlakuan/bacaan dan penilaian'), (110, 117, 'ibadah_pengukuhan', 'pengukuhan ibadah melalui situasi, urutan, perlakuan/bacaan dan penilaian'), (118, 125, 'sirah_intro', 'pengenalan bidang sirah dan fokus pembelajaran'), (126, 130, 'sirah_nabi', 'peristiwa sirah Nabi Muhammad SAW melalui naratif, gambar, fakta dan urutan'), (131, 133, 'sirah_teladan', 'sifat/tindakan tokoh dalam sirah melalui kisah, situasi dan iktibar'), (134, 141, 'sirah_penghayatan', 'peristiwa sirah, sebab/akibat, nilai dan aplikasi teladan'), (142, 149, 'sirah_penghayatan', 'peristiwa sirah, sebab/akibat, nilai dan aplikasi teladan'), (150, 158, 'adab_intro', 'pengenalan bidang adab dan fokus pembelajaran'), (159, 159, 'adab_harian', 'adab melalui situasi bergambar, panduan perlakuan dan aplikasi harian'), (160, 165, 'adab_harian', 'adab melalui situasi bergambar, panduan perlakuan dan aplikasi harian'), (166, 173, 'adab_harian', 'adab melalui situasi bergambar, panduan perlakuan dan aplikasi harian'), (174, 179, 'adab_penghayatan', 'penghayatan adab melalui dalil/nilai, situasi, amalan dan refleksi'), (180, 190, 'adab_penghayatan', 'penghayatan adab melalui dalil/nilai, situasi, amalan dan refleksi'))
+}
+
+def _pi2624_page_content(s):
+    if not _pi2614_pi_only(s):
+        return None
+    year=str((s or {}).get('year') or '').strip()
+    if year!='Tahun 5':
+        return _pi2623_page_content(s) if '_pi2623_page_content' in globals() else None
+    if '_pi2614_verified_book' not in globals() or not _pi2614_verified_book(s):
+        return None
+    pages=_pi2621_page_numbers((s or {}).get('textbook_pages'))
+    if not pages:
+        return None
+    hits=[x for x in _PI2624_PAGE_CONTENT['Tahun 5'] if any(x[0]<=p<=x[1] for p in pages)]
+    kinds={x[2] for x in hits}
+    if len(kinds)!=1:
+        return None
+    a,b,kind,description=hits[0]
+    return {'year':year,'kind':kind,'description':description,'pages':pages,'range':(a,b)}
+
+def _pi2624_cue(info):
+    if not info: return ''
+    k=info['kind']
+    if k.endswith('_intro'): return 'Gunakan halaman pengenalan untuk mencetus pengetahuan sedia ada dan menetapkan fokus PdP.'
+    if k.startswith('quran_'): return 'Gunakan petikan/potongan sebenar pada halaman untuk talaqqi, ikut baca/hafaz dan semakan individu.'
+    if k=='tajwid': return 'Gunakan contoh sebenar pada halaman untuk kenal pasti hukum, baca dengan betul dan semak aplikasi.'
+    if k.startswith('hadis_'): return 'Gunakan teks/maksud dan situasi sebenar pada halaman untuk jelaskan pengajaran serta aplikasi.'
+    if k.startswith('jawi_'): return 'Gunakan contoh sebenar pada halaman untuk baca, eja, padan dan bina/tulis Jawi.'
+    if k.startswith('akidah_'): return 'Gunakan dalil/contoh/gambar sebenar pada halaman untuk jelaskan konsep dan buktikan kefahaman.'
+    if k.startswith('ibadah_'): return 'Gunakan gambar/carta/urutan sebenar pada halaman untuk kenal pasti langkah dan laksanakan/semak amali.'
+    if k.startswith('sirah_'): return 'Gunakan naratif/gambar sebenar pada halaman untuk susun fakta, jelaskan peristiwa dan ambil iktibar.'
+    if k.startswith('adab_'): return 'Gunakan situasi/gambar sebenar pada halaman untuk nilai perlakuan dan kaitkan dengan amalan harian.'
+    return 'Gunakan kandungan sebenar pada halaman sebagai bahan utama aktiviti dan semakan.'
+
+def _pi2624_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    if str((s or {}).get('year') or '').strip()!='Tahun 5': return r
+    info=_pi2624_page_content(s)
+    if not info: return r
+    cue=_pi2624_cue(info)
+    if isinstance(s,dict):
+        s['_pi2624_page_content']={**info,'method_cue':cue,'source':'actual_T5_textbook_contents_and_visual_QA'}
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block: continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            if n!=2: continue
+            body=str(lines[bi] or '').strip()
+            anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+            lines[bi]=((anchor.rstrip(' .')+'. ') if anchor else '')+cue
+            if '_pi2619_compact_activity_body' in globals():
+                lines[bi]=_pi2619_compact_activity_body(lines[bi],2)
+        r[key]='\n'.join(lines)
+    return r
+
+_pi_rph_rows_before_v2624=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2624_apply(s,_pi_rph_rows_before_v2624(s,ai_text))
+
+# T6 safety lock: existing verified RPT/SK/SP/textbook page mapping remains usable,
+# but no v26.24 page-content claim is made until printed-page correspondence is verified.
+CIKGULAJU_PATCH_V2624='PI_T5_ACTUAL_TEXTBOOK_PAGE_CONTENT_T6_NO_GUESS_SAFE_GATE'
+# ===== END v26.24 =====
+
+
+# ===== v26.25 PI TEXTBOOK PAGE-CONTENT — T1–T6 COMPLETE =====
+# T6 printed-page boundaries recovered from the actual KSSR Semakan 2017
+# textbook contents. Representative textbook pages were cross-checked.
+# Runtime prose remains broad/factual and does not reproduce textbook text.
+APP_VERSION='v26.25-PI-TEXTBOOK-PAGE-CONTENT-T1-T6-FULL'
+
+_PI2625_PAGE_CONTENT={'Tahun 6': ((1, 5, 'quran_bacaan', 'petikan al-Quran, potongan ayat/perkataan, bacaan berpandu dan semakan bacaan'), (6, 11, 'quran_bacaan', 'petikan al-Quran, potongan ayat/perkataan, bacaan berpandu dan semakan bacaan'), (12, 15, 'quran_hafazan', 'hafazan melalui petikan sebenar, pecahan ayat, ulangan dan semakan'), (16, 21, 'quran_hafazan', 'hafazan melalui petikan sebenar, pecahan ayat, ulangan dan semakan'), (22, 27, 'quran_kefahaman', 'petikan/dalil, maksud, situasi dan aktiviti kefahaman serta penghayatan'), (28, 36, 'tajwid', 'contoh perkataan/ayat untuk mengenal hukum bacaan dan mengaplikasikannya'), (37, 37, 'hadis_intro', 'pengenalan bidang hadis dan fokus pembelajaran pada halaman'), (38, 46, 'hadis_kefahaman', 'teks hadis/maksud, situasi dan aktiviti memahami serta mengamalkan pengajaran'), (47, 47, 'jawi_intro', 'pengenalan bidang Jawi dan fokus pembelajaran'), (48, 54, 'jawi_perkataan', 'perkataan Jawi melalui bacaan, ejaan, padanan dan binaan'), (55, 61, 'jawi_ayat', 'teks/ayat Jawi melalui bacaan, binaan, penulisan dan kefahaman'), (62, 70, 'jawi_pengukuhan', 'pengukuhan Jawi melalui teks, penulisan, binaan dan aktiviti bahasa'), (71, 71, 'akidah_intro', 'pengenalan bidang akidah dan fokus pembelajaran'), (72, 78, 'akidah_kefahaman', 'konsep akidah melalui dalil, pernyataan, contoh dan aplikasi kefahaman'), (79, 85, 'akidah_kefahaman', 'konsep akidah melalui dalil, pernyataan, contoh dan aplikasi kefahaman'), (86, 92, 'akidah_kefahaman', 'konsep akidah melalui dalil, pernyataan, contoh dan aplikasi kefahaman'), (93, 99, 'akidah_pengukuhan', 'pengukuhan akidah melalui dalil, situasi, pengelasan dan refleksi'), (100, 106, 'akidah_pengukuhan', 'pengukuhan akidah melalui dalil, situasi, pengelasan dan refleksi'), (107, 107, 'ibadah_intro', 'pengenalan bidang ibadah dan fokus pembelajaran'), (108, 115, 'ibadah_amali', 'ibadah melalui penerangan, gambar/carta, urutan langkah dan demonstrasi'), (116, 127, 'ibadah_amali', 'ibadah melalui penerangan, gambar/carta, urutan langkah dan demonstrasi'), (128, 138, 'ibadah_pengukuhan', 'pengukuhan ibadah melalui situasi, urutan, perlakuan/bacaan dan penilaian'), (139, 139, 'sirah_intro', 'pengenalan bidang sirah dan fokus pembelajaran'), (140, 148, 'sirah_nabi', 'peristiwa sirah Nabi Muhammad SAW melalui naratif, gambar, fakta dan urutan'), (149, 157, 'sirah_teladan', 'sifat/tindakan dalam sirah melalui kisah, situasi dan iktibar'), (158, 166, 'sirah_penghayatan', 'peristiwa sirah, sebab/akibat, nilai dan aplikasi teladan'), (167, 167, 'adab_intro', 'pengenalan bidang adab dan fokus pembelajaran'), (168, 173, 'adab_harian', 'adab melalui situasi, panduan perlakuan dan aplikasi harian'), (174, 180, 'adab_harian', 'adab melalui situasi, panduan perlakuan dan aplikasi harian'), (181, 187, 'adab_harian', 'adab melalui situasi, panduan perlakuan dan aplikasi harian'), (188, 191, 'adab_penghayatan', 'penghayatan adab melalui dalil/nilai, situasi, amalan dan refleksi'))}
+
+def _pi2625_page_content(s):
+    if not _pi2614_pi_only(s):
+        return None
+    year=str((s or {}).get('year') or '').strip()
+    if year!='Tahun 6':
+        return _pi2624_page_content(s) if '_pi2624_page_content' in globals() else None
+    if '_pi2614_verified_book' not in globals() or not _pi2614_verified_book(s):
+        return None
+    pages=_pi2621_page_numbers((s or {}).get('textbook_pages'))
+    if not pages:
+        return None
+    hits=[x for x in _PI2625_PAGE_CONTENT['Tahun 6'] if any(x[0]<=p<=x[1] for p in pages)]
+    kinds={x[2] for x in hits}
+    if len(kinds)!=1:
+        return None
+    a,b,kind,description=hits[0]
+    return {'year':year,'kind':kind,'description':description,'pages':pages,'range':(a,b)}
+
+def _pi2625_cue(info):
+    if not info: return ''
+    k=info['kind']
+    if k.endswith('_intro'): return 'Gunakan halaman pengenalan untuk mencetus pengetahuan sedia ada dan menetapkan fokus PdP.'
+    if k.startswith('quran_'): return 'Gunakan petikan/potongan sebenar pada halaman untuk talaqqi, ikut baca/hafaz dan semakan individu.'
+    if k=='tajwid': return 'Gunakan contoh sebenar pada halaman untuk kenal pasti hukum, baca dengan betul dan semak aplikasi.'
+    if k.startswith('hadis_'): return 'Gunakan teks/maksud dan situasi sebenar pada halaman untuk jelaskan pengajaran serta aplikasi.'
+    if k.startswith('jawi_'): return 'Gunakan contoh sebenar pada halaman untuk baca, bina dan tulis teks Jawi.'
+    if k.startswith('akidah_'): return 'Gunakan dalil/contoh/situasi sebenar pada halaman untuk jelaskan konsep dan buktikan kefahaman.'
+    if k.startswith('ibadah_'): return 'Gunakan gambar/carta/urutan sebenar pada halaman untuk kenal pasti langkah dan laksanakan/semak amali.'
+    if k.startswith('sirah_'): return 'Gunakan naratif/gambar sebenar pada halaman untuk susun fakta, jelaskan peristiwa dan ambil iktibar.'
+    if k.startswith('adab_'): return 'Gunakan situasi/contoh sebenar pada halaman untuk nilai perlakuan dan kaitkan dengan amalan harian.'
+    return 'Gunakan kandungan sebenar pada halaman sebagai bahan utama aktiviti dan semakan.'
+
+def _pi2625_apply(s,r):
+    if not isinstance(r,dict) or not _pi2614_pi_only(s): return r
+    if str((s or {}).get('year') or '').strip()!='Tahun 6': return r
+    info=_pi2625_page_content(s)
+    if not info: return r
+    cue=_pi2625_cue(info)
+    if isinstance(s,dict):
+        s['_pi2625_page_content']={**info,'method_cue':cue,'source':'actual_T6_KSSR2017_textbook_contents_and_page_QA'}
+    for key in ('AKTIVITI UTAMA','activities'):
+        block=str(r.get(key) or '')
+        if not block: continue
+        lines=block.splitlines()
+        pairs=_pi2617_body_indices(lines) if '_pi2617_body_indices' in globals() else []
+        for _hi,bi,n in pairs:
+            if n!=2: continue
+            body=str(lines[bi] or '').strip()
+            anchor=_pi2616_preserve_rpt_anchor(body) if '_pi2616_preserve_rpt_anchor' in globals() else ''
+            lines[bi]=((anchor.rstrip(' .')+'. ') if anchor else '')+cue
+            if '_pi2619_compact_activity_body' in globals():
+                lines[bi]=_pi2619_compact_activity_body(lines[bi],2)
+        r[key]='\n'.join(lines)
+    return r
+
+_pi_rph_rows_before_v2625=_rph_rows
+def _rph_rows(s,ai_text):
+    return _pi2625_apply(s,_pi_rph_rows_before_v2625(s,ai_text))
+
+CIKGULAJU_PATCH_V2625='PI_T1_T6_COMPLETE_ACTUAL_TEXTBOOK_PAGE_CONTENT_GROUNDING'
+# ===== END v26.25 =====
