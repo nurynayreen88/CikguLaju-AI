@@ -44072,54 +44072,421 @@ def _rph_activity_heading_markup_v25184(text):
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
 
-# ===== v26.40b PI G/V GUARANTEED FONT FIX — NO FONTTOOLS =====
-# Narrow scope: preserve baseline text/layout. Only paragraphs containing
-# U+0762 (ݢ) or U+06CF (ۏ) use a guaranteed Noto Sans Arabic font.
-APP_VERSION='v26.40b-PI-GV-FORCE-NOTOSANS-NO-FONTTOOLS'
+# ===== v26.48 PENDIDIKAN MORAL T1-T6 RPH QUALITY BATCH =====
+# Scope: PM primary RPH content only. Preserve verified curriculum rows, UI, layout,
+# PI/Jawi renderer, BBM/Worksheet state and every non-PM subject.
+APP_VERSION='v26.48-PM-T1-T6-RPH-QUALITY-BATCH'
+CIKGULAJU_PATCH_V2648='PM_PRIMARY_252PDP_CONTEXTUAL_MORAL_REASONING_FEELING_ACTION'
 
-def _pi2640b_gv_font(bold=False):
-    import os, tempfile, urllib.request
-    # Prefer known installed paths first.
-    names = ['NotoSansArabic-Bold.ttf'] if bold else ['NotoSansArabic-Regular.ttf']
-    roots = [
-        '/usr/share/fonts/truetype/noto', '/usr/share/fonts/opentype/noto',
-        os.path.join(os.path.dirname(os.path.abspath(__file__)),'assets','fonts') if '__file__' in globals() else ''
+_pm_rph_rows_before_v2648=_rph_rows
+
+def _pm2648_clean(v):
+    return ' '.join(str(v or '').split()).strip()
+
+def _pm2648_source(s):
+    r=s.get('_quick_selected_rpt_row_v2388') or s.get('quick_rpt_row') or {}
+    return r if isinstance(r,dict) else {}
+
+def _pm2648_context(s,src):
+    vals=[src.get('unit_title'),src.get('topic'),src.get('subtopic'),src.get('skill_focus'),
+          s.get('unit'),s.get('topic'),s.get('subtopic')]
+    return ' — '.join(dict.fromkeys(_pm2648_clean(x) for x in vals if _pm2648_clean(x))) or 'nilai moral dalam kehidupan harian'
+
+def _pm2648_value(ctx):
+    t=ctx.casefold()
+    bank=(
+      ('Kepercayaan kepada Tuhan',('kepercayaan','tuhan','agama','bersyukur')),
+      ('Baik Hati',('baik hati','membantu','bantuan','prihatin','simpati')),
+      ('Bertanggungjawab',('tanggungjawab','bertanggungjawab','amanah','tugas')),
+      ('Berterima Kasih',('berterima kasih','penghargaan','menghargai','terima kasih')),
+      ('Hemah Tinggi',('hemah','sopan','beradab','budi bahasa')),
+      ('Hormat',('hormat','menghormati')),
+      ('Kasih Sayang',('kasih sayang','menyayangi','sayang')),
+      ('Keadilan',('adil','keadilan')),
+      ('Keberanian',('berani','keberanian')),
+      ('Kejujuran',('jujur','kejujuran','benar')),
+      ('Kerajinan',('rajin','kerajinan','usaha')),
+      ('Kerjasama',('kerjasama','bekerjasama','gotong-royong')),
+      ('Kesederhanaan',('sederhana','kesederhanaan')),
+      ('Toleransi',('toleransi','bertolak ansur')),
+    )
+    for val,words in bank:
+        if any(w in t for w in words): return val
+    return 'nilai moral'
+
+def _pm2648_build(s,src):
+    ctx=_pm2648_context(s,src); val=_pm2648_value(ctx)
+    anchor=_pm2648_clean(src.get('activity_note') or s.get('rpt_activity_note'))
+    assess=_pm2648_clean(src.get('assessment_note') or s.get('rpt_assessment_note'))
+    try: seq=int(src.get('sequence_no') or s.get('pdp_no') or 1)
+    except Exception: seq=1
+    mode=seq%4
+    source='Buku teks Pendidikan Moral yang berkaitan dengan PdP ini'
+    if anchor: source += f'; fokus RPT: {anchor}'
+    induction=[
+      f"5 minit\n1. Guru memaparkan situasi/gambar daripada {source}.\n2. Murid menyatakan tindakan yang dilihat dan mengenal pasti {val} yang berkaitan.\n3. Guru mengemukakan soalan: ‘Apakah pilihan yang patut dibuat, dan mengapa?’",
+      f"5 minit\n1. Guru membacakan situasi ringkas berpandukan {source}.\n2. Murid memilih sama ada tindakan watak wajar atau tidak wajar serta memberi satu sebab.\n3. Guru mengaitkan respons murid dengan {ctx}.",
+      f"5 minit\n1. Murid meneliti ilustrasi/situasi dalam {source}.\n2. Secara pasangan, murid menyebut perasaan watak dan kemungkinan akibat tindakannya.\n3. Guru memperkenalkan fokus {val} dalam {ctx}.",
+      f"5 minit\n1. Guru memberi dua pilihan tindakan berkaitan {ctx}.\n2. Murid mengundi pilihan yang lebih bermoral dan menerangkan sebab.\n3. Guru menghubungkan alasan murid dengan {val}."
+    ][mode]
+    main=[
+      f"Aktiviti 1 – Fahami Situasi\n1. Murid membaca/meneliti bahan buku teks berkaitan {ctx} dan menyatakan fakta penting.\n2. Murid mengenal pasti tindakan yang menunjukkan atau bertentangan dengan {val}.\n\nAktiviti 2 – Penaakulan Moral\n1. Dalam kumpulan kecil, murid membandingkan dua pilihan tindakan.\n2. Murid melengkapkan ‘pilihan → sebab → akibat’ dan mempertahankan pilihan yang paling wajar.\n\nAktiviti 3 – Emosi Moral\n1. Murid menerangkan perasaan diri/watak jika berada dalam situasi tersebut.\n2. Murid menghubungkan perasaan itu dengan kepentingan mengamalkan {val}.\n\nAktiviti 4 – Tindakan Moral\n1. Murid melakonkan atau menyatakan tindakan yang sepatutnya dalam situasi baharu yang serupa.\n2. Rakan memberi maklum balas sama ada tindakan itu selaras dengan {val} dan sebabnya.",
+      f"Aktiviti 1 – Baca dan Kenal Pasti\n1. Murid menggunakan bahan buku teks bagi {ctx} untuk mengenal pasti watak, masalah dan tindakan.\n2. Murid menandakan bukti yang berkaitan dengan {val}.\n\nAktiviti 2 – Kad Keputusan\n1. Setiap kumpulan menerima satu situasi lanjutan yang sepadan dengan konteks PdP.\n2. Murid memilih tindakan, memberi sekurang-kurangnya satu alasan dan menjangka akibatnya.\n\nAktiviti 3 – Suara Hati\n1. Murid menyatakan perasaan sebelum dan selepas melakukan tindakan bermoral.\n2. Beberapa murid berkongsi respons dan rakan membandingkan perasaan mereka.\n\nAktiviti 4 – Amalkan\n1. Murid menghasilkan satu ayat janji/tindakan sebenar untuk mengamalkan {val} dalam konteks {ctx}.\n2. Guru menilai kesesuaian tindakan berdasarkan situasi yang dipelajari.",
+      f"Aktiviti 1 – Susun Cerita Moral\n1. Berdasarkan situasi buku teks tentang {ctx}, murid menyusun urutan peristiwa/tindakan secara logik.\n2. Murid mengenal pasti titik keputusan yang memerlukan {val}.\n\nAktiviti 2 – Jika Saya Watak Itu\n1. Murid mencadangkan dua tindakan yang mungkin dilakukan.\n2. Murid membandingkan kesan setiap tindakan terhadap diri dan orang lain lalu memilih tindakan terbaik.\n\nAktiviti 3 – Perasaan dan Nilai\n1. Murid memilih kata perasaan yang sesuai bagi watak sebelum/selepas keputusan dibuat.\n2. Murid menjelaskan bagaimana {val} mempengaruhi perasaan tersebut.\n\nAktiviti 4 – Lakonan Ringkas\n1. Pasangan murid melakonkan penyelesaian bermoral bagi situasi seumpama {ctx}.\n2. Pemerhati menyebut bukti perlakuan {val} yang ditunjukkan.",
+      f"Aktiviti 1 – Lihat, Fikir, Nyatakan\n1. Murid meneliti bahan buku teks berkaitan {ctx}.\n2. Murid menyatakan apa yang berlaku, nilai yang terlibat dan tindakan yang patut diambil.\n\nAktiviti 2 – Setuju atau Tidak Setuju\n1. Guru membacakan beberapa pernyataan tindakan berdasarkan konteks PdP.\n2. Murid memilih setuju/tidak setuju dan memberikan justifikasi berasaskan {val}.\n\nAktiviti 3 – Kesan kepada Orang Lain\n1. Murid mengenal pasti siapa yang terkesan oleh sesuatu tindakan.\n2. Murid menerangkan perasaan pihak tersebut dan kesan jika {val} diamalkan atau diabaikan.\n\nAktiviti 4 – Penyelesaian Saya\n1. Murid membina satu penyelesaian bagi situasi baharu yang hampir sama.\n2. Murid membentangkan tindakan, sebab dan hasil yang dijangka; rakan memberi satu cadangan penambahbaikan."
+    ][mode]
+    pent=assess or f"Pemerhatian dan respons lisan/hasil murid: murid mengenal pasti {val}, memberi alasan terhadap pilihan tindakan, menyatakan perasaan yang sesuai dan mencadangkan perlakuan moral dalam konteks {ctx}."
+    return induction,main,pent
+
+def _rph_rows(s,ai_text):
+    r=_pm_rph_rows_before_v2648(s,ai_text)
+    if str((s or {}).get('subject') or '')!='Pendidikan Moral' or not str((s or {}).get('year') or '').startswith('Tahun '):
+        return r
+    src=_pm2648_source(s)
+    induction,main,pent=_pm2648_build(s,src)
+    r['SET INDUKSI']=induction
+    r['AKTIVITI UTAMA']=main
+    r['PENTAKSIRAN']=pent
+    r['PENUTUP']=("5 minit\n1. Murid menyatakan nilai yang dipelajari dan satu sebab nilai itu penting.\n"
+                  "2. Murid memberikan satu contoh tindakan yang akan diamalkan selepas PdP.\n"
+                  "3. Guru merumuskan hubungan antara pilihan, perasaan dan perlakuan moral.")
+    r['PEMULIHAN / PENGAYAAN']=("Pemulihan: murid memadankan situasi dengan tindakan bermoral yang sesuai menggunakan bimbingan guru.\n"
+                                "Pengayaan: murid mencipta satu dilema ringkas dan menjelaskan pilihan, sebab, perasaan serta kesan tindakannya.")
+    return r
+
+# ===== END v26.48 =====
+
+# ===== v26.49 PENDIDIKAN MORAL T1-T6 DSKP ACTIVITY BATCH =====
+# Narrow PM-only enrichment. Uses verified selected RPT/SP context and DSKP-style
+# activity archetypes; never invents textbook page numbers.
+APP_VERSION='v26.49-PM-T1-T6-DSKP-ACTIVITY-BATCH'
+CIKGULAJU_PATCH_V2649='PM_PRIMARY_VALUE_AND_SP_VERB_ACTIVITY_VARIATION'
+_pm_rph_rows_before_v2649=_rph_rows
+
+_PM2649_VALUE_TASKS={
+ 'Kepercayaan kepada Tuhan':('peta bulatan agama/kepercayaan atau ciptaan Tuhan','cerita berpandukan gambar amalan keagamaan/kepercayaan','aktiviti menjaga ciptaan Tuhan atau catatan rasa syukur'),
+ 'Baik Hati':('pilih gambar tindakan membantu dan prihatin','lakonan situasi memberi bantuan yang sesuai','kad tindakan baik hati untuk situasi baharu'),
+ 'Bertanggungjawab':('kad kecil “Tanggungjawab Saya”','jadual tanggungjawab diri/kelas','demonstrasi melaksanakan tanggungjawab dengan betul'),
+ 'Berterima Kasih':('kad ucapan terima kasih/penghargaan','simulasi memberi penghargaan dalam situasi sesuai','hasil ringkas tanda penghargaan menggunakan bahan tersedia'),
+ 'Hemah Tinggi':('senarai tutur kata sopan daripada situasi','lakonan pertuturan dan tingkah laku sopan','poster/ungkapan hemah tinggi yang sesuai konteks'),
+ 'Hormat':('pilih dan jelaskan gambar perlakuan hormat','banding beza tindakan menghormati dan tidak menghormati','demonstrasi perlakuan hormat dalam situasi baharu'),
+ 'Kasih Sayang':('peta tindakan menunjukkan kasih sayang','kad perasaan pihak yang menerima kasih sayang','lakonan cara menunjukkan kasih sayang yang sesuai'),
+ 'Keadilan':('asingkan tindakan adil dan tidak adil','timbang dua pilihan dan jelaskan keputusan yang adil','selesaikan situasi pembahagian/giliran secara adil'),
+ 'Keberanian':('kenal pasti tindakan berani yang betul','kad keputusan: berani bertindak tanpa membahayakan diri','lakonan menyuarakan perkara benar secara berhemah'),
+ 'Kejujuran':('bezakan pernyataan/tindakan jujur dan tidak jujur','ramalkan kesan kejujuran kepada diri dan orang lain','lakonan mengaku kesilapan atau menyampaikan perkara benar'),
+ 'Kerajinan':('susun langkah usaha sehingga tugasan selesai','banding beza hasil rajin dan sambil lewa','pelan tindakan ringkas untuk menyiapkan tugasan'),
+ 'Kerjasama':('rancang pembahagian peranan kumpulan','bina/selesaikan tugasan mudah secara bersama','refleksi sumbangan setiap ahli terhadap hasil kumpulan'),
+ 'Kesederhanaan':('kenal pasti perlakuan sederhana dan keterlaluan','catatan pilihan/perbelanjaan/penggunaan secara sederhana','poster atau demonstrasi cara mengelakkan pembaziran'),
+ 'Toleransi':('bandingkan pandangan/keperluan yang berbeza','latihan bertolak ansur untuk mencapai persetujuan','lakonan penyelesaian perbezaan secara aman'),
+}
+
+def _pm2649_sp_text(s,src):
+    bits=[]
+    for k in ('sp_text','standard_pembelajaran','learning_standard','skill_focus'):
+        if src.get(k): bits.append(str(src.get(k)))
+    for k in ('sp','sp_text','rpt_sp_text','learning_standard'):
+        if (s or {}).get(k): bits.append(str((s or {}).get(k)))
+    return ' '.join(bits).casefold()
+
+def _pm2649_evidence(sp):
+    rules=(
+      (('menyenaraikan','menyatakan','memberi contoh','mengenal pasti'), 'murid menghasilkan senarai/pilihan bukti yang tepat daripada situasi'),
+      (('memerihalkan','menerangkan','menghuraikan','menjelaskan'), 'murid menerangkan sebab, kepentingan atau kesan dengan bukti daripada situasi'),
+      (('membanding','membezakan'), 'murid membina perbandingan dua tindakan dan menjelaskan perbezaannya'),
+      (('meramalkan','menjangka'), 'murid meramalkan akibat setiap pilihan tindakan dan memberikan alasan'),
+      (('mencadangkan','merancang'), 'murid menghasilkan cadangan/pelan tindakan yang boleh dilaksanakan'),
+      (('menunjuk cara','menunjukkan cara','mempraktikkan','melaksanakan','mengamalkan'), 'murid melakukan demonstrasi, simulasi atau lakonan perlakuan moral'),
+      (('perasaan','mengekspresikan','meluahkan','menzahirkan','berasa'), 'murid menyatakan perasaan dan menghubungkannya dengan tindakan serta nilai'),
+      (('mencipta','menghasilkan','mereka cipta'), 'murid menghasilkan produk ringkas yang menjadi bukti penguasaan SP'),
+    )
+    for keys,out in rules:
+        if any(k in sp for k in keys): return out
+    return 'murid memberi pilihan, alasan, perasaan dan tindakan yang selaras dengan situasi'
+
+def _pm2649_build(s,src):
+    ctx=_pm2648_context(s,src); val=_pm2648_value(ctx)
+    anchor=_pm2648_clean(src.get('activity_note') or (s or {}).get('rpt_activity_note'))
+    assess=_pm2648_clean(src.get('assessment_note') or (s or {}).get('rpt_assessment_note'))
+    sp=_pm2649_sp_text(s,src); evidence=_pm2649_evidence(sp)
+    tasks=_PM2649_VALUE_TASKS.get(val,('analisis gambar/situasi moral','kad pilihan tindakan dan sebab','simulasi tindakan moral'))
+    # If the verified RPT already provides an activity, make it the first classroom task.
+    a1=(f"Aktiviti 1 - Aktiviti RPT/Buku Teks\n1. Murid melaksanakan aktiviti yang telah dipadankan: {anchor}.\n"
+        f"2. Guru memastikan hasil aktiviti membuktikan SP: {evidence}.") if anchor else (
+        f"Aktiviti 1 - Teliti Situasi\n1. Murid meneliti bahan buku teks yang berkaitan dengan {ctx}.\n"
+        f"2. Murid mengenal pasti bukti {val} dan menghasilkan respons mengikut SP: {evidence}.")
+    a2=(f"Aktiviti 2 - {tasks[0].capitalize()}\n1. Murid melaksanakan {tasks[0]} berdasarkan situasi yang dipelajari.\n"
+        f"2. Murid menerangkan kaitan hasil tersebut dengan {val}.")
+    a3=(f"Aktiviti 3 - Penaakulan dan Perasaan\n1. Murid membandingkan sekurang-kurangnya dua pilihan tindakan dan menyatakan sebab pilihan yang paling wajar.\n"
+        f"2. Murid menyatakan perasaan pihak yang terlibat serta kesan jika {val} diamalkan atau diabaikan.")
+    a4=(f"Aktiviti 4 - {tasks[1].capitalize()}\n1. Murid melaksanakan {tasks[1]} dalam konteks {ctx}.\n"
+        f"2. Sebagai aplikasi, murid menyelesaikan situasi baharu melalui {tasks[2]} dan memberikan justifikasi ringkas.")
+    induction=(f"5 minit\n1. Guru memaparkan gambar/situasi daripada buku teks yang berkaitan dengan {ctx}.\n"
+               f"2. Murid menyatakan apa yang berlaku dan nilai yang mungkin terlibat.\n"
+               f"3. Guru mengemukakan soalan pencetus: ‘Apakah tindakan yang paling wajar dan mengapa?’")
+    pent=assess or f"Pentaksiran berdasarkan evidens SP: {evidence}. Guru turut menilai ketepatan nilai {val}, alasan, perasaan dan aplikasi tindakan dalam situasi baharu."
+    return induction,'\n\n'.join((a1,a2,a3,a4)),pent
+
+def _rph_rows(s,ai_text):
+    r=_pm_rph_rows_before_v2649(s,ai_text)
+    if str((s or {}).get('subject') or '')!='Pendidikan Moral' or not str((s or {}).get('year') or '').startswith('Tahun '):
+        return r
+    src=_pm2648_source(s)
+    induction,main,pent=_pm2649_build(s,src)
+    r['SET INDUKSI']=induction
+    r['AKTIVITI UTAMA']=main
+    r['PENTAKSIRAN']=pent
+    return r
+
+# ===== END v26.49 =====
+
+# ===== v26.50 PENDIDIKAN MORAL T1-T6 LEVELLED VARIATION BATCH =====
+# PM-only: age-level differentiation + deterministic per-PdP activity rotation.
+# No DB writes; no page-number invention; verified RPT activity remains first priority.
+APP_VERSION='v26.50-PM-T1-T6-LEVELLED-VARIATION-BATCH'
+CIKGULAJU_PATCH_V2650='PM_PRIMARY_252PDP_LEVEL_AND_SEQUENCE_VARIATION'
+_pm_rph_rows_before_v2650=_rph_rows
+
+def _pm2650_year(s):
+    import re
+    m=re.search(r'(\d+)',str((s or {}).get('year') or ''))
+    return int(m.group(1)) if m else 1
+
+def _pm2650_seq(s,src):
+    try: return int(src.get('sequence_no') or (s or {}).get('pdp_no') or 1)
+    except Exception: return 1
+
+def _pm2650_level(y):
+    if y<=2: return 'asas'
+    if y<=4: return 'pertengahan'
+    return 'lanjutan'
+
+def _pm2650_task_bank(val,level):
+    base=_PM2649_VALUE_TASKS.get(val,('analisis gambar/situasi moral','kad pilihan tindakan dan sebab','simulasi tindakan moral'))
+    if level=='asas':
+        return (
+          base[0],
+          f"padanan gambar dengan tindakan {val}",
+          f"lakonan dua watak menunjukkan {val}",
+          f"ayat mudah ‘Saya akan ...’ untuk mengamalkan {val}",
+        )
+    if level=='pertengahan':
+        return (
+          base[0], base[1],
+          f"peta sebab-akibat apabila {val} diamalkan atau diabaikan",
+          f"lakonan penyelesaian masalah diikuti alasan pilihan tindakan",
+        )
+    return (
+      base[0], base[1],
+      f"analisis dilema: pilihan, alasan, pihak terkesan dan akibat berkaitan {val}",
+      f"cadangan tindakan sebenar serta justifikasi prinsip {val}",
+    )
+
+def _pm2650_build(s,src):
+    ctx=_pm2648_context(s,src); val=_pm2648_value(ctx)
+    y=_pm2650_year(s); level=_pm2650_level(y); seq=_pm2650_seq(s,src)
+    anchor=_pm2648_clean(src.get('activity_note') or (s or {}).get('rpt_activity_note'))
+    assess=_pm2648_clean(src.get('assessment_note') or (s or {}).get('rpt_assessment_note'))
+    sp=_pm2649_sp_text(s,src); evidence=_pm2649_evidence(sp)
+    bank=_pm2650_task_bank(val,level)
+    rot=seq % len(bank)
+    tasks=bank[rot:]+bank[:rot]
+
+    if level=='asas':
+        induction=(f"5 minit\n1. Guru menunjukkan gambar/situasi buku teks berkaitan {ctx}.\n"
+                   f"2. Murid menyebut apa yang dilakukan oleh watak dan memilih tindakan baik/tidak baik.\n"
+                   f"3. Guru mengaitkan jawapan dengan {val}.")
+        reason=(f"Aktiviti 3 - Pilih dan Sebabkan\n1. Murid memilih satu daripada dua tindakan bagi situasi mudah.\n"
+                f"2. Murid memberi satu sebab dan menyatakan perasaan watak selepas tindakan itu.")
+    elif level=='pertengahan':
+        induction=(f"5 minit\n1. Murid meneliti situasi buku teks berkaitan {ctx}.\n"
+                   f"2. Secara pasangan, murid mengenal pasti masalah, tindakan watak dan {val}.\n"
+                   f"3. Guru meminta murid menjangka satu kesan daripada tindakan tersebut.")
+        reason=(f"Aktiviti 3 - Sebab, Kesan dan Perasaan\n1. Murid membandingkan dua pilihan tindakan serta mencatat sebab dan kesannya.\n"
+                f"2. Murid menerangkan perasaan pihak yang terlibat sebelum memilih tindakan paling wajar.")
+    else:
+        induction=(f"5 minit\n1. Guru mengemukakan situasi/dilema daripada konteks buku teks {ctx}.\n"
+                   f"2. Murid mengenal pasti pihak yang terlibat, konflik nilai dan kemungkinan keputusan.\n"
+                   f"3. Murid memberi pendirian awal dengan satu justifikasi.")
+        reason=(f"Aktiviti 3 - Analisis Dilema Moral\n1. Murid menilai sekurang-kurangnya dua pilihan berdasarkan sebab, akibat dan pihak yang terkesan.\n"
+                f"2. Murid mempertahankan keputusan yang paling selaras dengan {val} serta menyatakan perasaan yang mungkin timbul.")
+
+    if anchor:
+        a1=(f"Aktiviti 1 - Aktiviti RPT/Buku Teks\n1. Murid melaksanakan aktiviti verified yang telah dipadankan: {anchor}.\n"
+            f"2. Guru memastikan hasil murid benar-benar menunjukkan evidens SP: {evidence}.")
+    else:
+        a1=(f"Aktiviti 1 - Eksplorasi Buku Teks\n1. Murid meneliti bahan buku teks berkaitan {ctx} dan mengenal pasti bukti {val}.\n"
+            f"2. Murid menghasilkan respons yang menepati SP: {evidence}.")
+    a2=(f"Aktiviti 2 - {tasks[0].capitalize()}\n1. Murid melaksanakan {tasks[0]} berdasarkan situasi PdP.\n"
+        f"2. Murid menghubungkan hasil dengan {val} dan konteks {ctx}.")
+    a4=(f"Aktiviti 4 - Aplikasi\n1. Murid melaksanakan {tasks[1]} untuk situasi baharu yang setara.\n"
+        f"2. Murid menutup aktiviti melalui {tasks[2]} dan menerangkan mengapa tindakannya sesuai.")
+    pent=assess or (f"Pentaksiran: {evidence}. Guru menilai ketepatan penggunaan {val}, alasan, kesan/perasaan "
+                     f"dan kebolehan mengaplikasikan tindakan dalam situasi baharu.")
+    return induction,'\n\n'.join((a1,a2,reason,a4)),pent
+
+def _rph_rows(s,ai_text):
+    r=_pm_rph_rows_before_v2650(s,ai_text)
+    if str((s or {}).get('subject') or '')!='Pendidikan Moral' or not str((s or {}).get('year') or '').startswith('Tahun '):
+        return r
+    src=_pm2648_source(s)
+    induction,main,pent=_pm2650_build(s,src)
+    r['SET INDUKSI']=induction
+    r['AKTIVITI UTAMA']=main
+    r['PENTAKSIRAN']=pent
+    return r
+
+# ===== END v26.50 =====
+
+# === v26.51 Pendidikan Moral T1-T6: individual-PdP variation layer ===
+# Append-only. Does not alter DB/layout/PI/Jawi/BBM/Worksheet.
+import hashlib as _pm_hashlib_v2651
+import re as _pm_re_v2651
+
+_PM_OLD_RPH_ROWS_V2651 = globals().get('_rph_rows')
+
+def _pm_pick_v2651(seq, key):
+    if not seq:
+        return ''
+    h = int(_pm_hashlib_v2651.sha1(str(key).encode('utf-8','ignore')).hexdigest()[:8], 16)
+    return seq[h % len(seq)]
+
+def _pm_year_num_v2651(s):
+    raw = str(s.get('grade') or s.get('year') or s.get('year_label') or '')
+    m = _pm_re_v2651.search(r'([1-6])', raw)
+    return int(m.group(1)) if m else 0
+
+def _pm_context_v2651(s):
+    r = s.get('quick_rpt_row') or s.get('_quick_selected_rpt_row_v2388') or s.get('rpt_row') or {}
+    if not isinstance(r, dict): r = {}
+    vals=[]
+    for k in ('unit_title','topic','subtopic','skill_focus','title','lesson_title','activity_note','assessment_note'):
+        v=r.get(k) or s.get(k)
+        if v: vals.append(str(v))
+    return ' | '.join(vals).strip(), r
+
+def _pm_action_family_v2651(text):
+    t=text.lower()
+    rules=[
+      (('menunjuk cara','demonstrasi','melakon','lakonan','mengamalkan','mempraktik'), 'perlakuan'),
+      (('mengekspresi','perasaan','merasai','emosi'), 'emosi'),
+      (('banding','membezakan','membanding'), 'banding'),
+      (('ramal','akibat','kesan','implikasi'), 'akibat'),
+      (('cadang','keputusan','pilihan','justifikasi','alasan','sebab'), 'keputusan'),
+      (('senarai','nyatakan','kenal pasti','mengenal pasti','namakan'), 'kenal'),
+      (('huraikan','jelaskan','terangkan','bincang'), 'huraian'),
+      (('hasil','cipta','poster','projek'), 'hasil'),
     ]
-    for root in roots:
-        for name in names:
-            p=os.path.join(root,name)
-            if p and os.path.isfile(p):
-                return p
-    # Render fallback: download exactly the same open Noto Sans Arabic family
-    # already used by the legacy Jawi renderer. No fonttools dependency.
-    name=names[0]
-    dst=os.path.join(tempfile.gettempdir(),name)
-    if not os.path.isfile(dst) or os.path.getsize(dst) < 10000:
-        url='https://raw.githubusercontent.com/notofonts/arabic/main/fonts/ttf/NotoSansArabic/'+name
-        urllib.request.urlretrieve(url,dst)
-    return dst
+    for words,fam in rules:
+        if any(w in t for w in words): return fam
+    return 'aplikasi'
 
-_JawiRasterParagraph_v2640b_base=_JawiRasterParagraph_v25213
-class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2640b_base):
-    def __init__(self,text,style):
-        super().__init__(text,style)
-        plain=str(getattr(self,'text','') or '')
-        self._v2640b_has_gv=('\u0762' in plain or '\u06cf' in plain)
-        self._v2640b_gv_path=None
-        if self._v2640b_has_gv:
-            try:
-                self._v2640b_gv_path=_pi2640b_gv_font(bool(getattr(self,'bold',False)))
-            except Exception as e:
-                print('v26.40b GV FONT ERROR',repr(e),flush=True)
+def _pm_individual_activity_v2651(s):
+    ctx,row=_pm_context_v2651(s)
+    y=_pm_year_num_v2651(s)
+    seq=row.get('sequence_no') or s.get('sequence_no') or s.get('pdp_no') or ''
+    sp=str(s.get('sp') or s.get('standard_pembelajaran') or row.get('sp') or '')
+    key=f'{y}|{seq}|{ctx}|{sp}'
+    fam=_pm_action_family_v2651(ctx+' '+sp)
+    anchor=str(row.get('activity_note') or s.get('rpt_activity_note') or '').strip()
+    topic=str(row.get('topic') or row.get('subtopic') or row.get('unit_title') or s.get('topic') or 'situasi nilai yang dipelajari').strip()
+    if y<=2:
+        banks={
+          'kenal':['Murid memerhati dua gambar situasi, memilih gambar yang menunjukkan nilai yang betul dan menyebut sebab secara lisan.','Murid memadankan kad perlakuan dengan gambar situasi, kemudian menyebut satu perlakuan yang boleh dibuat sendiri.'],
+          'emosi':['Murid memilih kad wajah/perasaan yang sesuai selepas melihat situasi dan menerangkan perasaannya dengan satu ayat mudah.','Guru membacakan situasi ringkas; murid menunjukkan kad emosi dan menyatakan bagaimana perasaan watak selepas melakukan tindakan tersebut.'],
+          'perlakuan':['Secara berpasangan murid melakonkan tindakan yang betul dalam situasi mudah, kemudian rakan menyatakan nilai yang ditunjukkan.','Murid menunjuk cara perlakuan yang sesuai berdasarkan situasi dan mengulanginya dalam konteks kelas atau rumah.'],
+          'banding':['Murid mengasingkan gambar kepada dua kumpulan: perlakuan wajar dan tidak wajar, kemudian menerangkan satu perbezaan.'],
+          'akibat':['Murid memilih kad “apa akan berlaku” bagi setiap tindakan dan menyatakan satu akibat mudah.'],
+          'keputusan':['Murid memilih satu daripada dua tindakan, mengangkat kad pilihan dan memberi satu sebab mudah.'],
+          'hasil':['Murid menghasilkan kad mini/gambar ringkas tentang satu amalan nilai dan menerangkan hasilnya kepada rakan.'],
+          'huraian':['Murid melengkapkan ayat mudah “Saya menunjukkan nilai ini apabila …” berdasarkan situasi yang dipelajari.'],
+          'aplikasi':['Murid menyelesaikan satu situasi baharu secara lisan dengan memilih tindakan yang sesuai dan menyatakan sebab.']}
+    elif y<=4:
+        banks={
+          'kenal':['Dalam kumpulan kecil, murid menandakan bukti nilai dalam tiga situasi dan membentangkan dapatan menggunakan ayat lengkap.'],
+          'emosi':['Murid membina peta emosi watak sebelum dan selepas tindakan moral, kemudian menghubungkan perasaan dengan pilihan tindakan.'],
+          'perlakuan':['Murid menjalankan lakonan pendek dua versi—tindakan kurang sesuai dan tindakan bermoral—kemudian kelas mengenal pasti perubahan yang perlu.'],
+          'banding':['Murid melengkapkan jadual banding beza dua tindakan dari segi nilai, pihak terkesan dan hasil tindakan.'],
+          'akibat':['Murid membina rantaian sebab-akibat bagi satu tindakan dan meramalkan kesannya kepada diri serta orang lain.'],
+          'keputusan':['Murid memilih tindakan bagi satu dilema, menulis dua sebab, kemudian mempertahankan pilihan dalam Think-Pair-Share.'],
+          'hasil':['Murid menghasilkan poster/peta pemikiran ringkas yang menerangkan cara mengamalkan nilai dalam konteks tajuk.'],
+          'huraian':['Murid menggunakan peta sebab-contoh untuk menghuraikan kepentingan nilai dan memberi satu contoh daripada kehidupan harian.'],
+          'aplikasi':['Murid menyelesaikan kad situasi baharu dengan format tindakan–sebab–kesan dan berkongsi jawapan dengan kumpulan.']}
+    else:
+        banks={
+          'kenal':['Murid meneliti beberapa situasi hampir serupa, mengenal pasti bukti nilai pada setiap situasi dan menjustifikasikan klasifikasi mereka.'],
+          'emosi':['Murid menganalisis perasaan setiap pihak dalam dilema, kemudian menjelaskan bagaimana empati mempengaruhi keputusan moral.'],
+          'perlakuan':['Murid mensimulasikan dilema sebenar, memilih tindakan, melaksanakannya melalui lakonan dan menilai semula keputusan menggunakan maklum balas rakan.'],
+          'banding':['Murid membandingkan dua pilihan tindakan berdasarkan nilai, hak/tanggungjawab, pihak terkesan dan kesan jangka pendek serta panjang.'],
+          'akibat':['Murid membina peta konsekuensi yang menunjukkan kesan kepada diri, keluarga/sekolah dan masyarakat sebelum merumuskan tindakan terbaik.'],
+          'keputusan':['Murid menyelesaikan dilema moral dengan kerangka pilihan–alasan–pihak terkesan–akibat, kemudian mempertahankan keputusan dengan justifikasi.'],
+          'hasil':['Murid menghasilkan cadangan kempen/pelan tindakan kecil berkaitan nilai dan menetapkan bukti bahawa amalan tersebut berjaya dilaksanakan.'],
+          'huraian':['Murid menghuraikan kepentingan nilai menggunakan bukti daripada situasi, kemudian menghubungkannya dengan akibat jika nilai tersebut diabaikan.'],
+          'aplikasi':['Murid menilai satu situasi baharu, mencadangkan dua tindakan, menimbang kesan setiap pilihan dan membuat keputusan yang paling beretika.']}
+    chosen=_pm_pick_v2651(banks.get(fam,banks['aplikasi']),key)
+    if anchor:
+        return f'Rujuk aktiviti sumber/RPT: {anchor}\nPengukuhan PdP: {chosen}'
+    return chosen
 
-    def _font(self,px):
-        if self._v2640b_gv_path:
-            from PIL import ImageFont
-            try:
-                return ImageFont.truetype(self._v2640b_gv_path,px,layout_engine=ImageFont.Layout.RAQM)
-            except Exception:
-                return ImageFont.truetype(self._v2640b_gv_path,px)
-        return super()._font(px)
+def _pm_enrich_rows_v2651(rows,s):
+    if not isinstance(rows,list): return rows
+    extra=_pm_individual_activity_v2651(s)
+    if not extra: return rows
+    out=[]; injected=False
+    for item in rows:
+        if isinstance(item,(list,tuple)) and len(item)>=2:
+            label=str(item[0]); val=item[1]
+            if (not injected) and ('AKTIVITI' in label.upper() or 'LANGKAH' in label.upper()):
+                nv=(str(val).rstrip()+"\n"+extra).strip()
+                item=list(item); item[1]=nv; item=tuple(item)
+                injected=True
+        out.append(item)
+    return out
 
-CIKGULAJU_PATCH_V2640B='PI_GV_GUARANTEED_NOTOSANS_NO_FONTTOOLS'
-# ===== END v26.40b =====
+def _rph_rows(s, *args, **kwargs):
+    rows=_PM_OLD_RPH_ROWS_V2651(s,*args,**kwargs) if _PM_OLD_RPH_ROWS_V2651 else []
+    subj=str(s.get('subject') or s.get('subjek') or '')
+    if subj=='Pendidikan Moral':
+        return _pm_enrich_rows_v2651(rows,s)
+    return rows
+
+APP_VERSION = str(globals().get('APP_VERSION','')) + '+v26.51-PM-INDIVIDUAL-PDP'
+
+# === v26.52 Pendidikan Moral T1-T6 QA fix: make individual-PdP layer effective ===
+# Fixes v26.51 enrichment for the actual dict-shaped _rph_rows output.
+# PM-only, append-only; no DB/layout/PI/Jawi/BBM/Worksheet changes.
+_PM_OLD_RPH_ROWS_V2652 = globals().get('_rph_rows')
+
+def _pm_enrich_rows_v2652(rows, s):
+    extra = _pm_individual_activity_v2651(s)
+    if not extra:
+        return rows
+    if isinstance(rows, dict):
+        out = dict(rows)
+        key = 'AKTIVITI UTAMA'
+        base = str(out.get(key) or '').rstrip()
+        # Keep verified/textbook/RPT activity first; individual evidence follows as
+        # a distinct application task rather than replacing source-grounded work.
+        out[key] = (base + '\n\nAktiviti 5 - Aplikasi Individu PdP\n' + extra).strip()
+        return out
+    if isinstance(rows, list):
+        out=[]; injected=False
+        for item in rows:
+            if isinstance(item,(list,tuple)) and len(item)>=2:
+                label=str(item[0]); val=item[1]
+                if (not injected) and ('AKTIVITI' in label.upper() or 'LANGKAH' in label.upper()):
+                    nv=(str(val).rstrip()+"\n\nAktiviti 5 - Aplikasi Individu PdP\n"+extra).strip()
+                    item=list(item); item[1]=nv; item=tuple(item); injected=True
+            out.append(item)
+        return out
+    return rows
+
+def _rph_rows(s, *args, **kwargs):
+    rows = _PM_OLD_RPH_ROWS_V2652(s,*args,**kwargs) if _PM_OLD_RPH_ROWS_V2652 else {}
+    subj = str((s or {}).get('subject') or (s or {}).get('subjek') or '')
+    year = str((s or {}).get('year') or (s or {}).get('grade') or (s or {}).get('year_label') or '')
+    if subj == 'Pendidikan Moral' and ('Tahun ' in year or year.strip() in {'1','2','3','4','5','6'}):
+        return _pm_enrich_rows_v2652(rows, s or {})
+    return rows
+
+APP_VERSION = 'v26.52-PM-T1-T6-QA-UPLOAD-CANDIDATE'
+CIKGULAJU_PATCH_V2652 = 'PM_DICT_ROWS_INDIVIDUAL_PDP_QA_FIX'
