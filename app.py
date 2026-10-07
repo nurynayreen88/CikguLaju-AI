@@ -45991,3 +45991,78 @@ def _local_timetable_extract_v25297(raw, mime="image/jpeg", cid=None, *args, **k
 APP_VERSION = "v25.308-FREE-LOCAL-READER-CID-SIGNATURE-FIX"
 CIKGULAJU_PATCH_V25308 = "FORWARD_RAW_MIME_CID_TO_HISTORICAL_EXTRACTOR"
 # ===== END v25.308 =====
+
+
+# ===== v25.309 HEADER/PERIOD FALLBACK =====
+# The local OCR is working, but some timetable layouts do not expose a
+# conventional time header. Add deterministic period-header recognition.
+
+def _tt309_period_tokens(s):
+    import re
+    s = (s or "").upper()
+    # Common OCR confusions: PERIOD 1..12, JAM 1..12, or bare numbered headers.
+    nums = []
+    for m in re.finditer(r"(?:PERIOD|WAKTU|MASA|JAM)?\s*([1-9]|1[0-2])\b", s):
+        try:
+            n = int(m.group(1))
+            if 1 <= n <= 12:
+                nums.append(n)
+        except Exception:
+            pass
+    # preserve order, remove duplicates
+    out = []
+    for n in nums:
+        if n not in out:
+            out.append(n)
+    return out
+
+def _tt309_time_tokens(s):
+    import re
+    s = (s or "").replace(".", ":")
+    vals = []
+    for m in re.finditer(r"\b(\d{1,2}):(\d{2})\b", s):
+        h, mm = int(m.group(1)), int(m.group(2))
+        if 0 <= h <= 23 and 0 <= mm <= 59:
+            vals.append(f"{h:02d}:{mm:02d}")
+    return vals
+
+# Wrap OCR output so historical header detector receives normalized alternatives
+# without inventing timetable content.
+_tt309_ocr_previous = _tt297_ocr
+
+def _tt297_ocr(img, psm=6):
+    out = _tt309_ocr_previous(img, psm)
+    if not out:
+        return out
+    import re
+    s = " ".join(str(out).split())
+    # Normalize OCR punctuation in times only.
+    s = re.sub(r"(?<=\d)[.;](?=\d{2}\b)", ":", s)
+    return s
+
+# Add diagnostics that expose why a header is accepted/rejected.
+def _tt309_header_hint(text):
+    periods = _tt309_period_tokens(text)
+    times = _tt309_time_tokens(text)
+    return {"periods": periods, "times": times, "usable": bool(len(periods) >= 2 or len(times) >= 2)}
+
+# Override full-page probe to retain header hints for the current extraction.
+_TT309_FULLPAGE_TEXT = ""
+_TT309_HEADER_HINT = {}
+
+_tt309_fullpage_previous = _tt306_fullpage_probe
+
+def _tt306_fullpage_probe(img):
+    global _TT309_FULLPAGE_TEXT, _TT309_HEADER_HINT
+    out = _tt309_fullpage_previous(img)
+    _TT309_FULLPAGE_TEXT = out or ""
+    _TT309_HEADER_HINT = _tt309_header_hint(_TT309_FULLPAGE_TEXT)
+    _tt_diag_v25302("header309_fullpage_hint",
+                    periods=_TT309_HEADER_HINT.get("periods"),
+                    times=_TT309_HEADER_HINT.get("times"),
+                    usable=_TT309_HEADER_HINT.get("usable"))
+    return out
+
+APP_VERSION = "v25.309-FREE-LOCAL-HEADER-FALLBACK"
+CIKGULAJU_PATCH_V25309 = "PERIOD_AND_TIME_HEADER_NORMALIZATION"
+# ===== END v25.309 =====
