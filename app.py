@@ -44777,3 +44777,83 @@ def _rph_rows(s, *args, **kwargs):
 APP_VERSION='v26.56-PM-T1-T6-60MIN-REGRESSION-FIX'
 CIKGULAJU_PATCH_V2656='PM_RESTORE_CANONICAL_PHASE_KEYS_KEEP_60MIN_TIMING'
 # ===== END v26.56 =====
+
+
+# ===== v25.295 ROBUST TIMETABLE READER =====
+# Read the visual grid first, then validate every teaching slot before it reaches review.
+def _gemini_timetable_extract_v25281(data,mime):
+    import base64, json as _json
+    prompt="""Anda ialah pembaca JADUAL WAKTU GURU sekolah Malaysia. Baca imej/PDF secara visual dan teliti struktur jadual SEBELUM mengekstrak slot.
+
+TUGAS:
+1. Kenal pasti orientasi jadual: hari pada baris atau lajur, dan masa/period pada paksi yang satu lagi.
+2. Baca SEMUA header masa/period. Jika jadual memberi masa mula/akhir pada header, gunakan masa itu untuk setiap sel di bawah/bersebelahan dengannya.
+3. Fahami sel bergabung: satu subjek/kelas yang merentasi 2 period mesti menjadi SATU slot dengan start period pertama dan end period terakhir.
+4. Dalam setiap sel mengajar, bezakan NAMA SUBJEK dan NAMA KELAS berdasarkan teks/label yang benar-benar kelihatan. Jangan tukar kelas menjadi subjek atau sebaliknya.
+5. Kekalkan singkatan yang benar-benar tertera jika nama penuh tidak pasti. JANGAN meneka pengembangan singkatan.
+6. Abaikan REHAT, PERHIMPUNAN, KOKURIKULUM, FREE, kosong, cuti atau aktiviti bukan waktu mengajar kecuali sel itu jelas menunjukkan subjek + kelas.
+7. Jangan cipta slot daripada teks kabur. Jika salah satu day/start/end/class_name/subject tidak dapat dipastikan, masukkan dalam uncertain, BUKAN entries.
+8. Semak semula bahawa setiap masa tamat lebih lewat daripada masa mula dan slot berada pada hari yang betul.
+9. Jika terdapat lebih daripada satu jadual/halaman, ekstrak hanya jadual waktu guru yang jelas; jangan campur legenda atau jadual lain.
+
+Pulangkan JSON tulen sahaja dalam format tepat ini:
+{"entries":[{"day":"Isnin","start":"07:40","end":"08:40","class_name":"3 Amanah","subject":"Matematik"}],"uncertain":[],"notes":""}
+
+day hanya: Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu, Ahad.
+Masa wajib format 24 jam HH:MM. Jangan guna markdown. Jangan reka data."""
+    models=[]
+    for model in [GEMINI_MODEL]+list(GEMINI_FALLBACK_MODELS or []):
+        if model and model not in models: models.append(model)
+    last=None
+    for model in models:
+        try:
+            url=f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
+            payload={
+                'contents':[{'role':'user','parts':[{'text':prompt},{'inline_data':{'mime_type':mime,'data':base64.b64encode(data).decode('ascii')}}]}],
+                'generationConfig':{'temperature':0.0,'maxOutputTokens':7000,'responseMimeType':'application/json'}
+            }
+            r=requests.post(url,headers={'Content-Type':'application/json','x-goog-api-key':GEMINI_API_KEY},json=payload,timeout=(15,GEMINI_TIMEOUT))
+            if not r.ok:
+                last=f'Gemini HTTP {r.status_code}: {(r.text or "")[:180]}'; continue
+            parts=((r.json().get('candidates') or [{}])[0].get('content') or {}).get('parts') or []
+            raw=''.join(str(x.get('text') or '') for x in parts).strip()
+            raw=re.sub(r'^```(?:json)?\\s*|\\s*```$','',raw,flags=re.I|re.S).strip()
+            obj=_json.loads(raw)
+            entries=obj.get('entries') if isinstance(obj,dict) else obj
+            if not isinstance(entries,list):
+                last='Respons reader tiada senarai entries'; continue
+            return entries
+        except Exception as e:
+            last=str(e)
+    raise RuntimeError(last or 'Jadual tidak dapat dibaca.')
+
+
+def _tt286_normalize_raw_entries(raw_entries):
+    # Strict validation after visual reading. Do not repair/guess curriculum content here.
+    days={x.casefold():x for x in _TIMETABLE_DAYS}; out=[]; seen=set()
+    for x in raw_entries or []:
+        if not isinstance(x,dict): continue
+        day=days.get(' '.join(str(x.get('day') or '').split()).casefold())
+        start=_norm_time_v25281(x.get('start')); end=_norm_time_v25281(x.get('end'))
+        cls=' '.join(str(x.get('class_name') or '').replace('•',' ').split()).strip(' -–—|')
+        sub=' '.join(str(x.get('subject') or '').replace('•',' ').split()).strip(' -–—|')
+        try:
+            sm=int(start[:2])*60+int(start[3:]) if start else -1
+            em=int(end[:2])*60+int(end[3:]) if end else -1
+        except Exception:
+            sm=em=-1
+        # Reject malformed/implausible rows instead of silently saving them.
+        if not (day and start and end and 0 <= sm < em <= 24*60 and cls and sub): continue
+        if cls.casefold() in {'rehat','recess','free','kosong','perhimpunan'}: continue
+        if sub.casefold() in {'rehat','recess','free','kosong','perhimpunan'}: continue
+        e={'day':day,'start':start,'end':end,'class_name':cls,'subject':sub}
+        k=(day.casefold(),start,end,cls.casefold(),sub.casefold())
+        if k not in seen:
+            seen.add(k); out.append(e)
+    order={d:i for i,d in enumerate(_TIMETABLE_DAYS)}
+    out.sort(key=lambda e:(order.get(e['day'],99),e['start'],e['end'],e['class_name'].casefold(),e['subject'].casefold()))
+    return out
+
+APP_VERSION='v25.295-ROBUST-TIMETABLE-GRID-READER'
+CIKGULAJU_PATCH_V25295='VISUAL_GRID_FIRST_STRICT_TIMETABLE_READER'
+# ===== END v25.295 =====
