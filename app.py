@@ -45777,3 +45777,85 @@ def _tt303_release_ocr():
 APP_VERSION = "v25.305-TIMETABLE-OCR-QUALITY-SPEED"
 CIKGULAJU_PATCH_V25305 = "GRIDLINE_REMOVAL_BLANK_SKIP_CACHE_UPSCALE"
 # ===== END v25.305 =====
+
+
+# ===== v25.306 FREE-ONLY LOCAL TIMETABLE READER =====
+# Policy lock: timetable reading must never call Gemini/cloud AI.
+TT_READER_FREE_ONLY = True
+TT_READER_ALLOW_GEMINI = False
+TT_READER_ALLOW_CLOUD_AI = False
+
+def _tt306_fullpage_probe(img):
+    """
+    One local full-page OCR probe first.
+    This is used as a cheap orientation/header signal; existing grid parser
+    remains authoritative and uncertain cells can still fall back to local OCR.
+    """
+    try:
+        import numpy as np, cv2
+        a = np.array(img.convert("RGB"))
+        if a.size == 0:
+            return ""
+        h, w = a.shape[:2]
+        longest = max(h, w)
+        if longest > 1800:
+            s = 1800.0 / longest
+            a = cv2.resize(a, None, fx=s, fy=s, interpolation=cv2.INTER_AREA)
+        _tt_diag_v25302("fullpage_local_start", width=a.shape[1], height=a.shape[0])
+        out = _tt304_ocrust_text_from_array(a)
+        out = " ".join((out or "").split())
+        _tt_diag_v25302("fullpage_local_done", chars=len(out))
+        return out
+    except Exception as e:
+        _tt_diag_v25302("fullpage_local_error", error=repr(e))
+        return ""
+
+# Wrap the current local extractor: perform one full-page local pass first,
+# then keep the proven OpenCV/grid + OCRust cell parser as fallback.
+try:
+    _tt306_extract_previous = _local_timetable_extract_v25297
+except Exception:
+    _tt306_extract_previous = None
+
+def _local_timetable_extract_v25297(raw, mime="image/jpeg"):
+    if _tt306_extract_previous is None:
+        raise RuntimeError("Local timetable extractor tidak tersedia.")
+
+    # Convert only enough to obtain the first page/image for the full-page probe.
+    try:
+        from PIL import Image
+        import io
+        probe_img = None
+        if str(mime or "").lower().startswith("image/"):
+            probe_img = Image.open(io.BytesIO(raw)).convert("RGB")
+        elif "pdf" in str(mime or "").lower():
+            try:
+                import fitz
+                doc = fitz.open(stream=raw, filetype="pdf")
+                if len(doc):
+                    page = doc[0]
+                    pix = page.get_pixmap(matrix=fitz.Matrix(1.4, 1.4), alpha=False)
+                    probe_img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+                doc.close()
+            except Exception as e:
+                _tt_diag_v25302("fullpage_pdf_probe_error", error=repr(e))
+
+        if probe_img is not None:
+            full_text = _tt306_fullpage_probe(probe_img)
+            # Keep only diagnostic/context; never substitute invented mappings.
+            _tt_diag_v25302("fullpage_context_ready", chars=len(full_text or ""))
+    except Exception as e:
+        _tt_diag_v25302("fullpage_probe_skipped", error=repr(e))
+
+    # Existing deterministic grid parser remains the source of structured slots.
+    return _tt306_extract_previous(raw, mime)
+
+def _tt306_manual_fallback_message():
+    return (
+        "⚠️ Ada bahagian jadual yang belum dapat dibaca dengan yakin.\n\n"
+        "CikguLaju tidak akan meneka. Sila semak dan betulkan slot yang diperlukan."
+    )
+
+APP_VERSION = "v25.306-FREE-ONLY-LOCAL-TIMETABLE"
+CIKGULAJU_PATCH_V25306 = "LOCAL_ONLY_OCRUST_OPENCV_NO_GEMINI_NO_PAID_API"
+# ===== END v25.306 =====
