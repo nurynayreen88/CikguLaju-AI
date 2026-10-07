@@ -44620,3 +44620,56 @@ def _rph_rows(s,*args,**kwargs):
 APP_VERSION='v26.53-PM-T1-T6-RUNTIME-CONTENT-QA'
 CIKGULAJU_PATCH_V2653='PM_RUNTIME_TITLE_OBJECTIVE_CRITERIA_PRIOR_AND_ACTIVITY_DEDUP_FIX'
 # ===== END v26.53 =====
+
+# ===== v26.54 PENDIDIKAN MORAL T1-T6 SET INDUCTION SANITIZER =====
+# Runtime QA exposed one remaining internal label leak in SET INDUKSI:
+# "Amal & Nilai — C". This PM-only append patch rebuilds only SET INDUKSI
+# from the verified curriculum focus/value. Layout, DB, PI/Jawi and other
+# RPH fields remain untouched.
+_PM_OLD_RPH_ROWS_V2654 = globals().get('_rph_rows')
+
+def _pm2654_set_induction(s):
+    focus = _pm2653_focus(s) if '_pm2653_focus' in globals() else 'amalan nilai moral'
+    val = _pm2653_value(s) if '_pm2653_value' in globals() else 'nilai moral'
+    year = str((s or {}).get('year') or (s or {}).get('grade') or (s or {}).get('year_label') or '')
+    try:
+        y = int(''.join(ch for ch in year if ch.isdigit()) or 0)
+    except Exception:
+        y = 0
+    if y and y <= 2:
+        return (f'1. Guru menunjukkan gambar/situasi daripada konteks buku teks berkaitan {focus}.\n'
+                f'2. Murid menyatakan tindakan yang dilihat dan mengenal pasti amalan {val}.\n'
+                '3. Guru menghubungkan respons murid dengan fokus pembelajaran hari ini.')
+    if y and y <= 4:
+        return (f'1. Guru mengemukakan satu situasi daripada konteks buku teks berkaitan {focus}.\n'
+                f'2. Murid mengenal pasti tindakan yang menunjukkan atau tidak menunjukkan {val}.\n'
+                '3. Murid memberikan sebab ringkas sebelum guru menghubungkannya dengan fokus pembelajaran.')
+    return (f'1. Guru mengemukakan satu situasi daripada konteks buku teks berkaitan {focus}.\n'
+            f'2. Murid mengenal pasti tindakan, pihak yang terlibat dan bukti {val} dalam situasi tersebut.\n'
+            '3. Murid menyatakan pendirian awal berserta satu alasan sebelum aktiviti utama dimulakan.')
+
+def _pm2654_apply(s, rows):
+    if not isinstance(rows, dict):
+        return rows
+    subj = str((s or {}).get('subject') or (s or {}).get('subjek') or '')
+    year = str((s or {}).get('year') or (s or {}).get('grade') or (s or {}).get('year_label') or '')
+    if subj != 'Pendidikan Moral' or not (year.startswith('Tahun ') or year.strip() in {'1','2','3','4','5','6'}):
+        return rows
+    out = dict(rows)
+    # Support both current uppercase key and any older title-cased variant.
+    target = None
+    for k in out.keys():
+        norm = str(k).strip().upper().replace('_',' ')
+        if norm in {'SET INDUKSI','SET INDUKSI (5 MINIT)'}:
+            target = k
+            break
+    out[target or 'SET INDUKSI'] = _pm2654_set_induction(s)
+    return out
+
+def _rph_rows(s, *args, **kwargs):
+    rows = _PM_OLD_RPH_ROWS_V2654(s, *args, **kwargs) if _PM_OLD_RPH_ROWS_V2654 else {}
+    return _pm2654_apply(s or {}, rows)
+
+APP_VERSION='v26.54-PM-T1-T6-SET-INDUCTION-SANITIZER'
+CIKGULAJU_PATCH_V2654='PM_SET_INDUCTION_INTERNAL_LABEL_LEAK_FIX'
+# ===== END v26.54 =====
