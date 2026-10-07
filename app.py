@@ -45859,3 +45859,69 @@ def _tt306_manual_fallback_message():
 APP_VERSION = "v25.306-FREE-ONLY-LOCAL-TIMETABLE"
 CIKGULAJU_PATCH_V25306 = "LOCAL_ONLY_OCRUST_OPENCV_NO_GEMINI_NO_PAID_API"
 # ===== END v25.306 =====
+
+
+# ===== v25.307 TIMETABLE EXTRACTOR SIGNATURE FIX =====
+# v25.306 wrapper passed mime positionally to an older extractor whose
+# signature differs. Preserve full-page local probe, but call the proven
+# extractor with a signature-safe adapter.
+
+try:
+    _tt307_previous_extractor = _tt306_extract_previous
+except Exception:
+    _tt307_previous_extractor = None
+
+def _tt307_call_previous_extractor(raw, mime=None):
+    if _tt307_previous_extractor is None:
+        raise RuntimeError("Local timetable extractor tidak tersedia.")
+    import inspect
+    try:
+        sig = inspect.signature(_tt307_previous_extractor)
+        params = list(sig.parameters.values())
+        names = [p.name for p in params]
+
+        # Most historical CikguLaju extractors accept raw only, or raw + mime.
+        if "mime" in names:
+            return _tt307_previous_extractor(raw, mime=mime)
+        if "mime_type" in names:
+            return _tt307_previous_extractor(raw, mime_type=mime)
+        if len(params) >= 2:
+            return _tt307_previous_extractor(raw, mime)
+        return _tt307_previous_extractor(raw)
+    except (TypeError, ValueError):
+        # Safe fallback: historical extractor definitely accepts raw.
+        return _tt307_previous_extractor(raw)
+
+def _local_timetable_extract_v25297(raw, mime="image/jpeg", *args, **kwargs):
+    try:
+        from PIL import Image
+        import io
+        probe_img = None
+        mime_value = mime or kwargs.get("mime_type") or "image/jpeg"
+
+        if str(mime_value).lower().startswith("image/"):
+            probe_img = Image.open(io.BytesIO(raw)).convert("RGB")
+        elif "pdf" in str(mime_value).lower():
+            try:
+                import fitz
+                doc = fitz.open(stream=raw, filetype="pdf")
+                if len(doc):
+                    pix = doc[0].get_pixmap(matrix=fitz.Matrix(1.4, 1.4), alpha=False)
+                    probe_img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+                doc.close()
+            except Exception as e:
+                _tt_diag_v25302("fullpage_pdf_probe_error", error=repr(e))
+
+        if probe_img is not None:
+            full_text = _tt306_fullpage_probe(probe_img)
+            _tt_diag_v25302("fullpage_context_ready", chars=len(full_text or ""))
+
+    except Exception as e:
+        _tt_diag_v25302("fullpage_probe_skipped", error=repr(e))
+
+    _tt_diag_v25302("extractor_signature_safe_call")
+    return _tt307_call_previous_extractor(raw, mime)
+
+APP_VERSION = "v25.307-FREE-LOCAL-READER-SIGNATURE-FIX"
+CIKGULAJU_PATCH_V25307 = "FIX_V25306_EXTRACTOR_ARGUMENT_MISMATCH"
+# ===== END v25.307 =====
