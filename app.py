@@ -44072,43 +44072,54 @@ def _rph_activity_heading_markup_v25184(text):
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
 
-# ===== v26.40 PI NASKH G/V FIX — NO FONTTOOLS =====
-# Baseline-preserving renderer patch. Do not rewrite Jawi text/layout.
-# Only paragraphs containing Malay Jawi G U+0762 (ݢ) or V U+06CF (ۏ)
-# are forced to a Noto Naskh Arabic font instead of DejaVu.
-APP_VERSION='v26.40-PI-NASKH-GV-NO-FONTTOOLS'
+# ===== v26.40b PI G/V GUARANTEED FONT FIX — NO FONTTOOLS =====
+# Narrow scope: preserve baseline text/layout. Only paragraphs containing
+# U+0762 (ݢ) or U+06CF (ۏ) use a guaranteed Noto Sans Arabic font.
+APP_VERSION='v26.40b-PI-GV-FORCE-NOTOSANS-NO-FONTTOOLS'
 
-def _pi2640_naskh_gv_font(bold=False):
-    import os, glob
-    names=(['NotoNaskhArabic-Bold.ttf'] if bold else
-           ['NotoNaskhArabic-Regular.ttf','NotoNaskhArabic-Medium.ttf'])
-    roots=[
-        os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '.',
-        '/opt/render/project/src', '/usr/share/fonts', '/usr/local/share/fonts'
+def _pi2640b_gv_font(bold=False):
+    import os, tempfile, urllib.request
+    # Prefer known installed paths first.
+    names = ['NotoSansArabic-Bold.ttf'] if bold else ['NotoSansArabic-Regular.ttf']
+    roots = [
+        '/usr/share/fonts/truetype/noto', '/usr/share/fonts/opentype/noto',
+        os.path.join(os.path.dirname(os.path.abspath(__file__)),'assets','fonts') if '__file__' in globals() else ''
     ]
     for root in roots:
         for name in names:
-            for p in glob.glob(os.path.join(root,'**',name),recursive=True):
-                if os.path.isfile(p):
-                    return p
-    return None
+            p=os.path.join(root,name)
+            if p and os.path.isfile(p):
+                return p
+    # Render fallback: download exactly the same open Noto Sans Arabic family
+    # already used by the legacy Jawi renderer. No fonttools dependency.
+    name=names[0]
+    dst=os.path.join(tempfile.gettempdir(),name)
+    if not os.path.isfile(dst) or os.path.getsize(dst) < 10000:
+        url='https://raw.githubusercontent.com/notofonts/arabic/main/fonts/ttf/NotoSansArabic/'+name
+        urllib.request.urlretrieve(url,dst)
+    return dst
 
-_JawiRasterParagraph_v2640_naskh_base=_JawiRasterParagraph_v25213
-class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2640_naskh_base):
+_JawiRasterParagraph_v2640b_base=_JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2640b_base):
     def __init__(self,text,style):
         super().__init__(text,style)
         plain=str(getattr(self,'text','') or '')
-        self._v2640_naskh_gv = _pi2640_naskh_gv_font(bool(getattr(self,'bold',False))) \
-            if ('\u0762' in plain or '\u06cf' in plain) else None
+        self._v2640b_has_gv=('\u0762' in plain or '\u06cf' in plain)
+        self._v2640b_gv_path=None
+        if self._v2640b_has_gv:
+            try:
+                self._v2640b_gv_path=_pi2640b_gv_font(bool(getattr(self,'bold',False)))
+            except Exception as e:
+                print('v26.40b GV FONT ERROR',repr(e),flush=True)
 
     def _font(self,px):
-        if self._v2640_naskh_gv:
+        if self._v2640b_gv_path:
             from PIL import ImageFont
             try:
-                return ImageFont.truetype(self._v2640_naskh_gv,px,layout_engine=ImageFont.Layout.RAQM)
+                return ImageFont.truetype(self._v2640b_gv_path,px,layout_engine=ImageFont.Layout.RAQM)
             except Exception:
-                return ImageFont.truetype(self._v2640_naskh_gv,px)
+                return ImageFont.truetype(self._v2640b_gv_path,px)
         return super()._font(px)
 
-CIKGULAJU_PATCH_V2640_NASKH_GV='PI_NASKH_GV_ONLY_NO_FONTTOOLS'
-# ===== END v26.40 PI NASKH G/V FIX =====
+CIKGULAJU_PATCH_V2640B='PI_GV_GUARANTEED_NOTOSANS_NO_FONTTOOLS'
+# ===== END v26.40b =====
