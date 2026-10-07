@@ -45441,3 +45441,127 @@ def _tt_diag_v25302(stage, **info):
     except Exception:
         pass
 
+
+
+# ===== v25.303 MEMORY-SAFE TIMETABLE READER =====
+# Keep OCR request-scoped so a large ONNX session is not retained between uploads.
+# Also keep the loading screen free of inline buttons.
+import os as _tt303_os
+_tt303_os.environ.setdefault("OMP_NUM_THREADS", "1")
+_tt303_os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
+_tt303_os.environ.setdefault("MKL_NUM_THREADS", "1")
+_tt303_os.environ.setdefault("NUMEXPR_NUM_THREADS", "1")
+
+_TT303_OCR_ENGINE = None
+
+def _tt300_ocr_engine():
+    global _TT303_OCR_ENGINE
+    if _TT303_OCR_ENGINE is None:
+        _tt_diag_v25302("ocr_engine_load_start")
+        try:
+            from rapidocr_onnxruntime import RapidOCR
+            _TT303_OCR_ENGINE = RapidOCR()
+            _tt_diag_v25302("ocr_engine_load_ok")
+        except Exception as e:
+            _tt_diag_v25302("ocr_engine_load_error", error=repr(e))
+            raise RuntimeError("OCR Reader belum dapat dimulakan: " + str(e))
+    return _TT303_OCR_ENGINE
+
+def _tt303_release_ocr():
+    global _TT303_OCR_ENGINE
+    try:
+        _TT303_OCR_ENGINE = None
+        import gc
+        gc.collect()
+        _tt_diag_v25302("ocr_engine_released")
+    except Exception:
+        pass
+
+def _tt297_ocr(img, psm=6):
+    try:
+        import numpy as np
+        import cv2
+        a = np.array(img.convert("RGB"))
+        if a.size == 0:
+            return ""
+
+        h, w = a.shape[:2]
+        longest = max(h, w)
+
+        # Avoid feeding a full-resolution phone image to OCR.
+        if longest > 1600:
+            scale = 1600.0 / longest
+            a = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA)
+        elif longest < 700:
+            scale = min(2.0, 700.0 / max(1, longest))
+            a = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+
+        a = cv2.copyMakeBorder(a, 8, 8, 8, 8, cv2.BORDER_CONSTANT,
+                               value=(255,255,255))
+        _tt_diag_v25302("ocr_inference_start", width=a.shape[1], height=a.shape[0])
+        result, _ = _tt300_ocr_engine()(a)
+        _tt_diag_v25302("ocr_inference_done", rows=(len(result) if result else 0))
+
+        if not result:
+            return ""
+        parts = []
+        for row in result:
+            try:
+                txt = str(row[1] or "").strip()
+                score = float(row[2]) if len(row) > 2 else 1.0
+            except Exception:
+                continue
+            if txt and score >= 0.45:
+                parts.append(txt)
+        return " ".join(" ".join(parts).split())
+    except RuntimeError:
+        raise
+    except Exception as e:
+        _tt_diag_v25302("ocr_inference_error", error=repr(e))
+        raise RuntimeError("OCR gagal membaca imej: " + str(e))
+
+def _handle_timetable_upload_v25281(cid, m):
+    try:
+        missing = _tt300_dependency_status()
+        if missing:
+            raise RuntimeError("Komponen Reader belum lengkap pada server — " + "; ".join(missing))
+
+        # Loading message: intentionally NO inline keyboard/menu.
+        send(cid, "🔎 <b>Sedang membaca jadual waktu…</b>\nSila tunggu sebentar.")
+        _tt_diag_v25302("upload_start")
+
+        data, mime = _telegram_media_bytes_v25281(m)
+        _tt_diag_v25302("media_download_ok", bytes=len(data or b""), mime=mime)
+
+        draft = _local_timetable_extract_v25297(data, mime, cid)
+        _tt_diag_v25302("extract_done", slots=(len(draft) if draft else 0))
+
+        if not draft:
+            raise RuntimeError("Tiada slot kelas yang dapat dibaca dengan yakin.")
+
+        ss = state.setdefault(cid, {})
+        ss["_tt286_raw_draft"] = draft
+        ss.pop("_tt_upload_draft_v25281", None)
+        ss.pop("_tt_upload_unmatched_v25281", None)
+        ss.pop("waiting", None)
+        return _tt286_show_class_confirmation(cid)
+
+    except Exception as e:
+        _tt_diag_v25302("reader_error", error=repr(e))
+        print("v25.303 timetable reader:", repr(e), flush=True)
+        state.setdefault(cid, {})["waiting"] = "timetable_upload_v25281"
+        return send(
+            cid,
+            "⚠️ Jadual belum dapat dibaca dengan yakin. <b>Tiada data lama diubah.</b>\n\n"
+            + html.escape(str(e))[:700],
+            [[{"text":"🔄 Cuba Upload Lagi","callback_data":"ttupload281_start"}],
+             [{"text":"✏️ Isi Manual","callback_data":"tt_add"},
+              {"text":"⬅️ Kembali","callback_data":"timetable"}],
+             [{"text":"🏠 Menu Utama","callback_data":"home"}]]
+        )
+    finally:
+        _tt303_release_ocr()
+
+APP_VERSION = "v25.303-MEMORY-SAFE-TIMETABLE-READER"
+CIKGULAJU_PATCH_V25303 = "REQUEST_SCOPED_OCR_DOWNSCALE_NO_LOADING_MENU"
+# ===== END v25.303 =====
