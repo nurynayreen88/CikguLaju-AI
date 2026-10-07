@@ -45247,3 +45247,183 @@ def _local_timetable_extract_v25297(data,mime,cid):
 APP_VERSION='v25.298-ADAPTIVE-OWN-TIMETABLE-READER'
 CIKGULAJU_PATCH_V25298='SUN_THU_MON_FRI_MERGED_CELL_PERIOD_RANGE_ADAPTIVE_ZERO_GEMINI'
 # ===== END v25.298 =====
+
+# ===== v25.299 PERSISTENT HOME ACCESS =====
+# Keep a permanent Telegram reply-keyboard Menu entry and add an explicit Home
+# route to every timetable-reader screen. Existing menus/data are unchanged.
+
+_tt_upload_menu_before_v25299 = _tt_upload_menu_v25281
+def _tt_upload_menu_v25281(cid):
+    state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+    return send(cid,
+        '📤 <b>UPLOAD JADUAL WAKTU</b>\n\nHantar <b>gambar/screenshot (JPG/PNG)</b> atau <b>PDF</b> jadual waktu cikgu.\n\nCikguLaju akan baca <b>hari, masa, subjek dan kelas</b> sebagai draf. <b>Jadual sedia ada tidak akan berubah</b> sehingga cikgu semak dan tekan SAHKAN.',
+        [[{'text':'✏️ Isi Manual','callback_data':'tt_add'}],
+         [{'text':'⬅️ Jadual Waktu','callback_data':'timetable'}],
+         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+
+def _tt286_show_class_confirmation(cid,note=''):
+    ss=state.setdefault(cid,{})
+    entries=list(ss.get('_tt286_raw_draft') or [])
+    names=_tt286_class_names(entries)
+    if not names: return _tt_upload_menu_v25281(cid)
+    lines=['🏫 <b>SAHKAN NAMA KELAS</b>','',
+           'Reader CikguLaju mengesan kelas berikut. Semak nama kelas dahulu sebelum CikguLaju membina jadual.','']
+    for i,n in enumerate(names,1): lines.append(f'{i}. <b>{html.escape(n)}</b>')
+    if note: lines += ['',note]
+    lines += ['','Jika ada yang salah, tekan nama kelas untuk betulkan. Pembetulan akan digunakan pada <b>semua slot</b> kelas tersebut.']
+    kb=[]
+    for i,n in enumerate(names[:30]):
+        kb.append([{'text':('✏️ '+n)[:64],'callback_data':f'tt286_edit_{i}'}])
+    kb += [[{'text':'✅ SAHKAN SEMUA KELAS','callback_data':'tt286_classes_ok'}],
+           [{'text':'🔄 Upload Semula','callback_data':'ttupload281_start'},{'text':'❌ Batal','callback_data':'timetable'}],
+           [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    ss.pop('waiting',None)
+    return send(cid,'\n'.join(lines),kb)
+
+
+def _tt286_start_edit(cid,idx):
+    ss=state.setdefault(cid,{})
+    names=_tt286_class_names(ss.get('_tt286_raw_draft') or [])
+    if not (0<=idx<len(names)): return _tt286_show_class_confirmation(cid,'⚠️ Kelas tidak ditemui.')
+    ss['_tt286_edit_old']=names[idx]; ss['waiting']='tt286_class_rename'
+    return send(cid,
+        f"✏️ <b>BETULKAN NAMA KELAS</b>\n\nNama dibaca reader: <b>{html.escape(names[idx])}</b>\n\nTaip nama kelas yang betul. Contoh: <b>5 Bestari A</b>",
+        [[{'text':'❌ Batal Pembetulan','callback_data':'tt286_edit_cancel'}],
+         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+
+def _tt286_show_full_draft(cid):
+    ss=state.setdefault(cid,{})
+    draft=list(ss.get('_tt286_raw_draft') or [])
+    if not draft: return _tt_upload_menu_v25281(cid)
+    existing={str(r.get('name') or '').strip().casefold() for r in _profile_class_records(cid)}
+    newclasses=[n for n in _tt286_class_names(draft) if n.casefold() not in existing]
+    ss['_tt_upload_draft_v25281']=draft
+    lines=['📋 <b>SEMAKAN JADUAL PENUH</b>','']
+    if newclasses:
+        lines += ['🆕 <b>Kelas baharu akan ditambah selepas pengesahan:</b>']
+        lines += ['• '+html.escape(n) for n in newclasses]
+        lines.append('')
+    for e in draft[:70]:
+        lines.append(f"• {html.escape(e['day'])} {html.escape(e['start'])}–{html.escape(e['end'])} • {html.escape(e['class_name'])} • {html.escape(e['subject'])}")
+    if len(draft)>70: lines.append(f"… dan {len(draft)-70} slot lagi.")
+    lines += ['','Jadual dan profil lama masih belum diubah.']
+    kb=[[{'text':'✅ SAHKAN & SIMPAN JADUAL','callback_data':'tt286_commit'}],
+        [{'text':'🏫 Semak Nama Kelas Semula','callback_data':'tt286_classes_review'}],
+        [{'text':'🔄 Upload Semula','callback_data':'ttupload281_start'},{'text':'❌ Batal','callback_data':'timetable'}],
+        [{'text':'🏠 Menu Utama','callback_data':'home'}]]
+    return send(cid,'\n'.join(lines),kb)
+
+# Reader failure must also leave a direct Home route.
+_handle_timetable_upload_before_v25299 = _handle_timetable_upload_v25281
+def _handle_timetable_upload_v25281(cid,m):
+    try:
+        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nReader tempatan CikguLaju digunakan. Jadual sedia ada belum diubah.',
+             [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        data,mime=_telegram_media_bytes_v25281(m)
+        draft=_local_timetable_extract_v25297(data,mime,cid)
+        if not draft: raise RuntimeError('Tiada slot kelas yang dapat dibaca dengan yakin.')
+        ss=state.setdefault(cid,{})
+        ss['_tt286_raw_draft']=draft
+        ss.pop('_tt_upload_draft_v25281',None); ss.pop('_tt_upload_unmatched_v25281',None); ss.pop('waiting',None)
+        return _tt286_show_class_confirmation(cid)
+    except Exception as e:
+        print('v25.299 local timetable reader:',repr(e),flush=True)
+        state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+        return send(cid,'⚠️ Reader tempatan belum dapat membaca jadual ini dengan yakin. <b>Tiada data lama diubah.</b>\n\n'+html.escape(str(e))[:500],
+                    [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+                     [{'text':'✏️ Isi Manual','callback_data':'tt_add'},{'text':'⬅️ Kembali','callback_data':'timetable'}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+APP_VERSION='v25.299-PERSISTENT-MENU-ACCESS'
+CIKGULAJU_PATCH_V25299='PERMANENT_REPLY_MENU_PLUS_HOME_ON_ALL_TIMETABLE_SCREENS'
+# ===== END v25.299 =====
+
+# ===== v25.300 PYTHON-ONLY OCR TIMETABLE READER — NO TESSERACT / NO GEMINI =====
+# OCR engine: RapidOCR (ONNX Runtime). No system tesseract executable is required.
+_TT300_OCR_ENGINE = None
+
+def _tt300_ocr_engine():
+    global _TT300_OCR_ENGINE
+    if _TT300_OCR_ENGINE is None:
+        try:
+            from rapidocr_onnxruntime import RapidOCR
+            _TT300_OCR_ENGINE = RapidOCR()
+        except Exception as e:
+            raise RuntimeError('OCR Python Reader belum tersedia: '+str(e))
+    return _TT300_OCR_ENGINE
+
+
+def _tt297_ocr(img, psm=6):
+    """Compatibility override: all timetable OCR now uses RapidOCR, never pytesseract."""
+    try:
+        import numpy as np
+        import cv2
+        a=np.array(img.convert('RGB'))
+        if a.size == 0:
+            return ''
+        # RapidOCR benefits from a readable minimum text height.
+        h,w=a.shape[:2]
+        if max(h,w) < 900:
+            scale=min(3.0, max(1.4, 900.0/max(h,w)))
+            a=cv2.resize(a,None,fx=scale,fy=scale,interpolation=cv2.INTER_CUBIC)
+        # White border prevents text touching a detected grid edge from being clipped.
+        a=cv2.copyMakeBorder(a,12,12,12,12,cv2.BORDER_CONSTANT,value=(255,255,255))
+        result,_=_tt300_ocr_engine()(a)
+        if not result:
+            return ''
+        parts=[]
+        for row in result:
+            try:
+                txt=str(row[1] or '').strip()
+                score=float(row[2]) if len(row)>2 else 1.0
+            except Exception:
+                continue
+            # Conservative threshold: uncertain OCR is not allowed to create a timetable slot.
+            if txt and score >= 0.45:
+                parts.append(txt)
+        return ' '.join(' '.join(parts).split())
+    except RuntimeError:
+        raise
+    except Exception as e:
+        raise RuntimeError('RapidOCR gagal membaca imej: '+str(e))
+
+
+def _tt300_dependency_status():
+    missing=[]
+    try: import cv2
+    except Exception as e: missing.append('OpenCV: '+str(e))
+    try: import onnxruntime
+    except Exception as e: missing.append('ONNX Runtime: '+str(e))
+    try: from rapidocr_onnxruntime import RapidOCR
+    except Exception as e: missing.append('RapidOCR: '+str(e))
+    return missing
+
+
+# Override handler only to make dependency errors explicit. Existing safe confirmation flow remains unchanged.
+def _handle_timetable_upload_v25281(cid,m):
+    try:
+        missing=_tt300_dependency_status()
+        if missing:
+            raise RuntimeError('Komponen Reader belum lengkap pada server — '+'; '.join(missing))
+        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nReader CikguLaju sendiri digunakan (tanpa Gemini/Tesseract). Jadual sedia ada belum diubah.',
+             [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        data,mime=_telegram_media_bytes_v25281(m)
+        draft=_local_timetable_extract_v25297(data,mime,cid)
+        if not draft: raise RuntimeError('Tiada slot kelas yang dapat dibaca dengan yakin.')
+        ss=state.setdefault(cid,{})
+        ss['_tt286_raw_draft']=draft
+        ss.pop('_tt_upload_draft_v25281',None); ss.pop('_tt_upload_unmatched_v25281',None); ss.pop('waiting',None)
+        return _tt286_show_class_confirmation(cid)
+    except Exception as e:
+        print('v25.300 python-only timetable reader:',repr(e),flush=True)
+        state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+        return send(cid,'⚠️ Reader tempatan belum dapat membaca jadual ini dengan yakin. <b>Tiada data lama diubah.</b>\n\n'+html.escape(str(e))[:700],
+                    [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+                     [{'text':'✏️ Isi Manual','callback_data':'tt_add'},{'text':'⬅️ Kembali','callback_data':'timetable'}],
+                     [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+
+APP_VERSION='v25.300-PYTHON-ONLY-RAPIDOCR-TIMETABLE-READER'
+CIKGULAJU_PATCH_V25300='RAPIDOCR_ONNX_NO_TESSERACT_NO_GEMINI_TIMETABLE_PATH'
+# ===== END v25.300 =====
