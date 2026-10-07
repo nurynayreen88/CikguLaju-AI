@@ -15834,6 +15834,7 @@ def _tt_upload_menu_v25281(cid):
         [[{'text':'✏️ Isi Manual','callback_data':'tt_add'}],[{'text':'⬅️ Jadual Waktu','callback_data':'timetable'}]])
 
 def _telegram_media_bytes_v25281(m):
+    _tt_diag_v25302('telegram_media_download_start')
     if m.get('photo'):
         item=(m.get('photo') or [])[-1]; fid=item.get('file_id'); mime='image/jpeg'
     else:
@@ -15919,6 +15920,7 @@ def _show_timetable_draft_v25281(cid,good,unmatched):
     return send(cid,'\n'.join(lines),kb)
 
 def _handle_timetable_upload_v25281(cid,m):
+    _tt_diag_v25302('upload_handler_start')
     try:
         send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nJadual sedia ada belum diubah.')
         data,mime=_telegram_media_bytes_v25281(m); raw=_gemini_timetable_extract_v25281(data,mime)
@@ -45349,7 +45351,7 @@ def _tt300_ocr_engine():
     if _TT300_OCR_ENGINE is None:
         try:
             from rapidocr_onnxruntime import RapidOCR
-            _TT300_OCR_ENGINE = RapidOCR()
+            _TT300_OCR_ENGINE = (_tt_diag_v25302('rapidocr_init') or RapidOCR())
         except Exception as e:
             raise RuntimeError('OCR Python Reader belum tersedia: '+str(e))
     return _TT300_OCR_ENGINE
@@ -45427,3 +45429,15 @@ def _handle_timetable_upload_v25281(cid,m):
 APP_VERSION='v25.300-PYTHON-ONLY-RAPIDOCR-TIMETABLE-READER'
 CIKGULAJU_PATCH_V25300='RAPIDOCR_ONNX_NO_TESSERACT_NO_GEMINI_TIMETABLE_PATH'
 # ===== END v25.300 =====
+
+
+# ============================================================
+# v25.302 - Timetable reader diagnostics (server log only)
+# ============================================================
+def _tt_diag_v25302(stage, **info):
+    try:
+        safe = " ".join(f"{k}={str(v)[:180]}" for k, v in info.items())
+        print(f"[TT-READER v25.302] {stage}" + (f" | {safe}" if safe else ""), flush=True)
+    except Exception:
+        pass
+
