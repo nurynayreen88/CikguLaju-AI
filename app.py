@@ -44673,3 +44673,62 @@ def _rph_rows(s, *args, **kwargs):
 APP_VERSION='v26.54-PM-T1-T6-SET-INDUCTION-SANITIZER'
 CIKGULAJU_PATCH_V2654='PM_SET_INDUCTION_INTERNAL_LABEL_LEAK_FIX'
 # ===== END v26.54 =====
+
+# ===== v26.55 PENDIDIKAN MORAL T1-T6 60-MINUTE TIME STRUCTURE =====
+# PM-only presentation patch. Keeps verified content from v26.54 and adds
+# explicit timing to each phase/activity: 5 + 10 + 15 + 15 + 10 + 5 = 60 min.
+_PM_OLD_RPH_ROWS_V2655 = globals().get('_rph_rows')
+
+def _pm2655_time_activity_block(text):
+    import re
+    txt = str(text or '')
+    timings = {
+        '1': '10 minit',
+        '2': '15 minit',
+        '3': '15 minit',
+        '4': '10 minit',
+    }
+    # Preserve activity titles/content; only annotate each existing heading.
+    for n, mins in timings.items():
+        # Avoid duplicating a timing if a future source already contains one.
+        pat = rf'(Aktiviti\s+{n})(?!\s*\([^\n)]*minit\))\s*(-[^\n]*)'
+        txt = re.sub(pat, rf'\1 ({mins}) \2', txt, count=1, flags=re.IGNORECASE)
+    return txt
+
+def _pm2655_apply(s, rows):
+    if not isinstance(rows, dict):
+        return rows
+    subj = str((s or {}).get('subject') or (s or {}).get('subjek') or '')
+    year = str((s or {}).get('year') or (s or {}).get('grade') or (s or {}).get('year_label') or '')
+    if subj != 'Pendidikan Moral' or not (year.startswith('Tahun ') or year.strip() in {'1','2','3','4','5','6'}):
+        return rows
+    out = dict(rows)
+    # Current renderer keeps phase time in the field label for Set Induksi/Penutup.
+    # Rename only Moral keys; do not alter table/layout code.
+    for k in list(out.keys()):
+        norm = str(k).strip().upper().replace('_',' ')
+        if norm == 'SET INDUKSI':
+            if k != 'SET INDUKSI (5 minit)':
+                out['SET INDUKSI (5 minit)'] = out.pop(k)
+            break
+    # Annotate the four already-generated Moral activities.
+    for k in list(out.keys()):
+        if str(k).strip().upper().replace('_',' ') == 'AKTIVITI UTAMA':
+            out[k] = _pm2655_time_activity_block(out[k])
+            break
+    # Ensure Penutup retains its existing 5-minute label. If an older variant
+    # exposes plain PENUTUP, rename the key only; content remains unchanged.
+    for k in list(out.keys()):
+        if str(k).strip().upper().replace('_',' ') == 'PENUTUP':
+            if k != 'PENUTUP (5 minit)':
+                out['PENUTUP (5 minit)'] = out.pop(k)
+            break
+    return out
+
+def _rph_rows(s, *args, **kwargs):
+    rows = _PM_OLD_RPH_ROWS_V2655(s, *args, **kwargs) if _PM_OLD_RPH_ROWS_V2655 else {}
+    return _pm2655_apply(s or {}, rows)
+
+APP_VERSION='v26.55-PM-T1-T6-60MIN-TIME-STRUCTURE'
+CIKGULAJU_PATCH_V2655='PM_60MIN_5_10_15_15_10_5_TIME_LABELS'
+# ===== END v26.55 =====
