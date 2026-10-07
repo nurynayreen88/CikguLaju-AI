@@ -45565,3 +45565,111 @@ def _handle_timetable_upload_v25281(cid, m):
 APP_VERSION = "v25.303-MEMORY-SAFE-TIMETABLE-READER"
 CIKGULAJU_PATCH_V25303 = "REQUEST_SCOPED_OCR_DOWNSCALE_NO_LOADING_MENU"
 # ===== END v25.303 =====
+
+
+# ===== v25.304 LIGHTWEIGHT RUST OCR TIMETABLE READER =====
+# Replaces RapidOCR inference for timetable cells only.
+# OpenCV/grid/parser/review flow remains unchanged.
+def _tt300_dependency_status():
+    missing = []
+    try:
+        import cv2
+    except Exception as e:
+        missing.append("OpenCV: " + str(e))
+    try:
+        import ocrust
+    except Exception as e:
+        missing.append("OCR: " + str(e))
+    return missing
+
+def _tt303_release_ocr():
+    try:
+        import gc
+        gc.collect()
+    except Exception:
+        pass
+
+def _tt304_ocrust_text_from_array(a):
+    import tempfile, os
+    from PIL import Image
+    import ocrust
+
+    fd, path = tempfile.mkstemp(prefix="cikgulaju_tt_", suffix=".png")
+    os.close(fd)
+    try:
+        Image.fromarray(a).save(path, format="PNG", optimize=True)
+        _tt_diag_v25302("ocrust_read_start", width=a.shape[1], height=a.shape[0])
+        result = ocrust.read(path)
+        _tt_diag_v25302("ocrust_read_done", result_type=type(result).__name__)
+
+        if result is None:
+            return ""
+        if isinstance(result, str):
+            return " ".join(result.split())
+
+        # Defensive extraction for structured return types.
+        for attr in ("text", "content", "markdown"):
+            try:
+                value = getattr(result, attr, None)
+                if value:
+                    return " ".join(str(value).split())
+            except Exception:
+                pass
+
+        if isinstance(result, (list, tuple)):
+            parts = []
+            for item in result:
+                if isinstance(item, str):
+                    parts.append(item)
+                else:
+                    value = getattr(item, "text", None)
+                    if value:
+                        parts.append(str(value))
+            return " ".join(" ".join(parts).split())
+
+        return " ".join(str(result).split())
+    finally:
+        try:
+            os.remove(path)
+        except Exception:
+            pass
+
+def _tt297_ocr(img, psm=6):
+    try:
+        import numpy as np
+        import cv2
+
+        a = np.array(img.convert("RGB"))
+        if a.size == 0:
+            return ""
+
+        h, w = a.shape[:2]
+        longest = max(h, w)
+
+        # Timetable cells are often tiny. Enlarge small crops for recognition,
+        # but cap large images to protect Render memory.
+        if longest > 1400:
+            scale = 1400.0 / longest
+            a = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA)
+        elif longest < 320:
+            scale = min(3.0, 320.0 / max(1, longest))
+            a = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+
+        # White border improves recognition of text touching timetable grid lines.
+        a = cv2.copyMakeBorder(
+            a, 12, 12, 12, 12,
+            cv2.BORDER_CONSTANT, value=(255,255,255)
+        )
+
+        _tt_diag_v25302("ocrust_inference_start", width=a.shape[1], height=a.shape[0])
+        out = _tt304_ocrust_text_from_array(a)
+        _tt_diag_v25302("ocrust_inference_done", chars=len(out or ""))
+        return out or ""
+
+    except Exception as e:
+        _tt_diag_v25302("ocrust_inference_error", error=repr(e))
+        raise RuntimeError("OCR gagal membaca imej: " + str(e))
+
+APP_VERSION = "v25.304-LIGHTWEIGHT-RUST-OCR-TIMETABLE"
+CIKGULAJU_PATCH_V25304 = "OCRUST_NO_GEMINI_NO_TESSERACT_NO_RAPIDOCR_INFERENCE"
+# ===== END v25.304 =====
