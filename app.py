@@ -45673,3 +45673,107 @@ def _tt297_ocr(img, psm=6):
 APP_VERSION = "v25.304-LIGHTWEIGHT-RUST-OCR-TIMETABLE"
 CIKGULAJU_PATCH_V25304 = "OCRUST_NO_GEMINI_NO_TESSERACT_NO_RAPIDOCR_INFERENCE"
 # ===== END v25.304 =====
+
+
+# ===== v25.305 TIMETABLE OCR QUALITY + SPEED =====
+_TT305_OCR_CACHE = {}
+
+def _tt305_prepare_cell(a):
+    import cv2, numpy as np
+    if a is None or getattr(a, "size", 0) == 0:
+        return a, False
+
+    gray = cv2.cvtColor(a, cv2.COLOR_RGB2GRAY) if len(a.shape) == 3 else a.copy()
+
+    # Quick blank-cell rejection.
+    ink_ratio = float(np.mean(gray < 225))
+    if ink_ratio < 0.008:
+        return gray, False
+
+    # Remove long timetable grid lines while preserving letters/numbers.
+    inv = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
+    h, w = inv.shape[:2]
+    hk = max(12, w // 3)
+    vk = max(12, h // 3)
+    horizontal = cv2.morphologyEx(inv, cv2.MORPH_OPEN,
+                                  cv2.getStructuringElement(cv2.MORPH_RECT, (hk, 1)))
+    vertical = cv2.morphologyEx(inv, cv2.MORPH_OPEN,
+                                cv2.getStructuringElement(cv2.MORPH_RECT, (1, vk)))
+    cleaned = cv2.subtract(inv, cv2.bitwise_or(horizontal, vertical))
+
+    # Reject crops that became effectively empty after grid removal.
+    if float(np.mean(cleaned > 0)) < 0.004:
+        return gray, False
+
+    cleaned = cv2.bitwise_not(cleaned)
+    cleaned = cv2.copyMakeBorder(cleaned, 14, 14, 14, 14,
+                                 cv2.BORDER_CONSTANT, value=255)
+
+    # Timetable codes are tiny; enlarge after line removal.
+    ch, cw = cleaned.shape[:2]
+    target_h = 150 if ch < 90 else min(240, ch * 2)
+    scale = max(1.0, target_h / max(1, ch))
+    if scale > 1.0:
+        cleaned = cv2.resize(cleaned, None, fx=scale, fy=scale,
+                             interpolation=cv2.INTER_CUBIC)
+
+    return cleaned, True
+
+def _tt297_ocr(img, psm=6):
+    try:
+        import numpy as np, cv2, hashlib
+        a = np.array(img.convert("RGB"))
+        prepared, useful = _tt305_prepare_cell(a)
+        if not useful:
+            _tt_diag_v25302("ocr305_skip_blank")
+            return ""
+
+        key = hashlib.sha1(prepared.tobytes()).hexdigest()
+        if key in _TT305_OCR_CACHE:
+            _tt_diag_v25302("ocr305_cache_hit")
+            return _TT305_OCR_CACHE[key]
+
+        # OCRust accepts the prepared crop through the existing file bridge.
+        if len(prepared.shape) == 2:
+            prepared_rgb = cv2.cvtColor(prepared, cv2.COLOR_GRAY2RGB)
+        else:
+            prepared_rgb = prepared
+
+        _tt_diag_v25302("ocr305_start",
+                        width=prepared_rgb.shape[1],
+                        height=prepared_rgb.shape[0])
+        out = _tt304_ocrust_text_from_array(prepared_rgb)
+        out = " ".join((out or "").split())
+
+        # Normalize common timetable noise only; never invent content.
+        out = re.sub(r"[|¦]+", " ", out)
+        out = re.sub(r"\s+", " ", out).strip()
+
+        # REHAT is not a teaching slot.
+        if out.upper() in {"REHAT", "BREAK"}:
+            out = ""
+
+        _TT305_OCR_CACHE[key] = out
+        if len(_TT305_OCR_CACHE) > 300:
+            _TT305_OCR_CACHE.clear()
+
+        _tt_diag_v25302("ocr305_done", chars=len(out))
+        return out
+
+    except Exception as e:
+        _tt_diag_v25302("ocr305_error", error=repr(e))
+        raise RuntimeError("OCR gagal membaca imej: " + str(e))
+
+def _tt303_release_ocr():
+    try:
+        # Keep only lightweight text cache during one request; clear afterwards.
+        _TT305_OCR_CACHE.clear()
+        import gc
+        gc.collect()
+        _tt_diag_v25302("ocr305_released")
+    except Exception:
+        pass
+
+APP_VERSION = "v25.305-TIMETABLE-OCR-QUALITY-SPEED"
+CIKGULAJU_PATCH_V25305 = "GRIDLINE_REMOVAL_BLANK_SKIP_CACHE_UPSCALE"
+# ===== END v25.305 =====
