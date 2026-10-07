@@ -45407,7 +45407,7 @@ def _handle_timetable_upload_v25281(cid,m):
         missing=_tt300_dependency_status()
         if missing:
             raise RuntimeError('Komponen Reader belum lengkap pada server — '+'; '.join(missing))
-        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nReader CikguLaju sendiri digunakan (tanpa Gemini/Tesseract). Jadual sedia ada belum diubah.',
+        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nSila tunggu sebentar.',
              [[{'text':'🏠 Menu Utama','callback_data':'home'}]])
         data,mime=_telegram_media_bytes_v25281(m)
         draft=_local_timetable_extract_v25297(data,mime,cid)
