@@ -44732,3 +44732,48 @@ def _rph_rows(s, *args, **kwargs):
 APP_VERSION='v26.55-PM-T1-T6-60MIN-TIME-STRUCTURE'
 CIKGULAJU_PATCH_V2655='PM_60MIN_5_10_15_15_10_5_TIME_LABELS'
 # ===== END v26.55 =====
+
+# ===== v26.56 PENDIDIKAN MORAL T1-T6 60-MINUTE REGRESSION FIX =====
+# v26.55 renamed SET INDUKSI/PENUTUP dictionary keys, but the PDF renderer
+# expects the canonical keys. Restore canonical keys and put timing in content.
+# Activity 1-4 timing from v26.55 is preserved unchanged.
+_PM_OLD_RPH_ROWS_V2656 = globals().get('_rph_rows')
+
+def _pm2656_apply(s, rows):
+    if not isinstance(rows, dict):
+        return rows
+    subj = str((s or {}).get('subject') or (s or {}).get('subjek') or '')
+    year = str((s or {}).get('year') or (s or {}).get('grade') or (s or {}).get('year_label') or '')
+    if subj != 'Pendidikan Moral' or not (year.startswith('Tahun ') or year.strip() in {'1','2','3','4','5','6'}):
+        return rows
+    out = dict(rows)
+
+    # Remove renderer-incompatible aliases introduced by v26.55.
+    induction = out.pop('SET INDUKSI (5 minit)', None)
+    out.pop('SET INDUKSI (5 MINIT)', None)
+    out.pop('SET INDUKSI (5 Minit)', None)
+    # Rebuild from the already QA-approved v26.54 sanitizer and retain time.
+    body = _pm2654_set_induction(s) if '_pm2654_set_induction' in globals() else (induction or '')
+    body = str(body or '')
+    if not body.lstrip().casefold().startswith('5 minit'):
+        body = '5 minit\n' + body
+    out['SET INDUKSI'] = body
+
+    out.pop('PENUTUP (5 minit)', None)
+    out.pop('PENUTUP (5 MINIT)', None)
+    out.pop('PENUTUP (5 Minit)', None)
+    out['PENUTUP'] = (
+        '5 minit\n'
+        '1. Murid menyatakan nilai yang dipelajari dan satu sebab nilai itu penting.\n'
+        '2. Murid memberikan satu contoh tindakan yang akan diamalkan selepas PdP.\n'
+        '3. Guru merumuskan hubungan antara pilihan, perasaan dan perlakuan moral.'
+    )
+    return out
+
+def _rph_rows(s, *args, **kwargs):
+    rows = _PM_OLD_RPH_ROWS_V2656(s, *args, **kwargs) if _PM_OLD_RPH_ROWS_V2656 else {}
+    return _pm2656_apply(s or {}, rows)
+
+APP_VERSION='v26.56-PM-T1-T6-60MIN-REGRESSION-FIX'
+CIKGULAJU_PATCH_V2656='PM_RESTORE_CANONICAL_PHASE_KEYS_KEEP_60MIN_TIMING'
+# ===== END v26.56 =====
