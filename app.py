@@ -16290,8 +16290,22 @@ def webhook():
         elif 'document' in m or 'photo' in m:
             waiting_now=(state.get(cid,{}) or {}).get('waiting')
             if waiting_now=='timetable_upload_v25281':
-                _handle_timetable_upload_v25281(cid,m)
-                return jsonify({'ok':True})
+                # v25.296: timetable OCR/Gemini can take longer than Telegram's webhook window.
+                # Acknowledge the webhook immediately and continue safely in background.
+                def _safe_timetable_upload_worker_v25296():
+                    try:
+                        _handle_timetable_upload_v25281(cid,m)
+                    except Exception as e:
+                        print('v25.296 timetable background worker:',repr(e),flush=True)
+                        state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+                        try:
+                            send(cid,'⚠️ Pembacaan jadual terhenti. <b>Jadual lama tidak diubah.</b>\n\nSila cuba upload semula.',
+                                 [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+                                  [{'text':'✏️ Isi Manual','callback_data':'tt_add'},{'text':'⬅️ Kembali','callback_data':'timetable'}]])
+                        except Exception:
+                            pass
+                threading.Thread(target=_safe_timetable_upload_worker_v25296,daemon=True).start()
+                return jsonify({'ok':True,'timetable_reader':'background'})
             if waiting_now=='donation_receipt':
                 try:
                     rid=_new_donation_receipt(cid,m.get('message_id'))
@@ -44805,14 +44819,14 @@ Masa wajib format 24 jam HH:MM. Jangan guna markdown. Jangan reka data."""
     for model in [GEMINI_MODEL]+list(GEMINI_FALLBACK_MODELS or []):
         if model and model not in models: models.append(model)
     last=None
-    for model in models:
+    for model in models[:2]:
         try:
             url=f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
             payload={
                 'contents':[{'role':'user','parts':[{'text':prompt},{'inline_data':{'mime_type':mime,'data':base64.b64encode(data).decode('ascii')}}]}],
                 'generationConfig':{'temperature':0.0,'maxOutputTokens':7000,'responseMimeType':'application/json'}
             }
-            r=requests.post(url,headers={'Content-Type':'application/json','x-goog-api-key':GEMINI_API_KEY},json=payload,timeout=(15,GEMINI_TIMEOUT))
+            r=requests.post(url,headers={'Content-Type':'application/json','x-goog-api-key':GEMINI_API_KEY},json=payload,timeout=(10,min(int(GEMINI_TIMEOUT or 90),45)))
             if not r.ok:
                 last=f'Gemini HTTP {r.status_code}: {(r.text or "")[:180]}'; continue
             parts=((r.json().get('candidates') or [{}])[0].get('content') or {}).get('parts') or []
@@ -44854,6 +44868,382 @@ def _tt286_normalize_raw_entries(raw_entries):
     out.sort(key=lambda e:(order.get(e['day'],99),e['start'],e['end'],e['class_name'].casefold(),e['subject'].casefold()))
     return out
 
-APP_VERSION='v25.295-ROBUST-TIMETABLE-GRID-READER'
+APP_VERSION='v25.296-TIMETABLE-READER-NO-HANG'
 CIKGULAJU_PATCH_V25295='VISUAL_GRID_FIRST_STRICT_TIMETABLE_READER'
+CIKGULAJU_PATCH_V25296='BACKGROUND_TIMETABLE_UPLOAD_WEBHOOK_SAFE_TIMEOUT'
 # ===== END v25.295 =====
+
+# ===== v25.297 CIKGULAJU OWN TIMETABLE READER — NO GEMINI =====
+# Timetable upload is parsed locally with OpenCV + Tesseract OCR.
+# No Gemini/API/LLM call is permitted in this timetable path.
+
+def _tt297_images(data, mime):
+    import io
+    from PIL import Image
+    imgs=[]
+    if mime == 'application/pdf':
+        try:
+            import fitz
+            doc=fitz.open(stream=data, filetype='pdf')
+            for p in doc[:4]:
+                pix=p.get_pixmap(matrix=fitz.Matrix(2.2,2.2), alpha=False)
+                imgs.append(Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB'))
+        except Exception as e:
+            raise RuntimeError('PDF tidak dapat dibuka oleh reader tempatan: '+str(e))
+    else:
+        try: imgs=[Image.open(io.BytesIO(data)).convert('RGB')]
+        except Exception as e: raise RuntimeError('Imej jadual tidak dapat dibuka: '+str(e))
+    return imgs
+
+
+def _tt297_ocr(img, psm=6):
+    try:
+        import pytesseract
+        return ' '.join(pytesseract.image_to_string(img, lang='msa+eng', config=f'--psm {int(psm)}').split())
+    except Exception as e:
+        raise RuntimeError('OCR tempatan tidak tersedia pada server: '+str(e))
+
+
+def _tt297_grid_cells(img):
+    import cv2, numpy as np
+    a=np.array(img.convert('L'))
+    # Upscale small screenshots; improves both line detection and OCR.
+    if max(a.shape)<1800:
+        a=cv2.resize(a,None,fx=1.7,fy=1.7,interpolation=cv2.INTER_CUBIC)
+    bw=cv2.adaptiveThreshold(a,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,31,13)
+    h,w=bw.shape
+    hk=cv2.getStructuringElement(cv2.MORPH_RECT,(max(18,w//28),1))
+    vk=cv2.getStructuringElement(cv2.MORPH_RECT,(1,max(18,h//28)))
+    hor=cv2.morphologyEx(bw,cv2.MORPH_OPEN,hk)
+    ver=cv2.morphologyEx(bw,cv2.MORPH_OPEN,vk)
+    grid=cv2.bitwise_or(hor,ver)
+    cnts,_=cv2.findContours(grid,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    boxes=[]
+    for c in cnts:
+        x,y,cw,ch=cv2.boundingRect(c)
+        if cw<45 or ch<24 or cw>w*.98 or ch>h*.98: continue
+        if cw*ch < (w*h)*0.00045: continue
+        boxes.append((x,y,cw,ch))
+    # Keep smallest useful rectangles: large parent contours contain many cells.
+    boxes.sort(key=lambda b:b[2]*b[3])
+    kept=[]
+    for b in boxes:
+        x,y,cw,ch=b
+        if any(abs(x-x2)<4 and abs(y-y2)<4 and abs(cw-cw2)<6 and abs(ch-ch2)<6 for x2,y2,cw2,ch2 in kept): continue
+        if cw>w*.72 or ch>h*.72: continue
+        kept.append(b)
+    # OCR each detected cell after removing a narrow border.
+    from PIL import Image
+    rgb=np.array(img.resize((w,h))) if img.size!=(w,h) else np.array(img)
+    out=[]
+    for x,y,cw,ch in kept:
+        pad=max(2,min(cw,ch)//30)
+        crop=Image.fromarray(rgb[max(0,y+pad):min(h,y+ch-pad),max(0,x+pad):min(w,x+cw-pad)])
+        txt=_tt297_ocr(crop,6)
+        out.append({'x':x,'y':y,'w':cw,'h':ch,'cx':x+cw/2,'cy':y+ch/2,'text':txt})
+    return out,w,h
+
+
+def _tt297_day(text):
+    t=re.sub(r'[^a-z]','',str(text or '').casefold())
+    aliases={'isnin':'Isnin','monday':'Isnin','selasa':'Selasa','tuesday':'Selasa','rabu':'Rabu','wednesday':'Rabu',
+             'khamis':'Khamis','thursday':'Khamis','jumaat':'Jumaat','jumat':'Jumaat','friday':'Jumaat',
+             'sabtu':'Sabtu','saturday':'Sabtu','ahad':'Ahad','sunday':'Ahad'}
+    for k,v in aliases.items():
+        if k in t: return v
+    return None
+
+
+def _tt297_times(text):
+    s=str(text or '').replace('.',':')
+    vals=[]
+    # 07:30 / 7:30 / 0730; avoid interpreting ordinary short numbers as time.
+    for h,m in re.findall(r'(?<!\d)([0-2]?\d)[:](\d{2})(?!\d)',s):
+        h=int(h); m=int(m)
+        if h<=23 and m<=59: vals.append(f'{h:02d}:{m:02d}')
+    if not vals:
+        for h,m in re.findall(r'(?<!\d)([01]?\d)([0-5]\d)(?!\d)',s):
+            h=int(h); m=int(m)
+            if 5<=h<=19: vals.append(f'{h:02d}:{m:02d}')
+    return vals
+
+
+def _tt297_subject_class(text,cid):
+    raw=' '.join(str(text or '').replace('\n',' ').split()).strip(' |:-–—')
+    if not raw: return None,None
+    low=raw.casefold()
+    if any(x in low for x in ('rehat','recess','perhimpunan','assembly','kokurikulum')): return None,None
+    profiles=_profile_class_records(cid)
+    names=sorted([str(r.get('name') or '').strip() for r in profiles if str(r.get('name') or '').strip()],key=len,reverse=True)
+    cls=None
+    for n in names:
+        if n.casefold() in low:
+            cls=n; break
+    if cls:
+        sub=re.sub(re.escape(cls),' ',raw,flags=re.I)
+        sub=' '.join(sub.strip(' |:-–—').split())
+        return (sub or None),cls
+    # Conservative class pattern fallback; final user confirmation remains mandatory.
+    m=re.search(r'\b(?:Tahun\s*)?[1-6]\s*[A-Za-z][A-Za-z0-9 _-]{0,24}\b',raw,re.I)
+    if m:
+        cls=' '.join(m.group(0).split()).strip(); sub=(raw[:m.start()]+' '+raw[m.end():]).strip(' |:-–—')
+        return (' '.join(sub.split()) or None),cls
+    return None,None
+
+
+def _tt297_extract_page(img,cid):
+    cells,w,h=_tt297_grid_cells(img)
+    daycells=[(c,_tt297_day(c['text'])) for c in cells if _tt297_day(c['text'])]
+    timecells=[]
+    for c in cells:
+        ts=_tt297_times(c['text'])
+        if ts: timecells.append((c,ts))
+    if not daycells or not timecells:
+        raise RuntimeError('Grid hari/masa tidak dapat dikenal pasti dengan yakin.')
+    # Infer orientation from day labels: compact x spread => days are rows; compact y spread => days are columns.
+    xs=[c['cx'] for c,d in daycells]; ys=[c['cy'] for c,d in daycells]
+    xspread=max(xs)-min(xs) if len(xs)>1 else 0; yspread=max(ys)-min(ys) if len(ys)>1 else 0
+    days_as_rows = xspread < yspread
+    entries=[]
+    # Teaching cells are cells containing a known/recognisable class and nonempty subject.
+    for c in cells:
+        sub,cls=_tt297_subject_class(c['text'],cid)
+        if not sub or not cls: continue
+        # nearest day on the day axis
+        if days_as_rows:
+            dc,day=min(daycells,key=lambda z:abs(z[0]['cy']-c['cy']))
+            # times usually across columns; prefer time header with nearest x.
+            tc,ts=min(timecells,key=lambda z:abs(z[0]['cx']-c['cx']))
+        else:
+            dc,day=min(daycells,key=lambda z:abs(z[0]['cx']-c['cx']))
+            tc,ts=min(timecells,key=lambda z:abs(z[0]['cy']-c['cy']))
+        # Reject obviously remote labels from unrelated legends/tables.
+        if days_as_rows and abs(dc['cy']-c['cy']) > max(c['h'],dc['h'])*1.8: continue
+        if (not days_as_rows) and abs(dc['cx']-c['cx']) > max(c['w'],dc['w'])*1.8: continue
+        start=end=None
+        if len(ts)>=2: start,end=ts[0],ts[1]
+        else:
+            start=ts[0]
+            # derive end from next time header along time axis
+            coord=(lambda z:z[0]['cx']) if days_as_rows else (lambda z:z[0]['cy'])
+            cur=coord((tc,ts)); later=[]
+            for z,zts in timecells:
+                if coord((z,zts))>cur+4 and zts: later.append((coord((z,zts)),zts[0]))
+            if later: end=sorted(later)[0][1]
+        if not (start and end): continue
+        entries.append({'day':day,'start':start,'end':end,'class_name':cls,'subject':sub})
+    return entries
+
+
+def _local_timetable_extract_v25297(data,mime,cid):
+    all_entries=[]; errors=[]
+    for i,img in enumerate(_tt297_images(data,mime),1):
+        try: all_entries.extend(_tt297_extract_page(img,cid))
+        except Exception as e: errors.append(f'halaman {i}: {e}')
+    clean=_tt286_normalize_raw_entries(all_entries)
+    if not clean:
+        raise RuntimeError('Reader tempatan tidak menemui slot yang cukup jelas. '+('; '.join(errors[:3]) if errors else ''))
+    return clean
+
+
+# Compatibility guard: even if an older path calls the old extractor name,
+# it must NOT contact Gemini. CID-aware handler below is the intended path.
+def _gemini_timetable_extract_v25281(data,mime):
+    raise RuntimeError('Gemini dinyahaktifkan untuk Jadual Reader. Gunakan reader tempatan CikguLaju.')
+
+
+def _handle_timetable_upload_v25281(cid,m):
+    try:
+        send(cid,'🔎 <b>Sedang membaca jadual waktu…</b>\nReader tempatan CikguLaju digunakan. Jadual sedia ada belum diubah.')
+        data,mime=_telegram_media_bytes_v25281(m)
+        draft=_local_timetable_extract_v25297(data,mime,cid)
+        if not draft: raise RuntimeError('Tiada slot kelas yang dapat dibaca dengan yakin.')
+        ss=state.setdefault(cid,{})
+        ss['_tt286_raw_draft']=draft
+        ss.pop('_tt_upload_draft_v25281',None); ss.pop('_tt_upload_unmatched_v25281',None); ss.pop('waiting',None)
+        return _tt286_show_class_confirmation(cid)
+    except Exception as e:
+        print('v25.297 local timetable reader:',repr(e),flush=True)
+        state.setdefault(cid,{})['waiting']='timetable_upload_v25281'
+        return send(cid,'⚠️ Reader tempatan belum dapat membaca jadual ini dengan yakin. <b>Tiada data lama diubah.</b>\n\n'+html.escape(str(e))[:500],
+                    [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+                     [{'text':'✏️ Isi Manual','callback_data':'tt_add'},{'text':'⬅️ Kembali','callback_data':'timetable'}]])
+
+APP_VERSION='v25.297-CIKGULAJU-OWN-TIMETABLE-READER-NO-GEMINI'
+CIKGULAJU_PATCH_V25297='LOCAL_OPENCV_TESSERACT_GRID_READER_ZERO_GEMINI'
+# ===== END v25.297 =====
+
+# ===== v25.298 ADAPTIVE OWN TIMETABLE READER — MULTI LAYOUT =====
+# Regression targets: compact Sun-Thu teacher grids and large Mon-Fri merged-cell grids.
+# Zero Gemini/LLM calls in this reader path.
+
+_TT298_SUBJECT_CODES = {
+    'BI':'Bahasa Inggeris','EN':'Bahasa Inggeris','ENG':'Bahasa Inggeris',
+    'BM':'Bahasa Melayu','BA':'Bahasa Arab','MT':'Matematik','MM':'Matematik',
+    'MATH':'Matematik','SN':'Sains','SC':'Sains','PJ':'Pendidikan Jasmani',
+    'PK':'Pendidikan Kesihatan','PJPK':'Pendidikan Jasmani dan Pendidikan Kesihatan',
+    'PI':'Pendidikan Islam','PAI':'Pendidikan Islam','PM':'Pendidikan Moral',
+    'PSV':'Pendidikan Seni Visual','MZ':'Pendidikan Muzik','MUZIK':'Pendidikan Muzik',
+    'RBT':'Reka Bentuk dan Teknologi','SJ':'Sejarah','SEJ':'Sejarah'
+}
+
+def _tt297_ocr(img, psm=6):
+    try:
+        import pytesseract
+        cfg=f'--oem 3 --psm {int(psm)} -c preserve_interword_spaces=1'
+        try: raw=pytesseract.image_to_string(img, lang='msa+eng', config=cfg)
+        except Exception: raw=pytesseract.image_to_string(img, lang='eng', config=cfg)
+        return ' '.join(str(raw or '').split())
+    except Exception as e:
+        raise RuntimeError('OCR tempatan tidak tersedia pada server: '+str(e))
+
+
+def _tt297_day(text):
+    s=' '.join(str(text or '').strip().casefold().split())
+    alpha=re.sub(r'[^a-z]','',s)
+    exact={
+        'su':'Ahad','sun':'Ahad','sunday':'Ahad','ahad':'Ahad',
+        'mo':'Isnin','mon':'Isnin','monday':'Isnin','isnin':'Isnin',
+        'tu':'Selasa','tue':'Selasa','tues':'Selasa','tuesday':'Selasa','selasa':'Selasa',
+        'we':'Rabu','wed':'Rabu','wednesday':'Rabu','rabu':'Rabu',
+        'th':'Khamis','thu':'Khamis','thur':'Khamis','thursday':'Khamis','khamis':'Khamis',
+        'fr':'Jumaat','fri':'Jumaat','friday':'Jumaat','jumaat':'Jumaat','jumat':'Jumaat',
+        'sa':'Sabtu','sat':'Sabtu','saturday':'Sabtu','sabtu':'Sabtu'
+    }
+    if alpha in exact: return exact[alpha]
+    # OCR may attach punctuation/noise, but never use one-letter fuzzy guesses.
+    for k,v in exact.items():
+        if len(k)>=4 and k in alpha: return v
+    return None
+
+
+def _tt298_time_ranges(text):
+    s=str(text or '').replace('.',':').replace('–','-').replace('—','-')
+    out=[]
+    pat=r'(?<!\d)([0-2]?\d)[:](\d{2})\s*[-]\s*([0-2]?\d)[:](\d{2})(?!\d)'
+    for h1,m1,h2,m2 in re.findall(pat,s):
+        a=(int(h1),int(m1)); b=(int(h2),int(m2))
+        if a[0]<=23 and b[0]<=23 and a[1]<60 and b[1]<60:
+            out.append((f'{a[0]:02d}:{a[1]:02d}',f'{b[0]:02d}:{b[1]:02d}'))
+    return out
+
+
+def _tt298_to_minutes(t):
+    try:
+        h,m=map(int,t.split(':')); return h*60+m
+    except Exception: return -1
+
+
+def _tt298_pm_fix(ranges):
+    # A header wholly in 1:00..6:59 is an afternoon timetable in Malaysian school usage.
+    # Keep morning 7:xx onward unchanged. Applied only when the complete detected header supports it.
+    starts=[_tt298_to_minutes(a) for a,b in ranges]
+    if len(starts)>=3 and starts and max(starts)<7*60 and min(starts)>=60:
+        fixed=[]
+        for a,b in ranges:
+            def cv(t):
+                h,m=map(int,t.split(':'))
+                if 1<=h<=6: h+=12
+                return f'{h:02d}:{m:02d}'
+            fixed.append((cv(a),cv(b)))
+        return fixed
+    return ranges
+
+
+def _tt298_subject_class(text,cid):
+    raw=' '.join(str(text or '').replace('\n',' ').split()).strip(' |:-–—')
+    if not raw: return None,None
+    low=raw.casefold()
+    if any(x in low for x in ('rehat','recess','perhimpunan','assembly','kokurikulum','jumlah','subjek','teachers')):
+        return None,None
+    profiles=_profile_class_records(cid)
+    names=sorted([str(r.get('name') or '').strip() for r in profiles if str(r.get('name') or '').strip()],key=len,reverse=True)
+    for n in names:
+        if n.casefold() in low:
+            rem=re.sub(re.escape(n),' ',raw,flags=re.I)
+            rem=' '.join(rem.strip(' |:-–—').split())
+            toks=re.findall(r'[A-Za-z]+',rem.upper())
+            for tok in toks:
+                if tok in _TT298_SUBJECT_CODES: return _TT298_SUBJECT_CODES[tok],n
+            return (rem or None),n
+    # Locate a subject token first, then treat the remaining compact code as class.
+    toks=list(re.finditer(r'\b[A-Za-z]{1,8}\b',raw))
+    for m in toks:
+        code=m.group(0).upper()
+        if code not in _TT298_SUBJECT_CODES: continue
+        rest=(raw[:m.start()]+' '+raw[m.end():]).strip(' |:-–—')
+        rest=' '.join(rest.split())
+        # Accept compact class labels such as 2 USM, 1 UKM, 1 IM, 3 KR.
+        cm=re.search(r'\b(?:Tahun\s*)?[1-6]\s*[A-Za-z][A-Za-z0-9_-]{0,10}\b',rest,re.I)
+        if cm:
+            return _TT298_SUBJECT_CODES[code],' '.join(cm.group(0).split())
+    return None,None
+
+
+def _tt298_extract_page(img,cid):
+    cells,w,h=_tt297_grid_cells(img)
+    daycells=[]
+    for c in cells:
+        d=_tt297_day(c.get('text'))
+        if d: daycells.append((c,d))
+    if len(daycells)<2:
+        raise RuntimeError('Label hari jadual tidak dapat dikenal pasti.')
+    xs=[c['cx'] for c,d in daycells]; ys=[c['cy'] for c,d in daycells]
+    days_as_rows=(max(xs)-min(xs) if len(xs)>1 else 0) < (max(ys)-min(ys) if len(ys)>1 else 0)
+
+    # Prefer explicit start-end ranges in header cells. They give exact merged-cell spans.
+    headers=[]
+    for c in cells:
+        rs=_tt298_time_ranges(c.get('text'))
+        for a,b in rs: headers.append({'cell':c,'start':a,'end':b})
+    if headers:
+        fixed=_tt298_pm_fix([(z['start'],z['end']) for z in headers])
+        for z,(a,b) in zip(headers,fixed): z['start'],z['end']=a,b
+    else:
+        # Fallback to single times from older layouts.
+        singles=[]
+        for c in cells:
+            for t in _tt297_times(c.get('text')): singles.append((c,t))
+        if len(singles)<2: raise RuntimeError('Header masa/period tidak dapat dikenal pasti.')
+        axis=(lambda z:z[0]['cx']) if days_as_rows else (lambda z:z[0]['cy'])
+        singles=sorted(singles,key=axis)
+        for i,(c,t) in enumerate(singles[:-1]): headers.append({'cell':c,'start':t,'end':singles[i+1][1]})
+
+    entries=[]
+    for c in cells:
+        sub,cls=_tt298_subject_class(c.get('text'),cid)
+        if not sub or not cls: continue
+        # Nearest day must be on the same timetable band.
+        if days_as_rows:
+            dc,day=min(daycells,key=lambda z:abs(z[0]['cy']-c['cy']))
+            if abs(dc['cy']-c['cy']) > max(c['h'],dc['h'])*1.9: continue
+            # Header overlap on x-axis; merged teaching cells can overlap several periods.
+            overlaps=[z for z in headers if min(c['x']+c['w'],z['cell']['x']+z['cell']['w'])-max(c['x'],z['cell']['x']) > min(c['w'],z['cell']['w'])*0.20]
+            if not overlaps:
+                overlaps=sorted(headers,key=lambda z:abs(z['cell']['cx']-c['cx']))[:1]
+        else:
+            dc,day=min(daycells,key=lambda z:abs(z[0]['cx']-c['cx']))
+            if abs(dc['cx']-c['cx']) > max(c['w'],dc['w'])*1.9: continue
+            overlaps=[z for z in headers if min(c['y']+c['h'],z['cell']['y']+z['cell']['h'])-max(c['y'],z['cell']['y']) > min(c['h'],z['cell']['h'])*0.20]
+            if not overlaps:
+                overlaps=sorted(headers,key=lambda z:abs(z['cell']['cy']-c['cy']))[:1]
+        if not overlaps: continue
+        overlaps=sorted(overlaps,key=lambda z:_tt298_to_minutes(z['start']))
+        start=overlaps[0]['start']; end=max((z['end'] for z in overlaps),key=_tt298_to_minutes)
+        entries.append({'day':day,'start':start,'end':end,'class_name':cls,'subject':sub})
+    return entries
+
+
+def _local_timetable_extract_v25297(data,mime,cid):
+    all_entries=[]; errors=[]
+    for i,img in enumerate(_tt297_images(data,mime),1):
+        try: all_entries.extend(_tt298_extract_page(img,cid))
+        except Exception as e: errors.append(f'halaman {i}: {e}')
+    clean=_tt286_normalize_raw_entries(all_entries)
+    if not clean:
+        raise RuntimeError('Reader CikguLaju tidak menemui slot yang cukup jelas. '+('; '.join(errors[:3]) if errors else ''))
+    return clean
+
+APP_VERSION='v25.298-ADAPTIVE-OWN-TIMETABLE-READER'
+CIKGULAJU_PATCH_V25298='SUN_THU_MON_FRI_MERGED_CELL_PERIOD_RANGE_ADAPTIVE_ZERO_GEMINI'
+# ===== END v25.298 =====
