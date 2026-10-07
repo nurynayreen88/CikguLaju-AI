@@ -44490,3 +44490,133 @@ def _rph_rows(s, *args, **kwargs):
 
 APP_VERSION = 'v26.52-PM-T1-T6-QA-UPLOAD-CANDIDATE'
 CIKGULAJU_PATCH_V2652 = 'PM_DICT_ROWS_INDIVIDUAL_PDP_QA_FIX'
+
+# ===== v26.53 PENDIDIKAN MORAL T1-T6 RUNTIME CONTENT QA =====
+# Fixes issues exposed by a real generated RPH (T5, SP 4.5):
+# - remove internal/placeholder labels such as "C" / "Amal & Nilai — C"
+# - make objective/criteria/prior knowledge measurable and SP-grounded
+# - keep four substantive activities only (no redundant Activity 5)
+# - preserve verified SK/SP, layout, DB, PI/Jawi, BBM/Worksheet and other subjects.
+import re as _pm_re_v2653
+_PM_OLD_RPH_ROWS_V2653 = globals().get('_rph_rows')
+
+def _pm2653_text(v):
+    return _pm_re_v2653.sub(r'\s+', ' ', str(v or '')).strip(' —-|')
+
+def _pm2653_std(s, kind):
+    codes = list((s or {}).get('grouped_'+kind.lower()+'_codes') or [])
+    texts = list((s or {}).get('grouped_'+kind.lower()+'_texts') or [])
+    if not texts:
+        t=(s or {}).get(kind.lower()+'_text') or (s or {}).get('selected_'+kind.lower()+'_text')
+        if t: texts=[t]
+    out=[]
+    for i,t in enumerate(texts):
+        tt=_pm2653_text(t)
+        if not tt: continue
+        code=_pm2653_text(codes[i] if i < len(codes) else (s or {}).get(kind.lower()+'_code'))
+        out.append((code,tt))
+    return out
+
+def _pm2653_strip_internal(v):
+    x=_pm2653_text(v)
+    # Single-letter phase markers are internal curriculum segmentation, not RPH titles.
+    parts=[p.strip() for p in _pm_re_v2653.split(r'\s*[—|]\s*',x) if p.strip()]
+    parts=[p for p in parts if not _pm_re_v2653.fullmatch(r'[A-Z]',p,re.I)]
+    return ' — '.join(parts)
+
+def _pm2653_focus(s):
+    sk=_pm2653_std(s,'SK'); sp=_pm2653_std(s,'SP')
+    # Prefer the verified curriculum statement over internal topic/phase labels.
+    if sk:
+        t=sk[0][1]
+        t=_pm_re_v2653.sub(r'^(?:penghargaan|amalan|perlakuan)\s+', lambda m:m.group(0), t, flags=_pm_re_v2653.I)
+        return t.rstrip('.')
+    if sp: return sp[0][1].rstrip('.')
+    src=_pm2648_source(s) if '_pm2648_source' in globals() else {}
+    for v in (src.get('skill_focus'),src.get('subtopic'),src.get('topic'),src.get('unit_title'),(s or {}).get('topic')):
+        t=_pm2653_strip_internal(v)
+        if t and not _pm_re_v2653.fullmatch(r'[A-Z]',t,re.I): return t
+    return 'amalan nilai moral'
+
+def _pm2653_value(s):
+    joined=' '.join([t for _,t in _pm2653_std(s,'SK')+_pm2653_std(s,'SP')])
+    src=_pm2648_source(s) if '_pm2648_source' in globals() else {}
+    joined+=' '+_pm2653_text(src.get('unit_title'))+' '+_pm2653_text(src.get('topic'))+' '+_pm2653_text(src.get('subtopic'))
+    return _pm2648_value(joined) if '_pm2648_value' in globals() else 'nilai moral'
+
+def _pm2653_sp_action(s):
+    sp=_pm2653_std(s,'SP')
+    text=sp[0][1] if sp else ''
+    low=text.casefold()
+    if any(k in low for k in ('mengamalkan','mempraktikkan','menunjuk cara','menunjukkan cara','melaksanakan')):
+        return ('menunjukkan sekurang-kurangnya satu perlakuan yang menepati Standard Pembelajaran melalui demonstrasi atau simulasi',
+                'Murid berjaya apabila dapat menunjukkan perlakuan yang sesuai dan menerangkan sebab tindakan tersebut menepati nilai yang dipelajari.')
+    if any(k in low for k in ('mengekspresikan','meluahkan','perasaan','berasa')):
+        return ('menyatakan perasaan yang sesuai dalam situasi yang dipelajari serta menghubungkannya dengan tindakan bermoral',
+                'Murid berjaya apabila dapat menyatakan perasaan yang sesuai dan menjelaskan kaitannya dengan tindakan atau nilai.')
+    if any(k in low for k in ('menghuraikan','menjelaskan','menerangkan','memerihalkan')):
+        return ('menghuraikan sekurang-kurangnya dua idea yang tepat berdasarkan situasi dan Standard Pembelajaran',
+                'Murid berjaya apabila dapat menghuraikan sekurang-kurangnya dua idea dengan sebab atau contoh yang relevan.')
+    if any(k in low for k in ('mengenal pasti','menyenaraikan','menyatakan','memberi contoh')):
+        return ('mengenal pasti atau menyatakan sekurang-kurangnya tiga respons yang tepat berdasarkan situasi dan Standard Pembelajaran',
+                'Murid berjaya apabila dapat memberikan sekurang-kurangnya tiga respons yang tepat dan berkaitan.')
+    if any(k in low for k in ('mencadangkan','merancang','membuat keputusan')):
+        return ('mencadangkan tindakan yang sesuai dan memberikan sekurang-kurangnya satu alasan berdasarkan Standard Pembelajaran',
+                'Murid berjaya apabila dapat memilih tindakan yang sesuai serta memberikan alasan yang munasabah.')
+    return ('memberikan respons yang tepat dan menunjukkan aplikasi nilai berdasarkan Standard Pembelajaran yang dipilih',
+            'Murid berjaya apabila respons dan tindakan yang diberikan selaras dengan Standard Pembelajaran.')
+
+def _pm2653_prior(focus,val):
+    if val!='nilai moral':
+        return f'Murid pernah melihat atau mengalami situasi harian yang melibatkan {val.lower()} dan boleh memberikan satu contoh mudah.'
+    return f'Murid mempunyai pengalaman harian yang berkaitan dengan {focus.lower()} dan boleh memberikan satu contoh mudah.'
+
+def _pm2653_activity_block(s, focus, val):
+    src=_pm2648_source(s) if '_pm2648_source' in globals() else {}
+    anchor=_pm2653_text(src.get('activity_note') or (s or {}).get('rpt_activity_note'))
+    sp=' '.join(t for _,t in _pm2653_std(s,'SP')).casefold()
+    # Activity 1 remains source-first when the verified RPT has a concrete activity.
+    if anchor:
+        a1=f'Aktiviti 1 - Aktiviti Buku Teks/RPT\n1. Murid melaksanakan aktiviti yang telah dipadankan: {anchor}.\n2. Guru menyoal murid tentang bukti {val} yang ditunjukkan dalam aktiviti.'
+    else:
+        a1=f'Aktiviti 1 - Eksplorasi Situasi\n1. Murid meneliti situasi buku teks berkaitan {focus}.\n2. Murid mengenal pasti tindakan dan bukti {val} yang terdapat dalam situasi.'
+    # Concrete value-specific classroom evidence.
+    tasks=_PM2649_VALUE_TASKS.get(val,('analisis situasi moral','simulasi tindakan yang sesuai','refleksi tindakan')) if '_PM2649_VALUE_TASKS' in globals() else ('analisis situasi moral','simulasi tindakan yang sesuai','refleksi tindakan')
+    a2=f'Aktiviti 2 - {tasks[0].capitalize()}\n1. Murid melaksanakan {tasks[0]} berdasarkan konteks {focus}.\n2. Murid menerangkan bagaimana hasil tersebut menunjukkan {val}.'
+    if any(k in sp for k in ('mengamalkan','mempraktikkan','menunjuk cara','menunjukkan cara','melaksanakan')):
+        a3=f'Aktiviti 3 - Amalan Nilai\n1. Secara berpasangan, murid melaksanakan {tasks[1]} dalam situasi yang berkaitan dengan {focus}.\n2. Rakan menggunakan semakan mudah: tindakan sesuai, tutur kata sesuai dan bukti {val}.'
+        a4=f'Aktiviti 4 - Aplikasi Individu\n1. Murid memilih satu situasi baharu yang setara dan menunjukkan tindakan yang patut dilakukan.\n2. Murid menyatakan satu sebab dan satu kesan positif daripada amalan {val}.'
+    else:
+        a3=f'Aktiviti 3 - Sebab, Perasaan dan Kesan\n1. Murid membandingkan dua pilihan tindakan dan memilih tindakan yang paling wajar.\n2. Murid menerangkan sebab, perasaan pihak yang terlibat dan satu kesan daripada pilihan tersebut.'
+        a4=f'Aktiviti 4 - Aplikasi\n1. Murid menyelesaikan satu situasi baharu melalui {tasks[1]}.\n2. Murid memberikan justifikasi ringkas yang menghubungkan tindakan dengan {val}.'
+    return '\n\n'.join((a1,a2,a3,a4))
+
+def _pm2653_apply(s, rows):
+    if not isinstance(rows,dict): return rows
+    subj=str((s or {}).get('subject') or (s or {}).get('subjek') or '')
+    year=str((s or {}).get('year') or (s or {}).get('grade') or (s or {}).get('year_label') or '')
+    if subj!='Pendidikan Moral' or not (year.startswith('Tahun ') or year.strip() in {'1','2','3','4','5','6'}): return rows
+    r=dict(rows)
+    focus=_pm2653_focus(s); val=_pm2653_value(s)
+    objective,criteria=_pm2653_sp_action(s)
+    r['TAJUK']=focus
+    r['OBJEKTIF PEMBELAJARAN']='Pada akhir pembelajaran, murid dapat '+objective+'.'
+    r['KRITERIA KEJAYAAN']=criteria
+    r['PENGETAHUAN SEDIA ADA']=_pm2653_prior(focus,val)
+    r['AKTIVITI UTAMA']=_pm2653_activity_block(s,focus,val)
+    # Keep assessment source-grounded when verified; otherwise align it directly to SP evidence.
+    src=_pm2648_source(s) if '_pm2648_source' in globals() else {}
+    assess=_pm2653_text(src.get('assessment_note') or (s or {}).get('rpt_assessment_note'))
+    if assess:
+        r['PENTAKSIRAN']=assess
+    else:
+        r['PENTAKSIRAN']='Pemerhatian dan semakan hasil aktiviti berdasarkan Standard Pembelajaran: '+criteria
+    return r
+
+def _rph_rows(s,*args,**kwargs):
+    rows=_PM_OLD_RPH_ROWS_V2653(s,*args,**kwargs) if _PM_OLD_RPH_ROWS_V2653 else {}
+    return _pm2653_apply(s or {},rows)
+
+APP_VERSION='v26.53-PM-T1-T6-RUNTIME-CONTENT-QA'
+CIKGULAJU_PATCH_V2653='PM_RUNTIME_TITLE_OBJECTIVE_CRITERIA_PRIOR_AND_ACTIVITY_DEDUP_FIX'
+# ===== END v26.53 =====
