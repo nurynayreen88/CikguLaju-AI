@@ -4,6 +4,7 @@ Safe staging fallback for preview and QA. No database writes, no invented SK/SP.
 The existing app PDF formatter remains the owner of PDF output.
 """
 from pjpk_activity_adapter_v2666 import prepare_pjpk_rph
+from pjpk_rph_quality_v2672 import refine_verified_pjpk_rph
 
 def compose_verified_pjpk_rph(selection, connect):
     """Return structured one-page-friendly content, or None if not verified."""
@@ -20,7 +21,7 @@ def compose_verified_pjpk_rph(selection, connect):
     sp_code, sp_text = result.get("sp_code"), result.get("sp_text")
     if not all((topic, subject, year, sk_code, sk_text, sp_code, sp_text)):
         return None
-    return {
+    composed = {
         "subject": subject,
         "year": year,
         "topic": topic,
@@ -33,6 +34,7 @@ def compose_verified_pjpk_rph(selection, connect):
         "reflection": "____ / ____ murid mencapai objektif. Tindakan susulan: __________________.",
         "source_verified": True,
     }
+    return refine_verified_pjpk_rph(composed)
 
 def render_verified_pjpk_text(selection, connect):
     data = compose_verified_pjpk_rph(selection, connect)
