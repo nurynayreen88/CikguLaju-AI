@@ -43,7 +43,7 @@ def enrich_pjpk_rph(selection, connect):
             rows = con.execute(
                 "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
                 (year, subject, topic)).fetchall()
-        if len(rows) != 1 and topic:
+        if len(rows) == 0 and topic:
             rows = con.execute(
                 "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
                 (year, subject, topic)).fetchall()
@@ -76,7 +76,7 @@ def enrich_pjpk_rph(selection, connect):
         result["_pjpk_multiple_sp_v2661"] = len(sp) > 1
         result["_pjpk_standards_complete_v2659"] = bool(result.get("sk_code") and result.get("sp_code") and result.get("sk_text") and result.get("sp_text"))
         return result
-    except (sqlite3.Error, ValueError, TypeError, KeyError, AttributeError):
+    except (sqlite3.Error, ValueError, TypeError, KeyError, AttributeError, IndexError):
         return result
     finally:
         if con is not None:
