@@ -53,7 +53,12 @@ def enrich_pjpk_rph(selection, connect):
             check_cols = [d[0] for d in con.execute("SELECT * FROM rpt_entries LIMIT 0").description]
             check_row = dict(zip(check_cols, rows[0]))
             if str(check_row.get("topic") or "").strip().casefold() != topic.casefold():
-                return result
+                # Sequence may refer to a different unit; never silently reuse it.
+                rows = con.execute(
+                    "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
+                    (year, subject, topic)).fetchall()
+                if len(rows) != 1:
+                    return result
         cols = [d[0] for d in con.execute("SELECT * FROM rpt_entries LIMIT 0").description]
         r = dict(zip(cols, rows[0]))
         standards = con.execute(
@@ -66,7 +71,7 @@ def enrich_pjpk_rph(selection, connect):
         if not result.get("sp_code") and len(sp) == 1:
             result["sp_code"], result["sp_text"] = sp[0][1], sp[0][2]
         for field in ("topic", "subtopic", "skill_focus", "unit_title"):
-            if not result.get(field) and r.get(field):
+            if field in r and not result.get(field) and r.get(field):
                 result[field] = r[field]
         result["_pjpk_rpt_source_id_v2659"] = r["id"]
         result["_pjpk_verified_sp_details_v2662"] = [{"code": str(x[1]), "text": str(x[2])} for x in sp]
