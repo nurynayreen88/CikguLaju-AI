@@ -26,7 +26,7 @@ def main():
         if not path.is_file() or path.stat().st_size != size:
             raise SystemExit(f"Missing or wrong-sized part: {path}")
         raw = path.read_bytes()
-        actual = hashlib.sha1(f"blob {len(raw)}\\0".encode() + raw).hexdigest()
+        actual = hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
         if actual != git_sha:
             raise SystemExit(f"Git blob SHA mismatch: {name}")
     fd, temp_name = tempfile.mkstemp(prefix=".v26_16_rebuild_", suffix=".db", dir=ROOT)
