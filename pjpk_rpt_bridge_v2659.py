@@ -17,8 +17,8 @@ def enrich_pjpk_rph(selection, connect):
         year = "Tahun " + year
     if not re.fullmatch(r"Tahun [1-6]", year):
         return result
-    seq = result.get("sequence_no") or result.get("rpt_sequence_no") or result.get("lesson_no")
-    topic = str(result.get("topic") or "").strip()
+    seq = result.get("rpt_sequence_no") or result.get("sequence_no") or result.get("lesson_no")
+    topic = str(result.get("topic") or result.get("topic_title") or "").strip()
     if not (str(seq).isdigit() or topic):
         return result
     con = None
@@ -32,8 +32,17 @@ def enrich_pjpk_rph(selection, connect):
             rows = con.execute(
                 "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 ORDER BY id LIMIT 2",
                 (year, subject, topic)).fetchall()
+        if len(rows) != 1 and topic:
+            rows = con.execute(
+                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
+                (year, subject, topic)).fetchall()
         if len(rows) != 1:
             return result
+        if topic and str(seq).isdigit():
+            check_cols = [d[0] for d in con.execute("SELECT * FROM rpt_entries LIMIT 0").description]
+            check_row = dict(zip(check_cols, rows[0]))
+            if str(check_row.get("topic") or "").strip().casefold() != topic.casefold():
+                return result
         cols = [d[0] for d in con.execute("SELECT * FROM rpt_entries LIMIT 0").description]
         r = dict(zip(cols, rows[0]))
         standards = con.execute(
