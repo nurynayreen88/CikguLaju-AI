@@ -56,8 +56,9 @@ def install(g):
         rows = rows_for(year, subject)
         ss["_pjpk_v2616_rows"] = rows
         if not rows:
+            reason = ("Pautan SK yang disahkan belum tersedia bagi PdP ini; SP sahaja tidak mencukupi untuk menjana RPH." if subject == "Pendidikan Jasmani" and year == "Tahun 1" else "PdP belum lengkap disahkan untuk janaan RPH.")
             return g["send"](cid,
-                "🚧 <b>PdP PJPK untuk pilihan ini belum lengkap disahkan.</b> Data belum siap tidak digunakan untuk RPH.",
+                "🚧 <b>PJPK belum boleh menjana RPH untuk pilihan ini.</b> " + reason,
                 [[{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}],
                  [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
         page = max(0, int(page))
