@@ -31,7 +31,7 @@ def enrich_pjpk_rph(selection, connect):
                 (year, subject, int(seq))).fetchall()
         else:
             rows = con.execute(
-                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 ORDER BY id LIMIT 2",
+                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND lower(trim(topic))=lower(?) AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
                 (year, subject, topic)).fetchall()
         if len(rows) != 1 and topic:
             rows = con.execute(
@@ -59,6 +59,8 @@ def enrich_pjpk_rph(selection, connect):
             if not result.get(field) and r.get(field):
                 result[field] = r[field]
         result["_pjpk_rpt_source_id_v2659"] = r["id"]
+        result["_pjpk_verified_sp_details_v2662"] = [{"code": str(x[1]), "text": str(x[2])} for x in sp]
+        result["_pjpk_verified_sk_details_v2662"] = [{"code": str(x[1]), "text": str(x[2])} for x in sk]
         result["_pjpk_verified_sp_codes_v2661"] = [str(x[1]) for x in sp]
         result["_pjpk_verified_sk_codes_v2661"] = [str(x[1]) for x in sk]
         result["_pjpk_multiple_sp_v2661"] = len(sp) > 1
