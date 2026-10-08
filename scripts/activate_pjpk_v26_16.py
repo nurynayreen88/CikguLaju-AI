@@ -45,9 +45,8 @@ def install(g):
                     FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
                     ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",
                     (row["id"],))]
-        # No RPH without verified SK and SP.
-        return [r for r in rows if any(x["standard_type"] == "SK" for x in r["_std"])
-                and any(x["standard_type"] == "SP" for x in r["_std"])]
+        # Temporary generic mode: verified SP is required; never invent SK.
+        return [r for r in rows if any(x["standard_type"] == "SP" and x.get("standard_code") for x in r["_std"])]
 
     def menu(cid, page=0):
         ss = g["state"].setdefault(cid, {})
@@ -56,7 +55,7 @@ def install(g):
         rows = rows_for(year, subject)
         ss["_pjpk_v2616_rows"] = rows
         if not rows:
-            reason = ("Pautan SK yang disahkan belum tersedia bagi PdP ini; SP sahaja tidak mencukupi untuk menjana RPH." if subject == "Pendidikan Jasmani" and year == "Tahun 1" else "PdP belum lengkap disahkan untuk janaan RPH.")
+            reason = "Belum ada PdP dengan SP disahkan untuk pilihan ini."
             return g["send"](cid,
                 "🚧 <b>PJPK belum boleh menjana RPH untuk pilihan ini.</b> " + reason,
                 [[{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}],
@@ -76,7 +75,7 @@ def install(g):
             kb.append(nav)
         kb.append([{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}])
         return g["send"](cid,
-            f"🏃 <b>{html.escape(subject)} • {html.escape(year)}</b>\\n\\nPilih PdP yang telah disahkan.",
+            f"🏃 <b>{html.escape(subject)} • {html.escape(year)}</b>\\n\\nPilih PdP. RPH sementara menggunakan SP disahkan; SK yang belum disahkan tidak direka.",
             kb)
 
     def callback(cid, d):
@@ -100,6 +99,10 @@ def install(g):
                 return menu(cid)
             if not row.get("_std"):
                 return menu(cid)
+            # Generic fallback is explicitly marked; do not reuse stale SK from a previous selection.
+            ss["pjpk_generic_mode_v2616"] = True
+            for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes", "grouped_sk_codes", "grouped_sk_texts"):
+                ss.pop(key, None)
             # Existing PM selection helper reads this cached row list.
             ss["_pm_pdp_rows_v2602"] = rows
             return g["_pm_commit_pdp_v2602"](cid, rows.index(row))
