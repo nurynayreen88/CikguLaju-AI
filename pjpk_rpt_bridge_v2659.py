@@ -3,15 +3,18 @@ Only attaches uniquely identified, verified RPT and SK/SP text. Integration into
 app.py must be reviewed separately; importing this module alone changes nothing.
 """
 import re
+import sqlite3
 
 def enrich_pjpk_rph(selection, connect):
     if not isinstance(selection, dict):
         return selection
     result = dict(selection)
-    subject = result.get("subject")
+    subject = result.get("subject") or result.get("subject_name")
     if subject not in ("Pendidikan Jasmani", "Pendidikan Kesihatan"):
         return result
-    year = str(result.get("year") or result.get("year_label") or "").strip()
+    year = str(result.get("year_label") or result.get("year") or "").strip()
+    if re.fullmatch(r"[1-6]", year):
+        year = "Tahun " + year
     if not re.fullmatch(r"Tahun [1-6]", year):
         return result
     seq = result.get("sequence_no") or result.get("rpt_sequence_no") or result.get("lesson_no")
@@ -23,7 +26,7 @@ def enrich_pjpk_rph(selection, connect):
         con = connect()
         if str(seq).isdigit():
             rows = con.execute(
-                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND sequence_no=? AND verified=1 ORDER BY id LIMIT 2",
+                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND sequence_no=? AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
                 (year, subject, int(seq))).fetchall()
         else:
             rows = con.execute(
@@ -47,8 +50,11 @@ def enrich_pjpk_rph(selection, connect):
                 result[field] = r[field]
         result["_pjpk_rpt_source_id_v2659"] = r["id"]
         return result
-    except (ValueError, TypeError, KeyError, AttributeError):
+    except (sqlite3.Error, ValueError, TypeError, KeyError, AttributeError):
         return result
     finally:
         if con is not None:
-            con.close()
+            try:
+                con.close()
+            except sqlite3.Error:
+                pass
