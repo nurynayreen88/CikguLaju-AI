@@ -3,11 +3,13 @@ on:
   push:
     branches:
       - staging/pm-pjpk-v26-16
+      - main
     paths:
       - 'CikguLaju_v26_16.db.part*'
       - 'scripts/rebuild_pm_pjpk_v26_16.py'
       - 'scripts/check_pm_pjpk_v26_16.py'
       - 'scripts/pjpk_v26_16_adapter.py'
+      - 'scripts/activate_pjpk_v26_16.py'
       - '.github/workflows/pm-pjpk-v26-16-staging.yml'
   workflow_dispatch:
 jobs:
@@ -38,4 +40,33 @@ jobs:
               assert not ready_pdp(f'Tahun {year}', 'Pendidikan Kesihatan')
           assert not ready_pdp('Tahun 1', 'Pendidikan Moral')
           print('PASS: 33 safe PJ T1 rows; unfinished PJPK rows hidden')
+          PY
+
+      - name: Test generic PJPK menu without altering DB
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from scripts.activate_pjpk_v26_16 import install
+          from scripts.pjpk_v26_16_adapter import ready_pdp
+          import sqlite3
+          db=Path('CikguLaju_Curriculum_Master_v26_16_PJPK_SAFE_RELEASE.db')
+          before=db.stat().st_size
+          events=[]
+          state={1:{'year':'Tahun 1'}}
+          def send(cid,msg,kb):
+              events.append((msg,kb))
+          def commit(cid,idx):
+              events.append(('COMMIT',idx))
+          g={'callback':lambda cid,d: events.append(('LEGACY',d)), 'state':state,
+             'send':send,'_pm_commit_pdp_v2602':commit,
+             'SUBJECTS':[],'SUBJECT_LABEL':{},'SUBJECTS_BY_GRADE':{}}
+          install(g)
+          g['callback'](1,'sub_Pendidikan Jasmani')
+          assert events and 'Pilih PdP' in events[-1][0],events
+          assert len(state[1]['_pjpk_v2616_rows'])==33
+          g['callback'](1,'pjpk2616pdp|0')
+          assert any(x[0]=='COMMIT' for x in events),events
+          assert state[1]['pjpk_generic_mode_v2616'] is True
+          assert db.stat().st_size==before
+          print('PASS: generic menu, 33 PJ T1 rows, selection callback, DB unchanged')
           PY
