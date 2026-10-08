@@ -39,8 +39,8 @@ def enrich_pjpk_rph(selection, connect):
         standards = con.execute(
             "SELECT standard_type,standard_code,standard_text FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1 ORDER BY sequence_no,id",
             (r["id"],)).fetchall()
-        sk = [x for x in standards if x[0] == "SK" and str(x[2] or "").strip()]
-        sp = [x for x in standards if x[0] == "SP" and str(x[2] or "").strip()]
+        sk = [x for x in standards if x[0] == "SK" and str(x[2] or "").strip() and str(x[1] or "").strip()]
+        sp = [x for x in standards if x[0] == "SP" and str(x[2] or "").strip() and str(x[1] or "").strip()]
         if not result.get("sk_code") and len(sk) == 1:
             result["sk_code"], result["sk_text"] = sk[0][1], sk[0][2]
         if not result.get("sp_code") and len(sp) == 1:
@@ -49,6 +49,7 @@ def enrich_pjpk_rph(selection, connect):
             if not result.get(field) and r.get(field):
                 result[field] = r[field]
         result["_pjpk_rpt_source_id_v2659"] = r["id"]
+        result["_pjpk_standards_complete_v2659"] = bool(result.get("sk_code") and result.get("sp_code") and result.get("sk_text") and result.get("sp_text"))
         return result
     except (sqlite3.Error, ValueError, TypeError, KeyError, AttributeError):
         return result
