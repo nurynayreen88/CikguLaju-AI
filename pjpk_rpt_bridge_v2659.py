@@ -25,9 +25,19 @@ def enrich_pjpk_rph(selection, connect):
     con = None
     try:
         con = connect()
+        if con is None:
+            return result
+        entry_columns = {x[1] for x in con.execute("PRAGMA table_info(rpt_entries)").fetchall()}
+        standard_columns = {x[1] for x in con.execute("PRAGMA table_info(rpt_entry_standards)").fetchall()}
+        required_entries = {"id", "year_label", "subject", "sequence_no", "topic", "verified", "content_verified"}
+        required_standards = {"rpt_entry_id", "standard_type", "standard_code", "standard_text", "verified"}
+        if not required_entries.issubset(entry_columns) or not required_standards.issubset(standard_columns):
+            return result
+        entry_order = "id"
+        standard_order = ",".join(c for c in ("sequence_no", "id") if c in standard_columns) or "standard_code"
         if str(seq).isdigit():
             rows = con.execute(
-                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND sequence_no=? AND verified=1 AND content_verified=1 ORDER BY id LIMIT 2",
+                "SELECT * FROM rpt_entries WHERE year_label=? AND subject=? AND sequence_no=? AND verified=1 AND content_verified=1 ORDER BY " + entry_order + " LIMIT 2",
                 (year, subject, int(seq))).fetchall()
         else:
             rows = con.execute(
@@ -47,7 +57,7 @@ def enrich_pjpk_rph(selection, connect):
         cols = [d[0] for d in con.execute("SELECT * FROM rpt_entries LIMIT 0").description]
         r = dict(zip(cols, rows[0]))
         standards = con.execute(
-            "SELECT standard_type,standard_code,standard_text FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1 ORDER BY sequence_no,id",
+            "SELECT standard_type,standard_code,standard_text FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1 ORDER BY " + standard_order,
             (r["id"],)).fetchall()
         sk = [x for x in standards if x[0] == "SK" and str(x[2] or "").strip() and str(x[1] or "").strip()]
         sp = [x for x in standards if x[0] == "SP" and str(x[2] or "").strip() and str(x[1] or "").strip()]
