@@ -17,7 +17,8 @@ def enrich_pjpk_rph(selection, connect):
         year = "Tahun " + year
     if not re.fullmatch(r"Tahun [1-6]", year):
         return result
-    seq = result.get("rpt_sequence_no") or result.get("sequence_no") or result.get("lesson_no")
+    # lesson_no is a user-facing lesson index, not necessarily the DB RPT sequence.
+    seq = result.get("rpt_sequence_no") or result.get("sequence_no")
     topic = str(result.get("topic") or result.get("topic_title") or "").strip()
     if not (str(seq).isdigit() or topic):
         return result
@@ -58,6 +59,9 @@ def enrich_pjpk_rph(selection, connect):
             if not result.get(field) and r.get(field):
                 result[field] = r[field]
         result["_pjpk_rpt_source_id_v2659"] = r["id"]
+        result["_pjpk_verified_sp_codes_v2661"] = [str(x[1]) for x in sp]
+        result["_pjpk_verified_sk_codes_v2661"] = [str(x[1]) for x in sk]
+        result["_pjpk_multiple_sp_v2661"] = len(sp) > 1
         result["_pjpk_standards_complete_v2659"] = bool(result.get("sk_code") and result.get("sp_code") and result.get("sk_text") and result.get("sp_text"))
         return result
     except (sqlite3.Error, ValueError, TypeError, KeyError, AttributeError):
