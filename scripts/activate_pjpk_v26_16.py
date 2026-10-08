@@ -8,6 +8,7 @@ def install(g):
     subjects = (("🏃 Pendidikan Jasmani", "Pendidikan Jasmani"),
                 ("❤️ Pendidikan Kesihatan", "Pendidikan Kesihatan"))
     old_callback = g["callback"]
+    _rebuild_failed = [False]
     g["SUBJECTS"] = list(g["SUBJECTS"])
     for label, subject in subjects:
         if not any(value == subject for _, value in g["SUBJECTS"]):
@@ -22,13 +23,14 @@ def install(g):
 
     def database_path():
         path = Path(__file__).resolve().parents[1] / "CikguLaju_Curriculum_Master_v26_16_PJPK_SAFE_RELEASE.db"
-        if path.exists():
+        if path.exists() or _rebuild_failed[0]:
             return path
         # Rebuild from versioned parts without replacing existing databases.
         from scripts.rebuild_pm_pjpk_v26_16 import main as rebuild
         try:
             rebuild()
-        except (OSError, RuntimeError, SystemExit) as exc:
+        except (OSError, RuntimeError, SystemExit, ImportError, sqlite3.Error) as exc:
+            _rebuild_failed[0] = True
             print("PJPK v26.16 unavailable:", exc, flush=True)
         return path
 
@@ -101,10 +103,15 @@ def install(g):
                 return menu(cid)
             # Generic fallback is explicitly marked; do not reuse stale SK from a previous selection.
             ss["pjpk_generic_mode_v2616"] = True
-            for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes", "grouped_sk_codes", "grouped_sk_texts"):
+            for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes", "grouped_sk_codes", "grouped_sk_texts", "selected_sp", "sp_code", "sp_text", "selected_sp_codes", "grouped_sp_codes", "grouped_sp_texts"):
                 ss.pop(key, None)
             # Existing PM selection helper reads this cached row list.
             ss["_pm_pdp_rows_v2602"] = rows
-            return g["_pm_commit_pdp_v2602"](cid, rows.index(row))
+            result = g["_pm_commit_pdp_v2602"](cid, rows.index(row))
+            # Do not allow stale SK fields to survive the shared selection helper.
+            if not any(x["standard_type"] == "SK" for x in row["_std"]):
+                for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes", "grouped_sk_codes", "grouped_sk_texts"):
+                    ss.pop(key, None)
+            return result
         return old_callback(cid, d)
     g["callback"] = callback
