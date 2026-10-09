@@ -12565,7 +12565,7 @@ def _teacher_profile(cid):
 
 def _save_teacher_profile(cid, **fields):
     # Simpan hanya maklumat minimum yang diperlukan oleh fungsi produk.
-    allowed={'display_name','state_name','class_names','class_profiles'}
+    allowed={'display_name','state_name','class_names','class_profiles','school_name'}
     payload={'telegram_user_id':int(cid)}
     payload.update({k:v for k,v in fields.items() if k in allowed and v is not None})
     payload['updated_at']=datetime.now(timezone.utc).isoformat()
@@ -12595,6 +12595,7 @@ def _profile_text(cid):
         for r in class_rows
     ) if class_rows else '-'
     return (f'👤 <b>PROFIL CIKGU</b>\n\n'
+            f'Sekolah: <b>{html.escape(str(p.get("school_name") or "Belum diisi"))}</b>\n'
             f'Nama/Panggilan: <b>{html.escape(str(p.get("display_name") or "-"))}</b>\n'
             f'Negeri: <b>{html.escape(str(state_name))}</b>\n'
             f'Kumpulan: <b>{_profile_group(state_name) if state_name!="-" else "-"}</b>\n'
@@ -15992,7 +15993,12 @@ def webhook():
         cid = m['chat']['id']
         _upsert_user(m.get('from',{}), cid)
         txt=(m.get('text') or '').strip()
-        if txt == '/myid':
+        if txt == '/uasa_school':
+            state.setdefault(cid,{})['waiting']='uasa2717_school_name'
+            send(cid,'🏫 Sila taip nama penuh sekolah untuk profil UASA.')
+        elif txt and state.get(cid,{}).get('waiting') == 'uasa2717_school_name':
+            _uasa2717_receive_school(cid,txt)
+        elif txt == '/myid':
             send(cid,f'🆔 Telegram ID cikgu: <code>{cid}</code>')
         elif txt == '/access':
             send(cid,_user_access_text(cid),[[{'text':'💳 BAYAR RM5.00 / 30 HARI','callback_data':'subscribe_500'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
@@ -46067,6 +46073,61 @@ APP_VERSION = "v25.309-FREE-LOCAL-HEADER-FALLBACK"
 CIKGULAJU_PATCH_V25309 = "PERIOD_AND_TIME_HEADER_NORMALIZATION"
 # ===== END v25.309 =====
 
+# === v27.17 UASA school profile preflight (no automatic deployment) ===
+def _uasa2717_school_name(cid):
+    profile=_teacher_profile(cid) or {}
+    return str(profile.get('school_name') or '').strip()
+
+def _uasa2717_preflight(cid, selection, generate_callback):
+    """Invoke from the future verified UASA generate handler.
+    generate_callback(cid, selection, school_name) executes only when school exists.
+    """
+    school=_uasa2717_school_name(cid)
+    if school:
+        return generate_callback(cid, selection, school)
+    ss=state.setdefault(cid,{})
+    ss['_uasa2717_pending']=dict(selection)
+    ss['_uasa2718_resume']=generate_callback
+    ss['waiting']='uasa2717_school_name'
+    send(cid, '🏫 <b>MAKLUMAT SEKOLAH</b>\n\nSila taip nama penuh sekolah sebelum menjana kertas UASA. Maklumat ini akan disimpan dalam profil.')
+    return False
+
+def _uasa2717_receive_school(cid, raw):
+    ss=state.setdefault(cid,{})
+    name=' '.join(str(raw or '').split())
+    if not (4 <= len(name) <= 150) or name.startswith('/'):
+        send(cid,'⚠️ Masukkan nama penuh sekolah (4 hingga 150 aksara).')
+        return False
+    try:
+        saved=_save_teacher_profile(cid, school_name=name)
+    except Exception as e:
+        print('UASA school save failed:',repr(e),flush=True)
+        send(cid,'⚠️ Nama sekolah gagal disimpan. Cuba lagi selepas sambungan profil pulih.')
+        return False
+    if str((saved or {}).get('school_name') or '').strip()!=name:
+        send(cid,'⚠️ Nama sekolah belum dapat disahkan tersimpan. Sila cuba lagi.')
+        return False
+    ss.pop('waiting',None)
+    pending=ss.pop('_uasa2717_pending',None)
+    resume=ss.pop('_uasa2718_resume',None)
+    send(cid,'✅ Nama sekolah telah disimpan: <b>'+html.escape(name)+'</b>.')
+    if pending is not None and callable(resume):
+        try:
+            return resume(cid,pending,name)
+        except Exception as e:
+            print('UASA resume failed:',repr(e),flush=True)
+            send(cid,'⚠️ Maklumat sekolah telah disimpan, tetapi penjanaan UASA belum berjaya. Sila cuba lagi.')
+            return False
+    return True
+
+_callback_before_v2717=callback
+def callback(cid,d,*args,**kwargs):
+    if str(d or '')=='uasa2717_set_school':
+        state.setdefault(cid,{})['waiting']='uasa2717_school_name'
+        return send(cid,'🏫 Sila taip nama penuh sekolah untuk disimpan dalam profil.')
+    return _callback_before_v2717(cid,d,*args,**kwargs)
+# === END v27.17 ===
+
 # === v26.16 PJPK staging-only verified PdP activation ===
 try:
     from scripts.activate_pjpk_v26_16 import install as _pjpk_v2616_install
@@ -46076,3 +46137,9 @@ except Exception as _pjpk_v2616_error:
     CIKGULAJU_PJPK_V2616_STAGING_ACTIVE = False
     print('PJPK v26.16 staging fallback:', repr(_pjpk_v2616_error), flush=True)
 # === END v26.16 ===
+
+# === v27.18 UASA school-name integration safety ===
+# The full UASA exam generator is not present in this app version.
+# Do not pretend that /uasa_school produces an exam PDF.
+CIKGULAJU_UASA_SCHOOL_PROFILE_PATCH = 'v27.18'
+# === END v27.18 ===
