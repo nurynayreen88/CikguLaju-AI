@@ -46076,3 +46076,57 @@ except Exception as _pjpk_v2616_error:
     CIKGULAJU_PJPK_V2616_STAGING_ACTIVE = False
     print('PJPK v26.16 staging fallback:', repr(_pjpk_v2616_error), flush=True)
 # === END v26.16 ===
+
+
+# === v26.17 INTEGRATED SUBJECT DISCOVERY (SOURCE APP) ===
+# Wrapper is installed after the v26.16 PJPK staging installer, preserving its hooks.
+# These are discovery-only choices; no unverified subject enters RPH generation.
+_CIKGULAJU_DEV_SUBJECTS_V2617 = {
+    'Pendidikan Jasmani dan Pendidikan Kesihatan': (1,2,3,4,5,6),
+    'Reka Bentuk dan Teknologi': (4,5,6),
+    'Pendidikan Seni Visual': (1,2,3,4,5,6),
+    'Pendidikan Muzik': (1,2,3,4,5,6),
+    'Bahasa Arab': (1,2,3,4,5,6),
+    'Sejarah': (4,5,6),
+}
+_CIKGULAJU_SUBJECTS_PREV_V2617 = subjects
+_CIKGULAJU_CALLBACK_PREV_V2617 = callback
+
+def subjects(cid, label):
+    if not str(label or '').startswith('Tahun '):
+        return _CIKGULAJU_SUBJECTS_PREV_V2617(cid, label)
+    try:
+        yr = int(str(label).split()[-1])
+    except (ValueError, IndexError):
+        return _CIKGULAJU_SUBJECTS_PREV_V2617(cid, label)
+    state.setdefault(cid,{})['year'] = label
+    existing = list(SUBJECTS_BY_GRADE.get(label, ()) or ())
+    buttons = [{'text':SUBJECT_LABEL.get(x,x), 'callback_data':'sub_'+x} for x in existing]
+    for name, years in _CIKGULAJU_DEV_SUBJECTS_V2617.items():
+        if yr in years and name not in existing:
+            buttons.append({'text':'🚧 '+name+' (Dalam Pembangunan)',
+                            'callback_data':'devsub2617_'+name})
+    kb = [buttons[i:i+2] for i in range(0,len(buttons),2)]
+    kb.extend([[{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}],
+               [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    return send(cid,'📘 <b>'+label+'</b>\n\nPilih subjek. 🚧 = Dalam Pembangunan; janaan belum dibuka.',kb)
+
+def callback(cid,d):
+    ds = str(d or '')
+    if ds.startswith('devsub2617_'):
+        name = ds[len('devsub2617_'):]
+        yl = str(state.setdefault(cid,{}).get('year') or '')
+        try:
+            yr = int(yl.split()[-1]) if yl.startswith('Tahun ') else -1
+        except (ValueError,IndexError):
+            yr = -1
+        if name in _CIKGULAJU_DEV_SUBJECTS_V2617 and yr in _CIKGULAJU_DEV_SUBJECTS_V2617[name]:
+            return send(cid,'🚧 <b>'+name+'</b> — Dalam Pembangunan.\n\nBahan kurikulum sedang dilengkapkan. Janaan RPH belum diaktifkan untuk pilihan ini.',
+                        [[{'text':'⬅️ Pilih Subjek','callback_data':'back_subjects'}],
+                         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        return send(cid,'⚠️ Pilihan tidak sah. Sila pilih semula tahun dan subjek.',
+                    [[{'text':'⬅️ Pilih Tahun','callback_data':'choose_grade'}]])
+    return _CIKGULAJU_CALLBACK_PREV_V2617(cid,d)
+
+CIKGULAJU_PATCH_V2617 = 'SK_SUBJECT_MENU_FAIL_CLOSED_INTEGRATED'
+# === END v26.17 ===
