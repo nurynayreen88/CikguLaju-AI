@@ -46082,7 +46082,6 @@ except Exception as _pjpk_v2616_error:
 # Wrapper is installed after the v26.16 PJPK staging installer, preserving its hooks.
 # These are discovery-only choices; no unverified subject enters RPH generation.
 _CIKGULAJU_DEV_SUBJECTS_V2617 = {
-    'Pendidikan Jasmani dan Pendidikan Kesihatan': (1,2,3,4,5,6),
     'Reka Bentuk dan Teknologi': (4,5,6),
     'Pendidikan Seni Visual': (1,2,3,4,5,6),
     'Pendidikan Muzik': (1,2,3,4,5,6),
