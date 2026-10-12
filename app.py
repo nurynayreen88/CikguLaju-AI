@@ -46076,3 +46076,86 @@ except Exception as _pjpk_v2616_error:
     CIKGULAJU_PJPK_V2616_STAGING_ACTIVE = False
     print('PJPK v26.16 staging fallback:', repr(_pjpk_v2616_error), flush=True)
 # === END v26.16 ===
+
+
+# === v26.17 INTEGRATED SUBJECT DISCOVERY (SOURCE APP) ===
+# Wrapper is installed after the v26.16 PJPK staging installer, preserving its hooks.
+# These are discovery-only choices; no unverified subject enters RPH generation.
+_CIKGULAJU_DEV_SUBJECTS_V2617 = {
+    'Reka Bentuk dan Teknologi': (4,5,6),
+    'Pendidikan Seni Visual': (1,2,3,4,5,6),
+    'Pendidikan Muzik': (1,2,3,4,5,6),
+    'Bahasa Arab': (1,2,3,4,5,6),
+    'Sejarah': (4,5,6),
+}
+_CIKGULAJU_SUBJECTS_PREV_V2617 = subjects
+_CIKGULAJU_CALLBACK_PREV_V2617 = callback
+
+def subjects(cid, label):
+    if not str(label or '').startswith('Tahun '):
+        return _CIKGULAJU_SUBJECTS_PREV_V2617(cid, label)
+    try:
+        yr = int(str(label).split()[-1])
+    except (ValueError, IndexError):
+        return _CIKGULAJU_SUBJECTS_PREV_V2617(cid, label)
+    state.setdefault(cid,{})['year'] = label
+    existing = list(SUBJECTS_BY_GRADE.get(label, ()) or ())
+    buttons = [{'text':SUBJECT_LABEL.get(x,x), 'callback_data':'sub_'+x} for x in existing]
+    for name, years in _CIKGULAJU_DEV_SUBJECTS_V2617.items():
+        if yr in years and name not in existing:
+            buttons.append({'text':'🚧 '+name+' (Dalam Pembangunan)',
+                            'callback_data':'devsub2617_'+name})
+    kb = [buttons[i:i+2] for i in range(0,len(buttons),2)]
+    kb.extend([[{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}],
+               [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+    return send(cid,'📘 <b>'+label+'</b>\n\nPilih subjek. 🚧 = Dalam Pembangunan; janaan belum dibuka.',kb)
+
+def callback(cid,d):
+    ds = str(d or '')
+    if ds.startswith('devsub2617_'):
+        name = ds[len('devsub2617_'):]
+        yl = str(state.setdefault(cid,{}).get('year') or '')
+        try:
+            yr = int(yl.split()[-1]) if yl.startswith('Tahun ') else -1
+        except (ValueError,IndexError):
+            yr = -1
+        if name in _CIKGULAJU_DEV_SUBJECTS_V2617 and yr in _CIKGULAJU_DEV_SUBJECTS_V2617[name]:
+            return send(cid,'🚧 <b>'+name+'</b> — Dalam Pembangunan.\n\nBahan kurikulum sedang dilengkapkan. Janaan RPH belum diaktifkan untuk pilihan ini.',
+                        [[{'text':'⬅️ Pilih Subjek','callback_data':'back_subjects'}],
+                         [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+        return send(cid,'⚠️ Pilihan tidak sah. Sila pilih semula tahun dan subjek.',
+                    [[{'text':'⬅️ Pilih Tahun','callback_data':'choose_grade'}]])
+    return _CIKGULAJU_CALLBACK_PREV_V2617(cid,d)
+
+CIKGULAJU_PATCH_V2617 = 'SK_SUBJECT_MENU_FAIL_CLOSED_INTEGRATED'
+# === END v26.17 ===
+
+
+# === v26.18 PJPK YEAR 3 READ-ONLY EDITORIAL PREVIEW BRIDGE ===
+# Separate, opt-in admin/test bridge. No Telegram menu/callback overrides, no
+# changes to production curriculum DB, and no production RPH unlock.
+CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ENABLED = False
+CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ERROR = ''
+def cikgulaju_pjpk_t3_editorial_preview(subject, scope_key, mode='preview'):
+    """Internal-only: requires explicit env opt-in and separate candidate DB."""
+    if mode != 'preview':
+        raise ValueError('PJPK T3 production is BLOCKED pending source/teacher review')
+    if not CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ENABLED:
+        raise ValueError('PJPK T3 editorial preview bridge is disabled')
+    return _cikgulaju_pjpk_t3_adapter.generate_preview(
+        _cikgulaju_pjpk_t3_candidate_db, subject, scope_key, mode='preview')
+def cikgulaju_pjpk_t3_editorial_options(subject):
+    if not CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ENABLED:
+        return []
+    return _cikgulaju_pjpk_t3_adapter.list_options(_cikgulaju_pjpk_t3_candidate_db, subject)
+try:
+    if os.getenv('CIKGULAJU_PJPK_T3_EDITORIAL_PREVIEW', '0').strip() == '1':
+        import pjpk_t3_safe_preview_adapter as _cikgulaju_pjpk_t3_adapter
+        _cikgulaju_pjpk_t3_candidate_db = os.getenv('CIKGULAJU_PJPK_T3_CANDIDATE_DB', '').strip()
+        if not _cikgulaju_pjpk_t3_candidate_db or not os.path.isfile(_cikgulaju_pjpk_t3_candidate_db):
+            raise RuntimeError('Separate PJPK T3 candidate DB is required; production DB is not a fallback')
+        CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ENABLED = True
+except Exception as _cikgulaju_pjpk_t3_bridge_exc:
+    CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ERROR = repr(_cikgulaju_pjpk_t3_bridge_exc)
+    CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ENABLED = False
+# === END v26.18 ===
