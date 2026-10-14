@@ -15970,15 +15970,22 @@ def webhook():
             print('answerCallbackQuery error:', repr(e), flush=True)
 
         cid = c['message']['chat']['id']
-        _upsert_user(c.get('from',{}), cid)
+        # Fast navigation: do not block the webhook on remote identity sync.
+        # /start already registers the user; keep the existing sync for other callbacks.
+        data = c.get('data','')
+        _fast_nav = data in ('quick', 'choose_grade')
+        if not _fast_nav:
+            _upsert_user(c.get('from',{}), cid)
         # Remember the message that owns the inline keyboard so multi-select menus
         # can be updated in place instead of sending another message on each tap.
         state.setdefault(cid,{})['_callback_message_id'] = c.get('message',{}).get('message_id')
-        data = c.get('data','')
         # Return HTTP 200 immediately; long work continues in background.
         def _safe_callback():
+            import time as _nav_time
+            _started = _nav_time.monotonic()
             try:
                 callback(cid, data)
+                print('CALLBACK TIMING:', data, 'seconds=', round(_nav_time.monotonic()-_started, 3), flush=True)
             except Exception as e:
                 print('CALLBACK ERROR:',data,repr(e),flush=True)
                 try:
@@ -15986,6 +15993,13 @@ def webhook():
                 except Exception:
                     pass
         threading.Thread(target=_safe_callback, daemon=True).start()
+        if _fast_nav:
+            def _nav_identity_sync():
+                try:
+                    _upsert_user(c.get('from',{}), cid)
+                except Exception as e:
+                    print('NAV IDENTITY SYNC ERROR:', repr(e), flush=True)
+            threading.Thread(target=_nav_identity_sync, daemon=True).start()
 
     elif 'message' in u:
         m = u['message']
