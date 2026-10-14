@@ -44818,7 +44818,10 @@ def _gemini_timetable_extract_v25281(data,mime):
 TUGAS:
 1. Kenal pasti orientasi jadual: hari pada baris atau lajur, dan masa/period pada paksi yang satu lagi.
 2. Baca SEMUA header masa/period. Jika jadual memberi masa mula/akhir pada header, gunakan masa itu untuk setiap sel di bawah/bersebelahan dengannya.
-3. Fahami sel bergabung: satu subjek/kelas yang merentasi 2 period mesti menjadi SATU slot dengan start period pertama dan end period terakhir.
+3. Fahami SEL BERGABUNG secara geometri: sempadan kiri/atas sel ialah permulaan period pertama dan sempadan kanan/bawah ialah penghujung period TERAKHIR yang diliputi sel itu. Jangan berhenti pada period pertama jika blok berterusan ke period berikutnya.
+3A. Contoh WAJIB: header period 13:00–13:30 dan 13:30–14:00; jika SATU blok subjek/kelas merentasi kedua-duanya, pulangkan start 13:00 dan end 14:00, BUKAN end 13:30. Jika blok hanya memenuhi period pertama, barulah end 13:30.
+3B. Bina senarai semua period beserta mula/tamat daripada header dahulu. Untuk setiap blok, kenal pasti SEMUA period yang disentuh sehingga sempadan akhir blok. Gunakan end period terakhir, bukan nilai di header period pertama. Jangan gandakan satu blok menjadi dua entri.
+3C. Sebelum memulangkan JSON, audit setiap entri: bandingkan tempoh end-start dengan bilangan period yang direntasi blok; jika 2 period masing-masing 30 minit, tempoh wajib 60 minit. Jika sempadan tidak jelas, letakkan dalam uncertain dan jangan memendekkan slot secara andaian.
 4. Dalam setiap sel mengajar, bezakan NAMA SUBJEK dan NAMA KELAS berdasarkan teks/label yang benar-benar kelihatan. Jangan tukar kelas menjadi subjek atau sebaliknya.
 5. Kekalkan singkatan yang benar-benar tertera jika nama penuh tidak pasti. JANGAN meneka pengembangan singkatan.
 6. Abaikan REHAT, PERHIMPUNAN, KOKURIKULUM, FREE, kosong, cuti atau aktiviti bukan waktu mengajar kecuali sel itu jelas menunjukkan subjek + kelas.
