@@ -15973,7 +15973,7 @@ def webhook():
         # Fast navigation: do not block the webhook on remote identity sync.
         # /start already registers the user; keep the existing sync for other callbacks.
         data = c.get('data','')
-        _fast_nav = data in ('quick', 'choose_grade')
+        _fast_nav = data in ('quick', 'choose_grade', 'home')
         if not _fast_nav:
             _upsert_user(c.get('from',{}), cid)
         # Remember the message that owns the inline keyboard so multi-select menus
@@ -46143,3 +46143,85 @@ def callback(cid,d):
 
 CIKGULAJU_PATCH_V2617 = 'SK_SUBJECT_MENU_FAIL_CLOSED_INTEGRATED'
 # === END v26.17 ===
+
+# ===== v25.310 OPT-IN GEMINI TIMETABLE ONLY (NO DB WRITE BEFORE REVIEW) =====
+TT_READER_ALLOW_GEMINI = bool(os.getenv('TT_READER_ALLOW_GEMINI', '1').strip().lower() in ('1','true','yes','on'))
+TT_READER_ALLOW_CLOUD_AI = TT_READER_ALLOW_GEMINI
+TT_READER_FREE_ONLY = not TT_READER_ALLOW_GEMINI
+def _tt_gemini_visual_extract_v25310(data,mime):
+    import base64, json as _json
+    prompt="""Anda ialah pembaca JADUAL WAKTU GURU sekolah Malaysia. Baca imej/PDF secara visual dan teliti struktur jadual SEBELUM mengekstrak slot.
+
+TUGAS:
+1. Kenal pasti orientasi jadual: hari pada baris atau lajur, dan masa/period pada paksi yang satu lagi.
+2. Baca SEMUA header masa/period. Jika jadual memberi masa mula/akhir pada header, gunakan masa itu untuk setiap sel di bawah/bersebelahan dengannya.
+3. Fahami sel bergabung: satu subjek/kelas yang merentasi 2 period mesti menjadi SATU slot dengan start period pertama dan end period terakhir.
+4. Dalam setiap sel mengajar, bezakan NAMA SUBJEK dan NAMA KELAS berdasarkan teks/label yang benar-benar kelihatan. Jangan tukar kelas menjadi subjek atau sebaliknya.
+5. Kekalkan singkatan yang benar-benar tertera jika nama penuh tidak pasti. JANGAN meneka pengembangan singkatan.
+6. Abaikan REHAT, PERHIMPUNAN, KOKURIKULUM, FREE, kosong, cuti atau aktiviti bukan waktu mengajar kecuali sel itu jelas menunjukkan subjek + kelas.
+7. Jangan cipta slot daripada teks kabur. Jika salah satu day/start/end/class_name/subject tidak dapat dipastikan, masukkan dalam uncertain, BUKAN entries.
+8. Semak semula bahawa setiap masa tamat lebih lewat daripada masa mula dan slot berada pada hari yang betul.
+9. Jika terdapat lebih daripada satu jadual/halaman, ekstrak hanya jadual waktu guru yang jelas; jangan campur legenda atau jadual lain.
+
+Pulangkan JSON tulen sahaja dalam format tepat ini:
+{"entries":[{"day":"Isnin","start":"07:40","end":"08:40","class_name":"3 Amanah","subject":"Matematik"}],"uncertain":[],"notes":""}
+
+day hanya: Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu, Ahad.
+Masa wajib format 24 jam HH:MM. Jangan guna markdown. Jangan reka data."""
+    models=[]
+    for model in [GEMINI_MODEL]+list(GEMINI_FALLBACK_MODELS or []):
+        if model and model not in models: models.append(model)
+    last=None
+    for model in models[:2]:
+        try:
+            url=f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
+            payload={
+                'contents':[{'role':'user','parts':[{'text':prompt},{'inline_data':{'mime_type':mime,'data':base64.b64encode(data).decode('ascii')}}]}],
+                'generationConfig':{'temperature':0.0,'maxOutputTokens':7000,'responseMimeType':'application/json'}
+            }
+            r=requests.post(url,headers={'Content-Type':'application/json','x-goog-api-key':GEMINI_API_KEY},json=payload,timeout=(10,min(int(GEMINI_TIMEOUT or 90),45)))
+            if not r.ok:
+                last=f'Gemini HTTP {r.status_code}: {(r.text or "")[:180]}'; continue
+            parts=((r.json().get('candidates') or [{}])[0].get('content') or {}).get('parts') or []
+            raw=''.join(str(x.get('text') or '') for x in parts).strip()
+            raw=re.sub(r'^```(?:json)?\s*|\s*```$','',raw,flags=re.I|re.S).strip()
+            obj=_json.loads(raw)
+            entries=obj.get('entries') if isinstance(obj,dict) else obj
+            if not isinstance(entries,list):
+                last='Respons reader tiada senarai entries'; continue
+            return entries
+        except Exception as e:
+            last=str(e)
+    raise RuntimeError(last or 'Jadual tidak dapat dibaca.')
+
+_TT310_PREVIOUS_UPLOAD_HANDLER = _handle_timetable_upload_v25281
+def _handle_timetable_upload_v25281(cid, m):
+    # The timetable-only Gemini path; all other AI/RPH paths are unchanged.
+    if not TT_READER_ALLOW_GEMINI:
+        return _TT310_PREVIOUS_UPLOAD_HANDLER(cid, m)
+    try:
+        if not GEMINI_API_KEY:
+            raise RuntimeError('GEMINI_API_KEY belum ditetapkan di Render.')
+        send(cid, '🔎 <b>Sedang membaca jadual waktu menggunakan Gemini…</b>\nJadual lama belum diubah.')
+        data, mime = _telegram_media_bytes_v25281(m)
+        if not data:
+            raise RuntimeError('Fail jadual kosong.')
+        raw = _tt_gemini_visual_extract_v25310(data, mime)
+        draft = _tt286_normalize_raw_entries(raw)
+        if not draft:
+            raise RuntimeError('Gemini tidak menemui slot lengkap yang boleh disahkan.')
+        ss = state.setdefault(cid, {})
+        ss['_tt286_raw_draft'] = draft
+        ss.pop('_tt_upload_draft_v25281', None)
+        ss.pop('_tt_upload_unmatched_v25281', None)
+        ss.pop('waiting', None)
+        return _tt286_show_class_confirmation(cid)
+    except Exception as e:
+        print('v25.310 timetable Gemini error:', repr(e), flush=True)
+        state.setdefault(cid, {})['waiting'] = 'timetable_upload_v25281'
+        return send(cid, '⚠️ Gemini belum berjaya membaca jadual dengan yakin. <b>Jadual lama tidak diubah.</b>\n\n' + html.escape(str(e))[:350],
+            [[{'text':'🔄 Cuba Upload Lagi','callback_data':'ttupload281_start'}],
+             [{'text':'✏️ Isi Manual','callback_data':'tt_add'}, {'text':'⬅️ Kembali','callback_data':'timetable'}],
+             [{'text':'🏠 Menu Utama','callback_data':'home'}]])
+CIKGULAJU_PATCH_V25310 = 'GEMINI_TIMETABLE_ONLY_REVIEW_BEFORE_COMMIT'
+# ===== END v25.310 =====
