@@ -46227,4 +46227,143 @@ def _handle_timetable_upload_v25281(cid, m):
              [{'text':'✏️ Isi Manual','callback_data':'tt_add'}, {'text':'⬅️ Kembali','callback_data':'timetable'}],
              [{'text':'🏠 Menu Utama','callback_data':'home'}]])
 CIKGULAJU_PATCH_V25310 = 'GEMINI_TIMETABLE_ONLY_REVIEW_BEFORE_COMMIT'
-# ===== END v25.310 =====
+# ===== END v25.310 =====\n\n
+# ===== v25.311 CLEAR ALL TIMETABLE ENTRIES (CONFIRMATION REQUIRED) =====
+_TT311_PREVIOUS_MENU = _timetable_menu
+def _timetable_menu(cid, note=''):
+    rows = _timetable_entries(cid)
+    lines = ['📅 <b>JADUAL WAKTU SAYA</b>', '']
+    if rows:
+        current = None
+        for e in rows:
+            if e['day'] != current:
+                current = e['day']
+                lines.append(f'<b>{html.escape(current)}</b>')
+            lines.append(f"• {html.escape(e['start'])}–{html.escape(e['end'])}  "
+                         f"{html.escape(e['class_name'])}  •  {html.escape(e['subject'])}")
+    else:
+        lines.append('Belum ada jadual disimpan. Cikgu boleh upload jadual atau isi secara manual.')
+    if note:
+        lines.insert(0, note + '\\n')
+    kb = [[{'text':'📤 Upload Jadual Waktu', 'callback_data':'ttupload281_start'}],
+          [{'text':'➕ Isi / Tambah Manual', 'callback_data':'tt_add'}]]
+    if rows:
+        kb.extend([[{'text':'🗑️ Padam Waktu', 'callback_data':'tt_delete'}],
+                   [{'text':'🧹 Kosongkan Semua Jadual', 'callback_data':'tt311_clear_ask'}]])
+    kb.extend([[{'text':'⬅️ Akaun & Profil', 'callback_data':'account'}],
+               [{'text':'🏠 Menu Utama', 'callback_data':'home'}]])
+    return send(cid, '\\n'.join(lines), kb)
+
+_TT311_PREVIOUS_CALLBACK = callback
+def callback(cid, d):
+    ds = str(d or '')
+    if ds == 'tt311_clear_ask':
+        n = len(_timetable_entries(cid))
+        if not n:
+            return _timetable_menu(cid, 'ℹ️ Tiada rekod jadual untuk dikosongkan.')
+        return send(cid,
+            f'⚠️ <b>Kosongkan semua {n} slot jadual waktu?</b>\\n\\n'
+            'Tindakan ini memadam semua slot jadual waktu yang disimpan untuk akaun ini. '
+            'Nama kelas, bilangan murid, subjek, kemajuan RPH dan DB kurikulum tidak dipadam.',
+            [[{'text':'Ya, kosongkan semua jadual', 'callback_data':'tt311_clear_confirm'}],
+             [{'text':'❌ Batal', 'callback_data':'timetable'}]])
+    if ds == 'tt311_clear_confirm':
+        try:
+            rows = _profile_class_records(cid)
+            if not rows:
+                return _timetable_menu(cid, 'ℹ️ Tiada jadual untuk dikosongkan.')
+            changed = sum(len(r.get('timetable') or []) for r in rows)
+            if not changed:
+                return _timetable_menu(cid, 'ℹ️ Semua jadual sudah kosong.')
+            for r in rows:
+                r['timetable'] = []
+            _save_profile_class_records(cid, rows)
+            remaining = _timetable_entries(cid)
+            if remaining:
+                raise RuntimeError(f'{len(remaining)} slot masih wujud selepas simpan.')
+            ss = state.setdefault(cid, {})
+            for key in ('_tt286_raw_draft', '_tt286_edit_old', '_tt_upload_draft_v25281',
+                        '_tt_upload_unmatched_v25281'):
+                ss.pop(key, None)
+            print('TT311 CLEAR SUCCESS slots=', changed, flush=True)
+            return _timetable_menu(cid, f'✅ {changed} slot jadual waktu telah dikosongkan.')
+        except Exception as e:
+            print('TT311 CLEAR ERROR:', repr(e), flush=True)
+            return send(cid, '⚠️ Tidak dapat mengesahkan jadual telah dikosongkan. '
+                            'Sila semak semula; rekod kelas tidak dipadam.',
+                            [[{'text':'📅 Lihat Jadual', 'callback_data':'timetable'}]])
+    return _TT311_PREVIOUS_CALLBACK(cid, d)
+CIKGULAJU_PATCH_V25311 = 'CONFIRMED_CLEAR_TIMETABLE_ONLY'
+# ===== END v25.311 =====\n\n
+# ===== v25.312 CONFIRMED DELETE ALL PROFILE CLASSES =====
+_TT312_PREVIOUS_CLASS_MENU = _profile_class_manage_menu
+def _profile_class_manage_menu(cid, note=''):
+    rows = _profile_class_records(cid)
+    kb = []
+    for i, r in enumerate(rows[:20]):
+        label = '🏫 ' + r['name']
+        label += (f" • {r['students']} murid" if r.get('students') else ' • bilangan belum diisi')
+        kb.append([{'text': label, 'callback_data': f'profclass_item_{i}'}])
+    kb.append([{'text':'➕ Tambah Kelas','callback_data':'profclass_add'}])
+    if rows:
+        kb.append([{'text':'🗑️ PADAM SEMUA KELAS','callback_data':'tt312_classes_ask'}])
+    kb.append([{'text':'⬅️ Kemaskini Profil','callback_data':'profedit_menu'}])
+    msg = '🏫 <b>Urus Kelas</b>\\n\\nPilih kelas untuk ubah nama, bilangan murid atau padam.'
+    if not rows:
+        msg = '🏫 <b>Urus Kelas</b>\\n\\nBelum ada kelas disimpan. Tekan <b>Tambah Kelas</b>.'
+    if note:
+        msg = note + '\\n\\n' + msg
+    return send(cid, msg, kb)
+
+_TT312_PREVIOUS_CALLBACK = callback
+def callback(cid, d):
+    ds = str(d or '')
+    if ds == 'tt312_classes_ask':
+        rows = _profile_class_records(cid)
+        if not rows:
+            return _profile_class_manage_menu(cid, 'ℹ️ Tiada kelas untuk dipadam.')
+        state.setdefault(cid, {})['_tt312_confirm_names'] = [r['name'] for r in rows]
+        return send(cid,
+            f'⚠️ <b>Padam SEMUA {len(rows)} kelas daripada profil?</b>\\n\\n'
+            'Ini juga membuang jadual waktu dan rekod kemajuan RPH yang tersimpan '
+            'di dalam rekod kelas tersebut. DB kurikulum, kredit dan akaun tidak dipadam. '
+            'Tindakan ini tidak boleh dibuat asal secara automatik.',
+            [[{'text':'🗑️ YA, PADAM SEMUA KELAS','callback_data':'tt312_classes_confirm'}],
+             [{'text':'❌ Batal','callback_data':'profclass_manage'}]])
+    if ds == 'tt312_classes_confirm':
+        ss = state.setdefault(cid, {})
+        expected = ss.pop('_tt312_confirm_names', None)
+        if expected is None:
+            return _profile_class_manage_menu(cid, '⚠️ Pengesahan tamat. Sila cuba semula.')
+        try:
+            rows = _profile_class_records(cid)
+            if [r['name'] for r in rows] != expected:
+                return _profile_class_manage_menu(cid, '⚠️ Senarai kelas telah berubah. Sila sahkan semula.')
+            # Supabase is authoritative; explicitly clear both fields, not an empty-value fallback.
+            _save_profile_class_records(cid, [])
+            profile = _teacher_profile(cid) or {}
+            raw = profile.get('class_profiles')
+            names = profile.get('class_names')
+            if raw not in ([], '[]', None) or names not in ([], '{}', None):
+                raise RuntimeError('Supabase belum mengesahkan senarai kelas kosong.')
+            # Remove only this user's obsolete legacy class mirror, preventing re-migration.
+            con = _db()
+            try:
+                con.execute('DELETE FROM teacher_profile_classes WHERE chat_id=?', (str(cid),))
+                con.commit()
+            finally:
+                con.close()
+            for key in ('profile_class_idx', '_tt286_raw_draft', '_tt286_edit_old',
+                        '_tt_upload_draft_v25281', '_tt_upload_unmatched_v25281'):
+                ss.pop(key, None)
+            if _profile_class_records(cid):
+                raise RuntimeError('Senarai kelas masih tidak kosong selepas padam.')
+            print('TT312 DELETE ALL CLASSES SUCCESS count=', len(expected), flush=True)
+            return _profile_class_manage_menu(cid, f'✅ Semua {len(expected)} kelas telah dipadam.')
+        except Exception as e:
+            print('TT312 DELETE ALL CLASSES ERROR:', repr(e), flush=True)
+            return send(cid, '⚠️ Pengosongan kelas belum dapat disahkan. Sila semak Urus Kelas.',
+                        [[{'text':'🏫 Urus Kelas','callback_data':'profclass_manage'}]])
+    return _TT312_PREVIOUS_CALLBACK(cid, d)
+CIKGULAJU_PATCH_V25312 = 'CONFIRMED_DELETE_ALL_CLASSES'
+# ===== END v25.312 =====
