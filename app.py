@@ -46244,7 +46244,7 @@ def _timetable_menu(cid, note=''):
     else:
         lines.append('Belum ada jadual disimpan. Cikgu boleh upload jadual atau isi secara manual.')
     if note:
-        lines.insert(0, note + '\\n')
+        lines.insert(0, note + '\n')
     kb = [[{'text':'📤 Upload Jadual Waktu', 'callback_data':'ttupload281_start'}],
           [{'text':'➕ Isi / Tambah Manual', 'callback_data':'tt_add'}]]
     if rows:
@@ -46252,7 +46252,7 @@ def _timetable_menu(cid, note=''):
                    [{'text':'🧹 Kosongkan Semua Jadual', 'callback_data':'tt311_clear_ask'}]])
     kb.extend([[{'text':'⬅️ Akaun & Profil', 'callback_data':'account'}],
                [{'text':'🏠 Menu Utama', 'callback_data':'home'}]])
-    return send(cid, '\\n'.join(lines), kb)
+    return send(cid, '\n'.join(lines), kb)
 
 _TT311_PREVIOUS_CALLBACK = callback
 def callback(cid, d):
@@ -46262,7 +46262,7 @@ def callback(cid, d):
         if not n:
             return _timetable_menu(cid, 'ℹ️ Tiada rekod jadual untuk dikosongkan.')
         return send(cid,
-            f'⚠️ <b>Kosongkan semua {n} slot jadual waktu?</b>\\n\\n'
+            f'⚠️ <b>Kosongkan semua {n} slot jadual waktu?</b>\n\n'
             'Tindakan ini memadam semua slot jadual waktu yang disimpan untuk akaun ini. '
             'Nama kelas, bilangan murid, subjek, kemajuan RPH dan DB kurikulum tidak dipadam.',
             [[{'text':'Ya, kosongkan semua jadual', 'callback_data':'tt311_clear_confirm'}],
@@ -46294,26 +46294,32 @@ def callback(cid, d):
                             [[{'text':'📅 Lihat Jadual', 'callback_data':'timetable'}]])
     return _TT311_PREVIOUS_CALLBACK(cid, d)
 CIKGULAJU_PATCH_V25311 = 'CONFIRMED_CLEAR_TIMETABLE_ONLY'
-# ===== END v25.311 =====\n\n
+# ===== END v25.311 =====
+
+
 # ===== v25.312 CONFIRMED DELETE ALL PROFILE CLASSES =====
 _TT312_PREVIOUS_CLASS_MENU = _profile_class_manage_menu
 def _profile_class_manage_menu(cid, note=''):
     rows = _profile_class_records(cid)
     kb = []
     for i, r in enumerate(rows[:20]):
-        label = '🏫 ' + r['name']
-        label += (f" • {r['students']} murid" if r.get('students') else ' • bilangan belum diisi')
-        kb.append([{'text': label, 'callback_data': f'profclass_item_{i}'}])
+        level = str(r.get('year_label') or '').strip()
+        subjects = list(r.get('subjects') or [])
+        meta = []
+        if level: meta.append(level)
+        if r.get('students'): meta.append(f"{r['students']} murid")
+        if subjects: meta.append(f"{len(subjects)} subjek")
+        label = '🏫 ' + str(r.get('name') or '')
+        if meta: label += ' • ' + ' • '.join(meta)
+        kb.append([{'text': label[:60], 'callback_data': f'profclass_item_{i}'}])
     kb.append([{'text':'➕ Tambah Kelas','callback_data':'profclass_add'}])
     if rows:
         kb.append([{'text':'🗑️ PADAM SEMUA KELAS','callback_data':'tt312_classes_ask'}])
     kb.append([{'text':'⬅️ Kemaskini Profil','callback_data':'profedit_menu'}])
-    msg = '🏫 <b>Urus Kelas</b>\\n\\nPilih kelas untuk ubah nama, bilangan murid atau padam.'
-    if not rows:
-        msg = '🏫 <b>Urus Kelas</b>\\n\\nBelum ada kelas disimpan. Tekan <b>Tambah Kelas</b>.'
-    if note:
-        msg = note + '\\n\\n' + msg
-    return send(cid, msg, kb)
+    msg = '🏫 <b>Urus Kelas</b>\n\nPilih kelas untuk urus tahun/tingkatan, subjek, bilangan murid atau jadual.'
+    if note: msg = note + '\n\n' + msg
+    if not rows: msg = '🏫 <b>Urus Kelas</b>\n\nBelum ada kelas disimpan. Tekan <b>Tambah Kelas</b>.'
+    return send(cid,msg,kb)
 
 _TT312_PREVIOUS_CALLBACK = callback
 def callback(cid, d):
@@ -46324,7 +46330,7 @@ def callback(cid, d):
             return _profile_class_manage_menu(cid, 'ℹ️ Tiada kelas untuk dipadam.')
         state.setdefault(cid, {})['_tt312_confirm_names'] = [r['name'] for r in rows]
         return send(cid,
-            f'⚠️ <b>Padam SEMUA {len(rows)} kelas daripada profil?</b>\\n\\n'
+            f'⚠️ <b>Padam SEMUA {len(rows)} kelas daripada profil?</b>\n\n'
             'Ini juga membuang jadual waktu dan rekod kemajuan RPH yang tersimpan '
             'di dalam rekod kelas tersebut. DB kurikulum, kredit dan akaun tidak dipadam. '
             'Tindakan ini tidak boleh dibuat asal secara automatik.',
