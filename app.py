@@ -46152,25 +46152,18 @@ TT_READER_ALLOW_GEMINI = bool(os.getenv('TT_READER_ALLOW_GEMINI', '1').strip().l
 TT_READER_ALLOW_CLOUD_AI = TT_READER_ALLOW_GEMINI
 TT_READER_FREE_ONLY = not TT_READER_ALLOW_GEMINI
 def _tt_gemini_visual_extract_v25310(data,mime):
+    """Read arbitrary timetable layouts. Resolve times from period boundaries in Python."""
     import base64, json as _json
-    prompt="""Anda ialah pembaca JADUAL WAKTU GURU sekolah Malaysia. Baca imej/PDF secara visual dan teliti struktur jadual SEBELUM mengekstrak slot.
+    prompt="""Baca JADUAL WAKTU GURU Malaysia daripada imej/PDF. Pulangkan JSON sahaja.
+Kenal pasti dahulu orientasi hari (baris/lajur), semua header masa, dan petak jadual.
+Jadual boleh mempunyai header masa mula dan tamat, atau nombor period dan julat masa kecil di bawahnya.
+Masa boleh tidak seragam; jangan andaikan setiap period 30 minit. Rehat boleh satu lajur menegak atau berbeza mengikut hari.
 
-TUGAS:
-1. Kenal pasti orientasi jadual: hari pada baris atau lajur, dan masa/period pada paksi yang satu lagi.
-2. Baca SEMUA header masa/period. Jika jadual memberi masa mula/akhir pada header, gunakan masa itu untuk setiap sel di bawah/bersebelahan dengannya.
-3. Fahami sel bergabung: satu subjek/kelas yang merentasi 2 period mesti menjadi SATU slot dengan start period pertama dan end period terakhir.
-4. Dalam setiap sel mengajar, bezakan NAMA SUBJEK dan NAMA KELAS berdasarkan teks/label yang benar-benar kelihatan. Jangan tukar kelas menjadi subjek atau sebaliknya.
-5. Kekalkan singkatan yang benar-benar tertera jika nama penuh tidak pasti. JANGAN meneka pengembangan singkatan.
-6. Abaikan REHAT, PERHIMPUNAN, KOKURIKULUM, FREE, kosong, cuti atau aktiviti bukan waktu mengajar kecuali sel itu jelas menunjukkan subjek + kelas.
-7. Jangan cipta slot daripada teks kabur. Jika salah satu day/start/end/class_name/subject tidak dapat dipastikan, masukkan dalam uncertain, BUKAN entries.
-8. Semak semula bahawa setiap masa tamat lebih lewat daripada masa mula dan slot berada pada hari yang betul.
-9. Jika terdapat lebih daripada satu jadual/halaman, ekstrak hanya jadual waktu guru yang jelas; jangan campur legenda atau jadual lain.
+PENTING: period ialah setiap lajur/baris MASA SEBENAR; REHAT bukan slot mengajar. Bagi setiap blok subjek, senaraikan SEMUA period yang diliputinya, bukan hanya period pertama. Dua sel bersebelahan dengan subjek dan kelas sama yang jelas merupakan sesi berterusan boleh digabungkan; jangan gabung merentas rehat, ruang kosong, atau sempadan sesi yang jelas. Sel bergabung selebar dua period mesti ada dua ID period.
 
-Pulangkan JSON tulen sahaja dalam format tepat ini:
-{"entries":[{"day":"Isnin","start":"07:40","end":"08:40","class_name":"3 Amanah","subject":"Matematik"}],"uncertain":[],"notes":""}
-
-day hanya: Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu, Ahad.
-Masa wajib format 24 jam HH:MM. Jangan guna markdown. Jangan reka data."""
+JSON FORMAT:
+{"periods":[{"id":"p1","start":"13:00","end":"13:30"},{"id":"p2","start":"13:30","end":"14:00"}],"blocks":[{"day":"Isnin","period_ids":["p1","p2"],"class_name":"2 USM","subject":"BI"}],"uncertain":[],"notes":""}
+Gunakan ID period unik mengikut susunan masa; period boleh berbeza mengikut hari jika header berbeza (misalnya isnin_p1). Setiap blok perlu period_ids dari awal sehingga akhir secara tertib. Jika blok merentasi 13:00–13:30 dan 13:30–14:00, period_ids MESTI kedua-duanya dan masa akhir 14:00. Jangan cipta kelas, subjek, period, masa atau petak yang tidak kelihatan. Abaikan rehat, perhimpunan, ruang kosong dan bukan PdP. Jika tidak pasti, letak dalam uncertain, bukan blocks. day penuh Isnin/Selasa/Rabu/Khamis/Jumaat/Sabtu/Ahad; HH:MM format 24 jam. Pastikan jumlah blok sepadan dengan petak mengajar yang kelihatan. Jangan sertakan markdown."""
     models=[]
     for model in [GEMINI_MODEL]+list(GEMINI_FALLBACK_MODELS or []):
         if model and model not in models: models.append(model)
@@ -46178,10 +46171,7 @@ Masa wajib format 24 jam HH:MM. Jangan guna markdown. Jangan reka data."""
     for model in models[:2]:
         try:
             url=f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
-            payload={
-                'contents':[{'role':'user','parts':[{'text':prompt},{'inline_data':{'mime_type':mime,'data':base64.b64encode(data).decode('ascii')}}]}],
-                'generationConfig':{'temperature':0.0,'maxOutputTokens':7000,'responseMimeType':'application/json'}
-            }
+            payload={'contents':[{'role':'user','parts':[{'text':prompt},{'inline_data':{'mime_type':mime,'data':base64.b64encode(data).decode('ascii')}}]}], 'generationConfig':{'temperature':0.0,'maxOutputTokens':9000,'responseMimeType':'application/json'}}
             r=requests.post(url,headers={'Content-Type':'application/json','x-goog-api-key':GEMINI_API_KEY},json=payload,timeout=(10,min(int(GEMINI_TIMEOUT or 90),45)))
             if not r.ok:
                 last=f'Gemini HTTP {r.status_code}: {(r.text or "")[:180]}'; continue
@@ -46189,9 +46179,30 @@ Masa wajib format 24 jam HH:MM. Jangan guna markdown. Jangan reka data."""
             raw=''.join(str(x.get('text') or '') for x in parts).strip()
             raw=re.sub(r'^```(?:json)?\s*|\s*```$','',raw,flags=re.I|re.S).strip()
             obj=_json.loads(raw)
-            entries=obj.get('entries') if isinstance(obj,dict) else obj
-            if not isinstance(entries,list):
-                last='Respons reader tiada senarai entries'; continue
+            if not isinstance(obj,dict) or not isinstance(obj.get('periods'),list) or not isinstance(obj.get('blocks'),list):
+                last='Respons tiada struktur periods/blocks'; continue
+            periods={}
+            for x in obj['periods']:
+                if not isinstance(x,dict): continue
+                pid=str(x.get('id') or '').strip()
+                st=_norm_time_v25281(x.get('start')); en=_norm_time_v25281(x.get('end'))
+                if not pid or not st or not en or st>=en or pid in periods: continue
+                periods[pid]=(st,en)
+            entries=[]; rejected=[]
+            for x in obj['blocks']:
+                if not isinstance(x,dict): continue
+                ids=x.get('period_ids') or []
+                if not isinstance(ids,list) or not ids or any(str(z) not in periods for z in ids):
+                    rejected.append(x); continue
+                spans=[periods[str(z)] for z in ids]
+                if any(spans[i][1]!=spans[i+1][0] for i in range(len(spans)-1)):
+                    rejected.append(x); continue
+                entries.append({'day':x.get('day'),'start':spans[0][0],'end':spans[-1][1], 'class_name':x.get('class_name'),'subject':x.get('subject')})
+            if not entries:
+                last='Tiada blok dengan sempadan masa yang dapat disahkan'; continue
+            if rejected or obj.get('uncertain'):
+                # Fail closed: partial extraction must not be presented as a complete timetable.
+                last=f'{len(rejected)} blok atau {len(obj.get("uncertain") or [])} petak belum pasti. Sila upload imej lebih jelas.'; continue
             return entries
         except Exception as e:
             last=str(e)
