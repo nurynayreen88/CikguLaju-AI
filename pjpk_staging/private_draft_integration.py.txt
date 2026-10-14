@@ -1,0 +1,54 @@
+# PJPK private draft integration — disabled unless PJPK_SAME_BOT_TESTER_IDS is set.
+# Append to existing app.py only after checking the current app's callback/subjects/send signatures.
+# Requires pjpk_candidate.db and preview_server.py beside app.py.
+import pathlib as _pjpk_pathlib, sqlite3 as _pjpk_sqlite, re as _pjpk_re, tempfile as _pjpk_tempfile
+_PJPK_ROOT=_pjpk_pathlib.Path(__file__).resolve().parent
+_PJPK_IDS={int(v.strip()) for v in os.getenv('PJPK_SAME_BOT_TESTER_IDS','').split(',') if v.strip().isdigit()}
+def _pjpk_allowed(cid):
+    try:return bool(_PJPK_IDS) and int(cid) in _PJPK_IDS and (_PJPK_ROOT/'pjpk_candidate.db').is_file()
+    except (ValueError,TypeError):return False
+def _pjpk_rows(year,component):
+    with _pjpk_sqlite.connect('file:'+str(_PJPK_ROOT/'pjpk_candidate.db')+'?mode=ro',uri=True) as con:
+        return con.execute('select entry_id,topic,entry_status from pjpk_v26_30_candidate_menu where year=? and component=? order by sequence_no',(year,component)).fetchall()
+def _pjpk_menu(cid,year,component):
+    rows=_pjpk_rows(year,component)
+    kb=[[{'text':str(eid)+' — '+str(topic or 'Tanpa tajuk')[:35], 'callback_data':'pjpkprivate_pdf_'+str(eid)}] for eid,topic,status in rows if status=='REVIEW_ONLY']
+    kb.append([{'text':'⬅️ PJ/PK Tahun '+str(year),'callback_data':'pjpkprivate_year_'+str(year)}])
+    return send(cid,'<b>PRATONTON '+component+' TAHUN '+str(year)+'</b>\nDRAF BELUM DILULUSKAN — bukan RPH produksi.',kb)
+_PJPK_PREV_SUBJECTS=subjects
+def subjects(cid,label):
+    result=_PJPK_PREV_SUBJECTS(cid,label)
+    m=_pjpk_re.fullmatch(r'Tahun ([1-6])',str(label or ''))
+    if m and _pjpk_allowed(cid):
+        year=m.group(1)
+        send(cid,'PJPK — PRATONTON PENGUJI SAHAJA (menu biasa di atas kekal)',[
+          [{'text':'Pendidikan Jasmani (DRAF)','callback_data':'pjpkprivate_subject_'+year+'_PJ'}],
+          [{'text':'Pendidikan Kesihatan (DRAF)','callback_data':'pjpkprivate_subject_'+year+'_PK'}]])
+    return result
+_PJPK_PREV_CALLBACK=callback
+def callback(cid,d):
+    ds=str(d or '')
+    if not ds.startswith('pjpkprivate_'):return _PJPK_PREV_CALLBACK(cid,d)
+    if not _pjpk_allowed(cid):return send(cid,'PJPK belum dibuka untuk pengguna.')
+    m=_pjpk_re.fullmatch(r'pjpkprivate_year_([1-6])',ds)
+    if m:
+        year=m.group(1)
+        return send(cid,'PJPK Tahun '+year+' — DRAF belum diluluskan',[
+          [{'text':'Pendidikan Jasmani','callback_data':'pjpkprivate_subject_'+year+'_PJ'}],
+          [{'text':'Pendidikan Kesihatan','callback_data':'pjpkprivate_subject_'+year+'_PK'}]])
+    m=_pjpk_re.fullmatch(r'pjpkprivate_subject_([1-6])_(PJ|PK)',ds)
+    if m:return _pjpk_menu(cid,int(m.group(1)),m.group(2))
+    m=_pjpk_re.fullmatch(r'pjpkprivate_pdf_([0-9]{1,9})',ds)
+    if not m:return send(cid,'Pilihan PJPK tidak sah.')
+    eid=int(m.group(1))
+    with _pjpk_sqlite.connect('file:'+str(_PJPK_ROOT/'pjpk_candidate.db')+'?mode=ro',uri=True) as con:
+        row=con.execute('select entry_status from pjpk_v26_30_candidate_menu where entry_id=?',(eid,)).fetchone()
+    if not row or row[0]!='REVIEW_ONLY':return send(cid,'Rekod ini disekat; PDF tidak dijana.')
+    from preview_server import pdf as _pjpk_pdf
+    with _pjpk_tempfile.TemporaryDirectory(prefix='pjpk_draft_') as td:
+        path=_pjpk_pathlib.Path(td)/('PJPK_DRAF_'+str(eid)+'.pdf')
+        path.write_bytes(_pjpk_pdf(eid))
+        result=send_document(cid,str(path),'DRAF PJPK — BELUM DILULUSKAN; bukan RPH produksi.')
+        if not _telegram_delivery_ok_v25279(result):
+            raise RuntimeError('Telegram did not confirm PJPK draft delivery')
+        return result
