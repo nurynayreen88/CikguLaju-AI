@@ -25,6 +25,29 @@ def inspect_db(target):
         tables = {row[0] for row in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
         report = {"db_integrity": integrity, "tables_have_rpt_entries": "rpt_entries" in tables,
                   "tables_have_rpt_entry_standards": "rpt_entry_standards" in tables}
+        for table_name in ("curriculum_standards", "curriculum_topics"):
+            if table_name not in tables:
+                continue
+            columns = {row[1] for row in con.execute(f"PRAGMA table_info({table_name})")}
+            if "subject" not in columns:
+                continue
+            report[table_name + "_subject_counts"] = [
+                {"subject": row[0], "rows": row[1]}
+                for row in con.execute(
+                    f"SELECT subject, COUNT(*) FROM {table_name} GROUP BY subject ORDER BY subject"
+                )
+            ]
+            report[table_name + "_pjpk_rows"] = [
+                {"subject": row[0], "year_label": row[1] if len(row) > 1 else None, "rows": row[-1]}
+                for row in con.execute(
+                    f"SELECT subject, year_label, COUNT(*) FROM {table_name} "
+                    "WHERE lower(COALESCE(subject,'')) LIKE '%jasmani%' "
+                    "OR lower(COALESCE(subject,'')) LIKE '%kesihatan%' "
+                    "OR lower(COALESCE(subject,'')) LIKE '%pjpk%' "
+                    "OR lower(trim(COALESCE(subject,''))) IN ('pj','pk') "
+                    "GROUP BY subject, year_label ORDER BY subject, year_label"
+                )
+            ] if "year_label" in columns else []
         if "rpt_entries" in tables:
             report["pjpk_subject_labels"] = [
                 {"year_label": row[0], "subject": row[1], "rows": row[2]}
