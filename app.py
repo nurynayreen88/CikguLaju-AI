@@ -1171,7 +1171,7 @@ Murid menjawab beberapa item individu. Guru menyemak berdasarkan kriteria kejaya
         f'PENGETAHUAN SEDIA ADA: {prior}', f'BAHAN BANTU MENGAJAR: {bbm}',
         f'EMK / NILAI: {emk}', f'KBAT / PAK21: {pak}', f'PENTAKSIRAN: {assessment}',
         f'SET INDUKSI: {induction}', f'AKTIVITI UTAMA: {activities}',
-        f'PENUTUP: {s.get("_local_closing") or "5 minit\n1. Murid menyatakan semula perkara utama yang dipelajari.\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."}',
+        f'PENUTUP: {closing}',
         f'PEMULIHAN / PENGAYAAN: Pemulihan: {remedial}\nPengayaan: {enrichment}',
         'REFLEKSI: ________ / ________ murid mencapai objektif. ________ murid belum mencapai objektif dan akan diberi tindakan susulan/pemulihan.'
     ]
@@ -1570,6 +1570,7 @@ def _textbook_page_match_message(s, rows, page_no):
     if not rows: return ''
     main=next((r for r in rows if str(r.get('role') or '').lower()=='main'), rows[0])
     comp=next((r for r in rows if str(r.get('role') or '').lower()=='complementary'), None)
+    closing=s.get("_local_closing") or "5 minit\\n1. Murid menyatakan semula perkara utama yang dipelajari.\\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."
     lines=[
         '✅ <b>Padanan tepat muka surat ditemui</b>', '',
         f"📘 Buku: <b>{html.escape(str(s.get('textbook_book_title') or ''))}</b>",
