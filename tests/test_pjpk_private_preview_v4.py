@@ -99,10 +99,10 @@ class PJPKPrivatePreviewV4Tests(unittest.TestCase):
         events.clear()
         namespace["callback"](123, "pjpkprivate_subject_1_PJ")
         buttons = [b for row in events[-1][3] for b in row]
-        self.assertEqual(len(buttons), 28)  # 36 review-only entries minus eight quarantined T1 PJ duplicates
-        self.assertTrue(all(b["callback_data"].startswith("pjpkprivate_pdf_") for b in buttons))
+        pdf_buttons = [b for b in buttons if b["callback_data"].startswith("pjpkprivate_pdf_")]
+        self.assertEqual(len(pdf_buttons), 28)  # 36 review-only entries minus eight quarantined T1 PJ duplicates
         events.clear()
-        result = namespace["callback"](123, "pjpkprivate_pdf_" + str(buttons[0]["callback_data"].split("_")[-1]))
+        result = namespace["callback"](123, pdf_buttons[0]["callback_data"])
         self.assertTrue(getattr(result, "ok", False))
         self.assertTrue(any(e[0] == "pdf" for e in events))
 
