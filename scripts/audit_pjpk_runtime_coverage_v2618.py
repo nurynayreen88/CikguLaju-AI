@@ -64,7 +64,9 @@ def main():
             raise SystemExit(json.dumps(report, ensure_ascii=False))
         print(json.dumps({
             "db_integrity": integrity,
-            "pjpk_subject_labels_found_in_runtime_db": labels,\n            "all_runtime_rpt_subject_counts": subject_counts,\n            "all_runtime_rpt_year_labels": year_labels,
+            "pjpk_subject_labels_found_in_runtime_db": labels,
+            "all_runtime_rpt_subject_counts": subject_counts,
+            "all_runtime_rpt_year_labels": year_labels,
             "coverage_exact_labels": report,
         }, ensure_ascii=False, indent=2))
         if not labels:
