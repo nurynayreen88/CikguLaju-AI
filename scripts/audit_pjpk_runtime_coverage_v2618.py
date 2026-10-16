@@ -32,6 +32,8 @@ def main():
             integrity = con.execute("PRAGMA integrity_check").fetchone()[0]
             tables = {row[0] for row in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
             labels = []
+            subject_counts = []
+            year_labels = []
             if "rpt_entries" in tables:
                 labels = [
                     {"year_label": row[0], "subject": row[1], "rows": row[2]}
@@ -40,7 +42,19 @@ def main():
                         "WHERE lower(COALESCE(subject,'')) LIKE '%jasmani%' "
                         "OR lower(COALESCE(subject,'')) LIKE '%kesihatan%' "
                         "OR lower(COALESCE(subject,'')) LIKE '%pjpk%' "
+                        "OR lower(trim(COALESCE(subject,''))) IN ('pj','pk') "
                         "GROUP BY year_label, subject ORDER BY year_label, subject"
+                    )
+                ]
+                subject_counts = [
+                    {"subject": row[0], "rows": row[1]}
+                    for row in con.execute(
+                        "SELECT subject, COUNT(*) FROM rpt_entries GROUP BY subject ORDER BY subject"
+                    )
+                ]
+                year_labels = [
+                    row[0] for row in con.execute(
+                        "SELECT DISTINCT year_label FROM rpt_entries ORDER BY year_label"
                     )
                 ]
         if integrity != "ok":
@@ -50,7 +64,7 @@ def main():
             raise SystemExit(json.dumps(report, ensure_ascii=False))
         print(json.dumps({
             "db_integrity": integrity,
-            "pjpk_subject_labels_found_in_runtime_db": labels,
+            "pjpk_subject_labels_found_in_runtime_db": labels,\n            "all_runtime_rpt_subject_counts": subject_counts,\n            "all_runtime_rpt_year_labels": year_labels,
             "coverage_exact_labels": report,
         }, ensure_ascii=False, indent=2))
         if not labels:
