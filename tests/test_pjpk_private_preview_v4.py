@@ -99,7 +99,7 @@ class PJPKPrivatePreviewV4Tests(unittest.TestCase):
         events.clear()
         namespace["callback"](123, "pjpkprivate_subject_1_PJ")
         buttons = [b for row in events[-1][3] for b in row]
-        self.assertEqual(len(buttons), 32)  # 36 menu entries minus four quarantined T1 PJ duplicates
+        self.assertEqual(len(buttons), 28)  # 36 review-only entries minus eight quarantined T1 PJ duplicates
         self.assertTrue(all(b["callback_data"].startswith("pjpkprivate_pdf_") for b in buttons))
         events.clear()
         result = namespace["callback"](123, "pjpkprivate_pdf_" + str(buttons[0]["callback_data"].split("_")[-1]))
