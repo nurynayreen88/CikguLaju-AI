@@ -30,13 +30,32 @@ def main():
                         output.write(block)
         with sqlite3.connect(target.as_uri() + "?mode=ro", uri=True) as con:
             integrity = con.execute("PRAGMA integrity_check").fetchone()[0]
+            tables = {row[0] for row in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+            labels = []
+            if "rpt_entries" in tables:
+                labels = [
+                    {"year_label": row[0], "subject": row[1], "rows": row[2]}
+                    for row in con.execute(
+                        "SELECT year_label, subject, COUNT(*) FROM rpt_entries "
+                        "WHERE lower(COALESCE(subject,'')) LIKE '%jasmani%' "
+                        "OR lower(COALESCE(subject,'')) LIKE '%kesihatan%' "
+                        "OR lower(COALESCE(subject,'')) LIKE '%pjpk%' "
+                        "GROUP BY year_label, subject ORDER BY year_label, subject"
+                    )
+                ]
         if integrity != "ok":
             raise SystemExit("Bundled runtime DB integrity failed: " + str(integrity))
         report = audit(str(target))
         if "error" in report:
             raise SystemExit(json.dumps(report, ensure_ascii=False))
-        print(json.dumps({"db_integrity": integrity, "coverage": report}, ensure_ascii=False, indent=2))
-        print("NOTE: This is an audit only; it does not change or approve any curriculum mapping.")
+        print(json.dumps({
+            "db_integrity": integrity,
+            "pjpk_subject_labels_found_in_runtime_db": labels,
+            "coverage_exact_labels": report,
+        }, ensure_ascii=False, indent=2))
+        if not labels:
+            print("BLOCKER: No Pendidikan Jasmani/Kesihatan RPT rows found in the app's bundled runtime DB.")
+        print("NOTE: Read-only audit only; no curriculum mapping was changed or approved.")
 
 if __name__ == "__main__":
     main()
