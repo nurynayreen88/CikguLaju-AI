@@ -47,6 +47,27 @@ jobs:
         run: python scripts/audit_pjpk_runtime_coverage_v2618.py
       - name: Rebuild isolated candidate DB without touching production DB
         run: python rebuild_pjpk_candidate.py
+      - name: Inventory all-year PJPK preview tables (read-only)
+        run: |
+          python - <<'PY'
+          import json, sqlite3
+          db = "pjpk_candidate.db"
+          with sqlite3.connect("file:" + db + "?mode=ro", uri=True) as con:
+              tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+              report = {"all_year_menu_table_present": "pjpk_v26_30_candidate_menu" in tables}
+              if "pjpk_v26_30_candidate_menu" in tables:
+                  report["menu_counts"] = [
+                      {"year": r[0], "component": r[1], "status": r[2], "count": r[3]}
+                      for r in con.execute(
+                          "SELECT year,component,entry_status,COUNT(*) FROM pjpk_v26_30_candidate_menu "
+                          "GROUP BY year,component,entry_status ORDER BY year,component,entry_status"
+                      )
+                  ]
+              for table in ("pjpk_dskp_provenance","pjpk_dskp_exact_reconciliation","pjpk_v47_generator_gate"):
+                  if table in tables:
+                      report[table + "_rows"] = con.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
+              print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
       - name: Verify candidate integrity and editorial gates
         run: python pjpk_v26_18_release_preflight.py
       - name: Test bridge fail-closed behavior
