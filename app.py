@@ -46177,3 +46177,18 @@ except Exception as _cikgulaju_pjpk_t3_bridge_exc:
     CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ERROR = repr(_cikgulaju_pjpk_t3_bridge_exc)
     CIKGULAJU_PJPK_T3_EDITORIAL_BRIDGE_ENABLED = False
 # === END v26.18 ===
+
+
+# === PJPK V4 ALL-YEAR PRIVATE DRAFT MENU (OFF BY DEFAULT) ===
+# Private tester IDs are required; production RPH stays blocked.
+CIKGULAJU_PJPK_PRIVATE_V4_HOOK_INSTALLED = False
+CIKGULAJU_PJPK_PRIVATE_V4_HOOK_ERROR = ''
+try:
+    from pjpk_private_same_bot_v4 import install as _install_pjpk_private_same_bot_v4
+    CIKGULAJU_PJPK_PRIVATE_V4_HOOK_INSTALLED = bool(_install_pjpk_private_same_bot_v4(globals()))
+    if not CIKGULAJU_PJPK_PRIVATE_V4_HOOK_INSTALLED:
+        CIKGULAJU_PJPK_PRIVATE_V4_HOOK_ERROR = 'Required existing bot handlers or Telegram delivery guard missing'
+except Exception as _pjpk_private_v4_exc:
+    CIKGULAJU_PJPK_PRIVATE_V4_HOOK_ERROR = repr(_pjpk_private_v4_exc)
+    CIKGULAJU_PJPK_PRIVATE_V4_HOOK_INSTALLED = False
+# === END PJPK V4 PRIVATE DRAFT MENU ===
