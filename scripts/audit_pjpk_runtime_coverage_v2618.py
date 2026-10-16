@@ -1,8 +1,7 @@
-"""Read-only audit of PJPK SK/SP coverage in the bundled runtime DB.
+"""Read-only discovery of PJPK RPT/SK/SP coverage across bundled DB checkpoints.
 
-Reassembles only into a temporary directory on the CI runner. Never writes to
-or replaces the repository/runtime database. Coverage gaps are reported, not
-papered over with invented mappings.
+All reconstructed databases live only in a temporary CI directory. No source
+DB, production DB, or curriculum mapping is modified.
 """
 import json
 import sqlite3
@@ -12,66 +11,65 @@ from pathlib import Path
 from audit_pjpk_coverage_v2670 import audit
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_STEM = "CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db"
-PARTS = (ROOT / (DB_STEM + ".part1"), ROOT / (DB_STEM + ".part2"))
+STEMS = (
+    "CikguLaju_Curriculum_Master_v25_89_PI_T1_T6_JAWI_COMPLETE_FINAL.db",
+    "CikguLaju_Curriculum_Master_v25_90_RUNTIME_PLUS_PI_T1_T6.db",
+    "CikguLaju_Curriculum_Master_v25_91_PI_RPT_T1_T6_COMPLETE.db",
+    "CikguLaju_Curriculum_Master_v25_92_PI_ENGLISH_Y1_Y3.db",
+    "CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db",
+)
+
+def inspect_db(target):
+    with sqlite3.connect(target.as_uri() + "?mode=ro", uri=True) as con:
+        integrity = con.execute("PRAGMA integrity_check").fetchone()[0]
+        tables = {row[0] for row in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        report = {"db_integrity": integrity, "tables_have_rpt_entries": "rpt_entries" in tables,
+                  "tables_have_rpt_entry_standards": "rpt_entry_standards" in tables}
+        if "rpt_entries" in tables:
+            report["pjpk_subject_labels"] = [
+                {"year_label": row[0], "subject": row[1], "rows": row[2]}
+                for row in con.execute(
+                    "SELECT year_label, subject, COUNT(*) FROM rpt_entries "
+                    "WHERE lower(COALESCE(subject,'')) LIKE '%jasmani%' "
+                    "OR lower(COALESCE(subject,'')) LIKE '%kesihatan%' "
+                    "OR lower(COALESCE(subject,'')) LIKE '%pjpk%' "
+                    "OR lower(trim(COALESCE(subject,''))) IN ('pj','pk') "
+                    "GROUP BY year_label, subject ORDER BY year_label, subject"
+                )
+            ]
+            report["rpt_subject_counts"] = [
+                {"subject": row[0], "rows": row[1]}
+                for row in con.execute(
+                    "SELECT subject, COUNT(*) FROM rpt_entries GROUP BY subject ORDER BY subject"
+                )
+            ]
+        return report
 
 def main():
-    if not all(part.is_file() for part in PARTS):
-        raise SystemExit("Runtime DB parts missing; cannot audit real PJPK coverage.")
-    with tempfile.TemporaryDirectory(prefix="pjpk-runtime-audit-") as temp:
-        target = Path(temp) / DB_STEM
-        with target.open("wb") as output:
-            for part in PARTS:
-                with part.open("rb") as source:
-                    while True:
-                        block = source.read(1024 * 1024)
-                        if not block:
-                            break
-                        output.write(block)
-        with sqlite3.connect(target.as_uri() + "?mode=ro", uri=True) as con:
-            integrity = con.execute("PRAGMA integrity_check").fetchone()[0]
-            tables = {row[0] for row in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-            labels = []
-            subject_counts = []
-            year_labels = []
-            if "rpt_entries" in tables:
-                labels = [
-                    {"year_label": row[0], "subject": row[1], "rows": row[2]}
-                    for row in con.execute(
-                        "SELECT year_label, subject, COUNT(*) FROM rpt_entries "
-                        "WHERE lower(COALESCE(subject,'')) LIKE '%jasmani%' "
-                        "OR lower(COALESCE(subject,'')) LIKE '%kesihatan%' "
-                        "OR lower(COALESCE(subject,'')) LIKE '%pjpk%' "
-                        "OR lower(trim(COALESCE(subject,''))) IN ('pj','pk') "
-                        "GROUP BY year_label, subject ORDER BY year_label, subject"
-                    )
-                ]
-                subject_counts = [
-                    {"subject": row[0], "rows": row[1]}
-                    for row in con.execute(
-                        "SELECT subject, COUNT(*) FROM rpt_entries GROUP BY subject ORDER BY subject"
-                    )
-                ]
-                year_labels = [
-                    row[0] for row in con.execute(
-                        "SELECT DISTINCT year_label FROM rpt_entries ORDER BY year_label"
-                    )
-                ]
-        if integrity != "ok":
-            raise SystemExit("Bundled runtime DB integrity failed: " + str(integrity))
-        report = audit(str(target))
-        if "error" in report:
-            raise SystemExit(json.dumps(report, ensure_ascii=False))
-        print(json.dumps({
-            "db_integrity": integrity,
-            "pjpk_subject_labels_found_in_runtime_db": labels,
-            "all_runtime_rpt_subject_counts": subject_counts,
-            "all_runtime_rpt_year_labels": year_labels,
-            "coverage_exact_labels": report,
-        }, ensure_ascii=False, indent=2))
-        if not labels:
-            print("BLOCKER: No Pendidikan Jasmani/Kesihatan RPT rows found in the app's bundled runtime DB.")
-        print("NOTE: Read-only audit only; no curriculum mapping was changed or approved.")
+    results = {}
+    with tempfile.TemporaryDirectory(prefix="pjpk-db-discovery-") as temp:
+        for stem in STEMS:
+            parts = (ROOT / (stem + ".part1"), ROOT / (stem + ".part2"))
+            if not all(part.is_file() for part in parts):
+                results[stem] = {"status": "parts_missing"}
+                continue
+            target = Path(temp) / stem
+            with target.open("wb") as output:
+                for part in parts:
+                    with part.open("rb") as source:
+                        while True:
+                            block = source.read(1024 * 1024)
+                            if not block:
+                                break
+                            output.write(block)
+            report = inspect_db(target)
+            if report.get("db_integrity") != "ok":
+                raise SystemExit(f"SQLite integrity failed for {stem}: {report}")
+            if report.get("tables_have_rpt_entries") and report.get("tables_have_rpt_entry_standards"):
+                report["exact_label_coverage"] = audit(str(target))
+            results[stem] = report
+    print(json.dumps(results, ensure_ascii=False, indent=2))
+    print("NOTE: Discovery is read-only. Do not activate a DB merely because it contains PJPK-labelled rows; exact SK/SP verification is still required.")
 
 if __name__ == "__main__":
     main()
