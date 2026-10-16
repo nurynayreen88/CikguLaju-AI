@@ -8110,6 +8110,7 @@ Murid menjawab beberapa item individu. Guru menyemak berdasarkan kriteria kejaya
             induction,activities=_make_specific_local_activity(subject, topic, focus, s.get('sp_code',''), _named)
         remedial='Gunakan bahan konkrit atau visual dan pecahkan tugasan kepada langkah lebih kecil.'
         enrichment='Berikan tugasan aplikasi atau penyelesaian masalah yang masih dalam skop SP yang sama.'
+    closing=s.get("_local_closing") or "5 minit\n1. Murid menyatakan semula perkara utama yang dipelajari.\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."
     lines=[
         f'MATA PELAJARAN: {subject}', f'TAHUN/TINGKATAN: {year}', f'TAJUK: {topic}', f'TEMPOH: {int(s.get("rph_duration_minutes") or 60)} minit',
         f'STANDARD KANDUNGAN: {sk}', f'STANDARD PEMBELAJARAN: {_rph_sp_display(s)}',
@@ -8117,7 +8118,7 @@ Murid menjawab beberapa item individu. Guru menyemak berdasarkan kriteria kejaya
         f'PENGETAHUAN SEDIA ADA: {prior}', f'BAHAN BANTU MENGAJAR: {bbm}',
         f'EMK / NILAI: {emk}', f'KBAT / PAK21: {pak}', f'PENTAKSIRAN: {assessment}',
         f'SET INDUKSI: {induction}', f'AKTIVITI UTAMA: {activities}',
-        f'PENUTUP: {s.get("_local_closing") or "5 minit\n1. Murid menyatakan semula perkara utama yang dipelajari.\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."}',
+        f'PENUTUP: {closing}',
         f'PEMULIHAN / PENGAYAAN: Pemulihan: {remedial}\nPengayaan: {enrichment}',
         'REFLEKSI: ________ / ________ murid mencapai objektif. ________ murid belum mencapai objektif dan akan diberi tindakan susulan/pemulihan.'
     ]
