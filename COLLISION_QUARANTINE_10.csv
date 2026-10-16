@@ -1,0 +1,11 @@
+year,component,unit,topic,entry_id,status,source_key,reason
+1,PJ,Unit 1: Gerak Ceria,Gerak Cabaran,2289,REVIEW_ONLY,PJPK_T1_PJ_2026_PDP_NORMALIZED,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Gerak Cabaran,2225,REVIEW_ONLY,PJPK_2026_VERIFIED_BATCH_A,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Gerak Ruang,2290,REVIEW_ONLY,PJPK_T1_PJ_2026_PDP_NORMALIZED,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Gerak Ruang,2226,REVIEW_ONLY,PJPK_2026_VERIFIED_BATCH_A,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Gerak Isyarat,2291,REVIEW_ONLY,PJPK_T1_PJ_2026_PDP_NORMALIZED,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Gerak Isyarat,2227,REVIEW_ONLY,PJPK_2026_VERIFIED_BATCH_A,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Saya Hebat,2292,REVIEW_ONLY,PJPK_T1_PJ_2026_PDP_NORMALIZED,Duplicate topic/source unresolved; quarantine
+1,PJ,Unit 1: Gerak Ceria,Saya Hebat,2228,REVIEW_ONLY,PJPK_2026_VERIFIED_BATCH_A,Duplicate topic/source unresolved; quarantine
+5,PK,Unit 11: Penjagaan dan Keselamatan Diri,Persahabatan Yang Sihat,2240,REVIEW_ONLY,PJPK_2026_VERIFIED_BATCH_A,Duplicate capitalization/topic source unresolved; quarantine
+5,PK,Unit 11: Penjagaan dan Keselamatan Diri,Persahabatan yang Sihat,2258,REVIEW_ONLY,PJPK_2026_RPT_VERIFIED_BLOCKS,Duplicate capitalization/topic source unresolved; quarantine
