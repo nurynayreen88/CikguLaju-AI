@@ -1,12 +1,21 @@
 """Non-destructive offline PJPK RPH renderer. Preview is NEVER a production RPH."""
+import csv
 import sqlite3
+from pathlib import Path
 from pjpk_private_menu import ensure_menu_view
+
+with (Path(__file__).resolve().parent / "COLLISION_QUARANTINE_10.csv").open(encoding="utf-8-sig", newline="") as _source:
+    QUARANTINE = {int(row["entry_id"]) for row in csv.DictReader(_source)}
+if len(QUARANTINE) != 10:
+    raise RuntimeError("Fail closed: PJPK collision quarantine invalid")
 
 def generate(db_path, entry_id, mode="preview", duration_minutes=30):
     if mode not in ("preview", "production"):
         raise ValueError("mode must be preview or production")
     if not isinstance(duration_minutes, int) or not 10 <= duration_minutes <= 120:
         raise ValueError("Invalid duration")
+    if int(entry_id) in QUARANTINE:
+        raise ValueError("Duplicate topic/SP quarantined; no PJPK preview permitted")
     with sqlite3.connect("file:" + str(db_path) + "?mode=ro", uri=True) as c:
         c.row_factory = sqlite3.Row
         ensure_menu_view(c)
