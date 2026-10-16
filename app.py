@@ -1164,6 +1164,7 @@ Murid menjawab beberapa item individu. Guru menyemak berdasarkan kriteria kejaya
         induction,activities=_make_specific_local_activity(subject, topic, focus, s.get('sp_code',''), _specific_material_pack(subject, topic, focus, s.get('variation_seed','')))
         remedial='Gunakan bahan konkrit atau visual dan pecahkan tugasan kepada langkah lebih kecil.'
         enrichment='Berikan tugasan aplikasi atau penyelesaian masalah yang masih dalam skop SP yang sama.'
+    closing=s.get("_local_closing") or "5 minit\\n1. Murid menyatakan semula perkara utama yang dipelajari.\\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."
     lines=[
         f'MATA PELAJARAN: {subject}', f'TAHUN/TINGKATAN: {year}', f'TAJUK: {topic}',
         f'STANDARD KANDUNGAN: {sk}', f'STANDARD PEMBELAJARAN: {sp}',
@@ -1570,7 +1571,6 @@ def _textbook_page_match_message(s, rows, page_no):
     if not rows: return ''
     main=next((r for r in rows if str(r.get('role') or '').lower()=='main'), rows[0])
     comp=next((r for r in rows if str(r.get('role') or '').lower()=='complementary'), None)
-    closing=s.get("_local_closing") or "5 minit\\n1. Murid menyatakan semula perkara utama yang dipelajari.\\n2. Guru menjalankan semakan cepat berdasarkan kriteria kejayaan."
     lines=[
         '✅ <b>Padanan tepat muka surat ditemui</b>', '',
         f"📘 Buku: <b>{html.escape(str(s.get('textbook_book_title') or ''))}</b>",
