@@ -46131,6 +46131,22 @@ CIKGULAJU_PATCH_V2617 = 'SK_SUBJECT_MENU_FAIL_CLOSED_INTEGRATED'
 # === END v26.17 ===
 
 
+# === v26.18 VERIFIED PJPK RPH COMPOSER INTEGRATION (STAGING) ===
+# Uses exact verified RPT/SK/SP only; keeps existing renderer for other subjects.
+# This does not unlock the separate Year 3 editorial-preview candidate as production.
+CIKGULAJU_PJPK_RPH_BRIDGE_ENABLED = False
+CIKGULAJU_PJPK_RPH_BRIDGE_ERROR = ''
+try:
+    from pjpk_rph_integration_v2664 import install_pjpk_bridge as _install_pjpk_rph_bridge_v2618
+    CIKGULAJU_PJPK_RPH_BRIDGE_ENABLED = bool(_install_pjpk_rph_bridge_v2618(globals()))
+    if not CIKGULAJU_PJPK_RPH_BRIDGE_ENABLED:
+        CIKGULAJU_PJPK_RPH_BRIDGE_ERROR = 'Required _local_rph_text or _db hook missing'
+except Exception as _cikgulaju_pjpk_rph_bridge_exc:
+    CIKGULAJU_PJPK_RPH_BRIDGE_ERROR = repr(_cikgulaju_pjpk_rph_bridge_exc)
+    CIKGULAJU_PJPK_RPH_BRIDGE_ENABLED = False
+# === END VERIFIED PJPK RPH COMPOSER INTEGRATION ===
+
+
 # === v26.18 PJPK YEAR 3 READ-ONLY EDITORIAL PREVIEW BRIDGE ===
 # Separate, opt-in admin/test bridge. No Telegram menu/callback overrides, no
 # changes to production curriculum DB, and no production RPH unlock.
