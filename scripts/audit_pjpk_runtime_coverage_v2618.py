@@ -9,7 +9,7 @@ import sqlite3
 import tempfile
 from pathlib import Path
 
-from scripts.audit_pjpk_coverage_v2670 import audit
+from audit_pjpk_coverage_v2670 import audit
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_STEM = "CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db"
