@@ -32,7 +32,7 @@ These numbers are from the isolated candidate DB and committed evidence bundle; 
 | PJ entries without an exact unit/topic RPT match | 9 / 101 |
 | Independent textbook-page crosswalk rows currently in DB | 9 |
 
-The private preview test covers 137 eligible draft entries. CI is now wired to render each eligible draft as a one-page A4 PDF, with a manifest and a short-lived GitHub Actions artifact for review; the final render job is being checked.
+The private preview test covers 137 eligible draft entries. CI successfully rendered all 137 as one-page A4 PDFs (0 failures; 422,895 total PDF bytes) and uploaded the QA artifact [pjpk-private-draft-rph-pdfs-v2678](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/39001393022). The artifact includes a manifest and render-failure report. Every PDF is explicitly labelled as an unapproved draft.
 
 ## Still blocking production readiness
 
