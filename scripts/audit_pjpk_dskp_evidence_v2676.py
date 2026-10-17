@@ -2,9 +2,11 @@
 import argparse
 import json
 import sqlite3
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from pjpk_dskp_evidence_v2676 import load_evidence, reconcile_sp_text
 
 
