@@ -50,6 +50,19 @@ def _extract_standards(block):
     return found
 
 
+def _extract_activity_note(block):
+    marker = re.search(
+        r"(?:Pemerhatian\s*/\s*Pentaksiran|Pemerhatian|Pentaksiran|Aktiviti\s+PAK-21|Permainan(?:\s+kecil)?\s*:)",
+        block, re.I
+    )
+    if not marker:
+        return ""
+    note = block[marker.start():]
+    note = re.split(r"(?:BT\s*m/s|BUKU\s*TEKS\s*M/S)", note, maxsplit=1, flags=re.I)[0]
+    note = re.sub(r"\s+", " ", note).strip(" \t\r\n:;.-")
+    return note[:280]
+
+
 def _blocks(text):
     marks = list(ROW_RE.finditer(text))
     result = []
@@ -67,6 +80,7 @@ def _blocks(text):
             "week": match.group(1), "text": block, "pages": pages,
             "standards": standards,
             "sp_codes": sorted({x["standard_code"] for x in standards if x["standard_type"] == "SP"}),
+            "activity_note": _extract_activity_note(block),
         })
     return result
 
@@ -96,6 +110,7 @@ def lookup_page_evidence(year_label, subject, unit_title, topic, root=None):
         return {"status": "NO_EXACT_UNIT_TOPIC_MATCH", "pages": [], "rpt_sp_codes": [], "rpt_standards": [], "source_file": filename}
     page_blocks = [block for block in matches if block["pages"]]
     pages = sorted({p for block in page_blocks for p in block["pages"]}, key=lambda x: (int(re.match(r"\d+", x).group()), x))
+    activity_notes = sorted({block["activity_note"] for block in matches if block["activity_note"]})
     standard_maps = []
     for block in matches:
         standard_maps.append({
@@ -125,6 +140,8 @@ def lookup_page_evidence(year_label, subject, unit_title, topic, root=None):
     return {
         "status": page_status, "pages": pages, "rpt_sp_codes": sp_codes,
         "rpt_standards": standards, "standards_status": standards_status,
+        "rpt_activity_note": activity_notes[0] if len(activity_notes) == 1 else "",
+        "activity_status": "RPT_ACTIVITY_EXTRACTED" if len(activity_notes) == 1 else ("RPT_ACTIVITY_CONFLICT_REVIEW" if len(activity_notes) > 1 else "RPT_ACTIVITY_NOT_FOUND"),
         "weeks": sorted({block["week"] for block in matches}, key=lambda x: int(x)),
         "source_file": filename,
     }
