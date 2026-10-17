@@ -3,11 +3,13 @@ on:
   push:
     branches:
       - staging/pm-pjpk-v26-16
+      - staging/pjpk-v26-18-review
     paths:
       - 'CikguLaju_v26_16.db.part*'
       - 'scripts/rebuild_pm_pjpk_v26_16.py'
       - 'scripts/check_pm_pjpk_v26_16.py'
       - 'scripts/pjpk_v26_16_adapter.py'
+      - 'scripts/activate_pjpk_v26_16.py'
       - '.github/workflows/pm-pjpk-v26-16-staging.yml'
   workflow_dispatch:
 jobs:
@@ -20,6 +22,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Compile PJPK modules
+        run: |
+          python -m py_compile scripts/activate_pjpk_v26_16.py scripts/pjpk_v26_16_adapter.py scripts/rebuild_pm_pjpk_v26_16.py scripts/check_pm_pjpk_v26_16.py
       - name: Reconstruct safely and check database
         run: |
           python scripts/rebuild_pm_pjpk_v26_16.py
@@ -38,4 +43,37 @@ jobs:
               assert not ready_pdp(f'Tahun {year}', 'Pendidikan Kesihatan')
           assert not ready_pdp('Tahun 1', 'Pendidikan Moral')
           print('PASS: 33 safe PJ T1 rows; unfinished PJPK rows hidden')
+          PY
+
+      - name: Test verified PJPK row reaches normal RPH class flow
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from scripts.activate_pjpk_v26_16 import install
+          db=Path('CikguLaju_Curriculum_Master_v26_16_PJPK_SAFE_RELEASE.db')
+          before=db.stat().st_size
+          events=[]
+          state={1:{'year':'Tahun 1'}}
+          def send(cid,msg,kb):
+              events.append(('SEND',msg,kb))
+          def lesson_to_class(cid):
+              events.append(('LESSON_TO_CLASS',cid))
+          g={'callback':lambda cid,d: events.append(('LEGACY',d)), 'state':state,
+             'send':send,'_lesson_to_class_v2439':lesson_to_class,
+             'SUBJECTS':[],'SUBJECT_LABEL':{},'SUBJECTS_BY_GRADE':{}}
+          install(g)
+          g['callback'](1,'sub_Pendidikan Jasmani')
+          assert events and 'Pilih PdP' in events[-1][1],events
+          rows=state[1].get('_pjpk_v2616_rows') or []
+          assert rows, 'No fully verified SK/SP rows available to generate RPH'
+          g['callback'](1,'pjpk2616pdp|0')
+          ss=state[1]
+          assert any(x[0]=='LESSON_TO_CLASS' for x in events),events
+          assert ss['subject']=='Pendidikan Jasmani'
+          assert ss['quick_rpt_row']['id']==ss['rpt_entry_id']
+          assert ss['selected_sk'] and ss['sk_code']
+          assert ss['selected_sp'] and ss['sp_code']
+          assert ss['rph_mode']=='fast_rpt' and ss['task']=='quick_material'
+          assert db.stat().st_size==before
+          print('PASS: verified SK/SP row reaches RPH class flow; DB unchanged')
           PY
