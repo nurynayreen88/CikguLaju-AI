@@ -94,6 +94,16 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
         if not links or any(not (x["standard_code"] or "").strip() or not (x["standard_text"] or "").strip() for x in links):
             raise ValueError("Missing standard code/text; cannot render")
         page = c.execute("SELECT textbook_page,match_status FROM pjpk_v40_page_sp_crosswalk WHERE entry_id=?", (entry_id,)).fetchone()
+        rpt_page_evidence = None
+        if mode == "preview" and e["subject"] == "Pendidikan Jasmani":
+            try:
+                from pjpk_rpt_page_evidence_v2677 import lookup_page_evidence
+                rpt_page_evidence = lookup_page_evidence(
+                    e["year_label"], e["subject"], e["unit_title"], e["topic"],
+                    Path(__file__).resolve().parent
+                )
+            except (OSError, ValueError) as exc:
+                rpt_page_evidence = {"status": "RPT_PAGE_LOOKUP_ERROR", "pages": [], "rpt_sp_codes": [], "source_file": str(exc)}
         component = g["component"]
         if component == "PJ":
             phases = [
@@ -200,8 +210,26 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
         lines.extend(phases)
         if e["assessment_note"]:
             lines.append("Nota pentaksiran sumber RPT: " + e["assessment_note"])
+        if rpt_page_evidence:
+            if rpt_page_evidence.get("pages"):
+                lines.append(
+                    "Rujukan halaman menurut RPT 2026: m/s " + ", ".join(rpt_page_evidence["pages"])
+                    + " [" + rpt_page_evidence["status"] + "; perlu semakan silang dengan PDF buku teks]."
+                )
+                rpt_codes = set(rpt_page_evidence.get("rpt_sp_codes") or [])
+                db_codes = {x["standard_code"] for x in links if x["standard_type"] == "SP"}
+                if rpt_codes and rpt_codes != db_codes:
+                    lines.append(
+                        "AMARAN PADANAN SP RPT vs DB — kod RPT: "
+                        + ", ".join(sorted(rpt_codes)) + "; kod pautan DB: "
+                        + ", ".join(sorted(db_codes)) + ". Perlu semakan; pautan DB tidak diubah."
+                    )
+            else:
+                lines.append("Rujukan halaman RPT belum dipadankan secara tepat: " + rpt_page_evidence["status"] + ".")
         if page:
-            lines.append("Rujukan buku teks (padanan perlu semakan): m/s " + str(page["textbook_page"]) + " [" + page["match_status"] + "]")
+            lines.append("Rujukan buku teks daripada silang semak PDF sedia ada: m/s " + str(page["textbook_page"]) + " [" + page["match_status"] + "]")
+            if rpt_page_evidence and rpt_page_evidence.get("pages") and str(page["textbook_page"]) not in rpt_page_evidence["pages"]:
+                lines.append("AMARAN: halaman silang semak PDF berbeza daripada halaman yang dinyatakan RPT; kedua-duanya dikekalkan untuk semakan.")
         if entry_id == 2279 and mode == "preview":
             proposal = c.execute("SELECT standard_code,standard_text FROM pjpk_v49_verified_additive_link WHERE entry_id=?", (entry_id,)).fetchone()
             if proposal:
