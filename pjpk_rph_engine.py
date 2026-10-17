@@ -120,7 +120,7 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
                 elif not str(existing.get("standard_text") or "").strip():
                     existing["standard_text"] = source_standard["standard_text"]
                     existing["rpt_source_only"] = True
-                elif re.sub(r"[^\\w]+", " ", str(existing["standard_text"]).casefold()).strip() != re.sub(r"[^\\w]+", " ", str(source_standard["standard_text"]).casefold()).strip():
+                elif re.sub(r"[^\w]+", " ", str(existing["standard_text"]).casefold()).strip() != re.sub(r"[^\w]+", " ", str(source_standard["standard_text"]).casefold()).strip():
                     rpt_standard_text_differences.append(key[0] + " " + key[1])
             links.sort(key=lambda x: (0 if x["standard_type"] == "SK" else 1, x["standard_code"]))
         component = g["component"]
