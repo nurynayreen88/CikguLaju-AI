@@ -15,6 +15,9 @@ class TestPjpkRptPageEvidenceV2677(unittest.TestCase):
         self.assertIn(result["status"], {"RPT_PAGE_REFERENCE_ONLY", "RPT_MULTIPLE_PAGE_REFERENCES_REVIEW"})
         self.assertIn("3", result["pages"])
         self.assertIn("1.1.2", result["rpt_sp_codes"])
+        self.assertEqual(result["standards_status"], "RPT_STANDARDS_EXTRACTED")
+        self.assertTrue(any(x["standard_type"] == "SK" and x["standard_code"] == "1.1" and x["standard_text"] for x in result["rpt_standards"]))
+        self.assertTrue(any(x["standard_type"] == "SP" and x["standard_code"] == "1.1.2" and x["standard_text"] for x in result["rpt_standards"]))
 
     def test_year5_rpt_page_reference(self):
         result = lookup_page_evidence(
