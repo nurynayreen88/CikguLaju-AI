@@ -4,8 +4,10 @@ import csv
 import hashlib
 import re
 import sqlite3
+import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from pypdf import PdfReader
 from preview_server import DB, QUARANTINE, pdf
 from pjpk_private_menu import ensure_menu_view
