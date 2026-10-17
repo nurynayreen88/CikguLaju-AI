@@ -41,6 +41,7 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
             'WHERE rpt_entry_id=? ORDER BY CASE standard_type WHEN "SK" THEN 0 ELSE 1 END,sequence_no',
             (entry_id,)
         )]
+        db_sp_codes_original = {x["standard_code"] for x in links if x["standard_type"] == "SP"}
         if mode == "preview":
             for x in links:
                 if x["standard_text"] or x["standard_type"] != "SP":
@@ -103,7 +104,25 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
                     Path(__file__).resolve().parent
                 )
             except (OSError, ValueError) as exc:
-                rpt_page_evidence = {"status": "RPT_PAGE_LOOKUP_ERROR", "pages": [], "rpt_sp_codes": [], "source_file": str(exc)}
+                rpt_page_evidence = {"status": "RPT_PAGE_LOOKUP_ERROR", "pages": [], "rpt_sp_codes": [], "rpt_standards": [], "source_file": str(exc)}
+        rpt_standard_text_differences = []
+        if mode == "preview" and rpt_page_evidence and rpt_page_evidence.get("standards_status") == "RPT_STANDARDS_EXTRACTED":
+            for source_standard in rpt_page_evidence.get("rpt_standards") or []:
+                key = (source_standard["standard_type"], source_standard["standard_code"])
+                existing = next((x for x in links if (x["standard_type"], x["standard_code"]) == key), None)
+                if existing is None:
+                    links.append({
+                        "standard_type": source_standard["standard_type"],
+                        "standard_code": source_standard["standard_code"],
+                        "standard_text": source_standard["standard_text"],
+                        "rpt_source_only": True,
+                    })
+                elif not str(existing.get("standard_text") or "").strip():
+                    existing["standard_text"] = source_standard["standard_text"]
+                    existing["rpt_source_only"] = True
+                elif re.sub(r"[^\\w]+", " ", str(existing["standard_text"]).casefold()).strip() != re.sub(r"[^\\w]+", " ", str(source_standard["standard_text"]).casefold()).strip():
+                    rpt_standard_text_differences.append(key[0] + " " + key[1])
+            links.sort(key=lambda x: (0 if x["standard_type"] == "SK" else 1, x["standard_code"]))
         component = g["component"]
         if component == "PJ":
             phases = [
@@ -132,7 +151,13 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
         ]
         if scope_note:
             lines.append(scope_note)
-        lines.extend(x["standard_type"] + " " + x["standard_code"] + " — " + x["standard_text"] for x in links)
+        for item in links:
+            standard_line = item["standard_type"] + " " + item["standard_code"] + " — " + item["standard_text"]
+            if item.get("rpt_source_only"):
+                standard_line += " [RPT SOURCE ONLY; belum disahkan sebagai pautan DB]"
+            lines.append(standard_line)
+        if rpt_standard_text_differences:
+            lines.append("AMARAN: teks standard RPT berbeza daripada teks pautan DB bagi " + ", ".join(sorted(set(rpt_standard_text_differences))) + ". Kedua-dua sumber dikekalkan; semakan diperlukan.")
         # Cross-check RPT SP wording against directly transcribed DSKP evidence.
         # This is read-only and does not promote the production gate.
         if mode == "preview":
@@ -217,7 +242,7 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
                     + " [" + rpt_page_evidence["status"] + "; perlu semakan silang dengan PDF buku teks]."
                 )
                 rpt_codes = set(rpt_page_evidence.get("rpt_sp_codes") or [])
-                db_codes = {x["standard_code"] for x in links if x["standard_type"] == "SP"}
+                db_codes = set(db_sp_codes_original)
                 if rpt_codes and rpt_codes != db_codes:
                     lines.append(
                         "AMARAN PADANAN SP RPT vs DB — kod RPT: "
