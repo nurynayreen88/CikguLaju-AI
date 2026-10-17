@@ -32,7 +32,7 @@ These numbers are from the isolated candidate DB and committed evidence bundle; 
 | PJ entries without an exact unit/topic RPT match | 9 / 101 |
 | Independent textbook-page crosswalk rows currently in DB | 9 |
 
-The private preview test covers 137 eligible draft entries. A new CI step is being added to render each eligible draft as a one-page A4 PDF, with a manifest and a short-lived GitHub Actions artifact for review.
+The private preview test covers 137 eligible draft entries. CI is now wired to render each eligible draft as a one-page A4 PDF, with a manifest and a short-lived GitHub Actions artifact for review; the final render job is being checked.
 
 ## Still blocking production readiness
 
