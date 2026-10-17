@@ -6,6 +6,7 @@ on:
     paths:
       - 'app.py'
       - 'pjpk_*.py'
+      - 'tests/test_pjpk_rpt_page_evidence_v2677.py'
       - 'curriculum_sources/pjpk/dskp_sp_evidence_v2676.csv.gz.base64'
       - 'tests/test_pjpk_dskp_evidence_v2676.py'
       - 'curriculum_sources/pjpk/dskp_sp_evidence_v2676.csv.gz.base64'
@@ -51,7 +52,7 @@ jobs:
           python-version: '3.11'
       - name: Parse app and PJPK modules
         run: |
-          python -m py_compile app.py scripts/activate_pjpk_v26_16.py pjpk_t3_safe_preview_adapter.py pjpk_rpt_bridge_v2659.py pjpk_activity_planner_v2665.py pjpk_activity_adapter_v2666.py pjpk_rph_integration_v2664.py pjpk_rph_composer_v2669.py pjpk_rph_quality_v2672.py pjpk_private_menu.py pjpk_private_same_bot_v4.py pjpk_dskp_evidence_v2676.py pjpk_rph_engine.py scripts/audit_pjpk_dskp_evidence_v2676.py preview_server.py rebuild_pjpk_candidate.py tests/test_pjpk_private_preview_v4.py tests/test_pjpk_dskp_evidence_v2676.py
+          python -m py_compile app.py scripts/activate_pjpk_v26_16.py pjpk_t3_safe_preview_adapter.py pjpk_rpt_bridge_v2659.py pjpk_activity_planner_v2665.py pjpk_activity_adapter_v2666.py pjpk_rph_integration_v2664.py pjpk_rph_composer_v2669.py pjpk_rph_quality_v2672.py pjpk_private_menu.py pjpk_private_same_bot_v4.py pjpk_dskp_evidence_v2676.py pjpk_rpt_page_evidence_v2677.py pjpk_rph_engine.py scripts/audit_pjpk_dskp_evidence_v2676.py preview_server.py rebuild_pjpk_candidate.py tests/test_pjpk_private_preview_v4.py tests/test_pjpk_dskp_evidence_v2676.py tests/test_pjpk_rpt_page_evidence_v2677.py
       - name: Audit actual bundled runtime DB PJPK coverage (read-only)
         run: python scripts/audit_pjpk_runtime_coverage_v2618.py
       - name: Rebuild isolated candidate DB without touching production DB
@@ -89,5 +90,7 @@ jobs:
         run: python -m unittest tests.test_pjpk_runtime_integration_v2618 tests.test_pjpk_rph_composer_v2669 tests.test_pjpk_refinement_v2672 tests.test_pjpk_coverage_v2670
       - name: Test exact-scope DSKP evidence bundle
         run: python -m unittest tests.test_pjpk_dskp_evidence_v2676
+      - name: Test RPT-derived textbook page evidence
+        run: python -m unittest tests.test_pjpk_rpt_page_evidence_v2677
       - name: Test all-year private PJPK preview and PDF gates
         run: python -m unittest tests.test_pjpk_private_preview_v4
