@@ -13,7 +13,7 @@ from pathlib import Path
 
 VALID_YEARS = {f"Tahun {n}" for n in range(1, 7)}
 SUBJECTS = {"PJ": "Pendidikan Jasmani", "PK": "Pendidikan Kesihatan"}
-CODE_RE = re.compile(r"^\\d+(?:\\.\\d+){1,2}$")
+CODE_RE = re.compile(r"^\d+(?:\.\d+){1,2}$")
 
 
 def load_evidence(root=None):
@@ -53,6 +53,6 @@ def reconcile_sp_text(year, subject, code, rpt_text, evidence):
     if len(variants) != 1 or any(row["source_status"] != "DIRECT_DSKP_TEXT_TRANSCRIBED" for row in rows):
         return {"status": "CONFLICT_REVIEW", "dskp_text": "", "source_document": " | ".join(sorted({r["source_document"] for r in rows}))}
     dskp_text = next(iter(variants))
-    normalize = lambda value: re.sub(r"[^\\w]+", " ", str(value or "").casefold(), flags=re.UNICODE).strip()
+    normalize = lambda value: re.sub(r"[^\w]+", " ", str(value or "").casefold(), flags=re.UNICODE).strip()
     status = "EXACT_TEXT_MATCH" if normalize(rpt_text) == normalize(dskp_text) else "TEXT_DIFF_REVIEW"
     return {"status": status, "dskp_text": dskp_text, "source_document": rows[0]["source_document"], "source_file_id": rows[0]["source_file_id"]}
