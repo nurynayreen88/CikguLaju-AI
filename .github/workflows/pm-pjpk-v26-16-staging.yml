@@ -71,8 +71,11 @@ jobs:
           assert any(x[0]=='LESSON_TO_CLASS' for x in events),events
           assert ss['subject']=='Pendidikan Jasmani'
           assert ss['quick_rpt_row']['id']==ss['rpt_entry_id']
-          assert ss['selected_sk'] and ss['sk_code']
           assert ss['selected_sp'] and ss['sp_code']
+          if ss.get('selected_sk'):
+              assert ss.get('sk_code') and not ss.get('pjpk_generic_mode_v2616')
+          else:
+              assert ss.get('pjpk_generic_mode_v2616') is True
           assert ss['rph_mode']=='fast_rpt' and ss['task']=='quick_material'
           assert db.stat().st_size==before
           print('PASS: verified SK/SP row reaches RPH class flow; DB unchanged')

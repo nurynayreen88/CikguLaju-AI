@@ -45,9 +45,11 @@ def install(g):
                     FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
                     ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",
                     (row["id"],))]
-        # No RPH without verified SK and SP.
-        return [r for r in rows if any(x["standard_type"] == "SK" for x in r["_std"])
-                and any(x["standard_type"] == "SP" for x in r["_std"])]
+        # Verified SP is required. If SK is not verified, leave it blank rather than inventing it.
+        return [r for r in rows if any(
+            x["standard_type"] == "SP" and str(x.get("standard_code") or "").strip()
+            for x in r["_std"]
+        )]
 
     def menu(cid, page=0):
         ss = g["state"].setdefault(cid, {})
@@ -75,7 +77,7 @@ def install(g):
             kb.append(nav)
         kb.append([{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}])
         return g["send"](cid,
-            f"🏃 <b>{html.escape(subject)} • {html.escape(year)}</b>\\n\\nPilih PdP yang telah disahkan.",
+            f"🏃 <b>{html.escape(subject)} • {html.escape(year)}</b>\n\nPilih PdP yang telah disahkan. SK yang belum disahkan tidak direka.",
             kb)
 
     def commit_pdp(cid, row):
@@ -93,7 +95,7 @@ def install(g):
             elif item.get("standard_type") == "SP" and code not in sps:
                 sps.append(code)
                 sptexts.append(text)
-        if not sks or not sps:
+        if not sps:
             return menu(cid)
         for key in (
             "selected_sk", "sk_code", "sk_text", "selected_sk_codes",
@@ -106,6 +108,7 @@ def install(g):
             "rpt_activity_note", "rpt_assessment_note",
         ):
             ss.pop(key, None)
+        ss["pjpk_generic_mode_v2616"] = not bool(sks)
         ss["task"] = "quick_material"
         ss["quick_material_flow"] = True
         ss["assessment_mode"] = "formative"
@@ -130,9 +133,10 @@ def install(g):
         ss["grouped_sp_codes"] = sps[:4]
         ss["selected_sp_codes"] = sps[:4]
         ss["grouped_sp_texts"] = sptexts[:4]
-        ss["selected_sk"] = sks[0]
-        ss["sk_code"] = sks[0]
-        ss["sk_text"] = sktexts[0]
+        if sks:
+            ss["selected_sk"] = sks[0]
+            ss["sk_code"] = sks[0]
+            ss["sk_text"] = sktexts[0]
         ss["selected_sp"] = sps[0]
         ss["sp_code"] = sps[0]
         ss["sp_text"] = sptexts[0]
