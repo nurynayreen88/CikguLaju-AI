@@ -35,10 +35,19 @@ class PJPKPrivatePreviewV4Tests(unittest.TestCase):
     def test_all_137_drafts_render_and_production_stays_blocked(self):
         rows = list_menu_rows(DB)
         eligible = [r for r in rows if r["entry_status"] == "REVIEW_ONLY" and r["entry_id"] not in QUARANTINE]
+        source_sk_recovered = 0
+        rpt_pages_recovered = 0
+        rpt_activity_recovered = 0
         for row in eligible:
             text = generate(str(DB), row["entry_id"], mode="preview")
             self.assertIn("DRAF SEMAKAN — BUKAN RPH PRODUKSI", text)
             self.assertIn("Status: DISEKAT DARIPADA PRODUKSI", text)
+            source_sk_recovered += int("[RPT SOURCE ONLY; belum disahkan sebagai pautan DB]" in text)
+            rpt_pages_recovered += int("Rujukan halaman menurut RPT 2026:" in text)
+            rpt_activity_recovered += int("Nota aktiviti/pentaksiran daripada RPT 2026" in text)
+        self.assertGreater(source_sk_recovered, 0, "Expected exact RPT SK text recovery in private drafts")
+        self.assertGreater(rpt_pages_recovered, 0, "Expected RPT page references in private drafts")
+        self.assertGreater(rpt_activity_recovered, 0, "Expected source RPT activity notes in private drafts")
         with self.assertRaises(ValueError):
             generate(str(DB), eligible[0]["entry_id"], mode="production")
 
