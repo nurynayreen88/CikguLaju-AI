@@ -123,6 +123,32 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
         if scope_note:
             lines.append(scope_note)
         lines.extend(x["standard_type"] + " " + x["standard_code"] + " — " + x["standard_text"] for x in links)
+        # Cross-check RPT SP wording against directly transcribed DSKP evidence.
+        # This is read-only and does not promote the production gate.
+        if mode == "preview":
+            try:
+                from pjpk_dskp_evidence_v2676 import load_evidence, reconcile_sp_text
+                evidence = load_evidence(Path(__file__).resolve().parent)
+                lines.append("Semakan silang DSKP (sumber langsung; status RPH kekal draf):")
+                for item in links:
+                    if item["standard_type"] != "SP":
+                        continue
+                    result = reconcile_sp_text(
+                        e["year_label"], e["subject"], item["standard_code"],
+                        item["standard_text"], evidence
+                    )
+                    code = item["standard_code"]
+                    if result["status"] == "NO_DIRECT_DSKP_TEXT":
+                        lines.append("DSKP " + code + ": teks langsung belum dipadankan untuk tahun/subjek ini.")
+                    elif result["status"] == "CONFLICT_REVIEW":
+                        lines.append("DSKP " + code + ": KONFLIK TEKS SUMBER — perlu semakan; teks tidak dipilih.")
+                    else:
+                        lines.append(
+                            "DSKP " + code + " [" + result["status"] + "] — "
+                            + result["dskp_text"] + " (Sumber: " + result["source_document"] + ")"
+                        )
+            except (OSError, ValueError, EOFError) as exc:
+                lines.append("Semakan silang DSKP tidak tersedia; kekal DRAF. Sebab: " + str(exc))
         first_sp = next((x for x in links if x["standard_type"] == "SP"), None)
         if first_sp:
             lines.append("Objektif (draf berasaskan SP, semakan guru wajib): Pada akhir PdP, murid dapat " + first_sp["standard_text"].rstrip(".") + ".")
