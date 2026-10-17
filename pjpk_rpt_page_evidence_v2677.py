@@ -7,9 +7,9 @@ import re
 import unicodedata
 from pathlib import Path
 
-ROW_RE = re.compile(r"(?<!\\d)(\\d{1,2})\\s+Kump(?:ulan)?\\s*A\\s*:", re.I)
-PAGE_RE = re.compile(r"(?:BT\\s*m/s|BUKU\\s*TEKS\\s*M/S)\\s*([0-9]+(?:\\s*-\\s*[0-9]+)?)", re.I)
-SP_RE = re.compile(r"(?<!\\d)(\\d+\\.\\d+\\.\\d+)(?!\\d)")
+ROW_RE = re.compile(r"(?<!\d)(\d{1,2})\s+Kump(?:ulan)?\s*A\s*:", re.I)
+PAGE_RE = re.compile(r"(?:BT\s*m/s|BUKU\s*TEKS\s*M/S)\s*([0-9]+(?:\s*-\s*[0-9]+)?)", re.I)
+SP_RE = re.compile(r"(?<!\d)(\d+\.\d+\.\d+)(?!\d)")
 
 
 def _norm(value):
@@ -22,7 +22,7 @@ def _unit_core(unit_title):
     value = str(unit_title or "").strip()
     if ":" in value:
         value = value.split(":", 1)[1]
-    value = re.sub(r"^\\s*unit\\s*\\d*\\s*", "", value, flags=re.I)
+    value = re.sub(r"^\s*unit\s*\d*\s*", "", value, flags=re.I)
     return _norm(value)
 
 
@@ -35,7 +35,7 @@ def _blocks(text):
         block = text[start:end]
         pages = []
         for page in PAGE_RE.findall(block):
-            page = re.sub(r"\\s+", "", page)
+            page = re.sub(r"\s+", "", page)
             if page not in pages:
                 pages.append(page)
         codes = sorted(set(SP_RE.findall(block)))
@@ -47,7 +47,7 @@ def lookup_page_evidence(year_label, subject, unit_title, topic, root=None):
     """Look up a page only on a same-year PJ RPT block with exact unit+topic."""
     if subject != "Pendidikan Jasmani":
         return {"status": "SOURCE_TEXT_NOT_AVAILABLE", "pages": [], "rpt_sp_codes": [], "source_file": ""}
-    match = re.fullmatch(r"Tahun\\s+([1-6])", str(year_label or "").strip(), re.I)
+    match = re.fullmatch(r"Tahun\s+([1-6])", str(year_label or "").strip(), re.I)
     if not match:
         return {"status": "SOURCE_SCOPE_INVALID", "pages": [], "rpt_sp_codes": [], "source_file": ""}
     base = Path(root) if root else Path(__file__).resolve().parent
@@ -66,7 +66,7 @@ def lookup_page_evidence(year_label, subject, unit_title, topic, root=None):
             matches.append(block)
     if not matches:
         return {"status": "NO_EXACT_UNIT_TOPIC_MATCH", "pages": [], "rpt_sp_codes": [], "source_file": filename}
-    pages = sorted({p for block in matches for p in block["pages"]}, key=lambda x: (int(re.match(r"\\d+", x).group()), x))
+    pages = sorted({p for block in matches for p in block["pages"]}, key=lambda x: (int(re.match(r"\d+", x).group()), x))
     codes = sorted({code for block in matches for code in block["sp_codes"]})
     status = "RPT_PAGE_REFERENCE_ONLY" if len(pages) == 1 else "RPT_MULTIPLE_PAGE_REFERENCES_REVIEW"
     return {
