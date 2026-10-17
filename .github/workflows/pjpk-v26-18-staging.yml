@@ -86,14 +86,6 @@ jobs:
         run: python scripts/audit_pjpk_dskp_evidence_v2676.py --db pjpk_candidate.db
       - name: Audit RPT-derived textbook pages (read-only)
         run: python scripts/audit_pjpk_rpt_page_evidence_v2677.py --db pjpk_candidate.db --summary-only
-      - name: Render all private draft RPH PDFs
-        run: python scripts/render_pjpk_draft_pdfs_v2678.py --outdir artifacts/pjpk_draft_pdfs_v2678
-      - name: Upload private draft RPH PDFs
-        uses: actions/upload-artifact@v4
-        with:
-          name: pjpk-private-draft-rph-pdfs-v2678
-          path: artifacts/pjpk_draft_pdfs_v2678/
-          retention-days: 7
       - name: Test bridge fail-closed behavior
         run: python test_pjpk_v26_18_bridge_gate.py
       - name: Install lightweight PDF test dependencies
@@ -106,3 +98,11 @@ jobs:
         run: python -m unittest tests.test_pjpk_rpt_page_evidence_v2677
       - name: Test all-year private PJPK preview and PDF gates
         run: python -m unittest tests.test_pjpk_private_preview_v4
+      - name: Render all private draft RPH PDFs
+        run: python scripts/render_pjpk_draft_pdfs_v2678.py --outdir artifacts/pjpk_draft_pdfs_v2678
+      - name: Upload private draft RPH PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: pjpk-private-draft-rph-pdfs-v2678
+          path: artifacts/pjpk_draft_pdfs_v2678/
+          retention-days: 7
