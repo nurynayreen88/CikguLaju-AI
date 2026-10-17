@@ -80,6 +80,74 @@ def install(g):
             f"🏃 <b>{html.escape(subject)} • {html.escape(year)}</b>\\n\\nPilih PdP. RPH sementara menggunakan SP disahkan; SK yang belum disahkan tidak direka.",
             kb)
 
+    def commit_pdp(cid, row):
+        """Populate shared RPH state directly from a verified PJPK row."""
+        ss = g["state"].setdefault(cid, {})
+        standards = list(row.get("_std") or [])
+        sks, sktexts, sps, sptexts = [], [], [], []
+        for item in standards:
+            code = str(item.get("standard_code") or "").strip()
+            text = str(item.get("standard_text") or "").strip()
+            if not code:
+                continue
+            if item.get("standard_type") == "SK" and code not in sks:
+                sks.append(code)
+                sktexts.append(text)
+            elif item.get("standard_type") == "SP" and code not in sps:
+                sps.append(code)
+                sptexts.append(text)
+        # An SP is mandatory for RPH; never invent missing curriculum standards.
+        if not sps:
+            return menu(cid)
+        for key in (
+            "selected_sk", "sk_code", "sk_text", "selected_sk_codes",
+            "grouped_sk_codes", "grouped_sk_texts", "selected_sp", "sp_code",
+            "sp_text", "selected_sp_codes", "grouped_sp_codes", "grouped_sp_texts",
+            "topic", "subtopic", "selected_topic_index", "topic_list",
+            "quick_content_v2391", "_quick_tb_rows_v2391",
+            "_quick_rpt_rows_content_v2391", "rpt_entry_id", "pdp_no",
+            "lesson_no", "theme", "unit", "unit_title", "skill_focus",
+            "rpt_activity_note", "rpt_assessment_note",
+        ):
+            ss.pop(key, None)
+        ss["pjpk_generic_mode_v2616"] = True
+        ss["task"] = "quick_material"
+        ss["quick_material_flow"] = True
+        ss["assessment_mode"] = "formative"
+        ss["rph_mode"] = "fast_rpt"
+        ss["_quick_selected_rpt_row_v2388"] = dict(row)
+        ss["quick_rpt_row"] = dict(row)
+        ss["rpt_entry_id"] = row.get("id")
+        ss["pdp_no"] = row.get("sequence_no")
+        ss["lesson_no"] = str(row.get("sequence_no") or "")
+        ss["theme"] = str(row.get("theme") or "").strip()
+        ss["unit"] = str(row.get("unit_title") or "").strip()
+        ss["unit_title"] = ss["unit"]
+        ss["topic"] = str(row.get("topic") or row.get("skill_focus") or row.get("unit_title") or "").strip()
+        ss["subtopic"] = str(row.get("subtopic") or "").strip()
+        ss["skill_focus"] = str(row.get("skill_focus") or "").strip()
+        ss["quick_content_v2391"] = ss["unit"] or ss["topic"]
+        ss["rpt_activity_note"] = str(row.get("activity_note") or "").strip()
+        ss["rpt_assessment_note"] = str(row.get("assessment_note") or "").strip()
+        ss["grouped_sk_codes"] = sks
+        ss["selected_sk_codes"] = sks
+        ss["grouped_sk_texts"] = sktexts
+        ss["grouped_sp_codes"] = sps[:4]
+        ss["selected_sp_codes"] = sps[:4]
+        ss["grouped_sp_texts"] = sptexts[:4]
+        ss["selected_sp"] = sps[0]
+        ss["sp_code"] = sps[0]
+        ss["sp_text"] = sptexts[0]
+        if sks:
+            ss["selected_sk"] = sks[0]
+            ss["sk_code"] = sks[0]
+            ss["sk_text"] = sktexts[0]
+        lesson_to_class = g.get("_lesson_to_class_v2439")
+        if callable(lesson_to_class):
+            return lesson_to_class(cid)
+        return g["send"](cid, "⚠️ Laluan pemilihan kelas untuk RPH belum tersedia. Sila cuba lagi kemudian.",
+                           [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+
     def callback(cid, d):
         ss = g["state"].setdefault(cid, {})
         ds = str(d or "")
@@ -87,6 +155,13 @@ def install(g):
             ss["subject"] = ds[4:]
             ss["task"] = "quick_material"
             ss["quick_material_flow"] = True
+            ss["assessment_mode"] = "formative"
+            ss["pjpk_generic_mode_v2616"] = True
+            for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes",
+                        "grouped_sk_codes", "grouped_sk_texts", "selected_sp", "sp_code",
+                        "sp_text", "selected_sp_codes", "grouped_sp_codes", "grouped_sp_texts",
+                        "_quick_selected_rpt_row_v2388", "quick_rpt_row"):
+                ss.pop(key, None)
             return menu(cid)
         if ds.startswith("pjpk2616page|") and ss.get("subject") in (s for _, s in subjects):
             try:
@@ -99,19 +174,6 @@ def install(g):
                 row = rows[int(ds.split("|", 1)[1])]
             except (ValueError, IndexError):
                 return menu(cid)
-            if not row.get("_std"):
-                return menu(cid)
-            # Generic fallback is explicitly marked; do not reuse stale SK from a previous selection.
-            ss["pjpk_generic_mode_v2616"] = True
-            for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes", "grouped_sk_codes", "grouped_sk_texts", "selected_sp", "sp_code", "sp_text", "selected_sp_codes", "grouped_sp_codes", "grouped_sp_texts"):
-                ss.pop(key, None)
-            # Existing PM selection helper reads this cached row list.
-            ss["_pm_pdp_rows_v2602"] = rows
-            result = g["_pm_commit_pdp_v2602"](cid, rows.index(row))
-            # Do not allow stale SK fields to survive the shared selection helper.
-            if not any(x["standard_type"] == "SK" for x in row["_std"]):
-                for key in ("selected_sk", "sk_code", "sk_text", "selected_sk_codes", "grouped_sk_codes", "grouped_sk_texts"):
-                    ss.pop(key, None)
-            return result
+            return commit_pdp(cid, row)
         return old_callback(cid, d)
     g["callback"] = callback

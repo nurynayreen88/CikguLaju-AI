@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - staging/pm-pjpk-v26-16
+      - staging/pjpk-private-pdf-v2656
       - main
     paths:
       - 'CikguLaju_v26_16.db.part*'
@@ -22,6 +23,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Compile PJPK integration modules
+        run: |
+          python -m py_compile scripts/activate_pjpk_v26_16.py scripts/pjpk_v26_16_adapter.py scripts/rebuild_pm_pjpk_v26_16.py scripts/check_pm_pjpk_v26_16.py
       - name: Reconstruct safely and check database
         run: |
           python scripts/rebuild_pm_pjpk_v26_16.py
@@ -55,18 +59,23 @@ jobs:
           state={1:{'year':'Tahun 1'}}
           def send(cid,msg,kb):
               events.append((msg,kb))
-          def commit(cid,idx):
-              events.append(('COMMIT',idx))
+          def lesson_to_class(cid):
+              events.append(('LESSON_TO_CLASS',cid))
           g={'callback':lambda cid,d: events.append(('LEGACY',d)), 'state':state,
-             'send':send,'_pm_commit_pdp_v2602':commit,
+             'send':send,'_lesson_to_class_v2439':lesson_to_class,
              'SUBJECTS':[],'SUBJECT_LABEL':{},'SUBJECTS_BY_GRADE':{}}
           install(g)
           g['callback'](1,'sub_Pendidikan Jasmani')
           assert events and 'Pilih PdP' in events[-1][0],events
           assert len(state[1]['_pjpk_v2616_rows'])==33
           g['callback'](1,'pjpk2616pdp|0')
-          assert any(x[0]=='COMMIT' for x in events),events
-          assert state[1]['pjpk_generic_mode_v2616'] is True
+          ss=state[1]
+          assert any(x[0]=='LESSON_TO_CLASS' for x in events),events
+          assert ss['pjpk_generic_mode_v2616'] is True
+          assert ss['subject']=='Pendidikan Jasmani'
+          assert ss['quick_rpt_row']['id'] == ss['rpt_entry_id']
+          assert ss['selected_sp'] and ss['sp_code']
+          assert ss['rph_mode']=='fast_rpt' and ss['task']=='quick_material'
           assert db.stat().st_size==before
-          print('PASS: generic menu, 33 PJ T1 rows, selection callback, DB unchanged')
+          print('PASS: menu, verified PdP, SP/context state, RPH class route, DB unchanged')
           PY
