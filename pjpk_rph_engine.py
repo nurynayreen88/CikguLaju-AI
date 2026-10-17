@@ -111,6 +111,12 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
             for source_standard in rpt_page_evidence.get("rpt_standards") or []:
                 key = (source_standard["standard_type"], source_standard["standard_code"])
                 existing = next((x for x in links if (x["standard_type"], x["standard_code"]) == key), None)
+                if source_standard["standard_type"] == "SP":
+                    # Never add or replace SP links in-memory: scoped previews and
+                    # source-backed SP corrections must remain fail-closed.
+                    if existing and re.sub(r"[^\w]+", " ", str(existing.get("standard_text") or "").casefold()).strip() != re.sub(r"[^\w]+", " ", str(source_standard["standard_text"]).casefold()).strip():
+                        rpt_standard_text_differences.append(key[0] + " " + key[1])
+                    continue
                 if existing is None:
                     links.append({
                         "standard_type": source_standard["standard_type"],
