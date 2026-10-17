@@ -239,6 +239,11 @@ def generate(db_path, entry_id, mode="preview", duration_minutes=30):
                 lines.append("DRAF AKTIVITI BERASASKAN TEKS SP (" + draft["sp_basis"] + "); SEMAKAN EDITORIAL WAJIB. Bukan petikan buku teks/RPT.")
             else:
                 lines.append("AMARAN KUALITI: aktiviti masih templat umum; semakan editorial wajib. Skop SP cadangan memerlukan aktiviti baharu yang disemak.")
+        if rpt_page_evidence and rpt_page_evidence.get("activity_status") == "RPT_ACTIVITY_EXTRACTED":
+            rpt_activity_note = rpt_page_evidence.get("rpt_activity_note") or ""
+            db_activity_note = str(e["activity_note"] or "").casefold()
+            if rpt_activity_note and rpt_activity_note.casefold() not in db_activity_note:
+                lines.append("Nota aktiviti/pentaksiran daripada RPT 2026 (sumber asal): " + rpt_activity_note)
         lines.extend(phases)
         if e["assessment_note"]:
             lines.append("Nota pentaksiran sumber RPT: " + e["assessment_note"])
