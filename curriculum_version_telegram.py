@@ -31,9 +31,10 @@ def install(namespace):
                   "callback_data":"cv_build_"+str(i)}]
                 for i,sub in enumerate(candidates)]
             st["_kp2027_subject_candidates"]=candidates
-            kb.extend([[{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}],
+            kb.extend([[{"text":"📖 Pratonton Kerangka Rasmi KP2027","callback_data":"cv_preview"}],
+                       [{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}],
                        [{"text":"🏠 Menu Utama","callback_data":"home"}]])
-            return send(cid,"📚 <b>KP2027 • "+label+"</b>\\n\\n"
+            return send(cid,"📚 <b>KP2027 • "+label+"</b>\n\n"
                         "Senarai subjek untuk persediaan katalog (tertakluk pengesahan dokumen rasmi). "
                         "Semua masih 🚧 Dalam Pembinaan; RPH belum boleh dijana.",kb)
         if not result["enabled"]:
@@ -58,9 +59,20 @@ def install(namespace):
                 if idx<0: raise IndexError()
             except (ValueError,IndexError):
                 return subjects(cid,st.get("year","Tahun 1"))
-            return send(cid,"🚧 <b>"+subject_label.get(sub,sub)+" — KP2027</b>\\n"
+            return send(cid,"🚧 <b>"+subject_label.get(sub,sub)+" — KP2027</b>\n"
                         "Dalam Pembinaan. Dokumen rasmi dan pemetaan SK/SP belum disahkan; "
                         "penjanaan RPH belum dibuka.",[
+                        [{"text":"⬅️ Senarai Subjek KP2027","callback_data":"cv_subjects"}],
+                        [{"text":"🏠 Menu Utama","callback_data":"home"}]])
+        if d=="cv_preview":
+            label=st.get("year","Tahun 1")
+            focus=("Literasi, numerasi dan pembentukan karakter." if label=="Tahun 1"
+                   else "Meneroka pelbagai bidang ilmu, minat, potensi dan pembentukan karakter.")
+            return send(cid,"📖 <b>Pratonton KP2027 • "+label+"</b>\\n\\n"
+                        "Fokus kerangka rasmi: "+focus+"\\n\\n"
+                        "Sumber: https://www.moe.gov.my/kurikulum-persekolahan-2027\\n"
+                        "Ini kerangka umum KPM, bukan DSKP atau SK/SP khusus subjek. "
+                        "RPH KP2027 masih dalam pembinaan.",[
                         [{"text":"⬅️ Senarai Subjek KP2027","callback_data":"cv_subjects"}],
                         [{"text":"🏠 Menu Utama","callback_data":"home"}]])
         if d=="cv_subjects":
