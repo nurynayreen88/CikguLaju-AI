@@ -6,6 +6,7 @@ a release gate. A code is usable only for the same year and subject; conflicting
 source wordings fail closed.
 """
 import base64
+import csv
 import gzip
 import json
 import re
@@ -38,6 +39,26 @@ def load_evidence(root=None):
             "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED" if status == "D" else "CONFLICT_REVIEW",
         }
         index.setdefault((year, subject, code), []).append(row)
+    # Supplement only with explicitly source-cited transcriptions. Existing bundle
+    # rows are retained so conflicting texts still fail closed during reconciliation.
+    supplement = (Path(root) if root else Path(__file__).resolve().parent) / "curriculum_sources" / "pjpk" / "dskp_sp_verified_supplement_v2679.csv"
+    if supplement.is_file():
+        with supplement.open("r", encoding="utf-8-sig", newline="") as stream:
+            for item in csv.DictReader(stream):
+                year = str(item.get("year_label", "")).strip()
+                subject = str(item.get("subject", "")).strip()
+                code = str(item.get("sp_code", "")).strip()
+                text = str(item.get("sp_text", "")).strip()
+                if year not in VALID_YEARS or subject not in SUBJECTS.values() or not CODE_RE.fullmatch(code) or not text:
+                    raise ValueError("Invalid source-cited PJPK DSKP supplement row: " + repr((year, subject, code)))
+                row = {
+                    "year_label": year, "subject": subject, "sp_code": code,
+                    "sp_text": text,
+                    "source_document": str(item.get("source_document", "")).strip(),
+                    "source_file_id": str(item.get("source_file_id", "")).strip(),
+                    "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED",
+                }
+                index.setdefault((year, subject, code), []).append(row)
     if len(index) < 300:
         raise ValueError(f"PJPK DSKP evidence bundle unexpectedly small: {len(index)} exact keys")
     return index
