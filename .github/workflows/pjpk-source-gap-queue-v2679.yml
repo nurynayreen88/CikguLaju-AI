@@ -23,6 +23,9 @@ on:
       - 'tests/test_pjpk_source_priority_v2686.py'
       - 'tests/test_pjpk_verified_evidence_export_v2687.py'
       - 'tests/test_verify_pjpk_evidence_export_v2688.py'
+      - 'tests/test_pjpk_original_dskp_integration_v2695.py'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t1_pj_2015_v2692.csv'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t2_t6_pj_v2693.csv'
       - 'docs/pjpk_batch_audit_v2680.md'
       - 'tests/test_pjpk_source_gap_queue_v2679.py'
       - 'rebuild_pjpk_candidate.py'
@@ -51,6 +54,9 @@ on:
       - 'tests/test_pjpk_source_priority_v2686.py'
       - 'tests/test_pjpk_verified_evidence_export_v2687.py'
       - 'tests/test_verify_pjpk_evidence_export_v2688.py'
+      - 'tests/test_pjpk_original_dskp_integration_v2695.py'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t1_pj_2015_v2692.csv'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t2_t6_pj_v2693.csv'
       - 'docs/pjpk_batch_audit_v2680.md'
       - 'tests/test_pjpk_source_gap_queue_v2679.py'
       - 'rebuild_pjpk_candidate.py'
@@ -69,7 +75,7 @@ jobs:
       - name: Compile source-gap queue
         run: python -m py_compile scripts/pjpk_source_gap_queue_v2679.py scripts/pjpk_12_scope_summary_v2680.py scripts/pjpk_entry_worklist_v2681.py scripts/verify_pjpk_batch_v2682.py scripts/pjpk_source_review_packet_v2683.py scripts/validate_pjpk_source_review_v2684.py scripts/pjpk_review_manifest_v2685.py scripts/pjpk_source_priority_v2686.py scripts/pjpk_verified_evidence_export_v2687.py scripts/verify_pjpk_evidence_export_v2688.py tests/test_pjpk_12_scope_summary_v2680.py tests/test_pjpk_entry_worklist_v2681.py tests/test_verify_pjpk_batch_v2682.py tests/test_pjpk_source_review_packet_v2683.py tests/test_validate_pjpk_source_review_v2684.py tests/test_pjpk_review_manifest_v2685.py tests/test_pjpk_source_priority_v2686.py tests/test_pjpk_verified_evidence_export_v2687.py tests/test_verify_pjpk_evidence_export_v2688.py pjpk_dskp_evidence_v2676.py
       - name: Test read-only behavior and fail-closed schema
-        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680 tests.test_pjpk_entry_worklist_v2681 tests.test_verify_pjpk_batch_v2682 tests.test_pjpk_source_review_packet_v2683 tests.test_validate_pjpk_source_review_v2684 tests.test_pjpk_review_manifest_v2685 tests.test_pjpk_source_priority_v2686 tests.test_pjpk_verified_evidence_export_v2687 tests.test_verify_pjpk_evidence_export_v2688
+        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680 tests.test_pjpk_entry_worklist_v2681 tests.test_verify_pjpk_batch_v2682 tests.test_pjpk_source_review_packet_v2683 tests.test_validate_pjpk_source_review_v2684 tests.test_pjpk_review_manifest_v2685 tests.test_pjpk_source_priority_v2686 tests.test_pjpk_verified_evidence_export_v2687 tests.test_verify_pjpk_evidence_export_v2688 tests.test_pjpk_original_dskp_integration_v2695
       - name: Rebuild isolated PJPK candidate database
         run: python rebuild_pjpk_candidate.py
       - name: Generate actionable source-gap review files
