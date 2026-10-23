@@ -75,6 +75,13 @@ jobs:
           assert data["read_only"] is True
           assert data["production_promoted"] is False
           assert data["queue_count"] == len(rows)
+          packet = list(csv.DictReader((root / "source_review_packet_12_scopes.csv").open(encoding="utf-8-sig", newline="")))
+          review_check = json.loads((root / "review_import_safety.json").read_text(encoding="utf-8"))
+          assert len(packet) == len(rows)
+          assert review_check["total"] == len(rows)
+          assert review_check["still_blocked"] == len(rows)
+          assert review_check["source_verified_for_further_audit"] == 0
+          assert review_check["production_promoted"] is False
           summary = json.loads((root / "summary_12_scopes.json").read_text(encoding="utf-8"))
           worklist = json.loads((root / "entry_worklist_12_scopes.json").read_text(encoding="utf-8"))
           assert worklist["scope_count"] == 12
