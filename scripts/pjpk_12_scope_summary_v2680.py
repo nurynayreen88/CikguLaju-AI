@@ -2,6 +2,9 @@
 import argparse
 import collections
 import json
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scripts.pjpk_source_gap_queue_v2679 import build_queue
 
 SUBJECTS = ("Pendidikan Jasmani", "Pendidikan Kesihatan")
