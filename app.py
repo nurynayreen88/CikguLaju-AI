@@ -46384,3 +46384,12 @@ def callback(cid, d):
     return _TT312_PREVIOUS_CALLBACK(cid, d)
 CIKGULAJU_PATCH_V25312 = 'CONFIRMED_DELETE_ALL_CLASSES'
 # ===== END v25.312 =====
+
+# === KP2027 OPT-IN CURRICULUM SELECTION (FAIL CLOSED) ===
+try:
+    from curriculum_version_telegram import install as _install_curriculum_version_telegram
+    CIKGULAJU_KP2027_SELECTOR_INSTALLED = bool(_install_curriculum_version_telegram(globals()))
+except Exception as _kp2027_selector_exc:
+    CIKGULAJU_KP2027_SELECTOR_INSTALLED = False
+    CIKGULAJU_KP2027_SELECTOR_ERROR = repr(_kp2027_selector_exc)
+# === END KP2027 SELECTOR ===
