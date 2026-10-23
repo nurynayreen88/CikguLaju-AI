@@ -65,7 +65,7 @@ jobs:
           python scripts/pjpk_entry_worklist_v2681.py --db pjpk_candidate.db > artifacts/pjpk-source-gap-queue-v2679/entry_worklist_12_scopes.json
           python scripts/verify_pjpk_batch_v2682.py artifacts/pjpk-source-gap-queue-v2679/source_gaps.json artifacts/pjpk-source-gap-queue-v2679/summary_12_scopes.json artifacts/pjpk-source-gap-queue-v2679/entry_worklist_12_scopes.json > artifacts/pjpk-source-gap-queue-v2679/batch_verification.json
           python scripts/pjpk_source_review_packet_v2683.py --db pjpk_candidate.db --output artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv
-          python scripts/validate_pjpk_source_review_v2684.py --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/review_import_safety.json
+          python -m scripts.validate_pjpk_source_review_v2684 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/review_import_safety.json
           python - <<'PY'
           import csv, json
           from pathlib import Path
