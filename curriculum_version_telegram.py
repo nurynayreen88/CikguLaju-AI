@@ -66,15 +66,19 @@ def install(namespace):
                         [{"text":"🏠 Menu Utama","callback_data":"home"}]])
         if d=="cv_preview":
             label=st.get("year","Tahun 1")
-            focus=("Literasi, numerasi dan pembentukan karakter." if label=="Tahun 1"
-                   else "Meneroka pelbagai bidang ilmu, minat, potensi dan pembentukan karakter.")
-            return send(cid,"📖 <b>Pratonton KP2027 • "+label+"</b>\\n\\n"
-                        "Fokus kerangka rasmi: "+focus+"\\n\\n"
-                        "Sumber: https://www.moe.gov.my/kurikulum-persekolahan-2027\\n"
-                        "Ini kerangka umum KPM, bukan DSKP atau SK/SP khusus subjek. "
-                        "RPH KP2027 masih dalam pembinaan.",[
-                        [{"text":"⬅️ Senarai Subjek KP2027","callback_data":"cv_subjects"}],
-                        [{"text":"🏠 Menu Utama","callback_data":"home"}]])
+            return send(cid,
+                "📖 <b>KP2027 • "+label+"</b>\\n\\n"
+                "<b>Apa yang baharu?</b>\\n"
+                "• Pelaksanaan berperingkat bermula pada 2027 untuk Tahun 1 dan Tingkatan 1.\\n"
+                "• Kerangka memberi perhatian kepada pembentukan karakter, "
+                "perkembangan kompetensi dan pembelajaran bermakna.\\n"
+                "• Kandungan khusus setiap subjek akan dimasukkan selepas dokumen "
+                "kurikulum rasminya disahkan.\\n\\n"
+                "🚧 <b>Status CikguLaju:</b> Pratonton tersedia; SK/SP, pemetaan "
+                "PdP dan janaan RPH KP2027 masih Dalam Pembinaan.\\n"
+                "<i>Ringkasan berdasarkan kerangka KPM, bukan DSKP mata pelajaran.</i>",[
+                [{"text":"📚 Lihat Subjek KP2027","callback_data":"cv_subjects"}],
+                [{"text":"🏠 Menu Utama","callback_data":"home"}])
         if d=="cv_subjects":
             return subjects(cid,st.get("year","Tahun 1"))
         if st.get("curriculum_version")==KP2027 and (d.startswith("sub_") or d.startswith("topic_") or d.startswith("st3|")):
