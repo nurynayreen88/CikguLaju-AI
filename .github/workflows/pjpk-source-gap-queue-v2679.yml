@@ -6,7 +6,9 @@ on:
     paths:
       - 'scripts/pjpk_source_gap_queue_v2679.py'
       - 'scripts/pjpk_12_scope_summary_v2680.py'
+      - 'scripts/pjpk_entry_worklist_v2681.py'
       - 'tests/test_pjpk_12_scope_summary_v2680.py'
+      - 'tests/test_pjpk_entry_worklist_v2681.py'
       - 'docs/pjpk_batch_audit_v2680.md'
       - 'tests/test_pjpk_source_gap_queue_v2679.py'
       - 'rebuild_pjpk_candidate.py'
@@ -18,7 +20,9 @@ on:
     paths:
       - 'scripts/pjpk_source_gap_queue_v2679.py'
       - 'scripts/pjpk_12_scope_summary_v2680.py'
+      - 'scripts/pjpk_entry_worklist_v2681.py'
       - 'tests/test_pjpk_12_scope_summary_v2680.py'
+      - 'tests/test_pjpk_entry_worklist_v2681.py'
       - 'docs/pjpk_batch_audit_v2680.md'
       - 'tests/test_pjpk_source_gap_queue_v2679.py'
       - 'rebuild_pjpk_candidate.py'
@@ -35,9 +39,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Compile source-gap queue
-        run: python -m py_compile scripts/pjpk_source_gap_queue_v2679.py scripts/pjpk_12_scope_summary_v2680.py tests/test_pjpk_12_scope_summary_v2680.py pjpk_dskp_evidence_v2676.py
+        run: python -m py_compile scripts/pjpk_source_gap_queue_v2679.py scripts/pjpk_12_scope_summary_v2680.py scripts/pjpk_entry_worklist_v2681.py tests/test_pjpk_12_scope_summary_v2680.py tests/test_pjpk_entry_worklist_v2681.py pjpk_dskp_evidence_v2676.py
       - name: Test read-only behavior and fail-closed schema
-        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680
+        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680 tests.test_pjpk_entry_worklist_v2681
       - name: Rebuild isolated PJPK candidate database
         run: python rebuild_pjpk_candidate.py
       - name: Generate actionable source-gap review files
@@ -46,6 +50,7 @@ jobs:
           python scripts/pjpk_source_gap_queue_v2679.py --db pjpk_candidate.db --format csv > artifacts/pjpk-source-gap-queue-v2679/source_gaps.csv
           python scripts/pjpk_source_gap_queue_v2679.py --db pjpk_candidate.db --format json > artifacts/pjpk-source-gap-queue-v2679/source_gaps.json
           python scripts/pjpk_12_scope_summary_v2680.py --db pjpk_candidate.db > artifacts/pjpk-source-gap-queue-v2679/summary_12_scopes.json
+          python scripts/pjpk_entry_worklist_v2681.py --db pjpk_candidate.db > artifacts/pjpk-source-gap-queue-v2679/entry_worklist_12_scopes.json
           python - <<'PY'
           import csv, json
           from pathlib import Path
@@ -56,6 +61,11 @@ jobs:
           assert data["production_promoted"] is False
           assert data["queue_count"] == len(rows)
           summary = json.loads((root / "summary_12_scopes.json").read_text(encoding="utf-8"))
+          worklist = json.loads((root / "entry_worklist_12_scopes.json").read_text(encoding="utf-8"))
+          assert worklist["scope_count"] == 12
+          assert worklist["review_rows"] == len(rows)
+          assert sum(scope["unique_entries"] for scope in worklist["scopes"]) == worklist["unique_entries"]
+          assert worklist["read_only"] is True and worklist["production_promoted"] is False
           assert summary["scope_count"] == 12
           assert summary["read_only"] is True and summary["production_promoted"] is False
           assert summary["review_rows"] == len(rows)
