@@ -1,0 +1,30 @@
+name: PJPK source-gap queue checks
+on:
+  push:
+    branches:
+      - work/pjpk-source-gap-remediation-v2679
+    paths:
+      - 'scripts/pjpk_source_gap_queue_v2679.py'
+      - 'tests/test_pjpk_source_gap_queue_v2679.py'
+      - '.github/workflows/pjpk-source-gap-queue-v2679.yml'
+  pull_request:
+    branches:
+      - staging/pjpk-v26-18-review
+    paths:
+      - 'scripts/pjpk_source_gap_queue_v2679.py'
+      - 'tests/test_pjpk_source_gap_queue_v2679.py'
+      - '.github/workflows/pjpk-source-gap-queue-v2679.yml'
+permissions:
+  contents: read
+jobs:
+  queue-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile source-gap queue
+        run: python -m py_compile scripts/pjpk_source_gap_queue_v2679.py pjpk_dskp_evidence_v2676.py
+      - name: Test read-only behavior and fail-closed schema
+        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679
