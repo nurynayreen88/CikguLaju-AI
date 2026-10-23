@@ -49,7 +49,9 @@ def load_evidence(root=None):
                 subject = str(item.get("subject", "")).strip()
                 code = str(item.get("sp_code", "")).strip()
                 text = str(item.get("sp_text", "")).strip()
-                if (year not in VALID_YEARS or subject not in SUBJECTS.values() or not CODE_RE.fullmatch(code)\n                        or not text or not str(item.get("source_document", "")).strip()\n                        or not str(item.get("source_file_id", "")).strip()):
+                if (year not in VALID_YEARS or subject not in SUBJECTS.values() or not CODE_RE.fullmatch(code) 
+                        or not text or not str(item.get("source_document", "")).strip() 
+                        or not str(item.get("source_file_id", "")).strip()):
                     raise ValueError("Invalid source-cited PJPK DSKP supplement row: " + repr((year, subject, code)))
                 row = {
                     "year_label": year, "subject": subject, "sp_code": code,
