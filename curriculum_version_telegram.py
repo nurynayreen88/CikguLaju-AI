@@ -6,6 +6,8 @@ def install(namespace):
     previous_subjects=namespace["subjects"]
     state=namespace["state"]
     send=namespace["send"]
+    subjects_by_grade=namespace["SUBJECTS_BY_GRADE"]
+    subject_label=namespace["SUBJECT_LABEL"]
     def choose(cid,label):
         st=state.setdefault(cid,{})
         st["year"]=label
@@ -15,17 +17,27 @@ def install(namespace):
             st["curriculum_version"]=LEGACY
             return previous_subjects(cid,label)
         previous=st.get("curriculum_version",LEGACY)
-        return send(cid,"📚 <b>"+label+"</b>\\n\\nPilih kurikulum:",[
+        return send(cid,"📚 <b>"+label+"</b>\n\nPilih kurikulum:",[
             [{"text":("✅ " if previous==LEGACY else "")+"KSSR/KSSM Sedia Ada","callback_data":"cv_existing"}],
             [{"text":("✅ " if previous==KP2027 else "")+"Kurikulum Persekolahan 2027 (KP2027)","callback_data":"cv_kp2027"}],
             [{"text":"⬅️ Tahun/Tingkatan","callback_data":"choose_grade"}]])
     def subjects(cid,label):
         st=state.setdefault(cid,{})
         result=resolve_curriculum(st.get("curriculum_version"),label,st.get("subject"))
+        if st.get("curriculum_version")==KP2027:
+            # Display candidate subjects only; never route into legacy SK/SP.
+            candidates=list(subjects_by_grade.get(label,()) or ())
+            kb=[[{"text":"🚧 "+subject_label.get(sub,sub)+" — Dalam Pembinaan",
+                  "callback_data":"cv_build_"+str(i)}]
+                for i,sub in enumerate(candidates)]
+            st["_kp2027_subject_candidates"]=candidates
+            kb.extend([[{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}],
+                       [{"text":"🏠 Menu Utama","callback_data":"home"}]])
+            return send(cid,"📚 <b>KP2027 • "+label+"</b>\\n\\n"
+                        "Senarai subjek untuk persediaan katalog (tertakluk pengesahan dokumen rasmi). "
+                        "Semua masih 🚧 Dalam Pembinaan; RPH belum boleh dijana.",kb)
         if not result["enabled"]:
-            return send(cid,"⏳ <b>KP2027 belum tersedia.</b>\\nPemetaan subjek belum disahkan. SK/SP lama tidak akan digunakan.",[
-                [{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}],
-                [{"text":"🏠 Menu Utama","callback_data":"home"}]])
+            return send(cid,"⏳ KP2027 belum tersedia.",[[{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}]])
         return previous_subjects(cid,label)
     def callback(cid,d):
         if d.startswith("year_"):
@@ -39,6 +51,20 @@ def install(namespace):
             st["curriculum_version"]=LEGACY if d=="cv_existing" else KP2027
             return subjects(cid,st.get("year","Tahun 1"))
         st=state.setdefault(cid,{})
+        if d.startswith("cv_build_"):
+            try:
+                idx=int(d[len("cv_build_"):])
+                sub=st.get("_kp2027_subject_candidates",[])[idx]
+                if idx<0: raise IndexError()
+            except (ValueError,IndexError):
+                return subjects(cid,st.get("year","Tahun 1"))
+            return send(cid,"🚧 <b>"+subject_label.get(sub,sub)+" — KP2027</b>\\n"
+                        "Dalam Pembinaan. Dokumen rasmi dan pemetaan SK/SP belum disahkan; "
+                        "penjanaan RPH belum dibuka.",[
+                        [{"text":"⬅️ Senarai Subjek KP2027","callback_data":"cv_subjects"}],
+                        [{"text":"🏠 Menu Utama","callback_data":"home"}]])
+        if d=="cv_subjects":
+            return subjects(cid,st.get("year","Tahun 1"))
         if st.get("curriculum_version")==KP2027 and (d.startswith("sub_") or d.startswith("topic_") or d.startswith("st3|")):
             return subjects(cid,st.get("year","Tahun 1"))
         return previous_callback(cid,d)
