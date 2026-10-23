@@ -16,6 +16,8 @@ def summarize(queue):
         key = (row["year"], row["subject"])
         if key not in matrix:
             raise ValueError(f"Unexpected curriculum scope: {key!r}")
+        if row["record_type"] not in {"SP_SOURCE_REVIEW", "MISSING_SK_LINK"}:
+            raise ValueError(f"Unexpected review type: {row['record_type']!r}")
         matrix[key][row["record_type"]] += 1
         matrix[key]["TOTAL"] += 1
     scopes = [{"year": year, "subject": subject,
@@ -23,6 +25,7 @@ def summarize(queue):
                "missing_sk_link": matrix[(year, subject)]["MISSING_SK_LINK"],
                "review_rows": matrix[(year, subject)]["TOTAL"]}
               for year in YEARS for subject in SUBJECTS]
+    assert sum(x["review_rows"] for x in scopes) == len(queue)
     return {"read_only": True, "production_promoted": False,
             "scope_count": len(scopes), "review_rows": len(queue),
             "sp_source_review": sum(x["sp_source_review"] for x in scopes),
