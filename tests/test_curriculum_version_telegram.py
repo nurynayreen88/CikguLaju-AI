@@ -6,6 +6,8 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.messages=[]
         self.calls=[]
         self.ns={"state":{},"send":lambda cid,text,kb:self.messages.append((text,kb)),
+                 "SUBJECTS_BY_GRADE":{"Tahun 1":["Matematik","Sains"],"Tingkatan 1":["Bahasa Inggeris"]},
+                 "SUBJECT_LABEL":{"Matematik":"Matematik","Sains":"Sains","Bahasa Inggeris":"Bahasa Inggeris"},
                  "subjects":lambda cid,label:self.calls.append(("subjects",label)),
                  "callback":lambda cid,d:self.calls.append(("callback",d))}
         self.assertTrue(install(self.ns))
@@ -22,7 +24,10 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["callback"](1,"cv_kp2027")
         self.ns["callback"](1,"sub_Matematik")
         self.assertEqual(self.calls,[])
-        self.assertIn("belum tersedia",self.messages[-1][0])
+        self.assertIn("Dalam Pembinaan",self.messages[-1][0])
+        self.assertIn("cv_build_0",str(self.messages[-1][1]))
+        self.ns["callback"](1,"cv_build_0")
+        self.assertIn("penjanaan RPH belum dibuka",self.messages[-1][0])
 
     def test_other_years_preserve_old_subject_flow(self):
         self.ns["callback"](1,"year_3")
