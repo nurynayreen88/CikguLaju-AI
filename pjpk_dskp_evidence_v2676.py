@@ -61,6 +61,27 @@ def load_evidence(root=None):
                     "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED",
                 }
                 index.setdefault((year, subject, code), []).append(row)
+    # Edition-specific direct transcriptions recovered from the user's original
+    # DSKP files. Keep the previous bundle/supplement untouched: disagreement
+    # between editions or source records is deliberately a conflict, not a win.
+    for filename in ("dskp_sp_direct_t1_pj_2015_v2692.csv",
+                     "dskp_sp_direct_t2_t6_pj_v2693.csv"):
+        direct = (Path(root) if root else Path(__file__).resolve().parent) / "curriculum_sources" / "pjpk" / filename
+        if not direct.is_file():
+            raise FileNotFoundError("Required PJPK original DSKP evidence missing: " + str(direct))
+        with direct.open("r", encoding="utf-8-sig", newline="") as stream:
+            for item in csv.DictReader(stream):
+                year, subject = item["year_label"].strip(), item["subject"].strip()
+                code, wording = item["sp_code"].strip(), item["sp_text"].strip()
+                document, source_id = item["source_document"].strip(), item["source_file_id"].strip()
+                if (year not in VALID_YEARS or subject not in SUBJECTS.values()
+                        or not CODE_RE.fullmatch(code) or not wording or not document or not source_id):
+                    raise ValueError("Invalid original DSKP transcription: " + repr((year, subject, code)))
+                index.setdefault((year, subject, code), []).append({
+                    "year_label": year, "subject": subject, "sp_code": code,
+                    "sp_text": wording, "source_document": document,
+                    "source_file_id": source_id, "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED",
+                })
     if len(index) < 300:
         raise ValueError(f"PJPK DSKP evidence bundle unexpectedly small: {len(index)} exact keys")
     return index
