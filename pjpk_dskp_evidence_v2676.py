@@ -65,7 +65,8 @@ def load_evidence(root=None):
     # DSKP files. Keep the previous bundle/supplement untouched: disagreement
     # between editions or source records is deliberately a conflict, not a win.
     for filename in ("dskp_sp_direct_t1_pj_2015_v2692.csv",
-                     "dskp_sp_direct_t2_t6_pj_v2693.csv"):
+                     "dskp_sp_direct_t2_t6_pj_v2693.csv",
+                     "dskp_sp_direct_t2_pk_v2696.csv"):
         direct = (Path(root) if root else Path(__file__).resolve().parent) / "curriculum_sources" / "pjpk" / filename
         if not direct.is_file():
             raise FileNotFoundError("Required PJPK original DSKP evidence missing: " + str(direct))
