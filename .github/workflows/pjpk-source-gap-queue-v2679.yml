@@ -13,6 +13,7 @@ on:
       - 'scripts/pjpk_review_manifest_v2685.py'
       - 'scripts/pjpk_source_priority_v2686.py'
       - 'scripts/pjpk_verified_evidence_export_v2687.py'
+      - 'scripts/verify_pjpk_evidence_export_v2688.py'
       - 'tests/test_pjpk_12_scope_summary_v2680.py'
       - 'tests/test_pjpk_entry_worklist_v2681.py'
       - 'tests/test_verify_pjpk_batch_v2682.py'
@@ -21,6 +22,7 @@ on:
       - 'tests/test_pjpk_review_manifest_v2685.py'
       - 'tests/test_pjpk_source_priority_v2686.py'
       - 'tests/test_pjpk_verified_evidence_export_v2687.py'
+      - 'tests/test_verify_pjpk_evidence_export_v2688.py'
       - 'docs/pjpk_batch_audit_v2680.md'
       - 'tests/test_pjpk_source_gap_queue_v2679.py'
       - 'rebuild_pjpk_candidate.py'
@@ -39,6 +41,7 @@ on:
       - 'scripts/pjpk_review_manifest_v2685.py'
       - 'scripts/pjpk_source_priority_v2686.py'
       - 'scripts/pjpk_verified_evidence_export_v2687.py'
+      - 'scripts/verify_pjpk_evidence_export_v2688.py'
       - 'tests/test_pjpk_12_scope_summary_v2680.py'
       - 'tests/test_pjpk_entry_worklist_v2681.py'
       - 'tests/test_verify_pjpk_batch_v2682.py'
@@ -47,6 +50,7 @@ on:
       - 'tests/test_pjpk_review_manifest_v2685.py'
       - 'tests/test_pjpk_source_priority_v2686.py'
       - 'tests/test_pjpk_verified_evidence_export_v2687.py'
+      - 'tests/test_verify_pjpk_evidence_export_v2688.py'
       - 'docs/pjpk_batch_audit_v2680.md'
       - 'tests/test_pjpk_source_gap_queue_v2679.py'
       - 'rebuild_pjpk_candidate.py'
@@ -63,9 +67,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Compile source-gap queue
-        run: python -m py_compile scripts/pjpk_source_gap_queue_v2679.py scripts/pjpk_12_scope_summary_v2680.py scripts/pjpk_entry_worklist_v2681.py scripts/verify_pjpk_batch_v2682.py scripts/pjpk_source_review_packet_v2683.py scripts/validate_pjpk_source_review_v2684.py scripts/pjpk_review_manifest_v2685.py scripts/pjpk_source_priority_v2686.py scripts/pjpk_verified_evidence_export_v2687.py tests/test_pjpk_12_scope_summary_v2680.py tests/test_pjpk_entry_worklist_v2681.py tests/test_verify_pjpk_batch_v2682.py tests/test_pjpk_source_review_packet_v2683.py tests/test_validate_pjpk_source_review_v2684.py tests/test_pjpk_review_manifest_v2685.py tests/test_pjpk_source_priority_v2686.py tests/test_pjpk_verified_evidence_export_v2687.py pjpk_dskp_evidence_v2676.py
+        run: python -m py_compile scripts/pjpk_source_gap_queue_v2679.py scripts/pjpk_12_scope_summary_v2680.py scripts/pjpk_entry_worklist_v2681.py scripts/verify_pjpk_batch_v2682.py scripts/pjpk_source_review_packet_v2683.py scripts/validate_pjpk_source_review_v2684.py scripts/pjpk_review_manifest_v2685.py scripts/pjpk_source_priority_v2686.py scripts/pjpk_verified_evidence_export_v2687.py scripts/verify_pjpk_evidence_export_v2688.py tests/test_pjpk_12_scope_summary_v2680.py tests/test_pjpk_entry_worklist_v2681.py tests/test_verify_pjpk_batch_v2682.py tests/test_pjpk_source_review_packet_v2683.py tests/test_validate_pjpk_source_review_v2684.py tests/test_pjpk_review_manifest_v2685.py tests/test_pjpk_source_priority_v2686.py tests/test_pjpk_verified_evidence_export_v2687.py tests/test_verify_pjpk_evidence_export_v2688.py pjpk_dskp_evidence_v2676.py
       - name: Test read-only behavior and fail-closed schema
-        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680 tests.test_pjpk_entry_worklist_v2681 tests.test_verify_pjpk_batch_v2682 tests.test_pjpk_source_review_packet_v2683 tests.test_validate_pjpk_source_review_v2684 tests.test_pjpk_review_manifest_v2685 tests.test_pjpk_source_priority_v2686 tests.test_pjpk_verified_evidence_export_v2687
+        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680 tests.test_pjpk_entry_worklist_v2681 tests.test_verify_pjpk_batch_v2682 tests.test_pjpk_source_review_packet_v2683 tests.test_validate_pjpk_source_review_v2684 tests.test_pjpk_review_manifest_v2685 tests.test_pjpk_source_priority_v2686 tests.test_pjpk_verified_evidence_export_v2687 tests.test_verify_pjpk_evidence_export_v2688
       - name: Rebuild isolated PJPK candidate database
         run: python rebuild_pjpk_candidate.py
       - name: Generate actionable source-gap review files
@@ -81,6 +85,7 @@ jobs:
           python -m scripts.pjpk_review_manifest_v2685 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/review_manifest_12_scopes.json
           python -m scripts.pjpk_source_priority_v2686 --packet artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/source_priority_12_scopes.json
           python -m scripts.pjpk_verified_evidence_export_v2687 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --output artifacts/pjpk-source-gap-queue-v2679/verified_evidence_for_audit.csv
+          python -m scripts.verify_pjpk_evidence_export_v2688 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --exported artifacts/pjpk-source-gap-queue-v2679/verified_evidence_for_audit.csv > artifacts/pjpk-source-gap-queue-v2679/evidence_export_integrity.json
           python - <<'PY'
           import csv, json
           from pathlib import Path
