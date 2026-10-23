@@ -92,6 +92,12 @@ jobs:
           assert review_check["still_blocked"] == len(rows)
           assert review_check["source_verified_for_further_audit"] == 0
           assert review_check["production_promoted"] is False
+          priority = json.loads((root / "source_priority_12_scopes.json").read_text(encoding="utf-8"))
+          assert priority["scope_count"] == 12
+          assert priority["review_rows"] == len(rows)
+          assert sum(s["review_rows"] for s in priority["scopes"]) == len(rows)
+          assert sum(s["pending"] for s in priority["scopes"]) == len(rows)
+          assert priority["production_promoted"] is False
           summary = json.loads((root / "summary_12_scopes.json").read_text(encoding="utf-8"))
           worklist = json.loads((root / "entry_worklist_12_scopes.json").read_text(encoding="utf-8"))
           assert worklist["scope_count"] == 12
