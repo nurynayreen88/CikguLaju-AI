@@ -9,7 +9,7 @@ class PriorityTests(unittest.TestCase):
         b=dict(base,entry_id=2,record_type="MISSING_SK_LINK",standard_code="",evidence_status="MISSING_SK_LINK")
         x=plan(packet([a,b]))
         self.assertEqual((x["scope_count"],x["review_rows"]),(12,2))
-        self.assertEqual(x["scopes"][0]["work"][0]["entry_id"],"1")
+        self.assertEqual(x["scopes"][0]["work"][0]["entry_id"],1)
         self.assertFalse(x["production_promoted"])
     def test_unknown_type_rejected(self):
         with self.assertRaises(ValueError):plan([{"year_label":"Tahun 1","subject":"Pendidikan Jasmani",
