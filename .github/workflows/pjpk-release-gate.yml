@@ -1,0 +1,23 @@
+name: PJPK release-gate regression
+
+on:
+  push:
+    branches:
+      - 'staging/pjpk-*'
+  pull_request:
+    paths:
+      - 'scripts/pjpk_release_gate.py'
+      - 'tests/test_pjpk_release_gate.py'
+      - '.github/workflows/pjpk-release-gate.yml'
+  workflow_dispatch:
+
+jobs:
+  source-gate-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run isolated regression tests
+        run: python -m unittest discover -s tests -p 'test_pjpk_release_gate.py' -v
