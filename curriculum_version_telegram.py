@@ -78,7 +78,7 @@ def install(namespace):
                 "PdP dan janaan RPH KP2027 masih Dalam Pembinaan.\\n"
                 "<i>Ringkasan berdasarkan kerangka KPM, bukan DSKP mata pelajaran.</i>",[
                 [{"text":"📚 Lihat Subjek KP2027","callback_data":"cv_subjects"}],
-                [{"text":"🏠 Menu Utama","callback_data":"home"}])
+                [{"text":"🏠 Menu Utama","callback_data":"home"}]])
         if d=="cv_subjects":
             return subjects(cid,st.get("year","Tahun 1"))
         if st.get("curriculum_version")==KP2027 and (d.startswith("sub_") or d.startswith("topic_") or d.startswith("st3|")):
