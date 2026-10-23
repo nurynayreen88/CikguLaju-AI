@@ -93,10 +93,10 @@ def reconcile_sp_text(year, subject, code, rpt_text, evidence):
     rows = evidence.get(key, [])
     if not rows:
         return {"status": "NO_DIRECT_DSKP_TEXT", "dskp_text": "", "source_document": ""}
-    variants = {row["sp_text"].strip() for row in rows}
+    normalize = lambda value: re.sub(r"[^\w]+", " ", str(value or "").casefold(), flags=re.UNICODE).strip()
+    variants = {normalize(row["sp_text"]) for row in rows}
     if len(variants) != 1 or any(row["source_status"] != "DIRECT_DSKP_TEXT_TRANSCRIBED" for row in rows):
         return {"status": "CONFLICT_REVIEW", "dskp_text": "", "source_document": " | ".join(sorted({r["source_document"] for r in rows}))}
-    dskp_text = next(iter(variants))
-    normalize = lambda value: re.sub(r"[^\w]+", " ", str(value or "").casefold(), flags=re.UNICODE).strip()
+    dskp_text = rows[0]["sp_text"].strip()
     status = "EXACT_TEXT_MATCH" if normalize(rpt_text) == normalize(dskp_text) else "TEXT_DIFF_REVIEW"
     return {"status": status, "dskp_text": dskp_text, "source_document": rows[0]["source_document"], "source_file_id": rows[0]["source_file_id"]}
