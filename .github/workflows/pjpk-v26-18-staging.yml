@@ -24,6 +24,7 @@ on:
       - 'scripts/audit_pjpk_runtime_coverage_v2618.py'
       - 'scripts/activate_pjpk_v26_16.py'
       - 'scripts/audit_pjpk_dskp_evidence_v2676.py'
+      - 'scripts/pjpk_source_gap_queue_v2679.py'
       - 'scripts/audit_pjpk_rpt_page_evidence_v2677.py'
       - 'scripts/render_pjpk_draft_pdfs_v2678.py'
       - '.github/workflows/pjpk-v26-18-staging.yml'

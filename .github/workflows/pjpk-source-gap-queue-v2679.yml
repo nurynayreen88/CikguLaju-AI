@@ -1,0 +1,147 @@
+name: PJPK source-gap queue checks
+on:
+  push:
+    branches:
+      - work/pjpk-source-gap-remediation-v2679
+    paths:
+      - 'scripts/pjpk_sk_evidence_triage_v2697.py'
+      - 'scripts/pjpk_source_gap_queue_v2679.py'
+      - 'scripts/pjpk_12_scope_summary_v2680.py'
+      - 'scripts/pjpk_entry_worklist_v2681.py'
+      - 'scripts/verify_pjpk_batch_v2682.py'
+      - 'scripts/pjpk_source_review_packet_v2683.py'
+      - 'scripts/validate_pjpk_source_review_v2684.py'
+      - 'scripts/pjpk_review_manifest_v2685.py'
+      - 'scripts/pjpk_source_priority_v2686.py'
+      - 'scripts/pjpk_verified_evidence_export_v2687.py'
+      - 'scripts/verify_pjpk_evidence_export_v2688.py'
+      - 'tests/test_pjpk_12_scope_summary_v2680.py'
+      - 'tests/test_pjpk_entry_worklist_v2681.py'
+      - 'tests/test_verify_pjpk_batch_v2682.py'
+      - 'tests/test_pjpk_source_review_packet_v2683.py'
+      - 'tests/test_validate_pjpk_source_review_v2684.py'
+      - 'tests/test_pjpk_review_manifest_v2685.py'
+      - 'tests/test_pjpk_source_priority_v2686.py'
+      - 'tests/test_pjpk_verified_evidence_export_v2687.py'
+      - 'tests/test_verify_pjpk_evidence_export_v2688.py'
+      - 'tests/test_pjpk_original_dskp_integration_v2695.py'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t1_pj_2015_v2692.csv'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t2_t6_pj_v2693.csv'
+      - 'docs/pjpk_batch_audit_v2680.md'
+      - 'tests/test_pjpk_source_gap_queue_v2679.py'
+      - 'rebuild_pjpk_candidate.py'
+      - 'curriculum_sources/pjpk/**'
+      - '.github/workflows/pjpk-source-gap-queue-v2679.yml'
+  pull_request:
+    branches:
+      - staging/pjpk-v26-18-review
+    paths:
+      - 'scripts/pjpk_sk_evidence_triage_v2697.py'
+      - 'scripts/pjpk_source_gap_queue_v2679.py'
+      - 'scripts/pjpk_12_scope_summary_v2680.py'
+      - 'scripts/pjpk_entry_worklist_v2681.py'
+      - 'scripts/verify_pjpk_batch_v2682.py'
+      - 'scripts/pjpk_source_review_packet_v2683.py'
+      - 'scripts/validate_pjpk_source_review_v2684.py'
+      - 'scripts/pjpk_review_manifest_v2685.py'
+      - 'scripts/pjpk_source_priority_v2686.py'
+      - 'scripts/pjpk_verified_evidence_export_v2687.py'
+      - 'scripts/verify_pjpk_evidence_export_v2688.py'
+      - 'tests/test_pjpk_12_scope_summary_v2680.py'
+      - 'tests/test_pjpk_entry_worklist_v2681.py'
+      - 'tests/test_verify_pjpk_batch_v2682.py'
+      - 'tests/test_pjpk_source_review_packet_v2683.py'
+      - 'tests/test_validate_pjpk_source_review_v2684.py'
+      - 'tests/test_pjpk_review_manifest_v2685.py'
+      - 'tests/test_pjpk_source_priority_v2686.py'
+      - 'tests/test_pjpk_verified_evidence_export_v2687.py'
+      - 'tests/test_verify_pjpk_evidence_export_v2688.py'
+      - 'tests/test_pjpk_original_dskp_integration_v2695.py'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t1_pj_2015_v2692.csv'
+      - 'curriculum_sources/pjpk/dskp_sp_direct_t2_t6_pj_v2693.csv'
+      - 'docs/pjpk_batch_audit_v2680.md'
+      - 'tests/test_pjpk_source_gap_queue_v2679.py'
+      - 'rebuild_pjpk_candidate.py'
+      - 'curriculum_sources/pjpk/**'
+      - '.github/workflows/pjpk-source-gap-queue-v2679.yml'
+permissions:
+  contents: read
+jobs:
+  queue-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile source-gap queue
+        run: python -m py_compile scripts/pjpk_sk_evidence_triage_v2697.py scripts/pjpk_source_gap_queue_v2679.py scripts/pjpk_12_scope_summary_v2680.py scripts/pjpk_entry_worklist_v2681.py scripts/verify_pjpk_batch_v2682.py scripts/pjpk_source_review_packet_v2683.py scripts/validate_pjpk_source_review_v2684.py scripts/pjpk_review_manifest_v2685.py scripts/pjpk_source_priority_v2686.py scripts/pjpk_verified_evidence_export_v2687.py scripts/verify_pjpk_evidence_export_v2688.py tests/test_pjpk_12_scope_summary_v2680.py tests/test_pjpk_entry_worklist_v2681.py tests/test_verify_pjpk_batch_v2682.py tests/test_pjpk_source_review_packet_v2683.py tests/test_validate_pjpk_source_review_v2684.py tests/test_pjpk_review_manifest_v2685.py tests/test_pjpk_source_priority_v2686.py tests/test_pjpk_verified_evidence_export_v2687.py tests/test_verify_pjpk_evidence_export_v2688.py pjpk_dskp_evidence_v2676.py
+      - name: Test read-only behavior and fail-closed schema
+        run: python -m unittest tests.test_pjpk_source_gap_queue_v2679 tests.test_pjpk_12_scope_summary_v2680 tests.test_pjpk_entry_worklist_v2681 tests.test_verify_pjpk_batch_v2682 tests.test_pjpk_source_review_packet_v2683 tests.test_validate_pjpk_source_review_v2684 tests.test_pjpk_review_manifest_v2685 tests.test_pjpk_source_priority_v2686 tests.test_pjpk_verified_evidence_export_v2687 tests.test_verify_pjpk_evidence_export_v2688 tests.test_pjpk_original_dskp_integration_v2695
+      - name: Rebuild isolated PJPK candidate database
+        run: python rebuild_pjpk_candidate.py
+      - name: Generate actionable source-gap review files
+        run: |
+          mkdir -p artifacts/pjpk-source-gap-queue-v2679
+          python scripts/pjpk_sk_evidence_triage_v2697.py --db pjpk_candidate.db > artifacts/pjpk-source-gap-queue-v2679/sk_source_triage.json
+          python scripts/pjpk_source_gap_queue_v2679.py --db pjpk_candidate.db --format csv > artifacts/pjpk-source-gap-queue-v2679/source_gaps.csv
+          python scripts/pjpk_source_gap_queue_v2679.py --db pjpk_candidate.db --format json > artifacts/pjpk-source-gap-queue-v2679/source_gaps.json
+          python scripts/pjpk_12_scope_summary_v2680.py --db pjpk_candidate.db > artifacts/pjpk-source-gap-queue-v2679/summary_12_scopes.json
+          python scripts/pjpk_entry_worklist_v2681.py --db pjpk_candidate.db > artifacts/pjpk-source-gap-queue-v2679/entry_worklist_12_scopes.json
+          python scripts/verify_pjpk_batch_v2682.py artifacts/pjpk-source-gap-queue-v2679/source_gaps.json artifacts/pjpk-source-gap-queue-v2679/summary_12_scopes.json artifacts/pjpk-source-gap-queue-v2679/entry_worklist_12_scopes.json > artifacts/pjpk-source-gap-queue-v2679/batch_verification.json
+          python scripts/pjpk_source_review_packet_v2683.py --db pjpk_candidate.db --output artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv
+          python -m scripts.validate_pjpk_source_review_v2684 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/review_import_safety.json
+          python -m scripts.pjpk_review_manifest_v2685 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/review_manifest_12_scopes.json
+          python -m scripts.pjpk_source_priority_v2686 --packet artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv > artifacts/pjpk-source-gap-queue-v2679/source_priority_12_scopes.json
+          python -m scripts.pjpk_verified_evidence_export_v2687 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --output artifacts/pjpk-source-gap-queue-v2679/verified_evidence_for_audit.csv
+          python -m scripts.verify_pjpk_evidence_export_v2688 --original artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --reviewed artifacts/pjpk-source-gap-queue-v2679/source_review_packet_12_scopes.csv --exported artifacts/pjpk-source-gap-queue-v2679/verified_evidence_for_audit.csv > artifacts/pjpk-source-gap-queue-v2679/evidence_export_integrity.json
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          root = Path("artifacts/pjpk-source-gap-queue-v2679")
+          data = json.loads((root / "source_gaps.json").read_text(encoding="utf-8"))
+          rows = list(csv.DictReader((root / "source_gaps.csv").open(encoding="utf-8", newline="")))
+          assert data["read_only"] is True
+          assert data["production_promoted"] is False
+          assert data["queue_count"] == len(rows)
+          packet = list(csv.DictReader((root / "source_review_packet_12_scopes.csv").open(encoding="utf-8-sig", newline="")))
+          review_check = json.loads((root / "review_import_safety.json").read_text(encoding="utf-8"))
+          assert len(packet) == len(rows)
+          assert review_check["total"] == len(rows)
+          assert review_check["still_blocked"] == len(rows)
+          assert review_check["source_verified_for_further_audit"] == 0
+          assert review_check["production_promoted"] is False
+          priority = json.loads((root / "source_priority_12_scopes.json").read_text(encoding="utf-8"))
+          assert priority["scope_count"] == 12
+          assert priority["review_rows"] == len(rows)
+          assert sum(s["review_rows"] for s in priority["scopes"]) == len(rows)
+          assert sum(s["pending"] for s in priority["scopes"]) == len(rows)
+          assert priority["production_promoted"] is False
+          summary = json.loads((root / "summary_12_scopes.json").read_text(encoding="utf-8"))
+          worklist = json.loads((root / "entry_worklist_12_scopes.json").read_text(encoding="utf-8"))
+          assert worklist["scope_count"] == 12
+          assert worklist["review_rows"] == len(rows)
+          assert sum(scope["unique_entries"] for scope in worklist["scopes"]) == worklist["unique_entries"]
+          assert worklist["read_only"] is True and worklist["production_promoted"] is False
+          assert summary["scope_count"] == 12
+          assert summary["read_only"] is True and summary["production_promoted"] is False
+          assert summary["review_rows"] == len(rows)
+          assert summary["sp_source_review"] + summary["missing_sk_link"] == len(rows)
+          sk_triage = json.loads((root / "sk_source_triage.json").read_text(encoding="utf-8"))
+          assert sk_triage["read_only"] is True and sk_triage["production_promoted"] is False
+          assert sk_triage["missing_sk_entries"] == summary["missing_sk_link"]
+          assert all(not item["rpt_sk_link_created"] for item in sk_triage["items"])
+          assert sum(item["review_rows"] for item in summary["scopes"]) == len(rows)
+          print(json.dumps({
+              "read_only": data["read_only"],
+              "production_promoted": data["production_promoted"],
+              "queue_count": data["queue_count"],
+              "record_types": dict(sorted({kind: sum(r["record_type"] == kind for r in rows) for kind in {r["record_type"] for r in rows}}.items()))
+          }, ensure_ascii=False, indent=2))
+          PY
+      - name: Upload private source-gap queue for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: pjpk-source-gap-queue-v2679
+          path: artifacts/pjpk-source-gap-queue-v2679/
+          retention-days: 7

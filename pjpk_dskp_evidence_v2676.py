@@ -6,6 +6,7 @@ a release gate. A code is usable only for the same year and subject; conflicting
 source wordings fail closed.
 """
 import base64
+import csv
 import gzip
 import json
 import re
@@ -38,6 +39,50 @@ def load_evidence(root=None):
             "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED" if status == "D" else "CONFLICT_REVIEW",
         }
         index.setdefault((year, subject, code), []).append(row)
+    # Supplement only with explicitly source-cited transcriptions. Existing bundle
+    # rows are retained so conflicting texts still fail closed during reconciliation.
+    supplement = (Path(root) if root else Path(__file__).resolve().parent) / "curriculum_sources" / "pjpk" / "dskp_sp_verified_supplement_v2679.csv"
+    if supplement.is_file():
+        with supplement.open("r", encoding="utf-8-sig", newline="") as stream:
+            for item in csv.DictReader(stream):
+                year = str(item.get("year_label", "")).strip()
+                subject = str(item.get("subject", "")).strip()
+                code = str(item.get("sp_code", "")).strip()
+                text = str(item.get("sp_text", "")).strip()
+                if (year not in VALID_YEARS or subject not in SUBJECTS.values() or not CODE_RE.fullmatch(code) 
+                        or not text or not str(item.get("source_document", "")).strip() 
+                        or not str(item.get("source_file_id", "")).strip()):
+                    raise ValueError("Invalid source-cited PJPK DSKP supplement row: " + repr((year, subject, code)))
+                row = {
+                    "year_label": year, "subject": subject, "sp_code": code,
+                    "sp_text": text,
+                    "source_document": str(item.get("source_document", "")).strip(),
+                    "source_file_id": str(item.get("source_file_id", "")).strip(),
+                    "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED",
+                }
+                index.setdefault((year, subject, code), []).append(row)
+    # Edition-specific direct transcriptions recovered from the user's original
+    # DSKP files. Keep the previous bundle/supplement untouched: disagreement
+    # between editions or source records is deliberately a conflict, not a win.
+    for filename in ("dskp_sp_direct_t1_pj_2015_v2692.csv",
+                     "dskp_sp_direct_t2_t6_pj_v2693.csv",
+                     "dskp_sp_direct_t2_pk_v2696.csv"):
+        direct = (Path(root) if root else Path(__file__).resolve().parent) / "curriculum_sources" / "pjpk" / filename
+        if not direct.is_file():
+            raise FileNotFoundError("Required PJPK original DSKP evidence missing: " + str(direct))
+        with direct.open("r", encoding="utf-8-sig", newline="") as stream:
+            for item in csv.DictReader(stream):
+                year, subject = item["year_label"].strip(), item["subject"].strip()
+                code, wording = item["sp_code"].strip(), item["sp_text"].strip()
+                document, source_id = item["source_document"].strip(), item["source_file_id"].strip()
+                if (year not in VALID_YEARS or subject not in SUBJECTS.values()
+                        or not CODE_RE.fullmatch(code) or not wording or not document or not source_id):
+                    raise ValueError("Invalid original DSKP transcription: " + repr((year, subject, code)))
+                index.setdefault((year, subject, code), []).append({
+                    "year_label": year, "subject": subject, "sp_code": code,
+                    "sp_text": wording, "source_document": document,
+                    "source_file_id": source_id, "source_status": "DIRECT_DSKP_TEXT_TRANSCRIBED",
+                })
     if len(index) < 300:
         raise ValueError(f"PJPK DSKP evidence bundle unexpectedly small: {len(index)} exact keys")
     return index
@@ -49,10 +94,10 @@ def reconcile_sp_text(year, subject, code, rpt_text, evidence):
     rows = evidence.get(key, [])
     if not rows:
         return {"status": "NO_DIRECT_DSKP_TEXT", "dskp_text": "", "source_document": ""}
-    variants = {row["sp_text"].strip() for row in rows}
+    normalize = lambda value: re.sub(r"[^\w]+", " ", str(value or "").casefold(), flags=re.UNICODE).strip()
+    variants = {normalize(row["sp_text"]) for row in rows}
     if len(variants) != 1 or any(row["source_status"] != "DIRECT_DSKP_TEXT_TRANSCRIBED" for row in rows):
         return {"status": "CONFLICT_REVIEW", "dskp_text": "", "source_document": " | ".join(sorted({r["source_document"] for r in rows}))}
-    dskp_text = next(iter(variants))
-    normalize = lambda value: re.sub(r"[^\w]+", " ", str(value or "").casefold(), flags=re.UNICODE).strip()
+    dskp_text = rows[0]["sp_text"].strip()
     status = "EXACT_TEXT_MATCH" if normalize(rpt_text) == normalize(dskp_text) else "TEXT_DIFF_REVIEW"
     return {"status": status, "dskp_text": dskp_text, "source_document": rows[0]["source_document"], "source_file_id": rows[0]["source_file_id"]}
