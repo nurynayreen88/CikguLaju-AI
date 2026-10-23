@@ -29,13 +29,13 @@ def build_queue(db_path):
         if not required.issubset(tables):
             raise RuntimeError("Candidate DB lacks RPT tables; refusing to guess schema")
         entries = con.execute("""
-            SELECT e.id, e.year_label, e.subject, e.topic, e.week_no
+            SELECT e.id, e.year_label, e.subject, e.unit_title, e.topic
             FROM rpt_entries e
             WHERE e.subject IN ('Pendidikan Jasmani','Pendidikan Kesihatan')
-            ORDER BY e.year_label,e.subject,e.week_no,e.id
+            ORDER BY e.year_label,e.subject,e.id
         """).fetchall()
         links = con.execute("""
-            SELECT e.id,e.year_label,e.subject,e.topic,e.week_no,
+            SELECT e.id,e.year_label,e.subject,e.unit_title,e.topic,
                    s.standard_type,s.standard_code,s.standard_text
             FROM rpt_entries e
             JOIN rpt_entry_standards s ON s.rpt_entry_id=e.id
@@ -54,8 +54,8 @@ def build_queue(db_path):
                 queue.append({
                     "record_type": "SP_SOURCE_REVIEW",
                     "entry_id": row["id"], "year": row["year_label"],
-                    "subject": row["subject"], "week": row["week_no"] or "",
-                    "topic": row["topic"] or "", "standard_code": row["standard_code"] or "",
+                    "subject": row["subject"], "week": "",
+                    "topic": (row["unit_title"] or "") + ((" — " + row["topic"]) if row["topic"] else ""), "standard_code": row["standard_code"] or "",
                     "rpt_text": row["standard_text"] or "",
                     "evidence_status": result["status"],
                     "direct_dskp_text": result.get("dskp_text", ""),
@@ -71,7 +71,7 @@ def build_queue(db_path):
                 queue.append({
                     "record_type": "MISSING_SK_LINK", "entry_id": entry["id"],
                     "year": entry["year_label"], "subject": entry["subject"],
-                    "week": entry["week_no"] or "", "topic": entry["topic"] or "",
+                    "week": "", "topic": (entry["unit_title"] or "") + ((" — " + entry["topic"]) if entry["topic"] else ""),
                     "standard_code": "", "rpt_text": "", "evidence_status": "MISSING_SK_LINK",
                     "direct_dskp_text": "", "source_document": "",
                     "action": "LOCATE_AND_VERIFY_EXACT_SK_SOURCE; DO_NOT_INFER",
