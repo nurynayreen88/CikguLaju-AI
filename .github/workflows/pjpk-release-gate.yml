@@ -12,6 +12,9 @@ on:
       - 'tests/test_pjpk_t5_evidence_overlay.py'
       - 'tests/test_pjpk_adapter_smoke.py'
       - 'tests/test_pjpk_t5_rph_editorial.py'
+      - 'tests/test_pjpk_t5_complete_rph.py'
+      - 'scripts/pjpk_t5_complete_rph_audit.py'
+      - 'docs/pjpk/T5_PK_3_COMPLETE_RPH_STAGING_20261024.json'
       - 'docs/pjpk/T5_PK_3_RPH_EDITORIAL_DRAFTS_20261024.md'
       - 'scripts/pjpk_v26_16_adapter.py'
       - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
@@ -34,6 +37,10 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pjpk_adapter_smoke.py' -v
       - name: Check T5 complete editorial RPH content
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_rph_editorial.py' -v
+      - name: Check complete structured T5 RPH against evidence
+        run: |
+          python -m unittest discover -s tests -p 'test_pjpk_t5_complete_rph.py' -v
+          python scripts/pjpk_t5_complete_rph_audit.py
       - name: Validate T5 evidence-overlay integrity (pending readiness is expected)
         run: |
           set +e
