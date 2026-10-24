@@ -124,6 +124,12 @@ def install(g):
         for key in stale_keys:
             state.pop(key, None)
 
+        lesson_to_class = g.get("_lesson_to_class_v2439")
+        if not callable(lesson_to_class):
+            return g["send"](cid,
+                "⚠️ Laluan pemilihan kelas untuk RPH belum tersedia; data PJPK tidak dihantar ke laluan lain.",
+                [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+
         state["pjpk_generic_mode_v2616"] = False
         state["task"] = "quick_material"
         state["quick_material_flow"] = True
@@ -157,12 +163,7 @@ def install(g):
         state["sp_code"] = sp_codes[0]
         state["sp_text"] = sp_texts[0]
 
-        lesson_to_class = g.get("_lesson_to_class_v2439")
-        if callable(lesson_to_class):
-            return lesson_to_class(cid)
-        return g["send"](cid,
-            "⚠️ Laluan pemilihan kelas untuk RPH belum tersedia; data PJPK tidak dihantar ke laluan lain.",
-            [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+        return lesson_to_class(cid)
 
     def callback(cid, data):
         state = g["state"].setdefault(cid, {})
