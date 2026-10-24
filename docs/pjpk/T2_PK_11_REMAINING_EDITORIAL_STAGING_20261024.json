@@ -212,22 +212,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Jauhkan Diri",
-      "objective": "Murid menunjukkan langkah mengelakkan situasi berisiko dan mendapatkan bantuan dengan selamat.",
+      "objective": "Murid mengenal pasti tembakau, alkohol dan dadah sebagai bahan ketagihan serta mempraktikkan cara menolak ajakan mencubanya.",
       "materials": "Kad senario, pelan tempat selamat rekaan dan kad peranan.",
       "induction": "Guru membacakan senario ajakan daripada individu yang membuat murid tidak selesa.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid menandakan pilihan tempat selamat dan orang dewasa dipercayai pada pelan situasi rekaan."
+          "body": "Murid meneliti poster rekaan tentang tembakau, alkohol dan dadah, kemudian memadankan setiap bahan dengan risiko yang dinyatakan oleh guru."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melakonkan tindakan berkata TIDAK, menjauhkan diri dan mendapatkan bantuan tanpa konfrontasi fizikal."
+          "body": "Secara berpasangan, murid melakonkan cara berkata TIDAK terhadap ajakan mencuba bahan ketagihan, menjauhkan diri dan memaklumkan orang dewasa dipercayai."
         }
       ],
-      "reinforcement": "Murid menyusun tiga tindakan selamat bagi situasi baharu.",
+      "reinforcement": "Murid memilih respons selamat untuk tiga situasi ajakan rekaan.",
       "closure": "Penegasan bahawa murid berhak menolak ajakan yang tidak selamat.",
-      "assessment": "Rubrik lakonan dan urutan langkah.",
+      "assessment": "Senarai semak pengenalpastian bahan dan respons penolakan yang jelas.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -252,23 +252,23 @@
       "id": 2347,
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
-      "topic": "Sayang Adik Sayang Ibu",
-      "objective": "Murid menerangkan contoh kasih sayang dan bantuan yang sesuai dalam keluarga tanpa stereotaip peranan.",
+      "topic": "Sayang Adik Sayang",
+      "objective": "Murid mengenal pasti perasaan bimbang dan cemburu serta menunjukkan cara mengurusnya apabila berlaku perubahan dalam keluarga.",
       "materials": "Kad situasi keluarga pelbagai bentuk dan kad tugas ringan.",
       "induction": "Guru menunjukkan gambar rekaan ahli keluarga saling membantu dan bertanya maksud prihatin.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid memadankan keperluan ahli keluarga dengan bentuk bantuan sesuai usia, seperti bertanya khabar atau membantu tugas ringan."
+          "body": "Guru membacakan situasi Hazim menerima adik baharu. Murid mengenal pasti perasaan bimbang dan cemburu tanpa menghakimi watak."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan membina dialog menunjukkan kasih sayang dan meminta izin sebelum membantu; guru menghormati kepelbagaian struktur keluarga."
+          "body": "Murid berpasangan membina dialog menyatakan perasaan dengan sopan, meminta sokongan ahli keluarga dan mencadangkan cara mengurus perubahan."
         }
       ],
-      "reinforcement": "Murid menulis satu tindakan prihatin dan satu ungkapan sopan.",
+      "reinforcement": "Murid memilih respons yang membantu watak mengurus perasaan bimbang atau cemburu.",
       "closure": "Rumusan bahawa kasih sayang ditunjukkan melalui hormat dan bantuan.",
-      "assessment": "Dialog dan respons bertulis.",
+      "assessment": "Semakan dialog dan alasan tindakan mengurus emosi.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
