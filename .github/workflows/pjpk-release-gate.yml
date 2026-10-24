@@ -119,8 +119,9 @@ jobs:
               extracted = pages[0].extract_text()
               ident = int(source.stem.split('_')[-1])
               assert ident in records, source.name
+              normalized = ' '.join(extracted.split())
               for phrase in ('BELUM DILULUSKAN UNTUK PRODUKSI','Aktiviti 1','Aktiviti 2','Refleksi:', 'Slot RPT / Halaman buku teks:', 'Belum disahkan', str(ident), records[ident]['topic']):
-                  assert phrase in extracted, (source.name, phrase)
+                  assert ' '.join(phrase.split()) in normalized, (source.name, phrase)
               assert len(extracted.strip()) > 850, f'{source.name}: unexpectedly short content'
               print(dest.name, 'A4 one page, ID and pending evidence present')
           assert len(list(out.glob('*.pdf'))) == 18
