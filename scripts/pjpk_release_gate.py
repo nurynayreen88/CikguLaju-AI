@@ -14,7 +14,10 @@ REQUIRED = {"entry_id", "year_label", "subject", "entry_kind", "sp_links",
 def audit(path):
     with open(path, newline="", encoding="utf-8-sig") as fh:
         reader = csv.DictReader(fh)
-        missing = REQUIRED - set(reader.fieldnames or ())
+        headers = reader.fieldnames or []
+        if len(headers) != len(set(headers)):
+            raise ValueError("Duplicate CSV column headers")
+        missing = REQUIRED - set(headers)
         if missing:
             raise ValueError("Missing required columns: " + ", ".join(sorted(missing)))
         rows = list(reader)
@@ -24,6 +27,10 @@ def audit(path):
         errors.append("Empty source inventory")
     if any(not ident.strip() or not ident.isdecimal() or int(ident) <= 0 for ident in ids):
         errors.append("Entry IDs must be positive decimal integers")
+    if any(None in row for row in rows):
+        errors.append("CSV row contains extra unlabelled fields")
+    if any(any(value is None for value in row.values()) for row in rows):
+        errors.append("CSV row has missing trailing fields")
     if len(ids) != len(set(ids)):
         errors.append("Duplicate entry IDs")
     for r in rows:
