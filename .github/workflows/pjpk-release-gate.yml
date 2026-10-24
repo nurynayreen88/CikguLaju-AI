@@ -11,6 +11,8 @@ on:
       - 'scripts/pjpk_t5_evidence_overlay.py'
       - 'tests/test_pjpk_t5_evidence_overlay.py'
       - 'tests/test_pjpk_adapter_smoke.py'
+      - 'tests/test_pjpk_t5_rph_editorial.py'
+      - 'docs/pjpk/T5_PK_3_RPH_EDITORIAL_DRAFTS_20261024.md'
       - 'scripts/pjpk_v26_16_adapter.py'
       - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
       - '.github/workflows/pjpk-release-gate.yml'
@@ -30,6 +32,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_evidence_overlay.py' -v
       - name: Run PJPK runtime adapter isolation tests
         run: python -m unittest discover -s tests -p 'test_pjpk_adapter_smoke.py' -v
+      - name: Check T5 complete editorial RPH content
+        run: python -m unittest discover -s tests -p 'test_pjpk_t5_rph_editorial.py' -v
       - name: Validate T5 evidence-overlay integrity (pending readiness is expected)
         run: |
           set +e
