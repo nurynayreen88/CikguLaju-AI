@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "description": "Remaining eleven distinct T2 PK source-gate topic drafts. Standards deliberately unset pending exact per-entry DSKP verification. Not production-ready.",
+  "records": [
+    {
+      "id": 2249,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Postur, Rehat dan Tidur",
+      "objective": "Murid membandingkan postur ketika duduk, masa rehat dan rutin tidur dalam situasi harian.",
+      "materials": "Kad ilustrasi posisi duduk dan jadual aktiviti rekaan.",
+      "induction": "Guru memaparkan dua ilustrasi murid belajar dengan posisi berbeza dan meminta pemerhatian.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid memadankan kad postur dengan cara duduk yang lebih selesa dan selamat; membincangkan kedudukan badan dan rehat semasa belajar."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan menyusun rutin selepas sekolah yang memperuntukkan aktiviti, rehat dan tidur; menjelaskan satu penambahbaikan."
+        }
+      ],
+      "reinforcement": "Murid membetulkan satu rutin rekaan dan menyatakan alasannya.",
+      "closure": "Rumusan amalan postur dan rehat yang baik.",
+      "assessment": "Semakan rutin dan alasan individu.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2250,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Sentuhan Tidak Selamat dan Tidak Selesa",
+      "objective": "Murid membezakan sentuhan selamat, tidak selamat dan tidak selesa serta menunjukkan tindakan mendapatkan bantuan.",
+      "materials": "Kad senario tanpa imej grafik, kad respons dan senarai orang dewasa dipercayai.",
+      "induction": "Guru memperkenalkan hak setiap murid terhadap sempadan tubuh melalui contoh situasi rekaan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid mengelaskan senario sentuhan mengikut rasa selamat/tidak selesa dan mengenal pasti bahawa murid boleh menolak sentuhan tidak diingini."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melatih respons tegas, bergerak ke tempat selamat dan memberitahu orang dewasa dipercayai; tidak meminta murid berkongsi pengalaman peribadi."
+        }
+      ],
+      "reinforcement": "Murid memilih langkah selamat bagi senario baharu.",
+      "closure": "Guru menegaskan murid boleh meminta bantuan berulang kali sehingga didengari.",
+      "assessment": "Rubrik respons senario.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2251,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Penyalahgunaan Bahan",
+      "objective": "Murid mengenal pasti risiko menggunakan bahan yang tidak sepatutnya dan memilih tindakan menjauhinya.",
+      "materials": "Kad bahan harian, kad situasi ajakan dan carta pilihan selamat.",
+      "induction": "Guru memaparkan situasi rekaan penemuan bahan tidak dikenali dan bertanya tindakan wajar.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Kumpulan membezakan penggunaan bahan di bawah pengawasan orang dewasa daripada cubaan menggunakan bahan tidak dikenali tanpa kebenaran."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melakonkan penolakan ajakan mencuba bahan, menjauhkan diri dan melaporkan kepada orang dewasa dipercayai."
+        }
+      ],
+      "reinforcement": "Murid melengkapkan urutan tiga langkah keselamatan.",
+      "closure": "Penutup: jangan cuba bahan tidak dikenali; minta bantuan.",
+      "assessment": "Semakan urutan dan lakonan.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2344,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Gaya Hidup Sihat",
+      "objective": "Murid mencadangkan amalan harian yang menyokong kesihatan diri melalui situasi sekolah dan rumah.",
+      "materials": "Kad aktiviti fizikal, rehat, kebersihan dan jadual harian.",
+      "induction": "Guru menunjukkan dua rutin harian rekaan dan meminta murid mengenal pasti perbezaan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid mengelaskan amalan dalam kad kepada aktiviti, rehat, kebersihan dan pilihan makan/minum yang sesuai."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membina satu rutin harian seimbang dan menerangkan bagaimana mereka boleh melaksanakannya di rumah atau sekolah."
+        }
+      ],
+      "reinforcement": "Murid memilih dua amalan untuk rutin sendiri dan memberikan sebab.",
+      "closure": "Guru merumuskan kepentingan amalan yang konsisten.",
+      "assessment": "Jadual individu dan justifikasi.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2345,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Jaga Diri",
+      "objective": "Murid mengenal pasti situasi yang memerlukan penjagaan diri dan memilih tindakan selamat.",
+      "materials": "Kad situasi kebersihan, keselamatan dan batas diri.",
+      "induction": "Guru menunjukkan ilustrasi murid berdepan situasi kurang selesa dan bertanya pilihan tindakan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Kumpulan meneliti kad situasi dan menyusun tindakan penjagaan diri mengikut konteks; guru tidak mengandaikan semua situasi sama."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Murid menggunakan kad respons untuk menerangkan cara meminta pertolongan daripada orang dewasa dipercayai bagi situasi yang memerlukan bantuan."
+        }
+      ],
+      "reinforcement": "Murid menjawab dua senario baharu dengan tindakan dan sebab.",
+      "closure": "Rumusan tentang menjaga diri dan mendapatkan bantuan.",
+      "assessment": "Jawapan situasi dan pemerhatian.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2346,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Jauhkan Diri",
+      "objective": "Murid menunjukkan langkah mengelakkan situasi berisiko dan mendapatkan bantuan dengan selamat.",
+      "materials": "Kad senario, pelan tempat selamat rekaan dan kad peranan.",
+      "induction": "Guru membacakan senario ajakan daripada individu yang membuat murid tidak selesa.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid menandakan pilihan tempat selamat dan orang dewasa dipercayai pada pelan situasi rekaan."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melakonkan tindakan berkata TIDAK, menjauhkan diri dan mendapatkan bantuan tanpa konfrontasi fizikal."
+        }
+      ],
+      "reinforcement": "Murid menyusun tiga tindakan selamat bagi situasi baharu.",
+      "closure": "Penegasan bahawa murid berhak menolak ajakan yang tidak selamat.",
+      "assessment": "Rubrik lakonan dan urutan langkah.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2347,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Sayang Adik Sayang Ibu",
+      "objective": "Murid menerangkan contoh kasih sayang dan bantuan yang sesuai dalam keluarga tanpa stereotaip peranan.",
+      "materials": "Kad situasi keluarga pelbagai bentuk dan kad tugas ringan.",
+      "induction": "Guru menunjukkan gambar rekaan ahli keluarga saling membantu dan bertanya maksud prihatin.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid memadankan keperluan ahli keluarga dengan bentuk bantuan sesuai usia, seperti bertanya khabar atau membantu tugas ringan."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membina dialog menunjukkan kasih sayang dan meminta izin sebelum membantu; guru menghormati kepelbagaian struktur keluarga."
+        }
+      ],
+      "reinforcement": "Murid menulis satu tindakan prihatin dan satu ungkapan sopan.",
+      "closure": "Rumusan bahawa kasih sayang ditunjukkan melalui hormat dan bantuan.",
+      "assessment": "Dialog dan respons bertulis.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2348,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Bekerjasama Sekeluarga",
+      "objective": "Murid mengenal pasti cara bekerjasama dalam tugas keluarga yang sesuai dengan kemampuan.",
+      "materials": "Kad tugasan rumah dan carta pembahagian tugas rekaan.",
+      "induction": "Guru membentangkan situasi persediaan keluarga untuk aktiviti bersama.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Kumpulan mengagihkan kad tugasan ringan secara adil mengikut kemampuan ahli keluarga rekaan."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Murid melakonkan cara meminta dan menawarkan bantuan dengan bahasa sopan ketika tugasan berubah."
+        }
+      ],
+      "reinforcement": "Murid membetulkan carta tugas yang tidak seimbang dan menerangkan sebab.",
+      "closure": "Rumusan kerjasama, keselamatan dan saling menghargai.",
+      "assessment": "Carta kumpulan dan pemerhatian lakonan.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2349,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Bersyukur dan Kasih Sayang",
+      "objective": "Murid menyatakan cara menghargai penjagaan dan sokongan ahli keluarga atau penjaga.",
+      "materials": "Kad dialog penghargaan dan senario sokongan harian.",
+      "induction": "Guru berkongsi situasi rekaan seseorang membantu menyediakan keperluan sekolah.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid mengenal pasti bentuk sokongan dalam kad situasi dan memilih ungkapan terima kasih yang sesuai."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan mencipta kad penghargaan atau dialog ringkas dengan tindakan balas yang praktikal dan hormat."
+        }
+      ],
+      "reinforcement": "Murid menyatakan satu contoh menghargai orang yang menjaga mereka.",
+      "closure": "Penutup menekankan kasih sayang dan hormat dalam pelbagai bentuk keluarga.",
+      "assessment": "Kad penghargaan dan penjelasan lisan.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2350,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Bersama Mencegah",
+      "objective": "Murid mencadangkan langkah pencegahan risiko dalam situasi keluarga dan komuniti yang diberi.",
+      "materials": "Kad situasi, carta risiko–tindakan–bantuan.",
+      "induction": "Guru memaparkan senario rekaan yang memerlukan ahli keluarga bekerjasama menjaga keselamatan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid mengenal pasti risiko dalam kad situasi dan memilih langkah pencegahan yang sesuai, tanpa mencuba tindakan berbahaya."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membina carta tindakan bersama dan memilih orang dewasa/pihak yang wajar diminta bantuan apabila perlu."
+        }
+      ],
+      "reinforcement": "Murid memberi satu tindakan pencegahan bagi situasi baharu dan alasannya.",
+      "closure": "Rumusan tentang pencegahan dan bantuan awal.",
+      "assessment": "Carta kumpulan dan respons individu.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2354,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Jangan Terpengaruh",
+      "objective": "Murid mengenal pasti pengaruh yang boleh menjejaskan pilihan makan/minum dan menunjukkan keputusan lebih sihat.",
+      "materials": "Kad iklan rekaan tanpa jenama, kad ajakan rakan dan pilihan makanan.",
+      "induction": "Guru menunjukkan iklan rekaan dan bertanya sama ada semua dakwaan perlu dipercayai.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid meneliti kad ajakan dan iklan rekaan, membezakan fakta yang boleh diperiksa daripada pujukan membeli/mencuba."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melakonkan cara menolak desakan rakan dan memilih makanan/minuman berdasarkan keperluan, bukan populariti."
+        }
+      ],
+      "reinforcement": "Murid menulis satu respons asertif dan satu alasan pemilihan.",
+      "closure": "Rumusan keputusan pemakanan berdasarkan pertimbangan sendiri.",
+      "assessment": "Rubrik dialog dan alasan.",
+      "sk": null,
+      "sp": [],
+      "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "sp_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    }
+  ]
+}
