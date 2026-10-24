@@ -40,6 +40,24 @@ class PJPKAdapterSmokeTests(unittest.TestCase):
     def test_invalid_year_and_subject_fail_closed(self):
         self.assertEqual(ready_pdp("Tahun 7","Pendidikan Kesihatan",self.path), [])
         self.assertEqual(ready_pdp("Tahun 5","Other",self.path), [])
+    def test_t2_unverified_editorial_rows_never_exposed(self):
+        from scripts.pjpk_t2_pk_evidence_queue import build
+        items = build()
+        with sqlite3.connect(self.path) as con:
+            con.executemany("""INSERT INTO pjpk_ready_pdp
+                (id,year_label,subject,content_verified,sequence_verified,schedule_verified,topic)
+                VALUES (?,?,?,?,?,?,?)""", [
+                (item["entry_id"], "Tahun 2", "Pendidikan Kesihatan", 0, 0, 0, item["topic"])
+                for item in items
+            ])
+        self.assertEqual(len(items), 18)
+        self.assertEqual(ready_pdp("Tahun 2", "Pendidikan Kesihatan", self.path), [])
+
+    def test_invalid_sqlite_file_fails_closed(self):
+        bad = self.path.parent / "invalid.db"
+        bad.write_text("not a sqlite database", encoding="utf-8")
+        self.assertEqual(ready_pdp("Tahun 5", "Pendidikan Kesihatan", bad), [])
+
     def test_missing_db_fails_closed(self):
         self.assertEqual(ready_pdp("Tahun 5","Pendidikan Kesihatan",self.path.parent/"missing.db"), [])
     def test_missing_verification_column_fails_closed(self):
