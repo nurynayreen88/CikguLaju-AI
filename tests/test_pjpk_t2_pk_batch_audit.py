@@ -24,7 +24,7 @@ class TestT2PKBatchAudit(unittest.TestCase):
             self.assertEqual(len(expected), 18)
             self.assertEqual(errors, [])
             with path.open("a", encoding="utf-8") as fh:
-                fh.write("9999,Tahun 2,Pendidikan Kesihatan,PDP_CANDIDATE,Missing Topic,0\\n")
+                fh.write("9999,Tahun 2,Pendidikan Kesihatan,PDP_CANDIDATE,Missing Topic,0\n")
             _, _, errors = audit(path)
             self.assertTrue(any("coverage mismatch" in e for e in errors))
 
