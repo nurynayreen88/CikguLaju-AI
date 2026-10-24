@@ -1,0 +1,125 @@
+{
+  "status": "candidate_alignment_only",
+  "source": "GuruBesar_DSKP_PJPK_Tahun_2.pdf, PK component; exact RPT slot unavailable",
+  "groups": [
+    {
+      "ids": [
+        2249,
+        2344
+      ],
+      "sk": "1.1",
+      "suggested": [
+        {
+          "id": 2249,
+          "sp": [
+            "1.1.1",
+            "1.1.3"
+          ],
+          "focus": "meaning and importance of posture, rest, sleep"
+        },
+        {
+          "id": 2344,
+          "sp": [
+            "1.1.2"
+          ],
+          "focus": "applying correct posture; editorial activity still needs more explicit practical demonstration"
+        }
+      ]
+    },
+    {
+      "ids": [
+        2250,
+        2345
+      ],
+      "sk": "1.2",
+      "suggested": [
+        {
+          "id": 2250,
+          "sp": [
+            "1.2.1",
+            "1.2.2"
+          ],
+          "focus": "identify situations and say NO"
+        },
+        {
+          "id": 2345,
+          "sp": [
+            "1.2.3"
+          ],
+          "focus": "evaluate situations; requires stronger evaluation prompt before assignment"
+        }
+      ]
+    },
+    {
+      "ids": [
+        2251,
+        2346
+      ],
+      "sk": "2.1",
+      "suggested": [
+        {
+          "id": 2251,
+          "sp": [
+            "2.1.1",
+            "2.1.2"
+          ],
+          "focus": "identify substances and explain harm"
+        },
+        {
+          "id": 2346,
+          "sp": [
+            "2.1.3"
+          ],
+          "focus": "evaluate importance of saying NO; requires explicit reasoned evaluation"
+        }
+      ]
+    },
+    {
+      "ids": [
+        2232,
+        2352
+      ],
+      "sk": "8.1",
+      "suggested": [
+        {
+          "id": 2232,
+          "sp": [
+            "8.1.1"
+          ],
+          "focus": "overlap; no distinct RPT slot established"
+        },
+        {
+          "id": 2352,
+          "sp": [
+            "8.1.1"
+          ],
+          "focus": "overlap; no distinct RPT slot established"
+        }
+      ]
+    },
+    {
+      "ids": [
+        2252,
+        2353
+      ],
+      "sk": "8.1",
+      "suggested": [
+        {
+          "id": 2252,
+          "sp": [
+            "8.1.2"
+          ],
+          "focus": "overlap; no distinct RPT slot established"
+        },
+        {
+          "id": 2353,
+          "sp": [
+            "8.1.2"
+          ],
+          "focus": "overlap; no distinct RPT slot established"
+        }
+      ]
+    }
+  ],
+  "rule": "No suggested allocation may be promoted to actual SK/SP or production-ready without exact RPT slot, textbook alignment, runtime generation and A4 review."
+}
