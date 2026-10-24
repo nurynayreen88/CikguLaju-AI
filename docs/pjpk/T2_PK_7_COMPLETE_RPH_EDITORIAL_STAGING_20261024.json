@@ -30,22 +30,22 @@
         "8.1.2"
       ],
       "sk": null,
-      "objective": "Murid menyatakan waktu dan kuantiti makan/minum mengikut keperluan serta mengenal pasti pilihan yang boleh menyumbang kepada berat badan berlebihan.",
+      "objective": "Murid menyatakan waktu makan dan minum yang sesuai serta kuantiti mengikut keperluan harian dalam situasi rekaan.",
       "materials": "Kad jadual harian, kad makanan/minuman dan carta pilihan.",
       "induction": "Guru menunjukkan dua jadual makan rekaan dan meminta murid membandingkan masa serta pilihan minuman.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Susun rutin makan",
-          "body": "Murid menyusun kad sarapan, makan tengah hari, makan malam dan waktu minum mengikut rutin yang munasabah; guru membincangkan keperluan yang berbeza tanpa menetapkan sukatan universal."
+          "heading": "Aktiviti 1",
+          "body": "Murid menyusun kad sarapan, makan tengah hari, makan malam dan waktu minum mengikut rutin harian yang munasabah."
         },
         {
-          "heading": "Aktiviti 2 – Nilai pilihan harian",
-          "body": "Dalam kumpulan, murid membandingkan dua contoh menu harian dan menerangkan pilihan makanan atau minuman yang wajar dihadkan serta sebabnya; guru mengelakkan stigma bentuk badan."
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membandingkan keperluan makan dan minum dalam dua jadual aktiviti rekaan, kemudian memberi alasan tanpa menetapkan sukatan universal."
         }
       ],
-      "reinforcement": "Murid melengkapkan satu perubahan praktikal pada contoh jadual makan dan memberikan alasan.",
+      "reinforcement": "Murid membetulkan jadual makan/minum rekaan dan menjelaskan pilihan.",
       "closure": "Rumusan tentang waktu makan, kuantiti mengikut keperluan dan kepelbagaian makanan.",
-      "assessment": "Semakan jadual dan alasan lisan.",
+      "assessment": "Semakan jadual dan alasan tentang waktu serta kuantiti mengikut keperluan.",
       "sp_text_verified": false
     },
     {
@@ -76,22 +76,22 @@
         "8.1.2"
       ],
       "sk": null,
-      "objective": "Murid menyatakan dua tabiat makan/minum sihat dan menganalisis pilihan dalam satu situasi harian.",
+      "objective": "Murid menganalisis makanan dan minuman yang boleh menyumbang kepada berat badan berlebihan serta mencadangkan pilihan yang lebih seimbang.",
       "materials": "Kad situasi kantin, kad pilihan makanan/minuman dan lembaran sebab-akibat.",
       "induction": "Guru membacakan situasi murid yang memilih makanan di kantin dan bertanya bagaimana membuat keputusan.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Pilih dengan sebab",
-          "body": "Pasangan murid mengelaskan beberapa pilihan makanan/minuman dalam kad situasi, menjelaskan kepelbagaian dan kuantiti mengikut keperluan, bukan menghafal satu menu wajib."
+          "heading": "Aktiviti 1",
+          "body": "Murid membandingkan kad corak pemakanan rekaan dan mengenal pasti pilihan makanan serta minuman yang wajar diambil secara sederhana."
         },
         {
-          "heading": "Aktiviti 2 – Ubah keputusan",
-          "body": "Kumpulan meneliti situasi pengambilan makanan/minuman berlebihan secara berulang, mencadangkan penggantian yang munasabah dan menerangkan kesannya tanpa mengejek berat badan seseorang."
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan mencadangkan pilihan yang lebih seimbang berdasarkan situasi harian tanpa menilai rupa atau saiz badan individu."
         }
       ],
-      "reinforcement": "Murid menulis dua tabiat sihat dan satu sebab untuk mengubah pilihan dalam situasi diberi.",
+      "reinforcement": "Murid menerangkan satu perubahan pilihan makanan atau minuman dan sebabnya.",
       "closure": "Guru merumuskan pemakanan seimbang dan pilihan yang selamat.",
-      "assessment": "Respons bertulis individu dan pembentangan kumpulan.",
+      "assessment": "Semakan analisis pilihan makanan/minuman dan justifikasi.",
       "sp_text_verified": false
     },
     {
