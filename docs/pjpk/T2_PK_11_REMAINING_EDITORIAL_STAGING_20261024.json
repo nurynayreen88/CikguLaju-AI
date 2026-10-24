@@ -129,23 +129,23 @@
       "id": 2344,
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
-      "topic": "Gaya Hidup Sihat",
-      "objective": "Murid mencadangkan amalan harian yang menyokong kesihatan diri melalui situasi sekolah dan rumah.",
+      "topic": "Rutin Sihat: Postur, Rehat dan Tidur",
+      "objective": "Murid mengenal pasti postur yang betul serta kepentingan rehat dan tidur yang mencukupi dalam rutin harian.",
       "materials": "Kad aktiviti fizikal, rehat, kebersihan dan jadual harian.",
       "induction": "Guru menunjukkan dua rutin harian rekaan dan meminta murid mengenal pasti perbezaan.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid mengelaskan amalan dalam kad kepada aktiviti, rehat, kebersihan dan pilihan makan/minum yang sesuai."
+          "body": "Murid membandingkan ilustrasi postur duduk dan menerangkan postur yang lebih sesuai ketika belajar."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan membina satu rutin harian seimbang dan menerangkan bagaimana mereka boleh melaksanakannya di rumah atau sekolah."
+          "body": "Kumpulan menyusun kad rutin harian yang memasukkan waktu rehat dan tidur yang mencukupi, kemudian menerangkan satu pilihan."
         }
       ],
-      "reinforcement": "Murid memilih dua amalan untuk rutin sendiri dan memberikan sebab.",
+      "reinforcement": "Murid membetulkan contoh rutin yang tidak memperuntukkan rehat dan tidur mencukupi.",
       "closure": "Guru merumuskan kepentingan amalan yang konsisten.",
-      "assessment": "Jadual individu dan justifikasi.",
+      "assessment": "Semakan padanan postur dan penerangan kepentingan rehat serta tidur.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -171,22 +171,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Jaga Diri",
-      "objective": "Murid mengenal pasti situasi yang memerlukan penjagaan diri dan memilih tindakan selamat.",
+      "objective": "Murid membezakan sentuhan selamat, tidak selamat dan tidak selesa serta mempraktikkan respons berkata TIDAK dan mendapatkan bantuan.",
       "materials": "Kad situasi kebersihan, keselamatan dan batas diri.",
       "induction": "Guru menunjukkan ilustrasi murid berdepan situasi kurang selesa dan bertanya pilihan tindakan.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Kumpulan meneliti kad situasi dan menyusun tindakan penjagaan diri mengikut konteks; guru tidak mengandaikan semua situasi sama."
+          "body": "Guru menggunakan kad situasi yang sesuai usia; murid membezakan sentuhan selamat, tidak selamat dan tidak selesa tanpa diminta berkongsi pengalaman peribadi."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Murid menggunakan kad respons untuk menerangkan cara meminta pertolongan daripada orang dewasa dipercayai bagi situasi yang memerlukan bantuan."
+          "body": "Murid melatih respons berkata TIDAK, menjauhkan diri dan memberitahu orang dewasa dipercayai melalui lakonan tanpa sentuhan fizikal."
         }
       ],
-      "reinforcement": "Murid menjawab dua senario baharu dengan tindakan dan sebab.",
+      "reinforcement": "Murid memilih tindakan selamat bagi situasi rekaan dan menyatakan siapa yang boleh membantu.",
       "closure": "Rumusan tentang menjaga diri dan mendapatkan bantuan.",
-      "assessment": "Jawapan situasi dan pemerhatian.",
+      "assessment": "Senarai semak pengelasan situasi dan respons keselamatan yang sesuai.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
