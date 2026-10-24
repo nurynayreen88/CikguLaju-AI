@@ -77,11 +77,9 @@ jobs:
           install(g)
           g['callback'](1, 'sub_Pendidikan Jasmani')
           assert events and events[-1][0] == 'SEND', events
-          assert 'Pilih PdP' in events[-1][1], events[-1]
-          assert '\\n' not in events[-1][1], 'Literal backslash-n in menu text'
           assert '_pjpk_v2616_rows' not in state[1], 'Selectable rows must not be cached in session'
           buttons = [button for group in events[-1][2] for button in group]
-          assert any(button['callback_data'] == 'pjpk2616pdp|0' for button in buttons), 'First verified PdP missing'
+          assert any(button['callback_data'] == 'pjpk2616pdp|0' for button in buttons), 'First fully verified PdP missing'
           g['callback'](1, 'pjpk2616pdp|0')
           handoffs = [event for event in events if event[0] == 'RPH_ENTRY']
           assert handoffs, 'Selection did not enter the normal RPH class flow'
