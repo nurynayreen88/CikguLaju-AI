@@ -253,21 +253,21 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Sayang Adik Sayang",
-      "objective": "Murid mengenal pasti perasaan bimbang dan cemburu serta menunjukkan cara mengurusnya apabila berlaku perubahan dalam keluarga.",
-      "materials": "Kad situasi keluarga pelbagai bentuk dan kad tugas ringan.",
-      "induction": "Guru menunjukkan gambar rekaan ahli keluarga saling membantu dan bertanya maksud prihatin.",
+      "objective": "Murid menyatakan perasaan bimbang dan cemburu serta mengaplikasikan cara mengurusnya apabila berlaku perubahan dalam kalangan ahli keluarga atau rakan sebaya.",
+      "materials": "Kad situasi adik baharu dan perubahan persahabatan; kad emosi; kad dialog sokongan.",
+      "induction": "Guru membacakan dua situasi rekaan: menerima adik baharu dan rakan rapat mula berkawan dengan murid lain.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Guru membacakan situasi Hazim menerima adik baharu. Murid mengenal pasti perasaan bimbang dan cemburu tanpa menghakimi watak."
+          "body": "Murid mengenal pasti perasaan bimbang atau cemburu dalam situasi adik baharu dan perubahan hubungan rakan sebaya tanpa menghakimi watak."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Murid berpasangan membina dialog menyatakan perasaan dengan sopan, meminta sokongan ahli keluarga dan mencadangkan cara mengurus perubahan."
+          "body": "Pasangan membina dialog sopan untuk menyatakan perasaan dan mendapatkan sokongan ahli keluarga, guru atau rakan yang sesuai."
         }
       ],
       "reinforcement": "Murid memilih respons yang membantu watak mengurus perasaan bimbang atau cemburu.",
-      "closure": "Rumusan bahawa kasih sayang ditunjukkan melalui hormat dan bantuan.",
+      "closure": "Rumusan cara mengurus bimbang dan cemburu ketika hubungan keluarga atau persahabatan berubah.",
       "assessment": "Semakan dialog dan alasan tindakan mengurus emosi.",
       "sk": null,
       "sp": [],
@@ -300,7 +300,7 @@
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid meneliti situasi keluarga dan mengenal pasti sumbangan setiap ahli tanpa menetapkan tugas berdasarkan jantina."
+          "body": "Murid menyatakan satu keistimewaan diri sebagai lelaki atau perempuan dalam keluarga dan meneliti sumbangan ahli keluarga tanpa menetapkan tugas mengikut jantina."
         },
         {
           "heading": "Aktiviti 2",
@@ -377,8 +377,8 @@
       "subject": "Pendidikan Kesihatan",
       "topic": "Bersama Mencegah",
       "objective": "Murid menerangkan penyakit tangan, kaki dan mulut serta konjunktivitis dan mengenal pasti cara mencegah penularannya.",
-      "materials": "Kad situasi, carta risiko–tindakan–bantuan.",
-      "induction": "Guru memaparkan senario rekaan yang memerlukan ahli keluarga bekerjasama menjaga keselamatan.",
+      "materials": "Kad maklumat penyakit tangan, kaki dan mulut serta konjunktivitis; kad amalan kebersihan; kertas carta pencegahan.",
+      "induction": "Guru memaparkan dua situasi rekaan berkaitan penyakit tangan, kaki dan mulut serta konjunktivitis dan bertanya amalan kebersihan yang sesuai.",
       "activities": [
         {
           "heading": "Aktiviti 1",
@@ -390,7 +390,7 @@
         }
       ],
       "reinforcement": "Murid memadankan setiap penyakit dengan langkah pencegahan dan memberikan alasan.",
-      "closure": "Rumusan tentang pencegahan dan bantuan awal.",
+      "closure": "Rumusan penerangan kedua-dua penyakit dan amalan kebersihan diri untuk mencegah penularan.",
       "assessment": "Senarai semak penerangan kedua-dua penyakit dan pemilihan langkah kebersihan yang sesuai.",
       "sk": null,
       "sp": [],
