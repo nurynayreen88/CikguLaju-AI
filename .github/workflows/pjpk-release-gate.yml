@@ -23,6 +23,8 @@ on:
       - 'scripts/pjpk_v26_16_adapter.py'
       - 'scripts/activate_pjpk_v26_16.py'
       - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
+      - 'scripts/pjpk_t2_pk_preview.py'
+      - 'tests/test_pjpk_t2_pk_preview.py'
       - 'scripts/pjpk_t2_pk_batch_audit.py'
       - 'tests/test_pjpk_t2_pk_batch_audit.py'
       - 'docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json'
@@ -42,6 +44,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pjpk_release_gate.py' -v
       - name: Audit all eighteen T2 PK editorial RPH
         run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_batch_audit.py' -v
+      - name: Test all eighteen T2 PK previews
+        run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_preview.py' -v
       - name: Run T5 evidence-overlay regression tests
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_evidence_overlay.py' -v
       - name: Run PJPK runtime adapter isolation tests
@@ -86,6 +90,37 @@ jobs:
               print(f'{pdf.name}: A4, one page, both activities present')
           assert len(list(output.glob('*.pdf'))) == 3
           PY
+      - name: Render and inspect eighteen T2 PK A4 PDF previews
+        run: |
+          python -m scripts.pjpk_t2_pk_preview /tmp/pjpk-t2-html
+          python - <<'PY'
+          from pathlib import Path
+          from weasyprint import HTML
+          from pypdf import PdfReader
+          out = Path('/tmp/pjpk-t2-pdf')
+          out.mkdir(exist_ok=True)
+          inputs = sorted(Path('/tmp/pjpk-t2-html').glob('*.html'))
+          assert len(inputs) == 18
+          for source in inputs:
+              dest = out / (source.stem + '.pdf')
+              HTML(filename=str(source)).write_pdf(str(dest))
+              pages = PdfReader(str(dest)).pages
+              assert len(pages) == 1, f'{source.name}: {len(pages)} pages'
+              box = pages[0].mediabox
+              assert abs(float(box.width)-595.28)<2 and abs(float(box.height)-841.89)<2
+              extracted = pages[0].extract_text()
+              for phrase in ('BELUM DILULUSKAN UNTUK PRODUKSI','Aktiviti 1','Aktiviti 2','Refleksi:'):
+                  assert phrase in extracted, (source.name, phrase)
+              print(dest.name, 'A4 one page')
+          assert len(list(out.glob('*.pdf'))) == 18
+          PY
+      - name: Upload eighteen T2 PK editorial PDF previews
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pjpk-t2-pk-18-editorial-a4-previews
+          path: /tmp/pjpk-t2-pdf/*.pdf
+          if-no-files-found: warn
       - name: Upload editorial PDF previews
         if: always()
         uses: actions/upload-artifact@v4
