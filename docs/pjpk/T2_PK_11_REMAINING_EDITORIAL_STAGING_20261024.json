@@ -7,22 +7,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Postur, Rehat dan Tidur",
-      "objective": "Murid membandingkan postur ketika duduk, masa rehat dan rutin tidur dalam situasi harian.",
+      "objective": "Murid menyatakan maksud postur, rehat dan tidur serta menerangkan kepentingannya kepada pertumbuhan dan perkembangan fizikal yang sihat.",
       "materials": "Kad ilustrasi posisi duduk dan jadual aktiviti rekaan.",
       "induction": "Guru memaparkan dua ilustrasi murid belajar dengan posisi berbeza dan meminta pemerhatian.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid memadankan kad postur dengan cara duduk yang lebih selesa dan selamat; membincangkan kedudukan badan dan rehat semasa belajar."
+          "body": "Guru memaparkan ilustrasi postur duduk dan tidur. Murid menerangkan maksud postur, rehat dan tidur menggunakan contoh harian."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan menyusun rutin selepas sekolah yang memperuntukkan aktiviti, rehat dan tidur; menjelaskan satu penambahbaikan."
+          "body": "Kumpulan membandingkan dua rutin rekaan dan mencadangkan postur yang betul serta masa rehat dan tidur yang mencukupi, dengan alasan."
         }
       ],
-      "reinforcement": "Murid membetulkan satu rutin rekaan dan menyatakan alasannya.",
+      "reinforcement": "Murid membetulkan satu rutin rekaan dan menjelaskan manfaat postur, rehat dan tidur.",
       "closure": "Rumusan amalan postur dan rehat yang baik.",
-      "assessment": "Semakan rutin dan alasan individu.",
+      "assessment": "Semakan maksud tiga istilah dan alasan penambahbaikan rutin.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -48,22 +48,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Sentuhan Tidak Selamat dan Tidak Selesa",
-      "objective": "Murid membezakan sentuhan selamat, tidak selamat dan tidak selesa serta menunjukkan tindakan mendapatkan bantuan.",
+      "objective": "Murid mengenal pasti sentuhan tidak selamat dan tidak selesa serta mengaplikasikan kemahiran berkata TIDAK dan meminta bantuan.",
       "materials": "Kad senario tanpa imej grafik, kad respons dan senarai orang dewasa dipercayai.",
       "induction": "Guru memperkenalkan hak setiap murid terhadap sempadan tubuh melalui contoh situasi rekaan.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid mengelaskan senario sentuhan mengikut rasa selamat/tidak selesa dan mengenal pasti bahawa murid boleh menolak sentuhan tidak diingini."
+          "body": "Guru menunjukkan kad situasi sesuai usia; murid mengelaskan sentuhan tidak selamat dan tidak selesa tanpa berkongsi pengalaman peribadi."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melatih respons tegas, bergerak ke tempat selamat dan memberitahu orang dewasa dipercayai; tidak meminta murid berkongsi pengalaman peribadi."
+          "body": "Murid berlatih berkata TIDAK, menjauhkan diri dan memberitahu orang dewasa dipercayai melalui lakonan tanpa sentuhan fizikal."
         }
       ],
-      "reinforcement": "Murid memilih langkah selamat bagi senario baharu.",
+      "reinforcement": "Murid memilih respons bagi dua situasi rekaan dan menyatakan orang dewasa yang boleh membantu.",
       "closure": "Guru menegaskan murid boleh meminta bantuan berulang kali sehingga didengari.",
-      "assessment": "Rubrik respons senario.",
+      "assessment": "Senarai semak pengelasan situasi dan respons berkata TIDAK.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
