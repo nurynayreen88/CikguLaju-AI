@@ -1,4 +1,4 @@
 entry_id,year_label,subject,topic,sp_links,dskp_text_matches,book_exact_match,production_ready,next_required_check
-2259,Tahun 5,Pendidikan Kesihatan,Pencegahan Penyakit Berjangkit,2,2,0,0,Verify exact Year 5 textbook page and RPT lesson then RPH runtime
-2260,Tahun 5,Pendidikan Kesihatan,Pengaruh Rakan Sebaya,3,3,0,0,Verify exact Year 5 textbook page and RPT lesson then RPH runtime
-2261,Tahun 5,Pendidikan Kesihatan,Nutrien dan Label Makanan,3,3,0,0,Verify exact Year 5 textbook page and RPT lesson then RPH runtime
+2259,Tahun 5,Pendidikan Kesihatan,Pencegahan Penyakit Berjangkit,2,2,1,0,Verify exact RPT lesson identity then runtime RPH and human A4 review
+2260,Tahun 5,Pendidikan Kesihatan,Pengaruh Rakan Sebaya,3,3,1,0,Verify exact RPT lesson identity then runtime RPH and human A4 review
+2261,Tahun 5,Pendidikan Kesihatan,Nutrien dan Label Makanan,3,3,1,0,Verify exact RPT lesson identity then runtime RPH and human A4 review
