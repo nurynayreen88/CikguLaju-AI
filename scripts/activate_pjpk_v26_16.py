@@ -68,7 +68,6 @@ def install(g):
         subject = state.get("subject", "")
         year = state.get("year", "")
         rows = rows_for(year, subject)
-        state["_pjpk_v2616_rows"] = rows
         if not rows:
             return g["send"](cid,
                 "🚧 <b>PdP PJPK untuk pilihan ini belum disahkan sepenuhnya.</b> Data belum siap tidak digunakan untuk RPH.",
@@ -181,7 +180,7 @@ def install(g):
         if value.startswith("pjpk2616page|") and state.get("subject") in (s for _, s in subjects):
             try:
                 return menu(cid, int(value.split("|", 1)[1]))
-            except ValueError:
+            except (ValueError, OverflowError):
                 return menu(cid)
         if value.startswith("pjpk2616pdp|") and state.get("subject") in (s for _, s in subjects):
             rows = rows_for(state.get("year"), state.get("subject"))
