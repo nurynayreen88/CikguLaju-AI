@@ -20,6 +20,10 @@ def audit(path):
         rows = list(reader)
     ids = [r["entry_id"] for r in rows]
     errors = []
+    if not rows:
+        errors.append("Empty source inventory")
+    if any(not ident.strip() or not ident.isdecimal() or int(ident) <= 0 for ident in ids):
+        errors.append("Entry IDs must be positive decimal integers")
     if len(ids) != len(set(ids)):
         errors.append("Duplicate entry IDs")
     for r in rows:
