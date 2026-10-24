@@ -27,7 +27,12 @@ def build():
     matrix = json.loads(FOCUS.read_text(encoding="utf-8"))
     if matrix.get("status") != "candidate_only_do_not_activate" or matrix.get("production_ready") is not False:
         raise ValueError("Candidate focus matrix must remain blocked")
-    candidates = {row["id"]: row["sp"] for row in matrix["candidates"]}
+    candidate_rows = matrix["candidates"]
+    candidates = {row["id"]: row["sp"] for row in candidate_rows}
+    if len(candidate_rows) != len(candidates):
+        raise ValueError("Duplicate candidate focus IDs")
+    if any(not isinstance(codes, list) or not codes or any(not isinstance(code, str) or not code.strip() for code in codes) for codes in candidates.values()):
+        raise ValueError("Candidate focus SP codes must be nonempty string lists")
     if len(candidates) != 11 or set(candidates) != {r["id"] for r in records if not r.get("sp")}:
         raise ValueError("Candidate focus matrix does not match eleven empty-SP records")
     output = []
