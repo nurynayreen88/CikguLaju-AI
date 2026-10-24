@@ -34,6 +34,17 @@ def prepared_rph(entry_id, verified_ready_row=None):
     if any(record.get(key) is not True for key in
            ("rpt_exact_slot_verified", "rph_runtime_verified", "a4_review_verified")):
         return None
+    standards = verified_ready_row.get("_std")
+    if not isinstance(standards, list) or not standards:
+        return None
+    verified_sk = {str(item.get("standard_code", "")).strip() for item in standards
+                   if isinstance(item, dict) and item.get("standard_type") == "SK"
+                   and item.get("verified") in (1, True)}
+    verified_sp = {str(item.get("standard_code", "")).strip() for item in standards
+                   if isinstance(item, dict) and item.get("standard_type") == "SP"
+                   and item.get("verified") in (1, True)}
+    if record["sk"] not in verified_sk or set(record["sp"]) != verified_sp:
+        return None
     if (record.get("year") != verified_ready_row.get("year_label")
         or record.get("subject") != verified_ready_row.get("subject")
         or record.get("topic") != verified_ready_row.get("topic")):
