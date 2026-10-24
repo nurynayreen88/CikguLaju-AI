@@ -41,6 +41,10 @@ class PJPKReleaseGateTests(unittest.TestCase):
         self.assertTrue(check([BASE.copy(), BASE.copy()])[2])
     def test_invalid_year_blocks(self):
         self.assertTrue(check([dict(BASE, year_label="Tahun 7")])[2])
+    def test_ambiguous_readiness_values_are_rejected(self):
+        for value in ("", "true", "False", "2", " 1", "yes"):
+            with self.subTest(value=value):
+                self.assertTrue(check([dict(BASE, production_ready=value)])[2])
     def test_pending_inventory_is_not_promoted(self):
         row = dict(BASE, production_ready="0", dskp_text_matches="0",
                    dskp_text_missing="2", book_exact_match="0")
