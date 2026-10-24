@@ -1,0 +1,43 @@
+{
+  "status": "static_editorial_qa_pass_not_production_gate",
+  "source_files": [
+    {
+      "path": "docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json",
+      "blob_sha": "5b0c2846c3e7bb3a6e7632aac7905dbf484c17e5",
+      "count": 11
+    },
+    {
+      "path": "docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json",
+      "blob_sha": "c4bf5fb26028b0e0417b2bc873cf0cd62fa8c3fb",
+      "count": 7
+    }
+  ],
+  "checks": {
+    "total_records": 18,
+    "unique_ids": 18,
+    "missing_required_editorial_fields": 0,
+    "invalid_activity_pairs": 0,
+    "invalid_fail_closed_flags": 0
+  },
+  "sp_status": {
+    "eleven_candidate_only_empty_sp": true,
+    "seven_with_editorial_sp": true,
+    "unresolved_duplicate_groups": [
+      [
+        2232,
+        2352
+      ],
+      [
+        2252,
+        2353
+      ]
+    ]
+  },
+  "blockers": [
+    "exact RPT slot evidence",
+    "individual source-to-record verification",
+    "real bot RPH runtime",
+    "A4 output inspection"
+  ],
+  "production_ready": 0
+}
