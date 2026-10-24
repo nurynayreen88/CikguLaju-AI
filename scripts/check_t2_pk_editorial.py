@@ -1,5 +1,6 @@
 """Read-only editorial QA for the 18 T2 PK staging records; never authorizes release."""
 import json
+import hashlib
 import sys
 from pathlib import Path
 
@@ -53,6 +54,18 @@ def audit():
         errors.append("Editorial checkpoint release status changed")
     if checkpoint.get("checks", {}).get("total_records") != 18 or checkpoint.get("checks", {}).get("unique_ids") != 18:
         errors.append("Editorial checkpoint counts changed")
+    documented_sources = {row.get("path"): row for row in checkpoint.get("source_files", [])}
+    if set(documented_sources) != {str(path.relative_to(ROOT)) for path in FILES}:
+        errors.append("Editorial checkpoint source inventory mismatch")
+    for path in FILES:
+        rel = str(path.relative_to(ROOT))
+        raw = path.read_bytes()
+        actual_sha = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + b"\\0" + raw).hexdigest()
+        recorded = documented_sources.get(rel, {})
+        if recorded.get("blob_sha") != actual_sha:
+            errors.append(f"{rel}: checkpoint source blob SHA stale")
+        if recorded.get("count") != len(json.loads(raw)["records"]):
+            errors.append(f"{rel}: checkpoint source count mismatch")
     ids = [r.get("id") for r in records]
     if len(records) != 18:
         errors.append(f"Expected 18 records, got {len(records)}")
