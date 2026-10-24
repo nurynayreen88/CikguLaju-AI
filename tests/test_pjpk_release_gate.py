@@ -45,6 +45,12 @@ class PJPKReleaseGateTests(unittest.TestCase):
         for value in ("", "true", "False", "2", " 1", "yes"):
             with self.subTest(value=value):
                 self.assertTrue(check([dict(BASE, production_ready=value)])[2])
+    def test_empty_inventory_blocks(self):
+        self.assertTrue(check([])[2])
+    def test_invalid_entry_ids_block(self):
+        for ident in ("", " ", "0", "-1", "abc", "1.5"):
+            with self.subTest(ident=ident):
+                self.assertTrue(check([dict(BASE, entry_id=ident)])[2])
     def test_pending_inventory_is_not_promoted(self):
         row = dict(BASE, production_ready="0", dskp_text_matches="0",
                    dskp_text_missing="2", book_exact_match="0")
