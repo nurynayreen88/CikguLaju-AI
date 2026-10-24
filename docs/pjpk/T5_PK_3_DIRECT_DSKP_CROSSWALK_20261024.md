@@ -16,3 +16,15 @@ Proposed RPH-specific activities to test, NOT production-ready:
 - 2261: compare two actual food-label examples; identify nutrients, serving information and expiry, justify a choice using evidence from the label.
 
 No database mutation or deployment is authorized by this evidence note alone.
+
+## Direct textbook visual verification (2026-10-24)
+
+The source PDF was fetched as raw binary (36,264,274 bytes; 114 PDF pages), because its text extraction was empty. Visual inspection of the actual pages established the following **printed textbook pages**, distinct from DSKP pages:
+
+| Entry | Textbook printed page(s) | PDF physical page(s) | Visible content and SP cue |
+|---|---|---|---|
+| 2259 | 88–89 | 96–97 | “Demam Campak, Cacar Air, Rubela dan Beguk”; page 88 displays symptoms and prevention, corresponding to 6.1.1/6.1.2 |
+| 2260 | 90–92 | 98–100 | “Pengaruh Rakan Sebaya”; printed page 90 visibly marks SP 7.1.1 and contrasts positive/negative influence |
+| 2261 | 96–100 | 104–108 | “Nutrien Kesihatan”; printed page 99 (PDF 107) contains annotated nutrition label and visibly marks SP 8.1.2/8.1.3 |
+
+**Correction to the earlier pending statement:** textbook pages are now verified visually. This resolves only the textbook-page gate for these three editorial entries; RPT lesson identity, end-to-end generation, one-page A4 render, and final teacher review are still pending. Keep `production_ready=0` until the remaining gates pass. Do not alter the 161-row original source CSV or old DB.
