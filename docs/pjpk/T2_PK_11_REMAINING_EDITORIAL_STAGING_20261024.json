@@ -89,22 +89,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Penyalahgunaan Bahan",
-      "objective": "Murid mengenal pasti risiko menggunakan bahan yang tidak sepatutnya dan memilih tindakan menjauhinya.",
+      "objective": "Murid mengenal pasti tembakau, alkohol dan dadah sebagai bahan ketagihan, menerangkan bahayanya dan memilih respons berkata TIDAK.",
       "materials": "Kad bahan harian, kad situasi ajakan dan carta pilihan selamat.",
       "induction": "Guru memaparkan situasi rekaan penemuan bahan tidak dikenali dan bertanya tindakan wajar.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Kumpulan membezakan penggunaan bahan di bawah pengawasan orang dewasa daripada cubaan menggunakan bahan tidak dikenali tanpa kebenaran."
+          "body": "Murid mengenal pasti tembakau, alkohol dan dadah daripada poster pendidikan yang sesuai usia dan membincangkan kesan bahayanya kepada diri serta orang lain."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melakonkan penolakan ajakan mencuba bahan, menjauhkan diri dan melaporkan kepada orang dewasa dipercayai."
+          "body": "Pasangan melakonkan cara menolak ajakan mencuba bahan ketagihan, menjauhkan diri dan mendapatkan sokongan orang dewasa dipercayai."
         }
       ],
-      "reinforcement": "Murid melengkapkan urutan tiga langkah keselamatan.",
+      "reinforcement": "Murid memilih respons yang sesuai untuk situasi ajakan rekaan dan menerangkan sebabnya.",
       "closure": "Penutup: jangan cuba bahan tidak dikenali; minta bantuan.",
-      "assessment": "Semakan urutan dan lakonan.",
+      "assessment": "Senarai semak pengenalpastian bahan, bahaya dan respons penolakan.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -417,22 +417,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Jangan Terpengaruh",
-      "objective": "Murid mengenal pasti pengaruh yang boleh menjejaskan pilihan makan/minum dan menunjukkan keputusan lebih sihat.",
+      "objective": "Murid menilai pengaruh rakan dan media terhadap pilihan makanan serta minuman dan memberi alasan untuk keputusan yang lebih sihat.",
       "materials": "Kad iklan rekaan tanpa jenama, kad ajakan rakan dan pilihan makanan.",
       "induction": "Guru menunjukkan iklan rekaan dan bertanya sama ada semua dakwaan perlu dipercayai.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid meneliti kad ajakan dan iklan rekaan, membezakan fakta yang boleh diperiksa daripada pujukan membeli/mencuba."
+          "body": "Murid meneliti contoh iklan makanan dan ajakan rakan yang direka guru; membezakan dakwaan, fakta yang boleh diperiksa dan pengaruh terhadap pilihan."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melakonkan cara menolak desakan rakan dan memilih makanan/minuman berdasarkan keperluan, bukan populariti."
+          "body": "Kumpulan membandingkan dua pilihan makanan atau minuman dalam situasi harian dan menjelaskan keputusan tanpa memperlekeh bentuk badan individu."
         }
       ],
-      "reinforcement": "Murid menulis satu respons asertif dan satu alasan pemilihan.",
+      "reinforcement": "Murid menulis satu respons kepada ajakan rakan dengan alasan pemakanan yang munasabah.",
       "closure": "Rumusan keputusan pemakanan berdasarkan pertimbangan sendiri.",
-      "assessment": "Rubrik dialog dan alasan.",
+      "assessment": "Semakan penilaian pengaruh rakan/media dan justifikasi pilihan.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
