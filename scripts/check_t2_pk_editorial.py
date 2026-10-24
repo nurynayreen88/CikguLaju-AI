@@ -14,6 +14,11 @@ REQUIRED = ("id", "year", "subject", "topic", "objective", "materials",
 LOCKS = ("sk_text_verified", "sp_text_verified", "textbook_verified",
          "rpt_exact_slot_verified", "rph_runtime_verified", "a4_review_verified")
 TEACHER = ("date", "day", "class", "time", "duration_minutes", "reflection")
+CANDIDATE_IDS = {2249, 2250, 2251, 2344, 2345, 2346, 2347, 2348, 2349, 2350, 2354}
+EDITORIAL_SP = {2232: ["8.1.1"], 2252: ["8.1.2"], 2351: ["7.1.1", "7.1.2", "7.1.3"],
+                2352: ["8.1.1"], 2353: ["8.1.2"], 2355: ["9.1.1"],
+                2356: ["9.1.2", "9.1.3"]}
+EXPECTED_IDS = CANDIDATE_IDS | set(EDITORIAL_SP)
 
 def audit():
     errors, records = [], []
@@ -29,6 +34,8 @@ def audit():
         errors.append(f"Expected 18 records, got {len(records)}")
     if len(set(ids)) != len(ids):
         errors.append("Duplicate IDs")
+    if set(ids) != EXPECTED_IDS:
+        errors.append(f"Unexpected/missing IDs: {sorted(set(ids) ^ EXPECTED_IDS)}")
     for r in records:
         ident = r.get("id", "?")
         for key in REQUIRED:
@@ -51,6 +58,10 @@ def audit():
             errors.append(f"{ident}: verification lock not false")
         if not isinstance(r.get("sp"), list):
             errors.append(f"{ident}: sp must be list")
+        elif ident in CANDIDATE_IDS and r["sp"] != []:
+            errors.append(f"{ident}: candidate SP must remain empty until exact RPT verification")
+        elif ident in EDITORIAL_SP and r["sp"] != EDITORIAL_SP[ident]:
+            errors.append(f"{ident}: editorial SP changed without source review")
     return errors, len(records), len(set(ids))
 
 if __name__ == "__main__":
