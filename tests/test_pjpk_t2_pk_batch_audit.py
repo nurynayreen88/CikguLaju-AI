@@ -23,8 +23,11 @@ class TestT2PKBatchAudit(unittest.TestCase):
             self.assertEqual(len(actual), 18)
             self.assertEqual(len(expected), 18)
             self.assertEqual(errors, [])
-            with path.open("a", encoding="utf-8") as fh:
-                fh.write("9999,Tahun 2,Pendidikan Kesihatan,PDP_CANDIDATE,Missing Topic,0\n")
+            with path.open("a", newline="", encoding="utf-8") as fh:
+                writer = csv.DictWriter(fh, fieldnames=fields)
+                writer.writerow(dict(entry_id=9999, year_label="Tahun 2",
+                                     subject="Pendidikan Kesihatan", entry_kind="PDP_CANDIDATE",
+                                     topic="Missing Topic", production_ready="0"))
             _, _, errors = audit(path)
             self.assertTrue(any("coverage mismatch" in e for e in errors))
 
