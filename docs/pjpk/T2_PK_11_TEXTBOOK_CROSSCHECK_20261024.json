@@ -1,0 +1,133 @@
+{
+  "status": "direct_textbook_crosscheck_not_release_authorization",
+  "textbook": {
+    "title": "GuruBesar_BukuTeks_T2_PJPK.pdf",
+    "drive_file_id": "12Ym1lDW67L_cNJQ9NB6pUYVveIyvdIA6",
+    "page_type": "printed textbook page"
+  },
+  "items": [
+    {
+      "ids": [
+        2249,
+        2344
+      ],
+      "pages": [
+        68,
+        69
+      ],
+      "sp_on_pages": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "note": "Gaya Hidup Sihat p68 and Sihat Selalu p69; editorial split by cognitive focus still requires RPT slot."
+    },
+    {
+      "ids": [
+        2250,
+        2345
+      ],
+      "pages": [
+        70,
+        71
+      ],
+      "sp_on_pages": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "note": "Jaga Diri, direct printed page references."
+    },
+    {
+      "ids": [
+        2251,
+        2346
+      ],
+      "pages": [
+        73,
+        74,
+        75
+      ],
+      "sp_on_pages": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "note": "Jauhkan Diri p73, Sayangilah Diri p74; confirm 2.1.3 page separately before assigning it."
+    },
+    {
+      "ids": [
+        2347
+      ],
+      "pages": [
+        77
+      ],
+      "sp_on_pages": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "note": "Sayang Adik Sayang p77 focuses family example; DSKP 3.1.2 also includes peers."
+    },
+    {
+      "ids": [
+        2348
+      ],
+      "pages": [
+        80,
+        81,
+        82
+      ],
+      "sp_on_pages": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "note": "Bekerjasama Sekeluarga p80, Aku Menang p81, Lagu Keluarga p82."
+    },
+    {
+      "ids": [
+        2349
+      ],
+      "pages": [
+        84,
+        85
+      ],
+      "sp_on_pages": [
+        "5.1.1"
+      ],
+      "note": "Bersyukur dan Kasih Sayang; page 85 explicitly marks 5.1.1."
+    },
+    {
+      "ids": [
+        2350
+      ],
+      "pages": [
+        88,
+        89,
+        90
+      ],
+      "sp_on_pages": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "note": "Bersama Mencegah p88 and Jaga Kebersihan Diri p89; check p90 separately for 6.1.3."
+    },
+    {
+      "ids": [
+        2354
+      ],
+      "pages": [
+        100,
+        101
+      ],
+      "sp_on_pages": [
+        "8.1.3"
+      ],
+      "note": "Jangan Terpengaruh, peer and advertising influence."
+    }
+  ],
+  "limitations": [
+    "Printed page numbers are adjacent in extracted PDF text; ranges are navigation aids, not proof of exact lesson boundaries.",
+    "RPT T2 PK exact allocation not found; no production-ready promotion.",
+    "Do not overwrite old database or activate source flags from this audit alone."
+  ]
+}
