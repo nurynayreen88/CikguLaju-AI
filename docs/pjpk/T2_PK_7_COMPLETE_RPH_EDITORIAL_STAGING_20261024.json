@@ -117,10 +117,11 @@
       "topic": "Pastikan Selamat",
       "sp": [
         "7.1.1",
-        "7.1.2"
+        "7.1.2",
+        "7.1.3"
       ],
       "sk": null,
-      "objective": "Murid menerangkan cara menjaga keselamatan diri dengan orang dikenali dan tidak dikenali serta menunjukkan cara menolak pelawaan berisiko.",
+      "objective": "Murid menyatakan cara menjaga keselamatan diri, mengaplikasikan kemahiran berkata TIDAK dan menilai akibat menerima pelawaan berisiko daripada orang tidak dikenali.",
       "materials": "Kad senario keselamatan, kad bantuan orang dewasa dipercayai dan rubrik lakonan.",
       "induction": "Guru memaparkan situasi ajakan yang membuat seseorang tidak selesa dan bertanya tindakan selamat.",
       "activities": [
@@ -130,12 +131,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melatih respons berkata TIDAK, beredar ke tempat selamat dan memaklumkan orang dewasa dipercayai menggunakan dialog rekaan tanpa sentuhan fizikal."
+          "body": "Pasangan berlatih berkata TIDAK, beredar ke tempat selamat dan memaklumkan orang dewasa dipercayai melalui dialog rekaan tanpa sentuhan fizikal; kemudian menilai kemungkinan akibat menerima pelawaan orang tidak dikenali."
         }
       ],
-      "reinforcement": "Murid memilih tindakan selamat dan menerangkan akibat mengikuti pelawaan berisiko.",
+      "reinforcement": "Murid membandingkan dua respons terhadap pelawaan rekaan dan memberi alasan tentang akibat menerima pelawaan berisiko.",
       "closure": "Penegasan bahawa keselamatan diri lebih utama daripada menurut desakan sesiapa.",
-      "assessment": "Senarai semak pengenalpastian risiko, respons penolakan dan alasan.",
+      "assessment": "Senarai semak respons penolakan serta rubrik penilaian akibat menerima pelawaan orang tidak dikenali.",
       "sp_text_verified": false
     },
     {
@@ -301,7 +302,7 @@
         "9.1.3"
       ],
       "sk": null,
-      "objective": "Murid mengenal pasti pihak yang boleh dihubungi, menunjukkan cara meminta bantuan dan menilai akibat jika bantuan segera tidak diminta apabila berlaku kemalangan atau kecederaan.",
+      "objective": "Murid mengaplikasikan kemahiran meminta bantuan dan menilai tindakan yang boleh diambil ketika berlaku kemalangan atau kecederaan di rumah, sekolah dan tempat awam.",
       "materials": "Kad lokasi, kad peranan dan senarai maklumat asas untuk meminta bantuan.",
       "induction": "Guru membacakan situasi kecederaan rekaan dan bertanya siapa patut dihubungi terlebih dahulu.",
       "activities": [
@@ -311,12 +312,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melakonkan panggilan meminta bantuan dengan menyatakan lokasi, kejadian dan jenis bantuan diperlukan tanpa membuat panggilan sebenar; kemudian membandingkan akibat situasi meminta bantuan segera dengan situasi bantuan dilewatkan."
+          "body": "Pasangan mensimulasikan cara meminta bantuan dengan menyatakan lokasi, kejadian dan bantuan diperlukan tanpa membuat panggilan sebenar; kemudian membandingkan dua pilihan tindakan bagi setiap situasi dan menilai tindakan yang lebih sesuai dengan alasan keselamatan."
         }
       ],
-      "reinforcement": "Murid memilih pihak bantuan yang sesuai dan menerangkan satu kemungkinan akibat jika bantuan segera tidak diminta.",
+      "reinforcement": "Murid memilih pihak bantuan dan menilai tindakan yang sesuai dalam satu situasi kemalangan baharu, termasuk risiko jika bantuan dilewatkan.",
       "closure": "Rumusan: utamakan keselamatan diri, dapatkan bantuan orang dewasa dan berikan maklumat tepat.",
-      "assessment": "Senarai semak pemilihan pihak bantuan, kejelasan simulasi dan alasan penilaian akibat kelewatan bantuan.",
+      "assessment": "Senarai semak simulasi meminta bantuan serta rubrik penilaian pilihan tindakan dan alasan keselamatan.",
       "sp_text_verified": false
     }
   ]
