@@ -74,7 +74,7 @@ def install(g):
                 "🚧 <b>PdP PJPK untuk pilihan ini belum disahkan sepenuhnya.</b> Data belum siap tidak digunakan untuk RPH.",
                 [[{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}],
                  [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
-        page = max(0, int(page))
+        page = max(0, min(int(page), max(0, (len(rows) - 1) // 12)))
         start, per_page = page * 12, 12
         keyboard = []
         for index, row in enumerate(rows[start:start + per_page], start):
@@ -184,9 +184,12 @@ def install(g):
             except ValueError:
                 return menu(cid)
         if value.startswith("pjpk2616pdp|") and state.get("subject") in (s for _, s in subjects):
-            rows = state.get("_pjpk_v2616_rows") or rows_for(state.get("year"), state.get("subject"))
+            rows = rows_for(state.get("year"), state.get("subject"))
             try:
-                row = rows[int(value.split("|", 1)[1])]
+                index = int(value.split("|", 1)[1])
+                if index < 0 or index >= len(rows):
+                    return menu(cid)
+                row = rows[index]
             except (ValueError, IndexError):
                 return menu(cid)
             return commit_pdp(cid, row)
