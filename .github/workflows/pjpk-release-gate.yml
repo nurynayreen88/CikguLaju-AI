@@ -28,6 +28,7 @@ on:
       - 'scripts/pjpk_t2_pk_preview.py'
       - 'tests/test_pjpk_t2_pk_preview.py'
       - 'scripts/pjpk_t2_pk_batch_audit.py'
+      - 'scripts/check_t2_pk_editorial.py'
       - 'tests/test_pjpk_t2_pk_batch_audit.py'
       - 'tests/test_pjpk_t2_pk_evidence_identity.py'
       - 'docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json'
@@ -54,6 +55,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pjpk_release_gate.py' -v
       - name: Check T2 PK editorial identities and prevent unsupported promotion
         run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_evidence_identity.py' -v
+      - name: Check T2 PK editorial release locks
+        run: python scripts/check_t2_pk_editorial.py
       - name: Audit all eighteen T2 PK editorial RPH
         run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_batch_audit.py' -v
       - name: Test all eighteen T2 PK previews
