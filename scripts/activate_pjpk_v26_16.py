@@ -56,12 +56,13 @@ def install(g):
         except (sqlite3.Error, OSError) as exc:
             print("PJPK standards lookup failed closed:", exc, flush=True)
             return []
-        # Never invent SK; a verified SP is mandatory for RPH selection.
-        return [row for row in rows if any(
-            item["standard_type"] == "SP" and item.get("verified") in (1, True)
+        # Both verified SK and SP with actual text are mandatory for RPH selection.
+        return [row for row in rows if all(any(
+            item["standard_type"] == kind and item.get("verified") in (1, True)
             and str(item.get("standard_code") or "").strip()
+            and str(item.get("standard_text") or "").strip()
             for item in row["_std"]
-        )]
+        ) for kind in ("SK", "SP"))]
 
     def menu(cid, page=0):
         state = g["state"].setdefault(cid, {})
@@ -106,7 +107,7 @@ def install(g):
             elif item.get("standard_type") == "SP" and code not in sp_codes:
                 sp_codes.append(code)
                 sp_texts.append(text)
-        if not sp_codes:
+        if not sk_codes or not sp_codes or any(not text for text in sk_texts + sp_texts):
             return menu(cid)
 
         stale_keys = (
@@ -123,7 +124,7 @@ def install(g):
         for key in stale_keys:
             state.pop(key, None)
 
-        state["pjpk_generic_mode_v2616"] = not bool(sk_codes)
+        state["pjpk_generic_mode_v2616"] = False
         state["task"] = "quick_material"
         state["quick_material_flow"] = True
         state["assessment_mode"] = "formative"
