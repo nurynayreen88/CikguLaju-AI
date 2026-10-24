@@ -90,8 +90,8 @@
       "subject": "Pendidikan Kesihatan",
       "topic": "Penyalahgunaan Bahan",
       "objective": "Murid mengenal pasti tembakau, alkohol dan dadah sebagai bahan ketagihan, menerangkan bahayanya dan memilih respons berkata TIDAK.",
-      "materials": "Kad bahan harian, kad situasi ajakan dan carta pilihan selamat.",
-      "induction": "Guru memaparkan situasi rekaan penemuan bahan tidak dikenali dan bertanya tindakan wajar.",
+      "materials": "Poster pendidikan tembakau, alkohol dan dadah; kad kesan bahaya; kad ajakan rekaan.",
+      "induction": "Guru menunjukkan poster tiga bahan ketagihan dan bertanya contoh tindakan selamat apabila diajak mencubanya.",
       "activities": [
         {
           "heading": "Aktiviti 1",
@@ -103,7 +103,7 @@
         }
       ],
       "reinforcement": "Murid memilih respons yang sesuai untuk situasi ajakan rekaan dan menerangkan sebabnya.",
-      "closure": "Penutup: jangan cuba bahan tidak dikenali; minta bantuan.",
+      "closure": "Rumusan bahaya bahan ketagihan, kemahiran berkata TIDAK dan mendapatkan bantuan.",
       "assessment": "Senarai semak pengenalpastian bahan, bahaya dan respons penolakan.",
       "sk": null,
       "sp": [],
@@ -131,7 +131,7 @@
       "subject": "Pendidikan Kesihatan",
       "topic": "Rutin Sihat: Postur, Rehat dan Tidur",
       "objective": "Murid mengenal pasti postur yang betul serta kepentingan rehat dan tidur yang mencukupi dalam rutin harian.",
-      "materials": "Kad aktiviti fizikal, rehat, kebersihan dan jadual harian.",
+      "materials": "Kad ilustrasi postur; kad rutin rehat dan tidur; jadual harian rekaan.",
       "induction": "Guru menunjukkan dua rutin harian rekaan dan meminta murid mengenal pasti perbezaan.",
       "activities": [
         {
@@ -144,7 +144,7 @@
         }
       ],
       "reinforcement": "Murid membetulkan contoh rutin yang tidak memperuntukkan rehat dan tidur mencukupi.",
-      "closure": "Guru merumuskan kepentingan amalan yang konsisten.",
+      "closure": "Rumusan postur yang betul serta kepentingan rehat dan tidur mencukupi.",
       "assessment": "Semakan padanan postur dan penerangan kepentingan rehat serta tidur.",
       "sk": null,
       "sp": [],
@@ -172,7 +172,7 @@
       "subject": "Pendidikan Kesihatan",
       "topic": "Jaga Diri",
       "objective": "Murid membezakan sentuhan selamat, tidak selamat dan tidak selesa serta mempraktikkan respons berkata TIDAK dan mendapatkan bantuan.",
-      "materials": "Kad situasi kebersihan, keselamatan dan batas diri.",
+      "materials": "Kad situasi sentuhan selamat, tidak selamat dan tidak selesa; kad respons berkata TIDAK; senarai orang dewasa dipercayai.",
       "induction": "Guru menunjukkan ilustrasi murid berdepan situasi kurang selesa dan bertanya pilihan tindakan.",
       "activities": [
         {
@@ -185,7 +185,7 @@
         }
       ],
       "reinforcement": "Murid memilih tindakan selamat bagi situasi rekaan dan menyatakan siapa yang boleh membantu.",
-      "closure": "Rumusan tentang menjaga diri dan mendapatkan bantuan.",
+      "closure": "Rumusan hak menjaga batas tubuh, berkata TIDAK dan mendapatkan bantuan.",
       "assessment": "Senarai semak pengelasan situasi dan respons keselamatan yang sesuai.",
       "sk": null,
       "sp": [],
@@ -213,8 +213,8 @@
       "subject": "Pendidikan Kesihatan",
       "topic": "Jauhkan Diri",
       "objective": "Murid mengenal pasti tembakau, alkohol dan dadah sebagai bahan ketagihan serta mempraktikkan cara menolak ajakan mencubanya.",
-      "materials": "Kad senario, pelan tempat selamat rekaan dan kad peranan.",
-      "induction": "Guru membacakan senario ajakan daripada individu yang membuat murid tidak selesa.",
+      "materials": "Poster pendidikan tembakau, alkohol dan dadah; kad ajakan rekaan; kad respons berkata TIDAK.",
+      "induction": "Guru menunjukkan poster tiga bahan ketagihan dan bertanya sebab murid tidak patut mencubanya.",
       "activities": [
         {
           "heading": "Aktiviti 1",
@@ -226,7 +226,7 @@
         }
       ],
       "reinforcement": "Murid memilih respons selamat untuk tiga situasi ajakan rekaan.",
-      "closure": "Penegasan bahawa murid berhak menolak ajakan yang tidak selamat.",
+      "closure": "Rumusan bahaya tembakau, alkohol dan dadah serta cara menolak ajakan mencubanya.",
       "assessment": "Senarai semak pengenalpastian bahan dan respons penolakan yang jelas.",
       "sk": null,
       "sp": [],
