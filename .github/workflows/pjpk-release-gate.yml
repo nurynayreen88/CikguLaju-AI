@@ -69,7 +69,13 @@ jobs:
               width, height = float(box.width), float(box.height)
               assert abs(width - 595.28) < 2 and abs(height - 841.89) < 2, (path.name, width, height)
               extracted = pages[0].extract_text()
-              assert 'Aktiviti 1' in extracted and 'Aktiviti 2' in extracted, path.name
+              for required in ('RANCANGAN PENGAJARAN HARIAN', 'Objektif:', 'BBM:',
+                               'Pentaksiran:', 'Set Induksi', 'Aktiviti 1',
+                               'Aktiviti 2', 'Pengukuhan / Penilaian',
+                               'Penutup', 'Rujukan:', 'Refleksi'):
+                  assert required in extracted, f'{path.name}: missing {required}'
+              assert 'BELUM DILULUSKAN UNTUK PRODUKSI' in extracted, path.name
+              assert len(extracted.strip()) > 1100, f'{path.name}: unexpectedly short PDF text'
               print(f'{pdf.name}: A4, one page, both activities present')
           assert len(list(output.glob('*.pdf'))) == 3
           PY
