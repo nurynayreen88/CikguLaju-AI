@@ -46,24 +46,28 @@
       "id": 2347,
       "sp": [
         "3.1.1",
-        "3.1.2"
+        "3.1.2",
+        "3.1.3"
       ],
-      "gap": "3.1.3 not demonstrated"
+      "gap": "Editorial objective, activity and assessment revised for 3.1.3; exact RPT slot and source-to-record sign-off pending."
     },
     {
       "id": 2348,
       "sp": [
         "4.1.1",
-        "4.1.2"
+        "4.1.2",
+        "4.1.3"
       ],
-      "gap": "4.1.3 not demonstrated"
+      "gap": "Editorial assessment revised for 4.1.3; exact RPT slot and source-to-record sign-off pending."
     },
     {
       "id": 2349,
       "sp": [
-        "5.1.1"
+        "5.1.1",
+        "5.1.2",
+        "5.1.3"
       ],
-      "gap": "5.1.2 and 5.1.3 need distinct assessment"
+      "gap": "Editorial application and assessment revised for 5.1.2/5.1.3; exact RPT slot and source-to-record sign-off pending."
     },
     {
       "id": 2350,
@@ -72,7 +76,7 @@
         "6.1.2",
         "6.1.3"
       ],
-      "gap": "Check whether information chart fully meets 6.1.3"
+      "gap": "Editorial poster/chart activity explicitly creates prevention information for both diseases; exact source-to-record and RPT sign-off pending."
     },
     {
       "id": 2354,
@@ -84,7 +88,8 @@
   "notes": [
     "Editorial candidates only; original 11 records intentionally retain empty sp arrays.",
     "No exact RPT slot verified, duplicate lessons cannot be counted independently.",
-    "No automatic production flag, deployment or database mutation."
+    "No automatic production flag, deployment or database mutation.",
+    "Editorial coverage changes cross-checked against current 11-record staging after commit db98de7; this matrix is candidate-only and must never populate original SP arrays automatically."
   ],
   "production_ready": false
 }
