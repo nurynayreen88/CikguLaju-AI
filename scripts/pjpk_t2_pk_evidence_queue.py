@@ -13,7 +13,8 @@ SOURCES = (
     ROOT / "docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json",
     ROOT / "docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json",
 )
-FIELDS = ("entry_id", "topic", "recorded_sp_codes", "sk_text_verified", "sp_text_verified",
+FOCUS = ROOT / "docs/pjpk/T2_PK_11_SP_EDITORIAL_FOCUS_MATRIX_20261024.json"
+FIELDS = ("entry_id", "topic", "recorded_sp_codes", "candidate_sp_codes_not_verified", "sk_text_verified", "sp_text_verified",
           "textbook_verified", "rpt_exact_slot_verified", "rph_runtime_verified",
           "a4_review_verified", "production_ready", "required_next_evidence")
 
@@ -23,6 +24,12 @@ def build():
     ids = [r["id"] for r in records]
     if len(ids) != 18 or len(set(ids)) != 18:
         raise ValueError("Expected exactly 18 unique T2 PK entries")
+    matrix = json.loads(FOCUS.read_text(encoding="utf-8"))
+    if matrix.get("status") != "candidate_only_do_not_activate" or matrix.get("production_ready") is not False:
+        raise ValueError("Candidate focus matrix must remain blocked")
+    candidates = {row["id"]: row["sp"] for row in matrix["candidates"]}
+    if len(candidates) != 11 or set(candidates) != {r["id"] for r in records if not r.get("sp")}:
+        raise ValueError("Candidate focus matrix does not match eleven empty-SP records")
     output = []
     for r in sorted(records, key=lambda item: item["id"]):
         if r.get("status") != "editorial_staging_only" or r.get("production_ready") is not False:
@@ -36,6 +43,7 @@ def build():
                  "runtime generation test", "human A4 review"]
         output.append(dict(entry_id=r["id"], topic=r["topic"],
                            recorded_sp_codes=";".join(r.get("sp") or []),
+                           candidate_sp_codes_not_verified=";".join(candidates.get(r["id"], [])),
                            **{flag: str(r[flag]).lower() for flag in flags},
                            production_ready="false", required_next_evidence="; ".join(needs)))
     return output
