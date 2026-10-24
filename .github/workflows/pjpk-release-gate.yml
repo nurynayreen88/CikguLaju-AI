@@ -36,6 +36,8 @@ on:
       - 'tests/test_pjpk_t5_release_checklist.py'
       - 'tests/test_pjpk_t5_source_queue_consistency.py'
       - 'tests/test_pjpk_t5_three_views_consistency.py'
+      - 'tests/test_pjpk_t5_final_release_gate.py'
+      - 'scripts/pjpk_t5_final_release_gate.py'
       - 'docs/pjpk/T5_PK_PRIORITY_3_SOURCE_QUEUE_20261024.csv'
       - 'docs/pjpk/T5_PK_3_REMAINING_RELEASE_CHECKLIST_20261024.csv'
   workflow_dispatch:
@@ -67,6 +69,8 @@ jobs:
           name: pjpk-t2-pk-18-evidence-workqueue
           path: /tmp/pjpk-t2-pk-evidence-workqueue.csv
           if-no-files-found: warn
+      - name: Assert final T5 release gate blocks missing evidence
+        run: python -m unittest discover -s tests -p 'test_pjpk_t5_final_release_gate.py' -v
       - name: Cross-check all three T5 release tracking views
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_three_views_consistency.py' -v
       - name: Verify T5 source queue is consistent with evidence overlay
