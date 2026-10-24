@@ -122,22 +122,22 @@
         "7.1.2"
       ],
       "sk": null,
-      "objective": "Murid menyatakan cara menjaga keselamatan diri dengan orang dikenali/tidak dikenali dan menunjukkan respons berkata TIDAK dalam situasi.",
+      "objective": "Murid menerangkan cara menjaga keselamatan diri dengan orang dikenali dan tidak dikenali serta menunjukkan cara menolak pelawaan berisiko.",
       "materials": "Kad senario keselamatan, kad bantuan orang dewasa dipercayai dan rubrik lakonan.",
       "induction": "Guru memaparkan situasi ajakan yang membuat seseorang tidak selesa dan bertanya tindakan selamat.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Kenal pasti sempadan",
-          "body": "Murid menilai kad situasi melibatkan orang dikenali dan tidak dikenali, membezakan permintaan selamat daripada yang melanggar batas diri serta menamakan orang dewasa dipercayai."
+          "heading": "Aktiviti 1",
+          "body": "Murid meneliti kad pelawaan daripada orang dikenali dan tidak dikenali; mengenal pasti situasi yang perlu dielakkan tanpa mengandaikan semua orang dikenali selamat."
         },
         {
-          "heading": "Aktiviti 2 – Latih respons asertif",
-          "body": "Secara berpasangan, murid berlatih menyebut TIDAK dengan jelas, menjauhkan diri ke tempat selamat dan mendapatkan bantuan orang dewasa; guru mengelakkan pendedahan pengalaman peribadi murid."
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melatih respons berkata TIDAK, beredar ke tempat selamat dan memaklumkan orang dewasa dipercayai menggunakan dialog rekaan tanpa sentuhan fizikal."
         }
       ],
-      "reinforcement": "Murid memilih respons selamat bagi satu situasi baharu dan menerangkan kepada siapa mereka boleh meminta bantuan.",
+      "reinforcement": "Murid memilih tindakan selamat dan menerangkan akibat mengikuti pelawaan berisiko.",
       "closure": "Penegasan bahawa keselamatan diri lebih utama daripada menurut desakan sesiapa.",
-      "assessment": "Rubrik respons lisan dan pilihan tindakan.",
+      "assessment": "Senarai semak pengenalpastian risiko, respons penolakan dan alasan.",
       "sp_text_verified": false
     },
     {
@@ -302,22 +302,22 @@
         "9.1.2"
       ],
       "sk": null,
-      "objective": "Murid menunjukkan cara meminta bantuan yang jelas apabila berlaku kemalangan atau kecederaan di rumah, sekolah dan tempat awam.",
+      "objective": "Murid mengenal pasti pihak yang boleh dihubungi dan menunjukkan cara meminta bantuan apabila berlaku kemalangan atau kecederaan di rumah, sekolah dan tempat awam.",
       "materials": "Kad lokasi, kad peranan dan senarai maklumat asas untuk meminta bantuan.",
       "induction": "Guru membacakan situasi kecederaan rekaan dan bertanya siapa patut dihubungi terlebih dahulu.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Pilih orang yang membantu",
-          "body": "Murid memilih orang dewasa atau pihak bantuan yang sesuai untuk tiga lokasi dan mengenal pasti maklumat penting seperti tempat kejadian dan jenis bantuan diperlukan."
+          "heading": "Aktiviti 1",
+          "body": "Murid memadankan situasi kemalangan rekaan di rumah, sekolah dan tempat awam dengan orang dewasa atau pihak bantuan yang sesuai."
         },
         {
-          "heading": "Aktiviti 2 – Simulasi panggilan bantuan",
-          "body": "Pasangan murid melakonkan permintaan bantuan secara tenang dan jelas menggunakan kad peranan; guru mengingatkan murid tidak mengalih mangsa atau mencuba rawatan yang belum dipelajari."
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melakonkan panggilan meminta bantuan dengan menyatakan lokasi, kejadian dan jenis bantuan diperlukan; murid tidak membuat panggilan sebenar."
         }
       ],
-      "reinforcement": "Murid melengkapkan skrip ringkas meminta bantuan berdasarkan satu kad situasi baharu.",
+      "reinforcement": "Murid memilih pihak bantuan untuk situasi baharu dan menjelaskan pilihannya.",
       "closure": "Rumusan: utamakan keselamatan diri, dapatkan bantuan orang dewasa dan berikan maklumat tepat.",
-      "assessment": "Rubrik simulasi dan skrip individu.",
+      "assessment": "Senarai semak pemilihan pihak bantuan dan kejelasan maklumat dalam simulasi.",
       "sp_text_verified": false
     }
   ]
