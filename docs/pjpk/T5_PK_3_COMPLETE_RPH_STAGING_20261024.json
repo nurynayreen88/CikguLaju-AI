@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "description": "Complete editorial RPH staging records; no runtime activation or DB mutation",
+  "records": [
+    {
+      "id": 2259,
+      "unit": "Unit 11: Penjagaan dan Keselamatan Diri",
+      "topic": "Pencegahan Penyakit Berjangkit",
+      "sk": "6.1",
+      "sp": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "dskp_page": "127",
+      "textbook_pages": "88-89",
+      "objective": "Pada akhir PdP, murid dapat mengenal pasti simptom bagi demam campak, rubella, cacar air dan beguk serta menyampaikan sekurang-kurangnya dua langkah praktikal mengurangkan penularan dalam situasi diberi.",
+      "materials": "Kad simptom dan penyakit, kad situasi sekolah/rumah, kertas poster.",
+      "assessment": "Padanan kad dan penjelasan lisan individu.",
+      "induction": "Guru memaparkan empat kad nama penyakit dan meminta murid menyatakan apa yang mereka tahu tanpa mendiagnosis individu sebenar.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Kenali simptom",
+          "body": "Secara berkumpulan, murid memadankan kad simptom dengan demam campak, rubella, cacar air dan beguk menggunakan panduan DSKP. Guru membetulkan persamaan dan perbezaan; murid tidak diminta menentukan diagnosis."
+        },
+        {
+          "heading": "Aktiviti 2 – Putuskan rantaian jangkitan",
+          "body": "Setiap kumpulan menerima situasi, contohnya rakan menunjukkan gejala ketika di sekolah, dan menghasilkan mesej pencegahan: maklumkan orang dewasa, amalkan kebersihan, elakkan kontak rapat ketika sakit dan dapatkan nasihat petugas kesihatan. Guru menyemak agar mesej tidak mendakwa langkah perubatan yang tidak disahkan."
+        }
+      ],
+      "reinforcement": "Murid menjelaskan satu simptom dan dua langkah pencegahan secara lisan; rakan menyemak ketepatan berdasarkan kad sumber.",
+      "closure": "Rumusan bahawa simptom memerlukan perhatian orang dewasa dan petugas kesihatan.",
+      "year": "Tahun 5",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "docs/pjpk/T5_PK_3_RPH_EDITORIAL_DRAFTS_20261024.md"
+    },
+    {
+      "id": 2260,
+      "unit": "Unit 11: Penjagaan dan Keselamatan Diri",
+      "topic": "Pengaruh Rakan Sebaya",
+      "sk": "7.1",
+      "sp": [
+        "7.1.1",
+        "7.1.2",
+        "7.1.3"
+      ],
+      "dskp_page": "128",
+      "textbook_pages": "90-92",
+      "objective": "Murid dapat membezakan sekurang-kurangnya dua pengaruh positif dan negatif, menilai akibat pilihan dalam satu situasi, dan mencadangkan respons asertif yang selamat.",
+      "materials": "Kad senario rakan sebaya, jadual keputusan (pilihan–akibat–tindakan), rubrik pemerhatian.",
+      "assessment": "Hujah kumpulan dan simulasi respons.",
+      "induction": "Guru membacakan dua situasi ringkas: rakan mengajak belajar bersama; rakan mendesak melanggar peraturan. Murid menyatakan perbezaannya.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Klasifikasi bersebab",
+          "body": "Murid mengelaskan kad situasi kepada pengaruh positif/negatif dan memberikan sebab berdasarkan keselamatan serta kesan kepada diri dan orang lain."
+        },
+        {
+          "heading": "Aktiviti 2 – Pilih dan lakonkan respons",
+          "body": "Pasangan murid memilih satu senario tekanan rakan sebaya, mengisi jadual pilihan–akibat–tindakan, kemudian melakonkan cara menolak dengan tegas, menjauhkan diri dan mendapatkan bantuan orang dewasa apabila perlu."
+        }
+      ],
+      "reinforcement": "Kumpulan lain menggunakan rubrik untuk menilai sama ada respons jelas, selamat dan menghormati orang lain.",
+      "closure": "Murid melengkapkan ayat “Apabila ditekan rakan, saya akan…”.",
+      "year": "Tahun 5",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "docs/pjpk/T5_PK_3_RPH_EDITORIAL_DRAFTS_20261024.md"
+    },
+    {
+      "id": 2261,
+      "unit": "Unit 12: Nutrien Kesihatan",
+      "topic": "Nutrien dan Label Makanan",
+      "sk": "8.1",
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "dskp_page": "131",
+      "textbook_pages": "96-100",
+      "objective": "Murid dapat menyatakan fungsi kepelbagaian nutrien, mengenal pasti maklumat penting pada dua label makanan sebenar, dan mempertahankan satu pilihan menggunakan bukti daripada label.",
+      "materials": "Dua label makanan sebenar yang boleh dibaca (tanpa mewajibkan jenama), lembaran perbandingan kandungan dan saiz hidangan.",
+      "assessment": "Jadual perbandingan dan justifikasi individu.",
+      "induction": "Guru menunjukkan dua contoh label makanan dan meminta murid menerangkan sebab membaca label sebelum memilih.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Baca bukti pada label",
+          "body": "Murid mencari saiz hidangan, kandungan nutrien, senarai ramuan dan tarikh luput pada dua label. Guru menerangkan bahawa perbandingan angka mesti menggunakan asas saiz hidangan yang sama."
+        },
+        {
+          "heading": "Aktiviti 2 – Banding dan pilih",
+          "body": "Kumpulan merekod maklumat yang benar-benar tertera, membandingkan nutrien yang relevan, dan memilih makanan mengikut situasi pengguna yang diberikan; murid mesti menyebut bukti, bukan meneka kandungan yang tidak tertera."
+        }
+      ],
+      "reinforcement": "Setiap murid menulis satu keputusan pemilihan makanan dengan dua bukti label.",
+      "closure": "Rumusan tentang kepelbagaian nutrien dan kepentingan membaca label.",
+      "year": "Tahun 5",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "docs/pjpk/T5_PK_3_RPH_EDITORIAL_DRAFTS_20261024.md"
+    }
+  ]
+}
