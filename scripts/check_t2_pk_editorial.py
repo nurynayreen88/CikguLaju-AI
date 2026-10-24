@@ -19,6 +19,7 @@ EDITORIAL_SP = {2232: ["8.1.1"], 2252: ["8.1.2"], 2351: ["7.1.1", "7.1.2", "7.1.
                 2352: ["8.1.1"], 2353: ["8.1.2"], 2355: ["9.1.1"],
                 2356: ["9.1.2", "9.1.3"]}
 EXPECTED_IDS = CANDIDATE_IDS | set(EDITORIAL_SP)
+FOCUS_MATRIX = ROOT / "docs/pjpk/T2_PK_11_SP_EDITORIAL_FOCUS_MATRIX_20261024.json"
 
 def audit():
     errors, records = [], []
@@ -29,6 +30,15 @@ def audit():
             errors.append(f"{path.name}: records must be a list")
             continue
         records.extend(rows)
+    matrix = json.loads(FOCUS_MATRIX.read_text(encoding="utf-8"))
+    candidates = matrix.get("candidates", [])
+    candidate_ids = [row.get("id") for row in candidates]
+    if matrix.get("status") != "candidate_only_do_not_activate" or matrix.get("production_ready") is not False:
+        errors.append("Candidate focus matrix release lock changed")
+    if len(candidate_ids) != 11 or len(set(candidate_ids)) != 11 or set(candidate_ids) != CANDIDATE_IDS:
+        errors.append("Candidate focus matrix identity mismatch")
+    if any(not isinstance(row.get("sp"), list) or not row["sp"] for row in candidates):
+        errors.append("Candidate focus matrix SP entries missing")
     ids = [r.get("id") for r in records]
     if len(records) != 18:
         errors.append(f"Expected 18 records, got {len(records)}")
