@@ -253,7 +253,7 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Sayang Adik Sayang",
-      "objective": "Murid menyatakan perasaan bimbang dan cemburu serta mengaplikasikan cara mengurusnya apabila berlaku perubahan dalam kalangan ahli keluarga atau rakan sebaya.",
+      "objective": "Murid menyatakan perasaan bimbang dan cemburu, mengaplikasikan cara mengurusnya serta menilai kesan kepada diri jika perasaan itu tidak diurus ketika berlaku perubahan dalam keluarga atau kalangan rakan sebaya.",
       "materials": "Kad situasi adik baharu dan perubahan persahabatan; kad emosi; kad dialog sokongan.",
       "induction": "Guru membacakan dua situasi rekaan: menerima adik baharu dan rakan rapat mula berkawan dengan murid lain.",
       "activities": [
@@ -263,12 +263,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan membina dialog sopan untuk menyatakan perasaan dan mendapatkan sokongan ahli keluarga, guru atau rakan yang sesuai."
+          "body": "Pasangan membina dialog sopan untuk menyatakan perasaan dan mendapatkan sokongan; kemudian membandingkan kesan kepada diri bagi watak yang mengurus perasaan dengan watak yang membiarkannya berlarutan dalam situasi keluarga dan rakan sebaya."
         }
       ],
-      "reinforcement": "Murid memilih respons yang membantu watak mengurus perasaan bimbang atau cemburu.",
+      "reinforcement": "Murid memilih respons dan menilai satu kesan kepada diri jika bimbang atau cemburu tidak diurus.",
       "closure": "Rumusan cara mengurus bimbang dan cemburu ketika hubungan keluarga atau persahabatan berubah.",
-      "assessment": "Semakan dialog dan alasan tindakan mengurus emosi.",
+      "assessment": "Semakan dialog pengurusan emosi dan alasan penilaian kesan kepada diri.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -294,7 +294,7 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Bekerjasama Sekeluarga",
-      "objective": "Murid mengenal pasti keistimewaan diri dalam keluarga dan menunjukkan cara menghargai ahli keluarga tanpa mengira jantina.",
+      "objective": "Murid menyatakan keistimewaan diri, mengaplikasikan cara menghargai ahli keluarga dan menilai kepentingan saling menghargai tanpa mengira jantina.",
       "materials": "Kad tugasan rumah dan carta pembahagian tugas rekaan.",
       "induction": "Guru membentangkan situasi persediaan keluarga untuk aktiviti bersama.",
       "activities": [
@@ -304,12 +304,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan mengagihkan tugasan ringan mengikut kemampuan dan melakonkan cara menghargai serta mengucapkan terima kasih kepada ahli keluarga."
+          "body": "Kumpulan mengagihkan tugasan ringan mengikut kemampuan, melakonkan penghargaan kepada ahli keluarga dan membandingkan kesan apabila sumbangan setiap ahli dihargai atau diabaikan tanpa stereotaip jantina."
         }
       ],
-      "reinforcement": "Murid mencadangkan satu cara menghargai diri dan ahli keluarga tanpa stereotaip.",
+      "reinforcement": "Murid menerangkan mengapa menghargai diri dan ahli keluarga penting tanpa mengira jantina.",
       "closure": "Rumusan kerjasama, keselamatan dan saling menghargai.",
-      "assessment": "Semakan cadangan tindakan dan alasan menghargai ahli keluarga.",
+      "assessment": "Semakan aplikasi penghargaan dan alasan menilai kepentingannya.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -335,7 +335,7 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Bersyukur dan Kasih Sayang",
-      "objective": "Murid menyatakan cara menzahirkan kasih sayang kepada Tuhan, diri, ibu bapa, penjaga, ahli keluarga, guru dan rakan.",
+      "objective": "Murid menyatakan cara menzahirkan kasih sayang, mengamalkan kesyukuran dan ucapan terima kasih serta menilai kepentingan menzahirkan kasih sayang kepada Tuhan, diri, ibu bapa, penjaga, ahli keluarga, guru dan rakan.",
       "materials": "Kad dialog penghargaan dan senario sokongan harian.",
       "induction": "Guru berkongsi situasi rekaan seseorang membantu menyediakan keperluan sekolah.",
       "activities": [
@@ -345,12 +345,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan menghasilkan kad penghargaan atau dialog ringkas kepada individu yang dipilih, dengan mengambil kira kepelbagaian struktur keluarga."
+          "body": "Pasangan menghasilkan kad penghargaan atau dialog ringkas yang mempraktikkan kesyukuran dan ucapan terima kasih; kemudian menilai mengapa menzahirkan kasih sayang penting dalam hubungan harian, dengan mengambil kira kepelbagaian struktur keluarga."
         }
       ],
-      "reinforcement": "Murid menerangkan satu tindakan kasih sayang yang boleh diamalkan secara konsisten.",
+      "reinforcement": "Murid memilih satu tindakan kasih sayang dan menjelaskan kepentingannya dengan alasan.",
       "closure": "Penutup menekankan kasih sayang dan hormat dalam pelbagai bentuk keluarga.",
-      "assessment": "Senarai semak kesesuaian contoh kasih sayang dan penerangan murid.",
+      "assessment": "Senarai semak contoh kasih sayang, aplikasi kesyukuran/terima kasih dan alasan penilaian kepentingan.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -376,7 +376,7 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Bersama Mencegah",
-      "objective": "Murid menerangkan penyakit tangan, kaki dan mulut serta konjunktivitis dan mengenal pasti cara mencegah penularannya.",
+      "objective": "Murid menerangkan penyakit tangan, kaki dan mulut serta konjunktivitis, mengaplikasikan langkah kebersihan dan mereka cipta bahan maklumat pencegahan kedua-dua penyakit.",
       "materials": "Kad maklumat penyakit tangan, kaki dan mulut serta konjunktivitis; kad amalan kebersihan; kertas carta pencegahan.",
       "induction": "Guru memaparkan dua situasi rekaan berkaitan penyakit tangan, kaki dan mulut serta konjunktivitis dan bertanya amalan kebersihan yang sesuai.",
       "activities": [
@@ -386,12 +386,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan, kemudian menghasilkan carta pencegahan berdasarkan kedua-dua penyakit."
+          "body": "Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan dan mereka cipta poster atau carta maklumat pencegahan yang jelas bagi penyakit tangan, kaki dan mulut serta konjunktivitis."
         }
       ],
       "reinforcement": "Murid memadankan setiap penyakit dengan langkah pencegahan dan memberikan alasan.",
       "closure": "Rumusan penerangan kedua-dua penyakit dan amalan kebersihan diri untuk mencegah penularan.",
-      "assessment": "Senarai semak penerangan kedua-dua penyakit dan pemilihan langkah kebersihan yang sesuai.",
+      "assessment": "Senarai semak penerangan kedua-dua penyakit, aplikasi langkah kebersihan dan ketepatan bahan maklumat pencegahan.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
