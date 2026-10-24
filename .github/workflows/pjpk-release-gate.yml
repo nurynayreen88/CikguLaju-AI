@@ -23,6 +23,10 @@ on:
       - 'scripts/pjpk_v26_16_adapter.py'
       - 'scripts/activate_pjpk_v26_16.py'
       - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
+      - 'scripts/pjpk_t2_pk_batch_audit.py'
+      - 'tests/test_pjpk_t2_pk_batch_audit.py'
+      - 'docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json'
+      - 'docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json'
       - '.github/workflows/pjpk-release-gate.yml'
   workflow_dispatch:
 
@@ -36,6 +40,8 @@ jobs:
           python-version: '3.11'
       - name: Run source-gate regression tests
         run: python -m unittest discover -s tests -p 'test_pjpk_release_gate.py' -v
+      - name: Audit all eighteen T2 PK editorial RPH
+        run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_batch_audit.py' -v
       - name: Run T5 evidence-overlay regression tests
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_evidence_overlay.py' -v
       - name: Run PJPK runtime adapter isolation tests
