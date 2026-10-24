@@ -297,10 +297,11 @@
       "unit": "Unit 11: Awas, Berhati-Hati",
       "topic": "Bantuan Segera",
       "sp": [
-        "9.1.2"
+        "9.1.2",
+        "9.1.3"
       ],
       "sk": null,
-      "objective": "Murid mengenal pasti pihak yang boleh dihubungi dan menunjukkan cara meminta bantuan apabila berlaku kemalangan atau kecederaan di rumah, sekolah dan tempat awam.",
+      "objective": "Murid mengenal pasti pihak yang boleh dihubungi, menunjukkan cara meminta bantuan dan menilai akibat jika bantuan segera tidak diminta apabila berlaku kemalangan atau kecederaan.",
       "materials": "Kad lokasi, kad peranan dan senarai maklumat asas untuk meminta bantuan.",
       "induction": "Guru membacakan situasi kecederaan rekaan dan bertanya siapa patut dihubungi terlebih dahulu.",
       "activities": [
@@ -310,12 +311,12 @@
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Pasangan melakonkan panggilan meminta bantuan dengan menyatakan lokasi, kejadian dan jenis bantuan diperlukan; murid tidak membuat panggilan sebenar."
+          "body": "Pasangan melakonkan panggilan meminta bantuan dengan menyatakan lokasi, kejadian dan jenis bantuan diperlukan tanpa membuat panggilan sebenar; kemudian membandingkan akibat situasi meminta bantuan segera dengan situasi bantuan dilewatkan."
         }
       ],
-      "reinforcement": "Murid memilih pihak bantuan untuk situasi baharu dan menjelaskan pilihannya.",
+      "reinforcement": "Murid memilih pihak bantuan yang sesuai dan menerangkan satu kemungkinan akibat jika bantuan segera tidak diminta.",
       "closure": "Rumusan: utamakan keselamatan diri, dapatkan bantuan orang dewasa dan berikan maklumat tepat.",
-      "assessment": "Senarai semak pemilihan pihak bantuan dan kejelasan maklumat dalam simulasi.",
+      "assessment": "Senarai semak pemilihan pihak bantuan, kejelasan simulasi dan alasan penilaian akibat kelewatan bantuan.",
       "sp_text_verified": false
     }
   ]
