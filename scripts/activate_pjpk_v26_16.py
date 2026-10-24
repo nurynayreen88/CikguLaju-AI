@@ -58,7 +58,8 @@ def install(g):
             return []
         # Never invent SK; a verified SP is mandatory for RPH selection.
         return [row for row in rows if any(
-            item["standard_type"] == "SP" and str(item.get("standard_code") or "").strip()
+            item["standard_type"] == "SP" and item.get("verified") in (1, True)
+            and str(item.get("standard_code") or "").strip()
             for item in row["_std"]
         )]
 
@@ -98,7 +99,7 @@ def install(g):
         for item in row.get("_std") or []:
             code = str(item.get("standard_code") or "").strip()
             text = str(item.get("standard_text") or "").strip()
-            if not code:
+            if not code or item.get("verified") not in (1, True):
                 continue
             if item.get("standard_type") == "SK" and code not in sk_codes:
                 sk_codes.append(code)
