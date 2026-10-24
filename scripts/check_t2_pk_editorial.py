@@ -60,7 +60,7 @@ def audit():
     for path in FILES:
         rel = str(path.relative_to(ROOT))
         raw = path.read_bytes()
-        actual_sha = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + b"\\0" + raw).hexdigest()
+        actual_sha = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + bytes([0]) + raw).hexdigest()
         recorded = documented_sources.get(rel, {})
         if recorded.get("blob_sha") != actual_sha:
             errors.append(f"{rel}: checkpoint source blob SHA stale")
