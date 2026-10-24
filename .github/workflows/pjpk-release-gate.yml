@@ -32,6 +32,8 @@ on:
       - 'docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json'
       - 'docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json'
       - '.github/workflows/pjpk-release-gate.yml'
+      - 'tests/test_pjpk_t5_release_checklist.py'
+      - 'docs/pjpk/T5_PK_3_REMAINING_RELEASE_CHECKLIST_20261024.csv'
   workflow_dispatch:
 
 jobs:
@@ -59,6 +61,8 @@ jobs:
           name: pjpk-t2-pk-18-evidence-workqueue
           path: /tmp/pjpk-t2-pk-evidence-workqueue.csv
           if-no-files-found: warn
+      - name: Verify T5 release checklist agrees with source evidence
+        run: python -m unittest discover -s tests -p 'test_pjpk_t5_release_checklist.py' -v
       - name: Run T5 evidence-overlay regression tests
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_evidence_overlay.py' -v
       - name: Run PJPK runtime adapter isolation tests
