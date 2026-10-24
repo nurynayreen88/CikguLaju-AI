@@ -26,13 +26,12 @@
       "unit": "Unit 10: Bahaya Menanti",
       "topic": "Tabiat Makan dan Minum Sihat",
       "sp": [
-        "8.1.1",
-        "8.1.2"
+        "8.1.1"
       ],
       "sk": null,
       "objective": "Murid menyatakan waktu makan dan minum yang sesuai serta kuantiti mengikut keperluan harian dalam situasi rekaan.",
-      "materials": "Kad jadual harian, kad makanan/minuman dan carta pilihan.",
-      "induction": "Guru menunjukkan dua jadual makan rekaan dan meminta murid membandingkan masa serta pilihan minuman.",
+      "materials": "Kad waktu makan dan minum; jadual aktiviti harian rekaan; kad keperluan individu.",
+      "induction": "Guru menunjukkan dua jadual waktu makan dan minum rekaan dan meminta murid membandingkannya.",
       "activities": [
         {
           "heading": "Aktiviti 1",
@@ -44,7 +43,7 @@
         }
       ],
       "reinforcement": "Murid membetulkan jadual makan/minum rekaan dan menjelaskan pilihan.",
-      "closure": "Rumusan tentang waktu makan, kuantiti mengikut keperluan dan kepelbagaian makanan.",
+      "closure": "Rumusan waktu makan dan minum serta kuantiti mengikut keperluan harian.",
       "assessment": "Semakan jadual dan alasan tentang waktu serta kuantiti mengikut keperluan.",
       "sp_text_verified": false
     },
@@ -72,13 +71,12 @@
       "unit": "Unit 10: Bahaya Menanti",
       "topic": "Amalan Pemakanan Sihat dan Selamat",
       "sp": [
-        "8.1.1",
         "8.1.2"
       ],
       "sk": null,
       "objective": "Murid menganalisis makanan dan minuman yang boleh menyumbang kepada berat badan berlebihan serta mencadangkan pilihan yang lebih seimbang.",
-      "materials": "Kad situasi kantin, kad pilihan makanan/minuman dan lembaran sebab-akibat.",
-      "induction": "Guru membacakan situasi murid yang memilih makanan di kantin dan bertanya bagaimana membuat keputusan.",
+      "materials": "Kad corak pengambilan makanan dan minuman rekaan; lembaran analisis pilihan.",
+      "induction": "Guru menunjukkan dua corak pengambilan makanan/minuman rekaan dan meminta murid meneliti perbezaannya.",
       "activities": [
         {
           "heading": "Aktiviti 1",
@@ -90,7 +88,7 @@
         }
       ],
       "reinforcement": "Murid menerangkan satu perubahan pilihan makanan atau minuman dan sebabnya.",
-      "closure": "Guru merumuskan pemakanan seimbang dan pilihan yang selamat.",
+      "closure": "Rumusan pilihan makanan dan minuman yang lebih seimbang tanpa menilai bentuk tubuh individu.",
       "assessment": "Semakan analisis pilihan makanan/minuman dan justifikasi.",
       "sp_text_verified": false
     },
