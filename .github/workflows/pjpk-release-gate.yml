@@ -8,6 +8,9 @@ on:
     paths:
       - 'scripts/pjpk_release_gate.py'
       - 'tests/test_pjpk_release_gate.py'
+      - 'scripts/pjpk_t5_evidence_overlay.py'
+      - 'tests/test_pjpk_t5_evidence_overlay.py'
+      - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
       - '.github/workflows/pjpk-release-gate.yml'
   workflow_dispatch:
 
@@ -19,5 +22,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Run isolated regression tests
+      - name: Run source-gate regression tests
         run: python -m unittest discover -s tests -p 'test_pjpk_release_gate.py' -v
+      - name: Run T5 evidence-overlay regression tests
+        run: python -m unittest discover -s tests -p 'test_pjpk_t5_evidence_overlay.py' -v
+      - name: Validate T5 evidence-overlay integrity (pending readiness is expected)
+        run: |
+          set +e
+          python scripts/pjpk_t5_evidence_overlay.py docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv
+          status=$?
+          set -e
+          if [ "$status" -ne 2 ]; then
+            echo "Expected pending release status 2, received $status"
+            exit 1
+          fi
