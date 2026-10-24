@@ -49,7 +49,7 @@ def install(g):
                 con.row_factory = sqlite3.Row
                 for row in rows:
                     row["_std"] = [dict(item) for item in con.execute(
-                        """SELECT standard_type,standard_code,standard_text,sequence_no
+                        """SELECT standard_type,standard_code,standard_text,sequence_no,verified
                         FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
                         ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",
                         (row["id"],))]
