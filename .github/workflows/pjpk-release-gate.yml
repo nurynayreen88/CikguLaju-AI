@@ -97,6 +97,14 @@ jobs:
           from pathlib import Path
           from weasyprint import HTML
           from pypdf import PdfReader
+          import json
+          records = {}
+          for name in ('T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json',
+                       'T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json'):
+              for item in json.loads((Path('docs/pjpk') / name).read_text(encoding='utf-8'))['records']:
+                  assert item['id'] not in records
+                  records[item['id']] = item
+          assert len(records) == 18
           out = Path('/tmp/pjpk-t2-pdf')
           out.mkdir(exist_ok=True)
           inputs = sorted(Path('/tmp/pjpk-t2-html').glob('*.html'))
@@ -109,7 +117,9 @@ jobs:
               box = pages[0].mediabox
               assert abs(float(box.width)-595.28)<2 and abs(float(box.height)-841.89)<2
               extracted = pages[0].extract_text()
-              for phrase in ('BELUM DILULUSKAN UNTUK PRODUKSI','Aktiviti 1','Aktiviti 2','Refleksi:', 'Slot RPT / Halaman buku teks:', 'Belum disahkan', source.stem.split('_')[-1]):
+              ident = int(source.stem.split('_')[-1])
+              assert ident in records, source.name
+              for phrase in ('BELUM DILULUSKAN UNTUK PRODUKSI','Aktiviti 1','Aktiviti 2','Refleksi:', 'Slot RPT / Halaman buku teks:', 'Belum disahkan', str(ident), records[ident]['topic']):
                   assert phrase in extracted, (source.name, phrase)
               assert len(extracted.strip()) > 850, f'{source.name}: unexpectedly short content'
               print(dest.name, 'A4 one page, ID and pending evidence present')
