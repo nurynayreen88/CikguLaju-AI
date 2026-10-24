@@ -14,6 +14,18 @@ class PreparedRPHLookupTests(unittest.TestCase):
             with self.subTest(ident=ident):
                 row = dict(self.ready, id=ident, topic=topic)
                 self.assertIsNone(prepared_rph(ident, row))
+    def test_all_eighteen_t2_editorial_records_blocked_even_with_forged_ready_row(self):
+        from scripts.pjpk_t2_pk_evidence_queue import build
+        for item in build():
+            ident = item["entry_id"]
+            row = dict(id=ident, year_label="Tahun 2", subject="Pendidikan Kesihatan",
+                       topic=item["topic"], content_verified=1, sequence_verified=1,
+                       schedule_verified=1, _std=[
+                           dict(standard_type="SK", standard_code="1.1", verified=1),
+                           dict(standard_type="SP", standard_code="1.1.1", verified=1)])
+            with self.subTest(ident=ident):
+                self.assertIsNone(prepared_rph(ident, row))
+
     def test_missing_verified_standards_blocks(self):
         self.assertIsNone(prepared_rph(2259, self.ready))
     def test_unverified_standard_blocks(self):
