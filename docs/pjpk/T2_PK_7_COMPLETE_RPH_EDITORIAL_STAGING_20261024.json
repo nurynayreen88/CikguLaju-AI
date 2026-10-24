@@ -45,7 +45,8 @@
       ],
       "reinforcement": "Murid melengkapkan satu perubahan praktikal pada contoh jadual makan dan memberikan alasan.",
       "closure": "Rumusan tentang waktu makan, kuantiti mengikut keperluan dan kepelbagaian makanan.",
-      "assessment": "Semakan jadual dan alasan lisan."
+      "assessment": "Semakan jadual dan alasan lisan.",
+      "sp_text_verified": false
     },
     {
       "year": "Tahun 2",
@@ -90,7 +91,8 @@
       ],
       "reinforcement": "Murid menulis dua tabiat sihat dan satu sebab untuk mengubah pilihan dalam situasi diberi.",
       "closure": "Guru merumuskan pemakanan seimbang dan pilihan yang selamat.",
-      "assessment": "Respons bertulis individu dan pembentangan kumpulan."
+      "assessment": "Respons bertulis individu dan pembentangan kumpulan.",
+      "sp_text_verified": false
     },
     {
       "year": "Tahun 2",
@@ -135,7 +137,8 @@
       ],
       "reinforcement": "Murid memilih respons selamat bagi satu situasi baharu dan menerangkan kepada siapa mereka boleh meminta bantuan.",
       "closure": "Penegasan bahawa keselamatan diri lebih utama daripada menurut desakan sesiapa.",
-      "assessment": "Rubrik respons lisan dan pilihan tindakan."
+      "assessment": "Rubrik respons lisan dan pilihan tindakan.",
+      "sp_text_verified": false
     },
     {
       "year": "Tahun 2",
@@ -179,7 +182,8 @@
       ],
       "reinforcement": "Murid membetulkan jadual contoh yang tidak teratur serta menyatakan satu sebab.",
       "closure": "Rumusan tentang amalan teratur dan keperluan individu.",
-      "assessment": "Semakan jadual individu."
+      "assessment": "Semakan jadual individu.",
+      "sp_text_verified": false
     },
     {
       "year": "Tahun 2",
@@ -223,7 +227,8 @@
       ],
       "reinforcement": "Murid menulis satu analisis sebab-akibat dan satu perubahan pilihan yang munasabah.",
       "closure": "Penutup menegaskan tabiat sihat dan hormat terhadap semua bentuk badan.",
-      "assessment": "Justifikasi bertulis individu."
+      "assessment": "Justifikasi bertulis individu.",
+      "sp_text_verified": false
     },
     {
       "year": "Tahun 2",
@@ -267,7 +272,8 @@
       ],
       "reinforcement": "Murid menamakan satu jenis kemalangan dan kecederaan bagi setiap lokasi daripada situasi diberikan.",
       "closure": "Guru merumuskan kepentingan mengenal pasti bahaya sebelum kemalangan berlaku.",
-      "assessment": "Padanan lokasi dan penjelasan lisan."
+      "assessment": "Padanan lokasi dan penjelasan lisan.",
+      "sp_text_verified": false
     },
     {
       "year": "Tahun 2",
@@ -311,7 +317,8 @@
       ],
       "reinforcement": "Murid melengkapkan skrip ringkas meminta bantuan berdasarkan satu kad situasi baharu.",
       "closure": "Rumusan: utamakan keselamatan diri, dapatkan bantuan orang dewasa dan berikan maklumat tepat.",
-      "assessment": "Rubrik simulasi dan skrip individu."
+      "assessment": "Rubrik simulasi dan skrip individu.",
+      "sp_text_verified": false
     }
   ]
 }
