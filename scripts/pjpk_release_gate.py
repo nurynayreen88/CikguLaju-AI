@@ -24,6 +24,8 @@ def audit(path):
         errors.append("Duplicate entry IDs")
     for r in rows:
         ident = r["entry_id"]
+        if r["production_ready"] not in ("0", "1"):
+            errors.append(f"{ident}: production_ready must be explicitly 0 or 1")
         if r["year_label"] not in YEARS or r["subject"] not in SUBJECTS:
             errors.append(f"{ident}: invalid year or subject")
         if r["entry_kind"] != "PDP_CANDIDATE" and r["production_ready"] == "1":
