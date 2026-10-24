@@ -23,6 +23,8 @@ on:
       - 'scripts/pjpk_v26_16_adapter.py'
       - 'scripts/activate_pjpk_v26_16.py'
       - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
+      - 'scripts/pjpk_t2_pk_evidence_queue.py'
+      - 'tests/test_pjpk_t2_pk_evidence_queue.py'
       - 'scripts/pjpk_t2_pk_preview.py'
       - 'tests/test_pjpk_t2_pk_preview.py'
       - 'scripts/pjpk_t2_pk_batch_audit.py'
@@ -46,6 +48,17 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_batch_audit.py' -v
       - name: Test all eighteen T2 PK previews
         run: python -m unittest discover -s tests -p 'test_pjpk_t2_pk_preview.py' -v
+      - name: Verify and export eighteen blocked T2 PK evidence tasks
+        run: |
+          python -m unittest discover -s tests -p 'test_pjpk_t2_pk_evidence_queue.py' -v
+          python -m scripts.pjpk_t2_pk_evidence_queue /tmp/pjpk-t2-pk-evidence-workqueue.csv
+      - name: Upload T2 PK evidence workqueue
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pjpk-t2-pk-18-evidence-workqueue
+          path: /tmp/pjpk-t2-pk-evidence-workqueue.csv
+          if-no-files-found: warn
       - name: Run T5 evidence-overlay regression tests
         run: python -m unittest discover -s tests -p 'test_pjpk_t5_evidence_overlay.py' -v
       - name: Run PJPK runtime adapter isolation tests
