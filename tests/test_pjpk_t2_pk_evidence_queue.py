@@ -16,6 +16,8 @@ class TestT2PKEvidenceQueue(unittest.TestCase):
             self.assertEqual(row["sp_text_verified"], "false")
         candidates = [row for row in rows if row["candidate_sp_codes_not_verified"]]
         self.assertEqual(len(candidates), 11)
+        self.assertEqual(len({row["entry_id"] for row in candidates}), 11)
+        self.assertTrue(all(row["candidate_sp_codes_not_verified"].strip() for row in candidates))
         self.assertTrue(all(row["recorded_sp_codes"] == "" for row in candidates))
         self.assertEqual(sum(bool(row["recorded_sp_codes"]) for row in rows), 7)
         with tempfile.TemporaryDirectory() as directory:
