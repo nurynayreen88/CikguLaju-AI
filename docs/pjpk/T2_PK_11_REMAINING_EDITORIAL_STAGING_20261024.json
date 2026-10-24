@@ -130,22 +130,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Rutin Sihat: Postur, Rehat dan Tidur",
-      "objective": "Murid mengenal pasti postur yang betul serta kepentingan rehat dan tidur yang mencukupi dalam rutin harian.",
+      "objective": "Murid mengaplikasikan postur yang betul ketika duduk dan belajar untuk menyokong pertumbuhan serta perkembangan fizikal yang sihat.",
       "materials": "Kad ilustrasi postur; kad rutin rehat dan tidur; jadual harian rekaan.",
       "induction": "Guru menunjukkan dua rutin harian rekaan dan meminta murid mengenal pasti perbezaan.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid membandingkan ilustrasi postur duduk dan menerangkan postur yang lebih sesuai ketika belajar."
+          "body": "Guru menunjukkan ilustrasi postur duduk. Murid mengenal pasti kedudukan tubuh yang sesuai dan menerangkan sebabnya."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan menyusun kad rutin harian yang memasukkan waktu rehat dan tidur yang mencukupi, kemudian menerangkan satu pilihan."
+          "body": "Secara individu, murid mempraktikkan postur duduk yang betul ketika aktiviti pembelajaran ringkas; rakan menyemak menggunakan kad panduan tanpa memaksa posisi yang menyakitkan."
         }
       ],
-      "reinforcement": "Murid membetulkan contoh rutin yang tidak memperuntukkan rehat dan tidur mencukupi.",
+      "reinforcement": "Murid membetulkan satu contoh postur rekaan dan menunjukkan amalan yang lebih sesuai.",
       "closure": "Rumusan postur yang betul serta kepentingan rehat dan tidur mencukupi.",
-      "assessment": "Semakan padanan postur dan penerangan kepentingan rehat serta tidur.",
+      "assessment": "Senarai semak demonstrasi postur duduk yang betul dan alasan murid.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -171,22 +171,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Jaga Diri",
-      "objective": "Murid membezakan sentuhan selamat, tidak selamat dan tidak selesa serta mempraktikkan respons berkata TIDAK dan mendapatkan bantuan.",
+      "objective": "Murid menilai situasi yang memerlukan kemahiran berkata TIDAK kepada sentuhan tidak selamat atau tidak selesa serta menjelaskan pilihan tindakannya.",
       "materials": "Kad situasi sentuhan selamat, tidak selamat dan tidak selesa; kad respons berkata TIDAK; senarai orang dewasa dipercayai.",
       "induction": "Guru menunjukkan ilustrasi murid berdepan situasi kurang selesa dan bertanya pilihan tindakan.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Guru menggunakan kad situasi yang sesuai usia; murid membezakan sentuhan selamat, tidak selamat dan tidak selesa tanpa diminta berkongsi pengalaman peribadi."
+          "body": "Murid membandingkan kad situasi rekaan dan menilai sama ada mereka perlu berkata TIDAK, beredar dan meminta bantuan, tanpa berkongsi pengalaman peribadi."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Murid melatih respons berkata TIDAK, menjauhkan diri dan memberitahu orang dewasa dipercayai melalui lakonan tanpa sentuhan fizikal."
+          "body": "Pasangan memberikan alasan untuk respons selamat dalam dua situasi berbeza melalui dialog tanpa sentuhan fizikal."
         }
       ],
-      "reinforcement": "Murid memilih tindakan selamat bagi situasi rekaan dan menyatakan siapa yang boleh membantu.",
+      "reinforcement": "Murid memilih dan mempertahankan respons bagi situasi baharu.",
       "closure": "Rumusan hak menjaga batas tubuh, berkata TIDAK dan mendapatkan bantuan.",
-      "assessment": "Senarai semak pengelasan situasi dan respons keselamatan yang sesuai.",
+      "assessment": "Rubrik alasan penilaian situasi dan pemilihan respons selamat.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
@@ -212,22 +212,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Jauhkan Diri",
-      "objective": "Murid mengenal pasti tembakau, alkohol dan dadah sebagai bahan ketagihan serta mempraktikkan cara menolak ajakan mencubanya.",
+      "objective": "Murid menilai kepentingan berkata TIDAK kepada ajakan mengambil tembakau, alkohol dan dadah dengan alasan berkaitan keselamatan diri serta orang lain.",
       "materials": "Poster pendidikan tembakau, alkohol dan dadah; kad ajakan rekaan; kad respons berkata TIDAK.",
       "induction": "Guru menunjukkan poster tiga bahan ketagihan dan bertanya sebab murid tidak patut mencubanya.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid meneliti poster rekaan tentang tembakau, alkohol dan dadah, kemudian memadankan setiap bahan dengan risiko yang dinyatakan oleh guru."
+          "body": "Murid meneliti kad ajakan rekaan berkaitan tembakau, alkohol dan dadah, kemudian membincangkan mengapa ajakan itu perlu ditolak."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Secara berpasangan, murid melakonkan cara berkata TIDAK terhadap ajakan mencuba bahan ketagihan, menjauhkan diri dan memaklumkan orang dewasa dipercayai."
+          "body": "Pasangan melakonkan respons berkata TIDAK, menjauhkan diri dan memaklumkan orang dewasa dipercayai; setiap pasangan menjelaskan kepentingan respons tersebut."
         }
       ],
-      "reinforcement": "Murid memilih respons selamat untuk tiga situasi ajakan rekaan.",
+      "reinforcement": "Murid membandingkan dua respons rekaan dan memilih respons lebih selamat dengan alasan.",
       "closure": "Rumusan bahaya tembakau, alkohol dan dadah serta cara menolak ajakan mencubanya.",
-      "assessment": "Senarai semak pengenalpastian bahan dan respons penolakan yang jelas.",
+      "assessment": "Rubrik penilaian kepentingan berkata TIDAK dan alasan murid.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
