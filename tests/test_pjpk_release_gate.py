@@ -45,6 +45,19 @@ class PJPKReleaseGateTests(unittest.TestCase):
         for value in ("", "true", "False", "2", " 1", "yes"):
             with self.subTest(value=value):
                 self.assertTrue(check([dict(BASE, production_ready=value)])[2])
+    def test_duplicate_csv_headers_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "duplicate.csv"
+            path.write_text(",".join(list(BASE) + ["production_ready"]) + "\n" + ",".join(BASE.values()) + ",1\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Duplicate CSV column headers"):
+                gate.audit(path)
+    def test_missing_and_extra_csv_fields_block(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "width.csv"
+            header = ",".join(BASE)
+            for values in (list(BASE.values())[:-1], list(BASE.values()) + ["extra"]):
+                path.write_text(header + "\\n" + ",".join(values) + "\n", encoding="utf-8")
+                self.assertTrue(gate.audit(path)[2])
     def test_empty_inventory_blocks(self):
         self.assertTrue(check([])[2])
     def test_invalid_entry_ids_block(self):
