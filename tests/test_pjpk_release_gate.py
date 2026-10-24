@@ -56,7 +56,7 @@ class PJPKReleaseGateTests(unittest.TestCase):
             path = Path(tmp) / "width.csv"
             header = ",".join(BASE)
             for values in (list(BASE.values())[:-1], list(BASE.values()) + ["extra"]):
-                path.write_text(header + "\\n" + ",".join(values) + "\n", encoding="utf-8")
+                path.write_text(header + "\n" + ",".join(values) + "\n", encoding="utf-8")
                 self.assertTrue(gate.audit(path)[2])
     def test_empty_inventory_blocks(self):
         self.assertTrue(check([])[2])
