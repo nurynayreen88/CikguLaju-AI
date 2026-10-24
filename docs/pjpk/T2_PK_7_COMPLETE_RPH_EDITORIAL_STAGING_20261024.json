@@ -167,22 +167,22 @@
         "8.1.1"
       ],
       "sk": null,
-      "objective": "Murid menyatakan tabiat waktu makan/minum dan kuantiti yang sesuai mengikut keperluan harian dalam situasi diberi.",
+      "objective": "Murid menyatakan waktu makan dan minum yang betul serta kuantiti mengikut keperluan harian.",
       "materials": "Kad waktu, jadual harian kosong dan kad aktiviti murid.",
       "induction": "Guru menunjukkan contoh jadual sekolah dan bertanya bila murid lazimnya makan dan minum.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Bina jadual",
-          "body": "Murid menyusun waktu makan/minum pada jadual contoh hari persekolahan dan menyatakan sebab mereka perlu makan dan minum secara teratur."
+          "heading": "Aktiviti 1",
+          "body": "Murid menyusun kad sarapan, makan tengah hari, makan malam dan minum dalam jadual harian rekaan."
         },
         {
-          "heading": "Aktiviti 2 – Sesuaikan keperluan",
-          "body": "Kumpulan membandingkan dua jadual aktiviti berbeza dan membincangkan mengapa kuantiti makanan/minuman perlu mengambil kira keperluan harian tanpa menentukan sukatan perubatan."
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membandingkan dua jadual dan menerangkan waktu serta kuantiti makan/minum mengikut keperluan, tanpa menetapkan satu sukatan untuk semua murid."
         }
       ],
-      "reinforcement": "Murid membetulkan jadual contoh yang tidak teratur serta menyatakan satu sebab.",
+      "reinforcement": "Murid membetulkan jadual makan/minum rekaan dan memberikan alasan.",
       "closure": "Rumusan tentang amalan teratur dan keperluan individu.",
-      "assessment": "Semakan jadual individu.",
+      "assessment": "Semakan jadual dan penerangan waktu serta kuantiti mengikut keperluan.",
       "sp_text_verified": false
     },
     {
@@ -212,22 +212,22 @@
         "8.1.2"
       ],
       "sk": null,
-      "objective": "Murid menganalisis contoh pengambilan makanan/minuman yang boleh menyumbang kepada berat badan berlebihan dan mencadangkan pilihan lebih seimbang.",
+      "objective": "Murid menganalisis contoh makanan dan minuman yang boleh menyumbang kepada berat badan berlebihan serta mencadangkan pilihan seimbang.",
       "materials": "Kad dua corak pemakanan rekaan, kad minuman dan jadual sebab-akibat.",
       "induction": "Guru menunjukkan dua pilihan minuman dalam situasi rekaan dan bertanya mengapa kekerapan pengambilan penting.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Cari pola",
-          "body": "Murid meneliti corak pengambilan makanan/minuman berulang dalam kad rekaan, mengenal pasti pilihan yang wajar dikurangkan tanpa menghakimi bentuk tubuh."
+          "heading": "Aktiviti 1",
+          "body": "Murid meneliti kad corak pengambilan makanan/minuman rekaan dan mengenal pasti pengambilan yang wajar disederhanakan."
         },
         {
-          "heading": "Aktiviti 2 – Cadang perubahan",
-          "body": "Kumpulan memilih satu corak, mencadangkan alternatif yang lebih seimbang dan menerangkan sebab; guru menekankan kesihatan, bukan penampilan fizikal."
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan mencadangkan pilihan lebih seimbang dan menerangkan alasannya tanpa menilai bentuk tubuh individu."
         }
       ],
-      "reinforcement": "Murid menulis satu analisis sebab-akibat dan satu perubahan pilihan yang munasabah.",
+      "reinforcement": "Murid memilih satu penambahbaikan kepada corak pengambilan rekaan.",
       "closure": "Penutup menegaskan tabiat sihat dan hormat terhadap semua bentuk badan.",
-      "assessment": "Justifikasi bertulis individu.",
+      "assessment": "Semakan analisis dan alasan pilihan makanan/minuman.",
       "sp_text_verified": false
     },
     {
@@ -257,22 +257,22 @@
         "9.1.1"
       ],
       "sk": null,
-      "objective": "Murid menyatakan jenis kemalangan dan kecederaan yang boleh berlaku di rumah, sekolah dan tempat awam.",
+      "objective": "Murid mengenal pasti kemalangan dan kecederaan yang boleh berlaku di rumah, sekolah dan tempat awam.",
       "materials": "Kad lokasi dan gambar situasi kemalangan yang tidak grafik.",
       "induction": "Guru menunjukkan tiga lokasi dan meminta murid mengenal pasti bahaya yang mungkin berlaku.",
       "activities": [
         {
-          "heading": "Aktiviti 1 – Kenal pasti risiko",
-          "body": "Kumpulan memadankan situasi tergelincir, terjatuh dan kecederaan kecil dengan lokasi rumah, sekolah atau tempat awam serta menerangkan puncanya."
+          "heading": "Aktiviti 1",
+          "body": "Murid mengelaskan kad kejadian rekaan seperti terjatuh, tergelincir dan luka ringan mengikut lokasi rumah, sekolah atau tempat awam."
         },
         {
-          "heading": "Aktiviti 2 – Galeri pencegahan",
-          "body": "Murid menghasilkan carta ringkas lokasi–risiko–tindakan selamat dan membuat lawatan galeri untuk membandingkan jawapan kumpulan."
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membina carta contoh kemalangan dan kecederaan bagi ketiga-tiga lokasi serta menerangkan satu risiko bagi setiap lokasi tanpa melakukan aksi berbahaya."
         }
       ],
-      "reinforcement": "Murid menamakan satu jenis kemalangan dan kecederaan bagi setiap lokasi daripada situasi diberikan.",
+      "reinforcement": "Murid memberikan satu contoh baharu kemalangan atau kecederaan bagi lokasi yang dipilih.",
       "closure": "Guru merumuskan kepentingan mengenal pasti bahaya sebelum kemalangan berlaku.",
-      "assessment": "Padanan lokasi dan penjelasan lisan.",
+      "assessment": "Senarai semak contoh kemalangan/kecederaan yang tepat mengikut lokasi.",
       "sp_text_verified": false
     },
     {
