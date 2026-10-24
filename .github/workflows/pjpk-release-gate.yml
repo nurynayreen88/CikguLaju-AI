@@ -21,6 +21,7 @@ on:
       - 'docs/pjpk/T5_PK_3_COMPLETE_RPH_STAGING_20261024.json'
       - 'docs/pjpk/T5_PK_3_RPH_EDITORIAL_DRAFTS_20261024.md'
       - 'scripts/pjpk_v26_16_adapter.py'
+      - 'scripts/activate_pjpk_v26_16.py'
       - 'docs/pjpk/T5_PK_3_VERIFIED_EVIDENCE_OVERLAY_20261024.csv'
       - '.github/workflows/pjpk-release-gate.yml'
   workflow_dispatch:
