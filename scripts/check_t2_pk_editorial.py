@@ -20,6 +20,7 @@ EDITORIAL_SP = {2232: ["8.1.1"], 2252: ["8.1.2"], 2351: ["7.1.1", "7.1.2", "7.1.
                 2356: ["9.1.2", "9.1.3"]}
 EXPECTED_IDS = CANDIDATE_IDS | set(EDITORIAL_SP)
 FOCUS_MATRIX = ROOT / "docs/pjpk/T2_PK_11_SP_EDITORIAL_FOCUS_MATRIX_20261024.json"
+CHECKPOINT = ROOT / "docs/pjpk/T2_PK_18_EDITORIAL_QA_CHECKPOINT_20261024.json"
 EXPECTED_FOCUS_SP = {
     2249: ["1.1.1", "1.1.3"], 2344: ["1.1.2"], 2250: ["1.2.1", "1.2.2"],
     2345: ["1.2.3"], 2251: ["2.1.1", "2.1.2"], 2346: ["2.1.3"],
@@ -47,6 +48,11 @@ def audit():
         errors.append("Candidate focus matrix identity mismatch")
     if any(row.get("sp") != EXPECTED_FOCUS_SP.get(row.get("id")) for row in candidates):
         errors.append("Candidate focus matrix SP coverage changed; editorial/source re-audit required")
+    checkpoint = json.loads(CHECKPOINT.read_text(encoding="utf-8"))
+    if checkpoint.get("status") != "static_editorial_qa_pass_not_production_gate" or checkpoint.get("production_ready") != 0:
+        errors.append("Editorial checkpoint release status changed")
+    if checkpoint.get("checks", {}).get("total_records") != 18 or checkpoint.get("checks", {}).get("unique_ids") != 18:
+        errors.append("Editorial checkpoint counts changed")
     ids = [r.get("id") for r in records]
     if len(records) != 18:
         errors.append(f"Expected 18 records, got {len(records)}")
