@@ -14,6 +14,20 @@ class PreparedRPHLookupTests(unittest.TestCase):
             with self.subTest(ident=ident):
                 row = dict(self.ready, id=ident, topic=topic)
                 self.assertIsNone(prepared_rph(ident, row))
+    def test_missing_verified_standards_blocks(self):
+        self.assertIsNone(prepared_rph(2259, self.ready))
+    def test_unverified_standard_blocks(self):
+        row = dict(self.ready, _std=[
+            dict(standard_type="SK", standard_code="6.1", verified=0),
+            dict(standard_type="SP", standard_code="6.1.1", verified=1),
+            dict(standard_type="SP", standard_code="6.1.2", verified=1)])
+        self.assertIsNone(prepared_rph(2259, row))
+    def test_mismatched_standard_blocks(self):
+        row = dict(self.ready, _std=[
+            dict(standard_type="SK", standard_code="6.1", verified=1),
+            dict(standard_type="SP", standard_code="6.1.1", verified=1),
+            dict(standard_type="SP", standard_code="6.1.9", verified=1)])
+        self.assertIsNone(prepared_rph(2259, row))
     def test_no_ready_row_blocks(self):
         self.assertIsNone(prepared_rph(2259))
     def test_wrong_id_blocks(self):
