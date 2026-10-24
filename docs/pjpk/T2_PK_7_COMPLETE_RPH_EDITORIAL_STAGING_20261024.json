@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "description": "Seven substantive editorial T2 PK drafts mapped only to directly evidenced SP codes; SK text, textbook and exact RPT slots remain unverified; no production activation",
+  "records": [
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2232,
+      "unit": "Unit 10: Bahaya Menanti",
+      "topic": "Tabiat Makan dan Minum Sihat",
+      "sp": [
+        "8.1.1",
+        "8.1.2"
+      ],
+      "sk": "8.1",
+      "objective": "Murid menyatakan waktu dan kuantiti makan/minum mengikut keperluan serta mengenal pasti pilihan yang boleh menyumbang kepada berat badan berlebihan.",
+      "materials": "Kad jadual harian, kad makanan/minuman dan carta pilihan.",
+      "induction": "Guru menunjukkan dua jadual makan rekaan dan meminta murid membandingkan masa serta pilihan minuman.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Susun rutin makan",
+          "body": "Murid menyusun kad sarapan, makan tengah hari, makan malam dan waktu minum mengikut rutin yang munasabah; guru membincangkan keperluan yang berbeza tanpa menetapkan sukatan universal."
+        },
+        {
+          "heading": "Aktiviti 2 – Nilai pilihan harian",
+          "body": "Dalam kumpulan, murid membandingkan dua contoh menu harian dan menerangkan pilihan makanan atau minuman yang wajar dihadkan serta sebabnya; guru mengelakkan stigma bentuk badan."
+        }
+      ],
+      "reinforcement": "Murid melengkapkan satu perubahan praktikal pada contoh jadual makan dan memberikan alasan.",
+      "closure": "Rumusan tentang waktu makan, kuantiti mengikut keperluan dan kepelbagaian makanan.",
+      "assessment": "Semakan jadual dan alasan lisan."
+    },
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2252,
+      "unit": "Unit 10: Bahaya Menanti",
+      "topic": "Amalan Pemakanan Sihat dan Selamat",
+      "sp": [
+        "8.1.1",
+        "8.1.2"
+      ],
+      "sk": "8.1",
+      "objective": "Murid menyatakan dua tabiat makan/minum sihat dan menganalisis pilihan dalam satu situasi harian.",
+      "materials": "Kad situasi kantin, kad pilihan makanan/minuman dan lembaran sebab-akibat.",
+      "induction": "Guru membacakan situasi murid yang memilih makanan di kantin dan bertanya bagaimana membuat keputusan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Pilih dengan sebab",
+          "body": "Pasangan murid mengelaskan beberapa pilihan makanan/minuman dalam kad situasi, menjelaskan kepelbagaian dan kuantiti mengikut keperluan, bukan menghafal satu menu wajib."
+        },
+        {
+          "heading": "Aktiviti 2 – Ubah keputusan",
+          "body": "Kumpulan meneliti situasi pengambilan makanan/minuman berlebihan secara berulang, mencadangkan penggantian yang munasabah dan menerangkan kesannya tanpa mengejek berat badan seseorang."
+        }
+      ],
+      "reinforcement": "Murid menulis dua tabiat sihat dan satu sebab untuk mengubah pilihan dalam situasi diberi.",
+      "closure": "Guru merumuskan pemakanan seimbang dan pilihan yang selamat.",
+      "assessment": "Respons bertulis individu dan pembentangan kumpulan."
+    },
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2351,
+      "unit": "Unit 9: Hari Yang Ceria",
+      "topic": "Pastikan Selamat",
+      "sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "sk": "7.1",
+      "objective": "Murid menyatakan cara menjaga keselamatan diri dengan orang dikenali/tidak dikenali dan menunjukkan respons berkata TIDAK dalam situasi.",
+      "materials": "Kad senario keselamatan, kad bantuan orang dewasa dipercayai dan rubrik lakonan.",
+      "induction": "Guru memaparkan situasi ajakan yang membuat seseorang tidak selesa dan bertanya tindakan selamat.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Kenal pasti sempadan",
+          "body": "Murid menilai kad situasi melibatkan orang dikenali dan tidak dikenali, membezakan permintaan selamat daripada yang melanggar batas diri serta menamakan orang dewasa dipercayai."
+        },
+        {
+          "heading": "Aktiviti 2 – Latih respons asertif",
+          "body": "Secara berpasangan, murid berlatih menyebut TIDAK dengan jelas, menjauhkan diri ke tempat selamat dan mendapatkan bantuan orang dewasa; guru mengelakkan pendedahan pengalaman peribadi murid."
+        }
+      ],
+      "reinforcement": "Murid memilih respons selamat bagi satu situasi baharu dan menerangkan kepada siapa mereka boleh meminta bantuan.",
+      "closure": "Penegasan bahawa keselamatan diri lebih utama daripada menurut desakan sesiapa.",
+      "assessment": "Rubrik respons lisan dan pilihan tindakan."
+    },
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2352,
+      "unit": "Unit 10: Bahaya Menanti",
+      "topic": "Patuhi Waktu Makan",
+      "sp": [
+        "8.1.1"
+      ],
+      "sk": "8.1",
+      "objective": "Murid menyatakan tabiat waktu makan/minum dan kuantiti yang sesuai mengikut keperluan harian dalam situasi diberi.",
+      "materials": "Kad waktu, jadual harian kosong dan kad aktiviti murid.",
+      "induction": "Guru menunjukkan contoh jadual sekolah dan bertanya bila murid lazimnya makan dan minum.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Bina jadual",
+          "body": "Murid menyusun waktu makan/minum pada jadual contoh hari persekolahan dan menyatakan sebab mereka perlu makan dan minum secara teratur."
+        },
+        {
+          "heading": "Aktiviti 2 – Sesuaikan keperluan",
+          "body": "Kumpulan membandingkan dua jadual aktiviti berbeza dan membincangkan mengapa kuantiti makanan/minuman perlu mengambil kira keperluan harian tanpa menentukan sukatan perubatan."
+        }
+      ],
+      "reinforcement": "Murid membetulkan jadual contoh yang tidak teratur serta menyatakan satu sebab.",
+      "closure": "Rumusan tentang amalan teratur dan keperluan individu.",
+      "assessment": "Semakan jadual individu."
+    },
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2353,
+      "unit": "Unit 10: Bahaya Menanti",
+      "topic": "Badan Sihat dan Menarik",
+      "sp": [
+        "8.1.2"
+      ],
+      "sk": "8.1",
+      "objective": "Murid menganalisis contoh pengambilan makanan/minuman yang boleh menyumbang kepada berat badan berlebihan dan mencadangkan pilihan lebih seimbang.",
+      "materials": "Kad dua corak pemakanan rekaan, kad minuman dan jadual sebab-akibat.",
+      "induction": "Guru menunjukkan dua pilihan minuman dalam situasi rekaan dan bertanya mengapa kekerapan pengambilan penting.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Cari pola",
+          "body": "Murid meneliti corak pengambilan makanan/minuman berulang dalam kad rekaan, mengenal pasti pilihan yang wajar dikurangkan tanpa menghakimi bentuk tubuh."
+        },
+        {
+          "heading": "Aktiviti 2 – Cadang perubahan",
+          "body": "Kumpulan memilih satu corak, mencadangkan alternatif yang lebih seimbang dan menerangkan sebab; guru menekankan kesihatan, bukan penampilan fizikal."
+        }
+      ],
+      "reinforcement": "Murid menulis satu analisis sebab-akibat dan satu perubahan pilihan yang munasabah.",
+      "closure": "Penutup menegaskan tabiat sihat dan hormat terhadap semua bentuk badan.",
+      "assessment": "Justifikasi bertulis individu."
+    },
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2355,
+      "unit": "Unit 11: Awas, Berhati-Hati",
+      "topic": "Malang Tidak Berbau",
+      "sp": [
+        "9.1.1"
+      ],
+      "sk": "9.1",
+      "objective": "Murid menyatakan jenis kemalangan dan kecederaan yang boleh berlaku di rumah, sekolah dan tempat awam.",
+      "materials": "Kad lokasi dan gambar situasi kemalangan yang tidak grafik.",
+      "induction": "Guru menunjukkan tiga lokasi dan meminta murid mengenal pasti bahaya yang mungkin berlaku.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Kenal pasti risiko",
+          "body": "Kumpulan memadankan situasi tergelincir, terjatuh dan kecederaan kecil dengan lokasi rumah, sekolah atau tempat awam serta menerangkan puncanya."
+        },
+        {
+          "heading": "Aktiviti 2 – Galeri pencegahan",
+          "body": "Murid menghasilkan carta ringkas lokasi–risiko–tindakan selamat dan membuat lawatan galeri untuk membandingkan jawapan kumpulan."
+        }
+      ],
+      "reinforcement": "Murid menamakan satu jenis kemalangan dan kecederaan bagi setiap lokasi daripada situasi diberikan.",
+      "closure": "Guru merumuskan kepentingan mengenal pasti bahaya sebelum kemalangan berlaku.",
+      "assessment": "Padanan lokasi dan penjelasan lisan."
+    },
+    {
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": false,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      },
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "textbook_pages": null,
+      "id": 2356,
+      "unit": "Unit 11: Awas, Berhati-Hati",
+      "topic": "Bantuan Segera",
+      "sp": [
+        "9.1.2"
+      ],
+      "sk": "9.1",
+      "objective": "Murid menunjukkan cara meminta bantuan yang jelas apabila berlaku kemalangan atau kecederaan di rumah, sekolah dan tempat awam.",
+      "materials": "Kad lokasi, kad peranan dan senarai maklumat asas untuk meminta bantuan.",
+      "induction": "Guru membacakan situasi kecederaan rekaan dan bertanya siapa patut dihubungi terlebih dahulu.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1 – Pilih orang yang membantu",
+          "body": "Murid memilih orang dewasa atau pihak bantuan yang sesuai untuk tiga lokasi dan mengenal pasti maklumat penting seperti tempat kejadian dan jenis bantuan diperlukan."
+        },
+        {
+          "heading": "Aktiviti 2 – Simulasi panggilan bantuan",
+          "body": "Pasangan murid melakonkan permintaan bantuan secara tenang dan jelas menggunakan kad peranan; guru mengingatkan murid tidak mengalih mangsa atau mencuba rawatan yang belum dipelajari."
+        }
+      ],
+      "reinforcement": "Murid melengkapkan skrip ringkas meminta bantuan berdasarkan satu kad situasi baharu.",
+      "closure": "Rumusan: utamakan keselamatan diri, dapatkan bantuan orang dewasa dan berikan maklumat tepat.",
+      "assessment": "Rubrik simulasi dan skrip individu."
+    }
+  ]
+}
