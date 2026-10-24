@@ -376,22 +376,22 @@
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "topic": "Bersama Mencegah",
-      "objective": "Murid mencadangkan langkah pencegahan risiko dalam situasi keluarga dan komuniti yang diberi.",
+      "objective": "Murid menerangkan penyakit tangan, kaki dan mulut serta konjunktivitis dan mengenal pasti cara mencegah penularannya.",
       "materials": "Kad situasi, carta risiko–tindakan–bantuan.",
       "induction": "Guru memaparkan senario rekaan yang memerlukan ahli keluarga bekerjasama menjaga keselamatan.",
       "activities": [
         {
           "heading": "Aktiviti 1",
-          "body": "Murid mengenal pasti risiko dalam kad situasi dan memilih langkah pencegahan yang sesuai, tanpa mencuba tindakan berbahaya."
+          "body": "Guru menunjukkan kad situasi penyakit tangan, kaki dan mulut serta konjunktivitis. Murid mengenal pasti penyakit berdasarkan maklumat yang diberi tanpa membuat diagnosis terhadap rakan."
         },
         {
           "heading": "Aktiviti 2",
-          "body": "Kumpulan membina carta tindakan bersama dan memilih orang dewasa/pihak yang wajar diminta bantuan apabila perlu."
+          "body": "Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan, kemudian menghasilkan carta pencegahan berdasarkan kedua-dua penyakit."
         }
       ],
-      "reinforcement": "Murid memberi satu tindakan pencegahan bagi situasi baharu dan alasannya.",
+      "reinforcement": "Murid memadankan setiap penyakit dengan langkah pencegahan dan memberikan alasan.",
       "closure": "Rumusan tentang pencegahan dan bantuan awal.",
-      "assessment": "Carta kumpulan dan respons individu.",
+      "assessment": "Senarai semak penerangan kedua-dua penyakit dan pemilihan langkah kebersihan yang sesuai.",
       "sk": null,
       "sp": [],
       "source_mapping": "PJPK_Source_Gate_161_20261023.csv",
