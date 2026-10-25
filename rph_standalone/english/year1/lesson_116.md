@@ -18,6 +18,7 @@ Review key Pet Show words and one favourite activity from the unit.
 **Teacher:** Check each pupil's written response for task completion and one accurate use of modelled unit language.
 
 ## Closure
-Pupils share one thing they can now say/read/write about pets.
+**Teacher:** Ask pupils to recall one pet-related word, phrase or sentence from the lesson.
+**Pupils:** Share one word, phrase or sentence they can now say, read or write about pets.
 
 **Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.
