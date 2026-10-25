@@ -9,7 +9,9 @@
 **Audio:** No audio required in the current verified mapping.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the SB p53 reading page and ask pupils to predict one detail from the pictures.
+**Pupils:** Look at the page and predict one food word or detail they expect to read.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Read SB p53 for the main idea, reread for specific information, complete the page task and compare answers with a partner.
