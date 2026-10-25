@@ -46424,3 +46424,39 @@ def callback(cid, d):
         return send(cid, f'📅 <b>RPT 2027 — Tahun {year}</b>\n\nRPT sedang dibangunkan dan disemak. Tiada fail yang disahkan untuk muat turun melalui bot pada masa ini.', [[{'text': '⬅️ Pilih Tahun', 'callback_data': 'rpt2027_home'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
     return _RPT2027_PREVIOUS_CALLBACK(cid, d)
 # === END RPT 2027 MENU ===
+
+
+# === ENGLISH RPH TEACHER-FACING OUTPUT QUALITY GUARD ===
+_EN_RPH_PREVIOUS_ROWS_20261025 = _rph_rows
+def _en_rph_clean_teacher_text_20261025(value):
+    import re
+    if not isinstance(value, str):
+        return value
+    text = value
+    text = re.sub(r'\bguide pupils to guide pupils\b', 'guide pupils', text, flags=re.I)
+    text = re.sub(r'\bby add an\b', 'by adding an', text, flags=re.I)
+    text = re.sub(r'\bBOT_READY marks an exact verified audio reference;\s*otherwise do not invent a track number\b',
+                  'the lesson plan provides a confirmed audio reference', text, flags=re.I)
+    text = re.sub(r'\bBOT_READY\b', 'the verified lesson reference', text, flags=re.I)
+    text = re.sub(r'\bSOW-aligned task\b', 'lesson task', text, flags=re.I)
+    text = re.sub(r'\bverified SB p(\d+) activity\b', r'Student’s Book page \1 activity', text, flags=re.I)
+    text = re.sub(r'\bonly where the BOT_READY mapping supplies a verified Workbook page\b',
+                  'on the page listed in the teaching materials', text, flags=re.I)
+    text = re.sub(r'\bverified Teacher’s Book task\b', 'Teacher’s Book task', text, flags=re.I)
+    text = re.sub(r'\bverified audio\b', 'audio recording', text, flags=re.I)
+    text = re.sub(r'\bverified vocabulary\b', 'lesson vocabulary', text, flags=re.I)
+    text = re.sub(r'\bverified Workbook page\b', 'Workbook page', text, flags=re.I)
+    text = re.sub(r'\bverified\b', '', text, flags=re.I)
+    text = re.sub(r'[ \t]{2,}', ' ', text)
+    return text
+
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_RPH_PREVIOUS_ROWS_20261025(st, *args, **kwargs)
+    if not isinstance(rows, dict) or not _is_english_subject(st or {}):
+        return rows
+    for key, value in list(rows.items()):
+        if isinstance(value, str):
+            rows[key] = _en_rph_clean_teacher_text_20261025(value)
+    return rows
+CIKGULAJU_ENGLISH_RPH_TEACHER_TEXT_GUARD = '20261025'
+# === END ENGLISH RPH QUALITY GUARD ===
