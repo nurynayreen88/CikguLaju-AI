@@ -5,6 +5,7 @@
 **Main SK/SP:** 2.1 / 2.1.3  
 **Complementary SK/SP:** 1.2 / 1.2.2  
 **Objective:** Consolidate Unit 3 language through the textbook follow-up task.  
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can give one short oral response to SB p37 and point to a picture or text clue supporting it.
 **Student's Book:** 37
 
 ## Activity 1 — Textbook sequence
@@ -12,6 +13,7 @@
 **Pupils:** Examine the pictures and text on SB p37, complete the textbook task, compare answers with a partner and use the same language in short oral responses.
 
 ## Assessment / PBD
+**Observable evidence (teacher-developed):** Ask each pupil for one response and check the supporting visual or text clue.
 **Teacher:** Require pupils to point to visual/text evidence when checking answers.
 **Pupils:** Give responses and explain or correct them during checking.
 
