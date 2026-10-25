@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Study the model on SB p56, identify useful words and sentence structure, complete the guided stage and write a short individual response.
 Study the SB p56 model, identify useful words/structure, complete the guided stage and then produce a short individual response.
 
 ## Assessment
