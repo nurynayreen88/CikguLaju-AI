@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Review the four Super Friends, play the story, pause to identify characters and the cat, then replay frame by frame for pupils to listen and repeat.
-**Pupils:** Identify the four Super Friends and the cat in the pictures; listen to each story frame, point to the speaker and repeat the dialogue.
+**Pupils:** Identify the four Super Friends and the cat; listen to each story frame, point to the speaker and repeat the dialogue.
 
 ### Activity 2 — Workbook
 **Teacher:** Use WB p8 to review story phrases and match each Super Friend to the correct power.
