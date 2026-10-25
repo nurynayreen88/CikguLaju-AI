@@ -46460,3 +46460,47 @@ def _rph_rows(st, *args, **kwargs):
     return rows
 CIKGULAJU_ENGLISH_RPH_TEACHER_TEXT_GUARD = '20261025'
 # === END ENGLISH RPH QUALITY GUARD ===
+
+
+# === ENGLISH RPH: CLEAR TEACHER/PUPIL PROCEDURES AND SOURCE HONESTY ===
+_EN_RPH_PREVIOUS_ROWS_CLARITY_20261025 = _rph_rows
+def _en_rph_clarity_20261025(value):
+    import re
+    if not isinstance(value, str):
+        return value
+    value = re.sub(
+        r'Teacher uses the Student[’\x27]s Book to guide pupils (?:to )?through the (?:Student[’\x27]s Book page (\d+) activity|SB p(\d+) activity) in stages: establish the context, model the expected response, allow supported practice, then complete the lesson task\.',
+        lambda m: 'Teacher introduces the task on Student’s Book page '+(m.group(1) or m.group(2))+'. Teacher models one response; pupils practise with support before attempting the page task.',
+        value, flags=re.I)
+    value = re.sub(
+        r'Teacher uses the Student[’\x27]s Book to guide pupils (?:to )?through the (?:verified )?SB p(\d+) activity in stages: establish the context, model the expected response, allow supported practice, then complete the (?:SOW-aligned|lesson) task\.',
+        lambda m: 'Teacher introduces the task on Student’s Book page '+m.group(1)+'. Teacher models one response; pupils practise with support before attempting the page task.',
+        value, flags=re.I)
+    value = re.sub(
+        r'Teacher uses the audio recording while pupils use audio only when the lesson plan provides a confirmed audio reference; otherwise do not invent a track number\.',
+        'Teacher plays the audio track listed in the teaching materials and asks pupils to respond to the textbook task.',
+        value, flags=re.I)
+    value = re.sub(
+        r'Pupils complete the Workbook practice while the teacher guides them to use the linked Workbook task only where the (?:verified lesson reference|BOT_READY) mapping supplies a Workbook page\.',
+        'Teacher directs pupils to the Workbook page listed in the teaching materials. Pupils complete the corresponding exercise; teacher checks their responses.',
+        value, flags=re.I)
+    value = re.sub(
+        r'Pupils extend the Teacher[’\x27]s Book task by adding an age-appropriate pair/game variation using only the lesson[’\x27]s lesson vocabulary and target language\.',
+        'Pupils practise the target words and language in pairs. Teacher checks their use of the lesson vocabulary.',
+        value, flags=re.I)
+    value = re.sub(
+        r'Teacher ends the lesson by asking pupils to end with a short retrieval or pupil demonstration linked to the lesson objective\.',
+        'Teacher asks pupils to demonstrate one response related to the lesson objective and summarises the learning.',
+        value, flags=re.I)
+    return value
+
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_RPH_PREVIOUS_ROWS_CLARITY_20261025(st, *args, **kwargs)
+    if not isinstance(rows, dict) or not _is_english_subject(st or {}):
+        return rows
+    for key, value in list(rows.items()):
+        if isinstance(value, str):
+            rows[key] = _en_rph_clarity_20261025(value)
+    return rows
+CIKGULAJU_ENGLISH_RPH_CLARITY_PATCH = '20261025'
+# === END ENGLISH RPH CLARITY ===
