@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.1  
 **Complementary SK / SP:** 2.1 / 2.1.5  
 **Learning objective:** Present and practise classroom objects and perform the unit chant.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify and name at least three classroom objects on SB p10.
 **Teaching materials:** Student's Book pp. 10, Workbook activity; Teacher's Book pp. 10  
 **Audio guidance:** SB p10 uses CD1 Tracks 12 and 13.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will point to three objects in mixed order and record correct responses.
 **Teacher:** Use pair pointing/naming practice, then check workbook matching and colours together.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
