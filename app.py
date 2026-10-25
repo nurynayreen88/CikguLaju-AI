@@ -40043,6 +40043,7 @@ def menu(cid,show_persistent=False):
     kb=[
         [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
+        [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
         [{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'}],
     ]
@@ -40051,6 +40052,7 @@ def menu(cid,show_persistent=False):
         '🚀 <b>CIKGULAJU AI</b>\n<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
         '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
+        '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
         '🏆 <b>JADI PIONEER — RM20 SEKALI SAHAJA</b>\nAkses sepanjang CikguLaju AI beroperasi. Tiada bayaran bulanan atau tahunan.\n\n'
         '🎁 <b>5 JANAAN RPH PERCUMA</b>'
@@ -46405,3 +46407,20 @@ except Exception as _pioneer_install_exc:
     CIKGULAJU_PIONEER_INSTALLED = False
     CIKGULAJU_PIONEER_INSTALL_ERROR = repr(_pioneer_install_exc)
 # === END PIONEER INTEGRATION ===
+
+
+# === RPT 2027 MAIN MENU: draft-safe navigation ===
+_RPT2027_PREVIOUS_CALLBACK = callback
+def callback(cid, d):
+    ds = str(d or '')
+    if ds == 'rpt2027_home':
+        kb = [[{'text': f'Tahun {n}', 'callback_data': f'rpt2027_year_{n}'}] for n in range(1, 7)]
+        kb.append([{'text': '🏠 Menu Utama', 'callback_data': 'home'}])
+        return send(cid, '📅 <b>RPT 2027</b>\n\nPilih tahun untuk melihat status penyediaan RPT. Fail hanya akan dibuka untuk muat turun setelah disahkan.', kb)
+    if ds.startswith('rpt2027_year_'):
+        year = ds[len('rpt2027_year_'):]
+        if year not in ('1', '2', '3', '4', '5', '6'):
+            return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+        return send(cid, f'📅 <b>RPT 2027 — Tahun {year}</b>\n\nRPT sedang dibangunkan dan disemak. Tiada fail yang disahkan untuk muat turun melalui bot pada masa ini.', [[{'text': '⬅️ Pilih Tahun', 'callback_data': 'rpt2027_home'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
+    return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+# === END RPT 2027 MENU ===
