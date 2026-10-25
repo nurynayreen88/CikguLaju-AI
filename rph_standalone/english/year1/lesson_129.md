@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Direct pupils to the SB p51 follow-up; model locating a story or language clue, allow individual responses and check answers with partners.
 **Pupils (editorial, source-aligned):** Reread the relevant story section on SB p51, complete the follow-up task and compare answers with a partner.
-Return to SB p51 for the verified textbook follow-up; reread relevant story language and complete the page task before pair checking.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Check the reading follow-up response and ask pupils to locate one supporting clue.
