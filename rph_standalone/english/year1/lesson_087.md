@@ -9,7 +9,7 @@
 
 ## Activity 1 — Textbook sequence
 **Teacher:** Use SB p36 as the speaking stimulus; model the textbook pattern, rehearse with the class, then conduct structured pair practice.
-**Pupils:** Follow the activities on SB p36 as the speaking stimulus; model the textbook pattern, rehearse with the class, then conduct structured pair practice.
+**Pupils:** Look at SB p36, listen to the modelled pet-language exchange, rehearse the response as a class and take turns speaking with a partner.
 
 ## Assessment / PBD
 **Teacher:** Monitor whether pupils use the target form and pet word accurately.
