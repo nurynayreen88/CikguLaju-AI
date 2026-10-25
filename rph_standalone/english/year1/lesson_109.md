@@ -9,7 +9,9 @@
 **Audio:** No verified track recorded
 
 ## Set Induction
-Pre-listening review of the relevant pet vocabulary and pictures.
+**Teacher:** Point to the SB p44 pictures and review two familiar pet words before listening.
+**Pupils:** Name or point to two familiar pets in the listening-task pictures.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1 — Student's Book
 **Teacher:** Preview the SB p44 listening task, present the relevant listening material for overall meaning and specific details, then check responses.
