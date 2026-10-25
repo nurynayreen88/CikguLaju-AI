@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Use the SB p54 model to practise the target food-language exchange, taking turns in pairs or groups.
 Use SB p54 to establish the speaking context, model the target language and run structured pair/group exchanges.
 
 ## Assessment
