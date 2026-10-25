@@ -22,7 +22,9 @@ Preview SB p48 pictures/food words, listen first for overall meaning and again f
 Pairs compare before replay and whole-class checking.
 
 ## Closure (teacher-developed proposal; pending review)
-Teacher points to food pictures; pupils identify words heard during the lesson.
+**Teacher:** Point to two SB p48 food pictures and ask which words were heard in the task.
+**Pupils:** Identify two food words heard and point to the matching pictures.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
