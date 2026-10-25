@@ -172,6 +172,7 @@ def install(g):
         value = str(data or "")
         if value in ("sub_Pendidikan Jasmani", "sub_Pendidikan Kesihatan"):
             state["subject"] = value[4:]
+            state["_pjpk_v2616_selection_scope"] = (state.get("year"), state["subject"])
             state["task"] = "quick_material"
             state["quick_material_flow"] = True
             state["assessment_mode"] = "formative"
@@ -182,11 +183,15 @@ def install(g):
                 state.pop(key, None)
             return menu(cid)
         if value.startswith("pjpk2616page|") and state.get("subject") in (s for _, s in subjects):
+            if state.get("_pjpk_v2616_selection_scope") != (state.get("year"), state.get("subject")):
+                return menu(cid)
             try:
                 return menu(cid, int(value.split("|", 1)[1]))
             except (ValueError, OverflowError):
                 return menu(cid)
         if value.startswith("pjpk2616pdp|") and state.get("subject") in (s for _, s in subjects):
+            if state.get("_pjpk_v2616_selection_scope") != (state.get("year"), state.get("subject")):
+                return menu(cid)
             rows = rows_for(state.get("year"), state.get("subject"))
             try:
                 index = int(value.split("|", 1)[1])
