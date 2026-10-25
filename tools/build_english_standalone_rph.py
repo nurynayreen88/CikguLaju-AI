@@ -11,6 +11,17 @@ SOURCE = ROOT / "data" / "english_y1y2_sow_master_320.json"
 GUIDES = sorted((ROOT / "data").glob("teacher_book_guidance_y1_batch*.json"))
 ACCEPTED = {"VERIFIED_TB_SCAN", "SOURCE_ALIGNED_GUIDANCE", "VERIFIED_MAPPING_GUIDANCE"}
 
+def activity_quality(guide):
+    """Report missing components without fabricating Teacher's Book instructions."""
+    required = ("warm_up", "student_book_procedure", "checking_feedback", "ending_lesson")
+    missing = [field for field in required if not guide.get(field)]
+    vague = [field for field in ("student_book_procedure", "workbook_procedure")
+             if any(s in guide.get(field, "").lower() for s in
+                    ("verified wb activity linked", "textbook reading/task", "work through sb"))]
+    return {"missing_phases": missing, "needs_specificity_review": vague,
+            "ready_for_teacher_review": not missing and not vague
+            and guide.get("verification_status") == "VERIFIED_TB_SCAN"}
+
 def build():
     sow = json.loads(SOURCE.read_text(encoding="utf-8"))
     lessons = {(year, int(row[0])): row for year, rows in sow.items() for row in rows}
@@ -48,6 +59,7 @@ def build():
                 "student_book_pages": guide.get("sb_pages", []),
                 "teacher_book_pages": guide.get("tb_pages", []),
                 "audio": guide.get("audio_procedure", ""),
+                "activity_quality": activity_quality(guide),
                 "source": guide["verification_status"],
                 "requires_teacher_book_confirmation": guide["verification_status"] != "VERIFIED_TB_SCAN",
                 "status": "DRAFT_PENDING_ACTIVITY_AND_A4_QA"
