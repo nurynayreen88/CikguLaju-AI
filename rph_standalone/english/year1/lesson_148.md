@@ -22,7 +22,9 @@ Read SB p57 for overall meaning, reread for task-specific information and comple
 Ask pupils to support responses using evidence from the page.
 
 ## Closure
-Review key Lunchtime vocabulary and one useful sentence pattern from the unit.
+**Teacher:** Ask pupils to find one food word and one useful language pattern on SB p57.
+**Pupils:** Locate one food word and read or repeat one useful pattern from the page.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
