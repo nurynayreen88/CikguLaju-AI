@@ -1,0 +1,23 @@
+# English Year 1 — Lesson 148: Reading 30
+
+**Unit:** Lunchtime
+**Main SK/SP:** 3.2 / 3.2.4
+**Complementary SK/SP:** 2.1 / 2.1.1
+**Learning aim:** Develop reading and consolidate the final textbook-linked Unit 4 content.
+**Student's Book:** 57
+**Audio:** No audio required in the current verified mapping.
+
+## Set Induction (teacher-developed proposal; pending review)
+Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+
+## Activity 1
+Read SB p57 for overall meaning, reread for task-specific information and complete the textbook activity with pair comparison.
+
+## Assessment
+Ask pupils to support responses using evidence from the page.
+
+## Closure
+Review key Lunchtime vocabulary and one useful sentence pattern from the unit.
+
+**Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
+**Review status:** Draft; pedagogical and A4 checks pending.
