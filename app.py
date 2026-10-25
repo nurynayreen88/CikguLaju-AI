@@ -16352,6 +16352,8 @@ def webhook():
             if waiting_payment or pending_req:
                 try:
                     req_id=(pending_req or {}).get('id') or _new_payment_request(cid,m.get('message_id'),5.00)
+                    payment_amount=float((pending_req or {}).get('amount',5.00))
+                    payment_package='PIONEER KEKAL' if payment_amount==20.0 else 'AKSES 30 HARI'
                     state.setdefault(cid,{}).pop('waiting',None)
 
                     user=m.get('from',{}) or {}
@@ -16367,8 +16369,8 @@ def webhook():
                             f'🧾 Payment ID: <b>{req_id}</b>\n'
                             f'👤 User ID: <code>{cid}</code>\n'
                             f'👩‍🏫 Nama: <b>{html.escape(name)}</b>\n'
-                            f'📦 Pakej: <b>AKSES 30 HARI</b>\n'
-                            '💰 Jumlah: <b>RM5.00</b>\n\n'
+                            f'📦 Pakej: <b>{payment_package}</b>\n'
+                            f'💰 Jumlah: <b>RM{payment_amount:.2f}</b>\n\n'
                             '⚠️ Semak resit sebelum Approve.'
                         )
                         admin_kb={
@@ -16445,8 +16447,8 @@ def webhook():
                             cid,
                             '✅ <b>BUKTI BAYARAN DITERIMA</b>\n\n'
                             f'🧾 Payment ID: <b>{req_id}</b>\n'
-                            '📦 Pakej: <b>AKSES 30 HARI</b>\n'
-                            '💰 Jumlah: <b>RM5.00</b>\n\n'
+                            f'📦 Pakej: <b>{payment_package}</b>\n'
+                            f'💰 Jumlah: <b>RM{payment_amount:.2f}</b>\n\n'
                             '⌛ <b>STATUS:</b>\n'
                             'Bukti telah dihantar terus kepada admin.\n'
                             'Menunggu pengesahan admin.\n\n'
@@ -46393,3 +46395,13 @@ except Exception as _kp2027_selector_exc:
     CIKGULAJU_KP2027_SELECTOR_INSTALLED = False
     CIKGULAJU_KP2027_SELECTOR_ERROR = repr(_kp2027_selector_exc)
 # === END KP2027 SELECTOR ===
+
+
+# === PIONEER LIFETIME OPT-IN TELEGRAM INTEGRATION ===
+try:
+    from pioneer_telegram import install as _install_pioneer_telegram
+    CIKGULAJU_PIONEER_INSTALLED = bool(_install_pioneer_telegram(globals()))
+except Exception as _pioneer_install_exc:
+    CIKGULAJU_PIONEER_INSTALLED = False
+    CIKGULAJU_PIONEER_INSTALL_ERROR = repr(_pioneer_install_exc)
+# === END PIONEER INTEGRATION ===

@@ -1,0 +1,47 @@
+import unittest
+from pioneer_supabase import has_pioneer, grant_pioneer, effective_access
+
+class PioneerSupabaseTests(unittest.TestCase):
+    def test_existing_subscription_unchanged(self):
+        def request(method, path, **kwargs): return []
+        original = {"active": False, "days_left": 0}
+        self.assertIs(effective_access(request, 42, original), original)
+
+    def test_lifetime_access(self):
+        def request(method, path, **kwargs): return [{"entitlement": "PIONEER_LIFETIME"}]
+        access = effective_access(request, 42, {"active": False, "access_until": "2020-01-01"})
+        self.assertTrue(access["active"])
+        self.assertEqual(access["status"], "pioneer")
+        self.assertIsNone(access["access_until"])
+
+    def test_admin_verification_required(self):
+        with self.assertRaises(ValueError):
+            grant_pioneer(lambda *a, **k: None, 42, "receipt-1", 7, False)
+
+    def test_approved_grant(self):
+        calls = []
+        def request(method, path, **kwargs):
+            calls.append((method, path, kwargs))
+            return [] if method == "GET" else [{"entitlement": "PIONEER_LIFETIME"}]
+        grant_pioneer(request, 42, "receipt-1", 7, True)
+        self.assertEqual(calls[-1][2]["json"]["approved_by"], 7)
+
+    def test_pioneer_subscription_copy(self):
+        original = {"active": False, "plan_code": "MONTHLY"}
+        def request(method, path, **kwargs):
+            return [{"entitlement": "PIONEER_LIFETIME"}]
+        result = effective_access(request, 42, original)
+        self.assertEqual(original["plan_code"], "MONTHLY")
+        self.assertEqual(result["plan_code"], "PIONEER_LIFETIME")
+
+    def test_existing_pioneer_cannot_be_granted_again(self):
+        calls = []
+        def request(method, path, **kwargs):
+            calls.append(method)
+            return [{"entitlement": "PIONEER_LIFETIME"}]
+        with self.assertRaises(ValueError):
+            grant_pioneer(request, 42, "different-reference", 7, True)
+        self.assertEqual(calls, ["GET"])
+
+if __name__ == "__main__":
+    unittest.main()
