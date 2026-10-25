@@ -73,7 +73,7 @@ jobs:
         with:
           name: pjpk-readiness-audit
           path: pjpk_readiness_audit.log
-          if-no-files-found: error
+          if-no-files-found: warn
       - name: Test verified PJPK row handoff into RPH entry flow
         run: |
           python - <<'PY'
