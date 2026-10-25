@@ -15,5 +15,9 @@
 **Teacher:** Use pair checking for target vocabulary and the modelled language pattern before class feedback.
 **Pupils:** Give responses and explain or correct them during checking.
 
+## Closure — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Invite a brief independent consolidation response and check pupils' understanding.
+**Pupils:** Pupils read their short written response to a partner and check that it follows the model on SB p40.
+
 **Provenance:** SOURCE_ALIGNED_GUIDANCE; teacher review required.  
 **QA:** Draft; verify pedagogy, pupil-action wording and one-page A4 layout. No unverified audio or workbook reference added.
