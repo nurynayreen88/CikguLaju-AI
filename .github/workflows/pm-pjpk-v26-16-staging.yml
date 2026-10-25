@@ -99,7 +99,7 @@ jobs:
           g['callback'](1, 'sub_Pendidikan Jasmani')
           g['callback'](1, 'home')
           assert '_pjpk_v2616_selection_scope' not in state[1], 'Exit did not clear selection scope'
-          g['callback'](1, 'pjpk2616pdp|0')
+          g['callback'](1, pdp_buttons[0])
           assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Exited menu still allowed RPH'
           g['callback'](1, 'sub_Pendidikan Jasmani')
           g['callback'](1, 'pjpk2616pdp|0')
