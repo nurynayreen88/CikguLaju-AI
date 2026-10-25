@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Study the SB p56 model, identify useful words/structure, complete the guided stage and then produce a short individual response.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check one individual written response for task completion and use of the page model.
 Pairs check vocabulary and structure against the page model before final class feedback.
 
 ## Closure (teacher-developed proposal; pending review)
