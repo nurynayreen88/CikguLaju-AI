@@ -8,7 +8,9 @@
 **Student's Book:** 45
 
 ## Set Induction
-Review key Pet Show words and one favourite activity from the unit.
+**Teacher:** Show a familiar Pet Show picture and ask pupils to recall one word needed for the writing task.
+**Pupils:** Say one relevant pet word and locate it in the SB p45 model where available.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1 — Student's Book
 **Teacher:** Show the SB p45 model, guide the final Unit 3 task and support pupils in producing individual written responses.
