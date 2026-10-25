@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Model how to read SB p53 for overall meaning, then guide pupils to reread for a supporting detail and compare responses.
 **Pupils (editorial, source-aligned):** Read SB p53 for the main idea, reread for specific information, complete the page task and compare answers with a partner.
-Read SB p53 first for gist and then for the specific information required by the textbook task; compare answers with a partner.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Check one reading response and ask pupils to point to a supporting clue.
