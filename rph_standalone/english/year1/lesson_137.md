@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Read SB p53 first for gist and then for the specific information required by the textbook task; compare answers with a partner.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check one reading response and ask pupils to point to a supporting clue.
 Pupils point to the word, phrase or picture evidence supporting each answer.
 
 ## Closure (teacher-developed proposal; pending review)
