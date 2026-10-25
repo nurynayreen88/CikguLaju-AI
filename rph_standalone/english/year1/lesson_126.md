@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Use SB p49 to model the target exchange, practise chorally, then move to repeated pair speaking with different food items.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Observe two paired speaking turns for each pupil and note intelligible food vocabulary.
 Monitor target language and intelligible pronunciation; invite selected pairs to demonstrate.
 
 ## Closure (teacher-developed proposal; pending review)
