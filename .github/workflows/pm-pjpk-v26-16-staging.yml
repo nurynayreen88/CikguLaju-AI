@@ -52,13 +52,6 @@ jobs:
           if total_eligible == 0:
               print('BLOCKED: no PJPK row is eligible for RPH; source verification required')
           PY
-      - name: Upload PJPK readiness audit artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pjpk-readiness-audit
-          path: pjpk_readiness_audit.log
-          if-no-files-found: ignore
       - name: Check adapter isolates incomplete years
         run: |
           python - <<'PY'
@@ -74,6 +67,13 @@ jobs:
           assert not ready_pdp('Tahun 1', 'Pendidikan Moral')
           print('PASS: 33 safe PJ T1 rows; unfinished PJPK rows hidden')
           PY
+      - name: Upload PJPK readiness audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pjpk-readiness-audit
+          path: pjpk_readiness_audit.log
+          if-no-files-found: error
       - name: Test verified PJPK row handoff into RPH entry flow
         run: |
           python - <<'PY'
