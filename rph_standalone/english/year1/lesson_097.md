@@ -8,6 +8,10 @@
 **Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify the order of at least two story events and identify a speaker or action in SB pp38–39.
 **Student's Book:** 38, 39
 
+## Set Induction — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Show the first story frame from SB pp38–39 and invite predictions about the characters.
+**Pupils:** Look at the first frame, name a character or pet and make a simple prediction.
+
 ## Activity 1 — Textbook sequence
 **Teacher:** Work through the SB pp38-39 story: listen/read, pause at key frames for comprehension, establish event order and replay/reread for repetition and role practice.
 **Pupils:** Look at the story frames on SB pp38–39, listen or read, identify the order of events, answer questions about characters and rehearse selected story roles.
