@@ -19,6 +19,7 @@ Use picture prompts to reactivate the language needed for the task.
 **Teacher:** Teacher listens to paired exchanges and records whether each pupil takes two turns and uses the target pet vocabulary intelligibly.
 
 ## Closure (teacher-developed proposal, pending review)
-Pairs repeat a short pet dialogue with roles reversed.
+**Teacher:** Prompt a final pet dialogue and ask partners to reverse roles.
+**Pupils:** Perform one short dialogue, swap roles and repeat it.
 
 **Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.
