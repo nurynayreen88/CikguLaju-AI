@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Read SB p53 for the main idea, reread for specific information, complete the page task and compare answers with a partner.
 Read SB p53 first for gist and then for the specific information required by the textbook task; compare answers with a partner.
 
 ## Assessment
