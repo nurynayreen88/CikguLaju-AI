@@ -14,7 +14,7 @@ FILES = (
     ROOT / "docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json",
 )
 SECTIONS = ("objective", "materials", "induction", "reinforcement", "closure", "assessment")
-FLAGS = ("production_ready", "sk_text_verified", "textbook_verified",
+FLAGS = ("production_ready", "textbook_verified",
          "rpt_exact_slot_verified", "rph_runtime_verified", "a4_review_verified")
 
 
@@ -54,8 +54,12 @@ def audit(source_gate):
             errors.append(f"{ident}: unapproved release flag")
         if src and src["production_ready"] != "0":
             errors.append(f"{ident}: source gate unexpectedly ready")
-        if record.get("sp") and not record.get("sp_text_verified") is False:
-            errors.append(f"{ident}: SP not clearly marked pending verification")
+        if not record.get("sk") or not record.get("sp"):
+            errors.append(f"{ident}: missing DSKP SK/SP mapping")
+        if record.get("sk_text_verified") is not True or record.get("sp_text_verified") is not True:
+            errors.append(f"{ident}: DSKP SK/SP verification incomplete")
+        if record.get("sk") and any(not sp.startswith(str(record["sk"]) + ".") for sp in record.get("sp", [])):
+            errors.append(f"{ident}: SP does not belong to declared SK")
     return records, expected, errors
 
 
