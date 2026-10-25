@@ -26,5 +26,13 @@ class PioneerSupabaseTests(unittest.TestCase):
         grant_pioneer(request, 42, "receipt-1", 7, True)
         self.assertEqual(calls[-1][2]["json"]["approved_by"], 7)
 
+    def test_pioneer_subscription_copy(self):
+        original = {"active": False, "plan_code": "MONTHLY"}
+        def request(method, path, **kwargs):
+            return [{"entitlement": "PIONEER_LIFETIME"}]
+        result = effective_access(request, 42, original)
+        self.assertEqual(original["plan_code"], "MONTHLY")
+        self.assertEqual(result["plan_code"], "PIONEER_LIFETIME")
+
 if __name__ == "__main__":
     unittest.main()
