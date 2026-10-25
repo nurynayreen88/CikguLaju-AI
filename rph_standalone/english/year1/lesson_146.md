@@ -9,7 +9,9 @@
 **Audio:** No audio required in the current verified mapping.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Revisit the SB p55 speaking stimulus and ask pupils to recall a familiar exchange.
+**Pupils:** Recall one food-language question or answer and rehearse it with a partner.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Look at SB p55, follow one model speaking exchange and take repeated turns using the target language with a partner.
