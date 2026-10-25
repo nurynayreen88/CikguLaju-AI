@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Look at the pictures on SB pp50–51 and predict events; listen or read, identify the story order and practise lines in assigned roles.
 Preview SB pp50-51, predict from pictures, listen/read the story, pause for comprehension and sequence, then replay/reread for role practice.
 
 ## Activity 2
