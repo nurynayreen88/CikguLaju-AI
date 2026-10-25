@@ -22,7 +22,9 @@ Use SB p55 as the stimulus for guided speaking; model one example, rehearse as a
 Invite pairs to demonstrate and correct only language that affects the target objective.
 
 ## Closure (teacher-developed proposal; pending review)
-Two pairs share their food-related dialogue; classmates listen for a target word.
+**Teacher:** Invite two pairs to demonstrate an SB p55 exchange and ask listeners to identify one food word.
+**Pupils:** Perform the dialogue or listen and identify one target food word.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
