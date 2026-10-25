@@ -3,12 +3,12 @@
   "source_files": [
     {
       "path": "docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json",
-      "blob_sha": "5b0c2846c3e7bb3a6e7632aac7905dbf484c17e5",
+      "blob_sha": "e63ffab1d64ab50e8914088352fb7418626183bf",
       "count": 11
     },
     {
       "path": "docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json",
-      "blob_sha": "c4bf5fb26028b0e0417b2bc873cf0cd62fa8c3fb",
+      "blob_sha": "a579d44ca120a31a7371070c632b44b4448303f5",
       "count": 7
     }
   ],
@@ -20,8 +20,9 @@
     "invalid_fail_closed_flags": 0
   },
   "sp_status": {
-    "eleven_candidate_only_empty_sp": true,
+    "eleven_candidate_only_empty_sp": false,
     "seven_with_editorial_sp": true,
+    "all_eighteen_dskp_sk_sp_verified": true,
     "unresolved_duplicate_groups": [
       [
         2232,
