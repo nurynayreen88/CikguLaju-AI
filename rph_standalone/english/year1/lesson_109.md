@@ -11,8 +11,8 @@
 Pre-listening review of the relevant pet vocabulary and pictures.
 
 ## Activity 1 — Student's Book
-**Pupils (editorial, source-aligned):** Study the SB p44 listening task, listen for the main idea and again for specific details, then compare responses.
-Study the SB p44 task before listening, listen once for the overall answer, then again for specific information; compare before whole-class checking.
+**Teacher:** Preview the SB p44 listening task, present the relevant listening material for overall meaning and specific details, then check responses.
+**Pupils:** Study the SB p44 listening task, listen for the main idea and again for specific details, then compare responses.
 
 ## Assessment / PBD
 Replay only where needed and ask pupils what clue they heard.
