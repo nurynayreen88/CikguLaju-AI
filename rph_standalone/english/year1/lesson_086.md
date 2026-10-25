@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.2  
 **Complementary SK / SP:** 2.1 / 2.1.5  
 **Learning aim (source):** Practise pet vocabulary and unit language through the textbook activity.  
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can take two turns using the modelled pet-language response on SB p35.
 **Student's Book pages:** 35  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
 ### Assessment / PBD
+**Observable evidence (teacher-developed):** Listen to paired practice and check that each pupil responds twice with recognisable pet vocabulary.
 **Teacher / task guidance:** Ask pairs to demonstrate one exchange and correct vocabulary/pronunciation as needed.
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
