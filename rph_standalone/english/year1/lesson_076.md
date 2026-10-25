@@ -11,6 +11,7 @@
 
 ### Set Induction
 **Teacher / task guidance:** Teacher shows a completed tangram picture and asks pupils to identify its component shapes.
+**Pupils (editorial, source-aligned):** Follow the project steps to make a tangram, arrange the pieces into a picture and describe the completed shape to a partner.
 **Provenance:** Teacher-developed proposal; not verified Teacher's Book text
 
 ### Activity 1 — Student's Book
