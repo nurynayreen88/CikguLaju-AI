@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.2  
 **Complementary SK / SP:** 2.1 / 2.1.1  
 **Learning objective:** Practise listening/reading for specific information and present This is my desk / There's a ... .  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify one correct desk-object detail from SB p16 listening and point to its picture clue.
 **Teaching materials:** Student's Book pp. 16, Workbook activity; Teacher's Book pp. 16  
 **Audio guidance:** SB p16 uses CD1 Track 25.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check one listening match and ask pupils to show the supporting desk object.
 **Teacher:** Pairs compare listening matches before class checking; ask pupils to justify choices using visible desk objects.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
