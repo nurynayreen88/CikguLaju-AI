@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Revisit the story, use the follow-up pictures/tasks to check understanding, then practise target phrases orally in pairs.
+**Pupils (editorial, source-aligned):** Look back at the story and use the follow-up pictures to answer questions; practise the target phrases with a partner.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
