@@ -37546,6 +37546,7 @@ def _show_referral_v25267(cid):
                          [{'text':'🏠 Menu Utama','callback_data':'home'}]])
 
 def _register_referral_v25267(new_cid,referrer_cid):
+    return False  # Referral ditamatkan; rekod lama dikekalkan.
     if str(new_cid)==str(referrer_cid): return False
     _ensure_referral_schema_v25267()
     con=_db()
@@ -37572,7 +37573,6 @@ def _register_referral_v25267(new_cid,referrer_cid):
 def menu(cid, show_persistent=False):
     if show_persistent: install_menu_button(cid)
     kb=[[{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
-        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
         [{'text':'📚 GUNA BAHAN CIKGU','callback_data':'material'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'},
          {'text':'💛 SUMBANGAN','callback_data':'donate'}],
@@ -37591,13 +37591,12 @@ def menu(cid, show_persistent=False):
       "🔄 <b>Sentiasa Dikemas Kini</b>\nPemetaan, bahan dan fungsi akan terus ditambah baik.\n\n"
       "⭐ <b>VIP CikguLaju</b>\n"
       "💛 Penyumbang yang layak menerima status VIP kekal.\n"
-      f"👥 Ajak rakan: <b>1 referral berjaya = {REFERRAL_VIP_DAYS_V25267} hari VIP</b>.\n\n"
       "<b>Pilih menu di bawah untuk mula 👇</b>",kb)
 
 _callback_before_v25267=callback
 def callback(cid,d):
     if str(d or '')=='referral_vip':
-        return _show_referral_v25267(cid)
+        return send(cid, 'Program Ajak Rakan telah ditamatkan. Sila gunakan menu utama.')
     return _callback_before_v25267(cid,d)
 
 # Intercept Telegram deep-link starts before the existing webhook parser.
@@ -37612,7 +37611,7 @@ def _webhook_v25267():
         if cid is not None and mt:
             ref=mt.group(1)
             _upsert_user(m.get('from',{}),cid)
-            try: _register_referral_v25267(cid,ref)
+            try: pass  # Referral baharu tidak didaftarkan
             except Exception as e: print('v25.267 referral register error:',repr(e),flush=True)
             state[cid]={}
             menu(cid,show_persistent=True)
@@ -37710,7 +37709,6 @@ def menu(cid,show_persistent=False):
     if show_persistent: install_menu_button(cid)
     supporter_open,_=_early_supporter_open_v25268()
     kb=[[{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
-        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}]]
     if supporter_open:
         kb.append([{'text':'👑 PENYOKONG AWAL • RM50','callback_data':'donate'}])
@@ -37745,7 +37743,6 @@ Pemetaan, bahan dan fungsi akan terus ditambah baik.\
       '⭐ <b>VIP CikguLaju</b>\
 '
       +supporter_note+
-      f'👥 Ajak rakan: <b>1 referral berjaya = {REFERRAL_VIP_DAYS_V25267} hari VIP</b>.\
 \
 '
       '<b>Pilih menu di bawah untuk mula 👇</b>',kb)
@@ -37773,7 +37770,6 @@ def menu(cid,show_persistent=False):
     supporter_open,_=_early_supporter_open_v25268()
     kb=[
         [{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
-        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
     ]
     if supporter_open:
@@ -37798,7 +37794,6 @@ def menu(cid,show_persistent=False):
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
         '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
-        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line +
         '\n<b>Pilih menu di bawah 👇</b>'
     )
@@ -37922,7 +37917,6 @@ def callback(cid,d):
         kb=[
             [{'text':'📅 Jadual Waktu Saya','callback_data':'timetable'}],
             [{'text':'✏️ Kemas Kini Profil','callback_data':'profile_edit'}],
-            [{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
             [{'text':'🏠 Menu Utama','callback_data':'home'}]
         ]
         return send(cid,_account_profile_text_v25271(cid),kb)
@@ -38030,7 +38024,6 @@ def menu(cid,show_persistent=False):
         kb.append([{'text':f'⚡ LENGKAPKAN PROFIL • {score}%','callback_data':'smartprof272'}])
     kb += [
         [{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
-        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
     ]
     if supporter_open:
@@ -38057,7 +38050,6 @@ def menu(cid,show_persistent=False):
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
         '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
-        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line +
         '\n<b>Pilih menu di bawah 👇</b>'
     )
@@ -38097,7 +38089,6 @@ def callback(cid,d):
         else:
             kb.append([{'text':f'⚡ Lengkapkan Profil • {score}%','callback_data':'smartprof272'}])
         kb += [
-            [{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
             [{'text':'🏠 Menu Utama','callback_data':'home'}]
         ]
         txt=_account_profile_text_v25271(cid)
@@ -39292,7 +39283,7 @@ def _credit_gate(cid,s):
         ss['_free_generation_pending_v25282']=True
         return True
     send(cid,'🔒 <b>5 janaan percuma telah digunakan.</b>\n\nCikgu boleh dapatkan akses VIP melalui program referral.',
-         [[{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
+         [
           [{'text':'👤 Profil Saya','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     return False
 
@@ -39446,7 +39437,6 @@ def menu(cid,show_persistent=False):
         [{'text':'📤 UPLOAD JADUAL WAKTU','callback_data':'ttupload281_start'}],
         [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
         [{'text':'📚 SEDIAKAN BAHAN PDP','callback_data':'quick'}],
-        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
     ]
     if supporter_open:
@@ -39473,7 +39463,6 @@ def menu(cid,show_persistent=False):
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
         '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
-        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line
     )
     return send(cid,body,kb)
@@ -39662,7 +39651,6 @@ def menu(cid,show_persistent=False):
     kb += [
         [{'text':'📤 UPLOAD JADUAL WAKTU','callback_data':'ttupload281_start'}],
         [{'text':'📅 LIHAT / URUS JADUAL','callback_data':'timetable'}],
-        [{'text':'👥 AJAK RAKAN • DAPAT VIP','callback_data':'referral_vip'}],
         [{'text':'💬 KOMEN & CADANGAN','callback_data':'beta_feedback'}],
     ]
     if supporter_open:
@@ -39689,7 +39677,6 @@ def menu(cid,show_persistent=False):
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
         '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
-        f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line
     )
     return send(cid,body,kb)
@@ -39714,7 +39701,6 @@ def menu(cid,show_persistent=False):
         kb.append([{'text':f'⚡ RPH HARI INI • PROFIL {score}%','callback_data':'smartprof272'}])
     kb += [
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
     ]
     if _is_admin(cid):
         kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
@@ -39754,7 +39740,6 @@ def menu(cid,show_persistent=False):
         kb.append([{'text':f'⚡ RPH HARI INI • PROFIL {score}%','callback_data':'smartprof272'}])
     kb += [
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
     ]
     if _is_admin(cid):
         kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
@@ -39772,8 +39757,7 @@ def menu(cid,show_persistent=False):
         '👤 <b>PROFIL SAYA</b>\n'
         'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
 
-        '🎁 <b>REFERRAL & VIP</b>\n'
-        'Ajak rakan dan dapatkan akses VIP.\n\n'
+        ''
 
         '🎁 <b>5 JANAAN PERCUMA</b>'
     )
@@ -39830,7 +39814,6 @@ def menu(cid,show_persistent=False):
         [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272' if ready else 'smartprof272'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
     ]
     if _is_admin(cid):
         kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
@@ -39843,8 +39826,7 @@ def menu(cid,show_persistent=False):
         'Jana RPH berdasarkan jadual waktu cikgu.\n\n'
         '👤 <b>PROFIL SAYA</b>\n'
         'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🎁 <b>REFERRAL & VIP</b>\n'
-        'Ajak rakan dan dapatkan akses VIP.\n\n'
+        ''
         '🎁 <b>5 JANAAN PERCUMA</b>'
     )
     return send(cid,body,kb)
@@ -40044,7 +40026,7 @@ def menu(cid,show_persistent=False):
         [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
+        [{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'}],
     ]
     if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
     body=(
@@ -40052,7 +40034,6 @@ def menu(cid,show_persistent=False):
         '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🎁 <b>REFERRAL & VIP</b>\nAjak rakan dan dapatkan akses VIP.\n\n'
         '🎁 <b>5 JANAAN PERCUMA</b>'
     )
     return send(cid,body,kb)
@@ -46396,6 +46377,37 @@ except Exception as _kp2027_selector_exc:
     CIKGULAJU_KP2027_SELECTOR_ERROR = repr(_kp2027_selector_exc)
 # === END KP2027 SELECTOR ===
 
+
+
+# === TRIAL: FIVE RPH GENERATIONS ONLY ===
+_trial_rph_previous_credit_gate = _credit_gate
+def _credit_gate(cid, s):
+    # Paid and permanent access retain the existing unrestricted gate.
+    if _is_permanent_vip_v25267(cid) or _access_info(cid).get('active'):
+        return _trial_rph_previous_credit_gate(cid, s)
+    task = str((s or {}).get('task') or '').lower()
+    selected = set((s or {}).get('_materials_selected_v2528') or [])
+    if task not in ('rph', 'quick_rph') and not (selected == {'rph'}):
+        state.setdefault(cid, {}).pop('_free_generation_pending_v25282', None)
+        send(cid, '🔒 <b>Trial hanya untuk 5 janaan RPH.</b> Bahan lain memerlukan langganan atau Pioneer yang aktif.',
+             [[{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}]])
+        return False
+    return _trial_rph_previous_credit_gate(cid, s)
+
+_trial_rph_previous_submit = _submit_materials_v2528
+def _submit_materials_v2528(cid):
+    ss = state.setdefault(cid, {})
+    if not (_is_permanent_vip_v25267(cid) or _access_info(cid).get('active')):
+        selected = set(ss.get('_materials_selected_v2528') or [])
+        if selected != {'rph'}:
+            return send(cid, '🔒 <b>Trial hanya boleh jana RPH.</b> Pilih RPH sahaja atau aktifkan langganan/Pioneer.',
+                        [[{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'},
+                          {'text':'🏠 Menu Utama','callback_data':'home'}]])
+        if not _credit_gate(cid, dict(ss, task='rph')):
+            return None
+    return _trial_rph_previous_submit(cid)
+# === END TRIAL RPH ONLY ===
 
 # === PIONEER LIFETIME OPT-IN TELEGRAM INTEGRATION ===
 try:
