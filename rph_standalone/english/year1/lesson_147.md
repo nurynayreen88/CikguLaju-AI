@@ -9,7 +9,9 @@
 **Audio:** Use verified SB CD2 Track 17.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the SB p56 writing model and ask pupils to locate a useful food word.
+**Pupils:** Find one familiar food word in the model and say it aloud.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Study the model on SB p56, identify useful words and sentence structure, complete the guided stage and write a short individual response.
