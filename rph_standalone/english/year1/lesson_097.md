@@ -22,8 +22,8 @@
 **Pupils:** Give responses and explain or correct them during checking.
 
 ## Closure
-**Teacher:** Assign story roles in small groups and perform a shortened retelling.
-**Pupils:** Complete the described consolidation activity.
+**Teacher:** Assign short story roles and prompt a retelling of two story events without supplying the lines.
+**Pupils:** Take roles in small groups and retell two events from SB pp38–39 in sequence.
 
 **Provenance:** SOURCE_ALIGNED_GUIDANCE; teacher review required.  
 **QA:** Draft; verify pedagogy, pupil-action wording and one-page A4 layout. No unverified audio or workbook reference added.
