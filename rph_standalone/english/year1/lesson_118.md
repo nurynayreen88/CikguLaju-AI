@@ -9,7 +9,9 @@
 **Audio:** SB p47 uses verified CD2 Track 04; WB uses verified CD2 Track 05.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show SB p47 and ask pupils to predict one food word they might read.
+**Pupils:** Look at the page and predict one word from its pictures or heading.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Read the text or prompts on SB p47, complete the textbook response, compare answers in pairs and practise the food language orally.
