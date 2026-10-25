@@ -5,6 +5,7 @@
 **Main SK / SP:** 4.2 / 4.2.3  
 **Complementary SK / SP:** 2.1 / 2.1.3  
 **Learning aim (source):** Integrate listening, speaking and writing around favourite toys.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can write one short description matching a favourite-toy drawing on SB p29.
 **Student's Book pages:** 29  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will compare each written description with its drawing and check one target word.
 **Teacher / task guidance:** Compare listening answers in pairs; check that written descriptions correspond to pupils' drawings.
 **Provenance:** VERIFIED_TB_SCAN
 
