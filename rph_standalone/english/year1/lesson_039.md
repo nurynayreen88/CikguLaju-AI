@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p19 read and answer about colours, predict how white changes colours, then make a picture using primary/secondary colours and colour mixing.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Read and answer questions about colours on SB p19; predict how white changes a colour and create a picture by mixing primary and secondary colours.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p19: complete the colour-code picture.
