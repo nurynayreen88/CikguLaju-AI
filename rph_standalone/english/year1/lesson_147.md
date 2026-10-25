@@ -22,7 +22,9 @@ Study the SB p56 model, identify useful words/structure, complete the guided sta
 Pairs check vocabulary and structure against the page model before final class feedback.
 
 ## Closure (teacher-developed proposal; pending review)
-Pupils read one sentence from their guided writing and check it with a partner.
+**Teacher:** Ask pupils to read one sentence from their SB p56 guided writing and check the model.
+**Pupils:** Read one written sentence to a partner and check it against the model.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
