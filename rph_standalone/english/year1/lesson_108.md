@@ -19,6 +19,7 @@ Preview the pictures/title and predict key words.
 **Teacher:** Ask pupils to show the word, phrase or picture clue for one answer and check whether it supports the response.
 
 ## Closure (teacher-developed proposal, pending review)
-Pupils identify one detail in the text and point to supporting evidence.
+**Teacher:** Ask pupils to identify one detail and point to its supporting text or picture.
+**Pupils:** Identify one detail from the textbook page and show the supporting clue.
 
 **Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.
