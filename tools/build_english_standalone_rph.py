@@ -71,4 +71,18 @@ if __name__ == "__main__":
     output.parent.mkdir(parents=True, exist_ok=True)
     records = build()
     output.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Drafts: {len(records)}; output: {output}")
+    summary = {
+        "total": len(records),
+        "verified_tb_scan": sum(r["source"] == "VERIFIED_TB_SCAN" for r in records),
+        "mapped_guidance": sum(r["source"] != "VERIFIED_TB_SCAN" for r in records),
+        "ready_for_teacher_review": sum(r["activity_quality"]["ready_for_teacher_review"] for r in records),
+        "missing_phases": sum(bool(r["activity_quality"]["missing_phases"]) for r in records),
+        "specificity_review": sum(bool(r["activity_quality"]["needs_specificity_review"]) for r in records),
+    }
+    report = ROOT / "output" / "english_standalone_activity_audit.json"
+    report.write_text(json.dumps({"summary": summary, "lessons": [
+        {"year": r["year"], "lesson_no": r["lesson_no"], "unit": r["unit"],
+         "source": r["source"], **r["activity_quality"]} for r in records
+    ]}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps(summary, ensure_ascii=False))
+    print(f"Drafts: {output}; audit: {report}")
