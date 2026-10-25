@@ -33,23 +33,24 @@ def build():
         raise ValueError("Duplicate candidate focus IDs")
     if any(not isinstance(codes, list) or not codes or any(not isinstance(code, str) or not code.strip() for code in codes) for codes in candidates.values()):
         raise ValueError("Candidate focus SP codes must be nonempty string lists")
-    if len(candidates) != 11 or set(candidates) != {r["id"] for r in records if not r.get("sp")}:
-        raise ValueError("Candidate focus matrix does not match eleven empty-SP records")
+    if len(candidates) != 11 or any(r["sp"] != candidates[r["id"]] for r in records if r["id"] in candidates):
+        raise ValueError("Candidate focus matrix does not match eleven DSKP-mapped records")
     output = []
     for r in sorted(records, key=lambda item: item["id"]):
         if r.get("status") != "editorial_staging_only" or r.get("production_ready") is not False:
             raise ValueError(f"{r['id']}: unexpected production state")
-        flags = ("sk_text_verified", "sp_text_verified", "textbook_verified",
+        flags = ("textbook_verified",
                  "rpt_exact_slot_verified", "rph_runtime_verified", "a4_review_verified")
         if any(r.get(flag) is not False for flag in flags):
             raise ValueError(f"{r['id']}: evidence flag changed; re-audit source first")
-        needs = ["DSKP SK code and verbatim text", "DSKP SP code and verbatim text",
-                 "textbook exact page and content", "RPT exact PdP slot",
+        if r.get("sk_text_verified") is not True or r.get("sp_text_verified") is not True or not r.get("sk") or not r.get("sp"):
+            raise ValueError(f"{r['id']}: DSKP SK/SP mapping incomplete")
+        needs = ["textbook exact page and content", "RPT exact PdP slot",
                  "runtime generation test", "human A4 review"]
         output.append(dict(entry_id=r["id"], topic=r["topic"],
                            recorded_sp_codes=";".join(r.get("sp") or []),
-                           candidate_sp_codes_not_verified=";".join(candidates.get(r["id"], [])),
-                           **{flag: str(r[flag]).lower() for flag in flags},
+                           candidate_sp_codes_not_verified="",
+                           **{flag: str(r[flag]).lower() for flag in ("sk_text_verified", "sp_text_verified", *flags)},
                            production_ready="false", required_next_evidence="; ".join(needs)))
     return output
 
