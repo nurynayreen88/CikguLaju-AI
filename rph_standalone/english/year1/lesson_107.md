@@ -1,0 +1,27 @@
+# English Year 1 — Lesson 107: Speaking 22
+
+**Unit:** Pet Show
+**Main SK/SP:** 2.1 / 2.1.5
+**Complementary SK/SP:** 1.2 / 1.2.5
+**Learning aim:** Practise speaking from the Unit 3 textbook stimulus.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can take at least two speaking turns using the modelled pet-language exchange on SB p42.
+**Student's Book:** 42
+**Audio:** No verified track recorded
+
+## Set Induction
+**Teacher:** Show a pet picture from SB p42 and prompt recall of the modelled exchange.
+**Pupils:** Name the pet and recall one word or phrase from the exchange.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
+
+## Activity 1 — Student's Book
+**Teacher:** Model the SB p42 speaking exchange, rehearse the response with the class and organise repeated pair or small-group turns.
+**Pupils:** Listen to and repeat the SB p42 exchange, then take turns using the target language with a partner or small group.
+
+## Assessment / PBD
+**Teacher:** Teacher listens to paired exchanges and records whether each pupil takes two turns and uses the target pet vocabulary intelligibly.
+
+## Closure (teacher-developed proposal, pending review)
+**Teacher:** Prompt a final pet dialogue and ask partners to reverse roles.
+**Pupils:** Perform one short dialogue, swap roles and repeat it.
+
+**Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.

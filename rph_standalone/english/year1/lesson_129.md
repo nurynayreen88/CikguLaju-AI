@@ -1,0 +1,31 @@
+# English Year 1 — Lesson 129: Reading 26
+
+**Unit:** Lunchtime
+**Main SK/SP:** 3.2 / 3.2.2
+**Complementary SK/SP:** 1.1 / 1.1.1
+**Learning aim:** Consolidate the story and phonics/language follow-up on SB p51.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the SB p51 reading follow-up and identify one relevant story or language clue.
+**Student's Book:** 51
+**Audio:** Verified phonics/follow-up audio: SB CD2 Track 13; WB CD2 Track 14.
+
+## Set Induction (teacher-developed proposal; pending review)
+**Teacher:** Revisit one SB p51 story frame and elicit a familiar word or sound.
+**Pupils:** Find one familiar word or sound pattern on the page.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
+
+## Activity 1
+**Teacher (editorial, source-aligned):** Direct pupils to the SB p51 follow-up; model locating a story or language clue, allow individual responses and check answers with partners.
+**Pupils (editorial, source-aligned):** Reread the relevant story section on SB p51, complete the follow-up task and compare answers with a partner.
+
+
+## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check the reading follow-up response and ask pupils to locate one supporting clue.
+Check responses against the page and practise the target sound/language orally.
+
+## Closure (teacher-developed proposal; pending review)
+**Teacher:** Ask pupils to identify one story detail or target sound from SB p51.
+**Pupils:** Point to one story detail or identify one practised sound pattern.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
+
+**Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
+**Review status:** Draft; pedagogical and A4 checks pending.
