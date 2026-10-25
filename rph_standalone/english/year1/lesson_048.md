@@ -13,7 +13,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Use the opening unit scene to identify toys, play the vocabulary recording for pupils to point and repeat, then recycle the words through short pair questions.
-**Pupils:** Follow the source activity, listen/read, point, repeat or respond as specified.
+**Pupils:** Look at the opening scene and point to the toys named in the recording; repeat each toy word and ask a partner short questions about the toys.
 
 ### Assessment / PBD
 **Teacher:** Check recognition by pointing to different toys in random order and eliciting names.
