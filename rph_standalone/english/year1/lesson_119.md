@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Look at the food pictures on SB p48, listen for the overall meaning, listen again for specific information and complete the page task.
 Preview SB p48 pictures/food words, listen first for overall meaning and again for specific information, then practise the language through the page activity.
 
 ## Assessment
