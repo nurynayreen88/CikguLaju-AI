@@ -39283,7 +39283,7 @@ def _credit_gate(cid,s):
         ss['_free_generation_pending_v25282']=True
         return True
     send(cid,'🔒 <b>5 janaan percuma telah digunakan.</b>\n\nCikgu boleh dapatkan akses VIP melalui program referral.',
-         [[{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
+         [
           [{'text':'👤 Profil Saya','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     return False
 
@@ -39757,7 +39757,7 @@ def menu(cid,show_persistent=False):
         '👤 <b>PROFIL SAYA</b>\n'
         'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
 
-        '🎁 <b>REFERRAL & VIP</b>\n'
+        ''
 
         '🎁 <b>5 JANAAN PERCUMA</b>'
     )
@@ -39826,7 +39826,7 @@ def menu(cid,show_persistent=False):
         'Jana RPH berdasarkan jadual waktu cikgu.\n\n'
         '👤 <b>PROFIL SAYA</b>\n'
         'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🎁 <b>REFERRAL & VIP</b>\n'
+        ''
         '🎁 <b>5 JANAAN PERCUMA</b>'
     )
     return send(cid,body,kb)
