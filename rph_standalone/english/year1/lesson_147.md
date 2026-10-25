@@ -4,6 +4,7 @@
 **Main SK/SP:** 4.2 / 4.2.1
 **Complementary SK/SP:** 3.2 / 3.2.2
 **Learning aim:** Develop guided writing using the Unit 4 textbook model.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the guided SB p56 task and produce one short written response following the model.
 **Student's Book:** 56
 **Audio:** Use verified SB CD2 Track 17.
 
