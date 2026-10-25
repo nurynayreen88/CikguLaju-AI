@@ -99,10 +99,10 @@ def install(ns):
             if req and float(req["amount"]) == 20.0:
                 if req["status"] != "pending":
                     return admin_card(cid, rid)
-                if req.get("notes") != "proof_received":
+                if req.get("notes") != "proof_received_admin_notified":
                     return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Pioneer.")
-                # Explicit admin click after independently checking the bank transaction.
-                grant_pioneer(sb, req["chat_id"], f"pioneer-payment-request:{rid}", cid, verified=True)
+                # Require an explicit second confirmation after independent bank verification.\n                return send(cid, "⚠️ Pastikan transaksi RM20 benar-benar masuk ke akaun bank.\\n"\n                            "Resit sahaja tidak membuktikan bayaran.",\n                            [[{"text": "✅ Saya telah semak transaksi bank",\n                               "callback_data": f"pioneer_bank_verified|{rid}"}]])\n        if str(d).startswith("pioneer_bank_verified|"):\n            if not ns["_is_admin"](cid):\n                return send(cid, "⛔ Admin sahaja.")\n            try:\n                rid = int(str(d).split("|", 1)[1])\n            except (ValueError, IndexError):\n                return send(cid, "⚠️ ID pembayaran tidak sah.")\n            req = ns["_payment_request"](rid)\n            if not req or float(req["amount"]) != 20.0 or req["status"] != "pending":\n                return send(cid, "⚠️ Permohonan Pioneer tidak aktif.")\n            if req.get("notes") != "proof_received_admin_notified":\n                return send(cid, "⚠️ Resit belum berjaya dihantar kepada admin.")\n            try:
+                grant_pioneer(sb, req["chat_id"], f"pioneer-payment-request:{rid}", cid, verified=True)\n            except Exception as exc:\n                return send(cid, f"⚠️ Pioneer belum diaktifkan: {type(exc).__name__}. Semak rekod.")
                 ns["_mark_payment_request"](rid, "approved", cid, "Pioneer lifetime RM20 verified")
                 send(cid, f"✅ Pioneer diaktifkan untuk {req['chat_id']}.")
                 return send(req["chat_id"], "🏆 <b>Pioneer anda kini aktif!</b>\n"
