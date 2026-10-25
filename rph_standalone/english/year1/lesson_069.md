@@ -5,6 +5,7 @@
 **Main SK / SP:** 2.1 / 2.1.5  
 **Complementary SK / SP:** 3.2 / 3.2.2  
 **Learning aim (source):** Integrate Mathematics/shape vocabulary through a tangram task.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can name at least two shapes and describe one position using SB p30.
 **Student's Book pages:** 30  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will ask pupils to name two shapes and describe one shape position.
 **Teacher / task guidance:** Ask pupils to name both the shape and its position when checking.
 **Provenance:** VERIFIED_TB_SCAN
 
