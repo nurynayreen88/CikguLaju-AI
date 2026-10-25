@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Model the SB p49 food-language exchange once, prompt choral rehearsal, then organise pairs to practise two turns with changed food items.
 **Pupils (editorial, source-aligned):** Listen to the teacher's model on SB p49, practise the food-language exchange as a class and take turns with different food items in pairs.
-Use SB p49 to model the target exchange, practise chorally, then move to repeated pair speaking with different food items.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Observe two paired speaking turns for each pupil and note intelligible food vocabulary.
