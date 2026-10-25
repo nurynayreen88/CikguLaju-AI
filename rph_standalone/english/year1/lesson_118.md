@@ -25,7 +25,9 @@ Use the verified WB activity linked to this page.
 Pupils identify the textual/picture clue supporting each answer.
 
 ## Closure (teacher-developed proposal; pending review)
-Pairs share one food word found in the text and use it orally.
+**Teacher:** Ask each pair to choose one food word from SB p47 and use it in a short response.
+**Pupils:** Locate one food word in the text and use it in a short spoken response.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
