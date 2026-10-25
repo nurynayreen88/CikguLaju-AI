@@ -5,6 +5,7 @@
 **Main SK / SP:** 2.1 / 2.1.2  
 **Complementary SK / SP:** 4.2 / 4.2.5  
 **Learning objective:** Practise integrated reading, speaking, writing and listening with classroom objects and imperatives.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can complete one paired classroom-object exchange and one short written bag description.
 **Teaching materials:** Student's Book pp. 17, Workbook activity; Teacher's Book pp. 17  
 **Audio guidance:** WB p17 uses CD1 Track 26.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will observe one pair exchange and check one written description.
 **Teacher:** Check picture choices as a class; monitor pair questions and review written bag descriptions before final copying.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
