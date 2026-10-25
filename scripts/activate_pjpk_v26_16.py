@@ -81,7 +81,7 @@ def install(g):
         keyboard = []
         for index, row in enumerate(rows[start:start + per_page], start):
             label = f"PdP {row['sequence_no']} • {row.get('unit_title') or row.get('topic') or ''}"
-            keyboard.append([{"text": label[:60], "callback_data": f"pjpk2616pdp|{index}"}])
+            keyboard.append([{"text": label[:60], "callback_data": f"pjpk2616pdp|{row['id']}"}])
         navigation = []
         if page:
             navigation.append({"text": "⬅️", "callback_data": f"pjpk2616page|{page - 1}"})
@@ -194,10 +194,12 @@ def install(g):
                 return menu(cid)
             rows = rows_for(state.get("year"), state.get("subject"))
             try:
-                index = int(value.split("|", 1)[1])
-                if index < 0 or index >= len(rows):
+                entry_id = int(value.split("|", 1)[1])
+                if entry_id <= 0:
                     return menu(cid)
-                row = rows[index]
+                row = next((item for item in rows if item.get("id") == entry_id), None)
+                if row is None:
+                    return menu(cid)
             except (ValueError, IndexError):
                 return menu(cid)
             return commit_pdp(cid, row)
