@@ -19,8 +19,8 @@ def install(ns):
         import json
         from io import BytesIO
         import requests
-        caption = ("🏆 <b>PIONEER CIKGULAJU — RM20</b>\\n\\n"
-                   "Imbas QR DuitNow ini dan bayar RM20 sekali sahaja.\\n"
+        caption = ("🏆 <b>PIONEER CIKGULAJU — RM20</b>\n\n"
+                   "Imbas QR DuitNow ini dan bayar RM20 sekali sahaja.\n"
                    "Hantar resit untuk semakan admin. Status hanya aktif selepas disahkan.")
         markup = {"inline_keyboard": [
             [{"text": "📎 Hantar Resit RM20", "callback_data": "pioneer_receipt"}],
@@ -51,11 +51,9 @@ def install(ns):
     def menu(cid, show_persistent=False):
         # Preserve original menu and append a separate Pioneer invitation.
         original_menu(cid, show_persistent=show_persistent)
-        if not has_pioneer(sb, cid):
-            send(cid, "🏆 <b>Jadi Pioneer — RM20 sekali sahaja</b>\n"
-                 "Akses kekal sepanjang CikguLaju beroperasi, tanpa bayaran bulanan atau tahunan.\n"
-                 "Untuk semua subjek sekolah rendah Tahun 1–6; kandungan dikemas kini berperingkat.",
-                 [[{"text": "🏆 Jadi Pioneer — RM20", "callback_data": "pioneer_join"}]])
+        # Do not flood Telegram with a second invitation on every menu open.
+        # Pioneer remains accessible via the existing opt-in callback.
+        return None
 
     def admin_card(cid, request_id):
         req = ns["_payment_request"](request_id)
