@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Use SB p11 listening to number the pictures, model the target questions and answers with real objects, replay for choral repetition, then run the guessing game in groups.
-**Pupils:** Follow the Student's Book task, practise the target classroom language with a partner and respond to the teacher's checks.
+**Pupils:** Listen to the SB p11 recording and number pictures; ask and answer 'What's this?' and 'Is it a ...?' using real objects, then take turns in a group guessing game.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p11: listen and write the classroom-object words, then read statements and tick the correct box.
