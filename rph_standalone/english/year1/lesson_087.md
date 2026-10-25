@@ -5,6 +5,7 @@
 **Main SK/SP:** 2.1 / 2.1.5  
 **Complementary SK/SP:** 1.1 / 1.1.1  
 **Objective:** Develop speaking using Unit 3 pet language.  
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can ask and answer one pet-language exchange with a partner using the SB p36 model.
 **Student's Book:** 36
 
 ## Activity 1 — Textbook sequence
@@ -12,6 +13,7 @@
 **Pupils:** Look at SB p36, listen to the modelled pet-language exchange, rehearse the response as a class and take turns speaking with a partner.
 
 ## Assessment / PBD
+**Observable evidence (teacher-developed):** Observe one exchange per pair; check that both pupils participate and use the target form.
 **Teacher:** Monitor whether pupils use the target form and pet word accurately.
 **Pupils:** Give responses and explain or correct them during checking.
 
