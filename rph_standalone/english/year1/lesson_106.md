@@ -9,7 +9,9 @@
 **Audio:** No verified track recorded
 
 ## Set Induction
-Run a short oral retrieval of pet vocabulary.
+**Teacher:** Show the SB p41 writing model and ask pupils to find a familiar pet word.
+**Pupils:** Point to and say one familiar pet word in the model.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1 — Student's Book
 **Teacher:** Guide pupils to examine the SB p41 model, highlight useful words and sentence frames, demonstrate the guided task and support individual writing.
