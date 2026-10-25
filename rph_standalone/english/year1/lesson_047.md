@@ -5,6 +5,7 @@
 **Main SK / SP:** 4.2 / 4.2.4  
 **Complementary SK / SP:** 3.2 / 3.2.4  
 **Learning objective:** Review unit language, consolidate classroom objects/colours and reflect on learning.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can complete one written unit-review response about classroom objects or colours on SB p21.
 **Teaching materials:** Student's Book pp. 21, Workbook activity; Teacher's Book pp. 21  
 **Audio guidance:** No exact audio track is introduced on this Teacher's Book page.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check each pupil's written review response for a relevant unit word or phrase.
 **Teacher:** Pairs/groups compare posters and memory statements; review written/drawn learning examples.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
