@@ -8,6 +8,10 @@
 **Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can produce one short written response following the SB p40 model.
 **Student's Book:** 40
 
+## Set Induction — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Show the writing model on SB p40 and ask pupils to locate a familiar pet word.
+**Pupils:** Find and read one familiar pet word from the model before writing.
+
 ## Activity 1 — Textbook sequence
 **Teacher:** Use the SB p40 writing model to demonstrate the guided task, then supervise pupils' short individual writing.
 **Pupils:** Study the writing model on SB p40, complete the guided task, then write a short individual response using the modelled language.
