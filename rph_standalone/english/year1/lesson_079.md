@@ -14,6 +14,7 @@
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
 ### Activity 1 — Student's Book
+**Pupils (editorial, source-aligned):** Point to the pets in the opening scene, listen and repeat the pet names, then take turns identifying pets in pairs.
 **Teacher / task guidance:** Use the opening scene to identify pets; model, listen, point and repeat the target words, then practise identification in pairs.
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
