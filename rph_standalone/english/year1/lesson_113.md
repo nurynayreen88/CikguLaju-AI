@@ -18,6 +18,7 @@ Recall the earlier speaking work from the same page.
 **Teacher:** Ask each pupil to point to or read two familiar words or phrases and check their textbook-task response.
 
 ## Closure (teacher-developed proposal, unverified)
-Pairs share one answer and locate the matching clue on the textbook page.
+**Teacher:** Invite pairs to share one response and locate the supporting textbook clue.
+**Pupils:** Share one answer with a partner and point to the supporting clue.
 
 **Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.
