@@ -83,14 +83,17 @@ jobs:
           assert events and events[-1][0] == 'SEND', events
           assert '_pjpk_v2616_rows' not in state[1], 'Selectable rows must not be cached in session'
           buttons = [button for group in events[-1][2] for button in group]
-          available = any(button['callback_data'] == 'pjpk2616pdp|0' for button in buttons)
+          pdp_buttons = [button['callback_data'] for button in buttons if button['callback_data'].startswith('pjpk2616pdp|')]
+          available = bool(pdp_buttons)
+          if available:
+              assert all(int(item.split('|')[1]) > 0 for item in pdp_buttons), 'PdP callbacks must contain stable positive entry IDs'
           if not available:
               assert 'belum disahkan' in events[-1][1], 'Missing fail-closed notice'
               assert db.stat().st_size == before, 'Read-only DB changed during blocked menu'
               print('BLOCKED: no PJ Tahun 1 row has complete SK and SP text; no RPH handoff')
               raise SystemExit(0)
           state[1]['year'] = 'Tahun 2'
-          g['callback'](1, 'pjpk2616pdp|0')
+          g['callback'](1, pdp_buttons[0])
           assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Stale year selection entered RPH'
           state[1]['year'] = 'Tahun 1'
           g['callback'](1, 'sub_Pendidikan Jasmani')
