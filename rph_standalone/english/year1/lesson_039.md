@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.2 / 3.2.2  
 **Complementary SK / SP:** 2.1 / 2.1.5  
 **Learning objective:** Extend Art through English and complete a colour project.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can read or identify two colour words used in the SB p19 project.
 **Teaching materials:** Student's Book pp. 19, Workbook activity; Teacher's Book pp. 19  
 **Audio guidance:** No exact audio track is introduced on this Teacher's Book page.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will ask pupils to locate two colour words and explain one project choice.
 **Teacher:** Pairs discuss predictions, then compare results after mixing/colouring; review project language orally.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
