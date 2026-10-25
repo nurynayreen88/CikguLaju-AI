@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Show SB pp50–51 story frames; invite predictions, play or read the mapped story, pause to check event order and support role rehearsal.
 **Pupils (editorial, source-aligned):** Look at the pictures on SB pp50–51 and predict events; listen or read, identify the story order and practise lines in assigned roles.
-Preview SB pp50-51, predict from pictures, listen/read the story, pause for comprehension and sequence, then replay/reread for role practice.
+
 
 ## Activity 2
 Use the verified story-linked Workbook task.
