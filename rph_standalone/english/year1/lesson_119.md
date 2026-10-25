@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Preview SB p48 pictures/food words, listen first for overall meaning and again for specific information, then practise the language through the page activity.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check the overall listening response and one specific detail from the task.
 Pairs compare before replay and whole-class checking.
 
 ## Closure (teacher-developed proposal; pending review)
