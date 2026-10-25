@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Look at the lunchtime scene on SB p46, point to food items named in the recording, repeat the food words and identify items orally.
 Use SB p46 to establish the lunchtime scene, identify target food, listen/point/repeat and recycle the vocabulary through short oral identification.
 
 ## Assessment
