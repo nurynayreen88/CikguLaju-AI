@@ -22,7 +22,9 @@ Use SB p49 to model the target exchange, practise chorally, then move to repeate
 Monitor target language and intelligible pronunciation; invite selected pairs to demonstrate.
 
 ## Closure (teacher-developed proposal; pending review)
-Pairs exchange one food-related question and answer using the practised model.
+**Teacher:** Prompt one final food-language exchange using SB p49 and listen to both partners.
+**Pupils:** Ask and answer one food-language question with a partner, taking turns.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
