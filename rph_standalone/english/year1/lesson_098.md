@@ -8,6 +8,10 @@
 **Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the SB p39 comprehension task and identify evidence for one answer.
 **Student's Book:** 39
 
+## Set Induction — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Recall the preceding story by showing a picture on SB p39 and asking what happened.
+**Pupils:** Identify a familiar character or event in the picture before rereading.
+
 ## Activity 1 — Textbook sequence
 **Teacher:** Direct pupils to reread the relevant SB p39 story section, complete the comprehension task and identify supporting text or pictures.
 **Pupils:** Reread the relevant story section on SB p39, complete the comprehension task and show a partner the picture or words supporting each answer.
