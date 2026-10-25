@@ -109,6 +109,8 @@ jobs:
           assert selected.get('quick_rpt_row'), 'Selected RPT row missing'
           assert selected.get('rpt_entry_id') is not None, 'RPT entry ID missing'
           assert selected.get('selected_sp') and selected.get('sp_code'), 'Verified SP not mapped'
+          assert len(selected['grouped_sp_codes']) == len(selected['grouped_sp_texts']), 'SP codes/text mismatched'
+          assert selected['selected_sp_codes'] == selected['grouped_sp_codes'], 'Verified SP omitted from selection'
           assert selected.get('quick_material_flow') is True
           assert selected.get('assessment_mode') == 'formative'
           assert '_pm_pdp_rows_v2602' not in selected, 'Old helper handoff still used'
