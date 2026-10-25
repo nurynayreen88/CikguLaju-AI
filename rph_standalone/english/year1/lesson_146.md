@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Look at SB p55, follow one model speaking exchange and take repeated turns using the target language with a partner.
 Use SB p55 as the stimulus for guided speaking; model one example, rehearse as a class and then give pupils repeated turns in pairs.
 
 ## Assessment
