@@ -9,7 +9,9 @@
 **Audio:** No audio required in the current verified mapping.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the SB p54 speaking stimulus and model one short response.
+**Pupils:** Name one item in the stimulus and repeat a modelled response.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Use the SB p54 model to practise the target food-language exchange, taking turns in pairs or groups.
