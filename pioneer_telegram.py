@@ -14,6 +14,32 @@ def install(ns):
     state = ns["state"]
     sb = ns["_sb_request"]
 
+    def send_pioneer_qr(cid, rid):
+        import base64
+        import json
+        from io import BytesIO
+        import requests
+        caption = ("🏆 <b>PIONEER CIKGULAJU — RM20</b>\\n\\n"
+                   "Imbas QR DuitNow ini dan bayar RM20 sekali sahaja.\\n"
+                   "Hantar resit untuk semakan admin. Status hanya aktif selepas disahkan.")
+        markup = {"inline_keyboard": [
+            [{"text": "📎 Hantar Resit RM20", "callback_data": "pioneer_receipt"}],
+            [{"text": "🏠 Menu Utama", "callback_data": "home"}]]}
+        data = {"chat_id": str(cid), "caption": caption,
+                "parse_mode": "HTML", "reply_markup": json.dumps(markup)}
+        file_id = ns.get("_donation_qr_file_id")
+        if file_id:
+            response = requests.post(ns["API"] + "/sendPhoto",
+                                     data=dict(data, photo=file_id), timeout=30)
+        else:
+            qr = base64.b64decode(ns["DONATION_QR_B64"])
+            response = requests.post(ns["API"] + "/sendPhoto", data=data,
+                                     files={"photo": ("CikguLaju_DuitNow_QR.jpg", BytesIO(qr), "image/jpeg")},
+                                     timeout=45)
+        if not response.ok:
+            return send(cid, "⚠️ QR tidak dapat dihantar. Cuba lagi sebentar.")
+        return response
+
     def access_info(cid):
         return effective_access(sb, cid, original_access(cid))
 
@@ -47,7 +73,7 @@ def install(ns):
                         "Status Pioneer kekal walaupun sistem dikemas kini.",
                         [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
-        if d == "pioneer_pay":
+        if d == "pioneer_receipt":\n            state.setdefault(cid, {})["waiting"] = "payment_proof"\n            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM20.")\n        if d == "pioneer_pay":
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
             pending = ns["_latest_pending_payment"](cid)
@@ -58,7 +84,7 @@ def install(ns):
             ns["_set_payment_note"](rid, "awaiting_proof")
             state.setdefault(cid, {})["waiting"] = "payment_proof"
             # Existing QR bytes are reused, not copied into a new asset.
-            return ns["_send_pioneer_qr"](cid, rid)
+            return send_pioneer_qr(cid, rid)
         if str(d).startswith("admin_approve|"):
             if not ns["_is_admin"](cid):
                 return send(cid, "⛔ Admin sahaja.")
