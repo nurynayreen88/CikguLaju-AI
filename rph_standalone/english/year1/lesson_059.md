@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.2 / 3.2.1  
 **Complementary SK / SP:** 1.2 / 1.2.3  
 **Learning aim (source):** Consolidate the story and practise key language from the go-kart episode.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can complete the SB p26 story follow-up and locate one supporting clue.
 **Student's Book pages:** 26  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will show one story answer and point to supporting words or a picture.
 **Teacher / task guidance:** Pairs justify answers using story evidence before whole-class feedback.
 **Provenance:** VERIFIED_TB_SCAN
 
