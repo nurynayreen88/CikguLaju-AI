@@ -25,7 +25,9 @@ Use the verified story-linked Workbook task.
 Ask pupils to order key events and identify speakers/actions using the story frames.
 
 ## Closure
-Groups rehearse and perform a shortened story retelling.
+**Teacher:** Assign short roles and prompt groups to retell two events from SB pp50–51.
+**Pupils:** Take roles and retell two story events in sequence.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
