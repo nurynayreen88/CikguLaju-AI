@@ -9,7 +9,9 @@
 **Audio:** Verified phonics/follow-up audio: SB CD2 Track 13; WB CD2 Track 14.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Revisit one SB p51 story frame and elicit a familiar word or sound.
+**Pupils:** Find one familiar word or sound pattern on the page.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Reread the relevant story section on SB p51, complete the follow-up task and compare answers with a partner.
