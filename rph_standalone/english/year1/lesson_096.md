@@ -8,6 +8,10 @@
 **Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can give one short oral response to SB p37 and point to a picture or text clue supporting it.
 **Student's Book:** 37
 
+## Set Induction — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Show one picture on SB p37 and elicit a familiar pet word before the task.
+**Pupils:** Look at SB p37, name a familiar pet and identify one visual clue.
+
 ## Activity 1 — Textbook sequence
 **Teacher:** Guide pupils through the pictures and text on SB p37, check responses against visual evidence and elicit short oral answers.
 **Pupils:** Examine the pictures and text on SB p37, complete the textbook task, compare answers with a partner and use the same language in short oral responses.
