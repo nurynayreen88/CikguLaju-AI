@@ -9,7 +9,9 @@
 **Audio:** No audio required in the current verified mapping.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Display the SB p57 reading page and ask pupils to predict one word from its visual cues.
+**Pupils:** Point to a clue and predict one food-related word before reading.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Read SB p57 for overall meaning, reread to find the requested information and complete the textbook activity before pair checking.
