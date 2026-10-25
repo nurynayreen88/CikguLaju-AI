@@ -1,0 +1,584 @@
+{
+  "generated_from": "data/english_standalone_rph_y1_structured_batch01.json",
+  "policy": "A source status is not proof that every lesson-plan section is complete. Never auto-fill absent Teacher's Book steps.",
+  "total": 51,
+  "ready_for_bot": 12,
+  "requires_review": 39,
+  "lessons": [
+    {
+      "lesson_no": 16,
+      "unit": "Friends",
+      "lesson_label": "Reading 4",
+      "checks": [
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 3,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 17,
+      "unit": "Friends",
+      "lesson_label": "Writing 4",
+      "checks": [
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 3,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 18,
+      "unit": "At School",
+      "lesson_label": "Listening 4",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 19,
+      "unit": "At School",
+      "lesson_label": "Speaking 4",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 26,
+      "unit": "At School",
+      "lesson_label": "Speaking 6",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 27,
+      "unit": "At School",
+      "lesson_label": "Writing 6",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 28,
+      "unit": "At School",
+      "lesson_label": "Listening 6",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 29,
+      "unit": "At School",
+      "lesson_label": "Reading 6",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 36,
+      "unit": "At School",
+      "lesson_label": "Listening 8",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 37,
+      "unit": "At School",
+      "lesson_label": "Speaking 8",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 38,
+      "unit": "At School",
+      "lesson_label": "Writing 8",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 39,
+      "unit": "At School",
+      "lesson_label": "Reading 8",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 46,
+      "unit": "At School",
+      "lesson_label": "Listening (10)",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 47,
+      "unit": "At School",
+      "lesson_label": "Writing 10",
+      "checks": [],
+      "activity_count": 3,
+      "ready_for_bot": true
+    },
+    {
+      "lesson_no": 48,
+      "unit": "Let's Play!",
+      "lesson_label": "Speaking 10",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 49,
+      "unit": "Let's Play!",
+      "lesson_label": "Reading 10",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 56,
+      "unit": "Let's Play!",
+      "lesson_label": "Speaking 12",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 57,
+      "unit": "Let's Play!",
+      "lesson_label": "Listening 12",
+      "checks": [
+        "set_induction_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 59,
+      "unit": "Let's Play!",
+      "lesson_label": "Reading 12",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 66,
+      "unit": "Let's Play!",
+      "lesson_label": "Reading 14",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 67,
+      "unit": "Let's Play!",
+      "lesson_label": "Listening 14",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 68,
+      "unit": "Let's Play!",
+      "lesson_label": "Writing 14",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 69,
+      "unit": "Let's Play!",
+      "lesson_label": "Speaking 14",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 76,
+      "unit": "Let's Play!",
+      "lesson_label": "Speaking 16",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 77,
+      "unit": "Let's Play!",
+      "lesson_label": "Reading 16",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 78,
+      "unit": "Let's Play!",
+      "lesson_label": "Writing 16",
+      "checks": [
+        "set_induction_missing",
+        "tb_page_missing"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 79,
+      "unit": "Pet Show",
+      "lesson_label": "Listening 16",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 86,
+      "unit": "Pet Show",
+      "lesson_label": "Listening 18",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 87,
+      "unit": "Pet Show",
+      "lesson_label": "Speaking 18",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 96,
+      "unit": "Pet Show",
+      "lesson_label": "Speaking 20",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 97,
+      "unit": "Pet Show",
+      "lesson_label": "Listening 20",
+      "checks": [
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 98,
+      "unit": "Pet Show",
+      "lesson_label": "Reading 20",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 99,
+      "unit": "Pet Show",
+      "lesson_label": "Writing 20",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 106,
+      "unit": "Pet Show",
+      "lesson_label": "Writing 22",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 107,
+      "unit": "Pet Show",
+      "lesson_label": "Speaking 22",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 108,
+      "unit": "Pet Show",
+      "lesson_label": "Reading 22",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 109,
+      "unit": "Pet Show",
+      "lesson_label": "Listening 22",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 113,
+      "unit": "Pet Show",
+      "lesson_label": "Reading 23",
+      "checks": [
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 116,
+      "unit": "Pet Show",
+      "lesson_label": "Writing 24",
+      "checks": [
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 117,
+      "unit": "Lunchtime",
+      "lesson_label": "Speaking 24",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 2,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 118,
+      "unit": "Lunchtime",
+      "lesson_label": "Reading 24",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 3,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 119,
+      "unit": "Lunchtime",
+      "lesson_label": "Listening 24",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 2,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 126,
+      "unit": "Lunchtime",
+      "lesson_label": "Speaking 26",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 2,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 127,
+      "unit": "Lunchtime",
+      "lesson_label": "Listening 26",
+      "checks": [
+        "set_induction_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 3,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 129,
+      "unit": "Lunchtime",
+      "lesson_label": "Reading 26",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 2,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 136,
+      "unit": "Lunchtime",
+      "lesson_label": "Listening 28",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 2,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 137,
+      "unit": "Lunchtime",
+      "lesson_label": "Reading 28",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 138,
+      "unit": "Lunchtime",
+      "lesson_label": "Speaking 28",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 146,
+      "unit": "Lunchtime",
+      "lesson_label": "Speaking 30",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 147,
+      "unit": "Lunchtime",
+      "lesson_label": "Writing 30",
+      "checks": [
+        "set_induction_missing",
+        "closure_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed",
+        "internal_or_verification_wording"
+      ],
+      "activity_count": 2,
+      "ready_for_bot": false
+    },
+    {
+      "lesson_no": 148,
+      "unit": "Lunchtime",
+      "lesson_label": "Reading 30",
+      "checks": [
+        "set_induction_missing",
+        "tb_page_missing",
+        "teacher_book_scan_not_confirmed"
+      ],
+      "activity_count": 1,
+      "ready_for_bot": false
+    }
+  ]
+}
