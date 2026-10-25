@@ -39,3 +39,18 @@ def get_english_y1_rph(year, subject, lesson_no):
     if year_number != 1 or subject_key not in {"english", "bahasainggeris", "bi"}:
         return None
     return load_english_y1_rph(lesson_no)
+
+
+def resolve_rph_with_fallback(year, subject, lesson_no, legacy_generator, *args, **kwargs):
+    """Prefer the stored Year 1 English RPH, otherwise call the legacy generator.
+
+    This is an explicit opt-in integration point for the existing bot handler.
+    The handler must pass its original generator callable and arguments unchanged.
+    No fallback is invoked when a valid standalone lesson is available.
+    """
+    if not callable(legacy_generator):
+        raise TypeError("legacy_generator must be callable")
+    standalone = get_english_y1_rph(year, subject, lesson_no)
+    if standalone is not None:
+        return standalone
+    return legacy_generator(*args, **kwargs)
