@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** On SB p28 look and read, then mark each statement true/false according to the pictures; follow with oral correction of false statements.
+**Pupils (editorial, source-aligned):** Read the statements on SB p28, mark each true or false against the pictures, and correct false statements aloud.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
