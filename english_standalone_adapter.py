@@ -31,7 +31,12 @@ def load_english_rph(year, lesson_no):
     return text
 
 
-def load_english_y1_rph(lesson_no):\n    """Backward-compatible Year 1 lookup."""\n    return load_english_rph(1, lesson_no)\n\n\ndef get_english_rph(year, subject, lesson_no):
+def load_english_y1_rph(lesson_no):
+    """Backward-compatible Year 1 lookup."""
+    return load_english_rph(1, lesson_no)
+
+
+def get_english_rph(year, subject, lesson_no):
     """Guarded subject/year lookup; never intercepts other subjects or years."""
     if isinstance(year, bool) or not str(year).strip().isascii() or not str(year).strip().isdigit():
         return None
