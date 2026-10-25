@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Display the SB p56 writing model; highlight one useful word or structure, guide the textbook task and check each pupil's short written response.
 **Pupils (editorial, source-aligned):** Study the model on SB p56, identify useful words and sentence structure, complete the guided stage and write a short individual response.
-Study the SB p56 model, identify useful words/structure, complete the guided stage and then produce a short individual response.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Check one individual written response for task completion and use of the page model.
