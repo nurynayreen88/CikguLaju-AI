@@ -38,7 +38,20 @@ jobs:
           python scripts/rebuild_pm_pjpk_v26_16.py
           python scripts/check_pm_pjpk_v26_16.py
       - name: Print verified SK and SP readiness by year
-        run: python -m scripts.pjpk_runtime_readiness
+        run: |
+          python -m scripts.pjpk_runtime_readiness
+          python - <<'PY'
+          from scripts.pjpk_runtime_readiness import report
+          rows = report()
+          assert len(rows) == 12, f'Expected twelve PJPK year-subject combinations, got {len(rows)}'
+          assert all(0 <= eligible <= safe for _, _, safe, eligible in rows)
+          total_safe = sum(row[2] for row in rows)
+          total_eligible = sum(row[3] for row in rows)
+          assert total_safe == 33, f'Expected 33 safe-release rows, got {total_safe}'
+          print(f'PJPK RPH READY: {total_eligible}/{total_safe} safe-release rows have verified SK+SP')
+          if total_eligible == 0:
+              print('BLOCKED: no PJPK row is eligible for RPH; source verification required')
+          PY
       - name: Check adapter isolates incomplete years
         run: |
           python - <<'PY'
