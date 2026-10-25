@@ -3,28 +3,27 @@
 **Unit:** Free Time
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 4.2 / 4.2.1
-**Objective:** Pupils can participate in a rhyme or language game related to Free Time.
-**Materials:** Unit pictures and word cards; textbook references pending verification.
+**Learning objective:** Pupils practise language arts 4 using language from Free Time.
+**Teaching materials:** Pictures, word cards and classroom resources.
 
 ## Set Induction
-**Teacher:** Show a relevant picture and elicit two words about Free Time.
-**Pupils:** Name or point to familiar vocabulary.
+**Teacher:** Introduce Free Time with a picture and two questions.
+**Pupils:** Recall familiar words.
 
-## Activity 1
-**Teacher:** Model how to participate in a rhyme or language game; provide examples and check understanding.
-**Pupils:** Follow the model and practise with guidance.
+## Activity 1 — Model
+**Teacher:** Model the language arts 4 task and check understanding.
+**Pupils:** Follow the model and respond.
 
-## Activity 2
-**Teacher:** Organise pair or individual practice and support pupils who need additional modelling.
+## Activity 2 — Guided practice
+**Teacher:** Organise pair or individual practice and provide feedback.
 **Pupils:** Complete the task and share one response.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and give immediate feedback.
-**Pupils:** Demonstrate the target language.
+**Teacher:** Observe one individual response and record feedback.
+**Pupils:** Demonstrate the target skill.
 
 ## Closure
-**Teacher:** Recap the language and invite two pupils to respond.
-**Pupils:** State or demonstrate one thing learned.
+**Teacher:** Recap the lesson and invite two pupils to demonstrate.
+**Pupils:** Share one thing learned.
 
-**Source:** SOW mapping; Teacher's Book sequence not verified.
-**QA:** Usable preliminary draft; revise when Teacher's Book evidence is available.
+**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.

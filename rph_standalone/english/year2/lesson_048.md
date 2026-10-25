@@ -3,28 +3,27 @@
 **Unit:** The old house
 **Main SK/SP:** 4.2 / 4.2.5
 **Complementary SK/SP:** 4.3 / 4.3.1
-**Objective:** Pupils complete a writing 10 task related to The old house.
-**Materials:** Unit pictures, word cards and classroom resources.
+**Learning objective:** Pupils practise writing 10 using language from The old house.
+**Teaching materials:** Pictures, word cards and classroom resources.
 
 ## Set Induction
-**Teacher:** Introduce The old house with a picture and short oral questions.
-**Pupils:** Recall relevant vocabulary.
+**Teacher:** Introduce The old house with a picture and two questions.
+**Pupils:** Recall familiar words.
 
-## Activity 1 — Guided model
-**Teacher:** Demonstrate the target writing 10 skill with examples and check understanding.
-**Pupils:** Follow the model and practise the task.
+## Activity 1 — Model
+**Teacher:** Model the writing 10 task and check understanding.
+**Pupils:** Follow the model and respond.
 
-## Activity 2 — Application
-**Teacher:** Organise individual or pair practice, support weaker pupils and extend confident pupils.
+## Activity 2 — Guided practice
+**Teacher:** Organise pair or individual practice and provide feedback.
 **Pupils:** Complete the task and share one response.
 
 ## Assessment / PBD
-**Teacher:** Observe each pupil's independent response and provide feedback.
-**Pupils:** Demonstrate the skill.
+**Teacher:** Observe one individual response and record feedback.
+**Pupils:** Demonstrate the target skill.
 
 ## Closure
-**Teacher:** Summarise the target language and invite two pupils to respond.
+**Teacher:** Recap the lesson and invite two pupils to demonstrate.
 **Pupils:** Share one thing learned.
 
-**Source:** SOW mapped; Teacher's Book details pending verification.
-**QA:** Preliminary draft for later refinement.
+**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
