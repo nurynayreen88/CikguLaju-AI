@@ -23,8 +23,8 @@ def load_english_rph(year, lesson_no):
         content = path.read_text(encoding="utf-8")
     except (OSError, UnicodeError):
         return None
-    heading = re.search(r"(?im)^#{1,2}[^\\n]*\\blesson\\s*0*" + str(number) + r"\\b", content)
-    metadata = re.search(r"(?im)^\\*\\*Lesson:\\*\\*\\s*0*" + str(number) + r"\\b", content)
+    heading = re.search(r"(?im)^#{1,2}[^\n]*\blesson\s*0*" + str(number) + r"\b", content)
+    metadata = re.search(r"(?im)^\*\*Lesson:\*\*\s*0*" + str(number) + r"\b", content)
     if not content.strip() or not (heading or metadata):
         return None
     return content
