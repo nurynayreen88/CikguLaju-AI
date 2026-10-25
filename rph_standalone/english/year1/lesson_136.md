@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Preview SB p52, establish the task, listen for required information, replay for confirmation and use the results for a short supported response.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check one listening answer and ask for the clue supporting it.
 Pairs compare listening evidence before class confirmation.
 
 ## Closure (teacher-developed proposal; pending review)
