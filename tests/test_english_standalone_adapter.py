@@ -39,6 +39,13 @@ class EnglishStandaloneAdapterTests(unittest.TestCase):
     def test_missing_lesson_uses_legacy_generator(self):
         self.assertEqual(resolve_rph_with_fallback(1, "BI", 161, lambda: "legacy"), "legacy")
 
+    def test_invalid_numeric_identifiers_do_not_match(self):
+        for value in (True, 1.5, "1.5", -1, "1/2"):
+            with self.subTest(value=value):
+                self.assertIsNone(load_english_y1_rph(value))
+        self.assertIsNone(get_english_y1_rph(1.5, "English", 16))
+        self.assertIsNone(get_english_y1_rph(True, "English", 16))
+
     def test_aliases(self):
         for name in ("English", "Bahasa Inggeris", "BI"):
             with self.subTest(subject=name):
