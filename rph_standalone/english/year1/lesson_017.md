@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Replay the story with books closed, then have pairs read and number the pictures on SB p9; compare pair answers before whole-class checking.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Listen to the story without looking at the book, then work in pairs to number the pictures on Student's Book p9 and compare answers.
 
 ### Activity 2 — Workbook
 **Teacher:** On WB p9 pupils draw and write examples showing what they know from the unit.
