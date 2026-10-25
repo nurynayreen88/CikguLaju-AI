@@ -1,0 +1,32 @@
+name: English standalone RPH QA
+on:
+  push:
+    branches:
+      - staging/english-standalone-rph-20261025
+  workflow_dispatch:
+
+jobs:
+  activity-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run activity regression tests
+        run: python -m unittest discover -s tests -p 'test_english_standalone_activities.py' -v
+      - name: Generate standalone draft and audit
+        run: |
+          python tools/build_english_standalone_rph.py
+          python tools/merge_english_standalone_activity_proposals.py
+      - name: Upload QA artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-standalone-qa
+          path: |
+            output/english_standalone_verified_drafts.json
+            output/english_standalone_activity_audit.json
+            output/english_standalone_supplemented_drafts.json
+          retention-days: 14
