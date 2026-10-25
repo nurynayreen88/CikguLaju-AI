@@ -9,7 +9,9 @@
 **Audio:** Use verified CD2 Tracks 06, 07 and 08.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the SB p48 listening pictures and review the food words needed for the task.
+**Pupils:** Identify two pictured foods before listening.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Look at the food pictures on SB p48, listen for the overall meaning, listen again for specific information and complete the page task.
