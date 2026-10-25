@@ -95,8 +95,13 @@ def install(ns):
             if pending and float(pending["amount"]) != 20.0:
                 return send(cid, "⚠️ Ada permohonan pembayaran lain yang belum selesai. "
                             "Sila selesaikan permohonan tersebut dahulu.")
-            rid = (pending or {}).get("id") or ns["_new_payment_request"](cid, None, 20.0)
-            ns["_set_payment_note"](rid, "awaiting_proof")
+            if pending and pending.get("notes") == "proof_received_admin_notified":
+                return send(cid, "⌛ Resit Pioneer RM20 sudah diterima dan menunggu semakan admin. Tidak perlu hantar semula.")
+            if pending:
+                rid = pending["id"]
+            else:
+                rid = ns["_new_payment_request"](cid, None, 20.0)
+                ns["_set_payment_note"](rid, "awaiting_proof")
             state.setdefault(cid, {})["waiting"] = "payment_proof"
             # Existing QR bytes are reused, not copied into a new asset.
             return send_pioneer_qr(cid, rid)
