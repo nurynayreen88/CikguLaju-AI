@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p16 listen to five children describing desks, draw lines to match speakers/desks, compare in pairs and replay to check.
-**Pupils:** Listen to five desk descriptions, match each speaker to a desk picture and justify the choice using objects shown.
+**Pupils:** Listen to five desk descriptions; match speakers to desk pictures and explain the clues.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p16: read descriptions and mark each statement with a tick or cross.
