@@ -3,27 +3,28 @@
 **Unit:** At the beach
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 2.2 / 2.2.2
-**Learning objective:** Pupils can practise an oral exchange using language related to At the beach.
-**Materials:** Unit pictures, word cards, classroom resources; textbook pages pending verification.
+**Objective:** Pupils practise speaking 31 using language from At the beach.
+**Materials:** Topic pictures, word cards and classroom resources.
 
 ## Set Induction
-**Teacher:** Show a picture linked to At the beach and ask two short questions.
-**Pupils:** Recall and share familiar vocabulary.
+**Teacher:** Show a picture of At the beach, ask two questions and elicit key words.
+**Pupils:** Recall relevant words.
 
-## Activity 1 — Model and practise
-**Teacher:** Demonstrate how to practise an oral exchange; provide examples and guide responses.
-**Pupils:** Follow the model and complete guided practice.
+## Activity 1 — Guided learning
+**Teacher:** Model the target speaking 31 task with clear examples.
+**Pupils:** Follow the model and practise with guidance.
 
-## Activity 2 — Apply
-**Teacher:** Organise pair or individual practice; provide extra modelling when needed.
-**Pupils:** Complete the task, exchange feedback and share one answer.
+## Activity 2 — Practice
+**Teacher:** Organise individual or pair practice and give feedback.
+**Pupils:** Complete the task and share one response.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response against the objective and give feedback.
-**Pupils:** Demonstrate the target language independently.
+**Teacher:** Check one individual response against the objective and record feedback.
+**Pupils:** Demonstrate the target skill.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** State or show one thing learned.
+**Teacher:** Summarise the lesson and invite pupil examples.
+**Pupils:** Share one thing learned.
 
-**Source:** SOW mapping only. **QA:** Preliminary usable draft; Teacher's Book fidelity and A4 review pending.
+**Source:** SOW mapping only; Teacher's Book steps and page references pending review.
+**QA:** Preliminary standalone RPH; revise later.
