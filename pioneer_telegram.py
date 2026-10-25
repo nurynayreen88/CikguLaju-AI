@@ -54,7 +54,7 @@ def install(ns):
         # Show the opt-in entry once per user session, not on every menu.
         user_state = state.setdefault(cid, {})
         if not user_state.get("_pioneer_offer_shown") and not has_pioneer(sb, cid):
-            send(cid, "🏆 <b>Jadi Pioneer — RM20 sekali sahaja</b>\\n"
+            send(cid, "🏆 <b>Jadi Pioneer — RM20 sekali sahaja</b>\n"
                  "Akses kekal sepanjang CikguLaju beroperasi, tanpa bayaran bulanan atau tahunan.",
                  [[{"text": "🏆 Jadi Pioneer — RM20", "callback_data": "pioneer_join"}]])
             user_state["_pioneer_offer_shown"] = True
@@ -66,7 +66,7 @@ def install(ns):
                 return send(cid, "⛔ Admin sahaja.")
             return send(cid, "🏆 <b>PENGESAHAN PIONEER RM20</b>\n"
                         f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
-                        "Semak bukti bayaran dan transaksi bank secara manual sebelum lulus.",
+                        "Semak transaksi masuk dalam TNG Merchant secara manual sebelum lulus.",
                         [[{"text": "✅ Sahkan Pioneer", "callback_data": f"admin_approve|{request_id}"}],
                          [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
         return original_card(cid, request_id)
