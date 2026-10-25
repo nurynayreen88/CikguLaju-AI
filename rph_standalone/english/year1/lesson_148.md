@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Read SB p57 for overall meaning, reread to find the requested information and complete the textbook activity before pair checking.
 Read SB p57 for overall meaning, reread for task-specific information and complete the textbook activity with pair comparison.
 
 ## Assessment
