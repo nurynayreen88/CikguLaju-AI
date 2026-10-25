@@ -201,6 +201,8 @@ def install(g):
             except (ValueError, IndexError):
                 return menu(cid)
             return commit_pdp(cid, row)
+        if value in ("home", "choose_grade"):
+            state.pop("_pjpk_v2616_selection_scope", None)
         return old_callback(cid, data)
 
     g["callback"] = callback
