@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data" / "english_y1y2_sow_master_320.json"
 GUIDES = sorted((ROOT / "data").glob("teacher_book_guidance_y1_batch*.json"))
+ACCEPTED = {"VERIFIED_TB_SCAN", "SOURCE_ALIGNED_GUIDANCE", "VERIFIED_MAPPING_GUIDANCE"}
 
 def build():
     sow = json.loads(SOURCE.read_text(encoding="utf-8"))
@@ -21,7 +22,7 @@ def build():
             if key in seen:
                 raise ValueError(f"Duplicate lesson: {key}")
             seen.add(key)
-            if guide.get("verification_status") != "VERIFIED_TB_SCAN":
+            if guide.get("verification_status") not in ACCEPTED:
                 continue
             if key not in lessons:
                 raise ValueError(f"Missing SOW lesson: {key}")
@@ -32,8 +33,8 @@ def build():
                 "year": key[0], "lesson_no": key[1], "lesson_name": row[1],
                 "unit": row[2], "main_sk": row[3], "main_sp": row[4],
                 "complementary_sk": row[5], "complementary_sp": row[6],
-                "objective_source": guide["aims"],
-                "success_evidence": guide["checking_feedback"],
+                "objective_source": guide.get("aims", ""),
+                "success_evidence": guide.get("checking_feedback", ""),
                 "activities": [
                     {"phase": phase, "procedure": guide[field], "source_field": field}
                     for phase, field in (
@@ -47,7 +48,8 @@ def build():
                 "student_book_pages": guide.get("sb_pages", []),
                 "teacher_book_pages": guide.get("tb_pages", []),
                 "audio": guide.get("audio_procedure", ""),
-                "source": "VERIFIED_TB_SCAN",
+                "source": guide["verification_status"],
+                "requires_teacher_book_confirmation": guide["verification_status"] != "VERIFIED_TB_SCAN",
                 "status": "DRAFT_PENDING_ACTIVITY_AND_A4_QA"
             })
     return sorted(records, key=lambda r: (r["year"], r["lesson_no"]))
