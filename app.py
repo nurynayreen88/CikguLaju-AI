@@ -46424,7 +46424,7 @@ def callback(cid, d):
         kb = [[{'text': f'Tahun {n}', 'callback_data': f'rpt2027_level_y{n}'}] for n in range(1, 7)]
         kb += [[{'text': f'Tingkatan {n}', 'callback_data': f'rpt2027_level_f{n}'}] for n in range(1, 6)]
         kb.append([{'text': '🏠 Menu Utama', 'callback_data': 'home'}])
-        return send(cid, '📅 <b>RPT 2027</b>\\n\\nPilih Tahun atau Tingkatan. RPT hanya boleh dimuat turun setelah fail disahkan.', kb)
+        return send(cid, '📅 <b>RPT 2027</b>\n\nPilih Tahun atau Tingkatan. RPT hanya boleh dimuat turun setelah fail disahkan.', kb)
     if ds.startswith('rpt2027_level_'):
         level = ds[len('rpt2027_level_'):]
         if level not in tuple(f'y{n}' for n in range(1, 7)) + tuple(f'f{n}' for n in range(1, 6)):
@@ -46433,7 +46433,7 @@ def callback(cid, d):
         kb = [[{'text': name, 'callback_data': f'rpt2027_subject_{level}_{code}'}]
               for code, name in _RPT2027_SUBJECTS]
         kb.append([{'text': '⬅️ Pilih Tahun / Tingkatan', 'callback_data': 'rpt2027_home'}])
-        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\\n\\nPilih subjek:', kb)
+        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\n\nPilih subjek:', kb)
     if ds.startswith('rpt2027_subject_'):
         parts = ds.split('_')
         if len(parts) != 4:
@@ -46449,7 +46449,7 @@ def callback(cid, d):
               [{'text': 'Kumpulan B', 'callback_data': f'rpt2027_group_{level}_{code}_B'}],
               [{'text': '⬅️ Pilih Subjek', 'callback_data': f'rpt2027_level_{level}'}],
               [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]]
-        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\\nSubjek: <b>{names[code]}</b>\\n\\nPilih kumpulan takwim persekolahan:', kb)
+        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\nSubjek: <b>{names[code]}</b>\n\nPilih kumpulan takwim persekolahan:', kb)
     if ds.startswith('rpt2027_group_'):
         parts = ds.split('_')
         if len(parts) != 5:
@@ -46460,6 +46460,6 @@ def callback(cid, d):
                 or code not in names or group not in ('A', 'B')):
             return _RPT2027_PREVIOUS_CALLBACK(cid, d)
         label = ('Tahun ' if level[0] == 'y' else 'Tingkatan ') + level[1:]
-        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\\nSubjek: <b>{names[code]}</b>\\nKumpulan: <b>{group}</b>\\n\\n📝 Status: Dalam pembangunan / semakan. Fail Word belum disahkan untuk muat turun.', [[{'text': '⬅️ Tukar Kumpulan', 'callback_data': f'rpt2027_subject_{level}_{code}'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
+        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\nSubjek: <b>{names[code]}</b>\nKumpulan: <b>{group}</b>\n\n📝 Status: Dalam pembangunan / semakan. Fail Word belum disahkan untuk muat turun.', [[{'text': '⬅️ Tukar Kumpulan', 'callback_data': f'rpt2027_subject_{level}_{code}'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
     return _RPT2027_PREVIOUS_CALLBACK(cid, d)
 # === END RPT 2027 MENU ===
