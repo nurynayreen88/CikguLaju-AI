@@ -9,7 +9,9 @@
 **Audio:** SB story uses verified CD2 Track 11; WB uses verified CD2 Track 12.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the first SB pp50–51 story frame and ask pupils to predict what happens next.
+**Pupils:** Identify a character or food item and make one simple prediction.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Look at the pictures on SB pp50–51 and predict events; listen or read, identify the story order and practise lines in assigned roles.
