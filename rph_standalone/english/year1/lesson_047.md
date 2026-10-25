@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p21 pairs make a poster, then use classmates' posters for a memory task about school objects and colours; review classroom-object vocabulary through the picture dictionary.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Work in pairs to make a poster of classroom objects and colours; inspect classmates' posters, recall details and review the picture dictionary.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p21: draw and write examples of what pupils know from the unit.
