@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.3  
 **Complementary SK / SP:** 3.2 / 3.2.1  
 **Learning objective:** Present the unit picture story and review classroom objects and imperatives.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify two events or actions from the SB pp14–15 story.
 **Teaching materials:** Student's Book pp. 14, 15, Workbook activity; Teacher's Book pp. 14  
 **Audio guidance:** SB story uses CD1 Track 21; WB p14 uses CD1 Track 22.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will ask pupils to point to two story frames and describe the actions.
 **Teacher:** Pairs compare before whole-class checking; pause at selected story frames to check comprehension.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
