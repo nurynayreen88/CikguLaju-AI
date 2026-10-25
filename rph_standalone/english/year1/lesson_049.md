@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Use the unit song on SB p23: establish the scene, listen for toy words, replay for repetition and singing, then personalise with pupils' favourite toys.
+**Pupils (editorial, source-aligned):** Look at the song scene on SB p23, listen for toy names, repeat the lines, sing together and tell a partner which toy is their favourite.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
