@@ -10,7 +10,7 @@ from scripts.pjpk_v26_16_adapter import ready_pdp
 
 SCHEMA = """CREATE TABLE pjpk_ready_pdp (
  id INTEGER PRIMARY KEY, year_label TEXT, subject TEXT,
- content_verified INTEGER, sequence_verified INTEGER, schedule_verified INTEGER,
+ sequence_no INTEGER, content_verified INTEGER, sequence_verified INTEGER, schedule_verified INTEGER,
  topic TEXT
 )"""
 
@@ -21,14 +21,14 @@ class PJPKAdapterSmokeTests(unittest.TestCase):
         with sqlite3.connect(self.path) as con:
             con.execute(SCHEMA)
             con.executemany("""INSERT INTO pjpk_ready_pdp
-                (id,year_label,subject,content_verified,sequence_verified,schedule_verified,topic)
-                VALUES (?,?,?,?,?,?,?)""", [
-                (1,"Tahun 5","Pendidikan Kesihatan",1,1,1,"Existing verified"),
-                (2259,"Tahun 5","Pendidikan Kesihatan",1,1,0,"Not yet schedule verified"),
-                (2260,"Tahun 5","Pendidikan Kesihatan",1,0,1,"Not yet sequence verified"),
-                (2261,"Tahun 5","Pendidikan Kesihatan",0,1,1,"Not yet content verified"),
-                (2,"Tahun 4","Pendidikan Kesihatan",1,1,1,"Other year"),
-                (3,"Tahun 5","Pendidikan Jasmani",1,1,1,"Other subject"),
+                (id,year_label,subject,sequence_no,content_verified,sequence_verified,schedule_verified,topic)
+                VALUES (?,?,?,?,?,?,?,?)""", [
+                (1,"Tahun 5","Pendidikan Kesihatan",1,1,1,1,"Existing verified"),
+                (2259,"Tahun 5","Pendidikan Kesihatan",2,1,1,0,"Not yet schedule verified"),
+                (2260,"Tahun 5","Pendidikan Kesihatan",3,1,0,1,"Not yet sequence verified"),
+                (2261,"Tahun 5","Pendidikan Kesihatan",4,0,1,1,"Not yet content verified"),
+                (2,"Tahun 4","Pendidikan Kesihatan",1,1,1,1,"Other year"),
+                (3,"Tahun 5","Pendidikan Jasmani",1,1,1,1,"Other subject"),
             ])
     def tearDown(self):
         self.temp.cleanup()
@@ -47,7 +47,7 @@ class PJPKAdapterSmokeTests(unittest.TestCase):
             con.executemany("""INSERT INTO pjpk_ready_pdp
                 (id,year_label,subject,content_verified,sequence_verified,schedule_verified,topic)
                 VALUES (?,?,?,?,?,?,?)""", [
-                (item["entry_id"], "Tahun 2", "Pendidikan Kesihatan", 0, 0, 0, item["topic"])
+                (item["entry_id"], "Tahun 2", "Pendidikan Kesihatan", item["entry_id"], 0, 0, 0, item["topic"])
                 for item in items
             ])
         self.assertEqual(len(items), 18)
