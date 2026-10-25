@@ -7,18 +7,18 @@ No database, deployment or bot routing is changed by this module.
 from pathlib import Path
 import re
 
-LESSON_DIR = Path(__file__).resolve().parent / "rph_standalone" / "english" / "year1"
+LESSON_ROOT = Path(__file__).resolve().parent / "rph_standalone" / "english"
 LESSON_COUNT = 160
 
 
-def load_english_y1_rph(lesson_no):
-    """Return a complete Markdown lesson or None for an invalid/missing lesson."""
+def load_english_rph(year, lesson_no):
+    """Return a stored English lesson for Year 1 or 2, or None."""\n    if isinstance(year, bool) or str(year).strip() not in {"1", "2"}:\n        return None
     if isinstance(lesson_no, bool) or not str(lesson_no).strip().isascii() or not str(lesson_no).strip().isdigit():
         return None
     number = int(str(lesson_no).strip())
     if not 1 <= number <= LESSON_COUNT:
         return None
-    path = LESSON_DIR / f"lesson_{number:03d}.md"
+    path = LESSON_ROOT / f"year{int(year)}" / f"lesson_{number:03d}.md"
     try:
         text = path.read_text(encoding="utf-8")
     except (OSError, UnicodeError):
@@ -31,15 +31,15 @@ def load_english_y1_rph(lesson_no):
     return text
 
 
-def get_english_y1_rph(year, subject, lesson_no):
+def load_english_y1_rph(lesson_no):\n    """Backward-compatible Year 1 lookup."""\n    return load_english_rph(1, lesson_no)\n\n\ndef get_english_rph(year, subject, lesson_no):
     """Guarded subject/year lookup; never intercepts other subjects or years."""
     if isinstance(year, bool) or not str(year).strip().isascii() or not str(year).strip().isdigit():
         return None
     year_number = int(str(year).strip())
     subject_key = re.sub(r"[^a-z]", "", str(subject).casefold())
-    if year_number != 1 or subject_key not in {"english", "bahasainggeris", "bi"}:
+    if year_number not in {1, 2} or subject_key not in {"english", "bahasainggeris", "bi"}:
         return None
-    return load_english_y1_rph(lesson_no)
+    return load_english_rph(year_number, lesson_no)
 
 
 def resolve_rph_with_fallback(year, subject, lesson_no, legacy_generator, *args, **kwargs):
@@ -51,7 +51,11 @@ def resolve_rph_with_fallback(year, subject, lesson_no, legacy_generator, *args,
     """
     if not callable(legacy_generator):
         raise TypeError("legacy_generator must be callable")
-    standalone = get_english_y1_rph(year, subject, lesson_no)
+    standalone = get_english_rph(year, subject, lesson_no)
     if standalone is not None:
         return standalone
     return legacy_generator(*args, **kwargs)
+
+
+# Backward-compatible subject lookup for existing callers.
+get_english_y1_rph = get_english_rph
