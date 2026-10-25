@@ -1,0 +1,30 @@
+# ENGLISH YEAR 1 — STANDALONE RPH
+
+**Lesson:** 59 — Reading 12  
+**Unit:** Let’s Play!  
+**Main SK / SP:** 3.2 / 3.2.1  
+**Complementary SK / SP:** 1.2 / 1.2.3  
+**Learning aim (source):** Consolidate the story and practise key language from the go-kart episode.  
+**Student's Book pages:** 26  
+**Teacher's Book pages:** Not recorded in this guidance  
+**Audio guidance:** No specific track verified in this record
+
+### Set Induction
+**Teacher / task guidance:** Teacher displays two pictures from the go-kart story. Pupils recall which event happened first.
+**Provenance:** Teacher-developed proposal; not verified Teacher's Book text
+
+### Activity 1 — Student's Book
+**Teacher / task guidance:** Revisit the story, use the follow-up pictures/tasks to check understanding, then practise target phrases orally in pairs.
+**Provenance:** VERIFIED_TB_SCAN
+
+### Assessment / PBD
+**Teacher / task guidance:** Pairs justify answers using story evidence before whole-class feedback.
+**Provenance:** VERIFIED_TB_SCAN
+
+### Closure
+**Teacher / task guidance:** Pairs choose one story picture and say a short phrase from the episode; teacher checks meaning.
+**Provenance:** Teacher-developed proposal; not verified Teacher's Book text
+
+**Source classification:** VERIFIED_TB_SCAN.  
+**QA status:** DRAFT — teacher review, pupil-action specificity and A4 layout check pending.  
+**Editorial rule:** No inferred audio tracks, workbook pages or Teacher's Book citations.
