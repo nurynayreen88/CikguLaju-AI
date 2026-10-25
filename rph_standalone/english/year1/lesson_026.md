@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Use SB p12 song: identify desk objects, pre-teach 'in a mess', listen, repeat verse by verse and sing; then personalise the song with pupils' own classroom objects and complete the desk-matching task.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Follow the Student's Book task and demonstrate the target classroom language in the sequence described by the teacher.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p12: follow the lines and build sentences using It's my / It isn't my.
