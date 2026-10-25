@@ -8,7 +8,7 @@
 **Student's Book:** 37
 
 ## Activity 1 — Textbook sequence
-**Teacher:** Use SB p37 pictures/text to complete the textbook task, compare answers in pairs, then reuse the language orally.
+**Teacher:** Guide pupils through the pictures and text on SB p37, check responses against visual evidence and elicit short oral answers.
 **Pupils:** Examine the pictures and text on SB p37, complete the textbook task, compare answers with a partner and use the same language in short oral responses.
 
 ## Assessment / PBD
@@ -16,8 +16,8 @@
 **Pupils:** Give responses and explain or correct them during checking.
 
 ## Closure — Teacher-developed proposal (not verified Teacher's Book)
-**Teacher:** Invite a brief independent consolidation response and check pupils' understanding.
-**Pupils:** Pupils select one picture from SB p37, say a short answer using the lesson language and point to the visual clue supporting it.
+**Teacher:** Point to one picture and ask for a final independent answer supported by a visual clue.
+**Pupils:** Select one picture from SB p37, give a short answer using the lesson language and point to the supporting clue.
 
 **Provenance:** SOURCE_ALIGNED_GUIDANCE; teacher review required.  
 **QA:** Draft; verify pedagogy, pupil-action wording and one-page A4 layout. No unverified audio or workbook reference added.
