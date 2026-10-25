@@ -9,7 +9,7 @@
 
 ## Activity 1 — Textbook sequence
 **Teacher:** Reread the relevant SB p39 section, complete the follow-up comprehension task and compare evidence in pairs.
-**Pupils:** Read again the relevant SB p39 section, complete the follow-up comprehension task and compare evidence in pairs.
+**Pupils:** Reread the relevant story section on SB p39, complete the comprehension task and show a partner the picture or words supporting each answer.
 
 ## Assessment / PBD
 **Teacher:** Pupils explain where in the story/picture they found each answer.
