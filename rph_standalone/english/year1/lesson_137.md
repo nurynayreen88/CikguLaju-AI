@@ -4,6 +4,7 @@
 **Main SK/SP:** 3.2 / 3.2.3
 **Complementary SK/SP:** 2.1 / 2.1.1
 **Learning aim:** Develop reading comprehension using the Unit 4 textbook page.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify the main idea and at least one supporting detail from SB p53.
 **Student's Book:** 53
 **Audio:** No audio required in the current verified mapping.
 
