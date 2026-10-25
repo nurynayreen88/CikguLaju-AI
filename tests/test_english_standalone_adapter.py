@@ -46,6 +46,16 @@ class EnglishStandaloneAdapterTests(unittest.TestCase):
         self.assertIsNone(get_english_y1_rph(1.5, "English", 16))
         self.assertIsNone(get_english_y1_rph(True, "English", 16))
 
+    def test_metadata_style_lesson_header(self):
+        text = load_english_y1_rph(16)
+        self.assertIsNotNone(text)
+        self.assertIn("**Lesson:** 16", text)
+
+    def test_heading_style_lesson_header(self):
+        text = load_english_y1_rph(1)
+        self.assertIsNotNone(text)
+        self.assertIn("Lesson 1:", text)
+
     def test_aliases(self):
         for name in ("English", "Bahasa Inggeris", "BI"):
             with self.subTest(subject=name):
