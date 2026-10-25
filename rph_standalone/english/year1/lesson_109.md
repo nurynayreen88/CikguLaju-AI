@@ -4,6 +4,7 @@
 **Main SK/SP:** 1.2 / 1.2.3
 **Complementary SK/SP:** 1.2 / 1.2.2
 **Learning aim:** Develop listening using the Unit 3 textbook task.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify the overall answer and at least one requested detail from the SB p44 listening task.
 **Student's Book:** 44
 **Audio:** No verified track recorded
 
@@ -15,7 +16,7 @@ Pre-listening review of the relevant pet vocabulary and pictures.
 **Pupils:** Study the SB p44 listening task, listen for the main idea and again for specific details, then compare responses.
 
 ## Assessment / PBD
-Replay only where needed and ask pupils what clue they heard.
+**Teacher:** Check the responses after listening and ask pupils to identify the heard clue for one answer; replay only if source audio is available.
 
 ## Closure (teacher-developed proposal, pending review)
 Teacher repeats one short listening cue; pupils identify the matching picture.
