@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.4  
 **Complementary SK / SP:** 2.2 / 2.2.2  
 **Learning objective:** Develop listening and acting through sequenced classroom instructions.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can follow two classroom instructions in the correct sequence from SB p20.
 **Teaching materials:** Student's Book pp. 20, Workbook activity; Teacher's Book pp. 20  
 **Audio guidance:** SB p20 uses CD1 Track 27.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will observe pupils performing two steps in the instructed order.
 **Teacher:** Pairs compare sequencing answers before class checking; monitor whether instructions are followed in order.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
