@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.2  
 **Complementary SK / SP:** 1.2 / 1.2.5  
 **Learning aim (source):** Follow the go-kart picture story and recycle unit language.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify two events in order from the SB p25 go-kart story.
 **Student's Book pages:** 25  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will sequence two story frames and identify one action.
 **Teacher / task guidance:** Ask pupils to order key events and identify who says selected lines.
 **Provenance:** VERIFIED_TB_SCAN
 
