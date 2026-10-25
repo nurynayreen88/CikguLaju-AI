@@ -19,6 +19,7 @@ Use SB p47 for the textbook reading/task, model the required response, allow pai
 Use the verified WB activity linked to this page.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check one reading response and ask pupils to identify the supporting word or picture.
 Pupils identify the textual/picture clue supporting each answer.
 
 ## Closure (teacher-developed proposal; pending review)
