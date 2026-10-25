@@ -4,6 +4,7 @@
 **Main SK/SP:** 2.1 / 2.1.1
 **Complementary SK/SP:** 3.2 / 3.2.3
 **Learning aim:** Consolidate Unit 4 language through the textbook speaking task.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can perform one complete food-language speaking exchange using the SB p55 stimulus.
 **Student's Book:** 55
 **Audio:** No audio required in the current verified mapping.
 
