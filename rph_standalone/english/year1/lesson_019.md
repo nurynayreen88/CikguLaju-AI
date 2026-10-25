@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Use SB p11 listening to number the pictures, model the target questions and answers with real objects, replay for choral repetition, then run the guessing game in groups.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Follow the Student's Book task, practise the target classroom language with a partner and respond to the teacher's checks.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p11: listen and write the classroom-object words, then read statements and tick the correct box.
