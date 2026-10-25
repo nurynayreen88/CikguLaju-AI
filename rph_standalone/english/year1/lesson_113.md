@@ -10,6 +10,7 @@
 Recall the earlier speaking work from the same page.
 
 ## Activity 1 — Student's Book
+**Pupils (editorial, source-aligned):** Read the written language on SB p42, identify familiar words and complete the reading task using the page cues.
 Return to SB p42 and shift attention to reading/recognising the written language in the task; identify familiar words and complete the SOW-aligned reading focus.
 
 ## Assessment / PBD
