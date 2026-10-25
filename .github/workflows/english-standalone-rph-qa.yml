@@ -21,6 +21,24 @@ jobs:
         run: |
           python tools/build_english_standalone_rph.py
           python tools/merge_english_standalone_activity_proposals.py
+      - name: Install PDF renderer
+        run: python -m pip install reportlab
+      - name: Render draft A4 lesson PDFs
+        run: python tools/render_english_standalone_rph_a4.py
+      - name: Check draft PDF page counts
+        run: |
+          python -m pip install pypdf
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          files = sorted(Path('output/english_rph_a4_review').glob('*.pdf'))
+          multi = [(p.name, len(PdfReader(str(p)).pages)) for p in files if len(PdfReader(str(p)).pages) != 1]
+          print(f"Draft PDFs: {len(files)}; not one page: {len(multi)}")
+          for item in multi:
+              print(item)
+          if not files or multi:
+              raise SystemExit("A4 QA FAILED: missing PDFs or multi-page lessons")
+          PY
       - name: Upload QA artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -29,4 +47,5 @@ jobs:
             output/english_standalone_verified_drafts.json
             output/english_standalone_activity_audit.json
             output/english_standalone_supplemented_drafts.json
+            output/english_rph_a4_review/*.pdf
           retention-days: 14
