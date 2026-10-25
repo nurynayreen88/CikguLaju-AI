@@ -5,6 +5,7 @@
 **Main SK/SP:** 3.1 / 3.1.3  
 **Complementary SK/SP:** 3.1 / 3.1.4  
 **Objective:** Use the story follow-up to develop reading comprehension.  
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the SB p39 comprehension task and identify evidence for one answer.
 **Student's Book:** 39
 
 ## Activity 1 — Textbook sequence
@@ -12,6 +13,7 @@
 **Pupils:** Reread the relevant story section on SB p39, complete the comprehension task and show a partner the picture or words supporting each answer.
 
 ## Assessment / PBD
+**Observable evidence (teacher-developed):** Check one response from each pupil against the story words or picture used as evidence.
 **Teacher:** Pupils explain where in the story/picture they found each answer.
 **Pupils:** Give responses and explain or correct them during checking.
 
