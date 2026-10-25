@@ -24,7 +24,7 @@ class PioneerSupabaseTests(unittest.TestCase):
             calls.append((method, path, kwargs))
             return [{"entitlement": "PIONEER_LIFETIME"}]
         grant_pioneer(request, 42, "receipt-1", 7, True)
-        self.assertEqual(calls[0][2]["json"]["approved_by"], 7)
+        self.assertEqual(calls[-1][2]["json"]["approved_by"], 7)
 
 if __name__ == "__main__":
     unittest.main()
