@@ -9,7 +9,9 @@
 **Audio:** No verified track recorded
 
 ## Set Induction
-Use picture prompts to reactivate the language needed for the task.
+**Teacher:** Show a pet picture from SB p42 and prompt recall of the modelled exchange.
+**Pupils:** Name the pet and recall one word or phrase from the exchange.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1 — Student's Book
 **Teacher:** Model the SB p42 speaking exchange, rehearse the response with the class and organise repeated pair or small-group turns.
