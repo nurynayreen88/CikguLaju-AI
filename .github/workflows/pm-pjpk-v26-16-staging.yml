@@ -75,6 +75,10 @@ jobs:
               'SUBJECTS_BY_GRADE': {},
           }
           install(g)
+          first_callback = g['callback']
+          install(g)
+          assert g['callback'] is first_callback, 'PJPK install wrapped callback twice'
+          assert g['SUBJECTS_BY_GRADE']['Tahun 1'].count('Pendidikan Jasmani') == 1
           g['callback'](1, 'sub_Pendidikan Jasmani')
           assert events and events[-1][0] == 'SEND', events
           assert '_pjpk_v2616_rows' not in state[1], 'Selectable rows must not be cached in session'
