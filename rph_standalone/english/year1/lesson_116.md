@@ -10,8 +10,8 @@
 Review key Pet Show words and one favourite activity from the unit.
 
 ## Activity 1 — Student's Book
-**Pupils (editorial, source-aligned):** Use the SB p45 model to complete the textbook task and write a short individual response.
-Use SB p45 to complete the final Unit 3 textbook task, support pupils with the page model, then allow an individual written response.
+**Teacher:** Show the SB p45 model, guide the final Unit 3 task and support pupils in producing individual written responses.
+**Pupils:** Use the SB p45 model to complete the textbook task and write a short individual response.
 
 ## Assessment / PBD
 Check completion against the page model and review common language points with the class.
