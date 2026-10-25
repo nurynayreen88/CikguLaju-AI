@@ -22,7 +22,9 @@ Preview SB p52, establish the task, listen for required information, replay for 
 Pairs compare listening evidence before class confirmation.
 
 ## Closure (teacher-developed proposal; pending review)
-Pupils read one completed food-related word or sentence aloud.
+**Teacher:** Ask pupils to select one completed word or sentence from SB p52 and read it aloud.
+**Pupils:** Read one completed food-related word or sentence aloud.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
