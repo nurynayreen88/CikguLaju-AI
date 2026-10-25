@@ -4,6 +4,7 @@
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 1.2 / 1.2.1
 **Learning aim:** Introduce and practise food vocabulary in the Unit 4 opening context.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify and name at least three food items on SB p46.
 **Student's Book:** 46
 **Audio:** Use verified SB p46 audio CD2 Tracks 02 and 03.
 
