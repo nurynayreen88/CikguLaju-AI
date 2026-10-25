@@ -1,0 +1,2660 @@
+{
+  "schema_version": "1.1",
+  "purpose": "Teacher's Book-derived lesson-specific structured RPH drafts; no invented objectives, audio or activity details",
+  "quality_summary": {
+    "total": 51,
+    "verified_scan": 26,
+    "needs_review": 37,
+    "missing_sections": 35
+  },
+  "records": [
+    {
+      "id": "english_y1_lesson_016",
+      "year": "Tahun 1",
+      "lesson_no": 16,
+      "lesson_label": "Reading 4",
+      "unit": "Friends",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.3"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          8,
+          9
+        ],
+        "teacher_book_pages": [
+          8
+        ],
+        "workbook_instructions": "Use WB p8 to review story phrases and match each Super Friend to the correct power.",
+        "audio_instructions": "Use the verified story recording for SB pp8–9; WB p8 uses CD1 Track 11."
+      },
+      "learning_focus": "Present the picture story and recycle language from Friends.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Review pupils' names and ages through short teacher-pupil exchanges."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Review the four Super Friends, play the story, pause to identify characters and the cat, then replay frame by frame for pupils to listen and repeat."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "Use WB p8 to review story phrases and match each Super Friend to the correct power."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Use the verified story recording for SB pp8–9; WB p8 uses CD1 Track 11."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pause at key frames and ask pupils to identify who is speaking; check WB responses as a class."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Put pupils in groups of five to rehearse and perform the story roles."
+        }
+      ],
+      "extension": "Call out short phrases from the story and ask pupils to identify the speaker.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_017",
+      "year": "Tahun 1",
+      "lesson_no": 17,
+      "lesson_label": "Writing 4",
+      "unit": "Friends",
+      "standards": {
+        "main": {
+          "cs": "4.2",
+          "ls": "4.2.1"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          9
+        ],
+        "teacher_book_pages": [
+          9
+        ],
+        "workbook_instructions": "On WB p9 pupils draw and write examples showing what they know from the unit.",
+        "audio_instructions": "Replay the previously verified Friends story recording; no new exact track is introduced on this TB page."
+      },
+      "learning_focus": "Discuss the story meaning, recycle unit language and help pupils reflect on learning.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Mime the Super Friends' powers and let pupils identify the character."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Replay the story with books closed, then have pairs read and number the pictures on SB p9; compare pair answers before whole-class checking."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "On WB p9 pupils draw and write examples showing what they know from the unit."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Replay the previously verified Friends story recording; no new exact track is introduced on this TB page."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare answers with another pair before class feedback."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Review numbers 1–10 using the Workbook picture dictionary in pairs."
+        }
+      ],
+      "extension": "Spell familiar unit words aloud and ask pupils to identify and locate the words.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_018",
+      "year": "Tahun 1",
+      "lesson_no": 18,
+      "lesson_label": "Listening 4",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.1"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          10
+        ],
+        "teacher_book_pages": [
+          10
+        ],
+        "workbook_instructions": "WB p10: match classroom-object words to pictures, then colour the objects as instructed.",
+        "audio_instructions": "SB p10 uses CD1 Tracks 12 and 13."
+      },
+      "learning_focus": "Present and practise classroom objects and perform the unit chant.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Run a true/false colour review using objects around the classroom."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Present classroom-object flashcards, play the SB p10 recording for pupils to point and repeat, then use the chant first as a class and then in groups while pupils hold up relevant objects."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p10: match classroom-object words to pictures, then colour the objects as instructed."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p10 uses CD1 Tracks 12 and 13."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Use pair pointing/naming practice, then check workbook matching and colours together."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Display flashcards around the room; call objects for pupils to point to, then reverse the task by pointing for pupils to name them."
+        }
+      ],
+      "extension": "Play a 2x2 classroom-object bingo/cross-out game.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_019",
+      "year": "Tahun 1",
+      "lesson_no": 19,
+      "lesson_label": "Speaking 4",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          11
+        ],
+        "teacher_book_pages": [
+          11
+        ],
+        "workbook_instructions": "WB p11: listen and write the classroom-object words, then read statements and tick the correct box.",
+        "audio_instructions": "SB p11 uses CD1 Tracks 14 and 15; WB p11 uses CD1 Track 16."
+      },
+      "learning_focus": "Practise asking and answering about classroom objects using What's this? and Is it a ...?.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Display classroom-object flashcards with deliberately mismatched labels and let pupils correct them."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p11 listening to number the pictures, model the target questions and answers with real objects, replay for choral repetition, then run the guessing game in groups."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p11: listen and write the classroom-object words, then read statements and tick the correct box."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p11 uses CD1 Tracks 14 and 15; WB p11 uses CD1 Track 16."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pupils check listening answers in pairs before whole-class confirmation; repeat target exchanges aloud."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Slowly draw familiar items on the board while pupils guess using the target question pattern."
+        }
+      ],
+      "extension": "Use a hidden-object guessing game in pairs, with eyes closed instead of a blindfold if preferred.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_026",
+      "year": "Tahun 1",
+      "lesson_no": 26,
+      "lesson_label": "Speaking 6",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          12
+        ],
+        "teacher_book_pages": [
+          12
+        ],
+        "workbook_instructions": "WB p12: follow the lines and build sentences using It's my / It isn't my.",
+        "audio_instructions": "SB p12 uses CD1 Track 17."
+      },
+      "learning_focus": "Sing the classroom-object song and practise It's my / It isn't my language.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Flash classroom-object cards quickly and ask pupils to identify each item."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p12 song: identify desk objects, pre-teach 'in a mess', listen, repeat verse by verse and sing; then personalise the song with pupils' own classroom objects and complete the desk-matching task."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p12: follow the lines and build sentences using It's my / It isn't my."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p12 uses CD1 Track 17."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare desk-matching answers before class checking; elicit truthful It's my / It isn't my responses during the song game."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Sing the song again while substituting different classroom objects."
+        }
+      ],
+      "extension": "Practise spelling classroom-object words by completing missing letters in pairs.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_027",
+      "year": "Tahun 1",
+      "lesson_no": 27,
+      "lesson_label": "Writing 6",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "4.2",
+          "ls": "4.2.4"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.4"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          13
+        ],
+        "teacher_book_pages": [
+          13
+        ],
+        "workbook_instructions": "WB p13: read and write classroom-object words, then read and match instructions/items by number.",
+        "audio_instructions": "SB p13 uses CD1 Tracks 19 and 20."
+      },
+      "learning_focus": "Present and practise positive classroom imperatives and following instructions.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Show classroom objects one at a time; pupils write the words, compare spelling in pairs, then check as a class."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p13 pupils listen and choose the correct stickers, write the object words, mime the instructions, repeat the imperative forms, then play a chain game in small groups where each pupil follows and gives a new instruction."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p13: read and write classroom-object words, then read and match instructions/items by number."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p13 uses CD1 Tracks 19 and 20."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare sticker/listening choices, then check with the class; monitor the chain game for correct imperative use."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Play a 'Please' response game: pupils act only when the instruction includes please."
+        }
+      ],
+      "extension": "Invite pupils to lead the class by giving familiar imperative instructions.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_028",
+      "year": "Tahun 1",
+      "lesson_no": 28,
+      "lesson_label": "Listening 6",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.3"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          14,
+          15
+        ],
+        "teacher_book_pages": [
+          14
+        ],
+        "workbook_instructions": "WB p14: listen and tick the matching story pictures, find Flash in the story, and match key phrases to numbers.",
+        "audio_instructions": "SB story uses CD1 Track 21; WB p14 uses CD1 Track 22."
+      },
+      "learning_focus": "Present the unit picture story and review classroom objects and imperatives.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Recall the Super Friends, their powers and the cat before revisiting the story context."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB pp14-15: identify characters and classroom objects, play the story, pause at key frames for comprehension, discuss helping each other, then replay for listen-and-repeat and role-play."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p14: listen and tick the matching story pictures, find Flash in the story, and match key phrases to numbers."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB story uses CD1 Track 21; WB p14 uses CD1 Track 22."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare before whole-class checking; pause at selected story frames to check comprehension."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Groups of seven take character roles, practise the story and perform it."
+        }
+      ],
+      "extension": "Give short story sequences in mixed order for pairs to reconstruct.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_029",
+      "year": "Tahun 1",
+      "lesson_no": 29,
+      "lesson_label": "Reading 6",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "3.1",
+          "ls": "3.1.2"
+        },
+        "complementary": {
+          "cs": "1.1",
+          "ls": "1.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          15
+        ],
+        "teacher_book_pages": [
+          15
+        ],
+        "workbook_instructions": "WB p15: identify the helping-each-other value, then write/match words containing the short a sound and listen/repeat.",
+        "audio_instructions": "SB p15 uses CD1 Track 23; WB p15 uses CD1 Track 24."
+      },
+      "learning_focus": "Discuss story meaning and practise the short vowel sound a.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Recycle polite/helping phrases from the story through a quick pass-the-object routine."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p15 replay and reread the story, find matching pictures and identify who says a target phrase; isolate the /a/ sound and practise the sound sentence at different speeds and volumes."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p15: identify the helping-each-other value, then write/match words containing the short a sound and listen/repeat."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p15 uses CD1 Track 23; WB p15 uses CD1 Track 24."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Check matching answers as a class and compare sound/spelling responses with partners."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Dictate the sound sentence, compare versions in pairs, then run a spelling check with familiar short-a words."
+        }
+      ],
+      "extension": "Discuss why apologising and helping others matter, using pupils' own examples.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_036",
+      "year": "Tahun 1",
+      "lesson_no": 36,
+      "lesson_label": "Listening 8",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          16
+        ],
+        "teacher_book_pages": [
+          16
+        ],
+        "workbook_instructions": "WB p16: read descriptions and mark each statement with a tick or cross.",
+        "audio_instructions": "SB p16 uses CD1 Track 25."
+      },
+      "learning_focus": "Practise listening/reading for specific information and present This is my desk / There's a ... .",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Review classroom objects with a hidden drawing/guessing game using Is it a ...?."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p16 listen to five children describing desks, draw lines to match speakers/desks, compare in pairs and replay to check."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p16: read descriptions and mark each statement with a tick or cross."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p16 uses CD1 Track 25."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare listening matches before class checking; ask pupils to justify choices using visible desk objects."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Build an oral chain beginning This is my desk. There's a ... and add one object each turn."
+        }
+      ],
+      "extension": "Pupils draw their own desk and write a short description using the target pattern.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_037",
+      "year": "Tahun 1",
+      "lesson_no": 37,
+      "lesson_label": "Speaking 8",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.2"
+        },
+        "complementary": {
+          "cs": "4.2",
+          "ls": "4.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          17
+        ],
+        "teacher_book_pages": [
+          17
+        ],
+        "workbook_instructions": "WB p17: listen and number classroom objects according to the instructions.",
+        "audio_instructions": "WB p17 uses CD1 Track 26."
+      },
+      "learning_focus": "Practise integrated reading, speaking, writing and listening with classroom objects and imperatives.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Replay the Please imperative game and vary the classroom objects/instructions."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p17 read and choose the correct pictures, ask/answer in pairs, then draw a school bag and write a short modelled description."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p17: listen and number classroom objects according to the instructions."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "WB p17 uses CD1 Track 26."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Check picture choices as a class; monitor pair questions and review written bag descriptions before final copying."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Volunteers show their bag pictures and read descriptions; classmates listen for how many items are mentioned."
+        }
+      ],
+      "extension": "Unscramble imperative phrases and reconstruct the correct word order.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_038",
+      "year": "Tahun 1",
+      "lesson_no": 38,
+      "lesson_label": "Writing 8",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "4.3",
+          "ls": "4.3.2"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          18
+        ],
+        "teacher_book_pages": [
+          18
+        ],
+        "workbook_instructions": "WB p18: complete the primary/secondary colour chart, then read, write and colour using pupils' knowledge.",
+        "audio_instructions": "No exact audio track is introduced on this Teacher's Book page."
+      },
+      "learning_focus": "Integrate Art through English and classify primary/secondary colours.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Create a colour mind map and elicit classroom objects associated with each colour."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p18 identify primary colours, discuss objects with those colours, then read about and predict how secondary colours are made before mixing/confirming."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p18: complete the primary/secondary colour chart, then read, write and colour using pupils' knowledge."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "No exact audio track is introduced on this Teacher's Book page."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Groups share colour examples and discuss colour-mixing answers before class confirmation."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Pupils complete the reflection prompt Today I've learnt about... in their notebooks."
+        }
+      ],
+      "extension": "Create a colour wheel and label the colours.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_039",
+      "year": "Tahun 1",
+      "lesson_no": 39,
+      "lesson_label": "Reading 8",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          19
+        ],
+        "teacher_book_pages": [
+          19
+        ],
+        "workbook_instructions": "WB p19: complete the colour-code picture.",
+        "audio_instructions": "No exact audio track is introduced on this Teacher's Book page."
+      },
+      "learning_focus": "Extend Art through English and complete a colour project.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Recall previous colour vocabulary and distinguish the primary colours."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p19 read and answer about colours, predict how white changes colours, then make a picture using primary/secondary colours and colour mixing."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p19: complete the colour-code picture."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "No exact audio track is introduced on this Teacher's Book page."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs discuss predictions, then compare results after mixing/colouring; review project language orally."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Complete a Today I've... reflection focused on colour learning and the finished picture."
+        }
+      ],
+      "extension": "Pupils create their own colour-code pictures and swap with a partner to solve.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_046",
+      "year": "Tahun 1",
+      "lesson_no": 46,
+      "lesson_label": "Listening (10)",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.4"
+        },
+        "complementary": {
+          "cs": "2.2",
+          "ls": "2.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          20
+        ],
+        "teacher_book_pages": [
+          20
+        ],
+        "workbook_instructions": "WB p20: follow the illustrated instructions to make a pencil holder.",
+        "audio_instructions": "SB p20 uses CD1 Track 27."
+      },
+      "learning_focus": "Develop listening and acting through sequenced classroom instructions.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Review familiar imperatives by having pupils take turns giving simple instructions."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p20 listen and mime a sequence, listen again to number pictures, read and order story instructions, then practise giving/following instructions in pairs."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p20: follow the illustrated instructions to make a pencil holder."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p20 uses CD1 Track 27."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare sequencing answers before class checking; monitor whether instructions are followed in order."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Pairs write four instructions, exchange them and act out the partner's sequence."
+        }
+      ],
+      "extension": "Use the finished pencil holders for a pair instruction game about putting in and taking out classroom objects.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_047",
+      "year": "Tahun 1",
+      "lesson_no": 47,
+      "lesson_label": "Writing 10",
+      "unit": "At School",
+      "standards": {
+        "main": {
+          "cs": "4.2",
+          "ls": "4.2.4"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.4"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          21
+        ],
+        "teacher_book_pages": [
+          21
+        ],
+        "workbook_instructions": "WB p21: draw and write examples of what pupils know from the unit.",
+        "audio_instructions": "No exact audio track is introduced on this Teacher's Book page."
+      },
+      "learning_focus": "Review unit language, consolidate classroom objects/colours and reflect on learning.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Unscramble colour words in pairs."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p21 pairs make a poster, then use classmates' posters for a memory task about school objects and colours; review classroom-object vocabulary through the picture dictionary."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "WB p21: draw and write examples of what pupils know from the unit."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "No exact audio track is introduced on this Teacher's Book page."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs/groups compare posters and memory statements; review written/drawn learning examples."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Ask pupils for their favourite unit song, chant or game and repeat one with the class."
+        }
+      ],
+      "extension": "Groups share their WB p21 learning examples and compare what they have written and drawn.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": []
+      }
+    },
+    {
+      "id": "english_y1_lesson_048",
+      "year": "Tahun 1",
+      "lesson_no": 48,
+      "lesson_label": "Speaking 10",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          22
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Present toy vocabulary and practise listening, pointing and naming.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use the opening unit scene to identify toys, play the vocabulary recording for pupils to point and repeat, then recycle the words through short pair questions."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Check recognition by pointing to different toys in random order and eliciting names."
+        }
+      ],
+      "extension": "Use real toys or picture cards for a quick memory/guessing game.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_049",
+      "year": "Tahun 1",
+      "lesson_no": 49,
+      "lesson_label": "Reading 10",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          23
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Practise toy vocabulary through a song and personal response.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use the unit song on SB p23: establish the scene, listen for toy words, replay for repetition and singing, then personalise with pupils' favourite toys."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to identify the toy words heard and compare responses in pairs."
+        }
+      ],
+      "extension": "Groups substitute familiar toy words into the song pattern.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_056",
+      "year": "Tahun 1",
+      "lesson_no": 56,
+      "lesson_label": "Speaking 12",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        },
+        "complementary": {
+          "cs": "4.2",
+          "ls": "4.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          24
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Develop listening discrimination and description of toys.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p24 listen and number the toy pictures, then use the monster/guessing task to practise describing and identifying items."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare numbering before replay/class checking; monitor descriptive exchanges."
+        }
+      ],
+      "extension": "Pupils draw a toy/monster and challenge a partner to identify it from a short description.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_057",
+      "year": "Tahun 1",
+      "lesson_no": 57,
+      "lesson_label": "Listening 12",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          25
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Follow the go-kart picture story and recycle unit language.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Preview the story pictures, elicit predictions, play/read the story, pause to check events and characters, then replay/read for sequence and role practice."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to order key events and identify who says selected lines."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Groups take roles and perform a shortened version of the story."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_059",
+      "year": "Tahun 1",
+      "lesson_no": 59,
+      "lesson_label": "Reading 12",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.1"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.3"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          26
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Consolidate the story and practise key language from the go-kart episode.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Revisit the story, use the follow-up pictures/tasks to check understanding, then practise target phrases orally in pairs."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs justify answers using story evidence before whole-class feedback."
+        }
+      ],
+      "extension": "Retell the story using a small set of picture prompts.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_066",
+      "year": "Tahun 1",
+      "lesson_no": 66,
+      "lesson_label": "Reading 14",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "3.1",
+          "ls": "3.1.2"
+        },
+        "complementary": {
+          "cs": "1.1",
+          "ls": "1.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          27
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Develop reading for specific information about toys.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Read the short toy descriptions on SB p27, number/match the go-karts and use the text to identify specific features."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pupils compare matches in pairs and point to the words that support each answer."
+        }
+      ],
+      "extension": "Write one new short toy description for a partner to match.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_067",
+      "year": "Tahun 1",
+      "lesson_no": 67,
+      "lesson_label": "Listening 14",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          28
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Practise reading and checking descriptions of familiar toys.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "On SB p28 look and read, then mark each statement true/false according to the pictures; follow with oral correction of false statements."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Require pupils to correct each false sentence rather than only give a cross."
+        }
+      ],
+      "extension": "Pairs create one true and one false statement about another toy picture.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_068",
+      "year": "Tahun 1",
+      "lesson_no": 68,
+      "lesson_label": "Writing 14",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "4.2",
+          "ls": "4.2.3"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.3"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          29
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Integrate listening, speaking and writing around favourite toys.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Listen and write children's names under the correct toys, ask/answer about favourite toys, then draw and write a short description of a favourite toy."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Compare listening answers in pairs; check that written descriptions correspond to pupils' drawings."
+        }
+      ],
+      "extension": "Display drawings and let classmates guess the toy from the description.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_069",
+      "year": "Tahun 1",
+      "lesson_no": 69,
+      "lesson_label": "Speaking 14",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          30
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Integrate Mathematics/shape vocabulary through a tangram task.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Identify and name the shapes, read the short information about tangrams, identify missing shapes, then discuss how shapes combine to make pictures."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to name both the shape and its position when checking."
+        }
+      ],
+      "extension": "Make a simple tangram picture and describe the shapes used.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_076",
+      "year": "Tahun 1",
+      "lesson_no": 76,
+      "lesson_label": "Speaking 16",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        },
+        "complementary": {
+          "cs": "2.2",
+          "ls": "2.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          31
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Complete a hands-on tangram project using English instructions.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Follow the project sequence to make a tangram, use the pieces to create a picture and describe the result to a partner."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Monitor pupils' ability to follow the sequence and name shapes while constructing."
+        }
+      ],
+      "extension": "Partners exchange tangram pictures and try to recreate each other's design.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_077",
+      "year": "Tahun 1",
+      "lesson_no": 77,
+      "lesson_label": "Reading 16",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.3"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          32
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Use imagination and oral language to create and present a picture.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Listen/imagine from the prompt, draw an individual picture, then show it to a partner and describe what was created."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Partners listen for key unit vocabulary and ask a simple follow-up question."
+        }
+      ],
+      "extension": "Create a small class gallery and let pupils describe another pupil's picture.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_078",
+      "year": "Tahun 1",
+      "lesson_no": 78,
+      "lesson_label": "Writing 16",
+      "unit": "Let's Play!",
+      "standards": {
+        "main": {
+          "cs": "4.3",
+          "ls": "4.3.2"
+        },
+        "complementary": {
+          "cs": "4.2",
+          "ls": "4.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          33
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Review Unit 2 language and reflect on learning.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use the final unit review/reflection activities to recycle toys, descriptions and shapes, then have pupils identify what they can now say/read/write."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Use pair review followed by quick whole-class retrieval of unit vocabulary."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Pupils state or write one thing they learnt and one activity they enjoyed."
+        }
+      ],
+      "extension": "Repeat a favourite Unit 2 game using the verified vocabulary.",
+      "quality": {
+        "source_status": "VERIFIED_TB_SCAN",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_079",
+      "year": "Tahun 1",
+      "lesson_no": 79,
+      "lesson_label": "Listening 16",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.1"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          34
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Introduce and practise pet vocabulary in the Unit 3 opening context.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Activate familiar animal words with picture/gesture recall."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use the opening scene to identify pets; model, listen, point and repeat the target words, then practise identification in pairs."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Point to pets in mixed order and elicit names; pairs check one another."
+        }
+      ],
+      "extension": "Use pet picture cards for a quick memory/guessing round.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_086",
+      "year": "Tahun 1",
+      "lesson_no": 86,
+      "lesson_label": "Listening 18",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          35
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Practise pet vocabulary and unit language through the textbook activity.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Quickly recycle the pets introduced on the previous page."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Work through SB p35 using the pictures and target pet language; model the response pattern, practise chorally, then move to pair exchanges."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pairs to demonstrate one exchange and correct vocabulary/pronunciation as needed."
+        }
+      ],
+      "extension": "Pupils choose a pet and give one short clue for classmates to identify it.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_087",
+      "year": "Tahun 1",
+      "lesson_no": 87,
+      "lesson_label": "Speaking 18",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        },
+        "complementary": {
+          "cs": "1.1",
+          "ls": "1.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          36
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Develop speaking using Unit 3 pet language.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Review pet names by showing or describing one animal at a time."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p36 as the speaking stimulus; model the textbook pattern, rehearse with the class, then conduct structured pair practice."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Monitor whether pupils use the target form and pet word accurately."
+        }
+      ],
+      "extension": "Change partners and repeat with a different pet.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_096",
+      "year": "Tahun 1",
+      "lesson_no": 96,
+      "lesson_label": "Speaking 20",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.3"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          37
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Consolidate Unit 3 language through the textbook follow-up task.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Retrieve key pet words without opening the book."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p37 pictures/text to complete the textbook task, compare answers in pairs, then reuse the language orally."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Require pupils to point to visual/text evidence when checking answers."
+        }
+      ],
+      "extension": "Create one additional example using the same textbook language pattern.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_097",
+      "year": "Tahun 1",
+      "lesson_no": 97,
+      "lesson_label": "Listening 20",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "1.3",
+          "ls": "1.3.1"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.3"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          38,
+          39
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Follow and understand the Unit 3 picture story.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Use the first story frame to predict characters, pets and what may happen."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Work through the SB pp38-39 story: listen/read, pause at key frames for comprehension, establish event order and replay/reread for repetition and role practice."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to sequence key events and identify speakers/actions from the frames."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Assign story roles in small groups and perform a shortened retelling."
+        }
+      ],
+      "extension": "Retell the story from selected picture prompts.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_098",
+      "year": "Tahun 1",
+      "lesson_no": 98,
+      "lesson_label": "Reading 20",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "3.1",
+          "ls": "3.1.3"
+        },
+        "complementary": {
+          "cs": "3.1",
+          "ls": "3.1.4"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          39
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Use the story follow-up to develop reading comprehension.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Recall the story events orally using three or four prompts."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Reread the relevant SB p39 section, complete the follow-up comprehension task and compare evidence in pairs."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pupils explain where in the story/picture they found each answer."
+        }
+      ],
+      "extension": "Pairs make one extra comprehension question about the story.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_099",
+      "year": "Tahun 1",
+      "lesson_no": 99,
+      "lesson_label": "Writing 20",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "4.2",
+          "ls": "4.2.3"
+        },
+        "complementary": {
+          "cs": "4.2",
+          "ls": "4.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          40
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Practise Unit 3 language in a writing-focused textbook task.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Orally review the words/forms pupils will need before writing."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p40 as the writing model/stimulus; complete the guided task first, then produce a short individual response following the model."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Use pair checking for target vocabulary and the modelled language pattern before class feedback."
+        }
+      ],
+      "extension": "Pupils add one additional sentence using verified Unit 3 vocabulary.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_106",
+      "year": "Tahun 1",
+      "lesson_no": 106,
+      "lesson_label": "Writing 22",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "4.3",
+          "ls": "4.3.2"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.4"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          41
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Develop writing and language consolidation using the Unit 3 textbook page.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Run a short oral retrieval of pet vocabulary."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Read/examine the SB p41 model, identify useful words or sentence frames, complete the guided task and then write independently at an appropriate Year 1 level."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Partners compare work against the model and check key words."
+        }
+      ],
+      "extension": "Illustrate the written response and label the pet.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_107",
+      "year": "Tahun 1",
+      "lesson_no": 107,
+      "lesson_label": "Speaking 22",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          42
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Practise speaking from the Unit 3 textbook stimulus.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Use picture prompts to reactivate the language needed for the task."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Model the SB p42 speaking exchange, practise as a class, then use pairs/small groups for repeated meaningful turns."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Listen for correct target language and understandable pronunciation."
+        }
+      ],
+      "extension": "Turn the activity into a simple information-gap or guessing round.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_108",
+      "year": "Tahun 1",
+      "lesson_no": 108,
+      "lesson_label": "Reading 22",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.3"
+        },
+        "complementary": {
+          "cs": "3.1",
+          "ls": "3.1.3"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          43
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Develop reading using the Unit 3 textbook material.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Preview the pictures/title and predict key words."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Read SB p43 for gist first, then reread for the information required by the textbook task; compare responses with a partner."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to locate the word, phrase or picture clue supporting each response."
+        }
+      ],
+      "extension": "Match selected unit words to pictures or short meanings.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_109",
+      "year": "Tahun 1",
+      "lesson_no": 109,
+      "lesson_label": "Listening 22",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.3"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          44
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Develop listening using the Unit 3 textbook task.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Pre-listening review of the relevant pet vocabulary and pictures."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Study the SB p44 task before listening, listen once for the overall answer, then again for specific information; compare before whole-class checking."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Replay only where needed and ask pupils what clue they heard."
+        }
+      ],
+      "extension": "Pairs reproduce a short oral version using the same vocabulary.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_113",
+      "year": "Tahun 1",
+      "lesson_no": 113,
+      "lesson_label": "Reading 23",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.3"
+        },
+        "complementary": {
+          "cs": "4.2",
+          "ls": "4.2.5"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          42
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Revisit SB p42 as a reading-focused SOW lesson without changing its verified page mapping.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Recall the earlier speaking work from the same page."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Return to SB p42 and shift attention to reading/recognising the written language in the task; identify familiar words and complete the SOW-aligned reading focus."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Check recognition by asking pupils to point to/read the relevant words or phrases."
+        }
+      ],
+      "extension": "Make a small word-picture matching set from the page.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_116",
+      "year": "Tahun 1",
+      "lesson_no": 116,
+      "lesson_label": "Writing 24",
+      "unit": "Pet Show",
+      "standards": {
+        "main": {
+          "cs": "4.3",
+          "ls": "4.3.2"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.4"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          45
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": null
+      },
+      "learning_focus": "Consolidate Unit 3 through the final textbook-linked writing task.",
+      "teaching_sequence": [
+        {
+          "stage": "Set induction",
+          "instruction": "Review key Pet Show words and one favourite activity from the unit."
+        },
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p45 to complete the final Unit 3 textbook task, support pupils with the page model, then allow an individual written response."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Check completion against the page model and review common language points with the class."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Pupils share one thing they can now say/read/write about pets."
+        }
+      ],
+      "extension": "Repeat a favourite Pet Show vocabulary game.",
+      "quality": {
+        "source_status": "SOURCE_ALIGNED_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_117",
+      "year": "Tahun 1",
+      "lesson_no": 117,
+      "lesson_label": "Speaking 24",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.5"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          46
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "Use verified SB p46 audio CD2 Tracks 02 and 03."
+      },
+      "learning_focus": "Introduce and practise food vocabulary in the Unit 4 opening context.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p46 to establish the lunchtime scene, identify target food, listen/point/repeat and recycle the vocabulary through short oral identification."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Use verified SB p46 audio CD2 Tracks 02 and 03."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Point to food items in random order and elicit names; use pair checking before class feedback."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_118",
+      "year": "Tahun 1",
+      "lesson_no": 118,
+      "lesson_label": "Reading 24",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.3"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          47
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": "Use the verified WB activity linked to this page.",
+        "audio_instructions": "SB p47 uses verified CD2 Track 04; WB uses verified CD2 Track 05."
+      },
+      "learning_focus": "Develop reading and speaking around Unit 4 food language.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p47 for the textbook reading/task, model the required response, allow pair comparison and then reuse the language orally."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "Use the verified WB activity linked to this page."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB p47 uses verified CD2 Track 04; WB uses verified CD2 Track 05."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pupils identify the textual/picture clue supporting each answer."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_119",
+      "year": "Tahun 1",
+      "lesson_no": 119,
+      "lesson_label": "Listening 24",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          48
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "Use verified CD2 Tracks 06, 07 and 08."
+      },
+      "learning_focus": "Develop listening and practise food language from the textbook.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Preview SB p48 pictures/food words, listen first for overall meaning and again for specific information, then practise the language through the page activity."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Use verified CD2 Tracks 06, 07 and 08."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare before replay and whole-class checking."
+        }
+      ],
+      "extension": "Adapt the page language into a short food preference chant or pair exchange.",
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_126",
+      "year": "Tahun 1",
+      "lesson_no": 126,
+      "lesson_label": "Speaking 26",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.2"
+        },
+        "complementary": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          49
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "Use verified CD2 Tracks 09 and 10."
+      },
+      "learning_focus": "Develop speaking using the Unit 4 textbook stimulus.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p49 to model the target exchange, practise chorally, then move to repeated pair speaking with different food items."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Use verified CD2 Tracks 09 and 10."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Monitor target language and intelligible pronunciation; invite selected pairs to demonstrate."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_127",
+      "year": "Tahun 1",
+      "lesson_no": 127,
+      "lesson_label": "Listening 26",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          50,
+          51
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": "Use the verified story-linked Workbook task.",
+        "audio_instructions": "SB story uses verified CD2 Track 11; WB uses verified CD2 Track 12."
+      },
+      "learning_focus": "Follow and understand the Unit 4 picture story.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Preview SB pp50-51, predict from pictures, listen/read the story, pause for comprehension and sequence, then replay/reread for role practice."
+        },
+        {
+          "stage": "Activity 2",
+          "instruction": "Use the verified story-linked Workbook task."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "SB story uses verified CD2 Track 11; WB uses verified CD2 Track 12."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to order key events and identify speakers/actions using the story frames."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Groups rehearse and perform a shortened story retelling."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_129",
+      "year": "Tahun 1",
+      "lesson_no": 129,
+      "lesson_label": "Reading 26",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        },
+        "complementary": {
+          "cs": "1.1",
+          "ls": "1.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          51
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "Verified phonics/follow-up audio: SB CD2 Track 13; WB CD2 Track 14."
+      },
+      "learning_focus": "Consolidate the story and phonics/language follow-up on SB p51.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Return to SB p51 for the verified textbook follow-up; reread relevant story language and complete the page task before pair checking."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Verified phonics/follow-up audio: SB CD2 Track 13; WB CD2 Track 14."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Check responses against the page and practise the target sound/language orally."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_136",
+      "year": "Tahun 1",
+      "lesson_no": 136,
+      "lesson_label": "Listening 28",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "1.2",
+          "ls": "1.2.2"
+        },
+        "complementary": {
+          "cs": "4.3",
+          "ls": "4.3.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          52
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "Use verified CD2 Tracks 15 and 16."
+      },
+      "learning_focus": "Develop listening and writing support through Unit 4 food language.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Preview SB p52, establish the task, listen for required information, replay for confirmation and use the results for a short supported response."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Use verified CD2 Tracks 15 and 16."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs compare listening evidence before class confirmation."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_137",
+      "year": "Tahun 1",
+      "lesson_no": 137,
+      "lesson_label": "Reading 28",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.3"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          53
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "No audio required in the current verified mapping."
+      },
+      "learning_focus": "Develop reading comprehension using the Unit 4 textbook page.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Read SB p53 first for gist and then for the specific information required by the textbook task; compare answers with a partner."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pupils point to the word, phrase or picture evidence supporting each answer."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_138",
+      "year": "Tahun 1",
+      "lesson_no": 138,
+      "lesson_label": "Speaking 28",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.3"
+        },
+        "complementary": {
+          "cs": "3.3",
+          "ls": "3.3.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          54
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "No audio required in the current verified mapping."
+      },
+      "learning_focus": "Develop speaking from the Unit 4 textbook stimulus.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p54 to establish the speaking context, model the target language and run structured pair/group exchanges."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Monitor accurate food vocabulary and the target speaking pattern."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_146",
+      "year": "Tahun 1",
+      "lesson_no": 146,
+      "lesson_label": "Speaking 30",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.3"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          55
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "No audio required in the current verified mapping."
+      },
+      "learning_focus": "Consolidate Unit 4 language through the textbook speaking task.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Use SB p55 as the stimulus for guided speaking; model one example, rehearse as a class and then give pupils repeated turns in pairs."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Invite pairs to demonstrate and correct only language that affects the target objective."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_147",
+      "year": "Tahun 1",
+      "lesson_no": 147,
+      "lesson_label": "Writing 30",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "4.2",
+          "ls": "4.2.1"
+        },
+        "complementary": {
+          "cs": "3.2",
+          "ls": "3.2.2"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          56
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "Use verified SB CD2 Track 17."
+      },
+      "learning_focus": "Develop guided writing using the Unit 4 textbook model.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Study the SB p56 model, identify useful words/structure, complete the guided stage and then produce a short individual response."
+        },
+        {
+          "stage": "Audio",
+          "instruction": "Use verified SB CD2 Track 17."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Pairs check vocabulary and structure against the page model before final class feedback."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction, closure"
+        ]
+      }
+    },
+    {
+      "id": "english_y1_lesson_148",
+      "year": "Tahun 1",
+      "lesson_no": 148,
+      "lesson_label": "Reading 30",
+      "unit": "Lunchtime",
+      "standards": {
+        "main": {
+          "cs": "3.2",
+          "ls": "3.2.4"
+        },
+        "complementary": {
+          "cs": "2.1",
+          "ls": "2.1.1"
+        }
+      },
+      "references": {
+        "student_book_pages": [
+          57
+        ],
+        "teacher_book_pages": [],
+        "workbook_instructions": null,
+        "audio_instructions": "No audio required in the current verified mapping."
+      },
+      "learning_focus": "Develop reading and consolidate the final textbook-linked Unit 4 content.",
+      "teaching_sequence": [
+        {
+          "stage": "Activity 1",
+          "instruction": "Read SB p57 for overall meaning, reread for task-specific information and complete the textbook activity with pair comparison."
+        },
+        {
+          "stage": "Assessment",
+          "instruction": "Ask pupils to support responses using evidence from the page."
+        },
+        {
+          "stage": "Closure",
+          "instruction": "Review key Lunchtime vocabulary and one useful sentence pattern from the unit."
+        }
+      ],
+      "extension": null,
+      "quality": {
+        "source_status": "VERIFIED_MAPPING_GUIDANCE",
+        "review_status": "requires_human_pedagogical_review",
+        "flags": [
+          "Teacher's Book scan not explicitly verified",
+          "Teacher's Book page not supplied",
+          "Missing sections: set_induction"
+        ]
+      }
+    }
+  ]
+}
