@@ -11,6 +11,7 @@
 Run a short oral retrieval of pet vocabulary.
 
 ## Activity 1 — Student's Book
+**Pupils (editorial, source-aligned):** Read the SB p41 model, identify useful words and sentence frames, complete the guided task and write a short independent response.
 Read/examine the SB p41 model, identify useful words or sentence frames, complete the guided task and then write independently at an appropriate Year 1 level.
 
 ## Assessment / PBD
