@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Read SB p57 for overall meaning, reread for task-specific information and complete the textbook activity with pair comparison.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check one reading response and ask pupils to show the supporting word or picture.
 Ask pupils to support responses using evidence from the page.
 
 ## Closure
