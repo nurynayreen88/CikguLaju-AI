@@ -9,7 +9,9 @@
 **Audio:** No verified track recorded
 
 ## Set Induction
-Preview the pictures/title and predict key words.
+**Teacher:** Show the title or pictures on SB p43 and ask pupils to predict a familiar word.
+**Pupils:** Look at the page and predict one word likely to appear in the reading.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1 — Student's Book
 **Teacher:** Guide pupils to read SB p43 first for gist, then reread for the required details; facilitate partner comparison.
