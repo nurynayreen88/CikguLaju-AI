@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Guide pupils to read SB p57 for overall meaning, reread for a requested detail and justify one answer with page evidence.
 **Pupils (editorial, source-aligned):** Read SB p57 for overall meaning, reread to find the requested information and complete the textbook activity before pair checking.
-Read SB p57 for overall meaning, reread for task-specific information and complete the textbook activity with pair comparison.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Check one reading response and ask pupils to show the supporting word or picture.
