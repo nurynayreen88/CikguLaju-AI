@@ -45,13 +45,20 @@ class PJPKAdapterSmokeTests(unittest.TestCase):
         items = build()
         with sqlite3.connect(self.path) as con:
             con.executemany("""INSERT INTO pjpk_ready_pdp
-                (id,year_label,subject,content_verified,sequence_verified,schedule_verified,topic)
-                VALUES (?,?,?,?,?,?,?)""", [
+                (id,year_label,subject,sequence_no,content_verified,sequence_verified,schedule_verified,topic)
+                VALUES (?,?,?,?,?,?,?,?)""", [
                 (item["entry_id"], "Tahun 2", "Pendidikan Kesihatan", item["entry_id"], 0, 0, 0, item["topic"])
                 for item in items
             ])
         self.assertEqual(len(items), 18)
         self.assertEqual(ready_pdp("Tahun 2", "Pendidikan Kesihatan", self.path), [])
+
+    def test_verified_rows_are_ordered_by_lesson_sequence(self):
+        with sqlite3.connect(self.path) as con:
+            con.execute("""INSERT INTO pjpk_ready_pdp
+                (id,year_label,subject,sequence_no,content_verified,sequence_verified,schedule_verified,topic)
+                VALUES (?,?,?,?,?,?,?,?)""", (4, "Tahun 5", "Pendidikan Kesihatan", 0, 1, 1, 1, "Earlier lesson"))
+        self.assertEqual([r["id"] for r in ready_pdp("Tahun 5", "Pendidikan Kesihatan", self.path)], [4, 1])
 
     def test_invalid_sqlite_file_fails_closed(self):
         bad = self.path.parent / "invalid.db"
