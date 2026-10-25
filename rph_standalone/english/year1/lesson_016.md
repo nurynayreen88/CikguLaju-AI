@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.2 / 3.2.2  
 **Complementary SK / SP:** 1.2 / 1.2.3  
 **Learning objective:** Present the picture story and recycle language from Friends.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify a speaker in two story frames from SB pp8–9.
 **Teaching materials:** Student's Book pp. 8, 9, Workbook activity; Teacher's Book pp. 8  
 **Audio guidance:** Use the verified story recording for SB pp8–9; WB p8 uses CD1 Track 11.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will ask pupils to point to two story frames and identify who is speaking.
 **Teacher:** Pause at key frames and ask pupils to identify who is speaking; check WB responses as a class.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
