@@ -22,7 +22,9 @@ Return to SB p51 for the verified textbook follow-up; reread relevant story lang
 Check responses against the page and practise the target sound/language orally.
 
 ## Closure (teacher-developed proposal; pending review)
-Pupils identify one event or sound pattern from the story follow-up.
+**Teacher:** Ask pupils to identify one story detail or target sound from SB p51.
+**Pupils:** Point to one story detail or identify one practised sound pattern.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
