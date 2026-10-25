@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p20 listen and mime a sequence, listen again to number pictures, read and order story instructions, then practise giving/following instructions in pairs.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Listen and mime the instruction sequence; number pictures, order written instructions and take turns giving and following directions.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p20: follow the illustrated instructions to make a pencil holder.
