@@ -46378,6 +46378,37 @@ except Exception as _kp2027_selector_exc:
 # === END KP2027 SELECTOR ===
 
 
+
+# === TRIAL: FIVE RPH GENERATIONS ONLY ===
+_trial_rph_previous_credit_gate = _credit_gate
+def _credit_gate(cid, s):
+    # Paid and permanent access retain the existing unrestricted gate.
+    if _is_permanent_vip_v25267(cid) or _access_info(cid).get('active'):
+        return _trial_rph_previous_credit_gate(cid, s)
+    task = str((s or {}).get('task') or '').lower()
+    selected = set((s or {}).get('_materials_selected_v2528') or [])
+    if task not in ('rph', 'quick_rph') and not (selected == {'rph'}):
+        state.setdefault(cid, {}).pop('_free_generation_pending_v25282', None)
+        send(cid, '🔒 <b>Trial hanya untuk 5 janaan RPH.</b> Bahan lain memerlukan langganan atau Pioneer yang aktif.',
+             [[{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'},
+               {'text':'🏠 Menu Utama','callback_data':'home'}]])
+        return False
+    return _trial_rph_previous_credit_gate(cid, s)
+
+_trial_rph_previous_submit = _submit_materials_v2528
+def _submit_materials_v2528(cid):
+    ss = state.setdefault(cid, {})
+    if not (_is_permanent_vip_v25267(cid) or _access_info(cid).get('active')):
+        selected = set(ss.get('_materials_selected_v2528') or [])
+        if selected != {'rph'}:
+            return send(cid, '🔒 <b>Trial hanya boleh jana RPH.</b> Pilih RPH sahaja atau aktifkan langganan/Pioneer.',
+                        [[{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'},
+                          {'text':'🏠 Menu Utama','callback_data':'home'}]])
+        if not _credit_gate(cid, dict(ss, task='rph')):
+            return None
+    return _trial_rph_previous_submit(cid)
+# === END TRIAL RPH ONLY ===
+
 # === PIONEER LIFETIME OPT-IN TELEGRAM INTEGRATION ===
 try:
     from pioneer_telegram import install as _install_pioneer_telegram
