@@ -14,7 +14,7 @@ class TestT2EditorialIdentity(unittest.TestCase):
         self.assertEqual([len(batch) for batch in batches], [7, 11])
         records = [row for batch in batches for row in batch]
         self.assertEqual(len({row['id'] for row in records}), 18)
-        flags = ('sk_text_verified', 'textbook_verified', 'rpt_exact_slot_verified',
+        flags = ('textbook_verified', 'rpt_exact_slot_verified',
                  'rph_runtime_verified', 'a4_review_verified')
         for row in records:
             self.assertEqual(row['year'], 'Tahun 2')
@@ -23,10 +23,12 @@ class TestT2EditorialIdentity(unittest.TestCase):
             self.assertIs(row['production_ready'], False)
             for flag in flags:
                 self.assertIs(row[flag], False, (row['id'], flag))
-        for row in batches[1]:
-            self.assertIsNone(row['sk'])
-            self.assertEqual(row['sp'], [])
-            self.assertIs(row['sp_text_verified'], False)
+        for row in records:
+            self.assertTrue(row['sk'], row['id'])
+            self.assertTrue(row['sp'], row['id'])
+            self.assertIs(row['sk_text_verified'], True)
+            self.assertIs(row['sp_text_verified'], True)
+            self.assertTrue(all(sp.startswith(row['sk'] + '.') for sp in row['sp']))
 
 
 if __name__ == '__main__':
