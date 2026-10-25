@@ -35,17 +35,20 @@ def build():
                 "objective_source": guide["aims"],
                 "success_evidence": guide["checking_feedback"],
                 "activities": [
-                    {"phase": "Set Induction", "teacher_pupils": guide["warm_up"]},
-                    {"phase": "Activity 1", "teacher_pupils": guide["student_book_procedure"]},
-                    {"phase": "Activity 2", "teacher_pupils": guide["workbook_procedure"]},
-                    {"phase": "Assessment", "teacher_pupils": guide["checking_feedback"]},
-                    {"phase": "Closure", "teacher_pupils": guide["ending_lesson"]}
+                    {"phase": phase, "procedure": guide[field], "source_field": field}
+                    for phase, field in (
+                        ("Set Induction", "warm_up"),
+                        ("Activity 1", "student_book_procedure"),
+                        ("Activity 2", "workbook_procedure"),
+                        ("Assessment", "checking_feedback"),
+                        ("Closure", "ending_lesson")
+                    ) if guide.get(field)
                 ],
                 "student_book_pages": guide.get("sb_pages", []),
                 "teacher_book_pages": guide.get("tb_pages", []),
                 "audio": guide.get("audio_procedure", ""),
                 "source": "VERIFIED_TB_SCAN",
-                "status": "DRAFT_PENDING_PEDAGOGY_AND_A4_QA"
+                "status": "DRAFT_PENDING_ACTIVITY_AND_A4_QA"
             })
     return sorted(records, key=lambda r: (r["year"], r["lesson_no"]))
 
