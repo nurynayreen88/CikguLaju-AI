@@ -4,6 +4,7 @@
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 3.2 / 3.2.4
 **Learning aim:** Consolidate Unit 3 through the final textbook-linked writing task.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the SB p45 writing task and produce one short response following the page model.
 **Student's Book:** 45
 
 ## Set Induction
@@ -14,7 +15,7 @@ Review key Pet Show words and one favourite activity from the unit.
 **Pupils:** Use the SB p45 model to complete the textbook task and write a short individual response.
 
 ## Assessment / PBD
-Check completion against the page model and review common language points with the class.
+**Teacher:** Check each pupil's written response for task completion and one accurate use of modelled unit language.
 
 ## Closure
 Pupils share one thing they can now say/read/write about pets.
