@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.2 / 3.2.3  
 **Complementary SK / SP:** 1.2 / 1.2.5  
 **Learning aim (source):** Use imagination and oral language to create and present a picture.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can complete the SB p32 drawing task and identify one detail from the prompt or accompanying text.
 **Student's Book pages:** 32  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check the drawing against one prompt detail and ask pupils to identify it.
 **Teacher / task guidance:** Partners listen for key unit vocabulary and ask a simple follow-up question.
 **Provenance:** VERIFIED_TB_SCAN
 
