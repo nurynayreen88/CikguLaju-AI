@@ -11,6 +11,7 @@
 
 ### Set Induction
 **Teacher / task guidance:** Teacher shows familiar toy and shape pictures. Pupils recall words from the unit.
+**Pupils (editorial, source-aligned):** Complete the unit review on toys, descriptions and shapes; say which words and sentences they can now understand, speak, read or write.
 **Provenance:** Teacher-developed proposal; not verified Teacher's Book text
 
 ### Activity 1 — Student's Book
