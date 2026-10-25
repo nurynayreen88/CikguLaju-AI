@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Return to SB p51 for the verified textbook follow-up; reread relevant story language and complete the page task before pair checking.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Check the reading follow-up response and ask pupils to locate one supporting clue.
 Check responses against the page and practise the target sound/language orally.
 
 ## Closure (teacher-developed proposal; pending review)
