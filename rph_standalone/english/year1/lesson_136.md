@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Preview the SB p52 listening task and required response; present the mapped audio, replay for checking and prompt pupils to support one answer.
 **Pupils (editorial, source-aligned):** Study SB p52, listen for the information required, replay to confirm and give a short supported response using the results.
-Preview SB p52, establish the task, listen for required information, replay for confirmation and use the results for a short supported response.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Check one listening answer and ask for the clue supporting it.
