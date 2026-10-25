@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p17 read and choose the correct pictures, ask/answer in pairs, then draw a school bag and write a short modelled description.
-**Pupils:** Follow the Student's Book listening or reading task and compare the completed responses with a partner.
+**Pupils:** Read SB p17 and choose the matching pictures; ask and answer with a partner, draw a school bag and write a short description using the model.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p17: listen and number classroom objects according to the instructions.
