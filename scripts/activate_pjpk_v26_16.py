@@ -12,6 +12,8 @@ def install(g):
 
     subjects = (("🏃 Pendidikan Jasmani", "Pendidikan Jasmani"),
                 ("❤️ Pendidikan Kesihatan", "Pendidikan Kesihatan"))
+    if g.get("_pjpk_v2616_installed"):
+        return
     old_callback = g["callback"]
     rebuild_failed = [False]
 
@@ -197,3 +199,4 @@ def install(g):
         return old_callback(cid, data)
 
     g["callback"] = callback
+    g["_pjpk_v2616_installed"] = True
