@@ -40,5 +40,42 @@
     "real bot RPH runtime",
     "A4 output inspection"
   ],
-  "production_ready": 0
+  "production_ready": 0,
+  "rpt_source_audit": {
+    "result": "not_found_in_accessible_drive_search",
+    "checked_on": "2026-10-25",
+    "queries": [
+      "RPT PK Tahun 2",
+      "RPT Pendidikan Kesihatan",
+      "RPT PJPK Tahun 2"
+    ],
+    "examined_documents": [
+      {
+        "title": "Rozayus_RPT_PJ_Tahun_2_SK_2026.docx",
+        "drive_id": "1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF",
+        "finding": "PJ content; no verified PK Year 2 SP schedule"
+      },
+      {
+        "title": "STAGING RPT 2027 PJ Tahun 2 - Audit Tarikh",
+        "drive_id": "1vL5kjChFCn1YoJe4m3sD0dLdLso6Br9f",
+        "finding": "PJ draft; no verified PK Year 2 SP schedule"
+      },
+      {
+        "title": "Rozayus_RPT_PK_Tahun_3_SK_2026.docx",
+        "drive_id": "1L1Jw_XaaZuZF19PSWFxr7b78rejDg3EB",
+        "finding": "PK Year 3, not Year 2"
+      }
+    ],
+    "policy": "Do not infer PK Year 2 exact PdP slots from PJ Year 2 or PK Year 3. Preserve all production gates.",
+    "unresolved_sp_overlaps": [
+      [
+        2232,
+        2352
+      ],
+      [
+        2252,
+        2353
+      ]
+    ]
+  }
 }
