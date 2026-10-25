@@ -34,5 +34,14 @@ class PioneerSupabaseTests(unittest.TestCase):
         self.assertEqual(original["plan_code"], "MONTHLY")
         self.assertEqual(result["plan_code"], "PIONEER_LIFETIME")
 
+    def test_existing_pioneer_cannot_be_granted_again(self):
+        calls = []
+        def request(method, path, **kwargs):
+            calls.append(method)
+            return [{"entitlement": "PIONEER_LIFETIME"}]
+        with self.assertRaises(ValueError):
+            grant_pioneer(request, 42, "different-reference", 7, True)
+        self.assertEqual(calls, ["GET"])
+
 if __name__ == "__main__":
     unittest.main()
