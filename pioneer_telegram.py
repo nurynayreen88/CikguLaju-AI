@@ -51,8 +51,7 @@ def install(ns):
     def menu(cid, show_persistent=False):
         # Preserve original menu and append a separate Pioneer invitation.
         original_menu(cid, show_persistent=show_persistent)
-        # Do not flood Telegram with a second invitation on every menu open.
-        # Pioneer remains accessible via the existing opt-in callback.
+        # No repeated promotional message on every menu opening.
         return None
 
     def admin_card(cid, request_id):
