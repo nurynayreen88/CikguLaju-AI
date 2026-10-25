@@ -4,6 +4,7 @@
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 1.2 / 1.2.2
 **Learning aim:** Develop listening and practise food language from the textbook.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify the overall response and at least one requested detail from the SB p48 listening task.
 **Student's Book:** 48
 **Audio:** Use verified CD2 Tracks 06, 07 and 08.
 
