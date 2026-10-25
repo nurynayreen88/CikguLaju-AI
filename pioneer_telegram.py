@@ -49,15 +49,8 @@ def install(ns):
         return original_access(cid)
 
     def menu(cid, show_persistent=False):
-        # Preserve original menu and append a separate Pioneer invitation.
-        original_menu(cid, show_persistent=show_persistent)
-        # Show the opt-in entry once per user session, not on every menu.
-        user_state = state.setdefault(cid, {})
-        if not user_state.get("_pioneer_offer_shown") and not has_pioneer(sb, cid):
-            send(cid, "🏆 <b>Jadi Pioneer — RM20 sekali sahaja</b>\n"
-                 "Akses kekal sepanjang CikguLaju beroperasi, tanpa bayaran bulanan atau tahunan.",
-                 [[{"text": "🏆 Jadi Pioneer — RM20", "callback_data": "pioneer_join"}]])
-            user_state["_pioneer_offer_shown"] = True
+        # Permanent Pioneer entry is included in app.py main menu.
+        return original_menu(cid, show_persistent=show_persistent)
 
     def admin_card(cid, request_id):
         req = ns["_payment_request"](request_id)
