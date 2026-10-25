@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Listen and write children's names under the correct toys, ask/answer about favourite toys, then draw and write a short description of a favourite toy.
+**Pupils (editorial, source-aligned):** Listen and write each child's name under the correct toy; ask and answer about favourite toys, then draw and describe their own favourite toy.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
