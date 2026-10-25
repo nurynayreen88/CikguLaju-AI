@@ -9,7 +9,7 @@
 
 ## Activity 1 — Textbook sequence
 **Teacher:** Work through the SB pp38-39 story: listen/read, pause at key frames for comprehension, establish event order and replay/reread for repetition and role practice.
-**Pupils:** Complete the SB pp38-39 story: listen/read, pause at key frames for comprehension, establish event order and replay/reread for repetition and role practice.
+**Pupils:** Look at the story frames on SB pp38–39, listen or read, identify the order of events, answer questions about characters and rehearse selected story roles.
 
 ## Assessment / PBD
 **Teacher:** Ask pupils to sequence key events and identify speakers/actions from the frames.
