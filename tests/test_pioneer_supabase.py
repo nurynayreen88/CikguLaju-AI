@@ -22,7 +22,7 @@ class PioneerSupabaseTests(unittest.TestCase):
         calls = []
         def request(method, path, **kwargs):
             calls.append((method, path, kwargs))
-            return [{"entitlement": "PIONEER_LIFETIME"}]
+            return [] if method == "GET" else [{"entitlement": "PIONEER_LIFETIME"}]
         grant_pioneer(request, 42, "receipt-1", 7, True)
         self.assertEqual(calls[-1][2]["json"]["approved_by"], 7)
 
