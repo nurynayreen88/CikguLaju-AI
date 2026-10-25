@@ -8,7 +8,9 @@
 **Student's Book:** 42
 
 ## Set Induction
-Recall the earlier speaking work from the same page.
+**Teacher:** Display the written language on SB p42 and ask pupils to recognise a word from earlier speaking practice.
+**Pupils:** Find and read one familiar word or phrase on the page.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1 — Student's Book
 **Teacher:** Revisit the written language on SB p42, model recognition of familiar words and guide the reading-focused task.
