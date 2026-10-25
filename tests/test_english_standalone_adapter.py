@@ -1,7 +1,7 @@
 """Minimal smoke tests for the read-only English Year 1 RPH adapter."""
 import unittest
 
-from english_standalone_adapter import get_english_y1_rph, load_english_y1_rph
+from english_standalone_adapter import get_english_y1_rph, load_english_y1_rph, resolve_rph_with_fallback
 
 
 class EnglishStandaloneAdapterTests(unittest.TestCase):
@@ -20,6 +20,24 @@ class EnglishStandaloneAdapterTests(unittest.TestCase):
         self.assertIsNone(get_english_y1_rph(1, "English", 0))
         self.assertIsNone(get_english_y1_rph(1, "English", 161))
         self.assertIsNone(get_english_y1_rph(1, "English", "../1"))
+
+    def test_standalone_skips_legacy_generator(self):
+        def legacy():
+            raise AssertionError("legacy must not run for a valid standalone lesson")
+        result = resolve_rph_with_fallback(1, "English", 16, legacy)
+        self.assertIn("Lesson", result)
+
+    def test_other_subject_uses_legacy_generator(self):
+        calls = []
+        def legacy(subject, lesson):
+            calls.append((subject, lesson))
+            return {"source": "legacy"}
+        result = resolve_rph_with_fallback(1, "Matematik", 16, legacy, "Matematik", 16)
+        self.assertEqual(result, {"source": "legacy"})
+        self.assertEqual(calls, [("Matematik", 16)])
+
+    def test_missing_lesson_uses_legacy_generator(self):
+        self.assertEqual(resolve_rph_with_fallback(1, "BI", 161, lambda: "legacy"), "legacy")
 
     def test_aliases(self):
         for name in ("English", "Bahasa Inggeris", "BI"):
