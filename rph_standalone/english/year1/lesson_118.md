@@ -4,6 +4,7 @@
 **Main SK/SP:** 3.2 / 3.2.3
 **Complementary SK/SP:** 2.1 / 2.1.1
 **Learning aim:** Develop reading and speaking around Unit 4 food language.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the SB p47 reading task and identify one supporting word or picture clue.
 **Student's Book:** 47
 **Audio:** SB p47 uses verified CD2 Track 04; WB uses verified CD2 Track 05.
 
