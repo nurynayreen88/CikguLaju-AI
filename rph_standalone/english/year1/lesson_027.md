@@ -5,6 +5,7 @@
 **Main SK / SP:** 4.2 / 4.2.4  
 **Complementary SK / SP:** 1.2 / 1.2.4  
 **Learning objective:** Present and practise positive classroom imperatives and following instructions.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can write one short classroom instruction following the SB p13 model.
 **Teaching materials:** Student's Book pp. 13, Workbook activity; Teacher's Book pp. 13  
 **Audio guidance:** SB p13 uses CD1 Tracks 19 and 20.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check one written imperative for meaning and appropriate word order.
 **Teacher:** Pairs compare sticker/listening choices, then check with the class; monitor the chain game for correct imperative use.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
