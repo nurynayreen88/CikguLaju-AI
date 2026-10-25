@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.1 / 3.1.2  
 **Complementary SK / SP:** 1.1 / 1.1.1  
 **Learning objective:** Discuss story meaning and practise the short vowel sound a.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can recognise and read at least two words containing the target short a sound on SB p15.
 **Teaching materials:** Student's Book pp. 15, Workbook activity; Teacher's Book pp. 15  
 **Audio guidance:** SB p15 uses CD1 Track 23; WB p15 uses CD1 Track 24.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will ask pupils to identify two target words and check their sound-letter recognition.
 **Teacher:** Check matching answers as a class and compare sound/spelling responses with partners.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
