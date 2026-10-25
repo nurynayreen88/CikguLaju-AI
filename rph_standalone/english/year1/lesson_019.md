@@ -5,6 +5,7 @@
 **Main SK / SP:** 2.1 / 2.1.5  
 **Complementary SK / SP:** 1.2 / 1.2.2  
 **Learning objective:** Practise asking and answering about classroom objects using What's this? and Is it a ...?.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can ask and answer one classroom-object question using the SB p11 model.
 **Teaching materials:** Student's Book pp. 11, Workbook activity; Teacher's Book pp. 11  
 **Audio guidance:** SB p11 uses CD1 Tracks 14 and 15; WB p11 uses CD1 Track 16.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will observe one paired question-and-answer exchange.
 **Teacher:** Pupils check listening answers in pairs before whole-class confirmation; repeat target exchanges aloud.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
