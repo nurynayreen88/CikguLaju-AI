@@ -5,6 +5,7 @@
 **Main SK / SP:** 2.1 / 2.1.1  
 **Complementary SK / SP:** 2.2 / 2.2.2  
 **Learning aim (source):** Complete a hands-on tangram project using English instructions.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can follow the SB p31 tangram steps and describe at least one shape in the finished picture.
 **Student's Book pages:** 31  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will observe completion of the steps and listen to one shape description.
 **Teacher / task guidance:** Monitor pupils' ability to follow the sequence and name shapes while constructing.
 **Provenance:** VERIFIED_TB_SCAN
 
