@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** On SB p24 listen and number the toy pictures, then use the monster/guessing task to practise describing and identifying items.
+**Pupils (editorial, source-aligned):** Listen to SB p24 and number the toy pictures; describe and identify items during the monster guessing task.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
