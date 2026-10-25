@@ -4,6 +4,7 @@
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 1.2 / 1.2.5
 **Learning aim:** Practise speaking from the Unit 3 textbook stimulus.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can take at least two speaking turns using the modelled pet-language exchange on SB p42.
 **Student's Book:** 42
 **Audio:** No verified track recorded
 
@@ -15,7 +16,7 @@ Use picture prompts to reactivate the language needed for the task.
 **Pupils:** Listen to and repeat the SB p42 exchange, then take turns using the target language with a partner or small group.
 
 ## Assessment / PBD
-Listen for correct target language and understandable pronunciation.
+**Teacher:** Teacher listens to paired exchanges and records whether each pupil takes two turns and uses the target pet vocabulary intelligibly.
 
 ## Closure (teacher-developed proposal, pending review)
 Pairs repeat a short pet dialogue with roles reversed.
