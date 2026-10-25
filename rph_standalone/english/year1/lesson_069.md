@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Identify and name the shapes, read the short information about tangrams, identify missing shapes, then discuss how shapes combine to make pictures.
+**Pupils (editorial, source-aligned):** Name the shapes, read the tangram information, identify missing shapes and explain how pieces can form a picture.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
