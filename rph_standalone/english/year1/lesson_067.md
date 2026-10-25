@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.2  
 **Complementary SK / SP:** 3.2 / 3.2.2  
 **Learning aim (source):** Practise reading and checking descriptions of familiar toys.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify one accurate and one inaccurate toy description on SB p28 and correct the inaccurate one.
 **Student's Book pages:** 28  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check the true or false responses and listen to one correction.
 **Teacher / task guidance:** Require pupils to correct each false sentence rather than only give a cross.
 **Provenance:** VERIFIED_TB_SCAN
 
