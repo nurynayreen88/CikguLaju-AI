@@ -114,5 +114,49 @@
       }
     ],
     "production_flags_unchanged": true
+  },
+  "textbook_sp_locator_audit": {
+    "source_drive_id": "12Ym1lDW67L_cNJQ9NB6pUYVveIyvdIA6",
+    "status": "preliminary_page_locator_only",
+    "printed_page_ranges": [
+      {
+        "sp_prefix": "1.2",
+        "pages": "70-72"
+      },
+      {
+        "sp_prefix": "2.1",
+        "pages": "73-76"
+      },
+      {
+        "sp_prefix": "3.1",
+        "pages": "77-79"
+      },
+      {
+        "sp_prefix": "4.1",
+        "pages": "80-82"
+      },
+      {
+        "sp_prefix": "5.1",
+        "pages": "83-86"
+      },
+      {
+        "sp_prefix": "6.1",
+        "pages": "87-90"
+      },
+      {
+        "sp_prefix": "7.1",
+        "pages": "91-94"
+      },
+      {
+        "sp_prefix": "8.1",
+        "pages": "97-100"
+      },
+      {
+        "sp_prefix": "9.1",
+        "pages": "102-104"
+      }
+    ],
+    "caution": "Page ranges are candidate navigation only; verify individual lesson-to-page and activities before setting textbook_verified true.",
+    "flags_changed": false
   }
 }
