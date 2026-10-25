@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p18 identify primary colours, discuss objects with those colours, then read about and predict how secondary colours are made before mixing/confirming.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Name primary colours and matching objects; predict secondary colours, mix the colours and check the prediction against the result.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p18: complete the primary/secondary colour chart, then read, write and colour using pupils' knowledge.
