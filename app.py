@@ -40044,6 +40044,7 @@ def menu(cid,show_persistent=False):
         [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'}],
         [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
     ]
     if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
