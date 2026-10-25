@@ -9,7 +9,9 @@
 **Audio:** Use verified SB p46 audio CD2 Tracks 02 and 03.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the food pictures on SB p46 and ask pupils to identify familiar items.
+**Pupils:** Point to and name two familiar food items before the textbook task.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Look at the lunchtime scene on SB p46, point to food items named in the recording, repeat the food words and identify items orally.
