@@ -1,0 +1,23 @@
+name: English standalone adapter smoke tests
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'english_standalone_adapter.py'
+      - 'rph_standalone/english/year1/**'
+      - 'tests/test_english_standalone_adapter.py'
+      - '.github/workflows/english-standalone-adapter-smoke.yml'
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check standalone library and fallback guards
+        run: python -m unittest discover -s tests -p 'test_english_standalone_adapter.py' -v
