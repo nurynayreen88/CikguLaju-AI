@@ -11,8 +11,8 @@
 Preview the pictures/title and predict key words.
 
 ## Activity 1 — Student's Book
-**Pupils (editorial, source-aligned):** Read SB p43 for overall meaning, reread to locate the required details and compare answers with a partner.
-Read SB p43 for gist first, then reread for the information required by the textbook task; compare responses with a partner.
+**Teacher:** Guide pupils to read SB p43 first for gist, then reread for the required details; facilitate partner comparison.
+**Pupils:** Read SB p43 for overall meaning, reread to locate the required details and compare answers with a partner.
 
 ## Assessment / PBD
 Ask pupils to locate the word, phrase or picture clue supporting each response.
