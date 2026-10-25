@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Use SB p46 to establish the lunchtime scene, identify target food, listen/point/repeat and recycle the vocabulary through short oral identification.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Point to three food pictures in mixed order and record whether each pupil names them correctly.
 Point to food items in random order and elicit names; use pair checking before class feedback.
 
 ## Closure (teacher-developed proposal; pending review)
