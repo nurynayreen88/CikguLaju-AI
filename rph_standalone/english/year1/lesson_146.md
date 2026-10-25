@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Demonstrate the SB p55 exchange, organise repeated partner turns and invite selected pairs to share a complete dialogue.
 **Pupils (editorial, source-aligned):** Look at SB p55, follow one model speaking exchange and take repeated turns using the target language with a partner.
-Use SB p55 as the stimulus for guided speaking; model one example, rehearse as a class and then give pupils repeated turns in pairs.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Observe one complete paired exchange and check that each pupil contributes a turn.
