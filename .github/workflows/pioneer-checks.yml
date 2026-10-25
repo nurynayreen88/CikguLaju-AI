@@ -1,0 +1,24 @@
+name: Pioneer lifetime checks
+on:
+  pull_request:
+    paths:
+      - 'pioneer_*.py'
+      - 'tests/test_pioneer_*.py'
+      - '.github/workflows/pioneer-checks.yml'
+  push:
+    branches:
+      - 'staging/pioneer-entitlement-core-20261025'
+    paths:
+      - 'pioneer_*.py'
+      - 'tests/test_pioneer_*.py'
+      - '.github/workflows/pioneer-checks.yml'
+jobs:
+  pioneer-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m py_compile pioneer_entitlements.py pioneer_supabase.py pioneer_telegram.py
+      - run: python -m unittest tests.test_pioneer_entitlements tests.test_pioneer_supabase
