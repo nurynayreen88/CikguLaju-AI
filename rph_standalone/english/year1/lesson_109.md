@@ -19,6 +19,7 @@ Pre-listening review of the relevant pet vocabulary and pictures.
 **Teacher:** Check the responses after listening and ask pupils to identify the heard clue for one answer; replay only if source audio is available.
 
 ## Closure (teacher-developed proposal, pending review)
-Teacher repeats one short listening cue; pupils identify the matching picture.
+**Teacher:** Give one short listening cue and ask pupils to select the matching picture.
+**Pupils:** Listen to the cue and point to the matching picture independently.
 
 **Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.
