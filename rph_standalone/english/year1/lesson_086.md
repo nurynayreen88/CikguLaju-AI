@@ -25,7 +25,8 @@
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
 ### Closure
-**Teacher / task guidance:** Partners take turns showing a pet picture and using the practised unit expression.
+**Teacher:** Show one pet picture to each pair and prompt a final exchange without modelling the full response.
+**Pupils:** Take turns identifying the pictured pet using the practised expression.
 **Provenance:** Teacher-developed proposal; not verified Teacher's Book text
 
 **Source classification:** SOURCE_ALIGNED_GUIDANCE.  
