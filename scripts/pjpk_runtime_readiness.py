@@ -19,6 +19,7 @@ def report(db_path=None):
             for subject in ("Pendidikan Jasmani", "Pendidikan Kesihatan"):
                 rows = ready_pdp(f"Tahun {year}", subject, db_path=path)
                 eligible = 0
+                blocked = []
                 for row in rows:
                     found = {r["standard_type"] for r in con.execute(
                         """SELECT standard_type FROM rpt_entry_standards
@@ -28,7 +29,11 @@ def report(db_path=None):
                            AND standard_type IN ('SK','SP')""", (row["id"],)
                     )}
                     eligible += int({"SK", "SP"}.issubset(found))
+                    if not {"SK", "SP"}.issubset(found):
+                        blocked.append((row["id"], ",".join(sorted({"SK", "SP"} - found))))
                 output.append((f"Tahun {year}", subject, len(rows), eligible))
+                for entry_id, missing in blocked:
+                    print(f"BLOCKED_ENTRY year={year} subject={subject} rpt_entry_id={entry_id} missing={missing}")
         return output
 
 if __name__ == "__main__":
