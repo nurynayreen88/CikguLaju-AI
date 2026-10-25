@@ -9,7 +9,9 @@
 **Audio:** Use verified CD2 Tracks 15 and 16.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Show the SB p52 pictures and ask pupils to recall two food words needed for listening.
+**Pupils:** Point to or name two pictured food items before the listening task.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Study SB p52, listen for the information required, replay to confirm and give a short supported response using the results.
