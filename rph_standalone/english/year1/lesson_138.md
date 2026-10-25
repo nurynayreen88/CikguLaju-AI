@@ -4,6 +4,7 @@
 **Main SK/SP:** 2.1 / 2.1.3
 **Complementary SK/SP:** 3.3 / 3.3.1
 **Learning aim:** Develop speaking from the Unit 4 textbook stimulus.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can take at least two speaking turns using the SB p54 model.
 **Student's Book:** 54
 **Audio:** No audio required in the current verified mapping.
 
