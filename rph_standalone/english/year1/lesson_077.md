@@ -11,11 +11,11 @@
 
 ### Set Induction
 **Teacher / task guidance:** Teacher models a simple picture description without showing the picture. Pupils imagine what it could look like.
-**Pupils (editorial, source-aligned):** Listen to the drawing prompt, imagine and draw a picture, then show and describe it to a partner.
 **Provenance:** Teacher-developed proposal; not verified Teacher's Book text
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Listen/imagine from the prompt, draw an individual picture, then show it to a partner and describe what was created.
+**Pupils (editorial, source-aligned):** Listen to the SB p32 prompt, imagine and draw a picture, then show it to a partner and describe one detail.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
