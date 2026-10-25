@@ -25,7 +25,8 @@
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
 ### Closure
-**Teacher / task guidance:** Pairs point to three pet pictures and name each animal without teacher modelling.
+**Teacher:** Point to three pet pictures in turn and invite each pair to name them without modelling.
+**Pupils:** Point to three pets and say each name independently, taking turns.
 **Provenance:** Teacher-developed proposal; not verified Teacher's Book text
 
 **Source classification:** SOURCE_ALIGNED_GUIDANCE.  
