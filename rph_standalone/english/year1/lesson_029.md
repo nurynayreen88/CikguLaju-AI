@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p15 replay and reread the story, find matching pictures and identify who says a target phrase; isolate the /a/ sound and practise the sound sentence at different speeds and volumes.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Reread the story, match pictures to spoken phrases and practise the short /a/ sound sentence at different speeds.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p15: identify the helping-each-other value, then write/match words containing the short a sound and listen/repeat.
