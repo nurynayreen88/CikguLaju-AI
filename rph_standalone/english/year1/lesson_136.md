@@ -4,6 +4,7 @@
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 4.3 / 4.3.2
 **Learning aim:** Develop listening and writing support through Unit 4 food language.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify the required information from the SB p52 listening task and give one supported response.
 **Student's Book:** 52
 **Audio:** Use verified CD2 Tracks 15 and 16.
 
