@@ -19,12 +19,13 @@ def ready_pdp(year_label, subject, db_path=None):
         with sqlite3.connect(f"file:{path}?mode=ro", uri=True) as con:
             con.row_factory = sqlite3.Row
             cols = {r[1] for r in con.execute("PRAGMA table_info(pjpk_ready_pdp)")}
-            if not {"year_label", "subject", "content_verified", "sequence_verified", "schedule_verified"}.issubset(cols):
+            if not {"id", "year_label", "subject", "sequence_no", "content_verified", "sequence_verified", "schedule_verified"}.issubset(cols):
                 return []
             rows = con.execute("""
                 SELECT * FROM pjpk_ready_pdp
                 WHERE year_label=? AND subject=?
                   AND content_verified=1 AND sequence_verified=1 AND schedule_verified=1
+                ORDER BY sequence_no, id
             """, (year_label, subject)).fetchall()
             return [dict(r) for r in rows]
     except (sqlite3.Error, OSError):
