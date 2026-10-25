@@ -11,15 +11,11 @@ class TestT2PKEvidenceQueue(unittest.TestCase):
         self.assertEqual(len({r["entry_id"] for r in rows}), 18)
         for row in rows:
             self.assertEqual(row["production_ready"], "false")
-            self.assertIn("DSKP SK", row["required_next_evidence"])
+            self.assertIn("textbook exact", row["required_next_evidence"])
             self.assertIn("RPT exact", row["required_next_evidence"])
-            self.assertEqual(row["sp_text_verified"], "false")
-        candidates = [row for row in rows if row["candidate_sp_codes_not_verified"]]
-        self.assertEqual(len(candidates), 11)
-        self.assertEqual(len({row["entry_id"] for row in candidates}), 11)
-        self.assertTrue(all(row["candidate_sp_codes_not_verified"].strip() for row in candidates))
-        self.assertTrue(all(row["recorded_sp_codes"] == "" for row in candidates))
-        self.assertEqual(sum(bool(row["recorded_sp_codes"]) for row in rows), 7)
+            self.assertEqual(row["sp_text_verified"], "true")
+        self.assertTrue(all(not row["candidate_sp_codes_not_verified"] for row in rows))
+        self.assertEqual(sum(bool(row["recorded_sp_codes"]) for row in rows), 18)
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "queue.csv"
             self.assertEqual(write(path), 18)
