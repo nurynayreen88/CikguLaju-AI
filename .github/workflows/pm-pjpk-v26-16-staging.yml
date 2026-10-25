@@ -94,6 +94,11 @@ jobs:
           assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Stale year selection entered RPH'
           state[1]['year'] = 'Tahun 1'
           g['callback'](1, 'sub_Pendidikan Jasmani')
+          g['callback'](1, 'home')
+          assert '_pjpk_v2616_selection_scope' not in state[1], 'Exit did not clear selection scope'
+          g['callback'](1, 'pjpk2616pdp|0')
+          assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Exited menu still allowed RPH'
+          g['callback'](1, 'sub_Pendidikan Jasmani')
           g['callback'](1, 'pjpk2616pdp|0')
           handoffs = [event for event in events if event[0] == 'RPH_ENTRY']
           assert handoffs, 'Selection did not enter the normal RPH class flow'
