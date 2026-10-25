@@ -4,6 +4,7 @@
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 1.1 / 1.1.1
 **Learning aim:** Consolidate the story and phonics/language follow-up on SB p51.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can complete the SB p51 reading follow-up and identify one relevant story or language clue.
 **Student's Book:** 51
 **Audio:** Verified phonics/follow-up audio: SB CD2 Track 13; WB CD2 Track 14.
 
