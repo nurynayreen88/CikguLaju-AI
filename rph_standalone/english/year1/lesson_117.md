@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Use SB p46 to establish the lunchtime scene; point to each pictured food as pupils hear it, model pronunciation once and check individual identification.
 **Pupils (editorial, source-aligned):** Look at the lunchtime scene on SB p46, point to food items named in the recording, repeat the food words and identify items orally.
-Use SB p46 to establish the lunchtime scene, identify target food, listen/point/repeat and recycle the vocabulary through short oral identification.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Point to three food pictures in mixed order and record whether each pupil names them correctly.
