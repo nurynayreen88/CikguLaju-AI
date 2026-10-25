@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Study SB p52, listen for the information required, replay to confirm and give a short supported response using the results.
 Preview SB p52, establish the task, listen for required information, replay for confirmation and use the results for a short supported response.
 
 ## Assessment
