@@ -1,0 +1,87 @@
+"""Opt-in Telegram Pioneer integration; installs without replacing existing handlers.
+
+Install only after the bot's existing callback/menu/access helpers are defined.
+"""
+from pioneer_supabase import effective_access, grant_pioneer, has_pioneer
+
+
+def install(ns):
+    original_callback = ns["callback"]
+    original_menu = ns["menu"]
+    original_access = ns["_access_info"]
+    original_card = ns["_admin_pending_card"]
+    send = ns["send"]
+    state = ns["state"]
+    sb = ns["_sb_request"]
+
+    def access_info(cid):
+        return effective_access(sb, cid, original_access(cid))
+
+    def menu(cid, show_persistent=False):
+        # Preserve original menu and append a separate Pioneer invitation.
+        original_menu(cid, show_persistent=show_persistent)
+        if not has_pioneer(sb, cid):
+            send(cid, "🏆 <b>Jadi Pioneer — RM20 sekali sahaja</b>\n"
+                 "Akses kekal sepanjang CikguLaju beroperasi, tanpa bayaran bulanan atau tahunan.\n"
+                 "Untuk semua subjek sekolah rendah Tahun 1–6; kandungan dikemas kini berperingkat.",
+                 [[{"text": "🏆 Jadi Pioneer — RM20", "callback_data": "pioneer_join"}]])
+
+    def admin_card(cid, request_id):
+        req = ns["_payment_request"](request_id)
+        if req and float(req["amount"]) == 20.0 and req["status"] == "pending":
+            if not ns["_is_admin"](cid):
+                return send(cid, "⛔ Admin sahaja.")
+            return send(cid, "🏆 <b>PENGESAHAN PIONEER RM20</b>\n"
+                        f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
+                        "Semak bukti bayaran dan transaksi bank secara manual sebelum lulus.",
+                        [[{"text": "✅ Sahkan Pioneer", "callback_data": f"admin_approve|{request_id}"}],
+                         [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
+        return original_card(cid, request_id)
+
+    def callback(cid, d):
+        if d == "pioneer_join":
+            if has_pioneer(sb, cid):
+                return send(cid, "🏆 Status Pioneer anda sudah aktif.")
+            return send(cid, "🏆 <b>PIONEER CIKGULAJU — RM20 SEKALI SAHAJA</b>\n"
+                        "Tiada yuran bulanan atau tahunan. Tempat terhad.\n"
+                        "Status Pioneer kekal walaupun sistem dikemas kini.",
+                        [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
+                         [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+        if d == "pioneer_pay":
+            if has_pioneer(sb, cid):
+                return send(cid, "🏆 Status Pioneer anda sudah aktif.")
+            pending = ns["_latest_pending_payment"](cid)
+            if pending and float(pending["amount"]) != 20.0:
+                return send(cid, "⚠️ Ada permohonan pembayaran lain yang belum selesai. "
+                            "Sila selesaikan permohonan tersebut dahulu.")
+            rid = (pending or {}).get("id") or ns["_new_payment_request"](cid, None, 20.0)
+            ns["_set_payment_note"](rid, "awaiting_proof")
+            state.setdefault(cid, {})["waiting"] = "payment_proof"
+            # Existing QR bytes are reused, not copied into a new asset.
+            return ns["_send_pioneer_qr"](cid, rid)
+        if str(d).startswith("admin_approve|"):
+            if not ns["_is_admin"](cid):
+                return send(cid, "⛔ Admin sahaja.")
+            try:
+                rid = int(str(d).split("|", 1)[1])
+            except (ValueError, IndexError):
+                return original_callback(cid, d)
+            req = ns["_payment_request"](rid)
+            if req and float(req["amount"]) == 20.0:
+                if req["status"] != "pending":
+                    return admin_card(cid, rid)
+                if req.get("notes") != "proof_received":
+                    return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Pioneer.")
+                # Explicit admin click after independently checking the bank transaction.
+                grant_pioneer(sb, req["chat_id"], f"pioneer-payment-request:{rid}", cid, verified=True)
+                ns["_mark_payment_request"](rid, "approved", cid, "Pioneer lifetime RM20 verified")
+                send(cid, f"✅ Pioneer diaktifkan untuk {req['chat_id']}.")
+                return send(req["chat_id"], "🏆 <b>Pioneer anda kini aktif!</b>\n"
+                            "Tiada bayaran bulanan atau tahunan.")
+        return original_callback(cid, d)
+
+    ns["_access_info"] = access_info
+    ns["_admin_pending_card"] = admin_card
+    ns["callback"] = callback
+    ns["menu"] = menu
+    return True
