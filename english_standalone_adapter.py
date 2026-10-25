@@ -13,10 +13,9 @@ LESSON_COUNT = 160
 
 def load_english_y1_rph(lesson_no):
     """Return a complete Markdown lesson or None for an invalid/missing lesson."""
-    try:
-        number = int(lesson_no)
-    except (TypeError, ValueError):
+    if isinstance(lesson_no, bool) or not str(lesson_no).strip().isascii() or not str(lesson_no).strip().isdigit():
         return None
+    number = int(str(lesson_no).strip())
     if not 1 <= number <= LESSON_COUNT:
         return None
     path = LESSON_DIR / f"lesson_{number:03d}.md"
@@ -31,10 +30,9 @@ def load_english_y1_rph(lesson_no):
 
 def get_english_y1_rph(year, subject, lesson_no):
     """Guarded subject/year lookup; never intercepts other subjects or years."""
-    try:
-        year_number = int(year)
-    except (TypeError, ValueError):
+    if isinstance(year, bool) or not str(year).strip().isascii() or not str(year).strip().isdigit():
         return None
+    year_number = int(str(year).strip())
     subject_key = re.sub(r"[^a-z]", "", str(subject).casefold())
     if year_number != 1 or subject_key not in {"english", "bahasainggeris", "bi"}:
         return None
