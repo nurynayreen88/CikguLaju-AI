@@ -40052,7 +40052,7 @@ def menu(cid,show_persistent=False):
         '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🏆 <b>JADI PIONEER — RM20 SEKALI SAHAJA</b>\nAkses sepanjang CikguLaju AI beroperasi. Tiada bayaran bulanan atau tahunan. Pengesahan pembayaran dibuat secara manual oleh admin.\n\n'
+        '🏆 <b>JADI PIONEER — RM20 SEKALI SAHAJA</b>\nAkses sepanjang CikguLaju AI beroperasi. Tiada bayaran bulanan atau tahunan.\n\n'
         '🎁 <b>5 JANAAN RPH PERCUMA</b>'
     )
     return send(cid,body,kb)
