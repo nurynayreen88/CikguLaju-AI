@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.1 / 3.1.2  
 **Complementary SK / SP:** 1.1 / 1.1.1  
 **Learning aim (source):** Develop reading for specific information about toys.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can locate two toy words or details needed for the SB p27 reading task.
 **Student's Book pages:** 27  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will point to two words or details that support answers.
 **Teacher / task guidance:** Pupils compare matches in pairs and point to the words that support each answer.
 **Provenance:** VERIFIED_TB_SCAN
 
