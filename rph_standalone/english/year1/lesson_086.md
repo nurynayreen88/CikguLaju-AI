@@ -14,6 +14,7 @@
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
 ### Activity 1 — Student's Book
+**Pupils (editorial, source-aligned):** Look at the pictures on SB p35, repeat the modelled pet-language pattern and exchange responses with a partner.
 **Teacher / task guidance:** Work through SB p35 using the pictures and target pet language; model the response pattern, practise chorally, then move to pair exchanges.
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
