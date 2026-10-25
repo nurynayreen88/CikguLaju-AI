@@ -22,7 +22,9 @@ Use SB p54 to establish the speaking context, model the target language and run 
 Monitor accurate food vocabulary and the target speaking pattern.
 
 ## Closure (teacher-developed proposal; pending review)
-Pairs demonstrate one practised food-language exchange.
+**Teacher:** Invite each pair to perform one final SB p54 food-language exchange.
+**Pupils:** Take turns asking and answering one food-language exchange.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
