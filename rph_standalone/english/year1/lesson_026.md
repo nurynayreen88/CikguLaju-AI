@@ -5,6 +5,7 @@
 **Main SK / SP:** 2.1 / 2.1.1  
 **Complementary SK / SP:** 1.2 / 1.2.5  
 **Learning objective:** Sing the classroom-object song and practise It's my / It isn't my language.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can give two responses using It's my or It isn't my during SB p12 practice.
 **Teaching materials:** Student's Book pp. 12, Workbook activity; Teacher's Book pp. 12  
 **Audio guidance:** SB p12 uses CD1 Track 17.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will listen to two responses from each pupil during pair practice.
 **Teacher:** Pairs compare desk-matching answers before class checking; elicit truthful It's my / It isn't my responses during the song game.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
