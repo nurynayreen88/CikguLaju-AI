@@ -22,7 +22,9 @@ Read SB p53 first for gist and then for the specific information required by the
 Pupils point to the word, phrase or picture evidence supporting each answer.
 
 ## Closure (teacher-developed proposal; pending review)
-Pairs locate one detail in the reading and explain their answer.
+**Teacher:** Ask pairs to locate one reading detail on SB p53 and show its evidence.
+**Pupils:** Point to one detail and explain which word or picture supports it.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
