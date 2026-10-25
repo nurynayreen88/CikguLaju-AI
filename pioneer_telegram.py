@@ -81,6 +81,11 @@ def install(ns):
                         [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
         if d == "pioneer_receipt":
+            if has_pioneer(sb, cid):
+                return send(cid, "🏆 Status Pioneer anda sudah aktif.")
+            pending = ns["_latest_pending_payment"](cid)
+            if not pending or float(pending.get("amount", 0)) != 20.0:
+                return send(cid, "⚠️ Mulakan permohonan Pioneer RM20 dahulu sebelum menghantar resit.")
             state.setdefault(cid, {})["waiting"] = "payment_proof"
             return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM20.")
         if d == "pioneer_pay":
