@@ -19,6 +19,7 @@ Preview SB pp50-51, predict from pictures, listen/read the story, pause for comp
 Use the verified story-linked Workbook task.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Ask pupils to sequence two story frames and identify one character action.
 Ask pupils to order key events and identify speakers/actions using the story frames.
 
 ## Closure
