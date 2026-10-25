@@ -5,6 +5,7 @@
 **Main SK/SP:** 1.3 / 1.3.1  
 **Complementary SK/SP:** 1.2 / 1.2.3  
 **Objective:** Follow and understand the Unit 3 picture story.  
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify the order of at least two story events and identify a speaker or action in SB pp38–39.
 **Student's Book:** 38, 39
 
 ## Activity 1 — Textbook sequence
@@ -12,6 +13,7 @@
 **Pupils:** Look at the story frames on SB pp38–39, listen or read, identify the order of events, answer questions about characters and rehearse selected story roles.
 
 ## Assessment / PBD
+**Observable evidence (teacher-developed):** Ask pupils to sequence two story events and point to a frame identifying a speaker or action.
 **Teacher:** Ask pupils to sequence key events and identify speakers/actions from the frames.
 **Pupils:** Give responses and explain or correct them during checking.
 
