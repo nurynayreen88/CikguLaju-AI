@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Preview the story pictures, elicit predictions, play/read the story, pause to check events and characters, then replay/read for sequence and role practice.
+**Pupils (editorial, source-aligned):** Study the story pictures and predict what happens; listen or read, identify characters and events, then practise the sequence and story roles.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
