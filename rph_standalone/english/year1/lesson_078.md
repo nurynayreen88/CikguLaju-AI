@@ -11,11 +11,11 @@
 
 ### Set Induction
 **Teacher / task guidance:** Teacher shows familiar toy and shape pictures. Pupils recall words from the unit.
-**Pupils (editorial, source-aligned):** Complete the unit review on toys, descriptions and shapes; say which words and sentences they can now understand, speak, read or write.
 **Provenance:** Teacher-developed proposal; not verified Teacher's Book text
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Use the final unit review/reflection activities to recycle toys, descriptions and shapes, then have pupils identify what they can now say/read/write.
+**Pupils (editorial, source-aligned):** Complete the SB p33 unit review on toys, descriptions and shapes; identify language that can now be spoken, read or written.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
