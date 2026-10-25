@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** On SB p13 pupils listen and choose the correct stickers, write the object words, mime the instructions, repeat the imperative forms, then play a chain game in small groups where each pupil follows and gives a new instruction.
-**Pupils:** Complete the Student's Book practice and exchange answers with a partner before class feedback.
+**Pupils:** Listen and select stickers on SB p13, write object words, mime imperatives and take turns giving and following commands in a chain game.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p13: read and write classroom-object words, then read and match instructions/items by number.
