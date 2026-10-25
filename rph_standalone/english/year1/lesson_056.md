@@ -5,6 +5,7 @@
 **Main SK / SP:** 2.1 / 2.1.1  
 **Complementary SK / SP:** 4.2 / 4.2.1  
 **Learning aim (source):** Develop listening discrimination and description of toys.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can give two short descriptions of toys using the SB p24 language.
 **Student's Book pages:** 24  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will listen to two descriptive turns and check toy vocabulary.
 **Teacher / task guidance:** Pairs compare numbering before replay/class checking; monitor descriptive exchanges.
 **Provenance:** VERIFIED_TB_SCAN
 
