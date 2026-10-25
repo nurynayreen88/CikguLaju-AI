@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Use SB p54 to establish the speaking context, model the target language and run structured pair/group exchanges.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Observe two speaking turns and record whether the pupil uses the modelled language.
 Monitor accurate food vocabulary and the target speaking pattern.
 
 ## Closure (teacher-developed proposal; pending review)
