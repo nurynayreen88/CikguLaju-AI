@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Present classroom-object flashcards, play the SB p10 recording for pupils to point and repeat, then use the chant first as a class and then in groups while pupils hold up relevant objects.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Point to and name classroom objects, repeat words after the recording and perform the chant while holding up the matching objects.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p10: match classroom-object words to pictures, then colour the objects as instructed.
