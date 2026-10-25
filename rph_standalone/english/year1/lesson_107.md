@@ -11,8 +11,8 @@
 Use picture prompts to reactivate the language needed for the task.
 
 ## Activity 1 — Student's Book
-**Pupils (editorial, source-aligned):** Listen to and repeat the SB p42 exchange, then take turns using the target language with a partner or small group.
-Model the SB p42 speaking exchange, practise as a class, then use pairs/small groups for repeated meaningful turns.
+**Teacher:** Model the SB p42 speaking exchange, rehearse the response with the class and organise repeated pair or small-group turns.
+**Pupils:** Listen to and repeat the SB p42 exchange, then take turns using the target language with a partner or small group.
 
 ## Assessment / PBD
 Listen for correct target language and understandable pronunciation.
