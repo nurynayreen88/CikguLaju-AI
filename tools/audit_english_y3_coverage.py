@@ -27,7 +27,7 @@ def audit():
                 not re.search(r"\*\*Complementary SK/SP:\*\*\s*\d+\.\d+\s*/\s*\d+\.\d+\.\d+", text) or
                 "Assessment / PBD" not in text or "Closure" not in text):
             malformed.append(number)
-    print(f"Year 3 RPH: {len(found & {}) if False else len(found)}/160")
+    print(f"Year 3 RPH: {len(found)}/160")
     print("Missing:", missing)
     print("Unexpected:", extra)
     print("Malformed:", sorted(malformed))
