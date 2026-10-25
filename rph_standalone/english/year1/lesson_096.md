@@ -15,5 +15,9 @@
 **Teacher:** Require pupils to point to visual/text evidence when checking answers.
 **Pupils:** Give responses and explain or correct them during checking.
 
+## Closure — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Invite a brief independent consolidation response and check pupils' understanding.
+**Pupils:** Pupils select one picture from SB p37, say a short answer using the lesson language and point to the visual clue supporting it.
+
 **Provenance:** SOURCE_ALIGNED_GUIDANCE; teacher review required.  
 **QA:** Draft; verify pedagogy, pupil-action wording and one-page A4 layout. No unverified audio or workbook reference added.
