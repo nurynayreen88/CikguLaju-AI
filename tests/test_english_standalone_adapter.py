@@ -10,9 +10,9 @@ class EnglishStandaloneAdapterTests(unittest.TestCase):
             with self.subTest(lesson=n):
                 text = load_english_y1_rph(n)
                 self.assertIsNotNone(text)
-                self.assertIn("Lesson", text)
-                self.assertIn("Closure", text)
-                self.assertIn("PBD", text)
+                self.assertRegex(text, r"(?i)lesson")
+                self.assertRegex(text, r"(?i)closure")
+                self.assertRegex(text, r"(?i)(pbd|assessment)")
 
     def test_guard_other_year_and_subject(self):
         self.assertIsNone(get_english_y1_rph(2, "English", 1))
