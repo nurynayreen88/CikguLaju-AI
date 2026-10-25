@@ -5,6 +5,7 @@
 **Main SK / SP:** 1.2 / 1.2.1  
 **Complementary SK / SP:** 2.1 / 2.1.5  
 **Learning aim (source):** Introduce and practise pet vocabulary in the Unit 3 opening context.  
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can point to and name at least three pets shown on SB p34.
 **Student's Book pages:** 34  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
 ### Assessment / PBD
+**Observable evidence (teacher-developed):** Point to three pet pictures in a different order; record whether each pupil identifies the pets correctly.
 **Teacher / task guidance:** Point to pets in mixed order and elicit names; pairs check one another.
 **Provenance:** SOURCE_ALIGNED_GUIDANCE
 
