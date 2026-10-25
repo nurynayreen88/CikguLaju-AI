@@ -8,6 +8,10 @@
 **Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can ask and answer one pet-language exchange with a partner using the SB p36 model.
 **Student's Book:** 36
 
+## Set Induction — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Ask pupils to name one pet shown on SB p36 and recall the exchange pattern.
+**Pupils:** Point to a pet on SB p36, name it and repeat the modelled exchange with a partner.
+
 ## Activity 1 — Textbook sequence
 **Teacher:** Model the pet-language exchange using SB p36, invite choral practice and organise paired turns.
 **Pupils:** Look at SB p36, listen to the modelled pet-language exchange, rehearse the response as a class and take turns speaking with a partner.
