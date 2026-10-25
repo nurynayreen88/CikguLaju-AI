@@ -46411,16 +46411,55 @@ except Exception as _pioneer_install_exc:
 
 # === RPT 2027 MAIN MENU: draft-safe navigation ===
 _RPT2027_PREVIOUS_CALLBACK = callback
+_RPT2027_SUBJECTS = (
+    ('bm', 'Bahasa Melayu'), ('bi', 'Bahasa Inggeris'),
+    ('math', 'Matematik'), ('science', 'Sains'),
+    ('pi', 'Pendidikan Islam'), ('pm', 'Pendidikan Moral'),
+    ('pjpk', 'Pendidikan Jasmani dan Pendidikan Kesihatan'),
+    ('history', 'Sejarah'), ('rbt', 'Reka Bentuk dan Teknologi'),
+)
 def callback(cid, d):
     ds = str(d or '')
     if ds == 'rpt2027_home':
-        kb = [[{'text': f'Tahun {n}', 'callback_data': f'rpt2027_year_{n}'}] for n in range(1, 7)]
+        kb = [[{'text': f'Tahun {n}', 'callback_data': f'rpt2027_level_y{n}'}] for n in range(1, 7)]
+        kb += [[{'text': f'Tingkatan {n}', 'callback_data': f'rpt2027_level_f{n}'}] for n in range(1, 6)]
         kb.append([{'text': '🏠 Menu Utama', 'callback_data': 'home'}])
-        return send(cid, '📅 <b>RPT 2027</b>\n\nPilih tahun untuk melihat status penyediaan RPT. Fail hanya akan dibuka untuk muat turun setelah disahkan.', kb)
-    if ds.startswith('rpt2027_year_'):
-        year = ds[len('rpt2027_year_'):]
-        if year not in ('1', '2', '3', '4', '5', '6'):
+        return send(cid, '📅 <b>RPT 2027</b>\\n\\nPilih Tahun atau Tingkatan. RPT hanya boleh dimuat turun setelah fail disahkan.', kb)
+    if ds.startswith('rpt2027_level_'):
+        level = ds[len('rpt2027_level_'):]
+        if level not in tuple(f'y{n}' for n in range(1, 7)) + tuple(f'f{n}' for n in range(1, 6)):
             return _RPT2027_PREVIOUS_CALLBACK(cid, d)
-        return send(cid, f'📅 <b>RPT 2027 — Tahun {year}</b>\n\nRPT sedang dibangunkan dan disemak. Tiada fail yang disahkan untuk muat turun melalui bot pada masa ini.', [[{'text': '⬅️ Pilih Tahun', 'callback_data': 'rpt2027_home'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
+        label = ('Tahun ' if level[0] == 'y' else 'Tingkatan ') + level[1:]
+        kb = [[{'text': name, 'callback_data': f'rpt2027_subject_{level}_{code}'}]
+              for code, name in _RPT2027_SUBJECTS]
+        kb.append([{'text': '⬅️ Pilih Tahun / Tingkatan', 'callback_data': 'rpt2027_home'}])
+        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\\n\\nPilih subjek:', kb)
+    if ds.startswith('rpt2027_subject_'):
+        parts = ds.split('_')
+        if len(parts) != 4:
+            return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+        _, _, level, code = parts
+        if level not in tuple(f'y{n}' for n in range(1, 7)) + tuple(f'f{n}' for n in range(1, 6)):
+            return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+        names = dict(_RPT2027_SUBJECTS)
+        if code not in names:
+            return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+        label = ('Tahun ' if level[0] == 'y' else 'Tingkatan ') + level[1:]
+        kb = [[{'text': 'Kumpulan A', 'callback_data': f'rpt2027_group_{level}_{code}_A'}],
+              [{'text': 'Kumpulan B', 'callback_data': f'rpt2027_group_{level}_{code}_B'}],
+              [{'text': '⬅️ Pilih Subjek', 'callback_data': f'rpt2027_level_{level}'}],
+              [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]]
+        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\\nSubjek: <b>{names[code]}</b>\\n\\nPilih kumpulan takwim persekolahan:', kb)
+    if ds.startswith('rpt2027_group_'):
+        parts = ds.split('_')
+        if len(parts) != 5:
+            return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+        _, _, level, code, group = parts
+        names = dict(_RPT2027_SUBJECTS)
+        if (level not in tuple(f'y{n}' for n in range(1, 7)) + tuple(f'f{n}' for n in range(1, 6))
+                or code not in names or group not in ('A', 'B')):
+            return _RPT2027_PREVIOUS_CALLBACK(cid, d)
+        label = ('Tahun ' if level[0] == 'y' else 'Tingkatan ') + level[1:]
+        return send(cid, f'📅 <b>RPT 2027 — {label}</b>\\nSubjek: <b>{names[code]}</b>\\nKumpulan: <b>{group}</b>\\n\\n📝 Status: Dalam pembangunan / semakan. Fail Word belum disahkan untuk muat turun.', [[{'text': '⬅️ Tukar Kumpulan', 'callback_data': f'rpt2027_subject_{level}_{code}'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
     return _RPT2027_PREVIOUS_CALLBACK(cid, d)
 # === END RPT 2027 MENU ===
