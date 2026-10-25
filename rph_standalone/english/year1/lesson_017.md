@@ -5,6 +5,7 @@
 **Main SK / SP:** 4.2 / 4.2.1  
 **Complementary SK / SP:** 2.1 / 2.1.5  
 **Learning objective:** Discuss the story meaning, recycle unit language and help pupils reflect on learning.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can complete one written story follow-up response using SB p9.
 **Teaching materials:** Student's Book pp. 9, Workbook activity; Teacher's Book pp. 9  
 **Audio guidance:** Replay the previously verified Friends story recording; no new exact track is introduced on this TB page.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check each pupil's written response against the story context.
 **Teacher:** Pairs compare answers with another pair before class feedback.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
