@@ -102,7 +102,7 @@ jobs:
           g['callback'](1, pdp_buttons[0])
           assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Exited menu still allowed RPH'
           g['callback'](1, 'sub_Pendidikan Jasmani')
-          g['callback'](1, 'pjpk2616pdp|0')
+          g['callback'](1, pdp_buttons[0])
           handoffs = [event for event in events if event[0] == 'RPH_ENTRY']
           assert handoffs, 'Selection did not enter the normal RPH class flow'
           selected = handoffs[-1][1]
