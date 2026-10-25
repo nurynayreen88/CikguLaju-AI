@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Display SB p47; model how to locate a supporting word or picture clue, allow individual responses and lead partner checking before class feedback.
 **Pupils (editorial, source-aligned):** Read the text or prompts on SB p47, complete the textbook response, compare answers in pairs and practise the food language orally.
-Use SB p47 for the textbook reading/task, model the required response, allow pair comparison and then reuse the language orally.
+
 
 ## Activity 2
 Use the verified WB activity linked to this page.
