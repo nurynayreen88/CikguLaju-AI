@@ -4,6 +4,7 @@
 **Main SK/SP:** 2.1 / 2.1.2
 **Complementary SK/SP:** 1.2 / 1.2.2
 **Learning aim:** Develop speaking using the Unit 4 textbook stimulus.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can take two turns in a modelled food-language exchange using SB p49.
 **Student's Book:** 49
 **Audio:** Use verified CD2 Tracks 09 and 10.
 
