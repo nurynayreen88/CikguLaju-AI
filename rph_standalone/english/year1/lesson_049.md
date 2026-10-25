@@ -5,6 +5,7 @@
 **Main SK / SP:** 3.2 / 3.2.2  
 **Complementary SK / SP:** 2.1 / 2.1.2  
 **Learning aim (source):** Practise toy vocabulary through a song and personal response.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can recognise at least two toy words on SB p23 and give one personal response.
 **Student's Book pages:** 23  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will identify two written toy words and share one response.
 **Teacher / task guidance:** Ask pupils to identify the toy words heard and compare responses in pairs.
 **Provenance:** VERIFIED_TB_SCAN
 
