@@ -16,6 +16,7 @@ Teacher shows pictures of familiar food items and asks pupils to name or point t
 Use SB p55 as the stimulus for guided speaking; model one example, rehearse as a class and then give pupils repeated turns in pairs.
 
 ## Assessment
+**Observable PBD evidence (teacher-developed, pending review):** Observe one complete paired exchange and check that each pupil contributes a turn.
 Invite pairs to demonstrate and correct only language that affects the target objective.
 
 ## Closure (teacher-developed proposal; pending review)
