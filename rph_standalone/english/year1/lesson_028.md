@@ -14,7 +14,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher:** Use SB pp14-15: identify characters and classroom objects, play the story, pause at key frames for comprehension, discuss helping each other, then replay for listen-and-repeat and role-play.
-**Pupils:** Follow the textbook task, listen/read and respond as directed.
+**Pupils:** Identify classroom objects and characters in the story, listen to the recording, answer comprehension questions and act out assigned roles.
 
 ### Activity 2 — Workbook
 **Teacher:** WB p14: listen and tick the matching story pictures, find Flash in the story, and match key phrases to numbers.
