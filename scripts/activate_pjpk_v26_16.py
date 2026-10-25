@@ -154,9 +154,9 @@ def install(g):
         state["grouped_sk_codes"] = sk_codes
         state["selected_sk_codes"] = sk_codes
         state["grouped_sk_texts"] = sk_texts
-        state["grouped_sp_codes"] = sp_codes[:4]
-        state["selected_sp_codes"] = sp_codes[:4]
-        state["grouped_sp_texts"] = sp_texts[:4]
+        state["grouped_sp_codes"] = sp_codes
+        state["selected_sp_codes"] = sp_codes
+        state["grouped_sp_texts"] = sp_texts
         if sk_codes:
             state["selected_sk"] = sk_codes[0]
             state["sk_code"] = sk_codes[0]
