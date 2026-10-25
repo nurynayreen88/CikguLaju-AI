@@ -46393,3 +46393,13 @@ except Exception as _kp2027_selector_exc:
     CIKGULAJU_KP2027_SELECTOR_INSTALLED = False
     CIKGULAJU_KP2027_SELECTOR_ERROR = repr(_kp2027_selector_exc)
 # === END KP2027 SELECTOR ===
+
+
+# === PIONEER LIFETIME OPT-IN TELEGRAM INTEGRATION ===
+try:
+    from pioneer_telegram import install as _install_pioneer_telegram
+    CIKGULAJU_PIONEER_INSTALLED = bool(_install_pioneer_telegram(globals()))
+except Exception as _pioneer_install_exc:
+    CIKGULAJU_PIONEER_INSTALLED = False
+    CIKGULAJU_PIONEER_INSTALL_ERROR = repr(_pioneer_install_exc)
+# === END PIONEER INTEGRATION ===
