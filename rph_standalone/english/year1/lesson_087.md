@@ -15,5 +15,9 @@
 **Teacher:** Monitor whether pupils use the target form and pet word accurately.
 **Pupils:** Give responses and explain or correct them during checking.
 
+## Closure — Teacher-developed proposal (not verified Teacher's Book)
+**Teacher:** Invite a brief independent consolidation response and check pupils' understanding.
+**Pupils:** In pairs, pupils exchange one final pet-language question and answer without teacher modelling; teacher checks whether both pupils take a speaking turn.
+
 **Provenance:** SOURCE_ALIGNED_GUIDANCE; teacher review required.  
 **QA:** Draft; verify pedagogy, pupil-action wording and one-page A4 layout. No unverified audio or workbook reference added.
