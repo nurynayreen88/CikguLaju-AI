@@ -19,6 +19,7 @@ Run a short oral retrieval of pet vocabulary.
 **Teacher:** Teacher checks each pupil's written response against the SB p41 model for a relevant word or sentence frame and gives one correction where needed.
 
 ## Closure (teacher-developed proposal, pending review)
-Partners read their written work aloud and check one target word.
+**Teacher:** Invite partners to read their completed writing and check one target pet word.
+**Pupils:** Read the written response aloud to a partner and check one target word against the model.
 
 **Source status:** SOURCE_ALIGNED_GUIDANCE. **QA:** Draft pending pedagogical and A4 review.
