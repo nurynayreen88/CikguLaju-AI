@@ -86,6 +86,8 @@ def install(ns):
             pending = ns["_latest_pending_payment"](cid)
             if not pending or float(pending.get("amount", 0)) != 20.0:
                 return send(cid, "⚠️ Mulakan permohonan Pioneer RM20 dahulu sebelum menghantar resit.")
+            if pending.get("notes") == "proof_received_admin_notified":
+                return send(cid, "⌛ Resit Pioneer RM20 sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
             state.setdefault(cid, {})["waiting"] = "payment_proof"
             return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM20.")
         if d == "pioneer_pay":
