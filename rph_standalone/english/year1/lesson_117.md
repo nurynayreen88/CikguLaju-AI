@@ -22,7 +22,9 @@ Use SB p46 to establish the lunchtime scene, identify target food, listen/point/
 Point to food items in random order and elicit names; use pair checking before class feedback.
 
 ## Closure (teacher-developed proposal; pending review)
-Pupils name three food items from the opening scene without listening support.
+**Teacher:** Point to three food pictures from SB p46 in mixed order and ask for names without a model.
+**Pupils:** Name three food items independently.
+**Provenance:** Teacher-developed closure; pending Teacher's Book review.
 
 **Source status:** VERIFIED_MAPPING_GUIDANCE. Teacher-developed proposals are not Teacher's Book quotations.
 **Review status:** Draft; pedagogical and A4 checks pending.
