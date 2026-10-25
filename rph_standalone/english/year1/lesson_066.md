@@ -15,6 +15,7 @@
 
 ### Activity 1 — Student's Book
 **Teacher / task guidance:** Read the short toy descriptions on SB p27, number/match the go-karts and use the text to identify specific features.
+**Pupils (editorial, source-aligned):** Read the short descriptions on SB p27; match or number the go-karts and point to the features in each description.
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
