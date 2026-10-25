@@ -23,7 +23,10 @@ def load_english_y1_rph(lesson_no):
         text = path.read_text(encoding="utf-8")
     except (OSError, UnicodeError):
         return None
-    if not text.strip() or not re.search(r"(?im)^#{1,2}\s+.*lesson\s*0*"+str(number)+r"\b", text):
+    lesson_marker = re.compile(
+        rf"(?im)^(?:#{{1,2}}\\s+[^\\n]*\\blesson\\s*0*{number}\\b|\\*\\*Lesson:\\*\\*\\s*0*{number}\\b)"
+    )
+    if not text.strip() or not lesson_marker.search(text):
         return None
     return text
 
