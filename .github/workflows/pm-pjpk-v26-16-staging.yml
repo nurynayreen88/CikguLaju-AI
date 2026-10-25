@@ -89,6 +89,11 @@ jobs:
               assert db.stat().st_size == before, 'Read-only DB changed during blocked menu'
               print('BLOCKED: no PJ Tahun 1 row has complete SK and SP text; no RPH handoff')
               raise SystemExit(0)
+          state[1]['year'] = 'Tahun 2'
+          g['callback'](1, 'pjpk2616pdp|0')
+          assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Stale year selection entered RPH'
+          state[1]['year'] = 'Tahun 1'
+          g['callback'](1, 'sub_Pendidikan Jasmani')
           g['callback'](1, 'pjpk2616pdp|0')
           handoffs = [event for event in events if event[0] == 'RPH_ENTRY']
           assert handoffs, 'Selection did not enter the normal RPH class flow'
