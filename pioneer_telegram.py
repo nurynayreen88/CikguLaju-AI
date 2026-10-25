@@ -120,7 +120,7 @@ def install(ns):
                     return send(cid, f"⚠️ Pioneer belum diaktifkan: {type(exc).__name__}. Semak rekod.")
                 ns["_mark_payment_request"](rid, "approved", cid, "Pioneer RM20 manually verified by admin")
                 send(cid, f"✅ Pioneer diaktifkan untuk {req['chat_id']}.")
-                return send(req["chat_id"], "🏆 Pioneer anda kini aktif. Tiada yuran bulanan atau tahunan.")
+                return send(req["chat_id"], "🏆 <b>Status Pioneer Anda: AKTIF</b>\n\nAnda menikmati akses tanpa bayaran langganan bulanan atau tahunan sepanjang CikguLaju AI beroperasi.")
         return original_callback(cid, d)
 
     ns["_access_info"] = access_info
