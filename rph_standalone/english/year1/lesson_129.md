@@ -11,6 +11,7 @@
 Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
 
 ## Activity 1
+**Pupils (editorial, source-aligned):** Reread the relevant story section on SB p51, complete the follow-up task and compare answers with a partner.
 Return to SB p51 for the verified textbook follow-up; reread relevant story language and complete the page task before pair checking.
 
 ## Assessment
