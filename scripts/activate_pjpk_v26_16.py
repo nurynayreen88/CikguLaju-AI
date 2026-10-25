@@ -101,7 +101,7 @@ def install(g):
         for item in row.get("_std") or []:
             code = str(item.get("standard_code") or "").strip()
             text = str(item.get("standard_text") or "").strip()
-            if not code or item.get("verified") not in (1, True):
+            if not code or not text or item.get("verified") not in (1, True):
                 continue
             if item.get("standard_type") == "SK" and code not in sk_codes:
                 sk_codes.append(code)
@@ -123,14 +123,14 @@ def install(g):
             "rpt_activity_note", "rpt_assessment_note",
             "_quick_selected_rpt_row_v2388", "quick_rpt_row",
         )
-        for key in stale_keys:
-            state.pop(key, None)
-
         lesson_to_class = g.get("_lesson_to_class_v2439")
         if not callable(lesson_to_class):
             return g["send"](cid,
                 "⚠️ Laluan pemilihan kelas untuk RPH belum tersedia; data PJPK tidak dihantar ke laluan lain.",
                 [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+
+        for key in stale_keys:
+            state.pop(key, None)
 
         state["pjpk_generic_mode_v2616"] = False
         state["task"] = "quick_material"
