@@ -4,6 +4,7 @@
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 3.2 / 3.2.1
 **Learning aim:** Follow and understand the Unit 4 picture story.
+**Measurable objective (teacher-developed, pending review):** By the end of the lesson, pupils can identify two events in sequence and one character action in the SB pp50–51 story.
 **Student's Book:** 50, 51
 **Audio:** SB story uses verified CD2 Track 11; WB uses verified CD2 Track 12.
 
