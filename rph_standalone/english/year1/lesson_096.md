@@ -9,7 +9,7 @@
 
 ## Activity 1 — Textbook sequence
 **Teacher:** Use SB p37 pictures/text to complete the textbook task, compare answers in pairs, then reuse the language orally.
-**Pupils:** Follow the activities on SB p37 pictures/text to complete the textbook task, compare answers in pairs, then reuse the language orally.
+**Pupils:** Examine the pictures and text on SB p37, complete the textbook task, compare answers with a partner and use the same language in short oral responses.
 
 ## Assessment / PBD
 **Teacher:** Require pupils to point to visual/text evidence when checking answers.
