@@ -12,7 +12,7 @@ FILES = [
 REQUIRED = ("id", "year", "subject", "topic", "objective", "materials",
             "induction", "activities", "reinforcement", "closure", "assessment",
             "teacher_fields", "status", "production_ready")
-LOCKS = ("sk_text_verified", "sp_text_verified", "textbook_verified",
+LOCKS = ("textbook_verified",
          "rpt_exact_slot_verified", "rph_runtime_verified", "a4_review_verified")
 TEACHER = ("date", "day", "class", "time", "duration_minutes", "reflection")
 CANDIDATE_IDS = {2249, 2250, 2251, 2344, 2345, 2346, 2347, 2348, 2349, 2350, 2354}
@@ -93,10 +93,14 @@ def audit():
             errors.append(f"{ident}: unsafe release state")
         if any(r.get(k) is not False for k in LOCKS):
             errors.append(f"{ident}: verification lock not false")
-        if not isinstance(r.get("sp"), list):
-            errors.append(f"{ident}: sp must be list")
-        elif ident in CANDIDATE_IDS and r["sp"] != []:
-            errors.append(f"{ident}: candidate SP must remain empty until exact RPT verification")
+        if r.get("sk_text_verified") is not True or r.get("sp_text_verified") is not True:
+            errors.append(f"{ident}: DSKP verification incomplete")
+        if r.get("sk") != str(r.get("sp", [""])[0]).rsplit(".", 1)[0]:
+            errors.append(f"{ident}: SK/SP mismatch")
+        if not isinstance(r.get("sp"), list) or not r["sp"]:
+            errors.append(f"{ident}: SP mapping missing")
+        elif ident in CANDIDATE_IDS and r["sp"] != EXPECTED_FOCUS_SP[ident]:
+            errors.append(f"{ident}: candidate SP differs from DSKP focus mapping")
         elif ident in EDITORIAL_SP and r["sp"] != EDITORIAL_SP[ident]:
             errors.append(f"{ident}: editorial SP changed without source review")
     return errors, len(records), len(set(ids))
