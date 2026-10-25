@@ -5,6 +5,7 @@
 **Main SK / SP:** 4.3 / 4.3.2  
 **Complementary SK / SP:** 3.2 / 3.2.1  
 **Learning objective:** Integrate Art through English and classify primary/secondary colours.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can identify at least two primary colours and record one colour-mixing result from SB p18.
 **Teaching materials:** Student's Book pp. 18, Workbook activity; Teacher's Book pp. 18  
 **Audio guidance:** No exact audio track is introduced on this Teacher's Book page.
 
@@ -21,6 +22,7 @@
 **Pupils:** Complete the specified Workbook task and compare answers.
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check two colour identifications and one recorded result.
 **Teacher:** Groups share colour examples and discuss colour-mixing answers before class confirmation.
 **Pupils:** Provide responses and explain or correct answers during checking.
 
