@@ -41,7 +41,12 @@ def install(ns):
         return response
 
     def access_info(cid):
-        return effective_access(sb, cid, original_access(cid))
+        # Pioneer is independent of subscription expiry or subscription API failures.
+        if has_pioneer(sb, cid):
+            return {"active": True, "status": "pioneer", "access_start": None,
+                    "access_until": None, "days_left": None,
+                    "plan_code": "PIONEER_LIFETIME"}
+        return original_access(cid)
 
     def menu(cid, show_persistent=False):
         # Preserve original menu and append a separate Pioneer invitation.
