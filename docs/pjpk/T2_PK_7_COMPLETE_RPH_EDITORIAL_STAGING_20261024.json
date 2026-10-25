@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "description": "Seven substantive editorial T2 PK drafts mapped only to directly evidenced SP codes; SK text, textbook and exact RPT slots remain unverified; no production activation",
+  "description": "Seven T2 PK editorial RPH drafts with DSKP-verified SK/SP; overlap groups and exact RPT slots remain unresolved; no production activation",
   "records": [
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -20,7 +20,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2232,
       "unit": "Unit 10: Bahaya Menanti",
@@ -28,7 +28,7 @@
       "sp": [
         "8.1.1"
       ],
-      "sk": null,
+      "sk": "8.1",
       "objective": "Murid menyatakan waktu makan dan minum yang sesuai serta kuantiti mengikut keperluan harian dalam situasi rekaan.",
       "materials": "Kad waktu makan dan minum; jadual aktiviti harian rekaan; kad keperluan individu.",
       "induction": "Guru menunjukkan dua jadual waktu makan dan minum rekaan dan meminta murid membandingkannya.",
@@ -45,14 +45,14 @@
       "reinforcement": "Murid membetulkan jadual makan/minum rekaan dan menjelaskan pilihan.",
       "closure": "Rumusan waktu makan dan minum serta kuantiti mengikut keperluan harian.",
       "assessment": "Semakan jadual dan alasan tentang waktu serta kuantiti mengikut keperluan.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     },
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -65,7 +65,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2252,
       "unit": "Unit 10: Bahaya Menanti",
@@ -73,7 +73,7 @@
       "sp": [
         "8.1.2"
       ],
-      "sk": null,
+      "sk": "8.1",
       "objective": "Murid menganalisis makanan dan minuman yang boleh menyumbang kepada berat badan berlebihan serta mencadangkan pilihan yang lebih seimbang.",
       "materials": "Kad corak pengambilan makanan dan minuman rekaan; lembaran analisis pilihan.",
       "induction": "Guru menunjukkan dua corak pengambilan makanan/minuman rekaan dan meminta murid meneliti perbezaannya.",
@@ -90,14 +90,14 @@
       "reinforcement": "Murid menerangkan satu perubahan pilihan makanan atau minuman dan sebabnya.",
       "closure": "Rumusan pilihan makanan dan minuman yang lebih seimbang tanpa menilai bentuk tubuh individu.",
       "assessment": "Semakan analisis pilihan makanan/minuman dan justifikasi.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     },
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -110,7 +110,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2351,
       "unit": "Unit 9: Hari Yang Ceria",
@@ -120,7 +120,7 @@
         "7.1.2",
         "7.1.3"
       ],
-      "sk": null,
+      "sk": "7.1",
       "objective": "Murid menyatakan cara menjaga keselamatan diri, mengaplikasikan kemahiran berkata TIDAK dan menilai akibat menerima pelawaan berisiko daripada orang tidak dikenali.",
       "materials": "Kad senario keselamatan, kad bantuan orang dewasa dipercayai dan rubrik lakonan.",
       "induction": "Guru memaparkan situasi ajakan yang membuat seseorang tidak selesa dan bertanya tindakan selamat.",
@@ -137,14 +137,14 @@
       "reinforcement": "Murid membandingkan dua respons terhadap pelawaan rekaan dan memberi alasan tentang akibat menerima pelawaan berisiko.",
       "closure": "Penegasan bahawa keselamatan diri lebih utama daripada menurut desakan sesiapa.",
       "assessment": "Senarai semak respons penolakan serta rubrik penilaian akibat menerima pelawaan orang tidak dikenali.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     },
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -157,7 +157,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2352,
       "unit": "Unit 10: Bahaya Menanti",
@@ -165,7 +165,7 @@
       "sp": [
         "8.1.1"
       ],
-      "sk": null,
+      "sk": "8.1",
       "objective": "Murid menyatakan waktu makan dan minum yang betul serta kuantiti mengikut keperluan harian.",
       "materials": "Kad waktu, jadual harian kosong dan kad aktiviti murid.",
       "induction": "Guru menunjukkan contoh jadual sekolah dan bertanya bila murid lazimnya makan dan minum.",
@@ -182,14 +182,14 @@
       "reinforcement": "Murid membetulkan jadual makan/minum rekaan dan memberikan alasan.",
       "closure": "Rumusan tentang amalan teratur dan keperluan individu.",
       "assessment": "Semakan jadual dan penerangan waktu serta kuantiti mengikut keperluan.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     },
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -202,7 +202,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2353,
       "unit": "Unit 10: Bahaya Menanti",
@@ -210,7 +210,7 @@
       "sp": [
         "8.1.2"
       ],
-      "sk": null,
+      "sk": "8.1",
       "objective": "Murid menganalisis contoh makanan dan minuman yang boleh menyumbang kepada berat badan berlebihan serta mencadangkan pilihan seimbang.",
       "materials": "Kad dua corak pemakanan rekaan, kad minuman dan jadual sebab-akibat.",
       "induction": "Guru menunjukkan dua pilihan minuman dalam situasi rekaan dan bertanya mengapa kekerapan pengambilan penting.",
@@ -227,14 +227,14 @@
       "reinforcement": "Murid memilih satu penambahbaikan kepada corak pengambilan rekaan.",
       "closure": "Penutup menegaskan tabiat sihat dan hormat terhadap semua bentuk badan.",
       "assessment": "Semakan analisis dan alasan pilihan makanan/minuman.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     },
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -247,7 +247,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2355,
       "unit": "Unit 11: Awas, Berhati-Hati",
@@ -255,7 +255,7 @@
       "sp": [
         "9.1.1"
       ],
-      "sk": null,
+      "sk": "9.1",
       "objective": "Murid mengenal pasti kemalangan dan kecederaan yang boleh berlaku di rumah, sekolah dan tempat awam.",
       "materials": "Kad lokasi dan gambar situasi kemalangan yang tidak grafik.",
       "induction": "Guru menunjukkan tiga lokasi dan meminta murid mengenal pasti bahaya yang mungkin berlaku.",
@@ -272,14 +272,14 @@
       "reinforcement": "Murid memberikan satu contoh baharu kemalangan atau kecederaan bagi lokasi yang dipilih.",
       "closure": "Guru merumuskan kepentingan mengenal pasti bahaya sebelum kemalangan berlaku.",
       "assessment": "Senarai semak contoh kemalangan/kecederaan yang tepat mengikut lokasi.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     },
     {
       "year": "Tahun 2",
       "subject": "Pendidikan Kesihatan",
       "status": "editorial_staging_only",
       "production_ready": false,
-      "sk_text_verified": false,
+      "sk_text_verified": true,
       "textbook_verified": false,
       "rpt_exact_slot_verified": false,
       "rph_runtime_verified": false,
@@ -292,7 +292,7 @@
         "duration_minutes": null,
         "reflection": null
       },
-      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source": "PJPK_T2_PK_Direct_DSKP_Batch_10.csv; DSKP source ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; SK/SP verified against DSKP PJPK Tahun 2 Google Drive ID 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
       "textbook_pages": null,
       "id": 2356,
       "unit": "Unit 11: Awas, Berhati-Hati",
@@ -301,7 +301,7 @@
         "9.1.2",
         "9.1.3"
       ],
-      "sk": null,
+      "sk": "9.1",
       "objective": "Murid mengaplikasikan kemahiran meminta bantuan dan menilai tindakan yang boleh diambil ketika berlaku kemalangan atau kecederaan di rumah, sekolah dan tempat awam.",
       "materials": "Kad lokasi, kad peranan dan senarai maklumat asas untuk meminta bantuan.",
       "induction": "Guru membacakan situasi kecederaan rekaan dan bertanya siapa patut dihubungi terlebih dahulu.",
@@ -318,7 +318,7 @@
       "reinforcement": "Murid memilih pihak bantuan dan menilai tindakan yang sesuai dalam satu situasi kemalangan baharu, termasuk risiko jika bantuan dilewatkan.",
       "closure": "Rumusan: utamakan keselamatan diri, dapatkan bantuan orang dewasa dan berikan maklumat tepat.",
       "assessment": "Senarai semak simulasi meminta bantuan serta rubrik penilaian pilihan tindakan dan alasan keselamatan.",
-      "sp_text_verified": false
+      "sp_text_verified": true
     }
   ]
 }
