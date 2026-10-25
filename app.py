@@ -40045,7 +40045,6 @@ def menu(cid,show_persistent=False):
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
         [{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'}],
-        [{'text':'🎁 REFERRAL & VIP','callback_data':'referral_vip'}],
     ]
     if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
     body=(
@@ -40053,8 +40052,8 @@ def menu(cid,show_persistent=False):
         '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🎁 <b>REFERRAL & VIP</b>\nAjak rakan dan dapatkan akses VIP.\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>'
+        '🏆 <b>JADI PIONEER — RM20 SEKALI SAHAJA</b>\nAkses sepanjang CikguLaju AI beroperasi. Tiada bayaran bulanan atau tahunan. Pengesahan pembayaran dibuat secara manual oleh admin.\n\n'
+        '🎁 <b>5 JANAAN RPH PERCUMA</b>'
     )
     return send(cid,body,kb)
 
