@@ -77,5 +77,42 @@
         2353
       ]
     ]
+  },
+  "textbook_page_leads": {
+    "source_drive_id": "12Ym1lDW67L_cNJQ9NB6pUYVveIyvdIA6",
+    "status": "preliminary_not_verified",
+    "entries": [
+      {
+        "ids": [
+          2249
+        ],
+        "pages": "68-69",
+        "sp": [
+          "1.1.1",
+          "1.1.3"
+        ]
+      },
+      {
+        "ids": [
+          2232,
+          2352
+        ],
+        "pages": "97-98",
+        "sp": [
+          "8.1.1"
+        ]
+      },
+      {
+        "ids": [
+          2252,
+          2353
+        ],
+        "pages": "99",
+        "sp": [
+          "8.1.2"
+        ]
+      }
+    ],
+    "production_flags_unchanged": true
   }
 }
