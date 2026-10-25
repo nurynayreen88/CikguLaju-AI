@@ -43,7 +43,7 @@ def build():
 **Teacher:** Demonstrate the {skill_type} task with an age-appropriate example and check understanding.
 **Pupils:** Observe, listen and respond to the model.
 
-## Activity 2 — Guided practice (15 minutes)
+## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Guide pair or group practice and provide corrective feedback.
 **Pupils:** Practise the target skill and exchange responses with peers.
 
