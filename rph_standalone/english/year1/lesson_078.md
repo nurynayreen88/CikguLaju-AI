@@ -5,6 +5,7 @@
 **Main SK / SP:** 4.3 / 4.3.2  
 **Complementary SK / SP:** 4.2 / 4.2.1  
 **Learning aim (source):** Review Unit 2 language and reflect on learning.  
+**Measurable objective (editorial, pending review):** By the end of the lesson, pupils can complete the SB p33 review and write one short reflection using unit vocabulary.
 **Student's Book pages:** 33  
 **Teacher's Book pages:** Not recorded in this guidance  
 **Audio guidance:** No specific track verified in this record
@@ -19,6 +20,7 @@
 **Provenance:** VERIFIED_TB_SCAN
 
 ### Assessment / PBD
+**Observable PBD evidence (editorial):** Teacher will check one review response and one written reflection.
 **Teacher / task guidance:** Use pair review followed by quick whole-class retrieval of unit vocabulary.
 **Provenance:** VERIFIED_TB_SCAN
 
