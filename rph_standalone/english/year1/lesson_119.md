@@ -14,8 +14,9 @@
 **Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
+**Teacher (editorial, source-aligned):** Preview the SB p48 task; play the mapped listening material for gist, replay for one requested detail and check answers against the pictures.
 **Pupils (editorial, source-aligned):** Look at the food pictures on SB p48, listen for the overall meaning, listen again for specific information and complete the page task.
-Preview SB p48 pictures/food words, listen first for overall meaning and again for specific information, then practise the language through the page activity.
+
 
 ## Assessment
 **Observable PBD evidence (teacher-developed, pending review):** Check the overall listening response and one specific detail from the task.
