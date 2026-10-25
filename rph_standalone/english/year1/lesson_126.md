@@ -9,7 +9,9 @@
 **Audio:** Use verified CD2 Tracks 09 and 10.
 
 ## Set Induction (teacher-developed proposal; pending review)
-Teacher shows pictures of familiar food items and asks pupils to name or point to them before the textbook task.
+**Teacher:** Point to the SB p49 stimulus and model one short food-language question.
+**Pupils:** Name a food in the stimulus and respond to the modelled question.
+**Provenance:** Teacher-developed induction; pending Teacher's Book review.
 
 ## Activity 1
 **Pupils (editorial, source-aligned):** Listen to the teacher's model on SB p49, practise the food-language exchange as a class and take turns with different food items in pairs.
