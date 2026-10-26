@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 4.3 / 4.3.3
 **Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objective:** Pupils practise writing 25 using language from The robot.
+**Learning objectives:** Pupils write three legible robot sentences and correct two spacing or letter-formation errors.
+**Success criteria:** Three legible sentences and two appropriate corrections.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
