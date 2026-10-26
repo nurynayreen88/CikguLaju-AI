@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; requires checking):** 3.2 / 3.2.3
 **Learning objective (draft):** Pupils can identify two details in a short illustrated text.
 **Materials:** Relevant topic pictures, word cards, board and exercise books.
-**Teacher's Book reference:** Page and activity sequence not verified; the following activities are teacher-developed.
+**Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit. These activities are teacher-developed; detailed SOW steps remain unverified.
 
 ## Set Induction (5 minutes)
 **Teacher:** Display two pictures linked to Free Time and elicit familiar words.
@@ -27,4 +27,4 @@
 **Teacher:** Revisit two key words and summarise the skill.
 **Pupils:** Share one correct example.
 
-**QA status:** DRAFT — exact Teacher's Book steps, SK/SP and textbook pages still require source verification before release.
+**QA status:** DRAFT — SK/SP and non-textbook classification mapped in the prior SOW audit; detailed activity alignment requires verification before release.
