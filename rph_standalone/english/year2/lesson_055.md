@@ -5,6 +5,7 @@
 **Complementary SK/SP:** 2.1 / 2.1.3
 **Learning objective:** Pupils practise language arts 11 using language from The old house.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce The old house with a picture and two questions.
