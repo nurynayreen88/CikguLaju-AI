@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 1.1 / 1.1.1
 **Complementary SK/SP:** 3.1 / 3.1.2
-**Learning objective:** Pupils practise listening 22 using language from The robot.
+**Learning objectives:** Pupils identify four of five robot-related words heard in a short spoken sequence and match four printed words to pictures.
+**Success criteria:** 4/5 listening choices and four correct printed-word matches.
 **Teaching materials:** Super Minds 1 Student's Book p.99, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.99 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display a robot illustration and elicit two familiar words.
+**Pupils:** Name robot parts or actions.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 22 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model recognising spoken robot words with picture cues; mapped context: Student's Book p.99.
+**Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Use page-linked audio if available or a labelled teacher-created sequence with five spoken items.
+**Pupils:** Listen, choose five pictures and match four printed words.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record individual performance against the stated success criteria and provide feedback.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review a useful robot-related expression.
+**Pupils:** Share one word or phrase.
+
+**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
