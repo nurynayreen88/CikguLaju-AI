@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 2.3 / 2.3.1
-**Learning objective:** Pupils practise speaking 17 using language from Get dressed!.
+**Learning objectives:** Pupils give three short clothing descriptions and contribute two relevant turns in a partner conversation.
+**Success criteria:** three intelligible descriptions and two appropriate conversation turns.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show clothing pictures and ask what pupils notice.
+**Pupils:** Name familiar items.
 
 ## Activity 1 — Model
-**Teacher:** Model the speaking 17 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model a brief outfit conversation with clear turn-taking.
+**Pupils:** Practise the model with a partner.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Organise paired picture-based dialogues and prompt active listening.
+**Pupils:** Describe three items and contribute two turns.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record each pupil's descriptions and conversational turns.
+**Pupils:** Demonstrate speaking individually within a pair.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review polite turn-taking.
+**Pupils:** Share one useful phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
