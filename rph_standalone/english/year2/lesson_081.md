@@ -4,7 +4,8 @@
 **Main SK/SP:** 1.3 / 1.3.1
 **Complementary SK/SP:** 2.1 / 2.1.5
 **Learning objective:** Pupils practise listening 17 using language from Get dressed!.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed task procedure not verified.
 
 ## Set Induction
 **Teacher:** Introduce Get dressed! with a picture and two questions.
