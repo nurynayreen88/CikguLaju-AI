@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing SOW mapping):** 4.2 / 4.2.1
 **Objective (teacher-developed):** Pupils ask and answer two short questions about familiar free-time activities using picture cues.
 **Materials:** Free-time activity picture cards, board, exercise books.
-**Teacher's Book reference:** Exact page and activity sequence pending source verification.
+**Source classification:** NON-TEXTBOOK / SOW task (prior Year 2 audit). Detailed SOW steps still require verification.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures of reading, cycling and drawing; elicit familiar activity words.
@@ -27,4 +27,4 @@
 **Teacher:** Invite one pair to demonstrate and review two activity words.
 **Pupils:** Demonstrate the exchange and share a word learned.
 
-**QA status:** DRAFT — improved skill-specific activities, not yet verified against the Teacher's Book. Confirm SOW mapping and textbook pages before release.
+**QA status:** DRAFT — improved skill-specific activities, SK/SP and non-textbook classification are mapped in the prior audit; detailed SOW task alignment remains unverified.
