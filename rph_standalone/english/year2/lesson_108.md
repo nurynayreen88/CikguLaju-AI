@@ -4,7 +4,8 @@
 **Main SK/SP:** 4.2 / 4.2.5
 **Complementary SK/SP:** 4.3 / 4.3.1
 **Learning objective:** Pupils practise writing 22 using language from The robot.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.101, pictures, word cards and classroom resources.
+**Audited source mapping:** Student's Book p.101 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce The robot with a picture and two questions.
