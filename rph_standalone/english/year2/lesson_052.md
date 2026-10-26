@@ -3,28 +3,32 @@
 **Unit:** The old house
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 3.2 / 3.2.4
-**Learning objective:** Pupils practise reading 11 using language from The old house.
+**Learning objectives:** Pupils identify at least 4 of 5 details from the reading material on Student's Book p.81 and answer at least 2 of 3 comprehension questions using information from the page.
+**Success criteria:** 4/5 details identified and 2/3 questions answered independently.
 **Teaching materials:** Super Minds 1 Student's Book p.81, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.81 (Year 2 SOW mapping audit); exact Teacher's Book sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The old house with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a house picture, elicit two familiar words and invite predictions about Student's Book p.81.
+**Pupils:** Name familiar objects and make one prediction.
 
 ## Activity 1 — Model
-**Teacher:** Model the reading 11 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Preview p.81 pictures and printed text, model locating one detail, then guide pupils to find five details actually present on the page.
+**Pupils:** Read individually or with support, then point to or underline evidence for five responses.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Ask three factual comprehension questions based on p.81; provide sentence frames, then let pupils compare evidence with a partner.
+**Pupils:** Give three short responses and identify where the answers appear in the text.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Mark each pupil's five-item detail check and three comprehension responses; record 4/5 and 2/3 achievement separately and plan guided rereading for pupils below threshold.
+**Pupils:** Submit individual answers and correct one error after feedback.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Ask pupils to share one fact and point to the text that supports it.
+**Pupils:** Share one fact from the reading.
+
+**Differentiation:** Support—picture prompts and paired rereading; extension—compose an additional factual question.
+**QA:** Teacher-designed adaptation; exact Teacher's Book activity sequence remains unverified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
