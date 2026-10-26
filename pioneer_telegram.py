@@ -75,8 +75,10 @@ def install(ns):
         # Preserve existing admin card and append a separate, verified status.
         result = original_user_card(cid, target)
         if ns["_is_admin"](cid):
-            send(cid, f"👤 ID: <code>{target}</code>\\n" + admin_pioneer_status(target),
-                 [[{"text": "👥 Senarai Pengguna", "callback_data": "admin_list|all|0"}]])
+            buttons = [[{"text": "👥 Senarai Pengguna", "callback_data": "admin_list|all|0"}]]
+            if has_pioneer(sb, target):
+                buttons.insert(0, [{"text": "🛑 Batalkan Status Pioneer", "callback_data": f"pioneer_revoke_ask|{target}"}])
+            send(cid, f"👤 ID: <code>{target}</code>\\n" + admin_pioneer_status(target), buttons)
         return result
 
     def admin_card(cid, request_id):
