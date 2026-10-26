@@ -46527,9 +46527,11 @@ _RPH_SEND_DOCUMENT_BEFORE_20261027 = send_document
 def send_document(cid,path,caption=''):
     result = _RPH_SEND_DOCUMENT_BEFORE_20261027(cid,path,caption)
     ss = state.setdefault(cid,{})
-    if (ss.get('_selected_rph_delivery_pending_20261027')
-            and 'RPH' in str(caption or '').upper()
-            and _telegram_delivery_ok_v25279(result)):
+    if ss.get('_selected_rph_delivery_pending_20261027') and 'RPH' in str(caption or '').upper():
+        if not _telegram_delivery_ok_v25279(result):
+            # Underlying material engine catches this and reports a failed RPH.
+            # Never claim success or spend a trial on an unacknowledged PDF.
+            raise RuntimeError('Telegram RPH delivery not confirmed')
         ss['_selected_rph_delivery_pending_20261027'] = False
         _consume_free_after_success_v25282(cid,'successful_selected_rph_delivery')
     return result
