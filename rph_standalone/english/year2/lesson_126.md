@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 1.2 / 1.2.1
 **Complementary SK/SP:** 1.3 / 1.3.1
-**Learning objective:** Pupils practise listening 26 using language from At the beach.
+**Learning objectives:** Pupils identify four of five spoken beach words and answer two oral prompts.
+**Success criteria:** Four correct choices and two relevant responses.
 **Teaching materials:** Super Minds 1 Student's Book p.106, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.106 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
