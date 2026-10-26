@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 3.3 / 3.3.1
-**Learning objective:** Pupils practise writing 17 using language from Get dressed!.
+**Learning objectives:** Pupils write four clothing words and two meaningful sentences from picture prompts, then check one spelling using a reference.
+**Success criteria:** four legible words, two understandable sentences and one successful check.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display a clothing picture and elicit a word bank.
+**Pupils:** Suggest clothing words.
 
 ## Activity 1 — Model
-**Teacher:** Model the writing 17 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model writing a short sentence and using a picture dictionary to check spelling.
+**Pupils:** Copy the model and practise checking a word.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Guide independent writing of four words and two sentences with a simple self-check.
+**Pupils:** Write, check one spelling and revise.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record four words, two sentences and one check per pupil.
+**Pupils:** Submit individual writing.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review a useful spelling strategy.
+**Pupils:** Read one sentence.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
