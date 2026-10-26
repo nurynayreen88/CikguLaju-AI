@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 3.2 / 3.2.4
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise reading 18 using language from Get dressed!.
+**Learning objectives:** Pupils locate four of five explicit details on Student's Book p.93 and give one relevant oral response.
+**Success criteria:** 4/5 correct detail responses and one appropriate explanation.
 **Teaching materials:** Super Minds 1 Student's Book p.93, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.93 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show the page illustration and invite predictions.
+**Pupils:** Predict the text topic.
 
 ## Activity 1 — Model
-**Teacher:** Model the reading 18 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model finding a printed detail on p.93 using the actual page text.
+**Pupils:** Point to printed evidence.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Set five page-grounded detail prompts and invite a brief clothing-related personal response.
+**Pupils:** Read, underline evidence and share one response.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record five individual reading answers and one oral response.
+**Pupils:** Submit responses with printed evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review how to locate textual evidence.
+**Pupils:** Share one fact found.
+
+**QA:** Exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
