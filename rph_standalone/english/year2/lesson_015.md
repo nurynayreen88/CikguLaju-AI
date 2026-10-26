@@ -4,7 +4,8 @@
 **Main SK/SP (existing SOW mapping; recheck):** 5.1 / 5.1.2
 **Complementary SK/SP (existing SOW mapping; recheck):** 3.1 / 3.1.3
 **Learning objective (draft):** Pupils can perform a short free-time rhyme using at least two relevant activity words and gestures.
-**Materials:** Free-time picture cards, word cards, board. Teacher's Book pages and exact steps are not yet verified.
+**Materials:** Free-time picture cards, word cards and board.
+**Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit; no textbook or Teacher's Book page is assigned. Exact SOW activity steps still require verification.
 
 ## Set Induction (5 minutes)
 **Teacher:** Display pictures of familiar free-time activities and elicit two activity words.
@@ -26,4 +27,4 @@
 **Teacher:** Revisit two target words and invite one final demonstration.
 **Pupils:** Share one learned word and gesture.
 
-**QA status:** DRAFT — skill-specific teacher-developed activities; exact Teacher's Book sequence, textbook pages and SK/SP fidelity must be verified before publication.
+**QA status:** DRAFT — skill-specific teacher-developed activities; exact SOW task sequence and activity-to-SK/SP alignment must be verified before publication.
