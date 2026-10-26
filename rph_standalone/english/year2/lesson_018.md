@@ -1,29 +1,30 @@
 # English Year 2 — Lesson 18: Reading 4
 
 **Unit:** Free Time
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 3.2 / 3.2.3
-**Learning objective:** Pupils practise reading 4 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Main SK/SP (existing mapping; requires checking):** 3.2 / 3.2.2
+**Complementary SK/SP (existing mapping; requires checking):** 3.2 / 3.2.3
+**Learning objective (draft):** Pupils can identify two details in a short illustrated text.
+**Materials:** Relevant topic pictures, word cards, board and exercise books.
+**Teacher's Book reference:** Page and activity sequence not verified; the following activities are teacher-developed.
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Display two pictures linked to Free Time and elicit familiar words.
+**Pupils:** Name the pictures and give one oral response.
 
-## Activity 1 — Model
-**Teacher:** Model the reading 4 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Demonstration (7 minutes)
+**Teacher:** Model reading four short sentences and finding one key word.
+**Pupils:** Observe and complete one supported example.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Guided and independent practice (10 minutes)
+**Teacher:** Pupils read, underline clues and answer two questions independently. Provide corrective feedback where needed.
+**Pupils:** Complete the task and correct one error.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check two responses against words in the text. Record individual evidence.
+**Pupils:** Show their own completed work.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Revisit two key words and summarise the skill.
+**Pupils:** Share one correct example.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA status:** DRAFT — exact Teacher's Book steps, SK/SP and textbook pages still require source verification before release.

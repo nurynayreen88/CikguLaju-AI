@@ -1,30 +1,30 @@
 # English Year 1 — Lesson 7: Writing 2
 
 **Unit:** Friends
-**Main SK/SP (SOW):** 4.1 / 4.1.2
-**Complementary SK/SP (SOW):** 2.1 / 2.1.1
-**Objective (teacher-developed):** By the end of the lesson, pupils can copy two familiar words with readable letter formation.
-**Materials:** Teacher-made picture/word cards, board and pupils' exercise books as appropriate.
-**Teacher's Book / Student's Book pages:** Not yet verified; no page or audio track claimed.
+**Main SK/SP (existing mapping; requires checking):** 4.1 / 4.1.2
+**Complementary SK/SP (existing mapping; requires checking):** 2.1 / 2.1.1
+**Learning objective (draft):** Pupils can copy or write two short topic expressions with clear letter formation.
+**Materials:** Relevant topic pictures, word cards, board and exercise books.
+**Teacher's Book reference:** Page and activity sequence not verified; the following activities are teacher-developed.
 
-## Set Induction (5 min)
-**Teacher:** Display a familiar picture related to Friends and elicit a known word or greeting.
-**Pupils:** Point to the picture and say a familiar word or greeting.
+## Set Induction (5 minutes)
+**Teacher:** Display two pictures linked to Friends and elicit familiar words.
+**Pupils:** Name the pictures and give one oral response.
 
-## Activity 1 — Model and guided practice (10 min)
-**Teacher:** Show two short Friends-unit words, demonstrate letter strokes and ask pupils to trace then copy each word.
-**Pupils:** Trace and copy the two words, then compare letter shape and spacing with the model.
+## Activity 1 — Demonstration (7 minutes)
+**Teacher:** Model the target word or sentence on the board, pointing out letter formation, spacing and punctuation.
+**Pupils:** Observe and complete one supported example.
 
-## Activity 2 — Independent or paired practice (10 min)
-**Teacher:** Give each pupil a new card, cue or turn; observe responses and support pupils who need another model.
-**Pupils:** Repeat the target task with a different example or partner and show an independent response.
+## Activity 2 — Guided and independent practice (10 minutes)
+**Teacher:** Pupils trace once, copy twice and compare their writing with a model. Provide corrective feedback where needed.
+**Pupils:** Complete the task and correct one error.
 
-## Assessment / PBD (3 min)
-**Teacher:** Check two copied words for recognisable letters and spacing.
-**Evidence:** Individual response or written work against the objective.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check two individual writing samples for readable letters and correct word order. Record individual evidence.
+**Pupils:** Show their own completed work.
 
-## Closure (2 min)
-**Teacher:** Invite a final target response and summarise the useful language.
-**Pupils:** Demonstrate one word, gesture, utterance or written item from the lesson.
+## Closure (3 minutes)
+**Teacher:** Revisit two key words and summarise the skill.
+**Pupils:** Share one correct example.
 
-**Provenance:** SOW_MAPPED_ONLY; practical teacher-developed lesson. **Review note:** Teacher's Book sequence and exact textbook mapping not verified; no claim of fidelity. A4 rendering not tested.
+**QA status:** DRAFT — exact Teacher's Book steps, SK/SP and textbook pages still require source verification before release.
