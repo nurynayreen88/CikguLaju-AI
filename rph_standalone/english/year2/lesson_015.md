@@ -1,29 +1,29 @@
 # English Year 2 — Lesson 15: Language Arts 3
 
 **Unit:** Free Time
-**Main SK/SP:** 5.1 / 5.1.2
-**Complementary SK/SP:** 3.1 / 3.1.3
-**Learning objective:** Pupils practise language arts 3 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Main SK/SP (existing SOW mapping; recheck):** 5.1 / 5.1.2
+**Complementary SK/SP (existing SOW mapping; recheck):** 3.1 / 3.1.3
+**Learning objective (draft):** Pupils can perform a short free-time rhyme using at least two relevant activity words and gestures.
+**Materials:** Free-time picture cards, word cards, board. Teacher's Book pages and exact steps are not yet verified.
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Display pictures of familiar free-time activities and elicit two activity words.
+**Pupils:** Name the activities and demonstrate a matching gesture.
 
-## Activity 1 — Model
-**Teacher:** Model the language arts 3 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Introduce a short teacher-created rhyme about free-time activities, demonstrating rhythm and actions.
+**Pupils:** Listen, repeat each line and imitate the actions.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Organise pair rehearsal, substitute one activity word and invite a brief performance.
+**Pupils:** Practise in pairs, substitute the word and perform the rhyme with gestures.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Observe whether each pupil participates, says two activity words and performs matching gestures; record individual evidence.
+**Pupils:** Perform two lines with reduced teacher prompting.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Revisit two target words and invite one final demonstration.
+**Pupils:** Share one learned word and gesture.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA status:** DRAFT — skill-specific teacher-developed activities; exact Teacher's Book sequence, textbook pages and SK/SP fidelity must be verified before publication.
