@@ -5,6 +5,7 @@
 **Complementary SK/SP:** 1.2 / 1.2.2
 **Learning objective:** Pupils practise speaking 30 using language from At the beach.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce At the beach with a picture and two questions.
