@@ -39291,8 +39291,8 @@ def _credit_gate(cid,s):
         ss=state.setdefault(cid,{})
         ss['_free_generation_pending_v25282']=True
         return True
-    send(cid,'🔒 <b>5 janaan percuma telah digunakan.</b>\n\nCikgu boleh dapatkan akses VIP melalui program referral.',
-         [[{'text':'👥 Ajak Rakan • Dapat VIP','callback_data':'referral_vip'}],
+    send(cid,'🔒 <b>Kuota 5 janaan RPH percuma telah habis.</b>\n\n🎁 Baki janaan percuma: <b>0/5</b>\n\nUntuk terus menjana RPH, sila pilih Jadi Pioneer.',
+         [[{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
           [{'text':'👤 Profil Saya','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     return False
 
