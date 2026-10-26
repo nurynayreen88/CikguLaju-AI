@@ -98,6 +98,30 @@ def install(ns):
         return f"📊 {count}/500 Pioneer telah menyertai. {remaining} tempat berbaki."
 
     def callback(cid, d):
+        if str(d).startswith(("pioneer_revoke_ask|", "pioneer_revoke_confirm|")):
+            if not ns["_is_admin"](cid):
+                return send(cid, "⛔ Admin sahaja.")
+            try:
+                action, raw_uid = str(d).split("|", 1)
+                uid = int(raw_uid)
+                if uid <= 0:
+                    raise ValueError("Invalid user")
+            except (ValueError, TypeError):
+                return send(cid, "⚠️ ID tidak sah.")
+            if action == "pioneer_revoke_ask":
+                if not has_pioneer(sb, uid):
+                    return send(cid, "ℹ️ Pioneer tidak aktif.")
+                return send(cid, f"⚠️ Sahkan pembatalan Pioneer untuk ID <code>{uid}</code>. Rekod pembayaran tidak dipadam.",
+                            [[{"text": "🛑 SAHKAN PEMBATALAN", "callback_data": f"pioneer_revoke_confirm|{uid}"}],
+                             [{"text": "↩️ Kembali", "callback_data": f"admin_user|{uid}"}]])
+            if not has_pioneer(sb, uid):
+                return send(cid, "ℹ️ Pioneer sudah tidak aktif.")
+            try:
+                sb("POST", "rpc/revoke_pioneer_entitlement", json={"p_telegram_user_id": uid, "p_revoked_by": int(cid)})
+            except Exception:
+                return send(cid, "⚠️ Pembatalan gagal. Status tidak diubah.")
+            return send(cid, f"✅ Pioneer ID <code>{uid}</code> telah dibatalkan.",
+                        [[{"text": "👤 Lihat Pengguna", "callback_data": f"admin_user|{uid}"}]])
         if d == "pioneer_join":
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
