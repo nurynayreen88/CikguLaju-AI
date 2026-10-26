@@ -1,30 +1,29 @@
 # English Year 3 — Lesson 20: Writing
 
 **Unit:** Every day
-**Main SK/SP:** 4.3 / 4.3.3
-**Complementary SK/SP:** 4.3 / 4.3.1
-**Duration:** 60 minutes
-**Objective:** Pupils demonstrate the target writing skill through a guided every day task.
-**Materials:** Get Smart Plus 3, pictures, word cards and exercise books.
+**Main SK/SP (existing mapping):** 4.3 / 4.3.3
+**Complementary SK/SP (existing mapping):** 4.3 / 4.3.1
+**Objective (draft):** Pupils can write two simple sentences.
+**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
 
 ## Set Induction (5 minutes)
-**Teacher:** Elicit daily routine vocabulary using pictures and questions.
-**Pupils:** Name activities and respond orally.
+**Teacher:** Show two pictures related to Every day and elicit familiar words.
+**Pupils:** Name pictures and answer one question.
 
-## Activity 1 (10 minutes)
-**Teacher:** Model the target writing task with clear examples and check understanding.
-**Pupils:** Observe, listen and answer questions.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Model a sentence with capital letter and full stop.
+**Pupils:** Observe and give one supported response.
 
-## Activity 2 (25 minutes)
-**Teacher:** Organise guided pair or individual practice using daily routines; monitor and support.
-**Pupils:** Practise the target skill and complete the task.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Pupils write two sentences from pictures and correct one error. Provide feedback and support.
+**Pupils:** Practise and share answers.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess an individual response against the target learning standard.
-**Pupils:** Demonstrate the skill independently.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check independently whether pupils can write two simple sentences; record evidence.
+**Pupils:** Demonstrate the target skill individually.
 
-## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one example from the lesson.
+## Closure (3 minutes)
+**Teacher:** Review two key words and invite a final example.
+**Pupils:** Share one learned response.
 
-**Source:** English Year 3 2026 SOW, Lessons 20. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.

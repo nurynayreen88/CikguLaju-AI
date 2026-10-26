@@ -1,26 +1,29 @@
-# English Year 1 — Lesson 4: Writing 1
+# English Year 1 — Lesson 4: Writing
 
 **Unit:** Friends
-**Main SK/SP (SOW mapping):** 4.1 / 4.1.2
-**Complementary SK/SP (SOW mapping):** 3.1 / 3.1.1
-**Objective (teacher-developed draft):** By the end of the lesson, pupils can form and copy two familiar letters or words from a clear model.
-**Textbook / Teacher's Book page:** Not verified for this lesson; do not assign an invented page.
-**Source status:** SOW_MAPPED_ONLY — teacher-developed draft; Teacher's Book sequence and exact language require verification.
+**Main SK/SP (existing mapping):** 4.1 / 4.1.2
+**Complementary SK/SP (existing mapping):** 3.1 / 3.1.1
+**Objective (draft):** Pupils can write two simple sentences.
+**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
 
-## Set Induction — proposed
-**Teacher:** Show a familiar picture related to Friends and invite pupils to recall one relevant word or phrase.
-**Pupils:** Point to the picture and say one familiar word or phrase.
+## Set Induction (5 minutes)
+**Teacher:** Show two pictures related to Friends and elicit familiar words.
+**Pupils:** Name pictures and answer one question.
 
-## Activity 1 — letter formation and controlled copying (proposed)
-**Teacher:** Demonstrate starting points and direction of letter strokes, then provide a visible writing model.
-**Pupils:** Trace or copy the target letters or words and compare their work with the model.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Model a sentence with capital letter and full stop.
+**Pupils:** Observe and give one supported response.
 
-## Assessment / PBD — proposed
-**Teacher:** Check formation and legibility of two written items against the displayed model.
-**Evidence:** Individual response recorded against the objective; provide immediate corrective modelling when needed.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Pupils write two sentences from pictures and correct one error. Provide feedback and support.
+**Pupils:** Practise and share answers.
 
-## Closure — proposed
-**Teacher:** Ask pupils to demonstrate one successful response without full modelling.
-**Pupils:** Repeat or demonstrate one relevant target response individually or with a partner.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check independently whether pupils can write two simple sentences; record evidence.
+**Pupils:** Demonstrate the target skill individually.
 
-**QA status:** DRAFT — SK/SP mapping sourced from SOW; activity sequence, age suitability, Teacher's Book fidelity and A4 one-page output pending review. Not approved for end-user RPH generation.
+## Closure (3 minutes)
+**Teacher:** Review two key words and invite a final example.
+**Pupils:** Share one learned response.
+
+**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.

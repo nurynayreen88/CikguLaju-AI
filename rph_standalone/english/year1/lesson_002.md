@@ -1,26 +1,29 @@
-# English Year 1 — Lesson 2: Listening 1
+# English Year 1 — Lesson 2: Listening
 
 **Unit:** Friends
-**Main SK/SP (SOW mapping):** 1.2 / 1.2.4
-**Complementary SK/SP (SOW mapping):** 4.1 / 4.1.2
-**Objective (teacher-developed draft):** By the end of the lesson, pupils can identify two familiar classroom greetings or names from spoken cues.
-**Textbook / Teacher's Book page:** Not verified for this lesson; do not assign an invented page.
-**Source status:** SOW_MAPPED_ONLY — teacher-developed draft; Teacher's Book sequence and exact language require verification.
+**Main SK/SP (existing mapping):** 1.2 / 1.2.4
+**Complementary SK/SP (existing mapping):** 4.1 / 4.1.2
+**Objective (draft):** Pupils can identify three spoken details.
+**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
 
-## Set Induction — proposed
-**Teacher:** Show a familiar picture related to Friends and invite pupils to recall one relevant word or phrase.
-**Pupils:** Point to the picture and say one familiar word or phrase.
+## Set Induction (5 minutes)
+**Teacher:** Show two pictures related to Friends and elicit familiar words.
+**Pupils:** Name pictures and answer one question.
 
-## Activity 1 — listening for names and greetings (proposed)
-**Teacher:** Say two short greeting/name cues twice at a natural pace; ask pupils to match each cue to a person or picture.
-**Pupils:** Listen without reading, point to the matching picture and check answers after the second hearing.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Read a short description twice and model how to listen for one key word.
+**Pupils:** Observe and give one supported response.
 
-## Assessment / PBD — proposed
-**Teacher:** Present two cues in a changed order and record two independent matching responses.
-**Evidence:** Individual response recorded against the objective; provide immediate corrective modelling when needed.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Pupils match three spoken details to pictures and check in pairs. Provide feedback and support.
+**Pupils:** Practise and share answers.
 
-## Closure — proposed
-**Teacher:** Ask pupils to demonstrate one successful response without full modelling.
-**Pupils:** Repeat or demonstrate one relevant target response individually or with a partner.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check independently whether pupils can identify three spoken details; record evidence.
+**Pupils:** Demonstrate the target skill individually.
 
-**QA status:** DRAFT — SK/SP mapping sourced from SOW; activity sequence, age suitability, Teacher's Book fidelity and A4 one-page output pending review. Not approved for end-user RPH generation.
+## Closure (3 minutes)
+**Teacher:** Review two key words and invite a final example.
+**Pupils:** Share one learned response.
+
+**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.
