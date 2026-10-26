@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 4.3 / 4.3.2
-**Learning objective:** Pupils practise listening 25 using language from The robot.
+**Learning objectives:** Pupils identify four of five spoken robot details and write two related short labels.
+**Success criteria:** 4/5 correct listening choices and two legible labels.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display a robot illustration and elicit two familiar words.
+**Pupils:** Name robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 25 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model listening for key robot words.
+**Pupils:** Rehearse one model response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Present five teacher-created spoken descriptions and two labelling prompts.
+**Pupils:** Choose five answers and write two labels.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record individual evidence against the success criteria.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful robot-related word.
+**Pupils:** Share one word or phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
