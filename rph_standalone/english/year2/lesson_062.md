@@ -5,6 +5,7 @@
 **Complementary SK/SP:** 2.2 / 2.2.1
 **Learning objective:** Pupils practise speaking 13 using language from Get dressed!.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce Get dressed! with a picture and two questions.
