@@ -5,7 +5,7 @@
 **Complementary SK/SP (SOW):** 2.1 / 2.1.5
 **Objective (teacher-developed):** By the end of the lesson, pupils can join a short chant and say two familiar Friends words.
 **Materials:** Picture/word cards, board and exercise books as appropriate.
-**Textbook/Teacher's Book page:** Unverified; no invented page or audio track.
+**Source classification:** NON-TEXTBOOK in the prior Year 1 SOW lesson index; no textbook page or audio assigned. Exact SOW activity procedure still requires verification.
 
 ## Set Induction (5 min)
 **Teacher:** Show a familiar Friends picture and elicit a known word or greeting.
@@ -26,4 +26,4 @@
 **Teacher:** Ask pupils to demonstrate one final response and recap the target language.
 **Pupils:** Show one successful response from the lesson.
 
-**Source:** SOW_MAPPED_ONLY. Practical teacher-developed draft; Teacher's Book fidelity and A4 layout not yet verified.
+**Source:** SOW_SK_SP_AND_NON_TEXTBOOK_CLASSIFICATION_MAPPED; Practical teacher-developed draft; Teacher's Book fidelity and A4 layout not yet verified.
