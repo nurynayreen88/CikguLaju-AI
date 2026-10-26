@@ -1,29 +1,29 @@
-# English Year 2 — Lesson 16: Listening 4
+# English Year 2 — Lesson 16: Listening
 
 **Unit:** Free Time
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 3.1 / 3.1.1
-**Learning objective:** Pupils practise listening 4 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Main SK/SP (existing mapping):** 1.2 / 1.2.2
+**Complementary SK/SP (existing mapping):** 3.1 / 3.1.1
+**Objective (draft):** Pupils can identify three spoken details.
+**Materials:** Topic pictures, word cards, exercise books; Teacher's Book pages unverified.
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Show two pictures related to Free Time and elicit vocabulary.
+**Pupils:** Name pictures and respond.
 
-## Activity 1 — Model
-**Teacher:** Model the listening 4 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Model listening for a keyword in a short oral description.
+**Pupils:** Observe and attempt a response.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Read three topic statements and have pupils match them to pictures. Provide corrective feedback.
+**Pupils:** Practise and compare responses.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check each pupil's ability to identify three spoken details and record evidence.
+**Pupils:** Demonstrate independently.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Recap two target expressions.
+**Pupils:** Share one learned response.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA status:** DRAFT — Teacher's Book steps, pages and SK/SP mapping not verified. Do not publish.

@@ -1,25 +1,29 @@
-# English Year 1 — Lesson 6: Listening 2
+# English Year 1 — Lesson 6: Listening
 
 **Unit:** Friends
-**Main SK/SP (SOW mapping):** 1.2 / 1.2.2
-**Complementary SK/SP (SOW mapping):** 2.1 / 2.1.1
-**Objective (teacher-developed draft):** By the end of the lesson, pupils can identify two familiar words from spoken Friends-themed cues.
-**Textbook / Teacher's Book page:** Not verified; no page or audio track invented.
-**Source status:** SOW_MAPPED_ONLY — proposed activities, not verified Teacher's Book steps.
+**Main SK/SP (existing mapping):** 1.2 / 1.2.2
+**Complementary SK/SP (existing mapping):** 2.1 / 2.1.1
+**Objective (draft):** Pupils can identify three spoken details.
+**Materials:** Topic pictures, word cards, exercise books; Teacher's Book pages unverified.
 
-## Set Induction — proposed
-**Teacher:** Show a familiar Friends picture and elicit one relevant word.
-**Pupils:** Point to the picture and recall a word.
+## Set Induction (5 minutes)
+**Teacher:** Show two pictures related to Friends and elicit vocabulary.
+**Pupils:** Name pictures and respond.
 
-## Activity 1 — proposed
-**Teacher:** Present two brief spoken cues with visual choices, repeat each cue and ask pupils to identify the matching picture.
-**Pupils:** Listen, point to a matching picture and check responses after the second hearing.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Model listening for a keyword in a short oral description.
+**Pupils:** Observe and attempt a response.
 
-## Assessment / PBD — proposed
-**Teacher:** Repeat two cues in a new order and record each pupil's independent matching responses.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Read three topic statements and have pupils match them to pictures. Provide corrective feedback.
+**Pupils:** Practise and compare responses.
 
-## Closure — proposed
-**Teacher:** Invite one final response without full modelling.
-**Pupils:** Demonstrate one target response.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check each pupil's ability to identify three spoken details and record evidence.
+**Pupils:** Demonstrate independently.
 
-**QA status:** DRAFT — confirm SOW interpretation, Teacher's Book sequence, exact content and A4 layout before end-user release.
+## Closure (3 minutes)
+**Teacher:** Recap two target expressions.
+**Pupils:** Share one learned response.
+
+**QA status:** DRAFT — Teacher's Book steps, pages and SK/SP mapping not verified. Do not publish.
