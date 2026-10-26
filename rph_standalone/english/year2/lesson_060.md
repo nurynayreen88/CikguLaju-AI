@@ -5,6 +5,7 @@
 **Complementary SK/SP:** 4.3 / 4.3.2
 **Learning objective:** Pupils practise language arts 12 using language from Get dressed!.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce Get dressed! with a picture and two questions.
