@@ -40045,7 +40045,7 @@ def menu(cid,show_persistent=False):
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
         [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🏆 Jadi Pioneer — RM20','callback_data':'pioneer_join'}],
+        [{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
     ]
     if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
     body=(
@@ -40054,8 +40054,8 @@ def menu(cid,show_persistent=False):
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🏆 <b>JADI PIONEER — RM20 SEKALI SAHAJA</b>\nAkses sepanjang CikguLaju AI beroperasi. Tiada bayaran bulanan atau tahunan.\n\n'
-        '🎁 <b>5 JANAAN RPH PERCUMA</b>'
+        '🏆 <b>JADI PIONEER</b>\nTawaran Pioneer hanya dibuka sepanjang tempoh pembangunan CikguLaju AI. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
+        '🎁 <b>5 JANAAN RPH PERCUMA UNTUK PENGGUNA BAHARU</b>'
     )
     return send(cid,body,kb)
 
