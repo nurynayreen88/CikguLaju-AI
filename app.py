@@ -32324,7 +32324,7 @@ def _rph_activity_heading_markup_v25184(text):
     lines=[]
     for line in raw.splitlines():
         e=escape(line)
-        if re.match(r'^\s*(?:Aktiviti|Activity)\s+\d+\s*[–-]', line, re.I):
+        if re.match(r'^\s*(?:Aktiviti|Activity|اکتيۏيتي|اکتيۏيتي)\s+[0-9٠-٩]+\s*[–-]', line, re.I):
             e='<b>'+e+'</b>'
         lines.append(e)
     return '<br/>'.join(lines)
