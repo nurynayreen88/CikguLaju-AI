@@ -35153,7 +35153,7 @@ def _pi_markup_to_plain_v2605(text):
     import re, html as _html
     # Keep the existing PI terminology/unicode cleanup, but process markup exactly
     # as the stable v25.213 raster renderer did before drawing with Pillow.
-    raw=_pi_safe_unicode_v2602(_pi_term_cleanup_v2601(str(text or '')))
+    raw=_pi_safe_unicode_v2602(str(text or ''))  # PDF rendering must not rewrite source terminology
     raw=raw.replace('<br/>','\n').replace('<br />','\n').replace('<br>','\n')
     bold=bool(re.fullmatch(r'\s*<b>.*</b>\s*',raw,re.S))
     plain=re.sub(r'<[^>]+>','',raw)
