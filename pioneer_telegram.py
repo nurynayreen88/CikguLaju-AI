@@ -2,7 +2,7 @@
 
 Install only after the bot's existing callback/menu/access helpers are defined.
 """
-from pioneer_supabase import effective_access, grant_pioneer, has_pioneer
+from pioneer_supabase import effective_access, grant_pioneer, has_pioneer, pioneer_availability
 
 
 def install(ns):
@@ -19,11 +19,11 @@ def install(ns):
         import json
         from io import BytesIO
         import requests
-        caption = ("🏆 <b>PIONEER CIKGULAJU — RM20</b>\n\n"
-                   "Imbas QR DuitNow ini dan bayar RM20 sekali sahaja.\n"
+        caption = ("🏆 <b>PIONEER EARLY BIRD CIKGULAJU — RM10</b>\n\n"
+                   "Imbas QR DuitNow ini dan bayar RM10 sekali sahaja.\n"
                    "Hantar resit untuk semakan admin. Status hanya aktif selepas disahkan.")
         markup = {"inline_keyboard": [
-            [{"text": "📎 Hantar Resit RM20", "callback_data": "pioneer_receipt"}],
+            [{"text": "📎 Hantar Resit RM10", "callback_data": "pioneer_receipt"}],
             [{"text": "🏠 Menu Utama", "callback_data": "home"}]]}
         data = {"chat_id": str(cid), "caption": caption,
                 "parse_mode": "HTML", "reply_markup": json.dumps(markup)}
@@ -54,22 +54,27 @@ def install(ns):
 
     def admin_card(cid, request_id):
         req = ns["_payment_request"](request_id)
-        if req and float(req["amount"]) == 20.0 and req["status"] == "pending":
+        if req and float(req["amount"]) == 10.0 and req["status"] == "pending":
             if not ns["_is_admin"](cid):
                 return send(cid, "⛔ Admin sahaja.")
-            return send(cid, "🏆 <b>PENGESAHAN PIONEER RM20</b>\n"
+            return send(cid, "🏆 <b>PENGESAHAN PIONEER RM10</b>\n"
                         f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
                         "Semak transaksi masuk dalam TNG Merchant secara manual sebelum lulus.",
                         [[{"text": "✅ Sahkan Pioneer", "callback_data": f"admin_approve|{request_id}"}],
                          [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
         return original_card(cid, request_id)
 
+    def quota_text():
+        count, remaining = pioneer_availability(sb)
+        return f"📊 {count}/500 Pioneer telah menyertai. {remaining} tempat berbaki."
+
     def callback(cid, d):
         if d == "pioneer_join":
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
-            return send(cid, "🏆 <b>PIONEER CIKGULAJU — RM20 SEKALI SAHAJA</b>\n"
-                        "Tiada yuran bulanan atau tahunan. Tempat terhad.\n"
+            count, remaining = pioneer_availability(sb)
+            return send(cid, "🏆 <b>PIONEER EARLY BIRD CIKGULAJU — RM10 SEKALI SAHAJA</b>\n"
+                        "Tiada yuran bulanan atau tahunan. Terhad kepada 500 guru.\n" + quota_text() + "\n"
                         "Status Pioneer kekal walaupun sistem dikemas kini.",
                         [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
@@ -77,25 +82,27 @@ def install(ns):
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
             pending = ns["_latest_pending_payment"](cid)
-            if not pending or float(pending.get("amount", 0)) != 20.0:
-                return send(cid, "⚠️ Mulakan permohonan Pioneer RM20 dahulu sebelum menghantar resit.")
+            if not pending or float(pending.get("amount", 0)) != 10.0:
+                return send(cid, "⚠️ Mulakan permohonan Pioneer RM10 dahulu sebelum menghantar resit.")
             if pending.get("notes") == "proof_received_admin_notified":
-                return send(cid, "⌛ Resit Pioneer RM20 sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
+                return send(cid, "⌛ Resit Pioneer RM10 sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
             state.setdefault(cid, {})["waiting"] = "payment_proof"
-            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM20.")
+            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM10.")
         if d == "pioneer_pay":
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
+            if pioneer_availability(sb)[1] == 0:
+                return send(cid, "⛔ Kuota 500 Pioneer Early Bird sudah penuh.")
             pending = ns["_latest_pending_payment"](cid)
-            if pending and float(pending["amount"]) != 20.0:
+            if pending and float(pending["amount"]) != 10.0:
                 return send(cid, "⚠️ Ada permohonan pembayaran lain yang belum selesai. "
                             "Sila selesaikan permohonan tersebut dahulu.")
             if pending and pending.get("notes") == "proof_received_admin_notified":
-                return send(cid, "⌛ Resit Pioneer RM20 sudah diterima dan menunggu semakan admin. Tidak perlu hantar semula.")
+                return send(cid, "⌛ Resit Pioneer RM10 sudah diterima dan menunggu semakan admin. Tidak perlu hantar semula.")
             if pending:
                 rid = pending["id"]
             else:
-                rid = ns["_new_payment_request"](cid, None, 20.0)
+                rid = ns["_new_payment_request"](cid, None, 10.0)
                 ns["_set_payment_note"](rid, "awaiting_proof")
             state.setdefault(cid, {})["waiting"] = "payment_proof"
             # Existing QR bytes are reused, not copied into a new asset.
@@ -108,7 +115,7 @@ def install(ns):
             except (ValueError, IndexError):
                 return original_callback(cid, d)
             req = ns["_payment_request"](rid)
-            if req and float(req["amount"]) == 20.0:
+            if req and float(req["amount"]) == 10.0:
                 if req["status"] != "pending":
                     return admin_card(cid, rid)
                 if req.get("notes") != "proof_received_admin_notified":
@@ -118,7 +125,7 @@ def install(ns):
                     grant_pioneer(sb, req["chat_id"], f"pioneer-payment-request:{rid}", cid, verified=True)
                 except Exception as exc:
                     return send(cid, f"⚠️ Pioneer belum diaktifkan: {type(exc).__name__}. Semak rekod.")
-                ns["_mark_payment_request"](rid, "approved", cid, "Pioneer RM20 manually verified by admin")
+                ns["_mark_payment_request"](rid, "approved", cid, "Pioneer RM10 manually verified by admin")
                 send(cid, f"✅ Pioneer diaktifkan untuk {req['chat_id']}.")
                 return send(req["chat_id"], "🏆 <b>Status Pioneer Anda: AKTIF</b>\n\nAnda menikmati akses tanpa bayaran langganan bulanan atau tahunan sepanjang CikguLaju AI beroperasi.",
                             [[{"text": "🏠 Kembali ke Menu Utama", "callback_data": "home"}]])
