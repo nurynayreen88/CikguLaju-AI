@@ -1,30 +1,31 @@
 # English Year 1 — Lesson 8: Reading 2
 
 **Unit:** Friends
-**Main SK/SP (SOW):** 3.1 / 3.1.1
-**Complementary SK/SP (SOW):** 4.1 / 4.1.2
-**Objective (teacher-developed):** By the end of the lesson, pupils can recognise two familiar printed words and match each to a picture.
-**Materials:** Teacher-made picture/word cards, board and pupils' exercise books as appropriate.
-**Teacher's Book / Student's Book pages:** Not yet verified; no page or audio track claimed.
+**Main SK/SP (existing SOW mapping; verification pending):** 3.1 / 3.1.1
+**Complementary SK/SP (existing SOW mapping; verification pending):** 4.1 / 4.1.2
+**Duration (draft):** 30 minutes
+**Objective:** Pupils can recognise two familiar printed words and match them to pictures.
+**Materials:** Topic picture cards, word cards, board and pupils' exercise books.
+**Source note:** Exact Teacher's Book page, audio and activity sequence have not been verified.
 
-## Set Induction (5 min)
-**Teacher:** Display a familiar picture related to Friends and elicit a known word or greeting.
-**Pupils:** Point to the picture and say a familiar word or greeting.
+## Set Induction (5 minutes)
+**Teacher:** Display pictures connected to Friends and elicit two familiar words.
+**Pupils:** Name the pictures and respond to one short question.
 
-## Activity 1 — Model and guided practice (10 min)
-**Teacher:** Show two picture and word cards, read the words once and model one match before pupils work independently.
-**Pupils:** Read or recognise the two word cards and match them to their pictures.
+## Activity 1 — Model (7 minutes)
+**Teacher:** Display picture cards of two friends greeting each other. Introduce and point to two matching printed greeting words; read each aloud while tracking the print.
+**Pupils:** Listen, point to each printed word and repeat it.
 
-## Activity 2 — Independent or paired practice (10 min)
-**Teacher:** Give each pupil a new card, cue or turn; observe responses and support pupils who need another model.
-**Pupils:** Repeat the target task with a different example or partner and show an independent response.
+## Activity 2 — Practice (10 minutes)
+**Teacher:** Mix the word and picture cards. Ask pupils to match the words, then change their order and repeat without oral cues.
+**Pupils:** Match two words to the correct pictures independently.
 
-## Assessment / PBD (3 min)
-**Teacher:** Reorder the cards and check two independent matches.
-**Evidence:** Individual response or written work against the objective.
+## Assessment / PBD (5 minutes)
+**Teacher:** Record whether each pupil recognises both words without prompting.
+**Pupils:** Complete a short independent demonstration of the objective.
 
-## Closure (2 min)
-**Teacher:** Invite a final target response and summarise the useful language.
-**Pupils:** Demonstrate one word, gesture, utterance or written item from the lesson.
+## Closure (3 minutes)
+**Teacher:** Review two useful words and summarise the learning.
+**Pupils:** Share one learned word or response.
 
-**Provenance:** SOW_MAPPED_ONLY; practical teacher-developed lesson. **Review note:** Teacher's Book sequence and exact textbook mapping not verified; no claim of fidelity. A4 rendering not tested.
+**QA:** TEACHER-DEVELOPED DRAFT — verify against the actual Teacher's Book and confirm SK/SP before publishing.

@@ -1,30 +1,31 @@
 # English Year 3 — Lesson 26: Language Arts
 
 **Unit:** Every day
-**Main SK/SP:** 5.1 / 5.1.2
-**Complementary SK/SP:** 1.2 / 1.2.3
-**Duration:** 60 minutes
-**Objective:** Pupils demonstrate language arts skills using Every day vocabulary.
-**Materials:** Get Smart Plus 3, flashcards and exercise books.
+**Main SK/SP (existing SOW mapping; verification pending):** 5.1 / 5.1.2
+**Complementary SK/SP (existing SOW mapping; verification pending):** 1.2 / 1.2.3
+**Duration (draft):** 60 minutes
+**Objective:** Pupils can perform a short original rhyme about daily routines with rhythm and appropriate actions.
+**Materials:** Topic picture cards, word cards, board and pupils' exercise books.
+**Source note:** Exact Teacher's Book page, audio and activity sequence have not been verified.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Every day with pictures and questions.
-**Pupils:** Recall words and respond.
+**Teacher:** Display pictures connected to Every day and elicit two familiar words.
+**Pupils:** Name the pictures and respond to one short question.
 
-## Activity 1 (10 minutes)
-**Teacher:** Model a language arts task using textbook language.
-**Pupils:** Observe and practise with support.
+## Activity 1 — Model (15 minutes)
+**Teacher:** Introduce a teacher-created four-line rhyme using familiar daily routine words and model gestures for two actions. Read twice with a steady beat.
+**Pupils:** Listen, repeat the lines and copy the actions.
 
-## Activity 2 (25 minutes)
-**Teacher:** Facilitate guided pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share responses.
+## Activity 2 — Practice (25 minutes)
+**Teacher:** Arrange small groups to rehearse, choose gestures and substitute one routine word. Invite each group to perform.
+**Pupils:** Practise the rhyme, adapt one word and perform clearly as a group.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check individual responses against 5.1.2.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (10 minutes)
+**Teacher:** Observe each pupil's participation, intelligible delivery and use of at least two appropriate gestures.
+**Pupils:** Complete a short independent demonstration of the objective.
 
 ## Closure (5 minutes)
-**Teacher:** Summarise learning and invite reflection.
-**Pupils:** Share one example.
+**Teacher:** Review two useful words and summarise the learning.
+**Pupils:** Share one learned word or response.
 
-**QA:** Draft aligned to Year 3 SOW 2026; Teacher's Book steps pending verification.
+**QA:** TEACHER-DEVELOPED DRAFT — verify against the actual Teacher's Book and confirm SK/SP before publishing.

@@ -1,29 +1,31 @@
 # English Year 2 — Lesson 19: Writing 4
 
 **Unit:** Free Time
-**Main SK/SP:** 4.3 / 4.3.3
-**Complementary SK/SP:** 4.2 / 4.2.5
-**Learning objective:** Pupils practise writing 4 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Main SK/SP (existing SOW mapping; verification pending):** 4.3 / 4.3.3
+**Complementary SK/SP (existing SOW mapping; verification pending):** 4.2 / 4.2.5
+**Duration (draft):** 30 minutes
+**Objective:** Pupils can write two short sentences about free-time activities with appropriate capital letters and full stops.
+**Materials:** Topic picture cards, word cards, board and pupils' exercise books.
+**Source note:** Exact Teacher's Book page, audio and activity sequence have not been verified.
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Display pictures connected to Free Time and elicit two familiar words.
+**Pupils:** Name the pictures and respond to one short question.
 
-## Activity 1 — Model
-**Teacher:** Model the writing 4 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Model (7 minutes)
+**Teacher:** Show a picture of a familiar free-time activity and model a simple sentence on the board. Point out spacing, initial capital and full stop.
+**Pupils:** Identify the activity word and notice the sentence punctuation.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Practice (10 minutes)
+**Teacher:** Provide two different activity pictures and sentence starters; gradually remove the starters. Guide pupils to write and check two sentences.
+**Pupils:** Write two sentences and use a three-item checklist for capital letters, spaces and full stops.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check two sentences from each pupil and record accuracy of meaning and basic punctuation.
+**Pupils:** Complete a short independent demonstration of the objective.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Review two useful words and summarise the learning.
+**Pupils:** Share one learned word or response.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** TEACHER-DEVELOPED DRAFT — verify against the actual Teacher's Book and confirm SK/SP before publishing.
