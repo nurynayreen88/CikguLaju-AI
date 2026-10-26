@@ -5,6 +5,7 @@
 **Complementary SK/SP:** 2.1 / 2.1.4
 **Learning objective:** Pupils practise language arts 21 using language from The robot.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce The robot with a picture and two questions.
