@@ -9,23 +9,25 @@
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot picture and elicit two predictions.
+**Pupils:** Name known robot words.
 
 ## Activity 1 — Model
-**Teacher:** Model the reading 25 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model finding evidence in a short teacher-created robot paragraph.
+**Pupils:** Locate one printed fact.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Set five factual prompts and two written comprehension questions.
+**Pupils:** Underline evidence and write two short answers.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record five fact responses and two written answers per pupil.
+**Pupils:** Submit individual reading evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review finding evidence in print.
+**Pupils:** Share one fact.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
