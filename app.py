@@ -35213,7 +35213,7 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
         self._v2606_font_path=_pi_jawi_font_v2606(self.text,bool(getattr(self,'bold',False)))
         missing=sorted({ord(c) for c in self.text if 0x0600 <= ord(c) <= 0x08FF}-_font_cmap_v25226(self._v2606_font_path))
         if missing:
-            print('v26.06 JAWI MISSING', [f'U+{x:04X}' for x in missing], self._v2606_font_path, flush=True)
+            raise RuntimeError('Jawi PDF font lacks glyphs: ' + ', '.join(f'U+{x:04X}' for x in missing))
 
     def _font(self,px):
         from PIL import ImageFont
