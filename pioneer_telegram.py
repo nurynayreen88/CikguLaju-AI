@@ -10,6 +10,7 @@ def install(ns):
     original_menu = ns["menu"]
     original_access = ns["_access_info"]
     original_card = ns["_admin_pending_card"]
+    original_user_card = ns["_admin_user_card"]
     send = ns["send"]
     state = ns["state"]
     sb = ns["_sb_request"]
@@ -69,6 +70,14 @@ def install(ns):
                     + f"\n📊 {count}/500 Pioneer | {remaining} tempat berbaki")
         except Exception:
             return "🏆 Pioneer: Tidak dapat disemak"
+
+    def admin_user_card(cid, target):
+        # Preserve existing admin card and append a separate, verified status.
+        result = original_user_card(cid, target)
+        if ns["_is_admin"](cid):
+            send(cid, f"👤 ID: <code>{target}</code>\\n" + admin_pioneer_status(target),
+                 [[{"text": "👥 Senarai Pengguna", "callback_data": "admin_list|all|0"}]])
+        return result
 
     def admin_card(cid, request_id):
         req = ns["_payment_request"](request_id)
@@ -151,6 +160,7 @@ def install(ns):
 
     ns["_access_info"] = access_info
     ns["_admin_pending_card"] = admin_card
+    ns["_admin_user_card"] = admin_user_card
     ns["callback"] = callback
     ns["menu"] = menu
     ns["_admin_pioneer_status"] = admin_pioneer_status
