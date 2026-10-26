@@ -9,23 +9,25 @@
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot illustration and elicit two ideas.
+**Pupils:** Suggest robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the language arts 25 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model a teacher-created robot artwork with simple word labels.
+**Pupils:** Suggest labels for the model.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Guide pupils to create labelled artwork and listen to three descriptions.
+**Pupils:** Create artwork and respond to three spoken descriptions.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record each artwork and three individual listening responses.
+**Pupils:** Present individual creative and listening evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Invite pupils to share their artwork.
+**Pupils:** Name one creative choice.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
