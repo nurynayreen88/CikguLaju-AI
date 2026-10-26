@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 4.3 / 4.3.1
 **Complementary SK/SP:** 4.3 / 4.3.3
-**Learning objective:** Pupils practise writing 23 using language from The robot.
+**Learning objectives:** Pupils write four legible robot-related words and three meaningful short sentences.
+**Success criteria:** four legible words and three understandable sentences.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display a robot picture and elicit familiar vocabulary.
+**Pupils:** Name two robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the writing 23 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model letter formation, spacing and a short descriptive sentence.
+**Pupils:** Practise one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Guide word writing and independent three-sentence robot descriptions.
+**Pupils:** Write four words and three sentences.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Check each pupil against the success criteria and record individual PBD evidence.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful robot expression.
+**Pupils:** Share one new word or phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
