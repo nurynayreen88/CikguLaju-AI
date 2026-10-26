@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise language arts 17 using language from Get dressed!.
+**Learning objectives:** Pupils perform three of four lines of a teacher-created clothing verse and give two personal responses to its images or ideas.
+**Success criteria:** three clear lines and two relevant responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display colourful outfit illustrations and invite a prediction.
+**Pupils:** Suggest familiar words.
 
 ## Activity 1 — Model
-**Teacher:** Model the language arts 17 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Perform a teacher-created four-line clothing verse expressively and model a personal response.
+**Pupils:** Echo lines and practise expression.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Guide group performances and discuss two favourite images or phrases.
+**Pupils:** Perform and share two preferences.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record three spoken lines and two responses for each pupil.
+**Pupils:** Demonstrate individual participation.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Invite a short final performance.
+**Pupils:** Share one favourite phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
