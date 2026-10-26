@@ -4,8 +4,8 @@
 **Main SK/SP (existing SOW mapping):** 5.1 / 5.1.2
 **Complementary SK/SP (existing SOW mapping):** 4.2 / 4.2.1
 **Objective (teacher-developed):** Pupils perform a short chant about free-time activities, pronouncing at least two activity words and using two matching actions.
-**Materials:** Free-time picture cards, word cards and board.
-**Teacher's Book:** Exact page and activity sequence still require verification.
+**Materials:** Super Minds 1 Student's Book p.65, free-time picture cards, word cards and board.
+**Textbook mapping:** Student's Book p.65 in the prior Year 2 SOW audit. Exact Teacher's Book steps and activity alignment remain unverified.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures of reading, cycling and drawing. Ask pupils to name the activities.
