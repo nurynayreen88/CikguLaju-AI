@@ -4,7 +4,8 @@
 **Main SK/SP:** 5.3 / 5.3.1
 **Complementary SK/SP:** 2.2 / 2.2.2
 **Learning objective:** Pupils practise language arts 6 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task (classified in prior Year 2 SOW audit). Detailed SOW task steps not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce Free Time with a picture and two questions.
@@ -26,4 +27,4 @@
 **Teacher:** Recap the lesson and invite two pupils to demonstrate.
 **Pupils:** Share one thing learned.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**Source:** Prior Year 2 SOW mapping audit. **QA:** Preliminary teacher-developed RPH; activity-to-source alignment and A4 layout remain unverified.
