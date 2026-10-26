@@ -46502,3 +46502,37 @@ def menu(cid, show_persistent=False):
     return send(cid, body, kb)
 CIKGULAJU_TRIAL_MENU_20261026 = True
 # === END TRIAL BALANCE MAIN MENU ===
+
+
+# === SELECTED RPH TRIAL GATE 20261027 ===
+# Existing Supabase RPC is the single source of truth. Other materials do not use RPH trials.
+_RPH_SELECTED_SUBMIT_BEFORE_20261027 = _submit_materials_v2528
+def _submit_materials_v2528(cid):
+    ss = state.setdefault(cid,{})
+    chosen = set(ss.get('_materials_selected_v2528') or [])
+    if 'rph' not in chosen:
+        return _RPH_SELECTED_SUBMIT_BEFORE_20261027(cid)
+    # No trial is spent on the selection screen or on a failed RPH.
+    ss.pop('_free_generation_pending_v25282',None)
+    if not _credit_gate(cid, dict(ss,task='rph')):
+        return None
+    ss['_selected_rph_delivery_pending_20261027'] = True
+    try:
+        return _RPH_SELECTED_SUBMIT_BEFORE_20261027(cid)
+    finally:
+        ss.pop('_selected_rph_delivery_pending_20261027',None)
+        ss.pop('_free_generation_pending_v25282',None)
+
+_RPH_SEND_DOCUMENT_BEFORE_20261027 = send_document
+def send_document(cid,path,caption=''):
+    result = _RPH_SEND_DOCUMENT_BEFORE_20261027(cid,path,caption)
+    ss = state.setdefault(cid,{})
+    if (ss.get('_selected_rph_delivery_pending_20261027')
+            and 'RPH' in str(caption or '').upper()
+            and _telegram_delivery_ok_v25279(result)):
+        ss['_selected_rph_delivery_pending_20261027'] = False
+        _consume_free_after_success_v25282(cid,'successful_selected_rph_delivery')
+    return result
+
+CIKGULAJU_RPH_TRIAL_SELECTED_20261027 = True
+# === END SELECTED RPH TRIAL GATE ===
