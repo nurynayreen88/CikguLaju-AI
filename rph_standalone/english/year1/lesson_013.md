@@ -5,7 +5,7 @@
 **Complementary SK/SP (SOW):** 4.1 / 4.1.2
 **Objective (teacher-developed):** By the end of the lesson, pupils can recognise two familiar printed Friends words.
 **Materials:** Picture/word cards, board and exercise books as appropriate.
-**Textbook/Teacher's Book page:** Unverified; no invented page or audio track.
+**Source classification:** NON-TEXTBOOK, confirmed in the prior Year 1 SOW lesson index. No Student's Book page or audio track assigned; exact SOW procedure remains to be checked.
 
 ## Set Induction (5 min)
 **Teacher:** Show a familiar Friends picture and elicit a known word or greeting.
@@ -26,4 +26,4 @@
 **Teacher:** Ask pupils to demonstrate one final response and recap the target language.
 **Pupils:** Show one successful response from the lesson.
 
-**Source:** SOW_MAPPED_ONLY. Practical teacher-developed draft; Teacher's Book fidelity and A4 layout not yet verified.
+**Source:** VERIFIED_SOW_SK_SP_AND_NON_TEXTBOOK_CLASSIFICATION; detailed SOW procedure not yet verified. Practical teacher-developed draft; Teacher's Book fidelity and A4 layout not yet verified.
