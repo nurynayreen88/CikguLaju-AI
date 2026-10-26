@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 1.3 / 1.3.1
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise listening 16 using language from Get dressed!.
+**Learning objectives:** Pupils identify the main idea of a short clothing-related listening input and respond appropriately to two oral prompts.
+**Success criteria:** one correct main-idea choice and two relevant oral responses.
 **Teaching materials:** Super Minds 1 Student's Book p.90, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.90 (Year 2 audit); exact Teacher's Book steps not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display outfit pictures and invite predictions.
+**Pupils:** Predict the listening topic.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 16 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Preview Student's Book p.90 and model listening for the overall message.
+**Pupils:** Listen to a sample and select its topic.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Use page-linked audio where available, otherwise a clearly labelled teacher-created description; listen twice and present a main-idea choice plus two oral prompts.
+**Pupils:** Listen, choose the main idea and answer two prompts.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record the main-idea choice and two individual oral responses.
+**Pupils:** Give individual listening and speaking evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review a main-idea listening strategy.
+**Pupils:** Name one clue heard.
+
+**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
