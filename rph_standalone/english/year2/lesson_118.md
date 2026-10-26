@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 2.2 / 2.2.1
 **Complementary SK/SP:** 2.2 / 2.2.2
-**Learning objective:** Pupils practise speaking 24 using language from The robot.
+**Learning objectives:** Pupils take four turns in a robot-themed exchange and ask two questions.
+**Success criteria:** four relevant turns and two clear questions.
 **Teaching materials:** Super Minds 1 Student's Book p.105, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.105 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
