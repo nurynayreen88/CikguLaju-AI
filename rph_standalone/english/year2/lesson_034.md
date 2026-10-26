@@ -5,6 +5,7 @@
 **Complementary SK/SP:** 2.1 / 2.1.2
 **Learning objective:** Pupils practise writing 7 using language from The old house.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Audited source mapping:** NON-TEXTBOOK / SOW task in the prior Year 2 audit. Detailed SOW activity sequence remains unverified.
 
 ## Set Induction
 **Teacher:** Introduce The old house with a picture and two questions.
