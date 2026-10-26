@@ -1,29 +1,30 @@
 # English Year 2 — Lesson 17: Speaking 4
 
 **Unit:** Free Time
-**Main SK/SP:** 2.1 / 2.1.2
-**Complementary SK/SP:** 4.2 / 4.2.1
-**Learning objective:** Pupils practise speaking 4 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Main SK/SP (existing SOW mapping):** 2.1 / 2.1.2
+**Complementary SK/SP (existing SOW mapping):** 4.2 / 4.2.1
+**Objective (teacher-developed):** Pupils ask and answer two short questions about familiar free-time activities using picture cues.
+**Materials:** Free-time activity picture cards, board, exercise books.
+**Teacher's Book reference:** Exact page and activity sequence pending source verification.
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Show pictures of reading, cycling and drawing; elicit familiar activity words.
+**Pupils:** Name activities and respond to one simple question.
 
-## Activity 1 — Model
-**Teacher:** Model the speaking 4 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Model the exchange (7 minutes)
+**Teacher:** Model a short question-and-answer exchange about a free-time activity, pointing to a picture for meaning. Repeat with a second picture.
+**Pupils:** Listen, repeat the exchange and identify the activity.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Paired speaking (10 minutes)
+**Teacher:** Give each pair two picture cues. Ask pupils to exchange roles and change the activity after the first turn.
+**Pupils:** Ask and answer questions in pairs, switching speaker and listener roles.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Observe each pupil asking one intelligible question and answering one question with appropriate activity vocabulary; note who requires prompts.
+**Pupils:** Complete a two-turn exchange independently.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Invite one pair to demonstrate and review two activity words.
+**Pupils:** Demonstrate the exchange and share a word learned.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA status:** DRAFT — improved skill-specific activities, not yet verified against the Teacher's Book. Confirm SOW mapping and textbook pages before release.
