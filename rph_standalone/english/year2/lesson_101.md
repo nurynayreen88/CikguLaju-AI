@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objective:** Pupils practise listening 21 using language from The robot.
+**Learning objectives:** Pupils identify four of five robot features in short spoken descriptions and respond to two listening prompts.
+**Success criteria:** 4/5 accurate choices and two relevant responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot picture and elicit two observations.
+**Pupils:** Name familiar robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 21 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model listening for specific robot words.
+**Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Read five short teacher-created descriptions and ask two follow-up prompts.
+**Pupils:** Choose five answers and respond to two prompts.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Check the stated success criteria and record individual PBD evidence.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful expression.
+**Pupils:** Share one robot word or phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
