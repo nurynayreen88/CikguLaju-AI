@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 5.3 / 5.3.1
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise language arts 15 using language from Get dressed!.
+**Learning objectives:** Pupils create a four-line clothing-themed mini-dialogue with a partner and perform three lines intelligibly.
+**Success criteria:** Four lines drafted and three clear spoken lines.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show two outfit pictures and invite an imaginative situation.
+**Pupils:** Suggest a character or setting.
 
 ## Activity 1 — Model
-**Teacher:** Model the language arts 15 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model a four-line teacher-created dialogue using familiar clothing vocabulary.
+**Pupils:** Practise two model lines.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Guide pairs to adapt four lines and rehearse with expressive voices.
+**Pupils:** Draft and perform a four-line dialogue.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record each pupil's participation and at least three clear lines.
+**Pupils:** Perform individually within a pair.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Invite a short performance and recap a useful expression.
+**Pupils:** Share a favourite line.
+
+**QA:** Teacher-designed non-textbook adaptation; detailed SOW task not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
