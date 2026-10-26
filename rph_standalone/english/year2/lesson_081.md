@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 1.3 / 1.3.1
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise listening 17 using language from Get dressed!.
+**Learning objectives:** Pupils identify the main idea of a short spoken outfit description and give two relevant responses.
+**Success criteria:** one correct main-idea choice and two appropriate oral answers.
 **Teaching materials:** pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed task procedure not verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show two outfit pictures and invite predictions.
+**Pupils:** Predict the topic.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 17 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model listening for the overall message of a teacher-created outfit description.
+**Pupils:** Listen and select a matching picture.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Read a short labelled teacher-created description twice and ask one main-idea and two follow-up questions.
+**Pupils:** Listen, select the main idea and respond individually.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record the main-idea choice and two oral responses per pupil.
+**Pupils:** Give individual listening evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review key clues for main ideas.
+**Pupils:** Name one clue heard.
+
+**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
