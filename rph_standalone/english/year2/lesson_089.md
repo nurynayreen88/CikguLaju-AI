@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 4.2 / 4.2.2
 **Complementary SK/SP:** 3.2 / 3.2.1
-**Learning objective:** Pupils practise writing 18 using language from The robot.
+**Learning objectives:** Pupils write three short sentences describing a robot and identify four of five key printed words.
+**Success criteria:** Three meaningful sentences and 4/5 correct word identifications.
 **Teaching materials:** Super Minds 1 Student's Book p.95, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.95 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot illustration and elicit descriptive words.
+**Pupils:** Suggest robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the writing 18 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Preview Student's Book p.95 and model locating words and writing a clear sentence.
+**Pupils:** Read a sample and rehearse one sentence.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Use actual page text for a five-word identification task and guide writing three robot descriptions.
+**Pupils:** Identify printed words and write three sentences independently.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record five reading identifications and three written sentences per pupil.
+**Pupils:** Submit individual reading and writing evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review spacing and punctuation.
+**Pupils:** Read one sentence.
+
+**QA:** Exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
