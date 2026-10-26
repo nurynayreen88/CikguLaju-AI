@@ -50,20 +50,9 @@ def install(ns):
         return original_access(cid)
 
     def menu(cid, show_persistent=False):
-        result = original_menu(cid, show_persistent=show_persistent)
-        # Additional card is intentionally non-destructive to existing menu.
-        try:
-            lines = (["🏆 <b>Pioneer: AKTIF — seumur hidup</b>",
-                      "✅ Tiada bayaran langganan bulanan atau tahunan."] if has_pioneer(sb, cid)
-                     else ["🏆 <b>PIONEER EARLY BIRD — RM10 SEKALI BAYAR</b>",
-                           "✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.",
-                           "♾️ Akses Pioneer seumur hidup."])
-            lines.extend(["", quota_text()])
-            send(cid, chr(10).join(lines),
-                 [[{"text": "🏆 Pioneer RM10", "callback_data": "pioneer_join"}]])
-        except Exception:
-            pass  # Preserve existing main menu if the quota API is unavailable.
-        return result
+        # The main menu already has a 'Jadi Pioneer' button.
+        # Show Pioneer price and benefits only when that button is selected.
+        return original_menu(cid, show_persistent=show_persistent)
 
     def admin_pioneer_status(user_id):
         """Reusable status for the existing admin user-detail view."""
