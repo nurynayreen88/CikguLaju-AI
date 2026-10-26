@@ -10,6 +10,7 @@ def install(ns):
     original_menu = ns["menu"]
     original_access = ns["_access_info"]
     original_card = ns["_admin_pending_card"]
+    original_user_card = ns["_admin_user_card"]
     send = ns["send"]
     state = ns["state"]
     sb = ns["_sb_request"]
@@ -49,8 +50,34 @@ def install(ns):
         return original_access(cid)
 
     def menu(cid, show_persistent=False):
-        # Permanent Pioneer entry is included in app.py main menu.
-        return original_menu(cid, show_persistent=show_persistent)
+        result = original_menu(cid, show_persistent=show_persistent)
+        # Additional card is intentionally non-destructive to existing menu.
+        try:
+            status = ("🏆 Pioneer: AKTIF — seumur hidup" if has_pioneer(sb, cid)
+                      else "🏆 Pioneer Early Bird — RM10 sekali bayar")
+            send(cid, status + "\n" + quota_text(),
+                 [[{"text": "🏆 Pioneer RM10", "callback_data": "pioneer_join"}]])
+        except Exception:
+            pass  # Preserve existing main menu if the quota API is unavailable.
+        return result
+
+    def admin_pioneer_status(user_id):
+        """Reusable status for the existing admin user-detail view."""
+        try:
+            active = has_pioneer(sb, user_id)
+            count, remaining = pioneer_availability(sb)
+            return ("🏆 Pioneer: " + ("AKTIF (seumur hidup)" if active else "TIDAK AKTIF")
+                    + f"\n📊 {count}/500 Pioneer | {remaining} tempat berbaki")
+        except Exception:
+            return "🏆 Pioneer: Tidak dapat disemak"
+
+    def admin_user_card(cid, target):
+        # Preserve existing admin card and append a separate, verified status.
+        result = original_user_card(cid, target)
+        if ns["_is_admin"](cid):
+            send(cid, f"👤 ID: <code>{target}</code>\\n" + admin_pioneer_status(target),
+                 [[{"text": "👥 Senarai Pengguna", "callback_data": "admin_list|all|0"}]])
+        return result
 
     def admin_card(cid, request_id):
         req = ns["_payment_request"](request_id)
@@ -133,6 +160,8 @@ def install(ns):
 
     ns["_access_info"] = access_info
     ns["_admin_pending_card"] = admin_card
+    ns["_admin_user_card"] = admin_user_card
     ns["callback"] = callback
     ns["menu"] = menu
+    ns["_admin_pioneer_status"] = admin_pioneer_status
     return True
