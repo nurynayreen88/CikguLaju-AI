@@ -1,30 +1,33 @@
 # English Year 1 — Lesson 9: Speaking 2
 
 **Unit:** Friends
-**Main SK/SP (existing SOW mapping):** 2.1 / 2.1.5
-**Complementary SK/SP (existing SOW mapping):** 3.1 / 3.1.3
-**Objective (teacher-developed):** Pupils can initiate one greeting and give an appropriate simple personal response to a partner.
-**Materials:** Greeting picture cards, short printed cue cards and board.
-**Teacher's Book / Student's Book pages:** Not verified; no specific page or audio track claimed.
+**Main SK/SP (existing mapping):** 2.1 / 2.1.5
+**Complementary SK/SP (existing mapping):** 3.1 / 3.1.3
+**Student's Book (previous audit):** p.7
+**Teacher's Book:** page not recorded in existing mapping
+**Audio:** not established
+**Duration:** 30 minutes (draft)
+**Objective:** Pupils can complete the textbook-linked speaking task and exchange a greeting and an appropriate reply.
+**Materials:** Student's Book, picture cards, board and exercise books.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two pictures showing friends greeting each other. Ask what the children might say.
-**Pupils:** Identify a greeting and say it aloud.
+**Teacher:** Display pictures linked to Friends and elicit relevant vocabulary.
+**Pupils:** Identify two familiar expressions.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Demonstrate a two-turn greeting and reply using a puppet or volunteer. Point to the printed greeting cue, repeat with another greeting and model a polite response.
-**Pupils:** Listen, repeat the two turns and identify which cue card matches each exchange.
+## Activity 1 — Textbook preparation (10 minutes)
+**Teacher:** Open Student's Book p.7. Introduce the task and model the first response; avoid assigning an unverified audio track.
+**Pupils:** Follow the printed task and attempt one guided response.
 
-## Activity 2 — Paired speaking (10 minutes)
-**Teacher:** Distribute two greeting cue cards to each pair. Ask pupils to greet and reply, swap roles and then change cards. Provide a brief prompt only when needed.
-**Pupils:** Practise the exchange with a partner, change roles and attempt the second greeting without a full model.
+## Activity 2 — Textbook practice (10 minutes)
+**Teacher:** Guide pupils through the cited Student's Book activity, asking for evidence and providing differentiated support.
+**Pupils:** Complete the textbook activity and compare responses with a partner.
 
 ## Assessment / PBD (3 minutes)
-**Teacher:** Listen to each pupil initiate a greeting and give one appropriate reply. Record who can do both independently.
-**Pupils:** Demonstrate the two turns with minimal prompting.
+**Teacher:** Check each pupil's individual response against the objective and record evidence.
+**Pupils:** Demonstrate the target speaking skill independently.
 
 ## Closure (2 minutes)
-**Teacher:** Invite one pair to demonstrate and recap a useful greeting.
-**Pupils:** Share one expression they can use with a friend.
+**Teacher:** Review two key expressions and invite one final example.
+**Pupils:** Share one successful response.
 
-**QA status:** TEACHER-DEVELOPED DRAFT — existing SK/SP mapping, Teacher's Book steps and A4 layout still require verification.
+**QA:** VERIFIED_REFERENCE_MAPPING from existing Drive audit; detailed Teacher's Book procedure, TB page and A4 output still require checking.

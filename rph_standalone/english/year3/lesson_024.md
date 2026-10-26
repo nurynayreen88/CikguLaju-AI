@@ -3,27 +3,31 @@
 **Unit:** Every day
 **Main SK/SP (existing mapping):** 3.2 / 3.2.4
 **Complementary SK/SP (existing mapping):** 3.2 / 3.2.2
-**Objective (draft):** Pupils can find two details in a short text.
-**Materials:** Topic pictures, word cards, exercise books; Teacher's Book pages unverified.
+**Student's Book (previous audit):** pp.18–19 Activities 1–2
+**Teacher's Book:** pp.36–37
+**Audio:** CD1 Tracks 26–27
+**Duration:** 60 minutes (draft)
+**Objective:** Pupils can complete the reading tasks in Student's Book pp.18–19 Activities 1–2 and support answers with details from the text.
+**Materials:** Student's Book, picture cards, board and exercise books.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two pictures related to Every day and elicit vocabulary.
-**Pupils:** Name pictures and respond.
+**Teacher:** Display pictures linked to Every day and elicit relevant vocabulary.
+**Pupils:** Identify two familiar expressions.
 
-## Activity 1 — Modelling (7 minutes)
-**Teacher:** Read a four-sentence text and underline one clue.
-**Pupils:** Observe and attempt a response.
+## Activity 1 — Textbook preparation (15 minutes)
+**Teacher:** Open Student's Book pp.18–19 Activities 1–2. Introduce the task and model the first response; use CD1 Tracks 26–27 as recorded in the previous audit.
+**Pupils:** Follow the printed task and attempt one guided response.
 
-## Activity 2 — Guided practice (10 minutes)
-**Teacher:** Have pupils underline evidence and answer two questions. Provide corrective feedback.
-**Pupils:** Practise and compare responses.
+## Activity 2 — Textbook practice (25 minutes)
+**Teacher:** Guide pupils through the cited Student's Book activity, asking for evidence and providing differentiated support.
+**Pupils:** Complete the textbook activity and compare responses with a partner.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check each pupil's ability to find two details in a short text and record evidence.
-**Pupils:** Demonstrate independently.
+## Assessment / PBD (10 minutes)
+**Teacher:** Check each pupil's individual response against the objective and record evidence.
+**Pupils:** Demonstrate the target reading skill independently.
 
-## Closure (3 minutes)
-**Teacher:** Recap two target expressions.
-**Pupils:** Share one learned response.
+## Closure (5 minutes)
+**Teacher:** Review two key expressions and invite one final example.
+**Pupils:** Share one successful response.
 
-**QA status:** DRAFT — Teacher's Book steps, pages and SK/SP mapping not verified. Do not publish.
+**QA:** VERIFIED_REFERENCE_MAPPING from existing Drive audit; detailed Teacher's Book procedure and A4 output still require checking.
