@@ -9,23 +9,25 @@
 **Audited source mapping:** Student's Book p.105 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot picture and elicit two features.
+**Pupils:** Name familiar words.
 
 ## Activity 1 — Model
-**Teacher:** Model the speaking 24 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model a short robot question-and-answer exchange.
+**Pupils:** Rehearse one question.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Organise partner exchanges with robot picture prompts.
+**Pupils:** Take four turns and ask two questions.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record four turns and two questions per pupil.
+**Pupils:** Submit individual speaking evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review turn-taking.
+**Pupils:** Share one useful question.
+
+**QA:** Exact Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
