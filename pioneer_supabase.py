@@ -26,7 +26,7 @@ def has_pioneer(sb_request, telegram_user_id):
     uid = int(telegram_user_id)
     rows = sb_request(
         "GET",
-        f"pioneer_entitlements?telegram_user_id=eq.{uid}&select=entitlement",
+        f"pioneer_entitlements?telegram_user_id=eq.{uid}&revoked_at=is.null&select=entitlement",
     ) or []
     return any(row.get("entitlement") == PIONEER_PLAN for row in rows)
 
