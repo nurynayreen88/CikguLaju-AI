@@ -17,13 +17,17 @@ def build():
     if not SOURCE.is_file():
         raise FileNotFoundError("Verified Year 3 SOW mapping required: " + str(SOURCE))
     records = json.loads(SOURCE.read_text(encoding="utf-8"))["Tahun 3"]
-    if not records:
-        raise ValueError("Year 3 SOW is empty")
+    if len(records) != 160:
+        raise ValueError("Exactly 160 verified Year 3 SOW lessons are required")
     numbers = [row[0] for row in records]
     if numbers != list(range(1, len(records) + 1)):
         raise ValueError("Year 3 lessons must be consecutive and start at 1")
     if any(len(row) != 7 or any(not str(x).strip() for x in row) for row in records):
         raise ValueError("Every Year 3 lesson requires its verified SK/SP mapping")
+    # Do not overwrite any existing standalone RPH during generation.
+    existing = [DEST / f"lesson_{number:03d}.md" for number in numbers]
+    if any(path.exists() for path in existing):
+        raise FileExistsError("Existing Year 3 RPH detected; refusing destructive regeneration")
     DEST.mkdir(parents=True, exist_ok=True)
     for number, skill, unit, main_sk, main_sp, comp_sk, comp_sp in records:
         skill_type = skill.split()[0].lower()
@@ -47,7 +51,7 @@ def build():
 **Teacher:** Guide pair or group practice and provide corrective feedback.
 **Pupils:** Practise the target skill and exchange responses with peers.
 
-## Assessment / PBD (10 minutes)
+## Assessment / PBD (15 minutes)
 **Teacher:** Check an individual response from each pupil against the lesson objective.
 **Pupils:** Demonstrate understanding independently.
 
