@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 4.2 / 4.2.5
 **Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objective:** Pupils practise writing 22 using language from The robot.
+**Learning objectives:** Pupils write three robot sentences and correct two errors.
+**Success criteria:** three meaningful sentences and two corrections.
 **Teaching materials:** Super Minds 1 Student's Book p.101, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.101 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
