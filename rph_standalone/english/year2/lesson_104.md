@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 3.1 / 3.1.1
-**Learning objective:** Pupils practise writing 21 using language from The robot.
+**Learning objectives:** Pupils write three robot-themed sentences legibly and copy four printed robot words accurately.
+**Success criteria:** three meaningful sentences and four accurately copied words.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot picture and elicit two observations.
+**Pupils:** Name familiar robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the writing 21 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model word formation, spacing and a simple robot sentence.
+**Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Provide robot picture prompts for writing and copying.
+**Pupils:** Write three sentences and copy four words.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Check the stated success criteria and record individual PBD evidence.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful expression.
+**Pupils:** Share one robot word or phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
