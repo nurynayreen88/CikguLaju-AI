@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 2.1 / 2.1.2
 **Complementary SK/SP:** 1.3 / 1.3.1
-**Learning objective:** Pupils practise speaking 26 using language from At the beach.
+**Learning objectives:** Pupils describe three beach objects and answer two oral questions.
+**Success criteria:** Three intelligible descriptions and two relevant answers.
 **Teaching materials:** Super Minds 1 Student's Book p.107, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.107 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
