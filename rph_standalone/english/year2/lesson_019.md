@@ -6,7 +6,7 @@
 **Duration (draft):** 30 minutes
 **Objective:** Pupils can write two short sentences about free-time activities with appropriate capital letters and full stops.
 **Materials:** Topic picture cards, word cards, board and pupils' exercise books.
-**Source note:** Exact Teacher's Book page, audio and activity sequence have not been verified.
+**Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit; detailed SOW procedure remains unverified.
 
 ## Set Induction (5 minutes)
 **Teacher:** Display pictures connected to Free Time and elicit two familiar words.
@@ -28,4 +28,4 @@
 **Teacher:** Review two useful words and summarise the learning.
 **Pupils:** Share one learned word or response.
 
-**QA:** TEACHER-DEVELOPED DRAFT — verify against the actual Teacher's Book and confirm SK/SP before publishing.
+**QA:** TEACHER-DEVELOPED DRAFT — SK/SP and non-textbook classification mapped in the prior SOW audit; verify detailed SOW activity alignment before publishing.
