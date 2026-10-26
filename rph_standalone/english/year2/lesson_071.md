@@ -3,28 +3,31 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 1.1 / 1.1.1
 **Complementary SK/SP:** 3.1 / 3.1.4
-**Learning objective:** Pupils practise listening 15 using language from Get dressed!.
+**Learning objectives:** Pupils distinguish four of five spoken clothing words and match four printed words to pictures.
+**Success criteria:** 4/5 correct listening choices and four accurate word-picture matches.
 **Teaching materials:** Super Minds 1 Student's Book p.87, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.87 (Year 2 audit); exact Teacher's Book steps not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show clothing picture cards and elicit known words.
+**Pupils:** Name familiar clothing.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 15 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Preview Student's Book p.87 and model distinguishing two similar spoken words.
+**Pupils:** Listen and point to the correct card.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Use page-linked audio if available, otherwise a labelled teacher-created five-item listening sequence; provide picture and printed-word cards.
+**Pupils:** Identify five spoken items and match four printed words independently.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record each pupil's five listening choices and four word-picture matches; provide corrective feedback.
+**Pupils:** Submit individual responses.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one listening clue and a word match.
+**Pupils:** Share one word heard.
+
+**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book sequence not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
