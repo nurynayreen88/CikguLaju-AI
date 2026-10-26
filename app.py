@@ -46464,34 +46464,41 @@ CIKGULAJU_ENGLISH_RPH_TEACHER_TEXT_GUARD = '20261025'
 # === END ENGLISH RPH QUALITY GUARD ===
 
 
-# === TRIAL BALANCE DISPLAY / DELIVERY GUARD (2026-10-26) ===
-# Uses existing Supabase trial_remaining and RPC. Never initializes a second ledger.
-_TRIAL_MENU_PREVIOUS_20261026 = menu
+# === TRIAL BALANCE MAIN MENU 20261026 ===
+# Do not monkey-patch global send: Telegram requests can overlap across workers.
 def menu(cid, show_persistent=False):
-    # Fail visibly if Supabase is unavailable: never display a fabricated balance.
+    if show_persistent:
+        install_menu_button(cid)
+    kb = [
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+        [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
+        [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
+    ]
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
     try:
         access = _access_info(cid)
         if access.get('active') or _is_permanent_vip_v25267(cid):
-            balance_line = '♾️ <b>Akses tanpa had</b>'
+            quota = '♾️ <b>Akses tanpa had</b>'
         else:
-            balance_line = f'🎁 <b>Baki janaan RPH: {_trial_balance(cid)}/5</b>'
+            quota = f'🎁 <b>Baki janaan RPH: {_trial_balance(cid)}/5</b>'
     except Exception:
-        balance_line = '⚠️ <b>Baki janaan tidak dapat disemak buat masa ini.</b>'
-    # Keep the latest menu structure and callbacks; add a separate visible balance line.
-    original_send = globals()['send']
-    def _menu_send(chat_id, message, *args, **kwargs):
-        if int(chat_id) == int(cid) and 'CIKGULAJU AI' in str(message):
-            message = str(message) + '\\n\\n' + balance_line
-        return original_send(chat_id, message, *args, **kwargs)
-    globals()['send'] = _menu_send
-    try:
-        return _TRIAL_MENU_PREVIOUS_20261026(cid, show_persistent=show_persistent)
-    finally:
-        globals()['send'] = original_send
-
-# Reuse existing success-only debit hook; show balance after a successful RPH.
-_TRIAL_SUCCESS_PREVIOUS_20261026 = _consume_free_after_success_v25282
-def _consume_free_after_success_v25282(cid, reason='successful_generation'):
-    result = _TRIAL_SUCCESS_PREVIOUS_20261026(cid, reason)
-    return result
-# === END TRIAL BALANCE DISPLAY ===
+        quota = '⚠️ <b>Baki janaan tidak dapat disemak.</b>'
+    body = (
+        '🚀 <b>CIKGULAJU AI</b>\\n<i>Pembantu pintar persediaan PdP guru.</i>\\n\\n'
+        '🚧 <b>STATUS: DALAM PEMBANGUNAN</b>\\n'
+        'Fungsi dan kandungan sedang dilengkapkan secara berperingkat.\\n\\n'
+        '📚 <b>SEDIAKAN BAHAN PdP</b>\\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\\n\\n'
+        '⚡ <b>RPH HARI INI</b>\\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\\n\\n'
+        '📅 <b>RPT 2027</b>\\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\\n\\n'
+        '👤 <b>PROFIL SAYA</b>\\nUrus kelas, jadual waktu dan maklumat cikgu.\\n\\n'
+        '🏆 <b>JADI PIONEER</b>\\nTawaran Pioneer sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\\n\\n'
+        '💳 <b>LANGGANAN</b>\\nBulanan: <b>RM8/sebulan</b>\\nTahunan: <b>RM50/setahun</b>\\n'
+        'Akan datang. Langganan belum dibuka.\\n\\n'
+        + quota
+    )
+    return send(cid, body, kb)
+CIKGULAJU_TRIAL_MENU_20261026 = True
+# === END TRIAL BALANCE MAIN MENU ===
