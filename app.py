@@ -40050,6 +40050,7 @@ def menu(cid,show_persistent=False):
     if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
     body=(
         '🚀 <b>CIKGULAJU AI</b>\n<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
+        '🚧 <b>STATUS: DALAM PEMBANGUNAN</b>\nFungsi dan kandungan sedang dilengkapkan secara berperingkat.\n\n'
         '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
