@@ -9,8 +9,11 @@ PIONEER_LIMIT = 500
 
 def pioneer_count(sb_request):
     """Count approved entitlements, not pending payments."""
-    rows = sb_request("GET", "pioneer_entitlements?select=telegram_user_id") or []
-    return len({str(row["telegram_user_id"]) for row in rows})
+    # Database-side count avoids PostgREST default 1000-row pagination.
+    rows = sb_request("POST", "rpc/pioneer_early_bird_count", json={})
+    if not isinstance(rows, int) or rows < 0:
+        raise RuntimeError("Pioneer count RPC unavailable; fail closed")
+    return rows
 
 
 def pioneer_availability(sb_request):
@@ -43,16 +46,22 @@ def grant_pioneer(sb_request, telegram_user_id, payment_reference,
     admin = int(approved_by)
     if uid <= 0 or admin <= 0:
         raise ValueError("Valid user and admin IDs required")
-    if pioneer_count(sb_request) >= PIONEER_LIMIT:
-        raise ValueError("Pioneer Early Bird quota full")
-    if has_pioneer(sb_request, uid):
-        raise ValueError("Pioneer entitlement already exists")
-    return sb_request("POST", "pioneer_entitlements", json={
+    # Database RPC serializes grants, preventing two admins exceeding 500.
+    return sb_request("POST", "rpc/approve_pioneer_early_bird", json={
+        "p_telegram_user_id": uid,
+        "p_payment_reference": reference,
+        "p_approved_by": admin,
+    })
+
+
+def legacy_non_atomic_grant_payload(uid, reference, admin):
+    """Legacy payload retained for audit only; do not use for grants."""
+    return {
         "telegram_user_id": uid,
         "entitlement": PIONEER_PLAN,
         "payment_reference": reference,
         "approved_by": admin,
-    }, prefer="return=representation")
+    }
 
 
 def effective_access(sb_request, telegram_user_id, subscription_access):
