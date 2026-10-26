@@ -46462,3 +46462,36 @@ def _rph_rows(st, *args, **kwargs):
     return rows
 CIKGULAJU_ENGLISH_RPH_TEACHER_TEXT_GUARD = '20261025'
 # === END ENGLISH RPH QUALITY GUARD ===
+
+
+# === TRIAL BALANCE DISPLAY / DELIVERY GUARD (2026-10-26) ===
+# Uses existing Supabase trial_remaining and RPC. Never initializes a second ledger.
+_TRIAL_MENU_PREVIOUS_20261026 = menu
+def menu(cid, show_persistent=False):
+    # Fail visibly if Supabase is unavailable: never display a fabricated balance.
+    try:
+        access = _access_info(cid)
+        if access.get('active') or _is_permanent_vip_v25267(cid):
+            balance_line = '♾️ <b>Akses tanpa had</b>'
+        else:
+            balance_line = f'🎁 <b>Baki janaan RPH: {_trial_balance(cid)}/5</b>'
+    except Exception:
+        balance_line = '⚠️ <b>Baki janaan tidak dapat disemak buat masa ini.</b>'
+    # Keep the latest menu structure and callbacks; add a separate visible balance line.
+    original_send = globals()['send']
+    def _menu_send(chat_id, message, *args, **kwargs):
+        if int(chat_id) == int(cid) and 'CIKGULAJU AI' in str(message):
+            message = str(message) + '\\n\\n' + balance_line
+        return original_send(chat_id, message, *args, **kwargs)
+    globals()['send'] = _menu_send
+    try:
+        return _TRIAL_MENU_PREVIOUS_20261026(cid, show_persistent=show_persistent)
+    finally:
+        globals()['send'] = original_send
+
+# Reuse existing success-only debit hook; show balance after a successful RPH.
+_TRIAL_SUCCESS_PREVIOUS_20261026 = _consume_free_after_success_v25282
+def _consume_free_after_success_v25282(cid, reason='successful_generation'):
+    result = _TRIAL_SUCCESS_PREVIOUS_20261026(cid, reason)
+    return result
+# === END TRIAL BALANCE DISPLAY ===
