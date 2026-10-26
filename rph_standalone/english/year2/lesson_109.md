@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 3.2 / 3.2.3
 **Complementary SK/SP:** 4.3 / 4.3.2
-**Learning objective:** Pupils practise reading 22 using language from The robot.
+**Learning objectives:** Pupils locate four of five explicit details on Student's Book p.102 and write two factual answers.
+**Success criteria:** 4/5 accurate details and two supported written answers.
 **Teaching materials:** Super Minds 1 Student's Book p.102, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.102 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
