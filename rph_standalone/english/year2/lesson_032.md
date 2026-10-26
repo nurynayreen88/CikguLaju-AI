@@ -4,7 +4,8 @@
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 2.2 / 2.2.1
 **Learning objective:** Pupils practise listening 7 using language from The old house.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.73, pictures, word cards and classroom resources.
+**Audited source mapping:** Student's Book p.73 according to the prior Year 2 SOW mapping audit. Exact Teacher's Book steps remain unverified.
 
 ## Set Induction
 **Teacher:** Introduce The old house with a picture and two questions.
