@@ -40055,6 +40055,7 @@ def menu(cid,show_persistent=False):
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
         '🏆 <b>JADI PIONEER</b>\nTawaran Pioneer hanya dibuka sepanjang tempoh pembangunan CikguLaju AI. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
+        '💳 <b>LANGGANAN BULANAN — RM5/SEBULAN</b>\nAkan datang. Langganan belum dibuka.\n\n'
         '🎁 <b>5 JANAAN RPH PERCUMA UNTUK PENGGUNA BAHARU</b>'
     )
     return send(cid,body,kb)
