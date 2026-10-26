@@ -3,28 +3,32 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 3.1 / 3.1.3
 **Complementary SK/SP:** 3.1 / 3.1.4
-**Learning objective:** Pupils practise reading 12 using language from Get dressed!.
+**Learning objectives:** Pupils recognise and read aloud at least six familiar clothing-related words and match at least four of five printed words to pictures.
+**Success criteria:** Six words read intelligibly and 4/5 accurate word-picture matches.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Get dressed! with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show clothing picture cards and elicit familiar vocabulary.
+**Pupils:** Name visible items and predict the written words.
 
 ## Activity 1 — Model
-**Teacher:** Model the reading 12 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Display six clothing word cards, model decoding and blending where suitable, then demonstrate one word-picture match.
+**Pupils:** Read aloud with teacher support and match the model card.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Conduct word-card sorting and five individual picture-word matching items; invite paired reading checks.
+**Pupils:** Read six cards, match five items independently and compare answers.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Assess each pupil's six-word oral reading and five matches; record two separate scores and provide targeted decoding support.
+**Pupils:** Read individually and submit their matching sheet.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review two commonly confused words and elicit one final match.
+**Pupils:** Read one chosen word aloud.
+
+**Differentiation:** Support—smaller word set and picture cues; extension—use a word in a short phrase.
+**QA:** Teacher-designed non-textbook adaptation; detailed SOW task not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
