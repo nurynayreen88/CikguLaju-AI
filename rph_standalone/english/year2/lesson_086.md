@@ -4,7 +4,8 @@
 **Main SK/SP:** 1.2 / 1.2.3
 **Complementary SK/SP:** 1.2 / 1.2.4
 **Learning objective:** Pupils practise listening 18 using language from Get dressed!.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.92, pictures, word cards and classroom resources.
+**Audited source mapping:** Student's Book p.92 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce Get dressed! with a picture and two questions.
