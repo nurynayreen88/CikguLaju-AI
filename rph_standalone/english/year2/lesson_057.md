@@ -4,7 +4,8 @@
 **Main SK/SP:** 2.1 / 2.1.2
 **Complementary SK/SP:** 1.2 / 1.2.5
 **Learning objective:** Pupils practise speaking 12 using language from Get dressed!.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.83, pictures, word cards and classroom resources.
+**Audited source mapping:** Student's Book p.83 (Year 2 SOW mapping audit); exact Teacher's Book sequence not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce Get dressed! with a picture and two questions.
