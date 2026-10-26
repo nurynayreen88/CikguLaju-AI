@@ -35217,12 +35217,16 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
 
     def _font(self,px):
         from PIL import ImageFont
-        # RAQM invokes FriBiDi + HarfBuzz and is required for correct contextual
-        # Arabic/Jawi shaping. Fall back only if this Pillow build lacks RAQM.
-        try:
-            return ImageFont.truetype(self._v2606_font_path,px,layout_engine=ImageFont.Layout.RAQM)
-        except Exception:
-            return ImageFont.truetype(self._v2606_font_path,px)
+        # Jawi must never silently fall back to Pillow BASIC layout: it may
+        # produce disconnected/reordered Arabic letters while still making a PDF.
+        if not ImageFont.core.HAVE_RAQM:
+            raise RuntimeError(
+                'Jawi PDF requires Pillow built with RAQM/HarfBuzz/FriBiDi; '
+                'install a RAQM-enabled Pillow before generating Pendidikan Islam PDFs'
+            )
+        return ImageFont.truetype(
+            self._v2606_font_path, px, layout_engine=ImageFont.Layout.RAQM
+        )
 
 APP_VERSION='v26.06-PI-EXACT-JAWI-RAQM-SHAPING'
 # ===== END v26.06 =====
