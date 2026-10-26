@@ -9,23 +9,25 @@
 **Audited source mapping:** Student's Book p.104 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot illustration and elicit two observations.
+**Pupils:** Name familiar robot features.
 
 ## Activity 1 — Model
-**Teacher:** Model the writing 24 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model a short sentence and two listen-and-respond instructions.
+**Pupils:** Rehearse a sentence and response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Use Student's Book p.104 as context for three teacher-designed sentences and two oral instructions.
+**Pupils:** Write three sentences and respond to two instructions.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record three sentences and two responses per pupil.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review a useful sentence.
+**Pupils:** Share one phrase.
+
+**QA:** Exact Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
