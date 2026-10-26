@@ -4,7 +4,7 @@
 **Main SK/SP (existing mapping):** 1.2 / 1.2.3
 **Complementary SK/SP (existing mapping):** 1.2 / 1.2.2
 **Objective (draft):** Pupils can identify three spoken details.
-**Materials:** Super Minds 1 Student's Book p.62, topic pictures, word cards and exercise books. Student's Book p.62 (confirmed in the previous Year 2 SOW mapping audit; exact Teacher's Book procedure not yet checked).
+**Materials:** Super Minds 1 Student's Book p.62, topic pictures, word cards and exercise books.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show two pictures related to Free Time and elicit familiar words.
