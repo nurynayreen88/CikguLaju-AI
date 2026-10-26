@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 4.3 / 4.3.2
-**Learning objective:** Pupils practise reading 25 using language from The robot.
+**Learning objectives:** Pupils locate four of five facts in a short robot paragraph and write two factual answers.
+**Success criteria:** 4/5 accurate facts and two supported written answers.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
