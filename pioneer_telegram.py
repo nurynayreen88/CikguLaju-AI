@@ -53,9 +53,13 @@ def install(ns):
         result = original_menu(cid, show_persistent=show_persistent)
         # Additional card is intentionally non-destructive to existing menu.
         try:
-            status = ("🏆 Pioneer: AKTIF — seumur hidup" if has_pioneer(sb, cid)
-                      else "🏆 <b>PIONEER EARLY BIRD — RM10 SEKALI BAYAR</b>\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Pioneer seumur hidup.")
-            send(cid, status + "\n" + quota_text(),
+            lines = (["🏆 <b>Pioneer: AKTIF — seumur hidup</b>",
+                      "✅ Tiada bayaran langganan bulanan atau tahunan."] if has_pioneer(sb, cid)
+                     else ["🏆 <b>PIONEER EARLY BIRD — RM10 SEKALI BAYAR</b>",
+                           "✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.",
+                           "♾️ Akses Pioneer seumur hidup."])
+            lines.extend(["", quota_text()])
+            send(cid, chr(10).join(lines),
                  [[{"text": "🏆 Pioneer RM10", "callback_data": "pioneer_join"}]])
         except Exception:
             pass  # Preserve existing main menu if the quota API is unavailable.
