@@ -4,6 +4,19 @@ The caller MUST enforce admin identity and verify the actual bank transaction.
 This module never accepts a receipt upload as proof of payment on its own.
 """
 PIONEER_PLAN = "PIONEER_LIFETIME"
+PIONEER_LIMIT = 500
+
+
+def pioneer_count(sb_request):
+    """Count approved entitlements, not pending payments."""
+    rows = sb_request("GET", "pioneer_entitlements?select=telegram_user_id") or []
+    return len({str(row["telegram_user_id"]) for row in rows})
+
+
+def pioneer_availability(sb_request):
+    count = pioneer_count(sb_request)
+    return count, max(0, PIONEER_LIMIT - count)
+
 
 
 def has_pioneer(sb_request, telegram_user_id):
@@ -30,6 +43,8 @@ def grant_pioneer(sb_request, telegram_user_id, payment_reference,
     admin = int(approved_by)
     if uid <= 0 or admin <= 0:
         raise ValueError("Valid user and admin IDs required")
+    if pioneer_count(sb_request) >= PIONEER_LIMIT:
+        raise ValueError("Pioneer Early Bird quota full")
     if has_pioneer(sb_request, uid):
         raise ValueError("Pioneer entitlement already exists")
     return sb_request("POST", "pioneer_entitlements", json={
