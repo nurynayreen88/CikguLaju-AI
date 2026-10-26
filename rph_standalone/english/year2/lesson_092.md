@@ -3,28 +3,31 @@
 **Unit:** The robot
 **Main SK/SP:** 2.1 / 2.1.4
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objective:** Pupils practise speaking 19 using language from The robot.
+**Learning objectives:** Pupils describe three robot actions and respond to two simple spoken instructions.
+**Success criteria:** three intelligible descriptions and two appropriate responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The robot with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a robot picture and invite actions.
+**Pupils:** Suggest two possible movements.
 
 ## Activity 1 — Model
-**Teacher:** Model the speaking 19 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model simple action phrases and responses to oral instructions.
+**Pupils:** Rehearse short phrases.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Organise pair information exchange using different robot action cards.
+**Pupils:** Describe three actions and respond to two instructions.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record three oral descriptions and two responses per pupil.
+**Pupils:** Demonstrate speaking individually.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review clear pronunciation and turn-taking.
+**Pupils:** Share one action phrase.
+
+**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
