@@ -3,28 +3,32 @@
 **Unit:** The old house
 **Main SK/SP:** 2.2 / 2.2.2
 **Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objective:** Pupils practise speaking 11 using language from The old house.
+**Learning objectives:** Pupils ask and answer at least three simple questions about a house picture with a partner and respond appropriately to at least two spoken prompts.
+**Success criteria:** 3 intelligible question-answer exchanges and 2 relevant listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The old house with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display two contrasting house pictures and elicit what pupils notice.
+**Pupils:** Name visible features and listen to a partner's description.
 
 ## Activity 1 — Model
-**Teacher:** Model the speaking 11 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model three simple question-answer exchanges using the pictures; demonstrate taking turns and asking for repetition politely.
+**Pupils:** Repeat the exchanges, then practise them with picture support.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Organise an information-gap task using two different teacher-prepared house pictures; circulate, prompt and record oral evidence.
+**Pupils:** Take turns asking three questions, answering from their picture and listening to their partner.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Use an individual checklist for three exchanges and two listening responses; note intelligibility and relevance, then reteach as needed.
+**Pupils:** Give individual oral responses to two prompts.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Invite pairs to demonstrate a short exchange and recap turn-taking.
+**Pupils:** Share one useful question.
+
+**Differentiation:** Support—question frames and picture choices; extension—ask a follow-up question.
+**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
