@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 5.1 / 5.1.1
 **Complementary SK/SP:** 5.1 / 5.1.2
-**Learning objective:** Pupils practise language arts 24 using language from The robot.
+**Learning objectives:** Pupils express two reactions to a short robot verse and perform three lines.
+**Success criteria:** two relevant reactions and three clear lines.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
