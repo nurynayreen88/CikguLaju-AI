@@ -4,7 +4,8 @@
 **Main SK/SP:** 4.3 / 4.3.1
 **Complementary SK/SP:** 3.2 / 3.2.4
 **Learning objective:** Pupils practise writing 5 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.69, pictures, word cards and classroom resources.
+**Audited source mapping:** Super Minds 1 Student's Book p.69 (page mapped in prior Year 2 SOW audit). Exact Teacher's Book steps not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce Free Time with a picture and two questions.
@@ -26,4 +27,4 @@
 **Teacher:** Recap the lesson and invite two pupils to demonstrate.
 **Pupils:** Share one thing learned.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**Source:** Prior Year 2 SOW mapping audit. **QA:** Preliminary teacher-developed RPH; activity-to-source alignment and A4 layout remain unverified.
