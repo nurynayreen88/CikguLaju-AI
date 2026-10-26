@@ -35012,7 +35012,7 @@ def _pi_safe_unicode_v2602(s):
     t=unicodedata.normalize('NFC',str(s or ''))
     # Strip BOM/object/replacement and bidi isolate/control chars only.
     bad={0xFEFF,0xFFFC,0xFFFD,0x25A1,0x25A0,
-         0x200B,0x200C,0x200D,0x2060,
+         0x200B,0x2060,  # preserve U+200C/U+200D Jawi shaping joiners
          0x202A,0x202B,0x202C,0x202D,0x202E,
          0x2066,0x2067,0x2068,0x2069}
     return ''.join(ch for ch in t if ord(ch) not in bad)
