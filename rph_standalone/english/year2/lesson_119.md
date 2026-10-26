@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 3.2 / 3.2.4
-**Learning objective:** Pupils practise listening 24 using language from The robot.
+**Learning objectives:** Pupils identify four of five spoken robot details and locate two related details in print.
+**Success criteria:** 4/5 correct choices and two relevant printed details.
 **Teaching materials:** Super Minds 1 Student's Book p.105, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.105 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
