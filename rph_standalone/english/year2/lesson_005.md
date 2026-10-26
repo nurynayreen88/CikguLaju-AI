@@ -1,29 +1,29 @@
-# English Year 2 — Lesson 5: Language Arts 1
+# English Year 2 — Lesson 5: Language Arts
 
 **Unit:** Free Time
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 1.2 / 1.2.1
-**Learning objective:** Pupils practise language arts 1 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Objective (draft):** Pupils perform a short rhyme with two actions.
+**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Show pictures connected to Free Time and elicit two words.
+**Pupils:** Name pictures and answer a question.
 
-## Activity 1 — Model
-**Teacher:** Model the language arts 1 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Read a short original rhyme with actions.
+**Pupils:** Follow the demonstration and respond once.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Pupils rehearse and perform the rhyme with a partner. Support pupils who need prompts.
+**Pupils:** Complete the task and share responses.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check whether each pupil can perform a short rhyme with two actions and note individual evidence.
+**Pupils:** Give one independent response.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Review two useful expressions.
+**Pupils:** Demonstrate one learned response.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA status:** DRAFT — Teacher's Book sequence and page references not verified; do not publish as final.

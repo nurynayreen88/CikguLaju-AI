@@ -1,29 +1,29 @@
-# English Year 2 — Lesson 2: Listening 1
+# English Year 2 — Lesson 2: Listening
 
 **Unit:** Free Time
 **Main SK/SP:** 1.2 / 1.2.1
 **Complementary SK/SP:** 2.1 / 2.1.1
-**Learning objective:** Pupils practise listening 1 using language from Free Time.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Objective (draft):** Pupils identify three words in a short spoken text.
+**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
-## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+## Set Induction (5 minutes)
+**Teacher:** Show pictures connected to Free Time and elicit two words.
+**Pupils:** Name pictures and answer a question.
 
-## Activity 1 — Model
-**Teacher:** Model the listening 1 task and check understanding.
-**Pupils:** Follow the model and respond.
+## Activity 1 — Modelling (7 minutes)
+**Teacher:** Read a short text twice, showing how to listen for a familiar word.
+**Pupils:** Follow the demonstration and respond once.
 
-## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+## Activity 2 — Guided practice (10 minutes)
+**Teacher:** Pupils listen and match three spoken details to picture cards. Support pupils who need prompts.
+**Pupils:** Complete the task and share responses.
 
-## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+## Assessment / PBD (5 minutes)
+**Teacher:** Check whether each pupil can identify three words in a short spoken text and note individual evidence.
+**Pupils:** Give one independent response.
 
-## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+## Closure (3 minutes)
+**Teacher:** Review two useful expressions.
+**Pupils:** Demonstrate one learned response.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA status:** DRAFT — Teacher's Book sequence and page references not verified; do not publish as final.
