@@ -16,7 +16,7 @@ UNVERIFIED = re.compile(
     r"SOW_MAPPED_ONLY|teacher-developed|teacher.s book.*(?:verify|review)|"
     r"\bDRAFT\b|proposed", re.I
 )
-SKSP = re.compile(r"\*\*(?:Main|Complementary) SK/SP[^\n]*\*\*:\s*\d+\.\d+\s*/\s*\d+\.\d+\.\d+", re.I)
+SKSP = re.compile(r"\*\*(?:Main|Complementary) SK/SP[^\n]*?:\*\*\s*\d+\.\d+\s*/\s*\d+\.\d+\.\d+", re.I)
 ACTIVITY = re.compile(r"^##\s+Activity\s*1\b", re.I | re.M)
 TEACHER_BOOK_EVIDENCE = re.compile(r"\*\*(?:Teacher.s Book (?:page|reference|steps)|TB page):\*\*\s*(?!not verified|pending|unknown)\S+", re.I)
 
