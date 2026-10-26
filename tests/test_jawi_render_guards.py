@@ -30,6 +30,16 @@ class JawiRenderGuards(unittest.TestCase):
         self.assertFalse(bold)  # bold wrapper does not cover the final line
         self.assertNotIn("ݢاليري", actual)
 
+    def test_jawi_activity_heading_is_marked_up(self):
+        node = latest_function("_rph_activity_heading_markup_v25184")
+        import re
+        from xml.sax.saxutils import escape
+        scope = {"re": re, "escape": escape}
+        exec(compile(ast.Module(body=[node], type_ignores=[]), "<jawi-heading>", "exec"), scope)
+        format_lines = scope["_rph_activity_heading_markup_v25184"]
+        sample = "اکتيۏيتي 1 – ممباچ\\nموريد ممباچ"
+        self.assertEqual(format_lines(sample), "<b>اکتيۏيتي 1 – ممباچ</b><br/>موريد ممباچ")
+
     def test_renderer_requires_raqm_without_silent_basic_fallback(self):
         node = latest_renderer()
         method = next(n for n in node.body if isinstance(n, ast.FunctionDef) and n.name == "_font")
