@@ -4,7 +4,8 @@
 **Main SK/SP:** 2.1 / 2.1.3
 **Complementary SK/SP:** 1.2 / 1.2.4
 **Learning objective:** Pupils practise speaking 28 using language from At the beach.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.113, pictures, word cards and classroom resources.
+**Audited source mapping:** Student's Book p.113 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction
 **Teacher:** Introduce At the beach with a picture and two questions.
