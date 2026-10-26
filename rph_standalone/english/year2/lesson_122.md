@@ -3,7 +3,8 @@
 **Unit:** The robot
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 4.2 / 4.2.4
-**Learning objective:** Pupils practise speaking 25 using language from The robot.
+**Learning objectives:** Pupils respond to three robot questions and write two short descriptions.
+**Success criteria:** three relevant oral answers and two understandable descriptions.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
