@@ -54,7 +54,7 @@ def install(ns):
         # Additional card is intentionally non-destructive to existing menu.
         try:
             status = ("🏆 Pioneer: AKTIF — seumur hidup" if has_pioneer(sb, cid)
-                      else "🏆 Pioneer Early Bird — RM10 sekali bayar")
+                      else "🏆 <b>PIONEER EARLY BIRD — RM10 SEKALI BAYAR</b>\\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\\n♾️ Akses Pioneer seumur hidup.")
             send(cid, status + "\n" + quota_text(),
                  [[{"text": "🏆 Pioneer RM10", "callback_data": "pioneer_join"}]])
         except Exception:
@@ -127,7 +127,7 @@ def install(ns):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
             count, remaining = pioneer_availability(sb)
             return send(cid, "🏆 <b>PIONEER EARLY BIRD CIKGULAJU — RM10 SEKALI SAHAJA</b>\n"
-                        "Tiada yuran bulanan atau tahunan. Terhad kepada 500 guru.\n" + quota_text() + "\n"
+                        "<b>Kelebihan Pioneer:</b>\\n✅ Bayar RM10 sekali sahaja.\\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\\n♾️ Akses Pioneer seumur hidup.\\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\\n\\nTerhad kepada 500 guru.\n" + quota_text() + "\n"
                         "Status Pioneer kekal walaupun sistem dikemas kini.",
                         [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
