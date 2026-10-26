@@ -4,7 +4,8 @@
 **Main SK/SP (existing mapping):** 1.2 / 1.2.2
 **Complementary SK/SP (existing mapping):** 3.1 / 3.1.1
 **Objective (draft):** Pupils can identify three spoken details.
-**Materials:** Topic pictures, word cards, exercise books; Teacher's Book pages unverified.
+**Materials:** Topic pictures, word cards and exercise books.
+**Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit; no textbook or Teacher's Book page is assigned. Exact SOW activity steps still require verification.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show two pictures related to Free Time and elicit vocabulary.
@@ -26,4 +27,4 @@
 **Teacher:** Recap two target expressions.
 **Pupils:** Share one learned response.
 
-**QA status:** DRAFT — Teacher's Book steps, pages and SK/SP mapping not verified. Do not publish.
+**QA status:** DRAFT — SOW SK/SP and non-textbook classification are mapped in the prior audit; detailed SOW task and alignment not yet verified. Do not publish.
