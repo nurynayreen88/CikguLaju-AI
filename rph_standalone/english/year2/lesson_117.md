@@ -17,11 +17,11 @@
 **Pupils:** Rehearse a sentence and response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use Student's Book p.104 as context for three teacher-designed sentences and two oral instructions.
+**Teacher (25 min):** Guide pupils to write three sentences and respond to both instructions.
 **Pupils:** Write three sentences and respond to two instructions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three sentences and two responses per pupil.
+**Teacher (10 min):** Record three sentences and two appropriate responses. Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +31,5 @@
 **QA:** Exact Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
