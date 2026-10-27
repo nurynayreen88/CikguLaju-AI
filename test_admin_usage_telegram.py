@@ -10,6 +10,14 @@ class AdminUsageTelegramTests(unittest.TestCase):
         self.assertFalse(is_admin(None, ['123']))
         self.assertFalse(is_admin(123, []))
 
+    def test_admin_id_matching_rejects_prefix_and_similar_values(self):
+        allowed_ids = ['123', '456']
+        for candidate in (1, 12, 1234, 4567, None, ''):
+            with self.subTest(candidate=candidate):
+                self.assertFalse(is_admin(candidate, allowed_ids))
+        self.assertTrue(is_admin(123, allowed_ids))
+        self.assertTrue(is_admin(456, allowed_ids))
+
     def test_non_admin_cannot_open_database(self):
         sent = []
         def forbidden_database():
