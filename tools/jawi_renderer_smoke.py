@@ -163,9 +163,15 @@ chain_scope["_pi2637_required_cps"]=lambda text:{
 chain_scope["_pi2639_prev_exact"]=effective_font
 exec(compile(ast.Module(body=[resolver_nodes[-1]],type_ignores=[]),
              "<real-v2639-resolver>","exec"),chain_scope)
-chain_scope["_pi_jawi_font_v2606"]=chain_scope["_pi_exact_jawi_font_v2604"]
+# Record calls to the actual resolver while rendering the full chain.
+actual_resolver=chain_scope["_pi_exact_jawi_font_v2604"]
+resolver_calls=[]
+def observed_resolver(text,bold=False):
+    resolver_calls.append((str(text),bool(bold)))
+    return actual_resolver(text,bold)
+chain_scope["_pi_jawi_font_v2606"]=observed_resolver
 # Preserve the extracted production resolver; never overwrite it with the substitute.
-assert chain_scope["_pi_jawi_font_v2606"] is chain_scope["_pi_exact_jawi_font_v2604"]
+assert chain_scope["_pi_exact_jawi_font_v2604"] is actual_resolver
 production_font_pdf=Path("jawi_renderer_12class_v2639_resolver_smoke.pdf")
 real_rows=[[FullChainRenderer("<b>"+samples[0]+"</b>",style)]]+[[FullChainRenderer(t,style)] for t in samples[1:]]
 real_table=Table(real_rows,colWidths=[470])
@@ -173,5 +179,6 @@ real_table.setStyle(TableStyle([("GRID",(0,0),(-1,-1),0.5,colors.grey)]))
 SimpleDocTemplate(str(production_font_pdf),pagesize=(595.28,841.89)).build([real_table])
 real_doc=fitz.open(production_font_pdf)
 assert len(real_doc)==1 and len(real_doc[0].get_image_info())>=4
+assert len(resolver_calls)>=len(samples), f"Expected real resolver for each sample, got {len(resolver_calls)}"
 print("12-CLASS CHAIN + real v26.39 resolver body (controlled font dependencies)",production_font_pdf)
 
