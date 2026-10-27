@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five details in a short teacher-read beach description and respond to two questions.
 **Success criteria:** four correct listening responses and two relevant answers.
 **Teaching materials:** Super Minds 1 Student's Book p.116, pictures, word cards and classroom resources.
+**Original listening script:** Sara is at the beach. She has a pink hat and a green bucket. She sees two boats on the sea. Her dad has a red ball. **Five details/key:** Sara; hat pink; bucket green; boats two; ball red. **Questions/key:** Where is Sara? At the beach. Who has the ball? Her dad.
+
 **Audited source mapping:** Student's Book p.116 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a textbook transcription. Verify official SOW/TB and A4/PDF before READY.
