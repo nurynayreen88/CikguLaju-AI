@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 3.2 / 3.2.3
-**Learning objective:** Pupils practise reading 27 using language from At the beach.
+**Learning objectives:** Pupils locate four of five details in a short beach paragraph and answer two questions.
+**Success criteria:** four correct detail responses and two supported answers.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
