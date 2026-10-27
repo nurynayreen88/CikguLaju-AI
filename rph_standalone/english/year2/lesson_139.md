@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils give three short beach descriptions and respond to two listening prompts.
 **Success criteria:** three intelligible descriptions and two relevant responses.
 **Teaching materials:** Super Minds 1 Student's Book p.113, pictures, word cards and classroom resources.
+**Original beach scene:** small crab, green bucket, red ball. **Descriptions:** The crab is small. The bucket is green. The ball is red. **Listening prompts/key:** Point to the green object (bucket). Which object is small? (crab).
+
 **Audited source mapping:** Student's Book p.113 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a verified textbook extract. Official SOW/TB and PDF/A4 checks pending. NOT READY.
