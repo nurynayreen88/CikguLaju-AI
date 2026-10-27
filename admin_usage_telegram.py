@@ -21,7 +21,7 @@ def format_usage_summary(stats):
         f"👥 Aktif 30 hari: <b>{int(stats['active_30d'])}</b>",
         '',
         f"✅ RPH berjaya: <b>{int(stats['rph_success'])}</b>",
-        f"❌ RPH gagal: <b>{int(stats['rph_failed'])}</b>",
+        '⚠️ RPH gagal: <i>Belum dijejak secara menyeluruh</i>',
         '',
         '<b>Subjek paling banyak dijana</b>',
     ]
