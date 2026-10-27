@@ -18,6 +18,11 @@ class AdminUsageTelegramTests(unittest.TestCase):
         self.assertTrue(is_admin(123, allowed_ids))
         self.assertTrue(is_admin(456, allowed_ids))
 
+    def test_admin_id_matching_does_not_accept_whitespace_in_request(self):
+        self.assertFalse(is_admin(' 123', ['123']))
+        self.assertFalse(is_admin('123 ', ['123']))
+        self.assertTrue(is_admin(123, [' 123 ']))
+
     def test_non_admin_cannot_open_database(self):
         sent = []
         def forbidden_database():
