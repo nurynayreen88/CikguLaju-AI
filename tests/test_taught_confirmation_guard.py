@@ -13,6 +13,22 @@ class GuardTests(unittest.TestCase):
         d.update(changes)
         return Confirmation(**d)
 
+    def test_invalid_object(self):
+        self.assertEqual(validate_confirmation(None).reason, "invalid_confirmation")
+
+    def test_truthy_string_flags_rejected(self):
+        self.assertEqual(validate_confirmation(self.make(calendar_verified="yes")).reason,
+                         "unverified_calendar_or_session")
+
+    def test_datetime_rejected(self):
+        from datetime import datetime
+        self.assertEqual(validate_confirmation(self.make(
+            session_date=datetime(2027, 3, 1, 8, 0))).reason, "invalid_session_date")
+
+    def test_boolean_school_year_rejected(self):
+        self.assertEqual(validate_confirmation(self.make(school_year=True)).reason,
+                         "invalid_school_year")
+
     def test_valid(self):
         self.assertTrue(validate_confirmation(self.make()).allowed)
 
