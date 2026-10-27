@@ -11,6 +11,12 @@ SOURCE = pathlib.Path(__file__).resolve().parents[1] / "app.py"
 def latest_function(name):
     tree = ast.parse(SOURCE.read_text(encoding="utf-8"))
     nodes = [node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name == name]
+    # Analytics wraps send_document after the trial gate; test the trial gate itself.
+    if name == "send_document":
+        nodes = [node for node in nodes if any(
+            isinstance(item, ast.Name) and item.id == "_RPH_SEND_DOCUMENT_BEFORE_20261027"
+            for item in ast.walk(node)
+        )]
     assert nodes, name
     return compile(ast.Module(body=[nodes[-1]], type_ignores=[]), str(SOURCE), "exec")
 

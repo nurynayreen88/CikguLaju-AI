@@ -5553,6 +5553,9 @@ def amount(cid, kind):
     send(cid,'🔢 <b>Berapa soalan cikgu perlukan?</b>',[[{'text':str(n),'callback_data':f'amt_{n}'} for n in (5,10,20,30)]])
 
 def callback(cid, d):
+    if d == 'admin_usage_stats':
+        from admin_usage_adapter import show_admin_usage
+        return show_admin_usage(cid, _is_admin, _db, send)
     if d == 'admin_panel':
         return _admin_panel(cid)
     if d.startswith('admin_list|'):
@@ -12097,6 +12100,7 @@ def _admin_panel(cid):
         kb=[
           [{'text':f'👥 PENGGUNA ({c["users"]})','callback_data':'admin_list|all|0'}],
           [{'text':f'💬 KOMEN & CADANGAN ({c["new_feedback"]})','callback_data':'admin_feedback|0'}],
+          [{'text':'📊 STATISTIK PENGGUNAAN','callback_data':'admin_usage_stats'}],
           [{'text':'🗄️ STATUS SISTEM','callback_data':'admin_system'}],
           [{'text':'🔄 REFRESH','callback_data':'admin_panel'},{'text':'🏠 KELUAR ADMIN','callback_data':'home'}]
         ]
@@ -46538,3 +46542,53 @@ def send_document(cid,path,caption=''):
 
 CIKGULAJU_RPH_TRIAL_SELECTED_20261027 = True
 # === END SELECTED RPH TRIAL GATE ===
+
+# === ADMIN USAGE DELIVERY METRICS 20261027 ===
+# Observability only: does not alter the established trial debit logic.
+_ADMIN_USAGE_SEND_DOCUMENT_BASE = send_document
+def send_document(cid, path, caption=''):
+    result = _ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)
+    if 'RPH' in str(caption or '').upper() and _telegram_delivery_ok_v25279(result):
+        try:
+            from admin_usage_stats import initialize, record_confirmed_delivery
+            response = result.json()
+            message_id = (response.get('result') or {}).get('message_id')
+            if message_id is not None:
+                con = _db()
+                try:
+                    initialize(con)
+                    ss = state.get(cid) or {}
+                    record_confirmed_delivery(
+                        con, cid, message_id,
+                        subject=str(ss.get('subject') or '') or None,
+                        grade=str(ss.get('year') or '') or None)
+                finally:
+                    con.close()
+        except Exception as exc:
+            print('ADMIN USAGE METRIC WARNING:', repr(exc), flush=True)
+    return result
+# === END ADMIN USAGE DELIVERY METRICS ===
+
+# === ADMIN USAGE ACTIVITY METRICS 20261027 ===
+# Wrap the final webhook route, preserving existing Telegram processing.
+_ADMIN_USAGE_WEBHOOK_BASE = app.view_functions.get('webhook')
+if _ADMIN_USAGE_WEBHOOK_BASE is not None:
+    def _admin_usage_webhook():
+        try:
+            update = request.get_json(silent=True) or {}
+            payload = update.get('callback_query') or update.get('message') or {}
+            actor = payload.get('from') or {}
+            user_id = actor.get('id')
+            if user_id is not None:
+                from admin_usage_stats import initialize, record_daily_active
+                connection = _db()
+                try:
+                    initialize(connection)
+                    record_daily_active(connection, user_id)
+                finally:
+                    connection.close()
+        except Exception as exc:
+            print('ADMIN USAGE ACTIVITY WARNING:', repr(exc), flush=True)
+        return _ADMIN_USAGE_WEBHOOK_BASE()
+    app.view_functions['webhook'] = _admin_usage_webhook
+# === END ADMIN USAGE ACTIVITY METRICS ===

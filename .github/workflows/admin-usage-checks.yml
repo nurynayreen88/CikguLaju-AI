@@ -1,0 +1,19 @@
+name: Admin usage checks
+on:
+  pull_request:
+    paths:
+      - 'admin_usage_*.py'
+      - 'app.py'
+      - 'tests/test_admin_usage_integration_20261027.py'
+      - 'test_admin_usage_*.py'
+      - '.github/workflows/admin-usage-checks.yml'
+  workflow_dispatch:
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest -v test_admin_usage_stats test_admin_usage_telegram tests.test_admin_usage_integration_20261027
