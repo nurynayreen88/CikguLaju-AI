@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer a question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model locating a clue in a short illustrated text.
+**Teacher:** Model recognising printed activity words and reading a short phrase aloud.
 **Pupils:** Follow the demonstration and respond once.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils underline key words and answer two comprehension questions. Support pupils who need prompts.
-**Pupils:** Complete the task and share responses.
+**Teacher:** Guide four word identifications and two phrase readings with word cards.
+**Pupils:** Identify four words and read two phrases.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
