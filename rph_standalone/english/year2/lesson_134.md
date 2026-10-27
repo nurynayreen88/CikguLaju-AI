@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils write three legible beach sentences and give two oral descriptions.
 **Success criteria:** three legible sentences and two relevant descriptions.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original beach scene:** two children, one red kite, three shells. **Model sentences:** Two children are at the beach. The kite is red. There are three shells. **Oral questions/key:** What colour is the kite? Red. How many shells? Three.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original teacher-created resource. Official SOW and PDF/A4 checks pending. NOT READY.
