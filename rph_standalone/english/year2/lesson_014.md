@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer one question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model a sentence with capital letter and full stop.
+**Teacher:** Use page 64 as the mapped resource and model two punctuated sentences; add two teacher-spoken activity cues.
 **Pupils:** Observe and give one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils write two sentences from pictures and correct one error. Provide feedback and support.
-**Pupils:** Practise and share answers.
+**Teacher:** Guide writing two sentences and identifying two spoken activities.
+**Pupils:** Write two sentences and identify two spoken activities.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
