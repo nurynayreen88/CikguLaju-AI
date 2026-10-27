@@ -38,3 +38,5 @@ I play with friends and have some fun.”
 **Pupils:** Listen and share one activity they heard.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — original model, frames and performance criteria included. Official SOW alignment and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
