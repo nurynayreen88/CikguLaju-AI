@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils perform a four-line beach rhyme and create two original descriptive lines.
 **Success criteria:** four expressive lines and two meaningful original lines.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original four-line rhyme:** The sun is warm, the sky is blue / I build a castle, how about you? / The waves roll in and touch my feet / A day at the beach is such a treat! **Two new-line frames:** I can see ____. I like ____.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a textbook transcription. Verify official SOW/TB and A4/PDF before READY.
