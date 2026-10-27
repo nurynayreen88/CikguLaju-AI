@@ -1,34 +1,35 @@
 # English Year 2 — Lesson 57: Speaking 12
 
-**Unit:** Get dressed!
-**Main SK/SP:** 2.1 / 2.1.2
-**Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objectives:** Pupils describe at least three clothing items in short, intelligible phrases and respond appropriately to at least two partner questions.
-**Success criteria:** Three understandable clothing descriptions and two relevant oral answers.
-**Teaching materials:** Super Minds 1 Student's Book p.83, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.83 (Year 2 SOW mapping audit); exact Teacher's Book sequence not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
+**Duration:** 60 minutes  
+**Mapped resource:** Super Minds 1 Student's Book SB p.83. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
+**Objective:** Pupils describe three clothing items and respond to two questions.  
+**Success criteria:** Achieve the measurable targets stated in the objective.  
+**Materials:** Student's Book, board, picture/word cards and resources below.
+
+**Picture A:** blue shirt, black trousers, white shoes. **Picture B:** red dress, yellow hat, green shoes.
+**Original dialogue:** “What are you wearing?” “I'm wearing a blue shirt.” “What colour are your shoes?” “They are white.” **Speaking frames:** “I'm wearing ____.” “My ____ is/are ____.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display two clothing pictures and ask pupils to name the items.
-**Pupils:** Identify familiar clothing and colours.
+**Teacher:** Display relevant picture cards, elicit familiar words and ask one prediction.  
+**Pupils:** Name two words and make a prediction.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Use Student's Book p.83 as the source context, model short descriptions and two simple question-answer exchanges, and check comprehension.
-**Pupils:** Repeat and practise short descriptions with picture cues.
+**Teacher:** Model the original dialogue using picture A, stressing colours and singular/plural words.  
+**Pupils:** Follow the model and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise paired picture-description exchanges; rotate partners and prompt pupils to listen before answering.
-**Pupils:** Describe three items and answer two questions from a partner.
+**Teacher:** Pairs select picture A or B and give three clothing descriptions, then ask and answer two questions before switching roles.  
+**Pupils:** Complete the task, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Use an individual checklist for three descriptions and two answers; record intelligibility and relevance, and give corrective feedback.
-**Pupils:** Give two oral answers individually for PBD evidence.
+**Teacher:** Listen for three intelligible clothing descriptions and two relevant individual answers. Note prompts required.  
+**Pupils:** Respond individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Invite one pair to demonstrate and review useful phrases.
-**Pupils:** Say one clothing description.
+**Teacher:** Recap two useful words and one lesson skill.  
+**Pupils:** Share one correct example.
 
-**Differentiation:** Support—word bank and sentence frames; extension—give an additional descriptive detail.
-**QA:** Teacher-designed adaptation; exact Student's Book task and Teacher's Book sequence not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Complete teacher-developed standalone draft; exact Teacher's Book/SOW alignment and PDF/A4 checks pending. Not READY.
