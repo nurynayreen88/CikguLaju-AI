@@ -5,7 +5,7 @@
 **Complementary SK/SP:** 2.1 / 2.1.1
 **Learning objectives (draft):** Pupils identify four free-time activities from five spoken clues and answer one oral question.
 **Success criteria (draft):** Four correct picture choices and one relevant answer.
-**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
+**Materials:** Pictures, word cards and teacher-developed task materials. SOW classification: non-textbook; no Student's Book page assigned.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures connected to Free Time and elicit two words.
