@@ -1,5 +1,7 @@
 name: Jawi PDF renderer regression
 on:
+  pull_request:
+    branches: [main]
   push:
     branches:
       - fix/jawi-render-regression-20261026
