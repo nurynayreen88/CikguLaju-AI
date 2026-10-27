@@ -1,33 +1,36 @@
 # English Year 2 — Lesson 81: Listening 17
 
 **Unit:** Get dressed!
-**Main SK/SP:** 1.3 / 1.3.1
-**Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives:** Pupils identify the main idea of a short spoken outfit description and give two relevant responses.
-**Success criteria:** one correct main-idea choice and two appropriate oral answers.
-**Teaching materials:** pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed task procedure not verified.
+**Main SK/SP (SOW check pending):** 1.3 / 1.3.1
+**Complementary SK/SP (SOW check pending):** 2.1 / 2.1.5
+**Duration:** 60 minutes
+**Source:** NON-TEXTBOOK. Original teacher-created script.
+**Objective:** Identify the main idea of a spoken outfit description and give two oral answers.
+**Success criteria:** One correct main-idea choice and two relevant answers.
+**Materials:** Outfit cards, question cards and script below.
+
+**Original listening script:** “Today is sports day. Dan is wearing a blue T-shirt, black shorts and white trainers. He is ready to run with his friends.”
+**Main-idea choices/key:** A Getting dressed for sports day (correct); B Cooking dinner; C Visiting a museum.
+**Oral questions/key:** “What colour is Dan's T-shirt?” — blue. “What is Dan ready to do?” — run.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show two outfit pictures and invite predictions.
-**Pupils:** Predict the topic.
+**Teacher:** Show two outfits and ask which is suitable for sports day.
+**Pupils:** Predict the listening topic.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model listening for the overall message of a teacher-created outfit description.
-**Pupils:** Listen and select a matching picture.
+## Activity 1 — Model listening (15 minutes)
+**Teacher:** Read the original script twice; model choosing the overall topic from key words.
+**Pupils:** Identify the words *sports day* and *run*.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read a short labelled teacher-created description twice and ask one main-idea and two follow-up questions.
-**Pupils:** Listen, select the main idea and respond individually.
+## Activity 2 — Listen and respond (25 minutes)
+**Teacher:** Read the script again, ask pupils to choose A/B/C and answer both questions, then guide paired discussion of evidence.
+**Pupils:** Select the main idea and answer orally.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record the main-idea choice and two oral responses per pupil.
-**Pupils:** Give individual listening evidence.
+**Teacher:** Record each pupil's independent main-idea choice and two spoken answers.
+**Pupils:** Respond individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review key clues for main ideas.
-**Pupils:** Name one clue heard.
+**Teacher:** Review how key words reveal a main idea.
+**Pupils:** Share one listening clue.
 
-**QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; official SOW and PDF/A4 verification pending. NOT READY.
