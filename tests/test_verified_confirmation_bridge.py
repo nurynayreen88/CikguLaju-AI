@@ -38,6 +38,12 @@ class VerifiedConfirmationBridgeTests(unittest.TestCase):
         self.assertEqual(check_verified_taught_action(**kw, explicit_action=True),
                          (False, "unverified_session"))
 
+    def test_inconsistent_eligibility_rejected(self):
+        kw = self.kw | {"eligibility": Eligibility(True, "blocked",
+                                                   self.eligibility.session)}
+        self.assertEqual(check_verified_taught_action(**kw, explicit_action=True),
+                         (False, "unverified_session"))
+
     def test_wrong_teacher_rejected(self):
         kw = self.kw | {"teacher_id": 456}
         self.assertEqual(check_verified_taught_action(**kw, explicit_action=True),
