@@ -145,14 +145,14 @@ full_doc=fitz.open(full_pdf)
 assert len(full_doc)==1 and len(full_doc[0].get_image_info())>=4
 print("FULL 12-CLASS CHAIN smoke with SUBSTITUTE HELPERS",full_pdf,full_pdf.stat().st_size)
 
-# Integration of the ACTUAL final v26.39 font resolver and its direct
-# v26.37 helpers. Network fallback is disabled deliberately: CI must prove
-# the installed font covers every glyph without depending on an HTTP fetch.
+# Additional installed-font coverage smoke. This still uses a substitute
+# resolver, NOT the actual v26.39 function; the latter is tested separately
+# by tests/test_pi_jawi_v2639_font_resolver.py.
 def effective_font(text,bold=False):
     return font_path(text,bold)
 chain_scope["_pi_jawi_font_v2606"]=effective_font
 chain_scope["_pi_exact_jawi_font_v2604"]=effective_font
-production_font_pdf=Path("jawi_renderer_12class_real_font_smoke.pdf")
+production_font_pdf=Path("jawi_renderer_12class_installed_font_smoke.pdf")
 real_rows=[[FullChainRenderer("<b>"+samples[0]+"</b>",style)]]+[[FullChainRenderer(t,style)] for t in samples[1:]]
 real_table=Table(real_rows,colWidths=[470])
 real_table.setStyle(TableStyle([("GRID",(0,0),(-1,-1),0.5,colors.grey)]))
