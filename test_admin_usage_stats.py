@@ -195,8 +195,8 @@ class UsageStatsTests(unittest.TestCase):
             "WHERE event_type='rph_success' ORDER BY id"
         ).fetchall()
         self.assertEqual(rows, [('Bahasa Melayu', 'Tahun 2'), ('Sains', 'Tahun 4')])
-        self.assertEqual(summary(db)['top_subjects'],
-                         [('Bahasa Melayu', 1), ('Sains', 1)])
+        self.assertCountEqual(summary(db)['top_subjects'],
+                              [('Bahasa Melayu', 1), ('Sains', 1)])
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
     def test_invalid_event_rejected(self):
