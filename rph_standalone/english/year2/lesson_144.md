@@ -4,7 +4,7 @@
 **Main SK/SP:** 4.3 / 4.3.1
 **Complementary SK/SP:** 4.3 / 4.3.2
 **Learning objectives:** Pupils form four legible beach words and write two short sentences.
-**Success criteria:** four correctly formed words and two understandable sentences.
+**Success criteria:** Four legible words and two understandable sentences with initial capitals, correct word spacing and full stops.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original writing resource:** Four target words: sand, shell, bucket, sea. Picture prompt: a yellow shell and a red bucket on sand. Sentence models: The shell is yellow. The bucket is red. **Answer guide:** Each word is correctly formed; each sentence has capital letter, word spacing and full stop.
 
@@ -15,7 +15,7 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model letter formation and sentence spacing with beach vocabulary.
+**Teacher (15 min):** Model letter formation and sentence spacing, showing the initial capital and final full stop in each model sentence.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Write four words and two sentences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check four legible words and two understandable sentences for each pupil.
+**Teacher (10 min):** Check each pupil's four legible words and two sentences for correct capitals, word spacing and full stops.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
