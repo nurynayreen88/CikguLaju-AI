@@ -94,7 +94,8 @@ def record_daily_active(connection, user_id, when=None):
     stamp = (when or datetime.now(timezone.utc)).isoformat()
     day = stamp[:10]
     with connection:
-        connection.execute('BEGIN IMMEDIATE')
+        if not connection.in_transaction:
+            connection.execute('BEGIN IMMEDIATE')
         inserted = connection.execute(
             "INSERT INTO admin_usage_events "
             "(telegram_user_id,event_type,subject,grade,created_at) "
