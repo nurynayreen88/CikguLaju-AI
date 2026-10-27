@@ -31,6 +31,8 @@ class Decision:
 
 
 def validate_confirmation(c: Confirmation) -> Decision:
+    if not isinstance(c, Confirmation):
+        return Decision(False, "invalid_confirmation")
     if not all((str(c.teacher_id).strip(), str(c.class_id).strip(),
                 str(c.subject_id).strip(), str(c.session_instance_id).strip())):
         return Decision(False, "missing_identity")
