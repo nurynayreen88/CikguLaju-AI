@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five spoken free-time activities and respond to two short prompts.
 **Success criteria:** four correct choices and two relevant responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original five free-time cards:** reading, drawing, cycling, singing, playing football. **Teacher-read order/key:** drawing, singing, reading, playing football, cycling. **Two questions:** What do you like doing? What do you do after school? Accept relevant answers.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
