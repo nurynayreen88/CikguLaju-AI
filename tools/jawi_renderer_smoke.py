@@ -145,9 +145,8 @@ full_doc=fitz.open(full_pdf)
 assert len(full_doc)==1 and len(full_doc[0].get_image_info())>=4
 print("FULL 12-CLASS CHAIN smoke with SUBSTITUTE HELPERS",full_pdf,full_pdf.stat().st_size)
 
-# Additional installed-font coverage smoke. This still uses a substitute
-# resolver, NOT the actual v26.39 function; the latter is tested separately
-# by tests/test_pi_jawi_v2639_font_resolver.py.
+# Full renderer class chain with actual v26.39 resolver body, using
+# controlled dependencies for font discovery and text cleanup.
 def effective_font(text,bold=False):
     return font_path(text,bold)
 # Use the real final v26.39 function body with deterministic installed-font
@@ -165,7 +164,8 @@ chain_scope["_pi2639_prev_exact"]=effective_font
 exec(compile(ast.Module(body=[resolver_nodes[-1]],type_ignores=[]),
              "<real-v2639-resolver>","exec"),chain_scope)
 chain_scope["_pi_jawi_font_v2606"]=chain_scope["_pi_exact_jawi_font_v2604"]
-chain_scope["_pi_exact_jawi_font_v2604"]=effective_font
+# Preserve the extracted production resolver; never overwrite it with the substitute.
+assert chain_scope["_pi_jawi_font_v2606"] is chain_scope["_pi_exact_jawi_font_v2604"]
 production_font_pdf=Path("jawi_renderer_12class_v2639_resolver_smoke.pdf")
 real_rows=[[FullChainRenderer("<b>"+samples[0]+"</b>",style)]]+[[FullChainRenderer(t,style)] for t in samples[1:]]
 real_table=Table(real_rows,colWidths=[470])
