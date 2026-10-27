@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils locate four of five explicit details on Student's Book p.102 and write two factual answers.
 **Success criteria:** 4/5 accurate details and two supported written answers.
 **Teaching materials:** Super Minds 1 Student's Book p.102, pictures, word cards and classroom resources.
+
+**Teacher-created standalone resource (not verified textbook content):** **Original alternative passage (not SB p.102 text):** Bolt is a friendly robot in the garden. It has a blue body, two long arms and four small wheels. Bolt waters the flowers every morning. **Five details/key:** name Bolt, place garden, body blue, arms two, wheels four. **Written questions/key:** What does Bolt water? The flowers. When? Every morning.
 **Audited source mapping:** Student's Book p.102 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Set five page-grounded detail prompts and two short written questions.
+**Teacher (25 min):** Pupils underline five details in the original passage and write two answers; retain SB p.102 as an unverified resource mapping.
 **Pupils:** Underline evidence and write two answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check five details and two supported written answers. Note individual support required.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Exact SOW and Teacher's Book steps not verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**Verification status:** Official SOW, TB where mapped, and PDF/A4 QA pending. NOT READY.
