@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping):** 2.1 / 2.1.2
 **Learning objectives (draft):** Pupils ask and answer two simple free-time questions in paired exchanges.
 **Success criteria (draft):** Two intelligible questions and two relevant answers.
-**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
+**Materials:** Super Minds 1 Student's Book p.61 (SOW mapping), topic pictures, word cards and exercise books. Teacher's Book sequence unverified.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show two pictures related to Free Time and elicit familiar words.
