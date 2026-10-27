@@ -44085,12 +44085,20 @@ def _pi_exact_jawi_font_v2604(text,bold=False):
     p=_pi2639_exact_font(text,bold)
     if p:
         return p
-    # Keep generation alive, but explicitly flag that exact font is unavailable.
-    # Never rewrite/substitute Jawi characters.
+    # A partial font would create missing-glyph boxes in the PDF. The final
+    # v26.06 Flowable rejects incomplete coverage anyway; fail here with a
+    # precise diagnostic instead of returning a known-broken fallback.
     p=_pi2638_best_nonfatal_font(text,bold)
     if p:
-        return p
-    return _pi2639_prev_exact(text,bold)
+        missing=sorted(_pi2637_required_cps(text)-_font_cmap_v25226(p))
+        if not missing:
+            return p
+        raise RuntimeError(
+            'PI Jawi font coverage incomplete: '
+            + ', '.join(f'U+{cp:04X}' for cp in missing)
+            + '; best available font: ' + str(p)
+        )
+    raise RuntimeError('PI Jawi font unavailable: no usable font found')
 
 def _pi_jawi_font_v2606(text,bold=False):
     return _pi_exact_jawi_font_v2604(text,bold)
