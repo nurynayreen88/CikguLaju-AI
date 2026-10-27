@@ -17,7 +17,7 @@ jobs:
       - name: Install minimal audit dependencies
         run: python -m pip install pillow fonttools pymupdf
       - name: Compile application and Jawi utilities without importing app
-        run: python -m py_compile app.py tools/jawi_font_runs.py tools/check_rph_pdf_layout.py
+        run: python -m py_compile app.py tools/jawi_font_runs.py tools/check_rph_pdf_layout.py tools/validate_pi_standalone_bank.py tools/audit_pi_jawi_renderer_chain.py tools/jawi_renderer_smoke.py
       - name: Audit full Jawi renderer class override chain
         run: python tools/audit_pi_jawi_renderer_chain.py
       - name: Run standalone Jawi regression tests
