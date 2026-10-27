@@ -3,8 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 2.3 / 2.3.1
-**Learning objectives:** Pupils perform four lines of a beach dialogue with clear expression.
-**Success criteria:** four intelligible lines with suitable expression.
+**Learning objectives:** Pupils rehearse four expressive dialogue lines and introduce themselves and a partner.
+**Success criteria:** Four intelligible lines with expression and one clear self-and-partner introduction.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original four-line dialogue:** A: Look at the blue sea! B: I can see a small boat. A: Shall we build a sandcastle? B: Yes, let's build one! **Performance cues:** pause at punctuation, speak clearly, show excitement on final line.
 
