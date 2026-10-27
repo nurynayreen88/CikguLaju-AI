@@ -3,7 +3,8 @@
 **Unit:** Get dressed
 **Main SK/SP:** 3.2 / 3.2.3
 **Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objective:** Pupils practise reading 32 using language from Get dressed.
+**Learning objectives:** Pupils read four clothing sentences and identify three stated details.
+**Success criteria:** Four intelligible sentences and three correct detail responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
