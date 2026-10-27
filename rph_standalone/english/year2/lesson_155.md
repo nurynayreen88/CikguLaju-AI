@@ -15,15 +15,15 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a short teacher-created beach dialogue.
+**Teacher (15 min):** Model the four-line teacher-created dialogue with clear pauses, intonation and expressive delivery.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide rehearsal and paired expressive performance.
+**Teacher (25 min):** Assign roles A and B, guide paired rehearsal, then have pupils exchange roles so each pupil speaks all four lines.
 **Pupils:** Perform four dialogue lines.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Observe each pupil delivering four intelligible lines with suitable expression and record individual performance evidence.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
