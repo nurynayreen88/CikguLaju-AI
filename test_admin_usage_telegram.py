@@ -1,4 +1,5 @@
 import unittest
+import sqlite3
 from admin_usage_telegram import format_usage_summary, is_admin
 from admin_usage_adapter import show_admin_usage
 
@@ -18,6 +19,18 @@ class AdminUsageTelegramTests(unittest.TestCase):
             lambda cid, message, **kwargs: sent.append(message))
         self.assertFalse(allowed)
         self.assertIn('hanya untuk admin', sent[0])
+
+    def test_admin_summary_navigation(self):
+        sent = []
+        def db_factory():
+            return sqlite3.connect(':memory:')
+        allowed = show_admin_usage(
+            42, lambda cid: cid == 42, db_factory,
+            lambda cid, message, **kwargs: sent.append((message, kwargs)))
+        self.assertTrue(allowed)
+        self.assertIn('STATISTIK ADMIN', sent[0][0])
+        self.assertEqual(
+            sent[0][1]['kb'][1][0]['callback_data'], 'admin_panel')
 
     def test_html_escaped_and_zero_stats(self):
         stats = dict(active_today=1, active_7d=2, active_30d=3,
