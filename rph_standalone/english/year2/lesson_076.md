@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.88, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.88 (Year 2 audit); exact Teacher's Book steps not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show the page illustration and ask pupils to predict the topic.
 **Pupils:** Predict one idea using picture clues.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model finding one printed detail on p.88 without assuming unverified text.
 **Pupils:** Point to the supporting printed evidence.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Set five detail-finding prompts grounded in the actual page and two factual questions; guide rereading.
 **Pupils:** Read independently or with support, locate details and answer questions.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five individual detail responses and two comprehension answers.
 **Pupils:** Submit answers with evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review how to find an answer in a text.
 **Pupils:** Share one fact found.
 
