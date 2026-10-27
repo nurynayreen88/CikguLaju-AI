@@ -16,7 +16,8 @@ class StableBridgeTests(unittest.TestCase):
             teacher_id=123, school_year=2027, session_date=date(2027, 3, 1),
             row=self.row, lesson_total=160,
             registry={(123, 2027, "5 Amanah"): CLASS_ID},
-            evidence=self.evidence, subject_key="EN")
+            evidence=self.evidence, subject_key="EN",
+            subject_mapping={"English": "EN"})
 
     def test_valid(self):
         allowed, reason, session = verified_stable_session(**self.kw)
@@ -30,6 +31,18 @@ class StableBridgeTests(unittest.TestCase):
         renamed["registry"] = {(123, 2027, "5 Cemerlang"): CLASS_ID}
         second = verified_stable_session(**renamed)[2]
         self.assertEqual(first.session_id, second.session_id)
+
+    def test_subject_mapping_missing_blocked(self):
+        kw = self.kw | {"subject_mapping": None}
+        allowed, reason, _ = verified_stable_session(**kw)
+        self.assertFalse(allowed)
+        self.assertEqual(reason, "unverified_subject_mapping")
+
+    def test_subject_mapping_mismatch_blocked(self):
+        kw = self.kw | {"subject_mapping": {"English": "BM"}}
+        allowed, reason, _ = verified_stable_session(**kw)
+        self.assertFalse(allowed)
+        self.assertEqual(reason, "subject_mapping_mismatch")
 
     def test_unknown_class_blocked(self):
         kw = self.kw | {"registry": {}}
