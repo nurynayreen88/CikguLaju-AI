@@ -17,11 +17,11 @@
 **Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Present five teacher-created spoken descriptions and two page-based prompts.
+**Teacher (25 min):** Read the original spoken description twice; pupils choose five details and find two in the supplementary printed support.
 **Pupils:** Choose five answers and locate two printed details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check five listening choices and two printed details. Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +31,5 @@
 **QA:** Exact SOW and Teacher's Book procedures not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
