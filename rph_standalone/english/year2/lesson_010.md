@@ -5,7 +5,7 @@
 **Complementary SK/SP:** 2.1 / 2.1.3
 **Learning objectives (draft):** Pupils perform a short teacher-created free-time rhyme with two actions and give two short oral responses.
 **Success criteria (draft):** Two coordinated actions and two relevant oral responses.
-**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
+**Materials:** Pictures, word cards and teacher-developed task materials. SOW classification: non-textbook; no Student's Book page assigned.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures connected to Free Time and elicit two words.
