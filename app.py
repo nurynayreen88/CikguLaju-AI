@@ -3235,6 +3235,49 @@ def _create_rph_word(doc, section, s, ai_text, path):
     add_row(t3,'Pemulihan / Pengayaan',rph.get('PEMULIHAN / PENGAYAAN',''))
     add_row(t3,'Refleksi',rph.get('REFLEKSI','') or '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________')
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
+    # Compact RPH Word tables while preserving complete lesson activities.
+    from docx.enum.table import WD_ROW_HEIGHT_RULE
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    section.page_height = Cm(29.7)
+    section.page_width = Cm(21.0)
+    section.top_margin = Cm(0.9)
+    section.bottom_margin = Cm(0.9)
+    section.header_distance = Cm(0.35)
+    section.footer_distance = Cm(0.35)
+    normal = doc.styles['Normal']
+    normal.font.size = Pt(9)
+    normal.paragraph_format.space_before = Pt(0)
+    normal.paragraph_format.space_after = Pt(0)
+    normal.paragraph_format.line_spacing = 1.0
+    for tbl in doc.tables:
+        tbl.autofit = False
+        for row in tbl.rows:
+            row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
+            for cell in row.cells:
+                tcPr = cell._tc.get_or_add_tcPr()
+                mar = tcPr.find(qn('w:tcMar'))
+                if mar is None:
+                    mar = OxmlElement('w:tcMar'); tcPr.append(mar)
+                for side in ('top','bottom','left','right'):
+                    node = mar.find(qn('w:'+side))
+                    if node is None:
+                        node = OxmlElement('w:'+side); mar.append(node)
+                    node.set(qn('w:w'), '35' if side in ('top','bottom') else '65')
+                    node.set(qn('w:type'), 'dxa')
+                for para in cell.paragraphs:
+                    para.paragraph_format.space_before = Pt(0)
+                    para.paragraph_format.space_after = Pt(0)
+                    para.paragraph_format.line_spacing = 1.0
+                    for run in para.runs:
+                        run.font.size = Pt(9)
+    # Allocate the majority of the activity table to lesson instructions.
+    t2.columns[0].width = Cm(2.5)
+    t2.columns[1].width = Cm(11.9)
+    t2.columns[2].width = Cm(3.4)
+    for row in t2.rows:
+        for cell, width in zip(row.cells, (Cm(2.5), Cm(11.9), Cm(3.4))):
+            cell.width = width
     doc.save(path); return path
 
 def create_word_file(s, ai_text, cid):
