@@ -36,3 +36,5 @@
 **Pupils:** Say one accurate house sentence.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — usable standalone prompts and keys included; TB procedure, official SOW alignment and A4/PDF QA pending. Do not mark READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
