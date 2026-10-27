@@ -3,8 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 2.1 / 2.1.1
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives:** Pupils give three beach-related personal responses and ask two simple questions.
-**Success criteria:** three relevant answers and two intelligible questions.
+**Learning objectives:** Pupils give three beach-related personal responses, ask two simple questions and describe one beach object.
+**Success criteria:** Three relevant answers, two intelligible questions and one clear object description.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original personal prompts:** What do you like doing at the beach? What do you take? Who do you go with? **Model responses:** I like swimming. I take a bucket. I go with Mum. **Pupil questions:** Do you like swimming? What do you take?
 
@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Model turn-taking, then guide pairs through three personal prompts and two questions. Ask each pupil to describe one beach object using a familiar adjective.
-**Pupils:** Give three responses and ask two questions.
+**Pupils:** Give three responses, ask two questions and describe one beach object using a familiar adjective.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's three relevant responses, two intelligible questions and one clear object description.
