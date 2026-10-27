@@ -128,6 +128,16 @@ class AdminUsageTelegramTests(unittest.TestCase):
         self.assertIn('&lt;script&gt;', output)
         self.assertIn('&amp; Bahasa', output)
 
+    def test_empty_usage_summary_is_readable(self):
+        stats = dict(active_today=0, active_7d=0, active_30d=0,
+                     rph_success=0, top_subjects=[])
+        output = format_usage_summary(stats)
+        self.assertIn('STATISTIK ADMIN', output)
+        self.assertIn('Aktif hari ini: <b>0</b>', output)
+        self.assertIn('RPH berjaya: <b>0</b>', output)
+        self.assertIn('Tiada rekod lagi.', output)
+        self.assertIn('Belum dijejak secara menyeluruh', output)
+
     def test_html_escaped_and_zero_stats(self):
         stats = dict(active_today=1, active_7d=2, active_30d=3,
                      rph_success=4, rph_failed=0,
