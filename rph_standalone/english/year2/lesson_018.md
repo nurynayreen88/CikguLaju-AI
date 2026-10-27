@@ -12,19 +12,19 @@
 **Teacher:** Display two pictures linked to Free Time and elicit familiar words.
 **Pupils:** Name the pictures and give one oral response.
 
-## Activity 1 — Demonstration (7 minutes)
+## Activity 1 — Demonstration (15 minutes)
 **Teacher:** Model reading four short sentences and finding one key word.
 **Pupils:** Observe and complete one supported example.
 
-## Activity 2 — Guided and independent practice (10 minutes)
+## Activity 2 — Guided and independent practice (25 minutes)
 **Teacher:** Pupils read, underline clues and answer two questions independently. Provide corrective feedback where needed.
 **Pupils:** Complete the task and correct one error.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check two responses against words in the text. Record individual evidence.
+## Assessment / PBD (10 minutes)
+**Teacher:** Record each pupil's independent evidence against both success criteria.
 **Pupils:** Show their own completed work.
 
-## Closure (3 minutes)
+## Closure (5 minutes)
 **Teacher:** Revisit two key words and summarise the skill.
 **Pupils:** Share one correct example.
 
