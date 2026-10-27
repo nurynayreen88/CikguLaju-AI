@@ -39,3 +39,5 @@ Sunday, Sunday, swim — what fun I like!”
 **Pupils:** Name a favourite activity and recite together.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — all rhyme text, actions and listening cues included. Official SOW task/SK/SP alignment and A4/PDF QA remain pending. Do not publish as READY.
+
+**QA status:** NOT READY — five phases total 60 minutes; official SOW/Teacher's Book alignment and rendered A4 PDF still require verification.
