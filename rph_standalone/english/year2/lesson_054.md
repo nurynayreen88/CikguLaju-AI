@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a house picture and elicit three familiar words for a class word bank.
 **Pupils:** Name features and suggest words for the board.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Demonstrate building a short sentence from picture and word prompts; highlight capital letter, spacing and full stop.
 **Pupils:** Arrange word cards into a sentence and copy the corrected model.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give a new house picture and a word bank; guide pupils to plan and write three sentences, then exchange work for a simple peer check.
 **Pupils:** Write three sentences independently, check spacing and punctuation, and revise one sentence.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Check each pupil's three sentences for meaning, spacing and sentence punctuation; record at least two successful sentences and give targeted feedback.
 **Pupils:** Submit writing and improve one sentence after feedback.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review a model sentence and invite pupils to share one written idea.
 **Pupils:** Read one sentence aloud.
 
