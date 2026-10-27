@@ -17,6 +17,8 @@ def candidate_from_legacy_row(*, teacher_id, school_year, session_date,
         return None
     if not isinstance(row, dict):
         return None
+    if any(not isinstance(row.get(k), str) for k in ("day", "class_name", "subject", "start", "end")):
+        return None
     day = str(row.get("day") or "").strip()
     klass = str(row.get("class_name") or "").strip()
     subject = str(row.get("subject") or "").strip()
