@@ -168,7 +168,17 @@ def install(ns):
                     return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Pioneer.")
                 # Admin has manually verified the bank transaction before clicking Approve.
                 try:
-                    grant_pioneer(sb, req["chat_id"], f"pioneer-payment-request:{rid}", cid, verified=True)
+                    # Reconcile only an active entitlement tied to this exact payment.
+                    reference = f"pioneer-payment-request:{rid}"
+                    existing = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{int(req['chat_id'])}&select=entitlement,payment_reference,revoked_at") or []
+                    already_granted = any(
+                        row.get("entitlement") == "PIONEER_LIFETIME"
+                        and row.get("payment_reference") == reference
+                        and row.get("revoked_at") is None
+                        for row in existing
+                    )
+                    if not already_granted:
+                        grant_pioneer(sb, req["chat_id"], reference, cid, verified=True)
                 except Exception as exc:
                     # Do not mark payment approved when the entitlement grant fails.
                     # Expose a safe, actionable category to admin; full details stay in logs.
