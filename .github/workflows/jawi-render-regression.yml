@@ -22,6 +22,8 @@ jobs:
         run: python tools/audit_pi_jawi_renderer_chain.py
       - name: Run standalone Jawi regression tests
         run: python -m unittest discover -s tests -p 'test_jawi*.py' -v
+      - name: Test effective v26.39 production font resolver
+        run: python -m unittest discover -s tests -p 'test_pi_jawi_v2639_font_resolver.py' -v
       - name: Validate standalone Pendidikan Islam approval safety
         run: python -m unittest discover -s tests -p 'test_pi_standalone_bank.py' -v
       - name: Verify actual Pillow RAQM shaping runtime
