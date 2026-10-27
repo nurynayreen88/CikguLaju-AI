@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils share three beach preferences and respond to two spoken questions.
 **Success criteria:** three intelligible preferences and two relevant responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Three original preference frames:** I like collecting shells. I like playing with a ball. I like building sandcastles. **Two questions:** What do you like at the beach? Who do you go with? **Key:** Accept relevant personal answers.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a textbook transcription. Verify official SOW/TB and A4/PDF before READY.
