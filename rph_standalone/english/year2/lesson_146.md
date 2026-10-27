@@ -33,3 +33,5 @@
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
 
 **QA:** Original supplementary material, not a textbook transcription. Verify official SOW/TB and A4/PDF before READY.
+
+**QA status:** NOT READY — official Teacher's Book activity check and one-page A4 PDF render inspection pending.
