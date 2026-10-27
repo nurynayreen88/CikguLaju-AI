@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide paired exchanges with three preference prompts and two questions.
+**Teacher (25 min):** Model one exchange, then guide pairs to take turns sharing three preferences and answering both teacher-read questions. Listen to each pupil individually during the exchange.
 **Pupils:** Share three preferences and answer two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record three intelligible preference statements and two relevant answers for each pupil, accepting personally appropriate responses.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
