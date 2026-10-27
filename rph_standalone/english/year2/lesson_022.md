@@ -1,31 +1,38 @@
 # English Year 2 — Lesson 22: Speaking 5
 
-**Unit:** Free Time
-**Main SK/SP:** 2.1 / 2.1.2
-**Complementary SK/SP:** 2.1 / 2.1.1
-**Learning objectives (draft):** Pupils ask and answer two free-time questions with a partner.
-**Success criteria (draft):** two intelligible questions and two relevant answers.
-**Teaching materials:** Super Minds 1 Student's Book p.67, pictures, word cards and classroom resources.
-**Audited source mapping:** Super Minds 1 Student's Book p.67 (page mapped in prior Year 2 SOW audit). Exact Teacher's Book steps not yet verified.
+**Unit:** Free Time — Healthy-life class survey  
+**Main SK/SP (existing SOW mapping; final SOW check pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (existing SOW mapping; final SOW check pending):** 2.1 / 2.1.1  
+**Duration:** 60 minutes  
+**Verified references:** Super Minds 1 Student's Book p.67 and Teacher's Book T67 (scanned TB PDF page index 144). The textbook project asks pupils to survey classmates about weekly hours spent on activities and present results in a bar chart; WB p.67 provides a related number-reading task.  
+**Learning objectives:** Pupils ask and answer three survey questions about weekly activity hours and orally report one survey result.  
+**Success criteria:** Three intelligible question–answer exchanges and one accurate spoken report from recorded data.  
+**Materials:** SB p.67, board, exercise books and survey grid below.
+
+**Survey model:** “How many hours a week do you read books?” “I read books for three hours a week.”  
+**Survey categories:** do sport; watch TV; play with friends; read books; play computer games.  
+**Hour bands:** 1–2 hours; 3–4 hours; 5–6 hours; 7 or more hours.  
+**Pupil recording grid:** Draw five rows with the activity names above and four hour-band columns. Tick a cell for each classmate's answer.  
+**Report model:** “Three pupils read books for three or four hours a week.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show two free-time pictures and elicit two activity words.
-**Pupils:** Name two activities.
+**Teacher:** Recall one healthy and one unhealthy habit from the previous lesson. Ask pupils how often they do sport or read.  
+**Pupils:** Share a short personal response.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model two short question-and-answer exchanges; use mapped page 67 only as a resource.
-**Pupils:** Rehearse one supported response.
+## Activity 1 — Model the survey (15 minutes)
+**Teacher:** Show the table on SB p.67. Model asking “How many hours a week do you ...?” and answering with a number of hours. Explain the four hour bands and demonstrate one tick in the grid.  
+**Pupils:** Rehearse questions and answers and identify the correct table cell.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide partner role swaps and two exchanges.
-**Pupils:** Ask and answer two questions.
+## Activity 2 — Survey and report (25 minutes)
+**Teacher:** Organise groups of four. Have pupils interview at least three classmates about three different activities and tally the answers. Demonstrate turning one set of results into a simple bar chart with labelled activity and hour-band categories, as guided by TB T67. Invite pupils to explain a result using the report model.  
+**Pupils:** Ask and answer survey questions, record results, create a small chart and orally report one finding.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Submit or demonstrate individual evidence.
+**Teacher:** Listen to each pupil asking three survey questions and giving relevant answers. Check the recorded grid and ask for one spoken statement that agrees with the pupil's data. Record oral communication and accurate reporting separately.  
+**Pupils:** Demonstrate their survey exchange and report.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful activity words.
-**Pupils:** Share one useful word.
+**Teacher:** Ask pupils what they learnt about classmates' activities and record one class survey statement.  
+**Pupils:** Share one finding.
 
-**Source:** Prior Year 2 SOW mapping audit. **QA:** Preliminary teacher-developed RPH; activity-to-source alignment and A4 layout remain unverified.
+**QA:** TEXTBOOK-ALIGNED DRAFT — SB p.67 and TB T67 checked visually; official SOW SK/SP and final A4/PDF verification pending. Do not mark READY.
