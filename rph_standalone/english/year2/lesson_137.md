@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five spoken beach words and match four printed labels to pictures.
 **Success criteria:** four correct listening choices and four accurate label matches.
 **Teaching materials:** Super Minds 1 Student's Book p.111, pictures, word cards and classroom resources.
+**Original picture cards:** A sun, B sand, C sea, D shell, E bucket. **Teacher-read order/key:** shell-D, sea-C, bucket-E, sun-A, sand-B. **Four label matches:** sun-A, sand-B, shell-D, bucket-E.
+
 **Audited source mapping:** Student's Book p.111 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a verified textbook extract. Official SOW/TB and PDF/A4 checks pending. NOT READY.
