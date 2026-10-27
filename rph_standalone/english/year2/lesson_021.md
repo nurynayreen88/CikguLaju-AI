@@ -30,3 +30,5 @@
 **Pupils:** Say one habit and copy the sentence into their books.
 
 **QA:** TEXTBOOK-ALIGNED DRAFT — SB p.66 and TB T66 checked visually; SOW SK/SP verification and A4/PDF QA pending. Do not mark READY.
+
+**QA status:** NOT READY — five phases total 60 minutes; official SOW/Teacher's Book alignment and rendered A4 PDF still require verification.
