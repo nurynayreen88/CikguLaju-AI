@@ -44,6 +44,7 @@ jobs:
           python tools/check_rph_pdf_layout.py jawi_renderer_a4_table_stress.pdf --output jawi_renderer_a4_table_stress_audit.json
           python tools/check_rph_pdf_layout.py jawi_renderer_full_class_chain_smoke.pdf --output jawi_renderer_full_class_chain_smoke_audit.json
           python tools/check_rph_pdf_layout.py jawi_renderer_12class_v2639_resolver_smoke.pdf --output jawi_renderer_12class_v2639_resolver_smoke_audit.json
+          python tools/check_rph_pdf_layout.py jawi_renderer_12class_v2639_full_rph_layout.pdf --output jawi_renderer_12class_v2639_full_rph_layout_audit.json
       - name: Upload actual Flowable PDF for visual inspection
         uses: actions/upload-artifact@v4
         with:
@@ -57,3 +58,5 @@ jobs:
             jawi_renderer_full_class_chain_smoke_audit.json
             jawi_renderer_12class_v2639_resolver_smoke.pdf
             jawi_renderer_12class_v2639_resolver_smoke_audit.json
+            jawi_renderer_12class_v2639_full_rph_layout.pdf
+            jawi_renderer_12class_v2639_full_rph_layout_audit.json
