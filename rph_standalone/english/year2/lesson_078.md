@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.90, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.90 (Year 2 audit); exact Teacher's Book steps not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display outfit pictures and invite predictions.
 **Pupils:** Predict the listening topic.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Preview Student's Book p.90 and model listening for the overall message.
 **Pupils:** Listen to a sample and select its topic.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use page-linked audio where available, otherwise a clearly labelled teacher-created description; listen twice and present a main-idea choice plus two oral prompts.
 **Pupils:** Listen, choose the main idea and answer two prompts.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record the main-idea choice and two individual oral responses.
 **Pupils:** Give individual listening and speaking evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review a main-idea listening strategy.
 **Pupils:** Name one clue heard.
 
