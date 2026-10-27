@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 1.3 / 1.3.1
-**Learning objective:** Pupils practise language arts 7 using language from The old house.
+**Learning objectives (draft):** Pupils perform two lines of a teacher-created house rhyme with gestures.
+**Success criteria (draft):** two intelligible lines and two appropriate gestures.
 **Teaching materials:** Super Minds 1 Student's Book p.72, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.72 according to the prior Year 2 SOW mapping audit. Exact Teacher's Book steps remain unverified.
 
