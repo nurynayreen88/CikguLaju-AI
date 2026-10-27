@@ -1,33 +1,36 @@
 # English Year 2 — Lesson 70: Language Arts 14
 
-**Unit:** Get dressed!
-**Main SK/SP:** 5.2 / 5.2.1
-**Complementary SK/SP:** 1.3 / 1.3.1
-**Learning objectives:** Pupils perform three of four lines of a teacher-created clothing rhyme clearly and respond to two spoken questions about it.
-**Success criteria:** three intelligible lines and two relevant oral responses.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 5.2 / 5.2.1  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK. All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
+**Learning objective:** Pupils perform three of four rhyme lines and answer two spoken questions.  
+**Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
+**Materials:** Board, clothing picture cards, exercise books and printable resources below.
+
+**Original teacher-created rhyme:** “My red hat is on my head. / My blue socks are by my bed. / My green shirt is nice and bright. / I get dressed and feel just right.”
+**Actions:** point to head, point to bed, show shirt, smile.
+**Oral questions/key:** “What colour is the hat?” — red. “Where are the socks?” — by the bed.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display clothing picture cards and introduce a short rhyme.
-**Pupils:** Predict familiar words.
+**Teacher:** Display two clothing pictures and ask pupils to name items and colours.  
+**Pupils:** Identify two familiar clothing words.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Perform a teacher-created four-line rhyme with rhythm and gestures; model responding to its meaning.
-**Pupils:** Echo each line and identify familiar words.
+## Activity 1 — Teacher modelling (15 minutes)
+**Teacher:** Perform all four original lines with gestures and model answering the two questions.  
+**Pupils:** Follow the model and practise one supported example.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide group rehearsal and two short oral questions about the rhyme; allow pupils to vary one gesture.
-**Pupils:** Perform in groups, respond to two questions and contribute a gesture.
+## Activity 2 — Guided and paired practice (25 minutes)
+**Teacher:** Pairs rehearse the rhyme, add gestures and take turns asking the two questions.  
+**Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three clear lines and two oral responses individually.
-**Pupils:** Demonstrate an individual contribution.
+**Teacher:** Assess three intelligible lines and two independent oral answers. Record accuracy and assistance needed.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Invite a final performance and recap a key word.
-**Pupils:** Share one favourite line.
+**Teacher:** Review two useful clothing words and invite a relevant response.  
+**Pupils:** Share one word and one sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW activity and Teacher's Book sequence not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft. Official SOW SK/SP, exact TB sequence for mapped textbook lessons and PDF/A4 layout verification pending. NOT READY.
