@@ -38,3 +38,5 @@ I smile and wave hello to you.
 **Pupils:** Share a word.
 
 **QA:** Teacher-developed standalone draft; SOW and A4/PDF QA pending. Not READY.
+
+**QA status:** NOT READY — five-phase 60-minute structure verified; official SOW and Teacher's Book alignment and rendered A4 PDF inspection pending.
