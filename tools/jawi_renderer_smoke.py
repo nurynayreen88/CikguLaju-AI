@@ -215,7 +215,7 @@ before=len(resolver_calls)
 SimpleDocTemplate(str(full_rph_pdf),pagesize=A4,topMargin=28,bottomMargin=28).build([rph_table])
 full_rph_doc=fitz.open(full_rph_pdf)
 assert len(full_rph_doc)==1, "Full RPH layout must fit one A4 page"
-assert len(resolver_calls)-before>=len(rph_sections), (\n    f"Expected at least {len(rph_sections)} actual resolver calls in full RPH; "\n    f"observed {len(resolver_calls)-before}"\n)
+assert len(resolver_calls)-before>=len(rph_sections), "Actual resolver call count below RPH section count"
 full_rph_images=full_rph_doc[0].get_image_info()
 assert len(full_rph_images)>=2*len(rph_sections)
 assert all(0<=i["bbox"][0]<i["bbox"][2]<=full_rph_doc[0].rect.width for i in full_rph_images)
