@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five spoken beach words and answer two oral prompts.
 **Success criteria:** Four correct choices and two relevant responses.
 **Teaching materials:** Super Minds 1 Student's Book p.106, pictures, word cards and classroom resources.
+**Original supplementary listening cards:** A = sand; B = sea; C = shell; D = bucket; E = sun. Teacher reads: shell, bucket, sun, sea, sand. **Answer key:** C, D, E, B, A. Ask: Where do we find shells? (At the beach.) What can hold sand? (A bucket.)
+
 **Audited source mapping:** Student's Book p.106 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use page 106 as visual context and give five teacher-created oral cues and two prompts.
+**Teacher (25 min):** Use page 106 only as visual context; read the five original word cues twice, then ask the two scripted questions.
 **Pupils:** Select five pictures and answer two prompts.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record listening choices and oral responses for each pupil.
+**Teacher (10 min):** Record five picture choices and two oral responses per pupil.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Exact Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Supplementary materials are original, not a transcription of the Student's Book. Verify TB/SOW and A4 PDF before READY.
