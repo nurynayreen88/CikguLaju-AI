@@ -1,30 +1,36 @@
 # English Year 2 — Lesson 1: Writing
 
-**Unit:** Introduction
-**Main SK/SP:** 4.2 / 4.2.1
-**Complementary SK/SP:** 2.3 / 2.3.1
-**Learning objectives (draft):** Pupils write two picture-based sentences and read one aloud.
-**Success criteria (draft):** Two understandable sentences with punctuation and one intelligible oral response.
-**Materials:** Pictures, word cards, writing paper. SOW classification: non-textbook lesson; no Student's Book page assigned.
+**Unit:** Introduction  
+**Main SK/SP (existing mapping):** 4.2 / 4.2.1  
+**Complementary SK/SP (existing mapping):** 2.3 / 2.3.1  
+**Duration:** 60 minutes  
+**Source classification:** NON-TEXTBOOK in the prior Year 2 SOW audit. All prompts and examples below are teacher-developed, not attributed to the Teacher's Book.  
+**Learning objectives:** By the end of the lesson, pupils can write three simple sentences introducing themselves and speak about two personal details clearly.  
+**Success criteria:** Three understandable sentences with capitals and full stops; two intelligible oral statements.  
+**Materials:** Board, exercise books, name cards and the model below.
+
+**Model:** “My name is Sara. I am eight years old. I like drawing.”  
+**Sentence frames:** “My name is ____.” “I am ____ years old.” “I like ____.”  
+**Optional word bank:** reading, drawing, football, swimming, music.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show pictures connected to Introduction and elicit two words.
-**Pupils:** Name pictures and answer a question.
+**Teacher:** Greet the class and introduce yourself using the three model sentence patterns. Ask pupils to say their names.  
+**Pupils:** Respond to the greeting and say their names.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model a picture-based sentence with punctuation, then read it aloud.
-**Pupils:** Follow the demonstration and respond once.
+## Activity 1 — Model an introduction (15 minutes)
+**Teacher:** Write the three-sentence model. Read each sentence aloud and circle its capital letter and full stop. Show how to replace Sara, eight and drawing with a pupil's own details. Model a two-line oral introduction.  
+**Pupils:** Read the model, identify punctuation and rehearse two sentences orally.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide two independent sentences and supported oral reading.
-**Pupils:** Write two sentences and read one aloud.
+## Activity 2 — Write and share (25 minutes)
+**Teacher:** Ask pupils to plan their own three details. Guide pupils to complete the three frames and then copy them as a short paragraph. Pair pupils to exchange introductions, taking turns speaking and listening. Provide a word bank for emerging writers; invite confident writers to add “My favourite day is ____.”  
+**Pupils:** Write three personal sentences, check capitals and full stops, and share two facts with a partner.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Record each pupil's independent evidence against both success criteria.
-**Pupils:** Give one independent response.
+**Teacher:** Collect the three-sentence paragraph and check meaning and punctuation. Ask pupils individually to introduce themselves using two personal details without reading every word. Record writing and speaking evidence separately.  
+**Pupils:** Submit their writing and give a short oral introduction.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful expressions.
-**Pupils:** Demonstrate one learned response.
+**Teacher:** Invite two volunteers to introduce themselves and ask the class to name one detail they heard.  
+**Pupils:** Listen respectfully and recall one fact.
 
-**QA status:** DRAFT — SOW unit, SK/SP and source classification checked against Year 2 mapping; Teacher's Book procedure and activity alignment remain unverified. Do not publish as final.
+**QA status:** COMPLETE TEACHER-DEVELOPED DRAFT — full model, frames and PBD included. Official SOW SK/SP/activity alignment and A4/PDF QA pending; do not publish as READY.
