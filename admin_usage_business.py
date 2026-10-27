@@ -13,6 +13,21 @@ def show_business_usage(cid, is_admin, db_factory, send, registered_users, sb_re
         stats = summary(con)
     finally:
         con.close()
+    # Supabase is the durable source for confirmed RPH deliveries.
+    try:
+        deliveries = sb_request('GET', 'admin_rph_deliveries?select=telegram_user_id,subject,created_at') or []
+        from collections import Counter
+        from datetime import datetime, timedelta, timezone
+        now = datetime.now(timezone.utc)
+        unique_rph = {str(row['telegram_user_id']) for row in deliveries}
+        stats['rph_success'] = len(deliveries)
+        stats['users_with_rph'] = len(unique_rph)
+        stats['tracked_users'] = len(unique_rph | set()) if not stats['tracked_users'] else max(stats['tracked_users'],len(unique_rph))
+        stats['active_without_rph'] = max(0,stats['tracked_users'] - stats['users_with_rph'])
+        subjects = Counter(str(row['subject']) for row in deliveries if row.get('subject'))
+        stats['top_subjects'] = subjects.most_common(10)
+    except Exception as exc:
+        print('ADMIN DURABLE RPH SUMMARY WARNING:', repr(exc), flush=True)
     # Registered users come from the existing persistent directory, not event logs.
     try:
         total_users = len(registered_users())
