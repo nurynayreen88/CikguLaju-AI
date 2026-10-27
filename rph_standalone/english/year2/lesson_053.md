@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display two contrasting house pictures and elicit what pupils notice.
 **Pupils:** Name visible features and listen to a partner's description.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model three simple question-answer exchanges using the pictures; demonstrate taking turns and asking for repetition politely.
 **Pupils:** Repeat the exchanges, then practise them with picture support.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Organise an information-gap task using two different teacher-prepared house pictures; circulate, prompt and record oral evidence.
 **Pupils:** Take turns asking three questions, answering from their picture and listening to their partner.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Use an individual checklist for three exchanges and two listening responses; note intelligibility and relevance, then reteach as needed.
 **Pupils:** Give individual oral responses to two prompts.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite pairs to demonstrate a short exchange and recap turn-taking.
 **Pupils:** Share one useful question.
 
