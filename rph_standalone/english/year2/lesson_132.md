@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a beach picture and elicit two familiar words.
 **Pupils:** Name two beach objects.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model expressing a beach preference and asking a partner.
 **Pupils:** Rehearse one response.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide partner exchanges using beach picture prompts.
 **Pupils:** Share three preferences and take four turns.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against the success criteria.
 **Pupils:** Submit individual evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
 **Pupils:** Share one useful word.
 
