@@ -16,6 +16,20 @@ class EligibilityTests(unittest.TestCase):
     def test_valid(self):
         self.assertTrue(verify_session(self.session, self.evidence, **self.kw).allowed)
 
+    def test_missing_evidence_object(self):
+        self.assertEqual(verify_session(self.session, None, **self.kw).reason,
+                         "invalid_evidence_or_session")
+
+    def test_malformed_calendar_metadata(self):
+        e = CalendarEvidence(2027, None, "TEST", self.evidence.verified_school_dates)
+        self.assertEqual(verify_session(self.session, e, **self.kw).reason,
+                         "unverified_calendar_source")
+
+    def test_malformed_calendar_dates(self):
+        e = CalendarEvidence(2027, "Kedah", "TEST", None)
+        self.assertEqual(verify_session(self.session, e, **self.kw).reason,
+                         "invalid_calendar_dates")
+
     def test_unverified_day(self):
         e = CalendarEvidence(2027, "Kedah", "KPM-VERIFIED-TEST", frozenset())
         self.assertEqual(verify_session(self.session, e, **self.kw).reason,
