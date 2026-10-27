@@ -17,7 +17,7 @@ def resolver(cmap, fallback):
 
 class FontCoverage(unittest.TestCase):
     def test_missing_jawi_gaf_rejected(self):
-        with self.assertRaisesRegex(RuntimeError,r"U\\+0762"):
+        with self.assertRaisesRegex(RuntimeError,"coverage incomplete"):
             resolver({ord("ا")},"incomplete.ttf")("اݢ")
     def test_complete_font_accepted(self):
         self.assertEqual(resolver({ord("ا"),ord("ݢ")},"complete.ttf")("اݢ"),"complete.ttf")
