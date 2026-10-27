@@ -3,7 +3,8 @@
 **Unit:** Introduction
 **Main SK/SP:** 4.2 / 4.2.1
 **Complementary SK/SP:** 2.3 / 2.3.1
-**Objective (draft):** Pupils write two simple sentences.
+**Learning objectives (draft):** Pupils write two picture-based sentences and read one aloud.
+**Success criteria (draft):** Two understandable sentences with punctuation and one intelligible oral response.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
