@@ -1,33 +1,37 @@
 # English Year 2 — Lesson 69: Writing 14
 
-**Unit:** Get dressed!
-**Main SK/SP:** 4.3 / 4.3.1
-**Complementary SK/SP:** 4.2 / 4.2.5
-**Learning objectives:** Pupils write three short sentences about a clothing picture and revise two errors using a simple editing checklist.
-**Success criteria:** three meaningful sentences and two appropriate corrections.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.5  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK. All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
+**Learning objective:** Pupils write three meaningful clothing sentences and correct two errors.  
+**Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
+**Materials:** Board, clothing picture cards, exercise books and printable resources below.
+
+**Original picture description:** a boy in a red shirt, blue shorts and white shoes.
+**Model sentences:** “He is wearing a red shirt. His shorts are blue. His shoes are white.”
+**Editing examples:** “he is wearing a red shirt.” → “He is wearing a red shirt.”; “His shoesare white.” → “His shoes are white.”
+**Checklist:** capital letter, spacing, clothing vocabulary, full stop.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display an outfit picture and build a class word bank.
-**Pupils:** Suggest clothing words.
+**Teacher:** Display two clothing pictures and ask pupils to name items and colours.  
+**Pupils:** Identify two familiar clothing words.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Demonstrate sentence planning and correct use of capitals, spacing and punctuation.
-**Pupils:** Rehearse and copy a model sentence.
+## Activity 1 — Teacher modelling (15 minutes)
+**Teacher:** Model the three sentences and demonstrate the two corrections, identifying capitals and spaces.  
+**Pupils:** Follow the model and practise one supported example.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Give a new outfit picture; guide pupils to write three sentences and peer-check two errors.
-**Pupils:** Write independently, exchange checks and revise two errors.
+## Activity 2 — Guided and paired practice (25 minutes)
+**Teacher:** Pupils choose an outfit picture, write three sentences, exchange checklists and revise at least two errors.  
+**Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three-sentence completion and two individual corrections.
-**Pupils:** Submit corrected writing.
+**Teacher:** Collect three individual sentences and check two visible corrections. Record accuracy and assistance needed.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Show one improved sentence.
-**Pupils:** Read a sentence aloud.
+**Teacher:** Review two useful clothing words and invite a relevant response.  
+**Pupils:** Share one word and one sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW activity and Teacher's Book sequence not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft. Official SOW SK/SP, exact TB sequence for mapped textbook lessons and PDF/A4 layout verification pending. NOT READY.
