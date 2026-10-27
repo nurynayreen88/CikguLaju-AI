@@ -15,7 +15,7 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a short teacher-created beach rhyme and a picture caption.
+**Teacher (15 min):** Read the four-line beach rhyme aloud, highlight the rhyming pairs bright/white and shell/well, and model one matching picture caption.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Compose four rhyme lines and write two captions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check four coherent rhyme lines and two understandable captions per pupil.
+**Teacher (10 min):** Assess four meaningful rhyme lines and two understandable picture captions for each pupil.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
