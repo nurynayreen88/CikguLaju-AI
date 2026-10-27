@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show clothing picture cards and elicit familiar vocabulary.
 **Pupils:** Name visible items and predict the written words.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Display six clothing word cards, model decoding and blending where suitable, then demonstrate one word-picture match.
 **Pupils:** Read aloud with teacher support and match the model card.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Conduct word-card sorting and five individual picture-word matching items; invite paired reading checks.
 **Pupils:** Read six cards, match five items independently and compare answers.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Assess each pupil's six-word oral reading and five matches; record two separate scores and provide targeted decoding support.
 **Pupils:** Read individually and submit their matching sheet.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review two commonly confused words and elicit one final match.
 **Pupils:** Read one chosen word aloud.
 
