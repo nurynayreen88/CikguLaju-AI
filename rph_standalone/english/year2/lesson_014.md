@@ -11,19 +11,19 @@
 **Teacher:** Show two pictures related to Free Time and elicit familiar words.
 **Pupils:** Name pictures and answer one question.
 
-## Activity 1 — Modelling (7 minutes)
+## Activity 1 — Modelling (15 minutes)
 **Teacher:** Model a sentence with capital letter and full stop.
 **Pupils:** Observe and give one supported response.
 
-## Activity 2 — Guided practice (10 minutes)
+## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Pupils write two sentences from pictures and correct one error. Provide feedback and support.
 **Pupils:** Practise and share answers.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check independently whether pupils can write two simple sentences; record evidence.
+## Assessment / PBD (10 minutes)
+**Teacher:** Record each pupil's independent evidence against both success criteria.
 **Pupils:** Demonstrate the target skill individually.
 
-## Closure (3 minutes)
+## Closure (5 minutes)
 **Teacher:** Review two key words and invite a final example.
 **Pupils:** Share one learned response.
 
