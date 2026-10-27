@@ -170,6 +170,20 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(counts['rph_success'], 1)
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_active_windows_exclude_old_records(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        now = datetime(2026, 10, 27, 12, 0, tzinfo=timezone.utc)
+        record_daily_active(db, 100, now - timedelta(days=31))
+        record_daily_active(db, 200, now - timedelta(days=8))
+        record_daily_active(db, 300, now - timedelta(days=3))
+        record_daily_active(db, 400, now)
+        counts = summary(db, now)
+        self.assertEqual(counts['active_today'], 1)
+        self.assertEqual(counts['active_7d'], 2)
+        self.assertEqual(counts['active_30d'], 3)
+        self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
