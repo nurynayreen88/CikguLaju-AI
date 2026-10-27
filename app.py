@@ -46592,3 +46592,20 @@ if _ADMIN_USAGE_WEBHOOK_BASE is not None:
         return _ADMIN_USAGE_WEBHOOK_BASE()
     app.view_functions['webhook'] = _admin_usage_webhook
 # === END ADMIN USAGE ACTIVITY METRICS ===
+
+
+# === ADMIN USAGE LIVE CALLBACK ROUTE FIX 20261027 ===
+# Installed after all legacy callback wrappers so Telegram reaches this handler.
+_ADMIN_USAGE_FINAL_CALLBACK_BASE = callback
+def callback(cid, d):
+    if str(d or '') == 'admin_usage_stats':
+        try:
+            from admin_usage_adapter import show_admin_usage
+            return show_admin_usage(cid, _is_admin, _db, send)
+        except Exception as exc:
+            print('ADMIN USAGE CALLBACK ERROR:', repr(exc), flush=True)
+            return send(cid, '⚠️ Statistik Penggunaan tidak dapat dibuka. Sila cuba semula.', [
+                [{'text': '⬅️ Kembali ke Admin', 'callback_data': 'admin_panel'}]
+            ])
+    return _ADMIN_USAGE_FINAL_CALLBACK_BASE(cid, d)
+# === END ADMIN USAGE LIVE CALLBACK ROUTE FIX ===
