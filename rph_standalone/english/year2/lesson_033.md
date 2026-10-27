@@ -37,3 +37,5 @@
 **Pupils:** Name a sequencing word and one event.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — original passage, answer key and event cards included; not claimed to match SB pp.74–75 story. Official TB/SOW alignment and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
