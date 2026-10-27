@@ -55,6 +55,11 @@ class EligibilityTests(unittest.TestCase):
         self.assertFalse(verify_session(self.session, self.evidence,
                          **(self.kw | {"teacher_id": 456})).allowed)
 
+    def test_missing_registered_classes(self):
+        kw = self.kw | {"registered_class_keys": None}
+        self.assertEqual(verify_session(self.session, self.evidence, **kw).reason,
+                         "invalid_registered_classes")
+
     def test_wrong_class(self):
         self.assertFalse(verify_session(self.session, self.evidence,
                          **(self.kw | {"registered_class_keys": frozenset()})).allowed)
