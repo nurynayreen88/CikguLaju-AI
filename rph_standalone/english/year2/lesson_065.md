@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show clothing illustrations and introduce a short verse.
 **Pupils:** Predict two words.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher:** Model the language arts 13 task and check understanding.
 **Pupils:** Echo lines and identify familiar words.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide small-group expressive reading and selection of a favourite phrase with a reason.
 **Pupils:** Rehearse the verse, perform and share a preferred phrase.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's three-line participation and personal response.
 **Pupils:** Demonstrate an individual response.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite a final short performance.
 **Pupils:** Share a favourite line.
 
