@@ -11,7 +11,11 @@ class StandaloneBankTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "pdf").mkdir()
-            payload = b"%PDF-1.4\nexample"
+            import fitz
+            doc = fitz.open()
+            doc.new_page(width=595.28, height=841.89)
+            payload = doc.tobytes()
+            doc.close()
             (root / "pdf/PI-Y1-L001.pdf").write_bytes(payload)
             item = dict(year=1, lesson_id="PI-Y1-L001", sk="1.1", sp="1.1.1",
                         pdf="pdf/PI-Y1-L001.pdf", status="approved",
