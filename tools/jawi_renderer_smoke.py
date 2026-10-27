@@ -200,6 +200,7 @@ rph_sections=[
 ]
 rph_style=ParagraphStyle("full-rph-jawi",fontSize=9.5,leading=13)
 full_rph_pdf=Path("jawi_renderer_12class_v2639_full_rph_layout.pdf")
+before=len(resolver_calls)
 rph_rows=[[FullChainRenderer(label,rph_style),FullChainRenderer(value,rph_style)]
           for label,value in rph_sections]
 rph_table=Table(rph_rows,colWidths=[125,345],hAlign="CENTER")
@@ -211,11 +212,10 @@ rph_table.setStyle(TableStyle([
     ("TOPPADDING",(0,0),(-1,-1),4),
     ("BOTTOMPADDING",(0,0),(-1,-1),4),
 ]))
-before=len(resolver_calls)
 SimpleDocTemplate(str(full_rph_pdf),pagesize=A4,topMargin=28,bottomMargin=28).build([rph_table])
 full_rph_doc=fitz.open(full_rph_pdf)
 assert len(full_rph_doc)==1, "Full RPH layout must fit one A4 page"
-assert len(resolver_calls)-before>=len(rph_sections), "Actual resolver call count below RPH section count"
+assert len(resolver_calls)-before>=2*len(rph_sections), "Actual resolver call count below two cells per RPH section"
 full_rph_images=full_rph_doc[0].get_image_info()
 assert len(full_rph_images)>=2*len(rph_sections)
 assert all(0<=i["bbox"][0]<i["bbox"][2]<=full_rph_doc[0].rect.width for i in full_rph_images)
