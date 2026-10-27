@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.93, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.93 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show the page illustration and invite predictions.
 **Pupils:** Predict the text topic.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model finding a printed detail on p.93 using the actual page text.
 **Pupils:** Point to printed evidence.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Set five page-grounded detail prompts and invite a brief clothing-related personal response.
 **Pupils:** Read, underline evidence and share one response.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five individual reading answers and one oral response.
 **Pupils:** Submit responses with printed evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review how to locate textual evidence.
 **Pupils:** Share one fact found.
 
