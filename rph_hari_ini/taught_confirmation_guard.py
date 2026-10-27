@@ -36,11 +36,11 @@ def validate_confirmation(c: Confirmation) -> Decision:
     if not all((str(c.teacher_id).strip(), str(c.class_id).strip(),
                 str(c.subject_id).strip(), str(c.session_instance_id).strip())):
         return Decision(False, "missing_identity")
-    if not isinstance(c.school_year, int) or c.school_year < 2020:
+    if type(c.school_year) is not int or not 2020 <= c.school_year <= 2100:
         return Decision(False, "invalid_school_year")
-    if not isinstance(c.session_date, date) or c.session_date.year != c.school_year:
+    if type(c.session_date) is not date or c.session_date.year != c.school_year:
         return Decision(False, "invalid_session_date")
-    if not c.calendar_verified or not c.session_verified:
+    if c.calendar_verified is not True or c.session_verified is not True:
         return Decision(False, "unverified_calendar_or_session")
     if not all(isinstance(v, int) and not isinstance(v, bool) for v in
                (c.lesson_sequence, c.last_confirmed_sequence, c.lesson_total)):
