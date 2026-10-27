@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils write four legible beach words and two meaningful sentences.
 **Success criteria:** four correctly formed words and two understandable sentences.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original writing words:** sun, sand, shell, bucket. **Picture scene:** a yellow sun and blue bucket on the sand. **Two models:** The sun is yellow. The bucket is blue. **Writing check:** capitals, spaces, full stops.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
