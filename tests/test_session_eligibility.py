@@ -64,6 +64,18 @@ class EligibilityTests(unittest.TestCase):
         self.assertFalse(verify_session(self.session, self.evidence,
                          **(self.kw | {"registered_class_keys": frozenset()})).allowed)
 
+    def test_invalid_subject_types(self):
+        from dataclasses import replace
+        s = replace(self.session, subject_key=None)
+        self.assertEqual(verify_session(s, self.evidence, **self.kw).reason,
+                         "subject_mismatch")
+
+    def test_invalid_session_id_type(self):
+        from dataclasses import replace
+        s = replace(self.session, session_id=123)
+        self.assertEqual(verify_session(s, self.evidence, **self.kw).reason,
+                         "invalid_session")
+
     def test_wrong_subject(self):
         self.assertFalse(verify_session(self.session, self.evidence,
                          **(self.kw | {"expected_subject": "BM"})).allowed)
