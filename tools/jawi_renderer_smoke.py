@@ -182,3 +182,42 @@ assert len(real_doc)==1 and len(real_doc[0].get_image_info())>=4
 assert len(resolver_calls)>=len(samples), f"Expected real resolver for each sample, got {len(resolver_calls)}"
 print("12-CLASS CHAIN + real v26.39 resolver body (controlled font dependencies)",production_font_pdf)
 
+
+# Representative full RPH layout using the 12-class chain and the actual
+# v26.39 resolver body. Synthetic content: NOT an approved curriculum RPH.
+rph_sections=[
+    ("معلومت ڤڠاجرن", "ڤنديديقن اسلام | تاهون ٢ | ٦٠ مينيت"),
+    ("ستندرد کاندوڠن", "ممباچ دان ممهامي ڤرکاتاءن جاوي"),
+    ("ستندرد ڤمبلاجرن", "موريد ممباچ دان منوليس ڤرکاتاءن جاوي"),
+    ("اوبيکتيف ڤمبلاجرن", "موريد داڤت ممباچ دان منوليس تيݢ ڤرکاتاءن"),
+    ("ست ايندوکسي", "ݢورو منونجوقکن کد ڤرکاتاءن. موريد ممريهاتي دان منجاوب سوالن."),
+    ("اکتيۏيتي ١", "ݢورو ممباچ ڤرکاتاءن دان موريد مڠيکوت سبوتن. موريد منونجوقکن حروف."),
+    ("اکتيۏيتي ٢", "موريد مميليه کد ڤرکاتاءن دان ممادنکن دڠن ݢمبر. ݢورو ممبري بيمبيڠن."),
+    ("اکتيۏيتي ٣", "موريد منوليس ڤرکاتاءن جاوي دالم بوکو. ݢورو ممريکسا توليسن."),
+    ("اکتيۏيتي ٤", "موريد ممباچ سمولا ڤرکاتاءن دهادڤن راکن. راکن ممبري مقلوم بالس."),
+    ("ڤنتکسيرن", "ݢورو منيلاي باچاءن دان توليسن موريد برساسرکن سناراي سماق."),
+    ("ڤنوتوڤ", "موريد مڽاتاکن ڤرکاتاءن يڠ دڤلاجري. ݢورو مروبوموسکن ڤمبلاجرن."),
+]
+rph_style=ParagraphStyle("full-rph-jawi",fontSize=9.5,leading=13)
+full_rph_pdf=Path("jawi_renderer_12class_v2639_full_rph_layout.pdf")
+rph_rows=[[FullChainRenderer(label,rph_style),FullChainRenderer(value,rph_style)]
+          for label,value in rph_sections]
+rph_table=Table(rph_rows,colWidths=[125,345],hAlign="CENTER")
+rph_table.setStyle(TableStyle([
+    ("GRID",(0,0),(-1,-1),0.5,colors.grey),
+    ("VALIGN",(0,0),(-1,-1),"TOP"),
+    ("LEFTPADDING",(0,0),(-1,-1),6),
+    ("RIGHTPADDING",(0,0),(-1,-1),6),
+    ("TOPPADDING",(0,0),(-1,-1),4),
+    ("BOTTOMPADDING",(0,0),(-1,-1),4),
+]))
+before=len(resolver_calls)
+SimpleDocTemplate(str(full_rph_pdf),pagesize=A4,topMargin=28,bottomMargin=28).build([rph_table])
+full_rph_doc=fitz.open(full_rph_pdf)
+assert len(full_rph_doc)==1, "Full RPH layout must fit one A4 page"
+assert len(resolver_calls)-before>=2*len(rph_sections), "Real resolver was bypassed in full RPH"
+full_rph_images=full_rph_doc[0].get_image_info()
+assert len(full_rph_images)>=2*len(rph_sections)
+assert all(0<=i["bbox"][0]<i["bbox"][2]<=full_rph_doc[0].rect.width for i in full_rph_images)
+assert all(0<=i["bbox"][1]<i["bbox"][3]<=full_rph_doc[0].rect.height for i in full_rph_images)
+print("Full RPH synthetic layout with v26.39 resolver",full_rph_pdf,"images",len(full_rph_images))
