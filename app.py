@@ -46609,3 +46609,19 @@ def callback(cid, d):
             ])
     return _ADMIN_USAGE_FINAL_CALLBACK_BASE(cid, d)
 # === END ADMIN USAGE LIVE CALLBACK ROUTE FIX ===
+
+
+# === ADMIN USAGE BUSINESS METRICS 20261027 ===
+_ADMIN_USAGE_BUSINESS_CALLBACK_BASE = callback
+def callback(cid, d):
+    if str(d or '') == 'admin_usage_stats':
+        try:
+            from admin_usage_business import show_business_usage
+            return show_business_usage(cid, _is_admin, _db, send,
+                                       _admin_persistent_users, _sb_request)
+        except Exception as exc:
+            print('ADMIN BUSINESS USAGE ERROR:', repr(exc), flush=True)
+            return send(cid, '⚠️ Statistik tidak dapat dibuka. Cuba lagi.',
+                        [[{'text':'⬅️ Kembali ke Admin','callback_data':'admin_panel'}]])
+    return _ADMIN_USAGE_BUSINESS_CALLBACK_BASE(cid, d)
+# === END ADMIN USAGE BUSINESS METRICS ===
