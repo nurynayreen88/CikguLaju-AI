@@ -1,31 +1,35 @@
 # English Year 2 — Lesson 45: Language Arts 9
 
-**Unit:** The old house
-**Main SK/SP:** 5.2 / 5.2.1
-**Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives (draft):** Pupils perform a short teacher-created house rhyme with two actions and say one related sentence.
-**Success criteria (draft):** two intelligible rhyme lines, two gestures and one relevant sentence.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
+**Unit:** The old house  
+**Main SK/SP (existing mapping; SOW check pending):** 5.2 / 5.2.1  
+**Complementary SK/SP (existing mapping; SOW check pending):** 2.1 / 2.1.5  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK. All scripts and cards below are teacher-created, not textbook quotations.  
+**Objective:** Pupils perform four rhyme lines with two gestures and say one room sentence.  
+**Success criteria:** Independently demonstrate each component of the objective.  
+**Materials:** Board, room picture cards, word cards and resources below.
+
+**Original rhyme:** “In the kitchen, stir the stew. / In the bedroom, sleep right through. / In the bathroom, wash your face. / In the living room, find your place.”
+**Gestures:** stir, sleep, wash, sit. **Speaking frame:** “In the ____, I ____.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show house pictures and elicit two familiar words.
-**Pupils:** Name two familiar words.
+**Teacher:** Show two room pictures and elicit room and object words.  
+**Pupils:** Name rooms and objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a two-line original house rhyme and actions.
-**Pupils:** Give one supported response.
+**Teacher:** Recite the original rhyme with four gestures; model the speaking frame.  
+**Pupils:** Follow and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide partner rehearsal and one simple spoken sentence about a room.
-**Pupils:** Perform the rhyme and say one sentence.
+**Teacher:** Pairs rehearse, swap room cards and make a new sentence using the frame.  
+**Pupils:** Complete the task in pairs, then repeat individually.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's independent evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Observe four lines, two gestures and one independent meaningful sentence. Record accuracy and any prompting.  
+**Pupils:** Demonstrate independently.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Invite one new word and a useful sentence.  
+**Pupils:** Share their learning.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Standalone teacher-developed draft; official SOW and TB (where relevant) plus PDF/A4 verification pending. Not READY.
