@@ -50,7 +50,7 @@ def verify_session(session: TimetableSession, evidence: CalendarEvidence,
         return Eligibility(False, "unregistered_class")
     if not session.subject_key or session.subject_key != expected_subject:
         return Eligibility(False, "subject_mismatch")
-    if (not session.session_id or not session.session_id.strip()
+    if (not isinstance(session.session_id, str) or not session.session_id or not session.session_id.strip()
             or type(session.lesson_total) is not int or session.lesson_total < 1):
         return Eligibility(False, "invalid_session")
     if (type(session.school_year) is not int
