@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display an outfit picture and invite a prediction.
 **Pupils:** Predict the paragraph topic.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model locating a fact in a short teacher-created paragraph and checking a word in a picture dictionary.
 **Pupils:** Point to printed evidence and locate one word.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give a short clothing paragraph, five detail prompts and a dictionary lookup task.
 **Pupils:** Read, underline evidence and complete five answers.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Mark five individual detail responses and observe one lookup.
 **Pupils:** Submit reading responses and show a word lookup.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review rereading for evidence.
 **Pupils:** Share one fact found.
 
