@@ -3,28 +3,29 @@
 **Unit:** Free Time
 **Main SK/SP:** 1.2 / 1.2.5
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objective:** Pupils practise listening 32 using language from Free Time.
+**Learning objectives:** Pupils identify four of five spoken free-time activities and respond to two short prompts.
+**Success criteria:** four correct choices and two relevant responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce Free Time with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a free time picture and elicit two familiar words.
+**Pupils:** Name two relevant words.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 32 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model listening for free-time activities using picture cues.
+**Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Give five teacher-created spoken cues and two oral prompts.
+**Pupils:** Select activity pictures and respond to two prompts.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record individual evidence against the success criteria.
+**Pupils:** Provide individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful expression.
+**Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
