@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils perform four lines of a beach dialogue with clear expression.
 **Success criteria:** four intelligible lines with suitable expression.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original four-line dialogue:** A: Look at the blue sea! B: I can see a small boat. A: Shall we build a sandcastle? B: Yes, let's build one! **Performance cues:** pause at punctuation, speak clearly, show excitement on final line.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
