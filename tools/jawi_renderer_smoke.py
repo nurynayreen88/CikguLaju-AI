@@ -14,6 +14,7 @@ source=Path("app.py").read_text(encoding="utf-8")
 tree=ast.parse(source)
 classes=[n for n in tree.body if isinstance(n,ast.ClassDef) and n.name=="_JawiRasterParagraph_v25213"]
 assert len(classes)>=2, "Expected base and final Jawi renderer"
+# The final class may inherit through multiple prior patches. Never claim this\n# smoke test validates the live renderer unless the complete class chain is used.\nassert len(classes)==2, (\n    f"Renderer has {len(classes)} definitions: isolated base/final test is NOT production-equivalent. "\n    "Build a complete patch-chain harness before accepting a PDF."\n)
 base=classes[0]
 final=classes[-1]
 def font_cmap(path):
