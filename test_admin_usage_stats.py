@@ -155,6 +155,21 @@ class UsageStatsTests(unittest.TestCase):
             self.assertEqual(second.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
             second.close()
 
+    def test_distinct_active_users_across_event_types(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        now = datetime(2026, 10, 27, 12, 0, tzinfo=timezone.utc)
+        record_daily_active(db, 123, now)
+        record_event(db, 123, 'rph_success', 'BM', 'Tahun 2', now)
+        record_daily_active(db, 456, now)
+        record_event(db, 456, 'rph_failed', 'Maths', 'Tahun 3', now)
+        counts = summary(db, now)
+        self.assertEqual(counts['active_today'], 2)
+        self.assertEqual(counts['active_7d'], 2)
+        self.assertEqual(counts['active_30d'], 2)
+        self.assertEqual(counts['rph_success'], 1)
+        self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
