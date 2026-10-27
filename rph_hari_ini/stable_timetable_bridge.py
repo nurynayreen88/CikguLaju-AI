@@ -10,7 +10,8 @@ from .session_eligibility import verify_session
 
 
 def verified_stable_session(*, teacher_id, school_year, session_date, row,
-                            lesson_total, registry, evidence, subject_key):
+                            lesson_total, registry, evidence, subject_key,
+                            subject_mapping=None):
     candidate = candidate_from_legacy_row(
         teacher_id=teacher_id, school_year=school_year,
         session_date=session_date, row=row, lesson_total=lesson_total)
@@ -27,6 +28,15 @@ def verified_stable_session(*, teacher_id, school_year, session_date, row,
     # Never accept a mismatched subject for the timetable row.
     if not isinstance(row.get("subject"), str) or not row["subject"].strip():
         return False, "invalid_timetable_subject", None
+    # Fail closed unless a trusted server mapping explicitly binds the legacy
+    # timetable subject to the canonical curriculum subject identifier.
+    if not isinstance(subject_mapping, dict):
+        return False, "unverified_subject_mapping", None
+    legacy_subject = row["subject"].strip().casefold()
+    matched = [v for k, v in subject_mapping.items()
+               if isinstance(k, str) and k.strip().casefold() == legacy_subject]
+    if len(matched) != 1 or matched[0] != subject_key:
+        return False, "subject_mapping_mismatch", None
     # Session ID deliberately excludes display name to survive class renames.
     stable_id = (f"{teacher_id}:{school_year}:{session_date.isoformat()}:"
                  f"{identity.class_id}:{subject_key}:{row['start']}-{row['end']}")
