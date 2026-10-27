@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five spoken details about a beach picture and match four printed words.
 **Success criteria:** four correct listening responses and four word matches.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original supplementary picture:** yellow sun, blue sea, red bucket, two shells and green ball. **Teacher-read clues:** yellow sun; blue sea; red bucket; two shells; green ball. **Printed matching words:** sun, sea, bucket, shells. **Key:** Match each clue or word to its named object in the picture.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read five brief spoken clues and provide four printed word cards.
+**Teacher (25 min):** Read the five original clues twice and provide the four specified word cards.
 **Pupils:** Respond to five clues and match four words.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record five listening choices and four word matches for each pupil.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material; SOW and A4/PDF verification pending. NOT READY.
