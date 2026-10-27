@@ -12,19 +12,19 @@
 **Teacher:** Show pictures of reading, cycling and drawing. Ask pupils to name the activities.
 **Pupils:** Name familiar activities and show a matching gesture.
 
-## Activity 1 — Model a chant (7 minutes)
+## Activity 1 — Model a chant (15 minutes)
 **Teacher:** Introduce a four-line teacher-created chant about free-time activities. Clap the beat and model two gestures.
 **Pupils:** Listen, repeat each line and imitate the beat and gestures.
 
-## Activity 2 — Guided performance (10 minutes)
+## Activity 2 — Guided performance (25 minutes)
 **Teacher:** Give each group two activity cards and ask them to replace activity words in the chant. Provide time for rehearsal.
 **Pupils:** Substitute two words, practise together and perform with gestures.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Observe each pupil's participation, intelligible activity words and two appropriate actions; record individual evidence.
+## Assessment / PBD (10 minutes)
+**Teacher:** Record each pupil's independent evidence against both success criteria.
 **Pupils:** Perform a short part of the chant with minimal prompting.
 
-## Closure (3 minutes)
+## Closure (5 minutes)
 **Teacher:** Review two activity words and invite one final performance.
 **Pupils:** Share one new expression and demonstrate its gesture.
 
