@@ -61,7 +61,7 @@ def rename_class(*, teacher_id: int, school_year: int, old_name: str,
                    and k[0] == teacher_id and k[1] == school_year
                    and isinstance(k[2], str)
                    and k[2].strip().casefold() == old_name.strip().casefold()
-                   and str(v) == current.class_id)
+                   and str(UUID(str(v))) == current.class_id)
     del result[old_key]
     result[new_key] = current.class_id
     return result
