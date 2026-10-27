@@ -170,7 +170,27 @@ def install(ns):
                 try:
                     grant_pioneer(sb, req["chat_id"], f"pioneer-payment-request:{rid}", cid, verified=True)
                 except Exception as exc:
-                    return send(cid, f"⚠️ Pioneer belum diaktifkan: {type(exc).__name__}. Semak rekod.")
+                    # Do not mark payment approved when the entitlement grant fails.
+                    # Expose a safe, actionable category to admin; full details stay in logs.
+                    import re
+                    detail = str(exc)
+                    print('PIONEER APPROVAL FAILED:', f'payment_id={rid}',
+                          f'user_id={req["chat_id"]}', repr(exc), flush=True)
+                    if '403' in detail or '42501' in detail or 'permission denied' in detail.lower():
+                        reason = 'Supabase menolak akses (HTTP 403 / kebenaran pangkalan data).'
+                    elif '404' in detail or 'PGRST202' in detail:
+                        reason = 'Fungsi kelulusan Pioneer tidak ditemui di Supabase.'
+                    elif '409' in detail or 'already exists' in detail.lower() or 'duplicate' in detail.lower():
+                        reason = 'Rekod Pioneer mungkin sudah wujud. Semak status sebelum cuba lagi.'
+                    elif 'quota full' in detail.lower():
+                        reason = 'Kuota Pioneer telah penuh.'
+                    elif 'not configured' in detail.lower():
+                        reason = 'Konfigurasi Supabase belum lengkap.'
+                    else:
+                        reason = f'Ralat sambungan atau pangkalan data ({type(exc).__name__}).'
+                    return send(cid, f"⚠️ Pioneer belum diaktifkan untuk Payment ID #{rid}.\\n"
+                                f"Sebab: {reason}\\n"
+                                "Bayaran masih menunggu pengesahan. Jangan minta pengguna bayar semula.")
                 ns["_mark_payment_request"](rid, "approved", cid, "Pioneer RM10 manually verified by admin")
                 send(cid, f"✅ Pioneer diaktifkan untuk {req['chat_id']}.")
                 return send(req["chat_id"], "🏆 <b>Status Pioneer Anda: AKTIF</b>\n\nAnda menikmati akses tanpa bayaran langganan bulanan atau tahunan sepanjang CikguLaju AI beroperasi.",
