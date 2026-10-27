@@ -35,3 +35,5 @@
 **Pupils:** Share a sentence.
 
 **QA:** TEACHER-DEVELOPED STANDALONE DRAFT. Official SOW and PDF/A4 verification pending; not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
