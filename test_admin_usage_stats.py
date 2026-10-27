@@ -57,6 +57,17 @@ class UsageStatsTests(unittest.TestCase):
             self.assertEqual(second.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
             second.close()
 
+    def test_active_recorder_rejects_existing_transaction(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        db.execute('CREATE TABLE unrelated (value TEXT)')
+        db.execute("INSERT INTO unrelated VALUES ('pending')")
+        with self.assertRaises(sqlite3.OperationalError):
+            record_daily_active(db, 123)
+        self.assertTrue(db.in_transaction)
+        db.rollback()
+        self.assertEqual(db.execute('SELECT COUNT(*) FROM unrelated').fetchone()[0], 0)
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
