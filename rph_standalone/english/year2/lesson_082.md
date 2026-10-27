@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show clothing pictures and ask what pupils notice.
 **Pupils:** Name familiar items.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model a brief outfit conversation with clear turn-taking.
 **Pupils:** Practise the model with a partner.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Organise paired picture-based dialogues and prompt active listening.
 **Pupils:** Describe three items and contribute two turns.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's descriptions and conversational turns.
 **Pupils:** Demonstrate speaking individually within a pair.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review polite turn-taking.
 **Pupils:** Share one useful phrase.
 
