@@ -93,12 +93,15 @@ def record_daily_active(connection, user_id, when=None):
     """Record only the first activity per user per UTC date."""
     stamp = (when or datetime.now(timezone.utc)).isoformat()
     day = stamp[:10]
-    exists = connection.execute(
-        "SELECT 1 FROM admin_usage_events WHERE telegram_user_id=? "
-        "AND event_type='bot_active' AND substr(created_at,1,10)=? LIMIT 1",
-        (str(user_id), day),
-    ).fetchone()
-    if exists:
-        return False
-    record_event(connection, user_id, 'bot_active', when=when)
-    return True
+    with connection:
+        connection.execute('BEGIN IMMEDIATE')
+        inserted = connection.execute(
+            "INSERT INTO admin_usage_events "
+            "(telegram_user_id,event_type,subject,grade,created_at) "
+            "SELECT ?, 'bot_active', NULL, NULL, ? "
+            "WHERE NOT EXISTS (SELECT 1 FROM admin_usage_events "
+            "WHERE telegram_user_id=? AND event_type='bot_active' "
+            "AND substr(created_at,1,10)=?)",
+            (str(user_id), stamp, str(user_id), day),
+        ).rowcount
+    return bool(inserted)
