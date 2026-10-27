@@ -123,6 +123,24 @@ class UsageStatsTests(unittest.TestCase):
         self.assertFalse(record_daily_active(db, 123, utc))
         self.assertEqual(summary(db, utc)['active_today'], 1)
 
+    def test_delivery_rollback_preserves_consistency(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        db.execute("""
+            CREATE TRIGGER reject_rph_event BEFORE INSERT ON admin_usage_events
+            WHEN NEW.event_type = 'rph_success'
+            BEGIN SELECT RAISE(ABORT, 'simulated write failure'); END
+        """)
+        with self.assertRaises(sqlite3.IntegrityError):
+            record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2')
+        self.assertEqual(db.execute(
+            'SELECT COUNT(*) FROM admin_usage_delivery_keys').fetchone()[0], 0)
+        self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+        db.execute('DROP TRIGGER reject_rph_event')
+        self.assertTrue(record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2'))
+        self.assertFalse(record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2'))
+        self.assertEqual(summary(db)['rph_success'], 1)
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
