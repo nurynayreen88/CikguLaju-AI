@@ -5,7 +5,9 @@
 **Complementary SK/SP:** 3.2 / 3.2.3
 **Learning objectives:** Pupils locate four of five details in a teacher-created robot paragraph and answer two questions.
 **Success criteria:** 4/5 accurate detail choices and two supported answers.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Pictures, word cards, individual PBD record and original resources below.
+
+**Original reading:** “Rex is a robot at the zoo. It has a yellow body, two arms and four wheels. Rex carries food for the animals every morning.” **Five details/key:** Rex; zoo; yellow; two arms; four wheels. **Questions/key:** What does Rex carry? Food. When? Every morning.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Practise one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Provide a short paragraph, five detail prompts and two comprehension questions.
+**Teacher (25 min):** Ask pupils to underline five details in the original passage and answer both questions.
 **Pupils:** Underline evidence and answer questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check each pupil against the success criteria and record individual PBD evidence.
+**Teacher (10 min):** Check five details and two text-supported answers. Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
