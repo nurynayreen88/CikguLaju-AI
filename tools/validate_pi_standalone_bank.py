@@ -78,7 +78,7 @@ def validate(manifest_path: Path):
                                     if x0 < -0.5 or y0 < -0.5 or x1 > page.rect.width + 0.5 or y1 > page.rect.height + 0.5:
                                         errors.append(f"{tag}: image extends outside page")
                     except Exception as exc:
-                        errors.append(f"{tag}: PDF cannot be opened: {type(exc).__name__}}
+                        errors.append(f"{tag}: PDF cannot be opened: {type(exc).__name__}")
                 if isinstance(digest, str) and SHA256.fullmatch(digest):
                     actual = hashlib.sha256(path.read_bytes()).hexdigest()
                     if actual != digest:
