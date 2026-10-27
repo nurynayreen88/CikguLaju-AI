@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four details in five spoken beach prompts.
 **Success criteria:** four correct listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Five original listening cues/key:** Point to the red bucket (bucket); find the yellow sun (sun); show two shells (shells); find the blue sea (sea); point to the small crab (crab). **Materials:** five separate labelled beach pictures.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
