@@ -1,31 +1,38 @@
 # English Year 2 — Lesson 39: Writing 8
 
-**Unit:** The old house
-**Main SK/SP:** 4.3 / 4.3.3
-**Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objectives (draft):** Pupils write two simple house-related sentences using capitals and full stops.
-**Success criteria (draft):** two meaningful sentences with correct basic punctuation.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task in the prior Year 2 audit. Detailed SOW activity sequence remains unverified.
+**Unit:** The old house  
+**Main SK/SP (existing mapping; final SOW verification pending):** 4.3 / 4.3.3  
+**Complementary SK/SP (existing mapping; final SOW verification pending):** 4.3 / 4.3.1  
+**Duration:** 60 minutes  
+**Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
+**Learning objectives:** Pupils write three clear house sentences.  
+**Success criteria:** three meaningful sentences with at least two correctly punctuated.  
+**Materials:** Board, exercise books, teacher-created picture/word cards and the printable text below.
+
+**Model:** “There is a table in the kitchen. There are two chairs in the dining room. My bedroom has a bed.”
+**Word bank:** kitchen, dining room, bedroom, bathroom, table, chairs, bed, bath.
+**Frames:** “There is a ____ in the ____.” “There are two ____ in the ____.”
+**Editing practice:** “there are two chairs in the kitchen” → “There are two chairs in the kitchen.”
+**Checklist:** Capital first letter; spaces; correct *is/are*; full stop.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display house pictures and elicit two familiar words.
-**Pupils:** Name two rooms or objects.
+**Teacher:** Show two house pictures and elicit familiar rooms or objects.  
+**Pupils:** Name the rooms and point to the relevant objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a house-related sentence with capital, spacing and full stop.
-**Pupils:** Give one supported response.
+**Teacher:** Show model sentences and contrast *there is* and *there are*. Correct the editing practice aloud and point out spaces and the full stop.  
+**Pupils:** Follow the model and demonstrate one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide writing two picture-based sentences and checking punctuation.
-**Pupils:** Write and check two sentences.
+**Teacher:** Pupils draw three room/object pairs and write three sentences, using frames if needed. Partners check capitals, spaces and full stops; pupils revise independently.  
+**Pupils:** Complete the task, compare evidence with a partner and improve their responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Collect three independently written sentences and completed checklist. Score meaning, subject–verb choice and punctuation; ask for one visible correction.  
+**Pupils:** Demonstrate the stated success criteria without partner help.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Review two useful words and invite one reflection on the task.  
+**Pupils:** Share a word or a sentence from the lesson.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** COMPLETE TEACHER-DEVELOPED DRAFT — actual task materials, models and assessment included. Official SOW SK/SP/activity alignment and A4/PDF QA pending. Do not mark READY.
