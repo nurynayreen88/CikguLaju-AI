@@ -5553,6 +5553,9 @@ def amount(cid, kind):
     send(cid,'🔢 <b>Berapa soalan cikgu perlukan?</b>',[[{'text':str(n),'callback_data':f'amt_{n}'} for n in (5,10,20,30)]])
 
 def callback(cid, d):
+    if d == 'admin_usage_stats':
+        from admin_usage_adapter import show_admin_usage
+        return show_admin_usage(cid, _is_admin, _db, send)
     if d == 'admin_panel':
         return _admin_panel(cid)
     if d.startswith('admin_list|'):
@@ -12097,6 +12100,7 @@ def _admin_panel(cid):
         kb=[
           [{'text':f'👥 PENGGUNA ({c["users"]})','callback_data':'admin_list|all|0'}],
           [{'text':f'💬 KOMEN & CADANGAN ({c["new_feedback"]})','callback_data':'admin_feedback|0'}],
+          [{'text':'📊 STATISTIK PENGGUNAAN','callback_data':'admin_usage_stats'}],
           [{'text':'🗄️ STATUS SISTEM','callback_data':'admin_system'}],
           [{'text':'🔄 REFRESH','callback_data':'admin_panel'},{'text':'🏠 KELUAR ADMIN','callback_data':'home'}]
         ]
