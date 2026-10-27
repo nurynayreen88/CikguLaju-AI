@@ -46550,16 +46550,20 @@ def send_document(cid, path, caption=''):
     result = _ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)
     if 'RPH' in str(caption or '').upper() and _telegram_delivery_ok_v25279(result):
         try:
-            from admin_usage_stats import initialize, record_event
-            con = _db()
-            try:
-                initialize(con)
-                ss = state.get(cid) or {}
-                record_event(con, cid, 'rph_success',
-                             subject=str(ss.get('subject') or '') or None,
-                             grade=str(ss.get('year') or '') or None)
-            finally:
-                con.close()
+            from admin_usage_stats import initialize, record_confirmed_delivery
+            response = result.json()
+            message_id = (response.get('result') or {}).get('message_id')
+            if message_id is not None:
+                con = _db()
+                try:
+                    initialize(con)
+                    ss = state.get(cid) or {}
+                    record_confirmed_delivery(
+                        con, cid, message_id,
+                        subject=str(ss.get('subject') or '') or None,
+                        grade=str(ss.get('year') or '') or None)
+                finally:
+                    con.close()
         except Exception as exc:
             print('ADMIN USAGE METRIC WARNING:', repr(exc), flush=True)
     return result
