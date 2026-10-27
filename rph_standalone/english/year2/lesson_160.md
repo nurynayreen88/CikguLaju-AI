@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide rehearsal and individual rhyme performance.
+**Teacher (25 min):** Guide rehearsal, then model: 'Hello, my name is ____. This is my friend ____. We will say a beach rhyme.' Each pupil introduces themselves and a partner before performing four lines for a small audience.
 **Pupils:** Perform four lines with expression.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record four intelligible rhyme lines and each pupil's spoken self-and-partner introduction.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
@@ -33,3 +33,5 @@
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
 
 **QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
+
+**Official SOW alignment:** Lesson 160 complementary SP 2.3.1 requires introducing self and others to an audience using fixed phrases. Teacher's Book and PDF checks pending.
