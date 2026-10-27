@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use page 116 as visual context for five spoken detail prompts and two questions.
+**Teacher (25 min):** Read the supplied original listening script twice. Ask five detail prompts and two questions; use a teacher-created beach picture as visual support, without assuming it matches Student's Book p.116.
 **Pupils:** Listen, select four details and answer two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record five listening selections and two answers per pupil, noting whether at least four details and both answers are correct.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
