@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 2.1 / 2.1.2
-**Learning objective:** Pupils practise writing 7 using language from The old house.
+**Learning objectives (draft):** Pupils write two simple sentences describing rooms or objects.
+**Success criteria (draft):** two readable sentences with capitals and full stops.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task in the prior Year 2 audit. Detailed SOW activity sequence remains unverified.
 
