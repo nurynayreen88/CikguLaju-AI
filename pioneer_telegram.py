@@ -166,6 +166,15 @@ def install(ns):
             if req and float(req["amount"]) == 10.0:
                 if expected_uid is None or int(req["chat_id"]) != expected_uid:
                     return send(cid, "⚠️ Butang pengesahan lama atau pemilik bayaran berubah. Buka semula kad permohonan untuk semakan ID pelanggan. Jangan minta bayaran semula.")
+                if has_pioneer(sb, int(req["chat_id"])):
+                    # A manually verified entitlement may already be active even
+                    # when the local SQLite payment is still pending. Reconcile
+                    # only this exact user, never transfer another user's grant.
+                    ns["_mark_payment_request"](rid, "approved", cid,
+                        "Reconciled: Pioneer lifetime already active in Supabase")
+                    return send(cid,
+                        f"✅ Pioneer pengguna {req['chat_id']} sudah AKTIF.\\n"
+                        "Rekod permohonan tempatan diselaraskan; tiada bayaran semula diperlukan.")
                 if req["status"] != "pending":
                     return admin_card(cid, rid)
                 if req.get("notes") != "proof_received_admin_notified":
