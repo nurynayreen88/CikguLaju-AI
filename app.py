@@ -46487,16 +46487,16 @@ def menu(cid, show_persistent=False):
     except Exception:
         quota = '⚠️ <b>Baki janaan tidak dapat disemak.</b>'
     body = (
-        '🚀 <b>CIKGULAJU AI</b>\\n<i>Pembantu pintar persediaan PdP guru.</i>\\n\\n'
-        '🚧 <b>STATUS: DALAM PEMBANGUNAN</b>\\n'
-        'Fungsi dan kandungan sedang dilengkapkan secara berperingkat.\\n\\n'
-        '📚 <b>SEDIAKAN BAHAN PdP</b>\\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\\n\\n'
-        '⚡ <b>RPH HARI INI</b>\\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\\n\\n'
-        '📅 <b>RPT 2027</b>\\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\\n\\n'
-        '👤 <b>PROFIL SAYA</b>\\nUrus kelas, jadual waktu dan maklumat cikgu.\\n\\n'
-        '🏆 <b>JADI PIONEER</b>\\nTawaran Pioneer sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\\n\\n'
-        '💳 <b>LANGGANAN</b>\\nBulanan: <b>RM8/sebulan</b>\\nTahunan: <b>RM50/setahun</b>\\n'
-        'Akan datang. Langganan belum dibuka.\\n\\n'
+        '🚀 <b>CIKGULAJU AI</b>\n<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
+        '🚧 <b>STATUS: DALAM PEMBANGUNAN</b>\n'
+        'Fungsi dan kandungan sedang dilengkapkan secara berperingkat.\n\n'
+        '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
+        '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
+        '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
+        '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
+        '🏆 <b>JADI PIONEER</b>\nTawaran Pioneer sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
+        '💳 <b>LANGGANAN</b>\nBulanan: <b>RM8/sebulan</b>\nTahunan: <b>RM50/setahun</b>\n'
+        'Akan datang. Langganan belum dibuka.\n\n'
         + quota
     )
     return send(cid, body, kb)
