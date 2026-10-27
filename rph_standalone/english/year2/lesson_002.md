@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer a question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Read a short text twice, showing how to listen for a familiar word.
+**Teacher:** Read a short teacher-created free-time description twice and model identifying one word.
 **Pupils:** Follow the demonstration and respond once.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils listen and match three spoken details to picture cards. Support pupils who need prompts.
-**Pupils:** Complete the task and share responses.
+**Teacher:** Give three listening cues with picture cards and ask one oral question.
+**Pupils:** Match three spoken words and answer one question.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
