@@ -1,33 +1,34 @@
 # English Year 2 — Lesson 77: Speaking 16
 
-**Unit:** Get dressed!
-**Main SK/SP:** 2.1 / 2.1.2
-**Complementary SK/SP:** 4.2 / 4.2.4
-**Learning objectives:** Pupils describe three clothing items using intelligible phrases and record two short supporting written notes.
-**Success criteria:** three clear descriptions and two understandable notes.
-**Teaching materials:** Super Minds 1 Student's Book p.89, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.89 (Year 2 audit); exact Teacher's Book steps not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (prior mapping; official SOW verification pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (prior mapping; official SOW verification pending):** 4.2 / 4.2.4  
+**Duration:** 60 minutes  
+**Source classification:** SB p.89; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
+**Learning objective:** Pupils describe three clothing items and write two supporting notes.  
+**Success criteria:** Achieve the measurable targets in the objective independently.  
+**Materials:** Board, picture/word cards, exercise books and resources below.
+
+**Original outfit cards:** A red shirt, blue shorts, white shoes; B yellow dress, green hat, black shoes. **Model:** “She is wearing a yellow dress. Her hat is green. Her shoes are black.” **Notes:** “yellow dress”; “green hat”.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show two outfit pictures and elicit descriptive words.
-**Pupils:** Name familiar clothing.
+**Teacher:** Show two outfit pictures and elicit familiar words.  
+**Pupils:** Name items and colours.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Preview Student's Book p.89 and model three brief descriptions plus two note examples.
-**Pupils:** Rehearse descriptions and read the notes.
+**Teacher:** Model three descriptions and two written notes using outfit B.  
+**Pupils:** Follow the model and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise paired outfit descriptions followed by independent two-note recording.
-**Pupils:** Describe three items, listen to a partner and write two notes.
+**Teacher:** Partners describe cards without showing them, identify the correct card and write two notes individually.  
+**Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Assess each pupil's three spoken descriptions and two notes.
-**Pupils:** Give individual oral and written evidence.
+**Teacher:** Assess three oral descriptions and two meaningful notes. Record independent performance and support required.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review one clear descriptive phrase.
-**Pupils:** Share one description.
+**Teacher:** Recap two words and ask for a relevant sentence.  
+**Pupils:** Share a word and sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; official SOW, Teacher's Book steps for mapped pages, and PDF/A4 verification pending. NOT READY.
