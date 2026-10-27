@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display a clothing picture and invite observations.
 **Pupils:** Name two items.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher:** Model the speaking 13 task and check understanding.
 **Pupils:** Rehearse the models with picture support.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Organise a pair information-gap activity using different outfit pictures; prompt turn-taking.
 **Pupils:** Describe three items, ask two questions and respond to partner information.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Check three descriptions and two questions per pupil using an oral checklist.
 **Pupils:** Demonstrate individual speaking evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Recap one useful question form.
 **Pupils:** Ask one closing question.
 
