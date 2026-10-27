@@ -4,7 +4,7 @@
 **Main SK/SP:** 4.3 / 4.3.1
 **Complementary SK/SP:** 4.3 / 4.3.3
 **Learning objectives:** Pupils write four legible beach words and two meaningful sentences.
-**Success criteria:** four correctly formed words and two understandable sentences.
+**Success criteria:** Four legible words and two meaningful sentences with capitals, spacing and full stops.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original writing words:** sun, sand, shell, bucket. **Picture scene:** a yellow sun and blue bucket on the sand. **Two models:** The sun is yellow. The bucket is blue. **Writing check:** capitals, spaces, full stops.
 
@@ -15,7 +15,7 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model letter formation and sentence spacing.
+**Teacher (15 min):** Model letter formation, word spacing, initial capitals and final full stops using the two supplied sentences.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Write four words and two sentences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check four legible words and two sentences per pupil, recording capital letters, spacing and full stops.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
