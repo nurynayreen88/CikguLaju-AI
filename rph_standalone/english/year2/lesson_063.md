@@ -1,33 +1,35 @@
 # English Year 2 — Lesson 63: Reading 13
 
-**Unit:** Get dressed!
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 3.2 / 3.2.3
-**Learning objectives:** Pupils locate four of five explicit details in a teacher-prepared short clothing description and answer two factual questions.
-**Success criteria:** 4/5 details and two accurate answers.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.3  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
+**Objective:** Pupils identify four of five written details and answer two factual questions.  
+**Success criteria:** Meet the numerical targets in the objective independently.  
+**Materials:** Board, picture/word cards, exercise books and the resources below.
+
+**Original passage:** “Maya is going to the park. She wears a yellow T-shirt and blue shorts. Her shoes are white. She takes a red hat because it is sunny. Her brother wears a green shirt.”
+**Five details/key:** destination—park; T-shirt—yellow; shorts—blue; shoes—white; hat—red. **Questions/key:** Why does Maya take a hat?—It is sunny. What colour is her brother's shirt?—green.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show an outfit picture and invite predictions.
-**Pupils:** Predict the topic.
+**Teacher:** Display two clothing pictures and elicit familiar item and colour words.  
+**Pupils:** Name two items and make a prediction.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model the reading 13 task and check understanding.
-**Pupils:** Point to evidence in a sample sentence.
+**Teacher:** Read the original passage and underline *yellow T-shirt* to model evidence.  
+**Pupils:** Follow and practise one supported example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Distribute a brief teacher-prepared clothing paragraph and five detail-finding prompts; guide paired evidence checks.
-**Pupils:** Read independently, underline five details and answer two questions.
+**Teacher:** Pupils underline five details, answer two questions and compare evidence with a partner.  
+**Pupils:** Complete the task, compare evidence and improve responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Mark each pupil's five responses and two answers; record evidence and provide guided rereading.
-**Pupils:** Submit individual reading responses.
+**Teacher:** Check five independent detail responses and two questions against the answer key. Record whether prompts were needed.  
+**Pupils:** Demonstrate the task individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Ask pupils to locate one final fact.
-**Pupils:** Point to the supporting words.
+**Teacher:** Review two clothing words and invite one accurate example.  
+**Pupils:** Share one word and a short response.
 
-**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure remains unverified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Complete teacher-developed standalone draft; official SOW SK/SP and PDF/A4 checks pending. Not READY.
