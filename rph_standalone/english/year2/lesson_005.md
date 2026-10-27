@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 1.2 / 1.2.1
-**Objective (draft):** Pupils perform a short rhyme with two actions.
+**Learning objectives (draft):** Pupils perform a short teacher-created free-time rhyme with two actions and recognise two spoken words.
+**Success criteria (draft):** Two coordinated actions and two accurate listening choices.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
