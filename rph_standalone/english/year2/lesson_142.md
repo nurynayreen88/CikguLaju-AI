@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide paired exchanges with three personal prompts and two questions.
+**Teacher (25 min):** Model turn-taking, then guide pairs through three personal prompts and two questions. Ask each pupil to describe one beach object using a familiar adjective.
 **Pupils:** Give three responses and ask two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record each pupil's three relevant responses, two intelligible questions and one clear object description.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
