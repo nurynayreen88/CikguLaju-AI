@@ -45,13 +45,15 @@ def build_report(font_maps, samples=SAMPLES):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("fonts", nargs="+", type=Path)
+    parser.add_argument("--text-file", type=Path, help="UTF-8 RPH text to audit instead of samples")
     args = parser.parse_args()
     font_maps = []
     for path in args.fonts:
         if not path.is_file():
             parser.error(f"Font not found: {path}")
         font_maps.append((str(path), coverage(path)))
-    report = build_report(font_maps)
+    samples = (args.text_file.read_text(encoding="utf-8"),) if args.text_file else SAMPLES
+    report = build_report(font_maps, samples)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     raise SystemExit(1 if report["missing"] else 0)
 
