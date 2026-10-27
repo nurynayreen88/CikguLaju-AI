@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils ask two questions and give three relevant answers about beach activities.
 **Success criteria:** two intelligible questions and three relevant answers.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original dialogue frames:** A: What do you like at the beach? B: I like collecting shells. A: Who do you go with? B: I go with Dad. **Third response prompt:** What do you take? I take a bucket. **Key:** Accept meaningful personal answers.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
