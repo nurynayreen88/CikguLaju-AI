@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 3.2 / 3.2.3
 **Complementary SK/SP:** 1.2 / 1.2.1
-**Learning objective:** Pupils practise reading 7 using language from The old house.
+**Learning objectives (draft):** Pupils identify two details in a short illustrated house text.
+**Success criteria (draft):** two text-supported answers.
 **Teaching materials:** Super Minds 1 Student's Book pp.74–75, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book pp.74–75 according to the prior Year 2 SOW mapping audit. Exact Teacher's Book steps remain unverified.
 
