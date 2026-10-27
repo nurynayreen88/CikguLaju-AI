@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show two robot illustrations and elicit known words.
 **Pupils:** Name visible robot parts.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model listening for descriptive clues in a teacher-created robot description.
 **Pupils:** Listen and select the correct picture.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Read five short descriptions and ask two follow-up questions.
 **Pupils:** Choose five answers independently and respond orally.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five individual listening choices and two oral answers.
 **Pupils:** Submit individual listening evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review one useful clue.
 **Pupils:** Name a feature heard.
 
