@@ -68,6 +68,16 @@ class UsageStatsTests(unittest.TestCase):
         db.rollback()
         self.assertEqual(db.execute('SELECT COUNT(*) FROM unrelated').fetchone()[0], 0)
 
+    def test_active_recorder_handles_separate_utc_days(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        first = datetime(2026, 10, 27, 23, 59, tzinfo=timezone.utc)
+        second = datetime(2026, 10, 28, 0, 1, tzinfo=timezone.utc)
+        self.assertTrue(record_daily_active(db, 123, first))
+        self.assertTrue(record_daily_active(db, 123, second))
+        self.assertEqual(summary(db, second)['active_today'], 1)
+        self.assertEqual(summary(db, second)['active_7d'], 1)
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
