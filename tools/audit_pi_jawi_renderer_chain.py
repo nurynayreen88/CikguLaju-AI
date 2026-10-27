@@ -42,6 +42,15 @@ def inspect(source):
     # bypassed. Record the complete class lineage rather than treating the
     # isolated first/last Flowable PDF as production evidence.
     if len(versions) > 2:
+        # The final implementation must inherit from an alias saved from the
+        # immediately preceding definition; otherwise overrides are skipped.
+        previous = versions[-2]["line"]
+        last = versions[-1]
+        final_base = last["bases"][0] if len(last["bases"]) == 1 else None
+        final_aliases = [a for a in aliases if previous < a["line"] < last["line"]
+                         and a["value"] == TARGET]
+        if final_base not in [name for a in final_aliases for name in a["aliases"]]:
+            raise ValueError("Final renderer does not inherit the preceding saved implementation")
         print("WARNING: isolated first/last Flowable smoke test omits "
               f"{len(versions)-2} intermediate renderer definitions; "
               "production PDF rendering remains unverified.")
