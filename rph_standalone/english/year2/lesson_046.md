@@ -1,31 +1,37 @@
 # English Year 2 — Lesson 46: Listening 10
 
 **Unit:** The old house
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives (draft):** Pupils identify three spoken details about a house and give one short spoken description.
-**Success criteria (draft):** three accurate listening choices and one intelligible description.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
+**Main SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.2
+**Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5
+**Duration:** 60 minutes
+**Source:** NON-TEXTBOOK in prior mapping. Script below is teacher-created.
+**Objective:** Identify three spoken details and describe one room orally.
+**Success criteria:** Three correct listening answers and one intelligible room description.
+**Materials:** Room pictures, board, script and questions below.
+
+**Original listening script:** “This house has three rooms. In the kitchen, there is a round table. In the bedroom, there are two beds. In the living room, there is a green sofa.”
+
+**Questions and key:** (1) Which room has a round table? — kitchen. (2) How many beds are there? — two. (3) What colour is the sofa? — green.
+**Speaking frame:** “In the ____, there is/are ____.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show house pictures and elicit two familiar words.
-**Pupils:** Name two familiar words.
+**Teacher:** Display three room cards and elicit familiar vocabulary.
+**Pupils:** Name the rooms.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Read a teacher-created house description twice and model finding one detail.
-**Pupils:** Give one supported response.
+## Activity 1 — Listening model (15 minutes)
+**Teacher:** Read the original script twice and demonstrate locating the clue *round table*.
+**Pupils:** Listen and identify one room.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide three picture choices and one brief oral description.
-**Pupils:** Identify three details and describe one room.
+## Activity 2 — Listening and speaking (25 minutes)
+**Teacher:** Read the script again. Ask the three questions and have pupils choose picture or word answers independently, then compare in pairs. Model the speaking frame.
+**Pupils:** Answer three questions and describe one room.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Read the script without showing the text. Check three individual answers and one oral description; note prompts required.
+**Pupils:** Demonstrate independent listening and speaking.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Review two room words and ask for one accurate house sentence.
+**Pupils:** Share a sentence.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** TEACHER-DEVELOPED STANDALONE DRAFT. Official SOW and PDF/A4 verification pending; not READY.
