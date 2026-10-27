@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.102, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.102 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display a robot picture and elicit familiar words.
 **Pupils:** Name a robot feature.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model finding evidence in the actual printed text on Student's Book p.102.
 **Pupils:** Rehearse one supported response.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Set five page-grounded detail prompts and two short written questions.
 **Pupils:** Underline evidence and write two answers.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against the success criteria.
 **Pupils:** Submit individual evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review a useful expression.
 **Pupils:** Share one word or sentence.
 
