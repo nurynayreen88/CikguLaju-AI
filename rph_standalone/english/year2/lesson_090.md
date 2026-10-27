@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a robot picture and invite imaginative ideas.
 **Pupils:** Suggest a robot action.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model a short teacher-created dialogue with clear expression.
 **Pupils:** Echo and rehearse the lines.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide paired rehearsal and one imaginative adaptation.
 **Pupils:** Perform and suggest one variation.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three lines and one creative contribution for each pupil.
 **Pupils:** Give individual performance evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite a closing performance.
 **Pupils:** Share a favourite line.
 
