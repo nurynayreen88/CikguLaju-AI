@@ -82,7 +82,7 @@ def install(ns):
             return send(cid, "🏆 <b>PENGESAHAN PIONEER RM10</b>\n"
                         f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
                         "Semak transaksi masuk dalam TNG Merchant secara manual sebelum lulus.",
-                        [[{"text": "✅ Sahkan Pioneer", "callback_data": f"admin_approve|{request_id}"}],
+                        [[{"text": "✅ Sahkan Pioneer", "callback_data": f"admin_approve|{request_id}|{req['chat_id']}"}],
                          [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
         return original_card(cid, request_id)
 
@@ -157,11 +157,15 @@ def install(ns):
             if not ns["_is_admin"](cid):
                 return send(cid, "⛔ Admin sahaja.")
             try:
-                rid = int(str(d).split("|", 1)[1])
+                parts = str(d).split("|")
+                rid = int(parts[1])
+                expected_uid = int(parts[2]) if len(parts) == 3 else None
             except (ValueError, IndexError):
                 return original_callback(cid, d)
             req = ns["_payment_request"](rid)
             if req and float(req["amount"]) == 10.0:
+                if expected_uid is None or int(req["chat_id"]) != expected_uid:
+                    return send(cid, "⚠️ Butang pengesahan lama atau pemilik bayaran berubah. Buka semula kad permohonan untuk semakan ID pelanggan. Jangan minta bayaran semula.")
                 if req["status"] != "pending":
                     return admin_card(cid, rid)
                 if req.get("notes") != "proof_received_admin_notified":
