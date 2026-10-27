@@ -184,6 +184,21 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(counts['active_30d'], 3)
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_confirmed_delivery_preserves_subject_and_grade(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        self.assertTrue(record_confirmed_delivery(db, 123, 701, 'Bahasa Melayu', 'Tahun 2'))
+        self.assertTrue(record_confirmed_delivery(db, 123, 702, 'Sains', 'Tahun 4'))
+        self.assertFalse(record_confirmed_delivery(db, 123, 701, 'Matematik', 'Tahun 6'))
+        rows = db.execute(
+            "SELECT subject, grade FROM admin_usage_events "
+            "WHERE event_type='rph_success' ORDER BY id"
+        ).fetchall()
+        self.assertEqual(rows, [('Bahasa Melayu', 'Tahun 2'), ('Sains', 'Tahun 4')])
+        self.assertEqual(summary(db)['top_subjects'],
+                         [('Bahasa Melayu', 1), ('Sains', 1)])
+        self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
