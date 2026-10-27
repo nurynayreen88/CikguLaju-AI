@@ -136,6 +136,20 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(db.execute('SELECT COUNT(*) FROM admin_usage_events').fetchone()[0], 0)
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_delivery_recorder_recovers_after_explicit_rollback(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        db.execute('CREATE TABLE unrelated (value TEXT)')
+        db.execute("INSERT INTO unrelated VALUES ('pending')")
+        with self.assertRaises(sqlite3.OperationalError):
+            record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2')
+        db.rollback()
+        self.assertTrue(record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2'))
+        self.assertFalse(record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2'))
+        self.assertEqual(summary(db)['rph_success'], 1)
+        self.assertEqual(db.execute('SELECT COUNT(*) FROM unrelated').fetchone()[0], 0)
+        self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+
     def test_delivery_rollback_preserves_consistency(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
