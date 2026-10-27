@@ -34,3 +34,5 @@
 **Pupils:** Name the missing room and say one new word.
 
 **QA:** TEXTBOOK-ALIGNED DRAFT — SB p.70 and TB T70 inspected visually; official SOW SK/SP verification and A4/PDF QA pending. Do not mark READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
