@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils describe three beach objects and answer two oral questions.
 **Success criteria:** Three intelligible descriptions and two relevant answers.
 **Teaching materials:** Super Minds 1 Student's Book p.107, pictures, word cards and classroom resources.
+**Original supplementary scene:** a red bucket, a small shell and a big beach ball. **Model:** The bucket is red. The shell is small. The ball is big. **Questions/key:** What colour is the bucket? Red. Which object is small? The shell.
+
 **Audited source mapping:** Student's Book p.107 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one description.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide partner descriptions and two picture-based questions.
+**Teacher (25 min):** Guide pairs to describe the three original scene objects and answer both scripted questions.
 **Pupils:** Describe three beach objects and answer two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three descriptions and two answers for each pupil.
+**Teacher (10 min):** Record three intelligible descriptions and two accurate oral answers per pupil.
 **Pupils:** Provide individual oral evidence.
 
 ## Closure (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one descriptive phrase.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary scene; TB/SOW and PDF/A4 verification pending. NOT READY.
