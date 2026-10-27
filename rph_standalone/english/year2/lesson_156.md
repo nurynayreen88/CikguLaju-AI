@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Give five teacher-created spoken cues and two oral prompts.
+**Teacher (25 min):** Read the five activity names in the specified order twice, then ask the two original personal-response questions.
 **Pupils:** Select activity pictures and respond to two prompts.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record five picture choices and two relevant personal responses for each pupil.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
