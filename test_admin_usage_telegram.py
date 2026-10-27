@@ -33,6 +33,26 @@ class AdminUsageTelegramTests(unittest.TestCase):
         self.assertFalse(allowed)
         self.assertIn('hanya untuk admin', sent[0])
 
+    def test_admin_report_closes_database_before_sending(self):
+        sent = []
+        class TrackedConnection:
+            def __init__(self):
+                self.db = sqlite3.connect(':memory:')
+                self.closed = False
+            def executescript(self, sql):
+                return self.db.executescript(sql)
+            def execute(self, *args):
+                return self.db.execute(*args)
+            def close(self):
+                self.closed = True
+                self.db.close()
+        tracked = TrackedConnection()
+        self.assertTrue(show_admin_usage(
+            42, lambda cid: cid == 42, lambda: tracked,
+            lambda cid, message, **kwargs: sent.append((tracked.closed, message))))
+        self.assertEqual(len(sent), 1)
+        self.assertTrue(sent[0][0], 'Database should close before Telegram send')
+
     def test_admin_summary_navigation(self):
         sent = []
         def db_factory():
