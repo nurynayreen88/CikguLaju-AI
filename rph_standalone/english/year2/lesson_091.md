@@ -1,33 +1,34 @@
 # English Year 2 — Lesson 91: Listening 19
 
-**Unit:** The robot
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives:** Pupils identify four of five robot features from short spoken descriptions and respond to two simple prompts.
-**Success criteria:** 4/5 accurate choices and two relevant responses.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
+**Unit:** The robot  
+**Main SK/SP (prior mapping; official SOW check pending):** 1.2 / 1.2.2  
+**Complementary SK/SP (prior mapping; official SOW check pending):** 2.1 / 2.1.5  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK; teacher-created material below is not a verified textbook extract.  
+**Learning objective:** Pupils identify four of five robot features and answer two oral questions.  
+**Success criteria:** Meet the numerical targets in the objective independently.  
+**Materials:** Robot picture/word cards, board, exercise books and resources below.
+
+**Robot A:** square head, two blue eyes, long arms, short legs, red body. **Robot B:** round head, one green eye, short arms, long legs, yellow body. **Original spoken clues/key:** “a square head” A; “one green eye” B; “long arms” A; “yellow body” B; “short legs” A. **Oral questions/key:** Which robot has two eyes? A. Which robot has long legs? B.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show two robot illustrations and elicit known words.
-**Pupils:** Name visible robot parts.
+**Teacher:** Show two robot pictures and elicit visible features or actions.  
+**Pupils:** Name two known words.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model listening for descriptive clues in a teacher-created robot description.
-**Pupils:** Listen and select the correct picture.
+**Teacher:** Read two clues, point to the correct robot and model identifying key words.  
+**Pupils:** Practise one supported example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read five short descriptions and ask two follow-up questions.
-**Pupils:** Choose five answers independently and respond orally.
+**Teacher:** Read five clues twice; pupils choose A/B and answer two questions using the picture cards.  
+**Pupils:** Complete the task and compare responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five individual listening choices and two oral answers.
-**Pupils:** Submit individual listening evidence.
+**Teacher:** Check five independent choices and two oral answers. Record independent performance and support required.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review one useful clue.
-**Pupils:** Name a feature heard.
+**Teacher:** Review two robot words and invite a relevant sentence.  
+**Pupils:** Share one word and sentence.
 
-**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft. Official SOW SK/SP and PDF/A4 verification pending. NOT READY.
