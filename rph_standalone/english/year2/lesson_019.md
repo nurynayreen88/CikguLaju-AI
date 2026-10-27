@@ -4,7 +4,8 @@
 **Main SK/SP (existing SOW mapping; verification pending):** 4.3 / 4.3.3
 **Complementary SK/SP (existing SOW mapping; verification pending):** 4.2 / 4.2.5
 **Duration (draft):** 30 minutes
-**Objective:** Pupils can write two short sentences about free-time activities with appropriate capital letters and full stops.
+**Learning objectives (draft):** Pupils write two punctuated sentences about free-time activities and use a self-check checklist.
+**Success criteria (draft):** Two understandable sentences with capitals, spacing and full stops.
 **Materials:** Topic picture cards, word cards, board and pupils' exercise books.
 **Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit; detailed SOW procedure remains unverified.
 
