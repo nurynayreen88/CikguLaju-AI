@@ -58,12 +58,11 @@ def rename_class(*, teacher_id: int, school_year: int, old_name: str,
            for k in registry if isinstance(k, tuple) and len(k) == 3):
         return None
     result = dict(registry)
-    old_key = next(k for k, v in result.items()
+    old_key = next(k for k in result
                    if isinstance(k, tuple) and len(k) == 3
                    and k[0] == teacher_id and k[1] == school_year
                    and isinstance(k[2], str)
-                   and k[2].strip().casefold() == old_name.strip().casefold()
-                   and str(UUID(str(v))) == current.class_id)
+                   and k[2].strip().casefold() == old_name.strip().casefold())
     del result[old_key]
     result[new_key] = current.class_id
     return result
