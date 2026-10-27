@@ -64,6 +64,21 @@ def validate(manifest_path: Path):
             else:
                 if path.read_bytes()[:5] != b"%PDF-":
                     errors.append(f"{tag}: invalid PDF header")
+                else:
+                    try:
+                        import fitz
+                        with fitz.open(path) as document:
+                            if len(document) != 1:
+                                errors.append(f"{tag}: approved RPH must be one A4 page")
+                            for page in document:
+                                if abs(page.rect.width - 595.28) > 2 or abs(page.rect.height - 841.89) > 2:
+                                    errors.append(f"{tag}: approved RPH must use A4 portrait")
+                                for image in page.get_image_info():
+                                    x0, y0, x1, y1 = image["bbox"]
+                                    if x0 < -0.5 or y0 < -0.5 or x1 > page.rect.width + 0.5 or y1 > page.rect.height + 0.5:
+                                        errors.append(f"{tag}: image extends outside page")
+                    except Exception as exc:
+                        errors.append(f"{tag}: PDF cannot be opened: {type(exc).__name__}}
                 if isinstance(digest, str) and SHA256.fullmatch(digest):
                     actual = hashlib.sha256(path.read_bytes()).hexdigest()
                     if actual != digest:
