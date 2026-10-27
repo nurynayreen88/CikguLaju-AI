@@ -46568,3 +46568,27 @@ def send_document(cid, path, caption=''):
             print('ADMIN USAGE METRIC WARNING:', repr(exc), flush=True)
     return result
 # === END ADMIN USAGE DELIVERY METRICS ===
+
+# === ADMIN USAGE ACTIVITY METRICS 20261027 ===
+# Wrap the final webhook route, preserving existing Telegram processing.
+_ADMIN_USAGE_WEBHOOK_BASE = app.view_functions.get('webhook')
+if _ADMIN_USAGE_WEBHOOK_BASE is not None:
+    def _admin_usage_webhook():
+        try:
+            update = request.get_json(silent=True) or {}
+            payload = update.get('callback_query') or update.get('message') or {}
+            actor = payload.get('from') or {}
+            user_id = actor.get('id')
+            if user_id is not None:
+                from admin_usage_stats import initialize, record_daily_active
+                connection = _db()
+                try:
+                    initialize(connection)
+                    record_daily_active(connection, user_id)
+                finally:
+                    connection.close()
+        except Exception as exc:
+            print('ADMIN USAGE ACTIVITY WARNING:', repr(exc), flush=True)
+        return _ADMIN_USAGE_WEBHOOK_BASE()
+    app.view_functions['webhook'] = _admin_usage_webhook
+# === END ADMIN USAGE ACTIVITY METRICS ===
