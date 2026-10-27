@@ -46733,3 +46733,30 @@ def _available_materials_v2528(ss):
 _MAT_META_V2528['rph'] = ('📕', 'RPH (PDF)')
 _MAT_META_V2528['rph_word'] = ('📘', 'RPH (Word)')
 # === END RPH WORD/PDF CHECKBOX AVAILABILITY FIX ===
+
+
+# === PI JAWI STRICT GLYPH + RAQM GUARD 20261027 ===
+_PI_JAWI_PRE_GUARD_FONT_RESOLVER = _pi_exact_jawi_font_v2604
+def _pi_exact_jawi_font_v2604(text, bold=False):
+    path = _PI_JAWI_PRE_GUARD_FONT_RESOLVER(text, bold)
+    required = _pi2637_required_cps(text)
+    if not path:
+        raise RuntimeError('PI Jawi PDF: no Arabic/Jawi font available')
+    missing = sorted(required - _font_cmap_v25226(path))
+    if missing:
+        raise RuntimeError('PI Jawi PDF: font missing Unicode glyphs ' +
+                           ','.join('U+%04X' % cp for cp in missing))
+    return path
+def _pi_jawi_font_v2606(text, bold=False):
+    return _pi_exact_jawi_font_v2604(text, bold)
+_PI_JAWI_PRE_GUARD_RASTER = _JawiRasterParagraph_v25213
+class _JawiRasterParagraph_v25213(_PI_JAWI_PRE_GUARD_RASTER):
+    def _font(self, px):
+        from PIL import ImageFont, features
+        if not features.check('raqm'):
+            raise RuntimeError('PI Jawi PDF requires Pillow with RAQM/HarfBuzz')
+        path = _pi_exact_jawi_font_v2604(
+            self.text, bool(getattr(self, 'bold', False)))
+        return ImageFont.truetype(path, px, layout_engine=ImageFont.Layout.RAQM)
+CIKGULAJU_PATCH_PI_JAWI_STRICT_20261027 = 'NO_INCOMPLETE_GLYPH_OR_BASIC_LAYOUT_FALLBACK'
+# === END PI JAWI STRICT GLYPH + RAQM GUARD ===
