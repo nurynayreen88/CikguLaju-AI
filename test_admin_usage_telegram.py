@@ -66,6 +66,21 @@ class AdminUsageTelegramTests(unittest.TestCase):
                              lambda *args, **kwargs: self.fail('Must not send a partial report'))
         self.assertTrue(tracked.closed, 'Database must close after report failure')
 
+    def test_admin_report_closes_database_on_summary_failure(self):
+        class FailingSummaryConnection:
+            closed = False
+            def executescript(self, sql):
+                return None
+            def execute(self, *args):
+                raise sqlite3.OperationalError('simulated summary failure')
+            def close(self):
+                self.closed = True
+        tracked = FailingSummaryConnection()
+        with self.assertRaises(sqlite3.OperationalError):
+            show_admin_usage(42, lambda cid: True, lambda: tracked,
+                             lambda *args, **kwargs: self.fail('Must not send partial summary'))
+        self.assertTrue(tracked.closed)
+
     def test_admin_summary_navigation(self):
         sent = []
         def db_factory():
