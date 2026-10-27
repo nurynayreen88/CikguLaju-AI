@@ -8,6 +8,7 @@ on:
       - 'tests/test_audit_pi_jawi_pdf.py'
       - 'tests/test_pi_jawi_raqm_smoke.py'
       - 'requirements.txt'
+      - 'tools/provision_pi_jawi_fonts.py'
       - '.github/workflows/pi-jawi-pdf-audit.yml'
   workflow_dispatch:
 
@@ -27,6 +28,8 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y fonts-noto-core
           python -m pip install 'PyMuPDF>=1.24,<2' 'Pillow>=10' 'fonttools>=4.50,<5' 'reportlab==4.2.5'
+      - name: Validate production font provisioning
+        run: python tools/provision_pi_jawi_fonts.py
       - name: Compile production app, audit and regression tests
         run: python -m py_compile app.py tools/audit_pi_jawi_pdf.py tests/test_audit_pi_jawi_pdf.py
       - name: Run real Jawi RAQM-to-PDF smoke test
