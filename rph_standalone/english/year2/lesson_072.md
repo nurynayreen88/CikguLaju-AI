@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display two outfit pictures and invite preferences.
 **Pupils:** Choose one preferred outfit.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model short preference questions and answers with turn-taking.
 **Pupils:** Rehearse two question frames.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Organise rotating partner interviews with three questions per pupil.
 **Pupils:** Ask three questions, listen and answer at least two.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Check each pupil's three questions and two responses using an oral checklist.
 **Pupils:** Give individual oral evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review polite turn-taking.
 **Pupils:** Share one question.
 
