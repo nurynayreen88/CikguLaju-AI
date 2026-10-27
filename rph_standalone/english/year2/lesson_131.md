@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 4.2 / 4.2.5
-**Learning objective:** Pupils practise listening 27 using language from At the beach.
+**Learning objectives:** Pupils identify four of five spoken beach details and write two short captions.
+**Success criteria:** Four correct listening responses and two meaningful captions.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
