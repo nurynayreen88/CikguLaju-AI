@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide paired questioning and response practice.
+**Teacher (25 min):** Model taking turns, then guide each pair to ask the two supplied questions and give three personal answers.
 **Pupils:** Ask two questions and give three answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Listen to each pupil and record two intelligible questions and three relevant personal answers.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
