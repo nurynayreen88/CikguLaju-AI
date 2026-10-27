@@ -4,7 +4,7 @@
 **Main SK/SP:** 4.3 / 4.3.1
 **Complementary SK/SP:** 4.3 / 4.3.3
 **Learning objectives:** Pupils draft and write four Unit 9 review quiz questions with appropriate capitals and question marks, then prepare a final set for Lesson 153.
-**Success criteria:** Four legible words and two meaningful sentences with capitals, spacing and full stops.
+**Success criteria:** Four drafted and four final review questions with appropriate capitals, spacing and question marks.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original teacher-created Unit 9 review quiz (standalone backup for Lesson 153):** 1. What colour is the sea? (Blue.) 2. What can you find on the sand? (Shells.) 3. What do you use to build a sandcastle? (Sand.) 4. What can you take to the beach? (A bucket.) **Writing check:** capital letters, word spacing and question marks for questions; full stops for written answers.
 
@@ -15,7 +15,7 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model letter formation, word spacing, initial capitals and final full stops using the two supplied sentences.
+**Teacher (15 min):** Model drafting a Unit 9 review question, checking initial capitals, word spacing and question marks, then preparing a final version.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Draft and revise four review questions together, then write the final four-question quiz.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check four legible words and two sentences per pupil, recording capital letters, spacing and full stops.
+**Teacher (10 min):** Check each pupil's contribution to drafting and revision, and assess four final group questions for capitals, spacing and question marks.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
