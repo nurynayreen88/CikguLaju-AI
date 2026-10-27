@@ -169,28 +169,24 @@ def install(ns):
                 # Admin has manually verified the bank transaction before clicking Approve.
                 try:
                     # Reconcile only an active entitlement tied to this exact payment.
-                    reference = f"pioneer-payment-request:{rid}"
-                    existing = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{int(req['chat_id'])}&select=entitlement,payment_reference,revoked_at") or []
+                    uid = int(req["chat_id"])
+                    # Local SQLite payment IDs may restart after deployment.
+                    # Scope new references to both user and request; preserve old
+                    # references for existing entitlements without modifying them.
+                    reference = f"pioneer-payment-request:{uid}:{rid}"
+                    existing = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{uid}&select=entitlement,payment_reference,revoked_at") or []
                     already_granted = any(
                         row.get("entitlement") == "PIONEER_LIFETIME"
-                        and row.get("payment_reference") == reference
-                        and row.get("revoked_at") is None
-                        for row in existing
+                        and row.get("revoked_at") is None for row in existing
                     )
                     if not already_granted:
-                        # A reference already assigned to another user is a payment
-                        # ownership conflict, never a reason to overwrite an entitlement.
                         by_reference = sb("GET",
                             f"pioneer_entitlements?payment_reference=eq.{reference}&select=telegram_user_id,revoked_at") or []
                         if by_reference:
-                            print("PIONEER PAYMENT OWNER CONFLICT:",
-                                  f"payment_id={rid}", f"request_user={req['chat_id']}",
-                                  f"entitlement_user={by_reference[0].get('telegram_user_id')}", flush=True)
                             return send(cid,
-                                f"⚠️ Payment ID #{rid} sudah terikat pada akaun Pioneer lain.\\n"
-                                "Akses pelanggan belum diubah. Semak pemilik permohonan dan bukti bayaran secara manual.\\n"
-                                "Jangan minta pelanggan membayar semula.")
-                        grant_pioneer(sb, req["chat_id"], reference, cid, verified=True)
+                                f"⚠️ Rujukan bayaran #{rid} sudah digunakan.\\n"
+                                "Jangan aktifkan atau minta bayaran semula sebelum audit.")
+                        grant_pioneer(sb, uid, reference, cid, verified=True)
                 except Exception as exc:
                     # Do not mark payment approved when the entitlement grant fails.
                     # Expose a safe, actionable category to admin; full details stay in logs.
