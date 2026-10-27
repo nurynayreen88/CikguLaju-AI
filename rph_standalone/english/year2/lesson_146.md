@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils locate four of five details on the printed page 114 and write two short answers.
 **Success criteria:** four accurate detail responses and two understandable written answers.
 **Teaching materials:** Super Minds 1 Student's Book p.114, pictures, word cards and classroom resources.
+**Original supplementary passage, not SB p.114:** Ali goes to the beach with his aunt. He brings a blue towel and a yellow bucket. He finds three shells beside a rock. **Five facts/key:** Ali, aunt, blue towel, yellow bucket, three shells. **Written questions/key:** Who is with Ali? His aunt. Where are the shells? Beside a rock.
+
 **Audited source mapping:** Student's Book p.114 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a textbook transcription. Verify official SOW/TB and A4/PDF before READY.
