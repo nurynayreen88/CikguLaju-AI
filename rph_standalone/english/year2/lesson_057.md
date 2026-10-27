@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.83, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.83 (Year 2 SOW mapping audit); exact Teacher's Book sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display two clothing pictures and ask pupils to name the items.
 **Pupils:** Identify familiar clothing and colours.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Use Student's Book p.83 as the source context, model short descriptions and two simple question-answer exchanges, and check comprehension.
 **Pupils:** Repeat and practise short descriptions with picture cues.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Organise paired picture-description exchanges; rotate partners and prompt pupils to listen before answering.
 **Pupils:** Describe three items and answer two questions from a partner.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Use an individual checklist for three descriptions and two answers; record intelligibility and relevance, and give corrective feedback.
 **Pupils:** Give two oral answers individually for PBD evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite one pair to demonstrate and review useful phrases.
 **Pupils:** Say one clothing description.
 
