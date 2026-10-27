@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.87, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.87 (Year 2 audit); exact Teacher's Book steps not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show clothing picture cards and elicit known words.
 **Pupils:** Name familiar clothing.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Preview Student's Book p.87 and model distinguishing two similar spoken words.
 **Pupils:** Listen and point to the correct card.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use page-linked audio if available, otherwise a labelled teacher-created five-item listening sequence; provide picture and printed-word cards.
 **Pupils:** Identify five spoken items and match four printed words independently.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's five listening choices and four word-picture matches; provide corrective feedback.
 **Pupils:** Submit individual responses.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review one listening clue and a word match.
 **Pupils:** Share one word heard.
 
