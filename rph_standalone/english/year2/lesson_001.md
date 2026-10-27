@@ -5,7 +5,7 @@
 **Complementary SK/SP:** 2.3 / 2.3.1
 **Learning objectives (draft):** Pupils write two picture-based sentences and read one aloud.
 **Success criteria (draft):** Two understandable sentences with punctuation and one intelligible oral response.
-**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
+**Materials:** Pictures, word cards, writing paper. SOW classification: non-textbook lesson; no Student's Book page assigned.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures connected to Introduction and elicit two words.
@@ -27,4 +27,4 @@
 **Teacher:** Review two useful expressions.
 **Pupils:** Demonstrate one learned response.
 
-**QA status:** DRAFT — Teacher's Book sequence and page references not verified; do not publish as final.
+**QA status:** DRAFT — SOW unit, SK/SP and source classification checked against Year 2 mapping; Teacher's Book procedure and activity alignment remain unverified. Do not publish as final.
