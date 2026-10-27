@@ -16,6 +16,10 @@ def format_usage_summary(stats):
     rows = [
         '📊 <b>CIKGULAJU AI — STATISTIK ADMIN</b>',
         '',
+        f"👥 Pengguna direkod: <b>{int(stats.get('tracked_users', 0))}</b>",
+        f"📄 Pernah berjaya jana RPH: <b>{int(stats.get('users_with_rph', 0))}</b>",
+        f"🔎 Aktif tetapi belum berjaya jana RPH: <b>{int(stats.get('active_without_rph', 0))}</b>",
+        '',
         f"👥 Aktif hari ini: <b>{int(stats['active_today'])}</b>",
         f"👥 Aktif 7 hari: <b>{int(stats['active_7d'])}</b>",
         f"👥 Aktif 30 hari: <b>{int(stats['active_30d'])}</b>",
@@ -31,5 +35,5 @@ def format_usage_summary(stats):
             rows.append(f"• {escape(str(name))}: {int(count)}")
     else:
         rows.append('Tiada rekod lagi.')
-    rows.extend(['', '<i>Statistik berdasarkan peristiwa yang direkodkan sahaja.</i>'])
+    rows.extend(['', '<i>Statistik berdasarkan peristiwa yang direkodkan sahaja; bukan jumlah pendaftaran keseluruhan.</i>'])
     return '\n'.join(rows)
