@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer one question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Read a short description twice and model how to listen for one key word.
+**Teacher:** Use page 62 as the mapped resource and model listening for a key word in a teacher-created description; do not assume the page task sequence.
 **Pupils:** Observe and give one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils match three spoken details to pictures and check in pairs. Provide feedback and support.
-**Pupils:** Practise and share answers.
+**Teacher:** Read three short spoken clues and guide pupils to select matching pictures.
+**Pupils:** Match three spoken details to pictures.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
