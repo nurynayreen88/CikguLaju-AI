@@ -76,8 +76,24 @@ def inspect(source):
         if isinstance(n, ast.Call) and isinstance(n.func, ast.Name)
         and n.func.id.startswith("_")
     })
+    # Functions are resolved at call time in Python. Late redefinitions can
+    # change the behavior of an earlier renderer class without changing it.
+    helper_names = {"_pi_jawi_font_v2606", "_pi_exact_jawi_font_v2604",
+                    "_jawi_font_path_v25213", "_font_cmap_v25226"}
+    helper_definitions = {}
+    for node in tree.body:
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)) and node.name in helper_names:
+            helper_definitions.setdefault(node.name, []).append(node.lineno)
+    late_overrides = {name: lines for name, lines in helper_definitions.items()
+                      if len(lines) > 1}
+    if late_overrides:
+        print("WARNING: runtime helper functions are redefined; isolated smoke "
+              "stubs cannot establish production behavior: "
+              + json.dumps(late_overrides, sort_keys=True))
     return {"class_definitions":len(versions),"versions":versions,
-            "aliases":aliases,"final_renderer_helper_calls":final_helpers}
+            "aliases":aliases,"final_renderer_helper_calls":final_helpers,
+            "helper_definition_lines":helper_definitions,
+            "redefined_runtime_helpers":late_overrides}
 
 
 if __name__=="__main__":
