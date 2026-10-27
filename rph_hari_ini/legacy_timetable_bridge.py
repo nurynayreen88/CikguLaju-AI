@@ -13,7 +13,7 @@ def candidate_from_legacy_row(*, teacher_id, school_year, session_date,
                               row, lesson_total):
     if type(teacher_id) is not int or type(school_year) is not int:
         return None
-    if not isinstance(session_date, date) or session_date.year != school_year:
+    if type(session_date) is not date or session_date.year != school_year:
         return None
     if not isinstance(row, dict):
         return None
