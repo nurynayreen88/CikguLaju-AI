@@ -67,7 +67,18 @@ def inspect(source):
         print("WARNING: isolated first/last Flowable smoke test omits "
               f"{len(versions)-2} intermediate renderer definitions; "
               "production PDF rendering remains unverified.")
-    return {"class_definitions":len(versions),"versions":versions,"aliases":aliases}
+    # Surface the exact helper calls made by the final implementation so
+    # the next production-equivalent harness can load those dependencies.
+    final_node = next(node for node in reversed(tree.body)
+                      if isinstance(node, ast.ClassDef) and node.name == TARGET)
+    final_helpers = sorted({
+        n.func.id for n in ast.walk(final_node)
+        if isinstance(n, ast.Call) and isinstance(n.func, ast.Name)
+        and n.func.id.startswith("_")
+    })
+    return {"class_definitions":len(versions),"versions":versions,
+            "aliases":aliases,"final_renderer_helper_calls":final_helpers}
+
 
 if __name__=="__main__":
     print(json.dumps(inspect(SOURCE.read_text(encoding="utf-8")),indent=2))
