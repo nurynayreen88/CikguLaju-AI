@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 4.3 / 4.3.2
-**Learning objective:** Pupils practise language arts 29 using language from At the beach.
+**Learning objectives:** Pupils compose a four-line beach rhyme and write two meaningful captions.
+**Success criteria:** four coherent rhyme lines and two understandable captions.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
