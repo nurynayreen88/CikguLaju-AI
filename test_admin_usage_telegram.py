@@ -32,6 +32,32 @@ class AdminUsageTelegramTests(unittest.TestCase):
         self.assertEqual(
             sent[0][1]['kb'][1][0]['callback_data'], 'admin_panel')
 
+    def test_refresh_is_authorized_and_reopens_summary(self):
+        sent = []
+        opened = []
+        def db_factory():
+            opened.append(True)
+            return sqlite3.connect(':memory:')
+        for _ in range(2):
+            self.assertTrue(show_admin_usage(
+                42, lambda cid: cid == 42, db_factory,
+                lambda cid, message, **kwargs: sent.append((message, kwargs))))
+        self.assertEqual(len(opened), 2)
+        self.assertEqual(len(sent), 2)
+        for message, kwargs in sent:
+            self.assertIn('STATISTIK ADMIN', message)
+            self.assertEqual(kwargs['kb'][0][0]['callback_data'], 'admin_usage_stats')
+            self.assertEqual(kwargs['kb'][1][0]['callback_data'], 'admin_panel')
+
+    def test_non_admin_refresh_rejected(self):
+        sent = []
+        def forbidden_database():
+            raise AssertionError('Non-admin refresh accessed database')
+        self.assertFalse(show_admin_usage(
+            99, lambda cid: False, forbidden_database,
+            lambda cid, message, **kwargs: sent.append(message)))
+        self.assertIn('hanya untuk admin', sent[0])
+
     def test_html_escaped_and_zero_stats(self):
         stats = dict(active_today=1, active_7d=2, active_30d=3,
                      rph_success=4, rph_failed=0,
