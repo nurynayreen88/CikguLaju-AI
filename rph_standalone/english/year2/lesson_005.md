@@ -5,7 +5,7 @@
 **Complementary SK/SP:** 1.2 / 1.2.1
 **Learning objectives (draft):** Pupils perform a short teacher-created free-time rhyme with two actions and recognise two spoken words.
 **Success criteria (draft):** Two coordinated actions and two accurate listening choices.
-**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
+**Materials:** Pictures, word cards and teacher-created rhyme (to be supplied). SOW classification: non-textbook; no Student's Book page assigned.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures connected to Free Time and elicit two words.
@@ -27,4 +27,4 @@
 **Teacher:** Review two useful expressions.
 **Pupils:** Demonstrate one learned response.
 
-**QA status:** DRAFT — Teacher's Book sequence and page references not verified; do not publish as final.
+**QA status:** DRAFT — SOW unit, SK/SP and source classification checked against Year 2 mapping; Teacher's Book procedure and activity alignment remain unverified. Do not publish as final.
