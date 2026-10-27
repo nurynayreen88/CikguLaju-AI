@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer one question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Read a four-sentence text and model finding a supporting word.
+**Teacher:** Use page 63 as the mapped resource and model recognising printed words and locating a supporting clue.
 **Pupils:** Observe and give one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils underline clues and answer two questions. Provide feedback and support.
-**Pupils:** Practise and share answers.
+**Teacher:** Guide four printed word identifications and two evidence-finding prompts.
+**Pupils:** Identify four words and locate two clues.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
