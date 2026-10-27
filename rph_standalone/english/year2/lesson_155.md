@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Assign roles A and B, guide paired rehearsal, then have pupils exchange roles so each pupil speaks all four lines.
-**Pupils:** Perform four dialogue lines.
+**Teacher (25 min):** Model the introduction, assign roles A and B, then guide pupils to introduce themselves and their partner before rehearsing all four dialogue lines in both roles.
+**Pupils:** Introduce self and partner, then rehearse four expressive dialogue lines.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Observe each pupil delivering four intelligible lines with suitable expression and record individual performance evidence.
+**Teacher (10 min):** Record each pupil's clear self-and-partner introduction and four expressive dialogue lines.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
