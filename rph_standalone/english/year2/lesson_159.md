@@ -15,7 +15,7 @@
 **Pupils:** Name two relevant words.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a robot sentence with clear spacing.
+**Teacher (15 min):** Model a robot sentence with a capital letter, clear word spacing and a full stop.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Write three sentences and correct capital letters and full stops.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record each pupil's three written sentences and two punctuation corrections against the success criteria.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
