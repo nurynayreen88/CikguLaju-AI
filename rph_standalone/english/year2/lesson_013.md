@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing mapping):** 3.1 / 3.1.3
 **Complementary SK/SP (existing mapping):** 1.1 / 1.1.1
-**Objective (draft):** Pupils can locate two details in a short text.
+**Learning objectives (draft):** Pupils recognise four printed free-time words and locate two clues in a short illustrated text.
+**Success criteria (draft):** Four recognised words and two correctly located clues.
 **Materials:** Super Minds 1 Student's Book p.63, topic pictures, word cards and exercise books. The page mapping is confirmed in the prior Year 2 SOW audit; the exact Teacher's Book procedure has not been checked.
 
 ## Set Induction (5 minutes)
