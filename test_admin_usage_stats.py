@@ -2,7 +2,7 @@ import sqlite3
 import unittest
 import tempfile
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from admin_usage_stats import initialize, record_event, record_confirmed_delivery, record_daily_active, summary
 
 class UsageStatsTests(unittest.TestCase):
@@ -77,6 +77,16 @@ class UsageStatsTests(unittest.TestCase):
         self.assertTrue(record_daily_active(db, 123, second))
         self.assertEqual(summary(db, second)['active_today'], 1)
         self.assertEqual(summary(db, second)['active_7d'], 1)
+
+    def test_timezone_offset_normalized_to_utc(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        malaysia = timezone(timedelta(hours=8))
+        local = datetime(2026, 10, 28, 7, 30, tzinfo=malaysia)
+        utc = datetime(2026, 10, 27, 23, 30, tzinfo=timezone.utc)
+        self.assertTrue(record_daily_active(db, 123, local))
+        self.assertFalse(record_daily_active(db, 123, utc))
+        self.assertEqual(summary(db, utc)['active_today'], 1)
 
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
