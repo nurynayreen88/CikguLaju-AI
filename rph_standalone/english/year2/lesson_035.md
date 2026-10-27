@@ -40,3 +40,5 @@ In the bathroom, wash each day.”
 **Pupils:** Recite and share one room activity.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — original rhyme, actions and sequencing key included. Official TB/SOW alignment and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
