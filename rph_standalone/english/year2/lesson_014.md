@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing mapping):** 4.3 / 4.3.1
 **Complementary SK/SP (existing mapping):** 1.2 / 1.2.2
-**Objective (draft):** Pupils can write two simple sentences.
+**Learning objectives (draft):** Pupils write two free-time sentences with capital letters and full stops and identify two spoken activity words.
+**Success criteria (draft):** Two correctly punctuated sentences and two accurate listening responses.
 **Materials:** Super Minds 1 Student's Book p.64, topic pictures, word cards and exercise books. The page mapping is confirmed in the prior Year 2 SOW audit; the exact Teacher's Book procedure has not been checked.
 
 ## Set Induction (5 minutes)
