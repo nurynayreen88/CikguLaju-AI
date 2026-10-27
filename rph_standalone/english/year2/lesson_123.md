@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a robot picture and elicit two predictions.
 **Pupils:** Name known robot words.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model finding evidence in a short teacher-created robot paragraph.
 **Pupils:** Locate one printed fact.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Set five factual prompts and two written comprehension questions.
 **Pupils:** Underline evidence and write two short answers.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five fact responses and two written answers per pupil.
 **Pupils:** Submit individual reading evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review finding evidence in print.
 **Pupils:** Share one fact.
 
