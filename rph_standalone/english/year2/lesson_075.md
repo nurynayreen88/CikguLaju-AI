@@ -1,33 +1,34 @@
 # English Year 2 — Lesson 75: Language Arts 15
 
-**Unit:** Get dressed!
-**Main SK/SP:** 5.3 / 5.3.1
-**Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives:** Pupils create a four-line clothing-themed mini-dialogue with a partner and perform three lines intelligibly.
-**Success criteria:** Four lines drafted and three clear spoken lines.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (prior mapping; official SOW verification pending):** 5.3 / 5.3.1  
+**Complementary SK/SP (prior mapping; official SOW verification pending):** 2.1 / 2.1.5  
+**Duration:** 60 minutes  
+**Source classification:** NON-TEXTBOOK. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
+**Learning objective:** Pupils draft a four-line clothing dialogue and perform three lines intelligibly.  
+**Success criteria:** Achieve the measurable targets in the objective independently.  
+**Materials:** Board, picture/word cards, exercise books and resources below.
+
+**Original four-line dialogue:** “A: Where is my red hat? / B: It's on the chair! / A: Thank you! I can go outside. / B: Have fun! Wear your shoes!” **Variations:** *red hat*→*blue jacket*; *chair*→*bed*.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show two outfit pictures and invite an imaginative situation.
-**Pupils:** Suggest a character or setting.
+**Teacher:** Show two outfit pictures and elicit familiar words.  
+**Pupils:** Name items and colours.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a four-line teacher-created dialogue using familiar clothing vocabulary.
-**Pupils:** Practise two model lines.
+**Teacher:** Act out the original dialogue with a pupil and model changing one clothing word.  
+**Pupils:** Follow the model and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide pairs to adapt four lines and rehearse with expressive voices.
-**Pupils:** Draft and perform a four-line dialogue.
+**Teacher:** Pairs adapt four lines, rehearse with gestures and perform to another pair.  
+**Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's participation and at least three clear lines.
-**Pupils:** Perform individually within a pair.
+**Teacher:** Check four meaningful written lines and three intelligible spoken lines. Record independent performance and support required.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Invite a short performance and recap a useful expression.
-**Pupils:** Share a favourite line.
+**Teacher:** Recap two words and ask for a relevant sentence.  
+**Pupils:** Share a word and sentence.
 
-**QA:** Teacher-designed non-textbook adaptation; detailed SOW task not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; official SOW, Teacher's Book steps for mapped pages, and PDF/A4 verification pending. NOT READY.
