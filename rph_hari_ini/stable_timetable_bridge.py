@@ -39,7 +39,8 @@ def verified_stable_session(*, teacher_id, school_year, session_date, row,
         return False, "subject_mapping_mismatch", None
     # Session ID deliberately excludes display name to survive class renames.
     stable_id = (f"{teacher_id}:{school_year}:{session_date.isoformat()}:"
-                 f"{identity.class_id}:{subject_key}:{row['start']}-{row['end']}")
+                 f"{identity.class_id}:{subject_key}:"
+                 f"{row['start'].strip()}-{row['end'].strip()}")
     stable = replace(candidate, class_key=identity.class_id,
                      subject_key=subject_key, session_id=stable_id)
     decision = verify_session(
