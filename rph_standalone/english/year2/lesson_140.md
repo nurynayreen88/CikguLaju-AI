@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.3 / 5.3.1
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objective:** Pupils practise language arts 28 using language from At the beach.
+**Learning objectives:** Pupils create a four-line beach dialogue and identify four details heard in a partner performance.
+**Success criteria:** four coherent dialogue lines and four accurate listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
