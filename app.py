@@ -46462,3 +46462,79 @@ def _rph_rows(st, *args, **kwargs):
     return rows
 CIKGULAJU_ENGLISH_RPH_TEACHER_TEXT_GUARD = '20261025'
 # === END ENGLISH RPH QUALITY GUARD ===
+
+
+# === TRIAL BALANCE MAIN MENU 20261026 ===
+# Do not monkey-patch global send: Telegram requests can overlap across workers.
+def menu(cid, show_persistent=False):
+    if show_persistent:
+        install_menu_button(cid)
+    kb = [
+        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
+        [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
+        [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
+        [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
+        [{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
+    ]
+    if _is_admin(cid):
+        kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
+    try:
+        access = _access_info(cid)
+        if access.get('active') or _is_permanent_vip_v25267(cid):
+            quota = '♾️ <b>Akses tanpa had</b>'
+        else:
+            quota = f'🎁 <b>Baki janaan RPH: {_trial_balance(cid)}/5</b>'
+    except Exception:
+        quota = '⚠️ <b>Baki janaan tidak dapat disemak.</b>'
+    body = (
+        '🚀 <b>CIKGULAJU AI</b>\\n<i>Pembantu pintar persediaan PdP guru.</i>\\n\\n'
+        '🚧 <b>STATUS: DALAM PEMBANGUNAN</b>\\n'
+        'Fungsi dan kandungan sedang dilengkapkan secara berperingkat.\\n\\n'
+        '📚 <b>SEDIAKAN BAHAN PdP</b>\\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\\n\\n'
+        '⚡ <b>RPH HARI INI</b>\\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\\n\\n'
+        '📅 <b>RPT 2027</b>\\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\\n\\n'
+        '👤 <b>PROFIL SAYA</b>\\nUrus kelas, jadual waktu dan maklumat cikgu.\\n\\n'
+        '🏆 <b>JADI PIONEER</b>\\nTawaran Pioneer sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\\n\\n'
+        '💳 <b>LANGGANAN</b>\\nBulanan: <b>RM8/sebulan</b>\\nTahunan: <b>RM50/setahun</b>\\n'
+        'Akan datang. Langganan belum dibuka.\\n\\n'
+        + quota
+    )
+    return send(cid, body, kb)
+CIKGULAJU_TRIAL_MENU_20261026 = True
+# === END TRIAL BALANCE MAIN MENU ===
+
+
+# === SELECTED RPH TRIAL GATE 20261027 ===
+# Existing Supabase RPC is the single source of truth. Other materials do not use RPH trials.
+_RPH_SELECTED_SUBMIT_BEFORE_20261027 = _submit_materials_v2528
+def _submit_materials_v2528(cid):
+    ss = state.setdefault(cid,{})
+    chosen = set(ss.get('_materials_selected_v2528') or [])
+    if 'rph' not in chosen:
+        return _RPH_SELECTED_SUBMIT_BEFORE_20261027(cid)
+    # No trial is spent on the selection screen or on a failed RPH.
+    ss.pop('_free_generation_pending_v25282',None)
+    if not _credit_gate(cid, dict(ss,task='rph')):
+        return None
+    ss['_selected_rph_delivery_pending_20261027'] = True
+    try:
+        return _RPH_SELECTED_SUBMIT_BEFORE_20261027(cid)
+    finally:
+        ss.pop('_selected_rph_delivery_pending_20261027',None)
+        ss.pop('_free_generation_pending_v25282',None)
+
+_RPH_SEND_DOCUMENT_BEFORE_20261027 = send_document
+def send_document(cid,path,caption=''):
+    result = _RPH_SEND_DOCUMENT_BEFORE_20261027(cid,path,caption)
+    ss = state.setdefault(cid,{})
+    if ss.get('_selected_rph_delivery_pending_20261027') and 'RPH' in str(caption or '').upper():
+        if not _telegram_delivery_ok_v25279(result):
+            # Underlying material engine catches this and reports a failed RPH.
+            # Never claim success or spend a trial on an unacknowledged PDF.
+            raise RuntimeError('Telegram RPH delivery not confirmed')
+        ss['_selected_rph_delivery_pending_20261027'] = False
+        _consume_free_after_success_v25282(cid,'successful_selected_rph_delivery')
+    return result
+
+CIKGULAJU_RPH_TRIAL_SELECTED_20261027 = True
+# === END SELECTED RPH TRIAL GATE ===
