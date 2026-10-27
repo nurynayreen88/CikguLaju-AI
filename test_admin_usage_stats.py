@@ -1,5 +1,7 @@
 import sqlite3
 import unittest
+import tempfile
+from pathlib import Path
 from datetime import datetime, timezone
 from admin_usage_stats import initialize, record_event, record_confirmed_delivery, record_daily_active, summary
 
@@ -40,6 +42,20 @@ class UsageStatsTests(unittest.TestCase):
         self.assertFalse(record_daily_active(db, 123, now))
         self.assertTrue(record_daily_active(db, 456, now))
         self.assertEqual(summary(db, now)['active_today'], 2)
+
+    def test_daily_activity_persists_across_connections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = str(Path(tmp) / 'usage.sqlite')
+            first = sqlite3.connect(path)
+            initialize(first)
+            now = datetime(2026, 10, 27, 3, 0, tzinfo=timezone.utc)
+            self.assertTrue(record_daily_active(first, 123, now))
+            first.close()
+            second = sqlite3.connect(path)
+            self.assertFalse(record_daily_active(second, 123, now))
+            self.assertEqual(summary(second, now)['active_today'], 1)
+            self.assertEqual(second.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+            second.close()
 
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
