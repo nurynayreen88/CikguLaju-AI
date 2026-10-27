@@ -23,7 +23,8 @@ def inspect_pdf(path):
     for page in doc:
         rect = page.rect
         text = page.get_text("text")
-        images = page.get_images(full=True)\n        image_blocks = [b for b in page.get_text("dict").get("blocks", []) if b.get("type") == 1]
+        images = page.get_images(full=True)
+        image_blocks = [b for b in page.get_text("dict").get("blocks", []) if b.get("type") == 1]
         blocks = page.get_text("dict").get("blocks", [])
         outside = []
         for block in blocks:
@@ -38,7 +39,8 @@ def inspect_pdf(path):
             "a4_portrait": abs(rect.width - 595.28) < 3 and abs(rect.height - 841.89) < 3,
             "text_chars": len(text),
             "arabic_text_chars": sum(0x0600 <= ord(ch) <= 0x08FF for ch in text),
-            "image_count": len(images),\n            "placed_image_blocks": len(image_blocks),
+            "image_count": len(images),
+            "placed_image_blocks": len(image_blocks),
             "out_of_page_text_blocks": outside,
         })
     doc.close()
