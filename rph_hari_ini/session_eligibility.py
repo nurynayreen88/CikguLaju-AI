@@ -44,7 +44,9 @@ def verify_session(session: TimetableSession, evidence: CalendarEvidence,
         return Eligibility(False, "invalid_teacher")
     if teacher_id != session.teacher_id:
         return Eligibility(False, "teacher_mismatch")
-    if not isinstance(registered_class_keys, frozenset):
+    if (not isinstance(registered_class_keys, frozenset)
+            or any(not isinstance(key, str) or not key.strip()
+                   for key in registered_class_keys)):
         return Eligibility(False, "invalid_registered_classes")
     if not isinstance(session.class_key, str) or not session.class_key or session.class_key not in registered_class_keys:
         return Eligibility(False, "unregistered_class")
