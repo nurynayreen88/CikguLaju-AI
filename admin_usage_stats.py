@@ -46,6 +46,9 @@ def record_event(connection, user_id, event_type, subject=None, grade=None, when
 def summary(connection, now=None):
     """Counts are based only on recorded events, not inferred history."""
     now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        raise ValueError('Summary timestamp must include timezone')
+    now = now.astimezone(timezone.utc)
     day = now.replace(hour=0, minute=0, second=0, microsecond=0)
     def unique_since(since):
         return connection.execute(
