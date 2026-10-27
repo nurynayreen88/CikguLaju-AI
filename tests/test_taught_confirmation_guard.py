@@ -63,6 +63,12 @@ class GuardTests(unittest.TestCase):
         self.assertFalse(validate_confirmation(self.make(lesson_sequence=161,
                          last_confirmed_sequence=160)).allowed)
 
+    def test_nonstring_identity_rejected(self):
+        for field in ("teacher_id", "class_id", "subject_id", "session_instance_id"):
+            with self.subTest(field=field):
+                self.assertEqual(validate_confirmation(self.make(**{field: None})).reason,
+                                 "missing_identity")
+
     def test_missing_identity(self):
         self.assertEqual(validate_confirmation(self.make(class_id="")).reason,
                          "missing_identity")
