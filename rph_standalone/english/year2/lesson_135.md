@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils create a labelled beach collage and respond to three spoken cues.
 **Success criteria:** one labelled collage and three appropriate listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original collage brief:** Draw a sun, shell, bucket and ball; label all four. **Spoken cues:** Point to the shell; show the bucket; touch the ball. **Key:** shell; bucket; ball.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original teacher-created resource. Official SOW and PDF/A4 checks pending. NOT READY.
