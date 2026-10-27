@@ -1,34 +1,36 @@
 # English Year 2 — Lesson 53: Speaking 11
 
-**Unit:** The old house
-**Main SK/SP:** 2.2 / 2.2.2
-**Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objectives:** Pupils ask and answer at least three simple questions about a house picture with a partner and respond appropriately to at least two spoken prompts.
-**Success criteria:** 3 intelligible question-answer exchanges and 2 relevant listening responses.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
+**Unit:** The old house  
+**Main SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.2  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
+**Duration:** 60 minutes  
+**Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
+**Objective:** Pupils ask and answer three questions about house pictures and identify two spoken details.  
+**Success criteria:** Meet each component of the objective independently.  
+**Materials:** Board, exercise books, picture/word cards and the text below.
+
+**Picture A:** kitchen with one table, bedroom with one bed, living room with one sofa. **Picture B:** kitchen with two chairs, bedroom with two beds, living room with two sofas.
+**Original dialogue:** “Is there a table in your kitchen?” “Yes, there is.” “Are there two beds in your bedroom?” “Yes, there are.” “What's in your living room?” “There is a sofa.”
+**Listening prompts:** “Point to the room with two beds.” — bedroom B. “Point to the room with one sofa.” — living room A.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display two contrasting house pictures and elicit what pupils notice.
-**Pupils:** Name visible features and listen to a partner's description.
+**Teacher:** Display relevant picture cards and elicit two familiar words.  
+**Pupils:** Name the pictures and words.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model three simple question-answer exchanges using the pictures; demonstrate taking turns and asking for repetition politely.
-**Pupils:** Repeat the exchanges, then practise them with picture support.
+**Teacher:** Show both picture descriptions and model all three dialogue exchanges, stressing *is* and *are*.  
+**Pupils:** Follow the example and practise with support.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise an information-gap task using two different teacher-prepared house pictures; circulate, prompt and record oral evidence.
-**Pupils:** Take turns asking three questions, answering from their picture and listening to their partner.
+**Teacher:** Pairs take different picture cards, ask three questions without showing cards, swap roles and respond to the two spoken prompts.  
+**Pupils:** Complete the tasks and improve answers after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Use an individual checklist for three exchanges and two listening responses; note intelligibility and relevance, then reteach as needed.
-**Pupils:** Give individual oral responses to two prompts.
+**Teacher:** Check three independent question-answer exchanges and two correct listening choices. Note independent responses and support required.  
+**Pupils:** Demonstrate the success criteria individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Invite pairs to demonstrate a short exchange and recap turn-taking.
-**Pupils:** Share one useful question.
+**Teacher:** Review two target words and invite a relevant example.  
+**Pupils:** Share one word and a short sentence.
 
-**Differentiation:** Support—question frames and picture choices; extension—ask a follow-up question.
-**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** COMPLETE TEACHER-DEVELOPED STANDALONE DRAFT. Official SOW SK/SP and PDF/A4 checks pending. Not READY.
