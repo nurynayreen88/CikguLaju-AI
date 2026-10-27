@@ -17,11 +17,11 @@
 **Pupils:** Rehearse one question.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise partner exchanges with robot picture prompts.
+**Teacher (25 min):** Pairs adapt the dialogue, exchange four turns and ask two questions.
 **Pupils:** Take four turns and ask two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record four turns and two questions per pupil.
+**Teacher (10 min):** Record four meaningful turns and two clear questions. Note independent performance and support needed.
 **Pupils:** Submit individual speaking evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +31,5 @@
 **QA:** Exact Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
