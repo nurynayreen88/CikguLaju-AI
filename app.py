@@ -46635,3 +46635,14 @@ def callback(cid, d):
                         [[{'text':'⬅️ Kembali ke Admin','callback_data':'admin_panel'}]])
     return _ADMIN_USAGE_BUSINESS_CALLBACK_BASE(cid, d)
 # === END ADMIN USAGE BUSINESS METRICS ===
+
+# === RPH WORD/PDF CHECKBOX AVAILABILITY FIX ===
+_MATERIALS_RPH_WORD_BASE = _available_materials_v2528
+def _available_materials_v2528(ss):
+    items = list(_MATERIALS_RPH_WORD_BASE(ss) or [])
+    if 'rph' in items and 'rph_word' not in items:
+        items.insert(items.index('rph') + 1, 'rph_word')
+    return items
+_MAT_META_V2528['rph'] = ('📕', 'RPH (PDF)')
+_MAT_META_V2528['rph_word'] = ('📘', 'RPH (Word)')
+# === END RPH WORD/PDF CHECKBOX AVAILABILITY FIX ===
