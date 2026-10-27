@@ -25,6 +25,24 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(db.execute('SELECT name FROM existing_users').fetchone()[0], 'preserved')
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_generic_event_timezone_normalized(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        malaysia = timezone(timedelta(hours=8))
+        local_time = datetime(2026, 10, 27, 0, 30, tzinfo=malaysia)
+        record_event(db, 123, 'rph_success', when=local_time)
+        stored = db.execute(
+            "SELECT created_at FROM admin_usage_events WHERE event_type='rph_success'"
+        ).fetchone()[0]
+        self.assertEqual(stored, '2026-10-26T16:30:00+00:00')
+        self.assertEqual(summary(db, datetime(2026, 10, 26, 17, 0, tzinfo=timezone.utc))['active_today'], 1)
+
+    def test_generic_event_rejects_naive_timestamp(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        with self.assertRaises(ValueError):
+            record_event(db, 123, 'bot_active', when=datetime(2026, 10, 27))
+
     def test_delivery_idempotency(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
