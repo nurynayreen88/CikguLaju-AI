@@ -37,3 +37,5 @@
 **Pupils:** Read a sentence and explain their check.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — plan, examples, frames, questions and key supplied. Official SOW alignment and A4/PDF QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
