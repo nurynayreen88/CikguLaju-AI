@@ -9,23 +9,23 @@
 **Audited source mapping:** Student's Book p.78 (Year 2 SOW mapping audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce The old house with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show house pictures and elicit two familiar words.
+**Pupils:** Name two familiar words.
 
 ## Activity 1 — Model
-**Teacher:** Model the speaking 9 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model two house questions and a short description; page 78 is a mapped resource only.
+**Pupils:** Give one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Guide paired role changes and one independent description.
+**Pupils:** Ask and answer two questions and describe one room.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record each pupil's independent evidence against both success criteria.
+**Pupils:** Demonstrate the skill independently.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review two useful house words.
+**Pupils:** Share one learned word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
