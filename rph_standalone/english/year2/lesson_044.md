@@ -1,31 +1,34 @@
 # English Year 2 — Lesson 44: Speaking 9
 
-**Unit:** The old house
-**Main SK/SP:** 2.1 / 2.1.5
-**Complementary SK/SP:** 2.2 / 2.2.2
-**Learning objectives (draft):** Pupils ask and answer two questions about rooms and give one short description.
-**Success criteria (draft):** two intelligible exchanges and one relevant description.
-**Teaching materials:** Super Minds 1 Student's Book p.78, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.78 (Year 2 SOW mapping audit); Teacher's Book sequence not yet verified.
+**Unit:** The old house  
+**Main SK/SP (prior mapping; SOW verification pending):** 2.1 / 2.1.5  
+**Complementary SK/SP (prior mapping; SOW verification pending):** 2.2 / 2.2.2  
+**Duration:** 60 minutes  
+**Mapped resource:** Super Minds 1 Student's Book SB p.78. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
+**Objective:** Pupils ask and answer two questions and describe one room.  
+**Success criteria:** Independently complete all stated components.  
+**Materials:** Board, room cards, exercise books and resources below.
+
+**Original room cards:** A — bedroom: bed and lamp; B — kitchen: table and two chairs; C — living room: sofa. **Dialogue:** “What's in the bedroom?” “There is a bed and a lamp.” “Are there two chairs in the kitchen?” “Yes, there are.” **Description:** “There is a sofa in the living room.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show house pictures and elicit two familiar words.
-**Pupils:** Name two familiar words.
+**Teacher:** Show room pictures and elicit two familiar house words.  
+**Pupils:** Name rooms or objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model two house questions and a short description; page 78 is a mapped resource only.
-**Pupils:** Give one supported response.
+**Teacher:** Model two complete exchanges and one room description using original room cards.  
+**Pupils:** Practise the model with support.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide paired role changes and one independent description.
-**Pupils:** Ask and answer two questions and describe one room.
+**Teacher:** Pairs take turns choosing hidden room cards, ask two questions and describe a room before revealing the card.  
+**Pupils:** Complete the activity and explain their answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's independent evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Observe two independent exchanges and one accurate description per pupil. Note accuracy and prompts needed.  
+**Pupils:** Respond independently.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Recap two words and ask for one relevant sentence.  
+**Pupils:** Share a sentence.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; textbook activity alignment, official SOW SK/SP and PDF/A4 QA pending. Not READY.
