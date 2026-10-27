@@ -1,4 +1,4 @@
-"""Render an actual app.py Jawi Flowable in isolation (no bot/DB import)."""
+"""Render a PARTIAL app.py Jawi Flowable smoke sample (not production-equivalent)."""
 import ast
 from pathlib import Path
 import re
@@ -14,6 +14,7 @@ source=Path("app.py").read_text(encoding="utf-8")
 tree=ast.parse(source)
 classes=[n for n in tree.body if isinstance(n,ast.ClassDef) and n.name=="_JawiRasterParagraph_v25213"]
 assert len(classes)>=2, "Expected multiple Jawi renderer overrides"
+print(f"PARTIAL SMOKE ONLY: exercising 2 of {len(classes)} renderer class definitions; not a production-equivalent PDF")
 # This is a limited visual smoke test only; the separate chain audit checks
 # all definitions. Never label this test production-equivalent.
 base=classes[0]
@@ -61,7 +62,7 @@ import fitz
 pdf=fitz.open(out)
 assert len(pdf)==1
 assert len(pdf[0].get_image_info())>=4
-print("Created",out,"bytes",out.stat().st_size,"embedded images",len(pdf[0].get_image_info()))
+print("Created PARTIAL smoke",out,"bytes",out.stat().st_size,"embedded images",len(pdf[0].get_image_info()))
 
 # Representative A4 RPH table stress test: same renderer in narrow columns,
 # with repeated activity text. This is not a DB-backed production RPH.
