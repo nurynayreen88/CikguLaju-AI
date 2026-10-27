@@ -26,13 +26,18 @@ def inspect(source):
     # Each override must use either the original Flowable or a previously saved
     # class alias; otherwise it silently discards previous behavior.
     seen={"Flowable"}
-    for v in versions:
-        for base in v["bases"]:
-            if base not in seen:
-                raise ValueError(f"Unknown renderer base at line {v['line']}: {base}")
-        for a in aliases:
-            if a["line"]>v["line"]: continue
-            if a["value"]==TARGET: seen.update(a["aliases"])
+    for node in tree.body:
+        if isinstance(node, ast.Assign):
+            # Track aliases in exact execution order, not after all class
+            # definitions: a base can be assigned between two overrides.
+            if isinstance(node.value, ast.Name) and node.value.id in seen:
+                seen.update(t.id for t in node.targets if isinstance(t,ast.Name))
+        elif isinstance(node, ast.ClassDef) and node.name==TARGET:
+            for base in node.bases:
+                name=ast.unparse(base)
+                if name not in seen:
+                    raise ValueError(f"Unknown renderer base at line {node.lineno}: {name}")
+            seen.add(TARGET)
     return {"class_definitions":len(versions),"versions":versions,"aliases":aliases}
 
 if __name__=="__main__":
