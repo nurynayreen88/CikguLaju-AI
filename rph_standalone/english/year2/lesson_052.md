@@ -33,3 +33,5 @@
 **Pupils:** Share one correct example.
 
 **QA:** Complete teacher-developed standalone draft; exact Teacher's Book/SOW alignment and PDF/A4 checks pending. Not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
