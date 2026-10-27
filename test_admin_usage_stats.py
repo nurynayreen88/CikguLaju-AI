@@ -199,6 +199,17 @@ class UsageStatsTests(unittest.TestCase):
                               [('Bahasa Melayu', 1), ('Sains', 1)])
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_future_activity_not_counted_in_current_windows(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        now = datetime(2026, 10, 27, 12, 0, tzinfo=timezone.utc)
+        record_daily_active(db, 101, now)
+        record_daily_active(db, 202, now + timedelta(days=1))
+        counts = summary(db, now)
+        self.assertEqual(counts['active_today'], 1)
+        self.assertEqual(counts['active_7d'], 1)
+        self.assertEqual(counts['active_30d'], 1)
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
