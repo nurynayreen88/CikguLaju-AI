@@ -1,0 +1,62 @@
+name: Jawi PDF renderer regression
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - fix/jawi-render-regression-20261026
+  workflow_dispatch:
+jobs:
+  jawi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install minimal audit dependencies
+        run: python -m pip install pillow fonttools pymupdf
+      - name: Compile application and Jawi utilities without importing app
+        run: python -m py_compile app.py tools/jawi_font_runs.py tools/check_rph_pdf_layout.py tools/validate_pi_standalone_bank.py tools/audit_pi_jawi_renderer_chain.py tools/jawi_renderer_smoke.py
+      - name: Audit full Jawi renderer class override chain
+        run: python tools/audit_pi_jawi_renderer_chain.py
+      - name: Run standalone Jawi regression tests
+        run: python -m unittest discover -s tests -p 'test_jawi*.py' -v
+      - name: Test effective v26.39 production font resolver
+        run: python -m unittest discover -s tests -p 'test_pi_jawi_v2639_font_resolver.py' -v
+      - name: Validate standalone Pendidikan Islam approval safety
+        run: python -m unittest discover -s tests -p 'test_pi_standalone_bank.py' -v
+      - name: Verify actual Pillow RAQM shaping runtime
+        run: |
+          python - <<'PY'
+          from PIL import ImageFont, features
+          assert features.check("raqm"), "Pillow RAQM is unavailable"
+          assert ImageFont.core.HAVE_RAQM, "Pillow does not expose RAQM"
+          print("RAQM shaping runtime available")
+          PY
+      - name: Install Jawi font for real Flowable PDF smoke test
+        run: sudo apt-get update -qq && sudo apt-get install -y fonts-noto-core fonts-hosny-amiri
+      - name: Generate PDF with actual app Jawi Flowable
+        run: |
+          python -m pip install reportlab
+          python tools/jawi_renderer_smoke.py
+          python tools/check_rph_pdf_layout.py jawi_renderer_actual_flowable_smoke.pdf --output jawi_renderer_actual_flowable_smoke_audit.json
+          python tools/check_rph_pdf_layout.py jawi_renderer_a4_table_stress.pdf --output jawi_renderer_a4_table_stress_audit.json
+          python tools/check_rph_pdf_layout.py jawi_renderer_full_class_chain_smoke.pdf --output jawi_renderer_full_class_chain_smoke_audit.json
+          python tools/check_rph_pdf_layout.py jawi_renderer_12class_v2639_resolver_smoke.pdf --output jawi_renderer_12class_v2639_resolver_smoke_audit.json
+          python tools/check_rph_pdf_layout.py jawi_renderer_12class_v2639_full_rph_layout.pdf --output jawi_renderer_12class_v2639_full_rph_layout_audit.json
+      - name: Upload actual Flowable PDF for visual inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: jawi-actual-flowable-pdf
+          path: |
+            jawi_renderer_actual_flowable_smoke.pdf
+            jawi_renderer_actual_flowable_smoke_audit.json
+            jawi_renderer_a4_table_stress.pdf
+            jawi_renderer_a4_table_stress_audit.json
+            jawi_renderer_full_class_chain_smoke.pdf
+            jawi_renderer_full_class_chain_smoke_audit.json
+            jawi_renderer_12class_v2639_resolver_smoke.pdf
+            jawi_renderer_12class_v2639_resolver_smoke_audit.json
+            jawi_renderer_12class_v2639_full_rph_layout.pdf
+            jawi_renderer_12class_v2639_full_rph_layout_audit.json

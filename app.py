@@ -32328,7 +32328,7 @@ def _rph_activity_heading_markup_v25184(text):
     lines=[]
     for line in raw.splitlines():
         e=escape(line)
-        if re.match(r'^\s*(?:Aktiviti|Activity)\s+\d+\s*[–-]', line, re.I):
+        if re.match(r'^\s*(?:Aktiviti|Activity|اکتيۏيتي)\s+[0-9٠-٩]+\s*[–-]', line, re.I):
             e='<b>'+e+'</b>'
         lines.append(e)
     return '<br/>'.join(lines)
@@ -35016,7 +35016,7 @@ def _pi_safe_unicode_v2602(s):
     t=unicodedata.normalize('NFC',str(s or ''))
     # Strip BOM/object/replacement and bidi isolate/control chars only.
     bad={0xFEFF,0xFFFC,0xFFFD,0x25A1,0x25A0,
-         0x200B,0x200C,0x200D,0x2060,
+         0x200B,0x2060,  # preserve U+200C/U+200D Jawi shaping joiners
          0x202A,0x202B,0x202C,0x202D,0x202E,
          0x2066,0x2067,0x2068,0x2069}
     return ''.join(ch for ch in t if ord(ch) not in bad)
@@ -35157,7 +35157,7 @@ def _pi_markup_to_plain_v2605(text):
     import re, html as _html
     # Keep the existing PI terminology/unicode cleanup, but process markup exactly
     # as the stable v25.213 raster renderer did before drawing with Pillow.
-    raw=_pi_safe_unicode_v2602(_pi_term_cleanup_v2601(str(text or '')))
+    raw=_pi_safe_unicode_v2602(str(text or ''))  # PDF rendering must not rewrite source terminology
     raw=raw.replace('<br/>','\n').replace('<br />','\n').replace('<br>','\n')
     bold=bool(re.fullmatch(r'\s*<b>.*</b>\s*',raw,re.S))
     plain=re.sub(r'<[^>]+>','',raw)
@@ -35191,8 +35191,14 @@ APP_VERSION='v26.05-PI-EXACT-JAWI-MARKUP-SAFE'
 # Preserve source Jawi codepoints exactly. Force a full-coverage Noto Sans Arabic
 # font and Pillow RAQM/HarfBuzz shaping for Malay Jawi. No DB/content changes.
 def _pi_jawi_font_v2606(text, bold=False):
+    """Choose one shaping font covering ALL printed characters, not Jawi alone.
+
+    Do not split Arabic joining sequences into font runs: RAQM shapes the
+    complete logical line in a single font. Raise before PDF creation rather
+    than silently render missing punctuation/Rumi as tofu.
+    """
     import os
-    required={ord(ch) for ch in str(text or '') if 0x0600 <= ord(ch) <= 0x08FF}
+    required={ord(ch) for ch in str(text or '') if ch.isprintable() and not ch.isspace()}
     candidates=([
         '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
         '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
@@ -35202,11 +35208,15 @@ def _pi_jawi_font_v2606(text, bold=False):
         '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
         '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
     ])
-    for p in candidates:
+    fallback=_pi_exact_jawi_font_v2604(text,bold)
+    for p in [*candidates, fallback]:
         if os.path.isfile(p) and required.issubset(_font_cmap_v25226(p)):
             return p
-    # v26.04 resolver can fetch a full Noto font if cloud image is minimal.
-    return _pi_exact_jawi_font_v2604(text,bold)
+    missing=sorted(required-set().union(*(
+        _font_cmap_v25226(p) for p in [*candidates,fallback] if os.path.isfile(p)
+    )))
+    raise RuntimeError('Jawi PDF has no single RAQM font covering all text glyphs; '
+                       'missing: '+', '.join(f'U+{x:04X}' for x in missing))
 
 _JawiRasterParagraph_v2606_stable=_JawiRasterParagraph_v25213
 class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
@@ -35215,18 +35225,22 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
         super().__init__(text,style)
         self.text=_pi_markup_to_plain_v2605(text)[0]
         self._v2606_font_path=_pi_jawi_font_v2606(self.text,bool(getattr(self,'bold',False)))
-        missing=sorted({ord(c) for c in self.text if 0x0600 <= ord(c) <= 0x08FF}-_font_cmap_v25226(self._v2606_font_path))
+        missing=sorted({ord(c) for c in self.text if c.isprintable() and not c.isspace()}-_font_cmap_v25226(self._v2606_font_path))
         if missing:
-            print('v26.06 JAWI MISSING', [f'U+{x:04X}' for x in missing], self._v2606_font_path, flush=True)
+            raise RuntimeError('Jawi PDF font lacks glyphs: ' + ', '.join(f'U+{x:04X}' for x in missing))
 
     def _font(self,px):
         from PIL import ImageFont
-        # RAQM invokes FriBiDi + HarfBuzz and is required for correct contextual
-        # Arabic/Jawi shaping. Fall back only if this Pillow build lacks RAQM.
-        try:
-            return ImageFont.truetype(self._v2606_font_path,px,layout_engine=ImageFont.Layout.RAQM)
-        except Exception:
-            return ImageFont.truetype(self._v2606_font_path,px)
+        # Jawi must never silently fall back to Pillow BASIC layout: it may
+        # produce disconnected/reordered Arabic letters while still making a PDF.
+        if not ImageFont.core.HAVE_RAQM:
+            raise RuntimeError(
+                'Jawi PDF requires Pillow built with RAQM/HarfBuzz/FriBiDi; '
+                'install a RAQM-enabled Pillow before generating Pendidikan Islam PDFs'
+            )
+        return ImageFont.truetype(
+            self._v2606_font_path, px, layout_engine=ImageFont.Layout.RAQM
+        )
 
 APP_VERSION='v26.06-PI-EXACT-JAWI-RAQM-SHAPING'
 # ===== END v26.06 =====
@@ -44075,12 +44089,20 @@ def _pi_exact_jawi_font_v2604(text,bold=False):
     p=_pi2639_exact_font(text,bold)
     if p:
         return p
-    # Keep generation alive, but explicitly flag that exact font is unavailable.
-    # Never rewrite/substitute Jawi characters.
+    # A partial font would create missing-glyph boxes in the PDF. The final
+    # v26.06 Flowable rejects incomplete coverage anyway; fail here with a
+    # precise diagnostic instead of returning a known-broken fallback.
     p=_pi2638_best_nonfatal_font(text,bold)
     if p:
-        return p
-    return _pi2639_prev_exact(text,bold)
+        missing=sorted(_pi2637_required_cps(text)-_font_cmap_v25226(p))
+        if not missing:
+            return p
+        raise RuntimeError(
+            'PI Jawi font coverage incomplete: '
+            + ', '.join(f'U+{cp:04X}' for cp in missing)
+            + '; best available font: ' + str(p)
+        )
+    raise RuntimeError('PI Jawi font unavailable: no usable font found')
 
 def _pi_jawi_font_v2606(text,bold=False):
     return _pi_exact_jawi_font_v2604(text,bold)

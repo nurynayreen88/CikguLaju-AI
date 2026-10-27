@@ -1,0 +1,61 @@
+"""Audit Jawi punctuation glyph coverage without modifying source text or app state.
+
+Usage: python tools/audit_jawi_punctuation.py /path/to/jawi-font.ttf [/path/to/fallback.ttf]
+Requires fonttools. Exit 0 only if every sample character is covered by at least one font.
+This is a coverage check, not a substitute for RTL/RAQM PDF visual verification.
+"""
+import argparse
+import json
+from pathlib import Path
+from fontTools.ttLib import TTFont
+
+SAMPLES = (
+    "ڤنديديقن اسلام – جاوي",
+    "اکتيۏيتي 1 – ممباچ",
+    "موريد ممباچ دان منوليس",
+    "ڠ ڽ ڤ چ ݢ",
+    "Jawi / Rumi - 2026: (1) & 2",
+)
+
+def coverage(path):
+    font = TTFont(str(path), lazy=True)
+    try:
+        return set().union(*(set(t.cmap.keys()) for t in font["cmap"].tables))
+    finally:
+        font.close()
+
+def build_report(font_maps, samples=SAMPLES):
+    """Report exact uncovered characters and font fallback requirements."""
+    if not font_maps:
+        raise ValueError("At least one font is required")
+    chars = sorted({ord(c) for sample in samples for c in sample if not c.isspace()})
+    return {
+        "fonts": [path for path, _ in font_maps],
+        "missing": [
+            {"character": chr(cp), "codepoint": f"U+{cp:04X}"}
+            for cp in chars if not any(cp in cmap for _, cmap in font_maps)
+        ],
+        "fallback_needed": [
+            {"character": chr(cp), "codepoint": f"U+{cp:04X}",
+             "font": next((path for path, cmap in font_maps[1:] if cp in cmap), None)}
+            for cp in chars if cp not in font_maps[0][1]
+        ],
+    }
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("fonts", nargs="+", type=Path)
+    parser.add_argument("--text-file", type=Path, help="UTF-8 RPH text to audit instead of samples")
+    args = parser.parse_args()
+    font_maps = []
+    for path in args.fonts:
+        if not path.is_file():
+            parser.error(f"Font not found: {path}")
+        font_maps.append((str(path), coverage(path)))
+    samples = (args.text_file.read_text(encoding="utf-8"),) if args.text_file else SAMPLES
+    report = build_report(font_maps, samples)
+    print(json.dumps(report, ensure_ascii=False, indent=2))
+    raise SystemExit(1 if report["missing"] else 0)
+
+if __name__ == "__main__":
+    main()
