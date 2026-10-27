@@ -33,3 +33,5 @@
 **Pupils:** Give one personal response.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — all dialogue and cues supplied. Official SOW alignment and PDF/A4 checks pending; not READY.
+
+**QA status:** NOT READY — verify official SOW and Teacher's Book mapping and inspect rendered one-page A4 PDF before release.
