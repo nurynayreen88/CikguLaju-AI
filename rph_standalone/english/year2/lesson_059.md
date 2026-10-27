@@ -35,3 +35,5 @@
 **Pupils:** Share one word and a short sentence.
 
 **QA:** COMPLETE TEACHER-DEVELOPED STANDALONE DRAFT. Official SOW SK/SP and PDF/A4 checks pending. Not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
