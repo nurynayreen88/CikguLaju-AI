@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 4.2 / 4.2.1
 **Complementary SK/SP:** 4.2 / 4.2.5
-**Learning objective:** Pupils practise writing 9 using language from The old house.
+**Learning objectives (draft):** Pupils write two short messages about house objects using a clear model.
+**Success criteria (draft):** two understandable written messages.
 **Teaching materials:** Super Minds 1 Student's Book p.77, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.77 (Year 2 SOW mapping audit); Teacher's Book sequence not yet verified.
 
