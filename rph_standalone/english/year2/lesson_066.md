@@ -1,33 +1,36 @@
 # English Year 2 — Lesson 66: Listening 14
 
-**Unit:** Get dressed!
-**Main SK/SP:** 1.3 / 1.3.1
-**Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives:** Pupils identify the main idea of a short clothing-related listening input and give two relevant oral responses.
-**Success criteria:** one correct main-idea choice and two relevant oral responses.
-**Teaching materials:** Super Minds 1 Student's Book p.84, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.84 (Year 2 audit); exact Teacher's Book steps not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5  
+**Duration:** 60 minutes  
+**Source:** Student's Book p.84 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
+**Learning objective:** Pupils identify the main idea of a spoken message and answer two oral questions.  
+**Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
+**Materials:** Board, clothing picture cards, exercise books and printable resources below.
+
+**Original teacher-read message:** “It's raining today. Sara is going outside. She puts on a raincoat and boots. She takes an umbrella. Now she is ready for the rain.”
+**Main-idea choices:** A Getting dressed for rainy weather; B Cooking lunch; C Cleaning the bedroom. **Key:** A.
+**Oral prompts/key:** “What does Sara put on?” — a raincoat and boots. “Why does she take an umbrella?” — because it is raining.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display two outfit pictures and invite predictions about a short spoken message.
-**Pupils:** Name familiar clothing and predict the topic.
+**Teacher:** Display two clothing pictures and ask pupils to name items and colours.  
+**Pupils:** Identify two familiar clothing words.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Preview Student's Book p.84 and demonstrate listening for the main idea rather than every word.
-**Pupils:** Listen to a short model and choose its overall topic.
+## Activity 1 — Teacher modelling (15 minutes)
+**Teacher:** Read the original message twice and model choosing the overall topic rather than remembering every word.  
+**Pupils:** Follow the model and practise one supported example.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use the page-linked audio if available, otherwise a clearly labelled teacher-created short description; play or read twice and ask pupils to choose the main idea and respond to two prompts.
-**Pupils:** Listen twice, select the main idea individually and answer two questions.
+## Activity 2 — Guided and paired practice (25 minutes)
+**Teacher:** Pupils listen twice, select A/B/C and answer two prompts; pairs explain which words support the main idea.  
+**Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's main-idea choice and two individual responses.
-**Pupils:** Submit a choice and respond orally.
+**Teacher:** Read again without showing the text; record each pupil's main-idea choice and two oral answers. Record accuracy and assistance needed.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Recap how pictures and key words help listening.
-**Pupils:** State one useful listening clue.
+**Teacher:** Review two useful clothing words and invite a relevant response.  
+**Pupils:** Share one word and one sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW activity and Teacher's Book sequence not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft. Official SOW SK/SP, exact TB sequence for mapped textbook lessons and PDF/A4 layout verification pending. NOT READY.
