@@ -1,6 +1,5 @@
 import unittest
 from datetime import date
-from frozenset import frozenset
 from rph_hari_ini.session_eligibility import (
     TimetableSession, CalendarEvidence, verify_session)
 
