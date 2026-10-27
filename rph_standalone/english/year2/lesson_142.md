@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 2.1 / 2.1.1
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise speaking 29 using language from At the beach.
+**Learning objectives:** Pupils give three beach-related personal responses and ask two simple questions.
+**Success criteria:** three relevant answers and two intelligible questions.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
