@@ -9,7 +9,8 @@ def check_verified_taught_action(*, eligibility, teacher_id,
                                  explicit_action=False):
     if explicit_action is not True:
         return False, "teacher_confirmation_required"
-    if not isinstance(eligibility, Eligibility) or not eligibility.allowed:
+    if (not isinstance(eligibility, Eligibility) or eligibility.allowed is not True
+            or eligibility.reason != "eligible"):
         return False, "unverified_session"
     session = eligibility.session
     if not isinstance(session, TimetableSession) or type(teacher_id) is not int:
