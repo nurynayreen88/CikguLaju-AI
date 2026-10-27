@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils read four short beach sentences and locate three stated details.
 **Success criteria:** four intelligible sentences and three correct detail responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original four-sentence reading:** Mia is at the beach. She has a blue bucket. She sees two shells. Her brother has a red ball. **Three questions and answers:** Where is Mia? At the beach. How many shells? Two. Who has the red ball? Her brother.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary reading; SOW and PDF/A4 checks pending. NOT READY.
