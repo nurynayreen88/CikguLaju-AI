@@ -99,3 +99,48 @@ assert len(images)>=14
 assert all(i["bbox"][0]>=0 and i["bbox"][2]<=pdf[0].rect.width for i in images)
 assert all(i["bbox"][1]>=0 and i["bbox"][3]<=pdf[0].rect.height for i in images)
 print("Created",rph,"pages",len(pdf),"images",len(images))
+
+# Exercise every inherited renderer constructor in source order, rather than
+# only the first and last versions. Helpers below remain isolated substitutes;
+# this is a full CLASS-chain smoke, NOT a production-runtime integration test.
+def clean_text(value):
+    return plain(value)[0]
+def compat_text(value, _path):
+    return str(value)
+chain_scope={
+    "Flowable": Flowable, "re": re,
+    "_jawi_font_path_v25213": lambda bold=False: font_path("",bold),
+    "_repair_jawi_text_v25224": clean_text,
+    "_trace_and_repair_jawi_v25225": clean_text,
+    "_font_supports_v25224": lambda path,ch: ord(ch) in font_cmap(path),
+    "_best_jawi_font_v25226": font_path,
+    "_font_cmap_v25226": font_cmap,
+    "_pi_clean_tofu_v2598": clean_text,
+    "_pi_jawi_font_v2598": lambda bold=False: font_path("",bold),
+    "_pi_clean_text_v2599": clean_text,
+    "_pi_term_cleanup_v2601": lambda t: str(t),
+    "_pi_safe_unicode_v2602": lambda t: str(t),
+    "_pi_runtime_glyph_compat_v2603": compat_text,
+    "_pi_exact_jawi_font_v2604": font_path,
+    "_pi_markup_to_plain_v2605": plain,
+    "_pi_jawi_font_v2606": font_path,
+}
+count=0
+for node in tree.body:
+    if isinstance(node,ast.Assign) and isinstance(node.value,ast.Name) and node.value.id=="_JawiRasterParagraph_v25213" and any(isinstance(t,ast.Name) and t.id.startswith("_JawiRasterParagraph_") for t in node.targets):
+        if "_JawiRasterParagraph_v25213" in chain_scope:
+            exec(compile(ast.Module(body=[node],type_ignores=[]),"<renderer-alias>","exec"),chain_scope)
+    elif isinstance(node,ast.ClassDef) and node.name=="_JawiRasterParagraph_v25213":
+        exec(compile(ast.Module(body=[node],type_ignores=[]),"<renderer-chain>","exec"),chain_scope)
+        count+=1
+assert count==len(classes)==12, f"Unexpected Jawi renderer class count: {count}"
+FullChainRenderer=chain_scope["_JawiRasterParagraph_v25213"]
+assert len([c for c in FullChainRenderer.__mro__ if c.__name__=="_JawiRasterParagraph_v25213"])==12
+full_pdf=Path("jawi_renderer_full_class_chain_smoke.pdf")
+full_rows=[[FullChainRenderer("<b>"+samples[0]+"</b>",style)]]+[[FullChainRenderer(t,style)] for t in samples[1:]]
+full_table=Table(full_rows,colWidths=[470])
+full_table.setStyle(TableStyle([("GRID",(0,0),(-1,-1),0.5,colors.grey)]))
+SimpleDocTemplate(str(full_pdf),pagesize=(595.28,841.89)).build([full_table])
+full_doc=fitz.open(full_pdf)
+assert len(full_doc)==1 and len(full_doc[0].get_image_info())>=4
+print("FULL 12-CLASS CHAIN smoke with SUBSTITUTE HELPERS",full_pdf,full_pdf.stat().st_size)
