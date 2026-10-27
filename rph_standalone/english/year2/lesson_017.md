@@ -13,12 +13,12 @@
 **Pupils:** Name activities and respond to one simple question.
 
 ## Activity 1 — Model the exchange (15 minutes)
-**Teacher:** Model a short question-and-answer exchange about a free-time activity, pointing to a picture for meaning. Repeat with a second picture.
+**Teacher:** Model two free-time question-and-answer exchanges and one written sentence using a picture.
 **Pupils:** Listen, repeat the exchange and identify the activity.
 
 ## Activity 2 — Paired speaking (25 minutes)
-**Teacher:** Give each pair two picture cues. Ask pupils to exchange roles and change the activity after the first turn.
-**Pupils:** Ask and answer questions in pairs, switching speaker and listener roles.
+**Teacher:** Guide partner exchanges with role changes, then support one independent written sentence.
+**Pupils:** Ask and answer two questions and write one sentence.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record individual evidence against both success criteria and give targeted feedback.
