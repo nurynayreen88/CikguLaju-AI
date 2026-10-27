@@ -32,3 +32,5 @@
 **Pupils:** Share one word and a short response.
 
 **QA:** Complete teacher-developed standalone draft; official SOW SK/SP and PDF/A4 checks pending. Not READY.
+
+**QA status:** NOT READY — five-phase 60-minute structure verified; official SOW and Teacher's Book alignment and rendered A4 PDF inspection pending.
