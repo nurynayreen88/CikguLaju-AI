@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 3.1 / 3.1.2
 **Complementary SK/SP:** 3.1 / 3.1.1
-**Objective (draft):** Pupils find two details in a short text.
+**Learning objectives (draft):** Pupils recognise four printed free-time words and read two short phrases aloud.
+**Success criteria (draft):** Four correct word identifications and two intelligible phrases.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
