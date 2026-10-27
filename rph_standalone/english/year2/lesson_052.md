@@ -1,34 +1,35 @@
 # English Year 2 — Lesson 52: Reading 11
 
-**Unit:** The old house
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 3.2 / 3.2.4
-**Learning objectives:** Pupils identify at least 4 of 5 details from the reading material on Student's Book p.81 and answer at least 2 of 3 comprehension questions using information from the page.
-**Success criteria:** 4/5 details identified and 2/3 questions answered independently.
-**Teaching materials:** Super Minds 1 Student's Book p.81, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.81 (Year 2 SOW mapping audit); exact Teacher's Book sequence not yet verified.
+**Unit:** The old house  
+**Main SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.4  
+**Duration:** 60 minutes  
+**Mapped resource:** Super Minds 1 Student's Book SB p.81. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
+**Objective:** Pupils identify four of five text details and answer two of three questions.  
+**Success criteria:** Achieve the measurable targets stated in the objective.  
+**Materials:** Student's Book, board, picture/word cards and resources below.
+
+**Original teacher-created reading:** “Tom has a small house. His kitchen has a round table. There is a blue sofa in the living room. Two beds are upstairs. Tom likes to read in his bedroom.”
+**Five details/key:** owner—Tom; house—small; table—round; sofa—blue; beds—two. **Questions/key:** What colour is the sofa?—blue; Where does Tom read?—bedroom; How many beds are upstairs?—two.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show a house picture, elicit two familiar words and invite predictions about Student's Book p.81.
-**Pupils:** Name familiar objects and make one prediction.
+**Teacher:** Display relevant picture cards, elicit familiar words and ask one prediction.  
+**Pupils:** Name two words and make a prediction.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Preview p.81 pictures and printed text, model locating one detail, then guide pupils to find five details actually present on the page.
-**Pupils:** Read individually or with support, then point to or underline evidence for five responses.
+**Teacher:** Read the original text aloud and model underlining *blue sofa* as evidence.  
+**Pupils:** Follow the model and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Ask three factual comprehension questions based on p.81; provide sentence frames, then let pupils compare evidence with a partner.
-**Pupils:** Give three short responses and identify where the answers appear in the text.
+**Teacher:** Pairs identify five details and answer three questions, highlighting evidence in the text.  
+**Pupils:** Complete the task, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Mark each pupil's five-item detail check and three comprehension responses; record 4/5 and 2/3 achievement separately and plan guided rereading for pupils below threshold.
-**Pupils:** Submit individual answers and correct one error after feedback.
+**Teacher:** Check five independent details and three comprehension answers against the key. Note prompts required.  
+**Pupils:** Respond individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Ask pupils to share one fact and point to the text that supports it.
-**Pupils:** Share one fact from the reading.
+**Teacher:** Recap two useful words and one lesson skill.  
+**Pupils:** Share one correct example.
 
-**Differentiation:** Support—picture prompts and paired rereading; extension—compose an additional factual question.
-**QA:** Teacher-designed adaptation; exact Teacher's Book activity sequence remains unverified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Complete teacher-developed standalone draft; exact Teacher's Book/SOW alignment and PDF/A4 checks pending. Not READY.
