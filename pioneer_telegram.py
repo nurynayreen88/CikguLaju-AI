@@ -178,6 +178,18 @@ def install(ns):
                         for row in existing
                     )
                     if not already_granted:
+                        # A reference already assigned to another user is a payment
+                        # ownership conflict, never a reason to overwrite an entitlement.
+                        by_reference = sb("GET",
+                            f"pioneer_entitlements?payment_reference=eq.{reference}&select=telegram_user_id,revoked_at") or []
+                        if by_reference:
+                            print("PIONEER PAYMENT OWNER CONFLICT:",
+                                  f"payment_id={rid}", f"request_user={req['chat_id']}",
+                                  f"entitlement_user={by_reference[0].get('telegram_user_id')}", flush=True)
+                            return send(cid,
+                                f"⚠️ Payment ID #{rid} sudah terikat pada akaun Pioneer lain.\\n"
+                                "Akses pelanggan belum diubah. Semak pemilik permohonan dan bukti bayaran secara manual.\\n"
+                                "Jangan minta pelanggan membayar semula.")
                         grant_pioneer(sb, req["chat_id"], reference, cid, verified=True)
                 except Exception as exc:
                     # Do not mark payment approved when the entitlement grant fails.
