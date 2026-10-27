@@ -34,3 +34,5 @@
 **Pupils:** Share a word or a sentence from the lesson.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — actual task materials, models and assessment included. Official SOW SK/SP/activity alignment and A4/PDF QA pending. Do not mark READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
