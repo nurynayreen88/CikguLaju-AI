@@ -30,6 +30,18 @@ class EligibilityTests(unittest.TestCase):
         self.assertEqual(verify_session(self.session, e, **self.kw).reason,
                          "invalid_calendar_dates")
 
+    def test_cross_year_calendar_date_rejected(self):
+        e = CalendarEvidence(2027, "Kedah", "TEST",
+                             frozenset({date(2027, 3, 1), date(2028, 3, 1)}))
+        self.assertEqual(verify_session(self.session, e, **self.kw).reason,
+                         "invalid_calendar_dates")
+
+    def test_non_date_calendar_entry_rejected(self):
+        e = CalendarEvidence(2027, "Kedah", "TEST",
+                             frozenset({date(2027, 3, 1), "2027-03-02"}))
+        self.assertEqual(verify_session(self.session, e, **self.kw).reason,
+                         "invalid_calendar_dates")
+
     def test_unverified_day(self):
         e = CalendarEvidence(2027, "Kedah", "KPM-VERIFIED-TEST", frozenset())
         self.assertEqual(verify_session(self.session, e, **self.kw).reason,
