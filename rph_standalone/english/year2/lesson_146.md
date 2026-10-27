@@ -3,7 +3,7 @@
 **Unit:** At the beach
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 4.3 / 4.3.2
-**Learning objectives:** Pupils locate four of five details on the printed page 114 and write two short answers.
+**Learning objectives:** Pupils locate four of five details in the supplied teacher-created passage and write two short answers.
 **Success criteria:** four accurate detail responses and two understandable written answers.
 **Teaching materials:** Super Minds 1 Student's Book p.114, pictures, word cards and classroom resources.
 **Original supplementary passage, not SB p.114:** Ali goes to the beach with his aunt. He brings a blue towel and a yellow bucket. He finds three shells beside a rock. **Five facts/key:** Ali, aunt, blue towel, yellow bucket, three shells. **Written questions/key:** Who is with Ali? His aunt. Where are the shells? Beside a rock.
@@ -15,15 +15,15 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model locating a detail on the actual printed page 114.
+**Teacher (15 min):** Model locating a stated detail in the supplied original supplementary passage; display Student's Book p.114 only as optional visual context pending source verification.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide five page-grounded detail prompts and two written answers.
+**Teacher (25 min):** Guide five detail prompts from the supplied original passage and two written answers; do not attribute the passage to Student's Book p.114.
 **Pupils:** Find four details and write two answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check four passage details and two written answers individually; record evidence against the success criteria.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
