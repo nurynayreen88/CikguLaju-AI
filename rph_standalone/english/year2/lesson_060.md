@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display clothing picture cards and introduce a short four-line chant.
 **Pupils:** Predict two words that may occur in the chant.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Perform a teacher-created clothing chant with gestures and model its rhythm line by line.
 **Pupils:** Echo the chant and match gestures to clothing words.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Organise small groups to rehearse the chant and replace one clothing word or gesture appropriately.
 **Pupils:** Practise in groups, contribute one variation and perform the chant.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's clarity across four lines and one creative contribution on an individual checklist.
 **Pupils:** Perform and show their contribution while the teacher records evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite a final performance and revisit key clothing vocabulary.
 **Pupils:** Share a favourite chant line.
 
