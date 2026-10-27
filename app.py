@@ -35187,8 +35187,14 @@ APP_VERSION='v26.05-PI-EXACT-JAWI-MARKUP-SAFE'
 # Preserve source Jawi codepoints exactly. Force a full-coverage Noto Sans Arabic
 # font and Pillow RAQM/HarfBuzz shaping for Malay Jawi. No DB/content changes.
 def _pi_jawi_font_v2606(text, bold=False):
+    """Choose one shaping font covering ALL printed characters, not Jawi alone.
+
+    Do not split Arabic joining sequences into font runs: RAQM shapes the
+    complete logical line in a single font. Raise before PDF creation rather
+    than silently render missing punctuation/Rumi as tofu.
+    """
     import os
-    required={ord(ch) for ch in str(text or '') if 0x0600 <= ord(ch) <= 0x08FF}
+    required={ord(ch) for ch in str(text or '') if ch.isprintable() and not ch.isspace()}
     candidates=([
         '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf',
         '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
@@ -35198,11 +35204,15 @@ def _pi_jawi_font_v2606(text, bold=False):
         '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
         '/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf',
     ])
-    for p in candidates:
+    fallback=_pi_exact_jawi_font_v2604(text,bold)
+    for p in [*candidates, fallback]:
         if os.path.isfile(p) and required.issubset(_font_cmap_v25226(p)):
             return p
-    # v26.04 resolver can fetch a full Noto font if cloud image is minimal.
-    return _pi_exact_jawi_font_v2604(text,bold)
+    missing=sorted(required-set().union(*(
+        _font_cmap_v25226(p) for p in [*candidates,fallback] if os.path.isfile(p)
+    )))
+    raise RuntimeError('Jawi PDF has no single RAQM font covering all text glyphs; '
+                       'missing: '+', '.join(f'U+{x:04X}' for x in missing))
 
 _JawiRasterParagraph_v2606_stable=_JawiRasterParagraph_v25213
 class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
@@ -35211,7 +35221,7 @@ class _JawiRasterParagraph_v25213(_JawiRasterParagraph_v2606_stable):
         super().__init__(text,style)
         self.text=_pi_markup_to_plain_v2605(text)[0]
         self._v2606_font_path=_pi_jawi_font_v2606(self.text,bool(getattr(self,'bold',False)))
-        missing=sorted({ord(c) for c in self.text if 0x0600 <= ord(c) <= 0x08FF}-_font_cmap_v25226(self._v2606_font_path))
+        missing=sorted({ord(c) for c in self.text if c.isprintable() and not c.isspace()}-_font_cmap_v25226(self._v2606_font_path))
         if missing:
             raise RuntimeError('Jawi PDF font lacks glyphs: ' + ', '.join(f'U+{x:04X}' for x in missing))
 
