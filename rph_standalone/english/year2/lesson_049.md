@@ -34,3 +34,5 @@
 **Pupils:** Share their learning.
 
 **QA:** Standalone teacher-developed draft; official SOW and TB (where relevant) plus PDF/A4 verification pending. Not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
