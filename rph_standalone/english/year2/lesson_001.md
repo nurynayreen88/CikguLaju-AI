@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer a question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model one picture-based sentence with correct punctuation.
+**Teacher:** Model a picture-based sentence with punctuation, then read it aloud.
 **Pupils:** Follow the demonstration and respond once.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils write two sentences, compare and correct one error. Support pupils who need prompts.
-**Pupils:** Complete the task and share responses.
+**Teacher:** Guide two independent sentences and supported oral reading.
+**Pupils:** Write two sentences and read one aloud.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
