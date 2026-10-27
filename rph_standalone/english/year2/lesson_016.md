@@ -13,12 +13,12 @@
 **Pupils:** Name pictures and respond.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model listening for a keyword in a short oral description.
+**Teacher:** Model identifying a spoken free-time activity and recognising its printed word card.
 **Pupils:** Observe and attempt a response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Read three topic statements and have pupils match them to pictures. Provide corrective feedback.
-**Pupils:** Practise and compare responses.
+**Teacher:** Read three teacher-created free-time clues and show two printed activity cards for identification.
+**Pupils:** Match three spoken details and recognise two words.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record individual evidence against both success criteria and give targeted feedback.
