@@ -11921,9 +11921,9 @@ def _notify_admin_new_user(chat_id, user):
         f'🆔 Telegram ID: <code>{html.escape(str(chat_id))}</code>\n'
         f'🔗 Username: <b>{html.escape(username_text)}</b>\n'
         f'📅 Daftar: <b>{now}</b>\n\n'
-        '🧪 Status: <b>PUBLIC BETA TESTER</b>\n'
-        '♾️ Akses: <b>Tanpa had</b>\n'
-        '⏳ Tamat Beta: <b>14 Oktober 2026</b>'
+        '🎁 Status: <b>Pengguna baharu — 5 janaan RPH percuma</b>\n'
+        '🔒 Akses tanpa had: <b>Hanya Pioneer yang telah disahkan</b>\n'
+        '📌 Public Beta: <b>Telah ditutup</b>'
     )
     try:
         send(ADMIN_CHAT_ID,msg,[[{'text':'👤 LIHAT PENGGUNA','callback_data':f'admin_user|{chat_id}'},{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}]])
