@@ -15,6 +15,17 @@ class LegacyBridgeTests(unittest.TestCase):
     def test_valid_candidate(self):
         self.assertIsNotNone(candidate_from_legacy_row(**self.kw))
 
+    def test_datetime_rejected(self):
+        from datetime import datetime
+        self.assertIsNone(candidate_from_legacy_row(**(self.kw | {
+            "session_date": datetime(2027, 3, 1, 8, 0)})))
+
+    def test_nonstring_fields_rejected(self):
+        for field in ("day", "class_name", "subject", "start", "end"):
+            with self.subTest(field=field):
+                self.assertIsNone(candidate_from_legacy_row(**(self.kw | {
+                    "row": self.row | {field: 123}})))
+
     def test_wrong_day(self):
         self.assertIsNone(candidate_from_legacy_row(**(self.kw | {
             "row": self.row | {"day": "Selasa"}})))
