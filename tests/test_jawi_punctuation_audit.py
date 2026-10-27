@@ -22,7 +22,7 @@ class JawiPunctuationCoverageTests(unittest.TestCase):
 
     def test_mixed_jawi_latin_and_punctuation_supported_by_fallback(self):
         source = "ڤنديديقن اسلام – Jawi/Rumi (1)"
-        primary = {ord(c) for c in source if "\\u0600" <= c <= "\\u08ff"}
+        primary = {ord(c) for c in source if 0x0600 <= ord(c) <= 0x08FF}
         latin = {ord(c) for c in source if not c.isspace() and ord(c) not in primary}
         report = audit.build_report([("naskh.ttf", primary), ("dejavu.ttf", latin)], [source])
         self.assertEqual(report["missing"], [])
