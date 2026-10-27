@@ -3,28 +3,29 @@
 **Unit:** At the beach
 **Main SK/SP:** 1.2 / 1.2.5
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objective:** Pupils practise listening 31 using language from At the beach.
+**Learning objectives:** Pupils identify four details in five spoken beach prompts.
+**Success criteria:** four correct listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce At the beach with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Show a beach picture and elicit two familiar words.
+**Pupils:** Name beach objects.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 31 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model listening for key details in a teacher-created description.
+**Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Read five short beach prompts with picture cues.
+**Pupils:** Select the correct details.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record individual evidence against the success criteria.
+**Pupils:** Provide individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful beach expression.
+**Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
