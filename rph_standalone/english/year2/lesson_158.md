@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils read four clothing sentences and identify three stated details.
 **Success criteria:** Four intelligible sentences and three correct detail responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original four clothing sentences:** Ben has a blue shirt. His sister has a red dress. Mum has a yellow hat. Dad has black shoes. **Three questions/key:** What colour is Ben's shirt? Blue. Who has a red dress? His sister. What does Dad have? Black shoes.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
