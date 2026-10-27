@@ -34,3 +34,5 @@
 **Pupils:** Give and follow instructions and recall the story sequence.
 
 **QA:** TEXTBOOK-ALIGNED DRAFT — SB p.68 and TB T68 checked visually. Teacher-created fallback must not be labelled as original audio. Official SOW SK/SP and final A4/PDF QA pending; do not mark READY.
+
+**QA status:** NOT READY — five phases total 60 minutes; official SOW/Teacher's Book alignment and rendered A4 PDF still require verification.
