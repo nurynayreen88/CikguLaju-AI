@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils locate four of five details in a short beach paragraph and answer two questions.
 **Success criteria:** four correct detail responses and two supported answers.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original passage:** Hana visits the beach with her brother. She has a green bucket and a yellow ball. They collect four shells near a tree. **Five facts/key:** Hana; brother; green bucket; yellow ball; four shells. **Questions/key:** Who is with Hana? Her brother. Where are the shells? Near a tree.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original teacher-created resource. Official SOW and PDF/A4 checks pending. NOT READY.
