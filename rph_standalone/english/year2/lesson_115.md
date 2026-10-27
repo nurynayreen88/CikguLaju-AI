@@ -5,7 +5,9 @@
 **Complementary SK/SP:** 2.2 / 2.2.2
 **Learning objectives:** Pupils create four lines of robot dialogue and perform three lines with clear expression.
 **Success criteria:** four dialogue lines and three intelligible spoken lines.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Pictures, word cards, individual PBD record and original resources below.
+
+**Original four-line dialogue:** A: “Hello, Robot! Can you help me?” B: “Yes! What do you need?” A: “Please carry my bag.” B: “Here you are!” **Variations:** bag→book; Robot→Zippy.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Practise one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide pairs to create and rehearse four lines.
+**Teacher (25 min):** Pairs draft four lines, adapt one word and rehearse a performance.
 **Pupils:** Create four lines and perform three.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check each pupil against the success criteria and record individual PBD evidence.
+**Teacher (10 min):** Check four written lines and three intelligible spoken lines. Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
