@@ -19,11 +19,11 @@ class FullJawiGlyphGuard(unittest.TestCase):
         constructor = next(node for node in latest.body
                            if isinstance(node, ast.FunctionDef) and node.name == "__init__")
         source = ast.get_source_segment(SOURCE, constructor)
-        # Current v26.06 code filters to U+0600..U+08FF, missing punctuation and Latin.
-        # This test intentionally fails until full glyph fallback is integrated.
+        # Renderer must check printable Jawi, Rumi and punctuation together.
         self.assertNotIn("0x0600 <= ord(c) <= 0x08FF", source,
                          "Active renderer still validates only Arabic/Jawi glyphs")
         self.assertIn("_font_cmap_v25226", source)
+        self.assertIn("c.isprintable()", source)
 
 if __name__ == "__main__":
     unittest.main()
