@@ -18,7 +18,7 @@ class ClassIdentity:
 
 def resolve_class_identity(*, teacher_id: int, school_year: int,
                            class_name: str, registry: Mapping) -> ClassIdentity | None:
-    if type(teacher_id) is not int or type(school_year) is not int:
+    if type(teacher_id) is not int or type(school_year) is not int or not isinstance(registry, Mapping):
         return None
     if not 2020 <= school_year <= 2100 or not isinstance(class_name, str):
         return None
