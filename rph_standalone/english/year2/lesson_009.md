@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 4.3 / 4.3.3
 **Complementary SK/SP:** 4.2 / 4.2.1
-**Objective (draft):** Pupils write two simple sentences.
+**Learning objectives (draft):** Pupils write two punctuated free-time sentences and share one sentence orally.
+**Success criteria (draft):** Two understandable sentences and one intelligible oral response.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
