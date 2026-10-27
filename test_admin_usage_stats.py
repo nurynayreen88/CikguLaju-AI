@@ -25,6 +25,23 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(db.execute('SELECT name FROM existing_users').fetchone()[0], 'preserved')
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_summary_reference_time_normalized_to_utc(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        malaysia = timezone(timedelta(hours=8))
+        record_event(
+            db, 123, 'bot_active',
+            when=datetime(2026, 10, 26, 23, 50, tzinfo=timezone.utc))
+        report_time = datetime(2026, 10, 27, 8, 30, tzinfo=malaysia)
+        self.assertEqual(summary(db, report_time)['active_today'], 0)
+        self.assertEqual(summary(db, report_time)['active_7d'], 1)
+
+    def test_summary_rejects_naive_reference_time(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        with self.assertRaises(ValueError):
+            summary(db, datetime(2026, 10, 27))
+
     def test_generic_event_timezone_normalized(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
