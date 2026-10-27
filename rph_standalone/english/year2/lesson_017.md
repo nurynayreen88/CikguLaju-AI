@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing SOW mapping):** 2.1 / 2.1.2
 **Complementary SK/SP (existing SOW mapping):** 4.2 / 4.2.1
-**Objective (teacher-developed):** Pupils ask and answer two short questions about familiar free-time activities using picture cues.
+**Learning objectives (draft):** Pupils ask and answer two free-time questions and write one simple sentence about an activity.
+**Success criteria (draft):** Two intelligible exchanges and one understandable written sentence.
 **Materials:** Free-time activity picture cards, board, exercise books.
 **Source classification:** NON-TEXTBOOK / SOW task (prior Year 2 audit). Detailed SOW steps still require verification.
 
