@@ -20,6 +20,15 @@ class JawiPunctuationCoverageTests(unittest.TestCase):
         ])
         self.assertEqual(source, "ڤ–چ")
 
+    def test_mixed_jawi_latin_and_punctuation_supported_by_fallback(self):
+        source = "ڤنديديقن اسلام – Jawi/Rumi (1)"
+        primary = {ord(c) for c in source if "\\u0600" <= c <= "\\u08ff"}
+        latin = {ord(c) for c in source if not c.isspace() and ord(c) not in primary}
+        report = audit.build_report([("naskh.ttf", primary), ("dejavu.ttf", latin)], [source])
+        self.assertEqual(report["missing"], [])
+        self.assertIn({"character": "–", "codepoint": "U+2013", "font": "dejavu.ttf"},
+                      report["fallback_needed"])
+
     def test_missing_glyph_is_reported(self):
         result = audit.build_report([("jawi.ttf", {ord("ڤ")})], ["ڤ—"])
         self.assertEqual(result["missing"], [{"character": "—", "codepoint": "U+2014"}])
