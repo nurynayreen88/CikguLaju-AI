@@ -1,31 +1,38 @@
 # English Year 2 — Lesson 48: Writing 10
 
 **Unit:** The old house
-**Main SK/SP:** 4.2 / 4.2.5
-**Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objectives (draft):** Pupils write two short messages about rooms using legible writing and basic punctuation.
-**Success criteria (draft):** two meaningful messages with clear capitals and full stops.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
+**Main SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.5
+**Complementary SK/SP (prior mapping; SOW verification pending):** 4.3 / 4.3.1
+**Duration:** 60 minutes
+**Classification:** NON-TEXTBOOK; original teacher-created examples.
+**Objectives:** Pupils write two short messages describing rooms and revise basic punctuation.
+**Success criteria:** Two meaningful messages, each with a greeting, room detail and closing, and at least two correctly punctuated sentences.
+**Materials:** Board, room pictures, message models and exercise books.
+
+**Model 1:** “Hi Amir, My bedroom has a bed and a desk. From Ali.”
+**Model 2:** “Hi Sara, There is a table in my kitchen. From Lina.”
+**Message frame:** “Hi ____, / My ____ has a ____. / From ____.”
+**Editing sample:** “my room has a bed” becomes “My room has a bed.”
+**Checklist:** Greeting; room word; object word; capital letter; full stop; closing.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show house pictures and elicit two familiar words.
-**Pupils:** Name two familiar words.
+**Teacher:** Show bedroom and kitchen pictures and ask what objects belong there.
+**Pupils:** Name rooms and objects.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a short room-related message and a punctuation check.
-**Pupils:** Give one supported response.
+## Activity 1 — Model a message (15 minutes)
+**Teacher:** Read both original model messages. Highlight greeting, message and closing. Demonstrate fixing the editing sample and explain capitals and full stops.
+**Pupils:** Identify the parts of a message and correct the sample.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide writing two messages and self-checking clarity.
-**Pupils:** Write two messages and check punctuation.
+## Activity 2 — Compose and revise (25 minutes)
+**Teacher:** Ask pupils to choose two different rooms and write a message to a classmate about each. Provide the frame for support. Guide peer checking using the checklist and require individual revision.
+**Pupils:** Draft two messages, check a partner's writing and revise their own work.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Collect both independently revised messages and record whether the pupil included the required message parts and correct punctuation.
+**Pupils:** Submit two messages and their checklist.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Invite volunteers to read a message and name one editing rule.
+**Pupils:** Share one sentence and a punctuation rule.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Complete teacher-developed draft; official SOW and A4/PDF verification pending. Not READY.
