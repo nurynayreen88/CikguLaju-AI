@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 4.3 / 4.3.3
 **Complementary SK/SP:** 2.1 / 2.1.1
-**Learning objective:** Pupils practise writing 27 using language from At the beach.
+**Learning objectives:** Pupils write three legible beach sentences and give two oral descriptions.
+**Success criteria:** three legible sentences and two relevant descriptions.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
