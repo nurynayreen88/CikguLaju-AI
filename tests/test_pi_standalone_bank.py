@@ -43,5 +43,41 @@ class StandaloneBankTest(unittest.TestCase):
             self.assertTrue(any("escapes" in x for x in validate(manifest)["errors"]))
 
 
+    def test_approved_rejects_two_page_pdf(self):
+        import fitz
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "pdf").mkdir()
+            doc = fitz.open()
+            doc.new_page(width=595.28, height=841.89)
+            doc.new_page(width=595.28, height=841.89)
+            payload = doc.tobytes()
+            doc.close()
+            (root / "pdf/PI-Y1-L002.pdf").write_bytes(payload)
+            item = dict(year=1, lesson_id="PI-Y1-L002", sk="1.1", sp="1.1.1",
+                        pdf="pdf/PI-Y1-L002.pdf", status="approved",
+                        sha256=hashlib.sha256(payload).hexdigest())
+            manifest = root / "manifest.json"
+            manifest.write_text(json.dumps(dict(schema_version=1, items=[item])))
+            self.assertTrue(any("one A4 page" in x for x in validate(manifest)["errors"]))
+
+    def test_approved_rejects_landscape_pdf(self):
+        import fitz
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "pdf").mkdir()
+            doc = fitz.open()
+            doc.new_page(width=841.89, height=595.28)
+            payload = doc.tobytes()
+            doc.close()
+            (root / "pdf/PI-Y1-L003.pdf").write_bytes(payload)
+            item = dict(year=1, lesson_id="PI-Y1-L003", sk="1.1", sp="1.1.1",
+                        pdf="pdf/PI-Y1-L003.pdf", status="approved",
+                        sha256=hashlib.sha256(payload).hexdigest())
+            manifest = root / "manifest.json"
+            manifest.write_text(json.dumps(dict(schema_version=1, items=[item])))
+            self.assertTrue(any("A4 portrait" in x for x in validate(manifest)["errors"]))
+
+
 if __name__ == "__main__":
     unittest.main()
