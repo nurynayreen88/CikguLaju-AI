@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils compose a four-line beach rhyme and write two meaningful captions.
 **Success criteria:** four coherent rhyme lines and two understandable captions.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original rhyme model (four lines):** The sun is bright / The sand is white / I find a shell / It shines so well. **Two caption models:** A bright sun. A little shell. **Creative guidance:** Pupils replace one describing word in each of two lines, retain four meaningful lines, and caption two matching pictures.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide writing four rhyme lines and two picture captions.
+**Teacher (25 min):** Guide pupils to adapt the four-line model and write two independent captions for beach pictures.
 **Pupils:** Compose four rhyme lines and write two captions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check four coherent rhyme lines and two understandable captions per pupil.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary rhyme, not a textbook transcription. SOW and A4/PDF checks pending. NOT READY.
