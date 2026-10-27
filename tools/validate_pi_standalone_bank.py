@@ -71,6 +71,8 @@ def validate(manifest_path: Path):
                             if len(document) != 1:
                                 errors.append(f"{tag}: approved RPH must be one A4 page")
                             for page in document:
+                                if not page.get_text().strip() and not page.get_image_info():
+                                    errors.append(f"{tag}: approved RPH page is blank")
                                 if abs(page.rect.width - 595.28) > 2 or abs(page.rect.height - 841.89) > 2:
                                     errors.append(f"{tag}: approved RPH must use A4 portrait")
                                 for image in page.get_image_info():
