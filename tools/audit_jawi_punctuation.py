@@ -24,6 +24,24 @@ def coverage(path):
     finally:
         font.close()
 
+def build_report(font_maps, samples=SAMPLES):
+    """Report exact uncovered characters and font fallback requirements."""
+    if not font_maps:
+        raise ValueError("At least one font is required")
+    chars = sorted({ord(c) for sample in samples for c in sample if not c.isspace()})
+    return {
+        "fonts": [path for path, _ in font_maps],
+        "missing": [
+            {"character": chr(cp), "codepoint": f"U+{cp:04X}"}
+            for cp in chars if not any(cp in cmap for _, cmap in font_maps)
+        ],
+        "fallback_needed": [
+            {"character": chr(cp), "codepoint": f"U+{cp:04X}",
+             "font": next((path for path, cmap in font_maps[1:] if cp in cmap), None)}
+            for cp in chars if cp not in font_maps[0][1]
+        ],
+    }
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("fonts", nargs="+", type=Path)
@@ -33,19 +51,7 @@ def main():
         if not path.is_file():
             parser.error(f"Font not found: {path}")
         font_maps.append((str(path), coverage(path)))
-    chars = sorted({ord(c) for s in SAMPLES for c in s if not c.isspace()})
-    report = {
-        "fonts": [p for p, _ in font_maps],
-        "missing": [
-            {"character": chr(cp), "codepoint": f"U+{cp:04X}"}
-            for cp in chars if not any(cp in cmap for _, cmap in font_maps)
-        ],
-        "fallback_needed": [
-            {"character": chr(cp), "codepoint": f"U+{cp:04X}",
-             "font": next((p for p, cmap in font_maps[1:] if cp in cmap), None)}
-            for cp in chars if cp not in font_maps[0][1]
-        ],
-    }
+    report = build_report(font_maps)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     raise SystemExit(1 if report["missing"] else 0)
 
