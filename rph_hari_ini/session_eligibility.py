@@ -71,6 +71,6 @@ def verify_session(session: TimetableSession, evidence: CalendarEvidence,
         return Eligibility(False, 'invalid_calendar_dates')
     if session.session_date not in evidence.verified_school_dates:
         return Eligibility(False, "not_verified_school_day")
-    if session.weekday != session.session_date.weekday():
+    if type(session.weekday) is not int or session.weekday != session.session_date.weekday():
         return Eligibility(False, "timetable_day_mismatch")
     return Eligibility(True, "eligible", session)
