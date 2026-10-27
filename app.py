@@ -16357,7 +16357,7 @@ def webhook():
                 try:
                     req_id=(pending_req or {}).get('id') or _new_payment_request(cid,m.get('message_id'),5.00)
                     payment_amount=float((pending_req or {}).get('amount',5.00))
-                    payment_package='PIONEER KEKAL' if payment_amount==20.0 else 'AKSES 30 HARI'
+                    payment_package='PIONEER (AKSES SEUMUR HIDUP)' if payment_amount==10.0 else ('PIONEER KEKAL (LEGASI RM20)' if payment_amount==20.0 else 'AKSES 30 HARI')
                     state.setdefault(cid,{}).pop('waiting',None)
 
                     user=m.get('from',{}) or {}
