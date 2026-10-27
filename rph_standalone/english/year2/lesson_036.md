@@ -3,28 +3,29 @@
 **Unit:** The old house
 **Main SK/SP:** 1.2 / 1.2.3
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objective:** Pupils practise listening 8 using language from The old house.
+**Learning objectives (draft):** Pupils identify three spoken details about rooms and objects.
+**Success criteria (draft):** three accurate picture selections.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task in the prior Year 2 audit. Detailed SOW activity sequence remains unverified.
 
 ## Set Induction
-**Teacher:** Introduce The old house with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display house pictures and elicit two familiar words.
+**Pupils:** Name two rooms or objects.
 
 ## Activity 1 — Model
-**Teacher:** Model the listening 8 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model listening for a key word in a teacher-created house description.
+**Pupils:** Give one supported response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Read three short descriptions and guide matching to pictures.
+**Pupils:** Match three spoken details to pictures.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record individual evidence against both success criteria.
+**Pupils:** Demonstrate the skill independently.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review two useful house words.
+**Pupils:** Share one learned word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
