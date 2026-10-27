@@ -71,6 +71,15 @@ class AdminUsageTelegramTests(unittest.TestCase):
             lambda cid, message, **kwargs: sent.append(message)))
         self.assertIn('hanya untuk admin', sent[0])
 
+    def test_html_escapes_malicious_subject_names(self):
+        stats = dict(active_today=0, active_7d=0, active_30d=0,
+                     rph_success=1,
+                     top_subjects=[('<script>alert("x")</script> & Bahasa', 1)])
+        output = format_usage_summary(stats)
+        self.assertNotIn('<script>', output)
+        self.assertIn('&lt;script&gt;', output)
+        self.assertIn('&amp; Bahasa', output)
+
     def test_html_escaped_and_zero_stats(self):
         stats = dict(active_today=1, active_7d=2, active_30d=3,
                      rph_success=4, rph_failed=0,
