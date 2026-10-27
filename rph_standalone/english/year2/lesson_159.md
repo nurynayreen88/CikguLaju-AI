@@ -3,10 +3,10 @@
 **Unit:** The robot
 **Main SK/SP:** 4.3 / 4.3.3
 **Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objectives:** Pupils write three legible robot sentences and correct two spacing errors.
-**Success criteria:** three understandable sentences and two accurate corrections.
+**Learning objectives:** Pupils write three legible robot sentences and correct two capital-letter and full-stop errors.
+**Success criteria:** three understandable sentences and two accurate punctuation corrections.
 **Teaching materials:** Pictures, word cards and classroom resources.
-**Original robot scene:** square head, two green eyes and four wheels. **Three models:** It has a square head. Its eyes are green. It has four wheels. **Spacing key:** Ithas four wheels. -> It has four wheels.; Its eyesare green. -> Its eyes are green.
+**Original robot scene:** square head, two green eyes and four wheels. **Three models:** It has a square head. Its eyes are green. It has four wheels. **Punctuation key:** it has four wheels -> It has four wheels.; its eyes are green -> Its eyes are green.
 
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide three independent robot descriptions and two corrections.
-**Pupils:** Write three sentences and correct spacing.
+**Pupils:** Write three sentences and correct capital letters and full stops.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against the success criteria.
