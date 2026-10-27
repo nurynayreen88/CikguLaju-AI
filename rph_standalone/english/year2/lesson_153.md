@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read the five original beach prompts twice, allowing pupils to select a picture independently after each cue.
+**Teacher (25 min):** Organise groups to ask their Lesson 152 quiz questions orally while other groups listen and write answers; use the four supplied backup questions when needed.
 **Pupils:** Take turns asking questions orally and write answers to four questions asked by another group.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's five picture selections and whether at least four are correct.
+**Teacher (10 min):** Collect each pupil's four written responses to spoken questions and record whether at least three are relevant.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
