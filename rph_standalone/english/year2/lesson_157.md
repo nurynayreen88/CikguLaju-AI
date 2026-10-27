@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils describe three objects in an old house and answer two simple questions.
 **Success criteria:** three intelligible descriptions and two relevant answers.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original old-house picture:** a brown table, a small lamp and a big clock. **Three models:** The table is brown. The lamp is small. The clock is big. **Questions/key:** Which object is small? The lamp. What colour is the table? Brown.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
