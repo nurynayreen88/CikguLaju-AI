@@ -1,30 +1,35 @@
 # English Year 2 — Lesson 7: Speaking
 
-**Unit:** Free Time
-**Main SK/SP:** 2.1 / 2.1.1
-**Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objectives (draft):** Pupils ask and answer two free-time questions and recognise two spoken activity words.
-**Success criteria (draft):** Two intelligible exchanges and two correct listening choices.
-**Materials:** Pictures, word cards and teacher-developed task materials. SOW classification: non-textbook; no Student's Book page assigned.
+**Unit:** Free Time  
+**Main SK/SP (existing mapping; final verification pending):** 2.1 / 2.1.1  
+**Complementary SK/SP (existing mapping; final verification pending):** 1.2 / 1.2.2  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK according to the existing Year 2 mapping. Dialogue and tasks are teacher-developed.  
+**Learning objectives:** Pupils ask and answer three free-time questions and identify at least three activities from spoken clues.  
+**Success criteria:** Three intelligible paired exchanges and three correct listening choices.  
+**Materials:** Board and picture cards for reading, cycling, swimming and football.
+
+**Model dialogue:** A: “Do you like swimming?” B: “Yes, I do.” A: “What do you do after school?” B: “I read a book.”  
+**Listening cues:** (1) “I kick a ball.” (football); (2) “I turn the pages of a book.” (reading); (3) “I move in the water.” (swimming); (4) “I ride on two wheels.” (cycling).
 
 ## Set Induction (5 minutes)
-**Teacher:** Show pictures connected to Free Time and elicit two words.
-**Pupils:** Name pictures and answer a question.
+**Teacher:** Mime reading and swimming; ask pupils to name the activities.  
+**Pupils:** Identify the actions and repeat the vocabulary.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model two free-time questions and two spoken activity cues.
-**Pupils:** Follow the demonstration and respond once.
+## Activity 1 — Listen and model questions (15 minutes)
+**Teacher:** Perform the model dialogue with a confident pupil. Demonstrate question intonation and the response frames “Yes, I do”, “No, I don't” and “I ... after school”. Read two listening cues without showing their answers.  
+**Pupils:** Echo the dialogue, practise responses and point to the matching pictures.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide paired question exchanges and listening choices.
-**Pupils:** Ask and answer two questions and identify two spoken activities.
+## Activity 2 — Partner interviews (25 minutes)
+**Teacher:** Pair pupils and give each pair four activity cards. Ask pupils to take turns asking “Do you like ...?” and “What do you do after school?”, using three different cards. Read all four listening cues in random order for a separate picture-choice round. Support emerging speakers with visible response frames; ask confident speakers to add “on Saturday”.  
+**Pupils:** Ask and answer three questions, swap roles and identify spoken activities.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Record each pupil's independent evidence against both success criteria.
-**Pupils:** Give one independent response.
+**Teacher:** Observe three exchanges per pupil and check three independently selected pictures from repeated cues. Record speaking intelligibility and listening accuracy separately, noting prompts.  
+**Pupils:** Demonstrate their questions, responses and picture choices.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful expressions.
-**Pupils:** Demonstrate one learned response.
+**Teacher:** Ask “Which activity do you like best?” and recap the question forms.  
+**Pupils:** Give one personal response.
 
-**QA status:** DRAFT — Teacher's Book sequence and page references not verified; do not publish as final.
+**QA:** COMPLETE TEACHER-DEVELOPED DRAFT — all dialogue and cues supplied. Official SOW alignment and PDF/A4 checks pending; not READY.
