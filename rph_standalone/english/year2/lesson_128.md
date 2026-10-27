@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils write three beach sentences and identify four of five words heard.
 **Success criteria:** three understandable sentences and 4/5 correct listening choices.
 **Teaching materials:** Super Minds 1 Student's Book p.108, pictures, word cards and classroom resources.
+**Original supplementary scene:** yellow sun, blue sea and red bucket. **Sentence models:** The sun is yellow. The sea is blue. The bucket is red. **Teacher-read words:** sun, sea, bucket, sand, shell. Pupils match each to a separate picture card.
+
 **Audited source mapping:** Student's Book p.108 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one word or phrase.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a textbook transcription. Verify official SOW/TB and A4 PDF before READY.
