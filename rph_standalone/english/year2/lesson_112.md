@@ -5,7 +5,9 @@
 **Complementary SK/SP:** 1.2 / 1.2.5
 **Learning objectives:** Pupils describe three robot features and respond to two simple oral questions.
 **Success criteria:** three clear descriptions and two relevant answers.
-**Teaching materials:** Pictures, word cards and classroom resources.
+**Teaching materials:** Pictures, word cards, individual PBD record and original resources below.
+
+**Original robot cards:** A: round head, three eyes, short arms; B: square head, one eye, long arms. **Model sentences:** “It has a round head. It has three eyes. Its arms are short.” **Questions/key:** How many eyes has Robot A got? Three. Which robot has long arms? Robot B.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Practise one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise pair exchanges with robot picture cards and two questions per pupil.
+**Teacher (25 min):** Use both cards for paired three-feature descriptions and two oral questions.
 **Pupils:** Describe three features and answer two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check each pupil against the success criteria and record individual PBD evidence.
+**Teacher (10 min):** Record three intelligible descriptions and two accurate responses. Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
