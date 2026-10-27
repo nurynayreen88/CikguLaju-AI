@@ -13,12 +13,12 @@
 **Pupils:** Name familiar activities and show a matching gesture.
 
 ## Activity 1 — Model a chant (15 minutes)
-**Teacher:** Introduce a four-line teacher-created chant about free-time activities. Clap the beat and model two gestures.
+**Teacher:** Model a teacher-created chant with two activity words and two gestures; use page 65 only as a mapped resource.
 **Pupils:** Listen, repeat each line and imitate the beat and gestures.
 
 ## Activity 2 — Guided performance (25 minutes)
-**Teacher:** Give each group two activity cards and ask them to replace activity words in the chant. Provide time for rehearsal.
-**Pupils:** Substitute two words, practise together and perform with gestures.
+**Teacher:** Guide word substitutions, paired rehearsal and an individual performance.
+**Pupils:** Perform a short chant with two words and gestures.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
