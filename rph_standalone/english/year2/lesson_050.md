@@ -1,31 +1,35 @@
 # English Year 2 — Lesson 50: Language Arts 10
 
-**Unit:** The old house
-**Main SK/SP:** 5.1 / 5.1.1
-**Complementary SK/SP:** 1.2 / 1.2.3
-**Learning objectives (draft):** Pupils perform two lines of an original house rhyme and recognise two spoken room words.
-**Success criteria (draft):** two intelligible rhyme lines and two correct listening choices.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
+**Unit:** The old house  
+**Main SK/SP (existing mapping; SOW check pending):** 5.1 / 5.1.1  
+**Complementary SK/SP (existing mapping; SOW check pending):** 1.2 / 1.2.3  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK. All scripts and cards below are teacher-created, not textbook quotations.  
+**Objective:** Pupils perform four original lines and identify two spoken room words.  
+**Success criteria:** Independently demonstrate each component of the objective.  
+**Materials:** Board, room picture cards, word cards and resources below.
+
+**Original rhyme:** “Up the stairs, step by step. / In my room, I take a rest. / Down the stairs, here I go. / In the kitchen, food smells good.”
+**Actions:** climb, sleep, descend, sniff. **Listening cues/key:** “Point to the stairs.” — stairs; “Point to the kitchen.” — kitchen.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show house pictures and elicit two familiar words.
-**Pupils:** Name two familiar words.
+**Teacher:** Show two room pictures and elicit room and object words.  
+**Pupils:** Name rooms and objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a teacher-created two-line house rhyme with gestures.
-**Pupils:** Give one supported response.
+**Teacher:** Model the rhyme with gestures and distinguish *stairs* from *kitchen*.  
+**Pupils:** Follow and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide paired performance and two spoken-word recognition checks.
-**Pupils:** Perform two lines and identify two words.
+**Teacher:** Pairs perform with gestures; read two listening cues without displaying text and ask pupils to select the right cards.  
+**Pupils:** Complete the task in pairs, then repeat individually.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Assess four lines, two gestures and two independent listening choices. Record accuracy and any prompting.  
+**Pupils:** Demonstrate independently.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Invite one new word and a useful sentence.  
+**Pupils:** Share their learning.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Standalone teacher-developed draft; official SOW and TB (where relevant) plus PDF/A4 verification pending. Not READY.
