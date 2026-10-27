@@ -8,23 +8,23 @@
 **Teaching materials:** pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed task procedure not verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show two outfit pictures and invite predictions.
 **Pupils:** Predict the topic.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model listening for the overall message of a teacher-created outfit description.
 **Pupils:** Listen and select a matching picture.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Read a short labelled teacher-created description twice and ask one main-idea and two follow-up questions.
 **Pupils:** Listen, select the main idea and respond individually.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record the main-idea choice and two oral responses per pupil.
 **Pupils:** Give individual listening evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review key clues for main ideas.
 **Pupils:** Name one clue heard.
 
