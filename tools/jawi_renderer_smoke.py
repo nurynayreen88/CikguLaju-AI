@@ -14,7 +14,12 @@ source=Path("app.py").read_text(encoding="utf-8")
 tree=ast.parse(source)
 classes=[n for n in tree.body if isinstance(n,ast.ClassDef) and n.name=="_JawiRasterParagraph_v25213"]
 assert len(classes)>=2, "Expected base and final Jawi renderer"
-# The final class may inherit through multiple prior patches. Never claim this\n# smoke test validates the live renderer unless the complete class chain is used.\nassert len(classes)==2, (\n    f"Renderer has {len(classes)} definitions: isolated base/final test is NOT production-equivalent. "\n    "Build a complete patch-chain harness before accepting a PDF."\n)
+# The final class may inherit through multiple prior patches. Never claim this
+# smoke test validates the live renderer unless the complete class chain is used.
+assert len(classes)==2, (
+    f"Renderer has {len(classes)} definitions: isolated base/final test is NOT production-equivalent. "
+    "Build a complete patch-chain harness before accepting a PDF."
+)
 base=classes[0]
 final=classes[-1]
 def font_cmap(path):
@@ -33,7 +38,9 @@ def font_path(text,bold=False):
         if Path(p).is_file() and need.issubset(font_cmap(p)): return p
     raise RuntimeError("No installed font covers the complete smoke sample; checked: "+str([(p,Path(p).is_file()) for p in candidates]))
 def plain(text):
-    raw=str(text).replace("<br/>","\\n").replace("<br>","\\n")
+    raw=str(text).replace("<br/>","\
+").replace("<br>","\
+")
     return html.unescape(re.sub(r"<[^>]+>","",raw)),bool(re.fullmatch(r"\\s*<b>.*</b>\\s*",raw,re.S))
 scope={"Flowable":Flowable,"_pi_markup_to_plain_v2605":plain,"_pi_jawi_font_v2606":font_path,"_font_cmap_v25226":font_cmap}
 exec(compile(ast.Module(body=[base],type_ignores=[]),"<app-base>","exec"),scope)
