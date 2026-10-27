@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five spoken robot descriptions and respond to two short questions.
 **Success criteria:** 4/5 correct choices and two relevant answers.
 **Teaching materials:** Super Minds 1 Student's Book p.96, pictures, word cards and classroom resources.
+
+**Original listening cards:** A round head; B two green eyes; C four long arms; D short blue legs; E a red body. **Teacher-read sequence:** “It has a red body. It has four long arms. Its head is round. Its legs are short and blue. It has two green eyes.” **Key:** E,C,A,D,B. **Oral questions/key:** “How many arms?”—four. “What colour are the eyes?”—green.
 **Audited source mapping:** Student's Book p.96 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -13,21 +15,21 @@
 **Pupils:** Name familiar robot features.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model listening for key words in a short robot description; use Student's Book p.96 as the mapped context.
+**Teacher (15 min):** Read the original five descriptions twice and model listening for colours, numbers and shapes.
 **Pupils:** Rehearse one model response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use the page-linked audio if available or a labelled teacher-created description; provide five choices and two questions.
+**Teacher (25 min):** Use the original descriptions and cards for five choices; pupils then answer two oral questions.
 **Pupils:** Listen, choose five answers and respond to two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check each pupil against the stated success criteria and record individual PBD evidence.
+**Teacher (10 min):** Check five listening choices and two oral answers.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
 **Pupils:** Share one word or sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
+**QA:** Original teacher-created supplementary tasks; official SOW/TB (where mapped) and PDF/A4 verification pending. NOT READY.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
