@@ -12,19 +12,19 @@
 **Teacher:** Show pictures of reading, cycling and drawing; elicit familiar activity words.
 **Pupils:** Name activities and respond to one simple question.
 
-## Activity 1 — Model the exchange (7 minutes)
+## Activity 1 — Model the exchange (15 minutes)
 **Teacher:** Model a short question-and-answer exchange about a free-time activity, pointing to a picture for meaning. Repeat with a second picture.
 **Pupils:** Listen, repeat the exchange and identify the activity.
 
-## Activity 2 — Paired speaking (10 minutes)
+## Activity 2 — Paired speaking (25 minutes)
 **Teacher:** Give each pair two picture cues. Ask pupils to exchange roles and change the activity after the first turn.
 **Pupils:** Ask and answer questions in pairs, switching speaker and listener roles.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Observe each pupil asking one intelligible question and answering one question with appropriate activity vocabulary; note who requires prompts.
+## Assessment / PBD (10 minutes)
+**Teacher:** Record individual evidence against both success criteria and give targeted feedback.
 **Pupils:** Complete a two-turn exchange independently.
 
-## Closure (3 minutes)
+## Closure (5 minutes)
 **Teacher:** Invite one pair to demonstrate and review two activity words.
 **Pupils:** Demonstrate the exchange and share a word learned.
 
