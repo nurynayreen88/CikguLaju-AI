@@ -35,3 +35,5 @@
 **Pupils:** Share one rule and a corrected example.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — word bank, frames, model and editing example supplied. Official SOW alignment and PDF/A4 checks pending; not READY.
+
+**QA status:** NOT READY — verify official SOW and Teacher's Book mapping and inspect rendered one-page A4 PDF before release.
