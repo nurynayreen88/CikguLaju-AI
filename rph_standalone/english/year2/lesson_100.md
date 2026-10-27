@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a robot picture and elicit an imaginative idea.
 **Pupils:** Suggest one robot action.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Perform a teacher-created four-line robot verse and model a personal response.
 **Pupils:** Echo lines and practise one response.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide expressive reading and present four short spoken cues with picture cards.
 **Pupils:** Rehearse, share a personal reaction and respond to four cues.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record one personal response and four cue responses per pupil.
 **Pupils:** Demonstrate individual responses.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite a final expressive reading.
 **Pupils:** Share a favourite line.
 
