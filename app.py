@@ -10222,6 +10222,50 @@ def _create_rph_word(doc, section, s, ai_text, path):
     add_row(t3,('Remedial / Enrichment' if _is_english_subject(s) else 'Pemulihan / Pengayaan'),rph.get('PEMULIHAN / PENGAYAAN',''))
     add_row(t3,('Reflection' if _is_english_subject(s) else 'Refleksi'),rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
+    # Compact the active (second) Word RPH renderer, preserving all content.
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    section.page_width = Cm(21)
+    section.page_height = Cm(29.7)
+    section.top_margin = Cm(0.75)
+    section.bottom_margin = Cm(0.75)
+    section.left_margin = Cm(1.1)
+    section.right_margin = Cm(1.1)
+    section.footer_distance = Cm(0.3)
+    doc.styles['Normal'].font.size = Pt(8.5)
+    doc.styles['Normal'].paragraph_format.space_after = Pt(0)
+    doc.styles['Normal'].paragraph_format.space_before = Pt(0)
+    doc.styles['Normal'].paragraph_format.line_spacing = 1.0
+    p.paragraph_format.space_after = Pt(2)
+    rr.font.size = Pt(12)
+    for tbl in doc.tables:
+        tbl.autofit = False
+        for row in tbl.rows:
+            for cell in row.cells:
+                tcPr = cell._tc.get_or_add_tcPr()
+                mar = tcPr.find(qn('w:tcMar'))
+                if mar is None:
+                    mar = OxmlElement('w:tcMar'); tcPr.append(mar)
+                for side in ('top','bottom','left','right'):
+                    el = mar.find(qn('w:'+side))
+                    if el is None:
+                        el = OxmlElement('w:'+side); mar.append(el)
+                    el.set(qn('w:w'), '18' if side in ('top','bottom') else '50')
+                    el.set(qn('w:type'), 'dxa')
+                for para in cell.paragraphs:
+                    para.paragraph_format.space_before = Pt(0)
+                    para.paragraph_format.space_after = Pt(0)
+                    para.paragraph_format.line_spacing = 1.0
+                    for run in para.runs:
+                        run.font.size = Pt(8.5)
+    # Give activity text most of the page width; Notes remains available.
+    for row in t2.rows:
+        for cell, width in zip(row.cells, (Cm(2.65), Cm(12.65), Cm(3.45))):
+            cell.width = width
+    for tbl in (table,t3):
+        for row in tbl.rows:
+            for cell,width in zip(row.cells,(Cm(5.3),Cm(13.45))):
+                cell.width = width
     doc.save(path); return path
 
 def create_word_file(s, ai_text, cid):
