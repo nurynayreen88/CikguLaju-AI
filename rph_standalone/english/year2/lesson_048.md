@@ -36,3 +36,5 @@
 **Pupils:** Share one sentence and a punctuation rule.
 
 **QA:** Complete teacher-developed draft; official SOW and A4/PDF verification pending. Not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
