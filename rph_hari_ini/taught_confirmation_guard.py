@@ -33,8 +33,8 @@ class Decision:
 def validate_confirmation(c: Confirmation) -> Decision:
     if not isinstance(c, Confirmation):
         return Decision(False, "invalid_confirmation")
-    if not all((str(c.teacher_id).strip(), str(c.class_id).strip(),
-                str(c.subject_id).strip(), str(c.session_instance_id).strip())):
+    if not all(isinstance(value, str) and value.strip() for value in
+               (c.teacher_id, c.class_id, c.subject_id, c.session_instance_id)):
         return Decision(False, "missing_identity")
     if type(c.school_year) is not int or not 2020 <= c.school_year <= 2100:
         return Decision(False, "invalid_school_year")
