@@ -58,3 +58,39 @@ pdf=fitz.open(out)
 assert len(pdf)==1
 assert len(pdf[0].get_image_info())>=4
 print("Created",out,"bytes",out.stat().st_size,"embedded images",len(pdf[0].get_image_info()))
+
+# Representative A4 RPH table stress test: same renderer in narrow columns,
+# with repeated activity text. This is not a DB-backed production RPH.
+from reportlab.platypus import KeepTogether
+from reportlab.lib.pagesizes import A4
+rph=Path("jawi_renderer_a4_table_stress.pdf")
+head=ParagraphStyle("jawi-heading",fontSize=10,leading=14)
+body=ParagraphStyle("jawi-body",fontSize=9.5,leading=13)
+long_activity=("ݢورو ممباچ دان موريد منوليس. موريد ممباچ ڤرکاتاءن جاوي. "*4).strip()
+sections=[
+    ("معلومت ڤڠاجرن", "ڤنديديقن اسلام"),
+    ("ست ايندوکسي", "ݢورو ممباچ دان موريد مندڠر."),
+    ("اکتيۏيتي 1", long_activity),
+    ("اکتيۏيتي 2", long_activity),
+    ("اکتيۏيتي 3", long_activity),
+    ("ڤنتکسيرن", "موريد ممباچ ڤرکاتاءن جاوي."),
+    ("ڤنوتوڤ", "ݢورو دان موريد مرو موسکن ڤمبلاجرن."),
+]
+rows=[[Renderer(a,head),Renderer(b,body)] for a,b in sections]
+t=Table(rows,colWidths=[120,350],repeatRows=0,hAlign="CENTER")
+t.setStyle(TableStyle([
+    ("GRID",(0,0),(-1,-1),0.5,colors.grey),
+    ("VALIGN",(0,0),(-1,-1),"TOP"),
+    ("LEFTPADDING",(0,0),(-1,-1),7),
+    ("RIGHTPADDING",(0,0),(-1,-1),7),
+    ("TOPPADDING",(0,0),(-1,-1),5),
+    ("BOTTOMPADDING",(0,0),(-1,-1),5),
+]))
+SimpleDocTemplate(str(rph),pagesize=A4,topMargin=32,bottomMargin=32).build([t])
+pdf=fitz.open(rph)
+assert len(pdf)==1, f"A4 RPH table overflowed to {len(pdf)} pages"
+images=pdf[0].get_image_info()
+assert len(images)>=14
+assert all(i["bbox"][0]>=0 and i["bbox"][2]<=pdf[0].rect.width for i in images)
+assert all(i["bbox"][1]>=0 and i["bbox"][3]<=pdf[0].rect.height for i in images)
+print("Created",rph,"pages",len(pdf),"images",len(images))
