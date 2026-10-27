@@ -38,6 +38,8 @@ class Eligibility:
 def verify_session(session: TimetableSession, evidence: CalendarEvidence,
                    *, teacher_id: int, registered_class_keys: FrozenSet[str],
                    expected_subject: str) -> Eligibility:
+    if not isinstance(session, TimetableSession) or not isinstance(evidence, CalendarEvidence):
+        return Eligibility(False, "invalid_evidence_or_session")
     if type(teacher_id) is not int or type(session.teacher_id) is not int:
         return Eligibility(False, "invalid_teacher")
     if teacher_id != session.teacher_id:
@@ -52,10 +54,16 @@ def verify_session(session: TimetableSession, evidence: CalendarEvidence,
     if (type(session.school_year) is not int
             or type(evidence.school_year) is not int
             or session.school_year != evidence.school_year
+            or type(session.session_date) is not date
             or session.session_date.year != session.school_year):
         return Eligibility(False, "year_mismatch")
-    if not evidence.state_name.strip() or not evidence.source_id.strip():
+    if (not isinstance(evidence.state_name, str)
+            or not isinstance(evidence.source_id, str)
+            or not evidence.state_name.strip() or not evidence.source_id.strip()):
         return Eligibility(False, "unverified_calendar_source")
+    if (type(session.session_date) is not date
+            or not isinstance(evidence.verified_school_dates, frozenset)):
+        return Eligibility(False, "invalid_calendar_dates")
     if session.session_date not in evidence.verified_school_dates:
         return Eligibility(False, "not_verified_school_day")
     if session.weekday != session.session_date.weekday():
