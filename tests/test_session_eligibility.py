@@ -84,6 +84,14 @@ class EligibilityTests(unittest.TestCase):
         e = CalendarEvidence(2028, "Kedah", "TEST", self.evidence.verified_school_dates)
         self.assertFalse(verify_session(self.session, e, **self.kw).allowed)
 
+    def test_boolean_weekday_rejected(self):
+        from dataclasses import replace
+        s = replace(self.session, session_date=date(2027, 3, 2), weekday=True)
+        e = CalendarEvidence(2027, "Kedah", "verified-test",
+                             frozenset({date(2027, 3, 2)}))
+        self.assertEqual(verify_session(s, e, **self.kw).reason,
+                         "timetable_day_mismatch")
+
     def test_wrong_weekday(self):
         s = TimetableSession(123, 2027, "5A", "EN", "s1",
                              date(2027, 3, 1), 1, 160)
