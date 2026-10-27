@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 3.2 / 3.2.3
 **Complementary SK/SP:** 3.2 / 3.2.1
-**Learning objective:** Pupils practise reading 28 using language from At the beach.
+**Learning objectives:** Pupils locate four of five details in the printed pages 110–111 and read two short lines aloud.
+**Success criteria:** four accurate detail responses and two intelligible lines.
 **Teaching materials:** Super Minds 1 Student's Book pp.110–111, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book pp.110–111 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
