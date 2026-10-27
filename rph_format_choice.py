@@ -1,37 +1,45 @@
-"""Pilihan format muat turun RPH; modul tanpa kesan sampingan.
+"""Pilihan RPH PDF/Word untuk checkbox bahan PdP sedia ada.
 
-Integrasi handler Telegram dan eksport DOCX dibuat berasingan selepas
-laluan penghantaran RPH sedia ada disahkan.
+Modul ini tidak menukar DB, kuota atau handler Telegram secara automatik.
+Adapter Telegram perlu menggabungkan dua pilihan ini dengan pilihan bahan lain.
 """
-from typing import Tuple
+from typing import Iterable, Tuple
 
-FORMAT_PDF = "pdf"
-FORMAT_WORD = "word"
-FORMAT_BOTH = "both"
+RPH_PDF = "rph_pdf"
+RPH_WORD = "rph_word"
 
-RPH_FORMAT_OPTIONS = (
-    ("📕 PDF sahaja (.pdf)", FORMAT_PDF),
-    ("📘 Word sahaja (.docx)", FORMAT_WORD),
-    ("📚 Kedua-duanya (PDF + Word)", FORMAT_BOTH),
+RPH_CHECKBOX_OPTIONS = (
+    ("📕 RPH (PDF)", RPH_PDF),
+    ("📘 RPH (Word)", RPH_WORD),
 )
 
-
-def selected_extensions(format_choice: str) -> Tuple[str, ...]:
-    """Senarai fail untuk dihantar; satu pilihan tidak bermaksud satu janaan baharu."""
-    mapping = {
-        FORMAT_PDF: (".pdf",),
-        FORMAT_WORD: (".docx",),
-        FORMAT_BOTH: (".pdf", ".docx"),
-    }
-    try:
-        return mapping[format_choice]
-    except (KeyError, TypeError):
-        raise ValueError("Pilihan format RPH tidak sah") from None
+DEFAULT_SELECTED = frozenset((RPH_PDF,))
 
 
-def format_keyboard_rows(callback_prefix: str = "rph_format"):
-    """Data neutral untuk dibina menjadi InlineKeyboardButton oleh adapter Telegram."""
+def selected_rph_extensions(selected: Iterable[str]) -> Tuple[str, ...]:
+    """PDF, Word atau kedua-duanya mengikut checkbox yang ditanda."""
+    values = set(selected)
     return tuple(
-        ((label, f"{callback_prefix}:{value}"),)
-        for label, value in RPH_FORMAT_OPTIONS
+        extension for key, extension in (
+            (RPH_PDF, ".pdf"),
+            (RPH_WORD, ".docx"),
+        ) if key in values
     )
+
+
+def toggle_rph_format(selected: Iterable[str], choice: str) -> frozenset:
+    """Toggle satu pilihan tanpa menjejaskan pilihan audio/buku teks."""
+    if choice not in (RPH_PDF, RPH_WORD):
+        raise ValueError("Pilihan format RPH tidak sah")
+    values = set(selected)
+    if choice in values:
+        values.remove(choice)
+    else:
+        values.add(choice)
+    return frozenset(values)
+
+
+def requires_rph_generation(selected: Iterable[str]) -> bool:
+    """Dua format tetap satu permintaan kandungan RPH."""
+    values = set(selected)
+    return bool(values.intersection((RPH_PDF, RPH_WORD)))
