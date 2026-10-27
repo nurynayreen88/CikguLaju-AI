@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a the old house picture and elicit two familiar words.
 **Pupils:** Name two relevant words.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model descriptions of rooms or objects in an old house.
 **Pupils:** Rehearse one supported response.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide picture-supported partner descriptions and two questions.
 **Pupils:** Describe three objects and answer two questions.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against the success criteria.
 **Pupils:** Provide individual evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review one useful expression.
 **Pupils:** Share one useful word.
 
