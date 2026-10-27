@@ -34,3 +34,5 @@
 **Pupils:** State one correct detail.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — original script and answer key supplied; not claimed as SB p.73 transcript. Official TB/SOW alignment and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
