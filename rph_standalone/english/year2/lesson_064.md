@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show an outfit picture and elicit a word bank.
 **Pupils:** Suggest clothing words.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher:** Model the writing 13 task and check understanding.
 **Pupils:** Construct one supported sentence.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Provide a new picture and guide three-sentence writing; teach a simple peer-editing checklist.
 **Pupils:** Write three sentences, check spelling and punctuation and revise.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Assess three individual sentences and two corrections; record writing evidence.
 **Pupils:** Submit revised writing.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Share one well-formed example sentence.
 **Pupils:** Read one sentence.
 
