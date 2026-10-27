@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils give three beach-related personal responses and ask two simple questions.
 **Success criteria:** three relevant answers and two intelligible questions.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original personal prompts:** What do you like doing at the beach? What do you take? Who do you go with? **Model responses:** I like swimming. I take a bucket. I go with Mum. **Pupil questions:** Do you like swimming? What do you take?
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original teacher-created material; official SOW and PDF/A4 verification pending. NOT READY.
