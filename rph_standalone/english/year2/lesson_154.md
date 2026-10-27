@@ -3,8 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 2.2 / 2.2.2
-**Learning objectives:** Pupils ask two questions and give three relevant answers about beach activities.
-**Success criteria:** two intelligible questions and three relevant answers.
+**Learning objectives:** Pupils describe three beach objects and use one polite phrase to request help.
+**Success criteria:** Three clear object descriptions and one suitable request for help.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original dialogue frames:** A: What do you like at the beach? B: I like collecting shells. A: Who do you go with? B: I go with Dad. **Third response prompt:** What do you take? I take a bucket. **Key:** Accept meaningful personal answers.
 
@@ -15,7 +15,7 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model asking and answering simple beach questions.
+**Teacher (15 min):** Model describing beach objects and politely asking a classmate for help.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Ask two questions and give three answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Listen to each pupil and record two intelligible questions and three relevant personal answers.
+**Teacher (10 min):** Record three object descriptions and one polite help request per pupil.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
