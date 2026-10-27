@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objective:** Pupils practise language arts 9 using language from The old house.
+**Learning objectives (draft):** Pupils perform a short teacher-created house rhyme with two actions and say one related sentence.
+**Success criteria (draft):** two intelligible rhyme lines, two gestures and one relevant sentence.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
