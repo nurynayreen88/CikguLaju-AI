@@ -32,6 +32,12 @@ class StableBridgeTests(unittest.TestCase):
         second = verified_stable_session(**renamed)[2]
         self.assertEqual(first.session_id, second.session_id)
 
+    def test_whitespace_time_same_session_id(self):
+        first = verified_stable_session(**self.kw)[2]
+        padded = self.kw | {"row": self.row | {"start": " 08:00 ", "end": "09:00 "}}
+        second = verified_stable_session(**padded)[2]
+        self.assertEqual(first.session_id, second.session_id)
+
     def test_subject_mapping_missing_blocked(self):
         kw = self.kw | {"subject_mapping": None}
         allowed, reason, _ = verified_stable_session(**kw)
