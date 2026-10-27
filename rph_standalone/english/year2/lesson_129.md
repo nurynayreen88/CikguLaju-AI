@@ -9,23 +9,23 @@
 **Audited source mapping:** Student's Book p.109 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce At the beach with a picture and two questions.
-**Pupils:** Recall familiar words.
+**Teacher (5 min):** Display a beach picture and elicit two familiar words.
+**Pupils:** Name beach objects.
 
 ## Activity 1 — Model
-**Teacher:** Model the reading 26 task and check understanding.
-**Pupils:** Follow the model and respond.
+**Teacher (15 min):** Model finding a fact on the actual printed page 109.
+**Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
-**Pupils:** Complete the task and share one response.
+**Teacher (25 min):** Use five page-grounded fact prompts and two oral questions.
+**Pupils:** Locate printed facts and give two oral answers.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
-**Pupils:** Demonstrate the target skill.
+**Teacher (10 min):** Record individual performance against the success criteria.
+**Pupils:** Submit individual evidence.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
-**Pupils:** Share one thing learned.
+**Teacher (5 min):** Review one useful beach word.
+**Pupils:** Share one word or phrase.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
