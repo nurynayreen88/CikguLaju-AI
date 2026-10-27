@@ -6,7 +6,7 @@
 **Learning objectives:** Pupils describe three beach objects and use one polite phrase to request help.
 **Success criteria:** Three clear object descriptions and one suitable request for help.
 **Teaching materials:** Pictures, word cards and classroom resources.
-**Original dialogue frames:** A: What do you like at the beach? B: I like collecting shells. A: Who do you go with? B: I go with Dad. **Third response prompt:** What do you take? I take a bucket. **Key:** Accept meaningful personal answers.
+**Original object models:** The bucket is red. The shells are small. The ball is blue. **Help request:** Excuse me, can you help me, please? **Key:** Three relevant object descriptions and one polite request.
 
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
