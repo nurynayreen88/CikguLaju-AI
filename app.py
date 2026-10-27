@@ -46542,3 +46542,25 @@ def send_document(cid,path,caption=''):
 
 CIKGULAJU_RPH_TRIAL_SELECTED_20261027 = True
 # === END SELECTED RPH TRIAL GATE ===
+
+# === ADMIN USAGE DELIVERY METRICS 20261027 ===
+# Observability only: does not alter the established trial debit logic.
+_ADMIN_USAGE_SEND_DOCUMENT_BASE = send_document
+def send_document(cid, path, caption=''):
+    result = _ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)
+    if 'RPH' in str(caption or '').upper() and _telegram_delivery_ok_v25279(result):
+        try:
+            from admin_usage_stats import initialize, record_event
+            con = _db()
+            try:
+                initialize(con)
+                ss = state.get(cid) or {}
+                record_event(con, cid, 'rph_success',
+                             subject=str(ss.get('subject') or '') or None,
+                             grade=str(ss.get('year') or '') or None)
+            finally:
+                con.close()
+        except Exception as exc:
+            print('ADMIN USAGE METRIC WARNING:', repr(exc), flush=True)
+    return result
+# === END ADMIN USAGE DELIVERY METRICS ===
