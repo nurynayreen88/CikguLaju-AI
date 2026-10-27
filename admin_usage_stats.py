@@ -15,6 +15,10 @@ CREATE TABLE IF NOT EXISTS admin_usage_events (
  grade TEXT,
  created_at TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS admin_usage_delivery_keys (
+ telegram_message_key TEXT PRIMARY KEY,
+ recorded_at TEXT NOT NULL
+);
 CREATE INDEX IF NOT EXISTS idx_admin_usage_events_time
  ON admin_usage_events(created_at);
 CREATE INDEX IF NOT EXISTS idx_admin_usage_events_user_time
@@ -61,3 +65,26 @@ def summary(connection, now=None):
         'rph_failed': counts.get('rph_failed', 0),
         'top_subjects': subjects,
     }
+
+def record_confirmed_delivery(connection, user_id, telegram_message_id, subject=None, grade=None):
+    """Exactly once per Telegram chat/message; atomic with the event insert.
+
+    Returns True if recorded, False if this Telegram message was already seen.
+    """
+    if telegram_message_id is None:
+        return False
+    key = f'{user_id}:{telegram_message_id}'
+    stamp = datetime.now(timezone.utc).isoformat()
+    with connection:
+        inserted = connection.execute(
+            'INSERT OR IGNORE INTO admin_usage_delivery_keys '
+            '(telegram_message_key, recorded_at) VALUES (?,?)', (key, stamp)
+        ).rowcount
+        if not inserted:
+            return False
+        connection.execute(
+            'INSERT INTO admin_usage_events '
+            '(telegram_user_id,event_type,subject,grade,created_at) VALUES (?,?,?,?,?)',
+            (str(user_id), 'rph_success', subject, grade, stamp),
+        )
+    return True
