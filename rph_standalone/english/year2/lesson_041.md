@@ -1,31 +1,34 @@
 # English Year 2 — Lesson 41: Listening 9
 
-**Unit:** The old house
-**Main SK/SP:** 1.1 / 1.1.1
-**Complementary SK/SP:** 3.1 / 3.1.3
-**Learning objectives (draft):** Pupils identify two spoken house words and recognise two printed words.
-**Success criteria (draft):** Two correct listening choices and two recognised printed words.
-**Teaching materials:** Super Minds 1 Student's Book p.75, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.75 (Year 2 SOW mapping audit); Teacher's Book sequence not yet verified.
+**Unit:** The old house  
+**Main SK/SP (prior mapping; SOW verification pending):** 1.1 / 1.1.1  
+**Complementary SK/SP (prior mapping; SOW verification pending):** 3.1 / 3.1.3  
+**Duration:** 60 minutes  
+**Mapped resource:** Super Minds 1 Student's Book SB p.75. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
+**Objective:** Pupils identify four spoken room clues and recognise four printed words.  
+**Success criteria:** Independently complete all stated components.  
+**Materials:** Board, room cards, exercise books and resources below.
+
+**Printed cards:** bedroom, kitchen, bathroom, living room. **Original spoken cues:** “Find the room where you sleep.” (bedroom); “Find the room where you cook.” (kitchen); “Find the room where you wash.” (bathroom); “Find the room with a sofa.” (living room). **Answer key:** bedroom, kitchen, bathroom, living room.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show house pictures and elicit two familiar words.
-**Pupils:** Name two familiar words.
+**Teacher:** Show room pictures and elicit two familiar house words.  
+**Pupils:** Name rooms or objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model listening to two teacher-spoken house words and matching printed cards; page 75 is a mapped resource only.
-**Pupils:** Give one supported response.
+**Teacher:** Model the first spoken clue and match it to the bedroom card, then point to the printed word.  
+**Pupils:** Practise the model with support.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide two listening checks and two printed-word identifications.
-**Pupils:** Select two spoken words and recognise two printed cards.
+**Teacher:** Read all four clues twice in mixed order. Pupils select picture cards and then match printed room words. Partners explain their clues.  
+**Pupils:** Complete the activity and explain their answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's independent evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Give four fresh-order oral clues and four printed cards; record individual listening and word recognition. Note accuracy and prompts needed.  
+**Pupils:** Respond independently.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Recap two words and ask for one relevant sentence.  
+**Pupils:** Share a sentence.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; textbook activity alignment, official SOW SK/SP and PDF/A4 QA pending. Not READY.
