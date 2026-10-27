@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils create a four-line beach dialogue and identify four details heard in a partner performance.
 **Success criteria:** four coherent dialogue lines and four accurate listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original four-line dialogue:** A: Look! I have a red bucket. B: I have a blue spade. A: Let's find shells near the water. B: Yes! I can see three shells. **Four listening facts/key:** red bucket; blue spade; near water; three shells.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a verified textbook extract. Official SOW/TB and PDF/A4 checks pending. NOT READY.
