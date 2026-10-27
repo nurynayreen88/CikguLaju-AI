@@ -268,6 +268,19 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(counts['rph_success'], 2)
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_successful_user_not_counted_as_without_rph(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        now = datetime(2026, 10, 27, 12, 0, tzinfo=timezone.utc)
+        record_daily_active(db, 111, now)
+        record_event(db, 111, 'rph_success', 'English', 'Year 1', now)
+        record_daily_active(db, 111, now + timedelta(days=1))
+        record_daily_active(db, 222, now)
+        counts = summary(db, now + timedelta(days=1))
+        self.assertEqual(counts['tracked_users'], 2)
+        self.assertEqual(counts['users_with_rph'], 1)
+        self.assertEqual(counts['active_without_rph'], 1)
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
