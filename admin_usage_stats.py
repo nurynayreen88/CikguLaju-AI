@@ -63,7 +63,24 @@ def summary(connection, now=None):
         "WHERE event_type='rph_success' AND subject IS NOT NULL "
         "GROUP BY subject ORDER BY total DESC LIMIT 10"
     ).fetchall()
+    # User conversion is derived from recorded events, not inferred from signups.
+    user_counts = connection.execute(
+        "SELECT COUNT(DISTINCT telegram_user_id) FROM admin_usage_events"
+    ).fetchone()[0]
+    successful_users = connection.execute(
+        "SELECT COUNT(DISTINCT telegram_user_id) FROM admin_usage_events "
+        "WHERE event_type='rph_success'"
+    ).fetchone()[0]
+    active_without_rph = connection.execute(
+        "SELECT COUNT(DISTINCT a.telegram_user_id) FROM admin_usage_events a "
+        "WHERE a.event_type='bot_active' AND NOT EXISTS ("
+        "SELECT 1 FROM admin_usage_events b WHERE b.telegram_user_id=a.telegram_user_id "
+        "AND b.event_type='rph_success')"
+    ).fetchone()[0]
     return {
+        'tracked_users': user_counts,
+        'users_with_rph': successful_users,
+        'active_without_rph': active_without_rph,
         'active_today': unique_since(day),
         'active_7d': unique_since(now - timedelta(days=7)),
         'active_30d': unique_since(now - timedelta(days=30)),
