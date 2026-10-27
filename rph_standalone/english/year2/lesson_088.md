@@ -31,3 +31,5 @@
 **QA:** Exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA status:** NOT READY — five-phase 60-minute structure verified; official SOW/Teacher's Book alignment and rendered A4 PDF inspection pending.
