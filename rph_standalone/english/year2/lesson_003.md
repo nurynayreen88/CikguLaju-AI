@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer a question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model a two-turn dialogue with picture prompts.
+**Teacher:** Model a two-turn free-time dialogue and two spoken activity words.
 **Pupils:** Follow the demonstration and respond once.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise the exchange in pairs and change roles. Support pupils who need prompts.
-**Pupils:** Complete the task and share responses.
+**Teacher:** Guide partner role swaps and two spoken identification cues.
+**Pupils:** Ask and answer twice and identify two activities.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
