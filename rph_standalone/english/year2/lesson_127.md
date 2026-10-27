@@ -9,23 +9,23 @@
 **Audited source mapping:** Student's Book p.107 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction
-**Teacher:** Introduce At the beach with a picture and two questions.
+**Teacher (5 min):** Show a beach picture and elicit two familiar objects.
 **Pupils:** Recall familiar words.
 
 ## Activity 1 — Model
-**Teacher:** Model the speaking 26 task and check understanding.
+**Teacher (15 min):** Model short descriptions of beach objects and one question.
 **Pupils:** Follow the model and respond.
 
 ## Activity 2 — Guided practice
-**Teacher:** Organise pair or individual practice and provide feedback.
+**Teacher (25 min):** Guide partner descriptions and two picture-based questions.
 **Pupils:** Complete the task and share one response.
 
 ## Assessment / PBD
-**Teacher:** Observe one individual response and record feedback.
+**Teacher (10 min):** Record three descriptions and two answers for each pupil.
 **Pupils:** Demonstrate the target skill.
 
 ## Closure
-**Teacher:** Recap the lesson and invite two pupils to demonstrate.
+**Teacher (5 min):** Review a useful descriptive phrase.
 **Pupils:** Share one thing learned.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
