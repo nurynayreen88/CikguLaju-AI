@@ -1,31 +1,32 @@
 # English Year 2 — Lesson 21: Reading 5
 
-**Unit:** Free Time
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 2.1 / 2.1.2
-**Learning objectives (draft):** Pupils identify two details in a short illustrated free-time text and answer two oral questions.
-**Success criteria (draft):** two text-supported details and two relevant spoken answers.
-**Teaching materials:** Super Minds 1 Student's Book p.66, pictures, word cards and classroom resources.
-**Audited source mapping:** Super Minds 1 Student's Book p.66 (page mapped in prior Year 2 SOW audit). Exact Teacher's Book steps not yet verified.
+**Unit:** Free Time — Learn and think: I'm healthy!  
+**Main SK/SP (existing SOW mapping; requires final SOW check):** 3.2 / 3.2.2  
+**Complementary SK/SP (existing SOW mapping; requires final SOW check):** 2.1 / 2.1.2  
+**Duration:** 60 minutes  
+**Verified references:** Super Minds 1 Student's Book p.66; Teacher's Book T66 (local scanned TB PDF page index 143). TB T66 specifies SB p.66 listening/reading and oral questions about healthy living, then sorting six pictures into healthy/unhealthy; WB p.66 provides follow-up.  
+**Learning objectives:** Pupils identify three ideas about healthy living from the page and orally answer two simple questions; pupils classify six pictured activities with reasons.  
+**Success criteria:** Three correct healthy-life ideas, two relevant oral answers, and at least five of six picture classifications.  
+**Materials:** SB p.66, six numbered pictures on the page, board, exercise books, optional WB p.66. Audio CD2 Track 33 if available; teacher can read instructions and text aloud without pretending to supply the original audio.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show two free-time pictures and elicit two activity words.
-**Pupils:** Name two activities.
+**Teacher:** Mime two activities from the unit (playing with friends and doing sport). Ask which activities help us stay healthy.  
+**Pupils:** Identify the activities and share one opinion.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model locating one detail in a teacher-created illustrated text; use mapped page 66 only as a resource.
-**Pupils:** Rehearse one supported response.
+## Activity 1 — Read and ask (15 minutes)
+**Teacher:** Direct pupils to the healthy-life panel on SB p.66. Read the short statements aloud or play CD2 Track 33 when available. Explain *healthy*, *unhealthy* and *keep fit*. Model the question “How do you keep fit?” and a short answer.  
+**Pupils:** Read the panel, locate three healthy-life ideas and practise answering two of the page's questions with a partner.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide two text-evidence prompts and two oral questions.
-**Pupils:** Locate two clues and answer two questions.
+## Activity 2 — Sort and explain (25 minutes)
+**Teacher:** Direct pupils to the six numbered pictures in SB p.66 Activity 2. Model deciding whether picture 1 is healthy, then have pairs sort the remaining pictures and explain their choices. Use the TB classification key for feedback: healthy 1, 2, 3; unhealthy 4, 5, 6. Offer WB p.66 as optional reinforcement.  
+**Pupils:** Categorise all six pictures, discuss reasons and record two healthy habits they can practise.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Submit or demonstrate individual evidence.
+**Teacher:** Ask pupils individually to point to three healthy-life ideas, answer two oral questions and classify six pictures without partner help. Record reading comprehension and oral communication separately.  
+**Pupils:** Demonstrate independent reading and speaking.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful activity words.
-**Pupils:** Share one useful word.
+**Teacher:** Write “Today I learnt about ...” and invite pupils to complete it with one healthy habit.  
+**Pupils:** Say one habit and copy the sentence into their books.
 
-**Source:** Prior Year 2 SOW mapping audit. **QA:** Preliminary teacher-developed RPH; activity-to-source alignment and A4 layout remain unverified.
+**QA:** TEXTBOOK-ALIGNED DRAFT — SB p.66 and TB T66 checked visually; SOW SK/SP verification and A4/PDF QA pending. Do not mark READY.
