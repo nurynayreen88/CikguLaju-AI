@@ -46757,6 +46757,19 @@ class _JawiRasterParagraph_v25213(_PI_JAWI_PRE_GUARD_RASTER):
             raise RuntimeError('PI Jawi PDF requires Pillow with RAQM/HarfBuzz')
         path = _pi_exact_jawi_font_v2604(
             self.text, bool(getattr(self, 'bold', False)))
+        # Arabic coverage alone is insufficient: mixed RPH labels may contain
+        # unsupported symbols, emoji or Latin glyphs rendered as empty boxes.
+        # Report them without changing Jawi words or silently deleting text.
+        try:
+            cmap = _font_cmap_v25226(path)
+            missing = sorted({ord(c) for c in str(self.text or '')
+                              if not c.isspace() and ord(c) not in cmap})
+            if missing:
+                print('PI JAWI RASTER MISSING GLYPHS',
+                      [f'U+{cp:04X}' for cp in missing],
+                      'FONT', path, flush=True)
+        except Exception as exc:
+            print('PI JAWI GLYPH AUDIT ERROR', repr(exc), flush=True)
         return ImageFont.truetype(path, px, layout_engine=ImageFont.Layout.RAQM)
 CIKGULAJU_PATCH_PI_JAWI_STRICT_20261027 = 'NO_INCOMPLETE_GLYPH_OR_BASIC_LAYOUT_FALLBACK'
 # === END PI JAWI STRICT GLYPH + RAQM GUARD ===
