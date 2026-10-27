@@ -10,22 +10,22 @@
 
 ## Set Induction
 **Teacher (5 min):** Show a beach picture and elicit two familiar objects.
-**Pupils:** Recall familiar words.
+**Pupils:** Name two beach objects.
 
 ## Activity 1 — Model
 **Teacher (15 min):** Model short descriptions of beach objects and one question.
-**Pupils:** Follow the model and respond.
+**Pupils:** Rehearse one description.
 
 ## Activity 2 — Guided practice
 **Teacher (25 min):** Guide partner descriptions and two picture-based questions.
-**Pupils:** Complete the task and share one response.
+**Pupils:** Describe three beach objects and answer two questions.
 
 ## Assessment / PBD
 **Teacher (10 min):** Record three descriptions and two answers for each pupil.
-**Pupils:** Demonstrate the target skill.
+**Pupils:** Provide individual oral evidence.
 
 ## Closure
 **Teacher (5 min):** Review a useful descriptive phrase.
-**Pupils:** Share one thing learned.
+**Pupils:** Share one descriptive phrase.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
