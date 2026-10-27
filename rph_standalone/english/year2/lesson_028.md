@@ -37,3 +37,5 @@
 **Pupils:** Share one useful clue.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — original text, questions, answer key and writing prompts supplied. Official SOW alignment and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
