@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing mapping; requires checking):** 3.2 / 3.2.2
 **Complementary SK/SP (existing mapping; requires checking):** 3.2 / 3.2.3
-**Learning objective (draft):** Pupils can identify two details in a short illustrated text.
+**Learning objectives (draft):** Pupils identify two details in a short illustrated free-time text and answer two related questions.
+**Success criteria (draft):** Two correctly located details and two text-supported answers.
 **Materials:** Relevant topic pictures, word cards, board and exercise books.
 **Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit. These activities are teacher-developed; detailed SOW steps remain unverified.
 
