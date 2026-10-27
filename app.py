@@ -26809,7 +26809,7 @@ def _rph_time_picker(cid, mode='start', page=0):
 APP_VERSION='v25.28-MATERIAL-PICKER-AFTER-TIME'
 
 _MAT_META_V2528={
-    'rph':('📘','RPH'),'worksheet':('📝','Worksheet'),'bbm':('🎨','BBM'),
+    'rph':('📕','RPH (PDF)'),'rph_word':('📘','RPH (Word)'),'worksheet':('📝','Worksheet'),'bbm':('🎨','BBM'),
     'textbook':('📖','Buku Teks'),'activity':('📚','Buku Aktiviti'),'media':('🔊','Audio/Media'),
 }
 
@@ -26828,6 +26828,8 @@ def _available_materials_v2528(ss):
     # English Y1/Y2 verified audio has its own proven route.
     if ss.get('audio_status')=='VERIFIED_AUDIO' and ss.get('audio_reference') and 'media' not in out:
         out.append('media')
+    if 'rph' in out and 'rph_word' not in out:
+        out.insert(out.index('rph')+1, 'rph_word')
     return out
 
 def _material_picker_v2528(cid, note=''):
@@ -26901,11 +26903,19 @@ def _submit_materials_v2528(cid):
             try: _generation_progress_update(cid,pmid,min(95,10+int((n-1)*80/total)),f'Menyediakan {label}...','Bahan Dipilih')
             except Exception: pass
             try:
-                if key=='rph':
+                if key in ('rph','rph_word'):
                     ctx=dict(ss); ctx['task']='rph'
-                    txt=_inject_worksheet_differentiation_into_rph(_local_rph_text(ctx))
+                    if '_rph_shared_text_vwordpdf' not in locals():
+                        _rph_shared_text_vwordpdf=_inject_worksheet_differentiation_into_rph(_local_rph_text(ctx))
+                    txt=_rph_shared_text_vwordpdf
                     if not txt: raise RuntimeError('RPH unavailable')
-                    p=create_pdf_file(ctx,txt,str(cid)+'_selected_rph'); paths.append(p); send_document(cid,p,'📘 RPH CikguLaju'); ok.append(label)
+                    if key=='rph':
+                        p=create_pdf_file(ctx,txt,str(cid)+'_selected_rph')
+                    else:
+                        p=create_word_file(ctx,txt,str(cid)+'_selected_rph')
+                    paths.append(p)
+                    send_document(cid,p,'📘 RPH CikguLaju '+('PDF' if key=='rph' else 'Word'))
+                    ok.append(label)
                 elif key=='worksheet':
                     ctx=dict(ss); ctx['task']='worksheet'; ctx.setdefault('worksheet_questions',8)
                     # One curriculum-appropriate worksheet set; no forced 4-level pack.
