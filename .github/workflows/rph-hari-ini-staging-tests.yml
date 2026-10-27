@@ -1,0 +1,34 @@
+name: RPH Hari Ini staging unit tests
+
+on:
+  push:
+    branches:
+      - staging/rph-hari-ini-integration-audit-20261027
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile staging modules
+        run: python -m compileall -q rph_hari_ini
+      - name: Run focused staging unit tests
+        run: |
+          python -m unittest -v \
+            tests.test_class_identity \
+            tests.test_class_identity_rename_safety \
+            tests.test_class_identity_uuid_format \
+            tests.test_session_eligibility \
+            tests.test_legacy_timetable_bridge \
+            tests.test_stable_timetable_bridge \
+            tests.test_taught_confirmation_guard \
+            tests.test_sqlite_taught_store_testonly \
+            tests.test_taught_sql_security
