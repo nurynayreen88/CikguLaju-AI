@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer a question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Read a short original rhyme with actions.
+**Teacher:** Model an original free-time rhyme with gestures and two oral responses.
 **Pupils:** Follow the demonstration and respond once.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils rehearse and perform the rhyme with a partner. Support pupils who need prompts.
-**Pupils:** Complete the task and share responses.
+**Teacher:** Guide rhyme rehearsal and two brief questions about the actions.
+**Pupils:** Perform with two actions and answer two questions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
