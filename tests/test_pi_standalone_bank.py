@@ -13,7 +13,7 @@ class StandaloneBankTest(unittest.TestCase):
             (root / "pdf").mkdir()
             import fitz
             doc = fitz.open()
-            doc.new_page(width=595.28, height=841.89)
+            doc.new_page(width=595.28, height=841.89).insert_text((50, 50), "RPH Pendidikan Islam")
             payload = doc.tobytes()
             doc.close()
             (root / "pdf/PI-Y1-L001.pdf").write_bytes(payload)
@@ -50,7 +50,7 @@ class StandaloneBankTest(unittest.TestCase):
             (root / "pdf").mkdir()
             doc = fitz.open()
             doc.new_page(width=595.28, height=841.89)
-            doc.new_page(width=595.28, height=841.89)
+            doc.new_page(width=595.28, height=841.89).insert_text((50, 50), "RPH Pendidikan Islam")
             payload = doc.tobytes()
             doc.close()
             (root / "pdf/PI-Y1-L002.pdf").write_bytes(payload)
@@ -60,6 +60,23 @@ class StandaloneBankTest(unittest.TestCase):
             manifest = root / "manifest.json"
             manifest.write_text(json.dumps(dict(schema_version=1, items=[item])))
             self.assertTrue(any("one A4 page" in x for x in validate(manifest)["errors"]))
+
+    def test_approved_rejects_blank_pdf(self):
+        import fitz
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "pdf").mkdir()
+            doc = fitz.open()
+            doc.new_page(width=595.28, height=841.89)
+            payload = doc.tobytes()
+            doc.close()
+            (root / "pdf/PI-Y1-L004.pdf").write_bytes(payload)
+            item = dict(year=1, lesson_id="PI-Y1-L004", sk="1.1", sp="1.1.1",
+                        pdf="pdf/PI-Y1-L004.pdf", status="approved",
+                        sha256=hashlib.sha256(payload).hexdigest())
+            manifest = root / "manifest.json"
+            manifest.write_text(json.dumps(dict(schema_version=1, items=[item])))
+            self.assertTrue(any("blank" in x for x in validate(manifest)["errors"]))
 
     def test_approved_rejects_landscape_pdf(self):
         import fitz
