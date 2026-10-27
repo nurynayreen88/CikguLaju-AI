@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing SOW mapping):** 5.1 / 5.1.2
 **Complementary SK/SP (existing SOW mapping):** 4.2 / 4.2.1
-**Objective (teacher-developed):** Pupils perform a short chant about free-time activities, pronouncing at least two activity words and using two matching actions.
+**Learning objectives (draft):** Pupils perform a short teacher-created chant using two free-time activity words and two gestures.
+**Success criteria (draft):** Two intelligible activity words and two matching gestures.
 **Materials:** Super Minds 1 Student's Book p.65, free-time picture cards, word cards and board.
 **Textbook mapping:** Student's Book p.65 in the prior Year 2 SOW audit. Exact Teacher's Book steps and activity alignment remain unverified.
 
