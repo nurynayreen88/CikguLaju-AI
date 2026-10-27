@@ -13,12 +13,12 @@
 **Pupils:** Name the pictures and give one oral response.
 
 ## Activity 1 — Demonstration (15 minutes)
-**Teacher:** Model reading four short sentences and finding one key word.
+**Teacher:** Model reading a short teacher-created illustrated text and finding one supporting clue.
 **Pupils:** Observe and complete one supported example.
 
 ## Activity 2 — Guided and independent practice (25 minutes)
-**Teacher:** Pupils read, underline clues and answer two questions independently. Provide corrective feedback where needed.
-**Pupils:** Complete the task and correct one error.
+**Teacher:** Guide two detail-finding prompts and two comprehension questions with evidence.
+**Pupils:** Locate two details and answer two questions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
