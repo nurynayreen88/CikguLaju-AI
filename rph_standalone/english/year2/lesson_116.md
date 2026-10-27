@@ -17,11 +17,11 @@
 **Pupils:** Rehearse one model response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide five page-grounded detail prompts and two oral questions.
+**Teacher (25 min):** Read the original supplementary passage, find five details and answer two oral questions.
 **Pupils:** Underline supporting details and give two oral answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check the success criteria and record individual PBD evidence.
+**Teacher (10 min):** Record five detail choices and two oral answers. Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +31,5 @@
 **QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Teacher-created supplementary content, not verified textbook material. Official SOW, TB where mapped, and PDF/A4 checks pending. NOT READY.
