@@ -53,6 +53,19 @@ class AdminUsageTelegramTests(unittest.TestCase):
         self.assertEqual(len(sent), 1)
         self.assertTrue(sent[0][0], 'Database should close before Telegram send')
 
+    def test_admin_report_closes_database_on_query_failure(self):
+        class FailingConnection:
+            closed = False
+            def executescript(self, sql):
+                raise sqlite3.OperationalError('simulated database failure')
+            def close(self):
+                self.closed = True
+        tracked = FailingConnection()
+        with self.assertRaises(sqlite3.OperationalError):
+            show_admin_usage(42, lambda cid: True, lambda: tracked,
+                             lambda *args, **kwargs: self.fail('Must not send a partial report'))
+        self.assertTrue(tracked.closed, 'Database must close after report failure')
+
     def test_admin_summary_navigation(self):
         sent = []
         def db_factory():
