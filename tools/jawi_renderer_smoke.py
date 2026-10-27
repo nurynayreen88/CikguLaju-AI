@@ -150,14 +150,28 @@ print("FULL 12-CLASS CHAIN smoke with SUBSTITUTE HELPERS",full_pdf,full_pdf.stat
 # by tests/test_pi_jawi_v2639_font_resolver.py.
 def effective_font(text,bold=False):
     return font_path(text,bold)
-chain_scope["_pi_jawi_font_v2606"]=effective_font
+# Use the real final v26.39 function body with deterministic installed-font
+# dependencies. This tests its production control flow in the 12-class chain.
+resolver_nodes=[node for node in tree.body
+                if isinstance(node,ast.FunctionDef)
+                and node.name=="_pi_exact_jawi_font_v2604"]
+assert len(resolver_nodes)>=2
+chain_scope["_pi2639_exact_font"]=lambda text,bold=False:font_path(text,bold)
+chain_scope["_pi2638_best_nonfatal_font"]=lambda text,bold=False:font_path(text,bold)
+chain_scope["_pi2637_required_cps"]=lambda text:{
+    ord(ch) for ch in str(text) if 0x0600<=ord(ch)<=0x08FF
+}
+chain_scope["_pi2639_prev_exact"]=effective_font
+exec(compile(ast.Module(body=[resolver_nodes[-1]],type_ignores=[]),
+             "<real-v2639-resolver>","exec"),chain_scope)
+chain_scope["_pi_jawi_font_v2606"]=chain_scope["_pi_exact_jawi_font_v2604"]
 chain_scope["_pi_exact_jawi_font_v2604"]=effective_font
-production_font_pdf=Path("jawi_renderer_12class_installed_font_smoke.pdf")
+production_font_pdf=Path("jawi_renderer_12class_v2639_resolver_smoke.pdf")
 real_rows=[[FullChainRenderer("<b>"+samples[0]+"</b>",style)]]+[[FullChainRenderer(t,style)] for t in samples[1:]]
 real_table=Table(real_rows,colWidths=[470])
 real_table.setStyle(TableStyle([("GRID",(0,0),(-1,-1),0.5,colors.grey)]))
 SimpleDocTemplate(str(production_font_pdf),pagesize=(595.28,841.89)).build([real_table])
 real_doc=fitz.open(production_font_pdf)
 assert len(real_doc)==1 and len(real_doc[0].get_image_info())>=4
-print("12-CLASS CHAIN + installed full-coverage font smoke",production_font_pdf)
+print("12-CLASS CHAIN + real v26.39 resolver body (controlled font dependencies)",production_font_pdf)
 
