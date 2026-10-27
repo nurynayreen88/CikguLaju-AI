@@ -15,15 +15,15 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model a teacher-created four-line beach rhyme.
+**Teacher (15 min):** Read the four-line teacher-created rhyme with rhythm and expression, and demonstrate the line endings blue/you and feet/treat.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide expressive rehearsal and writing two original descriptive lines.
+**Teacher (25 min):** Guide pupils to rehearse the four lines with expression, then complete two original descriptive lines using the supplied frames.
 **Pupils:** Perform four lines and write two new lines.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Observe each pupil's four-line performance and check two meaningful original descriptive lines.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
