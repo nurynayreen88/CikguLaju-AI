@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 5.1 / 5.1.1
 **Complementary SK/SP:** 1.2 / 1.2.1
-**Learning objective:** Pupils practise language arts 5 using language from Free Time.
+**Learning objectives (draft):** Pupils perform two lines of an original free-time rhyme and recognise two spoken activity words.
+**Success criteria (draft):** Two expressive lines and two correct listening choices.
 **Teaching materials:** pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (classified in prior Year 2 SOW audit). Detailed SOW task steps not yet verified.
 
