@@ -5,7 +5,7 @@
 **Complementary SK/SP:** 3.1 / 3.1.1
 **Learning objectives (draft):** Pupils recognise four printed free-time words and read two short phrases aloud.
 **Success criteria (draft):** Four correct word identifications and two intelligible phrases.
-**Materials:** Pictures, word cards, relevant textbook unit (page unverified).
+**Materials:** Pictures, word cards and teacher-developed task materials. SOW classification: non-textbook; no Student's Book page assigned.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show pictures connected to Free Time and elicit two words.
