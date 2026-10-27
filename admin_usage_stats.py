@@ -91,7 +91,10 @@ def record_confirmed_delivery(connection, user_id, telegram_message_id, subject=
 
 def record_daily_active(connection, user_id, when=None):
     """Record only the first activity per user per UTC date."""
-    stamp = (when or datetime.now(timezone.utc)).isoformat()
+    instant = when or datetime.now(timezone.utc)
+    if instant.tzinfo is None:
+        raise ValueError('Activity timestamp must include timezone')
+    stamp = instant.astimezone(timezone.utc).isoformat()
     day = stamp[:10]
     if connection.in_transaction:
         raise sqlite3.OperationalError(
