@@ -46760,3 +46760,24 @@ class _JawiRasterParagraph_v25213(_PI_JAWI_PRE_GUARD_RASTER):
         return ImageFont.truetype(path, px, layout_engine=ImageFont.Layout.RAQM)
 CIKGULAJU_PATCH_PI_JAWI_STRICT_20261027 = 'NO_INCOMPLETE_GLYPH_OR_BASIC_LAYOUT_FALLBACK'
 # === END PI JAWI STRICT GLYPH + RAQM GUARD ===
+
+# === PERSISTENT RPH DELIVERY METRICS (SUPABASE) ===
+# The previous SQLite metrics are ephemeral on Render; preserve them as legacy only.
+_PERSISTENT_RPH_SEND_BASE = send_document
+def send_document(cid, path, caption=''):
+    result = _PERSISTENT_RPH_SEND_BASE(cid, path, caption)
+    if 'RPH' in str(caption or '').upper() and _telegram_delivery_ok_v25279(result):
+        try:
+            payload = result.json().get('result') or {}
+            mid = payload.get('message_id')
+            if mid is not None:
+                ss = state.get(cid) or {}
+                row = {'telegram_user_id':str(cid), 'telegram_message_id':int(mid),
+                       'subject':str(ss.get('subject') or '') or None,
+                       'grade':str(ss.get('year') or '') or None}
+                _sb_request('POST','admin_rph_deliveries?on_conflict=telegram_user_id,telegram_message_id',
+                            json=row,prefer='resolution=ignore-duplicates,return=minimal')
+        except Exception as exc:
+            print('ADMIN DURABLE RPH DELIVERY WARNING:',repr(exc),flush=True)
+    return result
+# === END PERSISTENT RPH DELIVERY METRICS ===
