@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 2.1 / 2.1.5
 **Complementary SK/SP:** 2.2 / 2.2.2
-**Learning objective:** Pupils practise speaking 9 using language from The old house.
+**Learning objectives (draft):** Pupils ask and answer two questions about rooms and give one short description.
+**Success criteria (draft):** two intelligible exchanges and one relevant description.
 **Teaching materials:** Super Minds 1 Student's Book p.78, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.78 (Year 2 SOW mapping audit); Teacher's Book sequence not yet verified.
 
