@@ -86,6 +86,17 @@ def inspect(source):
             helper_definitions.setdefault(node.name, []).append(node.lineno)
     late_overrides = {name: lines for name, lines in helper_definitions.items()
                       if len(lines) > 1}
+    # The last _pi_jawi_font_v2606 is the effective runtime function,
+    # not the helper used by the partial smoke harness.
+    effective = {name: lines[-1] for name, lines in helper_definitions.items()}
+    final_class_line = versions[-1]["line"]
+    for name in ("_pi_jawi_font_v2606", "_pi_exact_jawi_font_v2604"):
+        if name not in effective:
+            raise ValueError(f"Missing required runtime Jawi helper: {name}")
+        if effective[name] > final_class_line:
+            print(f"RUNTIME OVERRIDE: {name} at line {effective[name]} "
+                  f"replaces helper active when final renderer class was defined "
+                  f"at line {final_class_line}")
     if late_overrides:
         print("WARNING: runtime helper functions are redefined; isolated smoke "
               "stubs cannot establish production behavior: "
