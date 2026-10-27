@@ -34,7 +34,9 @@ class JawiRenderGuards(unittest.TestCase):
         node = latest_function("_rph_activity_heading_markup_v25184")
         import re
         from xml.sax.saxutils import escape
-        scope = {"re": re, "escape": escape,\n                 "_pi2639_split_existing_activity_labels": lambda text: text,\n                 "_pi2639_prev_activity_markup": lambda text: "<b>" + escape(text.split("\\n")[0]) + "</b><br/>" + escape(text.split("\\n")[1])}
+        scope = {"re": re, "escape": escape,
+                 "_pi2639_split_existing_activity_labels": lambda text: text,
+                 "_pi2639_prev_activity_markup": lambda text: "<b>" + escape(text.split("\\n")[0]) + "</b><br/>" + escape(text.split("\\n")[1])}
         exec(compile(ast.Module(body=[node], type_ignores=[]), "<jawi-heading>", "exec"), scope)
         format_lines = scope["_rph_activity_heading_markup_v25184"]
         sample = "اکتيۏيتي 1 – ممباچ\\nموريد ممباچ"
