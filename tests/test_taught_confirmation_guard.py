@@ -27,6 +27,15 @@ class GuardTests(unittest.TestCase):
         self.assertEqual(validate_confirmation(self.make(school_year=2028)).reason,
                          "invalid_session_date")
 
+    def test_generation_does_not_confirm_progress(self):
+        generated_rph_count = 7
+        last_confirmed_sequence = 1
+        decision = validate_confirmation(self.make(
+            lesson_sequence=generated_rph_count,
+            last_confirmed_sequence=last_confirmed_sequence))
+        self.assertFalse(decision.allowed)
+        self.assertEqual(decision.reason, "non_sequential")
+
     def test_skip(self):
         self.assertEqual(validate_confirmation(self.make(lesson_sequence=3)).reason,
                          "non_sequential")
