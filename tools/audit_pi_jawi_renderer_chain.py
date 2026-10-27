@@ -38,6 +38,13 @@ def inspect(source):
                 if name not in seen:
                     raise ValueError(f"Unknown renderer base at line {node.lineno}: {name}")
             seen.add(TARGET)
+    # A final class can silently lose methods if an intermediate override is
+    # bypassed. Record the complete class lineage rather than treating the
+    # isolated first/last Flowable PDF as production evidence.
+    if len(versions) > 2:
+        print("WARNING: isolated first/last Flowable smoke test omits "
+              f"{len(versions)-2} intermediate renderer definitions; "
+              "production PDF rendering remains unverified.")
     return {"class_definitions":len(versions),"versions":versions,"aliases":aliases}
 
 if __name__=="__main__":
