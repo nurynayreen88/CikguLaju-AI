@@ -3,7 +3,7 @@
 **Unit:** At the beach
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 3.2 / 3.2.4
-**Learning objectives:** Pupils locate four details on printed page 117 and answer two short questions.
+**Learning objectives:** Pupils locate four details in the supplied original passage and answer two short questions.
 **Success criteria:** four accurate details and two supported answers.
 **Teaching materials:** Super Minds 1 Student's Book p.117, pictures, word cards and classroom resources.
 **Original supplementary passage (not SB p.117):** Nina is at the beach with her uncle. She has a green bag and a red ball. They find two shells near a tree. **Four details/key:** Nina; uncle; green bag; red ball. **Questions/key:** How many shells? Two. Where are the shells? Near a tree.
@@ -15,15 +15,15 @@
 **Pupils:** Name beach objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model finding evidence on the printed page.
+**Teacher (15 min):** Model finding evidence in the teacher-created supplementary passage; do not present it as a Student's Book extract.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide four page-grounded prompts and two questions.
+**Teacher (25 min):** Guide four detail prompts and two questions grounded in the supplied original passage.
 **Pupils:** Locate details and write two answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record four located details and two short answers for each pupil.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
