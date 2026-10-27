@@ -42,8 +42,10 @@ class JawiRasterContract(unittest.TestCase):
                       and n.name == "_font")
         src = ast.get_source_segment(self.source, method)
         self.assertIn("layout_engine=ImageFont.Layout.RAQM", src)
-        # Warning: current code silently falls back to BASIC on exceptions.
-        self.assertIn("except Exception", src)
+        # RAQM is required; BASIC fallback is forbidden.
+        self.assertIn("HAVE_RAQM", src)
+        self.assertIn("raise RuntimeError", src)
+        self.assertNotIn("except Exception", src)
 
 if __name__ == "__main__":
     unittest.main()
