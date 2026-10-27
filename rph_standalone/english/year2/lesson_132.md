@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 2.1 / 2.1.1
 **Complementary SK/SP:** 2.2 / 2.2.1
-**Learning objective:** Pupils practise speaking 27 using language from At the beach.
+**Learning objectives:** Pupils share three beach preferences and take four turns in a partner exchange.
+**Success criteria:** three clear preferences and four relevant turns.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
