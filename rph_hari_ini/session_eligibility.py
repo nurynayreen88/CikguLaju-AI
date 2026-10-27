@@ -64,7 +64,8 @@ def verify_session(session: TimetableSession, evidence: CalendarEvidence,
     if (type(session.session_date) is not date
             or not isinstance(evidence.verified_school_dates, frozenset)):
         return Eligibility(False, "invalid_calendar_dates")
-    if any(type(day) is not date for day in evidence.verified_school_dates):
+    if any(type(day) is not date or day.year != evidence.school_year
+           for day in evidence.verified_school_dates):
         return Eligibility(False, 'invalid_calendar_dates')
     if session.session_date not in evidence.verified_school_dates:
         return Eligibility(False, "not_verified_school_day")
