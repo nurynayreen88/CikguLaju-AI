@@ -8,23 +8,23 @@
 **Teaching materials:** Super Minds 1 Student's Book p.95, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.95 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show a robot illustration and elicit descriptive words.
 **Pupils:** Suggest robot features.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Preview Student's Book p.95 and model locating words and writing a clear sentence.
 **Pupils:** Read a sample and rehearse one sentence.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use actual page text for a five-word identification task and guide writing three robot descriptions.
 **Pupils:** Identify printed words and write three sentences independently.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five reading identifications and three written sentences per pupil.
 **Pupils:** Submit individual reading and writing evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review spacing and punctuation.
 **Pupils:** Read one sentence.
 
