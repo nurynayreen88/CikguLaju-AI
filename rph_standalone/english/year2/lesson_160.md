@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils perform four lines of a teacher-created beach rhyme with expression.
 **Success criteria:** four intelligible expressive lines.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original four-line beach rhyme:** The sun is shining in the sky / I watch the white clouds floating by / I hear the waves beside the shore / I smile and wish to play some more. **Performance cues:** clear words, expressive stress on sun/waves, pause at line ends, audible voice.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
