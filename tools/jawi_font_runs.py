@@ -4,6 +4,7 @@ This module is deliberately independent of app startup and the database.
 Rendering must retain logical text order and use RAQM for Arabic shaping.
 """
 from functools import lru_cache
+import unicodedata
 
 @lru_cache(maxsize=32)
 def font_codepoints(path):
@@ -25,6 +26,13 @@ def select_runs(text, font_paths, maps=None):
     for char in text:
         # Whitespace belongs to current run and never forces a font switch.
         if char.isspace() and runs:
+            runs[-1] = (runs[-1][0], runs[-1][1] + char)
+            continue
+        # Never split Arabic combining marks or joiners away from their base.
+        if runs and (unicodedata.combining(char) or ord(char) in (0x200C, 0x200D)):
+            previous_index = font_paths.index(runs[-1][0])
+            if ord(char) not in maps[previous_index]:
+                raise ValueError(f"Current font cannot shape U+{ord(char):04X}")
             runs[-1] = (runs[-1][0], runs[-1][1] + char)
             continue
         choice = next((i for i, cmap in enumerate(maps) if ord(char) in cmap), None)
