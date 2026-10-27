@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils locate four details on printed page 117 and answer two short questions.
 **Success criteria:** four accurate details and two supported answers.
 **Teaching materials:** Super Minds 1 Student's Book p.117, pictures, word cards and classroom resources.
+**Original supplementary passage (not SB p.117):** Nina is at the beach with her uncle. She has a green bag and a red ball. They find two shells near a tree. **Four details/key:** Nina; uncle; green bag; red ball. **Questions/key:** How many shells? Two. Where are the shells? Near a tree.
+
 **Audited source mapping:** Student's Book p.117 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
