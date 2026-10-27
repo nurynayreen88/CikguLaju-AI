@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils form four legible beach words and write two short sentences.
 **Success criteria:** four correctly formed words and two understandable sentences.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original writing resource:** Four target words: sand, shell, bucket, sea. Picture prompt: a yellow shell and a red bucket on sand. Sentence models: The shell is yellow. The bucket is red. **Answer guide:** Each word is correctly formed; each sentence has capital letter, word spacing and full stop.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide four word-writing trials and two picture-based sentences.
+**Teacher (25 min):** Model each word once, ask pupils to write all four independently, then write two sentences about the original picture.
 **Pupils:** Write four words and two sentences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check four legible words and two understandable sentences for each pupil.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material; SOW and A4/PDF checks pending. NOT READY.
