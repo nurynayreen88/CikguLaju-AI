@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five robot-related words heard in a short spoken sequence and match four printed words to pictures.
 **Success criteria:** 4/5 listening choices and four correct printed-word matches.
 **Teaching materials:** Super Minds 1 Student's Book p.99, pictures, word cards and classroom resources.
+
+**Teacher-created standalone resource (not verified textbook content):** **Original teacher-read word sequence:** head, legs, jump, eyes, wave. **Picture cards:** A head, B legs, C jumping robot, D eyes, E waving robot. **Listening key:** A,B,C,D,E. **Printed matching key:** head–A, legs–B, jump–C, wave–E.
 **Audited source mapping:** Student's Book p.99 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use page-linked audio if available or a labelled teacher-created sequence with five spoken items.
+**Teacher (25 min):** Read the five original words twice and ask pupils to select five pictures, then match four printed words.
 **Pupils:** Listen, choose five pictures and match four printed words.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual performance against the stated success criteria and provide feedback.
+**Teacher (10 min):** Check five listening choices and four printed-word matches. Note individual support required.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**Verification status:** Official SOW, TB where mapped, and PDF/A4 QA pending. NOT READY.
