@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 2.1 / 2.1.1
-**Objective (draft):** Pupils identify three words in a short spoken text.
+**Learning objectives (draft):** Pupils identify four free-time activities from five spoken clues and answer one oral question.
+**Success criteria (draft):** Four correct picture choices and one relevant answer.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
