@@ -32,3 +32,5 @@
 **Pupils:** Share one activity and its day.
 
 **QA:** TEXTBOOK-ALIGNED DRAFT — SB p.69 and TB T69 checked visually; official SOW SK/SP and final A4/PDF QA pending. Do not mark READY.
+
+**QA status:** NOT READY — five phases total 60 minutes; official SOW/Teacher's Book alignment and rendered A4 PDF still require verification.
