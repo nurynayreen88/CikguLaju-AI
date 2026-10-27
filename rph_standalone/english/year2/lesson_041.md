@@ -3,7 +3,8 @@
 **Unit:** The old house
 **Main SK/SP:** 1.1 / 1.1.1
 **Complementary SK/SP:** 3.1 / 3.1.3
-**Learning objective:** Pupils practise listening 9 using language from The old house.
+**Learning objectives (draft):** Pupils identify two spoken house words and recognise two printed words.
+**Success criteria (draft):** Two correct listening choices and two recognised printed words.
 **Teaching materials:** Super Minds 1 Student's Book p.75, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.75 (Year 2 SOW mapping audit); Teacher's Book sequence not yet verified.
 
