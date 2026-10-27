@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 1.3 / 1.3.1
 **Complementary SK/SP:** 1.2 / 1.2.4
-**Learning objective:** Pupils practise listening 30 using language from At the beach.
+**Learning objectives:** Pupils identify four of five details in a short teacher-read beach description and respond to two questions.
+**Success criteria:** four correct listening responses and two relevant answers.
 **Teaching materials:** Super Minds 1 Student's Book p.116, pictures, word cards and classroom resources.
 **Audited source mapping:** Student's Book p.116 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
