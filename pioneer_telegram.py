@@ -186,7 +186,7 @@ def install(ns):
                     # Local SQLite payment IDs may restart after deployment.
                     # Scope new references to both user and request; preserve old
                     # references for existing entitlements without modifying them.
-                    reference = f"pioneer-payment-request:{uid}:{rid}"
+                    # A random immutable reference prevents collisions even if the\n                    # local SQLite payment counter restarts for the same user.\n                    import uuid\n                    reference = f"pioneer-payment:{uid}:{uuid.uuid4().hex}"
                     existing = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{uid}&select=entitlement,payment_reference,revoked_at") or []
                     already_granted = any(
                         row.get("entitlement") == "PIONEER_LIFETIME"
