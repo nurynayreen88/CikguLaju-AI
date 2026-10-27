@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Display a house picture and introduce a short teacher-created four-line chant about familiar house vocabulary.
 **Pupils:** Predict two words that may appear in the chant.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Perform the chant with gestures, model rhythm and invite echo-reading line by line.
 **Pupils:** Echo the lines and match gestures to key words.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide small groups to rehearse and replace one familiar word or line with a suitable variation; monitor participation.
 **Pupils:** Rehearse the chant, suggest one variation and perform in a small group.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's participation, clarity of three of four lines and one creative contribution using an individual checklist.
 **Pupils:** Perform individually or in a small group while teacher records each pupil's evidence.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Invite one final performance and recap the vocabulary.
 **Pupils:** Say one favourite line.
 
