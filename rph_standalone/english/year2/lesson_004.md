@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 1.2 / 1.2.1
-**Objective (draft):** Pupils find two details in a short text.
+**Learning objectives (draft):** Pupils locate two details in a short free-time text and recognise two spoken words.
+**Success criteria (draft):** Two text-supported answers and two correct listening choices.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
