@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils share three beach preferences and take four turns in a partner exchange.
 **Success criteria:** three clear preferences and four relevant turns.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original preference cards:** swimming, building sandcastles, collecting shells. **Four-turn dialogue:** A: What do you like at the beach? B: I like building sandcastles. A: Do you like collecting shells? B: Yes, I do. **Three sentence frames:** I like swimming. I like building sandcastles. I like collecting shells.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original teacher-created resource. Official SOW and PDF/A4 checks pending. NOT READY.
