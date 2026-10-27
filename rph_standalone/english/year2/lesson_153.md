@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read five short beach prompts with picture cues.
+**Teacher (25 min):** Read the five original beach prompts twice, allowing pupils to select a picture independently after each cue.
 **Pupils:** Select the correct details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record each pupil's five picture selections and whether at least four are correct.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
