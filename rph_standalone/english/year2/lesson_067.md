@@ -1,33 +1,37 @@
 # English Year 2 — Lesson 67: Speaking 14
 
-**Unit:** Get dressed!
-**Main SK/SP:** 2.1 / 2.1.2
-**Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objectives:** Pupils describe three clothing items in intelligible phrases and write two related words legibly.
-**Success criteria:** three clear oral descriptions and two legible written words.
-**Teaching materials:** Super Minds 1 Student's Book p.85, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.85 (Year 2 audit); exact Teacher's Book steps not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
+**Duration:** 60 minutes  
+**Source:** Student's Book p.85 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
+**Learning objective:** Pupils describe three clothing items and write two clothing words legibly.  
+**Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
+**Materials:** Board, clothing picture cards, exercise books and printable resources below.
+
+**Original picture A:** red shirt, blue trousers, black shoes. **Picture B:** green dress, yellow hat, white shoes.
+**Speaking frames:** “She's wearing a ____.” “He's wearing ____.” “The ____ is/are ____.”
+**Model:** “She's wearing a green dress. Her hat is yellow. Her shoes are white.”
+**Spelling targets:** dress, shoes.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show clothing pictures and elicit descriptive words.
-**Pupils:** Name two familiar items.
+**Teacher:** Display two clothing pictures and ask pupils to name items and colours.  
+**Pupils:** Identify two familiar clothing words.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Use Student's Book p.85 as context and model short descriptions and spelling two target words.
-**Pupils:** Practise descriptions and copy the two model words.
+## Activity 1 — Teacher modelling (15 minutes)
+**Teacher:** Use the original pictures and model three short descriptions, then form *dress* and *shoes* on the board.  
+**Pupils:** Follow the model and practise one supported example.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise pair descriptions of clothing pictures, followed by individual recording of two words.
-**Pupils:** Describe three items to a partner and write two related words.
+## Activity 2 — Guided and paired practice (25 minutes)
+**Teacher:** Partners describe picture A or B without showing it, guess the picture and individually write two clothing words.  
+**Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check three oral descriptions and two written words per pupil.
-**Pupils:** Give individual oral and written evidence.
+**Teacher:** Check three individual oral descriptions and two correctly formed written words. Record accuracy and assistance needed.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Invite one description and review clear word formation.
-**Pupils:** Share one description.
+**Teacher:** Review two useful clothing words and invite a relevant response.  
+**Pupils:** Share one word and one sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW activity and Teacher's Book sequence not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft. Official SOW SK/SP, exact TB sequence for mapped textbook lessons and PDF/A4 layout verification pending. NOT READY.
