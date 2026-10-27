@@ -1,33 +1,34 @@
 # English Year 2 — Lesson 64: Writing 13
 
-**Unit:** Get dressed!
-**Main SK/SP:** 4.2 / 4.2.3
-**Complementary SK/SP:** 4.3 / 4.3.1
-**Learning objectives:** Pupils write three short sentences describing an outfit and correct at least two spelling or punctuation errors using a checklist.
-**Success criteria:** three meaningful sentences and two successful corrections.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.3  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
+**Objective:** Pupils write three outfit sentences and correct two errors.  
+**Success criteria:** Meet the numerical targets in the objective independently.  
+**Materials:** Board, picture/word cards, exercise books and the resources below.
+
+**Outfit picture description:** blue shirt, black trousers, white shoes. **Model:** “He is wearing a blue shirt. His trousers are black. His shoes are white.” **Word bank:** shirt, trousers, shoes, blue, black, white. **Editing examples:** “he is wearing a blue shirt” → “He is wearing a blue shirt.”; “His shoesare white.” → “His shoes are white.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show an outfit picture and elicit a word bank.
-**Pupils:** Suggest clothing words.
+**Teacher:** Display two clothing pictures and elicit familiar item and colour words.  
+**Pupils:** Name two items and make a prediction.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model the writing 13 task and check understanding.
-**Pupils:** Construct one supported sentence.
+**Teacher:** Model the three sentences and explicitly correct the two editing examples.  
+**Pupils:** Follow and practise one supported example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Provide a new picture and guide three-sentence writing; teach a simple peer-editing checklist.
-**Pupils:** Write three sentences, check spelling and punctuation and revise.
+**Teacher:** Pupils write three sentences about a new outfit using a word bank, exchange editing checklists and correct two errors.  
+**Pupils:** Complete the task, compare evidence and improve responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Assess three individual sentences and two corrections; record writing evidence.
-**Pupils:** Submit revised writing.
+**Teacher:** Collect three individual sentences and identify two visible revisions. Record whether prompts were needed.  
+**Pupils:** Demonstrate the task individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Share one well-formed example sentence.
-**Pupils:** Read one sentence.
+**Teacher:** Review two clothing words and invite one accurate example.  
+**Pupils:** Share one word and a short response.
 
-**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure remains unverified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Complete teacher-developed standalone draft; official SOW SK/SP and PDF/A4 checks pending. Not READY.
