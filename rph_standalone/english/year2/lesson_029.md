@@ -36,3 +36,5 @@
 **Pupils:** Share one improvement.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — model, word bank, frames and editing checklist included. Official SOW alignment and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
