@@ -24,11 +24,13 @@ def font_path(text,bold=False):
     candidates=[
         "/usr/share/fonts/truetype/noto/NotoSansArabic-"+("Bold" if bold else "Regular")+".ttf",
         "/usr/share/fonts/truetype/noto/NotoNaskhArabic-"+("Bold" if bold else "Regular")+".ttf",
+        "/usr/share/fonts/truetype/noto/NotoSansArabicUI-"+("Bold" if bold else "Regular")+".ttf",
+        "/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-"+("Bold" if bold else "Regular")+".ttf",
     ]
     need={ord(c) for c in text if c.isprintable() and not c.isspace()}
     for p in candidates:
         if Path(p).is_file() and need.issubset(font_cmap(p)): return p
-    raise RuntimeError("No installed font covers the complete smoke sample")
+    raise RuntimeError("No installed font covers the complete smoke sample; checked: "+str([(p,Path(p).is_file()) for p in candidates]))
 def plain(text):
     raw=str(text).replace("<br/>","\\n").replace("<br>","\\n")
     return html.unescape(re.sub(r"<[^>]+>","",raw)),bool(re.fullmatch(r"\\s*<b>.*</b>\\s*",raw,re.S))
