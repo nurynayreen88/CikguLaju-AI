@@ -33,3 +33,5 @@
 **Pupils:** Give one preference and respond to a final instruction.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — full dialogue, instructions and PBD included. Official SOW activity/SK/SP and PDF/A4 QA pending; not READY.
+
+**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
