@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 1.2 / 1.2.3
-**Learning objective:** Pupils practise language arts 27 using language from At the beach.
+**Learning objectives:** Pupils create a labelled beach collage and respond to three spoken cues.
+**Success criteria:** one labelled collage and three appropriate listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
