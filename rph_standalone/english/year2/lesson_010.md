@@ -40,3 +40,5 @@ I kick a ball across the ground!”
 **Pupils:** Recite and share a favourite activity.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — full original chant, gestures and oral questions supplied. Official SOW alignment and PDF/A4 checks pending; not READY.
+
+**QA status:** NOT READY — verify official SOW and Teacher's Book mapping and inspect rendered one-page A4 PDF before release.
