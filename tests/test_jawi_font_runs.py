@@ -22,7 +22,7 @@ class JawiFontRunsTests(unittest.TestCase):
             runs.select_runs("ڤ—", ["jawi"], [{ord("ڤ")}])
 
     def test_whitespace_and_newline_preserved(self):
-        text = "ڤ  چ\\nJ"
+        text = "ڤ  چ\nJ"
         segments = runs.select_runs(text, ["jawi", "latin"], [
             {ord("ڤ"), ord("چ")}, {ord("J")}
         ])
