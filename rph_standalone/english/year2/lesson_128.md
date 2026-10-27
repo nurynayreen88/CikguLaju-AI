@@ -33,3 +33,5 @@
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
 
 **QA:** Original supplementary resource, not a textbook transcription. Verify official SOW/TB and A4 PDF before READY.
+
+**QA status:** NOT READY — five-phase 60-minute structure verified; official SOW/Teacher's Book alignment and rendered A4 PDF inspection pending.
