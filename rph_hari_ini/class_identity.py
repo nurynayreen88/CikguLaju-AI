@@ -52,7 +52,7 @@ def rename_class(*, teacher_id: int, school_year: int, old_name: str,
         return None
     new_key = (teacher_id, school_year, new_name.strip())
     if any(k[0] == teacher_id and k[1] == school_year
-           and isinstance(k[2], str) and k[2].casefold() == new_name.strip().casefold()
+           and isinstance(k[2], str) and k[2].strip().casefold() == new_name.strip().casefold()
            for k in registry if isinstance(k, tuple) and len(k) == 3):
         return None
     result = dict(registry)
