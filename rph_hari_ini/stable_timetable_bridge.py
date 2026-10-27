@@ -23,6 +23,10 @@ def verified_stable_session(*, teacher_id, school_year, session_date, row,
         return False, "unregistered_class_identity", None
     if not isinstance(subject_key, str) or not subject_key.strip():
         return False, "invalid_subject_key", None
+    # A subject identifier must be resolved by a trusted curriculum mapping.
+    # Never accept a mismatched subject for the timetable row.
+    if not isinstance(row.get("subject"), str) or not row["subject"].strip():
+        return False, "invalid_timetable_subject", None
     # Session ID deliberately excludes display name to survive class renames.
     stable_id = (f"{teacher_id}:{school_year}:{session_date.isoformat()}:"
                  f"{identity.class_id}:{subject_key}:{row['start']}-{row['end']}")
