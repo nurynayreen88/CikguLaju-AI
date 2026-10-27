@@ -46,6 +46,19 @@ class AdminUsageIntegrationTests(unittest.TestCase):
                          '_ADMIN_USAGE_WEBHOOK_BASE()',
                          'Webhook must delegate even if metrics fail')
 
+    def test_delivery_metrics_cannot_change_telegram_result(self):
+        sends = [n for n in TREE.body if isinstance(n, ast.FunctionDef)
+                 and n.name == 'send_document']
+        self.assertTrue(sends)
+        wrapper = sends[-1]
+        self.assertEqual(ast.unparse(wrapper.body[0].value),
+                         '_ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)')
+        self.assertIsInstance(wrapper.body[-1], ast.Return)
+        self.assertEqual(ast.unparse(wrapper.body[-1].value), 'result')
+        self.assertTrue(any(isinstance(n, ast.Try) for n in ast.walk(wrapper)),
+                        'Metrics failures must be caught after delivery')
+        self.assertIn('ADMIN USAGE METRIC WARNING', ast.unparse(wrapper))
+
     def test_callback_and_delivery_wrapper_exist(self):
         callbacks = [n for n in TREE.body if isinstance(n, ast.FunctionDef) and n.name == 'callback']
         self.assertTrue(callbacks)
