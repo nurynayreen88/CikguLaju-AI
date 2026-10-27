@@ -12,19 +12,19 @@
 **Teacher:** Show two pictures related to Free Time and elicit vocabulary.
 **Pupils:** Name pictures and respond.
 
-## Activity 1 — Modelling (7 minutes)
+## Activity 1 — Modelling (15 minutes)
 **Teacher:** Model listening for a keyword in a short oral description.
 **Pupils:** Observe and attempt a response.
 
-## Activity 2 — Guided practice (10 minutes)
+## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Read three topic statements and have pupils match them to pictures. Provide corrective feedback.
 **Pupils:** Practise and compare responses.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check each pupil's ability to identify three spoken details and record evidence.
+## Assessment / PBD (10 minutes)
+**Teacher:** Record individual evidence against both success criteria and give targeted feedback.
 **Pupils:** Demonstrate independently.
 
-## Closure (3 minutes)
+## Closure (5 minutes)
 **Teacher:** Recap two target expressions.
 **Pupils:** Share one learned response.
 
