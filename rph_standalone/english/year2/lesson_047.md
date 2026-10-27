@@ -8,23 +8,23 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 mapping audit); detailed SOW task sequence not yet verified.
 
-## Set Induction
+## Set Induction (5 minutes)
 **Teacher (5 min):** Show house pictures and elicit two familiar words.
 **Pupils:** Name two familiar words.
 
-## Activity 1 — Model
+## Activity 1 — Modelling (15 minutes)
 **Teacher (15 min):** Model finding a clue in a teacher-created four-sentence house text.
 **Pupils:** Give one supported response.
 
-## Activity 2 — Guided practice
+## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide two reading questions and one related written response.
 **Pupils:** Find two clues and write one sentence.
 
-## Assessment / PBD
+## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against both success criteria.
 **Pupils:** Demonstrate the skill independently.
 
-## Closure
+## Closure (5 minutes)
 **Teacher (5 min):** Review two useful house words.
 **Pupils:** Share one learned word.
 
