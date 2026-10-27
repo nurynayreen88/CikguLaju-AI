@@ -52,8 +52,9 @@ def summary(connection, now=None):
     day = now.replace(hour=0, minute=0, second=0, microsecond=0)
     def unique_since(since):
         return connection.execute(
-            'SELECT COUNT(DISTINCT telegram_user_id) FROM admin_usage_events WHERE created_at >= ?',
-            (since.isoformat(),),
+            'SELECT COUNT(DISTINCT telegram_user_id) FROM admin_usage_events '
+            'WHERE created_at >= ? AND created_at <= ?',
+            (since.isoformat(), now.isoformat()),
         ).fetchone()[0]
     counts = dict(connection.execute(
         'SELECT event_type, COUNT(*) FROM admin_usage_events GROUP BY event_type'
