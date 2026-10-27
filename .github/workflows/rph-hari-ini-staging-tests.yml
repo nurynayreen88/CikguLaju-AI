@@ -22,13 +22,7 @@ jobs:
         run: python -m compileall -q rph_hari_ini
       - name: Run focused staging unit tests
         run: |
-          python -m unittest -v \
-            tests.test_class_identity \
-            tests.test_class_identity_rename_safety \
-            tests.test_class_identity_uuid_format \
-            tests.test_session_eligibility \
-            tests.test_legacy_timetable_bridge \
-            tests.test_stable_timetable_bridge \
-            tests.test_taught_confirmation_guard \
-            tests.test_sqlite_taught_store_testonly \
+          for test in test_class_identity.py test_class_identity_rename_safety.py test_class_identity_uuid_format.py test_session_eligibility.py test_legacy_timetable_bridge.py test_stable_timetable_bridge.py test_taught_confirmation_guard.py test_sqlite_taught_store_testonly.py test_taught_sql_security.py; do
+            python -m unittest discover -s tests -p "$test" -v || exit 1
+          done
             tests.test_taught_sql_security
