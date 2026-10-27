@@ -46,6 +46,8 @@ def resolve_class_identity(*, teacher_id: int, school_year: int,
 def rename_class(*, teacher_id: int, school_year: int, old_name: str,
                  new_name: str, registry: Mapping) -> dict | None:
     """Return a proposed copy; caller must persist atomically after approval."""
+    if not isinstance(old_name, str) or not old_name.strip():
+        return None
     current = resolve_class_identity(teacher_id=teacher_id, school_year=school_year,
                                      class_name=old_name, registry=registry)
     if current is None or not isinstance(new_name, str) or not new_name.strip():
@@ -61,7 +63,7 @@ def rename_class(*, teacher_id: int, school_year: int, old_name: str,
                    and k[0] == teacher_id and k[1] == school_year
                    and isinstance(k[2], str)
                    and k[2].strip().casefold() == old_name.strip().casefold()
-                   and str(UUID(str(v))) == current.class_id)
+                   and v == registry[k])
     del result[old_key]
     result[new_key] = current.class_id
     return result
