@@ -1,33 +1,40 @@
 # English Year 2 — Lesson 65: Language Arts 13
 
 **Unit:** Get dressed!
-**Main SK/SP:** 5.1 / 5.1.2
-**Complementary SK/SP:** 3.2 / 3.2.3
-**Learning objectives:** Pupils respond creatively to a short teacher-created clothing-themed verse by performing three of four lines and explaining one preferred image or phrase.
-**Success criteria:** three intelligible lines and one relevant personal response.
-**Teaching materials:** Pictures, word cards and classroom resources.
-**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed SOW procedure not yet verified.
+**Main SK/SP (prior mapping; SOW check pending):** 5.1 / 5.1.2
+**Complementary SK/SP (prior mapping; SOW check pending):** 3.2 / 3.2.3
+**Duration:** 60 minutes
+**Classification:** NON-TEXTBOOK; teacher-created verse.
+**Objectives:** Perform at least three verse lines and explain one favourite phrase.
+**Success criteria:** Three intelligible lines and one relevant reason.
+**Materials:** Clothing cards, board, original verse below.
+
+**Original verse:**
+My red hat sits upon my head.
+My blue shoes take me where I tread.
+My yellow shirt is bright and new.
+I smile and wave hello to you.
+
+**Response frame:** “I like ____ because ____.” Example: “I like blue shoes because I like blue.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show clothing illustrations and introduce a short verse.
-**Pupils:** Predict two words.
+**Teacher:** Show three clothing cards and ask pupils to predict words in the verse.
+**Pupils:** Name items and colours.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model the language arts 13 task and check understanding.
-**Pupils:** Echo lines and identify familiar words.
+## Activity 1 — Expressive reading (15 minutes)
+**Teacher:** Read the verse aloud twice with actions and model giving a personal reason using the frame.
+**Pupils:** Echo lines and identify their favourite phrase.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide small-group expressive reading and selection of a favourite phrase with a reason.
-**Pupils:** Rehearse the verse, perform and share a preferred phrase.
+## Activity 2 — Rehearsal and response (25 minutes)
+**Teacher:** Guide group rehearsals and invite pairs to share a favourite phrase and explain why.
+**Pupils:** Perform the verse and give one personal reason.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's three-line participation and personal response.
-**Pupils:** Demonstrate an individual response.
+**Teacher:** Listen to three independently spoken lines and one relevant reason; note any prompts.
+**Pupils:** Perform and respond individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Invite a final short performance.
-**Pupils:** Share a favourite line.
+**Teacher:** Ask for one favourite word from the verse.
+**Pupils:** Share a word.
 
-**QA:** Teacher-designed non-textbook adaptation; detailed SOW procedure remains unverified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; SOW and A4/PDF QA pending. Not READY.
