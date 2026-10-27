@@ -60,6 +60,14 @@ class EligibilityTests(unittest.TestCase):
         self.assertEqual(verify_session(self.session, self.evidence, **kw).reason,
                          "invalid_registered_classes")
 
+    def test_malformed_registered_class_entries(self):
+        for entries in (frozenset({None}), frozenset({123}),
+                        frozenset({"  "}), frozenset({"5A", None})):
+            with self.subTest(entries=entries):
+                kw = self.kw | {"registered_class_keys": entries}
+                self.assertEqual(verify_session(self.session, self.evidence, **kw).reason,
+                                 "invalid_registered_classes")
+
     def test_wrong_class(self):
         self.assertFalse(verify_session(self.session, self.evidence,
                          **(self.kw | {"registered_class_keys": frozenset()})).allowed)
