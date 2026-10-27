@@ -141,6 +141,20 @@ class UsageStatsTests(unittest.TestCase):
         self.assertFalse(record_confirmed_delivery(db, 123, 900, 'BM', 'Tahun 2'))
         self.assertEqual(summary(db)['rph_success'], 1)
 
+    def test_delivery_key_persists_after_reopen(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = str(Path(tmp) / 'usage.sqlite')
+            first = sqlite3.connect(path)
+            initialize(first)
+            self.assertTrue(record_confirmed_delivery(first, 123, 900, 'BM', 'Tahun 2'))
+            first.close()
+            second = sqlite3.connect(path)
+            self.assertFalse(record_confirmed_delivery(second, 123, 900, 'BM', 'Tahun 2'))
+            self.assertTrue(record_confirmed_delivery(second, 123, 901, 'BM', 'Tahun 2'))
+            self.assertEqual(summary(second)['rph_success'], 2)
+            self.assertEqual(second.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+            second.close()
+
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
