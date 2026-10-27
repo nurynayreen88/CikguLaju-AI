@@ -3,8 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 2.3 / 2.3.1
-**Learning objectives:** Pupils perform four lines of a teacher-created beach rhyme with expression.
-**Success criteria:** four intelligible expressive lines.
+**Learning objectives:** Pupils introduce themselves and a partner using fixed phrases, then perform four lines of a teacher-created beach rhyme with expression.
+**Success criteria:** A clear self-and-partner introduction and four intelligible expressive rhyme lines.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Original four-line beach rhyme:** The sun is shining in the sky / I watch the white clouds floating by / I hear the waves beside the shore / I smile and wish to play some more. **Performance cues:** clear words, expressive stress on sun/waves, pause at line ends, audible voice.
 
@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide rehearsal, then model: 'Hello, my name is ____. This is my friend ____. We will say a beach rhyme.' Each pupil introduces themselves and a partner before performing four lines for a small audience.
-**Pupils:** Perform four lines with expression.
+**Pupils:** Introduce themselves and a partner, then perform four lines with expression.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record four intelligible rhyme lines and each pupil's spoken self-and-partner introduction.
