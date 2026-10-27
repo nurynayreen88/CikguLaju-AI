@@ -19,8 +19,8 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Model taking turns, then guide each pair to ask the two supplied questions and give three personal answers.
-**Pupils:** Ask two questions and give three answers.
+**Teacher (25 min):** Guide pairs to describe the three objects, then practise the supplied polite request for help.
+**Pupils:** Describe three objects and request help politely.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three object descriptions and one polite help request per pupil.
