@@ -11,19 +11,19 @@
 **Teacher:** Show pictures connected to Free Time and elicit two words.
 **Pupils:** Name pictures and answer a question.
 
-## Activity 1 — Modelling (7 minutes)
+## Activity 1 — Modelling (15 minutes)
 **Teacher:** Model locating a clue in a short illustrated text.
 **Pupils:** Follow the demonstration and respond once.
 
-## Activity 2 — Guided practice (10 minutes)
+## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Pupils underline key words and answer two comprehension questions. Support pupils who need prompts.
 **Pupils:** Complete the task and share responses.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check whether each pupil can find two details in a short text and note individual evidence.
+## Assessment / PBD (10 minutes)
+**Teacher:** Record each pupil's independent evidence against both success criteria.
 **Pupils:** Give one independent response.
 
-## Closure (3 minutes)
+## Closure (5 minutes)
 **Teacher:** Review two useful expressions.
 **Pupils:** Demonstrate one learned response.
 
