@@ -62,7 +62,7 @@ def summary(connection, now=None):
     subjects = connection.execute(
         "SELECT subject, COUNT(*) AS total FROM admin_usage_events "
         "WHERE event_type='rph_success' AND subject IS NOT NULL "
-        "GROUP BY subject ORDER BY total DESC LIMIT 10"
+        "GROUP BY subject ORDER BY total DESC, subject ASC LIMIT 10"
     ).fetchall()
     # User conversion is derived from recorded events, not inferred from signups.
     user_counts = connection.execute(
