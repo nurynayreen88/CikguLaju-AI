@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils locate four of five details in the printed pages 110–111 and read two short lines aloud.
 **Success criteria:** four accurate detail responses and two intelligible lines.
 **Teaching materials:** Super Minds 1 Student's Book pp.110–111, pictures, word cards and classroom resources.
+**Original supplementary passage (not SB pp.110–111):** Amir is on the beach with Mum. He sees a small crab, two shells and a blue boat. He puts the shells in his yellow bucket. **Five facts/key:** Amir; Mum; small crab; blue boat; yellow bucket. **Reading lines:** He sees a small crab. He puts the shells in his yellow bucket.
+
 **Audited source mapping:** Student's Book pp.110–111 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary material, not a verified textbook extract. Official SOW/TB and PDF/A4 checks pending. NOT READY.
