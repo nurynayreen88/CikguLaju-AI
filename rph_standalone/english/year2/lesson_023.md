@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 1.2 / 1.2.3
 **Complementary SK/SP:** 1.2 / 1.2.4
-**Learning objective:** Pupils practise listening 5 using language from Free Time.
+**Learning objectives (draft):** Pupils identify three details from a teacher-read free-time description.
+**Success criteria (draft):** Three correct picture or word selections.
 **Teaching materials:** Super Minds 1 Student's Book p.68, pictures, word cards and classroom resources.
 **Audited source mapping:** Super Minds 1 Student's Book p.68 (page mapped in prior Year 2 SOW audit). Exact Teacher's Book steps not yet verified.
 
