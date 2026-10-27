@@ -1,33 +1,34 @@
 # English Year 2 — Lesson 76: Reading 16
 
-**Unit:** Get dressed!
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 3.2 / 3.2.3
-**Learning objectives:** Pupils identify four of five explicit details in the reading material on Student's Book p.88 and answer two simple comprehension questions.
-**Success criteria:** 4/5 detail responses and two accurate answers.
-**Teaching materials:** Super Minds 1 Student's Book p.88, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.88 (Year 2 audit); exact Teacher's Book steps not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (prior mapping; official SOW verification pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (prior mapping; official SOW verification pending):** 3.2 / 3.2.3  
+**Duration:** 60 minutes  
+**Source classification:** SB p.88; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
+**Learning objective:** Pupils identify four of five written details and answer two questions.  
+**Success criteria:** Achieve the measurable targets in the objective independently.  
+**Materials:** Board, picture/word cards, exercise books and resources below.
+
+**Original fallback passage:** “It is cold today. Hana puts on her purple jacket and grey trousers. She wears warm socks and black shoes. Her brother wears a green hat.” **Five details/key:** weather—cold; jacket—purple; trousers—grey; shoes—black; brother's hat—green. **Questions/key:** What does Hana wear on her feet?—socks and shoes. Who wears a green hat?—her brother.
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show the page illustration and ask pupils to predict the topic.
-**Pupils:** Predict one idea using picture clues.
+**Teacher:** Show two outfit pictures and elicit familiar words.  
+**Pupils:** Name items and colours.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model finding one printed detail on p.88 without assuming unverified text.
-**Pupils:** Point to the supporting printed evidence.
+**Teacher:** Read the original fallback passage and underline *purple jacket* to model finding evidence.  
+**Pupils:** Follow the model and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Set five detail-finding prompts grounded in the actual page and two factual questions; guide rereading.
-**Pupils:** Read independently or with support, locate details and answer questions.
+**Teacher:** Pupils underline five details, answer two questions and compare supporting words; the original text is not claimed to be SB p.88 content.  
+**Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five individual detail responses and two comprehension answers.
-**Pupils:** Submit answers with evidence.
+**Teacher:** Check five detail answers and two individual comprehension responses. Record independent performance and support required.  
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review how to find an answer in a text.
-**Pupils:** Share one fact found.
+**Teacher:** Recap two words and ask for a relevant sentence.  
+**Pupils:** Share a word and sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book procedure not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft; official SOW, Teacher's Book steps for mapped pages, and PDF/A4 verification pending. NOT READY.
