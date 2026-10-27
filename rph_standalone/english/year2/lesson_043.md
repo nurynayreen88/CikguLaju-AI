@@ -32,3 +32,5 @@
 **Pupils:** Share a sentence.
 
 **QA:** Teacher-developed standalone draft; textbook activity alignment, official SOW SK/SP and PDF/A4 QA pending. Not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
