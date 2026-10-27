@@ -1,31 +1,36 @@
 # English Year 2 — Lesson 32: Listening 7
 
-**Unit:** The old house
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 2.2 / 2.2.1
-**Learning objectives (draft):** Pupils identify three details from a teacher-read description of a house.
-**Success criteria (draft):** three accurate listening choices.
-**Teaching materials:** Super Minds 1 Student's Book p.73, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.73 according to the prior Year 2 SOW mapping audit. Exact Teacher's Book steps remain unverified.
+**Unit:** The old house  
+**Main SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.2  
+**Complementary SK/SP (existing mapping; final SOW verification pending):** 2.2 / 2.2.1  
+**Duration:** 60 minutes  
+**Mapped textbook:** Super Minds 1 Student's Book p.73. The exact Teacher's Book instructions and audio mapping have **not** been independently verified for this revision; the listening script below is teacher-created.  
+**Learning objectives:** Pupils identify four spoken details about rooms and household objects and respond to two spoken questions.  
+**Success criteria:** Four correct picture or word choices and two relevant oral answers.  
+**Materials:** Board, four room cards and original script below.
+
+**Teacher-created listening text — “My Old House”:** “My name is Lily. My old house has a small kitchen and a big living room. There is a blue sofa in the living room. There are two chairs in the kitchen. My bedroom is upstairs. I read books in my bedroom.”  
+**Listening questions and key:** (1) Which room is big? — living room; (2) What colour is the sofa? — blue; (3) How many chairs are in the kitchen? — two; (4) Where is Lily's bedroom? — upstairs; (5) Where does Lily read? — bedroom.  
+**Oral prompts:** “Is there a sofa in the living room?” — “Yes, there is.” “Are there two chairs in the kitchen?” — “Yes, there are.”
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Display house pictures and elicit two familiar words.
-**Pupils:** Name two rooms or objects.
+**Teacher:** Show four room cards and elicit room names.  
+**Pupils:** Name the rooms and one object.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Read a teacher-created house description twice and model identifying a room; page 73 is a mapped resource only.
-**Pupils:** Give one supported response.
+## Activity 1 — Listen for details (15 minutes)
+**Teacher:** Read the original listening text twice, once at natural pace and once slowly. Model answering Question 1 by listening for *big*. Explain that pupils need not see the script during the first listening.  
+**Pupils:** Listen and select the correct room or object cards.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read three house clues and guide individual picture selections.
-**Pupils:** Select three matching pictures.
+## Activity 2 — Guided and independent listening (25 minutes)
+**Teacher:** Read the text a third time. Ask pupils to answer Questions 2–5 independently before comparing answers with a partner. Model the two oral prompts and practise exchanging answers. Provide picture cues for pupils needing support.  
+**Pupils:** Record four listening answers and practise two oral responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against both success criteria.
-**Pupils:** Demonstrate the skill independently.
+**Teacher:** Read four selected details in mixed order without displaying the text and check individual picture/word selections. Ask the two oral prompts and record listening accuracy and oral relevance separately.  
+**Pupils:** Identify four details and answer two questions independently.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review two useful house words.
-**Pupils:** Share one learned word.
+**Teacher:** Ask pupils to share one detail about Lily's house.  
+**Pupils:** State one correct detail.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** COMPLETE TEACHER-DEVELOPED DRAFT — original script and answer key supplied; not claimed as SB p.73 transcript. Official TB/SOW alignment and PDF/A4 QA pending; not READY.
