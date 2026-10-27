@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils perform three lines of a beach rhyme and recognise four printed words.
 **Success criteria:** three expressive lines and four correct word identifications.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original rhyme:** A yellow sun shines in the sky / Blue waves roll as birds fly by / I find a shell beside the sea / A happy beach day just for me! **Four recognition words:** sun, waves, shell, sea.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one word or phrase.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a textbook transcription. Verify official SOW/TB and A4 PDF before READY.
