@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing SOW mapping; recheck):** 5.1 / 5.1.2
 **Complementary SK/SP (existing SOW mapping; recheck):** 3.1 / 3.1.3
-**Learning objective (draft):** Pupils can perform a short free-time rhyme using at least two relevant activity words and gestures.
+**Learning objectives (draft):** Pupils perform two lines of a teacher-created free-time rhyme with two relevant activity words and gestures.
+**Success criteria (draft):** Two intelligible lines, two activity words and two matching gestures.
 **Materials:** Free-time picture cards, word cards and board.
 **Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit; no textbook or Teacher's Book page is assigned. Exact SOW activity steps still require verification.
 
