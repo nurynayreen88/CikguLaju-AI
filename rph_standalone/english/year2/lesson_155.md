@@ -6,7 +6,7 @@
 **Learning objectives:** Pupils rehearse four expressive dialogue lines and introduce themselves and a partner.
 **Success criteria:** Four intelligible lines with expression and one clear self-and-partner introduction.
 **Teaching materials:** Pictures, word cards and classroom resources.
-**Original four-line dialogue:** A: Look at the blue sea! B: I can see a small boat. A: Shall we build a sandcastle? B: Yes, let's build one! **Performance cues:** pause at punctuation, speak clearly, show excitement on final line.
+**Original four-line dialogue:** A: Look at the blue sea! B: I can see a small boat. A: Shall we build a sandcastle? B: Yes, let's build one! **Performance cues:** pause at punctuation, speak clearly, show excitement on final line. **Introduction model:** Hello, I am ____. This is my friend ____. We will perform a beach dialogue.
 
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
