@@ -14,12 +14,12 @@
 **Pupils:** Name the pictures and respond to one short question.
 
 ## Activity 1 — Model (15 minutes)
-**Teacher:** Show a picture of a familiar free-time activity and model a simple sentence on the board. Point out spacing, initial capital and full stop.
+**Teacher:** Model a free-time sentence with capital, spacing and full stop.
 **Pupils:** Identify the activity word and notice the sentence punctuation.
 
 ## Activity 2 — Practice (25 minutes)
-**Teacher:** Provide two different activity pictures and sentence starters; gradually remove the starters. Guide pupils to write and check two sentences.
-**Pupils:** Write two sentences and use a three-item checklist for capital letters, spaces and full stops.
+**Teacher:** Guide two picture-based sentences and an independent punctuation checklist.
+**Pupils:** Write two sentences and self-check punctuation.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
