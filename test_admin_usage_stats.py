@@ -150,6 +150,20 @@ class UsageStatsTests(unittest.TestCase):
         self.assertEqual(db.execute('SELECT COUNT(*) FROM unrelated').fetchone()[0], 0)
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
 
+    def test_daily_activity_midnight_boundary_is_utc(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        before = datetime(2026, 10, 27, 23, 59, 59, tzinfo=timezone.utc)
+        after = datetime(2026, 10, 28, 0, 0, 0, tzinfo=timezone.utc)
+        self.assertTrue(record_daily_active(db, 123, before))
+        self.assertTrue(record_daily_active(db, 123, after))
+        self.assertFalse(record_daily_active(db, 123, after))
+        self.assertEqual(db.execute(
+            "SELECT COUNT(*) FROM admin_usage_events WHERE event_type='bot_active'"
+        ).fetchone()[0], 2)
+        self.assertEqual(summary(db, after)['active_today'], 1)
+        self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+
     def test_delivery_rollback_preserves_consistency(self):
         db = sqlite3.connect(':memory:')
         initialize(db)
