@@ -1,7 +1,7 @@
 import sqlite3
 import unittest
 from datetime import datetime, timezone
-from admin_usage_stats import initialize, record_event, record_confirmed_delivery, summary
+from admin_usage_stats import initialize, record_event, record_confirmed_delivery, record_daily_active, summary
 
 class UsageStatsTests(unittest.TestCase):
     def test_non_destructive_and_counts(self):
@@ -31,6 +31,15 @@ class UsageStatsTests(unittest.TestCase):
         self.assertTrue(record_confirmed_delivery(db, 456, 900, 'BM', 'Tahun 2'))
         self.assertEqual(summary(db)['rph_success'], 2)
         self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+
+    def test_daily_activity_deduplicated(self):
+        db = sqlite3.connect(':memory:')
+        initialize(db)
+        now = datetime(2026, 10, 27, 3, 0, tzinfo=timezone.utc)
+        self.assertTrue(record_daily_active(db, 123, now))
+        self.assertFalse(record_daily_active(db, 123, now))
+        self.assertTrue(record_daily_active(db, 456, now))
+        self.assertEqual(summary(db, now)['active_today'], 2)
 
     def test_invalid_event_rejected(self):
         db = sqlite3.connect(':memory:')
