@@ -3,10 +3,10 @@
 **Unit:** At the beach
 **Main SK/SP:** 4.3 / 4.3.1
 **Complementary SK/SP:** 4.3 / 4.3.3
-**Learning objectives:** Pupils write four legible beach words and two meaningful sentences.
+**Learning objectives:** Pupils draft and write four Unit 9 review quiz questions with appropriate capitals and question marks, then prepare a final set for Lesson 153.
 **Success criteria:** Four legible words and two meaningful sentences with capitals, spacing and full stops.
 **Teaching materials:** Pictures, word cards and classroom resources.
-**Original writing words:** sun, sand, shell, bucket. **Picture scene:** a yellow sun and blue bucket on the sand. **Two models:** The sun is yellow. The bucket is blue. **Writing check:** capitals, spaces, full stops.
+**Original teacher-created Unit 9 review quiz (standalone backup for Lesson 153):** 1. What colour is the sea? (Blue.) 2. What can you find on the sand? (Shells.) 3. What do you use to build a sandcastle? (Sand.) 4. What can you take to the beach? (A bucket.) **Writing check:** capital letters, word spacing and question marks for questions; full stops for written answers.
 
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
@@ -19,8 +19,8 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide four word trials and two independent sentences.
-**Pupils:** Write four words and two sentences.
+**Teacher (25 min):** In pairs or small groups, ask pupils to draft four new Unit 9 review questions, peer-check wording and punctuation, then produce a final numbered quiz sheet to use in Lesson 153. Supply the original four-question backup if needed.
+**Pupils:** Draft and revise four review questions together, then write the final four-question quiz.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Check four legible words and two sentences per pupil, recording capital letters, spacing and full stops.
@@ -30,6 +30,6 @@
 **Teacher (5 min):** Review one useful beach expression.
 **Pupils:** Share one useful word.
 
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**Verified SOW lesson outline:** Design a Unit 9 review-question set in pairs or small groups; draft before final writing; use the quiz in Lesson 153. **Source:** Official Primary Year 2 SOW. **QA:** Preliminary RPH; Teacher's Book verification pending.
 
 **QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
