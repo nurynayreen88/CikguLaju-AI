@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide four short clothing sentences and three detail questions.
+**Teacher (25 min):** Guide reading four clothing sentences. Ask pupils to reread a word, phrase or sentence when unsure of its meaning, then answer three detail questions using familiar context clues.
 **Pupils:** Read four sentences and locate three details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Record four intelligible sentences, three correct detail answers and individual evidence of rereading for meaning.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
