@@ -12,12 +12,12 @@
 **Pupils:** Name pictures and answer one question.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Model a short question and response using topic picture cues.
+**Teacher:** Model two simple questions about free-time activities and corresponding answers using picture cues.
 **Pupils:** Observe and give one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils exchange questions in pairs and change roles. Provide feedback and support.
-**Pupils:** Practise and share answers.
+**Teacher:** Guide two partner exchanges, changing roles and giving corrective feedback.
+**Pupils:** Ask and answer two questions with a partner.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Record each pupil's independent evidence against both success criteria.
