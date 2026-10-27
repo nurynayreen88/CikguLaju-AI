@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP (existing mapping):** 1.2 / 1.2.2
 **Complementary SK/SP (existing mapping):** 3.1 / 3.1.1
-**Objective (draft):** Pupils can identify three spoken details.
+**Learning objectives (draft):** Pupils match three spoken free-time details to pictures and recognise two printed activity words.
+**Success criteria (draft):** Three accurate listening matches and two recognised printed words.
 **Materials:** Topic pictures, word cards and exercise books.
 **Source classification:** NON-TEXTBOOK / SOW task in the prior Year 2 audit; no textbook or Teacher's Book page is assigned. Exact SOW activity steps still require verification.
 
