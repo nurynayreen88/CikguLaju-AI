@@ -41,6 +41,19 @@ def inspect(source):
     # A final class can silently lose methods if an intermediate override is
     # bypassed. Record the complete class lineage rather than treating the
     # isolated first/last Flowable PDF as production evidence.
+    # Verify every successive class is connected to its immediate predecessor.
+    # A saved alias between class declarations is the only safe handoff.
+    if len(versions) > 1:
+        for earlier, later in zip(versions, versions[1:]):
+            handoffs = [a for a in aliases
+                        if earlier["line"] < a["line"] < later["line"]
+                        and a["value"] == TARGET]
+            allowed = {name for a in handoffs for name in a["aliases"]}
+            if len(later["bases"]) != 1 or later["bases"][0] not in allowed:
+                raise ValueError(
+                    f"Renderer override at line {later['line']} skips "
+                    f"previous definition at line {earlier['line']}"
+                )
     if len(versions) > 2:
         # The final implementation must inherit from an alias saved from the
         # immediately preceding definition; otherwise overrides are skipped.
