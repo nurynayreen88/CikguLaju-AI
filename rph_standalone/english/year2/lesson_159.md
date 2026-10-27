@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils write three legible robot sentences and correct two spacing errors.
 **Success criteria:** three understandable sentences and two accurate corrections.
 **Teaching materials:** Pictures, word cards and classroom resources.
+**Original robot scene:** square head, two green eyes and four wheels. **Three models:** It has a square head. Its eyes are green. It has four wheels. **Spacing key:** Ithas four wheels. -> It has four wheels.; Its eyesare green. -> Its eyes are green.
+
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -29,3 +31,5 @@
 **Pupils:** Share one useful word.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
