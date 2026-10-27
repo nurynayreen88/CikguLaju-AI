@@ -37,3 +37,5 @@ Nina lives in a little house. There is a blue sofa in the living room. There are
 **Pupils:** Share a text-supported fact.
 
 **QA:** Complete teacher-developed draft; official SOW and A4/PDF verification pending. Not READY.
+
+**QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
