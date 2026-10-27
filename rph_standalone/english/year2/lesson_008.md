@@ -34,3 +34,5 @@
 **Pupils:** Read the phrase and mime it.
 
 **QA:** COMPLETE TEACHER-DEVELOPED DRAFT — all six words, phrases and matching key included. Official SOW alignment and PDF/A4 checks pending; not READY.
+
+**QA status:** NOT READY — verify official SOW and Teacher's Book mapping and inspect rendered one-page A4 PDF before release.
