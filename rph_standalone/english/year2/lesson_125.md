@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils create a labelled robot artwork and respond to three spoken descriptions.
 **Success criteria:** One relevant creative artwork and three appropriate listening responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
+
+**Original teacher-created supplementary resource:** **Art brief:** Draw a robot with a square head, two eyes, long arms and four wheels; label head, eyes, arms, wheels. **Three spoken cues:** Point to the head; show the wheels; touch the arms.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Suggest labels for the model.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide pupils to create labelled artwork and listen to three descriptions.
+**Teacher (25 min):** Pupils draw and label their robot and respond to three spoken cues.
 **Pupils:** Create artwork and respond to three spoken descriptions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each artwork and three individual listening responses.
+**Teacher (10 min):** Check labelled artwork and three responses. Record individual support needed.
 **Pupils:** Present individual creative and listening evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary materials; official SOW/TB and PDF/A4 verification pending. NOT READY.
