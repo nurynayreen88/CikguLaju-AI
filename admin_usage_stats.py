@@ -97,6 +97,9 @@ def record_confirmed_delivery(connection, user_id, telegram_message_id, subject=
     """
     if telegram_message_id is None:
         return False
+    if connection.in_transaction:
+        raise sqlite3.OperationalError(
+            'Delivery recording requires a fresh database connection')
     key = f'{user_id}:{telegram_message_id}'
     stamp = datetime.now(timezone.utc).isoformat()
     with connection:
