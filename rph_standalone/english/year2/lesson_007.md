@@ -3,7 +3,8 @@
 **Unit:** Free Time
 **Main SK/SP:** 2.1 / 2.1.1
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Objective (draft):** Pupils ask and answer two short questions.
+**Learning objectives (draft):** Pupils ask and answer two free-time questions and recognise two spoken activity words.
+**Success criteria (draft):** Two intelligible exchanges and two correct listening choices.
 **Materials:** Pictures, word cards, relevant textbook unit (page unverified).
 
 ## Set Induction (5 minutes)
