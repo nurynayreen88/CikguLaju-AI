@@ -3,7 +3,8 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 5.2 / 5.2.1
-**Learning objective:** Pupils practise language arts 30 using language from At the beach.
+**Learning objectives:** Pupils perform a four-line beach rhyme and create two original descriptive lines.
+**Success criteria:** four expressive lines and two meaningful original lines.
 **Teaching materials:** Pictures, word cards and classroom resources.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
