@@ -20,7 +20,7 @@ jobs:
         run: python -m py_compile app.py tools/jawi_font_runs.py tools/check_rph_pdf_layout.py
       - name: Run standalone Jawi regression tests
         run: python -m unittest discover -s tests -p 'test_jawi*.py' -v
-      - name: Verify actual Pillow RAQM shaping runtime
+      - name: Validate standalone Pendidikan Islam approval safety\n        run: python -m unittest discover -s tests -p 'test_pi_standalone_bank.py' -v\n      - name: Verify actual Pillow RAQM shaping runtime
         run: |
           python - <<'PY'
           from PIL import ImageFont, features
