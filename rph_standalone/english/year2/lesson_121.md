@@ -6,6 +6,8 @@
 **Learning objectives:** Pupils identify four of five spoken robot details and write two related short labels.
 **Success criteria:** 4/5 correct listening choices and two legible labels.
 **Teaching materials:** Pictures, word cards and classroom resources.
+
+**Original teacher-created supplementary resources (not verified textbook extracts):** **Original robot listening script:** “This robot has a round head, two blue eyes, four wheels, long arms and a red body.” **Five detail key:** head round; eyes blue; wheels four; arms long; body red. **Writing labels:** head; wheels.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +19,11 @@
 **Pupils:** Rehearse one model response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Present five teacher-created spoken descriptions and two labelling prompts.
+**Teacher (25 min):** Read the script twice. Pupils choose five details from picture/word cards and label head and wheels.
 **Pupils:** Choose five answers and write two labels.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
+**Teacher (10 min):** Check five listening choices and two legible labels. Record support required for individual PBD.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
@@ -31,3 +33,5 @@
 **QA:** Teacher-designed non-textbook adaptation; exact SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Official SOW and TB procedure (where applicable), plus PDF/A4 checks pending. NOT READY.
