@@ -1,33 +1,34 @@
 # English Year 2 — Lesson 71: Listening 15
 
-**Unit:** Get dressed!
-**Main SK/SP:** 1.1 / 1.1.1
-**Complementary SK/SP:** 3.1 / 3.1.4
-**Learning objectives:** Pupils distinguish four of five spoken clothing words and match four printed words to pictures.
-**Success criteria:** 4/5 correct listening choices and four accurate word-picture matches.
-**Teaching materials:** Super Minds 1 Student's Book p.87, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.87 (Year 2 audit); exact Teacher's Book steps not yet verified.
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; official SOW verification pending):** 1.1 / 1.1.1  
+**Complementary SK/SP (existing mapping; official SOW verification pending):** 3.1 / 3.1.4  
+**Duration:** 60 minutes  
+**Source classification:** SB p.87; TB steps not verified. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
+**Learning objective:** Pupils distinguish four of five spoken clothing words and match four printed words to pictures.  
+**Success criteria:** Achieve the measurable targets in the objective.  
+**Materials:** Board, clothing picture/word cards, exercise books and the printable resources below.
+
+**Picture/word cards:** shirt, skirt, shoes, socks, hat. **Original listening order:** “socks, shirt, hat, shoes, skirt”. **Key:** socks→D, shirt→A, hat→E, shoes→C, skirt→B (card labels A shirt, B skirt, C shoes, D socks, E hat).
 
 ## Set Induction (5 minutes)
-**Teacher (5 min):** Show clothing picture cards and elicit known words.
-**Pupils:** Name familiar clothing.
+**Teacher:** Display two clothing pictures, elicit known words and ask a prediction.  
+**Pupils:** Name items and colours.
 
-## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Preview Student's Book p.87 and model distinguishing two similar spoken words.
-**Pupils:** Listen and point to the correct card.
+## Activity 1 — Teacher modelling (15 minutes)
+**Teacher:** Pronounce *shoes* and *socks* slowly, contrast the initial sounds and demonstrate a card choice.  
+**Pupils:** Follow and practise one example with support.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use page-linked audio if available, otherwise a labelled teacher-created five-item listening sequence; provide picture and printed-word cards.
-**Pupils:** Identify five spoken items and match four printed words independently.
+**Teacher:** Read the five original words in mixed order twice. Pupils select picture cards and then match four printed word cards, explaining the letter clues.  
+**Pupils:** Complete the activity, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's five listening choices and four word-picture matches; provide corrective feedback.
-**Pupils:** Submit individual responses.
+**Teacher:** Check five individual listening choices and four printed matches. Record independent accuracy and assistance required.  
+**Pupils:** Demonstrate their skills individually.
 
 ## Closure (5 minutes)
-**Teacher (5 min):** Review one listening clue and a word match.
-**Pupils:** Share one word heard.
+**Teacher:** Recap two target words and ask for a relevant sentence.  
+**Pupils:** Share one word and sentence.
 
-**QA:** Teacher-designed adaptation; exact SOW and Teacher's Book sequence not yet verified.
-
-**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+**QA:** Teacher-developed standalone draft. Official SOW SK/SP and detailed TB sequence (for mapped textbook lessons) plus PDF/A4 QA pending. NOT READY.
