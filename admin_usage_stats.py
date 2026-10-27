@@ -32,7 +32,10 @@ def initialize(connection: sqlite3.Connection):
 def record_event(connection, user_id, event_type, subject=None, grade=None, when=None):
     if event_type not in ('bot_active', 'rph_success', 'rph_failed'):
         raise ValueError('Unsupported usage event')
-    stamp = (when or datetime.now(timezone.utc)).isoformat()
+    instant = when or datetime.now(timezone.utc)
+    if instant.tzinfo is None:
+        raise ValueError('Event timestamp must include timezone')
+    stamp = instant.astimezone(timezone.utc).isoformat()
     connection.execute(
         'INSERT INTO admin_usage_events '
         '(telegram_user_id,event_type,subject,grade,created_at) VALUES (?,?,?,?,?)',
