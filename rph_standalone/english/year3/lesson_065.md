@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 65: Language Arts (Provisional Draft)
+# English Year 3 — Lesson 65: Listening
 
-**Lesson:** 65
-**Year:** 3
-**Skill focus:** Language Arts (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** My New House
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Listening 1.2 / 1.2.1
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate language arts response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book p.45; Teacher's Book pp.74–75; house and furniture flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher introduces the word house and asks pupils to name familiar rooms.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Read a short rhyme or story extract aloud with expression.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Prepositions (15 minutes)
+Teacher plays Run and Touch using door, window and floor, introducing behind and in front of. Pupils follow spoken instructions.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify repeated words and act out the meaning.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Listening (25 minutes)
+Teacher follows Warm Up, Vocabulary and Activity 1 from Teacher's Book pp.74–75. Pupils listen for house vocabulary and prepositions, then identify objects and locations.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs perform a short response or illustrate a favourite line. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks understanding of specific details and familiar words in the listening input.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils describe where one classroom object is located.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
