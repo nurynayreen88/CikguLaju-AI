@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 133: Provisional Reading Draft
+# English Year 3 — Lesson 133: Language Arts
 
-**Lesson:** 133
-**Year:** 3
-**Skill focus:** Reading (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** On Holiday
+**Main SK/SP:** 5.1 / 5.1.2
+**Complementary SK/SP:** 2.3 / 2.3.1
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple reading response with age-appropriate support.
+**References:** KPM Year 3 SOW Lesson 133; pictures of a forest and castle.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher introduces Sasha and Jason and a forest setting. Pupils predict what might happen.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Display a short accessible passage and model locating a detail.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Teacher shows a castle picture. Pupils imagine what the characters found inside.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils read and underline three clues before answering comprehension questions.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Teacher tells the story and guides groups in a creative retelling or role-play of the castle adventure.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils explain which sentence supports each answer. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher observes creative participation and short oral recounts.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils share one imagined detail from the adventure.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
