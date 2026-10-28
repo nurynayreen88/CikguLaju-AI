@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 35: Reading
 
-**Unit:** Right now
-**Main SK/SP:** 3.2 / 3.2.1
-**Complementary SK/SP:** 3.2 / 3.2.2
+**Unit:** Right Now
+**Main SK/SP:** Reading 3.2 / 3.2.1
+**Complementary SK/SP:** Reading 3.2 / 3.2.3
 **Duration:** 60 minutes
-**Objective:** Pupils practise reading skills within the Right now context.
-**Materials:** Get Smart Plus 3, picture cards, word cards and exercise books.
+**References:** Student's Book pp.26–27; Teacher's Book pp.48–49; story pictures and sentence cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce the topic using relevant pictures and questions.
-**Pupils:** Name vocabulary and respond.
+Pupils sing and act out the song from Student's Book p.25.
 
-## Activity 1 (10 minutes)
-**Teacher:** Demonstrate the target reading task and check understanding.
-**Pupils:** Observe and practise a model response.
+## Activity 1 — Prediction (15 minutes)
+Teacher introduces new vocabulary and displays selected story pictures. Pupils match sentence cards to pictures using visual clues.
 
-## Activity 2 (25 minutes)
-**Teacher:** Organise guided pair or individual practice and support pupils.
-**Pupils:** Complete the task and share responses.
+## Activity 2 — Reading (25 minutes)
+Pupils read the picture story on Student's Book p.26 to check matches. Teacher guides Activity 1 and introduces present continuous question forms from the p.27 Grammar Box.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess an individual response against 3.2.1.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks understanding of the story's main idea and inferred vocabulary meanings.
 
 ## Closure (5 minutes)
-**Teacher:** Recap language and correct errors.
-**Pupils:** Share one thing learned.
+Pupils record one new word and a reflection in their learning diaries.
 
-**QA:** Preliminary Year 3 SOW-aligned draft; Teacher's Book activity sequence pending verification.
+**QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
