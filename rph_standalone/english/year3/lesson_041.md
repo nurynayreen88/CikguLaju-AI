@@ -1,30 +1,24 @@
-# English Year 3 — Lesson 41: Listening
+# English Year 3 — Lesson 41: Writing
 
-**Unit:** Right now
-**Main SK/SP:** 4.2 / 4.2.4
-**Complementary SK/SP:** 3.2 / 3.2.2
+**Unit:** Right Now
+**Main SK/SP:** Writing 4.2 / 4.2.4
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the listening learning standard in the context of Right now.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.29 Activity 3; Teacher-prepared cut-up sentences and writing slips.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher mimes actions and makes true or false statements. Pupils describe what is and is not happening.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the listening task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Sentence ordering (15 minutes)
+Teacher distributes cut-up present continuous sentences. Pairs reconstruct them and identify the matching child in Student's Book p.29.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Right now.
+## Activity 2 — Description game (25 minutes)
+Teacher models descriptions of children using positive and negative sentences. Pupils create a short written guessing game on slips of paper and exchange clues with classmates.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 4.2.4 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks descriptions and reading comprehension, marking errors for revision in Lesson 43.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils read one corrected description and identify its matching picture.
 
-**Source:** Year 3 English SOW 2026, Lesson 41. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
