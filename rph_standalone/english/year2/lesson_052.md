@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.4  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.81. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Objective:** Pupils identify four of five text details and answer two of three questions.  
+**Learning objectives:** Pupils identify four of five text details and answer two of three questions.  
 **Success criteria:** Individually identify at least four of five text details and answer at least two of three comprehension questions, with evidence underlined in the passage.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
