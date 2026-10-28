@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.3 / 3.3.1  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.82. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Objective:** Pupils identify four of five spoken clothing cues and demonstrate one picture-dictionary lookup.  
+**Learning objectives:** Pupils identify four of five spoken clothing cues and demonstrate one picture-dictionary lookup.  
 **Success criteria:** Achieve the measurable targets stated in the objective.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
