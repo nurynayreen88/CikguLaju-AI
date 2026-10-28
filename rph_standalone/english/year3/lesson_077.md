@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 77: Reading
 
-**Unit:** My new house
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 3.2 / 3.2.1
+**Unit:** My New House
+**Main SK/SP:** Reading 3.2 / 3.2.2
+**Complementary SK/SP:** Reading 3.2 / 3.2.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the reading learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.51; Teacher's Book p.82; house pictures.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher introduces key vocabulary about houses. Pupils match words to pictures.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the reading task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Teacher model (15 minutes)
+Teacher describes a familiar house using pictures. Pupils listen and identify vocabulary from the board.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Reading (25 minutes)
+Teacher introduces the text about Sue's house on Student's Book p.51. Pupils read silently, identify the main idea and locate specific details about the house.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 3.2.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks the main idea and specific reading information.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share one similarity between Sue's house and their own home.
 
-**Source:** Year 3 English SOW 2026, Lesson 77. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
