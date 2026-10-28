@@ -13,7 +13,7 @@ Teacher reviews present-tense verbs using cards.
 Pairs write verbs on blank cards and match them to past forms.
 
 ## Activity 2 (25 minutes)
-Teacher models present and past sentences. Pupils compare forms and write short past-tense statements.
+Pairs write past verbs on the backs of their cards, make past-tense sentences and turn the cards over to check their answers.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks written descriptions and question comprehension.
