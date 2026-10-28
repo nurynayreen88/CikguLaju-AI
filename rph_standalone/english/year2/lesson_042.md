@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 3.1 / 3.1.2  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.76. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
-**Objective:** Pupils identify the main idea of a short familiar house text (main 3.2.1) and recognise at least four familiar printed words using letter-sound knowledge (complementary 3.1.2).  
+**Learning objectives:** Pupils identify the main idea of a short familiar house text (main 3.2.1) and recognise at least four familiar printed words using letter-sound knowledge (complementary 3.1.2).  
 **Success criteria:** Individually choose the correct main-idea statement from three options, explain one supporting clue and recognise at least four of five printed words; record any support given.  
 **Materials:** Board, room cards, exercise books and resources below.
 
