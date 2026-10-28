@@ -74,6 +74,16 @@ class TrialReservationTests(unittest.TestCase):
         self.assertEqual(len(calls), 2)
         self.assertIn("commit", calls[-1])
 
+    def test_ambiguous_transport_error_keeps_reservation(self):
+        client, calls = self.make_client()
+        def network_timeout(_):
+            raise TimeoutError("Telegram response lost")
+        with self.assertRaises(TimeoutError):
+            deliver_with_trial(client, 42, "request-12345",
+                               lambda: b"pdf", network_timeout)
+        self.assertEqual(len(calls), 1)
+        self.assertIn("reserve", calls[0])
+
     def test_invalid_request_id(self):
         client, _ = self.make_client()
         with self.assertRaises(ValueError):
