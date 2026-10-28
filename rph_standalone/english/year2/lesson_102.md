@@ -3,11 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 2.3 / 2.3.1
 **Complementary SK/SP:** 2.1 / 2.1.2
-**Learning objectives:** Each pupil contributes four relevant turns across two robot-themed conversation rounds and describes two robot features intelligibly.
-**Success criteria:** Four relevant spoken turns per pupil across two rounds, plus two clear robot-feature descriptions.
+**Learning objectives:** Each pupil introduces themselves to an audience using fixed phrases and asks a partner two basic personal questions.
+**Success criteria:** one clear self-introduction and two appropriate personal questions.
 **Teaching materials:** Pictures, word cards and classroom resources.
 
-**Teacher-created standalone resource (not verified textbook content):** **Original four-turn dialogue:** A: What is your robot like? B: It has a round head. A: Has it got long arms? B: Yes, it has long arms. **Variation card:** square head, short arms. **Round 2 example:** A: What is your robot like? B: It has a square head. A: Has it got short arms? B: Yes, it has short arms. Pupils exchange A/B roles between rounds.
+**Teacher-created standalone resource (not verified textbook content):** **Presentation frames:** 'Hello, my name is ___. This is my friend ___.' **Personal questions:** 'What is your name?' 'What can you do?' **Model response:** 'My name is Aina. I can run.' **Original four-turn dialogue:** A: What is your robot like? B: It has a round head. A: Has it got long arms? B: Yes, it has long arms. **Variation card:** square head, short arms. **Round 2 example:** A: What is your robot like? B: It has a square head. A: Has it got short arms? B: Yes, it has short arms. Pupils exchange A/B roles between rounds.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Model the four turns with a volunteer. Pairs perform two rounds, exchanging A/B roles in round 2 so every pupil contributes two turns per round. Each pupil also gives two robot-feature descriptions.
+**Teacher (25 min):** Model the four turns with a volunteer. Pairs practise fixed-phrase self-introductions, present themselves and a partner to the class, then ask two basic personal questions.
 **Pupils:** Contribute four turns and describe two features.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Score four relevant spoken turns for each pupil across both rounds (0–4) and two clear robot-feature descriptions (0–2). Record individual prompts, not a shared pair score.
+**Teacher (10 min):** Score an individual fixed-phrase introduction (SP 2.3.1) and two basic personal questions (SP 2.1.2). Record individual prompts, not a shared pair score.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
