@@ -12,7 +12,7 @@
 **Teacher:** Mime can and can't actions. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model target vocabulary, language and task steps. **Pupils:** Practise with visual and oral scaffolding.
+**Teacher:** Review run, jump, swim, hop and skip with action cards. Give each pupil a card and demonstrate raising it when its action is heard in the song. **Pupils:** Mime their action, describe what a classmate can or cannot do and practise recognising the song vocabulary.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Listen to the SOW action song; mime, sequence prepared lines and compose a short original action-song verse in groups. **Pupils:** Complete the referenced tasks, practising both standards.
