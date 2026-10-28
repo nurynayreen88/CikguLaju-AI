@@ -10,7 +10,7 @@
 Teacher reviews weather and familiar country names. Pupils identify countries on a world map.
 
 ## Activity 1 — Time zones (15 minutes)
-Teacher introduces the concept of time differences between Malaysia and other countries. Pupils compare example clock times without assuming all countries share Malaysia's time.
+Teacher starts with a countries quiz, locates answers on a world map, and demonstrates how local times can differ. Pupils identify countries, read example clocks and compare times.
 
 ## Activity 2 — Listening and reading (25 minutes)
 Teacher guides the country and time-zone task from Student's Book p.116 and Teacher's Book p.179. Pupils listen for specific information, match countries and times, and read supporting labels.
