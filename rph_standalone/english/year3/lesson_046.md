@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 46: Writing
 
-**Unit:** Right now
-**Main SK/SP:** 4.3 / 4.3.3
-**Complementary SK/SP:** 2.3 / 2.3.1
+**Unit:** Right Now
+**Main SK/SP:** Writing 4.3 / 4.3.3
+**Complementary SK/SP:** Speaking 2.3 / 2.3.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the writing learning standard in the context of Right now.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.31; Teacher's Book pp.54–55; cards from Lesson 44, poster paper, pencils and labels.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews action cards from Lesson 44. Pupils describe actions.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the writing task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Picture preparation (15 minutes)
+Teacher guides Student's Book p.31 Activity 1. Pupils study pictures and answer questions about what people are doing.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Right now.
+## Activity 2 — Drafting and display (25 minutes)
+Pupils write sentences about their pictures, exchange work for peer review, redraft neatly on labels and attach them to their pictures for a classroom display. Teacher supports accurate present continuous sentences.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 4.3.3 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks planning, drafting and short oral narration of pictured events. Pupils explain their work to partners.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Teacher displays selected work and invites pupils to share a corrected sentence.
 
-**Source:** Year 3 English SOW 2026, Lesson 46. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
