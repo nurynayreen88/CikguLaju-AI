@@ -14,10 +14,10 @@ Teacher mimes an animal. Pupils guess its name and imitate its movement.
 Teacher shows animal flashcards, elicits names and models descriptions using tall, small and thin. Pupils listen, point to matching pictures and repeat key words.
 
 ## Activity 2 (25 minutes)
-Teacher describes an animal without showing its picture. Pupils listen for specific details and choose the matching flashcard. In pairs, pupils take turns describing and guessing animals using familiar adjectives.
+Pupils play the adjective guessing game in pairs. Teacher follows Student's Book p.95 Activity 1 with the song audio. Each pupil holds an animal flashcard, listens again and finds the partner animal mentioned in the song; pairs recall the comparison adjective.
 
 ## Assessment / PBD (10 minutes)
-Teacher gives four short oral descriptions. Pupils select the correct animal picture and identify familiar sounds or words. Teacher records pupils' responses.
+Teacher checks whether pupils identify their partner animal from the song and recognise the comparison adjective. Pupils note new words and skills in a short learning diary.
 
 ## Closure (5 minutes)
 Each pupil names one animal and gives one adjective.
