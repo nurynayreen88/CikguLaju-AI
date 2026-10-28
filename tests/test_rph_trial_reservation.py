@@ -51,7 +51,7 @@ class TrialReservationTests(unittest.TestCase):
         self.assertEqual(len(calls), 2)
         self.assertIn("release", calls[-1])
 
-    def test_failed_delivery_releases(self):
+    def test_unconfirmed_delivery_retains_reservation(self):
         client, calls = self.make_client()
         with self.assertRaises(TrialReservationError):
             deliver_with_trial(client, 42, "request-12345",
@@ -83,6 +83,20 @@ class TrialReservationTests(unittest.TestCase):
                                lambda: b"pdf", network_timeout)
         self.assertEqual(len(calls), 1)
         self.assertIn("reserve", calls[0])
+
+    def test_invalid_telegram_user_id(self):
+        client, calls = self.make_client()
+        for user_id in (True, 0, -1, "42", None):
+            with self.subTest(user_id=user_id), self.assertRaises(ValueError):
+                client.reserve(user_id, "request-12345")
+        self.assertEqual(calls, [])
+
+    def test_invalid_telegram_message_id(self):
+        class InvalidResponse:
+            ok = True
+            def json(self):
+                return {"ok": True, "result": {"message_id": True}}
+        self.assertFalse(telegram_document_confirmed(InvalidResponse()))
 
     def test_invalid_request_id(self):
         client, _ = self.make_client()
