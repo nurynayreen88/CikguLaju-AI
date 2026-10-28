@@ -1,29 +1,25 @@
 # English Year 3 — Lesson 22: Listening
 
-**Unit:** Every day
-**Main SK/SP (existing mapping):** 1.2 / 1.2.2
-**Complementary SK/SP (existing mapping):** 1.2 / 1.2.5
-**Objective (draft):** Pupils can identify three spoken details.
-**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
+**Duration:** 60 minutes
+**References:** Get Smart plus 3 Student's Book p.17; Teacher's Book p.35; cut-up routine word cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two pictures related to Every day and elicit familiar words.
-**Pupils:** Name pictures and answer one question.
+Teacher reviews challenging transport-to-school expressions. Pupils recall words and phrases.
 
-## Activity 1 — Modelling (7 minutes)
-**Teacher:** Read a short description twice and model how to listen for one key word.
-**Pupils:** Observe and give one supported response.
+## Activity 1 — Preparation (15 minutes)
+Teacher distributes mixed word cards (take the bus, walk, take the train, drive). Pupils arrange phrases in pairs and identify words from spoken questions.
 
-## Activity 2 — Guided practice (10 minutes)
-**Teacher:** Pupils match three spoken details to pictures and check in pairs. Provide feedback and support.
-**Pupils:** Practise and share answers.
+## Activity 2 — Listening (25 minutes)
+Teacher guides the listening task on Student's Book p.17 following the SOW reference to Teacher's Book p.35. Pupils listen for routine and transport details and ask for repetition or clarification when needed.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check independently whether pupils can identify three spoken details; record evidence.
-**Pupils:** Demonstrate the target skill individually.
+## PBD (10 minutes)
+Teacher asks targeted detail questions and observes pupils' listening strategies. Pupils identify the transport and routine information heard.
 
-## Closure (3 minutes)
-**Teacher:** Review two key words and invite a final example.
-**Pupils:** Share one learned response.
+## Closure (5 minutes)
+Pupils share a transport phrase and explain how they understood it.
 
-**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.
+**QA:** Lesson-level SOW checked; direct Teacher's Book review and Word/PDF output verification pending. NOT READY FOR RELEASE.
