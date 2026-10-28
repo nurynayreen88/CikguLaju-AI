@@ -5,7 +5,7 @@
 **Complementary SK/SP (SOW check pending):** 2.1 / 2.1.5
 **Duration:** 60 minutes
 **Source:** NON-TEXTBOOK; original teacher-created dialogue.
-**Objectives:** Perform at least three dialogue lines and create one meaningful variation.
+**Learning objectives:** Perform at least three dialogue lines and create one meaningful variation.
 **Success criteria:** Three intelligible lines and one suitable variation.
 **Materials:** Outfit picture cards and dialogue below.
 
