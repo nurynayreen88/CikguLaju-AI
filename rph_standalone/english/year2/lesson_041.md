@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 3.1 / 3.1.3  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.75. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
-**Objective:** With support, pupils recognise and reproduce the /ʃ/ sound in *sh* words (main 1.1.1) and blend four familiar printed words using letter sounds (complementary 3.1.3). This is a teacher-developed phonics alternative pending verification of the exact SB p.75/TB sequence.  
+**Learning objectives:** With support, pupils recognise and reproduce the /ʃ/ sound in *sh* words (main 1.1.1) and blend four familiar printed words using letter sounds (complementary 3.1.3). This is a teacher-developed phonics alternative pending verification of the exact SB p.75/TB sequence.  
 **Success criteria:** Individually produce /ʃ/ correctly in at least 3 of 4 target words and blend at least 3 of 4 printed words, with the level of teacher support recorded.  
 **Materials:** Board, four word cards (*ship, shop, fish, dish*), picture prompts drawn by the teacher, exercise books and the teacher-created assessment below.
 
