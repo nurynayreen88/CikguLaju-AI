@@ -13,7 +13,7 @@ Teacher reviews familiar present and past forms.
 Teacher pre-teaches homework vocabulary and distributes two versions of a text, one past and one present.
 
 ## Activity 2 (25 minutes)
-Pairs read their assigned texts and complete gapped versions by exchanging information; teacher guides review tasks.
+Pupils complete missing present or past forms of be in their texts, then pair A with B and check answers orally without showing papers. Each pair writes two questions about the texts and asks another pair.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks reading details and understanding of supported questions.
