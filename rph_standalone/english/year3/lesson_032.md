@@ -1,30 +1,25 @@
-# English Year 3 — Lesson 32: Reading
+# English Year 3 — Lesson 32: Language Awareness
 
-**Unit:** Every day
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 4.2 / 4.2.4
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Reading 3.2 / 3.2.2
+**Complementary SK/SP:** Writing 4.2 / 4.2.4
 **Duration:** 60 minutes
-**Objective:** Pupils practise reading skills within the Every day context.
-**Materials:** Get Smart Plus 3, picture cards, word cards and exercise books.
+**References:** KPM Primary Year 3 SK Scheme of Work Lesson 32; Student's Book p.24 revision activities; Teacher's Book pp.44–45; unit worksheet and self-assessment sheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce the topic using relevant pictures and questions.
-**Pupils:** Name vocabulary and respond.
+Teacher reviews routine and occupation vocabulary. Pupils respond to picture prompts.
 
-## Activity 1 (10 minutes)
-**Teacher:** Demonstrate the target reading task and check understanding.
-**Pupils:** Observe and practise a model response.
+## Activity 1 — Reading review (15 minutes)
+Teacher introduces the worksheet text about Hamid and May. Pupils read silently, identify the writer and locate frequency adverbs and third-person verb endings.
 
-## Activity 2 (25 minutes)
-**Teacher:** Organise guided pair or individual practice and support pupils.
-**Pupils:** Complete the task and share responses.
+## Activity 2 — Language consolidation (25 minutes)
+Teacher models unjumbling a sentence and distributes sentence strips. Pupils reconstruct correct routine sentences in groups and write short descriptions; optional revision activities from Student's Book p.24 support learning needs.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess an individual response against 3.2.2.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks reading details and accurate written descriptions. Pupils complete a brief unit self-assessment.
 
 ## Closure (5 minutes)
-**Teacher:** Recap language and correct errors.
-**Pupils:** Share one thing learned.
+Teacher reviews common language errors and asks pupils to identify one area for improvement.
 
-**QA:** Preliminary Year 3 SOW-aligned draft; Teacher's Book activity sequence pending verification.
+**QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
