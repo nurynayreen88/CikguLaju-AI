@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW check pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK; teacher-created material below is not a verified textbook extract.  
-**Learning objective:** Pupils identify four of five robot features and answer two oral questions.  
+**Learning objectives:** Pupils identify four of five robot features and answer two oral questions.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Robot picture/word cards, board, exercise books and resources below.
 
