@@ -3,10 +3,10 @@
 **Unit:** At the beach
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objectives:** Pupils write three beach sentences and identify four of five words heard.
-**Success criteria:** three understandable sentences and 4/5 correct listening choices.
+**Learning objectives:** Pupils spell four familiar beach words accurately and identify four of five details in spoken sentences.
+**Success criteria:** four accurate guided spellings and four correct listening details.
 **Teaching materials:** Super Minds 1 Student's Book p.108, pictures, word cards and classroom resources.
-**Original supplementary scene:** yellow sun, blue sea and red bucket. **Sentence models:** The sun is yellow. The sea is blue. The bucket is red. **Teacher-read words:** sun, sea, bucket, sand, shell. Pupils match each to a separate picture card.
+**Guided spelling:** beach, sand, shell, bucket. **Original spoken sentences:** 'The red bucket is on the sand.' 'I find two shells near the sea.' **Detail prompts/key:** bucket colour—red; location—sand; shells—two; near—sea. **Original supplementary scene:** yellow sun, blue sea and red bucket. **Sentence models:** The sun is yellow. The sea is blue. The bucket is red. **Teacher-read words:** sun, sea, bucket, sand, shell. Pupils match each to a separate picture card.
 
 **Audited source mapping:** Student's Book p.108 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
@@ -19,8 +19,8 @@
 **Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide three independent picture-based sentences and five oral word cues.
-**Pupils:** Write three sentences and identify five heard words.
+**Teacher (25 min):** Guide four familiar-word spellings and read two complete sentences for pupils to identify four spoken details.
+**Pupils:** Spell four familiar words and identify four spoken details.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual performance against the success criteria.
