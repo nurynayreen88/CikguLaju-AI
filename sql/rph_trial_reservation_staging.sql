@@ -23,10 +23,14 @@ begin
   if p_request_id is null or length(p_request_id) < 8 or length(p_request_id) > 200 then
     raise exception 'Invalid reservation ID';
   end if;
-  insert into public.cikgulaju_users(telegram_user_id,trial_remaining)
-    values(p_telegram_user_id,5) on conflict(telegram_user_id) do nothing;
+  -- Never fabricate a new account or grant five trials implicitly.
+  -- Registration and entitlement checks must precede this RPC.
   select trial_remaining into v_balance from public.cikgulaju_users
     where telegram_user_id=p_telegram_user_id for update;
+  if not found or v_balance is null then
+    return query select false,coalesce(v_balance,0),'account_unavailable'::text;
+    return;
+  end if;
   select * into v_row from public.rph_trial_reservations where request_id=p_request_id;
   if found then
     if v_row.telegram_user_id <> p_telegram_user_id then raise exception 'Reservation owner mismatch'; end if;
