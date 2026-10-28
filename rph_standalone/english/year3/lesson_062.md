@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 62: Speaking (Provisional Draft)
+# English Year 3 — Lesson 62: Writing
 
-**Lesson:** 62
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Main SK/SP:** Writing 4.2 / 4.2.4
+**Complementary SK/SP:** Speaking 2.2 / 2.2.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book p.41; Teacher's Book pp.68–69; magazines, country pictures, poster paper and optional computer.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews six country names. Pupils locate them on a map.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Project planning (15 minutes)
+Teacher shows the country collage example from Student's Book p.41. Groups choose a country and assign research, writing and picture-selection roles.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Country collage (25 minutes)
+Groups gather facts, write short descriptions of a country's weather, activities and features, and arrange them with images. Teacher guides pupils to ask for help appropriately.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks written descriptions and appropriate requests for assistance. Pupils explain their collages.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Groups display their collages and share one country fact.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
