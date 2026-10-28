@@ -13,7 +13,7 @@ Teacher returns writing feedback from Lesson 137.
 Pairs edit and prepare final drafts of their holiday accounts.
 
 ## Activity 2 (25 minutes)
-Pairs read their stories to another pair. Listeners identify details and ask follow-up questions.
+Pairs read their corrected six-stage stories to another pair. Listeners sketch the six events, including negative events, then groups display the pictures and stories for a matching activity.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks listening for detail and spelling corrections.
