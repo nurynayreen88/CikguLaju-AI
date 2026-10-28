@@ -3,11 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 3.1 / 3.1.4
 **Complementary SK/SP:** 3.1 / 3.1.2
-**Learning objectives:** Pupils read six robot-related words aloud and match four of five printed words to pictures.
-**Success criteria:** six intelligible readings and 4/5 accurate matches.
+**Learning objectives:** Pupils segment sounds in four familiar words and identify beginning, middle and final sounds in three words.
+**Success criteria:** four correctly segmented words and three accurate sound-position identifications.
 **Teaching materials:** Pictures, word cards and classroom resources.
 
-**Teacher-created standalone resource (not verified textbook content):** **Six word cards:** head, arm, leg, eye, jump, wave. **Picture key:** A head; B arm; C leg; D eye; E jumping robot; F waving robot. **Five matching answers:** head–A, leg–C, eye–D, jump–E, wave–F.
+**Teacher-created standalone resource (not verified textbook content):** **Phoneme task:** leg: /l/ /e/ /g/; run: /r/ /u/ /n/; can: /k/ /a/ /n/; jump: /j/ /u/ /m/ /p/. Identify first, middle and final sounds in leg, run and can. **Six word cards:** head, arm, leg, eye, jump, wave. **Picture key:** A head; B arm; C leg; D eye; E jumping robot; F waving robot. **Five matching answers:** head–A, leg–C, eye–D, jump–E, wave–F.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Model reading the six printed words, organise paired practice, then administer five independent matches.
+**Teacher (25 min):** Model segmenting the four phoneme examples, then guide pupils to identify initial, medial and final sounds in three CVC words.
 **Pupils:** Read six words and complete five matches.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record six oral readings and five word-picture matches. Note individual support required.
+**Teacher (10 min):** Record four segmented words (SP 3.1.4) and three beginning/medial/final sound identifications (SP 3.1.2). Note individual support required.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
