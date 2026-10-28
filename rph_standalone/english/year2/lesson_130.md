@@ -3,10 +3,10 @@
 **Unit:** At the beach
 **Main SK/SP:** 5.1 / 5.1.2
 **Complementary SK/SP:** 3.1 / 3.1.2
-**Learning objectives:** Pupils perform three lines of a beach rhyme and recognise four printed words.
-**Success criteria:** three expressive lines and four correct word identifications.
+**Learning objectives:** Pupils recite three lines with rhythm and identify beginning, middle and ending sounds in three familiar words.
+**Success criteria:** three intelligible rhythmic lines and three accurate sound sequences.
 **Teaching materials:** Pictures, word cards and classroom resources.
-**Original rhyme:** A yellow sun shines in the sky / Blue waves roll as birds fly by / I find a shell beside the sea / A happy beach day just for me! **Four recognition words:** sun, waves, shell, sea.
+**Original rhyme:** A yellow sun shines in the sky / Blue waves roll as birds fly by / I find a shell beside the sea / A happy beach day just for me! **Sound practice:** sun (s-u-n), sand (s-a-n-d), shell (sh-e-ll); teacher models the beginning, middle and ending sounds without relying on letter names alone. **Four recognition words:** sun, waves, shell, sea.
 
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
@@ -19,8 +19,8 @@
 **Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide rhyme rehearsal and a four-word recognition task.
-**Pupils:** Perform three lines and identify four printed words.
+**Teacher (25 min):** Guide rhythmic rhyme rehearsal and supported sound identification for sun, sand and shell.
+**Pupils:** Recite three lines and sound out three familiar words.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual performance against the success criteria.
