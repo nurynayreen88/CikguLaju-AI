@@ -98,6 +98,31 @@ class TrialReservationTests(unittest.TestCase):
                 return {"ok": True, "result": {"message_id": True}}
         self.assertFalse(telegram_document_confirmed(InvalidResponse()))
 
+    def test_missing_telegram_message_id_never_commits(self):
+        client, calls = self.make_client()
+        class MissingMessageId:
+            ok = True
+            def json(self):
+                return {"ok": True, "result": {}}
+        with self.assertRaises(TrialReservationError):
+            deliver_with_trial(client, 42, "request-12345",
+                               lambda: b"pdf", lambda _: MissingMessageId())
+        self.assertEqual(calls, ["cikgulaju_reserve_rph_trial"])
+
+    def test_failed_render_never_calls_send_or_commit(self):
+        client, calls = self.make_client()
+        sent = []
+        def render_failure():
+            raise RuntimeError("PDF failed")
+        with self.assertRaises(RuntimeError):
+            deliver_with_trial(client, 42, "request-12345",
+                               render_failure, lambda doc: sent.append(doc))
+        self.assertFalse(sent)
+        self.assertEqual(calls, [
+            "cikgulaju_reserve_rph_trial",
+            "cikgulaju_release_rph_trial",
+        ])
+
     def test_invalid_request_id(self):
         client, _ = self.make_client()
         with self.assertRaises(ValueError):
