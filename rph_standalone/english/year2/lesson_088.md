@@ -3,9 +3,10 @@
 **Unit:** The robot
 **Main SK/SP:** 2.1 / 2.1.3
 **Complementary SK/SP:** 1.2 / 1.2.2
-**Learning objectives:** Pupils describe three visible robot features and respond to two simple spoken prompts.
-**Success criteria:** Three intelligible descriptions and two relevant answers.
+**Learning objectives:** Pupils give three sequential basic robot-action instructions and identify two details from supported spoken sentences.
+**Success criteria:** Three correctly sequenced instructions and two accurate listening-detail responses.
 **Teaching materials:** Super Minds 1 Student's Book p.94, pictures, word cards and classroom resources.
+**Original instruction sequence:** 'Touch your head. Raise your arms. Bend your knees.' **Listening detail prompts:** 'The robot has two arms.' (How many arms? Two.) 'The robot has ten fingers.' (How many fingers? Ten.) **Vocabulary:** head, arms, fingers, hands, knees, legs, toes, feet.
 **Audited source mapping:** Student's Book p.94 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +18,11 @@
 **Pupils:** Rehearse phrases with a partner.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Organise picture-based exchanges with three descriptions and two prompts per pupil.
+**Teacher (25 min):** Pairs take turns giving three ordered body-part instructions, acting them out, then answering two detail questions from spoken robot sentences.
 **Pupils:** Describe a robot and respond to a partner.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three descriptions and two individual oral answers.
+**Teacher (10 min):** Record three ordered instructions (SP 2.1.3) and two correct listening-detail responses (SP 1.2.2).
 **Pupils:** Demonstrate speaking evidence.
 
 ## Closure (5 minutes)
