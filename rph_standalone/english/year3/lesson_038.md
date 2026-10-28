@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 38: Listening
 
-**Unit:** Right now
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 1.3 / 1.3.1
+**Unit:** Right Now
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Listening 1.3 / 1.3.1
 **Duration:** 60 minutes
-**Objective:** Pupils listen to a short teacher-led text and identify key details in the context of Right now.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book p.27; Teacher's Book p.49; action flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher draws an action picture one line at a time. Pupils guess what the person is doing.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to listen to a short teacher-led text and identify key details, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Preparation (15 minutes)
+Pupils describe the pictures on Student's Book p.27 with partners. Teacher reviews character names and vocabulary.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Listening (25 minutes)
+Teacher guides Activity 3 using Teacher's Book p.49. Pupils listen for details and respond; then practise miming and asking 'What are you doing?' in pairs.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 1.2.2; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks specific listening details and use of contextual clues.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share two new action words and perform one mime.
 
-**Source:** Year 3 English SOW 2026, Lesson 38. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
