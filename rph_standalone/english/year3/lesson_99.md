@@ -13,7 +13,7 @@ Teacher reviews farm animal words.
 Teacher draws an animal gradually and pupils guess it.
 
 ## Activity 2 (25 minutes)
-Pupils read the animal story on p.66, locate specific details and identify familiar word sounds.
+Teacher follows the story activity on p.66: pupils listen and read, answer questions on specific details, then read aloud with the recording. Teacher notes difficult sounds, models pronunciation and lets pupils practise again.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks reading details and sound recognition.
