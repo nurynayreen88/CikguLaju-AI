@@ -12,7 +12,7 @@
 **Teacher:** Play a sports vocabulary review game. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model target vocabulary, language and task steps. **Pupils:** Practise with visual and oral scaffolding.
+**Teacher:** Use sports flashcards to review 'can/can't' and model 'Can he/she ...?' with affirmative and negative answers. **Pupils:** Mime activities, ask questions and give complete 'Yes, he/she can' or 'No, he/she can't' responses.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Mime can and can't; ask and answer Can he/she...?; complete Activities 3–4 and rebuild scrambled written yes/no responses. **Pupils:** Complete the referenced tasks, practising both standards.
