@@ -5,11 +5,12 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.1  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.80. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Learning objectives:** Pupils identify four of five spoken house details and answer two oral prompts.  
-**Success criteria:** Achieve the measurable targets stated in the objective.  
+**Learning objectives:** Pupils identify four of five spoken house details and give two simple personal statements about their own home.  
+**Success criteria:** Four correct listening details and two intelligible personal statements.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
 **Original teacher-read description:** “This is a house. There is a table in the kitchen. There are two beds in the bedroom. There is a sofa in the living room. There are stairs near the hall. The bathroom is upstairs.”
+**Personal statement frames:** 'I live in a house.' 'My bedroom has a bed.' Accept truthful variations about each pupil's home.  
 **Five questions/key:** table—kitchen; beds—two; sofa—living room; stairs—near the hall; bathroom—upstairs. **Oral prompts:** “Where is the table?” “How many beds are there?”
 
 ## Set Induction (5 minutes)
@@ -31,6 +32,8 @@
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
 **Pupils:** Share one correct example.
+
+**Speaking PBD:** Assess two independent personal statements about the pupil's home, separately from listening-detail accuracy.  
 
 **QA:** Complete teacher-developed standalone draft; exact Teacher's Book/SOW alignment and PDF/A4 checks pending. Not READY.
 
