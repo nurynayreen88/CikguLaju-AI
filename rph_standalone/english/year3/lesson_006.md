@@ -12,7 +12,7 @@
 **Teacher:** Review have got questions and vocabulary with flashcards. **Pupils:** Respond and recall relevant language.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
+**Teacher:** Display character flashcards, ask 'What has he/she got?', and model a sentence using word and punctuation cards, including capitals, full stops and apostrophes. **Pupils:** Listen for character details, arrange a model sentence and explain its punctuation.
 
 ## Activity 2 — Core lesson task (25 minutes)
 **Teacher:** Follow SB p.7 Activity 3; model a sentence with word and punctuation cards; pupils write about a character, exchange, check punctuation and rewrite. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
