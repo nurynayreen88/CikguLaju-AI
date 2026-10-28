@@ -118,7 +118,12 @@ def install(ns):
                         [[{"text": "👤 Lihat Pengguna", "callback_data": f"admin_user|{uid}"}]])
         if d == "pioneer_join":
             if has_pioneer(sb, cid):
-                return send(cid, "🏆 Status Pioneer anda sudah aktif.")
+                try:
+                    progress = quota_text()
+                except Exception:
+                    progress = "📊 Peratus penyertaan belum dapat dipaparkan."
+                return send(cid, "🏆 <b>Status Pioneer anda: AKTIF</b>\n\n" + progress + "\n\n♾️ Akses sepanjang CikguLaju AI beroperasi.",
+                            [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
             count, remaining = pioneer_availability(sb)
             return send(cid, "🏆 <b>PIONEER EARLY BIRD CIKGULAJU — RM10 SEKALI SAHAJA</b>\n"
                         "<b>Kelebihan Pioneer:</b>\n✅ Bayar RM10 sekali sahaja.\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Pioneer seumur hidup.\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\n\n" + quota_text() + "\n"
