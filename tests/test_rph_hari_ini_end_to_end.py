@@ -43,6 +43,24 @@ class RphHariIniJourneyTests(unittest.TestCase):
         progress = 1  # simulate successful externally persisted confirmation
         self.assertEqual(self.suggestion(progress).lesson_sequence, 2)
 
+    def test_repeated_generation_never_advances_progress(self):
+        progress = 0
+        for _ in range(5):
+            suggestion = self.suggestion(progress)
+            self.assertTrue(suggestion.allowed)
+            self.assertEqual(suggestion.lesson_sequence, 1)
+        self.assertEqual(self.confirmation(progress, False),
+                         (False, "teacher_confirmation_required"))
+
+    def test_confirmed_final_lesson_has_no_next_suggestion(self):
+        progress = 159
+        self.assertEqual(self.suggestion(progress).lesson_sequence, 160)
+        self.assertEqual(self.confirmation(progress, True), (True, "eligible"))
+        progress = 160
+        suggestion = self.suggestion(progress)
+        self.assertFalse(suggestion.allowed)
+        self.assertEqual(suggestion.reason, "all_lessons_confirmed")
+
     def test_unverified_calendar_blocks_both_actions(self):
         self.kw["evidence"] = CalendarEvidence(2027, "Kedah", "TEST-ONLY", frozenset())
         self.assertFalse(self.suggestion(0).allowed)
