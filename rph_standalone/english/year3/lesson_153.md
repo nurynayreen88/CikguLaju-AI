@@ -10,7 +10,7 @@
 Teacher reviews the planets.
 
 ## Activity 1 (15 minutes)
-Teacher introduces superlative adjectives and the Grammar Box.
+Teacher uses planet facts to introduce superlative adjectives and the Grammar Box.
 
 ## Activity 2 (25 minutes)
 Pairs answer Student's Book p.99 questions from memory, then check the text on p.98. Pupils write a short planet worksheet with full sentences, capitals and punctuation.
