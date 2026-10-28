@@ -10,7 +10,7 @@
 Teacher asks pupils about eating at restaurants, favourite foods and drinks. Pupils share preferences.
 
 ## Activity 1 — Restaurant language (15 minutes)
-Teacher guides the warm-up, vocabulary and Grammar Box from Teacher's Book p.94. Pupils practise ordering food in pairs.
+Teacher first asks pairs to discuss a real or imagined restaurant visit, including what they ordered and how they spoke to the waiter. Pupils share examples. Teacher then guides the warm-up, vocabulary and Grammar Box from Teacher's Book p.94. Pupils practise ordering food in pairs.
 
 ## Activity 2 — Role-play script (25 minutes)
 Groups use Student's Book p.60 Activity 1 to prepare restaurant conversations. Each pupil writes their own lines and rehearses the dialogue.
