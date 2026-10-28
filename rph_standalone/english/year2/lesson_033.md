@@ -5,8 +5,8 @@
 **Complementary SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.1  
 **Duration:** 60 minutes  
 **Mapped textbook:** Super Minds 1 Student's Book pp.74–75. Exact Teacher's Book story sequence has **not** been independently verified for this revision. The reading passage below is original teacher-developed material and is not a reproduction of the textbook story.  
-**Learning objectives:** Pupils locate three details in a short house story and identify the sequence of three events.  
-**Success criteria:** Three correct text-supported answers and correct ordering of three story events.  
+**Learning objectives:** Pupils reread two sentences to clarify meaning, skip one unfamiliar word without losing overall meaning, and identify the main idea of two spoken sentences.  
+**Success criteria:** Two demonstrated rereading strategies, one successful unfamiliar-word skip and two correct spoken-sentence main ideas.  
 **Materials:** Board, printed story below, three event cards.
 
 ## Original reading story — “A Surprise Upstairs”
@@ -21,16 +21,16 @@
 **Pupils:** Name two rooms.
 
 ## Activity 1 — Read for clues (15 minutes)
-**Teacher:** Read the original story aloud and model underlining the evidence for Question 2. Explain *first*, *next* and *downstairs*.  
+**Teacher:** Read the original story aloud and model underlining the evidence for Question 2. Model rereading a sentence for meaning and skipping an unfamiliar word while using surrounding clues.  
 **Pupils:** Follow the text, locate a clue and answer one question orally.
 
 ## Activity 2 — Read and sequence (25 minutes)
-**Teacher:** Guide pairs to answer Questions 1–5 by locating printed evidence, then give the three event cards for sequencing. Invite pupils to justify the order using time words. Support emerging readers with highlighted names and room words.  
+**Teacher:** Guide pairs to reread two sentences to confirm meaning, practise skipping an unfamiliar word while keeping the sentence meaning, then answer Questions 1–5 and sequence the event cards. Invite pupils to justify the order using time words. Support emerging readers with highlighted names and room words.  
 **Pupils:** Answer questions, sequence the events and explain their choices.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Ask each pupil independently to answer Questions 2, 4 and 5 and arrange the three event cards. Record comprehension and sequencing separately.  
-**Pupils:** Point to text evidence and show the correct order.
+**Teacher:** Ask each pupil to demonstrate rereading two sentences and explain the meaning despite one unfamiliar word. Read aloud two simple story sentences and ask pupils to select their main-idea picture. Record reading strategy and listening evidence separately.  
+**Pupils:** Demonstrate rereading and word-skipping strategies, then select two spoken main ideas.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils what helped them understand the story order.  
