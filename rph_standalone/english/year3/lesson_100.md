@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 100: Provisional Language Arts Draft
+# English Year 3 — Lesson 100: Writing
 
-**Lesson:** 100
-**Year:** 3
-**Skill focus:** Language Arts (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** Out and About
+**Main SK/SP:** Writing 4.3 / 4.3.2
+**Complementary SK/SP:** Writing 4.1 / 4.1.2
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple language arts response with age-appropriate support.
+**References:** Student's Book pp.66–67; Teacher's Book pp.104–105; animal word cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher reviews the animal story. Pupils name familiar animals.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Read a short rhyme or story excerpt with expression.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 — Plural nouns (15 minutes)
+Teacher introduces singular and plural nouns with examples such as one sister and three sisters. Pupils identify correct forms.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils rehearse an expressive reading or act out the key action in pairs.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 — Writing (25 minutes)
+Teacher guides the Grammar Box and Activity 2. Pupils write animal word cards and practise accurate plural spelling and cursive handwriting.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils perform and explain one word or line they enjoyed. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks spelling and handwriting.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils give one singular and plural word pair.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW mapping checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
