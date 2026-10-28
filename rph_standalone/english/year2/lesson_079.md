@@ -5,7 +5,7 @@
 **Complementary SK/SP (SOW check pending):** 2.1 / 2.1.5
 **Duration:** 60 minutes
 **Mapped resource:** Super Minds 1 Student's Book p.91; exact Teacher's Book sequence unverified. Tasks below are original teacher-created alternatives.
-**Objective:** Pupils write four legible clothing words and two meaningful outfit sentences (main 4.3.2), then give one intelligible oral description (complementary 2.1.5).
+**Learning objectives:** Pupils write four legible clothing words and two meaningful outfit sentences (main 4.3.2), then give one intelligible oral description (complementary 2.1.5).
 **Success criteria:** Independently produce four readable clothing words, two accurate outfit sentences and one relevant spoken description; record scores separately.
 **Materials:** Outfit picture cards, word bank and exercise books.
 
