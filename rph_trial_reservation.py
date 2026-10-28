@@ -54,6 +54,14 @@ class TrialReservationClient:
             raise TrialReservationError("Trial commit not confirmed")
         return int(row["remaining"])
 
+    def reconcile_confirmed_delivery(self, user_id: int, request_id: str) -> int:
+        """Retry only the idempotent DB commit after externally verified delivery.
+
+        Never re-send a Telegram document during reconciliation. The operator
+        must first verify a Telegram message_id or durable delivery evidence.
+        """
+        return self.commit(user_id, request_id)
+
     def release(self, user_id: int, request_id: str):
         row = self._call("release", user_id, request_id)
         if not row["ok"] and row.get("reservation_status") != "committed":
