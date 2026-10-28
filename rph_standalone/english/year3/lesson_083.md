@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 83: Reading
 
-**Unit:** Food, please!
-**Main SK/SP:** 3.2 / 3.2.3
-**Complementary SK/SP:** 3.2 / 3.2.2
+**Unit:** Food, Please!
+**Main SK/SP:** Reading 3.2 / 3.2.3
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the reading learning standard in the context of Food, please!.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book pp.56–57; Teacher's Book pp.90–91; food flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Food, please! using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher displays eggs, milk and cheese. Pupils predict a dish made from these ingredients.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the reading task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Vocabulary (15 minutes)
+Teacher introduces omelette and guides the warm-up and vocabulary tasks from Teacher's Book p.90. Pupils discuss ingredients.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Food, please!.
+## Activity 2 — Reading (25 minutes)
+Pupils read the omelette text in Student's Book pp.56–57, choose a preferred omelette and locate supporting details. Teacher supports pupils who need more reading time.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 3.2.3 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks contextual word meaning and specific reading details.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share their preferred omelette and one ingredient.
 
-**Source:** Year 3 English SOW 2026, Lesson 83. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
