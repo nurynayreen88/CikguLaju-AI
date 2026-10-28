@@ -1,33 +1,31 @@
-# English Year 3 — Lesson 2: Speaking (Provisional Draft)
+# English Year 3 — Lesson 2: Speaking
 
-**Lesson:** 2
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** Speaking 2.1 / 2.1.5 — Describe people and objects using suitable words and phrases.  
+**Complementary SK/SP:** Listening 1.2 / 1.2.2 — Understand supported specific information and details of short simple texts.  
+**Duration:** 60 minutes  
+**Objective:** Pupils describe two people using 'have got/has got' and identify two details heard in a partner's description.  
+**Materials:** Get Smart plus 3 Student's Book p.5 Activity 2, Teacher's Book pp.18–19, textbook-character flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Review adjectives from Lesson 1 through a flashcard guessing game.
+**Pupils:** Name adjectives and recall short descriptions.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Model descriptions (15 minutes)
+**Teacher:** Use character flashcards and Teacher's Book p.18 Grammar Box to model 'I have got...' and 'He/She has got...'.
+**Pupils:** Listen and repeat appropriate descriptions.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Guided pair speaking (25 minutes)
+**Teacher:** Guide Student's Book p.5 Activity 2, using Teacher's Book pp.18–19 as the lesson reference. Pair pupils to describe characters and listen for details; encourage respectful language about appearance.
+**Pupils:** Describe two characters and identify details from a partner's description.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD / Reinforcement (10 minutes)
+**Teacher:** Listen to each pupil's two descriptions; ask two listening-detail questions and record evidence against both SPs.
+**Pupils:** Give individual descriptions and answer oral questions.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Use the 'Before leaving' review activity referenced in Teacher's Book p.18.
+**Pupils:** Share one accurate 'has got' sentence.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA status:** Official Year 3 SK SOW lesson mapping, standards and page references checked. Direct Teacher's Book inspection and generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
