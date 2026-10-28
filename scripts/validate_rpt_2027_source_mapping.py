@@ -17,7 +17,7 @@ def validate(path):
         missing = set(REQUIRED) - set(reader.fieldnames or [])
         if missing:
             return [], [f"Missing columns: {sorted(missing)}"]
-        rows = list(reader)
+        rows = list(reader)\n        if any(None in row or any(value is None for value in row.values()) for row in rows):\n            return rows, ["Malformed CSV row or unexpected column count"]
     errors = []
     ids = [r["record_id"] for r in rows]
     if len(ids) != len(set(ids)):
