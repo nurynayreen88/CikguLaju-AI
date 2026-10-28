@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 92: Speaking (Provisional Draft)
+# English Year 3 — Lesson 92: Speaking
 
-**Lesson:** 92
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Food, Please!
+**Main SK/SP:** Speaking 2.1 / 2.1.2
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book p.59; Teacher's Book p.93; food flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews questions about food likes and dislikes. Pupils respond with Yes or No.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Listening questions (15 minutes)
+Teacher asks questions about pancakes, cheeseburgers, yoghurt, soup and crepes. Pupils record 'Yes, I do' or 'No, I don't' and check responses.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Pair speaking (25 minutes)
+Pupils ask and answer about food preferences and meals using complete sentences. Teacher provides models and differentiated support.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Assessment / PBD (10 minutes)
+Teacher checks responses to simple questions and understanding of the spoken questions.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share one food preference with a partner.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
