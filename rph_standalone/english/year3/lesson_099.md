@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 99: Provisional Writing Draft
+# English Year 3 — Lesson 99: Reading
 
-**Lesson:** 99
-**Year:** 3
-**Skill focus:** Writing (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** Out and About
+**Main SK/SP:** 3.2 / 3.2.2
+**Complementary SK/SP:** 1.1 / 1.1.1
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple writing response with age-appropriate support.
+**References:** Student's Book p.66; Teacher's Book p.104.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher reviews farm animal vocabulary.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Model two linked sentences and review basic punctuation.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Teacher draws a farm animal step by step. Pupils guess its name.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils draft three sentences using a picture prompt and word bank.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Pupils read the farm animal story and identify specific information.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils revise their writing against a simple checklist. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks reading comprehension and recognition of familiar sounds.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils share one animal fact.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
