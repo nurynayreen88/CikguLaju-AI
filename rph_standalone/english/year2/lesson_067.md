@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source:** Student's Book p.85 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
-**Learning objective:** Pupils describe three clothing items and write two clothing words legibly.  
+**Learning objectives:** Pupils describe three clothing items and write two clothing words legibly.  
 **Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
