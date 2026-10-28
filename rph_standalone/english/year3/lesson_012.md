@@ -12,7 +12,7 @@
 **Teacher:** Review numbers one to twelve. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model the lesson language and task steps. **Pupils:** Practise with support.
+**Teacher:** Review numbers one to twelve in a circle, then demonstrate o'clock and half past on a board or toy clock. **Pupils:** Read sample clock faces and ask and answer 'What time is it?' with a partner.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Demonstrate o'clock and half past; guide vocabulary and Activity 1; practise questions and answers in pairs. **Pupils:** Complete the lesson activities and practise both skills.
