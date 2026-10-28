@@ -13,7 +13,7 @@ Teacher introduces camel and reviews Malaysian animals.
 Pupils compare two types of camel and revisit endangered animals from Lesson 148.
 
 ## Activity 2 (25 minutes)
-Groups research from provided reading materials and create a short illustrated information project about an animal.
+Pupils retrieve their Lesson 148 endangered-animal descriptions, improve the sentences using facts and comparisons, and make a class display. They draw animals separately from written descriptions, then match each picture to its text using string.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks written facts and reading details.
