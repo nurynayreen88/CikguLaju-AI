@@ -13,7 +13,7 @@ Teacher reviews adjectives for describing experiences.
 Teacher introduces circus and amusement park pictures. Pupils discuss whether they have visited these places.
 
 ## Activity 2 (25 minutes)
-Teacher guides the listening task on p.80. Pupils listen for details and ask for help or clarification where necessary.
+Pupils predict which places and adjectives match the characters in Student's Book p.80 Activity 1. Teacher reads the listening sentences; pupils check their predictions, then practise the dialogue in pairs and repeat key words to keep the exchange going.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks listening details and clarification strategies.
