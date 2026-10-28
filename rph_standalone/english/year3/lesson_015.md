@@ -12,7 +12,7 @@
 **Teacher:** Play Who is it? from Teacher's Book p.19. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model the target language and provide examples. **Pupils:** Practise with support.
+**Teacher:** Show prepared character puppets, ask pupils to predict the story and model a short exchange using two puppets. **Pupils:** Describe the characters, predict events and rehearse simple lines with a partner.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Introduce puppets; predict story; guide Activity 1 on p.28; pupils rehearse and perform in pairs. **Pupils:** Complete the referenced tasks, practising both standards.
