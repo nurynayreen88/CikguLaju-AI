@@ -13,7 +13,7 @@ Teacher introduces Nur and Imran's farm and names barn, tractor, fence and gate.
 Pairs cut out animals and follow directions using next to, in front of, behind and between.
 
 ## Activity 2 (25 minutes)
-Pupils arrange the animals on the farm, describe positions and create a short written description.
+Pupils read the farm description and place cut-out animals in the correct positions. Pairs then invent new positions for the next day and write a short description using 'was' and place prepositions. They swap texts with another pair, arrange animals according to the partner's description and check answers together.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks response to the activity and clarity of descriptions.
