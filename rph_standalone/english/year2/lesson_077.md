@@ -5,10 +5,11 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 4.2 / 4.2.4  
 **Duration:** 60 minutes  
 **Source classification:** SB p.89; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objectives:** Pupils describe three clothing items and write two supporting notes.  
+**Learning objectives:** Pupils ask two basic personal-information questions about clothing and write two short object descriptions.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
+**Question models:** 'Are you wearing a red shirt?' 'What colour are your shoes?' **Writing models:** 'The shirt is red.' 'The shoes are white.' **Polite refusal:** 'No, thank you.'
 **Original outfit cards:** A red shirt, blue shorts, white shoes; B yellow dress, green hat, black shoes. **Model:** “She is wearing a yellow dress. Her hat is green. Her shoes are black.” **Notes:** “yellow dress”; “green hat”.
 
 ## Set Induction (5 minutes)
@@ -20,11 +21,11 @@
 **Pupils:** Follow the model and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Partners describe cards without showing them, identify the correct card and write two notes individually.  
+**Teacher:** Partners ask two clothing questions to find out information, then each writes two descriptive sentences about pictured clothing.  
 **Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess three oral descriptions and two meaningful notes. Record independent performance and support required.  
+**Teacher:** Assess two relevant questions (SP 2.1.2) and two written object descriptions (SP 4.2.4). Record independent performance and support required.  
 **Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
