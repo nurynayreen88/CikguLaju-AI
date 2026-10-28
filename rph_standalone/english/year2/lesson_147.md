@@ -6,7 +6,7 @@
 **Learning objectives:** Pupils write three legible beach sentences and correct two punctuation errors.
 **Success criteria:** three legible sentences and two appropriate corrections.
 **Teaching materials:** Super Minds 1 Student's Book p.115, pictures, word cards and classroom resources.
-**Original scene:** a small crab, two shells and a blue bucket. **Models:** The crab is small. There are two shells. The bucket is blue. **Punctuation corrections (teacher-created):** the crab is small -> The crab is small.; the bucket is blue -> The bucket is blue.
+**Original scene:** a small crab, two shells and a blue bucket. **Models:** The crab is small. There are two shells. The bucket is blue. **Punctuation corrections for modelling (teacher-created):** the crab is small -> The crab is small.; the bucket is blue -> The bucket is blue. **Separate independent PBD correction items:** (1) there are two shells -> There are two shells. (2) i see a crab -> I see a crab. Show the answers only after assessment.
 
 **Audited source mapping:** Student's Book p.115 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide three picture-based sentences and two individual corrections of missing capitals and full stops.
+**Teacher (25 min):** Guide three picture-based sentences and model the two supplied correction examples. Then hide the model corrections and give the two different independent PBD correction items.
 **Pupils:** Write three sentences and correct two errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three legible sentences and two accurate punctuation corrections for each pupil.
+**Teacher (10 min):** Record three legible picture-based sentences (0–3) and the two unseen independent punctuation corrections (0–2); check capitals and full stops in each correction, and note support separately.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
