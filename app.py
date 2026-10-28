@@ -10324,6 +10324,14 @@ def _create_rph_word(doc, section, s, ai_text, path):
                                 _rtl = _rpr.find(qn('w:rtl'))
                                 if _is_jawi:
                                     _bidi_flag(_rpr, 'rtl')
+                                    # Word needs a complex-script font, not only RTL.
+                                    _fonts = _rpr.find(qn('w:rFonts'))
+                                    if _fonts is None:
+                                        _fonts = OxmlElement('w:rFonts')
+                                        _rpr.insert(0, _fonts)
+                                    _fonts.set(qn('w:cs'), 'Arial')
+                                    _fonts.set(qn('w:ascii'), 'Arial')
+                                    _fonts.set(qn('w:hAnsi'), 'Arial')
                                 elif _rtl is not None:
                                     _rpr.remove(_rtl)
                                 _clone.append(_part)
