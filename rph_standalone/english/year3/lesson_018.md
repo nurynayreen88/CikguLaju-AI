@@ -1,33 +1,25 @@
-# English Year 3 — Lesson 18: Reading (Provisional Draft)
+# English Year 3 — Lesson 18: Speaking
 
-**Lesson:** 18
-**Year:** 3
-**Skill focus:** Reading (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Speaking 2.1 / 2.1.2
+**Complementary SK/SP:** Writing 4.3 / 4.3.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate reading response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Get Smart plus 3 Student's Book p.15 Activities 1–2; Teacher's Book pp.32–33.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher plays the daily routine song. Pupils sing and mime.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Display a short level-appropriate passage and pre-teach two words.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Vocabulary preparation (15 minutes)
+Teacher reviews routine flashcards and matching word cards. Pupils match words and pictures, then practise adverbs of frequency.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils read, underline clues and match three statements to the text.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Speaking task (25 minutes)
+Teacher guides the routine table and speaking activity on Student's Book p.15. Pupils record their own routines, mingle and ask classmates about their daily activities.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs justify their answers using words from the passage. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher observes spoken exchanges and checks written routine records. Pupils demonstrate both skills.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share one classmate's routine; teacher gives feedback.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official KPM SOW checked. Direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
