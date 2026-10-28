@@ -7,7 +7,7 @@
 **References:** Student's Book p.67; Teacher's Book p.105; direction rap; KPM Year 3 SOW.
 
 ## Set Induction (5 minutes)
-Teacher introduces a simple map and asks how to reach a place.
+Teacher shows two stick figures and a simple route drawing, then asks pupils how to reach a place. Pupils predict useful direction phrases before practising the rap.
 
 ## Activity 1 (15 minutes)
 Teacher models 'Go straight ahead', 'Turn left' and 'Turn right' with gestures.
