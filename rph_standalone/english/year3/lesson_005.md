@@ -12,7 +12,7 @@
 **Teacher:** Read prepared description strips and identify classmates. **Pupils:** Respond and recall relevant language.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
+**Teacher:** Organise groups of five or six, assign each pupil a classmate to describe, and model two kind, factual sentences about appearance. **Pupils:** Draft two sentences, check respectful wording, and exchange feedback before creating the class display.
 
 ## Activity 2 — Core lesson task (25 minutes)
 **Teacher:** In groups create a class yearbook or wall display: write two respectful sentences describing a classmate, peer-review, revise and assemble pages. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
