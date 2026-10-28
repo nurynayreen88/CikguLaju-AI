@@ -16,7 +16,7 @@ Pairs match cut-up Solar System model instructions to pictures.
 Pairs sequence model-making instructions, listen to check the order, build a Solar System model and prepare a short presentation.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks inferred words and instruction comprehension.
+Teacher checks whether pupils sequence the model instructions correctly, follow the steps and explain one stage of their Solar System model.
 
 ## Closure (5 minutes)
 Pupils explain one model step.
