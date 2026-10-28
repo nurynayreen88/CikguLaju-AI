@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 50: Speaking
 
-**Unit:** Year in, year out
-**Main SK/SP:** 2.1 / 2.1.1
-**Complementary SK/SP:** 1.2 / 1.2.2
+**Unit:** Year In, Year Out
+**Main SK/SP:** Speaking 2.1 / 2.1.1
+**Complementary SK/SP:** Listening 1.2 / 1.2.2
 **Duration:** 60 minutes
-**Objective:** Pupils ask and answer questions using target vocabulary in the context of Year in, year out.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book p.35; Teacher's Book p.60; four season picture cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Year in, year out using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher reviews weather and seasons vocabulary. Pupils name seasons.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to ask and answer questions using target vocabulary, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Song and comparison (15 minutes)
+Teacher plays the seasons song on Student's Book p.35. Pupils sing and compare the four seasons with Malaysian weather and school-year timing.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Speaking (25 minutes)
+Teacher distributes season pictures to small groups. Pupils discuss weather in different seasons, describe their favourite season and give a reason; classmates listen and ask simple questions.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 2.1.1; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks pupils' ability to give simple personal information and understand season descriptions.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share a favourite season and weather phrase.
 
-**Source:** Year 3 English SOW 2026, Lesson 50. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
