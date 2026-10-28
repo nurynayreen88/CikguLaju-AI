@@ -13,7 +13,7 @@ Teacher reviews holiday words.
 Teacher introduces James's holiday email and asks pupils to identify sender and recipient.
 
 ## Activity 2 (25 minutes)
-Pairs read the email and move around the classroom to answer five posted questions.
+Pairs take turns remembering one of five questions posted around the room, returning to dictate it and finding the answer in James's email. Teacher then plays the reading recording and highlights the Writing Tip on p.91.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks reading details and punctuation.
