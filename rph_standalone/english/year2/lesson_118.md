@@ -5,7 +5,11 @@
 **Complementary SK/SP:** 2.2 / 2.2.2
 **Learning objectives:** Pupils take four turns in a robot-themed exchange and ask two questions.
 **Success criteria:** four relevant turns and two clear questions.
-**Teaching materials:** Super Minds 1 Student's Book p.105, pictures, word cards and classroom resources.
+**Teaching materials:** Super Minds 1 Student's Book p.105 (unverified mapping), two original robot cards and the complete teacher-created exchange below.
+**Original cards:** Robot A has a round head, two eyes and long arms. Robot B has a square head, one eye and short arms.
+**Round 1 dialogue:** A: “What is your robot like?” B: “It has a round head.” A: “How many eyes has it got?” B: “It has two eyes.”
+**Round 2 dialogue (swap roles):** A: “What is your robot like?” B: “It has a square head.” A: “How many eyes has it got?” B: “It has one eye.”
+**Individual evidence:** Each pupil asks two questions and speaks four turns across two rounds (two turns as A, two as B). The dialogue is teacher-created, not copied from Student's Book p.105.
 **Audited source mapping:** Student's Book p.105 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +21,11 @@
 **Pupils:** Rehearse one question.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Pairs adapt the dialogue, exchange four turns and ask two questions.
+**Teacher (25 min):** Use both complete dialogues. Pairs perform round 1, swap roles for round 2, and then substitute one robot feature. Ensure each pupil asks two questions and speaks four turns overall.
 **Pupils:** Take four turns and ask two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record four meaningful turns and two clear questions. Note independent performance and support needed.
+**Teacher (10 min):** Record four meaningful spoken turns per pupil (0–4) and two independently asked questions (0–2) across both rounds; do not count a partner's turns. Note prompts and support.
 **Pupils:** Submit individual speaking evidence.
 
 ## Closure (5 minutes)
