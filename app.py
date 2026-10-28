@@ -10287,7 +10287,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
                         para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                         for run in para.runs:
                             # Explicitly mark Jawi/Arabic runs RTL; do not force Latin-only runs.
-                            if _rtl_re.search(r'[\\u0600-\\u06ff\\u0750-\\u077f\\u08a0-\\u08ff]', run.text):
+                            if _rtl_re.search(r'[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]', run.text):
                                 _rtl_flag(run._r.get_or_add_rPr(), 'w:rtl')
     doc.save(path); return path
 
