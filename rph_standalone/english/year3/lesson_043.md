@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 43: Listening
 
-**Unit:** Right now
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 4.3 / 4.3.3
+**Unit:** Right Now
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Writing 4.3 / 4.3.3
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the listening learning standard in the context of Right now.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.29 Activity 3; Teacher's Book p.51; pupils' written slips from Lesson 41.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews action vocabulary and present continuous sentences. Pupils identify actions.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the listening task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Error spotting (15 minutes)
+Teacher describes the picture on Student's Book p.29 with deliberate factual mistakes. Pupils listen and stop the teacher when they hear an error.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Right now.
+## Activity 2 — Listening and revision (25 minutes)
+Teacher guides Activity 3 using Teacher's Book p.51. Pupils then retrieve marked descriptions from Lesson 41, correct errors and rewrite neat final sentences with accurate spelling and punctuation.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 1.2.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks specific listening details and revised writing. Pupils explain one correction.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share one accurate sentence and reflect on improvements.
 
-**Source:** Year 3 English SOW 2026, Lesson 43. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
