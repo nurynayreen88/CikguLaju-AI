@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 3.2 / 3.2.3  
 **Duration:** 60 minutes  
 **Source classification:** SB p.88; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objective:** Pupils identify four of five written details and answer two questions.  
+**Learning objectives:** Pupils identify four of five written details and answer two questions.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
