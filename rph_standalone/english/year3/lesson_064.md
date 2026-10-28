@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 64: Writing (Provisional Draft)
+# English Year 3 — Lesson 64: Language Awareness
 
-**Lesson:** 64
-**Year:** 3
-**Skill focus:** Writing (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Main SK/SP:** Writing 4.3 / 4.3.1
+**Complementary SK/SP:** Speaking 2.1 / 2.1.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate writing response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book p.44; Teacher's Book pp.72–73; two-sided in/on cards and review worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews months, days and seasons. Pupils say short sentences.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a short sentence and show a picture-based word bank.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Preposition game (15 minutes)
+Teacher distributes cards labelled in and on. Pupils hold up the correct side when hearing sentences with a missing preposition.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils plan and write three linked sentences.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Language review (25 minutes)
+Teacher guides unit revision activities using Student's Book p.44 and the SOW worksheet. Pupils complete preposition and writing tasks and ask and answer questions about months and days.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils check capital letters, spacing and full stops with a partner. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks punctuation and accurate preposition use in written sentences and observes spoken exchanges.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils self-assess one strength and one language point to practise.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
