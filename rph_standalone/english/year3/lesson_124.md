@@ -13,7 +13,7 @@ Teacher reviews places, activities and adjectives.
 Teacher models 'Where were you yesterday?', 'When were you there?' and 'How was it?'.
 
 ## Activity 2 (25 minutes)
-Pupils interview classmates about yesterday or last weekend and report short answers.
+Pupils write the three interview questions and their own answers on the worksheet, then interview at least two classmates without showing their sheets. Groups use the word cards from Lesson 118 for another question-and-answer game.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks exchange of personal information and understanding of questions.
