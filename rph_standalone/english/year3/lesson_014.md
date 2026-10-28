@@ -12,7 +12,7 @@
 **Teacher:** Review family words from Lesson 13. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model the target language and provide examples. **Pupils:** Practise with support.
+**Teacher:** Replay or reread the model family text, highlight useful sentence openings and demonstrate the Writing Tip. **Pupils:** Read along, orally rehearse at least two sentences about their families and identify capitals and full stops.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Read the model text; rehearse family descriptions orally; use the Writing Tip to draft and revise two or more sentences. **Pupils:** Complete the referenced tasks, practising both standards.
