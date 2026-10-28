@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 37: Language Arts
 
-**Unit:** Right now
-**Main SK/SP:** 5.3 / 5.3.1
-**Complementary SK/SP:** 2.1 / 2.1.5
+**Unit:** Right Now
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Speaking 2.1 / 2.1.5
 **Duration:** 60 minutes
-**Objective:** Pupils respond creatively to language through a short text or action song in the context of Right now.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** KPM Year 3 SK Scheme of Work Lesson 37; Student's Book p.26; paper circles, pencils and paper clips.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher reviews household actions by Anna and Greg. Pupils name other household chores.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to respond creatively to language through a short text or action song, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Design (15 minutes)
+Teacher demonstrates dividing a paper circle into four sections. Pupils draw four household activities and label them.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Circular book (25 minutes)
+Pupils prepare a second three-section circle, attach it to the first with a paper clip and rotate it to show different actions. In small groups they describe the activities shown.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 5.3.1; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher assesses imaginative responses and spoken descriptions. Pupils demonstrate their circular books.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share one household activity and say who does it.
 
-**Source:** Year 3 English SOW 2026, Lesson 37. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct source-asset and Word/PDF tests pending. NOT READY FOR RELEASE.
