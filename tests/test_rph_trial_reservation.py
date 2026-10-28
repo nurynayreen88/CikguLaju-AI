@@ -78,7 +78,7 @@ class TrialReservationTests(unittest.TestCase):
         client, calls = self.make_client()
         def network_timeout(_):
             raise TimeoutError("Telegram response lost")
-        with self.assertRaises(TimeoutError):
+        with self.assertRaises(TrialReservationError):
             deliver_with_trial(client, 42, "request-12345",
                                lambda: b"pdf", network_timeout)
         self.assertEqual(len(calls), 1)
