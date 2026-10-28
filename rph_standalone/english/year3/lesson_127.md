@@ -13,7 +13,7 @@ Teacher leads a word sort for circus, restaurant and cinema.
 Teacher previews the story using pictures and adjectives such as funny, delicious and boring.
 
 ## Activity 2 (25 minutes)
-Pupils read the story, predict events and discuss characters and feelings.
+Pupils read the weekend story and vote on whose weekend was best. They infer unfamiliar words from pictures, answer the reading questions, discuss the story's value and take part in the Press Conference game from Teacher's Book p.127.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks response to the story and inferred vocabulary.
