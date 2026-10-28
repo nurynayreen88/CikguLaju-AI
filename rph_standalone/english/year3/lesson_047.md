@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 47: Speaking (Provisional Draft)
+# English Year 3 — Lesson 47: Language Arts
 
-**Lesson:** 47
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Right Now
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Writing 4.3 / 4.3.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** KPM Year 3 SK Scheme of Work Lesson 47; sports jigsaw worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews sports vocabulary. Pupils name familiar sports.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Spelling relay (15 minutes)
+Teacher organises a team relay for spelling sports names. Pupils take turns writing and checking words.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Sports jigsaw (25 minutes)
+Teacher distributes jigsaw templates. Pupils draw sports and write matching labels, then exchange completed puzzles with classmates.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks spelling and pupils' creative responses. Pupils demonstrate and explain their puzzles.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils solve a partner's jigsaw and name the sports.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct source-asset and Word/PDF tests pending. NOT READY FOR RELEASE.
