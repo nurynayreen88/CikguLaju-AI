@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; official SOW verification pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
-**Learning objective:** Pupils ask three clothing-preference questions and answer two partner questions.  
+**Learning objectives:** Pupils ask three clothing-preference questions and answer two partner questions.  
 **Success criteria:** Achieve the measurable targets in the objective.  
 **Materials:** Board, clothing picture/word cards, exercise books and the printable resources below.
 
