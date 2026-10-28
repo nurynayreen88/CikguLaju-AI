@@ -5,8 +5,8 @@
 **Complementary SK/SP (existing mapping; final SOW verification pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
-**Learning objectives:** Pupils ask and answer three house questions.  
-**Success criteria:** three intelligible questions and three relevant answers.  
+**Learning objectives:** Pupils ask three basic questions to find out information about a partner's home and describe two objects accurately.  
+**Success criteria:** three intelligible questions and two accurate object descriptions.  
 **Materials:** Board, exercise books, teacher-created picture/word cards and the printable text below.
 
 **Plan A:** kitchen—table; bedroom—bed; living room—sofa. **Plan B:** kitchen—two chairs; bedroom—two beds; living room—two sofas.
@@ -22,11 +22,11 @@
 **Pupils:** Follow the model and demonstrate one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Give partners different plans; pupils ask three questions without showing their plans, note differences and swap roles. Support with question cards; challenge pupils to ask a fourth question.  
+**Teacher:** Give partners different plans; pupils ask three questions without showing their plans, describe two objects using there is/there are, note differences and swap roles. Support with question cards; challenge pupils to ask a fourth question.  
 **Pupils:** Complete the task, compare evidence with a partner and improve their responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Observe three independent questions and three answers per pupil. Record question formation and response relevance separately.  
+**Teacher:** Observe three independent questions and two object descriptions per pupil. Record question formation and descriptive accuracy separately.  
 **Pupils:** Demonstrate the stated success criteria without partner help.
 
 ## Closure (5 minutes)
