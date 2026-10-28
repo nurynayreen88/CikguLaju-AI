@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.5  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.77. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
-**Objective:** Pupils ask two simple written questions about rooms and write two relevant answers (main 4.2.1), using correct basic punctuation in at least three of four sentences (complementary 4.2.5).  
+**Learning objectives:** Pupils ask two simple written questions about rooms and write two relevant answers (main 4.2.1), using correct basic punctuation in at least three of four sentences (complementary 4.2.5).  
 **Success criteria:** Independently write two understandable room questions and two matching answers; use capital letters and end punctuation correctly in at least three sentences.  
 **Materials:** Board, room cards, exercise books and resources below.
 
