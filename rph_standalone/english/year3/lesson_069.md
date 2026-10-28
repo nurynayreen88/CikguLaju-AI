@@ -10,7 +10,7 @@
 Teacher writes the scrambled words ym and ohuse. Pupils rearrange them to form 'My house'.
 
 ## Activity 1 — Paper folding (15 minutes)
-Teacher gives each pupil square paper and models step-by-step instructions for folding a paper house using a simple rhythmic chant. Pupils listen and follow.
+Teacher writes the scrambled letters 'ym' and 'ohuse' on the board and asks pupils to form 'My house'. Pupils solve the anagrams, then follow a rhythmic model for folding a paper house.
 
 ## Activity 2 — Creative house (25 minutes)
 Pupils finish folding, decorate the paper houses and describe them. Teacher repeats instructions when needed and supports imaginative choices.
