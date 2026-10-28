@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 143: Language Arts
 
-**Unit:** On holiday
+**Unit:** On Holiday
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 3.3 / 3.3.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate language arts skills in the context of On holiday.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** SB pp.92–93; TB pp.140–141.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce On holiday with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher introduces bear and cub with pictures.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a language arts task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 (15 minutes)
+Pupils predict whether the bear-cub story has a happy ending.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to On holiday.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 (25 minutes)
+Pupils read the story, circle new words and discuss their reactions and favourite events.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 5.2.1 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher checks response to the story and reading enjoyment.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Pupils explain whether they liked the ending.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** SOW draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
