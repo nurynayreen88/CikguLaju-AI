@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 36: Writing
 
-**Unit:** Right now
-**Main SK/SP:** 4.3 / 4.3.2
-**Complementary SK/SP:** 3.2 / 3.2.2
+**Unit:** Right Now
+**Main SK/SP:** Writing 4.3 / 4.3.2
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Objective:** Pupils practise writing skills within the Right now context.
-**Materials:** Get Smart Plus 3, picture cards, word cards and exercise books.
+**References:** Student's Book pp.26–27; Teacher's Book p.49; action-word crossword.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce the topic using relevant pictures and questions.
-**Pupils:** Name vocabulary and respond.
+Teacher reviews present continuous action words. Pupils name and mime actions.
 
-## Activity 1 (10 minutes)
-**Teacher:** Demonstrate the target writing task and check understanding.
-**Pupils:** Observe and practise a model response.
+## Activity 1 — Spelling (15 minutes)
+Teacher leads a letter-jumble spelling game. Pupils complete a crossword in pairs and check difficult spellings.
 
-## Activity 2 (25 minutes)
-**Teacher:** Organise guided pair or individual practice and support pupils.
-**Pupils:** Complete the task and share responses.
+## Activity 2 — Reading and writing (25 minutes)
+Teacher replays the story recording for Student's Book p.26 and guides Activity 2 on p.27. Pupils read for details and write the action vocabulary accurately.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess an individual response against 4.3.2.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks spelling and specific reading details. Pupils correct their written answers.
 
 ## Closure (5 minutes)
-**Teacher:** Recap language and correct errors.
-**Pupils:** Share one thing learned.
+Pupils share a sentence about how they help their family at home.
 
-**QA:** Preliminary Year 3 SOW-aligned draft; Teacher's Book activity sequence pending verification.
+**QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
