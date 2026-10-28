@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 81: Listening
 
-**Unit:** Food, please!
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 2.1 / 2.1.1
+**Unit:** Food, Please!
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Speaking 2.1 / 2.1.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the listening learning standard in the context of Food, please!.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.55; Teacher's Book pp.88–89; food flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Food, please! using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews food vocabulary. Pupils name foods they like.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the listening task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Food words (15 minutes)
+Teacher guides the warmer and vocabulary exercises from Teacher's Book p.88. Pupils brainstorm familiar foods and make a mind map.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Food, please!.
+## Activity 2 — Listening practice (25 minutes)
+Teacher guides the listening exercise in Student's Book p.55. Pupils identify food words and answer short questions about what they heard.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 1.2.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks pupils' understanding of listening details and spoken responses.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils name a new food word and share a food preference.
 
-**Source:** Year 3 English SOW 2026, Lesson 81. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
