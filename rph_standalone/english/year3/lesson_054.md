@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 54: Writing (Provisional Draft)
+# English Year 3 — Lesson 54: Listening
 
-**Lesson:** 54
-**Year:** 3
-**Skill focus:** Writing (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Speaking 2.1 / 2.1.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate writing response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book p.37; Teacher's Book p.63; worksheet and activity flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher introduces karate, computer games, tennis and cinema. Pupils identify the activities.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a short sentence and show a picture-based word bank.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Frequency language (15 minutes)
+Teacher reviews adverbs of frequency and days of the week. Pupils tell partners how often and when they do the activities.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils plan and write three linked sentences.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Listening (25 minutes)
+Teacher guides Student's Book p.37 Activity 3 following Teacher's Book p.63. Pupils listen for activity and day information and complete the worksheet, then compare answers.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils check capital letters, spacing and full stops with a partner. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks listening for specific details and pupils' simple spoken responses.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share one activity they often or never do.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
