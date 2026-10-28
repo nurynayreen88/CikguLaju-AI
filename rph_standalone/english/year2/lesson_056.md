@@ -5,11 +5,12 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.3 / 3.3.1  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.82. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Learning objectives:** Pupils identify four of five spoken clothing cues and demonstrate one picture-dictionary lookup.  
+**Learning objectives:** Pupils identify four of five spoken clothing cues and read and enjoy a printed sentence-level clothing game.  
 **Success criteria:** Achieve the measurable targets stated in the objective.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
 **Original listening cues:** “Put on your shirt.” “Find the blue shoes.” “Show me the red hat.” “Point to the yellow dress.” “Find the green socks.”
+**Sentence game:** Read 'Put on your socks.' and 'Find the blue shoes.' on printed cards, then match each sentence to a clothing picture in pairs.  
 **Five picture keys:** shirt, blue shoes, red hat, yellow dress, green socks. **Reference task:** Use a classroom picture dictionary or labelled word wall to check *dress* and point to its illustration.
 
 ## Set Induction (5 minutes)
