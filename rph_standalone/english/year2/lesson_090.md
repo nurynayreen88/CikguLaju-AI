@@ -3,11 +3,12 @@
 **Unit:** The robot
 **Main SK/SP:** 5.3 / 5.3.1
 **Complementary SK/SP:** 2.1 / 2.1.3
-**Learning objectives:** Pupils perform three lines of a short robot-themed dialogue and offer one creative idea.
-**Success criteria:** Three clear spoken lines and one relevant idea.
+**Learning objectives:** Pupils create and perform a four-line robot chant and give three basic robot-action instructions in sequence.
+**Success criteria:** A four-line imaginative chant and three intelligible sequential instructions.
 **Teaching materials:** Original four-line robot dialogue below, robot picture prompt and action word cards.
 
 **Original robot picture prompt:** A friendly silver robot with two round eyes, two arms, two legs and a blue button on its chest.
+**Original teacher-created chant:** 'Robot, robot, turn around! / Robot, robot, touch the ground! / Robot, robot, clap your hands! / Robot, robot, now you stand!' **Instruction sequence:** 'Turn around. Clap your hands. Stand up.'
 **Original four-line dialogue:**
 A: “Hello, Robot! What can you do?”
 B: “I can wave my arms!”
@@ -21,11 +22,11 @@ B: “Yes! Watch me dance!”
 **Pupils:** Suggest a robot action.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Display the original robot picture prompt and act out the complete four-line dialogue with expression and gestures. Model changing *wave my arms* to *clap my hands*.
+**Teacher (15 min):** Display the original robot picture prompt and perform the four-line chant with gestures and model three instructions in order.
 **Pupils:** Echo and rehearse the lines.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Give each pair the four dialogue lines and action cards. Partners practise both roles, adapt one action phrase, then perform for another pair. Check that the changed phrase still makes sense.
+**Teacher (25 min):** Give each pair the four dialogue lines and action cards. Partners create a four-line robot chant using action cards, perform it, and give three sequential instructions to another pair. Check that the changed phrase still makes sense.
 **Pupils:** Perform and suggest one variation.
 
 ## Assessment / PBD (10 minutes)
@@ -39,5 +40,7 @@ B: “Yes! Watch me dance!”
 **QA:** Added original complete dialogue, robot picture prompt, creative substitutions and individual assessment criteria. SOW procedure not yet verified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**PBD focus:** Record a four-line created chant (SP 5.3.1) and three ordered instructions (SP 2.1.3), rather than dialogue performance alone.
 
 **QA status:** NOT READY — five-phase 60-minute structure verified; official SOW/Teacher's Book alignment and rendered A4 PDF inspection pending.
