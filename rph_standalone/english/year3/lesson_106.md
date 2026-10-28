@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 106: Language Arts
 
-**Unit:** Out and about
+**Unit:** Out and About
 **Main SK/SP:** 5.3 / 5.3.1
 **Complementary SK/SP:** 4.3 / 4.3.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the language arts learning standard in the context of Out and about.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.69; Teacher's Book pp.106–107; poster paper.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Out and about using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher writes R_ _ _ S three times; pupils guess 'Rules, Rules, Rules'.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the language arts task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 (15 minutes)
+Teacher collects classroom and outside-classroom rules and draws simple numbered symbols.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Out and about.
+## Activity 2 (25 minutes)
+Groups design a creative rules poster, practise reading the numbered rules and label the pictures.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 5.3.1 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks creative expression and spelling of familiar rule words.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Groups display one rule from their poster.
 
-**Source:** Year 3 English SOW 2026, Lesson 106. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
