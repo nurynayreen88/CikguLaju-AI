@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 71: Speaking
 
-**Unit:** My new house
-**Main SK/SP:** 2.1 / 2.1.1
-**Complementary SK/SP:** 1.2 / 1.2.5
+**Unit:** My New House
+**Main SK/SP:** Speaking 2.1 / 2.1.1
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the speaking learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.47; Teacher's Book p.77; small blank cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews clothes vocabulary. Pupils name familiar items.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the speaking task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Pair speaking (15 minutes)
+Teacher guides Student's Book p.47 Activity 4. Pupils practise short questions and answers about clothes and ownership.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Find the artist (25 minutes)
+Pupils draw an item of clothing on an anonymous card and add a code name. Teacher redistributes the cards; pupils mingle, ask questions and identify the artist.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 2.1.1 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher observes personal-information exchanges and listening for details.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils report whom they found and which item was drawn.
 
-**Source:** Year 3 English SOW 2026, Lesson 71. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
