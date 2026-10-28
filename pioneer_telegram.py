@@ -3,6 +3,7 @@
 Install only after the bot's existing callback/menu/access helpers are defined.
 """
 from pioneer_supabase import effective_access, grant_pioneer, has_pioneer, pioneer_availability
+from pioneer_percentage import pioneer_percentage
 
 
 def install(ns):
@@ -88,7 +89,7 @@ def install(ns):
 
     def quota_text():
         count, remaining = pioneer_availability(sb)
-        return f"📊 {count}/500 Pioneer telah menyertai. {remaining} tempat berbaki."
+        return f"📊 {pioneer_percentage(count)} telah menyertai"
 
     def callback(cid, d):
         if str(d).startswith(("pioneer_revoke_ask|", "pioneer_revoke_confirm|")):
@@ -120,7 +121,7 @@ def install(ns):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
             count, remaining = pioneer_availability(sb)
             return send(cid, "🏆 <b>PIONEER EARLY BIRD CIKGULAJU — RM10 SEKALI SAHAJA</b>\n"
-                        "<b>Kelebihan Pioneer:</b>\n✅ Bayar RM10 sekali sahaja.\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Pioneer seumur hidup.\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\n\nTerhad kepada 500 guru.\n" + quota_text() + "\n"
+                        "<b>Kelebihan Pioneer:</b>\n✅ Bayar RM10 sekali sahaja.\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Pioneer seumur hidup.\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\n\n" + quota_text() + "\n"
                         "Status Pioneer kekal walaupun sistem dikemas kini.",
                         [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
@@ -138,7 +139,7 @@ def install(ns):
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Pioneer anda sudah aktif.")
             if pioneer_availability(sb)[1] == 0:
-                return send(cid, "⛔ Kuota 500 Pioneer Early Bird sudah penuh.")
+                return send(cid, "⛔ Pendaftaran Pioneer Early Bird sudah penuh.")
             pending = ns["_latest_pending_payment"](cid)
             if pending and float(pending["amount"]) != 10.0:
                 return send(cid, "⚠️ Ada permohonan pembayaran lain yang belum selesai. "
