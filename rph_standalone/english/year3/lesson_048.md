@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 48: Reading (Provisional Draft)
+# English Year 3 — Lesson 48: Language Awareness
 
-**Lesson:** 48
-**Year:** 3
-**Skill focus:** Reading (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Right Now
+**Main SK/SP:** Writing 4.2 / 4.2.4
+**Complementary SK/SP:** Listening 1.1 / 1.1.1
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate reading response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** KPM Year 3 SK Scheme of Work Lesson 48; Student's Book p.34; Teacher's Book pp.58–59; present continuous worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews present continuous verbs through action miming. Pupils describe actions.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Display a short level-appropriate passage and pre-teach two words.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Listening and pronunciation (15 minutes)
+Teacher plays a suitable action chant and models contractions such as 'I'm' and 'they're'. Pupils listen, repeat and mime.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils read, underline clues and match three statements to the text.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Language review (25 minutes)
+Pupils read Part A of the SOW worksheet and mark statements Yes or No. Teacher guides revision tasks and pupils write short descriptions of pictured actions using present continuous.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs justify their answers using words from the passage. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks written descriptions and pronunciation of contractions. Pupils complete a brief self-assessment.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Teacher reviews common errors. Pupils share one accurate sentence.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book, worksheet and Word/PDF tests pending. NOT READY FOR RELEASE.
