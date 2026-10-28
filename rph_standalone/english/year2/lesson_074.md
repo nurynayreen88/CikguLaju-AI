@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 4.3 / 4.3.3  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objective:** Pupils write four clothing words and two meaningful sentences.  
+**Learning objectives:** Pupils write four clothing words and two meaningful sentences.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
