@@ -13,7 +13,7 @@ Teacher introduces yesterday with questions about the previous day.
 Teacher uses place and time flashcards, modelling 'I was at...' and reviewing locations.
 
 ## Activity 2 (25 minutes)
-Teacher guides the song and listening activity. Pupils listen for places and times and respond to supported questions.
+Teacher plays the song. Pupils put place flashcards in morning, afternoon and evening order, then do the TPR listening activity from TB p.116.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks specific details about yesterday.
