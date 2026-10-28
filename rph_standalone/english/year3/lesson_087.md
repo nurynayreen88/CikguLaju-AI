@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 87: Speaking
 
-**Unit:** Food, please!
-**Main SK/SP:** 2.1 / 2.1.5
-**Complementary SK/SP:** 1.2 / 1.2.5
+**Unit:** Food, Please!
+**Main SK/SP:** Speaking 2.1 / 2.1.5
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate speaking skills in the context of Food, please!.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** Student's Book p.57; Teacher's Book p.91; notebooks and colouring pencils.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Food, please! with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher reviews food vocabulary and question forms. Pupils name omelette ingredients.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a speaking task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 — Speaking model (15 minutes)
+Teacher guides Activity 4 from Teacher's Book p.91. Pupils ask and answer about ingredients.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to Food, please!.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 — Find the same omelette (25 minutes)
+Pupils draw their own omelette and mingle, asking 'Are there any tomatoes in your omelette?' and similar questions to find classmates with matching ingredients.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 2.1.5 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher observes clear descriptions and comprehension of questions.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Pupils share a question they used to find a partner.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
