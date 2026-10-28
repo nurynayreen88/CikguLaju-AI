@@ -5,11 +5,12 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.4  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.81. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Learning objectives:** Pupils identify four of five text details and answer two of three questions.  
-**Success criteria:** Individually identify at least four of five text details and answer at least two of three comprehension questions, with evidence underlined in the passage.  
+**Learning objectives:** Pupils identify four of five text details and use a picture dictionary to find, list and categorise four topic words.  
+**Success criteria:** Individually identify four of five text details and correctly sort four words into two picture-dictionary categories.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
 **Original teacher-created reading:** “Tom has a small house. His kitchen has a round table. There is a blue sofa in the living room. Two beds are upstairs. Tom likes to read in his bedroom.”
+**Picture-dictionary task:** Use teacher-drawn picture entries for bed, sofa, kitchen and bedroom. Pupils find and list the four words, then categorise: rooms = kitchen, bedroom; objects = bed, sofa.  
 **Five details/key:** owner—Tom; house—small; table—round; sofa—blue; beds—two. **Questions/key:** What colour is the sofa?—blue; Where does Tom read?—bedroom; How many beds are upstairs?—two.
 
 ## Set Induction (5 minutes)
@@ -31,6 +32,8 @@
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
 **Pupils:** Share one correct example.
+
+**Complementary PBD:** Check four located and listed words and their two categories separately from passage comprehension.  
 
 **QA:** Individual reading evidence and separate scoring thresholds clarified. Exact SOW and Teacher's Book alignment and PDF/A4 checks pending. NOT READY.
 
