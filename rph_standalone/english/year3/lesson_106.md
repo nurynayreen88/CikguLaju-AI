@@ -13,7 +13,7 @@ Teacher writes R_ _ _ S three times; pupils guess 'Rules, Rules, Rules'.
 Teacher collects classroom and outside-classroom rules and draws simple numbered symbols.
 
 ## Activity 2 (25 minutes)
-Groups design a creative rules poster, practise reading the numbered rules and label the pictures.
+Teacher gives each pupil paper to fold into a four-page rules booklet. Pupils choose classroom and outside-classroom rules, draw a numbered picture for each rule and write its label. In groups, pupils take turns saying a number and reading the matching rule.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks creative expression and spelling of familiar rule words.
