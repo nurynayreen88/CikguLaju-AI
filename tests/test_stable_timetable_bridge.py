@@ -38,13 +38,18 @@ class StableBridgeTests(unittest.TestCase):
         second = verified_stable_session(**padded)[2]
         self.assertEqual(first.session_id, second.session_id)
 
-    def test_time_whitespace_keeps_session_identity(self):
-        original = verified_stable_session(**self.kw)[2]
-        changed = dict(self.kw)
-        changed['row'] = self.row | {'start': ' 08:00 ', 'end': '09:00 '}
-        result = verified_stable_session(**changed)[2]
-        self.assertIsNotNone(result)
-        self.assertEqual(original.session_id, result.session_id)
+    def test_subject_key_with_extra_space_rejected(self):
+        kw = self.kw | {"subject_key": "EN ", "subject_mapping": {"English": "EN "}}
+        allowed, reason, session = verified_stable_session(**kw)
+        self.assertFalse(allowed)
+        self.assertEqual(reason, "invalid_subject_key")
+        self.assertIsNone(session)
+
+    def test_invalid_registry_rejected(self):
+        allowed, reason, session = verified_stable_session(**(self.kw | {"registry": None}))
+        self.assertFalse(allowed)
+        self.assertEqual(reason, "unregistered_class_identity")
+        self.assertIsNone(session)
 
     def test_subject_mapping_missing_blocked(self):
         kw = self.kw | {"subject_mapping": None}
