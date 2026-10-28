@@ -10,13 +10,13 @@
 Teacher displays sea animal flashcards. Pupils name familiar animals.
 
 ## Activity 1 (15 minutes)
-Teacher introduces shark and other sea animal vocabulary. Pupils predict facts from pictures.
+Teacher shows shark and other sea animal flashcards, elicits adjectives including scary, and asks pupils to predict answers to the SOW sea-animal comparison worksheet.
 
 ## Activity 2 (25 minutes)
-Pupils read the sea animal texts, locate specific information and infer unfamiliar words from context.
+Pupils listen to the accompanying audio while reading Student's Book pp.96–97 silently, then check their worksheet predictions. They circle science and project, discuss meanings using picture clues, and complete the Grammar Box and Activity 2 with teacher guidance.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading details and vocabulary comprehension.
+Teacher checks worksheet answers, specific information found in the text, and pupils' explanations of unfamiliar words using context and visuals.
 
 ## Closure (5 minutes)
 Pupils share one sea animal fact.
