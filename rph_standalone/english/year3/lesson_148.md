@@ -7,16 +7,16 @@
 **References:** Malaysian animal flashcards and SOW worksheet; KPM Year 3 SOW.
 
 ## Set Induction (5 minutes)
-Teacher asks pupils to name Malaysian animals.
+Pupils brainstorm animals found in Malaysia. Teacher introduces endangered and shows animal flashcards.
 
 ## Activity 1 (15 minutes)
-Teacher introduces endangered and gives a scrambled animal-name activity.
+Pairs unscramble names of endangered Malaysian animals on the SOW worksheet (turtle, pangolin, tiger, orangutan, rhino), then draw one animal.
 
 ## Activity 2 (25 minutes)
-Pairs write descriptions of an endangered animal and check spelling.
+Teacher gives animal clues using comparative adjectives; pupils guess the animal. Pairs write at least two descriptive sentences about one endangered animal, using comparatives where appropriate.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks descriptions and spelling.
+Teacher collects notebooks, checks descriptions and spelling, and notes feedback for pupils to use again in Lesson 160.
 
 ## Closure (5 minutes)
 Pupils name one endangered animal.
