@@ -12,7 +12,7 @@
 **Teacher:** Review Unit 1 vocabulary with pictures. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model the target language and provide examples. **Pupils:** Practise with support.
+**Teacher:** Show character flashcards and elicit 'He/She has got ...'; contrast with 'I have got ...' using pupils' own examples on the board. **Pupils:** Say and write one first-person and one third-person sentence before completing the worksheet.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Review has got/have got using character flashcards; complete worksheet Sections A and B; practise can/can't and Can you? questions. **Pupils:** Complete the referenced tasks, practising both standards.
