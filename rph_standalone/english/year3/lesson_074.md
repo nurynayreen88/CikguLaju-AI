@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 74: Language Arts
 
-**Unit:** My new house
-**Main SK/SP:** 5.1 / 5.1.2
-**Complementary SK/SP:** 2.3 / 2.3.1
+**Unit:** My New House
+**Main SK/SP:** Language Arts 5.1 / 5.1.2
+**Complementary SK/SP:** Speaking 2.3 / 2.3.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the language arts learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** KPM Year 3 SK Scheme of Work Lesson 74; pictures of long grass, river and village; 'We're Going Home' story resource.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher tells pupils they will imagine a long walk home. Pupils learn long grass, river and village.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the language arts task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Story actions (15 minutes)
+Teacher tells the 'We're Going Home' story with gestures for over, under and through. Pupils follow the actions.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Story performance (25 minutes)
+Teacher repeats the story, gradually inviting pupils to join the spoken phrases and actions. Groups practise and retell a short section using their own gestures.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 5.1.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher observes pupils' response to the story and their short oral retelling.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share their favourite action and explain its meaning.
 
-**Source:** Year 3 English SOW 2026, Lesson 74. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; direct story resource and Word/PDF tests pending. NOT READY FOR RELEASE.
