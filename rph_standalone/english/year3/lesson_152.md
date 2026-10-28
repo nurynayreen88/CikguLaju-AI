@@ -10,13 +10,13 @@
 Teacher shows a picture of the Solar System.
 
 ## Activity 1 (15 minutes)
-Pupils name planets and predict their order from the Sun.
+Pupils name planets and write their predicted order from the Sun. Teacher uses the Solar System picture to elicit known facts and introduces new planet vocabulary.
 
 ## Activity 2 (25 minutes)
-Pupils read the Solar System text and locate facts about planets.
+Pupils read Student's Book p.98, verify the planet order from the first paragraph, and complete Activity 1. Teacher guides pupils to infer unfamiliar vocabulary from pictures and context.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading details and vocabulary.
+Teacher checks the planet sequence, details from the text and pupils' use of visual clues to infer unfamiliar words.
 
 ## Closure (5 minutes)
 Pupils share one planet fact.
