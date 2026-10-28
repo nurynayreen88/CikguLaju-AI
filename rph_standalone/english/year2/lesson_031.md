@@ -5,8 +5,8 @@
 **Complementary SK/SP (existing SOW mapping; final check pending):** 1.2 / 1.2.2  
 **Duration:** 60 minutes  
 **Mapped resource:** *Super Minds 1* Student's Book p.71. Exact Teacher's Book activity sequence is **not independently verified**; all dialogue and house plans below are teacher-developed, not textbook quotations.  
-**Learning objectives:** Pupils ask and answer three questions about objects in a house and identify three spoken room descriptions.  
-**Success criteria:** Three intelligible question–answer exchanges and three correct listening choices.  
+**Learning objectives:** Pupils describe three rooms or objects using There's / There are and identify three spoken room descriptions.  
+**Success criteria:** Three accurate spoken descriptions using singular or plural forms and three correct listening choices.  
 **Materials:** SB p.71 as reference, board, four room cards and two teacher-created plans.
 
 **Plan A:** bedroom—bed; kitchen—table; living room—sofa; bathroom—bath.  
@@ -21,15 +21,15 @@
 
 ## Activity 1 — Model house questions (15 minutes)
 **Teacher:** Display Plans A and B. Model the three exchanges, drawing attention to *there is/there are* for one versus more than one. Read the three listening clues once and model selecting the kitchen.  
-**Pupils:** Repeat questions and answers, then identify a room from a clue.
+**Pupils:** Practise describing objects with There's / There are, then identify a room from a clue.
 
 ## Activity 2 — Information-gap pairs (25 minutes)
-**Teacher:** Assign one partner Plan A and the other Plan B. Pupils ask three questions without showing plans, then swap roles. Read the three clues in random order for independent picture choices. Offer printed frames for support and invite confident speakers to add a fourth question.  
-**Pupils:** Ask and answer questions, compare plans and identify spoken room descriptions.
+**Teacher:** Assign one partner Plan A and the other Plan B. Pupils describe three objects or rooms using There's / There are without showing plans, then swap roles. Read the three clues in random order for independent picture choices. Offer printed frames for support and invite confident speakers to add a fourth question.  
+**Pupils:** Describe rooms and objects, compare plans and identify spoken room descriptions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Listen to three independent exchanges per pupil and check three listening choices. Record intelligibility, relevance and listening accuracy separately, noting prompts.  
-**Pupils:** Demonstrate exchanges and identify three rooms.
+**Teacher:** Listen to three independent descriptions per pupil, checking correct singular/plural forms, and check three listening choices. Record intelligibility, relevance and listening accuracy separately, noting prompts.  
+**Pupils:** Describe three objects or rooms and identify three rooms.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe one difference between the plans.  
