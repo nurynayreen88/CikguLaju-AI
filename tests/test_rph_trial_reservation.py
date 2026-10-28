@@ -179,6 +179,14 @@ class TrialReservationTests(unittest.TestCase):
         with self.assertRaises(TrialReservationError):
             client.release(42, "request-12345")
 
+    def test_release_requires_released_status(self):
+        for status in ("reserved", "committed", "unavailable", None):
+            with self.subTest(status=status):
+                def rpc(name, payload):
+                    return [{"ok": True, "reservation_status": status}]
+                with self.assertRaises(TrialReservationError):
+                    TrialReservationClient(rpc).release(42, "request-12345")
+
     def test_invalid_request_id(self):
         client, _ = self.make_client()
         with self.assertRaises(ValueError):
