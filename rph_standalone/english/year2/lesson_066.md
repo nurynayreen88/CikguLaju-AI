@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source:** Student's Book p.84 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
-**Learning objective:** Pupils identify the main idea of a spoken message and answer two oral questions.  
+**Learning objectives:** Pupils identify the main idea of a spoken message and answer two oral questions.  
 **Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
