@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 59: Listening
 
-**Unit:** Year in, year out
-**Main SK/SP:** 1.2 / 1.2.2
-**Complementary SK/SP:** 3.2 / 3.2.1
+**Unit:** Year In, Year Out
+**Main SK/SP:** Listening 1.2 / 1.2.2
+**Complementary SK/SP:** Reading 3.2 / 3.2.1
 **Duration:** 60 minutes
-**Objective:** Pupils listen to a short teacher-led text and identify key details in the context of Year in, year out.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book p.116; Teacher's Book p.179; world map, country and time-zone labels.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Year in, year out using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher reviews weather and familiar country names. Pupils identify countries on a world map.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to listen to a short teacher-led text and identify key details, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Time zones (15 minutes)
+Teacher introduces the concept of time differences between Malaysia and other countries. Pupils compare example clock times without assuming all countries share Malaysia's time.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Listening and reading (25 minutes)
+Teacher guides the country and time-zone task from Student's Book p.116 and Teacher's Book p.179. Pupils listen for specific information, match countries and times, and read supporting labels.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 1.2.2; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks specific listening details and understanding of the text's main idea.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share one fact about world time zones.
 
-**Source:** Year 3 English SOW 2026, Lesson 59. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
