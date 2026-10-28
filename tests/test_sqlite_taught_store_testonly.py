@@ -89,6 +89,17 @@ class TaughtStoreTests(unittest.TestCase):
             "SELECT last_lesson FROM test_taught_progress"
         ).fetchone()[0], 1)
 
+    def test_two_lessons_with_distinct_sessions(self):
+        self.assertEqual(self.call(), "confirmed")
+        self.assertEqual(self.call(lesson=2, session_id="s2"), "confirmed")
+        self.assertEqual(self.db.execute(
+            "SELECT last_lesson FROM test_taught_progress"
+        ).fetchone()[0], 2)
+        self.assertEqual(self.db.execute(
+            "SELECT COUNT(*) FROM test_taught_events"
+        ).fetchone()[0], 2)
+        self.assertEqual(self.call(lesson=2, session_id="s2"), "already_confirmed")
+
     def test_invalid_values(self):
         self.assertEqual(self.call(lesson=True), "blocked")
         self.assertEqual(self.call(school_year=0), "blocked")
