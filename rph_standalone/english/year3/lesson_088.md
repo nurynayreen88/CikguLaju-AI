@@ -1,30 +1,25 @@
 # English Year 3 — Lesson 88: Reading
 
-**Unit:** Food, please!
-**Main SK/SP:** 3.2 / 3.2.1
-**Complementary SK/SP:** 3.2 / 3.2.2
+**Unit:** Food, Please!
+**Theme:** World of Knowledge
+**Main SK/SP:** Reading 3.2 / 3.2.1
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate reading skills in the context of Food, please!.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** Student's Book pp.58–59; Teacher's Book pp.92–93; cut-up food texts and pictures.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Food, please! with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher reviews familiar food names. Pupils share dishes they know.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a reading task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 — Predicting (15 minutes)
+Teacher follows the warm-up and vocabulary tasks from Teacher's Book p.92. Pupils look at pictures of dishes and predict their origins.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to Food, please!.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 — Reading match (25 minutes)
+Groups of four read the texts from Student's Book p.58, match them to pictures and highlight specific details. Teacher supports pupils with vocabulary.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 3.2.1 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher checks understanding of main ideas and specific information.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Pupils share one interesting fact about a dish.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
