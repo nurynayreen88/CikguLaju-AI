@@ -10266,6 +10266,29 @@ def _create_rph_word(doc, section, s, ai_text, path):
         for row in tbl.rows:
             for cell,width in zip(row.cells,(Cm(5.3),Cm(13.45))):
                 cell.width = width
+    # Word-only: apply true bidirectional layout to Pendidikan Islam RPH.
+    # Keep PDF rendering and all other subjects unchanged.
+    if 'pendidikan islam' in str(s.get('subject', '')).casefold():
+        import re as _rtl_re
+        def _rtl_flag(parent, tag):
+            node = parent.find(qn(tag))
+            if node is None:
+                node = OxmlElement(tag)
+                parent.append(node)
+            node.set(qn('w:val'), '1')
+
+        for tbl in doc.tables:
+            tblPr = tbl._tbl.tblPr
+            _rtl_flag(tblPr, 'w:bidiVisual')
+            for row in tbl.rows:
+                for cell in row.cells:
+                    for para in cell.paragraphs:
+                        _rtl_flag(para._p.get_or_add_pPr(), 'w:bidi')
+                        para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                        for run in para.runs:
+                            # Explicitly mark Jawi/Arabic runs RTL; do not force Latin-only runs.
+                            if _rtl_re.search(r'[\\u0600-\\u06ff\\u0750-\\u077f\\u08a0-\\u08ff]', run.text):
+                                _rtl_flag(run._r.get_or_add_rPr(), 'w:rtl')
     doc.save(path); return path
 
 def create_word_file(s, ai_text, cid):
