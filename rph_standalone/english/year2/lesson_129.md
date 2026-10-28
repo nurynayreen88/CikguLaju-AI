@@ -3,10 +3,10 @@
 **Unit:** At the beach
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 2.1 / 2.1.1
-**Learning objectives:** Pupils locate four of five facts in the original supplementary beach passage below and give two oral answers.
-**Success criteria:** 4/5 correct facts and two relevant oral answers.
+**Learning objectives:** Pupils locate four of five details in a beach passage and give two simple statements about themselves.
+**Success criteria:** four correct reading details and two intelligible personal statements.
 **Teaching materials:** Super Minds 1 Student's Book p.109, pictures, word cards and classroom resources.
-**Original supplementary passage (not Student's Book p.109):** Mia is at the beach with Dad. She has a red bucket and a blue spade. She finds two shells near the water. **Five facts:** Mia, Dad, beach, red bucket, blue spade. **Questions/key:** How many shells? Two. Where? Near the water.
+**Personal statement frames:** 'I am at the beach with __.' 'I have a __.' Pupils supply their own information rather than repeat Mia's answers. **Original supplementary passage (not Student's Book p.109):** Mia is at the beach with Dad. She has a red bucket and a blue spade. She finds two shells near the water. **Five facts:** Mia, Dad, beach, red bucket, blue spade. **Questions/key:** How many shells? Two. Where? Near the water.
 
 **Audited source mapping:** Student's Book p.109 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give pupils the complete Mia passage. Ask five factual prompts: Who is at the beach? (Mia); Who is with Mia? (Dad); Where are they? (the beach); What colour is the bucket? (red); What colour is the spade? (blue). Then ask both supplied oral questions about shells and location.
-**Pupils:** Locate printed facts and give two oral answers.
+**Pupils:** Locate printed facts and give two personal statements.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score five factual responses (0–5) and two oral answers (0–2) against the passage and key; record independent accuracy and support required.
