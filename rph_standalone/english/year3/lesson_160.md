@@ -16,7 +16,7 @@ Pupils compare two types of camel and revisit endangered animals from Lesson 148
 Pupils retrieve their Lesson 148 endangered-animal descriptions, improve the sentences using facts and comparisons, and make a class display. They draw animals separately from written descriptions, then match each picture to its text using string.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks written facts and reading details.
+Teacher checks revised endangered-animal descriptions, comparisons and pupils' ability to match the display texts to the correct pictures.
 
 ## Closure (5 minutes)
 Groups present their animal project.
