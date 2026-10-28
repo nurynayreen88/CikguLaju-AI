@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW check pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All scripts and cards below are teacher-created, not textbook quotations.  
-**Objective:** Pupils perform four rhyme lines with two gestures and say one room sentence.  
+**Learning objectives:** Pupils perform four rhyme lines with two gestures and say one room sentence.  
 **Success criteria:** Independently demonstrate each component of the objective.  
 **Materials:** Board, room picture cards, word cards and resources below.
 
