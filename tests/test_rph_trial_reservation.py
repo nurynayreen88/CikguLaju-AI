@@ -56,7 +56,15 @@ class TrialReservationTests(unittest.TestCase):
         with self.assertRaises(TrialReservationError):
             deliver_with_trial(client, 42, "request-12345",
                                lambda: b"pdf", lambda _: Response(False))
-        self.assertIn("release", calls[-1])
+        self.assertEqual(calls, ["cikgulaju_reserve_rph_trial"])
+
+    def test_transport_error_keeps_reservation(self):
+        client, calls = self.make_client()
+        def broken_send(_):
+            raise TimeoutError("Connection dropped after upload")
+        with self.assertRaises(TrialReservationError):
+            deliver_with_trial(client, 42, "request-12345", lambda: b"pdf", broken_send)
+        self.assertEqual(calls, ["cikgulaju_reserve_rph_trial"])
 
     def test_commit_failure_keeps_reservation(self):
         client, calls = self.make_client(fail_commit=True)
