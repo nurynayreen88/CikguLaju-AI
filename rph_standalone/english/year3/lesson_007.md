@@ -12,7 +12,7 @@
 **Teacher:** Review have got vocabulary with a short game. **Pupils:** Respond and activate prior knowledge.
 
 ## Activity 1 — Modelling and preparation (15 minutes)
-**Teacher:** Demonstrate the target language and model the lesson task with examples. **Pupils:** Observe, respond and practise with support.
+**Teacher:** Display character flashcards and elicit 'He/She has got ...' before contrasting 'I have got ...'. Demonstrate writing one possession on a paper strip and asking 'Have you got ...?' **Pupils:** Transform third-person sentences into first-person sentences and rehearse questions in pairs.
 
 ## Activity 2 — Main learning task (25 minutes)
 **Teacher:** Review SB p.7 Activity 3; guide Activity 4; model I have got / He has got; pupils write possessions on paper strips and ask classmates 'Have you got ...?' to identify the owner. **Pupils:** Complete the tasks and practise both main and complementary skills.
