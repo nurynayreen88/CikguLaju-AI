@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 110: Writing
 
-**Unit:** Out and about
+**Unit:** Out and About
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 1.2 / 1.2.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the writing learning standard in the context of Out and about.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.74; Teacher's Book pp.114–115; animal and place pictures.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Out and about using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher plays the animal-vocabulary Thief game.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the writing task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 (15 minutes)
+Pupils complete Activity 1 in pairs, then identify places shown in Student's Book p.74.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Out and about.
+## Activity 2 (25 minutes)
+Teacher says rules; pupils match them to places and write the relevant rules with correct spelling.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 4.3.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks spelling and comprehension of spoken rule details.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils read one place rule.
 
-**Source:** Year 3 English SOW 2026, Lesson 110. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
