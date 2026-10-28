@@ -10,7 +10,7 @@
 Teacher plays Missing Planets.
 
 ## Activity 1 (15 minutes)
-Groups imagine a new Solar System and plan its planets.
+Groups invent a Solar System and note each planet's name, size and temperature before making a poster.
 
 ## Activity 2 (25 minutes)
 Groups of three or four plan an imaginary Solar System and assign writing, drawing and checking roles. They draft and peer-review descriptions, finish a labelled poster and display it for positive feedback.
