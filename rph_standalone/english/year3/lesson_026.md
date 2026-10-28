@@ -1,31 +1,25 @@
 # English Year 3 — Lesson 26: Language Arts
 
-**Unit:** Every day
-**Main SK/SP (existing SOW mapping; verification pending):** 5.1 / 5.1.2
-**Complementary SK/SP (existing SOW mapping; verification pending):** 1.2 / 1.2.3
-**Duration (draft):** 60 minutes
-**Objective:** Pupils can perform a short original rhyme about daily routines with rhythm and appropriate actions.
-**Materials:** Topic picture cards, word cards, board and pupils' exercise books.
-**Source note:** Exact Teacher's Book page, audio and activity sequence have not been verified.
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Language Arts 5.1 / 5.1.2
+**Complementary SK/SP:** Listening 1.2 / 1.2.3
+**Duration:** 60 minutes
+**References:** KPM Year 3 SK SOW Lesson 26; pictures of walking, car, bike and bus; 'Going to school' rhyme supplied in SOW.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display pictures connected to Every day and elicit two familiar words.
-**Pupils:** Name the pictures and respond to one short question.
+Teacher displays four transport pictures. Pupils name the transport and suggest names for four pictured children.
 
-## Activity 1 — Model (15 minutes)
-**Teacher:** Introduce a teacher-created four-line rhyme using familiar daily routine words and model gestures for two actions. Read twice with a steady beat.
-**Pupils:** Listen, repeat the lines and copy the actions.
+## Activity 1 — Rhyme modelling (15 minutes)
+Teacher introduces the SOW rhyme verse by verse, with gestures for each means of transport. Pupils listen and imitate.
 
-## Activity 2 — Practice (25 minutes)
-**Teacher:** Arrange small groups to rehearse, choose gestures and substitute one routine word. Invite each group to perform.
-**Pupils:** Practise the rhyme, adapt one word and perform clearly as a group.
+## Activity 2 — Rhyme practice (25 minutes)
+Pupils repeat the full rhyme with actions; teacher writes a version with transport words missing. Pupils copy and complete the gaps, then rehearse in four groups.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Observe each pupil's participation, intelligible delivery and use of at least two appropriate gestures.
-**Pupils:** Complete a short independent demonstration of the objective.
+## PBD (10 minutes)
+Teacher observes comprehension of the rhyme and participation in group performance. Pupils perform their assigned verses.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words and summarise the learning.
-**Pupils:** Share one learned word or response.
+Groups perform the complete rhyme in sequence and share a favourite transport word.
 
-**QA:** TEACHER-DEVELOPED DRAFT — verify against the actual Teacher's Book and confirm SK/SP before publishing.
+**QA:** SOW lesson standards and outline checked; direct source-asset and Word/PDF output verification pending. NOT READY FOR RELEASE.
