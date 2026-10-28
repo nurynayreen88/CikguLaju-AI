@@ -3,10 +3,10 @@
 **Unit:** The robot
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 3.2 / 3.2.4
-**Learning objectives:** Pupils identify four of five spoken robot details and locate two related details in print.
-**Success criteria:** 4/5 correct choices and two relevant printed details.
+**Learning objectives:** Pupils identify four of five details from spoken true/false statements and categorise four body-part words using a picture dictionary.
+**Success criteria:** four correct listening judgements and four correctly categorised picture-dictionary words.
 **Teaching materials:** Super Minds 1 Student's Book p.105, pictures, word cards and classroom resources.
-**Original teacher-read script (not textbook audio):** “My robot is called Max. It has a square head, two green eyes, three long arms and four small wheels. Max helps me carry books.” **Five listening prompts/key:** 1. Name?—Max; 2. Head shape?—square; 3. Eye colour?—green; 4. Number of arms?—three; 5. Number of wheels?—four. **Printed support strip (give only after listening):** “Max has two green eyes. Max has four small wheels.” **Printed-detail questions/key:** What colour are Max's eyes?—green; How many wheels has Max got?—four. The printed strip must not be shown during the listening check.
+**Poster true/false prompts:** 'Max has a square head.' (True); 'Max has red eyes.' (False); 'Max has three arms.' (True); 'Max has two wheels.' (False); 'Max carries books.' (True). **Picture dictionary categories:** head/eyes (upper body), arms/legs (limbs). **Original teacher-read script (not textbook audio):** “My robot is called Max. It has a square head, two green eyes, three long arms and four small wheels. Max helps me carry books.” **Five listening prompts/key:** 1. Name?—Max; 2. Head shape?—square; 3. Eye colour?—green; 4. Number of arms?—three; 5. Number of wheels?—four. **Printed support strip (give only after listening):** “Max has two green eyes. Max has four small wheels.” **Printed-detail questions/key:** What colour are Max's eyes?—green; How many wheels has Max got?—four. The printed strip must not be shown during the listening check.
 **Audited source mapping:** Student's Book p.105 (Year 2 SOW audit); Teacher's Book sequence not yet verified. All script and printed support above are teacher-created alternatives.
 
 ## Set Induction (5 minutes)
@@ -18,7 +18,7 @@
 **Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read the full Max script twice while pupils record answers to five prompts. Collect listening choices before displaying the two-sentence printed support strip; then ask pupils to locate and answer the two printed-detail questions.
+**Teacher (25 min):** Read five true/false statements while pupils inspect the robot poster, then guide them to locate and categorise four words in a picture dictionary. Read the full Max script twice while pupils record answers to five prompts. Collect listening choices before displaying the two-sentence printed support strip; then ask pupils to locate and answer the two printed-detail questions.
 **Pupils:** Choose five answers and locate two printed details.
 
 ## Assessment / PBD (10 minutes)
