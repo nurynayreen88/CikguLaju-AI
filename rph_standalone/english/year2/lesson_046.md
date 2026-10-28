@@ -5,13 +5,14 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5
 **Duration:** 60 minutes
 **Source:** NON-TEXTBOOK in prior mapping. Script below is teacher-created.
-**Learning objectives:** Identify three spoken details and describe one room orally.
-**Success criteria:** Three correct listening answers and one intelligible room description.
+**Learning objectives:** Identify three spoken details by drawing the described objects in a house plan and describe one room orally.
+**Success criteria:** Three correctly placed objects in a house drawing and one intelligible room description.
 **Materials:** Room pictures, board, script and questions below.
 
 **Original listening script:** “This house has three rooms. In the kitchen, there is a round table. In the bedroom, there are two beds. In the living room, there is a green sofa.”
 
 **Questions and key:** (1) Which room has a round table? — kitchen. (2) How many beds are there? — two. (3) What colour is the sofa? — green.
+**Drawing key:** Kitchen — round table; bedroom — two beds; living room — green sofa. Pupils draw or label these in three empty room boxes while listening.  
 **Speaking frame:** “In the ____, there is/are ____.”
 
 ## Set Induction (5 minutes)
@@ -23,7 +24,7 @@
 **Pupils:** Listen and identify one room.
 
 ## Activity 2 — Listening and speaking (25 minutes)
-**Teacher:** Read the script again. Ask the three questions and have pupils choose picture or word answers independently, then compare in pairs. Model the speaking frame.
+**Teacher:** Read the script again. Ask pupils to draw the three objects in their room boxes while listening, then answer the three questions independently, then compare in pairs. Model the speaking frame.
 **Pupils:** Answer three questions and describe one room.
 
 ## Assessment / PBD (10 minutes)
@@ -33,6 +34,8 @@
 ## Closure (5 minutes)
 **Teacher:** Review two room words and ask for one accurate house sentence.
 **Pupils:** Share a sentence.
+
+**Listening PBD:** Score the placement and properties of all three drawn objects against the drawing key, separately from the oral description.  
 
 **QA:** TEACHER-DEVELOPED STANDALONE DRAFT. Official SOW and PDF/A4 verification pending; not READY.
 
