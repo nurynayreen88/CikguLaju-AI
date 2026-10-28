@@ -13,7 +13,7 @@ Teacher reviews places, activities and adjectives.
 Groups prepare word cards for home, cinema, shopping centre, film and related adjectives.
 
 ## Activity 2 (25 minutes)
-Teacher guides the listening activity. Pupils identify who was where and what the experience was like, then answer questions.
+Pupils sort place, activity and adjective cards, then combine them into sensible or silly sentences and complete TB p.119 Activity 3.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks listening details and simple spoken information.
