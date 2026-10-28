@@ -1,34 +1,25 @@
 # English Year 3 — Lesson 28: Speaking
 
-**Unit:** Every day
-**Main SK/SP (existing SOW mapping):** 2.1 / 2.1.2
-**Complementary SK/SP (existing SOW mapping):** 1.2 / 1.2.5
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Speaking 2.1 / 2.1.2
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Student's Book:** Get Smart Plus 3 p.20 Activity 1
-**Teacher's Book:** pp.38–39
-**Audio:** Class CD1 Tracks 30 and 31
-**Source evidence:** Previously audited Year 3 staging mapping (VERIFIED_AUDIO); exact procedure must follow TB when available.
-**Objective:** Pupils participate in the speaking task in Activity 1 and produce two intelligible responses using expressions from the lesson.
-**Materials:** Student's Book p.20, Teacher's Book pp.38–39, CD1 Tracks 30–31, flashcards.
+**References:** Get Smart plus 3 Student's Book p.20 Activity 1; Teacher's Book pp.38–39; occupation flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show the Every day pictures and elicit familiar expressions.
-**Pupils:** Name two daily activities.
+Teacher plays Guess the occupation from Teacher's Book p.38. Pupils identify jobs.
 
-## Activity 1 — Listen and model (15 minutes)
-**Teacher:** Direct pupils to Student's Book p.20 Activity 1. Play CD1 Tracks 30 and 31 according to the textbook/Teacher's Book sequence; model a response and clarify meaning.
-**Pupils:** Listen, follow the textbook prompts and repeat the target expression.
+## Activity 1 — Vocabulary (15 minutes)
+Teacher models occupation and action matching, such as pilot and fly a helicopter. Pupils match pictures and phrases.
 
-## Activity 2 — Paired speaking (25 minutes)
-**Teacher:** Use the Activity 1 prompts for paired exchanges; demonstrate turn-taking and circulate to support pronunciation.
-**Pupils:** Ask and respond with a partner, then exchange roles and repeat with a different prompt.
+## Activity 2 — Speaking (25 minutes)
+Teacher models 'What do you want to be when you grow up?' and guides Student's Book p.20 Activity 1. Pupils ask and answer in pairs, then share responses.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Listen to each pupil give two intelligible responses linked to the textbook task; note independence and accuracy.
-**Pupils:** Demonstrate individually or in pairs.
+## PBD (10 minutes)
+Teacher observes spoken questions, responses and listening strategies. Pupils demonstrate both skills.
 
 ## Closure (5 minutes)
-**Teacher:** Review two expressions and invite one pair to demonstrate.
-**Pupils:** State one expression they can use outside class.
+Teacher reviews common errors and celebrates clear communication.
 
-**QA:** VERIFIED_REFERENCE_MAPPING (SB p.20 Activity 1; TB pp.38–39; CD1 Tracks 30–31). Exact TB steps, SOW SK/SP and A4 layout still require cross-check.
+**QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
