@@ -3,10 +3,11 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 3.3 / 3.3.1
-**Learning objectives:** Pupils write four clothing words and two meaningful sentences from picture prompts, then check one spelling using a reference.
-**Success criteria:** four legible words, two understandable sentences and one successful check.
+**Learning objectives:** Pupils spell four familiar clothing words correctly and exchange sentence-clue quizzes to read for enjoyment.
+**Success criteria:** four correctly spelled clothing words and one completed partner sentence-clue quiz.
 **Teaching materials:** Exercise books, pencils, outfit picture description, word bank and picture dictionary (or teacher-made picture-word index) below.
 
+**Sentence-clue quiz:** 'You wear it on your head. What is it?' (hat); 'You wear them on your feet. What are they?' (shoes). Pairs create two more clues and exchange quizzes.
 **Original picture prompt:** A boy wears a green shirt, blue trousers, black shoes and a red hat. **Word bank:** shirt, trousers, shoes, hat, green, blue, black, red. **Model sentences:** “He is wearing a green shirt.” “His hat is red.” **Independent writing:** Label the four clothing items and write two true sentences about the picture. **Spelling lookup:** Check *trousers* in a picture dictionary or teacher-made index with *shirt*, *trousers*, *shoes* and *hat*. **Checklist:** readable letters, spaces, initial capital and final full stop.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
@@ -19,11 +20,11 @@
 **Pupils:** Copy the model and practise checking a word.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Give pupils the original outfit prompt and word bank. Pupils label four clothing items, write two sentences, consult the picture-word index to check *trousers*, and revise using the checklist.
+**Teacher (25 min):** Give pupils the original outfit prompt and word bank. Pupils spell four clothing words, write two sentence clues, swap quizzes and read and solve their partner's clues.
 **Pupils:** Write, check one spelling and revise.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Score four individually written clothing labels (0–4), two meaningful sentences (0–2) and one demonstrated dictionary spelling check (yes/no). Record legibility, punctuation and prompts separately. Accept alternative accurate sentences about the supplied outfit.
+**Teacher (10 min):** Score four independently spelled clothing words (0–4) and record reading and completing a sentence-level quiz (SP 3.3.1). Record legibility, punctuation and prompts separately. Accept alternative accurate sentences about the supplied outfit.
 **Pupils:** Submit individual writing.
 
 ## Closure (5 minutes)
