@@ -10,15 +10,15 @@
 Teacher reviews comparative adjectives.
 
 ## Activity 1 (15 minutes)
-Teacher models comparisons with animal pictures and respectful examples.
+Teacher models simple comparisons using willing volunteers and gives spoken instructions for pupils to follow. Teacher emphasises respectful language.
 
 ## Activity 2 (25 minutes)
-Pupils compare animals and follow spoken instructions involving comparisons.
+Pupils listen to five True/False comparative sentences, record answers and explain corrections aloud. They complete Student's Book p.97 Activity 4 and practise a respectful quiz in groups.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks spoken descriptions and listening.
 
 ## Closure (5 minutes)
-Pupils compare two animals.
+Pupils share one comparative sentence and explain why differences should be respected.
 
 **QA:** SOW-aligned draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
