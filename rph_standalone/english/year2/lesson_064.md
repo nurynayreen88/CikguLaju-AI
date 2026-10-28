@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
-**Objective:** Pupils write three outfit sentences and correct two errors.  
+**Learning objectives:** Pupils write three outfit sentences and correct two errors.  
 **Success criteria:** Write three understandable outfit sentences with clear word spaces, and independently correct both a missing capital letter and a missing word space.  
 **Materials:** Board, picture/word cards, exercise books and the resources below.
 
