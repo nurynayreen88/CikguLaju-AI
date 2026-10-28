@@ -3,12 +3,13 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 3.3 / 3.3.1
-**Learning objectives:** Pupils locate four of five explicit details in a teacher-created clothing paragraph and check one unfamiliar word using a picture dictionary.
-**Success criteria:** 4/5 accurate details and one successful word lookup.
+**Learning objectives:** Pupils identify four of five details in simple sentences and complete one enjoyable sentence-clue word game.
+**Success criteria:** 4/5 accurate details and successful participation in one sentence-level reading game.
 **Teaching materials:** Original reading passage, five questions and answer key below, clothing cards and picture dictionary.
 
 **Original reading passage:** “Lina is ready for school. She wears a white shirt and a blue skirt. Her shoes are black. It is raining, so she takes a yellow raincoat.”
 **Five questions and key:** 1. Where is Lina going? — school. 2. What colour is her shirt? — white. 3. What colour is her skirt? — blue. 4. What colour are her shoes? — black. 5. Why does she take a raincoat? — it is raining.
+**Sentence-clue game:** Read clues and write the matching clothing word: 'You wear it on your head.' (hat); 'You wear them on your feet.' (shoes); 'You wear it when it rains.' (raincoat). Pupils swap clue cards and solve them for enjoyment.
 **Picture dictionary task:** Find *raincoat* in a picture dictionary, point to its picture and read the word. If no dictionary is available, the teacher prepares a four-entry picture-word index: shirt, skirt, shoes, raincoat.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
@@ -21,11 +22,11 @@
 **Pupils:** Point to printed evidence and locate one word.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Distribute the Lina passage and five questions above. Pupils answer independently, underline evidence, compare with a partner, and locate *raincoat* in the picture dictionary.
+**Teacher (25 min):** Distribute the Lina passage and five questions above. Pupils answer independently, underline evidence, compare with a partner, then play the sentence-clue game with a partner. The dictionary lookup is optional extension.
 **Pupils:** Read, underline evidence and complete five answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Score each pupil's five answers against the key (0–5; target at least 4/5), and record successful independent *raincoat* lookup separately (yes/no). Note prompts given.
+**Teacher (10 min):** Score each pupil's five answers against the key (0–5; target at least 4/5), and record successful sentence-clue game participation and responses separately (SP 3.3.1). Note prompts given.
 **Pupils:** Submit reading responses and show a word lookup.
 
 ## Closure (5 minutes)
