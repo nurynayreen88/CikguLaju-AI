@@ -10266,6 +10266,34 @@ def _create_rph_word(doc, section, s, ai_text, path):
         for row in tbl.rows:
             for cell,width in zip(row.cells,(Cm(5.3),Cm(13.45))):
                 cell.width = width
+    # Apply genuine Word bidi only to Jawi Pendidikan Islam content.
+    # Keep numeric and Latin runs LTR; avoid changing English or PDF paths.
+    if 'pendidikan islam' in str(s.get('subject', '')).lower():
+        import re as _jawi_re
+        _arabic = _jawi_re.compile(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]')
+        def _bidi_flag(parent, tag):
+            prop = parent.find(qn('w:' + tag))
+            if prop is None:
+                prop = OxmlElement('w:' + tag)
+                parent.append(prop)
+            prop.set(qn('w:val'), '1')
+        for _tbl in doc.tables:
+            _has_jawi = any(_arabic.search(_run.text or '')
+                            for _row in _tbl.rows for _cell in _row.cells
+                            for _para in _cell.paragraphs for _run in _para.runs)
+            if not _has_jawi:
+                continue
+            _bidi_flag(_tbl._tbl.tblPr, 'bidiVisual')
+            for _row in _tbl.rows:
+                for _cell in _row.cells:
+                    for _para in _cell.paragraphs:
+                        if not _arabic.search(_para.text or ''):
+                            continue
+                        _bidi_flag(_para._p.get_or_add_pPr(), 'bidi')
+                        _para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                        for _run in _para.runs:
+                            if _arabic.search(_run.text or ''):
+                                _bidi_flag(_run._r.get_or_add_rPr(), 'rtl')
     doc.save(path); return path
 
 def create_word_file(s, ai_text, cid):
