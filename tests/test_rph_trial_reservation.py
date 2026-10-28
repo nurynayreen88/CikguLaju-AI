@@ -161,6 +161,24 @@ class TrialReservationTests(unittest.TestCase):
         self.assertEqual(remaining, 0)
         self.assertEqual(calls, ["cikgulaju_commit_rph_trial"])
 
+    def test_truthy_nonboolean_rpc_success_rejected(self):
+        for action in ("reserve", "commit", "release"):
+            with self.subTest(action=action):
+                def rpc(name, payload):
+                    return [{"ok": "true", "remaining": 4,
+                             "reservation_status": "reserved" if action == "reserve"
+                             else "committed" if action == "commit" else "released"}]
+                client = TrialReservationClient(rpc)
+                with self.assertRaises(TrialReservationError):
+                    getattr(client, action)(42, "request-12345")
+
+    def test_committed_reservation_cannot_be_released(self):
+        def rpc(name, payload):
+            return [{"ok": False, "reservation_status": "committed"}]
+        client = TrialReservationClient(rpc)
+        with self.assertRaises(TrialReservationError):
+            client.release(42, "request-12345")
+
     def test_invalid_request_id(self):
         client, _ = self.make_client()
         with self.assertRaises(ValueError):
