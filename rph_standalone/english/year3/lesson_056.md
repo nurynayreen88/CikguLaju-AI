@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 56: Listening (Provisional Draft)
+# English Year 3 — Lesson 56: Reading
 
-**Lesson:** 56
-**Year:** 3
-**Skill focus:** Listening (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Main SK/SP:** Reading 3.2 / 3.2.2
+**Complementary SK/SP:** Speaking 2.2 / 2.2.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate listening response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book pp.38–39; Teacher's Book pp.64–65; world map, country flashcards and cut-up texts.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews familiar countries. Pupils locate Malaysia, Singapore and Thailand on a map.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Play or read a short age-appropriate description twice.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Country vocabulary (15 minutes)
+Teacher introduces Australia and Canada with vocabulary flashcards. Pupils predict where different objects or activities are found.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify three key words, then select matching picture cards.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Reading (25 minutes)
+Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Replay once; pupils correct answers and explain one choice. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks reading details and appropriate requests for assistance.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share one fact about a country and compare it with Malaysia.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
