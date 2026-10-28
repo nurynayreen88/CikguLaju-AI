@@ -5,7 +5,7 @@
 **Complementary SK/SP:** 1.1 / 1.1.1
 **Duration:** 60 minutes
 **References:** Student's Book p.95; Teacher's Book p.144; KPM Year 3 SOW Lesson 145.
-**Materials:** Animal flashcards, animal pictures and adjective cards (tall, small, thin).
+**Materials:** Animal flashcards (one per pupil, including animals in the song), Student's Book p.95 and accompanying song audio.
 
 ## Set Induction (5 minutes)
 Teacher mimes an animal. Pupils guess its name and imitate its movement.
