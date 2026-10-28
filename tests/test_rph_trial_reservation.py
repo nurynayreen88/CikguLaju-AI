@@ -125,7 +125,7 @@ class TrialReservationTests(unittest.TestCase):
 
     def test_reconcile_only_commits_without_sending(self):
         client, calls = self.make_client()
-        remaining = client.reconcile_confirmed_delivery(42, "request-12345")
+        remaining = client.reconcile_confirmed_delivery(42, "request-12345", 123)
         self.assertEqual(remaining, 0)
         self.assertEqual(calls, ["cikgulaju_commit_rph_trial"])
 
