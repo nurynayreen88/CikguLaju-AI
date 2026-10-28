@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 17: Speaking (Provisional Draft)
+# English Year 3 — Lesson 17: Listening
 
-**Lesson:** 17
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Every Day  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 1.2 / 1.2.2  
+**Complementary SK/SP:** 1.3 / 1.3.1  
+**Duration:** 60 minutes  
+**Materials:** SB p.15; TB p.32; daily-routine flashcards  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 17.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Mime daily routines. **Pupils:** Respond and recall prior learning.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Modelling (15 minutes)
+**Teacher:** Demonstrate the lesson language and task steps. **Pupils:** Practise with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Main learning task (25 minutes)
+**Teacher:** Use flashcards in a circle; play the song about Mike twice; pupils hold up cards and mime actions; follow SB p.15 song and picture matching. **Pupils:** Complete the lesson task, practising both standards.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Check two details from the song and meanings inferred from visual clues. **Pupils:** Demonstrate learning and receive feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Review routine words with flashcards. **Pupils:** State one learning point.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Lesson-level SOW standards and outline checked. Direct Teacher's Book review and Word/PDF output tests pending. NOT READY FOR RELEASE.
