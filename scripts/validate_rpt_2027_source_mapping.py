@@ -24,7 +24,7 @@ def validate(path):
         errors.append("Duplicate record_id")
     for r in rows:
         key = r["record_id"]
-        if not re.fullmatch(r"(PI|PJ)2-\\d{3}", key):
+        if not re.fullmatch(r"(PI|PJ)2-\d{3}", key):
             errors.append(f"{key}: invalid record ID")
         if r["year"] != "2":
             errors.append(f"{key}: year must be 2")
@@ -37,7 +37,7 @@ def validate(path):
         if r["calendar_group"] not in ("UNASSIGNED", "A", "B"):
             errors.append(f"{key}: invalid calendar group")
         for code in filter(None, r["sp_codes"].split(";")):
-            if not re.fullmatch(r"\\d+\\.\\d+\\.\\d+", code.strip()):
+            if not re.fullmatch(r"\d+\.\d+\.\d+", code.strip()):
                 errors.append(f"{key}: malformed SP {code}")
     return rows, errors
 
