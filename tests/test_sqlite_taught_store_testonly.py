@@ -70,6 +70,20 @@ class TaughtStoreTests(unittest.TestCase):
             "SELECT COUNT(*) FROM test_taught_progress"
         ).fetchone()[0], 0)
 
+    def test_database_insert_failure_rolls_back_progress(self):
+        self.db.execute(
+            "CREATE TRIGGER reject_taught_event BEFORE INSERT ON test_taught_events "
+            "BEGIN SELECT RAISE(ABORT, 'simulated write failure'); END"
+        )
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.call()
+        self.assertEqual(self.db.execute(
+            "SELECT COUNT(*) FROM test_taught_progress"
+        ).fetchone()[0], 0)
+        self.assertEqual(self.db.execute(
+            "SELECT COUNT(*) FROM test_taught_events"
+        ).fetchone()[0], 0)
+
     def test_invalid_values(self):
         self.assertEqual(self.call(lesson=True), "blocked")
         self.assertEqual(self.call(school_year=0), "blocked")
