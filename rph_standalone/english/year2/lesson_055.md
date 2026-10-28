@@ -5,11 +5,12 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.3  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Learning objectives:** Pupils perform at least three of four chant lines and contribute one meaningful variation.  
-**Success criteria:** Meet each component of the objective independently.  
+**Learning objectives:** Pupils create and perform a short original chant and give a three-step sequence of basic spoken instructions.  
+**Success criteria:** One intelligible original chant variation and three spoken instructions in logical order.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
 **Original chant:** “Open the door, come inside. / Look at the stairs, they're very wide. / In the kitchen, cook and eat. / In the bedroom, rest your feet.”
+**Instruction sequence model:** 'Open the door. Walk to the kitchen. Put the cup on the table.' Pupils adapt the three actions and say them in order.  
 **Gestures:** open door, point up, stir food, rest head. **Creative variation frame:** “In the ____, ____.” **Example:** “In the bathroom, wash your hands.”
 
 ## Set Induction (5 minutes)
@@ -21,7 +22,7 @@
 **Pupils:** Follow the example and practise with support.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Groups rehearse the chant, create one new line and perform to a partner group.  
+**Teacher:** Groups rehearse the chant, create one new chant line and perform to a partner group, then give a three-step instruction sequence aloud.  
 **Pupils:** Complete the tasks and improve answers after feedback.
 
 ## Assessment / PBD (10 minutes)
@@ -31,6 +32,8 @@
 ## Closure (5 minutes)
 **Teacher:** Review two target words and invite a relevant example.  
 **Pupils:** Share one word and a short sentence.
+
+**Speaking PBD:** Record three clear spoken instructions in logical order, separately from the original chant performance.  
 
 **QA:** COMPLETE TEACHER-DEVELOPED STANDALONE DRAFT. Official SOW SK/SP and PDF/A4 checks pending. Not READY.
 
