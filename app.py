@@ -46781,3 +46781,39 @@ def send_document(cid, path, caption=''):
             print('ADMIN DURABLE RPH DELIVERY WARNING:',repr(exc),flush=True)
     return result
 # === END PERSISTENT RPH DELIVERY METRICS ===
+
+
+# === PI WORD JAWI RTL (isolated; PDF renderer unchanged) ===
+_PI_WORD_RTL_PREVIOUS = _create_rph_word
+def _create_rph_word(doc, section, s, ai_text, path):
+    result = _PI_WORD_RTL_PREVIOUS(doc, section, s, ai_text, path)
+    subject = str((s or {}).get('subject') or '').casefold()
+    if not ('pendidikan islam' in subject or 'ڤنديديقن اسلام' in subject):
+        return result
+    from docx import Document as _DocxDocument
+    from docx.oxml import OxmlElement as _OxmlElement
+    from docx.oxml.ns import qn as _qn
+    from docx.enum.text import WD_ALIGN_PARAGRAPH as _WD_ALIGN
+    fixed = _DocxDocument(path)
+    for table in fixed.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                for para in cell.paragraphs:
+                    pPr = para._p.get_or_add_pPr()
+                    bidi = pPr.find(_qn('w:bidi'))
+                    if bidi is None:
+                        bidi = _OxmlElement('w:bidi')
+                        pPr.append(bidi)
+                    bidi.set(_qn('w:val'), '1')
+                    para.alignment = _WD_ALIGN.RIGHT
+                    for run in para.runs:
+                        if any('\\u0600' <= ch <= '\\u08ff' for ch in run.text):
+                            rPr = run._r.get_or_add_rPr()
+                            rtl = rPr.find(_qn('w:rtl'))
+                            if rtl is None:
+                                rtl = _OxmlElement('w:rtl')
+                                rPr.append(rtl)
+                            rtl.set(_qn('w:val'), '1')
+    fixed.save(path)
+    return result
+# === END PI WORD JAWI RTL ===
