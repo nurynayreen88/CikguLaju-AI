@@ -10,7 +10,7 @@
 Teacher reviews animal comparisons.
 
 ## Activity 1 (15 minutes)
-Pairs prepare plural animal word cards.
+Pairs write five plural animal names on cards and check spelling.
 
 ## Activity 2 (25 minutes)
 Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3.
