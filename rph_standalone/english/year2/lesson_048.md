@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 4.3 / 4.3.1
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created examples.
-**Objectives:** Pupils write two short messages describing rooms and revise basic punctuation.
+**Learning objectives:** Pupils write two short messages describing rooms and revise basic punctuation.
 **Success criteria:** Two meaningful messages, each with a greeting, room detail and closing, and at least two correctly punctuated sentences.
 **Materials:** Board, room pictures, message models and exercise books.
 
