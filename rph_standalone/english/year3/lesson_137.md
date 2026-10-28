@@ -13,7 +13,7 @@ Teacher reviews past-tense vocabulary.
 Pupils play a word game using irregular past verbs and recall Katie's diary.
 
 ## Activity 2 (25 minutes)
-Pairs draft a holiday diary or short account, then check spelling and exchange feedback.
+Groups of six use Write, Fold and Pass to make a holiday story, then revise the shared draft using peer and teacher feedback.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks drafts and spelling.
