@@ -1,29 +1,25 @@
 # English Year 3 — Lesson 21: Language Arts
 
-**Unit:** Every day
-**Main SK/SP (existing mapping):** 5.3 / 5.3.1
-**Complementary SK/SP (existing mapping):** 5.1 / 5.1.1
-**Objective (draft):** Pupils can perform a short rhyme with two actions.
-**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Language Arts 5.1 / 5.1.1
+**Duration:** 60 minutes
+**References:** KPM Primary Year 3 SK Scheme of Work Lesson 21; toothbrushes, action-direction cards and brushing-teeth song/video.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two pictures related to Every day and elicit familiar words.
-**Pupils:** Name pictures and answer one question.
+Teacher asks pupils about toothbrush colour and design. Pupils show or describe their toothbrushes.
 
-## Activity 1 — Modelling (7 minutes)
-**Teacher:** Present a short teacher-created rhyme with gestures.
-**Pupils:** Observe and give one supported response.
+## Activity 1 — Preparation (15 minutes)
+In pairs pupils compare toothbrushes using simple sentences. Teacher models directions: up, down, left, right and round.
 
-## Activity 2 — Guided practice (10 minutes)
-**Teacher:** Pupils rehearse and perform the rhyme with a partner. Provide feedback and support.
-**Pupils:** Practise and share answers.
+## Activity 2 — Language Arts (25 minutes)
+Teacher plays the brushing-teeth song/video from the SOW learning outline. Pupils listen, perform actions and create a short group response using familiar language and movements.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check independently whether pupils can perform a short rhyme with two actions; record evidence.
-**Pupils:** Demonstrate the target skill individually.
+## PBD (10 minutes)
+Teacher observes imaginative responses to the song and comprehension of its language. Pupils perform their group response.
 
-## Closure (3 minutes)
-**Teacher:** Review two key words and invite a final example.
-**Pupils:** Share one learned response.
+## Closure (5 minutes)
+Teacher reviews useful vocabulary and toothbrushing actions. Pupils share a learned phrase.
 
-**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.
+**QA:** SOW lesson outline and standards checked. Direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
