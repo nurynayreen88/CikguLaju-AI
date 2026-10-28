@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5
 **Duration:** 60 minutes
 **Source:** NON-TEXTBOOK in prior mapping. Script below is teacher-created.
-**Objective:** Identify three spoken details and describe one room orally.
+**Learning objectives:** Identify three spoken details and describe one room orally.
 **Success criteria:** Three correct listening answers and one intelligible room description.
 **Materials:** Room pictures, board, script and questions below.
 
