@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 137: Provisional Speaking Draft
+# English Year 3 — Lesson 137: Writing
 
-**Lesson:** 137
-**Year:** 3
-**Skill focus:** Speaking (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** On Holiday
+**Main SK/SP:** 4.3 / 4.3.3
+**Complementary SK/SP:** 4.3 / 4.3.2
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple speaking response with age-appropriate support.
+**References:** SB p.89; TB pp.134–135.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher reviews past-tense vocabulary.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Model a short exchange using familiar question-and-answer patterns.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Pupils play a word game using irregular past verbs and recall Katie's diary.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two exchanges in pairs, swapping speaker and listener roles.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Pairs draft a holiday diary or short account, then check spelling and exchange feedback.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils perform one exchange individually; give feedback on clarity. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks drafts and spelling.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils share one corrected sentence.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
