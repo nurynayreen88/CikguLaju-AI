@@ -6,22 +6,23 @@
 **Learning objectives:** Pupils locate four of five details in the printed text on Student's Book p.103 and give two short oral answers.
 **Success criteria:** 4/5 accurate details and two relevant oral answers.
 **Teaching materials:** Super Minds 1 Student's Book p.103, pictures, word cards and classroom resources.
-**Audited source mapping:** Student's Book p.103 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
+**Original supplementary passage (teacher-created, not Student's Book text):** “Pip is a little robot in the school garden. It has a green body, two yellow eyes and three wheels. Every morning, Pip waters the flowers.” **Five detail questions/key:** What is its name?—Pip; Where is it?—school garden; What colour is its body?—green; How many eyes?—two; How many wheels?—three. **Two oral questions/key:** What does Pip water?—the flowers; When does Pip water them?—every morning.
+**Audited source mapping:** Student's Book p.103 (Year 2 SOW audit); Teacher's Book sequence not yet verified. The passage and answers above are independent teacher-created alternatives.
 
 ## Set Induction (5 minutes)
 **Teacher (5 min):** Show a robot illustration and elicit two observations.
 **Pupils:** Name familiar robot features.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model locating one detail in the actual printed page.
+**Teacher (15 min):** Display the complete supplementary Pip passage above and model underlining “green body” as evidence; do not claim this passage appears on Student's Book p.103.
 **Pupils:** Rehearse one model response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read the original supplementary passage, find five details and answer two oral questions.
+**Teacher (25 min):** Give pupils the printed Pip passage. Pupils find the five specified details and answer both oral questions using the supplied key.
 **Pupils:** Underline supporting details and give two oral answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five detail choices and two oral answers. Note independent performance and support needed.
+**Teacher (10 min):** Score five individual detail answers (0–5) and two oral responses (0–2); record independent accuracy and any support.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
