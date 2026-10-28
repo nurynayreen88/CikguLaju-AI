@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.1  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.80. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Objective:** Pupils identify four of five spoken house details and answer two oral prompts.  
+**Learning objectives:** Pupils identify four of five spoken house details and answer two oral prompts.  
 **Success criteria:** Achieve the measurable targets stated in the objective.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
