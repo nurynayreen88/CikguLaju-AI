@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.2  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Learning objectives:** Pupils perform three of four chant lines and create one suitable word variation.  
+**Learning objectives:** Pupils name three people, things or actions in a short text and spell four familiar words.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
+**Original text:** 'Mia likes her red cap. Ben likes his blue shoes. Mia puts on her jacket. Ben picks up his socks.' Pupils identify Mia, Ben, clothing objects and actions.  
 **Original chant:** “Put on your shirt, one, two, three. / Pull on your socks, come with me. / Tie your shoes and wear your hat. / Ready to go, just like that!”
 **Gestures:** put on shirt, pull socks, tie shoes, put on hat. **Variation frame:** “Put on your ____, one, two, three.” **Writing task:** Copy four clothing words from the chant.
 
