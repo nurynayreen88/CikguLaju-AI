@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 10: Language Arts (Provisional Draft)
+# English Year 3 — Lesson 10: Language Arts
 
-**Lesson:** 10
-**Year:** 3
-**Skill focus:** Language Arts (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate language arts response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 5.3 / 5.3.1  
+**Complementary SK/SP:** 5.1 / 5.1.1  
+**Duration:** 60 minutes  
+**Materials:** Action cards, song/video and teacher-prepared song-line strips per SOW  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 10.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Mime can and can't actions. **Pupils:** Respond and recall prior learning.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Read a short rhyme or story extract aloud with expression.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Guided preparation (15 minutes)
+**Teacher:** Model target vocabulary, language and task steps. **Pupils:** Practise with visual and oral scaffolding.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify repeated words and act out the meaning.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Main task (25 minutes)
+**Teacher:** Listen to the SOW action song; mime, sequence prepared lines and compose a short original action-song verse in groups. **Pupils:** Complete the referenced tasks, practising both standards.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs perform a short response or illustrate a favourite line. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Observe imaginative participation and response to the song. **Pupils:** Show independent learning evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Perform original group action verses. **Pupils:** Share one thing learned.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** SOW lesson mapping checked. Direct Teacher's Book inspection and Word/PDF output verification pending. NOT READY FOR RELEASE.
