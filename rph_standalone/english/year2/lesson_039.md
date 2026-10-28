@@ -5,12 +5,13 @@
 **Complementary SK/SP (existing mapping; final SOW verification pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
-**Learning objectives:** Pupils write three clear house sentences.  
-**Success criteria:** three meaningful sentences with at least two correctly punctuated.  
+**Learning objectives:** Pupils plan, draft and revise three house sentences using a simple room-object plan and appropriate capital letters and full stops.  
+**Success criteria:** a three-item room-object plan, three drafted and revised sentences, and at least two correctly punctuated sentences.  
 **Materials:** Board, exercise books, teacher-created picture/word cards and the printable text below.
 
 **Model:** “There is a table in the kitchen. There are two chairs in the dining room. My bedroom has a bed.”
 **Word bank:** kitchen, dining room, bedroom, bathroom, table, chairs, bed, bath.
+**Planning grid:** Room 1 / object 1; Room 2 / object 2; Room 3 / object 3. Pupils fill the grid before drafting.  
 **Frames:** “There is a ____ in the ____.” “There are two ____ in the ____.”
 **Editing practice:** “there are two chairs in the kitchen” → “There are two chairs in the kitchen.”
 **Checklist:** Capital first letter; spaces; correct *is/are*; full stop.
@@ -24,11 +25,11 @@
 **Pupils:** Follow the model and demonstrate one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils draw three room/object pairs and write three sentences, using frames if needed. Partners check capitals, spaces and full stops; pupils revise independently.  
+**Teacher:** Pupils complete the three-item planning grid, draft three sentences, then revise them using the checklist and frames if needed. Partners check capitals, spaces and full stops; pupils revise independently.  
 **Pupils:** Complete the task, compare evidence with a partner and improve their responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Collect three independently written sentences and completed checklist. Score meaning, subject–verb choice and punctuation; ask for one visible correction.  
+**Teacher:** Collect the planning grid, first draft, revised three sentences and completed checklist. Score meaning, subject–verb choice and punctuation; ask for one visible correction.  
 **Pupils:** Demonstrate the stated success criteria without partner help.
 
 ## Closure (5 minutes)
