@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; official SOW verification pending):** 3.1 / 3.1.4  
 **Duration:** 60 minutes  
 **Source classification:** SB p.87; TB steps not verified. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
-**Learning objective:** Pupils recognise and reproduce initial sounds in five familiar clothing words (main SP 1.1.1) and match four printed words to pictures (complementary SP 3.1.4).  
+**Learning objectives:** Pupils recognise and reproduce initial sounds in five familiar clothing words (main SP 1.1.1) and match four printed words to pictures (complementary SP 3.1.4).  
 **Success criteria:** Independently identify and produce initial sounds in at least four of five words and match at least four printed words to pictures.  
 **Materials:** Board, clothing picture/word cards, exercise books and the printable resources below.
 
