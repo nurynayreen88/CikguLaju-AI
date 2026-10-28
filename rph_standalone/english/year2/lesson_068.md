@@ -9,6 +9,8 @@
 **Success criteria:** Individually select the correct main idea from three choices, identify one supporting clue, and locate at least four of five written details.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
+**SOW alignment note:** The official Scheme of Work prioritises the picture story in Super Minds 1 Activity 1, pp.86–87 (including the top of p.87), with a 'saying sorry' value. The passage below is a teacher-created fallback only; the textbook story must be checked against the Teacher's Book before this lesson is marked READY.
+
 **Original fallback passage — “A Rainy Morning”:** “It is raining. Adam wears a blue raincoat and black boots. His sister, Mia, has a yellow umbrella. They walk to school together. At school, they put their wet coats on hooks.”
 **Main idea (choose one):** A. Getting ready for school on a rainy day; B. Cooking at home; C. Playing football. **Answer:** A. **Supporting clue:** It is raining; Adam wears a raincoat and boots; they walk to school. **Five details/key:** weather—raining; Adam's raincoat—blue; boots—black; Mia's umbrella—yellow; destination—school.
 **Questions/key:** “Who has a yellow umbrella?” — Mia. “Where do they put their coats?” — on hooks.
