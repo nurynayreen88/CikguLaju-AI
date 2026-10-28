@@ -13,7 +13,7 @@ Teacher reviews places vocabulary using flashcards.
 Teacher draws clock faces and reviews o'clock and half past, then follows the warm-up and vocabulary guidance.
 
 ## Activity 2 (25 minutes)
-Pupils cut out the cards on p.131 and play Snap in pairs, asking and answering questions about times.
+Pupils cut out the cards on p.131 and play Snap in pairs, turning over one card each and naming the time or place; when cards match, the first pupil to say 'Snap' wins them. Teacher then models Student's Book p.70 Activity 1 with a confident pair before pupils practise asking and answering.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks simple responses and understanding of questions.
