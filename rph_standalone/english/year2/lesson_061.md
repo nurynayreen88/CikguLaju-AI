@@ -5,11 +5,12 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
-**Learning objectives:** Pupils identify four of five outfit details and answer two oral questions.  
+**Learning objectives:** Pupils answer four of five short supported oral questions and use visual clues to interpret two spoken messages.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and the resources below.
 
 **Original scripts:** A: “Aina is wearing a red shirt, blue trousers and white shoes. She has a yellow hat.” B: “Ben is wearing a green shirt, black trousers and brown shoes. He has no hat.”
+**Visual-clue task:** While saying 'Put on your hat', the teacher points to a hat picture; while asking 'Which shoes?', the teacher points at the shoe cards. Pupils explain which visual clue helped them understand each message.  
 **Five prompts/key:** A's shirt—red; A's trousers—blue; A's shoes—white; B's shirt—green; B's hat—none. **Oral prompts:** “Who wears white shoes?”—Aina; “Who wears black trousers?”—Ben.
 
 ## Set Induction (5 minutes)
@@ -31,6 +32,8 @@
 ## Closure (5 minutes)
 **Teacher:** Review two clothing words and invite one accurate example.  
 **Pupils:** Share one word and a short response.
+
+**PBD focus:** Record answers to five short supported questions (SP 1.2.5) and interpretation of two messages using gesture/picture clues (SP 1.3.1) separately.  
 
 **QA:** Complete teacher-developed standalone draft; official SOW SK/SP and PDF/A4 checks pending. Not READY.
 
