@@ -8,6 +8,7 @@
 **Teaching materials:** Pictures, word cards and classroom resources.
 
 **Original teacher-created supplementary resource:** **Original picture:** round head, one blue eye, two short arms. **Three model sentences:** It has a round head. It has one blue eye. Its arms are short. **Editing key:** It hasa round head. -> It has a round head.; It has oneblue eye. -> It has one blue eye.
+**Independent editing items (different from the model examples):** 1. “Myrobot has short arms.” 2. “It has ablue eye.” **Independent key:** 1. “My robot has short arms.” 2. “It has a blue eye.” Pupils insert missing spaces and mark each correction. These two items are reserved for individual PBD; the two model examples above are guided practice only.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -19,11 +20,11 @@
 **Pupils:** Rehearse one short sentence.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Pupils write three sentences and correct two spacing errors using a checklist.
+**Teacher (25 min):** Pupils write three sentences about the original robot picture. Model the two guided spacing examples, then give the two different independent editing items without displaying the key. Pupils mark the inserted spaces.
 **Pupils:** Write three sentences and correct two errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check three legible sentences and two corrections. Record individual support needed.
+**Teacher (10 min):** Score three legible, understandable sentences (0–3) and the two independent spacing corrections (0–2) against the supplied key. Do not count corrections copied from the modelled examples; record individual support separately.
 **Pupils:** Submit individual writing evidence.
 
 ## Closure (5 minutes)
