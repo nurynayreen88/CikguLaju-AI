@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objective:** Pupils draft a four-line clothing dialogue and perform three lines intelligibly.  
+**Learning objectives:** Pupils draft a four-line clothing dialogue and perform three lines intelligibly.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
