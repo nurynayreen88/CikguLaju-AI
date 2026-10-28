@@ -12,7 +12,7 @@
 **Teacher:** Review family words using a word game. **Pupils:** Respond and recall relevant language.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
+**Teacher:** Elicit family vocabulary and build two model sentences, such as 'I have got two brothers.' Ask pupils to describe their families orally before drawing and writing. **Pupils:** Name family members and rehearse sentences with a partner.
 
 ## Activity 2 — Core lesson task (25 minutes)
 **Teacher:** Model sentences about family using have got; pupils draw their family and write descriptive sentences with supported cursive practice; display work and play a family guessing game. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
