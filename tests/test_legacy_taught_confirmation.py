@@ -22,6 +22,23 @@ class LegacyTaughtTests(unittest.TestCase):
         self.assertEqual(confirm_from_legacy_timetable(
             **self.kw, explicit_action=True), (True, "eligible"))
 
+    def test_truthy_non_boolean_action_blocked(self):
+        for action in (1, "true", ["confirm"]):
+            with self.subTest(action=action):
+                self.assertEqual(confirm_from_legacy_timetable(
+                    **self.kw, explicit_action=action),
+                    (False, "teacher_confirmation_required"))
+
+    def test_other_teacher_cannot_confirm(self):
+        kw = self.kw | {"teacher_id": 456}
+        self.assertFalse(confirm_from_legacy_timetable(
+            **kw, explicit_action=True)[0])
+
+    def test_replay_same_lesson_blocked(self):
+        kw = self.kw | {"lesson_sequence": 1}
+        self.assertFalse(confirm_from_legacy_timetable(
+            **kw, explicit_action=True)[0])
+
     def test_generation_does_not_confirm(self):
         self.assertEqual(confirm_from_legacy_timetable(**self.kw),
                          (False, "teacher_confirmation_required"))
