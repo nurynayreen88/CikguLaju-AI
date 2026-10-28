@@ -1,33 +1,31 @@
-# English Year 3 — Lesson 1: Listening (Provisional Draft)
+# English Year 3 — Lesson 1: Listening
 
-**Lesson:** 1
-**Year:** 3
-**Skill focus:** Listening (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate listening response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** Listening 1.3 / 1.3.1 — Guess meanings of unfamiliar words using visual clues when others speak.  
+**Complementary SK/SP:** Speaking 2.1 / 2.1.5 — Describe people and objects using suitable words and phrases.  
+**Duration:** 60 minutes  
+**Objective:** Pupils identify three adjectives from oral prompts with visual support and describe one person using a suitable adjective.  
+**Materials:** Get Smart plus 3 Student's Book p.5 Activity 1, Teacher's Book p.18, adjective flashcards and audio as referenced in the SOW.
 
-## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+## Set Induction (10 minutes)
+**Teacher:** Organise a name circle; model 'My name's...' and 'His/Her name's...'; lead a short memory game.
+**Pupils:** Introduce themselves and a classmate orally.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Play or read a short age-appropriate description twice.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Vocabulary and visual clues (15 minutes)
+**Teacher:** Present adjective flashcards or drawings and model using visual clues to infer meaning.
+**Pupils:** Listen, point to matching pictures and describe a pictured person.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify three key words, then select matching picture cards.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Student's Book (20 minutes)
+**Teacher:** Guide Vocabulary and Activity 1 on Student's Book p.5, following the SOW reference to Teacher's Book p.18; observe responses during the song.
+**Pupils:** Listen, respond to the song and match spoken adjectives to visuals.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Replay once; pupils correct answers and explain one choice. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD / Reinforcement (10 minutes)
+**Teacher:** Give three oral adjective prompts and ask each pupil to describe one person; record evidence for both SPs.
+**Pupils:** Identify three matching visuals and produce a short description.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Run an adjective flashcard guessing game and review common errors.
+**Pupils:** Say one adjective and its meaning.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA status:** Official Year 3 SK SOW lesson mapping, standards and page references checked. Direct Teacher's Book inspection and generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
