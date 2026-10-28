@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
-**Learning objective:** Pupils write three meaningful clothing sentences and correct two errors.  
+**Learning objectives:** Pupils write three meaningful clothing sentences and correct two errors.  
 **Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
