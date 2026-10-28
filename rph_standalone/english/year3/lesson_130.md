@@ -1,7 +1,7 @@
 # English Year 3 — Lesson 130: Speaking
 
 **Unit:** On Holiday
-**Main SK/SP:** 2.3 / 2.3.1
+**Main SK/SP:** 2.1 / 2.3.1
 **Complementary SK/SP:** 3.2 / 3.2.2
 **Duration:** 60 minutes
 **References:** Student's Book p.85; Teacher's Book pp.130–131; KPM Year 3 SOW.
