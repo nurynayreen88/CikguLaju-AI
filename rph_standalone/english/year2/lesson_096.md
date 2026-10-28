@@ -3,10 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 2.1 / 2.1.4
-**Learning objectives:** Pupils identify four of five spoken robot descriptions and respond to two short questions.
+**Learning objectives:** Pupils identify four of five details in supported spoken action sentences and ask and answer two ability questions.
 **Success criteria:** 4/5 correct choices and two relevant answers.
 **Teaching materials:** Super Minds 1 Student's Book p.96, pictures, word cards and classroom resources.
 
+**Action language:** jump up high, run, dance, crawl, fly. **Ability exchanges:** 'Can it fly?' 'Yes, it can.' 'Can it crawl?' 'No, it cannot.'
 **Original listening cards:** A round head; B two green eyes; C four long arms; D short blue legs; E a red body. **Teacher-read sequence:** “It has a red body. It has four long arms. Its head is round. Its legs are short and blue. It has two green eyes.” **Key:** E,C,A,D,B. **Oral questions/key:** “How many arms?”—four. “What colour are the eyes?”—green.
 **Audited source mapping:** Student's Book p.96 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
@@ -23,7 +24,7 @@
 **Pupils:** Listen, choose five answers and respond to two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check five listening choices and two oral answers.
+**Teacher (10 min):** Check five listening-detail choices (SP 1.2.2) and two ability exchanges (SP 2.1.4).
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
