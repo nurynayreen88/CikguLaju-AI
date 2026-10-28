@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 53: Reading (Provisional Draft)
+# English Year 3 — Lesson 53: Language Arts
 
-**Lesson:** 53
-**Year:** 3
-**Skill focus:** Reading (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Speaking 2.3 / 2.3.1
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate reading response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** KPM Year 3 SK Scheme of Work Lesson 53; seasons picture cards and group song worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews warm and cool seasons. Pupils name weather and seasonal activities.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Display a short level-appropriate passage and pre-teach two words.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Song pattern (15 minutes)
+Teacher demonstrates the seasons song specified in the SOW and elicits its pattern of season names, adjectives and action verbs. Pupils perform matching actions.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils read, underline clues and match three statements to the text.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Creative performance (25 minutes)
+Pupils work in groups of four or five to write their own short original seasonal verses, choose actions and rehearse. Teacher supports suitable vocabulary and clear speaking.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs justify their answers using words from the passage. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher observes creative responses and short group narration. Pupils perform their original verses.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Groups share a favourite seasonal word and action.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct song resource and Word/PDF tests pending. NOT READY FOR RELEASE.
