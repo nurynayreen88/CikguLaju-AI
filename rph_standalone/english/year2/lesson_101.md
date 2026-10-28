@@ -3,7 +3,7 @@
 **Unit:** The robot
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objectives:** Pupils identify four of five robot features in short spoken descriptions and respond to two listening prompts.
+**Learning objectives:** Pupils identify four of five details in supported spoken sentences and understand two short supported questions.
 **Success criteria:** 4/5 accurate choices and two relevant responses.
 **Teaching materials:** Two original robot picture cards, listening checklist and classroom resources.
 **Original listening resource (teacher-created, not textbook audio):** Robot A has a square head, two blue eyes and short arms. Robot B has a round head, one green eye and long arms. Read these five clues in order: square head (A), green eye (B), long arms (B), blue eyes (A), round head (B). **Answer key:** A, B, B, A, B. **Follow-up questions:** Which robot has short arms? (A). Which robot has one eye? (B).
@@ -23,7 +23,7 @@
 **Pupils:** Choose five answers and respond to two prompts.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five individual listening choices and two spoken answers; note any teacher prompts.
+**Teacher (10 min):** Record five listening-detail choices (SP 1.2.2) and understanding of two short supported questions (SP 1.2.5), noting prompts.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
