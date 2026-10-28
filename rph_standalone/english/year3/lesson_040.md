@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 40: Reading
 
-**Unit:** Right now
-**Main SK/SP:** 3.2 / 3.2.1
-**Complementary SK/SP:** 3.2 / 3.2.2
+**Unit:** Right Now
+**Main SK/SP:** Reading 3.2 / 3.2.1
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Objective:** Pupils read a short textbook passage and identify key information in the context of Right now.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book pp.28–29; Teacher's Book pp.50–51; pictures of four children and matching texts.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher leads a short classroom exercise. Pupils name actions such as dancing and jogging.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to read a short textbook passage and identify key information, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Vocabulary (15 minutes)
+Teacher introduces exercise vocabulary and displays pictures of four children. Pupils predict their activities.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Reading (25 minutes)
+Pupils read short texts and match each one to a child. Teacher guides Student's Book p.28 Activity 1 and the Grammar Box and Activity 2 on pp.28–29.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 3.2.1; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks the main idea and two details from each text, noting pupils who need extra support.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share one activity a child is or is not doing.
 
-**Source:** Year 3 English SOW 2026, Lesson 40. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; source contains a typographical '3..2.1' interpreted as 3.2.1. Direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
