@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 108: Speaking
 
-**Unit:** Out and about
+**Unit:** Out and About
 **Main SK/SP:** 2.1 / 2.1.2
 **Complementary SK/SP:** 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the speaking learning standard in the context of Out and about.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book pp.70,131; Teacher's Book pp.108–109; clock.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Out and about using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews places vocabulary using flashcards.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the speaking task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 (15 minutes)
+Teacher draws clock faces and reviews o'clock and half past, then follows the warm-up and vocabulary guidance.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Out and about.
+## Activity 2 (25 minutes)
+Pupils cut out the cards on p.131 and play Snap in pairs, asking and answering questions about times.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 2.1.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks simple responses and understanding of questions.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils ask a partner the time.
 
-**Source:** Year 3 English SOW 2026, Lesson 108. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
