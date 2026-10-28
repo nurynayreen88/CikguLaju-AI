@@ -10,7 +10,7 @@
 Teacher reviews adjectives from Lesson 115.
 
 ## Activity 1 (15 minutes)
-Groups receive an adjective card and draw or write associations with that word.
+Groups write or draw associations for an adjective on a shared paper, then pass papers to another group for at least four rounds, adding a new idea each time. Teacher reviews the final papers and supplies useful vocabulary.
 
 ## Activity 2 (25 minutes)
 Pupils read short examples, then write their own sentences using adjectives and check spelling.
