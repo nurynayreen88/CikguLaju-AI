@@ -1,29 +1,25 @@
 # English Year 3 — Lesson 20: Writing
 
-**Unit:** Every day
-**Main SK/SP (existing mapping):** 4.3 / 4.3.3
-**Complementary SK/SP (existing mapping):** 4.3 / 4.3.1
-**Objective (draft):** Pupils can write two simple sentences.
-**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Writing 4.3 / 4.3.3
+**Complementary SK/SP:** Writing 4.3 / 4.3.1
+**Duration:** 60 minutes
+**References:** KPM Year 3 SK SOW Lesson 20; daily routine flashcards and teacher-prepared writing worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two pictures related to Every day and elicit familiar words.
-**Pupils:** Name pictures and answer one question.
+Teacher reviews daily routines. Pupils name activities and recall frequency words.
 
-## Activity 1 — Modelling (7 minutes)
-**Teacher:** Model a sentence with capital letter and full stop.
-**Pupils:** Observe and give one supported response.
+## Activity 1 — Modelling (15 minutes)
+Teacher models 'I always/sometimes/never ...' and changes examples to 'He/She ...' with third-person -s. Pupils practise transformations.
 
-## Activity 2 — Guided practice (10 minutes)
-**Teacher:** Pupils write two sentences from pictures and correct one error. Provide feedback and support.
-**Pupils:** Practise and share answers.
+## Activity 2 — Guided writing (25 minutes)
+Groups draft sentences for routine flashcards, write them on the board and peer-check. Pupils then write a short routine description using frequency adverbs and punctuation.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check independently whether pupils can write two simple sentences; record evidence.
-**Pupils:** Demonstrate the target skill individually.
+## PBD (10 minutes)
+Teacher checks sentence range, third-person verb endings, capitals and full stops. Pupils revise their drafts.
 
-## Closure (3 minutes)
-**Teacher:** Review two key words and invite a final example.
-**Pupils:** Share one learned response.
+## Closure (5 minutes)
+Pupils share one corrected routine sentence.
 
-**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.
+**QA:** SOW standards and lesson outline checked. Direct Teacher's Book and Word/PDF output tests pending. NOT READY FOR RELEASE.
