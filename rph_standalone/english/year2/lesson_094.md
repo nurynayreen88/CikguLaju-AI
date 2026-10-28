@@ -3,10 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 4.2 / 4.2.3
 **Complementary SK/SP:** 3.3 / 3.3.1
-**Learning objectives:** Pupils write three meaningful robot descriptions and use a picture dictionary or teacher-made picture-word index to check the spelling of two words (complementary SP 3.3.1, pending official verification).
-**Success criteria:** three understandable sentences and two correct spelling checks.
+**Learning objectives:** Pupils write three short familiar robot-action instructions and read and enjoy a sentence-level card game.
+**Success criteria:** three intelligible written instructions and two successfully read action cards.
 **Teaching materials:** Teacher-created robot cards, board, individual record sheet and picture dictionary or a teacher-made picture-word index.
 
+**Original action cards:** 'Touch your head.' 'Raise your arms.' 'Turn around.' 'Clap your hands.' Pupils write three instructions, exchange cards, read them and mime each action. **Game rule:** Take turns drawing a card; a partner guesses the written instruction.
 **Original robot picture:** square head, two eyes, four arms, red body. **Word bank:** square, head, eyes, arms, red. **Three model sentences:** “My robot has a square head. It has four arms. Its body is red.” **Spelling check:** Pupils locate *square* and *arms* in a picture dictionary or a teacher-made picture-word index (illustrations of a square shape and robot arms labelled with the two words), then compare spelling letter by letter. The word bank supports writing but is not counted as dictionary lookup.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
@@ -19,11 +20,11 @@
 **Pupils:** Rehearse a sentence and locate a spelling model.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Pupils draw a robot, write three sentences describing it, and locate two target words in the illustrated reference index to check spelling. Pupils underline corrected words.
+**Teacher (25 min):** Pupils write three short robot-action instructions on cards, exchange them, read two partner cards and mime the actions.
 **Pupils:** Write and revise two words after checking.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Score three meaningful sentences (0–3) and independently observed reference lookups for *square* and *arms* (0–2). Record corrected spellings and teacher assistance separately.
+**Teacher (10 min):** Score three written instructions (SP 4.2.3) and two independently read sentence-level game cards (SP 3.3.1). Record corrected spellings and teacher assistance separately.
 **Pupils:** Submit individual written work.
 
 ## Closure (5 minutes)
