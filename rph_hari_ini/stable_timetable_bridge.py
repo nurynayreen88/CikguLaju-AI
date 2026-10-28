@@ -22,7 +22,9 @@ def verified_stable_session(*, teacher_id, school_year, session_date, row,
         class_name=candidate.class_key, registry=registry)
     if identity is None:
         return False, "unregistered_class_identity", None
-    if not isinstance(subject_key, str) or not subject_key.strip() or subject_key != subject_key.strip():
+    if (not isinstance(subject_key, str) or not subject_key.strip()
+            or subject_key != subject_key.strip()
+            or ":" in subject_key or any(ch.isspace() for ch in subject_key)):
         return False, "invalid_subject_key", None
     # A subject identifier must be resolved by a trusted curriculum mapping.
     # Never accept a mismatched subject for the timetable row.
