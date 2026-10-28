@@ -12,7 +12,7 @@
 **Teacher:** Mime daily routines. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Demonstrate the lesson language and task steps. **Pupils:** Practise with support.
+**Teacher:** Mime new daily-routine actions, arrange pupils in a circle and distribute action flashcards. Introduce the song about Mike and explain that pupils should raise their card when they hear its action. **Pupils:** Practise the actions, name the flashcard phrases and predict which actions they will hear.
 
 ## Activity 2 — Main learning task (25 minutes)
 **Teacher:** Use flashcards in a circle; play the song about Mike twice; pupils hold up cards and mime actions; follow SB p.15 song and picture matching. **Pupils:** Complete the lesson task, practising both standards.
