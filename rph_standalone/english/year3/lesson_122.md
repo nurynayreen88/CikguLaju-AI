@@ -13,7 +13,7 @@ Teacher introduces Damia and asks pupils to predict five things she bought.
 Pupils read Damia's supermarket story and check predictions; teacher explains unfamiliar past verbs using context.
 
 ## Activity 2 (25 minutes)
-Pupils use the story as a model to create and share an imaginative shopping account with classmates.
+Pupils solve the shopping puzzle in Damia's story and explain the answer. They create an Alvin shopping puzzle, exchange it with classmates, and solve their partners' puzzles.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks creative response and reading details.
