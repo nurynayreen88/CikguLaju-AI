@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 15: Language Arts (Provisional Draft)
+# English Year 3 — Lesson 15: Language Arts
 
-**Lesson:** 15
-**Year:** 3
-**Skill focus:** Language Arts (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate language arts response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 5.2 / 5.2.1  
+**Complementary SK/SP:** 2.3 / 2.3.1  
+**Duration:** 60 minutes  
+**Materials:** Teacher's Book pp.28–29; story puppets and textbook story materials  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 15.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Play Who is it? from Teacher's Book p.19. **Pupils:** Respond and recall prior learning.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Read a short rhyme or story extract aloud with expression.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Guided preparation (15 minutes)
+**Teacher:** Model the target language and provide examples. **Pupils:** Practise with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify repeated words and act out the meaning.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Main task (25 minutes)
+**Teacher:** Introduce puppets; predict story; guide Activity 1 on p.28; pupils rehearse and perform in pairs. **Pupils:** Complete the referenced tasks, practising both standards.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs perform a short response or illustrate a favourite line. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Observe story response, speaking and pronunciation. **Pupils:** Demonstrate their learning; teacher records evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Discuss the value shown in the story. **Pupils:** Summarise their learning.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** SOW lesson mapping checked. Direct Teacher's Book inspection and Word/PDF output verification pending. NOT READY FOR RELEASE.
