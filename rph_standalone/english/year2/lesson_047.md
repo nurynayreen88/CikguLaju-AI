@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.4
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created passage, not a textbook extract.
-**Objectives:** Pupils locate three details in a short text and write one meaningful sentence.
+**Learning objectives:** Pupils locate three details in a short text and write one meaningful sentence.
 **Success criteria:** At least three of four correct text-supported answers and one meaningful room sentence; record individual results separately.
 **Materials:** Printed passage, question cards, exercise books.
 
