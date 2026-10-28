@@ -13,7 +13,7 @@ Pupils revisit the previous song and perform TPR actions.
 Teacher points to place cards and models 'I was at the shopping centre' and 'She was at...'.
 
 ## Activity 2 (25 minutes)
-Pupils ask classmates where they were yesterday and report partners' answers using was and were.
+Pairs practise SB p.75 Activity 2 using real answers about yesterday, request help in English when needed, then play Where Was I? from TB p.117.
 
 ## Assessment / PBD (10 minutes)
 Teacher observes short recounts and requests for clarification.
