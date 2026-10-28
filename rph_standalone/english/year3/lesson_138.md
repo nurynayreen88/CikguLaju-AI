@@ -13,7 +13,7 @@ Teacher introduces the sailor song and asks pupils to predict animals.
 Teacher plays or sings the song; pupils listen for animal names.
 
 ## Activity 2 (25 minutes)
-Pupils perform the song with actions and invent a short variation using animals.
+Teacher displays pictures of the sea horse, jellyfish, turtle, octopus, baby shark and blue whale. Pupils match animal names, sing along and use the pictures as memory prompts when the written words are removed.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks participation and descriptions.
