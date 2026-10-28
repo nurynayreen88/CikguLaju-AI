@@ -3,9 +3,10 @@
 **Unit:** Get dressed!
 **Main SK/SP:** 3.2 / 3.2.4
 **Complementary SK/SP:** 2.1 / 2.1.5
-**Learning objectives:** Pupils locate four of five explicit details on Student's Book p.93 and give one relevant oral response.
-**Success criteria:** 4/5 correct detail responses and one appropriate explanation.
+**Learning objectives:** Pupils use a picture dictionary to find, list and categorise four clothing words, then describe two clothing objects orally.
+**Success criteria:** Four correctly located and categorised words and two clear object descriptions.
 **Teaching materials:** Super Minds 1 Student's Book p.93, pictures, word cards and classroom resources.
+**Teacher-created picture dictionary index:** head: hat, cap; body: shirt, jacket; feet: socks, shoes. **Sorting task:** Find four words, list them under head/body/feet, then say 'The hat is red' and 'The socks are blue' or equivalent accurate descriptions.
 **Audited source mapping:** Student's Book p.93 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +18,11 @@
 **Pupils:** Point to printed evidence.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Set five page-grounded detail prompts and invite a brief clothing-related personal response.
+**Teacher (25 min):** Guide pupils to find four clothing words in a picture dictionary, list and categorise them by body area, then describe two pictured objects.
 **Pupils:** Read, underline evidence and share one response.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five individual reading answers and one oral response.
+**Teacher (10 min):** Record four dictionary word finds and categories (SP 3.2.4) and two oral descriptions (SP 2.1.5).
 **Pupils:** Submit responses with printed evidence.
 
 ## Closure (5 minutes)
