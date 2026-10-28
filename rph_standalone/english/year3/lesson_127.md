@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 127: Provisional Speaking Draft
+# English Year 3 — Lesson 127: Language Arts
 
-**Lesson:** 127
-**Year:** 3
-**Skill focus:** Speaking (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** Where Were You Yesterday?
+**Main SK/SP:** 5.2 / 5.2.1
+**Complementary SK/SP:** 3.2 / 3.2.3
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple speaking response with age-appropriate support.
+**References:** SB pp.82–83; TB pp.126–127.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher leads a word sort for circus, restaurant and cinema.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Model a short exchange using familiar question-and-answer patterns.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Teacher previews the story using pictures and adjectives such as funny, delicious and boring.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two exchanges in pairs, swapping speaker and listener roles.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Pupils read the story, predict events and discuss characters and feelings.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils perform one exchange individually; give feedback on clarity. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks response to the story and inferred vocabulary.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils share a favourite part of the story.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
