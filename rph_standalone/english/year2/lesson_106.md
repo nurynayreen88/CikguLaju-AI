@@ -3,11 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 1.1 / 1.1.1
 **Complementary SK/SP:** 3.1 / 3.1.2
-**Learning objectives:** Pupils identify four of five robot-related words heard in a short spoken sequence and match four printed words to pictures.
-**Success criteria:** 4/5 listening choices and four correct printed-word matches.
+**Learning objectives:** Pupils recognise and reproduce /g/ in four familiar words and identify initial or final /g/ in printed words.
+**Success criteria:** four correct /g/ responses and four initial/final sound identifications.
 **Teaching materials:** Super Minds 1 Student's Book p.99, pictures, word cards and classroom resources.
 
-**Teacher-created standalone resource (not verified textbook content):** **Original teacher-read word sequence:** head, legs, jump, eyes, wave. **Picture cards:** A head, B legs, C jumping robot, D eyes, E waving robot. **Listening key:** A,B,C,D,E. **Printed matching key:** head–A, legs–B, jump–C, wave–E.
+**Teacher-created standalone resource (not verified textbook content):** **Phonics examples:** go, game (initial /g/); bag, leg (final /g/). Teacher models the sound and shows the printed words. **Original teacher-read word sequence:** head, legs, jump, eyes, wave. **Picture cards:** A head, B legs, C jumping robot, D eyes, E waving robot. **Listening key:** A,B,C,D,E. **Printed matching key:** head–A, legs–B, jump–C, wave–E.
 **Audited source mapping:** Student's Book p.99 (Year 2 SOW audit); Teacher's Book sequence not yet verified.
 
 ## Set Induction (5 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Read the five original words twice and ask pupils to select five pictures, then match four printed words.
+**Teacher (25 min):** Review the p.98–99 picture story, then model /g/ and guide pupils to hear, repeat and locate /g/ at the beginning or end of four words.
 **Pupils:** Listen, choose five pictures and match four printed words.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check five listening choices and four printed-word matches. Note individual support required.
+**Teacher (10 min):** Record four reproduced /g/ sounds (SP 1.1.1) and four initial/final sound identifications (SP 3.1.2). Note individual support required.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
