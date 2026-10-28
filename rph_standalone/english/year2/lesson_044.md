@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 2.2 / 2.2.2  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.78. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
-**Objective:** Pupils ask and answer two questions and describe one room.  
+**Learning objectives:** Pupils ask and answer two questions and describe one room.  
 **Success criteria:** Independently complete all stated components.  
 **Materials:** Board, room cards, exercise books and resources below.
 
