@@ -3,11 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 4.3 / 4.3.2
 **Complementary SK/SP:** 3.1 / 3.1.1
-**Learning objectives:** Pupils write three robot-themed sentences legibly and copy four printed robot words accurately.
-**Success criteria:** three meaningful sentences and four accurately copied words.
+**Learning objectives:** Pupils spell four familiar action words accurately and identify four alphabet letters.
+**Success criteria:** four accurately spelled words and four correctly named letters.
 **Teaching materials:** Pictures, word cards and classroom resources.
 
-**Teacher-created standalone resource (not verified textbook content):** **Robot prompt:** two eyes, four wheels, red arms. **Copying words:** eyes, wheels, arms, robot. **Original model sentences:** My robot has two eyes. It has four wheels. Its arms are red.
+**Teacher-created standalone resource (not verified textbook content):** **Original spelling game:** Teacher says run, jump, clap and dance; pupils spell each word without copying. **Letter cards:** r, j, c, d. Pupils name each letter and match it to the beginning of the correct action word. **Robot prompt:** two eyes, four wheels, red arms. **Copying words:** eyes, wheels, arms, robot. **Original model sentences:** My robot has two eyes. It has four wheels. Its arms are red.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Demonstrate word formation and spacing, then ask pupils to copy four words and write three sentences about the robot.
+**Teacher (25 min):** Guide an action-word spelling game with run, jump, clap and dance; pupils name the first letter of each word using letter cards.
 **Pupils:** Write three sentences and copy four words.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check four accurate copied words and three meaningful sentences. Note individual support required.
+**Teacher (10 min):** Check four independently spelled familiar words (SP 4.3.2) and four correctly identified alphabet letters (SP 3.1.1). Note individual support required.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
