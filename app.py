@@ -10293,40 +10293,40 @@ def _create_rph_word(doc, section, s, ai_text, path):
                         _para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                         # Split mixed-script runs without changing their text.
                         # Keep Latin letters, SK/SP numbers and punctuation LTR.
+                        # Walk Word text nodes, preserving native breaks/tabs and formatting.
+                        from copy import deepcopy as _copy_xml
                         for _run in list(_para.runs):
-                            _text = _run.text or ''
-                            if not _arabic.search(_text):
-                                continue
-                            # Preserve tabs and line breaks as native Word nodes.
-                            if _run._r.find(qn('w:br')) is not None or _run._r.find(qn('w:tab')) is not None:
-                                _bidi_flag(_run._r.get_or_add_rPr(), 'rtl')
-                                continue
-                            _chunks = _jawi_re.findall(
-                                r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+|[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+',
-                                _text,
-                            )
-                            if len(_chunks) == 1:
-                                _bidi_flag(_run._r.get_or_add_rPr(), 'rtl')
-                                continue
-                            from copy import deepcopy as _copy_xml
                             _original = _run._r
+                            if not _arabic.search(_run.text or ''):
+                                continue
+                            _pieces = []
+                            for _node in list(_original):
+                                if _node.tag == qn('w:rPr'):
+                                    continue
+                                if _node.tag == qn('w:t') and _node.text:
+                                    for _chunk in _jawi_re.findall(
+                                        r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+|[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+',
+                                        _node.text,
+                                    ):
+                                        _part = _copy_xml(_node)
+                                        _part.text = _chunk
+                                        _pieces.append((_part, bool(_arabic.search(_chunk))))
+                                else:
+                                    _pieces.append((_copy_xml(_node), False))
                             _parent = _original.getparent()
                             _index = _parent.index(_original)
-                            for _chunk in _chunks:
-                                _clone = _copy_xml(_original)
-                                for _node in list(_clone):
-                                    if _node.tag != qn('w:rPr'):
-                                        _clone.remove(_node)
-                                _new_text = OxmlElement('w:t')
-                                _new_text.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
-                                _new_text.text = _chunk
-                                _clone.append(_new_text)
+                            for _part, _is_jawi in _pieces:
+                                _clone = OxmlElement('w:r')
+                                _rpr_old = _original.find(qn('w:rPr'))
+                                if _rpr_old is not None:
+                                    _clone.append(_copy_xml(_rpr_old))
                                 _rpr = _clone.get_or_add_rPr()
                                 _rtl = _rpr.find(qn('w:rtl'))
-                                if _arabic.search(_chunk):
+                                if _is_jawi:
                                     _bidi_flag(_rpr, 'rtl')
                                 elif _rtl is not None:
                                     _rpr.remove(_rtl)
+                                _clone.append(_part)
                                 _parent.insert(_index, _clone)
                                 _index += 1
                             _parent.remove(_original)
