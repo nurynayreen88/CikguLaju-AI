@@ -13,7 +13,7 @@ Teacher reviews familiar place words.
 Teacher introduces adjectives with flashcards and mimes responses to funny, scary and boring.
 
 ## Activity 2 (25 minutes)
-Pupils read the story on pp.76–77, identify the main idea and discuss what the adjectives describe.
+Teacher introduces film and popcorn and asks pupils to predict suitable adjectives. Pupils read the cinema story quietly on p.76 to check predictions, answer questions in Activity 1 and identify its main idea. Teacher then guides Grammar Box on p.77 (Teacher's Book p.119).
 
 ## Assessment / PBD (10 minutes)
 Teacher checks reading main idea and comprehension of supported questions.
