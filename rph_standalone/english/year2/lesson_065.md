@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; SOW check pending):** 3.2 / 3.2.3
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; teacher-created verse.
-**Objectives:** Perform at least three verse lines and explain one favourite phrase.
+**Learning objectives:** Perform at least three verse lines and explain one favourite phrase.
 **Success criteria:** Three intelligible lines and one relevant reason.
 **Materials:** Clothing cards, board, original verse below.
 
