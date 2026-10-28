@@ -5,10 +5,11 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 3.2 / 3.2.3  
 **Duration:** 60 minutes  
 **Source classification:** SB p.88; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objectives:** Pupils identify four of five written details and answer two questions.  
+**Learning objectives:** Pupils identify four of five details in simple sentences and reread two phrases to clarify meaning.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
+**Rereading prompts:** Reread 'purple jacket and grey trousers' to confirm Hana's clothing; reread 'Her brother wears a green hat' to identify the person and colour. Point to the supporting words before answering.
 **Original fallback passage:** “It is cold today. Hana puts on her purple jacket and grey trousers. She wears warm socks and black shoes. Her brother wears a green hat.” **Five details/key:** weather—cold; jacket—purple; trousers—grey; shoes—black; brother's hat—green. **Questions/key:** What does Hana wear on her feet?—socks and shoes. Who wears a green hat?—her brother.
 
 ## Set Induction (5 minutes)
@@ -24,7 +25,7 @@
 **Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check five detail answers and two individual comprehension responses. Record independent performance and support required.  
+**Teacher:** Check five detail answers and two demonstrated instances of rereading to clarify meaning (SP 3.2.3(i)). Record independent performance and support required.  
 **Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
