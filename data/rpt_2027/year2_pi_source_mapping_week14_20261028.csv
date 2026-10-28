@@ -1,0 +1,4 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PI2-035,Pendidikan Islam,2,14,QURAN,Surah al-Baqarah ayat 224-245,,,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source overlap ayat 224 with week 13
+PI2-036,Pendidikan Islam,2,14,AKIDAH,Nama Allah al-Ahad dan as-Samad - dalil,2.2,2.2.2;2.2.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-037,Pendidikan Islam,2,14,JAWI,Perkataan enam suku kata - menulis,6.1,6.1.1;6.1.2;6.1.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
