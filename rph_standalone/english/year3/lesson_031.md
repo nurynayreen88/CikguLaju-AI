@@ -1,30 +1,25 @@
 # English Year 3 — Lesson 31: Language Arts
 
-**Unit:** Every day
-**Main SK/SP:** 5.2 / 5.2.1
-**Complementary SK/SP:** 2.1 / 2.1.5
+**Unit:** Every Day
+**Theme:** World of Stories
+**Main SK/SP:** Language Arts 5.2 / 5.2.1
+**Complementary SK/SP:** Speaking 2.1 / 2.1.5
 **Duration:** 60 minutes
-**Objective:** Pupils practise language arts skills within the Every day context.
-**Materials:** Get Smart Plus 3, picture cards, word cards and exercise books.
+**References:** Get Smart plus 3 Student's Book pp.22–23; Teacher's Book pp.42–43; paper and colour pencils.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce the topic using relevant pictures and questions.
-**Pupils:** Name vocabulary and respond.
+Teacher asks what pupils know about a school career day. Pupils name familiar occupations.
 
-## Activity 1 (10 minutes)
-**Teacher:** Demonstrate the target language arts task and check understanding.
-**Pupils:** Observe and practise a model response.
+## Activity 1 — Story preparation (15 minutes)
+Teacher introduces the meaning of career and previews the story pictures. Pupils predict what may happen.
 
-## Activity 2 (25 minutes)
-**Teacher:** Organise guided pair or individual practice and support pupils.
-**Pupils:** Complete the task and share responses.
+## Activity 2 — Story and response (25 minutes)
+Teacher guides the career-day story using Student's Book pp.22–23 and Teacher's Book pp.42–43. Pupils discuss favourite characters, draw a chosen occupation and share their drawings in groups.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess an individual response against 5.2.1.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher observes responses to the story and spoken descriptions of chosen jobs. Pupils explain one character or occupation.
 
 ## Closure (5 minutes)
-**Teacher:** Recap language and correct errors.
-**Pupils:** Share one thing learned.
+Pupils share a job they would like to do and give one reason.
 
-**QA:** Preliminary Year 3 SOW-aligned draft; Teacher's Book activity sequence pending verification.
+**QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
