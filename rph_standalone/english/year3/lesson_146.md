@@ -10,13 +10,13 @@
 Teacher reviews animal vocabulary using flashcards.
 
 ## Activity 1 (15 minutes)
-Pupils play a memory game to match animals and adjectives.
+Teacher models comparative animal sentences using bigger than and smaller than. Pupils repeat and match adjective cards to animal pictures.
 
 ## Activity 2 (25 minutes)
-Teacher models comparative adjectives. Pairs describe animals using 'bigger than' and 'smaller than'.
+Pupils listen to descriptions and identify animals. In pairs, pupils draw two animals and describe their differences using comparative adjectives. Volunteers present their sentences.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes spoken comparisons and understanding of directions.
+Teacher checks pupils' spoken comparisons and comprehension of partners' animal descriptions.
 
 ## Closure (5 minutes)
 Pupils compare two animals.
