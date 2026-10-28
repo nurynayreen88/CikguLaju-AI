@@ -5,14 +5,14 @@
 **Complementary SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
-**Learning objectives:** Pupils create and perform two house-themed lines and recognise two spoken room clues.  
-**Success criteria:** two meaningful performed lines and two correct listening choices.  
+**Learning objectives:** Pupils create and perform two house-themed lines and identify the main ideas of two spoken sentences about an unusual house.  
+**Success criteria:** two meaningful performed lines and two correct main-idea picture choices from complete spoken sentences.  
 **Materials:** Board, exercise books, teacher-created picture/word cards and the printable text below.
 
 **Original teacher-created model verse:** “In my bedroom, I can sleep. In the kitchen, I can eat. In the living room, I can play. In my house, I like to stay.”
 **Two-line frames:** “In the ____, I can ____.” “In the ____, I can ____.”
 **Word cards:** bedroom, kitchen, bathroom, living room, sleep, eat, wash, play.
-**Listening cue and key:** “Find the place where you sleep.” — bedroom; “Find the place where you wash.” — bathroom.
+**Listening sentences and key:** “The unusual house has a bedroom shaped like a moon.” — choose moon-shaped bedroom; “The kitchen is on the roof of the house.” — choose rooftop kitchen. Teacher sketches both picture choices alongside contrasting ordinary-room pictures.
 
 ## Set Induction (5 minutes)
 **Teacher:** Show two house pictures and elicit familiar rooms or objects.  
@@ -23,11 +23,11 @@
 **Pupils:** Follow the model and demonstrate one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pairs compose two lines, practise rhythm and gestures, then present to each other. Read the two listening clues without showing cards; pupils select the correct room.  
+**Teacher:** Pairs compose two lines, practise rhythm and gestures, then present to each other. Read the two complete listening sentences without showing their text; pupils choose the picture showing each sentence's main idea.  
 **Pupils:** Complete the task, compare evidence with a partner and improve their responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Listen to each pupil's two-line performance and read the two clues individually. Record meaning, intelligibility and listening accuracy.  
+**Teacher:** Listen to each pupil's two-line performance and read the two full sentences individually. Record creative composition, intelligibility and comprehension of each spoken main idea.  
 **Pupils:** Demonstrate the stated success criteria without partner help.
 
 ## Closure (5 minutes)
