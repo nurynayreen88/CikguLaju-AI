@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.83. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Objective:** Pupils describe three clothing items and respond to two questions.  
+**Learning objectives:** Pupils describe three clothing items and respond to two questions.  
 **Success criteria:** Achieve the measurable targets stated in the objective.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
