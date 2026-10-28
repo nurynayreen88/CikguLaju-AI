@@ -13,7 +13,7 @@ Teacher plays Simon Says with directions and 'please'.
 Pupils listen to the directions song and mime movements.
 
 ## Activity 2 (25 minutes)
-Teacher guides the direction team game. Pupils give and follow simple spoken directions.
+Teacher divides the class into three or four teams for a maze directions game. One pupil gives a short sequence (e.g. right, straight, left, stop) while another follows it; teacher displays equal-length prompts, then pupils exchange roles.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks clarity of directions and listening comprehension.
