@@ -10,7 +10,7 @@
 Teacher reviews animal vocabulary using flashcards.
 
 ## Activity 1 (15 minutes)
-Teacher models comparative animal sentences using bigger than and smaller than. Pupils repeat and match adjective cards to animal pictures.
+Teacher reviews adjectives with an animal flashcard game and models bigger than and smaller than. Pupils describe animals using comparative sentences.
 
 ## Activity 2 (25 minutes)
 Pupils listen to descriptions and identify animals. In pairs, pupils draw and label two animals, then describe them using adjective + -er + than. Small groups share drawings. Teacher guides the optional Who's Taller? activity (Teacher's Book p.145).
