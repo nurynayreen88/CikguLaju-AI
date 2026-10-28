@@ -1,30 +1,25 @@
 # English Year 3 — Lesson 49: Listening
 
-**Unit:** Year in, year out
-**Main SK/SP:** 1.2 / 1.2.1
-**Complementary SK/SP:** 2.2 / 2.2.1
+**Unit:** Year In, Year Out
+**Theme:** World of Knowledge
+**Main SK/SP:** Listening 1.2 / 1.2.1
+**Complementary SK/SP:** Speaking 2.2 / 2.2.1
 **Duration:** 60 minutes
-**Objective:** Pupils listen to a short teacher-led text and identify key details in the context of Year in, year out.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book p.35; Teacher's Book p.60; four seasons flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Year in, year out using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher asks about today's weather. Pupils describe it using familiar words.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to listen to a short teacher-led text and identify key details, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Seasons vocabulary (15 minutes)
+Teacher displays four seasons flashcards and discusses weather in different seasons. Pupils identify seasons and share experiences.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Listening (25 minutes)
+Teacher guides Vocabulary and Activity 1 from Teacher's Book p.60. Pupils listen for season and weather vocabulary, then use Student's Book p.35 Grammar Box to describe their favourite season.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 1.2.1; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks recognition of key words and pupils' appropriate communication strategies when seeking information.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share a favourite season and one weather word.
 
-**Source:** Year 3 English SOW 2026, Lesson 49. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
