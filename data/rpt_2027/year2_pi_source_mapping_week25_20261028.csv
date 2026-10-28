@@ -1,0 +1,4 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PI2-068,Pendidikan Islam,2,25,QURAN,Surah Ali Imran ayat 166-194,,,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-069,Pendidikan Islam,2,25,AKIDAH,Penghayatan iman kepada malaikat,2.3,2.3.5,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-070,Pendidikan Islam,2,25,JAWI,Ayat pendek - membaca membina menulis,,6.3.1;6.3.2;6.3.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source heading SK 6.1 conflicts with SP 6.3; manual review required
