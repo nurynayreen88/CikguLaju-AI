@@ -5,7 +5,7 @@
 **Complementary SK/SP (SOW check pending):** 2.1 / 2.1.5
 **Duration:** 60 minutes
 **Source:** NON-TEXTBOOK. Original teacher-created script.
-**Objective:** Identify the main idea of a spoken outfit description and give two oral answers.
+**Learning objectives:** Identify the main idea of a spoken outfit description and give two oral answers.
 **Success criteria:** One correct main-idea choice and two relevant answers.
 **Materials:** Outfit cards, question cards and script below.
 
