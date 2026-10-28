@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 102: Provisional Speaking Draft
+# English Year 3 — Lesson 102: Listening
 
-**Lesson:** 102
-**Year:** 3
-**Skill focus:** Speaking (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** Out and About
+**Main SK/SP:** 1.2 / 1.2.1
+**Complementary SK/SP:** 4.2 / 4.2.4
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple speaking response with age-appropriate support.
+**References:** Student's Book p.67; Teacher's Book p.105; animal cards; KPM Year 3 SOW.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Pupils review animal word cards from Lesson 100.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Model a short exchange using familiar question-and-answer patterns.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Teacher gives animal clues such as 'I'm big and I give you milk'. Pupils listen and identify the animal.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two exchanges in pairs, swapping speaker and listener roles.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Teacher guides Activity 3. Pupils listen for animal details, then write two short sentences using 'They'.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils perform one exchange individually; give feedback on clarity. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks understanding of familiar words and clear written descriptions.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils read one sentence about an animal.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW mapping checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
