@@ -10,7 +10,7 @@
 Teacher plays a letter-jumble spelling game using familiar house vocabulary. Pupils correct spellings.
 
 ## Activity 1 — Text review (15 minutes)
-Teacher replays the text about Sue's house and discusses differences from pupils' homes. Pupils recall details.
+Teacher runs a letter-jumble game with commonly misspelt furniture and room words, then revisits the text about Sue's house. Pupils correct spellings, listen and compare Sue's home with their own.
 
 ## Activity 2 — Bedroom writing (25 minutes)
 Teacher explains the Writing Tip from Teacher's Book p.82. Pupils plan and write about their own bedroom, then furnish a bedroom template with drawings or cut-out furniture.
