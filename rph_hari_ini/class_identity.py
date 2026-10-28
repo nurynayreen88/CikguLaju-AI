@@ -30,6 +30,7 @@ def resolve_class_identity(*, teacher_id: int, school_year: int,
     matches = [
         (k, v) for k, v in registry.items()
         if isinstance(k, tuple) and len(k) == 3
+        and type(k[0]) is int and type(k[1]) is int
         and k[0] == teacher_id and k[1] == school_year
         and isinstance(k[2], str) and k[2].strip().casefold() == name.casefold()
     ]
@@ -53,13 +54,15 @@ def rename_class(*, teacher_id: int, school_year: int, old_name: str,
     if current is None or not isinstance(new_name, str) or not new_name.strip():
         return None
     new_key = (teacher_id, school_year, new_name.strip())
-    if any(k[0] == teacher_id and k[1] == school_year
+    if any(type(k[0]) is int and type(k[1]) is int
+           and k[0] == teacher_id and k[1] == school_year
            and isinstance(k[2], str) and k[2].strip().casefold() == new_name.strip().casefold()
            for k in registry if isinstance(k, tuple) and len(k) == 3):
         return None
     result = dict(registry)
     old_key = next(k for k in result
                    if isinstance(k, tuple) and len(k) == 3
+                   and type(k[0]) is int and type(k[1]) is int
                    and k[0] == teacher_id and k[1] == school_year
                    and isinstance(k[2], str)
                    and k[2].strip().casefold() == old_name.strip().casefold())
