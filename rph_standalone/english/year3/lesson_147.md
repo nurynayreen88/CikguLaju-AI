@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 147: Provisional Speaking Draft
+# English Year 3 — Lesson 147: Reading
 
-**Lesson:** 147
-**Year:** 3
-**Skill focus:** Speaking (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** The World Around Us
+**Main SK/SP:** 3.2 / 3.2.2
+**Complementary SK/SP:** 3.2 / 3.2.3
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple speaking response with age-appropriate support.
+**References:** Student's Book pp.96–97; Teacher's Book pp.146–147; KPM SOW.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher displays sea animal flashcards. Pupils name familiar animals.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Model a short exchange using familiar question-and-answer patterns.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Teacher introduces shark and other sea animal vocabulary. Pupils predict facts from pictures.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two exchanges in pairs, swapping speaker and listener roles.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Pupils read the sea animal texts, locate specific information and infer unfamiliar words from context.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils perform one exchange individually; give feedback on clarity. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks reading details and vocabulary comprehension.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils share one sea animal fact.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW-aligned draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
