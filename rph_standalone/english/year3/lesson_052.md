@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 52: Speaking (Provisional Draft)
+# English Year 3 — Lesson 52: Writing
 
-**Lesson:** 52
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Main SK/SP:** Writing 4.3 / 4.3.2
+**Complementary SK/SP:** Speaking 2.1 / 2.1.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book pp.36–37; Teacher's Book p.63; magnetic letters and diary worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher recalls the story from Student's Book p.36. Pupils act out a remembered exchange.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Spelling relay (15 minutes)
+Teacher leads a team game spelling days of the week using magnetic letters. Pupils spell and check words.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Guided writing (25 minutes)
+Teacher guides Student's Book p.37 Activity 2 and the diary worksheet. Pupils write accurate days and short statements about activities, then practise asking and answering about days.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks spelling of weekdays and pupils' responses to simple questions.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share one correctly spelled day and a short diary sentence.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
