@@ -13,7 +13,7 @@ Teacher leads the revision activity.
 Pupils recall Tim's Mexico holiday and James's Australia holiday, then reread the texts.
 
 ## Activity 2 (25 minutes)
-Pupils draft short holiday descriptions and check punctuation, spelling and capital letters.
+Pupils answer the blue-box questions on p.91, then write an email to James about their own holiday. They use his email as a model and connect sentences with and or but while checking punctuation.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks writing conventions.
