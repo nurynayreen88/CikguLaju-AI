@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.2  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Objective:** Pupils perform three of four chant lines and create one suitable word variation.  
+**Learning objectives:** Pupils perform three of four chant lines and create one suitable word variation.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
