@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.83. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
-**Learning objectives:** Pupils describe three clothing items and respond to two questions.  
+**Learning objectives:** Pupils ask two basic questions about clothing preferences and respond to three short supported questions.  
 **Success criteria:** Achieve the measurable targets stated in the objective.  
 **Materials:** Student's Book, board, picture/word cards and resources below.
 
+**Preference prompts:** 'Do you like this cap?' 'Do you like these shoes?' 'Yes, I do.' 'No, I don't.'  
 **Picture A:** blue shirt, black trousers, white shoes. **Picture B:** red dress, yellow hat, green shoes.
 **Original dialogue:** “What are you wearing?” “I'm wearing a blue shirt.” “What colour are your shoes?” “They are white.” **Speaking frames:** “I'm wearing ____.” “My ____ is/are ____.”
 
