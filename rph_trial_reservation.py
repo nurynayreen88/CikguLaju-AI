@@ -30,11 +30,13 @@ class TrialReservationClient:
         self.rpc = rpc
 
     def _call(self, action: str, user_id: int, request_id: str):
-        if not request_id or len(request_id) < 8 or len(request_id) > 200:
+        if not isinstance(request_id, str) or not 8 <= len(request_id) <= 200 or not request_id.strip():
             raise ValueError("Invalid request_id")
+        if type(user_id) is not int or user_id <= 0:
+            raise ValueError("Invalid Telegram user_id")
         result = _row(self.rpc(
             "cikgulaju_" + action + "_rph_trial",
-            {"p_telegram_user_id": int(user_id), "p_request_id": request_id},
+            {"p_telegram_user_id": user_id, "p_request_id": request_id},
         ))
         if not isinstance(result, dict) or "ok" not in result:
             raise TrialReservationError("Unexpected reservation RPC response")
@@ -61,8 +63,14 @@ class TrialReservationClient:
 
 def telegram_document_confirmed(response) -> bool:
     try:
-        return bool(response.ok and response.json().get("ok") is True
-                    and response.json().get("result", {}).get("message_id"))
+        if response.ok is not True:
+            return False
+        payload = response.json()
+        result = payload.get("result") if isinstance(payload, dict) else None
+        return (isinstance(payload, dict) and payload.get("ok") is True
+                and isinstance(result, dict)
+                and type(result.get("message_id")) is int
+                and result["message_id"] > 0)
     except (AttributeError, TypeError, ValueError):
         return False
 
