@@ -46807,7 +46807,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
                     bidi.set(_qn('w:val'), '1')
                     para.alignment = _WD_ALIGN.RIGHT
                     for run in para.runs:
-                        if any('\\u0600' <= ch <= '\\u08ff' for ch in run.text):
+                        if any(0x0600 <= ord(ch) <= 0x08FF for ch in run.text):
                             rPr = run._r.get_or_add_rPr()
                             rtl = rPr.find(_qn('w:rtl'))
                             if rtl is None:
