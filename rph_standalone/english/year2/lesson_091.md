@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW check pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK; teacher-created material below is not a verified textbook extract.  
-**Learning objectives:** Pupils identify four of five robot features and answer two oral questions.  
+**Learning objectives:** Pupils identify four of five spoken robot details and describe two robot parts orally.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Robot picture/word cards, board, exercise books and resources below.
 
@@ -20,11 +20,11 @@
 **Pupils:** Practise one supported example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Read five clues twice; pupils choose A/B and answer two questions using the picture cards.  
+**Teacher:** Read five supported detail sentences twice; pupils choose A/B and describe two robot parts orally.  
 **Pupils:** Complete the task and compare responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check five independent choices and two oral answers. Record independent performance and support required.  
+**Teacher:** Check five listening-detail choices (SP 1.2.2) and two spoken object descriptions (SP 2.1.5). Record independent performance and support required.  
 **Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
