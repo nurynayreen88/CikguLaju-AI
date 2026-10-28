@@ -13,7 +13,7 @@ Teacher plays the directions song. Pupils sing and mime.
 Teacher introduces The Secret Tunnel and asks pupils to predict events from the title and characters.
 
 ## Activity 2 (25 minutes)
-Teacher reads the story, pausing for predictions about the park and tunnel. Pupils discuss the characters and story events.
+Teacher reads The Secret Tunnel, pausing for predictions about the park and tunnel. Teacher then plays the story recording and asks comprehension questions, before pupils discuss characters, events and the story's values.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks personal responses to the story and short explanations.
