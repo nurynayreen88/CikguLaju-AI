@@ -5,14 +5,14 @@ from pathlib import Path
 from validate_rpt_2027_source_mapping import validate
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = (
-    ROOT / "data/rpt_2027/year2_source_mapping_seed_20261028.csv",
-    ROOT / "data/rpt_2027/year2_pj_source_mapping_batch2_20261028.csv",
-)
+DATA_DIR = ROOT / "data/rpt_2027"
+FILES = tuple(sorted(DATA_DIR.glob("year2_*mapping*.csv")))
 
 def main():
     errors = []
     all_rows = []
+    if not FILES:
+        errors.append(f'No mapping CSV files found in {DATA_DIR}')
     for path in FILES:
         if not path.is_file():
             errors.append(f"Missing file: {path}")
