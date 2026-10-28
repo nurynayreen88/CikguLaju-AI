@@ -10,7 +10,7 @@
 Teacher displays food cards in a train-shaped sequence. Pupils name the items.
 
 ## Activity 1 — Chant rhythm (15 minutes)
-Teacher models a steam-train rhythm with slow and fast arm movements. Pupils imitate the actions and practise the food chant.
+Teacher first arranges food flashcards in a train sequence and asks pupils to name each food in order. Pupils practise the words before the teacher models a steam-train rhythm with slow and fast arm movements. Pupils imitate the actions and practise the food chant.
 
 ## Activity 2 — Creative performance (25 minutes)
 Groups adapt the chant with food vocabulary and perform using train actions. Teacher supports rhythm, pronunciation and group narration.
