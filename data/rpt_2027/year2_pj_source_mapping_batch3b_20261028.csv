@@ -1,0 +1,9 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PJ2-022,Pendidikan Jasmani,2,24,PJ,Sarkas - Celik Gimnas,"1.7;2.6;5.4","1.7.1;1.7.2;2.6.1;2.6.2;5.4.2",36,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-023,Pendidikan Jasmani,2,25,PJ,Sarkas - Stabilnya Saya,"1.7;2.6;5.1","1.7.3;2.6.3;5.1.1",37,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-024,Pendidikan Jasmani,2,26,PJ,Sarkas - Seronoknya,"1.8;2.7;5.1","1.8.1;2.7.1;5.1.2",38,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-025,Pendidikan Jasmani,2,27,PJ,Sarkas - Guling Depan (Straddle),"1.8;2.7;5.2","1.8.2;2.7.1;5.2.2",39,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-026,Pendidikan Jasmani,2,28,PJ,Sarkas - Guling Belakang (Straddle),"1.8;2.7;5.1","1.8.3;2.7.1;2.7.2;5.1.5",40-41,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-027,Pendidikan Jasmani,2,29,PJ,Sarkas - Formasi Gulingan,"1.8;2.7;5.1","1.8.1;1.8.2;2.7.2;5.1.5",42-43,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-028,Pendidikan Jasmani,2,30,PJ,Santai Ria - Jalan-Jalan Cari Harta,"1.11;2.10;5.4","1.11.1;2.10.1;2.10.2;5.4.3",49-50,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
+PJ2-029,Pendidikan Jasmani,2,31,PJ,Santai Ria - Kenangan Lama,"1.11;2.10;5.4","1.11.2;2.10.3;5.4.1",51,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source review
