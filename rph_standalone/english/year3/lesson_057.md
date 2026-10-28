@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 57: Writing
 
-**Unit:** Year in, year out
-**Main SK/SP:** 4.3 / 4.3.3
-**Complementary SK/SP:** 1.2 / 1.2.5
+**Unit:** Year In, Year Out
+**Main SK/SP:** Writing 4.3 / 4.3.3
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Objective:** Pupils plan and write guided simple sentences in the context of Year in, year out.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book p.38; KPM Year 3 SK Scheme of Work Lesson 57; Malaysia pictures, weather and clothing flashcards, poster paper.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Year in, year out using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher reviews weather and clothing vocabulary from Malaysia. Pupils name familiar items.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to plan and write guided simple sentences, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Planning (15 minutes)
+Teacher displays Malaysian scenes and asks questions about local weather, seasons, activities and clothes. Pupils brainstorm useful words in groups.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Poster writing (25 minutes)
+Groups draft three or four sentences describing Malaysia, check spelling and punctuation, then arrange them with pictures on a poster. Teacher asks short supported questions during group work.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 4.3.3; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks sentence drafting and comprehension of questions. Pupils revise and present posters.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils share one accurate sentence about Malaysia.
 
-**Source:** Year 3 English SOW 2026, Lesson 57. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct source materials and Word/PDF tests pending. NOT READY FOR RELEASE.
