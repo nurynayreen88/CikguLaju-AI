@@ -1,33 +1,25 @@
-# English Year 3 — Lesson 89: Writing (Provisional Draft)
+# English Year 3 — Lesson 89: Writing
 
-**Lesson:** 89
-**Year:** 3
-**Skill focus:** Writing (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Food, Please!
+**Theme:** World of Knowledge
+**Main SK/SP:** Writing 4.3 / 4.3.3
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate writing response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book p.58; KPM Year 3 SOW Lesson 89; world-food worksheet and pictures.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews international dishes from Lesson 88. Pupils name a dish and country.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a short sentence and show a picture-based word bank.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Food matching (15 minutes)
+Teacher displays dishes from around the world. Pupils match names and pictures on worksheet Part A.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils plan and write three linked sentences.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Food description (25 minutes)
+Teacher helps pupils choose a dish and gather facts from supplied recipes or reading materials. Pupils draft short descriptions and check their spelling.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils check capital letters, spacing and full stops with a partner. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Assessment / PBD (10 minutes)
+Teacher checks draft descriptions and reading for specific information.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share a sentence about a chosen dish.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** SOW alignment checked; source worksheet and Word/PDF tests pending. NOT READY FOR RELEASE.
