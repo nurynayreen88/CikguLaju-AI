@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; SOW check pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All scripts and cards below are teacher-created, not textbook quotations.  
-**Learning objectives:** Pupils perform four rhyme lines with two gestures and say one room sentence.  
-**Success criteria:** Independently demonstrate each component of the objective.  
+**Learning objectives:** Pupils name two people, places or actions of interest in a short original text and describe two objects using suitable phrases.  
+**Success criteria:** Two correctly named text details and two intelligible object descriptions.  
 **Materials:** Board, room picture cards, word cards and resources below.
 
+**Original mini-text:** 'Aina lives near the sea. Her friend Ben lives near snowy mountains. Aina has a small blue boat. Ben has a warm red coat. They both enjoy playing with friends.' **Text clues:** people Aina and Ben; places sea and mountains; objects blue boat and red coat.  
 **Original rhyme:** “In the kitchen, stir the stew. / In the bedroom, sleep right through. / In the bathroom, wash your face. / In the living room, find your place.”
 **Gestures:** stir, sleep, wash, sit. **Speaking frame:** “In the ____, I ____.”
 
@@ -17,15 +18,15 @@
 **Pupils:** Name rooms and objects.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Recite the original rhyme with four gestures; model the speaking frame.  
+**Teacher:** Read the original mini-text aloud and model identifying a person, place and object of interest. Model describing the blue boat and red coat.  
 **Pupils:** Follow and practise one example.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pairs rehearse, swap room cards and make a new sentence using the frame.  
+**Teacher:** Pairs name two interesting details from the mini-text and describe two objects using colour and size words.  
 **Pupils:** Complete the task in pairs, then repeat individually.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Observe four lines, two gestures and one independent meaningful sentence. Record accuracy and any prompting.  
+**Teacher:** Assess two correctly named details from the text and two accurate spoken object descriptions. Record accuracy and any prompting.  
 **Pupils:** Demonstrate independently.
 
 ## Closure (5 minutes)
