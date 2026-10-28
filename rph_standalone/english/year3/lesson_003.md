@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 3: Reading (Provisional Draft)
+# English Year 3 — Lesson 3: Reading
 
-**Lesson:** 3
-**Year:** 3
-**Skill focus:** Reading (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate reading response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 3.2 / 3.2.2  
+**Complementary SK/SP:** 3.2 / 3.2.3  
+**Duration:** 60 minutes  
+**Materials / references:** SB pp.6–7 Activities 1–2; TB p.20; number flashcards  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 3. Lesson outline adapted for classroom use.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Guess Who review and numbers 1–100. **Pupils:** Respond and recall relevant language.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Display a short level-appropriate passage and pre-teach two words.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Guided preparation (15 minutes)
+**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils read, underline clues and match three statements to the text.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Core lesson task (25 minutes)
+**Teacher:** Read and listen to SB p.6 Activity 1, tracking words; guide SB p.7 Activity 2, using pictures to infer unfamiliar words. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs justify their answers using words from the passage. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
