@@ -6,7 +6,7 @@
 **Learning objectives:** Pupils compose a four-line beach rhyme and write two meaningful captions.
 **Success criteria:** four coherent rhyme lines and two understandable captions.
 **Teaching materials:** Pictures, word cards and classroom resources.
-**Original rhyme model (four lines):** The sun is bright / The sand is white / I find a shell / It shines so well. **Two caption models:** A bright sun. A little shell. **Creative guidance:** Pupils replace one describing word in each of two lines, retain four meaningful lines, and caption two matching pictures.
+**Original rhyme model (four lines):** The sun is bright / The sand is white / I find a shell / It shines so well. **Two caption models:** A bright sun. A little shell. **Creative guidance:** Pupils replace one describing word in each of two lines, retain four meaningful lines, and caption two matching pictures. **Independent picture prompts:** (1) a yellow sun over the sea; (2) a small shell on the sand. **Acceptable captions:** A yellow sun. / The sun is yellow. and A small shell. / The shell is small. Accept other relevant captions. The model captions are scaffolds, not independent evidence.
 
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Guide pupils to adapt the four-line model and write two independent captions for beach pictures.
+**Teacher (25 min):** Guide pupils to adapt at least two rhyme lines using their own meaningful word choices. Hide the model captions before pupils independently caption the two specified pictures.
 **Pupils:** Compose four rhyme lines and write two captions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Assess four meaningful rhyme lines and two understandable picture captions for each pupil.
+**Teacher (10 min):** Score four meaningful rhyme lines (0–4), noting at least two original word choices, and two independently written captions (0–2). Do not count copied model captions as independent evidence; record support required.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
