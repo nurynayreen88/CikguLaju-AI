@@ -3,10 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 5.1 / 5.1.1
 **Complementary SK/SP:** 1.2 / 1.2.4
-**Learning objectives:** Pupils share one personal reaction to a robot-themed verse and respond to four spoken cues.
-**Success criteria:** One relevant personal reaction and three of four appropriate cue responses.
+**Learning objectives:** Pupils show appreciation of an action rhyme through three non-verbal responses and follow four supported classroom instructions.
+**Success criteria:** three appropriate non-verbal responses to the rhyme and at least three of four correct instruction responses.
 **Teaching materials:** Pictures, word cards and classroom resources.
 
+**Non-verbal response rubric:** Wave during 'waves hello', turn during 'turns around', and clap during 'claps its hands'. These gestures are assessed as appreciation (SP 5.1.1), separately from following teacher-given instructions (SP 1.2.4).
 **Original verse:** “My little robot waves hello, / It turns around and moves so slow. / It claps its hands and starts to sing, / Then makes a funny buzzing ring!” **Four spoken cues and responses:** “Wave hello”—wave; “Turn around”—turn; “Clap your hands”—clap; “Sing”—sing a short note. **Reaction frame:** “I like the robot because ____.”
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 SOW audit); detailed SOW procedure not yet verified.
 
@@ -19,11 +20,11 @@
 **Pupils:** Echo lines and practise one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Pupils echo the verse, share one reaction and respond to four spoken cues.
+**Teacher (25 min):** Pupils listen to the rhyme and demonstrate three non-verbal responses; then follow four separately delivered teacher instructions. Sharing a verbal reaction is optional extension.
 **Pupils:** Rehearse, share a personal reaction and respond to four cues.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record one relevant reaction and at least three of four appropriate cue responses.
+**Teacher (10 min):** Record three non-verbal appreciation responses (SP 5.1.1) and at least three of four independently followed instructions (SP 1.2.4).
 **Pupils:** Demonstrate individual responses.
 
 ## Closure (5 minutes)
