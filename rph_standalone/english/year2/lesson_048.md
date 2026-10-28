@@ -5,10 +5,11 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 4.3 / 4.3.1
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created examples.
-**Learning objectives:** Pupils write two short messages describing rooms and revise basic punctuation.
-**Success criteria:** Two meaningful messages, each with a greeting, room detail and closing, and at least two correctly punctuated sentences.
+**Learning objectives:** Pupils connect words or phrases using 'and' or 'but' and apply capitals and full stops in guided writing.
+**Success criteria:** Two meaningful conjunction sentences with correct capitals and full stops.
 **Materials:** Board, room pictures, message models and exercise books.
 
+**Conjunction models:** 'My bedroom has a bed and a desk.' 'My house is small but comfortable.'
 **Model 1:** “Hi Amir, My bedroom has a bed and a desk. From Ali.”
 **Model 2:** “Hi Sara, There is a table in my kitchen. From Lina.”
 **Message frame:** “Hi ____, / My ____ has a ____. / From ____.”
@@ -20,7 +21,7 @@
 **Pupils:** Name rooms and objects.
 
 ## Activity 1 — Model a message (15 minutes)
-**Teacher:** Read both original model messages. Highlight greeting, message and closing. Demonstrate fixing the editing sample and explain capitals and full stops.
+**Teacher:** Read both original model messages. Highlight the conjunctions joining objects or contrasting descriptions. Demonstrate fixing the editing sample and explain capitals and full stops.
 **Pupils:** Identify the parts of a message and correct the sample.
 
 ## Activity 2 — Compose and revise (25 minutes)
@@ -34,6 +35,8 @@
 ## Closure (5 minutes)
 **Teacher:** Invite volunteers to read a message and name one editing rule.
 **Pupils:** Share one sentence and a punctuation rule.
+
+**Conjunction assessment:** Independently assess two written sentences for correct use of 'and' or 'but', separately from punctuation.
 
 **QA:** Complete teacher-developed draft; official SOW and A4/PDF verification pending. Not READY.
 
