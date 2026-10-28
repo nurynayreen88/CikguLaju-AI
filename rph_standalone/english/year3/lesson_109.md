@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 109: Reading
 
-**Unit:** Out and about
+**Unit:** Out and About
 **Main SK/SP:** 3.2 / 3.2.1
 **Complementary SK/SP:** 3.2 / 3.2.3
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the reading learning standard in the context of Out and about.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.71; Teacher's Book p.110; road-sign examples.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Out and about using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews familiar traffic signs.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the reading task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 (15 minutes)
+Teacher displays models for turn left, turn right, traffic lights and stop; pupils explain their meanings.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Out and about.
+## Activity 2 (25 minutes)
+Pupils read three sets of instructions on p.71 and match each text to the correct sign, then identify key words.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 3.2.1 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks main ideas and inferred word meanings.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils explain one road sign.
 
-**Source:** Year 3 English SOW 2026, Lesson 109. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
