@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.1  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Objective:** Pupils write four clothing words legibly and two meaningful sentences.  
+**Learning objectives:** Pupils write four clothing words legibly and two meaningful sentences.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
