@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
-**Objective:** Pupils describe three clothing items and ask two questions.  
+**Learning objectives:** Pupils describe three clothing items and ask two questions.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and the resources below.
 
