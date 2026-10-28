@@ -3,11 +3,11 @@
 **Unit:** The robot
 **Main SK/SP:** 2.1 / 2.1.4
 **Complementary SK/SP:** 1.2 / 1.2.5
-**Learning objectives:** Pupils describe three robot features and respond to two simple oral questions.
-**Success criteria:** three clear descriptions and two relevant answers.
+**Learning objectives:** Pupils ask and answer three questions about ability and understand two short supported questions.
+**Success criteria:** three ability exchanges and two accurate responses to supported questions.
 **Teaching materials:** Pictures, word cards, individual PBD record and original resources below.
 
-**Original robot cards:** A: round head, three eyes, short arms; B: square head, one eye, long arms. **Model sentences:** “It has a round head. It has three eyes. Its arms are short.” **Questions/key:** How many eyes has Robot A got? Three. Which robot has long arms? Robot B.
+**Ability survey:** 'Can you swim?' 'Yes, I can.' 'Can you fly?' 'No, I cannot.' 'Can you jump?' 'Yes, I can.' **Original robot cards:** A: round head, three eyes, short arms; B: square head, one eye, long arms. **Model sentences:** “It has a round head. It has three eyes. Its arms are short.” **Questions/key:** How many eyes has Robot A got? Three. Which robot has long arms? Robot B.
 **Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Practise one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use both cards for paired three-feature descriptions and two oral questions.
+**Teacher (25 min):** Use ability survey prompts for three paired can/cannot exchanges and two short supported listening questions.
 **Pupils:** Describe three features and answer two questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three intelligible descriptions and two accurate responses. Note independent performance and support needed.
+**Teacher (10 min):** Record three ability exchanges (SP 2.1.4) and two understood short questions (SP 1.2.5). Note independent performance and support needed.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
