@@ -6,7 +6,7 @@
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created passage, not a textbook extract.
 **Objectives:** Pupils locate three details in a short text and write one meaningful sentence.
-**Success criteria:** Three correct answers supported by the passage and one relevant sentence.
+**Success criteria:** At least three of four correct text-supported answers and one meaningful room sentence; record individual results separately.
 **Materials:** Printed passage, question cards, exercise books.
 
 ## Original reading text — Nina's House
@@ -29,13 +29,13 @@ Nina lives in a little house. There is a blue sofa in the living room. There are
 **Pupils:** Answer four questions, underline supporting words and independently write one house sentence.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check three independently answered questions and one original sentence, noting support required.
+**Teacher:** Check all four independently answered questions against the four-item answer key (0–4), and score one original sentence for meaning (0–1), relevant room vocabulary (0–1), and basic readability (0–1). Record whether prompts were needed. Do not omit question 4 from the individual evidence.
 **Pupils:** Submit answers and writing.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to read one fact about Nina's house.
 **Pupils:** Share a text-supported fact.
 
-**QA:** Complete teacher-developed draft; official SOW and A4/PDF verification pending. Not READY.
+**QA:** Corrected mismatch between four provided comprehension questions and only three assessed questions. Official SOW, detailed SP alignment and A4/PDF verification pending. NOT READY.
 
 **QA status:** NOT READY — 60-minute five-phase structure verified; official SOW, Teacher's Book and rendered A4 PDF checks pending.
