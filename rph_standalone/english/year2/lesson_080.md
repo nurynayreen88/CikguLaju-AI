@@ -5,10 +5,11 @@
 **Complementary SK/SP (SOW check pending):** 2.1 / 2.1.5
 **Duration:** 60 minutes
 **Source:** NON-TEXTBOOK; original teacher-created dialogue.
-**Learning objectives:** Perform at least three dialogue lines and create one meaningful variation.
-**Success criteria:** Three intelligible lines and one suitable variation.
+**Learning objectives:** Create and perform a four-line clothing chant and describe two clothing objects using suitable words and phrases.
+**Success criteria:** A four-line imaginative chant with intelligible delivery and two clear spoken object descriptions.
 **Materials:** Outfit picture cards and dialogue below.
 
+**Original chant model:** 'Blue jacket, red hat, ready to go! / Cotton shirt, warm socks, put on a show! / Black shoes, green dress, colours so bright! / We get dressed and feel just right!' **Description frames:** 'The jacket is blue.' 'The socks are warm.'
 **Original four-line dialogue:**
 A: I'm ready for the party!
 B: Where is your blue jacket?
@@ -22,15 +23,15 @@ B: Put it on. Let's go!
 **Pupils:** Name suitable clothing.
 
 ## Activity 1 — Model dialogue (15 minutes)
-**Teacher:** Act out the four lines, demonstrating clear voices and gestures; substitute one word using a variation card.
+**Teacher:** Model the four-line chant with rhythm and gestures; demonstrate changing clothing words and describing objects.
 **Pupils:** Repeat the lines and identify the changed word.
 
 ## Activity 2 — Create and perform (25 minutes)
 **Teacher:** Pair pupils, give each pair a variation card, and coach pronunciation and turn-taking.
-**Pupils:** Rehearse the full dialogue, replace one suitable detail and perform for another pair.
+**Pupils:** Create and rehearse a four-line chant with a partner, then describe two pictured clothing objects. The original dialogue is optional extension.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Listen to at least three independently spoken lines and one meaningful variation per pupil; record support needed.
+**Teacher:** Check a four-line creative chant (SP 5.3.1) and two oral clothing descriptions (SP 2.1.5); record support needed.
 **Pupils:** Perform and demonstrate the variation.
 
 ## Closure (5 minutes)
