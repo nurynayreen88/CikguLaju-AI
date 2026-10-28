@@ -10,7 +10,7 @@
 Teacher reviews days, months, seasons, clothes, weather and countries. Pupils brainstorm words in teams.
 
 ## Activity 1 — Preparation (15 minutes)
-Teacher introduces the word boots and models the board-game rules from Teacher's Book p.66. Pupils read instructions and identify relevant vocabulary.
+Teacher leads a team brainstorm of months, days, seasons, clothes, weather and countries; introduces boots and demonstrates the board-game rules. Pupils recall topic vocabulary and prepare to read and play.
 
 ## Activity 2 — Reading game (25 minutes)
 Pupils play Student's Book p.40 Activity 1 in groups, reading prompts and responding to questions. Teacher monitors comprehension and encourages reading for enjoyment.
