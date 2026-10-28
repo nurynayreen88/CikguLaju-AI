@@ -45,6 +45,16 @@ class StableBridgeTests(unittest.TestCase):
         self.assertEqual(reason, "invalid_subject_key")
         self.assertIsNone(session)
 
+    def test_ambiguous_subject_key_rejected(self):
+        for key in ("EN:BM", "EN BM", "EN\\tBM", "EN\\nBM"):
+            with self.subTest(key=key):
+                kw = self.kw | {"subject_key": key,
+                                "subject_mapping": {"English": key}}
+                allowed, reason, session = verified_stable_session(**kw)
+                self.assertFalse(allowed)
+                self.assertEqual(reason, "invalid_subject_key")
+                self.assertIsNone(session)
+
     def test_invalid_registry_rejected(self):
         allowed, reason, session = verified_stable_session(**(self.kw | {"registry": None}))
         self.assertFalse(allowed)
