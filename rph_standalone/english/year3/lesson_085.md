@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 85: Language Arts
 
-**Unit:** Food, please!
-**Main SK/SP:** 5.3 / 5.3.1
-**Complementary SK/SP:** 2.1 / 2.1.1
+**Unit:** Food, Please!
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Speaking 2.1 / 2.1.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate language arts skills in the context of Food, please!.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** Student's Book p.117; Teacher's Book p.180; recipe pictures.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Food, please! with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher reviews recipe vocabulary. Pupils name cooking actions.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a language arts task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 — Recipe model (15 minutes)
+Teacher uses Student's Book p.117 and Teacher's Book p.180 Activity 1 to introduce the dish and ingredients. Pupils describe their reactions.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to Food, please!.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 — Creative recipe (25 minutes)
+Teacher guides Activity 2. Groups create an original recipe, draw the dish and present ingredients and preparation steps.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 5.3.1 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher observes imaginative responses and simple personal information during group presentations.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Groups select a favourite recipe and explain their choice.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
