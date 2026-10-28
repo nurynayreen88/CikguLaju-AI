@@ -13,7 +13,7 @@ Teacher revisits the forest-trip story. Pupils recall the sequence of events.
 Teacher introduces past verb forms from the Grammar Box. Pupils identify examples about the weekend.
 
 ## Activity 2 — Writing practice (25 minutes)
-Teacher guides the writing activity on page 87. Pupils write sentences about past holiday activities and check their work with a partner.
+Pupils reuse Lesson 130 holiday pictures to draft sentences, exchange notebooks for feedback and prepare final writing beside their pictures.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks spelling and understanding of the reading prompts.
