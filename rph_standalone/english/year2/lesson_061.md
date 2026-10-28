@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
-**Objective:** Pupils identify four of five outfit details and answer two oral questions.  
+**Learning objectives:** Pupils identify four of five outfit details and answer two oral questions.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and the resources below.
 
