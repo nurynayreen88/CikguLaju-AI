@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW check pending):** 1.2 / 1.2.3  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All scripts and cards below are teacher-created, not textbook quotations.  
-**Objective:** Pupils perform four original lines and identify two spoken room words.  
+**Learning objectives:** Pupils perform four original lines and identify two spoken room words.  
 **Success criteria:** Independently demonstrate each component of the objective.  
 **Materials:** Board, room picture cards, word cards and resources below.
 
