@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 154: Language Arts
 
-**Unit:** The world around us
+**Unit:** The World Around Us
 **Main SK/SP:** 5.2 / 5.2.1
 **Complementary SK/SP:** 4.3 / 4.3.3
 **Duration:** 60 minutes
-**Learning objective:** Pupils respond creatively to a short text using vocabulary related to the world around us.
-**Materials:** Get Smart Plus 3, nature picture cards, word cards, exercise books.
+**References:** KPM SOW Lesson 154; Malaysia superlatives worksheet; KPM Year 3 SOW.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show pictures of animals, plants and local surroundings; elicit familiar words.
-**Pupils:** Name what they see and answer short questions.
+Groups brainstorm superlatives such as tallest, longest and highest.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate how to respond creatively to a short text with a suitable model and comprehension check.
-**Pupils:** Listen, observe and respond to the model.
+## Activity 1 (15 minutes)
+Teacher introduces Malaysian landmarks and guides question formation.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Organise paired or individual practice; circulate and support pupils.
-**Pupils:** Complete a task on the world around us and share their answers.
+## Activity 2 (25 minutes)
+Groups create superlative questions and share responses about Malaysian geography.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check one individual response aligned to 5.2.1; record who needs support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks creative response and spelling.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key vocabulary and invite two examples.
-**Pupils:** State one new word or idea.
+Pupils share one question.
 
-**QA:** Preliminary SOW-mapped draft; exact Teacher's Book steps and textbook page references require verification.
+**QA:** SOW-aligned draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
