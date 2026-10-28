@@ -13,7 +13,7 @@ Teacher reviews action verb flashcards.
 Pupils mime weekend activities and identify past-tense verbs.
 
 ## Activity 2 (25 minutes)
-Teacher guides the listening activity. Pupils identify past activities and respond to questions.
+Pupils complete TB p.133 Activity 3, then play True/False about Bob and Lucy's forest trip using correct past-tense verbs.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks listening details.
