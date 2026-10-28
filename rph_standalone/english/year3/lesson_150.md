@@ -13,7 +13,7 @@ Teacher reviews animal comparisons.
 Pairs prepare plural animal word cards.
 
 ## Activity 2 (25 minutes)
-Pupils listen to comparative clues and choose matching animal cards.
+Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks listening details and descriptions.
