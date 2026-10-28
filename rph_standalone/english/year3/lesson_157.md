@@ -13,7 +13,7 @@ Teacher reviews planet names.
 Pairs match cut-up Solar System model instructions to pictures.
 
 ## Activity 2 (25 minutes)
-Pupils read and sequence model-making steps, then follow teacher's longer instructions to prepare a model.
+Pairs match cut-up Student's Book p.101 model-making texts to pictures and sequence them. Pupils listen as teacher reads the instructions, check their order and follow the steps to build a Solar System model.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks inferred words and instruction comprehension.
