@@ -147,6 +147,20 @@ class TrialReservationTests(unittest.TestCase):
         self.assertEqual(calls, ["cikgulaju_reserve_rph_trial",
                                  "cikgulaju_release_rph_trial"])
 
+    def test_reconcile_requires_valid_message_id(self):
+        client, calls = self.make_client()
+        for invalid in (None, 0, -1, True, "123"):
+            with self.subTest(invalid=invalid):
+                with self.assertRaises(ValueError):
+                    client.reconcile_confirmed_delivery(42, "request-12345", invalid)
+        self.assertEqual(calls, [])
+
+    def test_reconcile_commits_without_resend(self):
+        client, calls = self.make_client()
+        remaining = client.reconcile_confirmed_delivery(42, "request-12345", 123)
+        self.assertEqual(remaining, 0)
+        self.assertEqual(calls, ["cikgulaju_commit_rph_trial"])
+
     def test_invalid_request_id(self):
         client, _ = self.make_client()
         with self.assertRaises(ValueError):
