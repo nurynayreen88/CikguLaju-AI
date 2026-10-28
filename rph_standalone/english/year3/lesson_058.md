@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 58: Language Arts
 
-**Unit:** Year in, year out
-**Main SK/SP:** 5.3 / 5.3.1
-**Complementary SK/SP:** 4.3 / 4.3.2
+**Unit:** Year In, Year Out
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Writing 4.3 / 4.3.2
 **Duration:** 60 minutes
-**Objective:** Pupils respond creatively to language through a short text or action song in the context of Year in, year out.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** KPM Year 3 SK Scheme of Work Lesson 58; diamond poem worksheet and seasons vocabulary cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Year in, year out using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher reviews hot and cool seasons. Pupils describe typical weather.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to respond creatively to language through a short text or action song, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Poem pattern (15 minutes)
+Teacher introduces the diamond poem model and explains its noun, adjective and verb pattern. Pupils identify words about winter.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Creative writing (25 minutes)
+Teacher guides brainstorming of hot-season nouns, adjectives and verbs. Groups compose their own original diamond poems, checking vocabulary and spelling.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 5.3.1; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher checks imaginative response and accurate spelling of familiar words. Pupils share and revise poems.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Pupils read one line of their poem and name a favourite word.
 
-**Source:** Year 3 English SOW 2026, Lesson 58. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct poem worksheet and Word/PDF tests pending. NOT READY FOR RELEASE.
