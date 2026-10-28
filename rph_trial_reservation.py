@@ -75,16 +75,26 @@ def deliver_with_trial(client: TrialReservationClient, user_id: int,
     delivery, keep the reservation for reconciliation; do NOT release it.
     """
     client.reserve(user_id, request_id)
-    delivered = False
+    # Rendering failures are known pre-delivery failures and may be released.
     try:
         document = render()
-        response = send(document)
-        if not telegram_document_confirmed(response):
-            raise TrialReservationError("Telegram document delivery not confirmed")
-        delivered = True
-        remaining = client.commit(user_id, request_id)
-        return response, remaining
     except Exception:
-        if not delivered:
-            client.release(user_id, request_id)
+        client.release(user_id, request_id)
         raise
+
+    # A transport error or malformed response is ambiguous: Telegram may have
+    # accepted the document. Keep the reservation for operator reconciliation.
+    try:
+        response = send(document)
+    except Exception as exc:
+        raise TrialReservationError(
+            "Telegram delivery outcome unknown; reservation retained for reconciliation"
+        ) from exc
+    if not telegram_document_confirmed(response):
+        raise TrialReservationError(
+            "Telegram delivery not confirmed; reservation retained for reconciliation"
+        )
+
+    # Delivery confirmed. A failed commit must never trigger a second send or release.
+    remaining = client.commit(user_id, request_id)
+    return response, remaining
