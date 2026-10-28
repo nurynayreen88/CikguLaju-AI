@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.3  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
-**Objective:** Pupils identify four of five written details and answer two factual questions.  
+**Learning objectives:** Pupils identify four of five written details and answer two factual questions.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and the resources below.
 
