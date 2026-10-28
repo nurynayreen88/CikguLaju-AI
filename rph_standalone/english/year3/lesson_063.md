@@ -1,33 +1,25 @@
-# English Year 3 — Lesson 63: Reading (Provisional Draft)
+# English Year 3 — Lesson 63: Language Arts
 
-**Lesson:** 63
-**Year:** 3
-**Skill focus:** Reading (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Year In, Year Out
+**Theme:** World of Stories
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Writing 4.2 / 4.2.4
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate reading response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Student's Book pp.42–43; Teacher's Book pp.70–71; snow globe picture and magic globe worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher displays a snow globe and introduces the story title The Snow Globe. Pupils predict the setting.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Display a short level-appropriate passage and pre-teach two words.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Story reading (15 minutes)
+Teacher displays Student's Book p.42 pictures. Pupils read character lines and predict what happens next.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils read, underline clues and match three statements to the text.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Imaginative response (25 minutes)
+Teacher guides the story on pp.42–43. Pupils discuss the events, then use the magic globe worksheet to draw and describe a place or scene they imagine inside a globe.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs justify their answers using words from the passage. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher assesses imaginative responses and clear written descriptions. Pupils share their globe designs.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils explain one imaginative detail from their work.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
