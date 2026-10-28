@@ -50,6 +50,26 @@ class TaughtStoreTests(unittest.TestCase):
         self.assertEqual(self.call(), "confirmed")
         self.assertEqual(self.call(session_id="s2"), "non_sequential")
 
+    def test_rejected_attempt_does_not_advance_progress(self):
+        self.assertEqual(self.call(), "confirmed")
+        before = self.db.execute(
+            "SELECT last_lesson FROM test_taught_progress"
+        ).fetchone()[0]
+        self.assertEqual(self.call(lesson=3, session_id="s3"), "non_sequential")
+        after = self.db.execute(
+            "SELECT last_lesson FROM test_taught_progress"
+        ).fetchone()[0]
+        self.assertEqual((before, after), (1, 1))
+        self.assertEqual(self.db.execute(
+            "SELECT COUNT(*) FROM test_taught_events"
+        ).fetchone()[0], 1)
+
+    def test_unverified_first_attempt_leaves_no_progress_row(self):
+        self.assertEqual(self.call(calendar_verified=False), "blocked")
+        self.assertEqual(self.db.execute(
+            "SELECT COUNT(*) FROM test_taught_progress"
+        ).fetchone()[0], 0)
+
     def test_invalid_values(self):
         self.assertEqual(self.call(lesson=True), "blocked")
         self.assertEqual(self.call(school_year=0), "blocked")
