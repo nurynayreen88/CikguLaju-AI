@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 5: Language Arts (Provisional Draft)
+# English Year 3 — Lesson 5: Language Arts
 
-**Lesson:** 5
-**Year:** 3
-**Skill focus:** Language Arts (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate language arts response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 5.3 / 5.3.1  
+**Complementary SK/SP:** 4.3 / 4.3.3  
+**Duration:** 60 minutes  
+**Materials / references:** Sentence strips; paper; optional class photos; display/book materials  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 5. Lesson outline adapted for classroom use.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Read prepared description strips and identify classmates. **Pupils:** Respond and recall relevant language.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Read a short rhyme or story extract aloud with expression.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Guided preparation (15 minutes)
+**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify repeated words and act out the meaning.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Core lesson task (25 minutes)
+**Teacher:** In groups create a class yearbook or wall display: write two respectful sentences describing a classmate, peer-review, revise and assemble pages. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pairs perform a short response or illustrate a favourite line. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Check two intelligible drafted sentences and creative contribution; note the SOW's Language Arts standard is broader than this task. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Share the completed display and give positive feedback. **Pupils:** Summarise one thing learned.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
