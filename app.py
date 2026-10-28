@@ -10291,9 +10291,41 @@ def _create_rph_word(doc, section, s, ai_text, path):
                             continue
                         _bidi_flag(_para._p.get_or_add_pPr(), 'bidi')
                         _para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                        for _run in _para.runs:
-                            if _arabic.search(_run.text or ''):
+                        # Split mixed-script runs without changing their text.
+                        # Keep Latin letters, SK/SP numbers and punctuation LTR.
+                        for _run in list(_para.runs):
+                            _text = _run.text or ''
+                            if not _arabic.search(_text):
+                                continue
+                            _chunks = _jawi_re.findall(
+                                r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+|[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+',
+                                _text,
+                            )
+                            if len(_chunks) == 1:
                                 _bidi_flag(_run._r.get_or_add_rPr(), 'rtl')
+                                continue
+                            from copy import deepcopy as _copy_xml
+                            _original = _run._r
+                            _parent = _original.getparent()
+                            _index = _parent.index(_original)
+                            for _chunk in _chunks:
+                                _clone = _copy_xml(_original)
+                                for _node in list(_clone):
+                                    if _node.tag != qn('w:rPr'):
+                                        _clone.remove(_node)
+                                _new_text = OxmlElement('w:t')
+                                _new_text.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
+                                _new_text.text = _chunk
+                                _clone.append(_new_text)
+                                _rpr = _clone.get_or_add_rPr()
+                                _rtl = _rpr.find(qn('w:rtl'))
+                                if _arabic.search(_chunk):
+                                    _bidi_flag(_rpr, 'rtl')
+                                elif _rtl is not None:
+                                    _rpr.remove(_rtl)
+                                _parent.insert(_index, _clone)
+                                _index += 1
+                            _parent.remove(_original)
     doc.save(path); return path
 
 def create_word_file(s, ai_text, cid):
