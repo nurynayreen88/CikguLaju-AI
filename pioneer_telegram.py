@@ -61,7 +61,7 @@ def install(ns):
             active = has_pioneer(sb, user_id)
             count, remaining = pioneer_availability(sb)
             return ("🏆 Pioneer: " + ("AKTIF (seumur hidup)" if active else "TIDAK AKTIF")
-                    + f"\n📊 {count}/500 Pioneer | {remaining} tempat berbaki")
+                    + f"\n📊 {pioneer_percentage(count)} telah menyertai")
         except Exception:
             return "🏆 Pioneer: Tidak dapat disemak"
 
