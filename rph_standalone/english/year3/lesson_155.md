@@ -13,7 +13,7 @@ Teacher reviews adjectives and planets.
 Teacher revisits Activity 3 and pupils' worksheets from Lesson 153.
 
 ## Activity 2 (25 minutes)
-Pupils ask and answer planet questions, listening to longer supported questions and locating information.
+Pupils ask planet questions in groups, record guesses, and check answers using worksheets from Lesson 153.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks comprehension of questions and reading details.
