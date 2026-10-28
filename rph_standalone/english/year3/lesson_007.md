@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 7: Speaking (Provisional Draft)
+# English Year 3 — Lesson 7: Speaking
 
-**Lesson:** 7
-**Year:** 3
-**Skill focus:** Speaking (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate speaking response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 2.1 / 2.1.5  
+**Complementary SK/SP:** 1.2 / 1.2.5  
+**Duration:** 60 minutes  
+**Materials / references:** SB p.7 Activity 4; TB p.21; paper strips  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 7; classroom adaptation of its learning outline.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Review have got vocabulary with a short game. **Pupils:** Respond and activate prior knowledge.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a simple question-and-answer exchange with picture prompts.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Modelling and preparation (15 minutes)
+**Teacher:** Demonstrate the target language and model the lesson task with examples. **Pupils:** Observe, respond and practise with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils practise two turns in pairs, then swap partners.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Main learning task (25 minutes)
+**Teacher:** Review SB p.7 Activity 3; guide Activity 4; model I have got / He has got; pupils write possessions on paper strips and ask classmates 'Have you got ...?' to identify the owner. **Pupils:** Complete the tasks and practise both main and complementary skills.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Invite individual responses and give feedback on clarity. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Observe two descriptions and supported listening exchanges. **Pupils:** Demonstrate the targeted skills; teacher records evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Share an interesting fact about a friend. **Pupils:** State one thing learned.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Lesson-level SK/SP, unit and lesson outline cross-checked with official KPM SOW. Direct Teacher's Book review and Word/PDF output tests pending. NOT READY FOR RELEASE.
