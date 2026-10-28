@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.4  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Objective:** Pupils read six clothing words and match five printed words to pictures.  
+**Learning objectives:** Pupils read six clothing words and match five printed words to pictures.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
