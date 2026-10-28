@@ -37,6 +37,8 @@ def resolve_class_identity(*, teacher_id: int, school_year: int,
     if len(matches) != 1:
         return None
     stable_id = matches[0][1]
+    if not isinstance(stable_id, (str, UUID)):
+        return None
     try:
         stable_id = str(UUID(str(stable_id)))
     except (ValueError, TypeError, AttributeError):
