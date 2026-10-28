@@ -1,0 +1,5 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PI2-022,Pendidikan Islam,2,10,QURAN,Surah an-Nas - bacaan,1.1,1.1.1;1.1.2;1.1.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-023,Pendidikan Islam,2,10,TAJWID,Mad Asli,1.5,1.5.1;1.5.2;1.5.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-024,Pendidikan Islam,2,10,SIRAH,Peristiwa malaikat membelah dada Nabi Muhammad,4.1,4.1.3;4.1.4,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-025,Pendidikan Islam,2,10,JAWI,Perkataan lima suku kata,6.1,6.1.1;6.1.2,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
