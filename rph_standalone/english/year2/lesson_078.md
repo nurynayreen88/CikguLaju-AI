@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source classification:** SB p.90; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objective:** Pupils identify the main idea and answer two oral questions.  
+**Learning objectives:** Pupils identify the main idea and answer two oral questions.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
