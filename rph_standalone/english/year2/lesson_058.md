@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.4  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Learning objectives:** Pupils read six clothing words and match five printed words to pictures.  
+**Learning objectives:** Pupils blend four simple words from phonemes and segment four words into phonemes.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
+**Phonics practice:** cap /k/ /a/ /p/; hat /h/ /a/ /t/; sock /s/ /o/ /k/; stop /s/ /t/ /o/ /p/. Teacher models sounds, not letter names.  
 **Word cards:** shirt, skirt, trousers, shoes, socks, hat, dress, jacket.
 **Picture key:** A—shirt; B—skirt; C—trousers; D—shoes; E—socks; F—hat; G—dress; H—jacket.
 **Five matching prompts/key:** shirt—A, trousers—C, shoes—D, hat—F, jacket—H.
