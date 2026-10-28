@@ -20,10 +20,10 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** In pairs or small groups, ask pupils to draft four new Unit 9 review questions, peer-check wording and punctuation, then produce a final numbered quiz sheet to use in Lesson 153. Supply the original four-question backup if needed.
-**Pupils:** Draft and revise four review questions together, then write the final four-question quiz.
+**Pupils:** First draft four questions individually, then peer-review and prepare a final four-question group quiz for Lesson 153.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check each pupil's contribution to drafting and revision, and assess four final group questions for capitals, spacing and question marks.
+**Teacher (10 min):** Collect four questions drafted independently by each pupil before peer editing. Assess each pupil's own four questions for meaning, capital letters, spacing and question marks. Keep the final group quiz as separate collaborative evidence.
 **Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
