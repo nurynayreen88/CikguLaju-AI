@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 129: Listening
 
-**Unit:** On holiday
+**Unit:** On Holiday
 **Main SK/SP:** 1.2 / 1.2.1
 **Complementary SK/SP:** 2.1 / 2.1.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate listening skills in the context of On holiday.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** Student's Book p.85; Teacher's Book p.130; KPM Year 3 SOW.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce On holiday with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher introduces the topic of holidays. Pupils recall familiar holiday activities.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a listening task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 (15 minutes)
+Teacher shows the pictures from Student's Book Activity 1. Pupils identify places and activities.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to On holiday.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 (25 minutes)
+Teacher guides the listening task. Pupils recognise familiar holiday words and describe pictures.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 1.2.1 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher checks listening recognition and simple descriptions.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Pupils name one holiday activity.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** SOW-aligned draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
