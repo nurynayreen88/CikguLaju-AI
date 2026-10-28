@@ -16,7 +16,7 @@ Pairs edit and prepare final drafts of their holiday accounts.
 Pairs read their corrected six-stage stories to another pair. Listeners sketch the six events, including negative events, then groups display the pictures and stories for a matching activity.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks listening for detail and spelling corrections.
+Teacher checks whether listeners can sketch six events from another pair's story and match the sketches to the correct text.
 
 ## Closure (5 minutes)
 Pupils share one detail heard.
