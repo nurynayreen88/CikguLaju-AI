@@ -13,7 +13,7 @@ Teacher reviews the planets.
 Teacher introduces superlative adjectives and the Grammar Box.
 
 ## Activity 2 (25 minutes)
-Pupils answer planet questions and write sentences using superlatives, checking spelling and punctuation.
+Pairs answer Student's Book p.99 questions from memory, then check the text on p.98. Pupils write a short planet worksheet with full sentences, capitals and punctuation.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks spelling and sentence accuracy.
