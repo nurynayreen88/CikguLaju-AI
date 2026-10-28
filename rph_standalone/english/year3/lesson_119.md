@@ -1,33 +1,24 @@
-# English Year 3 — Lesson 119: Provisional Writing Draft
+# English Year 3 — Lesson 119: Speaking
 
-**Lesson:** 119
-**Year:** 3
-**Skill focus:** Writing (provisional, not mapped to SOW)
-**Unit:** Pending official Year 3 SOW verification
-**Main SK/SP:** Pending official SOW verification
-**Complementary SK/SP:** Pending official SOW verification
+**Unit:** Where Were You Yesterday?
+**Main SK/SP:** 2.1 / 2.1.1
+**Complementary SK/SP:** 2.3 / 2.3.1
 **Duration:** 60 minutes
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (pages pending verification), picture cards, exercise books.
-**Objective (provisional):** Pupils demonstrate a simple writing response with age-appropriate support.
+**References:** SB p.77; TB p.119.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two familiar images, elicit known words and introduce the task.
-**Pupils:** Name the images and answer a short question.
+Teacher reviews the pictures and listening from Lesson 118.
 
-## Activity 1 — Demonstration (10 minutes)
-**Teacher:** Model two linked sentences and review basic punctuation.
-**Pupils:** Observe the example and attempt a supported response.
+## Activity 1 (15 minutes)
+Teacher models short exchanges about where someone was and how it was.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils draft three sentences using a picture prompt and word bank.
-**Pupils:** Complete the practice task and compare with a partner.
+## Activity 2 (25 minutes)
+Groups use their word cards to create and perform short conversations about past visits.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils revise their writing against a simple checklist. Record observations, but do not assign a specific curriculum SP until verified.
-**Pupils:** Give an independent response or submit individual work.
+## Assessment / PBD (10 minutes)
+Teacher checks personal information and short narratives.
 
 ## Closure (5 minutes)
-**Teacher:** Review two useful words or expressions and give feedback.
-**Pupils:** Share one thing learned.
+Pupils share one past visit.
 
-**QA:** UNVERIFIED DRAFT. Verify actual lesson skill, unit, SK/SP, textbook pages and Teacher's Book sequence before making available to bot users.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
