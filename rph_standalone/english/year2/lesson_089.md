@@ -3,9 +3,10 @@
 **Unit:** The robot
 **Main SK/SP:** 4.2 / 4.2.2
 **Complementary SK/SP:** 3.2 / 3.2.1
-**Learning objectives:** Pupils write three short sentences describing a robot and identify four of five key printed words.
-**Success criteria:** Three meaningful sentences and 4/5 correct word identifications.
+**Learning objectives:** Pupils write three short sentences expressing robot abilities using can/can't and identify the main idea of two simple printed sentences.
+**Success criteria:** Three accurate ability sentences and two correct main-idea responses.
 **Teaching materials:** Super Minds 1 Student's Book p.95, pictures, word cards and classroom resources.
+**Teacher-created sentence models:** 'The robot can jump.' 'It can wave.' 'It can't swim.' **Reading main ideas:** 'The robot can jump and run.' (It can move.) 'The robot can't fly or swim.' (It cannot fly or swim.)
 **Audited source mapping:** Student's Book p.95 (Year 2 SOW audit); exact Teacher's Book procedure not yet verified.
 
 ## Set Induction (5 minutes)
@@ -17,11 +18,11 @@
 **Pupils:** Read a sample and rehearse one sentence.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use actual page text for a five-word identification task and guide writing three robot descriptions.
+**Teacher (25 min):** Use the two original example sentences to elicit their main ideas, then guide pupils to write three ability sentences with can/can't.
 **Pupils:** Identify printed words and write three sentences independently.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five reading identifications and three written sentences per pupil.
+**Teacher (10 min):** Record two main-idea responses (SP 3.2.1) and three written ability sentences (SP 4.2.2).
 **Pupils:** Submit individual reading and writing evidence.
 
 ## Closure (5 minutes)
