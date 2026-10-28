@@ -68,7 +68,9 @@ class TrialReservationClient:
         row = self._call("release", user_id, request_id)
         if row["ok"] is not True:
             raise TrialReservationError("Trial release not confirmed")
-        return row.get("reservation_status")
+        if row.get("reservation_status") != "released":
+            raise TrialReservationError("Unexpected trial release status")
+        return "released"
 
 
 def telegram_document_confirmed(response) -> bool:
