@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 39: Speaking
 
-**Unit:** Right now
-**Main SK/SP:** 2.1 / 2.1.5
-**Complementary SK/SP:** 2.2 / 2.2.2
+**Unit:** Right Now
+**Main SK/SP:** Speaking 2.1 / 2.1.5
+**Complementary SK/SP:** Speaking 2.2 / 2.2.2
 **Duration:** 60 minutes
-**Objective:** Pupils ask and answer questions using target vocabulary in the context of Right now.
-**Materials:** Get Smart Plus 3 Student's Book, Teacher's Book, flashcards, worksheets as needed.
+**References:** Student's Book p.27 Activity 4; Teacher's Book p.49; picture and sentence matching cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using pictures, short questions and prior vocabulary.
-**Pupils:** Identify familiar words and answer questions.
+Teacher reviews written action phrases. Pupils identify matching pictures.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Model how to ask and answer questions using target vocabulary, demonstrate one example and check understanding.
-**Pupils:** Observe, listen and attempt the model response.
+## Activity 1 — Matching (15 minutes)
+Pupils work in groups to match picture cards with present continuous sentences.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Facilitate guided pair or group work, monitor and scaffold responses.
-**Pupils:** Practise the target skill and share work with a partner.
+## Activity 2 — Guessing game (25 minutes)
+Teacher guides Student's Book p.27 Activity 4. Pupils take turns secretly choosing an action card, giving a location clue and asking classmates to guess. Teacher models requests for help.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess each pupil's response against 2.1.5; provide brief feedback.
-**Pupils:** Complete an individual response demonstrating the target skill.
+## PBD (10 minutes)
+Teacher observes descriptions, interaction and appropriate requests for clarification.
 
 ## Closure (5 minutes)
-**Teacher:** Recap the language target and invite reflections.
-**Pupils:** State one thing learned.
+Teacher displays an anonymous common error. Pupils suggest and explain the correction.
 
-**Source:** Year 3 English SOW 2026, Lesson 39. **QA:** Preliminary draft; exact Teacher's Book steps not yet verified.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
