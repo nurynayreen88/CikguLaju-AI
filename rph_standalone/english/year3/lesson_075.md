@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 75: Listening
 
-**Unit:** My new house
-**Main SK/SP:** 1.1 / 1.1.1
-**Complementary SK/SP:** 2.1 / 2.1.5
+**Unit:** My New House
+**Main SK/SP:** Listening 1.1 / 1.1.1
+**Complementary SK/SP:** Speaking 2.1 / 2.1.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the listening learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book pp.49–50; Teacher's Book pp.79–80; picture cards for cushion, slippers, table and flower.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews rooms and furniture. Pupils identify household objects.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the listening task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Syllable awareness (15 minutes)
+Teacher models the two syllables in cushion, slippers, table and flower. Pupils listen and identify the second syllable.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Listening and speaking (25 minutes)
+Teacher guides Student's Book pp.49–50 using Teacher's Book pp.79–80. Pupils listen, distinguish target word sounds and describe objects in simple sentences.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 1.1.1 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks recognition of syllable patterns and spoken descriptions.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils pronounce two target words and identify their syllables.
 
-**Source:** Year 3 English SOW 2026, Lesson 75. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
