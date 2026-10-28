@@ -13,7 +13,7 @@ Teacher plays True/False about the New York text; pupils respond with gestures.
 Teacher reviews key places and time expressions from the reading.
 
 ## Activity 2 (25 minutes)
-Pupils plan and write short sentences about a place they visited, then check spelling and punctuation.
+Teacher reviews There weren't any and the Grammar Box, then guides Student's Book p.79 Activities 3 and 4. Pairs complete the comparison table and write at least two sentences about their hometown in the past, checking apostrophes, spelling and punctuation.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks clear descriptions and writing conventions.
