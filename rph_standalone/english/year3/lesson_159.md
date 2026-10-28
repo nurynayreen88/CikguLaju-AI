@@ -13,7 +13,7 @@ Teacher asks pupils about fairy stories.
 Teacher introduces the princess character and elicits adjectives.
 
 ## Activity 2 (25 minutes)
-Pupils read the fairy story, discuss the characters and explain their reactions.
+Pupils predict which story characters are strongest, funniest or fastest from pictures, then read Student's Book pp.102–103 to check. They listen to the story audio, discuss characters and its value.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks response to literature and reading enjoyment.
