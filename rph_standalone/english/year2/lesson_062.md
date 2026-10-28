@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
-**Learning objectives:** Pupils describe three clothing items and ask two questions.  
+**Learning objectives:** Pupils ask two basic questions to find out a partner's clothing preferences and use two suitable non-verbal responses during a short exchange.  
 **Success criteria:** Meet the numerical targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and the resources below.
 
+**Shop role-play:** Customer: 'Do you like this cap?' Shopkeeper: 'Yes, I do.' Customer nods and points to the cap. Customer: 'Do you like these shoes?' Shopkeeper: 'No, I don't.' Customer shakes head politely and points to another pair.  
 **Picture A:** blue shirt, black trousers, white shoes. **Picture B:** yellow dress, red hat, green shoes. **Original dialogue:** “What are you wearing?” “I'm wearing a blue shirt.” “What colour are your shoes?” “They are white.” **Frames:** “I'm wearing ____.” “Are you wearing ____?”
 
 ## Set Induction (5 minutes)
@@ -24,7 +25,7 @@
 **Pupils:** Complete the task, compare evidence and improve responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Observe three independent descriptions and two relevant questions per pupil. Record whether prompts were needed.  
+**Teacher:** Observe two independently asked personal-preference questions and two appropriate non-verbal responses (nod, shake head or point) per pupil. Record whether prompts were needed.  
 **Pupils:** Demonstrate the task individually.
 
 ## Closure (5 minutes)
