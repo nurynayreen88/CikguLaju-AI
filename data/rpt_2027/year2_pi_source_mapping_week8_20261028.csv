@@ -1,0 +1,4 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PI2-016,Pendidikan Islam,2,8,QURAN,Surah al-Baqarah ayat 142-169,,,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-017,Pendidikan Islam,2,8,IBADAH,Beristinjak selain air,3.1,3.1.4;3.1.5,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-018,Pendidikan Islam,2,8,JAWI,Perkataan empat suku kata,6.1,6.1.1;6.1.2;6.1.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
