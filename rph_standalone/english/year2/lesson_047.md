@@ -5,8 +5,8 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.4
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created passage, not a textbook extract.
-**Learning objectives:** Pupils locate three details in a short text and write one meaningful sentence.
-**Success criteria:** At least three of four correct text-supported answers and one meaningful room sentence; record individual results separately.
+**Learning objectives:** Pupils locate three details in a short text and write one accurate sentence describing a room object using suitable words.
+**Success criteria:** At least three of four correct text-supported answers and one accurate written object description; record individual results separately.
 **Materials:** Printed passage, question cards, exercise books.
 
 ## Original reading text — Nina's House
@@ -14,6 +14,7 @@ Nina lives in a little house. There is a blue sofa in the living room. There are
 
 **Questions:** 1. What colour is the sofa? 2. How many chairs are in the kitchen? 3. Where does Nina read? 4. Where does the cat sleep?
 **Answer key:** 1. Blue. 2. Two. 3. In her bedroom. 4. Near the sofa.
+**Writing model:** 'The sofa is blue.' 'There are two chairs in the kitchen.'  
 **Writing frame:** “In Nina's ____, there is/are ____.”
 
 ## Set Induction (5 minutes)
@@ -35,6 +36,8 @@ Nina lives in a little house. There is a blue sofa in the living room. There are
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to read one fact about Nina's house.
 **Pupils:** Share a text-supported fact.
+
+**Writing PBD:** Assess the independent sentence for a clear object and suitable descriptive words, separately from reading comprehension.  
 
 **QA:** Corrected mismatch between four provided comprehension questions and only three assessed questions. Official SOW, detailed SP alignment and A4/PDF verification pending. NOT READY.
 
