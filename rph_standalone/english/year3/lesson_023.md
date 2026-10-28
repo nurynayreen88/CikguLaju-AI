@@ -1,29 +1,25 @@
 # English Year 3 — Lesson 23: Speaking
 
-**Unit:** Every day
-**Main SK/SP (existing mapping):** 2.1 / 2.1.2
-**Complementary SK/SP (existing mapping):** 1.2 / 1.2.5
-**Objective (draft):** Pupils can exchange two spoken turns.
-**Materials:** Topic pictures, word cards and exercise books. Textbook page unverified.
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Speaking 2.1 / 2.1.2
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
+**Duration:** 60 minutes
+**References:** Get Smart plus 3 Student's Book p.17; Teacher's Book p.35; class survey worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show two pictures related to Every day and elicit familiar words.
-**Pupils:** Name pictures and answer one question.
+Teacher leads a miming game to review transport and routine vocabulary. Pupils guess the actions.
 
-## Activity 1 — Modelling (7 minutes)
-**Teacher:** Model a short question and response using topic picture cues.
-**Pupils:** Observe and give one supported response.
+## Activity 1 — Guided practice (15 minutes)
+Teacher models present-simple questions about travelling to school or work, using Do you...? and Does your family member...? Pupils practise asking and answering.
 
-## Activity 2 — Guided practice (10 minutes)
-**Teacher:** Pupils exchange questions in pairs and change roles. Provide feedback and support.
-**Pupils:** Practise and share answers.
+## Activity 2 — Class survey (25 minutes)
+Teacher guides Student's Book p.17 Activity 4 and distributes survey worksheets. Pairs write one question, interview classmates and record yes/no answers.
 
-## Assessment / PBD (5 minutes)
-**Teacher:** Check independently whether pupils can exchange two spoken turns; record evidence.
-**Pupils:** Demonstrate the target skill individually.
+## PBD (10 minutes)
+Teacher listens to each pupil's question and response, and checks listening comprehension during the survey. Pupils report one result.
 
-## Closure (3 minutes)
-**Teacher:** Review two key words and invite a final example.
-**Pupils:** Share one learned response.
+## Closure (5 minutes)
+Pupils share findings and teacher corrects common question forms.
 
-**QA status:** DRAFT — teacher-developed activities, NOT Teacher's Book verified; SK/SP and textbook pages require source comparison before release.
+**QA:** SOW lesson mapping checked; direct Teacher's Book review and Word/PDF output verification pending. NOT READY FOR RELEASE.
