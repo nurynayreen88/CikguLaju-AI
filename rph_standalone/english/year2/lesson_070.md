@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
-**Learning objective:** Pupils perform three of four rhyme lines and answer two spoken questions.  
+**Learning objectives:** Pupils perform three of four rhyme lines and answer two spoken questions.  
 **Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
