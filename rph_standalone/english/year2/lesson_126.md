@@ -3,10 +3,10 @@
 **Unit:** At the beach
 **Main SK/SP:** 1.2 / 1.2.1
 **Complementary SK/SP:** 1.3 / 1.3.1
-**Learning objectives:** Pupils identify four of five spoken beach words and answer two oral prompts.
-**Success criteria:** Four correct choices and two relevant responses.
+**Learning objectives:** Pupils identify the main idea of three simple spoken beach sentences and interpret two messages using visual clues.
+**Success criteria:** three correct main-idea choices and two correct visual-clue interpretations.
 **Teaching materials:** Super Minds 1 Student's Book p.106, pictures, word cards and classroom resources.
-**Original supplementary listening cards:** A = sand; B = sea; C = shell; D = bucket; E = sun. Teacher reads: shell, bucket, sun, sea, sand. **Answer key:** C, D, E, B, A. Ask: Where do we find shells? (At the beach.) What can hold sand? (A bucket.)
+**Original spoken sentences:** 'Let's build a sandcastle.' 'Let's swim in the sea.' 'Let's collect shells.' **Main-idea picture key:** building, swimming, collecting. **Visual clues:** mime digging and point to shells. **Original supplementary listening cards:** A = sand; B = sea; C = shell; D = bucket; E = sun. Teacher reads: shell, bucket, sun, sea, sand. **Answer key:** C, D, E, B, A. Ask: Where do we find shells? (At the beach.) What can hold sand? (A bucket.)
 
 **Audited source mapping:** Student's Book p.106 (Year 2 SOW audit); Teacher's Book procedure not yet verified.
 
@@ -19,11 +19,11 @@
 **Pupils:** Rehearse one response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Use page 106 only as visual context; read the five original word cues twice, then ask the two scripted questions.
+**Teacher (25 min):** Use page 106 as visual context; read three complete sentences twice and ask pupils to select each main-idea picture. Use two gestures to convey the intended message.
 **Pupils:** Select five pictures and answer two prompts.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record five picture choices and two oral responses per pupil.
+**Teacher (10 min):** Record three main-idea choices (SP 1.2.1) and two interpretations using visual clues (SP 1.3.1) per pupil.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
