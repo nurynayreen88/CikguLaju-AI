@@ -57,8 +57,11 @@ begin
   if v_row.status='committed' then
     return query select true,v_balance,'committed'::text; return;
   end if;
-  if v_row.status<>'reserved' or v_balance<=0 then
+  if v_row.status<>'reserved' then
     return query select false,v_balance,v_row.status; return;
+  end if;
+  if v_balance is null or v_balance<=0 then
+    return query select false,coalesce(v_balance,0),'balance_unavailable'::text; return;
   end if;
   update public.cikgulaju_users set trial_remaining=trial_remaining-1,updated_at=now()
     where telegram_user_id=p_telegram_user_id returning trial_remaining into v_balance;
@@ -81,6 +84,7 @@ begin
     return query select false,'missing'::text; return;
   end if;
   if v_row.status='committed' then return query select false,'committed'::text; return; end if;
+  if v_row.status='released' then return query select true,'released'::text; return; end if;
   update public.rph_trial_reservations set status='released',updated_at=now()
     where request_id=p_request_id and status='reserved';
   return query select true,'released'::text;
