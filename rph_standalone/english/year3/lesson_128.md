@@ -1,30 +1,24 @@
-# English Year 3 — Lesson 128: Reading
+# English Year 3 — Lesson 128: Language Awareness
 
-**Unit:** Where were you yesterday?
+**Unit:** Where Were You Yesterday?
 **Main SK/SP:** 3.2 / 3.2.2
 **Complementary SK/SP:** 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate reading skills in the context of Where were you yesterday?.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** SB p.84; TB pp.128–129; past and present text cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Where were you yesterday? with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher reviews familiar present and past forms.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a reading task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 (15 minutes)
+Teacher pre-teaches homework vocabulary and distributes two versions of a text, one past and one present.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to Where were you yesterday?.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 (25 minutes)
+Pairs read their assigned texts and complete gapped versions by exchanging information; teacher guides review tasks.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 3.2.2 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher checks reading details and understanding of supported questions.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Pupils give one present and past sentence pair.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
