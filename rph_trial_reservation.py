@@ -85,8 +85,13 @@ def deliver_with_trial(client: TrialReservationClient, user_id: int,
     client.reserve(user_id, request_id)
     try:
         document = render()
-    except Exception:
-        client.release(user_id, request_id)
+    except Exception as render_error:
+        try:
+            client.release(user_id, request_id)
+        except Exception as release_error:
+            raise TrialReservationError(
+                "Rendering failed and reservation release is unconfirmed; reconcile before retry"
+            ) from release_error
         raise
 
     # Transport errors are ambiguous: Telegram may have accepted the upload.
