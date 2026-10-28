@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 4: Writing (Provisional Draft)
+# English Year 3 — Lesson 4: Writing
 
-**Lesson:** 4
-**Year:** 3
-**Skill focus:** Writing (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate writing response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 4.2 / 4.2.4  
+**Complementary SK/SP:** 4.1 / 4.1.2  
+**Duration:** 60 minutes  
+**Materials / references:** TB p.20; family flashcards; family drawing-and-writing worksheet  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 4. Lesson outline adapted for classroom use.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Review family words using a word game. **Pupils:** Respond and recall relevant language.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a short sentence and show a picture-based word bank.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Guided preparation (15 minutes)
+**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils plan and write three linked sentences.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Core lesson task (25 minutes)
+**Teacher:** Model sentences about family using have got; pupils draw their family and write descriptive sentences with supported cursive practice; display work and play a family guessing game. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils check capital letters, spacing and full stops with a partner. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Review descriptions and cursive handwriting; include learning diary reflection. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Discuss neat writing and a useful family description. **Pupils:** Summarise one thing learned.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
