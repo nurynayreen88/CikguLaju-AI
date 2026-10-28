@@ -10,7 +10,7 @@
 Teacher displays a map of Japan. Pupils share what they know about Japan and Japanese houses.
 
 ## Activity 1 — Prediction (15 minutes)
-Teacher introduces the house vocabulary and distributes story pictures. Pupils predict the text content and sequence the pictures.
+Teacher writes Japan on the board or displays a map and invites pupils to share what they know about Japanese homes. Pupils discuss ideas in pairs, then examine the house pictures and predict the text.
 
 ## Activity 2 — Reading (25 minutes)
 Teacher guides Student's Book pp.48–49 using Teacher's Book pp.78–79. Pupils read the text about a Japanese house, check their predictions and identify the main idea and meaning of unfamiliar words.
