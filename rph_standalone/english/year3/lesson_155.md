@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 155: Listening
 
-**Unit:** The world around us
+**Unit:** The World Around Us
 **Main SK/SP:** 1.2 / 1.2.5
 **Complementary SK/SP:** 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils listen to a short description and identify details using vocabulary related to the world around us.
-**Materials:** Get Smart Plus 3, nature picture cards, word cards, exercise books.
+**References:** Student's Book p.99; Teacher's Book p.149; KPM Year 3 SOW.
 
 ## Set Induction (5 minutes)
-**Teacher:** Show pictures of animals, plants and local surroundings; elicit familiar words.
-**Pupils:** Name what they see and answer short questions.
+Teacher reviews adjectives and planets.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate how to listen to a short description and identify details with a suitable model and comprehension check.
-**Pupils:** Listen, observe and respond to the model.
+## Activity 1 (15 minutes)
+Teacher revisits Activity 3 and pupils' worksheets from Lesson 153.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Organise paired or individual practice; circulate and support pupils.
-**Pupils:** Complete a task on the world around us and share their answers.
+## Activity 2 (25 minutes)
+Pupils ask and answer planet questions, listening to longer supported questions and locating information.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check one individual response aligned to 1.2.5; record who needs support.
-**Pupils:** Demonstrate the target skill independently.
+## Assessment / PBD (10 minutes)
+Teacher checks comprehension of questions and reading details.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key vocabulary and invite two examples.
-**Pupils:** State one new word or idea.
+Pupils share one planet answer.
 
-**QA:** Preliminary SOW-mapped draft; exact Teacher's Book steps and textbook page references require verification.
+**QA:** SOW-aligned draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
