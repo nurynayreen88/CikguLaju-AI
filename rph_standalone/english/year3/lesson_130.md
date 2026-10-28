@@ -13,7 +13,7 @@ Teacher reviews holiday pictures and words.
 Pairs match sentence strips about holiday activities.
 
 ## Activity 2 (25 minutes)
-Teacher guides Activity 2. Pupils tell partners what they did on holiday and listen to short recounts.
+Pupils discuss their own holidays, then complete Student's Book p.85 Activity 2 using their holiday pictures. After rehearsing in pairs, selected pupils present a short holiday recount to the class.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks recounts and reading details.
