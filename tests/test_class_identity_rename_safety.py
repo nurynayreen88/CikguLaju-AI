@@ -11,6 +11,18 @@ class RenameSafetyTests(unittest.TestCase):
         self.assertIsNone(rename_class(teacher_id=1, school_year=2027,
                           old_name='A', new_name='B', registry=None))
 
+    def test_boolean_registry_identity_rejected(self):
+        from rph_hari_ini.class_identity import resolve_class_identity
+        for registry in ({(True, 2027, "A"): VALID_ID},
+                         {(1, True, "A"): VALID_ID}):
+            with self.subTest(registry=registry):
+                self.assertIsNone(resolve_class_identity(
+                    teacher_id=1, school_year=2027,
+                    class_name="A", registry=registry))
+                self.assertIsNone(rename_class(
+                    teacher_id=1, school_year=2027, old_name="A",
+                    new_name="B", registry=registry))
+
     def test_missing_old_name(self):
         result = rename_class(teacher_id=1, school_year=2027, old_name=None, new_name="New", registry={})
         self.assertIsNone(result)
