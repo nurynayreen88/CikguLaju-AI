@@ -83,6 +83,11 @@ class TaughtStoreTests(unittest.TestCase):
         self.assertEqual(self.db.execute(
             "SELECT COUNT(*) FROM test_taught_events"
         ).fetchone()[0], 0)
+        self.db.execute("DROP TRIGGER reject_taught_event")
+        self.assertEqual(self.call(), "confirmed")
+        self.assertEqual(self.db.execute(
+            "SELECT last_lesson FROM test_taught_progress"
+        ).fetchone()[0], 1)
 
     def test_invalid_values(self):
         self.assertEqual(self.call(lesson=True), "blocked")
