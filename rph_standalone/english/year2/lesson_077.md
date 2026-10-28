@@ -5,7 +5,7 @@
 **Complementary SK/SP (prior mapping; official SOW verification pending):** 4.2 / 4.2.4  
 **Duration:** 60 minutes  
 **Source classification:** SB p.89; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
-**Learning objective:** Pupils describe three clothing items and write two supporting notes.  
+**Learning objectives:** Pupils describe three clothing items and write two supporting notes.  
 **Success criteria:** Achieve the measurable targets in the objective independently.  
 **Materials:** Board, picture/word cards, exercise books and resources below.
 
