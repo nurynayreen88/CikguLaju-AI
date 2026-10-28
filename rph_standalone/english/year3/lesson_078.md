@@ -1,30 +1,24 @@
-# English Year 3 — Lesson 78: Writing & Speaking
+# English Year 3 — Lesson 78: Writing
 
-**Unit:** My new house
-**Main SK/SP:** 4.3 / 4.3.3
-**Complementary SK/SP:** 2.3 / 2.3.1
+**Unit:** My New House
+**Main SK/SP:** Writing 4.3 / 4.3.3
+**Complementary SK/SP:** Speaking 2.3 / 2.3.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the writing & speaking learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.51; Teacher's Book p.82; bedroom worksheet and optional furniture cut-outs.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher plays a letter-jumble spelling game using familiar house vocabulary. Pupils correct spellings.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the writing & speaking task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Text review (15 minutes)
+Teacher replays the text about Sue's house and discusses differences from pupils' homes. Pupils recall details.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Bedroom writing (25 minutes)
+Teacher explains the Writing Tip from Teacher's Book p.82. Pupils plan and write about their own bedroom, then furnish a bedroom template with drawings or cut-out furniture.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 4.3.3 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks sentence drafting and short oral descriptions of the completed bedroom.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share one accurate sentence about their bedroom.
 
-**Source:** Year 3 English SOW 2026, Lesson 78. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
