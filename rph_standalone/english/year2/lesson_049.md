@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW check pending):** 2.2 / 2.2.2  
 **Duration:** 60 minutes  
 **Source:** TEXTBOOK MAPPED: SB p.79; TB procedure unverified. All scripts and cards below are teacher-created, not textbook quotations.  
-**Objective:** Pupils ask and answer two house questions and describe one room.  
+**Learning objectives:** Pupils ask and answer two house questions and describe one room.  
 **Success criteria:** Independently demonstrate each component of the objective.  
 **Materials:** Board, room picture cards, word cards and resources below.
 
