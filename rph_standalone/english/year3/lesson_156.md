@@ -13,10 +13,10 @@ Teacher reviews superlative adjectives.
 Teacher shows a family picture and models oldest and youngest.
 
 ## Activity 2 (25 minutes)
-Pupils describe family members using superlatives and complete the optional activity.
+Pupils describe family members using superlatives, complete the optional activity, then play the Unit 10 board game in groups with dice and counters.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks descriptions and reading details.
+Teacher checks spoken descriptions and pupils complete the Unit 10 self-assessment worksheet.
 
 ## Closure (5 minutes)
 Pupils share one family comparison.
