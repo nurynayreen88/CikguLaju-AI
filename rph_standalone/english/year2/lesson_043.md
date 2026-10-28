@@ -5,11 +5,12 @@
 **Complementary SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.5  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.77. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
-**Learning objectives:** Pupils ask two simple written questions about rooms and write two relevant answers (main 4.2.1), using correct basic punctuation in at least three of four sentences (complementary 4.2.5).  
-**Success criteria:** Independently write two understandable room questions and two matching answers; use capital letters and end punctuation correctly in at least three sentences.  
+**Learning objectives:** Pupils ask two simple written questions about rooms and write two relevant answers (main 4.2.1), using the coordinating conjunction 'and' in two written statements (complementary 4.2.5).  
+**Success criteria:** Independently write two understandable room questions and two matching answers; use 'and' accurately to join words or phrases in two written statements.  
 **Materials:** Board, room cards, exercise books and resources below.
 
-**Additional teacher-created question-and-answer cards (not textbook content):** A: *What is in your bedroom?* — *There is a bed in my bedroom.* B: *Is there a table in your kitchen?* — *Yes, there is.* **Frames:** *What is in your ____?* / *There is a ____ in my ____.* / *Is there a ____ in your ____?* / *Yes, there is.* **Editing check:** initial capital, question mark, full stop, word spacing. **Sample answers:** bedroom—bed; kitchen—table (other logical room/object combinations accepted).
+**Additional teacher-created question-and-answer cards (not textbook content):** A: *What is in your bedroom?* — *There is a bed in my bedroom.* B: *Is there a table in your kitchen?* — *Yes, there is.* **Frames:** *What is in your ____?* / *There is a ____ in my ____.* / *Is there a ____ in your ____?* / *Yes, there is.* **Conjunction models:** 'I live in a house with a kitchen and a bedroom.' 'My room has a bed and a lamp.'  
+**Editing check:** initial capital, question mark, full stop, word spacing. **Sample answers:** bedroom—bed; kitchen—table (other logical room/object combinations accepted).
 
 ## Set Induction (5 minutes)
 **Teacher:** Show room pictures and elicit two familiar house words.  
@@ -30,6 +31,8 @@
 ## Closure (5 minutes)
 **Teacher:** Display a statement and ask pupils to change it into a question, checking the final punctuation.  
 **Pupils:** Share a sentence.
+
+**Complementary assessment:** Check two independent written statements for accurate use of 'and' to join words or phrases.  
 
 **QA:** Replaced message-only writing with basic questions and statements to better target mapped 4.2.1, plus explicit punctuation evidence for 4.2.5. Exact official SOW activity, Teacher's Book and PDF/A4 QA pending. NOT READY.
 
