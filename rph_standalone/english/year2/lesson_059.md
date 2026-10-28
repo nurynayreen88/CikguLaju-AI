@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.1  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Learning objectives:** Pupils write four clothing words legibly and two meaningful sentences.  
+**Learning objectives:** Pupils name the letters in four clothing words and spell four familiar words accurately in guided writing.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
+**Letter-name practice:** Name each letter in cap, hat, socks and shoes before spelling the words from picture prompts.  
 **Word bank:** shirt, skirt, trousers, shoes, socks, hat, dress, jacket.
 **Model:** “I have a blue shirt. I wear black shoes.”
 **Sentence frames:** “I have a ____ ____.” “I wear ____ ____.”
