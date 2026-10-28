@@ -10,7 +10,7 @@
 Teacher reviews familiar countries. Pupils locate Malaysia, Singapore and Thailand on a map.
 
 ## Activity 1 — Country vocabulary (15 minutes)
-Teacher introduces Australia and Canada with vocabulary flashcards. Pupils predict where different objects or activities are found.
+Teacher displays a world map and asks pupils to locate Malaysia, Singapore and Thailand before introducing Australia and Canada. Pupils locate countries and predict which objects or activities belong to each.
 
 ## Activity 2 — Reading (25 minutes)
 Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed.
