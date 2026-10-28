@@ -10,7 +10,7 @@
 Teacher leads a short classroom exercise. Pupils name actions such as dancing and jogging.
 
 ## Activity 1 — Vocabulary (15 minutes)
-Teacher introduces exercise vocabulary and displays pictures of four children. Pupils predict their activities.
+Teacher invites pupils to do two minutes of safe exercise, elicits actions such as dancing and jogging, then introduces exercise vocabulary and pictures of four children. Pupils describe their actions and predict the children's activities.
 
 ## Activity 2 — Reading (25 minutes)
 Pupils read short texts and match each one to a child. Teacher guides Student's Book p.28 Activity 1 and the Grammar Box and Activity 2 on pp.28–29.
