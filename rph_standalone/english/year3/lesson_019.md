@@ -1,33 +1,25 @@
-# English Year 3 — Lesson 19: Writing (Provisional Draft)
+# English Year 3 — Lesson 19: Reading
 
-**Lesson:** 19
-**Year:** 3
-**Skill focus:** Writing (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
+**Unit:** Every Day
+**Theme:** World of Self, Family and Friends
+**Main SK/SP:** Reading 3.2 / 3.2.1
+**Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate writing response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**References:** Get Smart plus 3 Student's Book pp.16–17; Teacher's Book p.34; routine flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+Teacher reviews routine vocabulary through a circle game. Pupils recall words and actions.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Model a short sentence and show a picture-based word bank.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Preparation (15 minutes)
+Teacher introduces flashcards and story pictures from p.16. Pupils predict the story's setting and events.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils plan and write three linked sentences.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Reading (25 minutes)
+Pupils read the story quietly and identify where the children are going and why Anna travels with Greg's dad. Teacher guides the reading tasks and checks understanding.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Pupils check capital letters, spacing and full stops with a partner. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## PBD (10 minutes)
+Teacher checks pupils' understanding of the main idea and two specific story details.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+Pupils share one event from the story and correct misunderstandings.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Official KPM SOW checked. Direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
