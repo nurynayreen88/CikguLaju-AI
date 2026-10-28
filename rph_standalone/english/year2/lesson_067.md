@@ -5,13 +5,14 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source:** Student's Book p.85 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
-**Learning objectives:** Pupils describe three clothing items and write two clothing words legibly.  
+**Learning objectives:** Pupils ask two basic questions to find out personal information and write two guided sentences with correct capitals and full stops.  
 **Success criteria:** Complete the stated task independently, with the counts specified in the objective.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
 **Original picture A:** red shirt, blue trousers, black shoes. **Picture B:** green dress, yellow hat, white shoes.
 **Speaking frames:** “She's wearing a ____.” “He's wearing ____.” “The ____ is/are ____.”
 **Model:** “She's wearing a green dress. Her hat is yellow. Her shoes are white.”
+**Question-and-answer frames:** 'Are you wearing a blue shirt?' 'Yes, I am.' 'What colour is your hat?' 'It is yellow.' **Guided writing:** 'She is wearing a green dress.' 'He is wearing black shoes.'
 **Spelling targets:** dress, shoes.
 
 ## Set Induction (5 minutes)
@@ -27,7 +28,7 @@
 **Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check three individual oral descriptions and two correctly formed written words. Record accuracy and assistance needed.  
+**Teacher:** Check two relevant personal-information questions and two correctly punctuated guided sentences. Record accuracy and assistance needed.  
 **Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
