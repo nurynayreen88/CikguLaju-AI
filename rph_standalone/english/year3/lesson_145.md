@@ -1,30 +1,25 @@
 # English Year 3 — Lesson 145: Listening
 
-**Unit:** The world around us
+**Unit:** The World Around Us
 **Main SK/SP:** 1.2 / 1.2.2
 **Complementary SK/SP:** 1.1 / 1.1.1
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate listening skills in the context of The world around us.
-**Materials:** Get Smart Plus 3, textbook and picture cards.
+**References:** Student's Book p.95; Teacher's Book p.144; KPM Year 3 SOW Lesson 145.
+**Materials:** Animal flashcards, animal pictures and adjective cards (tall, small, thin).
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce The world around us with pictures and guiding questions.
-**Pupils:** Recall familiar words and respond.
+Teacher mimes an animal. Pupils guess its name and imitate its movement.
 
-## Activity 1 — Modelling (10 minutes)
-**Teacher:** Demonstrate a listening task with an age-appropriate example.
-**Pupils:** Observe and follow the model.
+## Activity 1 (15 minutes)
+Teacher shows animal flashcards, elicits names and models descriptions using tall, small and thin. Pupils listen, point to matching pictures and repeat key words.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pairs or individuals through a task related to The world around us.
-**Pupils:** Practise the target skill and complete their task.
+## Activity 2 (25 minutes)
+Teacher describes an animal without showing its picture. Pupils listen for specific details and choose the matching flashcard. In pairs, pupils take turns describing and guessing animals using familiar adjectives.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Assess one independent response against 1.2.2 and record progress.
-**Pupils:** Demonstrate their understanding.
+## Assessment / PBD (10 minutes)
+Teacher gives four short oral descriptions. Pupils select the correct animal picture and identify familiar sounds or words. Teacher records pupils' responses.
 
 ## Closure (5 minutes)
-**Teacher:** Review key language and correct common errors.
-**Pupils:** Share one learning point.
+Each pupil names one animal and gives one adjective.
 
-**Source:** Year 3 SOW 2026. **QA:** Draft; Teacher's Book activity sequence pending verification.
+**QA:** Aligned to KPM SOW outline; direct Teacher's Book page inspection and Word/PDF tests pending. NOT READY FOR RELEASE.
