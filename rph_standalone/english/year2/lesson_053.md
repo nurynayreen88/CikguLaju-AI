@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
-**Objective:** Pupils ask and answer three questions about house pictures and identify two spoken details.  
+**Learning objectives:** Pupils ask and answer three questions about house pictures and identify two spoken details.  
 **Success criteria:** Meet each component of the objective independently.  
 **Materials:** Board, exercise books, picture/word cards and the text below.
 
