@@ -5,10 +5,11 @@
 **Complementary SK/SP (existing mapping; official SOW verification pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
-**Learning objectives:** Pupils ask three clothing-preference questions and answer two partner questions.  
+**Learning objectives:** Pupils give a sequence of three basic clothing instructions and use two appropriate non-verbal responses during partner exchanges.  
 **Success criteria:** Achieve the measurable targets in the objective.  
 **Materials:** Board, clothing picture/word cards, exercise books and the printable resources below.
 
+**Instruction sequence:** 'Pick up the shirt. Put on the shirt. Show me your shoes.' **Non-verbal response examples:** nod to acknowledge an instruction; point to the requested item or gesture readiness. **Optional extension:** adapt a familiar clothing story with instructions.
 **Original interview cards:** “Do you like hats?” “What colour shirt do you like?” “Do you like blue shoes?” **Sample responses:** “Yes, I do.” “I like red shirts.” “No, I don't.” **Tally sheet:** Partner | Hats? | Shirt colour | Blue shoes?
 
 ## Set Induction (5 minutes)
@@ -20,11 +21,11 @@
 **Pupils:** Follow and practise one example with support.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pairs interview each other, record three answers in the tally sheet and swap partners for a second round.  
+**Teacher:** Pairs take turns giving three clothing instructions in order while their partners respond with actions, nods or gestures; swap roles and give feedback. The interview cards are optional extension only.  
 **Pupils:** Complete the activity, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Observe three relevant questions and two understandable independent answers. Record independent accuracy and assistance required.  
+**Teacher:** Observe three clear, ordered instructions (SP 2.1.3) and two suitable non-verbal responses (SP 2.2.1). Record independent accuracy and assistance required.  
 **Pupils:** Demonstrate their skills individually.
 
 ## Closure (5 minutes)
