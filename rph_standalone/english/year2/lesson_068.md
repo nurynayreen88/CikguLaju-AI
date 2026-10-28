@@ -5,7 +5,7 @@
 **Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
 **Duration:** 60 minutes  
 **Source:** Student's Book pp.86–87 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
-**Learning objective:** Pupils identify the main idea of a short familiar text (main 3.2.1) and find at least four of five supporting written details (complementary 3.2.2).  
+**Learning objectives:** Pupils identify the main idea of a short familiar text (main 3.2.1) and find at least four of five supporting written details (complementary 3.2.2).  
 **Success criteria:** Individually select the correct main idea from three choices, identify one supporting clue, and locate at least four of five written details.  
 **Materials:** Board, clothing picture cards, exercise books and printable resources below.
 
