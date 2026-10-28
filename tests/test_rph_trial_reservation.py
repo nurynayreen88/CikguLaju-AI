@@ -123,6 +123,30 @@ class TrialReservationTests(unittest.TestCase):
             "cikgulaju_release_rph_trial",
         ])
 
+    def test_reconcile_only_commits_without_sending(self):
+        client, calls = self.make_client()
+        remaining = client.reconcile_confirmed_delivery(42, "request-12345")
+        self.assertEqual(remaining, 0)
+        self.assertEqual(calls, ["cikgulaju_commit_rph_trial"])
+
+    def test_failed_release_reports_uncertain_reservation(self):
+        calls = []
+        def rpc(name, payload):
+            calls.append(name)
+            if name.endswith("reserve_rph_trial"):
+                return [{"ok": True, "remaining": 1, "reservation_status": "reserved"}]
+            if name.endswith("release_rph_trial"):
+                raise ConnectionError("Database unreachable")
+            raise AssertionError(name)
+        client = TrialReservationClient(rpc)
+        def broken_render():
+            raise ValueError("PDF rendering failed")
+        with self.assertRaisesRegex(TrialReservationError, "release is unconfirmed"):
+            deliver_with_trial(client, 42, "request-12345", broken_render,
+                               lambda _: self.fail("must not send"))
+        self.assertEqual(calls, ["cikgulaju_reserve_rph_trial",
+                                 "cikgulaju_release_rph_trial"])
+
     def test_invalid_request_id(self):
         client, _ = self.make_client()
         with self.assertRaises(ValueError):
