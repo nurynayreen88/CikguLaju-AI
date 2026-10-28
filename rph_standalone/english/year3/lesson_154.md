@@ -13,7 +13,7 @@ Groups brainstorm superlatives such as tallest, longest and highest.
 Teacher introduces Malaysian landmarks and guides question formation.
 
 ## Activity 2 (25 minutes)
-Groups create superlative questions and share responses about Malaysian geography.
+Pupils individually write superlative questions about Malaysian landmarks, check questions in pairs, and compare answers with the class. Pairs create one additional question.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks creative response and spelling.
