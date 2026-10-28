@@ -13,7 +13,7 @@ Teacher introduces Sasha and Jason and a forest setting. Pupils predict what mig
 Teacher shows a castle picture. Pupils imagine what the characters found inside.
 
 ## Activity 2 (25 minutes)
-Teacher tells the story and guides groups in a creative retelling or role-play of the castle adventure.
+Teacher builds the castle poem line by line using pictures. Pupils repeat the poem together, then pairs invent an ending about what Sasha and Jason saw behind the door. Groups perform their completed poems with actions.
 
 ## Assessment / PBD (10 minutes)
 Teacher observes creative participation and short oral recounts.
