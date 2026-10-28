@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 42: Language Arts
 
-**Unit:** Right now
-**Main SK/SP:** 5.3 / 5.3.1
-**Complementary SK/SP:** 2.1 / 2.1.5
+**Unit:** Right Now
+**Main SK/SP:** Language Arts 5.3 / 5.3.1
+**Complementary SK/SP:** Speaking 2.1 / 2.1.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the language arts learning standard in the context of Right now.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** KPM Year 3 SK Scheme of Work Lesson 42; sports picture cards and group song worksheet.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews sports vocabulary. Pupils name and mime familiar sports.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the language arts task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Action song (15 minutes)
+Teacher introduces the sports action song specified by the SOW and models actions. Pupils listen and perform movements without reproducing song lyrics in the RPH.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Right now.
+## Activity 2 — Group composition (25 minutes)
+In groups of four or five, pupils choose new sports words and movements to create their own short original verses. Teacher supports language and rehearsal.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 5.3.1 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher assesses imaginative response, group participation and spoken descriptions.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Groups perform their original action-song verses with movements.
 
-**Source:** Year 3 English SOW 2026, Lesson 42. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** Official SOW checked; direct source-asset and Word/PDF tests pending. NOT READY FOR RELEASE.
