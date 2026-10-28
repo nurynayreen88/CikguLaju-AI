@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 66: Speaking
 
-**Unit:** My new house
-**Main SK/SP:** 2.1 / 2.1.5
-**Complementary SK/SP:** 1.2 / 1.2.5
+**Unit:** My New House
+**Main SK/SP:** Speaking 2.1 / 2.1.5
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the speaking learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book pp.45,47; Teacher's Book p.74; clothes flashcards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher plays the house song from Lesson 65. Pupils sing along.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the speaking task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Questions (15 minutes)
+Teacher asks 'Where's the doll?' and 'Where are the toys?' to review prepositions. Pupils answer using picture clues.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Speaking (25 minutes)
+Teacher guides Student's Book p.45 Activity 2 and introduces clothes vocabulary from p.47. Pupils describe locations of objects and clothing in pairs.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 2.1.5 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher observes clear descriptions and understanding of short supported questions.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share one accurate sentence describing an object's position.
 
-**Source:** Year 3 English SOW 2026, Lesson 66. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
