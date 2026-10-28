@@ -1,33 +1,26 @@
-# English Year 3 — Lesson 6: Listening (Provisional Draft)
+# English Year 3 — Lesson 6: Listening
 
-**Lesson:** 6
-**Year:** 3
-**Skill focus:** Listening (provisional; confirm against official SOW)
-**Unit:** Pending official SOW mapping
-**Main SK/SP:** Pending source verification — do not publish as final RPH
-**Complementary SK/SP:** Pending source verification — do not publish as final RPH
-**Duration:** 60 minutes
-**Learning objective (draft):** Pupils demonstrate an age-appropriate listening response using familiar vocabulary and teacher scaffolding.
-**Materials:** Get Smart Plus 3 Student's Book and Teacher's Book (exact pages pending), picture cards, board and exercise books.
+**Unit:** Welcome!  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** 1.2 / 1.2.2  
+**Complementary SK/SP:** 4.3 / 4.3.1  
+**Duration:** 60 minutes  
+**Materials / references:** SB p.7 Activity 3; TB p.21; vocabulary, word and punctuation cards  
+**Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 6. Lesson outline adapted for classroom use.
 
 ## Set Induction (5 minutes)
-**Teacher:** Display two familiar pictures; elicit vocabulary and connect it to pupils' experience.
-**Pupils:** Name objects or actions and answer one simple question.
+**Teacher:** Review have got questions and vocabulary with flashcards. **Pupils:** Respond and recall relevant language.
 
-## Activity 1 — Teacher demonstration (10 minutes)
-**Teacher:** Play or read a short age-appropriate description twice.
-**Pupils:** Watch or listen, then try one supported response.
+## Activity 1 — Guided preparation (15 minutes)
+**Teacher:** Introduce and model the relevant language, provide visual or written support and check understanding. **Pupils:** Practise examples with support.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Pupils identify three key words, then select matching picture cards.
-**Pupils:** Complete the task with appropriate peer support.
+## Activity 2 — Core lesson task (25 minutes)
+**Teacher:** Follow SB p.7 Activity 3; model a sentence with word and punctuation cards; pupils write about a character, exchange, check punctuation and rewrite. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Replay once; pupils correct answers and explain one choice. Record individual performance against the skill focus; replace with the actual SP criterion after source verification.
-**Pupils:** Produce an independent response for formative assessment.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Check two details from listening and a correctly punctuated sentence. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
 
 ## Closure (5 minutes)
-**Teacher:** Revisit two target expressions and give specific feedback.
-**Pupils:** Share one new word or sentence.
+**Teacher:** Unjumble a mixed-up sentence and punctuation as a class. **Pupils:** Summarise one thing learned.
 
-**QA status:** UNVERIFIED PLACEHOLDER. Lesson number and skill/unit mapping, SK/SP, and Teacher's Book sequence MUST be checked against the official Year 3 SOW before publication or generator integration.
+**QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
