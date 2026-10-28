@@ -12,7 +12,7 @@
 **Teacher:** Predict the text about Fay from its picture. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model the lesson language and task steps. **Pupils:** Practise with support.
+**Teacher:** Show the picture of Fay on the referenced reading page, elicit predictions and distribute one comprehension-question strip to each pupil. **Pupils:** Identify Fay, read their question and predict where its answer may appear in the text.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Read p.11; answer individual question strips; compare answers; discuss characters and complete optional follow-up. **Pupils:** Complete the lesson activities and practise both skills.
