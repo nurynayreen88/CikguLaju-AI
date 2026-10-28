@@ -13,7 +13,7 @@ Teacher plays Missing Planets.
 Groups imagine a new Solar System and plan its planets.
 
 ## Activity 2 (25 minutes)
-Pupils write descriptions of their imaginary planets and create an illustrated poster.
+Groups of three or four plan an imaginary Solar System and assign writing, drawing and checking roles. They draft and peer-review descriptions, finish a labelled poster and display it for positive feedback.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks spelling and descriptions.
