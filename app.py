@@ -10297,6 +10297,10 @@ def _create_rph_word(doc, section, s, ai_text, path):
                             _text = _run.text or ''
                             if not _arabic.search(_text):
                                 continue
+                            # Preserve tabs and line breaks as native Word nodes.
+                            if _run._r.find(qn('w:br')) is not None or _run._r.find(qn('w:tab')) is not None:
+                                _bidi_flag(_run._r.get_or_add_rPr(), 'rtl')
+                                continue
                             _chunks = _jawi_re.findall(
                                 r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+|[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+',
                                 _text,
