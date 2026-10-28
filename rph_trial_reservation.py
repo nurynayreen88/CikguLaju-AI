@@ -44,13 +44,13 @@ class TrialReservationClient:
 
     def reserve(self, user_id: int, request_id: str) -> Reservation:
         row = self._call("reserve", user_id, request_id)
-        if not row["ok"] or row.get("reservation_status") != "reserved":
+        if row["ok"] is not True or row.get("reservation_status") != "reserved":
             raise TrialReservationError("Trial unavailable or request already finalized")
         return Reservation(request_id, int(row["remaining"]), "reserved")
 
     def commit(self, user_id: int, request_id: str) -> int:
         row = self._call("commit", user_id, request_id)
-        if not row["ok"] or row.get("reservation_status") != "committed":
+        if row["ok"] is not True or row.get("reservation_status") != "committed":
             raise TrialReservationError("Trial commit not confirmed")
         return int(row["remaining"])
 
@@ -66,7 +66,7 @@ class TrialReservationClient:
 
     def release(self, user_id: int, request_id: str):
         row = self._call("release", user_id, request_id)
-        if not row["ok"] and row.get("reservation_status") != "committed":
+        if row["ok"] is not True:
             raise TrialReservationError("Trial release not confirmed")
         return row.get("reservation_status")
 
