@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 44: Speaking
 
-**Unit:** Right now
-**Main SK/SP:** 2.1 / 2.1.5
-**Complementary SK/SP:** 1.2 / 1.2.5
+**Unit:** Right Now
+**Main SK/SP:** Speaking 2.1 / 2.1.5
+**Complementary SK/SP:** Listening 1.2 / 1.2.5
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the speaking learning standard in the context of Right now.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book pp.29–30 and p.125 cut-out cards; Teacher's Book pp.51–53; scissors.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce Right now using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher leads the mime warm-up from Teacher's Book p.52. Pupils identify actions.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the speaking task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Picture game (15 minutes)
+Teacher guides the picture guessing game from Student's Book p.29 Activity 4. Pupils ask and answer about actions.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to Right now.
+## Activity 2 — Pair guessing game (25 minutes)
+Pupils prepare cut-out cards and play the speaking-and-listening guessing game from Teacher's Book p.52 Activity 1. Teacher monitors pronunciation and use of positive and negative present continuous sentences.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 2.1.5 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher observes descriptive speaking and understanding of short questions. Pupils demonstrate one exchange.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Teacher uses the optional card game from Teacher's Book p.53 and gives feedback.
 
-**Source:** Year 3 English SOW 2026, Lesson 44. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
