@@ -15,22 +15,22 @@
 **Pupils:** Name a robot feature.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher (15 min):** Model finding evidence in the actual printed text on Student's Book p.102.
+**Teacher (15 min):** Display the original alternative passage about Bolt provided above, and model finding evidence by underlining *blue body*. Student's Book p.102 is a mapping reference only until its text and Teacher's Book sequence are verified.
 **Pupils:** Rehearse one supported response.
 
 ## Activity 2 — Guided practice (25 minutes)
-**Teacher (25 min):** Pupils underline five details in the original passage and write two answers; retain SB p.102 as an unverified resource mapping.
+**Teacher (25 min):** Give each pupil the complete original Bolt passage. Ask pupils to identify the five stated details (name, place, body colour, number of arms, number of wheels), underline supporting words and answer both written questions. Use the supplied key; do not claim this is the Student's Book passage.
 **Pupils:** Underline evidence and write two answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check five details and two supported written answers. Note individual support required.
+**Teacher (10 min):** Score five individual detail responses (0–5) and two written answers (0–2) against the provided key; note whether each answer is supported by the original passage and record any prompts separately.
 **Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful expression.
 **Pupils:** Share one word or sentence.
 
-**QA:** Exact SOW and Teacher's Book steps not verified.
+**QA:** Removed unsupported claim of using actual SB p.102 text in the model activity. This is a teacher-created alternative; exact SOW, SB and Teacher's Book steps remain unverified.
 
 **Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
 
