@@ -1,30 +1,24 @@
 # English Year 3 — Lesson 67: Reading
 
-**Unit:** My new house
-**Main SK/SP:** 3.2 / 3.2.2
-**Complementary SK/SP:** 4.3 / 4.3.2
+**Unit:** My New House
+**Main SK/SP:** Reading 3.2 / 3.2.2
+**Complementary SK/SP:** Writing 4.3 / 4.3.2
 **Duration:** 60 minutes
-**Learning objective:** Pupils demonstrate the reading learning standard in the context of My new house.
-**Materials:** Get Smart Plus 3, unit flashcards, workbook and classroom resources.
+**References:** Student's Book p.46; Teacher's Book p.76; furniture and clothes picture cards.
 
 ## Set Induction (5 minutes)
-**Teacher:** Introduce My new house using visual prompts and two short questions.
-**Pupils:** Name familiar vocabulary and answer questions.
+Teacher reviews familiar furniture vocabulary. Pupils name objects in a room.
 
-## Activity 1 — Model (10 minutes)
-**Teacher:** Demonstrate an example of the reading task and check comprehension.
-**Pupils:** Observe and respond to the model.
+## Activity 1 — Vocabulary (15 minutes)
+Teacher gives pupils clothes and furniture picture cards. Pupils sort them into categories and explain their choices.
 
-## Activity 2 — Guided practice (25 minutes)
-**Teacher:** Guide pair or individual practice and provide differentiated support.
-**Pupils:** Complete a task using language related to My new house.
+## Activity 2 — Reading (25 minutes)
+Teacher follows the Vocabulary and Activity 1 guidance from Teacher's Book p.76. Pupils read Student's Book p.46, locate details in the picture story and practise writing key vocabulary.
 
-## Assessment / PBD (15 minutes)
-**Teacher:** Check an individual response against 3.2.2 and note pupils requiring support.
-**Pupils:** Demonstrate the target skill independently.
+## PBD (10 minutes)
+Teacher checks reading comprehension and spelling of familiar words.
 
 ## Closure (5 minutes)
-**Teacher:** Recap key language and invite pupil reflections.
-**Pupils:** Share one sentence or response from the lesson.
+Pupils share a new word and its meaning.
 
-**Source:** Year 3 English SOW 2026, Lesson 67. **QA:** Preliminary draft; exact Teacher's Book sequence pending verification.
+**QA:** SOW lesson mapping checked. Direct Teacher's Book and Word/PDF verification pending. NOT READY FOR RELEASE.
