@@ -13,7 +13,7 @@ Teacher introduces the topic of holidays. Pupils recall familiar holiday activit
 Teacher shows the pictures from Student's Book Activity 1. Pupils identify places and activities.
 
 ## Activity 2 (25 minutes)
-Teacher guides the listening task. Pupils recognise familiar holiday words and describe pictures.
+Pupils listen to the holiday song, raise matching pictures, order the pictures and complete SB p.85 Activity 1.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks listening recognition and simple descriptions.
