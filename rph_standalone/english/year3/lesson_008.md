@@ -12,7 +12,7 @@
 **Teacher:** Mime sports and action vocabulary. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Model target vocabulary, language and task steps. **Pupils:** Practise with visual and oral scaffolding.
+**Teacher:** Mime sports to review vocabulary, show cut-up pictures from the referenced page and ask pupils to predict which written description matches each picture. **Pupils:** Name the sports, discuss visual clues and prepare to match pictures with short texts.
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Match cut-up texts and pictures from p.8; read the texts; discuss visual clues; complete Activity 1, grammar box and Activity 2 on can + verb. **Pupils:** Complete the referenced tasks, practising both standards.
