@@ -450,6 +450,19 @@
       ],
       "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
       "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "093": {
+      "sb_pages": [
+        61
+      ],
+      "tb_pages": [
+        96,
+        97
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "audio": [],
+      "verification": "Lesson 93 RPH references SB p61 TB pp96-97; recording mentioned but CD/track not confirmed; do not serve guessed audio",
+      "activity": "Tony's pizza reading, SB p61 Activity 1"
     }
   },
   "authoritative_audio_source": {
