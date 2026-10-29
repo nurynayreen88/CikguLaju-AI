@@ -16,7 +16,7 @@ Teacher models 'Did you...?' and 'Yes, I did / No, I didn't'.
 Pupils practise Activity 1 and a Snap game, asking questions about past activities.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks descriptions and comprehension of questions.
+Pupils ask two questions beginning 'Did you' and respond using 'Yes, I did' or 'No, I didn't'. Teacher records responses.
 
 ## Closure (5 minutes)
 Pupils share one past-tense answer.
