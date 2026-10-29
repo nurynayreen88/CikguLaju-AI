@@ -18,7 +18,7 @@
 **Teacher:** Listen to the SOW action song; mime, sequence prepared lines and compose a short original action-song verse in groups. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Observe imaginative participation and response to the song. **Pupils:** Show independent learning evidence.
+**Teacher:** Observe imaginative participation and response to the song. **Pupils:** Perform one original action-song line and respond to the song using an action card.
 
 ## Closure (5 minutes)
 **Teacher:** Perform original group action verses. **Pupils:** Share one thing learned.
