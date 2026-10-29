@@ -29,3 +29,10 @@
 **Pupils:** Share one accurate 'has got' sentence.
 
 **QA status:** Teacher's Book pp.18–19 directly inspected: Grammar Box, CD 1 Track 4, pair descriptions and optional 'Who is it?' activity confirmed. Generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
+
+## Resource access — pending bot integration
+- **Audio CD1 Track 4 (original WMA):** https://drive.google.com/file/d/1Xa6lXXQ70elpS5vXtgPqUcKT5hcEV43B/view
+- **Student's Book (original PDF; printed pp. 5):** https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- **Teacher's Book (original PDF; printed pp. 18–19):** https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+
+**Resource gate:** WMA source files identified in Drive; Telegram download buttons, access permissions and end-to-end tests pending. Provide a link to the original textbook; do not distribute extracted textbook pages without rights clearance. NOT READY FOR RELEASE.
