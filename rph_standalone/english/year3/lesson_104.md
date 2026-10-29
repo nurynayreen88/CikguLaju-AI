@@ -16,7 +16,7 @@ Pupils brainstorm town places and discuss rules for each place.
 Teacher displays four texts around the classroom. Pupils read and match them to place pictures, then identify key meanings.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks main ideas and contextual vocabulary.
+Teacher asks each pupil to match one text to a place, state its main idea and explain one word from context. Pupils point to supporting text.
 
 ## Closure (5 minutes)
 Pupils share a rule for one place.
