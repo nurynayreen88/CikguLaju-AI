@@ -16,7 +16,8 @@ Teacher introduces direction vocabulary and describes a route from school to a f
 Teacher guides the Student's Book listening task. Pupils listen to directions and identify route details.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks specific listening details and understanding of context.
+**Teacher:** Ask two route-detail questions and one question about the destination; record individual responses.
+**Pupils:** Identify the destination and explain two directions heard.
 
 ## Closure (5 minutes)
 Pupils share one direction from school.
