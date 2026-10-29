@@ -1,6 +1,6 @@
-"""Pioneer Early Bird percentage display. No public quota/count disclosure.
+"""Rakan Pembangun Early Bird percentage display. No public quota/count disclosure.
 
-Only pass the count of distinct, confirmed and active Pioneer members.
+Only pass the count of distinct, confirmed and active Rakan Pembangun members.
 The 500-place denominator is internal and must never appear in UI strings.
 """
 from decimal import Decimal, ROUND_HALF_UP
@@ -16,11 +16,11 @@ def pioneer_percentage(active_confirmed_count: int) -> str:
     return f"{value:.1f}%"
 
 def pioneer_menu_line(active_confirmed_count: int) -> str:
-    return f"🏆 Pioneer Early Bird — {pioneer_percentage(active_confirmed_count)} telah menyertai"
+    return f"🏆 Rakan Pembangun Early Bird — {pioneer_percentage(active_confirmed_count)} telah menyertai"
 
 def pioneer_details(active_confirmed_count: int) -> str:
     return (
-        f"🏆 PIONEER EARLY BIRD\n"
+        f"🏆 RAKAN PEMBANGUN EARLY BIRD\n"
         f"{pioneer_percentage(active_confirmed_count)} telah menyertai\n\n"
         "💰 RM10 sekali bayar\n"
         "Akses sepanjang CikguLaju AI beroperasi tanpa yuran bulanan atau tahunan."
