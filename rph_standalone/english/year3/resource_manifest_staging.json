@@ -17,12 +17,14 @@
         {
           "cd": 1,
           "track": 5,
-          "url": "https://drive.google.com/file/d/1qFvwFau16xp4A5ESKh864J6a8kAcj4_C/view"
+          "url": "https://drive.google.com/file/d/11OtFYM_lwSggZF7Din1bD7Tz5MUgSN8d/view?usp=drivesdk",
+          "status": "VERIFIED_FILE; lesson mapping recorded in RPH"
         },
         {
           "cd": 1,
           "track": 6,
-          "url": "https://drive.google.com/file/d/19dAki0a1GrihqCGr2MDbjc75WJuB6Ztu/view"
+          "url": "https://drive.google.com/file/d/1BdzwXRHEW2osce8q_crdJyNlL923Lkmi/view?usp=drivesdk",
+          "status": "VERIFIED_FILE; lesson mapping recorded in RPH"
         }
       ],
       "verification": "TB p21 pending"
@@ -123,5 +125,11 @@
       "audio": [],
       "verification": "SB reference from existing RPH; TB and audio track not independently verified; no page extraction authorized"
     }
+  },
+  "authoritative_audio_source": {
+    "spreadsheet_id": "1xzRM71yAZDM0ZgW_457RVtAixQ27kit7RiGaG0WASPY",
+    "class_cd_tab": "YEAR3_CLASS_CD",
+    "resource_audio_tab": "YEAR3_RESOURCE_AUDIO",
+    "rule": "VERIFIED_FILE means asset exists, not lesson mapping; preserve existing lesson_media_map where available; never replace verified links with empty lists"
   }
 }
