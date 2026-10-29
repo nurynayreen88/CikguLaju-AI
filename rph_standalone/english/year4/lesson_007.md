@@ -11,23 +11,23 @@
 
 ## Set Induction (10 minutes)
 **Teacher:** Review country and nationality words with flags made in earlier lessons.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Name nationalities from pupil-made flags.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Teacher's Book p.21 Activity 5; play CD1 Track 9 while pupils track the text, then replay for repetition.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Follow Activity 5, listening to CD1 Track 9 while tracking the dialogue and repeating the exchange.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Model acknowledgement 'Really? So, you're Brazilian.' Practise open pairs and then role-play famous people or familiar characters from different countries.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Role-play a person from a chosen country; acknowledge a partner with 'Really? So, you're ...' and ask for clarification when needed.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Observe pupil descriptions and use of short acknowledgement or clarification phrases. Ask pupils to clarify instructions before starting.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Demonstrate a short exchange with a description and one clarification or acknowledgement phrase.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils demonstrate a brief exchange and identify one helpful clarification phrase.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Perform one final two-turn dialogue.
 
 ## Differentiation and assessment
 Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 2.1.5 and complementary Speaking 2.2.1.
