@@ -46601,6 +46601,16 @@ except Exception as _pioneer_install_exc:
 _RPT2027_PREVIOUS_CALLBACK = callback
 def callback(cid, d):
     ds = str(d or '')
+    if ds == 'rpt2027_home' or ds.startswith('rpt2027_year_'):
+        # Enforce on every callback, including forged/stale Telegram buttons.
+        # _access_info includes approved Rakan Pembangun entitlements.
+        try:
+            rpt_allowed = bool(_is_admin(cid) or _access_info(cid).get('active'))
+        except Exception as exc:
+            print('RPT 2027 access verification failed:', repr(exc), flush=True)
+            rpt_allowed = False
+        if not rpt_allowed:
+            return send(cid, '🔒 <b>RPT 2027 — Akses Terhad</b>\\n\\nRPT hanya untuk pembangun, Rakan Pembangun yang disahkan dan pelanggan dengan langganan aktif.', [[{'text': '🏆 Jadi Rakan Pembangun', 'callback_data': 'pioneer_join'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
     if ds == 'rpt2027_home':
         kb = [[{'text': f'Tahun {n}', 'callback_data': f'rpt2027_year_{n}'}] for n in range(1, 7)]
         kb.append([{'text': '🏠 Menu Utama', 'callback_data': 'home'}])
