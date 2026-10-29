@@ -19,9 +19,13 @@ for path in files:
     text = path.read_text(encoding="utf-8")
     if not re.search(r"\*\*Duration:\*\*\s*60 minutes", text):
         errors.append(f"{n:03d}: duration is not 60 minutes")
-    for field in ("Unit", "Main SK/SP", "Complementary SK/SP", "References", "QA"):
+    for field in ("Unit", "Main SK/SP", "Complementary SK/SP"):
         if not re.search(rf"\*\*{re.escape(field)}:\*\*\s*\S", text):
             errors.append(f"{n:03d}: missing {field}")
+    if not re.search(r"\\*\\*(?:References|Materials(?: / references)?):\\*\\*\\s*\\S", text, re.IGNORECASE):
+        errors.append(f"{n:03d}: missing references or materials")
+    if not re.search(r"\\*\\*QA(?: status)?:\\*\\*\\s*\\S", text, re.IGNORECASE):
+        errors.append(f"{n:03d}: missing QA status")
     headings = re.findall(r"^##\s+(.+)$", text, flags=re.MULTILINE)
     expected = ("Set Induction", "Activity 1", "Activity 2", "PBD", "Closure")
     if not any("Set Induction" in h for h in headings):
