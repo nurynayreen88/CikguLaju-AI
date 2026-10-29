@@ -25,6 +25,7 @@ for weight in ("Regular", "Bold"):
     copyfile(src, dest)
     print("PI Jawi Amiri enabled:", dest)
 PY
+python tools/test_pi_jawi_mixed_glyphs.py
 python tools/install_pi_jawi_symbol_fallback.py
 python tools/install_pi_jawi_amiri_priority.py
 python -m py_compile app.py
