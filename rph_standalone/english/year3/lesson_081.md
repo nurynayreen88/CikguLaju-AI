@@ -7,18 +7,23 @@
 **References:** Student's Book p.55; Teacher's Book pp.88–89; food flashcards.
 
 ## Set Induction (5 minutes)
-Teacher reviews food vocabulary. Pupils name foods they like.
+**Teacher:** Show food flashcards and review familiar vocabulary.
+**Pupils:** Name foods they like.
 
 ## Activity 1 — Food words (15 minutes)
-Teacher guides the warmer and vocabulary exercises from Teacher's Book p.88. Pupils brainstorm familiar foods and make a mind map.
+**Teacher:** Guide the warmer and vocabulary tasks referenced on Teacher's Book p.88.
+**Pupils:** Brainstorm food words and make a mind map.
 
 ## Activity 2 — Listening practice (25 minutes)
-Teacher guides the listening exercise in Student's Book p.55. Pupils identify food words and answer short questions about what they heard.
+**Teacher:** Guide the Student's Book p.55 listening task and replay key parts when needed.
+**Pupils:** Listen for food words and answer short questions about details heard.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks pupils' understanding of listening details and spoken responses.
+**Teacher:** Ask three listening-detail questions and prompt a spoken food preference; record individual responses.
+**Pupils:** Answer the questions and say one food preference.
 
 ## Closure (5 minutes)
-Pupils name a new food word and share a food preference.
+**Teacher:** Review two new food words and invite a final response.
+**Pupils:** Name a new food word and share a preference.
 
 **QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
