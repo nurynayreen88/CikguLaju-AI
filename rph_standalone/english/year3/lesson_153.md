@@ -16,7 +16,7 @@ Teacher uses planet facts to introduce superlative adjectives and the Grammar Bo
 Pairs answer Student's Book p.99 questions from memory, then check the text on p.98. Pupils write a short planet worksheet with full sentences, capitals and punctuation.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spelling and sentence accuracy.
+Teacher checks two written planet facts for accurate superlatives, capital letters and punctuation. Pupils revise one sentence.
 
 ## Closure (5 minutes)
 Pupils share one superlative sentence.
