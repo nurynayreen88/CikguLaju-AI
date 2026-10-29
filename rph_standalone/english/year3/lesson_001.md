@@ -6,7 +6,7 @@
 **Complementary SK/SP:** Speaking 2.1 / 2.1.5 — Describe people and objects using suitable words and phrases.  
 **Duration:** 60 minutes  
 **Objective:** Pupils identify three adjectives from oral prompts with visual support and describe one person using a suitable adjective.  
-**Materials:** Get Smart plus 3 Student's Book p.5 Activity 1, Teacher's Book p.18, adjective flashcards and audio as referenced in the SOW.
+**Materials:** Get Smart plus 3 Student's Book p.5 Activity 1; Teacher's Book p.18; adjective and character flashcards; CD 1 Track 2 (vocabulary) and Track 3 (song); pupils' friend pictures (optional).
 
 ## Set Induction (10 minutes)
 **Teacher:** Organise a name circle; model 'My name's...' and 'His/Her name's...'; lead a short memory game.
@@ -28,4 +28,4 @@
 **Teacher:** Run an adjective flashcard guessing game and review common errors.
 **Pupils:** Say one adjective and its meaning.
 
-**QA status:** Official Year 3 SK SOW lesson mapping, standards and page references checked. Direct Teacher's Book inspection and generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
+**QA status:** Teacher's Book p.18 directly inspected: vocabulary CD 1 Track 2, song Track 3, flashcard TPR and grammar examples confirmed. Generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
