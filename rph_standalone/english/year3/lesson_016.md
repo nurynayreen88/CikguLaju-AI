@@ -18,7 +18,7 @@
 **Teacher:** Review has got/have got using character flashcards; complete worksheet Sections A and B; practise can/can't and Can you? questions. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check reading answers and guided sentence punctuation. **Pupils:** Demonstrate their learning; teacher records evidence.
+**Teacher:** Check reading answers and guided sentence punctuation. **Pupils:** Answer two reading questions and write one correctly punctuated 'has got' or 'can' sentence.
 
 ## Closure (5 minutes)
 **Teacher:** Correct common errors and complete unit self-assessment. **Pupils:** Summarise their learning.
