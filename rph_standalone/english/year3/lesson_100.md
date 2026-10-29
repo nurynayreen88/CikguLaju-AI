@@ -16,7 +16,8 @@ Teacher introduces singular and plural nouns with examples such as one sister an
 Teacher guides the Grammar Box and Activity 2. Pupils write animal word cards and practise accurate plural spelling and cursive handwriting.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spelling and handwriting.
+**Teacher:** Check each pupil's animal word cards for correct plural spelling and legible handwriting.
+**Pupils:** Submit the cards and correct one error.
 
 ## Closure (5 minutes)
 Pupils give one singular and plural word pair.
