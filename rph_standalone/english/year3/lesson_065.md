@@ -16,7 +16,7 @@ Teacher plays Run and Touch using door, window and floor, introducing behind and
 Teacher follows Warm Up, Vocabulary and Activity 1 from Teacher's Book pp.74–75. Pupils listen for house vocabulary and prepositions, then identify objects and locations.
 
 ## PBD (10 minutes)
-Teacher checks understanding of specific details and familiar words in the listening input.
+Pupils identify two details and three familiar words from the spoken input.
 
 ## Closure (5 minutes)
 Pupils describe where one classroom object is located.
