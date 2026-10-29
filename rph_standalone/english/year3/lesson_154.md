@@ -16,7 +16,7 @@ Teacher introduces Malaysian landmarks and guides question formation.
 Pupils individually write superlative questions about Malaysian landmarks, check questions in pairs, and compare answers with the class. Pairs create one additional question.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks creative response and spelling.
+Teacher checks two original superlative questions about Malaysian landmarks for clear meaning, spelling and question marks.
 
 ## Closure (5 minutes)
 Pupils share one question.
