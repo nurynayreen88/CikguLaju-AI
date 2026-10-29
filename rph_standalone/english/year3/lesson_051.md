@@ -16,7 +16,7 @@ Teacher distributes cut-up day and month cards. Pupils order them and read the w
 Teacher guides Student's Book p.36 Activity 1 using Teacher's Book p.62. Pupils read the story, identify the main idea and discuss clues that indicate the season, such as falling leaves.
 
 ## PBD (10 minutes)
-Teacher checks main-idea comprehension and pupils' short oral recounts.
+Pupils state the main idea of the reading text and recount two relevant details orally.
 
 ## Closure (5 minutes)
 Pupils share one new word about days, months or seasons.
