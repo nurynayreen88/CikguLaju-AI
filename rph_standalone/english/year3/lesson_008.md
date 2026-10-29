@@ -33,3 +33,12 @@
 - Do not assign an audio track without matching the lesson activity to the Teacher's Book.
 
 **QA:** Source links recorded; Telegram download buttons and delivery untested. NOT READY FOR RELEASE.
+
+## Original source access
+- Student's Book: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- Lesson reference: SB pp.8–9.
+- Teacher's Book: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+- CD1 original WMA folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
+- Lesson-specific audio must be verified before assigning any track. Do not assume every lesson requires audio.
+
+**Resource status:** Original source links recorded. Telegram buttons, audio delivery and any page-specific redistribution are not verified. NOT READY FOR RELEASE.
