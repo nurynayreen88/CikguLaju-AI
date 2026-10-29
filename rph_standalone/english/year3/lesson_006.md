@@ -18,7 +18,7 @@
 **Teacher:** Follow SB p.7 Activity 3; model a sentence with word and punctuation cards; pupils write about a character, exchange, check punctuation and rewrite. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check two details from listening and a correctly punctuated sentence. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
+**Teacher:** Check two details from listening and a correctly punctuated sentence. **Pupils:** Identify two spoken character details and write one sentence with a capital letter and full stop.
 
 ## Closure (5 minutes)
 **Teacher:** Unjumble a mixed-up sentence and punctuation as a class. **Pupils:** Summarise one thing learned.
