@@ -16,7 +16,7 @@ Teacher displays action flashcards around the room. Pupils move to a card and sa
 Teacher guides Student's Book p.25 Activity 1 and the action song. Pupils listen, sing and mime, then identify actions they heard.
 
 ## PBD (10 minutes)
-Teacher checks listening comprehension and pupils' ability to infer meaning from context.
+Teacher gives two oral prompts. Pupils identify the matching details and explain one unfamiliar word using context clues.
 
 ## Closure (5 minutes)
 Pupils respond to TPR commands from Teacher's Book p.46.
