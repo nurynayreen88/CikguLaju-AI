@@ -16,7 +16,8 @@ Teacher draws a farm animal step by step. Pupils guess its name.
 Pupils read the farm animal story and identify specific information.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading comprehension and recognition of familiar sounds.
+**Teacher:** Ask each pupil to locate two animal facts in the story and identify one familiar sound from the listening input.
+**Pupils:** Point to supporting text and respond to the sound cue.
 
 ## Closure (5 minutes)
 Pupils share one animal fact.
