@@ -43,10 +43,14 @@ def audit(records):
             errors.append(f"{prefix}: invalid verification_status")
         if row["verification_status"] == "approved" and not (row.get("approved_by") and row.get("approved_at")):
             errors.append(f"{prefix}: approved without reviewer/date")
+        # Malformed JSON fields can be lists/dicts; never crash during audit.
         identity = (row["unit"], row["lesson"], row["standard_code"])
-        if identity in seen:
-            errors.append(f"{prefix}: duplicate unit/lesson/standard")
-        seen.add(identity)
+        if all(isinstance(v, (str, int)) for v in identity):
+            if identity in seen:
+                errors.append(f"{prefix}: duplicate unit/lesson/standard")
+            seen.add(identity)
+        else:
+            errors.append(f"{prefix}: invalid identity fields")
     return errors
 
 
