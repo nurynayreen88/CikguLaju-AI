@@ -16,7 +16,7 @@ Groups write or draw associations for an adjective on a shared paper, then pass 
 Pupils read short examples, then write their own sentences using adjectives and check spelling.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spelling and reading details.
+Teacher checks each pupil's adjective sentences for accurate spelling and asks them to locate one detail in the model text. Pupils revise one error.
 
 ## Closure (5 minutes)
 Pupils read one adjective sentence.
