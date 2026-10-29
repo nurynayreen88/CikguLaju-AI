@@ -8,18 +8,23 @@
 **References:** Student's Book pp.52–54; Teacher's Book pp.84–85; story recording and self-assessment worksheet.
 
 ## Set Induction (5 minutes)
-Teacher reviews key characters and vocabulary through the warm-up activity. Pupils predict the story topic.
+**Teacher:** Review key characters and vocabulary using story pictures.
+**Pupils:** Predict the story topic.
 
 ## Activity 1 — Picture prediction (15 minutes)
-Teacher displays the story pictures without text. Pupils predict the events and identify familiar objects.
+**Teacher:** Display story pictures without text and prompt predictions.
+**Pupils:** Predict events and identify familiar objects.
 
 ## Activity 2 — Story listening (25 minutes)
-Teacher plays the story recording, pausing briefly after each picture. Pupils listen, answer simple questions, predict what happens next and discuss the story's moral.
+**Teacher:** Play the story recording, pause after each picture and ask comprehension and prediction questions.
+**Pupils:** Listen, answer questions, predict the next event and discuss the story's moral.
 
 ## PBD (10 minutes)
-Teacher checks story understanding and pupils' responses to its values. Pupils complete a short self-assessment.
+**Teacher:** Ask each pupil to identify one story event and explain one value; record responses.
+**Pupils:** Respond orally and complete a short self-assessment.
 
 ## Closure (5 minutes)
-Pupils share one lesson learned from the story.
+**Teacher:** Invite reflection and recap the story's value.
+**Pupils:** Share one lesson learned.
 
 **QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
