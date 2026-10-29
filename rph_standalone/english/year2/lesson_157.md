@@ -1,0 +1,35 @@
+# English Year 2 — Lesson 157: Speaking 32
+
+**Unit:** The old house
+**Main SK/SP:** 2.1 / 2.1.5
+**Complementary SK/SP:** 1.2 / 1.2.5
+**Learning objectives:** Pupils describe three objects in an old house and answer two simple questions.
+**Success criteria:** three intelligible descriptions and two relevant answers.
+**Teaching materials:** Pictures, word cards and classroom resources.
+**Original old-house picture:** a brown table, a small lamp and a big clock. **Three models:** The table is brown. The lamp is small. The clock is big. **Questions/key:** Which object is small? The lamp. What colour is the table? Brown.
+
+**Audited source mapping:** NON-TEXTBOOK / SOW task (Year 2 audit); detailed procedure not yet verified.
+
+## Set Induction (5 minutes)
+**Teacher (5 min):** Show an old-house picture and elicit two familiar words.
+**Pupils:** Name two relevant words.
+
+## Activity 1 — Modelling (15 minutes)
+**Teacher (15 min):** Model descriptions of rooms or objects in an old house.
+**Pupils:** Rehearse one supported response.
+
+## Activity 2 — Guided practice (25 minutes)
+**Teacher (25 min):** Guide pairs to describe the three objects using the supplied models, then listen to and answer both questions.
+**Pupils:** Describe three objects and answer two questions.
+
+## Assessment / PBD (10 minutes)
+**Teacher (10 min):** Record each pupil's three intelligible object descriptions and two relevant answers.
+**Pupils:** Provide individual evidence.
+
+## Closure (5 minutes)
+**Teacher (5 min):** Review one useful expression.
+**Pupils:** Share one useful word.
+
+**Source:** SOW mapping. **QA:** Preliminary RPH; Teacher's Book verification pending.
+
+**QA:** Original supplementary resource, not a verified textbook extract. Official SOW/TB and A4/PDF checks pending. NOT READY.
