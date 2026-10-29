@@ -3,6 +3,90 @@
   "year": 3,
   "policy": "Original-source links only; no extracted copyrighted textbook pages; no unverified audio tracks.",
   "lessons": {
+    "145": {
+      "sb_pages": [
+        95
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "146": {
+      "sb_pages": [
+        95
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "147": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "148": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "149": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "150": {
+      "sb_pages": [
+        97
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "151": {
+      "sb_pages": [
+        97
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "152": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "153": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "154": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "155": {
+      "sb_pages": [
+        99
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "156": {
+      "sb_pages": [
+        100
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "157": {
+      "sb_pages": [
+        101
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
+    "158": {
+      "sb_pages": [],
+      "sb_url": null,
+      "verification": "SB reference from existing verified SOW; audio not independently mapped"
+    },
     "003": {
       "sb_pages": [
         6,
