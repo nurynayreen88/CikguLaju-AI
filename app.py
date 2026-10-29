@@ -1842,13 +1842,13 @@ def get_subtopics(year_label, subject, topic):
 SUBJECTS = [
     ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
     ('➗ Matematik','Matematik'),('🌏 Alam dan Manusia','Alam dan Manusia'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
-    ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
+    ('☪️ Pendidikan Islam','Pendidikan Islam'),('🤝 Pendidikan Moral','Pendidikan Moral'),('🏃 Pendidikan Jasmani','Pendidikan Jasmani'),('🇨🇳 Bahasa Cina','Bahasa Cina'),('🇮🇳 Bahasa Tamil','Bahasa Tamil'),('✏️ Subjek Lain','Subjek Lain')
 ]
 
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Alam dan Manusia','Pendidikan Islam'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Pendidikan Islam','Pendidikan Moral','Pendidikan Jasmani','Alam dan Manusia','Bahasa Cina','Bahasa Tamil'],
     'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
@@ -8706,13 +8706,13 @@ def get_subtopics(year_label, subject, topic):
 SUBJECTS = [
     ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
     ('➗ Matematik','Matematik'),('🌏 Alam dan Manusia','Alam dan Manusia'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
-    ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
+    ('☪️ Pendidikan Islam','Pendidikan Islam'),('🤝 Pendidikan Moral','Pendidikan Moral'),('🏃 Pendidikan Jasmani','Pendidikan Jasmani'),('🇨🇳 Bahasa Cina','Bahasa Cina'),('🇮🇳 Bahasa Tamil','Bahasa Tamil'),('✏️ Subjek Lain','Subjek Lain')
 ]
 
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Alam dan Manusia','Pendidikan Islam'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Pendidikan Islam','Pendidikan Moral','Pendidikan Jasmani','Alam dan Manusia','Bahasa Cina','Bahasa Tamil'],
     'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
