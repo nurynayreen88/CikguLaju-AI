@@ -7,18 +7,23 @@
 **References:** Student's Book p.117; Teacher's Book p.180; recipe pictures.
 
 ## Set Induction (5 minutes)
-Teacher reviews recipe vocabulary. Pupils name cooking actions.
+**Teacher:** Review recipe vocabulary with pictures.
+**Pupils:** Name cooking actions.
 
 ## Activity 1 — Recipe model (15 minutes)
-Teacher uses Student's Book p.117 and Teacher's Book p.180 Activity 1 to introduce the dish and ingredients. Pupils describe their reactions.
+**Teacher:** Introduce the dish and ingredients using Student's Book p.117 and the referenced Teacher's Book activity.
+**Pupils:** Identify ingredients and describe their reactions.
 
 ## Activity 2 — Creative recipe (25 minutes)
-Teacher guides Activity 2. Groups create an original recipe, draw the dish and present ingredients and preparation steps.
+**Teacher:** Guide the creative recipe task and model a short presentation.
+**Pupils:** Create an original recipe, draw the dish and present ingredients and steps.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes imaginative responses and simple personal information during group presentations.
+**Teacher:** Check each group's creative recipe and invite individual spoken preferences.
+**Pupils:** Explain one creative choice and say whether they would try the dish.
 
 ## Closure (5 minutes)
-Groups select a favourite recipe and explain their choice.
+**Teacher:** Invite reflection on the recipes.
+**Pupils:** Select a favourite recipe and explain why.
 
 **QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
