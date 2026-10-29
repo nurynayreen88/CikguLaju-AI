@@ -5,7 +5,7 @@
 **Main SK/SP:** 1.2 / 1.2.2  
 **Language Focus:** Present simple for personal information (all persons)  
 **Duration:** 60 minutes  
-**SOW reference:** PDF page 35; Teacher's Book Activity 1, CD 1 Track 3.  
+**SOW reference:** PDF page 35; Teacher's Book Activity 1 p.18; Student's Book p.5; CD 1 Track 3.  
 **Objective:** By the end of the lesson, pupils listen to short personal introductions and identify at least four out of five details about names or countries correctly.  
 **Success criteria:** At least 4/5 correct listening responses, recorded individually.  
 **Materials:** Country/name picture cards, teacher-prepared listening response grid, Student's Book and Teacher's Book Activity 1, CD 1 Track 3 (MP3 file located in Drive; access/redistribution not yet verified).
@@ -56,3 +56,9 @@
 - Vocabulary flags visible: Malaysia, the US, the UK, Mexico, Brazil, Korea, China.
 - Student's Book printed page 5 equals PDF page 5 in this particular source (visually checked). This does not establish any offset rule for later pages.
 - **QA remaining:** listen to MP3 CD1 Track 3 to verify its audio content, then validate the finished RPH output. No subsequent lesson should be started before this check.
+
+## Audio file technical verification
+- Original Google Drive file: `03 Track 3.mp3` (CD1 Track 3), 1,119,889 bytes.
+- Media container inspected: valid MP3, duration approximately **69.67 seconds**.
+- Track number is corroborated by SOW and Teacher's Book p.18. **Speech/music content has not been audibly checked**, so this is not a full audio-content match.
+- No permission to redistribute audio has been verified; preserve Drive reference rather than embedding MP3 in the repository.
