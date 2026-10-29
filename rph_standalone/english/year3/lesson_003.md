@@ -18,7 +18,7 @@
 **Teacher:** Read and listen to SB p.6 Activity 1, tracking words; guide SB p.7 Activity 2, using pictures to infer unfamiliar words. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
+**Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Answer two story-detail questions and identify one unfamiliar word using a picture clue.
 
 ## Closure (5 minutes)
 **Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
