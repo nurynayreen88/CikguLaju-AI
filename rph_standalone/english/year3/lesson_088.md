@@ -17,7 +17,8 @@ Teacher follows the warm-up and vocabulary tasks from Teacher's Book p.92. Pupil
 Groups of four read the texts from Student's Book p.58, match them to pictures and highlight specific details. Teacher supports pupils with vocabulary.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks understanding of main ideas and specific information.
+**Teacher:** Ask each pupil to identify one main idea and two supporting details.
+**Pupils:** Locate and explain evidence from the reading text.
 
 ## Closure (5 minutes)
 Pupils share one interesting fact about a dish.
