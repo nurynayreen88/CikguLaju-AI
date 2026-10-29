@@ -16,7 +16,7 @@ Teacher reviews key places and time expressions from the reading.
 Teacher reviews There weren't any and the Grammar Box, then guides Student's Book p.79 Activities 3 and 4. Pairs complete the comparison table and write at least two sentences about their hometown in the past, checking apostrophes, spelling and punctuation.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks clear descriptions and writing conventions.
+Teacher checks each pupil's two hometown sentences for clear past-time meaning, apostrophes, spelling and punctuation. Pupils correct one error.
 
 ## Closure (5 minutes)
 Pupils read one sentence about a place.
