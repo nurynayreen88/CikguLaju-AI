@@ -4,8 +4,8 @@
 **Main SK/SP:** Speaking 2.1.5  
 **Complementary SK/SP:** Speaking 2.2.1  
 **Duration:** 60 minutes  
-**Learning objective:** Pupils demonstrate speaking in the prescribed SOW tasks and produce observable evidence aligned with SP 2.1.5.  
-**Success evidence:** Individual teacher checklist of task performance and a relevant oral, written or listening response.  
+**Learning objective:** Pupils describe two people by country or nationality and maintain a short exchange with a response or clarification phrase.
+**Success evidence:** Pair observation: two descriptions, one acknowledgement and one clarification opportunity.
 **Materials:** Student's Book and Teacher's Book Activity 5, Teacher's Book p.21; pupil-made flags; other materials specified in each activity.  
 **Audio:** CD1 Track 9.
 
