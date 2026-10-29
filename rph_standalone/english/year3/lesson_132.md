@@ -16,7 +16,7 @@ Teacher introduces past verb forms from the Grammar Box. Pupils identify example
 Pupils reuse Lesson 130 holiday pictures to draft sentences, exchange notebooks for feedback and prepare final writing beside their pictures.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spelling and understanding of the reading prompts.
+Teacher checks each pupil's past-tense holiday sentences for accurate verbs, spelling and punctuation. Pupils revise one sentence.
 
 ## Closure (5 minutes)
 Pupils share one sentence using a past-tense verb.
