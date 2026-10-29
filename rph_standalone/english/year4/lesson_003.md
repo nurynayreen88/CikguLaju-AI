@@ -4,8 +4,8 @@
 **Main SK/SP:** Reading 3.2.2  
 **Complementary SK/SP:** Listening 1.2.4  
 **Duration:** 60 minutes  
-**Learning objective:** By the end of the lesson, pupils locate at least three specific details in the Student's Book text and respond to two supported classroom instructions.
-**Success evidence:** PBD: ask three text-based detail questions, record 0–3 correct, and note ability to follow the reading task instructions. Do not invent answers beyond the printed text.
+**Learning objective:** Pupils identify three specific details from the printed reading and follow two supported classroom instructions.
+**Success evidence:** Three text-based questions scored individually; note whether pupils follow task instructions.
 **Materials:** Student's Book and Teacher's Book pp.20–21, Vocabulary, Activity 1, Grammar Box, Activity 3; Activity 2 optional; other materials specified in each activity.  
 **Audio:** CD1 Tracks 6 (vocabulary) and 7 (Activity 1).
 
