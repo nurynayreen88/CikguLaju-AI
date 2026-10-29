@@ -7,18 +7,23 @@
 **References:** KPM Year 3 SOW Lesson 84; Student's Book pp.56–57; cooking verb cards and recipe worksheet.
 
 ## Set Induction (5 minutes)
-Teacher reviews food vocabulary and recalls the omelette story. Pupils identify ingredients.
+**Teacher:** Review food vocabulary and recall the omelette text.
+**Pupils:** Name ingredients.
 
 ## Activity 1 — Cooking verbs (15 minutes)
-Teacher demonstrates break, cut up, mix, fry, stir and serve. Pupils mime the actions and match verbs to pictures.
+**Teacher:** Demonstrate break, cut up, mix, fry, stir and serve.
+**Pupils:** Mime the actions and match verbs to pictures.
 
 ## Activity 2 — Recipe writing (25 minutes)
-Teacher guides groups in planning an omelette recipe. Pupils sequence cooking steps and write short instructions using familiar verbs.
+**Teacher:** Model a short recipe and guide sequencing.
+**Pupils:** Order omelette steps and write short instructions using cooking verbs.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks clear instructions and accurate spelling of familiar words.
+**Teacher:** Check each pupil's written steps for sequence, clear instructions and spelling.
+**Pupils:** Submit their recipe steps and correct one error.
 
 ## Closure (5 minutes)
-Pupils read one cooking instruction aloud.
+**Teacher:** Invite a final example and recap key verbs.
+**Pupils:** Read one cooking instruction aloud.
 
 **QA:** SOW alignment checked; source worksheet and Word/PDF tests pending. NOT READY FOR RELEASE.
