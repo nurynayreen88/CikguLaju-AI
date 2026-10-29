@@ -1,0 +1,37 @@
+# English Year 2 — Lesson 62: Speaking 13
+
+**Unit:** Get dressed!  
+**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.1  
+**Duration:** 60 minutes  
+**Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
+**Learning objectives:** Pupils ask two basic questions to find out a partner's clothing preferences and use two suitable non-verbal responses during a short exchange.  
+**Success criteria:** Meet the numerical targets in the objective independently.  
+**Materials:** Board, picture/word cards, exercise books and the resources below.
+
+**Shop role-play:** Customer: 'Do you like this cap?' Shopkeeper: 'Yes, I do.' Customer nods and points to the cap. Customer: 'Do you like these shoes?' Shopkeeper: 'No, I don't.' Customer shakes head politely and points to another pair.  
+**Picture A:** blue shirt, black trousers, white shoes. **Picture B:** yellow dress, red hat, green shoes. **Original dialogue:** “What are you wearing?” “I'm wearing a blue shirt.” “What colour are your shoes?” “They are white.” **Frames:** “I'm wearing ____.” “Are you wearing ____?”
+
+## Set Induction (5 minutes)
+**Teacher:** Display two clothing pictures and elicit familiar item and colour words.  
+**Pupils:** Name two items and make a prediction.
+
+## Activity 1 — Modelling (15 minutes)
+**Teacher:** Model the dialogue using picture A; show how to ask about colours and clothes.  
+**Pupils:** Follow and practise one supported example.
+
+## Activity 2 — Guided practice (25 minutes)
+**Teacher:** Pairs hold different pictures, describe three items and ask two questions without showing their pictures, then swap roles.  
+**Pupils:** Complete the task, compare evidence and improve responses.
+
+## Assessment / PBD (10 minutes)
+**Teacher:** Observe two independently asked personal-preference questions and two appropriate non-verbal responses (nod, shake head or point) per pupil. Record whether prompts were needed.  
+**Pupils:** Demonstrate the task individually.
+
+## Closure (5 minutes)
+**Teacher:** Review two clothing words and invite one accurate example.  
+**Pupils:** Share one word and a short response.
+
+**QA:** Complete teacher-developed standalone draft; official SOW SK/SP and PDF/A4 checks pending. Not READY.
+
+**QA status:** NOT READY — five-phase 60-minute structure verified; official SOW and Teacher's Book alignment and rendered A4 PDF inspection pending.
