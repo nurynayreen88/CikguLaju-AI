@@ -29,3 +29,11 @@
 **Pupils:** Say one adjective and its meaning.
 
 **QA status:** Teacher's Book p.18 directly inspected: vocabulary CD 1 Track 2, song Track 3, flashcard TPR and grammar examples confirmed. Generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
+
+## Resource access — pending bot integration
+- **Audio CD1 Track 2 (WMA source):** https://drive.google.com/file/d/1KBvki5OFdsfstdwanI6OzQK7QHhZcnw1/view
+- **Audio CD1 Track 3 (WMA source):** https://drive.google.com/file/d/1bHy9SC4vHieBPqFBW96-xSZrj_aEWVhm/view
+- **Student's Book (original full PDF; use printed p.5):** https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- **Teacher's Book (original full PDF; printed p.18):** https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+
+**Resource gate:** Source file IDs located in Drive, but WMA playback/format conversion, permission checks, copyright clearance for redistributing extracted textbook pages, Telegram download buttons, and end-to-end delivery tests are NOT VERIFIED. Do not label this lesson READY or distribute a standalone textbook-page PDF until rights are confirmed.
