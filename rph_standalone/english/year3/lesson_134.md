@@ -16,7 +16,7 @@ Pupils mime weekend activities and identify past-tense verbs.
 Pupils complete TB p.133 Activity 3, then play True/False about Bob and Lucy's forest trip using correct past-tense verbs.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks listening details.
+Teacher reads three statements about Bob and Lucy's trip. Pupils identify true or false and correct one false detail.
 
 ## Closure (5 minutes)
 Pupils name one past activity.
