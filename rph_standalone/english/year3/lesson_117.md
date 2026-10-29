@@ -16,7 +16,7 @@ Pairs cut out animals and follow directions using next to, in front of, behind a
 Pupils read the farm description and place cut-out animals in the correct positions. Pairs then invent new positions for the next day and write a short description using 'was' and place prepositions. They swap texts with another pair, arrange animals according to the partner's description and check answers together.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks response to the activity and clarity of descriptions.
+Teacher checks each pair's written animal positions for clear prepositions and accurate 'was' sentences. Pupils swap descriptions and demonstrate the positions.
 
 ## Closure (5 minutes)
 Pupils share one animal position.
