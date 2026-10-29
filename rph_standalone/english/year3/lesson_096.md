@@ -16,7 +16,8 @@ Teacher gives each pupil a question or answer strip. Pupils mingle to find the m
 Teacher guides Student's Book p.64 and Teacher's Book pp.100–101. Pupils compare forms using 'Do...?' and 'Is/Are there...?' and complete differentiated review tasks.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading for specific details and appropriate simple spoken responses.
+**Teacher:** Ask each pupil to match one question with its answer and locate one detail in the review text.
+**Pupils:** Read the matching pair aloud and answer a follow-up question.
 
 ## Closure (5 minutes)
 Pupils share a correctly formed food question and answer.
