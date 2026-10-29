@@ -46650,6 +46650,19 @@ CIKGULAJU_ENGLISH_RPH_TEACHER_TEXT_GUARD = '20261025'
 # === END ENGLISH RPH QUALITY GUARD ===
 
 
+# === ENGLISH YEAR 3 STANDALONE RPH RENDER ADAPTER ===
+_EN_Y3_STANDALONE_ROWS_BASE = _rph_rows
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_Y3_STANDALONE_ROWS_BASE(st, *args, **kwargs)
+    try:
+        from english_y3_standalone_render import apply as _apply_y3_standalone
+        return _apply_y3_standalone(st, rows)
+    except Exception as exc:
+        print("English Y3 standalone RPH render fallback:", repr(exc), flush=True)
+        return rows
+# === END ENGLISH YEAR 3 STANDALONE RPH RENDER ADAPTER ===
+
+
 # === TRIAL BALANCE MAIN MENU 20261026 ===
 # Do not monkey-patch global send: Telegram requests can overlap across workers.
 def menu(cid, show_persistent=False):
