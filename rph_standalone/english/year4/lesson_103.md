@@ -1,0 +1,32 @@
+# English Year 4 — Lesson 103: Speaking 20
+
+**Topic:** Helping out  
+**Main SP:** 2.1.5  
+**Complementary SP:** 1.2.5  
+**Duration:** 60 minutes  
+**References:** SB p.73 Activity 5; TB p.111; Track 26; Primary Year 4 SK SOW Lesson 103
+
+## Set induction (10 minutes)
+**Teacher:** Review classroom objects such as rulers and notebooks.
+**Pupils:** Respond to the prompts and recall relevant language.
+
+## Activity 1 (15 minutes)
+**Teacher:** Model Whose is this? and It's mine using real objects.
+**Pupils:** Follow the model and complete the guided task.
+
+## Activity 2 (20 minutes)
+**Teacher:** Follow Activity 5 with Track 26; pairs practise ownership questions.
+**Pupils:** Complete the source-based activity individually or in groups.
+
+## PBD / reinforcement (10 minutes)
+**Teacher:** Pupils draw their belongings and classmates guess whose they are.
+**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+
+## Closure (5 minutes)
+**Teacher:** Correct a common possessive pronoun error.
+**Pupils:** Share a short response or reflection.
+
+**PBD:** Observe the named learning task against 2.1.5 and 1.2.5; for teacher-selected standards, establish criteria before class.  
+**Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
