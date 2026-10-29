@@ -36040,7 +36040,14 @@ def _send_en_book_pages_v25232(cid,ss,key):
             print('repaired Y3 SB invalid page selection',pages,flush=True)
             return False
         # Use original Drive slicer, not the obsolete local chunk wrapper.
-        return _send_en_book_pages_before_v25234(cid,ss,key)
+        if _send_en_book_pages_before_v25234(cid,ss,key):
+            return True
+        lesson=(ss or {}).get('lesson_no') or (ss or {}).get('textbook_lesson_no') or ''
+        pg='-'.join(map(str,(pages[0],pages[-1]))) if len(pages)>1 else str(pages[0])
+        send(cid, '⚠️ Student Book Tahun 3 • Lesson '+str(lesson)+
+             ' • m/s '+pg+'\\nPDF belum boleh dimuat turun dari Google Drive. '+
+             'Buka buku yang telah dibaiki: https://drive.google.com/file/d/'+_EN3_REPAIRED_SB_ID+'/view')
+        return True
     return _send_en_book_pages_before_repaired_y3(cid,ss,key)
 # ===== END REPAIRED YEAR 3 SB SOURCE =====
 
