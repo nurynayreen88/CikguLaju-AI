@@ -4,8 +4,8 @@
 **Main SK/SP:** Listening 1.2.2  
 **Complementary SK/SP:** Listening 1.1.1  
 **Duration:** 60 minutes  
-**Learning objective:** By the end of the lesson, pupils identify at least three specific details from CD1 Track 8 and reproduce two country/nationality words with supported pronunciation.
-**Success evidence:** PBD: mark Activity 4 listening answers against the Teacher's Book key; record individual attempts at two target words and note stress support needed.
+**Learning objective:** Pupils identify three details in the Track 8 listening task and pronounce two country or nationality words with support.
+**Success evidence:** Mark Activity 4 answers against the Teacher's Book; note individual pronunciation attempts.
 **Materials:** Student's Book and Teacher's Book p.21, Activity 4; other materials specified in each activity.  
 **Audio:** CD1 Track 8.
 
