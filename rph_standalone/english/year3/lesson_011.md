@@ -18,7 +18,7 @@
 **Teacher:** Review Can you...? and how to request help; guide Activity 5 using Teacher's Book p.22; monitor responses. **Pupils:** Complete the lesson activities and practise both skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Assess listening and requests for help. **Pupils:** Demonstrate learning; teacher records observations.
+**Teacher:** Assess listening and requests for help. **Pupils:** Follow two spoken instructions and make one polite request for help using 'Can you ...?'.
 
 ## Closure (5 minutes)
 **Teacher:** Listen-and-mime TPR. **Pupils:** Share one learning point.
