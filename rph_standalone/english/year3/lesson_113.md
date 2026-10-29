@@ -16,7 +16,7 @@ Teacher uses place and time flashcards, modelling 'I was at...' and reviewing lo
 Teacher plays the song. Pupils put place flashcards in morning, afternoon and evening order, then do the TPR listening activity from TB p.116.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks specific details about yesterday.
+Teacher asks each pupil to identify two places and their time order from the song. Pupils arrange the matching flashcards and answer orally.
 
 ## Closure (5 minutes)
 Pupils say where they were yesterday.
