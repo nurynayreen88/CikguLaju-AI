@@ -18,7 +18,7 @@
 **Teacher:** In groups create a class yearbook or wall display: write two respectful sentences describing a classmate, peer-review, revise and assemble pages. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check two intelligible drafted sentences and creative contribution; note the SOW's Language Arts standard is broader than this task. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
+**Teacher:** Check two intelligible drafted sentences and creative contribution; note the SOW's Language Arts standard is broader than this task. **Pupils:** Read aloud two respectful classmate descriptions and explain one contribution to the class display.
 
 ## Closure (5 minutes)
 **Teacher:** Share the completed display and give positive feedback. **Pupils:** Summarise one thing learned.
