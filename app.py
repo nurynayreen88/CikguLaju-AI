@@ -11922,7 +11922,7 @@ def _notify_admin_new_user(chat_id, user):
         f'🔗 Username: <b>{html.escape(username_text)}</b>\n'
         f'📅 Daftar: <b>{now}</b>\n\n'
         '🎁 Status: <b>Pengguna baharu — 5 janaan RPH percuma</b>\n'
-        '🔒 Akses tanpa had: <b>Hanya Pioneer yang telah disahkan</b>\n'
+        '🔒 Akses tanpa had: <b>Hanya Rakan Pembangun yang telah disahkan</b>\n'
         '📌 Public Beta: <b>Telah ditutup</b>'
     )
     try:
@@ -39392,8 +39392,8 @@ def _credit_gate(cid,s):
         ss=state.setdefault(cid,{})
         ss['_free_generation_pending_v25282']=True
         return True
-    send(cid,'🔒 <b>Kuota 5 janaan RPH percuma telah habis.</b>\n\n🎁 Baki janaan percuma: <b>0/5</b>\n\nUntuk terus menjana RPH, sila pilih Jadi Pioneer.',
-         [[{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
+    send(cid,'🔒 <b>Kuota 5 janaan RPH percuma telah habis.</b>\n\n🎁 Baki janaan percuma: <b>0/5</b>\n\nUntuk terus menjana RPH, sila pilih Jadi Rakan Pembangun.',
+         [[{'text':'🏆 Jadi Rakan Pembangun','callback_data':'pioneer_join'}],
           [{'text':'👤 Profil Saya','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     return False
 
@@ -40146,7 +40146,7 @@ def menu(cid,show_persistent=False):
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
         [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
+        [{'text':'🏆 Jadi Rakan Pembangun','callback_data':'pioneer_join'}],
     ]
     if _is_admin(cid): kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
     body=(
@@ -40156,7 +40156,7 @@ def menu(cid,show_persistent=False):
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🏆 <b>JADI PIONEER</b>\nTawaran Pioneer hanya dibuka sepanjang tempoh pembangunan CikguLaju AI. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
+        '🏆 <b>JADI RAKAN PEMBANGUN</b>\nPeluang menjadi Rakan Pembangun hanya dibuka sepanjang tempoh pembangunan CikguLaju AI. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
         '💳 <b>LANGGANAN</b>\nBulanan: <b>RM8/sebulan</b>\nTahunan: <b>RM50/setahun</b>\nAkan datang. Langganan belum dibuka.\n\n'
         '🎁 <b>5 JANAAN RPH PERCUMA UNTUK PENGGUNA BAHARU</b>'
     )
@@ -46575,7 +46575,7 @@ def menu(cid, show_persistent=False):
         [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
         [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
-        [{'text':'🏆 Jadi Pioneer','callback_data':'pioneer_join'}],
+        [{'text':'🏆 Jadi Rakan Pembangun','callback_data':'pioneer_join'}],
     ]
     if _is_admin(cid):
         kb.append([{'text':'🛠️ ADMIN PANEL','callback_data':'admin_panel'}])
@@ -46595,7 +46595,7 @@ def menu(cid, show_persistent=False):
         '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
-        '🏆 <b>JADI PIONEER</b>\nTawaran Pioneer sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
+        '🏆 <b>JADI RAKAN PEMBANGUN</b>\nPeluang menjadi Rakan Pembangun sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
         '💳 <b>LANGGANAN</b>\nBulanan: <b>RM8/sebulan</b>\nTahunan: <b>RM50/setahun</b>\n'
         'Akan datang. Langganan belum dibuka.\n\n'
         + quota
