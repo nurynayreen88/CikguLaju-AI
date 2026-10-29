@@ -16,7 +16,7 @@ Teacher revisits Activity 3 and pupils' worksheets from Lesson 153.
 Pupils ask planet questions in groups, record guesses, and check answers using worksheets from Lesson 153.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks comprehension of questions and reading details.
+Teacher asks two spoken planet questions. Pupils answer and locate one supporting fact on the worksheet.
 
 ## Closure (5 minutes)
 Pupils share one planet answer.
