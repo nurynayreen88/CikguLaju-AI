@@ -46,3 +46,8 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **CD1 Track 4:** [04 Track 4.mp3](https://drive.google.com/file/d/1s82R_1vLLNvadMBwuqieGbIz0uwlo_O4/view); FFprobe decoded MP3 header and measured duration **10.303 seconds**. This does **not** verify spoken/sung content.
 - **CD1 Track 3:** [03 Track 3.mp3](https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view); FFprobe decoded MP3 header and measured duration **69.673 seconds**. This does **not** verify spoken/sung content.
 - **Pending for READY:** Verify audio speech/song against the printed TB where applicable; validate book-page alignment and generated Word/PDF output in the running bot. Do not release as READY until checks pass.
+
+## Verified source audio links
+- CD1 Track 3: https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view
+- CD1 Track 4: https://drive.google.com/file/d/1s82R_1vLLNvadMBwuqieGbIz0uwlo_O4/view
+Audio file presence checked; listening-content verification pending.
