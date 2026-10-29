@@ -4842,7 +4842,7 @@ def subjects(cid, label):
         kb.append(row)
     kb.append([{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}])
     kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
-    note=('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else '')
+    note=('\n\n<i>KP2027: Senarai Tahun 1 sedang diselaraskan. RPH/RPT dan SK/SP baharu belum semuanya disahkan; jangan gunakan kandungan KSSR lama sebagai KP2027.</i>' if label == 'Tahun 1' else ('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else ''))
     send(cid,f'📘 <b>{label}</b>\n\nPilih subjek yang tersedia untuk tahap ini:{note}',kb)
 
 def curriculum_topic_options(year_label, subject):
@@ -13160,7 +13160,7 @@ def subjects(cid, label):
         kb.append(row)
     kb.append([{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}])
     kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
-    note=('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else '')
+    note=('\n\n<i>KP2027: Senarai Tahun 1 sedang diselaraskan. RPH/RPT dan SK/SP baharu belum semuanya disahkan; jangan gunakan kandungan KSSR lama sebagai KP2027.</i>' if label == 'Tahun 1' else ('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else ''))
     send(cid,f'📘 <b>{label}</b>\n\nPilih subjek yang tersedia untuk tahap ini:{note}',kb)
 
 def curriculum_topic_options(year_label, subject):
