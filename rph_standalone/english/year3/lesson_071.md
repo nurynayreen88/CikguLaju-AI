@@ -16,7 +16,7 @@ Teacher guides Student's Book p.47 Activity 4. Pupils practise short questions a
 Pupils draw an item of clothing on an anonymous card and add a code name. Teacher redistributes the cards; pupils mingle, ask questions and identify the artist.
 
 ## PBD (10 minutes)
-Teacher observes personal-information exchanges and listening for details.
+Pupils exchange two personal facts and repeat one detail heard from their partner.
 
 ## Closure (5 minutes)
 Pupils report whom they found and which item was drawn.
