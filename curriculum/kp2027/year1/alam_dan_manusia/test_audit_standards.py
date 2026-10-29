@@ -38,6 +38,11 @@ class AuditTests(unittest.TestCase):
         row = sample()
         self.assertTrue(audit_module.audit([row, dict(row)]))
 
+    def test_malformed_identity_does_not_crash(self):
+        row = sample()
+        row["unit"] = ["unexpected", "list"]
+        self.assertTrue(audit_module.audit([row]))
+
     def test_approval_requires_reviewer_and_date(self):
         row = sample()
         row["verification_status"] = "approved"
