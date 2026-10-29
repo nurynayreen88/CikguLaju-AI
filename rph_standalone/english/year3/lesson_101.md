@@ -16,7 +16,7 @@ Teacher models 'Go straight ahead', 'Turn left' and 'Turn right' with gestures.
 Teacher plays a directions rap. Pupils listen, perform actions and practise the phrases in pairs.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks participation and understanding of spoken directions.
+Teacher gives three spoken directions and observes each pupil's corresponding actions. Pupils demonstrate the directions and perform one rap line.
 
 ## Closure (5 minutes)
 Pupils perform a direction and name it.
