@@ -37,3 +37,7 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Book:** Student's Book and Teacher's Book pp.20–21, Vocabulary, Activity 1, Grammar Box, Activity 3; Activity 2 optional
 - **Audio:** CD1 Tracks 6 (vocabulary) and 7 (Activity 1)
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+## Direct textbook verification (30 October 2026)
+**Direct Teacher's Book pp.20–21 check:** vocabulary CD1 Track 6, story/dialogue Activity 1 CD1 Track 7, Activity 2 read and choose, grammar box about country/nationality and Activity 3 read/match. Printed pp.20–21 correspond to PDF pages 6–7. The story is **Smart kids**, involving children meeting a new child; avoid assuming the story is about Egyptian history—the mummy is a picture used for pre-lesson discussion.
+**Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
