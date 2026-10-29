@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review personal details and sport pictures.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Recall personal details and talk about a sports picture.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Warm-up and Optional activity; pupils describe their sport pictures.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Describe the activity in their picture following the warm-up.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Teach Writing Tip: capital letters, full stops, question marks and commas in lists.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Identify correct punctuation in the model email.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils write an email about themselves, exchange emails and respond to a classmate.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Write and exchange an email, then respond to a classmate.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils proofread punctuation and share one corrected sentence.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Correct punctuation in their own email.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 4.3.1 and complementary SP Speaking 2.1.5. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
