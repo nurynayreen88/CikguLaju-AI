@@ -17,7 +17,7 @@ Teacher models occupation and action matching, such as pilot and fly a helicopte
 Teacher models 'What do you want to be when you grow up?' and guides Student's Book p.20 Activity 1. Pupils ask and answer in pairs, then share responses.
 
 ## PBD (10 minutes)
-Teacher observes spoken questions, responses and listening strategies. Pupils demonstrate both skills.
+Teacher listens to each pupil ask one occupation question and answer a partner's question using a complete phrase.
 
 ## Closure (5 minutes)
 Teacher reviews common errors and celebrates clear communication.
