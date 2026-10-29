@@ -1841,14 +1841,14 @@ def get_subtopics(year_label, subject, topic):
 
 SUBJECTS = [
     ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
-    ('➗ Matematik','Matematik'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
-    ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
+    ('➗ Matematik','Matematik'),('🌏 Alam dan Manusia','Alam dan Manusia'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
+    ('☪️ Pendidikan Islam','Pendidikan Islam'),('🤝 Pendidikan Moral','Pendidikan Moral'),('🏃 Pendidikan Jasmani','Pendidikan Jasmani'),('🇨🇳 Bahasa Cina','Bahasa Cina'),('🇮🇳 Bahasa Tamil','Bahasa Tamil'),('✏️ Subjek Lain','Subjek Lain')
 ]
 
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Pendidikan Islam','Pendidikan Moral','Pendidikan Jasmani','Alam dan Manusia','Bahasa Cina','Bahasa Tamil'],
     'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
@@ -4842,7 +4842,7 @@ def subjects(cid, label):
         kb.append(row)
     kb.append([{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}])
     kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
-    note=('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else '')
+    note=('\n\n<i>KP2027: Senarai Tahun 1 sedang diselaraskan. RPH/RPT dan SK/SP baharu belum semuanya disahkan; jangan gunakan kandungan KSSR lama sebagai KP2027.</i>' if label == 'Tahun 1' else ('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else ''))
     send(cid,f'📘 <b>{label}</b>\n\nPilih subjek yang tersedia untuk tahap ini:{note}',kb)
 
 def curriculum_topic_options(year_label, subject):
@@ -8705,14 +8705,14 @@ def get_subtopics(year_label, subject, topic):
 
 SUBJECTS = [
     ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
-    ('➗ Matematik','Matematik'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
-    ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
+    ('➗ Matematik','Matematik'),('🌏 Alam dan Manusia','Alam dan Manusia'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
+    ('☪️ Pendidikan Islam','Pendidikan Islam'),('🤝 Pendidikan Moral','Pendidikan Moral'),('🏃 Pendidikan Jasmani','Pendidikan Jasmani'),('🇨🇳 Bahasa Cina','Bahasa Cina'),('🇮🇳 Bahasa Tamil','Bahasa Tamil'),('✏️ Subjek Lain','Subjek Lain')
 ]
 
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Pendidikan Islam','Pendidikan Moral','Pendidikan Jasmani','Alam dan Manusia','Bahasa Cina','Bahasa Tamil'],
     'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
@@ -13160,7 +13160,7 @@ def subjects(cid, label):
         kb.append(row)
     kb.append([{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}])
     kb.append([{'text':'🏠 Menu Utama','callback_data':'home'}])
-    note=('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else '')
+    note=('\n\n<i>KP2027: Senarai Tahun 1 sedang diselaraskan. RPH/RPT dan SK/SP baharu belum semuanya disahkan; jangan gunakan kandungan KSSR lama sebagai KP2027.</i>' if label == 'Tahun 1' else ('\n\n<i>Nota: Kandungan bertanda SEMAKAN menggunakan penjajaran sementara sehingga SK/SP rasmi disahkan.</i>' if label.startswith('Tingkatan') else ''))
     send(cid,f'📘 <b>{label}</b>\n\nPilih subjek yang tersedia untuk tahap ini:{note}',kb)
 
 def curriculum_topic_options(year_label, subject):
