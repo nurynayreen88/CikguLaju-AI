@@ -16,7 +16,7 @@ Teacher models finding headscarf, carpet and mirror in a dictionary. Pupils loca
 Teacher guides Student's Book pp.46–47 and Teacher's Book pp.76–77. Pupils label pictures and practise writing familiar words neatly in cursive handwriting.
 
 ## PBD (10 minutes)
-Teacher checks dictionary use and cursive letter formation.
+Pupils locate one unfamiliar word in a dictionary and write two legible cursive words.
 
 ## Closure (5 minutes)
 Pupils share one newly learned household word.
