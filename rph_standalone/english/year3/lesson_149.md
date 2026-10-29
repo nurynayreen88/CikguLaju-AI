@@ -16,7 +16,7 @@ Teacher reads five pairs of animal-clue sentences. Groups guess each animal, the
 Teacher models a fact-plus-comparison pair of sentences. Pairs select two animals, write two clue sentences for each and practise singing or miming their clues.
 
 ## Assessment / PBD (10 minutes)
-Pairs read their clues to groups of six or eight. Classmates guess the animals; teacher assesses imaginative responses and accurate comparative descriptions.
+Pairs share their animal clues. Teacher checks one clear animal fact and one comparative sentence.
 
 ## Closure (5 minutes)
 Pupils share one comparison.
