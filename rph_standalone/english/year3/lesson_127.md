@@ -16,7 +16,7 @@ Teacher previews the story using pictures and adjectives such as funny, deliciou
 Pupils read the weekend story and vote on whose weekend was best. They infer unfamiliar words from pictures, answer the reading questions, discuss the story's value and take part in the Press Conference game from Teacher's Book p.127.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks response to the story and inferred vocabulary.
+Teacher asks pupils to explain their favourite weekend scene and infer one word meaning from a picture or sentence clue.
 
 ## Closure (5 minutes)
 Pupils share a favourite part of the story.
