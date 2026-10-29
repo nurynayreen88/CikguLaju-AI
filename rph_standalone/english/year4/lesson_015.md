@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow CCL Activity 1 steps 3–5 and introduce sound imagery.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Describe imagined sounds using the poem prompts.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow CCL Activity 2 steps 1–9 using Sounds like Magic.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Read the selected poem and participate in the guidebook tasks.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Groups discuss imagined sounds from a seashell, eggshell, hollow coconut and teacup.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Suggest new sounds for objects in the poem and share descriptive words.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Groups rewrite one stanza with a new imagined sound and practise recitation.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Write a revised stanza in a group using an imagined sound.
 
 ## Closure (5 minutes)
 **Teacher:** Groups recite the rewritten stanza and reflect on descriptive words.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Recite the new stanza.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 5.3.1 and complementary SP Writing 4.2.4. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
