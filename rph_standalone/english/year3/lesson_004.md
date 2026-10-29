@@ -24,3 +24,11 @@
 **Teacher:** Discuss neat writing and a useful family description. **Pupils:** Summarise one thing learned.
 
 **QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
+
+## Original textbook access
+- Student's Book: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- Teacher's Book: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+- SOW Lesson 4 uses a family worksheet; no specific Student's Book page is prescribed.
+- Audio track is not yet assigned; do not guess a track.
+
+**Delivery check:** Telegram resource buttons and audio delivery still need testing. NOT READY FOR RELEASE.
