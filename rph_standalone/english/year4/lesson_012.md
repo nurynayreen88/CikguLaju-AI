@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review flags and present continuous actions using pictures.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Name a country and describe an action in a picture.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Revision and Activity 1 with Track 17; pupils answer supported questions.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Listen to Track 17 and answer supported present continuous questions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils make two activity cards and practise 'What is he doing?' / 'He's ...ing'.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Make two cards and practise questions and answers about actions.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Small groups play an action guessing game; teacher observes descriptions and understanding.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Play the card guessing game and describe what pictured people are doing.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils demonstrate a question-and-answer exchange.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Ask and answer one final question.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 2.1.5 and complementary SP Listening 1.2.5. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
