@@ -16,7 +16,7 @@ Pairs match sentence strips about holiday activities.
 Pupils discuss their own holidays, then complete Student's Book p.85 Activity 2 using their holiday pictures. After rehearsing in pairs, selected pupils present a short holiday recount to the class.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks recounts and reading details.
+Teacher listens to each pupil's short holiday recount and asks one follow-up question. Pupils identify one detail from a sentence strip.
 
 ## Closure (5 minutes)
 Pupils share one holiday activity.
