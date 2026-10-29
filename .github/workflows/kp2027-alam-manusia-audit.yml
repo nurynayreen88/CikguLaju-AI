@@ -1,0 +1,32 @@
+name: KP2027 Alam dan Manusia audit
+on:
+  pull_request:
+    paths:
+      - 'curriculum/kp2027/year1/alam_dan_manusia/**'
+      - '.github/workflows/kp2027-alam-manusia-audit.yml'
+  push:
+    branches:
+      - 'staging/kp2027-alam-manusia-year1-20261029'
+    paths:
+      - 'curriculum/kp2027/year1/alam_dan_manusia/**'
+      - '.github/workflows/kp2027-alam-manusia-audit.yml'
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run fail-closed standards audit tests
+        run: python -m unittest discover -s curriculum/kp2027/year1/alam_dan_manusia -p 'test_*.py' -v
+      - name: Ensure no standards published without source approval
+        shell: bash
+        run: |
+          if [ -f curriculum/kp2027/year1/alam_dan_manusia/standards.json ]; then
+            python curriculum/kp2027/year1/alam_dan_manusia/audit_standards.py curriculum/kp2027/year1/alam_dan_manusia/standards.json
+          else
+            echo 'No official standards.json yet: NOT READY for RPH generation (expected).'
+          fi
