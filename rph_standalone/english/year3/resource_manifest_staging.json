@@ -249,6 +249,207 @@
       "tb_pages": [],
       "audio": [],
       "verification": "SB/TB citations from existing RPH; audio mapping not independently confirmed"
+    },
+    "021": {
+      "sb_pages": [],
+      "tb_pages": [],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending"
+    },
+    "022": {
+      "sb_pages": [
+        17
+      ],
+      "tb_pages": [
+        35
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "023": {
+      "sb_pages": [
+        17
+      ],
+      "tb_pages": [
+        35
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "024": {
+      "sb_pages": [
+        18
+      ],
+      "tb_pages": [
+        36
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "025": {
+      "sb_pages": [
+        19
+      ],
+      "tb_pages": [
+        37
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "026": {
+      "sb_pages": [],
+      "tb_pages": [],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending"
+    },
+    "027": {
+      "sb_pages": [
+        19
+      ],
+      "tb_pages": [
+        37
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "028": {
+      "sb_pages": [
+        20
+      ],
+      "tb_pages": [
+        38,
+        39
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "029": {
+      "sb_pages": [
+        115
+      ],
+      "tb_pages": [
+        178
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "030": {
+      "sb_pages": [
+        21
+      ],
+      "tb_pages": [
+        34,
+        39,
+        40,
+        41
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "031": {
+      "sb_pages": [
+        22,
+        23
+      ],
+      "tb_pages": [
+        42,
+        43
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "032": {
+      "sb_pages": [
+        24
+      ],
+      "tb_pages": [
+        44,
+        45
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "033": {
+      "sb_pages": [
+        25
+      ],
+      "tb_pages": [
+        46
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "034": {
+      "sb_pages": [
+        25
+      ],
+      "tb_pages": [
+        46,
+        47
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "035": {
+      "sb_pages": [
+        26,
+        27
+      ],
+      "tb_pages": [
+        48,
+        49
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "036": {
+      "sb_pages": [
+        26,
+        27
+      ],
+      "tb_pages": [
+        49
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "037": {
+      "sb_pages": [
+        26
+      ],
+      "tb_pages": [],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "038": {
+      "sb_pages": [
+        27
+      ],
+      "tb_pages": [
+        49
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "039": {
+      "sb_pages": [
+        27
+      ],
+      "tb_pages": [
+        49
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "040": {
+      "sb_pages": [
+        28,
+        29
+      ],
+      "tb_pages": [
+        50,
+        51
+      ],
+      "verification": "SB/TB references transcribed from existing standalone RPH; audio lesson match pending",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
     }
   },
   "authoritative_audio_source": {
