@@ -11,23 +11,23 @@
 
 ## Set Induction (10 minutes)
 **Teacher:** Match flags to country names; demonstrate each instruction in English before asking pupils to follow.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Match each displayed country flag to its name and follow the teacher's spoken instructions.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Teacher's Book p.18 Activity 3 with CD1 Track 4; pupils listen to the country dialogue, practise asking where someone is from and give appropriate spoken responses.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Listen to CD1 Track 4, point to the correct picture and practise 'Where are you from?' / 'I'm from ...' in pairs.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Set a strict short drawing time; pupils select a country flag and practise Activity 2 in pairs using introductions and descriptions. Keep flags for later lessons.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Draw one flag within the time limit; use it in Activity 2 to exchange introductions and describe a partner's chosen country.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Observe each pupil describing a person or flag and following a supported two-step classroom instruction. Give a quieter pair option for shy pupils.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Give a short description of a partner and follow two demonstrated English instructions.
 
 ## Closure (5 minutes)
 **Teacher:** Play CD1 Track 3 and invite pupils to sing along or reflect on learning.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Sing along to CD1 Track 3 and name one country.
 
 ## Differentiation and assessment
 Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 2.1.5 and complementary Listening 1.2.4.
@@ -35,9 +35,9 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 ## Source mapping and QA
 - **SOW:** Primary Year 4 SK SOW, Lesson 2 — https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
 - **Book:** Student's Book p.5, Teacher's Book p.18, Activity 3 and speaking role-play Activity 2
-- **Audio:** CD1 Track 3 (post-lesson song)
+- **Audio:** CD1 Track 4 (Activity 3); CD1 Track 3 (post-lesson song)
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
 
 ## Direct textbook verification (30 October 2026)
-**Direct Teacher's Book p.18 check:** Activity 3 uses **CD1 Track 4** for the country dialogue, in addition to **CD1 Track 3** for the optional song recap. Activity 3 includes an exchange introducing oneself and asking where another person is from. Activity 2 is the speaking flag dialogue on the same page. Teacher's Book PDF page 4 shows printed page 18. Update lesson materials and activity playback accordingly.
+**Direct Teacher's Book p.18 check:** Activity 3 uses **CD1 Track 4** for the country dialogue, in addition to **CD1 Track 3** for the optional song recap. Activity 3 includes an exchange introducing oneself and asking where another person is from. Activity 2 is the speaking flag dialogue on the same page. Teacher's Book PDF page 4 shows printed page 18. Lesson materials and playback updated.
 **Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
