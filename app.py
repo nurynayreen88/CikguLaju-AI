@@ -11921,7 +11921,7 @@ def _notify_admin_new_user(chat_id, user):
         f'🆔 Telegram ID: <code>{html.escape(str(chat_id))}</code>\n'
         f'🔗 Username: <b>{html.escape(username_text)}</b>\n'
         f'📅 Daftar: <b>{now}</b>\n\n'
-        '🎁 Status: <b>Pengguna baharu — 5 janaan RPH percuma</b>\n'
+        '🎁 Status: <b>Pengguna baharu — 10 janaan RPH percuma</b>\n'
         '🔒 Akses tanpa had: <b>Hanya Rakan Pembangun yang telah disahkan</b>\n'
         '📌 Public Beta: <b>Telah ditutup</b>'
     )
@@ -37897,7 +37897,7 @@ def menu(cid,show_persistent=False):
         '🎯 SK & SP dipadankan automatik\n'
         '📝 Jana RPH dengan cepat\n'
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '🎁 <b>10 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
         f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line +
@@ -38156,7 +38156,7 @@ def menu(cid,show_persistent=False):
         '🎯 SK & SP dipadankan automatik\n'
         '📝 Jana RPH dengan cepat\n'
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '🎁 <b>10 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
         f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line +
@@ -39354,12 +39354,12 @@ CIKGULAJU_PATCH_V25281='UPLOAD_IMAGE_PDF_TIMETABLE_REVIEW_BEFORE_SAVE'
 # ===== END v25.281 =====
 
 # ===== v25.282 FIVE FREE SUCCESSFUL GENERATIONS =====
-# Product rule: FREE = 5 successful generations. A failed generation/delivery costs nothing.
-FREE_START_CREDITS=5
-FREE_SUCCESSFUL_GENERATIONS_V25282=5
+# Product rule: FREE = 10 successful generations. A failed generation/delivery costs nothing.
+FREE_START_CREDITS=10
+FREE_SUCCESSFUL_GENERATIONS_V25282=10
 
 def _ensure_trial_user(cid):
-    """Create new FREE users with 5 trials; never reset an existing user's balance here."""
+    """Create new FREE users with 10 trials; never reset an existing user's balance here."""
     uid=int(cid)
     rows=_sb_request('GET',f'cikgulaju_users?telegram_user_id=eq.{uid}&select=telegram_user_id,trial_remaining') or []
     if rows:
@@ -39392,7 +39392,7 @@ def _credit_gate(cid,s):
         ss=state.setdefault(cid,{})
         ss['_free_generation_pending_v25282']=True
         return True
-    send(cid,'🔒 <b>Kuota 5 janaan RPH percuma telah habis.</b>\n\n🎁 Baki janaan percuma: <b>0/5</b>\n\nUntuk terus menjana RPH, sila pilih Jadi Rakan Pembangun.',
+    send(cid,'🔒 <b>Kuota 10 janaan RPH percuma telah habis.</b>\n\n🎁 Baki janaan percuma: <b>0/10</b>\n\nUntuk terus menjana RPH, sila pilih Jadi Rakan Pembangun.',
          [[{'text':'🏆 Jadi Rakan Pembangun','callback_data':'pioneer_join'}],
           [{'text':'👤 Profil Saya','callback_data':'account'}],[{'text':'🏠 Menu Utama','callback_data':'home'}]])
     return False
@@ -39572,7 +39572,7 @@ def menu(cid,show_persistent=False):
         '🎯 SK & SP dipadankan automatik\n'
         '📝 Jana RPH dengan cepat\n'
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '🎁 <b>10 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
         f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line
@@ -39788,7 +39788,7 @@ def menu(cid,show_persistent=False):
         '🎯 SK & SP dipadankan automatik\n'
         '📝 Jana RPH dengan cepat\n'
         '📖 Bahan buku teks/aktiviti apabila tersedia\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>\n\n'
+        '🎁 <b>10 JANAAN PERCUMA</b>\n\n'
         '👥 <b>Ajak Rakan</b>\n'
         f'1 referral berjaya = <b>{REFERRAL_VIP_DAYS_V25267} hari VIP</b>\n'
         + supporter_line
@@ -39832,7 +39832,7 @@ def menu(cid,show_persistent=False):
         '📚 Ikut RPT/SOW & kurikulum sebenar\n'
         '🎯 SK & SP dipadankan automatik\n'
         '📝 Jana RPH dengan cepat\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>'
+        '🎁 <b>10 JANAAN PERCUMA</b>'
     )
     return send(cid,body,kb)
 
@@ -39876,7 +39876,7 @@ def menu(cid,show_persistent=False):
         '🎁 <b>REFERRAL & VIP</b>\n'
         'Ajak rakan dan dapatkan akses VIP.\n\n'
 
-        '🎁 <b>5 JANAAN PERCUMA</b>'
+        '🎁 <b>10 JANAAN PERCUMA</b>'
     )
     return send(cid,body,kb)
 
@@ -39946,7 +39946,7 @@ def menu(cid,show_persistent=False):
         'Urus kelas, jadual waktu dan maklumat cikgu.\n\n'
         '🎁 <b>REFERRAL & VIP</b>\n'
         'Ajak rakan dan dapatkan akses VIP.\n\n'
-        '🎁 <b>5 JANAAN PERCUMA</b>'
+        '🎁 <b>10 JANAAN PERCUMA</b>'
     )
     return send(cid,body,kb)
 
@@ -40158,7 +40158,7 @@ def menu(cid,show_persistent=False):
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
         '🏆 <b>JADI RAKAN PEMBANGUN</b>\nPeluang menjadi Rakan Pembangun hanya dibuka sepanjang tempoh pembangunan CikguLaju AI. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
         '💳 <b>LANGGANAN</b>\nBulanan: <b>RM8/sebulan</b>\nTahunan: <b>RM50/setahun</b>\nAkan datang. Langganan belum dibuka.\n\n'
-        '🎁 <b>5 JANAAN RPH PERCUMA UNTUK PENGGUNA BAHARU</b>'
+        '🎁 <b>10 JANAAN RPH PERCUMA UNTUK PENGGUNA BAHARU</b>'
     )
     return send(cid,body,kb)
 
@@ -46584,7 +46584,7 @@ def menu(cid, show_persistent=False):
         if access.get('active') or _is_permanent_vip_v25267(cid):
             quota = '♾️ <b>Akses tanpa had</b>'
         else:
-            quota = f'🎁 <b>Baki janaan RPH: {_trial_balance(cid)}/5</b>'
+            quota = f'🎁 <b>Baki janaan RPH: {_trial_balance(cid)}/10</b>'
     except Exception:
         quota = '⚠️ <b>Baki janaan tidak dapat disemak.</b>'
     body = (
