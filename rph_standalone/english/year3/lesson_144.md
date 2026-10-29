@@ -16,7 +16,7 @@ Pairs write verbs on blank cards and match them to past forms.
 Pairs write past verbs on the backs of their cards, make past-tense sentences and turn the cards over to check their answers.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks written descriptions and question comprehension.
+Teacher checks two present/past verb pairs and one written past-tense sentence per pupil, then asks a simple comprehension question.
 
 ## Closure (5 minutes)
 Pupils give one present/past verb pair.
