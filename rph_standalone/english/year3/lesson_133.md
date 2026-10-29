@@ -16,7 +16,7 @@ Teacher shows a castle picture. Pupils imagine what the characters found inside.
 Teacher builds the castle poem line by line using pictures. Pupils repeat the poem together, then pairs invent an ending about what Sasha and Jason saw behind the door. Groups perform their completed poems with actions.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes creative participation and short oral recounts.
+Teacher listens to each group's poem ending and asks pupils to explain one imagined castle detail using a complete phrase.
 
 ## Closure (5 minutes)
 Pupils share one imagined detail from the adventure.
