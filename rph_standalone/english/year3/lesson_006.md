@@ -24,3 +24,12 @@
 **Teacher:** Unjumble a mixed-up sentence and punctuation as a class. **Pupils:** Summarise one thing learned.
 
 **QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
+
+## Original book and audio access (bot integration pending)
+- Student's Book PDF: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- SOW reference: Student's Book p.7.
+- Teacher's Book PDF: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+- Year 3 CD1 WMA source folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
+- Do not assign an audio track without matching the lesson activity to the Teacher's Book.
+
+**QA:** Source links recorded; Telegram download buttons and delivery untested. NOT READY FOR RELEASE.
