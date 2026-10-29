@@ -43,6 +43,23 @@ class AuditTests(unittest.TestCase):
         row["unit"] = ["unexpected", "list"]
         self.assertTrue(audit_module.audit([row]))
 
+    def test_malformed_url_does_not_crash(self):
+        row = sample()
+        row["source_url"] = "https://[invalid-ipv6"
+        self.assertTrue(audit_module.audit([row]))
+
+    def test_non_https_source_rejected(self):
+        row = sample()
+        row["source_url"] = "http://example.com/standards.pdf"
+        self.assertTrue(audit_module.audit([row]))
+
+    def test_invalid_approval_date_rejected(self):
+        row = sample()
+        row["verification_status"] = "approved"
+        row["approved_by"] = "reviewer"
+        row["approved_at"] = "tomorrow"
+        self.assertTrue(audit_module.audit([row]))
+
     def test_approval_requires_reviewer_and_date(self):
         row = sample()
         row["verification_status"] = "approved"
