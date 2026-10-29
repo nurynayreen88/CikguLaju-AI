@@ -16,7 +16,7 @@ Teacher introduces James's holiday email and asks pupils to identify sender and 
 Pairs take turns remembering one of five questions posted around the room, returning to dictate it and finding the answer in James's email. Teacher then plays the reading recording and highlights the Writing Tip on p.91.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading details and punctuation.
+Teacher asks pupils to locate two answers in James's email and identify one example of correct email punctuation.
 
 ## Closure (5 minutes)
 Pupils share one fact from the email.
