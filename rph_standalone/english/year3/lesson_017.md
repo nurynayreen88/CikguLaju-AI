@@ -18,7 +18,7 @@
 **Teacher:** Use flashcards in a circle; play the song about Mike twice; pupils hold up cards and mime actions; follow SB p.15 song and picture matching. **Pupils:** Complete the lesson task, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check two details from the song and meanings inferred from visual clues. **Pupils:** Demonstrate learning and receive feedback.
+**Teacher:** Check two details from the song and meanings inferred from visual clues. **Pupils:** Identify two song details and match one unfamiliar action word to its picture clue.
 
 ## Closure (5 minutes)
 **Teacher:** Review routine words with flashcards. **Pupils:** State one learning point.
