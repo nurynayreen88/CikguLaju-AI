@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review Unit 1 countries, routines and free-time language.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Answer questions reviewing countries, routines and free time.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Revision 1 Warm-up and Activity 1.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Complete Revision 1 Activity 1 with a partner.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Complete Revision 1 Activities 2–3; practise language needing reinforcement.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Complete Activities 2–3 and compare answers.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils complete SOW 'How did I do in Unit 1?' self-assessment checklist.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Rate their learning in the SOW Unit 1 self-assessment.
 
 ## Closure (5 minutes)
 **Teacher:** Collect checklists, review needs and set a next-unit learning goal.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** State one strength and one learning goal.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP Teacher-selected DSKP SP and complementary SP Teacher-selected DSKP SP. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
