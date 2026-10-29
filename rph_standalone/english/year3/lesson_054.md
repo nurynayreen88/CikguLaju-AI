@@ -16,7 +16,7 @@ Teacher reviews adverbs of frequency and days of the week. Pupils tell partners 
 Teacher guides Student's Book p.37 Activity 3 following Teacher's Book p.63. Pupils listen for activity and day information and complete the worksheet, then compare answers.
 
 ## PBD (10 minutes)
-Teacher checks listening for specific details and pupils' simple spoken responses.
+Pupils identify two details from the listening task and answer one follow-up question aloud.
 
 ## Closure (5 minutes)
 Pupils share one activity they often or never do.
