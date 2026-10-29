@@ -37,3 +37,7 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Book:** Student's Book and Teacher's Book p.21, Activity 4
 - **Audio:** CD1 Track 8
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+## Direct textbook verification (30 October 2026)
+**Direct Teacher's Book p.21 check:** Activity 4 explicitly labels **CD1 Track 8**; pupils listen and tick the correct country/nationality answers in the chart. The dialogue is about identifying the countries of named children. Printed p.21 corresponds to PDF page 7.
+**Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
