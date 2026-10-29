@@ -1,0 +1,36 @@
+name: PI Jawi Amiri isolated smoke test
+on:
+  push:
+    branches:
+      - staging/pi-jawi-amiri-20261029
+  workflow_dispatch:
+jobs:
+  amiri:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated test dependencies
+        run: python -m pip install pillow fonttools
+      - name: Validate Amiri font and shaping without bot or database
+        run: |
+          python tools/provision_amiri_jawi.py
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageDraw, ImageFont, features
+          assert features.check("raqm"), "Pillow RAQM unavailable"
+          path = Path("fonts/jawi/Amiri-Regular.ttf")
+          font = ImageFont.truetype(str(path), 44, layout_engine=ImageFont.Layout.RAQM)
+          sample = "ݢورو ݢورو اکتيۏيتي ڬورو اکتيۏيتي"
+          im = Image.new("RGB", (1400, 200), "white")
+          ImageDraw.Draw(im).text((1350, 40), sample, font=font, fill="black", anchor="ra", direction="rtl")
+          im.save("amiri-jawi-smoke.png")
+          assert im.getbbox() is not None
+          print("RAQM font shaping smoke completed")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amiri-jawi-smoke
+          path: amiri-jawi-smoke.png
