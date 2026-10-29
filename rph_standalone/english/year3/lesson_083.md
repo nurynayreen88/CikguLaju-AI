@@ -7,18 +7,23 @@
 **References:** Student's Book pp.56–57; Teacher's Book pp.90–91; food flashcards.
 
 ## Set Induction (5 minutes)
-Teacher displays eggs, milk and cheese. Pupils predict a dish made from these ingredients.
+**Teacher:** Show pictures of eggs, milk and cheese.
+**Pupils:** Predict a dish made from these ingredients.
 
 ## Activity 1 — Vocabulary (15 minutes)
-Teacher introduces omelette and guides the warm-up and vocabulary tasks from Teacher's Book p.90. Pupils discuss ingredients.
+**Teacher:** Introduce 'omelette' and guide the vocabulary task referenced on Teacher's Book p.90.
+**Pupils:** Identify and discuss ingredients.
 
 ## Activity 2 — Reading (25 minutes)
-Pupils read the omelette text in Student's Book pp.56–57, choose a preferred omelette and locate supporting details. Teacher supports pupils who need more reading time.
+**Teacher:** Guide reading of Student's Book pp.56–57 and support pupils who need more time.
+**Pupils:** Read the omelette text, choose a preferred omelette and locate supporting details.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks contextual word meaning and specific reading details.
+**Teacher:** Ask pupils to infer one word meaning from context and locate two details in the text.
+**Pupils:** Explain the word meaning and point to evidence for both details.
 
 ## Closure (5 minutes)
-Pupils share their preferred omelette and one ingredient.
+**Teacher:** Invite brief responses and recap key vocabulary.
+**Pupils:** Share their preferred omelette and one ingredient.
 
 **QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
