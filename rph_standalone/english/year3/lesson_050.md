@@ -16,7 +16,7 @@ Teacher plays the seasons song on Student's Book p.35. Pupils sing and compare t
 Teacher distributes season pictures to small groups. Pupils discuss weather in different seasons, describe their favourite season and give a reason; classmates listen and ask simple questions.
 
 ## PBD (10 minutes)
-Teacher checks pupils' ability to give simple personal information and understand season descriptions.
+Pupils give two facts about themselves and identify a season from a partner's short description.
 
 ## Closure (5 minutes)
 Pupils share a favourite season and weather phrase.
