@@ -16,7 +16,7 @@ Teacher displays models for turn left, turn right, traffic lights and stop; pupi
 Pupils read three sets of instructions on p.71 and match each text to the correct sign, then identify key words.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks main ideas and inferred word meanings.
+Teacher asks each pupil to match a road-sign text, state its main instruction and explain one key word using the sign as context. Pupils point to the supporting text.
 
 ## Closure (5 minutes)
 Pupils explain one road sign.
