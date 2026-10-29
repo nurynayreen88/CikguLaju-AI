@@ -16,7 +16,7 @@ Teacher labels classroom corners with room names. Pupils place furniture words i
 Teacher guides Student's Book p.49 Activity 4 and the related group task from Teacher's Book p.79. Pupils describe furniture locations and ask classmates for help when needed.
 
 ## PBD (10 minutes)
-Teacher observes accurate descriptions and appropriate requests for assistance.
+Pupils describe two features and use one polite request for assistance when needed.
 
 ## Closure (5 minutes)
 Pupils describe one piece of furniture and its location.
