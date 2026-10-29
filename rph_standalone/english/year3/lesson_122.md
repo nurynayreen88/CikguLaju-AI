@@ -16,7 +16,7 @@ Pupils read Damia's supermarket story and check predictions; teacher explains un
 Pupils solve the shopping puzzle in Damia's story and explain the answer. They create an Alvin shopping puzzle, exchange it with classmates, and solve their partners' puzzles.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks creative response and reading details.
+Teacher checks each pupil's shopping-puzzle answer against the story and asks them to explain one clue. Pupils share their own puzzle and solve a partner's.
 
 ## Closure (5 minutes)
 Pupils share one item from their story.
