@@ -16,7 +16,8 @@ Teacher guides Activity 4 from Teacher's Book p.91. Pupils ask and answer about 
 Pupils draw their own omelette and mingle, asking 'Are there any tomatoes in your omelette?' and similar questions to find classmates with matching ingredients.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes clear descriptions and comprehension of questions.
+**Teacher:** Observe each pupil asking one ingredient question, answering a partner and describing an ingredient.
+**Pupils:** Ask and answer about their omelette ingredients.
 
 ## Closure (5 minutes)
 Pupils share a question they used to find a partner.
