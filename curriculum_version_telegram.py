@@ -34,7 +34,7 @@ def install(namespace):
             kb.extend([[{"text":"📖 Pratonton Kerangka Rasmi KP2027","callback_data":"cv_preview"}],
                        [{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}],
                        [{"text":"🏠 Menu Utama","callback_data":"home"}]])
-            return send(cid,"📚 <b>KP2027 • "+label+"</b>\\n\\n"
+            return send(cid,"📚 <b>KP2027 • "+label+"</b>\n\n"
                         "Senarai subjek untuk persediaan katalog (tertakluk pengesahan dokumen rasmi). "
                         "Semua masih 🚧 Dalam Pembinaan; RPH belum boleh dijana.",kb)
         if not result["enabled"]:
@@ -59,7 +59,7 @@ def install(namespace):
                 if idx<0: raise IndexError()
             except (ValueError,IndexError):
                 return subjects(cid,st.get("year","Tahun 1"))
-            return send(cid,"🚧 <b>"+subject_label.get(sub,sub)+" — KP2027</b>\\n"
+            return send(cid,"🚧 <b>"+subject_label.get(sub,sub)+" — KP2027</b>\n"
                         "Dalam Pembinaan. Dokumen rasmi dan pemetaan SK/SP belum disahkan; "
                         "penjanaan RPH belum dibuka.",[
                         [{"text":"⬅️ Senarai Subjek KP2027","callback_data":"cv_subjects"}],
@@ -67,15 +67,15 @@ def install(namespace):
         if d=="cv_preview":
             label=st.get("year","Tahun 1")
             return send(cid,
-                "📖 <b>KP2027 • "+label+"</b>\\n\\n"
-                "<b>Apa yang baharu?</b>\\n"
-                "• Pelaksanaan berperingkat bermula pada 2027 untuk Tahun 1 dan Tingkatan 1.\\n"
+                "📖 <b>KP2027 • "+label+"</b>\n\n"
+                "<b>Apa yang baharu?</b>\n"
+                "• Pelaksanaan berperingkat bermula pada 2027 untuk Tahun 1 dan Tingkatan 1.\n"
                 "• Kerangka memberi perhatian kepada pembentukan karakter, "
-                "perkembangan kompetensi dan pembelajaran bermakna.\\n"
+                "perkembangan kompetensi dan pembelajaran bermakna.\n"
                 "• Kandungan khusus setiap subjek akan dimasukkan selepas dokumen "
-                "kurikulum rasminya disahkan.\\n\\n"
+                "kurikulum rasminya disahkan.\n\n"
                 "🚧 <b>Status CikguLaju:</b> Pratonton tersedia; SK/SP, pemetaan "
-                "PdP dan janaan RPH KP2027 masih Dalam Pembinaan.\\n"
+                "PdP dan janaan RPH KP2027 masih Dalam Pembinaan.\n"
                 "<i>Ringkasan berdasarkan kerangka KPM, bukan DSKP mata pelajaran.</i>",[
                 [{"text":"📚 Lihat Subjek KP2027","callback_data":"cv_subjects"}],
                 [{"text":"🏠 Menu Utama","callback_data":"home"}]])
