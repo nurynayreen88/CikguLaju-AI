@@ -18,7 +18,7 @@
 **Teacher:** Review SB p.7 Activity 3; guide Activity 4; model I have got / He has got; pupils write possessions on paper strips and ask classmates 'Have you got ...?' to identify the owner. **Pupils:** Complete the tasks and practise both main and complementary skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Observe two descriptions and supported listening exchanges. **Pupils:** Demonstrate the targeted skills; teacher records evidence.
+**Teacher:** Observe two descriptions and supported listening exchanges. **Pupils:** Describe two possessions and answer a partner's 'Have you got ...?' question.
 
 ## Closure (5 minutes)
 **Teacher:** Share an interesting fact about a friend. **Pupils:** State one thing learned.
