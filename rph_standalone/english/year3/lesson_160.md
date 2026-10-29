@@ -19,7 +19,7 @@
 **Pupils:** Improve their Lesson 148 endangered-animal descriptions, draw animals separately, and match pictures to texts using string.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check each revised description for clear sentences and relevant details; assess matching of pictures to texts.
+**Teacher:** Check each revised animal description for two relevant facts, a clear comparison and accurate spelling; assess the picture-to-text match.
 **Pupils:** Submit a revised description and match a text to its correct picture.
 
 ## Closure (5 minutes)
