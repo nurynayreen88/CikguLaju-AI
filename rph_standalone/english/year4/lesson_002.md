@@ -37,3 +37,7 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Book:** Student's Book p.5, Teacher's Book p.18, Activity 3 and speaking role-play Activity 2
 - **Audio:** CD1 Track 3 (post-lesson song)
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+## Direct textbook verification (30 October 2026)
+**Direct Teacher's Book p.18 check:** Activity 3 uses **CD1 Track 4** for the country dialogue, in addition to **CD1 Track 3** for the optional song recap. Activity 3 includes an exchange introducing oneself and asking where another person is from. Activity 2 is the speaking flag dialogue on the same page. Teacher's Book PDF page 4 shows printed page 18. Update lesson materials and activity playback accordingly.
+**Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
