@@ -18,7 +18,7 @@
 **Teacher:** Introduce puppets; predict story; guide Activity 1 on p.28; pupils rehearse and perform in pairs. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Observe story response, speaking and pronunciation. **Pupils:** Demonstrate their learning; teacher records evidence.
+**Teacher:** Observe story response, speaking and pronunciation. **Pupils:** Perform a short puppet dialogue and state one response to the story.
 
 ## Closure (5 minutes)
 **Teacher:** Discuss the value shown in the story. **Pupils:** Summarise their learning.
