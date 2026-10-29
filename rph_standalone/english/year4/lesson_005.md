@@ -11,23 +11,23 @@
 
 ## Set Induction (10 minutes)
 **Teacher:** Use the picture prompts from CCL guide pp.8–11 and lead steps 1–2 of Activity 1 p.7.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Observe the guidebook picture prompts and share an idea about holiday memories.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Continue Activity 1 steps 3–7 in groups; facilitate poem reading and model pronunciation and intonation.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Read the selected poem with the group, following CCL Activity 1 steps 3–7 and practising intonation.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Guide Activity 2 steps 3–5 (CCL p.13) using Worksheet 1 (p.14). Each group creates an added line to the poem.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Use CCL Worksheet 1 and Activity 2 to create one meaningful additional poem line in the group.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Groups recite the poem with the new line. Observe imaginative response and engagement with the text; offer supported reading.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Recite the poem with the new line and listen to other groups' performances.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils show a smiley face representing their feelings about the lesson.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Show a smiley face to reflect on enjoyment.
 
 ## Differentiation and assessment
 Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 5.3.1 and complementary Reading 3.3.1.
