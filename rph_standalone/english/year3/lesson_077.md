@@ -16,7 +16,7 @@ Teacher describes a familiar house using pictures. Pupils listen and identify vo
 Teacher introduces the text about Sue's house on Student's Book p.51. Pupils read silently, identify the main idea and locate specific details about the house.
 
 ## PBD (10 minutes)
-Teacher checks the main idea and specific reading information.
+Pupils state the main idea and locate two supporting details in the reading text.
 
 ## Closure (5 minutes)
 Pupils share one similarity between Sue's house and their own home.
