@@ -16,7 +16,7 @@ Teacher introduces circus and amusement park pictures. Pupils discuss whether th
 Pupils predict which places and adjectives match the characters in Student's Book p.80 Activity 1. Teacher reads the listening sentences; pupils check their predictions, then practise the dialogue in pairs and repeat key words to keep the exchange going.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks listening details and clarification strategies.
+Teacher asks pupils to identify two details from the listening and demonstrate a phrase for asking clarification.
 
 ## Closure (5 minutes)
 Pupils describe an interesting place.
