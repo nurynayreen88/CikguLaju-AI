@@ -47,3 +47,12 @@
 - Teacher's Book answer key for the names: 1 Jill; 2 Paolo; 3 Anastasia; 4 Aina.
 - SOW additionally requires listening-led Malaysian flag drawing and a self-introduction activity.
 - Student's Book p.5 is cited by the Teacher's Book; its actual page image has not yet been independently inspected. Audio track file exists but its sound content has not yet been listened to. Keep NOT READY status until remaining verification.
+
+## Student's Book page 5 — directly verified (PDF page 5)
+- Unit 1 *Where are you from?*, heading *Sing a song*.
+- Activity 1 instruction: *Listen and write the children's names. Then sing.*
+- Song: *Friends from around the world*; map portraits to countries: the US, Brazil, the UK, Malaysia.
+- Answers from the printed song and Teacher's Book: **1 Jill (US), 2 Paolo (Brazil), 3 Anastasia (UK), 4 Aina (Malaysia)**.
+- Vocabulary flags visible: Malaysia, the US, the UK, Mexico, Brazil, Korea, China.
+- Student's Book printed page 5 equals PDF page 5 in this particular source (visually checked). This does not establish any offset rule for later pages.
+- **QA remaining:** listen to MP3 CD1 Track 3 to verify its audio content, then validate the finished RPH output. No subsequent lesson should be started before this check.
