@@ -16,7 +16,7 @@ Teacher models 'What did you do at the weekend?' and a suitable answer.
 Pupils interview classmates using SB p.87 Activity 4, repeat time phrases to sustain exchanges and peer-check their written past-tense sentences.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks interaction and spelling.
+Teacher observes pupils asking and answering a weekend question, then checks one written past-tense sentence for spelling.
 
 ## Closure (5 minutes)
 Pupils share a partner's answer.
