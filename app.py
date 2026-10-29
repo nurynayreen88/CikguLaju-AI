@@ -46610,7 +46610,7 @@ def callback(cid, d):
             print('RPT 2027 access verification failed:', repr(exc), flush=True)
             rpt_allowed = False
         if not rpt_allowed:
-            return send(cid, '🔒 <b>RPT 2027 — Akses Terhad</b>\\n\\nRPT hanya untuk pembangun, Rakan Pembangun yang disahkan dan pelanggan dengan langganan aktif.', [[{'text': '🏆 Jadi Rakan Pembangun', 'callback_data': 'pioneer_join'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
+            return send(cid, '🔒 <b>RPT 2027 — Akses Terhad</b>\n\nRPT hanya untuk pembangun, Rakan Pembangun yang disahkan dan pelanggan dengan langganan aktif.', [[{'text': '🏆 Jadi Rakan Pembangun', 'callback_data': 'pioneer_join'}], [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
     if ds == 'rpt2027_home':
         kb = [[{'text': f'Tahun {n}', 'callback_data': f'rpt2027_year_{n}'}] for n in range(1, 7)]
         kb.append([{'text': '🏠 Menu Utama', 'callback_data': 'home'}])
