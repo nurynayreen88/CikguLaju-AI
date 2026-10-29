@@ -16,7 +16,8 @@ Pupils listen to a directions song and mime the movements.
 Pupils give and follow directions in a team game.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks speaking and listening skills.
+**Teacher:** Observe each pupil giving two clear directions and correctly following a partner's instructions.
+**Pupils:** Give and follow directions in pairs.
 
 ## Closure (5 minutes)
 Pupils give two simple directions.
