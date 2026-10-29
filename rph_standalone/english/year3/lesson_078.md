@@ -7,18 +7,23 @@
 **References:** Student's Book p.51; Teacher's Book p.82; bedroom worksheet and optional furniture cut-outs.
 
 ## Set Induction (5 minutes)
-Teacher plays a letter-jumble spelling game using familiar house vocabulary. Pupils correct spellings.
+**Teacher:** Show familiar house words with jumbled letters.
+**Pupils:** Rearrange the letters and read the words aloud.
 
 ## Activity 1 — Text review (15 minutes)
-Teacher runs a letter-jumble game with commonly misspelt furniture and room words, then revisits the text about Sue's house. Pupils correct spellings, listen and compare Sue's home with their own.
+**Teacher:** Revisit the text about Sue's house and model sentences about rooms and furniture.
+**Pupils:** Read the model and compare Sue's home with their own.
 
 ## Activity 2 — Bedroom writing (25 minutes)
-Teacher explains the Writing Tip from Teacher's Book p.82. Pupils plan and write about their own bedroom, then furnish a bedroom template with drawings or cut-out furniture.
+**Teacher:** Explain the Writing Tip referenced on Teacher's Book p.82 and guide sentence planning.
+**Pupils:** Write about their bedroom and illustrate a bedroom template with furniture drawings or cut-outs.
 
 ## PBD (10 minutes)
-Teacher checks sentence drafting and short oral descriptions of the completed bedroom.
+**Teacher:** Check each pupil's bedroom sentences for clarity and basic punctuation; listen to a short oral description.
+**Pupils:** Submit their sentences and describe one feature of the bedroom.
 
 ## Closure (5 minutes)
-Pupils share one accurate sentence about their bedroom.
+**Teacher:** Invite examples and give brief corrective feedback.
+**Pupils:** Share one accurate sentence about their bedroom.
 
 **QA:** SOW mapping checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
