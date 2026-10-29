@@ -46902,3 +46902,44 @@ def send_document(cid, path, caption=''):
             print('ADMIN DURABLE RPH DELIVERY WARNING:',repr(exc),flush=True)
     return result
 # === END PERSISTENT RPH DELIVERY METRICS ===
+
+
+# === TIMETABLE IMAGE/PDF READER: PAID ACCESS GATE ===
+# Keep the upload option visible as a feature preview; manual editing remains free.
+def _tt_reader_paid_access_20261029(cid):
+    if _is_admin(cid):
+        return True
+    try:
+        return bool(_access_info(cid).get('active'))
+    except Exception as exc:
+        print('Timetable reader entitlement check failed:', repr(exc), flush=True)
+        return False
+
+def _tt_reader_upgrade_notice_20261029(cid):
+    state.setdefault(cid, {}).pop('waiting', None)
+    return send(cid,
+        '🔒 <b>AI Baca Jadual Waktu — Akses Terhad</b>\n\n'
+        'Fungsi membaca gambar/PDF jadual waktu tersedia untuk Rakan Pembangun yang disahkan dan pelanggan langganan aktif.\n\n'
+        'Cikgu masih boleh mengisi jadual secara manual.',
+        [[{'text': '✏️ Isi Jadual Manual', 'callback_data': 'tt_add'}],
+         [{'text': '🏆 Jadi Rakan Pembangun', 'callback_data': 'pioneer_join'}],
+         [{'text': '⬅️ Jadual Waktu', 'callback_data': 'timetable'}]])
+
+_TT_PAID_PREVIOUS_CALLBACK_20261029 = callback
+def callback(cid, d):
+    if str(d or '') == 'ttupload281_start' and not _tt_reader_paid_access_20261029(cid):
+        return _tt_reader_upgrade_notice_20261029(cid)
+    return _TT_PAID_PREVIOUS_CALLBACK_20261029(cid, d)
+
+_TT_PAID_PREVIOUS_MENU_20261029 = _tt_upload_menu_v25281
+def _tt_upload_menu_v25281(cid):
+    if not _tt_reader_paid_access_20261029(cid):
+        return _tt_reader_upgrade_notice_20261029(cid)
+    return _TT_PAID_PREVIOUS_MENU_20261029(cid)
+
+_TT_PAID_PREVIOUS_HANDLER_20261029 = _handle_timetable_upload_v25281
+def _handle_timetable_upload_v25281(cid, m):
+    if not _tt_reader_paid_access_20261029(cid):
+        return _tt_reader_upgrade_notice_20261029(cid)
+    return _TT_PAID_PREVIOUS_HANDLER_20261029(cid, m)
+# === END TIMETABLE READER PAID ACCESS GATE ===
