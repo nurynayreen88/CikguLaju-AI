@@ -16,7 +16,7 @@ Groups invent a Solar System and note each planet's name, size and temperature b
 Groups of three or four plan an imaginary Solar System and assign writing, drawing and checking roles. They draft and peer-review descriptions, finish a labelled poster and display it for positive feedback.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spelling and descriptions.
+Teacher checks two planet descriptions and the poster labels. Pupils revise one spelling mistake.
 
 ## Closure (5 minutes)
 Groups present one invented planet.
