@@ -17,7 +17,7 @@ Teacher shows animal flashcards, elicits names and models descriptions using tal
 Pupils play the adjective guessing game in pairs. Teacher follows Student's Book p.95 Activity 1 with the song audio. Each pupil holds an animal flashcard, listens again and finds the partner animal mentioned in the song; pairs recall the comparison adjective.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks whether pupils identify their partner animal from the song and recognise the comparison adjective. Pupils note new words and skills in a short learning diary.
+Teacher checks each pupil's matching animal card and asks them to identify one comparative adjective heard in the song. Pupils record one new word in their learning diary.
 
 ## Closure (5 minutes)
 Each pupil names one animal and gives one adjective.
