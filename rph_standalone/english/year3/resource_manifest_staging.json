@@ -1,0 +1,52 @@
+{
+  "status": "staging_not_ready",
+  "year": 3,
+  "policy": "Original-source links only; no extracted copyrighted textbook pages; no unverified audio tracks.",
+  "lessons": {
+    "003": {
+      "sb_pages": [
+        6,
+        7
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "tb_pages": [
+        20,
+        21
+      ],
+      "audio": [
+        {
+          "cd": 1,
+          "track": 5,
+          "url": "https://drive.google.com/file/d/1qFvwFau16xp4A5ESKh864J6a8kAcj4_C/view"
+        },
+        {
+          "cd": 1,
+          "track": 6,
+          "url": "https://drive.google.com/file/d/19dAki0a1GrihqCGr2MDbjc75WJuB6Ztu/view"
+        }
+      ],
+      "verification": "TB p21 pending"
+    },
+    "004": {
+      "sb_pages": [],
+      "audio": [],
+      "verification": "No prescribed SB page or confirmed track"
+    },
+    "005": {
+      "sb_pages": [],
+      "audio": [],
+      "verification": "No prescribed SB page or confirmed track"
+    },
+    "006": {
+      "sb_pages": [
+        7
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "tb_pages": [
+        21
+      ],
+      "audio": [],
+      "verification": "TB p21 and track pending"
+    }
+  }
+}
