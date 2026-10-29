@@ -208,6 +208,47 @@
       "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
       "audio": [],
       "verification": "SB reference from existing RPH; TB and audio track not independently verified; no page extraction authorized"
+    },
+    "017": {
+      "sb_pages": [
+        15
+      ],
+      "tb_pages": [
+        32
+      ],
+      "audio": [],
+      "verification": "SB/TB citations from existing RPH; audio mapping not independently confirmed",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "018": {
+      "sb_pages": [
+        15
+      ],
+      "tb_pages": [
+        32,
+        33
+      ],
+      "audio": [],
+      "verification": "SB/TB citations from existing RPH; audio mapping not independently confirmed",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "019": {
+      "sb_pages": [
+        16,
+        17
+      ],
+      "tb_pages": [
+        34
+      ],
+      "audio": [],
+      "verification": "SB/TB citations from existing RPH; audio mapping not independently confirmed",
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view"
+    },
+    "020": {
+      "sb_pages": [],
+      "tb_pages": [],
+      "audio": [],
+      "verification": "SB/TB citations from existing RPH; audio mapping not independently confirmed"
     }
   },
   "authoritative_audio_source": {
