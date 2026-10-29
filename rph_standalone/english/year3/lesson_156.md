@@ -16,7 +16,7 @@ Teacher shows a family picture and models oldest and youngest.
 Pupils describe family members using superlatives, complete the optional activity, then play the Unit 10 board game in groups with dice and counters.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spoken descriptions and pupils complete the Unit 10 self-assessment worksheet.
+Teacher listens to two family comparisons using superlatives. Pupils then complete the Unit 10 self-assessment worksheet.
 
 ## Closure (5 minutes)
 Pupils share one family comparison.
