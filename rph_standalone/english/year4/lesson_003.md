@@ -11,23 +11,23 @@
 
 ## Set Induction (10 minutes)
 **Teacher:** Show an Egyptian mummy picture and ask what pupils know; establish the topic without giving all answers.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Study the Egyptian mummy picture and share a prediction about the topic.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Teacher's Book vocabulary with CD1 Track 6. Show the mummy again and elicit the meaning of alive.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Listen to CD1 Track 6, repeat new words and explain 'alive' from the picture context.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Use Teacher's Book Activity 1 with CD1 Track 7, then Grammar Box and Activity 3. Pupils find information in the printed text; Activity 2 only if time remains.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Listen/read Activity 1 with CD1 Track 7; locate details in the text and complete Grammar Box and Activity 3.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Ask pupils to locate and explain specific details in the text; use consistent English instructions with demonstration. Support pupils who need help reading names.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Identify two details from the reading and respond to supported classroom instructions.
 
 ## Closure (5 minutes)
 **Teacher:** Recap one new fact and a useful question-answer form.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Say one new fact or vocabulary item.
 
 ## Differentiation and assessment
 Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 3.2.2 and complementary Listening 1.2.4.
