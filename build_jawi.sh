@@ -25,4 +25,5 @@ for weight in ("Regular", "Bold"):
     copyfile(src, dest)
     print("PI Jawi Amiri enabled:", dest)
 PY
+python tools/install_pi_jawi_symbol_fallback.py
 python -m py_compile app.py
