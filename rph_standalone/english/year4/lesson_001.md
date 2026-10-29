@@ -38,3 +38,12 @@
 - **Teacher's Book (full source; exact activity/page pending inspection):** https://drive.google.com/file/d/1lBWc96e8DCIMSdxzRuLC7CissHL52q8v/view
 - **Class CD1 Track 3 (03 Track 3.mp3):** https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view
 - **Workbook:** specific activity/page not yet verified; do not invent a reference.
+
+## Teacher's Book p.18 — inspected directly
+- Student's Book p.5 is explicitly specified for the vocabulary activity.
+- Country vocabulary: Malaysia, the US, the UK, Mexico, Brazil, Korea, China.
+- CD1 Track 2: vocabulary pronunciation (optional preparation); CD1 Track 3: Activity 1 song (required).
+- Activity 1: listen and point to country flags, listen again and write the children's names, then sing if comfortable.
+- Teacher's Book answer key for the names: 1 Jill; 2 Paolo; 3 Anastasia; 4 Aina.
+- SOW additionally requires listening-led Malaysian flag drawing and a self-introduction activity.
+- Student's Book p.5 is cited by the Teacher's Book; its actual page image has not yet been independently inspected. Audio track file exists but its sound content has not yet been listened to. Keep NOT READY status until remaining verification.
