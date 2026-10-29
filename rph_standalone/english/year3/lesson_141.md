@@ -1,0 +1,24 @@
+# English Year 3 — Lesson 141: Reading
+
+**Unit:** On Holiday
+**Main SK/SP:** 3.2 / 3.2.2
+**Complementary SK/SP:** 4.2 / 4.2.5
+**Duration:** 60 minutes
+**References:** SB p.91; TB p.138.
+
+## Set Induction (5 minutes)
+Teacher reviews holiday words.
+
+## Activity 1 (15 minutes)
+Teacher introduces James's holiday email and asks pupils to identify sender and recipient.
+
+## Activity 2 (25 minutes)
+Pairs take turns remembering one of five questions posted around the room, returning to dictate it and finding the answer in James's email. Teacher then plays the reading recording and highlights the Writing Tip on p.91.
+
+## Assessment / PBD (10 minutes)
+Teacher asks pupils to locate two answers in James's email and identify one example of correct email punctuation.
+
+## Closure (5 minutes)
+Pupils share one fact from the email.
+
+**QA:** SOW draft; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
