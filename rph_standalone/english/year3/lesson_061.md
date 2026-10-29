@@ -16,7 +16,7 @@ Teacher leads a team brainstorm of months, days, seasons, clothes, weather and c
 Pupils play Student's Book p.40 Activity 1 in groups, reading prompts and responding to questions. Teacher monitors comprehension and encourages reading for enjoyment.
 
 ## PBD (10 minutes)
-Teacher checks understanding of specific information and independent reading participation.
+Pupils read two board-game prompts independently and answer two questions using details from the text.
 
 ## Closure (5 minutes)
 Pupils share a new word and reflect on the reading game.
