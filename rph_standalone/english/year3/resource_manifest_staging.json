@@ -460,8 +460,18 @@
         97
       ],
       "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
-      "audio": [],
-      "verification": "RPH p61 checked against adjacent lessons 92 p59 and 94 p60; audio CD/track still unverified",
+      "audio": [
+        {
+          "cd": "CD1",
+          "track": 97,
+          "filename": "Track 97.mp3",
+          "drive_file_id": "1ZC_p24-ggASU_DceLRXUKc26nUssouk-",
+          "url": "https://drive.google.com/file/d/1ZC_p24-ggASU_DceLRXUKc26nUssouk-/view",
+          "mapping_source": "YEAR3_STAGING row 124; YEAR3_CLASS_CD row 98",
+          "status": "DATABASE_VERIFIED_MAPPING; AUDIO_CONTENT_NOT_AUDITIONED"
+        }
+      ],
+      "verification": "Prior Year3 staging sheet records VERIFIED_AUDIO CD1 Track 97 for Lesson 93; file exists in Class CD inventory. TB page 96-97 audio track not independently inspected and recording content not auditioned. Do not claim content-verified.",
       "activity": "Tony's pizza reading, SB p61 Activity 1"
     },
     "092": {
