@@ -18,7 +18,7 @@
 **Teacher:** Demonstrate o'clock and half past; guide vocabulary and Activity 1; practise questions and answers in pairs. **Pupils:** Complete the lesson activities and practise both skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check telling-the-time exchanges and listening. **Pupils:** Demonstrate learning; teacher records observations.
+**Teacher:** Check telling-the-time exchanges and listening. **Pupils:** Ask and answer two clock-time questions using 'o'clock' and 'half past'.
 
 ## Closure (5 minutes)
 **Teacher:** Play What's the time, Mr Wolf. **Pupils:** Share one learning point.
