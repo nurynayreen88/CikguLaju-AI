@@ -1,5 +1,6 @@
 name: KP2027 Alam dan Manusia audit
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - 'curriculum/kp2027/year1/alam_dan_manusia/**'
@@ -15,11 +16,18 @@ permissions:
 jobs:
   unit-tests:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Print runner and checkout diagnostics
+        run: |
+          echo "Runner: $RUNNER_OS; Python: $(python --version)"
+          git rev-parse --short HEAD
+          test -f curriculum/kp2027/year1/alam_dan_manusia/audit_standards.py
+          test -f curriculum/kp2027/year1/alam_dan_manusia/test_audit_standards.py
       - name: Run fail-closed standards audit tests
         run: python -m unittest discover -s curriculum/kp2027/year1/alam_dan_manusia -p 'test_*.py' -v
       - name: Ensure no standards published without source approval
