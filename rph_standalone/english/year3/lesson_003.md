@@ -24,3 +24,11 @@
 **Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
 
 **QA:** Teacher's Book p.20 directly inspected: numbers 10–100, shell vocabulary, CD 1 Tracks 5–6 and guided read-along confirmed; Year 3 SOW Lesson 3 confirms the story/picture-clue sequence. Teacher's Book p.21 Activity 2 details and generated Word/PDF rendering still pending. NOT READY FOR RELEASE.
+
+## Resource access — pending bot integration
+- **Audio CD1 Track 5 (original WMA):** https://drive.google.com/file/d/1qFvwFau16xp4A5ESKh864J6a8kAcj4_C/view
+- **Audio CD1 Track 6 (original WMA):** https://drive.google.com/file/d/19dAki0a1GrihqCGr2MDbjc75WJuB6Ztu/view
+- **Student's Book (original PDF; printed pp. 6–7):** https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- **Teacher's Book (original PDF; printed pp. 20–21):** https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+
+**Resource gate:** WMA source files identified in Drive; Telegram download buttons, access permissions and end-to-end tests pending. Provide a link to the original textbook; do not distribute extracted textbook pages without rights clearance. NOT READY FOR RELEASE.
