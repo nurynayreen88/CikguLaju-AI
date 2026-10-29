@@ -16,7 +16,7 @@ Teacher reviews sports and activities from the unit, adding familiar holiday act
 Teacher guides Student's Book p.39 using Teacher's Book p.65. Pupils ask and answer about activities they do during school holidays and describe sports they would like to try.
 
 ## PBD (10 minutes)
-Teacher observes simple exchanges and accurate descriptions of activities.
+Pupils ask and answer one activity question and describe two activities using suitable phrases.
 
 ## Closure (5 minutes)
 Pupils share a holiday activity and one reason for choosing it.
