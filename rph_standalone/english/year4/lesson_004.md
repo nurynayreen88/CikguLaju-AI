@@ -4,8 +4,8 @@
 **Main SK/SP:** Writing 4.2.4  
 **Complementary SK/SP:** Writing 4.3.2  
 **Duration:** 60 minutes  
-**Learning objective:** By the end of the lesson, pupils write four meaningful sentences describing where people are from and spell at least four target high-frequency words correctly.
-**Success evidence:** PBD: collect the four-sentence writing sheet; assess appropriate country/nationality form (4 items), spelling (4 items), and sentence punctuation.
+**Learning objective:** Pupils write four meaningful sentences describing where people are from and spell four common target words correctly.
+**Success evidence:** Collect a four-sentence writing sheet; assess meaning, spelling and sentence punctuation.
 **Materials:** Non-textbook lesson; teacher-created writing sheet or pupil-made cards; other materials specified in each activity.  
 **Audio:** None prescribed.
 
