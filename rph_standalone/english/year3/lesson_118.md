@@ -16,7 +16,7 @@ Groups prepare word cards for home, cinema, shopping centre, film and related ad
 Pupils sort place, activity and adjective cards, then combine them into sensible or silly sentences and complete TB p.119 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks listening details and simple spoken information.
+Teacher asks two listening-detail questions. Pupils answer and describe one place using a suitable adjective.
 
 ## Closure (5 minutes)
 Pupils describe one place and feeling.
