@@ -16,7 +16,7 @@ Pupils complete Activity 1 in pairs, then identify places shown in Student's Boo
 Teacher says rules; pupils match them to places and write the relevant rules with correct spelling.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks spelling and comprehension of spoken rule details.
+Teacher reads two place rules aloud. Pupils match each rule to a place and submit written answers for a spelling check.
 
 ## Closure (5 minutes)
 Pupils read one place rule.
