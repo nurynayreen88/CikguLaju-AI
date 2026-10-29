@@ -36051,6 +36051,57 @@ def _send_en_book_pages_v25232(cid,ss,key):
     return _send_en_book_pages_before_repaired_y3(cid,ss,key)
 # ===== END REPAIRED YEAR 3 SB SOURCE =====
 
+# ===== v25.237b YEAR 3 LARGE DRIVE PDF CONFIRMATION FIX =====
+# Google Drive serves a confirmation HTML page for large public PDFs.
+# Keep the authenticated downloader as first choice for private files.
+_drive_pdf_before_y3_large_fix = _drive_pdf_v25232
+def _drive_pdf_v25232(file_id):
+    if str(file_id) != _EN3_REPAIRED_SB_ID:
+        return _drive_pdf_before_y3_large_fix(file_id)
+    try:
+        return _drive_pdf_before_y3_large_fix(file_id)
+    except Exception as original_error:
+        import requests as _requests_y3, re as _re_y3, html as _html_y3
+        from urllib.parse import urljoin as _urljoin_y3
+        session = _requests_y3.Session()
+        url = 'https://drive.google.com/uc?export=download&id=' + file_id
+        temp_path = None
+        try:
+            for attempt in range(4):
+                with session.get(url, timeout=(20, 180), stream=True, allow_redirects=True) as response:
+                    response.raise_for_status()
+                    iterator = response.iter_content(chunk_size=1024 * 1024)
+                    first = next(iterator, b'')
+                    if first.startswith(b'%PDF'):
+                        fd, temp_path = _tmp_v25232.mkstemp(prefix='cikgulaju_y3_repaired_', suffix='.pdf')
+                        _os_v25232.close(fd)
+                        with open(temp_path, 'wb') as out:
+                            out.write(first)
+                            for chunk in iterator:
+                                if chunk: out.write(chunk)
+                        return temp_path
+                    html_page = (first + b''.join(iterator))[:1024 * 1024].decode('utf-8', 'replace')
+                    match = _re_y3.search(r'<form[^>]+action="([^"]+)"[^>]*>(.*?)</form>', html_page, _re_y3.S | _re_y3.I)
+                    if match:
+                        from urllib.parse import urlencode as _urlencode_y3
+                        fields = _re_y3.findall(r'<input[^>]+name="([^"]+)"[^>]+value="([^"]*)"', match.group(2), _re_y3.I)
+                        action = _urljoin_y3(response.url, _html_y3.unescape(match.group(1)))
+                        query = _urlencode_y3([(_html_y3.unescape(k), _html_y3.unescape(v)) for k,v in fields])
+                        url = action + ('&' if '?' in action else '?') + query
+                        continue
+                    token = _re_y3.search(r'confirm=([0-9A-Za-z_-]+)', html_page)
+                    if token:
+                        url = 'https://drive.google.com/uc?export=download&id=' + file_id + '&confirm=' + token.group(1)
+                        continue
+                    break
+            raise RuntimeError('Google Drive did not return PDF; check file sharing or service-account access') from original_error
+        except Exception:
+            if temp_path and _os_v25232.path.exists(temp_path):
+                _os_v25232.unlink(temp_path)
+            raise
+# ===== END v25.237b =====
+
+
 APP_VERSION='v25.237-ENGLISH-Y3-STUDENT-BOOK-PAGE-OFFSET-FIX'
 # ===== END v25.237 =====
 
