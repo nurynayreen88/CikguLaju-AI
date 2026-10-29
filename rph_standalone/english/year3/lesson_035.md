@@ -16,7 +16,7 @@ Teacher introduces new vocabulary and displays selected story pictures. Pupils m
 Pupils read the picture story on Student's Book p.26 to check matches. Teacher guides Activity 1 and introduces present continuous question forms from the p.27 Grammar Box.
 
 ## PBD (10 minutes)
-Teacher checks understanding of the story's main idea and inferred vocabulary meanings.
+Pupils state the story's main idea and explain one unfamiliar word using a clue from the text or picture.
 
 ## Closure (5 minutes)
 Pupils record one new word and a reflection in their learning diaries.
