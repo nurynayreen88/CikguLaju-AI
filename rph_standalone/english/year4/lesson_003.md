@@ -1,12 +1,39 @@
-# English Year 4 — Lesson 3
+# English Year 4 — Lesson 3: Reading
 
-**SK/SP:** Reading 3.2.2; Listening 1.2.4
-**SOW book references:** SB/TB pp.20–21; Vocabulary and Activities 1–3
-**SOW audio references:** CD1 Tracks 6 and 7
-**Duration:** 60 minutes
+**Unit/Topic:** 1 — Where are you from?  
+**Main SK/SP:** Reading 3.2.2  
+**Complementary SK/SP:** Listening 1.2.4  
+**Duration:** 60 minutes  
+**Learning objective:** Pupils demonstrate reading in the prescribed SOW tasks and produce observable evidence aligned with SP 3.2.2.  
+**Success evidence:** Individual teacher checklist of task performance and a relevant oral, written or listening response.  
+**Materials:** Student's Book and Teacher's Book pp.20–21, Vocabulary, Activity 1, Grammar Box, Activity 3; Activity 2 optional; other materials specified in each activity.  
+**Audio:** CD1 Tracks 6 (vocabulary) and 7 (Activity 1).
 
-## Teaching sequence
-10m mummy introduction; 15m vocabulary; 20m reading and grammar; 10m PBD; 5m closure.
+## Set Induction (10 minutes)
+**Teacher:** Show an Egyptian mummy picture and ask what pupils know; establish the topic without giving all answers.
+**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
 
-## QA
-SOW mapping checked. Textbook page content, audio playback and Word/PDF output not yet independently verified. DRAFT — NOT READY.
+## Activity 1 (15 minutes)
+**Teacher:** Follow Teacher's Book vocabulary with CD1 Track 6. Show the mummy again and elicit the meaning of alive.
+**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+
+## Activity 2 (20 minutes)
+**Teacher:** Use Teacher's Book Activity 1 with CD1 Track 7, then Grammar Box and Activity 3. Pupils find information in the printed text; Activity 2 only if time remains.
+**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+
+## PBD / Reinforcement (10 minutes)
+**Teacher:** Ask pupils to locate and explain specific details in the text; use consistent English instructions with demonstration. Support pupils who need help reading names.
+**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+
+## Closure (5 minutes)
+**Teacher:** Recap one new fact and a useful question-answer form.
+**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+
+## Differentiation and assessment
+Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 3.2.2 and complementary Listening 1.2.4.
+
+## Source mapping and QA
+- **SOW:** Primary Year 4 SK SOW, Lesson 3 — https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+- **Book:** Student's Book and Teacher's Book pp.20–21, Vocabulary, Activity 1, Grammar Box, Activity 3; Activity 2 optional
+- **Audio:** CD1 Tracks 6 (vocabulary) and 7 (Activity 1)
+- **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
