@@ -18,7 +18,7 @@
 **Teacher:** Read the model text; rehearse family descriptions orally; use the Writing Tip to draft and revise two or more sentences. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check punctuation and written drafts with feedback. **Pupils:** Demonstrate their learning; teacher records evidence.
+**Teacher:** Check punctuation and written drafts with feedback. **Pupils:** Submit two family-description sentences with capitals and full stops, then correct one punctuation error.
 
 ## Closure (5 minutes)
 **Teacher:** Share one corrected family sentence. **Pupils:** Summarise their learning.
