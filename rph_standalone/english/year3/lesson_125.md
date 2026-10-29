@@ -16,7 +16,7 @@ Teacher follows the warm-up and vocabulary guidance. Pairs match car and bicycle
 Pupils read short transport texts and identify specific information and contextual vocabulary.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading details and word meaning.
+Teacher asks pupils to locate two transport facts and explain one unfamiliar word using clues from the text.
 
 ## Closure (5 minutes)
 Pupils share a transport fact.
