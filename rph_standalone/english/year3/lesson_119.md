@@ -16,7 +16,7 @@ Teacher models short exchanges about where someone was and how it was.
 Groups use Lesson 118 cards to ask Where were you? and Was it fun?, then share their weekend experiences.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks personal information and short narratives.
+Teacher observes each pupil giving a short account of a past visit and answering one partner question about the experience.
 
 ## Closure (5 minutes)
 Pupils share one past visit.
