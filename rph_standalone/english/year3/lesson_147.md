@@ -16,7 +16,7 @@ Teacher shows shark and other sea animal flashcards, elicits adjectives includin
 Pupils listen to the accompanying audio while reading Student's Book pp.96–97 silently, then check their worksheet predictions. They circle science and project, discuss meanings using picture clues, and complete the Grammar Box and Activity 2 with teacher guidance.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks worksheet answers, specific information found in the text, and pupils' explanations of unfamiliar words using context and visuals.
+Teacher checks two sea-animal facts located in the text and asks pupils to explain one unfamiliar word using a picture or sentence clue.
 
 ## Closure (5 minutes)
 Pupils share one sea animal fact.
