@@ -18,7 +18,7 @@
 **Teacher:** Read p.11; answer individual question strips; compare answers; discuss characters and complete optional follow-up. **Pupils:** Complete the lesson activities and practise both skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Assess specific reading details and oral descriptions. **Pupils:** Demonstrate learning; teacher records observations.
+**Teacher:** Assess specific reading details and oral descriptions. **Pupils:** Find two facts in the reading text and describe one character using a complete phrase.
 
 ## Closure (5 minutes)
 **Teacher:** Play true/false with evidence from the text. **Pupils:** Share one learning point.
