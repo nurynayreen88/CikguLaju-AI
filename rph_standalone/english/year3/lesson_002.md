@@ -6,7 +6,7 @@
 **Complementary SK/SP:** Listening 1.2 / 1.2.2 — Understand supported specific information and details of short simple texts.  
 **Duration:** 60 minutes  
 **Objective:** Pupils describe two people using 'have got/has got' and identify two details heard in a partner's description.  
-**Materials:** Get Smart plus 3 Student's Book p.5 Activity 2, Teacher's Book pp.18–19, textbook-character flashcards.
+**Materials:** Get Smart plus 3 Student's Book p.5 Activity 2; Teacher's Book pp.18–19; textbook-character flashcards; CD 1 Track 4 (dialogue); optional name slips and bag for 'Who is it?' activity.
 
 ## Set Induction (5 minutes)
 **Teacher:** Review adjectives from Lesson 1 through a flashcard guessing game.
@@ -17,7 +17,7 @@
 **Pupils:** Listen and repeat appropriate descriptions.
 
 ## Activity 2 — Guided pair speaking (25 minutes)
-**Teacher:** Guide Student's Book p.5 Activity 2, using Teacher's Book pp.18–19 as the lesson reference. Pair pupils to describe characters and listen for details; encourage respectful language about appearance.
+**Teacher:** Play CD 1 Track 4, model the dialogue and guide Student's Book p.5 Activity 2, using Teacher's Book pp.18–19 as the lesson reference. Pair pupils to describe characters and listen for details; encourage respectful language about appearance.
 **Pupils:** Describe two characters and identify details from a partner's description.
 
 ## PBD / Reinforcement (10 minutes)
@@ -28,4 +28,4 @@
 **Teacher:** Use the 'Before leaving' review activity referenced in Teacher's Book p.18.
 **Pupils:** Share one accurate 'has got' sentence.
 
-**QA status:** Official Year 3 SK SOW lesson mapping, standards and page references checked. Direct Teacher's Book inspection and generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
+**QA status:** Teacher's Book pp.18–19 directly inspected: Grammar Box, CD 1 Track 4, pair descriptions and optional 'Who is it?' activity confirmed. Generated Word/PDF layout tests still pending. NOT READY FOR RELEASE.
