@@ -18,7 +18,7 @@
 **Teacher:** Model sentences about family using have got; pupils draw their family and write descriptive sentences with supported cursive practice; display work and play a family guessing game. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Review descriptions and cursive handwriting; include learning diary reflection. **Pupils:** Demonstrate their learning independently or in pairs; teacher records observations.
+**Teacher:** Review descriptions and cursive handwriting; include learning diary reflection. **Pupils:** Submit two family sentences and demonstrate readable cursive letters; correct one error after feedback.
 
 ## Closure (5 minutes)
 **Teacher:** Discuss neat writing and a useful family description. **Pupils:** Summarise one thing learned.
