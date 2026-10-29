@@ -16,7 +16,8 @@ Teacher first asks pupils to discuss a school competition, including who partici
 Groups create an imaginary cooking competition, assign roles and act out a short scene. Teacher encourages creative language and story enjoyment.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes imaginative responses and participation in reading activities.
+**Teacher:** Observe each pupil's creative response to the cooking-competition story and invite a reason for a favourite scene.
+**Pupils:** Take part in the role-play and explain one favourite story moment.
 
 ## Closure (5 minutes)
 Pupils share one favourite moment from the story or role-play.
