@@ -36017,6 +36017,33 @@ def _slice_local_chunks_v25234(ss,key,pages,out):
     with open(out,'wb') as f: wr.write(f)
     return True
 
+# ===== v25.237a REPAIRED YEAR 3 SB SOURCE =====
+# The repaired 135-page PDF is authoritative. Never fall back to the
+# obsolete local chunks or apply the old +2 physical-page offset.
+_EN3_REPAIRED_SB_ID = '1buPmX2jFFEboBp-_whSt9vhRGkuR-HP2'
+_EN_PRIMARY_BOOK_SOURCES_V25232[3]['textbook'] = (
+    _EN3_REPAIRED_SB_ID, "Get Smart Plus 3 Student's Book (repaired 135 pages)")
+_EN_LOCAL_BOOK_CHUNKS_V25234.pop((3, 'textbook'), None)
+
+_book_physical_page_before_repaired_y3 = _book_physical_page_v25237
+def _book_physical_page_v25237(ss,key,page):
+    if _english_primary_year_number_v2517((ss or {}).get('year')) == 3 and key == 'textbook':
+        return int(page)
+    return _book_physical_page_before_repaired_y3(ss,key,page)
+
+# Explicitly prevent stale local-book delivery for Y3 textbook.
+_send_en_book_pages_before_repaired_y3 = _send_en_book_pages_v25232
+def _send_en_book_pages_v25232(cid,ss,key):
+    if _english_primary_year_number_v2517((ss or {}).get('year')) == 3 and key == 'textbook':
+        pages=_en_book_pages_v25232(ss,key)
+        if not pages or any(int(p)<1 or int(p)>135 for p in pages):
+            print('repaired Y3 SB invalid page selection',pages,flush=True)
+            return False
+        # Use original Drive slicer, not the obsolete local chunk wrapper.
+        return _send_en_book_pages_before_v25234(cid,ss,key)
+    return _send_en_book_pages_before_repaired_y3(cid,ss,key)
+# ===== END REPAIRED YEAR 3 SB SOURCE =====
+
 APP_VERSION='v25.237-ENGLISH-Y3-STUDENT-BOOK-PAGE-OFFSET-FIX'
 # ===== END v25.237 =====
 
