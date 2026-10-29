@@ -24,3 +24,12 @@
 **Teacher:** Share an interesting fact about a friend. **Pupils:** State one thing learned.
 
 **QA:** Lesson-level SK/SP, unit and lesson outline cross-checked with official KPM SOW. Direct Teacher's Book review and Word/PDF output tests pending. NOT READY FOR RELEASE.
+
+## Original book and audio access (bot integration pending)
+- Student's Book PDF: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- SOW reference: Student's Book p.7.
+- Teacher's Book PDF: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+- Year 3 CD1 WMA source folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
+- Do not assign an audio track without matching the lesson activity to the Teacher's Book.
+
+**QA:** Source links recorded; Telegram download buttons and delivery untested. NOT READY FOR RELEASE.
