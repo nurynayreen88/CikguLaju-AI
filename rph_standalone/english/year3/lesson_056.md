@@ -16,7 +16,7 @@ Teacher displays a world map and asks pupils to locate Malaysia, Singapore and T
 Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed.
 
 ## PBD (10 minutes)
-Teacher checks reading details and appropriate requests for assistance.
+Pupils locate two details in the reading text and use one polite request for help when needed.
 
 ## Closure (5 minutes)
 Pupils share one fact about a country and compare it with Malaysia.
