@@ -16,7 +16,7 @@ Teacher starts with a countries quiz, locates answers on a world map, and demons
 Teacher guides the country and time-zone task from Student's Book p.116 and Teacher's Book p.179. Pupils listen for specific information, match countries and times, and read supporting labels.
 
 ## PBD (10 minutes)
-Teacher checks specific listening details and understanding of the text's main idea.
+Pupils state the main idea and identify two specific details after listening.
 
 ## Closure (5 minutes)
 Pupils share one fact about world time zones.
