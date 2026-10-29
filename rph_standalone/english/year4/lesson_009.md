@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review everyday routines and adverbs of frequency through mime.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Mime a routine and name an adverb of frequency.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Use Grammar Box and a spelling game; pupils practise adverbs in cursive writing.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Spell target adverbs and write them legibly in cursive.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 3 with Track 12 and Activity 4 with Track 13; pupils complete the book tasks.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Complete Activities 3 and 4 while listening to Tracks 12 and 13.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils write at least two cursive sentences about their day and compare them with classmates.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Write at least two cursive routine sentences and compare with classmates.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils select one clear sentence and reflect on spelling.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Read one corrected sentence.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 4.2.3 and complementary SP Writing 4.1.2. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
