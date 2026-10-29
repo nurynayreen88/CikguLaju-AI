@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Show a child's picture; pupils predict personal details.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Predict a child's personal details from a picture.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Give the model email from SB p.11; pupils read and check their predictions.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Read the email and check their predictions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow TB Activity 1 with Track 15 and Activity 2; pupils identify the main idea.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Listen to Track 15 and complete Activities 1–2, identifying the main idea.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs locate three supporting details and compare answers using text evidence.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Find three personal details in the email and show the evidence.
 
 ## Closure (5 minutes)
 **Teacher:** Review email purpose; remind pupils to bring or draw a sports picture next lesson.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Describe the email's purpose and prepare a sports picture.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 3.2.1 and complementary SP Reading 3.2.2. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
