@@ -16,7 +16,7 @@ Teacher leads a listening game using rule flashcards. Pupils identify the correc
 Teacher guides Activity 2. Pupils listen to classmates read their rules and mark rules that match their own lists.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks specific listening details and familiar vocabulary.
+Teacher reads three classroom rules. Pupils identify the matching signs and name one rule shared with a classmate; teacher records individual responses.
 
 ## Closure (5 minutes)
 Pupils state one shared classroom rule.
