@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review third-person present simple through action prompts.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Describe a pictured action in third-person present simple.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Arrange four story pictures in a predicted order; listen to Track 16 to check.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Predict the sequence of four pictures and listen to Track 16 to order them.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Replay story, discuss characters and complete TB Phonics 1 Activities 1–2.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Listen again, discuss story events and practise Phonics 1 tasks.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs find /s/ and /z/ sounds in the story and listen again to confirm.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Identify /s/ and /z/ examples in pairs and check against audio.
 
 ## Closure (5 minutes)
 **Teacher:** Play a /s/ versus /z/ listening discrimination game.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Sort heard words by /s/ or /z/ sound.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 1.2.3 and complementary SP Listening 1.1.1. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
