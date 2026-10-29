@@ -16,7 +16,7 @@ Teacher shows a diary and introduces Kelly's Saturday entry; pupils read the exa
 Pupils answer the blue-box prompts on Student's Book p.81, draft a diary entry and exchange it with a partner for spelling and punctuation feedback. They then produce a final illustrated diary entry.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks diary drafting and spelling.
+Teacher checks each pupil's diary for clear past-time details, spelling and punctuation. Pupils correct one error.
 
 ## Closure (5 minutes)
 Pupils share one diary sentence.
