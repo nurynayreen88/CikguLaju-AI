@@ -18,7 +18,7 @@
 **Teacher:** Match cut-up texts and pictures from p.8; read the texts; discuss visual clues; complete Activity 1, grammar box and Activity 2 on can + verb. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check the main idea and an unfamiliar word inferred using visual clues. **Pupils:** Show independent learning evidence.
+**Teacher:** Check the main idea and an unfamiliar word inferred using visual clues. **Pupils:** Identify the main idea of a short sports text and infer one word using its picture.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils say which activities they can do. **Pupils:** Share one thing learned.
