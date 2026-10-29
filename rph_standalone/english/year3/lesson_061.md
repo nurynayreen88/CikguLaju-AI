@@ -21,4 +21,4 @@ Teacher checks understanding of specific information and independent reading par
 ## Closure (5 minutes)
 Pupils share a new word and reflect on the reading game.
 
-**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**QA:** SOW Lesson 61 has inconsistent complementary standard labels (Content Standard 3.3; Learning Standard 3.1). The current RPH mapping needs source confirmation. Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
