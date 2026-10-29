@@ -17,7 +17,8 @@ Teacher displays dishes from around the world. Pupils match names and pictures o
 Teacher helps pupils choose a dish and gather facts from supplied recipes or reading materials. Pupils draft short descriptions and check their spelling.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks draft descriptions and reading for specific information.
+**Teacher:** Check each pupil's written description for relevant details, clear sentences and spelling; ask where one fact was found.
+**Pupils:** Submit their description and point to the supporting reading text.
 
 ## Closure (5 minutes)
 Pupils share a sentence about a chosen dish.
