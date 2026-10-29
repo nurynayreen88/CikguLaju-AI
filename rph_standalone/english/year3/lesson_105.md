@@ -16,7 +16,7 @@ Teacher guides the Grammar Box and a 'Do not' mime game; pupils practise positiv
 Teacher introduces rule symbols and guides Activity 3. Pupils write short rules and check punctuation.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks clear rules and correct capital letters and punctuation.
+Teacher checks each pupil's two written rules for clear meaning, capital letters and end punctuation. Pupils correct one sentence.
 
 ## Closure (5 minutes)
 Pupils share one classroom rule.
