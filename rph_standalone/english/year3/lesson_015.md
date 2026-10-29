@@ -24,3 +24,10 @@
 **Teacher:** Discuss the value shown in the story. **Pupils:** Summarise their learning.
 
 **QA:** SOW lesson mapping checked. Direct Teacher's Book inspection and Word/PDF output verification pending. NOT READY FOR RELEASE.
+
+## Original source access
+- Student's Book: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- SOW page guidance: Student's Book p.12.
+- Teacher's Book: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+- Original CD1 WMA folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
+- Audio track assignment requires lesson-specific verification. Telegram download buttons and file delivery have not been tested. NOT READY FOR RELEASE.
