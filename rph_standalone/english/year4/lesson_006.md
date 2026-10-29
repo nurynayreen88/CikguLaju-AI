@@ -11,23 +11,23 @@
 
 ## Set Induction (10 minutes)
 **Teacher:** Match country names to nationality adjectives to recall prior language.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Match country names to nationality adjectives.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model country/nationality pairs and their changing word stress; pupils listen and repeat.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Listen to and repeat country/nationality pairs, noticing stress changes.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Teacher's Book Activity 4 with CD1 Track 8; replay with support and ask pupils to identify specific details.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Listen to CD1 Track 8 for Activity 4; tick the correct country/nationality responses and check with a partner.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Check individual listening responses and target sounds; note common word-stress problems and practise them with the class.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** Correct individual listening responses and repeat difficult stress patterns.
 
 ## Closure (5 minutes)
 **Teacher:** Review the difference between a country name and a nationality word.
-**Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
+**Pupils:** State one country and its nationality adjective.
 
 ## Differentiation and assessment
 Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 1.2.2 and complementary Listening 1.1.1.
