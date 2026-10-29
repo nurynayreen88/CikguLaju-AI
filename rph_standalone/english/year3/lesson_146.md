@@ -16,7 +16,7 @@ Teacher reviews adjectives with an animal flashcard game and models bigger than 
 Pupils listen to descriptions and identify animals. In pairs, pupils draw and label two animals, then describe them using adjective + -er + than. Small groups share drawings. Teacher guides the optional Who's Taller? activity (Teacher's Book p.145).
 
 ## Assessment / PBD (10 minutes)
-Teacher checks pupils' spoken comparisons and comprehension of partners' animal descriptions.
+Teacher listens to each pupil make two animal comparisons using '-er than' and identify an animal from a partner's description.
 
 ## Closure (5 minutes)
 Pupils sing along to the animal comparison song, focusing on comparative phrases.
