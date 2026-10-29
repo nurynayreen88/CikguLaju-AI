@@ -27,6 +27,11 @@ def install(namespace):
         if st.get("curriculum_version")==KP2027:
             # Display candidate subjects only; never route into legacy SK/SP.
             candidates=list(subjects_by_grade.get(label,()) or ())
+            if label=="Tahun 1":
+                # Temporary KP2027 menu-only hide; preserve legacy and stored data.
+                hidden={"BC","BT","Bahasa Cina","Bahasa Tamil"}
+                candidates=[sub for sub in candidates
+                            if sub not in hidden and subject_label.get(sub,sub) not in hidden]
             kb=[[{"text":"🚧 "+subject_label.get(sub,sub)+" — Dalam Pembinaan",
                   "callback_data":"cv_build_"+str(i)}]
                 for i,sub in enumerate(candidates)]
