@@ -36,8 +36,13 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **SOW:** Primary Year 4 SK SOW, Lesson 2 — https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
 - **Book:** Student's Book p.5, Teacher's Book p.18, Activity 3 and speaking role-play Activity 2
 - **Audio:** CD1 Track 4 (Activity 3); CD1 Track 3 (post-lesson song)
-- **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+- **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **CONTENT DRAFT COMPLETE; RELEASE QA PENDING.**
 
 ## Direct textbook verification (30 October 2026)
 **Direct Teacher's Book p.18 check:** Activity 3 uses **CD1 Track 4** for the country dialogue, in addition to **CD1 Track 3** for the optional song recap. Activity 3 includes an exchange introducing oneself and asking where another person is from. Activity 2 is the speaking flag dialogue on the same page. Teacher's Book PDF page 4 shows printed page 18. Lesson materials and playback updated.
 **Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
+
+## Batch audio-file QA
+- **CD1 Track 4:** [04 Track 4.mp3](https://drive.google.com/file/d/1s82R_1vLLNvadMBwuqieGbIz0uwlo_O4/view); FFprobe decoded MP3 header and measured duration **10.303 seconds**. This does **not** verify spoken/sung content.
+- **CD1 Track 3:** [03 Track 3.mp3](https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view); FFprobe decoded MP3 header and measured duration **69.673 seconds**. This does **not** verify spoken/sung content.
+- **Pending for READY:** Verify audio speech/song against the printed TB where applicable; validate book-page alignment and generated Word/PDF output in the running bot. Do not release as READY until checks pass.
