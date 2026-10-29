@@ -16,7 +16,7 @@ Teacher draws clock faces and reviews o'clock and half past, then follows the wa
 Pupils cut out the cards on p.131 and play Snap in pairs, turning over one card each and naming the time or place; when cards match, the first pupil to say 'Snap' wins them. Teacher then models Student's Book p.70 Activity 1 with a confident pair before pupils practise asking and answering.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks simple responses and understanding of questions.
+Teacher listens to each pupil asking and answering one question about time and one about a place. Pupils respond in short clear sentences.
 
 ## Closure (5 minutes)
 Pupils ask a partner the time.
