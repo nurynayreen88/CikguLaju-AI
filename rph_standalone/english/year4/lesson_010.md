@@ -9,23 +9,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review playground vocabulary with CCL pictures and discuss safety.
-**Pupils:** Respond to prompts and recall prior language.
+**Pupils:** Name playground activities and identify safe behaviour.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read At the Playground and complete CCL Activity 3 steps 1–4.
-**Pupils:** Complete the first task with the book or guide.
+**Pupils:** Read the poem and follow the guidebook activity with the group.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils complete the feelings flow map using Worksheet 2 and give reasons for their feelings.
-**Pupils:** Practise the main lesson skill with the supplied materials.
+**Pupils:** Complete the feelings flow map and give a simple reason.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Groups recite the poem with feelings; listeners identify emotions and reasons.
-**Pupils:** Show individual or group learning evidence and respond to feedback.
+**Pupils:** Recite the poem using a chosen feeling and identify peers' emotions.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils share a feeling and explain why.
-**Pupils:** Summarise the learning and reflect.
+**Pupils:** Say how the poem makes them feel and why.
 
 ## PBD and differentiation
 Assess the relevant activity responses against main SP 5.2.1 and complementary SP Speaking 2.1.1. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
