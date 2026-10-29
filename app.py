@@ -46662,6 +46662,19 @@ def _rph_rows(st, *args, **kwargs):
         return rows
 # === END ENGLISH YEAR 3 STANDALONE RPH RENDER ADAPTER ===
 
+# === ENGLISH YEAR 2 STANDALONE RPH RENDER ADAPTER ===
+_EN_Y2_STANDALONE_ROWS_BASE = _rph_rows
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_Y2_STANDALONE_ROWS_BASE(st, *args, **kwargs)
+    try:
+        from english_y2_standalone_render import apply as _apply_y2_standalone
+        return _apply_y2_standalone(st, rows)
+    except Exception as exc:
+        print("English Y2 standalone RPH render fallback:", repr(exc), flush=True)
+        return rows
+# === END ENGLISH YEAR 2 STANDALONE RPH RENDER ADAPTER ===
+
+
 
 # === TRIAL BALANCE MAIN MENU 20261026 ===
 # Do not monkey-patch global send: Telegram requests can overlap across workers.
