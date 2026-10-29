@@ -16,7 +16,7 @@ Teacher points to place cards and models 'I was at the shopping centre' and 'She
 Pairs practise SB p.75 Activity 2 using real answers about yesterday, request help in English when needed, then play Where Was I? from TB p.117.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes short recounts and requests for clarification.
+Teacher listens to each pupil recount one place visited yesterday and make one polite request for help or clarification. Pupils respond to a partner.
 
 ## Closure (5 minutes)
 Pupils share one partner's answer.
