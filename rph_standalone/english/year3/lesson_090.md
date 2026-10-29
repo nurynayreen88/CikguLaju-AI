@@ -16,7 +16,8 @@ Teacher first arranges food flashcards in a train sequence and asks pupils to na
 Groups adapt the chant with food vocabulary and perform using train actions. Teacher supports rhythm, pronunciation and group narration.
 
 ## Assessment / PBD (10 minutes)
-Teacher observes creative responses and short oral performances.
+**Teacher:** Observe each group's original food chant for clear food vocabulary, rhythm and participation.
+**Pupils:** Perform their chant and explain one creative choice.
 
 ## Closure (5 minutes)
 Pupils share their favourite food word from the chant.
