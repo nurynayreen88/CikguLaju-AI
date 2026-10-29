@@ -1,64 +1,47 @@
 # English Year 4 — Lesson 1: Listening
 
-**Unit:** Where are you from?  
-**Main Skill:** Listening  
-**Main SK/SP:** 1.2 / 1.2.2  
-**Language Focus:** Present simple for personal information (all persons)  
+**Unit:** 1 — Where are you from?  
+**Theme:** World of Self, Family and Friends  
+**Main SK/SP:** Listening 1.2 / 1.2.2 — Understand with support specific information and details of longer simple texts.  
+**Complementary SK/SP:** Listening 1.1 / 1.1.1 — Recognise and reproduce with support a wide range of target language phonemes.  
+**Language focus:** Present simple for personal information (all persons).  
 **Duration:** 60 minutes  
-**SOW reference:** PDF page 35; Teacher's Book Activity 1 p.18; Student's Book p.5; CD 1 Track 3.  
-**Objective:** By the end of the lesson, pupils listen to short personal introductions and identify at least four out of five details about names or countries correctly.  
-**Success criteria:** At least 4/5 correct listening responses, recorded individually.  
-**Materials:** Country/name picture cards, teacher-prepared listening response grid, Student's Book and Teacher's Book Activity 1, CD 1 Track 3 (MP3 file located in Drive; access/redistribution not yet verified).
+**Learning objectives:** Pupils listen for country/name information in the song with support and reproduce target country names using flag prompts.  
+**PBD:** Teacher observation of listening responses and pronunciation; retain a pupil answer sheet for four song-name items.  
+**Materials:** Get Smart Plus 4 Student's Book p.5, Teacher's Book p.18, Class CD1 Track 3, country flag flashcards, paper and coloured pencils.
 
-## Set Induction (5 minutes)
-**Teacher:** Show country picture cards and model a short introduction: 'I'm from Malaysia.' Ask pupils to identify the country mentioned.  
-**Pupils:** Listen, point to a matching card and share one familiar country name.
+## Set Induction — Name circle (10 minutes)
+**Teacher:** Model “Hi! My name is …” and pass a soft ball to start a name-introduction circle.  
+**Pupils:** Listen and introduce themselves when they receive the ball.
 
-## Activity 1 — Listening model (15 minutes)
-**Teacher:** Introduce the listening task using Teacher's Book Activity 1. Play CD 1 Track 3 if available, or read a short prepared script with the same target personal-information pattern; do not claim the script is the original recording.  
-**Pupils:** Listen and match each speaker's introduction to a country picture.
+## Activity 1 — Flag vocabulary (10 minutes)
+**Teacher:** Show the country flag flashcards from Student's Book p.5 and model country names and their sounds.  
+**Pupils:** Listen, point to matching flags and repeat the names with support.
 
-## Activity 2 — Listen and identify (20 minutes)
-**Teacher:** Give five short spoken introductions using familiar names and countries; repeat once and ask pupils to compare answers in pairs.  
-**Pupils:** Record the country heard for each speaker and explain their choices using the words they heard.
+## Activity 2 — Listen and write (20 minutes)
+**Teacher:** Use Student's Book p.5 Activity 1 and Teacher's Book p.18. Play CD1 Track 3 once with the lyrics hidden, then replay for pupils to write the four children's names and sing/say the words.  
+**Pupils:** Identify countries and write the names for items 1–4; sing or say the song on replay.  
+**Answer key:** 1 Jill; 2 Paolo; 3 Anastasia; 4 Aina.
 
-## PBD / Reinforcement (15 minutes)
-**Teacher:** Read five fresh statements in a different order. Check each pupil's independent responses against the answer key; support pupils who score below four.  
-**Pupils:** Complete five individual listening items and correct errors after feedback.
+## Activity 3 — Malaysian flag listening (10 minutes)
+**Teacher:** Describe the colours and patterns of the Malaysian flag aloud; keep listening comprehension, not drawing quality, as the focus.  
+**Pupils:** Draw and colour the flag following spoken descriptions, then practise introducing themselves with the flags.
+
+## PBD / Reinforcement (5 minutes)
+**Teacher:** Check the four listening answers and pronunciation attempts; give visual prompts and another listening opportunity where needed.  
+**Pupils:** Correct responses and repeat country names.
 
 ## Closure (5 minutes)
-**Teacher:** Review the phrase 'I'm from…' and ask two quick listening-check questions.  
-**Pupils:** Respond orally and name one country they heard.
+**Teacher:** Review the country words through quick flag identification.  
+**Pupils:** Identify a flag and give a short personal introduction.
 
-**QA status:** TEACHER-DEVELOPED DRAFT. SOW Lesson 1, main LS 1.2.2 and CD1 Track 3 reference verified against Year 4 mapping sheet; textbook activity/page details and Word/PDF rendering not yet independently verified. NOT READY FOR RELEASE.
+## Verified mapping and limits
+- **SOW:** Primary Year 4 SK SOW, Lesson 1, printed p.35 — https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+- **Student's Book:** Get Smart Plus 4, printed p.5, Activity 1 “Listen and write the children's names. Then sing”; page visually inspected — https://drive.google.com/file/d/12IyGg-Mw3Pn38GxZGkVrqGkjMVJsgZfN/view
+- **Teacher's Book:** Get Smart Plus 4, p.18, Activity 1 and answer key; page visually inspected — https://drive.google.com/file/d/1lBWc96e8DCIMSdxzRuLC7CissHL52q8v/view
+- **Audio:** Class CD1 Track 3, file “03 Track 3.mp3” — https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view
+- **Audio file integrity:** MP3 decoded successfully with FFmpeg; duration 69.673 seconds, 1,119,889 bytes. This confirms a playable audio signal, **not** independently verified song lyrics.
+- **Optional preparatory audio:** Teacher's Book references CD1 Track 2 for vocabulary; it is not the main song audio and has not been mapped to a verified file.
+- **Workbook:** No workbook activity specified by SOW for Lesson 1; none invented.
 
-## Verified source pointers (not a claim of textbook-page QA)
-- **SOW Year 4 Lesson 1:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
-- **Student's Book (full source; exact activity/page pending inspection):** https://drive.google.com/file/d/12IyGg-Mw3Pn38GxZGkVrqGkjMVJsgZfN/view
-- **Teacher's Book (full source; exact activity/page pending inspection):** https://drive.google.com/file/d/1lBWc96e8DCIMSdxzRuLC7CissHL52q8v/view
-- **Class CD1 Track 3 (03 Track 3.mp3):** https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view
-- **Workbook:** specific activity/page not yet verified; do not invent a reference.
-
-## Teacher's Book p.18 — inspected directly
-- Student's Book p.5 is explicitly specified for the vocabulary activity.
-- Country vocabulary: Malaysia, the US, the UK, Mexico, Brazil, Korea, China.
-- CD1 Track 2: vocabulary pronunciation (optional preparation); CD1 Track 3: Activity 1 song (required).
-- Activity 1: listen and point to country flags, listen again and write the children's names, then sing if comfortable.
-- Teacher's Book answer key for the names: 1 Jill; 2 Paolo; 3 Anastasia; 4 Aina.
-- SOW additionally requires listening-led Malaysian flag drawing and a self-introduction activity.
-- Student's Book p.5 is cited by the Teacher's Book; its actual page image has not yet been independently inspected. Audio track file exists but its sound content has not yet been listened to. Keep NOT READY status until remaining verification.
-
-## Student's Book page 5 — directly verified (PDF page 5)
-- Unit 1 *Where are you from?*, heading *Sing a song*.
-- Activity 1 instruction: *Listen and write the children's names. Then sing.*
-- Song: *Friends from around the world*; map portraits to countries: the US, Brazil, the UK, Malaysia.
-- Answers from the printed song and Teacher's Book: **1 Jill (US), 2 Paolo (Brazil), 3 Anastasia (UK), 4 Aina (Malaysia)**.
-- Vocabulary flags visible: Malaysia, the US, the UK, Mexico, Brazil, Korea, China.
-- Student's Book printed page 5 equals PDF page 5 in this particular source (visually checked). This does not establish any offset rule for later pages.
-- **QA remaining:** listen to MP3 CD1 Track 3 to verify its audio content, then validate the finished RPH output. No subsequent lesson should be started before this check.
-
-## Audio file technical verification
-- Original Google Drive file: `03 Track 3.mp3` (CD1 Track 3), 1,119,889 bytes.
-- Media container inspected: valid MP3, duration approximately **69.67 seconds**.
-- Track number is corroborated by SOW and Teacher's Book p.18. **Speech/music content has not been audibly checked**, so this is not a full audio-content match.
-- No permission to redistribute audio has been verified; preserve Drive reference rather than embedding MP3 in the repository.
+**QA status:** SOW, book page mapping, activity sequence, answer key and technical MP3 decoding checked. Pending: audible song-content verification and Word/PDF output test. **NOT READY FOR RELEASE.**
