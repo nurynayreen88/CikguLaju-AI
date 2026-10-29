@@ -36,4 +36,4 @@
 - **Student's Book (original full PDF; use printed p.5):** https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
 - **Teacher's Book (original full PDF; printed p.18):** https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
 
-**Resource gate:** Source file IDs located in Drive, but WMA playback/format conversion, permission checks, copyright clearance for redistributing extracted textbook pages, Telegram download buttons, and end-to-end delivery tests are NOT VERIFIED. Do not label this lesson READY or distribute a standalone textbook-page PDF until rights are confirmed.
+**Resource gate:** Source file IDs located in Drive, but WMA is an accepted source format; MP3 conversion is not required. Drive permissions, copyright clearance for redistributing extracted textbook pages, Telegram download buttons, and end-to-end WMA delivery/playback tests are NOT VERIFIED. Do not label this lesson READY or distribute a standalone textbook-page PDF until rights are confirmed.
