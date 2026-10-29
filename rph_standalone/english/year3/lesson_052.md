@@ -16,7 +16,7 @@ Teacher leads a team game spelling days of the week using magnetic letters. Pupi
 Teacher guides Student's Book p.37 Activity 2 and the diary worksheet. Pupils write accurate days and short statements about activities, then practise asking and answering about days.
 
 ## PBD (10 minutes)
-Teacher checks spelling of weekdays and pupils' responses to simple questions.
+Pupils spell three weekdays correctly and answer two simple questions about the weekly routine.
 
 ## Closure (5 minutes)
 Pupils share one correctly spelled day and a short diary sentence.
