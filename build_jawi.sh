@@ -26,4 +26,5 @@ for weight in ("Regular", "Bold"):
     print("PI Jawi Amiri enabled:", dest)
 PY
 python tools/install_pi_jawi_symbol_fallback.py
+python tools/install_pi_jawi_glyph_diagnostics.py
 python -m py_compile app.py
