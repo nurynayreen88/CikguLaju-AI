@@ -4,8 +4,8 @@
 **Main SK/SP:** Language Arts 5.3.1  
 **Complementary SK/SP:** Reading 3.3.1  
 **Duration:** 60 minutes  
-**Learning objective:** Pupils demonstrate language arts in the prescribed SOW tasks and produce observable evidence aligned with SP 5.3.1.  
-**Success evidence:** Individual teacher checklist of task performance and a relevant oral, written or listening response.  
+**Learning objective:** By the end of the lesson, pupils read and enjoy the selected poem and create one suitable additional line in their group, then recite the revised poem.
+**Success evidence:** PBD: collect group worksheet with added line and record participation in reading, imaginative response and group recitation; do not score copyrighted text reproduction.
 **Materials:** Anthology of Poems; CCL Poetry Teaching Guidebook Activity 1 p.7, pictures pp.8–11; Activity 2 p.13 and Worksheet 1 p.14; other materials specified in each activity.  
 **Audio:** None prescribed.
 
