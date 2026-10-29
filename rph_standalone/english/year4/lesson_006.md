@@ -41,3 +41,7 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 ## Direct textbook verification (30 October 2026)
 **Direct Teacher's Book p.21 check:** Activity 4 explicitly labels **CD1 Track 8**; pupils listen and tick the correct country/nationality answers in the chart. The dialogue is about identifying the countries of named children. Printed p.21 corresponds to PDF page 7.
 **Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
+
+## Verified source audio links
+- CD1 Track 8: https://drive.google.com/file/d/18VcHZ2_hDYeHFBcWXwJpQDdyd1mrh_UA/view
+Audio file presence checked; listening-content verification pending.
