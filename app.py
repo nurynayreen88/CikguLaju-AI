@@ -1841,14 +1841,14 @@ def get_subtopics(year_label, subject, topic):
 
 SUBJECTS = [
     ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
-    ('➗ Matematik','Matematik'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
+    ('➗ Matematik','Matematik'),('🌏 Alam dan Manusia','Alam dan Manusia'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
     ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
 ]
 
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Alam dan Manusia','Pendidikan Islam'],
     'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
@@ -8705,14 +8705,14 @@ def get_subtopics(year_label, subject, topic):
 
 SUBJECTS = [
     ('🇲🇾 Bahasa Melayu','Bahasa Melayu'),('🇬🇧 Bahasa Inggeris','Bahasa Inggeris'),
-    ('➗ Matematik','Matematik'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
+    ('➗ Matematik','Matematik'),('🌏 Alam dan Manusia','Alam dan Manusia'),('🔬 Sains','Sains'),('🏛️ Sejarah','Sejarah'),
     ('☪️ Pendidikan Islam','Pendidikan Islam'),('✏️ Subjek Lain','Subjek Lain')
 ]
 
 # Mata pelajaran yang dipaparkan mesti mengikut Tahun/Tingkatan.
 # Senarai ini sengaja konservatif: hanya subjek utama yang memang disokong CikguLaju.
 SUBJECTS_BY_GRADE = {
-    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
+    'Tahun 1': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Alam dan Manusia','Pendidikan Islam'],
     'Tahun 2': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 3': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
     'Tahun 4': ['Bahasa Melayu','Bahasa Inggeris','Matematik','Sains','Pendidikan Islam'],
