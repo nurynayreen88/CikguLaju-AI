@@ -16,7 +16,7 @@ Pupils predict whether the bear-cub story has a happy ending.
 Pupils read for enjoyment, infer new words from illustrations and discuss the story in a circle. Teacher introduces the Malaysian sun bear and leads the post-story discussion from TB p.141.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks response to the story and reading enjoyment.
+Teacher asks each pupil to name a favourite story moment and give one reason, referring to a picture or story detail.
 
 ## Closure (5 minutes)
 Pupils explain whether they liked the ending.
