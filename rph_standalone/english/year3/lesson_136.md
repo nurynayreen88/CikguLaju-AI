@@ -16,7 +16,7 @@ Pupils predict vocabulary from Katie's holiday diary.
 Pupils listen while reading Katie's diary, infer key vocabulary, check meanings in a dictionary, and complete TB p.134 Activity 2.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks reading details and dictionary use.
+Teacher asks pupils to locate two details in Katie's diary and check one unfamiliar word in a dictionary.
 
 ## Closure (5 minutes)
 Pupils share one diary detail.
