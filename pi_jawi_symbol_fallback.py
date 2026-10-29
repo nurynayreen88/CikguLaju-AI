@@ -31,6 +31,13 @@ def sanitize_raster_text(text, font_path, cmap_fn):
     output, changed = [], set()
     for ch in original:
         cp = ord(ch)
+        # Placeholder/tofu glyphs can exist in the source or in the font's
+        # cmap; never treat them as valid readable content.
+        if cp in (0xFFFD, 0xFFFC, 0x25A1, 0x25A0, 0x2610, 0x2611):
+            repl = SAFE_REPLACEMENTS.get(ch, "?")
+            output.append("".join(c if ord(c) in cmap or c.isspace() else "?" for c in repl))
+            changed.add(cp)
+            continue
         if ch in "\n\r\t" or cp in cmap:
             output.append(ch)
             continue
