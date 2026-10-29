@@ -16,7 +16,8 @@ Teacher asks questions about pancakes, cheeseburgers, yoghurt, soup and crepes. 
 Pupils ask and answer about food preferences and meals using complete sentences. Teacher provides models and differentiated support.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks responses to simple questions and understanding of the spoken questions.
+**Teacher:** Listen to each pupil ask one food-preference question and give one clear answer; note understanding of the partner's question.
+**Pupils:** Ask and answer about food preferences in pairs.
 
 ## Closure (5 minutes)
 Pupils share one food preference with a partner.
