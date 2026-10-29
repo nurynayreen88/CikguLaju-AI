@@ -25,20 +25,11 @@
 
 **QA:** Lesson-specific SOW mapping and textbook references checked. Teacher's Book direct review and Word/PDF rendering not yet verified. NOT READY FOR RELEASE.
 
-## Original book and audio access (bot integration pending)
-- Student's Book PDF: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
-- SOW reference: Student's Book p.7.
-- Teacher's Book PDF: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
-- Year 3 CD1 WMA source folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
-- Do not assign an audio track without matching the lesson activity to the Teacher's Book.
+## Lesson-specific resource mapping (staging)
+- **Student's Book:** printed p.7, Activity 3 (referenced by SOW). Original PDF: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
+- **Teacher's Book:** printed p.21 (requires direct page verification). Original PDF: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
+- **Workbook:** no verified page mapping; do not display a guessed page or download.
+- **Audio:** no verified lesson-specific CD/track; do not display a guessed track. Original CD1 folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
+- **Bot delivery:** pending Telegram integration and end-to-end tests. Link to the original books; do not distribute extracted textbook pages without permission.
 
-**QA:** Source links recorded; Telegram download buttons and delivery untested. NOT READY FOR RELEASE.
-
-## Original source access
-- Student's Book: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
-- Lesson reference: SB p.7 Activity 3.
-- Teacher's Book: https://drive.google.com/file/d/10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh/view
-- CD1 original WMA folder: https://drive.google.com/drive/folders/1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50
-- Lesson-specific audio must be verified before assigning any track. Do not assume every lesson requires audio.
-
-**Resource status:** Original source links recorded. Telegram buttons, audio delivery and any page-specific redistribution are not verified. NOT READY FOR RELEASE.
+**Release gate:** TB p.21 activity and audio requirements, download permissions, and Word/PDF rendering remain unverified. NOT READY FOR RELEASE.
