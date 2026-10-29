@@ -16,7 +16,7 @@ Teacher collects a few classroom items and models 'Whose pencil is this?' and 'W
 Teacher revisits the Grammar Box on Student's Book p.47 and guides Activity 3 from Teacher's Book p.77. Pupils listen for ownership information and respond to questions.
 
 ## PBD (10 minutes)
-Teacher checks specific listening details and pupils' understanding of questions.
+Pupils identify two listening details and answer one question about the recording.
 
 ## Closure (5 minutes)
 Pupils ask and answer one ownership question.
