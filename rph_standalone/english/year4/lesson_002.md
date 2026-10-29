@@ -4,8 +4,8 @@
 **Main SK/SP:** Speaking 2.1.5  
 **Complementary SK/SP:** Listening 1.2.4  
 **Duration:** 60 minutes  
-**Learning objective:** Pupils demonstrate speaking in the prescribed SOW tasks and produce observable evidence aligned with SP 2.1.5.  
-**Success evidence:** Individual teacher checklist of task performance and a relevant oral, written or listening response.  
+**Learning objective:** By the end of the lesson, pupils describe at least two people or country flags using suitable statements and follow two supported English classroom instructions.
+**Success evidence:** PBD checklist: (1) identifies a country flag, (2) uses an intelligible description or 'I'm from ...', (3) follows two demonstrated instructions; record achieved / with support / not yet.
 **Materials:** Student's Book p.5, Teacher's Book p.18, Activity 3 and speaking role-play Activity 2; other materials specified in each activity.  
 **Audio:** CD1 Track 4 (Activity 3 dialogue); CD1 Track 3 (post-lesson song).
 
