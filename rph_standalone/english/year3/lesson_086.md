@@ -7,18 +7,23 @@
 **References:** Student's Book p.57; Teacher's Book p.91; food flashcards.
 
 ## Set Induction (5 minutes)
-Teacher reviews omelette ingredients. Pupils name foods they recognise.
+**Teacher:** Review omelette ingredients with food cards.
+**Pupils:** Name familiar foods.
 
 ## Activity 1 — Missing food game (15 minutes)
-Teacher plays Kim's game with food cards, using 'There is some...' and 'There aren't any...'. Pupils identify the missing cards.
+**Teacher:** Run Kim's game using 'There is some...' and 'There aren't any...'.
+**Pupils:** Listen, identify missing cards and respond orally.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides Student's Book p.57 and Teacher's Book p.91. Pupils listen for food details and respond to questions about ingredients.
+**Teacher:** Guide the Student's Book p.57 listening task and replay key parts as needed.
+**Pupils:** Listen for ingredients and answer detail questions.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks comprehension of supported questions and specific listening information.
+**Teacher:** Ask two supported questions and one detail question; note individual responses.
+**Pupils:** Answer orally or point to the correct food picture.
 
 ## Closure (5 minutes)
-Pupils describe one ingredient that is present and one that is absent.
+**Teacher:** Recap the listening clues and sentence patterns.
+**Pupils:** Describe one present and one absent ingredient.
 
 **QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
