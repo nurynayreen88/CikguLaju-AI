@@ -461,8 +461,33 @@
       ],
       "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
       "audio": [],
-      "verification": "Lesson 93 RPH references SB p61 TB pp96-97; recording mentioned but CD/track not confirmed; do not serve guessed audio",
+      "verification": "RPH p61 checked against adjacent lessons 92 p59 and 94 p60; audio CD/track still unverified",
       "activity": "Tony's pizza reading, SB p61 Activity 1"
+    },
+    "092": {
+      "sb_pages": [
+        59
+      ],
+      "tb_pages": [
+        93
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "audio": [],
+      "activity": "Food preferences speaking",
+      "verification": "RPH reference checked; direct TB and audio track match pending"
+    },
+    "094": {
+      "sb_pages": [
+        60
+      ],
+      "tb_pages": [
+        94,
+        95
+      ],
+      "sb_url": "https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view",
+      "audio": [],
+      "activity": "Restaurant role-play writing",
+      "verification": "RPH reference checked; direct TB and audio track match pending"
     }
   },
   "authoritative_audio_source": {
@@ -480,5 +505,6 @@
     ],
     "warning": "Asset VERIFIED_FILE does not verify lesson-to-track mapping; use old lesson_media_map before marking any lesson VERIFIED_AUDIO",
     "source_spreadsheet": "1xzRM71yAZDM0ZgW_457RVtAixQ27kit7RiGaG0WASPY"
-  }
+  },
+  "mapping_guardrail": "Do not infer SB page or CD track by lesson number or sequence. Only serve lesson-specific assets after verified mapping; retain existing old verified lesson_media_map until reconciled."
 }
