@@ -16,7 +16,8 @@ Teacher asks 'Are there any...?' questions about pictured ingredients. Pupils li
 Teacher guides Activity 3 from Teacher's Book p.93. Pupils listen for specific details and respond in full sentences. They then answer short questions about a crepe and lunch choices.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks listening details and understanding of supported questions.
+**Teacher:** Ask two questions about specific listening details and one supported ingredient question; record individual responses.
+**Pupils:** Answer using words or short sentences based on the recording.
 
 ## Closure (5 minutes)
 Pupils share one ingredient they would put in a crepe.
