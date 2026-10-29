@@ -21,4 +21,4 @@ Pupils read two board-game prompts independently and answer two questions using 
 ## Closure (5 minutes)
 Pupils share a new word and reflect on the reading game.
 
-**QA:** SOW Lesson 61 has inconsistent complementary standard labels (Content Standard 3.3; Learning Standard 3.1). The current RPH mapping needs source confirmation. Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**QA:** Complementary Reading 3.3 / 3.3.1 verified against Year 3 DSKP (Reading 3.3.1: read and enjoy A1 fiction or non-fiction texts). The SOW Lesson 61 table prints Reading 3.1 in the complementary Learning Standard cell, inconsistent with its Reading 3.3 Content Standard and the DSKP; retain the DSKP-aligned 3.3.1. Sources: Year 3 SOW (2020), p.117 (Lesson 61); KSSR English Year 3 SK DSKP (2018), p.31 (Reading Standards). Direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
