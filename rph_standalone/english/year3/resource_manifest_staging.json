@@ -102,13 +102,13 @@
           "cd": 1,
           "track": 5,
           "url": "https://drive.google.com/file/d/11OtFYM_lwSggZF7Din1bD7Tz5MUgSN8d/view?usp=drivesdk",
-          "status": "VERIFIED_FILE; lesson mapping recorded in RPH"
+          "status": "TRACK_NUMBER_RECORDED_IN_RPH; LESSON_MAPPING_NEEDS_TB_CONFIRMATION"
         },
         {
           "cd": 1,
           "track": 6,
           "url": "https://drive.google.com/file/d/1BdzwXRHEW2osce8q_crdJyNlL923Lkmi/view?usp=drivesdk",
-          "status": "VERIFIED_FILE; lesson mapping recorded in RPH"
+          "status": "TRACK_NUMBER_RECORDED_IN_RPH; LESSON_MAPPING_NEEDS_TB_CONFIRMATION"
         }
       ],
       "verification": "TB p21 pending"
@@ -457,5 +457,15 @@
     "class_cd_tab": "YEAR3_CLASS_CD",
     "resource_audio_tab": "YEAR3_RESOURCE_AUDIO",
     "rule": "VERIFIED_FILE means asset exists, not lesson mapping; preserve existing lesson_media_map where available; never replace verified links with empty lists"
+  },
+  "audio_audit": {
+    "class_cd_files_verified": 201,
+    "teacher_resource_audio_files_verified": 98,
+    "lesson_audio_mapping_verified_from_manifest": 0,
+    "lesson_audio_mapping_recorded_in_rph": [
+      3
+    ],
+    "warning": "Asset VERIFIED_FILE does not verify lesson-to-track mapping; use old lesson_media_map before marking any lesson VERIFIED_AUDIO",
+    "source_spreadsheet": "1xzRM71yAZDM0ZgW_457RVtAixQ27kit7RiGaG0WASPY"
   }
 }
