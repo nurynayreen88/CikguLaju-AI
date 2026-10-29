@@ -37,3 +37,7 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Book:** Student's Book and Teacher's Book Activity 5, Teacher's Book p.21; pupil-made flags
 - **Audio:** CD1 Track 9
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+## Direct textbook verification (30 October 2026)
+**Direct Teacher's Book p.21 check:** Activity 5 explicitly labels **CD1 Track 9**; model and practise the country/nationality exchange. The book also provides the dialogue transcript and suggested flag-based role-play. Printed p.21 corresponds to PDF page 7.
+**Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
