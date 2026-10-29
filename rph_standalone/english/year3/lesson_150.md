@@ -16,7 +16,7 @@ Pairs write five plural animal names on cards and check spelling.
 Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks listening details and descriptions.
+Teacher asks pupils to order animal cards after hearing two adjectives and explain one comparison.
 
 ## Closure (5 minutes)
 Pupils give one comparison.
