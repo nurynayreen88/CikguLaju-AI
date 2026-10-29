@@ -16,7 +16,7 @@ Pupils work in groups to match picture cards with present continuous sentences.
 Teacher guides Student's Book p.27 Activity 4. Pupils take turns secretly choosing an action card, giving a location clue and asking classmates to guess. Teacher models requests for help.
 
 ## PBD (10 minutes)
-Teacher observes descriptions, interaction and appropriate requests for clarification.
+Teacher listens to each pupil describe one picture and ask a partner for clarification when needed.
 
 ## Closure (5 minutes)
 Teacher displays an anonymous common error. Pupils suggest and explain the correction.
