@@ -6,6 +6,7 @@ Does not write to any database or mark content ready.
 import json
 import sys
 from pathlib import Path
+from datetime import date
 from urllib.parse import urlparse
 
 REQUIRED = ("curriculum", "year", "subject", "unit", "lesson",
@@ -37,12 +38,25 @@ def audit(records):
         if type(row["source_page"]) is not int or row["source_page"] < 1:
             errors.append(f"{prefix}: invalid source_page")
         url = row["source_url"]
-        if not isinstance(url, str) or urlparse(url).scheme not in ("https", "http") or not urlparse(url).netloc:
+        try:
+            parsed = urlparse(url) if isinstance(url, str) else None
+            valid_url = bool(parsed and parsed.scheme == "https" and parsed.hostname)
+        except ValueError:
+            valid_url = False
+        if not valid_url:
             errors.append(f"{prefix}: invalid source_url")
         if row["verification_status"] not in ("pending", "verified", "approved"):
             errors.append(f"{prefix}: invalid verification_status")
-        if row["verification_status"] == "approved" and not (row.get("approved_by") and row.get("approved_at")):
-            errors.append(f"{prefix}: approved without reviewer/date")
+        if row["verification_status"] == "approved":
+            reviewer = row.get("approved_by")
+            approved_at = row.get("approved_at")
+            if not isinstance(reviewer, str) or not reviewer.strip() or not isinstance(approved_at, str):
+                errors.append(f"{prefix}: approved without valid reviewer/date")
+            else:
+                try:
+                    date.fromisoformat(approved_at)
+                except ValueError:
+                    errors.append(f"{prefix}: invalid approved_at date")
         # Malformed JSON fields can be lists/dicts; never crash during audit.
         identity = (row["unit"], row["lesson"], row["standard_code"])
         if all(isinstance(v, (str, int)) for v in identity):
