@@ -16,7 +16,7 @@ Teacher collects classroom and outside-classroom rules and draws simple numbered
 Teacher gives each pupil paper to fold into a four-page rules booklet. Pupils choose classroom and outside-classroom rules, draw a numbered picture for each rule and write its label. In groups, pupils take turns saying a number and reading the matching rule.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks creative expression and spelling of familiar rule words.
+Teacher checks each pupil's four-page booklet for creative rule illustrations and accurate spelling. Pupils read one rule aloud and explain their drawing.
 
 ## Closure (5 minutes)
 Groups display one rule from their poster.
