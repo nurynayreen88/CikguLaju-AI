@@ -7,14 +7,14 @@
 **Learning objective:** Pupils demonstrate speaking in the prescribed SOW tasks and produce observable evidence aligned with SP 2.1.5.  
 **Success evidence:** Individual teacher checklist of task performance and a relevant oral, written or listening response.  
 **Materials:** Student's Book p.5, Teacher's Book p.18, Activity 3 and speaking role-play Activity 2; other materials specified in each activity.  
-**Audio:** CD1 Track 3 (post-lesson song).
+**Audio:** CD1 Track 4 (Activity 3 dialogue); CD1 Track 3 (post-lesson song).
 
 ## Set Induction (10 minutes)
 **Teacher:** Match flags to country names; demonstrate each instruction in English before asking pupils to follow.
 **Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Teacher's Book p.18 Activity 3; elicit spoken descriptions and correct country names.
+**Teacher:** Follow Teacher's Book p.18 Activity 3 with CD1 Track 4; pupils listen to the country dialogue, practise asking where someone is from and give appropriate spoken responses.
 **Pupils:** Complete the described task, respond to teacher prompts, and show learning evidence.
 
 ## Activity 2 (20 minutes)
