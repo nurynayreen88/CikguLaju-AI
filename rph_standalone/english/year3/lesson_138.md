@@ -16,7 +16,7 @@ Teacher plays or sings the song; pupils listen for animal names.
 Teacher displays pictures of the sea horse, jellyfish, turtle, octopus, baby shark and blue whale. Pupils match animal names, sing along and use the pictures as memory prompts when the written words are removed.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks participation and descriptions.
+Teacher observes pupils singing with actions and asks each pupil to name two sea animals and describe one using a simple phrase.
 
 ## Closure (5 minutes)
 Pupils name two animals from the song.
