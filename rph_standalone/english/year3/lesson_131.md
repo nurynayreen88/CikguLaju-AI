@@ -16,7 +16,7 @@ Pupils predict a forest-trip story using the illustrations.
 Pairs use A/B worksheets and a dictionary to explore forest-story words, drawing their meanings. Pupils then find the words in the story, compare drawings with another pair and read along while listening to the story recording.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks contextual vocabulary and dictionary use.
+Pupils explain one forest word using story clues, then confirm its meaning with a dictionary.
 
 ## Closure (5 minutes)
 Pupils share one new forest word.
