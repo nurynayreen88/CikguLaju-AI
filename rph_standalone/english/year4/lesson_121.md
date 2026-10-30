@@ -22,6 +22,8 @@
 **Teacher:** Give pupils a checklist for clear descriptions, relevant body-part vocabulary and punctuation. Organise partner feedback and allow time to revise one sentence.
 **Pupils:** Review a partner's dinosaur description.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite two pairs to present their invented dinosaur and explain one distinctive feature.
 **Pupils:** Present the dinosaur.
