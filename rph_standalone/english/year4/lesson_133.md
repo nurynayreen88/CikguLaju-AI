@@ -11,7 +11,7 @@
 **Pupils:** Recall Chapter 3 events.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Draw the red flower from the story.
+**Teacher:** Ask pupils to draw the red flower from the story and label one relevant detail.
 **Pupils:** Draw the red flower from the story.
 
 ## Activity 2 (20 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Discuss guidebook questions in Flying Carpets groups.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Discuss why Mowgli calls it a red flower.
+**Teacher:** Ask pupils why Mowgli calls it a red flower and request one supporting story detail.
 **Pupils:** Explain why Mowgli uses the name red flower.
 
 ## Closure (5 minutes)
-**Teacher:** Explain a personal interpretation.
+**Teacher:** Invite two different personal interpretations and ask pupils to give reasons.
 **Pupils:** Share a personal interpretation.
 
 **PBD:** Observe explanations of the red flower and personal interpretations against SP 5.2.1 and 2.1.1.  
