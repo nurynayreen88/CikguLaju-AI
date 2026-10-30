@@ -22,6 +22,8 @@
 **Teacher:** Check worksheet responses, model a supportive sentence and ask pupils to draft an encouraging message.
 **Pupils:** Check answers and draft an encouraging message.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Give feedback on whether each encouraging message is polite, clear and suitable for its intended recipient.
 **Pupils:** Improve the wording using feedback.
