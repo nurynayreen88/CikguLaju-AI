@@ -23,7 +23,7 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Model finding one detail about the characters in the Smart kids text, then ask three text-based comprehension questions; support pupils with picture cues.
-**Pupils:** Find three details about the characters in the story and respond to two supported classroom instructions.
+**Pupils:** Find three details about the characters in the story and respond to two supported classroom instructions. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to share one fact from the text and model a related question-and-answer exchange.
