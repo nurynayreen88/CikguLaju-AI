@@ -4,7 +4,7 @@
 **Main SP:** Reading 3.3.1  
 **Complementary SP:** Speaking 2.1.4  
 **Duration:** 60 minutes  
-**Resources:** SB p.30 The Curse; TB p.52; CD1 Track 42
+**Resources:** SB p.30 The Curse; TB p.52; Vocabulary CD1 Track 42 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Use pyramids and Tutankhamun pictures to introduce the setting.
