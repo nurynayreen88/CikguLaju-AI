@@ -13,7 +13,7 @@ Teacher introduces the word holiday and asks when school holidays occur. Pupils 
 Teacher reviews sports and activities from the unit, adding familiar holiday activities. Pupils identify and mime actions.
 
 ## Activity 2 — Speaking (25 minutes)
-Teacher guides Student's Book p.39 using Teacher's Book p.65. Pupils ask and answer about activities they do during school holidays and describe sports they would like to try.
+Teacher guides Student's Book p.39 using Teacher's Book p.65. Pupils ask and answer about activities they do during school holidays and describe sports they would like to try. Pupils complete Workbook p.33, Activity 3, by identifying sports associated with different seasons.
 
 ## PBD (10 minutes)
 Pupils ask and answer one activity question and describe two activities using suitable phrases.
