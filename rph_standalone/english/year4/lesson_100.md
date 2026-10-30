@@ -22,6 +22,8 @@
 **Teacher:** Guide pupils through Activity 3, model checking an apostrophe in one possessive sentence, then ask partners to use a short punctuation checklist before revising their work.
 **Pupils:** Complete Activity 3 and check punctuation with a partner.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Display one sentence with an incorrect possessive form and invite pupils to explain and correct it.
 **Pupils:** Correct one possessive sentence.
