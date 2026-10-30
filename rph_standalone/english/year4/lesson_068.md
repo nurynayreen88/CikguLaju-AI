@@ -26,7 +26,7 @@
 **Teacher action:** Pupils correct a list sentence.
 **Pupil action:** Correct one picnic shopping sentence.
 
-**PBD:** Check pupil responses and products against 4.3.2 and 4.3.1; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Assess picnic shopping lists for correct food spelling, use of some and containers, and commas against SP 4.3.2 and 4.3.1.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 68, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
