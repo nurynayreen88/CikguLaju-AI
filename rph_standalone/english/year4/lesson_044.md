@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review historical figures and past-tense verbs.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Recall historical figures and past-tense verbs.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Groups order notes into a historical story.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Arrange jumbled notes into a historical story.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Assign narrators and actors; rehearse using notes, not a memorised script.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Rehearse roles using notes instead of memorised scripts.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Groups perform short scenes and give positive peer feedback.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Perform short scenes and give positive feedback.
 
 ## Closure (5 minutes)
 **Teacher:** Reflect on narration and group participation.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Reflect on narration and group participation.
 
 **PBD:** Check responses against Speaking 2.3.1 and Speaking 2.1.2.  
 **Differentiation:** Offer varied roles and ensure everyone contributes.  
