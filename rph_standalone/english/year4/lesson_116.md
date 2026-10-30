@@ -23,7 +23,7 @@
 **Pupils:** Guess animals from clues and correct spelling.
 
 ## Closure (5 minutes)
-**Teacher:** Share one corrected comparative sentence.
+**Teacher:** Invite pupils to read one revised comparative sentence and identify the correction they made.
 **Pupils:** Share an improved comparative sentence.
 
 **PBD:** Check the accuracy of written comparative animal clues and spelling corrections against SP 4.2.4 and 4.3.2.  
