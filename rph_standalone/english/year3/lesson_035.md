@@ -13,7 +13,7 @@ Pupils sing and act out the song from Student's Book p.25.
 Teacher introduces new vocabulary and displays selected story pictures. Pupils match sentence cards to pictures using visual clues.
 
 ## Activity 2 — Reading (25 minutes)
-Pupils read the picture story on Student's Book p.26 to check matches. Teacher guides Activity 1 and introduces present continuous question forms from the p.27 Grammar Box.
+Pupils read the picture story on Student's Book p.26 to check matches. Teacher guides Activity 1 and introduces present continuous question forms from the p.27 Grammar Box. Pupils complete Workbook p.23, Activity 2, by selecting correct details from the story.
 
 ## PBD (10 minutes)
 Pupils state the story's main idea and explain one unfamiliar word using a clue from the text or picture.
