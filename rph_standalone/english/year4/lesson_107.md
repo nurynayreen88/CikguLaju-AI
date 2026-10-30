@@ -15,15 +15,15 @@
 **Pupils:** Sequence pictures and recall the predicted ending.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen to the next story and compare it with predictions.
+**Teacher:** Play the next part of the story, ask pupils to check their earlier predictions, then replay the key section to confirm what actually happened.
 **Pupils:** Listen to Track 32 and compare events with predictions.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Read together, discuss story events and replay Track 32.
+**Teacher:** Guide shared reading of the story events and ask pupils to name one event supported by the recording. Replay Track 32 as needed and record pupils' listening responses.
 **Pupils:** Read together and discuss story details.
 
 ## Closure (5 minutes)
-**Teacher:** Share one similarity or difference.
+**Teacher:** Invite pupils to explain one similarity or difference between their prediction and the story's actual events.
 **Pupils:** Name one difference from the prediction.
 
 **PBD:** Check listening comprehension of Track 32 by comparing the story events with earlier predictions, and observe supported shared reading (SP 1.2.3, 3.3.1).  
