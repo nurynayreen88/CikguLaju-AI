@@ -11,7 +11,7 @@
 **Pupils:** Name health problems.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 4 using CD2 Track 73.
+**Teacher:** Preview the health-picture choices, play CD2 Track 73 for Activity 4 and check pupils' listening responses.
 **Pupils:** Listen to the first recording.
 
 ## Activity 2 (20 minutes)
