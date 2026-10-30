@@ -7,7 +7,7 @@
 **References:** Graphic Novel Teaching Guidebook p.63; Year 4 SOW Lesson 133
 
 ## Set induction (10 minutes)
-**Teacher:** Quiz pupils on Chapter 3 events.
+**Teacher:** Ask three short questions about Chapter 3 events and request story evidence for one answer.
 **Pupils:** Recall Chapter 3 events.
 
 ## Activity 1 (15 minutes)
