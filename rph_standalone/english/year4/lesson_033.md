@@ -23,7 +23,7 @@
 **Pupils:** Complete the SB quiz and check answers on p.118.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils tell a partner one fact remembered from the quiz.
+**Teacher:** Ask pupils to tell a partner one Ancient Egypt fact and identify the quiz clue that supports it.
 **Pupils:** Tell a partner one fact from the quiz.
 
 ## Assessment and differentiation
