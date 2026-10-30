@@ -15,11 +15,11 @@
 **Pupil action:** Sort food words and inspect the health table.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils fill the table and practise or in choice statements.
+**Teacher action:** Demonstrate how to fill one row of the health table, then prompt pupils to express choices using or.
 **Pupil action:** Complete the table and write choices using or.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pupils write sentences with enough and but about yesterday's habits.
+**Teacher action:** Model a sentence with enough and but, then guide pupils to describe yesterday's eating habits in writing.
 **Pupil action:** Write sentences with enough and but about yesterday's habits.
 
 ## Closure (5 minutes)
