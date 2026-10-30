@@ -22,6 +22,8 @@
 **Teacher:** Give pairs a health situation and a response checklist, then invite them to create, rehearse and perform a short dialogue.
 **Pupils:** Perform an original dialogue.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to demonstrate one polite response to a health problem and explain when to use it.
 **Pupils:** Share a helpful response.
