@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review sports vocabulary with flashcards.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall sports words using flashcards.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read the source text and identify useful details.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Read and identify details in the source text.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Write sports descriptions using superlatives.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Write descriptions using superlative adjectives.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check descriptions against the text and correct errors.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Check sentences against the text and correct mistakes.
 
 ## Closure (5 minutes)
 **Teacher:** Share a corrected sentence.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Read an improved sentence.
 
 **PBD:** Assess the source-based task against 4.2.4 and 3.2.2; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
