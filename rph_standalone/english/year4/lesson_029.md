@@ -19,7 +19,7 @@
 **Pupils:** Read school texts while listening to Tracks 35–36.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Complete Activity 2 and locate details; pairs write or say four true statements about their school.
+**Teacher:** Guide Activity 2 by modelling how to locate a detail in the text, then ask pairs to produce four accurate statements about their own school.
 **Pupils:** Locate details and write or say four facts about their school.
 
 ## Closure (5 minutes)
