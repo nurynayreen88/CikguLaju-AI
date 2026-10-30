@@ -23,7 +23,7 @@
 **Pupils:** Compare answers using text evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Recall one sport fact.
+**Teacher:** Invite pupils to report one fact about sports equipment and point to the sentence that supports it.
 **Pupils:** State one fact from the reading.
 
 **PBD:** Check identification of the main idea and supporting details about sports equipment, using text evidence (SP 3.2.2, 3.2.1).  
