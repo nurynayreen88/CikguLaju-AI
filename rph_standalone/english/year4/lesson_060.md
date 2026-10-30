@@ -23,7 +23,7 @@
 **Pupils:** Write a correctly spelled prediction and present it to a group.
 
 ## Closure (5 minutes)
-**Teacher:** Review spelling and reasons for predictions.
+**Teacher:** Ask pupils to check one prediction sentence for spelling and explain how because supports their reason.
 **Pupils:** Correct one word and share a reason.
 
 **PBD:** Observe spoken predictions about celebrations with reasons and check spelling of written predictions (SP 2.1.4, 4.3.2).  
