@@ -3,7 +3,7 @@ import tempfile
 import unittest
 import warnings
 from pathlib import Path
-from zipfile import ZipFile, ZipInfo
+from zipfile import ZipFile, ZIP_DEFLATED
 
 from scripts.verify_rpt_pj_2027_v76 import verify
 
@@ -25,6 +25,13 @@ class RPTArchiveSafetyTests(unittest.TestCase):
             with ZipFile(archive, "w") as zf:
                 zf.writestr("extra.txt", "not an approved RPT")
             self.assertTrue(verify(archive))
+
+    def test_extreme_compression_ratio_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            archive = Path(folder) / 'compressed.zip'
+            with ZipFile(archive, 'w', compression=ZIP_DEFLATED) as zf:
+                zf.writestr('repeated.txt', 'A' * 500000)
+            self.assertIn('compression ratio', verify(archive)[0])
 
     def test_invalid_zip_rejected(self):
         with tempfile.TemporaryDirectory() as folder:
