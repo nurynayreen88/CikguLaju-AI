@@ -15,7 +15,7 @@
 **Pupils:** Complete Worksheet 1 using the guidebook steps.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 4 step 2; pupils construct a shoebox diorama.
+**Teacher:** Demonstrate the first construction step in Activity 4 and supervise pupils as they assemble their shoebox dioramas.
 **Pupils:** Construct a shoebox diorama of Grandma's House.
 
 ## PBD and reinforcement (10 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Describe the diorama and answer questions about objects.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils describe the diorama in at least four sentences.
+**Teacher:** Invite pupils to describe their dioramas in at least four sentences and give feedback on location words.
 **Pupils:** Describe the completed diorama in four sentences.
 
 **PBD:** Check task responses against Language Arts 5.3.1 and Listening 1.2.5, recording individual progress.  
