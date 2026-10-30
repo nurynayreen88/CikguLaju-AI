@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Reorder mixed-up dialogue lines.
+**Teacher:** Review the Grammar Box and Activity 3 dialogue.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 3 and practise a short health dialogue.
+**Teacher:** Reorder extended dialogue lines including Really? and Oh poor you!.
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs extend dialogues and respond to supported questions.
+**Teacher:** Pairs create, practise and perform a new health dialogue.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
