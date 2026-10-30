@@ -22,6 +22,8 @@
 **Teacher:** Ask pupils to sketch one belonging without naming its owner. Model a 'Whose ...?' question, then organise a guessing exchange and check possessive pronouns.
 **Pupils:** Draw belongings and guess their owners.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Model correcting one possessive-pronoun sentence and check pupils' understanding.
 **Pupils:** Correct a possessive pronoun sentence.
