@@ -7,7 +7,7 @@
 **References:** Unit 7 revision; Teacher Book and SOW self-assessment; Primary Year 4 SK SOW Lesson 112
 
 ## Set induction (10 minutes)
-**Teacher:** Follow the TB Warm-up.
+**Teacher:** Use the TB warm-up to elicit two Unit 7 language targets before pupils begin revision.
 **Pupils:** Recall language from Unit 7 Helping out.
 
 ## Activity 1 (15 minutes)
