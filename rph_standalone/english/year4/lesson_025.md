@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Provide a peer-edit checklist for punctuation and meaning, then organise pairs to review and revise their paragraphs.
-**Pupils:** Exchange drafts, check punctuation and rewrite.
+**Pupils:** Exchange drafts, check punctuation and rewrite. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils identify one improvement made after feedback.
