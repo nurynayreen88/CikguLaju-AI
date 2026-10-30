@@ -23,7 +23,7 @@
 **Pupils:** Complete the listening activity and identify the /eə/ sound in words.
 
 ## Closure (5 minutes)
-**Teacher:** Ask pupils to share a guessed meaning and a phonics example.
+**Teacher:** Invite pupils to explain one inferred song-word meaning and pronounce a word containing the target /eə/ sound.
 **Pupils:** Explain one inferred word and pronounce one /eə/ example.
 
 **PBD:** Observe contextual inference and sound recognition against SP 1.3.1 and 1.1.1.  
