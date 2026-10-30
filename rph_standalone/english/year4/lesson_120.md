@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce dinosaur pictures and body-part vocabulary.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Name dinosaur body parts from pictures.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read Activity 1 and locate relevant details.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read Activity 1 and find dinosaur facts.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 2 and answer text-specific questions.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Read Activity 2 and answer specific questions.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pairs explain answers and share opinions with reasons.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Explain answers using text evidence.
 
 ## Closure (5 minutes)
 **Teacher:** Recall a dinosaur fact.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Recall one dinosaur fact.
 
 **PBD:** Observe the named learning task against 3.2.2 and 2.1.4; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
