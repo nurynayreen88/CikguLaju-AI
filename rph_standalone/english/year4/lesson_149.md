@@ -15,7 +15,7 @@
 **Pupils:** Explain a preferred place to live.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow guidebook p.73 steps 1–2.
+**Teacher:** Explain guidebook p.73 steps 1–2 and check pupils' understanding before they write their opinions.
 **Pupils:** Complete guidebook page 73 tasks in pairs.
 
 ## Reinforcement / PBD (10 minutes)
