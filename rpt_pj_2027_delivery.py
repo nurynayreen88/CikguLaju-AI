@@ -28,8 +28,9 @@ class RPTDocumentUnavailable(FileNotFoundError):
 
 def list_available(root):
     """List only known, explicitly provisioned RPT Word files."""
-    root = Path(root) / "RPT_PJ_2027_DOCX"
-    if root.is_symlink():
+    base = Path(root)
+    root = base / "RPT_PJ_2027_DOCX"
+    if base.is_symlink() or root.is_symlink():
         return []
     result = []
     for state in STATES:
@@ -60,8 +61,9 @@ def resolve_rpt(root, *, negeri, tahun, authorized):
         raise ValueError("Tahun tidak sah")
     if year not in YEARS:
         raise ValueError("Tahun tidak tersedia")
-    folder = Path(root) / "RPT_PJ_2027_DOCX"
-    if folder.is_symlink():
+    base = Path(root)
+    folder = base / "RPT_PJ_2027_DOCX"
+    if base.is_symlink() or folder.is_symlink():
         raise RPTDocumentUnavailable("Untrusted RPT asset directory")
     root = folder.resolve()
     name = FILE_PATTERN.format(state=state, year=year)
