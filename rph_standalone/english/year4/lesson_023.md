@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review school subjects with a naming game.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Name school subjects in the opening game.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Match school subjects to adjectives such as 'fun' and explain preferences.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Match subjects with adjectives and explain preferences.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Model 'I think Monday will be great because ...'; pairs predict school days using timetables.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Predict school days using timetables and because.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils write two opinion strips, mix them in groups, guess authors and agree or disagree.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Write opinion strips, guess authors and respond.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils share a prediction and give a reason.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Share a prediction and give a reason.
 
 **PBD:** Check task responses against Speaking 2.1.4 and Writing 4.2.1, recording individual progress.  
 **Differentiation:** Model full sentences and provide oral rehearsal before independent work.  
