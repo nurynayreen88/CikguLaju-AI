@@ -19,7 +19,7 @@
 **Pupils:** Use dictionaries and context clues to find meanings.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pairs describe dinosaurs and compare them with animals.
+**Teacher:** Organise pairs to compare dinosaurs with familiar animals, prompting accurate comparative adjectives.
 **Pupils:** Compare dinosaurs and familiar animals in pairs.
 
 ## Closure (5 minutes)
