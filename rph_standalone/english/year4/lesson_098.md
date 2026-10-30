@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Replay Track 21 and mime the actions.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Mime actions heard in Track 21.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Review vocabulary and practise cursive writing.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Practise the vocabulary and cursive writing.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Use Track 22 to practise present continuous.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Use Track 22 to practise present continuous sentences.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs mime and describe past experiences of helping others.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Mime and describe experiences of helping others.
 
 ## Closure (5 minutes)
 **Teacher:** Review tense and object pronouns.
-**Pupils:** Share one result or reflection.
+**Pupils:** Review a tense form and an object pronoun.
 
 **PBD:** Assess task responses against 2.1.5 and 2.1.2; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
