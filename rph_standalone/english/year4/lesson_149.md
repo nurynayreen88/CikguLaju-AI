@@ -23,7 +23,7 @@
 **Pupils:** Write an opinion about Mowgli's choice.
 
 ## Closure (5 minutes)
-**Teacher:** Reach a class consensus.
+**Teacher:** Summarise pupils' differing opinions and ask the class to explain a shared conclusion with story evidence.
 **Pupils:** Share a reasoned class view.
 
 **PBD:** Check written opinions on Mowgli's village or jungle choice for relevant reasons and punctuation (SP 5.2.1, 4.3.1).  
