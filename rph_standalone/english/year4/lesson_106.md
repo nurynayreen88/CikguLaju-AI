@@ -19,7 +19,7 @@
 **Pupils:** Retell key events in groups.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pupils predict the next chapter and explain reasons.
+**Teacher:** Ask groups to predict the next chapter and justify their ideas with a detail from Chapters 1 or 2.
 **Pupils:** Predict the next chapter and give reasons.
 
 ## Closure (5 minutes)
