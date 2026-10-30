@@ -15,7 +15,7 @@
 **Pupils:** Complete Revision 6 Activities 1–3.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Practise language based on formative assessment needs.
+**Teacher:** Select a short follow-up exercise targeting the most common errors identified in pupils' revision responses.
 **Pupils:** Practise language skills identified by assessment.
 
 ## Reinforcement / PBD (10 minutes)
