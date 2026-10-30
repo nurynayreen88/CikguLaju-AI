@@ -26,7 +26,7 @@
 **Teacher:** Review one speaking strategy.
 **Pupils:** Share one strategy to practise.
 
-**PBD:** Assess the specified task against 2.1.1 and 1.2.5; for teacher-selected standards choose criteria before class.  
+**PBD:** Observe pupils' questions and responses about English-learning habits, including reasons for advice (SP 2.1.1, 1.2.5).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
