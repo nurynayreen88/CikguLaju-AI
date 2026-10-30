@@ -13,7 +13,7 @@ Teacher reviews months, days and seasons. Pupils say short sentences.
 Teacher distributes cards labelled in and on. Pupils hold up the correct side when hearing sentences with a missing preposition.
 
 ## Activity 2 — Language review (25 minutes)
-Teacher guides unit revision activities using Student's Book p.44 and the SOW worksheet. Pupils complete preposition and writing tasks and ask and answer questions about months and days.
+Teacher guides unit revision activities using Student's Book p.44 and the SOW worksheet. Pupils complete preposition and writing tasks and ask and answer questions about months and days. Pupils complete Workbook p.32, Activity 2, by filling in missing weather and seasonal vocabulary.
 
 ## PBD (10 minutes)
 Teacher checks punctuation and accurate preposition use in written sentences and observes spoken exchanges.
