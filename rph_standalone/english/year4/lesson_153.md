@@ -15,11 +15,11 @@
 **Pupils:** Read and discuss advice on the sample poster.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils label body parts and draft should/shouldn't advice on a health poster.
+**Teacher:** Model one labelled body part and an advice sentence with should or shouldn't, then guide pupils to draft their health posters.
 **Pupils:** Draft a poster with body labels and should/shouldn't advice.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils use dictionaries to correct spelling and revise their poster.
+**Teacher:** Demonstrate checking a word in a dictionary, then ask pupils to revise spelling and punctuation on their posters.
 **Pupils:** Check spelling in a dictionary and revise the poster.
 
 ## Closure (5 minutes)
