@@ -15,11 +15,11 @@
 **Pupils:** Practise an extended dialogue.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Conduct a class survey about sports pupils like and dislike.
+**Teacher:** Model a question and follow-up response about sports preferences, then organise a class survey in which pupils interview at least three classmates.
 **Pupils:** Survey classmates about sports preferences.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Share survey findings and use a natural follow-up question.
+**Teacher:** Invite pupils to summarise their survey findings and ask one follow-up question; note whether questions and responses are understandable.
 **Pupils:** Summarise the survey results.
 
 ## Closure (5 minutes)
