@@ -11,7 +11,7 @@
 **Pupils:** Name favourite animals.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activities 1 and 2 and identify conjunctions in the model.
+**Teacher:** Guide Activities 1–2 and highlight linking words in the model paragraph.
 **Pupils:** Find conjunctions in the model.
 
 ## Activity 2 (20 minutes)
