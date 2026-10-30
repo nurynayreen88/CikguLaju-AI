@@ -11,11 +11,11 @@
 **Pupils:** Recall Chapters 1–2 and earlier predictions.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read Chapters 3–4.
+**Teacher:** Guide pupils through Chapters 3–4 and pause to ask questions about important events and characters.
 **Pupils:** Read Chapters 3–4 and identify key events.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Sequence pictures from Chapters 1–4 following guidebook steps 1–7.
+**Teacher:** Explain guidebook steps 1–7, model ordering the first picture and ask groups to sequence the remaining events.
 **Pupils:** Sequence story pictures using guidebook steps 1–7.
 
 ## PBD / reinforcement (10 minutes)
