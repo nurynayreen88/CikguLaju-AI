@@ -23,7 +23,7 @@
 **Pupils:** Explain reasons for chosen learning habits.
 
 ## Closure (5 minutes)
-**Teacher:** Review one speaking strategy.
+**Teacher:** Ask pupils to demonstrate a useful speaking strategy in a short exchange.
 **Pupils:** Share one strategy to practise.
 
 **PBD:** Observe pupils' questions and responses about English-learning habits, including reasons for advice (SP 2.1.1, 1.2.5).  
