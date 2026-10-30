@@ -18,7 +18,7 @@
 **Pupils:** Spell target country/nationality words with a partner and correct the written word cards.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils write sentences describing where different people are from; model 'She is from Malaysia. She is Malaysian.' and gradually remove prompts.
+**Teacher:** Model 'She is from Malaysia. She is Malaysian.', then guide pupils to write country-and-nationality sentences independently as prompts are gradually removed.
 **Pupils:** Write at least four sentences about different people using 'He/She is from ...' and 'He/She is ...' with appropriate country/nationality forms.
 
 ## PBD / Reinforcement (10 minutes)
