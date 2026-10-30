@@ -15,11 +15,11 @@
 **Pupils:** Practise short and long comparative forms.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils write animal description clues on cards.
+**Teacher:** Provide a short comparative-writing checklist and ask pupils to draft animal description clues on cards.
 **Pupils:** Write animal description clues on cards.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Other groups guess the animal and check spelling and clarity.
+**Teacher:** Organise a clue-card exchange, ask groups to justify their guesses and guide revisions for spelling and clarity.
 **Pupils:** Guess animals from clues and correct spelling.
 
 ## Closure (5 minutes)
