@@ -48,6 +48,16 @@ def check() -> list[str]:
             text = lesson.read_text(encoding="utf-8")
             if not re.search(r"\bDRAFT\b|\bNOT READY FOR RELEASE\b|\bPENDING\b", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: release gate not explicit")
+        # Structural checks do not imply pedagogical, audio, or Word/PDF approval.
+        if lesson.is_file():
+            if not re.search(r"\\*\\*Duration:\\*\\*\\s*60 minutes", text, re.IGNORECASE):
+                errors.append(f"Lesson {number:03d}: expected 60-minute duration")
+            if not re.search(r"\\bPBD\\b|\\bassessment\\b", text, re.IGNORECASE):
+                errors.append(f"Lesson {number:03d}: PBD/assessment section missing")
+            if not re.search(r"\\bTeacher:\\*\\*|\\*\\*Teacher\\*\\*:", text, re.IGNORECASE):
+                errors.append(f"Lesson {number:03d}: teacher actions missing")
+            if not re.search(r"\\bPupils:\\*\\*|\\*\\*Pupils\\*\\*:", text, re.IGNORECASE):
+                errors.append(f"Lesson {number:03d}: pupil actions missing")
         sk = (row.get("main_cs") or "").strip()
         sp = (row.get("main_ls") or "").strip()
         if number in SPECIAL:
