@@ -11,7 +11,7 @@
 **Pupils:** Recall public transport vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Study transport advertisements, prices and departure times.
+**Teacher:** Display transport advertisements and model finding the price and departure time for one option.
 **Pupils:** Read fares and departure times in advertisements.
 
 ## Activity 2 (20 minutes)
