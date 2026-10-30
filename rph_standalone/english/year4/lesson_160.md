@@ -22,6 +22,8 @@
 **Teacher:** Invite each group to present its outcome and organise peer feedback against the teacher-selected success criteria.
 **Pupils:** Present the outcome and improve it using peer feedback.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Prompt pupils to reflect on their role, one successful collaboration step and one improvement for future projects.
 **Pupils:** Reflect on group roles and one learning gain.
