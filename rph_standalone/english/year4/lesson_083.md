@@ -26,7 +26,7 @@
 **Teacher:** Recall a detail from the reading.
 **Pupils:** Share one fact from the reading.
 
-**PBD:** Assess task responses against 3.2.2 and 1.2.1; teacher selects specific criteria for Language Awareness.  
+**PBD:** Check transport reading answers and identification of details heard in Tracks 5–6 against SP 3.2.2 and 1.2.1.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
