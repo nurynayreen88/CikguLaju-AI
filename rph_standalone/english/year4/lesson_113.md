@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce animal pictures and familiar adjectives.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Name animals and describing words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow SB Activity 1 listening preparation.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Prepare for the Student Book listening task.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Listen to supported animal questions and infer unfamiliar words.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Listen to animal questions and infer unknown words.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pupils answer questions and explain their choices.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Answer questions and justify choices.
 
 ## Closure (5 minutes)
 **Teacher:** Share one new animal word.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share a newly learned animal word.
 
 **PBD:** Observe the named learning task against 1.2.5 and 1.3.1; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
