@@ -23,7 +23,7 @@
 **Pupils:** Write, exchange and revise a text-message dialogue.
 
 ## Closure (5 minutes)
-**Teacher:** Read a revised message.
+**Teacher:** Invite pupils to read a revised health message and explain one change made after peer feedback.
 **Pupils:** Read a revised message aloud.
 
 **PBD:** Assess health text-message exchanges for a clear offer, reason and appropriate written response (SP 4.2.2, 4.2.1).  
