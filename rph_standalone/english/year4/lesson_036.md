@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review simple past questions through a response game.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Recall simple past questions in the response game.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils reread the previous dialogue and locate past-tense questions.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Reread the dialogue and identify past-tense questions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow TB Grammar Box and model word order, apostrophes, commas, full stops and question marks.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Practise word order and punctuation using the Grammar Box.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Pupils punctuate prepared past-tense questions and complete TB Activity 3.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Punctuate prepared questions and complete Activity 3.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils correct a question and reflect on punctuation.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Correct one question and explain a punctuation choice.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Writing 4.3.1 and Reading 3.2.2.  
