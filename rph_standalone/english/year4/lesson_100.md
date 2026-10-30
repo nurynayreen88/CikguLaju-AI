@@ -7,7 +7,7 @@
 **References:** SB p.73 Activity 3; TB p.111
 
 ## Set induction (10 minutes)
-**Teacher:** Review the story with a quiz.
+**Teacher:** Ask three short story questions and use pupils' answers to identify ownership expressions for revision.
 **Pupils:** Recall the story through a short quiz.
 
 ## Activity 1 (15 minutes)
