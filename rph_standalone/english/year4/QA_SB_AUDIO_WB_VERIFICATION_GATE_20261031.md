@@ -68,3 +68,26 @@ Reviewed the complete RPH text for Lessons **097, 098, 102, 103, 104, 105, 107, 
 | 157 | **SOW explicitly offers two legitimate choices:** *What are germs?* SB pp.110–111/TB pp.162–163 **or** *Teeth facts!* SB p.133/TB p.197 | Current RPH uses the first valid SOW choice; **not a conflict or error** |
 
 **Corrections to earlier QA notes:** Lesson 107 should not be flagged as a proven wrong page: the SOW itself cites pp.66–67. Lesson 157 is a deliberate two-option SOW design, and the existing *What are germs?* selection is permitted. Both remain subject to direct SB/TB PDF checks; no lesson rewrite needed from SOW evidence alone.
+
+## Larger SOW cross-check — 15 additional lessons (31 October 2026)
+Read the official Year 4 SOW lesson instructions and materials references for Lessons **065, 066, 081, 082, 083, 084, 086, 088, 091, 093, 104, 150, 152, 155, 156**.
+
+| Lesson | Directly verified from SOW | Audio caveat |
+| --- | --- | --- |
+| 065 | SB p.49 Activity 1; phonics SB p.120/TB p.175; vocabulary Track 70, song/Activity 1 Track 71 | Disc not specified in extracted SOW lines |
+| 066 | SB p.49 Activity 3; TB p.79 | **CD1 Track 72** printed in SOW |
+| 081 | SB p.59 Activity 1; TB p.92 | **CD2 Tracks 2 and 4** |
+| 082 | SB p.59 Activity 2; TB p.92 | No prescribed audio in checked SOW outline |
+| 083 | SB pp.60–61; TB pp.94–95 | **CD2 Tracks 5 and 6** |
+| 084 | SB p.131 CLIL; TB p.195 | **CD3 Track 39** vocabulary; Activity 1 is **without** listening track |
+| 086 | SB p.61 Activity 4; TB pp.94–95 | **CD2 Track 7** |
+| 088 | SB p.62 Activities 1–2; TB pp.96–97 | **CD2 Track 9** vocabulary |
+| 091 | SB p.63 Activities 3–4; TB p.97 | **CD2 Tracks 11 and 12** |
+| 093 | SB pp.66–67 story; TB pp.102–103 | **CD2 Track 16** |
+| 104 | SB pp.74–75; TB pp.112–113 | **Track 27** vocabulary, **Track 28** Activity 1; disc not printed in extracted SOW |
+| 150 | SB p.105 Activities 4–5; TB p.155 | **CD2 Tracks 73 and 74** |
+| 152 | SB pp.106–107; TB pp.156–157 | **CD2 Tracks 75 and 76** |
+| 155 | SB p.107 Activity 4; TB p.157 | **CD2 Track 78** |
+| 156 | SB p.108 Activity 1; TB p.159 | **CD2 Track 79** vocabulary |
+
+**Evidence boundary:** This cross-check confirms the SOW *text*, not the content of actual MP3 files or scanned textbook pages. Continue to require direct audio verification before marking a track as playable/READY. Existing lesson files have not been rewritten or overwritten.
