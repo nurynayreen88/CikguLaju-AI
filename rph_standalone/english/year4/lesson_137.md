@@ -11,7 +11,7 @@
 **Pupils:** Recall sports words using flashcards.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the source text and identify useful details.
+**Teacher:** Guide pupils to reread the source text and underline two facts useful for a sports description.
 **Pupils:** Read and identify details in the source text.
 
 ## Activity 2 (20 minutes)
