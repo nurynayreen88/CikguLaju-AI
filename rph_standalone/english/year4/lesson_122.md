@@ -22,6 +22,8 @@
 **Teacher:** Invite pupils to explain personal responses and provide specific feedback.
 **Pupils:** Explain their responses to the story and revise ideas after feedback.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to name their favourite scene and explain which character action influenced their choice.
 **Pupils:** Share a favourite part of the story and a reason.
