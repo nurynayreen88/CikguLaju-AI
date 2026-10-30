@@ -60,7 +60,7 @@ def check() -> list[str]:
                 errors.append(f"Lesson {number:03d}: stage timings total {sum(map(int, stages))}, expected 60")
             # Every timed stage must describe both teacher and pupil actions.
             stage_blocks = re.findall(
-                r"^##\s+.+?\(\d+\s+minutes?\)\s*$([\s\S]*?)(?=^##\s+|\Z)",
+                r"^##[^\n]*\(\d+\s+minutes?\)[ \t]*\n([\s\S]*?)(?=^##[ \t]|\Z)",
                 text, re.MULTILINE | re.IGNORECASE,
             )
             for stage_no, block in enumerate(stage_blocks, start=1):
