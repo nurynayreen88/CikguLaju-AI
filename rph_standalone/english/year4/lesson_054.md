@@ -23,7 +23,7 @@
 **Pupils:** Discuss Independence Day in pairs and justify an opinion.
 
 ## Closure (5 minutes)
-**Teacher:** Review one true/false answer and one opinion.
+**Teacher:** Ask pupils to justify one true/false response with a listening clue and express a reasoned opinion.
 **Pupils:** Correct an answer and share a reason.
 
 **PBD:** Check true/false listening answers and supporting details from Track 56 (SP 1.2.3 and 1.2.2).  
