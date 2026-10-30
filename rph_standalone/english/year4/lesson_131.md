@@ -15,7 +15,7 @@
 **Pupils:** Read Activity 1 and identify the main idea.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups choose the best title for the story and explain why.
+**Teacher:** Ask groups to choose a suitable story title and justify it using one main-idea clue from the text.
 **Pupils:** Choose a suitable title and justify it.
 
 ## Reinforcement / PBD (10 minutes)
