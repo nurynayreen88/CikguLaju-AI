@@ -15,11 +15,11 @@
 **Pupils:** Find and name kite-making and sewing materials.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Provide two mind maps about Anil and his mother.
+**Teacher:** Show two mind maps for Anil and his mother, model one story detail and ask pupils to complete the remaining branches.
 **Pupils:** Complete mind maps and describe their activities.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Distribute kite templates for group design.
+**Teacher:** Distribute kite templates, set clear design criteria and supervise groups as they plan and label their kites.
 **Pupils:** Design a kite and prepare an explanation.
 
 ## Closure (5 minutes)
