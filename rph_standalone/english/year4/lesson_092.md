@@ -22,6 +22,8 @@
 **Teacher:** Invite pupils to present their models and explain the process using First, Second and Next in sequence.
 **Pupils:** Present the model using First, Second and Next.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Elicit action verbs used during model construction and ask pupils to use one in a sequence sentence.
 **Pupils:** Recall action verbs used in the task.
