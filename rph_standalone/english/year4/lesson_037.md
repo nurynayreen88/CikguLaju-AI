@@ -15,7 +15,7 @@
 **Pupils:** Discuss images and vocabulary from the poem.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow CCL Activity 3 steps 1–6, modelling question words and dialogue.
+**Teacher:** Model question-word prompts and a short dialogue before guiding pupils through CCL Activity 3 steps 1–6.
 **Pupils:** Practise wh-questions and act out the dialogue.
 
 ## Reinforcement / PBD (10 minutes)
