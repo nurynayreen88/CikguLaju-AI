@@ -8,7 +8,7 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce story characters using pictures.
-**Pupils:** Identify characters.
+**Pupils:** Identify story characters.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read the story independently for enjoyment.
@@ -16,15 +16,15 @@
 
 ## Activity 2 (20 minutes)
 **Teacher:** Groups explain what they liked about the story and predict its ending.
-**Pupils:** Discuss favourite events and predict an ending.
+**Pupils:** Discuss favourite events and predict the ending.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Group narrators retell the story while other members act out events.
-**Pupils:** Narrate and act out the story.
+**Pupils:** Narrate or act out the story.
 
 ## Closure (5 minutes)
 **Teacher:** Share a personal response.
-**Pupils:** Share a personal reaction.
+**Pupils:** Share a personal response.
 
 **PBD:** Assess the source-based task against 3.3.1 and 2.3.1; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
