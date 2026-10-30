@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Watch a short Readers' Theatre demonstration.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Observe how Readers' Theatre is performed.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow guidebook steps 1–3 and assign roles.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read the script and take assigned roles.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Rehearse and perform following steps 4–7.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Rehearse and perform scenes in groups.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Assess group performance using guidebook p.128 form.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Use the guidebook form to assess performances.
 
 ## Closure (5 minutes)
 **Teacher:** Give medals and missions to other groups.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Offer another group a medal and a mission.
 
 **PBD:** Assess the specified task against 5.3.1 and 3.3.1; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
