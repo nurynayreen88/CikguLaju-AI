@@ -15,11 +15,11 @@
 **Pupils:** Listen and decide whether statements are true or false.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Show Activity 4 pictures and follow TB listening instructions.
+**Teacher:** Preview the Activity 4 pictures, explain the listening purpose and replay relevant audio sections to check pupils' answers.
 **Pupils:** Use pictures to predict and check listening details.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model supported phrases for Independence Day opinions.
+**Teacher:** Model an opinion with a reason about Independence Day and invite pupils to share their own views.
 **Pupils:** Discuss Independence Day in pairs and justify an opinion.
 
 ## Closure (5 minutes)
