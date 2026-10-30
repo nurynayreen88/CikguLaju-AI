@@ -23,7 +23,7 @@
 **Pupils:** Complete Unit 6 self-assessment and note gaps.
 
 ## Closure (5 minutes)
-**Teacher:** Identify a priority for further practice.
+**Teacher:** Use the self-assessment results to identify one priority skill and recommend a focused practice task.
 **Pupils:** Name one priority for further practice.
 
 **PBD:** Assess task responses against Teacher-selected DSKP SP and Teacher-selected DSKP SP; teacher selects specific criteria for Language Awareness.  
