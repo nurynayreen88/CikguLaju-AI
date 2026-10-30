@@ -16,7 +16,7 @@
 **Pupils:** Read the selected poem and participate in the guidebook tasks.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups discuss imagined sounds from a seashell, eggshell, hollow coconut and teacup.
+**Teacher:** Show the four objects as prompts and guide groups to describe the sounds they imagine.
 **Pupils:** Suggest new sounds for objects in the poem and share descriptive words.
 
 ## Reinforcement / PBD (10 minutes)
