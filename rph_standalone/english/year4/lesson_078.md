@@ -11,11 +11,11 @@
 **Pupil action:** Recall language for a healthy-food poster.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Groups choose foods and plan evidence for a health-value poster.
+**Teacher action:** Give groups a poster-planning checklist and prompt them to choose foods and supporting health facts.
 **Pupil action:** Choose foods and plan evidence for a poster.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils draft text and produce neat cursive handwriting with accurate spelling.
+**Teacher action:** Model a short factual poster caption and guide pupils to draft, proofread and neatly write their own captions.
 **Pupil action:** Write poster text neatly in cursive and check spelling.
 
 ## PBD / reinforcement (10 minutes)
