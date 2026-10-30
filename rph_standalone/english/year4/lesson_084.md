@@ -22,6 +22,8 @@
 **Teacher:** Model matching one question to a building description, then guide pupils to organise facts for a short paragraph.
 **Pupils:** Match questions to descriptions and plan a paragraph.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to state one building fact and explain which text provided the information.
 **Pupils:** Share one fact about a building.
