@@ -16,7 +16,7 @@
 **Pupils:** Listen to Track 17 and answer supported present continuous questions.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils make two activity cards and practise 'What is he doing?' / 'He's ...ing'.
+**Teacher:** Demonstrate an action card and the exchange 'What is he doing?' / 'He's ...ing', then guide pupils to prepare two cards and practise in pairs.
 **Pupils:** Make two cards and practise questions and answers about actions.
 
 ## Reinforcement / PBD (10 minutes)
