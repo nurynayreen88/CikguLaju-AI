@@ -11,7 +11,7 @@
 **Pupils:** Name sports equipment from the pictures.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read Activity 1 for its main idea.
+**Teacher:** Set a gist question for Activity 1 and ask pupils to find evidence in the text.
 **Pupils:** Read the text and identify the main idea.
 
 ## Activity 2 (20 minutes)
