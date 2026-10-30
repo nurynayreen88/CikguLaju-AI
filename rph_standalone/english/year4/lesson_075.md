@@ -19,11 +19,11 @@
 **Pupil action:** Practise natural restaurant dialogue and clarification.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pairs use sample menus for Activity 4 restaurant role-play.
+**Teacher action:** Assign waiter and customer roles, provide sample menus and monitor pair role-plays for clear ordering and clarification.
 **Pupil action:** Role-play ordering from a sample menu.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils discuss favourite meals when eating out.
+**Teacher action:** Invite pupils to share a favourite meal and model a polite response to a partner's choice.
 **Pupil action:** Describe a favourite restaurant meal.
 
 **PBD:** Observe comprehension of restaurant questions and appropriate clarification in menu-ordering role-play against SP 1.2.5 and 2.2.1.  
