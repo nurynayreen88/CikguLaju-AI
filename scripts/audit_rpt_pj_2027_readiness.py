@@ -56,6 +56,13 @@ def audit(root, *, final_audit_rows=(), release_rows=()):
 
 if __name__ == "__main__":
     data_root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
-    report = audit(data_root)
+    evidence_path = Path(__file__).resolve().parents[1] / "data/rpt_pj_2027/final_audit_evidence.json"
+    with evidence_path.open(encoding="utf-8") as handle:
+        evidence = json.load(handle)
+    report = audit(
+        data_root,
+        final_audit_rows=evidence["audit_final_rows"],
+        release_rows=evidence["release_rows"],
+    )
     print(json.dumps(report, ensure_ascii=False, indent=2))
     raise SystemExit(0 if report["ready_for_manual_telegram_test"] else 1)
