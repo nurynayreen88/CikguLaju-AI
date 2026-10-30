@@ -1,11 +1,32 @@
-# English Year 4 Lesson 048 — Language Awareness 3
+# English Year 4 — Lesson 048
 
-Topic: In the Past. Main and complementary standards: teacher selects appropriate Year 4 DSKP standards according to class needs. Sources: Get Smart Plus 4 SB p.36 Revision 3, TB pp.60–61; CD1 Track 51. Duration: 60 minutes.
+**Topic:** In the Past  
+**Main SP:** Teacher-selected Year 4 DSKP SP  
+**Complementary SP:** Teacher-selected Year 4 DSKP SP  
+**Duration:** 60 minutes  
+**References:** SB p.36 Revision 3; TB pp.60–61; CD1 Track 51; Year 4 SOW Lesson 48
 
-Set induction (10 min): Teacher follows TB Warm-up to review Unit 3; pupils recall past simple language.
-Activity 1 (15 min): Teacher follows Revision 3 Activity 1; pupils complete the guided practice.
-Activity 2 (20 min): Teacher uses Track 51 with Activity 2 and continues Activity 3; pupils complete the tasks.
-PBD (10 min): Teacher distributes SOW Unit 3 self-assessment; pupils rate their skills.
-Closure (5 min): Teacher collects checklists and pupils set one learning goal.
+## Set induction (10 minutes)
+**Teacher:** Follow TB Warm-up to review Unit 3.
+**Pupils:** Recall past simple forms and examples.
 
-Differentiation: Offer self-assessment language support. Status: DRAFT; direct source and Word/PDF QA pending.
+## Activity 1 (15 minutes)
+**Teacher:** Guide Revision 3 Activity 1.
+**Pupils:** Complete Activity 1 and check past simple answers.
+
+## Activity 2 (20 minutes)
+**Teacher:** Use Track 51 with Activity 2, then continue Activity 3.
+**Pupils:** Listen to Track 51 and complete Activities 2–3.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Provide the Unit 3 self-assessment checklist.
+**Pupils:** Rate strengths and gaps in Unit 3 skills.
+
+## Closure (5 minutes)
+**Teacher:** Collect checklists and identify a revision target.
+**Pupils:** Set one personal learning goal.
+
+**PBD:** Observe lesson tasks against the selected standards (Teacher-selected Year 4 DSKP SP; Teacher-selected Year 4 DSKP SP).  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
