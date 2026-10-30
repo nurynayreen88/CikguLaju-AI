@@ -11,7 +11,7 @@
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read and check board-game instructions.
+**Teacher:** Follow TB Vocabulary using CD2 Track 79 and the Grammar Box.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask for clarification and explain rules to peers.
+**Teacher:** Complete the optional silly advice task and clarify the rules.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
