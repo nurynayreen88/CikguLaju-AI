@@ -23,7 +23,7 @@
 **Pupils:** Respond with actions and check answers against the pictures.
 
 ## Closure (5 minutes)
-**Teacher:** Review one useful health expression.
+**Teacher:** Ask pupils to use one health expression from the listening in a suitable spoken sentence.
 **Pupils:** Say and demonstrate one health expression.
 
 **PBD:** Observe contextual inference and recognition of target sounds against SP 1.3.1 and 1.1.1.  
