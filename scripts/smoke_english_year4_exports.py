@@ -97,10 +97,21 @@ def make_pdf(lines: list[str], destination: Path) -> None:
     from reportlab.lib.pagesizes import A4
     from reportlab.platypus import SimpleDocTemplate, Paragraph
 
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    font_candidates = (
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        Path("/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf"),
+        Path("C:/Windows/Fonts/arial.ttf"),
+    )
+    font_path = next((p for p in font_candidates if p.is_file()), None)
+    if font_path is None:
+        raise RuntimeError("Unicode PDF font unavailable; refusing potentially broken preview")
+    pdfmetrics.registerFont(TTFont("Year4Unicode", str(font_path)))
     styles = getSampleStyleSheet()
-    styles.add(ParagraphStyle(name="Year4Body", parent=styles["Normal"], fontName="Helvetica", fontSize=8.5, leading=11, spaceAfter=3, alignment=TA_LEFT))
-    styles.add(ParagraphStyle(name="Year4Title", parent=styles["Heading1"], fontSize=12, leading=14, spaceAfter=4))
-    styles.add(ParagraphStyle(name="Year4Stage", parent=styles["Heading2"], fontSize=9.5, leading=11, spaceBefore=3, spaceAfter=2, textColor=colors.black))
+    styles.add(ParagraphStyle(name="Year4Body", parent=styles["Normal"], fontName="Year4Unicode", fontSize=8.5, leading=11, spaceAfter=3, alignment=TA_LEFT))
+    styles.add(ParagraphStyle(name="Year4Title", parent=styles["Heading1"], fontName="Year4Unicode", fontSize=12, leading=14, spaceAfter=4))
+    styles.add(ParagraphStyle(name="Year4Stage", parent=styles["Heading2"], fontName="Year4Unicode", fontSize=9.5, leading=11, spaceBefore=3, spaceAfter=2, textColor=colors.black))
     story = []
     for raw in lines:
         if not raw.strip():
