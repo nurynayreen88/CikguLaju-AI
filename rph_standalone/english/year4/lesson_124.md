@@ -11,7 +11,7 @@
 **Pupils:** Name animals from picture cards.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB vocabulary instructions.
+**Teacher:** Use the TB vocabulary prompts to elicit animal adjectives and check their meaning in a comparative sentence.
 **Pupils:** Practise target animal vocabulary.
 
 ## Activity 2 (20 minutes)
