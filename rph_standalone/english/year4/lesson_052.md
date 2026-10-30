@@ -26,7 +26,7 @@
 **Teacher:** Review handwriting and sentence accuracy.
 **Pupils:** Correct one sentence and check cursive formation.
 
-**PBD:** Observe lesson tasks against SP 4.2.4 and 4.1.2.  
+**PBD:** Assess going to sentences describing a costume, including spelling and cursive legibility (SP 4.2.4 and 4.1.2).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
