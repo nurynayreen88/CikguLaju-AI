@@ -15,11 +15,11 @@
 **Pupils:** Follow the model activity and identify materials.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs reuse containers to create an object following Activity 2.
+**Teacher:** Demonstrate how to assemble a simple object from clean reused containers, check materials are safe, then guide pairs through Activity 2.
 **Pupils:** Make an object from reused containers in pairs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Present the object using First and Then; peers check steps.
+**Teacher:** Invite each pair to present its object using 'First' and 'Then'. Ask classmates to check whether the steps are clear and in order.
 **Pupils:** Explain the steps using First and Then.
 
 ## Closure (5 minutes)
