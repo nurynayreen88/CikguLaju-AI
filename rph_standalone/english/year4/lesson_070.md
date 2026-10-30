@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Introduce health vocabulary using TB Warm-up and Track 77.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Recall health words from Track 77.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Teacher reads Health Quiz questions; pupils choose answers from a question-free worksheet.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Listen to Health Quiz questions and choose answers.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pairs discuss their selected quiz answers using how much/many/often.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Discuss answers using how much, how many and how often.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Follow TB Activity 3 with Track 79 and check listening details.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Listen to Track 79 and check details in Activity 3.
 
 ## Closure (5 minutes)
 **Teacher action:** Pupils share one healthy habit.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Share one healthy habit.
 
 **PBD:** Check pupil responses and products against 1.2.5 and 1.2.2; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
