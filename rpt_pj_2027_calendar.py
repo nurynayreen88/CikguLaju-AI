@@ -45,7 +45,7 @@ def read_calendar_csv(path: str | Path, *, strict: bool = True):
                 day = date.fromisoformat(raw_date)
             except ValueError as exc:
                 raise CalendarDataError(f"Invalid date: {raw_date}") from exc
-            if day.year != 2027 or not state:
+            if day.year != 2027 or state not in EXPECTED_STATES:
                 raise CalendarDataError(f"Unexpected calendar entry: {state}/{raw_date}")
             group = (row["Kumpulan"] or "").strip().upper()
             expected = "A" if state in GROUP_A else "B"
@@ -67,6 +67,8 @@ def read_calendar_csv(path: str | Path, *, strict: bool = True):
 def school_days(records, state: str, start: str, end: str):
     """Return explicitly flagged candidate PdP dates within inclusive bounds."""
     state = state.strip().upper()
+    if state not in EXPECTED_STATES:
+        raise CalendarDataError(f"Unknown state: {state}")
     if date.fromisoformat(start) > date.fromisoformat(end):
         raise ValueError("Start must not exceed end")
     found = []
