@@ -15,7 +15,7 @@
 **Pupil action:** Brainstorm category words before checking spelling.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Follow Project Activity 1 with Track 83 and locate reading details.
+**Teacher action:** Use Track 83 for Project Activity 1, model finding one supporting detail and ask pupils to locate another independently.
 **Pupil action:** Read Project Activity 1 and locate details with Track 83.
 
 ## PBD / reinforcement (10 minutes)
