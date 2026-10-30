@@ -32,14 +32,21 @@ def provision(archive, data_root):
         raise FileExistsError("Use a NEW data directory; existing directory not modified")
     # Existing installer creates the target folder only after all archive checks.
     count = install(archive, data_root)
-    actual = list_available(data_root)
-    if count != 48 or len(actual) != 48:
-        raise RuntimeError("Post-install RPT catalogue incomplete")
-    for state in STATES:
-        for year in YEARS:
-            path = resolve_rpt(data_root, negeri=state, tahun=year, authorized=True)
-            if not path.is_file():
-                raise RuntimeError("Missing RPT: " + state + "/" + str(year))
+    try:
+        actual = list_available(data_root)
+        if count != 48 or len(actual) != 48:
+            raise RuntimeError("Post-install RPT catalogue incomplete")
+        for state in STATES:
+            for year in YEARS:
+                path = resolve_rpt(data_root, negeri=state, tahun=year, authorized=True)
+                if not path.is_file():
+                    raise RuntimeError("Missing RPT: " + state + "/" + str(year))
+    except Exception:
+        # A failed post-install smoke test must not leave a partial release.
+        # This destination was required not to exist before installation.
+        import shutil
+        shutil.rmtree(data_root)
+        raise
     return {"installed": count, "states": len(STATES), "years": list(YEARS),
             "archive_sha256": digest, "data_root": str(data_root)}
 
