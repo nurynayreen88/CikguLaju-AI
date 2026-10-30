@@ -7,7 +7,9 @@ on:
       - 'scripts/install_rpt_pj_2027_assets.py'
       - 'tests/test_rpt_pj_2027_*.py'
       - 'tests/test_install_rpt_pj_2027_assets.py'
-      - 'scripts/audit_rpt_pj_2027_readiness.py rpt_pj_2027_release_policy.py'
+      - 'scripts/audit_rpt_pj_2027_readiness.py'
+      - 'rpt_pj_2027_release_policy.py'
+      - 'scripts/verify_rpt_pj_2027_v76.py'
       - 'data/rpt_pj_2027/**'
       - '.github/workflows/rpt-pj-2027-tests.yml'
   push:
@@ -31,11 +33,12 @@ jobs:
           ls -l data/rpt_pj_2027/
       - name: Compile RPT PJ 2027 modules
         run: |
-          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py scripts/install_rpt_pj_2027_assets.py scripts/audit_rpt_pj_2027_readiness.py
+          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py scripts/install_rpt_pj_2027_assets.py scripts/audit_rpt_pj_2027_readiness.py scripts/verify_rpt_pj_2027_v76.py rpt_pj_2027_release_policy.py
       - name: Run isolated RPT PJ tests
         shell: bash
         run: |
           set -o pipefail
+          export PYTHONPATH="$PWD"
           python -m unittest discover -s tests -p 'test_rpt_pj_2027_*.py' -v 2>&1 | tee rpt-pj-test-output.log
           python -m unittest discover -s tests -p 'test_install_rpt_pj_2027_assets.py' -v 2>&1 | tee -a rpt-pj-test-output.log
       - name: Save failure diagnostics
