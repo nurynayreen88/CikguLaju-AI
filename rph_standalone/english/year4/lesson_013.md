@@ -20,7 +20,7 @@
 **Pupils:** Listen to Track 15 and complete Activities 1–2, identifying the main idea.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs locate three supporting details and compare answers using text evidence.
+**Teacher:** Model finding one supporting detail in the email, then ask pairs to locate three details and justify answers using the text.
 **Pupils:** Find three personal details in the email and show the evidence.
 
 ## Closure (5 minutes)
