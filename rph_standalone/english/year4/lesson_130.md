@@ -26,7 +26,7 @@
 **Teacher:** Share one sports opinion.
 **Pupils:** Share one sports opinion.
 
-**PBD:** Assess the source-based task against 2.1.1 and 2.2.1; choose relevant criteria for Language Awareness.  
+**PBD:** Observe sports-preference survey questions, responses and follow-up phrases against SP 2.1.1 and 2.2.1.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
