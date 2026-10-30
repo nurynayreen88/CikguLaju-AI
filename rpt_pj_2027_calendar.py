@@ -56,8 +56,10 @@ def read_calendar_csv(path: str | Path, *, strict: bool = True):
                 raise CalendarDataError(f"Duplicate calendar date: {key}")
             records[key] = row
             states[state].add(raw_date)
+    full_year = {date(2027, 1, 1).toordinal() + i for i in range(365)}
     if strict and (set(states) != EXPECTED_STATES or len(records) != 5840 or
-                   any(len(days) != 365 for days in states.values())):
+                   any({date.fromisoformat(day).toordinal() for day in days} != full_year
+                       for days in states.values())):
         raise CalendarDataError("Incomplete 2027 calendar: expected 16 x 365 days")
     return records
 
