@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 2 and model a short opinion exchange.
+**Teacher:** Review the Grammar Box and extend the Activity 3 dialogue.
 **Pupils:** Follow the example and complete the first task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs ask about preferred sports and respond with reasons.
+**Teacher:** Conduct a class survey about sports pupils like and dislike.
 **Pupils:** Carry out the specified reading, writing, listening or speaking task.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Partners check understanding and report one preference.
+**Teacher:** Share survey findings and use a natural follow-up question.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
