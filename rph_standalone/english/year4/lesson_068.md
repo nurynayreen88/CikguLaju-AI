@@ -15,15 +15,15 @@
 **Pupil action:** Prepare picnic food lists and check spelling.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils write picnic shopping sentences with some and containers.
+**Teacher action:** Model two picnic shopping sentences using “some” and a suitable container phrase. Write one example together, then guide pupils to compose their own sentences.
 **Pupil action:** Write shopping sentences using some and containers.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pupils check spelling and commas in lists, then exchange feedback.
+**Teacher action:** Display a short checklist for food spelling, commas in lists and appropriate use of “some”. Model checking one sentence, then organise peer feedback.
 **Pupil action:** Check commas and spelling in a partner's list.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils correct a list sentence.
+**Teacher action:** Display one deliberately incorrect shopping-list sentence and invite a pupil to explain and correct its spelling or punctuation.
 **Pupil action:** Correct one picnic shopping sentence.
 
 **PBD:** Assess picnic shopping lists for correct food spelling, use of some and containers, and commas against SP 4.3.2 and 4.3.1.  
