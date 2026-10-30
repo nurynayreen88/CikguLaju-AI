@@ -23,7 +23,7 @@
 **Pupil action:** Share opinions with reasons and use feedback.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils share a lesson learned from the story.
+**Teacher action:** Invite pupils to share one lesson learned from the story and explain the event that supports it.
 **Pupil action:** State one lesson learned from the story.
 
 **PBD:** Observe story-based opinions with reasons and completion of the character task sheet (SP 5.3.1, 2.1.1).  
