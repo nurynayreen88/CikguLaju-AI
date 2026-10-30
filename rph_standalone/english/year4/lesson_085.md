@@ -23,7 +23,7 @@
 **Pupils:** Complete a double-bubble comparison of song and story.
 
 ## Closure (5 minutes)
-**Teacher:** Share a kind action.
+**Teacher:** Invite pupils to share one kind action and describe how it could help a friend.
 **Pupils:** Share one kind action.
 
 **PBD:** Observe comparisons between the friendship song and The King of Kites using the double-bubble map against SP 5.3.1 and 1.2.3.  
