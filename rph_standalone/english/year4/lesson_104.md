@@ -22,6 +22,8 @@
 **Teacher:** Use the relevant Activity 1 and 2 questions to check whether pupils can identify the main idea and point to supporting details. Follow the TB guidance for the recording and Grammar Box where applicable.
 **Pupils:** Complete Activities 1–2 with Track 28.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state one recycling fact and identify the paragraph where they found it.
 **Pupils:** State one fact about recycling.
