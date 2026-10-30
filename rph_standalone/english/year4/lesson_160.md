@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**References:** SOW Lesson 160; teacher selects project; Primary Year 4 SOW Lesson 160
+**References:** SOW Lesson 160; teacher selects project; optional example: resources/lesson_160_project_planning_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Explain the teacher-selected project theme, expected product and success criteria before group planning.
