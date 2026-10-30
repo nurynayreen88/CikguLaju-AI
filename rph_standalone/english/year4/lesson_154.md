@@ -23,7 +23,7 @@
 **Pupils:** Present work and support opinions with story details.
 
 ## Closure (5 minutes)
-**Teacher:** Gallery walk with stars and wishes.
+**Teacher:** Organise a gallery walk and prompt pupils to give one evidence-based strength and one constructive suggestion.
 **Pupils:** Give classmates stars and wishes during a gallery walk.
 
 **PBD:** Observe creative responses to The Jungle Book and evidence-based opinions in presentations (SP 5.2.1, 4.2.4).  
