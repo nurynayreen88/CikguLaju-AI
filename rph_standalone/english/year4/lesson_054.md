@@ -26,7 +26,7 @@
 **Teacher:** Review one true/false answer and one opinion.
 **Pupils:** Correct an answer and share a reason.
 
-**PBD:** Observe lesson tasks against SP 1.2.3 and 1.2.2.  
+**PBD:** Check true/false listening answers and supporting details from Track 56 (SP 1.2.3 and 1.2.2).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
