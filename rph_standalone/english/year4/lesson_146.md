@@ -8,7 +8,7 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review health vocabulary.
-**Pupils:** Recall health vocabulary.
+**Pupils:** Recall health words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Review the Grammar Box and Activity 3 dialogue.
@@ -16,7 +16,7 @@
 
 ## Activity 2 (20 minutes)
 **Teacher:** Reorder extended dialogue lines including Really? and Oh poor you!.
-**Pupils:** Sequence dialogue lines and rehearse.
+**Pupils:** Reorder and rehearse dialogue lines.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs create, practise and perform a new health dialogue.
