@@ -4,7 +4,7 @@
 **Main SP:** 2.1.1  
 **Complementary SP:** 1.2.5  
 **Duration:** 60 minutes  
-**References:** SOW Lesson 151; ICT / Creativity and Innovation; Primary Year 4 SOW Lesson 151
+**References:** SOW Lesson 151; resources/lesson_151_english_learning_survey_DRAFT.md; ICT / Creativity and Innovation
 
 ## Set induction (10 minutes)
 **Teacher:** Display examples of English games and stories and ask pupils to explain how each resource supports practice.
