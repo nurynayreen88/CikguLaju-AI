@@ -11,7 +11,7 @@
 **Pupils:** Recall Unit 9 vocabulary and grammar.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Complete revision Activities 1–3.
+**Teacher:** Model the first revision question, then guide pupils through Activities 1–3 and check their independent responses.
 **Pupils:** Complete Revision 9 Activities 1–3.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Practise language targets identified through assessment.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete self-assessment and identify gaps.
+**Teacher:** Guide pupils through self-assessment and record language areas requiring further practice.
 **Pupils:** Complete self-assessment and identify a weak area.
 
 ## Closure (5 minutes)
