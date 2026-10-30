@@ -15,11 +15,11 @@
 **Pupils:** Compare -est and most in sports examples.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen to Track 60 and identify sports mentioned.
+**Teacher:** Play Track 60 and ask pupils to identify the sports mentioned, then replay a relevant segment to check their answers.
 **Pupils:** Listen to Track 60 and identify sports.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow Activities 3–4 and identify basketball as the suggested sport.
+**Teacher:** Guide pupils through Activities 3–4, ask them to identify the suggested sport and point to the listening clue supporting their answer.
 **Pupils:** Complete Activities 3–4 and report the suggested sport.
 
 ## Closure (5 minutes)
