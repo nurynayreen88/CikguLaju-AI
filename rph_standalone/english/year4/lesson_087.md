@@ -23,7 +23,7 @@
 **Pupils:** Write and respond to trip invitations.
 
 ## Closure (5 minutes)
-**Teacher:** Reflect on effective invitations.
+**Teacher:** Ask pupils to identify one effective invitation phrase and one improvement for their next role-play.
 **Pupils:** Describe what makes an invitation effective.
 
 **PBD:** Observe partner trip dialogues and assess written invitations for clear time and place details against SP 2.2.1 and 4.2.2.  
