@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Sort foods into healthy and less healthy categories.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Sort foods by health value.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Follow TB Activity 1 with CD3 Track 38.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Read and listen to CLIL Activity 1 with Track 38.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pupils locate words such as strong and half in the text and match definitions.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Find words such as strong and half and match meanings.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Complete TB Activity 2 and discuss information for the next poster project.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Complete Activity 2 and collect facts for a poster.
 
 ## Closure (5 minutes)
 **Teacher action:** Use TB Before leaving review.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Recall a fact about healthy food.
 
 **PBD:** Check pupil responses and products against 3.2.2 and 3.2.3; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
