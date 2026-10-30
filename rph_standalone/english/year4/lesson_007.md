@@ -26,7 +26,7 @@
 **Pupils:** Demonstrate a short exchange with a description and one clarification or acknowledgement phrase.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils demonstrate a brief exchange and identify one helpful clarification phrase.
+**Teacher:** Invite a short model exchange and ask the class to identify the clarification phrase used.
 **Pupils:** Perform one final two-turn dialogue.
 
 ## Differentiation and assessment
