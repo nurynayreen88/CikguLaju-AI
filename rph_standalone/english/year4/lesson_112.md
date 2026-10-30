@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**References:** Unit 7 revision; Teacher Book and SOW self-assessment; Primary Year 4 SK SOW Lesson 112
+**References:** Unit 7 revision; Teacher Book and SOW self-assessment; optional support: resources/lesson_112_unit7_self_assessment_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Use the TB warm-up to elicit two Unit 7 language targets before pupils begin revision.
