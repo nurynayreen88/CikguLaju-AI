@@ -4,7 +4,7 @@
 **Main SP:** Reading 3.2.2  
 **Complementary SP:** Reading 3.2.4  
 **Duration:** 60 minutes  
-**References:** SB p.129 Activities 1–2; TB p.193; CD1 Tracks 35–36; monolingual dictionaries
+**References:** SB p.129 Activities 1–2; TB p.193; Warm up Track 35; Activity 1 Track 36 (KPM SOW; CD1 designation requires independent TB/audio verification); monolingual dictionaries
 
 ## Set induction (10 minutes)
 **Teacher:** Compare pictures of Malaysian schools with the pupils' own school.
