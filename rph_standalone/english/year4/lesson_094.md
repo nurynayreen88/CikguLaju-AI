@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB Warm-up and Vocabulary.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall public transport vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Study transport advertisements, prices and departure times.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read fares and departure times in advertisements.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs choose a public transport option for a tourist attraction.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Choose a transport option for a tourist attraction.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Write descriptions and reasons for their choice.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Write a description and reasons for the choice.
 
 ## Closure (5 minutes)
 **Teacher:** Gallery walk and peer feedback.
-**Pupils:** Share one result or reflection.
+**Pupils:** Give peer feedback during a gallery walk.
 
 **PBD:** Assess task responses against 4.2.1 and 4.2.4; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
