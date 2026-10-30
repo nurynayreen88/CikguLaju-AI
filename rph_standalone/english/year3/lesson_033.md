@@ -13,7 +13,7 @@ Teacher mimes run, jump and dance. Pupils identify actions.
 Teacher displays action flashcards around the room. Pupils move to a card and say what they are doing using present continuous.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides Student's Book p.25 Activity 1 and the action song. Pupils listen, sing and mime, then identify actions they heard.
+Teacher guides Student's Book p.25 Activity 1 and the action song. Pupils listen, sing and mime, then identify actions they heard. Pupils complete Workbook p.18, Activity 1, by choosing 'am', 'are' or 'is' for the pictured actions.
 
 ## PBD (10 minutes)
 Teacher gives two oral prompts. Pupils identify the matching details and explain one unfamiliar word using context clues.
