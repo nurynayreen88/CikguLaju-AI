@@ -26,7 +26,7 @@
 **Teacher:** Recall one detail from the listening.
 **Pupils:** Recall one listening detail.
 
-**PBD:** Assess the specified task against 1.2.2 and 2.1.1; for teacher-selected standards choose criteria before class.  
+**PBD:** Record accuracy of matching people to health problems and spoken advice based on the recording (SP 1.2.2, 2.1.1).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
