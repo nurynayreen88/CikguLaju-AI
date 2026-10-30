@@ -11,11 +11,11 @@
 **Pupils:** Recall trip and location words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB Activity 4 listening task.
+**Teacher:** Preview the questions in TB Activity 4, play the listening material and ask pupils to note key location details.
 **Pupils:** Prepare for the Activity 4 listening task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen for details and check answers in pairs.
+**Teacher:** Replay the relevant sections, organise pair checking and ask pupils to explain which words supported their answers.
 **Pupils:** Listen for details and compare answers in pairs.
 
 ## Reinforcement / PBD (10 minutes)
