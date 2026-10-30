@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Review challenging spellings from the previous lesson.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Correct challenging food spellings.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Introduce a picnic and follow TB Activity 5, checking spelling of food lists.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Prepare picnic food lists and check spelling.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pupils write picnic shopping sentences with some and containers.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Write shopping sentences using some and containers.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Pupils check spelling and commas in lists, then exchange feedback.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Check commas and spelling in a partner's list.
 
 ## Closure (5 minutes)
 **Teacher action:** Pupils correct a list sentence.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Correct one picnic shopping sentence.
 
 **PBD:** Check pupil responses and products against 4.3.2 and 4.3.1; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
