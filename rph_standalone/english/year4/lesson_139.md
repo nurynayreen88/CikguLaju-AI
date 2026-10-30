@@ -19,7 +19,7 @@
 **Pupils:** Listen to Track 60 and identify sports.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide pupils through Activities 3–4, ask them to identify the suggested sport and point to the listening clue supporting their answer.
+**Teacher:** Guide Activities 3–4 and ask pupils to identify basketball as the sport the boys decide is best, then cite a listening clue supporting that answer.
 **Pupils:** Complete Activities 3–4 and report the suggested sport.
 
 ## Closure (5 minutes)
