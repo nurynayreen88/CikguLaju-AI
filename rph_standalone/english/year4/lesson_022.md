@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Demonstrate sequencing the first event, then distribute sentence strips for pupils to order and check in pairs.
-**Pupils:** Order sentence strips and compare the sequence.
+**Pupils:** Order sentence strips and compare the sequence. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite groups to recount the story in order and explain one correction to their sequence.
