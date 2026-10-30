@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**References:** SB Revision 9; TB revision; self-assessment; Primary Year 4 SOW Lesson 144
+**References:** SB Revision 9; TB revision; self-assessment; optional worksheet: resources/lesson_144_unit9_self_assessment_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Review Unit 9 language with TB warm-up.
