@@ -11,7 +11,7 @@
 **Pupil action:** Identify the setting and prepare the mini corners.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Follow CCL p.41 and distribute Worksheets 7a and 7b.
+**Teacher action:** Introduce the CCL p.41 task, distribute Worksheets 7a and 7b and check pupils' understanding of the sequence.
 **Pupil action:** Complete Worksheets 7a–7b using the guide.
 
 ## Activity 2 (20 minutes)
