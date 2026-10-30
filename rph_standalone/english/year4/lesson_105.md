@@ -15,11 +15,11 @@
 **Pupils:** Play the spelling game and practise Grammar Box examples.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 3; write true and false sentences about recycling habits.
+**Teacher:** Model one true and one false sentence about recycling, then guide pupils through Activity 3 and ask them to write their own sentences.
 **Pupils:** Write true and false sentences about recycling habits.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Partners read sentences and identify which are true; optionally use Track 29.
+**Teacher:** Organise partner exchanges in which pupils identify true sentences, explain their choices and correct one spelling or grammar error. Use Track 29 if required by the source activity.
 **Pupils:** Exchange sentences and identify which are true.
 
 ## Closure (5 minutes)
