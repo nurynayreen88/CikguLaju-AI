@@ -26,7 +26,7 @@
 **Teacher:** Share a favourite moment.
 **Pupils:** Describe a favourite story moment.
 
-**PBD:** Assess task responses against 3.3.1 and 2.3.1; teacher selects specific criteria for Language Awareness.  
+**PBD:** Observe independent reading and accurate oral retelling of the transport story against SP 3.3.1 and 2.3.1.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
