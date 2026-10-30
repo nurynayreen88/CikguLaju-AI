@@ -23,7 +23,7 @@
 **Pupils:** Mime and describe experiences of helping others.
 
 ## Closure (5 minutes)
-**Teacher:** Review tense and object pronouns.
+**Teacher:** Ask pupils to contrast one present-continuous sentence with a past-action sentence and check object-pronoun use.
 **Pupils:** Review a tense form and an object pronoun.
 
 **PBD:** Observe spoken present-continuous descriptions of helping actions and appropriate personal responses against SP 2.1.5 and 2.1.2.  
