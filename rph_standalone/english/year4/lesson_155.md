@@ -7,7 +7,7 @@
 **References:** SB p.107 Activities 3–4; TB p.157; Primary Year 4 SOW Lesson 155
 
 ## Set induction (10 minutes)
-**Teacher:** Review health vocabulary.
+**Teacher:** Use two symptom cards to review health vocabulary before introducing home-safety situations.
 **Pupils:** Identify home safety hazards.
 
 ## Activity 1 (15 minutes)
