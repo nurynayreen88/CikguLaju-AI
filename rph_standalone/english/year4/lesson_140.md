@@ -7,7 +7,7 @@
 **References:** SB p.98 Activities 1–2; TB pp.144–145; Year 4 SOW Lesson 140
 
 ## Set induction (10 minutes)
-**Teacher:** Follow TB Revision activity.
+**Teacher:** Introduce the TB revision goals and model one interview response before pupils begin.
 **Pupils:** Review sports vocabulary.
 
 ## Activity 1 (15 minutes)
