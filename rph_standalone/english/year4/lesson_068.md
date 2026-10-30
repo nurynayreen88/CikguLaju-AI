@@ -11,7 +11,7 @@
 **Pupil action:** Correct challenging food spellings.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Introduce a picnic and follow TB Activity 5, checking spelling of food lists.
+**Teacher action:** Introduce the picnic context, model a food-list entry and guide TB Activity 5 while checking spelling.
 **Pupil action:** Prepare picnic food lists and check spelling.
 
 ## Activity 2 (20 minutes)
