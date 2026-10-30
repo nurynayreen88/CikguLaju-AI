@@ -11,7 +11,7 @@
 **Pupils:** Mime actions heard in Track 21.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Review vocabulary and practise cursive writing.
+**Teacher:** Review helping-out verbs and model legible cursive joins before pupils write two action phrases.
 **Pupils:** Practise the vocabulary and cursive writing.
 
 ## Activity 2 (20 minutes)
