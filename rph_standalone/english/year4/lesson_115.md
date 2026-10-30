@@ -26,7 +26,7 @@
 **Teacher:** Share one inferred word meaning.
 **Pupils:** Explain one newly learned word.
 
-**PBD:** Observe the named learning task against 3.2.4 and 2.1.5; for teacher-selected standards, establish criteria before class.  
+**PBD:** Check dictionary use and comparisons of dinosaurs with other animals against SP 3.2.4 and 2.1.5.
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
