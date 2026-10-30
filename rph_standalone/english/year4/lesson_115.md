@@ -11,11 +11,11 @@
 **Pupils:** Name dinosaurs and comparative adjectives.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the text and highlight unfamiliar comparative words.
+**Teacher:** Ask pupils to read the dinosaur text, model identifying one unfamiliar comparative word and guide them to mark others.
 **Pupils:** Read the text and mark unfamiliar comparisons.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Use dictionaries and context clues to infer word meanings.
+**Teacher:** Demonstrate using a nearby sentence and a dictionary to infer one word meaning, then let pupils check their own inferences.
 **Pupils:** Use dictionaries and context clues to find meanings.
 
 ## PBD / reinforcement (10 minutes)
