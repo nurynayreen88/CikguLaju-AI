@@ -23,7 +23,7 @@
 **Pupil action:** Write sentences with enough and but about yesterday's habits.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils reflect on one improved sentence.
+**Teacher action:** Ask pupils to compare their draft and revised sentences and explain one improvement.
 **Pupil action:** Improve one sentence after feedback.
 
 **PBD:** Assess health-table responses and linked sentences using or, enough and but against SP 4.2.5 and 4.2.3.  
