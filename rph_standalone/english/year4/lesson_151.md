@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce English learning resources including games and stories.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Name useful English learning resources.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model advice using should and shouldn't to improve English.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Suggest good learning habits using should and shouldn't.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs ask for advice on learning English in school and at home.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Ask and answer questions about learning English at home and school.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils explain why particular learning habits are helpful.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Explain reasons for chosen learning habits.
 
 ## Closure (5 minutes)
 **Teacher:** Review one speaking strategy.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Share one strategy to practise.
 
 **PBD:** Assess the specified task against 2.1.1 and 1.2.5; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
