@@ -15,7 +15,7 @@
 **Pupils:** Study a model invitation and identify its purpose.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups plan a competition, write invitations, and record results.
+**Teacher:** Guide groups to choose a mini competition, agree on key invitation details and draft invitations using the model.
 **Pupils:** Plan a mini competition and write invitations.
 
 ## Reinforcement / PBD (10 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Record results and write a short connected report.
 
 ## Closure (5 minutes)
-**Teacher:** Share one improved sentence.
+**Teacher:** Invite pupils to share one revised report sentence and explain how a conjunction connects its ideas.
 **Pupils:** Share an improved report sentence.
 
 **PBD:** Assess written invitations and the competition-results report for clarity and conjunctions against SP 4.2.2 and 4.2.5.  
