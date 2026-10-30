@@ -1,11 +1,32 @@
-# English Year 4 Lesson 143 — Language Arts 27
+# English Year 4 — Lesson 143: Language Arts 27
 
-Topic: The Jungle Book. Main SP 5.2.1; complementary SP 4.1.2. Duration: 60 minutes. Reference: Graphic Novel Teaching Guidebook p.70.
+**Topic:** The Jungle Book  
+**Main SP:** 5.2.1  
+**Complementary SP:** 4.1.2  
+**Duration:** 60 minutes  
+**References:** Graphic Novel Teaching Guidebook p.70, steps 1–4; Year 4 SOW Lesson 143
 
-Set induction (10 minutes): Show Akela's picture and review the character's role.
-Activity 1 (15 minutes): Discuss how the character is remembered.
-Activity 2 (20 minutes): Follow Teaching Guidebook p.70 steps 1–4.
-PBD (10 minutes): Discuss Mowgli's feelings and explain responses.
-Closure (5 minutes): Write the lesson poem in cursive.
+## Set induction (10 minutes)
+**Teacher:** Show Akela's picture and review the character's role.
+**Pupils:** Identify Akela and recall the character's role.
 
-Differentiation: Picture cues and sentence starters. Status: DRAFT, QA pending.
+## Activity 1 (15 minutes)
+**Teacher:** Ask how Akela is remembered in the story and prompt pupils to justify their views.
+**Pupils:** Discuss how the character is remembered and give reasons.
+
+## Activity 2 (20 minutes)
+**Teacher:** Facilitate Teaching Guidebook p.70, steps 1–4.
+**Pupils:** Complete the guidebook tasks and respond to the character's story.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Discuss Mowgli's feelings and ask pupils to explain their responses.
+**Pupils:** Describe Mowgli's feelings and support opinions with story details.
+
+## Closure (5 minutes)
+**Teacher:** Model legible cursive and ask pupils to write the lesson poem.
+**Pupils:** Copy the lesson poem in cursive and check letter formation.
+
+**PBD:** Observe supported explanations of character feelings and legible cursive writing (SP 5.2.1, 4.1.2).  
+**Differentiation:** Offer picture cues, sentence starters and cursive letter models.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — guidebook content and Word/PDF QA pending.
