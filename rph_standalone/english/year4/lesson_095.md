@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Examine notes of encouragement.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Read examples of encouraging notes.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Discuss when and why people send them.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Discuss when encouragement is helpful.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Guide p.60 and complete Worksheets 10a and 10b.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Complete Worksheets 10a and 10b.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check answers and draft an encouraging message.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Check answers and draft an encouraging message.
 
 ## Closure (5 minutes)
 **Teacher:** Share feedback on wording.
-**Pupils:** Share one result or reflection.
+**Pupils:** Improve the wording using feedback.
 
 **PBD:** Assess task responses against 5.3.1 and 4.3.3; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
