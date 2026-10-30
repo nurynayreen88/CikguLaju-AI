@@ -26,7 +26,7 @@
 **Teacher action:** Pupils write three newly learned words on exit cards.
 **Pupil action:** Write three newly learned words on an exit card.
 
-**PBD:** Check pupil responses and products against 3.2.4 and 3.2.2; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Check accurate dictionary definitions and text-based answers about food vocabulary against SP 3.2.4 and 3.2.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 67, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
