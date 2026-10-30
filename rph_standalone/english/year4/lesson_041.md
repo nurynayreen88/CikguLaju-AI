@@ -19,11 +19,11 @@
 **Pupils:** Listen to Track 43 with books closed, then check the text.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pairs write full-sentence answers and statements about the characters.
+**Teacher:** Model a complete past-simple answer, then organise pairs to write and check statements about the characters.
 **Pupils:** Write full-sentence answers about the characters.
 
 ## Closure (5 minutes)
-**Teacher:** Improve one full-sentence answer.
+**Teacher:** Invite pupils to revise one answer and explain the change.
 **Pupils:** Improve one complete answer.
 
 **PBD:** Check past-simple questions and complete written answers using Track 43 (SP 4.2.4 and 1.2.3).  
