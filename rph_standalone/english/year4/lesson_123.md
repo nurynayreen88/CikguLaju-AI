@@ -11,7 +11,7 @@
 **Pupils:** Recall phonics words and sounds.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Complete Phonics 9 Activity 1 and optional practice.
+**Teacher:** Model the target sound contrast, play or read the Phonics 9 Activity 1 items and ask pupils to identify the sounds before checking answers.
 **Pupils:** Listen and complete Phonics 9 Activity 1.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Find unfamiliar words quickly using a dictionary.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow Phonics 9 Activity 2 and check sound discrimination.
+**Teacher:** Guide pupils through Phonics 9 Activity 2, ask them to explain which sounds they heard and note any recurring confusion.
 **Pupils:** Complete Phonics 9 Activity 2 and distinguish sounds.
 
 ## Closure (5 minutes)
