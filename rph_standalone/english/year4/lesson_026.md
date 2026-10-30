@@ -15,11 +15,11 @@
 **Pupils:** Read Clap your hands and identify command verbs.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow CCL Activity 2; pupils prepare a creative poem performance.
+**Teacher:** Explain CCL Activity 2, demonstrate expressive delivery of one line and guide pupils to rehearse a creative poem performance.
 **Pupils:** Prepare a creative performance of the poem.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils perform and use the peer checklist to provide feedback.
+**Teacher:** Organise group performances and show pupils how to use the peer checklist for specific feedback.
 **Pupils:** Perform and use a peer checklist for feedback.
 
 ## Closure (5 minutes)
