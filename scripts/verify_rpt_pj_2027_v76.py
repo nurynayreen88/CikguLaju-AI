@@ -24,7 +24,14 @@ def verify(archive):
     except (BadZipFile, OSError, ValueError) as exc:
         return ["Invalid RPT archive: " + str(exc)]
     with bundle:
-        all_names = [i.filename for i in bundle.infolist() if not i.is_dir()]
+        members = bundle.infolist()
+        all_names = [i.filename for i in members if not i.is_dir()]
+        if len(members) != len(set(i.filename for i in members)):
+            return ["Duplicate archive entries, including directories"]
+        if any(i.flag_bits & 1 for i in members):
+            return ["Encrypted archive members are not supported"]
+        if any(i.file_size > 15_000_000 for i in members if not i.is_dir()):
+            return ["Oversized RPT archive member"]
         names = [name for name in all_names if name != "README.txt"]
         if len(all_names) != len(set(all_names)) or set(all_names) - {"README.txt"} != set(expected):
             return ["Unexpected or duplicate archive members"]
