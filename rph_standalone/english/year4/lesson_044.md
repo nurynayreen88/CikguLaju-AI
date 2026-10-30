@@ -11,7 +11,7 @@
 **Pupils:** Recall historical figures and past-tense verbs.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Groups order notes into a historical story.
+**Teacher:** Give groups historical-event notes, model identifying the earliest event and guide pupils to sequence the remaining notes.
 **Pupils:** Arrange jumbled notes into a historical story.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Rehearse roles using notes instead of memorised scripts.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Groups perform short scenes and give positive peer feedback.
+**Teacher:** Invite groups to perform their short scenes and organise specific peer feedback on narration and sequence.
 **Pupils:** Perform short scenes and give positive feedback.
 
 ## Closure (5 minutes)
