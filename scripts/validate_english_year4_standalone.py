@@ -52,6 +52,12 @@ def check() -> list[str]:
         if lesson.is_file():
             if not re.search(r"\*\*Duration:\*\*\s*60 minutes", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: expected 60-minute duration")
+            # Lesson-stage timings must add up to the stated 60 minutes.
+            stages = re.findall(r"^##\s+.+?\((\d+)\s+minutes?\)\s*$", text, re.MULTILINE | re.IGNORECASE)
+            if not stages:
+                errors.append(f"Lesson {number:03d}: no timed lesson stages")
+            elif sum(map(int, stages)) != 60:
+                errors.append(f"Lesson {number:03d}: stage timings total {sum(map(int, stages))}, expected 60")
             if not re.search(r"\bPBD\b|\bassessment\b", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: PBD/assessment section missing")
             if not re.search(r"\*\*Teacher(?: action)?:\*\*", text, re.IGNORECASE):
