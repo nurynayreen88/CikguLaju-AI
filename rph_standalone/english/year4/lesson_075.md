@@ -11,7 +11,7 @@
 **Pupil action:** Identify menu, waiter, customer and order vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Follow TB Activity 3, reading questions aloud and practising answers.
+**Teacher action:** Read the TB Activity 3 questions aloud, model a polite answer and guide pupils through paired practice.
 **Pupil action:** Listen to and answer restaurant questions.
 
 ## Activity 2 (20 minutes)
