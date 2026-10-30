@@ -13,7 +13,7 @@ Teacher draws an action picture one line at a time. Pupils guess what the person
 Pupils describe the pictures on Student's Book p.27 with partners. Teacher reviews character names and vocabulary.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides Activity 3 using Teacher's Book p.49. Pupils listen for details and respond; then practise miming and asking 'What are you doing?' in pairs.
+Teacher guides Activity 3 using Teacher's Book p.49. Pupils listen for details and respond; then practise miming and asking 'What are you doing?' in pairs. Pupils complete Workbook p.19, Activity 2, by writing answers about what the pictured people are doing.
 
 ## PBD (10 minutes)
 Pupils identify two details from the recording and explain one word using a contextual clue.
