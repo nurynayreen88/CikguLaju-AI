@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review the TB optional activity.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Recall language from the previous activity.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Teach vocabulary with Track 31 and review Grammar Box.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen to Track 31 and practise the target vocabulary.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 1, then groups write board-game questions.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Write board-game questions using the model.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Groups check capitals and punctuation and play their games.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Check capitals and punctuation before playing the game.
 
 ## Closure (5 minutes)
 **Teacher:** Reflect on one language improvement.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share one improvement in writing.
 
 **PBD:** Observe the named learning task against 4.3.1 and 3.2.2; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
