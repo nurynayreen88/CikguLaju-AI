@@ -70,4 +70,4 @@ def send_rpt_docx(bot, chat_id, root, *, negeri, tahun, authorized):
     path = resolve_rpt(root, negeri=negeri, tahun=tahun,
                        authorized=authorized)
     with path.open("rb") as handle:
-        return bot.send_document(chat_id, handle, visible_file_name=path.name)
+        return bot.send_document(chat_id, handle)
