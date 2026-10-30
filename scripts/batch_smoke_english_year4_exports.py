@@ -16,10 +16,15 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    # Reject stale outputs: every successful run must create its own full set.
+    if list(args.output_dir.glob('year4_*_SMOKE.docx')) or list(args.output_dir.glob('year4_*_SMOKE.pdf')):
+        raise RuntimeError('Output directory already contains draft exports; choose a clean directory')
     for lesson in range(1, 161):
         lines = classroom_lines(source_lines(lesson))
         make_docx(lines, args.output_dir / f"year4_{lesson:03d}_SMOKE.docx")
         make_pdf(lines, args.output_dir / f"year4_{lesson:03d}_SMOKE.pdf")
+        if lesson % 20 == 0:
+            print(f"PROGRESS: {lesson}/160 lesson pairs generated", flush=True)
     docx_files = list(args.output_dir.glob("year4_*_SMOKE.docx"))
     pdf_files = list(args.output_dir.glob("year4_*_SMOKE.pdf"))
     if len(docx_files) != 160 or len(pdf_files) != 160:
