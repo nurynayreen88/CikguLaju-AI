@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review comparative adjectives with animal pictures.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Compare animal pictures using familiar adjectives.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Predict comparisons among Malaysian native animals.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Predict comparisons between Malaysian animals.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Listen to a teacher-read text about endangered animals and infer key words.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Listen to the teacher-read text and infer key words.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pairs discuss why wildlife should be protected and justify ideas.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Discuss wildlife protection and justify their views.
 
 ## Closure (5 minutes)
 **Teacher:** Share one conservation action.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Suggest one conservation action.
 
 **PBD:** Observe the named learning task against 1.3.1 and 2.1.4; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
