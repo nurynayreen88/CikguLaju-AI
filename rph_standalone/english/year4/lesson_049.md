@@ -23,7 +23,7 @@
 **Pupils:** Infer meanings of celebrate, celebration, fun and special.
 
 ## Closure (5 minutes)
-**Teacher:** Review the song and ordinal numbers.
+**Teacher:** Ask pupils to identify an ordinal number heard in the song and use it in a short sentence.
 **Pupils:** Chant a line and recall an ordinal number.
 
 **PBD:** Check identification of the celebrations song's main idea and inference of key words (SP 1.2.1 and 3.2.3).  
