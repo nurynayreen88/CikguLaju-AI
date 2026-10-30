@@ -23,7 +23,7 @@
 **Pupils:** Review their answers and complete a self-assessment checklist.
 
 ## Closure (5 minutes)
-**Teacher:** Collect checklists and identify the next review priority.
+**Teacher:** Compare Unit 4 checklists with pupil responses and identify one priority for the next revision session.
 **Pupils:** Set one personal revision goal.
 
 **PBD:** Select relevant DSKP standards and success criteria before delivery; collect revision and checklist evidence.  
