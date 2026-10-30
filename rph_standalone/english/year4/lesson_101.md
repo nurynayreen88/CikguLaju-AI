@@ -1,16 +1,32 @@
 # English Year 4 — Lesson 101: Language Arts 19
 
-Topic: Graphic Novel – The Jungle Book
-Main SP: 5.2.1
-Complementary SP: 2.1.5
-Duration: 60 minutes
-Source: Year 4 Scheme of Work, Graphic Novel Teaching Guidebook p.27
+**Topic:** The Jungle Book  
+**Main SP:** 5.2.1  
+**Complementary SP:** 2.1.5  
+**Duration:** 60 minutes  
+**References:** Graphic Novel Teaching Guidebook p.27; Year 4 SOW Lesson 101
 
-Set induction (10 minutes): Discuss the novel cover, title, author and setting.
-Activity 1 (15 minutes): Follow guidebook p.27 steps 1–3 to explore the cover.
-Activity 2 (20 minutes): Discuss the animals' characteristics and predict their relationships.
-PBD (10 minutes): Draw a favourite jungle animal and explain its characteristics.
-Closure (5 minutes): Share feelings about the animal.
+## Set induction (10 minutes)
+**Teacher:** Show the graphic novel cover and ask about the title, author and setting.
+**Pupils:** Identify visible details and suggest where the story takes place.
 
-Differentiation: Picture cues and sentence starters.
-Status: DRAFT; source and Word/PDF QA pending.
+## Activity 1 (15 minutes)
+**Teacher:** Follow guidebook p.27 steps 1–3 to explore the cover.
+**Pupils:** Examine the cover and describe the animals shown.
+
+## Activity 2 (20 minutes)
+**Teacher:** Ask pupils to discuss animal characteristics and predict relationships.
+**Pupils:** Compare the animals' characteristics and justify predictions in pairs.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Invite pupils to draw a favourite jungle animal and explain its characteristics.
+**Pupils:** Draw an animal and explain their choice using descriptive language.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to share their feelings about the chosen animal.
+**Pupils:** State one feeling and give a simple reason.
+
+**PBD:** Observe responses and descriptions against SP 5.2.1 and 2.1.5.  
+**Differentiation:** Provide picture cues, sentence starters and paired support.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
