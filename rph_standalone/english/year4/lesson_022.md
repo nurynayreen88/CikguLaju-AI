@@ -23,7 +23,7 @@
 **Pupils:** Order sentence strips and compare the sequence.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils recount the story sequence and correct errors.
+**Teacher:** Invite groups to recount the story in order and explain one correction to their sequence.
 **Pupils:** Retell the story in order and correct errors.
 
 **PBD:** Check task responses against Listening 1.2.5 and Listening 1.2.3, recording individual progress.  
