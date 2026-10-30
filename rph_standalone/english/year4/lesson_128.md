@@ -22,6 +22,8 @@
 **Teacher:** Guide pupils through the Unit 8 self-assessment and record the skills they identify as difficult.
 **Pupils:** Complete self-assessment and identify difficulties.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Guide pupils to choose a specific Unit 8 revision goal.
 **Pupils:** State one revision target.
