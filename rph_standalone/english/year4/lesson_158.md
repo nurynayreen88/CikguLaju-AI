@@ -4,7 +4,7 @@
 **Main SP:** 4.3.3  
 **Complementary SP:** 2.2.2  
 **Duration:** 60 minutes  
-**References:** Unit 10 safety poster; TB Activities 1–2; Primary Year 4 SOW Lesson 158
+**References:** SB p.109 Activities 1–2; TB pp.160–161; Unit 10 safety poster; Primary Year 4 SOW Lesson 158
 
 ## Set induction (10 minutes)
 **Teacher:** Use the TB revision prompts to recall home-safety rules and check pupils' use of imperative language.
@@ -22,7 +22,7 @@
 **Teacher:** Compare groups' original safety ideas and check punctuation.
 **Pupils:** Identify original safety ideas and revise punctuation.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils review their home-safety poster instructions against the lesson success criteria; no specific Workbook page is prescribed in the SOW.
 
 ## Closure (5 minutes)
 **Teacher:** Guide end-of-year self-assessment and help pupils choose one language skill to practise next.
