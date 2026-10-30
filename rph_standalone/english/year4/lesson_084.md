@@ -4,7 +4,7 @@
 **Main SP:** 4.3.3  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.131 CLIL 3; TB p.195; CD3 Track 39
+**References:** SB p.131 CLIL 3; TB p.195; Vocabulary CD3 Track 39 (KPM SOW; Activity 1 reading without audio)
 
 ## Set induction (10 minutes)
 **Teacher:** Show famous buildings and review vocabulary.
