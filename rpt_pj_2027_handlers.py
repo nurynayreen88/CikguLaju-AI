@@ -27,3 +27,5 @@ def handle_document(bot, chat_id, root, callback_data, *, user_id, access_resolv
         return bot.send_message(chat_id, "RPT 2027 memerlukan Rakan Pembangun atau langganan aktif.")
     except RPTDocumentUnavailable:
         return bot.send_message(chat_id, "Fail RPT belum tersedia. Sila cuba kemudian.")
+    except ValueError:
+        return bot.send_message(chat_id, "Pilihan RPT tidak sah. Sila pilih semula daripada menu.")
