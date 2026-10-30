@@ -12,19 +12,19 @@
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Student's Book Activity 3 and Activity 4 with Teacher's Book page 127.
-**Pupils:** Complete book activities with a partner.
+**Pupils:** Complete textbook activities in pairs.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs invent and draw a new dinosaur, then write a description of it.
-**Pupils:** Draw an original dinosaur and write its features.
+**Pupils:** Draw and describe an original dinosaur.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils exchange drawings and evaluate descriptions positively.
-**Pupils:** Review a partner's description.
+**Pupils:** Review a partner's dinosaur description.
 
 ## Closure (5 minutes)
 **Teacher:** Present the invented dinosaur and explain its features.
-**Pupils:** Present the dinosaur to classmates.
+**Pupils:** Present the dinosaur.
 
 **PBD:** Assess the source-based task against 4.2.4 and 1.2.2; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
