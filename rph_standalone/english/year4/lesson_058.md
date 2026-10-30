@@ -15,11 +15,11 @@
 **Pupils:** Read the story in the selected reading mode.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Give groups Worksheet 3 sentence strips.
+**Teacher:** Distribute Worksheet 3 sentence strips, model identifying the first event and ask groups to arrange the remaining story sequence.
 **Pupils:** Arrange the strips in narrative order.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check the sequence and invite pair presentations.
+**Teacher:** Check the event order with groups and invite pairs to retell the sequence using the strips.
 **Pupils:** Present the ordered story events with a partner.
 
 ## Closure (5 minutes)
