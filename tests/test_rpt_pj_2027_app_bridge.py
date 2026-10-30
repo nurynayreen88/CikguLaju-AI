@@ -34,6 +34,16 @@ class TestNativeAppBridge(unittest.TestCase):
         self.assertTrue(self.call("rpt2027_pj_doc:Johor:4", allowed=lambda cid: False))
         self.send_document.assert_not_called()
 
+    def test_access_resolver_failure_is_denied(self):
+        def unavailable(_cid):
+            raise RuntimeError("database unavailable")
+        self.assertTrue(self.call("rpt2027_pj_doc:Johor:4", allowed=unavailable))
+        self.send_document.assert_not_called()
+
+    def test_non_boolean_access_result_is_denied(self):
+        self.assertTrue(self.call("rpt2027_pj_doc:Johor:4", allowed=lambda cid: "yes"))
+        self.send_document.assert_not_called()
+
     def test_missing_assets_preserves_existing_year_placeholder(self):
         self.assertFalse(self.call("rpt2027_year_4"))
 
