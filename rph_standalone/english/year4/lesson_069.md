@@ -23,7 +23,7 @@
 **Pupil action:** Compare answers and discuss feelings about events.
 
 ## Closure (5 minutes)
-**Teacher action:** Accept suitable expressions and share answers.
+**Teacher action:** Invite pairs to demonstrate a suitable social expression and explain which story situation it fits.
 **Pupil action:** Share a suitable expression and its meaning.
 
 **PBD:** Observe character-feeling descriptions and suitable social expressions in Worksheet 5 against SP 5.2.1 and 3.3.1.  
