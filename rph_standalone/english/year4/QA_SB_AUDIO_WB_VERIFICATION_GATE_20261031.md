@@ -38,3 +38,15 @@ Scope: 160 standalone RPH lesson files in this branch. This is a source-verifica
 5. Test generated Word and PDF, and obtain manual teacher approval before READY or production merge.
 
 Current status: **DRAFT / NOT READY**. No claim of full source verification.
+
+## Detailed lesson-content review — 31 October 2026 (follow-up)
+Reviewed the complete RPH text for Lessons **097, 098, 102, 103, 104, 105, 107, 139, 145, 147, 157** (not just reference headers). These files already include Workbook activity wording; none was rewritten without independent source verification.
+
+- **097–098:** The lesson activities explicitly require listening to Tracks 20–22. The disc number is not independently confirmed. Do not assign CD2 based only on adjacent lessons.
+- **102–105:** Track 25, 26, 27–28 and optional 29 are embedded in teaching steps; disc numbers and recording content require source confirmation.
+- **107:** RPH states *Part One* story recall followed by the next part, with Track 32, yet cites SB pp.66–67 (also cited for Lesson 093's story). Inspect the original Student's Book and Teacher's Book pp.118–119 before changing the reference. **Potential page mismatch, not a confirmed correction.**
+- **139:** Track 60 is mandatory to the current listening task, but disc is not specified. Confirm the audio file before enabling the bot download.
+- **145, 147:** Tracks 68 and 72 are integral to activities; disc unspecified. Confirm original audio.
+- **157:** The actual RPH teaches *What are germs?* using SB pp.110–111 and TB pp.162–163. The reference header also offers alternative SB p.133/TB p.197, but the activities do **not** currently teach that alternative. Confirm SOW choice; do not substitute alternative pages without rewriting and approving the lesson.
+
+**Safety gate:** Existing reference text is a working citation, not proof of actual PDF/audio file inspection. No READY status, production merge, or unverified page/track changes.
