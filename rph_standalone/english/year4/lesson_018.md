@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review challenging subject names using timetable flashcards.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Name school subjects from timetable flashcards.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils list three subjects they like and practise 'What's your favourite subject?'
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** List three preferred subjects and practise the model question.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs complete TB Activity 3 and give reasons using 'because'.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Ask about favourite subjects and explain reasons using because.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils complete the optional TB activity; teacher observes question comprehension and reasons.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Complete the optional speaking task and respond to questions.
 
 ## Closure (5 minutes)
 **Teacher:** Pairs share one favourite subject and why.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Share a favourite subject and a reason.
 
 **PBD:** Check task responses against Speaking 2.1.1 and Listening 1.2.5, recording individual progress.  
 **Differentiation:** Provide question frames and check spellings against SB.  
