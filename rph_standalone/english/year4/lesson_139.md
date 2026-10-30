@@ -11,7 +11,7 @@
 **Pupils:** Recall superlative forms.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Compare -est and most in meaningful sports sentences.
+**Teacher:** Contrast -est and most in two sports sentences and ask pupils to explain which form fits each adjective.
 **Pupils:** Compare -est and most in sports examples.
 
 ## Activity 2 (20 minutes)
