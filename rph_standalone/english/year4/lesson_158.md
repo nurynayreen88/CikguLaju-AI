@@ -7,7 +7,7 @@
 **References:** Unit 10 safety poster; TB Activities 1–2; Primary Year 4 SOW Lesson 158
 
 ## Set induction (10 minutes)
-**Teacher:** Follow TB revision or warm-up.
+**Teacher:** Use the TB revision prompts to recall home-safety rules and check pupils' use of imperative language.
 **Pupils:** Recall safety rules at home.
 
 ## Activity 1 (15 minutes)
