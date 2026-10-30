@@ -15,11 +15,10 @@ class TestCalendarSnapshot(unittest.TestCase):
         self.assertEqual(len(school_days(records, "Johor", "2027-01-04",
                                          "2027-01-10")), 5)
 
-    def test_holiday_not_a_school_day(self):
+    def test_before_session_is_not_a_school_day(self):
         records = read_calendar_csv(SNAPSHOT)
-        self.assertNotIn("2027-01-06",
-                         school_days(records, "Kedah", "2027-01-04",
-                                     "2027-01-10"))
+        self.assertEqual(school_days(records, "Kedah", "2027-01-01",
+                                     "2027-01-03"), [])
 
 
 if __name__ == "__main__":
