@@ -2,7 +2,27 @@
 from smoke_english_year4_exports import classroom_lines, source_lines
 
 
+def check_filter_boundaries():
+    sample = [
+        "# English Year 4 — Lesson 1",
+        "**Duration:** 60 minutes",
+        "## Activity 1 (20 minutes)",
+        "**Teacher:** Explain the task.",
+        "## Source mapping and QA",
+        "INTERNAL ONLY",
+        "## Closure (5 minutes)",
+        "**Pupils:** Reflect on the task.",
+        "**Status:** DRAFT",
+    ]
+    clean = classroom_lines(sample)
+    assert "INTERNAL ONLY" not in clean
+    assert "**Status:** DRAFT" not in clean
+    assert "## Closure (5 minutes)" in clean
+    assert "**Pupils:** Reflect on the task." in clean
+
+
 def main():
+    check_filter_boundaries()
     for lesson in range(1, 161):
         clean = classroom_lines(source_lines(lesson))
         assert clean and clean[0].startswith("# English Year 4"), lesson
