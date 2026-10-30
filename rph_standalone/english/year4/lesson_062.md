@@ -19,11 +19,11 @@
 **Pupils:** Practise linking ideas and using reference pronouns.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide a diary entry and an invitation with acceptance or refusal.
+**Teacher:** Model a short diary entry and invitation response, then guide pupils to write their own entries and polite acceptance or refusal.
 **Pupils:** Write a diary entry and a polite invitation response.
 
 ## Closure (5 minutes)
-**Teacher:** Review how sentences connect.
+**Teacher:** Ask pupils to identify one conjunction that connects their sentences and explain its purpose.
 **Pupils:** Improve one sentence link.
 
 **PBD:** Assess diary entries and invitation responses for connected ideas and appropriate language (SP 4.2.5, 4.2.2).  
