@@ -22,6 +22,8 @@
 **Teacher:** Guide shared reading of the story events and ask pupils to name one event supported by the recording. Replay Track 32 as needed and record pupils' listening responses.
 **Pupils:** Read together and discuss story details.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one similarity or difference between their prediction and the story's actual events.
 **Pupils:** Name one difference from the prediction.
