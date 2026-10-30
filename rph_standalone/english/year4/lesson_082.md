@@ -15,11 +15,11 @@
 **Pupils:** Identify and practise positive and negative imperatives.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups discuss rules for cars, bicycles and streets.
+**Teacher:** Organise groups to discuss safety rules for cars, bicycles and streets, prompting one positive and one negative imperative.
 **Pupils:** Discuss safety rules for cars, bicycles and streets.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils write neat cursive rules and present them.
+**Teacher:** Model legible cursive letter formation, then guide pupils to write and present their safety rules.
 **Pupils:** Write rules in cursive and present them.
 
 ## Closure (5 minutes)
