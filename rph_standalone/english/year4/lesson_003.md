@@ -23,7 +23,7 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Ask pupils to locate and explain specific details in the text; use consistent English instructions with demonstration. Support pupils who need help reading names.
-**Pupils:** Identify two details from the reading and respond to supported classroom instructions.
+**Pupils:** Identify three details from the reading and respond to two supported classroom instructions.
 
 ## Closure (5 minutes)
 **Teacher:** Recap one new fact and a useful question-answer form.
