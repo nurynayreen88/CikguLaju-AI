@@ -9,6 +9,7 @@ on:
       - 'scripts/smoke_english_year4_exports.py'
       - 'scripts/batch_smoke_english_year4_exports.py'
       - 'scripts/test_english_year4_classroom_export.py'
+      - 'scripts/report_english_year4_pdf_pages.py'
       - '.github/workflows/smoke-english-year4-exports.yml'
   workflow_dispatch:
 
@@ -35,6 +36,8 @@ jobs:
         run: python scripts/test_english_year4_classroom_export.py
       - name: Batch smoke all lessons
         run: python scripts/batch_smoke_english_year4_exports.py --output-dir /tmp/year4-all
+      - name: Report PDF page counts for all lessons
+        run: python scripts/report_english_year4_pdf_pages.py --input-dir /tmp/year4-all --report /tmp/year4-page-report.csv
       - name: Check outputs can be reopened
         run: |
           python - <<'PY'
