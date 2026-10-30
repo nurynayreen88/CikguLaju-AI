@@ -15,11 +15,11 @@
 **Pupils:** Compare ideas in small groups.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow guidebook p.68 steps 1–4 to create an imaginative response.
+**Teacher:** Explain guidebook p.68 steps 1–4, model a short imaginative opening and guide groups as they create a story or poem.
 **Pupils:** Create a story or poem using the guidebook tasks.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Present the response as a story or poem; assess group work using p.128 form.
+**Teacher:** Invite groups to present their story or poem, then assess each presentation using the guidebook p.128 form.
 **Pupils:** Present the creative work and use assessment criteria.
 
 ## Closure (5 minutes)
