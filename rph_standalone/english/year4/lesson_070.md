@@ -26,7 +26,7 @@
 **Teacher action:** Pupils share one healthy habit.
 **Pupil action:** Share one healthy habit.
 
-**PBD:** Check pupil responses and products against 1.2.5 and 1.2.2; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Record accuracy of Health Quiz listening answers and specific details checked with Track 79 against SP 1.2.5 and 1.2.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 70, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
