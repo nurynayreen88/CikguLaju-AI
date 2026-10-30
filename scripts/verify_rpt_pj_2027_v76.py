@@ -34,6 +34,9 @@ def verify(archive):
             return ["Oversized RPT archive member"]
         if sum(i.file_size for i in members if not i.is_dir()) > 150_000_000:
             return ["RPT archive uncompressed size exceeds safety limit"]
+        if any(i.file_size and i.file_size > max(i.compress_size, 1) * 200
+               for i in members if not i.is_dir()):
+            return ["Suspicious RPT archive compression ratio"]
         names = [name for name in all_names if name != "README.txt"]
         if len(all_names) != len(set(all_names)) or set(all_names) - {"README.txt"} != set(expected):
             return ["Unexpected or duplicate archive members"]
