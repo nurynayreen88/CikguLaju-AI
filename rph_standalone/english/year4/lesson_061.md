@@ -11,7 +11,7 @@
 **Pupils:** Explain the purpose of a diary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 1 and Track 65 for Sabrina's diary.
+**Teacher:** Preview the diary questions, play Track 65 for Activity 1 and check pupils' understanding of Sabrina's plans.
 **Pupils:** Read Sabrina's diary and listen to Track 65.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Find diary details and write answers neatly in cursive.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Discuss birthday plans and check written answers.
+**Teacher:** Organise a short discussion about birthday plans and check pupils' written responses against diary details.
 **Pupils:** Check answers and discuss birthday plans.
 
 ## Closure (5 minutes)
