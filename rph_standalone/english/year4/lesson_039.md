@@ -15,11 +15,11 @@
 **Pupils:** Give instructions for a three-step action sequence.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups mime sequences and ask past-tense questions in a hot-seat game.
+**Teacher:** Demonstrate the hot-seat rules, then organise groups to mime action sequences and ask complete past-tense questions.
 **Pupils:** Mime sequences and ask questions in the hot-seat game.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils give longer action instructions and describe what happened.
+**Teacher:** Prompt pupils to extend their instructions and describe what happened using a clear action sequence.
 **Pupils:** Give longer instructions and describe what happened.
 
 ## Closure (5 minutes)
