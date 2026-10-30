@@ -15,7 +15,7 @@
 **Pupils:** Form past-simple questions using the Grammar Box.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Play Track 43 with books closed; pupils answer and then check against the text.
+**Teacher:** Play Track 43 with books closed, ask pupils to answer listening questions, then guide them to verify answers against the text.
 **Pupils:** Listen to Track 43 with books closed, then check the text.
 
 ## PBD and reinforcement (10 minutes)
