@@ -11,7 +11,7 @@
 **Pupil action:** Sort foods by health value.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Follow TB Activity 1 with CD3 Track 38.
+**Teacher action:** Play CD3 Track 38 for TB Activity 1 and check pupils' understanding with a targeted listening question.
 **Pupil action:** Read and listen to CLIL Activity 1 with Track 38.
 
 ## Activity 2 (20 minutes)
