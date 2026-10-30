@@ -22,6 +22,8 @@
 **Teacher:** Demonstrate the double-bubble organiser and guide pupils to record supported similarities and differences.
 **Pupils:** Complete a double-bubble comparison of song and story.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to share one kind action and describe how it could help a friend.
 **Pupils:** Share one kind action.
