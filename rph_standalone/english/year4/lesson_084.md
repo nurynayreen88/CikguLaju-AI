@@ -19,7 +19,7 @@
 **Pupils:** Exchange building facts with a partner using Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Match questions to building descriptions and plan a paragraph.
+**Teacher:** Model matching one question to a building description, then guide pupils to organise facts for a short paragraph.
 **Pupils:** Match questions to descriptions and plan a paragraph.
 
 ## Closure (5 minutes)
