@@ -11,7 +11,7 @@
 **Pupils:** Describe a recycling picture.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Teach recycle vocabulary using Track 27 and show paragraph headings.
+**Teacher:** Use Track 27 to introduce recycling vocabulary, then display paragraph headings and ask pupils to predict each section's focus.
 **Pupils:** Listen to Track 27 and identify recycling words.
 
 ## Activity 2 (20 minutes)
