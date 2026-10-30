@@ -16,7 +16,7 @@
 
 ## Activity 2 — Bedroom writing (25 minutes)
 **Teacher:** Explain the Writing Tip referenced on Teacher's Book p.82 and guide sentence planning.
-**Pupils:** Write about their bedroom and illustrate a bedroom template with furniture drawings or cut-outs.
+**Pupils:** Write about their bedroom and illustrate a bedroom template with furniture drawings or cut-outs. Pupils complete Workbook p.40, Activity 1, by comparing the furniture in Bob's and Sally's houses.
 
 ## PBD (10 minutes)
 **Teacher:** Check each pupil's bedroom sentences for clarity and basic punctuation; listen to a short oral description.
