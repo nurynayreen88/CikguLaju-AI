@@ -26,7 +26,7 @@
 **Teacher:** Review tense and object pronouns.
 **Pupils:** Review a tense form and an object pronoun.
 
-**PBD:** Assess task responses against 2.1.5 and 2.1.2; teacher selects specific criteria for Language Awareness.  
+**PBD:** Observe spoken present-continuous descriptions of helping actions and appropriate personal responses against SP 2.1.5 and 2.1.2.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
