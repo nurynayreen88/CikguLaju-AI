@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review characters, feelings and actions.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Recall story characters and feelings.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow guidebook p.77 steps 1–4.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Complete guidebook page 77 steps 1–4.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Continue guidebook steps 5–8 and prepare a creative response.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Develop a creative response using steps 5–8.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Present work and explain ideas with story support.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Present work and support opinions with story details.
 
 ## Closure (5 minutes)
 **Teacher:** Gallery walk with stars and wishes.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Give classmates stars and wishes during a gallery walk.
 
 **PBD:** Assess the specified task against 5.2.1 and 4.2.4; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
