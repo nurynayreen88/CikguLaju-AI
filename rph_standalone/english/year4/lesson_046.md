@@ -19,11 +19,11 @@
 **Pupils:** Identify four Writing Tip points in the model email.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Write an email about a past trip using and/but; exchange and review emails.
+**Teacher:** Model an email opening and a sentence joined with and or but, then guide pupils to draft, exchange and review emails about past trips.
 **Pupils:** Write and peer-review an email about a past trip using and/but.
 
 ## Closure (5 minutes)
-**Teacher:** Revise one connected sentence.
+**Teacher:** Invite pupils to revise one connected sentence after peer feedback and explain their choice of conjunction.
 **Pupils:** Improve one connected sentence.
 
 **PBD:** Assess a past-trip email for relevant details, appropriate use of and/but and revision after feedback (Writing 4.2.5; Reading 3.2.2).  
