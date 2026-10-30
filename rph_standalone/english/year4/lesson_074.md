@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Introduce the story setting and prepare sewing and kite-making mini corners.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Identify the setting and prepare the mini corners.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Follow CCL p.41 and distribute Worksheets 7a and 7b.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Complete Worksheets 7a–7b using the guide.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pupils follow p.42 steps to create a pop-up storyboard.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Make a pop-up storyboard following the steps.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Pairs check construction steps and rehearse their presentation.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Check construction steps and rehearse presentation.
 
 ## Closure (5 minutes)
 **Teacher action:** Groups present storyboards at the mini corner.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Present the storyboard at a mini corner.
 
 **PBD:** Check pupil responses and products against 5.3.1 and 2.2.2; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
