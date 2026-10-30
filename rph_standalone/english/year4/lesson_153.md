@@ -26,7 +26,7 @@
 **Teacher:** Display the poster and share one health tip.
 **Pupils:** Display posters and share a health tip.
 
-**PBD:** Assess the specified task against 4.3.3 and 4.3.2; for teacher-selected standards choose criteria before class.  
+**PBD:** Assess body labels, spelling and clarity of should/shouldn't advice on health posters (SP 4.3.3, 4.3.2).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
