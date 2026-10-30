@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce the idea of helping friends.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Suggest ways to help friends.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Listen to a friendship song for ways to support others.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen to a friendship song and identify helpful actions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Brainstorm and compare examples with The King of Kites.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Compare the song with The King of Kites.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete a double-bubble comparison of the song and story.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Complete a double-bubble comparison of song and story.
 
 ## Closure (5 minutes)
 **Teacher:** Share a kind action.
-**Pupils:** Share one result or reflection.
+**Pupils:** Share one kind action.
 
 **PBD:** Assess task responses against 5.3.1 and 1.2.3; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
