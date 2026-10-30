@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Match adjectives with superlative forms.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Match adjectives with superlatives.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Review the reading text and its characters.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Recall sportspeople from the reading.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 5 and practise high jumper, windsurfer and javelin thrower.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Practise the words high jumper, windsurfer and javelin thrower.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs describe and identify people using superlatives.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Describe and identify people using superlatives.
 
 ## Closure (5 minutes)
 **Teacher:** Share one accurate description.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Give one accurate sports description.
 
 **PBD:** Assess the source-based task against 2.1.5 and 1.2.2; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
