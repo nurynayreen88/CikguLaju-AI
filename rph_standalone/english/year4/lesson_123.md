@@ -7,7 +7,7 @@
 **References:** SB p.127 Phonics 9; TB pp.189–190; dictionaries; Year 4 SOW Lesson 123
 
 ## Set induction (10 minutes)
-**Teacher:** Follow TB phonics warm-up.
+**Teacher:** Lead the TB phonics warm-up by contrasting two target sounds and asking pupils to identify what they hear.
 **Pupils:** Recall phonics words and sounds.
 
 ## Activity 1 (15 minutes)
