@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Model correcting one past-tense question, then guide pupils to punctuate prepared questions and complete TB Activity 3.
-**Pupils:** Punctuate prepared questions and complete Activity 3.
+**Pupils:** Punctuate prepared questions and complete Activity 3. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils correct a question and reflect on punctuation.
