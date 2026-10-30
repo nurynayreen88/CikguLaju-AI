@@ -11,7 +11,7 @@
 **Pupils:** Spell familiar household chore words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Pupils list jobs they do at home and discuss their list with a partner.
+**Teacher:** Ask pupils to list familiar household jobs, then organise pairs to compare their responsibilities.
 **Pupils:** List home jobs and compare lists with a partner.
 
 ## Activity 2 (20 minutes)
