@@ -11,7 +11,7 @@
 **Pupils:** Suggest ways to help friends.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Listen to a friendship song for ways to support others.
+**Teacher:** Set a listening purpose for the friendship song and ask pupils to identify one way of helping others.
 **Pupils:** Listen to a friendship song and identify helpful actions.
 
 ## Activity 2 (20 minutes)
