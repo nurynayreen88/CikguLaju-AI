@@ -26,7 +26,7 @@
 **Teacher:** Reflect on one language improvement.
 **Pupils:** Share one improvement in writing.
 
-**PBD:** Observe the named learning task against 4.3.1 and 3.2.2; for teacher-selected standards, establish criteria before class.  
+**PBD:** Check written board-game questions for capitals, punctuation and relevant source details (SP 4.3.1, 3.2.2).  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
