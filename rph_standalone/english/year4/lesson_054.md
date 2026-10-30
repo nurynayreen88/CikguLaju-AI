@@ -4,7 +4,7 @@
 **Main SP:** 1.2.3  
 **Complementary SP:** 1.2.2  
 **Duration:** 60 minutes  
-**References:** SB pp.38–39 Activities 1 and 4; TB pp.64–65; CD1 Track 56; Year 4 SOW Lesson 54
+**References:** SB pp.38–39 Activities 1 and 4; TB pp.64–65; Activity 1 story CD1 Track 56 (KPM SOW); Year 4 SOW Lesson 54
 
 ## Set induction (10 minutes)
 **Teacher:** Recall the story on SB p.38.
