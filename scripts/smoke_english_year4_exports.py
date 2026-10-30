@@ -69,6 +69,14 @@ def make_docx(lines: list[str], destination: Path) -> None:
     normal.font.name = "Arial"
     normal.font.size = Pt(9)
     normal.paragraph_format.space_after = Pt(2)
+    normal.paragraph_format.line_spacing = 1.0
+    for style_name, size, before, after in (("Heading 1", 12, 0, 4), ("Heading 2", 9.5, 4, 2)):
+        style = document.styles[style_name]
+        style.font.name = "Arial"
+        style.font.size = Pt(size)
+        style.paragraph_format.space_before = Pt(before)
+        style.paragraph_format.space_after = Pt(after)
+        style.paragraph_format.keep_with_next = True
     for raw in lines:
         if not raw.strip():
             continue
@@ -87,12 +95,12 @@ def make_pdf(lines: list[str], destination: Path) -> None:
     from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
     from reportlab.lib.enums import TA_LEFT
     from reportlab.lib.pagesizes import A4
-    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+    from reportlab.platypus import SimpleDocTemplate, Paragraph
 
     styles = getSampleStyleSheet()
     styles.add(ParagraphStyle(name="Year4Body", parent=styles["Normal"], fontName="Helvetica", fontSize=8.5, leading=11, spaceAfter=3, alignment=TA_LEFT))
-    styles.add(ParagraphStyle(name="Year4Title", parent=styles["Heading1"], fontSize=13, leading=15, spaceAfter=6))
-    styles.add(ParagraphStyle(name="Year4Stage", parent=styles["Heading2"], fontSize=9.5, leading=12, spaceBefore=5, spaceAfter=3, textColor=colors.black))
+    styles.add(ParagraphStyle(name="Year4Title", parent=styles["Heading1"], fontSize=12, leading=14, spaceAfter=4))
+    styles.add(ParagraphStyle(name="Year4Stage", parent=styles["Heading2"], fontSize=9.5, leading=11, spaceBefore=3, spaceAfter=2, textColor=colors.black))
     story = []
     for raw in lines:
         if not raw.strip():
