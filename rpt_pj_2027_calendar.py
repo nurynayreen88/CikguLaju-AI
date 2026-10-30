@@ -97,7 +97,7 @@ def validate_pdp_counts(rows, *, require_all_states=False):
         state = str(row["Negeri"]).strip().upper()
         year = int(row["Tahun"])
         lesson = int(row["PdP"])
-        if year not in YEAR_COUNTS or lesson < 1:
+        if state not in EXPECTED_STATES or year not in YEAR_COUNTS or lesson < 1:
             raise CalendarDataError("Invalid year/PdP")
         if lesson in counts[(state, year)]:
             raise CalendarDataError(f"Duplicate PdP: {state}/{year}/{lesson}")
