@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model one going to sentence about a parade costume, then guide pupils to draw their designs and write legible cursive descriptions.
-**Pupils:** Draw a costume and write three to five cursive sentences.
+**Pupils:** Draw a costume and write three to five cursive sentences. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Display a short writing checklist and ask pupils to correct one going to sentence and one cursive letter join.
