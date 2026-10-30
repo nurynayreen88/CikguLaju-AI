@@ -23,8 +23,12 @@ def route(cid, data, root, *, send, send_document, allowed):
     if not entitled:
         send(cid, "🔒 RPT 2027 memerlukan akses Rakan Pembangun atau langganan aktif.")
         return True
-    available = {(row["negeri"].replace(" ", "_"), row["tahun"])
-                 for row in list_available(root)}
+    try:
+        available = {(row["negeri"].replace(" ", "_"), row["tahun"])
+                     for row in list_available(root)}
+    except (OSError, ValueError, TypeError, KeyError):
+        send(cid, "Senarai RPT belum dapat dibaca. Sila cuba kemudian.")
+        return True
     if data.startswith("rpt2027_year_"):
         year_text = data[len("rpt2027_year_"):]
         if year_text not in {"4", "5", "6"}:
@@ -56,7 +60,7 @@ def route(cid, data, root, *, send, send_document, allowed):
         try:
             path = resolve_rpt(root, negeri=parts[1], tahun=int(parts[2]),
                                authorized=True)
-        except RPTDocumentUnavailable:
+        except (RPTDocumentUnavailable, OSError):
             send(cid, "Fail RPT belum tersedia. Sila cuba kemudian.")
             return True
         send_document(cid, str(path), "RPT Pendidikan Jasmani 2027")
