@@ -7,7 +7,7 @@
 **References:** Unit 8 revision; TB activities 1–3; SOW self-assessment; Year 4 SOW Lesson 128
 
 ## Set induction (10 minutes)
-**Teacher:** Follow TB warm-up to review animal language.
+**Teacher:** Use the TB warm-up to elicit animal adjectives and check one comparative form before revision.
 **Pupils:** Recall animal vocabulary.
 
 ## Activity 1 (15 minutes)
