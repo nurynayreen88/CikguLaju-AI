@@ -22,7 +22,7 @@
 **Pupils:** Use CCL Worksheet 1 and Activity 2 to create one meaningful additional poem line in the group.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Groups recite the poem with the new line. Observe imaginative response and engagement with the text; offer supported reading.
+**Teacher:** Invite each group to recite its extended poem, using a simple checklist for expressive reading and imaginative contributions; support hesitant readers.
 **Pupils:** Recite the poem with the new line and listen to other groups' performances.
 
 ## Closure (5 minutes)
