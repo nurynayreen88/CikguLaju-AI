@@ -19,7 +19,7 @@
 **Pupil action:** Read Project Activity 1 and locate details with Track 83.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Complete Project Activity 2 and correct category spellings using books or dictionaries.
+**Teacher action:** Guide Project Activity 2 and demonstrate checking category spellings using the Student Book or a dictionary.
 **Pupil action:** Complete Project Activity 2 and correct spelling using references.
 
 ## Closure (5 minutes)
