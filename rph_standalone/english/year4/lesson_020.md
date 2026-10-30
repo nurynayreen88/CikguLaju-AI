@@ -23,7 +23,7 @@
 **Pupils:** Write true/false quiz statements and check text details.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils correct a statement and share a timetable sentence.
+**Teacher:** Invite pupils to correct one false statement using story evidence and share an accurate timetable sentence.
 **Pupils:** Correct a statement and share a timetable sentence.
 
 **PBD:** Check task responses against Writing 4.2.4 and Reading 3.2.2, recording individual progress.  
