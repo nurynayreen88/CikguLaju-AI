@@ -19,7 +19,7 @@
 **Pupils:** Listen to Track 51 and complete Activities 2–3.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Provide the Unit 3 self-assessment checklist.
+**Teacher:** Distribute the Unit 3 self-assessment checklist and explain how pupils should identify their learning needs.
 **Pupils:** Rate strengths and gaps in Unit 3 skills.
 
 ## Closure (5 minutes)
