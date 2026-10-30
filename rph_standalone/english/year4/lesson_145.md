@@ -4,7 +4,7 @@
 **Main SP:** 1.3.1  
 **Complementary SP:** 1.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.103 Activity 1; TB p.152; Year 4 SOW Lesson 145
+**References:** SB p.103 Activity 1; TB p.152; Vocabulary Track 68 (disc unspecified in SOW); Year 4 SOW Lesson 145
 
 ## Set induction (10 minutes)
 **Teacher:** Display health flashcards and ask pupils to match common symptoms to suitable expressions.
