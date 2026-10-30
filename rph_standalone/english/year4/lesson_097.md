@@ -11,7 +11,7 @@
 **Pupils:** Name ways to help other people.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow SB Activity 1 and TB guidance.
+**Teacher:** Model the first SB Activity 1 response using TB guidance, then check pupils' understanding before independent work.
 **Pupils:** Prepare for the Student Book song activity.
 
 ## Activity 2 (20 minutes)
