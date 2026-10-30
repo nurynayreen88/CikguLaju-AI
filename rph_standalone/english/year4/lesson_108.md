@@ -22,6 +22,8 @@
 **Teacher:** Invite each pair to present its object using 'First' and 'Then'. Ask classmates to check whether the steps are clear and in order.
 **Pupils:** Explain the steps using First and Then.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Elicit action verbs from the construction process and check pupils' use of sequencing words.
 **Pupils:** Recall useful action verbs.
