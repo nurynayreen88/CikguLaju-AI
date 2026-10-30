@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review comparative forms using dinosaur pictures.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Describe dinosaur pictures using comparisons.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Activity 3 and model descriptions.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Practise model descriptions from Activity 3.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs describe dinosaurs using comparative clues.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Give clues so a partner identifies dinosaurs.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pupils check task steps and compare responses.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Check task steps and improve descriptions.
 
 ## Closure (5 minutes)
 **Teacher:** Share a comparative sentence.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share one comparative sentence.
 
 **PBD:** Observe the named learning task against 2.1.5 and 2.2.2; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
