@@ -64,6 +64,16 @@ def check() -> list[str]:
                 errors.append(f"Lesson {number:03d}: teacher actions missing")
             if not re.search(r"\*\*(?:Pupils|Pupil action):\*\*", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: pupil actions missing")
+        # Compare the main SP printed in each RPH with the SOW CSV.
+        if lesson.is_file() and number not in SPECIAL:
+            main_sp_line = re.search(r"^\*\*Main (?:SK/SP|SP):\*\*\s*([^\n]+)", text, re.MULTILINE | re.IGNORECASE)
+            if not main_sp_line:
+                errors.append(f"Lesson {number:03d}: main SP label missing")
+            else:
+                found_sp = re.search(r"\b[1-5]\.\d+\.\d+\b", main_sp_line.group(1))
+                expected_sp = (row.get("main_ls") or "").strip()
+                if not found_sp or found_sp.group() != expected_sp:
+                    errors.append(f"Lesson {number:03d}: RPH main SP does not match SOW {expected_sp}")
         sk = (row.get("main_cs") or "").strip()
         sp = (row.get("main_ls") or "").strip()
         if number in SPECIAL:
