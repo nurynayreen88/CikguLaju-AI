@@ -8,7 +8,7 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce story pictures and predict events.
-**Pupils:** Predict events from pictures.
+**Pupils:** Predict story events.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Introduce should and ask pupils to predict from story pictures.
@@ -20,11 +20,11 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete Activity 1 using Track 72 and answer with story evidence.
-**Pupils:** Use the story to justify answers.
+**Pupils:** Use story evidence to justify answers.
 
 ## Closure (5 minutes)
 **Teacher:** Share one value from the story.
-**Pupils:** Share one lesson from the story.
+**Pupils:** Share one story lesson.
 
 **PBD:** Assess the specified task against 3.2.3 and 1.2.3; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
