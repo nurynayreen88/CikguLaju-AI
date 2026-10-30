@@ -19,7 +19,7 @@
 **Pupils:** Construct a shoebox diorama of Grandma's House.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils describe their dioramas and answer supported questions about the objects.
+**Teacher:** Prompt pupils to describe their dioramas and answer questions about the positions of household objects.
 **Pupils:** Describe the diorama and answer questions about objects.
 
 ## Closure (5 minutes)
