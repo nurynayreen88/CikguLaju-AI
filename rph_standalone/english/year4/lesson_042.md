@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce beach vocabulary using CCL Activity 1.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Name familiar beach words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow CCL Activity 2; pupils describe past beach experiences.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Describe a past experience at the beach.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils explain their feelings about Sand Castle.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Explain a feeling about Sand Castle.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Use CCL Activity 3 and Activity 5 for advanced pupils or Activity 6 for others.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Complete a suitable CCL activity and share answers.
 
 ## Closure (5 minutes)
 **Teacher:** Share a feeling and one past event.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share one feeling and one past event.
 
 **PBD:** Check responses against Language Arts 5.2.1 and Speaking 2.1.2.  
 **Differentiation:** Use guidebook activities matched to pupil proficiency.  
