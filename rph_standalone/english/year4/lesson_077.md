@@ -22,6 +22,8 @@
 **Teacher action:** Guide pupils through TB Activity 2 and elicit useful facts for the next food-health poster project.
 **Pupil action:** Complete Activity 2 and collect facts for a poster.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher action:** Use the TB Before leaving review to check one food-health fact and one newly learned word.
 **Pupil action:** Recall a fact about healthy food.
