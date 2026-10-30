@@ -15,15 +15,15 @@
 **Pupils:** Find conjunctions in the model.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Plan a paragraph about a favourite animal using the mind map in Activity 2.
+**Teacher:** Model a mind map with the animal's appearance, habitat and abilities, then guide pupils to plan a paragraph using Activity 2.
 **Pupils:** Plan a paragraph using a mind map.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Write and revise a favourite-animal paragraph using conjunctions.
+**Teacher:** Ask pupils to write a short paragraph from their mind map. Display a checklist for conjunctions, connected ideas and punctuation, then guide one revision after partner feedback.
 **Pupils:** Write and revise the paragraph.
 
 ## Closure (5 minutes)
-**Teacher:** Read one improved sentence.
+**Teacher:** Invite two pupils to read an improved sentence and explain which conjunction connects their ideas.
 **Pupils:** Read one improved sentence.
 
 **PBD:** Assess the favourite-animal paragraph for conjunctions, connected ideas and revision after feedback against SP 4.2.5 and 4.3.3.  
