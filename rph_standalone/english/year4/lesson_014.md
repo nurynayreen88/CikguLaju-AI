@@ -20,7 +20,7 @@
 **Pupils:** Identify correct punctuation in the model email.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils write an email about themselves, exchange emails and respond to a classmate.
+**Teacher:** Provide an email structure and punctuation checklist, then guide pupils to draft, exchange and respond to a classmate's email.
 **Pupils:** Write and exchange an email, then respond to a classmate.
 
 ## Closure (5 minutes)
