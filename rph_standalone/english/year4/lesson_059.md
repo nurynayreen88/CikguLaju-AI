@@ -15,7 +15,7 @@
 **Pupils:** Listen and identify the main topic.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Guide Activity 3 and ask pupils to justify their gist answers.
+**Teacher:** Model identifying the main idea of the conversation, then guide Activity 3 and ask pupils to support their gist answers with a listening clue.
 **Pupils:** Complete Activity 3 and explain a gist answer.
 
 ## Reinforcement / PBD (10 minutes)
