@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review transport vocabulary.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall transport vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow SB Activities 3–4 listening.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen and complete Student Book Activities 3–4.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Identify transport details and gerunds.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Identify transport details and gerund forms.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Write short responses to questions about transport.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Write short answers about transport.
 
 ## Closure (5 minutes)
 **Teacher:** Review a useful gerund and prepare recycled materials.
-**Pupils:** Share one result or reflection.
+**Pupils:** Share one gerund and prepare materials for the next lesson.
 
 **PBD:** Assess task responses against 1.2.2 and 4.2.3; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
