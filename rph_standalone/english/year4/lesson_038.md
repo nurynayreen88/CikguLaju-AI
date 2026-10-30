@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review past simple yes/no questions with a short oral game.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Answer simple past yes/no questions.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Activity 4 with Track 40; pupils listen and respond to questions.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Listen to Track 40 and answer Activity 4 questions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Match verbs and nouns from the listening, such as dry hair and wrap present.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Match verbs and nouns from the listening, such as dry hair.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Follow TB Activity 5 with Track 41 and practise past-experience answers.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Listen to Track 41 and answer questions about past experiences.
 
 ## Closure (5 minutes)
 **Teacher:** Share a verb phrase and describe one past action.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share a verb phrase and describe a past action.
 
 **PBD:** Check responses against Listening 1.2.5 and Speaking 2.1.2.  
 **Differentiation:** Provide picture matching or a drawing game.  
