@@ -11,7 +11,7 @@
 **Pupils:** Recall adjectives describing animals.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Model comparative descriptions of animals.
+**Teacher:** Model a comparative sentence about two animals and highlight the adjective form used.
 **Pupils:** Practise comparative animal descriptions.
 
 ## Activity 2 (20 minutes)
