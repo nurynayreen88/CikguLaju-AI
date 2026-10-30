@@ -15,7 +15,7 @@
 **Pupils:** Discuss the meaning of should.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Play the story audio and ask a gist question.
+**Teacher:** Set a gist question before playing the story audio and check pupils' understanding of the main event.
 **Pupils:** Listen and answer the gist question.
 
 ## Reinforcement / PBD (10 minutes)
