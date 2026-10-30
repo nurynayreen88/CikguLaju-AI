@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review classroom objects such as rulers and notebooks.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Name classroom objects and belongings.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model Whose is this? and It's mine using real objects.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Ask and answer Whose is this? and It's mine.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 5 with Track 26; pairs practise ownership questions.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Listen to Track 26 and practise ownership questions.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pupils draw their belongings and classmates guess whose they are.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Draw belongings and guess their owners.
 
 ## Closure (5 minutes)
 **Teacher:** Correct a common possessive pronoun error.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Correct a possessive pronoun sentence.
 
 **PBD:** Observe the named learning task against 2.1.5 and 1.2.5; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
