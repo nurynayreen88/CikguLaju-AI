@@ -23,7 +23,7 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Invite each group to recite its extended poem, using a simple checklist for expressive reading and imaginative contributions; support hesitant readers.
-**Pupils:** Recite the poem with the new line and listen to other groups' performances.
+**Pupils:** Recite the poem with the new line and listen to other groups' performances. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to choose a smiley face to reflect on their experience of the poem activity.
