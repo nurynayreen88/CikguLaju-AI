@@ -17,7 +17,8 @@ def build_year_keyboard(root, keyboard_factory):
     """Return a Telegram InlineKeyboardMarkup with Tahun 4, 5 and 6."""
     keyboard = keyboard_factory()
     for year in YEARS:
-        keyboard.add_button(f"Tahun {year}", f"{YEAR_PREFIX}:{year}")
+        if any(year in menu_years(root, state) for state in STATES):
+            keyboard.add_button(f"Tahun {year}", f"{YEAR_PREFIX}:{year}")
     return keyboard
 
 
