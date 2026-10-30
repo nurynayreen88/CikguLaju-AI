@@ -106,4 +106,4 @@ if __name__ == "__main__":
     if problems:
         print(f"FAILED: {len(problems)} integrity issues")
         sys.exit(1)
-    print("PASS: 160 SOW rows, 160 lesson files, draft gates and SK/SP structure")
+    print("PASS: 160 SOW rows and lesson files; draft gates, SK/SP, 60-minute stages, PBD, and teacher/pupil actions")
