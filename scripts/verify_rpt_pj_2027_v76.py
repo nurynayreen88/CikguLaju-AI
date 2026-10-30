@@ -20,7 +20,10 @@ def verify(archive):
     }
     problems = []
     with ZipFile(archive) as bundle:
-        names = [i.filename for i in bundle.infolist() if not i.is_dir() and i.filename != "README.txt"]
+        all_names = [i.filename for i in bundle.infolist() if not i.is_dir()]
+        names = [name for name in all_names if name != "README.txt"]
+        if len(all_names) != len(set(all_names)) or set(all_names) - {"README.txt"} != set(expected):
+            return ["Unexpected or duplicate archive members"]
         if len(names) != 48 or len(set(names)) != 48 or set(names) != set(expected):
             return ["Expected exactly 48 v76 RPT documents with unique names"]
         for name, (state, year) in expected.items():
