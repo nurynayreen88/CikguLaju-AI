@@ -19,7 +19,7 @@
 **Pupils:** Complete the worksheets with suitable descriptions.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask groups to justify adjectives for pictured characters.
+**Teacher:** Ask groups to support each character adjective with a detail from the picture or story.
 **Pupils:** Explain the adjectives chosen for characters.
 
 ## Closure (5 minutes)
