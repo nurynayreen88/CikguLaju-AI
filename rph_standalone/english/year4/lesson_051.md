@@ -1,16 +1,32 @@
-# English Year 4 Lesson 51 — Reading 10
+# English Year 4 — Lesson 051
 
-Topic: Celebrations. Main SP: Reading 3.3.1. Complementary SP: Reading 3.2.4. References: SB p.38 story; celebration pictures; dictionaries. Duration: 60 minutes.
+**Topic:** Celebrations  
+**Main SP:** 3.3.1  
+**Complementary SP:** 3.2.4  
+**Duration:** 60 minutes  
+**References:** SB p.38 story; celebration pictures; dictionaries; Year 4 SOW Lesson 51
 
-Set induction (10 min): Teacher guides: Introduce festivals with pictures. Pupils participate and demonstrate the target skill.
+## Set induction (10 minutes)
+**Teacher:** Introduce festivals using pictures.
+**Pupils:** Name festivals shown in pictures.
 
-Activity 1 (15 min): Teacher guides: Pupils read the story and highlight unknown words. Pupils participate and demonstrate the target skill.
+## Activity 1 (15 minutes)
+**Teacher:** Guide independent reading of the story.
+**Pupils:** Read the story and highlight unfamiliar words.
 
-Activity 2 (20 min): Teacher guides: Pairs discuss meanings and check in dictionaries. Pupils participate and demonstrate the target skill.
+## Activity 2 (20 minutes)
+**Teacher:** Support dictionary use in pairs.
+**Pupils:** Discuss word meanings and check them in dictionaries.
 
-PBD (10 min): Teacher guides: Pupils reread and describe what they would wear at a parade. Pupils participate and demonstrate the target skill.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask pupils to reread and describe parade clothing.
+**Pupils:** Reread and describe what they would wear at a parade.
 
-Closure (5 min): Teacher guides: Share a costume idea. Pupils participate and demonstrate the target skill.
+## Closure (5 minutes)
+**Teacher:** Invite pupils to share costume ideas.
+**Pupils:** Share a costume idea using story vocabulary.
 
-PBD: Observe and check pupil responses against Reading 3.3.1 and Reading 3.2.4. Differentiation: Use pictures, models, pair support and optional extension tasks as appropriate.
-Source: Primary Year 4 SK SOW Lesson 51. Status: DRAFT; direct source, audio-content and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against the selected standards (3.3.1; 3.2.4).  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
