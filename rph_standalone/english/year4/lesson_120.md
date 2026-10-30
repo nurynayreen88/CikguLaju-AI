@@ -15,7 +15,7 @@
 **Pupils:** Read Activity 1 and find dinosaur facts.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 2 and answer text-specific questions.
+**Teacher:** Guide Activity 2, model locating one supporting sentence and ask pupils to answer the remaining text-specific questions.
 **Pupils:** Read Activity 2 and answer specific questions.
 
 ## PBD / reinforcement (10 minutes)
