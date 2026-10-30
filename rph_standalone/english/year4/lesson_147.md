@@ -4,7 +4,7 @@
 **Main SP:** 3.2.3  
 **Complementary SP:** 1.2.3  
 **Duration:** 60 minutes  
-**References:** SB p.104 Activity 1; TB p.154; enlarged story pictures; Primary Year 4 SOW Lesson 147
+**References:** SB p.104 Activity 1; TB p.154; Activity 1 Track 72 (disc unspecified in SOW); enlarged story pictures; Primary Year 4 SOW Lesson 147
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce story pictures and predict events.
