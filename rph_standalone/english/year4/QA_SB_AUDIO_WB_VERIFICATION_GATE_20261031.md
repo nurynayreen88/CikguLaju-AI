@@ -91,3 +91,33 @@ Read the official Year 4 SOW lesson instructions and materials references for Le
 | 156 | SB p.108 Activity 1; TB p.159 | **CD2 Track 79** vocabulary |
 
 **Evidence boundary:** This cross-check confirms the SOW *text*, not the content of actual MP3 files or scanned textbook pages. Continue to require direct audio verification before marking a track as playable/READY. Existing lesson files have not been rewritten or overwritten.
+
+## SOW cross-check: Lessons 067–096 (22 additional lessons, 31 October 2026)
+Read the corresponding lesson outlines from the official Year 4 SK SOW PDF for Lessons **067, 068, 069, 070, 071, 072, 073, 074, 075, 076, 077, 078, 079, 080, 085, 087, 089, 090, 092, 094, 095, 096**. This is a SOW-source audit only.
+
+| Lesson | Printed SOW references and observations |
+| --- | --- |
+| 067 | SB pp.50–51, TB pp.79–80; Activities 1 and 3 |
+| 068 | SB p.51; Activities 4 and 5; **CD1** tracks mentioned, track numbers need confirmation from unwrapped source lines |
+| 069 | Literature/CCL, Worksheet 5 pp.80–81; do not force ordinary SB/WB mappings |
+| 070 | SB pp.52–53, TB pp.82–83; **CD1 Track 77** vocabulary; another CD1 track for Activity 3 needs line-wrap confirmation |
+| 071 | SB p.53 Activity 4, TB pp.82–83; **CD1 Track 80** |
+| 072 | SB p.55, TB p.87; Project Activity 1 **CD1 Track 83** |
+| 073 | SB p.55, TB p.87; Activity 2/Writing Tip |
+| 074 | Literature/CCL; Worksheets 7a p.43 and 7b p.44; pop-up storyboard |
+| 075 | SB p.57, TB p.89; Activities 3–4 |
+| 076 | SB p.54, TB p.84; **CD1 Track 81** vocabulary |
+| 077 | SB p.130, TB p.194; **CD3 Track 38** Activity 1 |
+| 078 | Teacher-selected project/poster lesson; no specific audio or SB page recovered from SOW line filter |
+| 079 | Literature/CCL, Task Sheet 3 p.53 |
+| 080 | Teacher-selected project lesson; no specific audio or SB page recovered from SOW line filter |
+| 085 | Literature/CCL song activity, song lyrics p.56 in the CCL source |
+| 087 | SB p.61 Activity 4, TB p.95; Activity 5 also described in SOW outline |
+| 089 | CLIL follow-up SB p.131, TB p.195 |
+| 090 | Literature/CCL; guide p.66 |
+| 092 | SB p.65 Activity 1, TB pp.100–101 |
+| 094 | SB p.64 Activity 1, TB p.99 |
+| 095 | Literature/CCL; Worksheets 10a p.62 and 10b p.63 |
+| 096 | SB p.70 revision, TB p.106; self-assessment |
+
+**Important:** Some printed CD numbers are split across PDF-extracted lines. Never infer missing digits. Literary, project and CLIL lessons have different source requirements from textbook lessons. No claims of actual MP3 playback or Workbook-page verification.
