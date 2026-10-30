@@ -4,7 +4,7 @@
 **Main SP:** 3.3.1  
 **Complementary SP:** 2.3.1  
 **Duration:** 60 minutes  
-**References:** SB pp.66–67 story; TB pp.102–103
+**References:** SB pp.66–67 story; TB pp.102–103; story listening CD2 Track 16 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Show story pictures and elicit predictions.
