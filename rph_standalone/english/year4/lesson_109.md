@@ -11,7 +11,7 @@
 **Pupils:** Name materials that can be recycled.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Model dictionary headwords, definitions and alphabetical order; run a dictionary race using recycle, collect and sell.
+**Teacher:** Demonstrate how to locate recycle, collect and sell alphabetically in a dictionary, then guide a timed meaning-check activity.
 **Pupils:** Find recycle, collect and sell in a monolingual dictionary.
 
 ## Activity 2 (20 minutes)
