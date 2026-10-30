@@ -11,7 +11,7 @@
 **Pupils:** Describe dinosaur pictures using comparisons.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 3 and model descriptions.
+**Teacher:** Demonstrate the first Activity 3 animal description and ask pupils to identify the comparative adjective before practising.
 **Pupils:** Practise model descriptions from Activity 3.
 
 ## Activity 2 (20 minutes)
