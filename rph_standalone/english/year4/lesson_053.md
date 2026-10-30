@@ -1,11 +1,32 @@
-# English Year 4 Lesson 053 — Language Arts 10
+# English Year 4 — Lesson 053
 
-Topic: The King of Kites. Main SP: Language Arts 5.2.1. Complementary SP: Reading 3.3.1. Source: Year 4 SOW Lesson 53, CCL Short Story Guide, story pages 9–10. Duration: 60 minutes.
+**Topic:** The King of Kites  
+**Main SP:** 5.2.1  
+**Complementary SP:** 3.3.1  
+**Duration:** 60 minutes  
+**References:** CCL Short Story Guide; story pp.9–10; Year 4 SOW Lesson 53
 
-Set induction (10 min): Teacher reviews kite-making and sewing vocabulary. Pupils recall story characters.
-Activity 1 (15 min): Teacher directs pupils to skim pages 9 and 10 for materials used in kite-making and sewing. Pupils locate and identify the words.
-Activity 2 (20 min): Teacher provides two mind maps. Pupils complete them and explain what Anil and his mother are doing.
-PBD (10 min): Teacher distributes kite templates. Groups design kites and prepare explanations.
-Closure (5 min): Groups present designs and share their response to the story.
+## Set induction (10 minutes)
+**Teacher:** Review kite-making and sewing words.
+**Pupils:** Recall the story characters and materials.
 
-Differentiation: Provide a quiet reading space and word prompts. Status: DRAFT; source and Word/PDF QA pending.
+## Activity 1 (15 minutes)
+**Teacher:** Ask pupils to skim story pp.9–10 for materials.
+**Pupils:** Find and name kite-making and sewing materials.
+
+## Activity 2 (20 minutes)
+**Teacher:** Provide two mind maps about Anil and his mother.
+**Pupils:** Complete mind maps and describe their activities.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Distribute kite templates for group design.
+**Pupils:** Design a kite and prepare an explanation.
+
+## Closure (5 minutes)
+**Teacher:** Invite groups to present designs.
+**Pupils:** Present a kite design and respond to the story.
+
+**PBD:** Observe lesson tasks against SP 5.2.1 and 3.3.1.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
