@@ -23,7 +23,7 @@
 **Pupils:** Compare transport experiences and preferences.
 
 ## Closure (5 minutes)
-**Teacher:** Recall one detail and prepare building research.
+**Teacher:** Ask pupils to recall one transport fact from the text and explain what information they need for upcoming building research.
 **Pupils:** Recall a detail from the reading.
 
 **PBD:** Check comprehension of the vehicle texts and spoken comparisons of transport preferences against SP 3.2.2 and 2.1.5.  
