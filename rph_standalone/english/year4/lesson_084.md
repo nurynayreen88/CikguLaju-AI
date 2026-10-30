@@ -23,7 +23,7 @@
 **Pupils:** Match questions to descriptions and plan a paragraph.
 
 ## Closure (5 minutes)
-**Teacher:** Share one fact about a building.
+**Teacher:** Invite pupils to state one building fact and explain which text provided the information.
 **Pupils:** Share one fact about a building.
 
 **PBD:** Assess reading comprehension of famous-building facts and the accuracy of written descriptions against SP 4.3.3 and 3.2.2.  
