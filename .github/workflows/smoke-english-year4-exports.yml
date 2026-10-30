@@ -27,6 +27,8 @@ jobs:
           python-version: '3.11'
       - name: Install isolated document dependencies
         run: python -m pip install python-docx reportlab pypdf
+      - name: Check export script syntax
+        run: python -m compileall -q scripts/smoke_english_year4_exports.py scripts/batch_smoke_english_year4_exports.py scripts/test_english_year4_classroom_export.py scripts/report_english_year4_pdf_pages.py
       - name: Test sample lesson exports
         run: |
           python scripts/smoke_english_year4_exports.py --lesson 1 --output-dir /tmp/year4-smoke
