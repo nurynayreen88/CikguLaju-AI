@@ -23,7 +23,7 @@
 **Pupils:** Locate details and write or say four facts about their school.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils share a fact about another school and a dictionary word.
+**Teacher:** Invite pupils to share one fact from the school text and explain a word they checked in the dictionary.
 **Pupils:** Share a fact about another school and a new word.
 
 ## Assessment and differentiation
