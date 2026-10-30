@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review the Ancient Egypt theme with pictures and key words.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Recall Ancient Egypt vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils choose unfamiliar words from the previous lesson and check meanings in a dictionary.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Check unfamiliar words in a monolingual dictionary.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Discuss ancient cultures in and around Malaysia and model past-tense statements.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Discuss ancient cultures and make past-tense statements.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Pairs use simple past verbs to describe past experiences or cultures, then present their ideas.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Describe a past experience or culture with a partner.
 
 ## Closure (5 minutes)
 **Teacher:** Complete the optional TB line-jumping game.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Practise past-time expressions in the optional game.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Speaking 2.1.2 and Reading 3.2.4.  
