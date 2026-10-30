@@ -11,15 +11,15 @@
 **Pupils:** Recall animal vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Complete revision Activities 1–3.
+**Teacher:** Model the first revision item and explain the instructions for Activities 1–3, then monitor pupils' independent answers.
 **Pupils:** Complete Unit 8 revision Activities 1–3.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Practise skills identified from formative assessment.
+**Teacher:** Group pupils according to the language needs observed in their revision answers and provide targeted practice on animal vocabulary or comparative forms.
 **Pupils:** Practise language targets identified by the teacher.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete self-assessment and identify difficult skills.
+**Teacher:** Guide pupils through the Unit 8 self-assessment and record the skills they identify as difficult.
 **Pupils:** Complete self-assessment and identify difficulties.
 
 ## Closure (5 minutes)
