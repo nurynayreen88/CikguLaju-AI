@@ -11,7 +11,7 @@
 **Pupil action:** Recall health words from Track 77.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Teacher reads Health Quiz questions; pupils choose answers from a question-free worksheet.
+**Teacher action:** Read the Health Quiz questions aloud one at a time, allow pupils to select answers on the question-free worksheet and check understanding.
 **Pupil action:** Listen to Health Quiz questions and choose answers.
 
 ## Activity 2 (20 minutes)
