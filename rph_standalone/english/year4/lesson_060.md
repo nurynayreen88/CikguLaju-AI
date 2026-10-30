@@ -19,7 +19,7 @@
 **Pupils:** Choose pictures and explain predictions using because.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide pupils to attach pictures, write predictions and present them.
+**Teacher:** Provide a prediction checklist and guide pupils to attach pictures, write sentences using because and present their reasons.
 **Pupils:** Write a correctly spelled prediction and present it to a group.
 
 ## Closure (5 minutes)
