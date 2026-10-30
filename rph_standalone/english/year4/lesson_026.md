@@ -23,7 +23,7 @@
 **Pupils:** Perform and use a peer checklist for feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils reflect on one successful performance choice.
+**Teacher:** Ask pupils to identify one successful performance choice and explain how it improved their poem recitation.
 **Pupils:** Explain one successful performance choice.
 
 **PBD:** Check task responses against Language Arts 5.3.1 and Reading 3.3.1, recording individual progress.  
