@@ -22,6 +22,8 @@
 **Teacher:** Model one safe-versus-unsafe judgement with a reason, then guide Student Book Activity 1 and ask pupils to explain their choices.
 **Pupils:** Complete Activity 1 and explain one safety judgement.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Lead the TB p.92 physical-response activity and check that pupils match actions to safe transport rules.
 **Pupils:** Respond to safety instructions with appropriate movements.
