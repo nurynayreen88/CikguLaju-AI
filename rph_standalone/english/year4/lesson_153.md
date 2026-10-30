@@ -11,7 +11,7 @@
 **Pupils:** Label familiar body parts.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Show a model poster giving advice on keeping healthy.
+**Teacher:** Display a model health-advice poster and identify its title, body-part labels and clear advice sentences.
 **Pupils:** Read and discuss advice on the sample poster.
 
 ## Activity 2 (20 minutes)
