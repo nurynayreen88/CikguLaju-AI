@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review Unit 9 language with TB warm-up.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Recall Unit 9 vocabulary and grammar.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Complete revision Activities 1–3.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Complete Revision 9 Activities 1–3.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Use formative evidence to plan targeted language practice.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Practise language targets identified through assessment.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete self-assessment and identify gaps.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Complete self-assessment and identify a weak area.
 
 ## Closure (5 minutes)
 **Teacher:** Set a personal review goal.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** State one personal learning goal.
 
 **PBD:** Assess the specified task against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
