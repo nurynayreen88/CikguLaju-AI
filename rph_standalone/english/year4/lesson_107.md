@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review pictures from Part One of the story.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Recall pictures from Part One.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Sequence Part One pictures and recall predicted endings.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Sequence pictures and recall the predicted ending.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Listen to the next story and compare it with predictions.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Listen to Track 32 and compare events with predictions.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Read together, discuss story events and replay Track 32.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Read together and discuss story details.
 
 ## Closure (5 minutes)
 **Teacher:** Share one similarity or difference.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Name one difference from the prediction.
 
 **PBD:** Observe the named learning task against 1.2.3 and 3.3.1; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
