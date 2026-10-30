@@ -1,10 +1,12 @@
-"""Safely provision the 48 staged Word assets from the approved ZIP archive.
+"""Validate and safely provision the approved 48 RPT PJ 2027 Word files.
 
-Usage: python scripts/install_rpt_pj_2027_assets.py ARCHIVE.zip /path/to/data
-No existing file is overwritten. This does not modify app.py or enable access.
+Usage: python scripts/install_rpt_pj_2027_assets.py ARCHIVE.zip DATA_DIR
+The installer never overwrites existing files. It preflights every target
+before copying and rolls back only files it created on failure.
 """
 from pathlib import Path
-from zipfile import ZipFile
+from zipfile import ZipFile, BadZipFile
+import shutil
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -17,27 +19,34 @@ def install(archive, destination):
         for state in STATES for year in YEARS
     }
     destination = Path(destination)
+    created = []
     with ZipFile(archive) as z:
-        names = {info.filename for info in z.infolist() if not info.is_dir()}
-        if names != expected:
-            raise ValueError(
-                f"Unexpected RPT assets: missing={len(expected - names)} "
-                f"extra={len(names - expected)}"
-            )
-        for info in z.infolist():
-            if info.is_dir():
-                continue
-            if info.file_size > 2_000_000:
-                raise ValueError("Unexpectedly large RPT file")
-        for name in sorted(expected):
-            target = destination / name
-            target.parent.mkdir(parents=True, exist_ok=True)
-            if target.exists():
+        members = [info for info in z.infolist() if not info.is_dir()]
+        names = [info.filename for info in members]
+        if len(names) != 48 or set(names) != expected:
+            raise ValueError("Archive must contain exactly 48 approved RPT files")
+        for info in members:
+            if info.file_size == 0 or info.file_size > 2_000_000:
+                raise ValueError("Unexpected RPT file size")
+            if not info.filename.endswith(".docx"):
+                raise ValueError("Unexpected asset type")
+        if z.testzip() is not None:
+            raise BadZipFile("Corrupted RPT ZIP archive")
+        targets = [(name, destination / name) for name in sorted(expected)]
+        for _, target in targets:
+            if target.exists() or target.is_symlink():
                 raise FileExistsError(f"Refusing overwrite: {target}")
-            with z.open(name) as src, target.open("xb") as out:
-                import shutil
-                shutil.copyfileobj(src, out)
-    return len(expected)
+        try:
+            for name, target in targets:
+                target.parent.mkdir(parents=True, exist_ok=True)
+                with z.open(name) as src, target.open("xb") as out:
+                    created.append(target)
+                    shutil.copyfileobj(src, out)
+        except Exception:
+            for target in reversed(created):
+                target.unlink(missing_ok=True)
+            raise
+    return len(created)
 
 
 if __name__ == "__main__":
