@@ -23,7 +23,7 @@
 **Pupils:** Check answers and discuss birthday plans.
 
 ## Closure (5 minutes)
-**Teacher:** Ask for one diary detail and one personal plan.
+**Teacher:** Invite pupils to cite one detail from Sabrina's diary and describe one personal plan.
 **Pupils:** Share a diary detail and a personal plan.
 
 **PBD:** Check text-supported answers from Sabrina's diary and legibility of cursive writing (SP 3.2.2, 4.1.2).  
