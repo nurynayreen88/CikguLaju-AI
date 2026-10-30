@@ -22,6 +22,8 @@
 **Teacher:** Organise pairs to discuss a recent school trip, prompting them to reuse relevant language from the text.
 **Pupils:** Discuss a school trip using details from the text.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to cite one school-trip detail from the text.
 **Pupils:** Share one fact from the reading.
