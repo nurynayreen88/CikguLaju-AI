@@ -22,6 +22,8 @@
 **Teacher:** Play CD2 Track 74 for Activity 5, model an advice sentence with should and invite pupils to explain suitable advice for each problem.
 **Pupils:** Listen again and give advice.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to recall one health problem from the recording and give suitable advice using should.
 **Pupils:** Recall one listening detail.
