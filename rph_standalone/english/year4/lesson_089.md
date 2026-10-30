@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review descriptions and earlier writing plans.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall descriptions of famous buildings.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils examine their research and building images.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Review building research and pictures.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Draft a paragraph about a famous building.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Draft a paragraph describing a famous building.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Peer-check spelling, punctuation and descriptive details.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Check spelling, punctuation and descriptive details.
 
 ## Closure (5 minutes)
 **Teacher:** Share and display a revised description.
-**Pupils:** Share one result or reflection.
+**Pupils:** Display and read a revised description.
 
 **PBD:** Assess task responses against 4.3.3 and 4.2.4; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
