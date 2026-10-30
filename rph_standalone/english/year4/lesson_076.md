@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Follow TB Warm-up and Vocabulary with Track 81.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Recall food words from Track 81.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Groups fill blanks in instructions for the board game.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Complete gaps in the board-game instructions.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pupils ask clarification questions to check the game steps.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Ask clarification questions about game steps.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Groups play and describe food objects using collective nouns.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Play the game and describe food using collective nouns.
 
 ## Closure (5 minutes)
 **Teacher action:** Correct anonymous language errors together.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Correct a language error from the activity.
 
 **PBD:** Check pupil responses and products against 2.1.5 and 2.2.2; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
