@@ -15,7 +15,7 @@
 **Pupils:** Draw the red flower from the story.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow guidebook p.63 steps 1–3 and share answers using Flying Carpets activity.
+**Teacher:** Explain guidebook p.63 steps 1–3 and organise the Flying Carpets activity to compare evidence-based answers.
 **Pupils:** Discuss guidebook questions in Flying Carpets groups.
 
 ## Reinforcement / PBD (10 minutes)
