@@ -20,6 +20,8 @@ def install(archive, destination):
         for state in STATES for year in YEARS
     }
     destination = Path(destination)
+    if destination.exists() or destination.is_symlink():
+        raise FileExistsError("RPT install requires a new destination directory")
     if destination.is_symlink() or (destination / "RPT_PJ_2027_DOCX").is_symlink():
         raise ValueError("Refusing symlinked RPT asset destination")
     created = []
