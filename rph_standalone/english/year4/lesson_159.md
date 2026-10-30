@@ -23,7 +23,7 @@
 **Pupils:** Use the guidebook form to assess performances.
 
 ## Closure (5 minutes)
-**Teacher:** Give medals and missions to other groups.
+**Teacher:** Guide peers to give one specific performance strength and one achievable improvement target.
 **Pupils:** Offer another group a medal and a mission.
 
 **PBD:** Observe pupils' reading and expressive performance in Readers' Theatre using the guidebook assessment form (SP 5.3.1, 3.3.1).  
