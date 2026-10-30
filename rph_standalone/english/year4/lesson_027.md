@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Set up pair questions about chores pupils have to do at home, following Activity 4 and the SOW-listed Track 37, and monitor accurate question forms.
-**Pupils:** Listen to the SOW-listed Track 37 and discuss home duties.
+**Pupils:** Listen to the SOW-listed Track 37 and discuss home duties. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to state one household obligation using have to and spell a related chore phrase.
