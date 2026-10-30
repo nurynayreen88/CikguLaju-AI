@@ -19,11 +19,11 @@
 **Pupils:** Practise the words high jumper, windsurfer and javelin thrower.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs describe and identify people using superlatives.
+**Teacher:** Model one description of a sportsperson using a superlative, then organise pair guessing turns and check whether each clue is clear and accurate.
 **Pupils:** Describe and identify people using superlatives.
 
 ## Closure (5 minutes)
-**Teacher:** Share one accurate description.
+**Teacher:** Invite two pupils to share an accurate description and explain the superlative used.
 **Pupils:** Give one accurate sports description.
 
 **PBD:** Observe descriptions of sportspeople using superlatives against SP 2.1.5 and 1.2.2.  
