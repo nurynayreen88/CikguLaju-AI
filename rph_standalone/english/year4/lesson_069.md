@@ -15,7 +15,7 @@
 **Pupil action:** Describe character emotions in the story.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Distribute Worksheet 5; pupils complete suitable social expressions.
+**Teacher action:** Model a suitable social expression for one story situation, then distribute Worksheet 5 for pupils to complete independently.
 **Pupil action:** Complete social expressions in Worksheet 5.
 
 ## PBD / reinforcement (10 minutes)
