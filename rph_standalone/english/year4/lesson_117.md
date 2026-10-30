@@ -26,7 +26,7 @@
 **Teacher:** Share feelings about the story.
 **Pupils:** Share a response to the story.
 
-**PBD:** Observe the named learning task against 5.2.1 and 2.1.1; for teacher-selected standards, establish criteria before class.  
+**PBD:** Observe story sequencing and pupils' descriptions of Mowgli's feelings with reasons against SP 5.2.1 and 2.1.1.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
