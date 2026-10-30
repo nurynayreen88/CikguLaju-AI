@@ -19,7 +19,7 @@
 **Pupils:** Explain the girls' feelings and whether the problem is solved.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils arrange sentence strips in story order and compare with partners.
+**Teacher:** Demonstrate sequencing the first event, then distribute sentence strips for pupils to order and check in pairs.
 **Pupils:** Order sentence strips and compare the sequence.
 
 ## Closure (5 minutes)
