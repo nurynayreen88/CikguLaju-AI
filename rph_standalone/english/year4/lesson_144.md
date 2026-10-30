@@ -23,7 +23,7 @@
 **Pupils:** Complete self-assessment and identify a weak area.
 
 ## Closure (5 minutes)
-**Teacher:** Set a personal review goal.
+**Teacher:** Ask pupils to choose one measurable review goal based on their Unit 9 self-assessment.
 **Pupils:** State one personal learning goal.
 
 **PBD:** Assess the specified task against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards choose criteria before class.  
