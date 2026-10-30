@@ -15,11 +15,11 @@
 **Pupils:** Listen to a friendship song and identify helpful actions.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Brainstorm and compare examples with The King of Kites.
+**Teacher:** Invite examples of helping friends, then model one similarity and one difference between the song and The King of Kites.
 **Pupils:** Compare the song with The King of Kites.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete a double-bubble comparison of the song and story.
+**Teacher:** Demonstrate the double-bubble organiser and guide pupils to record supported similarities and differences.
 **Pupils:** Complete a double-bubble comparison of song and story.
 
 ## Closure (5 minutes)
