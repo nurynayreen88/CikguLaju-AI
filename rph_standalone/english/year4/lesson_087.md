@@ -7,7 +7,7 @@
 **References:** SB p.61 Activity 5; TB p.95
 
 ## Set induction (10 minutes)
-**Teacher:** Review time words.
+**Teacher:** Display a short trip timetable and elicit suitable time expressions before the invitation task.
 **Pupils:** Recall time words and phrases.
 
 ## Activity 1 (15 minutes)
