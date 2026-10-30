@@ -22,6 +22,8 @@
 **Teacher:** Model using a nearby lyric or picture clue to infer a word meaning, then invite pupils to explain their inferences.
 **Pupils:** Use text clues to infer unfamiliar words.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe one helpful action and explain when they could do it.
 **Pupils:** Suggest one helpful action.
