@@ -11,7 +11,7 @@
 **Pupils:** Describe village and jungle settings.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Give reasons for preferred place to live.
+**Teacher:** Ask pupils to choose the village or jungle and model a reasoned sentence before inviting pair responses.
 **Pupils:** Explain a preferred place to live.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Complete guidebook page 73 tasks in pairs.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Share written opinions about Mowgli's choice.
+**Teacher:** Invite pupils to read their written opinions about Mowgli's choice and prompt them to support each opinion with a story detail.
 **Pupils:** Write an opinion about Mowgli's choice.
 
 ## Closure (5 minutes)
