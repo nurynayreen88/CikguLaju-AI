@@ -4,7 +4,7 @@
 **Main SP:** 4.3.3  
 **Complementary SP:** 4.3.2  
 **Duration:** 60 minutes  
-**References:** SOW Lesson 153; Get Smart Plus 4 Unit 10; Primary Year 4 SOW Lesson 153
+**References:** SOW Lesson 153; Get Smart Plus 4 Unit 10; resources/lesson_153_health_advice_poster_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Review body parts and health vocabulary.
