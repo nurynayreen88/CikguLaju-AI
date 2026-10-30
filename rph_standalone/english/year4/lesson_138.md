@@ -26,7 +26,7 @@
 **Teacher:** Share constructive feedback.
 **Pupils:** Give constructive feedback.
 
-**PBD:** Assess the source-based task against 5.3.1 and 2.3.1; choose relevant criteria for Language Awareness.  
+**PBD:** Observe creative story or poem responses to Mowgli's dilemma and clarity of group presentations (SP 5.3.1, 2.3.1).  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
