@@ -1,0 +1,32 @@
+# English Year 4 — Lesson 156: Speaking 30
+
+**Topic:** What's the matter?  
+**Main SP:** 2.2.2  
+**Complementary SP:** 1.2.4  
+**Duration:** 60 minutes  
+**References:** SB p.108 Activity 1; TB p.159; board-game instructions; Primary Year 4 SOW Lesson 156
+
+## Set induction (10 minutes)
+**Teacher:** Play a word game to review vocabulary.
+**Pupils:** Respond to prompts and recall relevant vocabulary.
+
+## Activity 1 (15 minutes)
+**Teacher:** Read and check board-game instructions.
+**Pupils:** Follow the model and complete the guided task.
+
+## Activity 2 (20 minutes)
+**Teacher:** Follow Activity 1 and play the board game in groups.
+**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask for clarification and explain rules to peers.
+**Pupils:** Provide an observable response and revise after feedback.
+
+## Closure (5 minutes)
+**Teacher:** Reflect on effective communication.
+**Pupils:** Share a short answer or reflection.
+
+**PBD:** Assess the specified task against 2.2.2 and 1.2.4; for teacher-selected standards choose criteria before class.  
+**Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
