@@ -19,7 +19,7 @@
 **Pupils:** Listen with books closed and identify the theme.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow TB total physical response task and practise sports vocabulary.
+**Teacher:** Demonstrate sports actions from the TB response task, then guide pupils to respond and check their understanding.
 **Pupils:** Respond to sports vocabulary through actions.
 
 ## Closure (5 minutes)
