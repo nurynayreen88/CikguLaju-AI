@@ -23,7 +23,7 @@
 **Pupils:** Find supporting details and explain comprehension answers.
 
 ## Closure (5 minutes)
-**Teacher:** Invite pupils to share one fact about germs from the text, then conduct a short true-or-false recap.
+**Teacher:** Ask pupils to cite one fact about germs from the text and use it to justify a true-or-false response.
 **Pupils:** Answer a true-or-false quiz about germs.
 
 **PBD:** Check comprehension answers about germs against the information text and pupils' use of context to infer unfamiliar words (SP 3.2.2, 3.2.3).  
