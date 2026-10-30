@@ -15,11 +15,11 @@
 **Pupils:** Follow the listening instructions for Activity 4.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils identify details from the audio and discuss their meaning.
+**Teacher:** Play the Activity 4 recording twice. Ask pupils to note two details, then prompt them to explain each detail using evidence from what they heard.
 **Pupils:** Listen and identify details from the recording.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pairs describe people or objects mentioned in the activity.
+**Teacher:** Give pairs a description frame and listen to each pair describe a person or object mentioned in the recording; record accuracy and clarity.
 **Pupils:** Describe people or objects from the listening.
 
 ## Closure (5 minutes)
