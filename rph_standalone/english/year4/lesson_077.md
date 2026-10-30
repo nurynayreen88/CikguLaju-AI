@@ -15,11 +15,11 @@
 **Pupil action:** Read and listen to CLIL Activity 1 with Track 38.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils locate words such as strong and half in the text and match definitions.
+**Teacher action:** Model locating strong and half in the reading, then ask pupils to match target words to definitions using context clues.
 **Pupil action:** Find words such as strong and half and match meanings.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Complete TB Activity 2 and discuss information for the next poster project.
+**Teacher action:** Guide pupils through TB Activity 2 and elicit useful facts for the next food-health poster project.
 **Pupil action:** Complete Activity 2 and collect facts for a poster.
 
 ## Closure (5 minutes)
