@@ -23,7 +23,7 @@
 **Pupil action:** Play the game and describe food using collective nouns.
 
 ## Closure (5 minutes)
-**Teacher action:** Correct anonymous language errors together.
+**Teacher action:** Display two anonymous game-language errors and guide pupils to explain and correct them.
 **Pupil action:** Correct a language error from the activity.
 
 **PBD:** Observe food descriptions and understanding of board-game instructions, including clarification questions, against SP 2.1.5 and 2.2.2.  
