@@ -26,7 +26,7 @@
 **Teacher:** Share a reaction to the story.
 **Pupils:** Share a reaction to the story.
 
-**PBD:** Check responses against Reading 3.3.1 and Speaking 2.1.4.  
+**PBD:** Check pupils' prediction of The Curse, supporting reading details and spoken response (Reading 3.3.1; Speaking 2.1.4).  
 **Differentiation:** Vary prediction question complexity.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT; direct source/audio and Word/PDF QA pending.
