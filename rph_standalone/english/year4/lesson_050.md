@@ -26,7 +26,7 @@
 **Teacher:** Review useful clarification phrases.
 **Pupils:** Use one clarification phrase accurately.
 
-**PBD:** Observe lesson tasks against the selected standards (2.2.1; 1.2.5).  
+**PBD:** Observe when questions about dates and appropriate clarification phrases in paired dialogue (SP 2.2.1 and 1.2.5).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
