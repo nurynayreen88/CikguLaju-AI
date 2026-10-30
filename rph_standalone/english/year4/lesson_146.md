@@ -23,7 +23,7 @@
 **Pupils:** Perform an original dialogue.
 
 ## Closure (5 minutes)
-**Teacher:** Share a useful response.
+**Teacher:** Invite pupils to demonstrate one polite response to a health problem and explain when to use it.
 **Pupils:** Share a helpful response.
 
 **PBD:** Observe use of clarification and appropriate responses in the health-dialogue role-play (SP 2.2.1, 1.2.5).  
