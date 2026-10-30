@@ -11,7 +11,7 @@
 **Pupils:** Read examples of encouraging notes.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Discuss when and why people send them.
+**Teacher:** Ask pupils to identify suitable occasions for encouragement notes and explain why each recipient might need support.
 **Pupils:** Discuss when encouragement is helpful.
 
 ## Activity 2 (20 minutes)
