@@ -15,11 +15,11 @@
 **Pupils:** Follow the example and complete the first task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Discuss the sequence and character actions in pairs.
+**Teacher:** Groups explain what they liked about the story and predict its ending.
 **Pupils:** Carry out the specified reading, writing, listening or speaking task.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Retell the story to a partner with picture support.
+**Teacher:** Group narrators retell the story while other members act out events.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
