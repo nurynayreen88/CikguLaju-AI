@@ -7,7 +7,7 @@
 **References:** SB pp.84–85 Activities 3–4; TB p.127; Year 4 SOW Lesson 121
 
 ## Set induction (10 minutes)
-**Teacher:** Review dinosaurs using pictures and body-part vocabulary.
+**Teacher:** Show dinosaur pictures and ask pupils to label body parts before forming descriptive sentences.
 **Pupils:** Name dinosaur body parts.
 
 ## Activity 1 (15 minutes)
