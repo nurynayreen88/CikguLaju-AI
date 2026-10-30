@@ -26,7 +26,7 @@
 **Teacher:** Share a new word meaning.
 **Pupils:** Explain a new word.
 
-**PBD:** Assess the specified task against 3.2.2 and 3.2.4; for teacher-selected standards choose criteria before class.  
+**PBD:** Check dictionary lookup and text-supported answers to health reading questions (SP 3.2.2, 3.2.4).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
