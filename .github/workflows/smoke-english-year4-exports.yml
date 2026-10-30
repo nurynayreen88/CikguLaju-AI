@@ -42,6 +42,10 @@ jobs:
               assert zipfile.is_zipfile(docx), docx
               assert Document(docx).paragraphs, docx
               assert pdf.read_bytes().startswith(b'%PDF-'), pdf
-              assert len(PdfReader(str(pdf)).pages) > 0, pdf
+              pages = PdfReader(str(pdf)).pages
+              assert len(pages) > 0, pdf
+              pdf_text = '\\n'.join(page.extract_text() or '' for page in pages)
+              assert 'English Year 4' in pdf_text, pdf
+              print(f'Lesson {n:03d}: {len(pages)} PDF pages; one-page layout not yet verified')
           print('PASS: 3 DOCX and 3 PDF sample files structurally readable')
           PY
