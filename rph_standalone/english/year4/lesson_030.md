@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review spelling of household chores; leave difficult phrases on the board.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Recall spelling of household chores.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils write their own accurately spelled cards for the TB hot-card pantomime revision game.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Write correctly spelled cards for the pantomime game.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow TB Activity 1; pupils read and complete the written language task.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Read and complete the written Activity 1 task.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Activity 2 using CD2 Track 29; pupils respond to supported questions and check spelling.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Listen to Track 29, answer questions and check spelling.
 
 ## Closure (5 minutes)
 **Teacher:** Use optional hopscotch if time permits; pupils correct one spelling error.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Correct one spelling error.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Writing 4.3.2 and Listening 1.2.5.  
