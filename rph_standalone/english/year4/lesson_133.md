@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Quiz pupils on Chapter 3 events.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall Chapter 3 events.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Draw the red flower from the story.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Draw the red flower from the story.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow guidebook p.63 steps 1–3 and share answers using Flying Carpets activity.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Discuss guidebook questions in Flying Carpets groups.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Discuss why Mowgli calls it a red flower.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Explain why Mowgli uses the name red flower.
 
 ## Closure (5 minutes)
 **Teacher:** Explain a personal interpretation.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Share a personal interpretation.
 
 **PBD:** Assess the source-based task against 5.2.1 and 2.1.1; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
