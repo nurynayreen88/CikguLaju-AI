@@ -40,6 +40,14 @@ class CalendarIntegrityTests(unittest.TestCase):
             with self.assertRaises(CalendarDataError):
                 read_calendar_csv(path)
 
+    def test_unknown_state_rejected_from_csv_in_non_strict_mode(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = self.make_csv(folder)
+            with path.open("a", newline="", encoding="utf-8") as stream:
+                csv.writer(stream).writerow(["2027-01-01", "NEGERI REKAAN", "B", "CUTI"])
+            with self.assertRaises(CalendarDataError):
+                read_calendar_csv(path, strict=False)
+
     def test_unknown_state_rejected_by_school_day_query(self):
         with self.assertRaises(CalendarDataError):
             school_days({}, "NEGERI REKAAN", "2027-01-01", "2027-01-02")
