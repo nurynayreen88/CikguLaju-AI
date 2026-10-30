@@ -22,6 +22,8 @@
 **Teacher:** Guide Activities 3–4 and ask pupils to identify basketball as the sport the boys decide is best, then cite a listening clue supporting that answer.
 **Pupils:** Complete Activities 3–4 and report the suggested sport.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state the listening gist and give a reasoned opinion about one suggested sport.
 **Pupils:** State a personal opinion about the listening.
