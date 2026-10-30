@@ -15,11 +15,11 @@
 **Pupils:** Review building research and pictures.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Draft a paragraph about a famous building.
+**Teacher:** Model a topic sentence about a famous building, then guide pupils to draft a paragraph using their research notes.
 **Pupils:** Draft a paragraph describing a famous building.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Peer-check spelling, punctuation and descriptive details.
+**Teacher:** Provide a peer-review checklist for spelling, punctuation and factual descriptions, then ask pupils to revise their paragraphs.
 **Pupils:** Check spelling, punctuation and descriptive details.
 
 ## Closure (5 minutes)
