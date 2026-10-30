@@ -23,7 +23,7 @@
 **Pupils:** Write a description and reasons for the choice.
 
 ## Closure (5 minutes)
-**Teacher:** Gallery walk and peer feedback.
+**Teacher:** Organise a gallery walk and prompt pupils to give specific feedback on the clarity of each transport choice and reason.
 **Pupils:** Give peer feedback during a gallery walk.
 
 **PBD:** Assess written transport recommendations for accurate fare details and clear reasons against SP 4.2.1 and 4.2.4.  
