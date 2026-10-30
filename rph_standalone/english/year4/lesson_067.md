@@ -19,7 +19,7 @@
 **Pupil action:** Check meanings in the Student Book and complete Activity 1.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Complete TB Activity 3; compare food in the story with food at home.
+**Teacher action:** Guide TB Activity 3, then prompt pupils to compare food mentioned in the story with familiar food at home.
 **Pupil action:** Compare food in the story with food at home.
 
 ## Closure (5 minutes)
