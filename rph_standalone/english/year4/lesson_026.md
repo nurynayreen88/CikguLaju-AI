@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review imperative verbs through simple actions.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Follow action commands and recall imperative verbs.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read Clap your hands and follow CCL Activity 1, identifying command verbs.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read Clap your hands and identify command verbs.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow CCL Activity 2; pupils prepare a creative poem performance.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Prepare a creative performance of the poem.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils perform and use the peer checklist to provide feedback.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Perform and use a peer checklist for feedback.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils reflect on one successful performance choice.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Explain one successful performance choice.
 
 **PBD:** Check task responses against Language Arts 5.3.1 and Reading 3.3.1, recording individual progress.  
 **Differentiation:** Offer performance options according to pupils' learning preferences.  
