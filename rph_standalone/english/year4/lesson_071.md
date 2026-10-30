@@ -15,11 +15,11 @@
 **Pupil action:** Listen to Track 80 and complete Activity 4.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pairs discuss their answers and give opinions about their eating habits.
+**Teacher action:** Model a short opinion about an eating habit, then organise pair discussion and prompt pupils to give reasons.
 **Pupil action:** Discuss eating habits and give opinions in pairs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pupils write a sentence about a partner's food or drink habits.
+**Teacher action:** Give pupils a sentence frame and ask them to write one accurate sentence about a partner's eating or drinking habits.
 **Pupil action:** Write one sentence about a partner's habits.
 
 ## Closure (5 minutes)
