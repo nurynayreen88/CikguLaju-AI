@@ -23,7 +23,7 @@
 **Pupils:** Write a sports paragraph.
 
 ## Closure (5 minutes)
-**Teacher:** Share one detail heard.
+**Teacher:** Ask pupils to report one accurate interview detail and identify the listening clue that supported it.
 **Pupils:** Share one listening detail.
 
 **PBD:** Check details from three sports interviews and the follow-up paragraph against SP 1.2.2 and 4.3.3.  
