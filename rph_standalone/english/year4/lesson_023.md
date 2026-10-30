@@ -3,7 +3,7 @@
 **Topic:** My Week  
 **Main SP:** Speaking 2.1.4  
 **Complementary SP:** Writing 4.2.1  
-**References:** Pupils' timetables; paper strips; non-textbook  
+**References:** Pupils' timetables; paper strips; original sample in resources/lesson_023_timetable_opinion_DRAFT.md; non-textbook  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
