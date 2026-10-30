@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Model an email opening and a sentence joined with and or but, then guide pupils to draft, exchange and review emails about past trips.
-**Pupils:** Write and peer-review an email about a past trip using and/but.
+**Pupils:** Write and peer-review an email about a past trip using and/but. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to revise one connected sentence after peer feedback and explain their choice of conjunction.
