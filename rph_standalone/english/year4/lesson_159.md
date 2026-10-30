@@ -11,7 +11,7 @@
 **Pupils:** Observe how Readers' Theatre is performed.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow guidebook steps 1–3 and assign roles.
+**Teacher:** Explain guidebook steps 1–3, assign Readers' Theatre roles and check that each pupil understands their lines.
 **Pupils:** Read the script and take assigned roles.
 
 ## Activity 2 (20 minutes)
