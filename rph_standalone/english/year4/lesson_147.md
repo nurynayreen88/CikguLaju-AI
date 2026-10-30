@@ -19,7 +19,7 @@
 **Pupils:** Listen and answer the gist question.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete Activity 1 using Track 72 and answer with story evidence.
+**Teacher:** Play Track 72 for Activity 1, pause at key story events and ask pupils to answer with supporting details from the story.
 **Pupils:** Use story evidence to justify answers.
 
 ## Closure (5 minutes)
