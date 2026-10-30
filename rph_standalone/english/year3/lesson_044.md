@@ -13,7 +13,7 @@ Teacher leads the mime warm-up from Teacher's Book p.52. Pupils identify actions
 Teacher guides the picture guessing game from Student's Book p.29 Activity 4. Pupils ask and answer about actions.
 
 ## Activity 2 — Pair guessing game (25 minutes)
-Pupils prepare cut-out cards and play the speaking-and-listening guessing game from Teacher's Book p.52 Activity 1. Teacher monitors pronunciation and use of positive and negative present continuous sentences.
+Pupils prepare cut-out cards and play the speaking-and-listening guessing game from Teacher's Book p.52 Activity 1. Teacher monitors pronunciation and use of positive and negative present continuous sentences. Pupils complete Workbook p.21, Activity 2, by matching questions about actions to short answers.
 
 ## PBD (10 minutes)
 Teacher observes descriptive speaking and understanding of short questions. Pupils demonstrate one exchange.
