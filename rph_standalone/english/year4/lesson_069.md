@@ -26,7 +26,7 @@
 **Teacher action:** Accept suitable expressions and share answers.
 **Pupil action:** Share a suitable expression and its meaning.
 
-**PBD:** Check pupil responses and products against 5.2.1 and 3.3.1; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Observe character-feeling descriptions and suitable social expressions in Worksheet 5 against SP 5.2.1 and 3.3.1.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 69, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
