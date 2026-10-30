@@ -6,6 +6,7 @@ before copying and rolls back only files it created on failure.
 """
 from pathlib import Path
 from zipfile import ZipFile, BadZipFile
+from io import BytesIO
 import shutil
 import sys
 
@@ -34,6 +35,16 @@ def install(archive, destination):
                 raise ValueError("Unexpected asset type")
         if z.testzip() is not None:
             raise BadZipFile("Corrupted RPT ZIP archive")
+        for name in expected:
+            with z.open(name) as member:
+                data = member.read()
+            if not data.startswith(b"PK"):
+                raise BadZipFile(f"Invalid DOCX signature: {name}")
+            with ZipFile(BytesIO(data)) as doc:
+                if ("[Content_Types].xml" not in doc.namelist()
+                        or "word/document.xml" not in doc.namelist()
+                        or doc.testzip() is not None):
+                    raise BadZipFile(f"Invalid Word document: {name}")
         targets = [(name, destination / name) for name in sorted(expected)]
         for _, target in targets:
             if target.exists() or target.is_symlink():
