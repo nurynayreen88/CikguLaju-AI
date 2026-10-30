@@ -23,7 +23,7 @@
 **Pupils:** Narrate or act out the story.
 
 ## Closure (5 minutes)
-**Teacher:** Invite pupils to share one personal response and a reason based on the story.
+**Teacher:** Invite pupils to share one personal response and support it with a specific event from the story.
 **Pupils:** Share a personal response.
 
 **PBD:** Observe independent story reading and the clarity of group narration and acting against SP 3.3.1 and 2.3.1.  
