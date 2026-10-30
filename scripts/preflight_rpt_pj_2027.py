@@ -40,7 +40,7 @@ def preflight(archive, data_root):
         expected = {(state, year) for state in STATES for year in YEARS}
         found = {(item["negeri"].replace(" ", "_"), item["tahun"]) for item in catalogue}
         report["installed_count"] = len(found)
-        if found == expected:
+        if found == expected and len(catalogue) == len(expected):
             report["assets_installed"] = True
         else:
             report["problems"].append(f"Installed assets incomplete: {len(found)}/48")
