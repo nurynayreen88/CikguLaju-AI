@@ -25,6 +25,7 @@ def audit(root):
         "missing_documents": [],
         "calendar_records": 0,
         "calendar_valid": False,
+        "calendar_unverified_replacement_days": 0,
         "ready_for_manual_telegram_test": False,
     }
     have = {(item["negeri"].replace(" ", "_"), item["tahun"]) for item in available}
@@ -36,10 +37,15 @@ def audit(root):
         records = read_calendar_csv(snapshot, strict=True)
         result["calendar_records"] = len(records)
         result["calendar_valid"] = True
+        result["calendar_unverified_replacement_days"] = sum(
+            "BELUM AUDIT" in (row.get("Status PdP Dikira") or "").upper()
+            for row in records.values()
+        )
     except (CalendarDataError, FileNotFoundError, OSError) as exc:
         result["calendar_error"] = str(exc)
     result["ready_for_manual_telegram_test"] = (
         len(available) == expected and result["calendar_valid"]
+        and result["calendar_unverified_replacement_days"] == 0
     )
     return result
 
