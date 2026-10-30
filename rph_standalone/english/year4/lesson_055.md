@@ -1,15 +1,32 @@
-# English Year 4 Lesson 055 — Speaking 11
+# English Year 4 — Lesson 055
 
-Topic: Celebrations. Main SP: Speaking 2.2.2. Complementary SP: Speaking 2.1.1. References: SB p.39 Activity 5; TB p.65; CD1 Track 58. Duration: 60 minutes.
+**Topic:** Celebrations  
+**Main SP:** 2.2.2  
+**Complementary SP:** 2.1.1  
+**Duration:** 60 minutes  
+**References:** SB p.39 Activity 5; TB p.65; CD1 Track 58; Year 4 SOW Lesson 55
 
-Set induction (10 min): Teacher guides: Introduce future time expressions such as tomorrow and next week. Pupils complete the indicated skill task and respond to feedback.
+## Set induction (10 minutes)
+**Teacher:** Introduce tomorrow and next week.
+**Pupils:** Use future time expressions in short responses.
 
-Activity 1 (15 min): Teacher guides: Follow Activity 5 with Track 58 and model how to check task instructions. Pupils complete the indicated skill task and respond to feedback.
+## Activity 1 (15 minutes)
+**Teacher:** Follow Activity 5 with Track 58 and model clarification.
+**Pupils:** Listen and ask for clarification about task steps.
 
-Activity 2 (20 min): Teacher guides: Pupils interview a friend about tomorrow's plans and fill in a table. Pupils complete the indicated skill task and respond to feedback.
+## Activity 2 (20 minutes)
+**Teacher:** Organise interviews about tomorrow's plans.
+**Pupils:** Interview a partner and fill in a plan table.
 
-PBD and reinforcement (10 min): Teacher guides: Pupils exchange roles, present answers and check completion of task steps. Pupils complete the indicated skill task and respond to feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask pupils to exchange roles and present answers.
+**Pupils:** Swap roles, report plans and check task completion.
 
-Closure (5 min): Teacher guides: Reflect on going to and asking for clarification. Pupils complete the indicated skill task and respond to feedback.
+## Closure (5 minutes)
+**Teacher:** Review going to and clarification language.
+**Pupils:** Use going to and one polite clarification question.
 
-PBD: Observe the specified learning task and record evidence against Speaking 2.2.2 and Speaking 2.1.1. Differentiation: Provide source-based models, partner support or an extension task according to pupil needs. Source: Primary Year 4 SK SOW Lesson 55. Status: DRAFT; direct book/audio and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against SP 2.2.2 and 2.1.1.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
