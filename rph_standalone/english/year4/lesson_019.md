@@ -19,7 +19,7 @@
 **Pupils:** Read silently and identify the characters' location and timetable problem.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils explain the main idea and express an opinion; optional true/false story game.
+**Teacher:** Ask pupils to explain the story's main idea and give a reasoned opinion; use the optional true/false game if time allows.
 **Pupils:** Explain the main idea and give an opinion about the story.
 
 ## Closure (5 minutes)
