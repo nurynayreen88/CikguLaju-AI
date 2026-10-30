@@ -15,11 +15,11 @@
 **Pupils:** Read fares and departure times in advertisements.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs choose a public transport option for a tourist attraction.
+**Teacher:** Give pairs a tourist-attraction scenario and guide them to compare public transport options using price and departure-time information.
 **Pupils:** Choose a transport option for a tourist attraction.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Write descriptions and reasons for their choice.
+**Teacher:** Model a sentence giving a transport choice and reason, then guide pupils to write their own explanations.
 **Pupils:** Write a description and reasons for the choice.
 
 ## Closure (5 minutes)
