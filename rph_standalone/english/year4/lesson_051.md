@@ -26,7 +26,7 @@
 **Teacher:** Invite pupils to share costume ideas.
 **Pupils:** Share a costume idea using story vocabulary.
 
-**PBD:** Observe lesson tasks against the selected standards (3.3.1; 3.2.4).  
+**PBD:** Observe independent story reading and dictionary lookup of unfamiliar festival words (SP 3.3.1 and 3.2.4).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
