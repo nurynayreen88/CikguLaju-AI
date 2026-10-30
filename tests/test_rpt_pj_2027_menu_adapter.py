@@ -18,9 +18,10 @@ class TestRPTMenuAdapter(unittest.TestCase):
     def test_only_existing_documents_appear(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
+            (root / "RPT_PJ_2027_DOCX").mkdir()
             self.assertEqual(menu_states(root), [])
             self.assertEqual(menu_years(root, "Johor"), [])
-            file = root / FILE_PATTERN.format(state="Johor", year=4)
+            file = root / "RPT_PJ_2027_DOCX" / FILE_PATTERN.format(state="Johor", year=4)
             file.write_bytes(b"test")
             self.assertEqual(menu_states(root), ["Johor"])
             self.assertEqual(menu_years(root, "Johor"), [4])
