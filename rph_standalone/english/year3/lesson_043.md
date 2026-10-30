@@ -13,7 +13,7 @@ Teacher reviews action vocabulary and present continuous sentences. Pupils ident
 Teacher describes the picture on Student's Book p.29 with deliberate factual mistakes. Pupils listen and stop the teacher when they hear an error.
 
 ## Activity 2 — Listening and revision (25 minutes)
-Teacher guides Activity 3 using Teacher's Book p.51. Pupils then retrieve marked descriptions from Lesson 41, correct errors and rewrite neat final sentences with accurate spelling and punctuation.
+Teacher guides Activity 3 using Teacher's Book p.51. Pupils complete Workbook p.24, Activity 1, by correcting present continuous sentences about pictured actions. Pupils then retrieve marked descriptions from Lesson 41, correct errors and rewrite neat final sentences with accurate spelling and punctuation.
 
 ## PBD (10 minutes)
 Teacher checks specific listening details and revised writing. Pupils explain one correction.
