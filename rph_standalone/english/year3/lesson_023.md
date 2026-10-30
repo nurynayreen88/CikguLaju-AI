@@ -14,7 +14,7 @@ Teacher leads a miming game to review transport and routine vocabulary. Pupils g
 Teacher models present-simple questions about travelling to school or work, using Do you...? and Does your family member...? Pupils practise asking and answering.
 
 ## Activity 2 — Class survey (25 minutes)
-Teacher guides Student's Book p.17 Activity 4 and distributes survey worksheets. Pairs write one question, interview classmates and record yes/no answers.
+Teacher guides Student's Book p.17 Activity 4 and distributes survey worksheets. Pairs write one question, interview classmates and record yes/no answers. Pupils complete Workbook p.11, Activity 2, by matching people with transport and answering questions.
 
 ## PBD (10 minutes)
 Teacher listens to each pupil's question and response, and checks listening comprehension during the survey. Pupils report one result.
