@@ -11,7 +11,7 @@
 **Pupils:** Name dinosaur body parts.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Student's Book Activity 3 and Activity 4 with Teacher's Book page 127.
+**Teacher:** Guide Student's Book Activities 3–4 using Teacher's Book p.127 and check pupils' understanding of dinosaur descriptions.
 **Pupils:** Complete textbook activities in pairs.
 
 ## Activity 2 (20 minutes)
