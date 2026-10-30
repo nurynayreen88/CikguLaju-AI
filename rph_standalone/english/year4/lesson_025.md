@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review spelling of words for household chores.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Spell familiar household chore words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils list jobs they do at home and discuss their list with a partner.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** List home jobs and compare lists with a partner.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils add punctuation to a model paragraph and draft their own 'have to' paragraph.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Punctuate the model and draft a have to paragraph.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pairs exchange drafts, give feedback and rewrite the paragraph.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Exchange drafts, check punctuation and rewrite.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils identify one improvement made after feedback.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Identify one improvement after peer feedback.
 
 **PBD:** Check task responses against Writing 4.3.3 and Writing 4.3.1, recording individual progress.  
 **Differentiation:** Provide a model paragraph and pair support; extend drafts for confident writers.  
