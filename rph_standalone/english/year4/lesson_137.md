@@ -23,7 +23,7 @@
 **Pupils:** Check sentences against the text and correct mistakes.
 
 ## Closure (5 minutes)
-**Teacher:** Share a corrected sentence.
+**Teacher:** Invite pupils to read a revised sports description and explain one correction.
 **Pupils:** Read an improved sentence.
 
 **PBD:** Assess written sports descriptions for correct superlatives and supporting details from the text (SP 4.2.4, 3.2.2).  
