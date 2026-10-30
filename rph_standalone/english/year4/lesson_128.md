@@ -23,7 +23,7 @@
 **Pupils:** Complete self-assessment and identify difficulties.
 
 ## Closure (5 minutes)
-**Teacher:** Set a review target.
+**Teacher:** Guide pupils to choose a specific Unit 8 revision goal.
 **Pupils:** State one revision target.
 
 **PBD:** Assess the source-based task against Teacher-selected DSKP SP and Teacher-selected DSKP SP; choose relevant criteria for Language Awareness.  
