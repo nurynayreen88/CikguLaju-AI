@@ -26,7 +26,7 @@
 **Teacher:** Share a useful health fact.
 **Pupils:** Answer a true-or-false quiz about germs.
 
-**PBD:** Assess the specified task against 3.2.2 and 3.2.3; for teacher-selected standards choose criteria before class.  
+**PBD:** Check comprehension answers about germs against the information text and pupils' use of context to infer unfamiliar words (SP 3.2.2, 3.2.3).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
