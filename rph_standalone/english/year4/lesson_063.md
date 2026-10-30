@@ -1,15 +1,32 @@
-# English Year 4 Lesson 063 — Language Arts 12
+# English Year 4 — Lesson 063
 
-Topic: The King of Kites. Main SP: Language Arts 5.2.1. Complementary SP: Writing 4.2.4. References: CCL Short Story Guide Worksheets 6a p.38 and 6b p.39. Duration: 60 minutes.
+**Topic:** The King of Kites  
+**Main SP:** 5.2.1  
+**Complementary SP:** 4.2.4  
+**Duration:** 60 minutes  
+**References:** CCL Short Story Guide Worksheets 6a p.38 and 6b p.39; Year 4 SOW Lesson 63
 
-Set induction (10 min): Teacher guides: Review adjectives used to describe story characters. Pupils complete the indicated skill task and respond to feedback.
+## Set induction (10 minutes)
+**Teacher:** Review adjectives describing story characters.
+**Pupils:** Recall character adjectives from the story.
 
-Activity 1 (15 min): Teacher guides: Model friendly, honest and kind as character adjectives. Pupils complete the indicated skill task and respond to feedback.
+## Activity 1 (15 minutes)
+**Teacher:** Model friendly, honest and kind.
+**Pupils:** Describe characters using suitable adjectives.
 
-Activity 2 (20 min): Teacher guides: Groups complete Worksheets 6a and 6b with suitable descriptions. Pupils complete the indicated skill task and respond to feedback.
+## Activity 2 (20 minutes)
+**Teacher:** Distribute Worksheets 6a and 6b for group descriptions.
+**Pupils:** Complete the worksheets with suitable descriptions.
 
-PBD and reinforcement (10 min): Teacher guides: Pupils explain adjectives chosen for the pictured characters. Pupils complete the indicated skill task and respond to feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask groups to justify adjectives for pictured characters.
+**Pupils:** Explain the adjectives chosen for characters.
 
-Closure (5 min): Teacher guides: Pupils revise answers after teacher feedback. Pupils complete the indicated skill task and respond to feedback.
+## Closure (5 minutes)
+**Teacher:** Give feedback on the written answers.
+**Pupils:** Revise one answer using feedback.
 
-PBD: Observe the specified learning task and record evidence against Language Arts 5.2.1 and Writing 4.2.4. Differentiation: Provide source-based models, partner support or an extension task according to pupil needs. Source: Primary Year 4 SK SOW Lesson 63. Status: DRAFT; direct book/audio and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against SP 5.2.1 and 4.2.4.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
