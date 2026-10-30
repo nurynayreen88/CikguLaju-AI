@@ -30,4 +30,5 @@
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
+**Workbook:** Optional reinforcement using a matching workbook activity, subject to page and activity verification.
 **Status:** DRAFT — source and Word/PDF QA pending.
