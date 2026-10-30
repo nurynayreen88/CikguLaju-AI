@@ -9,6 +9,7 @@ from rpt_pj_2027_delivery import FILE_PATTERN, STATES, YEARS
 class TestInstallRPTAssets(unittest.TestCase):
     def make_zip(self, archive):
         with zipfile.ZipFile(archive, "w") as z:
+            z.writestr("README.txt", "RPT PJ 2027 staging assets")
             for state in STATES:
                 for year in YEARS:
                     z.writestr("RPT_PJ_2027_DOCX/" +
