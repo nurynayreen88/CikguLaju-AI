@@ -23,7 +23,7 @@
 **Pupils:** Ask clarification questions and respond appropriately in pairs.
 
 ## Closure (5 minutes)
-**Teacher:** Invite pupils to describe a favourite dish.
+**Teacher:** Invite pupils to describe a favourite dish using want or need and at least one ingredient word.
 **Pupils:** Name ingredients needed for a favourite dish.
 
 **PBD:** Observe clarification questions and listening responses against SP 2.2.1 and 1.2.5.  
