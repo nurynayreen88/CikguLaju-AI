@@ -31,6 +31,9 @@ def verify(archive):
         if any(i.filename.startswith("/") or "\\" in i.filename or
                ".." in i.filename.split("/") for i in members):
             return ["Unsafe archive member path"]
+        if any(((i.external_attr >> 16) & 0o170000) == 0o120000
+               for i in members):
+            return ["Symbolic links are not allowed in RPT archive"]
         if any(i.flag_bits & 1 for i in members):
             return ["Encrypted archive members are not supported"]
         if any(i.file_size > 15_000_000 for i in members if not i.is_dir()):
