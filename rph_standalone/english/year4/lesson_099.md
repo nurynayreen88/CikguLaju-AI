@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce camping using pictures or objects.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Describe camping pictures and objects.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read the camping story with Activity 1.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read the camping story in Activity 1.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Identify Whose questions and ownership clues.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Identify Whose questions and ownership clues.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs answer story questions and explain answers.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Answer story questions and explain evidence.
 
 ## Closure (5 minutes)
 **Teacher:** Share an item and its owner.
-**Pupils:** Share one result or reflection.
+**Pupils:** Name an item and its owner.
 
 **PBD:** Assess task responses against 3.3.1 and 1.2.3; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
