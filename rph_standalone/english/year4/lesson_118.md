@@ -7,7 +7,7 @@
 **References:** Teacher-prepared listening on endangered Malaysian animals; pictures; Primary Year 4 SK SOW Lesson 118
 
 ## Set induction (10 minutes)
-**Teacher:** Review comparative adjectives with animal pictures.
+**Teacher:** Use two animal pictures to elicit comparative adjectives and check the meaning of each comparison.
 **Pupils:** Compare animal pictures using familiar adjectives.
 
 ## Activity 1 (15 minutes)
