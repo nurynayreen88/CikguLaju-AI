@@ -7,7 +7,7 @@
 **References:** SB p.108 Activity 1; TB p.159; board-game instructions; Primary Year 4 SOW Lesson 156
 
 ## Set induction (10 minutes)
-**Teacher:** Play a word game to review vocabulary.
+**Teacher:** Lead a short word game and check pupils' recall of advice and home-safety vocabulary.
 **Pupils:** Recall advice vocabulary.
 
 ## Activity 1 (15 minutes)
