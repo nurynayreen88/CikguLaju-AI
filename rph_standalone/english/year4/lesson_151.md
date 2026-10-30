@@ -1,25 +1,25 @@
 # English Year 4 — Lesson 151: Speaking 29
 
-**Topic:** Teacher to complete  
+**Topic:** Learning English  
 **Main SP:** 2.1.1  
 **Complementary SP:** 1.2.5  
 **Duration:** 60 minutes  
 **References:** SOW Lesson 151; ICT / Creativity and Innovation; Primary Year 4 SOW Lesson 151
 
 ## Set induction (10 minutes)
-**Teacher:** Introduce a teacher-selected ICT topic.
+**Teacher:** Introduce English learning resources including games and stories.
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Model questions and answers about the selected topic.
+**Teacher:** Model advice using should and shouldn't to improve English.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs exchange information and ask supported follow-up questions.
+**Teacher:** Pairs ask for advice on learning English in school and at home.
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils present a brief opinion with reasons.
+**Teacher:** Pupils explain why particular learning habits are helpful.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
