@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review body parts and health vocabulary.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Label familiar body parts.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Show a model poster giving advice on keeping healthy.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read and discuss advice on the sample poster.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils label body parts and draft should/shouldn't advice on a health poster.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Draft a poster with body labels and should/shouldn't advice.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils use dictionaries to correct spelling and revise their poster.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Check spelling in a dictionary and revise the poster.
 
 ## Closure (5 minutes)
 **Teacher:** Display the poster and share one health tip.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Display posters and share a health tip.
 
 **PBD:** Assess the specified task against 4.3.3 and 4.3.2; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
