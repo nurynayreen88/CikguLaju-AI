@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Ask how pupils would plan to defeat Shere Khan as Mowgli.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Suggest a plan as Mowgli.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Share and compare ideas.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Compare ideas in small groups.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow guidebook p.68 steps 1–4 to create an imaginative response.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Create a story or poem using the guidebook tasks.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Present the response as a story or poem; assess group work using p.128 form.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Present the creative work and use assessment criteria.
 
 ## Closure (5 minutes)
 **Teacher:** Share constructive feedback.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Give constructive feedback.
 
 **PBD:** Assess the source-based task against 5.3.1 and 2.3.1; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
