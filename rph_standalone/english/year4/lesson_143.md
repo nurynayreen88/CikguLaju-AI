@@ -23,7 +23,7 @@
 **Pupils:** Describe Mowgli's feelings and support opinions with story details.
 
 ## Closure (5 minutes)
-**Teacher:** Model legible cursive and ask pupils to write the lesson poem.
+**Teacher:** Demonstrate legible cursive joins, then guide pupils to write and check the lesson poem for readability.
 **Pupils:** Copy the lesson poem in cursive and check letter formation.
 
 **PBD:** Observe supported explanations of character feelings and legible cursive writing (SP 5.2.1, 4.1.2).  
