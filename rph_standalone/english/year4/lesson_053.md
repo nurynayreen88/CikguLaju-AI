@@ -7,7 +7,7 @@
 **References:** CCL Short Story Guide; story pp.9–10; Year 4 SOW Lesson 53
 
 ## Set induction (10 minutes)
-**Teacher:** Review kite-making and sewing words.
+**Teacher:** Show kite-making materials and elicit relevant sewing and design vocabulary before the story task.
 **Pupils:** Recall the story characters and materials.
 
 ## Activity 1 (15 minutes)
