@@ -46943,3 +46943,27 @@ def _handle_timetable_upload_v25281(cid, m):
         return _tt_reader_upgrade_notice_20261029(cid)
     return _TT_PAID_PREVIOUS_HANDLER_20261029(cid, m)
 # === END TIMETABLE READER PAID ACCESS GATE ===
+
+# === RPT PJ 2027 v76 — OPT-IN, FAIL-CLOSED CALLBACK ROUTE ===
+# Disabled until the 48 verified Word assets are provisioned on Render.
+_RPT_PJ_2027_PREVIOUS_CALLBACK = callback
+def callback(cid, d):
+    _rpt_pj_enabled = os.getenv('CIKGULAJU_RPT_PJ_2027_ENABLED', '').strip() == '1'
+    if _rpt_pj_enabled and isinstance(d, str) and (
+            d.startswith('rpt2027_year_') or d.startswith('rpt2027_pj_')):
+        try:
+            from rpt_pj_2027_app_bridge import route as _rpt_pj_route
+            _rpt_pj_root = os.getenv('CIKGULAJU_RPT_PJ_2027_DATA_ROOT', '').strip()
+            if not _rpt_pj_root:
+                raise RuntimeError('RPT PJ asset root is not configured')
+            def _rpt_pj_authorized(user_id):
+                return bool(_is_admin(user_id) or _access_info(user_id).get('active'))
+            if _rpt_pj_route(cid, d, _rpt_pj_root, send=send,
+                             send_document=send_document,
+                             allowed=_rpt_pj_authorized):
+                return
+        except Exception as _rpt_pj_error:
+            print('RPT PJ 2027 route unavailable:', repr(_rpt_pj_error), flush=True)
+            return send(cid, 'RPT Pendidikan Jasmani 2027 belum tersedia. Sila cuba kemudian.')
+    return _RPT_PJ_2027_PREVIOUS_CALLBACK(cid, d)
+# === END RPT PJ 2027 OPT-IN ROUTE ===
