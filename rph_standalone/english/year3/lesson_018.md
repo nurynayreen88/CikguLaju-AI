@@ -14,7 +14,7 @@ Teacher plays the daily routine song. Pupils sing and mime.
 Teacher reviews routine flashcards and matching word cards. Pupils match words and pictures, then practise adverbs of frequency.
 
 ## Activity 2 — Speaking task (25 minutes)
-Teacher guides the routine table and speaking activity on Student's Book p.15. Pupils record their own routines, mingle and ask classmates about their daily activities.
+Teacher guides the routine table and speaking activity on Student's Book p.15. Pupils record their own routines, mingle and ask classmates about their daily activities. Pupils complete Workbook p.10, Activity 1, by writing daily-routine phrases from the pictures.
 
 ## PBD (10 minutes)
 Teacher observes spoken exchanges and checks written routine records. Pupils demonstrate both skills.
