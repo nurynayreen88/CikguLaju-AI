@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Prompt pupils to extend their instructions and describe what happened using a clear action sequence.
-**Pupils:** Give longer instructions and describe what happened.
+**Pupils:** Give longer instructions and describe what happened. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to demonstrate one clear action sequence using appropriate ordering words.
