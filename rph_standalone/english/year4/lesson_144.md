@@ -15,7 +15,7 @@
 **Pupils:** Complete Revision 9 Activities 1–3.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Use formative evidence to plan targeted language practice.
+**Teacher:** Identify one common Unit 9 error from pupil responses and guide a focused correction exercise.
 **Pupils:** Practise language targets identified through assessment.
 
 ## Reinforcement / PBD (10 minutes)
