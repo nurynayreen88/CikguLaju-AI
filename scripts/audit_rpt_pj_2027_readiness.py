@@ -10,9 +10,10 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from rpt_pj_2027_delivery import STATES, YEARS, list_available
 from rpt_pj_2027_calendar import read_calendar_csv, CalendarDataError
+from rpt_pj_2027_release_policy import calendar_release_status
 
 
-def audit(root):
+def audit(root, *, final_audit_rows=(), release_rows=()):
     root = Path(root)
     expected = len(STATES) * len(YEARS)
     available = list_available(root)
@@ -26,6 +27,7 @@ def audit(root):
         "calendar_records": 0,
         "calendar_valid": False,
         "calendar_unverified_replacement_days": 0,
+        "final_audit_verified": False,
         "ready_for_manual_telegram_test": False,
     }
     have = {(item["negeri"].replace(" ", "_"), item["tahun"]) for item in available}
@@ -37,6 +39,8 @@ def audit(root):
         records = read_calendar_csv(snapshot, strict=True)
         result["calendar_records"] = len(records)
         result["calendar_valid"] = True
+        decision = calendar_release_status(records, final_audit_rows, release_rows)
+        result["final_audit_verified"] = decision["approved"]
         result["calendar_unverified_replacement_days"] = sum(
             "BELUM AUDIT" in (row.get("Status PdP Dikira") or "").upper()
             for row in records.values()
@@ -45,7 +49,7 @@ def audit(root):
         result["calendar_error"] = str(exc)
     result["ready_for_manual_telegram_test"] = (
         len(available) == expected and result["calendar_valid"]
-        and result["calendar_unverified_replacement_days"] == 0
+        and result["final_audit_verified"]
     )
     return result
 
