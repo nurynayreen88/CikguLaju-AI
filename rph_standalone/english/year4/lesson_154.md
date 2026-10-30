@@ -22,7 +22,7 @@
 **Teacher:** Invite groups to present their creative work and explain which story detail supports their main idea.
 **Pupils:** Present work and support opinions with story details.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up task based on The Jungle Book graphic novel and Teaching Guidebook; a Workbook page is not prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Organise a gallery walk and prompt pupils to give one evidence-based strength and one constructive suggestion.
