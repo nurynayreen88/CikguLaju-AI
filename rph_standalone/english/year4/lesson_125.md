@@ -22,6 +22,8 @@
 **Teacher:** Assign a narrator and actors in each group. Observe whether the retelling follows the story sequence and whether spoken narration is understandable.
 **Pupils:** Narrate or act out the story.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to share one personal response and support it with a specific event from the story.
 **Pupils:** Share a personal response.
