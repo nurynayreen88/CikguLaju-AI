@@ -26,7 +26,7 @@
 **Teacher:** Review celebration vocabulary.
 **Pupils:** Sort vocabulary by celebration and share a response.
 
-**PBD:** Observe lesson tasks against SP 3.2.1 and 3.2.2.  
+**PBD:** Check identification of the countries and main ideas in celebration texts and accurate answers to Activity 2 (SP 3.2.1, 3.2.2).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
