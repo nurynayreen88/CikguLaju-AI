@@ -15,11 +15,11 @@
 **Pupils:** Learn background words using Track 42.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Predict what Carter and Carnarvon found, then read The Curse silently.
+**Teacher:** Ask pupils to predict what Carter and Carnarvon found using picture clues, then assign silent reading of The Curse.
 **Pupils:** Predict the discovery and read The Curse silently.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Check predictions with reasons and discuss an interesting story detail.
+**Teacher:** Invite pupils to check their predictions against the text, explain their evidence and discuss one interesting story detail.
 **Pupils:** Check predictions with evidence from the story.
 
 ## Closure (5 minutes)
