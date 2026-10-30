@@ -26,7 +26,7 @@
 **Teacher:** Review listening gist and personal opinions.
 **Pupils:** State a personal opinion about the listening.
 
-**PBD:** Assess the source-based task against 1.2.1 and 2.1.1; choose relevant criteria for Language Awareness.  
+**PBD:** Check identification of sports in Track 60 and spoken recommendations supported by listening (SP 1.2.1, 2.1.1).  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
