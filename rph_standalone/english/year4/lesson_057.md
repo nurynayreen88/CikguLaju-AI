@@ -26,7 +26,7 @@
 **Teacher:** Ask for a specific improvement made after feedback.
 **Pupils:** Identify one improvement in the revised paragraph.
 
-**PBD:** Observe lesson tasks against SP 4.3.3 and 4.3.1.  
+**PBD:** Assess celebration paragraphs for relevant who, what and when details, spelling and punctuation (SP 4.3.3, 4.3.1).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
