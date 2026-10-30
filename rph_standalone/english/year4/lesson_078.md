@@ -19,7 +19,7 @@
 **Pupil action:** Write poster text neatly in cursive and check spelling.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Groups present posters and complete the Unit 5 self-assessment.
+**Teacher action:** Organise poster presentations, ask peers to identify one accurate health fact and guide Unit 5 self-assessment.
 **Pupil action:** Present posters and complete Unit 5 self-assessment.
 
 ## Closure (5 minutes)
