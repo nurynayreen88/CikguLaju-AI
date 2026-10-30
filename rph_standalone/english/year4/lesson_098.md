@@ -15,11 +15,11 @@
 **Pupils:** Practise the vocabulary and cursive writing.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Use Track 22 to practise present continuous.
+**Teacher:** Play Track 22, model a present-continuous sentence and check pupils' spoken responses against the recording.
 **Pupils:** Use Track 22 to practise present continuous sentences.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs mime and describe past experiences of helping others.
+**Teacher:** Organise a mime-and-describe pair task, prompting pupils to distinguish actions happening now from past experiences.
 **Pupils:** Mime and describe experiences of helping others.
 
 ## Closure (5 minutes)
