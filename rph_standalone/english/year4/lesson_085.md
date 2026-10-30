@@ -26,7 +26,7 @@
 **Teacher:** Share a kind action.
 **Pupils:** Share one kind action.
 
-**PBD:** Assess task responses against 5.3.1 and 1.2.3; teacher selects specific criteria for Language Awareness.  
+**PBD:** Observe comparisons between the friendship song and The King of Kites using the double-bubble map against SP 5.3.1 and 1.2.3.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
