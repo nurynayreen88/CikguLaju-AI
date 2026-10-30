@@ -11,7 +11,7 @@
 **Pupils:** Act out and name health problems.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Study a model text-message conversation.
+**Teacher:** Display a model text-message conversation and highlight the symptom, reply and polite expression.
 **Pupils:** Identify an offer and a reason in the model messages.
 
 ## Activity 2 (20 minutes)
