@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce Grandma's House using household-item toys and shoeboxes.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Identify household items used in the poem activity.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow CCL Activity 1 steps 1–4 and 6–8; pupils complete Worksheet 1.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Complete Worksheet 1 using the guidebook steps.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 4 step 2; pupils construct a shoebox diorama.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Construct a shoebox diorama of Grandma's House.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils describe their dioramas and answer supported questions about the objects.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Describe the diorama and answer questions about objects.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils describe the diorama in at least four sentences.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Describe the completed diorama in four sentences.
 
 **PBD:** Check task responses against Language Arts 5.3.1 and Listening 1.2.5, recording individual progress.  
 **Differentiation:** Allow extra construction time and check progress at an agreed time.  
