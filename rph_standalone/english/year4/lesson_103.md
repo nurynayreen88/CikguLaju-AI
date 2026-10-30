@@ -19,7 +19,7 @@
 **Pupils:** Listen to Track 26 and practise ownership questions.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pupils draw their belongings and classmates guess whose they are.
+**Teacher:** Ask pupils to sketch one belonging without naming its owner. Model a 'Whose ...?' question, then organise a guessing exchange and check possessive pronouns.
 **Pupils:** Draw belongings and guess their owners.
 
 ## Closure (5 minutes)
