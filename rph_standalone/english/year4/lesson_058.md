@@ -23,7 +23,7 @@
 **Pupils:** Present the ordered story events with a partner.
 
 ## Closure (5 minutes)
-**Teacher:** Ask pupils how an event made them feel.
+**Teacher:** Ask pupils to name a story event, describe the feeling it evokes and explain their reason.
 **Pupils:** Describe a feeling about a story event.
 
 **PBD:** Observe accurate ordering of The King of Kites story events and supported personal responses (SP 5.2.1, 3.3.1).  
