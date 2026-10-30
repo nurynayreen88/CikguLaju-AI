@@ -15,7 +15,7 @@ BASE = ROOT / "rph_standalone" / "english" / "year4"
 
 
 def plain_markdown(line: str) -> str:
-    return re.sub(r"\\*\\*|\\*|\\`", "", line).strip()
+    return line.replace("**", "").replace("*", "").replace("`", "").strip()
 
 
 def source_lines(lesson: int) -> list[str]:
