@@ -11,7 +11,7 @@
 **Pupils:** Recall health words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Check two to four new words in a monolingual dictionary.
+**Teacher:** Demonstrate looking up one health-related word in a monolingual dictionary, then ask pupils to check two to four unfamiliar words and explain their meanings.
 **Pupils:** Look up unfamiliar words.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Listen and read for context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete Activity 1 using CD2 Track 76 and Activity 2 on should or shouldn't.
+**Teacher:** Play CD2 Track 76 for Activity 1, guide pupils to check their listening answers, then model one should or shouldn't sentence before Activity 2.
 **Pupils:** Answer reading questions with evidence.
 
 ## Closure (5 minutes)
