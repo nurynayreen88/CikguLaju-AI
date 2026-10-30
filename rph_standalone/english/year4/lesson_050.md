@@ -15,7 +15,7 @@
 **Pupils:** Listen and practise when questions.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Organise pairs to discuss celebration dates and clarify answers.
+**Teacher:** Model a when question and clarification response, then organise pairs to exchange celebration dates and check understanding.
 **Pupils:** Ask about dates and use clarification phrases.
 
 ## Reinforcement / PBD (10 minutes)
