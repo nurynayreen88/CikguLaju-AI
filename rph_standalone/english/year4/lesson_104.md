@@ -15,15 +15,15 @@
 **Pupils:** Listen to Track 27 and identify recycling words.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Read the recycling text and match headings to paragraphs.
+**Teacher:** Model matching the first paragraph to a heading by identifying its main idea, then guide pupils to read the remaining paragraphs and match their headings.
 **Pupils:** Read and match headings to recycling paragraphs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Follow Activity 1 Track 28, Grammar Box and Activity 2.
+**Teacher:** Use the relevant Activity 1 and 2 questions to check whether pupils can identify the main idea and point to supporting details. Follow the TB guidance for the recording and Grammar Box where applicable.
 **Pupils:** Complete Activities 1–2 with Track 28.
 
 ## Closure (5 minutes)
-**Teacher:** Share one recycling fact.
+**Teacher:** Ask pupils to state one recycling fact and identify the paragraph where they found it.
 **Pupils:** State one fact about recycling.
 
 **PBD:** Record whether pupils identify the recycling text's main idea, match paragraph headings and locate supporting details in Activities 1–2 (SP 3.2.1, 3.2.2).  
