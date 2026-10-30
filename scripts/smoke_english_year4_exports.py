@@ -27,6 +27,32 @@ def source_lines(lesson: int) -> list[str]:
     return source.read_text(encoding="utf-8").splitlines()
 
 
+
+# QA-only metadata must never be mistaken for classroom content.
+QA_SECTION_MARKERS = (
+    "source mapping", "source audio", "direct textbook verification",
+    "verified mapping", "verified source", "sow direct verification",
+    "verification notes", "audit", "source verification",
+)
+QA_FIELD_MARKERS = ("**status:**", "**qa status:**", "**verification:**")
+
+
+def classroom_lines(lines: list[str]) -> list[str]:
+    """Keep teaching instructions; omit audit appendices and release flags."""
+    result: list[str] = []
+    in_qa_section = False
+    for line in lines:
+        if line.startswith("## "):
+            heading = line[3:].lower()
+            in_qa_section = any(marker in heading for marker in QA_SECTION_MARKERS)
+        if in_qa_section:
+            continue
+        if line.strip().lower().startswith(QA_FIELD_MARKERS):
+            continue
+        result.append(line)
+    return result
+
+
 def make_docx(lines: list[str], destination: Path) -> None:
     from docx import Document
     from docx.shared import Cm, Pt
@@ -85,7 +111,7 @@ def main() -> None:
     parser.add_argument("--lesson", type=int, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
-    lines = source_lines(args.lesson)
+    lines = classroom_lines(source_lines(args.lesson))
     args.output_dir.mkdir(parents=True, exist_ok=True)
     docx = args.output_dir / f"year4_lesson_{args.lesson:03d}_SMOKE.docx"
     pdf = args.output_dir / f"year4_lesson_{args.lesson:03d}_SMOKE.pdf"
