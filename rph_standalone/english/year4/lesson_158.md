@@ -23,7 +23,7 @@
 **Pupils:** Identify original safety ideas and revise punctuation.
 
 ## Closure (5 minutes)
-**Teacher:** Complete end-of-year self-assessment.
+**Teacher:** Guide end-of-year self-assessment and help pupils choose one language skill to practise next.
 **Pupils:** Complete an end-of-year self-assessment.
 
 **PBD:** Assess safety posters for understandable instructions, accurate punctuation and clarity of group explanations (SP 4.3.3, 2.2.2).  
