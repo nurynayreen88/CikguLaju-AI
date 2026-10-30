@@ -26,7 +26,7 @@
 **Teacher:** Recall one key listening detail.
 **Pupils:** Recall one key listening detail.
 
-**PBD:** Observe the named learning task against 1.2.2 and 2.1.5; for teacher-selected standards, establish criteria before class.  
+**PBD:** Record accuracy of details identified from Activity 4 listening and clarity of oral descriptions against SP 1.2.2 and 2.1.5.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
