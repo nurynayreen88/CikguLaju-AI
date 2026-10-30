@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Review containers such as a cup of tea and a bottle of water.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Name food and drink containers.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Follow TB Activity 4 with Track 80.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Listen to Track 80 and complete Activity 4.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pairs discuss their answers and give opinions about their eating habits.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Discuss eating habits and give opinions in pairs.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Pupils write a sentence about a partner's food or drink habits.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Write one sentence about a partner's habits.
 
 ## Closure (5 minutes)
 **Teacher action:** Discuss why a balanced diet matters.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Explain one reason to eat a balanced diet.
 
 **PBD:** Check pupil responses and products against 2.1.1 and 4.2.3; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
