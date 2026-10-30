@@ -4,7 +4,7 @@
 **Main SP:** 3.2.1  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.40 Activities 1–2; TB pp.66–67; CD1 Track 59; Year 4 SOW Lesson 56
+**References:** SB p.40 Activities 1–2; TB pp.66–67; Vocabulary CD1 Track 59 (KPM SOW); Year 4 SOW Lesson 56
 
 ## Set induction (10 minutes)
 **Teacher:** Show pictures of celebrations and introduce the topic.
