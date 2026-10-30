@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Examine a short sports-themed writing model.
+**Teacher:** Model a written invitation to a class mini competition.
 **Pupils:** Follow the example and complete the first task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils plan a short written response about a sport and its features.
+**Teacher:** Groups plan a competition, write invitations, and record results.
 **Pupils:** Carry out the specified reading, writing, listening or speaking task.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Draft, check and improve a short text using appropriate language.
+**Teacher:** Guide pupils to write a connected paragraph reporting competition results using conjunctions.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
