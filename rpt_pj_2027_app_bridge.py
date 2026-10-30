@@ -12,7 +12,11 @@ def route(cid, data, root, *, send, send_document, allowed):
         return False
     if not (data.startswith("rpt2027_pj_") or data.startswith("rpt2027_year_")):
         return False
-    # The legacy callback receives a chat ID, not the callback sender ID.\n    # Only private chats have matching chat/user IDs; never authorize groups.\n    if type(cid) is not int or cid <= 0:\n        send(cid, "Sila buka CikguLaju melalui chat peribadi untuk muat turun RPT.")\n        return True\n    if not allowed(cid):
+    # The legacy callback receives a chat ID, not the callback sender ID.\n    # Only private chats have matching chat/user IDs; never authorize groups.\n    if type(cid) is not int or cid <= 0:\n        send(cid, "Sila buka CikguLaju melalui chat peribadi untuk muat turun RPT.")\n        return True\n    try:
+        entitled = allowed(cid) is True
+    except Exception:
+        entitled = False
+    if not entitled:
         send(cid, "🔒 RPT 2027 memerlukan akses Rakan Pembangun atau langganan aktif.")
         return True
     available = {(row["negeri"].replace(" ", "_"), row["tahun"])
