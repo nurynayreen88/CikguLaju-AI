@@ -22,6 +22,8 @@
 **Teacher:** Model the /eə/ sound in pear, then guide pupils to identify and pronounce matching words in Activity 1.
 **Pupils:** Complete the listening activity and identify the /eə/ sound in words.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one inferred song-word meaning and pronounce a word containing the target /eə/ sound.
 **Pupils:** Explain one inferred word and pronounce one /eə/ example.
