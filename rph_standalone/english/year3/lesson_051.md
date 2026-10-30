@@ -13,7 +13,7 @@ Teacher asks for today's day and month. Pupils answer.
 Teacher distributes cut-up day and month cards. Pupils order them and read the words aloud.
 
 ## Activity 2 — Reading (25 minutes)
-Teacher guides Student's Book p.36 Activity 1 using Teacher's Book p.62. Pupils read the story, identify the main idea and discuss clues that indicate the season, such as falling leaves.
+Teacher guides Student's Book p.36 Activity 1 using Teacher's Book p.62. Pupils read the story, identify the main idea and discuss clues that indicate the season, such as falling leaves. Pupils complete Workbook p.31, Activity 1, by matching the story pictures with the correct answers.
 
 ## PBD (10 minutes)
 Pupils state the main idea of the reading text and recount two relevant details orally.
