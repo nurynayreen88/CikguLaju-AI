@@ -11,7 +11,7 @@
 **Pupils:** Recall helping-out words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB Activity 4 listening instructions.
+**Teacher:** Explain the listening goal for TB Activity 4 and preview the type of details pupils should identify.
 **Pupils:** Follow the listening instructions for Activity 4.
 
 ## Activity 2 (20 minutes)
