@@ -7,7 +7,7 @@
 **References:** SB p.103 Activity 1; TB p.152; Year 4 SOW Lesson 145
 
 ## Set induction (10 minutes)
-**Teacher:** Display health flashcards and elicit familiar symptoms and expressions.
+**Teacher:** Display health flashcards and ask pupils to match common symptoms to suitable expressions.
 **Pupils:** Name symptoms and match them to picture clues.
 
 ## Activity 1 (15 minutes)
