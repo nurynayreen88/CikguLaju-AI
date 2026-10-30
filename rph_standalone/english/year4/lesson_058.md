@@ -1,15 +1,32 @@
-# English Year 4 Lesson 058 — Language Arts 11
+# English Year 4 — Lesson 058
 
-Topic: The King of Kites. Main SP: Language Arts 5.2.1. Complementary SP: Reading 3.3.1. References: CCL Short Story Guide Worksheet 4 p.30 and Worksheet 3 p.28. Duration: 60 minutes.
+**Topic:** The King of Kites  
+**Main SP:** 5.2.1  
+**Complementary SP:** 3.3.1  
+**Duration:** 60 minutes  
+**References:** CCL Short Story Guide Worksheet 4 p.30; Worksheet 3 p.28; Year 4 SOW Lesson 58
 
-Set induction (10 min): Teacher guides: Introduce story events with Worksheet 4 sequencing. Pupils complete the indicated skill task and respond to feedback.
+## Set induction (10 minutes)
+**Teacher:** Introduce events using Worksheet 4 sequencing.
+**Pupils:** Recall and sequence story events.
 
-Activity 1 (15 min): Teacher guides: Guide reading of The King of Kites in a suitable reading mode. Pupils complete the indicated skill task and respond to feedback.
+## Activity 1 (15 minutes)
+**Teacher:** Guide reading of The King of Kites.
+**Pupils:** Read the story in the selected reading mode.
 
-Activity 2 (20 min): Teacher guides: Groups arrange Worksheet 3 sentence strips in narrative order. Pupils complete the indicated skill task and respond to feedback.
+## Activity 2 (20 minutes)
+**Teacher:** Give groups Worksheet 3 sentence strips.
+**Pupils:** Arrange the strips in narrative order.
 
-PBD and reinforcement (10 min): Teacher guides: Check sequence and have pairs present their version. Pupils complete the indicated skill task and respond to feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Check the sequence and invite pair presentations.
+**Pupils:** Present the ordered story events with a partner.
 
-Closure (5 min): Teacher guides: Pupils explain how they felt about an event. Pupils complete the indicated skill task and respond to feedback.
+## Closure (5 minutes)
+**Teacher:** Ask pupils how an event made them feel.
+**Pupils:** Describe a feeling about a story event.
 
-PBD: Observe the specified learning task and record evidence against Language Arts 5.2.1 and Reading 3.3.1. Differentiation: Provide source-based models, partner support or an extension task according to pupil needs. Source: Primary Year 4 SK SOW Lesson 58. Status: DRAFT; direct book/audio and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against SP 5.2.1 and 3.3.1.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
