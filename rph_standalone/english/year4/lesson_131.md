@@ -11,7 +11,7 @@
 **Pupils:** Recall sports vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read Activity 1 and locate the main idea.
+**Teacher:** Model identifying the main idea from the opening of Activity 1, then ask pupils to read independently and state the central message.
 **Pupils:** Read Activity 1 and identify the main idea.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Choose a suitable title and justify it.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete Activity 2 and review superlative Grammar Box.
+**Teacher:** Guide pupils through Activity 2, ask for a supporting sentence from the text and review the superlative Grammar Box with examples.
 **Pupils:** Complete Activity 2 and practise superlatives.
 
 ## Closure (5 minutes)
