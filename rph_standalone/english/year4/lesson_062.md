@@ -11,7 +11,7 @@
 **Pupils:** Recall language for celebration plans.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Ask pairs to discuss an upcoming celebration.
+**Teacher:** Give pairs a celebration prompt and listen for a date and one planned activity in each response.
 **Pupils:** Discuss plans for a celebration with a partner.
 
 ## Activity 2 (20 minutes)
