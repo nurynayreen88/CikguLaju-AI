@@ -4,7 +4,7 @@
 **Main SP:** 1.2.5  
 **Complementary SP:** 1.2.2  
 **Duration:** 60 minutes  
-**Resources:** SB pp.52–53 Activities 1–3; TB pp.82–83; CD1 Tracks 77 and 79
+**Resources:** SB pp.52–53 Activities 1–3; TB pp.82–83; Warm up/Vocabulary CD1 Track 77; Activity 3 CD1 Track 79 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher action:** Introduce health vocabulary using TB Warm-up and Track 77.
