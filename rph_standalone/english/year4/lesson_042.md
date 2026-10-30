@@ -23,7 +23,7 @@
 **Pupils:** Complete a suitable CCL activity and share answers.
 
 ## Closure (5 minutes)
-**Teacher:** Share a feeling and one past event.
+**Teacher:** Ask pupils to name one feeling and describe a past event from the story that explains it.
 **Pupils:** Share one feeling and one past event.
 
 **PBD:** Observe pupils' explanation of feelings about Sand Castle and description of a past beach experience (Language Arts 5.2.1; Speaking 2.1.2).  
