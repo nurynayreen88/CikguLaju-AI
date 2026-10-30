@@ -15,15 +15,15 @@
 **Pupils:** Read the camping story in Activity 1.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Identify Whose questions and ownership clues.
+**Teacher:** Model one 'Whose ...?' question, then ask pupils to find ownership clues in the camping story and explain how they know.
 **Pupils:** Identify Whose questions and ownership clues.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs answer story questions and explain answers.
+**Teacher:** Ask pairs two story questions and prompt each pair to point to a sentence or picture supporting its answer.
 **Pupils:** Answer story questions and explain evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Share an item and its owner.
+**Teacher:** Invite pupils to name an item and its owner using a complete sentence.
 **Pupils:** Name an item and its owner.
 
 **PBD:** Check independent reading and evidence-based responses to ownership questions in the camping story against SP 3.3.1 and 1.2.3.  
