@@ -23,7 +23,7 @@
 **Pupils:** Discuss a school trip using details from the text.
 
 ## Closure (5 minutes)
-**Teacher:** Recall a detail from the reading.
+**Teacher:** Ask pupils to cite one school-trip detail from the text.
 **Pupils:** Share one fact from the reading.
 
 **PBD:** Check transport reading answers and identification of details heard in Tracks 5–6 against SP 3.2.2 and 1.2.1.  
