@@ -26,7 +26,7 @@
 **Teacher:** Review going to and clarification language.
 **Pupils:** Use going to and one polite clarification question.
 
-**PBD:** Observe lesson tasks against SP 2.2.2 and 2.1.1.  
+**PBD:** Observe partner interviews about future plans and clarification of task instructions (SP 2.2.2 and 2.1.1).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
