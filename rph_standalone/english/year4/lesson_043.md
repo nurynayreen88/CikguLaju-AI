@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review regular past-tense verbs.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Recall regular past-tense verbs.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Teach /d/, /t/ and /id/ endings; follow Phonics 3 Activity 1 with Track 10.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Distinguish /d/, /t/ and /id/ with Track 10.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 2 with Track 11; pupils listen and repeat.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Listen to Track 11 and repeat target words.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Sort verbs into three sound columns and find opened, wrapped and painted.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Sort verbs by ending sound, including opened, wrapped and painted.
 
 ## Closure (5 minutes)
 **Teacher:** Pronounce one verb from each sound group.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Pronounce one verb from each sound group.
 
 **PBD:** Check responses against Listening 1.1.1 and Listening 1.2.5.  
 **Differentiation:** Provide extra sound-discrimination practice.  
