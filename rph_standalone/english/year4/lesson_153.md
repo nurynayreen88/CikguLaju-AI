@@ -22,6 +22,8 @@
 **Teacher:** Demonstrate checking a word in a dictionary, then ask pupils to revise spelling and punctuation on their posters.
 **Pupils:** Check spelling in a dictionary and revise the poster.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Organise a poster display and ask pupils to share one clear health tip using should or shouldn't.
 **Pupils:** Display posters and share a health tip.
