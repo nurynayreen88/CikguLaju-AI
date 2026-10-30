@@ -9,7 +9,7 @@
 **Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 3. Lesson outline adapted for classroom use.
 
 ## Set Induction (5 minutes)
-**Teacher:** Guess Who review and numbers 1–100. **Pupils:** Respond and recall relevant language.
+**Teacher:** Guess Who review and numbers 1–100. **Pupils:** Respond and recall relevant language. Pupils complete Workbook p.7, Activities 1–2, to match story characters and check details from the story.
 
 ## Activity 1 — Guided preparation (15 minutes)
 **Teacher:** Use the TB p.20 warm-up to review numbers 1–100. Show the story pictures and invite predictions before pupils read and listen. **Pupils:** Count aloud, identify pictured characters and predict what happens.
@@ -18,7 +18,7 @@
 **Teacher:** Play CD 1 Track 6 for SB p.6 Activity 1 and guide pupils to track words while listening; guide SB p.7 Activity 2, using pictures to infer unfamiliar words. **Pupils:** Track words while listening to the story, answer Activity 1 questions and use pictures to infer unfamiliar words in Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check pupils' answers for two story details and one visually inferred word. Pupils complete Workbook p.7, Activities 1–2, to match story characters and check details from the story. **Pupils:** Answer two story-detail questions and identify one unfamiliar word using a picture clue.
+**Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Answer two story-detail questions and identify one unfamiliar word using a picture clue.
 
 ## Closure (5 minutes)
 **Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
