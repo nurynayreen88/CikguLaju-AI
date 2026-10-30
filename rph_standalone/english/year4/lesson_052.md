@@ -4,7 +4,7 @@
 **Main SP:** 4.2.4  
 **Complementary SP:** 4.1.2  
 **Duration:** 60 minutes  
-**References:** SB p.38 Activities 1–3; TB pp.64–65; CD1 Track 55; Year 4 SOW Lesson 52
+**References:** SB p.38 Activities 1–3; TB pp.64–65; Vocabulary CD1 Track 55 (KPM SOW); Year 4 SOW Lesson 52
 
 ## Set induction (10 minutes)
 **Teacher:** Review Independence Day vocabulary.
