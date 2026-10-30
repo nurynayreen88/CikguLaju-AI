@@ -8,19 +8,19 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review health vocabulary.
-**Pupils:** Identify safety hazards.
+**Pupils:** Identify home safety hazards.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Review home-safety vocabulary and the Activity 3 pictures.
-**Pupils:** Listen and repeat key vocabulary.
+**Pupils:** Listen and repeat vocabulary.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 3 and Activity 4 using CD2 Track 78.
-**Pupils:** Complete textbook listening tasks.
+**Pupils:** Complete listening tasks.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Partners give safety advice with should or shouldn't and explain reasons using because.
-**Pupils:** Give advice with reasons.
+**Pupils:** Give safety advice with reasons.
 
 ## Closure (5 minutes)
 **Teacher:** Share a key listening detail.
