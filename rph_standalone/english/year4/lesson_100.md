@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review the story with a quiz.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall the story through a short quiz.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model Whose and possessive pronouns.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Practise Whose and possessive pronouns.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Contrast possessive apostrophe-s and plural -s.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Distinguish possessive apostrophe-s from plural -s.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete Activity 3 and peer-check punctuation.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Complete Activity 3 and check punctuation with a partner.
 
 ## Closure (5 minutes)
 **Teacher:** Correct a possessive example.
-**Pupils:** Share one result or reflection.
+**Pupils:** Correct one possessive sentence.
 
 **PBD:** Assess task responses against 4.3.1 and 3.2.2; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
