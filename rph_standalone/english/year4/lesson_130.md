@@ -7,7 +7,7 @@
 **References:** SB p.93 Activity 2; TB pp.138–139; Year 4 SOW Lesson 130
 
 ## Set induction (10 minutes)
-**Teacher:** Review the sports song and key words.
+**Teacher:** Replay a short section of the sports song and elicit three key words before the speaking survey.
 **Pupils:** Recall sports vocabulary.
 
 ## Activity 1 (15 minutes)
