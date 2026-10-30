@@ -54,9 +54,9 @@ def check() -> list[str]:
                 errors.append(f"Lesson {number:03d}: expected 60-minute duration")
             if not re.search(r"\bPBD\b|\bassessment\b", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: PBD/assessment section missing")
-            if not re.search(r"\*\*Teacher:\*\*", text, re.IGNORECASE):
+            if not re.search(r"\*\*Teacher(?: action)?:\*\*", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: teacher actions missing")
-            if not re.search(r"\*\*Pupils:\*\*", text, re.IGNORECASE):
+            if not re.search(r"\*\*(?:Pupils|Pupil action):\*\*", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: pupil actions missing")
         sk = (row.get("main_cs") or "").strip()
         sp = (row.get("main_ls") or "").strip()
