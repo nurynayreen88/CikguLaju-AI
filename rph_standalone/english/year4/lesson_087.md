@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review time words.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall time words and phrases.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Match prepositions and model the Activity 5 dialogue.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Match prepositions and practise the model dialogue.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs plan a trip and extend dialogues with natural responses.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Plan a trip and extend dialogues with a partner.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Write, deliver and answer invitations to join a trip.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Write and respond to trip invitations.
 
 ## Closure (5 minutes)
 **Teacher:** Reflect on effective invitations.
-**Pupils:** Share one result or reflection.
+**Pupils:** Describe what makes an invitation effective.
 
 **PBD:** Assess task responses against 2.2.1 and 4.2.2; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
