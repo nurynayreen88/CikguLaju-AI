@@ -15,7 +15,7 @@
 **Pupils:** Examine the cover using guidebook p.70.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils predict the story from cover clues and explain their reasons.
+**Teacher:** Ask pupils to predict the story and identify which cover clues support their ideas.
 **Pupils:** Predict the story using cover clues and reasons.
 
 ## PBD and reinforcement (10 minutes)
