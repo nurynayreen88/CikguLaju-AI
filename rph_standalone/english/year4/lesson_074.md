@@ -26,7 +26,7 @@
 **Teacher action:** Groups present storyboards at the mini corner.
 **Pupil action:** Present the storyboard at a mini corner.
 
-**PBD:** Check pupil responses and products against 5.3.1 and 2.2.2; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Observe completion of the pop-up storyboard, creative response and clarification of construction steps against SP 5.3.1 and 2.2.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 74, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
