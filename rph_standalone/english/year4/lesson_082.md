@@ -11,7 +11,7 @@
 **Pupils:** Recall safety rules from the song.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Underline rules and model positive and negative imperatives.
+**Teacher:** Underline two rules from the song, model positive and negative imperatives and ask pupils to explain the difference.
 **Pupils:** Identify and practise positive and negative imperatives.
 
 ## Activity 2 (20 minutes)
