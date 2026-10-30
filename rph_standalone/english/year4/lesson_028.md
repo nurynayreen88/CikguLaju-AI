@@ -23,7 +23,7 @@
 **Pupils:** Present work while classmates complete a listening task.
 
 ## Closure (5 minutes)
-**Teacher:** Review work, celebrate progress and correct one unclear description.
+**Teacher:** Highlight one successful description and model revising an unclear sentence for accuracy.
 **Pupils:** Improve one unclear description after feedback.
 
 ## Assessment and differentiation
