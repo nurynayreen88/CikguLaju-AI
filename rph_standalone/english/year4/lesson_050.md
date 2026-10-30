@@ -19,7 +19,7 @@
 **Pupils:** Ask about dates and use clarification phrases.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Invite extended dialogues and peer feedback.
+**Teacher:** Invite pairs to extend their celebration-date dialogues and give peers a checklist for clear questions and clarification.
 **Pupils:** Perform a dialogue and improve after feedback.
 
 ## Closure (5 minutes)
