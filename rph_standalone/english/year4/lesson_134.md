@@ -16,15 +16,15 @@
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils identify information in the three interviews.
-**Pupils:** Record relevant details.
+**Pupils:** Record details from the interviews.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Use Grammar Boxes on pages 93 and 95 to write a paragraph about a liked or disliked sport.
-**Pupils:** Write and edit a sports paragraph.
+**Pupils:** Write a sports paragraph.
 
 ## Closure (5 minutes)
 **Teacher:** Share one detail heard.
-**Pupils:** Share one detail.
+**Pupils:** Share one listening detail.
 
 **PBD:** Assess the source-based task against 1.2.2 and 4.3.3; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
