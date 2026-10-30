@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Introduce page vocabulary; pairs complete the SB quiz and check answers using SB p.118.
-**Pupils:** Complete the SB quiz and check answers on p.118.
+**Pupils:** Complete the SB quiz and check answers on p.118. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to tell a partner one Ancient Egypt fact and identify the quiz clue that supports it.
