@@ -33,6 +33,20 @@ class RPTArchiveSafetyTests(unittest.TestCase):
                 zf.writestr('repeated.txt', 'A' * 500000)
             self.assertIn('compression ratio', verify(archive)[0])
 
+    def test_parent_directory_member_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            archive = Path(folder) / "traversal.zip"
+            with ZipFile(archive, "w") as zf:
+                zf.writestr("../outside.txt", "unsafe")
+            self.assertIn("Unsafe archive member path", verify(archive)[0])
+
+    def test_backslash_member_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            archive = Path(folder) / "backslash.zip"
+            with ZipFile(archive, "w") as zf:
+                zf.writestr("RPT_PJ_2027_DOCX\\unexpected.docx", "unsafe")
+            self.assertIn("Unsafe archive member path", verify(archive)[0])
+
     def test_invalid_zip_rejected(self):
         with tempfile.TemporaryDirectory() as folder:
             archive = Path(folder) / "invalid.zip"
