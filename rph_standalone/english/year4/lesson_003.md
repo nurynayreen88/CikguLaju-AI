@@ -26,7 +26,7 @@
 **Pupils:** Identify three details from the reading and respond to two supported classroom instructions.
 
 ## Closure (5 minutes)
-**Teacher:** Recap one new fact and a useful question-answer form.
+**Teacher:** Ask pupils to share one fact from the text and model a related question-and-answer exchange.
 **Pupils:** Say one new fact or vocabulary item.
 
 ## Differentiation and assessment
