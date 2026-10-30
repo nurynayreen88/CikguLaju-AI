@@ -22,6 +22,8 @@
 **Teacher:** Ask groups to predict the next chapter and justify their ideas with a detail from Chapters 1 or 2.
 **Pupils:** Predict the next chapter and give reasons.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one prediction using a story clue.
 **Pupils:** Share one prediction.
