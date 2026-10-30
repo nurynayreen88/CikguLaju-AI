@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review health vocabulary with character pictures.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Name health problems.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Activity 4 using CD2 Track 73.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen to the first task.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Match health problems to the people pictured.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Match speakers to their problems.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Follow Activity 5 using CD2 Track 74 and explain advice using should.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Listen again and give advice.
 
 ## Closure (5 minutes)
 **Teacher:** Recall one detail from the listening.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Recall one listening detail.
 
 **PBD:** Assess the specified task against 1.2.2 and 2.1.1; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
