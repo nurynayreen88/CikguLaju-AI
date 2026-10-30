@@ -22,7 +22,7 @@
 **Pupils:** Role-play a person from a chosen country; acknowledge a partner with 'Really? So, you're ...' and ask for clarification when needed.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Observe pupil descriptions and use of short acknowledgement or clarification phrases. Ask pupils to clarify instructions before starting.
+**Teacher:** Demonstrate one acknowledgement and clarification phrase, then observe pupils using these phrases in their country role-plays.
 **Pupils:** Demonstrate a short exchange with a description and one clarification or acknowledgement phrase.
 
 ## Closure (5 minutes)
