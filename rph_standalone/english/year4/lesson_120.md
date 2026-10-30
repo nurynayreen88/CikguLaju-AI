@@ -23,7 +23,7 @@
 **Pupils:** Explain answers using text evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Recall a dinosaur fact.
+**Teacher:** Ask pupils to state one dinosaur fact and identify the sentence in the text that supports it.
 **Pupils:** Recall one dinosaur fact.
 
 **PBD:** Check answers about dinosaur facts against the reading text and pupils' spoken explanations against SP 3.2.2 and 2.1.4.  
