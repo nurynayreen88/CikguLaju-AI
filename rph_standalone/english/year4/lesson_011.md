@@ -20,7 +20,7 @@
 **Pupils:** Listen again, discuss story events and practise Phonics 1 tasks.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs find /s/ and /z/ sounds in the story and listen again to confirm.
+**Teacher:** Model identifying one /s/ or /z/ ending, then ask pairs to locate further examples in the story and verify them by listening.
 **Pupils:** Identify /s/ and /z/ examples in pairs and check against audio.
 
 ## Closure (5 minutes)
