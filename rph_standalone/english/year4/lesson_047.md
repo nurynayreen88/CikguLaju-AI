@@ -19,7 +19,7 @@
 **Pupils:** Predict the story using cover clues and reasons.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils complete Worksheet 1 and compare predictions.
+**Teacher:** Guide pupils to complete Worksheet 1 and compare their predictions using cover evidence.
 **Pupils:** Complete Worksheet 1 and compare predictions.
 
 ## Closure (5 minutes)
