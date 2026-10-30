@@ -22,6 +22,8 @@
 **Teacher:** Guide pupils through Phonics 9 Activity 2, ask them to explain which sounds they heard and note any recurring confusion.
 **Pupils:** Complete Phonics 9 Activity 2 and distinguish sounds.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Elicit one word for each target sound and check pupils' pronunciation against the phonics examples.
 **Pupils:** Say one example word and its sound.
