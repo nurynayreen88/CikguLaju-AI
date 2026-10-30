@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Discuss characters, feelings and relationships.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Discuss characters and their feelings.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Recap Chapters 1–4 and read Chapter 5.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Recall earlier chapters and read Chapter 5.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs predict Mowgli's future after page 63.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Predict what will happen to Mowgli.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Reorder five synopsis strips and write Mowgli's feelings.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Order five synopsis strips and describe his feelings.
 
 ## Closure (5 minutes)
 **Teacher:** Share feelings about the story.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share a response to the story.
 
 **PBD:** Observe the named learning task against 5.2.1 and 2.1.1; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
