@@ -11,7 +11,7 @@
 **Pupils:** Suggest a plan as Mowgli.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Share and compare ideas.
+**Teacher:** Invite pairs to compare their ideas and explain which plan best fits Mowgli's situation.
 **Pupils:** Compare ideas in small groups.
 
 ## Activity 2 (20 minutes)
