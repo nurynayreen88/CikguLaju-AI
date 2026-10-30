@@ -22,6 +22,12 @@ class TestHandlers(unittest.TestCase):
             handle_year(bot, 10, "/missing", "rptpj27year:4")
         self.assertEqual(bot.messages[0][2], "states")
 
+    def test_malformed_callback_is_handled(self):
+        bot = FakeBot()
+        handle_document(bot, 10, "/missing", "rptpj27:Johor:99",
+                        user_id=20, access_resolver=lambda user_id: {})
+        self.assertIn("tidak sah", bot.messages[0][1])
+
     def test_access_denied_never_sends_document(self):
         bot = FakeBot()
         handle_document(bot, 10, "/missing", "rptpj27:Johor:4",
