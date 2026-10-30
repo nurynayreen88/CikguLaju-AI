@@ -15,11 +15,11 @@
 **Pupils:** Prepare for the Student Book song activity.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen for details in the helping-out song.
+**Teacher:** Play the helping-out song, ask pupils to listen for examples of helpful actions and replay key lines to check details.
 **Pupils:** Listen to the helping-out song and identify details.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use text clues to infer unfamiliar words.
+**Teacher:** Model using a nearby lyric or picture clue to infer a word meaning, then invite pupils to explain their inferences.
 **Pupils:** Use text clues to infer unfamiliar words.
 
 ## Closure (5 minutes)
