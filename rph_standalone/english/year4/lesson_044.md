@@ -23,7 +23,7 @@
 **Pupils:** Perform short scenes and give positive feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Reflect on narration and group participation.
+**Teacher:** Ask groups to identify one successful narration choice and one way to improve participation.
 **Pupils:** Reflect on narration and group participation.
 
 **PBD:** Observe clear narration and group dramatization of historical events using ordered notes (Speaking 2.3.1; 2.1.2).  
