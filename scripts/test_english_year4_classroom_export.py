@@ -1,4 +1,5 @@
 """Regression checks for staging-only Year 4 classroom export filtering."""
+import re
 from smoke_english_year4_exports import classroom_lines, source_lines
 
 
@@ -26,7 +27,9 @@ def main():
     for lesson in range(1, 161):
         clean = classroom_lines(source_lines(lesson))
         assert clean and clean[0].startswith("# English Year 4"), lesson
-        assert any(line.startswith("## ") and "minutes)" in line.lower() for line in clean), lesson
+        stage_minutes = [int(m.group(1)) for line in clean if line.startswith("## ") for m in [re.search(r"\\((\\d+) minutes\\)", line, flags=re.IGNORECASE)] if m]
+        assert len(stage_minutes) >= 4, (lesson, stage_minutes)
+        assert sum(stage_minutes) == 60, (lesson, stage_minutes)
         assert not any(line.strip().lower().startswith("**status:**") for line in clean), lesson
         assert not any(line.strip().lower().startswith("**qa status:**") for line in clean), lesson
         assert not any(line.strip().lower().startswith(("**source:**", "**sow:**", "**references:**")) for line in clean), lesson
