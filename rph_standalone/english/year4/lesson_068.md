@@ -7,7 +7,7 @@
 **Resources:** SB p.51 Activities 4–5; TB p.81; CD1 Tracks 75–76
 
 ## Set induction (10 minutes)
-**Teacher action:** Review challenging spellings from the previous lesson.
+**Teacher action:** Display three challenging food words from the previous lesson and ask pupils to identify and correct spelling errors.
 **Pupil action:** Correct challenging food spellings.
 
 ## Activity 1 (15 minutes)
