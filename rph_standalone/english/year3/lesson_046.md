@@ -13,7 +13,7 @@ Teacher reviews action cards from Lesson 44. Pupils describe actions.
 Teacher guides Student's Book p.31 Activity 1. Pupils study pictures and answer questions about what people are doing.
 
 ## Activity 2 — Drafting and display (25 minutes)
-Pupils write sentences about their pictures, exchange work for peer review, redraft neatly on labels and attach them to their pictures for a classroom display. Teacher supports accurate present continuous sentences.
+Pupils write sentences about their pictures, exchange work for peer review, redraft neatly on labels and attach them to their pictures for a classroom display. Teacher supports accurate present continuous sentences. Pupils complete Workbook p.22, Activity 2, by writing sentences about the sports shown in the picture.
 
 ## PBD (10 minutes)
 Teacher checks planning, drafting and short oral narration of pictured events. Pupils explain their work to partners.
