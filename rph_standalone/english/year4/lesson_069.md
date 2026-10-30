@@ -11,7 +11,7 @@
 **Pupil action:** Identify feelings shown in pictures.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Pupils identify character emotions in the story, including happiness on p.5.
+**Teacher action:** Show the relevant story scene on p.5 and ask pupils to identify character emotions using clues from words and illustrations.
 **Pupil action:** Describe character emotions in the story.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupil action:** Complete social expressions in Worksheet 5.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pairs check responses and discuss how story events make them feel.
+**Teacher action:** Organise pair checking and prompt pupils to explain how a story event makes them feel.
 **Pupil action:** Compare answers and discuss feelings about events.
 
 ## Closure (5 minutes)
