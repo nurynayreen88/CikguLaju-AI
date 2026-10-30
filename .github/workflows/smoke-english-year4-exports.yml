@@ -53,5 +53,10 @@ jobs:
               pdf_text = '\\n'.join(page.extract_text() or '' for page in pages)
               assert 'English Year 4' in pdf_text, pdf
               print(f'Lesson {n:03d}: {len(pages)} PDF pages; one-page layout not yet verified')
-          print('PASS: 3 DOCX and 3 PDF sample files structurally readable')
+          for n in range(1, 161):
+              docx = Path(f'/tmp/year4-all/year4_{n:03d}_SMOKE.docx')
+              pdf = Path(f'/tmp/year4-all/year4_{n:03d}_SMOKE.pdf')
+              assert zipfile.is_zipfile(docx), docx
+              assert len(PdfReader(str(pdf)).pages) > 0, pdf
+          print('PASS: 160 draft DOCX and 160 draft PDF files structurally readable')
           PY
