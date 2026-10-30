@@ -11,11 +11,11 @@
 **Pupils:** Name animals and describing words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow SB Activity 1 listening preparation.
+**Teacher:** Preview the animal pictures and model how to predict an answer before pupils attempt SB Activity 1.
 **Pupils:** Prepare for the Student Book listening task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen to supported animal questions and infer unfamiliar words.
+**Teacher:** Play or read the animal questions, pause for pupils to infer unfamiliar words from context and check their answers.
 **Pupils:** Listen to animal questions and infer unknown words.
 
 ## PBD / reinforcement (10 minutes)
