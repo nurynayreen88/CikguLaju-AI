@@ -49,6 +49,8 @@ def classroom_lines(lines: list[str]) -> list[str]:
             continue
         if line.strip().lower().startswith(QA_FIELD_MARKERS):
             continue
+        # Preserve track numbers while omitting internal audio-verification notes.
+        line = re.sub(r"; CD1 designation in draft remains pending independent TB/audio verification", "", line, flags=re.IGNORECASE)
         result.append(line)
     return result
 
