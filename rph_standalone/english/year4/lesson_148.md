@@ -22,6 +22,8 @@
 **Teacher:** Ask pupils to write their message exchanges and use a peer checklist for clear meaning, suitable health vocabulary and punctuation.
 **Pupils:** Write, exchange and revise a text-message dialogue.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read a revised health message and explain one change made after peer feedback.
 **Pupils:** Read a revised message aloud.
