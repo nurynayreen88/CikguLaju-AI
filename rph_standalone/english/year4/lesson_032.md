@@ -19,7 +19,7 @@
 **Pupils:** Complete Revision 2 Activity 2 and targeted practice.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Pupils complete the SOW Unit 2 self-assessment on school subjects, schedules, housework and duties.
+**Teacher:** Distribute the SOW Unit 2 self-assessment and guide pupils to evaluate school subjects, schedules, housework and duties.
 **Pupils:** Self-assess school subjects, schedules, housework and duties.
 
 ## Closure (5 minutes)
