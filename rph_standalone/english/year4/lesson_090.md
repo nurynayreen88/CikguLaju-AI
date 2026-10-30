@@ -11,7 +11,7 @@
 **Pupils:** Examine invitations and congratulatory cards.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Identify date, time, venue and RSVP.
+**Teacher:** Display an invitation and guide pupils to locate the date, time, venue and RSVP information.
 **Pupils:** Identify date, time, venue and RSVP details.
 
 ## Activity 2 (20 minutes)
