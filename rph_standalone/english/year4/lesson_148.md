@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Play hot-card pantomime to review health words.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Act out and name health problems.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Study a model text-message conversation.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Identify an offer and a reason in the model messages.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Complete Activity 3 and plan a message exchange about an illness.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Plan a message exchange with a health problem, offer and reason.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Write a clear text-message dialogue and peer-check meaning.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Write, exchange and revise a text-message dialogue.
 
 ## Closure (5 minutes)
 **Teacher:** Read a revised message.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Read a revised message aloud.
 
 **PBD:** Assess the specified task against 4.2.2 and 4.2.1; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
