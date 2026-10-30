@@ -23,7 +23,7 @@
 **Pupils:** Perform the chant and check spelling.
 
 ## Closure (5 minutes)
-**Teacher:** Gallery walk with stars and wishes.
+**Teacher:** Organise a gallery walk and prompt pupils to give one specific strength and one constructive suggestion about a chant.
 **Pupils:** Give stars and wishes during the gallery walk.
 
 **PBD:** Check rewritten jazz chants for appropriate action verbs, spelling and performance against SP 5.3.1 and 4.3.2.  
