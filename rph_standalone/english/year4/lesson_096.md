@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB Warm-up.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall language for getting around.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Complete Revision 6 Activities 1–3.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Complete Revision 6 Activities 1–3.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Practise language based on formative assessment needs.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Practise language skills identified by assessment.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete Unit 6 self-assessment.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Complete Unit 6 self-assessment and note gaps.
 
 ## Closure (5 minutes)
 **Teacher:** Identify a priority for further practice.
-**Pupils:** Share one result or reflection.
+**Pupils:** Name one priority for further practice.
 
 **PBD:** Assess task responses against Teacher-selected DSKP SP and Teacher-selected DSKP SP; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
