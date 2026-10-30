@@ -11,7 +11,7 @@
 **Pupils:** Discuss characters and their feelings.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Recap Chapters 1–4 and read Chapter 5.
+**Teacher:** Recap Chapters 1–4 with two questions, then guide pupils through Chapter 5 and check a key event.
 **Pupils:** Recall earlier chapters and read Chapter 5.
 
 ## Activity 2 (20 minutes)
