@@ -4,7 +4,7 @@
 **Main SP:** Listening 1.1.1  
 **Complementary SP:** Listening 1.2.5  
 **Duration:** 60 minutes  
-**Resources:** SB p.121 Phonics 3; TB pp.177–178; CD3 Tracks 10–11
+**Resources:** SB p.121 Phonics 3; TB pp.177–178; **Activity 1 CD3 Track 10; Activity 2 CD3 Track 11** (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Review regular past-tense verbs.
