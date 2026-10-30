@@ -15,7 +15,7 @@
 **Pupils:** List three preferred subjects and practise the model question.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs complete TB Activity 3 and give reasons using 'because'.
+**Teacher:** Model a favourite-subject answer using because, then guide pairs through TB Activity 3 and ask them to explain their preferences.
 **Pupils:** Ask about favourite subjects and explain reasons using because.
 
 ## PBD and reinforcement (10 minutes)
