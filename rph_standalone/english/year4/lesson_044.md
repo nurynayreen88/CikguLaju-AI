@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Invite groups to perform their short scenes and organise specific peer feedback on narration and sequence.
-**Pupils:** Perform short scenes and give positive feedback.
+**Pupils:** Perform short scenes and give positive feedback. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask groups to identify one successful narration choice and one way to improve participation.
