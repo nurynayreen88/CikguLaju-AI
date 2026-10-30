@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Model sorting one past-tense verb by its final sound, then guide pupils to classify verbs including opened, wrapped and painted.
-**Pupils:** Sort verbs by ending sound, including opened, wrapped and painted.
+**Pupils:** Sort verbs by ending sound, including opened, wrapped and painted. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to pronounce one verb from each sound group and give corrective pronunciation feedback.
