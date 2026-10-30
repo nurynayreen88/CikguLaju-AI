@@ -51,6 +51,13 @@ def verify(archive):
         for name, (state, year) in expected.items():
             try:
                 with ZipFile(BytesIO(bundle.read(name))) as doc:
+                    parts = doc.infolist()
+                    if len(parts) != len(set(p.filename for p in parts)):
+                        problems.append(name + ": duplicate DOCX parts")
+                        continue
+                    if any(p.file_size > 8_000_000 for p in parts):
+                        problems.append(name + ": oversized DOCX part")
+                        continue
                     root = ET.fromstring(doc.read("word/document.xml"))
                 text = " ".join(node.text or "" for node in root.iter()
                                 if node.tag.endswith("}t"))
