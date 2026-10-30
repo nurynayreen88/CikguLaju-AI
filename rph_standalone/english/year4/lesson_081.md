@@ -19,7 +19,7 @@
 **Pupils:** Listen for target sounds and check predictions against the song.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide pupils through Student Book Activity 1 and discuss safety judgements.
+**Teacher:** Model one safe-versus-unsafe judgement with a reason, then guide Student Book Activity 1 and ask pupils to explain their choices.
 **Pupils:** Complete Activity 1 and explain one safety judgement.
 
 ## Closure (5 minutes)
