@@ -5,7 +5,7 @@ Read-only; no changes to archive or application data.
 """
 from io import BytesIO
 from pathlib import Path
-from zipfile import ZipFile
+from zipfile import ZipFile, BadZipFile
 from xml.etree import ElementTree as ET
 import sys
 import re
@@ -19,7 +19,11 @@ def verify(archive):
         for state in STATES for year in YEARS
     }
     problems = []
-    with ZipFile(archive) as bundle:
+    try:
+        bundle = ZipFile(archive)
+    except (BadZipFile, OSError, ValueError) as exc:
+        return ["Invalid RPT archive: " + str(exc)]
+    with bundle:
         all_names = [i.filename for i in bundle.infolist() if not i.is_dir()]
         names = [name for name in all_names if name != "README.txt"]
         if len(all_names) != len(set(all_names)) or set(all_names) - {"README.txt"} != set(expected):
@@ -43,7 +47,7 @@ def verify(archive):
                 for label, valid in checks:
                     if not valid:
                         problems.append(name + ": missing " + label)
-            except (OSError, ValueError, KeyError, ET.ParseError) as exc:
+            except (OSError, ValueError, KeyError, ET.ParseError, BadZipFile, RuntimeError) as exc:
                 problems.append(name + ": " + str(exc))
     return problems
 
