@@ -24,7 +24,7 @@
 **Pupils:** Play the card guessing game and describe what pictured people are doing.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils demonstrate a question-and-answer exchange.
+**Teacher:** Invite pupils to demonstrate one question-and-answer exchange using a present-continuous action card.
 **Pupils:** Ask and answer one final question.
 
 ## PBD and differentiation
