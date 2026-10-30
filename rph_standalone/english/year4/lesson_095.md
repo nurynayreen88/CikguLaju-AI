@@ -23,7 +23,7 @@
 **Pupils:** Check answers and draft an encouraging message.
 
 ## Closure (5 minutes)
-**Teacher:** Share feedback on wording.
+**Teacher:** Give feedback on whether each encouraging message is polite, clear and suitable for its intended recipient.
 **Pupils:** Improve the wording using feedback.
 
 **PBD:** Check completion of encouragement worksheets and written messages for clear meaning and punctuation against SP 5.3.1 and 4.3.3.  
