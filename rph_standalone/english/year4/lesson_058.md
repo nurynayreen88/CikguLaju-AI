@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check the event order with groups and invite pairs to retell the sequence using the strips.
-**Pupils:** Present the ordered story events with a partner.
+**Pupils:** Present the ordered story events with a partner. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to name a story event, describe the feeling it evokes and explain their reason.
