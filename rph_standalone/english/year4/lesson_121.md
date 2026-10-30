@@ -26,7 +26,7 @@
 **Teacher:** Present the invented dinosaur and explain its features.
 **Pupils:** Present the dinosaur.
 
-**PBD:** Assess the source-based task against 4.2.4 and 1.2.2; choose relevant criteria for Language Awareness.  
+**PBD:** Assess the invented dinosaur's written description for relevant features and accuracy of listening responses against SP 4.2.4 and 1.2.2.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
