@@ -19,7 +19,7 @@
 **Pupils:** Listen to animal questions and infer unknown words.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pupils answer questions and explain their choices.
+**Teacher:** Ask pupils to answer the animal questions and explain their choices using picture or language clues.
 **Pupils:** Answer questions and justify choices.
 
 ## Closure (5 minutes)
