@@ -19,7 +19,7 @@
 **Pupils:** Listen to the teacher-read text and infer key words.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Give pairs the question 'Why should we protect these animals?' and two sentence starters. Listen for a reason and supporting detail from each pair.
+**Teacher:** Ask pairs why endangered animals should be protected, provide two sentence starters and note whether their reasons include supporting details.
 **Pupils:** Discuss wildlife protection and justify their views.
 
 ## Closure (5 minutes)
