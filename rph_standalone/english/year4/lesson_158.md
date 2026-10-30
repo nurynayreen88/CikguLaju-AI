@@ -11,11 +11,11 @@
 **Pupils:** Recall safety rules at home.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Plan safety instructions and draft a poster in notebooks.
+**Teacher:** Model one concise home-safety instruction, then guide pupils to plan and draft poster instructions in their notebooks.
 **Pupils:** Draft safety instructions in notebooks and check their meaning.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Complete Activity 1 to make posters and Activity 2 to present them.
+**Teacher:** Organise poster-making for Activity 1, then facilitate group presentations for Activity 2 and check that instructions are understandable.
 **Pupils:** Make safety posters and present them to groups.
 
 ## Reinforcement / PBD (10 minutes)
