@@ -7,6 +7,7 @@ on:
     paths:
       - 'rph_standalone/english/year4/**'
       - 'scripts/smoke_english_year4_exports.py'
+      - 'scripts/batch_smoke_english_year4_exports.py'
       - '.github/workflows/smoke-english-year4-exports.yml'
   workflow_dispatch:
 
