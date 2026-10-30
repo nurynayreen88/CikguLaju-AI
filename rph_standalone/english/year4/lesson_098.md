@@ -22,6 +22,8 @@
 **Teacher:** Organise a mime-and-describe pair task, prompting pupils to distinguish actions happening now from past experiences.
 **Pupils:** Mime and describe experiences of helping others.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to contrast one present-continuous sentence with a past-action sentence and check object-pronoun use.
 **Pupils:** Review a tense form and an object pronoun.
