@@ -23,7 +23,7 @@
 **Pupils:** Complete Phonics 9 Activity 2 and distinguish sounds.
 
 ## Closure (5 minutes)
-**Teacher:** Review a word and its sound.
+**Teacher:** Elicit one word for each target sound and check pupils' pronunciation against the phonics examples.
 **Pupils:** Say one example word and its sound.
 
 **PBD:** Check discrimination of target phonics sounds and accurate dictionary lookups against SP 1.1.1 and 3.2.4.  
