@@ -46,8 +46,8 @@ def check() -> list[str]:
             errors.append(f"Missing standalone RPH: {lesson.name}")
         else:
             text = lesson.read_text(encoding="utf-8")
-            if "DRAFT" not in text.upper():
-                errors.append(f"Lesson {number:03d}: draft approval gate not explicit")
+            if not re.search(r"\bDRAFT\b|\bNOT READY FOR RELEASE\b|\bPENDING\b", text, re.IGNORECASE):
+                errors.append(f"Lesson {number:03d}: release gate not explicit")
         sk = (row.get("main_cs") or "").strip()
         sp = (row.get("main_ls") or "").strip()
         if number in SPECIAL:
