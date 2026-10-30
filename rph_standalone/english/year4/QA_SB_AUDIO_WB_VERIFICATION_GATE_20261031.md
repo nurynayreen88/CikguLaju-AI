@@ -50,3 +50,21 @@ Reviewed the complete RPH text for Lessons **097, 098, 102, 103, 104, 105, 107, 
 - **157:** The actual RPH teaches *What are germs?* using SB pp.110–111 and TB pp.162–163. The reference header also offers alternative SB p.133/TB p.197, but the activities do **not** currently teach that alternative. Confirm SOW choice; do not substitute alternative pages without rewriting and approving the lesson.
 
 **Safety gate:** Existing reference text is a working citation, not proof of actual PDF/audio file inspection. No READY status, production merge, or unverified page/track changes.
+
+## Direct verification against official Primary Year 4 SK SOW PDF — 31 October 2026
+**Source actually read:** `Primary Year 4 SK SOW.pdf`, Drive file `13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S`. This verifies the **SOW's printed references and lesson instructions**, not the independently hosted Student's Book/Teacher's Book PDF pages or audio recordings.
+
+| Lesson | SOW-confirmed content and references | Result |
+| --- | --- | --- |
+| 097 | SB p.71 Activity 1, TB p.108; Warm up/Vocabulary Track 20; Activity 1 Track 21 | Printed SOW matches RPH; CD number not given |
+| 098 | SB p.71 Activity 2, TB pp.108–109; song replay Track 21; Activity 3 Track 22 | Printed SOW matches activity sequence; CD number not given |
+| 102 | SB p.73 Activity 4, TB p.111; Track 25 | SOW matches; disc not given |
+| 103 | SB p.73 Activity 5, TB p.111; Track 26 | SOW matches; disc not given |
+| 105 | SB p.75 Activities 3–4, TB p.113; Track 29 optional if time allows | SOW matches; disc not given |
+| 107 | **SOW itself explicitly states SB pp.66–67 and TB pp.118–119**, with Track 32 and story continuation | **Prior suspected page mismatch NOT established; preserve printed SOW references** |
+| 139 | SB p.97 Activities 3–4, TB p.143; Track 60, basketball conclusion | SOW matches; disc unspecified |
+| 145 | SB p.103 Activity 1, TB p.152; Vocabulary Track 68 | SOW matches; disc unspecified |
+| 147 | SB p.104 Activity 1, TB p.154; Track 72 | SOW matches; disc unspecified |
+| 157 | **SOW explicitly offers two legitimate choices:** *What are germs?* SB pp.110–111/TB pp.162–163 **or** *Teeth facts!* SB p.133/TB p.197 | Current RPH uses the first valid SOW choice; **not a conflict or error** |
+
+**Corrections to earlier QA notes:** Lesson 107 should not be flagged as a proven wrong page: the SOW itself cites pp.66–67. Lesson 157 is a deliberate two-option SOW design, and the existing *What are germs?* selection is permitted. Both remain subject to direct SB/TB PDF checks; no lesson rewrite needed from SOW evidence alone.
