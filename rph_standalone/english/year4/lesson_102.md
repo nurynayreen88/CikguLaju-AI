@@ -23,7 +23,7 @@
 **Pupils:** Describe people or objects from the listening.
 
 ## Closure (5 minutes)
-**Teacher:** Recall one key listening detail.
+**Teacher:** Invite pupils to report one listening detail and explain which words helped them identify it.
 **Pupils:** Recall one key listening detail.
 
 **PBD:** Record accuracy of details identified from Activity 4 listening and clarity of oral descriptions against SP 1.2.2 and 2.1.5.  
