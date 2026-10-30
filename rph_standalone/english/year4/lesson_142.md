@@ -26,7 +26,7 @@
 **Teacher:** Gallery walk to guess the famous person.
 **Pupils:** Read classmates' descriptions and guess names.
 
-**PBD:** Assess the specified task against 4.2.1 and 3.2.2; for teacher-selected standards choose criteria before class.  
+**PBD:** Assess written descriptions of famous people for relevant details and whether peers can infer the identity (SP 4.2.1, 3.2.2).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
