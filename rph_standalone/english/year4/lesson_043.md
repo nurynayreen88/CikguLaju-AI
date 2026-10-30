@@ -15,7 +15,7 @@
 **Pupils:** Distinguish /d/, /t/ and /id/ with Track 10.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 2 with Track 11; pupils listen and repeat.
+**Teacher:** Play Track 11 for Activity 2, pause for pupils to repeat and check pronunciation of the three past-tense endings.
 **Pupils:** Listen to Track 11 and repeat target words.
 
 ## PBD and reinforcement (10 minutes)
