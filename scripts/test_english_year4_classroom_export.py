@@ -9,6 +9,9 @@ def main():
         assert any(line.startswith("## ") and "minutes)" in line.lower() for line in clean), lesson
         assert not any(line.strip().lower().startswith("**status:**") for line in clean), lesson
         assert not any(line.strip().lower().startswith("**qa status:**") for line in clean), lesson
+        assert not any(line.strip().lower().startswith(("**source:**", "**sow:**", "**references:**")) for line in clean), lesson
+        assert not any("not ready for release" in line.lower() for line in clean), lesson
+        assert any("**duration:** 60 minutes" in line.lower() for line in clean), lesson
     print("PASS: 160 classroom exports retain teaching stages and omit status metadata")
 
 
