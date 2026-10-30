@@ -15,11 +15,11 @@
 **Pupils:** Listen to vocabulary recording.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 1 and play the board game in groups.
+**Teacher:** Explain and demonstrate the Activity 1 board-game rules, then organise group play and support pupils who need clarification.
 **Pupils:** Play the board game.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete the optional silly advice task and clarify the rules.
+**Teacher:** Invite groups to give playful advice in the optional task and ask them to restate a rule when misunderstandings arise.
 **Pupils:** Give playful advice and explain rules.
 
 ## Closure (5 minutes)
