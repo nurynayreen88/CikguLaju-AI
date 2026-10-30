@@ -23,7 +23,7 @@
 **Pupils:** Rate strengths and gaps in Unit 3 skills.
 
 ## Closure (5 minutes)
-**Teacher:** Collect checklists and identify a revision target.
+**Teacher:** Collect Unit 3 checklists, identify a frequently missed skill and set a specific revision target.
 **Pupils:** Set one personal learning goal.
 
 **PBD:** Observe lesson tasks against the selected standards (Teacher-selected Year 4 DSKP SP; Teacher-selected Year 4 DSKP SP).  
