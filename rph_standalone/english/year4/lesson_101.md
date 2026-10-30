@@ -23,7 +23,7 @@
 **Pupils:** Draw an animal and explain their choice using descriptive language.
 
 ## Closure (5 minutes)
-**Teacher:** Ask pupils to share their feelings about the chosen animal.
+**Teacher:** Invite pupils to describe their feelings about the chosen animal and support their response with one visible characteristic.
 **Pupils:** State one feeling and give a simple reason.
 
 **PBD:** Observe responses and descriptions against SP 5.2.1 and 2.1.5.  
