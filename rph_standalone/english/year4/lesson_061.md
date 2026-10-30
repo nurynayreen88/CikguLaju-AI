@@ -22,6 +22,8 @@
 **Teacher:** Organise a short discussion about birthday plans and check pupils' written responses against diary details.
 **Pupils:** Check answers and discuss birthday plans.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to cite one detail from Sabrina's diary and describe one personal plan.
 **Pupils:** Share a diary detail and a personal plan.
@@ -30,5 +32,4 @@
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
-**Workbook:** Optional reinforcement using a matching workbook activity, subject to page and activity verification.
 **Status:** DRAFT — source and Word/PDF QA pending.
