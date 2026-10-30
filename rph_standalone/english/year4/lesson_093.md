@@ -22,6 +22,8 @@
 **Teacher:** Use the story pictures to prompt pupils to retell an event in sequence with an appropriate time connector.
 **Pupils:** Retell an event using picture prompts.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to identify a favourite story moment and explain their choice using a story detail.
 **Pupils:** Describe a favourite story moment.
