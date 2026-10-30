@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the text and identify the gist.
+**Teacher:** Introduce should and ask pupils to predict from story pictures.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 1 and discuss characters' actions.
+**Teacher:** Play the story audio and ask a gist question.
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Answer questions and explain meaning from context.
+**Teacher:** Complete Activity 1 using Track 72 and answer with story evidence.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
