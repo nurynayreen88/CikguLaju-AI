@@ -26,7 +26,7 @@
 **Teacher:** Gallery walk and peer feedback.
 **Pupils:** Give peer feedback during a gallery walk.
 
-**PBD:** Assess task responses against 4.2.1 and 4.2.4; teacher selects specific criteria for Language Awareness.  
+**PBD:** Assess written transport recommendations for accurate fare details and clear reasons against SP 4.2.1 and 4.2.4.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
