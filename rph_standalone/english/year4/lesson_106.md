@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Play animal sounds and elicit animal names.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Identify animals from sound clues.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read Chapters 1 and 2 and explore graphic-novel features.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read Chapters 1–2 and notice graphic-novel features.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Groups retell the events of the two chapters.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Retell key events in groups.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pupils predict the next chapter and explain reasons.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Predict the next chapter and give reasons.
 
 ## Closure (5 minutes)
 **Teacher:** Share a prediction.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share one prediction.
 
 **PBD:** Observe the named learning task against 5.2.1 and 2.1.4; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
