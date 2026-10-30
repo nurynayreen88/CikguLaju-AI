@@ -13,7 +13,7 @@ Teacher reviews weather and seasons vocabulary. Pupils name seasons.
 Teacher plays the seasons song on Student's Book p.35. Pupils sing and compare the four seasons with Malaysian weather and school-year timing.
 
 ## Activity 2 — Speaking (25 minutes)
-Teacher distributes season pictures to small groups. Pupils discuss weather in different seasons, describe their favourite season and give a reason; classmates listen and ask simple questions.
+Teacher distributes season pictures to small groups. Pupils discuss weather in different seasons, describe their favourite season and give a reason; classmates listen and ask simple questions. Pupils complete Workbook p.30, Activity 2, by writing about their favourite season and its weather.
 
 ## PBD (10 minutes)
 Pupils give two facts about themselves and identify a season from a partner's short description.
