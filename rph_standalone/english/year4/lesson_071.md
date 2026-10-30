@@ -26,7 +26,7 @@
 **Teacher action:** Discuss why a balanced diet matters.
 **Pupil action:** Explain one reason to eat a balanced diet.
 
-**PBD:** Check pupil responses and products against 2.1.1 and 4.2.3; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Observe opinions about eating habits and assess written sentences about partners against SP 2.1.1 and 4.2.3.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 71, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
