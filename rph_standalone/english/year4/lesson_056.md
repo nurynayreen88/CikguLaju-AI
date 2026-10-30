@@ -23,7 +23,7 @@
 **Pupils:** Complete Activity 2 and exchange answers with a partner.
 
 ## Closure (5 minutes)
-**Teacher:** Review celebration vocabulary.
+**Teacher:** Ask pupils to explain two celebration words and use one in a factual sentence.
 **Pupils:** Sort vocabulary by celebration and share a response.
 
 **PBD:** Check identification of the countries and main ideas in celebration texts and accurate answers to Activity 2 (SP 3.2.1, 3.2.2).  
