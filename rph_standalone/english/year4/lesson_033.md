@@ -4,7 +4,7 @@
 **Main SP:** Listening 1.2.2  
 **Complementary SP:** Listening 1.2.1  
 **Duration:** 60 minutes  
-**References:** SB p.27 Activity 1; TB p.48; teacher-prepared spoken or recorded quiz text
+**References:** SB p.27 Activity 1; TB p.48; teacher-prepared spoken quiz text (see resources/lesson_033_egypt_listening_DRAFT.md)
 
 ## Set induction (10 minutes)
 **Teacher:** Show pictures of Ancient Egypt and elicit prior knowledge.
