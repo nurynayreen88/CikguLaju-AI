@@ -4,7 +4,7 @@
 **Complementary SP:** Writing 4.1.2  
 **Topic:** Where are you from?  
 **References:** SB/TB pp.22–23 Grammar Box and Activities 3–4  
-**Audio:** CD1 Tracks 12 and 13  
+**Audio:** Tracks 12 (Activity 3) and 13 (Activity 4) as printed in KPM SOW; CD1 designation in draft remains pending independent TB/audio verification  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
