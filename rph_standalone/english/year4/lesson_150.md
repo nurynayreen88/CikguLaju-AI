@@ -23,7 +23,7 @@
 **Pupils:** Listen again and give advice.
 
 ## Closure (5 minutes)
-**Teacher:** Recall one detail from the listening.
+**Teacher:** Ask pupils to recall one health problem from the recording and give suitable advice using should.
 **Pupils:** Recall one listening detail.
 
 **PBD:** Record accuracy of matching people to health problems and spoken advice based on the recording (SP 1.2.2, 2.1.1).  
