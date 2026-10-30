@@ -11,7 +11,7 @@
 **Pupils:** Recall descriptions of famous buildings.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Pupils examine their research and building images.
+**Teacher:** Ask pupils to review their building research notes and images, checking that each selected fact supports the planned description.
 **Pupils:** Review building research and pictures.
 
 ## Activity 2 (20 minutes)
