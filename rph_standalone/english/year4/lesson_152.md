@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read Activity 1 for details.
+**Teacher:** Check two to four new words in a monolingual dictionary.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Use context and dictionaries to infer unfamiliar words.
+**Teacher:** Follow TB Warm up and Vocabulary using CD2 Track 75.
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete Activity 2 and explain evidence for answers.
+**Teacher:** Complete Activity 1 using CD2 Track 76 and Activity 2 on should or shouldn't.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
