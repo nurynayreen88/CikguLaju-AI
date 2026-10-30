@@ -14,7 +14,7 @@ Teacher asks what pupils know about a school career day. Pupils name familiar oc
 Teacher introduces the meaning of career and previews the story pictures. Pupils predict what may happen.
 
 ## Activity 2 — Story and response (25 minutes)
-Teacher guides the career-day story using Student's Book pp.22–23 and Teacher's Book pp.42–43. Pupils discuss favourite characters, draw a chosen occupation and share their drawings in groups.
+Teacher guides the career-day story using Student's Book pp.22–23 and Teacher's Book pp.42–43. Pupils discuss favourite characters, draw a chosen occupation and share their drawings in groups. Pupils complete Workbook p.15, Activity 1, by matching the story characters to their jobs and actions.
 
 ## PBD (10 minutes)
 Teacher observes responses to the story and spoken descriptions of chosen jobs. Pupils explain one character or occupation.
