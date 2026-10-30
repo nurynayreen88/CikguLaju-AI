@@ -19,7 +19,7 @@
 **Pupils:** Complete remaining tasks and practise identified weak points.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Lead self-assessment of ordinal numbers, dates and celebrations.
+**Teacher:** Guide pupils to assess their use of ordinal numbers, dates and celebration vocabulary against their revision responses.
 **Pupils:** Review their answers and complete a self-assessment checklist.
 
 ## Closure (5 minutes)
