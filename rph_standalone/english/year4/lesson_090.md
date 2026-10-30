@@ -15,11 +15,11 @@
 **Pupils:** Identify date, time, venue and RSVP details.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Create a card using presentation software or paper.
+**Teacher:** Demonstrate a card layout with date, time, venue and RSVP, then support pupils in creating cards on paper or with presentation software.
 **Pupils:** Create an invitation or card using paper or software.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Present cards and check key information.
+**Teacher:** Invite pupils to present their cards and check that each includes clear event details and suitable wording.
 **Pupils:** Present the card and check key information.
 
 ## Closure (5 minutes)
