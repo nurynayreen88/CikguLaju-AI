@@ -26,7 +26,7 @@
 **Teacher:** Review useful action verbs.
 **Pupils:** Recall useful action verbs.
 
-**PBD:** Observe the named learning task against 2.1.3 and 2.2.2; for teacher-selected standards, establish criteria before class.  
+**PBD:** Observe whether pupils explain the steps for making a reused-container object using First and Then, and respond to peer questions (SP 2.1.3, 2.2.2).  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
