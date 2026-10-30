@@ -23,7 +23,7 @@
 **Pupils:** Draw belongings and guess their owners.
 
 ## Closure (5 minutes)
-**Teacher:** Correct a common possessive pronoun error.
+**Teacher:** Model correcting one possessive-pronoun sentence and check pupils' understanding.
 **Pupils:** Correct a possessive pronoun sentence.
 
 **PBD:** Observe ownership questions, responses and comprehension during Activity 5 and the guessing task against SP 2.1.5 and 1.2.5.  
