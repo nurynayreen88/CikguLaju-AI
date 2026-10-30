@@ -20,8 +20,7 @@ class TestRPTPJYearFirstMenu(unittest.TestCase):
     def test_year_first_menu_and_free_user_teaser(self):
         with tempfile.TemporaryDirectory() as temp:
             years = build_year_keyboard(temp, Keyboard)
-            self.assertEqual([label for label, _ in years.buttons],
-                             ["Tahun 4", "Tahun 5", "Tahun 6"])
+            self.assertEqual(years.buttons, [])
             self.assertIn("Pengguna percuma", menu_message(authorized=False))
             self.assertIn("Rakan Pembangun", menu_message(authorized=False))
             self.assertEqual(decode_year_callback("rptpj27year:5"), 5)
@@ -35,6 +34,8 @@ class TestRPTPJYearFirstMenu(unittest.TestCase):
             folder = root / "RPT_PJ_2027_DOCX"
             folder.mkdir()
             (folder / FILE_PATTERN.format(state="Johor", year=4)).write_bytes(b"fixture")
+            years = build_year_keyboard(root, Keyboard)
+            self.assertEqual(years.buttons, [("Tahun 4", "rptpj27year:4")])
             states = build_state_keyboard(root, 4, Keyboard)
             self.assertEqual(states.buttons, [("Johor", "rptpj27:Johor:4")])
             self.assertEqual(build_state_keyboard(root, 5, Keyboard).buttons, [])
