@@ -11,8 +11,9 @@ class TestRPTDelivery(unittest.TestCase):
     def test_catalogue_and_access(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
+            (root / "RPT_PJ_2027_DOCX").mkdir()
             self.assertEqual(list_available(root), [])
-            path = root / FILE_PATTERN.format(state="Johor", year=5)
+            path = root / "RPT_PJ_2027_DOCX" / FILE_PATTERN.format(state="Johor", year=5)
             path.write_bytes(b"docx-placeholder")
             self.assertEqual(len(list_available(root)), 1)
             with self.assertRaises(RPTAccessDenied):
