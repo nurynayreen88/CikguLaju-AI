@@ -23,7 +23,7 @@
 **Pupils:** Complete Activities 3–4 and report the suggested sport.
 
 ## Closure (5 minutes)
-**Teacher:** Review listening gist and personal opinions.
+**Teacher:** Ask pupils to state the listening gist and give a reasoned opinion about one suggested sport.
 **Pupils:** State a personal opinion about the listening.
 
 **PBD:** Check identification of sports in Track 60 and spoken recommendations supported by listening (SP 1.2.1, 2.1.1).  
