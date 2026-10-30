@@ -7,7 +7,7 @@
 **References:** SB p.99 Activities 1–2; TB p.146; Primary Year 4 SOW Lesson 142
 
 ## Set induction (10 minutes)
-**Teacher:** Follow TB warm-up.
+**Teacher:** Use the TB warm-up to elicit descriptions of well-known people without revealing their names.
 **Pupils:** Recall famous people and descriptive words.
 
 ## Activity 1 (15 minutes)
