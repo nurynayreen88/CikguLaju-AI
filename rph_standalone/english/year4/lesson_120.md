@@ -22,6 +22,8 @@
 **Teacher:** Ask pairs to justify one answer by pointing to a sentence in the text, then invite a reasoned opinion about the dinosaur they find most interesting.
 **Pupils:** Explain answers using text evidence.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state one dinosaur fact and identify the sentence in the text that supports it.
 **Pupils:** Recall one dinosaur fact.
