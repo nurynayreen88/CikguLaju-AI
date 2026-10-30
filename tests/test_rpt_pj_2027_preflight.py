@@ -23,8 +23,10 @@ class TestReleasePreflight(unittest.TestCase):
             root = Path(tmp)
             archive = root / "archive.zip"
             archive.write_bytes(b"fixture")
-            with patch("scripts.preflight_rpt_pj_2027.hashlib.sha256") as sha, \
-                 patch("scripts.preflight_rpt_pj_2027.verify", return_value=[]):
+            with (
+                patch("scripts.preflight_rpt_pj_2027.hashlib.sha256") as sha,
+                patch("scripts.preflight_rpt_pj_2027.verify", return_value=[]),
+            ):
                 from scripts.preflight_rpt_pj_2027 import EXPECTED_ARCHIVE_SHA256
                 sha.return_value.hexdigest.return_value = EXPECTED_ARCHIVE_SHA256
                 report = preflight(archive, root)
