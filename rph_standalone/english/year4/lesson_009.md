@@ -24,7 +24,7 @@
 **Pupils:** Write at least two cursive routine sentences and compare with classmates.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils select one clear sentence and reflect on spelling.
+**Teacher:** Ask pupils to select their clearest sentence and identify one spelling improvement.
 **Pupils:** Read one corrected sentence.
 
 ## PBD and differentiation
