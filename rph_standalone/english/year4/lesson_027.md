@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review household chores using flashcards and a listening identification game.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Identify chores in a flashcard listening game.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Use the TB Grammar Box to model questions with 'have to'; pupils respond to supported questions.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Answer have to questions using the Grammar Box.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Conduct TB Activity 3 with CD1 Track 26; pupils listen for specific chores and obligations.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Listen to Track 26 for chores and obligations.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Adapt Activity 4 with CD1 Track 37 as listed in SOW; pairs ask what they have to do at home.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Listen to the SOW-listed Track 37 and discuss home duties.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils share one obligation and spell a target chore phrase.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Share an obligation and spell one chore phrase.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Listening 1.2.2 and Listening 1.2.5.  
