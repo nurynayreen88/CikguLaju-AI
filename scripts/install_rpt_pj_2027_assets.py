@@ -20,6 +20,8 @@ def install(archive, destination):
         for state in STATES for year in YEARS
     }
     destination = Path(destination)
+    if destination.is_symlink() or (destination / "RPT_PJ_2027_DOCX").is_symlink():
+        raise ValueError("Refusing symlinked RPT asset destination")
     created = []
     with ZipFile(archive) as z:
         members = [info for info in z.infolist() if not info.is_dir()]
@@ -47,6 +49,8 @@ def install(archive, destination):
                     raise BadZipFile(f"Invalid Word document: {name}")
         targets = [(name, destination / name) for name in sorted(expected)]
         for _, target in targets:
+            if target.parent.is_symlink():
+                raise ValueError("Refusing symlinked asset folder")
             if target.exists() or target.is_symlink():
                 raise FileExistsError(f"Refusing overwrite: {target}")
         try:
