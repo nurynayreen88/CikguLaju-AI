@@ -11,7 +11,7 @@
 **Pupils:** Recall health words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Review the Grammar Box and Activity 3 dialogue.
+**Teacher:** Use the Grammar Box and Activity 3 dialogue to model an appropriate response to a health complaint.
 **Pupils:** Practise the model dialogue.
 
 ## Activity 2 (20 minutes)
