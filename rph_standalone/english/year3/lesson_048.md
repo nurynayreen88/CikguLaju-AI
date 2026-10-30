@@ -13,7 +13,7 @@ Teacher reviews present continuous verbs through action miming. Pupils describe 
 Teacher plays a suitable action chant and models contractions such as 'I'm' and 'they're'. Pupils listen, repeat and mime.
 
 ## Activity 2 — Language review (25 minutes)
-Pupils read Part A of the SOW worksheet and mark statements Yes or No. Teacher guides revision tasks and pupils write short descriptions of pictured actions using present continuous.
+Pupils read Part A of the SOW worksheet and mark statements Yes or No. Teacher guides revision tasks and pupils write short descriptions of pictured actions using present continuous. Pupils complete Workbook p.24, Activity 1, by correcting statements about sports and everyday activities.
 
 ## PBD (10 minutes)
 Teacher checks written descriptions and pronunciation of contractions. Pupils complete a brief self-assessment.
