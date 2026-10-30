@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Show pictures of Ancient Egypt and elicit prior knowledge.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Describe what is known about Ancient Egypt.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Display pictures and explain that the topic concerns the past.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Predict the topic using historical pictures.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Read or play a prepared text based on the quiz; pupils identify the matching pictures.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Listen to the prepared quiz text and match pictures.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Introduce page vocabulary; pairs complete the SB quiz and check answers using SB p.118.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Complete the SB quiz and check answers on p.118.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils tell a partner one fact remembered from the quiz.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Tell a partner one fact from the quiz.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Listening 1.2.2 and Listening 1.2.1.  
