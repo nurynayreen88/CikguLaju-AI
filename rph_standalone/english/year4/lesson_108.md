@@ -11,7 +11,7 @@
 **Pupils:** Name ways to reuse containers.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB Warm-up and Activity 1.
+**Teacher:** Model the TB warm-up response, then guide pupils through Activity 1 and check understanding of reused materials.
 **Pupils:** Follow the model activity and identify materials.
 
 ## Activity 2 (20 minutes)
