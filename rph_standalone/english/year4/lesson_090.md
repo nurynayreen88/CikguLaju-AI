@@ -23,7 +23,7 @@
 **Pupils:** Present the card and check key information.
 
 ## Closure (5 minutes)
-**Teacher:** Give feedback on clarity.
+**Teacher:** Give specific feedback on the clarity of invitation details, including date, time, venue and RSVP.
 **Pupils:** Give feedback on clarity.
 
 **PBD:** Assess invitations or cards for clear date, time, venue and response details against SP 5.3.1 and 4.2.2.  
