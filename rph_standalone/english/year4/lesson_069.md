@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Introduce feelings and emotions using pictures.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Identify feelings shown in pictures.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Pupils identify character emotions in the story, including happiness on p.5.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Describe character emotions in the story.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Distribute Worksheet 5; pupils complete suitable social expressions.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Complete social expressions in Worksheet 5.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Pairs check responses and discuss how story events make them feel.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Compare answers and discuss feelings about events.
 
 ## Closure (5 minutes)
 **Teacher action:** Accept suitable expressions and share answers.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Share a suitable expression and its meaning.
 
 **PBD:** Check pupil responses and products against 5.2.1 and 3.3.1; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
