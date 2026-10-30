@@ -23,7 +23,7 @@
 **Pupil action:** Compare food in the story with food at home.
 
 ## Closure (5 minutes)
-**Teacher action:** Distribute exit cards and ask pupils to record three newly learned words.
+**Teacher action:** Distribute exit cards, ask pupils to record three new food words and check that they can explain one meaning.
 **Pupil action:** Write three newly learned words on an exit card.
 
 **PBD:** Check accurate dictionary definitions and text-based answers about food vocabulary against SP 3.2.4 and 3.2.2.  
