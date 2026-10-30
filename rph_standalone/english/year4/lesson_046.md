@@ -15,7 +15,7 @@
 **Pupils:** Follow Activity 1 with Track 49 and complete Activity 2.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Identify the four Writing Tip points in the model email.
+**Teacher:** Guide pupils to identify four Writing Tip features in the model email and explain their purpose.
 **Pupils:** Identify four Writing Tip points in the model email.
 
 ## PBD and reinforcement (10 minutes)
