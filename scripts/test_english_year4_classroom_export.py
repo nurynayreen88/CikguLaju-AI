@@ -33,6 +33,9 @@ def main():
         assert any(line.lower().startswith("## set induction") for line in clean), lesson
         assert any(line.lower().startswith("## closure") for line in clean), lesson
         assert any("pbd" in line.lower() for line in clean), lesson
+        for heading in ("set induction", "closure"):
+            assert sum(line.lower().startswith("## " + heading) for line in clean) == 1, (lesson, heading)
+        assert sum(line.lower().startswith("## activity") for line in clean) >= 2, lesson
         assert not any(line.strip().lower().startswith("**status:**") for line in clean), lesson
         assert not any(line.strip().lower().startswith("**qa status:**") for line in clean), lesson
         assert not any(line.strip().lower().startswith(("**source:**", "**sow:**", "**references:**")) for line in clean), lesson
