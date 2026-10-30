@@ -19,7 +19,7 @@
 **Pupils:** Listen to the song and identify its main idea.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use a word-matching worksheet and replay the song.
+**Teacher:** Distribute a word-matching worksheet, replay the song and ask pupils to verify their answers using words they heard.
 **Pupils:** Infer meanings of celebrate, celebration, fun and special.
 
 ## Closure (5 minutes)
