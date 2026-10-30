@@ -27,6 +27,19 @@ class TestRPTDelivery(unittest.TestCase):
             with self.assertRaises(RPTDocumentUnavailable):
                 resolve_rpt(root, negeri="Kedah", tahun=5, authorized=True)
 
+    def test_symlinked_document_is_never_listed_or_sent(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            folder = root / "RPT_PJ_2027_DOCX"
+            folder.mkdir()
+            original = root / "external.docx"
+            original.write_bytes(b"private")
+            link = folder / FILE_PATTERN.format(state="Johor", year=4)
+            link.symlink_to(original)
+            self.assertEqual(list_available(root), [])
+            with self.assertRaises(RPTDocumentUnavailable):
+                resolve_rpt(root, negeri="Johor", tahun=4, authorized=True)
+
     def test_complete_catalogue(self):
         self.assertEqual(len(STATES) * len(YEARS), 48)
         self.assertEqual(len(set(STATES)), 16)
