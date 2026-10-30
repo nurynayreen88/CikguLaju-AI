@@ -88,7 +88,7 @@ def can_download_rpt(*, is_developer=False, subscription_active=False,
     return bool(is_developer or subscription_active or rakan_pembangun_active)
 
 
-def validate_pdp_counts(rows):
+def validate_pdp_counts(rows, *, require_all_states=False):
     """Validate 34/33/34 lesson slots per state without changing records."""
     counts = defaultdict(set)
     for row in rows:
@@ -100,7 +100,7 @@ def validate_pdp_counts(rows):
         if lesson in counts[(state, year)]:
             raise CalendarDataError(f"Duplicate PdP: {state}/{year}/{lesson}")
         counts[(state, year)].add(lesson)
-    if set(counts) != {(state, year) for state in EXPECTED_STATES for year in YEAR_COUNTS}:
+    if require_all_states and set(counts) != {(state, year) for state in EXPECTED_STATES for year in YEAR_COUNTS}:
         raise CalendarDataError("Incomplete state/year catalogue: expected 48 combinations")
     for (state, year), values in counts.items():
         if values != set(range(1, YEAR_COUNTS[year] + 1)):
