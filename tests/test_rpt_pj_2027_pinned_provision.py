@@ -46,9 +46,11 @@ class TestPinnedProvisioning(unittest.TestCase):
                 (target / "partial.docx").write_bytes(b"partial")
                 return 1
 
-            with patch("scripts.provision_rpt_pj_2027_v76.hashlib.sha256") as sha, \\
-                 patch("scripts.provision_rpt_pj_2027_v76.verify", return_value=[]), \\
-                 patch("scripts.provision_rpt_pj_2027_v76.install", side_effect=fake_install):
+            with (
+                patch("scripts.provision_rpt_pj_2027_v76.hashlib.sha256") as sha,
+                patch("scripts.provision_rpt_pj_2027_v76.verify", return_value=[]),
+                patch("scripts.provision_rpt_pj_2027_v76.install", side_effect=fake_install),
+            ):
                 sha.return_value.hexdigest.return_value = EXPECTED_ARCHIVE_SHA256
                 with self.assertRaisesRegex(RuntimeError, "incomplete"):
                     provision(archive, destination)
