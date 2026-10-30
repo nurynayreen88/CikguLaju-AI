@@ -4,7 +4,7 @@
 **Main SP:** Writing 4.2.4  
 **Complementary SP:** Listening 1.2.3  
 **Duration:** 60 minutes  
-**Resources:** SB p.31 Activity 2; TB p.53; CD1 Track 43
+**Resources:** SB p.31 Activity 2; TB p.53; The Curse listening CD1 Track 43 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Review Ancient Egypt and story characters.
