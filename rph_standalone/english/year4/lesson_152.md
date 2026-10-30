@@ -22,6 +22,8 @@
 **Teacher:** Play CD2 Track 76 for Activity 1, guide pupils to check their listening answers, then model one should or shouldn't sentence before Activity 2.
 **Pupils:** Answer reading questions with evidence.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to explain one newly learned health word and use it in a meaningful sentence.
 **Pupils:** Explain a new word.
