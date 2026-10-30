@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Organise pupil presentations, give classmates a listening purpose and model constructive peer feedback.
-**Pupils:** Present work while classmates complete a listening task.
+**Pupils:** Present work while classmates complete a listening task. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Highlight one successful description and model revising an unclear sentence for accuracy.
