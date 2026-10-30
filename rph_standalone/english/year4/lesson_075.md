@@ -7,7 +7,7 @@
 **Resources:** SB p.57 Activities 3–4; TB p.89; simple sample menus
 
 ## Set induction (10 minutes)
-**Teacher action:** Introduce menu, order, pay, waiter and customer.
+**Teacher action:** Show a sample menu and elicit the meanings of menu, order, pay, waiter and customer in context.
 **Pupil action:** Identify menu, waiter, customer and order vocabulary.
 
 ## Activity 1 (15 minutes)
