@@ -15,7 +15,7 @@
 **Pupils:** Predict the topic using historical pictures.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Read or play a prepared text based on the quiz; pupils identify the matching pictures.
+**Teacher:** Read or play the prepared quiz text and ask pupils to identify the matching Ancient Egypt pictures, checking which clues they heard.
 **Pupils:** Listen to the prepared quiz text and match pictures.
 
 ## Reinforcement and PBD (10 minutes)
