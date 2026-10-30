@@ -23,7 +23,7 @@
 **Pupils:** Predict the next chapter and give reasons.
 
 ## Closure (5 minutes)
-**Teacher:** Share a prediction.
+**Teacher:** Invite pupils to explain one prediction using a story clue.
 **Pupils:** Share one prediction.
 
 **PBD:** Observe retelling of Chapters 1–2 and whether pupils justify a prediction about the next chapter (SP 5.2.1, 2.1.4).  
