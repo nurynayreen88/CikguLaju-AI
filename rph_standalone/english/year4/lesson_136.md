@@ -15,7 +15,7 @@
 **Pupils:** Read the text and identify the main idea.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Locate specific details about the sports.
+**Teacher:** Demonstrate how to find one detail about sports equipment, then ask pupils to locate two more details in the text.
 **Pupils:** Find specific details about the sports.
 
 ## Reinforcement / PBD (10 minutes)
