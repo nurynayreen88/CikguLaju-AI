@@ -23,7 +23,7 @@
 **Pupils:** Summarise the survey results.
 
 ## Closure (5 minutes)
-**Teacher:** Share one sports opinion.
+**Teacher:** Invite pupils to state a sports preference and give a supporting reason.
 **Pupils:** Share one sports opinion.
 
 **PBD:** Observe sports-preference survey questions, responses and follow-up phrases against SP 2.1.1 and 2.2.1.  
