@@ -26,7 +26,7 @@
 **Teacher action:** Pupils reflect on one improved sentence.
 **Pupil action:** Improve one sentence after feedback.
 
-**PBD:** Check pupil responses and products against 4.2.5 and 4.2.3; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Assess health-table responses and linked sentences using or, enough and but against SP 4.2.5 and 4.2.3.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 73, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
