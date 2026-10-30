@@ -23,7 +23,7 @@
 **Pupils:** Use story evidence to justify answers.
 
 ## Closure (5 minutes)
-**Teacher:** Share one value from the story.
+**Teacher:** Ask pupils to identify one value shown in the story and cite the character action that demonstrates it.
 **Pupils:** Share one story lesson.
 
 **PBD:** Check inference of story vocabulary and listening gist, supported by story evidence (SP 3.2.3, 1.2.3).  
