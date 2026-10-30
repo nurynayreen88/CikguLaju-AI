@@ -14,6 +14,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-dir", type=Path, required=True)
     parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--fail-on-multipage", action="store_true", help="Optional strict one-page gate")
     args = parser.parse_args()
     rows = []
     for lesson in range(1, 161):
@@ -36,6 +37,8 @@ def main() -> None:
     if multi:
         print("Needs A4 layout review:", ", ".join(map(str, multi)))
     print("NOTE: one PDF page does not prove visual quality or DOCX page count")
+    if args.fail_on_multipage and multi:
+        raise SystemExit(f"FAILED one-page target: {len(multi)} lessons require layout review")
 
 
 if __name__ == "__main__":
