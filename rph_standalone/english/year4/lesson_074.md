@@ -23,7 +23,7 @@
 **Pupil action:** Check construction steps and rehearse presentation.
 
 ## Closure (5 minutes)
-**Teacher action:** Groups present storyboards at the mini corner.
+**Teacher action:** Invite groups to present their pop-up storyboards at the mini corner and explain the story sequence.
 **Pupil action:** Present the storyboard at a mini corner.
 
 **PBD:** Observe completion of the pop-up storyboard, creative response and clarification of construction steps against SP 5.3.1 and 2.2.2.  
