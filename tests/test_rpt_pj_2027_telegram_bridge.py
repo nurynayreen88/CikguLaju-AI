@@ -45,22 +45,22 @@ class TestTelegramBridge(unittest.TestCase):
             resolver_calls.append(user)
             return current.copy()
         handle_download(bot, 123, self.root, "rptpj27:Johor:4",
-                        access_resolver=resolver)
+                        user_id=321, access_resolver=resolver)
         current["subscription_active"] = False
         with self.assertRaises(RPTAccessDenied):
             handle_download(bot, 123, self.root, "rptpj27:Johor:4",
-                            access_resolver=resolver)
-        self.assertEqual(resolver_calls, [123, 123])
+                            user_id=321, access_resolver=resolver)
+        self.assertEqual(resolver_calls, [321, 321])
         self.assertEqual(len(bot.sent), 1)
 
     def test_only_explicit_true_flags_authorize(self):
         bot = Bot()
         with self.assertRaises(RPTAccessDenied):
             handle_download(bot, 123, self.root, "rptpj27:Johor:4",
-                            access_resolver=lambda _: {"subscription_active": "true"})
+                            user_id=321, access_resolver=lambda _: {"subscription_active": "true"})
         self.assertFalse(bot.sent)
         handle_download(bot, 123, self.root, "rptpj27:Johor:4",
-                        access_resolver=lambda _: {"rakan_pembangun_active": True})
+                        user_id=321, access_resolver=lambda _: {"rakan_pembangun_active": True})
         self.assertEqual(len(bot.sent), 1)
 
 
