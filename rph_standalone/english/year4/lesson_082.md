@@ -23,7 +23,7 @@
 **Pupils:** Write rules in cursive and present them.
 
 ## Closure (5 minutes)
-**Teacher:** Identify safe and unsafe actions using flashcards.
+**Teacher:** Show safety flashcards and ask pupils to classify each action as safe or unsafe, giving one reason.
 **Pupils:** Classify flashcard actions as safe or unsafe.
 
 **PBD:** Observe spoken safety-rule explanations and legibility of written imperatives in cursive against SP 2.1.3 and 4.1.2.  
