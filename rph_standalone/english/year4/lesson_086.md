@@ -19,7 +19,7 @@
 **Pupils:** Listen for details and compare answers in pairs.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use prepositions and questions to explain responses.
+**Teacher:** Model a location response with a suitable preposition, then ask pupils to explain their answers using complete phrases.
 **Pupils:** Explain answers using prepositions and questions.
 
 ## Closure (5 minutes)
