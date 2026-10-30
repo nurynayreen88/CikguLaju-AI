@@ -11,11 +11,11 @@
 **Pupils:** Identify animals from sound clues.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read Chapters 1 and 2 and explore graphic-novel features.
+**Teacher:** Guide pupils through Chapters 1 and 2, drawing attention to picture panels, speech bubbles and key events.
 **Pupils:** Read Chapters 1–2 and notice graphic-novel features.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups retell the events of the two chapters.
+**Teacher:** Give groups a beginning-middle-end prompt and invite them to retell key events from both chapters.
 **Pupils:** Retell key events in groups.
 
 ## PBD / reinforcement (10 minutes)
