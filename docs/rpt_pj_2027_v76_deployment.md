@@ -11,8 +11,8 @@ Status: STAGING. Do not merge until CI passes and app.py integration is reviewed
 ## Safe installation
 1. Provision a persistent, non-symlinked data directory outside existing app assets.
 2. Run `python scripts/verify_rpt_pj_2027_v76.py /path/to/v76.zip`.
-3. Run `python scripts/install_rpt_pj_2027_assets.py /path/to/v76.zip /path/to/data`.
-4. Run `python scripts/audit_rpt_pj_2027_readiness.py /path/to/data`.
+3. Run the pinned installer: `python scripts/provision_rpt_pj_2027_v76.py /path/to/v76.zip /path/to/NEW_VERSIONED_DATA_DIR`. It verifies SHA-256 and 48 Word files and refuses an existing destination.
+4. Run `python scripts/audit_rpt_pj_2027_readiness.py /path/to/NEW_VERSIONED_DATA_DIR`.
 5. Verify all 48 files exist in `/path/to/data/RPT_PJ_2027_DOCX/`.
 6. Never overwrite existing RPT files; install to a fresh versioned directory when upgrading.
 
@@ -33,3 +33,17 @@ Status: STAGING. Do not merge until CI passes and app.py integration is reviewed
 - Manual Telegram access tests: developer, Rakan Pembangun, active subscriber, free user.
 - Confirm existing RPH and payment flows unaffected.
 - Merge/deploy only after these checks pass.
+
+## Render service identified (read-only check 2026-10-30)
+- Workspace: Nuryn Ayreen's workspace, ID `tea-daft3g2d0e5s73dtig1g`.
+- Service: `CikguLaju-AI`, ID `srv-dah3b8lbedkc738ugqt0`.
+- Repo: `nurynayreen88/CikguLaju-AI`; branch: `main`.
+- **Auto-deploy on commit to main is enabled.** Do not merge PR #70 until all release gates pass.
+- Build: `bash build_jawi.sh`; start: `gunicorn app:app`.
+- Service runtime: Python, Oregon; no persistent disk has been verified.
+- Do not assume manually copied files survive redeploy. Establish a repeatable asset delivery mechanism (or a verified persistent disk) before release.
+- The approved 48-file ZIP is not committed in PR #70; the CSV snapshot and code alone do not supply downloadable DOCX files.
+- Existing `app.py` remains unchanged in PR #70. The opt-in menu and callback bridge are **not live** until registered in the existing bot and supplied a trusted user-ID authorization resolver.
+
+## Current CI limitation
+- GitHub Actions run #74 (run ID `41003933343`) concluded failure. Job metadata exposed no steps or logs, so the failure reason is unverified. Do not report tests as passing or merge based on locally checked assets alone.
