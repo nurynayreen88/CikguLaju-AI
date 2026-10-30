@@ -4,7 +4,7 @@
 **Main SP:** 2.1.1  
 **Complementary SP:** 4.2.3  
 **Duration:** 60 minutes  
-**Resources:** SB p.53 Activity 4; TB pp.82–83; CD1 Track 80
+**Resources:** SB p.53 Activity 4; TB pp.82–83; Activity 4 CD1 Track 80 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher action:** Review containers such as a cup of tea and a bottle of water.
