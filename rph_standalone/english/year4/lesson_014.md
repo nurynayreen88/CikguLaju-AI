@@ -24,7 +24,7 @@
 **Pupils:** Write and exchange an email, then respond to a classmate.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils proofread punctuation and share one corrected sentence.
+**Teacher:** Guide pupils to check email punctuation and invite them to explain one corrected sentence.
 **Pupils:** Correct punctuation in their own email.
 
 ## PBD and differentiation
