@@ -29,6 +29,8 @@ jobs:
           python scripts/smoke_english_year4_exports.py --lesson 1 --output-dir /tmp/year4-smoke
           python scripts/smoke_english_year4_exports.py --lesson 80 --output-dir /tmp/year4-smoke
           python scripts/smoke_english_year4_exports.py --lesson 160 --output-dir /tmp/year4-smoke
+      - name: Batch smoke all lessons
+        run: python scripts/batch_smoke_english_year4_exports.py --output-dir /tmp/year4-all
       - name: Check outputs can be reopened
         run: |
           python - <<'PY'
