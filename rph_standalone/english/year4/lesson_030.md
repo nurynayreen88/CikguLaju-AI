@@ -11,11 +11,11 @@
 **Pupils:** Recall spelling of household chores.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Pupils write their own accurately spelled cards for the TB hot-card pantomime revision game.
+**Teacher:** Model one correctly spelled chore card, then ask pupils to prepare cards for the TB hot-card pantomime game.
 **Pupils:** Write correctly spelled cards for the pantomime game.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow TB Activity 1; pupils read and complete the written language task.
+**Teacher:** Explain TB Activity 1 and guide pupils to read the prompts before completing the written task.
 **Pupils:** Read and complete the written Activity 1 task.
 
 ## Reinforcement and PBD (10 minutes)
