@@ -11,7 +11,7 @@
 **Pupils:** Mime action verbs and identify classmates' actions.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the sample jazz chant on guidebook p.62.
+**Teacher:** Read the sample jazz chant on guidebook p.62 with clear rhythm and ask pupils to identify the repeated action verbs.
 **Pupils:** Read and practise the jazz chant.
 
 ## Activity 2 (20 minutes)
