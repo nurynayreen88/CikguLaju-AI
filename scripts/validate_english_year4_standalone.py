@@ -58,6 +58,16 @@ def check() -> list[str]:
                 errors.append(f"Lesson {number:03d}: no timed lesson stages")
             elif sum(map(int, stages)) != 60:
                 errors.append(f"Lesson {number:03d}: stage timings total {sum(map(int, stages))}, expected 60")
+            # Every timed stage must describe both teacher and pupil actions.
+            stage_blocks = re.findall(
+                r"^##\s+.+?\(\d+\s+minutes?\)\s*$([\s\S]*?)(?=^##\s+|\Z)",
+                text, re.MULTILINE | re.IGNORECASE,
+            )
+            for stage_no, block in enumerate(stage_blocks, start=1):
+                if not re.search(r"^\*\*Teacher(?: action)?:\*\*", block, re.MULTILINE | re.IGNORECASE):
+                    errors.append(f"Lesson {number:03d}: stage {stage_no} lacks teacher action")
+                if not re.search(r"^\*\*(?:Pupils|Pupil action):\*\*", block, re.MULTILINE | re.IGNORECASE):
+                    errors.append(f"Lesson {number:03d}: stage {stage_no} lacks pupil action")
             if not re.search(r"\bPBD\b|\bassessment\b", text, re.IGNORECASE):
                 errors.append(f"Lesson {number:03d}: PBD/assessment section missing")
             if not re.search(r"\*\*Teacher(?: action)?:\*\*", text, re.IGNORECASE):
