@@ -23,7 +23,7 @@
 **Pupils:** Present the creative work and use assessment criteria.
 
 ## Closure (5 minutes)
-**Teacher:** Share constructive feedback.
+**Teacher:** Invite feedback on a specific strength and one improvement in each presentation.
 **Pupils:** Give constructive feedback.
 
 **PBD:** Observe creative story or poem responses to Mowgli's dilemma and clarity of group presentations (SP 5.3.1, 2.3.1).  
