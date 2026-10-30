@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow CCL Activity 1 steps 1–6 and explore food sounds.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Explore and imitate food sounds from the poem.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Activity 1 steps 8–11; pupils identify descriptive adjectives.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Identify descriptive adjectives in Noisy Food.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow CCL Activity 3 and Activity 2; pupils create an imaginative shape-poem response.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Create an imaginative shape-poem response.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Display pupils' work for a gallery walk; classmates use a peer checklist to assess responses.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Use a checklist during a gallery walk and revise work.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils share one effective adjective from their poem.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Share an effective adjective from the poem.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Language Arts 5.3.1 and Reading 3.3.1.  
