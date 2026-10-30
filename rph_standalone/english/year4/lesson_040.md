@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Use pyramids and Tutankhamun pictures to introduce the setting.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Identify pyramids and the historical setting.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Use TB Background Note and Vocabulary with Track 42.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Learn background words using Track 42.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Predict what Carter and Carnarvon found, then read The Curse silently.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Predict the discovery and read The Curse silently.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Check predictions with reasons and discuss an interesting story detail.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Check predictions with evidence from the story.
 
 ## Closure (5 minutes)
 **Teacher:** Share a reaction to the story.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share a reaction to the story.
 
 **PBD:** Check responses against Reading 3.3.1 and Speaking 2.1.4.  
 **Differentiation:** Vary prediction question complexity.  
