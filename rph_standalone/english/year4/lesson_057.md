@@ -15,11 +15,11 @@
 **Pupils:** Locate answers in the Student Book texts.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Guide pairs to plan a paragraph using question-word notes.
+**Teacher:** Model a who-what-when planning grid and guide pairs to collect relevant festival details before writing.
 **Pupils:** Choose a celebration and organise paragraph notes.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide drafting and peer checking of capitals and punctuation.
+**Teacher:** Provide a paragraph checklist, then guide drafting and peer review of capital letters, punctuation and detail accuracy.
 **Pupils:** Draft, check and revise a celebration paragraph.
 
 ## Closure (5 minutes)
