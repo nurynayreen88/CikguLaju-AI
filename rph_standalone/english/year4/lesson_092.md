@@ -26,7 +26,7 @@
 **Teacher:** Review action verbs.
 **Pupils:** Recall action verbs used in the task.
 
-**PBD:** Assess task responses against 2.2.2 and 2.1.3; teacher selects specific criteria for Language Awareness.  
+**PBD:** Observe comprehension of model-making instructions and clear sequencing of construction steps against SP 2.2.2 and 2.1.3.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
