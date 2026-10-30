@@ -22,6 +22,8 @@
 **Teacher action:** Organise pair checking and prompt pupils to explain how a story event makes them feel.
 **Pupil action:** Compare answers and discuss feelings about events.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher action:** Invite pairs to demonstrate a suitable social expression and explain which story situation it fits.
 **Pupil action:** Share a suitable expression and its meaning.
