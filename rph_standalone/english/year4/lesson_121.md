@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review dinosaurs using pictures and body-part vocabulary.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Name dinosaur body parts.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Student's Book Activity 3 and Activity 4 with Teacher's Book page 127.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Complete book activities with a partner.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs invent and draw a new dinosaur, then write a description of it.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Draw an original dinosaur and write its features.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils exchange drawings and evaluate descriptions positively.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Review a partner's description.
 
 ## Closure (5 minutes)
 **Teacher:** Present the invented dinosaur and explain its features.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Present the dinosaur to classmates.
 
 **PBD:** Assess the source-based task against 4.2.4 and 1.2.2; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
