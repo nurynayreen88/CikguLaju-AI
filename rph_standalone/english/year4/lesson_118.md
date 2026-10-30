@@ -11,19 +11,19 @@
 **Pupils:** Compare animal pictures using familiar adjectives.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Predict comparisons among Malaysian native animals.
+**Teacher:** Display two Malaysian animal pictures, model a comparative sentence, and ask pupils to predict which animal is larger or faster.
 **Pupils:** Predict comparisons between Malaysian animals.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen to a teacher-read text about endangered animals and infer key words.
+**Teacher:** Read a short, age-appropriate text about endangered Malaysian animals aloud twice. First, ask for its general message; then pause at two unfamiliar words and guide pupils to infer meaning from the surrounding sentences.
 **Pupils:** Listen to the teacher-read text and infer key words.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pairs discuss why wildlife should be protected and justify ideas.
+**Teacher:** Give pairs the question 'Why should we protect these animals?' and two sentence starters. Listen for a reason and supporting detail from each pair.
 **Pupils:** Discuss wildlife protection and justify their views.
 
 ## Closure (5 minutes)
-**Teacher:** Share one conservation action.
+**Teacher:** Invite pupils to suggest one realistic conservation action, then recap the two context clues used during listening.
 **Pupils:** Suggest one conservation action.
 
 **PBD:** Record inference of key words from the teacher-read wildlife text and reasons given for conservation against SP 1.3.1 and 2.1.4.  
