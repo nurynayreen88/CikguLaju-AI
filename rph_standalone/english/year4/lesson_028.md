@@ -19,7 +19,7 @@
 **Pupils:** Complete Activities 2–3 and prepare a description.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Pupils present while classmates complete a listening task and give peer feedback.
+**Teacher:** Organise pupil presentations, give classmates a listening purpose and model constructive peer feedback.
 **Pupils:** Present work while classmates complete a listening task.
 
 ## Closure (5 minutes)
