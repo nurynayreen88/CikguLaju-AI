@@ -19,7 +19,7 @@
 **Pupil action:** Discuss answers using how much, how many and how often.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Follow TB Activity 3 with Track 79 and check listening details.
+**Teacher action:** Play Track 79 for TB Activity 3, pause for key details and ask pupils to justify one answer from what they heard.
 **Pupil action:** Listen to Track 79 and check details in Activity 3.
 
 ## Closure (5 minutes)
