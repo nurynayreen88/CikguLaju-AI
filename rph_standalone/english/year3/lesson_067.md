@@ -13,7 +13,7 @@ Teacher reviews familiar furniture vocabulary. Pupils name objects in a room.
 Teacher gives pupils clothes and furniture picture cards. Pupils sort them into categories and explain their choices.
 
 ## Activity 2 — Reading (25 minutes)
-Teacher follows the Vocabulary and Activity 1 guidance from Teacher's Book p.76. Pupils read Student's Book p.46, locate details in the picture story and practise writing key vocabulary.
+Teacher follows the Vocabulary and Activity 1 guidance from Teacher's Book p.76. Pupils read Student's Book p.46, locate details in the picture story and practise writing key vocabulary. Pupils complete Workbook p.39, Activity 1, by filling in missing words in the picture story.
 
 ## PBD (10 minutes)
 Pupils answer two reading-detail questions and spell three familiar words from the text.
