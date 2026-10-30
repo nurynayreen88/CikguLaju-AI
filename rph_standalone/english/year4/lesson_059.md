@@ -23,7 +23,7 @@
 **Pupils:** Listen for details and complete Activity 4.
 
 ## Closure (5 minutes)
-**Teacher:** Review the TB Revision box.
+**Teacher:** Use the TB Revision box to check one listening or dialogue target and address a common misunderstanding.
 **Pupils:** Share one detail remembered from the dialogue.
 
 **PBD:** Record identification of the dialogue's main topic and specific details in Activities 3–4 (SP 1.2.1, 1.2.2).  
