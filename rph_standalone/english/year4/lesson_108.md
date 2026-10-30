@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review recycling and the idea of reusing containers.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Name ways to reuse containers.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Warm-up and Activity 1.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Follow the model activity and identify materials.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs reuse containers to create an object following Activity 2.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Make an object from reused containers in pairs.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Present the object using First and Then; peers check steps.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Explain the steps using First and Then.
 
 ## Closure (5 minutes)
 **Teacher:** Review useful action verbs.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Recall useful action verbs.
 
 **PBD:** Observe the named learning task against 2.1.3 and 2.2.2; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
