@@ -22,6 +22,8 @@
 **Teacher:** Give pairs a description frame and listen to each pair describe a person or object mentioned in the recording; record accuracy and clarity.
 **Pupils:** Describe people or objects from the listening.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to report one listening detail and explain which words helped them identify it.
 **Pupils:** Recall one key listening detail.
