@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce vocabulary for Facts about Egypt Past and Present.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Recall vocabulary about Egypt past and present.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Prepare nine textbook statements and at least two false statements.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Read statements and identify possible false claims.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs read and identify false statements with reasons.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Read in pairs and justify which statements are false.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Discuss answers and follow TB Activity 2 with Track 47.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Check answers with Track 47 and Activity 2.
 
 ## Closure (5 minutes)
 **Teacher:** Play a brief vocabulary review game.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Review vocabulary in a short game.
 
 **PBD:** Check responses against Reading 3.2.2 and Listening 1.2.4.  
 **Differentiation:** Use different versions of the statement worksheet.  
