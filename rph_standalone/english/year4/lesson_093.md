@@ -23,7 +23,7 @@
 **Pupils:** Retell an event using picture prompts.
 
 ## Closure (5 minutes)
-**Teacher:** Share a favourite moment.
+**Teacher:** Invite pupils to identify a favourite story moment and explain their choice using a story detail.
 **Pupils:** Describe a favourite story moment.
 
 **PBD:** Observe independent reading and accurate oral retelling of the transport story against SP 3.3.1 and 2.3.1.  
