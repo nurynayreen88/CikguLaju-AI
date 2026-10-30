@@ -7,7 +7,7 @@
 **References:** SOW Lesson 160; teacher selects project; Primary Year 4 SOW Lesson 160
 
 ## Set induction (10 minutes)
-**Teacher:** Introduce the teacher-selected project theme and outcome.
+**Teacher:** Explain the teacher-selected project theme, expected product and success criteria before group planning.
 **Pupils:** Discuss the selected project topic and success criteria.
 
 ## Activity 1 (15 minutes)
