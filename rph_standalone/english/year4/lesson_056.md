@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model extracting one festival fact for Activity 2, then pair pupils from different texts to exchange information.
-**Pupils:** Complete Activity 2 and exchange answers with a partner.
+**Pupils:** Complete Activity 2 and exchange answers with a partner. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to explain two celebration words and use one in a factual sentence.
