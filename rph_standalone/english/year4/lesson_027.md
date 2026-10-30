@@ -23,7 +23,7 @@
 **Pupils:** Listen to the SOW-listed Track 37 and discuss home duties.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils share one obligation and spell a target chore phrase.
+**Teacher:** Invite pupils to state one household obligation using have to and spell a related chore phrase.
 **Pupils:** Share an obligation and spell one chore phrase.
 
 ## Assessment and differentiation
