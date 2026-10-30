@@ -26,7 +26,7 @@
 **Teacher:** Review a useful gerund and prepare recycled materials.
 **Pupils:** Share one gerund and prepare materials for the next lesson.
 
-**PBD:** Assess task responses against 1.2.2 and 4.2.3; teacher selects specific criteria for Language Awareness.  
+**PBD:** Check transport listening answers, correct gerund forms and short written responses against SP 1.2.2 and 4.2.3.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
