@@ -26,7 +26,7 @@
 **Teacher:** Give feedback on the written answers.
 **Pupils:** Revise one answer using feedback.
 
-**PBD:** Observe lesson tasks against SP 5.2.1 and 4.2.4.  
+**PBD:** Check character descriptions from The King of Kites for appropriate adjectives and supporting story details (SP 5.2.1, 4.2.4).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
