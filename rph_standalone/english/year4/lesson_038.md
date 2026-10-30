@@ -4,7 +4,7 @@
 **Main SP:** Listening 1.2.5  
 **Complementary SP:** Speaking 2.1.2  
 **Duration:** 60 minutes  
-**Resources:** SB p.29 Activities 4–5; TB p.51; CD1 Tracks 40–41
+**Resources:** SB p.29 Activities 4–5; TB p.51; Activity 4 CD1 Track 40 (KPM SOW); Activity 5 CD1 Track 41 (draft mapping, pending independent audio/TB check)
 
 ## Set induction (10 minutes)
 **Teacher:** Review past simple yes/no questions with a short oral game.
