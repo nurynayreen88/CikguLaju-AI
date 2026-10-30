@@ -26,7 +26,7 @@
 **Teacher:** Identify safe and unsafe actions using flashcards.
 **Pupils:** Classify flashcard actions as safe or unsafe.
 
-**PBD:** Assess task responses against 2.1.3 and 4.1.2; teacher selects specific criteria for Language Awareness.  
+**PBD:** Observe spoken safety-rule explanations and legibility of written imperatives in cursive against SP 2.1.3 and 4.1.2.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
