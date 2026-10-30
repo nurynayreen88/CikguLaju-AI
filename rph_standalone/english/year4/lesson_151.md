@@ -15,11 +15,11 @@
 **Pupils:** Suggest good learning habits using should and shouldn't.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs ask for advice on learning English in school and at home.
+**Teacher:** Model an advice-seeking question, then organise pair interviews about practising English at school and at home.
 **Pupils:** Ask and answer questions about learning English at home and school.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils explain why particular learning habits are helpful.
+**Teacher:** Prompt pupils to explain why one learning habit is helpful and assess whether each response includes a clear reason.
 **Pupils:** Explain reasons for chosen learning habits.
 
 ## Closure (5 minutes)
