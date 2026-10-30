@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Follow Activity 4 and check dialogue details.
-**Pupils:** Listen for details and complete Activity 4.
+**Pupils:** Listen for details and complete Activity 4. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Use the TB Revision box to check one listening or dialogue target and address a common misunderstanding.
