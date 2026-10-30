@@ -11,11 +11,11 @@
 **Pupils:** Recall story characters and feelings.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow guidebook p.77 steps 1–4.
+**Teacher:** Explain guidebook p.77 steps 1–4, model the opening response and monitor pupils as they complete the tasks.
 **Pupils:** Complete guidebook page 77 steps 1–4.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Continue guidebook steps 5–8 and prepare a creative response.
+**Teacher:** Guide groups through guidebook steps 5–8, prompting them to connect their creative response to a character or event in the story.
 **Pupils:** Develop a creative response using steps 5–8.
 
 ## Reinforcement / PBD (10 minutes)
