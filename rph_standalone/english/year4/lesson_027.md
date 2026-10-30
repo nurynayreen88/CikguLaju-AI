@@ -19,7 +19,7 @@
 **Pupils:** Listen to Track 26 for chores and obligations.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Adapt Activity 4 with CD1 Track 37 as listed in SOW; pairs ask what they have to do at home.
+**Teacher:** Set up pair questions about chores pupils have to do at home, following Activity 4 and the SOW-listed Track 37, and monitor accurate question forms.
 **Pupils:** Listen to the SOW-listed Track 37 and discuss home duties.
 
 ## Closure (5 minutes)
