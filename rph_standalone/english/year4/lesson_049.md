@@ -26,7 +26,7 @@
 **Teacher:** Review the song and ordinal numbers.
 **Pupils:** Chant a line and recall an ordinal number.
 
-**PBD:** Observe lesson tasks against the selected standards (1.2.1; 3.2.3).  
+**PBD:** Check identification of the celebrations song's main idea and inference of key words (SP 1.2.1 and 3.2.3).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
