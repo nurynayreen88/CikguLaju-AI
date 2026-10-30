@@ -23,7 +23,7 @@
 **Pupils:** Listen to Track 29, answer questions and check spelling.
 
 ## Closure (5 minutes)
-**Teacher:** Use optional hopscotch if time permits; pupils correct one spelling error.
+**Teacher:** Use the optional hopscotch review if time permits, then ask pupils to identify and correct one chore spelling error.
 **Pupils:** Correct one spelling error.
 
 ## Assessment and differentiation
