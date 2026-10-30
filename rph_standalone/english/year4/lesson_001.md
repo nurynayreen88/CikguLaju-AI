@@ -32,7 +32,7 @@
 **Pupils:** Correct responses and repeat country names.
 
 ## Closure (5 minutes)
-**Teacher:** Review the country words through quick flag identification.  
+**Teacher:** Show two flag cards for a quick country-name check and ask pupils to give a short self-introduction.  
 **Pupils:** Identify a flag and give a short personal introduction.
 
 ## Verified mapping and limits
