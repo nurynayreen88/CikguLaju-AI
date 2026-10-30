@@ -13,7 +13,7 @@ Teacher leads a short classroom exercise. Pupils name actions such as dancing an
 Teacher invites pupils to do two minutes of safe exercise, elicits actions such as dancing and jogging, then introduces exercise vocabulary and pictures of four children. Pupils describe their actions and predict the children's activities.
 
 ## Activity 2 — Reading (25 minutes)
-Pupils read short texts and match each one to a child. Teacher guides Student's Book p.28 Activity 1 and the Grammar Box and Activity 2 on pp.28–29.
+Pupils read short texts and match each one to a child. Teacher guides Student's Book p.28 Activity 1 and the Grammar Box and Activity 2 on pp.28–29. Pupils complete Workbook p.20, Activity 2, by writing positive and negative present continuous sentences about sports.
 
 ## PBD (10 minutes)
 Teacher checks the main idea and two details from each text, noting pupils who need extra support.
