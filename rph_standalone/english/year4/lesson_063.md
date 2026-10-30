@@ -11,7 +11,7 @@
 **Pupils:** Recall character adjectives from the story.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Model friendly, honest and kind.
+**Teacher:** Model friendly, honest and kind in short sentences and ask pupils to match each adjective to a character action.
 **Pupils:** Describe characters using suitable adjectives.
 
 ## Activity 2 (20 minutes)
