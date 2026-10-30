@@ -22,7 +22,7 @@
 **Pupils:** Listen/read Activity 1 with CD1 Track 7; locate details in the text and complete Grammar Box and Activity 3.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Ask pupils to locate and explain specific details in the text; use consistent English instructions with demonstration. Support pupils who need help reading names.
+**Teacher:** Demonstrate locating one fact in the text, then ask pupils to explain further details; model difficult names for pupils who need reading support.
 **Pupils:** Identify three details from the reading and respond to two supported classroom instructions.
 
 ## Closure (5 minutes)
