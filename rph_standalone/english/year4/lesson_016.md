@@ -20,7 +20,7 @@
 **Pupils:** Complete Activities 2–3 and compare answers.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils complete SOW 'How did I do in Unit 1?' self-assessment checklist.
+**Teacher:** Distribute the SOW 'How did I do in Unit 1?' checklist and guide pupils to assess their progress.
 **Pupils:** Rate their learning in the SOW Unit 1 self-assessment.
 
 ## Closure (5 minutes)
