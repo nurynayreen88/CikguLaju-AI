@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Distribute kite templates, set clear design criteria and supervise groups as they plan and label their kites.
-**Pupils:** Design a kite and prepare an explanation.
+**Pupils:** Design a kite and prepare an explanation. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite groups to present their kite designs, name the materials and explain one design choice.
