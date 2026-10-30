@@ -34,7 +34,7 @@ QA_SECTION_MARKERS = (
     "verified mapping", "verified source", "sow direct verification",
     "verification notes", "audit", "source verification",
 )
-QA_FIELD_MARKERS = ("**status:**", "**qa status:**", "**verification:**")
+QA_FIELD_MARKERS = ("**status:**", "**qa status:**", "**verification:**", "**source:**", "**sow:**", "**references:**")
 
 
 def classroom_lines(lines: list[str]) -> list[str]:
@@ -51,6 +51,8 @@ def classroom_lines(lines: list[str]) -> list[str]:
             continue
         # Preserve track numbers while omitting internal audio-verification notes.
         line = re.sub(r"; CD1 designation in draft remains pending independent TB/audio verification", "", line, flags=re.IGNORECASE)
+        # Keep classroom resources but remove draft filename suffixes.
+        line = re.sub(r"_DRAFT(?=\\.md\\b)", "", line, flags=re.IGNORECASE)
         result.append(line)
     return result
 
