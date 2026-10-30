@@ -15,11 +15,11 @@
 **Pupil action:** Complete Worksheets 7a–7b using the guide.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils follow p.42 steps to create a pop-up storyboard.
+**Teacher action:** Demonstrate the first construction step from p.42, then supervise pupils as they make their pop-up storyboards.
 **Pupil action:** Make a pop-up storyboard following the steps.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pairs check construction steps and rehearse their presentation.
+**Teacher action:** Provide a simple construction checklist and guide pairs to check their work before rehearsing a presentation.
 **Pupil action:** Check construction steps and rehearse presentation.
 
 ## Closure (5 minutes)
