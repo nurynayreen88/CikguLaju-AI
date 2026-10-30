@@ -22,6 +22,8 @@
 **Teacher:** Demonstrate sports actions from the TB response task, then guide pupils to respond and check their understanding.
 **Pupils:** Respond to sports vocabulary through actions.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to name a sport they enjoy and connect their response to one word or action from the song.
 **Pupils:** Name a sport they enjoy.
