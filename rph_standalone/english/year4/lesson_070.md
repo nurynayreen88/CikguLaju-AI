@@ -29,4 +29,5 @@
 **PBD:** Record accuracy of Health Quiz listening answers and specific details checked with Track 79 against SP 1.2.5 and 1.2.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 70, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
