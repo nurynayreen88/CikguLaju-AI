@@ -23,7 +23,7 @@
 **Pupils:** Exchange sentences and identify which are true.
 
 ## Closure (5 minutes)
-**Teacher:** Discuss one recycling habit.
+**Teacher:** Invite pupils to describe one practical recycling habit and explain how it helps.
 **Pupils:** Share one recycling habit.
 
 **PBD:** Check spelling and accuracy of pupils' true/false recycling sentences and their revisions after partner feedback (SP 4.2.3, 4.3.2).  
