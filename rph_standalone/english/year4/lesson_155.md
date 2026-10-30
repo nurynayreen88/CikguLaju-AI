@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 3 listening preparation.
+**Teacher:** Review home-safety vocabulary and the Activity 3 pictures.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen and complete Activities 3–4.
+**Teacher:** Follow Activity 3 and Activity 4 using CD2 Track 78.
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs compare answers and express appropriate opinions.
+**Teacher:** Partners give safety advice with should or shouldn't and explain reasons using because.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
