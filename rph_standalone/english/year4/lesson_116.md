@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Brainstorm comparative adjectives for animals and dinosaurs.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Suggest animal comparison words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model short and long comparative forms using Grammar Box.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Practise short and long comparative forms.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils write animal description clues on cards.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Write animal description clues on cards.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Other groups guess the animal and check spelling and clarity.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Guess animals from clues and correct spelling.
 
 ## Closure (5 minutes)
 **Teacher:** Share one corrected comparative sentence.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Share an improved comparative sentence.
 
 **PBD:** Observe the named learning task against 4.2.4 and 4.3.2; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
