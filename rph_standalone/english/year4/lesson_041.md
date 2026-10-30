@@ -26,7 +26,7 @@
 **Teacher:** Improve one full-sentence answer.
 **Pupils:** Improve one complete answer.
 
-**PBD:** Check responses against Writing 4.2.4 and Listening 1.2.3.  
+**PBD:** Check past-simple questions and complete written answers using Track 43 (SP 4.2.4 and 1.2.3).  
 **Differentiation:** Provide past-verb prompts and partner support.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT; direct source/audio and Word/PDF QA pending.
