@@ -11,7 +11,7 @@
 **Pupils:** Recall pictures from Part One.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Sequence Part One pictures and recall predicted endings.
+**Teacher:** Model sequencing one Part One picture, then ask groups to order the rest and recall their predicted endings.
 **Pupils:** Sequence pictures and recall the predicted ending.
 
 ## Activity 2 (20 minutes)
