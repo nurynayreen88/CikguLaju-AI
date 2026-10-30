@@ -15,7 +15,7 @@
 **Pupils:** Identify descriptive adjectives in Noisy Food.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow CCL Activity 3 and Activity 2; pupils create an imaginative shape-poem response.
+**Teacher:** Show an example of a shape poem, then guide pupils through CCL Activities 3 and 2 to create their own imaginative responses.
 **Pupils:** Create an imaginative shape-poem response.
 
 ## Reinforcement and PBD (10 minutes)
