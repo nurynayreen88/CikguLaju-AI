@@ -15,11 +15,11 @@
 **Pupils:** Listen to the first recording.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Match health problems to the people pictured.
+**Teacher:** Ask pupils to match each health problem to the correct pictured person and justify their answers using information they heard.
 **Pupils:** Match people with their health problems.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow Activity 5 using CD2 Track 74 and explain advice using should.
+**Teacher:** Play CD2 Track 74 for Activity 5, model an advice sentence with should and invite pupils to explain suitable advice for each problem.
 **Pupils:** Listen again and give advice.
 
 ## Closure (5 minutes)
