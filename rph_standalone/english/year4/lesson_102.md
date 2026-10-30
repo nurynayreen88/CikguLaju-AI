@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review helping-out vocabulary.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Recall helping-out words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Activity 4 listening instructions.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Follow the listening instructions for Activity 4.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils identify details from the audio and discuss their meaning.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Listen and identify details from the recording.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pairs describe people or objects mentioned in the activity.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Describe people or objects from the listening.
 
 ## Closure (5 minutes)
 **Teacher:** Recall one key listening detail.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Recall one key listening detail.
 
 **PBD:** Observe the named learning task against 1.2.2 and 2.1.5; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
