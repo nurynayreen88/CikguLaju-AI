@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Discuss the message or moral of the story.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Explain the moral of The King of Kites.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Follow CCL p.52 using story pictures and situation prompts.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Discuss story pictures using guidebook prompts.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pupils complete Task sheet 3 p.53 and prepare opinions.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Complete Task sheet 3 and prepare an opinion.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Pupils share responses with reasons and receive differentiated feedback.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Share opinions with reasons and use feedback.
 
 ## Closure (5 minutes)
 **Teacher action:** Pupils share a lesson learned from the story.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** State one lesson learned from the story.
 
 **PBD:** Check pupil responses and products against 5.3.1 and 2.1.1; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
