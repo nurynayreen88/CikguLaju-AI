@@ -15,11 +15,11 @@
 **Pupils:** Read and practise the jazz chant.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Replace selected verbs and write a new chant following steps 1–4.
+**Teacher:** Model replacing one action verb in the sample chant, then guide groups through steps 1–4 to compose their own chant.
 **Pupils:** Replace verbs and compose a group chant.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Groups present chants and check spelling.
+**Teacher:** Invite each group to perform its chant and use a checklist to assess suitable verbs, spelling and clear delivery.
 **Pupils:** Perform the chant and check spelling.
 
 ## Closure (5 minutes)
