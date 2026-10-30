@@ -19,7 +19,7 @@
 **Pupils:** Compare the animals' characteristics and justify predictions in pairs.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Invite pupils to draw a favourite jungle animal and explain its characteristics.
+**Teacher:** Ask pupils to sketch a jungle animal from the cover and describe two visible characteristics before sharing.
 **Pupils:** Draw an animal and explain their choice using descriptive language.
 
 ## Closure (5 minutes)
