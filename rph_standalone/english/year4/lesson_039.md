@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review past-tense verbs and questions.
-**Pupils:** Respond to prompts and recall relevant language.
+**Pupils:** Recall past-tense verbs and questions.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model a three-step action sequence; pupils give instructions.
-**Pupils:** Follow the source-based model and perform the guided task.
+**Pupils:** Give instructions for a three-step action sequence.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Groups mime sequences and ask past-tense questions in a hot-seat game.
-**Pupils:** Complete the central task and practise the main skill.
+**Pupils:** Mime sequences and ask questions in the hot-seat game.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils give longer action instructions and describe what happened.
-**Pupils:** Show learning evidence and use feedback to improve answers.
+**Pupils:** Give longer instructions and describe what happened.
 
 ## Closure (5 minutes)
 **Teacher:** Share one clear spoken sequence.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Demonstrate one clear spoken sequence.
 
 **PBD:** Check responses against Speaking 2.1.3 and Speaking 2.1.2.  
 **Differentiation:** Provide speaking frames and confidence-sensitive feedback.  
