@@ -19,7 +19,7 @@
 **Pupils:** Listen without written lyrics and infer meanings using context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide Activity 1 and phonics practice for /eə/ as in pear.
+**Teacher:** Model the /eə/ sound in pear, then guide pupils to identify and pronounce matching words in Activity 1.
 **Pupils:** Complete the listening activity and identify the /eə/ sound in words.
 
 ## Closure (5 minutes)
