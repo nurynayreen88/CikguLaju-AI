@@ -23,7 +23,7 @@
 **Pupils:** Write short answers about transport.
 
 ## Closure (5 minutes)
-**Teacher:** Review a useful gerund and prepare recycled materials.
+**Teacher:** Elicit one gerund from the transport activity and remind pupils which recycled materials are needed next lesson.
 **Pupils:** Share one gerund and prepare materials for the next lesson.
 
 **PBD:** Check transport listening answers, correct gerund forms and short written responses against SP 1.2.2 and 4.2.3.  
