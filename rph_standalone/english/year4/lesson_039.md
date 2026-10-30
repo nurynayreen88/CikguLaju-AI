@@ -4,7 +4,7 @@
 **Main SP:** Speaking 2.1.3  
 **Complementary SP:** Speaking 2.1.2  
 **Duration:** 60 minutes  
-**Resources:** Non-textbook lesson; teacher-prepared action cards
+**Resources:** Non-textbook lesson; teacher-prepared action cards in resources/lesson_039_past_action_cards_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Review past-tense verbs and questions.
