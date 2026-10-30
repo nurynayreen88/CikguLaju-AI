@@ -15,7 +15,7 @@
 **Pupils:** Complete Activity 1 and check past simple answers.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Use Track 51 with Activity 2, then continue Activity 3.
+**Teacher:** Play Track 51 for Activity 2, check pupils' answers and guide Activity 3.
 **Pupils:** Listen to Track 51 and complete Activities 2–3.
 
 ## Reinforcement / PBD (10 minutes)
