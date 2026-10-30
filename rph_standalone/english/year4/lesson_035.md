@@ -15,7 +15,7 @@
 **Pupils:** Listen to Greg and Anna on Track 39 and respond.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils read the printed dialogue to check listening answers.
+**Teacher:** Ask pupils to reread the printed dialogue and identify the words that confirm or correct their listening answers.
 **Pupils:** Read the printed dialogue to check listening answers.
 
 ## Reinforcement and PBD (10 minutes)
