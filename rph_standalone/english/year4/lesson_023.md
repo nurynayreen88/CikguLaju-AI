@@ -19,7 +19,7 @@
 **Pupils:** Predict school days using timetables and because.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils write two opinion strips, mix them in groups, guess authors and agree or disagree.
+**Teacher:** Model an opinion sentence with a reason, then organise group exchange of two written opinion strips and prompt polite agreement or disagreement.
 **Pupils:** Write opinion strips, guess authors and respond.
 
 ## Closure (5 minutes)
