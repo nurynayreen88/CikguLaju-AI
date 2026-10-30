@@ -4,7 +4,7 @@
 **Main SP:** 4.3.2  
 **Complementary SP:** 4.3.1  
 **Duration:** 60 minutes  
-**Resources:** SB p.51 Activities 4–5; TB p.81; CD1 Tracks 75–76
+**Resources:** SB p.51 Activities 4–5; TB p.81; **Activity 4: CD1 Track 75; Activity 5: CD1 Track 76 (KPM SOW)**
 
 ## Set induction (10 minutes)
 **Teacher action:** Display three challenging food words from the previous lesson and ask pupils to identify and correct spelling errors.
