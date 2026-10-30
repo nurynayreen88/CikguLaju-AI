@@ -23,7 +23,7 @@
 **Pupils:** Complete Activity 1 and explain one safety judgement.
 
 ## Closure (5 minutes)
-**Teacher:** Lead the physical-response activity in TB p.92.
+**Teacher:** Lead the TB p.92 physical-response activity and check that pupils match actions to safe transport rules.
 **Pupils:** Respond to safety instructions with appropriate movements.
 
 **PBD:** Observe sound recognition and spoken explanations against SP 1.1.1 and 2.1.4.  
