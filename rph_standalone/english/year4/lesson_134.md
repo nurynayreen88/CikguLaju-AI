@@ -15,11 +15,11 @@
 **Pupils:** Listen to three interviews.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils identify information in the three interviews.
+**Teacher:** Replay each interview, pause after key information and ask pupils to record a relevant detail for each speaker.
 **Pupils:** Record details from the interviews.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Grammar Boxes on pages 93 and 95 to write a paragraph about a liked or disliked sport.
+**Teacher:** Model a short paragraph using the Grammar Boxes on pages 93 and 95, then guide pupils to write and check their own paragraph about a liked or disliked sport.
 **Pupils:** Write a sports paragraph.
 
 ## Closure (5 minutes)
