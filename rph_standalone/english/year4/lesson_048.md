@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected Year 4 DSKP SP  
 **Complementary SP:** Teacher-selected Year 4 DSKP SP  
 **Duration:** 60 minutes  
-**References:** SB p.36 Revision 3; TB pp.60–61; CD1 Track 51; Year 4 SOW Lesson 48
+**References:** SB p.36 Revision 3; TB pp.60–61; CD1 Track 51; optional self-check: resources/lesson_048_unit3_self_assessment_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB Warm-up to review Unit 3.
