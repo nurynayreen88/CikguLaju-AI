@@ -15,11 +15,11 @@
 **Pupils:** Read and listen to Track 25; choose a child they relate to.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils infer unfamiliar vocabulary from context and complete TB Activity 1.
+**Teacher:** Model using a sentence clue to infer one unfamiliar word, then guide pupils to complete TB Activity 1.
 **Pupils:** Infer unfamiliar words from context and complete Activity 1.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Complete Activity 2, locate reading details and explain guesses; omit the bottom-page writing task.
+**Teacher:** Guide Activity 2, ask pupils to point to supporting reading details and explain their answers; omit the bottom-page writing task.
 **Pupils:** Locate reading details in Activity 2 and justify guesses.
 
 ## Closure (5 minutes)
