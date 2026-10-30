@@ -19,7 +19,7 @@
 **Pupils:** Organise the collected data in a simple chart.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow Activity 2 and describe a partner's sports preferences in groups.
+**Teacher:** Guide Activity 2 and ask groups to report a partner's sports preference using evidence from their interview notes.
 **Pupils:** Describe a partner's preferences in groups.
 
 ## Closure (5 minutes)
