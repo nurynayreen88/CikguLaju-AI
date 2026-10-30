@@ -63,3 +63,15 @@ jobs:
               assert len(PdfReader(str(pdf)).pages) > 0, pdf
           print('PASS: 160 draft DOCX and 160 draft PDF files structurally readable')
           PY
+
+      - name: Upload pagination audit and representative previews
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: year4-draft-layout-audit
+          path: |
+            /tmp/year4-page-report.csv
+            /tmp/year4-smoke/*.pdf
+            /tmp/year4-smoke/*.docx
+          if-no-files-found: warn
+          retention-days: 7
