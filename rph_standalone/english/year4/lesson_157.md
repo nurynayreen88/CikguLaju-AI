@@ -11,7 +11,7 @@
 **Pupils:** Predict the meaning of the title What are germs?.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB warm-up and read What are germs? in SB pp.110–111.
+**Teacher:** Use the TB warm-up to elicit pupils' questions about germs, then guide reading of What are germs? on SB pp.110–111.
 **Pupils:** Read the information text in Student's Book pages 110–111.
 
 ## Activity 2 (20 minutes)
