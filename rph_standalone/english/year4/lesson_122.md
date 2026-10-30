@@ -11,7 +11,7 @@
 **Pupils:** Recall characters and important events.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Facilitate the group activity in the Teaching Guidebook p.48, steps 1–5.
+**Teacher:** Explain Teaching Guidebook p.48 steps 1–5, assign group roles and check pupils' understanding before discussion.
 **Pupils:** Follow the guidebook group task and refer to the graphic novel.
 
 ## Activity 2 (20 minutes)
