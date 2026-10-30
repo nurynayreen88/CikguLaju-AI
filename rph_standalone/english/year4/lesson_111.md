@@ -19,11 +19,11 @@
 **Pupils:** Sequence story pictures using guidebook steps 1–7.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Order four pictures from Chapter 5 and predict events.
+**Teacher:** Model sequencing one Chapter 5 picture, then ask groups to order the remaining pictures and predict the next event.
 **Pupils:** Order Chapter 5 pictures and predict events.
 
 ## Closure (5 minutes)
-**Teacher:** Give reasons for predictions.
+**Teacher:** Prompt groups to explain their predictions using picture details or earlier story events.
 **Pupils:** Give a reason for a prediction.
 
 **PBD:** Check pupils' ordering of story pictures and explanations of predictions against SP 5.3.1 and 2.1.4.
