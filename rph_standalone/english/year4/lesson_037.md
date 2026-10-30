@@ -23,7 +23,7 @@
 **Pupils:** Express simple opinions about the poem with reasons.
 
 ## Closure (5 minutes)
-**Teacher:** Ask pupils to share an idea from the poem.
+**Teacher:** Invite pupils to share an idea from the poem and explain which words inspired it.
 **Pupils:** Share one idea or response to Woodpecker.
 
 **PBD:** Observe the poem tasks against SP 5.3.1 and 4.2.1.  
