@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Pre-teach adjectives without revealing sports topic.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall descriptive adjectives.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Show possible song topics: animals, food, sports and school.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Predict whether the song is about sports, food, school or animals.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Play the song with books closed; pupils identify the sports theme and complete Activity 1.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Listen with books closed and identify the theme.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Follow TB total physical response task and practise sports vocabulary.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Respond to sports vocabulary through actions.
 
 ## Closure (5 minutes)
 **Teacher:** Relate the song to a sport pupils enjoy.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Name a sport they enjoy.
 
 **PBD:** Assess the source-based task against 1.2.2 and 1.2.1; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
