@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review housework words with a short game.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Recall housework vocabulary in a short game.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Revision 2 Activity 1 with Track 35 as specified in SOW.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Listen to Track 35 and complete Revision 2 Activity 1.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Complete Revision 2 Activity 2 and optional practice based on observed needs.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Complete Revision 2 Activity 2 and targeted practice.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Pupils complete the SOW Unit 2 self-assessment on school subjects, schedules, housework and duties.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Self-assess school subjects, schedules, housework and duties.
 
 ## Closure (5 minutes)
 **Teacher:** Collect checklists and identify one skill to reteach.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Identify one skill to improve.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Teacher-selected DSKP SP and Teacher-selected DSKP SP.  
