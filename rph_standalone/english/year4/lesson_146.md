@@ -26,7 +26,7 @@
 **Teacher:** Share a useful response.
 **Pupils:** Share a helpful response.
 
-**PBD:** Assess the specified task against 2.2.1 and 1.2.5; for teacher-selected standards choose criteria before class.  
+**PBD:** Observe use of clarification and appropriate responses in the health-dialogue role-play (SP 2.2.1, 1.2.5).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
