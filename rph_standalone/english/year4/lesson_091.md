@@ -19,7 +19,7 @@
 **Pupils:** Identify transport details and gerund forms.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Write short responses to questions about transport.
+**Teacher:** Model a short written transport answer, then ask pupils to respond to the questions using details from the listening.
 **Pupils:** Write short answers about transport.
 
 ## Closure (5 minutes)
