@@ -13,7 +13,7 @@ Teacher recalls the story from Student's Book p.36. Pupils act out a remembered 
 Teacher leads a team game spelling days of the week using magnetic letters. Pupils spell and check words.
 
 ## Activity 2 — Guided writing (25 minutes)
-Teacher guides Student's Book p.37 Activity 2 and the diary worksheet. Pupils write accurate days and short statements about activities, then practise asking and answering about days.
+Teacher guides Student's Book p.37 Activity 2 and the diary worksheet. Pupils write accurate days and short statements about activities, then practise asking and answering about days. Pupils complete Workbook p.30, Activity 1, by reading the month calendar and comparing the seasons.
 
 ## PBD (10 minutes)
 Pupils spell three weekdays correctly and answer two simple questions about the weekly routine.
