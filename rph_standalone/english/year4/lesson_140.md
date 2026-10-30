@@ -26,7 +26,7 @@
 **Teacher:** Complete TB optional review.
 **Pupils:** Share a conclusion from the survey.
 
-**PBD:** Assess the source-based task against 2.1.1 and 2.1.5; choose relevant criteria for Language Awareness.  
+**PBD:** Observe partner interviews, sports-survey recording and spoken summaries of preferences (SP 2.1.1, 2.1.5).  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
