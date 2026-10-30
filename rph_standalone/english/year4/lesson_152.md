@@ -7,7 +7,7 @@
 **References:** SB pp.106–107 Activities 1–2; TB pp.156–157; dictionaries; Primary Year 4 SOW Lesson 152
 
 ## Set induction (10 minutes)
-**Teacher:** Review vocabulary related to health.
+**Teacher:** Show health picture prompts and elicit symptom words pupils will need for the listening activity.
 **Pupils:** Recall health words.
 
 ## Activity 1 (15 minutes)
