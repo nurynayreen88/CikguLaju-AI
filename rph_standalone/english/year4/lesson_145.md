@@ -1,25 +1,32 @@
 # English Year 4 — Lesson 145: Listening 28
 
-**Topic:** What's the matter?
-**Main SP:** 1.3.1
-**Complementary SP:** 1.1.1
-**Duration:** 60 minutes
-**References:** Get Smart Plus 4 SB p.103 Activity 1; TB p.152; Year 4 SOW Lesson 145.
+**Topic:** What's the matter?  
+**Main SP:** 1.3.1  
+**Complementary SP:** 1.1.1  
+**Duration:** 60 minutes  
+**References:** SB p.103 Activity 1; TB p.152; Year 4 SOW Lesson 145
 
 ## Set induction (10 minutes)
-Teacher introduces health vocabulary with flashcards; pupils identify familiar words.
+**Teacher:** Display health flashcards and elicit familiar symptoms and expressions.
+**Pupils:** Name symptoms and match them to picture clues.
 
 ## Activity 1 (15 minutes)
-Teacher follows TB listening preparation; pupils predict the topic from pictures.
+**Teacher:** Prepare the health song; hide its written lyrics and ask pupils to predict words they may hear.
+**Pupils:** Predict the topic and identify health expressions from pictures.
 
 ## Activity 2 (20 minutes)
-Teacher plays the listening task; pupils infer meanings of unfamiliar words using contextual clues.
+**Teacher:** Play the song or listening material following TB p.152; ask pupils to raise a hand when they hear target words.
+**Pupils:** Listen without written lyrics, recognise target words and infer unfamiliar expressions from context.
 
 ## Reinforcement / PBD (10 minutes)
-Pupils check listening answers against picture cues and practise sound recognition.
+**Teacher:** Replay relevant parts and model actions for key health expressions.
+**Pupils:** Respond with actions and check answers against the pictures.
 
 ## Closure (5 minutes)
-Pupils recall one health expression.
+**Teacher:** Review one useful health expression.
+**Pupils:** Say and demonstrate one health expression.
 
-**Differentiation:** Picture prompts and peer support.
-**Status:** DRAFT — detailed source and Word/PDF QA pending.
+**PBD:** Observe contextual inference and recognition of target sounds against SP 1.3.1 and 1.1.1.  
+**Differentiation:** Provide picture prompts, repetition, paired support and extension vocabulary.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — direct audio and Word/PDF QA pending.
