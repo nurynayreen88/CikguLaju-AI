@@ -15,11 +15,11 @@
 **Pupils:** Practise model descriptions from Activity 3.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs describe dinosaurs using comparative clues.
+**Teacher:** Model a clue using a comparative adjective, then organise pair turns in which one pupil describes a dinosaur and the other identifies it from the picture cards.
 **Pupils:** Give clues so a partner identifies dinosaurs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pupils check task steps and compare responses.
+**Teacher:** Display two success checks: use a comparative adjective and follow the partner's instructions. Observe pairs, give corrective feedback and invite a revised description.
 **Pupils:** Check task steps and improve descriptions.
 
 ## Closure (5 minutes)
