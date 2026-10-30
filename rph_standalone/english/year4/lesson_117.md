@@ -23,7 +23,7 @@
 **Pupils:** Order five synopsis strips and describe his feelings.
 
 ## Closure (5 minutes)
-**Teacher:** Share feelings about the story.
+**Teacher:** Ask pupils to describe a feeling about the story and give a reason.
 **Pupils:** Share a response to the story.
 
 **PBD:** Observe story sequencing and pupils' descriptions of Mowgli's feelings with reasons against SP 5.2.1 and 2.1.1.  
