@@ -15,7 +15,7 @@
 **Pupil action:** Listen to Health Quiz questions and choose answers.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pairs discuss their selected quiz answers using how much/many/often.
+**Teacher action:** Model a question with how much, how many or how often, then organise pairs to discuss their Health Quiz answers.
 **Pupil action:** Discuss answers using how much, how many and how often.
 
 ## PBD / reinforcement (10 minutes)
@@ -23,7 +23,7 @@
 **Pupil action:** Listen to Track 79 and check details in Activity 3.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils share one healthy habit.
+**Teacher action:** Invite pupils to share one healthy habit and give a short reason for their choice.
 **Pupil action:** Share one healthy habit.
 
 **PBD:** Record accuracy of Health Quiz listening answers and specific details checked with Track 79 against SP 1.2.5 and 1.2.2.  
