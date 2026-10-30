@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.2.3  
 **Duration:** 60 minutes  
-**Resources:** SB p.130 CLIL 2; TB p.194; CD3 Track 38
+**Resources:** SB p.130 CLIL 2; TB p.194; Activity 1 CD3 Track 38 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher action:** Sort foods into healthy and less healthy categories.
