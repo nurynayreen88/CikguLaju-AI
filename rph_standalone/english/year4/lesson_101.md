@@ -11,11 +11,11 @@
 **Pupils:** Identify visible details and suggest where the story takes place.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow guidebook p.27 steps 1–3 to explore the cover.
+**Teacher:** Explain guidebook p.27 steps 1–3, point out clues on the cover and ask pupils to justify their predictions.
 **Pupils:** Examine the cover and describe the animals shown.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Ask pupils to discuss animal characteristics and predict relationships.
+**Teacher:** Organise pair discussion about the pictured animals and prompt pupils to predict relationships using visible clues.
 **Pupils:** Compare the animals' characteristics and justify predictions in pairs.
 
 ## Reinforcement / PBD (10 minutes)
