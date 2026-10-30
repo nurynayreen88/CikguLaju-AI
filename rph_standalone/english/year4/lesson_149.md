@@ -26,7 +26,7 @@
 **Teacher:** Reach a class consensus.
 **Pupils:** Share a reasoned class view.
 
-**PBD:** Assess the specified task against 5.2.1 and 4.3.1; for teacher-selected standards choose criteria before class.  
+**PBD:** Check written opinions on Mowgli's village or jungle choice for relevant reasons and punctuation (SP 5.2.1, 4.3.1).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
