@@ -22,6 +22,8 @@
 **Teacher:** Invite groups to present their story or poem, then assess each presentation using the guidebook p.128 form.
 **Pupils:** Present the creative work and use assessment criteria.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite feedback on a specific strength and one improvement in each presentation.
 **Pupils:** Give constructive feedback.
