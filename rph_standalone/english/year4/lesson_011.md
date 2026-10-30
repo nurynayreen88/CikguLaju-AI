@@ -12,7 +12,7 @@
 **Pupils:** Describe a pictured action in third-person present simple.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Arrange four story pictures in a predicted order; listen to Track 16 to check.
+**Teacher:** Ask pupils to predict the order of four story pictures, then play Track 16 to check their sequence.
 **Pupils:** Predict the sequence of four pictures and listen to Track 16 to order them.
 
 ## Activity 2 (20 minutes)
