@@ -23,7 +23,7 @@
 **Pupils:** Answer questions and justify choices.
 
 ## Closure (5 minutes)
-**Teacher:** Share one new animal word.
+**Teacher:** Invite pupils to explain one unfamiliar animal word using a picture or sentence clue.
 **Pupils:** Share a newly learned animal word.
 
 **PBD:** Observe responses to animal listening questions and inference of unfamiliar vocabulary (SP 1.2.5, 1.3.1).  
