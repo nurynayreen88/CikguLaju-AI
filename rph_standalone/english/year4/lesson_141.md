@@ -19,7 +19,7 @@
 **Pupils:** Read Part Two and check predictions while listening.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use TB after-reading activity to locate supporting story details.
+**Teacher:** Guide the TB after-reading task and ask pupils to locate a sentence supporting one answer about Part Two.
 **Pupils:** Locate story details to justify answers.
 
 ## Closure (5 minutes)
