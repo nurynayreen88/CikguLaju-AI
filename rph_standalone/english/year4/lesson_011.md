@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model identifying one /s/ or /z/ ending, then ask pairs to locate further examples in the story and verify them by listening.
-**Pupils:** Identify /s/ and /z/ examples in pairs and check against audio.
+**Pupils:** Identify /s/ and /z/ examples in pairs and check against audio. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Play a /s/ versus /z/ listening discrimination game.
