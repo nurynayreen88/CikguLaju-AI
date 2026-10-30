@@ -22,7 +22,7 @@
 **Pupils:** Draw one flag within the time limit; use it in Activity 2 to exchange introductions and describe a partner's chosen country.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Observe each pupil describing a person or flag and following a supported two-step classroom instruction. Give a quieter pair option for shy pupils.
+**Teacher:** Check whether pupils can describe a person or flag and follow two-step instructions; offer paired speaking before individual responses where needed.
 **Pupils:** Give a short description of a partner and follow two demonstrated English instructions.
 
 ## Closure (5 minutes)
