@@ -19,7 +19,7 @@
 **Pupils:** Write board-game questions using the model.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Groups check capitals and punctuation and play their games.
+**Teacher:** Display a checklist for capital letters, question marks and clarity. Ask groups to peer-check their board-game questions before playing.
 **Pupils:** Check capitals and punctuation before playing the game.
 
 ## Closure (5 minutes)
