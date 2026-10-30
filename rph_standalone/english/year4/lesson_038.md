@@ -15,7 +15,7 @@
 **Pupils:** Listen to Track 40 and answer Activity 4 questions.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Match verbs and nouns from the listening, such as dry hair and wrap present.
+**Teacher:** Demonstrate matching one verb and noun from the listening, then ask pupils to identify combinations such as dry hair and wrap present.
 **Pupils:** Match verbs and nouns from the listening, such as dry hair.
 
 ## PBD and reinforcement (10 minutes)
