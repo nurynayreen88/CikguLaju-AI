@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce story pictures and predict events.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Predict events from pictures.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Introduce should and ask pupils to predict from story pictures.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Discuss the meaning of should.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Play the story audio and ask a gist question.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Listen and answer the gist question.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete Activity 1 using Track 72 and answer with story evidence.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Use the story to justify answers.
 
 ## Closure (5 minutes)
 **Teacher:** Share one value from the story.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Share one lesson from the story.
 
 **PBD:** Assess the specified task against 3.2.3 and 1.2.3; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
