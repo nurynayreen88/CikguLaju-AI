@@ -15,11 +15,11 @@
 **Pupils:** Listen and match celebration words with pictures.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Assign Chinese New Year and US Independence Day reading texts.
+**Teacher:** Assign the two celebration texts to different groups and set a question about each festival's main features.
 **Pupils:** Read an assigned text and identify its country.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide Activity 2 and pair pupils with different texts.
+**Teacher:** Model extracting one festival fact for Activity 2, then pair pupils from different texts to exchange information.
 **Pupils:** Complete Activity 2 and exchange answers with a partner.
 
 ## Closure (5 minutes)
