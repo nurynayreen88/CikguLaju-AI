@@ -23,7 +23,7 @@
 **Pupils:** Draft, check and revise a celebration paragraph.
 
 ## Closure (5 minutes)
-**Teacher:** Ask for a specific improvement made after feedback.
+**Teacher:** Invite pupils to identify one specific change made to their festival paragraph after peer feedback.
 **Pupils:** Identify one improvement in the revised paragraph.
 
 **PBD:** Assess celebration paragraphs for relevant who, what and when details, spelling and punctuation (SP 4.3.3, 4.3.1).  
