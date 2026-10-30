@@ -23,7 +23,7 @@
 **Pupils:** Respond to sports vocabulary through actions.
 
 ## Closure (5 minutes)
-**Teacher:** Relate the song to a sport pupils enjoy.
+**Teacher:** Invite pupils to name a sport they enjoy and connect their response to one word or action from the song.
 **Pupils:** Name a sport they enjoy.
 
 **PBD:** Record identification of the song's sports theme and responses to sports vocabulary against SP 1.2.2 and 1.2.1.  
