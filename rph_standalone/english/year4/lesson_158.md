@@ -22,6 +22,8 @@
 **Teacher:** Compare groups' original safety ideas and check punctuation.
 **Pupils:** Identify original safety ideas and revise punctuation.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Guide end-of-year self-assessment and help pupils choose one language skill to practise next.
 **Pupils:** Complete an end-of-year self-assessment.
