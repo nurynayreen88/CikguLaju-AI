@@ -26,7 +26,7 @@
 **Teacher:** Review spelling and reasons for predictions.
 **Pupils:** Correct one word and share a reason.
 
-**PBD:** Observe lesson tasks against SP 2.1.4 and 4.3.2.  
+**PBD:** Observe spoken predictions about celebrations with reasons and check spelling of written predictions (SP 2.1.4, 4.3.2).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
