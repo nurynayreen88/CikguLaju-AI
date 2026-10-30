@@ -23,7 +23,7 @@
 **Pupil action:** Write one sentence about a partner's habits.
 
 ## Closure (5 minutes)
-**Teacher action:** Discuss why a balanced diet matters.
+**Teacher action:** Invite pupils to explain one reason a balanced diet matters, using a familiar food example.
 **Pupil action:** Explain one reason to eat a balanced diet.
 
 **PBD:** Observe opinions about eating habits and assess written sentences about partners against SP 2.1.1 and 4.2.3.  
