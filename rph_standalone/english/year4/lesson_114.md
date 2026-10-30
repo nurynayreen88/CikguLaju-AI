@@ -23,7 +23,7 @@
 **Pupils:** Guess animals using comparative clues.
 
 ## Closure (5 minutes)
-**Teacher:** Correct one comparative adjective.
+**Teacher:** Display an inaccurate comparative sentence and ask pupils to explain and correct its form.
 **Pupils:** Correct and share a comparative adjective.
 
 **PBD:** Observe comparative animal descriptions and spelling of written clue cards (SP 2.1.5, 4.3.2).  
