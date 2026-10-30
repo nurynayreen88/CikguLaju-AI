@@ -23,7 +23,7 @@
 **Pupils:** Compare dinosaurs and familiar animals in pairs.
 
 ## Closure (5 minutes)
-**Teacher:** Share one inferred word meaning.
+**Teacher:** Ask pupils to explain one inferred dinosaur word meaning and identify the context clue that helped.
 **Pupils:** Explain one newly learned word.
 
 **PBD:** Check dictionary use and comparisons of dinosaurs with other animals against SP 3.2.4 and 2.1.5.
