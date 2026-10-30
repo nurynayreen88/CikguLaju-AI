@@ -20,7 +20,7 @@
 **Pupils:** Complete Activities 3 and 4 while listening to Tracks 12 and 13.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils write at least two cursive sentences about their day and compare them with classmates.
+**Teacher:** Provide a sentence frame with an adverb of frequency, then ask pupils to write at least two cursive sentences and compare their routines in pairs.
 **Pupils:** Write at least two cursive routine sentences and compare with classmates.
 
 ## Closure (5 minutes)
