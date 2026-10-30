@@ -22,6 +22,8 @@
 **Teacher:** Ask pupils to answer the animal questions and explain their choices using picture or language clues.
 **Pupils:** Answer questions and justify choices.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one unfamiliar animal word using a picture or sentence clue.
 **Pupils:** Share a newly learned animal word.
