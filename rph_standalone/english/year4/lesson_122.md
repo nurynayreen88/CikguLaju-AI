@@ -1,25 +1,32 @@
 # English Year 4 — Lesson 122: Language Arts 23
 
-**Topic:** The Jungle Book
-**Main SP:** 5.2.1
-**Complementary SP:** 3.3.1
-**Duration:** 60 minutes
-**Reference:** Primary Year 4 Scheme of Work Lesson 122 and Year 4 graphic novel.
+**Topic:** The Jungle Book  
+**Main SP:** 5.2.1  
+**Complementary SP:** 3.3.1  
+**Duration:** 60 minutes  
+**References:** Year 4 SOW Lesson 122; Graphic Novel Teaching Guidebook p.48, steps 1–5; The Jungle Book
 
 ## Set induction (10 minutes)
-Teacher reviews the characters and events of the graphic novel. Pupils recall the story.
+**Teacher:** Review the graphic novel's characters and earlier events.
+**Pupils:** Recall characters and important events.
 
 ## Activity 1 (15 minutes)
-Teacher follows the group activity in the graphic novel Teaching Guidebook page 48, steps 1 to 5.
+**Teacher:** Facilitate the group activity in the Teaching Guidebook p.48, steps 1–5.
+**Pupils:** Follow the guidebook group task and refer to the graphic novel.
 
 ## Activity 2 (20 minutes)
-Teacher asks pupils to discuss character feelings and story events. Pupils support their views with details.
+**Teacher:** Ask groups to discuss character feelings and events; prompt for textual support.
+**Pupils:** Discuss characters' feelings and support opinions with story details.
 
-## PBD (10 minutes)
-Pupils explain a personal response to the text and receive feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Invite pupils to explain personal responses and provide specific feedback.
+**Pupils:** Explain their responses to the story and revise ideas after feedback.
 
 ## Closure (5 minutes)
-Pupils share a favourite part of the story.
+**Teacher:** Invite a brief favourite-part reflection.
+**Pupils:** Share a favourite part of the story and a reason.
 
-**Differentiation:** Picture prompts and sentence starters.
-**Status:** DRAFT; source and Word/PDF QA pending.
+**PBD:** Observe whether pupils explain character feelings and personal responses with relevant story evidence (SP 5.2.1, 3.3.1).  
+**Differentiation:** Offer picture prompts, sentence starters and supported group discussion.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source content and Word/PDF QA pending.
