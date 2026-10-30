@@ -3,7 +3,7 @@
 **Topic:** My Week  
 **Main SP:** Listening 1.2.5  
 **Complementary SP:** Listening 1.2.3  
-**References:** SB pp.16–17 Activity 1; CD1 Track 22; sentence strips  
+**References:** SB pp.16–17 Activity 1; Track 22 (KPM SOW; CD1 designation requires independent TB/audio verification); sentence strips  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
