@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 4.2.3  
 **Duration:** 60 minutes  
-**References:** SB p.63 Activities 3–4; TB p.97
+**References:** SB p.63 Activities 3–4; TB p.97; SOW specifies CD2 Track 11 for Activity 3 and CD2 Track 12 for Activity 4 (audio-file content unverified)
 
 ## Set induction (10 minutes)
 **Teacher:** Review transport vocabulary.
