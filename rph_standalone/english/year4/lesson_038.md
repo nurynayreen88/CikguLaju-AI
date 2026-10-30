@@ -23,7 +23,7 @@
 **Pupils:** Listen to Track 41 and answer questions about past experiences.
 
 ## Closure (5 minutes)
-**Teacher:** Share a verb phrase and describe one past action.
+**Teacher:** Invite pupils to use one verb phrase from the listening to describe a past action.
 **Pupils:** Share a verb phrase and describe a past action.
 
 **PBD:** Check responses against Listening 1.2.5 and Speaking 2.1.2.  
