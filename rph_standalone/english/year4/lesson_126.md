@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 1 and examine a model.
+**Teacher:** Follow Activities 1 and 2 and identify conjunctions in the model.
 **Pupils:** Follow the example and complete the first task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils draft an animal description using relevant details.
+**Teacher:** Plan a paragraph about a favourite animal using the mind map in Activity 2.
 **Pupils:** Carry out the specified reading, writing, listening or speaking task.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow Activity 2; check punctuation and improve the writing.
+**Teacher:** Write and revise a favourite-animal paragraph using conjunctions.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
