@@ -15,7 +15,7 @@
 **Pupils:** Read statements and identify possible false claims.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs read and identify false statements with reasons.
+**Teacher:** Ask pairs to read the statements, identify false claims and cite details from the Egypt text to explain their choices.
 **Pupils:** Read in pairs and justify which statements are false.
 
 ## PBD and reinforcement (10 minutes)
