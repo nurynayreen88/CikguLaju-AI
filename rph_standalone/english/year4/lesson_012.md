@@ -4,7 +4,7 @@
 **Complementary SP:** Listening 1.2.5  
 **Topic:** Where are you from?  
 **References:** SB p.14; TB p.30 Revision and Activity 1  
-**Audio:** CD1 Track 17  
+**Audio:** Track 17 (KPM SOW; CD1 designation requires independent TB/audio verification)  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
