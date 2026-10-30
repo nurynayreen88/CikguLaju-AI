@@ -11,7 +11,7 @@
 **Pupils:** Recall language for getting around.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Complete Revision 6 Activities 1–3.
+**Teacher:** Demonstrate one revision question, then ask pupils to complete Revision 6 Activities 1–3 and discuss common errors.
 **Pupils:** Complete Revision 6 Activities 1–3.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Practise language skills identified by assessment.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete Unit 6 self-assessment.
+**Teacher:** Guide pupils through Unit 6 self-assessment and ask them to identify one skill requiring more practice.
 **Pupils:** Complete Unit 6 self-assessment and note gaps.
 
 ## Closure (5 minutes)
