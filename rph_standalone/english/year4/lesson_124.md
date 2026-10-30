@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review animal names using TB warm-up.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Name animals from picture cards.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB vocabulary instructions.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Practise target animal vocabulary.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs complete Activity 1 using animal pictures and comparative language.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Compare animals and describe them to a partner.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Use TB optional activity to exchange opinions and descriptions.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Exchange opinions using comparative language.
 
 ## Closure (5 minutes)
 **Teacher:** Share one supported opinion.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Give one reason for an animal preference.
 
 **PBD:** Assess the source-based task against 2.1.1 and 2.1.5; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
