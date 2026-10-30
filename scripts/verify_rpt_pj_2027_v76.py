@@ -28,6 +28,9 @@ def verify(archive):
         all_names = [i.filename for i in members if not i.is_dir()]
         if len(members) != len(set(i.filename for i in members)):
             return ["Duplicate archive entries, including directories"]
+        if any(i.filename.startswith("/") or "\\" in i.filename or
+               ".." in i.filename.split("/") for i in members):
+            return ["Unsafe archive member path"]
         if any(i.flag_bits & 1 for i in members):
             return ["Encrypted archive members are not supported"]
         if any(i.file_size > 15_000_000 for i in members if not i.is_dir()):
