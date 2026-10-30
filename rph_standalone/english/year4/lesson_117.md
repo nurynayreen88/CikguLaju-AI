@@ -15,11 +15,11 @@
 **Pupils:** Recall earlier chapters and read Chapter 5.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs predict Mowgli's future after page 63.
+**Teacher:** Ask pairs to predict Mowgli's next decision after page 63 and prompt them to explain their predictions using story events.
 **Pupils:** Predict what will happen to Mowgli.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Reorder five synopsis strips and write Mowgli's feelings.
+**Teacher:** Distribute five synopsis strips, guide pupils to reorder them and model a sentence describing Mowgli's feelings.
 **Pupils:** Order five synopsis strips and describe his feelings.
 
 ## Closure (5 minutes)
