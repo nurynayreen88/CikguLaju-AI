@@ -23,7 +23,7 @@
 **Pupils:** Answer reading questions with evidence.
 
 ## Closure (5 minutes)
-**Teacher:** Share a new word meaning.
+**Teacher:** Ask pupils to explain one newly learned health word and use it in a meaningful sentence.
 **Pupils:** Explain a new word.
 
 **PBD:** Check dictionary lookup and text-supported answers to health reading questions (SP 3.2.2, 3.2.4).  
