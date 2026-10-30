@@ -11,7 +11,7 @@
 **Pupils:** Name dinosaur body parts from pictures.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read Activity 1 and locate relevant details.
+**Teacher:** Model scanning Activity 1 for a named dinosaur and underline one supporting fact before asking pupils to find another detail independently.
 **Pupils:** Read Activity 1 and find dinosaur facts.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Read Activity 2 and answer specific questions.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Pairs explain answers and share opinions with reasons.
+**Teacher:** Ask pairs to justify one answer by pointing to a sentence in the text, then invite a reasoned opinion about the dinosaur they find most interesting.
 **Pupils:** Explain answers using text evidence.
 
 ## Closure (5 minutes)
