@@ -8,7 +8,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from smoke_english_year4_exports import source_lines, make_docx, make_pdf
+from smoke_english_year4_exports import source_lines, classroom_lines, make_docx, make_pdf
 
 
 def main() -> None:
@@ -17,7 +17,7 @@ def main() -> None:
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     for lesson in range(1, 161):
-        lines = source_lines(lesson)
+        lines = classroom_lines(source_lines(lesson))
         make_docx(lines, args.output_dir / f"year4_{lesson:03d}_SMOKE.docx")
         make_pdf(lines, args.output_dir / f"year4_{lesson:03d}_SMOKE.pdf")
     docx_files = list(args.output_dir.glob("year4_*_SMOKE.docx"))
