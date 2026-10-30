@@ -22,6 +22,8 @@
 **Teacher:** Model a sentence giving a transport choice and reason, then guide pupils to write their own explanations.
 **Pupils:** Write a description and reasons for the choice.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Organise a gallery walk and prompt pupils to give specific feedback on the clarity of each transport choice and reason.
 **Pupils:** Give peer feedback during a gallery walk.
