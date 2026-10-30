@@ -23,7 +23,7 @@
 **Pupils:** Explain the adjectives chosen for characters.
 
 ## Closure (5 minutes)
-**Teacher:** Give feedback on the written answers.
+**Teacher:** Review the written descriptions and give specific feedback on adjective choice and supporting evidence.
 **Pupils:** Revise one answer using feedback.
 
 **PBD:** Check character descriptions from The King of Kites for appropriate adjectives and supporting story details (SP 5.2.1, 4.2.4).  
