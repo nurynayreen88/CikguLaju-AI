@@ -7,7 +7,7 @@
 **References:** SB p.93 Activity 1; TB pp.138–139; sports song; Year 4 SOW Lesson 129
 
 ## Set induction (10 minutes)
-**Teacher:** Pre-teach adjectives without revealing sports topic.
+**Teacher:** Introduce the song's key adjectives using neutral picture prompts without revealing the sports theme.
 **Pupils:** Recall descriptive adjectives.
 
 ## Activity 1 (15 minutes)
