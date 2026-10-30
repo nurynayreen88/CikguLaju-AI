@@ -33,6 +33,20 @@ class TestInstallRPTAssets(unittest.TestCase):
             with self.assertRaises(FileExistsError):
                 install(archive, target)
 
+    def test_reject_corrupt_docx_without_installing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "broken.zip"
+            self.make_zip(archive)
+            with zipfile.ZipFile(archive, "a") as z:
+                # Duplicate member must be rejected before copying anything.
+                z.writestr("RPT_PJ_2027_DOCX/" +
+                           FILE_PATTERN.format(state="Johor", year=4),
+                           b"not-a-word-document")
+            with self.assertRaises(ValueError):
+                install(archive, root / "data")
+            self.assertFalse((root / "data" / "RPT_PJ_2027_DOCX").exists())
+
     def test_preflight_existing_file_prevents_partial_copy(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
