@@ -11,11 +11,11 @@
 **Pupils:** Recall Part One events.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Predict the order of five Part Two pictures and match section headings.
+**Teacher:** Display the five Part Two pictures, ask pupils to predict their order and guide them to match headings before reading.
 **Pupils:** Order five pictures and match headings.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Read quietly and check predictions; follow audio and Activity 1.
+**Teacher:** Ask pupils to read Part Two quietly, play the relevant story audio if available and guide them to check their predictions in Activity 1.
 **Pupils:** Read Part Two and check predictions while listening.
 
 ## Reinforcement / PBD (10 minutes)
