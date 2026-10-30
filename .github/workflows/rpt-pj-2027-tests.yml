@@ -10,6 +10,8 @@ on:
       - 'scripts/audit_rpt_pj_2027_readiness.py'
       - 'rpt_pj_2027_release_policy.py'
       - 'scripts/verify_rpt_pj_2027_v76.py'
+      - 'scripts/provision_rpt_pj_2027_v76.py'
+      - 'scripts/preflight_rpt_pj_2027.py'
       - 'data/rpt_pj_2027/**'
       - '.github/workflows/rpt-pj-2027-tests.yml'
   push:
@@ -33,7 +35,7 @@ jobs:
           ls -l data/rpt_pj_2027/
       - name: Compile RPT PJ 2027 modules
         run: |
-          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py rpt_pj_2027_telegram_bridge.py rpt_pj_2027_telegram_menu.py scripts/install_rpt_pj_2027_assets.py scripts/audit_rpt_pj_2027_readiness.py scripts/verify_rpt_pj_2027_v76.py scripts/provision_rpt_pj_2027_v76.py rpt_pj_2027_release_policy.py
+          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py rpt_pj_2027_telegram_bridge.py rpt_pj_2027_telegram_menu.py scripts/install_rpt_pj_2027_assets.py scripts/audit_rpt_pj_2027_readiness.py scripts/verify_rpt_pj_2027_v76.py scripts/provision_rpt_pj_2027_v76.py scripts/preflight_rpt_pj_2027.py rpt_pj_2027_release_policy.py
       - name: Run isolated RPT PJ tests
         shell: bash
         run: |
