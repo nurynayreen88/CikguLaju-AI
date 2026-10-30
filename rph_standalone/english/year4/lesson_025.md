@@ -15,11 +15,11 @@
 **Pupils:** List home jobs and compare lists with a partner.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils add punctuation to a model paragraph and draft their own 'have to' paragraph.
+**Teacher:** Demonstrate correcting punctuation in a model paragraph, then guide pupils to draft a paragraph about chores using have to.
 **Pupils:** Punctuate the model and draft a have to paragraph.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pairs exchange drafts, give feedback and rewrite the paragraph.
+**Teacher:** Provide a peer-edit checklist for punctuation and meaning, then organise pairs to review and revise their paragraphs.
 **Pupils:** Exchange drafts, check punctuation and rewrite.
 
 ## Closure (5 minutes)
