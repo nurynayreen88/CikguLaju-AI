@@ -14,6 +14,10 @@ from pathlib import Path
 SHEET_ID = "1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k"
 SHEET_TAB = "INDEKS PDP 2027 DIKIRA"
 GROUP_A = frozenset({"KEDAH", "KELANTAN", "TERENGGANU"})
+EXPECTED_STATES = frozenset({"JOHOR", "KEDAH", "KELANTAN", "MELAKA",
+    "NEGERI SEMBILAN", "PAHANG", "PERAK", "PERLIS", "PULAU PINANG",
+    "SABAH", "SARAWAK", "SELANGOR", "TERENGGANU", "WP KUALA LUMPUR",
+    "WP LABUAN", "WP PUTRAJAYA"})
 REQUIRED = {"Tarikh", "Negeri", "Kumpulan", "Status PdP Dikira"}
 YEAR_COUNTS = {4: 34, 5: 33, 6: 34}
 
@@ -52,7 +56,7 @@ def read_calendar_csv(path: str | Path, *, strict: bool = True):
                 raise CalendarDataError(f"Duplicate calendar date: {key}")
             records[key] = row
             states[state].add(raw_date)
-    if strict and (len(states) != 16 or len(records) != 5840 or
+    if strict and (set(states) != EXPECTED_STATES or len(records) != 5840 or
                    any(len(days) != 365 for days in states.values())):
         raise CalendarDataError("Incomplete 2027 calendar: expected 16 x 365 days")
     return records
@@ -96,6 +100,8 @@ def validate_pdp_counts(rows):
         if lesson in counts[(state, year)]:
             raise CalendarDataError(f"Duplicate PdP: {state}/{year}/{lesson}")
         counts[(state, year)].add(lesson)
+    if set(counts) != {(state, year) for state in EXPECTED_STATES for year in YEAR_COUNTS}:
+        raise CalendarDataError("Incomplete state/year catalogue: expected 48 combinations")
     for (state, year), values in counts.items():
         if values != set(range(1, YEAR_COUNTS[year] + 1)):
             raise CalendarDataError(f"Incomplete PdP sequence: {state}/{year}")
