@@ -26,7 +26,7 @@
 **Teacher action:** Pupils share a lesson learned from the story.
 **Pupil action:** State one lesson learned from the story.
 
-**PBD:** Check pupil responses and products against 5.3.1 and 2.1.1; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Observe story-based opinions with reasons and completion of the character task sheet (SP 5.3.1, 2.1.1).  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 79, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
