@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Mime household chores and follow TB warm-up without preteaching 'feed' or 'jobs'.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Name chores shown through mime.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Pupils read and listen to Track 25, considering which child is most like them.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read and listen to Track 25; choose a child they relate to.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils infer unfamiliar vocabulary from context and complete TB Activity 1.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Infer unfamiliar words from context and complete Activity 1.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Complete Activity 2, locate reading details and explain guesses; omit the bottom-page writing task.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Locate reading details in Activity 2 and justify guesses.
 
 ## Closure (5 minutes)
 **Teacher:** Play a personalised 'have to' question game.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Ask and answer a personal have to question.
 
 **PBD:** Check task responses against Reading 3.2.2 and Reading 3.2.3, recording individual progress.  
 **Differentiation:** Connect chores to pupils' lives while acknowledging different family responsibilities.  
