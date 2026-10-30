@@ -23,7 +23,7 @@
 **Pupil action:** Present posters and complete Unit 5 self-assessment.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils identify a strength and next learning target.
+**Teacher action:** Ask pupils to identify one poster strength and one specific next learning target from their self-assessment.
 **Pupil action:** Identify a strength and a next learning target.
 
 **PBD:** Assess healthy-food poster text for legible cursive writing and accurate spelling against SP 4.1.2 and 4.3.2.  
