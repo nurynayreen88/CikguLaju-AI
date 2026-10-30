@@ -11,7 +11,7 @@
 **Pupils:** Recall recycling words and indefinite pronouns.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Play a spelling game and review Grammar Box.
+**Teacher:** Lead a short spelling challenge using recycling words, then model an indefinite pronoun from the Grammar Box.
 **Pupils:** Play the spelling game and practise Grammar Box examples.
 
 ## Activity 2 (20 minutes)
