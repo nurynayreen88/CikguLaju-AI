@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Ask pupils what they did yesterday and elicit simple past responses.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Answer what they did yesterday using past tense.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Play CD1 Track 39 with books closed; pupils listen to Greg and Anna and respond to Activity 1.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Listen to Greg and Anna on Track 39 and respond.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils read the printed dialogue to check listening answers.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Read the printed dialogue to check listening answers.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Vocabulary using CD1 Track 38; pupils identify the dialogue's main idea.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Listen to Track 38 and identify the dialogue's main idea.
 
 ## Closure (5 minutes)
 **Teacher:** Play a past-tense verb review game.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Review past-tense verbs in a game.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Reading 3.2.1 and Listening 1.2.3.  
