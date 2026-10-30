@@ -23,7 +23,7 @@
 **Pupils:** Explain answers using prepositions and questions.
 
 ## Closure (5 minutes)
-**Teacher:** Recall one detail heard.
+**Teacher:** Invite pupils to report one location detail from the listening and explain the word that helped them.
 **Pupils:** Recall one detail from the recording.
 
 **PBD:** Record specific trip details identified from Activity 4 listening and responses to follow-up questions against SP 1.2.2 and 1.2.5.  
