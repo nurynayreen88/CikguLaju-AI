@@ -26,7 +26,7 @@
 **Teacher:** Correct one comparative adjective.
 **Pupils:** Correct and share a comparative adjective.
 
-**PBD:** Observe the named learning task against 2.1.5 and 4.3.2; for teacher-selected standards, establish criteria before class.  
+**PBD:** Observe comparative animal descriptions and spelling of written clue cards (SP 2.1.5, 4.3.2).  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
