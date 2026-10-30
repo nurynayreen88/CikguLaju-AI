@@ -15,7 +15,7 @@
 **Pupils:** Make short sentences about ingredients using want and need.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 3 and Track 72; guide discussion about ingredients.
+**Teacher:** Play Track 72 for Activity 3, pause for ingredient details and ask pupils to explain which ingredients they heard.
 **Pupils:** Listen and discuss ingredients needed for different foods.
 
 ## Reinforcement / PBD (10 minutes)
