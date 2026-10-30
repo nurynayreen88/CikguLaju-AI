@@ -19,7 +19,7 @@
 **Pupil action:** Ask clarification questions about game steps.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Groups play and describe food objects using collective nouns.
+**Teacher action:** Monitor the group board game and prompt pupils to describe food objects using the target collective nouns.
 **Pupil action:** Play the game and describe food using collective nouns.
 
 ## Closure (5 minutes)
