@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce dinosaur pictures and animal comparison words.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Name dinosaurs and comparative adjectives.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read the text and highlight unfamiliar comparative words.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read the text and mark unfamiliar comparisons.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Use dictionaries and context clues to infer word meanings.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Use dictionaries and context clues to find meanings.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Pairs describe dinosaurs and compare them with animals.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Compare dinosaurs and familiar animals in pairs.
 
 ## Closure (5 minutes)
 **Teacher:** Share one inferred word meaning.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Explain one newly learned word.
 
 **PBD:** Observe the named learning task against 3.2.4 and 2.1.5; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
