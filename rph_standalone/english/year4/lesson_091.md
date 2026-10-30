@@ -11,11 +11,11 @@
 **Pupils:** Recall transport vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow SB Activities 3–4 listening.
+**Teacher:** Preview SB Activities 3–4, play the listening material and pause to check key transport details.
 **Pupils:** Listen and complete Student Book Activities 3–4.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Identify transport details and gerunds.
+**Teacher:** Ask pupils to identify transport details and gerunds they heard, then replay the relevant sections to verify responses.
 **Pupils:** Identify transport details and gerund forms.
 
 ## Reinforcement / PBD (10 minutes)
