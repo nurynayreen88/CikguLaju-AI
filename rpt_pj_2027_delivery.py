@@ -1,0 +1,73 @@
+"""Read-only RPT PJ 2027 document delivery service for Telegram handlers.
+
+Expected deployment directory: RPT_PJ_2027_DOCX/ with 48 individually
+named Word files. No database mutations, no access bypass and no downloads
+from untrusted user-supplied paths.
+"""
+from __future__ import annotations
+
+from pathlib import Path
+import re
+
+STATES = (
+    "Johor", "Kedah", "Kelantan", "Melaka", "Negeri_Sembilan",
+    "Pahang", "Perak", "Perlis", "Pulau_Pinang", "Sabah", "Sarawak",
+    "Selangor", "Terengganu", "WP_Kuala_Lumpur", "WP_Labuan",
+    "WP_Putrajaya",
+)
+YEARS = (4, 5, 6)
+FILE_PATTERN = "RPT_PJ_2027_{state}_Tahun_{year}_v75_STAGING.docx"
+
+
+class RPTAccessDenied(PermissionError):
+    pass
+
+
+class RPTDocumentUnavailable(FileNotFoundError):
+    pass
+
+
+def list_available(root):
+    """List only known, explicitly provisioned RPT Word files."""
+    root = Path(root)
+    result = []
+    for state in STATES:
+        for year in YEARS:
+            name = FILE_PATTERN.format(state=state, year=year)
+            if (root / name).is_file():
+                result.append({"negeri": state.replace("_", " "),
+                               "tahun": year, "filename": name})
+    return result
+
+
+def resolve_rpt(root, *, negeri, tahun, authorized):
+    """Validate trusted authorization before resolving a document path.
+
+    Telegram handler must call its existing authoritative paid-access check
+    before passing authorized=True. Do not trust a Telegram callback flag.
+    """
+    if not authorized:
+        raise RPTAccessDenied("RPT memerlukan langganan atau Rakan Pembangun aktif")
+    state = str(negeri).strip().replace(" ", "_")
+    if state not in STATES:
+        raise ValueError("Negeri tidak sah")
+    try:
+        year = int(tahun)
+    except (TypeError, ValueError) as exc:
+        raise ValueError("Tahun tidak sah") from exc
+    if year not in YEARS:
+        raise ValueError("Tahun tidak tersedia")
+    root = Path(root).resolve()
+    name = FILE_PATTERN.format(state=state, year=year)
+    path = root / name
+    if not path.is_file() or path.is_symlink():
+        raise RPTDocumentUnavailable(name)
+    return path
+
+
+def send_rpt_docx(bot, chat_id, root, *, negeri, tahun, authorized):
+    """Synchronous helper; caller handles errors and Telegram UI state."""
+    path = resolve_rpt(root, negeri=negeri, tahun=tahun,
+                       authorized=authorized)
+    with path.open("rb") as handle:
+        return bot.send_document(chat_id, handle, visible_file_name=path.name)
