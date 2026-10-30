@@ -19,7 +19,7 @@
 **Pupils:** Listen without written lyrics, recognise target words and infer unfamiliar expressions from context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Replay relevant sections of the health song, model actions for key expressions and check which predictions were supported by the listening.
+**Teacher:** Follow the TB Vocabulary task using SOW-listed Track 68, then model actions for key health expressions; check pupils' inferred meanings. Confirm the recording before classroom use.
 **Pupils:** Respond with actions and check answers against the pictures.
 
 ## Closure (5 minutes)
