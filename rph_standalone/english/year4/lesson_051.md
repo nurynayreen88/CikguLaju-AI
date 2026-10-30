@@ -11,11 +11,11 @@
 **Pupils:** Name festivals shown in pictures.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Guide independent reading of the story.
+**Teacher:** Set a gist question before independent reading, then check pupils' understanding of the story's main event.
 **Pupils:** Read the story and highlight unfamiliar words.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Support dictionary use in pairs.
+**Teacher:** Model looking up one unfamiliar festival word and guide pairs to confirm its meaning from the story context.
 **Pupils:** Discuss word meanings and check them in dictionaries.
 
 ## Reinforcement / PBD (10 minutes)
