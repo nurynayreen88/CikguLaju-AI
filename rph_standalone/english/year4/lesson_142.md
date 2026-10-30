@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB warm-up.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Recall famous people and descriptive words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Complete Activities 1 and 2 and examine the Writing Tip.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Complete Activities 1–2 and examine the Writing Tip.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Plan a paragraph about a famous person without naming them.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Plan a description without naming the person.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Write the description using answers to the planning questions.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Write and check a short description.
 
 ## Closure (5 minutes)
 **Teacher:** Gallery walk to guess the famous person.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Read classmates' descriptions and guess names.
 
 **PBD:** Assess the specified task against 4.2.1 and 3.2.2; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
