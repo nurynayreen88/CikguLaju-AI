@@ -7,7 +7,7 @@
 **References:** SB p.95 Activity 4; TB pp.140–141; sample sports paragraph; Year 4 SOW Lesson 134
 
 ## Set induction (10 minutes)
-**Teacher:** Review sports and superlative adjectives.
+**Teacher:** Display sports picture cards and elicit two accurate superlative descriptions before listening.
 **Pupils:** Recall sports adjectives.
 
 ## Activity 1 (15 minutes)
