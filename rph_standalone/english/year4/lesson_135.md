@@ -7,7 +7,7 @@
 **References:** SB p.95 Activity 5; TB p.141; Year 4 SOW Lesson 135
 
 ## Set induction (10 minutes)
-**Teacher:** Match adjectives with superlative forms.
+**Teacher:** Show adjective cards and guide pupils to match each word with its superlative form.
 **Pupils:** Match adjectives with superlatives.
 
 ## Activity 1 (15 minutes)
