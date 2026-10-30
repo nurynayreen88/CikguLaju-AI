@@ -19,7 +19,7 @@
 **Pupils:** Sequence and discuss the story events.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Retell an event using pictures as prompts.
+**Teacher:** Use the story pictures to prompt pupils to retell an event in sequence with an appropriate time connector.
 **Pupils:** Retell an event using picture prompts.
 
 ## Closure (5 minutes)
