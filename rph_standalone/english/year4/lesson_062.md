@@ -1,15 +1,32 @@
-# English Year 4 Lesson 062 — Writing 12
+# English Year 4 — Lesson 062
 
-Topic: Celebrations. Main SP: Writing 4.2.5. Complementary SP: Writing 4.2.2. References: SB p.43; TB p.70; model diary entry. Duration: 60 minutes.
+**Topic:** Celebrations  
+**Main SP:** 4.2.5  
+**Complementary SP:** 4.2.2  
+**Duration:** 60 minutes  
+**References:** SB p.43; TB p.70; model diary entry; Year 4 SOW Lesson 62
 
-Set induction (10 min): Teacher guides: Review birthdays and celebrations. Pupils complete the indicated skill task and respond to feedback.
+## Set induction (10 minutes)
+**Teacher:** Review birthdays and celebrations.
+**Pupils:** Recall language for celebration plans.
 
-Activity 1 (15 min): Teacher guides: Pairs discuss plans for an upcoming celebration. Pupils complete the indicated skill task and respond to feedback.
+## Activity 1 (15 minutes)
+**Teacher:** Ask pairs to discuss an upcoming celebration.
+**Pupils:** Discuss plans for a celebration with a partner.
 
-Activity 2 (20 min): Teacher guides: Model and/but/because and reference pronouns using a diary entry. Pupils complete the indicated skill task and respond to feedback.
+## Activity 2 (20 minutes)
+**Teacher:** Model and, but, because and reference pronouns in a diary entry.
+**Pupils:** Practise linking ideas and using reference pronouns.
 
-PBD and reinforcement (10 min): Teacher guides: Pupils write a diary entry, invite a classmate and write a polite acceptance or refusal. Pupils complete the indicated skill task and respond to feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Guide a diary entry and an invitation with acceptance or refusal.
+**Pupils:** Write a diary entry and a polite invitation response.
 
-Closure (5 min): Teacher guides: Pupils review how well their sentences connect. Pupils complete the indicated skill task and respond to feedback.
+## Closure (5 minutes)
+**Teacher:** Review how sentences connect.
+**Pupils:** Improve one sentence link.
 
-PBD: Observe the specified learning task and record evidence against Writing 4.2.5 and Writing 4.2.2. Differentiation: Provide source-based models, partner support or an extension task according to pupil needs. Source: Primary Year 4 SK SOW Lesson 62. Status: DRAFT; direct book/audio and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against SP 4.2.5 and 4.2.2.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
