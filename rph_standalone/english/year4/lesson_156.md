@@ -4,7 +4,7 @@
 **Main SP:** 2.2.2  
 **Complementary SP:** 1.2.4  
 **Duration:** 60 minutes  
-**References:** SB p.108 Activity 1; TB p.159; board-game instructions; Primary Year 4 SOW Lesson 156
+**References:** SB p.108 Activity 1; TB p.159; Vocabulary CD2 Track 79; board-game instructions; Primary Year 4 SOW Lesson 156
 
 ## Set induction (10 minutes)
 **Teacher:** Lead a short word game and check pupils' recall of advice and home-safety vocabulary.
