@@ -11,7 +11,7 @@
 **Pupils:** Recall words heard in Track 5.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Listen to Track 6 and answer the Activity 1 question.
+**Teacher:** Set the Activity 1 listening question, play Track 6 and check pupils' answers against details they heard.
 **Pupils:** Listen to Track 6 and answer Activity 1.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Read the text and complete Activity 3.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs discuss a recent school trip using the text.
+**Teacher:** Organise pairs to discuss a recent school trip, prompting them to reuse relevant language from the text.
 **Pupils:** Discuss a school trip using details from the text.
 
 ## Closure (5 minutes)
