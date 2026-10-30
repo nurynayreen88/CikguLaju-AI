@@ -26,7 +26,7 @@
 **Pupils:** Proofread four sentences for meaning, capitals, full stops and high-frequency spelling.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils read one corrected sentence and name a word they can now spell.
+**Teacher:** Invite pupils to read one corrected sentence and identify a word they can now spell accurately.
 **Pupils:** Read one corrected sentence aloud.
 
 ## Differentiation and assessment
