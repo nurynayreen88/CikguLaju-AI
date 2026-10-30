@@ -11,11 +11,11 @@
 **Pupil action:** Recall food words from Track 81.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Groups fill blanks in instructions for the board game.
+**Teacher action:** Show the board-game instructions, model filling one missing step and ask groups to complete the remaining gaps.
 **Pupil action:** Complete gaps in the board-game instructions.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils ask clarification questions to check the game steps.
+**Teacher action:** Model a clarification question and invite pupils to ask and answer questions about unclear game steps.
 **Pupil action:** Ask clarification questions about game steps.
 
 ## PBD / reinforcement (10 minutes)
