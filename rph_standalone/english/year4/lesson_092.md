@@ -23,7 +23,7 @@
 **Pupils:** Present the model using First, Second and Next.
 
 ## Closure (5 minutes)
-**Teacher:** Review action verbs.
+**Teacher:** Elicit action verbs used during model construction and ask pupils to use one in a sequence sentence.
 **Pupils:** Recall action verbs used in the task.
 
 **PBD:** Observe comprehension of model-making instructions and clear sequencing of construction steps against SP 2.2.2 and 2.1.3.  
