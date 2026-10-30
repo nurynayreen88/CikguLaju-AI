@@ -14,7 +14,7 @@ Teacher asks about today's weather. Pupils describe it using familiar words.
 Teacher displays four seasons flashcards and discusses weather in different seasons. Pupils identify seasons and share experiences.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides Vocabulary and Activity 1 from Teacher's Book p.60. Pupils listen for season and weather vocabulary, then use Student's Book p.35 Grammar Box to describe their favourite season.
+Teacher guides Vocabulary and Activity 1 from Teacher's Book p.60. Pupils listen for season and weather vocabulary, then use Student's Book p.35 Grammar Box to describe their favourite season. Pupils complete Workbook p.29, Activity 1, by matching pictures with seasons and weather.
 
 ## PBD (10 minutes)
 Pupils identify two key words heard and ask one appropriate question to obtain missing information.
