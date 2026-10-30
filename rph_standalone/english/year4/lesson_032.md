@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Distribute the SOW Unit 2 self-assessment and guide pupils to evaluate school subjects, schedules, housework and duties.
-**Pupils:** Self-assess school subjects, schedules, housework and duties.
+**Pupils:** Self-assess school subjects, schedules, housework and duties. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Review self-assessment checklists, identify a common gap in Unit 2 skills and select one focused reteaching activity.
