@@ -22,6 +22,8 @@
 **Teacher:** Ask pairs two story questions and prompt each pair to point to a sentence or picture supporting its answer.
 **Pupils:** Answer story questions and explain evidence.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to name an item and its owner using a complete sentence.
 **Pupils:** Name an item and its owner.
