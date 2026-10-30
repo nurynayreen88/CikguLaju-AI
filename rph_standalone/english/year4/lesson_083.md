@@ -15,7 +15,7 @@
 **Pupils:** Listen to Track 6 and answer Activity 1.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Read and complete Activity 3.
+**Teacher:** Model finding a supporting detail in the text, then guide pupils through Activity 3.
 **Pupils:** Read the text and complete Activity 3.
 
 ## Reinforcement / PBD (10 minutes)
