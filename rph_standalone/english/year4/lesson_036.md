@@ -19,7 +19,7 @@
 **Pupils:** Practise word order and punctuation using the Grammar Box.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Pupils punctuate prepared past-tense questions and complete TB Activity 3.
+**Teacher:** Model correcting one past-tense question, then guide pupils to punctuate prepared questions and complete TB Activity 3.
 **Pupils:** Punctuate prepared questions and complete Activity 3.
 
 ## Closure (5 minutes)
