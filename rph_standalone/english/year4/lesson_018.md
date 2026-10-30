@@ -23,7 +23,7 @@
 **Pupils:** Complete the optional speaking task and respond to questions.
 
 ## Closure (5 minutes)
-**Teacher:** Pairs share one favourite subject and why.
+**Teacher:** Invite pairs to report a favourite subject using because to explain the choice.
 **Pupils:** Share a favourite subject and a reason.
 
 **PBD:** Check task responses against Speaking 2.1.1 and Listening 1.2.5, recording individual progress.  
