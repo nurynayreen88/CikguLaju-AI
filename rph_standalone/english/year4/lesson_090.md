@@ -22,6 +22,8 @@
 **Teacher:** Invite pupils to present their cards and check that each includes clear event details and suitable wording.
 **Pupils:** Present the card and check key information.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Give specific feedback on the clarity of invitation details, including date, time, venue and RSVP.
 **Pupils:** Give feedback on clarity.
