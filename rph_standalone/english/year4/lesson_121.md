@@ -7,23 +7,23 @@
 **References:** SB pp.84–85 Activities 3–4; TB p.127; Year 4 SOW Lesson 121
 
 ## Set induction (10 minutes)
-**Teacher:** Review dinosaur body parts using pictures.
+**Teacher:** Review dinosaurs using pictures and body-part vocabulary.
 **Pupils:** Respond to prompts and recall vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 3 and model comparative descriptions.
+**Teacher:** Follow Student's Book Activity 3 and Activity 4 with Teacher's Book page 127.
 **Pupils:** Follow the example and complete the first task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs write descriptive sentences about dinosaurs using the pictured features.
+**Teacher:** Pairs invent and draw a new dinosaur, then write a description of it.
 **Pupils:** Carry out the specified reading, writing, listening or speaking task.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Activity 4 to check spoken details and improve written descriptions.
+**Teacher:** Pupils exchange drawings and evaluate descriptions positively.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Share one accurate description.
+**Teacher:** Present the invented dinosaur and explain its features.
 **Pupils:** Share a short answer or reflection.
 
 **PBD:** Assess the source-based task against 4.2.4 and 1.2.2; choose relevant criteria for Language Awareness.  
