@@ -15,11 +15,11 @@
 **Pupils:** Practise comparative animal descriptions.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs describe animals and prepare accurately spelled clue cards.
+**Teacher:** Model one animal comparison, then guide pairs to write clue cards and check comparative forms and spelling.
 **Pupils:** Describe animals and write correctly spelled clues.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Groups guess animals from comparative clues.
+**Teacher:** Invite groups to exchange clue cards, identify each animal and explain which comparative clue helped them.
 **Pupils:** Guess animals using comparative clues.
 
 ## Closure (5 minutes)
