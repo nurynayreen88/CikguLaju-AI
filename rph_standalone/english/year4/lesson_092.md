@@ -15,11 +15,11 @@
 **Pupils:** Read the materials list and project instructions.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Check steps with a partner and build a transport model.
+**Teacher:** Model checking the project instructions, then supervise pairs as they confirm the steps and build a transport model safely.
 **Pupils:** Check steps with a partner and build a model.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Present model using First, Second and Next.
+**Teacher:** Invite pupils to present their models and explain the process using First, Second and Next in sequence.
 **Pupils:** Present the model using First, Second and Next.
 
 ## Closure (5 minutes)
