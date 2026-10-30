@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 2.1.5  
 **Duration:** 60 minutes  
-**References:** SB p.62 Activities 1–2; TB pp.96–97; CD2 Track 9
+**References:** SB p.62 Activities 1–2; TB pp.96–97; Warm up/Vocabulary CD2 Track 9 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Review vocabulary with Track 9.
