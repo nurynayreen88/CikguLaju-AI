@@ -11,7 +11,7 @@
 **Pupils:** Recall language from Unit 7 Helping out.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Complete revision Activities 1–3.
+**Teacher:** Explain the instructions for revision Activities 1–3, model the first item, then monitor pupils as they complete the remaining tasks.
 **Pupils:** Complete revision Activities 1–3.
 
 ## Activity 2 (20 minutes)
@@ -19,11 +19,11 @@
 **Pupils:** Practise language points needing improvement.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Complete Unit 7 self-assessment and discuss gaps.
+**Teacher:** Distribute the Unit 7 self-assessment, ask pupils to identify one difficulty, and record which language targets need further support.
 **Pupils:** Complete self-assessment and identify a weak area.
 
 ## Closure (5 minutes)
-**Teacher:** Set one learning goal.
+**Teacher:** Help pupils turn one self-assessment difficulty into a specific learning goal for the next lesson.
 **Pupils:** Set one personal learning goal.
 
 **PBD:** Observe the named learning task against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards, establish criteria before class.  
