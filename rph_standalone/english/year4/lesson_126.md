@@ -22,6 +22,8 @@
 **Teacher:** Ask pupils to write a short paragraph from their mind map. Display a checklist for conjunctions, connected ideas and punctuation, then guide one revision after partner feedback.
 **Pupils:** Write and revise the paragraph.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite two pupils to read an improved sentence and explain which conjunction connects their ideas.
 **Pupils:** Read one improved sentence.
