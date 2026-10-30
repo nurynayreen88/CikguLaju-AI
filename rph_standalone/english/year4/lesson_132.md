@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review sports vocabulary and superlatives.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall sports words and superlatives.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model a written invitation to a class mini competition.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Study a model invitation and identify its purpose.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Groups plan a competition, write invitations, and record results.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Plan a mini competition and write invitations.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Guide pupils to write a connected paragraph reporting competition results using conjunctions.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Record results and write a short connected report.
 
 ## Closure (5 minutes)
 **Teacher:** Share one improved sentence.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Share an improved report sentence.
 
 **PBD:** Assess the source-based task against 4.2.2 and 4.2.5; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
