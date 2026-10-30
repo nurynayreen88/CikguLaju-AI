@@ -23,7 +23,7 @@
 **Pupils:** Practise the rhyme and respond to physical prompts.
 
 ## Closure (5 minutes)
-**Teacher:** Ask pupils to share a school subject preference.
+**Teacher:** Invite pupils to name a preferred school subject and give one reason.
 **Pupils:** Name a subject they like or are good at.
 
 **PBD:** Record listening accuracy and pronunciation attempts against SP 1.2.2 and 1.1.1.  
