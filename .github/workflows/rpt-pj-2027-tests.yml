@@ -7,9 +7,12 @@ on:
       - 'scripts/install_rpt_pj_2027_assets.py'
       - 'tests/test_rpt_pj_2027_*.py'
       - 'tests/test_install_rpt_pj_2027_assets.py'
-      - 'scripts/audit_rpt_pj_2027_readiness.py'
-      - 'data/rpt_pj_2027/calendar_2027_16_negeri_sheet_snapshot.csv'
+      - 'scripts/audit_rpt_pj_2027_readiness.py rpt_pj_2027_release_policy.py'
+      - 'data/rpt_pj_2027/**'
       - '.github/workflows/rpt-pj-2027-tests.yml'
+  push:
+    branches:
+      - 'staging/rpt-pj-2027-calendar-sheet-20261030'
   workflow_dispatch:
 
 jobs:
