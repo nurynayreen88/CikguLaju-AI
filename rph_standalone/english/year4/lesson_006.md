@@ -22,7 +22,7 @@
 **Pupils:** Listen to CD1 Track 8 for Activity 4; tick the correct country/nationality responses and check with a partner.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Check individual listening responses and target sounds; note common word-stress problems and practise them with the class.
+**Teacher:** Check individual listening answers, model stress in country and nationality words, and lead focused repetition of commonly mispronounced examples.
 **Pupils:** Correct individual listening responses and repeat difficult stress patterns.
 
 ## Closure (5 minutes)
