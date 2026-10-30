@@ -37,15 +37,17 @@ def visible_catalogue(root):
     return {state: menu_years(root, state) for state in menu_states(root)}
 
 
-def handle_download(bot, chat_id, root, callback_data, *, access_resolver):
+def handle_download(bot, chat_id, root, callback_data, *, user_id, access_resolver):
     """Return Telegram send_document result after fresh server-side access check.
 
     access_resolver must be a callable that queries the EXISTING account
-    authorization source for the Telegram chat/user. Do not cache this result
+    authorization source for the Telegram USER ID, not the chat ID. Do not cache this result
     or accept user-supplied authorization flags.
     """
     state, year = decode_callback(callback_data)
-    flags = access_resolver(chat_id)
+    if not isinstance(user_id, int) or isinstance(user_id, bool) or user_id <= 0:
+        raise RPTAccessDenied("Identiti pengguna tidak sah")
+    flags = access_resolver(user_id)
     if not isinstance(flags, dict):
         raise RPTAccessDenied("Status akses tidak dapat disahkan")
     authorized = can_download_rpt(
