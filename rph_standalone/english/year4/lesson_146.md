@@ -15,11 +15,11 @@
 **Pupils:** Practise the model dialogue.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Reorder extended dialogue lines including Really? and Oh poor you!.
+**Teacher:** Model how to sequence a short health conversation, then ask pairs to reorder dialogue lines including Really? and Oh poor you!.
 **Pupils:** Reorder and rehearse dialogue lines.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pairs create, practise and perform a new health dialogue.
+**Teacher:** Give pairs a health situation and a response checklist, then invite them to create, rehearse and perform a short dialogue.
 **Pupils:** Perform an original dialogue.
 
 ## Closure (5 minutes)
