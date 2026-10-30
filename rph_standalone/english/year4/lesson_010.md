@@ -24,7 +24,7 @@
 **Pupils:** Recite the poem using a chosen feeling and identify peers' emotions.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils share a feeling and explain why.
+**Teacher:** Prompt pupils to name one feeling from the poem and explain the line or image that suggested it.
 **Pupils:** Say how the poem makes them feel and why.
 
 ## PBD and differentiation
