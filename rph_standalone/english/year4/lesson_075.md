@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Introduce menu, order, pay, waiter and customer.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Identify menu, waiter, customer and order vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Follow TB Activity 3, reading questions aloud and practising answers.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Listen to and answer restaurant questions.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Model natural dialogue with clarification such as 'To drink?'
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Practise natural restaurant dialogue and clarification.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Pairs use sample menus for Activity 4 restaurant role-play.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Role-play ordering from a sample menu.
 
 ## Closure (5 minutes)
 **Teacher action:** Pupils discuss favourite meals when eating out.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Describe a favourite restaurant meal.
 
 **PBD:** Check pupil responses and products against 1.2.5 and 2.2.1; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
