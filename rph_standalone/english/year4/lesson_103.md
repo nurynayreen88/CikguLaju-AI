@@ -4,7 +4,7 @@
 **Main SP:** 2.1.5  
 **Complementary SP:** 1.2.5  
 **Duration:** 60 minutes  
-**References:** SB p.73 Activity 5; TB p.111; Track 26; Primary Year 4 SK SOW Lesson 103
+**References:** SB p.73 Activity 5; TB p.111; Activity 5 Track 26 (KPM SOW; disc unspecified); Primary Year 4 SK SOW Lesson 103
 
 ## Set induction (10 minutes)
 **Teacher:** Review classroom objects such as rulers and notebooks.
