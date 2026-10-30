@@ -26,7 +26,7 @@
 **Teacher:** Invite groups to present designs.
 **Pupils:** Present a kite design and respond to the story.
 
-**PBD:** Observe lesson tasks against SP 5.2.1 and 3.3.1.  
+**PBD:** Observe responses to The King of Kites, including materials mind maps and the explained kite design (SP 5.2.1 and 3.3.1).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
