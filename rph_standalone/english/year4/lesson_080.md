@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**Resources:** SOW Lesson 80: teacher-selected topic, materials and skills
+**Resources:** SOW Lesson 80: teacher-selected topic, materials and skills; optional project worksheet: resources/lesson_080_project_planning_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher action:** Facilitate a short class discussion to select a project topic that reflects pupils' needs and interests.
