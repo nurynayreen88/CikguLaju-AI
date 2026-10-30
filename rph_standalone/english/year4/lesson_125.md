@@ -7,7 +7,7 @@
 **References:** SB pp.88–89 story; main character pictures; Year 4 SOW Lesson 125
 
 ## Set induction (10 minutes)
-**Teacher:** Introduce story characters using pictures.
+**Teacher:** Display story character pictures and elicit one prediction about each character's role.
 **Pupils:** Identify story characters.
 
 ## Activity 1 (15 minutes)
