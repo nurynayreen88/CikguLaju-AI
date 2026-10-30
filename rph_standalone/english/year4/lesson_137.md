@@ -15,11 +15,11 @@
 **Pupils:** Read and identify details in the source text.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Write sports descriptions using superlatives.
+**Teacher:** Model a sports description using a superlative adjective and a supporting fact from the text, then ask pupils to write their own descriptions.
 **Pupils:** Write descriptions using superlative adjectives.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check descriptions against the text and correct errors.
+**Teacher:** Display a checklist for accurate superlatives, text evidence and punctuation; guide pairs to review and revise their descriptions.
 **Pupils:** Check sentences against the text and correct mistakes.
 
 ## Closure (5 minutes)
