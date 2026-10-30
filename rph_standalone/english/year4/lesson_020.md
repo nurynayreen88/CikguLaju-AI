@@ -19,7 +19,7 @@
 **Pupils:** Practise How often questions and frequency expressions.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Pupils write true/false statements as a quiz for partners and check text details.
+**Teacher:** Model a text-based true/false statement, then ask pupils to write partner quizzes and check each answer against the story.
 **Pupils:** Write true/false quiz statements and check text details.
 
 ## Closure (5 minutes)
