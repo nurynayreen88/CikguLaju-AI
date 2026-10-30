@@ -15,7 +15,7 @@
 **Pupils:** Complete revision Activities 1–3.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Use formative results for targeted communicative practice.
+**Teacher:** Identify one common error from the revision responses and lead a short pair-speaking task targeting that language point.
 **Pupils:** Practise language points needing improvement.
 
 ## PBD / reinforcement (10 minutes)
