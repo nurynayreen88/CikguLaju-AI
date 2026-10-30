@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB phonics warm-up.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall phonics words and sounds.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Complete Phonics 9 Activity 1 and optional practice.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Listen and complete Phonics 9 Activity 1.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Play dictionary page-number race to locate unfamiliar words.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Find unfamiliar words quickly using a dictionary.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Follow Phonics 9 Activity 2 and check sound discrimination.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Complete Phonics 9 Activity 2 and distinguish sounds.
 
 ## Closure (5 minutes)
 **Teacher:** Review a word and its sound.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Say one example word and its sound.
 
 **PBD:** Assess the source-based task against 1.1.1 and 3.2.4; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
