@@ -1,15 +1,32 @@
-# English Year 4 Lesson 057 — Writing 11
+# English Year 4 — Lesson 057
 
-Topic: Celebrations. Main SP: Writing 4.3.3. Complementary SP: Writing 4.3.1. References: SB p.40; teacher-made who/what/when prompts. Duration: 60 minutes.
+**Topic:** Celebrations  
+**Main SP:** 4.3.3  
+**Complementary SP:** 4.3.1  
+**Duration:** 60 minutes  
+**References:** SB p.40; teacher-made who/what/when prompts; Year 4 SOW Lesson 57
 
-Set induction (10 min): Teacher guides: Review celebrations using picture prompts. Pupils complete the indicated skill task and respond to feedback.
+## Set induction (10 minutes)
+**Teacher:** Review celebrations with picture prompts.
+**Pupils:** Name celebrations shown in the pictures.
 
-Activity 1 (15 min): Teacher guides: Ask who/what/when questions about the two SB p.40 texts. Pupils complete the indicated skill task and respond to feedback.
+## Activity 1 (15 minutes)
+**Teacher:** Ask who, what and when questions about the two texts.
+**Pupils:** Locate answers in the Student Book texts.
 
-Activity 2 (20 min): Teacher guides: Pairs choose a celebration and plan a paragraph using question-word notes. Pupils complete the indicated skill task and respond to feedback.
+## Activity 2 (20 minutes)
+**Teacher:** Guide pairs to plan a paragraph using question-word notes.
+**Pupils:** Choose a celebration and organise paragraph notes.
 
-PBD and reinforcement (10 min): Teacher guides: Pupils draft, peer-check capital letters and punctuation, then rewrite. Pupils complete the indicated skill task and respond to feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Guide drafting and peer checking of capitals and punctuation.
+**Pupils:** Draft, check and revise a celebration paragraph.
 
-Closure (5 min): Teacher guides: Pupils identify one improvement made after feedback. Pupils complete the indicated skill task and respond to feedback.
+## Closure (5 minutes)
+**Teacher:** Ask for a specific improvement made after feedback.
+**Pupils:** Identify one improvement in the revised paragraph.
 
-PBD: Observe the specified learning task and record evidence against Writing 4.3.3 and Writing 4.3.1. Differentiation: Provide source-based models, partner support or an extension task according to pupil needs. Source: Primary Year 4 SK SOW Lesson 57. Status: DRAFT; direct book/audio and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against SP 4.3.3 and 4.3.1.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
