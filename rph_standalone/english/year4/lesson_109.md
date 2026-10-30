@@ -7,7 +7,7 @@
 **References:** SOW Lesson 109; teacher-prepared short local recycling project text; monolingual dictionaries
 
 ## Set induction (10 minutes)
-**Teacher:** Show a local recycling-project picture and ask what materials can be collected.
+**Teacher:** Display a local recycling-project picture and invite pupils to name recyclable materials with reasons.
 **Pupils:** Name materials that can be recycled.
 
 ## Activity 1 (15 minutes)
