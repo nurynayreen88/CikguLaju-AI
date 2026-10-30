@@ -26,7 +26,7 @@
 **Teacher:** Correct a possessive example.
 **Pupils:** Correct one possessive sentence.
 
-**PBD:** Assess task responses against 4.3.1 and 3.2.2; teacher selects specific criteria for Language Awareness.  
+**PBD:** Check pupils' use of possessive pronouns and apostrophe-s in Activity 3, including punctuation corrections, against SP 4.3.1 and 3.2.2.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
