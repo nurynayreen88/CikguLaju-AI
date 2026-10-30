@@ -11,11 +11,11 @@
 **Pupils:** Review sports vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Complete Activity 1 in pairs and collect sports data.
+**Teacher:** Model a sports-preference interview question, then ask pairs to complete Activity 1 and record their partner's answers.
 **Pupils:** Interview a partner and record sports data.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Optionally present data in a simple chart.
+**Teacher:** Show how to organise the collected answers in a simple chart, then invite pupils to present one finding.
 **Pupils:** Organise the collected data in a simple chart.
 
 ## Reinforcement / PBD (10 minutes)
@@ -23,7 +23,7 @@
 **Pupils:** Describe a partner's preferences in groups.
 
 ## Closure (5 minutes)
-**Teacher:** Complete TB optional review.
+**Teacher:** Facilitate the TB optional review and invite pupils to share a conclusion from their interviews.
 **Pupils:** Share a conclusion from the survey.
 
 **PBD:** Observe partner interviews, sports-survey recording and spoken summaries of preferences (SP 2.1.1, 2.1.5).  
