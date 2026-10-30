@@ -19,7 +19,7 @@
 **Pupils:** Complete Activity 3 using going to sentences.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide drawing of a parade costume and cursive descriptions.
+**Teacher:** Model one going to sentence about a parade costume, then guide pupils to draw their designs and write legible cursive descriptions.
 **Pupils:** Draw a costume and write three to five cursive sentences.
 
 ## Closure (5 minutes)
