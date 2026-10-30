@@ -26,7 +26,7 @@
 **Teacher:** Reflect on effective communication.
 **Pupils:** Reflect on group communication.
 
-**PBD:** Assess the specified task against 2.2.2 and 1.2.4; for teacher-selected standards choose criteria before class.  
+**PBD:** Observe pupils' comprehension of board-game instructions and use of suitable advice or clarification during group play (SP 2.2.2, 1.2.4).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
