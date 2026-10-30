@@ -22,6 +22,8 @@
 **Teacher:** Prompt pupils to explain why one learning habit is helpful and assess whether each response includes a clear reason.
 **Pupils:** Explain reasons for chosen learning habits.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to demonstrate a useful speaking strategy in a short exchange.
 **Pupils:** Share one strategy to practise.
