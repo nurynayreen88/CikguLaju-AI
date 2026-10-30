@@ -23,7 +23,7 @@
 **Pupils:** Exchange opinions using comparative language.
 
 ## Closure (5 minutes)
-**Teacher:** Share one supported opinion.
+**Teacher:** Invite pupils to express an animal preference and justify it with a comparative clue.
 **Pupils:** Give one reason for an animal preference.
 
 **PBD:** Observe comparative animal descriptions and pupils' spoken preferences with reasons against SP 2.1.1 and 2.1.5.  
