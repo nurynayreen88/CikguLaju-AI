@@ -7,7 +7,7 @@
 **References:** Graphic Novel Teaching Guidebook p.70, steps 1–4; Year 4 SOW Lesson 143
 
 ## Set induction (10 minutes)
-**Teacher:** Show Akela's picture and review the character's role.
+**Teacher:** Display Akela's picture and ask pupils to recall one character action that establishes his role.
 **Pupils:** Identify Akela and recall the character's role.
 
 ## Activity 1 (15 minutes)
