@@ -23,7 +23,7 @@
 **Pupils:** Listen to Track 38 and identify the dialogue's main idea.
 
 ## Closure (5 minutes)
-**Teacher:** Play a past-tense verb review game.
+**Teacher:** Lead a past-tense verb review game and ask pupils to use one verb in a complete sentence.
 **Pupils:** Review past-tense verbs in a game.
 
 ## Assessment and differentiation
