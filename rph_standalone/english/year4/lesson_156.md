@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Play a word game to review vocabulary.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Recall advice vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Vocabulary using CD2 Track 79 and the Grammar Box.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen to vocabulary recording.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 1 and play the board game in groups.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Play the board game.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete the optional silly advice task and clarify the rules.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Give playful advice and explain rules.
 
 ## Closure (5 minutes)
 **Teacher:** Reflect on effective communication.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Reflect on group communication.
 
 **PBD:** Assess the specified task against 2.2.2 and 1.2.4; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
