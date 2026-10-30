@@ -64,6 +64,11 @@ def install(archive, destination):
         except Exception:
             for target in reversed(created):
                 target.unlink(missing_ok=True)
+            asset_folder = destination / "RPT_PJ_2027_DOCX"
+            if asset_folder.is_dir() and not asset_folder.is_symlink():
+                asset_folder.rmdir()
+            if destination.is_dir() and not destination.is_symlink():
+                destination.rmdir()
             raise
     return len(created)
 
