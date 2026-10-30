@@ -15,7 +15,7 @@ STATES = (
     "WP_Putrajaya",
 )
 YEARS = (4, 5, 6)
-FILE_PATTERN = "RPT_PJ_2027_{state}_Tahun_{year}_v75_STAGING.docx"
+FILE_PATTERN = "RPT_PJ_2027_{state}_Tahun_{year}_v76_STAGING.docx"
 
 
 class RPTAccessDenied(PermissionError):
