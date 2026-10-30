@@ -11,7 +11,7 @@
 **Pupils:** Recall transport words from Track 9.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Show pictures of tuk-tuks, gondolas and snowmobiles.
+**Teacher:** Show pictures of tuk-tuks, gondolas and snowmobiles and ask pupils to predict where each is used.
 **Pupils:** Identify tuk-tuks, gondolas and snowmobiles.
 
 ## Activity 2 (20 minutes)
