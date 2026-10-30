@@ -17,6 +17,7 @@ def main() -> None:
     parser.add_argument("--fail-on-multipage", action="store_true", help="Optional strict one-page gate")
     args = parser.parse_args()
     rows = []
+    missing_text = []
     for lesson in range(1, 161):
         path = args.input_dir / f"year4_{lesson:03d}_SMOKE.pdf"
         if not path.is_file():
@@ -25,6 +26,9 @@ def main() -> None:
         pages = len(reader.pages)
         if pages < 1:
             raise ValueError(f"Empty PDF: {path}")
+        extracted = "\\n".join(page.extract_text() or "" for page in reader.pages)
+        if "English Year 4" not in extracted:
+            missing_text.append(lesson)
         rows.append((lesson, pages, "REVIEW" if pages != 1 else "ONE_PAGE"))
     args.report.parent.mkdir(parents=True, exist_ok=True)
     with args.report.open("w", encoding="utf-8", newline="") as stream:
@@ -37,6 +41,8 @@ def main() -> None:
     if multi:
         print("Needs A4 layout review:", ", ".join(map(str, multi)))
     print("NOTE: one PDF page does not prove visual quality or DOCX page count")
+    if missing_text:
+        raise SystemExit(f"FAILED PDF text extraction for lessons: {missing_text}")
     if args.fail_on_multipage and multi:
         raise SystemExit(f"FAILED one-page target: {len(multi)} lessons require layout review")
 
