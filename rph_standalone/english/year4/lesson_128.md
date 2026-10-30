@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB warm-up to review animal language.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall animal vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Complete revision Activities 1–3.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Complete Unit 8 revision Activities 1–3.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Practise skills identified from formative assessment.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Practise language targets identified by the teacher.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete self-assessment and identify difficult skills.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Complete self-assessment and identify difficulties.
 
 ## Closure (5 minutes)
 **Teacher:** Set a review target.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** State one revision target.
 
 **PBD:** Assess the source-based task against Teacher-selected DSKP SP and Teacher-selected DSKP SP; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
