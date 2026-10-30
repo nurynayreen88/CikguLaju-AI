@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 1.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.15; TB p.32; CD1 Track 19; Year 4 SOW Lesson 17
+**References:** SB p.15; TB p.32; Track 19 (SOW; CD1 designation pending independent TB/audio verification); Year 4 SOW Lesson 17
 
 ## Set induction (10 minutes)
 **Teacher:** Show school-subject flashcards and ask about preferences.
