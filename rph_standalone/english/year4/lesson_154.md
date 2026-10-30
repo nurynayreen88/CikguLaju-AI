@@ -26,7 +26,7 @@
 **Teacher:** Gallery walk with stars and wishes.
 **Pupils:** Give classmates stars and wishes during a gallery walk.
 
-**PBD:** Assess the specified task against 5.2.1 and 4.2.4; for teacher-selected standards choose criteria before class.  
+**PBD:** Observe creative responses to The Jungle Book and evidence-based opinions in presentations (SP 5.2.1, 4.2.4).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
