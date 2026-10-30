@@ -4,7 +4,7 @@
 **Main SP:** 2.1.5  
 **Complementary SP:** 2.2.2  
 **Duration:** 60 minutes  
-**Resources:** SB p.54 Activity 1; TB p.84; CD1 Track 81; gapped instructions
+**Resources:** SB p.54 Activity 1; TB p.84; Warm up/Vocabulary CD1 Track 81 (KPM SOW); gapped instructions
 
 ## Set induction (10 minutes)
 **Teacher action:** Follow TB Warm-up and Vocabulary with Track 81.
