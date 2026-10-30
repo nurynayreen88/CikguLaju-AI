@@ -23,7 +23,7 @@
 **Pupils:** Perform a dialogue and improve after feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Review useful clarification phrases.
+**Teacher:** Ask pupils to demonstrate one clarification phrase from their celebration-date dialogues.
 **Pupils:** Use one clarification phrase accurately.
 
 **PBD:** Observe when questions about dates and appropriate clarification phrases in paired dialogue (SP 2.2.1 and 1.2.5).  
