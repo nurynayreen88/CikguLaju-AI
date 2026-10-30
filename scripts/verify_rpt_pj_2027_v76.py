@@ -8,6 +8,7 @@ from pathlib import Path
 from zipfile import ZipFile
 from xml.etree import ElementTree as ET
 import sys
+import re
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from rpt_pj_2027_delivery import FILE_PATTERN, STATES, YEARS
@@ -33,6 +34,8 @@ def verify(archive):
                     ("state", "Negeri: " + state.replace("_", " ") in text),
                     ("year", "TAHUN " + str(year) in text),
                     ("calendar audit", "KPM/BKPP" in text),
+                    ("complete PdP sequence", set(re.findall(r"PdP-(\\d{3})", text))
+                     == {f"{i:03}" for i in range(1, {4: 34, 5: 33, 6: 34}[year] + 1)}),
                 )
                 for label, valid in checks:
                     if not valid:
