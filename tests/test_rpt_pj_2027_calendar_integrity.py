@@ -7,7 +7,7 @@ from pathlib import Path
 
 from rpt_pj_2027_calendar import (
     CalendarDataError, EXPECTED_STATES, GROUP_A, read_calendar_csv,
-    validate_pdp_counts,
+    validate_pdp_counts, school_days,
 )
 
 
@@ -39,6 +39,10 @@ class CalendarIntegrityTests(unittest.TestCase):
             path = self.make_csv(folder, skip=("KEDAH", "2027-05-01"))
             with self.assertRaises(CalendarDataError):
                 read_calendar_csv(path)
+
+    def test_unknown_state_rejected_by_school_day_query(self):
+        with self.assertRaises(CalendarDataError):
+            school_days({}, "NEGERI REKAAN", "2027-01-01", "2027-01-02")
 
     def test_unknown_state_rejected_by_pdp_catalogue(self):
         rows = [{"Negeri": "NEGERI REKAAN", "Tahun": 4, "PdP": i}
