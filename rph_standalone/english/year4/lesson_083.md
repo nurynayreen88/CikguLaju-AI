@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review vocabulary with Track 5.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall words heard in Track 5.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Listen to Track 6 and answer the Activity 1 question.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen to Track 6 and answer Activity 1.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Read and complete Activity 3.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Read the text and complete Activity 3.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pairs discuss a recent school trip using the text.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Discuss a school trip using details from the text.
 
 ## Closure (5 minutes)
 **Teacher:** Recall a detail from the reading.
-**Pupils:** Share one result or reflection.
+**Pupils:** Share one fact from the reading.
 
 **PBD:** Assess task responses against 3.2.2 and 1.2.1; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
