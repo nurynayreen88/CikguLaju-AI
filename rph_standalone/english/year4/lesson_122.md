@@ -10,7 +10,7 @@
 Teacher reviews the characters and events of the graphic novel. Pupils recall the story.
 
 ## Activity 1 (15 minutes)
-Teacher guides pupils through a selected passage. Pupils read for enjoyment.
+Teacher follows the group activity in the graphic novel Teaching Guidebook page 48, steps 1 to 5.
 
 ## Activity 2 (20 minutes)
 Teacher asks pupils to discuss character feelings and story events. Pupils support their views with details.
