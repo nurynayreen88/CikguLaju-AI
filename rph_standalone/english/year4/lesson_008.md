@@ -19,7 +19,7 @@
 **Pupils:** Read the text and listen to Track 11.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide TB Activity 2 and ask pupils to explain context clues.
+**Teacher:** Model inferring one unfamiliar routine word from its surrounding sentence, then guide TB Activity 2 and ask pupils to explain their clues.
 **Pupils:** Locate reading details and explain vocabulary clues.
 
 ## Closure (5 minutes)
