@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Act out verbs from cards; classmates name the actions.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Mime action verbs and identify classmates' actions.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read the sample jazz chant on guidebook p.62.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Read and practise the jazz chant.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Replace selected verbs and write a new chant following steps 1–4.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Replace verbs and compose a group chant.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Groups present chants and check spelling.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Perform the chant and check spelling.
 
 ## Closure (5 minutes)
 **Teacher:** Gallery walk with stars and wishes.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Give stars and wishes during the gallery walk.
 
 **PBD:** Assess the source-based task against 5.3.1 and 4.3.2; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
