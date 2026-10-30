@@ -15,7 +15,7 @@
 **Pupils:** Predict the story using character pictures.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils read the story silently, then identify where characters are and whether timetables match.
+**Teacher:** Set two reading questions about the characters' location and timetables, then guide silent reading and ask pupils to cite story details.
 **Pupils:** Read silently and identify the characters' location and timetable problem.
 
 ## PBD and reinforcement (10 minutes)
