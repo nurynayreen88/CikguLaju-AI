@@ -26,7 +26,7 @@
 **Teacher action:** Pupils share a challenging word and its spelling.
 **Pupil action:** Share a challenging food word and spell it.
 
-**PBD:** Check pupil responses and products against 3.2.2 and 4.3.2; for teacher-selected standards, agree criteria before delivery.  
+**PBD:** Check reading answers from Project Activity 1 and spelling of food categories in Activity 2 against SP 3.2.2 and 4.3.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 72, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
