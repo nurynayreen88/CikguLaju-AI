@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review location and trip vocabulary.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Recall trip and location words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow TB Activity 4 listening task.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Prepare for the Activity 4 listening task.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Listen for details and check answers in pairs.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Listen for details and compare answers in pairs.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Use prepositions and questions to explain responses.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Explain answers using prepositions and questions.
 
 ## Closure (5 minutes)
 **Teacher:** Recall one detail heard.
-**Pupils:** Share one result or reflection.
+**Pupils:** Recall one detail from the recording.
 
 **PBD:** Assess task responses against 1.2.2 and 1.2.5; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
