@@ -13,7 +13,7 @@ Teacher reviews familiar countries. Pupils locate Malaysia, Singapore and Thaila
 Teacher displays a world map and asks pupils to locate Malaysia, Singapore and Thailand before introducing Australia and Canada. Pupils locate countries and predict which objects or activities belong to each.
 
 ## Activity 2 — Reading (25 minutes)
-Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed.
+Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed. Pupils complete Workbook p.30, Activity 2, by writing about seasons and weather in different places.
 
 ## PBD (10 minutes)
 Pupils locate two details in the reading text and use one polite request for help when needed.
