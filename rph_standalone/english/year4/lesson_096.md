@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**References:** SB p.70 Revision 6; TB p.106; self-assessment
+**References:** SB p.70 Revision 6; TB p.106; self-assessment; optional support: resources/lesson_096_unit6_self_assessment_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB Warm-up.
