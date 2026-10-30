@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB Revision activity.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Review sports vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Complete Activity 1 in pairs and collect sports data.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Interview a partner and record sports data.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Optionally present data in a simple chart.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Organise the collected data in a simple chart.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Follow Activity 2 and describe a partner's sports preferences in groups.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Describe a partner's preferences in groups.
 
 ## Closure (5 minutes)
 **Teacher:** Complete TB optional review.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Share a conclusion from the survey.
 
 **PBD:** Assess the source-based task against 2.1.1 and 2.1.5; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
