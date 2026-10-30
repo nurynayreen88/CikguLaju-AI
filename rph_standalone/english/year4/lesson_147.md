@@ -22,6 +22,8 @@
 **Teacher:** Play Track 72 for Activity 1, pause at key story events and ask pupils to answer with supporting details from the story.
 **Pupils:** Use story evidence to justify answers.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one value shown in the story and cite the character action that demonstrates it.
 **Pupils:** Share one story lesson.
