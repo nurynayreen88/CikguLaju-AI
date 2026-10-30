@@ -26,7 +26,7 @@
 **Teacher:** Share one fact about a building.
 **Pupils:** Share one fact about a building.
 
-**PBD:** Assess task responses against 4.3.3 and 3.2.2; teacher selects specific criteria for Language Awareness.  
+**PBD:** Assess reading comprehension of famous-building facts and the accuracy of written descriptions against SP 4.3.3 and 3.2.2.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
