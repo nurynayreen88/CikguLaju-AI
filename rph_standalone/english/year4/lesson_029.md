@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Compare pictures of Malaysian schools with the pupils' own school.
-**Pupils:** Respond to the opening prompt and activate prior learning.
+**Pupils:** Compare pictures of schools with their own school.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Write library, country, special, strange and forest; pupils use monolingual dictionaries to check meanings.
-**Pupils:** Follow the source-based model and perform the first guided task.
+**Pupils:** Use a dictionary for library, country, special, strange and forest.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow TB Warm-up with Track 35 and Activity 1 with Track 36; pupils read the school texts.
-**Pupils:** Complete the main task individually or collaboratively using the named book/guide resources.
+**Pupils:** Read school texts while listening to Tracks 35–36.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Complete Activity 2 and locate details; pairs write or say four true statements about their school.
-**Pupils:** Demonstrate the main learning standard through responses, work or performance; revise after feedback.
+**Pupils:** Locate details and write or say four facts about their school.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils share a fact about another school and a dictionary word.
-**Pupils:** Share a learning point and reflect on progress.
+**Pupils:** Share a fact about another school and a new word.
 
 ## Assessment and differentiation
 **PBD:** Check task-specific responses and note achievement of Reading 3.2.2 and Reading 3.2.4.  
