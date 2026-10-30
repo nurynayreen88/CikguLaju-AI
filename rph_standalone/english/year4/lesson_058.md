@@ -11,7 +11,7 @@
 **Pupils:** Recall and sequence story events.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Guide reading of The King of Kites.
+**Teacher:** Guide shared reading of The King of Kites and pause to check pupils' understanding of the main events.
 **Pupils:** Read the story in the selected reading mode.
 
 ## Activity 2 (20 minutes)
