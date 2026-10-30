@@ -16,7 +16,7 @@ MAX_CALLBACK_LENGTH = 64
 
 def encode_callback(state, year):
     state = str(state).strip().replace(" ", "_")
-    if state not in STATES or year not in YEARS:
+    if state not in STATES or type(year) is not int or year not in YEARS:
         raise ValueError("Invalid RPT PJ 2027 selection")
     return f"{PREFIX}:{state}:{year}"
 
@@ -47,6 +47,8 @@ def handle_download(bot, chat_id, root, callback_data, *, user_id, access_resolv
     state, year = decode_callback(callback_data)
     if not isinstance(user_id, int) or isinstance(user_id, bool) or user_id <= 0:
         raise RPTAccessDenied("Identiti pengguna tidak sah")
+    if not callable(access_resolver):
+        raise RPTAccessDenied("Pengesahan akses tidak tersedia")
     flags = access_resolver(user_id)
     if not isinstance(flags, dict):
         raise RPTAccessDenied("Status akses tidak dapat disahkan")
