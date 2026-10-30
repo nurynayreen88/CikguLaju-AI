@@ -22,7 +22,7 @@
 **Teacher:** Assess group performance using guidebook p.128 form.
 **Pupils:** Use the guidebook form to assess performances.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils review their Readers' Theatre performance using the Teaching Guidebook assessment form on p.128; a Workbook activity is not prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Guide peers to give one specific performance strength and one achievable improvement target.
