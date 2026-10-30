@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Compare video scenes of a village and a jungle.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Describe village and jungle settings.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Give reasons for preferred place to live.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Explain a preferred place to live.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow guidebook p.73 steps 1–2.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Complete guidebook page 73 tasks in pairs.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Share written opinions about Mowgli's choice.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Write an opinion about Mowgli's choice.
 
 ## Closure (5 minutes)
 **Teacher:** Reach a class consensus.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Share a reasoned class view.
 
 **PBD:** Assess the specified task against 5.2.1 and 4.3.1; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
