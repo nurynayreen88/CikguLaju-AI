@@ -15,11 +15,11 @@
 **Pupils:** Discuss when encouragement is helpful.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Guide p.60 and complete Worksheets 10a and 10b.
+**Teacher:** Explain the tasks in Guide p.60 and Worksheets 10a–10b, then guide pupils to complete them independently or in pairs.
 **Pupils:** Complete Worksheets 10a and 10b.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check answers and draft an encouraging message.
+**Teacher:** Check worksheet responses, model a supportive sentence and ask pupils to draft an encouraging message.
 **Pupils:** Check answers and draft an encouraging message.
 
 ## Closure (5 minutes)
