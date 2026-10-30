@@ -15,7 +15,7 @@
 **Pupils:** Listen to Track 31 and practise the target vocabulary.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 1, then groups write board-game questions.
+**Teacher:** Model the first Activity 1 question, then guide groups to draft clear board-game questions using the target language.
 **Pupils:** Write board-game questions using the model.
 
 ## PBD / reinforcement (10 minutes)
