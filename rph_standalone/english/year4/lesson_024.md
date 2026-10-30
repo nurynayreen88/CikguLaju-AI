@@ -11,7 +11,7 @@
 **Pupils:** Name chores shown through mime.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Pupils read and listen to Track 25, considering which child is most like them.
+**Teacher:** Set a personal-response question before pupils read and listen to Track 25, then check which child they identify with.
 **Pupils:** Read and listen to Track 25; choose a child they relate to.
 
 ## Activity 2 (20 minutes)
