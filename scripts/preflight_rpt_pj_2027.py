@@ -52,6 +52,10 @@ def preflight(archive, data_root):
         report["problems"].append("Telegram app.py integration not verified")
     if not report["production_deployed"]:
         report["problems"].append("Render deployment not verified")
+    report["release_ready"] = all((report["archive_verified"],
+                                   report["assets_installed"],
+                                   report["telegram_registered"],
+                                   report["production_deployed"])) and not report["problems"]
     return report
 
 
