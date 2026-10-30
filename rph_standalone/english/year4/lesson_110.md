@@ -23,7 +23,7 @@
 **Pupils:** Check capitals and punctuation before playing the game.
 
 ## Closure (5 minutes)
-**Teacher:** Reflect on one language improvement.
+**Teacher:** Ask pupils to identify one language correction they made while preparing their board-game questions.
 **Pupils:** Share one improvement in writing.
 
 **PBD:** Check written board-game questions for capitals, punctuation and relevant source details (SP 4.3.1, 3.2.2).  
