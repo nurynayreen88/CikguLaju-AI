@@ -7,7 +7,7 @@
 **References:** SOW Lesson 157; Unit 10 Science and Technology; Primary Year 4 SOW Lesson 157
 
 ## Set induction (10 minutes)
-**Teacher:** Introduce the text topic using visual prompts.
+**Teacher:** Introduce What are germs? using the title and pictures on Student's Book page 110.
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
