@@ -7,7 +7,7 @@
 **References:** SB p.87 Activities 1–2; TB pp.130–131; animal pictures; Year 4 SOW Lesson 126
 
 ## Set induction (10 minutes)
-**Teacher:** Review favourite animal descriptions.
+**Teacher:** Elicit animal appearance, habitat and ability words for pupils to reuse in their paragraph plans.
 **Pupils:** Name favourite animals.
 
 ## Activity 1 (15 minutes)
