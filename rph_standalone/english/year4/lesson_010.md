@@ -16,7 +16,7 @@
 **Pupils:** Read the poem and follow the guidebook activity with the group.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils complete the feelings flow map using Worksheet 2 and give reasons for their feelings.
+**Teacher:** Model one emotion-and-reason entry, then guide pupils to complete the Worksheet 2 feelings flow map with evidence from the poem.
 **Pupils:** Complete the feelings flow map and give a simple reason.
 
 ## Reinforcement / PBD (10 minutes)
