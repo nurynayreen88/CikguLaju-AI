@@ -23,7 +23,7 @@
 **Pupils:** Write opinion strips, guess authors and respond.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils share a prediction and give a reason.
+**Teacher:** Invite pupils to share a prediction about their school day and support it with a timetable detail.
 **Pupils:** Share a prediction and give a reason.
 
 **PBD:** Check task responses against Speaking 2.1.4 and Writing 4.2.1, recording individual progress.  
