@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review animal adjectives and pictures.
-**Pupils:** Respond to the prompts and recall relevant language.
+**Pupils:** Recall adjectives describing animals.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model comparative descriptions of animals.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Practise comparative animal descriptions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pairs describe animals and prepare accurately spelled clue cards.
-**Pupils:** Complete the source-based activity individually or in groups.
+**Pupils:** Describe animals and write correctly spelled clues.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher:** Groups guess animals from comparative clues.
-**Pupils:** Demonstrate the target skill, compare answers and use feedback.
+**Pupils:** Guess animals using comparative clues.
 
 ## Closure (5 minutes)
 **Teacher:** Correct one comparative adjective.
-**Pupils:** Share a short response or reflection.
+**Pupils:** Correct and share a comparative adjective.
 
 **PBD:** Observe the named learning task against 2.1.5 and 4.3.2; for teacher-selected standards, establish criteria before class.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
