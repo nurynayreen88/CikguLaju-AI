@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce book-cover features: title, illustrator, author, publisher and synopsis.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Identify familiar book-cover features.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow the guidebook p.70 and examine the cover of The King of Kites.
-**Pupils:** Follow the book or guide activity and complete the guided task.
+**Pupils:** Examine the cover using guidebook p.70.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Pupils predict the story from cover clues and explain their reasons.
-**Pupils:** Practise the central target skill using the named source.
+**Pupils:** Predict the story using cover clues and reasons.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils complete Worksheet 1 and compare predictions.
-**Pupils:** Complete a measurable response, compare work and respond to feedback.
+**Pupils:** Complete Worksheet 1 and compare predictions.
 
 ## Closure (5 minutes)
 **Teacher:** Show another book and identify its cover features.
-**Pupils:** Share a learning point or short performance.
+**Pupils:** Identify cover features on another book.
 
 **PBD:** Check task-specific evidence for Language Arts 5.2.1 and Speaking 2.1.4.  
 **Differentiation:** Ask pupils to connect the cover with books they have read.  
