@@ -20,7 +20,7 @@
 **Pupils:** Suggest new sounds for objects in the poem and share descriptive words.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Groups rewrite one stanza with a new imagined sound and practise recitation.
+**Teacher:** Model substituting one sound image in a stanza, then guide groups to write their own version and rehearse expressive recitation.
 **Pupils:** Write a revised stanza in a group using an imagined sound.
 
 ## Closure (5 minutes)
