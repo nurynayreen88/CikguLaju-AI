@@ -23,7 +23,7 @@
 **Pupils:** Reread and describe what they would wear at a parade.
 
 ## Closure (5 minutes)
-**Teacher:** Invite pupils to share costume ideas.
+**Teacher:** Invite pupils to describe a festival costume and connect their idea to a detail from the story.
 **Pupils:** Share a costume idea using story vocabulary.
 
 **PBD:** Observe independent story reading and dictionary lookup of unfamiliar festival words (SP 3.3.1 and 3.2.4).  
