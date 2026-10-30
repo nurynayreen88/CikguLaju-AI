@@ -23,7 +23,7 @@
 **Pupils:** Locate reading details and explain vocabulary clues.
 
 ## Closure (5 minutes)
-**Teacher:** Invite pupils to share a routine and a new word.
+**Teacher:** Invite pupils to describe one daily routine and explain a new word using a clue from the text.
 **Pupils:** Name a routine and explain one new word.
 
 **PBD:** Observe reading comprehension and contextual vocabulary inference against SP 3.2.3 and 3.2.2.  
