@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Provide a paragraph checklist, then guide drafting and peer review of capital letters, punctuation and detail accuracy.
-**Pupils:** Draft, check and revise a celebration paragraph.
+**Pupils:** Draft, check and revise a celebration paragraph. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to identify one specific change made to their festival paragraph after peer feedback.
