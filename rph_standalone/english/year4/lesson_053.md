@@ -23,7 +23,7 @@
 **Pupils:** Design a kite and prepare an explanation.
 
 ## Closure (5 minutes)
-**Teacher:** Invite groups to present designs.
+**Teacher:** Invite groups to present their kite designs, name the materials and explain one design choice.
 **Pupils:** Present a kite design and respond to the story.
 
 **PBD:** Observe responses to The King of Kites, including materials mind maps and the explained kite design (SP 5.2.1 and 3.3.1).  
