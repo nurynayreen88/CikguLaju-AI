@@ -4,7 +4,7 @@
 **Main SP:** 2.1.5  
 **Complementary SP:** 2.1.2  
 **Duration:** 60 minutes  
-**References:** SB p.71 Activities 2–3; TB pp.108–109; CD2 Tracks 21–22
+**References:** SB p.71 Activities 2–3; TB pp.108–109; Song replay Track 21; Activity 3 Track 22 (KPM SOW; CD2 designation pending independent TB/audio verification)
 
 ## Set induction (10 minutes)
 **Teacher:** Replay Track 21 and mime the actions.
