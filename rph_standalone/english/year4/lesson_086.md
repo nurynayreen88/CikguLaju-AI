@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 1.2.5  
 **Duration:** 60 minutes  
-**References:** SB p.61 Activity 4; TB pp.94–95
+**References:** SB p.61 Activity 4; TB pp.94–95; **CD2 Track 7 (as printed in KPM SOW)**
 
 ## Set induction (10 minutes)
 **Teacher:** Review location and trip vocabulary.
