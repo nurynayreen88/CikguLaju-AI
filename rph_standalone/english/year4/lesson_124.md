@@ -15,11 +15,11 @@
 **Pupils:** Practise target animal vocabulary.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs complete Activity 1 using animal pictures and comparative language.
+**Teacher:** Model one animal comparison from the picture cards, then organise pair exchanges using Activity 1 and prompt pupils to expand their descriptions.
 **Pupils:** Compare animals and describe them to a partner.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use TB optional activity to exchange opinions and descriptions.
+**Teacher:** Invite pairs to state an animal preference with one reason, observe their use of comparative language and provide brief oral feedback.
 **Pupils:** Exchange opinions using comparative language.
 
 ## Closure (5 minutes)
