@@ -26,7 +26,7 @@
 **Pupils:** Correct individual listening responses and repeat difficult stress patterns.
 
 ## Closure (5 minutes)
-**Teacher:** Review the difference between a country name and a nationality word.
+**Teacher:** Display a country-name card and ask pupils to supply its nationality adjective, correcting word stress where needed.
 **Pupils:** State one country and its nationality adjective.
 
 ## Differentiation and assessment
