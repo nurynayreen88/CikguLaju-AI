@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall relevant vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Activity 4 listening.
+**Teacher:** Follow Activity 4 using CD2 Track 73.
 **Pupils:** Follow the model and complete the guided task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen for each person's problem and match pictures.
+**Teacher:** Match health problems to the people pictured.
 **Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Follow Activity 5 and discuss suitable responses.
+**Teacher:** Follow Activity 5 using CD2 Track 74 and explain advice using should.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
