@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Guide pupils to complete Worksheet 1 and compare their predictions using cover evidence.
-**Pupils:** Complete Worksheet 1 and compare predictions.
+**Pupils:** Complete Worksheet 1 and compare predictions. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Show another book and identify its cover features.
