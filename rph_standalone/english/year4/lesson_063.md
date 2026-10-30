@@ -22,6 +22,8 @@
 **Teacher:** Ask groups to support each character adjective with a detail from the picture or story.
 **Pupils:** Explain the adjectives chosen for characters.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Review the written descriptions and give specific feedback on adjective choice and supporting evidence.
 **Pupils:** Revise one answer using feedback.
