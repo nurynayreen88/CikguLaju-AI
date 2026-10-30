@@ -24,7 +24,7 @@
 **Answer key:** 1 Jill; 2 Paolo; 3 Anastasia; 4 Aina.
 
 ## Activity 3 — Malaysian flag listening (10 minutes)
-**Teacher:** Describe the colours and patterns of the Malaysian flag aloud; keep listening comprehension, not drawing quality, as the focus.  
+**Teacher:** Describe the Malaysian flag's colours and patterns orally, then ask pupils to identify the details they heard; assess listening rather than drawing quality.  
 **Pupils:** Draw and colour the flag following spoken descriptions, then practise introducing themselves with the flags.
 
 ## PBD / Reinforcement (5 minutes)
