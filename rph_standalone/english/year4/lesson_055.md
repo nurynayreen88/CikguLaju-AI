@@ -15,11 +15,11 @@
 **Pupils:** Listen and ask for clarification about task steps.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Organise interviews about tomorrow's plans.
+**Teacher:** Provide interview prompts about tomorrow's plans, model a going to question and organise pupils into interview pairs.
 **Pupils:** Interview a partner and fill in a plan table.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask pupils to exchange roles and present answers.
+**Teacher:** Ask pupils to swap interviewer roles and report one partner's plan using a complete sentence.
 **Pupils:** Swap roles, report plans and check task completion.
 
 ## Closure (5 minutes)
