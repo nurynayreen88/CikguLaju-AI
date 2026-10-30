@@ -23,7 +23,7 @@
 **Pupils:** Describe a past experience or culture with a partner.
 
 ## Closure (5 minutes)
-**Teacher:** Complete the optional TB line-jumping game.
+**Teacher:** Lead the optional TB line-jumping game to check pupils' understanding of past-tense statements.
 **Pupils:** Practise past-time expressions in the optional game.
 
 ## Assessment and differentiation
