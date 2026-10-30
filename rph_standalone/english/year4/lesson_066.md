@@ -19,7 +19,7 @@
 **Pupils:** Listen and discuss ingredients needed for different foods.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask pairs to change ingredient details and practise polite clarification.
+**Teacher:** Model a polite request to clarify an ingredient, then ask pairs to adapt the dialogue with different food items.
 **Pupils:** Ask clarification questions and respond appropriately in pairs.
 
 ## Closure (5 minutes)
