@@ -15,11 +15,11 @@
 **Pupils:** Discuss how the character is remembered and give reasons.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Facilitate Teaching Guidebook p.70, steps 1–4.
+**Teacher:** Explain Teaching Guidebook p.70 steps 1–4, model a response to Akela's story and support pupils as they complete the tasks.
 **Pupils:** Complete the guidebook tasks and respond to the character's story.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Discuss Mowgli's feelings and ask pupils to explain their responses.
+**Teacher:** Invite pupils to discuss Mowgli's feelings, prompting each pupil to support an explanation with a detail from the story.
 **Pupils:** Describe Mowgli's feelings and support opinions with story details.
 
 ## Closure (5 minutes)
