@@ -7,7 +7,7 @@
 **Resources:** SB p.55; TB p.87; adapted Activity 2 table
 
 ## Set induction (10 minutes)
-**Teacher action:** Play TB Supermarket Frenzy.
+**Teacher action:** Lead TB Supermarket Frenzy and check that pupils name food items using accurate category vocabulary.
 **Pupil action:** Recall food words in Supermarket Frenzy.
 
 ## Activity 1 (15 minutes)
