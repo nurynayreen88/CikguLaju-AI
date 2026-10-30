@@ -34,7 +34,7 @@ def verify(archive):
                     ("state", "Negeri: " + state.replace("_", " ") in text),
                     ("year", "TAHUN " + str(year) in text),
                     ("calendar audit", "KPM/BKPP" in text),
-                    ("complete PdP sequence", set(re.findall(r"PdP-(\\d{3})", text))
+                    ("complete PdP sequence", set(re.findall(r"PdP-(\d{3})", text))
                      == {f"{i:03}" for i in range(1, {4: 34, 5: 33, 6: 34}[year] + 1)}),
                 )
                 for label, valid in checks:
