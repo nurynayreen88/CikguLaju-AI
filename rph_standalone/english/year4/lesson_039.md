@@ -23,7 +23,7 @@
 **Pupils:** Give longer instructions and describe what happened.
 
 ## Closure (5 minutes)
-**Teacher:** Share one clear spoken sequence.
+**Teacher:** Invite pupils to demonstrate one clear action sequence using appropriate ordering words.
 **Pupils:** Demonstrate one clear spoken sequence.
 
 **PBD:** Check responses against Speaking 2.1.3 and Speaking 2.1.2.  
