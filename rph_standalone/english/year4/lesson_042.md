@@ -11,11 +11,11 @@
 **Pupils:** Name familiar beach words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow CCL Activity 2; pupils describe past beach experiences.
+**Teacher:** Explain CCL Activity 2, model one past-tense sentence and invite pupils to describe their beach experiences.
 **Pupils:** Describe a past experience at the beach.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils explain their feelings about Sand Castle.
+**Teacher:** Ask pupils how the Sand Castle story makes them feel and prompt them to support their responses with a story detail.
 **Pupils:** Explain a feeling about Sand Castle.
 
 ## PBD and reinforcement (10 minutes)
