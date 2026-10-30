@@ -7,7 +7,7 @@
 **Resources:** SOW Lesson 80: teacher-selected topic, materials and skills
 
 ## Set induction (10 minutes)
-**Teacher action:** Teacher and pupils identify a topic reflecting their needs and interests.
+**Teacher action:** Facilitate a short class discussion to select a project topic that reflects pupils' needs and interests.
 **Pupil action:** Discuss a suitable project topic and prior knowledge.
 
 ## Activity 1 (15 minutes)
