@@ -4,7 +4,7 @@
 **Main SP:** 4.1.2  
 **Complementary SP:** 4.3.2  
 **Duration:** 60 minutes  
-**Resources:** Teacher-selected food references; poster materials; Unit 5 self-assessment
+**Resources:** Teacher-selected food references; poster materials; resources/lesson_078_food_poster_planner_DRAFT.md; Unit 5 self-assessment
 
 ## Set induction (10 minutes)
 **Teacher action:** Review language useful for food-health posters.
