@@ -4,7 +4,7 @@
 **Main SP:** 4.2.2  
 **Complementary SP:** 4.2.5  
 **Duration:** 60 minutes  
-**References:** SOW Lesson 132; Get Smart Plus 4 Unit 9; Year 4 SOW Lesson 132
+**References:** SOW Lesson 132; Get Smart Plus 4 Unit 9; model invitation and report (see resources/lesson_132_competition_models_DRAFT.md)
 
 ## Set induction (10 minutes)
 **Teacher:** Elicit sports words and model an accurate superlative sentence before the writing task.
