@@ -23,7 +23,7 @@
 **Pupils:** Check spelling in a dictionary and revise the poster.
 
 ## Closure (5 minutes)
-**Teacher:** Display the poster and share one health tip.
+**Teacher:** Organise a poster display and ask pupils to share one clear health tip using should or shouldn't.
 **Pupils:** Display posters and share a health tip.
 
 **PBD:** Assess body labels, spelling and clarity of should/shouldn't advice on health posters (SP 4.3.3, 4.3.2).  
