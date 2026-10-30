@@ -18,7 +18,7 @@
 
 ## Activity 2 — Guided pair speaking (25 minutes)
 **Teacher:** Play CD 1 Track 4, model the dialogue and guide Student's Book p.5 Activity 2, using Teacher's Book pp.18–19 as the lesson reference. Pair pupils to describe characters and listen for details; encourage respectful language about appearance.
-**Pupils:** Describe two characters and identify details from a partner's description. Pupils complete Workbook p.4, Activities 1–2, to practise describing people using the picture prompts.
+**Pupils:** Describe two characters and identify details from a partner's description. Pupils complete Workbook p.7, Activities 1–2, to practise describing characters using 'has got'.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Listen to each pupil's two descriptions; ask two listening-detail questions and record evidence against both SPs.
