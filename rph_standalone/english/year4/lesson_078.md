@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Review language useful for food-health posters.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Recall language for a healthy-food poster.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Groups choose foods and plan evidence for a health-value poster.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Choose foods and plan evidence for a poster.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Pupils draft text and produce neat cursive handwriting with accurate spelling.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Write poster text neatly in cursive and check spelling.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Groups present posters and complete the Unit 5 self-assessment.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Present posters and complete Unit 5 self-assessment.
 
 ## Closure (5 minutes)
 **Teacher action:** Pupils identify a strength and next learning target.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Identify a strength and a next learning target.
 
 **PBD:** Check pupil responses and products against 4.1.2 and 4.3.2; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
