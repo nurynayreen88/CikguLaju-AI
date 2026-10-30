@@ -4,7 +4,7 @@
 **Main SK/SP:** Reading 3.2.2  
 **Complementary SK/SP:** Listening 1.2.4  
 **Duration:** 60 minutes  
-**Learning objective:** Pupils identify three specific details from the printed reading and follow two supported classroom instructions.
+**Learning objective:** Pupils locate three specific details about the children in the Smart kids story and follow two supported classroom instructions.
 **Success evidence:** Three text-based questions scored individually; note whether pupils follow task instructions.
 **Materials:** Student's Book and Teacher's Book pp.20–21, Vocabulary, Activity 1, Grammar Box, Activity 3; Activity 2 optional; other materials specified in each activity.  
 **Audio:** CD1 Tracks 6 (vocabulary) and 7 (Activity 1).
@@ -22,8 +22,8 @@
 **Pupils:** Listen/read Activity 1 with CD1 Track 7; locate details in the text and complete Grammar Box and Activity 3.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Demonstrate locating one fact in the text, then ask pupils to explain further details; model difficult names for pupils who need reading support.
-**Pupils:** Identify three details from the reading and respond to two supported classroom instructions.
+**Teacher:** Model finding one detail about the characters in the Smart kids text, then ask three text-based comprehension questions; support pupils with picture cues.
+**Pupils:** Find three details about the characters in the story and respond to two supported classroom instructions.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to share one fact from the text and model a related question-and-answer exchange.
