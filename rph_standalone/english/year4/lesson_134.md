@@ -11,15 +11,15 @@
 **Pupils:** Respond to prompts and recall vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB Activity 4 listening preparation.
+**Teacher:** Play the three interviews from Activity 4 and prepare a listening task.
 **Pupils:** Follow the example and complete the first task.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Listen for details about sports and check answers.
+**Teacher:** Pupils identify information in the three interviews.
 **Pupils:** Carry out the specified reading, writing, listening or speaking task.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use a sample paragraph to support a short written response.
+**Teacher:** Use Grammar Boxes on pages 93 and 95 to write a paragraph about a liked or disliked sport.
 **Pupils:** Provide an observable response and revise after feedback.
 
 ## Closure (5 minutes)
