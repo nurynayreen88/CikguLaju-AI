@@ -29,7 +29,7 @@ class RPTDocumentUnavailable(FileNotFoundError):
 
 def list_available(root):
     """List only known, explicitly provisioned RPT Word files."""
-    root = Path(root)
+    root = Path(root) / "RPT_PJ_2027_DOCX"
     result = []
     for state in STATES:
         for year in YEARS:
@@ -57,7 +57,7 @@ def resolve_rpt(root, *, negeri, tahun, authorized):
         raise ValueError("Tahun tidak sah") from exc
     if year not in YEARS:
         raise ValueError("Tahun tidak tersedia")
-    root = Path(root).resolve()
+    root = (Path(root) / "RPT_PJ_2027_DOCX").resolve()
     name = FILE_PATTERN.format(state=state, year=year)
     path = root / name
     if not path.is_file() or path.is_symlink():
