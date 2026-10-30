@@ -11,15 +11,15 @@
 **Pupils:** Discuss the selected project topic and success criteria.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Groups plan a project and assign roles.
+**Teacher:** Provide a short project-planning checklist and guide groups to assign roles, choose materials and agree on a feasible outcome.
 **Pupils:** Agree on a plan, roles and materials.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pupils create and document their project outcome.
+**Teacher:** Monitor group progress, prompt pupils to document their work and provide support without completing the project for them.
 **Pupils:** Create the project outcome and document each group's work.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Groups present outcomes and receive peer feedback.
+**Teacher:** Invite each group to present its outcome and organise peer feedback against the teacher-selected success criteria.
 **Pupils:** Present the outcome and improve it using peer feedback.
 
 ## Closure (5 minutes)
