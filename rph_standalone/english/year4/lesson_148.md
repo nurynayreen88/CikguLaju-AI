@@ -15,11 +15,11 @@
 **Pupils:** Identify an offer and a reason in the model messages.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Complete Activity 3 and plan a message exchange about an illness.
+**Teacher:** Model a brief exchange about an illness, then guide pairs through Activity 3 to plan their own messages with an appropriate reply.
 **Pupils:** Plan a message exchange with a health problem, offer and reason.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Write a clear text-message dialogue and peer-check meaning.
+**Teacher:** Ask pupils to write their message exchanges and use a peer checklist for clear meaning, suitable health vocabulary and punctuation.
 **Pupils:** Write, exchange and revise a text-message dialogue.
 
 ## Closure (5 minutes)
