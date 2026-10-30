@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review school-subject and timetable vocabulary.
-**Pupils:** Respond to the prompt and recall key words.
+**Pupils:** Recall school subjects and timetable words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Replay the story with Track 22 and conduct TB Activity 1.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Listen to Track 22 and complete Activity 1.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow Activity 3 and Grammar Box to practise 'How often ...?' and frequency expressions.
-**Pupils:** Practise the target skill using the stated source.
+**Pupils:** Practise How often questions and frequency expressions.
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils write true/false statements as a quiz for partners and check text details.
-**Pupils:** Show evidence of learning, compare responses and correct errors.
+**Pupils:** Write true/false quiz statements and check text details.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils correct a statement and share a timetable sentence.
-**Pupils:** Summarise a learning point or share a response.
+**Pupils:** Correct a statement and share a timetable sentence.
 
 **PBD:** Check task responses against Writing 4.2.4 and Reading 3.2.2, recording individual progress.  
 **Differentiation:** Model how to change names, days and frequency expressions.  
