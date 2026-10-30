@@ -26,7 +26,7 @@
 **Pupils:** Recite the poem with the new line and listen to other groups' performances.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils show a smiley face representing their feelings about the lesson.
+**Teacher:** Ask pupils to choose a smiley face to reflect on their experience of the poem activity.
 **Pupils:** Show a smiley face to reflect on enjoyment.
 
 ## Differentiation and assessment
