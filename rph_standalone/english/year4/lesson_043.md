@@ -26,7 +26,7 @@
 **Teacher:** Pronounce one verb from each sound group.
 **Pupils:** Pronounce one verb from each sound group.
 
-**PBD:** Check responses against Listening 1.1.1 and Listening 1.2.5.  
+**PBD:** Check discrimination and pronunciation of past-tense /d/, /t/ and /id/ endings using Tracks 10–11 (Listening 1.1.1; 1.2.5).  
 **Differentiation:** Provide extra sound-discrimination practice.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT; direct source/audio and Word/PDF QA pending.
