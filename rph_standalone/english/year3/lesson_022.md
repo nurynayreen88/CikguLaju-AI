@@ -14,7 +14,7 @@ Teacher reviews challenging transport-to-school expressions. Pupils recall words
 Teacher distributes mixed word cards (take the bus, walk, take the train, drive). Pupils arrange phrases in pairs and identify words from spoken questions.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides the listening task on Student's Book p.17 following the SOW reference to Teacher's Book p.35. Pupils listen for routine and transport details and ask for repetition or clarification when needed.
+Teacher guides the listening task on Student's Book p.17 following the SOW reference to Teacher's Book p.35. Pupils listen for routine and transport details and ask for repetition or clarification when needed. Pupils complete Workbook p.11, Activity 1, by reading and writing sentences about travelling to school and work.
 
 ## PBD (10 minutes)
 Teacher asks targeted detail questions and observes pupils' listening strategies. Pupils identify the transport and routine information heard.
