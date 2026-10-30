@@ -23,7 +23,7 @@
 **Pupils:** Complete Activity 2 and practise superlatives.
 
 ## Closure (5 minutes)
-**Teacher:** Play a sports mime review.
+**Teacher:** Lead a sports mime review and ask pupils to identify each sport using a complete sentence.
 **Pupils:** Mime a sport for classmates to guess.
 
 **PBD:** Check the reading's main idea, justified title selection and text-based answers against SP 3.2.2 and 3.2.1.  
