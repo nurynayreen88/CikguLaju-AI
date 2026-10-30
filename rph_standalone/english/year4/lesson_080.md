@@ -23,7 +23,7 @@
 **Pupil action:** Present the product and revise it using feedback.
 
 ## Closure (5 minutes)
-**Teacher action:** Prompt pupils to identify one collaboration strength and one learning target.
+**Teacher action:** Ask each group to name one successful collaboration practice and set a specific language-learning target.
 **Pupil action:** Reflect on teamwork and a learning gain.
 
 **PBD:** Check pupil responses and products against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards, agree criteria before delivery.  
