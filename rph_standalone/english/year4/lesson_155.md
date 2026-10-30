@@ -23,7 +23,7 @@
 **Pupils:** Give safety advice with reasons.
 
 ## Closure (5 minutes)
-**Teacher:** Share a key listening detail.
+**Teacher:** Ask pupils to state one home-safety detail they heard and explain its importance.
 **Pupils:** Share one safety rule.
 
 **PBD:** Record accuracy of listening-task responses and spoken home-safety advice with reasons (SP 1.2.2, 2.1.1).  
