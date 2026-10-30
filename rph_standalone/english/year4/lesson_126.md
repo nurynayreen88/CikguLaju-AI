@@ -12,19 +12,19 @@
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Activities 1 and 2 and identify conjunctions in the model.
-**Pupils:** Identify conjunctions in the model.
+**Pupils:** Find conjunctions in the model.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Plan a paragraph about a favourite animal using the mind map in Activity 2.
-**Pupils:** Plan a paragraph with a mind map.
+**Pupils:** Plan a paragraph using a mind map.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Write and revise a favourite-animal paragraph using conjunctions.
-**Pupils:** Write and edit the paragraph.
+**Pupils:** Write and revise the paragraph.
 
 ## Closure (5 minutes)
 **Teacher:** Read one improved sentence.
-**Pupils:** Read a revised sentence.
+**Pupils:** Read one improved sentence.
 
 **PBD:** Assess the source-based task against 4.2.5 and 4.3.3; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
