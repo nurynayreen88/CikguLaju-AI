@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 4.1.2  
 **Duration:** 60 minutes  
-**References:** SB p.43 Activities 1–2; TB p.70; CD1 Track 65; Year 4 SOW Lesson 61
+**References:** SB p.43 Activities 1–2; TB p.70; Activity 1 CD1 Track 65 (KPM SOW); Year 4 SOW Lesson 61
 
 ## Set induction (10 minutes)
 **Teacher:** Show a diary and ask what it is used for.
