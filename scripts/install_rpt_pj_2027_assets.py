@@ -23,9 +23,11 @@ def install(archive, destination):
     with ZipFile(archive) as z:
         members = [info for info in z.infolist() if not info.is_dir()]
         names = [info.filename for info in members]
-        if len(names) != 48 or set(names) != expected:
+        if len(names) not in (48, 49) or set(names) - {"README.txt"} != expected or len(set(names)) != len(names):
             raise ValueError("Archive must contain exactly 48 approved RPT files")
         for info in members:
+            if info.filename == "README.txt":
+                continue
             if info.file_size == 0 or info.file_size > 2_000_000:
                 raise ValueError("Unexpected RPT file size")
             if not info.filename.endswith(".docx"):
