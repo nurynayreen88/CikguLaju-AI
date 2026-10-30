@@ -11,7 +11,7 @@
 **Pupils:** Name symptoms and match them to picture clues.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Prepare the health song; hide its written lyrics and ask pupils to predict words they may hear.
+**Teacher:** Show health-related picture clues without displaying the song lyrics and invite pupils to predict three expressions they may hear.
 **Pupils:** Predict the topic and identify health expressions from pictures.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Listen without written lyrics, recognise target words and infer unfamiliar expressions from context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Replay relevant parts and model actions for key health expressions.
+**Teacher:** Replay relevant sections of the health song, model actions for key expressions and check which predictions were supported by the listening.
 **Pupils:** Respond with actions and check answers against the pictures.
 
 ## Closure (5 minutes)
