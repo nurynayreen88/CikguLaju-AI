@@ -19,11 +19,11 @@
 **Pupils:** Listen to Track 11 and repeat target words.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Sort verbs into three sound columns and find opened, wrapped and painted.
+**Teacher:** Model sorting one past-tense verb by its final sound, then guide pupils to classify verbs including opened, wrapped and painted.
 **Pupils:** Sort verbs by ending sound, including opened, wrapped and painted.
 
 ## Closure (5 minutes)
-**Teacher:** Pronounce one verb from each sound group.
+**Teacher:** Invite pupils to pronounce one verb from each sound group and give corrective pronunciation feedback.
 **Pupils:** Pronounce one verb from each sound group.
 
 **PBD:** Check discrimination and pronunciation of past-tense /d/, /t/ and /id/ endings using Tracks 10–11 (Listening 1.1.1; 1.2.5).  
