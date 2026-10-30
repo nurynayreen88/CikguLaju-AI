@@ -4,7 +4,7 @@
 **Main SP:** Reading 3.2.1  
 **Complementary SP:** Listening 1.2.3  
 **Duration:** 60 minutes  
-**References:** SB p.28 Activity 1; TB p.50; CD1 Tracks 39 and 38
+**References:** SB p.28 Activity 1; TB p.50; **Activity 1 CD1 Track 39; Vocabulary CD1 Track 38** (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Ask pupils what they did yesterday and elicit simple past responses.
