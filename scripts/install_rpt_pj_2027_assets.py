@@ -12,6 +12,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from rpt_pj_2027_delivery import FILE_PATTERN, STATES, YEARS
+from scripts.verify_rpt_pj_2027_v76 import verify
 
 
 def install(archive, destination):
@@ -20,6 +21,9 @@ def install(archive, destination):
         for state in STATES for year in YEARS
     }
     destination = Path(destination)
+    failures = verify(archive)
+    if failures:
+        raise ValueError("Archive verification failed: " + "; ".join(failures[:5]))
     if destination.exists() or destination.is_symlink():
         raise FileExistsError("RPT install requires a new destination directory")
     if destination.is_symlink() or (destination / "RPT_PJ_2027_DOCX").is_symlink():
