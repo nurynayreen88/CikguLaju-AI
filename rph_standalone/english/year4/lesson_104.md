@@ -7,7 +7,7 @@
 **References:** SB pp.74–75 Activities 1–2; TB pp.112–113; Tracks 27–28; Primary Year 4 SK SOW Lesson 104
 
 ## Set induction (10 minutes)
-**Teacher:** Introduce recycling with a picture and discussion.
+**Teacher:** Show a recycling picture, elicit pupils' existing knowledge and record two questions to investigate in the text.
 **Pupils:** Describe a recycling picture.
 
 ## Activity 1 (15 minutes)
