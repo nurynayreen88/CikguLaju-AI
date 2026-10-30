@@ -23,7 +23,7 @@
 **Pupils:** Explain the steps using First and Then.
 
 ## Closure (5 minutes)
-**Teacher:** Review useful action verbs.
+**Teacher:** Elicit action verbs from the construction process and check pupils' use of sequencing words.
 **Pupils:** Recall useful action verbs.
 
 **PBD:** Observe whether pupils explain the steps for making a reused-container object using First and Then, and respond to peer questions (SP 2.1.3, 2.2.2).  
