@@ -1,15 +1,32 @@
-# English Year 4 Lesson 056 — Reading 11
+# English Year 4 — Lesson 056
 
-Topic: Celebrations. Main SP: Reading 3.2.1. Complementary SP: Reading 3.2.2. References: SB p.40 Activities 1–2; TB pp.66–67; CD1 Track 59. Duration: 60 minutes.
+**Topic:** Celebrations  
+**Main SP:** 3.2.1  
+**Complementary SP:** 3.2.2  
+**Duration:** 60 minutes  
+**References:** SB p.40 Activities 1–2; TB pp.66–67; CD1 Track 59; Year 4 SOW Lesson 56
 
-Set induction (10 min): Teacher guides: Introduce celebration vocabulary with pictures. Pupils complete the indicated skill task and respond to feedback.
+## Set induction (10 minutes)
+**Teacher:** Show pictures of celebrations and introduce the topic.
+**Pupils:** Name familiar celebrations from pictures.
 
-Activity 1 (15 min): Teacher guides: Follow TB Vocabulary with Track 59. Pupils complete the indicated skill task and respond to feedback.
+## Activity 1 (15 minutes)
+**Teacher:** Follow TB Vocabulary with Track 59.
+**Pupils:** Listen and match celebration words with pictures.
 
-Activity 2 (20 min): Teacher guides: Groups read Chinese New Year or US Independence Day texts and identify the country. Pupils complete the indicated skill task and respond to feedback.
+## Activity 2 (20 minutes)
+**Teacher:** Assign Chinese New Year and US Independence Day reading texts.
+**Pupils:** Read an assigned text and identify its country.
 
-PBD and reinforcement (10 min): Teacher guides: Pupils complete Activity 2 and exchange answers with different-text partners. Pupils complete the indicated skill task and respond to feedback.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Guide Activity 2 and pair pupils with different texts.
+**Pupils:** Complete Activity 2 and exchange answers with a partner.
 
-Closure (5 min): Teacher guides: Sort vocabulary by celebration and share a personal response. Pupils complete the indicated skill task and respond to feedback.
+## Closure (5 minutes)
+**Teacher:** Review celebration vocabulary.
+**Pupils:** Sort vocabulary by celebration and share a response.
 
-PBD: Observe the specified learning task and record evidence against Reading 3.2.1 and Reading 3.2.2. Differentiation: Provide source-based models, partner support or an extension task according to pupil needs. Source: Primary Year 4 SK SOW Lesson 56. Status: DRAFT; direct book/audio and Word/PDF QA pending.
+**PBD:** Observe lesson tasks against SP 3.2.1 and 3.2.2.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
