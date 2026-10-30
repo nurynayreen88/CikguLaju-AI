@@ -22,6 +22,8 @@
 **Teacher action:** Organise group presentations and provide feedback against the selected language-skill criteria.
 **Pupil action:** Present the product and revise it using feedback.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher action:** Ask each group to name one successful collaboration practice and set a specific language-learning target.
 **Pupil action:** Reflect on teamwork and a learning gain.
