@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher action:** Teacher and pupils identify a topic reflecting their needs and interests.
-**Pupil action:** Respond to prompts and activate prior knowledge.
+**Pupil action:** Discuss a suitable project topic and prior knowledge.
 
 ## Activity 1 (15 minutes)
 **Teacher action:** Pupils agree on a project question, roles and materials.
-**Pupil action:** Follow the model and complete the first guided task.
+**Pupil action:** Agree on a project question, roles and materials.
 
 ## Activity 2 (20 minutes)
 **Teacher action:** Groups develop a project product using the teacher-selected resources.
-**Pupil action:** Carry out the stated source-based activity and practise the main skill.
+**Pupil action:** Develop a group product using selected resources.
 
 ## PBD / reinforcement (10 minutes)
 **Teacher action:** Groups present work and receive feedback on selected skill criteria.
-**Pupil action:** Show evidence of learning and improve work after feedback.
+**Pupil action:** Present the product and revise it using feedback.
 
 ## Closure (5 minutes)
 **Teacher action:** Pupils reflect on collaboration and learning.
-**Pupil action:** Share one learning point or reflection.
+**Pupil action:** Reflect on teamwork and a learning gain.
 
 **PBD:** Check pupil responses and products against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards, agree criteria before delivery.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
