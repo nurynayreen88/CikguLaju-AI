@@ -23,7 +23,7 @@
 **Pupils:** Check task steps and improve descriptions.
 
 ## Closure (5 minutes)
-**Teacher:** Share a comparative sentence.
+**Teacher:** Ask pupils to share a comparative sentence and explain which two dinosaurs it compares.
 **Pupils:** Share one comparative sentence.
 
 **PBD:** Observe comparative dinosaur descriptions and whether pupils follow partner task instructions against SP 2.1.5 and 2.2.2.  
