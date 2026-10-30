@@ -16,15 +16,15 @@
 
 ## Activity 2 (20 minutes)
 **Teacher:** Conduct a class survey about sports pupils like and dislike.
-**Pupils:** Interview classmates about sports preferences.
+**Pupils:** Survey classmates about sports preferences.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Share survey findings and use a natural follow-up question.
-**Pupils:** Summarise survey findings.
+**Pupils:** Summarise the survey results.
 
 ## Closure (5 minutes)
 **Teacher:** Share one sports opinion.
-**Pupils:** Express one preference.
+**Pupils:** Share one sports opinion.
 
 **PBD:** Assess the source-based task against 2.1.1 and 2.2.1; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
