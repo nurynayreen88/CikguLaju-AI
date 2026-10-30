@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Show a local recycling-project picture and ask what materials can be collected.
-**Pupils:** Answer the opening questions and recall the topic.
+**Pupils:** Name materials that can be recycled.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Model dictionary headwords, definitions and alphabetical order; run a dictionary race using recycle, collect and sell.
-**Pupils:** Follow the demonstration and complete the guided activity.
+**Pupils:** Find recycle, collect and sell in a monolingual dictionary.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Give a short age-appropriate text about a local recycling project including money earned or saved; ask two gist questions before reading.
-**Pupils:** Complete the named task individually or collaboratively.
+**Pupils:** Read the local recycling text and answer two gist questions.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Pupils identify the main idea, locate meanings in a monolingual dictionary and explain how the project helps people.
-**Pupils:** Demonstrate the named standard through answers or a written product; improve after feedback.
+**Pupils:** Identify the main idea and explain how the project helps people.
 
 ## Closure (5 minutes)
 **Teacher:** Share one way recycling can save money.
-**Pupils:** Give a short response or reflection.
+**Pupils:** Describe one way recycling saves money.
 
 **PBD:** Collect evidence of 3.2.4 and 3.2.1 from the specific reading, writing or speaking task.  
 **Differentiation:** Offer picture prompts, word banks and extra challenge tasks.  
