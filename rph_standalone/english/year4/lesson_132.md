@@ -7,7 +7,7 @@
 **References:** SOW Lesson 132; Get Smart Plus 4 Unit 9; Year 4 SOW Lesson 132
 
 ## Set induction (10 minutes)
-**Teacher:** Review sports vocabulary and superlatives.
+**Teacher:** Elicit sports words and model an accurate superlative sentence before the writing task.
 **Pupils:** Recall sports words and superlatives.
 
 ## Activity 1 (15 minutes)
