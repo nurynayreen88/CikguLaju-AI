@@ -23,7 +23,7 @@
 **Pupils:** Explain their responses to the story and revise ideas after feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Invite a brief favourite-part reflection.
+**Teacher:** Ask pupils to name their favourite scene and explain which character action influenced their choice.
 **Pupils:** Share a favourite part of the story and a reason.
 
 **PBD:** Observe whether pupils explain character feelings and personal responses with relevant story evidence (SP 5.2.1, 3.3.1).  
