@@ -7,7 +7,7 @@
 **References:** Graphic Novel Teaching Guidebook pp.84–88,128; Primary Year 4 SOW Lesson 159
 
 ## Set induction (10 minutes)
-**Teacher:** Watch a short Readers' Theatre demonstration.
+**Teacher:** Show or demonstrate a short Readers' Theatre performance and ask pupils to notice voice, expression and turn-taking.
 **Pupils:** Observe how Readers' Theatre is performed.
 
 ## Activity 1 (15 minutes)
@@ -15,7 +15,7 @@
 **Pupils:** Read the script and take assigned roles.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Rehearse and perform following steps 4–7.
+**Teacher:** Guide groups through rehearsal steps 4–7, coach expressive reading and invite each group to perform.
 **Pupils:** Rehearse and perform scenes in groups.
 
 ## Reinforcement / PBD (10 minutes)
