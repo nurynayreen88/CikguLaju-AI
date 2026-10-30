@@ -7,7 +7,7 @@
 **References:** SB pp.66–67; TB pp.118–119; story Track 32; Primary Year 4 SK SOW Lesson 107
 
 ## Set induction (10 minutes)
-**Teacher:** Review pictures from Part One of the story.
+**Teacher:** Display Part One story pictures and elicit the events pupils remember before sequencing.
 **Pupils:** Recall pictures from Part One.
 
 ## Activity 1 (15 minutes)
