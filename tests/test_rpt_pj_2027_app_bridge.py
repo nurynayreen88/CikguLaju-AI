@@ -22,6 +22,14 @@ class TestNativeAppBridge(unittest.TestCase):
         self.assertFalse(self.call("home"))
         self.send.assert_not_called()
 
+    def test_group_chat_never_uses_chat_id_as_entitlement(self):
+        access = Mock(return_value=True)
+        handled = route(-10012345, "rpt2027_pj_doc:Johor:4", self.root,
+                        send=self.send, send_document=self.send_document, allowed=access)
+        self.assertTrue(handled)
+        access.assert_not_called()
+        self.send_document.assert_not_called()
+
     def test_free_user_cannot_download(self):
         self.assertTrue(self.call("rpt2027_pj_doc:Johor:4", allowed=lambda cid: False))
         self.send_document.assert_not_called()
