@@ -11,7 +11,7 @@
 **Pupil action:** Name food and drink containers.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Follow TB Activity 4 with Track 80.
+**Teacher action:** Play Track 80 for TB Activity 4, set a listening question and check pupils' responses against the recording.
 **Pupil action:** Listen to Track 80 and complete Activity 4.
 
 ## Activity 2 (20 minutes)
