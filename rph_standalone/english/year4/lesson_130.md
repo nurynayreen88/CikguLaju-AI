@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review the sports song and key words.
-**Pupils:** Respond to prompts and recall vocabulary.
+**Pupils:** Recall sports vocabulary.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Review the Grammar Box and extend the Activity 3 dialogue.
-**Pupils:** Follow the example and complete the first task.
+**Pupils:** Practise an extended dialogue.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Conduct a class survey about sports pupils like and dislike.
-**Pupils:** Carry out the specified reading, writing, listening or speaking task.
+**Pupils:** Interview classmates about sports preferences.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Share survey findings and use a natural follow-up question.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Summarise survey findings.
 
 ## Closure (5 minutes)
 **Teacher:** Share one sports opinion.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Express one preference.
 
 **PBD:** Assess the source-based task against 2.1.1 and 2.2.1; choose relevant criteria for Language Awareness.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
