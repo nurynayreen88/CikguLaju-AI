@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 import zipfile
+from io import BytesIO
 from pathlib import Path
 from scripts.install_rpt_pj_2027_assets import install
 from rpt_pj_2027_delivery import FILE_PATTERN, STATES, YEARS
@@ -8,13 +9,18 @@ from rpt_pj_2027_delivery import FILE_PATTERN, STATES, YEARS
 
 class TestInstallRPTAssets(unittest.TestCase):
     def make_zip(self, archive):
+        buffer = BytesIO()
+        with zipfile.ZipFile(buffer, "w") as doc:
+            doc.writestr("[Content_Types].xml", "<Types/>")
+            doc.writestr("word/document.xml", "<document/>")
+        payload = buffer.getvalue()
         with zipfile.ZipFile(archive, "w") as z:
             z.writestr("README.txt", "RPT PJ 2027 staging assets")
             for state in STATES:
                 for year in YEARS:
                     z.writestr("RPT_PJ_2027_DOCX/" +
                                FILE_PATTERN.format(state=state, year=year),
-                               b"example")
+                               payload)
 
     def test_install_and_refuse_overwrite(self):
         with tempfile.TemporaryDirectory() as tmp:
