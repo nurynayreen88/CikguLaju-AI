@@ -23,7 +23,7 @@
 **Pupils:** Write and check a short description.
 
 ## Closure (5 minutes)
-**Teacher:** Gallery walk to guess the famous person.
+**Teacher:** Organise a gallery walk in which pupils guess the famous person and explain which written clue helped.
 **Pupils:** Read classmates' descriptions and guess names.
 
 **PBD:** Assess written descriptions of famous people for relevant details and whether peers can infer the identity (SP 4.2.1, 3.2.2).  
