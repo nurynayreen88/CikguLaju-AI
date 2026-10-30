@@ -22,6 +22,8 @@
 **Teacher action:** Provide a simple construction checklist and guide pairs to check their work before rehearsing a presentation.
 **Pupil action:** Check construction steps and rehearse presentation.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher action:** Invite groups to present their pop-up storyboards at the mini corner and explain the story sequence.
 **Pupil action:** Present the storyboard at a mini corner.
