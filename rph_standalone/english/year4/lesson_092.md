@@ -11,7 +11,7 @@
 **Pupils:** Recall examples of transport models.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read materials and project instructions.
+**Teacher:** Display the model-making materials and read the project instructions aloud, checking pupils' understanding of safe steps.
 **Pupils:** Read the materials list and project instructions.
 
 ## Activity 2 (20 minutes)
