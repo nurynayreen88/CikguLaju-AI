@@ -4,7 +4,7 @@
 **Main SP:** 3.2.3  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.8; TB pp.22–23; CD1 Track 11; Year 4 SOW Lesson 8
+**References:** SB p.8; TB pp.22–23; Track 11 (SOW; CD1 designation pending independent TB/audio verification); Year 4 SOW Lesson 8
 
 ## Set induction (10 minutes)
 **Teacher:** Mime daily routines and ask pupils to guess.
