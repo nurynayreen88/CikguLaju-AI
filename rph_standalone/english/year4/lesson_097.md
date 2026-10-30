@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce ways of helping others.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Name ways to help other people.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow SB Activity 1 and TB guidance.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Prepare for the Student Book song activity.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Listen for details in the helping-out song.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Listen to the helping-out song and identify details.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Use text clues to infer unfamiliar words.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Use text clues to infer unfamiliar words.
 
 ## Closure (5 minutes)
 **Teacher:** Share one way to help others.
-**Pupils:** Share one result or reflection.
+**Pupils:** Suggest one helpful action.
 
 **PBD:** Assess task responses against 1.2.2 and 3.2.3; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
