@@ -29,4 +29,5 @@
 **PBD:** Observe clarification questions and listening responses against SP 2.2.1 and 1.2.5.  
 **Differentiation:** Provide ingredient pictures, sentence frames and extension questions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
 **Status:** DRAFT — audio mapping and Word/PDF QA pending.
