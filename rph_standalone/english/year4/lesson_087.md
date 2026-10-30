@@ -15,11 +15,11 @@
 **Pupils:** Match prepositions and practise the model dialogue.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Pairs plan a trip and extend dialogues with natural responses.
+**Teacher:** Set a pair-planning task for a trip and model a follow-up question and a natural response.
 **Pupils:** Plan a trip and extend dialogues with a partner.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Write, deliver and answer invitations to join a trip.
+**Teacher:** Provide an invitation checklist and organise a role-play in which pupils write, deliver and respond to trip invitations.
 **Pupils:** Write and respond to trip invitations.
 
 ## Closure (5 minutes)
