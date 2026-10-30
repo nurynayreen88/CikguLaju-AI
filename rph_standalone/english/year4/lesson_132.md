@@ -11,7 +11,7 @@
 **Pupils:** Recall sports words and superlatives.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Model a written invitation to a class mini competition.
+**Teacher:** Display a model invitation to a class mini competition and highlight its event, date and place.
 **Pupils:** Study a model invitation and identify its purpose.
 
 ## Activity 2 (20 minutes)
