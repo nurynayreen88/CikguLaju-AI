@@ -19,7 +19,7 @@
 **Pupils:** Develop a creative response using steps 5–8.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Present work and explain ideas with story support.
+**Teacher:** Invite groups to present their creative work and explain which story detail supports their main idea.
 **Pupils:** Present work and support opinions with story details.
 
 ## Closure (5 minutes)
