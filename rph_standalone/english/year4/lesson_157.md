@@ -15,15 +15,15 @@
 **Pupils:** Read the information text in Student's Book pages 110–111.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Complete textbook Activities 1–2 and infer words from the topic and title.
+**Teacher:** Guide pupils through textbook Activities 1–2. Model how to locate a sentence that supports an answer, then prompt pupils to infer unfamiliar vocabulary using nearby words and pictures.
 **Pupils:** Complete Activities 1–2 and infer unfamiliar words from context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Answer comprehension questions with text evidence.
+**Teacher:** Ask two comprehension questions and require pupils to point to the supporting sentence in the text. Record who can identify a relevant detail and explain an unfamiliar word.
 **Pupils:** Find supporting details and explain comprehension answers.
 
 ## Closure (5 minutes)
-**Teacher:** Share a useful health fact.
+**Teacher:** Invite pupils to share one fact about germs from the text, then conduct a short true-or-false recap.
 **Pupils:** Answer a true-or-false quiz about germs.
 
 **PBD:** Check comprehension answers about germs against the information text and pupils' use of context to infer unfamiliar words (SP 3.2.2, 3.2.3).  
