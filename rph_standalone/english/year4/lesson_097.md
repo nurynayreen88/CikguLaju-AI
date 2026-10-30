@@ -23,7 +23,7 @@
 **Pupils:** Use text clues to infer unfamiliar words.
 
 ## Closure (5 minutes)
-**Teacher:** Share one way to help others.
+**Teacher:** Invite pupils to describe one helpful action and explain when they could do it.
 **Pupils:** Suggest one helpful action.
 
 **PBD:** Check identification of details in the helping-out song and contextual inference of unfamiliar words against SP 1.2.2 and 3.2.3.  
