@@ -22,6 +22,8 @@
 **Teacher:** Follow the TB Vocabulary task using SOW-listed Track 68, then model actions for key health expressions; check pupils' inferred meanings. Confirm the recording before classroom use.
 **Pupils:** Respond with actions and check answers against the pictures.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to use one health expression from the listening in a suitable spoken sentence.
 **Pupils:** Say and demonstrate one health expression.
