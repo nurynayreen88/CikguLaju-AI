@@ -15,11 +15,11 @@
 **Pupils:** Identify tuk-tuks, gondolas and snowmobiles.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups read one assigned vehicle text and complete Activity 2.
+**Teacher:** Assign each group a vehicle text, model finding one supporting detail and guide pupils through Activity 2.
 **Pupils:** Read an assigned vehicle text and complete Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Pupils compare experiences and transport preferences.
+**Teacher:** Prompt pupils to compare transport preferences, using one fact from the reading to explain their choices.
 **Pupils:** Compare transport experiences and preferences.
 
 ## Closure (5 minutes)
