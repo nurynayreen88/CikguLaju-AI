@@ -19,11 +19,11 @@
 **Pupils:** Distinguish possessive apostrophe-s from plural -s.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Complete Activity 3 and peer-check punctuation.
+**Teacher:** Guide pupils through Activity 3, model checking an apostrophe in one possessive sentence, then ask partners to use a short punctuation checklist before revising their work.
 **Pupils:** Complete Activity 3 and check punctuation with a partner.
 
 ## Closure (5 minutes)
-**Teacher:** Correct a possessive example.
+**Teacher:** Display one sentence with an incorrect possessive form and invite pupils to explain and correct it.
 **Pupils:** Correct one possessive sentence.
 
 **PBD:** Check pupils' use of possessive pronouns and apostrophe-s in Activity 3, including punctuation corrections, against SP 4.3.1 and 3.2.2.  
