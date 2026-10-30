@@ -13,7 +13,7 @@ Two pupils act out part of the story from Lesson 67. Classmates help recall the 
 Teacher models finding headscarf, carpet and mirror in a dictionary. Pupils locate meanings and draw the items.
 
 ## Activity 2 — Writing (25 minutes)
-Teacher guides Student's Book pp.46–47 and Teacher's Book pp.76–77. Pupils label pictures and practise writing familiar words neatly in cursive handwriting.
+Teacher guides Student's Book pp.46–47 and Teacher's Book pp.76–77. Pupils label pictures and practise writing familiar words neatly in cursive handwriting. Pupils complete Workbook p.34, Activity 1, by matching position words to the pictures.
 
 ## PBD (10 minutes)
 Pupils locate one unfamiliar word in a dictionary and write two legible cursive words.
