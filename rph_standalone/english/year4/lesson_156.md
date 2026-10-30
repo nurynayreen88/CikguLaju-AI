@@ -23,7 +23,7 @@
 **Pupils:** Give playful advice and explain rules.
 
 ## Closure (5 minutes)
-**Teacher:** Reflect on effective communication.
+**Teacher:** Ask pupils to identify one clarification phrase that helped their group follow the game rules.
 **Pupils:** Reflect on group communication.
 
 **PBD:** Observe pupils' comprehension of board-game instructions and use of suitable advice or clarification during group play (SP 2.2.2, 1.2.4).  
