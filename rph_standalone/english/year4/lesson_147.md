@@ -26,7 +26,7 @@
 **Teacher:** Share one value from the story.
 **Pupils:** Share one story lesson.
 
-**PBD:** Assess the specified task against 3.2.3 and 1.2.3; for teacher-selected standards choose criteria before class.  
+**PBD:** Check inference of story vocabulary and listening gist, supported by story evidence (SP 3.2.3, 1.2.3).  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
