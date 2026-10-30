@@ -11,19 +11,19 @@
 **Pupils:** Identify story characters.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the story independently for enjoyment.
+**Teacher:** Give pupils quiet time to read the story independently, then ask them to identify one event they found interesting without interrupting their first reading.
 **Pupils:** Read the story independently.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Groups explain what they liked about the story and predict its ending.
+**Teacher:** Prompt groups to discuss a favourite event and predict an ending, asking each group to support its prediction with one detail from the story.
 **Pupils:** Discuss favourite events and predict the ending.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Group narrators retell the story while other members act out events.
+**Teacher:** Assign a narrator and actors in each group. Observe whether the retelling follows the story sequence and whether spoken narration is understandable.
 **Pupils:** Narrate or act out the story.
 
 ## Closure (5 minutes)
-**Teacher:** Share a personal response.
+**Teacher:** Invite pupils to share one personal response and a reason based on the story.
 **Pupils:** Share a personal response.
 
 **PBD:** Observe independent story reading and the clarity of group narration and acting against SP 3.3.1 and 2.3.1.  
