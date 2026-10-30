@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Ask pupils to reread and describe parade clothing.
-**Pupils:** Reread and describe what they would wear at a parade.
+**Pupils:** Reread and describe what they would wear at a parade. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe a festival costume and connect their idea to a detail from the story.
