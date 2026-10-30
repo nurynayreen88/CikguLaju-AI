@@ -22,6 +22,8 @@
 **Teacher:** Invite each group to perform its chant and use a checklist to assess suitable verbs, spelling and clear delivery.
 **Pupils:** Perform the chant and check spelling.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Organise a gallery walk and prompt pupils to give one specific strength and one constructive suggestion about a chant.
 **Pupils:** Give stars and wishes during the gallery walk.
