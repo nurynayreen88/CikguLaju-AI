@@ -7,6 +7,8 @@ on:
       - 'scripts/install_rpt_pj_2027_assets.py'
       - 'tests/test_rpt_pj_2027_*.py'
       - 'tests/test_install_rpt_pj_2027_assets.py'
+      - 'scripts/audit_rpt_pj_2027_readiness.py'
+      - 'data/rpt_pj_2027/calendar_2027_16_negeri_sheet_snapshot.csv'
       - '.github/workflows/rpt-pj-2027-tests.yml'
   workflow_dispatch:
 
@@ -20,7 +22,7 @@ jobs:
           python-version: '3.11'
       - name: Compile RPT PJ 2027 modules
         run: |
-          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py scripts/install_rpt_pj_2027_assets.py
+          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py scripts/install_rpt_pj_2027_assets.py scripts/audit_rpt_pj_2027_readiness.py
       - name: Run isolated RPT PJ tests
         run: |
           python -m unittest discover -s tests -p 'test_rpt_pj_2027_*.py' -v
