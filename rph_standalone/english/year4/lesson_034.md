@@ -11,7 +11,7 @@
 **Pupils:** Recall Ancient Egypt vocabulary.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Pupils choose unfamiliar words from the previous lesson and check meanings in a dictionary.
+**Teacher:** Demonstrate how to look up an unfamiliar word from the previous lesson, then support pupils as they verify meanings in dictionaries.
 **Pupils:** Check unfamiliar words in a monolingual dictionary.
 
 ## Activity 2 (20 minutes)
@@ -19,7 +19,7 @@
 **Pupils:** Discuss ancient cultures and make past-tense statements.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Pairs use simple past verbs to describe past experiences or cultures, then present their ideas.
+**Teacher:** Model a simple-past sentence and organise pairs to describe past experiences or cultures before presenting their ideas.
 **Pupils:** Describe a past experience or culture with a partner.
 
 ## Closure (5 minutes)
