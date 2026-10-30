@@ -11,7 +11,7 @@
 **Pupils:** Describe camping pictures and objects.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the camping story with Activity 1.
+**Teacher:** Set a gist question for Activity 1 and guide pupils to read the camping story for its main event.
 **Pupils:** Read the camping story in Activity 1.
 
 ## Activity 2 (20 minutes)
