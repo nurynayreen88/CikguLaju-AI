@@ -11,7 +11,7 @@
 **Pupils:** Match adjectives with superlatives.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Review the reading text and its characters.
+**Teacher:** Ask pupils to recall two characters from the reading and describe their sports using text details.
 **Pupils:** Recall sportspeople from the reading.
 
 ## Activity 2 (20 minutes)
