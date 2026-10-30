@@ -11,11 +11,11 @@
 **Pupils:** Predict events from the story pictures.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read the story independently.
+**Teacher:** Set a gist question and ask pupils to read the story independently before checking their first impressions.
 **Pupils:** Read the story independently.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Sequence events and discuss story details.
+**Teacher:** Model identifying the first story event, then guide pupils to sequence the remaining events with supporting details.
 **Pupils:** Sequence and discuss the story events.
 
 ## Reinforcement / PBD (10 minutes)
