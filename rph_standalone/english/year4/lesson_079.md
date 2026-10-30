@@ -15,11 +15,11 @@
 **Pupil action:** Discuss story pictures using guidebook prompts.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Pupils complete Task sheet 3 p.53 and prepare opinions.
+**Teacher action:** Explain Task sheet 3 p.53, model one reasoned response and guide pupils to prepare their own opinions.
 **Pupil action:** Complete Task sheet 3 and prepare an opinion.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Pupils share responses with reasons and receive differentiated feedback.
+**Teacher action:** Invite pupils to share opinions with reasons and give feedback matched to their language needs.
 **Pupil action:** Share opinions with reasons and use feedback.
 
 ## Closure (5 minutes)
