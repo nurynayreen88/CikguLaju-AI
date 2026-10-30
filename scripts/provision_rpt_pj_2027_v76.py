@@ -22,14 +22,16 @@ EXPECTED_ARCHIVE_SHA256 = "69a24f9727ff979fa576627ab8f369e6f691871c8bf411c9ca5d3
 def provision(archive, data_root):
     archive = Path(archive)
     data_root = Path(data_root)
+    if not archive.is_file():
+        raise FileNotFoundError("Approved v76 archive missing")
+    if data_root.exists() or data_root.is_symlink():
+        raise FileExistsError("Destination already exists")
     digest = hashlib.sha256(archive.read_bytes()).hexdigest()
     if digest != EXPECTED_ARCHIVE_SHA256:
         raise ValueError("Archive SHA-256 differs from reviewed v76 release")
     problems = verify(archive)
     if problems:
         raise ValueError("v76 archive validation failed: " + "; ".join(problems[:5]))
-    if data_root.exists():
-        raise FileExistsError("Use a NEW data directory; existing directory not modified")
     # Existing installer creates the target folder only after all archive checks.
     count = install(archive, data_root)
     try:
