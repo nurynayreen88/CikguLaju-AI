@@ -4,27 +4,27 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.2.3  
 **Duration:** 60 minutes  
-**References:** SOW Lesson 157; Unit 10 Science and Technology; Primary Year 4 SOW Lesson 157
+**References:** SB pp.110–111, TB pp.162–163; alternative SB p.133 and TB p.197; Year 4 SOW Lesson 157
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce What are germs? using the title and pictures on Student's Book page 110.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Predict the meaning of the title What are germs?.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Read a short informational text for details.
-**Pupils:** Follow the model and complete the guided task.
+**Teacher:** Follow TB warm-up and read What are germs? in SB pp.110–111.
+**Pupils:** Read the information text in Student's Book pages 110–111.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Locate specific information and identify meaning from context.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Teacher:** Complete textbook Activities 1–2 and infer words from the topic and title.
+**Pupils:** Complete Activities 1–2 and infer unfamiliar words from context.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Answer comprehension questions with text evidence.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Find supporting details and explain comprehension answers.
 
 ## Closure (5 minutes)
 **Teacher:** Share a useful health fact.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Answer a true-or-false quiz about germs.
 
 **PBD:** Assess the specified task against 3.2.2 and 3.2.3; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
