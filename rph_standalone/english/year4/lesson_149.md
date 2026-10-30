@@ -22,7 +22,7 @@
 **Teacher:** Invite pupils to read their written opinions about Mowgli's choice and prompt them to support each opinion with a story detail.
 **Pupils:** Write an opinion about Mowgli's choice.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up task based on The Jungle Book graphic novel and Teaching Guidebook; a Workbook page is not prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Summarise pupils' differing opinions and ask the class to explain a shared conclusion with story evidence.
