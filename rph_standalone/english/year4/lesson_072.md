@@ -11,7 +11,7 @@
 **Pupil action:** Sort familiar foods into categories.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Groups brainstorm words for food categories without initial spelling pressure.
+**Teacher action:** Assign food categories and guide groups to brainstorm relevant words before checking spelling.
 **Pupil action:** Brainstorm category words before checking spelling.
 
 ## Activity 2 (20 minutes)
@@ -23,7 +23,7 @@
 **Pupil action:** Complete Project Activity 2 and correct spelling using references.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils share a challenging word and its spelling.
+**Teacher action:** Invite pupils to share one challenging food word and explain how they checked its spelling.
 **Pupil action:** Share a challenging food word and spell it.
 
 **PBD:** Check reading answers from Project Activity 1 and spelling of food categories in Activity 2 against SP 3.2.2 and 4.3.2.  
