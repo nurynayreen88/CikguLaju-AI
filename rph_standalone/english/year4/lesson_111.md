@@ -7,7 +7,7 @@
 **References:** Graphic Novel Teaching Guidebook pp.35–36; Chapters 3–4; Primary Year 4 SK SOW Lesson 111
 
 ## Set induction (10 minutes)
-**Teacher:** Recap Chapters 1–2 and predictions.
+**Teacher:** Ask pupils to recap one key event from Chapters 1–2 and explain whether an earlier prediction was accurate.
 **Pupils:** Recall Chapters 1–2 and earlier predictions.
 
 ## Activity 1 (15 minutes)
