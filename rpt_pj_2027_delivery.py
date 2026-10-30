@@ -52,10 +52,12 @@ def resolve_rpt(root, *, negeri, tahun, authorized):
     state = str(negeri).strip().replace(" ", "_")
     if state not in STATES:
         raise ValueError("Negeri tidak sah")
-    try:
+    if type(tahun) is int:
+        year = tahun
+    elif isinstance(tahun, str) and tahun in ("4", "5", "6"):
         year = int(tahun)
-    except (TypeError, ValueError) as exc:
-        raise ValueError("Tahun tidak sah") from exc
+    else:
+        raise ValueError("Tahun tidak sah")
     if year not in YEARS:
         raise ValueError("Tahun tidak tersedia")
     folder = Path(root) / "RPT_PJ_2027_DOCX"
