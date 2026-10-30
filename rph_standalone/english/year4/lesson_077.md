@@ -23,7 +23,7 @@
 **Pupil action:** Complete Activity 2 and collect facts for a poster.
 
 ## Closure (5 minutes)
-**Teacher action:** Use TB Before leaving review.
+**Teacher action:** Use the TB Before leaving review to check one food-health fact and one newly learned word.
 **Pupil action:** Recall a fact about healthy food.
 
 **PBD:** Check healthy-food text details and inference of unfamiliar words in CLIL Activities 1–2 against SP 3.2.2 and 3.2.3.  
