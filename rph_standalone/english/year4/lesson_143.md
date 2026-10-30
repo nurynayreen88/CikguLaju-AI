@@ -22,6 +22,8 @@
 **Teacher:** Invite pupils to discuss Mowgli's feelings, prompting each pupil to support an explanation with a detail from the story.
 **Pupils:** Describe Mowgli's feelings and support opinions with story details.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Demonstrate legible cursive joins, then guide pupils to write and check the lesson poem for readability.
 **Pupils:** Copy the lesson poem in cursive and check letter formation.
