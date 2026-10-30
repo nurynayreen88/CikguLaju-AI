@@ -22,6 +22,8 @@
 **Teacher action:** Guide TB Activity 3, then prompt pupils to compare food mentioned in the story with familiar food at home.
 **Pupil action:** Compare food in the story with food at home.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher action:** Distribute exit cards, ask pupils to record three new food words and check that they can explain one meaning.
 **Pupil action:** Write three newly learned words on an exit card.
