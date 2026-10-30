@@ -26,7 +26,7 @@
 **Pupils:** Give a short description of a partner and follow two demonstrated English instructions.
 
 ## Closure (5 minutes)
-**Teacher:** Play CD1 Track 3 and invite pupils to sing along or reflect on learning.
+**Teacher:** Replay CD1 Track 3 and check pupils' recall of one country name through a short oral response.
 **Pupils:** Sing along to CD1 Track 3 and name one country.
 
 ## Differentiation and assessment
