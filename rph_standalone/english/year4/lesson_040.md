@@ -23,7 +23,7 @@
 **Pupils:** Check predictions with evidence from the story.
 
 ## Closure (5 minutes)
-**Teacher:** Share a reaction to the story.
+**Teacher:** Invite pupils to share a reaction to The Curse and justify it with one story detail.
 **Pupils:** Share a reaction to the story.
 
 **PBD:** Check pupils' prediction of The Curse, supporting reading details and spoken response (Reading 3.3.1; Speaking 2.1.4).  
