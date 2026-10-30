@@ -11,7 +11,7 @@
 **Pupils:** Suggest animal comparison words.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Model short and long comparative forms using Grammar Box.
+**Teacher:** Contrast a short and a long comparative form using the Grammar Box and check pupils' oral examples.
 **Pupils:** Practise short and long comparative forms.
 
 ## Activity 2 (20 minutes)
