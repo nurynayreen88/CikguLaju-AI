@@ -22,6 +22,8 @@
 **Teacher:** Invite groups to give playful advice in the optional task and ask them to restate a rule when misunderstandings arise.
 **Pupils:** Give playful advice and explain rules.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one clarification phrase that helped their group follow the game rules.
 **Pupils:** Reflect on group communication.
