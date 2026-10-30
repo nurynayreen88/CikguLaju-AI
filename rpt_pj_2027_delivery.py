@@ -7,7 +7,6 @@ from untrusted user-supplied paths.
 from __future__ import annotations
 
 from pathlib import Path
-import re
 
 STATES = (
     "Johor", "Kedah", "Kelantan", "Melaka", "Negeri_Sembilan",
@@ -30,11 +29,13 @@ class RPTDocumentUnavailable(FileNotFoundError):
 def list_available(root):
     """List only known, explicitly provisioned RPT Word files."""
     root = Path(root) / "RPT_PJ_2027_DOCX"
+    if root.is_symlink():
+        return []
     result = []
     for state in STATES:
         for year in YEARS:
             name = FILE_PATTERN.format(state=state, year=year)
-            if (root / name).is_file():
+            if (root / name).is_file() and not (root / name).is_symlink():
                 result.append({"negeri": state.replace("_", " "),
                                "tahun": year, "filename": name})
     return result
@@ -57,7 +58,10 @@ def resolve_rpt(root, *, negeri, tahun, authorized):
         raise ValueError("Tahun tidak sah") from exc
     if year not in YEARS:
         raise ValueError("Tahun tidak tersedia")
-    root = (Path(root) / "RPT_PJ_2027_DOCX").resolve()
+    folder = Path(root) / "RPT_PJ_2027_DOCX"
+    if folder.is_symlink():
+        raise RPTDocumentUnavailable("Untrusted RPT asset directory")
+    root = folder.resolve()
     name = FILE_PATTERN.format(state=state, year=year)
     path = root / name
     if not path.is_file() or path.is_symlink():
