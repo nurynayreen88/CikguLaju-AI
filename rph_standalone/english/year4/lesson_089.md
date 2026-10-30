@@ -23,7 +23,7 @@
 **Pupils:** Check spelling, punctuation and descriptive details.
 
 ## Closure (5 minutes)
-**Teacher:** Share and display a revised description.
+**Teacher:** Invite pupils to display their revised building descriptions and explain one improvement made after peer review.
 **Pupils:** Display and read a revised description.
 
 **PBD:** Assess a famous-building paragraph for accurate details, spelling and punctuation against SP 4.3.3 and 4.2.4.  
