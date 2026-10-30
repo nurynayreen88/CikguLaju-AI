@@ -4,7 +4,7 @@
 **Main SP:** 3.2.4  
 **Complementary SP:** 3.2.1  
 **Duration:** 60 minutes  
-**References:** SOW Lesson 109; teacher-prepared short local recycling project text; monolingual dictionaries
+**References:** SOW Lesson 109; teacher-prepared local recycling reading text (see accompanying draft resource); monolingual dictionaries
 
 ## Set induction (10 minutes)
 **Teacher:** Display a local recycling-project picture and invite pupils to name recyclable materials with reasons.
