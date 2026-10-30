@@ -4,7 +4,7 @@
 **Main SP:** 1.1.1  
 **Complementary SP:** 2.1.4  
 **Duration:** 60 minutes  
-**References:** SB p.59; TB p.92; CD2 Tracks 2 and 4; Year 4 SOW Lesson 81
+**References:** SB p.59; TB p.92; **Warm up/Vocabulary CD2 Track 2; Activity 1 CD2 Track 4** (KPM SOW); Year 4 SOW Lesson 81
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce transport-safety words with Track 2 and elicit familiar rules.
