@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Review vocabulary related to health.
-**Pupils:** Respond to prompts and recall relevant vocabulary.
+**Pupils:** Recall health words.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Check two to four new words in a monolingual dictionary.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Look up new words.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow TB Warm up and Vocabulary using CD2 Track 75.
-**Pupils:** Carry out the specific reading, writing, listening, speaking or project activity.
+**Pupils:** Listen and read for context.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete Activity 1 using CD2 Track 76 and Activity 2 on should or shouldn't.
-**Pupils:** Provide an observable response and revise after feedback.
+**Pupils:** Answer reading questions and discuss advice.
 
 ## Closure (5 minutes)
 **Teacher:** Share a new word meaning.
-**Pupils:** Share a short answer or reflection.
+**Pupils:** Explain one new word.
 
 **PBD:** Assess the specified task against 3.2.2 and 3.2.4; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
