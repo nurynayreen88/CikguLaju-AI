@@ -22,6 +22,8 @@
 **Teacher:** Invite pairs to state an animal preference with one reason, observe their use of comparative language and provide brief oral feedback.
 **Pupils:** Exchange opinions using comparative language.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to express an animal preference and justify it with a comparative clue.
 **Pupils:** Give one reason for an animal preference.
