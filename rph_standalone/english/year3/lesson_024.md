@@ -14,7 +14,7 @@ Teacher introduces the word teacher and shows a dictionary. Pupils describe what
 Teacher reviews alphabetical order and models finding cat in a dictionary. Pupils practise finding simple words.
 
 ## Activity 2 — Occupations reading (25 minutes)
-Teacher displays pictures and word cards for firefighter, lifeguard and dentist, including fire, save, fix and teeth. Pupils use a dictionary to investigate unfamiliar words, then read the Student's Book p.18 texts and answer detail questions.
+Teacher displays pictures and word cards for firefighter, lifeguard and dentist, including fire, save, fix and teeth. Pupils use a dictionary to investigate unfamiliar words, then read the Student's Book p.18 texts and answer detail questions. Pupils complete Workbook p.12, Activity 1, by using occupation clues to fill in the crossword.
 
 ## PBD (10 minutes)
 Teacher observes dictionary use and checks answers about occupations. Pupils demonstrate locating a word and identifying two reading details.
