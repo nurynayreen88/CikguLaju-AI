@@ -12,11 +12,11 @@
 
 ## Activity 1 (15 minutes)
 **Teacher:** Follow Activity 4 using CD2 Track 73.
-**Pupils:** Listen to the first task.
+**Pupils:** Listen to the first recording.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Match health problems to the people pictured.
-**Pupils:** Match speakers to their problems.
+**Pupils:** Match people with their health problems.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Follow Activity 5 using CD2 Track 74 and explain advice using should.
