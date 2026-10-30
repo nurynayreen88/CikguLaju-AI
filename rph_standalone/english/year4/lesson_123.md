@@ -26,7 +26,7 @@
 **Teacher:** Review a word and its sound.
 **Pupils:** Say one example word and its sound.
 
-**PBD:** Assess the source-based task against 1.1.1 and 3.2.4; choose relevant criteria for Language Awareness.  
+**PBD:** Check discrimination of target phonics sounds and accurate dictionary lookups against SP 1.1.1 and 3.2.4.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
