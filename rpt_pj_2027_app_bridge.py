@@ -12,7 +12,11 @@ def route(cid, data, root, *, send, send_document, allowed):
         return False
     if not (data.startswith("rpt2027_pj_") or data.startswith("rpt2027_year_")):
         return False
-    # Legacy callback uses chat ID; require a positive private-chat ID.\n    if type(cid) is not int or cid <= 0:\n        send(cid, "Sila buka CikguLaju melalui chat peribadi untuk muat turun RPT.")\n        return True\n    try:
+    # Legacy callback uses chat ID; require a positive private-chat ID.
+    if type(cid) is not int or cid <= 0:
+        send(cid, "Sila buka CikguLaju melalui chat peribadi untuk muat turun RPT.")
+        return True
+    try:
         entitled = allowed(cid) is True
     except Exception:
         entitled = False
