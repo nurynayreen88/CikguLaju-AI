@@ -7,7 +7,7 @@
 **Resources:** CCL Short Story Guide pp.52–53; Task sheet 3
 
 ## Set induction (10 minutes)
-**Teacher action:** Discuss the message or moral of the story.
+**Teacher action:** Ask pupils to suggest a message from the story and explain which event supports their interpretation.
 **Pupil action:** Explain the moral of The King of Kites.
 
 ## Activity 1 (15 minutes)
