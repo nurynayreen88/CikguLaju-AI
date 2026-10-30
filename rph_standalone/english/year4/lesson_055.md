@@ -23,7 +23,7 @@
 **Pupils:** Swap roles, report plans and check task completion.
 
 ## Closure (5 minutes)
-**Teacher:** Review going to and clarification language.
+**Teacher:** Invite a pair to demonstrate a going to question and a suitable clarification response.
 **Pupils:** Use going to and one polite clarification question.
 
 **PBD:** Observe partner interviews about future plans and clarification of task instructions (SP 2.2.2 and 2.1.1).  
