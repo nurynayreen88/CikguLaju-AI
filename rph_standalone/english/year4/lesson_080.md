@@ -11,19 +11,19 @@
 **Pupil action:** Discuss a suitable project topic and prior knowledge.
 
 ## Activity 1 (15 minutes)
-**Teacher action:** Pupils agree on a project question, roles and materials.
+**Teacher action:** Guide groups to agree on a manageable project question, assign roles and list the materials they need.
 **Pupil action:** Agree on a project question, roles and materials.
 
 ## Activity 2 (20 minutes)
-**Teacher action:** Groups develop a project product using the teacher-selected resources.
+**Teacher action:** Provide selected resources, set checkpoints and coach groups as they develop their project products.
 **Pupil action:** Develop a group product using selected resources.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Groups present work and receive feedback on selected skill criteria.
+**Teacher action:** Organise group presentations and provide feedback against the selected language-skill criteria.
 **Pupil action:** Present the product and revise it using feedback.
 
 ## Closure (5 minutes)
-**Teacher action:** Pupils reflect on collaboration and learning.
+**Teacher action:** Prompt pupils to identify one collaboration strength and one learning target.
 **Pupil action:** Reflect on teamwork and a learning gain.
 
 **PBD:** Check pupil responses and products against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards, agree criteria before delivery.  
