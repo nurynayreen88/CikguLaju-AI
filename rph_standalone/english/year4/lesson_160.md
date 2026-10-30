@@ -23,7 +23,7 @@
 **Pupils:** Present the outcome and improve it using peer feedback.
 
 ## Closure (5 minutes)
-**Teacher:** Reflect on the project process.
+**Teacher:** Prompt pupils to reflect on their role, one successful collaboration step and one improvement for future projects.
 **Pupils:** Reflect on group roles and one learning gain.
 
 **PBD:** Assess the specified task against Teacher-selected DSKP SP and Teacher-selected DSKP SP; for teacher-selected standards choose criteria before class.  
