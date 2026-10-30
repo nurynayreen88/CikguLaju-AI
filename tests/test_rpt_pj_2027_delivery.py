@@ -24,6 +24,9 @@ class TestRPTDelivery(unittest.TestCase):
                 resolve_rpt(root, negeri="../Johor", tahun=5, authorized=True)
             with self.assertRaises(ValueError):
                 resolve_rpt(root, negeri="Johor", tahun=7, authorized=True)
+            for bad_year in (True, False, 4.0, "04", "4.0", None):
+                with self.subTest(bad_year=bad_year), self.assertRaises(ValueError):
+                    resolve_rpt(root, negeri="Johor", tahun=bad_year, authorized=True)
             with self.assertRaises(RPTDocumentUnavailable):
                 resolve_rpt(root, negeri="Kedah", tahun=5, authorized=True)
 
