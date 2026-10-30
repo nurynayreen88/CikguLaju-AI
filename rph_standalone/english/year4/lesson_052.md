@@ -23,7 +23,7 @@
 **Pupils:** Draw a costume and write three to five cursive sentences.
 
 ## Closure (5 minutes)
-**Teacher:** Review handwriting and sentence accuracy.
+**Teacher:** Display a short writing checklist and ask pupils to correct one going to sentence and one cursive letter join.
 **Pupils:** Correct one sentence and check cursive formation.
 
 **PBD:** Assess going to sentences describing a costume, including spelling and cursive legibility (SP 4.2.4 and 4.1.2).  
