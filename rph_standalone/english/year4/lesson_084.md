@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Show famous buildings and review vocabulary.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Name famous buildings from pictures.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Divide pupils between CLIL texts A and B.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read an assigned CLIL text A or B.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Complete Activity 2 and exchange information between texts.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Exchange building facts with a partner using Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Match questions to building descriptions and plan a paragraph.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Match questions to descriptions and plan a paragraph.
 
 ## Closure (5 minutes)
 **Teacher:** Share one fact about a building.
-**Pupils:** Share one result or reflection.
+**Pupils:** Share one fact about a building.
 
 **PBD:** Assess task responses against 4.3.3 and 3.2.2; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
