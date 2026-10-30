@@ -4,7 +4,7 @@
 **Main SP:** Speaking 2.3.1  
 **Complementary SP:** Speaking 2.1.2  
 **Duration:** 60 minutes  
-**Resources:** Non-textbook; historical pictures and jumbled notes
+**Resources:** Non-textbook; historical pictures and jumbled notes (see resources/lesson_044_history_story_cards_DRAFT.md)
 
 ## Set induction (10 minutes)
 **Teacher:** Review historical figures and past-tense verbs.
