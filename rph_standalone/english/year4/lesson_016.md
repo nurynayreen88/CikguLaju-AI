@@ -24,7 +24,7 @@
 **Pupils:** Rate their learning in the SOW Unit 1 self-assessment.
 
 ## Closure (5 minutes)
-**Teacher:** Collect checklists, review needs and set a next-unit learning goal.
+**Teacher:** Collect self-assessment checklists, identify a common learning need and help pupils set one specific goal for the next unit.
 **Pupils:** State one strength and one learning goal.
 
 ## PBD and differentiation
