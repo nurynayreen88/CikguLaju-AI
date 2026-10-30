@@ -22,6 +22,8 @@
 **Teacher:** Ask pupils to underline one sentence stating the main idea, check the meanings of two unfamiliar words in a monolingual dictionary, and explain one benefit of the project. Record who can locate the main idea and use the dictionary independently.
 **Pupils:** Identify the main idea and explain how the project helps people.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher:** Invite two pupils to share a way recycling can save money and recap how the text helped them find the answer.
 **Pupils:** Describe one way recycling saves money.
