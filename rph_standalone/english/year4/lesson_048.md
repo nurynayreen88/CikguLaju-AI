@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Distribute the Unit 3 self-assessment checklist and explain how pupils should identify their learning needs.
-**Pupils:** Rate strengths and gaps in Unit 3 skills.
+**Pupils:** Rate strengths and gaps in Unit 3 skills. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Collect Unit 3 checklists, identify a frequently missed skill and set a specific revision target.
