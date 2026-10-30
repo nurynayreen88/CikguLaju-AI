@@ -23,7 +23,7 @@
 **Pupils:** Use a checklist during a gallery walk and revise work.
 
 ## Closure (5 minutes)
-**Teacher:** Pupils share one effective adjective from their poem.
+**Teacher:** Invite pupils to read one effective adjective from their shape poem and explain the image it creates.
 **Pupils:** Share an effective adjective from the poem.
 
 ## Assessment and differentiation
