@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 1.2.1  
 **Duration:** 60 minutes  
-**References:** SB pp.60–61 Activities 1 and 3; TB pp.94–95; CD2 Tracks 5–6
+**References:** SB pp.60–61 Activities 1 and 3; TB pp.94–95; Vocabulary CD2 Track 5; Activity 1 CD2 Track 6 (KPM SOW)
 
 ## Set induction (10 minutes)
 **Teacher:** Review vocabulary with Track 5.
