@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 2.1.5  
 **Duration:** 60 minutes  
-**References:** SB p.73 Activity 4; TB p.111; Primary Year 4 SK SOW Lesson 102
+**References:** SB p.73 Activity 4; TB p.111; **Track 25 (CD unspecified in KPM SOW)**; Primary Year 4 SK SOW Lesson 102
 
 ## Set induction (10 minutes)
 **Teacher:** Review helping-out vocabulary.
