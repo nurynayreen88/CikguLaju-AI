@@ -12,7 +12,7 @@
 
 ## Activity 1 (15 minutes)
 **Teacher:** Check two to four new words in a monolingual dictionary.
-**Pupils:** Look up new words.
+**Pupils:** Look up unfamiliar words.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Follow TB Warm up and Vocabulary using CD2 Track 75.
@@ -20,11 +20,11 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Complete Activity 1 using CD2 Track 76 and Activity 2 on should or shouldn't.
-**Pupils:** Answer reading questions and discuss advice.
+**Pupils:** Answer reading questions with evidence.
 
 ## Closure (5 minutes)
 **Teacher:** Share a new word meaning.
-**Pupils:** Explain one new word.
+**Pupils:** Explain a new word.
 
 **PBD:** Assess the specified task against 3.2.2 and 3.2.4; for teacher-selected standards choose criteria before class.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
