@@ -14,7 +14,7 @@ Teacher plays Guess the occupation from Teacher's Book p.38. Pupils identify job
 Teacher models occupation and action matching, such as pilot and fly a helicopter. Pupils match pictures and phrases.
 
 ## Activity 2 — Speaking (25 minutes)
-Teacher models 'What do you want to be when you grow up?' and guides Student's Book p.20 Activity 1. Pupils ask and answer in pairs, then share responses.
+Teacher models 'What do you want to be when you grow up?' and guides Student's Book p.20 Activity 1. Pupils ask and answer in pairs, then share responses. Pupils complete Workbook p.13, Activity 2, by writing about the job they want to do.
 
 ## PBD (10 minutes)
 Teacher listens to each pupil ask one occupation question and answer a partner's question using a complete phrase.
