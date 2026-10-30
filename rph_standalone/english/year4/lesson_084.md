@@ -11,11 +11,11 @@
 **Pupils:** Name famous buildings from pictures.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Divide pupils between CLIL texts A and B.
+**Teacher:** Assign pupils to CLIL texts A and B, explain the information-gap task and model finding one building fact.
 **Pupils:** Read an assigned CLIL text A or B.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Complete Activity 2 and exchange information between texts.
+**Teacher:** Guide pupils through Activity 2, then pair readers of texts A and B to exchange and check building facts.
 **Pupils:** Exchange building facts with a partner using Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
