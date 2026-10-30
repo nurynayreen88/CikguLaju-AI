@@ -8,23 +8,23 @@
 
 ## Set induction (10 minutes)
 **Teacher:** Show story pictures and elicit predictions.
-**Pupils:** Respond to the prompts and recall relevant vocabulary.
+**Pupils:** Predict events from the story pictures.
 
 ## Activity 1 (15 minutes)
 **Teacher:** Read the story independently.
-**Pupils:** Follow the model and complete the guided task.
+**Pupils:** Read the story independently.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Sequence events and discuss story details.
-**Pupils:** Complete the named skill activity and practise the target language.
+**Pupils:** Sequence and discuss the story events.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Retell an event using pictures as prompts.
-**Pupils:** Show learning evidence and improve responses after feedback.
+**Pupils:** Retell an event using picture prompts.
 
 ## Closure (5 minutes)
 **Teacher:** Share a favourite moment.
-**Pupils:** Share one result or reflection.
+**Pupils:** Describe a favourite story moment.
 
 **PBD:** Assess task responses against 3.3.1 and 2.3.1; teacher selects specific criteria for Language Awareness.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
