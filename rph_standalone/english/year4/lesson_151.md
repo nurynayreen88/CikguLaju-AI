@@ -7,7 +7,7 @@
 **References:** SOW Lesson 151; ICT / Creativity and Innovation; Primary Year 4 SOW Lesson 151
 
 ## Set induction (10 minutes)
-**Teacher:** Introduce English learning resources including games and stories.
+**Teacher:** Display examples of English games and stories and ask pupils to explain how each resource supports practice.
 **Pupils:** Name useful English learning resources.
 
 ## Activity 1 (15 minutes)
