@@ -11,7 +11,7 @@
 **Pupils:** Recall simple past questions in the response game.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Pupils reread the previous dialogue and locate past-tense questions.
+**Teacher:** Ask pupils to reread the previous dialogue and underline examples of past-tense questions.
 **Pupils:** Reread the dialogue and identify past-tense questions.
 
 ## Activity 2 (20 minutes)
