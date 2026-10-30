@@ -3,7 +3,7 @@
 **Topic:** My Week  
 **Main SP:** Writing 4.2.4  
 **Complementary SP:** Reading 3.2.2  
-**References:** SB pp.16–17; TB pp.34–35; CD1 Track 22  
+**References:** SB pp.16–17; TB pp.34–35; Track 22 (SOW; CD1 designation pending independent TB/audio verification)  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
