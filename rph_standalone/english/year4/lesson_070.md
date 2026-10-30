@@ -22,6 +22,8 @@
 **Teacher action:** Play Track 79 for TB Activity 3, pause for key details and ask pupils to justify one answer from what they heard.
 **Pupil action:** Listen to Track 79 and check details in Activity 3.
 
+Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share one healthy habit and give a short reason for their choice.
 **Pupil action:** Share one healthy habit.
