@@ -4,7 +4,7 @@
 **Complementary SP:** Listening 1.1.1  
 **Topic:** Where are you from?  
 **References:** SB pp.12–13 story; TB Phonics 1 p.98 Activities 1–2  
-**Audio:** CD1 Track 16  
+**Audio:** Track 16 (KPM SOW; CD1 designation requires independent TB/audio verification)  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
