@@ -26,7 +26,7 @@
 **Teacher:** Ask for one diary detail and one personal plan.
 **Pupils:** Share a diary detail and a personal plan.
 
-**PBD:** Observe lesson tasks against SP 3.2.2 and 4.1.2.  
+**PBD:** Check text-supported answers from Sabrina's diary and legibility of cursive writing (SP 3.2.2, 4.1.2).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
