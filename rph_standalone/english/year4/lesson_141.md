@@ -23,7 +23,7 @@
 **Pupils:** Locate story details to justify answers.
 
 ## Closure (5 minutes)
-**Teacher:** Discuss opinions of the story in pairs.
+**Teacher:** Organise pairs to share opinions about Part Two and support each opinion with a story detail.
 **Pupils:** Discuss an opinion of the story.
 
 **PBD:** Check picture sequencing, matching of headings and story details justified from Part Two (SP 3.2.2, 3.3.1).  
