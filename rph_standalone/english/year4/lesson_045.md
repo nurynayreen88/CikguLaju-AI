@@ -23,7 +23,7 @@
 **Pupils:** Check answers with Track 47 and Activity 2.
 
 ## Closure (5 minutes)
-**Teacher:** Play a brief vocabulary review game.
+**Teacher:** Lead a vocabulary review game and check pupils' use of two words from the Egypt text.
 **Pupils:** Review vocabulary in a short game.
 
 **PBD:** Check pupils' true/false judgements about Egypt with textual evidence and responses to Track 47 (Reading 3.2.2; Listening 1.2.4).  
