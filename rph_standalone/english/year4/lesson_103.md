@@ -15,7 +15,7 @@
 **Pupils:** Ask and answer Whose is this? and It's mine.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 5 with Track 26; pairs practise ownership questions.
+**Teacher:** Play Track 26 for Activity 5, model a Whose question and monitor pupils' pair exchanges for accurate possessive responses.
 **Pupils:** Listen to Track 26 and practise ownership questions.
 
 ## PBD / reinforcement (10 minutes)
