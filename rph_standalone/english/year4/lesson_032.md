@@ -23,7 +23,7 @@
 **Pupils:** Self-assess school subjects, schedules, housework and duties.
 
 ## Closure (5 minutes)
-**Teacher:** Collect checklists and identify one skill to reteach.
+**Teacher:** Review self-assessment checklists, identify a common gap in Unit 2 skills and select one focused reteaching activity.
 **Pupils:** Identify one skill to improve.
 
 ## Assessment and differentiation
