@@ -21,11 +21,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Partners ask three personal ability questions and answer three questions about themselves.
-**Pupils:** Describe three features and ask two questions. Pupils complete Workbook p.99, Activity 1, by reading the children's descriptions of what they can and cannot do.
+**Pupils:** Describe three features and ask two questions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three basic personal questions (SP 2.1.2) and three personal ability responses (SP 2.1.1).
-**Pupils:** Submit individual evidence.
+**Pupils:** Submit individual evidence. Pupils complete Workbook p.99, Activity 1, by reading the children's descriptions of what they can and cannot do.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
