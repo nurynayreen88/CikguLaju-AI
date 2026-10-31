@@ -21,7 +21,7 @@
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Ask pupils to reread and describe parade clothing.
 **Pupils:** Reread and describe what they would wear at a parade.
-**Teacher:** Instruct pupils to complete Workbook p.35, Story time matching task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.35, Story time matching task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.35, Story time matching task; match the story details according to the pictures.
 
 ## Closure (5 minutes)
