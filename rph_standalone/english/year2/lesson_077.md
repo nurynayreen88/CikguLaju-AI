@@ -22,7 +22,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Partners ask two clothing questions to find out information, then each writes two descriptive sentences about pictured clothing.  
-**Pupils:** Complete the activity and improve responses after feedback.
+**Pupils:** Complete the activity and improve responses after feedback. Pupils complete Workbook p.89, Activity 1, by reading the questions and answering them using the clothing pictures.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Assess two relevant questions (SP 2.1.2) and two written object descriptions (SP 4.2.4). Record independent performance and support required.  
