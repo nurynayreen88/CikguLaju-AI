@@ -22,7 +22,7 @@
 **Teacher:** Check worksheet responses, model a supportive sentence and ask pupils to draft an encouraging message.
 **Pupils:** Check answers and draft an encouraging message.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up task using CCL Worksheets 10a–10b and the short-story guide; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Give feedback on whether each encouraging message is polite, clear and suitable for its intended recipient.
