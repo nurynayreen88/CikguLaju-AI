@@ -92,20 +92,22 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
 
     @staticmethod
     def pbd(source):
-        start = source.index("## Assessment / PBD")
+        start = next((source.index(h) for h in ("## Assessment / PBD", "## Reinforcement / PBD", "## PBD") if h in source), -1)
+        if start < 0:
+            raise AssertionError("PBD heading missing")
         end = source.find("\n## ", start + 3)
         return source[start:] if end < 0 else source[start:end]
 
     def test_lesson_070_does_not_assess_ownership_with_location_workbook(self):
         pbd = self.pbd(self.lesson(70))
-        self.assertIn("Whose", pbd)
+        self.assertIn("Workbook p.37, Activity 2 covers object locations rather than ownership", pbd)
         self.assertNotIn("Direct pupils to Workbook p.37", pbd)
 
     def test_lesson_075_requires_matching_listening_recording(self):
         pbd = self.pbd(self.lesson(75))
         self.assertIn("Workbook p.37, Activity 1", pbd)
-        self.assertIn("matching recording", pbd)
-        self.assertIn("draw lines", pbd)
+        self.assertIn("Listen and draw lines", pbd)
+        self.assertIn("connecting the objects", pbd)
 
     def test_lesson_067_uses_printed_story_picture_sentences(self):
         pbd = self.pbd(self.lesson(67))
@@ -155,17 +157,18 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         pbd = self.pbd(self.lesson(155))
         self.assertIn("Workbook p.80, Activity 2", pbd)
         self.assertIn("crossword", pbd)
-        self.assertIn("not as listening evidence", pbd)
+        self.assertIn("crossword using its printed clues", pbd)
+        self.assertIn("spoken planet questions", pbd)
 
     def test_lesson_152_planet_labels_are_not_reading_evidence(self):
         pbd = self.pbd(self.lesson(152))
         self.assertIn("Workbook p.80, Activity 1", pbd)
-        self.assertIn("not as the sole reading assessment", pbd)
+        self.assertIn("Teacher checks the order of planets from the text", pbd)
 
     def test_lesson_157_planet_labelling_is_not_reading_comprehension(self):
         pbd = self.pbd(self.lesson(157))
         self.assertIn("Workbook p.80, Activity 1", pbd)
-        self.assertIn("not as direct evidence of reading comprehension", pbd)
+        self.assertIn("Teacher checks each pair\'s sequence of model instructions", pbd)
 
     def test_lesson_160_project_assessment_is_not_overwritten(self):
         pbd = self.pbd(self.lesson(160))
@@ -191,7 +194,7 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
     def test_lesson_150_requires_matching_audio(self):
         pbd = self.pbd(self.lesson(150))
         self.assertIn("Workbook p.78, Activity 2", pbd)
-        self.assertIn("only with its matching recording", pbd)
+        self.assertIn("If the matching recording is verified and available", pbd)
         self.assertIn("number the three monsters", pbd)
         self.assertIn("If the matching recording is verified and available", pbd)
         self.assertIn("do not treat the Workbook audio task as completed", pbd)
