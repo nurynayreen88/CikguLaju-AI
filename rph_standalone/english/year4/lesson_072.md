@@ -22,8 +22,6 @@
 **Teacher action:** Guide Project Activity 2 and demonstrate checking category spellings using the Student Book or a dictionary.
 **Pupil action:** Complete Project Activity 2 and correct spelling using references.
 
-Pupils practise reading for details about healthy eating using a suitable Workbook activity, where available; teacher checks comprehension.
-
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share one challenging food word and explain how they checked its spelling.
 **Pupil action:** Share a challenging food word and spell it.
