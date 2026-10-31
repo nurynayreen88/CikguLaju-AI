@@ -28,7 +28,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three ability exchanges (SP 2.1.4) and two listening-detail responses (SP 1.2.2).
-**Pupils:** Demonstrate speaking individually. Pupils complete Workbook p.97, Activity 1, by listening and ticking the correct pictures of people's abilities.
+**Pupils:** Demonstrate speaking individually.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review clear pronunciation and turn-taking.
