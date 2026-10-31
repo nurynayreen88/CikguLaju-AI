@@ -156,6 +156,11 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("crossword", pbd)
         self.assertIn("not as listening evidence", pbd)
 
+    def test_lesson_152_planet_labels_are_not_reading_evidence(self):
+        pbd = self.pbd(self.lesson(152))
+        self.assertIn("Workbook p.80, Activity 1", pbd)
+        self.assertIn("not as the sole reading assessment", pbd)
+
     def test_lesson_159_uses_verified_story_character_matching(self):
         pbd = self.pbd(self.lesson(159))
         self.assertIn("Workbook p.81, Activity 1", pbd)
