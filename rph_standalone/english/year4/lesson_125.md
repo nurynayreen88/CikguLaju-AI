@@ -22,7 +22,7 @@
 **Teacher:** Assign a narrator and actors in each group. Observe whether the retelling follows the story sequence and whether spoken narration is understandable.
 **Pupils:** Narrate or act out the story.
 
-**Teacher:** Instruct pupils to complete Workbook p.74, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.74, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.74, Activity 1; read the animal story and complete the sentences using the past simple verbs.
 
 ## Closure (5 minutes)
