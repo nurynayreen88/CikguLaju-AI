@@ -13,10 +13,11 @@ Teacher reviews spellings of past-time vocabulary.
 Teacher shows a diary and introduces Kelly's Saturday entry; pupils read the example and the Writing Tip.
 
 ## Activity 2 (25 minutes)
-Pupils answer the blue-box prompts on Student's Book p.81, draft a diary entry and exchange it with a partner for spelling and punctuation feedback. They then produce a final illustrated diary entry. Pupils complete Workbook p.64, Activity 2, by writing short sentences about their weekend.
+Pupils answer the blue-box prompts on Student's Book p.81, draft a diary entry and exchange it with a partner for spelling and punctuation feedback. They then produce a final illustrated diary entry.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks each pupil's diary for clear past-time details, spelling and punctuation. Pupils correct one error.
+**Teacher:** Direct pupils to Workbook p.64, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.64, Activity 2, by writing short sentences about their weekend.
 
 ## Closure (5 minutes)
 Pupils share one diary sentence.
