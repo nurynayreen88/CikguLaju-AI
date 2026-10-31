@@ -23,8 +23,8 @@
 **Pupils:** Listen, choose pictures and match labels.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record individual evidence against the success criteria.
-**Pupils:** Submit individual evidence.
+**Teacher:** Direct pupils to Workbook p.110, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.110, Activity 1, by listening and ticking the correct beach pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
