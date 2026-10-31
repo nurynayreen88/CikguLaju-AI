@@ -36,6 +36,23 @@ class AudioResolverTests(unittest.TestCase):
         self.assertEqual(set(mapping["teacher_book_page_by_lesson"]), set(mapping["lessons"]))
         self.assertTrue(all(isinstance(page, int) and page > 0 for page in mapping["teacher_book_page_by_lesson"].values()))
 
+    def test_all_manifest_ids_unique(self):
+        import json
+        manifest = json.loads((HERE / "QA_CLASS_CD_ASSET_MANIFEST_20261031.json").read_text(encoding="utf-8"))
+        ids = [entry["file_id"] for disc in manifest["discs"].values() for entry in disc["tracks"].values()]
+        self.assertEqual(len(ids), 220)
+        self.assertEqual(len(set(ids)), 220)
+
+    def test_all_mapped_audio_resolves(self):
+        import json
+        mapping = json.loads((HERE / "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(mapping["lessons"]), 14)
+        self.assertEqual(sum(len(v) for v in mapping["lessons"].values()), 20)
+        for lesson, entries in mapping["lessons"].items():
+            resolved = mod.resolve_lesson_audio(lesson)
+            self.assertEqual([(v["disc"], v["track"]) for v in resolved],
+                             [(v["disc"], v["track"]) for v in entries])
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
