@@ -22,7 +22,7 @@
 **Teacher:** Model a polite request to clarify an ingredient, then ask pairs to adapt the dialogue with different food items.
 **Pupils:** Ask clarification questions and respond appropriately in pairs.
 
-Pupils practise asking and answering questions about food using a suitable Workbook activity, where available; teacher checks their responses.
+Pupils use Workbook p.39 Activity 2 for optional practice with food sentences and check their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe a favourite dish using want or need and at least one ingredient word.
