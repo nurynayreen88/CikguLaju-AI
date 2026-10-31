@@ -16,8 +16,9 @@ Teacher shows the pictures from Student's Book Activity 1. Pupils identify place
 Pupils listen to the holiday song, raise matching pictures, order the pictures and complete SB p.85 Activity 1.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess listening by asking pupils to identify holiday actions mentioned in the lesson recording or spoken prompts. Use Workbook p.68, Activity 1 (unscramble holiday action words) afterward as spelling practice, not as direct evidence of listening.
-**Pupils:** Pupils complete Workbook p.68, Activity 1, by unscrambling holiday action words.
+Teacher asks pupils to identify two holiday activities from the song and describe one activity using the picture prompts.
+
+**Workbook practice:** Pupils complete Workbook p.68, Activity 1, by unscrambling holiday action words. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils name one holiday activity.
