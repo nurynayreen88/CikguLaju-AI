@@ -28,8 +28,8 @@
 **Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check two relevant personal-information questions and two correctly punctuated guided sentences. Record accuracy and assistance needed.  
-**Pupils:** Demonstrate the skill individually.
+**Teacher:** Direct pupils to Workbook p.85, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.85, Activity 1, by reading the clothing descriptions and matching them to the named characters.
 
 ## Closure (5 minutes)
 **Teacher:** Review two useful clothing words and invite a relevant response.  
