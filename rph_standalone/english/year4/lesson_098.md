@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to contrast one present-continuous sentence with a past-action sentence and check object-pronoun use.
 **Pupils:** Review a tense form and an object pronoun.
 
-**PBD:** Observe pupils' spoken descriptions of helping actions and experiences for main Speaking SP 2.1.5; assess relevant personal responses in partner exchanges for complementary Speaking SP 2.1.2. Tracks 21 and 22 support the lesson, but their CD designation remains unverified.  
+**PBD:** Observe pupils' spoken descriptions of helping actions and experiences for main Speaking SP 2.1.5; assess relevant personal responses in partner exchanges for complementary Speaking SP 2.1.2. Class CD2 Tracks 21 and 22 support the lesson (TB p.108 verified); MP3 playback remains untested.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
