@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model inferring one unfamiliar routine word from its surrounding sentence, then guide TB Activity 2 and ask pupils to explain their clues.
-**Pupils:** Locate reading details and explain vocabulary clues. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Locate reading details and explain vocabulary clues. Pupils may complete a matching Workbook reading activity about personal information, if available; teacher checks comprehension.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe one daily routine and explain a new word using a clue from the text.
