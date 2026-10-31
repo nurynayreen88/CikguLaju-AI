@@ -62,6 +62,22 @@ class AudioResolverTests(unittest.TestCase):
                 self.assertTrue(item["drive_file_id"])
                 self.assertIn(item["drive_file_id"], item["drive_view_url"])
 
+    def test_missing_teacher_book_page_fails_closed(self):
+        from unittest.mock import patch
+        import json
+        original = json.loads((HERE / "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json").read_text(encoding="utf-8"))
+        original["teacher_book_page_by_lesson"].pop("097")
+        original_read_text = Path.read_text
+
+        def substituted_read_text(path, *args, **kwargs):
+            if path.name == "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json":
+                return json.dumps(original)
+            return original_read_text(path, *args, **kwargs)
+
+        with patch.object(Path, "read_text", substituted_read_text):
+            with self.assertRaises(ValueError):
+                mod.resolve_lesson_audio(97)
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
