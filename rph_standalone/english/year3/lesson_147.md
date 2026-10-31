@@ -16,8 +16,8 @@ Teacher shows shark and other sea animal flashcards, elicits adjectives includin
 Pupils listen to the accompanying audio while reading Student's Book pp.96–97 silently, then check their worksheet predictions. They circle science and project, discuss meanings using picture clues, and complete the Grammar Box and Activity 2 with teacher guidance.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess reading by asking pupils to interpret the meaning of comparative sentences about animals and identify textual clues. Use Workbook p.78, Activity 1 (choose comparative forms) as a grammar follow-up, not as the only reading assessment.
-**Pupils:** Pupils complete Workbook p.78, Activity 1, by choosing the correct comparative forms in sentences about animals.
+**Teacher:** Assess reading by asking pupils to interpret the meaning of comparative sentences about animals and identify textual clues. Use Workbook p.78, Activity 1 (write the words close, far, around and planet under the pictures) as a vocabulary follow-up, not as the only reading assessment.
+**Pupils:** Pupils complete Workbook p.78, Activity 1, by writing the words close, far, around and planet under the pictures.
 
 ## Closure (5 minutes)
 Pupils share one sea animal fact.
