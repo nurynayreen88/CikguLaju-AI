@@ -14,6 +14,7 @@ class AudioResolverTests(unittest.TestCase):
         self.assertEqual(len(mod.resolve_lesson_audio(30)), 1)
         self.assertEqual(len(mod.resolve_lesson_audio(65)), 2)
         self.assertEqual(len(mod.resolve_lesson_audio(97)), 2)
+        self.assertEqual(mod.resolve_lesson_audio("097")[0]["teacher_book_page"], 108)
 
     def test_cd1_cd2_track_29_not_confused(self):
         a = mod.resolve_lesson_audio(30)[0]
@@ -40,7 +41,7 @@ class AudioResolverTests(unittest.TestCase):
         self.assertEqual(mod.resolve_lesson_audio(160), [])
 
     def test_bad_lesson_numbers(self):
-        for value in (0, 161, None, "invalid", True):
+        for value in (0, 161, None, "invalid", True, 97.5, "97.0", "-1", " 97 "):
             with self.subTest(value=value):
                 with self.assertRaises(ValueError):
                     mod.resolve_lesson_audio(value)
