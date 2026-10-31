@@ -22,7 +22,7 @@
 **Teacher:** Display two success checks: use a comparative adjective and follow the partner's instructions. Observe pairs, give corrective feedback and invite a revised description.
 **Pupils:** Check task steps and improve descriptions.
 
-Pupils practise speaking about dinosaurs using a suitable Workbook activity, where available; teacher checks their responses.
+
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to share a comparative sentence and explain which two dinosaurs it compares.
