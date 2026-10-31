@@ -56,8 +56,8 @@ class WorkbookApplicatorTests(unittest.TestCase):
             "**Audited source mapping:** NON-TEXTBOOK / SOW task.\n\n## Assessment / PBD"
         )
         updated, status = prepare(original, 48, "Activity 2")
-        self.assertEqual(status, "ready")
-        self.assertIn("Workbook p.48", updated)
+        self.assertIsNone(updated)
+        self.assertEqual(status, "non_textbook_sow_task")
 
     def test_reinforcement_pbd_heading_is_supported(self):
         original = self.SAMPLE.replace(
