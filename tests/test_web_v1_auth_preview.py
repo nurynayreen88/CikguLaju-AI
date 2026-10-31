@@ -33,6 +33,7 @@ class AuthFlowTests(unittest.TestCase):
     def test_login_requires_signed_identity_and_state(self):
         page = self.client.get("/web/auth/login")
         self.assertEqual(page.status_code, 200)
+        self.assertNotIn(b"data-request-access", page.data)
         with self.client.session_transaction() as sess:
             nonce = sess["web_auth_nonce"]
         signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
