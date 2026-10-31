@@ -74,5 +74,48 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertEqual(status, "assessment_heading_missing")
 
 
+class WorkbookMappingRegressionTests(unittest.TestCase):
+    """Guard manually verified Year 3 mappings from accidental reversion."""
+
+    ROOT = Path(__file__).resolve().parents[1] / "rph_standalone" / "english" / "year3"
+
+    @classmethod
+    def lesson(cls, number):
+        return (cls.ROOT / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
+
+    @staticmethod
+    def pbd(source):
+        start = source.index("## Assessment / PBD")
+        end = source.find("\n## ", start + 3)
+        return source[start:] if end < 0 else source[start:end]
+
+    def test_lesson_070_does_not_assess_ownership_with_location_workbook(self):
+        pbd = self.pbd(self.lesson(70))
+        self.assertIn("Whose", pbd)
+        self.assertNotIn("Direct pupils to Workbook p.37", pbd)
+
+    def test_lesson_075_requires_matching_listening_recording(self):
+        pbd = self.pbd(self.lesson(75))
+        self.assertIn("Workbook p.37, Activity 1", pbd)
+        self.assertIn("matching recording", pbd)
+        self.assertIn("draw lines", pbd)
+
+    def test_lesson_052_uses_days_not_seasons_calendar(self):
+        pbd = self.pbd(self.lesson(52))
+        self.assertIn("Workbook p.27, Activity 3", pbd)
+        self.assertNotIn("Workbook p.30, Activity 1", pbd)
+
+    def test_lesson_054_uses_activity_day_task(self):
+        pbd = self.pbd(self.lesson(54))
+        self.assertIn("Workbook p.27, Activity 1", pbd)
+        self.assertNotIn("Workbook p.29, Activity 2", pbd)
+
+    def test_lesson_078_checks_possessives_not_furniture_locations(self):
+        pbd = self.pbd(self.lesson(78))
+        self.assertIn("Workbook p.40, Activity 1", pbd)
+        self.assertIn("possessive", pbd)
+
+
+
 if __name__ == "__main__":
     unittest.main()
