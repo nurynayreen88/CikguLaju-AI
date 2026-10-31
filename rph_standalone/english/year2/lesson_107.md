@@ -23,8 +23,10 @@
 **Pupils:** Describe three features and write two labels.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.99, Activity 2; explain the task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.99, Activity 2, by answering the ability questions with Yes, I can or No, I can't.
+**Teacher (10 min):** Record three basic spoken personal questions (SP 2.1.2) and two written question-and-answer pairs (SP 4.2.1). Note individual support required.
+**Pupils:** Submit individual evidence.
+
+**Workbook practice:** Pupils complete Workbook p.99, Activity 2, by answering the ability questions with Yes, I can or No, I can't. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful description.
