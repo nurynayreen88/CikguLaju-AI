@@ -22,7 +22,7 @@
 **Teacher action:** Invite pupils to share opinions with reasons and give feedback matched to their language needs.
 **Pupil action:** Share opinions with reasons and use feedback.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The King of Kites using the literature Teaching Guidebook; no specific Workbook page is prescribed for this lesson.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share one lesson learned from the story and explain the event that supports it.
