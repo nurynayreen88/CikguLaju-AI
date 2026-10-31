@@ -26,7 +26,7 @@
 **Teacher:** Elicit action verbs from the construction process and check pupils' use of sequencing words.
 **Pupils:** Recall useful action verbs.
 
-**PBD:** Observe whether pupils explain the steps for making a reused-container object using First and Then, and respond to peer questions (SP 2.1.3, 2.2.2).  
+**PBD:** Observe pupils explaining the steps for making a reused-container object using First and Then for main Speaking SP 2.1.3; check how they ask for clarification and respond to peer questions for complementary Speaking SP 2.2.2. Workbook p.61 provides written recycling practice, not speaking evidence.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
