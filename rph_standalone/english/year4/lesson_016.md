@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Distribute the SOW 'How did I do in Unit 1?' checklist and guide pupils to assess their progress.
-**Pupils:** Rate their learning in the SOW Unit 1 self-assessment. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Rate their learning in the SOW Unit 1 self-assessment. Pupils review their Unit 1 self-assessment and practise one language point that needs improvement.
 
 ## Closure (5 minutes)
 **Teacher:** Collect self-assessment checklists, identify a common learning need and help pupils set one specific goal for the next unit.
