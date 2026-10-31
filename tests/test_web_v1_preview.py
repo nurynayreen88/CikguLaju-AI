@@ -20,6 +20,15 @@ class PreviewTests(unittest.TestCase):
         self.assertIn(b"CikguLaju AI", response.data)
         self.assertIn(b"disabled", response.data)
 
+    def test_selection_feedback_stays_preview_only(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'id="pilihan-status"', response.data)
+        self.assertIn(b'aria-live="polite"', response.data)
+        self.assertIn(b'id="unit" disabled', response.data)
+        self.assertIn(b'id="lesson" disabled', response.data)
+        self.assertIn(b'Jana RPH (belum aktif)', response.data)
+
     def test_health_declares_no_data_or_generation(self):
         response = self.client.get("/health")
         self.assertEqual(response.status_code, 200)
