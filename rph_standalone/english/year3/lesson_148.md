@@ -16,8 +16,9 @@ Pairs unscramble names of endangered Malaysian animals on the SOW worksheet (tur
 Teacher gives animal clues using comparative adjectives; pupils guess the animal. Pairs write at least two descriptive sentences about one endangered animal, using comparatives where appropriate.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.77, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.77, Activity 2, by writing comparative sentences about the pictured characters and animals.
+Teacher checks each pupil's two animal-description sentences for accurate comparisons and spelling. Pupils correct one error; teacher retains feedback for Lesson 160.
+
+**Workbook practice:** Pupils complete Workbook p.77, Activity 2, by writing comparative sentences about the pictured characters and animals. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils name one endangered animal.
