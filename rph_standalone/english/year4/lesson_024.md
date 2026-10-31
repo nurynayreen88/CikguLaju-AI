@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Guide Activity 2, ask pupils to point to supporting reading details and explain their answers; omit the bottom-page writing task.
-**Pupils:** Locate reading details in Activity 2 and justify guesses. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Locate reading details in Activity 2 and justify guesses. Pupils may complete a matching Workbook reading activity about weekly routines, if available; teacher checks comprehension.
 
 ## Closure (5 minutes)
 **Teacher:** Play a personalised 'have to' question game.
