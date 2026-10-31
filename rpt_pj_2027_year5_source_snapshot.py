@@ -1,0 +1,40 @@
+"""Year 5 PJ 2027 mapped RPT records. Draft source snapshot; not READY.
+
+Generated from the existing Google Drive mapping document; no invented page numbers.
+Source: 1yTAhZqtZVbhZs5XLcmBbzXbu8YiGSY31KNqG86kc2lE
+"""
+RECORDS = [
+{"pdp":1,"source":"PdP-001 | UNIT 1: JADI YANG TERBAIK TAJUK: MENGIMBANG | SK 1.1, 2.1, 5.4 | SP 1.1.1, 2.1.1, 5.4.7"},
+{"pdp":2,"source":"PdP-002 | UNIT 1: JADI YANG TERBAIK TAJUK: BINAAN HEBAT | SK 1.1, 2.1, 5.2 | SP 1.1.2, 2.1.2, 5.2.3"},
+{"pdp":3,"source":"PdP-003 | UNIT 1: JADI YANG TERBAIK TAJUK: TEGAK TERBALIK | SK 1.1, 2.1, 5.2 | SP 1.1.3, 2.1.2, 5.2.1"},
+{"pdp":4,"source":"PdP-004 | UNIT 1: JADI YANG TERBAIK TAJUK: MELOMBOL HALANGAN | SK 1.2, 2.2, 5.4 | SP 1.2.1, 2.2.1, 5.4.3"},
+{"pdp":5,"source":"PdP-005 | UNIT 1: JADI YANG TERBAIK TAJUK: BERLATIH HAMBUR | SK 1.2, 2.2, 5.1 | SP 1.2.2, 2.2.1, 5.1.3"},
+{"pdp":6,"source":"PdP-006 | UNIT 1: JADI YANG TERBAIK TAJUK: LOMPAT BERPUTAR | SK 1.3, 2.3, 5.2 | SP 1.3.1, 2.3.1, 5.2.1"},
+{"pdp":7,"source":"PdP-007 | UNIT 1: JADI YANG TERBAIK TAJUK: GULING ULANG ALIK | SK 1.3, 2.3, 5.1 | SP 1.3.2, 2.3.1, 5.1.4"},
+{"pdp":8,"source":"PdP-008 | UNIT 1: JADI YANG TERBAIK TAJUK: BERGAYUT DAN BERAYUN | SK 1.4, 2.4, 5.2 | SP 1.4.1, 1.4.2, 2.4.1, 5.2.1"},
+{"pdp":9,"source":"PdP-009 | UNIT 2: RIANG RIA DI DASAR LAUTAN TAJUK: KE SANA, KE SINI DIDASAR LAUTAN | SK 1.5, 2.5, 5.4 | SP 1.5.1, 1.5.2, 2.5.1, 5.4.7"},
+{"pdp":10,"source":"PdP-010 | UNIT 2: RIANG RIA DI DASAR LAUTAN TAJUK: KE SANA, KE SINI DIDASAR LAUTAN | SK 1.5, 2.5, 5.4 | SP 1.5.1, 1.5.2, 2.5.1, 5.4.7"},
+{"pdp":11,"source":"PdP-011 | UNIT 3: SERANG MENANG TAJUK: SERONOKNYA BERMAIN | SK 1.6, 2.6, 5.4 | SP 1.6.1, 1.6.2, 1.6.5, 2.6.1, 2.6.2, 2.6.5, 5.4.1"},
+{"pdp":12,"source":"PdP-012 | UNIT 3: SERANG MENANG TAJUK: SERONOKNYA BERMAIN | SK 1.6, 2.6, 5.4 | SP 1.6.1, 1.6.2, 1.6.5, 2.6.1, 2.6.2, 2.6.5, 5.4.1"},
+{"pdp":13,"source":"PdP-013 | UNIT 3 SERANG MENANG | KELECEK BERBISA | SK 1.6, 2.6, 5.4 | SP 1.6.3, 1.6.4, 2.6.3, 2.6.4, 5.4.7 | M/S 18"},
+{"pdp":14,"source":"PdP-014 | UNIT 3: SERANG MENANG TAJUK: BIJAK TAKEL DAN JARING | SK 1.6, 2.6, 5.4 | SP 1.6.6, 1.6.7, 2.6.6, 5.4.3"},
+{"pdp":15,"source":"PdP-015 | UNIT 4: HANDAL JARING TAJUK: SIAPA HANDAL | SK 1.7, 2.7, 5.2 | SP 1.7.1, 1.7.2, 2.7.1, 2.7.2, 5.2.3"},
+{"pdp":16,"source":"PdP-016 | UNIT 4: HANDAL JARING TAJUK: VOLI JARING | SK 1.7, 2.7, 5.4 | SP 1.7.3, 2.7.3, 5.4.3"},
+{"pdp":17,"source":"PdP-017 | UNIT 4: HANDAL JARING TAJUK: SMESY, REJAM DAN LIBAS | SK 1.7, 2.7, 5.3, 5.4 | SP 1.7.4, 1.7.5, 1.7.6, 2.7.2, 2.7.4, 5.3.2, 5.4.4"},
+{"pdp":18,"source":"PdP-018 | UNIT 5: RONDOS KAMPUNG TAJUK: BALINGAN HEBAT DAN BALINGAN TEPAT | SK 1.8, 2.8, 5.4 | SP 1.8.1, 1.8.2, 2.8.1, 5.4.2"},
+{"pdp":19,"source":"PdP-019 | UNIT 5: RONDOS KAMPUNG TAJUK: PUKUL DAN GERAK | SK 1.8, 2.8, 5.3 | SP 1.8.3, 1.8.4, 2.8.3, 5.3.1"},
+{"pdp":20,"source":"PdP-020 | UNIT 5: RONDOS KAMPUNG TAJUK: BALING-BALING BAWAH | SK 1.8, 2.8, 5.4 | SP 1.8.5, 2.8.4, 5.4.7"},
+{"pdp":21,"source":"PdP-021 | UNIT 5: RONDOS KAMPUNG TAJUK: TANGKAPAN KEMAS | SK 1.8, 2.8, 5.1 | SP 1.8.6, 2.8.5, 5.1.3"},
+{"pdp":22,"source":"PdP-022 | UNIT 6: OLAHRAGA ASAS TAJUK: A. LARIAN - PECUT DAN LAJU | SK 1.9, 2.9, 5.4 | SP 1.9.1, 1.9.2, 2.9.1, 2.9.2, 2.9.3, 5.4.3"},
+{"pdp":23,"source":"PdP-023 | UNIT 6: OLAHRAGA ASAS TAJUK: A. LARIAN - LARI BERHALANGAN | SK 1.9, 2.9, 5.3 | SP 1.9.3, 2.9.4, 5.3.3"},
+{"pdp":24,"source":"PdP-024 | UNIT 6: OLAHRAGA ASAS TAJUK: B. LOMPATAN - LOMPAT TERBANG | SK 1.10, 2.10, 5.2 | SP 1.10.1, 2.10.1, 5.2.1"},
+{"pdp":25,"source":"PdP-025 | UNIT 6: OLAHRAGA ASAS TAJUK: B. LOMPATAN - KAKI GUNTING | SK 1.10, 2.10, 5.1 | SP 1.10.2, 2.10.2, 5.1.4"},
+{"pdp":26,"source":"PdP-026 | UNIT 6: OLAHRAGA ASAS TAJUK: C. BALINGAN - LONTARAN BERKUASA | SK 1.11, 2.11, 5.1 | SP 1.11.1, 2.11.1, 5.1.2"},
+{"pdp":27,"source":"PdP-027 | UNIT 6: OLAHRAGA ASAS TAJUK: C. BALINGAN - LEMPARAN AJAIB | SK 1.11, 2.11, 5.1 | SP 1.11.2, 2.11.2, 5.1.3, 5.1.4"},
+{"pdp":28,"source":"PdP-028 | UNIT 8 PERMAINAN WARISAN TAJUK: KEMAS IKATAN, KUAT SIMPULAN | SK 1.14, 2.14, 5.4 | SP 1.14.1, 2.14.1, 5.4.1"},
+{"pdp":29,"source":"PdP-029 | UNIT 8 PERMAINAN WARISAN | KEMAS IKATAN, KUAT SIMPULAN (sesi kedua) | SK 1.14, 2.14, 5.4 | SP 1.14.1, 2.14.1, 5.4.1 | M/S 54-55"},
+{"pdp":30,"source":"PdP-030 | UNIT 8 PERMAINAN WARISAN TAJUK: KAYU TERBANG | SK 1.14, 2.14, 5.4 | SP 1.14.2, 2.14.2, 5.4.6"},
+{"pdp":31,"source":"PdP-031 | UNIT 8 PERMAINAN WARISAN TAJUK: TIMANG ADIK TIMANG | SK 1.14, 2.14, 5.2 | SP 1.14.3, 2.14.2, 5.2.4"},
+{"pdp":32,"source":"PdP-032 | UNIT 9 CERGAS SELALU TAJUK JOM CERGAS JOM SANTAI | SK 3.1, 4.1, 5.2, 5.4 | SP 3.1.1, 3.1.2, 3.1.3, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 5.2.1, 5.4.5"},
+{"pdp":33,"source":"PdP-033 | UNIT 10 CERGAS DAN SIHAT TAJUK: SAYA SIHAT DAN CERGAS | SK 3.2, 4.2, 5.1 | SP 3.2.1, 4.2.1, 4.2.2, 5.1.3"}
+]

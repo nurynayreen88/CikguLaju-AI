@@ -1,0 +1,11 @@
+{
+  "source_spreadsheet_id": "1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k",
+  "audit_final_rows": [
+    ["KEPUTUSAN AUDIT AKHIR", "FINAL VERIFIED — SUMBER KPM/BKPP 2027"]
+  ],
+  "release_rows": [
+    ["Penerbitan", "FINAL VERIFIED — KPM/BKPP 2027"]
+  ],
+  "source_freeze_date": "2026-10-28",
+  "notes": "Snapshot of explicit final audit decision rows. Daily legacy labels are preserved."
+}

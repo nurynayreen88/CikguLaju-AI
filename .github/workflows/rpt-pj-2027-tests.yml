@@ -1,0 +1,58 @@
+name: RPT PJ 2027 staging tests
+
+on:
+  pull_request:
+    paths:
+      - 'rpt_pj_2027_*.py'
+      - 'scripts/install_rpt_pj_2027_assets.py'
+      - 'tests/test_rpt_pj_2027_*.py'
+      - 'tests/test_install_rpt_pj_2027_assets.py'
+      - 'scripts/audit_rpt_pj_2027_readiness.py'
+      - 'rpt_pj_2027_release_policy.py'
+      - 'scripts/verify_rpt_pj_2027_v76.py'
+      - 'scripts/provision_rpt_pj_2027_v76.py'
+      - 'scripts/preflight_rpt_pj_2027.py'
+      - 'rpt_pj_2027_telebot_adapter.py'
+      - 'rpt_pj_2027_handlers.py'
+      - 'rpt_pj_2027_app_bridge.py'
+      - 'app.py'
+      - 'data/rpt_pj_2027/**'
+      - '.github/workflows/rpt-pj-2027-tests.yml'
+  push:
+    branches:
+      - 'staging/rpt-pj-2027-calendar-sheet-20261030'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Report checkout and Python environment
+        run: |
+          pwd
+          python --version
+          git rev-parse --short HEAD
+          ls -l data/rpt_pj_2027/
+      - name: Compile RPT PJ 2027 modules
+        run: |
+          python -m py_compile rpt_pj_2027_calendar.py rpt_pj_2027_delivery.py rpt_pj_2027_menu_adapter.py rpt_pj_2027_telegram_bridge.py rpt_pj_2027_telegram_menu.py rpt_pj_2027_telebot_adapter.py rpt_pj_2027_handlers.py rpt_pj_2027_app_bridge.py scripts/install_rpt_pj_2027_assets.py scripts/audit_rpt_pj_2027_readiness.py scripts/verify_rpt_pj_2027_v76.py scripts/provision_rpt_pj_2027_v76.py scripts/preflight_rpt_pj_2027.py rpt_pj_2027_release_policy.py
+      - name: Run isolated RPT PJ tests
+        shell: bash
+        run: |
+          set -o pipefail
+          export PYTHONPATH="$PWD"
+          python -m unittest discover -s tests -p 'test_rpt_pj_2027_*.py' -v 2>&1 | tee rpt-pj-test-output.log
+          python -m unittest discover -s tests -p 'test_install_rpt_pj_2027_assets.py' -v 2>&1 | tee -a rpt-pj-test-output.log
+      - name: Save failure diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpt-pj-validation-diagnostics
+          path: |
+            rpt-pj-test-output.log
+            data/rpt_pj_2027/final_audit_evidence.json
+            .github/workflows/rpt-pj-2027-tests.yml
