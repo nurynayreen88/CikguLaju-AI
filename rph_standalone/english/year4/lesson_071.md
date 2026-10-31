@@ -22,7 +22,8 @@
 **Teacher action:** Give pupils a sentence frame and ask them to write one accurate sentence about a partner's eating or drinking habits.
 **Pupil action:** Write one sentence about a partner's habits.
 
-Pupils use Workbook p.41, Activity 2 (How much/How many questions) to practise questions about food quantities; teacher checks their responses.
+**Teacher:** Instruct pupils to complete Workbook p.41, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.41, Activity 2; complete the How much and How many questions.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to explain one reason a balanced diet matters, using a familiar food example.
