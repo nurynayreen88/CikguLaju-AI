@@ -35,7 +35,7 @@ def fetch_admin_payment_history(request, limit=100):
                 "kind": kind,
                 "amount_rm": item.get("amount_rm"),
                 "payment_reference": item.get("payment_reference"),
-                "status": item.get("status") or ("revoked" if item.get("revoked_at") else "approved"),
+                "status": ("revoked" if item.get("revoked_at") else "approved") if table == "pioneer_entitlements" else (item.get("status") or "unknown"),
                 "event_at": item.get(date_col) or "",
                 "is_receipt": (table in ("subscription_payments", "payments") and str(item.get("status") or "").lower() in ("paid", "completed", "success")),
             })
