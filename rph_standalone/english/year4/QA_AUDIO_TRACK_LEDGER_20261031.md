@@ -246,3 +246,9 @@ Visually checked the original scanned Year 4 Teacher's Book, printed pp.108, 111
 | 110 | Track 31 | TB p.115: vocabulary |
 
 **Important:** Track 31 in Lesson 110 and Track 32 in Lesson 107 are correct according to their respective TB pages; the numerical order does not determine lesson order. MP3 existence has been inventoried by folder, but individual audio playback, user permissions and Telegram download remain untested. The updates preserve existing lesson activities and PBD text; residual older wording such as 'disc unverified' elsewhere in lesson bodies should be reconciled before READY.
+
+## Post-verification wording reconciliation — 31 October 2026
+
+Rechecked current Markdown after the eight-lesson CD2 correction batch. Outdated PBD statements about unknown disc were removed from Lessons **097, 098, 102, 103, 104, 105 and 107**. The exact disc/track now agrees with the TB-verified References line, without changing PBD assessment criteria or lesson activities. Lesson **110** had no contradictory PBD wording and was left unchanged. Lessons **123 and 129** now accurately distinguish **MP3 file located in Drive** from **playback and Telegram download not tested**.
+
+**Remaining gates:** content playback, normal-user Drive access, bot delivery, Word/PDF output and final manual approval. All lesson statuses remain DRAFT; no production merge or DB mutation.
