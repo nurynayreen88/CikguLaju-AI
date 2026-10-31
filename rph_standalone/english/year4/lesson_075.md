@@ -26,7 +26,7 @@
 **Teacher action:** Invite pupils to share a favourite meal and model a polite response to a partner's choice.
 **Pupil action:** Describe a favourite restaurant meal.
 
-**PBD:** Observe comprehension of restaurant questions and appropriate clarification in menu-ordering role-play against SP 1.2.5 and 2.2.1.  
+**PBD:** Check pupils' understanding of spoken restaurant questions and menu-ordering exchanges for main Listening SP 1.2.5; observe appropriate requests for clarification in role-play for complementary Speaking SP 2.2.1. Do not treat written menu answers alone as listening evidence.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 75, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
