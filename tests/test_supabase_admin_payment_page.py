@@ -27,6 +27,14 @@ class AdminPaymentPageTests(unittest.TestCase):
         self.assertIn("jumlah tidak direkod", sent[0][1])
         self.assertIn("admin_user|12345678", str(sent[0][2]))
 
+    def test_pending_payment_not_mislabeled_as_access_approval(self):
+        sent = []
+        rows = [{"telegram_user_id": 12345678, "kind": "credit", "amount_rm": 10, "status": "pending", "event_at": "2026", "is_receipt": False}]
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=rows):
+            show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
+        self.assertIn("belum disahkan sebagai bayaran", sent[0][1])
+        self.assertNotIn("kelulusan akses", sent[0][1])
+
     def test_supabase_failure_is_not_reported_as_empty_history(self):
         sent = []
         with patch("supabase_admin_payment_page.fetch_admin_payment_history", side_effect=RuntimeError("db down")):
