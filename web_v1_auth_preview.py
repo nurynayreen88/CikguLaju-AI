@@ -80,7 +80,7 @@ def whoami():
         session.clear()
         abort(401)
     return jsonify({"authenticated": True, "telegram_user_id": uid,
-                    "logout_token": session.get("web_logout_token")})
+                    "logout_token": session.get("web_logout_csrf")})
 
 
 @auth_preview.post("/logout")
