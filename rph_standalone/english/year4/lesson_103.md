@@ -28,7 +28,7 @@
 **Teacher:** Model correcting one possessive-pronoun sentence and check pupils' understanding.
 **Pupils:** Correct a possessive pronoun sentence.
 
-**PBD:** Observe ownership questions, responses and comprehension during Activity 5 and the guessing task against SP 2.1.5 and 1.2.5.  
+**PBD:** Observe pupils asking and answering ownership questions during the guessing task for main Speaking SP 2.1.5; check understanding of spoken ownership questions in Activity 5 (Track 26; disc unverified) for complementary Listening SP 1.2.5. Do not infer a CD number.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
