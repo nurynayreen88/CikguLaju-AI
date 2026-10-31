@@ -19,7 +19,7 @@
 **Pupils:** Use dictionaries and context clues to find meanings.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.71, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.71, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the reading task, check pupils' understanding of the text and supporting details as evidence for the main Reading SP.
 **Pupils:** Complete Workbook p.71, Activity 1; complete the comparative animal sentences using the word bank.
 
 ## Closure (5 minutes)
