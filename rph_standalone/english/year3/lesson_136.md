@@ -16,8 +16,9 @@ Pupils predict vocabulary from Katie's holiday diary.
 Pupils listen while reading Katie's diary, infer key vocabulary, check meanings in a dictionary, and complete TB p.134 Activity 2.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.70, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.70, Activity 1, by filling in missing past-tense verbs in a holiday diary.
+Teacher asks pupils to locate two details in Katie's diary and check one unfamiliar word in a dictionary.
+
+**Workbook practice:** Pupils complete Workbook p.70, Activity 1, by filling in missing past-tense verbs in a holiday diary. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one diary detail.
