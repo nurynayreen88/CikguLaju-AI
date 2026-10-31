@@ -31,7 +31,18 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     create_payment_request(fail_request, uid, amount, mid)
 
-    def test_retry_returns_existing_supabase_id(self):\n        calls = []\n        def request(method, path, **kwargs):\n            calls.append(method)\n            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}]\n        self.assertEqual(create_payment_request(request, 1, 10, 2), 41)\n        self.assertEqual(calls, ["GET"])\n\n    def test_existing_malformed_amount_is_rejected(self):
+    def test_retry_returns_existing_supabase_id(self):\n        calls = []\n        def request(method, path, **kwargs):\n            calls.append(method)\n            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}]\n        self.assertEqual(create_payment_request(request, 1, 10, 2), 41)\n        self.assertEqual(calls, ["GET"])\n\n    def test_different_message_cannot_create_second_pending_request(self):
+        calls = []
+        def request(method, path, **kwargs):
+            calls.append(method)
+            if "status=eq.pending" in path:
+                return [{"id": 9, "telegram_user_id": 1, "telegram_message_id": 99, "amount_rm": 10, "status": "pending"}]
+            return []
+        with self.assertRaises(RuntimeError):
+            create_payment_request(request, 1, 10, 2)
+        self.assertEqual(calls, ["GET", "GET"])
+
+    def test_existing_malformed_amount_is_rejected(self):
         def request(method, path, **kwargs):
             self.assertEqual(method, "GET")
             return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "broken", "status": "pending"}]
