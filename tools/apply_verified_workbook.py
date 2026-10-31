@@ -76,6 +76,10 @@ def main():
         print(f"{'APPLY' if args.apply else 'DRY-RUN'} {year}/{lesson}: Workbook p.{page}, {activity}")
     if args.apply:
         for file, updated in changes:
+            original = file.read_text(encoding="utf-8")
+            if re.search(r"\\b(?:Workbook|Activity Book)\\b", original, re.I):
+                raise RuntimeError(f"Workbook reference appeared during review: {file}")
+        for file, updated in changes:
             file.write_text(updated, encoding="utf-8")
     print(f"Eligible changes: {len(changes)}; written: {len(changes) if args.apply else 0}")
 
