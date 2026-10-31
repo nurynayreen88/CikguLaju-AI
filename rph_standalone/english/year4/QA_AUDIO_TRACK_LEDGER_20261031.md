@@ -219,3 +219,13 @@ Cross-check of **current lesson Markdown** (no content mutation):
 - **Lesson 123, 129, 134** have TB-verified CD/track and Drive file identities in the resolution section above.
 
 **Do not auto-generate lesson mappings from the 220-file Drive inventory.** All three discs have overlapping track numbers. A valid asset key must include `(year=4, disc, track)`, never `track` alone. Current findings remain staging QA; runtime bot delivery remains untested.
+
+## Teacher's Book correction batch — 31 October 2026
+
+The original scanned Teacher's Book was checked visually (not OCR-inferred). These later findings supersede earlier unresolved CD designations:
+
+- **Lesson 030:** SB p.20 Activity 2 is **Class CD1 Track 29**, printed TB p.39. Prior RPH incorrectly said CD2 Track 29; corrected in staging. TB p.39 separately lists Workbook Activity 1 as Class CD1 Track 30, **not** the Student's Book Activity 2 recording; do not silently add that Workbook task.
+- **Lesson 032:** Revision 2 Activity 1 is **Class CD1 Track 35**, printed TB p.46. RPH reference updated.
+- **Lesson 065:** Unit 5 vocabulary is **Class CD1 Track 70** and song Activity 1 is **Class CD1 Track 71**, both printed TB p.78. RPH reference updated.
+
+**Verification boundary:** Printed disc and track references confirmed; MP3 playback and Telegram delivery still require testing. These corrections do not approve the lesson content or change production DB.
