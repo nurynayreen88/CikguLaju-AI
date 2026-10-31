@@ -22,7 +22,7 @@
 **Teacher:** Display a checklist for capital letters, question marks and clarity. Ask groups to peer-check their board-game questions before playing.
 **Pupils:** Check capitals and punctuation before playing the game.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise the target language from the board-game task using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one language correction they made while preparing their board-game questions.
