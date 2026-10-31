@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils through Unit 6 self-assessment and ask them to identify one skill requiring more practice.
 **Pupils:** Complete Unit 6 self-assessment and note gaps.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete the Unit 6 self-assessment and revise a language point they need to improve; no specific Workbook page is prescribed in the SOW.
 
 ## Closure (5 minutes)
 **Teacher:** Use the self-assessment results to identify one priority skill and recommend a focused practice task.
