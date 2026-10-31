@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils through Activity 3, model checking an apostrophe in one possessive sentence, then ask partners to use a short punctuation checklist before revising their work.
 **Pupils:** Complete Activity 3 and check punctuation with a partner.
 
-Pupils practise writing about the camping activities using a suitable Workbook activity, where available; teacher checks sentence accuracy.
+
 
 ## Closure (5 minutes)
 **Teacher:** Display one sentence with an incorrect possessive form and invite pupils to explain and correct it.
