@@ -21,7 +21,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use the original descriptions and cards for five choices; pupils then answer two oral questions.
-**Pupils:** Listen, choose five answers and respond to two questions.
+**Pupils:** Listen, choose five answers and respond to two questions. Pupils complete Workbook p.96, Activity 1, by matching the animal pictures to sentences about what they can do.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Check five listening-detail choices (SP 1.2.2) and two ability exchanges (SP 2.1.4).
