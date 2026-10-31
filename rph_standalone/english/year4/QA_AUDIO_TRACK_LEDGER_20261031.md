@@ -280,3 +280,26 @@ Added `test_audio_mapping.py` (Python unittest) covering verified lesson lookup,
 **Conflict requiring correction before release:** This ledger's initial repository-reference pass records **CD2 Track 29** for Lesson 030, while the separate TB-verified mapping file `QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json` records **CD1 Track 29**, Teacher Book p.39, Student Book p.20 Activity 2. These are different MP3 assets; the resolver deliberately uses the independently TB-verified mapping, not this unverified ledger observation.
 
 **Repository follow-up completed:** Inspected `lesson_030.md` on staging. Its References and Reinforcement and PBD sections already specify **CD1 Track 29**. This conflict is a **stale ledger observation**, not an outstanding RPH edit. No RPH patch is necessary for this disc reference. The historical ledger row remains as an audit trail; use the current RPH and TB-verified mapping for CD/track references. Playback and Telegram delivery remain untested.
+
+## Verified mapping overrides earlier unresolved ledger entries
+
+The initial repository-reference tables above are historical observations, **not** the current authoritative CD assignments. The following 14 lessons have a separate Teacher Book-verified CD/track mapping in `QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json`. These supersede "CD unresolved" and similar notes in the earlier inventory, but **do not** establish playback or Telegram download success.
+
+| Lesson | Verified CD and track | TB page |
+|---|---|---|
+| 030 | CD1 Track 29 | 39 |
+| 032 | CD1 Track 35 | 46 |
+| 065 | CD1 Tracks 70, 71 | 78 |
+| 097 | CD2 Tracks 20, 21 | 108 |
+| 098 | CD2 Tracks 21, 22 | 108 |
+| 102 | CD2 Track 25 | 111 |
+| 103 | CD2 Track 26 | 111 |
+| 104 | CD2 Tracks 27, 28 | 112 |
+| 105 | CD2 Track 29 | 113 |
+| 107 | CD2 Track 32 | 118 |
+| 110 | CD2 Track 31 | 115 |
+| 123 | CD3 Tracks 30, 31 | 189 |
+| 129 | CD2 Tracks 51, 52 | 138 |
+| 134 | CD2 Track 56 | 141 |
+
+**Scope:** 14 of 160 lessons, 20 track usages, 19 distinct MP3 identities. Remaining lessons are not verified by this mapping; do not infer CD or track from the manifest alone. RPH remain DRAFT.
