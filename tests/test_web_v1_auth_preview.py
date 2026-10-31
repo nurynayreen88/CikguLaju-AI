@@ -73,6 +73,16 @@ class AuthFlowTests(unittest.TestCase):
                                    base_url="https://other.example")
         self.assertEqual(response.status_code, 403)
 
+    def test_callback_rejects_changed_host(self):
+        self.client.get("/web/auth/login")
+        with self.client.session_transaction() as sess:
+            nonce = sess["web_auth_nonce"]
+        signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
+        signed["state"] = nonce
+        response = self.client.get("/web/auth/callback", query_string=signed,
+                                   base_url="https://other.example")
+        self.assertEqual(response.status_code, 403)
+
     def test_logout_requires_csrf_and_origin(self):
         self.client.get("/web/auth/login")
         with self.client.session_transaction() as sess:
