@@ -28,7 +28,7 @@ Pupils complete a follow-up response to The Jungle Book using the Teaching Guide
 **Teacher:** Prompt groups to explain their predictions using picture details or earlier story events.
 **Pupils:** Give a reason for a prediction.
 
-**PBD:** Check pupils' ordering of story pictures and explanations of predictions against SP 5.3.1 and 2.1.4.
+**PBD:** Assess pupils' sequencing of graphic-novel story pictures and their creative prediction of Chapter 5 for main Language Arts SP 5.3.1; observe spoken explanations and reasons for their predictions for complementary Speaking SP 2.1.4. Use the Graphic Novel Teaching Guidebook without inventing a Workbook task.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
