@@ -21,7 +21,7 @@
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Distribute a word-matching worksheet, replay the song and ask pupils to verify their answers using words they heard.
 **Pupils:** Infer meanings of celebrate, celebration, fun and special.
-**Teacher:** Instruct pupils to complete Workbook p.30, Sing a song picture-word matching task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.30, Sing a song picture-word matching task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.30, Sing a song picture-word matching task; match the celebration words to the pictures.
 
 ## Closure (5 minutes)
