@@ -16,7 +16,7 @@ Teacher introduces direction vocabulary and describes a route from school to a f
 Teacher guides the Student's Book listening task. Pupils listen to directions and identify route details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.52, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess listening by giving short spoken directions and asking pupils to identify the correct movements or route. Workbook p.52, Activity 1 (write directions shown on road signs) may be used afterward for vocabulary consolidation, but does not independently assess listening.
 **Pupils:** Pupils complete Workbook p.52, Activity 1, by writing the directions shown on road signs.
 
 ## Closure (5 minutes)
