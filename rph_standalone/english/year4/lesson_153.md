@@ -28,7 +28,7 @@ Pupils revise their health-advice posters using the lesson word bank and diction
 **Teacher:** Organise a poster display and ask pupils to share one clear health tip using should or shouldn't.
 **Pupils:** Display posters and share a health tip.
 
-**PBD:** Assess body labels, spelling and clarity of should/shouldn't advice on health posters (SP 4.3.3, 4.3.2).  
+**PBD:** Assess the organisation, clarity and revision of pupils' health-advice posters for main Writing SP 4.3.3; check accurate spelling of body-part labels and health advice for complementary Writing SP 4.3.2. Keep the teacher-prepared poster model DRAFT pending source verification.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
