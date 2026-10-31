@@ -13,7 +13,7 @@ Teacher reviews the pictures and listening from Lesson 118.
 Teacher models short exchanges about where someone was and how it was.
 
 ## Activity 2 (25 minutes)
-Groups use Lesson 118 cards to ask Where were you? and Was it fun?, then share their weekend experiences.
+Groups use Lesson 118 cards to ask Where were you? and Was it fun?, then share their weekend experiences. Pupils complete Workbook p.63, Activity 2, by answering questions about where they were yesterday.
 
 ## Assessment / PBD (10 minutes)
 Teacher observes each pupil giving a short account of a past visit and answering one partner question about the experience.
