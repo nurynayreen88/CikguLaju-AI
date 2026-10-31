@@ -28,7 +28,7 @@
 **Teacher:** Invite pupils to describe a festival costume and connect their idea to a detail from the story.
 **Pupils:** Share a costume idea using story vocabulary.
 
-**PBD:** Observe independent story reading and dictionary lookup of unfamiliar festival words (SP 3.3.1 and 3.2.4).  
+**PBD:** Observe each pupil's independent reading of the celebration story for main Reading SP 3.3.1, including identification of supporting story details. Check interpretation of unfamiliar festival words using dictionary entries for complementary Reading SP 3.2.4. Workbook p.35 is the main written practice.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
