@@ -7,6 +7,7 @@ SQLite payment_requests table. The app's existing handler must be edited and
 tested separately before this is live.
 """
 import html
+from decimal import Decimal, InvalidOperation
 from supabase_admin_payment_history import fetch_admin_payment_history
 
 
@@ -30,8 +31,9 @@ def show_admin_payment_history(cid, page, request, send):
         uid = str(row.get("telegram_user_id") or "")
         amount = row.get("amount_rm")
         try:
-            money = f"RM{float(amount):.2f}" if amount is not None else "jumlah tidak direkod"
-        except (TypeError, ValueError, OverflowError):
+            value = Decimal(str(amount)) if amount is not None else None
+            money = f"RM{value:.2f}" if value is not None and value.is_finite() and value >= 0 else ("jumlah tidak direkod" if value is None else "jumlah tidak sah")
+        except (TypeError, ValueError, OverflowError, InvalidOperation):
             money = "jumlah tidak sah"
         kind = row["kind"]
         if kind == "rakan_pembangun_request":
