@@ -19,8 +19,8 @@
 **Pupils:** Listen to the helping-out song and identify details.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model using a nearby lyric or picture clue to infer a word meaning, then invite pupils to explain their inferences.
-**Pupils:** Use text clues to infer unfamiliar words.
+**Teacher:** Check pupils' identification of at least two helpful actions heard in the song (Student's Book p.71 Activity 1, Track 21), replaying relevant lines as needed; record listening responses as the main PBD evidence for SP 1.2.2. Then model using a lyric or picture clue to infer an unfamiliar word for complementary Reading SP 3.2.3.
+**Pupils:** Identify two helpful actions from the song and explain one unfamiliar word using a lyric or picture clue.
 
 
 
