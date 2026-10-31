@@ -16,8 +16,9 @@ Pupils complete Activity 1 in pairs, then identify places shown in Student's Boo
 Teacher says rules; pupils match them to places and write the relevant rules with correct spelling.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.56, Activity 1 to match prohibition signs with the correct directions. Then assess writing separately by asking pupils to write one clear prohibition sentence for a selected sign; matching alone does not establish independent writing ability.
-**Pupils:** Pupils complete Workbook p.56, Activity 1, by matching prohibition signs to the correct directions.
+Teacher reads two place rules aloud. Pupils match each rule to a place and submit written answers for a spelling check.
+
+**Workbook practice:** Pupils complete Workbook p.56, Activity 1, by matching prohibition signs to the correct directions. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils read one place rule.
