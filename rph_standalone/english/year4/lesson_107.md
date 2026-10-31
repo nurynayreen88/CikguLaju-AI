@@ -4,7 +4,7 @@
 **Main SP:** 1.2.3  
 **Complementary SP:** 3.3.1  
 **Duration:** 60 minutes  
-**References:** SB pp.66–67; TB pp.118–119; story Track 32; Primary Year 4 SK SOW Lesson 107
+**References:** SB pp.66–67; TB pp.118–119; Class CD2 Track 32 (story Activity 1, TB p.118); Primary Year 4 SK SOW Lesson 107
 
 ## Set induction (10 minutes)
 **Teacher:** Display Part One story pictures and elicit the events pupils remember before sequencing.
