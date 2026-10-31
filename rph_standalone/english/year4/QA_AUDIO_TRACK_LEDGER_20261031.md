@@ -256,3 +256,9 @@ Rechecked current Markdown after the eight-lesson CD2 correction batch. Outdated
 ## Machine-readable original CD asset manifest (31 October 2026)
 
 Created `QA_CLASS_CD_ASSET_MANIFEST_20261031.json` on this staging branch. It contains **220 original Drive MP3 file IDs**, grouped by CD1 (88), CD2 (88), and CD3 (44), keyed by track number **inside each disc**. File sizes are retained for metadata sanity checks. This is a source-asset lookup, **not** a lesson mapping: callers must independently validate each lesson's CD/track against TB/SOW before using an asset. Do not expose these Drive links as tested public downloads; no Telegram integration, playback test or production DB update has occurred.
+
+## TB-verified lesson-to-CD mapping artifact — 31 October 2026
+
+Added `QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json` with **14 individually TB-verified lessons** and **20 lesson-track usages**: 030, 032, 065, 097, 098, 102, 103, 104, 105, 107, 110, 123, 129, 134. It stores `disc` and `track` pairs, which resolve to actual Drive file IDs using `QA_CLASS_CD_ASSET_MANIFEST_20261031.json`. The mapping is intentionally limited to confirmed cases; all other lessons remain unmapped until source verification. The same audio may correctly be used by multiple lessons (for example CD2 Track 21 in 097 and 098).
+
+**Release boundary:** This JSON is staging QA data, not a production runtime mapping. No audio playback, public-access or Telegram delivery test has been performed. No automatic READY promotion.
