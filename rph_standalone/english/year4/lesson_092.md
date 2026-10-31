@@ -22,7 +22,7 @@
 **Teacher:** Invite pupils to present their models and explain the process using First, Second and Next in sequence.
 **Pupils:** Present the model using First, Second and Next.
 
-**Teacher:** Instruct pupils to complete Workbook p.56, the Unit 6 revision task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.56, the Unit 6 revision task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.56, the Unit 6 revision task; review the transport prompts and give short comparisons.
 
 ## Closure (5 minutes)
