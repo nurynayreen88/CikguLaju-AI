@@ -28,7 +28,10 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
             self.fail("Unexpected write")
         for uid, amount, mid in [(True, 10, 3), ("1|2", 10, 3),
                                  (1, "NaN", 3), (1, -1, 3),
-                                 (1, "10.001", 3), (1, 10, None)]:
+                                 (1, "10.001", 3), (1, 10, None),
+                                 (0, 10, 3), (1, 10, 0),
+                                 (9223372036854775808, 10, 3),
+                                 (1, 10, 9223372036854775808)]:
             with self.subTest(uid=uid, amount=amount, mid=mid):
                 with self.assertRaises(ValueError):
                     create_payment_request(fail_request, uid, amount, mid)
