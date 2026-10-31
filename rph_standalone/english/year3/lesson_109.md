@@ -16,7 +16,7 @@ Teacher displays models for turn left, turn right, traffic lights and stop; pupi
 Pupils read three sets of instructions on p.71 and match each text to the correct sign, then identify key words.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.56, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Direct pupils to Workbook p.56, Activity 2 to interpret prohibition signs. Ask pupils to read the written instructions or rule phrases associated with the signs and explain the words that support their answers, so the reading objective is checked rather than picture recognition alone.
 **Pupils:** Pupils complete Workbook p.56, Activity 2, by writing what the prohibition signs mean.
 
 ## Closure (5 minutes)
