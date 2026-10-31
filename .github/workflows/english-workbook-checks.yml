@@ -2,7 +2,7 @@ name: English Workbook safety checks
 on:
   push:
     branches:
-      - staging/english-wb-minimal-additions-20261031
+      - staging/english-wb-isolated-20261031
   pull_request:
     paths:
       - 'tools/apply_verified_workbook.py'
