@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Model turn-taking, then guide pairs through three personal prompts and two questions. Ask each pupil to describe one beach object using a familiar adjective.
-**Pupils:** Give three responses, ask two questions and describe one beach object using a familiar adjective. Pupils complete Workbook p.109, Activity 1, by matching the questions about beach objects with their answers.
+**Pupils:** Give three responses, ask two questions and describe one beach object using a familiar adjective.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record each pupil's three relevant responses, two intelligible questions and one clear object description.
-**Pupils:** Submit individual evidence.
+**Pupils:** Submit individual evidence. Pupils complete Workbook p.109, Activity 1, by matching the questions about beach objects with their answers.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
