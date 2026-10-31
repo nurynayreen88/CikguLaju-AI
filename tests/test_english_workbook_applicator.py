@@ -195,6 +195,11 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("If the matching recording is verified and available", pbd)
         self.assertIn("do not treat the Workbook audio task as completed", pbd)
 
+    def test_lesson_150_keeps_audio_unverified_when_recording_missing(self):
+        pbd = self.pbd(self.lesson(150))
+        self.assertIn("Otherwise, respond to the teacher's spoken comparison descriptions", pbd)
+        self.assertIn("do not treat the Workbook audio task as completed", pbd)
+
     def test_lesson_159_uses_verified_story_character_matching(self):
         pbd = self.pbd(self.lesson(159))
         self.assertIn("Workbook p.81, Activity 1", pbd)
