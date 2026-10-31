@@ -23,18 +23,19 @@ class WorkbookApplicatorTests(unittest.TestCase):
         "**QA:** NOT READY.\n"
     )
 
-    def test_replaces_assessment_without_changing_closure(self):
+    def test_appends_workbook_without_replacing_assessment(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
-        self.assertEqual(updated.count("Workbook p.48, Activity 2"), 2)
-        self.assertNotIn("**Teacher:** Check pupils' dialogue.", updated)
+        self.assertEqual(updated.count("Workbook p.48, Activity 2"), 1)
+        self.assertIn("**Teacher:** Check pupils' dialogue.", updated)
+        self.assertIn("**Pupils:** Perform a short exchange.", updated)
         self.assertIn("Existing closure remains unchanged.", updated)
-        self.assertLess(updated.index("Workbook p.48"), updated.index("## Closure"))
+        self.assertLess(updated.index("**Workbook practice:**"), updated.index("## Closure"))
 
-    def test_workbook_replacement_ends_before_closure(self):
+    def test_workbook_addition_ends_before_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
-        self.assertIn("**Pupils:** Complete Workbook p.48, Activity 2.\n\n## Closure", updated)
+        self.assertIn("Teacher checks answers and provides guidance.\\n\\n## Closure", updated)
 
     def test_preserves_original_activity_and_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
