@@ -16,7 +16,7 @@ Teacher introduces adjectives with flashcards and mimes responses to funny, scar
 Teacher introduces film and popcorn and asks pupils to predict suitable adjectives. Pupils read the cinema story quietly on p.76 to check predictions, answer questions in Activity 1 and identify its main idea. Teacher then guides Grammar Box on p.77 (Teacher's Book p.119).
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.61, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess reading by asking pupils to identify details in the Student's Book text and point to the words that support their answers. Use Workbook p.61, Activity 1 (past-tense 'was'/'were' sentences) afterward as grammar and writing practice, not as the sole reading assessment.
 **Pupils:** Pupils complete Workbook p.61, Activity 1, by writing past-tense sentences with 'was' and 'were'.
 
 ## Closure (5 minutes)
