@@ -22,7 +22,7 @@
 **Teacher:** Invite groups to present their story or poem, then assess each presentation using the guidebook p.128 form.
 **Pupils:** Present the creative work and use assessment criteria.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The Jungle Book using the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite feedback on a specific strength and one improvement in each presentation.
