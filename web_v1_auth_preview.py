@@ -68,7 +68,6 @@ def callback():
     session["web_telegram_user_id"] = user["telegram_user_id"]
     session["web_login_at"] = int(time.time())
     session["web_logout_csrf"] = secrets.token_urlsafe(24)
-    session["web_logout_token"] = session["web_logout_csrf"]
     return redirect(url_for(".whoami"))
 
 
