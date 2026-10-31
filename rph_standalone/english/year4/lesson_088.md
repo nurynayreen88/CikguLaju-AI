@@ -22,7 +22,7 @@
 **Teacher:** Prompt pupils to compare transport preferences, using one fact from the reading to explain their choices.
 **Pupils:** Compare transport experiences and preferences.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise reading about transport using a suitable Workbook activity, where available; teacher checks comprehension.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to recall one transport fact from the text and explain what information they need for upcoming building research.
