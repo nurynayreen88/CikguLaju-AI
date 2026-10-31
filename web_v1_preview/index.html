@@ -26,15 +26,32 @@
 <section class="hero"><span class="eyebrow" style="color:#c8f4e6">RPH lebih mudah</span><h2>Sediakan bahan PdP di satu tempat</h2><p>Pilih lesson dan akses RPH melalui Telegram atau web apabila integrasi siap.</p></section><div class="panel"><div class="grid"><div class="tile"><strong>10 Janaan Percuma</strong><span class="muted">Tawaran pengguna baharu · Baki sebenar dipaparkan selepas log masuk</span></div><div class="tile"><strong>Rakan Pembangun</strong><span class="muted">Status akses disemak melalui akaun yang disahkan</span></div></div></div><div class="panel"><div class="notice" role="status"><strong>Pratonton sahaja.</strong> Belum disambungkan kepada akaun, database atau penjana RPH. Tiada dokumen boleh dijana daripada halaman ini.</div></div>
 <section class="panel" aria-labelledby="rph"><h2 id="rph">Sediakan RPH</h2><p class="muted">Pilih maklumat PdP mengikut turutan.</p><div class="steps" aria-label="Langkah menyediakan RPH"><span>1 · Tahun</span><span>2 · Subjek</span><span>3 · Unit</span><span>4 · Lesson</span></div>
 <div class="grid">
-<div><label for="tahun">Tahun / Tingkatan</label><select id="tahun"><option>Pilih Tahun / Tingkatan</option><option>Tahun 1</option><option>Tahun 2</option><option>Tahun 3</option><option>Tahun 4</option><option>Tahun 5</option><option>Tahun 6</option></select></div>
-<div><label for="subjek">Subjek</label><select id="subjek"><option>Pilih Subjek</option><option>Bahasa Inggeris</option><option>Bahasa Melayu</option><option>Matematik</option><option>Sains</option><option>Pendidikan Islam</option><option>PJPK</option></select></div>
+<div><label for="tahun">Tahun / Tingkatan</label><select id="tahun" required><option value="">Pilih Tahun / Tingkatan</option><option>Tahun 1</option><option>Tahun 2</option><option>Tahun 3</option><option>Tahun 4</option><option>Tahun 5</option><option>Tahun 6</option></select></div>
+<div><label for="subjek">Subjek</label><select id="subjek" required><option value="">Pilih Subjek</option><option>Bahasa Inggeris</option><option>Bahasa Melayu</option><option>Matematik</option><option>Sains</option><option>Pendidikan Islam</option><option>PJPK</option></select></div>
 <div><label for="unit">Unit / Tajuk</label><select id="unit" disabled><option>Akan dimuat daripada database</option></select></div>
 <div><label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Akan dimuat daripada database</option></select></div>
-</div><button type="button" disabled title="Memerlukan backend dan pengesahan pengguna">Jana RPH (belum aktif)</button></section>
+</div><p id="pilihan-status" class="muted" role="status" aria-live="polite">Pilih tahun dan subjek untuk memulakan.</p><button type="button" disabled title="Memerlukan backend dan pengesahan pengguna">Jana RPH (belum aktif)</button></section>
 <section class="panel"><h2>Fungsi lain</h2><div class="grid">
 <div class="tile"><strong>RPH Hari Ini</strong><span class="muted">Ikut jadual guru</span></div>
 <div class="tile"><strong>RPH Minggu Ini</strong><span class="muted">Semak cuti sebelum jana</span></div>
 <div class="tile"><strong>RPT 2027</strong><span class="muted">Akses mengikut kelayakan</span></div>
 <div class="tile"><strong>Profil Saya</strong><span class="muted">Akaun dan baki janaan</span></div>
 </div></section><footer class="bottom">CikguLaju AI · Pratonton reka bentuk sahaja · Tiada data akaun sebenar dipaparkan</footer>
-</div></body></html>
+</div><script>
+(function () {
+  "use strict";
+  const year = document.getElementById("tahun");
+  const subject = document.getElementById("subjek");
+  const status = document.getElementById("pilihan-status");
+  function update() {
+    const y = year.value;
+    const s = subject.value;
+    status.textContent = y && s
+      ? "Pilihan: " + y + " · " + s + ". Unit dan lesson akan tersedia selepas sambungan database."
+      : "Pilih tahun dan subjek untuk memulakan.";
+  }
+  year.addEventListener("change", update);
+  subject.addEventListener("change", update);
+  update();
+}());
+</script></body></html>
