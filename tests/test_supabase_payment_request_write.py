@@ -12,7 +12,7 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
         calls = []
         def request(method, path, **kwargs):
             calls.append((method, path, kwargs))
-            data = kwargs["json"]
+            if method == "GET":\n                return []\n            data = kwargs["json"]
             return [{"id": 301, "telegram_user_id": data["telegram_user_id"],
                      "telegram_message_id": data["telegram_message_id"],
                      "status": "pending"}]
@@ -31,9 +31,9 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     create_payment_request(fail_request, uid, amount, mid)
 
-    def test_fails_closed_if_insert_response_is_unconfirmed(self):
+    def test_retry_returns_existing_supabase_id(self):\n        calls = []\n        def request(method, path, **kwargs):\n            calls.append(method)\n            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}]\n        self.assertEqual(create_payment_request(request, 1, 10, 2), 41)\n        self.assertEqual(calls, ["GET"])\n\n    def test_fails_closed_if_insert_response_is_unconfirmed(self):
         with self.assertRaises(RuntimeError):
-            create_payment_request(lambda *a, **kw: [], 1, 10, 2)
+            create_payment_request(lambda method, *a, **kw: [] if method == "GET" else None, 1, 10, 2)
 
 
 if __name__ == "__main__":
