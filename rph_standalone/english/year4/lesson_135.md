@@ -22,7 +22,7 @@
 **Teacher:** Model one description of a sportsperson using a superlative, then organise pair guessing turns and check whether each clue is clear and accurate.
 **Pupils:** Describe and identify people using superlatives.
 
-**Teacher:** Instruct pupils to complete Workbook p.79, Activity 3 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.79, Activity 3 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.79, Activity 3; complete the opinions about sports using the picture prompts.
 
 ## Closure (5 minutes)
