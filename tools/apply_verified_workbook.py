@@ -81,6 +81,8 @@ def main():
             continue
         changes.append((file, updated, hashlib.sha256(original.encode('utf-8')).hexdigest()))
         print(f"{'APPLY' if args.apply else 'DRY-RUN'} {year}/{lesson}: Workbook p.{page}, {activity}")
+    if args.apply and not changes:
+        raise RuntimeError("No verified Workbook changes eligible; refusing empty apply")
     if args.apply:
         if missing_files:
             raise RuntimeError(f"Missing {len(missing_files)} lesson file(s); no files written")
