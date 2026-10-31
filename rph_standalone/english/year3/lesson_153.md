@@ -16,8 +16,9 @@ Teacher uses planet facts to introduce superlative adjectives and the Grammar Bo
 Pairs answer Student's Book p.99 questions from memory, then check the text on p.98. Pupils write a short planet worksheet with full sentences, capitals and punctuation.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.80, Activity 2, the Solar System crossword. Explain the printed clues, check spelling of planet names and assess pupils' written answers.
-**Pupils:** Pupils complete the Workbook p.80, Activity 2 crossword using the printed clues about the Sun and planets.
+Teacher checks two written planet facts for accurate superlatives, capital letters and punctuation. Pupils revise one sentence.
+
+**Workbook practice:** Pupils complete the Workbook p.80, Activity 2 crossword using the printed clues about the Sun and planets. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one superlative sentence.
