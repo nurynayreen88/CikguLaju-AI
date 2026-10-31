@@ -14,10 +14,11 @@ Teacher reviews routine and occupation vocabulary. Pupils respond to picture pro
 Teacher introduces the worksheet text about Hamid and May. Pupils read silently, identify the writer and locate frequency adverbs and third-person verb endings.
 
 ## Activity 2 — Language consolidation (25 minutes)
-Teacher models unjumbling a sentence and distributes sentence strips. Pupils reconstruct correct routine sentences in groups and write short descriptions; optional revision activities from Student's Book p.24 support learning needs. Pupils complete Workbook p.16, Activity 2, by writing questions and matching the answers about everyday activities.
+Teacher models unjumbling a sentence and distributes sentence strips. Pupils reconstruct correct routine sentences in groups and write short descriptions; optional revision activities from Student's Book p.24 support learning needs.
 
-## PBD (10 minutes)
-Teacher checks reading details and accurate written descriptions. Pupils complete a brief unit self-assessment.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.16, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.16, Activity 2, by writing questions and matching the answers about everyday activities.
 
 ## Closure (5 minutes)
 Teacher reviews common language errors and asks pupils to identify one area for improvement.
