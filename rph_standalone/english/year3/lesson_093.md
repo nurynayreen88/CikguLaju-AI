@@ -13,7 +13,7 @@ Teacher reviews food vocabulary using the warm-up from Teacher's Book p.96. Pupi
 Pupils read the text about Tony's pizza before listening to the recording and say whether they would like it.
 
 ## Activity 2 — Reading and writing (25 minutes)
-Teacher guides Student's Book p.61 Activity 1 and the Writing Tip. Pupils identify the main idea and complete sentence stems about the pizza in full sentences.
+Teacher guides Student's Book p.61 Activity 1 and the Writing Tip. Pupils identify the main idea and complete sentence stems about the pizza in full sentences. Pupils complete Workbook p.48, Activity 2, by drawing and describing their favourite pizza or salad.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Ask each pupil to state the main idea of the pizza text and check one completed sentence for a capital letter and full stop.
