@@ -28,7 +28,7 @@
 **Teacher:** Display one sentence with an incorrect possessive form and invite pupils to explain and correct it.
 **Pupils:** Correct one possessive sentence.
 
-**PBD:** Check pupils' use of possessive pronouns and apostrophe-s in Activity 3, including punctuation corrections, against SP 4.3.1 and 3.2.2.  
+**PBD:** Assess pupils' independently punctuated possessive sentences in SB Activity 3 for main Writing SP 4.3.1, including apostrophe-s and sentence punctuation. Check their identification of ownership clues in the printed story for complementary Reading SP 3.2.2. Do not invent a Workbook task.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
