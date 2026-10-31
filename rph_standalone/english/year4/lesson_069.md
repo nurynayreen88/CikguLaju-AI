@@ -22,7 +22,7 @@
 **Teacher action:** Organise pair checking and prompt pupils to explain how a story event makes them feel.
 **Pupil action:** Compare answers and discuss feelings about events.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The King of Kites using the CCL Short Story Guide; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pairs to demonstrate a suitable social expression and explain which story situation it fits.
