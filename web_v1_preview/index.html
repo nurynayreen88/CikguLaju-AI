@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CikguLaju AI — Pratonton Web V1</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#182b3a;background:#f5f7fa}
+    *{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    h1{font-size:1.5rem;margin:0}.muted{color:#566677}
+    .panel{background:#fff;border:1px solid #dde5ed;border-radius:16px;padding:20px;margin-top:18px}
+    .notice{background:#fff5df;border:1px solid #edcf84;border-radius:10px;padding:12px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    label{display:block;font-weight:600;margin:12px 0 5px}select{width:100%;padding:12px;border:1px solid #aab9c7;border-radius:9px;background:white}
+    button{border:0;border-radius:9px;background:#1265a8;color:white;padding:13px 18px;font-weight:600;width:100%;margin-top:18px;cursor:pointer}
+    button:disabled{background:#a5b0ba;cursor:not-allowed}
+    .tile{border:1px solid #e1e7ed;padding:16px;border-radius:12px;background:#fff}
+    .tile strong{display:block;margin-bottom:4px}
+    @media(max-width:600px){.grid{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<header><div><h1>📘 CikguLaju AI</h1><div class="muted">Dashboard guru — prototaip antaramuka</div></div><span class="muted">Web V1 · Staging</span></header>
+<div class="panel"><div class="notice" role="status"><strong>Pratonton sahaja.</strong> Belum disambungkan kepada akaun, database atau penjana RPH. Tiada dokumen boleh dijana daripada halaman ini.</div></div>
+<section class="panel" aria-labelledby="rph"><h2 id="rph">Sediakan RPH</h2><p class="muted">Aliran cadangan: Tahun → Subjek → Unit → Lesson.</p>
+<div class="grid">
+<div><label for="tahun">Tahun / Tingkatan</label><select id="tahun"><option>Pilih Tahun / Tingkatan</option><option>Tahun 1</option><option>Tahun 2</option><option>Tahun 3</option><option>Tahun 4</option><option>Tahun 5</option><option>Tahun 6</option></select></div>
+<div><label for="subjek">Subjek</label><select id="subjek"><option>Pilih Subjek</option><option>Bahasa Inggeris</option><option>Bahasa Melayu</option><option>Matematik</option><option>Sains</option><option>Pendidikan Islam</option><option>PJPK</option></select></div>
+<div><label for="unit">Unit / Tajuk</label><select id="unit" disabled><option>Akan dimuat daripada database</option></select></div>
+<div><label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Akan dimuat daripada database</option></select></div>
+</div><button type="button" disabled title="Memerlukan backend dan pengesahan pengguna">Jana RPH (belum aktif)</button></section>
+<section class="panel"><h2>Fungsi lain</h2><div class="grid">
+<div class="tile"><strong>RPH Hari Ini</strong><span class="muted">Ikut jadual guru</span></div>
+<div class="tile"><strong>RPH Minggu Ini</strong><span class="muted">Semak cuti sebelum jana</span></div>
+<div class="tile"><strong>RPT 2027</strong><span class="muted">Akses mengikut kelayakan</span></div>
+<div class="tile"><strong>Profil Saya</strong><span class="muted">Akaun dan baki janaan</span></div>
+</div></section>
+</div></body></html>
