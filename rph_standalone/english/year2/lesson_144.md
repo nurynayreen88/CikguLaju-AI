@@ -23,8 +23,8 @@
 **Pupils:** Write four words and two sentences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Check each pupil's four legible words and two sentences for correct capitals, word spacing and full stops.
-**Pupils:** Submit individual evidence.
+**Teacher:** Direct pupils to Workbook p.106, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.106, Activity 1, by writing the missing beach-action words under the pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.

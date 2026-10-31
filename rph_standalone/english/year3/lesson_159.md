@@ -19,8 +19,8 @@
 **Pupils:** Predict the strongest, funniest or fastest characters, read to check, listen to the story and share responses.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Ask each pupil to identify a favourite character or event, give one story-based reason and read one short section independently.
-**Pupils:** Explain a favourite character or event with one supporting reason.
+**Teacher:** Direct pupils to Workbook p.81, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.81, Activity 1, by matching the story characters with their descriptions.
 
 ## Closure (5 minutes)
 **Teacher:** Invite a short reflection.

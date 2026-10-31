@@ -22,8 +22,8 @@
 **Pupils:** Underline supporting details and give two oral answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Score five reading details (SP 3.2.2) and two non-verbal responses (SP 2.2.1). Score five individual detail answers (0–5) and two oral responses (0–2); record independent accuracy and any support.
-**Pupils:** Submit individual evidence.
+**Teacher:** Direct pupils to Workbook p.103, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.103, Activity 1, by drawing and labelling examples of what their robot can do.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.

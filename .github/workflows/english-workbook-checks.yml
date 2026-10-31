@@ -1,0 +1,32 @@
+name: English Workbook safety checks
+on:
+  push:
+    branches:
+      - staging/english-wb-minimal-additions-20261031
+  pull_request:
+    paths:
+      - 'tools/apply_verified_workbook.py'
+      - 'tools/audit_english_workbook_coverage.py'
+      - 'tests/test_english_workbook_applicator.py'
+      - '.github/workflows/english-workbook-checks.yml'
+  workflow_dispatch:
+jobs:
+  workbook-checks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Regression tests
+        run: python -m unittest discover -s tests -p 'test_english_workbook_applicator.py' -v
+      - name: Audit Year 2 and Year 3 (read-only)
+        run: python tools/audit_english_workbook_coverage.py --review-csv workbook_review.csv
+      - name: Upload audit CSV
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-workbook-review
+          path: workbook_review.csv
+          if-no-files-found: error

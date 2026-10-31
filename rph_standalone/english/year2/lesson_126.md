@@ -23,8 +23,8 @@
 **Pupils:** Select five pictures and answer two prompts.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three main-idea choices (SP 1.2.1) and two interpretations using visual clues (SP 1.3.1) per pupil.
-**Pupils:** Submit individual evidence.
+**Teacher:** Direct pupils to Workbook p.106, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.106, Activity 1, by completing the beach-action sentences with the words provided.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful beach word.

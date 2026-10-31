@@ -15,8 +15,9 @@ Teacher writes Japan on the board or displays a map and invites pupils to share 
 ## Activity 2 — Reading (25 minutes)
 Teacher guides Student's Book pp.48–49 using Teacher's Book pp.78–79. Pupils read the text about a Japanese house, check their predictions and identify the main idea and meaning of unfamiliar words.
 
-## PBD (10 minutes)
-Pupils state the main idea of the text and infer one word from its surrounding clues.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.38, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.38, Activity 1, by writing sentences about the rooms and furniture in a house.
 
 ## Closure (5 minutes)
 Pupils share one similarity or difference between Japanese and Malaysian homes.

@@ -16,7 +16,8 @@ Groups read written directions and trace routes from one point to another on a s
 Pupils identify correct and incorrect directions on a worksheet, then write short corrected instructions.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks each pupil's corrected route instructions against the map and asks them to identify one clue from the original written directions. Pupils revise an inaccurate step.
+**Teacher:** Direct pupils to Workbook p.58, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.58, Activity 1, by matching direction signs with the correct words.
 
 ## Closure (5 minutes)
 Pupils share one correct route instruction.

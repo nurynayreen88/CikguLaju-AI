@@ -16,7 +16,8 @@ Teacher shows the pictures from Student's Book Activity 1. Pupils identify place
 Pupils listen to the holiday song, raise matching pictures, order the pictures and complete SB p.85 Activity 1.
 
 ## Assessment / PBD (10 minutes)
-Teacher asks pupils to identify two holiday activities from the song and describe one activity using the picture prompts.
+**Teacher:** Direct pupils to Workbook p.68, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.68, Activity 1, by unscrambling holiday action words.
 
 ## Closure (5 minutes)
 Pupils name one holiday activity.

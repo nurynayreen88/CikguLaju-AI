@@ -23,8 +23,8 @@
 **Pupils:** Locate details and write two answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record four located details and two short answers for each pupil.
-**Pupils:** Provide individual evidence.
+**Teacher:** Direct pupils to Workbook p.113, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.113, Activity 1, by reading the beach passage and choosing the correct words.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.

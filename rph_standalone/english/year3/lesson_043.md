@@ -15,8 +15,9 @@ Teacher describes the picture on Student's Book p.29 with deliberate factual mis
 ## Activity 2 — Listening and revision (25 minutes)
 Teacher guides Activity 3 using Teacher's Book p.51. Pupils then retrieve marked descriptions from Lesson 41, correct errors and rewrite neat final sentences with accurate spelling and punctuation.
 
-## PBD (10 minutes)
-Teacher checks specific listening details and revised writing. Pupils explain one correction.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.24, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.24, Activity 1, by correcting present continuous sentences about pictured actions.
 
 ## Closure (5 minutes)
 Pupils share one accurate sentence and reflect on improvements.

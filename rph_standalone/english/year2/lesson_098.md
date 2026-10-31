@@ -24,8 +24,8 @@
 **Pupils:** Locate details, underline evidence and answer questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three sentence main ideas (SP 3.2.1) and two supported spoken-detail answers (SP 1.2.2).
-**Pupils:** Submit individual reading evidence.
+**Teacher:** Direct pupils to Workbook p.101, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.101, Activity 1, by reading the picture-story questions and writing the answers.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review how to locate evidence in a text.

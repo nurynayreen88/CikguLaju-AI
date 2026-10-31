@@ -25,8 +25,8 @@
 **Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess two interpretations using visual clues (SP 1.3.1) and two spoken object descriptions (SP 2.1.5). Record independent performance and support required.  
-**Pupils:** Demonstrate the skill individually.
+**Teacher:** Direct pupils to Workbook p.90, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.90, Activity 1, by writing the material names cotton, wool and leather under the pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two words and ask for a relevant sentence.  

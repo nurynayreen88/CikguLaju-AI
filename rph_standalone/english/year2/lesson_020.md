@@ -28,7 +28,7 @@ Draw a picture, show a friend!”
 
 ## Activity 2 — Group rehearsal and creative response (25 minutes)
 **Teacher:** Have groups practise the whole chant, first with displayed text and then with word cards as reduced prompts. Ask pairs to perform to one another and give feedback on clear words and appropriate gestures. Model the two writing frames; pupils select two activities and write their own sentences. Encourage confident pupils to change one chant action and invent a matching gesture, clearly identifying this as their own addition.  
-**Pupils:** Rehearse and perform the four lines, give partner feedback and write two personal free-time sentences.
+**Pupils:** Rehearse and perform the four lines, give partner feedback and write two personal free-time sentences. Pupils complete Workbook p.65, Activity 1, by listening and matching pictures to the days and free-time activities.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Observe each pupil or pair performing four lines, noting intelligibility, rhythm and at least two appropriate gestures. Collect two independent sentences and check that each communicates a free-time activity. Record performance and writing evidence separately, including any prompts.  

@@ -15,8 +15,9 @@ Teacher guides the picture guessing game from Student's Book p.29 Activity 4. Pu
 ## Activity 2 — Pair guessing game (25 minutes)
 Pupils prepare cut-out cards and play the speaking-and-listening guessing game from Teacher's Book p.52 Activity 1. Teacher monitors pronunciation and use of positive and negative present continuous sentences.
 
-## PBD (10 minutes)
-Teacher observes descriptive speaking and understanding of short questions. Pupils demonstrate one exchange.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.21, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.21, Activity 2, by matching questions about actions to short answers.
 
 ## Closure (5 minutes)
 Teacher uses the optional card game from Teacher's Book p.53 and gives feedback.
