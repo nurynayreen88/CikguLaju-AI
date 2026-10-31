@@ -22,7 +22,7 @@
 **Teacher action:** Play Track 79 for TB Activity 3, pause for key details and ask pupils to justify one answer from what they heard.
 **Pupil action:** Listen to Track 79 and check details in Activity 3.
 
-**Teacher:** Instruct pupils to complete Workbook p.41, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.41, Activity 1 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.41, Activity 1; complete the food-container expressions.
 
 ## Closure (5 minutes)
