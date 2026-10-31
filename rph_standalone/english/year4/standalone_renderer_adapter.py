@@ -31,14 +31,16 @@ def adapt_year4_standalone(markdown: str) -> str:
     for heading in blocks:
         if ACTIVITY.match(heading) or heading.lower().startswith("reinforcement"):
             activities.append(f"{heading}\n{body(heading)}")
+    # The active English renderer expects these exact standard field names.
+    # Do not infer content standards from learning-standard codes.
     title = re.search(r"^\*\*Topic:\*\*\s*(.+)$", markdown, re.M)
     main_sp = re.search(r"^\*\*Main SP:\*\*\s*(.+)$", markdown, re.M)
     comp_sp = re.search(r"^\*\*Complementary SP:\*\*\s*(.+)$", markdown, re.M)
     refs = re.search(r"^\*\*References:\*\*\s*(.+)$", markdown, re.M)
     fields = [
         ("TOPIC", title.group(1) if title else ""),
-        ("MAIN LEARNING STANDARD", main_sp.group(1) if main_sp else ""),
-        ("COMPLEMENTARY LEARNING STANDARD", comp_sp.group(1) if comp_sp else ""),
+        ("MAIN LEARNING STANDARD", main_sp.group(1).strip() if main_sp else ""),
+        ("COMPLEMENTARY LEARNING STANDARD", comp_sp.group(1).strip() if comp_sp else ""),
         ("TEACHING AND LEARNING MATERIALS", refs.group(1) if refs else ""),
         ("SET INDUCTION", body("Set induction")),
         ("MAIN ACTIVITIES", "\n\n".join(activities)),
