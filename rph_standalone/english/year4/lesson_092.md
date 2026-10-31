@@ -22,7 +22,7 @@
 **Teacher:** Invite pupils to present their models and explain the process using First, Second and Next in sequence.
 **Pupils:** Present the model using First, Second and Next.
 
-Pupils practise speaking about journeys and transport using a suitable Workbook activity, where available; teacher checks their responses.
+Pupils use Workbook printed p.56, Unit 6 'Revision', to prepare short spoken comparisons about journeys and transport.
 
 ## Closure (5 minutes)
 **Teacher:** Elicit action verbs used during model construction and ask pupils to use one in a sequence sentence.
