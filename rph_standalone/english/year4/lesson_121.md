@@ -22,8 +22,8 @@
 **Teacher:** Give pupils a checklist for clear descriptions, relevant body-part vocabulary and punctuation. Organise partner feedback and allow time to revise one sentence.
 **Pupils:** Review a partner's dinosaur description.
 
-**Teacher:** Instruct pupils to complete Workbook p.71, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
-**Pupils:** Complete Workbook p.71, Activity 1; answer the reading questions about the Elephant Orphanage text.
+**Teacher:** Instruct pupils to complete Workbook p.72, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.72, Activity 1; answer the reading questions about the Elephant Orphanage text.
 
 ## Closure (5 minutes)
 **Teacher:** Invite two pairs to present their invented dinosaur and explain one distinctive feature.
