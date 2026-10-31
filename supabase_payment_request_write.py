@@ -55,8 +55,9 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
                 or row.get("telegram_user_id") != payload["telegram_user_id"]
                 or row.get("telegram_message_id") != payload["telegram_message_id"]
                 or not _same_amount(row.get("amount_rm"), amount)
-                or row.get("status") not in ("pending", "approved", "rejected")):
+                or row.get("status") != "pending"):
             raise RuntimeError("Existing payment request does not match")
+        # An approved/rejected request must never masquerade as a new pending one.
         return row["id"]
     pending = request("GET", f"pioneer_payment_requests?select=id,telegram_user_id,telegram_message_id,amount_rm,status&telegram_user_id=eq.{int(telegram_user_id)}&status=eq.pending&limit=2")
     if not isinstance(pending, list):
