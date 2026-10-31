@@ -25,6 +25,8 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
         raise ValueError("Invalid Telegram user ID")
     if isinstance(telegram_message_id, bool) or not str(telegram_message_id).isascii() or not str(telegram_message_id).isdigit():
         raise ValueError("Invalid Telegram message ID")
+    if len(str(telegram_user_id)) > 19 or len(str(telegram_message_id)) > 19:
+        raise ValueError("Telegram identifiers must fit positive bigint")
     if not 0 < int(telegram_user_id) <= 9223372036854775807 or not 0 < int(telegram_message_id) <= 9223372036854775807:
         raise ValueError("Telegram identifiers must fit positive bigint")
     try:
