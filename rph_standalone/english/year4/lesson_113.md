@@ -22,7 +22,7 @@
 **Teacher:** Ask pupils to answer the animal questions and explain their choices using picture or language clues.
 **Pupils:** Answer questions and justify choices.
 
-**Teacher:** Instruct pupils to complete Workbook p.68, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.68, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.68, Activity 1; complete the animal crossword using the picture clues.
 
 ## Closure (5 minutes)
