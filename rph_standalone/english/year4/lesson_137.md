@@ -22,7 +22,7 @@
 **Teacher:** Display a checklist for accurate superlatives, text evidence and punctuation; guide pairs to review and revise their descriptions.
 **Pupils:** Check sentences against the text and correct mistakes.
 
-**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.81, Activity 2; write a paragraph about a favourite athlete using the information in Activity 1.
 
 ## Closure (5 minutes)
