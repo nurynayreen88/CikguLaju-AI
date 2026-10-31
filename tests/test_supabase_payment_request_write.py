@@ -17,7 +17,7 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
             data = kwargs["json"]
             return [{"id": 301, "telegram_user_id": data["telegram_user_id"],
                      "telegram_message_id": data["telegram_message_id"],
-                     "status": "pending"}]
+                     "status": "pending", "amount_rm": data["amount_rm"], "proof_received": True}]
         self.assertEqual(create_payment_request(request, 12345, "10.00", 456), 301)
         self.assertEqual(calls[-1][0:2], ("POST", "pioneer_payment_requests"))
         self.assertEqual(calls[-1][2]["json"]["amount_rm"], "10.00")
@@ -28,7 +28,7 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
             if method == "GET":
                 return []
             data = kwargs["json"]
-            return [{"id": 302, "telegram_user_id": data["telegram_user_id"], "telegram_message_id": data["telegram_message_id"], "status": "pending"}]
+            return [{"id": 302, "telegram_user_id": data["telegram_user_id"], "telegram_message_id": data["telegram_message_id"], "status": "pending", "amount_rm": data["amount_rm"], "proof_received": True}]
         self.assertEqual(create_payment_request(request, 1, "10.000", 2), 302)
 
     def test_rejects_tiny_nonzero_fraction_without_writing(self):
