@@ -52,6 +52,15 @@ class CalendarIntegrityTests(unittest.TestCase):
         with self.assertRaises(CalendarDataError):
             school_days({}, "NEGERI REKAAN", "2027-01-01", "2027-01-02")
 
+    def test_zero_pdp_week_remains_empty(self):
+        records = {("KEDAH", day.isoformat()): {"Status PdP Dikira": "CUTI"}
+                   for day in (date(2027, 2, 7) + timedelta(days=i) for i in range(6))}
+        self.assertEqual(school_days(records, "Kedah", "2027-02-07", "2027-02-12"), [])
+
+    def test_missing_date_cannot_be_treated_as_school_day(self):
+        with self.assertRaises(CalendarDataError):
+            school_days({}, "Kedah", "2027-02-07", "2027-02-12")
+
     def test_unknown_state_rejected_by_pdp_catalogue(self):
         rows = [{"Negeri": "NEGERI REKAAN", "Tahun": 4, "PdP": i}
                 for i in range(1, 35)]
