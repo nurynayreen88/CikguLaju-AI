@@ -50,3 +50,14 @@ Directly checked the KPM Year 4 SOW section **LESSON: 30 (Writing 6)** (Scheme o
 A **single optional Workbook sentence** was added to staging `lesson_030.md` in commit `1ca15ddd1fa48ab0be1a47143911fa9e2fc3d57d`: printed WB p.14 Activity 1, household-duty sentences from pictures, with spelling checked. This task was visually observed in the Workbook but **is an optional supplementary exercise, not a SOW/TB-prescribed lesson assignment**. Existing SB activities, listening evidence, and DRAFT status were preserved.
 
 **Open gate:** Inspect TB p.39 directly to resolve the CD1/CD2 discrepancy; check time allocation before considering optional WB work for production. Audio playback and Telegram delivery remain untested.
+
+## Lesson 030 — direct Teacher's Book visual resolution
+
+**Source:** Original scanned `Get Smart Plus 4 Teacher's Book.pdf` (Drive ID `1lBWc96e8DCIMSdxzRuLC7CissHL52q8v`), **PDF page 25 / printed TB page 39**, visually inspected on 31 October 2026. The preceding PDF page 24 is printed TB page 38.
+
+- TB p.39 **Activity 2: “Class CD1 - Track 29”** (Student's Book p.20 listening task). This confirms the existing staging RPH CD1 Track 29 mapping.
+- TB p.39 **Workbook Activity 1: “Class CD1 - Track 30”**, followed by Workbook Activities 2 and 3. Track 30 belongs to the Workbook activity; it must **not** replace the SB Activity 2 Track 29.
+- KPM SOW Lesson 030 prints “CD2, Track 29”; this conflicts with the directly inspected TB page. The discrepancy is **resolved for the current RPH's SB activity in favour of the original TB CD1 Track 29**; retain the SOW mismatch in provenance.
+- Printed WB p.14 Activity 1 was visually inspected previously and is an optional writing extension in the current RPH, not a SOW-prescribed activity. Do not treat its listening component as independently playback-verified.
+
+**Remaining:** Verify CD1 Track 29 and Track 30 MP3 playback and Telegram access; review Word/PDF output. Keep DRAFT until those gates and approval.
