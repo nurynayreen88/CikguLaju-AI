@@ -60,6 +60,13 @@ class PaymentHistoryTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             fetch_admin_payment_history(lambda *_: [None])
 
+    def test_malformed_timestamp_does_not_crash_sort(self):
+        def request(method, path):
+            if path.startswith("payments?"):
+                return [{"telegram_user_id": 1, "status": "paid", "created_at": 123}, {"telegram_user_id": 2, "status": "paid", "created_at": "2026-10-31"}]
+            return []
+        self.assertEqual(len(fetch_admin_payment_history(request)), 2)
+
     def test_malformed_limit_validation(self):
         for limit in (None, "invalid", float("inf")):
             with self.subTest(limit=limit):
