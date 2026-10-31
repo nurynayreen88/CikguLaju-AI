@@ -19,9 +19,6 @@
 **Pupils:** Use dictionaries and context clues to find meanings.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Organise pairs to compare dinosaurs with familiar animals, prompting accurate comparative adjectives.
-**Pupils:** Compare dinosaurs and familiar animals in pairs.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.71, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.71, Activity 1; complete the comparative animal sentences using the word bank.
 
