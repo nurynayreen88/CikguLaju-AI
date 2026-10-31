@@ -19,8 +19,8 @@
 **Pupils:** Draw and describe an original dinosaur.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Assign Workbook p.72, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. Assess pupils' own written sentences or text for the main Writing SP; do not rely on isolated vocabulary answers alone.
-**Pupils:** Complete Workbook p.72, Activity 1; answer the reading questions about the Elephant Orphanage text.
+**Teacher:** Use pupils' written descriptions of their invented dinosaurs from Activity 2 as the main Writing Assessment/PBD evidence for SP 4.2.4. Check whether pupils describe body parts and abilities in their own sentences, and provide brief corrective feedback. Do not assign Workbook p.72, Activity 1 here: its Elephant Orphanage reading questions do not match this dinosaur-writing task.
+**Pupils:** Write and improve short descriptions of their invented dinosaurs, including body parts and abilities.
 
 ## Closure (5 minutes)
 **Teacher:** Invite two pairs to present their invented dinosaur and explain one distinctive feature.
