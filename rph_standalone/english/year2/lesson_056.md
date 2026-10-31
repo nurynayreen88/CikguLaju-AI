@@ -27,7 +27,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Check five individual listening choices and observe one independent reference lookup. Note prompts required.  
-**Pupils:** Respond individually. Pupils complete Workbook p.82, Activity 1, by finding and circling the clothes words in the wordsearch.
+**Pupils:** Respond individually.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
