@@ -138,3 +138,28 @@
 | 111–120 | None observed | Check SOW; includes literature, self-assessment and teacher-prepared tasks |
 
 **Source boundary:** This inventory records exact explicit numbered-track references in the current Markdown files. It does not independently prove that every SOW-required audio reference is present, nor that the corresponding MP3 is accessible or correct. In particular, Lesson 110 Track 31 and Lesson 107 Track 32 should not be renumbered by lesson order alone.
+
+## Lessons 121–160 — repository-reference pass (31 October 2026)
+
+| Lesson | Track references observed in RPH | Follow-up |
+|---|---|---|
+| 121–138 | No explicit numbered track observed | **Priority SOW gap audit:** this does not prove these lessons have no prescribed audio; some use teacher-prepared listening tasks |
+| 139 | Track 60; CD unresolved | Verify CD and MP3 |
+| 140–144 | None observed | Check SOW; Lesson 144 is teacher-selected Language Awareness |
+| 145 | Track 68; CD unresolved | Verify CD and MP3; teaching step now explicitly names Track 68 |
+| 146 | None observed | Check SOW |
+| 147 | Track 72; CD unresolved | Verify CD and MP3; teaching step now explicitly names Track 72 |
+| 148–149 | None observed | Check SOW; includes literature |
+| 150 | CD2 Tracks 73 and 74 | Verify both MP3 files |
+| 151 | None observed | English-learning survey; no track assumed |
+| 152 | CD2 Tracks 75 and 76 | Verify both MP3 files |
+| 153–154 | None observed | Check SOW; includes literature |
+| 155 | CD2 Track 78 | Verify MP3 for Activity 4 |
+| 156 | CD2 Track 79 | Verify vocabulary MP3 |
+| 157–160 | None observed | Check SOW; includes CLIL, literature and project lessons |
+
+## Inventory milestone and next verification stage
+
+**160/160 lesson Markdown files inspected for explicit numbered audio-track references** across the preceding ledger sections. This is a **repository inventory only**. It is NOT a complete SOW-to-track audit, a CD index check, an MP3 inventory, or proof that all prescribed tracks are included.
+
+Priorities before READY: (1) compare SOW instructions for every lesson marked 'none observed', especially Listening lessons 121–138; (2) resolve disc IDs for Tracks 11–61, 68 and 72 wherever unspecified; (3) locate and play the actual MP3 files; (4) test Telegram download mappings; (5) preserve all existing references until evidence supports a correction. No main merge or DB mutation.
