@@ -13,10 +13,11 @@ Teacher introduces the word house and asks pupils to name familiar rooms.
 Teacher plays Run and Touch using door, window and floor, introducing behind and in front of. Pupils follow spoken instructions.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher follows Warm Up, Vocabulary and Activity 1 from Teacher's Book pp.74–75. Pupils listen for house vocabulary and prepositions, then identify objects and locations. Pupils complete Workbook p.36, Activity 1, by colouring the house picture and identifying its furniture.
+Teacher follows Warm Up, Vocabulary and Activity 1 from Teacher's Book pp.74–75. Pupils listen for house vocabulary and prepositions, then identify objects and locations.
 
-## PBD (10 minutes)
-Pupils identify two details and three familiar words from the spoken input.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.36, Activity 1; explain the task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.36, Activity 1, by colouring the house picture and identifying its furniture.
 
 ## Closure (5 minutes)
 Pupils describe where one classroom object is located.
