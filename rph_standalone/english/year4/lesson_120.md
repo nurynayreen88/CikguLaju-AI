@@ -22,7 +22,7 @@
 **Teacher:** Ask pairs to justify one answer by pointing to a sentence in the text, then invite a reasoned opinion about the dinosaur they find most interesting.
 **Pupils:** Explain answers using text evidence.
 
-Pupils practise reading and comparing animals using a suitable Workbook activity, where available; teacher checks comprehension.
+
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state one dinosaur fact and identify the sentence in the text that supports it.
