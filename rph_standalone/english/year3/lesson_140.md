@@ -13,10 +13,11 @@ Teacher plays a revision game using past verbs.
 Teacher models 'Did you...?' and 'Yes, I did / No, I didn't'.
 
 ## Activity 2 (25 minutes)
-Pupils practise Activity 1 and a Snap game, asking questions about past activities. Pupils complete Workbook p.71, Activity 1, by answering questions about past activities in the picture.
+Pupils practise Activity 1 and a Snap game, asking questions about past activities.
 
 ## Assessment / PBD (10 minutes)
-Pupils ask two questions beginning 'Did you' and respond using 'Yes, I did' or 'No, I didn't'. Teacher records responses.
+**Teacher:** Direct pupils to Workbook p.71, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.71, Activity 1, by answering questions about past activities in the picture.
 
 ## Closure (5 minutes)
 Pupils share one past-tense answer.
