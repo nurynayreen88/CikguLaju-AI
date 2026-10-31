@@ -106,6 +106,20 @@ class AuthFlowTests(unittest.TestCase):
         with patch.dict(os.environ, {"CIKGULAJU_WEB_TELEGRAM_BOT_TOKEN": ""}):
             self.assertEqual(self.client.get("/web/auth/callback", query_string=signed).status_code, 503)
 
+    def test_logout_uses_token_returned_by_whoami(self):
+        self.client.get("/web/auth/login")
+        with self.client.session_transaction() as sess:
+            nonce = sess["web_auth_nonce"]
+        signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
+        signed["state"] = nonce
+        self.assertEqual(self.client.get("/web/auth/callback", query_string=signed).status_code, 302)
+        token = self.client.get("/web/auth/whoami").json["logout_token"]
+        self.assertTrue(token)
+        response = self.client.post("/web/auth/logout", headers={
+            "Origin": "http://localhost", "X-CSRF-Token": token})
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(self.client.get("/web/auth/whoami").status_code, 401)
+
     def test_expired_session_rejected(self):
         with self.client.session_transaction() as sess:
             sess["web_telegram_user_id"] = 123456
