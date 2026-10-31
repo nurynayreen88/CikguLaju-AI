@@ -10,7 +10,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1] / "rph_standalone" / "english"
-ASSESSMENT = re.compile(r"(?m)^## (?:Assessment / PBD|PBD / Reinforcement)[^\n]*\n")
+ASSESSMENT = re.compile(r"(?m)^## (?:Assessment / PBD|PBD / Reinforcement|Reinforcement / PBD)[^\n]*\n")
 PAGE_REF = re.compile(r"\b(?:Workbook|Activity Book)\s*(?:p\.|page)\s*\d+", re.I)
 
 
