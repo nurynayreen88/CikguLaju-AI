@@ -29,6 +29,8 @@ class Lesson030AdapterTest(unittest.TestCase):
         self.assertIn("CLOSURE:\n", rendered)
         self.assertIn("Main: Writing 4.3.2\nComplementary: Listening 1.2.5", rendered)
         self.assertIn("STANDARD PEMBELAJARAN:\nMain: Writing 4.3.2\nComplementary: Listening 1.2.5", rendered)
+        self.assertIn("MAIN LEARNING STANDARD:\nWriting 4.3.2", rendered)
+        self.assertIn("COMPLEMENTARY LEARNING STANDARD:\nListening 1.2.5", rendered)
 
 
 if __name__ == "__main__":
