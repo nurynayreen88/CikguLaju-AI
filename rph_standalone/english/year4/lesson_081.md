@@ -22,7 +22,8 @@
 **Teacher:** Model one safe-versus-unsafe judgement with a reason, then guide Student Book Activity 1 and ask pupils to explain their choices.
 **Pupils:** Complete Activity 1 and explain one safety judgement.
 
-Pupils use Workbook printed p.50, Unit 6 'Sing a song', to identify safe road actions and check their answers.
+**Teacher:** Instruct pupils to complete Workbook p.50, the road-safety picture task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.50, the road-safety picture task; identify safe and unsafe actions from the pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Lead the TB p.92 physical-response activity and check that pupils match actions to safe transport rules.
