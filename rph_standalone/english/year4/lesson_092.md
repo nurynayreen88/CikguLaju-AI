@@ -29,7 +29,7 @@
 **Teacher:** Elicit action verbs used during model construction and ask pupils to use one in a sequence sentence.
 **Pupils:** Recall action verbs used in the task.
 
-**PBD:** Observe comprehension of model-making instructions and clear sequencing of construction steps against SP 2.2.2 and 2.1.3.  
+**PBD:** Observe pupils asking for clarification about model-making instructions for main Speaking SP 2.2.2; assess their spoken sequencing of construction steps using First, Second and Next for complementary Speaking SP 2.1.3. Workbook p.56 is written revision practice, not a substitute for speaking evidence.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
