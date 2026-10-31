@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Guide Activity 2, ask pupils to point to supporting reading details and explain their answers; omit the bottom-page writing task.
-**Pupils:** Locate reading details in Activity 2 and justify guesses. Pupils use Workbook p.12, Activity 1 (pictures of household chores) to reinforce vocabulary before explaining reading details; teacher checks their responses.
+**Pupils:** Locate reading details in Activity 2 and justify guesses. Pupils explain the reading details using the Student Book text. The previously cited Workbook p.12, Activity 1 is a school-timetable exercise and is not assigned for this household-chores lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Play a personalised 'have to' question game.
