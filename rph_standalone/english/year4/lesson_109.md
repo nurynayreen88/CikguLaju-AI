@@ -26,7 +26,7 @@
 **Teacher:** Invite two pupils to share a way recycling can save money and recap how the text helped them find the answer.
 **Pupils:** Describe one way recycling saves money.
 
-**PBD:** Use pupils' underlined main-idea sentence, two dictionary lookups and one oral explanation as evidence for SP 3.2.4 and 3.2.1; check final alignment against the official SOW before release.  
+**PBD:** Check pupils' dictionary lookups of recycle, collect and sell for main Reading SP 3.2.4; assess identification of the main idea in the teacher-prepared recycling text for complementary Reading SP 3.2.1. Workbook p.61 is supporting written practice. Official SOW and source-text alignment remain pending before release.  
 **Differentiation:** Offer picture prompts, word banks and extra challenge tasks.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source alignment corrected; remaining content/audio and Word/PDF QA pending.
