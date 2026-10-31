@@ -16,7 +16,7 @@ Teacher draws a farm animal step by step. Pupils guess its name.
 Pupils read the farm animal story and identify specific information.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.53, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Check reading comprehension by asking pupils to locate two details in the Student's Book farm-animal story. Then use Workbook p.53, Activity 2 (find and write farm animals in the picture) as a vocabulary follow-up, not as a substitute for reading assessment.
 **Pupils:** Pupils complete Workbook p.53, Activity 2, by finding and writing the farm animals shown in the picture.
 
 ## Closure (5 minutes)
