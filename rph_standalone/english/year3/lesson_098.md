@@ -13,7 +13,7 @@ Teacher reviews directions using Simon Says.
 Pupils listen to a directions song and mime the movements.
 
 ## Activity 2 (25 minutes)
-Pupils give and follow directions in a team game.
+Pupils give and follow directions in a team game. Pupils complete Workbook p.52, Activity 2, by writing directions to help Steve reach the cinema.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Observe each pupil giving two clear directions and correctly following a partner's instructions.
