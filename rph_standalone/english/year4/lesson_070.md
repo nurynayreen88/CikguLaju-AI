@@ -29,7 +29,7 @@
 **Teacher action:** Invite pupils to share one healthy habit and give a short reason for their choice.
 **Pupil action:** Share one healthy habit.
 
-**PBD:** Record accuracy of Health Quiz listening answers and specific details checked with Track 79 against SP 1.2.5 and 1.2.2.  
+**PBD:** Check pupils' responses to spoken Health Quiz questions and their recognition of the speaker's intended meaning for main Listening SP 1.2.5; check specific details heard in CD1 Track 79 for complementary Listening SP 1.2.2. Workbook p.41 is written food-container practice, not listening evidence.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 70, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** p.41, Activity 1; assessment follow-up.
