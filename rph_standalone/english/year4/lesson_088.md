@@ -22,7 +22,7 @@
 **Teacher:** Prompt pupils to compare transport preferences, using one fact from the reading to explain their choices.
 **Pupils:** Compare transport experiences and preferences.
 
-**Teacher:** Instruct pupils to complete Workbook p.54, the transport project task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.54, the transport project task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.54, the transport project task; identify transport words and answer the accompanying questions.
 
 ## Closure (5 minutes)
