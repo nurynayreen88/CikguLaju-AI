@@ -64,6 +64,14 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             create_payment_request(request, 1, 10, 2)
 
+    def test_completed_request_cannot_be_retried(self):
+        for status in ("approved", "rejected"):
+            with self.subTest(status=status):
+                def request(method, path, **kwargs):
+                    return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": 10, "status": status}]
+                with self.assertRaises(RuntimeError):
+                    create_payment_request(request, 1, 10, 2)
+
     def test_existing_unknown_status_is_rejected(self):
         def request(method, path, **kwargs):
             return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": 10, "status": "unexpected"}]
