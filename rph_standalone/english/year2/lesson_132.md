@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Pairs perform the two complete rounds above, swapping A/B roles so each pupil contributes four turns. Then each pupil independently says all three preference sentences using the three supplied frames; allow truthful substitutions if a pupil dislikes an activity.
-**Pupils:** Share three preferences and take four turns.
+**Pupils:** Share three preferences and take four turns. Pupils complete Workbook p.107, Activity 2, by matching the beach pictures with the correct dialogues.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record four relevant turns for each pupil across both rounds (0–4) and three independently expressed preferences (0–3). Do not count the partner's turns as the pupil's evidence; note prompts separately.
