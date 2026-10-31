@@ -22,7 +22,7 @@
 **Teacher:** Display a checklist for accurate superlatives, text evidence and punctuation; guide pairs to review and revise their descriptions.
 **Pupils:** Check sentences against the text and correct mistakes.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise the sports vocabulary and grammar from Activity 2 using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read a revised sports description and explain one correction.
