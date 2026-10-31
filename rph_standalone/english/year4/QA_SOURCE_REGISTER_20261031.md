@@ -132,3 +132,7 @@ A review of existing generic Workbook references found no verified page/activity
 - Unit 7: Lessons 097, 098, 099, 100, 102, 103, 104, 105.
 
 Literature/poetry lessons and lessons already explicitly using a story guide, CCL worksheets, or self-assessment were not assigned invented Workbook pages (063, 069, 074, 078, 079, 080, 095, 096, 101). This cleanup does **not** assert that these lessons can never use Workbook; it means no sufficiently verified relevant activity/page was established in this pass. Preserve existing Assessment/PBD content. Audio and Word/PDF timing/export QA remain outstanding. Staging only; DRAFT.
+
+## Unit 7–8 generic Workbook reference cleanup — next batch
+
+Reviewed Lessons 106–121. Literature lessons 106, 111, 117 already refer to The Jungle Book Teaching Guidebook and were not assigned generic Workbook tasks. Lesson 109 uses a teacher-prepared recycling reading text; Lesson 112 is Unit 7 self-assessment; Lesson 118 uses a teacher-prepared listening text; these retain their source-specific assessment and no Workbook page is asserted. Generic unverified Workbook suggestions were removed from Lessons **107, 108, 110, 113, 114, 115, 116, 119, 120 and 121**. No page/activity number was invented. Original PBD and teaching sequence remain unchanged. Specific Workbook task matching requires visual inspection of the corresponding printed Workbook pages before insertion. Audio/Word/PDF and timing QA remain pending; DRAFT, staging only.
