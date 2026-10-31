@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Guide Activity 2 by modelling how to locate a detail in the text, then ask pairs to produce four accurate statements about their own school.
-**Pupils:** Locate details and write or say four facts about their school. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Locate details and write or say four facts about their school. Pupils use the CLIL school-facts task to check their four facts against the source text; no specific Workbook page is prescribed.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to share one fact from the school text and explain a word they checked in the dictionary.
