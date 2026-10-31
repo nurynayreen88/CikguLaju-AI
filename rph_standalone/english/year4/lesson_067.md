@@ -29,7 +29,7 @@
 **Teacher action:** Distribute exit cards, ask pupils to record three new food words and check that they can explain one meaning.
 **Pupil action:** Write three newly learned words on an exit card.
 
-**PBD:** Check accurate dictionary definitions and text-based answers about food vocabulary against SP 3.2.4 and 3.2.2.  
+**PBD:** Assess pupils' use of a monolingual dictionary to determine unfamiliar food-word meanings for main Reading SP 3.2.4 and their text-supported answers about food and quantities for complementary Reading SP 3.2.2. Workbook p.40 provides main written practice alongside the Student's Book reading tasks.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 67, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
