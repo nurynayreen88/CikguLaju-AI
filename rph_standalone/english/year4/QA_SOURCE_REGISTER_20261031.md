@@ -30,3 +30,24 @@
 5. Keep staging DRAFT until these checks pass; do not modify main or the production database as a side effect of QA.
 
 **Result:** Source discovery completed; initial 24-lesson generic-sentence scan completed; source-content and export verification remain pending.
+
+## Direct visual inspection of Workbook PDF (31 October 2026, second pass)
+
+The 109-page scanned Workbook PDF was downloaded and opened. Embedded selectable text is absent, so visual page inspection is required; this is **not** a text-extraction failure of the file itself. Sampled PDF pages 1, 5, 10, 15, 25, 35, 45, 55, 65, 75, 85 and 95 were rendered and visually inspected.
+
+| PDF page (1-based) | Printed Workbook page | Observed content | Scope of verification |
+|---|---|---|---|
+| 1 | Cover | Get Smart Plus 4 Workbook cover | Direct visual |
+| 5 | 4 | Unit 1 *Let's play*, activities about actions and sentence writing | Direct visual |
+| 10 | 9 | Unit 1 *Now I can 1* self-check, countries and nationalities | Direct visual |
+| 15 | 14 | Unit 2 *Project*, household chores survey/chart | Direct visual |
+| 25 | 24 | Unit 3 *Story time*, story comprehension | Direct visual |
+| 35 | 34 | Unit 4 *Revision*, ordinal numbers and weekend schedule | Direct visual |
+| 45 | 44 | Unit 5 *Vegetarians* reading passage and questions | Direct visual |
+| 55 | 54 | Unit 6 *Revision*, transport vocabulary and comprehension | Direct visual |
+| 65 | 64 | Earth Day reading and questions | Direct visual |
+| 75 | 74 | Animal vocabulary / *Now I can 8* | Direct visual |
+| 85 | 84 | Unit 10 *What's the matter?*, song and questions | Direct visual |
+| 95 | 94 | Illustrated *What's the matter?* board-game page | Direct visual |
+
+**Important:** The sampled internal pages show printed page number = PDF page number − 1. This relationship is observed in the samples, not a substitute for checking every page. These are **confirmed page-content observations**, not yet verified lesson-to-Workbook activity assignments. Do not automatically assign them to RPH Lessons without matching each lesson objective and SOW/TB. No production changes or READY approval were made.
