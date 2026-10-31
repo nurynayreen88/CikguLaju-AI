@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Provide a peer-edit checklist for punctuation and meaning, then organise pairs to review and revise their paragraphs.
-**Pupils:** Exchange drafts, check punctuation and rewrite. Pupils may complete a matching Workbook writing activity about weekly routines, if available; teacher checks punctuation and spelling.
+**Pupils:** Exchange drafts, check punctuation and rewrite. Pupils use Workbook p.14, Project Activity 1 (household chores survey chart) as optional supporting material for writing about home duties; teacher checks their written sentences.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils identify one improvement made after feedback.
