@@ -13,7 +13,7 @@ Teacher reviews food vocabulary and question forms. Pupils answer familiar quest
 Teacher gives each pupil a question or answer strip. Pupils mingle to find the matching question or answer and read it aloud.
 
 ## Activity 2 — Language review (25 minutes)
-Teacher guides Student's Book p.64 and Teacher's Book pp.100–101. Pupils compare forms using 'Do...?' and 'Is/Are there...?' and complete differentiated review tasks.
+Teacher guides Student's Book p.64 and Teacher's Book pp.100–101. Pupils compare forms using 'Do...?' and 'Is/Are there...?' and complete differentiated review tasks. Pupils complete Workbook p.50, Activity 2, by writing questions about food preferences and quantities.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Ask each pupil to match one question with its answer and locate one detail in the review text.
