@@ -61,3 +61,16 @@ A **single optional Workbook sentence** was added to staging `lesson_030.md` in 
 - Printed WB p.14 Activity 1 was visually inspected previously and is an optional writing extension in the current RPH, not a SOW-prescribed activity. Do not treat its listening component as independently playback-verified.
 
 **Remaining:** Verify CD1 Track 29 and Track 30 MP3 playback and Telegram access; review Word/PDF output. Keep DRAFT until those gates and approval.
+
+## Lesson 030 — Drive MP3 metadata and link-permission check
+
+Checked both MP3s directly using Google Drive file metadata, against the existing `QA_CLASS_CD_ASSET_MANIFEST_20261031.json` entries:
+
+| TB activity | Disc/track | Drive ID | Drive filename | Size (bytes) | Permissions |
+|---|---|---|---|---:|---|
+| SB Activity 2 (TB p.39) | CD1 Track 29 | `15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct` | `29 Track 29.mp3` | 218335 | anyone: reader |
+| WB Activity 1 (TB p.39) | CD1 Track 30 | `1MhXoN--u1W1Rv7eSxVt3ujx3WgdEZfLl` | `30 Track 30.mp3` | 1117804 | anyone: reader |
+
+The returned Drive metadata agrees with the manifest IDs and sizes, and both files expose **anyone-with-link reader** permissions. This is **not** an anonymous browser download test, MP3 decode/listening verification, or Telegram `sendAudio` test. Do not mark audio delivery READY based on these permissions alone.
+
+**Remaining checks:** inspect actual audio content and duration; test unauthenticated retrieval; test Telegram bot delivery and generated Word/PDF before approval.
