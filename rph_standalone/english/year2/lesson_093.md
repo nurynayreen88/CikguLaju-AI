@@ -24,8 +24,10 @@
 **Pupils:** Read six words and complete five matches.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.94, Activity 2; explain the task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.94, Activity 2, by spelling the body-part words shown in the pictures.
+**Teacher (10 min):** Record four independently blended words (SP 3.1.3) and four independently segmented words (SP 3.1.4).
+**Pupils:** Submit individual reading evidence.
+
+**Workbook practice:** Pupils complete Workbook p.94, Activity 2, by spelling the body-part words shown in the pictures. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a challenging word.
