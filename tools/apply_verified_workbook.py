@@ -55,6 +55,8 @@ def prepare(source, page, activity):
     suffix = source[section_end:]
     if not prefix.endswith("\n"):
         prefix += "\n"
+    if not prefix.endswith("\n\n"):
+        prefix += "\n"
     return prefix + sentence + suffix, "ready"
 
 
