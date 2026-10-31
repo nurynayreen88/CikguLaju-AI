@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Provide an email structure and punctuation checklist, then guide pupils to draft, exchange and respond to a classmate's email.
-**Pupils:** Write and exchange an email, then respond to a classmate. Pupils may complete a matching Workbook writing activity on personal emails, if available; teacher checks structure and punctuation.
+**Pupils:** Write and exchange an email, then respond to a classmate. The teacher assesses the pupils' drafted emails for main Writing SP 4.3.1, including appropriate punctuation. No Workbook activity is assigned until its printed page and task are verified.
 
 ## Closure (5 minutes)
 **Teacher:** Guide pupils to check email punctuation and invite them to explain one corrected sentence.
