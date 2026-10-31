@@ -16,7 +16,7 @@ Pupils read the text about Tony's pizza before listening to the recording and sa
 Teacher guides Student's Book p.61 Activity 1 and the Writing Tip. Pupils identify the main idea and complete sentence stems about the pizza in full sentences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.48, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess reading by asking pupils to identify the main idea and supporting details in the Student's Book pizza text. Then use Workbook p.48, Activity 2 (draw and describe a favourite pizza or salad) as a separate writing response, not as direct evidence of reading comprehension.
 **Pupils:** Pupils complete Workbook p.48, Activity 2, by drawing and describing their favourite pizza or salad.
 
 ## Closure (5 minutes)
