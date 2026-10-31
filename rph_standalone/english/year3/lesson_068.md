@@ -15,8 +15,9 @@ Teacher models finding headscarf, carpet and mirror in a dictionary. Pupils loca
 ## Activity 2 — Writing (25 minutes)
 Teacher guides Student's Book pp.46–47 and Teacher's Book pp.76–77. Pupils label pictures and practise writing familiar words neatly in cursive handwriting.
 
-## PBD (10 minutes)
-Pupils locate one unfamiliar word in a dictionary and write two legible cursive words.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.36, Activity 2; explain the task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.36, Activity 2, by comparing two rooms and writing sentences about their furniture.
 
 ## Closure (5 minutes)
 Pupils share one newly learned household word.
