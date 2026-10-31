@@ -14,10 +14,11 @@ Teacher reviews firefighter, lifeguard and dentist with flashcards. Pupils name 
 Teacher introduces additional occupations and models the Grammar Box and Activity 3 from Teacher's Book p.37. Pupils practise sentences and requests for help.
 
 ## Activity 2 — Writing task (25 minutes)
-Teacher demonstrates how to read a crossword clue and write the correct occupation. Pupils complete a crossword in pairs, checking spelling and helping one another using 'Can you help me, please?'. Pupils complete Workbook p.12, Activity 1, by filling in the occupation crossword using the written clues.
+Teacher demonstrates how to read a crossword clue and write the correct occupation. Pupils complete a crossword in pairs, checking spelling and helping one another using 'Can you help me, please?'.
 
 ## PBD (10 minutes)
 Teacher checks written occupation words and listens for appropriate requests for help. Pupils correct mistakes.
+Pupils complete Workbook p.12, Activity 1, by filling in the occupation crossword using the written clues.
 
 ## Closure (5 minutes)
 Pupils describe one job and share one useful word.
