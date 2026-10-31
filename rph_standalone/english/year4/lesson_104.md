@@ -22,7 +22,7 @@
 **Teacher:** Use the relevant Activity 1 and 2 questions to check whether pupils can identify the main idea and point to supporting details. Follow the TB guidance for the recording and Grammar Box where applicable.
 **Pupils:** Complete Activities 1–2 with Track 28.
 
-Pupils practise reading for details in the text from Activities 1–2 using a suitable Workbook activity, where available; teacher checks comprehension.
+
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state one recycling fact and identify the paragraph where they found it.
