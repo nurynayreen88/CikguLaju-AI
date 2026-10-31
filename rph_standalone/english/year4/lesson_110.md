@@ -22,7 +22,8 @@
 **Teacher:** Display a checklist for capital letters, question marks and clarity. Ask groups to peer-check their board-game questions before playing.
 **Pupils:** Check capitals and punctuation before playing the game.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.61, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.61, Activity 2; complete the sentences using someone, anyone, everyone or no one.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one language correction they made while preparing their board-game questions.
