@@ -23,6 +23,16 @@ class PaymentHistoryTests(unittest.TestCase):
         self.assertFalse(rows[1]["is_receipt"])
         self.assertIsNone(rows[1]["amount_rm"])
 
+    def test_rakan_pembangun_requests_are_not_receipts(self):
+        def request(method, path):
+            if path.startswith("pioneer_payment_requests?"):
+                return [{"telegram_user_id": 42, "amount_rm": 10, "status": "approved", "created_at": "2026-10-31"}]
+            return []
+        rows = fetch_admin_payment_history(request)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["kind"], "rakan_pembangun_request")
+        self.assertFalse(rows[0]["is_receipt"])
+
     def test_pending_and_failed_are_not_receipts(self):
         statuses = ["pending", "failed", "rejected", "paid"]
         def request(method, path):
@@ -42,7 +52,7 @@ class PaymentHistoryTests(unittest.TestCase):
             paths.append(path)
             return []
         fetch_admin_payment_history(request)
-        self.assertEqual(len(paths), 3)
+        self.assertEqual(len(paths), 4)
         self.assertTrue(all("select=*" not in p for p in paths))
         self.assertTrue(all("select=telegram_user_id" in p for p in paths))
 
