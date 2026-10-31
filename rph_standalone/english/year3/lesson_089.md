@@ -17,8 +17,10 @@ Teacher displays dishes from around the world. Pupils match names and pictures o
 Teacher helps pupils choose a dish and gather facts from supplied recipes or reading materials. Pupils draft short descriptions and check their spelling.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.46, Activity 1; check pupils' spelling of international food names found in the word search, then ask pupils to write a short original sentence using one of the food words as an additional writing check.
-**Pupils:** Pupils complete Workbook p.46, Activity 1, by finding international food names in the word search and writing them.
+**Teacher:** Check each pupil's written description for relevant details, clear sentences and spelling; ask where one fact was found.
+**Pupils:** Submit their description and point to the supporting reading text.
+
+**Workbook practice:** Pupils complete Workbook p.46, Activity 1, by finding international food names in the word search and writing them. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share a sentence about a chosen dish.
