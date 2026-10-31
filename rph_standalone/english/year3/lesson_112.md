@@ -16,8 +16,9 @@ Groups read written directions and trace routes from one point to another on a s
 Pupils identify correct and incorrect directions on a worksheet, then write short corrected instructions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Use Workbook p.58, Activity 1 to review direction-sign vocabulary, then assess writing by asking pupils to write one complete direction sentence independently. Matching signs with words alone is not sufficient evidence of sentence writing.
-**Pupils:** Pupils complete Workbook p.58, Activity 1, by matching direction signs with the correct words.
+Teacher checks each pupil's corrected route instructions against the map and asks them to identify one clue from the original written directions. Pupils revise an inaccurate step.
+
+**Workbook practice:** Pupils complete Workbook p.58, Activity 1, by matching direction signs with the correct words. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one correct route instruction.
