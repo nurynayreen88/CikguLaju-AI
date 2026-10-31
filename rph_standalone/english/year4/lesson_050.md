@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to demonstrate one clarification phrase from their celebration-date dialogues.
 **Pupils:** Use one clarification phrase accurately.
 
-**PBD:** Observe when questions about dates and appropriate clarification phrases in paired dialogue (SP 2.2.1 and 1.2.5).  
+**PBD:** Observe pupils asking and answering when questions about dates and requesting clarification in paired dialogue for main Speaking SP 2.2.1. Check their understanding of spoken clarification prompts for complementary Listening SP 1.2.5. Workbook p.30 provides written practice only.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
