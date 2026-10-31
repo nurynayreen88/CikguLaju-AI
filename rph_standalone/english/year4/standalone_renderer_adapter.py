@@ -1,0 +1,48 @@
+"""Non-destructive adapter: standalone English Year 4 Markdown -> RPH renderer fields.
+
+This module has no database, Telegram or network side effects.
+Call adapt_year4_standalone(markdown) before create_word_file/create_pdf_file.
+The existing lesson Markdown is not modified.
+"""
+import re
+
+SECTIONS = {
+    "Set induction": "SET INDUCTION",
+    "Closure": "CLOSURE",
+    "Assessment and differentiation": "ASSESSMENT",
+}
+ACTIVITY = re.compile(r"^Activity\s+\d+\b", re.I)
+
+
+def adapt_year4_standalone(markdown: str) -> str:
+    """Return colon-headed text accepted by the existing English RPH parser."""
+    blocks = {}
+    current = None
+    for line in markdown.splitlines():
+        heading = re.match(r"^##\s+(.+?)\s*$", line)
+        if heading:
+            current = heading.group(1).strip()
+            blocks[current] = []
+        elif current:
+            blocks[current].append(line)
+    def body(name):
+        return "\n".join(blocks.get(name, [])).strip()
+    activities = []
+    for heading in blocks:
+        if ACTIVITY.match(heading) or heading.lower().startswith("reinforcement"):
+            activities.append(f"{heading}\n{body(heading)}")
+    title = re.search(r"^\*\*Topic:\*\*\s*(.+)$", markdown, re.M)
+    main_sp = re.search(r"^\*\*Main SP:\*\*\s*(.+)$", markdown, re.M)
+    comp_sp = re.search(r"^\*\*Complementary SP:\*\*\s*(.+)$", markdown, re.M)
+    refs = re.search(r"^\*\*References:\*\*\s*(.+)$", markdown, re.M)
+    fields = [
+        ("TOPIC", title.group(1) if title else ""),
+        ("MAIN LEARNING STANDARD", main_sp.group(1) if main_sp else ""),
+        ("COMPLEMENTARY LEARNING STANDARD", comp_sp.group(1) if comp_sp else ""),
+        ("TEACHING AND LEARNING MATERIALS", refs.group(1) if refs else ""),
+        ("SET INDUCTION", body("Set induction")),
+        ("MAIN ACTIVITIES", "\n\n".join(activities)),
+        ("CLOSURE", body("Closure")),
+        ("ASSESSMENT", body("Assessment and differentiation")),
+    ]
+    return "\n".join(f"{key}:\n{value}" for key, value in fields if value)
