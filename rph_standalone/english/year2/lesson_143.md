@@ -23,8 +23,10 @@
 **Pupils:** Read four sentences and locate three details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.113, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.113, Activity 1, by reading the beach passage and choosing the correct words.
+**Teacher (10 min):** Check three detail answers and ask each pupil to reread one relevant phrase to clarify meaning; record individual reading-strategy evidence.
+**Pupils:** Submit individual evidence.
+
+**Workbook practice:** Pupils complete Workbook p.113, Activity 1, by reading the beach passage and choosing the correct words. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
