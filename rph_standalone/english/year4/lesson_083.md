@@ -29,7 +29,7 @@
 **Teacher:** Ask pupils to cite one school-trip detail from the text.
 **Pupils:** Share one fact from the reading.
 
-**PBD:** Check transport reading answers and identification of details heard in Tracks 5–6 against SP 3.2.2 and 1.2.1.  
+**PBD:** Check text-supported transport and timetable answers for main Reading SP 3.2.2. Check understanding of the overall message heard in CD2 Track 6 for complementary Listening SP 1.2.1. Workbook p.51 is written reading practice, not listening evidence.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
