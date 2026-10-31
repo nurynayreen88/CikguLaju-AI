@@ -22,8 +22,8 @@
 **Teacher:** Invite groups to exchange clue cards, identify each animal and explain which comparative clue helped them.
 **Pupils:** Guess animals using comparative clues.
 
-**Teacher:** Instruct pupils to complete Workbook p.68, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
-**Pupils:** Complete Workbook p.68, Activity 2; complete sentences comparing the animals using the words in the box.
+**Teacher:** Instruct pupils to complete Workbook p.69, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.69, Activity 2; complete sentences comparing the animals using the words in the box.
 
 ## Closure (5 minutes)
 **Teacher:** Display an inaccurate comparative sentence and ask pupils to explain and correct its form.
