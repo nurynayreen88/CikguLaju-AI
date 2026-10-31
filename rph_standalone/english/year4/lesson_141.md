@@ -22,7 +22,8 @@
 **Teacher:** Guide the TB after-reading task and ask pupils to locate a sentence supporting one answer about Part Two.
 **Pupils:** Locate story details to justify answers.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.82, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.82, Activity 1; read the story and complete the sentences using the past simple verbs.
 
 ## Closure (5 minutes)
 **Teacher:** Organise pairs to share opinions about Part Two and support each opinion with a story detail.
