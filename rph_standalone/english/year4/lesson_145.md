@@ -15,7 +15,7 @@
 **Pupils:** Predict the topic and identify health expressions from pictures.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Play the song or listening material following TB p.152; ask pupils to raise a hand when they hear target words.
+**Teacher:** Play Vocabulary Track 68 following TB p.152; ask pupils to raise a hand when they hear target words. Verify the CD and audio file before release.
 **Pupils:** Listen without written lyrics, recognise target words and infer unfamiliar expressions from context.
 
 ## Reinforcement / PBD (10 minutes)
