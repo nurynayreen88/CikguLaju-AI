@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Small groups play an action guessing game; teacher observes descriptions and understanding.
-**Pupils:** Play the card guessing game and describe what pictured people are doing. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Play the card guessing game and describe what pictured people are doing. Pupils may complete a matching Workbook speaking activity on describing actions, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to demonstrate one question-and-answer exchange using a present-continuous action card.
