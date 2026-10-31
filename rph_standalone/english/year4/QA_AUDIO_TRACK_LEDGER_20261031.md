@@ -106,3 +106,35 @@
 | 078–080 | None observed | Teacher-selected/literature/project lessons; check relevant source |
 
 **Audio caution:** Track numbering is not necessarily consecutive across lessons or CDs. No “missing” track should be added solely because of a gap. SOW/TB, the exact MP3 and playback must establish a track's role.
+
+## Lessons 081–120 — repository-reference pass (31 October 2026)
+
+| Lesson | Track references observed in RPH | Follow-up |
+|---|---|---|
+| 081 | CD2 Tracks 2 and 4 | Verify both MP3 files |
+| 082 | None observed | SOW cross-check reports no prescribed audio in checked outline |
+| 083 | CD2 Tracks 5 and 6 | Verify both MP3 files |
+| 084 | CD3 Track 39 | Vocabulary audio only; SOW says CLIL Activity 1 is reading without audio |
+| 085 | None observed | Literature/CCL; check source-specific materials |
+| 086 | CD2 Track 7 | Verify MP3 |
+| 087 | None observed | Check SOW |
+| 088 | CD2 Track 9 | Verify MP3 |
+| 089–090 | None observed | CLIL/literature; check source-specific materials |
+| 091 | CD2 Tracks 11 and 12 | Verify both MP3 files |
+| 092 | None observed | Check SOW |
+| 093 | CD2 Track 16 | Verify MP3 |
+| 094–096 | None observed | Check SOW; includes literature/revision |
+| 097 | Tracks 20 and 21; CD unresolved | Verify CD and both MP3 files |
+| 098 | Tracks 21 and 22; CD unresolved | Verify CD and both MP3 files; Track 21 is reused from Lesson 097 |
+| 099–101 | None observed | Check SOW; includes literature |
+| 102 | Track 25; CD unresolved | Verify CD and MP3 |
+| 103 | Track 26; CD unresolved | Verify CD and MP3 |
+| 104 | Tracks 27 and 28; CD unresolved | Verify CD and both MP3 files |
+| 105 | Track 29; CD unresolved | Optional in SOW; confirm whether played before requiring download |
+| 106 | None observed | Literature; check source-specific requirements |
+| 107 | Track 32; CD unresolved | Verify CD and MP3; SOW's SB pp.66–67 citation is preserved |
+| 108–109 | None observed | Check SOW; Lesson 109 uses teacher-prepared reading text |
+| 110 | Track 31; CD unresolved | Verify CD and MP3; number is not presumed erroneous due to lesson order |
+| 111–120 | None observed | Check SOW; includes literature, self-assessment and teacher-prepared tasks |
+
+**Source boundary:** This inventory records exact explicit numbered-track references in the current Markdown files. It does not independently prove that every SOW-required audio reference is present, nor that the corresponding MP3 is accessible or correct. In particular, Lesson 110 Track 31 and Lesson 107 Track 32 should not be renumbered by lesson order alone.
