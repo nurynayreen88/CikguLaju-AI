@@ -19,8 +19,8 @@
 **Pupils:** Listen for ingredients and answer detail questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.45, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.45, Activity 2, by identifying the ingredients in two omelettes.
+**Teacher:** Assess listening by asking pupils to identify ingredients mentioned in the Student's Book audio and answer oral detail questions. Use Workbook p.45, Activity 2 (Look and write. Answer the questions) separately to reinforce 'Is there any...?' and 'Are there any...?' with Anna's and Greg's omelette pictures; this printed task does not itself test listening.
+**Pupils:** Listen and answer questions about ingredients heard, then write answers to the printed omelette questions in Workbook p.45, Activity 2.
 
 ## Closure (5 minutes)
 **Teacher:** Recap the listening clues and sentence patterns.
