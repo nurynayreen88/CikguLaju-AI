@@ -22,7 +22,8 @@
 **Teacher:** Organise pairs to compare dinosaurs with familiar animals, prompting accurate comparative adjectives.
 **Pupils:** Compare dinosaurs and familiar animals in pairs.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.70, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.70, Activity 1; complete the comparative animal sentences using the word bank.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to explain one inferred dinosaur word meaning and identify the context clue that helped.
