@@ -46,8 +46,8 @@ class WorkbookApplicatorTests(unittest.TestCase):
     def test_original_pbd_is_preserved_verbatim(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
-        original_pbd = self.SAMPLE.split("## Assessment / PBD (10 minutes)\\n", 1)[1].split("## Closure", 1)[0]
-        updated_pbd = updated.split("## Assessment / PBD (10 minutes)\\n", 1)[1].split("**Workbook practice:**", 1)[0]
+        original_pbd = self.SAMPLE.split("## Assessment / PBD (10 minutes)\n", 1)[1].split("## Closure", 1)[0]
+        updated_pbd = updated.split("## Assessment / PBD (10 minutes)\n", 1)[1].split("**Workbook practice:**", 1)[0]
         self.assertEqual(updated_pbd, original_pbd)
         self.assertEqual(updated.count("**Workbook practice:**"), 1)
 
