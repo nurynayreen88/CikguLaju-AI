@@ -206,3 +206,16 @@ The original Get Smart Plus 4 Class CD folders in Google Drive were enumerated (
 | **Total** | | **220** | | **0** | **0** |
 
 **Meaning:** all 220 numbered MP3 *file records* are present in these three inspected folders. This is a source-asset completeness check, **not** a lesson-to-track completeness check, playback check, public permission check, or Telegram delivery test. No audio is marked READY based on this inventory alone.
+
+## Targeted CD designation QA — 31 October 2026
+
+Cross-check of **current lesson Markdown** (no content mutation):
+
+- **Lesson 030** explicitly states `CD2 Track 29` for SB p.20, TB pp.38–39. This is a **priority CD verification anomaly** because adjacent early-unit references are largely CD1; adjacency alone is insufficient to correct the disc. Compare the printed TB track label and actual audio before changing it.
+- **Lesson 032** lists Track 35 without a disc (SB p.26, TB p.47); do not assign CD1 merely by proximity.
+- **Lesson 065** lists Tracks 70–71 without discs (SB p.49, TB pp.78,175); verify each against the printed TB.
+- **Lesson 097** Track 20 vocabulary and Track 21 song; **Lesson 098** reuses Track 21 and uses Track 22. Reuse may be intentional; verify disc and exact activity, not numerical sequence.
+- **Lesson 107** Track 32 and **Lesson 110** Track 31 have reverse numerical order across lessons; no automatic renumbering.
+- **Lesson 123, 129, 134** have TB-verified CD/track and Drive file identities in the resolution section above.
+
+**Do not auto-generate lesson mappings from the 220-file Drive inventory.** All three discs have overlapping track numbers. A valid asset key must include `(year=4, disc, track)`, never `track` alone. Current findings remain staging QA; runtime bot delivery remains untested.
