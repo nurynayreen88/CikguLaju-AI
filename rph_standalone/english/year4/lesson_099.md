@@ -28,7 +28,7 @@
 **Teacher:** Invite pupils to name an item and its owner using a complete sentence.
 **Pupils:** Name an item and its owner.
 
-**PBD:** Check independent reading and evidence-based responses to ownership questions in the camping story against SP 3.3.1 and 1.2.3.  
+**PBD:** Observe independent reading of the camping story and pupils' use of ownership clues for main Reading SP 3.3.1; assess responses to spoken story questions for complementary Listening SP 1.2.3. Do not claim listening evidence from written answers alone.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
