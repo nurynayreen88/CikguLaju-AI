@@ -22,7 +22,7 @@
 **Teacher action:** Organise poster presentations, ask peers to identify one accurate health fact and guide Unit 5 self-assessment.
 **Pupil action:** Present posters and complete Unit 5 self-assessment.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils review their teacher-selected writing task using a checklist matched to the lesson objectives; no specific Workbook page is prescribed.
 
 ## Closure (5 minutes)
 **Teacher action:** Ask pupils to identify one poster strength and one specific next learning target from their self-assessment.
