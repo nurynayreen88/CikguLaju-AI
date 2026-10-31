@@ -74,3 +74,7 @@ Checked both MP3s directly using Google Drive file metadata, against the existin
 The returned Drive metadata agrees with the manifest IDs and sizes, and both files expose **anyone-with-link reader** permissions. This is **not** an anonymous browser download test, MP3 decode/listening verification, or Telegram `sendAudio` test. Do not mark audio delivery READY based on these permissions alone.
 
 **Remaining checks:** inspect actual audio content and duration; test unauthenticated retrieval; test Telegram bot delivery and generated Word/PDF before approval.
+
+## Lesson 030 — Workbook page/activity reconciliation (direct PDF images)
+
+Original Workbook PDF page 13 shows **printed p.14 Activity 1**, a six-picture written *have to* task, and Activity 2, three personal written answers. Original PDF page 14 shows **printed p.15 Activity 1**, *Listen and number (1–5)*, plus Activity 2 questions and Activity 3 *have to / don't have to*. These are distinct exercises. The RPH's optional written WB p.14 Activity 1 is correctly identified as writing; TB p.39's WB Activity 1 with **CD1 Track 30** refers to the listening exercise on printed **WB p.15**, not the p.14 writing exercise. The existing SB listening **CD1 Track 29** remains unchanged. Direct images checked 31 October 2026; MP3 speech-content match and Telegram delivery remain unverified.
