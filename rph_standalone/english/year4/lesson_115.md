@@ -22,7 +22,7 @@
 **Teacher:** Organise pairs to compare dinosaurs with familiar animals, prompting accurate comparative adjectives.
 **Pupils:** Compare dinosaurs and familiar animals in pairs.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise reading for details about dinosaurs using a suitable Workbook activity, where available; teacher checks comprehension.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to explain one inferred dinosaur word meaning and identify the context clue that helped.
