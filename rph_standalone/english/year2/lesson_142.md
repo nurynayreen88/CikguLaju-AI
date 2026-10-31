@@ -23,8 +23,8 @@
 **Pupils:** Give three responses, ask two questions and describe one beach object using a familiar adjective.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record each pupil's three relevant responses, two intelligible questions and one clear object description.
-**Pupils:** Submit individual evidence.
+**Teacher:** Direct pupils to Workbook p.109, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.109, Activity 1, by matching the questions about beach objects with their answers.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
