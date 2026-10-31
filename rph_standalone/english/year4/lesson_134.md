@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 4.3.3  
 **Duration:** 60 minutes  
-**Audio verification:** SOW requires the three recorded interviews for SB p.95 Activity 4 (TB pp.140–141). CD/Track and actual MP3 are not yet verified; this lesson must not be marked audio-ready.  
+**Audio:** CD2 Track 56 for the three interviews in Activity 4, as printed in Teacher's Book p.141. MP3 playback is pending.  
 **References:** SB p.95 Activity 4; TB pp.140–141; sample sports paragraph; Year 4 SOW Lesson 134
 
 ## Set induction (10 minutes)
