@@ -22,7 +22,8 @@
 **Teacher:** Use the story pictures to prompt pupils to retell an event in sequence with an appropriate time connector.
 **Pupils:** Retell an event using picture prompts.
 
-Pupils complete Workbook printed p.55, Unit 6 'Story time', to answer questions about the transport story and check comprehension.
+**Teacher:** Instruct pupils to complete Workbook p.55, the Story time task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.55, the Story time task; read the story and answer the comprehension questions.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to identify a favourite story moment and explain their choice using a story detail.
