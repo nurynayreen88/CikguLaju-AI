@@ -19,7 +19,7 @@
 **Pupils:** Listen with books closed and identify the theme.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.77, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
+**Teacher:** Assign Workbook p.77, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the listening task in Activity 1/2, check pupils' responses to spoken input as evidence for the main Listening SP.
 **Pupils:** Complete Workbook p.77, Activity 1; read the clues and write the names of the sports.
 
 ## Closure (5 minutes)
