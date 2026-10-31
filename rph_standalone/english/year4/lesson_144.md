@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils through self-assessment and record language areas requiring further practice.
 **Pupils:** Complete self-assessment and identify a weak area.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete the Unit 9 self-assessment and revise one skill that needs improvement; a specific Workbook page is not prescribed in the SOW.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to choose one measurable review goal based on their Unit 9 self-assessment.
