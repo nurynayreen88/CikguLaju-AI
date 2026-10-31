@@ -26,7 +26,10 @@ def show_admin_payment_history(cid, page, request, send):
     for row in selected:
         uid = str(row.get("telegram_user_id") or "")
         amount = row.get("amount_rm")
-        money = f"RM{float(amount):.2f}" if amount is not None else "jumlah tidak direkod"
+        try:
+            money = f"RM{float(amount):.2f}" if amount is not None else "jumlah tidak direkod"
+        except (TypeError, ValueError, OverflowError):
+            money = "jumlah tidak sah"
         kind = row["kind"]
         if not row["is_receipt"]:
             kind = "Rakan Pembangun (kelulusan akses, bukan resit)"
