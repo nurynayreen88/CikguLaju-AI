@@ -13,10 +13,11 @@ Teacher displays sea animal flashcards. Pupils name familiar animals.
 Teacher shows shark and other sea animal flashcards, elicits adjectives including scary, and asks pupils to predict answers to the SOW sea-animal comparison worksheet.
 
 ## Activity 2 (25 minutes)
-Pupils listen to the accompanying audio while reading Student's Book pp.96–97 silently, then check their worksheet predictions. They circle science and project, discuss meanings using picture clues, and complete the Grammar Box and Activity 2 with teacher guidance. Pupils complete Workbook p.78, Activity 1, by choosing the correct comparative forms in sentences about animals.
+Pupils listen to the accompanying audio while reading Student's Book pp.96–97 silently, then check their worksheet predictions. They circle science and project, discuss meanings using picture clues, and complete the Grammar Box and Activity 2 with teacher guidance.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks two sea-animal facts located in the text and asks pupils to explain one unfamiliar word using a picture or sentence clue.
+**Teacher:** Direct pupils to Workbook p.78, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.78, Activity 1, by choosing the correct comparative forms in sentences about animals.
 
 ## Closure (5 minutes)
 Pupils share one sea animal fact.
