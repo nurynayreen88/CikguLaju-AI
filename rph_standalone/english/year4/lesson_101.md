@@ -22,7 +22,7 @@
 **Teacher:** Ask pupils to sketch a jungle animal from the cover and describe two visible characteristics before sharing.
 **Pupils:** Draw an animal and explain their choice using descriptive language.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The Jungle Book using the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe their feelings about the chosen animal and support their response with one visible characteristic.
