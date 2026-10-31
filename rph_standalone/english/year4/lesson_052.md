@@ -20,7 +20,9 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model one going to sentence about a parade costume, then guide pupils to draw their designs and write legible cursive descriptions.
-**Pupils:** Draw a costume and write three to five cursive sentences. Pupils may use the Unit 4 Workbook 'Smart kids' picture prompts (printed p.31) to describe celebration roles and costumes; teacher checks their sentences.
+**Pupils:** Draw a costume and write three to five cursive sentences.
+**Teacher:** Instruct pupils to complete Workbook p.31, Smart kids picture prompts, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.31, Smart kids picture prompts; write descriptions based on the pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Display a short writing checklist and ask pupils to correct one going to sentence and one cursive letter join.
