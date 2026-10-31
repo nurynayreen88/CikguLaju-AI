@@ -27,6 +27,7 @@ class Lesson030AdapterTest(unittest.TestCase):
         self.assertEqual(rendered.count("Workbook p.14, Activity 1"), 1)
         self.assertIn("SET INDUCTION:\n", rendered)
         self.assertIn("CLOSURE:\n", rendered)
+        self.assertIn("Main: Writing 4.3.2\nComplementary: Listening 1.2.5", rendered)
 
 
 if __name__ == "__main__":
