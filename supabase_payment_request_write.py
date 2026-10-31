@@ -53,6 +53,12 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
                 or not _same_amount(row.get("amount_rm"), amount)):
             raise RuntimeError("Existing payment request does not match")
         return row["id"]
+    pending = request("GET", f"pioneer_payment_requests?select=id,telegram_user_id,telegram_message_id,amount_rm,status&telegram_user_id=eq.{int(telegram_user_id)}&status=eq.pending&limit=2")
+    if not isinstance(pending, list):
+        raise RuntimeError("Cannot verify pending payment requests")
+    if pending:
+        raise RuntimeError("A pending payment request already exists; reconcile before creating another")
+    # The database partial unique index remains authoritative under concurrency.
     rows = request("POST", "pioneer_payment_requests", json=payload, prefer="return=representation")
     if not isinstance(rows, list) or len(rows) != 1 or not isinstance(rows[0], dict):
         raise RuntimeError("Payment request was not confirmed by Supabase")
