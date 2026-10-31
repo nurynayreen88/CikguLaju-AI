@@ -22,7 +22,7 @@
 **Teacher:** Invite groups to exchange clue cards, identify each animal and explain which comparative clue helped them.
 **Pupils:** Guess animals using comparative clues.
 
-Pupils practise asking and answering questions about animals using a suitable Workbook activity, where available; teacher checks their responses.
+
 
 ## Closure (5 minutes)
 **Teacher:** Display an inaccurate comparative sentence and ask pupils to explain and correct its form.
