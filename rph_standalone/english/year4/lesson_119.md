@@ -26,7 +26,7 @@
 **Teacher:** Ask pupils to share a comparative sentence and explain which two dinosaurs it compares.
 **Pupils:** Share one comparative sentence.
 
-**PBD:** Observe comparative dinosaur descriptions and whether pupils follow partner task instructions against SP 2.1.5 and 2.2.2.  
+**PBD:** Observe pupils giving comparative dinosaur clues for main Speaking SP 2.1.5; assess their requests for clarification about partner-task instructions for complementary Speaking SP 2.2.2. Workbook p.71 provides the main written comparative practice, not speaking evidence.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
