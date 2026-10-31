@@ -16,8 +16,9 @@ Teacher introduces additional occupations and models the Grammar Box and Activit
 ## Activity 2 — Writing task (25 minutes)
 Teacher demonstrates how to read a crossword clue and write the correct occupation. Pupils complete a crossword in pairs, checking spelling and helping one another using 'Can you help me, please?'.
 
-## PBD (10 minutes)
-Teacher checks written occupation words and listens for appropriate requests for help. Pupils correct mistakes.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.12, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.12, Activity 1, by filling in the occupation crossword using the written clues.
 
 ## Closure (5 minutes)
 Pupils describe one job and share one useful word.
