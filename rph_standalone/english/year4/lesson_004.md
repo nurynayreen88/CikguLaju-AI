@@ -23,7 +23,7 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Check statements for suitable meaning and high-frequency spelling; provide sentence frames or extension descriptions by proficiency.
-**Pupils:** Proofread four sentences for meaning, capitals, full stops and high-frequency spelling. Pupils may complete a matching Workbook writing activity on sentence punctuation and spelling, if available; teacher checks accuracy.
+**Pupils:** Proofread four sentences for meaning, capitals, full stops and high-frequency spelling. Pupils use Workbook p.4, Activity 3 to write their country and nationality as optional writing practice; teacher checks spelling and sentence accuracy.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read one corrected sentence and identify a word they can now spell accurately.
