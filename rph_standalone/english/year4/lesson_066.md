@@ -22,7 +22,8 @@
 **Teacher:** Model a polite request to clarify an ingredient, then ask pairs to adapt the dialogue with different food items.
 **Pupils:** Ask clarification questions and respond appropriately in pairs.
 
-Pupils use Workbook p.39 Activity 2 for optional practice with food sentences and check their answers.
+**Teacher:** Instruct pupils to complete Workbook p.39, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.39, Activity 2; complete sentences using a, an or some with the food nouns.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe a favourite dish using want or need and at least one ingredient word.
@@ -31,5 +32,5 @@ Pupils use Workbook p.39 Activity 2 for optional practice with food sentences an
 **PBD:** Observe clarification questions and listening responses against SP 2.2.1 and 1.2.5.  
 **Differentiation:** Provide ingredient pictures, sentence frames and extension questions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
+**Workbook:** p.39, Activity 2; assessment follow-up.
 **Status:** DRAFT — audio mapping and Word/PDF QA pending.
