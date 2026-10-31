@@ -26,7 +26,7 @@
 **Teacher:** Ask pupils to identify one clarification phrase that helped their group follow the game rules.
 **Pupils:** Reflect on group communication.
 
-**PBD:** Observe pupils' comprehension of board-game instructions and use of suitable advice or clarification during group play (SP 2.2.2, 1.2.4).  
+**PBD:** Observe pupils' ability to ask for and provide clarification during the board game for main Speaking SP 2.2.2; check their understanding of spoken game instructions for complementary Listening SP 1.2.4. CD2 Track 79 supports vocabulary; Workbook p.89 is written advice practice, not speaking or listening evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
