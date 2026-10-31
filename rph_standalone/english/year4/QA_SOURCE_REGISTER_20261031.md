@@ -156,3 +156,7 @@ Inspected scanned Workbook contact sheets directly. Unit 8 mappings added to Les
 ## PBD 10-minute feasibility safeguards — 20 lessons
 
 Updated Lessons 108–110, 129–131, 135–137, 140–142, 145–148, 151 and 155–157 so that printed Workbook tasks are explicitly conditional on remaining time **after** the core assessment. Workbook answers provide supplementary evidence only; they do not replace listening, speaking, reading, or writing evidence from the original PBD task. This is a wording and feasibility safeguard, **not** a classroom-tested timing claim. Existing Workbook page/activity references and all teaching activities are retained. Staging DRAFT; audio and Word/PDF exports remain unverified.
+
+## User-approved PBD policy correction — Workbook is the main written exercise
+
+Reversed the earlier automatic **If time permits** policy in all 28 recently mapped lessons: 108–110, 113–116, 119–121, 125, 129–131, 135–137, 140–142, 145–148, 151 and 155–157. When a printed Workbook exercise matches the lesson objective, the Workbook is explicitly the **main written Assessment/PBD task**, not optional supplementary homework. Original Activity 1 and Activity 2 remain unchanged. For Listening and Speaking SPs, oral responses and teacher observations remain essential evidence; a written Workbook alone does not assess the main skill. Existing PBD prompts are preserved pending per-lesson consolidation to avoid duplicate tasks and validate 10-minute feasibility. No unverified Workbook pages added. Staging DRAFT.
