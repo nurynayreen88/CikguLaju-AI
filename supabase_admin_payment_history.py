@@ -31,6 +31,6 @@ def fetch_admin_payment_history(request, limit=100):
                 "payment_reference": item.get("payment_reference"),
                 "status": item.get("status") or ("revoked" if item.get("revoked_at") else "approved"),
                 "event_at": item.get(date_col) or "",
-                "is_receipt": table != "pioneer_entitlements",
+                "is_receipt": (table != "pioneer_entitlements" and str(item.get("status") or "").lower() in ("paid", "completed", "success")),
             })
     return sorted(results, key=lambda r: r["event_at"], reverse=True)
