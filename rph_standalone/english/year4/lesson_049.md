@@ -20,7 +20,9 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Distribute a word-matching worksheet, replay the song and ask pupils to verify their answers using words they heard.
-**Pupils:** Infer meanings of celebrate, celebration, fun and special. Pupils complete the Unit 4 Workbook 'Sing a song' picture-word matching task (printed p.30) to practise celebration vocabulary; teacher checks answers.
+**Pupils:** Infer meanings of celebrate, celebration, fun and special.
+**Teacher:** Instruct pupils to complete Workbook p.30, Sing a song picture-word matching task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.30, Sing a song picture-word matching task; match the celebration words to the pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify an ordinal number heard in the song and use it in a short sentence.
