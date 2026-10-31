@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to state the listening gist and give a reasoned opinion about one suggested sport.
 **Pupils:** State a personal opinion about the listening.
 
-**PBD:** Check identification of sports in Track 60 and spoken recommendations supported by listening (SP 1.2.1, 2.1.1).  
+**PBD:** Check pupils' recognition of the overall sports message in Track 60 for main Listening SP 1.2.1; observe their spoken sports recommendations and supporting opinions for complementary Speaking SP 2.1.1. The SOW does not establish the disc number, so do not assign one without verification.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
