@@ -28,7 +28,7 @@
 **Teacher:** Display a short writing checklist and ask pupils to correct one going to sentence and one cursive letter join.
 **Pupils:** Correct one sentence and check cursive formation.
 
-**PBD:** Assess going to sentences describing a costume, including spelling and cursive legibility (SP 4.2.4 and 4.1.2).  
+**PBD:** Assess each pupil's own going to sentences describing a costume for main Writing SP 4.2.4, including accurate future expressions and relevant details. Check cursive handwriting legibility for complementary Writing SP 4.1.2. Workbook p.31 is the main written practice, but picture-prompt answers alone do not replace the costume description.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
