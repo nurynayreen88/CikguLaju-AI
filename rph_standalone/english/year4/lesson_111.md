@@ -22,7 +22,7 @@
 **Teacher:** Model sequencing one Chapter 5 picture, then ask groups to order the remaining pictures and predict the next event.
 **Pupils:** Order Chapter 5 pictures and predict events.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The Jungle Book using the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Prompt groups to explain their predictions using picture details or earlier story events.
