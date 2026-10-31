@@ -16,7 +16,7 @@ Groups prepare word cards for home, cinema, shopping centre, film and related ad
 Pupils sort place, activity and adjective cards, then combine them into sensible or silly sentences and complete TB p.119 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.61, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Check listening by asking pupils to respond to spoken questions about where people were yesterday. Then use Workbook p.61, Activity 2 (match questions and short answers) as a separate grammar follow-up, not as direct listening evidence.
 **Pupils:** Pupils complete Workbook p.61, Activity 2, by matching questions about yesterday with short answers.
 
 ## Closure (5 minutes)
