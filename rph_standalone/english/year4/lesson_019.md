@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Ask pupils to explain the story's main idea and give a reasoned opinion; use the optional true/false game if time allows.
-**Pupils:** Explain the main idea and give an opinion about the story. Pupils may complete a matching Workbook reading activity about weekly routines, if available; teacher checks comprehension.
+**Pupils:** Explain the main idea and give an opinion about the story. Pupils complete Workbook p.15, Activity 1 (questions about the school story) as additional reading comprehension practice; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils share one thing they enjoyed about the story.
