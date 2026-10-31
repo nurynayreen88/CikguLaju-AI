@@ -39,4 +39,4 @@ def fetch_admin_payment_history(request, limit=100):
                 "event_at": item.get(date_col) or "",
                 "is_receipt": (table in ("subscription_payments", "payments") and str(item.get("status") or "").lower() in ("paid", "completed", "success")),
             })
-    return sorted(results, key=lambda r: r["event_at"], reverse=True)
+    return sorted(results, key=lambda r: str(r["event_at"]), reverse=True)
