@@ -20,7 +20,9 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Invite pupils to check their predictions against the text, explain their evidence and discuss one interesting story detail.
-**Pupils:** Check predictions with evidence from the story. Pupils may complete the Unit 3 Workbook 'Story time' reading questions (printed p.26) to practise finding evidence about past events; teacher checks comprehension.
+**Pupils:** Check predictions with evidence from the story.
+**Teacher:** Instruct pupils to complete Workbook p.26, Story time reading questions, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.26, Story time reading questions; answer questions about events in the story.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to share a reaction to The Curse and justify it with one story detail.
