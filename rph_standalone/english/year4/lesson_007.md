@@ -23,7 +23,7 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Demonstrate one acknowledgement and clarification phrase, then observe pupils using these phrases in their country role-plays.
-**Pupils:** Demonstrate a short exchange with a description and one clarification or acknowledgement phrase. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Demonstrate a short exchange with a description and one clarification or acknowledgement phrase. Pupils may complete a matching Workbook speaking activity on descriptions and clarification, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Invite a short model exchange and ask the class to identify the clarification phrase used.
