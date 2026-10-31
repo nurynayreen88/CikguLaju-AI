@@ -26,7 +26,7 @@
 **Teacher:** Ask pupils to state one dinosaur fact and identify the sentence in the text that supports it.
 **Pupils:** Recall one dinosaur fact.
 
-**PBD:** Check answers about dinosaur facts against the reading text and pupils' spoken explanations against SP 3.2.2 and 2.1.4.  
+**PBD:** Check pupils' text-supported answers to dinosaur fact questions in SB Activities 1–2 for main Reading SP 3.2.2; observe their spoken explanations of a dinosaur fact for complementary Speaking SP 2.1.4. Workbook p.72 Elephant Orphanage passage provides additional written reading practice, not a replacement for the dinosaur text.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
