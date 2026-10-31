@@ -19,8 +19,10 @@
 **Pupils:** Describe food quantities in pairs and ask follow-up questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Use the fridge picture in Workbook p.44, Activity 2 (Look and write) as a speaking prompt first. Ask pupils to describe pictured foods using 'There's some...' and 'There are some...' and assess their spoken sentences; then guide the printed writing task.
-**Pupils:** Describe the food in the fridge aloud in pairs, then write the sentences in Workbook p.44, Activity 2.
+**Teacher:** Listen to each pupil's two food descriptions and check quantity meaning and clarity.
+**Pupils:** Say one 'There is...' and one 'There are...' sentence about the displayed food.
+
+**Workbook practice:** Describe the food in the fridge aloud in pairs, then write the sentences in Workbook p.44, Activity 2. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Recap the sentence patterns and correct a common error.
