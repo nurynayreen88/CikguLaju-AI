@@ -136,3 +136,7 @@ Literature/poetry lessons and lessons already explicitly using a story guide, CC
 ## Unit 7–8 generic Workbook reference cleanup — next batch
 
 Reviewed Lessons 106–121. Literature lessons 106, 111, 117 already refer to The Jungle Book Teaching Guidebook and were not assigned generic Workbook tasks. Lesson 109 uses a teacher-prepared recycling reading text; Lesson 112 is Unit 7 self-assessment; Lesson 118 uses a teacher-prepared listening text; these retain their source-specific assessment and no Workbook page is asserted. Generic unverified Workbook suggestions were removed from Lessons **107, 108, 110, 113, 114, 115, 116, 119, 120 and 121**. No page/activity number was invented. Original PBD and teaching sequence remain unchanged. Specific Workbook task matching requires visual inspection of the corresponding printed Workbook pages before insertion. Audio/Word/PDF and timing QA remain pending; DRAFT, staging only.
+
+## Lessons 122–160 — Workbook relevance cleanup
+
+Removed unverified generic Workbook suggestions from 24 lessons: 123–126, 129–131, 134–137, 139–142, 145–148, 150, 152, 155–157. Existing PBD and Activity 1/2 remain intact. Literature, teacher-selected, project and revision lessons retain their original source-specific assessments. This is **not** a verified page-by-page Workbook matching pass; the scanned Workbook and precise activity instructions still require inspection before any new Workbook mapping. DRAFT; do not merge main or mark READY.
