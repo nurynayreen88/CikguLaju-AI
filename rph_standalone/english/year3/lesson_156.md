@@ -16,7 +16,7 @@ Teacher shows a family picture and models oldest and youngest.
 Pupils describe family members using superlatives, complete the optional activity, then play the Unit 10 board game in groups with dice and counters.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.79, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use Workbook p.79, Activity 2 picture comparisons as oral prompts. Listen to pupils compare people and planets using appropriate comparative adjectives, then let them complete the printed written choices.
 **Pupils:** Pupils complete Workbook p.79, Activity 2, by choosing comparative adjectives to describe the people and planets.
 
 ## Closure (5 minutes)
