@@ -16,8 +16,8 @@ Teacher models finding headscarf, carpet and mirror in a dictionary. Pupils loca
 Teacher guides Student's Book pp.46–47 and Teacher's Book pp.76–77. Pupils label pictures and practise writing familiar words neatly in cursive handwriting.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.36, Activity 2; explain the task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.36, Activity 2, by comparing two rooms and writing sentences about their furniture.
+**Teacher:** Direct pupils to Workbook p.36, Activity 2 (Look, find the differences and write); guide pupils to compare Picture A and Picture B and write short sentences describing the wall colours and furniture differences. Check sentence accuracy and legibility.
+**Pupils:** Compare the two room pictures and write sentences about their differences in Workbook p.36, Activity 2.
 
 ## Closure (5 minutes)
 Pupils share one newly learned household word.
