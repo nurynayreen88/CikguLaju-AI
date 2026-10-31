@@ -94,6 +94,25 @@ class AudioResolverTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Missing audio asset"):
                 mod.resolve_lesson_audio(97)
 
+    def test_validator_rejects_malformed_mapping_entries(self):
+        from unittest.mock import patch
+        import importlib.util
+        import json
+        validator_spec = importlib.util.spec_from_file_location("audio_validator", HERE / "validate_audio_mapping.py")
+        validator = importlib.util.module_from_spec(validator_spec)
+        validator_spec.loader.exec_module(validator)
+        original = json.loads((HERE / "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json").read_text(encoding="utf-8"))
+        original["lessons"]["097"] = [None]
+        original_read_text = Path.read_text
+
+        def substituted_read_text(path, *args, **kwargs):
+            if path.name == "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json":
+                return json.dumps(original)
+            return original_read_text(path, *args, **kwargs)
+
+        with patch.object(Path, "read_text", substituted_read_text):
+            self.assertFalse(validator.validate())
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
