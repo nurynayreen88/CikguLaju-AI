@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model identifying one /s/ or /z/ ending, then ask pairs to locate further examples in the story and verify them by listening.
-**Pupils:** Identify /s/ and /z/ examples in pairs and check against audio. Pupils may complete a matching Workbook phonics activity on /s/ and /z/ sounds, if available; teacher checks pronunciation.
+**Pupils:** Identify /s/ and /z/ examples in pairs and check against audio. The teacher checks pupils' identification of /s/ and /z/ endings from the story recording as the main Listening PBD evidence for SP 1.2.3. No Workbook phonics activity is assigned until its printed page and task are verified.
 
 ## Closure (5 minutes)
 **Teacher:** Play a /s/ versus /z/ listening discrimination game.
