@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 3.2.3  
 **Duration:** 60 minutes  
-**References:** SB p.71 Activity 1; TB p.108; **Vocabulary Track 20; Activity 1 Track 21 (CD unspecified in KPM SOW)**
+**References:** SB p.71 Activity 1; TB p.108; **Class CD2 Track 20 (vocabulary); Class CD2 Track 21 (Activity 1 song), TB p.108**
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce ways of helping others.
