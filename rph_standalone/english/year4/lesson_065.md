@@ -4,7 +4,7 @@
 **Main SP:** 1.3.1  
 **Complementary SP:** 1.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.49 and Phonics p.120; TB pp.78, 175; Tracks 70–71; Year 4 SOW Lesson 65
+**References:** SB p.49 and Phonics p.120; TB pp.78, 175; Class CD1 Tracks 70–71 (TB p.78); Year 4 SOW Lesson 65
 
 ## Set induction (10 minutes)
 **Teacher:** Display familiar food pictures and ask pupils to group them.
