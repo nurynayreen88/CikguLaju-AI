@@ -43,6 +43,8 @@ def verified_rows(csv_file):
 def prepare(source, page, activity):
     if re.search(r"\b(?:Workbook|Activity Book)\b", source, re.I):
         return None, "existing_workbook_reference"
+    if re.search(r"\\bNON-TEXTBOOK\\b", source, re.I):
+        return None, "non_textbook_lesson_requires_manual_review"
     match = ASSESSMENT.search(source)
     if not match:
         return None, "assessment_heading_missing"
