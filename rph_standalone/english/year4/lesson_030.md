@@ -4,7 +4,7 @@
 **Main SP:** Writing 4.3.2  
 **Complementary SP:** Listening 1.2.5  
 **Duration:** 60 minutes  
-**References:** SB p.20 Activities 1–2; TB pp.38–39; CD2 Track 29
+**References:** SB p.20 Activities 1–2; TB pp.38–39; CD1 Track 29
 
 ## Set induction (10 minutes)
 **Teacher:** Review spelling of household chores; leave difficult phrases on the board.
@@ -19,7 +19,7 @@
 **Pupils:** Read and complete the written Activity 1 task.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Follow TB Activity 2 using CD2 Track 29; pupils respond to supported questions and check spelling.
+**Teacher:** Follow TB Activity 2 using CD1 Track 29; pupils respond to supported questions and check spelling.
 **Pupils:** Listen to Track 29, answer the spoken questions and check spelling in their written chore cards and Activity 1 responses. The teacher assesses spelling accuracy in the written work for main Writing SP 4.3.2 and comprehension of the recording for complementary Listening SP 1.2.5. No Workbook task is assigned until its printed page and activity are verified.
 
 ## Closure (5 minutes)
