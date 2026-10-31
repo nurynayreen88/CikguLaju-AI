@@ -43,7 +43,7 @@ def verified_rows(csv_file):
 def prepare(source, page, activity):
     if re.search(r"\b(?:Workbook|Activity Book)\b", source, re.I):
         return None, "existing_workbook_reference"
-    if re.search(r"\\bNON-TEXTBOOK\\b", source, re.I):
+    if re.search(r"\bNON-TEXTBOOK\b", source, re.I):
         return None, "non_textbook_lesson_requires_manual_review"
     match = ASSESSMENT.search(source)
     if not match:
@@ -79,7 +79,7 @@ def main():
     if args.apply:
         for file, updated in changes:
             original = file.read_text(encoding="utf-8")
-            if re.search(r"\\b(?:Workbook|Activity Book)\\b", original, re.I):
+            if re.search(r"\b(?:Workbook|Activity Book)\b", original, re.I):
                 raise RuntimeError(f"Workbook reference appeared during review: {file}")
         for file, updated in changes:
             file.write_text(updated, encoding="utf-8")
