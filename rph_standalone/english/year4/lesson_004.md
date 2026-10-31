@@ -24,7 +24,7 @@
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Check statements for suitable meaning and high-frequency spelling; provide sentence frames or extension descriptions by proficiency.
 **Pupils:** Proofread four sentences for meaning, capitals, full stops and high-frequency spelling. 
-**Teacher:** Instruct pupils to complete Workbook p.4, Activity 3 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.4, Activity 3 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.4, Activity 3; write their country and nationality and check spelling.
 
 ## Closure (5 minutes)
