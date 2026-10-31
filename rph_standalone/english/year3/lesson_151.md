@@ -13,7 +13,7 @@ Teacher reviews comparative adjectives.
 Teacher models simple comparisons using willing volunteers and gives spoken instructions for pupils to follow. Teacher emphasises respectful language.
 
 ## Activity 2 (25 minutes)
-Pupils listen to five True/False comparative sentences, record answers and explain corrections aloud. They complete Student's Book p.97 Activity 4 and practise a respectful quiz in groups.
+Pupils listen to five True/False comparative sentences, record answers and explain corrections aloud. They complete Student's Book p.97 Activity 4 and practise a respectful quiz in groups. Pupils complete Workbook p.79, Activity 2, by choosing the correct comparative adjectives in the picture sentences.
 
 ## Assessment / PBD (10 minutes)
 Teacher reads two comparative statements. Pupils mark true or false, correct one statement and give a respectful spoken comparison.
