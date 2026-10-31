@@ -166,6 +166,12 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("Workbook p.80, Activity 1", pbd)
         self.assertIn("not as direct evidence of reading comprehension", pbd)
 
+    def test_lesson_160_project_assessment_is_not_overwritten(self):
+        pbd = self.pbd(self.lesson(160))
+        self.assertIn("revised animal description", pbd)
+        self.assertIn("picture-to-text match", pbd)
+        self.assertNotIn("Direct pupils to Workbook", pbd)
+
     def test_lesson_159_uses_verified_story_character_matching(self):
         pbd = self.pbd(self.lesson(159))
         self.assertIn("Workbook p.81, Activity 1", pbd)
