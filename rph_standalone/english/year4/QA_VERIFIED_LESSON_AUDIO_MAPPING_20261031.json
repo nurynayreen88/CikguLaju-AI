@@ -112,5 +112,22 @@
         "track": 22
       }
     ]
-  }
+  },
+  "teacher_book_page_by_lesson": {
+    "102": 111,
+    "103": 111,
+    "104": 112,
+    "105": 113,
+    "107": 118,
+    "110": 115,
+    "123": 189,
+    "129": 138,
+    "134": 141,
+    "030": 39,
+    "032": 46,
+    "065": 78,
+    "097": 108,
+    "098": 108
+  },
+  "source_note": "TB page references transcribed from previously verified lesson references; not a new visual review in this commit."
 }
