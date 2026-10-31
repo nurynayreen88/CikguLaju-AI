@@ -22,7 +22,7 @@
 **Teacher:** Organise pairs to discuss a recent school trip, prompting them to reuse relevant language from the text.
 **Pupils:** Discuss a school trip using details from the text.
 
-Pupils practise reading for details about journeys using a suitable Workbook activity, where available; teacher checks comprehension.
+Pupils complete Workbook printed p.51, Unit 6 'Smart kids', matching transport choices to pupils and reading timetable details.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to cite one school-trip detail from the text.
