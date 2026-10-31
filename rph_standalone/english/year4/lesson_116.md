@@ -22,8 +22,8 @@
 **Teacher:** Organise a clue-card exchange, ask groups to justify their guesses and guide revisions for spelling and clarity.
 **Pupils:** Guess animals from clues and correct spelling.
 
-**Teacher:** Instruct pupils to complete Workbook p.68, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
-**Pupils:** Complete Workbook p.68, Activity 1; complete the comparative sentences about animals.
+**Teacher:** Instruct pupils to complete Workbook p.69, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.69, Activity 1; complete the comparative sentences about animals.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read one revised comparative sentence and identify the correction they made.
