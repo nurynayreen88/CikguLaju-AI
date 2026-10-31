@@ -25,7 +25,7 @@
 
 ## Activity 2 — Guided and paired practice (25 minutes)
 **Teacher:** Partners describe picture A or B without showing it, guess the picture and individually write two clothing words.  
-**Pupils:** Complete the activity, explain their choices and revise errors.
+**Pupils:** Complete the activity, explain their choices and revise errors. Pupils complete Workbook p.85, Activity 1, by reading the clothing descriptions and matching them to the named characters.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Check two relevant personal-information questions and two correctly punctuated guided sentences. Record accuracy and assistance needed.  
