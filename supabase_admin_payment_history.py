@@ -8,7 +8,7 @@ def fetch_admin_payment_history(request, limit=100):
         limit = int(limit)
     except (TypeError, ValueError, OverflowError) as exc:
         raise ValueError("Invalid limit") from exc
-    if not 1 <= limit <= 1000:
+    if isinstance(limit, bool) or not 1 <= limit <= 1000:
         raise ValueError("Invalid limit")
     sources = (
         ("subscription_payments", "subscription", "created_at"),
