@@ -42,18 +42,18 @@ def verified_rows(csv_file):
 
 
 def prepare(source, page, activity):
-    if re.search(r"\\b(?:Workbook|Activity Book)\\b", source, re.I):
+    if re.search(r"\b(?:Workbook|Activity Book)\b", source, re.I):
         return None, "existing_workbook_reference"
     match = ASSESSMENT.search(source)
     if not match:
         return None, "assessment_heading_missing"
-    end = re.search(r"(?m)^## |^\\*\\*QA", source[match.end():])
+    end = re.search(r"(?m)^## |^\*\*QA", source[match.end():])
     section_end = match.end() + end.start() if end else len(source)
     replacement = (
         f"**Teacher:** Direct pupils to Workbook p.{page}, {activity}; "
         "explain the task, check individual responses and record achievement "
-        "against the lesson objectives.\\n"
-        f"**Pupils:** Complete Workbook p.{page}, {activity}.\\n\\n"
+        "against the lesson objectives.\n"
+        f"**Pupils:** Complete Workbook p.{page}, {activity}.\n\n"
     )
     return source[:match.end()] + replacement + source[section_end:], "ready"
 
