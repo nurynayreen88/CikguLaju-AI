@@ -21,7 +21,7 @@
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Model a simple-past sentence and organise pairs to describe past experiences or cultures before presenting their ideas.
 **Pupils:** Describe a past experience or culture with a partner.
-**Teacher:** Instruct pupils to complete Workbook p.24, Let's play question prompts, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.24, Let's play question prompts, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.24, Let's play question prompts; ask and answer questions about yesterday.
 
 ## Closure (5 minutes)
