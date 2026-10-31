@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils through Activity 2, ask for a supporting sentence from the text and review the superlative Grammar Box with examples.
 **Pupils:** Complete Activity 2 and practise superlatives.
 
-**Teacher:** Instruct pupils to complete Workbook p.78, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.78, Activity 2 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.78, Activity 2; look at the sports picture and complete the sentences using the correct comparative or superlative forms.
 
 ## Closure (5 minutes)
