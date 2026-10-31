@@ -93,10 +93,6 @@ def logout():
     expected = session.get("web_logout_token")
     if not expected or not secrets.compare_digest(expected, supplied):
         abort(403)
-    expected = session.get("web_logout_csrf")
-    provided = request.headers.get("X-CSRF-Token", "")
-    if not expected or not secrets.compare_digest(expected, provided):
-        abort(403)
     session.clear()
     return jsonify({"authenticated": False})
 
