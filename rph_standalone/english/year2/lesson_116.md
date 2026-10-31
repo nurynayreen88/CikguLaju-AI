@@ -19,11 +19,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give pupils the printed Pip passage. Pupils read five quiz questions, identify supporting details, and practise nodding and eye contact while exchanging answers.
-**Pupils:** Underline supporting details and give two oral answers. Pupils complete Workbook p.103, Activity 1, by drawing and labelling examples of what their robot can do.
+**Pupils:** Underline supporting details and give two oral answers.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score five reading details (SP 3.2.2) and two non-verbal responses (SP 2.2.1). Score five individual detail answers (0–5) and two oral responses (0–2); record independent accuracy and any support.
-**Pupils:** Submit individual evidence.
+**Pupils:** Submit individual evidence. Pupils complete Workbook p.103, Activity 1, by drawing and labelling examples of what their robot can do.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
