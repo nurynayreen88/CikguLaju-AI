@@ -18,8 +18,12 @@ def validate():
     if mapping.get("asset_manifest") != "QA_CLASS_CD_ASSET_MANIFEST_20261031.json":
         errors.append("Unexpected audio manifest reference")
     discs = assets.get("discs", {})
+    if not isinstance(discs, dict):
+        errors.append("Audio manifest discs must be an object")
+        discs = {}
     for disc, expected in (("CD1", 88), ("CD2", 88), ("CD3", 44)):
-        tracks = discs.get(disc, {}).get("tracks", {})
+        disc_info = discs.get(disc, {})
+        tracks = disc_info.get("tracks", {}) if isinstance(disc_info, dict) else None
         if not isinstance(tracks, dict):
             errors.append(f"{disc}: tracks must be an object")
             continue
@@ -32,7 +36,14 @@ def validate():
             if not isinstance(asset.get("file_id"), str) or not asset["file_id"] or not isinstance(asset.get("size_bytes"), int) or isinstance(asset["size_bytes"], bool) or asset["size_bytes"] <= 0:
                 errors.append(f"{disc} Track {number}: invalid Drive metadata")
     pages = mapping.get("teacher_book_page_by_lesson", {})
-    if set(pages) != set(mapping.get("lessons", {})):
+    if not isinstance(pages, dict):
+        errors.append("Teacher Book page mapping must be an object")
+        pages = {}
+    lessons = mapping.get("lessons", {})
+    if not isinstance(lessons, dict):
+        errors.append("Lesson audio mapping must be an object")
+        lessons = {}
+    if set(pages) != set(lessons):
         errors.append("Teacher Book page references must match mapped lessons exactly")
     for lesson, page in pages.items():
         if not isinstance(page, int) or isinstance(page, bool) or page <= 0:
@@ -46,7 +57,7 @@ def validate():
     if len(all_ids) != len(set(all_ids)):
         errors.append("Drive file ID is reused across different manifest tracks")
     usages = []
-    for lesson, items in mapping.get("lessons", {}).items():
+    for lesson, items in lessons.items():
         if not (isinstance(lesson, str) and len(lesson) == 3 and lesson.isascii() and lesson.isdecimal() and 1 <= int(lesson) <= 160):
             errors.append(f"Invalid lesson key: {lesson}")
         if not isinstance(items, list) or not items:
@@ -68,7 +79,8 @@ def validate():
             if key in seen:
                 errors.append(f"Lesson {lesson}: duplicate mapping {key}")
             seen.add(key)
-            disc_tracks = discs.get(disc, {}).get("tracks", {})
+            disc_info = discs.get(disc, {})
+            disc_tracks = disc_info.get("tracks", {}) if isinstance(disc_info, dict) else None
             if not isinstance(disc_tracks, dict):
                 errors.append(f"Lesson {lesson}: invalid track collection for {disc}")
                 continue
@@ -80,7 +92,7 @@ def validate():
                 errors.append(f"Lesson {lesson}: invalid asset metadata for {disc} Track {track}")
                 continue
             usages.append((lesson, disc, track, asset["file_id"]))
-    print(f"Lessons: {len(mapping.get('lessons', {}))}; track usages: {len(usages)}; unique MP3s: {len({u[3] for u in usages})}; errors: {len(errors)}")
+    print(f"Lessons: {len(lessons)}; track usages: {len(usages)}; unique MP3s: {len({u[3] for u in usages})}; errors: {len(errors)}")
     for error in errors:
         print("ERROR:", error)
     return not errors
