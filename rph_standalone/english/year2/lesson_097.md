@@ -25,7 +25,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three basic personal questions (SP 2.1.2) and three personal ability responses (SP 2.1.1).
-**Pupils:** Submit individual evidence. Pupils complete Workbook p.99, Activity 1, by reading the children's descriptions of what they can and cannot do.
+**Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
