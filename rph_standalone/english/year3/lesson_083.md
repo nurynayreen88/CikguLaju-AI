@@ -19,8 +19,10 @@
 **Pupils:** Read the omelette text, choose a preferred omelette and locate supporting details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Use Workbook p.45, Activity 2 (Look and write. Answer the questions) to check pupils' reading of the printed questions and picture details about Anna's and Greg's omelettes; ask pupils to identify the evidence for each answer.
-**Pupils:** Pupils complete Workbook p.45, Activity 2, by answering questions about the ingredients in Anna's and Greg's omelettes.
+**Teacher:** Ask pupils to infer one word meaning from context and locate two details in the text.
+**Pupils:** Explain the word meaning and point to evidence for both details.
+
+**Workbook practice:** Pupils complete Workbook p.45, Activity 2, by answering questions about the ingredients in Anna's and Greg's omelettes. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Invite brief responses and recap key vocabulary.
