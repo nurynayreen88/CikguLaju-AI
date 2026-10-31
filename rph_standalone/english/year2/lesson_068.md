@@ -25,11 +25,11 @@
 
 ## Activity 2 — Guided and paired practice (25 minutes)
 **Teacher:** Pupils first choose the main idea (A/B/C) and underline a supporting clue. Then they locate five details and answer two comprehension questions. If using the Student's Book, the teacher must separately verify its actual text before assigning page-specific questions.  
-**Pupils:** Complete the activity, explain their choices and revise errors. Pupils complete Workbook p.86, Activity 1, by listening and ticking the correct clothing pictures.
+**Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Check each pupil's independent main-idea choice (0–1), supporting clue (0–1) and five details (0–5). Use the two comprehension questions for additional feedback. Record individual accuracy and assistance needed; do not substitute detail scores for the main-idea criterion.  
-**Pupils:** Demonstrate the skill individually.
+**Pupils:** Demonstrate the skill individually. Pupils complete Workbook p.86, Activity 1, by listening and ticking the correct clothing pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Review two useful clothing words and invite a relevant response.  
