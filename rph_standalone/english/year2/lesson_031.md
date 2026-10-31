@@ -29,7 +29,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Listen to three independent descriptions per pupil, checking correct singular/plural forms, and check three listening choices. Record intelligibility, relevance and listening accuracy separately, noting prompts.  
-**Pupils:** Describe three objects or rooms and identify three rooms. Pupils complete Workbook p.71, Activity 2, by choosing 'There's' or 'There are' to describe the rooms and objects in the pictures.
+**Pupils:** Describe three objects or rooms and identify three rooms.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe one difference between the plans.  
