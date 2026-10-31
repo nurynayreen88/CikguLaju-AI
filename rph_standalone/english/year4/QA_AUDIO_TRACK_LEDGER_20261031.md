@@ -177,3 +177,19 @@ Official source: Primary Year 4 SK Scheme of Work, https://drive.google.com/file
 - **121 (Writing 23):** SOW lists complementary Listening SP 1.2.2 but does not explicitly identify a CD/Track in the lesson outline. Preserve the SP; check assessment evidence separately.
 
 **Source discipline:** These are findings from the actual SOW text, not MP3 playback. Only 129 and 134 have unequivocal prescribed *play-a-recording* instructions among the sampled lessons. 123 needs TB-level verification. No new CD or track number is asserted.
+
+## Resolution of Lessons 123, 129 and 134 — later evidence (31 October 2026)
+
+This section **supersedes the pending CD/track assertions above** for these three lessons. The printed Teacher's Book was inspected, and original Year 4 Class CD Drive folders were enumerated. Matching files have `audio/mpeg` metadata and non-zero sizes. This verifies **file existence and disc/track filename**, not sound content, public accessibility, or Telegram delivery.
+
+| Lesson | TB-verified task | Class CD MP3 metadata found | Drive file ID | Bytes | Status |
+|---|---|---|---|---:|---|
+| 123 | Phonics 9 Activity 1, TB p.189 | CD3 Track 30 | `1oQt7UuQZoIqwt1BvzEXdjA4Iwfh2inHR` | 752000 | File located; playback untested |
+| 123 | Phonics 9 Activity 2, TB p.189 | CD3 Track 31 | `1RBs0wbPwwPyrIFIQmgD0f_3TPgHVBEq2` | 897116 | File located; playback untested |
+| 129 | Preparatory vocabulary, TB p.138 | CD2 Track 51 | `1rVOmzGZ9DNPKutLoRtfTlwrLhVSSsrgO` | 317998 | File located; playback untested |
+| 129 | Sports song, SB p.93 Activity 1, TB p.138 | CD2 Track 52 | `1ZkJkB2UYEaM_xaZYXXUP9jVIkZQPH_pZ` | 942247 | File located; playback untested |
+| 134 | Three interviews, SB p.95 Activity 4, TB p.141 | CD2 Track 56 | `1iVBMJ0vlevSUSFP5QsLJsXLlCSiSBoGo` | 1105711 | File located; playback untested |
+
+**Drive source folders:** Class CD2 `1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR`; Class CD3 `1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u`. All five files are also referenced from their corresponding RPH Markdown files. Drive metadata reports `source_visibility_status=access_not_verified`, so a Drive link must **not** be described as a tested public download.
+
+**Release gate:** Confirm audio by listening, test actual download as a normal bot user, and verify lesson-to-file mapping in bot runtime. Do not mark READY or merge based solely on Drive metadata.
