@@ -70,3 +70,26 @@ The scanned Workbook was visually reviewed across PDF pages 2–17 (printed page
 | 027 | 13 | Activity 1, household-chores listening/numbering | Optional follow-up; audio mapping not yet checked |
 
 **Scope:** 10 lesson files changed in this batch. These are visually grounded **suggested supplemental activities**; not claims that SOW requires those exact Workbook pages. Audio recordings and the remaining 150 lesson-to-Workbook matches are not yet independently verified. The source PDF is scanned (no embedded selectable text); do not infer page numbers from a global offset without visual confirmation. Staging only; not READY.
+
+## Visual Workbook matching — Unit 3 and Unit 4 (additional batch)
+
+A new visual contact sheet was rendered from PDF pages 18–35 of the scanned Workbook. The printed page numbers were read from the actual images. **Important correction:** previous notes about a universal PDF-page/printed-page offset are not reliable; use the visible printed page number for each activity, not an inferred offset. No automatic page-number conversion is approved.
+
+### RPH files updated
+
+| Unit | Lesson | Printed Workbook page | Visually observed activity | Use |
+|---|---:|---:|---|---|
+| 3 | 033 | 22 | Smart kids past-tense question task | Optional past-question practice |
+| 3 | 034 | 24 | Let's play, questions about yesterday | Speaking practice |
+| 3 | 035 | 23 | Our world, Ancient Egypt vocabulary | Optional reading support |
+| 3 | 036 | 24 | Let's play, past-simple questions | Optional writing practice |
+| 3 | 040 | 26 | Story time, past-events comprehension | Optional reading practice |
+| 3 | 041 | 26 | Story time, past-tense sentence completion | Optional writing practice |
+| 4 | 049 | 30 | Sing a song, celebrations vocabulary | Vocabulary support |
+| 4 | 050 | 30 | Sing a song, ordinal numbers | Speaking about dates |
+| 4 | 051 | 35 | Story time, reading/matching | Optional comprehension |
+| 4 | 052 | 31 | Smart kids, picture prompts | Writing support |
+| 4 | 055 | 32 | Our world, future-plans prompts | Speaking support |
+| 4 | 056 | 35 | Story time, reading/matching | Optional comprehension |
+
+**12 lesson files were updated.** The original teaching sequence was preserved; only existing generic Workbook follow-up sentences were replaced. These Workbook activities are optional aligned supplements, not verified mandatory SOW prescriptions. No audio-file contents were independently verified, and no Word/PDF generation was tested in this batch. All changes remain on staging.
