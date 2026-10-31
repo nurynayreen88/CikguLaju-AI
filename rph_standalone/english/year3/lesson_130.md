@@ -16,7 +16,7 @@ Pairs match sentence strips about holiday activities.
 Pupils discuss their own holidays, then complete Student's Book p.85 Activity 2 using their holiday pictures. After rehearsing in pairs, selected pupils present a short holiday recount to the class.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.68, Activity 3; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use the holiday-activity pictures in Workbook p.68, Activity 3 as prompts for pupils to say what each child did. Assess spoken past-tense sentences before pupils complete the printed matching task.
 **Pupils:** Pupils complete Workbook p.68, Activity 3, by matching holiday activities with the children in the pictures.
 
 ## Closure (5 minutes)
