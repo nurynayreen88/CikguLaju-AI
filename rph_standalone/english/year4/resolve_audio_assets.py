@@ -38,9 +38,11 @@ def resolve_lesson_audio(lesson):
     resolved = []
     for entry in mapping["lessons"][lesson_key]:
         disc, track = entry["disc"], entry["track"]
-        item = assets["discs"][disc]["tracks"][str(track)]
-        file_id = item["file_id"]
-        if not file_id or item["size_bytes"] <= 0:
+        item = assets.get("discs", {}).get(disc, {}).get("tracks", {}).get(str(track))
+        if not isinstance(item, dict):
+            raise ValueError(f"Missing audio asset for {lesson_key}/{disc}/{track}")
+        file_id, size = item.get("file_id"), item.get("size_bytes")
+        if not isinstance(file_id, str) or not file_id or not isinstance(size, int) or isinstance(size, bool) or size <= 0:
             raise ValueError(f"Invalid audio metadata for {lesson_key}/{disc}/{track}")
         resolved.append({
             "year": 4,
