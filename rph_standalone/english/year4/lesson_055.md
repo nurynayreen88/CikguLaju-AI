@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Ask pupils to swap interviewer roles and report one partner's plan using a complete sentence.
-**Pupils:** Swap roles, report plans and check task completion. Pupils may complete a matching Workbook activity on making celebration plans, if available; teacher checks their responses.
+**Pupils:** Swap roles, report plans and check task completion. Pupils use the Unit 4 Workbook 'Our world' future-plans prompts (printed p.32) for optional dialogue practice; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Invite a pair to demonstrate a going to question and a suitable clarification response.
