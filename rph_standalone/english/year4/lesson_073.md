@@ -23,7 +23,7 @@
 **Pupil action:** Write sentences with enough and but about yesterday's habits.
 
 
-**Teacher:** Instruct pupils to complete Workbook p.43, healthy-eating diary project, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.43, healthy-eating diary project, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.43, healthy-eating diary project; write a short diary entry about food choices.
 
 ## Closure (5 minutes)
