@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils through Activity 2, ask for a supporting sentence from the text and review the superlative Grammar Box with examples.
 **Pupils:** Complete Activity 2 and practise superlatives.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise reading about sports and identifying key information using a suitable Workbook activity, where available; teacher checks comprehension.
 
 ## Closure (5 minutes)
 **Teacher:** Lead a sports mime review and ask pupils to identify each sport using a complete sentence.
