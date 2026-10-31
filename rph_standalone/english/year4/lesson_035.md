@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Vocabulary using CD1 Track 38; pupils identify the dialogue's main idea.
-**Pupils:** Listen to Track 38 and identify the dialogue's main idea. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Listen to Track 38 and identify the dialogue's main idea. Pupils may complete a matching Workbook activity on listening for past events, if available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Lead a past-tense verb review game and ask pupils to use one verb in a complete sentence.
