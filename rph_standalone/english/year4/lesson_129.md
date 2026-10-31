@@ -26,7 +26,7 @@
 **Teacher:** Invite pupils to name a sport they enjoy and connect their response to one word or action from the song.
 **Pupils:** Name a sport they enjoy.
 
-**PBD:** Record identification of the song's sports theme and responses to sports vocabulary against SP 1.2.2 and 1.2.1.  
+**PBD:** Check specific sports words or details pupils identify from the song for main Listening SP 1.2.2; check their recognition of the song's overall sports theme for complementary Listening SP 1.2.1. Workbook p.77 is written sports-vocabulary practice, not listening evidence.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
