@@ -14,10 +14,11 @@ Teacher reviews sports through the miming hopscotch game. Pupils name actions.
 Teacher leads a jumbled-letter game with sports and table tennis vocabulary. Pupils discuss whether they enjoy these activities.
 
 ## Activity 2 — Story reading (25 minutes)
-Teacher guides Student's Book pp.32–33 Activity 1 using Teacher's Book pp.56–57. Pupils read the story, identify its main idea and discuss the value illustrated. Pupils complete Workbook p.31, Activity 1, by matching pictures from the story to the correct answers.
+Teacher guides Student's Book pp.32–33 Activity 1 using Teacher's Book pp.56–57. Pupils read the story, identify its main idea and discuss the value illustrated.
 
-## PBD (10 minutes)
-Teacher checks understanding of the main idea and accurate spelling of selected sports words. Pupils complete a short learning diary reflection.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.31, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.31, Activity 1, by matching pictures from the story to the correct answers.
 
 ## Closure (5 minutes)
 Pupils share one value learned from the story.
