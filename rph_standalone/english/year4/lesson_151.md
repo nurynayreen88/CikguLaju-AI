@@ -24,6 +24,9 @@
 
 Pupils record one practical way to improve their English after the speaking survey; no specific Workbook page is prescribed in the SOW.
 
+**Teacher:** Instruct pupils to complete Workbook p.88, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.88, Activity 2; look at the picture and write advice using should or shouldn't.
+
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to demonstrate a useful speaking strategy in a short exchange.
 **Pupils:** Share one strategy to practise.
