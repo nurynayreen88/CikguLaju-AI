@@ -22,7 +22,7 @@
 **Teacher:** Model legible cursive letter formation, then guide pupils to write and present their safety rules.
 **Pupils:** Write rules in cursive and present them.
 
-**Teacher:** Instruct pupils to complete Workbook p.50, the road-safety task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.50, the road-safety task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.50, the road-safety task; write positive and negative road-safety rules.
 
 ## Closure (5 minutes)
