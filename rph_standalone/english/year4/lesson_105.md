@@ -4,7 +4,7 @@
 **Main SP:** 4.2.3  
 **Complementary SP:** 4.3.2  
 **Duration:** 60 minutes  
-**References:** SB p.75 Activities 3–4; TB p.113; Optional Track 29 (if time allows; KPM SOW, disc unspecified); Primary Year 4 SK SOW Lesson 105
+**References:** SB p.75 Activities 3–4; TB p.113; Class CD2 Track 29 (Activity 4, Teacher's Book p.113; optional in this RPH); Primary Year 4 SK SOW Lesson 105
 
 ## Set induction (10 minutes)
 **Teacher:** Review recycling and indefinite pronouns.
