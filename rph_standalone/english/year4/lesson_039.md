@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Prompt pupils to extend their instructions and describe what happened using a clear action sequence.
-**Pupils:** Give longer instructions and describe what happened. Pupils may complete a matching Workbook activity about past experiences, if available; teacher checks their responses.
+**Pupils:** Give longer spoken instructions and describe what happened using a clear action sequence. The teacher checks each pupil's spoken instructions for main Speaking SP 2.1.3 and spoken past-experience responses for complementary Speaking SP 2.1.2. No Workbook activity is assigned to this non-textbook lesson without a verified matching task.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to demonstrate one clear action sequence using appropriate ordering words.
