@@ -13,10 +13,11 @@ Teacher introduces key vocabulary about houses. Pupils match words to pictures.
 Teacher describes a familiar house using pictures. Pupils listen and identify vocabulary from the board.
 
 ## Activity 2 — Reading (25 minutes)
-Teacher introduces the text about Sue's house on Student's Book p.51. Pupils read silently, identify the main idea and locate specific details about the house. Pupils complete Workbook p.40, Activity 1, by comparing two houses and writing where the furniture is.
+Teacher introduces the text about Sue's house on Student's Book p.51. Pupils read silently, identify the main idea and locate specific details about the house.
 
-## PBD (10 minutes)
-Pupils state the main idea and locate two supporting details in the reading text.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.40, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.40, Activity 1, by comparing two houses and writing where the furniture is.
 
 ## Closure (5 minutes)
 Pupils share one similarity between Sue's house and their own home.
