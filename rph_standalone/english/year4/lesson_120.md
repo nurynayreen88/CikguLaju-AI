@@ -22,7 +22,8 @@
 **Teacher:** Ask pairs to justify one answer by pointing to a sentence in the text, then invite a reasoned opinion about the dinosaur they find most interesting.
 **Pupils:** Explain answers using text evidence.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.71, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.71, Activity 1; read the Elephant Orphanage passage and answer the comprehension questions.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state one dinosaur fact and identify the sentence in the text that supports it.
