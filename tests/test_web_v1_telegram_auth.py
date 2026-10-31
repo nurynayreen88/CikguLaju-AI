@@ -40,7 +40,7 @@ class TelegramAuthTests(unittest.TestCase):
             verify_telegram_login(signed(), "wrong-token", now=NOW)
 
     def test_malformed_fields_rejected(self):
-        for data in ({}, signed(id="not-a-number"), signed(hash="bad")):
+        for data in ({}, signed(id="not-a-number"), {**signed(), "hash": "bad"}):
             with self.assertRaises(TelegramLoginError):
                 verify_telegram_login(data, TOKEN, now=NOW)
 
