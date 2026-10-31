@@ -22,7 +22,7 @@
 **Teacher action:** Assign waiter and customer roles, provide sample menus and monitor pair role-plays for clear ordering and clarification.
 **Pupil action:** Role-play ordering from a sample menu.
 
-Pupils practise listening for details about food and healthy eating using a suitable Workbook activity, where available; teacher checks their answers.
+Pupils may use Workbook p.44 (healthy-eating reading passage) for optional vocabulary practice after the listening task; teacher checks answers.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share a favourite meal and model a polite response to a partner's choice.
