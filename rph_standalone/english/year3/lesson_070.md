@@ -13,7 +13,7 @@ Teacher reviews clothes vocabulary with picture prompts. Pupils name items.
 Teacher collects a few classroom items and models 'Whose pencil is this?' and 'Whose pencils are these?' Pupils listen and identify owners.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher revisits the Grammar Box on Student's Book p.47 and guides Activity 3 from Teacher's Book p.77. Pupils listen for ownership information and respond to questions. Pupils complete Workbook p.35, Activity 2, by matching clothing items to their owners.
+Teacher revisits the Grammar Box on Student's Book p.47 and guides Activity 3 from Teacher's Book p.77. Pupils listen for ownership information and respond to questions. Pupils complete Workbook p.37, Activity 2, by answering questions about the positions of objects in the bedroom.
 
 ## PBD (10 minutes)
 Pupils identify two listening details and answer one question about the recording.
