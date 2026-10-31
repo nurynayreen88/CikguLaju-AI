@@ -16,7 +16,7 @@
 
 ## Activity 2 — Speaking practice (25 minutes)
 **Teacher:** Display food items and model 'There is some...' and 'There are some...'.
-**Pupils:** Describe food quantities in pairs and ask follow-up questions.
+**Pupils:** Describe food quantities in pairs and ask follow-up questions. Pupils complete Workbook p.44, Activity 2, by writing sentences with 'There's some' and 'There are some' about food in the fridge.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Listen to each pupil's two food descriptions and check quantity meaning and clarity.
