@@ -16,8 +16,8 @@ Teacher plays Run and Touch using door, window and floor, introducing behind and
 Teacher follows Warm Up, Vocabulary and Activity 1 from Teacher's Book pp.74–75. Pupils listen for house vocabulary and prepositions, then identify objects and locations.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.36, Activity 1; explain the task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.36, Activity 1, by colouring the house picture and identifying its furniture.
+**Teacher:** Direct pupils to Workbook p.36, Activity 1 (Read, draw and colour); read aloud the printed description of the house, then check whether pupils add and colour the specified details correctly. This is a reading-led drawing follow-up; continue assessing listening separately through the lesson's oral instructions.
+**Pupils:** Read the house description in Workbook p.36, Activity 1, then draw and colour the details described.
 
 ## Closure (5 minutes)
 Pupils describe where one classroom object is located.
