@@ -13,7 +13,7 @@ Teacher reviews weekend verbs.
 Teacher models 'What did you do at the weekend?' and a suitable answer.
 
 ## Activity 2 (25 minutes)
-Pupils interview classmates using SB p.87 Activity 4, repeat time phrases to sustain exchanges and peer-check their written past-tense sentences.
+Pupils interview classmates using SB p.87 Activity 4, repeat time phrases to sustain exchanges and peer-check their written past-tense sentences. Pupils complete Workbook p.71, Activity 2, by answering questions about the children's past holiday activities.
 
 ## Assessment / PBD (10 minutes)
 Teacher observes pupils asking and answering a weekend question, then checks one written past-tense sentence for spelling.
