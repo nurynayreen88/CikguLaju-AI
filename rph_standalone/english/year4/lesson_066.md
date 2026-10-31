@@ -22,7 +22,7 @@
 **Teacher:** Model a polite request to clarify an ingredient, then ask pairs to adapt the dialogue with different food items.
 **Pupils:** Ask clarification questions and respond appropriately in pairs.
 
-**Teacher:** Instruct pupils to complete Workbook p.39, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.39, Activity 2 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.39, Activity 2; complete sentences using a, an or some with the food nouns.
 
 ## Closure (5 minutes)
