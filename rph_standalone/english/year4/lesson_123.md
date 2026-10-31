@@ -4,7 +4,7 @@
 **Main SP:** 1.1.1  
 **Complementary SP:** 3.2.4  
 **Duration:** 60 minutes  
-**Audio verification:** SOW requires Phonics 9 Activities 1–2 (SB p.127; TB pp.189–190). Confirm whether the original Teacher's Book specifies a CD/Track and match the recording before enabling an audio download. Do not assign a track by guess.  
+**Audio:** Class CD3 Track 30 (Phonics 9 Activity 1) and CD3 Track 31 (Phonics 9 Activity 2), confirmed in Teacher's Book p.189. MP3 and download link still unverified.  
 **References:** SB p.127 Phonics 9; TB pp.189–190; dictionaries; Year 4 SOW Lesson 123
 
 ## Set induction (10 minutes)
