@@ -15,9 +15,10 @@ Teacher displays action flashcards around the room. Pupils move to a card and sa
 ## Activity 2 — Listening (25 minutes)
 Teacher guides Student's Book p.25 Activity 1 and the action song. Pupils listen, sing and mime, then identify actions they heard.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.18, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.18, Activity 1, by choosing 'am', 'are' or 'is' for the pictured actions.
+## PBD (10 minutes)
+Teacher gives two oral prompts. Pupils identify the matching details and explain one unfamiliar word using context clues.
+
+**Workbook practice:** Pupils complete Workbook p.18, Activity 1, by choosing 'am', 'are' or 'is' for the pictured actions. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils respond to TPR commands from Teacher's Book p.46.
