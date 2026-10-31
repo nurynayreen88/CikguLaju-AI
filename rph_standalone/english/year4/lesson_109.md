@@ -19,11 +19,6 @@
 **Pupils:** Read the local recycling text and answer two gist questions.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask pupils to underline one sentence stating the main idea, check the meanings of two unfamiliar words in a monolingual dictionary, and explain one benefit of the project. Record who can locate the main idea and use the dictionary independently.
-**Pupils:** Identify the main idea and explain how the project helps people.
-
-Pupils reread the teacher-prepared recycling text and record two useful facts; no specific Workbook page is prescribed in the SOW.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.61, Activity 1; identify recyclable objects and sort them into the appropriate bins.
 
