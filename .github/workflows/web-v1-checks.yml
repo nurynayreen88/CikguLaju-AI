@@ -32,7 +32,7 @@ jobs:
         run: python -m pip install Flask==3.1.0
       - name: Syntax check isolated modules
         run: |
-          python -m py_compile cikgulaju_web_v1.py web_v1_lesson_catalog.py web_v1_sqlite_catalog.py tools/run_web_v1_preview.py tools/inspect_web_v1_sqlite_schema.py tools/detect_web_v1_database.py web_v1_shared_rph_contract.py
+          python -m py_compile cikgulaju_web_v1.py web_v1_lesson_catalog.py web_v1_sqlite_catalog.py tools/run_web_v1_preview.py tools/inspect_web_v1_sqlite_schema.py tools/detect_web_v1_database.py web_v1_shared_rph_contract.py web_v1_verified_topics.py
       - name: Run isolated tests (never import production app)
         run: |
           python -m unittest discover -s tests -p 'test_cikgulaju_web_v1.py' -v
