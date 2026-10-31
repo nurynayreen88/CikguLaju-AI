@@ -13,7 +13,7 @@ Teacher reviews rooms and furniture. Pupils identify household objects.
 Teacher models the two syllables in cushion, slippers, table and flower. Pupils listen and identify the second syllable.
 
 ## Activity 2 — Listening and speaking (25 minutes)
-Teacher guides Student's Book pp.49–50 using Teacher's Book pp.79–80. Pupils listen, distinguish target word sounds and describe objects in simple sentences. Pupils complete Workbook p.37, Activity 1, by matching words to objects in the room.
+Teacher guides Student's Book pp.49–50 using Teacher's Book pp.79–80. Pupils listen, distinguish target word sounds and describe objects in simple sentences. Pupils complete Workbook p.37, Activity 1, by listening and drawing the missing objects in the bedroom.
 
 ## PBD (10 minutes)
 Pupils identify two syllable patterns and give one short spoken description.
