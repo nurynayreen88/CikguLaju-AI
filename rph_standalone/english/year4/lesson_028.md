@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Organise pupil presentations, give classmates a listening purpose and model constructive peer feedback.
-**Pupils:** Present work while classmates complete a listening task. Pupils may complete a matching Workbook speaking activity about household duties, if available; teacher checks their responses.
+**Pupils:** Present their work and describe household duties clearly while classmates complete a listening task. The teacher records each presenter's spoken description for main Speaking SP 2.1.5 and classmates' responses to spoken information for complementary Listening SP 1.2.5. No Workbook task is assigned until its printed page and activity are verified.
 
 ## Closure (5 minutes)
 **Teacher:** Highlight one successful description and model revising an unclear sentence for accuracy.
