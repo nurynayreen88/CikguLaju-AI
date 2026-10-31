@@ -13,7 +13,7 @@ Teacher reviews places, activities and adjectives.
 Teacher models 'Where were you yesterday?', 'When were you there?' and 'How was it?'.
 
 ## Activity 2 (25 minutes)
-Pupils write the three interview questions and their own answers on the worksheet, then interview at least two classmates without showing their sheets. Groups use the word cards from Lesson 118 for another question-and-answer game.
+Pupils write the three interview questions and their own answers on the worksheet, then interview at least two classmates without showing their sheets. Groups use the word cards from Lesson 118 for another question-and-answer game. Pupils complete Workbook p.63, Activity 2, by answering questions about where they were yesterday.
 
 ## Assessment / PBD (10 minutes)
 Teacher listens to each pupil's interview questions and answers, then checks one reported finding.
