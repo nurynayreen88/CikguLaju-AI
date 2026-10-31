@@ -24,7 +24,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record four relevant turns for each pupil across both rounds (0–4) and three independently expressed preferences (0–3). Do not count the partner's turns as the pupil's evidence; note prompts separately.
-**Pupils:** Submit individual evidence. Pupils complete Workbook p.107, Activity 2, by matching the beach pictures with the correct dialogues.
+**Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
