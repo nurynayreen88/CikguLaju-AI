@@ -38,7 +38,6 @@ def login():
     session["web_auth_nonce"] = nonce
     session["web_auth_started"] = int(time.time())
     session["web_auth_host"] = request.host
-    session["web_auth_host"] = request.host
     callback = url_for(".callback", _external=True, _scheme="https", state=nonce)
     return render_template_string(LOGIN_HTML, bot_username=username, callback_url=callback)
 
