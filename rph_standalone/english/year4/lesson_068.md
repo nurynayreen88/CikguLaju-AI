@@ -22,7 +22,7 @@
 **Teacher action:** Display a short checklist for food spelling, commas in lists and appropriate use of “some”. Model checking one sentence, then organise peer feedback.
 **Pupil action:** Check commas and spelling in a partner's list.
 
-**Teacher:** Instruct pupils to complete Workbook p.40, Activity 3 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.40, Activity 3 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.40, Activity 3; write sentences about the food in a fridge.
 
 ## Closure (5 minutes)
