@@ -22,7 +22,7 @@
 **Teacher:** Model safety advice using should or shouldn't and because, then organise partner exchanges and note the clarity of each explanation.
 **Pupils:** Give safety advice with reasons.
 
-**Teacher:** Instruct pupils to complete Workbook p.88, Activity 3 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.88, Activity 3 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.88, Activity 3; look at the pictures and write health advice using should or shouldn't.
 
 ## Closure (5 minutes)
