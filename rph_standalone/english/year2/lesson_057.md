@@ -23,11 +23,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Pairs select picture A or B and give three clothing descriptions, then ask and answer two questions before switching roles.  
-**Pupils:** Complete the task, discuss answers and correct errors. Pupils complete Workbook p.83, Activity 1, by matching the clothing pictures with the correct sentences.
+**Pupils:** Complete the task, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Listen for three intelligible clothing descriptions and two relevant individual answers. Note prompts required.  
-**Pupils:** Respond individually.
+**Pupils:** Respond individually. Pupils complete Workbook p.83, Activity 1, by matching the clothing pictures with the correct sentences.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
