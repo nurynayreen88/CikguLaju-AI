@@ -191,7 +191,9 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         pbd = self.pbd(self.lesson(150))
         self.assertIn("Workbook p.78, Activity 2", pbd)
         self.assertIn("only with its matching recording", pbd)
-        self.assertIn("numbering the three monsters", pbd)
+        self.assertIn("number the three monsters", pbd)
+        self.assertIn("If the matching recording is verified and available", pbd)
+        self.assertIn("do not treat the Workbook audio task as completed", pbd)
 
     def test_lesson_159_uses_verified_story_character_matching(self):
         pbd = self.pbd(self.lesson(159))
