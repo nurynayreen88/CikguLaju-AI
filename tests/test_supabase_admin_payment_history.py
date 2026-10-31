@@ -60,6 +60,15 @@ class PaymentHistoryTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             fetch_admin_payment_history(lambda *_: [None])
 
+    def test_missing_payment_status_is_not_approved(self):
+        def request(method, path):
+            if path.startswith("payments?"):
+                return [{"telegram_user_id": 1, "created_at": "2026-10-31"}]
+            return []
+        row = fetch_admin_payment_history(request)[0]
+        self.assertEqual(row["status"], "unknown")
+        self.assertFalse(row["is_receipt"])
+
     def test_malformed_timestamp_does_not_crash_sort(self):
         def request(method, path):
             if path.startswith("payments?"):
