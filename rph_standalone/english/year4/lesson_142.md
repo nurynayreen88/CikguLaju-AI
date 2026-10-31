@@ -26,7 +26,7 @@
 **Teacher:** Organise a gallery walk in which pupils guess the famous person and explain which written clue helped.
 **Pupils:** Read classmates' descriptions and guess names.
 
-**PBD:** Assess written descriptions of famous people for relevant details and whether peers can infer the identity (SP 4.2.1, 3.2.2).  
+**PBD:** Assess pupils' written descriptions of a famous person using relevant identifying details for main Writing SP 4.2.1; check peers' understanding of specific details in the printed descriptions for complementary Reading SP 3.2.2. Workbook p.81 athlete paragraph is the main written practice and should follow its printed instructions.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
