@@ -22,7 +22,7 @@
 **Teacher:** Organise partner exchanges in which pupils identify true sentences, explain their choices and correct one spelling or grammar error. Use Track 29 if required by the source activity.
 **Pupils:** Exchange sentences and identify which are true.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise writing about the lesson topic using a suitable Workbook activity, where available; teacher checks spelling and sentence structure.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe one practical recycling habit and explain how it helps.
