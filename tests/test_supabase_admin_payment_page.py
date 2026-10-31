@@ -87,6 +87,14 @@ class AdminPaymentPageTests(unittest.TestCase):
             show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
         self.assertNotIn("admin_user|", str(sent[0][2]))
 
+    def test_last_available_page_is_reachable(self):
+        sent = []
+        rows = [{"telegram_user_id": 10000000 + i, "kind": "credit", "amount_rm": 1, "status": "paid", "event_at": str(i), "is_receipt": True} for i in range(4000)]
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=rows):
+            show_admin_payment_history(99, 499, None, lambda *args: sent.append(args))
+        self.assertIn("Halaman 500", sent[0][1])
+        self.assertNotIn("Tiada rekod", sent[0][1])
+
     def test_pagination(self):
         rows = [{
             "telegram_user_id": 10000000 + i,
