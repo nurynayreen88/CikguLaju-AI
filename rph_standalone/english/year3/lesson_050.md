@@ -15,9 +15,10 @@ Teacher plays the seasons song on Student's Book p.35. Pupils sing and compare t
 ## Activity 2 — Speaking (25 minutes)
 Teacher distributes season pictures to small groups. Pupils discuss weather in different seasons, describe their favourite season and give a reason; classmates listen and ask simple questions.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.30, Activity 3, which asks about pupils' favourite season and its weather; use their written responses as prompts for brief spoken explanations and questions, and assess spoken responses against the speaking objective.
-**Pupils:** Complete Workbook p.30, Activity 3, then tell a partner their favourite season and describe the weather.
+## PBD (10 minutes)
+Pupils give two facts about themselves and identify a season from a partner's short description.
+
+**Workbook practice:** Complete Workbook p.30, Activity 3, then tell a partner their favourite season and describe the weather. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share a favourite season and weather phrase.
