@@ -70,7 +70,10 @@ def callback():
 @auth_preview.get("/whoami")
 def whoami():
     uid = session.get("web_telegram_user_id")
-    if type(uid) is not int or uid <= 0:
+    logged_at = session.get("web_login_at")
+    if (type(uid) is not int or uid <= 0 or type(logged_at) is not int
+            or logged_at > time.time() + 30 or time.time() - logged_at > 86400):
+        session.clear()
         abort(401)
     return jsonify({"authenticated": True, "telegram_user_id": uid})
 
