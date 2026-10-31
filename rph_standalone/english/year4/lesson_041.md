@@ -28,7 +28,7 @@
 **Teacher:** Invite pupils to revise one answer and explain the change.
 **Pupils:** Improve one complete answer.
 
-**PBD:** Check past-simple questions and complete written answers using Track 43 (SP 4.2.4 and 1.2.3).  
+**PBD:** Assess pupils' complete written answers about the story characters for main Writing SP 4.2.4, including relevant details and sentence accuracy. Check responses to the spoken story on CD1 Track 43 for complementary Listening SP 1.2.3. Workbook p.26 is the main written practice.  
 **Differentiation:** Provide past-verb prompts and partner support.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT; direct source/audio and Word/PDF QA pending.
