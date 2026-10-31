@@ -21,11 +21,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Pupils review the SB picture story on pp.98–99, identify the main ideas of three original sentence cards, and answer two spoken-detail questions. The alternative passage is supplementary, not a transcription.
-**Pupils:** Locate details, underline evidence and answer questions. Pupils complete Workbook p.101, Activity 1, by reading the picture-story questions and writing the answers.
+**Pupils:** Locate details, underline evidence and answer questions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three sentence main ideas (SP 3.2.1) and two supported spoken-detail answers (SP 1.2.2).
-**Pupils:** Submit individual reading evidence.
+**Pupils:** Submit individual reading evidence. Pupils complete Workbook p.101, Activity 1, by reading the picture-story questions and writing the answers.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review how to locate evidence in a text.
