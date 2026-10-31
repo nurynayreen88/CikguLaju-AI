@@ -27,6 +27,13 @@ class AdminPaymentPageTests(unittest.TestCase):
         self.assertIn("jumlah tidak direkod", sent[0][1])
         self.assertIn("admin_user|12345678", str(sent[0][2]))
 
+    def test_rakan_pembangun_request_not_receipt(self):
+        sent = []
+        rows = [{"telegram_user_id": 12345678, "kind": "rakan_pembangun_request", "amount_rm": 10, "status": "pending", "event_at": "2026", "is_receipt": False}]
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=rows):
+            show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
+        self.assertIn("permintaan bayaran, bukan resit", sent[0][1])
+
     def test_pending_payment_not_mislabeled_as_access_approval(self):
         sent = []
         rows = [{"telegram_user_id": 12345678, "kind": "credit", "amount_rm": 10, "status": "pending", "event_at": "2026", "is_receipt": False}]
