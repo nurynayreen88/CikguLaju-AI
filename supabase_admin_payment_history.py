@@ -10,11 +10,13 @@ def fetch_admin_payment_history(request, limit=100):
         ("subscription_payments", "subscription", "created_at"),
         ("payments", "credit", "created_at"),
         ("pioneer_entitlements", "rakan_pembangun_approval", "approved_at"),
+        ("pioneer_payment_requests", "rakan_pembangun_request", "created_at"),
     )
     fields = {
         "subscription_payments": "telegram_user_id,payment_reference,amount_rm,status,created_at",
         "payments": "telegram_user_id,payment_reference,amount_rm,status,created_at",
         "pioneer_entitlements": "telegram_user_id,payment_reference,approved_at,revoked_at",
+        "pioneer_payment_requests": "telegram_user_id,amount_rm,status,created_at",
     }
     results = []
     for table, kind, date_col in sources:
@@ -31,6 +33,6 @@ def fetch_admin_payment_history(request, limit=100):
                 "payment_reference": item.get("payment_reference"),
                 "status": item.get("status") or ("revoked" if item.get("revoked_at") else "approved"),
                 "event_at": item.get(date_col) or "",
-                "is_receipt": (table != "pioneer_entitlements" and str(item.get("status") or "").lower() in ("paid", "completed", "success")),
+                "is_receipt": (table in ("subscription_payments", "payments") and str(item.get("status") or "").lower() in ("paid", "completed", "success")),
             })
     return sorted(results, key=lambda r: r["event_at"], reverse=True)
