@@ -19,7 +19,7 @@
 **Pupils:** Write board-game questions using the model.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.61, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.61, Activity 2 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. Assess pupils' own written sentences or text for the main Writing SP; do not rely on isolated vocabulary answers alone.
 **Pupils:** Complete Workbook p.61, Activity 2; complete the sentences using someone, anyone, everyone or no one.
 
 ## Closure (5 minutes)
