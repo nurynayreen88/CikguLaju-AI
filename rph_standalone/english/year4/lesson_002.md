@@ -23,7 +23,9 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Check whether pupils can describe a person or flag and follow two-step instructions; offer paired speaking before individual responses where needed.
-**Pupils:** Give a short description of a partner and follow two demonstrated English instructions. Pupils complete Workbook p.4, Activity 2 (questions about countries and nationalities); teacher checks their answers.
+**Pupils:** Give a short description of a partner and follow two demonstrated English instructions.
+**Teacher:** Instruct pupils to complete Workbook p.4, Activity 2, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.4, Activity 2; answer the questions about countries and nationalities.
 
 ## Closure (5 minutes)
 **Teacher:** Replay CD1 Track 3 and check pupils' recall of one country name through a short oral response.
