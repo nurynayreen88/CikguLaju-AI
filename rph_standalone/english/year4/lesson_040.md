@@ -21,7 +21,7 @@
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Invite pupils to check their predictions against the text, explain their evidence and discuss one interesting story detail.
 **Pupils:** Check predictions with evidence from the story.
-**Teacher:** Instruct pupils to complete Workbook p.26, Story time reading questions, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.26, Story time reading questions, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.26, Story time reading questions; answer questions about events in the story.
 
 ## Closure (5 minutes)
