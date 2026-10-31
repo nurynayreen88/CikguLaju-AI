@@ -17,7 +17,8 @@ class Lesson030AdapterTest(unittest.TestCase):
             "Reinforcement and PBD (10 minutes)",
             "Workbook p.14, Activity 1", "CD1 Track 29",
             "Writing 4.3.2", "Listening 1.2.5",
-            "Teacher:", "Pupils:",
+            "Teacher:", "Pupils:", "LEARNING STANDARD:",
+            "Main: Writing 4.3.2", "Complementary: Listening 1.2.5",
         ):
             with self.subTest(expected=expected):
                 self.assertIn(expected, rendered)
