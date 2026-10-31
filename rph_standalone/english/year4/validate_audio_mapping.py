@@ -68,7 +68,11 @@ def validate():
             if key in seen:
                 errors.append(f"Lesson {lesson}: duplicate mapping {key}")
             seen.add(key)
-            asset = discs.get(disc, {}).get("tracks", {}).get(str(track))
+            disc_tracks = discs.get(disc, {}).get("tracks", {})
+            if not isinstance(disc_tracks, dict):
+                errors.append(f"Lesson {lesson}: invalid track collection for {disc}")
+                continue
+            asset = disc_tracks.get(str(track))
             if asset is None:
                 errors.append(f"Lesson {lesson}: missing or null {disc} Track {track}")
                 continue
