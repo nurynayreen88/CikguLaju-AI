@@ -13,10 +13,11 @@ Teacher reviews animal comparisons.
 Pairs write five plural animal names on cards and check spelling.
 
 ## Activity 2 (25 minutes)
-Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3. Pupils complete Workbook p.78, Activity 2, by answering questions comparing animals and planets.
+Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-Teacher asks pupils to order animal cards after hearing two adjectives and explain one comparison.
+**Teacher:** Direct pupils to Workbook p.78, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.78, Activity 2, by answering questions comparing animals and planets.
 
 ## Closure (5 minutes)
 Pupils give one comparison.
