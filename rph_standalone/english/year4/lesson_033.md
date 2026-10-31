@@ -21,7 +21,7 @@
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Introduce page vocabulary; pairs complete the SB quiz and check answers using SB p.118.
 **Pupils:** Complete the SB quiz and check answers on p.118.
-**Teacher:** Instruct pupils to complete Workbook p.22, Smart kids past-tense question task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.22, Smart kids past-tense question task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.22, Smart kids past-tense question task; answer questions using the past tense.
 
 ## Closure (5 minutes)
