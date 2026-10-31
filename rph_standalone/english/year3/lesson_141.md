@@ -16,7 +16,7 @@ Teacher introduces James's holiday email and asks pupils to identify sender and 
 Pairs take turns remembering one of five questions posted around the room, returning to dictate it and finding the answer in James's email. Teacher then plays the reading recording and highlights the Writing Tip on p.91.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.72, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess reading by asking pupils to identify key information in the holiday postcard and point to the phrases supporting their answers. Use Workbook p.72, Activity 1 to complete the postcard with past-tense words as a follow-up, rather than treating gap filling alone as evidence of comprehension.
 **Pupils:** Pupils complete Workbook p.72, Activity 1, by completing a holiday postcard with past-tense words.
 
 ## Closure (5 minutes)
