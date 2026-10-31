@@ -1,0 +1,38 @@
+name: CikguLaju Web V1 isolated checks
+
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - 'cikgulaju_web_v1.py'
+      - 'web_v1_*.py'
+      - 'web_v1_preview/**'
+      - 'tools/run_web_v1_preview.py'
+      - 'tools/inspect_web_v1_sqlite_schema.py'
+      - 'tests/test_*web_v1*.py'
+      - 'tests/test_cikgulaju_web_v1.py'
+      - '.github/workflows/web-v1-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install only Flask for isolated web tests
+        run: python -m pip install Flask==3.1.0
+      - name: Syntax check isolated modules
+        run: |
+          python -m py_compile cikgulaju_web_v1.py web_v1_lesson_catalog.py web_v1_sqlite_catalog.py tools/run_web_v1_preview.py tools/inspect_web_v1_sqlite_schema.py
+      - name: Run isolated tests (never import production app)
+        run: |
+          python -m unittest discover -s tests -p 'test_cikgulaju_web_v1.py' -v
+          python -m unittest discover -s tests -p 'test_web_v1_*.py' -v
