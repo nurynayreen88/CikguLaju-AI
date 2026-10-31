@@ -23,7 +23,7 @@ def validate():
         if set(tracks) != {str(n) for n in range(1, expected + 1)}:
             errors.append(f"{disc}: missing or extra numbered tracks")
         for number, asset in tracks.items():
-            if not asset.get("file_id") or not isinstance(asset.get("size_bytes"), int) or asset["size_bytes"] <= 0:
+            if not isinstance(asset.get("file_id"), str) or not asset["file_id"] or not isinstance(asset.get("size_bytes"), int) or isinstance(asset["size_bytes"], bool) or asset["size_bytes"] <= 0:
                 errors.append(f"{disc} Track {number}: invalid Drive metadata")
     pages = mapping.get("teacher_book_page_by_lesson", {})
     if set(pages) != set(mapping.get("lessons", {})):
@@ -38,20 +38,23 @@ def validate():
         errors.append("Drive file ID is reused across different manifest tracks")
     usages = []
     for lesson, items in mapping.get("lessons", {}).items():
-        if not (len(lesson) == 3 and lesson.isdigit() and 1 <= int(lesson) <= 160):
+        if not (isinstance(lesson, str) and len(lesson) == 3 and lesson.isascii() and lesson.isdecimal() and 1 <= int(lesson) <= 160):
             errors.append(f"Invalid lesson key: {lesson}")
         if not items:
             errors.append(f"Lesson {lesson}: empty mapping")
         seen = set()
         for item in items:
             disc, track = item.get("disc"), item.get("track")
+            if not isinstance(disc, str) or disc not in ("CD1", "CD2", "CD3"):
+                errors.append(f"Lesson {lesson}: invalid disc {disc!r}")
+                continue
+            if not isinstance(track, int) or isinstance(track, bool):
+                errors.append(f"Lesson {lesson}: invalid track {track!r}")
+                continue
             key = (disc, track)
             if key in seen:
                 errors.append(f"Lesson {lesson}: duplicate mapping {key}")
             seen.add(key)
-            if not isinstance(track, int) or isinstance(track, bool):
-                errors.append(f"Lesson {lesson}: invalid track {track!r}")
-                continue
             asset = discs.get(disc, {}).get("tracks", {}).get(str(track))
             if not asset:
                 errors.append(f"Lesson {lesson}: missing {disc} Track {track}")
