@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Invite pairs to extend their celebration-date dialogues and give peers a checklist for clear questions and clarification.
-**Pupils:** Perform a dialogue and improve after feedback. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Perform a dialogue and improve after feedback. Pupils may complete a matching Workbook dialogue activity about celebrations, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to demonstrate one clarification phrase from their celebration-date dialogues.
