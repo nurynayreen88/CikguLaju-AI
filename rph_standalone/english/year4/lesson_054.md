@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model an opinion with a reason about Independence Day and invite pupils to share their own views.
-**Pupils:** Discuss Independence Day in pairs and justify an opinion. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Discuss Independence Day in pairs and justify an opinion. Pupils may complete a matching Workbook activity about celebrations, if available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to justify one true/false response with a listening clue and express a reasoned opinion.
