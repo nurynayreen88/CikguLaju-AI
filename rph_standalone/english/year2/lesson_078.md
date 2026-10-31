@@ -22,7 +22,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Pupils listen to two material descriptions with visual clues, select matching clothing pictures and describe two objects aloud. The concert message is optional review only.  
-**Pupils:** Complete the activity and improve responses after feedback.
+**Pupils:** Complete the activity and improve responses after feedback. Pupils complete Workbook p.90, Activity 1, by writing the material names cotton, wool and leather under the pictures.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Assess two interpretations using visual clues (SP 1.3.1) and two spoken object descriptions (SP 2.1.5). Record independent performance and support required.  
