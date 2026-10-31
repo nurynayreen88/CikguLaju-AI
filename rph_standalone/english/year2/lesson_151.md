@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide four detail prompts and two questions grounded in the supplied original passage.
-**Pupils:** Locate details and write two answers.
+**Pupils:** Locate details and write two answers. Pupils complete Workbook p.113, Activity 1, by reading the beach passage and choosing the correct words.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record four located details and two short answers for each pupil.
