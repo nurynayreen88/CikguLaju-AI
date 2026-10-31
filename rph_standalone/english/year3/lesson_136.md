@@ -13,7 +13,7 @@ Teacher asks pupils about keeping a diary.
 Pupils predict vocabulary from Katie's holiday diary.
 
 ## Activity 2 (25 minutes)
-Pupils listen while reading Katie's diary, infer key vocabulary, check meanings in a dictionary, and complete TB p.134 Activity 2.
+Pupils listen while reading Katie's diary, infer key vocabulary, check meanings in a dictionary, and complete TB p.134 Activity 2. Pupils complete Workbook p.70, Activity 1, by filling in missing past-tense verbs in a holiday diary.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks pupils to locate two details in Katie's diary and check one unfamiliar word in a dictionary.
