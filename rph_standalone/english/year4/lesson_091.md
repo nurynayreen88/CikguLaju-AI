@@ -26,7 +26,7 @@
 **Teacher:** Elicit one gerund from the transport activity and remind pupils which recycled materials are needed next lesson.
 **Pupils:** Share one gerund and prepare materials for the next lesson.
 
-**PBD:** Check transport listening answers, correct gerund forms and short written responses against SP 1.2.2 and 4.2.3.  
+**PBD:** Check transport details identified from CD2 Tracks 11 and 12 for main Listening SP 1.2.2; assess pupils' short written responses using suitable gerund forms for complementary Writing SP 4.2.3. Workbook p.53 is written practice, not a substitute for listening evidence.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
