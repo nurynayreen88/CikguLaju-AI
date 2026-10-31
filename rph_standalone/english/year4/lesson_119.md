@@ -22,7 +22,8 @@
 **Teacher:** Display two success checks: use a comparative adjective and follow the partner's instructions. Observe pairs, give corrective feedback and invite a revised description.
 **Pupils:** Check task steps and improve descriptions.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.70, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.70, Activity 2; write sentences comparing the two dinosaurs using the adjectives.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to share a comparative sentence and explain which two dinosaurs it compares.
