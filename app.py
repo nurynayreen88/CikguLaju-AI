@@ -12210,6 +12210,9 @@ def _admin_list(cid, kind='all', page=0):
     if not _is_admin(cid):
         return send(cid,'⛔ Panel ini hanya untuk admin CikguLaju.')
     kind=str(kind or 'all'); page=max(0,int(page or 0)); per=8; off=page*per
+    if kind=='payments':
+        from supabase_admin_payment_page import show_admin_payment_history
+        return show_admin_payment_history(cid, page, _sb_request, send)
     con=_db()
     try:
         if kind=='pending':
