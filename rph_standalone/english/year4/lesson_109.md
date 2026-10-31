@@ -24,7 +24,7 @@
 
 Pupils reread the teacher-prepared recycling text and record two useful facts; no specific Workbook page is prescribed in the SOW.
 
-**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.61, Activity 1; identify recyclable objects and sort them into the appropriate bins.
 
 ## Closure (5 minutes)
