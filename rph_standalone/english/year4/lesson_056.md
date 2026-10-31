@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to explain two celebration words and use one in a factual sentence.
 **Pupils:** Sort vocabulary by celebration and share a response.
 
-**PBD:** Check identification of the countries and main ideas in celebration texts and accurate answers to Activity 2 (SP 3.2.1, 3.2.2).  
+**PBD:** Check each pupil's identification of the main ideas and countries in the printed celebration texts for main Reading SP 3.2.1, and their answers to supporting-detail questions in Activity 2 for complementary Reading SP 3.2.2. Workbook p.35 is the main written practice, not the sole reading evidence.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
