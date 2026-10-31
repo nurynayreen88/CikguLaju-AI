@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Invite pairs to extend their celebration-date dialogues and give peers a checklist for clear questions and clarification.
-**Pupils:** Perform a dialogue and improve after feedback. Pupils may complete a matching Workbook dialogue activity about celebrations, if available; teacher checks their responses.
+**Pupils:** Perform a dialogue and improve after feedback. Pupils use the Unit 4 Workbook 'Sing a song' ordinal-number task (printed p.30) to support speaking about dates; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to demonstrate one clarification phrase from their celebration-date dialogues.
