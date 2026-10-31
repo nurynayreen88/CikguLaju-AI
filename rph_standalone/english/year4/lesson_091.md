@@ -22,7 +22,8 @@
 **Teacher:** Model a short written transport answer, then ask pupils to respond to the questions using details from the listening.
 **Pupils:** Write short answers about transport.
 
-Pupils use Workbook printed p.53, Unit 6 'Let's play', to practise identifying transport words and short spoken responses after listening.
+**Teacher:** Instruct pupils to complete Workbook p.53, the transport picture-prompt task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.53, the transport picture-prompt task; identify transport words and give short spoken responses.
 
 ## Closure (5 minutes)
 **Teacher:** Elicit one gerund from the transport activity and remind pupils which recycled materials are needed next lesson.
