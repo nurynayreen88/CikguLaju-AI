@@ -29,7 +29,7 @@
 **Teacher:** Show safety flashcards and ask pupils to classify each action as safe or unsafe, giving one reason.
 **Pupils:** Classify flashcard actions as safe or unsafe.
 
-**PBD:** Observe spoken safety-rule explanations and legibility of written imperatives in cursive against SP 2.1.3 and 4.1.2.  
+**PBD:** Observe pupils' spoken explanations of road-safety rules for main Speaking SP 2.1.3; assess legibility of their cursive written imperatives for complementary Writing SP 4.1.2. Workbook p.50 provides the main written practice but does not replace speaking observation.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
