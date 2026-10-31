@@ -133,6 +133,35 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("possessive", pbd)
 
 
+    def test_lesson_151_uses_verified_personal_questions_on_page_79(self):
+        pbd = self.pbd(self.lesson(151))
+        self.assertIn("Workbook p.79, Activity 2", pbd)
+        self.assertIn("answer about yourself", pbd)
+        self.assertNotIn("choosing the correct comparative adjectives", pbd)
+
+    def test_lesson_156_uses_superlative_personal_questions(self):
+        pbd = self.pbd(self.lesson(156))
+        self.assertIn("Workbook p.79, Activity 2", pbd)
+        self.assertIn("superlative", pbd)
+        self.assertNotIn("comparative adjectives to describe", pbd)
+
+    def test_lesson_153_uses_verified_page_80_crossword(self):
+        pbd = self.pbd(self.lesson(153))
+        self.assertIn("Workbook p.80, Activity 2", pbd)
+        self.assertIn("crossword", pbd)
+
+    def test_lesson_155_does_not_count_crossword_as_listening(self):
+        pbd = self.pbd(self.lesson(155))
+        self.assertIn("Workbook p.80, Activity 2", pbd)
+        self.assertIn("crossword", pbd)
+        self.assertIn("not as listening evidence", pbd)
+
+    def test_lesson_159_uses_verified_story_character_matching(self):
+        pbd = self.pbd(self.lesson(159))
+        self.assertIn("Workbook p.81, Activity 1", pbd)
+        self.assertIn("matching the story characters", pbd)
+
+
 
 if __name__ == "__main__":
     unittest.main()
