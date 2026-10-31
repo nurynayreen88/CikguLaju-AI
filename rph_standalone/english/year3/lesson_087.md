@@ -17,7 +17,7 @@ Pupils draw their own omelette and mingle, asking 'Are there any tomatoes in you
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.45, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.45, Activity 2, by answering 'Is there any.
+**Pupils:** Pupils complete Workbook p.45, Activity 2, by answering questions about the ingredients in Anna's and Greg's omelettes.
 
 ## Closure (5 minutes)
 Pupils share a question they used to find a partner.
