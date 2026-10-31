@@ -13,10 +13,11 @@ Teacher reviews holiday pictures and words.
 Pairs match sentence strips about holiday activities.
 
 ## Activity 2 (25 minutes)
-Pupils discuss their own holidays, then complete Student's Book p.85 Activity 2 using their holiday pictures. After rehearsing in pairs, selected pupils present a short holiday recount to the class. Pupils complete Workbook p.68, Activity 3, by matching holiday activities with the children in the pictures.
+Pupils discuss their own holidays, then complete Student's Book p.85 Activity 2 using their holiday pictures. After rehearsing in pairs, selected pupils present a short holiday recount to the class.
 
 ## Assessment / PBD (10 minutes)
-Teacher listens to each pupil's short holiday recount and asks one follow-up question. Pupils identify one detail from a sentence strip.
+**Teacher:** Direct pupils to Workbook p.68, Activity 3; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.68, Activity 3, by matching holiday activities with the children in the pictures.
 
 ## Closure (5 minutes)
 Pupils share one holiday activity.
