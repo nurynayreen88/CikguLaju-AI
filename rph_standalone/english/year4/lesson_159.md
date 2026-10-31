@@ -28,7 +28,7 @@ Pupils review their Readers' Theatre performance using the Teaching Guidebook as
 **Teacher:** Guide peers to give one specific performance strength and one achievable improvement target.
 **Pupils:** Offer another group a medal and a mission.
 
-**PBD:** Observe pupils' reading and expressive performance in Readers' Theatre using the guidebook assessment form (SP 5.3.1, 3.3.1).  
+**PBD:** Assess pupils' original and expressive Readers' Theatre performance using the guidebook criteria for main Language Arts SP 5.3.1; observe their independent reading of assigned script parts for complementary Reading SP 3.3.1. Use the Graphic Novel Teaching Guidebook rather than an invented Workbook exercise.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
