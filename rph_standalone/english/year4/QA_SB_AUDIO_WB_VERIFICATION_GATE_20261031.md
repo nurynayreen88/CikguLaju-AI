@@ -121,3 +121,19 @@ Read the corresponding lesson outlines from the official Year 4 SK SOW PDF for L
 | 096 | SB p.70 revision, TB p.106; self-assessment |
 
 **Important:** Some printed CD numbers are split across PDF-extracted lines. Never infer missing digits. Literary, project and CLIL lessons have different source requirements from textbook lessons. No claims of actual MP3 playback or Workbook-page verification.
+
+## Repository reference consistency check — 31 October 2026
+
+Checked the actual staging lesson headers and relevant audio lines for Lessons **065–077 (selected), 081–088, 107, 139 and 157** against the SOW findings already recorded in this gate. This is a **repository consistency check**, not fresh MP3 playback or independent SB/TB PDF page inspection.
+
+- **065:** Tracks 70–71 remain without a disc number; do not infer one.
+- **066:** CD1 Track 72 explicitly recorded.
+- **068:** CD1 Track 75 (Activity 4) and CD1 Track 76 (Activity 5) explicitly recorded in the RPH; verify audio file content before enabling downloads.
+- **070–072:** CD1 Tracks 77 and 79 (Lesson 070), Track 80 (071) and Track 83 (072) are already in the lesson files. Lesson 070's PBD refers to listening evidence, not just Workbook p.41.
+- **076–077:** CD1 Track 81 and CD3 Track 38, respectively, are recorded.
+- **081, 083–084, 086, 088:** CD2 Tracks 2/4, 5/6, CD3 Track 39, CD2 Track 7 and CD2 Track 9 are recorded respectively. Lesson 084 explicitly says its CLIL Activity 1 is reading **without** an audio track.
+- **107:** Retain SB pp.66–67 and TB pp.118–119 because those are the SOW's printed references; Track 32's disc remains unverified.
+- **139:** Track 60's disc remains unspecified; do not fabricate CD2.
+- **157:** The existing *What are germs?* SB pp.110–111/TB pp.162–163 choice is permitted by SOW; the alternative SB p.133/TB p.197 is not automatically substituted.
+
+**Outcome:** No lesson-file changes justified by this reference-only check. Audio-file identity, playback, and final SB/TB page-content verification are outstanding. All 160 lessons remain DRAFT; no main merge.
