@@ -13,7 +13,7 @@ Teacher asks what pupils remember about the Japanese house from Lesson 72. Pupil
 Teacher labels classroom corners with room names. Pupils place furniture words in suitable rooms and explain choices.
 
 ## Activity 2 — Speaking game (25 minutes)
-Teacher guides Student's Book p.49 Activity 4 and the related group task from Teacher's Book p.79. Pupils describe furniture locations and ask classmates for help when needed. Pupils complete Workbook p.37, Activity 2, by answering questions about the positions of objects in the room.
+Teacher guides Student's Book p.49 Activity 4 and the related group task from Teacher's Book p.79. Pupils describe furniture locations and ask classmates for help when needed. Pupils complete Workbook p.37, Activity 2, by answering questions about the positions of objects in the bedroom.
 
 ## PBD (10 minutes)
 Pupils describe two features and use one polite request for assistance when needed.
