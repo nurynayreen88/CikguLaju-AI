@@ -19,9 +19,6 @@
 **Pupils:** Read Activity 2 and answer specific questions.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Ask pairs to justify one answer by pointing to a sentence in the text, then invite a reasoned opinion about the dinosaur they find most interesting.
-**Pupils:** Explain answers using text evidence.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.72, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.72, Activity 1; read the Elephant Orphanage passage and answer the comprehension questions.
 
