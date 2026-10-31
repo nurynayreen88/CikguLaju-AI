@@ -22,7 +22,8 @@
 **Teacher action:** Guide TB Activity 3, then prompt pupils to compare food mentioned in the story with familiar food at home.
 **Pupil action:** Compare food in the story with food at home.
 
-Pupils read the kitchen picture prompts in Workbook p.40, Activities 1–2 and identify food quantities; teacher checks comprehension.
+**Teacher:** Instruct pupils to complete Workbook p.40, Activities 1–2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.40, Activities 1–2; identify food items and quantities from the kitchen pictures.
 
 ## Closure (5 minutes)
 **Teacher action:** Distribute exit cards, ask pupils to record three new food words and check that they can explain one meaning.
