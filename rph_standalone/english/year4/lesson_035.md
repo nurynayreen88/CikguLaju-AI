@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Vocabulary using CD1 Track 38; pupils identify the dialogue's main idea.
-**Pupils:** Listen to Track 38 and identify the dialogue's main idea. Pupils may complete a matching Workbook activity on listening for past events, if available; teacher checks their answers.
+**Pupils:** Listen to Track 38 and identify the dialogue's main idea. Pupils use the Unit 3 Workbook 'Our world' Ancient Egypt vocabulary task (printed p.23) as optional reading support; teacher checks the written answers.
 
 ## Closure (5 minutes)
 **Teacher:** Lead a past-tense verb review game and ask pupils to use one verb in a complete sentence.
