@@ -19,10 +19,7 @@
 **Pupils:** Practise the words high jumper, windsurfer and javelin thrower.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model one description of a sportsperson using a superlative, then organise pair guessing turns and check whether each clue is clear and accurate.
-**Pupils:** Describe and identify people using superlatives.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.79, Activity 3 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.79, Activity 3 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.79, Activity 3; complete the opinions about sports using the picture prompts.
 
 ## Closure (5 minutes)
