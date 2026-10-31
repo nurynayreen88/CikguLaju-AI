@@ -28,7 +28,7 @@
 **Teacher:** Invite pupils to express an animal preference and justify it with a comparative clue.
 **Pupils:** Give one reason for an animal preference.
 
-**PBD:** Observe comparative animal descriptions and pupils' spoken preferences with reasons against SP 2.1.1 and 2.1.5.  
+**PBD:** Observe pupils stating animal preferences and giving reasons for main Speaking SP 2.1.1; assess their spoken comparative descriptions of animals for complementary Speaking SP 2.1.5. Use SB Activity 1 without inventing a Workbook task.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
