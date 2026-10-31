@@ -26,7 +26,7 @@
 **Teacher:** Invite two pupils to share an accurate description and explain the superlative used.
 **Pupils:** Give one accurate sports description.
 
-**PBD:** Observe descriptions of sportspeople using superlatives against SP 2.1.5 and 1.2.2.  
+**PBD:** Observe pupils' spoken descriptions of sportspeople using suitable superlatives for main Speaking SP 2.1.5; check specific details understood from verified spoken input for complementary Listening SP 1.2.2. Workbook p.79 provides written sports-opinion practice, not listening or speaking evidence.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
