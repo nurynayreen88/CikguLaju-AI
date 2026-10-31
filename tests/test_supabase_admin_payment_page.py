@@ -34,6 +34,15 @@ class AdminPaymentPageTests(unittest.TestCase):
         self.assertIn("tidak dapat dibaca", sent[0][1])
         self.assertNotIn("Tiada rekod", sent[0][1])
 
+    def test_html_escaping(self):
+        sent = []
+        rows = [{"telegram_user_id": 12345678, "kind": "<script>", "amount_rm": 8, "status": "<bad>", "event_at": "2026", "is_receipt": True}]
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=rows):
+            show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
+        self.assertIn("&lt;script&gt;", sent[0][1])
+        self.assertIn("&lt;bad&gt;", sent[0][1])
+        self.assertNotIn("<script>", sent[0][1])
+
     def test_pagination(self):
         rows = [{
             "telegram_user_id": 10000000 + i,
