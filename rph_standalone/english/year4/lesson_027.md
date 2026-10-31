@@ -21,7 +21,7 @@
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Set up pair questions about chores pupils have to do at home, following Activity 4 and the SOW-listed Track 37, and monitor accurate question forms.
 **Pupils:** Listen to the SOW-listed Track 37 and discuss home duties.
-**Teacher:** Instruct pupils to complete Workbook p.13, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.13, Activity 1 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.13, Activity 1; listen and number the household-chores pictures.
 
 ## Closure (5 minutes)
