@@ -18,7 +18,7 @@
 **Teacher:** Mime can and can't; ask and answer Can he/she...?; complete Activities 3–4 and rebuild scrambled written yes/no responses. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Check written responses and comprehension of simple spoken questions. **Pupils:** Write two accurate can/can't answers after hearing simple questions. Pupils complete Workbook p.8, Activity 2, to write sentences about what the pictured characters can and cannot do.
+**Teacher:** Check written responses and comprehension of simple spoken questions. **Pupils:** Write two accurate can/can't answers after hearing simple questions.
 
 ## Closure (5 minutes)
 **Teacher:** Review spelling and write a learning diary entry. **Pupils:** Share one thing learned.
