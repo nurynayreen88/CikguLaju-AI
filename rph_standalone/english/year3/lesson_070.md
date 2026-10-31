@@ -16,8 +16,8 @@ Teacher collects a few classroom items and models 'Whose pencil is this?' and 'W
 Teacher revisits the Grammar Box on Student's Book p.47 and guides Activity 3 from Teacher's Book p.77. Pupils listen for ownership information and respond to questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.37, Activity 2; explain the task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.37, Activity 2, by answering questions about the positions of objects in the bedroom.
+**Teacher:** Assess the listening objective by asking pupils to identify the owner of classroom belongings after hearing short 'Whose ...?' exchanges. Workbook p.37, Activity 2 concerns object locations rather than ownership, so it is not used for this assessment.
+**Pupils:** Listen to short ownership questions and responses, identify the correct owners and respond orally.
 
 ## Closure (5 minutes)
 Pupils ask and answer one ownership question.
