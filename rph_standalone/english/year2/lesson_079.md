@@ -24,11 +24,11 @@
 
 ## Activity 2 — Independent writing (25 minutes)
 **Teacher:** Provide the independent assessment outfit picture specified above, guide pupils to label four items, write two sentences, check punctuation and discuss the poster in English with a partner, describing two clothing objects and their materials. Give word-bank prompts only where needed and record that support.
-**Pupils:** Complete four correctly spelled labels and give two oral descriptions. Pupils complete Workbook p.90, Activity 1, by labelling the pictured clothing and accessories with their materials.
+**Pupils:** Complete four correctly spelled labels and give two oral descriptions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Using the second picture and answer examples, score four readable labels (0–4), two meaningful sentences (0–2), and one relevant oral description (0–1). Record whether capitals, word spaces and full stops are correct, and any teacher prompts. Assess each pupil separately.
-**Pupils:** Submit writing and describe their picture.
+**Pupils:** Submit writing and describe their picture. Pupils complete Workbook p.90, Activity 1, by labelling the pictured clothing and accessories with their materials.
 
 ## Closure (5 minutes)
 **Teacher:** Review one clothing word and one punctuation rule.
