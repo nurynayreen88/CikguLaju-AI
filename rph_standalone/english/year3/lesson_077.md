@@ -15,9 +15,10 @@ Teacher describes a familiar house using pictures. Pupils listen and identify vo
 ## Activity 2 — Reading (25 minutes)
 Teacher introduces the text about Sue's house on Student's Book p.51. Pupils read silently, identify the main idea and locate specific details about the house.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.40, Activity 1 (Look and write); ask pupils to inspect Bob's and Sally's house pictures and write whose furniture each pictured item belongs to. Explain that this is a picture-based ownership-language follow-up, not a direct reading-comprehension assessment of the Student's Book text.
-**Pupils:** Write questions and possessive answers about the pictured furniture in Bob's and Sally's houses in Workbook p.40, Activity 1.
+## PBD (10 minutes)
+Pupils state the main idea and locate two supporting details in the reading text.
+
+**Workbook practice:** Write questions and possessive answers about the pictured furniture in Bob's and Sally's houses in Workbook p.40, Activity 1. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one similarity between Sue's house and their own home.
