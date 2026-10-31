@@ -22,7 +22,7 @@
 **Teacher:** Model the /eə/ sound in pear, then guide pupils to identify and pronounce matching words in Activity 1.
 **Pupils:** Complete the listening activity and identify the /eə/ sound in words.
 
-**Teacher:** Instruct pupils to complete Workbook p.39, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.39, Activity 1 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.39, Activity 1; find and categorise food words in the word-search task.
 
 ## Closure (5 minutes)
