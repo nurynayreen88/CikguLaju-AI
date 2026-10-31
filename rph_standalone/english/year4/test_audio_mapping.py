@@ -158,6 +158,22 @@ class AudioResolverTests(unittest.TestCase):
         with patch.object(Path, "read_text", fake_read):
             self.assertFalse(validator.validate())
 
+    def test_validator_rejects_non_object_json_root(self):
+        from unittest.mock import patch
+        import json
+        spec = importlib.util.spec_from_file_location("year4_validator", HERE / "validate_audio_mapping.py")
+        validator = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(validator)
+        original_read = Path.read_text
+
+        def substitute(path, *args, **kwargs):
+            if path.name == "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json":
+                return json.dumps([])
+            return original_read(path, *args, **kwargs)
+
+        with patch.object(Path, "read_text", substitute):
+            self.assertFalse(validator.validate())
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
