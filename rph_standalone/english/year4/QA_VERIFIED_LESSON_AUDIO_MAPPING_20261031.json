@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "year": 4,
+  "asset_manifest": "QA_CLASS_CD_ASSET_MANIFEST_20261031.json",
+  "status": "TB track metadata verified; playback and Telegram delivery untested",
+  "lessons": {
+    "102": [
+      {
+        "disc": "CD2",
+        "track": 25
+      }
+    ],
+    "103": [
+      {
+        "disc": "CD2",
+        "track": 26
+      }
+    ],
+    "104": [
+      {
+        "disc": "CD2",
+        "track": 27
+      },
+      {
+        "disc": "CD2",
+        "track": 28
+      }
+    ],
+    "105": [
+      {
+        "disc": "CD2",
+        "track": 29
+      }
+    ],
+    "107": [
+      {
+        "disc": "CD2",
+        "track": 32
+      }
+    ],
+    "110": [
+      {
+        "disc": "CD2",
+        "track": 31
+      }
+    ],
+    "123": [
+      {
+        "disc": "CD3",
+        "track": 30
+      },
+      {
+        "disc": "CD3",
+        "track": 31
+      }
+    ],
+    "129": [
+      {
+        "disc": "CD2",
+        "track": 51
+      },
+      {
+        "disc": "CD2",
+        "track": 52
+      }
+    ],
+    "134": [
+      {
+        "disc": "CD2",
+        "track": 56
+      }
+    ],
+    "030": [
+      {
+        "disc": "CD1",
+        "track": 29
+      }
+    ],
+    "032": [
+      {
+        "disc": "CD1",
+        "track": 35
+      }
+    ],
+    "065": [
+      {
+        "disc": "CD1",
+        "track": 70
+      },
+      {
+        "disc": "CD1",
+        "track": 71
+      }
+    ],
+    "097": [
+      {
+        "disc": "CD2",
+        "track": 20
+      },
+      {
+        "disc": "CD2",
+        "track": 21
+      }
+    ],
+    "098": [
+      {
+        "disc": "CD2",
+        "track": 21
+      },
+      {
+        "disc": "CD2",
+        "track": 22
+      }
+    ]
+  }
+}
