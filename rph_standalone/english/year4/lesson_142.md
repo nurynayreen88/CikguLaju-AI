@@ -22,7 +22,7 @@
 **Teacher:** Ask pupils to write their descriptions from the planning questions and check for clear clues, connected sentences and punctuation.
 **Pupils:** Write and check a short description.
 
-Pupils practise planning and writing about sports using a suitable Workbook activity, where available; teacher checks sentence clarity.
+
 
 ## Closure (5 minutes)
 **Teacher:** Organise a gallery walk in which pupils guess the famous person and explain which written clue helped.
