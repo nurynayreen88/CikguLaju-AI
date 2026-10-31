@@ -19,10 +19,7 @@
 **Pupils:** Listen with books closed and identify the theme.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Demonstrate sports actions from the TB response task, then guide pupils to respond and check their understanding.
-**Pupils:** Respond to sports vocabulary through actions.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.77, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.77, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.77, Activity 1; read the clues and write the names of the sports.
 
 ## Closure (5 minutes)
