@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to report one accurate interview detail and identify the listening clue that supported it.
 **Pupils:** Share one listening detail.
 
-**PBD:** Check details from three sports interviews and the follow-up paragraph against SP 1.2.2 and 4.3.3.  
+**PBD:** Check specific details pupils identify from the three spoken sports interviews for main Listening SP 1.2.2; assess organisation and clarity of their follow-up sports paragraph for complementary Writing SP 4.3.3. Do not treat the written paragraph alone as listening evidence.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
