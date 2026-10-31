@@ -19,9 +19,6 @@
 **Pupils:** Read Part Two and check predictions while listening.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide the TB after-reading task and ask pupils to locate a sentence supporting one answer about Part Two.
-**Pupils:** Locate story details to justify answers.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.82, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.82, Activity 1; read the story and complete the sentences using the past simple verbs.
 
