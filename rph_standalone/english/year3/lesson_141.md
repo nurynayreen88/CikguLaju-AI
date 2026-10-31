@@ -13,7 +13,7 @@ Teacher reviews holiday words.
 Teacher introduces James's holiday email and asks pupils to identify sender and recipient.
 
 ## Activity 2 (25 minutes)
-Pairs take turns remembering one of five questions posted around the room, returning to dictate it and finding the answer in James's email. Teacher then plays the reading recording and highlights the Writing Tip on p.91.
+Pairs take turns remembering one of five questions posted around the room, returning to dictate it and finding the answer in James's email. Teacher then plays the reading recording and highlights the Writing Tip on p.91. Pupils complete Workbook p.72, Activity 1, by completing a holiday postcard with past-tense words.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks pupils to locate two answers in James's email and identify one example of correct email punctuation.
