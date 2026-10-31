@@ -29,7 +29,7 @@
 **Teacher:** Invite pupils to describe a favourite dish using want or need and at least one ingredient word.
 **Pupils:** Name ingredients needed for a favourite dish.
 
-**PBD:** Observe clarification questions and listening responses against SP 2.2.1 and 1.2.5.  
+**PBD:** Observe pupils asking clarification questions and responding in pairs for main Speaking SP 2.2.1; check comprehension of spoken ingredients and instructions for complementary Listening SP 1.2.5. Workbook p.39 is written grammar practice, not a substitute for speaking evidence.  
 **Differentiation:** Provide ingredient pictures, sentence frames and extension questions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** p.39, Activity 2; assessment follow-up.
