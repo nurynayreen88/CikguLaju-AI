@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Introduce page vocabulary; pairs complete the SB quiz and check answers using SB p.118.
-**Pupils:** Complete the SB quiz and check answers on p.118. Pupils may complete a matching Workbook activity on past events, if available; teacher checks their answers.
+**Pupils:** Complete the SB quiz and check answers on p.118. Pupils may use the Unit 3 Workbook 'Smart kids' past-tense question task (printed p.22) as additional practice; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to tell a partner one Ancient Egypt fact and identify the quiz clue that supports it.
