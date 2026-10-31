@@ -193,3 +193,16 @@ This section **supersedes the pending CD/track assertions above** for these thre
 **Drive source folders:** Class CD2 `1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR`; Class CD3 `1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u`. All five files are also referenced from their corresponding RPH Markdown files. Drive metadata reports `source_visibility_status=access_not_verified`, so a Drive link must **not** be described as a tested public download.
 
 **Release gate:** Confirm audio by listening, test actual download as a normal bot user, and verify lesson-to-file mapping in bot runtime. Do not mark READY or merge based solely on Drive metadata.
+
+## Full source-folder MP3 inventory (31 October 2026)
+
+The original Get Smart Plus 4 Class CD folders in Google Drive were enumerated (not just keyword-searched). Every file in each inspected folder reports MIME type `audio/mpeg` and a numbered `Track N.mp3` filename.
+
+| Class CD | Drive folder ID | Numbered MP3 files | Range | Missing numbers | Duplicate numbers |
+|---|---|---:|---|---:|---:|
+| CD1 | `172V689kqHh3AY787suKI4Teug3PjSj5_` | 88 | 1–88 | 0 | 0 |
+| CD2 | `1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR` | 88 | 1–88 | 0 | 0 |
+| CD3 | `1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u` | 44 | 1–44 | 0 | 0 |
+| **Total** | | **220** | | **0** | **0** |
+
+**Meaning:** all 220 numbered MP3 *file records* are present in these three inspected folders. This is a source-asset completeness check, **not** a lesson-to-track completeness check, playback check, public permission check, or Telegram delivery test. No audio is marked READY based on this inventory alone.
