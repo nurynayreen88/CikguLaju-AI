@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model extracting one festival fact for Activity 2, then pair pupils from different texts to exchange information.
-**Pupils:** Complete Activity 2 and exchange answers with a partner. Pupils may complete a matching Workbook reading activity about celebrations, if available; teacher checks comprehension.
+**Pupils:** Complete Activity 2 and exchange answers with a partner. Pupils may use the Unit 4 Workbook 'Story time' reading-and-matching task (printed p.35) as optional comprehension practice; teacher checks answers.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to explain two celebration words and use one in a factual sentence.
