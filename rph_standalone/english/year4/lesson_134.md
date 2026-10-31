@@ -19,8 +19,8 @@
 **Pupils:** Record details from the interviews.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model a short paragraph using the Grammar Boxes on pages 93 and 95, then guide pupils to write and check their own paragraph about a liked or disliked sport.
-**Pupils:** Write a sports paragraph.
+**Teacher:** Check pupils' recorded details from all three sports interviews as the main Listening PBD evidence for SP 1.2.2. Model a short paragraph using the Grammar Boxes on pages 93 and 95, then guide pupils to write and check their own paragraph about a liked or disliked sport for complementary Writing SP 4.3.3.
+**Pupils:** Confirm and correct the three interview details from Activity 2, then write and check a short sports paragraph.
 
 
 
