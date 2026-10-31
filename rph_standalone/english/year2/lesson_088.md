@@ -19,11 +19,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Pairs take turns giving three ordered body-part instructions, acting them out, then answering two detail questions from spoken robot sentences.
-**Pupils:** Describe a robot and respond to a partner. Pupils complete Workbook p.94, Activity 2, by writing the names of the body parts shown in the pictures.
+**Pupils:** Describe a robot and respond to a partner.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three ordered instructions (SP 2.1.3) and two correct listening-detail responses (SP 1.2.2).
-**Pupils:** Demonstrate speaking evidence.
+**Pupils:** Demonstrate speaking evidence. Pupils complete Workbook p.94, Activity 2, by writing the names of the body parts shown in the pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one descriptive phrase.
