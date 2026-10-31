@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Ask pupils to swap interviewer roles and report one partner's plan using a complete sentence.
-**Pupils:** Swap roles, report plans and check task completion. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Swap roles, report plans and check task completion. Pupils may complete a matching Workbook activity on making celebration plans, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Invite a pair to demonstrate a going to question and a suitable clarification response.
