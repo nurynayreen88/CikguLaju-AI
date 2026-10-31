@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Model a complete past-simple answer, then organise pairs to write and check statements about the characters.
-**Pupils:** Write full-sentence answers about the characters. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Write full-sentence answers about the characters. Pupils may complete a matching Workbook writing activity on past-event stories, if available; teacher checks their sentences.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to revise one answer and explain the change.
