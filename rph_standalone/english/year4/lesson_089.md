@@ -22,7 +22,7 @@
 **Teacher:** Provide a peer-review checklist for spelling, punctuation and factual descriptions, then ask pupils to revise their paragraphs.
 **Pupils:** Check spelling, punctuation and descriptive details.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils revise their building plans using the CLIL activity criteria; no specific Workbook page is prescribed for this cross-curricular writing lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to display their revised building descriptions and explain one improvement made after peer review.
