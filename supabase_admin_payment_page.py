@@ -11,7 +11,10 @@ from supabase_admin_payment_history import fetch_admin_payment_history
 
 
 def show_admin_payment_history(cid, page, request, send):
-    page = max(0, int(page))
+    try:
+        page = max(0, min(int(page), 124))
+    except (TypeError, ValueError, OverflowError):
+        page = 0
     per = 8
     try:
         rows = fetch_admin_payment_history(request, limit=1000)
@@ -38,7 +41,7 @@ def show_admin_payment_history(cid, page, request, send):
         elif not row["is_receipt"]:
             kind = f"{kind} (belum disahkan sebagai bayaran)"
         lines.append(f"• {html.escape(str(kind))}: {html.escape(money)} | {html.escape(str(row['status']))} | ID {html.escape(uid[-6:])}")
-        if uid.isdigit():
+        if uid.isascii() and uid.isdigit() and len(uid) <= 20:
             buttons.append([{"text": f"👤 ID {uid[-6:]}", "callback_data": f"admin_user|{uid}"}])
     if not selected:
         lines.append("Tiada rekod pada halaman ini.")
