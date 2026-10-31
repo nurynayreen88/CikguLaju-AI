@@ -99,6 +99,18 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             create_payment_request(request, 1, 10, 2)
 
+    def test_rejects_insert_response_with_inconsistent_amount_or_proof(self):
+        for wrong in ({"amount_rm": "9.99"}, {"proof_received": False}):
+            with self.subTest(wrong=wrong):
+                def request(method, path, **kwargs):
+                    if method == "GET":
+                        return []
+                    row = dict(kwargs["json"], id=303)
+                    row.update(wrong)
+                    return [row]
+                with self.assertRaises(RuntimeError):
+                    create_payment_request(request, 1, 10, 2)
+
     def test_fails_closed_if_insert_response_is_unconfirmed(self):
         with self.assertRaises(RuntimeError):
             create_payment_request(lambda method, *a, **kw: [] if method == "GET" else None, 1, 10, 2)
