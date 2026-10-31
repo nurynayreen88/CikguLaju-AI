@@ -29,3 +29,7 @@ Sumber utama: Google Sheet `CikguLaju_English_Primary_Y4_Y6_DB_READY_CORRECTED_2
 - Class CD1 99 track, CD2 91, CD3 11; nombor lesson **bukan** nombor track. Jangan reka atau kira audio daripada lesson.
 - RPT Tahun 3 hendaklah mengambil baris lesson individu, bukan 10 baris ringkasan kelompok. Baris ringkasan Unit 10 Lesson 158 turut wujud; jangan gandakan lesson 158.
 - Beberapa catatan sumber masih menyatakan semakan butiran belum lengkap (contoh L114, L125, L126). Kekalkan status STAGING bagi padanan yang belum diluluskan.
+
+## Semakan tarikh Kedah, Januari 2027
+
+Tab indeks PdP memaparkan 1–3 Januari sebagai `TIADA PDP - SEBELUM SESI`; 4–5 Januari sebagai `CALON PDP - CUTI GANTIAN BELUM AUDIT`; 6 Januari sebagai `BUKAN PDP - CUTI RASMI BKPP/KPM` (Israk dan Mikraj); 7 Januari sebagai calon PdP. Jangan jadikan status `CALON PDP - CUTI GANTIAN BELUM AUDIT` sebagai tarikh PdP muktamad tanpa pengesahan. Minggu PdP dan tarikh English khusus memerlukan jadual waktu/aturan agihan yang dipersetujui.
