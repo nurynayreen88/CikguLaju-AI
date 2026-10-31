@@ -49,11 +49,11 @@ def prepare(source, page, activity):
     match = ASSESSMENT.search(source)
     if not match:
         return None, "assessment_heading_missing"
-    end = re.search(r"(?m)^## |^\\*\\*QA", source[match.end():])
+    end = re.search(r"(?m)^## |^\*\*QA", source[match.end():])
     section_end = match.end() + end.start() if end else len(source)
     addition = (
         f"**Workbook practice:** Pupils complete Workbook p.{page}, {activity}. "
-        "Teacher checks answers and provides guidance.\\n\\n"
+        "Teacher checks answers and provides guidance.\n\n"
     )
     return source[:section_end] + addition + source[section_end:], "ready"
 
