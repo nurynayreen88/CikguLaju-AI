@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide reading four clothing sentences. Ask pupils to reread a word, phrase or sentence when unsure of its meaning, then answer three detail questions using familiar context clues.
-**Pupils:** Read four sentences, reread one phrase when unsure and locate three details. Pupils complete Workbook p.89, Activity 1, by reading and answering the clothing questions using the pictures.
+**Pupils:** Read four sentences, reread one phrase when unsure and locate three details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record four intelligible sentences, three correct detail answers and individual evidence of rereading for meaning.
-**Pupils:** Provide individual evidence.
+**Teacher (10 min):** Assess reading comprehension through Workbook p.89, Activity 1; check individual answers, record evidence of rereading for meaning and provide feedback.
+**Pupils:** Complete Workbook p.89, Activity 1, independently by answering the clothing questions using the pictures; correct mistakes after feedback.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful expression.
