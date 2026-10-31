@@ -22,7 +22,8 @@
 **Teacher:** Model a location response with a suitable preposition, then ask pupils to explain their answers using complete phrases.
 **Pupils:** Explain answers using prepositions and questions.
 
-Pupils use Workbook printed p.52, Unit 6 'Our world', to review transport vocabulary and short travel sentences after listening.
+**Teacher:** Instruct pupils to complete Workbook p.52, the transport-language task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.52, the transport-language task; review transport words and complete the short travel sentences.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to report one location detail from the listening and explain the word that helped them.
