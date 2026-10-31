@@ -22,7 +22,7 @@
 **Teacher:** Organise a clue-card exchange, ask groups to justify their guesses and guide revisions for spelling and clarity.
 **Pupils:** Guess animals from clues and correct spelling.
 
-Pupils practise writing comparisons about animals using a suitable Workbook activity, where available; teacher checks sentence accuracy.
+
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read one revised comparative sentence and identify the correction they made.
