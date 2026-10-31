@@ -28,7 +28,7 @@ Pupils complete a follow-up task based on The Jungle Book and the Teaching Guide
 **Teacher:** Demonstrate legible cursive joins, then guide pupils to write and check the lesson poem for readability.
 **Pupils:** Copy the lesson poem in cursive and check letter formation.
 
-**PBD:** Observe supported explanations of character feelings and legible cursive writing (SP 5.2.1, 4.1.2).  
+**PBD:** Assess pupils' personal responses to Akela and Mowgli, including explanations of character feelings supported by story events, for main Language Arts SP 5.2.1; check legible cursive copying of the lesson poem for complementary Writing SP 4.1.2. Use the Graphic Novel Teaching Guidebook rather than an invented Workbook task.  
 **Differentiation:** Offer picture cues, sentence starters and cursive letter models.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — guidebook content and Word/PDF QA pending.
