@@ -22,7 +22,7 @@
 **Teacher:** Ask pupils why Mowgli calls it a red flower and request one supporting story detail.
 **Pupils:** Explain why Mowgli uses the name red flower.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up task based on The Jungle Book and the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite two different personal interpretations and ask pupils to give reasons.
