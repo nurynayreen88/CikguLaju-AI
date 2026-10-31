@@ -91,7 +91,7 @@ class AudioResolverTests(unittest.TestCase):
             return original_read_text(path, *args, **kwargs)
 
         with patch.object(Path, "read_text", substituted_read_text):
-            with self.assertRaises(KeyError):
+            with self.assertRaisesRegex(ValueError, "Missing audio asset"):
                 mod.resolve_lesson_audio(97)
 
     def test_no_guessing_for_unverified(self):
