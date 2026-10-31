@@ -13,7 +13,7 @@ Teacher reviews directions and places.
 Groups read written directions and trace routes from one point to another on a simple map.
 
 ## Activity 2 (25 minutes)
-Pupils identify correct and incorrect directions on a worksheet, then write short corrected instructions.
+Pupils identify correct and incorrect directions on a worksheet, then write short corrected instructions. Pupils complete Workbook p.58, Activity 1, by matching direction signs with the correct words.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks each pupil's corrected route instructions against the map and asks them to identify one clue from the original written directions. Pupils revise an inaccurate step.
