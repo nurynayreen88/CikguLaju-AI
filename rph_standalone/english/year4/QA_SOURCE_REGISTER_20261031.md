@@ -121,3 +121,14 @@ This is **not** verification of audio recordings or a claim that the SOW mandate
 ## Workbook Assessment / PBD formatting QA — 31 October continuation
 
 Instruction: retain original assessment evidence and teaching activities; use Workbook only where its actual task is relevant, with separate Teacher and Pupils lines under existing PBD section. No unverified activity numbers are to be invented. In this batch, Lesson 002, 073 and 075 were converted to the specific Workbook assessment format. Lesson 017, 018, 019, 025 and 027 were corrected to separate Teacher and Pupils formatting. Lesson 033–036, 040–041 and 049–052, 055–056 were inspected and already have separate Teacher and Pupils Workbook instructions. No audio or final 10-minute timing validation is claimed. Keep DRAFT.
+
+## Workbook relevance cleanup — Lessons 057–105
+
+A review of existing generic Workbook references found no verified page/activity mapping for the following lessons in the inspected source material. Generic conditional claims ("use a suitable Workbook activity, if available") were removed, while the original PBD evidence and teaching tasks were preserved:
+
+- Unit 4: Lessons 057, 059, 060, 061, 062, 064.
+- Unit 5: Lessons 072, 076, 077.
+- Unit 6: Lesson 094.
+- Unit 7: Lessons 097, 098, 099, 100, 102, 103, 104, 105.
+
+Literature/poetry lessons and lessons already explicitly using a story guide, CCL worksheets, or self-assessment were not assigned invented Workbook pages (063, 069, 074, 078, 079, 080, 095, 096, 101). This cleanup does **not** assert that these lessons can never use Workbook; it means no sufficiently verified relevant activity/page was established in this pass. Preserve existing Assessment/PBD content. Audio and Word/PDF timing/export QA remain outstanding. Staging only; DRAFT.
