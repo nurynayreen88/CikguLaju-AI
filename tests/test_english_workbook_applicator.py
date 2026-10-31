@@ -43,6 +43,14 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertEqual(updated.split("## Assessment / PBD")[0], self.SAMPLE.split("## Assessment / PBD")[0])
         self.assertEqual(updated.split("## Closure")[1], self.SAMPLE.split("## Closure")[1])
 
+    def test_original_pbd_is_preserved_verbatim(self):
+        updated, status = prepare(self.SAMPLE, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        original_pbd = self.SAMPLE.split("## Assessment / PBD (10 minutes)\\n", 1)[1].split("## Closure", 1)[0]
+        updated_pbd = updated.split("## Assessment / PBD (10 minutes)\\n", 1)[1].split("**Workbook practice:**", 1)[0]
+        self.assertEqual(updated_pbd, original_pbd)
+        self.assertEqual(updated.count("**Workbook practice:**"), 1)
+
     def test_repeat_application_is_idempotent(self):
         updated, _ = prepare(self.SAMPLE, 48, "Activity 2")
         again, status = prepare(updated, 48, "Activity 2")
