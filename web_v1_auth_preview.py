@@ -53,6 +53,8 @@ def callback():
     token = os.environ.get("CIKGULAJU_WEB_TELEGRAM_BOT_TOKEN", "")
     if not token:
         abort(503)
+    if any(len(request.args.getlist(key)) != 1 for key in request.args):
+        abort(403)
     signed = request.args.to_dict(flat=True)
     signed.pop("state", None)
     try:
