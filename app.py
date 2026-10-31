@@ -4610,7 +4610,7 @@ def _feedback_pdf(cid, scope='all'):
     body=ParagraphStyle('fbbody',parent=styles['BodyText'],fontName='Helvetica',fontSize=8.5,leading=11,spaceAfter=3)
     small=ParagraphStyle('fbsmall',parent=body,fontSize=7.5,leading=9)
     doc=SimpleDocTemplate(path,pagesize=A4,rightMargin=14*mm,leftMargin=14*mm,topMargin=14*mm,bottomMargin=14*mm)
-    story=[Paragraph('LAPORAN KOMEN &amp; CADANGAN PUBLIC BETA<br/>CIKGULAJU AI',title),Paragraph(f'<b>Skop:</b> {html.escape(label)} &nbsp;&nbsp; <b>Jumlah:</b> {len(rows)} &nbsp;&nbsp; <b>Dijana:</b> {datetime.now().strftime("%d/%m/%Y %H:%M")}',body),Spacer(1,4*mm)]
+    story=[Paragraph('LAPORAN KOMEN &amp; CADANGAN PUBLIC BETA<br/>CIKGULAJU AI',title),Paragraph(f'<b>Skop:</b> {html.escape(label)} &nbsp;&nbsp; <b>Jumlah:</b> {len(rows)} &nbsp;&nbsp; <b>Dijana:</b> {datetime.now(timezone(timedelta(hours=8))).strftime("%d/%m/%Y %H:%M")}',body),Spacer(1,4*mm)]
     if not rows: story.append(Paragraph('Tiada rekod untuk skop ini.',body))
     else:
         for r0 in rows:
@@ -11914,7 +11914,7 @@ def _notify_admin_new_user(chat_id, user):
     name=(' '.join(x for x in (first,last) if x).strip() or 'Pengguna Telegram')
     username=str(user.get('username') or '').strip()
     username_text=('@'+username) if username else '—'
-    now=datetime.now().strftime('%d/%m/%Y %H:%M')
+    now=datetime.now(timezone(timedelta(hours=8))).strftime('%d/%m/%Y %H:%M')
     msg=(
         '🔔 <b>PENGGUNA BARU CIKGULAJU</b>\n\n'
         f'👤 Nama: <b>{html.escape(name)}</b>\n'
