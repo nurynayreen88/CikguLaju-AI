@@ -22,7 +22,7 @@
 **Teacher:** Model the /eə/ sound in pear, then guide pupils to identify and pronounce matching words in Activity 1.
 **Pupils:** Complete the listening activity and identify the /eə/ sound in words.
 
-Pupils practise recognising the food vocabulary and phonics sounds using a suitable Workbook activity, where available; teacher checks their answers.
+Pupils complete Workbook p.39, Activity 1 (food word search and categories); teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one inferred song-word meaning and pronounce a word containing the target /eə/ sound.
