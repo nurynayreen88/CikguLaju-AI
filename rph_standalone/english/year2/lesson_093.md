@@ -21,11 +21,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide pupils to blend four familiar words and segment their phonemes individually; picture matching is optional extension.
-**Pupils:** Read six words and complete five matches. Pupils complete Workbook p.94, Activity 2, by spelling the body-part words shown in the pictures.
+**Pupils:** Read six words and complete five matches.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record four independently blended words (SP 3.1.3) and four independently segmented words (SP 3.1.4).
-**Pupils:** Submit individual reading evidence.
+**Pupils:** Submit individual reading evidence. Pupils complete Workbook p.94, Activity 2, by spelling the body-part words shown in the pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a challenging word.
