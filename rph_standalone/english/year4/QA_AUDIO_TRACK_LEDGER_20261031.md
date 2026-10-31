@@ -262,3 +262,7 @@ Created `QA_CLASS_CD_ASSET_MANIFEST_20261031.json` on this staging branch. It co
 Added `QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json` with **14 individually TB-verified lessons** and **20 lesson-track usages**: 030, 032, 065, 097, 098, 102, 103, 104, 105, 107, 110, 123, 129, 134. It stores `disc` and `track` pairs, which resolve to actual Drive file IDs using `QA_CLASS_CD_ASSET_MANIFEST_20261031.json`. The mapping is intentionally limited to confirmed cases; all other lessons remain unmapped until source verification. The same audio may correctly be used by multiple lessons (for example CD2 Track 21 in 097 and 098).
 
 **Release boundary:** This JSON is staging QA data, not a production runtime mapping. No audio playback, public-access or Telegram delivery test has been performed. No automatic READY promotion.
+
+## Manifest/mapping integrity check (31 October 2026)
+
+Compared all 14 verified lesson mappings to the complete 220-file Drive manifest: **20 track usages, 19 unique file IDs, 0 missing referenced assets**. CD2 Track 21 correctly resolves to the same Drive file ID for Lessons 097 and 098. Added an offline repeatable validator `validate_audio_mapping.py` to check disc ranges, file IDs, positive sizes, lesson key format and mapping integrity. The direct data cross-check passed; the new script itself has not been run in a CI environment. No playback or bot download claim is made.
