@@ -13,7 +13,7 @@ Teacher reviews familiar present and past forms.
 Teacher pre-teaches homework vocabulary and distributes two versions of a text, one past and one present.
 
 ## Activity 2 (25 minutes)
-Pupils complete missing present or past forms of be in their texts, then pair A with B and check answers orally without showing papers. Each pair writes two questions about the texts and asks another pair.
+Pupils complete missing present or past forms of be in their texts, then pair A with B and check answers orally without showing papers. Each pair writes two questions about the texts and asks another pair. Pupils complete Workbook p.66, Activity 1, by matching questions about past events with the correct answers.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks pupils to identify two details from the texts and answer one partner question about past or present events.
