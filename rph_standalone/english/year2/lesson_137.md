@@ -24,7 +24,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against the success criteria.
-**Pupils:** Submit individual evidence. Pupils complete Workbook p.110, Activity 1, by listening and ticking the correct beach pictures.
+**Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
