@@ -19,8 +19,8 @@
 **Pupils:** Ask and answer questions about learning English at home and school.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Assign Workbook p.88, Activity 2 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the speaking task in Activity 1/2, observe pupils' spoken responses as evidence for the main Speaking SP.
-**Pupils:** Complete Workbook p.88, Activity 2; look at the picture and write advice using should or shouldn't.
+**Teacher:** Use pupils' pair interviews about learning English as the main Speaking Assessment/PBD task for SP 2.1.1. Observe whether pupils ask for and give practical advice using should and shouldn't, and check their understanding of a partner's responses for complementary Listening SP 1.2.5. Do not assign Workbook p.88, Activity 2 here because its health-advice pictures do not match this English-learning survey.
+**Pupils:** Interview a partner about practising English at home and school, give two practical suggestions and respond to a partner's advice.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to demonstrate a useful speaking strategy in a short exchange.
