@@ -22,7 +22,7 @@
 **Teacher:** Model a location response with a suitable preposition, then ask pupils to explain their answers using complete phrases.
 **Pupils:** Explain answers using prepositions and questions.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise listening for travel information using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to report one location detail from the listening and explain the word that helped them.
