@@ -22,7 +22,7 @@
 **Teacher:** Invite pupils to explain personal responses and provide specific feedback.
 **Pupils:** Explain their responses to the story and revise ideas after feedback.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up task based on The Jungle Book and the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to name their favourite scene and explain which character action influenced their choice.
