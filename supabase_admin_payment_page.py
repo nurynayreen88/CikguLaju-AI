@@ -13,7 +13,7 @@ from supabase_admin_payment_history import fetch_admin_payment_history
 
 def show_admin_payment_history(cid, page, request, send):
     try:
-        page = max(0, min(int(page), 124))
+        page = max(0, min(int(page), 499))
     except (TypeError, ValueError, OverflowError):
         page = 0
     per = 8
