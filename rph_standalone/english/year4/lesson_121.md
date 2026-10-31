@@ -26,7 +26,7 @@
 **Teacher:** Invite two pairs to present their invented dinosaur and explain one distinctive feature.
 **Pupils:** Present the dinosaur.
 
-**PBD:** Assess the invented dinosaur's written description for relevant features and accuracy of listening responses against SP 4.2.4 and 1.2.2.  
+**PBD:** Assess pupils' original written dinosaur description, including relevant body parts and abilities, for main Writing SP 4.2.4; check specific details identified from any verified spoken input for complementary Listening SP 1.2.2. Listening evidence remains pending confirmation of the exact audio or teacher-read task; do not infer it from written work.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
