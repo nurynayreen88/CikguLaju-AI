@@ -16,7 +16,7 @@ Pairs write five plural animal names on cards and check spelling.
 Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.78, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess listening by asking pupils to identify comparison details from spoken descriptions of animals and planets. Use Workbook p.78, Activity 2 as a written comparison follow-up, not as direct evidence of listening unless its matching recording is verified.
 **Pupils:** Pupils complete Workbook p.78, Activity 2, by answering questions comparing animals and planets.
 
 ## Closure (5 minutes)
