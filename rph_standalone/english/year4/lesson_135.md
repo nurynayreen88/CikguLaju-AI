@@ -22,7 +22,7 @@
 **Teacher:** Model one description of a sportsperson using a superlative, then organise pair guessing turns and check whether each clue is clear and accurate.
 **Pupils:** Describe and identify people using superlatives.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise the sports language from Activity 5 using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite two pupils to share an accurate description and explain the superlative used.
