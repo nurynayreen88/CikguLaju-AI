@@ -28,7 +28,7 @@ Pupils complete a follow-up response to The Jungle Book using the Teaching Guide
 **Teacher:** Invite pupils to describe their feelings about the chosen animal and support their response with one visible characteristic.
 **Pupils:** State one feeling and give a simple reason.
 
-**PBD:** Observe responses and descriptions against SP 5.2.1 and 2.1.5.  
+**PBD:** Observe pupils' personal responses to The Jungle Book cover, including a stated feeling and reason, for main Language Arts SP 5.2.1; assess spoken descriptions of animals and their characteristics for complementary Speaking SP 2.1.5. Use the graphic-novel guide rather than an invented Workbook page.  
 **Differentiation:** Provide picture cues, sentence starters and paired support.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source and Word/PDF QA pending.
