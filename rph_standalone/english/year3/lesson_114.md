@@ -16,7 +16,7 @@ Teacher points to place cards and models 'I was at the shopping centre' and 'She
 Pairs practise SB p.75 Activity 2 using real answers about yesterday, request help in English when needed, then play Where Was I? from TB p.117.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.60, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use Workbook p.60, Activity 2 ('was' or 'were' choices) for grammar reinforcement. Assess speaking separately by asking pupils to say where two people were yesterday in complete spoken sentences.
 **Pupils:** Pupils complete Workbook p.60, Activity 2, by choosing 'was' or 'were' to describe where people were yesterday.
 
 ## Closure (5 minutes)
