@@ -172,6 +172,27 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("picture-to-text match", pbd)
         self.assertNotIn("Direct pupils to Workbook", pbd)
 
+    def test_lesson_145_uses_written_comparative_forms(self):
+        pbd = self.pbd(self.lesson(145))
+        self.assertIn("Workbook p.76, Activity 1", pbd)
+        self.assertIn("writing comparative adjective forms", pbd)
+
+    def test_lesson_147_uses_picture_vocabulary(self):
+        pbd = self.pbd(self.lesson(147))
+        self.assertIn("Workbook p.78, Activity 1", pbd)
+        self.assertIn("close, far, around and planet", pbd)
+
+    def test_lesson_148_uses_comparative_sentences(self):
+        pbd = self.pbd(self.lesson(148))
+        self.assertIn("Workbook p.77, Activity 2", pbd)
+        self.assertIn("writing comparative sentences", pbd)
+
+    def test_lesson_150_requires_matching_audio(self):
+        pbd = self.pbd(self.lesson(150))
+        self.assertIn("Workbook p.78, Activity 2", pbd)
+        self.assertIn("only with its matching recording", pbd)
+        self.assertIn("numbering the three monsters", pbd)
+
     def test_lesson_159_uses_verified_story_character_matching(self):
         pbd = self.pbd(self.lesson(159))
         self.assertIn("Workbook p.81, Activity 1", pbd)
