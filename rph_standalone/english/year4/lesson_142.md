@@ -22,7 +22,8 @@
 **Teacher:** Ask pupils to write their descriptions from the planning questions and check for clear clues, connected sentences and punctuation.
 **Pupils:** Write and check a short description.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.81, Activity 2; write a short paragraph about a favourite athlete using the information in Activity 1.
 
 ## Closure (5 minutes)
 **Teacher:** Organise a gallery walk in which pupils guess the famous person and explain which written clue helped.
