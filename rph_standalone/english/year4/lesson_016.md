@@ -22,7 +22,7 @@
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Distribute the SOW 'How did I do in Unit 1?' checklist and guide pupils to assess their progress.
 **Pupils:** Rate their learning in the SOW Unit 1 self-assessment. 
-**Teacher:** Instruct pupils to complete Workbook p.9, 'Now I Can 1' according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.9, 'Now I Can 1' according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.9, 'Now I Can 1'; review countries, nationalities and action words to identify what they can do.
 
 ## Closure (5 minutes)
