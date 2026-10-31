@@ -37,6 +37,7 @@ def login():
     nonce = secrets.token_urlsafe(24)
     session["web_auth_nonce"] = nonce
     session["web_auth_started"] = int(time.time())
+    session["web_auth_host"] = request.host
     callback = url_for(".callback", _external=True, _scheme="https", state=nonce)
     return render_template_string(LOGIN_HTML, bot_username=username, callback_url=callback)
 
@@ -48,7 +49,9 @@ def callback():
     supplied = request.args.get("state", "")
     if not expected or not secrets.compare_digest(expected, supplied):
         abort(403)
-    if not isinstance(started, int) or time.time() - started > 300:
+    if not isinstance(started, int) or started > time.time() + 30 or time.time() - started > 300:
+        abort(403)
+    if session.pop("web_auth_host", None) != request.host:
         abort(403)
     token = os.environ.get("CIKGULAJU_WEB_TELEGRAM_BOT_TOKEN", "")
     if not token:
@@ -64,6 +67,7 @@ def callback():
     session.clear()
     session["web_telegram_user_id"] = user["telegram_user_id"]
     session["web_login_at"] = int(time.time())
+    session["web_logout_token"] = secrets.token_urlsafe(24)
     return redirect(url_for(".whoami"))
 
 
@@ -75,7 +79,8 @@ def whoami():
             or logged_at > time.time() + 30 or time.time() - logged_at > 86400):
         session.clear()
         abort(401)
-    return jsonify({"authenticated": True, "telegram_user_id": uid})
+    return jsonify({"authenticated": True, "telegram_user_id": uid,
+                    "logout_token": session.get("web_logout_token")})
 
 
 @auth_preview.post("/logout")
@@ -83,6 +88,10 @@ def logout():
     # Staging-only endpoint: require same-origin Origin header when present.
     origin = request.headers.get("Origin")
     if not origin or origin.rstrip("/") != request.host_url.rstrip("/"):
+        abort(403)
+    supplied = request.headers.get("X-CSRF-Token", "")
+    expected = session.get("web_logout_token")
+    if not expected or not secrets.compare_digest(expected, supplied):
         abort(403)
     session.clear()
     return jsonify({"authenticated": False})
