@@ -4,6 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 1.2.1  
 **Duration:** 60 minutes  
+**Audio verification:** SOW requires playing the Unit 9 sports song for SB p.93 Activity 1 (TB pp.138–139). CD/Track and actual MP3 are not yet verified; this lesson must not be marked audio-ready.  
 **References:** SB p.93 Activity 1; TB pp.138–139; sports song; Year 4 SOW Lesson 129
 
 ## Set induction (10 minutes)
