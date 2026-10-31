@@ -229,3 +229,20 @@ The original scanned Teacher's Book was checked visually (not OCR-inferred). The
 - **Lesson 065:** Unit 5 vocabulary is **Class CD1 Track 70** and song Activity 1 is **Class CD1 Track 71**, both printed TB p.78. RPH reference updated.
 
 **Verification boundary:** Printed disc and track references confirmed; MP3 playback and Telegram delivery still require testing. These corrections do not approve the lesson content or change production DB.
+
+## Teacher's Book CD2 resolution — Helping out, Lessons 097–110 (31 October 2026)
+
+Visually checked the original scanned Year 4 Teacher's Book, printed pp.108, 111, 112, 113, 115 and 118. The following disc/track references are **confirmed** and now stated in each lesson's References line:
+
+| Lesson | Confirmed Class CD2 track | Source / purpose |
+|---|---|---|
+| 097 | Tracks 20 and 21 | TB p.108: vocabulary and Activity 1 song |
+| 098 | Tracks 21 and 22 | TB p.108: song replay and Activity 3 |
+| 102 | Track 25 | TB p.111: Activity 4 listening |
+| 103 | Track 26 | TB p.111: Activity 5 dialogue |
+| 104 | Tracks 27 and 28 | TB p.112: vocabulary and Activity 1 reading |
+| 105 | Track 29 | TB p.113: Activity 4; optional use as described in current RPH |
+| 107 | Track 32 | TB p.118: story Activity 1 |
+| 110 | Track 31 | TB p.115: vocabulary |
+
+**Important:** Track 31 in Lesson 110 and Track 32 in Lesson 107 are correct according to their respective TB pages; the numerical order does not determine lesson order. MP3 existence has been inventoried by folder, but individual audio playback, user permissions and Telegram download remain untested. The updates preserve existing lesson activities and PBD text; residual older wording such as 'disc unverified' elsewhere in lesson bodies should be reconciled before READY.
