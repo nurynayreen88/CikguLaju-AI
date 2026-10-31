@@ -28,7 +28,7 @@ Pupils record two facts from the teacher-prepared listening text about endangere
 **Teacher:** Invite pupils to suggest one realistic conservation action, then recap the two context clues used during listening.
 **Pupils:** Suggest one conservation action.
 
-**PBD:** Record inference of key words from the teacher-read wildlife text and reasons given for conservation against SP 1.3.1 and 2.1.4.  
+**PBD:** Check pupils' inference of unfamiliar wildlife words from the teacher-read endangered-animals text for main Listening SP 1.3.1; observe their spoken reasons for protecting Malaysian animals for complementary Speaking SP 2.1.4. The teacher-prepared script requires source and suitability verification before release.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
