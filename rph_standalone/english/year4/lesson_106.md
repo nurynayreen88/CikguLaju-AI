@@ -28,7 +28,7 @@ Pupils complete a follow-up response to The Jungle Book using the Teaching Guide
 **Teacher:** Invite pupils to explain one prediction using a story clue.
 **Pupils:** Share one prediction.
 
-**PBD:** Observe retelling of Chapters 1–2 and whether pupils justify a prediction about the next chapter (SP 5.2.1, 2.1.4).  
+**PBD:** Observe pupils' responses to characters and events in The Jungle Book Chapters 1–2, including their reasoned prediction, for main Language Arts SP 5.2.1; assess spoken retelling and explanation of story events for complementary Speaking SP 2.1.4. Use the graphic-novel guide without inventing Workbook exercises.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
