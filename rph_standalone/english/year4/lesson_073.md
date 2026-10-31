@@ -22,7 +22,7 @@
 **Teacher action:** Model a sentence with enough and but, then guide pupils to describe yesterday's eating habits in writing.
 **Pupil action:** Write sentences with enough and but about yesterday's habits.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise writing about healthy eating using a suitable Workbook activity, where available; teacher checks sentence accuracy.
 
 ## Closure (5 minutes)
 **Teacher action:** Ask pupils to compare their draft and revised sentences and explain one improvement.
