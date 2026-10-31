@@ -4,7 +4,7 @@
 **Main SP:** 3.2.1  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB pp.74–75 Activities 1–2; TB pp.112–113; Tracks 27–28; Primary Year 4 SK SOW Lesson 104
+**References:** SB pp.74–75 Activities 1–2; TB pp.112–113; Class CD2 Track 27 (vocabulary) and Class CD2 Track 28 (Activity 1), TB p.112; Primary Year 4 SK SOW Lesson 104
 
 ## Set induction (10 minutes)
 **Teacher:** Show a recycling picture, elicit pupils' existing knowledge and record two questions to investigate in the text.
