@@ -22,7 +22,7 @@
 **Teacher:** Model safety advice using should or shouldn't and because, then organise partner exchanges and note the clarity of each explanation.
 **Pupils:** Give safety advice with reasons.
 
-Pupils practise describing health problems and giving advice using a suitable Workbook activity, where available; teacher checks their answers.
+
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to state one home-safety detail they heard and explain its importance.
