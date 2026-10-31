@@ -37,3 +37,16 @@ Next steps:
 - Identify the authoritative standalone RPH lesson record and exact PDF/DOCX builder call path.
 - Build a shared server-side facade; authenticate web sessions and verify Telegram account ownership.
 - Use the existing atomic credit RPC; do not debit for failed generations or duplicate requests.
+
+
+## Confirmed document generation path
+Source contains `create_pdf_file(s, ai_text, cid)` and `create_word_file(s, ai_text, cid)`. One selected-materials Telegram handler constructs `ctx=dict(ss)`, sets `ctx['task']='rph'`, builds text via `_inject_worksheet_differentiation_into_rph(_local_rph_text(ctx))`, and passes the result to `create_pdf_file` or `create_word_file`, then sends the document to Telegram. This is an **observed call path**, not yet a safe web API. The PDF builder is subsequently wrapped by v26.26 code that temporarily replaces module-level footer callbacks: this mutates shared global variables and merits concurrency testing before web generation.
+
+## Lesson mapping caution
+`textbook_page_lesson_map` is used by `_textbook_exact_page_lessons` and `_apply_textbook_page_lesson_context` for verified page-to-lesson context. It is not proven to be the complete authoritative standalone RPH catalog. Do not populate the public selector from it alone.
+
+## Integration implications
+- A web endpoint must not call Telegram `send_document`; create the file server-side, deliver only to the authenticated user, and delete temporary files reliably.
+- Never accept `cid`/Telegram ID from untrusted web form data; derive it from a verified session.
+- Current PDF wrapper temporarily changes module globals; avoid concurrent web PDF requests until fixed or isolated.
+- Before activating generation, verify when the existing Telegram flow consumes credits and whether a failed file generation is charged.
