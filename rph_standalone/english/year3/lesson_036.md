@@ -15,8 +15,9 @@ Teacher leads a letter-jumble spelling game. Pupils complete a crossword in pair
 ## Activity 2 — Reading and writing (25 minutes)
 Teacher replays the story recording for Student's Book p.26 and guides Activity 2 on p.27. Pupils read for details and write the action vocabulary accurately.
 
-## PBD (10 minutes)
-Teacher checks spelling and specific reading details. Pupils correct their written answers.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.20, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.20, Activity 1, by matching sports vocabulary to the pictures.
 
 ## Closure (5 minutes)
 Pupils share a sentence about how they help their family at home.
