@@ -16,8 +16,9 @@ Pairs match cut-up Solar System model instructions to pictures.
 Pairs sequence model-making instructions, listen to check the order, build a Solar System model and prepare a short presentation.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check reading by asking pupils to locate two planet facts in the lesson text and identify the supporting words. Use Workbook p.80, Activity 1 (label planets on the Solar System diagram) as a separate vocabulary follow-up, not as direct evidence of reading comprehension.
-**Pupils:** Pupils complete Workbook p.80, Activity 1, by labelling the planets on a Solar System diagram.
+Teacher checks each pair's sequence of model instructions and asks each pupil to explain one completed step using an instruction word.
+
+**Workbook practice:** Pupils complete Workbook p.80, Activity 1, by labelling the planets on a Solar System diagram. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils explain one model step.
