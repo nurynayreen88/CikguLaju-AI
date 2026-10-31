@@ -19,9 +19,6 @@
 **Pupils:** Plan a message exchange with a health problem, offer and reason.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask pupils to write their message exchanges and use a peer checklist for clear meaning, suitable health vocabulary and punctuation.
-**Pupils:** Write, exchange and revise a text-message dialogue.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.92, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.92, Activity 2; look at the health problems and write sentences using should or shouldn't.
 
