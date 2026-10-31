@@ -53,6 +53,15 @@ class AudioResolverTests(unittest.TestCase):
             self.assertEqual([(v["disc"], v["track"]) for v in resolved],
                              [(v["disc"], v["track"]) for v in entries])
 
+    def test_resolved_assets_are_metadata_only(self):
+        for lesson in (30, 65, 97, 98, 105, 123, 129, 134):
+            for item in mod.resolve_lesson_audio(lesson):
+                self.assertEqual(item["verification"], "metadata_only")
+                self.assertIs(item["delivery_tested"], False)
+                self.assertGreater(item["teacher_book_page"], 0)
+                self.assertTrue(item["drive_file_id"])
+                self.assertIn(item["drive_file_id"], item["drive_view_url"])
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
