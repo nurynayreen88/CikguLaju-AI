@@ -12,6 +12,7 @@ class PaymentHistoryTests(unittest.TestCase):
             "subscription_payments": [{"telegram_user_id": 11, "payment_reference": "sub1", "amount_rm": 8, "status": "paid", "created_at": "2026-10-31T10:00:00Z"}],
             "payments": [],
             "pioneer_entitlements": [{"telegram_user_id": 22, "payment_reference": "access1", "approved_at": "2026-10-30T10:00:00Z", "revoked_at": None}],
+            "pioneer_payment_requests": [],
         }
         def request(method, path):
             self.assertEqual(method, "GET")
