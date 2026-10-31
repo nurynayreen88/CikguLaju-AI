@@ -22,8 +22,8 @@
 **Teacher:** Ask pupils to answer the animal questions and explain their choices using picture or language clues.
 **Pupils:** Answer questions and justify choices.
 
-**Teacher:** Instruct pupils to complete Workbook p.67, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
-**Pupils:** Complete Workbook p.67, Activity 1; complete the animal crossword using the picture clues.
+**Teacher:** Instruct pupils to complete Workbook p.68, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.68, Activity 1; complete the animal crossword using the picture clues.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one unfamiliar animal word using a picture or sentence clue.
