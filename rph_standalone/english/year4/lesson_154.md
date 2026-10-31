@@ -28,7 +28,7 @@ Pupils complete a follow-up task based on The Jungle Book graphic novel and Teac
 **Teacher:** Organise a gallery walk and prompt pupils to give one evidence-based strength and one constructive suggestion.
 **Pupils:** Give classmates stars and wishes during a gallery walk.
 
-**PBD:** Observe creative responses to The Jungle Book and evidence-based opinions in presentations (SP 5.2.1, 4.2.4).  
+**PBD:** Assess pupils' personal responses to The Jungle Book, supported by relevant story events, for main Language Arts SP 5.2.1; check the clarity and relevance of pupils' written creative descriptions for complementary Writing SP 4.2.4. Group presentation alone is not sufficient evidence of the Writing standard.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
