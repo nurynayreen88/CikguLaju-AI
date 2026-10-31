@@ -82,6 +82,8 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
     if (saved.get("telegram_user_id") != payload["telegram_user_id"]
             or saved.get("telegram_message_id") != payload["telegram_message_id"]
             or saved.get("status") != "pending"
+            or not _same_amount(saved.get("amount_rm"), amount)
+            or saved.get("proof_received") is not True
             or not isinstance(saved.get("id"), int)):
         raise RuntimeError("Supabase returned inconsistent payment request")
     return saved["id"]
