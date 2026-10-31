@@ -65,6 +65,19 @@ class AdminPaymentPageTests(unittest.TestCase):
             show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
         self.assertIn("jumlah tidak sah", sent[0][1])
 
+    def test_invalid_page_is_safe(self):
+        sent = []
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=[]):
+            show_admin_payment_history(99, "invalid", None, lambda *args: sent.append(args))
+        self.assertIn("Halaman 1", sent[0][1])
+
+    def test_untrusted_user_id_not_in_callback(self):
+        sent = []
+        rows = [{"telegram_user_id": "123|admin_panel", "kind": "credit", "amount_rm": 10, "status": "pending", "event_at": "2026", "is_receipt": False}]
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=rows):
+            show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
+        self.assertNotIn("admin_user|", str(sent[0][2]))
+
     def test_pagination(self):
         rows = [{
             "telegram_user_id": 10000000 + i,
