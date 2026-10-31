@@ -16,7 +16,7 @@
 
 ## Activity 2 — Reading (25 minutes)
 **Teacher:** Guide reading of Student's Book pp.56–57 and support pupils who need more time.
-**Pupils:** Read the omelette text, choose a preferred omelette and locate supporting details.
+**Pupils:** Read the omelette text, choose a preferred omelette and locate supporting details. Pupils complete Workbook p.45, Activity 2, by answering questions about the ingredients in Anna's and Greg's omelettes.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Ask pupils to infer one word meaning from context and locate two details in the text.
