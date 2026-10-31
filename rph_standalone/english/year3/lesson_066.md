@@ -15,9 +15,10 @@ Teacher asks 'Where's the doll?' and 'Where are the toys?' to review preposition
 ## Activity 2 — Speaking (25 minutes)
 Teacher guides Student's Book p.45 Activity 2 and introduces clothes vocabulary from p.47. Pupils describe locations of objects and clothing in pairs.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Use Workbook p.37, Activity 2 (Look at activity 1 and answer) as prompts for pupils to answer aloud where the radio, mirror, cats, painting and slippers are. Assess their spoken use of location prepositions before they write the answers.
-**Pupils:** Answer the printed bedroom-location questions aloud, then write their answers in Workbook p.37, Activity 2.
+## PBD (10 minutes)
+Pupils describe one picture using two details and answer one short question from a partner.
+
+**Workbook practice:** Answer the printed bedroom-location questions aloud, then write their answers in Workbook p.37, Activity 2. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one accurate sentence describing an object's position.
