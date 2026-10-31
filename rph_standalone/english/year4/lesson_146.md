@@ -22,7 +22,8 @@
 **Teacher:** Give pairs a health situation and a response checklist, then invite them to create, rehearse and perform a short dialogue.
 **Pupils:** Perform an original dialogue.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.87, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.87, Activity 2; look at each health problem and write what the person should do.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to demonstrate one polite response to a health problem and explain when to use it.
