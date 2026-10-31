@@ -23,6 +23,12 @@ def validate():
         for number, asset in tracks.items():
             if not asset.get("file_id") or not isinstance(asset.get("size_bytes"), int) or asset["size_bytes"] <= 0:
                 errors.append(f"{disc} Track {number}: invalid Drive metadata")
+    pages = mapping.get("teacher_book_page_by_lesson", {})
+    if set(pages) != set(mapping.get("lessons", {})):
+        errors.append("Teacher Book page references must match mapped lessons exactly")
+    for lesson, page in pages.items():
+        if not isinstance(page, int) or isinstance(page, bool) or page <= 0:
+            errors.append(f"Lesson {lesson}: invalid Teacher Book page")
     usages = []
     for lesson, items in mapping.get("lessons", {}).items():
         if not (len(lesson) == 3 and lesson.isdigit() and 1 <= int(lesson) <= 160):
