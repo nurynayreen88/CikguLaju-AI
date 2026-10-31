@@ -121,6 +121,12 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("Workbook p.27, Activity 1", pbd)
         self.assertNotIn("Workbook p.29, Activity 2", pbd)
 
+    def test_lesson_087_workbook_pbd_sentence_is_complete(self):
+        pbd = self.pbd(self.lesson(87))
+        self.assertIn("Workbook p.45, Activity 2", pbd)
+        self.assertIn("omelettes.", pbd)
+        self.assertNotIn("by answering 'Is there any.", pbd)
+
     def test_lesson_078_checks_possessives_not_furniture_locations(self):
         pbd = self.pbd(self.lesson(78))
         self.assertIn("Workbook p.40, Activity 1", pbd)
