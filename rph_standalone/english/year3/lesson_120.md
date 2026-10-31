@@ -13,7 +13,7 @@ Teacher reviews place vocabulary.
 Teacher shows the city pictures and asks pupils to predict whether the city is in Malaysia; pupils identify New York.
 
 ## Activity 2 (25 minutes)
-Pupils predict what existed in New York in 1900, read to check and complete TB p.121 Activity 2 with wasn't and weren't.
+Pupils predict what existed in New York in 1900, read to check and complete TB p.121 Activity 2 with wasn't and weren't. Pupils complete Workbook p.62, Activity 2, by writing sentences about places in the year 1900.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks each pupil's two facts from the New York text and one correctly written sentence using 'wasn't' or 'weren't'. Pupils point to supporting text.
