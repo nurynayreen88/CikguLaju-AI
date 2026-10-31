@@ -60,6 +60,12 @@ class PaymentHistoryTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             fetch_admin_payment_history(lambda *_: [None])
 
+    def test_malformed_limit_validation(self):
+        for limit in (None, "invalid", float("inf")):
+            with self.subTest(limit=limit):
+                with self.assertRaises(ValueError):
+                    fetch_admin_payment_history(lambda *_: [], limit=limit)
+
     def test_limit_validation(self):
         with self.assertRaises(ValueError):
             fetch_admin_payment_history(lambda *_: [], limit=1001)
