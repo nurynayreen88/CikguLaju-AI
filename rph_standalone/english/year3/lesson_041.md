@@ -15,9 +15,10 @@ Teacher distributes cut-up present continuous sentences. Pairs reconstruct them 
 ## Activity 2 — Description game (25 minutes)
 Teacher models descriptions of children using positive and negative sentences. Pupils create a short written guessing game on slips of paper and exchange clues with classmates.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.19, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.19, Activity 2, by writing present continuous descriptions of household activities.
+## PBD (10 minutes)
+Teacher checks descriptions and reading comprehension, marking errors for revision in Lesson 43.
+
+**Workbook practice:** Pupils complete Workbook p.19, Activity 2, by writing present continuous descriptions of household activities. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils read one corrected description and identify its matching picture.
