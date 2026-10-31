@@ -21,7 +21,7 @@
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Model correcting one past-tense question, then guide pupils to punctuate prepared questions and complete TB Activity 3.
 **Pupils:** Punctuate prepared questions and complete Activity 3.
-**Teacher:** Instruct pupils to complete Workbook p.24, Let's play past-simple questions, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.24, Let's play past-simple questions, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.24, Let's play past-simple questions; write past-simple questions with correct punctuation.
 
 ## Closure (5 minutes)
