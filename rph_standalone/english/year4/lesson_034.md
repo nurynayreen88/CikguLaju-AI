@@ -29,7 +29,7 @@
 **Pupils:** Practise past-time expressions in the optional game.
 
 ## Assessment and differentiation
-**PBD:** Check task-specific responses and note achievement of Speaking 2.1.2 and Reading 3.2.4.  
+**PBD:** Observe pupils' spoken descriptions of past experiences or cultures for Speaking 2.1.2 and their interpretation of written prompts or dictionary entries for Reading 3.2.4. Workbook question prompts support practice but do not replace speaking evidence.  
 **Support:** Focus on meaningful past-time context before complex grammar terminology.
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
