@@ -22,7 +22,7 @@
 **Teacher:** Pairs compare answers and support them with text evidence.
 **Pupils:** Compare answers using text evidence.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise reading and describing sports using a suitable Workbook activity, where available; teacher checks comprehension.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to report one fact about sports equipment and point to the sentence that supports it.
