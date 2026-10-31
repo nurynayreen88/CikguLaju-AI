@@ -19,8 +19,10 @@
 **Pupils:** Order omelette steps and write short instructions using cooking verbs.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.45, Activity 1 (Unscramble and write); check correct spelling of the food and omelette-ingredient words, then ask pupils to write one original sentence using a completed word to assess writing beyond word unscrambling.
-**Pupils:** Pupils complete Workbook p.45, Activity 1, by unscrambling food words linked to omelette ingredients.
+**Teacher:** Check each pupil's written steps for sequence, clear instructions and spelling.
+**Pupils:** Submit their recipe steps and correct one error.
+
+**Workbook practice:** Pupils complete Workbook p.45, Activity 1, by unscrambling food words linked to omelette ingredients. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Invite a final example and recap key verbs.
