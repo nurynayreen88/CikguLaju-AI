@@ -24,7 +24,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three main-idea choices (SP 1.2.1) and two interpretations using visual clues (SP 1.3.1) per pupil.
-**Pupils:** Submit individual evidence. Pupils complete Workbook p.106, Activity 1, by completing the beach-action sentences with the words provided.
+**Pupils:** Submit individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful beach word.
