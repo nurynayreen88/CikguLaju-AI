@@ -93,3 +93,7 @@ A new visual contact sheet was rendered from PDF pages 18–35 of the scanned Wo
 | 4 | 056 | 35 | Story time, reading/matching | Optional comprehension |
 
 **12 lesson files were updated.** The original teaching sequence was preserved; only existing generic Workbook follow-up sentences were replaced. These Workbook activities are optional aligned supplements, not verified mandatory SOW prescriptions. No audio-file contents were independently verified, and no Word/PDF generation was tested in this batch. All changes remain on staging.
+
+## Unit 5 Workbook matching — continuation
+
+Visual source: scanned Get Smart Plus 4 Workbook, printed pages 39–44, previously inspected. Six new successful lesson edits across two batches: 065 (p.39 Activity 1), 066 (p.39 Activity 2), 067 (p.40 Activities 1–2), 068 (p.40 Activity 3), 070 (p.41 Activity 1), 071 (p.41 Activity 2). Further two lesson edits: 073 (p.43 healthy-eating diary project), 075 (p.44 healthy-eating reading passage). These are **optional follow-up activities**, not SOW-mandated page assignments. The prior safety-tool failures for 066 and 068 were resolved and both files are now committed. Total new lesson edits in this continuation: **4 (066, 068, 073, 075)**. Lessons 074, 078, 079 and 080 are literature, teacher-selected or project lessons and should not receive invented Workbook pages. Audio and export QA remain outstanding. All changes are on staging.
