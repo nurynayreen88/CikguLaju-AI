@@ -19,10 +19,7 @@
 **Pupils:** Give clues so a partner identifies dinosaurs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Display two success checks: use a comparative adjective and follow the partner's instructions. Observe pairs, give corrective feedback and invite a revised description.
-**Pupils:** Check task steps and improve descriptions.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.71, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.71, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.71, Activity 2; write sentences comparing the two dinosaurs using the adjectives.
 
 ## Closure (5 minutes)
