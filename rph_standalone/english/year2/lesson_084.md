@@ -25,7 +25,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score four independently spelled clothing words (0–4) and record reading and completing a sentence-level quiz (SP 3.3.1). Record legibility, punctuation and prompts separately. Accept alternative accurate sentences about the supplied outfit.
-**Pupils:** Submit individual writing. Pupils complete Workbook p.90, Activity 1, by writing the material words shown in the pictures.
+**Pupils:** Submit individual writing.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful spelling strategy.
