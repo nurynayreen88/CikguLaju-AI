@@ -98,6 +98,11 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         pbd = self.pbd(self.lesson(75))
         self.assertIn("Workbook p.37, Activity 1", pbd)
         self.assertIn("matching recording", pbd)
+
+    def test_lesson_067_uses_printed_story_picture_sentences(self):
+        pbd = self.pbd(self.lesson(67))
+        self.assertIn("Workbook p.39, Activity 1", pbd)
+        self.assertIn("Picture 1–4", pbd)
         self.assertIn("draw lines", pbd)
 
     def test_lesson_052_uses_days_not_seasons_calendar(self):
