@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use page 106 as visual context; read three complete sentences twice and ask pupils to select each main-idea picture. Use two gestures to convey the intended message.
-**Pupils:** Select five pictures and answer two prompts. Pupils complete Workbook p.106, Activity 1, by completing the beach-action sentences with the words provided.
+**Pupils:** Select five pictures and answer two prompts.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three main-idea choices (SP 1.2.1) and two interpretations using visual clues (SP 1.3.1) per pupil.
-**Pupils:** Submit individual evidence.
+**Pupils:** Submit individual evidence. Pupils complete Workbook p.106, Activity 1, by completing the beach-action sentences with the words provided.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful beach word.
