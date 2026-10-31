@@ -4,6 +4,8 @@ Caller must check admin authorization before calling. Never use this helper
 with client-exposed credentials. Entitlements are approvals, not receipts.
 """
 def fetch_admin_payment_history(request, limit=100):
+    if isinstance(limit, bool):
+        raise ValueError("Invalid limit")
     try:
         limit = int(limit)
     except (TypeError, ValueError, OverflowError) as exc:
