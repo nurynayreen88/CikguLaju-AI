@@ -16,8 +16,8 @@ Teacher distributes cards labelled in and on. Pupils hold up the correct side wh
 Teacher guides unit revision activities using Student's Book p.44 and the SOW worksheet. Pupils complete preposition and writing tasks and ask and answer questions about months and days.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.32, Activity 2; explain the task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.32, Activity 2, by filling in missing weather and seasonal vocabulary.
+**Teacher:** Direct pupils to Workbook p.32, Activity 2 (Look and write); guide pupils to complete the printed sentences about months and days, checking correct spelling and use of in/on. Use the written answers to assess the lesson's language-review objectives.
+**Pupils:** Complete Workbook p.32, Activity 2, by writing the missing words in the printed sentences about months and days.
 
 ## Closure (5 minutes)
 Pupils self-assess one strength and one language point to practise.
