@@ -22,3 +22,18 @@ Skop: pemeriksaan statik `app.py` pada branch `staging/supabase-persistence-audi
 ## Release gate
 
 PR #71 kekal Draft: CI GitHub masih gagal, log job tidak tersedia melalui connector; belum ada ujian integrasi Supabase sebenar atau ujian redeploy. **Jangan merge ke main** sebelum semua gate disahkan.
+
+## Pemeriksaan kod terperinci — fungsi permintaan bayaran
+
+- `_new_payment_request(chat_id, message_id, amount)` membuat `INSERT` ke SQLite `payment_requests` dan mengembalikan `lastrowid` tempatan. ID ini tidak boleh dianggap sama dengan ID identity jadual `pioneer_payment_requests` di Supabase.
+- `_latest_pending_payment(chat_id)` membaca hanya SQLite; selepas kehilangan fail SQLite, permintaan Supabase sedia ada tidak dapat ditemui melalui fungsi ini.
+- `_set_payment_note(request_id, note)` menyimpan nota hanya dalam SQLite. Jadual Supabase `pioneer_payment_requests` yang telah diperiksa tidak mempunyai lajur `notes`; jangan menulisnya ke lajur lain secara tersirat.
+- `_payment_request(request_id)` dan `_mark_payment_request(request_id, status, ...)` menggunakan ID SQLite. Migrasi terus kepada ID Supabase tanpa pemetaan eksplisit boleh mengemas kini rekod orang lain.
+- `_admin_list(kind='pending')` masih bergantung pada SQLite; menukar paparan sejarah sahaja tidak mengubah aliran kelulusan.
+
+### Gate migrasi wajib
+
+1. Tambah pemetaan ID legacy yang unik dan boleh diaudit; jangan padankan rekod berdasarkan ID integer sahaja.
+2. Reka penyimpanan nota dan bukti yang serasi dengan skema sebenar; jangan simpan kandungan resit sensitif dalam log.
+3. Pastikan operasi kelulusan idempotent dan disahkan dalam satu transaksi server-side; kegagalan Supabase mesti menghentikan pengakuan kejayaan.
+4. Lakukan ujian penjanaan permintaan, kelulusan, penolakan, retry dan redeploy sebelum menukar laluan produksi.
