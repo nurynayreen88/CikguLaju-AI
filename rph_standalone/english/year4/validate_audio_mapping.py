@@ -40,10 +40,14 @@ def validate():
     for lesson, items in mapping.get("lessons", {}).items():
         if not (isinstance(lesson, str) and len(lesson) == 3 and lesson.isascii() and lesson.isdecimal() and 1 <= int(lesson) <= 160):
             errors.append(f"Invalid lesson key: {lesson}")
-        if not items:
-            errors.append(f"Lesson {lesson}: empty mapping")
+        if not isinstance(items, list) or not items:
+            errors.append(f"Lesson {lesson}: empty or invalid mapping list")
+            continue
         seen = set()
         for item in items:
+            if not isinstance(item, dict):
+                errors.append(f"Lesson {lesson}: mapping entry must be an object")
+                continue
             disc, track = item.get("disc"), item.get("track")
             if not isinstance(disc, str) or disc not in ("CD1", "CD2", "CD3"):
                 errors.append(f"Lesson {lesson}: invalid disc {disc!r}")
