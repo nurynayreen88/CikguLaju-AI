@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Model a simple-past sentence and organise pairs to describe past experiences or cultures before presenting their ideas.
-**Pupils:** Describe a past experience or culture with a partner. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Describe a past experience or culture with a partner. Pupils may complete a matching Workbook speaking task about past experiences, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Lead the optional TB line-jumping game to check pupils' understanding of past-tense statements.
