@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide four familiar-word spellings and read two complete sentences for pupils to identify four spoken details.
-**Pupils:** Spell four familiar words and identify four spoken details.
+**Pupils:** Spell four familiar words and identify four spoken details. Pupils complete Workbook p.108, Activity 1, by matching the beach pictures with the written questions and answers.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual performance against the success criteria.
