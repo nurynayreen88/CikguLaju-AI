@@ -19,10 +19,7 @@
 **Pupils:** Make an object from reused containers in pairs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Invite each pair to present its object using 'First' and 'Then'. Ask classmates to check whether the steps are clear and in order.
-**Pupils:** Explain the steps using First and Then.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.61, Activity 1; match the objects to the correct recycling bins.
 
 ## Closure (5 minutes)
