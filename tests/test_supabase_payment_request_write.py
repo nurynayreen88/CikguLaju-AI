@@ -55,9 +55,15 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
         calls = []
         def request(method, path, **kwargs):
             calls.append(method)
-            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}]
+            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending", "proof_received": True}]
         self.assertEqual(create_payment_request(request, 1, 10, 2), 41)
         self.assertEqual(calls, ["GET"])
+
+    def test_retry_requires_received_proof(self):
+        def request(method, path, **kwargs):
+            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": 10, "status": "pending", "proof_received": False}]
+        with self.assertRaises(RuntimeError):
+            create_payment_request(request, 1, 10, 2)
 
     def test_different_message_cannot_create_second_pending_request(self):
         calls = []
