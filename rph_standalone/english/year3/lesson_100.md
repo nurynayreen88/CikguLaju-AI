@@ -13,7 +13,7 @@ Teacher reviews the animal story. Pupils name familiar animals.
 Teacher introduces singular and plural nouns with examples such as one sister and three sisters. Pupils identify correct forms.
 
 ## Activity 2 — Writing (25 minutes)
-Teacher guides the Grammar Box and Activity 2. Pupils write animal word cards and practise accurate plural spelling and cursive handwriting.
+Teacher guides the Grammar Box and Activity 2. Pupils write animal word cards and practise accurate plural spelling and cursive handwriting. Pupils complete Workbook p.53, Activity 1, by writing the singular and plural forms of animal names.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Check each pupil's animal word cards for correct plural spelling and legible handwriting.
