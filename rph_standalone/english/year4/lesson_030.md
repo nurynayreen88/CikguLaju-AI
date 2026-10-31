@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Activity 2 using CD1 Track 29; pupils respond to supported questions and check spelling.
-**Pupils:** Listen to Track 29, answer the spoken questions and check spelling in their written chore cards and Activity 1 responses. The teacher assesses spelling accuracy in the written work for main Writing SP 4.3.2 and comprehension of the recording for complementary Listening SP 1.2.5. No Workbook task is assigned until its printed page and activity are verified.
+**Pupils:** Listen to Track 29, answer the spoken questions and check spelling in their written chore cards and Activity 1 responses. The teacher assesses spelling accuracy in the written work for main Writing SP 4.3.2 and comprehension of the recording for complementary Listening SP 1.2.5. As optional written practice, pupils complete Workbook p.14, Activity 1 by writing household-duty sentences from the pictures; the teacher checks spelling, while the original Student's Book and listening tasks remain unchanged.
 
 ## Closure (5 minutes)
 **Teacher:** Use the optional hopscotch review if time permits, then ask pupils to identify and correct one chore spelling error.
