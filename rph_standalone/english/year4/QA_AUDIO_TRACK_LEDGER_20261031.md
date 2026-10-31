@@ -252,3 +252,7 @@ Visually checked the original scanned Year 4 Teacher's Book, printed pp.108, 111
 Rechecked current Markdown after the eight-lesson CD2 correction batch. Outdated PBD statements about unknown disc were removed from Lessons **097, 098, 102, 103, 104, 105 and 107**. The exact disc/track now agrees with the TB-verified References line, without changing PBD assessment criteria or lesson activities. Lesson **110** had no contradictory PBD wording and was left unchanged. Lessons **123 and 129** now accurately distinguish **MP3 file located in Drive** from **playback and Telegram download not tested**.
 
 **Remaining gates:** content playback, normal-user Drive access, bot delivery, Word/PDF output and final manual approval. All lesson statuses remain DRAFT; no production merge or DB mutation.
+
+## Machine-readable original CD asset manifest (31 October 2026)
+
+Created `QA_CLASS_CD_ASSET_MANIFEST_20261031.json` on this staging branch. It contains **220 original Drive MP3 file IDs**, grouped by CD1 (88), CD2 (88), and CD3 (44), keyed by track number **inside each disc**. File sizes are retained for metadata sanity checks. This is a source-asset lookup, **not** a lesson mapping: callers must independently validate each lesson's CD/track against TB/SOW before using an asset. Do not expose these Drive links as tested public downloads; no Telegram integration, playback test or production DB update has occurred.
