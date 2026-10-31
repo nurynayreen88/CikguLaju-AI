@@ -15,9 +15,10 @@ Teacher models the two syllables in cushion, slippers, table and flower. Pupils 
 ## Activity 2 — Listening and speaking (25 minutes)
 Teacher guides Student's Book pp.49–50 using Teacher's Book pp.79–80. Pupils listen, distinguish target word sounds and describe objects in simple sentences.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Play the matching Workbook audio for p.37, Activity 1 (Listen and draw a line); ask pupils to connect each pictured object to its correct location in the bedroom. Check listening responses. Do not use this task without the matching recording.
-**Pupils:** Listen and draw lines connecting the objects to their bedroom locations in Workbook p.37, Activity 1.
+## PBD (10 minutes)
+Pupils identify two syllable patterns and give one short spoken description.
+
+**Workbook practice:** Listen and draw lines connecting the objects to their bedroom locations in Workbook p.37, Activity 1. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils pronounce two target words and identify their syllables.
