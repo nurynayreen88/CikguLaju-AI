@@ -24,6 +24,9 @@
 
 Pupils reread the teacher-prepared recycling text and record two useful facts; no specific Workbook page is prescribed in the SOW.
 
+**Teacher:** Instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.61, Activity 1; identify recyclable objects and sort them into the appropriate bins.
+
 ## Closure (5 minutes)
 **Teacher:** Invite two pupils to share a way recycling can save money and recap how the text helped them find the answer.
 **Pupils:** Describe one way recycling saves money.
