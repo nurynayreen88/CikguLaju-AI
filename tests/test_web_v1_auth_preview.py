@@ -57,6 +57,7 @@ class AuthFlowTests(unittest.TestCase):
             sess["web_telegram_user_id"] = 123456
             sess["web_login_at"] = int(time.time())
             sess["web_logout_token"] = "test-token"
+            sess["web_logout_csrf"] = "test-token"
         self.assertEqual(self.client.post("/web/auth/logout", headers={
             "Origin": "http://localhost"}).status_code, 403)
         self.assertEqual(self.client.post("/web/auth/logout", headers={
