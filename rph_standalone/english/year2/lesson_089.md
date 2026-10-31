@@ -19,7 +19,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use the two original example sentences to elicit their main ideas, then guide pupils to write three ability sentences with can/can't.
-**Pupils:** Identify printed words and write three sentences independently.
+**Pupils:** Identify printed words and write three sentences independently. Pupils complete Workbook p.95, Activity 1, by writing numbers to match the illustrated body-part descriptions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record two main-idea responses (SP 3.2.1) and three written ability sentences (SP 4.2.2).
