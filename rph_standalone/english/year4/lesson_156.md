@@ -22,7 +22,7 @@
 **Teacher:** Invite groups to give playful advice in the optional task and ask them to restate a rule when misunderstandings arise.
 **Pupils:** Give playful advice and explain rules.
 
-Pupils practise the health vocabulary and expressions from the lesson using a suitable Workbook activity, where available; teacher checks their answers.
+
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one clarification phrase that helped their group follow the game rules.
