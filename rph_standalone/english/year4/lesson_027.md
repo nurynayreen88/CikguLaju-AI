@@ -20,7 +20,8 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Set up pair questions about chores pupils have to do at home, following Activity 4 and the SOW-listed Track 37, and monitor accurate question forms.
-**Pupils:** Listen to the SOW-listed Track 37 and discuss home duties. Pupils use Workbook p.13, Activity 1 (household chores listening and numbering) as optional follow-up; teacher checks their answers.
+**Pupils:** Listen to the SOW-listed Track 37 and discuss home duties. **Teacher:** Instruct pupils to complete Workbook p.13, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.13, Activity 1; listen and number the household-chores pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to state one household obligation using have to and spell a related chore phrase.
