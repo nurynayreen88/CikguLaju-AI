@@ -5,6 +5,7 @@ Existing sentences and sections are preserved verbatim.
 """
 import argparse
 import csv
+import hashlib
 from pathlib import Path
 import re
 
@@ -76,14 +77,15 @@ def main():
         if updated is None:
             print(f"SKIP {year}/{lesson}: {reason}")
             continue
-        changes.append((file, updated))
+        changes.append((file, updated, hashlib.sha256(original.encode('utf-8')).hexdigest()))
         print(f"{'APPLY' if args.apply else 'DRY-RUN'} {year}/{lesson}: Workbook p.{page}, {activity}")
     if args.apply:
-        for file, updated in changes:
+        for file, updated, expected_hash in changes:
             original = file.read_text(encoding="utf-8")
-            if re.search(r"\b(?:Workbook|Activity Book)\b", original, re.I):
-                raise RuntimeError(f"Workbook reference appeared during review: {file}")
-        for file, updated in changes:
+            current_hash = hashlib.sha256(original.encode("utf-8")).hexdigest()
+            if current_hash != expected_hash:
+                raise RuntimeError(f"Lesson changed since review; no files written: {file}")
+        for file, updated, _ in changes:
             file.write_text(updated, encoding="utf-8")
     print(f"Eligible changes: {len(changes)}; written: {len(changes) if args.apply else 0}")
 
