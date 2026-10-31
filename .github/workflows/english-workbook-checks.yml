@@ -21,12 +21,25 @@ jobs:
         with:
           python-version: '3.11'
       - name: Regression tests
-        run: python -m unittest discover -s tests -p 'test_english_workbook_applicator.py' -v
+        id: tests
+        shell: bash
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tests -p 'test_english_workbook_applicator.py' -v 2>&1 | tee workbook-tests.log
       - name: Audit Year 2 and Year 3 (read-only)
-        run: python tools/audit_english_workbook_coverage.py --review-csv workbook_review.csv
-      - name: Upload audit CSV
+        id: audit
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          set -o pipefail
+          python tools/audit_english_workbook_coverage.py --review-csv workbook_review.csv 2>&1 | tee workbook-audit.log
+      - name: Upload diagnostic logs and audit CSV
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: english-workbook-review
-          path: workbook_review.csv
-          if-no-files-found: error
+          name: english-workbook-diagnostics
+          path: |
+            workbook-tests.log
+            workbook-audit.log
+            workbook_review.csv
+          if-no-files-found: warn
