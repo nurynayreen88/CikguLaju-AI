@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils through Phonics 9 Activity 2, ask them to explain which sounds they heard and note any recurring confusion.
 **Pupils:** Complete Phonics 9 Activity 2 and distinguish sounds.
 
-Pupils practise recognising and pronouncing the lesson's phonics patterns using a suitable Workbook activity, where available; teacher checks their answers.
+
 
 ## Closure (5 minutes)
 **Teacher:** Elicit one word for each target sound and check pupils' pronunciation against the phonics examples.
