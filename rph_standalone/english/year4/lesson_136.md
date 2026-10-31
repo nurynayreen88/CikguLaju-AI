@@ -22,7 +22,7 @@
 **Teacher:** Pairs compare answers and support them with text evidence.
 **Pupils:** Compare answers using text evidence.
 
-**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.83, Activity 1 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.83, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.83, Activity 1; find the sports words in the word search.
 
 ## Closure (5 minutes)
