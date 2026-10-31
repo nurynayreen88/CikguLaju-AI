@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model the too/you rhyme, then lead the TB physical-response activity and check pupils' recognition of the rhyming words.
-**Pupils:** Practise the rhyme and respond to physical prompts. Pupils may complete a matching Workbook listening activity about weekly routines, if available; teacher checks their answers.
+**Pupils:** Practise the rhyme and respond to physical prompts. Pupils complete Workbook p.11, Activity 1 (school-subject crossword) as vocabulary practice after the listening task; teacher checks spelling.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to name a preferred school subject and give one reason.
