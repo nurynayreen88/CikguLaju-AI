@@ -46,7 +46,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertEqual(status, "existing_workbook_reference")
 
     def test_non_textbook_lesson_is_never_auto_modified(self):
-        original = self.SAMPLE.replace("## Assessment / PBD", "**Audited source mapping:** NON-TEXTBOOK / SOW task.\\n\\n## Assessment / PBD")
+        original = self.SAMPLE.replace("## Assessment / PBD", "**Audited source mapping:** NON-TEXTBOOK / SOW task.\n\n## Assessment / PBD")
         updated, status = prepare(original, 48, "Activity 2")
         self.assertIsNone(updated)
         self.assertEqual(status, "non_textbook_lesson_requires_manual_review")
