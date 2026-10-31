@@ -22,7 +22,7 @@
 **Teacher:** Model a short paragraph using the Grammar Boxes on pages 93 and 95, then guide pupils to write and check their own paragraph about a liked or disliked sport.
 **Pupils:** Write a sports paragraph.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise listening for information about sports using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to report one accurate interview detail and identify the listening clue that supported it.
