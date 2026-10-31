@@ -15,9 +15,10 @@ Teacher labels classroom corners with room names. Pupils place furniture words i
 ## Activity 2 — Speaking game (25 minutes)
 Teacher guides Student's Book p.49 Activity 4 and the related group task from Teacher's Book p.79. Pupils describe furniture locations and ask classmates for help when needed.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Use Workbook p.37, Activity 2 (Look at activity 1 and answer) as prompts for pairs to ask and answer where the radio, mirror, cats, painting and slippers are. Assess spoken prepositions and requests for clarification before written answers.
-**Pupils:** Ask and answer the printed bedroom-location questions in pairs, then write the answers in Workbook p.37, Activity 2.
+## PBD (10 minutes)
+Pupils describe two features and use one polite request for assistance when needed.
+
+**Workbook practice:** Ask and answer the printed bedroom-location questions in pairs, then write the answers in Workbook p.37, Activity 2. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils describe one piece of furniture and its location.
