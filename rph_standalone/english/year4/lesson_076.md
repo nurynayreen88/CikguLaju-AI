@@ -22,8 +22,6 @@
 **Teacher action:** Monitor the group board game and prompt pupils to describe food objects using the target collective nouns.
 **Pupil action:** Play the game and describe food using collective nouns.
 
-Pupils practise talking about food and healthy eating using a suitable Workbook activity, where available; teacher checks their responses.
-
 ## Closure (5 minutes)
 **Teacher action:** Display two anonymous game-language errors and guide pupils to explain and correct them.
 **Pupil action:** Correct a language error from the activity.
