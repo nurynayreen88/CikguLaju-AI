@@ -23,6 +23,9 @@ def validate():
         if set(tracks) != {str(n) for n in range(1, expected + 1)}:
             errors.append(f"{disc}: missing or extra numbered tracks")
         for number, asset in tracks.items():
+            if not isinstance(asset, dict):
+                errors.append(f"{disc} Track {number}: metadata must be an object")
+                continue
             if not isinstance(asset.get("file_id"), str) or not asset["file_id"] or not isinstance(asset.get("size_bytes"), int) or isinstance(asset["size_bytes"], bool) or asset["size_bytes"] <= 0:
                 errors.append(f"{disc} Track {number}: invalid Drive metadata")
     pages = mapping.get("teacher_book_page_by_lesson", {})
@@ -33,7 +36,7 @@ def validate():
             errors.append(f"Lesson {lesson}: invalid Teacher Book page")
     all_ids = []
     for disc_info in discs.values():
-        all_ids.extend(asset.get("file_id") for asset in disc_info.get("tracks", {}).values())
+        all_ids.extend(asset.get("file_id") for asset in disc_info.get("tracks", {}).values() if isinstance(asset, dict))
     if len(all_ids) != len(set(all_ids)):
         errors.append("Drive file ID is reused across different manifest tracks")
     usages = []
@@ -62,6 +65,9 @@ def validate():
             asset = discs.get(disc, {}).get("tracks", {}).get(str(track))
             if not asset:
                 errors.append(f"Lesson {lesson}: missing {disc} Track {track}")
+                continue
+            if not isinstance(asset, dict) or not isinstance(asset.get("file_id"), str):
+                errors.append(f"Lesson {lesson}: invalid asset metadata for {disc} Track {track}")
                 continue
             usages.append((lesson, disc, track, asset["file_id"]))
     print(f"Lessons: {len(mapping.get('lessons', {}))}; track usages: {len(usages)}; unique MP3s: {len({u[3] for u in usages})}; errors: {len(errors)}")
