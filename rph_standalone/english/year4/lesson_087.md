@@ -22,7 +22,8 @@
 **Teacher:** Provide an invitation checklist and organise a role-play in which pupils write, deliver and respond to trip invitations.
 **Pupils:** Write and respond to trip invitations.
 
-Pupils use Workbook printed p.53, Unit 6 'Let's play', to ask and answer transport questions using the picture prompts.
+**Teacher:** Instruct pupils to complete Workbook p.53, the transport picture-prompt task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.53, the transport picture-prompt task; ask and answer transport questions from the pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one effective invitation phrase and one improvement for their next role-play.
