@@ -19,9 +19,6 @@
 **Pupils:** Plan a description without naming the person.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask pupils to write their descriptions from the planning questions and check for clear clues, connected sentences and punctuation.
-**Pupils:** Write and check a short description.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.81, Activity 2; write a short paragraph about a favourite athlete using the information in Activity 1.
 
