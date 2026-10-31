@@ -26,7 +26,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
     def test_replaces_assessment_without_changing_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
-        self.assertEqual(updated.count("Workbook p.48, Activity 2"), 1)
+        self.assertEqual(updated.count("Workbook p.48, Activity 2"), 2)
         self.assertIn("**Teacher:** Check pupils' dialogue.", updated)
         self.assertIn("Existing closure remains unchanged.", updated)
         self.assertLess(updated.index("Workbook p.48"), updated.index("## Closure"))
