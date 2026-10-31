@@ -16,7 +16,7 @@
 
 ## Activity 2 — Listening (25 minutes)
 **Teacher:** Guide the Student's Book p.57 listening task and replay key parts as needed.
-**Pupils:** Listen for ingredients and answer detail questions.
+**Pupils:** Listen for ingredients and answer detail questions. Pupils complete Workbook p.45, Activity 2, by identifying the ingredients in two omelettes.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Ask two supported questions and one detail question; note individual responses.
