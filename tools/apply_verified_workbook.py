@@ -41,7 +41,7 @@ def verified_rows(csv_file):
 
 
 def prepare(source, page, activity):
-    if PAGE_REF.search(source):
+    if re.search(r"\\b(?:Workbook|Activity Book)\\b", source, re.I):
         return None, "existing_workbook_reference"
     match = ASSESSMENT.search(source)
     if not match:
