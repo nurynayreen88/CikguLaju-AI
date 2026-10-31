@@ -19,11 +19,8 @@
 **Pupil action:** Discuss eating habits and give opinions in pairs.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Give pupils a sentence frame and ask them to write one accurate sentence about a partner's eating or drinking habits.
-**Pupil action:** Write one sentence about a partner's habits.
-
-**Teacher:** Instruct pupils to complete Workbook p.41, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
-**Pupils:** Complete Workbook p.41, Activity 2; complete the How much and How many questions.
+**Teacher action:** Use Workbook p.41, Activity 2 as the main written practice, following the printed instructions and checking pupils' How much and How many questions. Separately observe each pupil expressing an opinion and giving a reason about eating or drinking habits during the pair discussion as the main Speaking PBD evidence for SP 2.1.1. Ask pupils to write one accurate sentence about a partner's habits for complementary Writing SP 4.2.3.
+**Pupil action:** Complete Workbook p.41, Activity 2; share and justify an opinion with a partner, then write one sentence about the partner's habits.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to explain one reason a balanced diet matters, using a familiar food example.
