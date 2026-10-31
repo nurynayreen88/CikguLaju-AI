@@ -27,8 +27,8 @@
 **Pupils:** Complete four correctly spelled labels and give two oral descriptions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Using the second picture and answer examples, score four readable labels (0–4), two meaningful sentences (0–2), and one relevant oral description (0–1). Record whether capitals, word spaces and full stops are correct, and any teacher prompts. Assess each pupil separately.
-**Pupils:** Submit writing and describe their picture.
+**Teacher:** Direct pupils to Workbook p.90, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.90, Activity 1, by labelling the pictured clothing and accessories with their materials.
 
 ## Closure (5 minutes)
 **Teacher:** Review one clothing word and one punctuation rule.
