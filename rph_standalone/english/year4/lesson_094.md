@@ -22,7 +22,7 @@
 **Teacher:** Model a sentence giving a transport choice and reason, then guide pupils to write their own explanations.
 **Pupils:** Write a description and reasons for the choice.
 
-Pupils practise writing about transport fares and advertisements using a suitable Workbook activity, where available; teacher checks sentence accuracy.
+
 
 ## Closure (5 minutes)
 **Teacher:** Organise a gallery walk and prompt pupils to give specific feedback on the clarity of each transport choice and reason.
