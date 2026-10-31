@@ -22,7 +22,7 @@
 **Teacher:** Play Track 72 for Activity 1, pause at key story events and ask pupils to answer with supporting details from the story.
 **Pupils:** Use story evidence to justify answers.
 
-**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.90, Activity 1 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.90, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.90, Activity 1; read the short statements about health problems and match each one to the correct condition.
 
 ## Closure (5 minutes)
