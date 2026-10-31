@@ -13,7 +13,7 @@ Teacher plays the house song from Lesson 65. Pupils sing along.
 Teacher asks 'Where's the doll?' and 'Where are the toys?' to review prepositions. Pupils answer using picture clues.
 
 ## Activity 2 — Speaking (25 minutes)
-Teacher guides Student's Book p.45 Activity 2 and introduces clothes vocabulary from p.47. Pupils describe locations of objects and clothing in pairs. Pupils complete Workbook p.35, Activity 2, by identifying who owns the pictured clothes.
+Teacher guides Student's Book p.45 Activity 2 and introduces clothes vocabulary from p.47. Pupils describe locations of objects and clothing in pairs. Pupils complete Workbook p.37, Activity 2, by answering questions about where objects are in the bedroom.
 
 ## PBD (10 minutes)
 Pupils describe one picture using two details and answer one short question from a partner.
