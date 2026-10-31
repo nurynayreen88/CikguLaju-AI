@@ -52,6 +52,27 @@ class AuthFlowTests(unittest.TestCase):
         self.assertEqual(response.status_code, 403)
         self.assertEqual(self.client.get("/web/auth/whoami").status_code, 401)
 
+    def test_logout_requires_token(self):
+        with self.client.session_transaction() as sess:
+            sess["web_telegram_user_id"] = 123456
+            sess["web_login_at"] = int(time.time())
+            sess["web_logout_token"] = "test-token"
+        self.assertEqual(self.client.post("/web/auth/logout", headers={
+            "Origin": "http://localhost"}).status_code, 403)
+        self.assertEqual(self.client.post("/web/auth/logout", headers={
+            "Origin": "http://localhost", "X-CSRF-Token": "test-token"}).status_code, 200)
+        self.assertEqual(self.client.get("/web/auth/whoami").status_code, 401)
+
+    def test_callback_host_mismatch_rejected(self):
+        self.client.get("/web/auth/login")
+        with self.client.session_transaction() as sess:
+            nonce = sess["web_auth_nonce"]
+        signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
+        signed["state"] = nonce
+        response = self.client.get("/web/auth/callback", query_string=signed,
+                                   base_url="https://other.example")
+        self.assertEqual(response.status_code, 403)
+
     def test_expired_session_rejected(self):
         with self.client.session_transaction() as sess:
             sess["web_telegram_user_id"] = 123456
