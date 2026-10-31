@@ -16,8 +16,8 @@ Teacher revisits Activity 3 and pupils' worksheets from Lesson 153.
 Pupils ask planet questions in groups, record guesses, and check answers using worksheets from Lesson 153.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess listening by asking pupils to identify details about planets from the spoken lesson text or recording. Use Workbook p.80, Activity 2 (questions about the Solar System) as a separate written follow-up unless a matching listening recording has been verified.
-**Pupils:** Pupils complete Workbook p.80, Activity 2, by checking answers to questions about the planets.
+**Teacher:** Assess listening by asking pupils to identify details about planets from the spoken lesson text or recording. Use Workbook p.80, Activity 2 (the Solar System crossword with printed clues) as a separate written follow-up, not as listening evidence unless the related recording is verified.
+**Pupils:** Pupils respond to spoken planet facts, then complete the Workbook p.80, Activity 2 crossword using its printed clues.
 
 ## Closure (5 minutes)
 Pupils share one planet answer.
