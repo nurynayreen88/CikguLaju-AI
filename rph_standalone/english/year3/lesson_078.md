@@ -19,8 +19,8 @@
 **Pupils:** Write about their bedroom and illustrate a bedroom template with furniture drawings or cut-outs.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.40, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.40, Activity 1, by comparing the furniture in Bob's and Sally's houses.
+**Teacher:** Direct pupils to Workbook p.40, Activity 1 (Look and write); guide pupils to write questions and possessive answers identifying whose furniture appears in Bob's and Sally's houses. Check sentence structure and accuracy as a short writing follow-up.
+**Pupils:** Write questions and possessive answers for the pictured furniture in Workbook p.40, Activity 1.
 
 ## Closure (5 minutes)
 **Teacher:** Invite examples and give brief corrective feedback.
