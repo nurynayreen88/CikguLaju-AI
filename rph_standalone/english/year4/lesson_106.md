@@ -22,7 +22,7 @@
 **Teacher:** Ask groups to predict the next chapter and justify their ideas with a detail from Chapters 1 or 2.
 **Pupils:** Predict the next chapter and give reasons.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The Jungle Book using the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one prediction using a story clue.
