@@ -19,7 +19,7 @@
 **Pupils:** Draw and describe an original dinosaur.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.72, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.72, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. Assess pupils' own written sentences or text for the main Writing SP; do not rely on isolated vocabulary answers alone.
 **Pupils:** Complete Workbook p.72, Activity 1; answer the reading questions about the Elephant Orphanage text.
 
 ## Closure (5 minutes)
