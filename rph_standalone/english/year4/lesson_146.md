@@ -19,10 +19,7 @@
 **Pupils:** Reorder and rehearse dialogue lines.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Give pairs a health situation and a response checklist, then invite them to create, rehearse and perform a short dialogue.
-**Pupils:** Perform an original dialogue.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.87, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.87, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.87, Activity 2; look at each health problem and write what the person should do.
 
 ## Closure (5 minutes)
