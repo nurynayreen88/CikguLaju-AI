@@ -7,6 +7,8 @@ on:
       - 'supabase_admin_payment_history.py'
       - 'supabase_admin_payment_page.py'
       - 'supabase_payment_history.py'
+      - 'supabase_payment_request_write.py'
+      - 'tests/test_supabase_payment_request_write.py'
       - 'tests/test_supabase_admin_payment_history.py'
       - 'tests/test_supabase_admin_payment_page.py'
       - '.github/workflows/supabase-payment-history-tests.yml'
@@ -25,6 +27,8 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check Python syntax
-        run: python -m py_compile supabase_admin_payment_history.py supabase_admin_payment_page.py supabase_payment_history.py
+        run: python -m py_compile supabase_admin_payment_history.py supabase_admin_payment_page.py supabase_payment_history.py supabase_payment_request_write.py
       - name: Run payment history unit tests
-        run: python -m unittest discover -s tests -p 'test_supabase_admin_payment*.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_supabase_admin_payment*.py' -v
+          python -m unittest discover -s tests -p 'test_supabase_payment_request_write.py' -v
