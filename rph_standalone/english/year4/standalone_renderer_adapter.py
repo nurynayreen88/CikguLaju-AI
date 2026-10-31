@@ -43,7 +43,7 @@ def adapt_year4_standalone(markdown: str) -> str:
         ("COMPLEMENTARY LEARNING STANDARD", comp_sp.group(1).strip() if comp_sp else ""),
         # Backward-compatible field for the existing base parser. Keep both
         # learning standards labelled; do not invent content standards.
-        ("LEARNING STANDARD", "\\n".join(filter(None, [
+        ("LEARNING STANDARD", "\n".join(filter(None, [
             "Main: " + main_sp.group(1).strip() if main_sp else "",
             "Complementary: " + comp_sp.group(1).strip() if comp_sp else "",
         ]))),
