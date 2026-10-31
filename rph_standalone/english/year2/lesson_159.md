@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide three independent robot descriptions using the scene, then give the two unseen PBD correction items separately from the displayed models.
-**Pupils:** Write three sentences and correct capital letters and full stops. Pupils complete Workbook p.103, Activity 1, by drawing and labelling a robot's abilities.
+**Pupils:** Write three sentences and correct capital letters and full stops.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score three independently written robot sentences (0–3) and two unseen capital-letter/full-stop corrections (0–2); record prompting separately and do not count copying the model as independent writing.
-**Pupils:** Provide individual evidence.
+**Pupils:** Provide individual evidence. Pupils complete Workbook p.103, Activity 1, by drawing and labelling a robot's abilities.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful expression.
