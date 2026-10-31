@@ -17,6 +17,8 @@ def fetch_admin_payment_history(request, limit=100):
         if not isinstance(rows, list):
             raise RuntimeError("Supabase history unavailable: " + table)
         for item in rows:
+            if not isinstance(item, dict):
+                raise RuntimeError("Malformed Supabase history row: " + table)
             results.append({
                 "telegram_user_id": item.get("telegram_user_id"),
                 "kind": kind,
