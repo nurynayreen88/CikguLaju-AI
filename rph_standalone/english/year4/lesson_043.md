@@ -19,8 +19,8 @@
 **Pupils:** Listen to Track 11 and repeat target words.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Model sorting one past-tense verb by its final sound, then guide pupils to classify verbs including opened, wrapped and painted.
-**Pupils:** Sort verbs by ending sound, including opened, wrapped and painted. Pupils may complete a matching Workbook phonics activity on past-tense -ed endings, if available; teacher checks pronunciation.
+**Teacher:** Model sorting one past-tense verb by its final sound, then guide pupils to classify verbs including opened, wrapped and painted. Check pupils' ability to distinguish the /d/, /t/ and /ɪd/ endings heard in CD3 Tracks 10–11 as the main Listening PBD evidence; provide corrective pronunciation feedback. Do not assign a Workbook phonics activity until its printed page and task are verified.
+**Pupils:** Listen to the target verbs, sort opened, wrapped and painted by the ending sounds they hear, and pronounce one word from each group.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to pronounce one verb from each sound group and give corrective pronunciation feedback.
