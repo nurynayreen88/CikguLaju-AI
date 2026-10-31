@@ -26,7 +26,7 @@
 **Teacher:** Facilitate the TB optional review and invite pupils to share a conclusion from their interviews.
 **Pupils:** Share a conclusion from the survey.
 
-**PBD:** Observe partner interviews, sports-survey recording and spoken summaries of preferences (SP 2.1.1, 2.1.5).  
+**PBD:** Observe pupils stating sports preferences and giving reasons during partner interviews for main Speaking SP 2.1.1; assess their spoken summaries of classmates' sports interests for complementary Speaking SP 2.1.5. Workbook p.80 provides written practice, not a substitute for spoken evidence.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
