@@ -15,9 +15,13 @@ def _same_amount(raw, expected):
 
 
 def _exact_cents(amount):
-    digits = amount.as_tuple().digits
-    places = -amount.as_tuple().exponent
-    return places <= 2 or all(d == 0 for d in digits[-(places - 2):]) if places - 2 <= len(digits) else all(d == 0 for d in digits)
+    parts = amount.as_tuple()
+    extra_places = -parts.exponent - 2
+    if extra_places <= 0:
+        return True
+    if extra_places > len(parts.digits):
+        return all(digit == 0 for digit in parts.digits)
+    return all(digit == 0 for digit in parts.digits[-extra_places:])
 
 
 def create_payment_request(request, telegram_user_id, amount_rm, telegram_message_id):
