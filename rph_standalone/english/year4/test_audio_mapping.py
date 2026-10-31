@@ -94,6 +94,13 @@ class AudioResolverTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Missing audio asset"):
                 mod.resolve_lesson_audio(97)
 
+    def test_validator_accepts_current_verified_sources(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("year4_validator", HERE / "validate_audio_mapping.py")
+        validator = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(validator)
+        self.assertTrue(validator.validate())
+
     def test_validator_rejects_malformed_mapping_entries(self):
         from unittest.mock import patch
         import importlib.util
