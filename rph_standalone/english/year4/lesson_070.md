@@ -22,7 +22,7 @@
 **Teacher action:** Play Track 79 for TB Activity 3, pause for key details and ask pupils to justify one answer from what they heard.
 **Pupil action:** Listen to Track 79 and check details in Activity 3.
 
-Pupils practise listening for details about food and meals using a suitable Workbook activity, where available; teacher checks their answers.
+Pupils complete Workbook p.41, Activity 1 (food-container expressions) as optional vocabulary support; teacher checks answers.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share one healthy habit and give a short reason for their choice.
