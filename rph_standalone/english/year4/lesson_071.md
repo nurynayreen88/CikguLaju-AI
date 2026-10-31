@@ -26,7 +26,7 @@
 **Teacher action:** Invite pupils to explain one reason a balanced diet matters, using a familiar food example.
 **Pupil action:** Explain one reason to eat a balanced diet.
 
-**PBD:** Observe opinions about eating habits and assess written sentences about partners against SP 2.1.1 and 4.2.3.  
+**PBD:** Observe pupils giving and supporting opinions about eating habits for main Speaking SP 2.1.1; assess their written sentences about partners for complementary Writing SP 4.2.3. Workbook p.41 provides written practice but does not replace spoken evidence.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 71, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
