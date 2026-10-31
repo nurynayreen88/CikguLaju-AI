@@ -13,7 +13,7 @@ Teacher reviews familiar places in the local area. Pupils name places they know.
 Teacher introduces direction vocabulary and describes a route from school to a familiar place. Pupils listen and guess the destination.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides the Student's Book listening task. Pupils listen to directions and identify route details.
+Teacher guides the Student's Book listening task. Pupils listen to directions and identify route details. Pupils complete Workbook p.52, Activity 1, by writing the directions shown on road signs.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Ask two route-detail questions and one question about the destination; record individual responses.
