@@ -22,7 +22,7 @@
 **Teacher:** Provide an invitation checklist and organise a role-play in which pupils write, deliver and respond to trip invitations.
 **Pupils:** Write and respond to trip invitations.
 
-**Teacher:** Instruct pupils to complete Workbook p.53, the transport picture-prompt task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.53, the transport picture-prompt task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.53, the transport picture-prompt task; ask and answer transport questions from the pictures.
 
 ## Closure (5 minutes)
