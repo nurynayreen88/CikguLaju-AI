@@ -15,6 +15,8 @@ def validate():
     errors = []
     if assets.get("year") != 4 or mapping.get("year") != 4:
         errors.append("Expected year 4 in both source files")
+    if mapping.get("asset_manifest") != "QA_CLASS_CD_ASSET_MANIFEST_20261031.json":
+        errors.append("Unexpected audio manifest reference")
     discs = assets.get("discs", {})
     for disc, expected in (("CD1", 88), ("CD2", 88), ("CD3", 44)):
         tracks = discs.get(disc, {}).get("tracks", {})
@@ -29,6 +31,11 @@ def validate():
     for lesson, page in pages.items():
         if not isinstance(page, int) or isinstance(page, bool) or page <= 0:
             errors.append(f"Lesson {lesson}: invalid Teacher Book page")
+    all_ids = []
+    for disc_info in discs.values():
+        all_ids.extend(asset.get("file_id") for asset in disc_info.get("tracks", {}).values())
+    if len(all_ids) != len(set(all_ids)):
+        errors.append("Drive file ID is reused across different manifest tracks")
     usages = []
     for lesson, items in mapping.get("lessons", {}).items():
         if not (len(lesson) == 3 and lesson.isdigit() and 1 <= int(lesson) <= 160):
