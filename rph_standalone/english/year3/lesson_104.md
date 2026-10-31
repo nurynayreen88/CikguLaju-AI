@@ -13,7 +13,7 @@ Teacher plays Stop! with action words. Pupils freeze when instructed.
 Pupils brainstorm town places and discuss rules for each place.
 
 ## Activity 2 (25 minutes)
-Teacher displays four texts around the classroom. Pupils read and match them to place pictures, then identify key meanings.
+Teacher displays four texts around the classroom. Pupils read and match them to place pictures, then identify key meanings. Pupils complete Workbook p.54, Activity 1, by matching rules to the correct places.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks each pupil to match one text to a place, state its main idea and explain one word from context. Pupils point to supporting text.
