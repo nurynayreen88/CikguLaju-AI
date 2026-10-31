@@ -17,7 +17,7 @@ Teacher follows the Vocabulary and Activity 1 guidance from Teacher's Book p.76.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.39, Activity 1; explain the task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.39, Activity 1, by filling in missing words in the picture story.
+**Pupils:** Pupils complete Workbook p.39, Activity 1, by rereading the story and completing the Picture 1–4 sentences using picture clues.
 
 ## Closure (5 minutes)
 Pupils share a new word and its meaning.
