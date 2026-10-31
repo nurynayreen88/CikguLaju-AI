@@ -23,7 +23,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Distribute the Lina passage and five questions above. Pupils answer independently, underline evidence, compare with a partner, then play the sentence-clue game with a partner. The dictionary lookup is optional extension.
-**Pupils:** Read, underline evidence and complete five answers.
+**Pupils:** Read, underline evidence and complete five answers. Pupils complete Workbook p.89, Activity 1, by reading the questions and finding the answers in the pictures.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score each pupil's five answers against the key (0–5; target at least 4/5), and record successful sentence-clue game participation and responses separately (SP 3.3.1). Note prompts given.
