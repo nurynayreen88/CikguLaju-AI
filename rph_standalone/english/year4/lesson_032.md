@@ -16,7 +16,7 @@
 
 ## Activity 2 (20 minutes)
 **Teacher:** Complete Revision 2 Activity 2 and optional practice based on observed needs.
-**Pupils:** Complete Revision 2 Activity 2 and targeted practice.
+**Pupils:** Complete Revision 2 Activity 2 and targeted practice. As optional written revision, pupils complete Workbook p.18, Activities 1–2 by writing household-duty sentences and answering timetable questions; the teacher checks their responses without replacing the original Student's Book listening task.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Distribute the SOW Unit 2 self-assessment and guide pupils to evaluate school subjects, schedules, housework and duties.
