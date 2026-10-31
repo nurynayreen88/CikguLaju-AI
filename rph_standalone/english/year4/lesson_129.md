@@ -22,7 +22,7 @@
 **Teacher:** Demonstrate sports actions from the TB response task, then guide pupils to respond and check their understanding.
 **Pupils:** Respond to sports vocabulary through actions.
 
-**Teacher:** Instruct pupils to complete Workbook p.77, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.77, Activity 1 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.77, Activity 1; read the clues and write the names of the sports.
 
 ## Closure (5 minutes)
