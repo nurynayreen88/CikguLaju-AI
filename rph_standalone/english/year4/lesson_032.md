@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**References:** SB p.26 Revision 2 Activities 1–2; TB p.47; Track 35 as printed in SOW; self-assessment
+**References:** SB p.26 Revision 2 Activities 1–2; TB p.47; Class CD1 Track 35 (TB p.46); self-assessment
 
 ## Set induction (10 minutes)
 **Teacher:** Review housework words with a short game.
