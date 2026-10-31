@@ -117,3 +117,7 @@ Nine lesson files were changed with **optional**, lesson-relevant Workbook follo
 | 093 | 55 | Story time reading questions |
 
 This is **not** verification of audio recordings or a claim that the SOW mandates these Workbook tasks. Preserve literature/CLIL/project exceptions. No READY approval or main merge.
+
+## Workbook Assessment / PBD formatting QA — 31 October continuation
+
+Instruction: retain original assessment evidence and teaching activities; use Workbook only where its actual task is relevant, with separate Teacher and Pupils lines under existing PBD section. No unverified activity numbers are to be invented. In this batch, Lesson 002, 073 and 075 were converted to the specific Workbook assessment format. Lesson 017, 018, 019, 025 and 027 were corrected to separate Teacher and Pupils formatting. Lesson 033–036, 040–041 and 049–052, 055–056 were inspected and already have separate Teacher and Pupils Workbook instructions. No audio or final 10-minute timing validation is claimed. Keep DRAFT.
