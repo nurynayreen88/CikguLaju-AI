@@ -54,18 +54,19 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
     }
     # Read first for retries; the existing database partial unique index
     # prevents concurrent pending requests for the same user.
-    existing = request("GET", f"pioneer_payment_requests?select=id,telegram_user_id,telegram_message_id,status,amount_rm&telegram_user_id=eq.{int(telegram_user_id)}&telegram_message_id=eq.{int(telegram_message_id)}&limit=2")
+    existing = request("GET", f"pioneer_payment_requests?select=id,telegram_user_id,telegram_message_id,status,amount_rm,proof_received&telegram_user_id=eq.{int(telegram_user_id)}&telegram_message_id=eq.{int(telegram_message_id)}&limit=2")
     if not isinstance(existing, list):
         raise RuntimeError("Cannot verify prior payment requests")
     if len(existing) > 1:
         raise RuntimeError("Duplicate payment requests require manual reconciliation")
     if existing:
         row = existing[0]
-        if (not isinstance(row, dict) or not isinstance(row.get("id"), int)
+        if (not isinstance(row, dict) or type(row.get("id")) is not int or row["id"] <= 0
                 or row.get("telegram_user_id") != payload["telegram_user_id"]
                 or row.get("telegram_message_id") != payload["telegram_message_id"]
                 or not _same_amount(row.get("amount_rm"), amount)
-                or row.get("status") != "pending"):
+                or row.get("status") != "pending"
+                or row.get("proof_received") is not True):
             raise RuntimeError("Existing payment request does not match")
         # An approved/rejected request must never masquerade as a new pending one.
         return row["id"]
@@ -84,6 +85,7 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
             or saved.get("status") != "pending"
             or not _same_amount(saved.get("amount_rm"), amount)
             or saved.get("proof_received") is not True
-            or not isinstance(saved.get("id"), int)):
+            or type(saved.get("id")) is not int
+            or saved["id"] <= 0):
         raise RuntimeError("Supabase returned inconsistent payment request")
     return saved["id"]
