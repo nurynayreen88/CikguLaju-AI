@@ -13,10 +13,11 @@ Teacher reviews present-tense verbs using cards.
 Pairs write verbs on blank cards and match them to past forms.
 
 ## Activity 2 (25 minutes)
-Pairs write past verbs on the backs of their cards, make past-tense sentences and turn the cards over to check their answers. Pupils complete Workbook p.74, Activity 1, by selecting the correct past-tense forms for the pictured events.
+Pairs write past verbs on the backs of their cards, make past-tense sentences and turn the cards over to check their answers.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks two present/past verb pairs and one written past-tense sentence per pupil, then asks a simple comprehension question.
+**Teacher:** Direct pupils to Workbook p.74, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.74, Activity 1, by selecting the correct past-tense forms for the pictured events.
 
 ## Closure (5 minutes)
 Pupils give one present/past verb pair.
