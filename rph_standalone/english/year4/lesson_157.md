@@ -19,7 +19,7 @@
 **Pupils:** Complete Activities 1–2 and infer unfamiliar words from context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.91, Activity 4 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.91, Activity 4 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the reading task, check pupils' understanding of the text and supporting details as evidence for the main Reading SP.
 **Pupils:** Complete Workbook p.91, Activity 4; read the statements about germs and circle the correct answers.
 
 ## Closure (5 minutes)
