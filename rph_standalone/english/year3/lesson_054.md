@@ -16,8 +16,8 @@ Teacher reviews adverbs of frequency and days of the week. Pupils tell partners 
 Teacher guides Student's Book p.37 Activity 3 following Teacher's Book p.63. Pupils listen for activity and day information and complete the worksheet, then compare answers.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.29, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.29, Activity 2, by reading and writing about the weather in different seasons.
+**Teacher:** Direct pupils to Workbook p.27, Activity 1; guide pupils to read the activities and write the matching days of the week, then check answers against the lesson's activity-and-day language objectives. This is a reading/writing follow-up to the listening task, not a listening assessment.
+**Pupils:** Read the activity descriptions and write the corresponding days of the week in Workbook p.27, Activity 1.
 
 ## Closure (5 minutes)
 Pupils share one activity they often or never do.
