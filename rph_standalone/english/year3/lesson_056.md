@@ -15,9 +15,10 @@ Teacher displays a world map and asks pupils to locate Malaysia, Singapore and T
 ## Activity 2 — Reading (25 minutes)
 Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.30, Activity 2 (Project); guide pupils to compare the pictures of Sydney and Colorado in January, describing the weather, where the children are and what they are doing. Ask pupils to locate specific visual information and explain that this is a picture-based follow-up, not a reading-comprehension task on the Student's Book country texts.
-**Pupils:** Compare the Sydney and Colorado pictures in Workbook p.30, Activity 2, and answer the printed questions orally.
+## PBD (10 minutes)
+Pupils locate two details in the reading text and use one polite request for help when needed.
+
+**Workbook practice:** Compare the Sydney and Colorado pictures in Workbook p.30, Activity 2, and answer the printed questions orally. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one fact about a country and compare it with Malaysia.
