@@ -16,7 +16,7 @@
 
 ## Activity 2 (25 minutes)
 **Teacher:** Guide predictions, reading on Student's Book pp.102–103 and story audio; ask simple questions about characters, actions and events and discuss the story's value.
-**Pupils:** Predict the strongest, funniest or fastest characters, read to check, listen to the story and share responses.
+**Pupils:** Predict the strongest, funniest or fastest characters, read to check, listen to the story and share responses. Pupils complete Workbook p.81, Activity 1, by matching the story characters with their descriptions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Ask each pupil to identify a favourite character or event, give one story-based reason and read one short section independently.
