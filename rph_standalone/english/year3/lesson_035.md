@@ -15,9 +15,10 @@ Teacher introduces new vocabulary and displays selected story pictures. Pupils m
 ## Activity 2 — Reading (25 minutes)
 Pupils read the picture story on Student's Book p.26 to check matches. Teacher guides Activity 1 and introduces present continuous question forms from the p.27 Grammar Box.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.23, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.23, Activity 2, by selecting correct details from the story.
+## PBD (10 minutes)
+Pupils state the story's main idea and explain one unfamiliar word using a clue from the text or picture.
+
+**Workbook practice:** Pupils complete Workbook p.23, Activity 2, by selecting correct details from the story. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils record one new word and a reflection in their learning diaries.
