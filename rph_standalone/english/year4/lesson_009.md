@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Provide a sentence frame with an adverb of frequency, then ask pupils to write at least two cursive sentences and compare their routines in pairs.
-**Pupils:** Write at least two cursive routine sentences and compare with classmates. Pupils may complete a matching Workbook writing activity about daily routines, if available; teacher checks cursive writing and sentence accuracy.
+**Pupils:** Write at least two cursive routine sentences and compare with classmates. Pupils complete Workbook p.5, Activity 1 (adverbs of frequency and daily routines); teacher checks sentence accuracy.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to select their clearest sentence and identify one spelling improvement.
