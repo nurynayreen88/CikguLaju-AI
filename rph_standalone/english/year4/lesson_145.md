@@ -26,7 +26,7 @@
 **Teacher:** Ask pupils to use one health expression from the listening in a suitable spoken sentence.
 **Pupils:** Say and demonstrate one health expression.
 
-**PBD:** Observe contextual inference and recognition of target sounds against SP 1.3.1 and 1.1.1.  
+**PBD:** Check pupils' inference of unfamiliar health expressions from spoken context for main Listening SP 1.3.1; assess recognition of target sounds in heard words for complementary Listening SP 1.1.1. Workbook p.86 crossword is written vocabulary practice, not listening evidence. Track 68's disc remains unverified.  
 **Differentiation:** Provide picture prompts, repetition, paired support and extension vocabulary.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct audio and Word/PDF QA pending.
