@@ -13,7 +13,7 @@ Teacher reviews action verb flashcards.
 Pupils mime weekend activities and identify past-tense verbs.
 
 ## Activity 2 (25 minutes)
-Pupils complete TB p.133 Activity 3, then play True/False about Bob and Lucy's forest trip using correct past-tense verbs.
+Pupils complete TB p.133 Activity 3, then play True/False about Bob and Lucy's forest trip using correct past-tense verbs. Pupils complete Workbook p.68, Activity 3, by matching the holiday pictures with the correct children.
 
 ## Assessment / PBD (10 minutes)
 Teacher reads three statements about Bob and Lucy's trip. Pupils identify true or false and correct one false detail.
