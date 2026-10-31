@@ -24,7 +24,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record four located details and two short answers for each pupil.
-**Pupils:** Provide individual evidence. Pupils complete Workbook p.113, Activity 1, by reading the beach passage and choosing the correct words.
+**Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
