@@ -5,7 +5,6 @@ import os
 import time
 import unittest
 from unittest.mock import patch
-from urllib.parse import parse_qs, urlparse
 
 from web_v1_auth_preview import create_auth_preview_app
 
@@ -73,16 +72,6 @@ class AuthFlowTests(unittest.TestCase):
                                    base_url="https://other.example")
         self.assertEqual(response.status_code, 403)
 
-    def test_callback_rejects_changed_host(self):
-        self.client.get("/web/auth/login")
-        with self.client.session_transaction() as sess:
-            nonce = sess["web_auth_nonce"]
-        signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
-        signed["state"] = nonce
-        response = self.client.get("/web/auth/callback", query_string=signed,
-                                   base_url="https://other.example")
-        self.assertEqual(response.status_code, 403)
-
     def test_logout_requires_csrf_and_origin(self):
         self.client.get("/web/auth/login")
         with self.client.session_transaction() as sess:
@@ -103,6 +92,19 @@ class AuthFlowTests(unittest.TestCase):
         self.assertEqual(self.client.get("/web/auth/callback", query_string=signed).status_code, 302)
         with self.client.session_transaction() as sess:
             self.assertTrue(sess["web_logout_csrf"])
+
+    def test_login_unavailable_without_bot_configuration(self):
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_TELEGRAM_BOT_USERNAME": ""}):
+            self.assertEqual(self.client.get("/web/auth/login").status_code, 503)
+
+    def test_callback_rejects_missing_bot_token(self):
+        self.client.get("/web/auth/login")
+        with self.client.session_transaction() as sess:
+            nonce = sess["web_auth_nonce"]
+        signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
+        signed["state"] = nonce
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_TELEGRAM_BOT_TOKEN": ""}):
+            self.assertEqual(self.client.get("/web/auth/callback", query_string=signed).status_code, 503)
 
     def test_expired_session_rejected(self):
         with self.client.session_transaction() as sess:
