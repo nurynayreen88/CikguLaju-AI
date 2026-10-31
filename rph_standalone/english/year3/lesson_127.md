@@ -16,8 +16,9 @@ Teacher previews the story using pictures and adjectives such as funny, deliciou
 Pupils read the weekend story and vote on whose weekend was best. They infer unfamiliar words from pictures, answer the reading questions, discuss the story's value and take part in the Press Conference game from Teacher's Book p.127.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.65, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.65, Activity 1, by matching characters to the places they visited at the weekend.
+Teacher asks pupils to explain their favourite weekend scene and infer one word meaning from a picture or sentence clue.
+
+**Workbook practice:** Pupils complete Workbook p.65, Activity 1, by matching characters to the places they visited at the weekend. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share a favourite part of the story.
