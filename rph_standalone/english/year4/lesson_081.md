@@ -22,7 +22,7 @@
 **Teacher:** Model one safe-versus-unsafe judgement with a reason, then guide Student Book Activity 1 and ask pupils to explain their choices.
 **Pupils:** Complete Activity 1 and explain one safety judgement.
 
-**Teacher:** Instruct pupils to complete Workbook p.50, the road-safety picture task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.50, the road-safety picture task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.50, the road-safety picture task; identify safe and unsafe actions from the pictures.
 
 ## Closure (5 minutes)
