@@ -13,7 +13,7 @@ Teacher introduces the topic of holidays. Pupils recall familiar holiday activit
 Teacher shows the pictures from Student's Book Activity 1. Pupils identify places and activities.
 
 ## Activity 2 (25 minutes)
-Pupils listen to the holiday song, raise matching pictures, order the pictures and complete SB p.85 Activity 1.
+Pupils listen to the holiday song, raise matching pictures, order the pictures and complete SB p.85 Activity 1. Pupils complete Workbook p.68, Activity 1, by unscrambling holiday action words.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks pupils to identify two holiday activities from the song and describe one activity using the picture prompts.
