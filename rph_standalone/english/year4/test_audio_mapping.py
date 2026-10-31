@@ -132,6 +132,25 @@ class AudioResolverTests(unittest.TestCase):
         with patch.object(Path, "read_text", fake_read):
             self.assertFalse(validator.validate())
 
+    def test_validator_rejects_invalid_track_collection(self):
+        from unittest.mock import patch
+        import importlib.util
+        import json
+        spec = importlib.util.spec_from_file_location("validator", HERE / "validate_audio_mapping.py")
+        validator = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(validator)
+        manifest = json.loads((HERE / "QA_CLASS_CD_ASSET_MANIFEST_20261031.json").read_text(encoding="utf-8"))
+        manifest["discs"]["CD3"]["tracks"] = []
+        original_read = Path.read_text
+
+        def fake_read(path, *args, **kwargs):
+            if path.name == "QA_CLASS_CD_ASSET_MANIFEST_20261031.json":
+                return json.dumps(manifest)
+            return original_read(path, *args, **kwargs)
+
+        with patch.object(Path, "read_text", fake_read):
+            self.assertFalse(validator.validate())
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
