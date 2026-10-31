@@ -16,11 +16,11 @@
 
 ## Activity 2 — Recipe writing (25 minutes)
 **Teacher:** Model a short recipe and guide sequencing.
-**Pupils:** Order omelette steps and write short instructions using cooking verbs. Pupils complete Workbook p.45, Activity 1, by unscrambling food words linked to omelette ingredients.
+**Pupils:** Order omelette steps and write short instructions using cooking verbs.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check each pupil's written steps for sequence, clear instructions and spelling.
-**Pupils:** Submit their recipe steps and correct one error.
+**Teacher:** Direct pupils to Workbook p.45, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.45, Activity 1, by unscrambling food words linked to omelette ingredients.
 
 ## Closure (5 minutes)
 **Teacher:** Invite a final example and recap key verbs.
