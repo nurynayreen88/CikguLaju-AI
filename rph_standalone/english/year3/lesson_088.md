@@ -14,11 +14,11 @@ Teacher reviews familiar food names. Pupils share dishes they know.
 Teacher follows the warm-up and vocabulary tasks from Teacher's Book p.92. Pupils look at pictures of dishes and predict their origins.
 
 ## Activity 2 — Reading match (25 minutes)
-Groups of four read the texts from Student's Book p.58, match them to pictures and highlight specific details. Pupils complete Workbook p.46, Activity 2, by matching international food descriptions to the pictures. Teacher supports pupils with vocabulary.
+Groups of four read the texts from Student's Book p.58, match them to pictures and highlight specific details. Teacher supports pupils with vocabulary.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Ask each pupil to identify one main idea and two supporting details.
-**Pupils:** Locate and explain evidence from the reading text.
+**Teacher:** Direct pupils to Workbook p.46, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.46, Activity 2, by matching international food descriptions to the pictures.
 
 ## Closure (5 minutes)
 Pupils share one interesting fact about a dish.
