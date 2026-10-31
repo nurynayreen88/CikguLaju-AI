@@ -21,8 +21,10 @@
 **Pupils:** Describe two characters and identify details from a partner's description.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Direct pupils to Workbook p.8, Activity 1; explain the printed task, check individual answers and record evidence against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.8, Activity 1, to describe differences in characters' appearance using 'has got' and 'hasn't got'.
+**Teacher:** Listen to each pupil's two descriptions; ask two listening-detail questions and record evidence against both SPs.
+**Pupils:** Give individual descriptions and answer oral questions.
+
+**Workbook practice:** Pupils complete Workbook p.8, Activity 1, to describe differences in characters' appearance using 'has got' and 'hasn't got'. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Use the 'Before leaving' review activity referenced in Teacher's Book p.18.
