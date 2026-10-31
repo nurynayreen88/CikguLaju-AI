@@ -1,12 +1,17 @@
 name: Year4 audio checks
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - staging/english-year4-standalone-20261030
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   test:
-    if: github.ref == 'refs/heads/staging/english-year4-standalone-20261030'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python rph_standalone/english/year4/validate_audio_mapping.py
-      - run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_audio_mapping.py' -v
+      - name: Validate Year 4 audio source data
+        run: python rph_standalone/english/year4/validate_audio_mapping.py
+      - name: Run Year 4 audio regression tests
+        run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_audio_mapping.py' -v
