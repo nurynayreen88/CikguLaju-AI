@@ -25,6 +25,8 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
         raise ValueError("Invalid Telegram user ID")
     if isinstance(telegram_message_id, bool) or not str(telegram_message_id).isascii() or not str(telegram_message_id).isdigit():
         raise ValueError("Invalid Telegram message ID")
+    if not 0 < int(telegram_user_id) <= 9223372036854775807 or not 0 < int(telegram_message_id) <= 9223372036854775807:
+        raise ValueError("Telegram identifiers must fit positive bigint")
     try:
         amount = Decimal(str(amount_rm))
     except (InvalidOperation, ValueError, TypeError) as exc:
@@ -38,8 +40,8 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
         "status": "pending",
         "proof_received": True,
     }
-    # Read first for retries; a database uniqueness constraint is still required
-    # before this helper can safely handle concurrent duplicate submissions.
+    # Read first for retries; the existing database partial unique index
+    # prevents concurrent pending requests for the same user.
     existing = request("GET", f"pioneer_payment_requests?select=id,telegram_user_id,telegram_message_id,status,amount_rm&telegram_user_id=eq.{int(telegram_user_id)}&telegram_message_id=eq.{int(telegram_message_id)}&limit=2")
     if not isinstance(existing, list):
         raise RuntimeError("Cannot verify prior payment requests")
