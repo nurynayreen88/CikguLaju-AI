@@ -19,9 +19,6 @@
 **Pupils:** Choose a suitable title and justify it.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide pupils through Activity 2, ask for a supporting sentence from the text and review the superlative Grammar Box with examples.
-**Pupils:** Complete Activity 2 and practise superlatives.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.78, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.78, Activity 2; look at the sports picture and complete the sentences using the correct comparative or superlative forms.
 
