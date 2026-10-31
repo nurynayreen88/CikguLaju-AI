@@ -36,6 +36,12 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertEqual(status, "ready")
         self.assertIn("**Pupils:** Complete Workbook p.48, Activity 2.\n\n## Closure", updated)
 
+    def test_preserves_original_activity_and_closure(self):
+        updated, status = prepare(self.SAMPLE, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        self.assertEqual(updated.split("## Assessment / PBD")[0], self.SAMPLE.split("## Assessment / PBD")[0])
+        self.assertEqual(updated.split("## Closure")[1], self.SAMPLE.split("## Closure")[1])
+
     def test_repeat_application_is_idempotent(self):
         updated, _ = prepare(self.SAMPLE, 48, "Activity 2")
         again, status = prepare(updated, 48, "Activity 2")
