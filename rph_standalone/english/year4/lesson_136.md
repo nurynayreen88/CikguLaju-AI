@@ -22,8 +22,8 @@
 **Teacher:** Pairs compare answers and support them with text evidence.
 **Pupils:** Compare answers using text evidence.
 
-**Teacher:** Instruct pupils to complete Workbook p.82, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
-**Pupils:** Complete Workbook p.82, Activity 1; find the sports words in the word search.
+**Teacher:** Instruct pupils to complete Workbook p.83, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.83, Activity 1; find the sports words in the word search.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to report one fact about sports equipment and point to the sentence that supports it.
