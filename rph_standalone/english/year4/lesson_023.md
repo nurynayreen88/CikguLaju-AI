@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Model an opinion sentence with a reason, then organise group exchange of two written opinion strips and prompt polite agreement or disagreement.
-**Pupils:** Write opinion strips, guess authors and respond. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Write opinion strips, guess authors and respond. Pupils may complete a matching Workbook speaking activity about preferences, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to share a prediction about their school day and support it with a timetable detail.
