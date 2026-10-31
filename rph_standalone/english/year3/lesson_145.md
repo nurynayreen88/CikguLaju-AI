@@ -17,7 +17,7 @@ Teacher shows animal flashcards, elicits names and models descriptions using tal
 Pupils play the adjective guessing game in pairs. Teacher follows Student's Book p.95 Activity 1 with the song audio. Each pupil holds an animal flashcard, listens again and finds the partner animal mentioned in the song; pairs recall the comparison adjective.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.76, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess listening by saying comparative descriptions of animals and asking pupils to identify which animal is being described. Use Workbook p.76, Activity 1 (match animal pictures to comparative adjectives) afterward for vocabulary reinforcement, not as sole listening evidence.
 **Pupils:** Pupils complete Workbook p.76, Activity 1, by matching animal pictures to comparative adjectives.
 
 ## Closure (5 minutes)
