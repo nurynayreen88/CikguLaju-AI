@@ -19,9 +19,6 @@
 **Pupils:** Complete Activities 1–2 and infer unfamiliar words from context.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Ask two comprehension questions and require pupils to point to the supporting sentence in the text. Record who can identify a relevant detail and explain an unfamiliar word.
-**Pupils:** Find supporting details and explain comprehension answers.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.91, Activity 4 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.91, Activity 4; read the statements about germs and circle the correct answers.
 
