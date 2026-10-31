@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to explain one newly learned health word and use it in a meaningful sentence.
 **Pupils:** Explain a new word.
 
-**PBD:** Check dictionary lookup and text-supported answers to health reading questions (SP 3.2.2, 3.2.4).  
+**PBD:** Check pupils' answers supported by specific details in the health reading text for main Reading SP 3.2.2; assess appropriate use of a monolingual dictionary to check unfamiliar words for complementary Reading SP 3.2.4. CD2 Tracks 75 and 76 support the lesson but listening responses alone do not replace reading evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
