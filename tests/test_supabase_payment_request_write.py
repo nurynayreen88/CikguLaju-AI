@@ -52,6 +52,14 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
             create_payment_request(request, 1, 10, 2)
         self.assertEqual(calls, ["GET", "GET"])
 
+    def test_duplicate_same_message_requires_manual_reconciliation(self):
+        def request(method, path, **kwargs):
+            self.assertEqual(method, "GET")
+            row = {"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}
+            return [row, dict(row, id=42)]
+        with self.assertRaises(RuntimeError):
+            create_payment_request(request, 1, 10, 2)
+
     def test_existing_malformed_amount_is_rejected(self):
         def request(method, path, **kwargs):
             self.assertEqual(method, "GET")
