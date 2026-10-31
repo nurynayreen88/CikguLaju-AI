@@ -20,7 +20,8 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils complete the optional TB activity; teacher observes question comprehension and reasons.
-**Pupils:** Complete the optional speaking task and respond to questions. **Teacher:** Instruct pupils to complete Workbook p.12, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete the optional speaking task and respond to questions.
+**Teacher:** Instruct pupils to complete Workbook p.12, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
 **Pupils:** Complete Workbook p.12, Activity 1; read the school timetable and identify the subjects shown.
 
 ## Closure (5 minutes)
