@@ -26,7 +26,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Assess two relevant questions (SP 2.1.2) and two written object descriptions (SP 4.2.4). Record independent performance and support required.  
-**Pupils:** Demonstrate the skill individually. Pupils complete Workbook p.89, Activity 1, by reading the questions and answering them using the clothing pictures.
+**Pupils:** Demonstrate the skill individually.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two words and ask for a relevant sentence.  
