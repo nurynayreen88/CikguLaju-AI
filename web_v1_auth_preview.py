@@ -23,7 +23,7 @@ a{color:#0f766e}</style></head><body><main><h1>CikguLaju AI</h1>
 <div id="telegram-login"></div>
 <script async src="https://telegram.org/js/telegram-widget.js?22"
 data-telegram-login="{{ bot_username }}" data-size="large"
-data-auth-url="{{ callback_url }}" data-request-access="write"></script>
+data-auth-url="{{ callback_url }}"></script>
 <p class="muted">Pengesahan Telegram diperlukan. Tiada kata laluan baharu.</p>
 </main></body></html>"""
 
