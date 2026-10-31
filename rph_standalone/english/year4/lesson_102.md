@@ -19,8 +19,8 @@
 **Pupils:** Listen and identify details from the recording.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Give pairs a description frame and listen to each pair describe a person or object mentioned in the recording; record accuracy and clarity.
-**Pupils:** Describe people or objects from the listening.
+**Teacher:** Check the two details each pupil recorded from Student's Book p.73 Activity 4 against the spoken information, replaying Track 25 where necessary; record accuracy as the main Listening PBD evidence for SP 1.2.2. Then give pairs a description frame and assess their spoken descriptions separately for complementary Speaking SP 2.1.5.
+**Pupils:** Confirm and correct two details heard in the recording, then describe a person or object from the listening in pairs.
 
 
 
