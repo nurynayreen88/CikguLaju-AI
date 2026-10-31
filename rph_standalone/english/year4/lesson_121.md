@@ -19,9 +19,6 @@
 **Pupils:** Draw and describe an original dinosaur.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Give pupils a checklist for clear descriptions, relevant body-part vocabulary and punctuation. Organise partner feedback and allow time to revise one sentence.
-**Pupils:** Review a partner's dinosaur description.
-
 **Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.72, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.72, Activity 1; answer the reading questions about the Elephant Orphanage text.
 
