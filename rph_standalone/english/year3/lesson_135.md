@@ -16,8 +16,9 @@ Teacher models 'What did you do at the weekend?' and a suitable answer.
 Pupils interview classmates using SB p.87 Activity 4, repeat time phrases to sustain exchanges and peer-check their written past-tense sentences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Use the questions about children's past holiday activities in Workbook p.71, Activity 2 as prompts for pupils to ask and answer aloud in pairs. Assess their spoken past-tense responses before completing the printed written answers.
-**Pupils:** Pupils complete Workbook p.71, Activity 2, by answering questions about the children's past holiday activities.
+Teacher observes pupils asking and answering a weekend question, then checks one written past-tense sentence for spelling.
+
+**Workbook practice:** Pupils complete Workbook p.71, Activity 2, by answering questions about the children's past holiday activities. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share a partner's answer.
