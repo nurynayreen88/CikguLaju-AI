@@ -19,8 +19,8 @@
 **Pupils:** Listen for food words and answer short questions about details heard.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.44, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.44, Activity 1, by writing food words in the picture crossword.
+**Teacher:** Check the listening objective using short oral questions about the food words heard in the Student's Book task. Then use Workbook p.44, Activity 1 (Look and write) as a separate vocabulary crossword follow-up, not as evidence of listening comprehension.
+**Pupils:** Answer questions about food words heard, then complete the picture crossword in Workbook p.44, Activity 1.
 
 ## Closure (5 minutes)
 **Teacher:** Review two new food words and invite a final response.
