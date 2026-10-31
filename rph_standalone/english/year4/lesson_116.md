@@ -22,7 +22,7 @@
 **Teacher:** Organise a clue-card exchange, ask groups to justify their guesses and guide revisions for spelling and clarity.
 **Pupils:** Guess animals from clues and correct spelling.
 
-**Teacher:** Instruct pupils to complete Workbook p.69, Activity 1 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.69, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.69, Activity 1; complete the comparative sentences about animals.
 
 ## Closure (5 minutes)
