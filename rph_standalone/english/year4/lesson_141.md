@@ -22,7 +22,7 @@
 **Teacher:** Guide the TB after-reading task and ask pupils to locate a sentence supporting one answer about Part Two.
 **Pupils:** Locate story details to justify answers.
 
-Pupils practise reading for details in the sports story using a suitable Workbook activity, where available; teacher checks comprehension.
+
 
 ## Closure (5 minutes)
 **Teacher:** Organise pairs to share opinions about Part Two and support each opinion with a story detail.
