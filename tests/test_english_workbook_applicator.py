@@ -59,6 +59,15 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertEqual(status, "ready")
         self.assertIn("Workbook p.48", updated)
 
+    def test_reinforcement_pbd_heading_is_supported(self):
+        original = self.SAMPLE.replace(
+            "## Assessment / PBD", "## Reinforcement / PBD"
+        )
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        self.assertIn("Workbook p.48, Activity 2", updated)
+        self.assertIn("Existing closure remains unchanged.", updated)
+
     def test_no_assessment_means_no_change(self):
         updated, status = prepare("# Lesson\n## Activity 1\nText\n", 48, "Activity 2")
         self.assertIsNone(updated)
