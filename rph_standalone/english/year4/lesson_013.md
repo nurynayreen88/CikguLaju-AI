@@ -21,7 +21,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model finding one supporting detail in the email, then ask pairs to locate three details and justify answers using the text.
-**Pupils:** Find three personal details in the email and show the evidence. Pupils may complete a matching Workbook reading activity about personal emails, if available; teacher checks comprehension.
+**Pupils:** Find three personal details in the email and show the evidence. The teacher checks pupils' identification of three details with evidence from the email for main Reading SP 3.2.1. No Workbook activity is assigned until its printed page and task are verified.
 
 ## Closure (5 minutes)
 **Teacher:** Review email purpose; remind pupils to bring or draw a sports picture next lesson.
