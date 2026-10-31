@@ -270,3 +270,7 @@ Compared all 14 verified lesson mappings to the complete 220-file Drive manifest
 ## Read-only staging audio resolver (31 October 2026)
 
 Added `resolve_audio_assets.py`, which joins the verified lesson map to the 220-file manifest using exact `disc + track` keys. For each verified lesson it returns Year 4, lesson number, disc, track, original Drive file ID, Drive view URL and explicit `metadata_only` / `delivery_tested: false` flags. Unverified lessons resolve to an empty list, never a guessed track. This is an offline QA helper and **is not wired into the Telegram bot**. The manifest/mapping data were cross-checked again: 88/88/44 source tracks, 14 mapped lessons, 20 uses, zero missing referenced files. Do not treat these Drive view URLs as tested user downloads.
+
+## Offline regression test file (31 October 2026)
+
+Added `test_audio_mapping.py` (Python unittest) covering verified lesson lookup, CD1 versus CD2 Track 29 isolation, CD2 Track 21 reuse across Lessons 097/098, empty results for unverified Lessons 001/160, and invalid lesson input rejection. This test file was committed to staging but **has not yet been executed in CI**; do not report tests passing without an actual run. It does not test audio playback, permissions, Telegram delivery or Word/PDF output.
