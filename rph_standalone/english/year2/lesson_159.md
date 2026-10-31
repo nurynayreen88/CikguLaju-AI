@@ -23,8 +23,10 @@
 **Pupils:** Write three sentences and correct capital letters and full stops.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Direct pupils to Workbook p.103, Activity 1; explain the drawing and labelling task, check each pupil's work and record achievement against the lesson objectives.
-**Pupils:** Complete Workbook p.103, Activity 1, by drawing and labelling a robot's abilities.
+**Teacher (10 min):** Score three independently written robot sentences (0–3) and two unseen capital-letter/full-stop corrections (0–2); record prompting separately and do not count copying the model as independent writing.
+**Pupils:** Provide individual evidence.
+
+**Workbook practice:** Pupils complete Workbook p.103, Activity 1, by drawing and labelling a robot's abilities. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful expression.
