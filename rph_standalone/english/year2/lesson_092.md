@@ -24,11 +24,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give pairs different action cards. Pupils ask and answer three questions using can/cannot and identify two details from spoken robot sentences.
-**Pupils:** Describe three actions and respond to two instructions. Pupils complete Workbook p.97, Activity 1, by listening and ticking the correct pictures of people's abilities.
+**Pupils:** Describe three actions and respond to two instructions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three ability exchanges (SP 2.1.4) and two listening-detail responses (SP 1.2.2).
-**Pupils:** Demonstrate speaking individually.
+**Pupils:** Demonstrate speaking individually. Pupils complete Workbook p.97, Activity 1, by listening and ticking the correct pictures of people's abilities.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review clear pronunciation and turn-taking.
