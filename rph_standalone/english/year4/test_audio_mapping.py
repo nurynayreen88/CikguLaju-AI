@@ -29,6 +29,12 @@ class AudioResolverTests(unittest.TestCase):
         y = next(v for v in b if v["track"] == 21)
         self.assertEqual(x["drive_file_id"], y["drive_file_id"])
 
+    def test_teacher_book_page_provenance(self):
+        import json
+        mapping = json.loads((HERE / "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(mapping["teacher_book_page_by_lesson"]), set(mapping["lessons"]))
+        self.assertTrue(all(isinstance(page, int) and page > 0 for page in mapping["teacher_book_page_by_lesson"].values()))
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
