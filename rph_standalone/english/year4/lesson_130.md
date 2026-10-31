@@ -19,10 +19,7 @@
 **Pupils:** Survey classmates about sports preferences.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Invite pupils to summarise their survey findings and ask one follow-up question; note whether questions and responses are understandable.
-**Pupils:** Summarise the survey results.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.77, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.77, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.77, Activity 2; read the sentences and circle the correct descriptions of sports.
 
 ## Closure (5 minutes)
