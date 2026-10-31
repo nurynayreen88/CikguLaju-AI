@@ -22,7 +22,8 @@
 **Teacher:** Model legible cursive letter formation, then guide pupils to write and present their safety rules.
 **Pupils:** Write rules in cursive and present them.
 
-Pupils use Workbook printed p.50, Unit 6 road-safety picture, to write simple positive and negative safety rules.
+**Teacher:** Instruct pupils to complete Workbook p.50, the road-safety task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.50, the road-safety task; write positive and negative road-safety rules.
 
 ## Closure (5 minutes)
 **Teacher:** Show safety flashcards and ask pupils to classify each action as safe or unsafe, giving one reason.
