@@ -15,9 +15,10 @@ Teacher invites pupils to do two minutes of safe exercise, elicits actions such 
 ## Activity 2 — Reading (25 minutes)
 Pupils read short texts and match each one to a child. Teacher guides Student's Book p.28 Activity 1 and the Grammar Box and Activity 2 on pp.28–29.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.20, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.20, Activity 2, by writing positive and negative present continuous sentences about sports.
+## PBD (10 minutes)
+Teacher checks the main idea and two details from each text, noting pupils who need extra support.
+
+**Workbook practice:** Pupils complete Workbook p.20, Activity 2, by writing positive and negative present continuous sentences about sports. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils share one activity a child is or is not doing.
