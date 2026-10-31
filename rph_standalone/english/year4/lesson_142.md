@@ -22,7 +22,7 @@
 **Teacher:** Ask pupils to write their descriptions from the planning questions and check for clear clues, connected sentences and punctuation.
 **Pupils:** Write and check a short description.
 
-**Teacher:** Instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.81, Activity 2; write a short paragraph about a favourite athlete using the information in Activity 1.
 
 ## Closure (5 minutes)
