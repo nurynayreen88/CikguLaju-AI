@@ -13,7 +13,7 @@ Teacher reviews adjectives for describing experiences.
 Teacher introduces circus and amusement park pictures. Pupils discuss whether they have visited these places.
 
 ## Activity 2 (25 minutes)
-Pupils predict which places and adjectives match the characters in Student's Book p.80 Activity 1. Teacher reads the listening sentences; pupils check their predictions, then practise the dialogue in pairs and repeat key words to keep the exchange going.
+Pupils predict which places and adjectives match the characters in Student's Book p.80 Activity 1. Teacher reads the listening sentences; pupils check their predictions, then practise the dialogue in pairs and repeat key words to keep the exchange going. Pupils complete Workbook p.63, Activity 1, by writing adjectives to describe places in the past.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks pupils to identify two details from the listening and demonstrate a phrase for asking clarification.
