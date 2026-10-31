@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Discuss answers and follow TB Activity 2 with Track 47.
-**Pupils:** Check answers with Track 47 and Activity 2. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Check answers with Track 47 and Activity 2. Pupils may complete a matching Workbook activity on past events, if available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Lead a vocabulary review game and check pupils' use of two words from the Egypt text.
