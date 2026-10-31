@@ -22,7 +22,8 @@
 **Teacher:** Guide Activity 2 and ask groups to report a partner's sports preference using evidence from their interview notes.
 **Pupils:** Describe a partner's preferences in groups.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.80, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.80, Activity 2; look at the sports picture and complete sentences using very good at, good at or not good at.
 
 ## Closure (5 minutes)
 **Teacher:** Facilitate the TB optional review and invite pupils to share a conclusion from their interviews.
