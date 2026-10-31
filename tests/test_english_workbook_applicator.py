@@ -35,8 +35,8 @@ class WorkbookApplicatorTests(unittest.TestCase):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
         self.assertIn(
-            "**Pupils:** Perform a short exchange.\\n\\n"
-            "**Teacher:** Guide pupils to complete Workbook p.48, Activity 2, and check their answers.\\n"
+            "**Pupils:** Perform a short exchange.\n\n"
+            "**Teacher:** Guide pupils to complete Workbook p.48, Activity 2, and check their answers.\n"
             "## Closure",
             updated,
         )
