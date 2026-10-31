@@ -35,7 +35,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
     def test_workbook_addition_ends_before_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
-        self.assertIn("Teacher checks answers and provides guidance.\\n\\n## Closure", updated)
+        self.assertIn("Teacher checks answers and provides guidance.\n\n## Closure", updated)
 
     def test_preserves_original_activity_and_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
