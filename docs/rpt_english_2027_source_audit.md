@@ -21,3 +21,11 @@ Sumber utama: Google Sheet `CikguLaju_English_Primary_Y4_Y6_DB_READY_CORRECTED_2
 6. Format keluaran: Word A4 landskap, muka depan, kumpulan A/B mengikut negeri, susunan lesson, kolum tarikh cadangan/lesson/focus/topic/CS/LS/rujukan/catatan. Cuti dan risiko minggu kosong PdP dipaparkan tanpa mengubah lesson asal.
 7. Semak Year 2 dan Year 3 daripada SOW dan pemetaan berasingan sebelum membina RPT; jangan gunakan Year 4–6 sebagai templat kandungan.
 8. Status **STAGING** sehingga dokumen Word dijana, disemak dengan SOW dan takwim, serta diuji melalui bot. Tiada perubahan pangkalan data atau deploy daripada dokumen ini.
+
+## Audit sumber Tahun 3 (31 Oktober 2026)
+
+- Google Sheet `CikguLaju_English_Primary_Year3_STAGING_20260921`, tab `YEAR3_STAGING` (ID `1xzRM71yAZDM0ZgW_457RVtAixQ27kit7RiGaG0WASPY`) mempunyai 10 kelompok unit: L1–16 Welcome!, L17–32 Every Day, L33–48 Right Now, L49–64 Year in, Year Out, L65–80 My New House, L81–96 Food, Please!, L97–112 Out and About, L113–128 Where Were You Yesterday?, L129–144 On Holiday, L145–160 The World Around Us.
+- Tab yang sama mengandungi pemetaan lesson individu 1–160 (160 nombor unik), dengan status 99 `VERIFIED_AUDIO` dan 61 `VERIFIED_SOW` pada bahagian pemetaan individu. Status `VERIFIED_AUDIO` tidak dengan sendirinya membuktikan semua SK/SP telah disahkan.
+- Class CD1 99 track, CD2 91, CD3 11; nombor lesson **bukan** nombor track. Jangan reka atau kira audio daripada lesson.
+- RPT Tahun 3 hendaklah mengambil baris lesson individu, bukan 10 baris ringkasan kelompok. Baris ringkasan Unit 10 Lesson 158 turut wujud; jangan gandakan lesson 158.
+- Beberapa catatan sumber masih menyatakan semakan butiran belum lengkap (contoh L114, L125, L126). Kekalkan status STAGING bagi padanan yang belum diluluskan.
