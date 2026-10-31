@@ -31,6 +31,12 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
             return [{"id": 302, "telegram_user_id": data["telegram_user_id"], "telegram_message_id": data["telegram_message_id"], "status": "pending"}]
         self.assertEqual(create_payment_request(request, 1, "10.000", 2), 302)
 
+    def test_rejects_tiny_nonzero_fraction_without_writing(self):
+        def fail_request(*args, **kwargs):
+            self.fail("Unexpected database request")
+        with self.assertRaises(ValueError):
+            create_payment_request(fail_request, 1, "0." + "0" * 200 + "1", 2)
+
     def test_rejects_invalid_inputs_without_writing(self):
         def fail_request(*args, **kwargs):
             self.fail("Unexpected write")
