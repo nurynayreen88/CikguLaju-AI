@@ -25,3 +25,15 @@ The normal file-content endpoint returned empty content, but the Git blob endpoi
 6. Source-level SQLite confirmation does not establish the active production file contents, persistence, concurrency, or backup configuration.
 
 Next: trace the actual standalone lesson lookup and PDF/DOCX generation flow, then implement a read-only catalog adapter with exact verified SQL and integration tests.
+
+
+## Critical correction: live credit accounting is Supabase-backed
+Further inspection of the same source blob confirms that `_ensure_user_credit(cid)` queries `cikgulaju_users` through `_sb_request` and that `_consume_generation_credit(cid,s)` calls Supabase RPC `cikgulaju_consume_credits`. Local SQLite `user_credits` is referenced by `_legacy_local_credit` for one-time migration, not as a safe runtime balance source. The web must never read SQLite `user_credits` to show an authoritative balance or decrement it. The exact live deployment configuration remains unverified.
+
+The source also contains `_eng_verified_teacher_rph_text(s)`, `_local_rph_text(s)`, and `_apply_textbook_page_lesson_context(s,...)`. The latter reads verified `textbook_page_lesson_map` rows. These are candidate integration points, not yet an approved standalone lesson generator API.
+
+Next steps:
+- Verify the deployed code revision and actual Supabase credit/entitlement behavior read-only.
+- Identify the authoritative standalone RPH lesson record and exact PDF/DOCX builder call path.
+- Build a shared server-side facade; authenticate web sessions and verify Telegram account ownership.
+- Use the existing atomic credit RPC; do not debit for failed generations or duplicate requests.
