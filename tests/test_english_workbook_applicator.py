@@ -137,7 +137,7 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
     def test_lesson_151_uses_verified_personal_questions_on_page_79(self):
         pbd = self.pbd(self.lesson(151))
         self.assertIn("Workbook p.79, Activity 2", pbd)
-        self.assertIn("answer about yourself", pbd)
+        self.assertIn("written answers about themselves", pbd)
         self.assertNotIn("choosing the correct comparative adjectives", pbd)
 
     def test_lesson_156_uses_superlative_personal_questions(self):
