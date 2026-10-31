@@ -29,7 +29,7 @@
 **Teacher:** Invite pupils to explain one inferred song-word meaning and pronounce a word containing the target /eə/ sound.
 **Pupils:** Explain one inferred word and pronounce one /eə/ example.
 
-**PBD:** Observe contextual inference and sound recognition against SP 1.3.1 and 1.1.1.  
+**PBD:** Assess pupils' inference of unfamiliar words from the spoken song or listening context for main Listening SP 1.3.1, and recognition of the /eə/ sound in heard words for complementary Listening SP 1.1.1. Workbook p.39 is written vocabulary practice, not listening evidence.  
 **Differentiation:** Use picture prompts, repeated listening and peer support.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** p.39, Activity 1; assessment follow-up.
