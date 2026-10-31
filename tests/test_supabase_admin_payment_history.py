@@ -83,6 +83,12 @@ class PaymentHistoryTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     fetch_admin_payment_history(lambda *_: [], limit=limit)
 
+    def test_boolean_limit_is_rejected(self):
+        for limit in (True, False):
+            with self.subTest(limit=limit):
+                with self.assertRaises(ValueError):
+                    fetch_admin_payment_history(lambda *_: [], limit=limit)
+
     def test_limit_validation(self):
         with self.assertRaises(ValueError):
             fetch_admin_payment_history(lambda *_: [], limit=1001)
