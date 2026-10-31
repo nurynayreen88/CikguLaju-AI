@@ -1,5 +1,8 @@
 """Unit tests for Supabase admin history reader (no live DB writes)."""
 import unittest
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from supabase_admin_payment_history import fetch_admin_payment_history
 
 
