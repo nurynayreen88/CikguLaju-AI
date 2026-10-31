@@ -28,7 +28,7 @@ Pupils review their home-safety poster instructions against the lesson success c
 **Teacher:** Guide end-of-year self-assessment and help pupils choose one language skill to practise next.
 **Pupils:** Complete an end-of-year self-assessment.
 
-**PBD:** Assess safety posters for understandable instructions, accurate punctuation and clarity of group explanations (SP 4.3.3, 2.2.2).  
+**PBD:** Assess the organisation, clarity and punctuation of pupils' written home-safety posters for main Writing SP 4.3.3; observe pupils' use of suitable clarification during spoken group explanations for complementary Speaking SP 2.2.2. Do not count the poster alone as evidence of the Speaking standard.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
