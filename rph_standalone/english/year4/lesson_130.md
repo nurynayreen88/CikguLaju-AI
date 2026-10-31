@@ -22,7 +22,8 @@
 **Teacher:** Invite pupils to summarise their survey findings and ask one follow-up question; note whether questions and responses are understandable.
 **Pupils:** Summarise the survey results.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.77, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.77, Activity 2; read the sentences and circle the correct descriptions of sports.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to state a sports preference and give a supporting reason.
