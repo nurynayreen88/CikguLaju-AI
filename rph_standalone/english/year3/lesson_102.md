@@ -13,7 +13,7 @@ Pupils review animal word cards from Lesson 100.
 Teacher gives animal clues such as 'I'm big and I give you milk'. Pupils listen and identify the animal.
 
 ## Activity 2 (25 minutes)
-Teacher guides Activity 3. Pupils listen for animal details, then write two short sentences using 'They'.
+Teacher guides Activity 3. Pupils listen for animal details, then write two short sentences using 'They'. Pupils complete Workbook p.53, Activity 2, by writing sentences about the farm animals in the picture.
 
 ## Assessment / PBD (10 minutes)
 Teacher gives two animal clues and checks each pupil's identification. Pupils submit two short sentences using 'They' for spelling and clarity checks.
