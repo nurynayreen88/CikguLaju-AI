@@ -25,8 +25,10 @@
 **Pupils:** Complete the activity and improve responses after feedback.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.88, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.88, Activity 1, by reading the clothing poem and colouring the picture.
+**Teacher:** Check five detail answers and two demonstrated instances of rereading to clarify meaning (SP 3.2.3(i)). Record independent performance and support required.  
+**Pupils:** Demonstrate the skill individually.
+
+**Workbook practice:** Pupils complete Workbook p.88, Activity 1, by reading the clothing poem and colouring the picture. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two words and ask for a relevant sentence.  
