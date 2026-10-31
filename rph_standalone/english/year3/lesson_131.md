@@ -13,10 +13,11 @@ Teacher shows a forest picture and asks pupils what they might do there.
 Pupils predict a forest-trip story using the illustrations.
 
 ## Activity 2 (25 minutes)
-Pairs use A/B worksheets and a dictionary to explore forest-story words, drawing their meanings. Pupils then find the words in the story, compare drawings with another pair and read along while listening to the story recording. Pupils complete Workbook p.69, Activity 1, by writing the correct past-tense action words beside the pictures.
+Pairs use A/B worksheets and a dictionary to explore forest-story words, drawing their meanings. Pupils then find the words in the story, compare drawings with another pair and read along while listening to the story recording.
 
 ## Assessment / PBD (10 minutes)
-Pupils explain one forest word using story clues, then confirm its meaning with a dictionary.
+**Teacher:** Direct pupils to Workbook p.69, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.69, Activity 1, by writing the correct past-tense action words beside the pictures.
 
 ## Closure (5 minutes)
 Pupils share one new forest word.
