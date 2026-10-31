@@ -31,3 +31,13 @@ Status: staging only. No production deployment or database migration authorized.
 - Obtain reliable repository tree / file sizes and inspect actual application entrypoint.
 - Compare deployed Render configuration with GitHub; do not expose secrets.
 - Write an API inventory and data-flow map before implementation.
+
+## Verified Render production (2026-11-01 read-only)
+- Workspace confirmed by owner: Nuryn Ayreen's workspace (`tea-daft3g2d0e5s73dtig1g`).
+- Service `CikguLaju-AI` (`srv-dah3b8lbedkc738ugqt0`), source `nurynayreen88/CikguLaju-AI`, branch `main`.
+- Auto deploy enabled for commits on main. Pull-request previews disabled.
+- Python runtime; build `bash build_jawi.sh`; start `gunicorn app:app`; region Oregon; one instance; 0.5 CPU / 512 MB.
+- Latest observed deployment `dep-dbir7tbbc2fs73cp3ej0` LIVE, commit `2d8f03450c16550f708a3b41224d095d3faa61fc` (Telegram Malaysia time fix, 2026-10-31).
+- `build_jawi.sh` installs dependencies, provisions and verifies Jawi fonts, installs fallback and priority handling, then runs `python -m py_compile app.py`. Preserve this pipeline unchanged.
+- Render settings and deployment were inspected read-only; no environment variables or secrets fetched, no production changes.
+- Important: `app.py` fetch returned empty content despite successful build's compilation step; investigate through reliable source inspection before implementation.
