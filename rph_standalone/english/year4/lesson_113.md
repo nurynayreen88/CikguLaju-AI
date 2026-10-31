@@ -19,10 +19,7 @@
 **Pupils:** Listen to animal questions and infer unknown words.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher:** Ask pupils to answer the animal questions and explain their choices using picture or language clues.
-**Pupils:** Answer questions and justify choices.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.68, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.68, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.68, Activity 1; complete the animal crossword using the picture clues.
 
 ## Closure (5 minutes)
