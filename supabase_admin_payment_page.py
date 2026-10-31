@@ -6,6 +6,7 @@ _sb_request, send). Return immediately. This avoids reading the ephemeral
 SQLite payment_requests table. The app's existing handler must be edited and
 tested separately before this is live.
 """
+import html
 from supabase_admin_payment_history import fetch_admin_payment_history
 
 
@@ -29,7 +30,7 @@ def show_admin_payment_history(cid, page, request, send):
         kind = row["kind"]
         if not row["is_receipt"]:
             kind = "Rakan Pembangun (kelulusan akses, bukan resit)"
-        lines.append(f"• {kind}: {money} | {row['status']} | ID {uid[-6:]}")
+        lines.append(f"• {html.escape(str(kind))}: {html.escape(money)} | {html.escape(str(row['status']))} | ID {html.escape(uid[-6:])}")
         if uid.isdigit():
             buttons.append([{"text": f"👤 ID {uid[-6:]}", "callback_data": f"admin_user|{uid}"}])
     if not selected:
