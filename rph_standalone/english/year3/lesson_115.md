@@ -13,10 +13,11 @@ Teacher reviews familiar place words.
 Teacher introduces adjectives with flashcards and mimes responses to funny, scary and boring.
 
 ## Activity 2 (25 minutes)
-Teacher introduces film and popcorn and asks pupils to predict suitable adjectives. Pupils read the cinema story quietly on p.76 to check predictions, answer questions in Activity 1 and identify its main idea.  Pupils complete Workbook p.61, Activity 1, by writing past-tense sentences with 'was' and 'were'. Teacher then guides Grammar Box on p.77 (Teacher's Book p.119).
+Teacher introduces film and popcorn and asks pupils to predict suitable adjectives. Pupils read the cinema story quietly on p.76 to check predictions, answer questions in Activity 1 and identify its main idea.  Teacher then guides Grammar Box on p.77 (Teacher's Book p.119).
 
 ## Assessment / PBD (10 minutes)
-Teacher asks each pupil to state the cinema story's main idea and answer two supported questions using details from the text. Pupils point to evidence.
+**Teacher:** Direct pupils to Workbook p.61, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.61, Activity 1, by writing past-tense sentences with 'was' and 'were'.
 
 ## Closure (5 minutes)
 Pupils use one adjective in a sentence.
