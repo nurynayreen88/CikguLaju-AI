@@ -15,7 +15,7 @@
 **Pupils:** Listen and repeat vocabulary.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Play CD2 Track 78 for Activities 3–4, pause to check key home-safety details and ask pupils to explain their answers.
+**Teacher:** Use SB Activity 3 to prepare pupils, then play CD2 Track 78 for Activity 4; pause to check key home-safety details and ask pupils to explain their answers.
 **Pupils:** Complete listening tasks.
 
 ## Reinforcement / PBD (10 minutes)
