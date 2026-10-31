@@ -23,6 +23,15 @@ class PaymentHistoryTests(unittest.TestCase):
         self.assertFalse(rows[1]["is_receipt"])
         self.assertIsNone(rows[1]["amount_rm"])
 
+    def test_pending_and_failed_are_not_receipts(self):
+        statuses = ["pending", "failed", "rejected", "paid"]
+        def request(method, path):
+            if path.startswith("payments?"):
+                return [{"telegram_user_id": 11, "status": status, "created_at": "2026-10-31"} for status in statuses]
+            return []
+        rows = fetch_admin_payment_history(request)
+        self.assertEqual([row["is_receipt"] for row in rows], [False, False, False, True])
+
     def test_fail_closed_on_bad_response(self):
         with self.assertRaises(RuntimeError):
             fetch_admin_payment_history(lambda *_: None)
