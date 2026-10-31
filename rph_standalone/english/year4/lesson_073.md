@@ -22,7 +22,7 @@
 **Teacher action:** Model a sentence with enough and but, then guide pupils to describe yesterday's eating habits in writing.
 **Pupil action:** Write sentences with enough and but about yesterday's habits.
 
-Pupils practise writing about healthy eating using a suitable Workbook activity, where available; teacher checks sentence accuracy.
+Pupils use Workbook p.43 (healthy-eating diary project) for optional writing practice; teacher checks sentence accuracy.
 
 ## Closure (5 minutes)
 **Teacher action:** Ask pupils to compare their draft and revised sentences and explain one improvement.
