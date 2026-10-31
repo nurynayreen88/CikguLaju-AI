@@ -23,7 +23,7 @@
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Check individual listening answers, model stress in country and nationality words, and lead focused repetition of commonly mispronounced examples.
-**Pupils:** Correct individual listening responses and repeat difficult stress patterns. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Correct individual listening responses and repeat difficult stress patterns. Pupils may complete a matching Workbook listening activity, if available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Display a country-name card and ask pupils to supply its nationality adjective, correcting word stress where needed.
