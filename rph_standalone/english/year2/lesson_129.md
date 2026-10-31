@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give pupils the complete Mia passage. Ask five factual prompts: Who is at the beach? (Mia); Who is with Mia? (Dad); Where are they? (the beach); What colour is the bucket? (red); What colour is the spade? (blue). Then ask both supplied oral questions about shells and location.
-**Pupils:** Locate printed facts and give two personal statements. Pupils complete Workbook p.109, Activity 1, by listening and ticking the correct beach pictures.
+**Pupils:** Locate printed facts and give two personal statements.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score five factual responses (0–5) and two oral answers (0–2) against the passage and key; record independent accuracy and support required.
-**Pupils:** Submit individual evidence.
+**Pupils:** Submit individual evidence. Pupils complete Workbook p.109, Activity 1, by listening and ticking the correct beach pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach word.
