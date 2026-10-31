@@ -22,7 +22,8 @@
 **Teacher:** Invite pupils to present their models and explain the process using First, Second and Next in sequence.
 **Pupils:** Present the model using First, Second and Next.
 
-Pupils use Workbook printed p.56, Unit 6 'Revision', to prepare short spoken comparisons about journeys and transport.
+**Teacher:** Instruct pupils to complete Workbook p.56, the Unit 6 revision task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.56, the Unit 6 revision task; review the transport prompts and give short comparisons.
 
 ## Closure (5 minutes)
 **Teacher:** Elicit action verbs used during model construction and ask pupils to use one in a sequence sentence.
