@@ -16,8 +16,9 @@ Pairs write five plural animal names on cards and check spelling.
 Teacher names an adjective. Pairs order their animal cards and explain comparisons aloud. Pupils then complete Student's Book p.97 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess listening by asking pupils to identify comparison details from spoken descriptions of animals and planets. Use Workbook p.78, Activity 2 (listen and number the three monsters) only with its matching recording; assess listening responses directly.
-**Pupils:** If the matching recording is verified and available, listen and number the three monsters in Workbook p.78, Activity 2. Otherwise, respond to the teacher's spoken comparison descriptions for listening assessment; do not treat the Workbook audio task as completed.
+Teacher asks pupils to order animal cards after hearing two adjectives and explain one comparison.
+
+**Workbook practice:** If the matching recording is verified and available, listen and number the three monsters in Workbook p.78, Activity 2. Otherwise, respond to the teacher's spoken comparison descriptions for listening assessment; do not treat the Workbook audio task as completed. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils give one comparison.
