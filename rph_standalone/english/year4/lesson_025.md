@@ -19,10 +19,10 @@
 **Pupils:** Punctuate the model and draft a have to paragraph.
 
 ## PBD and reinforcement (10 minutes)
-**Teacher:** Provide a peer-edit checklist for punctuation and meaning, then organise pairs to review and revise their paragraphs.
+**Teacher:** Provide a peer-edit checklist for punctuation and meaning, then organise pairs to review and revise their paragraphs. Assess the revised household-chores paragraph for main Writing SP 4.3.3 and complementary Writing SP 4.3.1; the Workbook survey chart is supplementary practice, not a substitute for the written paragraph.
 **Pupils:** Exchange drafts, check punctuation and rewrite.
-**Teacher:** Instruct pupils to complete Workbook p.14, Project Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
-**Pupils:** Complete Workbook p.14, Project Activity 1; complete the household-chores survey chart.
+**Teacher:** Instruct pupils to complete Workbook p.14, Project Activity 1 according to the printed instructions. Check the household-chores survey chart and guide pupils to use relevant findings in their paragraph.
+**Pupils:** Complete Workbook p.14, Project Activity 1; complete the household-chores survey chart and use a relevant detail when revising the paragraph.
 
 ## Closure (5 minutes)
 **Teacher:** Pupils identify one improvement made after feedback.
