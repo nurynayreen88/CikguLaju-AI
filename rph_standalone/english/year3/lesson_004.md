@@ -17,9 +17,10 @@
 ## Activity 2 — Core lesson task (25 minutes)
 **Teacher:** Model sentences about family using have got; pupils draw their family and write descriptive sentences with supported cursive practice; display work and play a family guessing game. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.6, Activity 2; explain the task, check individual responses and record evidence against the lesson objectives.
-**Pupils:** Pupils complete the family drawing-and-writing task in Workbook p.6, Activity 2, using sentences about their family.
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Review descriptions and cursive handwriting; include learning diary reflection. **Pupils:** Submit two family sentences and demonstrate readable cursive letters; correct one error after feedback.
+
+**Workbook practice:** Pupils complete the family drawing-and-writing task in Workbook p.6, Activity 2, using sentences about their family. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Discuss neat writing and a useful family description. **Pupils:** Summarise one thing learned.
