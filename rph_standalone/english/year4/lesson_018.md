@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Pupils complete the optional TB activity; teacher observes question comprehension and reasons.
-**Pupils:** Complete the optional speaking task and respond to questions. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Complete the optional speaking task and respond to questions. Pupils may complete a matching Workbook speaking activity about weekly routines, if available; teacher checks their responses.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pairs to report a favourite subject using because to explain the choice.
