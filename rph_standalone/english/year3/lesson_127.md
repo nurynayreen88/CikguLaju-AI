@@ -13,7 +13,7 @@ Teacher leads a word sort for circus, restaurant and cinema.
 Teacher previews the story using pictures and adjectives such as funny, delicious and boring.
 
 ## Activity 2 (25 minutes)
-Pupils read the weekend story and vote on whose weekend was best. They infer unfamiliar words from pictures, answer the reading questions, discuss the story's value and take part in the Press Conference game from Teacher's Book p.127.
+Pupils read the weekend story and vote on whose weekend was best. Pupils complete Workbook p.65, Activity 1, by matching characters to the places they visited at the weekend. They infer unfamiliar words from pictures, answer the reading questions, discuss the story's value and take part in the Press Conference game from Teacher's Book p.127.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks pupils to explain their favourite weekend scene and infer one word meaning from a picture or sentence clue.
