@@ -16,7 +16,7 @@ Teacher models 'Where were you yesterday?', 'When were you there?' and 'How was 
 Pupils write the three interview questions and their own answers on the worksheet, then interview at least two classmates without showing their sheets. Groups use the word cards from Lesson 118 for another question-and-answer game.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.63, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use the questions about where pupils were yesterday in Workbook p.63, Activity 2 as prompts for spoken pair exchanges. Assess clarity and appropriate use of 'was' and 'were' in oral responses before pupils write their answers.
 **Pupils:** Pupils complete Workbook p.63, Activity 2, by answering questions about where they were yesterday.
 
 ## Closure (5 minutes)
