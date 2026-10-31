@@ -39,6 +39,42 @@ def audit():
         }
     return report
 
+def validate_review_csv(csv_path):
+    """Validate human-verified mapping rows without editing lesson plans."""
+    issues = []
+    verified = []
+    seen = set()
+    with Path(csv_path).open(newline="", encoding="utf-8-sig") as stream:
+        reader = csv.DictReader(stream)
+        required = {"year", "lesson", "status", "verified_workbook_page",
+                    "verified_activity", "source_evidence"}
+        if not required.issubset(set(reader.fieldnames or [])):
+            raise ValueError("Missing required review CSV columns")
+        for row_no, row in enumerate(reader, 2):
+            try:
+                year, lesson = int(row["year"]), int(row["lesson"])
+            except (ValueError, TypeError):
+                issues.append(f"Row {row_no}: invalid year or lesson")
+                continue
+            key = (year, lesson)
+            if year not in (2, 3) or not 1 <= lesson <= 160 or key in seen:
+                issues.append(f"Row {row_no}: out-of-range or duplicate lesson")
+                continue
+            seen.add(key)
+            page = (row["verified_workbook_page"] or "").strip()
+            activity = (row["verified_activity"] or "").strip()
+            evidence = (row["source_evidence"] or "").strip()
+            if not any((page, activity, evidence)):
+                continue
+            if not (page.isdigit() and int(page) > 0 and activity and evidence):
+                issues.append(f"Row {row_no}: page, activity and source evidence all required")
+                continue
+            verified.append({"year": year, "lesson": lesson,
+                             "page": int(page), "activity": activity,
+                             "evidence": evidence})
+    return verified, issues
+
+
 def review_rows(report):
     """Generate a review queue, not invented Workbook mappings."""
     for year in (2, 3):
@@ -58,8 +94,16 @@ def review_rows(report):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--review-csv", help="Write a review queue CSV; never edits RPH files")
+    parser.add_argument("--validate-csv", help="Validate completed review CSV without editing RPH files")
     args = parser.parse_args()
     report = audit()
+    if args.validate_csv:
+        verified, issues = validate_review_csv(args.validate_csv)
+        print(f"Verified mapping rows: {len(verified)}; issues: {len(issues)}")
+        for issue in issues:
+            print(issue)
+        if issues:
+            raise SystemExit(1)
     for year in (2, 3):
         item = report[f"year{year}"]
         print(f"Year {year}: {len(item['with_workbook_reference'])} references; "
