@@ -4,7 +4,7 @@
 **Main SP:** 4.3.1  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.76; TB p.115; Track 31; board-game templates; Primary Year 4 SK SOW Lesson 110
+**References:** SB p.76; TB p.115; Class CD2 Track 31 (vocabulary, TB p.115); board-game templates; Primary Year 4 SK SOW Lesson 110
 
 ## Set induction (10 minutes)
 **Teacher:** Review the TB optional activity.
