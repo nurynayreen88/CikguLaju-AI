@@ -20,7 +20,9 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Model a complete past-simple answer, then organise pairs to write and check statements about the characters.
-**Pupils:** Write full-sentence answers about the characters. Pupils may use the Unit 3 Workbook 'Story time' past-tense sentence completion (printed p.26) as additional writing practice; teacher checks accuracy.
+**Pupils:** Write full-sentence answers about the characters.
+**Teacher:** Instruct pupils to complete Workbook p.26, Story time sentence completion, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.26, Story time sentence completion; complete the past-tense sentences.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to revise one answer and explain the change.
