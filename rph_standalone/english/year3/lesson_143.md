@@ -13,7 +13,7 @@ Teacher introduces bear and cub with pictures.
 Pupils predict whether the bear-cub story has a happy ending.
 
 ## Activity 2 (25 minutes)
-Pupils read for enjoyment, infer new words from illustrations and discuss the story in a circle. Teacher introduces the Malaysian sun bear and leads the post-story discussion from TB p.141.
+Pupils read for enjoyment, infer new words from illustrations and discuss the story in a circle. Pupils complete Workbook p.73, Activity 1, by matching pictures with events from the story. Teacher introduces the Malaysian sun bear and leads the post-story discussion from TB p.141.
 
 ## Assessment / PBD (10 minutes)
 Teacher asks each pupil to name a favourite story moment and give one reason, referring to a picture or story detail.
