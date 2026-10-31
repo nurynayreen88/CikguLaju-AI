@@ -22,7 +22,7 @@
 **Teacher:** Invite pupils to summarise their survey findings and ask one follow-up question; note whether questions and responses are understandable.
 **Pupils:** Summarise the survey results.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise discussing sports and giving opinions using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to state a sports preference and give a supporting reason.
