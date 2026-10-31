@@ -23,6 +23,14 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
         self.assertEqual(calls[-1][2]["json"]["amount_rm"], "10.00")
         self.assertTrue(calls[-1][2]["json"]["proof_received"])
 
+    def test_accepts_exact_cent_amount_with_trailing_zeros(self):
+        def request(method, path, **kwargs):
+            if method == "GET":
+                return []
+            data = kwargs["json"]
+            return [{"id": 302, "telegram_user_id": data["telegram_user_id"], "telegram_message_id": data["telegram_message_id"], "status": "pending"}]
+        self.assertEqual(create_payment_request(request, 1, "10.000", 2), 302)
+
     def test_rejects_invalid_inputs_without_writing(self):
         def fail_request(*args, **kwargs):
             self.fail("Unexpected write")
