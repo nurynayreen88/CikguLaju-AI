@@ -90,7 +90,7 @@ def logout():
     if not origin or origin.rstrip("/") != request.host_url.rstrip("/"):
         abort(403)
     supplied = request.headers.get("X-CSRF-Token", "")
-    expected = session.get("web_logout_token")
+    expected = session.get("web_logout_csrf")
     if not expected or not secrets.compare_digest(expected, supplied):
         abort(403)
     session.clear()
