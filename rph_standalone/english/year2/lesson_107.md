@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Model an ability survey; pupils ask three questions, write two question-and-answer pairs and create at least one new survey question.
-**Pupils:** Describe three features and write two labels.
+**Pupils:** Describe three features and write two labels. Pupils complete Workbook p.99, Activity 2, by answering the ability questions with Yes, I can or No, I can't.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three basic spoken personal questions (SP 2.1.2) and two written question-and-answer pairs (SP 4.2.1). Note individual support required.
