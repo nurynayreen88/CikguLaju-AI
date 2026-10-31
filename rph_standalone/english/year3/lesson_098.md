@@ -16,7 +16,7 @@ Pupils listen to a directions song and mime the movements.
 Pupils give and follow directions in a team game.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.52, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use the route to the cinema in Workbook p.52, Activity 2 as a prompt for pupils to give directions aloud in pairs before completing the printed writing task. Assess clarity and correct sequencing of spoken directions.
 **Pupils:** Pupils complete Workbook p.52, Activity 2, by writing directions to help Steve reach the cinema.
 
 ## Closure (5 minutes)
