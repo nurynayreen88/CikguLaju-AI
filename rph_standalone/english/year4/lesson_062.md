@@ -22,8 +22,6 @@
 **Teacher:** Model a short diary entry and invitation response, then guide pupils to write their own entries and polite acceptance or refusal.
 **Pupils:** Write a diary entry and a polite invitation response.
 
-Pupils practise writing a diary entry about a celebration using a suitable Workbook activity, where available; teacher checks sentence accuracy.
-
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one conjunction that connects their sentences and explain its purpose.
 **Pupils:** Improve one sentence link.
