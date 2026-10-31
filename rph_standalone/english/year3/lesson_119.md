@@ -16,7 +16,7 @@ Teacher models short exchanges about where someone was and how it was.
 Groups use Lesson 118 cards to ask Where were you? and Was it fun?, then share their weekend experiences.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.63, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use the questions about yesterday in Workbook p.63, Activity 2 as speaking prompts first. Listen to pupils ask and answer in pairs using 'was' and 'were'; then guide completion of the printed written answers.
 **Pupils:** Pupils complete Workbook p.63, Activity 2, by answering questions about where they were yesterday.
 
 ## Closure (5 minutes)
