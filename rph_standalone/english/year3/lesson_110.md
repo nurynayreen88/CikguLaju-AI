@@ -13,7 +13,7 @@ Teacher plays the animal-vocabulary Thief game.
 Pupils complete Activity 1 in pairs, then identify places shown in Student's Book p.74.
 
 ## Activity 2 (25 minutes)
-Teacher says rules; pupils match them to places and write the relevant rules with correct spelling.
+Teacher says rules; pupils match them to places and write the relevant rules with correct spelling. Pupils complete Workbook p.56, Activity 1, by matching prohibition signs to the correct directions.
 
 ## Assessment / PBD (10 minutes)
 Teacher reads two place rules aloud. Pupils match each rule to a place and submit written answers for a spelling check.
