@@ -13,7 +13,7 @@ Pupils play Slap to match animal pictures and word cards.
 Teacher distributes animal cards and models simple descriptions.
 
 ## Activity 2 (25 minutes)
-Teacher guides Activity 4. Pupils draw a farm containing their assigned animal cards. In pairs, one pupil describes the farm while the partner listens and draws the animals heard; pupils compare both drawings and swap roles.
+Teacher guides Activity 4. Pupils draw a farm containing their assigned animal cards. In pairs, one pupil describes the farm while the partner listens and draws the animals heard; pupils compare both drawings and swap roles. Pupils complete Workbook p.53, Activity 2, by describing the farm animals and writing sentences about them.
 
 ## Assessment / PBD (10 minutes)
 Teacher observes each pupil describing two farm animals and drawing two details heard from a partner. Pupils compare the drawings and explain one difference.
