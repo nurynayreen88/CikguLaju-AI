@@ -20,7 +20,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Use page 111 as visual context for five teacher-created spoken cues and four printed labels.
-**Pupils:** Listen, choose pictures and match labels.
+**Pupils:** Listen, choose pictures and match labels. Pupils complete Workbook p.110, Activity 1, by listening and ticking the correct beach pictures.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record individual evidence against the success criteria.
