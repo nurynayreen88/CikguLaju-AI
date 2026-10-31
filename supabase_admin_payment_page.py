@@ -31,7 +31,9 @@ def show_admin_payment_history(cid, page, request, send):
         except (TypeError, ValueError, OverflowError):
             money = "jumlah tidak sah"
         kind = row["kind"]
-        if kind == "rakan_pembangun_approval":
+        if kind == "rakan_pembangun_request":
+            kind = "Rakan Pembangun (permintaan bayaran, bukan resit)"
+        elif kind == "rakan_pembangun_approval":
             kind = "Rakan Pembangun (kelulusan akses, bukan resit)"
         elif not row["is_receipt"]:
             kind = f"{kind} (belum disahkan sebagai bayaran)"
