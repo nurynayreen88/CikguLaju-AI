@@ -16,7 +16,8 @@ Teacher introduces The Secret Tunnel and asks pupils to predict events from the 
 Teacher reads The Secret Tunnel, pausing for predictions about the park and tunnel. Teacher then plays the story recording and asks comprehension questions, before pupils discuss characters, events and the story's values.
 
 ## Assessment / PBD (10 minutes)
-Teacher asks each pupil to name a favourite scene and explain why, using one detail from the story. Pupils respond orally.
+**Teacher:** Direct pupils to Workbook p.57, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.57, Activity 1, by answering questions about the tunnel story.
 
 ## Closure (5 minutes)
 Pupils share a favourite scene.
