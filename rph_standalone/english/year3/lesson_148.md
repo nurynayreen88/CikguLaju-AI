@@ -13,7 +13,7 @@ Pupils brainstorm animals found in Malaysia. Teacher introduces endangered and s
 Pairs unscramble names of endangered Malaysian animals on the SOW worksheet (turtle, pangolin, tiger, orangutan, rhino), then draw one animal.
 
 ## Activity 2 (25 minutes)
-Teacher gives animal clues using comparative adjectives; pupils guess the animal. Pairs write at least two descriptive sentences about one endangered animal, using comparatives where appropriate.
+Teacher gives animal clues using comparative adjectives; pupils guess the animal. Pairs write at least two descriptive sentences about one endangered animal, using comparatives where appropriate. Pupils complete Workbook p.77, Activity 2, by answering questions comparing the pictured animals.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks each pupil's two animal-description sentences for accurate comparisons and spelling. Pupils correct one error; teacher retains feedback for Lesson 160.
