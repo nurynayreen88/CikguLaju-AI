@@ -31,7 +31,14 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     create_payment_request(fail_request, uid, amount, mid)
 
-    def test_retry_returns_existing_supabase_id(self):\n        calls = []\n        def request(method, path, **kwargs):\n            calls.append(method)\n            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}]\n        self.assertEqual(create_payment_request(request, 1, 10, 2), 41)\n        self.assertEqual(calls, ["GET"])\n\n    def test_fails_closed_if_insert_response_is_unconfirmed(self):
+    def test_retry_returns_existing_supabase_id(self):\n        calls = []\n        def request(method, path, **kwargs):\n            calls.append(method)\n            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "10.00", "status": "pending"}]\n        self.assertEqual(create_payment_request(request, 1, 10, 2), 41)\n        self.assertEqual(calls, ["GET"])\n\n    def test_existing_malformed_amount_is_rejected(self):
+        def request(method, path, **kwargs):
+            self.assertEqual(method, "GET")
+            return [{"id": 41, "telegram_user_id": 1, "telegram_message_id": 2, "amount_rm": "broken", "status": "pending"}]
+        with self.assertRaises(RuntimeError):
+            create_payment_request(request, 1, 10, 2)
+
+    def test_fails_closed_if_insert_response_is_unconfirmed(self):
         with self.assertRaises(RuntimeError):
             create_payment_request(lambda method, *a, **kw: [] if method == "GET" else None, 1, 10, 2)
 
