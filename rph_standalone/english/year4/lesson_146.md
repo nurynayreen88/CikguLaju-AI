@@ -26,7 +26,7 @@
 **Teacher:** Invite pupils to demonstrate one polite response to a health problem and explain when to use it.
 **Pupils:** Share a helpful response.
 
-**PBD:** Observe use of clarification and appropriate responses in the health-dialogue role-play (SP 2.2.1, 1.2.5).  
+**PBD:** Observe pupils asking for clarification and responding appropriately during health-dialogue role-play for main Speaking SP 2.2.1; check their understanding of spoken health advice and dialogue prompts for complementary Listening SP 1.2.5. Workbook p.87 is the main written advice practice, not a substitute for speaking or listening evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
