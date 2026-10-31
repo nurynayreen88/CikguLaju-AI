@@ -22,7 +22,8 @@
 **Teacher:** Model the /eə/ sound in pear, then guide pupils to identify and pronounce matching words in Activity 1.
 **Pupils:** Complete the listening activity and identify the /eə/ sound in words.
 
-Pupils complete Workbook p.39, Activity 1 (food word search and categories); teacher checks their answers.
+**Teacher:** Instruct pupils to complete Workbook p.39, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.39, Activity 1; find and categorise food words in the word-search task.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to explain one inferred song-word meaning and pronounce a word containing the target /eə/ sound.
@@ -31,5 +32,5 @@ Pupils complete Workbook p.39, Activity 1 (food word search and categories); tea
 **PBD:** Observe contextual inference and sound recognition against SP 1.3.1 and 1.1.1.  
 **Differentiation:** Use picture prompts, repeated listening and peer support.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
+**Workbook:** p.39, Activity 1; assessment follow-up.
 **Status:** DRAFT — audio mapping and Word/PDF QA pending.
