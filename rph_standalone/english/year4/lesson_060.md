@@ -20,7 +20,7 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Provide a prediction checklist and guide pupils to attach pictures, write sentences using because and present their reasons.
-**Pupils:** Write a correctly spelled prediction and present it to a group. Pupils may complete a matching Workbook activity on making predictions, if available; teacher checks their answers.
+**Pupils:** Write a correctly spelled prediction and present it to a group.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to check one prediction sentence for spelling and explain how because supports their reason.
