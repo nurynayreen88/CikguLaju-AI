@@ -22,7 +22,7 @@
 **Teacher:** Use the story pictures to prompt pupils to retell an event in sequence with an appropriate time connector.
 **Pupils:** Retell an event using picture prompts.
 
-**Teacher:** Instruct pupils to complete Workbook p.55, the Story time task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.55, the Story time task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.55, the Story time task; read the story and answer the comprehension questions.
 
 ## Closure (5 minutes)
