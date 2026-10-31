@@ -85,3 +85,24 @@
 | 060 | None observed | Check SOW |
 
 **Interpretation:** “None observed” means the lesson Markdown has no explicit numbered track reference; it is **not** confirmation that the SOW requires no audio. This pass did not retrieve or play MP3 files. In particular, Lesson 035 lists CD1 Tracks 39 and 38; preserve both until the original activity order is confirmed.
+
+## Lessons 061–080 — repository-reference pass (31 October 2026)
+
+| Lesson | Track references observed in RPH | Follow-up |
+|---|---|---|
+| 061 | CD1 Track 65 | Verify MP3 and activity |
+| 062–064 | None observed | Check SOW before classifying no-audio |
+| 065 | Tracks 70–71; CD unresolved | Verify CD, both MP3 files and activity order |
+| 066 | CD1 Track 72 | Verify MP3 |
+| 067 | None observed | Check SOW |
+| 068 | CD1 Tracks 75 and 76 | Verify both MP3 files |
+| 069 | None observed | Literature/CCL; check source-specific requirements |
+| 070 | CD1 Tracks 77 and 79 | Verify both MP3 files; do not infer missing Track 78 is required |
+| 071 | CD1 Track 80 | Verify MP3 |
+| 072 | CD1 Track 83 | Verify MP3 |
+| 073–075 | None observed | Check SOW; includes literature/CCL |
+| 076 | CD1 Track 81 | Verify MP3 |
+| 077 | CD3 Track 38 | Verify MP3 |
+| 078–080 | None observed | Teacher-selected/literature/project lessons; check relevant source |
+
+**Audio caution:** Track numbering is not necessarily consecutive across lessons or CDs. No “missing” track should be added solely because of a gap. SOW/TB, the exact MP3 and playback must establish a track's role.
