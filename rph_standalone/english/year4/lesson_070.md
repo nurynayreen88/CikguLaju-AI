@@ -22,7 +22,8 @@
 **Teacher action:** Play Track 79 for TB Activity 3, pause for key details and ask pupils to justify one answer from what they heard.
 **Pupil action:** Listen to Track 79 and check details in Activity 3.
 
-Pupils complete Workbook p.41, Activity 1 (food-container expressions) as optional vocabulary support; teacher checks answers.
+**Teacher:** Instruct pupils to complete Workbook p.41, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.41, Activity 1; complete the food-container expressions.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share one healthy habit and give a short reason for their choice.
@@ -31,5 +32,5 @@ Pupils complete Workbook p.41, Activity 1 (food-container expressions) as option
 **PBD:** Record accuracy of Health Quiz listening answers and specific details checked with Track 79 against SP 1.2.5 and 1.2.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 70, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
+**Workbook:** p.41, Activity 1; assessment follow-up.
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
