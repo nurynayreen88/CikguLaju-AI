@@ -33,7 +33,7 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
         amount = Decimal(str(amount_rm))
     except (InvalidOperation, ValueError, TypeError) as exc:
         raise ValueError("Invalid amount") from exc
-    if not amount.is_finite() or amount <= 0 or amount > Decimal("99999999.99") or amount.as_tuple().exponent < -2:
+    if not amount.is_finite() or amount <= 0 or amount > Decimal("99999999.99") or amount != amount.quantize(Decimal("0.01")):
         raise ValueError("Invalid amount")
     payload = {
         "telegram_user_id": int(telegram_user_id),
