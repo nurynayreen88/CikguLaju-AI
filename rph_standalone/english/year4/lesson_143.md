@@ -22,7 +22,7 @@
 **Teacher:** Invite pupils to discuss Mowgli's feelings, prompting each pupil to support an explanation with a detail from the story.
 **Pupils:** Describe Mowgli's feelings and support opinions with story details.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up task based on The Jungle Book and the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Demonstrate legible cursive joins, then guide pupils to write and check the lesson poem for readability.
