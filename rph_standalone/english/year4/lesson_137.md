@@ -22,7 +22,8 @@
 **Teacher:** Display a checklist for accurate superlatives, text evidence and punctuation; guide pairs to review and revise their descriptions.
 **Pupils:** Check sentences against the text and correct mistakes.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.81, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.81, Activity 2; write a paragraph about a favourite athlete using the information in Activity 1.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read a revised sports description and explain one correction.
