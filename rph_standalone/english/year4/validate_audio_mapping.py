@@ -13,6 +13,9 @@ def validate():
     assets = json.loads((HERE / "QA_CLASS_CD_ASSET_MANIFEST_20261031.json").read_text(encoding="utf-8"))
     mapping = json.loads((HERE / "QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json").read_text(encoding="utf-8"))
     errors = []
+    if not isinstance(assets, dict) or not isinstance(mapping, dict):
+        print("ERROR: audio source files must contain JSON objects")
+        return False
     if assets.get("year") != 4 or mapping.get("year") != 4:
         errors.append("Expected year 4 in both source files")
     if mapping.get("asset_manifest") != "QA_CLASS_CD_ASSET_MANIFEST_20261031.json":
