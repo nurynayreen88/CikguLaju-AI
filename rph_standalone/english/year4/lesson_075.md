@@ -19,12 +19,8 @@
 **Pupil action:** Practise natural restaurant dialogue and clarification.
 
 ## PBD / reinforcement (10 minutes)
-**Teacher action:** Assign waiter and customer roles, provide sample menus and monitor pair role-plays for clear ordering and clarification.
-**Pupil action:** Role-play ordering from a sample menu.
-
-
-**Teacher:** Instruct pupils to complete Workbook p.44, healthy-eating reading passage, according to the printed instructions. Check their answers and assess individual understanding.
-**Pupils:** Complete Workbook p.44, healthy-eating reading passage; read the passage and identify food vocabulary.
+**Teacher action:** Use Workbook p.44, the healthy-eating reading passage, as the main written practice; follow its printed instructions and check pupils' answers. Separately assess pupils' understanding of spoken restaurant questions and clarification requests from Student's Book p.57 Activities 3–4 as the main Listening PBD evidence for SP 1.2.5. Assign waiter and customer roles and observe pupils' spoken clarification during menu-ordering role-play for complementary Speaking SP 2.2.1.
+**Pupil action:** Complete Workbook p.44 according to the printed instructions, respond to spoken restaurant questions and role-play ordering from a sample menu.
 
 ## Closure (5 minutes)
 **Teacher action:** Invite pupils to share a favourite meal and model a polite response to a partner's choice.
