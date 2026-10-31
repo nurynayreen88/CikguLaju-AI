@@ -20,6 +20,9 @@ def validate():
     discs = assets.get("discs", {})
     for disc, expected in (("CD1", 88), ("CD2", 88), ("CD3", 44)):
         tracks = discs.get(disc, {}).get("tracks", {})
+        if not isinstance(tracks, dict):
+            errors.append(f"{disc}: tracks must be an object")
+            continue
         if set(tracks) != {str(n) for n in range(1, expected + 1)}:
             errors.append(f"{disc}: missing or extra numbered tracks")
         for number, asset in tracks.items():
@@ -36,7 +39,10 @@ def validate():
             errors.append(f"Lesson {lesson}: invalid Teacher Book page")
     all_ids = []
     for disc_info in discs.values():
-        all_ids.extend(asset.get("file_id") for asset in disc_info.get("tracks", {}).values() if isinstance(asset, dict))
+        tracks = disc_info.get("tracks", {}) if isinstance(disc_info, dict) else {}
+        if not isinstance(tracks, dict):
+            continue
+        all_ids.extend(asset["file_id"] for asset in tracks.values() if isinstance(asset, dict) and isinstance(asset.get("file_id"), str))
     if len(all_ids) != len(set(all_ids)):
         errors.append("Drive file ID is reused across different manifest tracks")
     usages = []
