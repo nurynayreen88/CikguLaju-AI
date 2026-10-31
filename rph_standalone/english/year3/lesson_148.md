@@ -17,7 +17,7 @@ Teacher gives animal clues using comparative adjectives; pupils guess the animal
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.77, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.77, Activity 2, by answering questions comparing the pictured animals.
+**Pupils:** Pupils complete Workbook p.77, Activity 2, by writing comparative sentences about the pictured characters and animals.
 
 ## Closure (5 minutes)
 Pupils name one endangered animal.
