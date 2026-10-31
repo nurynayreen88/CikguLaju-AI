@@ -16,7 +16,7 @@ Teacher introduces past verb forms from the Grammar Box. Pupils identify example
 Pupils reuse Lesson 130 holiday pictures to draft sentences, exchange notebooks for feedback and prepare final writing beside their pictures.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.69, Activity 3; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Use Workbook p.69, Activity 3 to match short holiday descriptions with pictures, then assess writing by asking pupils to write one original past-tense sentence about a selected picture. Matching alone does not establish independent writing ability.
 **Pupils:** Pupils complete Workbook p.69, Activity 3, by matching short holiday descriptions to the correct pictures.
 
 ## Closure (5 minutes)
