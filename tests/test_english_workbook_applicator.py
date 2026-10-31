@@ -31,6 +31,16 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertIn("Existing closure remains unchanged.", updated)
         self.assertLess(updated.index("Workbook p.48"), updated.index("## Closure"))
 
+    def test_workbook_is_separate_paragraph_before_closure(self):
+        updated, status = prepare(self.SAMPLE, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        self.assertIn(
+            "**Pupils:** Perform a short exchange.\\n\\n"
+            "**Teacher:** Guide pupils to complete Workbook p.48, Activity 2, and check their answers.\\n"
+            "## Closure",
+            updated,
+        )
+
     def test_repeat_application_is_idempotent(self):
         updated, _ = prepare(self.SAMPLE, 48, "Activity 2")
         again, status = prepare(updated, 48, "Activity 2")
