@@ -21,7 +21,7 @@
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Vocabulary using CD1 Track 38; pupils identify the dialogue's main idea.
 **Pupils:** Listen to Track 38 and identify the dialogue's main idea.
-**Teacher:** Instruct pupils to complete Workbook p.23, Our world Ancient Egypt vocabulary task, according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.23, Our world Ancient Egypt vocabulary task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.23, Our world Ancient Egypt vocabulary task; complete the Ancient Egypt vocabulary exercise.
 
 ## Closure (5 minutes)
