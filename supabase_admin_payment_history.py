@@ -11,9 +11,14 @@ def fetch_admin_payment_history(request, limit=100):
         ("payments", "credit", "created_at"),
         ("pioneer_entitlements", "rakan_pembangun_approval", "approved_at"),
     )
+    fields = {
+        "subscription_payments": "telegram_user_id,payment_reference,amount_rm,status,created_at",
+        "payments": "telegram_user_id,payment_reference,amount_rm,status,created_at",
+        "pioneer_entitlements": "telegram_user_id,payment_reference,approved_at,revoked_at",
+    }
     results = []
     for table, kind, date_col in sources:
-        rows = request("GET", f"{table}?select=*&order={date_col}.desc&limit={int(limit)}")
+        rows = request("GET", f"{table}?select={fields[table]}&order={date_col}.desc&limit={int(limit)}")
         if not isinstance(rows, list):
             raise RuntimeError("Supabase history unavailable: " + table)
         for item in rows:
