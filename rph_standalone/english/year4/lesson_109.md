@@ -19,7 +19,7 @@
 **Pupils:** Read the local recycling text and answer two gist questions.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.61, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the reading task, check pupils' understanding of the text and supporting details as evidence for the main Reading SP.
 **Pupils:** Complete Workbook p.61, Activity 1; identify recyclable objects and sort them into the appropriate bins.
 
 ## Closure (5 minutes)
