@@ -22,7 +22,8 @@
 **Teacher:** Invite groups to give playful advice in the optional task and ask them to restate a rule when misunderstandings arise.
 **Pupils:** Give playful advice and explain rules.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.89, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Pupils:** Complete Workbook p.89, Activity 2; look at the picture and answer the questions about what each person should or shouldn't do.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one clarification phrase that helped their group follow the game rules.
