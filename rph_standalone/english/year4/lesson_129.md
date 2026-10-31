@@ -5,6 +5,8 @@
 **Complementary SP:** 1.2.1  
 **Duration:** 60 minutes  
 **Audio:** Class CD2 Track 52 (sports song) and CD2 Track 51 (vocabulary), verified against Teacher's Book p.138. MP3 and download link not verified.  
+
+**Audio files located in Drive (playback/access not yet tested):** CD2 Track 51 — https://drive.google.com/file/d/1rVOmzGZ9DNPKutLoRtfTlwrLhVSSsrgO/view ; CD2 Track 52 — https://drive.google.com/file/d/1ZkJkB2UYEaM_xaZYXXUP9jVIkZQPH_pZ/view.  
 **References:** SB p.93 Activity 1; TB pp.138–139; sports song; Year 4 SOW Lesson 129
 
 ## Set induction (10 minutes)
