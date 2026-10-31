@@ -23,8 +23,8 @@
 **Pupils:** Read four sentences, reread one phrase when unsure and locate three details.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record four intelligible sentences, three correct detail answers and individual evidence of rereading for meaning.
-**Pupils:** Provide individual evidence.
+**Teacher (10 min):** Assess reading comprehension through Workbook p.89, Activity 1; check individual answers, record evidence of rereading for meaning and provide feedback.
+**Pupils:** Complete Workbook p.89, Activity 1, independently by answering the clothing questions using the pictures; correct mistakes after feedback.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful expression.
