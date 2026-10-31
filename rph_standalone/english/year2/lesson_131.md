@@ -24,7 +24,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five detail choices and two meaningful captions. Record individual support needed.
-**Pupils:** Demonstrate the target skill. Pupils complete Workbook p.112, Activity 1, by listening and writing the names beside the beach pictures.
+**Pupils:** Demonstrate the target skill.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
