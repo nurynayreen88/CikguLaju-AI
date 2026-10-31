@@ -22,7 +22,7 @@
 **Teacher:** Guide Activity 2 and ask groups to report a partner's sports preference using evidence from their interview notes.
 **Pupils:** Describe a partner's preferences in groups.
 
-Pupils practise talking about sports and preferences using a suitable Workbook activity, where available; teacher checks their answers.
+
 
 ## Closure (5 minutes)
 **Teacher:** Facilitate the TB optional review and invite pupils to share a conclusion from their interviews.
