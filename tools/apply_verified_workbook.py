@@ -1,7 +1,7 @@
-"""Append one verified English Workbook sentence to standalone RPH files.
+"""Replace Assessment/PBD activities with verified English Workbook tasks.
 
 Dry-run by default. Use --apply only after checking the review CSV and backups.
-Existing sentences and sections are preserved verbatim.
+Other RPH sections are preserved verbatim.
 """
 import argparse
 import csv
@@ -42,23 +42,20 @@ def verified_rows(csv_file):
 
 
 def prepare(source, page, activity):
-    if re.search(r"\b(?:Workbook|Activity Book)\b", source, re.I):
+    if re.search(r"\\b(?:Workbook|Activity Book)\\b", source, re.I):
         return None, "existing_workbook_reference"
-    if re.search(r"\bNON-TEXTBOOK\b", source, re.I):
-        return None, "non_textbook_lesson_requires_manual_review"
     match = ASSESSMENT.search(source)
     if not match:
         return None, "assessment_heading_missing"
-    end = re.search(r"(?m)^## |^\*\*QA", source[match.end():])
+    end = re.search(r"(?m)^## |^\\*\\*QA", source[match.end():])
     section_end = match.end() + end.start() if end else len(source)
-    sentence = f"**Teacher:** Guide pupils to complete Workbook p.{page}, {activity}, and check their answers.\n"
-    prefix = source[:section_end]
-    suffix = source[section_end:]
-    if not prefix.endswith("\n"):
-        prefix += "\n"
-    if not prefix.endswith("\n\n"):
-        prefix += "\n"
-    return prefix + sentence + suffix, "ready"
+    replacement = (
+        f"**Teacher:** Direct pupils to Workbook p.{page}, {activity}; "
+        "explain the task, check individual responses and record achievement "
+        "against the lesson objectives.\\n"
+        f"**Pupils:** Complete Workbook p.{page}, {activity}.\\n\\n"
+    )
+    return source[:match.end()] + replacement + source[section_end:], "ready"
 
 
 def main():
