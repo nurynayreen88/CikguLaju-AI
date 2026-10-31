@@ -161,6 +161,11 @@ class WorkbookMappingRegressionTests(unittest.TestCase):
         self.assertIn("Workbook p.80, Activity 1", pbd)
         self.assertIn("not as the sole reading assessment", pbd)
 
+    def test_lesson_157_planet_labelling_is_not_reading_comprehension(self):
+        pbd = self.pbd(self.lesson(157))
+        self.assertIn("Workbook p.80, Activity 1", pbd)
+        self.assertIn("not as direct evidence of reading comprehension", pbd)
+
     def test_lesson_159_uses_verified_story_character_matching(self):
         pbd = self.pbd(self.lesson(159))
         self.assertIn("Workbook p.81, Activity 1", pbd)
