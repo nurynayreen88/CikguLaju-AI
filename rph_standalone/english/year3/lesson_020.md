@@ -14,10 +14,11 @@ Teacher reviews daily routines. Pupils name activities and recall frequency word
 Teacher models 'I always/sometimes/never ...' and changes examples to 'He/She ...' with third-person -s. Pupils practise transformations.
 
 ## Activity 2 — Guided writing (25 minutes)
-Groups draft sentences for routine flashcards, write them on the board and peer-check. Pupils then write a short routine description using frequency adverbs and punctuation. Pupils complete Workbook p.10, Activity 2, using 'always', 'sometimes' and 'never' in sentences about routines.
+Groups draft sentences for routine flashcards, write them on the board and peer-check. Pupils then write a short routine description using frequency adverbs and punctuation.
 
 ## PBD (10 minutes)
 Teacher checks sentence range, third-person verb endings, capitals and full stops. Pupils revise their drafts.
+Pupils complete Workbook p.10, Activity 2, using 'always', 'sometimes' and 'never' in sentences about routines.
 
 ## Closure (5 minutes)
 Pupils share one corrected routine sentence.
