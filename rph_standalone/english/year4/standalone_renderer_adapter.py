@@ -25,8 +25,8 @@ def adapt_year4_standalone(markdown: str) -> str:
             blocks[current] = []
         elif current:
             blocks[current].append(line)
-    def body(name):
-        return "\n".join(blocks.get(name, [])).strip()
+    def body(prefix):
+        return "\n".join(next((lines for heading, lines in blocks.items() if heading.lower().startswith(prefix.lower())), [])).strip()
     activities = []
     for heading in blocks:
         if ACTIVITY.match(heading) or heading.lower().startswith("reinforcement"):
