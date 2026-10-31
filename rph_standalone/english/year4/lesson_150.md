@@ -28,7 +28,7 @@
 **Teacher:** Ask pupils to recall one health problem from the recording and give suitable advice using should.
 **Pupils:** Recall one listening detail.
 
-**PBD:** Record accuracy of matching people to health problems and spoken advice based on the recording (SP 1.2.2, 2.1.1).  
+**PBD:** Check pupils' accurate matching of characters to health problems using information heard in CD2 Track 73 for main Listening SP 1.2.2; observe spoken advice with relevant reasons after CD2 Track 74 for complementary Speaking SP 2.1.1. Do not treat advice writing alone as listening evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
