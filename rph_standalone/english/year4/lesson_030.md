@@ -20,7 +20,7 @@
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Follow TB Activity 2 using CD2 Track 29; pupils respond to supported questions and check spelling.
-**Pupils:** Listen to Track 29, answer questions and check spelling. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Listen to Track 29, answer questions and check spelling. Pupils may complete a matching Workbook listening activity about weekly routines, if available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Use the optional hopscotch review if time permits, then ask pupils to identify and correct one chore spelling error.
