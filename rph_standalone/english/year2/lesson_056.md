@@ -26,8 +26,10 @@
 **Pupils:** Complete the task, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.82, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.82, Activity 1, by finding and circling the clothes words in the wordsearch.
+**Teacher:** Check five individual listening choices and observe one independent reference lookup. Note prompts required.  
+**Pupils:** Respond individually.
+
+**Workbook practice:** Pupils complete Workbook p.82, Activity 1, by finding and circling the clothes words in the wordsearch. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
