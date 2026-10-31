@@ -15,8 +15,9 @@ Teacher guides Student's Book p.31 Activity 1. Pupils study pictures and answer 
 ## Activity 2 — Drafting and display (25 minutes)
 Pupils write sentences about their pictures, exchange work for peer review, redraft neatly on labels and attach them to their pictures for a classroom display. Teacher supports accurate present continuous sentences.
 
-## PBD (10 minutes)
-Teacher checks planning, drafting and short oral narration of pictured events. Pupils explain their work to partners.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.22, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.22, Activity 2, by writing sentences about the sports shown in the picture.
 
 ## Closure (5 minutes)
 Teacher displays selected work and invites pupils to share a corrected sentence.
