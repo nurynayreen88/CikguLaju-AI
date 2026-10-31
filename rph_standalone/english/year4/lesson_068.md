@@ -22,7 +22,8 @@
 **Teacher action:** Display a short checklist for food spelling, commas in lists and appropriate use of “some”. Model checking one sentence, then organise peer feedback.
 **Pupil action:** Check commas and spelling in a partner's list.
 
-Pupils use Workbook p.40 Activity 3 for optional food-description writing and check their sentences.
+**Teacher:** Instruct pupils to complete Workbook p.40, Activity 3 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.40, Activity 3; write sentences about the food in a fridge.
 
 ## Closure (5 minutes)
 **Teacher action:** Display one deliberately incorrect shopping-list sentence and invite a pupil to explain and correct its spelling or punctuation.
@@ -31,5 +32,5 @@ Pupils use Workbook p.40 Activity 3 for optional food-description writing and ch
 **PBD:** Assess picnic shopping lists for correct food spelling, use of some and containers, and commas against SP 4.3.2 and 4.3.1.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 68, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
+**Workbook:** p.40, Activity 3; assessment follow-up.
 **Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
