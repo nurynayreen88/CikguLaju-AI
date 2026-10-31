@@ -29,7 +29,7 @@
 **Pupils:** Tell a partner one fact from the quiz.
 
 ## Assessment and differentiation
-**PBD:** Check task-specific responses and note achievement of Listening 1.2.2 and Listening 1.2.1.  
+**PBD:** Assess pupils' answers to the spoken Ancient Egypt quiz for Listening 1.2.2 and their understanding of its overall message for Listening 1.2.1. Workbook responses provide written practice, not listening evidence.  
 **Support:** Use visuals and allow first-language contributions when discussing historical knowledge.
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
