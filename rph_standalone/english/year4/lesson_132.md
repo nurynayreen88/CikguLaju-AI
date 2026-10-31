@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils to write a connected paragraph reporting competition results using conjunctions.
 **Pupils:** Record results and write a short connected report.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils revise their invitation or report using the model text and a writing checklist; no specific Workbook page is prescribed for this teacher-prepared writing lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to share one revised report sentence and explain how a conjunction connects its ideas.
