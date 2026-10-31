@@ -28,7 +28,7 @@
 **Teacher:** Invite two pupils to read an improved sentence and explain which conjunction connects their ideas.
 **Pupils:** Read one improved sentence.
 
-**PBD:** Assess the favourite-animal paragraph for conjunctions, connected ideas and revision after feedback against SP 4.2.5 and 4.3.3.  
+**PBD:** Assess pupils' favourite-animal paragraph for linked ideas and suitable conjunctions for main Writing SP 4.2.5; check organisation and revisions that improve clarity for complementary Writing SP 4.3.3. Use the SB writing model without inventing a Workbook page.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
