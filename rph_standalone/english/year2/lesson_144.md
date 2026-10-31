@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Model each word once, ask pupils to write all four independently, then write two sentences about the original picture.
-**Pupils:** Write four words and two sentences. Pupils complete Workbook p.106, Activity 1, by writing the missing beach-action words under the pictures.
+**Pupils:** Write four words and two sentences.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Check each pupil's four legible words and two sentences for correct capitals, word spacing and full stops.
-**Pupils:** Submit individual evidence.
+**Pupils:** Submit individual evidence. Pupils complete Workbook p.106, Activity 1, by writing the missing beach-action words under the pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
