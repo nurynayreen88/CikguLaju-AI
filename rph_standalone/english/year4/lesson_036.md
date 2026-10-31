@@ -29,7 +29,7 @@
 **Pupils:** Correct one question and explain a punctuation choice.
 
 ## Assessment and differentiation
-**PBD:** Check task-specific responses and note achievement of Writing 4.3.1 and Reading 3.2.2.  
+**PBD:** Assess pupils' independently punctuated past-tense questions for Writing 4.3.1 and their understanding of the model dialogue for Reading 3.2.2. Workbook p.24 provides the main written practice.  
 **Support:** Use purposeful pairing and extension questions for early finishers.
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
