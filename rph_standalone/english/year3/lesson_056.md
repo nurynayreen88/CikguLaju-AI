@@ -15,8 +15,9 @@ Teacher displays a world map and asks pupils to locate Malaysia, Singapore and T
 ## Activity 2 — Reading (25 minutes)
 Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils read country texts and match specific details to the correct country, asking for help when needed.
 
-## PBD (10 minutes)
-Pupils locate two details in the reading text and use one polite request for help when needed.
+## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.30, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.30, Activity 2, by writing about seasons and weather in different places.
 
 ## Closure (5 minutes)
 Pupils share one fact about a country and compare it with Malaysia.
