@@ -6,6 +6,14 @@ All writes require server-side credentials and caller authorization.
 from decimal import Decimal, InvalidOperation
 
 
+def _same_amount(raw, expected):
+    try:
+        actual = Decimal(str(raw))
+    except (InvalidOperation, ValueError, TypeError):
+        return False
+    return actual.is_finite() and actual == expected
+
+
 def create_payment_request(request, telegram_user_id, amount_rm, telegram_message_id):
     """Create a pending request; return Supabase identity ID.
 
@@ -42,7 +50,7 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
         if (not isinstance(row, dict) or not isinstance(row.get("id"), int)
                 or row.get("telegram_user_id") != payload["telegram_user_id"]
                 or row.get("telegram_message_id") != payload["telegram_message_id"]
-                or Decimal(str(row.get("amount_rm"))) != amount):
+                or not _same_amount(row.get("amount_rm"), amount)):
             raise RuntimeError("Existing payment request does not match")
         return row["id"]
     rows = request("POST", "pioneer_payment_requests", json=payload, prefer="return=representation")
