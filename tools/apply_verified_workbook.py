@@ -67,10 +67,12 @@ def main():
     parser.add_argument("--apply", action="store_true", help="Write changes after review; default is dry-run")
     args = parser.parse_args()
     changes = []
+    missing_files = []
     for year, lesson, page, activity in verified_rows(args.review_csv):
         file = ROOT / f"year{year}" / f"lesson_{lesson:03d}.md"
         if not file.is_file():
             print(f"SKIP {year}/{lesson}: missing_file")
+            missing_files.append(file)
             continue
         original = file.read_text(encoding="utf-8")
         updated, reason = prepare(original, page, activity)
@@ -80,6 +82,8 @@ def main():
         changes.append((file, updated, hashlib.sha256(original.encode('utf-8')).hexdigest()))
         print(f"{'APPLY' if args.apply else 'DRY-RUN'} {year}/{lesson}: Workbook p.{page}, {activity}")
     if args.apply:
+        if missing_files:
+            raise RuntimeError(f"Missing {len(missing_files)} lesson file(s); no files written")
         for file, updated, expected_hash in changes:
             original = file.read_text(encoding="utf-8")
             current_hash = hashlib.sha256(original.encode("utf-8")).hexdigest()
