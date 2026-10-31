@@ -21,11 +21,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Give pupils the original outfit prompt and word bank. Pupils spell four clothing words, write two sentence clues, swap quizzes and read and solve their partner's clues.
-**Pupils:** Write, check one spelling and revise. Pupils complete Workbook p.90, Activity 1, by writing the material words shown in the pictures.
+**Pupils:** Write, check one spelling and revise.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Score four independently spelled clothing words (0–4) and record reading and completing a sentence-level quiz (SP 3.3.1). Record legibility, punctuation and prompts separately. Accept alternative accurate sentences about the supplied outfit.
-**Pupils:** Submit individual writing.
+**Pupils:** Submit individual writing. Pupils complete Workbook p.90, Activity 1, by writing the material words shown in the pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful spelling strategy.
