@@ -29,7 +29,7 @@
 **Teacher action:** Display one deliberately incorrect shopping-list sentence and invite a pupil to explain and correct its spelling or punctuation.
 **Pupil action:** Correct one picnic shopping sentence.
 
-**PBD:** Assess picnic shopping lists for correct food spelling, use of some and containers, and commas against SP 4.3.2 and 4.3.1.  
+**PBD:** Assess pupils' own picnic shopping lists and food sentences for main Writing SP 4.3.2, including correct spelling and appropriate food quantities; check punctuation, especially commas, for complementary Writing SP 4.3.1. Workbook p.40 is main written practice but does not replace the picnic-list task.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 68, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** p.40, Activity 3; assessment follow-up.
