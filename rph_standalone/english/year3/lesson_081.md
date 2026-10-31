@@ -16,11 +16,11 @@
 
 ## Activity 2 — Listening practice (25 minutes)
 **Teacher:** Guide the Student's Book p.55 listening task and replay key parts when needed.
-**Pupils:** Listen for food words and answer short questions about details heard. Pupils complete Workbook p.44, Activity 1, by writing food words in the picture crossword.
+**Pupils:** Listen for food words and answer short questions about details heard.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Ask three listening-detail questions and prompt a spoken food preference; record individual responses.
-**Pupils:** Answer the questions and say one food preference.
+**Teacher:** Direct pupils to Workbook p.44, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.44, Activity 1, by writing food words in the picture crossword.
 
 ## Closure (5 minutes)
 **Teacher:** Review two new food words and invite a final response.
