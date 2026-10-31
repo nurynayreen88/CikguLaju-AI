@@ -27,6 +27,16 @@ class PaymentHistoryTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             fetch_admin_payment_history(lambda *_: None)
 
+    def test_queries_only_required_columns(self):
+        paths = []
+        def request(method, path):
+            paths.append(path)
+            return []
+        fetch_admin_payment_history(request)
+        self.assertEqual(len(paths), 3)
+        self.assertTrue(all("select=*" not in p for p in paths))
+        self.assertTrue(all("select=telegram_user_id" in p for p in paths))
+
     def test_rejects_malformed_rows(self):
         with self.assertRaises(RuntimeError):
             fetch_admin_payment_history(lambda *_: [None])
