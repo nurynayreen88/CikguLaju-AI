@@ -15,7 +15,7 @@
 **Pupils:** Discuss the meaning of should.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Set a gist question before playing the story audio and check pupils' understanding of the main event.
+**Teacher:** Set a gist question before playing Activity 1 Track 72 and check pupils' understanding of the main event. Verify the CD and audio file before release.
 **Pupils:** Listen and answer the gist question.
 
 ## Reinforcement / PBD (10 minutes)
