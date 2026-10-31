@@ -22,7 +22,8 @@
 **Teacher:** Play Track 72 for Activity 1, pause at key story events and ask pupils to answer with supporting details from the story.
 **Pupils:** Use story evidence to justify answers.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.90, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.90, Activity 1; read the health problems and match them to the correct descriptions.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to identify one value shown in the story and cite the character action that demonstrates it.
