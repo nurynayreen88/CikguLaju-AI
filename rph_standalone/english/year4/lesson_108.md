@@ -22,7 +22,7 @@
 **Teacher:** Invite each pair to present its object using 'First' and 'Then'. Ask classmates to check whether the steps are clear and in order.
 **Pupils:** Explain the steps using First and Then.
 
-**Teacher:** Instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.61, Activity 1 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.61, Activity 1; match the objects to the correct recycling bins.
 
 ## Closure (5 minutes)
