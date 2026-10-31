@@ -13,10 +13,11 @@ Teacher revisits the forest-trip story. Pupils recall the sequence of events.
 Teacher introduces past verb forms from the Grammar Box. Pupils identify examples about the weekend.
 
 ## Activity 2 — Writing practice (25 minutes)
-Pupils reuse Lesson 130 holiday pictures to draft sentences, exchange notebooks for feedback and prepare final writing beside their pictures. Pupils complete Workbook p.69, Activity 3, by matching short holiday descriptions to the correct pictures.
+Pupils reuse Lesson 130 holiday pictures to draft sentences, exchange notebooks for feedback and prepare final writing beside their pictures.
 
 ## Assessment / PBD (10 minutes)
-Teacher checks each pupil's past-tense holiday sentences for accurate verbs, spelling and punctuation. Pupils revise one sentence.
+**Teacher:** Direct pupils to Workbook p.69, Activity 3; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.69, Activity 3, by matching short holiday descriptions to the correct pictures.
 
 ## Closure (5 minutes)
 Pupils share one sentence using a past-tense verb.
