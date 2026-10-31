@@ -27,8 +27,8 @@
 **Pupils:** Describe three actions and respond to two instructions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (10 min):** Record three ability exchanges (SP 2.1.4) and two listening-detail responses (SP 1.2.2).
-**Pupils:** Demonstrate speaking individually.
+**Teacher:** Direct pupils to Workbook p.97, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.97, Activity 1, by listening and ticking the correct pictures of people's abilities.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review clear pronunciation and turn-taking.
