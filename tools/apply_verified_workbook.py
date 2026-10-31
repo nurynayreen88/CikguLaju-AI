@@ -1,7 +1,7 @@
-"""Replace Assessment/PBD activities with verified English Workbook tasks.
+"""Append verified English Workbook practice without replacing Assessment/PBD.
 
 Dry-run by default. Use --apply only after checking the review CSV and backups.
-Other RPH sections are preserved verbatim.
+All existing RPH text is preserved verbatim.
 """
 import argparse
 import csv
@@ -49,15 +49,13 @@ def prepare(source, page, activity):
     match = ASSESSMENT.search(source)
     if not match:
         return None, "assessment_heading_missing"
-    end = re.search(r"(?m)^## |^\*\*QA", source[match.end():])
+    end = re.search(r"(?m)^## |^\\*\\*QA", source[match.end():])
     section_end = match.end() + end.start() if end else len(source)
-    replacement = (
-        f"**Teacher:** Direct pupils to Workbook p.{page}, {activity}; "
-        "explain the task, check individual responses and record achievement "
-        "against the lesson objectives.\n"
-        f"**Pupils:** Complete Workbook p.{page}, {activity}.\n\n"
+    addition = (
+        f"**Workbook practice:** Pupils complete Workbook p.{page}, {activity}. "
+        "Teacher checks answers and provides guidance.\\n\\n"
     )
-    return source[:match.end()] + replacement + source[section_end:], "ready"
+    return source[:section_end] + addition + source[section_end:], "ready"
 
 
 def main():
