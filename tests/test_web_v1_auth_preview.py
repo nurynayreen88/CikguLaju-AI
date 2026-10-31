@@ -52,6 +52,14 @@ class AuthFlowTests(unittest.TestCase):
         self.assertEqual(response.status_code, 403)
         self.assertEqual(self.client.get("/web/auth/whoami").status_code, 401)
 
+    def test_duplicate_signed_fields_rejected(self):
+        self.client.get("/web/auth/login")
+        with self.client.session_transaction() as sess:
+            nonce = sess["web_auth_nonce"]
+        signed = sign({"id": "123456", "auth_date": str(int(time.time()))})
+        query = list(signed.items()) + [("id", "999"), ("state", nonce)]
+        self.assertEqual(self.client.get("/web/auth/callback", query_string=query).status_code, 403)
+
     def test_callback_state_is_one_time(self):
         self.client.get("/web/auth/login")
         with self.client.session_transaction() as sess:
