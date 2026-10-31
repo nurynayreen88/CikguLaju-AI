@@ -25,11 +25,11 @@
 
 ## Activity 2 — Information-gap pairs (25 minutes)
 **Teacher:** Assign one partner Plan A and the other Plan B. Pupils describe three objects or rooms using There's / There are without showing plans, then swap roles. Read the three clues in random order for independent picture choices. Offer printed frames for support and invite confident speakers to add a fourth question.  
-**Pupils:** Describe rooms and objects, compare plans and identify spoken room descriptions. Pupils complete Workbook p.71, Activity 2, by choosing 'There's' or 'There are' to describe the rooms and objects in the pictures.
+**Pupils:** Describe rooms and objects, compare plans and identify spoken room descriptions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Listen to three independent descriptions per pupil, checking correct singular/plural forms, and check three listening choices. Record intelligibility, relevance and listening accuracy separately, noting prompts.  
-**Pupils:** Describe three objects or rooms and identify three rooms.
+**Pupils:** Describe three objects or rooms and identify three rooms. Pupils complete Workbook p.71, Activity 2, by choosing 'There's' or 'There are' to describe the rooms and objects in the pictures.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to describe one difference between the plans.  
