@@ -24,7 +24,7 @@
 
 Pupils record one practical way to improve their English after the speaking survey; no specific Workbook page is prescribed in the SOW.
 
-**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.88, Activity 2 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.88, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.88, Activity 2; look at the picture and write advice using should or shouldn't.
 
 ## Closure (5 minutes)
