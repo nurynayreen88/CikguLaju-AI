@@ -22,7 +22,7 @@
 **Teacher:** Invite groups to exchange clue cards, identify each animal and explain which comparative clue helped them.
 **Pupils:** Guess animals using comparative clues.
 
-**Teacher:** Instruct pupils to complete Workbook p.69, Activity 2 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.69, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
 **Pupils:** Complete Workbook p.69, Activity 2; complete sentences comparing the animals using the words in the box.
 
 ## Closure (5 minutes)
