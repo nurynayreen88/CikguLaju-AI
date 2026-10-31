@@ -68,6 +68,7 @@ def callback():
     session.clear()
     session["web_telegram_user_id"] = user["telegram_user_id"]
     session["web_login_at"] = int(time.time())
+    session["web_logout_csrf"] = secrets.token_urlsafe(24)
     session["web_logout_token"] = secrets.token_urlsafe(24)
     return redirect(url_for(".whoami"))
 
@@ -93,6 +94,10 @@ def logout():
     supplied = request.headers.get("X-CSRF-Token", "")
     expected = session.get("web_logout_token")
     if not expected or not secrets.compare_digest(expected, supplied):
+        abort(403)
+    expected = session.get("web_logout_csrf")
+    provided = request.headers.get("X-CSRF-Token", "")
+    if not expected or not secrets.compare_digest(expected, provided):
         abort(403)
     session.clear()
     return jsonify({"authenticated": False})
