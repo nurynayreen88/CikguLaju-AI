@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Guide pairs to describe the three objects, then practise the supplied polite request for help.
-**Pupils:** Describe three objects and request help politely. Pupils complete Workbook p.108, Activity 1, by matching questions about beach objects with their answers.
+**Pupils:** Describe three objects and request help politely.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three object descriptions and one polite help request per pupil.
-**Pupils:** Provide individual evidence.
+**Pupils:** Provide individual evidence. Pupils complete Workbook p.108, Activity 1, by matching questions about beach objects with their answers.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
