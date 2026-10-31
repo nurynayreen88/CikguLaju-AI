@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Follow TB Activity 5 with Track 41 and practise past-experience answers.
-**Pupils:** Listen to Track 41 and answer questions about past experiences. Where a matching Workbook activity is available, pupils complete it to practise the language skills taught in this lesson.
+**Pupils:** Listen to Track 41 and answer questions about past experiences. Pupils may complete a matching Workbook listening activity about past experiences, if available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to use one verb phrase from the listening to describe a past action.
