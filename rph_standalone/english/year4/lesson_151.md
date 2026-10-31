@@ -26,7 +26,7 @@
 **Teacher:** Ask pupils to demonstrate a useful speaking strategy in a short exchange.
 **Pupils:** Share one strategy to practise.
 
-**PBD:** Observe pupils' questions and responses about English-learning habits, including reasons for advice (SP 2.1.1, 1.2.5).  
+**PBD:** Observe pupils asking and answering questions about English-learning habits and giving practical advice with reasons for main Speaking SP 2.1.1; check their understanding of a partner's spoken responses and advice for complementary Listening SP 1.2.5. Use the English-learning survey, not an unrelated health Workbook task.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
