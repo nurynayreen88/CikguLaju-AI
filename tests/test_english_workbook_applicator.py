@@ -23,7 +23,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
         "**QA:** NOT READY.\n"
     )
 
-    def test_adds_exactly_one_sentence_without_replacing_original(self):
+    def test_replaces_assessment_without_changing_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
         self.assertEqual(updated.count("Workbook p.48, Activity 2"), 1)
@@ -31,15 +31,10 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertIn("Existing closure remains unchanged.", updated)
         self.assertLess(updated.index("Workbook p.48"), updated.index("## Closure"))
 
-    def test_workbook_is_separate_paragraph_before_closure(self):
+    def test_workbook_replacement_ends_before_closure(self):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
-        self.assertIn(
-            "**Pupils:** Perform a short exchange.\n\n"
-            "**Teacher:** Guide pupils to complete Workbook p.48, Activity 2, and check their answers.\n"
-            "## Closure",
-            updated,
-        )
+        self.assertIn("**Pupils:** Complete Workbook p.48, Activity 2.\n\n## Closure", updated)
 
     def test_repeat_application_is_idempotent(self):
         updated, _ = prepare(self.SAMPLE, 48, "Activity 2")
@@ -61,8 +56,8 @@ class WorkbookApplicatorTests(unittest.TestCase):
             "**Audited source mapping:** NON-TEXTBOOK / SOW task.\n\n## Assessment / PBD"
         )
         updated, status = prepare(original, 48, "Activity 2")
-        self.assertIsNone(updated)
-        self.assertEqual(status, "non_textbook_lesson_requires_manual_review")
+        self.assertEqual(status, "ready")
+        self.assertIn("Workbook p.48", updated)
 
     def test_no_assessment_means_no_change(self):
         updated, status = prepare("# Lesson\n## Activity 1\nText\n", 48, "Activity 2")
