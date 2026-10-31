@@ -22,7 +22,7 @@
 **Teacher:** Model a short written transport answer, then ask pupils to respond to the questions using details from the listening.
 **Pupils:** Write short answers about transport.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise listening for details about transport using a suitable Workbook activity, where available; teacher checks their answers.
 
 ## Closure (5 minutes)
 **Teacher:** Elicit one gerund from the transport activity and remind pupils which recycled materials are needed next lesson.
