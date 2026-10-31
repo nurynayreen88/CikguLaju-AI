@@ -20,7 +20,9 @@
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Invite pairs to extend their celebration-date dialogues and give peers a checklist for clear questions and clarification.
-**Pupils:** Perform a dialogue and improve after feedback. Pupils use the Unit 4 Workbook 'Sing a song' ordinal-number task (printed p.30) to support speaking about dates; teacher checks their responses.
+**Pupils:** Perform a dialogue and improve after feedback.
+**Teacher:** Instruct pupils to complete Workbook p.30, Sing a song ordinal-number task, according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.30, Sing a song ordinal-number task; use ordinal numbers to express dates.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to demonstrate one clarification phrase from their celebration-date dialogues.
