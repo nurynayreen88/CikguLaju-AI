@@ -73,6 +73,17 @@ class AuthFlowTests(unittest.TestCase):
                                    base_url="https://other.example")
         self.assertEqual(response.status_code, 403)
 
+    def test_logout_requires_csrf_and_origin(self):
+        self.client.get("/web/auth/login")
+        with self.client.session_transaction() as sess:
+            sess["web_telegram_user_id"] = 123456
+            sess["web_login_at"] = int(time.time())
+            sess["web_logout_csrf"] = "logout-test-token"
+        self.assertEqual(self.client.post("/web/auth/logout", headers={"Origin": "http://localhost"}).status_code, 403)
+        self.assertEqual(self.client.post("/web/auth/logout", headers={"Origin": "http://localhost", "X-CSRF-Token": "wrong"}).status_code, 403)
+        self.assertEqual(self.client.post("/web/auth/logout", headers={"Origin": "http://localhost", "X-CSRF-Token": "logout-test-token"}).status_code, 200)
+        self.assertEqual(self.client.get("/web/auth/whoami").status_code, 401)
+
     def test_expired_session_rejected(self):
         with self.client.session_transaction() as sess:
             sess["web_telegram_user_id"] = 123456
