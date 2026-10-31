@@ -29,7 +29,7 @@
 **Pupils:** Review past-tense verbs in a game.
 
 ## Assessment and differentiation
-**PBD:** Check task-specific responses and note achievement of Reading 3.2.1 and Listening 1.2.3.  
+**PBD:** Check pupils' identification of the main idea in the printed Greg-and-Anna dialogue for Reading 3.2.1 and their responses to the spoken dialogue for Listening 1.2.3. Workbook vocabulary responses are supporting written practice.  
 **Support:** Vary the number and complexity of detail questions to match pupils' needs.
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
