@@ -13,7 +13,7 @@ Teacher reviews the planets.
 Teacher uses planet facts to introduce superlative adjectives and the Grammar Box.
 
 ## Activity 2 (25 minutes)
-Pairs answer Student's Book p.99 questions from memory, then check the text on p.98. Pupils write a short planet worksheet with full sentences, capitals and punctuation.
+Pairs answer Student's Book p.99 questions from memory, then check the text on p.98. Pupils write a short planet worksheet with full sentences, capitals and punctuation. Pupils complete Workbook p.80, Activity 2, by answering questions about the planets in the Solar System.
 
 ## Assessment / PBD (10 minutes)
 Teacher checks two written planet facts for accurate superlatives, capital letters and punctuation. Pupils revise one sentence.
