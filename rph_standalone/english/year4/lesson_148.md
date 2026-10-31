@@ -22,7 +22,8 @@
 **Teacher:** Ask pupils to write their message exchanges and use a peer checklist for clear meaning, suitable health vocabulary and punctuation.
 **Pupils:** Write, exchange and revise a text-message dialogue.
 
-
+**Teacher:** Instruct pupils to complete Workbook p.92, Activity 2 according to the printed instructions. Check their answers and assess individual understanding.
+**Pupils:** Complete Workbook p.92, Activity 2; look at the health problems and write sentences using should or shouldn't.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to read a revised health message and explain one change made after peer feedback.
