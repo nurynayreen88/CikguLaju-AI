@@ -16,7 +16,7 @@ Pupils name planets and write their predicted order from the Sun. Teacher uses t
 Pupils read Student's Book p.98, verify the planet order from the first paragraph, and complete Activity 1. Teacher guides pupils to infer unfamiliar vocabulary from pictures and context.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.80, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Teacher:** Assess reading by asking pupils to identify information in the lesson text about planets and explain which words support their answers. Use Workbook p.80, Activity 1 (label the Solar System diagram) afterward as vocabulary reinforcement, not as the sole reading assessment.
 **Pupils:** Pupils complete Workbook p.80, Activity 1, by naming the planets in the Solar System diagram.
 
 ## Closure (5 minutes)
