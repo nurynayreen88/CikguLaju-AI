@@ -22,7 +22,7 @@
 **Teacher:** Ask two comprehension questions and require pupils to point to the supporting sentence in the text. Record who can identify a relevant detail and explain an unfamiliar word.
 **Pupils:** Find supporting details and explain comprehension answers.
 
-**Teacher:** Instruct pupils to complete Workbook p.91, Activity 4 according to the printed instructions. Check answers and assess individual understanding.
+**Teacher:** If time permits after the core PBD task, instruct pupils to complete Workbook p.91, Activity 4 according to the printed instructions. Check answers as supplementary evidence; retain the original PBD evidence for the main skill.
 **Pupils:** Complete Workbook p.91, Activity 4; read the statements about germs and circle the correct answers.
 
 ## Closure (5 minutes)
