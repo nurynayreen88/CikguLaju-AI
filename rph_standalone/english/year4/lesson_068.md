@@ -22,7 +22,7 @@
 **Teacher action:** Display a short checklist for food spelling, commas in lists and appropriate use of “some”. Model checking one sentence, then organise peer feedback.
 **Pupil action:** Check commas and spelling in a partner's list.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils practise writing about food and healthy eating using a suitable Workbook activity, where available; teacher checks sentence accuracy.
 
 ## Closure (5 minutes)
 **Teacher action:** Display one deliberately incorrect shopping-list sentence and invite a pupil to explain and correct its spelling or punctuation.
