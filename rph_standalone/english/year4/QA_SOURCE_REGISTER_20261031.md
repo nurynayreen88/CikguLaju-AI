@@ -51,3 +51,22 @@ The 109-page scanned Workbook PDF was downloaded and opened. Embedded selectable
 | 95 | 94 | Illustrated *What's the matter?* board-game page | Direct visual |
 
 **Important:** The sampled internal pages show printed page number = PDF page number − 1. This relationship is observed in the samples, not a substitute for checking every page. These are **confirmed page-content observations**, not yet verified lesson-to-Workbook activity assignments. Do not automatically assign them to RPH Lessons without matching each lesson objective and SOW/TB. No production changes or READY approval were made.
+
+## Workbook activity matching — verified visual sample (batch 31 October 2026)
+
+The scanned Workbook was visually reviewed across PDF pages 2–17 (printed pages 3–18). The following lesson RPH files were **actually updated** with matching Workbook page/activity references, retaining their original teaching sequence:
+
+| RPH Lesson | Printed Workbook page | Workbook task / use | Qualification |
+|---|---:|---|---|
+| 002 | 4 | Activity 2, country/nationality questions | Follow-up practice |
+| 004 | 4 | Activity 3, own country/nationality writing | Optional supplement to non-textbook lesson |
+| 009 | 5 | Activity 1, adverbs of frequency and routines | Writing follow-up |
+| 016 | 9 | Now I Can 1, self-assessment | Optional Unit 1 check |
+| 017 | 11 | Activity 1, school-subject crossword | Vocabulary follow-up; **not an audio replacement** |
+| 018 | 12 | Activity 1, timetable and school subjects | Support for spoken questions |
+| 019 | 15 | Activity 1, school-story questions | Reading follow-up |
+| 024 | 12 | Activity 1, household-chores picture prompts | Vocabulary support |
+| 025 | 14 | Project Activity 1, household-chores survey chart | Optional writing support |
+| 027 | 13 | Activity 1, household-chores listening/numbering | Optional follow-up; audio mapping not yet checked |
+
+**Scope:** 10 lesson files changed in this batch. These are visually grounded **suggested supplemental activities**; not claims that SOW requires those exact Workbook pages. Audio recordings and the remaining 150 lesson-to-Workbook matches are not yet independently verified. The source PDF is scanned (no embedded selectable text); do not infer page numbers from a global offset without visual confirmation. Staging only; not READY.
