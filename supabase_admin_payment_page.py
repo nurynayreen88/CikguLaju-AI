@@ -31,8 +31,10 @@ def show_admin_payment_history(cid, page, request, send):
         except (TypeError, ValueError, OverflowError):
             money = "jumlah tidak sah"
         kind = row["kind"]
-        if not row["is_receipt"]:
+        if kind == "rakan_pembangun_approval":
             kind = "Rakan Pembangun (kelulusan akses, bukan resit)"
+        elif not row["is_receipt"]:
+            kind = f"{kind} (belum disahkan sebagai bayaran)"
         lines.append(f"• {html.escape(str(kind))}: {html.escape(money)} | {html.escape(str(row['status']))} | ID {html.escape(uid[-6:])}")
         if uid.isdigit():
             buttons.append([{"text": f"👤 ID {uid[-6:]}", "callback_data": f"admin_user|{uid}"}])
