@@ -19,11 +19,8 @@
 **Pupils:** Listen for details and compare answers in pairs.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model a location response with a suitable preposition, then ask pupils to explain their answers using complete phrases.
-**Pupils:** Explain answers using prepositions and questions.
-
-**Teacher:** Instruct pupils to complete Workbook p.52, the transport-language task, according to the printed instructions. Check their answers and assess individual understanding.
-**Pupils:** Complete Workbook p.52, the transport-language task; review transport words and complete the short travel sentences.
+**Teacher:** Use Workbook p.52, the transport-language task, as the main written practice, following the printed instructions and checking answers. Separately check each pupil's answers to the spoken location and trip details in Student's Book p.61 Activity 4 (CD2 Track 7) as the main Listening PBD evidence for SP 1.2.2; check comprehension of follow-up spoken questions for complementary Listening SP 1.2.5. Model accurate location phrases and provide brief feedback.
+**Pupils:** Complete Workbook p.52 according to the printed instructions, confirm details heard in Activity 4 and answer follow-up listening questions.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to report one location detail from the listening and explain the word that helped them.
