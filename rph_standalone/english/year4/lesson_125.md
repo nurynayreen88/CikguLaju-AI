@@ -19,7 +19,7 @@
 **Pupils:** Discuss favourite events and predict the ending.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.74, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.74, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the reading task, check pupils' understanding of the text and supporting details as evidence for the main Reading SP.
 **Pupils:** Complete Workbook p.74, Activity 1; read the animal story and complete the sentences using the past simple verbs.
 
 ## Closure (5 minutes)
