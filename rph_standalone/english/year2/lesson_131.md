@@ -20,11 +20,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher (25 min):** Read the script twice, then elicit five listening details and two original captions.
-**Pupils:** Respond to five listening prompts and write two captions. Pupils complete Workbook p.112, Activity 1, by listening and writing the names beside the beach pictures.
+**Pupils:** Respond to five listening prompts and write two captions.
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record five detail choices and two meaningful captions. Record individual support needed.
-**Pupils:** Demonstrate the target skill.
+**Pupils:** Demonstrate the target skill. Pupils complete Workbook p.112, Activity 1, by listening and writing the names beside the beach pictures.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
