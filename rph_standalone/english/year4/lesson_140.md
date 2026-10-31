@@ -19,10 +19,7 @@
 **Pupils:** Organise the collected data in a simple chart.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Guide Activity 2 and ask groups to report a partner's sports preference using evidence from their interview notes.
-**Pupils:** Describe a partner's preferences in groups.
-
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.80, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.80, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP. Observe pupils' responses during the lesson to assess the main listening/speaking SP.
 **Pupils:** Complete Workbook p.80, Activity 2; look at the sports picture and complete sentences using very good at, good at or not good at.
 
 ## Closure (5 minutes)
