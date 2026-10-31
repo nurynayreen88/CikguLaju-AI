@@ -22,7 +22,7 @@
 **Teacher:** Guide pupils to assess their use of ordinal numbers, dates and celebration vocabulary against their revision responses.
 **Pupils:** Review their answers and complete a self-assessment checklist.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete the Unit 4 revision and self-assessment, then revisit a language point they need to improve; no specific Workbook page is prescribed in the SOW.
 
 ## Closure (5 minutes)
 **Teacher:** Compare Unit 4 checklists with pupil responses and identify one priority for the next revision session.
