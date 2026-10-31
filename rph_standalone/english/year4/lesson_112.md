@@ -22,7 +22,7 @@
 **Teacher:** Distribute the Unit 7 self-assessment, ask pupils to identify one difficulty, and record which language targets need further support.
 **Pupils:** Complete self-assessment and identify a weak area.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete the Unit 7 self-assessment and revisit one language point they need to improve; no specific Workbook page is prescribed in the SOW.
 
 ## Closure (5 minutes)
 **Teacher:** Help pupils turn one self-assessment difficulty into a specific learning goal for the next lesson.
