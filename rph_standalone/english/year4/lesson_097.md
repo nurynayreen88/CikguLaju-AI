@@ -28,7 +28,7 @@
 **Teacher:** Invite pupils to describe one helpful action and explain when they could do it.
 **Pupils:** Suggest one helpful action.
 
-**PBD:** Check specific helping actions pupils identify from the spoken song (Track 21; disc unverified) for main Listening SP 1.2.2; assess their inference of unfamiliar words from printed lyrics or picture clues for complementary Reading SP 3.2.3. Do not invent a Workbook page or CD number.  
+**PBD:** Check specific helping actions pupils identify from the spoken song (Class CD2 Track 21; TB p.108 verified) for main Listening SP 1.2.2; assess their inference of unfamiliar words from printed lyrics or picture clues for complementary Reading SP 3.2.3. Do not invent a Workbook page; MP3 playback remains untested.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — source/audio-content and Word/PDF QA pending.
