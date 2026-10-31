@@ -19,7 +19,7 @@
 **Pupils:** Choose a suitable title and justify it.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.78, Activity 2 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Assign Workbook p.78, Activity 2 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the reading task, check pupils' understanding of the text and supporting details as evidence for the main Reading SP.
 **Pupils:** Complete Workbook p.78, Activity 2; look at the sports picture and complete the sentences using the correct comparative or superlative forms.
 
 ## Closure (5 minutes)
