@@ -18,11 +18,11 @@
 
 ## Activity 2 — Guided pair speaking (25 minutes)
 **Teacher:** Play CD 1 Track 4, model the dialogue and guide Student's Book p.5 Activity 2, using Teacher's Book pp.18–19 as the lesson reference. Pair pupils to describe characters and listen for details; encourage respectful language about appearance.
-**Pupils:** Describe two characters and identify details from a partner's description. Pupils complete Workbook p.8, Activity 1, to describe differences in characters' appearance using 'has got' and 'hasn't got'.
+**Pupils:** Describe two characters and identify details from a partner's description.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Listen to each pupil's two descriptions; ask two listening-detail questions and record evidence against both SPs.
-**Pupils:** Give individual descriptions and answer oral questions.
+**Teacher:** Direct pupils to Workbook p.8, Activity 1; explain the printed task, check individual answers and record evidence against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.8, Activity 1, to describe differences in characters' appearance using 'has got' and 'hasn't got'.
 
 ## Closure (5 minutes)
 **Teacher:** Use the 'Before leaving' review activity referenced in Teacher's Book p.18.
