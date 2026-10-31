@@ -97,3 +97,23 @@ A new visual contact sheet was rendered from PDF pages 18–35 of the scanned Wo
 ## Unit 5 Workbook matching — continuation
 
 Visual source: scanned Get Smart Plus 4 Workbook, printed pages 39–44, previously inspected. Six new successful lesson edits across two batches: 065 (p.39 Activity 1), 066 (p.39 Activity 2), 067 (p.40 Activities 1–2), 068 (p.40 Activity 3), 070 (p.41 Activity 1), 071 (p.41 Activity 2). Further two lesson edits: 073 (p.43 healthy-eating diary project), 075 (p.44 healthy-eating reading passage). These are **optional follow-up activities**, not SOW-mandated page assignments. The prior safety-tool failures for 066 and 068 were resolved and both files are now committed. Total new lesson edits in this continuation: **4 (066, 068, 073, 075)**. Lessons 074, 078, 079 and 080 are literature, teacher-selected or project lessons and should not receive invented Workbook pages. Audio and export QA remain outstanding. All changes are on staging.
+
+## Unit 6 Workbook — visually inspected batch
+
+Scanned Workbook PDF pages 46–59 were rendered for direct visual inspection. The printed Unit 6 pages 50–56 show: road-safety song/picture (p.50), transport and timetable exercises (p.51), transport vocabulary and sentences (p.52), transport picture prompts (p.53), project/crossword (p.54), Story time dialogue and questions (p.55), and Revision (p.56). The sample also includes the beginning of Unit 7.
+
+Nine lesson files were changed with **optional**, lesson-relevant Workbook follow-ups:
+
+| Lesson | Printed Workbook page | Purpose |
+|---|---:|---|
+| 081 | 50 | Road safety identification |
+| 082 | 50 | Road safety rules |
+| 083 | 51 | Transport and timetable reading |
+| 086 | 52 | Travel vocabulary |
+| 087 | 53 | Transport questions |
+| 088 | 54 | Project vocabulary and reading |
+| 091 | 53 | Transport word review |
+| 092 | 56 | Revision prompts for speaking |
+| 093 | 55 | Story time reading questions |
+
+This is **not** verification of audio recordings or a claim that the SOW mandates these Workbook tasks. Preserve literature/CLIL/project exceptions. No READY approval or main merge.
