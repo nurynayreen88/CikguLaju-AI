@@ -31,6 +31,7 @@ class SupabasePaymentRequestWriteTests(unittest.TestCase):
                                  (1, "10.001", 3), (1, "100000000.00", 3), (1, 10, None),
                                  (0, 10, 3), (1, 10, 0),
                                  (9223372036854775808, 10, 3),
+                                 ("9" * 10000, 10, 3),
                                  (1, 10, 9223372036854775808)]:
             with self.subTest(uid=uid, amount=amount, mid=mid):
                 with self.assertRaises(ValueError):
