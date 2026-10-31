@@ -15,9 +15,10 @@ Teacher plays a suitable action chant and models contractions such as 'I'm' and 
 ## Activity 2 — Language review (25 minutes)
 Pupils read Part A of the SOW worksheet and mark statements Yes or No. Teacher guides revision tasks and pupils write short descriptions of pictured actions using present continuous.
 
-## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.24, Activity 1 (Look and write); ask pupils to use the pictures and verb prompts to answer each question negatively and write the correct present continuous sentence. Check contractions and verb forms.
-**Pupils:** Complete Workbook p.24, Activity 1, by writing negative answers and correcting the pictured actions using the present continuous.
+## PBD (10 minutes)
+Teacher checks written descriptions and pronunciation of contractions. Pupils complete a brief self-assessment.
+
+**Workbook practice:** Complete Workbook p.24, Activity 1, by writing negative answers and correcting the pictured actions using the present continuous. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Teacher reviews common errors. Pupils share one accurate sentence.
