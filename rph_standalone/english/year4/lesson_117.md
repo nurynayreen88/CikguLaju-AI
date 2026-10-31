@@ -22,7 +22,7 @@
 **Teacher:** Distribute five synopsis strips, guide pupils to reorder them and model a sentence describing Mowgli's feelings.
 **Pupils:** Order five synopsis strips and describe his feelings.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils complete a follow-up response to The Jungle Book using the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to describe a feeling about the story and give a reason.
