@@ -22,7 +22,7 @@
 **Teacher:** Ask two comprehension questions and require pupils to point to the supporting sentence in the text. Record who can identify a relevant detail and explain an unfamiliar word.
 **Pupils:** Find supporting details and explain comprehension answers.
 
-Pupils practise reading for details about germs using a suitable Workbook activity, where available; teacher checks their answers.
+
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to cite one fact about germs from the text and use it to justify a true-or-false response.
