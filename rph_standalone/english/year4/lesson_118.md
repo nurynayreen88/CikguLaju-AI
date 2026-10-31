@@ -22,7 +22,7 @@
 **Teacher:** Ask pairs why endangered animals should be protected, provide two sentence starters and note whether their reasons include supporting details.
 **Pupils:** Discuss wildlife protection and justify their views.
 
-Pupils complete a relevant activity in the Workbook based on the vocabulary and language skills learned. Teacher checks pupils' answers and provides guidance where necessary.
+Pupils record two facts from the teacher-prepared listening text about endangered Malaysian animals; no specific Workbook page is prescribed in the SOW.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to suggest one realistic conservation action, then recap the two context clues used during listening.
