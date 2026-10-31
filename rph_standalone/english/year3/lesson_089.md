@@ -14,11 +14,11 @@ Teacher reviews international dishes from Lesson 88. Pupils name a dish and coun
 Teacher displays dishes from around the world. Pupils match names and pictures on worksheet Part A.
 
 ## Activity 2 — Food description (25 minutes)
-Teacher helps pupils choose a dish and gather facts from supplied recipes or reading materials. Pupils draft short descriptions and check their spelling. Pupils complete Workbook p.46, Activity 1, by finding international food names in the word search and writing them.
+Teacher helps pupils choose a dish and gather facts from supplied recipes or reading materials. Pupils draft short descriptions and check their spelling.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check each pupil's written description for relevant details, clear sentences and spelling; ask where one fact was found.
-**Pupils:** Submit their description and point to the supporting reading text.
+**Teacher:** Direct pupils to Workbook p.46, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.46, Activity 1, by finding international food names in the word search and writing them.
 
 ## Closure (5 minutes)
 Pupils share a sentence about a chosen dish.
