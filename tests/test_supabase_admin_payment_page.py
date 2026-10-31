@@ -43,6 +43,13 @@ class AdminPaymentPageTests(unittest.TestCase):
         self.assertIn("&lt;bad&gt;", sent[0][1])
         self.assertNotIn("<script>", sent[0][1])
 
+    def test_invalid_amount_does_not_crash_page(self):
+        sent = []
+        rows = [{"telegram_user_id": 12345678, "kind": "subscription", "amount_rm": "not-a-number", "status": "paid", "event_at": "2026", "is_receipt": True}]
+        with patch("supabase_admin_payment_page.fetch_admin_payment_history", return_value=rows):
+            show_admin_payment_history(99, 0, None, lambda *args: sent.append(args))
+        self.assertIn("jumlah tidak sah", sent[0][1])
+
     def test_pagination(self):
         rows = [{
             "telegram_user_id": 10000000 + i,
