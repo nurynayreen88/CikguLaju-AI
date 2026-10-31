@@ -14,6 +14,12 @@ def _same_amount(raw, expected):
     return actual.is_finite() and actual == expected
 
 
+def _exact_cents(amount):
+    digits = amount.as_tuple().digits
+    places = -amount.as_tuple().exponent
+    return places <= 2 or all(d == 0 for d in digits[-(places - 2):]) if places - 2 <= len(digits) else all(d == 0 for d in digits)
+
+
 def create_payment_request(request, telegram_user_id, amount_rm, telegram_message_id):
     """Create a pending request; return Supabase identity ID.
 
@@ -33,7 +39,7 @@ def create_payment_request(request, telegram_user_id, amount_rm, telegram_messag
         amount = Decimal(str(amount_rm))
     except (InvalidOperation, ValueError, TypeError) as exc:
         raise ValueError("Invalid amount") from exc
-    if not amount.is_finite() or amount <= 0 or amount > Decimal("99999999.99") or amount != amount.quantize(Decimal("0.01")):
+    if not amount.is_finite() or amount <= 0 or amount > Decimal("99999999.99") or not _exact_cents(amount):
         raise ValueError("Invalid amount")
     payload = {
         "telegram_user_id": int(telegram_user_id),
