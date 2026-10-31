@@ -19,8 +19,8 @@
 **Pupils:** Describe food quantities in pairs and ask follow-up questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Listen to each pupil's two food descriptions and check quantity meaning and clarity.
-**Pupils:** Say one 'There is...' and one 'There are...' sentence about the displayed food.
+**Teacher:** Direct pupils to Workbook p.44, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.44, Activity 2, by writing sentences with 'There's some' and 'There are some' about food in the fridge.
 
 ## Closure (5 minutes)
 **Teacher:** Recap the sentence patterns and correct a common error.
