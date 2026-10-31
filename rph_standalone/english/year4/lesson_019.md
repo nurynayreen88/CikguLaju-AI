@@ -21,7 +21,7 @@
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Ask pupils to explain the story's main idea and give a reasoned opinion; use the optional true/false game if time allows.
 **Pupils:** Explain the main idea and give an opinion about the story.
-**Teacher:** Instruct pupils to complete Workbook p.15, Activity 1 according to the printed instructions. Check their answers and assess individual understanding.
+**Teacher:** Use Workbook p.15, Activity 1 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
 **Pupils:** Complete Workbook p.15, Activity 1; answer the questions about the school story.
 
 ## Closure (5 minutes)
