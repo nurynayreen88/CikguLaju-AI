@@ -16,8 +16,9 @@ Teacher distributes animal cards and models simple descriptions.
 Teacher guides Activity 4. Pupils draw a farm containing their assigned animal cards. In pairs, one pupil describes the farm while the partner listens and draws the animals heard; pupils compare both drawings and swap roles.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Use the farm-animal picture in Workbook p.53, Activity 2 as a prompt for pupils to describe the animals aloud in pairs. Assess spoken vocabulary and complete sentences before asking pupils to finish the printed writing task.
-**Pupils:** Pupils complete Workbook p.53, Activity 2, by describing the farm animals and writing sentences about them.
+Teacher observes each pupil describing two farm animals and drawing two details heard from a partner. Pupils compare the drawings and explain one difference.
+
+**Workbook practice:** Pupils complete Workbook p.53, Activity 2, by describing the farm animals and writing sentences about them. Teacher checks answers and provides guidance.
 
 ## Closure (5 minutes)
 Pupils describe one animal on their farm.
