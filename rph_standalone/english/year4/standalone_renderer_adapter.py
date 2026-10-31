@@ -47,6 +47,10 @@ def adapt_year4_standalone(markdown: str) -> str:
             "Main: " + main_sp.group(1).strip() if main_sp else "",
             "Complementary: " + comp_sp.group(1).strip() if comp_sp else "",
         ]))),
+        ("STANDARD PEMBELAJARAN", "\n".join(filter(None, [
+            "Main: " + main_sp.group(1).strip() if main_sp else "",
+            "Complementary: " + comp_sp.group(1).strip() if comp_sp else "",
+        ]))),
         ("TEACHING AND LEARNING MATERIALS", refs.group(1) if refs else ""),
         ("SET INDUCTION", body("Set induction")),
         ("MAIN ACTIVITIES", "\n\n".join(activities)),
