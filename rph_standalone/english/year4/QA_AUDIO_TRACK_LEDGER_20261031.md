@@ -274,3 +274,9 @@ Added `resolve_audio_assets.py`, which joins the verified lesson map to the 220-
 ## Offline regression test file (31 October 2026)
 
 Added `test_audio_mapping.py` (Python unittest) covering verified lesson lookup, CD1 versus CD2 Track 29 isolation, CD2 Track 21 reuse across Lessons 097/098, empty results for unverified Lessons 001/160, and invalid lesson input rejection. This test file was committed to staging but **has not yet been executed in CI**; do not report tests passing without an actual run. It does not test audio playback, permissions, Telegram delivery or Word/PDF output.
+
+## Reconciliation checkpoint — Lesson 030 (31 October 2026)
+
+**Conflict requiring correction before release:** This ledger's initial repository-reference pass records **CD2 Track 29** for Lesson 030, while the separate TB-verified mapping file `QA_VERIFIED_LESSON_AUDIO_MAPPING_20261031.json` records **CD1 Track 29**, Teacher Book p.39, Student Book p.20 Activity 2. These are different MP3 assets; the resolver deliberately uses the independently TB-verified mapping, not this unverified ledger observation.
+
+**Action required:** Inspect the Lesson 030 standalone RPH and TB p.39 side by side, then correct any mistaken disc reference in a proposed RPH patch. Preserve the original RPH until review and approval. Do not promote the ledger's CD2 reference to verified, and do not change the approved mapping without source evidence. Playback and Telegram delivery remain untested.
