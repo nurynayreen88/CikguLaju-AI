@@ -22,7 +22,7 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Pupils underline five details, answer two questions and compare supporting words; the original text is not claimed to be SB p.88 content.  
-**Pupils:** Complete the activity and improve responses after feedback.
+**Pupils:** Complete the activity and improve responses after feedback. Pupils complete Workbook p.88, Activity 1, by reading the clothing poem and colouring the picture.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Check five detail answers and two demonstrated instances of rereading to clarify meaning (SP 3.2.3(i)). Record independent performance and support required.  
