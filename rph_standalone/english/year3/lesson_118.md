@@ -13,10 +13,11 @@ Teacher reviews places, activities and adjectives.
 Groups prepare word cards for home, cinema, shopping centre, film and related adjectives.
 
 ## Activity 2 (25 minutes)
-Pupils sort place, activity and adjective cards, then combine them into sensible or silly sentences and complete TB p.119 Activity 3. Pupils complete Workbook p.61, Activity 2, by matching questions about yesterday with short answers.
+Pupils sort place, activity and adjective cards, then combine them into sensible or silly sentences and complete TB p.119 Activity 3.
 
 ## Assessment / PBD (10 minutes)
-Teacher asks two listening-detail questions. Pupils answer and describe one place using a suitable adjective.
+**Teacher:** Direct pupils to Workbook p.61, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.61, Activity 2, by matching questions about yesterday with short answers.
 
 ## Closure (5 minutes)
 Pupils describe one place and feeling.
