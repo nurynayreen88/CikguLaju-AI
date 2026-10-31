@@ -78,6 +78,22 @@ class AudioResolverTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 mod.resolve_lesson_audio(97)
 
+    def test_missing_manifest_track_fails_closed(self):
+        from unittest.mock import patch
+        import json
+        original = json.loads((HERE / "QA_CLASS_CD_ASSET_MANIFEST_20261031.json").read_text(encoding="utf-8"))
+        original["discs"]["CD2"]["tracks"].pop("20")
+        original_read_text = Path.read_text
+
+        def substituted_read_text(path, *args, **kwargs):
+            if path.name == "QA_CLASS_CD_ASSET_MANIFEST_20261031.json":
+                return json.dumps(original)
+            return original_read_text(path, *args, **kwargs)
+
+        with patch.object(Path, "read_text", substituted_read_text):
+            with self.assertRaises(KeyError):
+                mod.resolve_lesson_audio(97)
+
     def test_no_guessing_for_unverified(self):
         self.assertEqual(mod.resolve_lesson_audio(1), [])
         self.assertEqual(mod.resolve_lesson_audio(160), [])
