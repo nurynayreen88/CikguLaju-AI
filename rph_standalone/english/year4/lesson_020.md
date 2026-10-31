@@ -20,7 +20,7 @@
 
 ## PBD and reinforcement (10 minutes)
 **Teacher:** Model a text-based true/false statement, then ask pupils to write partner quizzes and check each answer against the story.
-**Pupils:** Write true/false quiz statements and check text details. Pupils may complete a matching Workbook activity on reading details and true/false statements, if available; teacher checks their answers.
+**Pupils:** Write true/false quiz statements and check text details. The teacher assesses pupils' own written true/false quiz statements against main Writing SP 4.2.4; no Workbook activity is assigned until its printed page and task are verified.
 
 ## Closure (5 minutes)
 **Teacher:** Invite pupils to correct one false statement using story evidence and share an accurate timetable sentence.
