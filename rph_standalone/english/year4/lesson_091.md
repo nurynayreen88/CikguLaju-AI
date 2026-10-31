@@ -19,11 +19,8 @@
 **Pupils:** Identify transport details and gerund forms.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model a short written transport answer, then ask pupils to respond to the questions using details from the listening.
-**Pupils:** Write short answers about transport.
-
-**Teacher:** Instruct pupils to complete Workbook p.53, the transport picture-prompt task, according to the printed instructions. Check their answers and assess individual understanding.
-**Pupils:** Complete Workbook p.53, the transport picture-prompt task; identify transport words and give short spoken responses.
+**Teacher:** Use Workbook p.53, the transport picture-prompt task, as the main written practice; follow the printed instructions and check pupils' answers. Separately check each pupil's responses to the spoken transport details in Student's Book p.63 Activities 3–4 (CD2 Tracks 11–12) as the main Listening PBD evidence for SP 1.2.2. Model a short written transport answer and assess the accuracy of pupils' written responses for complementary Writing SP 4.2.3.
+**Pupils:** Complete Workbook p.53 according to the printed instructions; confirm transport details heard in the recording and write short answers about transport.
 
 ## Closure (5 minutes)
 **Teacher:** Elicit one gerund from the transport activity and remind pupils which recycled materials are needed next lesson.
