@@ -42,3 +42,11 @@ The source `Get Smart Plus 4 Workbook.pdf` (Google Drive file `1vFEGRSrG0ANTweKV
 **Lesson 030 relevance:** Printed WB p.14 Activity 1 provides independently observed household-duty sentence writing and is a **candidate** for the lesson's Writing 4.3.2 practice; however the current RPH focuses on correctly spelling chore cards and SB p.20 Activities 1–2. This candidate is **not yet a confirmed lesson-level TB/SOW assignment**. Printed WB p.15 Activity 3 is also a possible grammar/writing extension but has not been source-mapped to Lesson 030. Do not alter the existing lesson or claim that either is required until TB/SOW sequencing is checked.
 
 **Assessment:** Printed WB p.15 Activity 1 is listening-based, so a written answer alone should not replace observation of the recording for Listening 1.2.5. No MP3 playback was verified in this inspection.
+
+## Lesson 030 — SOW comparison and staging RPH change
+
+Directly checked the KPM Year 4 SOW section **LESSON: 30 (Writing 6)** (Scheme of Work p.66). It prescribes SB p.20 Activities 1–2 and TB pp.38–39; **no Workbook page is prescribed**. Its printed lesson outline says **“CD2, Track 29”** for Activity 2, which conflicts with the separately recorded TB-verified **CD1 Track 29**. Preserve this discrepancy for source reinspection; do not silently substitute SOW CD2 or treat the CD assignment as fully reconciled.
+
+A **single optional Workbook sentence** was added to staging `lesson_030.md` in commit `1ca15ddd1fa48ab0be1a47143911fa9e2fc3d57d`: printed WB p.14 Activity 1, household-duty sentences from pictures, with spelling checked. This task was visually observed in the Workbook but **is an optional supplementary exercise, not a SOW/TB-prescribed lesson assignment**. Existing SB activities, listening evidence, and DRAFT status were preserved.
+
+**Open gate:** Inspect TB p.39 directly to resolve the CD1/CD2 discrepancy; check time allocation before considering optional WB work for production. Audio playback and Telegram delivery remain untested.
