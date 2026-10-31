@@ -63,8 +63,8 @@ def validate():
                 errors.append(f"Lesson {lesson}: duplicate mapping {key}")
             seen.add(key)
             asset = discs.get(disc, {}).get("tracks", {}).get(str(track))
-            if not asset:
-                errors.append(f"Lesson {lesson}: missing {disc} Track {track}")
+            if asset is None:
+                errors.append(f"Lesson {lesson}: missing or null {disc} Track {track}")
                 continue
             if not isinstance(asset, dict) or not isinstance(asset.get("file_id"), str):
                 errors.append(f"Lesson {lesson}: invalid asset metadata for {disc} Track {track}")
