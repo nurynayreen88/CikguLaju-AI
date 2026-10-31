@@ -27,7 +27,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
         self.assertEqual(updated.count("Workbook p.48, Activity 2"), 2)
-        self.assertIn("**Teacher:** Check pupils' dialogue.", updated)
+        self.assertNotIn("**Teacher:** Check pupils' dialogue.", updated)
         self.assertIn("Existing closure remains unchanged.", updated)
         self.assertLess(updated.index("Workbook p.48"), updated.index("## Closure"))
 
