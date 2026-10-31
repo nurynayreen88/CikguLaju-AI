@@ -163,3 +163,17 @@
 **160/160 lesson Markdown files inspected for explicit numbered audio-track references** across the preceding ledger sections. This is a **repository inventory only**. It is NOT a complete SOW-to-track audit, a CD index check, an MP3 inventory, or proof that all prescribed tracks are included.
 
 Priorities before READY: (1) compare SOW instructions for every lesson marked 'none observed', especially Listening lessons 121–138; (2) resolve disc IDs for Tracks 11–61, 68 and 72 wherever unspecified; (3) locate and play the actual MP3 files; (4) test Telegram download mappings; (5) preserve all existing references until evidence supports a correction. No main merge or DB mutation.
+
+## SOW cross-check — Lessons 121–138 (31 October 2026)
+
+Official source: Primary Year 4 SK Scheme of Work, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view.
+
+- **123 (Listening 24):** SOW requires Phonics 9 Activities 1–2 (SB p.127, TB pp.189–190). The SOW does not state a numbered CD/Track in its lesson outline. The RPH now flags a **Teacher's Book / actual recording verification gate**, not an invented track.
+- **125 (Reading 24):** SOW asks pupils to read the story independently, discuss it and narrate. It does not explicitly prescribe a CD in this lesson; no track added.
+- **129 (Listening 25):** SOW explicitly instructs the teacher to **play the sports song** for SB p.93 Activity 1, TB pp.138–139. The RPH has no numbered track. **Confirmed audio-requirement gap**; verify CD/Track and MP3 before READY.
+- **130 (Speaking 25):** SOW includes optional 'sing the next line' using the preceding sports song. Reuse of that song should be verified against TB; not a mandatory new track.
+- **134 (Listening 26):** SOW explicitly instructs the teacher to **play three interviews** for SB p.95 Activity 4, TB pp.140–141. The RPH has no numbered track. **Confirmed audio-requirement gap**; verify CD/Track and MP3 before READY.
+- **135 (Speaking 26):** SOW uses Activity 5 (SB p.95, TB p.141), not an explicitly numbered audio track in its outline; no track added.
+- **121 (Writing 23):** SOW lists complementary Listening SP 1.2.2 but does not explicitly identify a CD/Track in the lesson outline. Preserve the SP; check assessment evidence separately.
+
+**Source discipline:** These are findings from the actual SOW text, not MP3 playback. Only 129 and 134 have unequivocal prescribed *play-a-recording* instructions among the sampled lessons. 123 needs TB-level verification. No new CD or track number is asserted.
