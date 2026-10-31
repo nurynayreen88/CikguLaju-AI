@@ -19,8 +19,8 @@
 **Pupils:** Use pictures to predict and check listening details.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Model an opinion with a reason about Independence Day and invite pupils to share their own views.
-**Pupils:** Discuss Independence Day in pairs and justify an opinion. Pupils may complete a matching Workbook activity about celebrations, if available; teacher checks their answers.
+**Teacher:** Check pupils' true/false responses to the story recording (CD1 Track 56) and their identification of supporting spoken details as the main Listening PBD evidence for SP 1.2.3 and 1.2.2. Model an opinion with a reason about Independence Day and invite pupils to share their views as an extension. Do not assign an unspecified Workbook task until its printed page and activity are verified.
+**Pupils:** Confirm true/false listening answers using details heard in the recording, then discuss Independence Day and justify an opinion.
 
 ## Closure (5 minutes)
 **Teacher:** Ask pupils to justify one true/false response with a listening clue and express a reasoned opinion.
