@@ -51,3 +51,37 @@
 5. Download-link test from the Telegram bot.
 
 **Current finding:** Only one MP3 link was observed in the first 30 lesson files (Lesson 001, CD1 Track 3). This is a file-reference inventory, not an exhaustive Drive or bot-assets audit. The remaining audio links are **not verified**, rather than proven absent. No production merge or DB changes. All remain DRAFT.
+
+## Lessons 031–060 — repository-reference pass (31 October 2026)
+
+| Lesson | Track references observed in RPH | Follow-up |
+|---|---|---|
+| 031 | None observed | Check SOW before marking no-audio |
+| 032 | Track 35; CD unresolved | Check SOW/TB and MP3 |
+| 033–034 | None observed | Check SOW |
+| 035 | CD1 Tracks 39 and 38 | Confirm task order and both files; do not assume numerical order |
+| 036–037 | None observed | Check SOW |
+| 038 | CD1 Tracks 40 and 41 | Verify both MP3 files |
+| 039 | None observed | Check SOW |
+| 040 | CD1 Track 42 | Verify MP3 |
+| 041 | CD1 Track 43 | Verify MP3 |
+| 042 | None observed | Check SOW |
+| 043 | CD3 Tracks 10 and 11 | Verify both MP3 files and tasks |
+| 044 | None observed | Check SOW |
+| 045 | CD1 Track 47 | Verify MP3 |
+| 046 | CD1 Track 49 | Verify MP3 |
+| 047 | None observed | Check SOW |
+| 048 | CD1 Track 51 | Verify MP3 |
+| 049 | CD1 Tracks 52 and 53 | Verify both MP3 files |
+| 050 | CD1 Track 54 | Verify MP3 |
+| 051 | None observed | Check SOW |
+| 052 | CD1 Track 55 | Verify MP3 |
+| 053 | None observed | Check SOW |
+| 054 | CD1 Track 56 | Verify MP3 |
+| 055 | CD1 Track 58 | Verify MP3 |
+| 056 | CD1 Track 59 | Verify MP3 |
+| 057–058 | None observed | Check SOW |
+| 059 | Track 61; CD unresolved | Check SOW/TB and MP3 |
+| 060 | None observed | Check SOW |
+
+**Interpretation:** “None observed” means the lesson Markdown has no explicit numbered track reference; it is **not** confirmation that the SOW requires no audio. This pass did not retrieve or play MP3 files. In particular, Lesson 035 lists CD1 Tracks 39 and 38; preserve both until the original activity order is confirmed.
