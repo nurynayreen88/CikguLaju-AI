@@ -19,7 +19,7 @@
 **Pupils:** Read Part Two and check predictions while listening.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.82, Activity 1 according to the printed instructions. Check the Workbook answers to assess understanding; retain oral or listening observation when required by the main SP.
+**Teacher:** Use Workbook as the main written Assessment/PBD task: instruct pupils to complete Workbook p.82, Activity 1 according to the printed instructions. Check the Workbook answers as the main written exercise and assess reading comprehension for Main SP 3.2.2 through pupils' identification of story details and evidence from Part Two; use the picture sequencing and heading-matching responses as additional reading evidence for SP 3.3.1.
 **Pupils:** Complete Workbook p.82, Activity 1; read the story and complete the sentences using the past simple verbs.
 
 ## Closure (5 minutes)
