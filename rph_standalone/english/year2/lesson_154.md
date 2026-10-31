@@ -24,7 +24,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher (10 min):** Record three object descriptions and one polite help request per pupil.
-**Pupils:** Provide individual evidence. Pupils complete Workbook p.108, Activity 1, by matching questions about beach objects with their answers.
+**Pupils:** Provide individual evidence.
 
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
