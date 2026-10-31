@@ -23,11 +23,11 @@
 
 ## Activity 2 — Guided practice (25 minutes)
 **Teacher:** Read five original cues twice in mixed order. Pupils select picture cards and check one unfamiliar word in the class reference resource.  
-**Pupils:** Complete the task, discuss answers and correct errors. Pupils complete Workbook p.82, Activity 1, by finding and circling the clothes words in the wordsearch.
+**Pupils:** Complete the task, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Check five individual listening choices and observe one independent reference lookup. Note prompts required.  
-**Pupils:** Respond individually.
+**Pupils:** Respond individually. Pupils complete Workbook p.82, Activity 1, by finding and circling the clothes words in the wordsearch.
 
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
