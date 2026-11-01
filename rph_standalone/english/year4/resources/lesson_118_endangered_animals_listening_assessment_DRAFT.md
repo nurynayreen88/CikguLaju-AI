@@ -36,3 +36,7 @@ Sentence starters: “We should protect them because …” / “We can … beca
 - **Extension:** Ask pupils to explain why a forest habitat matters to more than one animal.
 
 **Approval status:** DRAFT — teacher must check script accuracy, age suitability and official SP/SOW alignment. This is an original teaching resource, not an official textbook extract.
+
+
+## Source and vocabulary verification
+The listening script is original teacher-created material, not Student's Book or official audio dialogue. Confirm the endangered-animal theme, vocabulary load, word-inference prompts and speaking task against the official Lesson 118 SOW and relevant Student's Book unit. Malayan tiger and Malayan tapir are factual animal examples, not named story characters; replace them if the approved lesson source specifies different animals. Do not label this script as a textbook transcript. Status remains DRAFT.
