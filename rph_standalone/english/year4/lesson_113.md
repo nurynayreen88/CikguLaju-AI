@@ -4,7 +4,7 @@
 **Main SP:** 1.2.5  
 **Complementary SP:** 1.3.1  
 **Duration:** 60 minutes  
-**References:** SB p.81 Activity 1; TB p.122; animal pictures; Primary Year 4 SK SOW Lesson 113
+**References:** SB p.81 Activity 1; TB p.122; animal pictures; resources/lesson_113_animal_listening_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 113
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce animal pictures and familiar adjectives.
