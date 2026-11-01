@@ -42,3 +42,27 @@ def pdp_options(database_path, year, subject_code, unit_title):
     if unit_title.strip() not in available_units:
         return []
     return [{'value': str(r['id']), 'label': 'PdP ' + str(r['pdp_no']) + ' — ' + str(r.get('subtopic') or r.get('topic') or ''), 'standalone_rph_verified': False} for r in records if (r.get('unit_title') or '').strip() == unit_title]
+
+
+PJPK_COMPONENTS = (
+    {"value": "PJ", "label": "Pendidikan Jasmani (PJ)"},
+    {"value": "PK", "label": "Pendidikan Kesihatan (PK)"},
+)
+
+
+def component_options(subject_code):
+    """PJPK alone has an extra choice; other subjects retain four steps."""
+    return [dict(item) for item in PJPK_COMPONENTS] if subject_code == "PJPK" else []
+
+
+def verified_component_records(records, subject_code, component=None):
+    """Never infer PJ/PK from a title or include unclassified records."""
+    if subject_code != "PJPK":
+        if component not in (None, ""):
+            raise ValueError("component is only valid for PJPK")
+        return list(records)
+    if component not in ("PJ", "PK"):
+        raise ValueError("PJPK requires PJ or PK")
+    return [record for record in records
+            if record.get("component_verified") is True
+            and record.get("component") == component]
