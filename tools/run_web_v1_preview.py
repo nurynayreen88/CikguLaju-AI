@@ -36,6 +36,8 @@ def options():
     try:
         year = int(request.args.get("year", ""))
         kind = request.args.get("kind", "")
+        if kind not in ("subjects", "units", "pdp"):
+            return jsonify({"error": "invalid option kind"}), 400
         if kind == "subjects":
             return jsonify(subject_options(year))
         db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
