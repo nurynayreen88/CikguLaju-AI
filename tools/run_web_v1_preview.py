@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options, component_options
 from web_v1_verified_pdp import list_explicit_pjpk_entries
+from web_v1_entitlements import display_trusted_account
 PREVIEW = ROOT / "web_v1_preview" / "index.html"
 app = Flask(__name__)
 
@@ -78,6 +79,16 @@ def options():
 @app.get("/api/shared/status")
 def shared_status():
     return jsonify({"shared_backend_connected": False, "telegram_account_linked": False, "generation_enabled": False, "download_enabled": False})
+
+@app.get("/api/account/status")
+def account_status():
+    """Fail closed until the shared Telegram authentication service is wired."""
+    return jsonify({
+        **display_trusted_account({"authenticated": False}),
+        "authenticated": False,
+        "shared_backend_connected": False,
+    }), 401
+
 
 @app.get("/api/materials")
 def materials():
