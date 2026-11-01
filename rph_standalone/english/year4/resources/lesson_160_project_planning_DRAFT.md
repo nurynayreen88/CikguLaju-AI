@@ -15,3 +15,39 @@ SOW Lesson 160 leaves topic, standards and resources to the teacher. This is an 
 **PBD:** Observe planned language outcomes against the teacher's chosen standards, with evidence from the guide and presentation.
 
 **Status:** DRAFT; no fixed SOW project topic is claimed.
+
+
+## Printable teacher approval and assessment record
+**Do not generate a final RPH or mark READY until these fields are approved.**
+Class/date: ______  Teacher: ______
+Approved project topic: ______
+Main DSKP SP (exact code and wording): ______
+Complementary DSKP SP (exact code and wording): ______
+Source(s) for selected standards: ______
+Expected product and intended audience: ______
+Main SP observable success criterion: ______
+Complementary SP observable success criterion: ______
+Materials and accessibility adaptations: ______
+
+## Printable pupil group plan
+Group: ______  Topic confirmed by teacher: ______
+Our project question: ______
+Our audience: ______
+Our three key messages or ideas: 1. ______ 2. ______ 3. ______
+Role 1 / responsibility: ______
+Role 2 / responsibility: ______
+Role 3 / responsibility: ______
+Materials: ______
+Evidence we will show the teacher: ______
+One thing to improve after feedback: ______
+
+## Individual PBD — criterion-based, not an assumed SP
+Pupil: ______  Group: ______
+Evidence for approved Main SP: ______
+Main SP success criterion achieved: Yes / With support / Not yet
+Evidence for approved Complementary SP: ______
+Complementary SP success criterion achieved: Yes / With support / Not yet
+Teacher's next action: ______
+Peer feedback: One specific strength ______; one improvement ______
+
+**Source and release gate:** Lesson 160 is teacher-selected project-based learning. The optional English Tips for New Pupils sample is teacher-created, not an official textbook project. Do not invent standards, textbook pages, characters or Workbook activities.
