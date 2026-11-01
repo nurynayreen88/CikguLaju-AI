@@ -37,5 +37,17 @@ class PairingSessionTests(unittest.TestCase):
         self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, lambda uid: {"telegram_user_id": uid}, self.secret, now=1003))
 
 
+    def test_lookup_failure_consumes_challenge_and_fails_closed(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
+        def broken_lookup(uid):
+            raise RuntimeError("database unavailable")
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, broken_lookup, self.secret, now=1002))
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, lambda uid: {"telegram_user_id": uid}, self.secret, now=1003))
+
+    def test_boolean_identity_cannot_impersonate_numeric_id(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 1, now=1001))
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, lambda uid: {"telegram_user_id": True}, self.secret, now=1002))
+
+
 if __name__ == "__main__":
     unittest.main()
