@@ -37,6 +37,13 @@ class AccountStatusTests(unittest.TestCase):
         self.assertEqual(response.json["status"], "Belum disambungkan")
         self.assertFalse(response.json["authenticated"])
 
+    def test_preview_page_requests_server_status(self):
+        from tools.run_web_v1_preview import app
+        response = app.test_client().get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'/api/account/status', response.data)
+        self.assertIn(b'credentials:"same-origin"', response.data)
+
     def test_free_credits(self):
         self.assertEqual(display_access(free_remaining=7, today=date(2026, 11, 1)),
                          {"status": "Percuma", "access": "7/10 janaan percuma berbaki"})
