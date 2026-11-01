@@ -4,7 +4,7 @@
 **Main SP:** 1.3.1  
 **Complementary SP:** 2.1.4  
 **Duration:** 60 minutes  
-**References:** Teacher-prepared listening on endangered Malaysian animals (see accompanying draft script); pictures; Primary Year 4 SK SOW Lesson 118
+**References:** Teacher-prepared listening on endangered Malaysian animals; resources/lesson_118_endangered_animals_listening_assessment_DRAFT.md (script, pupil questions, answers, PBD); pictures; Primary Year 4 SK SOW Lesson 118
 
 ## Set induction (10 minutes)
 **Teacher:** Use two animal pictures to elicit comparative adjectives and check the meaning of each comparison.
