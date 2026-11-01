@@ -20,7 +20,10 @@ class Lesson030AdapterTest(unittest.TestCase):
                     self.assertIn(field, rendered)
                 self.assertIn("Activity 1", rendered)
                 self.assertIn("Activity 2", rendered)
-                self.assertTrue("PBD" in rendered or "Reinforcement" in rendered)
+                main_activities = rendered.split("MAIN ACTIVITIES:\n", 1)[1].split("\nCLOSURE:", 1)[0]
+                self.assertRegex(main_activities, r"(?im)^(?:PBD|Reinforcement)\\b")
+                self.assertIn("Activity 1", main_activities)
+                self.assertIn("Activity 2", main_activities)
 
     def test_pbd_heading_variants(self):
         from standalone_renderer_adapter import adapt_year4_standalone
