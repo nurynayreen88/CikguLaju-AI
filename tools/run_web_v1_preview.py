@@ -16,6 +16,7 @@ from flask import Flask, send_file, jsonify, request
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options, component_options
+from web_v1_verified_pdp import list_explicit_pjpk_entries
 PREVIEW = ROOT / "web_v1_preview" / "index.html"
 app = Flask(__name__)
 
@@ -53,7 +54,14 @@ def options():
             component = request.args.get("component", "")
             if component not in ("PJ", "PK"):
                 return jsonify({"error": "select PJ or PK"}), 400
-            return jsonify([])  # No verified PJ/PK mapping in current RPT schema.
+            records = list_explicit_pjpk_entries(db, year, component)
+            if kind == "units":
+                names = dict.fromkeys((r.get("unit_title") or "").strip() for r in records)
+                return jsonify([{"value": n, "label": n} for n in names if n])
+            unit = request.args.get("unit", "")
+            if not unit or len(unit) > 300:
+                return jsonify({"error": "invalid unit"}), 400
+            return jsonify([{"value": str(r["id"]), "label": "PdP " + str(r["pdp_no"]) + " — " + str(r.get("subtopic") or r.get("topic") or ""), "standalone_rph_verified": False} for r in records if (r.get("unit_title") or "").strip() == unit])
         if kind == "units":
             return jsonify(unit_options(db, year, subject))
         if kind == "pdp":
