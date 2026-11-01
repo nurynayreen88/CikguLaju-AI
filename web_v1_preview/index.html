@@ -8,7 +8,7 @@
 <header class="top"><a class="brand" href="#utama"><span class="logo" aria-hidden="true" style="font-size:17px;font-weight:900;letter-spacing:-.07em">CL<span style="font-size:11px;color:#a5f3d6;align-self:end;margin-bottom:12px">AI</span></span><span><strong>CikguLaju AI</strong><small>Ruang kerja digital guru</small></span></a><span class="preview">● PRATONTON STAGING</span></header>
 <div class="layout"><nav class="sidebar" aria-label="Navigasi utama"><div class="navtitle">MENU UTAMA</div><a class="navitem active" href="#utama" aria-current="page"><span aria-hidden="true">🏠</span> Dashboard</a><a class="navitem" href="#form-title"><span aria-hidden="true">📝</span> Sediakan Bahan</a><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">📅</span> RPH Hari Ini</span><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">🗓️</span> RPH Minggu Ini</span><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">📚</span> RPT 2027</span><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">👤</span> Profil Saya</span><div class="sidefoot"><strong id="account-status">Status Pengguna — Belum disambungkan</strong><div id="account-access">Akses — Sila sambungkan akaun Telegram</div><small>Status, baki percuma dan tarikh tamat VIP akan dipaparkan berdasarkan akaun sebenar selepas integrasi.</small></div><div class="sidefoot">Satu akaun Telegram untuk bot dan web selepas integrasi disahkan.</div></nav>
 <main class="main" id="utama"><section class="hero"><div class="kicker">Selamat datang, cikgu!</div><h1>Rancang PdP dengan lebih mudah.</h1><p>Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP. Bahasa Melayu, English dan semua subjek menggunakan langkah yang sama, tanpa menu tambahan.</p><span class="chip">✨ Mudah dipilih · Ringkas · Mesra telefon</span></section>
-<section class="section" aria-labelledby="login-title"><div class="card"><h2 id="login-title" style="margin:0 0 9px;font-size:1.13rem">🔐 Log Masuk dengan Telegram</h2><p style="font-size:.88rem;color:#55736b;line-height:1.6;margin:0">Cikgu boleh membuka web di komputer dan mengesahkan akaun menggunakan Telegram di telefon. Telegram Desktop tidak diperlukan.</p><div class="statusline" role="status" id="telegram-login-readiness">Pengesahan Telegram dan QR masih dalam pembangunan. Tiada kod QR aktif atau permintaan kata laluan buat masa ini.</div><p style="font-size:.82rem;color:#647c75;line-height:1.6">Selepas integrasi disahkan, sesi login web akan menggunakan akaun Telegram yang sama. Status Rakan Pembangun, VIP dan baki janaan hanya akan dipaparkan selepas pengesahan sebenar.</p></div></section>
+<section class="section" aria-labelledby="login-title"><div class="card"><h2 id="login-title" style="margin:0 0 9px;font-size:1.13rem">🔐 Log Masuk dengan Telegram</h2><p style="font-size:.88rem;color:#55736b;line-height:1.6;margin:0">Cikgu boleh membuka web di komputer dan mengesahkan akaun menggunakan Telegram di telefon. Telegram Desktop tidak diperlukan.</p><div class="statusline" role="status" id="telegram-login-readiness">Menyemak konfigurasi login Telegram…</div><div id="telegram-login-widget" style="margin-top:14px"></div><button class="primary" type="button" id="telegram-logout" hidden style="margin-top:12px">Log keluar</button><p style="font-size:.82rem;color:#647c75;line-height:1.6">Selepas integrasi disahkan, sesi login web akan menggunakan akaun Telegram yang sama. Status Rakan Pembangun, VIP dan baki janaan hanya akan dipaparkan selepas pengesahan sebenar.</p></div></section>
 <section class="stats" aria-label="Ringkasan akaun"><div class="card stat"><small>🎁 Percubaan pengguna baharu</small><strong>10 janaan</strong><p>Ini jumlah tawaran, bukan baki sebenar. Baki akan dipaparkan selepas log masuk.</p></div><div class="card stat"><small>🤝 Status keahlian</small><strong style="font-size:1.18rem">Rakan Pembangun</strong><p>Status sebenar akan disemak melalui akaun Telegram yang disahkan.</p></div></section>
 <section class="section" aria-labelledby="form-title"><div class="sectionhead"><h2 id="form-title">📝 Sediakan Bahan</h2><span class="hint">Aliran sama untuk semua subjek</span></div><div class="card"><div class="steps" aria-label="Langkah pemilihan"><span class="step">1 · Tahun</span><span class="step">2 · Subjek</span><span class="step">3 · Unit / Tajuk</span><span class="step">4 · Lesson / PdP</span></div><div class="formgrid"><div class="field"><label for="tahun">Tahun / Tingkatan</label><select id="tahun"><option value="">Pilih tahun</option><option>Tahun 1</option><option>Tahun 2</option><option>Tahun 3</option><option>Tahun 4</option><option>Tahun 5</option><option>Tahun 6</option></select></div><div class="field" id="subjek-field" hidden><label for="subjek">Subjek</label><select id="subjek" disabled><option value="">Pilih tahun dahulu</option><option>Bahasa Inggeris</option><option>Bahasa Melayu</option><option>Matematik</option><option>Sains</option><option>Pendidikan Islam</option><option>PJPK</option></select></div><div class="field" id="pjpk-component-field" hidden><label for="pjpk-component">Bidang PJPK</label><select id="pjpk-component" disabled><option value="">Pilih PJ atau PK</option><option value="PJ">Pendidikan Jasmani (PJ)</option><option value="PK">Pendidikan Kesihatan (PK)</option></select></div><div class="field" id="unit-field" hidden><label for="unit">Unit / Tajuk</label><select id="unit" disabled><option>Menunggu sambungan database</option></select></div><div class="field" id="lesson-field" hidden><label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Menunggu sambungan database</option></select></div></div><div id="show-materials-wrap" hidden style="margin-top:16px"><button class="primary" type="button" id="show-materials">Papar Bahan</button></div><div class="card" id="materials-panel" hidden style="margin-top:18px;padding:19px;border-radius:14px;box-shadow:none;background:#f8fbfa" aria-labelledby="materials-title">
 <h3 id="materials-title" style="margin:0 0 8px;font-size:1rem">📦 Bahan PdP / Teaching Materials</h3>
@@ -74,7 +74,7 @@ reset(subject,"Pilih tahun dahulu");reset(unit,"Pilih subjek dahulu");reset(less
   const statusEl=document.getElementById("account-status");
   const accessEl=document.getElementById("account-access");
   try{
-    const response=await fetch("/api/account/status",{credentials:"same-origin",cache:"no-store"});
+    const response=await fetch("/api/auth/telegram/account",{credentials:"same-origin",cache:"no-store"});
     if(!response.ok)return;
     const data=await response.json();
     if(data.authenticated!==true)return;
@@ -106,5 +106,54 @@ reset(subject,"Pilih tahun dahulu");reset(unit,"Pilih subjek dahulu");reset(less
       el.textContent = "Status login tidak dapat disahkan. Login Telegram dan QR tidak tersedia dalam pratonton ini.";
     });
 })();
+</script>
+
+<script>
+window.onTelegramAuth = async function(user) {
+  const status = document.getElementById("telegram-login-readiness");
+  try {
+    const response = await fetch("/api/auth/telegram/widget", {
+      method:"POST", credentials:"same-origin", headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(user)
+    });
+    if (!response.ok) throw new Error(response.status === 403 ? "Akaun Telegram belum berdaftar dalam CikguLaju." : "Pengesahan Telegram gagal.");
+    status.textContent = "Login berjaya. Akaun CikguLaju telah disahkan.";
+    document.getElementById("telegram-logout").hidden = false;
+    location.reload();
+  } catch (error) { status.textContent = error.message || "Login tidak berjaya."; }
+};
+(async function setupTelegramLogin(){
+  const status = document.getElementById("telegram-login-readiness");
+  const holder = document.getElementById("telegram-login-widget");
+  const logout = document.getElementById("telegram-logout");
+  try {
+    const session = await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store"});
+    if (session.ok) {
+      status.textContent = "Akaun Telegram telah disambungkan pada komputer ini.";
+      logout.hidden = false;
+      return;
+    }
+    const response = await fetch("/api/auth/telegram/capabilities",{cache:"no-store"});
+    const caps = await response.json();
+    if (!caps.telegram_widget_enabled || !caps.bot_username) {
+      status.textContent = "Login Telegram belum dikonfigurasi pada servis staging. Tiada data atau kata laluan diminta.";
+      return;
+    }
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://telegram.org/js/telegram-widget.js?22";
+    script.setAttribute("data-telegram-login", caps.bot_username);
+    script.setAttribute("data-size", "large");
+    script.setAttribute("data-userpic", "false");
+    script.setAttribute("data-request-access", "write");
+    script.setAttribute("data-onauth", "onTelegramAuth(user)");
+    holder.appendChild(script);
+    status.textContent = "Sila sahkan akaun Telegram. Pastikan domain web telah didaftarkan melalui BotFather.";
+  } catch (_) { status.textContent = "Status login tidak dapat disahkan. Cuba semula kemudian."; }
+  logout.addEventListener("click", async function(){
+    await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});
+    location.reload();
+  });
+}());
 </script>
 </body></html>
