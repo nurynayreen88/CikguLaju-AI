@@ -14,6 +14,10 @@ class PreviewApiTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTrue(any(x['value'] == 'ENGLISH' for x in response.json))
 
+    def test_unknown_option_kind_is_bad_request(self):
+        response = self.client.get("/api/options?kind=unknown&year=3")
+        self.assertEqual(response.status_code, 400)
+
     @patch.dict('os.environ', {'CIKGULAJU_WEB_PREVIEW_DB': ''})
     def test_units_fail_closed_without_database(self):
         response = self.client.get('/api/options?kind=units&year=3&subject=ENGLISH')
