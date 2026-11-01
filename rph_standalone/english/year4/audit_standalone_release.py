@@ -33,7 +33,7 @@ def audit(root=ROOT):
         for label in required:
             match = re.search(
                 r"(?ms)^" + re.escape(label) +
-                r":\\n(.*?)(?=^[A-Z][A-Z ]+:\\n|\\Z)", adapted
+                r":\n(.*?)(?=^[A-Z][A-Z ]+:\n|\Z)", adapted
             )
             code = label.lower().replace(" ", "_")
             if not match:
