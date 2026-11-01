@@ -1,0 +1,29 @@
+name: Web RPH staging tests
+
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+  pull_request:
+    paths:
+      - 'web/**'
+      - 'tests/test_web_*.py'
+      - '.github/workflows/web-rph-staging-tests.yml'
+  workflow_dispatch:
+
+jobs:
+  isolated-rph-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated renderer test dependencies
+        run: python -m pip install python-docx reportlab
+      - name: Test isolated renderer and approved-record reader
+        run: |
+          python -m unittest discover -s tests -p 'test_web_rph_renderer.py' -v
+          python -m unittest discover -s tests -p 'test_web_approved_rph_reader.py' -v
