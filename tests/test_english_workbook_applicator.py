@@ -109,7 +109,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
         updated, status = prepare(self.SAMPLE, 48, "Activity 2")
         self.assertEqual(status, "ready")
         inserted = ("**Workbook practice:** Pupils complete Workbook p.48, Activity 2. "
-                    "Teacher checks answers and provides guidance.\\n\\n")
+                    "Teacher checks answers and provides guidance.\n\n")
         self.assertEqual(updated.replace(inserted, "", 1), self.SAMPLE)
 
     def test_no_assessment_means_no_change(self):
