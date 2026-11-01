@@ -8,6 +8,20 @@ from standalone_renderer_adapter import adapt_year4_standalone
 
 
 class Lesson030AdapterTest(unittest.TestCase):
+    def test_pbd_heading_variants(self):
+        from standalone_renderer_adapter import adapt_year4_standalone
+        for heading in (
+            "PBD / Reinforcement (5 minutes)",
+            "PBD / reinforcement (10 minutes)",
+            "Reinforcement / PBD (10 minutes)",
+            "Reinforcement and PBD (10 minutes)",
+        ):
+            with self.subTest(heading=heading):
+                source = "## Set induction (10 minutes)\\nWarm-up\\n\\n## Activity 1 (15 minutes)\\nTask\\n\\n## " + heading + "\\nTeacher checks responses\\n\\n## Closure (5 minutes)\\nEnd"
+                result = adapt_year4_standalone(source)
+                self.assertIn(heading, result)
+                self.assertIn("Teacher checks responses", result)
+
     def test_preserves_activity_workbook_audio_and_pbd(self):
         original = (Path(__file__).parent / "lesson_030.md").read_text(encoding="utf-8")
         rendered = adapt_year4_standalone(original)
