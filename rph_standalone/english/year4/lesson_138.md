@@ -4,7 +4,7 @@
 **Main SP:** 5.3.1  
 **Complementary SP:** 2.3.1  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook pp.68–69,128; Year 4 SOW Lesson 138
+**References:** resources/lesson_138_mowgli_creative_story_performance_pbd_DRAFT.md; Graphic Novel Teaching Guidebook pp.68–69,128; Year 4 SOW Lesson 138
 
 ## Set induction (10 minutes)
 **Teacher:** Ask how pupils would plan to defeat Shere Khan as Mowgli.
