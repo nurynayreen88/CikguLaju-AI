@@ -33,8 +33,8 @@ class ReleaseAuditTests(unittest.TestCase):
                 "## Activity 2\nTask\n## Closure\n\n",
                 encoding="utf-8")
             row = audit(root)[0]
-        self.assertIn("renderer_empty_set_induction", row["blockers"])
-        self.assertIn("renderer_empty_closure", row["blockers"])
+        self.assertIn("renderer_missing_set_induction", row["blockers"])
+        self.assertIn("renderer_missing_closure", row["blockers"])
         self.assertIn("renderer_missing_assessment", row["blockers"])
 
     def test_missing_linked_resource_is_blocked(self):
