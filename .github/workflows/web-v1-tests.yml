@@ -8,6 +8,7 @@ on:
       - 'web_v1_entitlements.py'
       - 'web_v1_telegram_login.py'
       - 'web_v1_sessions.py'
+      - 'web_v1_pairing_challenges.py'
       - 'web_v1_access_policy.py'
       - 'web_v1_account_resolver.py'
       - 'web_v1_sqlite_account_adapter.py'
@@ -27,6 +28,7 @@ on:
       - 'tests/test_web_v1_preview_security.py'
       - 'tests/test_web_v1_smoke_isolated.py'
       - 'tests/test_web_v1_phone_login_fail_closed.py'
+      - 'tests/test_web_v1_pairing_challenges.py'
       - 'tests/test_web_v1_schema_inspector.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
@@ -47,6 +49,6 @@ jobs:
       - name: Install preview dependency
         run: python -m pip install 'Flask>=3,<4'
       - name: Compile Web V1 Python modules
-        run: python -m py_compile web_v1_entitlements.py web_v1_telegram_login.py web_v1_sessions.py web_v1_access_policy.py web_v1_account_resolver.py web_v1_sqlite_account_adapter.py tools/inspect_web_v1_account_schema.py tools/run_web_v1_preview.py
+        run: python -m py_compile web_v1_entitlements.py web_v1_telegram_login.py web_v1_sessions.py web_v1_pairing_challenges.py web_v1_access_policy.py web_v1_account_resolver.py web_v1_sqlite_account_adapter.py tools/inspect_web_v1_account_schema.py tools/run_web_v1_preview.py
       - name: Run isolated Web V1 tests
         run: python -m unittest discover -s tests -p 'test_web_v1_*.py' -v
