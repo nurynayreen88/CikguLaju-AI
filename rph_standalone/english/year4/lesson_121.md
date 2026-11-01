@@ -4,7 +4,7 @@
 **Main SP:** 4.2.4  
 **Complementary SP:** 1.2.2  
 **Duration:** 60 minutes  
-**References:** SB pp.84–85 Activities 3–4; TB p.127; Year 4 SOW Lesson 121
+**References:** SB pp.84–85 Activities 3–4; TB p.127; resources/lesson_121_dinosaur_listening_writing_pbd_DRAFT.md (original supplementary listening and PBD); Year 4 SOW Lesson 121
 
 ## Set induction (10 minutes)
 **Teacher:** Show dinosaur pictures and ask pupils to label body parts before forming descriptive sentences.
@@ -26,7 +26,7 @@
 **Teacher:** Invite two pairs to present their invented dinosaur and explain one distinctive feature.
 **Pupils:** Present the dinosaur.
 
-**PBD:** Assess pupils' original written dinosaur description, including relevant body parts and abilities, for main Writing SP 4.2.4; check specific details identified from any verified spoken input for complementary Listening SP 1.2.2. Listening evidence remains pending confirmation of the exact audio or teacher-read task; do not infer it from written work.  
+**PBD:** Assess pupils' original written dinosaur description, including relevant body parts and abilities, for main Writing SP 4.2.4; check specific details identified from any verified spoken input for complementary Listening SP 1.2.2. The supplementary teacher-read listening task provides separate provisional evidence for SP 1.2.2; verify source vocabulary and administer the listening questions before recording achievement. Do not infer listening from written work.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Status:** DRAFT — direct book/audio and Word/PDF QA pending.
