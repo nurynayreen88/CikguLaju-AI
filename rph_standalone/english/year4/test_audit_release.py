@@ -27,10 +27,10 @@ class ReleaseAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
             (root / "lesson_001.md").write_text(
-                "**Topic:** Sample\\n**Main SP:** Listening 1.2.2\\n"
-                "**Complementary SP:** Speaking 2.1.1\\n"
-                "## Set induction\\n\\n## Activity 1\\nTask\\n"
-                "## Activity 2\\nTask\\n## Closure\\n\\n",
+                "**Topic:** Sample\n**Main SP:** Listening 1.2.2\n"
+                "**Complementary SP:** Speaking 2.1.1\n"
+                "## Set induction\n\n## Activity 1\nTask\n"
+                "## Activity 2\nTask\n## Closure\n\n",
                 encoding="utf-8")
             row = audit(root)[0]
         self.assertIn("renderer_empty_set_induction", row["blockers"])
@@ -41,12 +41,12 @@ class ReleaseAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
             (root / "lesson_001.md").write_text(
-                "**Topic:** Sample\\n**Main SP:** Listening 1.2.2\\n"
-                "**Complementary SP:** Speaking 2.1.1\\n"
-                "**References:** resources/lesson_001_missing_DRAFT.md\\n"
-                "## Set induction\\nStart\\n## Activity 1\\nTask\\n"
-                "## Activity 2\\nTask\\n## PBD / reinforcement\\nAssess\\n"
-                "## Closure\\nEnd\\n**PBD:** Check response\\n",
+                "**Topic:** Sample\n**Main SP:** Listening 1.2.2\n"
+                "**Complementary SP:** Speaking 2.1.1\n"
+                "**References:** resources/lesson_001_missing_DRAFT.md\n"
+                "## Set induction\nStart\n## Activity 1\nTask\n"
+                "## Activity 2\nTask\n## PBD / reinforcement\nAssess\n"
+                "## Closure\nEnd\n**PBD:** Check response\n",
                 encoding="utf-8")
             row = audit(root)[0]
         self.assertIn(
