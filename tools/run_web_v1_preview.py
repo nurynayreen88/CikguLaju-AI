@@ -8,6 +8,7 @@ It has no authentication, credit or generation endpoints.
 Do not expose this development server to the public internet.
 """
 import os
+import sqlite3
 from pathlib import Path
 import sys
 
@@ -30,7 +31,17 @@ def preview():
 @app.get("/health")
 def health():
     db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
-    return {"status": "preview-only", "database_connected": bool(db and Path(db).is_file()), "generation_enabled": False}
+    connected = False
+    if db and Path(db).is_file():
+        try:
+            # URI mode=ro guarantees that a health check cannot create or alter the DB.
+            from urllib.parse import quote
+            uri = "file:" + quote(str(Path(db).resolve()), safe="/:") + "?mode=ro"
+            with sqlite3.connect(uri, uri=True, timeout=2) as connection:
+                connected = connection.execute("PRAGMA quick_check(1)").fetchone()[0] == "ok"
+        except (sqlite3.Error, OSError, ValueError):
+            connected = False
+    return {"status": "preview-only", "database_connected": connected, "generation_enabled": False}
 
 
 @app.get("/api/options")
