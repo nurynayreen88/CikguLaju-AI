@@ -4,7 +4,7 @@
 **Main SP:** 5.2.1  
 **Complementary SP:** 4.3.1  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook p.73; Primary Year 4 SOW Lesson 149
+**References:** Graphic Novel Teaching Guidebook p.73; resources/lesson_149_jungle_book_opinion_assessment_DRAFT.md (pupil response and PBD); Primary Year 4 SOW Lesson 149
 
 ## Set induction (10 minutes)
 **Teacher:** Compare video scenes of a village and a jungle.
