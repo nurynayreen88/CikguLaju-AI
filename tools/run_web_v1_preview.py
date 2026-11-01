@@ -87,6 +87,19 @@ def options():
 
 
 
+@app.get("/api/deployment/status")
+def deployment_status():
+    """Explicit staging-only capabilities for web readiness checks."""
+    return jsonify({
+        "environment": "staging-preview",
+        "hosting": "render",
+        "telegram_production_separate": True,
+        "account_linked": False,
+        "rph_generation_enabled": False,
+        "public_launch_ready": False,
+    })
+
+
 @app.get("/api/auth/capabilities")
 def auth_capabilities():
     """Public, non-sensitive readiness flags; never infer auth from QR primitives."""
