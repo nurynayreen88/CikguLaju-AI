@@ -40,7 +40,7 @@ def create_english_catalog_blueprint(root=ROOT):
             "lessons": entries, "count": len(entries),
             "notice": "Inventory only. Lessons are not approved for download.",
         })
-        response.headers["Cache-Control"] = "no-store"
+        response.headers["Cache-Control"] = "no-store, private"
         return response
 
     return bp
