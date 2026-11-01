@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.2.1  
 **Duration:** 60 minutes  
-**References:** SB p.94 Activities 1–3; TB pp.140–141; flashcards; Year 4 SOW Lesson 131
+**References:** resources/lesson_131_sports_reading_main_idea_pbd_DRAFT.md; SB p.94 Activities 1–3; TB pp.140–141; flashcards; Year 4 SOW Lesson 131
 
 ## Set induction (10 minutes)
 **Teacher:** Follow TB warm-up and sports vocabulary.
