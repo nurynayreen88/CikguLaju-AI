@@ -3,10 +3,10 @@ Topic: What's the matter? | Main Writing SP 4.2.2 | Complementary Writing SP 4.2
 Supplementary original resource for SB p.105 Activity 3 and Workbook p.92 Activity 2. Does not replace printed tasks.
 
 ## Model exchange
-A: Hi, Sara. I have a headache, so I cannot join the game.
-B: Oh, poor you! Would you like me to bring your homework?
-A: Yes, please. That would help because I need to rest.
-B: No problem. I hope you feel better soon.
+Pupil A: Hi. I have a headache, so I cannot join the game.
+Pupil B: Oh, poor you! Would you like me to bring your homework?
+Pupil A: Yes, please. That would help because I need to rest.
+Pupil B: No problem. I hope you feel better soon.
 
 ## Pupil worksheet
 Name: ______ Partner: ______
@@ -24,3 +24,4 @@ Sample offer: Would you like me to bring your homework? Sample response: Yes, pl
 Accept other sensible and polite responses. Do not require identical wording.
 Support: Provide message starters and a word bank. Extension: Write a polite refusal with a reason.
 Teacher verifies SOW/DSKP and printed book alignment before approval. Status: DRAFT.
+Source note: Pupil A and Pupil B are generic role labels, not named Student's Book characters. Verify wording against the relevant unit before READY.
