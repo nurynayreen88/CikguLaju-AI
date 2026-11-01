@@ -115,7 +115,8 @@ def main():
         print(f"Year {year}: {len(item['with_workbook_reference'])} references; "
               f"{len(item['without_workbook_reference'])} without; "
               f"{len(item['missing_files'])} missing files; "
-              f"{len(item['reference_without_page'])} references missing page")
+              f"{len(item['reference_without_page'])} references missing page; "
+              f"{len(item['unverified_mapping_note'])} explicit unverified notes")
     if args.review_csv:
         destination = Path(args.review_csv)
         destination.parent.mkdir(parents=True, exist_ok=True)
