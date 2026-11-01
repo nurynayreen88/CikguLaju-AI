@@ -18,7 +18,7 @@ def available_subject_options(database_path, year):
     path = Path(database_path)
     if not path.is_file():
         raise FileNotFoundError(str(path))
-    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True) as conn:
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, timeout=2) as conn:
         conn.execute("PRAGMA query_only=ON")
         rows = conn.execute(
             "SELECT DISTINCT subject FROM rpt_entries WHERE year_label=? AND verified=1 "
@@ -35,7 +35,7 @@ def unit_options(database_path, year, subject_code):
 
 
 def pdp_options(database_path, year, subject_code, unit_title):
-    if not isinstance(unit_title, str) or not unit_title.strip():
+    if not isinstance(unit_title, str) or not unit_title.strip() or len(unit_title) > 300:
         raise ValueError('invalid unit')
     records = VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
     available_units = {(r.get('unit_title') or '').strip() for r in records}
