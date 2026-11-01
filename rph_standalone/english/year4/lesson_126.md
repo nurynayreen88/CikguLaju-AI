@@ -4,7 +4,7 @@
 **Main SP:** 4.2.5  
 **Complementary SP:** 4.3.3  
 **Duration:** 60 minutes  
-**References:** SB p.87 Activities 1–2; TB pp.130–131; animal pictures; Year 4 SOW Lesson 126
+**References:** resources/lesson_126_favourite_animal_paragraph_pbd_DRAFT.md; SB p.87 Activities 1–2; TB pp.130–131; animal pictures; Year 4 SOW Lesson 126
 
 ## Set induction (10 minutes)
 **Teacher:** Elicit animal appearance, habitat and ability words for pupils to reuse in their paragraph plans.
