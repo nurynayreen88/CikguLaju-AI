@@ -22,6 +22,7 @@ class PreviewApiTests(unittest.TestCase):
     def test_subjects_fail_closed_without_database(self):
         self.assertEqual(self.client.get('/api/options?kind=subjects&year=3').status_code, 503)
 
+    @patch('tools.run_web_v1_preview.Path.is_file', return_value=True)
     @patch('tools.run_web_v1_preview.available_subject_options')
     @patch.dict('os.environ', {'CIKGULAJU_WEB_PREVIEW_DB': '/tmp/preview-test.db'})
     def test_subjects_return_only_verified_catalog_results(self, options, is_file):
