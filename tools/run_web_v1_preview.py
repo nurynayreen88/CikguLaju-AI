@@ -217,6 +217,52 @@ def generate():
     response.headers["Cache-Control"] = "no-store, private"
     return response
 
+@app.post("/api/web/english/rph")
+def english_approved_rph():
+    """Render only explicitly release-ready English lessons by year and lesson."""
+    from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
+    from web_v1_sessions import verify_session_ticket
+    from web.english_release_gate import load_release_ready_english
+    from web.rph_document_renderer import ApprovedRPH, render_approved_rph
+    from flask import make_response
+    config = _config()
+    if config is None:
+        return jsonify({"error": "login not configured"}), 503
+    uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+    if uid is None:
+        return jsonify({"error": "authentication required"}), 401
+    try:
+        account = _lookup(config, uid)
+    except Exception:
+        return jsonify({"error": "account lookup unavailable"}), 503
+    if not account or account.get("telegram_user_id") != uid:
+        return jsonify({"error": "existing account required"}), 403
+    if os.environ.get("CIKGULAJU_ENV") != "staging" or os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") != "1":
+        return jsonify({"error": "RPH downloads not enabled"}), 503
+    if not request.is_json or (request.content_length or 0) > 2048:
+        return jsonify({"error": "invalid request"}), 400
+    payload = request.get_json(silent=True)
+    if not isinstance(payload, dict) or set(payload) != {"year", "lesson_no", "format"}:
+        return jsonify({"error": "invalid request"}), 400
+    year, lesson_no, fmt = payload["year"], payload["lesson_no"], payload["format"]
+    if type(year) is not int or year not in (1, 2, 3) or type(lesson_no) is not int or not 1 <= lesson_no <= 160 or fmt not in ("docx", "pdf"):
+        return jsonify({"error": "invalid selection"}), 400
+    try:
+        content = load_release_ready_english(year, lesson_no)
+    except (LookupError, ValueError, OSError):
+        return jsonify({"error": "lesson not approved for release"}), 404
+    try:
+        data, mime = render_approved_rph(
+            ApprovedRPH(lesson_no, f"English Year {year} — Lesson {lesson_no}", content, f"release-ready:english:{year}:{lesson_no}"), fmt)
+    except (ImportError, ValueError):
+        return jsonify({"error": "document renderer unavailable"}), 503
+    response = make_response(data)
+    response.headers["Content-Type"] = mime
+    response.headers["Content-Disposition"] = f'attachment; filename="english-year{year}-lesson{lesson_no:03d}.{fmt}"'
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
+
+
 @app.get("/api/materials/download/<material_id>")
 def download_material(material_id):
     return jsonify({"error": "authorized download service not connected"}), 503
