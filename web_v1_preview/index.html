@@ -126,6 +126,10 @@ window.onTelegramAuth = async function(user) {
   const status = document.getElementById("telegram-login-readiness");
   const holder = document.getElementById("telegram-login-widget");
   const logout = document.getElementById("telegram-logout");
+  logout.addEventListener("click", async function(){
+    await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});
+    location.reload();
+  });
   try {
     const session = await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store"});
     if (session.ok) {
@@ -150,10 +154,6 @@ window.onTelegramAuth = async function(user) {
     holder.appendChild(script);
     status.textContent = "Sila sahkan akaun Telegram. Pastikan domain web telah didaftarkan melalui BotFather.";
   } catch (_) { status.textContent = "Status login tidak dapat disahkan. Cuba semula kemudian."; }
-  logout.addEventListener("click", async function(){
-    await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});
-    location.reload();
-  });
 }());
 </script>
 </body></html>
