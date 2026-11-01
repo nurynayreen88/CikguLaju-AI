@@ -15,7 +15,7 @@ from flask import Flask, send_file, jsonify, request
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options
+from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options, component_options
 PREVIEW = ROOT / "web_v1_preview" / "index.html"
 app = Flask(__name__)
 
@@ -39,14 +39,20 @@ def options():
         if year not in range(1, 7):
             return jsonify({"error": "invalid year"}), 400
         kind = request.args.get("kind", "")
-        if kind not in ("subjects", "units", "pdp"):
+        if kind not in ("subjects", "units", "pdp", "components"):
             return jsonify({"error": "invalid option kind"}), 400
-        db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
+        if kind == "components":
+            return jsonify(component_options(request.args.get("subject", "")))\n        db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
         if not db or not Path(db).is_file():
             return jsonify({"error": "preview database not configured"}), 503
         if kind == "subjects":
             return jsonify(available_subject_options(db, year))
         subject = request.args.get("subject", "")
+        if subject == "PJPK":
+            component = request.args.get("component", "")
+            if component not in ("PJ", "PK"):
+                return jsonify({"error": "select PJ or PK"}), 400
+            return jsonify([])  # No verified PJ/PK mapping in current RPT schema.
         if kind == "units":
             return jsonify(unit_options(db, year, subject))
         if kind == "pdp":
