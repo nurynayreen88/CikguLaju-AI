@@ -4,7 +4,7 @@
 **Main SP:** 2.1.1  
 **Complementary SP:** 2.1.5  
 **Duration:** 60 minutes  
-**References:** SB p.98 Activities 1–2; TB pp.144–145; Year 4 SOW Lesson 140
+**References:** resources/lesson_140_sports_partner_interview_chart_pbd_DRAFT.md; SB p.98 Activities 1–2; TB pp.144–145; Year 4 SOW Lesson 140
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce the TB revision goals and model one interview response before pupils begin.
