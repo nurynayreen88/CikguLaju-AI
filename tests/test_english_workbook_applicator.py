@@ -131,7 +131,7 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertEqual(status, "existing_workbook_reference")
 
     def test_pbd_without_following_heading_adds_once_at_end(self):
-        original = "# Lesson\\n## PBD\\nOriginal assessment remains.\\n"
+        original = "# Lesson\n## PBD\nOriginal assessment remains.\n"
         updated, status = prepare(original, 48, "Activity 2")
         self.assertEqual(status, "ready")
         self.assertIn("Original assessment remains.", updated)
