@@ -4,7 +4,7 @@
 **Main SP:** 5.2.1  
 **Complementary SP:** 2.1.1  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook p.63; Year 4 SOW Lesson 133
+**References:** resources/lesson_133_red_flower_response_pbd_DRAFT.md; Graphic Novel Teaching Guidebook p.63; Year 4 SOW Lesson 133
 
 ## Set induction (10 minutes)
 **Teacher:** Ask three short questions about Chapter 3 events and request story evidence for one answer.
