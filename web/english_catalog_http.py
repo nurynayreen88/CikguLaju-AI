@@ -3,7 +3,7 @@
 Shows real available lesson numbers without exposing draft content.
 This is navigation ONLY, not an RPH generation or approval endpoint.
 """
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / "rph_standalone" / "english"
@@ -14,6 +14,20 @@ def create_english_catalog_blueprint(root=ROOT):
 
     @bp.get("/api/web/catalog/english/<int:year>")
     def lessons(year):
+        from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
+        from web_v1_sessions import verify_session_ticket
+        config = _config()
+        if config is None:
+            return jsonify({"error": "Login not configured"}), 503
+        uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+        if uid is None:
+            return jsonify({"error": "Authentication required"}), 401
+        try:
+            account = _lookup(config, uid)
+        except Exception:
+            return jsonify({"error": "Account lookup unavailable"}), 503
+        if not account or account.get("telegram_user_id") != uid:
+            return jsonify({"error": "Existing account required"}), 403
         if year not in (1, 2, 3):
             return jsonify({"error": "Unsupported year"}), 404
         folder = Path(root) / f"year{year}"
