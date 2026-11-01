@@ -4,7 +4,7 @@
 **Main SP:** 1.2.1  
 **Complementary SP:** 2.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.97 Activities 3–4; TB p.143; Track 60 (SOW says CD without disc number); Year 4 SOW Lesson 139
+**References:** resources/lesson_139_sports_listening_gist_recommendation_pbd_DRAFT.md; SB p.97 Activities 3–4; TB p.143; Track 60 (SOW says CD without disc number); Year 4 SOW Lesson 139
 
 ## Set induction (10 minutes)
 **Teacher:** Review adjectives and their superlative forms.
