@@ -34,6 +34,25 @@ class Lesson030AdapterTest(unittest.TestCase):
                     self.assertIsNotNone(match, f"Missing {field} in lesson {lesson_no}")
                     self.assertTrue(match.group(1).strip(), f"Empty {field} in lesson {lesson_no}")
 
+    def test_legacy_lesson_001_keeps_third_activity_and_excludes_qa(self):
+        original = (Path(__file__).parent / "lesson_001.md").read_text(encoding="utf-8")
+        rendered = adapt_year4_standalone(original)
+        for expected in (
+            "TOPIC:\\n1 — Where are you from?",
+            "Listening 1.2 / 1.2.2",
+            "Listening 1.1 / 1.1.1",
+            "Class CD1 Track 3",
+            "Activity 1 — Flag vocabulary",
+            "Activity 2 — Listen and write",
+            "Activity 3 — Malaysian flag listening",
+            "PBD / Reinforcement",
+        ):
+            with self.subTest(expected=expected):
+                self.assertIn(expected, rendered)
+        self.assertLess(rendered.index("Activity 2 — Listen"), rendered.index("Activity 3 — Malaysian"))
+        self.assertNotIn("Verified mapping and limits", rendered)
+        self.assertNotIn("NOT READY FOR RELEASE", rendered)
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
