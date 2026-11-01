@@ -30,7 +30,7 @@ def lookup_existing_supabase_account(url, secret_key, telegram_id):
         raise ValueError("Invalid trial balance")
 
     lifetime = select("pioneer_entitlements", "entitlement,revoked_at", {"telegram_user_id": "eq." + uid, "limit": "100"})
-    has_lifetime = any(row.get("revoked_at") is None and row.get("entitlement") for row in lifetime)
+    has_lifetime = any(row.get("revoked_at") is None and row.get("entitlement") in ("lifetime", "rakan_pembangun", "pioneer_lifetime") for row in lifetime)
     subscriptions = select("subscriptions", "status,expires_at", {"telegram_user_id": "eq." + uid, "limit": "100"})
     now = datetime.now(timezone.utc)
     expiry = None
