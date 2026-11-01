@@ -83,11 +83,13 @@ def shared_status():
 @app.get("/api/account/status")
 def account_status():
     """Fail closed until the shared Telegram authentication service is wired."""
-    return jsonify({
+    response = jsonify({
         **display_trusted_account({"authenticated": False}),
         "authenticated": False,
         "shared_backend_connected": False,
-    }), 401
+    })
+    response.headers["Cache-Control"] = "no-store, private"
+    return response, 401
 
 
 @app.get("/api/materials")
