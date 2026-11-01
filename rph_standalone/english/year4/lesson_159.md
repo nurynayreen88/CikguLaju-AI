@@ -4,7 +4,7 @@
 **Main SP:** 5.3.1  
 **Complementary SP:** 3.3.1  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook pp.84–88,128; Primary Year 4 SOW Lesson 159
+**References:** Graphic Novel Teaching Guidebook pp.84–88,128; resources/lesson_159_readers_theatre_pbd_DRAFT.md (supplementary pupil cards and individual PBD); Primary Year 4 SOW Lesson 159
 
 ## Set induction (10 minutes)
 **Teacher:** Show or demonstrate a short Readers' Theatre performance and ask pupils to notice voice, expression and turn-taking.
