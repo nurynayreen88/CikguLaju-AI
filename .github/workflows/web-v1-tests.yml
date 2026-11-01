@@ -36,6 +36,7 @@ on:
       - 'tests/test_web_v1_pairing_session.py'
       - 'tests/test_web_v1_browser_binding.py'
       - 'tests/test_web_v1_health_database.py'
+      - 'tests/test_web_v1_end_to_end_pairing.py'
       - 'tests/test_web_v1_schema_inspector.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
