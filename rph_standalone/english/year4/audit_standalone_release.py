@@ -40,8 +40,13 @@ def audit(root=ROOT):
                 blockers.append("renderer_missing_" + code)
             elif not match.group(1).strip():
                 blockers.append("renderer_empty_" + code)
+        # Require activity headings in the activities field, not accidental prose mentions.
+        activity_match = re.search(
+            r"(?ms)^MAIN ACTIVITIES:\n(.*?)(?=^[A-Z][A-Z ]+:\n|\Z)", adapted
+        )
+        activity_text = activity_match.group(1) if activity_match else ""
         for label in ("Activity 1", "Activity 2"):
-            if label not in adapted:
+            if not re.search(r"(?mi)^" + re.escape(label) + r"\b", activity_text):
                 blockers.append("renderer_missing_" + label.lower().replace(" ", "_"))
         # Check that explicitly linked local lesson resources exist; never fetch external URLs.
         linked_resources = set(re.findall(
