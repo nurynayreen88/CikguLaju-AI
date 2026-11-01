@@ -4,7 +4,7 @@
 **Main SP:** 5.2.1  
 **Complementary SP:** 3.3.1  
 **Duration:** 60 minutes  
-**References:** Year 4 SOW Lesson 122; Graphic Novel Teaching Guidebook p.48, steps 1–5; The Jungle Book
+**References:** Year 4 SOW Lesson 122; Graphic Novel Teaching Guidebook p.48, steps 1–5; The Jungle Book; resources/lesson_122_jungle_book_reading_response_pbd_DRAFT.md
 
 ## Set induction (10 minutes)
 **Teacher:** Review the graphic novel's characters and earlier events.
