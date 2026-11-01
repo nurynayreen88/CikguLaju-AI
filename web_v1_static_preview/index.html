@@ -14,7 +14,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <main class="panel">
 <span class="pill">Versi Web</span>
 <h1>RPH lebih mudah, semuanya di satu tempat.</h1>
-<p>Gunakan akaun CikguLaju Telegram sedia ada untuk mengakses RPH melalui web. Selepas log masuk, cikgu boleh memilih Tahun, Subjek, Unit dan Lesson/PdP.</p>
+<p>Log masuk menggunakan akaun Telegram CikguLaju sedia ada. Selepas disahkan, pilih Tahun, Subjek dan Lesson/PdP dalam satu halaman.</p>
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
@@ -52,7 +52,7 @@ window.onCikguLajuTelegramAuth=async function(user){
 const year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
 year.addEventListener("change",()=>{subject.replaceChildren(new Option(year.value?"Pilih Subjek":"Pilih Tahun dahulu",""));subject.disabled=!year.value;lesson.replaceChildren(new Option("Pilih Subjek dahulu",""));lesson.disabled=true;catalogStatus.textContent="";if(year.value)subject.add(new Option("Bahasa Inggeris","ENGLISH"));});
 subject.addEventListener("change",async()=>{lesson.replaceChildren(new Option("Memuatkan Lesson…",""));lesson.disabled=true;if(!subject.value)return;try{const response=await fetch("/api/web/catalog/english/"+encodeURIComponent(year.value),{cache:"no-store"});if(!response.ok)throw Error("Katalog belum tersedia");const data=await response.json();lesson.replaceChildren(new Option("Pilih Lesson",""));for(const item of data.lessons)lesson.add(new Option(item.label,String(item.lesson_no)));lesson.disabled=!data.lessons.length;catalogStatus.textContent=data.count+" Lesson tersedia dalam katalog. Penjanaan RPH hanya dibuka selepas kelulusan kandungan dan integrasi selesai.";}catch(error){lesson.replaceChildren(new Option("Tidak tersedia",""));catalogStatus.textContent=error.message;}});
-lesson.addEventListener("change",()=>{if(lesson.value)catalogStatus.textContent="Lesson "+lesson.value+" dipilih. Muat turun belum diaktifkan kerana kelulusan RPH belum disahkan.";});
+lesson.addEventListener("change",()=>{if(lesson.value)catalogStatus.textContent="Lesson "+lesson.value+" dipilih. RPH belum boleh dimuat turun sehingga diluluskan.";});
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 </body>
