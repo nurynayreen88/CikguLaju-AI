@@ -112,6 +112,31 @@ class WorkbookApplicatorTests(unittest.TestCase):
                     "Teacher checks answers and provides guidance.\n\n")
         self.assertEqual(updated.replace(inserted, "", 1), self.SAMPLE)
 
+    def test_non_textbook_sow_marker_takes_priority_over_workbook(self):
+        original = self.SAMPLE.replace(
+            "## Assessment / PBD",
+            "**Audited source mapping:** NON-TEXTBOOK / SOW task.\\n\\n"
+            "## Assessment / PBD"
+        ).replace("Existing activity remains unchanged.",
+                  "Existing activity remains unchanged. Workbook p.20.")
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertIsNone(updated)
+        self.assertEqual(status, "non_textbook_sow_task")
+
+    def test_workbook_reference_case_insensitive(self):
+        original = self.SAMPLE.replace("Existing activity remains unchanged.",
+                                       "Existing activity remains unchanged. activity book page 20.")
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertIsNone(updated)
+        self.assertEqual(status, "existing_workbook_reference")
+
+    def test_pbd_without_following_heading_adds_once_at_end(self):
+        original = "# Lesson\\n## PBD\\nOriginal assessment remains.\\n"
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        self.assertIn("Original assessment remains.", updated)
+        self.assertEqual(updated.count("**Workbook practice:**"), 1)
+
     def test_no_assessment_means_no_change(self):
         updated, status = prepare("# Lesson\n## Activity 1\nText\n", 48, "Activity 2")
         self.assertIsNone(updated)
