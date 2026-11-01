@@ -17,7 +17,7 @@ class Lesson030AdapterTest(unittest.TestCase):
             "Reinforcement and PBD (10 minutes)",
         ):
             with self.subTest(heading=heading):
-                source = "## Set induction (10 minutes)\\nWarm-up\\n\\n## Activity 1 (15 minutes)\\nTask\\n\\n## " + heading + "\\nTeacher checks responses\\n\\n## Closure (5 minutes)\\nEnd"
+                source = "\n".join(["## Set induction (10 minutes)", "Warm-up", "", "## Activity 1 (15 minutes)", "Task", "", "## " + heading, "Teacher checks responses", "", "## Closure (5 minutes)", "End"])
                 result = adapt_year4_standalone(source)
                 self.assertIn(heading, result)
                 self.assertIn("Teacher checks responses", result)
