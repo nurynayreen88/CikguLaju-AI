@@ -15,37 +15,50 @@
 <script>
 (function(){
 "use strict";
-const year=document.getElementById("tahun");
-const subject=document.getElementById("subjek");
-const unit=document.getElementById("unit");
-const lesson=document.getElementById("lesson");
-const status=document.getElementById("pilihan-status");
-const subjects=["Bahasa Inggeris","Bahasa Melayu","Matematik","Sains","Pendidikan Islam","PJPK"];
-function reset(select,label){
-  select.replaceChildren(new Option(label,""));
-  select.value="";
-  select.disabled=true;
-}
-function updateStatus(){
-  if(!year.value){status.textContent="Langkah 1: Pilih tahun untuk membuka senarai subjek.";return;}
-  if(!subject.value){status.textContent="Langkah 2: Pilih subjek untuk "+year.value+".";return;}
-  status.textContent="Pilihan: "+year.value+" · "+subject.value+". Unit dan Lesson / PdP akan dibuka selepas sambungan database disahkan.";
-}
-year.addEventListener("change",function(){
-  reset(subject,year.value?"Pilih subjek":"Pilih tahun dahulu");
-  reset(unit,"Pilih subjek dahulu");
-  reset(lesson,"Pilih unit dahulu");
-  if(year.value){
-    for(const name of subjects)subject.add(new Option(name,name));
-    subject.disabled=false;
+const year=document.getElementById("tahun"),subject=document.getElementById("subjek"),unit=document.getElementById("unit"),lesson=document.getElementById("lesson"),status=document.getElementById("pilihan-status");
+let revision=0;
+function reset(el,label){el.replaceChildren(new Option(label,""));el.disabled=true;}
+async function load(kind,params,el,placeholder,version){
+  const query=new URLSearchParams({kind,...params});
+  try{
+    const response=await fetch("/api/options?"+query.toString(),{credentials:"same-origin"});
+    if(!response.ok)throw Error("unavailable");
+    const items=await response.json();
+    if(version!==revision)return;
+    reset(el,placeholder);
+    for(const item of items)el.add(new Option(item.label,item.value));
+    el.disabled=items.length===0;
+    if(!items.length)status.textContent="Tiada pilihan disahkan untuk pilihan ini.";
+  }catch(error){
+    if(version!==revision)return;
+    reset(el,"Data belum tersedia");
+    status.textContent="Senarai belum dapat dimuatkan. Pratonton memerlukan database tempatan yang disahkan.";
   }
-  updateStatus();
+}
+year.addEventListener("change",async function(){
+  const v=++revision;
+  reset(subject,year.value?"Memuatkan subjek…":"Pilih tahun dahulu");
+  reset(unit,"Pilih subjek dahulu");reset(lesson,"Pilih unit dahulu");
+  if(!year.value){status.textContent="Langkah 1: Pilih tahun.";return;}
+  status.textContent="Memuatkan subjek "+year.value+"…";
+  await load("subjects",{year:year.value.replace("Tahun ","")},subject,"Pilih subjek",v);
+  if(v===revision&& !subject.disabled)status.textContent="Langkah 2: Pilih subjek.";
 });
-subject.addEventListener("change",function(){
-  reset(unit,subject.value?"Unit belum tersedia dalam pratonton":"Pilih subjek dahulu");
-  reset(lesson,"Pilih unit dahulu");
-  updateStatus();
+subject.addEventListener("change",async function(){
+  const v=++revision;reset(unit,subject.value?"Memuatkan unit…":"Pilih subjek dahulu");reset(lesson,"Pilih unit dahulu");
+  if(!subject.value){status.textContent="Langkah 2: Pilih subjek.";return;}
+  status.textContent="Memuatkan unit yang disahkan…";
+  await load("units",{year:year.value.replace("Tahun ",""),subject:subject.value},unit,"Pilih unit",v);
+  if(v===revision&&!unit.disabled)status.textContent="Langkah 3: Pilih unit.";
 });
-updateStatus();
+unit.addEventListener("change",async function(){
+  const v=++revision;reset(lesson,unit.value?"Memuatkan PdP…":"Pilih unit dahulu");
+  if(!unit.value){status.textContent="Langkah 3: Pilih unit.";return;}
+  status.textContent="Memuatkan PdP daripada RPT yang disahkan…";
+  await load("pdp",{year:year.value.replace("Tahun ",""),subject:subject.value,unit:unit.value},lesson,"Pilih Lesson / PdP",v);
+  if(v===revision&&!lesson.disabled)status.textContent="Langkah 4: Pilih PdP. Penjanaan RPH belum diaktifkan.";
+});
+lesson.addEventListener("change",function(){status.textContent=lesson.value?"Pilihan PdP direkodkan dalam pratonton. Penjanaan RPH belum diaktifkan.":"Langkah 4: Pilih PdP.";});
+reset(subject,"Pilih tahun dahulu");reset(unit,"Pilih subjek dahulu");reset(lesson,"Pilih unit dahulu");
 }());
 </script></body></html>
