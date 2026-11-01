@@ -16,6 +16,16 @@ class SharedRoutesTests(unittest.TestCase):
         result = client.get("/api/options?kind=components&year=3&subject=PJPK")
         self.assertEqual([x["value"] for x in result.json], ["PJ", "PK"])
 
+    def test_both_previews_offer_pjpk_component_only_on_selection(self):
+        root = Path(__file__).resolve().parents[1]
+        for relative in ("web_v1_preview/index.html", "web_v1_static_preview/index.html"):
+            with self.subTest(preview=relative):
+                html = (root / relative).read_text(encoding="utf-8")
+                self.assertIn('id="pjpk-component-field" hidden', html)
+                self.assertIn('value="PJ"', html)
+                self.assertIn('value="PK"', html)
+                self.assertIn('componentField.hidden=!isPjpk', html)
+
     def test_generation_and_download_fail_closed(self):
         client = app.test_client()
         for method, path in (
