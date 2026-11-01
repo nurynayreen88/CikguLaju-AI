@@ -79,3 +79,23 @@ def adapt_year4_standalone(markdown: str) -> str:
         ("ASSESSMENT", assessment),
     ]
     return "\n".join(f"{key}:\n{value}" for key, value in fields if value)
+
+
+def year4_release_blockers(markdown: str) -> list[str]:
+    """Conservative, non-mutating pre-release checks; empty does not certify READY."""
+    blockers = []
+    main = re.search(r"^\\*\\*Main (?:SK/)?SP:\\*\\*\\s*(.+)$", markdown, re.M)
+    complementary = re.search(r"^\\*\\*Complementary (?:SK/)?SP:\\*\\*\\s*(.+)$", markdown, re.M)
+    for label, match in (("main_sp", main), ("complementary_sp", complementary)):
+        if not match or not match.group(1).strip():
+            blockers.append(f"missing_{label}")
+        elif "teacher-selected" in match.group(1).lower():
+            blockers.append(f"teacher_selected_{label}")
+    topic = re.search(r"^\\*\\*(?:Topic|Unit/Topic|Unit):\\*\\*\\s*(.+)$", markdown, re.M)
+    if not topic or not topic.group(1).strip():
+        blockers.append("missing_topic")
+    elif "teacher-selected" in topic.group(1).lower():
+        blockers.append("teacher_selected_topic")
+    if re.search(r"Track\\s+\\d+\\s*\\([^\\n)]*disc unspecified", markdown, re.I):
+        blockers.append("audio_disc_unverified")
+    return blockers
