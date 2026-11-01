@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.2.4  
 **Duration:** 60 minutes  
-**References:** SB pp.106–107 Activities 1–2; TB pp.156–157; Vocabulary CD2 Track 75; Activity 1 CD2 Track 76; dictionaries; Primary Year 4 SOW Lesson 152
+**References:** resources/lesson_152_health_reading_dictionary_pbd_DRAFT.md; SB pp.106–107 Activities 1–2; TB pp.156–157; Vocabulary CD2 Track 75; Activity 1 CD2 Track 76; dictionaries; Primary Year 4 SOW Lesson 152
 
 ## Set induction (10 minutes)
 **Teacher:** Show health picture prompts and elicit symptom words pupils will need for the listening activity.
