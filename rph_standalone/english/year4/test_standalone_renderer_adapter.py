@@ -21,14 +21,14 @@ class Lesson030AdapterTest(unittest.TestCase):
                 self.assertIn("Activity 1", rendered)
                 self.assertIn("Activity 2", rendered)
                 main_activities = rendered.split("MAIN ACTIVITIES:\n", 1)[1].split("\nCLOSURE:", 1)[0]
-                self.assertRegex(main_activities, r"(?im)^(?:PBD|Reinforcement)\\b")
+                self.assertRegex(main_activities, r"(?im)^(?:PBD|Reinforcement)\b")
                 self.assertIn("Activity 1", main_activities)
                 self.assertIn("Activity 2", main_activities)
                 self.assertLess(main_activities.index("Activity 1"), main_activities.index("Activity 2"))
                 self.assertLess(main_activities.index("Activity 2"), len(main_activities))
                 for field in ("TOPIC", "MAIN LEARNING STANDARD", "COMPLEMENTARY LEARNING STANDARD",
                               "SET INDUCTION", "MAIN ACTIVITIES", "CLOSURE"):
-                    value = rendered.split(field + ":\\n", 1)[1].split("\\n" + (
+                    value = rendered.split(field + ":\n", 1)[1].split("\n" + (
                         "MAIN LEARNING STANDARD" if field == "TOPIC" else
                         "COMPLEMENTARY LEARNING STANDARD" if field == "MAIN LEARNING STANDARD" else
                         "LEARNING STANDARD" if field == "COMPLEMENTARY LEARNING STANDARD" else
