@@ -28,3 +28,5 @@ Listening SP 1.2.5: Pupil responds relevantly to the partner's answers and follo
 Sample acceptable response: We should read short stories because we learn new words.
 Support: Provide question cards and sentence starters. Extension: Ask pupils to justify a different learning strategy.
 Teacher checks SOW/DSKP alignment before approval. Status: DRAFT.
+## Student Book vocabulary alignment gate
+All sample questions and advice are original classroom examples, not quoted Student's Book dialogue. Before approval, compare advice expressions, vocabulary and grammar with the exact unit and SOW. Do not introduce fictional named textbook characters. If the source lesson does not prescribe a Student's Book activity, keep this as teacher-prepared speaking assessment and document the SOW basis. Status remains DRAFT.
