@@ -23,6 +23,8 @@ PREVIEW = ROOT / "web_v1_preview" / "index.html"
 app = Flask(__name__)
 from web_v1_telegram_auth_routes import auth_blueprint
 app.register_blueprint(auth_blueprint)
+from web.english_catalog_http import create_english_catalog_blueprint
+app.register_blueprint(create_english_catalog_blueprint())
 
 
 @app.get("/")
