@@ -23,6 +23,8 @@ def lookup_existing_sqlite_account(db_path, telegram_id, *, table, id_column,
             _identifier(name)
     selected = [id_column]
     selected.extend(name for name in (lifetime_column, vip_column, credits_column) if name is not None)
+    if len(selected) != len(set(selected)):
+        raise ValueError("account mapping columns must be distinct")
     # Use read-only mode; never create a missing DB or modify records.
     from pathlib import Path
     uri = Path(db_path).resolve().as_uri() + "?mode=ro"
@@ -45,5 +47,8 @@ def lookup_existing_sqlite_account(db_path, telegram_id, *, table, id_column,
     if vip_column is not None:
         result["vip_until"] = row[vip_column]
     if credits_column is not None:
-        result["free_remaining"] = row[credits_column]
+        credits = row[credits_column]
+        if type(credits) is not int or credits < 0 or credits > 10:
+            return None
+        result["free_remaining"] = credits
     return result
