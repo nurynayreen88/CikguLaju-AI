@@ -4,7 +4,7 @@
 **Main SP:** 4.3.3  
 **Complementary SP:** 2.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.109 Activities 1–2; TB pp.160–161; Unit 10 safety poster; Primary Year 4 SOW Lesson 158
+**References:** resources/lesson_158_home_safety_poster_clarification_pbd_DRAFT.md; SB p.109 Activities 1–2; TB pp.160–161; Unit 10 safety poster; Primary Year 4 SOW Lesson 158
 
 ## Set induction (10 minutes)
 **Teacher:** Use the TB revision prompts to recall home-safety rules and check pupils' use of imperative language.
