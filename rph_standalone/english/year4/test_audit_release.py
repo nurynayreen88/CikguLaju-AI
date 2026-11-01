@@ -53,6 +53,24 @@ class ReleaseAuditTests(unittest.TestCase):
             "missing_linked_resource:resources/lesson_001_missing_DRAFT.md",
             row["blockers"])
 
+    def test_existing_linked_resource_is_not_blocked(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "resources").mkdir()
+            (root / "resources" / "lesson_001_sample_DRAFT.md").write_text(
+                "Teacher-created support", encoding="utf-8")
+            (root / "lesson_001.md").write_text(
+                "**Topic:** Sample\n**Main SP:** Listening 1.2.2\n"
+                "**Complementary SP:** Speaking 2.1.1\n"
+                "**References:** resources/lesson_001_sample_DRAFT.md\n"
+                "## Set induction\nStart\n## Activity 1\nTask\n"
+                "## Activity 2\nTask\n## PBD / reinforcement\nAssess\n"
+                "## Closure\nEnd\n**PBD:** Check response\n",
+                encoding="utf-8")
+            row = audit(root)[0]
+        self.assertFalse(
+            any(reason.startswith("missing_linked_resource:") for reason in row["blockers"]))
+
     def test_missing_files_blocked(self):
         with tempfile.TemporaryDirectory() as folder:
             rows = audit(Path(folder))
