@@ -1,5 +1,10 @@
 """Verify local Web V1 cannot bypass the shared Telegram backend."""
 import unittest
+from pathlib import Path
+import sqlite3
+import tempfile
+from unittest.mock import patch
+from web_v1_verified_pdp import list_explicit_pjpk_entries
 from tools.run_web_v1_preview import app
 
 
@@ -25,6 +30,14 @@ class SharedRoutesTests(unittest.TestCase):
                 self.assertIn('value="PJ"', html)
                 self.assertIn('value="PK"', html)
                 self.assertIn('componentField.hidden=!isPjpk', html)
+
+    def test_missing_pjpk_mapping_is_safe(self):
+        with tempfile.TemporaryDirectory() as folder:
+            db = str(Path(folder) / "preview.db")
+            with sqlite3.connect(db) as con:
+                con.execute("CREATE TABLE rpt_entries (id INTEGER)")
+            self.assertEqual(list_explicit_pjpk_entries(db, 3, "PJ"), [])
+            self.assertEqual(list_explicit_pjpk_entries(db, 3, "PK"), [])
 
     def test_generation_and_download_fail_closed(self):
         client = app.test_client()
