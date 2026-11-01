@@ -4,7 +4,7 @@
 **Main SP:** 3.3.1  
 **Complementary SP:** 2.3.1  
 **Duration:** 60 minutes  
-**References:** SB pp.88–89 story; main character pictures; Year 4 SOW Lesson 125
+**References:** resources/lesson_125_story_independent_reading_narration_pbd_DRAFT.md; SB pp.88–89 story; main character pictures; Year 4 SOW Lesson 125
 
 ## Set induction (10 minutes)
 **Teacher:** Display story character pictures and elicit one prediction about each character's role.
