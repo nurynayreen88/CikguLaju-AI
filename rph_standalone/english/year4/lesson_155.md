@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 2.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.107 Activities 3–4; TB p.157; Activity 4 CD2 Track 78; Primary Year 4 SOW Lesson 155
+**References:** resources/lesson_155_home_safety_listening_advice_pbd_DRAFT.md; SB p.107 Activities 3–4; TB p.157; Activity 4 CD2 Track 78; Primary Year 4 SOW Lesson 155
 
 ## Set induction (10 minutes)
 **Teacher:** Use two symptom cards to review health vocabulary before introducing home-safety situations.
