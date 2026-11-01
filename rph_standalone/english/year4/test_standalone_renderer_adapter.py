@@ -38,7 +38,7 @@ class Lesson030AdapterTest(unittest.TestCase):
         original = (Path(__file__).parent / "lesson_001.md").read_text(encoding="utf-8")
         rendered = adapt_year4_standalone(original)
         for expected in (
-            "TOPIC:\\n1 — Where are you from?",
+            "TOPIC:\n1 — Where are you from?",
             "Listening 1.2 / 1.2.2",
             "Listening 1.1 / 1.1.1",
             "Class CD1 Track 3",
