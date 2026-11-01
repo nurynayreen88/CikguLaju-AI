@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.2.3  
 **Duration:** 60 minutes  
-**References:** SB pp.110–111, TB pp.162–163; alternative SB p.133 and TB p.197; Year 4 SOW Lesson 157
+**References:** resources/lesson_157_germs_reading_context_pbd_DRAFT.md; SB pp.110–111, TB pp.162–163; alternative SB p.133 and TB p.197; Year 4 SOW Lesson 157
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce What are germs? using the title and pictures on Student's Book page 110.
