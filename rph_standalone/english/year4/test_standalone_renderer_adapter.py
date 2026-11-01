@@ -8,6 +8,20 @@ from standalone_renderer_adapter import adapt_year4_standalone
 
 
 class Lesson030AdapterTest(unittest.TestCase):
+    def test_all_160_lessons_preserve_core_sections(self):
+        from standalone_renderer_adapter import adapt_year4_standalone
+        folder = Path(__file__).parent
+        for lesson_no in range(1, 161):
+            with self.subTest(lesson=lesson_no):
+                original = (folder / f"lesson_{lesson_no:03d}.md").read_text(encoding="utf-8")
+                rendered = adapt_year4_standalone(original)
+                for field in ("TOPIC:", "MAIN LEARNING STANDARD:", "COMPLEMENTARY LEARNING STANDARD:",
+                              "STANDARD PEMBELAJARAN:", "SET INDUCTION:", "MAIN ACTIVITIES:", "CLOSURE:"):
+                    self.assertIn(field, rendered)
+                self.assertIn("Activity 1", rendered)
+                self.assertIn("Activity 2", rendered)
+                self.assertTrue("PBD" in rendered or "Reinforcement" in rendered)
+
     def test_pbd_heading_variants(self):
         from standalone_renderer_adapter import adapt_year4_standalone
         for heading in (
