@@ -3,7 +3,8 @@
 Local-only command:
     python tools/run_web_v1_preview.py
 
-The preview optionally reads a local SQLite database in read-only mode.\nIt has no authentication, credit or generation endpoints.
+The preview optionally reads a local SQLite database in read-only mode.
+It has no authentication, credit or generation endpoints.
 Do not expose this development server to the public internet.
 """
 import os
@@ -49,7 +50,7 @@ def options():
         if kind == "pdp":
             return jsonify(pdp_options(db, year, subject, request.args.get("unit", "")))
         return jsonify({"error": "invalid option kind"}), 400
-    except (ValueError, FileNotFoundError):
+    except (ValueError, FileNotFoundError, OSError):
         return jsonify({"error": "invalid selection or unavailable database"}), 400
     except Exception:
         app.logger.exception("Preview dropdown read failed")
