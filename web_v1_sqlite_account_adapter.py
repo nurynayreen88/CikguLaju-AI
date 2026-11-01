@@ -17,6 +17,8 @@ def lookup_existing_sqlite_account(db_path, telegram_id, *, table, id_column,
                                    credits_column=None):
     if type(telegram_id) is not int or telegram_id <= 0:
         return None
+    if lifetime_column is None or credits_column is None:
+        raise ValueError("lifetime and free-credit columns must be explicitly mapped")
     identifiers = [table, id_column, lifetime_column, vip_column, credits_column]
     for name in identifiers:
         if name is not None:
