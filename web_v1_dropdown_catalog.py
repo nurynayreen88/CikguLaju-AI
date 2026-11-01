@@ -9,6 +9,25 @@ def subject_options(year):
     return [{'value': code, 'label': label} for code, label in SUBJECTS.items()]
 
 
+
+def available_subject_options(database_path, year):
+    """Show only subjects with verified RPT entries in the selected year."""
+    import sqlite3
+    from pathlib import Path
+    subject_options(year)
+    path = Path(database_path)
+    if not path.is_file():
+        raise FileNotFoundError(str(path))
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True) as conn:
+        conn.execute("PRAGMA query_only=ON")
+        rows = conn.execute(
+            "SELECT DISTINCT subject FROM rpt_entries WHERE year_label=? AND verified=1 "
+            "AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'",
+            (f"Tahun {year}",),
+        ).fetchall()
+    available = {row[0] for row in rows}
+    return [{'value': code, 'label': label} for code, label in SUBJECTS.items() if label in available]
+
 def unit_options(database_path, year, subject_code):
     records = VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
     names = dict.fromkeys((r.get('unit_title') or '').strip() for r in records)
