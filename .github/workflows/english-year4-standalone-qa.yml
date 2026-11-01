@@ -41,3 +41,28 @@ jobs:
           PY
       - name: Run 160-lesson standalone adapter tests
         run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_standalone_renderer_adapter.py' -v
+
+      - name: Produce downloadable release-blocker report
+        if: always()
+        run: |
+          python - <<'PY'
+          import csv
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'rph_standalone/english/year4')
+          from standalone_renderer_adapter import year4_release_blockers
+          folder = Path('rph_standalone/english/year4')
+          with open('year4_release_blockers.csv', 'w', newline='', encoding='utf-8') as handle:
+              writer = csv.writer(handle)
+              writer.writerow(['lesson', 'blockers', 'review_status'])
+              for path in sorted(folder.glob('lesson_[0-9][0-9][0-9].md')):
+                  reasons = year4_release_blockers(path.read_text(encoding='utf-8'))
+                  writer.writerow([path.stem, '; '.join(reasons), 'DRAFT'])
+          PY
+      - name: Upload release-blocker report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-year4-release-blockers
+          path: year4_release_blockers.csv
+          if-no-files-found: warn
