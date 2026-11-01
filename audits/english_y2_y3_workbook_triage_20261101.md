@@ -19,3 +19,13 @@ Source: current `main` standalone lesson files; Workbook visual activity index. 
 - Status must distinguish `EXISTING_REFERENCE`, `NON_TEXTBOOK_NO_WB_REQUIRED`, `NEEDS_CONTENT_MATCH`, and `NO_WB_REQUIRED` after SOW review.
 - Preserve every existing RPH paragraph. When a Workbook task is verified, add only one English-language sentence in the relevant activity; never invent pages or change original content.
 - No READY flag without independent SB/TB/audio and output checks. No changes to `main` from this audit.
+
+## Additional source-based triage — lessons 008–010 (2026-11-01)
+- Year 2 lesson 008: explicitly NON-TEXTBOOK phonics lesson, long-a words (play/day/game/hurray), teacher-developed sound sorting. **NO_WB_REQUIRED** for the existing lesson; do not add a generic Workbook sentence.
+- Year 2 lesson 009: explicitly NON-TEXTBOOK teacher-developed writing lesson on free-time sentences, capitals, spacing and full stops. **NO_WB_REQUIRED** for the existing lesson.
+- Year 2 lesson 010: explicitly NON-TEXTBOOK Language Arts lesson with original teacher-created chant, actions and speaking. **NO_WB_REQUIRED** for the existing lesson.
+- Year 3 lesson 008: Student's Book pp.8–9, sports descriptions and `can + verb`; **NEEDS_CONTENT_MATCH**, not automatically Workbook-required.
+- Year 3 lesson 009: Teacher's Book p.23 Activities 3–4, sports `can/can't` and written yes/no answers; **NEEDS_CONTENT_MATCH**.
+- Year 3 lesson 010: SOW action song/video, explicitly no prescribed Student's Book page; **NO_WB_REQUIRED** for this song-based activity unless the SOW is subsequently revised.
+
+These classifications are based on reading the actual RPH source and are not a release/QA approval. The existing lesson files are unchanged.
