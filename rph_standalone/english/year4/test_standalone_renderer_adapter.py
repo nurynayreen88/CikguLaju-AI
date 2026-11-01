@@ -54,6 +54,12 @@ class Lesson030AdapterTest(unittest.TestCase):
         self.assertNotIn("Verified mapping and limits", rendered)
         self.assertNotIn("NOT READY FOR RELEASE", rendered)
 
+    def test_lesson_070_resources_preserved(self):
+        original = (Path(__file__).parent / "lesson_070.md").read_text(encoding="utf-8")
+        rendered = adapt_year4_standalone(original)
+        self.assertIn("TEACHING AND LEARNING MATERIALS:\nSB pp.52–53", rendered)
+        self.assertIn("TB pp.82–83", rendered)
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
