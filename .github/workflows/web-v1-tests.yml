@@ -45,6 +45,8 @@ on:
       - 'web_v1_bot_pairing_bridge.py'
       - 'web_v1_phone_deeplink.py'
       - 'tests/test_web_v1_phone_deeplink.py'
+      - 'web_v1_telegram_auth_routes.py'
+      - 'tests/test_web_v1_telegram_auth_routes.py'
       - 'tests/test_web_v1_schema_inspector.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
