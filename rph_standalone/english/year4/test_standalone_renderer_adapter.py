@@ -52,6 +52,22 @@ class Lesson030AdapterTest(unittest.TestCase):
         self.assertIn("Audio: CD1 Track 4 (Activity 3 dialogue)", rendered)
         self.assertEqual(rendered.count("Audio: CD1 Track 4"), 1)
 
+    def test_audio_not_duplicated_when_already_in_references(self):
+        source = "\n".join([
+            "**Topic:** Test topic",
+            "**Main SP:** Listening 1.2.2",
+            "**Complementary SP:** Speaking 2.1.1",
+            "**References:** SB p.5; CD1 Track 4 (Activity 3 dialogue)",
+            "**Audio:** CD1 Track 4 (Activity 3 dialogue)",
+            "## Set induction", "Warm-up",
+            "## Activity 1", "Task",
+            "## Activity 2", "Task",
+            "## PBD / Reinforcement", "Assess",
+            "## Closure", "End",
+        ])
+        rendered = adapt_year4_standalone(source)
+        self.assertEqual(rendered.count("CD1 Track 4 (Activity 3 dialogue)"), 1)
+
     def test_qa_notes_are_not_exported_into_rph(self):
         source = "\n".join([
             "**Topic:** Test topic",
