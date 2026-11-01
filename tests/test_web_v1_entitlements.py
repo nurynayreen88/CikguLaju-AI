@@ -22,6 +22,14 @@ class AccountStatusTests(unittest.TestCase):
                                          today=date(2026, 11, 1))
         self.assertEqual(result["access"], "8/10 janaan percuma berbaki")
 
+    def test_malformed_lifetime_flag_is_rejected(self):
+        with self.assertRaises(ValueError):
+            display_trusted_account({"authenticated": True, "rakan_pembangun": "true"})
+
+    def test_malformed_vip_date_is_rejected(self):
+        with self.assertRaises(ValueError):
+            display_trusted_account({"authenticated": True, "vip_until": "31/12/2027"})
+
     def test_free_credits(self):
         self.assertEqual(display_access(free_remaining=7, today=date(2026, 11, 1)),
                          {"status": "Percuma", "access": "7/10 janaan percuma berbaki"})
