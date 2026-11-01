@@ -4,7 +4,7 @@
 **Main SP:** 4.2.1  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.99 Activities 1–2; TB p.146; Primary Year 4 SOW Lesson 142
+**References:** resources/lesson_142_famous_person_clue_paragraph_pbd_DRAFT.md; SB p.99 Activities 1–2; TB p.146; Primary Year 4 SOW Lesson 142
 
 ## Set induction (10 minutes)
 **Teacher:** Use the TB warm-up to elicit descriptions of well-known people without revealing their names.
