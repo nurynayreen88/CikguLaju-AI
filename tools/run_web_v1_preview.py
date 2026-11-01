@@ -59,5 +59,22 @@ def options():
         return jsonify({"error": "dropdown temporarily unavailable"}), 503
 
 
+
+@app.get("/api/shared/status")
+def shared_status():
+    return jsonify({"shared_backend_connected": False, "telegram_account_linked": False, "generation_enabled": False, "download_enabled": False})
+
+@app.get("/api/materials")
+def materials():
+    return jsonify({"error": "authentication and shared backend required"}), 503
+
+@app.post("/api/generate")
+def generate():
+    return jsonify({"error": "shared generator not connected"}), 503
+
+@app.get("/api/materials/download/<material_id>")
+def download_material(material_id):
+    return jsonify({"error": "authorized download service not connected"}), 503
+
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5055, debug=False)
