@@ -36,6 +36,7 @@ class AccountStatusTests(unittest.TestCase):
         self.assertEqual(response.status_code, 401)
         self.assertEqual(response.json["status"], "Belum disambungkan")
         self.assertFalse(response.json["authenticated"])
+        self.assertEqual(response.headers["Cache-Control"], "no-store, private")
 
     def test_preview_page_requests_server_status(self):
         from tools.run_web_v1_preview import app
