@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.2.1  
 **Duration:** 60 minutes  
-**References:** SB p.96 Activity 1; TB p.142; sports pictures; Year 4 SOW Lesson 136
+**References:** resources/lesson_136_sports_equipment_reading_pbd_DRAFT.md; SB p.96 Activity 1; TB p.142; sports pictures; Year 4 SOW Lesson 136
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce pictured sports and equipment.
