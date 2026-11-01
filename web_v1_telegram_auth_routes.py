@@ -4,6 +4,7 @@ Disabled unless all secrets and explicit existing-account SQLite mapping are set
 Never creates an account or alters the Telegram bot database.
 """
 import os
+from pathlib import Path
 from flask import Blueprint, current_app, jsonify, request, make_response
 from web_v1_telegram_login import verify_telegram_login
 from web_v1_sessions import issue_session_ticket, verify_session_ticket
@@ -21,6 +22,9 @@ def _config():
              "CIKGULAJU_WEB_ACCOUNT_CREDITS_COLUMN")
     values = [os.environ.get(n, "") for n in names]
     if any(not v for v in values) or len(values[1]) < 32:
+        return None
+    db = Path(values[2])
+    if not db.is_file() or not os.access(db, os.R_OK):
         return None
     return dict(zip(names, values))
 
