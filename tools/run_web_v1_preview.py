@@ -104,5 +104,14 @@ def generate():
 def download_material(material_id):
     return jsonify({"error": "authorized download service not connected"}), 503
 
+@app.after_request
+def preview_security_headers(response):
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["Referrer-Policy"] = "no-referrer"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
+
+
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5055, debug=False)
