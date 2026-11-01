@@ -36,11 +36,13 @@ def options():
     """Local preview only. Never a production generation or entitlement endpoint."""
     try:
         year = int(request.args.get("year", ""))
+        if year not in range(1, 7):
+            return jsonify({"error": "invalid year"}), 400
         kind = request.args.get("kind", "")
         if kind not in ("subjects", "units", "pdp"):
             return jsonify({"error": "invalid option kind"}), 400
         db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
-        if not db:
+        if not db or not Path(db).is_file():
             return jsonify({"error": "preview database not configured"}), 503
         if kind == "subjects":
             return jsonify(available_subject_options(db, year))
