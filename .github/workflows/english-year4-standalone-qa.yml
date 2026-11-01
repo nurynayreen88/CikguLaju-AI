@@ -59,6 +59,29 @@ jobs:
                   reasons = year4_release_blockers(path.read_text(encoding='utf-8'))
                   writer.writerow([path.stem, '; '.join(reasons), 'DRAFT'])
           PY
+      - name: Publish draft audit summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import csv
+          import os
+          from collections import Counter
+          from pathlib import Path
+          path = Path('year4_release_blockers.csv')
+          if not path.exists():
+              print('Release-blocker CSV was not generated')
+          else:
+              with path.open(encoding='utf-8', newline='') as handle:
+                  rows = list(csv.DictReader(handle))
+              counts = Counter(reason.strip() for row in rows for reason in row['blockers'].split(';') if reason.strip())
+              summary = ['## English Year 4 draft audit', '', f'Lessons reported: {len(rows)}', f'Lessons with detected blockers: {sum(bool(row["blockers"]) for row in rows)}', '', 'All lessons remain DRAFT; an empty blocker list does not certify READY.', '', '### Detected reasons']
+              summary.extend(f'- {reason}: {count}' for reason, count in sorted(counts.items()))
+              report = '\n'.join(summary)
+              print(report)
+              if os.environ.get('GITHUB_STEP_SUMMARY'):
+                  with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as handle:
+                      handle.write(report + '\n')
+          PY
       - name: Upload release-blocker report
         if: always()
         uses: actions/upload-artifact@v4
