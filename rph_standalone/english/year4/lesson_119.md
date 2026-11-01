@@ -4,7 +4,7 @@
 **Main SP:** 2.1.5  
 **Complementary SP:** 2.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.83 Activity 3; TB p.125; dinosaur cards; Primary Year 4 SK SOW Lesson 119
+**References:** SB p.83 Activity 3; TB p.125; dinosaur cards; resources/lesson_119_dinosaur_speaking_clarification_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 119
 
 ## Set induction (10 minutes)
 **Teacher:** Review comparative forms using dinosaur pictures.
