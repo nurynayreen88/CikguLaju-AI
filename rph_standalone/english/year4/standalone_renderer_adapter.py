@@ -37,6 +37,14 @@ def adapt_year4_standalone(markdown: str) -> str:
     main_sp = re.search(r"^\*\*Main SP:\*\*\s*(.+)$", markdown, re.M)
     comp_sp = re.search(r"^\*\*Complementary SP:\*\*\s*(.+)$", markdown, re.M)
     refs = re.search(r"^\*\*References:\*\*\s*(.+)$", markdown, re.M)
+    if not main_sp:
+        main_sp = re.search(r"^\*\*Main SK/SP:\*\*\s*(.+)$", markdown, re.M)
+    if not comp_sp:
+        comp_sp = re.search(r"^\*\*Complementary SK/SP:\*\*\s*(.+)$", markdown, re.M)
+    if not title:
+        title = re.search(r"^\*\*(?:Unit/Topic|Unit):\*\*\s*(.+)$", markdown, re.M)
+    if not refs:
+        refs = re.search(r"^\*\*Materials:\*\*\s*(.+)$", markdown, re.M)
     fields = [
         ("TOPIC", title.group(1) if title else ""),
         ("MAIN LEARNING STANDARD", main_sp.group(1).strip() if main_sp else ""),
