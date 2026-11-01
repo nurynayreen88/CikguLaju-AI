@@ -37,10 +37,10 @@ def verify_telegram_login(payload, bot_token, *, now=None, max_age_seconds=86400
     timestamp = int(time.time() if now is None else now)
     if auth_date > timestamp or timestamp - auth_date > max_age_seconds:
         return None
-    claimed = payload["hash"]
+    claimed = normalized["hash"]
     if len(claimed) != 64 or any(c not in "0123456789abcdefABCDEF" for c in claimed):
         return None
-    check_string = "\n".join(f"{key}={value}" for key, value in sorted(payload.items()) if key != "hash")
+    check_string = "\n".join(f"{key}={value}" for key, value in sorted(normalized.items()) if key != "hash")
     secret = hashlib.sha256(bot_token.encode("utf-8")).digest()
     expected = hmac.new(secret, check_string.encode("utf-8"), hashlib.sha256).hexdigest()
     if not hmac.compare_digest(expected, claimed.lower()):
