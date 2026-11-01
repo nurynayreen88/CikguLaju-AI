@@ -4,13 +4,13 @@
 <style>
 :root{font-family:system-ui,sans-serif;color:#143d35;background:#f0f8f5}*{box-sizing:border-box}body{margin:0}header{background:#075d4c;color:white;padding:24px max(20px,calc((100vw - 900px)/2))}main{max-width:900px;margin:28px auto;padding:0 18px}.panel{background:white;border-radius:20px;padding:26px;box-shadow:0 12px 30px #063e3112}h1{margin:0 0 8px}h2{margin-top:0}.note{background:#fff4d6;padding:14px;border-radius:12px;color:#5e4916;margin-bottom:20px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}label{font-weight:650;display:block;margin-bottom:7px}select,button{width:100%;padding:13px;border-radius:10px;border:1px solid #b8d3ca;background:white;font:inherit}select:disabled{background:#f0f1f1;color:#777}button{margin-top:20px;background:#dceae5;color:#516b62;cursor:not-allowed}.status{margin-top:16px;color:#52665f}@media(max-width:600px){.fields{grid-template-columns:1fr}.panel{padding:18px}header{padding:22px}}</style></head>
 <body><header><h1>CikguLaju AI</h1><div>Pratonton Web V1 • RPH Guru</div></header>
-<main><div class="note"><strong>Mod demonstrasi.</strong> Tiada log masuk, database, kredit atau penjanaan RPH. Pilihan subjek di bawah ialah contoh antaramuka sahaja.</div>
+<main><div class="note"><strong>Mod demonstrasi.</strong> Tiada log masuk, sambungan database, kredit atau penjanaan RPH. Pilihan subjek di bawah ialah contoh antaramuka sahaja.</div>
 <section class="panel"><h2>Sediakan RPH</h2><p>Pilih Tahun dahulu. Pilihan berikutnya dibuka secara berperingkat.</p>
 <div class="fields"><div><label for="year">1. Tahun</label><select id="year"><option value="">Pilih Tahun</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
 <div><label for="subject">2. Subjek</label><select id="subject" disabled><option value="">Pilih Subjek</option></select></div>
 <div><label for="unit">3. Unit</label><select id="unit" disabled><option value="">Memerlukan database disahkan</option></select></div>
 <div><label for="pdp">4. Lesson / PdP</label><select id="pdp" disabled><option value="">Memerlukan database disahkan</option></select></div></div>
-<button disabled>Jana RPH — Belum diaktifkan</button><p class="status" id="status" role="status">Sila pilih Tahun untuk mencuba paparan dropdown.</p></section></main>
+<button disabled aria-disabled="true">Jana RPH — Belum diaktifkan</button><p class="status" id="status" role="status">Sila pilih Tahun untuk mencuba paparan dropdown.</p></section></main>
 <script>
 const y=document.getElementById('year'),s=document.getElementById('subject'),status=document.getElementById('status');
 const subjects=[['ENGLISH','Bahasa Inggeris'],['BM','Bahasa Melayu'],['MATH','Matematik'],['SCIENCE','Sains'],['PI','Pendidikan Islam'],['PJPK','PJPK']];
