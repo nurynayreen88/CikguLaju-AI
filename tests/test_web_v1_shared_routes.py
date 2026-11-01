@@ -39,6 +39,24 @@ class SharedRoutesTests(unittest.TestCase):
             self.assertEqual(list_explicit_pjpk_entries(db, 3, "PJ"), [])
             self.assertEqual(list_explicit_pjpk_entries(db, 3, "PK"), [])
 
+    def test_pjpk_mapping_excludes_unverified_and_other_component(self):
+        with tempfile.TemporaryDirectory() as folder:
+            db = str(Path(folder) / "preview.db")
+            with sqlite3.connect(db) as con:
+                con.execute("CREATE TABLE rpt_entries (id INTEGER, sequence_no INTEGER, unit_title TEXT, topic TEXT, subtopic TEXT, year_label TEXT, subject TEXT, verified INTEGER, notes TEXT)")
+                con.execute("CREATE TABLE web_v1_pjpk_map (rpt_entry_id INTEGER, component TEXT, verified INTEGER)")
+                for entry_id in (1, 2, 3, 4):
+                    con.execute("INSERT INTO rpt_entries VALUES (?,?,?,?,?,?,?,?,?)",
+                                (entry_id, entry_id, "Unit A", "Topik", "Subtopik", "Tahun 3", "PJPK", 1, ""))
+                for entry_id, component, verified in ((1, "PJ", 1), (2, "PK", 1), (3, "PJ", 0), (4, "PK", 0)):
+                    con.execute("INSERT INTO web_v1_pjpk_map VALUES (?,?,?)", (entry_id, component, verified))
+            self.assertEqual([r["id"] for r in list_explicit_pjpk_entries(db, 3, "PJ")], [1])
+            self.assertEqual([r["id"] for r in list_explicit_pjpk_entries(db, 3, "PK")], [2])
+            with patch.dict("os.environ", {"CIKGULAJU_WEB_PREVIEW_DB": db}):
+                response = app.test_client().get("/api/options?kind=pdp&year=3&subject=PJPK&component=PJ&unit=Unit+A")
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual([r["value"] for r in response.json], ["1"])
+
     def test_generation_and_download_fail_closed(self):
         client = app.test_client()
         for method, path in (
