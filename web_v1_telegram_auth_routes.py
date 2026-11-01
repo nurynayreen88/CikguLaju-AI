@@ -76,7 +76,7 @@ def telegram_session_status():
         account = _lookup(config, uid)
     except Exception:
         return jsonify({"authenticated": False}), 503
-    if not account:
+    if not account or account.get("telegram_user_id") != uid:
         return jsonify({"authenticated": False}), 401
     entitlement = display_trusted_account(account)
     return jsonify({"authenticated": True, **entitlement})
