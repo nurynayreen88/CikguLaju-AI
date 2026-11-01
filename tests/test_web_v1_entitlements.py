@@ -4,6 +4,10 @@ from web_v1_entitlements import display_access
 
 
 class AccountStatusTests(unittest.TestCase):
+    def test_unknown_balance_not_invented(self):
+        self.assertEqual(display_access(today=date(2026, 11, 1)),
+                         {"status": "Percuma", "access": "Baki janaan belum tersedia"})
+
     def test_free_credits(self):
         self.assertEqual(display_access(free_remaining=7, today=date(2026, 11, 1)),
                          {"status": "Percuma", "access": "7/10 janaan percuma berbaki"})
