@@ -31,14 +31,20 @@ def create_english_catalog_blueprint(root=ROOT):
         if year not in (1, 2, 3):
             return jsonify({"error": "Unsupported year"}), 404
         folder = Path(root) / f"year{year}"
+        from web.english_release_gate import load_release_ready_english
         entries = []
         for n in range(1, 161):
             if (folder / f"lesson_{n:03d}.md").is_file():
-                entries.append({"lesson_no": n, "label": f"Lesson {n}"})
+                try:
+                    load_release_ready_english(year, n)
+                    approved = True
+                except (LookupError, ValueError, OSError):
+                    approved = False
+                entries.append({"lesson_no": n, "label": f"Lesson {n}", "approved": approved})
         response = jsonify({
             "year": year, "subject": "ENGLISH",
             "lessons": entries, "count": len(entries),
-            "notice": "Inventory only. Lessons are not approved for download.",
+            "notice": "Only lessons explicitly approved for release may be downloaded.",
         })
         response.headers["Cache-Control"] = "no-store, private"
         return response
