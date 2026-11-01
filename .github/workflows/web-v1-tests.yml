@@ -40,6 +40,7 @@ on:
       - 'tests/test_web_v1_end_to_end_pairing.py'
       - 'tests/test_web_v1_pairing_cleanup.py'
       - 'tests/test_web_v1_deployment_status.py'
+      - 'tests/test_web_v1_telegram_login_signature.py'
       - 'tests/test_web_v1_schema_inspector.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
