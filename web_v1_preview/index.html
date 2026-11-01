@@ -20,7 +20,7 @@
 <script>
 (function(){
 "use strict";
-const materials=document.getElementById("materials-panel");const componentField=document.getElementById("pjpk-component-field"),component=document.getElementById("pjpk-component");function syncComponent(){const isPjpk=subject.value==="PJPK";componentField.hidden=!isPjpk;component.disabled=!isPjpk;if(!isPjpk)component.value="";}component.addEventListener("change",function(){materials.hidden=true;reset(unit,"Memerlukan data PJ/PK yang disahkan");reset(lesson,"Pilih unit dahulu");status.textContent=component.value?"Bidang dipilih. Menunggu pemetaan PdP PJ/PK yang disahkan.":"Pilih Pendidikan Jasmani atau Pendidikan Kesihatan.";});const year=document.getElementById("tahun"),subject=document.getElementById("subjek"),unit=document.getElementById("unit"),lesson=document.getElementById("lesson"),status=document.getElementById("pilihan-status");
+const materials=document.getElementById("materials-panel");const componentField=document.getElementById("pjpk-component-field"),component=document.getElementById("pjpk-component");function syncComponent(){const isPjpk=subject.value==="PJPK";componentField.hidden=!isPjpk;component.disabled=!isPjpk;if(!isPjpk)component.value="";}component.addEventListener("change",async function(){materials.hidden=true;const v=++revision;reset(unit,component.value?"Memuatkan unit PJ/PK…":"Pilih bidang PJ/PK dahulu");reset(lesson,"Pilih unit dahulu");if(!component.value){status.textContent="Pilih Pendidikan Jasmani atau Pendidikan Kesihatan.";return;}await load("units",{year:year.value.replace("Tahun ",""),subject:subject.value,component:component.value},unit,"Pilih unit",v);if(v===revision)status.textContent=unit.disabled?"Tiada unit PJ/PK yang disahkan.":"Langkah seterusnya: Pilih Unit/Tajuk.";});const year=document.getElementById("tahun"),subject=document.getElementById("subjek"),unit=document.getElementById("unit"),lesson=document.getElementById("lesson"),status=document.getElementById("pilihan-status");
 let revision=0;
 function reset(el,label){el.replaceChildren(new Option(label,""));el.disabled=true;}
 async function load(kind,params,el,placeholder,version){
@@ -49,8 +49,8 @@ year.addEventListener("change",async function(){materials.hidden=true;componentF
   await load("subjects",{year:year.value.replace("Tahun ","")},subject,"Pilih subjek",v);
   if(v===revision&& !subject.disabled)status.textContent="Langkah 2: Pilih subjek.";
 });
-subject.addEventListener("change",async function(){materials.hidden=true;syncComponent();if(subject.value==="PJPK"){reset(unit,"Pilih bidang PJ/PK dahulu");reset(lesson,"Pilih unit dahulu");status.textContent="Pilih bidang PJ atau PK. Pemetaan PdP yang disahkan diperlukan.";return;}
-  const v=++revision;reset(unit,subject.value?"Memuatkan unit…":"Pilih subjek dahulu");reset(lesson,"Pilih unit dahulu");
+subject.addEventListener("change",async function(){materials.hidden=true;syncComponent();const subjectRevision=++revision;if(subject.value==="PJPK"){reset(unit,"Pilih bidang PJ/PK dahulu");reset(lesson,"Pilih unit dahulu");status.textContent="Pilih bidang PJ atau PK. Pemetaan PdP yang disahkan diperlukan.";return;}
+  const v=subjectRevision;reset(unit,subject.value?"Memuatkan unit…":"Pilih subjek dahulu");reset(lesson,"Pilih unit dahulu");
   if(!subject.value){status.textContent="Langkah 2: Pilih subjek.";return;}
   status.textContent="Memuatkan unit yang disahkan…";
   await load("units",{year:year.value.replace("Tahun ",""),subject:subject.value},unit,"Pilih unit",v);
@@ -60,7 +60,7 @@ unit.addEventListener("change",async function(){materials.hidden=true;
   const v=++revision;reset(lesson,unit.value?"Memuatkan PdP…":"Pilih unit dahulu");
   if(!unit.value){status.textContent="Langkah 3: Pilih unit.";return;}
   status.textContent="Memuatkan PdP daripada RPT yang disahkan…";
-  await load("pdp",{year:year.value.replace("Tahun ",""),subject:subject.value,unit:unit.value},lesson,"Pilih Lesson / PdP",v);
+  await load("pdp",{year:year.value.replace("Tahun ",""),subject:subject.value,unit:unit.value,...(subject.value==="PJPK"?{component:component.value}:{})},lesson,"Pilih Lesson / PdP",v);
   if(v===revision&&!lesson.disabled)status.textContent="Langkah 4: Pilih PdP. Penjanaan RPH belum diaktifkan.";
 });
 lesson.addEventListener("change",function(){materials.hidden=!lesson.value;status.textContent=lesson.value?"Pilihan PdP direkodkan dalam pratonton. Penjanaan RPH belum diaktifkan.":"Langkah 4: Pilih PdP.";});
