@@ -43,6 +43,13 @@ def audit(root=ROOT):
         for label in ("Activity 1", "Activity 2"):
             if label not in adapted:
                 blockers.append("renderer_missing_" + label.lower().replace(" ", "_"))
+        # Check that explicitly linked local lesson resources exist; never fetch external URLs.
+        linked_resources = set(re.findall(
+            r"resources/[A-Za-z0-9_.-]+\\.(?:md|pdf|docx|png|jpg|mp3)", source, re.I
+        ))
+        for resource in sorted(linked_resources):
+            if not (root / resource).is_file():
+                blockers.append("missing_linked_resource:" + resource)
         if number in TEACHER_SELECTED and "teacher_selected_main_sp" not in blockers:
             blockers.append("review_teacher_selected_main_sp")
         if number in TEACHER_SELECTED and "teacher_selected_complementary_sp" not in blockers:
