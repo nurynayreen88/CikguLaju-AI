@@ -42,6 +42,7 @@ class Lesson030AdapterTest(unittest.TestCase):
             "Listening 1.2 / 1.2.2",
             "Listening 1.1 / 1.1.1",
             "Class CD1 Track 3",
+            "LEARNING OBJECTIVES:\nPupils listen for country/name information",
             "Activity 1 — Flag vocabulary",
             "Activity 2 — Listen and write",
             "Activity 3 — Malaysian flag listening",
