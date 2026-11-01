@@ -56,6 +56,21 @@ class SQLiteAccountAdapterTests(unittest.TestCase):
             conn.execute("UPDATE accounts SET credits = NULL WHERE telegram_id = 123")
         self.assertIsNone(self.lookup(123))
 
+    def test_invalid_vip_date_is_denied(self):
+        with sqlite3.connect(self.path) as conn:
+            conn.execute("UPDATE accounts SET vip = '31/12/2027' WHERE telegram_id = 123")
+        self.assertIsNone(self.lookup(123))
+
+    def test_valid_vip_date_is_preserved(self):
+        with sqlite3.connect(self.path) as conn:
+            conn.execute("UPDATE accounts SET vip = '2027-12-31' WHERE telegram_id = 123")
+        self.assertEqual(self.lookup(123)["vip_until"], "2027-12-31")
+
+    def test_database_is_not_modified_by_lookup(self):
+        before = self.path.read_bytes()
+        self.lookup(123)
+        self.assertEqual(self.path.read_bytes(), before)
+
     def test_missing_database_not_created(self):
         missing = Path(self.folder.name) / "missing.db"
         with self.assertRaises(sqlite3.OperationalError):
