@@ -4,7 +4,7 @@
 **Main SP:** 4.2.2  
 **Complementary SP:** 4.2.1  
 **Duration:** 60 minutes  
-**References:** SB p.105 Activity 3; TB p.155; text-message worksheet; Primary Year 4 SOW Lesson 148
+**References:** SB p.105 Activity 3; TB p.155; resources/lesson_148_health_text_messages_pbd_DRAFT.md (original message worksheet and PBD); Primary Year 4 SOW Lesson 148
 
 ## Set induction (10 minutes)
 **Teacher:** Play hot-card pantomime to review health words.
