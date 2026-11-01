@@ -66,4 +66,23 @@ unit.addEventListener("change",async function(){materials.hidden=true;syncVisibi
 lesson.addEventListener("change",function(){showMaterialsWrap.hidden=!lesson.value;syncVisibility();status.textContent=lesson.value?"Pilihan PdP direkodkan dalam pratonton. Penjanaan RPH belum diaktifkan.":"Langkah 4: Pilih PdP.";});
 reset(subject,"Pilih tahun dahulu");reset(unit,"Pilih subjek dahulu");reset(lesson,"Pilih unit dahulu");syncVisibility();
 }());
+
+// Account status is always loaded from the authenticated server endpoint.
+// Never infer paid access or free balance from local browser state.
+(async function loadAccountStatus(){
+  const statusEl=document.getElementById("account-status");
+  const accessEl=document.getElementById("account-access");
+  try{
+    const response=await fetch("/api/account/status",{credentials:"same-origin",cache:"no-store"});
+    if(!response.ok)return;
+    const data=await response.json();
+    if(data.authenticated!==true)return;
+    if(!["Percuma","VIP","Rakan Pembangun"].includes(data.status))return;
+    if(typeof data.access!=="string")return;
+    statusEl.textContent="Status Pengguna — "+data.status;
+    accessEl.textContent="Akses — "+data.access;
+  }catch(_error){
+    // Keep the explicit disconnected placeholder on network errors.
+  }
+}());
 </script></body></html>
