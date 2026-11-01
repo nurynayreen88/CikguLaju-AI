@@ -27,7 +27,11 @@ def finish_verified_pairing(connection, challenge_hash, browser_challenge_hash,
     telegram_user_id = consume_pairing(connection, challenge_hash, now=now)
     if telegram_user_id is None:
         return None
-    account = account_lookup(telegram_user_id)
-    if not isinstance(account, dict) or account.get("telegram_user_id") != telegram_user_id:
+    try:
+        account = account_lookup(telegram_user_id)
+    except Exception:
+        # The challenge has already been consumed: never allow a replay on lookup failure.
+        return None
+    if not isinstance(account, dict) or type(account.get("telegram_user_id")) is not int or account["telegram_user_id"] != telegram_user_id:
         return None
     return issue_session_ticket(telegram_user_id, session_secret, now=now)
