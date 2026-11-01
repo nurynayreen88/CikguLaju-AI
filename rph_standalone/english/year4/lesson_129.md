@@ -7,7 +7,7 @@
 **Audio:** Class CD2 Track 52 (sports song) and CD2 Track 51 (vocabulary), verified against Teacher's Book p.138. MP3 files located in Drive; playback and Telegram download remain untested.  
 
 **Audio files located in Drive (playback/access not yet tested):** CD2 Track 51 — https://drive.google.com/file/d/1rVOmzGZ9DNPKutLoRtfTlwrLhVSSsrgO/view ; CD2 Track 52 — https://drive.google.com/file/d/1ZkJkB2UYEaM_xaZYXXUP9jVIkZQPH_pZ/view.  
-**References:** SB p.93 Activity 1; TB pp.138–139; sports song; Year 4 SOW Lesson 129
+**References:** resources/lesson_129_sports_song_listening_pbd_DRAFT.md; SB p.93 Activity 1; TB pp.138–139; sports song; Year 4 SOW Lesson 129
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce the song's key adjectives using neutral picture prompts without revealing the sports theme.
