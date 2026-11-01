@@ -60,6 +60,14 @@ class Lesson030AdapterTest(unittest.TestCase):
         self.assertIn("TEACHING AND LEARNING MATERIALS:\nSB pp.52–53", rendered)
         self.assertIn("TB pp.82–83", rendered)
 
+    def test_teacher_selected_sp_not_mistaken_for_verified_standard(self):
+        for number in (80, 96):
+            with self.subTest(lesson=number):
+                source = (Path(__file__).parent / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
+                rendered = adapt_year4_standalone(source)
+                self.assertIn("Teacher-selected DSKP SP", rendered)
+                self.assertNotIn("READY FOR RELEASE", rendered)
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
