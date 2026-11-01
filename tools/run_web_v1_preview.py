@@ -217,6 +217,19 @@ def generate():
     response.headers["Cache-Control"] = "no-store, private"
     return response
 
+@app.get("/api/web/english/rph/capabilities")
+def english_rph_capabilities():
+    enabled = (os.environ.get("CIKGULAJU_ENV") == "staging"
+               and os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") == "1")
+    try:
+        import docx
+        import reportlab
+        renderer_ready = True
+    except ImportError:
+        renderer_ready = False
+    return jsonify({"download_enabled": enabled and renderer_ready})
+
+
 @app.post("/api/web/english/rph")
 def english_approved_rph():
     """Render only explicitly release-ready English lessons by year and lesson."""
