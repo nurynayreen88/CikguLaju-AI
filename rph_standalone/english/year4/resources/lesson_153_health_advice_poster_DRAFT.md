@@ -29,3 +29,6 @@ Content: Three understandable health-advice sentences including should and shoul
 Example: We should wash our hands before eating. We should brush our teeth every day. We shouldn't share toothbrushes.
 Support: Word bank and labelled pictures. Extension: Add a reason with because.
 Teacher checks accuracy and SOW/DSKP alignment before approval. Status: DRAFT.
+
+## Student's Book language verification
+This poster and all sample sentences are original teacher-created examples, not quotations from Get Smart Plus 4. Before approval, check that the health vocabulary, should/shouldn't advice and body-part labels match the relevant Unit 10 Student's Book language and the official SOW. Replace examples that introduce unstudied or mismatched language. Do not invent named book characters. Status: DRAFT.
