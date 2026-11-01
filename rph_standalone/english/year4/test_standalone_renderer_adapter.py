@@ -35,7 +35,7 @@ class Lesson030AdapterTest(unittest.TestCase):
                     self.assertTrue(match.group(1).strip(), f"Empty {field} in lesson {lesson_no}")
 
     def test_qa_notes_are_not_exported_into_rph(self):
-        source = "\\n".join([
+        source = "\n".join([
             "**Topic:** Test topic",
             "**Main SP:** Writing 4.3.2",
             "**Complementary SP:** Listening 1.2.5",
