@@ -4,7 +4,7 @@
 **Main SP:** Teacher-selected DSKP SP  
 **Complementary SP:** Teacher-selected DSKP SP  
 **Duration:** 60 minutes  
-**References:** Unit 8 revision; TB activities 1–3; SOW self-assessment; Year 4 SOW Lesson 128
+**References:** resources/lesson_128_unit8_teacher_selected_revision_pbd_DRAFT.md; Unit 8 revision; TB activities 1–3; SOW self-assessment; Year 4 SOW Lesson 128
 
 ## Set induction (10 minutes)
 **Teacher:** Use the TB warm-up to elicit animal adjectives and check one comparative form before revision.
