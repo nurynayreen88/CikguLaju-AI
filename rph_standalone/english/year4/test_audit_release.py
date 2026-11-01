@@ -37,6 +37,22 @@ class ReleaseAuditTests(unittest.TestCase):
         self.assertIn("renderer_empty_closure", row["blockers"])
         self.assertIn("renderer_missing_assessment", row["blockers"])
 
+    def test_missing_linked_resource_is_blocked(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "lesson_001.md").write_text(
+                "**Topic:** Sample\\n**Main SP:** Listening 1.2.2\\n"
+                "**Complementary SP:** Speaking 2.1.1\\n"
+                "**References:** resources/lesson_001_missing_DRAFT.md\\n"
+                "## Set induction\\nStart\\n## Activity 1\\nTask\\n"
+                "## Activity 2\\nTask\\n## PBD / reinforcement\\nAssess\\n"
+                "## Closure\\nEnd\\n**PBD:** Check response\\n",
+                encoding="utf-8")
+            row = audit(root)[0]
+        self.assertIn(
+            "missing_linked_resource:resources/lesson_001_missing_DRAFT.md",
+            row["blockers"])
+
     def test_missing_files_blocked(self):
         with tempfile.TemporaryDirectory() as folder:
             rows = audit(Path(folder))
