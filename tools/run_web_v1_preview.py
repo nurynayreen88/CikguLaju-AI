@@ -42,7 +42,8 @@ def options():
         if kind not in ("subjects", "units", "pdp", "components"):
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
-            return jsonify(component_options(request.args.get("subject", "")))\n        db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
+            return jsonify(component_options(request.args.get("subject", "")))
+        db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
         if not db or not Path(db).is_file():
             return jsonify({"error": "preview database not configured"}), 503
         if kind == "subjects":
