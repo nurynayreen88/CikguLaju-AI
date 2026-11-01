@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 2.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.105 Activities 4–5; TB p.155; Activity 4 CD2 Track 73; Activity 5 CD2 Track 74; character pictures; Primary Year 4 SOW Lesson 150
+**References:** resources/lesson_150_health_characters_listening_advice_pbd_DRAFT.md; SB p.105 Activities 4–5; TB p.155; Activity 4 CD2 Track 73; Activity 5 CD2 Track 74; character pictures; Primary Year 4 SOW Lesson 150
 
 ## Set induction (10 minutes)
 **Teacher:** Review health vocabulary with character pictures.
