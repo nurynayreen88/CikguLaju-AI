@@ -5,7 +5,7 @@ and an audited server-side RPHLookupConfig. Never accept approval configuration
 from the browser. This route is disabled unless explicitly enabled on staging.
 """
 import os
-from flask import Blueprint, abort, jsonify, make_response, request
+from flask import Blueprint, abort, make_response, request
 
 from web.approved_rph_reader import load_approved_rph
 from web.rph_document_renderer import render_approved_rph
@@ -16,7 +16,7 @@ def create_staging_rph_blueprint(config, authorize):
         raise RuntimeError("Staging RPH endpoint disabled")
     if os.environ.get("CIKGULAJU_ENV") != "staging":
         raise RuntimeError("RPH endpoint cannot be enabled outside staging")
-    if not callable(authorize):
+    if config is None:\n        raise TypeError("Audited RPH lookup configuration required")\n    if not callable(authorize):
         raise TypeError("Trusted authorization callback required")
 
     blueprint = Blueprint("web_rph_staging", __name__)
