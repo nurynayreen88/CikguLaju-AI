@@ -4,7 +4,7 @@
 **Main SP:** 5.2.1  
 **Complementary SP:** 2.1.1  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook pp.33–34; Chapter 5; Primary Year 4 SK SOW Lesson 117
+**References:** Graphic Novel Teaching Guidebook pp.33–34; Chapter 5; resources/lesson_117_mowgli_chapter5_response_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 117
 
 ## Set induction (10 minutes)
 **Teacher:** Discuss characters, feelings and relationships.
