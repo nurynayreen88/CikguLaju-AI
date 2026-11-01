@@ -18,3 +18,22 @@ The pupils decided to use the money to buy seeds for a small school garden. They
 **Teacher key:** (1) A school recycling project and its benefits; (2) any two of paper, plastic bottles, metal cans; (3) RM24; (4) seeds; (5) meanings depend on pupil-friendly dictionary; collect comes before reduce.
 
 **PBD:** Record whether pupils locate dictionary headwords, understand definitions and identify the main idea. **Teacher approval and classroom material review pending.**
+
+
+## Individual printable PBD response sheet
+Name: __________ Class: __________ Date: __________
+Main idea in one sentence: ____________________________________
+Two materials mentioned: __________ and __________
+Amount received: RM__________
+What the pupils planned to buy: __________
+Dictionary task (use a monolingual dictionary):
+- recycle — headword found: Yes / No; meaning in own words: __________
+- collect — headword found: Yes / No; meaning in own words: __________
+- sell — headword found: Yes / No; meaning in own words: __________
+Alphabetical order of these three headwords: __________, __________, __________
+Teacher key for order: collect, recycle, sell. Accept accurate age-appropriate dictionary definitions; do not prescribe one dictionary's wording.
+
+## Individual teacher observation
+Main Reading SP 3.2.4: Correctly finds 0 / 1 / 2 / 3 headwords and uses dictionary entries appropriately.
+Complementary Reading SP 3.2.1: Identifies main idea accurately / with prompting / not yet.
+The original passage uses a fictional school name, Sekolah Ceria. This is not a named character or school from Student's Book. Confirm that recycling vocabulary and workbook task align with the official SOW and source before READY. Keep Workbook p.61 Activity 1 as separate printed practice.
