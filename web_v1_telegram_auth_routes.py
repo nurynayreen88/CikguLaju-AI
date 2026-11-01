@@ -16,20 +16,33 @@ COOKIE = "cikgulaju_web_v1_session"
 
 
 def _config():
-    names = ("CIKGULAJU_WEB_BOT_TOKEN", "CIKGULAJU_WEB_SESSION_SECRET",
-             "CIKGULAJU_WEB_ACCOUNT_DB", "CIKGULAJU_WEB_ACCOUNT_TABLE",
+    token = os.environ.get("CIKGULAJU_WEB_BOT_TOKEN", "")
+    secret = os.environ.get("CIKGULAJU_WEB_SESSION_SECRET", "")
+    url = os.environ.get("SUPABASE_URL", "")
+    key = os.environ.get("SUPABASE_SECRET_KEY", "")
+    if not token or len(secret) < 32:
+        return None
+    if url.startswith("https://") and key:
+        return {"CIKGULAJU_WEB_BOT_TOKEN": token,
+                "CIKGULAJU_WEB_SESSION_SECRET": secret, "account_backend": "supabase",
+                "supabase_url": url, "supabase_key": key}
+    names = ("CIKGULAJU_WEB_ACCOUNT_DB", "CIKGULAJU_WEB_ACCOUNT_TABLE",
              "CIKGULAJU_WEB_ACCOUNT_ID_COLUMN", "CIKGULAJU_WEB_ACCOUNT_LIFETIME_COLUMN",
              "CIKGULAJU_WEB_ACCOUNT_CREDITS_COLUMN")
     values = [os.environ.get(n, "") for n in names]
-    if any(not v for v in values) or len(values[1]) < 32:
+    if any(not v for v in values):
         return None
-    db = Path(values[2])
+    db = Path(values[0])
     if not db.is_file() or not os.access(db, os.R_OK):
         return None
-    return dict(zip(names, values))
+    return {"CIKGULAJU_WEB_BOT_TOKEN": token, "CIKGULAJU_WEB_SESSION_SECRET": secret,
+            "account_backend": "sqlite", **dict(zip(names, values))}
 
 
 def _lookup(config, uid):
+    if config.get("account_backend") == "supabase":
+        from web_v1_supabase_account_adapter import lookup_existing_supabase_account
+        return lookup_existing_supabase_account(config["supabase_url"], config["supabase_key"], uid)
     return lookup_existing_sqlite_account(
         config["CIKGULAJU_WEB_ACCOUNT_DB"], uid,
         table=config["CIKGULAJU_WEB_ACCOUNT_TABLE"],
