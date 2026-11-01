@@ -29,7 +29,7 @@ def adapt_year4_standalone(markdown: str) -> str:
         return "\n".join(next((lines for heading, lines in blocks.items() if heading.lower().startswith(prefix.lower())), [])).strip()
     activities = []
     for heading in blocks:
-        if ACTIVITY.match(heading) or heading.lower().startswith("reinforcement"):
+        if ACTIVITY.match(heading) or re.match(r"^(?:reinforcement|pbd)\\b", heading, re.I):
             activities.append(f"{heading}\n{body(heading)}")
     # The active English renderer expects these exact standard field names.
     # Do not infer content standards from learning-standard codes.
