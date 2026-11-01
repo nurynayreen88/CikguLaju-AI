@@ -9,7 +9,43 @@
 <div class="layout"><nav class="sidebar" aria-label="Navigasi utama"><div class="navtitle">MENU UTAMA</div><a class="navitem active" href="#utama" aria-current="page"><span aria-hidden="true">🏠</span> Dashboard</a><a class="navitem" href="#form-title"><span aria-hidden="true">📝</span> Sediakan RPH</a><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">📅</span> RPH Hari Ini</span><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">🗓️</span> RPH Minggu Ini</span><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">📚</span> RPT 2027</span><span class="navitem" aria-disabled="true" title="Belum aktif"><span aria-hidden="true">👤</span> Profil Saya</span><div class="sidefoot">Satu akaun Telegram untuk bot dan web selepas integrasi disahkan.</div></nav>
 <main class="main" id="utama"><section class="hero"><div class="kicker">Selamat datang, cikgu!</div><h1>Rancang PdP dengan lebih mudah.</h1><p>Pilih tahun, subjek dan lesson di satu tempat. Paparan direka untuk mudah digunakan pada telefon atau komputer.</p><span class="chip">✨ Mudah dipilih · Ringkas · Mesra telefon</span></section>
 <section class="stats" aria-label="Ringkasan akaun"><div class="card stat"><small>🎁 Percubaan pengguna baharu</small><strong>10 janaan</strong><p>Ini jumlah tawaran, bukan baki sebenar. Baki akan dipaparkan selepas log masuk.</p></div><div class="card stat"><small>🤝 Status keahlian</small><strong style="font-size:1.18rem">Rakan Pembangun</strong><p>Status sebenar akan disemak melalui akaun Telegram yang disahkan.</p></div></section>
-<section class="section" aria-labelledby="form-title"><div class="sectionhead"><h2 id="form-title">📝 Sediakan RPH</h2><span class="hint">Ikut turutan, satu langkah demi satu</span></div><div class="card"><div class="steps" aria-label="Langkah pemilihan"><span class="step">1 · Tahun</span><span class="step">2 · Subjek</span><span class="step">3 · Unit</span><span class="step">4 · Lesson / PdP</span></div><div class="formgrid"><div class="field"><label for="tahun">Tahun / Tingkatan</label><select id="tahun"><option value="">Pilih tahun</option><option>Tahun 1</option><option>Tahun 2</option><option>Tahun 3</option><option>Tahun 4</option><option>Tahun 5</option><option>Tahun 6</option></select></div><div class="field"><label for="subjek">Subjek</label><select id="subjek"><option value="">Pilih subjek</option><option>Bahasa Inggeris</option><option>Bahasa Melayu</option><option>Matematik</option><option>Sains</option><option>Pendidikan Islam</option><option>PJPK</option></select></div><div class="field"><label for="unit">Unit / Tajuk</label><select id="unit" disabled><option>Menunggu sambungan database</option></select></div><div class="field"><label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Menunggu sambungan database</option></select></div></div><p class="statusline" id="pilihan-status" role="status" aria-live="polite">Pilih tahun dan subjek untuk memulakan.</p><div class="actionrow"><small>Penjanaan dikunci sehingga pengesahan akaun dan integrasi backend siap.</small><button class="primary" type="button" disabled>Jana RPH · Belum aktif</button></div></div></section>
+<section class="section" aria-labelledby="form-title"><div class="sectionhead"><h2 id="form-title">📝 Sediakan RPH</h2><span class="hint">Ikut turutan, satu langkah demi satu</span></div><div class="card"><div class="steps" aria-label="Langkah pemilihan"><span class="step">1 · Tahun</span><span class="step">2 · Subjek</span><span class="step">3 · Unit</span><span class="step">4 · Lesson / PdP</span></div><div class="formgrid"><div class="field"><label for="tahun">Tahun / Tingkatan</label><select id="tahun"><option value="">Pilih tahun</option><option>Tahun 1</option><option>Tahun 2</option><option>Tahun 3</option><option>Tahun 4</option><option>Tahun 5</option><option>Tahun 6</option></select></div><div class="field"><label for="subjek">Subjek</label><select id="subjek" disabled><option value="">Pilih tahun dahulu</option><option>Bahasa Inggeris</option><option>Bahasa Melayu</option><option>Matematik</option><option>Sains</option><option>Pendidikan Islam</option><option>PJPK</option></select></div><div class="field"><label for="unit">Unit / Tajuk</label><select id="unit" disabled><option>Menunggu sambungan database</option></select></div><div class="field"><label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Menunggu sambungan database</option></select></div></div><p class="statusline" id="pilihan-status" role="status" aria-live="polite">Pilih tahun dan subjek untuk memulakan.</p><div class="actionrow"><small>Penjanaan dikunci sehingga pengesahan akaun dan integrasi backend siap.</small><button class="primary" type="button" disabled>Jana RPH · Belum aktif</button></div></div></section>
 <section class="section" aria-labelledby="feature-title"><div class="sectionhead"><h2 id="feature-title">Fungsi untuk cikgu</h2><span class="hint">Akses mengikut kelayakan</span></div><div class="featuregrid"><article class="card feature"><span class="glyph" aria-hidden="true">☀️</span><div><strong>RPH Hari Ini</strong><p>RPH berdasarkan jadual kelas yang disahkan.</p><span class="pill">Integrasi akan datang</span></div></article><article class="card feature"><span class="glyph" aria-hidden="true">📆</span><div><strong>RPH Minggu Ini</strong><p>Semak cuti dan kelas sebelum menyediakan RPH mingguan.</p><span class="pill">Integrasi akan datang</span></div></article><article class="card feature"><span class="glyph" aria-hidden="true">📖</span><div><strong>RPT 2027</strong><p>Perancangan tahunan mengikut akses akaun.</p><span class="pill">Akses berkelayakan</span></div></article><article class="card feature"><span class="glyph" aria-hidden="true">👤</span><div><strong>Profil Saya</strong><p>Semak maklumat akaun dan baki janaan sebenar.</p><span class="pill">Selepas log masuk</span></div></article></div></section>
 <div class="notice" role="note"><strong>Makluman:</strong> Ini ialah pratonton reka bentuk, bukan laman web aktif. Tiada akaun, baki kredit atau data murid diambil. Penjanaan RPH dan pilihan unit/lesson belum disambungkan.</div><footer class="footer">CikguLaju AI · Pratonton antaramuka Web V1 · Staging sahaja</footer></main></div></div>
-<script>(function(){"use strict";const y=document.getElementById("tahun"),s=document.getElementById("subjek"),status=document.getElementById("pilihan-status");function update(){status.textContent=y.value&&s.value?"Pilihan: "+y.value+" · "+s.value+". Unit dan lesson akan dipaparkan selepas integrasi database.":"Pilih tahun dan subjek untuk memulakan."}y.addEventListener("change",update);s.addEventListener("change",update);update()})();</script></body></html>
+<script>
+(function(){
+"use strict";
+const year=document.getElementById("tahun");
+const subject=document.getElementById("subjek");
+const unit=document.getElementById("unit");
+const lesson=document.getElementById("lesson");
+const status=document.getElementById("pilihan-status");
+const subjects=["Bahasa Inggeris","Bahasa Melayu","Matematik","Sains","Pendidikan Islam","PJPK"];
+function reset(select,label){
+  select.replaceChildren(new Option(label,""));
+  select.value="";
+  select.disabled=true;
+}
+function updateStatus(){
+  if(!year.value){status.textContent="Langkah 1: Pilih tahun untuk membuka senarai subjek.";return;}
+  if(!subject.value){status.textContent="Langkah 2: Pilih subjek untuk "+year.value+".";return;}
+  status.textContent="Pilihan: "+year.value+" · "+subject.value+". Unit dan Lesson / PdP akan dibuka selepas sambungan database disahkan.";
+}
+year.addEventListener("change",function(){
+  reset(subject,year.value?"Pilih subjek":"Pilih tahun dahulu");
+  reset(unit,"Pilih subjek dahulu");
+  reset(lesson,"Pilih unit dahulu");
+  if(year.value){
+    for(const name of subjects)subject.add(new Option(name,name));
+    subject.disabled=false;
+  }
+  updateStatus();
+});
+subject.addEventListener("change",function(){
+  reset(unit,subject.value?"Unit belum tersedia dalam pratonton":"Pilih subjek dahulu");
+  reset(lesson,"Pilih unit dahulu");
+  updateStatus();
+});
+updateStatus();
+}());
+</script></body></html>
