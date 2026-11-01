@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT))
 from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options, component_options
 from web_v1_verified_pdp import list_explicit_pjpk_entries
 from web_v1_entitlements import display_trusted_account
-PREVIEW = ROOT / "web_v1_preview" / "index.html"
+PREVIEW = ROOT / "web_v1_static_preview" / "index.html"
 app = Flask(__name__)
 from web_v1_telegram_auth_routes import auth_blueprint
 app.register_blueprint(auth_blueprint)
@@ -29,7 +29,9 @@ app.register_blueprint(create_english_catalog_blueprint())
 
 @app.get("/")
 def preview():
-    return send_file(PREVIEW, mimetype="text/html", conditional=True)
+    response = send_file(PREVIEW, mimetype="text/html", conditional=True)
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
 
 
 @app.get("/health")
