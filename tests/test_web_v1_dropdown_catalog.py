@@ -1,7 +1,10 @@
 """Isolated tests for read-only dropdown navigation."""
+import sqlite3
+import tempfile
+from pathlib import Path
 import unittest
 from unittest.mock import patch
-from web_v1_dropdown_catalog import subject_options, unit_options, pdp_options
+from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options
 
 
 class DropdownTests(unittest.TestCase):
@@ -11,6 +14,22 @@ class DropdownTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             subject_options('1')
         self.assertTrue(subject_options(1))
+
+    def test_available_subjects_use_verified_non_superseded_records(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / 'catalog.db'
+            with sqlite3.connect(db) as conn:
+                conn.execute('CREATE TABLE rpt_entries (year_label TEXT, subject TEXT, verified INTEGER, notes TEXT)')
+                conn.executemany('INSERT INTO rpt_entries VALUES (?, ?, ?, ?)', [
+                    ('Tahun 3', 'Bahasa Inggeris', 1, ''),
+                    ('Tahun 3', 'Matematik', 0, ''),
+                    ('Tahun 3', 'Sains', 1, 'superseded'),
+                    ('Tahun 4', 'Bahasa Melayu', 1, ''),
+                ])
+            self.assertEqual([x['value'] for x in available_subject_options(db, 3)], ['ENGLISH'])
+            self.assertEqual([x['value'] for x in available_subject_options(db, 4)], ['BM'])
+            with self.assertRaises(ValueError):
+                available_subject_options(db, 0)
 
     @patch('web_v1_dropdown_catalog.VerifiedPdpCatalog')
     def test_unit_deduplication(self, catalog):
