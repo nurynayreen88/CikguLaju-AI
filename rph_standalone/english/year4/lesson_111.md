@@ -4,7 +4,7 @@
 **Main SP:** 5.3.1  
 **Complementary SP:** 2.1.4  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook pp.35–36; Chapters 3–4; Primary Year 4 SK SOW Lesson 111
+**References:** Graphic Novel Teaching Guidebook pp.35–36; Chapters 3–4; resources/lesson_111_jungle_book_sequencing_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 111
 
 ## Set induction (10 minutes)
 **Teacher:** Ask pupils to recap one key event from Chapters 1–2 and explain whether an earlier prediction was accurate.
