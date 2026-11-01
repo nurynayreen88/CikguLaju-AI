@@ -4,7 +4,7 @@
 **Main SP:** 2.1.5  
 **Complementary SP:** 1.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.95 Activity 5; TB p.141; Year 4 SOW Lesson 135
+**References:** resources/lesson_135_sportspeople_speaking_listening_pbd_DRAFT.md; SB p.95 Activity 5; TB p.141; Year 4 SOW Lesson 135
 
 ## Set induction (10 minutes)
 **Teacher:** Show adjective cards and guide pupils to match each word with its superlative form.
