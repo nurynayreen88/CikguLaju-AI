@@ -4,7 +4,7 @@
 **Main SP:** 5.2.1  
 **Complementary SP:** 4.1.2  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook p.70, steps 1–4; Year 4 SOW Lesson 143
+**References:** Graphic Novel Teaching Guidebook p.70, steps 1–4; resources/lesson_143_akela_mowgli_response_cursive_pbd_DRAFT.md; Year 4 SOW Lesson 143
 
 ## Set induction (10 minutes)
 **Teacher:** Display Akela's picture and ask pupils to recall one character action that establishes his role.
