@@ -4,7 +4,7 @@
 **Main SP:** 4.2.4  
 **Complementary SP:** 4.3.2  
 **Duration:** 60 minutes  
-**References:** SB p.82 Activity 2; TB pp.124–125; animal cards; Primary Year 4 SK SOW Lesson 116
+**References:** SB p.82 Activity 2; TB pp.124–125; animal cards; resources/lesson_116_animal_comparison_writing_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 116
 
 ## Set induction (10 minutes)
 **Teacher:** Brainstorm comparative adjectives for animals and dinosaurs.
