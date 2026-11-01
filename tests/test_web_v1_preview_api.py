@@ -21,6 +21,15 @@ class PreviewApiTests(unittest.TestCase):
     def test_subjects_fail_closed_without_database(self):
         self.assertEqual(self.client.get('/api/options?kind=subjects&year=3').status_code, 503)
 
+    @patch('tools.run_web_v1_preview.available_subject_options')
+    @patch.dict('os.environ', {'CIKGULAJU_WEB_PREVIEW_DB': '/tmp/preview-test.db'})
+    def test_subjects_return_only_verified_catalog_results(self, options):
+        options.return_value = [{'value': 'ENGLISH', 'label': 'Bahasa Inggeris'}]
+        response = self.client.get('/api/options?kind=subjects&year=3')
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, [{'value': 'ENGLISH', 'label': 'Bahasa Inggeris'}])
+        options.assert_called_once_with('/tmp/preview-test.db', 3)
+
     def test_unknown_option_kind_is_bad_request(self):
         response = self.client.get("/api/options?kind=unknown&year=3")
         self.assertEqual(response.status_code, 400)
