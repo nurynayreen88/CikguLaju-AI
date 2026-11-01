@@ -83,6 +83,14 @@ class StagingHTTPTests(unittest.TestCase):
                 )
                 self.assertEqual(response.status_code, 400)
 
+    def test_missing_config_rejected(self):
+        with patch.dict(os.environ, {
+            "CIKGULAJU_WEB_RPH_STAGING_ENABLED": "1",
+            "CIKGULAJU_ENV": "staging",
+        }):
+            with self.assertRaises(TypeError):
+                create_staging_rph_blueprint(None, lambda req: True)
+
     def test_disabled_outside_staging(self):
         with patch.dict(os.environ, {
             "CIKGULAJU_WEB_RPH_STAGING_ENABLED": "1",
