@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 2.1.4  
 **Duration:** 60 minutes  
-**References:** SB pp.84–85 Activities 1–2; TB pp.126–127; Primary Year 4 SK SOW Lesson 120
+**References:** resources/lesson_120_dinosaur_fact_reading_speaking_pbd_DRAFT.md; SB pp.84–85 Activities 1–2; TB pp.126–127; Primary Year 4 SK SOW Lesson 120
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce dinosaur pictures and body-part vocabulary.
