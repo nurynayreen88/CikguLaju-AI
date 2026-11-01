@@ -4,7 +4,7 @@
 **Main SP:** 5.2.1  
 **Complementary SP:** 4.2.4  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook p.77; Primary Year 4 SOW Lesson 154
+**References:** Graphic Novel Teaching Guidebook p.77; resources/lesson_154_jungle_book_creative_response_pbd_DRAFT.md (pupil writing and individual PBD); Primary Year 4 SOW Lesson 154
 
 ## Set induction (10 minutes)
 **Teacher:** Review characters, feelings and actions.
