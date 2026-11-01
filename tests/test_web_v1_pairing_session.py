@@ -33,6 +33,27 @@ class PairingSessionTests(unittest.TestCase):
         self.assertIsNone(finish_verified_pairing(self.db, self.digest, "wrong", self.browser_signature, self.secret, lookup, self.secret, now=1002))
         self.assertIsNotNone(finish_verified_pairing(self.db, self.digest, self.browser_secret, self.browser_signature, self.secret, lookup, self.secret, now=1002))
 
+    def test_tampered_signature_cannot_consume_pairing(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
+        lookup = lambda uid: {"telegram_user_id": uid}
+        tampered = ("0" if self.browser_signature[0] != "0" else "1") + self.browser_signature[1:]
+        self.assertIsNone(finish_verified_pairing(
+            self.db, self.digest, self.browser_secret, tampered,
+            self.secret, lookup, self.secret, now=1002))
+        self.assertIsNotNone(finish_verified_pairing(
+            self.db, self.digest, self.browser_secret, self.browser_signature,
+            self.secret, lookup, self.secret, now=1002))
+
+    def test_wrong_signing_secret_cannot_consume_pairing(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
+        lookup = lambda uid: {"telegram_user_id": uid}
+        self.assertIsNone(finish_verified_pairing(
+            self.db, self.digest, self.browser_secret, self.browser_signature,
+            "different-signing-secret-at-least-32-characters", lookup, self.secret, now=1002))
+        self.assertIsNotNone(finish_verified_pairing(
+            self.db, self.digest, self.browser_secret, self.browser_signature,
+            self.secret, lookup, self.secret, now=1002))
+
     def test_unknown_account_is_rejected(self):
         self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
         self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.browser_secret, self.browser_signature, self.secret, lambda uid: None, self.secret, now=1002))
