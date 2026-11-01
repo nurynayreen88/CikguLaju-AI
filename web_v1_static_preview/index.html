@@ -6,7 +6,7 @@
 <title>CikguLaju AI — Web</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173d37;background:#f5f8f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:24px}.header{display:flex;align-items:center;gap:12px;font-size:1.1rem;font-weight:800}.mark{background:#087568;color:#fff;padding:13px;border-radius:13px}.panel{background:white;border:1px solid #e0eae6;border-radius:24px;padding:clamp(26px,6vw,58px);margin:56px auto 18px;max-width:640px;box-shadow:0 16px 48px #174b3910}h1{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.04em;line-height:1.15;margin:0 0 18px}p{line-height:1.65;color:#536c64} .pill{display:inline-block;background:#e6f5ee;color:#087568;border-radius:30px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:20px}.login{background:#087568;color:#fff;border:0;border-radius:12px;padding:15px 20px;font:inherit;font-weight:700;width:100%;margin-top:14px;cursor:not-allowed;opacity:.55}.notice{font-size:.88rem;color:#65796f;margin-top:14px}.foot{text-align:center;color:#75867f;font-size:.8rem;margin-top:26px}@media(max-width:550px){.wrap{padding:16px}.panel{margin-top:35px;border-radius:18px;padding:27px}}
-</style>
+label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}</style>
 </head>
 <body>
 <div class="wrap">
@@ -18,7 +18,7 @@
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
-<footer class="foot">CikguLaju AI · Web staging</footer>
+<section id="workspace" class="panel" hidden><h2>Pilih RPH</h2><p>Pilih Tahun, Subjek dan Lesson/PdP. Hanya kandungan yang diluluskan boleh dimuat turun.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="lesson">Lesson/PdP</label><select id="lesson" disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
 </div>
 <script>
 "use strict";
@@ -35,7 +35,7 @@ window.onCikguLajuTelegramAuth=async function(user){
  const status=document.getElementById("login-status");
  try{
   const session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store"});
-  if(session.ok){status.textContent="Akaun telah disahkan. Ruang kerja web akan dibuka selepas integrasi RPH selesai.";return;}
+  if(session.ok){document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(!response.ok)throw Error("offline");
   const config=await response.json();
@@ -49,6 +49,11 @@ window.onCikguLajuTelegramAuth=async function(user){
   status.textContent="Sahkan akaun Telegram untuk meneruskan.";
  }catch(_){status.textContent="Sambungan log masuk belum tersedia. Sila cuba kemudian.";}
 })();
+const year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
+year.addEventListener("change",()=>{subject.replaceChildren(new Option(year.value?"Pilih Subjek":"Pilih Tahun dahulu",""));subject.disabled=!year.value;lesson.replaceChildren(new Option("Pilih Subjek dahulu",""));lesson.disabled=true;catalogStatus.textContent="";if(year.value)subject.add(new Option("Bahasa Inggeris","ENGLISH"));});
+subject.addEventListener("change",async()=>{lesson.replaceChildren(new Option("Memuatkan Lesson…",""));lesson.disabled=true;if(!subject.value)return;try{const response=await fetch("/api/web/catalog/english/"+encodeURIComponent(year.value),{cache:"no-store"});if(!response.ok)throw Error("Katalog belum tersedia");const data=await response.json();lesson.replaceChildren(new Option("Pilih Lesson",""));for(const item of data.lessons)lesson.add(new Option(item.label,String(item.lesson_no)));lesson.disabled=!data.lessons.length;catalogStatus.textContent=data.count+" Lesson tersedia dalam katalog. Penjanaan RPH hanya dibuka selepas kelulusan kandungan dan integrasi selesai.";}catch(error){lesson.replaceChildren(new Option("Tidak tersedia",""));catalogStatus.textContent=error.message;}});
+lesson.addEventListener("change",()=>{if(lesson.value)catalogStatus.textContent="Lesson "+lesson.value+" dipilih. Muat turun belum diaktifkan kerana kelulusan RPH belum disahkan.";});
+document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 </body>
 </html>
