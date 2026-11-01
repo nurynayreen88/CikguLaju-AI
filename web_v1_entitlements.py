@@ -6,7 +6,7 @@ This module does not change credits or payment records.
 from datetime import date
 
 
-def display_access(*, rakan_pembangun=False, vip_until=None, free_remaining=10, today=None):
+def display_access(*, rakan_pembangun=False, vip_until=None, free_remaining=None, today=None):
     """Prioritize lifetime access, then active VIP, then remaining free credits."""
     today = today or date.today()
     if rakan_pembangun:
@@ -16,6 +16,6 @@ def display_access(*, rakan_pembangun=False, vip_until=None, free_remaining=10, 
             raise ValueError("vip_until must be a date")
         if vip_until >= today:
             return {"status": "VIP", "access": "Tanpa had sehingga " + vip_until.strftime("%d/%m/%Y")}
-    if type(free_remaining) is not int or free_remaining < 0 or free_remaining > 10:
+    if free_remaining is None:\n        return {"status": "Percuma", "access": "Baki janaan belum tersedia"}\n    if type(free_remaining) is not int or free_remaining < 0 or free_remaining > 10:
         raise ValueError("invalid free remaining credits")
     return {"status": "Percuma", "access": str(free_remaining) + "/10 janaan percuma berbaki"}
