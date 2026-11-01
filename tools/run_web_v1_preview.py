@@ -15,7 +15,7 @@ from flask import Flask, send_file, jsonify, request
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from web_v1_dropdown_catalog import subject_options, unit_options, pdp_options
+from web_v1_dropdown_catalog import subject_options, available_subject_options, unit_options, pdp_options
 PREVIEW = ROOT / "web_v1_preview" / "index.html"
 app = Flask(__name__)
 
@@ -39,11 +39,11 @@ def options():
         kind = request.args.get("kind", "")
         if kind not in ("subjects", "units", "pdp"):
             return jsonify({"error": "invalid option kind"}), 400
-        if kind == "subjects":
-            return jsonify(subject_options(year))
         db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
         if not db:
             return jsonify({"error": "preview database not configured"}), 503
+        if kind == "subjects":
+            return jsonify(available_subject_options(db, year))
         subject = request.args.get("subject", "")
         if kind == "units":
             return jsonify(unit_options(db, year, subject))
