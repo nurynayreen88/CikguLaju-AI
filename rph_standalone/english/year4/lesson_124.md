@@ -4,7 +4,7 @@
 **Main SP:** 2.1.1  
 **Complementary SP:** 2.1.5  
 **Duration:** 60 minutes  
-**References:** SB p.86 Activity 1; TB pp.128–129; animal picture cards; Year 4 SOW Lesson 124
+**References:** resources/lesson_124_animal_preference_comparison_pbd_DRAFT.md; SB p.86 Activity 1; TB pp.128–129; animal picture cards; Year 4 SOW Lesson 124
 
 ## Set induction (10 minutes)
 **Teacher:** Review animal names using TB warm-up.
