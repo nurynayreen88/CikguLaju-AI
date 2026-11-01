@@ -4,7 +4,7 @@
 **Main SP:** 3.2.2  
 **Complementary SP:** 3.3.1  
 **Duration:** 60 minutes  
-**References:** SB pp.100–101 Activity 1; TB pp.148–149; Primary Year 4 SOW Lesson 141
+**References:** resources/lesson_141_story_part_two_reading_pbd_DRAFT.md; SB pp.100–101 Activity 1; TB pp.148–149; Primary Year 4 SOW Lesson 141
 
 ## Set induction (10 minutes)
 **Teacher:** Review Part One of the story from Lesson 125.
