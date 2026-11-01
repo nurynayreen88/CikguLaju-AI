@@ -30,6 +30,13 @@ class AccountStatusTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             display_trusted_account({"authenticated": True, "vip_until": "31/12/2027"})
 
+    def test_preview_account_status_fails_closed(self):
+        from tools.run_web_v1_preview import app
+        response = app.test_client().get("/api/account/status")
+        self.assertEqual(response.status_code, 401)
+        self.assertEqual(response.json["status"], "Belum disambungkan")
+        self.assertFalse(response.json["authenticated"])
+
     def test_free_credits(self):
         self.assertEqual(display_access(free_remaining=7, today=date(2026, 11, 1)),
                          {"status": "Percuma", "access": "7/10 janaan percuma berbaki"})
