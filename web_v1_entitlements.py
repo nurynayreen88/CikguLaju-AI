@@ -31,13 +31,13 @@ def display_trusted_account(account, *, today=None):
         raise ValueError("trusted account snapshot required")
     if account.get("authenticated") is not True:
         return {"status": "Belum disambungkan", "access": "Sambungkan akaun Telegram"}
-    lifetime = account.get("rakan_pembangun") is True
+    if "rakan_pembangun" in account and type(account["rakan_pembangun"]) is not bool:\n        raise ValueError("invalid lifetime entitlement flag")\n    lifetime = account.get("rakan_pembangun") is True
     expiry = account.get("vip_until")
     if isinstance(expiry, str):
         try:
             expiry = date.fromisoformat(expiry)
         except ValueError:
             raise ValueError("invalid VIP expiry date")
-    remaining = account.get("free_remaining")
+    if expiry is not None and type(expiry) is not date:\n        raise ValueError("invalid VIP expiry type")\n    remaining = account.get("free_remaining")
     return display_access(rakan_pembangun=lifetime, vip_until=expiry,
                           free_remaining=remaining, today=today)
