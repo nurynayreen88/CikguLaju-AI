@@ -4,7 +4,7 @@
 **Main SP:** 2.2.1  
 **Complementary SP:** 1.2.5  
 **Duration:** 60 minutes  
-**References:** SB p.103 Activity 3; TB p.153; mixed-up dialogue lines; Primary Year 4 SOW Lesson 146
+**References:** resources/lesson_146_health_dialogue_clarification_pbd_DRAFT.md; SB p.103 Activity 3; TB p.153; mixed-up dialogue lines; Primary Year 4 SOW Lesson 146
 
 ## Set induction (10 minutes)
 **Teacher:** Review health vocabulary.
