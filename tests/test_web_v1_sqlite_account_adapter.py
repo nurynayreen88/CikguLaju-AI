@@ -42,6 +42,20 @@ class SQLiteAccountAdapterTests(unittest.TestCase):
             conn.execute("UPDATE accounts SET lifetime = 2 WHERE telegram_id = 123")
         self.assertIsNone(self.lookup(123))
 
+    def test_duplicate_column_mapping_is_rejected(self):
+        with self.assertRaises(ValueError):
+            self.lookup(123, credits_column="lifetime")
+
+    def test_invalid_credit_balance_is_denied(self):
+        with sqlite3.connect(self.path) as conn:
+            conn.execute("UPDATE accounts SET credits = 11 WHERE telegram_id = 123")
+        self.assertIsNone(self.lookup(123))
+
+    def test_null_credit_balance_is_denied_when_mapped(self):
+        with sqlite3.connect(self.path) as conn:
+            conn.execute("UPDATE accounts SET credits = NULL WHERE telegram_id = 123")
+        self.assertIsNone(self.lookup(123))
+
     def test_missing_database_not_created(self):
         missing = Path(self.folder.name) / "missing.db"
         with self.assertRaises(sqlite3.OperationalError):
