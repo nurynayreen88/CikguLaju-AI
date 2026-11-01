@@ -20,3 +20,10 @@
 3. For 19 linked resources, open each actual file, verify activity, answer/evidence and assessment, and check the link resolves.
 4. Confirm the RPT and live database independently before claiming integration or correctness.
 5. Keep all records DRAFT pending manual approval. Do not overwrite production.
+
+## Actual resource readback — 2026-11-01
+All 19 dedicated `resources/*.md` links were opened successfully on this staging branch (not just matched as strings). Each file contains an assessment/PBD/checklist/evidence keyword. This is a **presence check**, not yet a pedagogical rubric-quality, official SOW, or live renderer verification.
+
+Files checked by lesson: 023,039,044,078,080,109,111,117,118,122,127,132,133,138,143,151,153,159,160.
+
+**Open:** 22 other Non-Textbook RPHs lack dedicated `resources/` links; their existing literature/teacher source references and assessment content need individual review. Never force a workbook/audio for source-independent lessons. No RPT/DB changes made.
