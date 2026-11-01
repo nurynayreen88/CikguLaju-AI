@@ -36,7 +36,7 @@ class TelegramLoginVerifierTests(unittest.TestCase):
 
     def test_carriage_return_injection(self):
         payload = signed_payload()
-        payload["first_name"] = "Teacher\\radmin=true"
+        payload["first_name"] = "Teacher\radmin=true"
         self.assertIsNone(verify_telegram_login(payload, "test:token", now=1800000001))
 
     def test_newline_injection(self):
