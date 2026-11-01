@@ -36,6 +36,10 @@ class PreviewApiTests(unittest.TestCase):
     def test_missing_database_file_fails_closed(self):
         self.assertEqual(self.client.get('/api/options?kind=subjects&year=3').status_code, 503)
 
+    def test_invalid_year_is_rejected_before_database_lookup(self):
+        self.assertEqual(self.client.get('/api/options?kind=units&year=99&subject=ENGLISH').status_code, 400)
+        self.assertEqual(self.client.get('/api/options?kind=pdp&year=abc&subject=ENGLISH').status_code, 400)
+
     def test_unknown_option_kind_is_bad_request(self):
         response = self.client.get("/api/options?kind=unknown&year=3")
         self.assertEqual(response.status_code, 400)
