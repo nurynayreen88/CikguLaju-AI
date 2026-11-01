@@ -94,6 +94,25 @@ class Lesson030AdapterTest(unittest.TestCase):
                 source = (Path(__file__).parent / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
                 self.assertIn("audio_disc_unverified", year4_release_blockers(source))
 
+    def test_release_blocker_scanner_handles_missing_metadata(self):
+        from standalone_renderer_adapter import year4_release_blockers
+        source = '\n'.join([
+            '**Topic:** Sample',
+            '**Main SP:** 1.2.2',
+            '**References:** SB p.5',
+        ])
+        self.assertIn('missing_complementary_sp', year4_release_blockers(source))
+        self.assertNotIn('missing_main_sp', year4_release_blockers(source))
+
+    def test_release_blocker_scanner_does_not_mark_clean_sample_ready(self):
+        from standalone_renderer_adapter import year4_release_blockers
+        source = '\n'.join([
+            '**Topic:** Sample',
+            '**Main SP:** 1.2.2',
+            '**Complementary SP:** 2.1.1',
+        ])
+        self.assertEqual(year4_release_blockers(source), [])
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
