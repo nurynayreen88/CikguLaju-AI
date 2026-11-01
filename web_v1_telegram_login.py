@@ -1,8 +1,4 @@
-"""Server-side verification of Telegram Login Widget authentication data.
-
-Telegram Login Widget supplies numeric id/auth_date values. Normalize those
-canonical integers before building Telegram's check string. Never expose token.
-"""
+"""Server-side verification of Telegram Login Widget authentication data."""
 import hashlib
 import hmac
 import time
@@ -18,14 +14,12 @@ def verify_telegram_login(payload, bot_token, *, now=None, max_age_seconds=86400
     if any(type(v) not in (str, int) for v in payload.values()):
         return None
     normalized = {k: str(v) for k, v in payload.items()}
-    if any(len(k) > 64 or len(v) > 4096 or "\\r" in k or "\\n" in k or "\\r" in v or "\\n" in v
-           for k, v in normalized.items()):
+    if any(len(k) > 64 or len(v) > 4096 or "\\r" in k or "\\n" in k or "\\r" in v or "\\n" in v for k, v in normalized.items()):
         return None
     if not all(k in normalized and normalized[k] for k in ("id", "auth_date", "hash")):
         return None
     try:
-        user_id = int(normalized["id"])
-        auth_date = int(normalized["auth_date"])
+        user_id, auth_date = int(normalized["id"]), int(normalized["auth_date"])
     except ValueError:
         return None
     if user_id <= 0 or auth_date <= 0 or str(user_id) != normalized["id"] or str(auth_date) != normalized["auth_date"]:
@@ -39,6 +33,4 @@ def verify_telegram_login(payload, bot_token, *, now=None, max_age_seconds=86400
     check_string = "\\n".join(f"{key}={value}" for key, value in sorted(normalized.items()) if key != "hash")
     secret = hashlib.sha256(bot_token.encode("utf-8")).digest()
     expected = hmac.new(secret, check_string.encode("utf-8"), hashlib.sha256).hexdigest()
-    if not hmac.compare_digest(expected, claimed.lower()):
-        return None
-    return user_id
+    return user_id if hmac.compare_digest(expected, claimed.lower()) else None
