@@ -17,5 +17,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Compile Year 4 Python modules
+        run: python -m compileall -q rph_standalone/english/year4
+      - name: Verify lesson count and print release blockers
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'rph_standalone/english/year4')
+          from standalone_renderer_adapter import year4_release_blockers
+          folder = Path('rph_standalone/english/year4')
+          files = sorted(folder.glob('lesson_[0-9][0-9][0-9].md'))
+          assert len(files) == 160, f'Expected 160 lessons, found {len(files)}'
+          blocked = []
+          for path in files:
+              reasons = year4_release_blockers(path.read_text(encoding='utf-8'))
+              if reasons:
+                  blocked.append((path.stem, reasons))
+          for name, reasons in blocked:
+              print(name + ': ' + ', '.join(reasons))
+          print(f'Lessons: {len(files)}; lessons with detected release blockers: {len(blocked)}')
+          print('All lessons remain DRAFT pending source, export and manual verification.')
+          PY
       - name: Run 160-lesson standalone adapter tests
         run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_standalone_renderer_adapter.py' -v
