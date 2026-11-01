@@ -11,7 +11,7 @@ import sys
 from web.audit_rph_schema import inspect_schema
 
 TERMS = ("rph", "standalone", "lesson", "rpt", "approved", "approval",
-         "content", "verified", "status", "pd")
+         "content", "verified", "status", "pdp")
 
 
 def candidate_report(path: str) -> dict:
