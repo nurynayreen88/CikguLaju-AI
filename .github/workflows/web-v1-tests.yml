@@ -7,6 +7,7 @@ on:
     paths:
       - 'web_v1_entitlements.py'
       - 'web_v1_telegram_login.py'
+      - 'web_v1_preview/index.html'
       - 'web_v1_sessions.py'
       - 'web_v1_pairing_challenges.py'
       - 'web_v1_pairing_store.py'
