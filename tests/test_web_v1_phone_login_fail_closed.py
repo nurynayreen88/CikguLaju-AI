@@ -22,6 +22,16 @@ class PhoneLoginFailClosedTests(unittest.TestCase):
                     response = getattr(self.client, method)(path)
                     self.assertIn(response.status_code, (404, 405))
 
+    def test_capabilities_are_explicitly_disabled(self):
+        response = self.client.get("/api/auth/capabilities")
+        self.assertEqual(response.status_code, 200)
+        flags = response.get_json()
+        self.assertEqual(flags["status"], "not-configured")
+        for key in ("telegram_login_enabled", "phone_qr_pairing_enabled",
+                    "existing_account_lookup_enabled", "session_cookie_enabled"):
+            self.assertIs(flags[key], False)
+        self.assertIn("no-store", response.headers["Cache-Control"])
+
     def test_no_authenticated_account_without_signed_identity(self):
         response = self.client.get("/api/account/status")
         self.assertEqual(response.status_code, 401)
