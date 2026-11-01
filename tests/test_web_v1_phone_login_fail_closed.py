@@ -38,6 +38,15 @@ class PhoneLoginFailClosedTests(unittest.TestCase):
         self.assertFalse(response.get_json()["authenticated"])
         self.assertIn("no-store", response.headers["Cache-Control"])
 
+    def test_login_readiness_ui_has_safe_network_fallback(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        body = response.get_data(as_text=True)
+        self.assertIn('id="telegram-login-readiness"', body)
+        self.assertIn('fetch("/api/auth/capabilities"', body)
+        self.assertIn("Status login tidak dapat disahkan", body)
+        self.assertNotIn("telegram.org/js/telegram-widget.js", body)
+
     def test_public_preview_never_claims_login_is_active(self):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
