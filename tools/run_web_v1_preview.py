@@ -107,12 +107,18 @@ def deployment_status():
 @app.get("/api/auth/capabilities")
 def auth_capabilities():
     """Public, non-sensitive readiness flags; never infer auth from QR primitives."""
+    from web_v1_telegram_auth_routes import _config
+    ready = _config() is not None
+    bot_username = os.environ.get("CIKGULAJU_WEB_BOT_USERNAME", "").lstrip("@")
+    widget_ready = ready and bool(bot_username)
     return jsonify({
-        "telegram_login_enabled": False,
+        "telegram_login_enabled": widget_ready,
+        "telegram_widget_enabled": widget_ready,
+        "bot_username": bot_username if widget_ready else "",
         "phone_qr_pairing_enabled": False,
-        "existing_account_lookup_enabled": False,
-        "session_cookie_enabled": False,
-        "status": "not-configured",
+        "existing_account_lookup_enabled": ready,
+        "session_cookie_enabled": ready,
+        "status": "configured" if widget_ready else "not-configured",
     })
 
 
