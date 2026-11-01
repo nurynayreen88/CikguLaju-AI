@@ -4,7 +4,7 @@
 **Main SP:** 3.2.4  
 **Complementary SP:** 2.1.5  
 **Duration:** 60 minutes  
-**References:** SB p.82 Activity 1; TB pp.124–125; dinosaur pictures; Primary Year 4 SK SOW Lesson 115
+**References:** SB p.82 Activity 1; TB pp.124–125; dinosaur pictures; resources/lesson_115_dinosaur_dictionary_speaking_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 115
 
 ## Set induction (10 minutes)
 **Teacher:** Introduce dinosaur pictures and animal comparison words.
