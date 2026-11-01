@@ -76,6 +76,17 @@ class Lesson030AdapterTest(unittest.TestCase):
                 self.assertIn("ASSESSMENT:\n", rendered)
                 self.assertIn("Teacher-selected DSKP SP", rendered.split("ASSESSMENT:\n", 1)[1])
 
+    def test_release_blockers_for_teacher_selected_lessons(self):
+        from standalone_renderer_adapter import year4_release_blockers
+        for number in (80, 96, 112, 128, 144, 160):
+            with self.subTest(lesson=number):
+                source = (Path(__file__).parent / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
+                blockers = year4_release_blockers(source)
+                self.assertIn("teacher_selected_main_sp", blockers)
+                self.assertIn("teacher_selected_complementary_sp", blockers)
+        lesson_001 = (Path(__file__).parent / "lesson_001.md").read_text(encoding="utf-8")
+        self.assertNotIn("teacher_selected_main_sp", year4_release_blockers(lesson_001))
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
