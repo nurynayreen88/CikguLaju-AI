@@ -19,4 +19,7 @@ def pdp_options(database_path, year, subject_code, unit_title):
     if not isinstance(unit_title, str) or not unit_title.strip():
         raise ValueError('invalid unit')
     records = VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
+    available_units = {(r.get('unit_title') or '').strip() for r in records}
+    if unit_title.strip() not in available_units:
+        return []
     return [{'value': str(r['id']), 'label': 'PdP ' + str(r['pdp_no']) + ' — ' + str(r.get('subtopic') or r.get('topic') or ''), 'standalone_rph_verified': False} for r in records if (r.get('unit_title') or '').strip() == unit_title]
