@@ -16,7 +16,9 @@ def create_staging_rph_blueprint(config, authorize):
         raise RuntimeError("Staging RPH endpoint disabled")
     if os.environ.get("CIKGULAJU_ENV") != "staging":
         raise RuntimeError("RPH endpoint cannot be enabled outside staging")
-    if config is None:\n        raise TypeError("Audited RPH lookup configuration required")\n    if not callable(authorize):
+    if config is None:
+        raise TypeError("Audited RPH lookup configuration required")
+    if not callable(authorize):
         raise TypeError("Trusted authorization callback required")
 
     blueprint = Blueprint("web_rph_staging", __name__)
