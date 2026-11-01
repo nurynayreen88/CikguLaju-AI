@@ -34,6 +34,24 @@ class Lesson030AdapterTest(unittest.TestCase):
                     self.assertIsNotNone(match, f"Missing {field} in lesson {lesson_no}")
                     self.assertTrue(match.group(1).strip(), f"Empty {field} in lesson {lesson_no}")
 
+    def test_separate_audio_metadata_preserved(self):
+        source = "\n".join([
+            "**Topic:** Test topic",
+            "**Main SP:** Listening 1.2.2",
+            "**Complementary SP:** Speaking 2.1.1",
+            "**Materials:** Student's Book p.5",
+            "**Audio:** CD1 Track 4 (Activity 3 dialogue)",
+            "## Set induction", "Warm-up",
+            "## Activity 1", "Task",
+            "## Activity 2", "Task",
+            "## PBD / Reinforcement", "Assess",
+            "## Closure", "End",
+        ])
+        rendered = adapt_year4_standalone(source)
+        self.assertIn("Student's Book p.5", rendered)
+        self.assertIn("Audio: CD1 Track 4 (Activity 3 dialogue)", rendered)
+        self.assertEqual(rendered.count("Audio: CD1 Track 4"), 1)
+
     def test_qa_notes_are_not_exported_into_rph(self):
         source = "\n".join([
             "**Topic:** Test topic",
