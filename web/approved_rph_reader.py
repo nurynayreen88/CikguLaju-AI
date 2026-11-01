@@ -34,6 +34,14 @@ def load_approved_rph(config: RPHLookupConfig, lesson_id: int) -> ApprovedRPH:
     Configuration is trusted server-side only and must refer to an independently
     audited approval field, not merely an RPT verification flag.
     """
+    # Explicitly block a known unsafe shortcut: RPT verification is not
+    # independent approval of standalone RPH content.
+    if config.table.lower() == "rpt_entries":
+        raise ValueError("RPT entries are not an approved standalone RPH source")
+    if config.approval_column.lower() == "verified":
+        raise ValueError("RPT verification cannot authorize RPH downloads")
+    if not isinstance(config.approval_value, str) or not config.approval_value.strip():
+        raise ValueError("Explicit approval value required")
     if type(lesson_id) is not int or lesson_id <= 0:
         raise ValueError("Invalid lesson ID")
     path = Path(config.database_path).resolve(strict=True)
