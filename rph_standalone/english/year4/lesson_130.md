@@ -4,7 +4,7 @@
 **Main SP:** 2.1.1  
 **Complementary SP:** 2.2.1  
 **Duration:** 60 minutes  
-**References:** SB p.93 Activity 2; TB pp.138–139; Year 4 SOW Lesson 130
+**References:** resources/lesson_130_sports_preference_survey_pbd_DRAFT.md; SB p.93 Activity 2; TB pp.138–139; Year 4 SOW Lesson 130
 
 ## Set induction (10 minutes)
 **Teacher:** Replay a short section of the sports song and elicit three key words before the speaking survey.
