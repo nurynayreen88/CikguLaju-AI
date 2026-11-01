@@ -6,7 +6,7 @@
 **Duration:** 60 minutes  
 **Audio:** CD2 Track 56 for the three interviews in Activity 4, as printed in Teacher's Book p.141. MP3 playback is pending.  
 **Drive MP3 candidate:** https://drive.google.com/file/d/1iVBMJ0vlevSUSFP5QsLJsXLlCSiSBoGo/view (CD2 Track 56; playback untested).  
-**References:** SB p.95 Activity 4; TB pp.140–141; sample sports paragraph; Year 4 SOW Lesson 134
+**References:** resources/lesson_134_sports_interviews_listening_writing_pbd_DRAFT.md; SB p.95 Activity 4; TB pp.140–141; sample sports paragraph; Year 4 SOW Lesson 134
 
 ## Set induction (10 minutes)
 **Teacher:** Display sports picture cards and elicit two accurate superlative descriptions before listening.
