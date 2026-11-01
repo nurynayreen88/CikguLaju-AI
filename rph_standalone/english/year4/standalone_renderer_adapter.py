@@ -96,6 +96,6 @@ def year4_release_blockers(markdown: str) -> list[str]:
         blockers.append("missing_topic")
     elif "teacher-selected" in topic.group(1).lower():
         blockers.append("teacher_selected_topic")
-    if re.search(r"Track\s+\d+\s*\([^\n)]*disc unspecified", markdown, re.I):
+    if re.search(r"Track\s+\d+\s*\([^\n)]*(?:disc unspecified|without disc number)", markdown, re.I):
         blockers.append("audio_disc_unverified")
     return blockers
