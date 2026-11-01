@@ -7,7 +7,7 @@
 **Audio:** Class CD3 Track 30 (Phonics 9 Activity 1) and CD3 Track 31 (Phonics 9 Activity 2), confirmed in Teacher's Book p.189. MP3 files located in Drive; playback and Telegram download remain untested.  
 
 **Audio files located in Drive (playback/access not yet tested):** CD3 Track 30 — https://drive.google.com/file/d/1oQt7UuQZoIqwt1BvzEXdjA4Iwfh2inHR/view ; CD3 Track 31 — https://drive.google.com/file/d/1RBs0wbPwwPyrIFIQmgD0f_3TPgHVBEq2/view.  
-**References:** SB p.127 Phonics 9; TB pp.189–190; dictionaries; Year 4 SOW Lesson 123
+**References:** resources/lesson_123_phonics_sound_dictionary_pbd_DRAFT.md; SB p.127 Phonics 9; TB pp.189–190; dictionaries; Year 4 SOW Lesson 123
 
 ## Set induction (10 minutes)
 **Teacher:** Lead the TB phonics warm-up by contrasting two target sounds and asking pupils to identify what they hear.
