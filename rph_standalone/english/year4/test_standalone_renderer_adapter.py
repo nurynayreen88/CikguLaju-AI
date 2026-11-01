@@ -69,7 +69,7 @@ class Lesson030AdapterTest(unittest.TestCase):
                 self.assertNotIn("READY FOR RELEASE", rendered)
 
     def test_teacher_selected_lessons_keep_inline_pbd(self):
-        for number in (80, 96, 112, 128, 144):
+        for number in (80, 96, 112, 128, 144, 160):
             with self.subTest(lesson=number):
                 original = (Path(__file__).parent / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
                 rendered = adapt_year4_standalone(original)
