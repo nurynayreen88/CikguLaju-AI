@@ -15,6 +15,7 @@ on:
       - 'tests/test_web_v1_entitlements.py'
       - 'tests/test_web_v1_telegram_login.py'
       - 'tests/test_web_v1_sessions.py'
+      - 'tests/test_web_v1_auth_flow.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
   workflow_dispatch:
