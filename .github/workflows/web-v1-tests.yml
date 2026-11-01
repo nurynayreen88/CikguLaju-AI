@@ -23,6 +23,7 @@ on:
       - 'tests/test_web_v1_access_policy.py'
       - 'tests/test_web_v1_account_resolver.py'
       - 'tests/test_web_v1_sqlite_account_adapter.py'
+      - 'tests/test_web_v1_sqlite_integration.py'
       - 'tests/test_web_v1_schema_inspector.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
