@@ -11,6 +11,11 @@ class SharedRoutesTests(unittest.TestCase):
         self.assertFalse(response.json["shared_backend_connected"])
         self.assertFalse(response.json["generation_enabled"])
 
+    def test_pjpk_unclassified_data_never_mixes(self):
+        client = app.test_client()
+        result = client.get("/api/options?kind=components&year=3&subject=PJPK")
+        self.assertEqual([x["value"] for x in result.json], ["PJ", "PK"])
+
     def test_generation_and_download_fail_closed(self):
         client = app.test_client()
         for method, path in (
