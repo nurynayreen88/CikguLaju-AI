@@ -4,7 +4,7 @@
 **Main SP:** 5.3.1  
 **Complementary SP:** 4.3.2  
 **Duration:** 60 minutes  
-**References:** Graphic Novel Teaching Guidebook p.62; jazz chant model; Year 4 SOW Lesson 127
+**References:** resources/lesson_127_jazz_chant_performance_pbd_DRAFT.md; Graphic Novel Teaching Guidebook p.62; jazz chant model; Year 4 SOW Lesson 127
 
 ## Set induction (10 minutes)
 **Teacher:** Act out verbs from cards; classmates name the actions.
