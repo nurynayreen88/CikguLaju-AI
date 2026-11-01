@@ -42,6 +42,12 @@ class SQLiteAccountAdapterTests(unittest.TestCase):
             conn.execute("UPDATE accounts SET lifetime = 2 WHERE telegram_id = 123")
         self.assertIsNone(self.lookup(123))
 
+    def test_missing_required_entitlement_mapping_is_rejected(self):
+        with self.assertRaises(ValueError):
+            self.lookup(123, lifetime_column=None)
+        with self.assertRaises(ValueError):
+            self.lookup(123, credits_column=None)
+
     def test_duplicate_column_mapping_is_rejected(self):
         with self.assertRaises(ValueError):
             self.lookup(123, credits_column="lifetime")
@@ -74,7 +80,7 @@ class SQLiteAccountAdapterTests(unittest.TestCase):
     def test_missing_database_not_created(self):
         missing = Path(self.folder.name) / "missing.db"
         with self.assertRaises(sqlite3.OperationalError):
-            lookup_existing_sqlite_account(missing, 123, table="accounts", id_column="telegram_id")
+            lookup_existing_sqlite_account(missing, 123, table="accounts", id_column="telegram_id", lifetime_column="lifetime", credits_column="credits")
         self.assertFalse(missing.exists())
 
 
