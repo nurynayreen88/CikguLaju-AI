@@ -1,0 +1,41 @@
+import sqlite3
+import unittest
+
+from web_v1_pairing_challenges import new_pairing_challenge
+from web_v1_pairing_store import initialize_pairing_store, register_pairing, confirm_pairing
+from web_v1_pairing_session import finish_verified_pairing
+from web_v1_sessions import verify_session_ticket
+
+
+class PairingSessionTests(unittest.TestCase):
+    def setUp(self):
+        self.db = sqlite3.connect(":memory:")
+        initialize_pairing_store(self.db)
+        self.token, self.digest, self.expiry = new_pairing_challenge(now=1000)
+        register_pairing(self.db, self.digest, self.expiry)
+        self.secret = "isolated-test-secret-not-for-production-12345"
+
+    def tearDown(self):
+        self.db.close()
+
+    def test_verified_account_gets_one_session_only(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
+        lookup = lambda uid: {"telegram_user_id": uid} if uid == 123 else None
+        ticket = finish_verified_pairing(self.db, self.digest, self.digest, lookup, self.secret, now=1002)
+        self.assertEqual(verify_session_ticket(ticket, self.secret, now=1003), 123)
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, lookup, self.secret, now=1003))
+
+    def test_mismatched_browser_binding_cannot_consume(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
+        lookup = lambda uid: {"telegram_user_id": uid}
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, "0" * 64, lookup, self.secret, now=1002))
+        self.assertIsNotNone(finish_verified_pairing(self.db, self.digest, self.digest, lookup, self.secret, now=1002))
+
+    def test_unknown_account_is_rejected(self):
+        self.assertTrue(confirm_pairing(self.db, self.token, 123, now=1001))
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, lambda uid: None, self.secret, now=1002))
+        self.assertIsNone(finish_verified_pairing(self.db, self.digest, self.digest, lambda uid: {"telegram_user_id": uid}, self.secret, now=1003))
+
+
+if __name__ == "__main__":
+    unittest.main()
