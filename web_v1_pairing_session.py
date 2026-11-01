@@ -3,21 +3,20 @@
 The caller must authenticate the browser challenge, verify the Telegram bot update
 and look up an existing account. No HTTP endpoints are enabled by this module.
 """
+from web_v1_browser_binding import verify_browser_binding
 from web_v1_pairing_store import consume_pairing
 from web_v1_sessions import issue_session_ticket
 
 
-def finish_verified_pairing(connection, challenge_hash, browser_challenge_hash,
-                            account_lookup, session_secret, *, now=None):
+def finish_verified_pairing(connection, challenge_hash, browser_secret, browser_signature,
+                            browser_signing_secret, account_lookup, session_secret, *, now=None):
     """Consume once and issue a signed session only for a verified existing account.
 
-    The browser must prove possession of the original pairing challenge through
-    a trusted server-side binding. Do not accept a hash supplied by an arbitrary
-    browser as proof of ownership.
+    The browser must present a valid independent browser secret and signed binding.
+    Never accept a matching challenge hash alone as proof of browser ownership.
     """
-    if not isinstance(challenge_hash, str) or not isinstance(browser_challenge_hash, str):
-        return None
-    if challenge_hash != browser_challenge_hash or len(challenge_hash) != 64:
+    if not verify_browser_binding(challenge_hash, browser_secret, browser_signature,
+                                  browser_signing_secret):
         return None
     if not callable(account_lookup):
         return None
