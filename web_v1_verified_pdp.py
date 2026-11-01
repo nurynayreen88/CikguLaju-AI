@@ -57,7 +57,7 @@ def list_explicit_pjpk_entries(database_path, year, component):
         if not exists:
             return []
         rows = con.execute(
-            "SELECT r.id, r.sequence_no, r.unit_title, r.topic, r.subtopic "
+            "SELECT DISTINCT r.id, r.sequence_no, r.unit_title, r.topic, r.subtopic "
             "FROM rpt_entries r JOIN web_v1_pjpk_map m ON m.rpt_entry_id=r.id "
             "WHERE r.year_label=? AND r.subject=? AND r.verified=1 "
             "AND m.verified=1 AND m.component=? "
