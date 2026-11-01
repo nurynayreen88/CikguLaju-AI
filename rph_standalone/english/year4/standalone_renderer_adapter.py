@@ -45,6 +45,12 @@ def adapt_year4_standalone(markdown: str) -> str:
         title = re.search(r"^\*\*(?:Unit/Topic|Unit):\*\*\s*(.+)$", markdown, re.M)
     if not refs:
         refs = re.search(r"^\*\*Materials:\*\*\s*(.+)$", markdown, re.M)
+    audio = re.search(r"^\*\*Audio:\*\*\s*(.+)$", markdown, re.M)
+    materials = refs.group(1).strip() if refs else ""
+    if audio and audio.group(1).strip():
+        audio_note = audio.group(1).strip()
+        if audio_note.lower() not in materials.lower():
+            materials = (materials + "\nAudio: " + audio_note).strip()
     fields = [
         ("TOPIC", title.group(1) if title else ""),
         ("MAIN LEARNING STANDARD", main_sp.group(1).strip() if main_sp else ""),
@@ -59,7 +65,7 @@ def adapt_year4_standalone(markdown: str) -> str:
             "Main: " + main_sp.group(1).strip() if main_sp else "",
             "Complementary: " + comp_sp.group(1).strip() if comp_sp else "",
         ]))),
-        ("TEACHING AND LEARNING MATERIALS", refs.group(1) if refs else ""),
+        ("TEACHING AND LEARNING MATERIALS", materials),
         ("SET INDUCTION", body("Set induction")),
         ("MAIN ACTIVITIES", "\n\n".join(activities)),
         ("CLOSURE", body("Closure")),
