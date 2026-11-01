@@ -12,18 +12,21 @@ import argparse
 ROOT = Path(__file__).resolve().parents[1] / "rph_standalone" / "english"
 PATTERN = re.compile(r"\b(?:Workbook|Activity Book)\b", re.IGNORECASE)
 PAGE = re.compile(r"\b(?:Workbook|Activity Book)\s*(?:p\.|page)\s*\d+", re.IGNORECASE)
+UNVERIFIED_NOTE = re.compile(r"(?im)^- \*\*Workbook:\*\* no verified page mapping\b")
 
 def audit():
     report = {}
     for year in (2, 3):
         folder = ROOT / f"year{year}"
-        missing_files, with_reference, without_reference, needs_page = [], [], [], []
+        missing_files, with_reference, without_reference, needs_page, unverified_notes = [], [], [], [], []
         for lesson in range(1, 161):
             file = folder / f"lesson_{lesson:03d}.md"
             if not file.is_file():
                 missing_files.append(lesson)
                 continue
             content = file.read_text(encoding="utf-8")
+            if UNVERIFIED_NOTE.search(content):
+                unverified_notes.append(lesson)
             if PATTERN.search(content):
                 with_reference.append(lesson)
                 if not PAGE.search(content):
@@ -36,6 +39,7 @@ def audit():
             "with_workbook_reference": with_reference,
             "without_workbook_reference": without_reference,
             "reference_without_page": needs_page,
+            "unverified_mapping_note": unverified_notes,
         }
     return report
 
@@ -82,8 +86,10 @@ def review_rows(report):
         missing = set(data["missing_files"])
         referenced = set(data["with_workbook_reference"])
         page_missing = set(data["reference_without_page"])
+        unverified = set(data["unverified_mapping_note"])
         for lesson in range(1, 161):
             status = ("missing_file" if lesson in missing else
+                      "unverified_mapping_note" if lesson in unverified else
                       "reference_missing_page" if lesson in page_missing else
                       "reference_present" if lesson in referenced else
                       "needs_source_verification")
