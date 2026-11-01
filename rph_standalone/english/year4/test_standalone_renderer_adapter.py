@@ -34,6 +34,23 @@ class Lesson030AdapterTest(unittest.TestCase):
                     self.assertIsNotNone(match, f"Missing {field} in lesson {lesson_no}")
                     self.assertTrue(match.group(1).strip(), f"Empty {field} in lesson {lesson_no}")
 
+    def test_qa_notes_are_not_exported_into_rph(self):
+        source = "\\n".join([
+            "**Topic:** Test topic",
+            "**Main SP:** Writing 4.3.2",
+            "**Complementary SP:** Listening 1.2.5",
+            "## Set induction (5 minutes)", "Teacher: Warm-up",
+            "## Activity 1 (15 minutes)", "Pupils: First task",
+            "## Activity 2 (20 minutes)", "Pupils: Second task",
+            "## PBD / Reinforcement (10 minutes)", "Teacher: Assess pupils",
+            "## Closure (5 minutes)", "Teacher: Summarise",
+            "## Source mapping and QA", "INTERNAL_QA_ONLY_DO_NOT_EXPORT",
+        ])
+        result = adapt_year4_standalone(source)
+        self.assertIn("Teacher: Summarise", result)
+        self.assertNotIn("INTERNAL_QA_ONLY_DO_NOT_EXPORT", result)
+        self.assertNotIn("Source mapping and QA", result)
+
     def test_pbd_heading_variants(self):
         from standalone_renderer_adapter import adapt_year4_standalone
         for heading in (
