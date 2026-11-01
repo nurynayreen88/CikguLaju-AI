@@ -29,3 +29,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_approved_rph_reader.py' -v
           python -m unittest discover -s tests -p 'test_web_rph_pipeline.py' -v
           python -m unittest discover -s tests -p 'test_web_schema_audit.py' -v
+          python -m unittest discover -s tests -p 'test_web_rph_candidates.py' -v
