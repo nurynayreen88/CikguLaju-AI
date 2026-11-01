@@ -8,6 +8,7 @@ from flask import Blueprint, current_app, jsonify, request, make_response
 from web_v1_telegram_login import verify_telegram_login
 from web_v1_sessions import issue_session_ticket, verify_session_ticket
 from web_v1_sqlite_account_adapter import lookup_existing_sqlite_account
+from web_v1_entitlements import display_trusted_account
 
 auth_blueprint = Blueprint("web_v1_telegram_auth", __name__)
 COOKIE = "cikgulaju_web_v1_session"
@@ -73,7 +74,8 @@ def telegram_session_status():
         return jsonify({"authenticated": False}), 503
     if not account:
         return jsonify({"authenticated": False}), 401
-    return jsonify({"authenticated": True, "status": "existing-account-verified"})
+    entitlement = display_trusted_account(account)
+    return jsonify({"authenticated": True, **entitlement})
 
 
 @auth_blueprint.post("/api/auth/telegram/logout")
