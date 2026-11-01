@@ -91,6 +91,27 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertIn("**Pupils:** Perform a short exchange.", updated)
         self.assertEqual(updated.count("**Workbook practice:**"), 1)
 
+    def test_pbd_reinforcement_heading_is_supported(self):
+        original = self.SAMPLE.replace("## Assessment / PBD", "## PBD / Reinforcement")
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        self.assertIn("**Teacher:** Check pupils' dialogue.", updated)
+        self.assertIn("**Workbook practice:**", updated)
+
+    def test_workbook_in_existing_rph_is_not_duplicated(self):
+        original = self.SAMPLE.replace("Existing activity remains unchanged.",
+                                       "Existing activity remains unchanged. Workbook page 20.")
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertIsNone(updated)
+        self.assertEqual(status, "existing_workbook_reference")
+
+    def test_original_text_is_exact_subsequence_of_updated(self):
+        updated, status = prepare(self.SAMPLE, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        inserted = ("**Workbook practice:** Pupils complete Workbook p.48, Activity 2. "
+                    "Teacher checks answers and provides guidance.\\n\\n")
+        self.assertEqual(updated.replace(inserted, "", 1), self.SAMPLE)
+
     def test_no_assessment_means_no_change(self):
         updated, status = prepare("# Lesson\n## Activity 1\nText\n", 48, "Activity 2")
         self.assertIsNone(updated)
