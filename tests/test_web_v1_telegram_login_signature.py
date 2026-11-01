@@ -22,6 +22,17 @@ class TelegramLoginSignatureTests(unittest.TestCase):
         payload = signed_payload(id=12345, auth_date=1000, first_name="Teacher")
         self.assertEqual(verify_telegram_login(payload, BOT_TOKEN, now=1001), 12345)
 
+    def test_real_widget_numeric_id_and_auth_date(self):
+        payload = signed_payload(id=12345, auth_date=1000, first_name="Teacher")
+        payload["id"] = 12345
+        payload["auth_date"] = 1000
+        self.assertEqual(verify_telegram_login(payload, BOT_TOKEN, now=1001), 12345)
+
+    def test_boolean_numeric_fields_rejected(self):
+        payload = signed_payload(id=12345, auth_date=1000)
+        payload["id"] = True
+        self.assertIsNone(verify_telegram_login(payload, BOT_TOKEN, now=1001))
+
     def test_changed_user_id_rejected(self):
         payload = signed_payload(id=12345, auth_date=1000)
         payload["id"] = "99999"
