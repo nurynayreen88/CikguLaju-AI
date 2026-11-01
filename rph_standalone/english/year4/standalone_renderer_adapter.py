@@ -53,6 +53,9 @@ def adapt_year4_standalone(markdown: str) -> str:
             materials = (materials + "\nAudio: " + audio_note).strip()
     objectives = re.search(r"^\*\*Learning objectives?:\*\*\s*(.+)$", markdown, re.M | re.I)
     success = re.search(r"^\*\*Success (?:evidence|criteria):\*\*\s*(.+)$", markdown, re.M | re.I)
+    inline_pbd = re.search(r"^\*\*PBD:\*\*\s*(.+)$", markdown, re.M)
+    assessment = (body("Assessment and differentiation") or body("Differentiation and assessment")
+                  or body("PBD and differentiation") or (inline_pbd.group(1).strip() if inline_pbd else ""))
     fields = [
         ("TOPIC", title.group(1) if title else ""),
         ("MAIN LEARNING STANDARD", main_sp.group(1).strip() if main_sp else ""),
@@ -73,6 +76,6 @@ def adapt_year4_standalone(markdown: str) -> str:
         ("SET INDUCTION", body("Set induction")),
         ("MAIN ACTIVITIES", "\n\n".join(activities)),
         ("CLOSURE", body("Closure")),
-        ("ASSESSMENT", body("Assessment and differentiation") or body("Differentiation and assessment") or body("PBD and differentiation")),
+        ("ASSESSMENT", assessment),
     ]
     return "\n".join(f"{key}:\n{value}" for key, value in fields if value)
