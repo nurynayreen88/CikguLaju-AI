@@ -4,7 +4,7 @@
 **Main SP:** 4.2.4  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.97 Activity 2; TB p.143; sports flashcards; Year 4 SOW Lesson 137
+**References:** resources/lesson_137_sports_superlative_writing_pbd_DRAFT.md; SB p.97 Activity 2; TB p.143; sports flashcards; Year 4 SOW Lesson 137
 
 ## Set induction (10 minutes)
 **Teacher:** Review sports vocabulary with flashcards.
