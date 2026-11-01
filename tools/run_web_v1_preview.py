@@ -3,7 +3,7 @@
 Local-only command:
     python tools/run_web_v1_preview.py
 
-The preview contains no authentication, database access or generation endpoints.
+The preview optionally reads a local SQLite database in read-only mode.\nIt has no authentication, credit or generation endpoints.
 Do not expose this development server to the public internet.
 """
 import os
@@ -26,7 +26,8 @@ def preview():
 
 @app.get("/health")
 def health():
-    return {"status": "preview-only", "database_connected": False, "generation_enabled": False}
+    db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
+    return {"status": "preview-only", "database_connected": bool(db and Path(db).is_file()), "generation_enabled": False}
 
 
 @app.get("/api/options")
