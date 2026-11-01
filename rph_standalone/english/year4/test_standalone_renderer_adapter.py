@@ -68,6 +68,14 @@ class Lesson030AdapterTest(unittest.TestCase):
                 self.assertIn("Teacher-selected DSKP SP", rendered)
                 self.assertNotIn("READY FOR RELEASE", rendered)
 
+    def test_teacher_selected_lessons_keep_inline_pbd(self):
+        for number in (80, 96, 112):
+            with self.subTest(lesson=number):
+                original = (Path(__file__).parent / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
+                rendered = adapt_year4_standalone(original)
+                self.assertIn("ASSESSMENT:\n", rendered)
+                self.assertIn("Teacher-selected DSKP SP", rendered.split("ASSESSMENT:\n", 1)[1])
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
