@@ -38,3 +38,32 @@ class VerifiedPdpCatalog:
              "topic": r[3], "subtopic": r[4], "skill_focus": r[5]}
             for r in rows
         ]
+
+
+def list_explicit_pjpk_entries(database_path, year, component):
+    """Only use audited mapping rows; absence of mapping yields no lessons."""
+    if type(year) is not int or year not in range(1, 7):
+        raise ValueError("invalid year")
+    if component not in ("PJ", "PK"):
+        raise ValueError("invalid component")
+    path = Path(database_path)
+    if not path.is_file():
+        raise FileNotFoundError(str(path))
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True) as con:
+        con.execute("PRAGMA query_only=ON")
+        exists = con.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='web_v1_pjpk_map'"
+        ).fetchone()
+        if not exists:
+            return []
+        rows = con.execute(
+            "SELECT r.id, r.sequence_no, r.unit_title, r.topic, r.subtopic "
+            "FROM rpt_entries r JOIN web_v1_pjpk_map m ON m.rpt_entry_id=r.id "
+            "WHERE r.year_label=? AND r.subject=? AND r.verified=1 "
+            "AND m.verified=1 AND m.component=? "
+            "AND lower(COALESCE(r.notes,'')) NOT LIKE '%superseded%' "
+            "ORDER BY r.sequence_no,r.id LIMIT 500",
+            (f"Tahun {year}", SUBJECTS["PJPK"], component),
+        ).fetchall()
+    return [{"id": r[0], "pdp_no": r[1], "unit_title": r[2],
+             "topic": r[3], "subtopic": r[4]} for r in rows]
