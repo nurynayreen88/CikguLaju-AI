@@ -137,6 +137,22 @@ class WorkbookApplicatorTests(unittest.TestCase):
         self.assertIn("Original assessment remains.", updated)
         self.assertEqual(updated.count("**Workbook practice:**"), 1)
 
+    def test_non_textbook_marker_case_insensitive(self):
+        original = self.SAMPLE.replace(
+            "## Assessment / PBD",
+            "**Audited source mapping:** non-textbook / sow task.\\n\\n## Assessment / PBD"
+        )
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertIsNone(updated)
+        self.assertEqual(status, "non_textbook_sow_task")
+
+    def test_original_closure_preserved_with_plain_pbd(self):
+        original = self.SAMPLE.replace("## Assessment / PBD", "## PBD")
+        updated, status = prepare(original, 48, "Activity 2")
+        self.assertEqual(status, "ready")
+        self.assertEqual(updated.split("## Closure", 1)[1],
+                         original.split("## Closure", 1)[1])
+
     def test_no_assessment_means_no_change(self):
         updated, status = prepare("# Lesson\n## Activity 1\nText\n", 48, "Activity 2")
         self.assertIsNone(updated)
