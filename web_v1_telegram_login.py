@@ -23,7 +23,7 @@ def verify_telegram_login(payload, bot_token, *, now=None, max_age_seconds=86400
         return None
     if any(not isinstance(k, str) or not isinstance(v, str) for k, v in payload.items()):
         return None
-    if any(("\\r" in k or "\\n" in k or "\\r" in v or "\\n" in v) for k, v in payload.items()):
+    if any(("\r" in k or "\n" in k or "\r" in v or "\n" in v) for k, v in payload.items()):
         return None
     try:
         user_id = int(payload["id"])
