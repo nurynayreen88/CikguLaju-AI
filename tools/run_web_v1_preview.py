@@ -168,7 +168,54 @@ def materials():
 
 @app.post("/api/generate")
 def generate():
-    return jsonify({"error": "shared generator not connected"}), 503
+    """Authorized, approval-gated document generation; no quota mutation."""
+    from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
+    from web_v1_sessions import verify_session_ticket
+    from web.approved_rph_reader import RPHLookupConfig, load_approved_rph
+    from web.rph_document_renderer import render_approved_rph
+    from flask import make_response
+    config = _config()
+    if config is None:
+        return jsonify({"error": "login not configured"}), 503
+    uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+    if uid is None:
+        return jsonify({"error": "authentication required"}), 401
+    try:
+        account = _lookup(config, uid)
+    except Exception:
+        return jsonify({"error": "account lookup unavailable"}), 503
+    if not account or account.get("telegram_user_id") != uid:
+        return jsonify({"error": "existing account required"}), 403
+    if os.environ.get("CIKGULAJU_ENV") != "staging" or os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") != "1":
+        return jsonify({"error": "approved RPH generation not enabled"}), 503
+    if not request.is_json or (request.content_length or 0) > 2048:
+        return jsonify({"error": "invalid request"}), 400
+    payload = request.get_json(silent=True)
+    if not isinstance(payload, dict) or set(payload) != {"lesson_id", "format"}:
+        return jsonify({"error": "invalid selection"}), 400
+    lesson_id, fmt = payload["lesson_id"], payload["format"]
+    if type(lesson_id) is not int or lesson_id <= 0 or fmt not in ("docx", "pdf"):
+        return jsonify({"error": "invalid selection"}), 400
+    names = ("CIKGULAJU_WEB_APPROVED_DB", "CIKGULAJU_WEB_APPROVED_TABLE",
+             "CIKGULAJU_WEB_APPROVED_ID_COLUMN", "CIKGULAJU_WEB_APPROVED_TITLE_COLUMN",
+             "CIKGULAJU_WEB_APPROVED_CONTENT_COLUMN", "CIKGULAJU_WEB_APPROVED_STATUS_COLUMN",
+             "CIKGULAJU_WEB_APPROVED_STATUS_VALUE", "CIKGULAJU_WEB_APPROVED_REFERENCE_COLUMN")
+    values = [os.environ.get(name, "") for name in names]
+    if any(not value for value in values):
+        return jsonify({"error": "approved content source not configured"}), 503
+    try:
+        rph = load_approved_rph(RPHLookupConfig(*values), lesson_id)
+    except (LookupError, ValueError, sqlite3.Error, OSError):
+        return jsonify({"error": "approved RPH not available"}), 404
+    try:
+        data, mime = render_approved_rph(rph, fmt)
+    except (ImportError, ValueError):
+        return jsonify({"error": "document renderer unavailable"}), 503
+    response = make_response(data)
+    response.headers["Content-Type"] = mime
+    response.headers["Content-Disposition"] = f'attachment; filename="cikgulaju-rph-{lesson_id}.{fmt}"'
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
 
 @app.get("/api/materials/download/<material_id>")
 def download_material(material_id):
