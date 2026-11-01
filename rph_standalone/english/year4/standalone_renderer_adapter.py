@@ -63,6 +63,6 @@ def adapt_year4_standalone(markdown: str) -> str:
         ("SET INDUCTION", body("Set induction")),
         ("MAIN ACTIVITIES", "\n\n".join(activities)),
         ("CLOSURE", body("Closure")),
-        ("ASSESSMENT", body("Assessment and differentiation")),
+        ("ASSESSMENT", body("Assessment and differentiation") or body("Differentiation and assessment") or body("PBD and differentiation")),
     ]
     return "\n".join(f"{key}:\n{value}" for key, value in fields if value)
