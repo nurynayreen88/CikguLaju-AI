@@ -44,7 +44,7 @@ def adapt_year4_standalone(markdown: str) -> str:
     if not title:
         title = re.search(r"^\*\*(?:Unit/Topic|Unit):\*\*\s*(.+)$", markdown, re.M)
     if not refs:
-        refs = re.search(r"^\*\*Materials:\*\*\s*(.+)$", markdown, re.M)
+        refs = re.search(r"^\*\*(?:Materials|Resources):\*\*\s*(.+)$", markdown, re.M)
     audio = re.search(r"^\*\*Audio:\*\*\s*(.+)$", markdown, re.M)
     materials = refs.group(1).strip() if refs else ""
     if audio and audio.group(1).strip():
