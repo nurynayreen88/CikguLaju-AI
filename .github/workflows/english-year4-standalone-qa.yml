@@ -42,6 +42,9 @@ jobs:
       - name: Run 160-lesson standalone adapter tests
         run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_standalone_renderer_adapter.py' -v
 
+      - name: Test read-only release audit
+        run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_audit_release.py' -v
+
       - name: Run read-only release audit and export 160-lesson reports
         run: |
           python rph_standalone/english/year4/audit_standalone_release.py --json year4_audit.json --csv year4_audit.csv
