@@ -59,6 +59,22 @@ class ApprovedReaderTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             load_approved_rph(bad, 1)
 
+    def test_rpt_entries_never_accepted_as_approved_source(self):
+        unsafe = RPHLookupConfig(
+            str(self.db), "rpt_entries", "lesson_id", "title",
+            "content", "approval_status", "approved", "approval_ref"
+        )
+        with self.assertRaises(ValueError):
+            load_approved_rph(unsafe, 1)
+
+    def test_verified_flag_not_approval(self):
+        unsafe = RPHLookupConfig(
+            str(self.db), "standalone_rph", "lesson_id", "title",
+            "content", "verified", "1", "approval_ref"
+        )
+        with self.assertRaises(ValueError):
+            load_approved_rph(unsafe, 1)
+
     def test_boolean_id_rejected(self):
         with self.assertRaises(ValueError):
             load_approved_rph(self.config, True)
