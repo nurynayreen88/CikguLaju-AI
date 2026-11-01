@@ -24,6 +24,18 @@ class Lesson030AdapterTest(unittest.TestCase):
                 self.assertRegex(main_activities, r"(?im)^(?:PBD|Reinforcement)\\b")
                 self.assertIn("Activity 1", main_activities)
                 self.assertIn("Activity 2", main_activities)
+                self.assertLess(main_activities.index("Activity 1"), main_activities.index("Activity 2"))
+                self.assertLess(main_activities.index("Activity 2"), len(main_activities))
+                for field in ("TOPIC", "MAIN LEARNING STANDARD", "COMPLEMENTARY LEARNING STANDARD",
+                              "SET INDUCTION", "MAIN ACTIVITIES", "CLOSURE"):
+                    value = rendered.split(field + ":\\n", 1)[1].split("\\n" + (
+                        "MAIN LEARNING STANDARD" if field == "TOPIC" else
+                        "COMPLEMENTARY LEARNING STANDARD" if field == "MAIN LEARNING STANDARD" else
+                        "LEARNING STANDARD" if field == "COMPLEMENTARY LEARNING STANDARD" else
+                        "MAIN ACTIVITIES" if field == "SET INDUCTION" else
+                        "CLOSURE" if field == "MAIN ACTIVITIES" else "ASSESSMENT"
+                    ) + ":", 1)[0]
+                    self.assertTrue(value.strip(), f"Empty {field} in lesson {lesson_no}")
 
     def test_pbd_heading_variants(self):
         from standalone_renderer_adapter import adapt_year4_standalone
