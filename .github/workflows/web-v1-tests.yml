@@ -26,6 +26,7 @@ on:
       - 'tests/test_web_v1_sqlite_integration.py'
       - 'tests/test_web_v1_preview_security.py'
       - 'tests/test_web_v1_smoke_isolated.py'
+      - 'tests/test_web_v1_phone_login_fail_closed.py'
       - 'tests/test_web_v1_schema_inspector.py'
       - 'tests/test_web_v1_shared_routes.py'
       - '.github/workflows/web-v1-tests.yml'
