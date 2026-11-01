@@ -76,6 +76,18 @@ def options():
 
 
 
+@app.get("/api/auth/capabilities")
+def auth_capabilities():
+    """Public, non-sensitive readiness flags; never infer auth from QR primitives."""
+    return jsonify({
+        "telegram_login_enabled": False,
+        "phone_qr_pairing_enabled": False,
+        "existing_account_lookup_enabled": False,
+        "session_cookie_enabled": False,
+        "status": "not-configured",
+    })
+
+
 @app.get("/api/shared/status")
 def shared_status():
     return jsonify({"shared_backend_connected": False, "telegram_account_linked": False, "generation_enabled": False, "download_enabled": False})
