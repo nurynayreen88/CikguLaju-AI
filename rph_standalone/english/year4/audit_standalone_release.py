@@ -45,7 +45,7 @@ def audit(root=ROOT):
                 blockers.append("renderer_missing_" + label.lower().replace(" ", "_"))
         # Check that explicitly linked local lesson resources exist; never fetch external URLs.
         linked_resources = set(re.findall(
-            r"resources/[A-Za-z0-9_.-]+\\.(?:md|pdf|docx|png|jpg|mp3)", source, re.I
+            r"resources/[A-Za-z0-9_.-]+\.(?:md|pdf|docx|png|jpg|mp3)", source, re.I
         ))
         for resource in sorted(linked_resources):
             if not (root / resource).is_file():
