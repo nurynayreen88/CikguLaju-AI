@@ -57,6 +57,17 @@ class SharedRoutesTests(unittest.TestCase):
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual([r["value"] for r in response.json], ["1"])
 
+    def test_conflicting_verified_classifications_are_hidden(self):
+        with tempfile.TemporaryDirectory() as folder:
+            db = str(Path(folder) / "preview.db")
+            with sqlite3.connect(db) as con:
+                con.execute("CREATE TABLE rpt_entries (id INTEGER, sequence_no INTEGER, unit_title TEXT, topic TEXT, subtopic TEXT, year_label TEXT, subject TEXT, verified INTEGER, notes TEXT)")
+                con.execute("CREATE TABLE web_v1_pjpk_map (rpt_entry_id INTEGER, component TEXT, verified INTEGER)")
+                con.execute("INSERT INTO rpt_entries VALUES (1,1,'Unit A','Topik','Subtopik','Tahun 3','PJPK',1,'')")
+                con.executemany("INSERT INTO web_v1_pjpk_map VALUES (1,?,1)", [("PJ",), ("PK",)])
+            self.assertEqual(list_explicit_pjpk_entries(db, 3, "PJ"), [])
+            self.assertEqual(list_explicit_pjpk_entries(db, 3, "PK"), [])
+
     def test_generation_and_download_fail_closed(self):
         client = app.test_client()
         for method, path in (
