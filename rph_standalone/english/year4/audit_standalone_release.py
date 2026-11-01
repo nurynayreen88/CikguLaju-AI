@@ -28,10 +28,21 @@ def audit(root=ROOT):
         source = path.read_text(encoding="utf-8")
         adapted = adapt_year4_standalone(source)
         blockers = year4_release_blockers(source)
-        for label in ("TOPIC:", "MAIN LEARNING STANDARD:", "COMPLEMENTARY LEARNING STANDARD:",
-                      "SET INDUCTION:", "MAIN ACTIVITIES:", "CLOSURE:", "ASSESSMENT:"):
+        required = ("TOPIC", "MAIN LEARNING STANDARD", "COMPLEMENTARY LEARNING STANDARD",
+                    "SET INDUCTION", "MAIN ACTIVITIES", "CLOSURE", "ASSESSMENT")
+        for label in required:
+            match = re.search(
+                r"(?ms)^" + re.escape(label) +
+                r":\\n(.*?)(?=^[A-Z][A-Z ]+:\\n|\\Z)", adapted
+            )
+            code = label.lower().replace(" ", "_")
+            if not match:
+                blockers.append("renderer_missing_" + code)
+            elif not match.group(1).strip():
+                blockers.append("renderer_empty_" + code)
+        for label in ("Activity 1", "Activity 2"):
             if label not in adapted:
-                blockers.append("renderer_missing_" + label[:-1].lower().replace(" ", "_"))
+                blockers.append("renderer_missing_" + label.lower().replace(" ", "_"))
         if number in TEACHER_SELECTED and "teacher_selected_main_sp" not in blockers:
             blockers.append("review_teacher_selected_main_sp")
         if number in TEACHER_SELECTED and "teacher_selected_complementary_sp" not in blockers:
