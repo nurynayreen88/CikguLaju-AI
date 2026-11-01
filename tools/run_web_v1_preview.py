@@ -144,14 +144,22 @@ def shared_status():
 
 @app.get("/api/account/status")
 def account_status():
-    """Fail closed until the shared Telegram authentication service is wired."""
-    response = jsonify({
-        **display_trusted_account({"authenticated": False}),
-        "authenticated": False,
-        "shared_backend_connected": False,
-    })
-    response.headers["Cache-Control"] = "no-store, private"
-    return response, 401
+    """Expose trusted existing-account status, never browser-supplied credits."""
+    from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
+    from web_v1_sessions import verify_session_ticket
+    config = _config()
+    if config is None:
+        return jsonify({"authenticated": False, "error": "login not configured"}), 503
+    uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+    if uid is None:
+        return jsonify({"authenticated": False}), 401
+    try:
+        account = _lookup(config, uid)
+    except Exception:
+        return jsonify({"authenticated": False, "error": "account lookup unavailable"}), 503
+    if not account or account.get("telegram_user_id") != uid:
+        return jsonify({"authenticated": False}), 401
+    return jsonify({"authenticated": True, **display_trusted_account(account), "shared_backend_connected": True})
 
 
 @app.get("/api/materials")
