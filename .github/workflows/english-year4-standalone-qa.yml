@@ -42,6 +42,30 @@ jobs:
       - name: Run 160-lesson standalone adapter tests
         run: python -m unittest discover -s rph_standalone/english/year4 -p 'test_standalone_renderer_adapter.py' -v
 
+      - name: Run read-only release audit and export 160-lesson reports
+        run: |
+          python rph_standalone/english/year4/audit_standalone_release.py --json year4_audit.json --csv year4_audit.csv
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('year4_audit.json').read_text(encoding='utf-8'))
+          assert report['lessons_expected'] == 160
+          assert report['files_found'] == 160
+          assert report['manual_approvals_verified'] == 0
+          assert report['release_ready'] is False
+          assert len(report['records']) == 160
+          print('Read-only audit report generated; all approvals remain pending.')
+          PY
+      - name: Upload read-only 160-lesson audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-year4-manual-approval-audit
+          path: |
+            year4_audit.json
+            year4_audit.csv
+          if-no-files-found: warn
+
       - name: Produce downloadable release-blocker report
         if: always()
         run: |
