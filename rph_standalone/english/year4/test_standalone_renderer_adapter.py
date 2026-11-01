@@ -87,6 +87,13 @@ class Lesson030AdapterTest(unittest.TestCase):
         lesson_001 = (Path(__file__).parent / "lesson_001.md").read_text(encoding="utf-8")
         self.assertNotIn("teacher_selected_main_sp", year4_release_blockers(lesson_001))
 
+    def test_unverified_audio_disc_is_release_blocker(self):
+        from standalone_renderer_adapter import year4_release_blockers
+        for number in (139, 145, 147):
+            with self.subTest(lesson=number):
+                source = (Path(__file__).parent / f"lesson_{number:03d}.md").read_text(encoding="utf-8")
+                self.assertIn("audio_disc_unverified", year4_release_blockers(source))
+
     def test_separate_audio_metadata_preserved(self):
         source = "\n".join([
             "**Topic:** Test topic",
