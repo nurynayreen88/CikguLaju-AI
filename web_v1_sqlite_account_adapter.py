@@ -45,7 +45,16 @@ def lookup_existing_sqlite_account(db_path, telegram_id, *, table, id_column,
             return None
         result["rakan_pembangun"] = bool(raw)
     if vip_column is not None:
-        result["vip_until"] = row[vip_column]
+        from datetime import date
+        expiry = row[vip_column]
+        if expiry is not None:
+            if not isinstance(expiry, str):
+                return None
+            try:
+                date.fromisoformat(expiry)
+            except ValueError:
+                return None
+        result["vip_until"] = expiry
     if credits_column is not None:
         credits = row[credits_column]
         if type(credits) is not int or credits < 0 or credits > 10:
