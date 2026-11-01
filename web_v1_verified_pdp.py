@@ -61,6 +61,9 @@ def list_explicit_pjpk_entries(database_path, year, component):
             "FROM rpt_entries r JOIN web_v1_pjpk_map m ON m.rpt_entry_id=r.id "
             "WHERE r.year_label=? AND r.subject=? AND r.verified=1 "
             "AND m.verified=1 AND m.component=? "
+            "AND NOT EXISTS (SELECT 1 FROM web_v1_pjpk_map conflicting "
+            "WHERE conflicting.rpt_entry_id=r.id AND conflicting.verified=1 "
+            "AND conflicting.component<>m.component) "
             "AND lower(COALESCE(r.notes,'')) NOT LIKE '%superseded%' "
             "ORDER BY r.sequence_no,r.id LIMIT 500",
             (f"Tahun {year}", SUBJECTS["PJPK"], component),
