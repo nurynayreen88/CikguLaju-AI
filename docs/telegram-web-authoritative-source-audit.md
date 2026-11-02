@@ -7,6 +7,11 @@
 - Web's `CIKGULAJU_WEB_PREVIEW_DB` is a separate configured path. Local file identity is not evidence of Telegram runtime parity.
 - Supabase account and entitlement lookup is already shared in part, but the curriculum and material lookup paths remain independent.
 
+## Render runtime observations (read-only)
+- Telegram service `CikguLaju-AI` runs `main`, build `bash build_jawi.sh`, start `gunicorn app:app`, Render region Oregon, autoDeploy enabled.
+- Web staging service runs `staging/cikgulaju-web-v1`, start `gunicorn --bind 0.0.0.0:$PORT tools.run_web_v1_preview:app`, Render region Singapore, autoDeploy disabled.
+- These are separate Render instances and filesystems. A local SQLite path cannot be assumed to refer to the same file on both services.
+
 ## Required before connecting Web to production curriculum
 1. Inspect **read-only** the production Render service's effective database configuration and app startup selection; do not print secrets.
 2. Establish the exact canonical source and whether it is updated in place, versioned at deploy, or fetched from a remote store.
