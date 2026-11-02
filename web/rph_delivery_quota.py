@@ -21,3 +21,19 @@ def charge_rendered_rph(telegram_user_id, document_bytes, supabase_url, secret_k
     if not result["ok"]:
         return {"allowed": False, "remaining": result["remaining"], "reference": None}
     return {"allowed": True, "remaining": result["remaining"], "reference": reference}
+
+def has_active_paid_access(account, today=None):
+    """Check a trusted account snapshot for lifetime or unexpired VIP access."""
+    from datetime import date
+    if not isinstance(account, dict) or account.get("authenticated") is not True:
+        return False
+    if account.get("rakan_pembangun") is True:
+        return True
+    expiry = account.get("vip_until")
+    if not isinstance(expiry, str):
+        return False
+    try:
+        expiry_date = date.fromisoformat(expiry)
+    except ValueError:
+        return False
+    return expiry_date >= (today or date.today())
