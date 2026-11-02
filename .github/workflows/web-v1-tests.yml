@@ -5,6 +5,9 @@ on:
     branches:
       - staging/cikgulaju-web-v1
     paths:
+      - 'web/telegram_curriculum_api.py'
+      - 'tests/test_telegram_curriculum_api.py'
+      - 'web_v1_static_preview/index.html'
       - 'web_v1_entitlements.py'
       - 'web_v1_telegram_login.py'
       - 'web_v1_preview/index.html'
@@ -69,5 +72,7 @@ jobs:
         run: python -m pip install 'Flask>=3,<4'
       - name: Compile Web V1 Python modules
         run: python -m py_compile web_v1_entitlements.py web_v1_telegram_login.py web_v1_sessions.py web_v1_pairing_challenges.py web_v1_pairing_store.py web_v1_pairing_session.py web_v1_browser_binding.py web_v1_pairing_cleanup.py web_v1_access_policy.py web_v1_account_resolver.py web_v1_sqlite_account_adapter.py tools/inspect_web_v1_account_schema.py tools/run_web_v1_preview.py
+      - name: Test protected Telegram curriculum API
+        run: python -m unittest tests.test_telegram_curriculum_api -v
       - name: Run isolated Web V1 tests
         run: python -m unittest discover -s tests -p 'test_web_v1_*.py' -v
