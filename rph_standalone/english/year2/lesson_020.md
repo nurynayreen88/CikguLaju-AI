@@ -34,6 +34,8 @@ Draw a picture, show a friend!”
 **Teacher:** Observe each pupil or pair performing four lines, noting intelligibility, rhythm and at least two appropriate gestures. Collect two independent sentences and check that each communicates a free-time activity. Record performance and writing evidence separately, including any prompts.  
 **Pupils:** Perform and submit their two sentences.
 
+**Workbook assessment:** Pupils complete Workbook p.65, Activity 1, by listening and matching pictures to the days and free-time activities; teacher checks their responses as additional assessment evidence.
+
 ## Closure (5 minutes)
 **Teacher:** Invite one final group performance. Ask pupils which action they liked and why.  
 **Pupils:** Perform together and name a favourite action.
