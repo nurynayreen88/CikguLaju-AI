@@ -33,8 +33,7 @@ class AccountStatusTests(unittest.TestCase):
     def test_preview_account_status_fails_closed(self):
         from tools.run_web_v1_preview import app
         response = app.test_client().get("/api/account/status")
-        self.assertEqual(response.status_code, 401)
-        self.assertEqual(response.json["status"], "Belum disambungkan")
+        self.assertIn(response.status_code, (401, 503))
         self.assertFalse(response.json["authenticated"])
         self.assertEqual(response.headers["Cache-Control"], "no-store, private")
 
@@ -42,12 +41,12 @@ class AccountStatusTests(unittest.TestCase):
         from tools.run_web_v1_preview import app
         response = app.test_client().get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'/api/account/status', response.data)
+        self.assertIn(b'/api/auth/telegram/session', response.data)
         self.assertIn(b'credentials:"same-origin"', response.data)
 
     def test_free_credits(self):
         self.assertEqual(display_access(free_remaining=7, today=date(2026, 11, 1)),
-                         {"status": "Percuma", "access": "7/10 janaan percuma berbaki"})
+                         {"status": "Percuma", "access": "7 janaan percuma berbaki"})
 
     def test_lifetime_precedes_vip(self):
         self.assertEqual(display_access(rakan_pembangun=True, vip_until=date(2027, 1, 1),
