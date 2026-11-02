@@ -17,6 +17,7 @@ Teacher reviews routine flashcards and matching word cards. Pupils match words a
 Teacher guides the routine table and speaking activity on Student's Book p.15. Pupils record their own routines, mingle and ask classmates about their daily activities.
 
 ## PBD (10 minutes)
+**Workbook assessment:** Pupils complete Workbook p.10, Activity 1, by writing daily-routine phrases from the pictures.
 Teacher observes spoken exchanges and checks written routine records. Pupils demonstrate both skills.
 
 ## Closure (5 minutes)
