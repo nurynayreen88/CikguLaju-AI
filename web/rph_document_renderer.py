@@ -27,11 +27,11 @@ def render_approved_rph(
     Approval reference must be supplied by a trusted server-side lookup,
     never copied from browser input. This guard is not proof of approval.
     """
-    if not isinstance(rph.lesson_id, int) or rph.lesson_id <= 0:
+    if type(rph.lesson_id) is not int or rph.lesson_id <= 0:
         raise ValueError("Invalid lesson ID")
-    if not rph.approval_reference.strip():
+    if not isinstance(rph.approval_reference, str) or not rph.approval_reference.strip():
         raise ValueError("Missing server-side approval reference")
-    if not rph.title.strip() or not rph.content.strip():
+    if not isinstance(rph.title, str) or not isinstance(rph.content, str) or not rph.title.strip() or not rph.content.strip():
         raise ValueError("Empty RPH")
     if format == "docx":
         from docx import Document
