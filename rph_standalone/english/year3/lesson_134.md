@@ -17,7 +17,7 @@ Pupils complete TB p.133 Activity 3, then play True/False about Bob and Lucy's f
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.68, Activity 3; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.68, Activity 3, by matching the holiday pictures with the correct children.
+**Pupils:** Pupils complete Workbook p.68, Activity 3, by following the lines from each child to the holiday activity, then writing sentences about what they did.
 Teacher reads three statements about Bob and Lucy's trip. Pupils identify true or false and correct one false detail.
 
 ## Closure (5 minutes)
