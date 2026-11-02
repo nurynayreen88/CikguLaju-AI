@@ -44,6 +44,26 @@ class DocumentAuthorizationTests(unittest.TestCase):
                     self.authorize(account, document)
         self.assertEqual(self.calls, [])
 
+    def test_rpc_denial_never_authorizes_download(self):
+        def denied(url, key, uid, reference):
+            return {"ok": False, "remaining": 0}
+        result = authorize_rendered_document(
+            self.account, 123, b"doc", "https://example.supabase.co",
+            "secret", debit=denied)
+        self.assertFalse(result["allowed"])
+        self.assertIsNone(result["reference"])
+
+    def test_paid_access_requires_trusted_matching_identity(self):
+        with self.assertRaises(ValueError):
+            self.authorize({**self.account, "telegram_user_id": 999,
+                            "rakan_pembangun": True})
+        self.assertEqual(self.calls, [])
+
+    def test_missing_balance_fails_closed(self):
+        with self.assertRaises(ValueError):
+            self.authorize({"authenticated": True, "telegram_user_id": 123})
+        self.assertEqual(self.calls, [])
+
 
 if __name__ == "__main__":
     unittest.main()
