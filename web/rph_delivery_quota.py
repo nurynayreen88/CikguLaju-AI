@@ -53,6 +53,17 @@ def authorize_rendered_document(account, telegram_user_id, document_bytes,
         raise ValueError("Account identity mismatch")
     if not isinstance(document_bytes, bytes) or not document_bytes:
         raise ValueError("Document must be fully rendered")
+    if type(account.get("rakan_pembangun", False)) is not bool:
+        raise ValueError("Invalid paid entitlement")
+    if account.get("vip_until") is not None:
+        from datetime import date
+        expiry = account["vip_until"]
+        if not isinstance(expiry, str):
+            raise ValueError("Invalid subscription expiry")
+        try:
+            date.fromisoformat(expiry)
+        except ValueError:
+            raise ValueError("Invalid subscription expiry") from None
     if has_active_paid_access(account):
         return {"allowed": True, "remaining": None, "reference": None}
     credits = account.get("free_remaining")
