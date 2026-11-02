@@ -64,6 +64,26 @@ class Year3AdapterTests(unittest.TestCase):
             self.assertIn("Assess writing", result["PENTAKSIRAN"])
             self.assertIn("Introduce", result["SET INDUKSI"])
 
+    def test_activity_ten_not_mistaken_for_activity_one(self):
+        lesson = """# Lesson 14
+## Set Induction
+**Teacher:** Begin.
+## Activity 10
+**Pupils:** Wrong numbered activity.
+## Activity 2
+**Pupils:** Correct numbered activity.
+## Assessment
+**Teacher:** Check learning.
+## Closure
+**Pupils:** Reflect.
+"""
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_014.md").write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"3","lesson_no":14}, {})
+            self.assertIn("Correct numbered activity", result["AKTIVITI UTAMA"])
+            self.assertNotIn("Wrong numbered activity", result["AKTIVITI UTAMA"])
+
     def test_non_year3_untouched(self):
         state = {"subject": "Bahasa Inggeris", "year": "Tahun 2", "lesson_no": 14}
         original = {"PENTAKSIRAN": "unchanged"}
