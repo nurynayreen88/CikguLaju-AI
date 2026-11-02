@@ -49,6 +49,7 @@ class Year3AdapterTests(unittest.TestCase):
 
     def test_lowercase_phases_and_pbd_heading(self):
         lesson = """# Lesson 14
+**Status:** READY
 ## Set induction
 **Teacher:** Introduce.
 ## Activity 1
