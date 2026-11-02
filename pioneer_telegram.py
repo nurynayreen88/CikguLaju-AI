@@ -83,7 +83,7 @@ def install(ns):
             return send(cid, "🏆 <b>PENGESAHAN RAKAN PEMBANGUN RM10</b>\n"
                         f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
                         "Semak transaksi masuk dalam TNG Merchant secara manual sebelum lulus.",
-                        [[{"text": "✅ Sahkan Rakan Pembangun", "callback_data": f"admin_approve|{request_id}|{req['chat_id']}"}],
+                        [[{"text": "🔎 Semak Status Kelulusan", "callback_data": f"admin_approve|{request_id}|{req['chat_id']}"}],
                          [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
         return original_card(cid, request_id)
 
