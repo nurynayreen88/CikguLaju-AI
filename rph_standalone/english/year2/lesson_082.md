@@ -6,6 +6,7 @@
 **Learning objectives:** Pupils describe three clothing objects and introduce themselves to an audience using a fixed phrase before presenting a poster.
 **Success criteria:** three intelligible object descriptions and one clear self-introduction using a fixed phrase.
 **Teaching materials:** Two teacher-created outfit picture cards and the dialogue below.
+**Printable supplementary material:** [Lesson 082 speaking cards and individual PBD checklist](../../../materials/english/year2/lesson_082_speaking_cards.md) (original CikguLaju resource; teacher review pending).
 
 **Picture card A:** a child wearing a red shirt, blue shorts and white shoes. **Picture card B:** a child wearing a yellow dress, green hat and black shoes.
 **Original model dialogue:** A: “What are you wearing?” B: “I'm wearing a red shirt and blue shorts.” A: “What colour are your shoes?” B: “My shoes are white.”
