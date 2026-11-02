@@ -60,6 +60,10 @@ class CurriculumApiTest(unittest.TestCase):
     def test_unapproved_materials_not_exposed(self):
         self.assertEqual(self.get("approved-materials", year=2).status_code, 503)
 
+    def test_rejects_unexpected_query_parameters(self):
+        self.assertEqual(self.get("subjects", year=2, extra="unexpected").status_code, 400)
+        self.assertEqual(self.get("lessons", year=2, subject="BI", unit="A", extra="x").status_code, 400)
+
     def test_invalid_year(self):
         self.assertEqual(self.get("subjects", year=99).status_code, 400)
 
