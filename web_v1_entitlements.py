@@ -20,7 +20,7 @@ def display_access(*, rakan_pembangun=False, vip_until=None, free_remaining=None
         return {"status": "Percuma", "access": "Baki janaan belum tersedia"}
     if type(free_remaining) is not int or free_remaining < 0 or free_remaining > 10:
         raise ValueError("invalid free remaining credits")
-    return {"status": "Percuma", "access": str(free_remaining) + "/10 janaan percuma berbaki"}
+    return {"status": "Percuma", "access": str(free_remaining) + " janaan percuma berbaki"}
 
 
 def display_trusted_account(account, *, today=None):
