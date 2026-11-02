@@ -13,6 +13,8 @@ on:
       - 'tests/test_telegram_curriculum_pjpk_routes.py'
       - 'web/authoritative_http_source.py'
       - 'web/telegram_curriculum_api.py'
+      - 'web/register_curriculum_api.py'
+      - 'tests/test_curriculum_registration_hook.py'
       - 'web_v1_dropdown_catalog.py'
       - 'tools/run_web_v1_preview.py'
       - 'web_v1_verified_pdp.py'
@@ -40,3 +42,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_pjpk_component_isolation.py' -v
           python -m unittest discover -s tests -p 'test_pjpk_authoritative_http.py' -v
           python -m unittest discover -s tests -p 'test_telegram_curriculum_pjpk_routes.py' -v
+          python -m unittest discover -s tests -p 'test_curriculum_registration_hook.py' -v
