@@ -20,7 +20,7 @@
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.81, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.81, Activity 1, by matching the story characters with their descriptions.
+**Pupils:** Pupils complete Workbook p.81, Activity 1, by reading the story again and matching the pictures with the correct statements.
 **Teacher:** Ask each pupil to identify a favourite character or event, give one story-based reason and read one short section independently.
 **Pupils:** Explain a favourite character or event with one supporting reason.
 
