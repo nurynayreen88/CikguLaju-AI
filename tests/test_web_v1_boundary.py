@@ -37,10 +37,15 @@ class WebV1BoundaryTests(unittest.TestCase):
                         imports.append(node.module)
                 self.assertNotIn("app", imports)
 
-    def test_preview_has_no_rph_generation_route(self):
+    def test_generation_routes_remain_fail_closed(self):
         source = (ROOT / "tools" / "run_web_v1_preview.py").read_text(encoding="utf-8")
-        self.assertNotIn("/api/rph", source)
-        self.assertNotIn("/generate", source)
+        tree = ast.parse(source)
+        for function_name in ("generate", "english_approved_rph"):
+            with self.subTest(function=function_name):
+                function = next(node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name == function_name)
+                returns = [node for node in ast.walk(function) if isinstance(node, ast.Return)]
+                self.assertTrue(any(isinstance(node.value, ast.Tuple) and len(node.value.elts) == 2 and isinstance(node.value.elts[1], ast.Constant) and node.value.elts[1].value == 503 for node in returns))
+        self.assertIn("Shared Telegram generation and quota accounting not connected", source)
 
 
 if __name__ == "__main__":
