@@ -1,0 +1,78 @@
+"""Read-only dropdown options for Web V1 staging."""
+from web_v1_verified_topics import SUBJECTS
+from web_v1_verified_pdp import VerifiedPdpCatalog, list_explicit_pjpk_entries
+
+
+def subject_options(year):
+    if type(year) is not int or year not in range(1, 7):
+        raise ValueError('invalid year')
+    return [{'value': code, 'label': label} for code, label in SUBJECTS.items()]
+
+
+
+def available_subject_options(database_path, year):
+    """Show only subjects with verified RPT entries in the selected year."""
+    import sqlite3
+    from pathlib import Path
+    subject_options(year)
+    path = Path(database_path)
+    if not path.is_file():
+        raise FileNotFoundError(str(path))
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, timeout=2) as conn:
+        conn.execute("PRAGMA query_only=ON")
+        rows = conn.execute(
+            "SELECT DISTINCT subject FROM rpt_entries WHERE year_label=? AND verified=1 "
+            "AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'",
+            (f"Tahun {year}",),
+        ).fetchall()
+    available = {row[0] for row in rows}
+    return [{'value': code, 'label': label} for code, label in SUBJECTS.items() if label in available]
+
+def _navigation_records(database_path, year, subject_code, component=None):
+    if subject_code == 'PJPK':
+        if component not in ('PJ', 'PK'):
+            raise ValueError('PJPK requires verified PJ or PK component')
+        return list_explicit_pjpk_entries(database_path, year, component)
+    if component not in (None, ''):
+        raise ValueError('component only applies to PJPK')
+    return VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
+
+
+def unit_options(database_path, year, subject_code, component=None):
+    records = _navigation_records(database_path, year, subject_code, component)
+    names = dict.fromkeys((r.get('unit_title') or '').strip() for r in records)
+    return [{'value': name, 'label': name} for name in names if name]
+
+
+def pdp_options(database_path, year, subject_code, unit_title, component=None):
+    if not isinstance(unit_title, str) or not unit_title.strip() or len(unit_title) > 300:
+        raise ValueError('invalid unit')
+    records = _navigation_records(database_path, year, subject_code, component)
+    available_units = {(r.get('unit_title') or '').strip() for r in records}
+    if unit_title.strip() not in available_units:
+        return []
+    return [{'value': str(r['id']), 'label': 'PdP ' + str(r['pdp_no']) + ' — ' + str(r.get('subtopic') or r.get('topic') or ''), 'standalone_rph_verified': False} for r in records if (r.get('unit_title') or '').strip() == unit_title]
+
+
+PJPK_COMPONENTS = (
+    {"value": "PJ", "label": "Pendidikan Jasmani (PJ)"},
+    {"value": "PK", "label": "Pendidikan Kesihatan (PK)"},
+)
+
+
+def component_options(subject_code):
+    """PJPK alone has an extra choice; other subjects retain four steps."""
+    return [dict(item) for item in PJPK_COMPONENTS] if subject_code == "PJPK" else []
+
+
+def verified_component_records(records, subject_code, component=None):
+    """Never infer PJ/PK from a title or include unclassified records."""
+    if subject_code != "PJPK":
+        if component not in (None, ""):
+            raise ValueError("component is only valid for PJPK")
+        return list(records)
+    if component not in ("PJ", "PK"):
+        raise ValueError("PJPK requires PJ or PK")
+    return [record for record in records
+            if record.get("component_verified") is True
+            and record.get("component") == component]
