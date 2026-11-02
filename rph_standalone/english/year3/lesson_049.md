@@ -17,6 +17,8 @@ Teacher displays four seasons flashcards and discusses weather in different seas
 Teacher guides Vocabulary and Activity 1 from Teacher's Book p.60. Pupils listen for season and weather vocabulary, then use Student's Book p.35 Grammar Box to describe their favourite season.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.29, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.29, Activity 1, by matching pictures with seasons and weather.
 Pupils identify two key words heard and ask one appropriate question to obtain missing information.
 
 ## Closure (5 minutes)
