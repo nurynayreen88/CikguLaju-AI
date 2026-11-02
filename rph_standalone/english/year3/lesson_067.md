@@ -16,6 +16,8 @@ Teacher gives pupils clothes and furniture picture cards. Pupils sort them into 
 Teacher follows the Vocabulary and Activity 1 guidance from Teacher's Book p.76. Pupils read Student's Book p.46, locate details in the picture story and practise writing key vocabulary.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.39, Activity 1; explain the task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.39, Activity 1, by filling in missing words in the picture story.
 Pupils answer two reading-detail questions and spell three familiar words from the text.
 
 ## Closure (5 minutes)
