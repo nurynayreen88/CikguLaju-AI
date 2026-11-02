@@ -14,6 +14,7 @@ Pupils read the text about Tony's pizza before listening to the recording and sa
 
 ## Activity 2 — Reading and writing (25 minutes)
 Teacher guides Student's Book p.61 Activity 1 and the Writing Tip. Pupils identify the main idea and complete sentence stems about the pizza in full sentences.
+Pupils complete Workbook p.48, Activity 1, by adding commas and *and* where necessary in sentences about food.
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.48, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
