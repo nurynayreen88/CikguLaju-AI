@@ -23,6 +23,8 @@
 **Pupils:** Spell four familiar words and identify four spoken details.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.108, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.108, Activity 1, by matching the beach pictures with the written questions and answers.
 **Teacher (10 min):** Record individual performance against the success criteria.
 **Pupils:** Submit individual evidence.
 
