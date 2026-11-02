@@ -1,0 +1,30 @@
+name: English RPH internal note regression
+on:
+  pull_request:
+    paths:
+      - 'english_standalone_adapter.py'
+      - 'english_y2_standalone_render.py'
+      - 'english_y3_standalone_render.py'
+      - 'tests/test_english_rph_internal_notes.py'
+      - 'tests/test_english_y2_workbook_download_router.py'
+      - 'resources/english/y2/workbook_download_router.py'
+      - 'resources/english/y2/workbook_telegram_delivery.py'
+      - 'tests/test_english_y2_workbook_telegram_delivery.py'
+      - 'web/english_y2_verified_workbook_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_y2_workbook_runtime_bridge.py'
+  push:
+    branches:
+      - 'fix/strip-internal-qa-from-english-rph-20261103'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p 'test_english_rph_internal_notes.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_download_router.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_telegram_delivery.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_runtime_bridge.py' -v

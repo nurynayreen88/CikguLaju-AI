@@ -6,11 +6,11 @@
 
 Y3_WB_VERIFIED_LESSON_MAP = {
 
-    1:  {"printed": 2, "pdf": null, "tb_page": 18, "evidence": "TB p.18 Workbook block explicitly covers Welcome Workbook opening activity; source PDF page missing"},
-    2:  {"printed": 2, "pdf": null, "tb_page": 19, "evidence": "TB p.19 Workbook Activities 1-3; printed p.2 absent from available source PDF"},
-    3:  {"printed": 3, "pdf": null, "tb_page": 20, "evidence": "TB p.20 Workbook block continues Welcome opening spread; printed p.3 absent from available source PDF"},
-    6:  {"printed": 3, "pdf": null, "tb_page": 21, "evidence": "TB p.21 Workbook block on Welcome opening spread; printed p.3 absent from available source PDF"},
-    7:  {"printed": 3, "pdf": null, "tb_page": 21, "evidence": "Same verified TB p.21 Workbook block; source PDF p.3 missing"},
+    1:  {"printed": 2, "pdf": None, "tb_page": 18, "evidence": "TB p.18 Workbook block explicitly covers Welcome Workbook opening activity; source PDF page missing"},
+    2:  {"printed": 2, "pdf": None, "tb_page": 19, "evidence": "TB p.19 Workbook Activities 1-3; printed p.2 absent from available source PDF"},
+    3:  {"printed": 3, "pdf": None, "tb_page": 20, "evidence": "TB p.20 Workbook block continues Welcome opening spread; printed p.3 absent from available source PDF"},
+    6:  {"printed": 3, "pdf": None, "tb_page": 21, "evidence": "TB p.21 Workbook block on Welcome opening spread; printed p.3 absent from available source PDF"},
+    7:  {"printed": 3, "pdf": None, "tb_page": 21, "evidence": "Same verified TB p.21 Workbook block; source PDF p.3 missing"},
     8:  {"printed": 4, "pdf": 3, "tb_page": 22, "evidence": "TB p.22 Workbook block aligns with available WB p.4"},
     12: {"printed": 5, "pdf": 4, "tb_page": 25, "evidence": "TB pp.24-25 Workbook block aligns with WB p.5"},
     17: {"printed": 10, "pdf": 9, "tb_page": 32, "evidence": "TB p.32 Workbook opening block aligns with WB Unit 2 p.10"},
