@@ -29,6 +29,22 @@ class Year2Tests(unittest.TestCase):
             self.assertNotIn("**", result["AKTIVITI UTAMA"])
             self.assertNotIn("Internal note", result["PENUTUP"])
 
+    def test_missing_assessment_preserves_existing_rph(self):
+        incomplete = """# Lesson 14
+## Set induction
+**Teacher:** Start.
+## Activity 1
+**Pupils:** Write.
+## Closure
+**Teacher:** Finish.
+"""
+        original = {"AKTIVITI UTAMA": "existing"}
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_014.md").write_text(incomplete, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"2","lesson_no":14}, original)
+            self.assertIs(result, original)
+
     def test_other_year_untouched(self):
         original = {"PENUTUP":"original"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 4","lesson_no":14}, original), original)
