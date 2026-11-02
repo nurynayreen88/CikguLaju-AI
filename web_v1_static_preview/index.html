@@ -65,7 +65,7 @@ async function loadOptions(kind,extra={}){
 function showStep(el,visible){el.hidden=!visible;document.getElementById(el.id+"-label").hidden=!visible;}
 function resetMaterials(){document.getElementById("show-materials").hidden=true;document.getElementById("show-materials").disabled=true;document.getElementById("materials-panel").hidden=true;document.getElementById("materials-list").replaceChildren();document.getElementById("download-all").disabled=true;}
 function resetSelect(el,label){el.replaceChildren(new Option(label,""));el.disabled=true;}
-function fillSelect(el,items,label){resetSelect(el,label);for(const item of items){if(item.value==null||!item.label)continue;const opt=new Option(item.label,String(item.value));opt.dataset.approved="0"; // Catalog presence never authorizes a document download.el.add(opt);}el.disabled=el.options.length<=1;}
+function fillSelect(el,items,label){resetSelect(el,label);for(const item of items){if(item.value==null||!item.label)continue;const opt=new Option(item.label,String(item.value));opt.dataset.approved="0";el.add(opt);}el.disabled=el.options.length<=1;}
 year.addEventListener("change",async()=>{
  resetSelect(subject,"Pilih Subjek");resetSelect(unit,"Pilih Subjek dahulu");resetSelect(lesson,"Pilih Unit dahulu");
  catalogStatus.textContent="";showStep(unit,false);showStep(lesson,false);resetMaterials();await checkDownloadReady();if(!year.value)return;
