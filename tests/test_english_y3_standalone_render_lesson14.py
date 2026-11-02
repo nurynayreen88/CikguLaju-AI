@@ -8,6 +8,7 @@ import english_y3_standalone_render as adapter
 
 LESSON = """# English Year 3 — Lesson 14: Writing
 **Materials:** Student's Book p.11 Activity 1; Teacher's Book p.27; optional family photos
+**Status:** READY
 
 ## Set Induction (5 minutes)
 **Teacher:** Review family words from Lesson 13. **Pupils:** Recall prior learning.
