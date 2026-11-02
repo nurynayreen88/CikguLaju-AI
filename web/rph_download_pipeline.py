@@ -5,6 +5,7 @@ an RPH obtained from an approved server-side source. This module does not
 enable public download endpoints or assert production layout parity.
 """
 from web.rph_document_renderer import render_approved_rph
+from web.document_integrity import validate_word_document
 from web.rph_delivery_quota import authorize_rendered_document
 
 
@@ -28,8 +29,8 @@ def prepare_approved_download(rph, fmt, account, telegram_user_id,
         raise ValueError("Unexpected document format")
     if fmt == "pdf" and not document.startswith(b"%PDF-"):
         raise ValueError("Invalid PDF signature")
-    if fmt == "docx" and not document.startswith(bytes((80, 75, 3, 4))):
-        raise ValueError("Invalid Word document signature")
+    if fmt == "docx":
+        validate_word_document(document)
     authorization = authorize_rendered_document(
         account, telegram_user_id, document, supabase_url, secret_key, debit=debit)
     if not authorization["allowed"]:
