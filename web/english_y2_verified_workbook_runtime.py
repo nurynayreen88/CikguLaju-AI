@@ -6,6 +6,9 @@ retain the original handlers. No database mutation or Telegram side effects.
 from pathlib import Path
 
 from resources.english.y2.workbook_download_router import resolve_lesson
+from resources.english.y1.workbook_verified_map import Y1_WB_VERIFIED_LESSON_MAP
+from resources.english.y3.workbook_verified_map import Y3_WB_VERIFIED_LESSON_MAP
+from resources.english.y4.workbook_verified_map import EN4_WB_VERIFIED
 
 
 def install(runtime):
@@ -18,12 +21,25 @@ def install(runtime):
     def verified(ss):
         if not isinstance(ss, dict):
             return None
-        if year_number(ss.get("year")) != 2:
+        year = year_number(ss.get("year"))
+        if year not in (1, 2, 3, 4):
             return None
         if str(ss.get("subject") or "").strip().casefold() not in ("english", "bahasa inggeris"):
             return None
         lesson = ss.get("lesson_no") or ss.get("textbook_lesson_no") or ss.get("lesson")
-        return resolve_lesson(lesson)
+        try:
+            number = int(lesson)
+        except (TypeError, ValueError):
+            return None
+        if year == 2:
+            return resolve_lesson(number)
+        if year == 1:
+            pair = Y1_WB_VERIFIED_LESSON_MAP.get(number)
+            return {"source_page_start": pair[0], "source_page_end": pair[1]} if pair else None
+        row = (Y3_WB_VERIFIED_LESSON_MAP if year == 3 else EN4_WB_VERIFIED).get(number)
+        if not isinstance(row, dict) or not isinstance(row.get("pdf"), int):
+            return None
+        return {"source_page_start": row["pdf"], "source_page_end": row["pdf"]}
 
     def available_with_verified_workbook(ss):
         items = list(available(ss) or [])
