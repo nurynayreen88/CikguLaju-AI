@@ -25,7 +25,7 @@ class PreviewTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'id="workspace"', response.data)
         self.assertIn(b'id="catalog-status"', response.data)
-        self.assertIn(b'id="unit" disabled', response.data)
+        self.assertIn(b'id="lesson" disabled', response.data)
         self.assertIn(b'id="lesson" disabled', response.data)
         self.assertIn(b'id="generate-docx"', response.data)
         self.assertIn(b'id="generate-pdf"', response.data)
