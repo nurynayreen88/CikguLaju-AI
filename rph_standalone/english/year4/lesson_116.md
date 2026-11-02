@@ -1,0 +1,32 @@
+# English Year 4 — Lesson 116: Writing 22
+
+**Topic:** Amazing animals  
+**Main SP:** 4.2.4  
+**Complementary SP:** 4.3.2  
+**Duration:** 60 minutes  
+**References:** SB p.82 Activity 2; TB pp.124–125; animal cards; resources/lesson_116_animal_comparison_writing_pbd_DRAFT.md; Primary Year 4 SK SOW Lesson 116
+
+## Set induction (10 minutes)
+**Teacher:** Brainstorm comparative adjectives for animals and dinosaurs.
+**Pupils:** Suggest animal comparison words.
+
+## Activity 1 (15 minutes)
+**Teacher:** Contrast a short and a long comparative form using the Grammar Box and check pupils' oral examples.
+**Pupils:** Practise short and long comparative forms.
+
+## Activity 2 (20 minutes)
+**Teacher:** Provide a short comparative-writing checklist and ask pupils to draft animal description clues on cards.
+**Pupils:** Write animal description clues on cards.
+
+## PBD / reinforcement (10 minutes)
+**Teacher:** Assign Workbook p.69, Activity 1 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. Assess pupils' own written sentences or text for the main Writing SP; do not rely on isolated vocabulary answers alone.
+**Pupils:** Complete Workbook p.69, Activity 1; complete the comparative sentences about animals.
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to read one revised comparative sentence and identify the correction they made.
+**Pupils:** Share an improved comparative sentence.
+
+**PBD:** Assess pupils' independently written animal description clues using accurate comparative forms for main Writing SP 4.2.4; check spelling corrections in the clues for complementary Writing SP 4.3.2. Workbook p.69 is the main written comparative practice and supports, but does not replace, the clue-card task.  
+**Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
