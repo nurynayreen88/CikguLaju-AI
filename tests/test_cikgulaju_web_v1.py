@@ -16,7 +16,7 @@ class WebV1SafetyTests(unittest.TestCase):
 
     def test_explicit_enable_fails_closed(self):
         app = Flask(__name__)
-        with self.assertRaisesRegex(RuntimeError, "cannot be enabled"):
+        with self.assertRaisesRegex(RuntimeError, "Full web requires approved auth, quota and RPH integration"):
             register_web_v1(app, enabled=True)
         self.assertNotIn("cikgulaju_web_v1", app.blueprints)
 
@@ -25,7 +25,7 @@ class WebV1SafetyTests(unittest.TestCase):
         app.register_blueprint(web_v1)
         response = app.test_client().get("/web/health")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.get_json()["status"], "scaffold-only")
+        self.assertEqual(response.get_json()["status"], "catalog-preview")
 
 
 if __name__ == "__main__":
