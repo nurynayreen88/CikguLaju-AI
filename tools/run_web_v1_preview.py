@@ -234,13 +234,20 @@ def english_rph_capabilities():
             __import__(package)
         except ImportError:
             missing.append("python-docx" if package == "docx" else package)
+    from web.download_release_gate import public_download_ready
+    release_ready = public_download_ready(
+        durable_idempotency=False, delivery_replay=False,
+        production_layout_parity=False, approval_verified=False,
+        trial_policy_verified=False)
     return jsonify({
-        "download_enabled": False,
+        "download_enabled": release_ready,
         "renderer_ready": not missing,
         "missing_packages": missing,
         "staging_generation_enabled": enabled,
         "telegram_generation_parity_verified": False,
         "shared_quota_debit_verified": False,
+        "durable_retry_safety_verified": False,
+        "delivery_replay_verified": False,
         "note": "Staging renderer only; Telegram generation and quota parity not verified.",
     })
 
