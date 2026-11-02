@@ -221,13 +221,20 @@ def generate():
 def english_rph_capabilities():
     enabled = (os.environ.get("CIKGULAJU_ENV") == "staging"
                and os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") == "1")
-    try:
-        import docx
-        import reportlab
-        renderer_ready = True
-    except ImportError:
-        renderer_ready = False
-    return jsonify({"download_enabled": enabled and renderer_ready})
+    missing = []
+    for package in ("docx", "reportlab"):
+        try:
+            __import__(package)
+        except ImportError:
+            missing.append("python-docx" if package == "docx" else package)
+    return jsonify({
+        "download_enabled": enabled and not missing,
+        "renderer_ready": not missing,
+        "missing_packages": missing,
+        "staging_generation_enabled": enabled,
+        "telegram_generation_parity_verified": False,
+        "note": "Staging renderer only; Telegram generation and quota parity not verified.",
+    })
 
 
 @app.post("/api/web/english/rph")
