@@ -41,6 +41,7 @@ class AuthoritativeHttpCurriculumSource:
         parts = urlsplit(base_url)
         if (parts.scheme != "https" or not parts.hostname or parts.username
                 or parts.password or parts.query or parts.fragment or parts.port
+                or parts.path not in ("", "/")
                 or not token or len(token) < 32):
             raise ValueError("Verified HTTPS source and strong service token required")
         self.base_url = base_url.rstrip("/")
