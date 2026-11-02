@@ -23,6 +23,8 @@
 **Pupils:** Share three preferences and take four turns.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.107, Activity 2; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.107, Activity 2, by matching the beach pictures with the correct dialogues.
 **Teacher (10 min):** Record four relevant turns for each pupil across both rounds (0–4) and three independently expressed preferences (0–3). Do not count the partner's turns as the pupil's evidence; note prompts separately.
 **Pupils:** Submit individual evidence.
 
