@@ -17,7 +17,7 @@ Teacher reviews routine flashcards and matching word cards. Pupils match words a
 Teacher guides the routine table and speaking activity on Student's Book p.15. Pupils record their own routines, mingle and ask classmates about their daily activities.
 
 ## PBD (10 minutes)
-**Workbook assessment:** Pupils complete Workbook p.10, Activity 1, by writing daily-routine phrases from the pictures.
+**CikguLaju original assessment:** Pupils use `materials/lesson_018_speaking_daily_routine_interview.md` to interview a partner about routines, give oral answers and report two details; do not repeat Workbook p.10, Activity 1.
 Teacher observes spoken exchanges and checks written routine records. Pupils demonstrate both skills.
 
 ## Closure (5 minutes)
