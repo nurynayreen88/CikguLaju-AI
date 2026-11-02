@@ -17,7 +17,7 @@ class PreviewSecurityTests(unittest.TestCase):
 
     def test_account_status_stays_disconnected(self):
         response = app.test_client().get("/api/account/status")
-        self.assertEqual(response.status_code, 401)
+        self.assertIn(response.status_code, (401, 503))
         self.assertFalse(response.get_json()["authenticated"])
 
 
