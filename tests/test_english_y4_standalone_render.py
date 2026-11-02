@@ -63,6 +63,25 @@ class Year4Tests(unittest.TestCase):
             self.assertIn("Check criteria", rows["PENTAKSIRAN"])
             self.assertNotIn("Workbook", rows["BAHAN BANTU MENGAJAR"])
 
+    def test_inline_pbd_not_leaked_into_closure(self):
+        lesson = """# Lesson 80
+## Set induction
+**Teacher:** Introduce.
+## Activity 1
+**Pupils:** Prepare a poster.
+## Closure
+**Teacher:** Summarise.
+**PBD:** Observe presentation.
+**Differentiation:** Give sentence frames.
+"""
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_080.md").write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"Year 4","lesson_no":80}, {})
+            self.assertEqual(result["PENTAKSIRAN"], "Observe presentation.")
+            self.assertNotIn("Differentiation", result["PENUTUP"])
+            self.assertNotIn("Observe presentation", result["PENUTUP"])
+
     def test_year3_untouched(self):
         original = {"PENUTUP":"unchanged"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 3","lesson_no":14}, original), original)
