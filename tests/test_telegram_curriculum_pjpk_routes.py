@@ -92,6 +92,17 @@ class CurriculumPJPKRoutesTests(unittest.TestCase):
         )
         self.assertEqual(response.status_code, 400)
 
+    def test_authenticated_curriculum_responses_are_not_cached(self):
+        response = self.get("subjects", year=2)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("no-store", response.headers.get("Cache-Control", ""))
+        self.assertEqual(response.headers.get("Vary"), "Authorization")
+
+    def test_rejected_curriculum_responses_are_not_cached(self):
+        response = self.client.get("/internal/curriculum/v1/subjects?year=2")
+        self.assertEqual(response.status_code, 401)
+        self.assertIn("no-store", response.headers.get("Cache-Control", ""))
+
     def test_no_token_is_rejected(self):
         response = self.client.get("/internal/curriculum/v1/subjects?year=2")
         self.assertEqual(response.status_code, 401)
