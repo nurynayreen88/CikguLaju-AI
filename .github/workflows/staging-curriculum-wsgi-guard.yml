@@ -8,6 +8,7 @@ on:
       - 'tools/run_telegram_curriculum_wsgi.py'
       - 'tests/test_telegram_curriculum_wsgi_guard.py'
       - 'tests/test_verified_pdp_navigation_limit.py'
+      - 'tests/test_pjpk_component_isolation.py'
       - 'web_v1_verified_pdp.py'
       - '.github/workflows/staging-curriculum-wsgi-guard.yml'
   workflow_dispatch:
@@ -28,3 +29,4 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_telegram_curriculum_wsgi_guard.py' -v
           python -m unittest discover -s tests -p 'test_verified_pdp_navigation_limit.py' -v
+          python -m unittest discover -s tests -p 'test_pjpk_component_isolation.py' -v
