@@ -26,6 +26,8 @@
 **Pupils:** Read, underline evidence and complete five answers.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.89, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.89, Activity 1, by reading the questions and finding the answers in the pictures.
 **Teacher (10 min):** Score each pupil's five answers against the key (0–5; target at least 4/5), and record successful sentence-clue game participation and responses separately (SP 3.3.1). Note prompts given.
 **Pupils:** Submit reading responses and show a word lookup.
 
