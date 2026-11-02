@@ -16,6 +16,8 @@ Teacher models present continuous statements, contractions and the sound of -ing
 Teacher organises Group Pantomime from Teacher's Book p.47 and Student's Book p.25 Activity 2. Pupils describe pictures and guess actions in groups.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.18, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.18, Activity 2, by matching characters to sports and writing present continuous sentences.
 Teacher observes spoken descriptions and pronunciation of target phonemes. Pupils present one picture description.
 
 ## Closure (5 minutes)
