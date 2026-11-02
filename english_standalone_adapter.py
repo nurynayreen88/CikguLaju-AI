@@ -25,7 +25,7 @@ def _strip_internal_review_notes(content):
     cleaned = []
     skipping = False
     for line in lines:
-        if re.match(r"(?i)^\s*(?:\*\*)?(?:QA(?: status)?|Status|Internal review)(?:\*\*)?\s*:", line):
+        if re.match(r"(?i)^\s*(?:\*\*)?(?:QA(?: status)?|Status|Internal review):(?:\*\*)?", line):
             skipping = True
             continue
         if skipping and re.match(r"^#{1,3}\s+", line):
