@@ -26,6 +26,8 @@
 **Pupils:** Complete the task, discuss answers and correct errors.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.83, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.83, Activity 1, by matching the clothing pictures with the correct sentences.
 **Teacher:** Listen for three intelligible clothing descriptions and two relevant individual answers. Note prompts required.  
 **Pupils:** Respond individually.
 

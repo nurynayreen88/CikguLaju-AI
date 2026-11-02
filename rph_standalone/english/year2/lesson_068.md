@@ -28,6 +28,8 @@
 **Pupils:** Complete the activity, explain their choices and revise errors.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.86, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.86, Activity 1, by listening and ticking the correct clothing pictures.
 **Teacher:** Check each pupil's independent main-idea choice (0–1), supporting clue (0–1) and five details (0–5). Use the two comprehension questions for additional feedback. Record individual accuracy and assistance needed; do not substitute detail scores for the main-idea criterion.  
 **Pupils:** Demonstrate the skill individually.
 
