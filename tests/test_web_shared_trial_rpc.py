@@ -34,18 +34,18 @@ class SharedTrialRPCTests(unittest.TestCase):
         with patch("web.shared_trial_rpc.urlopen", side_effect=fake_open):
             result = consume_successful_generation(
                 "https://example.supabase.co", "server-only-key", 123,
-                "web-rph:fixed-request-id")
+                "web-rph:123e4567-e89b-42d3-a456-426614174000")
         self.assertEqual(result, {"ok": True, "remaining": 4})
         self.assertEqual(captured["url"], "https://example.supabase.co/rest/v1/rpc/cikgulaju_use_trial")
         self.assertEqual(captured["body"]["p_telegram_user_id"], 123)
-        self.assertEqual(captured["body"]["p_reference_id"], "web-rph:fixed-request-id")
+        self.assertEqual(captured["body"]["p_reference_id"], "web-rph:123e4567-e89b-42d3-a456-426614174000")
         self.assertEqual(captured["timeout"], 8)
 
     def test_no_credit(self):
         with patch("web.shared_trial_rpc.urlopen",
                    return_value=FakeResponse([{"ok": False, "remaining": 0}])):
             result = consume_successful_generation(
-                "https://example.supabase.co", "key", 123, "web-rph:req")
+                "https://example.supabase.co", "key", 123, "web-rph:123e4567-e89b-42d3-a456-426614174000")
         self.assertFalse(result["ok"])
 
     def test_invalid_input_never_calls_network(self):
@@ -60,7 +60,7 @@ class SharedTrialRPCTests(unittest.TestCase):
                    return_value=FakeResponse([{"ok": "yes", "remaining": 4}])):
             with self.assertRaises(RuntimeError):
                 consume_successful_generation(
-                    "https://example.supabase.co", "key", 123, "web-rph:req")
+                    "https://example.supabase.co", "key", 123, "web-rph:123e4567-e89b-42d3-a456-426614174000")
 
 
 if __name__ == "__main__":
