@@ -80,6 +80,8 @@ def options():
         # any local SQLite snapshot. The source must return verified provenance.
         source_url = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
         source_token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+        if bool(source_url) != bool(source_token):
+            return jsonify({"error": "authoritative curriculum configuration incomplete", "code": "TELEGRAM_CURRICULUM_API_NOT_CONNECTED"}), 503
         if source_url and source_token:
             from web.authoritative_http_source import AuthoritativeHttpCurriculumSource
             from web.authoritative_curriculum_source import SharedSourceUnavailable
