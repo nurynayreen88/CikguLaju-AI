@@ -16,6 +16,7 @@ Teacher writes the scrambled letters 'ym' and 'ohuse' on the board and asks pupi
 Pupils finish folding, decorate the paper houses and describe them. Teacher repeats instructions when needed and supports imaginative choices.
 
 ## PBD (10 minutes)
+Teacher observes each pupil following two spoken instructions and notes one original idea contributed to the creative task.
 Pupils follow two spoken instructions and contribute one original idea to the creative task.
 
 ## Closure (5 minutes)

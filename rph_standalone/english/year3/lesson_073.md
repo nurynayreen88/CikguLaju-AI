@@ -16,6 +16,7 @@ Teacher displays pictures of Japanese and traditional Malay houses. Pupils discu
 Teacher models a short description of a traditional Malay house. Pupils plan and write short sentences about its features, then revise spelling and punctuation with teacher guidance.
 
 ## PBD (10 minutes)
+Teacher checks each pupil's two descriptive sentences and short plan, then gives feedback on one sentence for correction.
 Pupils submit two descriptive sentences, show a short plan and correct one sentence after feedback.
 
 ## Closure (5 minutes)
