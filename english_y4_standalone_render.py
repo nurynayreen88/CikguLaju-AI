@@ -38,7 +38,7 @@ def apply(st, rows):
     intro = first(("set induction",))
     closure = first(("closure",))
     activities = [(title, body) for title, body in phases if re.match(r"(?i)^activity\s+[1-9]", title) and body]
-    pbd = first(("reinforcement / pbd", "pbd / reinforcement", "assessment", "pbd and differentiation"))
+    pbd = first(("reinforcement / pbd", "pbd / reinforcement", "assessment", "pbd /", "pbd and differentiation"))
     if not intro or not closure or not activities:
         return rows
 
