@@ -17,7 +17,7 @@ Pupils interview classmates using SB p.87 Activity 4, repeat time phrases to sus
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.71, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.71, Activity 2, by answering questions about the children's past holiday activities.
+**Pupils:** Pupils complete Workbook p.71, Activity 2, by answering the questions about the children's activities shown in Workbook p.71, Activity 1.
 Teacher observes pupils asking and answering a weekend question, then checks one written past-tense sentence for spelling.
 
 ## Closure (5 minutes)
