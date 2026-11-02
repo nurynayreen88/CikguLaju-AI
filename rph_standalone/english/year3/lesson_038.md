@@ -16,6 +16,8 @@ Pupils describe the pictures on Student's Book p.27 with partners. Teacher revie
 Teacher guides Activity 3 using Teacher's Book p.49. Pupils listen for details and respond; then practise miming and asking 'What are you doing?' in pairs.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.19, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.19, Activity 2, by writing answers about what the pictured people are doing.
 Pupils identify two details from the recording and explain one word using a contextual clue.
 
 ## Closure (5 minutes)
