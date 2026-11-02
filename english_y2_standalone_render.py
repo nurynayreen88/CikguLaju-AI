@@ -27,22 +27,15 @@ def apply(st, rows):
     if not path.is_file():
         return rows
     source = path.read_text(encoding="utf-8")
-    sections = [
-        ("Set Induction", "SET INDUKSI"),
-        ("Activity 1", None),
-        ("Activity 2", None),
-        ("Assessment / PBD", "PENTAKSIRAN"),
-        ("Closure", "PENUTUP"),
-    ]
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*QA:|\Z)", source, re.S | re.M)
+        match = re.search(r"^##\s+(" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^##\s+|^\*\*(?:QA|Status|Source):|\Z)", source, re.S | re.M | re.I)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
     assessment = get("Assessment")[1] or get("Reinforcement / PBD")[1] or get("PBD / reinforcement")[1]
     closure = get("Closure")[1]
-    if not intro or not any(body for _, body in activities) or not closure:
+    if not intro or not any(body for _, body in activities) or not closure or not assessment:
         return rows
     result = dict(rows)
     def clean(value):
@@ -55,7 +48,7 @@ def apply(st, rows):
         lines.append("Assessment / PBD\n" + clean(assessment))
         result["PENTAKSIRAN"] = clean(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
-    result["PENUTUP"] = clean(re.split(r"(?m)^\s*\*\*(?:QA|Status):\*\*", closure, maxsplit=1)[0])
+    result["PENUTUP"] = clean(re.split(r"(?m)^\s*\*\*(?:QA|Status|Source|Differentiation):\*\*", closure, maxsplit=1)[0])
     ref = re.search(r"(?m)^\*\*(?:References|Materials|Resources):\*\*[^\S\n]*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
