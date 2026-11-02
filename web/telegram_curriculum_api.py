@@ -37,7 +37,10 @@ def create_curriculum_blueprint(database_path_provider):
                 allowed = allowed | {"component"}
             if set(request.args) != allowed or any(len(request.args.getlist(key)) != 1 for key in allowed):
                 raise ValueError("unexpected or repeated query parameters")
-            year = int(request.args.get("year", ""))
+            year_raw = request.args.get("year", "")
+            if len(year_raw) != 1 or year_raw not in "123456":
+                raise ValueError("year")
+            year = int(year_raw)
             if year not in range(1, 7):
                 raise ValueError("year")
             db = database_path_provider()
