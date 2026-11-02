@@ -18,6 +18,8 @@
 **Teacher:** Play CD 1 Track 6 for SB p.6 Activity 1 and guide pupils to track words while listening; guide SB p.7 Activity 2, using pictures to infer unfamiliar words. **Pupils:** Track words while listening to the story, answer Activity 1 questions and use pictures to infer unfamiliar words in Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.7, Activities 1–2; explain the task, check individual responses and record evidence against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.7, Activities 1–2, to match story characters and check details from the story.
 **Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Answer two story-detail questions and identify one unfamiliar word using a picture clue.
 
 ## Closure (5 minutes)
