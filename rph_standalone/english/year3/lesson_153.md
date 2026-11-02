@@ -17,7 +17,7 @@ Pairs answer Student's Book p.99 questions from memory, then check the text on p
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.80, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.80, Activity 2, by answering questions about the planets in the Solar System.
+**Pupils:** Pupils complete Workbook p.80, Activity 2, by completing the Solar System crossword using the numbered clues.
 Teacher checks two written planet facts for accurate superlatives, capital letters and punctuation. Pupils revise one sentence.
 
 ## Closure (5 minutes)
