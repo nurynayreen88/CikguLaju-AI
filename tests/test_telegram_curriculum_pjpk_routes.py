@@ -103,6 +103,12 @@ class CurriculumPJPKRoutesTests(unittest.TestCase):
         self.assertEqual(response.status_code, 401)
         self.assertIn("no-store", response.headers.get("Cache-Control", ""))
 
+    def test_noncanonical_year_values_are_rejected(self):
+        for value in ("02", "+2", " 2", "2 ", "2.0", "0", "7"):
+            with self.subTest(value=value):
+                response = self.get("subjects", year=value)
+                self.assertEqual(response.status_code, 400)
+
     def test_no_token_is_rejected(self):
         response = self.client.get("/internal/curriculum/v1/subjects?year=2")
         self.assertEqual(response.status_code, 401)
