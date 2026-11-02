@@ -123,6 +123,22 @@ class Year4Tests(unittest.TestCase):
         self.assertNotIn("Status", result["PENUTUP"])
         self.assertNotIn("DRAFT", result["PENUTUP"])
 
+    def test_incomplete_source_does_not_replace_rph(self):
+        lesson = """# Lesson 14
+## Set induction
+**Teacher:** Start.
+## Activity 1
+**Pupils:** Write.
+## Closure
+**Teacher:** Finish.
+"""
+        original = {"AKTIVITI UTAMA":"existing verified RPH"}
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_014.md").write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"4","lesson_no":14}, original)
+            self.assertIs(result, original)
+
     def test_year3_untouched(self):
         original = {"PENUTUP":"unchanged"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 3","lesson_no":14}, original), original)
