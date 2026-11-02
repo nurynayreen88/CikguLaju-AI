@@ -16,6 +16,8 @@ Pupils recall Tim's Mexico holiday and James's Australia holiday, then reread th
 Pupils answer the blue-box questions on p.91, then write an email to James about their own holiday. They use his email as a model and connect sentences with and or but while checking punctuation.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.72, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.72, Activity 2, by joining short holiday sentences using 'and' or 'but'.
 Teacher reviews each holiday email for greeting, two linked sentences using 'and' or 'but', and correct punctuation. Pupils revise one error.
 
 ## Closure (5 minutes)
