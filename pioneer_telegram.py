@@ -185,7 +185,7 @@ def install(ns):
                     return admin_card(cid, rid)
                 if req.get("notes") != "proof_received_admin_notified":
                     return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Rakan Pembangun.")
-                # Admin has manually verified the bank transaction before clicking Approve.
+                # STAGING SAFETY GATE: this flow has no independently verified TNG\n                # transaction identifier or atomic transaction claim. Never grant\n                # lifetime access based on a generated UUID alone.\n                return send(cid,\n                    "⛔ Kelulusan Rakan Pembangun melalui laluan ini ditangguhkan.\\n"\n                    "Rujukan transaksi TNG sebenar belum disahkan secara atomik.\\n"\n                    "Permohonan kekal pending; jangan minta pengguna bayar semula.")\n                # Admin has manually verified the bank transaction before clicking Approve.
                 try:
                     # Reconcile only an active entitlement tied to this exact payment.
                     uid = int(req["chat_id"])
