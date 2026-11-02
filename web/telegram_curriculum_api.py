@@ -13,6 +13,13 @@ from web_v1_dropdown_catalog import available_subject_options, unit_options, pdp
 def create_curriculum_blueprint(database_path_provider):
     bp = Blueprint("telegram_curriculum_v1", __name__)
 
+    @bp.after_request
+    def prevent_curriculum_caching(response):
+        # These authenticated responses must never be stored by shared proxies.
+        response.headers["Cache-Control"] = "no-store, private"
+        response.headers["Vary"] = "Authorization"
+        return response
+
     @bp.before_request
     def authorize():
         if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") != "1":
