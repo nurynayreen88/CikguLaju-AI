@@ -66,6 +66,7 @@ class Year3AdapterTests(unittest.TestCase):
 
     def test_activity_ten_not_mistaken_for_activity_one(self):
         lesson = """# Lesson 14
+**Status:** READY
 ## Set Induction
 **Teacher:** Begin.
 ## Activity 10
