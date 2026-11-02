@@ -8,6 +8,8 @@ on:
       - 'tests/test_english_rph_internal_notes.py'
       - 'tests/test_english_y2_workbook_download_router.py'
       - 'resources/english/y2/workbook_download_router.py'
+      - 'resources/english/y2/workbook_telegram_delivery.py'
+      - 'tests/test_english_y2_workbook_telegram_delivery.py'
   push:
     branches:
       - 'fix/strip-internal-qa-from-english-rph-20261103'
@@ -21,3 +23,4 @@ jobs:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -p 'test_english_rph_internal_notes.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_download_router.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_telegram_delivery.py' -v
