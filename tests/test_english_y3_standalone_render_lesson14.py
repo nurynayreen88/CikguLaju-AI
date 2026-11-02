@@ -46,6 +46,24 @@ class Year3AdapterTests(unittest.TestCase):
         result = adapter.apply({"subject": "English", "year": "Year 3", "lesson_no": 14}, original)
         self.assertIs(result, original)
 
+    def test_lowercase_phases_and_pbd_heading(self):
+        lesson = """# Lesson 14
+## Set induction
+**Teacher:** Introduce.
+## Activity 1
+**Pupils:** Write.
+## PBD / reinforcement
+**Teacher:** Assess writing.
+## Closure
+**Pupils:** Reflect.
+"""
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_014.md").write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"3","lesson_no":14}, {})
+            self.assertIn("Assess writing", result["PENTAKSIRAN"])
+            self.assertIn("Introduce", result["SET INDUKSI"])
+
     def test_non_year3_untouched(self):
         state = {"subject": "Bahasa Inggeris", "year": "Tahun 2", "lesson_no": 14}
         original = {"PENTAKSIRAN": "unchanged"}
