@@ -41,6 +41,11 @@ class Year3AdapterTests(unittest.TestCase):
             self.assertIn("Pupils:", rows["AKTIVITI UTAMA"])
             self.assertNotIn("**", rows["AKTIVITI UTAMA"])
 
+    def test_real_lesson14_not_ready(self):
+        original = {"PENTAKSIRAN": "existing"}
+        result = adapter.apply({"subject": "English", "year": "Year 3", "lesson_no": 14}, original)
+        self.assertIs(result, original)
+
     def test_non_year3_untouched(self):
         state = {"subject": "Bahasa Inggeris", "year": "Tahun 2", "lesson_no": 14}
         original = {"PENTAKSIRAN": "unchanged"}
