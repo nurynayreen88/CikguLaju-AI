@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 088: Reading 17
+
+**Topic:** Getting around  
+**Main SP:** 3.2.2  
+**Complementary SP:** 2.1.5  
+**Duration:** 60 minutes  
+**References:** SB p.62 Activities 1–2; TB pp.96–97; Warm up/Vocabulary CD2 Track 9 (KPM SOW)
+
+## Set induction (10 minutes)
+**Teacher:** Review vocabulary with Track 9.
+**Pupils:** Recall transport words from Track 9.
+
+## Activity 1 (15 minutes)
+**Teacher:** Show pictures of tuk-tuks, gondolas and snowmobiles and ask pupils to predict where each is used.
+**Pupils:** Identify tuk-tuks, gondolas and snowmobiles.
+
+## Activity 2 (20 minutes)
+**Teacher:** Assign each group a vehicle text, model finding one supporting detail and guide pupils through Activity 2.
+**Pupils:** Read an assigned vehicle text and complete Activity 2.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Prompt pupils to compare transport preferences, using one fact from the reading to explain their choices.
+**Pupils:** Compare transport experiences and preferences.
+
+**Teacher:** Use Workbook p.54, the transport project task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.54, the transport project task; identify transport words and answer the accompanying questions.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to recall one transport fact from the text and explain what information they need for upcoming building research.
+**Pupils:** Recall a detail from the reading.
+
+**PBD:** Check text-supported answers about tuk-tuks, gondolas and snowmobiles for main Reading SP 3.2.2. Observe spoken comparisons of transport experiences and preferences for complementary Speaking SP 2.1.5. Workbook p.54 is written practice, not a substitute for spoken evidence.  
+**Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
