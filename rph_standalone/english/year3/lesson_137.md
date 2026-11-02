@@ -17,7 +17,7 @@ Groups of six use Write, Fold and Pass to make a holiday story, then revise the 
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.70, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.70, Activity 2, by writing sentences about Katie's holiday activities.
+**Pupils:** Pupils complete Workbook p.70, Activity 2, by correcting the false sentences about Katie's holiday using the pictures.
 Teacher checks each group's holiday story for past-tense verbs and spelling. Pupils correct one sentence and explain the change.
 
 ## Closure (5 minutes)

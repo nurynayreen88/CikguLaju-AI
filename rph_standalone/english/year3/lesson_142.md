@@ -17,7 +17,7 @@ Pupils answer the blue-box questions on p.91, then write an email to James about
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.72, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.72, Activity 2, by joining short holiday sentences using 'and' or 'but'.
+**Pupils:** Pupils complete Workbook p.72, Activity 2, by writing about their own holidays, drawing or adding a picture, and presenting their work to the class.
 Teacher reviews each holiday email for greeting, two linked sentences using 'and' or 'but', and correct punctuation. Pupils revise one error.
 
 ## Closure (5 minutes)
