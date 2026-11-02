@@ -46684,6 +46684,19 @@ def _rph_rows(st, *args, **kwargs):
         return rows
 # === END ENGLISH YEAR 2 STANDALONE RPH RENDER ADAPTER ===
 
+# === ENGLISH YEAR 4 STANDALONE RPH RENDER ADAPTER ===
+_EN_Y4_STANDALONE_ROWS_BASE = _rph_rows
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_Y4_STANDALONE_ROWS_BASE(st, *args, **kwargs)
+    try:
+        from english_y4_standalone_render import apply as _apply_y4_standalone
+        return _apply_y4_standalone(st, rows)
+    except Exception as exc:
+        print("English Y4 standalone RPH render fallback:", repr(exc), flush=True)
+        return rows
+# === END ENGLISH YEAR 4 STANDALONE RPH RENDER ADAPTER ===
+
+
 
 
 # === TRIAL BALANCE MAIN MENU 20261026 ===
