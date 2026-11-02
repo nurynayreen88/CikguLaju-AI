@@ -23,6 +23,8 @@
 **Pupils:** Describe three objects and request help politely.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.108, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.108, Activity 1, by matching questions about beach objects with their answers.
 **Teacher (10 min):** Record three object descriptions and one polite help request per pupil.
 **Pupils:** Provide individual evidence.
 
