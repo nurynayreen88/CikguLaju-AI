@@ -43,7 +43,9 @@ class AuthoritativeHttpCurriculumSource:
             if not all(isinstance(item, dict) for item in data["items"]):
                 raise SharedSourceUnavailable("Invalid curriculum records")
             return data["items"]
-        except (ValueError, TypeError, OSError) as exc:
+        except Exception as exc:
+            # Requests/network/JSON errors are all unavailable-source failures.
+            # Never expose credentials or internal endpoint details to callers.
             raise SharedSourceUnavailable("Authoritative source unavailable") from exc
 
     def list_subjects(self, year):
