@@ -17,7 +17,7 @@ Teacher says rules; pupils match them to places and write the relevant rules wit
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.56, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.56, Activity 1, by matching prohibition signs to the correct directions.
+**Pupils:** Pupils complete Workbook p.56, Activity 1, by matching the two halves of each road sign, then writing the meaning of each sign.
 Teacher reads two place rules aloud. Pupils match each rule to a place and submit written answers for a spelling check.
 
 ## Closure (5 minutes)
