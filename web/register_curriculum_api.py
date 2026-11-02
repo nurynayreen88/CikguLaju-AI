@@ -5,6 +5,7 @@ from the Telegram process *after* app and DB_PATH are initialized. This module
 does not import app.py, create a database, or touch webhook routes.
 """
 import os
+import logging
 
 
 def register_if_enabled(flask_app, database_path_provider):
@@ -12,7 +13,8 @@ def register_if_enabled(flask_app, database_path_provider):
     if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") != "1":
         return False
     if len(os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")) < 32:
-        raise RuntimeError("Curriculum API requires a dedicated 32+ character token")
+        logging.getLogger(__name__).error("Curriculum API disabled: dedicated token missing or too short")
+        return False
     if not callable(database_path_provider):
         raise TypeError("Active Telegram database provider must be callable")
     from web.telegram_curriculum_api import create_curriculum_blueprint
