@@ -56,7 +56,7 @@ def apply(st, rows):
         result["PENTAKSIRAN"] = clean(pbd)
     result["AKTIVITI UTAMA"] = "\n\n".join(parts)
     result["PENUTUP"] = clean(closure)
-    ref = re.search(r"(?mi)^\*\*(?:Materials|References|Resources):\*\*\s*(.*)$", source)
+    ref = re.search(r"(?mi)^\*\*(?:Materials|References|Resources):\*\*[^\S\n]*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
     result["_standalone_y4_source"] = str(path.relative_to(ROOT.parent.parent.parent))
