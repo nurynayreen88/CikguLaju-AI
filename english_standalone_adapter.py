@@ -36,7 +36,7 @@ def _strip_internal_review_notes(content):
 
 
 def load_english_rph(year, lesson_no):
-    """Load an approved standalone lesson for English Years 1, 2 or 3."""
+    """Load a standalone lesson for English Years 1, 2 or 3. Approval is separate."""
     year_number = _valid_number(year)
     number = _valid_number(lesson_no)
     if year_number not in (1, 2, 3) or number is None or not 1 <= number <= LESSON_COUNT:
