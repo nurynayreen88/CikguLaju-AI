@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 087: Speaking 17
+
+**Topic:** Getting around  
+**Main SP:** 2.2.1  
+**Complementary SP:** 4.2.2  
+**Duration:** 60 minutes  
+**References:** SB p.61 Activity 5; TB p.95
+
+## Set induction (10 minutes)
+**Teacher:** Display a short trip timetable and elicit suitable time expressions before the invitation task.
+**Pupils:** Recall time words and phrases.
+
+## Activity 1 (15 minutes)
+**Teacher:** Match prepositions and model the Activity 5 dialogue.
+**Pupils:** Match prepositions and practise the model dialogue.
+
+## Activity 2 (20 minutes)
+**Teacher:** Set a pair-planning task for a trip and model a follow-up question and a natural response.
+**Pupils:** Plan a trip and extend dialogues with a partner.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Provide an invitation checklist and organise a role-play in which pupils write, deliver and respond to trip invitations.
+**Pupils:** Write and respond to trip invitations.
+
+**Teacher:** Use Workbook p.53, the transport picture-prompt task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.53, the transport picture-prompt task; ask and answer transport questions from the pictures.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to identify one effective invitation phrase and one improvement for their next role-play.
+**Pupils:** Describe what makes an invitation effective.
+
+**PBD:** Observe pupils asking questions, responding and seeking clarification in partner trip dialogues for main Speaking SP 2.2.1. Assess clear time and place details in written invitations for complementary Writing SP 4.2.2. Workbook p.53 provides the main written practice.  
+**Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
