@@ -10,7 +10,7 @@
 Teacher asks about school competitions. Pupils share experiences or ideas.
 
 ## Activity 1 — Story reading (15 minutes)
-Teacher first asks pupils to discuss a school competition, including who participated, what happened and how winners were chosen. Pupils relate their ideas to a cooking competition. Teacher then follows the warm-up and Activity 1 from Teacher's Book pp.98–99. Pupils read the story and discuss Fay's cooking skills.
+Teacher first asks pupils to discuss a school competition, including who participated, what happened and how winners were chosen. Pupils relate their ideas to a cooking competition. Teacher then follows the warm-up and Activity 1 from Teacher's Book pp.98–99. Pupils read the story and discuss Fay's cooking skills. Pupils complete Workbook p.49, Activity 1, by answering questions about the cooking-competition story and Activity 2 by choosing and colouring a face to show their response to the story.
 
 ## Activity 2 — Cooking competition (25 minutes)
 Groups create an imaginary cooking competition, assign roles and act out a short scene. Teacher encourages creative language and story enjoyment.
