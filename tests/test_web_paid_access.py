@@ -19,6 +19,15 @@ class PaidAccessTests(unittest.TestCase):
             with self.subTest(account=account):
                 self.assertFalse(has_active_paid_access(account, date(2026, 11, 2)))
 
+    def test_malformed_entitlement_never_grants_paid_access(self):
+        for account in (
+            {"authenticated": True, "rakan_pembangun": "true"},
+            {"authenticated": True, "rakan_pembangun": 1},
+            {"authenticated": True, "vip_until": "2027-02-30"},
+        ):
+            with self.subTest(account=account):
+                self.assertFalse(has_active_paid_access(account, date(2026, 11, 2)))
+
 
 if __name__ == "__main__":
     unittest.main()
