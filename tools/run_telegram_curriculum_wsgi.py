@@ -15,6 +15,11 @@ if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") != "1":
 if len(os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")) < 32:
     raise RuntimeError("Dedicated curriculum API token must be at least 32 characters")
 
+# This service must never have Telegram bot credentials or a webhook target.
+# Refuse to import the large runtime if a production bot environment was copied.
+if os.environ.get("BOT_TOKEN") or os.environ.get("WEBHOOK_URL"):
+    raise RuntimeError("Isolated curriculum staging must not have Telegram bot credentials or webhook URL")
+
 import app as telegram_runtime
 app = telegram_runtime.app
 from web.telegram_curriculum_api import create_curriculum_blueprint
