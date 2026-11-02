@@ -16,6 +16,8 @@ Teacher asks 'Where's the doll?' and 'Where are the toys?' to review preposition
 Teacher guides Student's Book p.45 Activity 2 and introduces clothes vocabulary from p.47. Pupils describe locations of objects and clothing in pairs.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.37, Activity 2; explain the task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.37, Activity 2, by answering questions about where objects are in the bedroom.
 Pupils describe one picture using two details and answer one short question from a partner.
 
 ## Closure (5 minutes)
