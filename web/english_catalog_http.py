@@ -40,11 +40,11 @@ def create_english_catalog_blueprint(root=ROOT):
                     approved = True
                 except (LookupError, ValueError, OSError):
                     approved = False
-                entries.append({"lesson_no": n, "label": f"Lesson {n}", "approved": approved})
+                entries.append({"lesson_no": n, "label": f"Lesson {n}", "approved": approved, "status": "ready" if approved else "pending_qa"})
         response = jsonify({
             "year": year, "subject": "ENGLISH",
             "lessons": entries, "count": len(entries),
-            "notice": "Only lessons explicitly approved for release may be downloaded.",
+            "notice": "Lesson yang belum diluluskan masih menunggu pengesahan QA; fail asal tidak diubah.",
         })
         response.headers["Cache-Control"] = "no-store, private"
         return response
