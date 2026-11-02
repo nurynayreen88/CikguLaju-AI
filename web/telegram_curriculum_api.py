@@ -89,8 +89,10 @@ def create_curriculum_blueprint(database_path_provider):
             lesson = request.args["lesson"]
             if not year.isascii() or not year.isdecimal() or int(year) not in range(1, 7):
                 raise ValueError("invalid year")
-            if not lesson.isascii() or not lesson.isdecimal() or len(lesson) > 12:
+            if not lesson.isascii() or not lesson.isdecimal() or len(lesson) > 12 or int(lesson) < 1:
                 raise ValueError("invalid lesson")
+            if subject not in ("ENGLISH", "BM", "MATH", "SCIENCE", "PI", "PJPK"):
+                raise ValueError("invalid subject")
             if subject != "ENGLISH" or int(year) not in (1, 2, 3):
                 return jsonify({"source": "telegram-runtime-v1", "items": []})
             from web.telegram_english_rph_bridge import verified_english_rph_metadata
