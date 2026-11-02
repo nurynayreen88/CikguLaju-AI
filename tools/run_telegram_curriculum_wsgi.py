@@ -15,15 +15,16 @@ if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") != "1":
 if len(os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")) < 32:
     raise RuntimeError("Dedicated curriculum API token must be at least 32 characters")
 
-from app import app, DB_PATH, CIKGULAJU_DB_V2600_ACTIVE
+import app as telegram_runtime
+app = telegram_runtime.app
 from web.telegram_curriculum_api import create_curriculum_blueprint
 
 
 def _active_primary_db():
     # Fail closed if Telegram has fallen back from its audited v26.00 master.
-    if not CIKGULAJU_DB_V2600_ACTIVE:
+    if not getattr(telegram_runtime, 'CIKGULAJU_DB_V2600_ACTIVE', False):
         return None
-    return DB_PATH
+    return getattr(telegram_runtime, 'DB_PATH', None)
 
 
 app.register_blueprint(create_curriculum_blueprint(_active_primary_db))
