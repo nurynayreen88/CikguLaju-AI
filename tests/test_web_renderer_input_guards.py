@@ -17,6 +17,15 @@ class RendererInputTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     render_approved_rph(item, "docx")
 
+    def test_rejects_oversized_content_and_unsupported_format(self):
+        valid = ApprovedRPH(1, "Lesson", "Content", "approved")
+        with self.assertRaises(ValueError):
+            render_approved_rph(valid, "txt")
+        with self.assertRaises(ValueError):
+            render_approved_rph(ApprovedRPH(1, "X" * 301, "Content", "approved"), "docx")
+        with self.assertRaises(ValueError):
+            render_approved_rph(ApprovedRPH(1, "Lesson", "X" * 100001, "approved"), "pdf")
+
 
 if __name__ == "__main__":
     unittest.main()
