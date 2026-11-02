@@ -15,6 +15,8 @@ def create_curriculum_blueprint(database_path_provider):
 
     @bp.before_request
     def authorize():
+        if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") != "1":
+            return jsonify({"error": "curriculum API disabled"}), 503
         configured = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
         header = request.headers.get("Authorization", "")
         if len(configured) < 32 or not hmac.compare_digest(header, "Bearer " + configured):
@@ -27,6 +29,9 @@ def create_curriculum_blueprint(database_path_provider):
                 raise ValueError("year")
             db = database_path_provider()
             if not db:
+                raise FileNotFoundError("master database missing")
+            from pathlib import Path
+            if not Path(db).is_file():
                 raise FileNotFoundError("master database missing")
             if kind == "subjects":
                 items = available_subject_options(db, year)
