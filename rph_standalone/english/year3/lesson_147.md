@@ -17,7 +17,7 @@ Pupils listen to the accompanying audio while reading Student's Book pp.96–97 
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.78, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.78, Activity 1, by choosing the correct comparative forms in sentences about animals.
+**Pupils:** Pupils complete Workbook p.78, Activity 1, by looking at the pictures and completing the sentences using 'close', 'far', 'around' and 'planet'.
 Teacher checks two sea-animal facts located in the text and asks pupils to explain one unfamiliar word using a picture or sentence clue.
 
 ## Closure (5 minutes)
