@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parent / "rph_standalone" / "english" / "year2"
 
 def _section(source, name):
-    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):|\Z)", source, re.S | re.M)
+    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):\*\*|\Z)", source, re.S | re.M)
     return match.group(1).strip() if match else ""
 
 def apply(st, rows):
@@ -36,7 +36,7 @@ def apply(st, rows):
     ]
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):|\Z)", source, re.S | re.M)
+        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):\*\*|\Z)", source, re.S | re.M)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
