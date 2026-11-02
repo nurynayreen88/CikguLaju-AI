@@ -16,6 +16,8 @@ Teacher guides Student's Book p.31 Activity 1. Pupils study pictures and answer 
 Pupils write sentences about their pictures, exchange work for peer review, redraft neatly on labels and attach them to their pictures for a classroom display. Teacher supports accurate present continuous sentences.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.22, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.22, Activity 2, by writing sentences about the sports shown in the picture.
 Teacher checks planning, drafting and short oral narration of pictured events. Pupils explain their work to partners.
 
 ## Closure (5 minutes)
