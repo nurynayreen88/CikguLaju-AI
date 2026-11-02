@@ -29,6 +29,25 @@ class OptionalWsgiTests(unittest.TestCase):
         self.assertEqual(entry.app.test_client().post("/webhook").status_code, 200)
         self.assertNotIn("telegram_curriculum_v1", entry.app.blueprints)
 
+    def test_enabled_missing_master_returns_503(self):
+        entry = self.load_entry(True, True)
+        self.assertIn("telegram_curriculum_v1", entry.app.blueprints)
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
+                                      "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "t" * 32}):
+            response = entry.app.test_client().get(
+                "/internal/curriculum/v1/subjects?year=2",
+                headers={"Authorization": "Bearer " + "t" * 32})
+        self.assertEqual(response.status_code, 503)
+
+    def test_fallback_master_request_returns_503(self):
+        entry = self.load_entry(True, False)
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
+                                      "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "t" * 32}):
+            response = entry.app.test_client().get(
+                "/internal/curriculum/v1/subjects?year=2",
+                headers={"Authorization": "Bearer " + "t" * 32})
+        self.assertEqual(response.status_code, 503)
+
     def test_fallback_master_is_not_served(self):
         entry = self.load_entry(True, False)
         self.assertIsNone(entry.active_master_database())
