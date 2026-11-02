@@ -17,8 +17,8 @@ Teacher introduces additional occupations and models the Grammar Box and Activit
 Teacher demonstrates how to read a crossword clue and write the correct occupation. Pupils complete a crossword in pairs, checking spelling and helping one another using 'Can you help me, please?'.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.12, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.12, Activity 1, by filling in the occupation crossword using the written clues.
+**Teacher:** Use the original CikguLaju writing worksheet `materials/lesson_025_occupation_clue_cards.md`; assess job vocabulary, two original written occupation clues and one polite request for help. Do not assign Workbook p.12, Activity 1 again.
+**Pupils:** Match four occupations to descriptions, write two new job clues, and ask a partner for help when needed.
 Teacher checks written occupation words and listens for appropriate requests for help. Pupils correct mistakes.
 
 ## Closure (5 minutes)
