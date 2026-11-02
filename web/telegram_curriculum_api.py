@@ -58,6 +58,6 @@ def create_curriculum_blueprint(database_path_provider):
     def approved_materials():
         # No material is exposed without a verified approval mapping and
         # authorized delivery. Never manufacture downloadable file URLs.
-        return jsonify({"source": "telegram-runtime-v1", "items": []})
+        return jsonify({"error": "approved material mapping unavailable"}), 503
 
     return bp
