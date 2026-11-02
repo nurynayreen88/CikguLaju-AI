@@ -32,6 +32,19 @@ class WebMaterialsRouteTests(unittest.TestCase):
             response = client.get(query)
             return response, adapter
 
+    def test_download_does_not_expose_unverified_file(self):
+        from web_v1_sessions import issue_session_ticket
+        from web_v1_telegram_auth_routes import COOKIE
+        secret = "s" * 40
+        config = {"CIKGULAJU_WEB_SESSION_SECRET": secret}
+        with patch("web_v1_telegram_auth_routes._config", return_value=config), \
+             patch("web_v1_telegram_auth_routes._lookup", return_value={"telegram_user_id": 123}):
+            client = self.app.test_client()
+            client.set_cookie(COOKIE, issue_session_ticket(123, secret))
+            response = client.get("/api/materials/download/abc")
+            self.assertEqual(response.status_code, 503)
+            self.assertEqual(response.json["code"], "MATERIAL_DELIVERY_NOT_VERIFIED")
+
     def test_verified_empty_list(self):
         response, adapter = self._call()
         self.assertEqual(response.status_code, 200)
