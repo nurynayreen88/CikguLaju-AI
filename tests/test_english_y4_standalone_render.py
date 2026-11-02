@@ -112,16 +112,11 @@ class Year4Tests(unittest.TestCase):
 
     def test_real_lesson_14(self):
         result = adapter.apply({"subject":"English","year":"Year 4","lesson_no":14}, {})
-        self.assertIn("email", result["AKTIVITI UTAMA"].lower())
-        self.assertIn("punctuation", result["PENTAKSIRAN"].lower())
-        self.assertNotIn("DRAFT", result["PENUTUP"])
+        self.assertEqual(result, {})  # Source remains DRAFT; no override
 
     def test_real_project_lesson_80(self):
         result = adapter.apply({"subject":"English","year":"Year 4","lesson_no":80}, {})
-        self.assertIn("project", result["AKTIVITI UTAMA"].lower())
-        self.assertIn("present", result["PENTAKSIRAN"].lower())
-        self.assertNotIn("Status", result["PENUTUP"])
-        self.assertNotIn("DRAFT", result["PENUTUP"])
+        self.assertEqual(result, {})  # Source remains DRAFT; no override
 
     def test_incomplete_source_does_not_replace_rph(self):
         lesson = """# Lesson 14
