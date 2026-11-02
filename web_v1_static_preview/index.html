@@ -18,7 +18,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
-<section id="workspace" class="panel" hidden><h2>Pilih RPH</h2><p id="account-access" class="notice" role="status"></p><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="lesson">Lesson/PdP</label><select id="lesson" disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="generate-docx" type="button" disabled>Jana Word</button> <button id="generate-pdf" type="button" disabled>Jana PDF</button><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
+<section id="workspace" class="panel" hidden><h2>Pilih RPH</h2><p id="account-access" class="notice" role="status"></p><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="unit">Unit/Tajuk</label><select id="unit" disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson">Lesson/PdP</label><select id="lesson" disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="generate-docx" type="button" disabled>Jana Word</button> <button id="generate-pdf" type="button" disabled>Jana PDF</button><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
 </div>
 <script>
 "use strict";
@@ -53,8 +53,31 @@ let approvedDownloadReady=false;
 async function checkDownloadReady(){try{const r=await fetch("/api/web/english/rph/capabilities",{cache:"no-store"});const d=r.ok?await r.json():{};approvedDownloadReady=d.download_enabled===true;}catch(_){approvedDownloadReady=false;}const opt=document.getElementById("lesson").selectedOptions[0];const enabled=approvedDownloadReady&&opt?.dataset.approved==="1";document.getElementById("generate-docx").disabled=!enabled;document.getElementById("generate-pdf").disabled=!enabled;}
 checkDownloadReady();
 const year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
-year.addEventListener("change",()=>{document.getElementById("generate-docx").disabled=true;document.getElementById("generate-pdf").disabled=true;subject.replaceChildren(new Option(year.value?"Pilih Subjek":"Pilih Tahun dahulu",""));subject.disabled=!year.value;lesson.replaceChildren(new Option("Pilih Subjek dahulu",""));lesson.disabled=true;catalogStatus.textContent="";if(year.value)subject.add(new Option("Bahasa Inggeris","ENGLISH"));});
-subject.addEventListener("change",async()=>{document.getElementById("generate-docx").disabled=true;document.getElementById("generate-pdf").disabled=true;lesson.replaceChildren(new Option("Memuatkan Lesson…",""));lesson.disabled=true;if(!subject.value)return;try{const response=await fetch("/api/web/catalog/english/"+encodeURIComponent(year.value),{cache:"no-store"});if(!response.ok)throw Error("Katalog belum tersedia");const data=await response.json();lesson.replaceChildren(new Option("Pilih Lesson",""));for(const item of data.lessons){const option=new Option(item.label+" · Ada dalam sumber",String(item.lesson_no));option.dataset.approved=item.approved?"1":"0";lesson.add(option);}lesson.disabled=!data.lessons.length;catalogStatus.textContent=data.count+" Lesson ditemui dalam sumber. Muat turun Web belum dibuka sehingga enjin dan kuota Telegram disambungkan.";}catch(error){lesson.replaceChildren(new Option("Tidak tersedia",""));catalogStatus.textContent=error.message;}});
+const unit=document.getElementById("unit");
+async function loadOptions(kind,extra={}){
+ const params=new URLSearchParams({kind,year:year.value,...extra});
+ const response=await fetch("/api/options?"+params.toString(),{credentials:"same-origin",cache:"no-store"});
+ if(!response.ok)throw new Error("Sumber kurikulum utama belum tersedia (HTTP "+response.status+").");
+ const items=await response.json();
+ if(!Array.isArray(items))throw new Error("Format katalog tidak sah.");
+ return items;
+}
+function resetSelect(el,label){el.replaceChildren(new Option(label,""));el.disabled=true;}
+function fillSelect(el,items,label){resetSelect(el,label);for(const item of items){if(item.value==null||!item.label)continue;const opt=new Option(item.label,String(item.value));opt.dataset.approved=item.standalone_rph_verified===true?"1":"0";el.add(opt);}el.disabled=el.options.length<=1;}
+year.addEventListener("change",async()=>{
+ resetSelect(subject,"Pilih Subjek");resetSelect(unit,"Pilih Subjek dahulu");resetSelect(lesson,"Pilih Unit dahulu");
+ catalogStatus.textContent="";await checkDownloadReady();if(!year.value)return;
+ try{fillSelect(subject,await loadOptions("subjects"),"Pilih Subjek");}catch(error){catalogStatus.textContent=error.message;}
+});
+subject.addEventListener("change",async()=>{
+ resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");await checkDownloadReady();if(!subject.value)return;
+ try{fillSelect(unit,await loadOptions("units",{subject:subject.value}),"Pilih Unit");}catch(error){catalogStatus.textContent=error.message;}
+});
+unit.addEventListener("change",async()=>{
+ resetSelect(lesson,"Pilih Lesson/PdP");await checkDownloadReady();if(!unit.value)return;
+ try{const items=await loadOptions("pdp",{subject:subject.value,unit:unit.value});fillSelect(lesson,items,"Pilih Lesson/PdP");catalogStatus.textContent=items.length+" Lesson/PdP tersedia dalam katalog."; }
+ catch(error){catalogStatus.textContent=error.message;}
+});
 lesson.addEventListener("change",async()=>{await checkDownloadReady();const approved=lesson.selectedOptions[0]?.dataset.approved==="1";document.getElementById("generate-docx").disabled=!(approved&&approvedDownloadReady);document.getElementById("generate-pdf").disabled=!(approved&&approvedDownloadReady);if(lesson.value)catalogStatus.textContent=approved?(approvedDownloadReady?"Lesson tersedia untuk muat turun Web. Pilih Word atau PDF.":"Lesson ada dalam sumber, tetapi sambungan muat turun Web belum diaktifkan."):"Lesson "+lesson.value+" ada dalam sumber, tetapi muat turun Web belum diaktifkan.";});
 for(const fmt of ["docx","pdf"]){document.getElementById("generate-"+fmt).addEventListener("click",async()=>{if(!lesson.value)return;catalogStatus.textContent="Menyediakan RPH…";try{const response=await fetch("/api/web/english/rph",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({year:Number(year.value),lesson_no:Number(lesson.value),format:fmt})});if(!response.ok){const data=await response.json().catch(()=>({}));throw Error(data.error||"RPH belum tersedia");}const blob=await response.blob();const url=URL.createObjectURL(blob);const link=document.createElement("a");link.href=url;link.download="cikgulaju-rph-"+lesson.value+"."+fmt;link.click();setTimeout(()=>URL.revokeObjectURL(url),30000);catalogStatus.textContent="Fail RPH disediakan.";}catch(error){catalogStatus.textContent=error.message;}});}
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
