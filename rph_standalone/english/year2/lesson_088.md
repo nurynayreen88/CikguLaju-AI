@@ -22,6 +22,8 @@
 **Pupils:** Describe a robot and respond to a partner.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.94, Activity 2; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.94, Activity 2, by writing the names of the body parts shown in the pictures.
 **Teacher (10 min):** Record three ordered instructions (SP 2.1.3) and two correct listening-detail responses (SP 1.2.2).
 **Pupils:** Demonstrate speaking evidence.
 
