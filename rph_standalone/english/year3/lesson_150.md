@@ -17,7 +17,7 @@ Teacher names an adjective. Pairs order their animal cards and explain compariso
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.78, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.78, Activity 2, by answering questions comparing animals and planets.
+**Pupils:** Pupils complete Workbook p.78, Activity 2, by listening to the descriptions and numbering the monster pictures (1–3).
 Teacher asks pupils to order animal cards after hearing two adjectives and explain one comparison.
 
 ## Closure (5 minutes)

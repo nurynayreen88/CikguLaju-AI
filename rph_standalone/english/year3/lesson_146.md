@@ -17,7 +17,7 @@ Pupils listen to descriptions and identify animals. In pairs, pupils draw and la
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.77, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.77, Activity 1, by comparing animals using comparative adjectives.
+**Pupils:** Pupils complete Workbook p.77, Activity 1, by looking at the pictures and completing the comparative sentences about the animals.
 Teacher listens to each pupil make two animal comparisons using '-er than' and identify an animal from a partner's description.
 
 ## Closure (5 minutes)

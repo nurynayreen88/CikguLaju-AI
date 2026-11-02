@@ -17,7 +17,7 @@ Pupils read for enjoyment, infer new words from illustrations and discuss the st
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.73, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.73, Activity 1, by matching pictures with events from the story.
+**Pupils:** Pupils complete Workbook p.73, Activity 1, by reading the story again and matching the pictures with the correct descriptions.
 Teacher asks each pupil to name a favourite story moment and give one reason, referring to a picture or story detail.
 
 ## Closure (5 minutes)
