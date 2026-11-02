@@ -48,7 +48,8 @@ def apply(st, rows):
     def clean_phase(text):
         # Preserve actions while making teacher and pupil roles separate lines.
         text = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", text)
-        text = re.sub(r"(?m)^\s*\n", "", text)
+        text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+        text = re.sub(r"(?m)^[ \t]*\n", "", text)
         return text.strip()
     result["SET INDUKSI"] = clean_phase(intro)
     lines = [title + "\n" + clean_phase(body) for title, body in activities if body]
