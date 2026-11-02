@@ -46,6 +46,9 @@ def apply(st, rows):
             pbd = inline_pbd.group(1).strip()
     if not intro or not closure or not activities or not pbd:
         return rows
+    # Preserve existing output if a draft source has not passed its own QA gate.
+    if re.search(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*(?:DRAFT|not READY|do not publish)", source):
+        return rows
     # Do not allow a source section to spill into the closure.
 
     def clean(value):
