@@ -29,6 +29,12 @@ class WorkbookRuntimeBridgeTests(unittest.TestCase):
             self.assertIn("activity", self.runtime._available_materials_v2528(ss))
             self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [60])
 
+    def test_missing_year4_pdf_part_is_not_offered(self):
+        ss = {"year": "Tahun 4", "subject": "English", "lesson_no": 2}
+        with patch("web.english_y2_verified_workbook_runtime._REPO_ROOT", Path(self.tmp.name)):
+            install(self.runtime)
+            self.assertNotIn("activity", self.runtime._available_materials_v2528(ss))
+
     def test_year3_missing_pdf_is_not_offered(self):
         install(self.runtime)
         ss = {"year": "Tahun 3", "subject": "English", "lesson_no": 1}
