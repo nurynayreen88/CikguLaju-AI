@@ -40,11 +40,11 @@ def create_english_catalog_blueprint(root=ROOT):
                     approved = True
                 except (LookupError, ValueError, OSError):
                     approved = False
-                entries.append({"lesson_no": n, "label": f"Lesson {n}", "approved": approved, "status": "ready" if approved else "pending_qa"})
+                entries.append({"lesson_no": n, "label": f"Lesson {n}", "approved": approved, "status": "web_release_ready" if approved else "web_download_not_enabled", "source_available": True})
         response = jsonify({
             "year": year, "subject": "ENGLISH",
             "lessons": entries, "count": len(entries),
-            "notice": "Lesson yang belum diluluskan masih menunggu pengesahan QA; fail asal tidak diubah.",
+            "notice": "Senarai ini menunjukkan fail sumber tersedia. Status muat turun Web berasingan daripada ketersediaan RPH Telegram; fail asal tidak diubah.",
         })
         response.headers["Cache-Control"] = "no-store, private"
         return response
