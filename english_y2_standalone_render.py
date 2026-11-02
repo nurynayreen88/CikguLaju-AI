@@ -29,7 +29,7 @@ def apply(st, rows):
     source = path.read_text(encoding="utf-8")
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"^##\s+(" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^##\s+|^\*\*(?:QA|Status|Source):|\Z)", source, re.S | re.M | re.I)
+        match = re.search(r"^##\s+(" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^##\s+|^\*\*(?:QA(?: status)?|Status|Source):|\Z)", source, re.S | re.M | re.I)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
@@ -48,7 +48,7 @@ def apply(st, rows):
         lines.append("Assessment / PBD\n" + clean(assessment))
         result["PENTAKSIRAN"] = clean(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
-    result["PENUTUP"] = clean(re.split(r"(?m)^\s*\*\*(?:QA|Status|Source|Differentiation):\*\*", closure, maxsplit=1)[0])
+    result["PENUTUP"] = clean(re.split(r"(?m)^\s*\*\*(?:QA(?: status)?|Status|Source|Differentiation):\*\*", closure, maxsplit=1)[0])
     ref = re.search(r"(?m)^\*\*(?:References|Materials|Resources):\*\*[^\S\n]*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
