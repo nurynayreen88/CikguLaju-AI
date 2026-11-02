@@ -16,6 +16,7 @@ Teacher gives pupils month cards. Pupils stand in calendar order and pronounce t
 Teacher guides Student's Book p.37 Activity 4. Pupils ask and answer about birthdays using 'in' with months and prepare short birthday cards.
 
 ## PBD (10 minutes)
+Teacher listens to each pupil's birthday answer and checks the birthday-card message for legible cursive writing.
 Pupils answer one birthday question and write a short birthday-card message with legible cursive letters.
 
 ## Closure (5 minutes)

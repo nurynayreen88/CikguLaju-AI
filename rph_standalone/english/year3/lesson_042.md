@@ -16,6 +16,7 @@ Teacher introduces the sports action song specified by the SOW and models action
 In groups of four or five, pupils choose new sports words and movements to create their own short original verses. Teacher supports language and rehearsal.
 
 ## PBD (10 minutes)
+Teacher observes each pupil's imaginative contribution and spoken description, recording whether the idea relates to the group's sports action-song verse.
 Each pupil contributes one imaginative idea and gives a short spoken description during the group task.
 
 ## Closure (5 minutes)
