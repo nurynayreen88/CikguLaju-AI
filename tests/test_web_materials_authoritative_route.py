@@ -52,6 +52,27 @@ class WebMaterialsRouteTests(unittest.TestCase):
         key = adapter.return_value.get_approved_materials.call_args.args[0]
         self.assertEqual((key.year, key.subject_code, key.lesson_id), (2, "ENGLISH", "93"))
 
+    def test_unverified_delivery_never_exposes_links(self):
+        from web_v1_sessions import issue_session_ticket
+        from web_v1_telegram_auth_routes import COOKIE
+        secret = "s" * 40
+        with patch("web_v1_telegram_auth_routes._config", return_value={"CIKGULAJU_WEB_SESSION_SECRET": secret}), \
+             patch("web_v1_telegram_auth_routes._lookup", return_value={"telegram_user_id": 123}), \
+             patch.dict(os.environ, {"CIKGULAJU_AUTHORITATIVE_API_URL": "https://telegram.example",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "x" * 40}), \
+             patch("web.authoritative_http_source.AuthoritativeHttpCurriculumSource") as adapter:
+            adapter.return_value.get_approved_materials.return_value = [
+                {"id": "abc", "approved": True, "title": "RPH", "file_path": "/private/rph.pdf",
+                 "download_url": "https://example.org/private"}]
+            client = self.app.test_client()
+            client.set_cookie(COOKIE, issue_session_ticket(123, secret))
+            response = client.get("/api/materials?year=2&subject=ENGLISH&lesson=93")
+            self.assertEqual(response.status_code, 200)
+            self.assertFalse(response.json["download_enabled"])
+            self.assertFalse(response.json["items"][0]["approved"])
+            self.assertNotIn("file_path", response.json["items"][0])
+            self.assertNotIn("download_url", response.json["items"][0])
+
     def test_no_account_no_remote_access(self):
         response, adapter = self._call(account=False)
         self.assertEqual(response.status_code, 403)
