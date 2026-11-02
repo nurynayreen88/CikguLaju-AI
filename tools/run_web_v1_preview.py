@@ -76,6 +76,9 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
+        from web.shared_source_provenance import catalog_source_status
+        if not catalog_source_status()["shared_source_verified"]:
+            return jsonify({"error": "shared catalog source not verified"}), 503
         db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
         if not db or not Path(db).is_file():
             return jsonify({"error": "preview database not configured"}), 503
