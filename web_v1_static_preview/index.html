@@ -35,7 +35,7 @@ window.onCikguLajuTelegramAuth=async function(user){
  const status=document.getElementById("login-status");
  try{
   const session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store"});
-  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");document.getElementById("account-access").dataset.loaded="1";return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");document.getElementById("account-access").dataset.loaded="1";document.getElementById("account-access").setAttribute("aria-live","polite");return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(!response.ok)throw Error("offline");
   const config=await response.json();
