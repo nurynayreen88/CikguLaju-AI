@@ -18,7 +18,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
-<section id="workspace" class="panel" hidden><h2>Pilih RPH</h2><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="lesson">Lesson/PdP</label><select id="lesson" disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="generate-docx" type="button" disabled>Jana Word</button> <button id="generate-pdf" type="button" disabled>Jana PDF</button><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
+<section id="workspace" class="panel" hidden><h2>Pilih RPH</h2><p id="account-access" class="notice" role="status"></p><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="lesson">Lesson/PdP</label><select id="lesson" disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="generate-docx" type="button" disabled>Jana Word</button> <button id="generate-pdf" type="button" disabled>Jana PDF</button><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
 </div>
 <script>
 "use strict";
@@ -35,7 +35,7 @@ window.onCikguLajuTelegramAuth=async function(user){
  const status=document.getElementById("login-status");
  try{
   const session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store"});
-  if(session.ok){document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(!response.ok)throw Error("offline");
   const config=await response.json();
