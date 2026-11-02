@@ -1,0 +1,38 @@
+"""Shared Telegram/Web free-trial RPC adapter.
+
+Call ONLY after the complete document is successfully rendered and the server
+has committed to delivering it. A successful RPC is a real irreversible debit;
+HTTP streaming failure after this point needs a separate refund workflow.
+This module deliberately does not create users or alter existing balances.
+"""
+import json
+from urllib.request import Request, urlopen
+
+
+def consume_successful_generation(url, secret_key, telegram_user_id, reference_id,
+                                  reason="web_rph_generation"):
+    if type(telegram_user_id) is not int or telegram_user_id <= 0:
+        raise ValueError("Invalid Telegram user")
+    if not isinstance(url, str) or not url.startswith("https://") or not secret_key:
+        raise ValueError("Supabase configuration missing")
+    if not isinstance(reference_id, str) or not reference_id.startswith("web-rph:") or len(reference_id) > 180:
+        raise ValueError("Invalid server-generated reference")
+    body = json.dumps({
+        "p_telegram_user_id": telegram_user_id,
+        "p_reference_id": reference_id,
+        "p_reason": reason,
+    }).encode("utf-8")
+    req = Request(url.rstrip("/") + "/rest/v1/rpc/cikgulaju_use_trial",
+                  data=body, method="POST",
+                  headers={"apikey": secret_key,
+                           "Authorization": "Bearer " + secret_key,
+                           "Content-Type": "application/json",
+                           "Accept": "application/json"})
+    with urlopen(req, timeout=8) as response:
+        result = json.load(response)
+    if not isinstance(result, list) or len(result) != 1:
+        raise RuntimeError("Unexpected quota RPC response")
+    row = result[0]
+    if type(row.get("ok")) is not bool or type(row.get("remaining")) is not int:
+        raise RuntimeError("Invalid quota RPC response")
+    return {"ok": row["ok"], "remaining": row["remaining"]}
