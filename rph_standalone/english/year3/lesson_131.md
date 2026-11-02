@@ -17,7 +17,7 @@ Pairs use A/B worksheets and a dictionary to explore forest-story words, drawing
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.69, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.69, Activity 1, by writing the correct past-tense action words beside the pictures.
+**Pupils:** Pupils complete Workbook p.69, Activity 1, by finding the verbs in the word search and completing the sentences using their past simple forms.
 Pupils explain one forest word using story clues, then confirm its meaning with a dictionary.
 
 ## Closure (5 minutes)
