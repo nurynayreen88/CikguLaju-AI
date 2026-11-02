@@ -16,6 +16,7 @@ Teacher tells the 'We're Going Home' story with gestures for over, under and thr
 Teacher repeats the story, gradually inviting pupils to join the spoken phrases and actions. Groups practise and retell a short section using their own gestures.
 
 ## PBD (10 minutes)
+Teacher listens to each pupil retell two story events and records one personal response supported by the story.
 Pupils retell two events from the story and give one personal response.
 
 ## Closure (5 minutes)
