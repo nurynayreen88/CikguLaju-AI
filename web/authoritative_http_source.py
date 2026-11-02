@@ -4,10 +4,36 @@ The endpoint must be deployed alongside the Telegram runtime (or backed by its
 authoritative datastore). This module never silently falls back to a snapshot.
 No credentials, API URLs, or file paths are returned to browser clients.
 """
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlencode
+from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
+import json
 from web.authoritative_curriculum_source import (
     CurriculumKey, SharedSourceUnavailable, validate_curriculum_key,
 )
+
+
+class _StdlibResponse:
+    def __init__(self, response):
+        self.status_code = response.status
+        self._body = response.read(1024 * 1024 + 1)
+        if len(self._body) > 1024 * 1024:
+            raise ValueError('oversized curriculum response')
+
+    def json(self):
+        return json.loads(self._body)
+
+
+class _StdlibTransport:
+    def get(self, url, *, params, headers, timeout, allow_redirects):
+        # No redirect handler: do not forward bearer tokens to another host.
+        class _NoRedirect(__import__('urllib.request', fromlist=['HTTPRedirectHandler']).HTTPRedirectHandler):
+            def redirect_request(self, req, fp, code, msg, hdrs, newurl):
+                return None
+        query = urlencode(params)
+        req = Request(url + '?' + query, headers=headers, method='GET')
+        opener = build_opener(HTTPHandler(), HTTPSHandler(), _NoRedirect())
+        with opener.open(req, timeout=timeout[1]) as response:
+            return _StdlibResponse(response)
 
 
 class AuthoritativeHttpCurriculumSource:
@@ -20,8 +46,7 @@ class AuthoritativeHttpCurriculumSource:
         self.base_url = base_url.rstrip("/")
         self.token = token
         if transport is None:
-            import requests
-            transport = requests.Session()
+            transport = _StdlibTransport()
         self.transport = transport
 
     def _read(self, endpoint, params):
