@@ -36,13 +36,13 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(self.calls, [])
 
     def test_paid_user_no_trial_debit(self):
-        result = self.run_pipeline(lambda r, f: (b"%PDF", PDF),
+        result = self.run_pipeline(lambda r, f: (b"%PDF-1.4", PDF),
                                    {**self.account, "rakan_pembangun": True})
         self.assertTrue(result["allowed"])
         self.assertEqual(self.calls, [])
 
     def test_exhausted_trial_returns_no_document(self):
-        result = self.run_pipeline(lambda r, f: (b"%PDF", PDF),
+        result = self.run_pipeline(lambda r, f: (b"%PDF-1.4", PDF),
                                    {**self.account, "free_remaining": 0})
         self.assertFalse(result["allowed"])
         self.assertIsNone(result["document"])
