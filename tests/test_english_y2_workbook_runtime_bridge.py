@@ -29,6 +29,23 @@ class WorkbookRuntimeBridgeTests(unittest.TestCase):
             self.assertIn("activity", self.runtime._available_materials_v2528(ss))
             self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [60])
 
+    def test_year3_missing_pdf_is_not_offered(self):
+        install(self.runtime)
+        ss = {"year": "Tahun 3", "subject": "English", "lesson_no": 1}
+        self.assertNotIn("activity", self.runtime._available_materials_v2528(ss))
+
+    def test_year4_verified_pdf_page_is_used(self):
+        install(self.runtime)
+        ss = {"year": "Tahun 4", "subject": "English", "lesson_no": 2}
+        self.assertIn("activity", self.runtime._available_materials_v2528(ss))
+        self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [2])
+
+    def test_year1_verified_workbook_page_is_used(self):
+        install(self.runtime)
+        ss = {"year": "Tahun 1", "subject": "English", "lesson_no": 6}
+        self.assertIn("activity", self.runtime._available_materials_v2528(ss))
+        self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [4])
+
     def test_unverified_and_other_years_unchanged(self):
         with patch("web.english_y2_verified_workbook_runtime.resolve_lesson", return_value=None):
             install(self.runtime)
