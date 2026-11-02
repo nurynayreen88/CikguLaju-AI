@@ -17,6 +17,8 @@ Teacher follows the warm-up and vocabulary tasks from Teacher's Book p.92. Pupil
 Groups of four read the texts from Student's Book p.58, match them to pictures and highlight specific details. Teacher supports pupils with vocabulary.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.46, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.46, Activity 2, by matching international food descriptions to the pictures.
 **Teacher:** Ask each pupil to identify one main idea and two supporting details.
 **Pupils:** Locate and explain evidence from the reading text.
 

@@ -19,6 +19,8 @@
 **Pupils:** Listen for ingredients and answer detail questions.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.45, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.45, Activity 2, by identifying the ingredients in two omelettes.
 **Teacher:** Ask two supported questions and one detail question; note individual responses.
 **Pupils:** Answer orally or point to the correct food picture.
 
