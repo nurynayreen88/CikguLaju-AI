@@ -28,7 +28,7 @@ def prepare_approved_download(rph, fmt, account, telegram_user_id,
         raise ValueError("Unexpected document format")
     if fmt == "pdf" and not document.startswith(b"%PDF-"):
         raise ValueError("Invalid PDF signature")
-    if fmt == "docx" and not document.startswith(b"PK\\x03\\x04"):
+    if fmt == "docx" and not document.startswith(bytes((80, 75, 3, 4))):
         raise ValueError("Invalid Word document signature")
     authorization = authorize_rendered_document(
         account, telegram_user_id, document, supabase_url, secret_key, debit=debit)
