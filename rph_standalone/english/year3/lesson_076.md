@@ -16,8 +16,8 @@ Teacher labels classroom corners with room names. Pupils place furniture words i
 Teacher guides Student's Book p.49 Activity 4 and the related group task from Teacher's Book p.79. Pupils describe furniture locations and ask classmates for help when needed.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.37, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.37, Activity 2, by answering questions about the positions of objects in the bedroom.
+**Teacher:** Use the original speaking role cards in `materials/lesson_076_furniture_information_gap.md`; assess questions, answers, a polite help request and a description of furniture locations.
+**Pupils:** Exchange information about furniture locations using hidden cards and describe differences orally; do not repeat Workbook p.37, Activity 2.
 Pupils describe two features and use one polite request for assistance when needed.
 
 ## Closure (5 minutes)
