@@ -92,7 +92,9 @@ def telegram_session_status():
     if not account or account.get("telegram_user_id") != uid:
         return jsonify({"authenticated": False}), 401
     entitlement = display_trusted_account(account)
-    return jsonify({"authenticated": True, **entitlement})
+    response = make_response(jsonify({"authenticated": True, **entitlement}))
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
 
 
 @auth_blueprint.post("/api/auth/telegram/logout")
