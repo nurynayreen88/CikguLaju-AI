@@ -14,7 +14,7 @@ class CurriculumWsgiStartupGuardTests(unittest.TestCase):
     def run_import(self, overrides):
         env = os.environ.copy()
         for name in ("CIKGULAJU_ENV", "CIKGULAJU_CURRICULUM_API_ENABLED",
-                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN"):
+                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN", "BOT_TOKEN", "WEBHOOK_URL"):
             env.pop(name, None)
         env.update(overrides)
         return subprocess.run(
@@ -144,6 +144,18 @@ importlib.import_module("tools.run_telegram_curriculum_wsgi")
             capture_output=True, text=True, timeout=15,
         )
         self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_bot_credentials_rejected_before_app_import(self):
+        for forbidden in ("BOT_TOKEN", "WEBHOOK_URL"):
+            with self.subTest(forbidden=forbidden):
+                result = self.run_import({
+                    "CIKGULAJU_ENV": "staging",
+                    "CIKGULAJU_CURRICULUM_API_ENABLED": "1",
+                    "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "x" * 32,
+                    forbidden: "must-not-be-used",
+                })
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("must not have Telegram bot credentials", result.stderr)
 
     def test_weak_token_rejected_before_app_import(self):
         result = self.run_import({
