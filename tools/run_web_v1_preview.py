@@ -251,7 +251,7 @@ def materials():
         if not isinstance(item, dict):
             return jsonify({"error": "invalid Telegram material response"}), 503
         safe = dict(item)
-        safe["approved"] = False
+        safe["download_enabled"] = False
         safe.pop("download_url", None)
         safe.pop("file_path", None)
         safe.pop("storage_path", None)
