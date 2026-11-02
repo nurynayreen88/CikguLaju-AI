@@ -22,6 +22,8 @@
 **Pupils:** Identify printed words and write three sentences independently.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.95, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.95, Activity 1, by writing numbers to match the illustrated body-part descriptions.
 **Teacher (10 min):** Record two main-idea responses (SP 3.2.1) and three written ability sentences (SP 4.2.2).
 **Pupils:** Submit individual reading and writing evidence.
 
