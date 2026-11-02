@@ -17,7 +17,7 @@ Pupils predict what existed in New York in 1900, read to check and complete TB p
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.62, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.62, Activity 2, by writing sentences about places in the year 1900.
+**Pupils:** Pupils complete Workbook p.62, Activity 2, by completing the text about a town in the year 1900 using the words in the box.
 Teacher checks each pupil's two facts from the New York text and one correctly written sentence using 'wasn't' or 'weren't'. Pupils point to supporting text.
 
 ## Closure (5 minutes)
