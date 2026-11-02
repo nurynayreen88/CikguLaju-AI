@@ -54,7 +54,7 @@ class CurriculumApiTest(unittest.TestCase):
         self.assertEqual(lessons.json["items"][0]["value"], "1")
 
     def test_unapproved_materials_not_exposed(self):
-        self.assertEqual(self.get("approved-materials", year=2).json["items"], [])
+        self.assertEqual(self.get("approved-materials", year=2).status_code, 503)
 
     def test_invalid_year(self):
         self.assertEqual(self.get("subjects", year=99).status_code, 400)
