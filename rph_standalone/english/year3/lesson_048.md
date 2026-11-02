@@ -16,8 +16,8 @@ Teacher plays a suitable action chant and models contractions such as 'I'm' and 
 Pupils read Part A of the SOW worksheet and mark statements Yes or No. Teacher guides revision tasks and pupils write short descriptions of pictured actions using present continuous.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.24, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.24, Activity 1, by correcting statements about sports and everyday activities.
+**Teacher:** Use the original CikguLaju review sheet `materials/lesson_048_present_continuous_review.md` to assess sentence correction, present-continuous descriptions and spoken contractions.
+**Pupils:** Correct four new sentences, describe three mimed actions and say contractions aloud; do not repeat Workbook p.24, Activity 1.
 Teacher checks written descriptions and pronunciation of contractions. Pupils complete a brief self-assessment.
 
 ## Closure (5 minutes)
