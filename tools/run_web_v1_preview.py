@@ -264,7 +264,10 @@ def english_approved_rph():
         return jsonify({"error": "existing account required"}), 403
     if os.environ.get("CIKGULAJU_ENV") != "staging" or os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") != "1":
         return jsonify({"error": "RPH downloads not enabled"}), 503
-    # Fail closed until an atomic debit and production-parity renderer are wired.\n    # The release-ready gate alone does not authorize unmetered downloads.\n    return jsonify({"error": "Shared Telegram generation and quota accounting not connected"}), 503\n    if not request.is_json or (request.content_length or 0) > 2048:
+    # Fail closed until an atomic debit and production-parity renderer are wired.
+    # The release-ready gate alone does not authorize unmetered downloads.
+    return jsonify({"error": "Shared Telegram generation and quota accounting not connected"}), 503
+    if not request.is_json or (request.content_length or 0) > 2048:
         return jsonify({"error": "invalid request"}), 400
     payload = request.get_json(silent=True)
     if not isinstance(payload, dict) or set(payload) != {"year", "lesson_no", "format"}:
