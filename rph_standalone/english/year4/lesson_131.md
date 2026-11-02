@@ -1,0 +1,32 @@
+# English Year 4 — Lesson 131: Reading 25
+
+**Topic:** Get active!  
+**Main SP:** 3.2.2  
+**Complementary SP:** 3.2.1  
+**Duration:** 60 minutes  
+**References:** resources/lesson_131_sports_reading_main_idea_pbd_DRAFT.md; SB p.94 Activities 1–3; TB pp.140–141; flashcards; Year 4 SOW Lesson 131
+
+## Set induction (10 minutes)
+**Teacher:** Follow TB warm-up and sports vocabulary.
+**Pupils:** Recall sports vocabulary.
+
+## Activity 1 (15 minutes)
+**Teacher:** Model identifying the main idea from the opening of Activity 1, then ask pupils to read independently and state the central message.
+**Pupils:** Read Activity 1 and identify the main idea.
+
+## Activity 2 (20 minutes)
+**Teacher:** Ask groups to choose a suitable story title and justify it using one main-idea clue from the text.
+**Pupils:** Choose a suitable title and justify it.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Assign Workbook p.78, Activity 2 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the reading task, check pupils' understanding of the text and supporting details as evidence for the main Reading SP.
+**Pupils:** Complete Workbook p.78, Activity 2; look at the sports picture and complete the sentences using the correct comparative or superlative forms.
+
+## Closure (5 minutes)
+**Teacher:** Lead a sports mime review and ask pupils to identify each sport using a complete sentence.
+**Pupils:** Mime a sport for classmates to guess.
+
+**PBD:** Check pupils' answers supported by specific details in the sports text for main Reading SP 3.2.2; assess their identification of the overall main idea and justified title choice for complementary Reading SP 3.2.1. Workbook p.78 provides written comparative practice but does not replace the SB reading task.  
+**Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
