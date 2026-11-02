@@ -17,7 +17,7 @@ Pupils describe family members using superlatives, complete the optional activit
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.79, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.79, Activity 2, by choosing comparative adjectives to describe the people and planets.
+**Pupils:** Pupils complete Workbook p.79, Activity 2, by reading the questions and answering about themselves using superlative adjectives.
 Teacher listens to two family comparisons using superlatives. Pupils then complete the Unit 10 self-assessment worksheet.
 
 ## Closure (5 minutes)
