@@ -73,6 +73,24 @@ class TelegramRphBridgeTests(unittest.TestCase):
                 "/internal/curriculum/v1/approved-materials?year=2&subject=ENGLISH&lesson=93")
         self.assertEqual(response.status_code, 401)
 
+    def test_http_route_rejects_invalid_selections(self):
+        import os
+        from flask import Flask
+        from web.telegram_curriculum_api import create_curriculum_blueprint
+        app = Flask(__name__)
+        app.register_blueprint(create_curriculum_blueprint(lambda: self.db))
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "x" * 40}):
+            client = app.test_client()
+            for query in ("year=2&subject=ENGLISH&lesson=0",
+                          "year=2&subject=UNKNOWN&lesson=93",
+                          "year=2&subject=ENGLISH&lesson=93&lesson=94",
+                          "year=2&subject=ENGLISH&lesson=-1"):
+                response = client.get(
+                    "/internal/curriculum/v1/approved-materials?" + query,
+                    headers={"Authorization": "Bearer " + "x" * 40})
+                self.assertEqual(response.status_code, 400, query)
+
     @patch("web.telegram_english_rph_bridge.load_english_rph", return_value=None)
     def test_missing_rph_not_exposed(self, reader):
         self.assertEqual(verified_english_rph_metadata(self.db, 2, 93), [])
