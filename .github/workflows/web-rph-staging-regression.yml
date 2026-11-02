@@ -30,4 +30,5 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_document_authorization.py' -v
           python -m unittest discover -s tests -p 'test_web_renderer_input_guards.py' -v
           python -m unittest discover -s tests -p 'test_web_rph_download_pipeline.py' -v
+          python -m unittest discover -s tests -p 'test_web_real_document_pipeline.py' -v
           python -m unittest discover -s tests -p 'test_web_generation_fail_closed.py' -v
