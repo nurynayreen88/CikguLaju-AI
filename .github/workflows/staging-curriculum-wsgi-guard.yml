@@ -10,6 +10,7 @@ on:
       - 'tests/test_verified_pdp_navigation_limit.py'
       - 'tests/test_pjpk_component_isolation.py'
       - 'tests/test_pjpk_authoritative_http.py'
+      - 'tests/test_telegram_curriculum_pjpk_routes.py'
       - 'web/authoritative_http_source.py'
       - 'web/telegram_curriculum_api.py'
       - 'web_v1_dropdown_catalog.py'
@@ -36,3 +37,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_verified_pdp_navigation_limit.py' -v
           python -m unittest discover -s tests -p 'test_pjpk_component_isolation.py' -v
           python -m unittest discover -s tests -p 'test_pjpk_authoritative_http.py' -v
+          python -m unittest discover -s tests -p 'test_telegram_curriculum_pjpk_routes.py' -v
