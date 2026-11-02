@@ -16,8 +16,8 @@ Teacher guides the picture guessing game from Student's Book p.29 Activity 4. Pu
 Pupils prepare cut-out cards and play the speaking-and-listening guessing game from Teacher's Book p.52 Activity 1. Teacher monitors pronunciation and use of positive and negative present continuous sentences.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.21, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.21, Activity 2, by matching questions about actions to short answers.
+**Teacher:** Use the original action question cards `materials/lesson_044_action_question_information_gap.md`; assess three questions, three responses and one spoken description.
+**Pupils:** Play a paired action-guessing information-gap game; do not repeat Workbook p.21, Activity 2.
 Teacher observes descriptive speaking and understanding of short questions. Pupils demonstrate one exchange.
 
 ## Closure (5 minutes)
