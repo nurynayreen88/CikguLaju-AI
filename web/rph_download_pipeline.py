@@ -11,6 +11,8 @@ from web.rph_delivery_quota import authorize_rendered_document
 def prepare_approved_download(rph, fmt, account, telegram_user_id,
                               supabase_url, secret_key, *, debit=None,
                               renderer=None):
+    if fmt not in ("docx", "pdf"):
+        raise ValueError("Unsupported document format")
     if renderer is None:
         renderer = render_approved_rph
     document, mime = renderer(rph, fmt)
