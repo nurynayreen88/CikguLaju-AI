@@ -16,6 +16,8 @@ Teacher models simple comparisons using willing volunteers and gives spoken inst
 Pupils listen to five True/False comparative sentences, record answers and explain corrections aloud. They complete Student's Book p.97 Activity 4 and practise a respectful quiz in groups.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.79, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.79, Activity 2, by choosing the correct comparative adjectives in the picture sentences.
 Teacher reads two comparative statements. Pupils mark true or false, correct one statement and give a respectful spoken comparison.
 
 ## Closure (5 minutes)
