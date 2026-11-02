@@ -4,9 +4,7 @@ The endpoint must be deployed alongside the Telegram runtime (or backed by its
 authoritative datastore). This module never silently falls back to a snapshot.
 No credentials, API URLs, or file paths are returned to browser clients.
 """
-import hmac
 from urllib.parse import urlsplit
-import requests
 from web.authoritative_curriculum_source import (
     CurriculumKey, SharedSourceUnavailable, validate_curriculum_key,
 )
@@ -21,7 +19,10 @@ class AuthoritativeHttpCurriculumSource:
             raise ValueError("Verified HTTPS source and strong service token required")
         self.base_url = base_url.rstrip("/")
         self.token = token
-        self.transport = transport or requests.Session()
+        if transport is None:
+            import requests
+            transport = requests.Session()
+        self.transport = transport
 
     def _read(self, endpoint, params):
         try:
@@ -42,7 +43,7 @@ class AuthoritativeHttpCurriculumSource:
             if not all(isinstance(item, dict) for item in data["items"]):
                 raise SharedSourceUnavailable("Invalid curriculum records")
             return data["items"]
-        except (requests.RequestException, ValueError, TypeError) as exc:
+        except (ValueError, TypeError, OSError) as exc:
             raise SharedSourceUnavailable("Authoritative source unavailable") from exc
 
     def list_subjects(self, year):
