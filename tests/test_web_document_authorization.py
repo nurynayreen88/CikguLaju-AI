@@ -38,7 +38,7 @@ class DocumentAuthorizationTests(unittest.TestCase):
     def test_wrong_identity_or_empty_document_rejected(self):
         for account, document in (({**self.account, "telegram_user_id": 999}, b"doc"),
                                   (self.account, b""),
-                                  ({"authenticated": False, **{"telegram_user_id": 123}}, b"doc")):
+                                  ({**self.account, "authenticated": False}, b"doc")):
             with self.subTest(account=account, document=document):
                 with self.assertRaises(ValueError):
                     self.authorize(account, document)
