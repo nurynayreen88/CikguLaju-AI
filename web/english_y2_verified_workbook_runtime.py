@@ -5,6 +5,18 @@ retain the original handlers. No database mutation or Telegram side effects.
 """
 from pathlib import Path
 
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+_PARTS = {
+    1: ((1, 40, 'y12_workbook_001_040.pdf'), (41, 80, 'y12_workbook_041_080.pdf'), (81, 120, 'y12_workbook_081_120.pdf'), (121, 129, 'y12_workbook_121_129.pdf')),
+    3: ((1, 80, 'y3_workbook_001_080.pdf'), (81, 96, 'y3_workbook_081_096.pdf')),
+    4: ((2, 60, 'y4_workbook_002_060.pdf'), (61, 110, 'y4_workbook_061_110.pdf')),
+}
+
+
+def _local_pages_exist(year, start, end):
+    return all(any(a <= p <= b and (_REPO_ROOT / 'books' / 'english' / name).is_file()
+                   for a, b, name in _PARTS[year]) for p in range(start, end + 1))
+
 from resources.english.y2.workbook_download_router import resolve_lesson
 from resources.english.y1.workbook_verified_map import Y1_WB_VERIFIED_LESSON_MAP
 from resources.english.y3.workbook_verified_map import Y3_WB_VERIFIED_LESSON_MAP
@@ -35,11 +47,12 @@ def install(runtime):
             return resolve_lesson(number)
         if year == 1:
             pair = Y1_WB_VERIFIED_LESSON_MAP.get(number)
-            return {"source_page_start": pair[0], "source_page_end": pair[1]} if pair else None
+            return {"source_page_start": pair[0], "source_page_end": pair[1]} if pair and _local_pages_exist(1, pair[0], pair[1]) else None
         row = (Y3_WB_VERIFIED_LESSON_MAP if year == 3 else EN4_WB_VERIFIED).get(number)
         if not isinstance(row, dict) or not isinstance(row.get("pdf"), int):
             return None
-        return {"source_page_start": row["pdf"], "source_page_end": row["pdf"]}
+        p = row["pdf"]
+        return {"source_page_start": p, "source_page_end": p} if _local_pages_exist(year, p, p) else None
 
     def available_with_verified_workbook(ss):
         items = list(available(ss) or [])
