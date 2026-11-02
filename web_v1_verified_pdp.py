@@ -31,8 +31,10 @@ class VerifiedPdpCatalog:
                    WHERE year_label=? AND subject=? AND verified=1
                      AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'
                    ORDER BY sequence_no, id LIMIT ?""",
-                (f"Tahun {year}", SUBJECTS[subject_code], limit),
+                (f"Tahun {year}", SUBJECTS[subject_code], limit + 1),
             ).fetchall()
+        if len(rows) > limit:
+            raise ValueError("verified curriculum exceeds navigation limit")
         return [
             {"id": r[0], "pdp_no": r[1], "unit_title": r[2],
              "topic": r[3], "subtopic": r[4], "skill_focus": r[5]}
