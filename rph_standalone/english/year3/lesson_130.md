@@ -17,7 +17,7 @@ Pupils discuss their own holidays, then complete Student's Book p.85 Activity 2 
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.68, Activity 3; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.68, Activity 3, by matching holiday activities with the children in the pictures.
+**Pupils:** Pupils complete Workbook p.68, Activity 3, by following the lines from each child to the holiday activity, then writing sentences about what they did.
 Teacher listens to each pupil's short holiday recount and asks one follow-up question. Pupils identify one detail from a sentence strip.
 
 ## Closure (5 minutes)
