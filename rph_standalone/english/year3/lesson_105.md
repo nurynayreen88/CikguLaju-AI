@@ -16,6 +16,8 @@ Teacher guides the Grammar Box and a 'Do not' mime game; pupils practise positiv
 Teacher introduces rule symbols and guides Activity 3. Pupils write short rules and check punctuation.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.54, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.54, Activity 2, by writing three rules for their bedroom.
 Teacher checks each pupil's two written rules for clear meaning, capital letters and end punctuation. Pupils correct one sentence.
 
 ## Closure (5 minutes)
