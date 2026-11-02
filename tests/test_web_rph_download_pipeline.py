@@ -28,7 +28,8 @@ class PipelineTests(unittest.TestCase):
 
     def test_render_failure_never_debits(self):
         for renderer in (lambda r, f: (b"", PDF),
-                         lambda r, f: (b"data", "text/plain")):
+                         lambda r, f: (b"data", "text/plain"),
+                         lambda r, f: (b"not-pdf", PDF)):
             with self.subTest(renderer=renderer):
                 with self.assertRaises(ValueError):
                     self.run_pipeline(renderer)
@@ -58,6 +59,17 @@ class PipelineTests(unittest.TestCase):
                 "https://example.supabase.co", "secret",
                 debit=self.debit, renderer=renderer)
         self.assertEqual(render_calls, [])
+        self.assertEqual(self.calls, [])
+
+    def test_invalid_docx_signature_does_not_charge(self):
+        with self.assertRaises(ValueError):
+            prepare_approved_download(
+                object(), "docx", self.account, 123,
+                "https://example.supabase.co", "secret",
+                debit=self.debit,
+                renderer=lambda r, f: (
+                    b"not-a-zip",
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document"))
         self.assertEqual(self.calls, [])
 
 
