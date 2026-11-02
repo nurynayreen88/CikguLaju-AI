@@ -36,6 +36,14 @@ class TelegramRphBridgeTests(unittest.TestCase):
             self.assertEqual(verified_english_rph_metadata(self.db, 2, row_id), [])
         reader.assert_not_called()
 
+    @patch("web.telegram_english_rph_bridge.load_english_rph")
+    def test_duplicate_verified_sequence_is_rejected(self, reader):
+        with sqlite3.connect(self.db) as con:
+            con.execute("INSERT INTO rpt_entries VALUES (?,?,?,?,?,?)",
+                        (120, 12, "Tahun 2", "Bahasa Inggeris", 1, ""))
+        self.assertEqual(verified_english_rph_metadata(self.db, 2, 93), [])
+        reader.assert_not_called()
+
     @patch("web.telegram_english_rph_bridge.load_english_rph", return_value=None)
     def test_missing_rph_not_exposed(self, reader):
         self.assertEqual(verified_english_rph_metadata(self.db, 2, 93), [])
