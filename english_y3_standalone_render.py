@@ -52,7 +52,8 @@ def apply(st, rows):
         result["PENTAKSIRAN"] = assessment
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
     # Internal QA notes belong in source audits, never in teacher-facing RPH.
-    closure = re.split(r"(?im)^\\s*\\*\\*(?:QA(?: status)?|Status):\\*\\*", closure, maxsplit=1)[0].strip()\n    result["PENUTUP"] = closure
+    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status):\*\*", closure, maxsplit=1)[0].strip()
+    result["PENUTUP"] = closure
     ref = re.search(r"(?m)^\*\*References:\*\*\s*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
