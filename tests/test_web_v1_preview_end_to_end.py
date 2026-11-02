@@ -25,14 +25,15 @@ class PreviewEndToEndTests(unittest.TestCase):
                     ])
             with patch.dict(os.environ, {"CIKGULAJU_WEB_PREVIEW_DB": str(db)}):
                 client = app.test_client()
-                self.assertEqual([x["value"] for x in client.get("/api/options?kind=subjects&year=3").json], ["ENGLISH"])
-                self.assertEqual([x["value"] for x in client.get("/api/options?kind=units&year=3&subject=ENGLISH").json], ["Welcome"])
-                result = client.get("/api/options?kind=pdp&year=3&subject=ENGLISH&unit=Welcome")
-                self.assertEqual(result.status_code, 200)
-                self.assertEqual([x["value"] for x in result.json], ["11", "12"])
-                self.assertTrue(all(not x["standalone_rph_verified"] for x in result.json))
-                self.assertEqual(client.get("/api/options?kind=pdp&year=3&subject=ENGLISH&unit=Secret").json, [])
-                self.assertEqual(client.post("/api/generate").status_code, 404)
+                # The temporary catalog must not be exposed without a signed session.
+                for query in (
+                    "kind=subjects&year=3",
+                    "kind=units&year=3&subject=ENGLISH",
+                    "kind=pdp&year=3&subject=ENGLISH&unit=Welcome",
+                    "kind=pdp&year=3&subject=ENGLISH&unit=Secret",
+                ):
+                    self.assertIn(client.get("/api/options?" + query).status_code, (401, 503))
+                self.assertEqual(client.post("/api/generate").status_code, 503)
                 self.assertFalse(client.get("/health").json["generation_enabled"])
 
 
