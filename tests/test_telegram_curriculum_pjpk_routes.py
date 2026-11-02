@@ -54,6 +54,30 @@ class CurriculumPJPKRoutesTests(unittest.TestCase):
         response = self.get("units", year=2, subject="PJPK", component="PJ", extra="x")
         self.assertEqual(response.status_code, 400)
 
+    def test_api_disabled_by_default(self):
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "0"}):
+            response = self.get("subjects", year=2)
+        self.assertEqual(response.status_code, 503)
+
+    def test_wrong_token_is_rejected(self):
+        response = self.client.get(
+            "/internal/curriculum/v1/subjects?year=2",
+            headers={"Authorization": "Bearer " + "z" * 32},
+        )
+        self.assertEqual(response.status_code, 401)
+
+    def test_missing_master_database_fails_closed(self):
+        app = Flask("missing_master")
+        app.register_blueprint(create_curriculum_blueprint(lambda: None))
+        response = app.test_client().get(
+            "/internal/curriculum/v1/subjects?year=2", headers=self.headers
+        )
+        self.assertEqual(response.status_code, 503)
+
+    def test_materials_remain_unavailable_without_approved_mapping(self):
+        response = self.get("approved-materials", year=2, subject="PJPK", lesson=1)
+        self.assertEqual(response.status_code, 503)
+
     def test_no_token_is_rejected(self):
         response = self.client.get("/internal/curriculum/v1/subjects?year=2")
         self.assertEqual(response.status_code, 401)
