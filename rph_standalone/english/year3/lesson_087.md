@@ -16,8 +16,8 @@ Teacher guides Activity 4 from Teacher's Book p.91. Pupils ask and answer about 
 Pupils draw their own omelette and mingle, asking 'Are there any tomatoes in your omelette?' and similar questions to find classmates with matching ingredients.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (Workbook, provisional):** Guide pupils to Workbook p.45, Activity 2 to practise questions about omelette ingredients; check answers and note pupils who need support.
-**Pupils (Workbook, provisional):** Complete the ingredient-question task using 'Is there any ...?' and 'Are there any ...?' as appropriate.
+**Teacher (Workbook):** Guide pupils through Workbook p.45, Activity 2 (Anna's and Greg's omelettes); check individual answers to the 'Is there any ...?' and 'Are there any ...?' questions.
+**Pupils (Workbook):** Study both omelette pictures and write answers to the eight ingredient questions in Workbook p.45, Activity 2.
 **Teacher:** Observe each pupil asking one ingredient question, answering a partner and describing an ingredient.
 **Pupils:** Ask and answer about their omelette ingredients.
 
