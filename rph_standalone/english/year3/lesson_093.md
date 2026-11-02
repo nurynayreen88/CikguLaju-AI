@@ -4,7 +4,7 @@
 **Main SK/SP:** Reading 3.2 / 3.2.1
 **Complementary SK/SP:** Writing 4.2 / 4.2.5
 **Duration:** 60 minutes
-**References:** Student's Book p.61; Teacher's Book pp.96–97; food flashcards.
+**References:** Student's Book p.61; Teacher's Book pp.96–97; Class CD1 Track 97 (teacher-confirmed Tony's Pizza recording); food flashcards.
 
 ## Set Induction (5 minutes)
 Teacher reviews food vocabulary using the warm-up from Teacher's Book p.96. Pupils name ingredients.
