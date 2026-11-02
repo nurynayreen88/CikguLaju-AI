@@ -18,7 +18,7 @@
 **Teacher:** Read the model text; rehearse family descriptions orally; use the Writing Tip to draft and revise two or more sentences. **Pupils:** Complete the referenced tasks, practising both standards.
 
 ## Reinforcement / PBD (10 minutes)
-**Workbook assessment:** Pupils complete Workbook p.6, Activity 2, by drawing their family and writing a short description.
+**CikguLaju original assessment:** Pupils use `materials/lesson_014_writing_family_revision.md` to write three family sentences, check capitals and full stops, and revise one sentence; do not repeat Workbook p.6, Activity 2.
 **Teacher:** Check punctuation and written drafts with feedback. **Pupils:** Submit two family-description sentences with capitals and full stops, then correct one punctuation error.
 
 ## Closure (5 minutes)
