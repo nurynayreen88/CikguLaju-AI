@@ -36,4 +36,6 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_rph_http_integration.py' -v
           python -m unittest discover -s tests -p 'test_web_exact_vip_expiry.py' -v
           python -m unittest discover -s tests -p 'test_web_download_release_gate.py' -v
+          python -m unittest discover -s tests -p 'test_web_shared_source_provenance.py' -v
+          python -m unittest discover -s tests -p 'test_web_shared_catalog_http.py' -v
           python -m unittest discover -s tests -p 'test_web_generation_fail_closed.py' -v
