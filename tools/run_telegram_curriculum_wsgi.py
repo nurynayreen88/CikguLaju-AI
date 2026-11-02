@@ -1,10 +1,19 @@
-"""Optional WSGI entrypoint for staging the Telegram curriculum API.
+"""Staging-only WSGI entrypoint for the Telegram curriculum read-only API.
 
-Production's existing `gunicorn app:app` is unchanged. A future controlled
-deployment may select `gunicorn tools.run_telegram_curriculum_wsgi:app`.
-Never import this module from Web preview or tests: it imports Telegram app.py.
+Never select this entrypoint for production. Refuse startup before importing
+app.py unless an isolated staging runtime has explicitly opted in.
+Production continues using gunicorn app:app.
 """
 import os
+
+# Check BEFORE importing Telegram app.py: its module-level startup may have
+# side effects, so a misconfigured runtime must fail without importing it.
+if os.environ.get("CIKGULAJU_ENV") != "staging":
+    raise RuntimeError("Telegram curriculum WSGI requires isolated staging environment")
+if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") != "1":
+    raise RuntimeError("Telegram curriculum API must be explicitly enabled")
+if len(os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")) < 32:
+    raise RuntimeError("Dedicated curriculum API token must be at least 32 characters")
 
 from app import app, DB_PATH, CIKGULAJU_DB_V2600_ACTIVE
 from web.telegram_curriculum_api import create_curriculum_blueprint
@@ -17,5 +26,4 @@ def _active_primary_db():
     return DB_PATH
 
 
-if os.environ.get("CIKGULAJU_CURRICULUM_API_ENABLED") == "1":
-    app.register_blueprint(create_curriculum_blueprint(_active_primary_db))
+app.register_blueprint(create_curriculum_blueprint(_active_primary_db))
