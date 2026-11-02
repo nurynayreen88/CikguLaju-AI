@@ -1,6 +1,6 @@
 """Read-only dropdown options for Web V1 staging."""
 from web_v1_verified_topics import SUBJECTS
-from web_v1_verified_pdp import VerifiedPdpCatalog
+from web_v1_verified_pdp import VerifiedPdpCatalog, list_explicit_pjpk_entries
 
 
 def subject_options(year):
@@ -28,16 +28,26 @@ def available_subject_options(database_path, year):
     available = {row[0] for row in rows}
     return [{'value': code, 'label': label} for code, label in SUBJECTS.items() if label in available]
 
-def unit_options(database_path, year, subject_code):
-    records = VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
+def _navigation_records(database_path, year, subject_code, component=None):
+    if subject_code == 'PJPK':
+        if component not in ('PJ', 'PK'):
+            raise ValueError('PJPK requires verified PJ or PK component')
+        return list_explicit_pjpk_entries(database_path, year, component)
+    if component not in (None, ''):
+        raise ValueError('component only applies to PJPK')
+    return VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
+
+
+def unit_options(database_path, year, subject_code, component=None):
+    records = _navigation_records(database_path, year, subject_code, component)
     names = dict.fromkeys((r.get('unit_title') or '').strip() for r in records)
     return [{'value': name, 'label': name} for name in names if name]
 
 
-def pdp_options(database_path, year, subject_code, unit_title):
+def pdp_options(database_path, year, subject_code, unit_title, component=None):
     if not isinstance(unit_title, str) or not unit_title.strip() or len(unit_title) > 300:
         raise ValueError('invalid unit')
-    records = VerifiedPdpCatalog(database_path).list_pdp(year=year, subject_code=subject_code)
+    records = _navigation_records(database_path, year, subject_code, component)
     available_units = {(r.get('unit_title') or '').strip() for r in records}
     if unit_title.strip() not in available_units:
         return []
