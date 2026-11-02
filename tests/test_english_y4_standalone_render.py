@@ -24,7 +24,7 @@ LESSON = """# English Year 4 — Lesson 14
 **Teacher:** Summarise.
 **Pupils:** Reflect.
 
-**Status:** VERIFIED for synthetic test.
+**Status:** READY for synthetic test.
 """
 
 class Year4Tests(unittest.TestCase):
@@ -42,7 +42,7 @@ class Year4Tests(unittest.TestCase):
 
     def test_project_pbd(self):
         lesson = """# Lesson 80
-**Resources:** SOW teacher-selected topic
+**Resources:** SOW teacher-selected topic\n**Status:** READY
 ## Set induction (10 minutes)
 **Teacher:** Introduce topic.
 **Pupils:** Discuss.
