@@ -93,6 +93,23 @@ class Year4Tests(unittest.TestCase):
         original = {"PENUTUP": "existing"}
         self.assertIs(adapter.apply({"subject":"English","year":"4","lesson_no":161}, original), original)
 
+    def test_source_is_not_modified(self):
+        lesson = """# Lesson 14
+**Materials:** Student's Book p.10
+## Set induction
+**Teacher:** Introduce.
+## Activity 1
+**Pupils:** Write.
+## Closure
+**Teacher:** Recap.
+"""
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp, "lesson_014.md")
+            path.write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                adapter.apply({"subject":"English","year":"4","lesson_no":14}, {})
+            self.assertEqual(path.read_text(encoding="utf-8"), lesson)
+
     def test_year3_untouched(self):
         original = {"PENUTUP":"unchanged"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 3","lesson_no":14}, original), original)
