@@ -58,7 +58,7 @@ class TelegramAuthRoutesTests(unittest.TestCase):
         with patch.dict(os.environ, self.config, clear=True):
             login = self.client.post("/api/auth/telegram/widget", json=self.payload(12345))
             self.assertEqual(login.status_code, 200)
-            response = self.client.get("/api/auth/telegram/account")
+            response = self.client.get("/api/auth/telegram/session")
             self.assertEqual(response.status_code, 200)
             data = response.get_json()
             self.assertTrue(data["authenticated"])
@@ -68,7 +68,7 @@ class TelegramAuthRoutesTests(unittest.TestCase):
     def test_widget_capability_does_not_expose_bot_token(self):
         config = dict(self.config, CIKGULAJU_WEB_BOT_USERNAME="CikguLajuBot")
         with patch.dict(os.environ, config, clear=True):
-            data = self.client.get("/api/auth/telegram/capabilities").get_json()
+            data = self.client.get("/api/auth/capabilities").get_json()
             self.assertTrue(data["telegram_widget_enabled"])
             self.assertEqual(data["bot_username"], "CikguLajuBot")
             self.assertNotIn("token", str(data).lower())
