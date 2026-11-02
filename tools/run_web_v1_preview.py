@@ -188,7 +188,11 @@ def generate():
         return jsonify({"error": "existing account required"}), 403
     if os.environ.get("CIKGULAJU_ENV") != "staging" or os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") != "1":
         return jsonify({"error": "approved RPH generation not enabled"}), 503
-    # A successful HTTP download currently has no shared, atomic Telegram\n    # credit debit. Do not permit unlimited free downloads just because\n    # the staging renderer flag was enabled. This is intentionally fail-closed.\n    return jsonify({"error": "Shared Telegram generation and quota accounting not connected"}), 503\n    if not request.is_json or (request.content_length or 0) > 2048:
+    # A successful HTTP download currently has no shared, atomic Telegram
+    # credit debit. Do not permit unlimited free downloads just because
+    # the staging renderer flag was enabled. This is intentionally fail-closed.
+    return jsonify({"error": "Shared Telegram generation and quota accounting not connected"}), 503
+    if not request.is_json or (request.content_length or 0) > 2048:
         return jsonify({"error": "invalid request"}), 400
     payload = request.get_json(silent=True)
     if not isinstance(payload, dict) or set(payload) != {"lesson_id", "format"}:
