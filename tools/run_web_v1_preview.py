@@ -134,6 +134,12 @@ def shared_source_status():
     from web.shared_source_provenance import catalog_source_status
     from web.shared_domain_parity import parity_report
     catalog = catalog_source_status()
+    # A configured remote URL is not evidence of an available or verified API.
+    # The status endpoint must never claim parity from configuration alone.
+    catalog["authoritative_api_configured"] = bool(
+        os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+        and os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    )
     report = parity_report({"lesson_catalog": catalog["shared_source_verified"]})
     return jsonify({**catalog, **report})
 
