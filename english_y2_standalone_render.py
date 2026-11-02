@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parent / "rph_standalone" / "english" / "year2"
 
 def _section(source, name):
-    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*QA:|\Z)", source, re.S | re.M)
+    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):|\Z)", source, re.S | re.M)
     return match.group(1).strip() if match else ""
 
 def apply(st, rows):
@@ -36,7 +36,7 @@ def apply(st, rows):
     ]
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*QA:|\Z)", source, re.S | re.M)
+        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):|\Z)", source, re.S | re.M)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
@@ -51,7 +51,7 @@ def apply(st, rows):
         lines.append("Assessment / PBD\n" + assessment)
         result["PENTAKSIRAN"] = assessment
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
-    result["PENUTUP"] = closure
+    # Internal QA notes belong in source audits, never in teacher-facing RPH.\n    closure = re.split(r"(?im)^\\s*\\*\\*(?:QA(?: status)?|Status):\\*\\*", closure, maxsplit=1)[0].strip()\n    result["PENUTUP"] = closure
     ref = re.search(r"(?m)^\*\*References:\*\*\s*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
