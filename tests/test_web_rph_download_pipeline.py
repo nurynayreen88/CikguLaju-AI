@@ -47,6 +47,19 @@ class PipelineTests(unittest.TestCase):
         self.assertIsNone(result["document"])
         self.assertEqual(self.calls, [])
 
+    def test_invalid_format_never_renders_or_debits(self):
+        render_calls = []
+        def renderer(rph, fmt):
+            render_calls.append(fmt)
+            return b"data", PDF
+        with self.assertRaises(ValueError):
+            prepare_approved_download(
+                object(), "txt", self.account, 123,
+                "https://example.supabase.co", "secret",
+                debit=self.debit, renderer=renderer)
+        self.assertEqual(render_calls, [])
+        self.assertEqual(self.calls, [])
+
 
 if __name__ == "__main__":
     unittest.main()
