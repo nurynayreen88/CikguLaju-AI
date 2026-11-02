@@ -46964,19 +46964,21 @@ def send_document(cid, path, caption=''):
             found = _en4_supplementary_for_chat_20261102(cid)
             if found:
                 send(cid, '📄 Bahan tambahan untuk Lesson ini tersedia. Muat turun worksheet:',
-                     [[{'text': '📥 Download Worksheet', 'callback_data': 'en4supp20261102'}]])
+                     [[{'text': '📥 Download Worksheet', 'callback_data': 'en4supp20261102:%03d' % found[0]['lesson']}]])
     except Exception as exc:
         print('English supplementary prompt fallback:', repr(exc), flush=True)
     return result
 
 _EN4_SUPPLEMENTARY_CALLBACK_BASE_20261102 = callback
 def callback(cid, d):
-    if str(d or '') != 'en4supp20261102':
+    if not str(d or '').startswith('en4supp20261102:'):
         return _EN4_SUPPLEMENTARY_CALLBACK_BASE_20261102(cid, d)
     found = _en4_supplementary_for_chat_20261102(cid)
     if not found:
         return send(cid, 'Worksheet untuk Lesson ini tidak tersedia. Sila pilih Lesson semula.')
     item = found[0]
+    if str(d) != 'en4supp20261102:%03d' % item['lesson']:
+        return send(cid, 'Lesson telah berubah. Sila pilih Lesson semula untuk worksheet yang betul.')
     try:
         from docx import Document
         import tempfile
@@ -46992,11 +46994,11 @@ def callback(cid, d):
                 doc.add_heading(line[3:], level=2)
             else:
                 doc.add_paragraph(line.replace('**', '').replace('*', ''))
-        output = os.path.join(tempfile.gettempdir(),
-                              'CikguLaju_English_Y4_Lesson_%03d_Worksheet.docx' % item['lesson'])
-        doc.save(output)
-        return send_document(cid, output,
-                             'Worksheet English Year 4 Lesson %03d' % item['lesson'])
+        with tempfile.TemporaryDirectory(prefix='cikgulaju_en4_') as folder:
+            output = os.path.join(folder, 'CikguLaju_English_Y4_Lesson_%03d_Worksheet.docx' % item['lesson'])
+            doc.save(output)
+            return send_document(cid, output,
+                                 'Worksheet English Year 4 Lesson %03d' % item['lesson'])
     except Exception as exc:
         print('English supplementary download failed:', repr(exc), flush=True)
         return send(cid, 'Muat turun worksheet gagal. Sila cuba semula.')
