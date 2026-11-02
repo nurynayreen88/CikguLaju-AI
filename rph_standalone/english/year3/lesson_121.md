@@ -16,8 +16,8 @@ Teacher reviews key places and time expressions from the reading.
 Teacher reviews There weren't any and the Grammar Box, then guides Student's Book p.79 Activities 3 and 4. Pairs complete the comparison table and write at least two sentences about their hometown in the past, checking apostrophes, spelling and punctuation.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.62, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.62, Activity 2, by completing the text about a town in the year 1900 using the words provided in the box.
+**Teacher:** Use the original CikguLaju PBD sheet `materials/lesson_121_hometown_past_writing.md`; check the skill-specific responses without assigning the Workbook exercise again.
+**Pupils:** Write their own sentences comparing their town in the past and now using the new sheet.
 Teacher checks each pupil's two hometown sentences for clear past-time meaning, apostrophes, spelling and punctuation. Pupils correct one error.
 
 ## Closure (5 minutes)
