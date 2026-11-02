@@ -1,0 +1,20 @@
+name: English RPH internal note regression
+on:
+  pull_request:
+    paths:
+      - 'english_standalone_adapter.py'
+      - 'english_y2_standalone_render.py'
+      - 'english_y3_standalone_render.py'
+      - 'tests/test_english_rph_internal_notes.py'
+  push:
+    branches:
+      - 'fix/strip-internal-qa-from-english-rph-20261103'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p 'test_english_rph_internal_notes.py' -v
