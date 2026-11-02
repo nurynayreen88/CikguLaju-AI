@@ -24,5 +24,8 @@ def catalog_source_status(environ=None):
             return {"shared_source_verified": False, "reason": "Web catalog differs from shared catalog"}
     except (OSError, ValueError):
         return {"shared_source_verified": False, "reason": "catalog source unavailable"}
-    return {"shared_source_verified": True,
-            "reason": "Web and shared catalog resolve to the same database file"}
+    # Same inode is only local file identity. It does NOT prove this file is
+    # the authoritative live Telegram source or receives future updates.
+    return {"shared_source_verified": False,
+            "same_local_file": True,
+            "reason": "Same local file, but authoritative live source not verified"}
