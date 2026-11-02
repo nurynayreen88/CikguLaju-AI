@@ -16,8 +16,8 @@ Teacher gives animal clues such as 'I'm big and I give you milk'. Pupils listen 
 Teacher guides Activity 3. Pupils listen for animal details, then write two short sentences using 'They'.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.53, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.53, Activity 2, by finding and colouring the farm animals in the picture, then writing sentences about them.
+**Teacher:** Use the original listening sheet and teacher script in `materials/lesson_102_farm_animal_listening.md`; check individual responses instead of repeating Workbook p.53, Activity 2.
+**Pupils:** Listen to six new farm-animal clues and respond individually.
 Teacher gives two animal clues and checks each pupil's identification. Pupils submit two short sentences using 'They' for spelling and clarity checks.
 
 ## Closure (5 minutes)
