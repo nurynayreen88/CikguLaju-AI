@@ -48,7 +48,7 @@ class WebMaterialsRouteTests(unittest.TestCase):
     def test_verified_empty_list(self):
         response, adapter = self._call()
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"items": []})
+        self.assertEqual(response.json, {"items": [], "download_enabled": False})
         key = adapter.return_value.get_approved_materials.call_args.args[0]
         self.assertEqual((key.year, key.subject_code, key.lesson_id), (2, "ENGLISH", "93"))
 
