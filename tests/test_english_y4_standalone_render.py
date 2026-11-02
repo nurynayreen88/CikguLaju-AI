@@ -82,6 +82,17 @@ class Year4Tests(unittest.TestCase):
             self.assertNotIn("Differentiation", result["PENUTUP"])
             self.assertNotIn("Observe presentation", result["PENUTUP"])
 
+    def test_missing_lesson_preserves_existing_rows(self):
+        original = {"PENUTUP": "existing"}
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"4","lesson_no":99}, original)
+            self.assertIs(result, original)
+
+    def test_invalid_lesson_preserves_existing_rows(self):
+        original = {"PENUTUP": "existing"}
+        self.assertIs(adapter.apply({"subject":"English","year":"4","lesson_no":161}, original), original)
+
     def test_year3_untouched(self):
         original = {"PENUTUP":"unchanged"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 3","lesson_no":14}, original), original)
