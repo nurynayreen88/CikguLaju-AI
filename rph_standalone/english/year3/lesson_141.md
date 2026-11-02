@@ -17,7 +17,7 @@ Pairs take turns remembering one of five questions posted around the room, retur
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.72, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.72, Activity 1, by completing a holiday postcard with past-tense words.
+**Pupils:** Pupils complete Workbook p.72, Activity 1, by completing the sentences with 'and' or 'but'.
 Teacher asks pupils to locate two answers in James's email and identify one example of correct email punctuation.
 
 ## Closure (5 minutes)
