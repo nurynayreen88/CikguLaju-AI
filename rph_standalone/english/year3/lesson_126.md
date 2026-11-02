@@ -17,7 +17,7 @@ Pupils answer the blue-box prompts on Student's Book p.81, draft a diary entry a
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.64, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.64, Activity 2, by writing short sentences about their weekend.
+**Pupils:** Pupils complete Workbook p.64, Activity 2, by finding the adjectives hidden in the word-search puzzle.
 Teacher checks each pupil's diary for clear past-time details, spelling and punctuation. Pupils correct one error.
 
 ## Closure (5 minutes)
