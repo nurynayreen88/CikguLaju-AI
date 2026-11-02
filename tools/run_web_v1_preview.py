@@ -232,7 +232,8 @@ def english_rph_capabilities():
         "renderer_ready": not missing,
         "missing_packages": missing,
         "staging_generation_enabled": enabled,
-        "telegram_generation_parity_verified": False,\n        "shared_quota_debit_verified": False,
+        "telegram_generation_parity_verified": False,
+        "shared_quota_debit_verified": False,
         "note": "Staging renderer only; Telegram generation and quota parity not verified.",
     })
 
