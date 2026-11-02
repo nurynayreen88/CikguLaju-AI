@@ -18,6 +18,7 @@
 **Teacher:** Read p.11; answer individual question strips; compare answers; discuss characters and complete optional follow-up. **Pupils:** Complete the lesson activities and practise both skills.
 
 ## Reinforcement / PBD (10 minutes)
+**Workbook assessment:** Pupils complete Workbook p.6, Activity 1, by reading and correcting a short description of a family member.
 **Teacher:** Assess specific reading details and oral descriptions. **Pupils:** Find two facts in the reading text and describe one character using a complete phrase.
 
 ## Closure (5 minutes)

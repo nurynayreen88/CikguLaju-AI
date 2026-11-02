@@ -18,6 +18,7 @@
 **Teacher:** Demonstrate o'clock and half past; guide vocabulary and Activity 1; practise questions and answers in pairs. **Pupils:** Complete the lesson activities and practise both skills.
 
 ## Reinforcement / PBD (10 minutes)
+**Workbook assessment:** Pupils complete Workbook p.9, Activity 4, by reading the pictured clock times.
 **Teacher:** Check telling-the-time exchanges and listening. **Pupils:** Ask and answer two clock-time questions using 'o'clock' and 'half past'.
 
 ## Closure (5 minutes)
