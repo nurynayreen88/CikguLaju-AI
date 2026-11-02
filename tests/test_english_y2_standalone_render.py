@@ -53,6 +53,26 @@ class Year2Tests(unittest.TestCase):
         result = adapter.apply({"subject":"English","year":"Year 2","lesson_no":1}, {})
         self.assertEqual(result, {})  # Source QA status remains DRAFT
 
+    def test_activity_ten_not_mistaken_for_activity_one(self):
+        lesson = """# Lesson 14
+## Set Induction
+**Teacher:** Begin.
+## Activity 10
+**Pupils:** Wrong numbered activity.
+## Activity 2
+**Pupils:** Correct numbered activity.
+## Assessment
+**Teacher:** Check learning.
+## Closure
+**Pupils:** Reflect.
+"""
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_014.md").write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                result = adapter.apply({"subject":"English","year":"2","lesson_no":14}, {})
+            self.assertIn("Correct numbered activity", result["AKTIVITI UTAMA"])
+            self.assertNotIn("Wrong numbered activity", result["AKTIVITI UTAMA"])
+
     def test_other_year_untouched(self):
         original = {"PENUTUP":"original"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 4","lesson_no":14}, original), original)
