@@ -34,7 +34,8 @@ class SharedCatalogHttpTests(unittest.TestCase):
                 "CIKGULAJU_SHARED_CATALOG_DB": str(path)}):
                 response = self.client.get("/api/source/status")
             self.assertEqual(response.status_code, 200)
-            self.assertTrue(response.get_json()["shared_source_verified"])
+            self.assertFalse(response.get_json()["shared_source_verified"])
+            self.assertTrue(response.get_json()["same_local_file"])
             self.assertNotIn(str(path), response.get_data(as_text=True))
 
 
