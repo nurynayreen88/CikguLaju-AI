@@ -46684,6 +46684,19 @@ def _rph_rows(st, *args, **kwargs):
         return rows
 # === END ENGLISH YEAR 2 STANDALONE RPH RENDER ADAPTER ===
 
+# === ENGLISH YEAR 4 STANDALONE RPH RENDER ADAPTER ===
+_EN_Y4_STANDALONE_ROWS_BASE = _rph_rows
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_Y4_STANDALONE_ROWS_BASE(st, *args, **kwargs)
+    try:
+        from english_y4_standalone_render import apply as _apply_y4_standalone
+        return _apply_y4_standalone(st, rows)
+    except Exception as exc:
+        print("English Y4 standalone RPH render fallback:", repr(exc), flush=True)
+        return rows
+# === END ENGLISH YEAR 4 STANDALONE RPH RENDER ADAPTER ===
+
+
 
 
 # === TRIAL BALANCE MAIN MENU 20261026 ===
@@ -46943,3 +46956,60 @@ def _handle_timetable_upload_v25281(cid, m):
         return _tt_reader_upgrade_notice_20261029(cid)
     return _TT_PAID_PREVIOUS_HANDLER_20261029(cid, m)
 # === END TIMETABLE READER PAID ACCESS GATE ===
+
+# === ENGLISH Y4 SUPPLEMENTARY WORKSHEET DELIVERY 20261102 ===
+# Additive only: never replace the RPH or alter subscription/credit accounting.
+def _en4_supplementary_for_chat_20261102(cid):
+    try:
+        from english_supplementary_materials import available
+        return available(state.get(cid) or {})
+    except Exception as exc:
+        print('English supplementary lookup fallback:', repr(exc), flush=True)
+        return []
+
+_EN4_SUPPLEMENTARY_SEND_BASE_20261102 = send_document
+def send_document(cid, path, caption=''):
+    result = _EN4_SUPPLEMENTARY_SEND_BASE_20261102(cid, path, caption)
+    try:
+        if ('RPH' in str(caption or '').upper()
+                and _telegram_delivery_ok_v25279(result)):
+            found = _en4_supplementary_for_chat_20261102(cid)
+            if found:
+                send(cid, '📄 Bahan tambahan untuk Lesson ini tersedia. Muat turun worksheet:',
+                     [[{'text': '📥 Download Worksheet', 'callback_data': 'en4supp20261102'}]])
+    except Exception as exc:
+        print('English supplementary prompt fallback:', repr(exc), flush=True)
+    return result
+
+_EN4_SUPPLEMENTARY_CALLBACK_BASE_20261102 = callback
+def callback(cid, d):
+    if str(d or '') != 'en4supp20261102':
+        return _EN4_SUPPLEMENTARY_CALLBACK_BASE_20261102(cid, d)
+    found = _en4_supplementary_for_chat_20261102(cid)
+    if not found:
+        return send(cid, 'Worksheet untuk Lesson ini tidak tersedia. Sila pilih Lesson semula.')
+    item = found[0]
+    try:
+        from docx import Document
+        import tempfile
+        import os
+        doc = Document()
+        for line in open(item['path'], encoding='utf-8').read().splitlines():
+            line = line.strip()
+            if not line:
+                doc.add_paragraph('')
+            elif line.startswith('# '):
+                doc.add_heading(line[2:], level=1)
+            elif line.startswith('## '):
+                doc.add_heading(line[3:], level=2)
+            else:
+                doc.add_paragraph(line.replace('**', '').replace('*', ''))
+        output = os.path.join(tempfile.gettempdir(),
+                              'CikguLaju_English_Y4_Lesson_%03d_Worksheet.docx' % item['lesson'])
+        doc.save(output)
+        return send_document(cid, output,
+                             'Worksheet English Year 4 Lesson %03d' % item['lesson'])
+    except Exception as exc:
+        print('English supplementary download failed:', repr(exc), flush=True)
+        return send(cid, 'Muat turun worksheet gagal. Sila cuba semula.')
+# === END ENGLISH Y4 SUPPLEMENTARY WORKSHEET DELIVERY ===
