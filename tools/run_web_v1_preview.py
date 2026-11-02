@@ -172,7 +172,7 @@ def generate():
     from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
     from web_v1_sessions import verify_session_ticket
     from web.approved_rph_reader import RPHLookupConfig, load_approved_rph
-    from web.rph_document_renderer import render_approved_rph
+    from web.rph_download_pipeline import prepare_approved_download
     from flask import make_response
     config = _config()
     if config is None:
@@ -188,10 +188,8 @@ def generate():
         return jsonify({"error": "existing account required"}), 403
     if os.environ.get("CIKGULAJU_ENV") != "staging" or os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") != "1":
         return jsonify({"error": "approved RPH generation not enabled"}), 503
-    # A successful HTTP download currently has no shared, atomic Telegram
-    # credit debit. Do not permit unlimited free downloads just because
-    # the staging renderer flag was enabled. This is intentionally fail-closed.
-    return jsonify({"error": "Shared Telegram generation and quota accounting not connected"}), 503
+    if os.environ.get("CIKGULAJU_WEB_RPH_DELIVERY_EXPERIMENT") != "1":
+        return jsonify({"error": "Shared RPH delivery not enabled"}), 503
     if not request.is_json or (request.content_length or 0) > 2048:
         return jsonify({"error": "invalid request"}), 400
     payload = request.get_json(silent=True)
@@ -212,9 +210,14 @@ def generate():
     except (LookupError, ValueError, sqlite3.Error, OSError):
         return jsonify({"error": "approved RPH not available"}), 404
     try:
-        data, mime = render_approved_rph(rph, fmt)
-    except (ImportError, ValueError):
-        return jsonify({"error": "document renderer unavailable"}), 503
+        result = prepare_approved_download(
+            rph, fmt, account, uid, os.environ["SUPABASE_URL"],
+            os.environ["SUPABASE_SECRET_KEY"])
+    except (ImportError, ValueError, KeyError, OSError):
+        return jsonify({"error": "document delivery unavailable"}), 503
+    if not result["allowed"]:
+        return jsonify({"error": "no remaining trial credits"}), 403
+    data, mime = result["document"], result["mime"]
     response = make_response(data)
     response.headers["Content-Type"] = mime
     response.headers["Content-Disposition"] = f'attachment; filename="cikgulaju-rph-{lesson_id}.{fmt}"'
@@ -248,7 +251,8 @@ def english_approved_rph():
     from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
     from web_v1_sessions import verify_session_ticket
     from web.english_release_gate import load_release_ready_english
-    from web.rph_document_renderer import ApprovedRPH, render_approved_rph
+    from web.rph_document_renderer import ApprovedRPH
+    from web.rph_download_pipeline import prepare_approved_download
     from flask import make_response
     config = _config()
     if config is None:
@@ -264,9 +268,8 @@ def english_approved_rph():
         return jsonify({"error": "existing account required"}), 403
     if os.environ.get("CIKGULAJU_ENV") != "staging" or os.environ.get("CIKGULAJU_WEB_RPH_STAGING_ENABLED") != "1":
         return jsonify({"error": "RPH downloads not enabled"}), 503
-    # Fail closed until an atomic debit and production-parity renderer are wired.
-    # The release-ready gate alone does not authorize unmetered downloads.
-    return jsonify({"error": "Shared Telegram generation and quota accounting not connected"}), 503
+    if os.environ.get("CIKGULAJU_WEB_RPH_DELIVERY_EXPERIMENT") != "1":
+        return jsonify({"error": "Shared RPH delivery not enabled"}), 503
     if not request.is_json or (request.content_length or 0) > 2048:
         return jsonify({"error": "invalid request"}), 400
     payload = request.get_json(silent=True)
@@ -280,10 +283,14 @@ def english_approved_rph():
     except (LookupError, ValueError, OSError):
         return jsonify({"error": "lesson not approved for release"}), 404
     try:
-        data, mime = render_approved_rph(
-            ApprovedRPH(lesson_no, f"English Year {year} — Lesson {lesson_no}", content, f"release-ready:english:{year}:{lesson_no}"), fmt)
-    except (ImportError, ValueError):
-        return jsonify({"error": "document renderer unavailable"}), 503
+        result = prepare_approved_download(
+            ApprovedRPH(lesson_no, f"English Year {year} — Lesson {lesson_no}", content, f"release-ready:english:{year}:{lesson_no}"),
+            fmt, account, uid, os.environ["SUPABASE_URL"], os.environ["SUPABASE_SECRET_KEY"])
+    except (ImportError, ValueError, KeyError, OSError):
+        return jsonify({"error": "document delivery unavailable"}), 503
+    if not result["allowed"]:
+        return jsonify({"error": "no remaining trial credits"}), 403
+    data, mime = result["document"], result["mime"]
     response = make_response(data)
     response.headers["Content-Type"] = mime
     response.headers["Content-Disposition"] = f'attachment; filename="english-year{year}-lesson{lesson_no:03d}.{fmt}"'
