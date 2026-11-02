@@ -17,7 +17,7 @@ Pupils ask planet questions in groups, record guesses, and check answers using w
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.80, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.80, Activity 2, by checking answers to questions about the planets.
+**Pupils:** Pupils complete Workbook p.80, Activity 2, by completing the Solar System crossword using the numbered clues.
 Teacher asks two spoken planet questions. Pupils answer and locate one supporting fact on the worksheet.
 
 ## Closure (5 minutes)
