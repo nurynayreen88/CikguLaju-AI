@@ -69,7 +69,8 @@ class WebMaterialsRouteTests(unittest.TestCase):
             response = client.get("/api/materials?year=2&subject=ENGLISH&lesson=93")
             self.assertEqual(response.status_code, 200)
             self.assertFalse(response.json["download_enabled"])
-            self.assertFalse(response.json["items"][0]["approved"])
+            self.assertTrue(response.json["items"][0]["approved"])
+            self.assertFalse(response.json["items"][0]["download_enabled"])
             self.assertNotIn("file_path", response.json["items"][0])
             self.assertNotIn("download_url", response.json["items"][0])
 
