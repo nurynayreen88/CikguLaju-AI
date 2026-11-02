@@ -40,19 +40,23 @@ def apply(st, rows):
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
-    assessment = get("Assessment")[1]
+    assessment = get("Assessment")[1] or get("Reinforcement / PBD")[1] or get("PBD / reinforcement")[1]
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure:
         return rows
     result = dict(rows)
-    result["SET INDUKSI"] = intro
-    lines = [title + "\n" + body for title, body in activities if body]
+    def clean(value):
+        value = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", value)
+        value = re.sub(r"\*\*([^*\n]+)\*\*", r"\1", value)
+        return value.strip()
+    result["SET INDUKSI"] = clean(intro)
+    lines = [title + "\n" + clean(body) for title, body in activities if body]
     if assessment:
-        lines.append("Assessment / PBD\n" + assessment)
-        result["PENTAKSIRAN"] = assessment
+        lines.append("Assessment / PBD\n" + clean(assessment))
+        result["PENTAKSIRAN"] = clean(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
-    result["PENUTUP"] = closure
-    ref = re.search(r"(?m)^\*\*References:\*\*\s*(.*)$", source)
+    result["PENUTUP"] = clean(re.split(r"(?m)^\s*\*\*(?:QA|Status):\*\*", closure, maxsplit=1)[0])
+    ref = re.search(r"(?m)^\*\*(?:References|Materials|Resources):\*\*[^\S\n]*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
     result["_standalone_y2_source"] = str(path.relative_to(ROOT.parent.parent.parent))
