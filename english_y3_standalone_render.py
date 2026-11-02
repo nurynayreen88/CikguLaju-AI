@@ -53,7 +53,7 @@ def apply(st, rows):
         result["PENTAKSIRAN"] = clean_phase(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
     # Closure is the last teaching phase; omit subsequent resource/QA metadata.
-    closure = re.split(r"(?m)^\s*(?:\*\*QA:|\*\*Resource status:|## )", closure, maxsplit=1)[0]
+    closure = re.split(r"(?mi)^\s*(?:\*\*(?:QA(?: status)?|Status|Resource status|Source|PBD|Differentiation):|## )", closure, maxsplit=1)[0]
     result["PENUTUP"] = clean_phase(closure)
     ref = re.search(r"(?m)^\*\*(?:References|Materials):\*\*\s*(.*)$", source)
     if ref:
