@@ -33,7 +33,8 @@ class RemoteCurriculumTests(unittest.TestCase):
 
     def test_rejects_insecure_source_and_bad_selection(self):
         for url in ("http://curriculum.example.org", "https://user@curriculum.example.org",
-                    "https://curriculum.example.org:8443", "https://curriculum.example.org?q=1"):
+                    "https://curriculum.example.org:8443", "https://curriculum.example.org?q=1",
+                    "https://curriculum.example.org/redirected-base"):
             with self.subTest(url=url), self.assertRaises(ValueError):
                 AuthoritativeHttpCurriculumSource(url, "a" * 40)
         with self.assertRaises(ValueError):
