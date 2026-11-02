@@ -227,7 +227,7 @@ def materials():
         return jsonify({"error": "invalid material selection"}), 400
     try:
         year = int(request.args["year"])
-        lesson = int(request.args["lesson"])
+        lesson = request.args["lesson"]
         subject = request.args["subject"]
         key = CurriculumKey(year=year, subject_code=subject, lesson_id=lesson)
         from web.authoritative_curriculum_source import validate_curriculum_key
