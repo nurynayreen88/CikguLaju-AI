@@ -32,7 +32,7 @@ class GenerationFailClosedTest(unittest.TestCase):
                     response = self.client.post(url, json=payload)
                     self.assertEqual(response.status_code, 503)
                     self.assertEqual(response.mimetype, "application/json")
-                    self.assertIn("quota", response.get_json()["error"].lower())
+                    self.assertIn("delivery not enabled", response.get_json()["error"].lower())
 
 
 if __name__ == "__main__":
