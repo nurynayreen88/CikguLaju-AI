@@ -1,0 +1,34 @@
+# English Year 4 — Lesson 052
+
+**Topic:** Celebrations  
+**Main SP:** 4.2.4  
+**Complementary SP:** 4.1.2  
+**Duration:** 60 minutes  
+**References:** SB p.38 Activities 1–3; TB pp.64–65; Vocabulary CD1 Track 55 (KPM SOW); Year 4 SOW Lesson 52
+
+## Set induction (10 minutes)
+**Teacher:** Review Independence Day vocabulary.
+**Pupils:** Recall words linked to Independence Day.
+
+## Activity 1 (15 minutes)
+**Teacher:** Follow Vocabulary with Track 55 and model future plans.
+**Pupils:** Listen to Track 55 and describe simple future plans.
+
+## Activity 2 (20 minutes)
+**Teacher:** Use the Grammar Box and Activity 3 to practise going to.
+**Pupils:** Complete Activity 3 using going to sentences.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Model one going to sentence about a parade costume, then guide pupils to draw their designs and write legible cursive descriptions.
+**Pupils:** Draw a costume and write three to five cursive sentences.
+**Teacher:** Use Workbook p.31, Smart kids picture prompts, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.31, Smart kids picture prompts; write descriptions based on the pictures.
+
+## Closure (5 minutes)
+**Teacher:** Display a short writing checklist and ask pupils to correct one going to sentence and one cursive letter join.
+**Pupils:** Correct one sentence and check cursive formation.
+
+**PBD:** Assess each pupil's own going to sentences describing a costume for main Writing SP 4.2.4, including accurate future expressions and relevant details. Check cursive handwriting legibility for complementary Writing SP 4.1.2. Workbook p.31 is the main written practice, but picture-prompt answers alone do not replace the costume description.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.

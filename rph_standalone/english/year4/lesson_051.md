@@ -1,0 +1,34 @@
+# English Year 4 — Lesson 051
+
+**Topic:** Celebrations  
+**Main SP:** 3.3.1  
+**Complementary SP:** 3.2.4  
+**Duration:** 60 minutes  
+**References:** SB p.38 story; celebration pictures; dictionaries; Year 4 SOW Lesson 51
+
+## Set induction (10 minutes)
+**Teacher:** Introduce festivals using pictures.
+**Pupils:** Name festivals shown in pictures.
+
+## Activity 1 (15 minutes)
+**Teacher:** Set a gist question before independent reading, then check pupils' understanding of the story's main event.
+**Pupils:** Read the story and highlight unfamiliar words.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model looking up one unfamiliar festival word and guide pairs to confirm its meaning from the story context.
+**Pupils:** Discuss word meanings and check them in dictionaries.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask pupils to reread and describe parade clothing.
+**Pupils:** Reread and describe what they would wear at a parade.
+**Teacher:** Use Workbook p.35, Story time matching task, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.35, Story time matching task; match the story details according to the pictures.
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to describe a festival costume and connect their idea to a detail from the story.
+**Pupils:** Share a costume idea using story vocabulary.
+
+**PBD:** Observe each pupil's independent reading of the celebration story for main Reading SP 3.3.1, including identification of supporting story details. Check interpretation of unfamiliar festival words using dictionary entries for complementary Reading SP 3.2.4. Workbook p.35 is the main written practice.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — source and Word/PDF QA pending.
