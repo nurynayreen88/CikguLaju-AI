@@ -25,6 +25,18 @@ def verified_english_rph_metadata(db_path, year, rpt_row_id):
     sequence = rows[0][0]
     if type(sequence) is not int or not 1 <= sequence <= 160:
         return []
+    # One sequence must identify exactly one verified, non-superseded RPT row.
+    # Duplicate sequence numbers are ambiguous and must not be delivered.
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, timeout=2) as con:
+        con.execute("PRAGMA query_only=ON")
+        duplicates = con.execute(
+            "SELECT id FROM rpt_entries WHERE sequence_no=? AND year_label=? "
+            "AND subject=? AND verified=1 "
+            "AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%' LIMIT 2",
+            (sequence, f"Tahun {year}", "Bahasa Inggeris"),
+        ).fetchall()
+    if len(duplicates) != 1:
+        return []
     if load_english_rph(year, sequence) is None:
         return []
     return [{
