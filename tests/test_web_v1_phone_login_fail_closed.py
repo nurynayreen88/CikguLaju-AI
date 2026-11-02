@@ -38,21 +38,20 @@ class PhoneLoginFailClosedTests(unittest.TestCase):
         self.assertFalse(response.get_json()["authenticated"])
         self.assertIn("no-store", response.headers["Cache-Control"])
 
-    def test_login_readiness_ui_has_safe_network_fallback(self):
+    def test_login_ui_uses_signed_telegram_widget_and_session(self):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
         body = response.get_data(as_text=True)
-        self.assertIn('id="telegram-login-readiness"', body)
+        self.assertIn('id="login-status"', body)
         self.assertIn('fetch("/api/auth/capabilities"', body)
-        self.assertIn("Status login tidak dapat disahkan", body)
-        self.assertNotIn("telegram.org/js/telegram-widget.js", body)
+        self.assertIn('fetch("/api/auth/telegram/session"', body)
+        self.assertIn('https://telegram.org/js/telegram-widget.js', body)
+        self.assertIn("Log masuk Telegram belum diaktifkan", body)
 
-    def test_public_preview_never_claims_login_is_active(self):
-        response = self.client.get("/")
-        self.assertEqual(response.status_code, 200)
-        body = response.get_data(as_text=True)
-        self.assertIn("Log Masuk dengan Telegram", body)
-        self.assertIn("masih dalam pembangunan", body)
+    def test_public_preview_does_not_claim_authenticated_access(self):
+        response = self.client.get("/api/auth/telegram/session")
+        self.assertIn(response.status_code, (401, 503))
+        self.assertFalse(response.get_json()["authenticated"])
 
 
 if __name__ == "__main__":
