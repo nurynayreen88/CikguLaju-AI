@@ -26,7 +26,7 @@ class CurriculumApiTest(unittest.TestCase):
         self.app.register_blueprint(create_curriculum_blueprint(lambda: str(self.db)))
         self.client = self.app.test_client()
         self.token = "a" * 48
-        self.env = patch.dict(os.environ, {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": self.token})
+        self.env = patch.dict(os.environ, {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": self.token, "CIKGULAJU_CURRICULUM_API_ENABLED": "1"})
         self.env.start()
 
     def tearDown(self):
@@ -37,6 +37,10 @@ class CurriculumApiTest(unittest.TestCase):
         return self.client.get("/internal/curriculum/v1/" + endpoint,
                                query_string=params,
                                headers={"Authorization": "Bearer " + self.token})
+
+    def test_disabled_by_default(self):
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "0"}):
+            self.assertEqual(self.get("subjects", year=2).status_code, 503)
 
     def test_unauthorized(self):
         response = self.client.get("/internal/curriculum/v1/subjects?year=2")
