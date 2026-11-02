@@ -248,6 +248,29 @@ def materials():
     return jsonify({"items": items})
 
 
+@app.get("/api/materials/download/<material_id>")
+def download_material(material_id):
+    """Never serve unverified files or charge credits from the Web preview."""
+    from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
+    from web_v1_sessions import verify_session_ticket
+    config = _config()
+    if config is None:
+        return jsonify({"error": "login not configured"}), 503
+    uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+    if uid is None:
+        return jsonify({"error": "Authentication required"}), 401
+    try:
+        account = _lookup(config, uid)
+    except Exception:
+        return jsonify({"error": "account lookup unavailable"}), 503
+    if not account or account.get("telegram_user_id") != uid:
+        return jsonify({"error": "Existing account required"}), 403
+    if not material_id or len(material_id) > 128:
+        return jsonify({"error": "invalid material identifier"}), 400
+    return jsonify({"error": "approved file delivery not verified",
+                    "code": "MATERIAL_DELIVERY_NOT_VERIFIED"}), 503
+
+
 @app.post("/api/generate")
 def generate():
     """Authorized, approval-gated document generation; no quota mutation."""
