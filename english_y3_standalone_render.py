@@ -39,6 +39,8 @@ def apply(st, rows):
         return rows
     if re.search(r"(?mi)^\*\*(?:QA(?: status)?|Status|Resource status):\*\*[^\n]*(?:DRAFT|NOT READY|not READY|do not publish|pending)", source):
         return rows
+    if not re.search(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*\b(?:READY|APPROVED)\b", source):
+        return rows
     result = dict(rows)
     def clean_phase(text):
         # Preserve actions while making teacher and pupil roles separate lines.
