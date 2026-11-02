@@ -45,6 +45,19 @@ class Year2Tests(unittest.TestCase):
                 result = adapter.apply({"subject":"English","year":"2","lesson_no":14}, original)
             self.assertIs(result, original)
 
+    def test_real_lesson_14_qa_footer_not_in_closure(self):
+        result = adapter.apply({"subject":"English","year":"Year 2","lesson_no":14}, {})
+        self.assertIn("WB p.64", result["BAHAN BANTU MENGAJAR"])
+        self.assertIn("three sentences", result["PENTAKSIRAN"])
+        self.assertNotIn("QA status", result["PENUTUP"])
+        self.assertNotIn("do not publish", result["PENUTUP"])
+
+    def test_real_lesson_1_non_textbook(self):
+        result = adapter.apply({"subject":"English","year":"Year 2","lesson_no":1}, {})
+        self.assertIn("three-sentence", result["AKTIVITI UTAMA"])
+        self.assertIn("writing", result["PENTAKSIRAN"].lower())
+        self.assertNotIn("QA status", result["PENUTUP"])
+
     def test_other_year_untouched(self):
         original = {"PENUTUP":"original"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 4","lesson_no":14}, original), original)
