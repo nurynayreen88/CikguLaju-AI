@@ -16,8 +16,8 @@ Teacher distributes cut-up day and month cards. Pupils order them and read the w
 Teacher guides Student's Book p.36 Activity 1 using Teacher's Book p.62. Pupils read the story, identify the main idea and discuss clues that indicate the season, such as falling leaves.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.31, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.31, Activity 1, by matching the story pictures with the correct answers.
+**Teacher:** Use the original CikguLaju reading card `materials/lesson_051_seasons_reading_card.md` to assess the main idea and three reading details in a new months-and-seasons passage.
+**Pupils:** Read the new text, select its main idea, answer three detail questions and compare weather orally; do not repeat Workbook p.31, Activity 1.
 Pupils state the main idea of the reading text and recount two relevant details orally.
 
 ## Closure (5 minutes)
