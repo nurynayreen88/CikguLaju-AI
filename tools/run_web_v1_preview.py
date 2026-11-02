@@ -243,9 +243,22 @@ def materials():
         items = AuthoritativeHttpCurriculumSource(source_url, source_token).get_approved_materials(key)
     except (SharedSourceUnavailable, ValueError):
         return jsonify({"error": "Telegram approved materials unavailable", "code": "APPROVED_MATERIALS_NOT_VERIFIED"}), 503
-    # No browser download URLs are minted until the delivery endpoint has
-    # authenticated authorization and verified file ownership.
-    return jsonify({"items": items})
+    # An approval flag alone does not prove that a file can be delivered.
+    # Until Telegram returns verified delivery capabilities, suppress the
+    # download control rather than expose a link that always fails.
+    safe_items = []
+    for item in items:
+        if not isinstance(item, dict):
+            return jsonify({"error": "invalid Telegram material response"}), 503
+        safe = dict(item)
+        safe["approved"] = False
+        safe.pop("download_url", None)
+        safe.pop("file_path", None)
+        safe.pop("storage_path", None)
+        safe_items.append(safe)
+    response = jsonify({"items": safe_items, "download_enabled": False})
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
 
 
 @app.get("/api/materials/download/<material_id>")
