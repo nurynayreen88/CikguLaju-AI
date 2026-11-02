@@ -1,0 +1,36 @@
+# English Year 4 — Lesson 036: Writing 7
+
+**Topic:** In the Past  
+**Main SP:** Writing 4.3.1  
+**Complementary SP:** Reading 3.2.2  
+**Duration:** 60 minutes  
+**References:** SB pp.28–29 Activity 3; TB pp.50–51; unpunctuated question strips
+
+## Set induction (10 minutes)
+**Teacher:** Review simple past questions through a response game.
+**Pupils:** Recall simple past questions in the response game.
+
+## Activity 1 (15 minutes)
+**Teacher:** Ask pupils to reread the previous dialogue and underline examples of past-tense questions.
+**Pupils:** Reread the dialogue and identify past-tense questions.
+
+## Activity 2 (20 minutes)
+**Teacher:** Follow TB Grammar Box and model word order, apostrophes, commas, full stops and question marks.
+**Pupils:** Practise word order and punctuation using the Grammar Box.
+
+## Reinforcement and PBD (10 minutes)
+**Teacher:** Model correcting one past-tense question, then guide pupils to punctuate prepared questions and complete TB Activity 3.
+**Pupils:** Punctuate prepared questions and complete Activity 3.
+**Teacher:** Use Workbook p.24, Let's play past-simple questions, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.24, Let's play past-simple questions; write past-simple questions with correct punctuation.
+
+## Closure (5 minutes)
+**Teacher:** Pupils correct a question and reflect on punctuation.
+**Pupils:** Correct one question and explain a punctuation choice.
+
+## Assessment and differentiation
+**PBD:** Assess pupils' independently punctuated past-tense questions for Writing 4.3.1 and their understanding of the model dialogue for Reading 3.2.2. Workbook p.24 provides the main written practice.  
+**Support:** Use purposeful pairing and extension questions for early finishers.
+
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+**Status:** DRAFT. Direct book/audio content verification and bot Word/PDF output tests pending; not READY.
