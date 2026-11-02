@@ -33,6 +33,5 @@ def send_verified_workbook(chat_id, lesson, send_document, root=None):
         return False
     if hasattr(response, "json"):
         payload = response.json()
-        if isinstance(payload, dict) and payload.get("ok") is False:
-            return False
-    return True
+        return isinstance(payload, dict) and payload.get("ok") is True
+    return False
