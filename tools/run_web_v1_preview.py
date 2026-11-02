@@ -57,14 +57,14 @@ def options():
     from web_v1_sessions import verify_session_ticket
     config = _config()
     if config is None:
-        return jsonify({"error": "Login not configured"}), 503
+        return jsonify({"error": "Login not configured", "code": "WEB_AUTH_CONFIG_MISSING"}), 503
     uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
     if uid is None:
         return jsonify({"error": "Authentication required"}), 401
     try:
         account = _lookup(config, uid)
     except Exception:
-        return jsonify({"error": "Account lookup unavailable"}), 503
+        return jsonify({"error": "Account lookup unavailable", "code": "TELEGRAM_ACCOUNT_SOURCE_UNAVAILABLE"}), 503
     if not account or account.get("telegram_user_id") != uid:
         return jsonify({"error": "Existing account required"}), 403
     try:
@@ -94,10 +94,10 @@ def options():
                 if kind == "pdp":
                     return jsonify(source.list_lessons(year, subject, request.args.get("unit", ""), component))
             except (SharedSourceUnavailable, ValueError):
-                return jsonify({"error": "authoritative curriculum source unavailable"}), 503
+                return jsonify({"error": "authoritative curriculum source unavailable", "code": "TELEGRAM_CURRICULUM_API_UNAVAILABLE"}), 503
         from web.shared_source_provenance import catalog_source_status
         if not catalog_source_status()["shared_source_verified"]:
-            return jsonify({"error": "shared catalog source not verified"}), 503
+            return jsonify({"error": "shared catalog source not verified", "code": "TELEGRAM_CURRICULUM_API_NOT_CONNECTED"}), 503
         db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
         if not db or not Path(db).is_file():
             return jsonify({"error": "preview database not configured"}), 503
