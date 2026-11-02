@@ -1,0 +1,41 @@
+# English Year 4 — Lesson 4: Writing
+
+**Unit/Topic:** 1 — Where are you from?  
+**Main SK/SP:** Writing 4.2.4  
+**Complementary SK/SP:** Writing 4.3.2  
+**Duration:** 60 minutes  
+**Learning objective:** Pupils write four meaningful sentences describing where people are from and spell four common target words correctly.
+**Success evidence:** Collect a four-sentence writing sheet; assess meaning, spelling and sentence punctuation.
+**Materials:** Non-textbook lesson; teacher-created writing sheet or pupil-made cards; other materials specified in each activity.  
+**Audio:** None prescribed.
+
+## Set Induction (10 minutes)
+**Teacher:** Review country and nationality vocabulary with picture or flag cards.
+**Pupils:** Identify countries and nationalities using the displayed flags.
+
+## Activity 1 (15 minutes)
+**Teacher:** Model and practise accurate spelling of common words; use paired word-card checks.
+**Pupils:** Spell target country/nationality words with a partner and correct the written word cards.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model 'She is from Malaysia. She is Malaysian.', then guide pupils to write country-and-nationality sentences independently as prompts are gradually removed.
+**Pupils:** Write at least four sentences about different people using 'He/She is from ...' and 'He/She is ...' with appropriate country/nationality forms.
+
+## PBD / Reinforcement (10 minutes)
+**Teacher:** Check statements for suitable meaning and high-frequency spelling; provide sentence frames or extension descriptions by proficiency.
+**Pupils:** Proofread four sentences for meaning, capitals, full stops and high-frequency spelling. 
+**Teacher:** Use Workbook p.4, Activity 3 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.4, Activity 3; write their country and nationality and check spelling.
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to read one corrected sentence and identify a word they can now spell accurately.
+**Pupils:** Read one corrected sentence aloud.
+
+## Differentiation and assessment
+Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 4.2.4 and complementary Writing 4.3.2.
+
+## Source mapping and QA
+- **SOW:** Primary Year 4 SK SOW, Lesson 4 — https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+- **Book:** Non-textbook lesson; teacher-created writing sheet or pupil-made cards
+- **Audio:** None prescribed
+- **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
