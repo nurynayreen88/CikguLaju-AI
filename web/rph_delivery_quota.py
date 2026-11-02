@@ -24,13 +24,24 @@ def charge_rendered_rph(telegram_user_id, document_bytes, supabase_url, secret_k
 
 def has_active_paid_access(account, today=None):
     """Check a trusted account snapshot for lifetime or unexpired VIP access."""
-    from datetime import date
+    from datetime import date, datetime, timezone
     if not isinstance(account, dict) or account.get("authenticated") is not True:
         return False
     if type(account.get("rakan_pembangun", False)) is not bool:
         return False
     if account.get("rakan_pembangun") is True:
         return True
+    exact = account.get("vip_expires_at")
+    if exact is not None:
+        if not isinstance(exact, str):
+            return False
+        try:
+            expiry_time = datetime.fromisoformat(exact.replace("Z", "+00:00"))
+        except ValueError:
+            return False
+        if expiry_time.tzinfo is None:
+            return False
+        return expiry_time > datetime.now(timezone.utc)
     expiry = account.get("vip_until")
     if not isinstance(expiry, str):
         return False
@@ -64,6 +75,17 @@ def authorize_rendered_document(account, telegram_user_id, document_bytes,
             date.fromisoformat(expiry)
         except ValueError:
             raise ValueError("Invalid subscription expiry") from None
+    if account.get("vip_expires_at") is not None:
+        from datetime import datetime
+        exact = account["vip_expires_at"]
+        if not isinstance(exact, str):
+            raise ValueError("Invalid exact subscription expiry")
+        try:
+            parsed = datetime.fromisoformat(exact.replace("Z", "+00:00"))
+        except ValueError:
+            raise ValueError("Invalid exact subscription expiry") from None
+        if parsed.tzinfo is None:
+            raise ValueError("Subscription expiry timezone required")
     if has_active_paid_access(account):
         return {"allowed": True, "remaining": None, "reference": None}
     credits = account.get("free_remaining")
