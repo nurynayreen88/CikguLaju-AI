@@ -16,6 +16,8 @@ Teacher draws a farm animal step by step. Pupils guess its name.
 Pupils read the farm animal story and identify specific information.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.53, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.53, Activity 2, by finding and writing the farm animals shown in the picture.
 **Teacher:** Ask each pupil to locate two animal facts in the story and identify one familiar sound from the listening input.
 **Pupils:** Point to supporting text and respond to the sound cue.
 
