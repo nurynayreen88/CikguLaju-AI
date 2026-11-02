@@ -1,0 +1,47 @@
+# English Year 4 — Lesson 7: Speaking
+
+**Unit/Topic:** 1 — Where are you from?  
+**Main SK/SP:** Speaking 2.1.5  
+**Complementary SK/SP:** Speaking 2.2.1  
+**Duration:** 60 minutes  
+**Learning objective:** Pupils describe two people by country or nationality and maintain a short exchange with a response or clarification phrase.
+**Success evidence:** Pair observation: two descriptions, one acknowledgement and one clarification opportunity.
+**Materials:** Student's Book and Teacher's Book Activity 5, Teacher's Book p.21; pupil-made flags; other materials specified in each activity.  
+**Audio:** CD1 Track 9.
+
+## Set Induction (10 minutes)
+**Teacher:** Review country and nationality words with flags made in earlier lessons.
+**Pupils:** Name nationalities from pupil-made flags.
+
+## Activity 1 (15 minutes)
+**Teacher:** Follow Teacher's Book p.21 Activity 5; play CD1 Track 9 while pupils track the text, then replay for repetition.
+**Pupils:** Follow Activity 5, listening to CD1 Track 9 while tracking the dialogue and repeating the exchange.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model acknowledgement 'Really? So, you're Brazilian.' Practise open pairs and then role-play famous people or familiar characters from different countries.
+**Pupils:** Role-play a person from a chosen country; acknowledge a partner with 'Really? So, you're ...' and ask for clarification when needed.
+
+## PBD / Reinforcement (10 minutes)
+**Teacher:** Demonstrate one acknowledgement and clarification phrase, then observe pupils using these phrases in their country role-plays.
+**Pupils:** Demonstrate a short exchange with a description and one clarification or acknowledgement phrase. The teacher assesses each pupil's spoken description and clarification or acknowledgement in the role-play as the main Speaking PBD evidence. No Workbook task is assigned until its printed page and activity are verified.
+
+## Closure (5 minutes)
+**Teacher:** Invite a short model exchange and ask the class to identify the clarification phrase used.
+**Pupils:** Perform one final two-turn dialogue.
+
+## Differentiation and assessment
+Provide visual cues, demonstration and paired rehearsal for pupils needing support; extend with additional descriptions, details or independent language for pupils ready for challenge. Record evidence for main SP 2.1.5 and complementary Speaking 2.2.1.
+
+## Source mapping and QA
+- **SOW:** Primary Year 4 SK SOW, Lesson 7 — https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+- **Book:** Student's Book and Teacher's Book Activity 5, Teacher's Book p.21; pupil-made flags
+- **Audio:** CD1 Track 9
+- **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+## Direct textbook verification (30 October 2026)
+**Direct Teacher's Book p.21 check:** Activity 5 explicitly labels **CD1 Track 9**; model and practise the country/nationality exchange. The book also provides the dialogue transcript and suggested flag-based role-play. Printed p.21 corresponds to PDF page 7.
+**Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
+
+## Verified source audio links
+- CD1 Track 9: https://drive.google.com/file/d/1RCIp86VNulrP6AfPsA-Bt3wfksyQh55h/view
+Audio file presence checked; listening-content verification pending.
