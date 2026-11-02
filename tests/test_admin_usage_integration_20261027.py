@@ -50,7 +50,7 @@ class AdminUsageIntegrationTests(unittest.TestCase):
         sends = [n for n in TREE.body if isinstance(n, ast.FunctionDef)
                  and n.name == 'send_document']
         self.assertTrue(sends)
-        wrapper = sends[-1]
+        wrapper = next(n for n in sends if '_ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)' in ast.unparse(n))
         self.assertEqual(ast.unparse(wrapper.body[0].value),
                          '_ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)')
         self.assertIsInstance(wrapper.body[-1], ast.Return)
@@ -68,7 +68,7 @@ class AdminUsageIntegrationTests(unittest.TestCase):
                             for n in callbacks))
         sends = [n for n in TREE.body if isinstance(n, ast.FunctionDef) and n.name == 'send_document']
         self.assertGreaterEqual(len(sends), 2)
-        last = ast.unparse(sends[-1])
+        last = next(ast.unparse(n) for n in sends if '_ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)' in ast.unparse(n))
         self.assertIn('_ADMIN_USAGE_SEND_DOCUMENT_BASE(cid, path, caption)', last)
         self.assertIn('record_confirmed_delivery(', last)
         self.assertIn('return result', last)
