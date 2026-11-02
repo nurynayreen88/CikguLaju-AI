@@ -17,7 +17,7 @@ Pairs write past verbs on the backs of their cards, make past-tense sentences an
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.74, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.74, Activity 1, by selecting the correct past-tense forms for the pictured events.
+**Pupils:** Pupils complete Workbook p.74, Activity 1, by looking at the pictures and completing the sentences with the correct words from the word bank.
 Teacher checks two present/past verb pairs and one written past-tense sentence per pupil, then asks a simple comprehension question.
 
 ## Closure (5 minutes)
