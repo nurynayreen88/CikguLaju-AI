@@ -38,4 +38,5 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_download_release_gate.py' -v
           python -m unittest discover -s tests -p 'test_web_shared_source_provenance.py' -v
           python -m unittest discover -s tests -p 'test_web_shared_catalog_http.py' -v
+          python -m unittest discover -s tests -p 'test_web_shared_domain_parity.py' -v
           python -m unittest discover -s tests -p 'test_web_generation_fail_closed.py' -v
