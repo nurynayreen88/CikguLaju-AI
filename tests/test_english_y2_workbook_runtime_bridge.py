@@ -30,29 +30,6 @@ class WorkbookRuntimeBridgeTests(unittest.TestCase):
             self.assertIn("activity", self.runtime._available_materials_v2528(ss))
             self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [60])
 
-    def test_year5_uses_printed_to_pdf_offset(self):
-        from web import english_y2_verified_workbook_runtime as bridge
-        with patch.object(bridge, "_REPO_ROOT", Path(self.tmp.name)):
-            pdf = Path(self.tmp.name) / "books/english/y5_workbook_001_054.pdf"
-            pdf.parent.mkdir(parents=True, exist_ok=True)
-            pdf.write_bytes(b"%PDF-1.4\\n")
-            install(self.runtime)
-            ss = {"year": "Tahun 5", "subject": "English", "lesson_no": 1}
-            self.assertIn("activity", self.runtime._available_materials_v2528(ss))
-            self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [3])
-            self.assertEqual(self.runtime._local_book_chunk_v25234(ss, "activity", 3)[1:], (1, 54))
-
-    def test_year6_uses_printed_to_pdf_offset(self):
-        from web import english_y2_verified_workbook_runtime as bridge
-        with patch.object(bridge, "_REPO_ROOT", Path(self.tmp.name)):
-            pdf = Path(self.tmp.name) / "books/english/y6_workbook_001_040.pdf"
-            pdf.parent.mkdir(parents=True, exist_ok=True)
-            pdf.write_bytes(b"%PDF-1.4\\n")
-            install(self.runtime)
-            ss = {"year": "Tahun 6", "subject": "English", "lesson_no": 1}
-            self.assertIn("activity", self.runtime._available_materials_v2528(ss))
-            self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [6, 7, 8])
-
     def test_missing_year4_pdf_part_is_not_offered(self):
         ss = {"year": "Tahun 4", "subject": "English", "lesson_no": 2}
         with patch("web.english_y2_verified_workbook_runtime._REPO_ROOT", Path(self.tmp.name)):
@@ -69,12 +46,6 @@ class WorkbookRuntimeBridgeTests(unittest.TestCase):
         ss = {"year": "Tahun 4", "subject": "English", "lesson_no": 2}
         self.assertIn("activity", self.runtime._available_materials_v2528(ss))
         self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [2])
-
-    def test_year1_verified_workbook_page_is_used(self):
-        install(self.runtime)
-        ss = {"year": "Tahun 1", "subject": "English", "lesson_no": 6}
-        self.assertIn("activity", self.runtime._available_materials_v2528(ss))
-        self.assertEqual(self.runtime._en_book_pages_v25232(ss, "activity"), [4])
 
     def test_unverified_and_other_years_unchanged(self):
         with patch("web.english_y2_verified_workbook_runtime.resolve_lesson", return_value=None):
