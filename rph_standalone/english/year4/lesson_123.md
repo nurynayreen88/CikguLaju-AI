@@ -1,0 +1,37 @@
+# English Year 4 — Lesson 123: Listening 24
+
+**Topic:** Amazing animals  
+**Main SP:** 1.1.1  
+**Complementary SP:** 3.2.4  
+**Duration:** 60 minutes  
+**Audio:** Class CD3 Track 30 (Phonics 9 Activity 1) and CD3 Track 31 (Phonics 9 Activity 2), confirmed in Teacher's Book p.189. MP3 files located in Drive; playback and Telegram download remain untested.  
+
+**Audio files located in Drive (playback/access not yet tested):** CD3 Track 30 — https://drive.google.com/file/d/1oQt7UuQZoIqwt1BvzEXdjA4Iwfh2inHR/view ; CD3 Track 31 — https://drive.google.com/file/d/1RBs0wbPwwPyrIFIQmgD0f_3TPgHVBEq2/view.  
+**References:** resources/lesson_123_phonics_sound_dictionary_pbd_DRAFT.md; SB p.127 Phonics 9; TB pp.189–190; dictionaries; Year 4 SOW Lesson 123
+
+## Set induction (10 minutes)
+**Teacher:** Lead the TB phonics warm-up by contrasting two target sounds and asking pupils to identify what they hear.
+**Pupils:** Recall phonics words and sounds.
+
+## Activity 1 (15 minutes)
+**Teacher:** Model the target sound contrast, play or read the Phonics 9 Activity 1 items and ask pupils to identify the sounds before checking answers.
+**Pupils:** Listen and complete Phonics 9 Activity 1.
+
+## Activity 2 (20 minutes)
+**Teacher:** Play dictionary page-number race to locate unfamiliar words.
+**Pupils:** Find unfamiliar words quickly using a dictionary.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Guide pupils through Phonics 9 Activity 2, ask them to explain which sounds they heard and note any recurring confusion.
+**Pupils:** Complete Phonics 9 Activity 2 and distinguish sounds.
+
+
+
+## Closure (5 minutes)
+**Teacher:** Elicit one word for each target sound and check pupils' pronunciation against the phonics examples.
+**Pupils:** Say one example word and its sound.
+
+**PBD:** Check pupils' discrimination of target sounds during Phonics 9 listening for main Listening SP 1.1.1; assess their use of a dictionary to locate meanings of unfamiliar words for complementary Reading SP 3.2.4. Do not claim an audio track number that has not been verified.  
+**Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
