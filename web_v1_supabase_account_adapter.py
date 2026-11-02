@@ -47,4 +47,5 @@ def lookup_existing_supabase_account(url, secret_key, telegram_id):
             expiry = candidate
     return {"authenticated": True, "telegram_user_id": telegram_id,
             "rakan_pembangun": has_lifetime, "vip_until": expiry.date().isoformat() if expiry else None,
-            "free_remaining": min(credits, 10)}
+            "vip_expires_at": expiry.isoformat() if expiry else None,
+            "free_remaining": credits}
