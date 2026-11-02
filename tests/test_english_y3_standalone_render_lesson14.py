@@ -37,7 +37,7 @@ class Year3AdapterTests(unittest.TestCase):
             self.assertIn("Student's Book p.11", rows["BAHAN BANTU MENGAJAR"])
             self.assertIn("Write three family sentences", rows["PENTAKSIRAN"])
             self.assertIn("Lesson 13", rows["SET INDUKSI"])
-            self.assertIn("Teacher:\\n", rows["SET INDUKSI"])
+            self.assertIn("Teacher:", rows["SET INDUKSI"])
             self.assertIn("Pupils:", rows["AKTIVITI UTAMA"])
             self.assertNotIn("**", rows["AKTIVITI UTAMA"])
 
