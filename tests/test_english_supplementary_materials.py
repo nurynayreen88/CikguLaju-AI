@@ -1,9 +1,11 @@
-"""Exact-match supplementary worksheet registry regression tests."""
+"""Regression checks for exact lesson and isolated worksheet delivery."""
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+import ast
 import english_supplementary_materials as registry
 
+ROOT = Path(__file__).resolve().parents[1]
 
 class SupplementaryMaterialsTests(unittest.TestCase):
     def test_all_four_known_worksheets_exist(self):
@@ -29,6 +31,15 @@ class SupplementaryMaterialsTests(unittest.TestCase):
         with patch.object(registry, "ROOT", Path("/missing/supplementary_materials")):
             self.assertEqual(registry.available({"subject": "English", "year": "4", "lesson_no": 4}), [])
 
+    def test_telegram_callback_checks_exact_lesson_and_uses_isolated_directory(self):
+        tree = ast.parse((ROOT / "app.py").read_text(encoding="utf-8"))
+        callbacks = [n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "callback"]
+        handler = next(n for n in callbacks if "en4supp20261102:" in ast.unparse(n))
+        source = ast.unparse(handler)
+        self.assertIn("item['lesson']", source)
+        self.assertIn("Lesson telah berubah", source)
+        self.assertIn("tempfile.TemporaryDirectory", source)
+        self.assertIn("doc.save(output)", source)
 
 if __name__ == "__main__":
     unittest.main()
