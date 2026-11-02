@@ -12,6 +12,12 @@
 - Web staging service runs `staging/cikgulaju-web-v1`, start `gunicorn --bind 0.0.0.0:$PORT tools.run_web_v1_preview:app`, Render region Singapore, autoDeploy disabled.
 - These are separate Render instances and filesystems. A local SQLite path cannot be assumed to refer to the same file on both services.
 
+## Confirmed production runtime evidence (2026-11-02)
+- Production `main/app.py` selects v26.00 through `_cikgulaju_primary_db_v2600()` and validates `PRAGMA integrity_check`, required RPT tables, and Pendidikan Moral record counts before setting `DB_PATH`.
+- Production Render app logs repeatedly show `v26.00 PRIMARY DB ACTIVE /opt/render/project/src/CikguLaju_Curriculum_Master_v26_00.db`, including 2026-11-02 04:53 UTC.
+- The app also supports specialist resolvers, shards and supplementary databases. v26.00 is the **primary curriculum database**, not proof that every material or audio comes from it.
+- Telegram and Web Render run on separate instances; copying v26.00 to Web would create a snapshot, **not** live synchronization. A shared authoritative data service or authenticated read-only API is still needed.
+
 ## Required before connecting Web to production curriculum
 1. Inspect **read-only** the production Render service's effective database configuration and app startup selection; do not print secrets.
 2. Establish the exact canonical source and whether it is updated in place, versioned at deploy, or fetched from a remote store.
