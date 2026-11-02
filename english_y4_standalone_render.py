@@ -56,6 +56,8 @@ def apply(st, rows):
         value = re.sub(r"\*\*([^*\n]+)\*\*", r"\1", value)
         return value.strip()
 
+    if not re.search(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*\b(?:READY|APPROVED)\b", source):
+        return rows
     result = dict(rows)
     result["SET INDUKSI"] = clean(intro)
     parts = [title + "\n" + clean(body) for title, body in activities]
