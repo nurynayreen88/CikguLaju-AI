@@ -77,17 +77,31 @@ class AuthoritativeHttpCurriculumSource:
         self._validate_year(year)
         return self._read("subjects", {"year": year})
 
-    def list_units(self, year, subject_code):
+    def list_units(self, year, subject_code, component=None):
         self._validate_year(year)
         self._validate_subject(subject_code)
-        return self._read("units", {"year": year, "subject": subject_code})
+        params = {"year": year, "subject": subject_code}
+        if subject_code == "PJPK":
+            if component not in ("PJ", "PK"):
+                raise ValueError("PJPK requires verified component")
+            params["component"] = component
+        elif component not in (None, ""):
+            raise ValueError("Component only applies to PJPK")
+        return self._read("units", params)
 
-    def list_lessons(self, year, subject_code, unit):
+    def list_lessons(self, year, subject_code, unit, component=None):
         self._validate_year(year)
         self._validate_subject(subject_code)
         if not isinstance(unit, str) or not unit.strip() or len(unit) > 300:
             raise ValueError("Invalid unit")
-        return self._read("lessons", {"year": year, "subject": subject_code, "unit": unit})
+        params = {"year": year, "subject": subject_code, "unit": unit}
+        if subject_code == "PJPK":
+            if component not in ("PJ", "PK"):
+                raise ValueError("PJPK requires verified component")
+            params["component"] = component
+        elif component not in (None, ""):
+            raise ValueError("Component only applies to PJPK")
+        return self._read("lessons", params)
 
     def get_approved_materials(self, key):
         validate_curriculum_key(key)
