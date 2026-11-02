@@ -20,7 +20,7 @@ class AccountStatusTests(unittest.TestCase):
     def test_trusted_snapshot_free(self):
         result = display_trusted_account({"authenticated": True, "free_remaining": 8},
                                          today=date(2026, 11, 1))
-        self.assertEqual(result["access"], "8/10 janaan percuma berbaki")
+        self.assertEqual(result["access"], "8 janaan percuma berbaki")
 
     def test_malformed_lifetime_flag_is_rejected(self):
         with self.assertRaises(ValueError):
