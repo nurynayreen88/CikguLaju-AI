@@ -76,6 +76,24 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
+        # An explicitly configured authoritative API takes precedence over
+        # any local SQLite snapshot. The source must return verified provenance.
+        source_url = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+        source_token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+        if source_url and source_token:
+            from web.authoritative_http_source import AuthoritativeHttpCurriculumSource
+            from web.authoritative_curriculum_source import SharedSourceUnavailable
+            try:
+                source = AuthoritativeHttpCurriculumSource(source_url, source_token)
+                if kind == "subjects":
+                    return jsonify(source.list_subjects(year))
+                subject = request.args.get("subject", "")
+                if kind == "units":
+                    return jsonify(source.list_units(year, subject))
+                if kind == "pdp":
+                    return jsonify(source.list_lessons(year, subject, request.args.get("unit", "")))
+            except (SharedSourceUnavailable, ValueError):
+                return jsonify({"error": "authoritative curriculum source unavailable"}), 503
         from web.shared_source_provenance import catalog_source_status
         if not catalog_source_status()["shared_source_verified"]:
             return jsonify({"error": "shared catalog source not verified"}), 503
