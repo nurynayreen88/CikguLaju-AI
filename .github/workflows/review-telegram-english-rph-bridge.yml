@@ -1,0 +1,20 @@
+name: Telegram English RPH bridge
+on:
+  push:
+    branches:
+      - review/telegram-approved-rph-bridge-20261102
+  pull_request:
+    paths:
+      - 'web/telegram_english_rph_bridge.py'
+      - 'web/telegram_curriculum_api.py'
+      - 'tests/test_telegram_english_rph_bridge.py'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Flask>=3.0,<4'
+      - run: python -m unittest discover -s tests -p 'test_telegram_english_rph_bridge.py' -v
