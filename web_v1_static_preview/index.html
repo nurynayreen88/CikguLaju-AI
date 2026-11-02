@@ -95,7 +95,7 @@ document.getElementById("show-materials").addEventListener("click",async()=>{
   if(!Array.isArray(items))throw Error("Format bahan tidak sah.");
   const list=document.getElementById("materials-list");
   for(const item of items){if(!item||!item.approved||!item.id)continue;const li=document.createElement("li");li.textContent=String(item.title||item.name||"Bahan diluluskan")+" ";const a=document.createElement("a");a.textContent="Download";a.href="/api/materials/download/"+encodeURIComponent(String(item.id));li.append(a);list.append(li);}
-  status.textContent=list.children.length?list.children.length+" bahan diluluskan.":"Tiada bahan diluluskan untuk Lesson ini.";
+  status.textContent=data.download_enabled===false?"Senarai bahan telah disemak, tetapi muat turun belum disahkan pada sumber Telegram.":(list.children.length?list.children.length+" bahan diluluskan.":"Tiada bahan diluluskan untuk Lesson ini.");
   // Download Semua stays disabled until a server-issued ZIP or download bundle is implemented.
  }catch(error){status.textContent=error.message;}
 });
