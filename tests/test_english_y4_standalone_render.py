@@ -40,6 +40,29 @@ class Year4Tests(unittest.TestCase):
             self.assertNotIn("DRAFT", result["PENUTUP"])
             self.assertNotIn("**", result["AKTIVITI UTAMA"])
 
+    def test_project_pbd(self):
+        lesson = """# Lesson 80
+**Resources:** SOW teacher-selected topic
+## Set induction (10 minutes)
+**Teacher:** Introduce topic.
+**Pupils:** Discuss.
+## Activity 1 (15 minutes)
+**Teacher:** Guide project.
+**Pupils:** Plan.
+## PBD / reinforcement (10 minutes)
+**Teacher:** Check criteria.
+**Pupils:** Present.
+## Closure (5 minutes)
+**Teacher:** Reflect.
+**Pupils:** Respond.
+"""
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "lesson_080.md").write_text(lesson, encoding="utf-8")
+            with patch.object(adapter, "ROOT", Path(tmp)):
+                rows = adapter.apply({"subject":"English","year":"4","lesson_no":80}, {})
+            self.assertIn("Check criteria", rows["PENTAKSIRAN"])
+            self.assertNotIn("Workbook", rows["BAHAN BANTU MENGAJAR"])
+
     def test_year3_untouched(self):
         original = {"PENUTUP":"unchanged"}
         self.assertIs(adapter.apply({"subject":"English","year":"Year 3","lesson_no":14}, original), original)
