@@ -64,6 +64,17 @@ class DocumentAuthorizationTests(unittest.TestCase):
             self.authorize({"authenticated": True, "telegram_user_id": 123})
         self.assertEqual(self.calls, [])
 
+    def test_malformed_paid_status_does_not_fall_back_to_trial(self):
+        for invalid in (
+            {"rakan_pembangun": "true"},
+            {"vip_until": "invalid"},
+            {"vip_until": 20271231},
+        ):
+            with self.subTest(invalid=invalid):
+                with self.assertRaises(ValueError):
+                    self.authorize({**self.account, **invalid})
+        self.assertEqual(self.calls, [])
+
 
 if __name__ == "__main__":
     unittest.main()
