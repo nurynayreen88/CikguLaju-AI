@@ -19,8 +19,8 @@
 **Pupils:** Write about their bedroom and illustrate a bedroom template with furniture drawings or cut-outs.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.40, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.40, Activity 1, by comparing the furniture in Bob's and Sally's houses.
+**Teacher:** Use the original writing sheet `materials/lesson_078_my_bedroom_description.md`; assess three bedroom sentences, a location phrase, labels and a short oral description.
+**Pupils:** Plan, write and label their own bedroom description; do not repeat Workbook p.40, Activity 1.
 **Teacher:** Check each pupil's bedroom sentences for clarity and basic punctuation; listen to a short oral description.
 **Pupils:** Submit their sentences and describe one feature of the bedroom.
 
