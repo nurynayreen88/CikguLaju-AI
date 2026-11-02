@@ -33,6 +33,10 @@ def render_approved_rph(
         raise ValueError("Missing server-side approval reference")
     if not isinstance(rph.title, str) or not isinstance(rph.content, str) or not rph.title.strip() or not rph.content.strip():
         raise ValueError("Empty RPH")
+    if format not in ("docx", "pdf"):
+        raise ValueError("Unsupported format")
+    if len(rph.title) > 300 or len(rph.content) > 100000:
+        raise ValueError("RPH exceeds document size limit")
     if format == "docx":
         from docx import Document
 
