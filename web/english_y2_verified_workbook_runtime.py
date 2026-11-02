@@ -1,4 +1,4 @@
-"""Opt-in bridge from verified Year 2 Workbook mapping to existing Telegram material UI.
+"""Opt-in bridge from verified Year 2–4 Workbook mapping to existing Telegram material UI.
 
 Installs only on the WSGI runtime. Other subjects, years, and material types
 retain the original handlers. No database mutation or Telegram side effects.
@@ -7,7 +7,6 @@ from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 _PARTS = {
-    1: ((1, 40, 'y12_workbook_001_040.pdf'), (41, 80, 'y12_workbook_041_080.pdf'), (81, 120, 'y12_workbook_081_120.pdf'), (121, 129, 'y12_workbook_121_129.pdf')),
     3: ((1, 80, 'y3_workbook_001_080.pdf'), (81, 96, 'y3_workbook_081_096.pdf')),
     4: ((2, 60, 'y4_workbook_002_060.pdf'), (61, 110, 'y4_workbook_061_110.pdf')),
 }
@@ -18,26 +17,22 @@ def _local_pages_exist(year, start, end):
                    for a, b, name in _PARTS[year]) for p in range(start, end + 1))
 
 from resources.english.y2.workbook_download_router import resolve_lesson
-from resources.english.y1.workbook_verified_map import Y1_WB_VERIFIED_LESSON_MAP
 from resources.english.y3.workbook_verified_map import Y3_WB_VERIFIED_LESSON_MAP
 from resources.english.y4.workbook_verified_map import EN4_WB_VERIFIED
-from resources.english.y5.workbook_pdf_router import resolve_lesson as resolve_y5
-from resources.english.y6.workbook_pdf_router import resolve_lesson as resolve_y6
 
 
 def install(runtime):
     available = getattr(runtime, "_available_materials_v2528", None)
     pages = getattr(runtime, "_en_book_pages_v25232", None)
     year_number = getattr(runtime, "_english_primary_year_number_v2517", None)
-    chunk = getattr(runtime, '_local_book_chunk_v25234', None)
-    if not all(callable(f) for f in (available, pages, year_number, chunk)):
+    if not all(callable(f) for f in (available, pages, year_number)):
         return False
 
     def verified(ss):
         if not isinstance(ss, dict):
             return None
         year = year_number(ss.get("year"))
-        if year not in (1, 2, 3, 4, 5, 6):
+        if year not in (2, 3, 4):
             return None
         if str(ss.get("subject") or "").strip().casefold() not in ("english", "bahasa inggeris"):
             return None
@@ -46,19 +41,8 @@ def install(runtime):
             number = int(lesson)
         except (TypeError, ValueError):
             return None
-        if year in (5, 6):
-            try:
-                rows = (resolve_y5 if year == 5 else resolve_y6)(number)
-            except (ValueError, TypeError):
-                return None
-            if not rows or not all((_REPO_ROOT / r['path']).is_file() for r in rows):
-                return None
-            return {'pdf_pages': sorted(set(r['original_pdf_page'] for r in rows))}
         if year == 2:
             return resolve_lesson(number)
-        if year == 1:
-            pair = Y1_WB_VERIFIED_LESSON_MAP.get(number)
-            return {"source_page_start": pair[0], "source_page_end": pair[1]} if pair and _local_pages_exist(1, pair[0], pair[1]) else None
         row = (Y3_WB_VERIFIED_LESSON_MAP if year == 3 else EN4_WB_VERIFIED).get(number)
         if not isinstance(row, dict) or not isinstance(row.get("pdf"), int):
             return None
@@ -75,24 +59,9 @@ def install(runtime):
         if key == "activity":
             item = verified(ss)
             if item is not None:
-                if "pdf_pages" in item:
-                    return item["pdf_pages"]
                 return list(range(item["source_page_start"], item["source_page_end"] + 1))
         return pages(ss, key)
 
-    def chunk_with_verified_workbook(ss, key, page):
-        year = year_number((ss or {}).get("year"))
-        if key == "activity" and year in (5, 6):
-            from resources.english.y5.workbook_pdf_router import EN5_WB_PDF_PARTS
-            from resources.english.y6.workbook_pdf_router import EN6_WB_PDF_PARTS
-            for start, end, rel in (EN5_WB_PDF_PARTS if year == 5 else EN6_WB_PDF_PARTS):
-                if start <= int(page) <= end:
-                    path = _REPO_ROOT / rel
-                    return (str(path), start, end) if path.is_file() else None
-            return None
-        return chunk(ss, key, page)
-
-    runtime._local_book_chunk_v25234 = chunk_with_verified_workbook
     runtime._available_materials_v2528 = available_with_verified_workbook
     runtime._en_book_pages_v25232 = pages_with_verified_workbook
     return True
