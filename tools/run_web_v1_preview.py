@@ -88,10 +88,11 @@ def options():
                 if kind == "subjects":
                     return jsonify(source.list_subjects(year))
                 subject = request.args.get("subject", "")
+                component = request.args.get("component")
                 if kind == "units":
-                    return jsonify(source.list_units(year, subject))
+                    return jsonify(source.list_units(year, subject, component))
                 if kind == "pdp":
-                    return jsonify(source.list_lessons(year, subject, request.args.get("unit", "")))
+                    return jsonify(source.list_lessons(year, subject, request.args.get("unit", ""), component))
             except (SharedSourceUnavailable, ValueError):
                 return jsonify({"error": "authoritative curriculum source unavailable"}), 503
         from web.shared_source_provenance import catalog_source_status
