@@ -204,7 +204,49 @@ def account_status():
 
 @app.get("/api/materials")
 def materials():
-    return jsonify({"error": "authentication and shared backend required"}), 503
+    """Read approved materials from Telegram only, never a preview DB."""
+    from web_v1_telegram_auth_routes import _config, COOKIE, _lookup
+    from web_v1_sessions import verify_session_ticket
+    from web.authoritative_curriculum_source import CurriculumKey, SharedSourceUnavailable
+
+    config = _config()
+    if config is None:
+        return jsonify({"error": "login not configured"}), 503
+    uid = verify_session_ticket(request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+    if uid is None:
+        return jsonify({"error": "Authentication required"}), 401
+    try:
+        account = _lookup(config, uid)
+    except Exception:
+        return jsonify({"error": "account lookup unavailable"}), 503
+    if not account or account.get("telegram_user_id") != uid:
+        return jsonify({"error": "Existing account required"}), 403
+    if set(request.args) != {"year", "subject", "lesson"}:
+        return jsonify({"error": "invalid material selection"}), 400
+    if any(len(request.args.getlist(k)) != 1 for k in ("year", "subject", "lesson")):
+        return jsonify({"error": "invalid material selection"}), 400
+    try:
+        year = int(request.args["year"])
+        lesson = int(request.args["lesson"])
+        subject = request.args["subject"]
+        key = CurriculumKey(year=year, subject_code=subject, lesson_id=lesson)
+        from web.authoritative_curriculum_source import validate_curriculum_key
+        validate_curriculum_key(key)
+    except (ValueError, TypeError):
+        return jsonify({"error": "invalid material selection"}), 400
+    source_url = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+    source_token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    if not source_url or not source_token:
+        return jsonify({"error": "Telegram materials source not configured", "code": "MATERIAL_SOURCE_NOT_CONFIGURED"}), 503
+    try:
+        from web.authoritative_http_source import AuthoritativeHttpCurriculumSource
+        items = AuthoritativeHttpCurriculumSource(source_url, source_token).get_approved_materials(key)
+    except (SharedSourceUnavailable, ValueError):
+        return jsonify({"error": "Telegram approved materials unavailable", "code": "APPROVED_MATERIALS_NOT_VERIFIED"}), 503
+    # No browser download URLs are minted until the delivery endpoint has
+    # authenticated authorization and verified file ownership.
+    return jsonify({"items": items})
+
 
 @app.post("/api/generate")
 def generate():
