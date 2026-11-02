@@ -47,7 +47,7 @@ def apply(st, rows):
     if not intro or not closure or not activities or not pbd:
         return rows
     # Preserve existing output if a draft source has not passed its own QA gate.
-    if re.search(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*(?:DRAFT|not READY|do not publish)", source):
+    if re.search(r"(?mi)^\*\*(?:QA(?: status)?|Status|Resource status):\*\*[^\n]*(?:DRAFT|NOT READY|not READY|do not publish|pending)", source):
         return rows
     # Do not allow a source section to spill into the closure.
 
