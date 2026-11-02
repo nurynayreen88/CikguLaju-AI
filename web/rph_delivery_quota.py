@@ -37,3 +37,24 @@ def has_active_paid_access(account, today=None):
     except ValueError:
         return False
     return expiry_date >= (today or date.today())
+
+def authorize_rendered_document(account, telegram_user_id, document_bytes,
+                                supabase_url, secret_key, *, debit=None):
+    """Use trusted account access; debit trial only for a completed document."""
+    if not isinstance(account, dict) or account.get("authenticated") is not True:
+        raise ValueError("Authenticated account required")
+    if type(telegram_user_id) is not int or telegram_user_id <= 0:
+        raise ValueError("Invalid Telegram user")
+    if account.get("telegram_user_id") != telegram_user_id:
+        raise ValueError("Account identity mismatch")
+    if not isinstance(document_bytes, bytes) or not document_bytes:
+        raise ValueError("Document must be fully rendered")
+    if has_active_paid_access(account):
+        return {"allowed": True, "remaining": None, "reference": None}
+    credits = account.get("free_remaining")
+    if type(credits) is not int or credits < 0:
+        raise ValueError("Invalid trial balance")
+    if credits == 0:
+        return {"allowed": False, "remaining": 0, "reference": None}
+    return charge_rendered_rph(
+        telegram_user_id, document_bytes, supabase_url, secret_key, debit=debit)
