@@ -78,6 +78,20 @@ class CurriculumPJPKRoutesTests(unittest.TestCase):
         response = self.get("approved-materials", year=2, subject="PJPK", lesson=1)
         self.assertEqual(response.status_code, 503)
 
+    def test_duplicate_year_parameter_is_rejected(self):
+        response = self.client.get(
+            "/internal/curriculum/v1/subjects?year=2&year=3",
+            headers=self.headers,
+        )
+        self.assertEqual(response.status_code, 400)
+
+    def test_duplicate_component_parameter_is_rejected(self):
+        response = self.client.get(
+            "/internal/curriculum/v1/units?year=2&subject=PJPK&component=PJ&component=PK",
+            headers=self.headers,
+        )
+        self.assertEqual(response.status_code, 400)
+
     def test_no_token_is_rejected(self):
         response = self.client.get("/internal/curriculum/v1/subjects?year=2")
         self.assertEqual(response.status_code, 401)
