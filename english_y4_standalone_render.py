@@ -41,6 +41,7 @@ def apply(st, rows):
     pbd = first(("reinforcement / pbd", "pbd / reinforcement", "assessment", "pbd /", "pbd and differentiation"))
     if not intro or not closure or not activities:
         return rows
+    # Do not allow a source section to spill into the closure.
 
     def clean(value):
         value = re.sub(r"\*\*(Teacher|Pupils|Teacher action|Pupil action):\*\*", r"\n\1:", value)
