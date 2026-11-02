@@ -9,14 +9,15 @@ class SharedSourceTests(unittest.TestCase):
     def test_unconfigured_fails_closed(self):
         self.assertFalse(catalog_source_status({})["shared_source_verified"])
 
-    def test_same_file_verifies(self):
+    def test_same_local_file_is_not_proof_of_live_sync(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "catalog.sqlite"
             path.write_bytes(b"test")
             result = catalog_source_status({
                 "CIKGULAJU_WEB_PREVIEW_DB": str(path),
                 "CIKGULAJU_SHARED_CATALOG_DB": str(path)})
-            self.assertTrue(result["shared_source_verified"])
+            self.assertFalse(result["shared_source_verified"])
+            self.assertTrue(result["same_local_file"])
 
     def test_copy_is_not_shared(self):
         with tempfile.TemporaryDirectory() as folder:
