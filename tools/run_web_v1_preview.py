@@ -107,6 +107,13 @@ def options():
 
 
 
+@app.get("/api/source/status")
+def shared_source_status():
+    """Report whether Web catalog points to the configured shared source."""
+    from web.shared_source_provenance import catalog_source_status
+    return jsonify(catalog_source_status())
+
+
 @app.get("/api/deployment/status")
 def deployment_status():
     """Explicit staging-only capabilities for web readiness checks."""
