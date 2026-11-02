@@ -114,7 +114,10 @@ def options():
 def shared_source_status():
     """Report whether Web catalog points to the configured shared source."""
     from web.shared_source_provenance import catalog_source_status
-    return jsonify(catalog_source_status())
+    from web.shared_domain_parity import parity_report
+    catalog = catalog_source_status()
+    report = parity_report({"lesson_catalog": catalog["shared_source_verified"]})
+    return jsonify({**catalog, **report})
 
 
 @app.get("/api/deployment/status")
