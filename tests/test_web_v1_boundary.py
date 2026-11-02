@@ -45,7 +45,8 @@ class WebV1BoundaryTests(unittest.TestCase):
                 function = next(node for node in tree.body if isinstance(node, ast.FunctionDef) and node.name == function_name)
                 returns = [node for node in ast.walk(function) if isinstance(node, ast.Return)]
                 self.assertTrue(any(isinstance(node.value, ast.Tuple) and len(node.value.elts) == 2 and isinstance(node.value.elts[1], ast.Constant) and node.value.elts[1].value == 503 for node in returns))
-        self.assertIn("Shared Telegram generation and quota accounting not connected", source)
+        self.assertIn("CIKGULAJU_WEB_RPH_DELIVERY_EXPERIMENT", source)
+        self.assertIn("Shared RPH delivery not enabled", source)
 
 
 if __name__ == "__main__":
