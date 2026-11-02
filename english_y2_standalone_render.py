@@ -29,7 +29,7 @@ def apply(st, rows):
     source = path.read_text(encoding="utf-8")
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"^##\s+(" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^##\s+|^\*\*(?:QA(?: status)?|Status|Source):|\Z)", source, re.S | re.M | re.I)
+        match = re.search(r"^##\s+(" + re.escape(prefix) + r"(?![0-9])[^\n]*)\n(.*?)(?=^##\s+|^\*\*(?:QA(?: status)?|Status|Source):|\Z)", source, re.S | re.M | re.I)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
