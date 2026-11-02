@@ -16,8 +16,8 @@ Teacher shows a family picture and models oldest and youngest.
 Pupils describe family members using superlatives, complete the optional activity, then play the Unit 10 board game in groups with dice and counters.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.79, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.79, Activity 2, by reading the questions and answering about themselves using superlative adjectives.
+**Teacher:** Use original CikguLaju material `materials/lesson_156_superlative_speaking_cards.md`; assess the lesson's main skill without reassigning the Workbook exercise.
+**Pupils:** Ask and answer questions about three fictional characters, then say two superlative sentences.
 Teacher listens to two family comparisons using superlatives. Pupils then complete the Unit 10 self-assessment worksheet.
 
 ## Closure (5 minutes)
