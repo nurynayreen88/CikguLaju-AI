@@ -17,7 +17,7 @@ Pupils sort place, activity and adjective cards, then combine them into sensible
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.61, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.61, Activity 2, by matching questions about yesterday with short answers.
+**Pupils:** Pupils complete Workbook p.61, Activity 2, by circling 'Was' or 'Were' in each question, then matching each question to the correct short answer.
 Teacher asks two listening-detail questions. Pupils answer and describe one place using a suitable adjective.
 
 ## Closure (5 minutes)

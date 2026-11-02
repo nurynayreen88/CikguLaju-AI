@@ -17,7 +17,7 @@ Teacher reviews There weren't any and the Grammar Box, then guides Student's Boo
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.62, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.62, Activity 2, by writing sentences about a town in 1900 using 'was', 'wasn't', 'were' and 'weren't'.
+**Pupils:** Pupils complete Workbook p.62, Activity 2, by completing the text about a town in the year 1900 using the words provided in the box.
 Teacher checks each pupil's two hometown sentences for clear past-time meaning, apostrophes, spelling and punctuation. Pupils correct one error.
 
 ## Closure (5 minutes)
