@@ -17,6 +17,8 @@ Teacher follows the Student's Book p.21 Activity 1 preparation, plays the record
 Teacher guides comprehension questions and the Writing Tip on Teacher's Book p.40. Pupils practise sentences about routines with correct capitals and punctuation, then write neatly using supported cursive handwriting.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.14, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.14, Activity 2, by adding full stops and question marks to sentences about routines.
 Teacher checks guided sentence punctuation and cursive letter formation. Pupils correct and improve writing.
 
 ## Closure (5 minutes)

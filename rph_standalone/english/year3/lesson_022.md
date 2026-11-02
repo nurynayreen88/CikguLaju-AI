@@ -17,6 +17,8 @@ Teacher distributes mixed word cards (take the bus, walk, take the train, drive)
 Teacher guides the listening task on Student's Book p.17 following the SOW reference to Teacher's Book p.35. Pupils listen for routine and transport details and ask for repetition or clarification when needed.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.11, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.11, Activity 1, by reading and writing sentences about travelling to school and work.
 Teacher asks targeted detail questions and observes pupils' listening strategies. Pupils identify the transport and routine information heard.
 
 ## Closure (5 minutes)

@@ -17,6 +17,8 @@ Teacher models present-simple questions about travelling to school or work, usin
 Teacher guides Student's Book p.17 Activity 4 and distributes survey worksheets. Pairs write one question, interview classmates and record yes/no answers.
 
 ## PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.11, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.11, Activity 2, by matching people with transport and answering questions.
 Teacher listens to each pupil's question and response, and checks listening comprehension during the survey. Pupils report one result.
 
 ## Closure (5 minutes)
