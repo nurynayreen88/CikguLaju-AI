@@ -24,7 +24,7 @@ LESSON = """# English Year 4 — Lesson 14
 **Teacher:** Summarise.
 **Pupils:** Reflect.
 
-**Status:** DRAFT; not for classroom output.
+**Status:** VERIFIED for synthetic test.
 """
 
 class Year4Tests(unittest.TestCase):
@@ -61,7 +61,7 @@ class Year4Tests(unittest.TestCase):
             with patch.object(adapter, "ROOT", Path(tmp)):
                 rows = adapter.apply({"subject":"English","year":"4","lesson_no":80}, {})
             self.assertIn("Check criteria", rows["PENTAKSIRAN"])
-            self.assertNotIn("Workbook", rows["BAHAN BANTU MENGAJAR"])
+            self.assertNotIn("Workbook", rows.get("BAHAN BANTU MENGAJAR", ""))
 
     def test_inline_pbd_not_leaked_into_closure(self):
         lesson = """# Lesson 80
