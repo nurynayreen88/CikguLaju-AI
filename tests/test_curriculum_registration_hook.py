@@ -17,8 +17,7 @@ class CurriculumRegistrationTests(unittest.TestCase):
         app = Flask(__name__)
         with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
                                      "CIKGULAJU_AUTHORITATIVE_API_TOKEN": ""}):
-            with self.assertRaises(RuntimeError):
-                register_if_enabled(app, lambda: "/missing")
+            self.assertFalse(register_if_enabled(app, lambda: "/missing"))
         self.assertNotIn("telegram_curriculum_v1", app.blueprints)
 
     def test_enabled_registers_without_touching_existing_routes(self):
