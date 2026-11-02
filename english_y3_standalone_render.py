@@ -27,32 +27,33 @@ def apply(st, rows):
     if not path.is_file():
         return rows
     source = path.read_text(encoding="utf-8")
-    sections = [
-        ("Set Induction", "SET INDUKSI"),
-        ("Activity 1", None),
-        ("Activity 2", None),
-        ("Assessment / PBD", "PENTAKSIRAN"),
-        ("Closure", "PENUTUP"),
-    ]
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
         match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*QA:|\Z)", source, re.S | re.M)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
-    assessment = get("Assessment")[1]
+    assessment = get("Assessment")[1] or get("Reinforcement / PBD")[1] or get("PBD")[1]
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure:
         return rows
     result = dict(rows)
-    result["SET INDUKSI"] = intro
-    lines = [title + "\n" + body for title, body in activities if body]
+    def clean_phase(text):
+        # Preserve actions while making teacher and pupil roles separate lines.
+        text = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", text)
+        text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+        text = re.sub(r"(?m)^[ \t]*\n", "", text)
+        return text.strip()
+    result["SET INDUKSI"] = clean_phase(intro)
+    lines = [title + "\n" + clean_phase(body) for title, body in activities if body]
     if assessment:
-        lines.append("Assessment / PBD\n" + assessment)
-        result["PENTAKSIRAN"] = assessment
+        lines.append("Assessment / PBD\n" + clean_phase(assessment))
+        result["PENTAKSIRAN"] = clean_phase(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
-    result["PENUTUP"] = closure
-    ref = re.search(r"(?m)^\*\*References:\*\*\s*(.*)$", source)
+    # Closure is the last teaching phase; omit subsequent resource/QA metadata.
+    closure = re.split(r"(?m)^\s*(?:\*\*QA:|\*\*Resource status:|## )", closure, maxsplit=1)[0]
+    result["PENUTUP"] = clean_phase(closure)
+    ref = re.search(r"(?m)^\*\*(?:References|Materials):\*\*\s*(.*)$", source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
     result["_standalone_y3_source"] = str(path.relative_to(ROOT.parent.parent.parent))
