@@ -37,7 +37,7 @@ def apply(st, rows):
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure or not assessment:
         return rows
-    if re.search(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*(?:DRAFT|not READY|do not publish)", source):
+    if re.search(r"(?mi)^\*\*(?:QA(?: status)?|Status|Resource status):\*\*[^\n]*(?:DRAFT|NOT READY|not READY|do not publish|pending)", source):
         return rows
     result = dict(rows)
     def clean_phase(text):
