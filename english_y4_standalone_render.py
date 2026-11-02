@@ -37,11 +37,11 @@ def apply(st, rows):
 
     intro = first(("set induction",))
     closure = first(("closure",))
-    closure = re.split(r"(?m)^\\*\\*(?:PBD|Differentiation|Source|Status|SOW):\\*\\*", closure, maxsplit=1)[0].strip()
+    closure = re.split(r"(?m)^\*\*(?:PBD|Differentiation|Source|Status|SOW):\*\*", closure, maxsplit=1)[0].strip()
     activities = [(title, body) for title, body in phases if re.match(r"(?i)^activity\s+[1-9]", title) and body]
     pbd = first(("reinforcement / pbd", "pbd / reinforcement", "assessment", "pbd /", "pbd and differentiation"))
     if not pbd:
-        inline_pbd = re.search(r"(?m)^\\*\\*PBD:\\*\\*[^\\S\\n]*(.*)$", source)
+        inline_pbd = re.search(r"(?m)^\*\*PBD:\*\*[^\S\n]*(.*)$", source)
         if inline_pbd:
             pbd = inline_pbd.group(1).strip()
     if not intro or not closure or not activities:
