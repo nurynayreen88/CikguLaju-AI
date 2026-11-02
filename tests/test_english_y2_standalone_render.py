@@ -15,7 +15,7 @@ LESSON = """# English Year 2 Lesson 14
 **Teacher:** Check Workbook task. **Pupils:** Correct answers.
 ## Closure (5 minutes)
 **Teacher:** Summarise. **Pupils:** Reflect.
-**QA:** Internal note.
+**QA:** Internal note.\n**Status:** READY
 """
 
 class Year2Tests(unittest.TestCase):
