@@ -27,6 +27,8 @@ def has_active_paid_access(account, today=None):
     from datetime import date
     if not isinstance(account, dict) or account.get("authenticated") is not True:
         return False
+    if type(account.get("rakan_pembangun", False)) is not bool:
+        return False
     if account.get("rakan_pembangun") is True:
         return True
     expiry = account.get("vip_until")
@@ -35,6 +37,8 @@ def has_active_paid_access(account, today=None):
     try:
         expiry_date = date.fromisoformat(expiry)
     except ValueError:
+        return False
+    if today is not None and type(today) is not date:
         return False
     return expiry_date >= (today or date.today())
 
