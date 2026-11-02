@@ -16,8 +16,8 @@ Teacher guides Activity 4 from Teacher's Book p.91. Pupils ask and answer about 
 Pupils draw their own omelette and mingle, asking 'Are there any tomatoes in your omelette?' and similar questions to find classmates with matching ingredients.
 
 ## Assessment / PBD (10 minutes)
-**Teacher (Workbook):** Refer to the completed Workbook p.45, Activity 2 from Lesson 83 as a speaking prompt; ask pupils to use its omelette pictures and ingredient questions orally without rewriting answers.
-**Pupils (Workbook):** Refer to their earlier answers and ask and answer the ingredient questions with a partner; do not repeat the written Activity 2.
+**Teacher (CikguLaju material):** Distribute the original role cards in `materials/lesson_087_speaking_omelette_information_gap.md`; observe pupils asking ingredient questions, answering partners and identifying the hidden omelette card.
+**Pupils (CikguLaju material):** Ask at least three ingredient questions, answer their partner and describe the partner's omelette using the new role cards.
 **Teacher:** Observe each pupil asking one ingredient question, answering a partner and describing an ingredient.
 **Pupils:** Ask and answer about their omelette ingredients.
 

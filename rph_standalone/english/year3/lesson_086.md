@@ -19,8 +19,8 @@
 **Pupils:** Listen for ingredients and answer detail questions.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Refer pupils to their completed Workbook p.45, Activity 2 from Lesson 83; use Anna's and Greg's omelette pictures as listening prompts without assigning the written exercise again.
-**Pupils:** Use their earlier Workbook answers to check the ingredients they hear and respond orally; do not repeat the written Activity 2.
+**Teacher:** Use the original CikguLaju listening sheet and teacher script in `materials/lesson_086_listening_ingredient_clues.md`; read both lunchbox descriptions twice and check pupils' individual responses.
+**Pupils:** Listen, tick ingredients for each lunchbox and answer three detail questions on the new listening sheet.
 **Teacher:** Ask two supported questions and one detail question; note individual responses.
 **Pupils:** Answer orally or point to the correct food picture.
 
