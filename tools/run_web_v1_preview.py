@@ -410,10 +410,6 @@ def english_approved_rph():
     return response
 
 
-@app.get("/api/materials/download/<material_id>")
-def download_material(material_id):
-    return jsonify({"error": "authorized download service not connected"}), 503
-
 @app.after_request
 def preview_security_headers(response):
     response.headers["X-Content-Type-Options"] = "nosniff"
