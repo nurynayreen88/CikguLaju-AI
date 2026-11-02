@@ -24,7 +24,10 @@ def create_curriculum_blueprint(database_path_provider):
 
     def read_options(kind):
         try:
+            subject = request.args.get("subject", "")
             allowed = {"year"} if kind == "subjects" else ({"year", "subject"} if kind == "units" else {"year", "subject", "unit"})
+            if kind != "subjects" and subject == "PJPK":
+                allowed = allowed | {"component"}
             if set(request.args) != allowed:
                 raise ValueError("unexpected query parameters")
             year = int(request.args.get("year", ""))
@@ -39,11 +42,11 @@ def create_curriculum_blueprint(database_path_provider):
             if kind == "subjects":
                 items = available_subject_options(db, year)
             else:
-                subject = request.args.get("subject", "")
+                component = request.args.get("component")
                 if kind == "units":
-                    items = unit_options(db, year, subject)
+                    items = unit_options(db, year, subject, component)
                 else:
-                    items = pdp_options(db, year, subject, request.args.get("unit", ""))
+                    items = pdp_options(db, year, subject, request.args.get("unit", ""), component)
             if len(items) > 500:
                 return jsonify({"error": "curriculum result exceeds safe limit"}), 503
             return jsonify({"source": "telegram-runtime-v1", "items": items})
