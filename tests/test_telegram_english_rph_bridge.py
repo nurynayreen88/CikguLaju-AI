@@ -44,6 +44,35 @@ class TelegramRphBridgeTests(unittest.TestCase):
         self.assertEqual(verified_english_rph_metadata(self.db, 2, 93), [])
         reader.assert_not_called()
 
+    def test_http_route_returns_verified_source_and_metadata(self):
+        import os
+        from flask import Flask
+        from web.telegram_curriculum_api import create_curriculum_blueprint
+        app = Flask(__name__)
+        app.register_blueprint(create_curriculum_blueprint(lambda: self.db))
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "x" * 40}), \
+             patch("web.telegram_english_rph_bridge.load_english_rph", return_value="# Lesson 12"):
+            response = app.test_client().get(
+                "/internal/curriculum/v1/approved-materials?year=2&subject=ENGLISH&lesson=93",
+                headers={"Authorization": "Bearer " + "x" * 40},
+            )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["source"], "telegram-runtime-v1")
+        self.assertEqual(response.json["items"][0]["title"], "RPH English Tahun 2 Lesson 12")
+
+    def test_http_route_requires_bearer_token(self):
+        import os
+        from flask import Flask
+        from web.telegram_curriculum_api import create_curriculum_blueprint
+        app = Flask(__name__)
+        app.register_blueprint(create_curriculum_blueprint(lambda: self.db))
+        with patch.dict(os.environ, {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "x" * 40}):
+            response = app.test_client().get(
+                "/internal/curriculum/v1/approved-materials?year=2&subject=ENGLISH&lesson=93")
+        self.assertEqual(response.status_code, 401)
+
     @patch("web.telegram_english_rph_bridge.load_english_rph", return_value=None)
     def test_missing_rph_not_exposed(self, reader):
         self.assertEqual(verified_english_rph_metadata(self.db, 2, 93), [])
