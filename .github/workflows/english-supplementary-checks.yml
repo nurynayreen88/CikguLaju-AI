@@ -3,12 +3,14 @@ on:
   push:
     branches:
       - fix/english-y4-four-worksheets-isolated-20261102
+      - fix/english-y4-worksheet-ci-retry-20261103
   pull_request:
     paths:
       - 'english_supplementary_materials.py'
       - 'supplementary_materials/english/year4/**'
       - 'tests/test_english_supplementary_materials.py'
       - 'app.py'
+      - '.github/workflows/english-supplementary-checks.yml'
 jobs:
   worksheet-tests:
     runs-on: ubuntu-latest
