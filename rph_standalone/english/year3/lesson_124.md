@@ -16,8 +16,8 @@ Teacher models 'Where were you yesterday?', 'When were you there?' and 'How was 
 Pupils write the three interview questions and their own answers on the worksheet, then interview at least two classmates without showing their sheets. Groups use the word cards from Lesson 118 for another question-and-answer game.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.63, Activity 2; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.63, Activity 2, by answering questions about where they were yesterday.
+**Teacher:** Use the original CikguLaju PBD sheet `materials/lesson_124_yesterday_interview.md`; check the skill-specific responses without assigning the Workbook exercise again.
+**Pupils:** Interview two classmates and report one answer orally using the new sheet.
 Teacher listens to each pupil's interview questions and answers, then checks one reported finding.
 
 ## Closure (5 minutes)
