@@ -37,6 +37,9 @@ def apply(st, rows):
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure or not assessment:
         return rows
+    # Draft material must not silently replace the existing production RPH.
+    if re.search(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*(?:DRAFT|not READY|do not publish)", source):
+        return rows
     result = dict(rows)
     def clean(value):
         value = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", value)
