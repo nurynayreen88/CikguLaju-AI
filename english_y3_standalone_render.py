@@ -27,13 +27,13 @@ def apply(st, rows):
     if not path.is_file():
         return rows
     source = path.read_text(encoding="utf-8")
-    # The lesson files may vary in activity titles. Match by phase prefix.
+    # Match teaching phases regardless of heading capitalization or duration.
     def get(prefix):
-        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*QA:|\Z)", source, re.S | re.M)
+        match = re.search(r"^##\s+(" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^##\s+|^\*\*(?:QA(?: status)?|Status|Resource status|Source):|\Z)", source, re.S | re.M | re.I)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
-    assessment = get("Assessment")[1] or get("Reinforcement / PBD")[1] or get("PBD")[1]
+    assessment = get("Assessment")[1] or get("Reinforcement / PBD")[1] or get("PBD / reinforcement")[1] or get("PBD")[1]
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure or not assessment:
         return rows
