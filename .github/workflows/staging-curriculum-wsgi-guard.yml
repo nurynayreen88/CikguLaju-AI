@@ -6,6 +6,8 @@ on:
       - staging/cikgulaju-web-v1
     paths:
       - 'tools/run_telegram_curriculum_wsgi.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_telegram_optional_wsgi.py'
       - 'tests/test_telegram_curriculum_wsgi_guard.py'
       - 'tests/test_verified_pdp_navigation_limit.py'
       - 'tests/test_pjpk_component_isolation.py'
@@ -43,3 +45,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_pjpk_authoritative_http.py' -v
           python -m unittest discover -s tests -p 'test_telegram_curriculum_pjpk_routes.py' -v
           python -m unittest discover -s tests -p 'test_curriculum_registration_hook.py' -v
+          python -m unittest discover -s tests -p 'test_telegram_optional_wsgi.py' -v
