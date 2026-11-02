@@ -44,7 +44,7 @@ def apply(st, rows):
         inline_pbd = re.search(r"(?m)^\*\*PBD:\*\*[^\S\n]*(.*)$", source)
         if inline_pbd:
             pbd = inline_pbd.group(1).strip()
-    if not intro or not closure or not activities:
+    if not intro or not closure or not activities or not pbd:
         return rows
     # Do not allow a source section to spill into the closure.
 
