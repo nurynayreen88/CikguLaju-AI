@@ -65,6 +65,7 @@ class Year4Tests(unittest.TestCase):
 
     def test_inline_pbd_not_leaked_into_closure(self):
         lesson = """# Lesson 80
+**Status:** READY
 ## Set induction
 **Teacher:** Introduce.
 ## Activity 1
