@@ -24,6 +24,8 @@
 **Pupils:** Describe three features and ask two questions.
 
 ## Assessment / PBD (10 minutes)
+**Teacher:** Direct pupils to Workbook p.99, Activity 1; explain the task, check individual responses and record achievement against the lesson objectives.
+**Pupils:** Pupils complete Workbook p.99, Activity 1, by reading the children's descriptions of what they can and cannot do.
 **Teacher (10 min):** Record three basic personal questions (SP 2.1.2) and three personal ability responses (SP 2.1.1).
 **Pupils:** Submit individual evidence.
 
