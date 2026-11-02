@@ -18,7 +18,7 @@ Pupils play the adjective guessing game in pairs. Teacher follows Student's Book
 
 ## Assessment / PBD (10 minutes)
 **Teacher:** Direct pupils to Workbook p.76, Activity 1; explain the printed task, check individual answers and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.76, Activity 1, by matching animal pictures to comparative adjectives.
+**Pupils:** Pupils complete Workbook p.76, Activity 1, by looking at the pictures and writing the correct comparative adjectives.
 Teacher checks each pupil's matching animal card and asks them to identify one comparative adjective heard in the song. Pupils record one new word in their learning diary.
 
 ## Closure (5 minutes)
