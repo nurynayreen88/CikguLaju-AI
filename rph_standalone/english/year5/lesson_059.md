@@ -1,15 +1,25 @@
-# English Year 5 Lesson 59: Listening 11
+# English Year 5 — Standalone RPH — Lesson 059 (Listening 11)
 
-Official SOW Lesson 59, printed p.97. Topic: Wild Life. Duration: 60 minutes.
-Main and complementary learning standards: Listening 1.2.5; Reading 3.2.4.
-Sources: SB p.36 Activities 1-4; TB p.50; CD 1-33 and 1-34.
+**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Wild Life. **Main LS:** 1.2.5. **Complementary LS:** 3.2.4. **Duration:** 60 min, suggested.
 
-1. Brainstorm fast and slow animals, including cheetah and sloth.
-2. Listen to CD 1-33 and complete the Animal skills quiz.
-3. Check distance, ground and intelligent with dictionaries.
-4. Listen to CD 1-34 for Activities 2-4, checking animal abilities.
-5. Use the Teacher Book question dictation task to assess understanding.
+**Language focus:** Modal auxiliary verbs: can (positive use) can’t (negative use) for ability. **Materials:** SOW-prescribed literary text and BPK CCL guide; audio CD1.33, CD1.34.
 
-PBD: Record evidence from the described activities against the stated skills.
-Differentiation: Replay CD 1-34 where needed.
-Workbook exercise not verified. Audio playback not verified. QA status: Draft pending physical source and Word/PDF checks.
+**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+
+**Set induction (5 min):** 1. Brainstorm fast-running and slow-moving animals. Write on board in two columns. Ask: Which is the fastest land animal? (cheetah) Which is the slowest land animal?
+
+**Activity 1 (15 min):** Read aloud introduction to Animal skills quiz. Pupils in pairs do Activity 1, CD1.33. Read verbs in box aloud but not ‘kill’ and ‘survive’. Pupils mime actions. Pre-teach ‘kill’ and ‘survive’ and relate to animals. Pupils read quiz questions and complete gaps with the verbs. Play CD1.33 again. Pupils listen to questions and check answers.
+
+**Activity 2 (15 min):** Pupils do Activity 3, CD1.34. Follow the instructions in Teacher’s Book p.50 Exercise 3. Ask: Which animal do you think is the most interesting? What can it do? Is there something it can’t do?
+
+**Activity 3 (15 min):** Pupils do Activity 4, CD1.34. Follow the instructions in Teacher’s Book p.50 Exercise 4. Ask: Think about the animals in the podcast. Which animal would you like to find out more information about? What information would you like to find out? Note how well pupils understood the questions in the quiz and podcast.
+
+**PBD (5 min):** Teacher records how well pupils understood the questions in the quiz and podcast.
+
+**Closure (5 min):** 6. See question dictation in Teacher’s Book Optional activity: Listening, p.50.
+
+**Workbook practice:** Workbook p.31, Unit 3 Language Focus — can/can't for ability, Ex1-5. Use as brief follow-up without replacing the SOW tasks.
+
+**Differentiation:** At Steps 3 and 4 provide positive comments to pupils who find listening to questions in longer texts hard.
+
+**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
