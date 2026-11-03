@@ -5,6 +5,7 @@ or other subjects/years. The existing RPH generator and its quota gate remain in
 """
 from pathlib import Path
 import re
+import json
 
 LESSON_ROOT = Path(__file__).resolve().parents[1] / "rph_standalone" / "english" / "year6"
 ALLOWED = frozenset(range(1, 161))
@@ -59,6 +60,19 @@ def load_lesson(number, *, root=LESSON_ROOT):
     return meta, sections
 
 
+def _overlay(number, root):
+    # The official-SOW-derived mapping is version-locked and read-only.
+    path = Path(root) / "sow_task_overlay_2027.json"
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("version") != "y6-sow-20261103" or data.get("fixed_standard_lessons") != 146:
+            return None
+        lesson = data["lessons"].get(str(number))
+        return lesson if isinstance(lesson, dict) else None
+    except (OSError, ValueError, TypeError, KeyError):
+        return None
+
+
 def _phase(text, minutes):
     return "%s minutes\n%s" % (minutes, text)
 
@@ -95,6 +109,14 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
         return rows
     main = _standard_pair(meta["main cs/ls"])
     comp = _standard_pair(meta["complementary cs/ls"])
+    overlay = _overlay(number, root)
+    # Fixed-standard lessons require matching official SOW codes and a complete
+    # task overlay; do not show an uncorrected generic plan on mismatch.
+    if main is not None:
+        if (not overlay or not comp or overlay.get("main_ls") != main[1]
+                or overlay.get("complementary_ls") != comp[1]
+                or len(overlay.get("activities") or []) != 3):
+            return rows
     result = dict(rows)
     if main and comp:
         result["STANDARD KANDUNGAN"] = "Main: %s; Complementary: %s" % (main[0], comp[0])
@@ -103,18 +125,33 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
         result["STANDARD KANDUNGAN"] = "Teacher-selected DSKP standard (not fixed by SOW)"
         result["STANDARD PEMBELAJARAN"] = "Teacher-selected DSKP Learning Standard (not fixed by SOW)"
     result["TAJUK"] = meta.get("topic") or rows.get("TAJUK", "")
-    result["OBJEKTIF PEMBELAJARAN"] = meta["learning objective"]
-    result["KRITERIA KEJAYAAN"] = meta["learning objective"]
+    result["OBJEKTIF PEMBELAJARAN"] = overlay.get("objective") if overlay else meta["learning objective"]
+    result["KRITERIA KEJAYAAN"] = result["OBJEKTIF PEMBELAJARAN"]
     result["BAHAN BANTU MENGAJAR"] = meta["materials"]
-    result["PENTAKSIRAN"] = meta["pbd evidence"]
-    result["SET INDUKSI"] = _phase(p["Set induction"], 5)
-    result["AKTIVITI UTAMA"] = "\n\n".join([
-        "Aktiviti 1 (10 minutes)\n" + p["Activity 1"],
-        "Aktiviti 2 (18 minutes)\n" + p["Activity 2"],
-        "Aktiviti 3 (15 minutes)\n" + p["Activity 3"],
-        "Pengukuhan / PBD (8 minutes)\n" + p["Reinforcement / PBD"],
-    ])
-    result["PENUTUP"] = _phase(p["Closure"], 4)
+    if overlay and overlay.get("sow_pupil_book_exercises"):
+        result["BAHAN BANTU MENGAJAR"] += "; SOW PB Exercise(s): " + overlay["sow_pupil_book_exercises"]
+    result["PENTAKSIRAN"] = overlay.get("pbd_evidence") if overlay else meta["pbd evidence"]
+    if overlay:
+        intro = overlay["induction"]
+        result["SET INDUKSI"] = _phase("Teacher: " + intro["teacher"] + "\nPupils: " + intro["pupils"], 5)
+        detail = []
+        for index, minutes in enumerate((10, 18, 15)):
+            activity = overlay["activities"][index]
+            detail.append("Activity %d (%d minutes)\nTeacher: %s\nPupils: %s" % (
+                index + 1, minutes, activity["teacher"], activity["pupils"]))
+        detail.append("Reinforcement / PBD (8 minutes)\n" + p["Reinforcement / PBD"])
+        result["AKTIVITI UTAMA"] = "\n\n".join(detail)
+        ending = overlay["closure"]
+        result["PENUTUP"] = _phase("Teacher: " + ending["teacher"] + "\nPupils: " + ending["pupils"], 4)
+    else:
+        result["SET INDUKSI"] = _phase(p["Set induction"], 5)
+        result["AKTIVITI UTAMA"] = "\n\n".join([
+            "Activity 1 (10 minutes)\n" + p["Activity 1"],
+            "Activity 2 (18 minutes)\n" + p["Activity 2"],
+            "Activity 3 (15 minutes)\n" + p["Activity 3"],
+            "Reinforcement / PBD (8 minutes)\n" + p["Reinforcement / PBD"],
+        ])
+        result["PENUTUP"] = _phase(p["Closure"], 4)
     result["PEMULIHAN / PENGAYAAN"] = p.get("Differentiation and follow-up") or rows.get("PEMULIHAN / PENGAYAAN", "")
     result["REFLEKSI"] = meta.get("teacher reflection", rows.get("REFLEKSI", ""))
     return result
