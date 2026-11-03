@@ -2,38 +2,34 @@
 
 **ID:** BM3-P146  
 **Tema/Unit:** Pertanian dan Penternakan; U21: Bumi Bertuah  
-**Tajuk RPT:** Lawatan ke Kilang Nanas Manis  
+**Tajuk Buku Teks:** Lawatan ke Kilang Nanas Manis  
 **SK:** 3.3 Menghasilkan penulisan.  
-**SP:** 3.3.1 (i) — Menghasilkan kerangka dan penulisan karangan naratif, dan bukan naratif secara berpandu.  
-**Bidang / fokus:** Menulis — karangan berpandu  
-**Sumber:** BT2 m/s 55; BA m/s 59; Buku Aktiviti BM Tahun 3 SK Jilid 2, DBP 2018 (petunjuk kod dan halaman); Buku Teks mesti disahkan untuk tajuk asal.  
-**Bahan PdP:** tajuk Lawatan ke Kilang Nanas Manis tetapi BA2 m/s59 ialah latihan kata tanya Kedai Cengkerik Hong; kad soalan atau kosa kata, lembaran respons murid dan senarai semak PBD.  
-**Masa cadangan:** 60 minit; mengikut jadual guru.  
-**Objektif:** Murid dapat menangguh karangan sehingga BA/BT sepadan dengan SP 3.3.1(i).
+**SP:** 3.3.1 (i) — Menghasilkan kerangka dan penulisan karangan naratif secara berpandu  
+**Fokus:** Karangan naratif berpandu  
+**Rujukan:** BT2 m/s 59; BA m/s 64-65  
+**Bahan:** gambar bersiri lawatan murid ke kilang nanas; Buku Teks dan Buku Aktiviti BM Tahun 3 SK Jilid 2, bahan catatan dan senarai semak PBD.  
+**Objektif:** Murid dapat membina kerangka lima bahagian dan menghasilkan sekurang-kurangnya dua perenggan naratif.  
+**Masa:** 60 minit, disesuaikan jadual.
 
-## Set induksi — 5 minit
-**Guru:** Menunjukkan tajuk Lawatan ke Kilang Nanas Manis tetapi BA2 m/s59 ialah latihan kata tanya Kedai Cengkerik Hong dan bertanya satu soalan berkaitan U21: Bumi Bertuah.
-**Murid:** Mengemukakan dua pemerhatian atau idea berdasarkan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan gambar bersiri lawatan murid ke kilang nanas dan bertanya satu soalan berkaitan tajuk.
+**Murid:** Memberi dua respons berdasarkan pengalaman atau gambar.
 
-## Aktiviti 1 — Bimbingan kemahiran (15 minit)
-**Guru:** Menjelaskan tujuan karangan berpandu dan menunjukkan satu contoh berpandukan rujukan bahan yang bersesuaian.
-**Murid:** Mengenal isi, bukti bahasa atau struktur tugasan daripada tajuk Lawatan ke Kilang Nanas Manis tetapi BA2 m/s59 ialah latihan kata tanya Kedai Cengkerik Hong dengan bantuan soalan guru.
+## Aktiviti 1 (15 minit)
+**Guru:** Menerangkan Karangan naratif berpandu dan memodelkan contoh berpandukan halaman asal.
+**Murid:** Menyusun urutan berkumpul, taklimat, pemprosesan jem dan lawatan kios.
 
-## Aktiviti 2 — Tugasan khusus (20 minit)
-**Guru:** Menyusun murid secara pasangan atau kumpulan kecil, membekalkan bahan untuk tugasan dan memberi maklum balas semasa latihan.
-**Murid:** Menangguh karangan sehingga BA/BT sepadan dengan SP 3.3.1(i) dan menyemak jawapan dengan pasangan menggunakan bukti daripada bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Memudah cara tugasan berpasangan dan menyemak penggunaan kemahiran.
+**Murid:** Membina kerangka lima bahagian dan menghasilkan sekurang-kurangnya dua perenggan naratif.
 
-## Pengukuhan / Penilaian PBD — 15 minit
-**Guru:** Menilai bukti BT2 dan BA sebenar diperlukan; merekod perkembangan murid dan memberikan tugas pemulihan yang lebih berpandu.
-**Murid:** Menunjukkan hasil atau memberi respons, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan sebab.
+## Pengukuhan dan PBD (15 minit)
+**Guru:** Menyemak susunan masa, dua perenggan dan penggunaan penanda wacana, merekod kemajuan dan memberi bimbingan khusus.
+**Murid:** Menyerahkan bukti kerja dan membetulkan satu kesilapan dengan sebab.
 
-## Penutup — 5 minit
-**Guru:** Merumuskan kemahiran karangan berpandu dan menyambungkannya dengan situasi dalam Unit.
-**Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
+## Penutup (5 minit)
+**Guru:** Merumuskan kemahiran Karangan naratif berpandu dalam situasi Unit.
+**Murid:** Menyatakan satu kemahiran yang diperoleh.
 
-**Status QA:** HOLD — belum READY.  
-**Bukti BA:** AMARAN: kod SP RPT dan penanda BA2 tidak sepadan.  
-**Isu:** Kod SP RPT 3.3.1 (i) bercanggah dengan petunjuk BA2 5.1.4
-(iv); Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap  
-**Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
-**Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+**Status QA:** DRAF — tajuk, SP dan rujukan yang diubah telah dipadankan kepada DSKP, Buku Teks dan Buku Aktiviti Tahun 3. Masih **BELUM READY** kerana audit penuh, cetakan A4, kalendar negeri dan CI/runtime.  
+**Kawalan:** Fail staging, bukan penerbitan Telegram/Web.

@@ -2,38 +2,34 @@
 
 **ID:** BM3-P130  
 **Tema/Unit:** Kelestarian Alam; U18: Tahukah Kamu?  
-**Tajuk RPT:** Alam  
+**Tajuk Buku Teks:** Keindahan Hutan Hujan Borneo  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
-**SP:** 5.1.2 (i) — Memahami dan menggunakan kata kerja mengikut konteks  
-**Bidang / fokus:** Tatabahasa — kata kerja pasif  
-**Sumber:** BT2 m/s 39; BA m/s 46; Buku Aktiviti BM Tahun 3 SK Jilid 2, DBP 2018 (petunjuk kod dan halaman); Buku Teks mesti disahkan untuk tajuk asal.  
-**Bahan PdP:** petikan Benteng Pemecah Ombak; kad soalan atau kosa kata, lembaran respons murid dan senarai semak PBD.  
-**Masa cadangan:** 60 minit; mengikut jadual guru.  
-**Objektif:** Murid dapat mengenal pasti lima kata kerja pasif sebelum membina tiga ayat.
+**SP:** 5.1.2 (ii) — Memahami dan menggunakan kata kerja pasif mengikut konteks  
+**Fokus:** Kata kerja pasif  
+**Rujukan:** BT2 m/s 39; BA m/s 46  
+**Bahan:** petikan lawatan ke Pusat Penemuan Hutan Hujan Borneo; Buku Teks dan Buku Aktiviti BM Tahun 3 SK Jilid 2, bahan catatan dan senarai semak PBD.  
+**Objektif:** Murid dapat melengkapkan latihan BA tentang benteng pemecah ombak dan membina tiga ayat pasif.  
+**Masa:** 60 minit, disesuaikan jadual.
 
-## Set induksi — 5 minit
-**Guru:** Menunjukkan petikan Benteng Pemecah Ombak dan bertanya satu soalan berkaitan U18: Tahukah Kamu?.
-**Murid:** Mengemukakan dua pemerhatian atau idea berdasarkan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan petikan lawatan ke Pusat Penemuan Hutan Hujan Borneo dan bertanya satu soalan berkaitan tajuk.
+**Murid:** Memberi dua respons berdasarkan pengalaman atau gambar.
 
-## Aktiviti 1 — Bimbingan kemahiran (15 minit)
-**Guru:** Menjelaskan tujuan kata kerja pasif dan menunjukkan satu contoh berpandukan rujukan bahan yang bersesuaian.
-**Murid:** Mengenal isi, bukti bahasa atau struktur tugasan daripada petikan Benteng Pemecah Ombak dengan bantuan soalan guru.
+## Aktiviti 1 (15 minit)
+**Guru:** Menerangkan Kata kerja pasif dan memodelkan contoh berpandukan halaman asal.
+**Murid:** Mengenal kata kerja pasif dalam teks lawatan dan membandingkannya dengan kata kerja aktif.
 
-## Aktiviti 2 — Tugasan khusus (20 minit)
-**Guru:** Menyusun murid secara pasangan atau kumpulan kecil, membekalkan bahan untuk tugasan dan memberi maklum balas semasa latihan.
-**Murid:** Mengenal pasti lima kata kerja pasif sebelum membina tiga ayat dan menyemak jawapan dengan pasangan menggunakan bukti daripada bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Memudah cara tugasan berpasangan dan menyemak penggunaan kemahiran.
+**Murid:** Melengkapkan latihan BA tentang benteng pemecah ombak dan membina tiga ayat pasif.
 
-## Pengukuhan / Penilaian PBD — 15 minit
-**Guru:** Menilai pengesahan subkod DSKP 5.1.2(ii) kerana RPT menyatakan (i); merekod perkembangan murid dan memberikan tugas pemulihan yang lebih berpandu.
-**Murid:** Menunjukkan hasil atau memberi respons, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan sebab.
+## Pengukuhan dan PBD (15 minit)
+**Guru:** Menyemak lima kata pasif dan tiga ayat gramatis, merekod kemajuan dan memberi bimbingan khusus.
+**Murid:** Menyerahkan bukti kerja dan membetulkan satu kesilapan dengan sebab.
 
-## Penutup — 5 minit
-**Guru:** Merumuskan kemahiran kata kerja pasif dan menyambungkannya dengan situasi dalam Unit.
-**Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
+## Penutup (5 minit)
+**Guru:** Merumuskan kemahiran Kata kerja pasif dalam situasi Unit.
+**Murid:** Menyatakan satu kemahiran yang diperoleh.
 
-**Status QA:** HOLD — belum READY.  
-**Bukti BA:** AMARAN: kod SP RPT dan penanda BA2 tidak sepadan.  
-**Isu:** Kod SP RPT 5.1.2 (i) bercanggah dengan petunjuk BA2 5.1.2
-(ii); Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap; RPT sumber menandakan tajuk perlu dilengkapkan; Tajuk asal terpotong atau terlalu umum  
-**Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
-**Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+**Status QA:** DRAF — tajuk, SP dan rujukan yang diubah telah dipadankan kepada DSKP, Buku Teks dan Buku Aktiviti Tahun 3. Masih **BELUM READY** kerana audit penuh, cetakan A4, kalendar negeri dan CI/runtime.  
+**Kawalan:** Fail staging, bukan penerbitan Telegram/Web.

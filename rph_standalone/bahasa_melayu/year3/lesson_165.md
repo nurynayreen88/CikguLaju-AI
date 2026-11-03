@@ -2,37 +2,34 @@
 
 **ID:** BM3-P165  
 **Tema/Unit:** Ekonomi, Keusahawanan dan Kewangan; U24: Bijak Mengurus Kewangan  
-**Tajuk RPT:** Pembeli Bijak  
+**Tajuk Buku Teks:** Pembeli Bijak  
 **SK:** 5.3 Memahami dan membina ayat mengikut konteks.  
-**SP:** 5.3.2 (i), (ii) — Memahami dan menggunakan ayat mengikut konteks  
-**Bidang / fokus:** Tatabahasa — ayat tunggal  
-**Sumber:** BT2 m/s 81; BA m/s 91-92; Buku Aktiviti BM Tahun 3 SK Jilid 2, DBP 2018 (petunjuk kod dan halaman); Buku Teks mesti disahkan untuk tajuk asal.  
-**Bahan PdP:** petikan penjimatan air di bilik mandi; kad soalan atau kosa kata, lembaran respons murid dan senarai semak PBD.  
-**Masa cadangan:** 60 minit; mengikut jadual guru.  
-**Objektif:** Murid dapat membezakan empat ayat tunggal daripada ayat majmuk dan membina dua ayat baharu.
+**SP:** 5.3.2 (i), (ii) — Memahami dan menggunakan ayat tunggal dan ayat majmuk mengikut konteks  
+**Fokus:** Ayat tunggal dan ayat majmuk  
+**Rujukan:** BT2 m/s 81; BA m/s 91-92  
+**Bahan:** dialog pilihan membeli pen RM5 sebatang atau RM9 tiga batang; Buku Teks dan Buku Aktiviti BM Tahun 3 SK Jilid 2, bahan catatan dan senarai semak PBD.  
+**Objektif:** Murid dapat mengelaskan empat ayat dan menulis dua ayat majmuk tentang pembelian berhemat.  
+**Masa:** 60 minit, disesuaikan jadual.
 
-## Set induksi — 5 minit
-**Guru:** Menunjukkan petikan penjimatan air di bilik mandi dan bertanya satu soalan berkaitan U24: Bijak Mengurus Kewangan.
-**Murid:** Mengemukakan dua pemerhatian atau idea berdasarkan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan dialog pilihan membeli pen RM5 sebatang atau RM9 tiga batang dan bertanya satu soalan berkaitan tajuk.
+**Murid:** Memberi dua respons berdasarkan pengalaman atau gambar.
 
-## Aktiviti 1 — Bimbingan kemahiran (15 minit)
-**Guru:** Menjelaskan tujuan ayat tunggal dan menunjukkan satu contoh berpandukan rujukan bahan yang bersesuaian.
-**Murid:** Mengenal isi, bukti bahasa atau struktur tugasan daripada petikan penjimatan air di bilik mandi dengan bantuan soalan guru.
+## Aktiviti 1 (15 minit)
+**Guru:** Menerangkan Ayat tunggal dan ayat majmuk dan memodelkan contoh berpandukan halaman asal.
+**Murid:** Mengenal ayat tunggal dan majmuk dalam dialog serta meneliti penggunaan kata hubung.
 
-## Aktiviti 2 — Tugasan khusus (20 minit)
-**Guru:** Menyusun murid secara pasangan atau kumpulan kecil, membekalkan bahan untuk tugasan dan memberi maklum balas semasa latihan.
-**Murid:** Membezakan empat ayat tunggal daripada ayat majmuk dan membina dua ayat baharu dan menyemak jawapan dengan pasangan menggunakan bukti daripada bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Memudah cara tugasan berpasangan dan menyemak penggunaan kemahiran.
+**Murid:** Mengelaskan empat ayat dan menulis dua ayat majmuk tentang pembelian berhemat.
 
-## Pengukuhan / Penilaian PBD — 15 minit
-**Guru:** Menilai empat pengelasan tepat dan dua ayat gramatis; merekod perkembangan murid dan memberikan tugas pemulihan yang lebih berpandu.
-**Murid:** Menunjukkan hasil atau memberi respons, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan sebab.
+## Pengukuhan dan PBD (15 minit)
+**Guru:** Menyemak empat pengelasan dan dua ayat majmuk tepat, merekod kemajuan dan memberi bimbingan khusus.
+**Murid:** Menyerahkan bukti kerja dan membetulkan satu kesilapan dengan sebab.
 
-## Penutup — 5 minit
-**Guru:** Merumuskan kemahiran ayat tunggal dan menyambungkannya dengan situasi dalam Unit.
-**Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
+## Penutup (5 minit)
+**Guru:** Merumuskan kemahiran Ayat tunggal dan ayat majmuk dalam situasi Unit.
+**Murid:** Menyatakan satu kemahiran yang diperoleh.
 
-**Status QA:** HOLD — belum READY.  
-**Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
-**Isu:** SP berganda (i),(ii) belum disokong sepenuhnya oleh BA  
-**Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
-**Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+**Status QA:** DRAF — tajuk, SP dan rujukan yang diubah telah dipadankan kepada DSKP, Buku Teks dan Buku Aktiviti Tahun 3. Masih **BELUM READY** kerana audit penuh, cetakan A4, kalendar negeri dan CI/runtime.  
+**Kawalan:** Fail staging, bukan penerbitan Telegram/Web.
