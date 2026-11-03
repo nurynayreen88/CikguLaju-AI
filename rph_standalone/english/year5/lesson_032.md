@@ -1,5 +1,7 @@
 # English Year 5 Lesson 32 — Writing 6
 
+**Official SOW topic:** Towns and cities.
+
 **Official SOW:** Lesson 32, printed p.68. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Writing 4.2.5; Speaking 2.1.5.
 **Materials:** SB p.106 Activities 3–4; TB p.120; Malaysia map.
