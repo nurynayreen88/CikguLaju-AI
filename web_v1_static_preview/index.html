@@ -94,8 +94,8 @@ document.getElementById("show-materials").addEventListener("click",async()=>{
   const data=await response.json(),items=Array.isArray(data)?data:data.items;
   if(!Array.isArray(items))throw Error("Format bahan tidak sah.");
   const list=document.getElementById("materials-list");
-  for(const item of items){if(!item||!item.approved||!item.id)continue;const li=document.createElement("li");li.textContent=String(item.title||item.name||"Bahan diluluskan")+" ";const a=document.createElement("a");a.textContent="Download";a.href="/api/materials/download/"+encodeURIComponent(String(item.id));li.append(a);list.append(li);}
-  status.textContent=list.children.length?list.children.length+" bahan diluluskan.":"Tiada bahan diluluskan untuk Lesson ini.";
+  for(const item of items){if(!item||!item.approved||!item.id)continue;const li=document.createElement("li");li.textContent=String(item.title||item.name||"Bahan diluluskan");if(data.download_enabled===true&&item.download_enabled===true){const a=document.createElement("a");a.textContent="Download";a.href="/api/materials/download/"+encodeURIComponent(String(item.id));li.append(" ",a);}list.append(li);}
+  status.textContent=data.download_enabled===false?"Senarai bahan telah disemak, tetapi muat turun belum disahkan pada sumber Telegram.":(list.children.length?list.children.length+" bahan diluluskan.":"Tiada bahan diluluskan untuk Lesson ini.");
   // Download Semua stays disabled until a server-issued ZIP or download bundle is implemented.
  }catch(error){status.textContent=error.message;}
 });
