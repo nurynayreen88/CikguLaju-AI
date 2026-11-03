@@ -31,5 +31,5 @@
 **Tindakan guru:** Guru merumuskan kemahiran mendengar suruhan dan permintaan lalu memberikan respons dan mengaitkannya dengan amalan yang sesuai.
 **Tindakan murid:** Murid menyatakan satu kemahiran baharu dan memberi satu contoh daripada kehidupan.
 
-**Status QA:** DRAF — padanan BT penuh, takwim, format cetak dan integrasi masih perlu QA.
+**Status QA:** HOLD — BA1 tidak membuktikan semua subkemahiran SP gabungan; perlu semak BT asal sebelum dianggap layak READY.
 **Nota kawalan:** Pemetaan aktiviti BA diperoleh daripada buku asal yang dibaca. Tiada arahan buku atau kod rasmi yang direka. Fail ini tidak diterbitkan kepada guru.
