@@ -23,3 +23,5 @@
 **Reflection:** Pupils meeting objectives __ / __; follow-up __.
 
 **QA status:** SOURCE-PAIRED DRAFT — checked against official SOW; rendered textbook pages and Word/PDF output not yet inspected.
+
+**Workbook (mapped source):** WB p.6 — Starter Vocabulary — Prepositions and everyday objects, Ex1-4. This is a short follow-up after the main SOW activities; do not replace the lesson tasks.

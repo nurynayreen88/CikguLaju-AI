@@ -22,3 +22,5 @@
 **PBD:** Observe main-idea responses, pronoun selection and partner exchanges. Record Independent / With support / Needs reteaching. **Reflection:** Met objective __/__; follow-up __.
 
 **QA status:** SOURCE-PAIRED DRAFT — SOW checked; book-page and audio-content verification and Word/PDF export checks pending. Do not publish as fully verified.
+
+**Workbook (mapped source):** WB p.5 — Starter Language Focus — subject pronouns and possessive adjectives, Ex5-6. This is a short follow-up after the main SOW activities; do not replace the lesson tasks.
