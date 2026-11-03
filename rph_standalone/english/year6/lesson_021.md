@@ -6,7 +6,7 @@
 **Complementary CS/LS:** 4.3/4.3.1  
 **Language focus:** Adverbs: sequencing, e.g. First… Next… After that, punctuation  
 **Duration:** 60 minutes  
-**Materials:** Anthology of Poems p.27 — Messing About; original pupil response card  
+**Materials:** Anthology of Poems (Years 4–6), The Sandwich by Tony Bradman pp.28–29 (2026 SOW); RPT 2027 lists Messing About p.27 — verify mismatch.; original pupil response card  
 **Learning objective:** Create an original short creative response to “The Sandwich” and connect it to two details from the literary text.  
 **PBD evidence:** An original imaginative response and two clear text-linked explanations.
 

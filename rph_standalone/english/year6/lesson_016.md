@@ -6,7 +6,7 @@
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
 **Language focus:** relevant vocabulary and language from this unit  
 **Duration:** 60 minutes  
-**Materials:** SOW: Language Awareness — resources selected according to lesson (verify); unit review sheet and self-assessment checklist  
+**Materials:** SOW: Language Awareness — resources selected according to lesson (verify); additional 2026 SOW: Academy Stars Y6 TB p.37, Workbook pp.16–17 and unit self-assessment.; unit review sheet and self-assessment checklist  
 **Learning objective:** Consolidate a safe emergency incident through a unit review and demonstrate understanding in at least 4 accurate responses.  
 **PBD evidence:** Conduct a guided partner exchange about 'It's an emergency!', then produce a short written response using lesson vocabulary.
 
@@ -23,8 +23,8 @@
 **Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction. Guide the Unit 1 self-assessment and Workbook pp.16–17 using the printed instructions.  
+**Pupils:** Correct two errors, show completed review evidence and state one next learning goal. Complete the relevant Unit 1 Workbook review on pp.16–17 and record one improvement goal.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  
