@@ -1,23 +1,21 @@
 # English Year 5 — Standalone RPH — Lesson 039 (Language Arts 7)
 
-**Status:** DRAF — SOW-aligned revision, pending final visual/audio and teacher QA. **Topic:** Watching a Bumble Bee. **Main LS:** 5.2.1. **Complementary LS:** 3.2.2. **Duration:** 60 minutes (suggested).
+**Status:** DRAF — literature and A4 verification pending. **Topic:** Watching a Bumble Bee. **Main LS:** 5.2.1. **Complementary LS:** 3.2.2. **Duration:** 60 minutes.
 
-**Language focus:** True/false sentences. **Materials:** Non-textbook: Watching a Bumble Bee, Anthology p.21; BPK Poetry Guidebook Activity 1 p.73..
+**Materials:** Watching a Bumble Bee, Anthology of Poems p.21; BPK Poetry Guidebook Activity 1 p.73; true/false sentence strips, adhesive and mind-map paper. **No English Plus Student Book, Workbook or CD task is assigned.**
 
-**Learning objective:** Pupils use Watching a Bumble Bee language to complete the prescribed Language Arts 7 tasks and demonstrate main LS 5.2.1 and complementary LS 3.2.2.
+**Objective:** Pupils identify information from the poem and produce a mind map comparing themselves with the bumble bee, with at least one reason supported by the text.
 
-**Set induction (5 min):** Teacher provides a letter and pupils have to come up with a word that starts with that letter related to a topic (animals/insects e.g. g – giraffe, …, b - bee) [Pre-Lesson Task 1 – ABCs]
+**Set induction (5 min):** Teacher uses an alphabet prompt about animals or insects; pupils suggest words, including bee.
 
-**Activity 1 (15 min):** Pupils read the poem silently and teacher assists in pupils’ understanding (Q&A).
+**Activity 1 — Read and understand (15 min):** Pupils read the poem silently. Teacher checks understanding through questions about the bee and clarifies unfamiliar phrases.
 
-**Activity 2 (15 min):** Teacher distributes True or False sentence strips to each pupil and asks them to stick the statement at the provided True or False sections in the class using a blue tack.
+**Activity 2 — True or false (15 min):** Teacher distributes statements drawn from the guidebook task. Pupils place each statement in the true or false area, reread the poem and justify their choice.
 
-**Activity 3 (15 min):** Pupils walk around the class to check each other’ answers and make corrections the answer if there are mistake. 5. Pupils make a mind-map about themselves and the bumble bees based on the sentence strip used before and provide simple reasons 6. Upon completion, pupils exchange their mind maps and rate each other’s works by giving some good remarks.
+**Activity 3 — Imaginative response (15 min):** Pupils review classmates' placements, correct errors and create a mind map comparing themselves and the bee. Pairs exchange mind maps and give one specific positive comment and one question.
 
-**PBD (5 min):** Teacher records a relevant imaginative response to the literature and pupils' explanation.
+**PBD (5 min):** Teacher checks whether each pupil classifies statements with evidence and produces a relevant imaginative comparison with a reason. Feedback is followed by one pupil correction.
 
-**Closure (5 min):** Pupils put their hands up each time they hear something different from the poem (e.g. out in the sea – hands up as the statement is different from the poem). [Post-lesson Task 1: Spot the differences] Anthology of Poems Page 21 Contemporary.
+**Closure (5 min):** Teacher reads short statements; pupils signal when a statement differs from the poem and name the differing idea.
 
-**Literature:** Use the SOW-prescribed literature/guide; no English Plus Workbook or audio task is assigned.
-
-**Differentiation:** Provide visual models or paired support for pupils who need help; extend confident pupils through independent responses. **QA note:** Workbook mapping is a prior source QA result; Student Book, Teacher Book, audio-content and A4 layout have not all been independently verified.
+**Differentiation:** Provide illustrated key words and sentence stems; extend with a second justified comparison. **QA:** Anthology/guidebook printed-page accuracy and A4 output require final checking before READY.

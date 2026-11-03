@@ -1,23 +1,21 @@
 # English Year 5 — Standalone RPH — Lesson 037 (Reading 7)
 
-**Status:** DRAF — SOW-aligned revision, pending final visual/audio and teacher QA. **Topic:** Days. **Main LS:** 3.3.1. **Complementary LS:** 4.3.2. **Duration:** 60 minutes (suggested).
+**Status:** DRAF — final source and A4 checks pending. **Topic:** Days. **Main LS:** 3.3.1. **Complementary LS:** 4.3.2. **Duration:** 60 minutes.
 
-**Language focus:** Adverbs of frequency: always, usually, normally, often, sometimes, never. **Materials:** English Plus 1 Student’s Book Activity 4 p.22 Activities 5 and 6 p.23 Teacher’s Book p.37.
+**Learning focus:** Read and use adverbs of frequency (always, usually, normally, often, sometimes, never) to describe daily routines. **Materials:** English Plus 1 Student Book p.22 Activity 4 and p.23 Activities 5–6; Teacher Book p.37; Workbook p.24 (previously mapped, optional).
 
-**Learning objective:** Pupils use Days language to complete the prescribed Reading 7 tasks and demonstrate main LS 3.3.1 and complementary LS 4.3.2.
+**Objective:** By the end, pupils sequence the frequency words on the Student Book chart and write at least two intelligible, correctly positioned adverb sentences about their routines.
 
-**Set induction (5 min):** Choose a pre-lesson task from Section 3 to review language of daily routines.
+**Set induction (5 min):** Teacher elicits familiar daily routines; pupils say how often they do one activity.
 
-**Activity 1 (15 min):** Copy on board the chart with adverbs (never, usually) and numbers (1 - 4) from p.23, Activity 5. Pupils look again at adverbs in box on p.22, Activity 4. They tell you adverbs to write in numbers 1 - 4 in chart. Ask: Why is normally above usually in the chart? (The meaning is similar) Elicit percentages to put in chart for sometimes, often, usually e.g.
+**Activity 1 — Frequency chart (15 min):** Teacher displays the chart from SB p.23 Activity 5 and draws attention to the adverbs in SB p.22 Activity 4. Pupils place the words in the numbered spaces and explain relative frequency. Teacher discusses why normally and usually have similar meanings.
 
-**Activity 2 (15 min):** Model sentences with verb to be and an adverb; with another verb and adverb e.g. I’m always / usually at school before 8am. I sometimes / never go to school by car. Pupils read Rules about place of adverbs and choose answers.
+**Activity 2 — Word order (15 min):** Teacher models adverb positions with be and other verbs (e.g. I'm usually at school early; I sometimes walk). Pupils read the language rules, choose answers and correct one example in pairs.
 
-**Activity 3 (15 min):** Pupils read My daily routine on p.23. In pairs, they take turns to say a sentence that is true for them. Find out if any pupils have no true sentences. Pupils then do Activity 6. Follow instructions for Exercise 6 on p.37 in Teacher’s Book. Pupils compare adverbs they wrote with a partner. Are any the same? Choose pupils to read a sentence aloud. 5. Pupils in pairs choose five facts each from Days and Nights Quiz.
+**Activity 3 — Apply and compare (15 min):** Pupils read My daily routine on p.23 and complete Activity 6 following TB p.37. They write examples true for themselves, compare with a partner and read one sentence aloud. Where time permits, pairs use facts from the Days and Nights Quiz.
 
-**PBD (5 min):** Teacher assesses pupils' responses to the specific SOW activities and gives corrective feedback.
+**PBD (5 min):** Teacher checks the chart and two pupil-written sentences for meaning and adverb position; each pupil corrects one identified error. Record pupils who need support.
 
-**Closure (5 min):** Follow instructions for Optional activity: Language point in Teacher’s Book, p.37.
+**Closure (5 min):** Pupils explain one difference between adverb placement after be and before an ordinary main verb.
 
-**Workbook link (from existing verified mapping):** Workbook p.24, Unit 2 Reading — A busy day, Ex1-5. Use as brief practice or evidence without replacing the SOW tasks.
-
-**Differentiation:** Provide visual models or paired support for pupils who need help; extend confident pupils through independent responses. **QA note:** Workbook mapping is a prior source QA result; Student Book, Teacher Book, audio-content and A4 layout have not all been independently verified.
+**Differentiation:** Offer a frequency continuum and sentence frames; ask confident pupils to explain frequency differences. **Workbook:** WB p.24 Unit 2 Reading may be used only as aligned follow-up, not in place of the SOW tasks. **QA:** Printed textbook tasks, workbook exercise and one-page A4 output still require final verification.

@@ -1,18 +1,21 @@
-# Year 5 Lesson 160 — Project 2
+# English Year 5 — Standalone RPH — Lesson 160 (Project 2)
 
-Status: DRAF. Unit 8. Official SOW leaves topic, main skill, complementary skill and learning standards to the teacher; no codes are prescribed.
-Materials: Teacher-selected materials; official SOW Project 2, Unit 8. Workbook mapping and audio playback remain unverified.
+**Status:** DRAF — teacher selection and approval required. **Official SOW:** Project 2, Unit 8; topic, main/complementary skills and LS are **teacher-selected**, not fixed by the SOW. **Duration:** 60 minutes.
 
-Objective: Pupils demonstrate the skills through the specific activities.
+**CikguLaju suggestion only:** An Eco-Holiday Brochure, linked to Unit 8 Going away. This is not an official prescribed project. **Materials:** Teacher-approved destination facts, blank brochure template and drawing tools; no mandatory English Plus Workbook, Student Book page or audio track.
 
-Set induction (5 min): Discuss possible project topics and agree success criteria.
+**Suggested objectives:** In groups, pupils design a brochure with a destination, packing/transport information and two practical environmentally responsible travel actions, then explain their choices clearly.
 
-Main activities (40 min): CikguLaju suggestion only: create an eco-holiday brochure. Groups select a destination, assign roles, research packing and transport, draft environmental commitments and present the brochure. Teacher selects topic, main and complementary DSKP standards. Teacher models instructions and provides feedback.
+**Set induction (5 min):** Teacher discusses safe, responsible travel. Pupils suggest destinations and agree the project success criteria.
 
-PBD (10 min): Use a teacher-approved rubric for communication, accuracy and teamwork. Pupils improve one response based on feedback.
+**Activity 1 — Plan (15 min):** Groups select a destination and audience, assign roles, decide on factual details to research and identify at least two environmentally responsible choices. Teacher checks proposed sources and language demands.
 
-Closure (5 min): Pupils share a learning point and submit an exit response.
+**Activity 2 — Produce (15 min):** Pupils draft the brochure with a title, labelled sections, relevant information and illustrations. Teacher gives focused language and factual feedback; pupils revise.
 
-Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
+**Activity 3 — Present (10 min):** Groups present their brochure. Peers ask one relevant question and presenters justify one eco-friendly travel action.
 
-Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
+**PBD (10 min):** Teacher uses a checklist covering correct destination facts, two appropriate eco-actions, understandable language, group participation and response to a question. Pupils improve one item after feedback.
+
+**Closure (5 min):** Pupils state one useful travel idea and one improvement they would make.
+
+**Differentiation:** Use picture prompts and sentence starters where needed; extend with an explanation of environmental impact. **Approval gate:** Teacher must first choose and document appropriate DSKP skills/LS, project materials and assessment criteria. SOW alignment, classroom feasibility and A4 output remain to be approved; **not READY**.

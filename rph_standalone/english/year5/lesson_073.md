@@ -1,25 +1,21 @@
 # English Year 5 — Standalone RPH — Lesson 073 (Reading 13)
 
-**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Learning World. **Main LS:** 3.2.2. **Complementary LS:** 2.1.2. **Duration:** 60 min, suggested.
+**Status:** DRAF — final source/audio and A4 checks pending. **Topic:** Learning World. **Main LS:** 3.2.2. **Complementary LS:** 2.1.2. **Duration:** 60 minutes.
 
-**Language focus:** Nouns: types of school – primary, secondary, private, public, boarding. **Materials:** English Plus 1 Student’s Book Activities 1, 2, 4 p.44 Teacher’s Book p.58; audio CD1.40.
+**Materials:** English Plus 1 Student Book p.44 Activities 1, 2 and 4; Teacher Book p.58; audio CD1-40; map and school photo prompts. Workbook p.40 (prior mapping, optional).
 
-**Learning objectives:** Main (Reading 3.2.2) — pupils understand specific information and details of two paragraphs or more in the Learning World activities. Complementary (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the linked speaking task.
+**Objective:** Pupils locate relevant details and opinions in texts about different schools and tell a partner one supported comparison with their own school experience.
 
-**Set induction (5 min):** 1. Brainstorm school subjects on board. Pupils answer Think! question, top of p.44.
+**Set induction (5 min):** Teacher elicits school subjects; pupils respond to the Think! prompt on SB p.44.
 
-**Activity 1 (15 min):** Pupils look at four photos on p.44. Elicit something from each photo e.g. boat, uniform, eyes closed, dancing. Write on board China, Britain, Bangladesh, Ireland. Point to countries on world map. Pupils predict which country the school photo is from. They read and listen to each text CD1.40.
+**Activity 1 — Predict and read (15 min):** Teacher shows the four photos and locates China, Britain, Bangladesh and Ireland on the map. Pupils predict the school locations, then read and listen to CD1-40 to test their predictions.
 
-**Activity 2 (15 min):** Explain the difference between primary, secondary, private (parents pay), public and boarding schools (pupils sleep there). Pupils answer questions in Activity 1.
+**Activity 2 — Find details (15 min):** Teacher clarifies primary, secondary, private, public and boarding schools. Pupils complete SB p.44 Activity 1 and identify the words in the texts supporting their answers.
 
-**Activity 3 (15 min):** Pupils do Activity 2. Follow instructions in Teacher’s Book p.58 Exercise 2. Explain that people can like or not like topics they write about. Writers show their opinions. Pupils look at the boat school and secondary school texts again and find words to show if the writer likes or doesn’t like the school. (boat school: It’s a great idea. Secondary: it’s a lot of fun.) 5. In pairs, pupils do Activity 4, Use It! Follow instructions in Teacher’s Book p.58 Exercise 4.
+**Activity 3 — Identify opinions (15 min):** Pupils complete Activity 2 with TB p.58 guidance and find opinion expressions such as 'It's a great idea' and 'It's a lot of fun'. In pairs, they complete Activity 4 (Use It!) and compare a school described with their experience.
 
-**PBD (5 min):** Teacher records pupils slow at reading texts and note which texts they lose interest in reading.
+**PBD (5 min):** Teacher checks two text-supported answers from each pupil and observes one relevant oral comparison. Pupils correct or improve one answer.
 
-**Closure (5 min):** 6. See Section 3 Post-lesson Task 10: What about You?
+**Closure (5 min):** Each pupil states a school detail learned and one difference from their own experience.
 
-**Workbook practice:** Workbook p.40, Unit 4 Reading — An exciting school, Ex1-5. Use as brief follow-up without replacing the SOW tasks.
-
-**Differentiation:** At Step 2: After each text praise pupils who find reading them hard. Say it’s good to keep trying even when they don’t understand every word.
-
-**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
+**Differentiation:** Provide a short glossary and highlight a relevant paragraph for support; extend with an additional evidence-based comparison. **Workbook:** WB p.40 Unit 4 Reading is optional aligned reinforcement. **QA:** Printed activities, audio contents and A4 layout still require verification.
