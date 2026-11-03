@@ -6374,7 +6374,8 @@
       "topic": "Teacher to complete: ____________",
       "main_ls": null,
       "complementary_ls": null,
-      "teacher_selected": false
+      "teacher_selected": true,
+      "issue": "Official Year 6 SOW says 'Teacher to complete' both Main and Complementary skills and standards; main-skill focus is a teacher choice, not a fixed CS/LS."
     },
     "6/156": {
       "n": 156,
@@ -6382,7 +6383,8 @@
       "topic": "Teacher to complete: ____________",
       "main_ls": null,
       "complementary_ls": null,
-      "teacher_selected": false
+      "teacher_selected": true,
+      "issue": "Official Year 6 SOW says 'Teacher to complete' both Main and Complementary skills and standards; main-skill focus is a teacher choice, not a fixed CS/LS."
     },
     "6/157": {
       "n": 157,
@@ -6390,7 +6392,8 @@
       "topic": "Teacher to complete: ____________",
       "main_ls": null,
       "complementary_ls": null,
-      "teacher_selected": false
+      "teacher_selected": true,
+      "issue": "Official Year 6 SOW says 'Teacher to complete' both Main and Complementary skills and standards; main-skill focus is a teacher choice, not a fixed CS/LS."
     },
     "6/158": {
       "n": 158,
@@ -6398,7 +6401,8 @@
       "topic": "Teacher to complete: ____________",
       "main_ls": null,
       "complementary_ls": null,
-      "teacher_selected": false
+      "teacher_selected": true,
+      "issue": "Official Year 6 SOW says 'Teacher to complete' both Main and Complementary skills and standards; main-skill focus is a teacher choice, not a fixed CS/LS."
     },
     "6/159": {
       "n": 159,

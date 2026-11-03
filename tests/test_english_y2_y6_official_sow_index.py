@@ -22,6 +22,7 @@ class EnglishY2Y6OfficialSOWAudit(unittest.TestCase):
         self.assertEqual(LEDGER["lessons"]["5/141"]["complementary_ls"],"4.2.4")
         self.assertTrue(LEDGER["lessons"]["5/160"]["teacher_selected"])
         self.assertTrue(LEDGER["lessons"]["6/160"]["teacher_selected"])
+        self.assertTrue(all(LEDGER["lessons"][f"6/{n}"]["teacher_selected"] for n in range(155,159)))
 
     def test_machine_audit_prints_open_mismatches_without_false_ready_claims(self):
         grouped={year:{"fixed":0,"matched":0,"no_explicit_pair":0,"mismatch":[]} for year in range(2,7)}
