@@ -15,3 +15,5 @@ Differentiation: Accept three or four written answers for pupils needing support
 Workbook: No exercise assigned until the exact page and activity are verified.
 Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.
 QA status: SOW-aligned draft; physical textbook page, audio playback and one-page Word/PDF checks outstanding.
+
+**Workbook (existing source QA map):** p.23, Unit 2 Language Focus — Present simple questions, Ex1-4. Optional brief practice after SOW activities; not a substitute for core tasks.

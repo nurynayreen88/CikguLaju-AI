@@ -15,3 +15,5 @@ Differentiation: Point pupils to the order of target words in the dialogue.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
 QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
+
+**Workbook (existing source QA map):** p.27, Unit 2 Progress Review — Speaking: Making plans and suggestions, Ex6. Optional brief practice after SOW activities; not a substitute for core tasks.

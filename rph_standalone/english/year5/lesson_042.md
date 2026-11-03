@@ -15,3 +15,5 @@ Differentiation: Allow extra time or two comparisons instead of four.
 Workbook: No exercise assigned until the exact page and activity are verified.
 Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.
 QA status: SOW-aligned draft; physical textbook page, audio playback and one-page Word/PDF checks outstanding.
+
+**Workbook (existing source QA map):** p.20-21, Unit 2 Daily routines + present simple practice, Ex1-5. Optional brief practice after SOW activities; not a substitute for core tasks.

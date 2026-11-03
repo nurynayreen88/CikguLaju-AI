@@ -15,3 +15,5 @@ Differentiation: Pause track for pupils who need extra writing time.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
 QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
+
+**Workbook (existing source QA map):** p.22,27, Unit 2 Special days listening Ex3-4 + Progress Review speaking/plans Ex6. Optional brief practice after SOW activities; not a substitute for core tasks.

@@ -15,3 +15,5 @@ Differentiation: Give feedback on turn-taking, question word order and fluency.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
 QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
+
+**Workbook (existing source QA map):** p.26-27, Unit 2 Progress Review — present simple questions/time-related unit review, Ex1-8. Optional brief practice after SOW activities; not a substitute for core tasks.

@@ -21,3 +21,5 @@
 **Differentiation:** Provide response cards and sentence starters; extend by giving reasons for surprising facts.
 
 **Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.20, Unit 2 Vocabulary — Daily routines, Ex1-4. Optional brief practice after SOW activities; not a substitute for core tasks.
