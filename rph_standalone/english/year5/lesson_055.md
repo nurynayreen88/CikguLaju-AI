@@ -1,7 +1,23 @@
-# Year 5 Lesson 55 — Reading 10
+# English Year 5 — Lesson 55 (Reading 10)
 
-SOW p.93. Topic: Wild Life. Standards: Reading 3.2.3; Reading 3.3.1. Sources: SB p.34 Activities 1–3; TB p.48.
+**Status:** DRAF — pending full source audit. **Topic:** Wild Life. **Main LS:** Reading 3.2.3. **Complementary LS:** Reading 3.3.1. **Time:** 60 minutes (suggested).
 
-Teaching sequence: Play animal-name ABCs; discuss rare and endangered species; read Activities 1–2; infer unfamiliar vocabulary in Activity 3 and identify superlatives; discuss animal conservation.
+**Materials:** English Plus 1 SB p.34 Activities 1–3; TB p.48; optional dictionaries. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-PBD: Assess the specified skills through oral responses and task work. Differentiate using teacher prompts and additional time. Workbook exercise not verified. Draft pending source and output checks.
+**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+
+**Set induction (5 min):** Pupils play an animal-name ABC game and respond to the Think! question.
+
+**Activity 1 (15 min):** Teacher introduces protect, species, endangered and extinct. Pupils read the text in Activity 1 and answer questions about animal protection.
+
+**Activity 2 (15 min):** Pupils reread for Activity 2, then guess meanings of blue words in Activity 3 using context. Partners compare before using a dictionary for common and dull.
+
+**Activity 3 (15 min):** Teacher guides pupils to notice the most with beautiful, interesting, common and colourful, and the with ugliest, rarest, biggest and weirdest. Pupils cite words from the reading.
+
+**PBD (5 min):** Pupils infer two unfamiliar word meanings from nearby text clues and support one interpretation from the text.
+
+**Closure (5 min):** Groups name three beautiful or colourful animals and discuss threats to endangered species.
+
+**Differentiation:** Allow dictionary checks and paired reading; extend with evidence-based explanations.
+
+**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
