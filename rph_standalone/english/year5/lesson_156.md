@@ -1,5 +1,7 @@
 # Year 5 Lesson 156 — Speaking 27
 
+**Official SOW topic:** Going away.
+
 Status: DRAF. Unit 8. Main LS 2.2.2; complementary LS 2.3.1.
 Materials: Student Book p.99 Activities 4–5; Teacher Book p.113; CD3-20; Malaysia map and weather data. Workbook mapping and audio playback remain unverified.
 
