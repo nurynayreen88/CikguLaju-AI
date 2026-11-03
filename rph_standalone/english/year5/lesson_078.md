@@ -4,7 +4,7 @@
 
 **Language focus:** Present simple tense affirmative and negative; Auxiliary verbs do and don’t. CONTENT STANDARD LEARNING STANDARD. **Materials:** English Plus 1 Student’s Book p.46 Activities 5 and 6 Teacher’s Book p.60.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Learning objectives:** Main (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the Learning World activities. Complementary (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the linked speaking task.
 
 **Set induction (5 min):** 1. Pupils look at drawings of children learning a language on p.46 again. In pairs, they choose three and say what the girl or boy is doing. Give an example: In picture ‘h’ the girl is saying the alphabet.
 

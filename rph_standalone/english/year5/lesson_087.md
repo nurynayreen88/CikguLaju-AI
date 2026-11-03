@@ -4,7 +4,7 @@
 
 **Language focus:** Reasoning (the use of because). **Materials:** Anthology of Poems p.16, Miss Antrobus; BPK CCL Poetry Guide Activity 5 p.101.
 
-**Objective:** Pupils complete the specific Language Arts 15 lesson tasks using Miss Antrobus vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the Miss Antrobus activities. Complementary (Writing 4.3.3) — pupils produce a plan or draft of one or two paragraphs for a familiar topic and modify this appropriately in response to feedback in the linked writing task.
 
 **Set induction (5 min):** Teacher reads a sentence based the poem and pupils will stand if the sentence is correct or they will sit down if the sentence is false.
 

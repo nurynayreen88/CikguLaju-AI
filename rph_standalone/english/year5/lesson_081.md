@@ -4,7 +4,7 @@
 
 **Materials:** Anthology of Poems p.16, Miss Antrobus; BPK CCL Poetry Guide. Non-textbook Language Arts: no Student Book, Workbook or audio prescribed by this SOW lesson.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Language Arts 5.2.1) — pupils explain in simple language why they like or dislike an event, description or character in a text in the Miss Antrobus activities. Complementary (Reading 3.2.2) — pupils understand specific information and details of two paragraphs or more in the linked reading task.
 
 **Set induction (5 min):** Pupils recall sea creatures using the ABCs game.
 

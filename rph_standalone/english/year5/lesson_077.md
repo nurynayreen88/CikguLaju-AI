@@ -4,7 +4,7 @@
 
 **Language focus:** Questions: Do you + verb, Do you usually/ever..? Verbs: concentrate, revise. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.46 Teacher’s Book p.60; audio CD1.42, CD1.43.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Learning objectives:** Main (Listening 1.2.5) — pupils understand a sequence of supported questions in the Learning World activities. Complementary (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar subjects in the linked listening task.
 
 **Set induction (5 min):** 1. Pupils answer questions in Think! at top of p.46. Follow instructions in Teacher’s Book p.60.
 

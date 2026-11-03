@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.49 Activities 1–3; TB p.63. Workbook mapping and any audio playback remain unverified.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Reading 3.2.1) — pupils understand the main idea of simple texts of two paragraphs or more in the Learning World activities. Complementary (Speaking 2.1.1) — pupils give detailed information about themselves in the linked speaking task.
 
 **Set induction (5 min):** Pupils respond to the Think! prompt about schools.
 

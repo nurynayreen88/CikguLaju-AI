@@ -4,7 +4,7 @@
 
 **Language focus:** Present continuous and simple tenses. **Materials:** English Plus 1 Student’s Book Activities 1–4 p.47 Teacher’s Book p.61.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Learning objectives:** Main (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the Learning World activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
 
 **Set induction (5 min):** 1. Do Pre-lesson Task 12: Word Salad. Use sentences 1–3 in Activity 1 p.47. Write each word on a card for groups of pupils to reorder.
 

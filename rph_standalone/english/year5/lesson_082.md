@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.50 Activities 3–5 and p.51 Activity 2; TB pp.64–65. Workbook mapping and any audio playback remain unverified.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing in the Learning World activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the linked reading task.
 
 **Set induction (5 min):** Teacher models affirmative and negative present continuous examples and pupils contribute their own.
 

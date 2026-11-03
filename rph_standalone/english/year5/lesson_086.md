@@ -4,7 +4,7 @@
 
 **Language focus:** Present continuous and simple tenses; Conjunction: so; Such as, for example, like. **Materials:** English Plus 1 Student’s Book Activities 3 and 4 p.49 Teacher’s Book p.63.
 
-**Objective:** Pupils complete the specific Writing 15 lesson tasks using Learning World vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Writing 4.3.3) — pupils produce a plan or draft of one or two paragraphs for a familiar topic and modify this appropriately in response to feedback in the Learning World activities. Complementary (Reading 3.2.2) — pupils understand specific information and details of simple longer texts in the linked reading task.
 
 **Set induction (5 min):** Brainstorm pupils’ ideas about what they would write in an email to a pupil in a school in Britain. Write ideas on board. Give prompts e.g. subjects, school day, family, hobbies.
 
