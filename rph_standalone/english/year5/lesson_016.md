@@ -2,6 +2,8 @@
 
 Source: Official Year 5 SOW p.51–52, Starter Unit. Topic: Free Time. Duration: 60 minutes.
 
+Objective: Pupils distinguish this, that, these and those in four near/far classroom examples, then identify one Starter Unit skill to practise next.
+
 Standards: SOW leaves main and complementary skill selection to teacher based on Year 5 DSKP and learner needs. Do not invent official CS/LS.
 
 Materials: English Plus 1 Student's Book p.9 Activities 1, 2, 4, 5; Teacher's Book p.23; SOW Starter Unit self-assessment worksheet.

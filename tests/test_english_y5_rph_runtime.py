@@ -78,6 +78,14 @@ class EnglishY5IntegrationTests(unittest.TestCase):
         self.assertEqual(runtime._rph_rows({"subject": "Math", "year": "5", "lesson_no": 1}),
                          {"OBJEKTIF PEMBELAJARAN": "original", "TARIKH": "01/01"})
 
+    def test_fixed_source_parse_coverage_report(self):
+        fixed = [int(n) for n, row in self.gate["lessons"].items()
+                 if not row["teacher_choice"] and int(n) != 141]
+        parsed = [n for n in fixed if load_lesson(n) is not None]
+        missing = sorted(set(fixed) - set(parsed))
+        print("YEAR5_FIXED_PARSED", len(parsed), "/150; FORMAT_PENDING", missing)
+        self.assertGreaterEqual(len(parsed), 100)
+
     def test_no_overlay_on_missing_or_modified_gate(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

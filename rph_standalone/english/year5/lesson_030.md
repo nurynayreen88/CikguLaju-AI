@@ -3,6 +3,7 @@
 Official SOW: Lesson 30, printed p.66. Topic: Options: Extra Listening and Speaking. Duration: 60 minutes.
 Skills: Speaking 2.2.1; Listening 1.2.5.
 Sources: SB p.92 Activities 4–5; TB p.106; CD 3-04.
+Objective: Pupils recognise five question forms from the recording and sustain a short spoken exchange with one follow-up question.
 
 1. Set induction: Review What, How, Where, When and Have you questions with flashcards.
 2. Activity 1: Listen to CD 3-04 and identify the five questions in Activity 4.

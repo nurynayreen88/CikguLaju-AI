@@ -131,7 +131,7 @@ def load_lesson(number, *, root=LESSON_ROOT):
     pbd = blocks.get("pbd") or blocks.get("combined") or _field(clean, ("PBD evidence", "PBD"))
     closure = blocks.get("closure") or blocks.get("combined") or ""
     materials = _field(clean, ("Materials", "Sources"))
-    objective = _field(clean, ("Suggested learning objectives", "Learning objectives",
+    objective = _field(clean, ("Suggested learning objectives", "Suggested objectives", "Learning objectives",
                                "Learning objective", "Objectives", "Objective"))
     if not all((intro, activity, pbd, closure, materials, objective)):
         return None
