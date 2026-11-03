@@ -1,8 +1,23 @@
-# English Year 5 Lesson 74 - Writing 13
+# English Year 5 — Lesson 74 (Writing 13)
 
-Official SOW p.113. Standards: Writing 4.3.2 and Listening 1.3.1.
-Sources: SB p.45 Activities 1-3; TB p.59; CD 1-41.
+**Status:** DRAF — pending full source audit. **Topic:** Learning World. **Main LS:** Writing 4.3.2. **Complementary LS:** Listening 1.3.1. **Time:** 60 minutes (suggested).
 
-Teaching activities: Review schools around the world; study present continuous spelling rules; practise adding -ing with verb flashcards; listen for action clues; mime and write present continuous sentences.
+**Materials:** English Plus 1 SB p.45 Activities 1–3; TB p.59; CD1.41; verb flashcards. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-PBD: Review lesson-specific pupil responses and written work. Differentiate with prompts, time and peer support. Workbook mapping unverified. Draft pending source and output QA.
+**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+
+**Set induction (5 min):** Pupils recall facts about schools around the world from the previous reading.
+
+**Activity 1 (15 min):** Pupils identify present continuous sentences from three school texts in Activity 1. Teacher guides pupils through affirmative, negative and spelling rules.
+
+**Activity 2 (15 min):** Using verb cards walk, skate, run, sing, dance and swim, pupils select the correct -ing spelling rules and complete Activity 2.
+
+**Activity 3 (15 min):** Pupils listen to CD1.41 for Activity 3 and infer actions from environmental sounds. Pairs mime and describe actions using present continuous sentences.
+
+**PBD (5 min):** Pupils write two accurate present continuous descriptions after listening or watching a mime. Teacher checks verb spelling and meaning.
+
+**Closure (5 min):** Pairs write and hold up present continuous sentences about a classmate's action.
+
+**Differentiation:** Offer verb-spelling rule cards; extend with correct negative sentences.
+
+**Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
