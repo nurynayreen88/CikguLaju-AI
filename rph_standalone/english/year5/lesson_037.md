@@ -18,4 +18,4 @@
 
 **Closure (5 min):** Pupils explain one difference between adverb placement after be and before an ordinary main verb.
 
-**Differentiation:** Offer a frequency continuum and sentence frames; ask confident pupils to explain frequency differences. **Workbook:** WB p.24 Unit 2 Reading may be used only as aligned follow-up, not in place of the SOW tasks. **QA:** Printed textbook tasks, workbook exercise and one-page A4 output still require final verification.
+**Differentiation:** Offer a frequency continuum and sentence frames; ask confident pupils to explain frequency differences. **Workbook (visually checked):** Teacher Book p.37 recommends WB p.20 for more practice. WB p.20 covers daily routines and frequency expressions and is the closer optional reinforcement for this lesson. WB p.24 (*A busy day*) is a separate reading-extension option, not the primary adverb practice. Neither replaces SOW SB p.22–23 tasks. **QA:** Printed textbook tasks, workbook exercise and one-page A4 output still require final verification.
