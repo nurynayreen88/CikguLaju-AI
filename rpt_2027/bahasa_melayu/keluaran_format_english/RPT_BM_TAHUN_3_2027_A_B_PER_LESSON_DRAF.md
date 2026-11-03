@@ -225,7 +225,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 
 | Lesson | Tema / Unit | Aktiviti khusus | SK (DSKP) | SP (DSKP) | BT / BA | Catatan / PBD |
 |---|---|---|---|---|---|---|
-| **Lesson 095** (BM3-P095) | Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita | Keluarga Diraja | 1.1 Mendengar dan memberikan respons. | 1.1.3 — Mendengar, mentafsir, dan memberikan respons terhadap | BT2 m/s 1-3; BA2 m/s 1-2 | Mendengar / Bertutur; Pemerhatian respons lisan |
+| **Lesson 095** (BM3-P095) | Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita | Keluarga Diraja | 1.1 Mendengar dan memberikan respons. | 1.1.3 (i) — Mendengar, mentafsir, dan memberikan respons terhadap soalan bertumpu. | BT2 m/s 1-3; BA2 m/s 1-2 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 096** (BM3-P096) | Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita | Indahnya Pantun | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera. | 2.3.1 (iv) — Membaca, mengenal pasti, dan menerangkan kandungan teks daripada bahan bukan sastera dan bahan sastera | BT2 m/s 4; BA2 m/s 3 | Membaca; Bacaan dan soalan pemahaman |
 | **Lesson 097** (BM3-P097) | Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita | Teratak Warisan | 3.1 Asas menulis. | 3.1.1 (iii) — Menulis secara mekanis menggunakan tulisan berangkai dalam bentuk | BT2 m/s 5; BA2 m/s 4 | Menulis; Semakan bahan bertulis |
 | **Lesson 098** (BM3-P098) | Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita | Bermain Galah Panjang | 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks. | 5.2.3 (i) — Memahami dan menggunakan kata ganda mengikut konteks | BT2 m/s 6 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
