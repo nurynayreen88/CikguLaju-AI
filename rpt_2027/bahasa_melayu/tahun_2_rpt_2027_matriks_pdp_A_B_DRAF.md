@@ -6,7 +6,7 @@ RPT 2026 rujukan: https://docs.google.com/document/d/1qFUGCNH672R4QYBSxzSCYUbTiV
 Buku Teks/DSKP: [Senarai sumber BM Tahun 2](tahun_2_rpt_2027_pemetaan_unit_DRAF.md)
 Kalendar A/B 2027: https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit
 
-Rekod BM calon: **164** (termasuk **10** baris berulang yang sengaja DIKEKALKAN untuk audit). Liputan **24/24 unit**. Baris sokongan/cuti/PKJR tanpa Unit BM yang diasingkan: **44**. Rekod tanpa kod SP jelas: **4**.
+Rekod BM calon: **164** (termasuk **10** baris berulang yang sengaja DIKEKALKAN untuk audit); 3 penilaian tema tanpa SP dan 1 kod dipadankan dari BT2/DSKP (3 Nov 2026).. Liputan **24/24 unit**. Baris sokongan/cuti/PKJR tanpa Unit BM yang diasingkan: **44**. Rekod tanpa kod SP jelas: **4**.
 
 **Peringatan penjadualan:** M2027 di bawah ialah cadangan padanan ordinal berdasarkan minggu sumber 2026; bukan pengesahan hari PdP atau peruntukan waktu sekolah. Minggu RPT tidak menjadi identiti PdP. Satu rekod calon tidak semestinya satu waktu mengajar. Rujukan BA ialah daripada RPT 2026, belum dibandingkan terus dengan Buku Aktiviti.
 
@@ -34,7 +34,7 @@ Rekod BM calon: **164** (termasuk **10** baris berulang yang sengaja DIKEKALKAN 
 | BM2-P020 | 7 | M07 | 2027-02-14–2027-02-18 | 2027-02-15–2027-02-19 | Kekeluargaan; U3: Keluarga Berhemah | 5.1.1 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 17 | BA m/s 23-24 | DRAF |
 | BM2-P021 | 7 | M07 | 2027-02-14–2027-02-18 | 2027-02-15–2027-02-19 | Kekeluargaan; U3: Keluarga Berhemah | 5.1.1 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 18 | — | DRAF |
 | BM2-P022 | 7 | M07 | 2027-02-14–2027-02-18 | 2027-02-15–2027-02-19 | Kekeluargaan; U3: Keluarga Berhemah | 5.1.1 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 18 | — | DRAF / SEMAK PENGULANGAN |
-| BM2-P023 | 7 | M07 | 2027-02-14–2027-02-18 | 2027-02-15–2027-02-19 | Kekeluargaan; U3: Keluarga Berhemah | — | SEMakan diperlukan; perlu semak | BT1 m/s 19-20 | — | DRAF / SEMAK SP |
+| BM2-P023 | 7 | M07 | 2027-02-14–2027-02-18 | 2027-02-15–2027-02-19 | Kekeluargaan; U3: Keluarga Berhemah | PBD / Penilaian Tema 1 (tiada SP khusus) | Penilaian Tema 1; aktiviti pemulihan atau pengayaan; BT1 m/s 19–20 | BT1 m/s 19-20 | — | DRAF / PBD BUKAN SP |
 | BM2-P024 | 8 | M08 | 2027-02-21–2027-02-25 | 2027-02-22–2027-02-26 | Perpaduan; U4: Sahabat Karib | 1.1.2 | Mendengar / Bertutur; Pemerhatian respons lisan | BT1 m/s 21-22 | BA m/s 25 | DRAF |
 | BM2-P025 | 8 | M08 | 2027-02-21–2027-02-25 | 2027-02-22–2027-02-26 | Perpaduan; U4: Sahabat Karib | 2.1.2 | Membaca; Bacaan dan soalan pemahaman | BT1 m/s 23 | BA m/s 26-27 | DRAF |
 | BM2-P026 | 8 | M08 | 2027-02-21–2027-02-25 | 2027-02-22–2027-02-26 | Perpaduan; U4: Sahabat Karib | 3.2.1 | Menulis; Semakan bahan bertulis | BT1 m/s 24 | BA m/s 28-29 | DRAF |
@@ -58,7 +58,7 @@ Rekod BM calon: **164** (termasuk **10** baris berulang yang sengaja DIKEKALKAN 
 | BM2-P044 | 12 | M12 | 2027-03-28–2027-04-01 | 2027-03-29–2027-04-02 | Perpaduan; U6: Sepakat Membawa Berkat | 5.1.3 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 37 | BA m/s 46 | DRAF |
 | BM2-P045 | 12 | M12 | 2027-03-28–2027-04-01 | 2027-03-29–2027-04-02 | Perpaduan; U6: Sepakat Membawa Berkat | 5.1.2 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 39 | — | DRAF |
 | BM2-P046 | 12 | M12 | 2027-03-28–2027-04-01 | 2027-03-29–2027-04-02 | Perpaduan; U6: Sepakat Membawa Berkat | 1.1.2 | Mendengar / Bertutur; Pemerhatian respons lisan | BT1 m/s 40 | — | DRAF |
-| BM2-P047 | 12 | M12 | 2027-03-28–2027-04-01 | 2027-03-29–2027-04-02 | Perpaduan; U6: Sepakat Membawa Berkat | — | SEMakan diperlukan; perlu semak | BT1 m/s 41 | — | DRAF / SEMAK SP |
+| BM2-P047 | 12 | M12 | 2027-03-28–2027-04-01 | 2027-03-29–2027-04-02 | Perpaduan; U6: Sepakat Membawa Berkat | PBD / Penilaian Tema 2 (tiada SP khusus) | Penilaian Tema 2 — Indahkan Taman; BT1 m/s 41 | BT1 m/s 41 | — | DRAF / PBD BUKAN SP |
 | BM2-P048 | 13 | M13 | 2027-04-04–2027-04-08 | 2027-04-05–2027-04-09 | Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah | 1.1.2 | Mendengar / Bertutur; Pemerhatian respons lisan | BT1 m/s 44 | BA m/s 49 | DRAF |
 | BM2-P049 | 13 | M13 | 2027-04-04–2027-04-08 | 2027-04-05–2027-04-09 | Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah | 2.2.1 | Membaca; Bacaan dan soalan pemahaman | BT1 m/s 45 | BA m/s 50-51 | DRAF |
 | BM2-P050 | 13 | M13 | 2027-04-04–2027-04-08 | 2027-04-05–2027-04-09 | Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah | 3.2.2 | Menulis; Semakan bahan bertulis | BT1 m/s 46 | BA m/s 52-53 | DRAF |
@@ -105,7 +105,7 @@ Rekod BM calon: **164** (termasuk **10** baris berulang yang sengaja DIKEKALKAN 
 | BM2-P091 | 22 | M22 | 2027-06-20–2027-06-24 | 2027-06-21–2027-06-25 | Kebudayaan Kita; U12: Amalan Baik | 1.1.1 | Mendengar / Bertutur; Pemerhatian respons lisan | BT1 m/s 75 | BA m/s 85-86 | DRAF |
 | BM2-P092 | 22 | M22 | 2027-06-20–2027-06-24 | 2027-06-21–2027-06-25 | Kebudayaan Kita; U12: Amalan Baik | 2.3.1 | Membaca; Bacaan dan soalan pemahaman | BT1 m/s 76 | BA m/s 87-88 | DRAF |
 | BM2-P093 | 22 | M22 | 2027-06-20–2027-06-24 | 2027-06-21–2027-06-25 | Kebudayaan Kita; U12: Amalan Baik | 3.3.1 | Menulis; Semakan bahan bertulis | BT1 m/s 77 | BA m/s 89–91 | DRAF |
-| BM2-P094 | 22 | M22 | 2027-06-20–2027-06-24 | 2027-06-21–2027-06-25 | Kebudayaan Kita; U12: Amalan Baik | — | SEMakan diperlukan; perlu semak | BT1 m/s 81 | — | DRAF / SEMAK SP |
+| BM2-P094 | 22 | M22 | 2027-06-20–2027-06-24 | 2027-06-21–2027-06-25 | Kebudayaan Kita; U12: Amalan Baik | PBD / Penilaian Tema 4 (tiada SP khusus) | Penilaian Tema 4; BT1 m/s 81 | BT1 m/s 81 | — | DRAF / PBD BUKAN SP |
 | BM2-P095 | 23 | M23 | 2027-06-27–2027-07-01 | 2027-06-28–2027-07-02 | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | 1.1.2 | Mendengar / Bertutur; Pemerhatian respons lisan | BT2 m/s 2 | BA m/s 1 | DRAF |
 | BM2-P096 | 23 | M23 | 2027-06-27–2027-07-01 | 2027-06-28–2027-07-02 | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | 2.3.1 | Membaca; Bacaan dan soalan pemahaman | BT2 m/s 3 | BA m/s 2-3 | DRAF |
 | BM2-P097 | 23 | M23 | 2027-06-27–2027-07-01 | 2027-06-28–2027-07-02 | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | 3.3.1 | Menulis; Semakan bahan bertulis | BT2 m/s 4-5 | BA m/s 4-5 | DRAF |
@@ -161,7 +161,7 @@ Rekod BM calon: **164** (termasuk **10** baris berulang yang sengaja DIKEKALKAN 
 | BM2-P147 | 34 | M34 | 2027-09-19–2027-09-23 | 2027-09-20–2027-09-24 | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | 5.1.2 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT2 m/s 59 | BA m/s 68 | DRAF |
 | BM2-P148 | 34 | M34 | 2027-09-19–2027-09-23 | 2027-09-20–2027-09-24 | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | 5.3.2 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT2 m/s 47 | BA m/s 50 | DRAF |
 | BM2-P149 | 34 | M34 | 2027-09-19–2027-09-23 | 2027-09-20–2027-09-24 | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | 5.3.2 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT2 m/s 62 | — | DRAF |
-| BM2-P150 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U22: Anak yang Baik | — | SEMakan diperlukan; perlu semak | BT2 m/s 64 | BA m/s 69 | DRAF / SEMAK SP |
+| BM2-P150 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U22: Anak yang Baik | 1.1.1 (iii) | Mendengar dan mengecam ayat majmuk; Cerita Dino; BT2 m/s 64 (rujukan asal RPT 2026 tanpa kod, kod disilang dengan BT2 dan DSKP) | BT2 m/s 64 | BA m/s 69 | DRAF / KOD DISEMAK, AKTIVITI PERLU AUDIT |
 | BM2-P151 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U22: Anak yang Baik | 2.2.1 | Membaca; Bacaan dan soalan pemahaman | BT2 m/s 65 | BA m/s 70-71 | DRAF |
 | BM2-P152 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U22: Anak yang Baik | 3.2.3 | Menulis; Semakan bahan bertulis | BT2 m/s 66 | BA m/s 72-73 | DRAF |
 | BM2-P153 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U22: Anak yang Baik | 4.3.3 | Seni Bahasa; Apresiasi/persembahan bahasa | BT2 m/s 67 | BA m/s 74 | DRAF |
