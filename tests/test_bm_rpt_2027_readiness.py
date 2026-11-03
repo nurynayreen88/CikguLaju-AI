@@ -17,6 +17,15 @@ class BM2027GateTests(unittest.TestCase):
         self.assertIn("Global READY status has not been approved",out["errors"])
         self.assertTrue(any("gate" in err for err in out["errors"]))
 
+    def test_rph_metadata_consistency_for_existing_drafts(self):
+        # Structural matching only. This is NOT a curriculum approval.
+        out = audit("rph")
+        self.assertTrue(out["passed"], "\n".join(out["errors"][:25]))
+        self.assertEqual(out["summary"][2]["rph_checked"], 164)
+        self.assertGreaterEqual(out["summary"][3]["rph_checked"], 30)
+        self.assertEqual(out["summary"][2]["rph_ready"], 0)
+        self.assertEqual(out["summary"][3]["rph_ready"], 0)
+
     def test_expected_rpt_counts(self):
         self.assertEqual(COUNTS,{2:164,3:165,4:165,5:166,6:165})
 
