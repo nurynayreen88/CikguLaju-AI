@@ -36,6 +36,17 @@ except Exception as _y6_word_a4_exc:
     print("English Year 6 Word A4 bridge unavailable:", repr(_y6_word_a4_exc), flush=True)
 
 
+# Scoped Word-only A4 repair for five verified English Year 2 overflow Lessons.
+# All 160 sources were inspected offline; only L2,3,12,13,14 need 8pt margins.
+# No PDF-native, DB, quota, callback, other subject, or Year 5 changes.
+try:
+    from web.english_y2_word_a4_runtime import install as install_english_y2_word_a4
+    ENGLISH_Y2_WORD_A4_ACTIVE = install_english_y2_word_a4(telegram_runtime)
+except Exception as _y2_word_a4_exc:
+    ENGLISH_Y2_WORD_A4_ACTIVE = False
+    print("English Year 2 Word A4 bridge unavailable:", repr(_y2_word_a4_exc), flush=True)
+
+
 # English Year 5 is a DRAF staging source. Keep production disabled until
 # printed-page/audio/A4 and teacher QA are approved. Opt-in only for controlled tests.
 try:
