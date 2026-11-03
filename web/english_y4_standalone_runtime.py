@@ -27,7 +27,7 @@ def install(runtime):
         # Existing PDF/Word renderers expect plain text rather than raw Markdown.
         # Preserve full instructional content and all verified page/track references.
         standalone = re.sub(r"(?m)^#{1,3}\s+", "", standalone)
-        standalone = re.sub(r"\*\*(.*?)\*\*", r"\1", standalone)
+        standalone = re.sub(r"\*\*(.*?)\*\*", r"\1", standalone)\n        standalone = re.sub(r"(?im)^\\s*(?:Status|QA status|Internal review):.*$", "", standalone)\n        standalone = re.sub(r"(?im)^\\s*(?:Verified mapping and limits|Source verification|QA notes)\\s*$", "", standalone)
         return standalone
 
     runtime._local_rph_text = specific_rph
