@@ -1,35 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 049
 
+**ID:** BM3-P049  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
 **Tajuk:** Keselamatan Rumah Panjang di Sarawak  
 **SK:** 2.1 Asas membaca dan memahami.  
-**SP:** 2.1.1 (i) — Membaca dengan sebutan yang betul dan intonasi yang sesuai  
-**Rujukan RPT:** BT1 m/s 43  
-**Sumber aktiviti:** BA1 m/s 48 — Hati-hati Membantu, tetapi kod BA 2.2.1(i). Kandungan dan/atau SP perlu pengesahan lanjut.  
-**Masa cadangan:** 60 minit, sesuaikan slot sebenar.  
-**Fokus:** Membaca ayat dengan sebutan dan intonasi.  
-**Objektif:** Pada akhir PdP, murid dapat membaca sekurang-kurangnya lima ayat dengan sebutan sesuai serta mengenal maksud tiga kosa kata.  
-**Bahan:** Buku Teks/BA berkaitan, bahan rangsangan bergambar, kad perkataan, buku latihan dan senarai semak PBD. Contoh: pelapik, sarung tangan, berhati-hati, tercedera, panas.  
+**SP:** 2.2.1 (i) — Membaca, memahami dan mengecam maksud kosa kata  
+**Fokus:** Maksud kosa kata dalam bacaan  
+**Rujukan RPT:** BT1 m/s 43; BA1 m/s 48  
+**Bahan:** petikan Keselamatan Rumah Panjang di Sarawak tentang tiang tinggi dan banjir; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat empat padanan makna dan dua penerangan disokong petikan.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru memperkenalkan situasi yang berkaitan tajuk Keselamatan Rumah Panjang di Sarawak serta mengaktifkan pengetahuan murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pemerhatian awal.
+**Guru:** Menunjukkan petikan Keselamatan Rumah Panjang di Sarawak tentang tiang tinggi dan banjir dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
-## Aktiviti 1 — Perolehan maklumat (15 minit)
-**Tindakan guru:** Guru membimbing bacaan petikan mengenai membantu orang dewasa ketika mengendalikan benda panas dan menyebut lima ayat model.
-**Tindakan murid:** Murid membaca ayat bergilir dan menandakan kosa kata sukar.
+## Aktiviti 1 — Penerokaan (15 minit)
+**Guru:** Memodelkan Maksud kosa kata dalam bacaan menggunakan sumber asal.
+**Murid:** Membaca petikan dengan lancar lalu menggariskan empat perkataan penting seperti menghalang, mengelakkan dan penceroboh.
 
-## Aktiviti 2 — Aplikasi PdP (20 minit)
-**Tindakan guru:** Guru mengedarkan kad tiga perkataan untuk dipadankan dengan makna melalui kamus atau konteks bahan BA.
-**Tindakan murid:** Murid membaca semula lima ayat dan menjelaskan tiga kosa kata.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Memadankan kosa kata dengan maksud berdasarkan konteks dan menerangkan dua ciri keselamatan rumah panjang.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai bacaan serta tiga maksud; BA berkod 2.2.1(i) sementara RPT 2.1.1(i), jadi HOLD sehingga BT disemak.
-**Tindakan murid:** Murid menjawab atau menyerahkan hasil sendiri dan membuat pembetulan selepas maklum balas.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak empat padanan makna dan dua penerangan disokong petikan; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran membaca ayat dengan sebutan dan intonasi dan nilai dalam situasi.
-**Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
+**Guru:** Merumuskan Maksud kosa kata dalam bacaan dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — semakan BT / padanan BA–SP / PKJR atau Lesson ulangan belum lengkap.
-**Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

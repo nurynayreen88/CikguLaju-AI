@@ -1,35 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 034
 
+**ID:** BM3-P034  
 **Tema/Unit:** Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama  
 **Tajuk:** Cegah Lalat  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
-**SP:** 5.1.4 (ii), (i) — Memahami dan menggunakan kata tugas mengikut konteks  
+**SP:** 5.1.4 (i) — Memahami dan menggunakan kata hubung mengikut konteks  
+**Fokus:** Kata hubung  
 **Rujukan RPT:** BT1 m/s 32; BA m/s 38  
-**Sumber aktiviti:** BA1 m/s 38 — Murid yang Rajin (kata hubung 5.1.4(i)). Kandungan dan/atau padanan subkod belum lengkap dan tidak boleh dianggap rasmi.  
-**Masa cadangan:** 60 minit, tertakluk takwim sekolah dan jadual guru.  
-**Fokus:** Kata hubung dalam petikan kebersihan.  
-**Objektif:** Pada akhir PdP, murid dapat mengenal enam kata hubung dan menggunakannya dalam empat ayat majmuk.  
-**Bahan:** BA/BT yang berkenaan atau bahan rangsangan guru yang dilabel jelas, kad gambar/perkataan dan buku latihan. Contoh: dan, atau, kerana, sambil, lalu, supaya.  
+**Bahan:** petikan Cegah Lalat dan gambar tudung saji; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat sekurang-kurangnya lima pilihan kata hubung dan tiga ayat majmuk tepat.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengaitkan tajuk Cegah Lalat dengan situasi yang sesuai dan meminta murid menyatakan pengetahuan awal.
-**Tindakan murid:** Murid memberi respons kepada gambar atau bahan rangsangan guru.
+**Guru:** Menunjukkan petikan Cegah Lalat dan gambar tudung saji dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
-## Aktiviti 1 — Pemerhatian dan kefahaman (15 minit)
-**Tindakan guru:** Guru memaparkan petikan 'Murid yang Rajin' dan meminta murid mengenal kata yang menghubungkan tindakan Imran membantu keluarga.
-**Tindakan murid:** Murid mencari enam kata hubung pada silang kata dan menerangkan fungsi menggabungkan maklumat.
+## Aktiviti 1 — Penerokaan (15 minit)
+**Guru:** Memodelkan Kata hubung menggunakan sumber asal.
+**Murid:** Mencari enam kata hubung dalam petikan, termasuk dan, atau, kerana dan lalu.
 
-## Aktiviti 2 — Penghasilan atau persembahan (20 minit)
-**Tindakan guru:** Guru meminta murid melengkapkan empat ayat majmuk berkaitan Cegah Lalat dengan kata hubung sesuai.
-**Tindakan murid:** Murid melengkapkan ayat dan membacakan sebab pemilihan kata.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Melengkapkan dialog tentang menjaga makanan daripada lalat dengan kata hubung dan membina tiga ayat majmuk.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak enam kata hubung dan empat ayat; SP 5.1.4(ii) dalam RPT belum disahkan melalui BA1 m/s38, maka HOLD.
-**Tindakan murid:** Murid memberikan respons atau menyerahkan hasil kerja sendiri lalu membuat pembetulan selepas maklum balas.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak sekurang-kurangnya lima pilihan kata hubung dan tiga ayat majmuk tepat; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan pembelajaran mengenai kata hubung dalam petikan kebersihan dan menerapkan nilai yang sesuai.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
+**Guru:** Merumuskan Kata hubung dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — sumber / kod SP / pengulangan belum dapat disahkan sepenuhnya.
-**Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

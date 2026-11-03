@@ -2,36 +2,34 @@
 
 **ID:** BM3-P072  
 **Tema/Unit:** Keselamatan; U9: Alatan Keselamatan  
-**Tajuk:** PENGAYAAN  
+**Tajuk:** Pengayaan — Dialog Keselamatan  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
-**SP:** 5.1.4 — Memahami dan menggunakan kata tugas mengikut konteks  
-**Rujukan RPT:** BT1 m/s 60  
-**Bukti sumber:** RPT menyebut PENGAYAAN BT1 m/s 60; aktiviti BA khusus belum dapat dibuktikan  
-**Fokus:** pengayaan kata tugas  
-**Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
-**Objektif:** Menunjukkan tiga contoh penggunaan kata tugas yang berbeza sebagai cadangan pengayaan guru.  
-**Bahan:** kad situasi keselamatan ciptaan guru; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**SP:** 5.1.4 — Pengayaan penggunaan kata tugas yang telah dipelajari; bukan subkod tambahan  
+**Fokus:** Pengayaan dialog menggunakan kata tugas  
+**Rujukan RPT:** BT1 m/s 60; tiada latihan BA khusus ditetapkan  
+**Bahan:** tiga kad situasi daripada BT1 m/s 60: keselamatan rumah, rekreasi dan ciptaan alat keselamatan; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat sekurang-kurangnya empat kata tugas tepat dan dialog lapan baris.
 
 ## Set induksi (5 minit)
-**Guru:** Mengemukakan kad situasi keselamatan ciptaan guru untuk mencetuskan perbincangan.
-**Murid:** Memberikan respons dan mengaitkannya dengan tajuk.
+**Guru:** Menunjukkan tiga kad situasi daripada BT1 m/s 60: keselamatan rumah, rekreasi dan ciptaan alat keselamatan dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
-## Aktiviti 1 — Panduan sumber (15 minit)
-**Guru:** Membimbing penggunaan sumber tanpa menukar SP berdasarkan tekaan.
-**Murid / tugasan:** Membandingkan kata perintah, seru, pemeri dan penguat yang dipelajari.
+## Aktiviti 1 — Penerokaan (15 minit)
+**Guru:** Memodelkan Pengayaan dialog menggunakan kata tugas menggunakan sumber asal.
+**Murid:** Memilih satu kad dan menyenaraikan kata perintah, kata seru, kata pemeri atau kata penguat yang sesuai.
 
-## Aktiviti 2 — Penghasilan (20 minit)
-**Guru:** Mengarahkan tugasan mengikut kemahiran yang disahkan.
-**Murid / tugasan:** Mencipta tiga ayat keselamatan dan menyemak dengan rakan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Menulis dialog lapan baris mengikut situasi dan melakonkannya secara berpasangan.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Memeriksa tiga ayat gramatis; perlu sahkan tugasan asal BT.  
-**Murid:** Membentangkan bukti kerja dan membuat pembetulan selepas maklum balas.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak sekurang-kurangnya empat kata tugas tepat dan dialog lapan baris; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran yang tepat selepas semakan sumber.
-**Murid:** Menyatakan satu contoh atau pengajaran yang diperoleh.
+**Guru:** Merumuskan Pengayaan dialog menggunakan kata tugas dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — tiada kelulusan READY.  
-**Kawalan:** Padanan Buku Teks, tarikh negeri, format A4 dan CI belum lulus.  
-**Pengeluaran:** Staging sahaja; tidak mengubah main, database, Telegram atau Web.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

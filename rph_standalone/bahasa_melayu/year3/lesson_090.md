@@ -1,37 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 090
 
-**ID Lesson:** BM3-P090  
-**Tema / Unit:** Perpaduan; U12: Kerjasama Asas Kesejahteraan  
-**Tajuk dalam RPT/BT calon:** Tradisional  
-**Standard Kandungan (SK):** 3.1 Asas menulis.  
-**Standard Pembelajaran (SP):** 3.1.1 (ii) — Menulis secara mekanis menggunakan tulisan berangkai dalam bentuk  
-**Bidang:** Menulis — tulisan berangkai perkataan  
-**Rujukan buku:** BT1 m/s 77; BA m/s 88  
-**Bahan / rangsangan:** kad Hari Malaysia dan perkataan Malaysia Negaraku Sehati Sejiwa; Buku Teks dan Buku Aktiviti SK Jilid 1 yang sepadan; kad/peta pemikiran; buku latihan.  
-**Objektif yang boleh diperhati:** Pada akhir PdP, murid dapat menyalin enam perkataan berkaitan perpaduan menggunakan tulisan berangkai kemas.  
-**Masa cadangan:** 60 minit; jadual negeri, kelas dan guru menentukan masa sebenar.
+**ID:** BM3-P090  
+**Tema/Unit:** Perpaduan; U12: Kerjasama Asas Kesejahteraan  
+**Tajuk:** Pesta Permainan Tradisional  
+**SK:** 3.1 Asas menulis.  
+**SP:** 3.1.1 (ii) — Menulis secara mekanis menggunakan tulisan berangkai dalam bentuk  
+**Fokus:** Tulisan berangkai perkataan  
+**Rujukan RPT:** BT1 m/s 77; BA m/s 88  
+**Bahan:** kad undangan Majlis Perasmian Pesta Permainan Tradisional Taman Aman; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat enam perkataan bersambung dan boleh dibaca.
 
-## Set Induksi (5 minit)
-**Guru:** Memaparkan kad Hari Malaysia dan perkataan Malaysia Negaraku Sehati Sejiwa dan meminta murid menghubungkannya dengan tajuk **Tradisional**.
-**Murid:** Memberikan dua respons awal yang relevan dengan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan kad undangan Majlis Perasmian Pesta Permainan Tradisional Taman Aman dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
 ## Aktiviti 1 — Penerokaan (15 minit)
-**Guru:** Menunjukkan bahan sumber pada rujukan yang dinyatakan dan memodelkan satu contoh kemahiran **tulisan berangkai perkataan**, tanpa menganggap tajuk BA sama dengan tajuk BT.
-**Murid:** Membaca, mendengar atau memerhati butiran bahan, kemudian mengenal pasti sekurang-kurangnya tiga fakta, contoh atau ciri yang diperlukan untuk tulisan berangkai perkataan.
+**Guru:** Memodelkan Tulisan berangkai perkataan menggunakan sumber asal.
+**Murid:** Mengenal bentuk huruf berangkai dalam perkataan pada kad undangan.
 
 ## Aktiviti 2 — Aplikasi (20 minit)
-**Guru:** Membimbing tugasan individu atau pasangan menggunakan bahan yang dinyatakan; memberi sokongan berbeza mengikut tahap murid.
-**Murid:** Menyalin enam perkataan berkaitan perpaduan menggunakan tulisan berangkai kemas; membanding dan menyemak hasil dengan rakan berdasarkan contoh dalam bahan.
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Menyalin enam perkataan pilihan daripada kad undangan menggunakan tulisan berangkai yang kemas.
 
-## Pengukuhan dan PBD (15 minit)
-**Guru:** Menilai bukti kerja berdasarkan kriteria **ketepatan sambungan huruf enam perkataan** dan merekod tahap kemajuan; menyediakan pemulihan melalui contoh berpandu.
-**Murid:** Menunjukkan hasil atau respons lisan, membetulkan sekurang-kurangnya satu kesilapan dan menyimpan bukti PBD.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak enam perkataan bersambung dan boleh dibaca; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kegunaan kemahiran tulisan berangkai perkataan dalam konteks U12: Kerjasama Asas Kesejahteraan.
-**Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
+**Guru:** Merumuskan Tulisan berangkai perkataan dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — **bukan READY**.  
-**Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
-**Isu yang perlu diselesaikan:** Tajuk RPT sumber ditanda perlu semak versi penuh; Tajuk pendek/terpotong dalam RPT sumber  
-**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

@@ -4,34 +4,32 @@
 **Tema/Unit:** Perpaduan; U10: Toleransi Kukuhkan Perpaduan  
 **Tajuk:** Saling Muafakat  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
-**SP:** 5.1.4 (xi) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Rujukan RPT:** BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 74-75  
-**Bukti sumber:** BA1 m/s 74–75 Saling Muafakat menguji kata bantu 5.1.4(x), bukan kata bilangan (xi) dalam RPT  
-**Fokus:** HOLD — SP kata bilangan vs BA kata bantu  
-**Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
-**Objektif:** Menangguh objektif sehingga SP ditetapkan daripada sumber betul.  
-**Bahan:** DSKP, BA1 m/s 74–75 dan BT yang perlu disemak; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**SP:** 5.1.4 (x) — Memahami dan menggunakan kata bantu mengikut konteks  
+**Fokus:** Kata bantu dalam tema perpaduan  
+**Rujukan RPT:** BA1 m/s 74-75 — Saling Muafakat; BT1 m/s 67 sebagai asas SP  
+**Bahan:** petikan Saling Muafakat tentang kerjasama menghasilkan maskot hari sukan; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat lima kata bantu betul dan dialog munasabah.
 
 ## Set induksi (5 minit)
-**Guru:** Mengemukakan DSKP, BA1 m/s 74–75 dan BT yang perlu disemak untuk mencetuskan perbincangan.
-**Murid:** Memberikan respons dan mengaitkannya dengan tajuk.
+**Guru:** Menunjukkan petikan Saling Muafakat tentang kerjasama menghasilkan maskot hari sukan dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
-## Aktiviti 1 — Panduan sumber (15 minit)
-**Guru:** Membimbing penggunaan sumber tanpa menukar SP berdasarkan tekaan.
-**Murid / tugasan:** Meneliti perbezaan kata bantu dan kata bilangan.
+## Aktiviti 1 — Penerokaan (15 minit)
+**Guru:** Memodelkan Kata bantu dalam tema perpaduan menggunakan sumber asal.
+**Murid:** Membaca petikan dan menandakan kata bantu yang menerangkan masa atau ragam tindakan.
 
-## Aktiviti 2 — Penghasilan (20 minit)
-**Guru:** Mengarahkan tugasan mengikut kemahiran yang disahkan.
-**Murid / tugasan:** Mendapatkan pengesahan isi BT sebelum sebarang latihan dijana daripada BA74–75.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Melengkapkan enam ayat BA dengan kata bantu dan membina dialog tiga baris berasaskan kerjasama.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Memeriksa pintu verifikasi SP–BA; belum pentaksiran murid.  
-**Murid:** Tidak menggunakan latihan ini untuk penilaian sehingga konflik SP–BA selesai.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak lima kata bantu betul dan dialog munasabah; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran yang tepat selepas semakan sumber.
-**Murid:** Belum dijadualkan untuk pengajaran murid.
+**Guru:** Merumuskan Kata bantu dalam tema perpaduan dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — tiada kelulusan READY.  
-**Kawalan:** KONFLIK KRITIKAL SP–BA; fail ini hanya rekod pemetaan dan TIDAK SESUAI untuk pengajaran sebelum pembetulan.  
-**Pengeluaran:** Staging sahaja; tidak mengubah main, database, Telegram atau Web.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

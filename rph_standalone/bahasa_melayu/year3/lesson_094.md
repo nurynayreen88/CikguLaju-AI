@@ -1,37 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 094
 
-**ID Lesson:** BM3-P094  
-**Tema / Unit:** Perpaduan; U12: Kerjasama Asas Kesejahteraan  
-**Tajuk dalam RPT/BT calon:** Masyarakat Prihatin  
-**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.1 (ii) — Menghasilkan kerangka dan penulisan karangan naratif, dan bukan naratif secara separa berpandu.  
-**Bidang:** Menulis — karangan separa berpandu  
-**Rujukan buku:** BT1 m/s 81  
-**Bahan / rangsangan:** tajuk Masyarakat Prihatin pada BT1 m/s81; BA khusus tidak diberikan; Buku Teks dan Buku Aktiviti SK Jilid 1 yang sepadan; kad/peta pemikiran; buku latihan.  
-**Objektif yang boleh diperhati:** Pada akhir PdP, murid dapat membina kerangka dan satu perenggan lima ayat tentang masyarakat prihatin.  
-**Masa cadangan:** 60 minit; jadual negeri, kelas dan guru menentukan masa sebenar.
+**ID:** BM3-P094  
+**Tema/Unit:** Perpaduan; U12: Kerjasama Asas Kesejahteraan  
+**Tajuk:** Masyarakat Prihatin — Penilaian  
+**SK:** 3.3 Menghasilkan penulisan.  
+**SP:** 3.3.1 (i) — Menghasilkan kerangka dan penulisan karangan naratif secara berpandu  
+**Fokus:** Karangan naratif berpandu  
+**Rujukan RPT:** BT1 m/s 81; penilaian tanpa BA khusus  
+**Bahan:** bahan bergambar kes kecurian dan skim rondaan sukarela Taman Aman; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat susunan kronologi, dua perenggan dan isi berasaskan bahan.
 
-## Set Induksi (5 minit)
-**Guru:** Memaparkan tajuk Masyarakat Prihatin pada BT1 m/s81; BA khusus tidak diberikan dan meminta murid menghubungkannya dengan tajuk **Masyarakat Prihatin**.
-**Murid:** Memberikan dua respons awal yang relevan dengan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan bahan bergambar kes kecurian dan skim rondaan sukarela Taman Aman dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
 ## Aktiviti 1 — Penerokaan (15 minit)
-**Guru:** Menunjukkan bahan sumber pada rujukan yang dinyatakan dan memodelkan satu contoh kemahiran **karangan separa berpandu**, tanpa menganggap tajuk BA sama dengan tajuk BT.
-**Murid:** Membaca, mendengar atau memerhati butiran bahan, kemudian mengenal pasti sekurang-kurangnya tiga fakta, contoh atau ciri yang diperlukan untuk karangan separa berpandu.
+**Guru:** Memodelkan Karangan naratif berpandu menggunakan sumber asal.
+**Murid:** Menyusun isi mengadakan taklimat, mengikut giliran, mendapat bantuan polis dan hasil rondaan.
 
 ## Aktiviti 2 — Aplikasi (20 minit)
-**Guru:** Membimbing tugasan individu atau pasangan menggunakan bahan yang dinyatakan; memberi sokongan berbeza mengikut tahap murid.
-**Murid:** Membina kerangka dan satu perenggan lima ayat tentang masyarakat prihatin; membanding dan menyemak hasil dengan rakan berdasarkan contoh dalam bahan.
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Menghasilkan kerangka lima bahagian serta dua perenggan ringkas tentang usaha penduduk menjaga keselamatan.
 
-## Pengukuhan dan PBD (15 minit)
-**Guru:** Menilai bukti kerja berdasarkan kriteria **susunan isi dan lima ayat gramatis selepas BT disahkan** dan merekod tahap kemajuan; menyediakan pemulihan melalui contoh berpandu.
-**Murid:** Menunjukkan hasil atau respons lisan, membetulkan sekurang-kurangnya satu kesilapan dan menyimpan bukti PBD.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak susunan kronologi, dua perenggan dan isi berasaskan bahan; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kegunaan kemahiran karangan separa berpandu dalam konteks U12: Kerjasama Asas Kesejahteraan.
-**Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
+**Guru:** Merumuskan Karangan naratif berpandu dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — **bukan READY**.  
-**Bukti padanan BA/BT:** Belum dibuktikan melalui petunjuk BT pada Buku Aktiviti yang dibaca.  
-**Isu yang perlu diselesaikan:** Bahan BA tidak dapat dibuktikan dengan petunjuk halaman BT dalam ekstrak yang dibaca; Perlu semak BT asal, PKJR, tajuk atau sesi susulan sebelum kelulusan  
-**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

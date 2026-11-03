@@ -1,35 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 054
 
+**ID:** BM3-P054  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
 **Tajuk:** Hati-hati Membantu  
 **SK:** 2.1 Asas membaca dan memahami.  
-**SP:** 2.1.1 (i) — Membaca dengan sebutan yang betul dan intonasi yang sesuai  
-**Rujukan RPT:** BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 48  
-**Sumber aktiviti:** BA1 m/s 48 — Hati-hati Membantu (kod BA 2.2.1(i)). Kandungan dan/atau SP perlu pengesahan lanjut.  
-**Masa cadangan:** 60 minit, sesuaikan slot sebenar.  
-**Fokus:** Bacaan dan kosa kata dalam situasi membantu dengan selamat.  
-**Objektif:** Pada akhir PdP, murid dapat membaca lima ayat dengan jelas serta mencari lima maksud kosa kata daripada kamus.  
-**Bahan:** Buku Teks/BA berkaitan, bahan rangsangan bergambar, kad perkataan, buku latihan dan senarai semak PBD. Contoh: risau, pelapik, sarung tangan, panas, berpesan.  
+**SP:** 2.2.1 (i) — Membaca, memahami dan mengecam maksud kosa kata  
+**Fokus:** Makna perkataan dalam teks aktiviti  
+**Rujukan RPT:** BA1 m/s 48 — Hati-hati Membantu; aktiviti BA sahaja tanpa BT khusus  
+**Bahan:** teks Hati-hati Membantu daripada BA1 m/s 48; Buku Teks/Buku Aktiviti asal yang ditunjukkan dan buku latihan.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Murid dapat lima makna tepat dan tiga ayat kontekstual; BA sahaja bukan rujukan BT.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru memperkenalkan situasi yang berkaitan tajuk Hati-hati Membantu serta mengaktifkan pengetahuan murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pemerhatian awal.
+**Guru:** Menunjukkan teks Hati-hati Membantu daripada BA1 m/s 48 dan mengemukakan soalan awal.
+**Murid:** Memberikan respons berdasarkan bahan dan pengetahuan sedia ada.
 
-## Aktiviti 1 — Perolehan maklumat (15 minit)
-**Tindakan guru:** Guru memodelkan bacaan petikan Hati-hati Membantu serta menggariskan perkataan yang memerlukan rujukan kamus.
-**Tindakan murid:** Murid membaca secara berpasangan dan menyebut lima perkataan sukar.
+## Aktiviti 1 — Penerokaan (15 minit)
+**Guru:** Memodelkan Makna perkataan dalam teks aktiviti menggunakan sumber asal.
+**Murid:** Membaca teks latihan dan menandakan lima perkataan yang perlu difahami mengikut konteks.
 
-## Aktiviti 2 — Aplikasi PdP (20 minit)
-**Tindakan guru:** Guru meminta murid mencari maksud lima perkataan serta membina dua ayat yang berkaitan.
-**Tindakan murid:** Murid melengkapkan jadual kosa kata dan menulis dua ayat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
+**Murid:** Mengisi jadual perkataan dan maksud serta menulis tiga ayat menggunakan perkataan yang dipilih.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak maksud lima perkataan dan dua ayat; SP BA 2.2.1(i) tidak sama dengan RPT 2.1.1(i) (HOLD).
-**Tindakan murid:** Murid menjawab atau menyerahkan hasil sendiri dan membuat pembetulan selepas maklum balas.
+## Pengukuhan dan penilaian PBD (15 minit)
+**Guru:** Menyemak lima makna tepat dan tiga ayat kontekstual; BA sahaja bukan rujukan BT; merekod penguasaan murid melalui lembaran atau respons lisan.
+**Murid:** Menunjukkan hasil, membetulkan kesilapan dan menjelaskan satu pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran bacaan dan kosa kata dalam situasi membantu dengan selamat dan nilai dalam situasi.
-**Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
+**Guru:** Merumuskan Makna perkataan dalam teks aktiviti dan nilai berkaitan unit.
+**Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — semakan BT / padanan BA–SP / PKJR atau Lesson ulangan belum lengkap.
-**Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.
