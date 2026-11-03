@@ -21,3 +21,5 @@
 **Reflection:** Pupils meeting objectives __ / __; follow-up __.
 
 **QA status:** SOURCE-PAIRED DRAFT — checked against official SOW; anthology page and Word/PDF output not yet inspected.
+
+**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
