@@ -1,0 +1,66 @@
+{
+  "status": "DRAFT_NOT_PUBLISHED",
+  "updated": "2026-11-03",
+  "scope": "Bahasa Melayu SK 2027 Tahun 2–6",
+  "expected_lessons": {
+    "2": 164,
+    "3": 165,
+    "4": 165,
+    "5": 166,
+    "6": 165
+  },
+  "verified_strict_ready": false,
+  "year_gates": {
+    "2": {
+      "rph_all_present": false,
+      "textbook_pages_verified": false,
+      "activity_book_pages_verified": false,
+      "dskp_full_text_verified": false,
+      "duplicate_resolutions_verified": false,
+      "full_calendar_2027_state_specific_verified": false,
+      "word_pdf_published_and_proofed": false,
+      "runtime_tests_passed": false
+    },
+    "3": {
+      "rph_all_present": false,
+      "textbook_pages_verified": false,
+      "activity_book_pages_verified": false,
+      "dskp_full_text_verified": false,
+      "duplicate_resolutions_verified": false,
+      "full_calendar_2027_state_specific_verified": false,
+      "word_pdf_published_and_proofed": false,
+      "runtime_tests_passed": false
+    },
+    "4": {
+      "rph_all_present": false,
+      "textbook_pages_verified": false,
+      "activity_book_pages_verified": false,
+      "dskp_full_text_verified": false,
+      "duplicate_resolutions_verified": false,
+      "full_calendar_2027_state_specific_verified": false,
+      "word_pdf_published_and_proofed": false,
+      "runtime_tests_passed": false
+    },
+    "5": {
+      "rph_all_present": false,
+      "textbook_pages_verified": false,
+      "activity_book_pages_verified": false,
+      "dskp_full_text_verified": false,
+      "duplicate_resolutions_verified": false,
+      "full_calendar_2027_state_specific_verified": false,
+      "word_pdf_published_and_proofed": false,
+      "runtime_tests_passed": false
+    },
+    "6": {
+      "rph_all_present": false,
+      "textbook_pages_verified": false,
+      "activity_book_pages_verified": false,
+      "dskp_full_text_verified": false,
+      "duplicate_resolutions_verified": false,
+      "full_calendar_2027_state_specific_verified": false,
+      "word_pdf_published_and_proofed": false,
+      "runtime_tests_passed": false
+    }
+  },
+  "note": "Do not publish/merge to main/deploy Telegram or Web until every gate is true and quality tests pass; no production DB changes have been approved for a DRAFT."
+}
