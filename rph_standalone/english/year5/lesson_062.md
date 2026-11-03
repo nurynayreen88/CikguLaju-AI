@@ -1,25 +1,21 @@
 # English Year 5 — Standalone RPH — Lesson 062 (Writing 11)
 
-**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Wild Life. **Main LS:** 4.3.3. **Complementary LS:** 3.2.2. **Duration:** 60 min, suggested.
+**Status:** DRAF — source aligned, final QA pending. **Topic:** Wild Life. **Main LS:** Writing 4.3.3. **Complementary LS:** Reading 3.2.2. **Time:** 60 minutes (suggested).
 
-**Language focus:** Wild Life. **Materials:** English Plus 1 Student’s Book Activities 4–6 p.39 Teacher’s Book p.53.
+**Materials:** English Plus 1 Student Book p.39 Activities 4–6 and Writing Guide; Teacher Book p.53; facts about an endangered Malaysian animal, such as a Malayan tiger or turtle; Workbook p.33 Unit 3 Writing, Animals in Danger Ex1–4 (historic QA mapping).
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Objective:** Pupils plan, draft and improve a short leaflet about an endangered Malaysian animal, using information from the model and feedback.
 
-**Set induction (5 min):** 1. Write on board: ‘such as’; ‘like’; ‘for example’. In pairs, pupils say a sentence about a land or sea animal with example of what the animal can or can’t do.
+**Set induction (5 min):** Pupils use “such as”, “like” and “for example” to state something an animal can or cannot do.
 
-**Activity 1 (15 min):** Explain that pupils are going to write a leaflet about a Malaysian animal in danger. Hand out information or show on board facts about an endangered local species e.g. Malayan tiger or turtle. Pupils in pairs read Writing Guide B and make notes for questions 1, 2, 3 and 5.
+**Activity 1 — Research and plan (15 min):** Teacher supplies age-appropriate facts about habitat, rarity, threats and protection. Pairs read Writing Guide B and make notes for the specified questions.
 
-**Activity 2 (15 min):** Pupils read Activity 6, Writing Guide C. They use Philippine eagle text as a model and decide on information for Paragraph 1, and then two sentences for Paragraph 2. Provide one or two websites for pupils to include in Paragraph 3.
+**Activity 2 — Study and structure (15 min):** Pupils use the Philippine eagle text as a model, follow Activity 6 Writing Guide C and organise information into a description, a problem and a call to action. Teacher shows where reliable supporting information can be found.
 
-**Activity 3 (15 min):** Pupils read D. Explain pupils also use this language in their leaflet. 5. Pupils write leaflet. They read and check text and draw a smiley face  for: 1) Question headings 2) information about animal 3) the problem 4) how to help animal 5) adjectives with -er/more, -est/most; 6) example 7) can and can’t. Find out how many pupils got 5 smiley faces or more than 5? Note pupils who need support throughout the writing process.
+**Activity 3 — Write and revise (15 min):** Pupils draft the leaflet with question headings, can/can't, comparative or superlative adjectives and examples. Partners check content against a seven-point checklist and writers revise at least one part.
 
-**PBD (5 min):** Teacher records pupils who need support throughout the writing process.
+**PBD (5 min):** Teacher checks a plan and revised leaflet for relevant facts, linked ideas and one change made in response to feedback.
 
-**Closure (5 min):** 7. Pupils draw and label the animal on leaflet. They write: Help us to protect the ___.
+**Closure (5 min):** Pupils draw and label the animal and add “Help us to protect the…”.
 
-**Workbook practice:** Workbook p.33, Unit 3 Writing — Animals in danger, Ex1-4. Use as brief follow-up without replacing the SOW tasks.
-
-**Differentiation:** At Step 2: Make sure the pairs are mixed- ability so those who are less proficient can feel more confident when making notes about the animal See Strategy 7: Feedback.
-
-**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
+**Differentiation:** Provide a fact sheet and writing guide frame; extend with an additional sourced suggestion. **QA:** Source-book visual checks and A4 format remain pending before READY.
