@@ -27,7 +27,7 @@ By the end of the lesson, pupils should be able to:
 - **Student's Book:** *English Plus 1*, p.4, **Activities 1 and 2**.
 - **Teacher's Book:** *English Plus 1*, p.18, **Exercise 1**.
 - **Audio 1:** **CD Track 1-02**, for TB p.18 Exercise 1; source mapping identifies Drive file `1bHosw3bReEbG_e92GsrKV40j0wib21TO` (filename `1-02 English Plus Second Edition Students Book 1.mp3`).
-- **Audio 2:** **CD Track 1-03**, for listening to check the gaps in SB p.4 Activity 2. The official SOW requires this track, but its Drive file ID and audible-content match have **not yet been independently confirmed**.
+- **Audio 2:** **CD Track 1-03**, for listening to check the gaps in SB p.4 Activity 2. The named MP3 was located in the Year 5 audio folder: Drive file `1JG5MszSc8HC4XeqQHYOscl3P7h8Qc9GF` (`1-03 English Plus Second Edition Students Book 1.mp3`). Filename and folder mapping confirmed; audible-content verification remains outstanding.
 - **Workbook:** No Workbook activity is prescribed in the SOW for this lesson. Do not insert a fabricated WB page or Activity number.
 
 ## Teaching and learning sequence
@@ -47,7 +47,7 @@ By the end of the lesson, pupils should be able to:
 1. Teacher directs pupils to **SB p.4, Activity 2**, reads its vocabulary aloud and checks meaning.
 2. Teacher models *photograph* and *photography* and elicits the difference in word stress.
 3. Pupils read the passage about a girl's free time. In pairs, they predict words for the gaps before hearing the recording.
-4. Teacher plays **CD 1-03**. Pupils check their predictions against the audio and discuss which words were correct. If Track 1-03 is unavailable, **do not claim this audio check occurred**: retain the activity as pending and use a teacher-read version only after checking the original SB text.
+4. Teacher plays **CD 1-03**. Pupils check their predictions against the audio and discuss which words were correct. Use the identified Track 1-03 MP3; do not claim the audible recording was verified until listened to.
 5. Teacher asks why care is needed when chatting online and elicits reasonable screen-time habits.
 
 ### Assessment and differentiation — 10 minutes
@@ -76,7 +76,7 @@ By the end of the lesson, pupils should be able to:
 - **SOW alignment:** checked against the official full Lesson 1 text, including **both** main and complementary CS/LS and both audio tracks.
 - **Book-page pairing:** supported by official SOW; TB p.18 and SB p.4 are referenced precisely.
 - **Audio 1-02:** mapped to an existing Drive MP3, but listening to confirm audible content is not claimed.
-- **Audio 1-03:** explicitly required by SOW; file mapping and audible verification outstanding.
+- **Audio 1-03:** explicitly required by SOW; filename and Drive ID verified in Year 5 audio folder; audible verification outstanding.
 - **Workbook:** not prescribed by SOW; deliberately not invented.
 - **Word/PDF:** not exported or layout-tested yet.
-- **QA status:** SOURCE-PAIRED DRAFT — Lesson 1 teaching sequence complete against SOW; hold final READY until CD 1-03 file verification and Word/PDF output checks. Do not advance to Lesson 2 until Lesson 1 checks are complete.
+- **QA status:** SOURCE-PAIRED DRAFT — Lesson 1 teaching sequence complete against SOW; hold final READY until audible-content verification for both tracks and Word/PDF output checks. Do not advance to Lesson 2 until Lesson 1 checks are complete.
