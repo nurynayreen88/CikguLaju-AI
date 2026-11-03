@@ -4,7 +4,7 @@
 
 **Materials:** And Something Weird Happened, Pamela Rushby, Chapter 4 pp.25–32; BPK CCL Short Stories Guide. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the And Something Weird Happened activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
 
 **Set induction (5 min):** Teacher plays Beat the Teacher with pizza, ice cream and dinosaur.
 

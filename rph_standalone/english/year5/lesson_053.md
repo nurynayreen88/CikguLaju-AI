@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB pp.32–33 Activities 1–4; TB pp.46–47; CD1.28–1.30; animal photos. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics in the Wild Life activities. Complementary (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the linked speaking task.
 
 **Set induction (5 min):** Teacher introduces wild animals and the Think! task; pupils name animals from around the world.
 

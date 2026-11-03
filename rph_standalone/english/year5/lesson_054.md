@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.33 Activities 5–7; TB p.47; Venn diagram worksheets. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements in the Wild Life activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the linked reading task.
 
 **Set induction (5 min):** Pairs recall animal names from SB p.32 and check how many they remember.
 

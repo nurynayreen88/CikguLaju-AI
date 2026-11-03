@@ -4,7 +4,7 @@
 
 **Language focus:** Modal auxiliary verbs: can (positive use) can’t (negative use) for ability. **Materials:** SOW-prescribed literary text and BPK CCL guide; audio CD1.33, CD1.34.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives:** Main (Listening 1.2.5) — pupils understand a sequence of supported questions in the Wild Life activities. Complementary (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the linked reading task.
 
 **Set induction (5 min):** 1. Brainstorm fast-running and slow-moving animals. Write on board in two columns. Ask: Which is the fastest land animal? (cheetah) Which is the slowest land animal?
 

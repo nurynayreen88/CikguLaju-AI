@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.34 Activities 1–3; TB p.48; optional dictionaries. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the Wild Life activities. Complementary (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the linked reading task.
 
 **Set induction (5 min):** Pupils play an animal-name ABC game and respond to the Think! question.
 

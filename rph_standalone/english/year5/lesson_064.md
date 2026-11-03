@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.38 Activities 2–5; TB p.52; CD1.36. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Wild Life activities. Complementary (Listening 1.2.5) — pupils understand a sequence of supported questions in the linked listening task.
 
 **Set induction (5 min):** Teacher introduces speaking/listening goals and pupils respond to the Think! photograph.
 

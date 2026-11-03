@@ -4,7 +4,7 @@
 
 **Language focus:** Verbs: e.g. communicate, survive, kill, grow. **Materials:** SOW-prescribed literary text and BPK CCL guide.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives:** Main (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the Wild Life activities. Complementary (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the linked writing task.
 
 **Set induction (5 min):** 1. Pupils in small groups say a sentence each about what animals can and can’t do. Choose some sentences to write on board. How many animal skills can pupils remember from previous lesson?
 

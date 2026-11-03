@@ -4,7 +4,7 @@
 
 **Language focus:** Questions: Do you want to…? Is it (adjective)? Where are you now? How are you?. **Materials:** English Plus 1 Student’s Book Activities 2–5 p.94 Teacher’s Book p.108; audio CD3.08, CD3.09.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives:** Main (Listening 1.2.1) — pupils understand with support the main idea of longer simple texts on a range of familiar topics in the Wild Life activities. Complementary (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the linked speaking task.
 
 **Set induction (5 min):** 1. See Pre-lesson Task 8: Predict the Content. Use photo on Student’s Book p.94 to do the task. Also ask: Where is Holly?
 
