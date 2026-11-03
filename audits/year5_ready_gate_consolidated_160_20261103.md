@@ -31,4 +31,26 @@
 5. **Output:** The runtime Word/PDF one-page A4 export has **not** been validated across all 160 lessons, nor tested for Telegram/Web download parity.
 6. **Approval:** Teacher approval is required lesson by lesson, including teacher-selected standards for Language Awareness and Project lessons.
 
+## Second-pass remediation and re-read — current position
+
+The 44 original screening alerts were **first-pass findings**, not unresolved defects. After targeted branch changes:
+
+- 22/22 `ACTORS`-flagged drafts were edited to identify explicit **teacher assessment actions** and observable pupil outputs. Direct re-read of all 22 confirms teacher language, PBD, closure and DRAF are present.
+- 2/2 `PHASE`-flagged drafts (16, 27) now have separate PBD and closure (same 60-minute totals). Both were re-read.
+- 2/2 `WRONG_BPK` source-category errors (59, 66) corrected from the official SOW and selected scanned English Plus pages.
+- 7/7 flagged duplicate Workbook notes removed (86, 89, 96, 100, 109, 133, 134).
+- 2/2 `TIME` duration totals corrected (106, 108).
+- 8/8 `GENERIC` placeholder objective/PBD flags in 152–159 replaced with lesson-specific measures.
+- **1 official SOW discrepancy remains unresolved (Lesson 141, Writing 4.2.2 vs 4.2.4).** The Lesson 141 RPH includes an explicit approval hold; neither source has been silently overwritten.
+
+**Mechanical screen: 43/44 initial alerting files remediated at textual level, 1 official code conflict held.** This is **not** a content-quality pass of the complete 160 lessons; unflagged lessons can still contain mistakes that automated checks cannot detect, and none is granted READY.
+
+### Release blocker classification
+
+**Blocking, must be verified:** content/step fidelity against SB/TB/Workbook or BPK primary-source pages; correct audio contents and link playback; teacher-selected standards or approved discrepancy resolution; all 160 one-page A4 actual runtime Word/PDF exports and Telegram/Web download parity; 2027 RPT final schedule and live curriculum alignment.
+
+**Completed but insufficient alone:** existence/naming 160 files, SOW focus and RPT row correspondence 160/160, 43 textual remediations and selected-page scans.
+
+The prior per-batch audit reports remain immutable historic first-pass snapshots; use this section as the current remediation ledger.
+
 **Decision:** READY = 0 newly certified in this pass. This protects production teachers from unverified content. All fixes are on development branch only; no mutation to `main` or active DB.
