@@ -19,3 +19,5 @@
 **Closure (5 min):** In small groups pupils draw a problem card and give one polite suggestion with a reason.
 
 **Differentiation:** Use the A/B/C cue card for support; extend fluent pupils with alternative advice. **Workbook:** Ex6 may be used as brief additional practice, not as a replacement for the SOW role-play. **QA:** Printed pages and final A4 layout still require approval; not READY.
+
+**Workbook (existing source QA map):** p.67, Unit 7 Speaking — interview with a famous person, Ex6. Optional brief follow-up; do not replace the SOW tasks.

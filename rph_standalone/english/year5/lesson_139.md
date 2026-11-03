@@ -19,3 +19,5 @@
 **Closure (5 min):** Pairs imagine three additional events in the boy's life and share one idea with the class.
 
 **Differentiation:** Provide a paragraph frame and key past-tense verbs; extend confident writers with extra details. **Workbook:** Mapped Unit 7 practice may be completed briefly after the principal tasks. **QA:** Track content, exact printed pages and A4 layout pending before READY.
+
+**Workbook (existing source QA map):** p.63-64, Unit 7 Past simple questions + Reading A true story, Ex1-4 / Ex1-5. Optional brief follow-up; do not replace the SOW tasks.

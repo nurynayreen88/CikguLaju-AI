@@ -16,3 +16,5 @@ Closure (5 min): Pupils state one learning point and complete a brief exit respo
 Differentiation: Use visuals, sentence frames and paired rehearsal for support; extend proficient pupils with fuller explanations and independent work.
 
 Verification: Official Year 5 SOW checked. Full page-by-page book, workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.65,67, Unit 7 Writing — Biographical questions and answers / punctuation, Ex1-4; Review Writing Ex7. Optional brief follow-up; do not replace the SOW tasks.

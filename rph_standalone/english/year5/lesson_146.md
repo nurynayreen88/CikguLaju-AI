@@ -16,3 +16,5 @@ Closure (5 min): Pupils share a learning point and complete an exit response.
 Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
 
 Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.69, Unit 8 Language Focus — be going to affirmative/negative/questions, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
