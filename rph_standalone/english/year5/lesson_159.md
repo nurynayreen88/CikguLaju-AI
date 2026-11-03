@@ -1,5 +1,7 @@
 # Year 5 Lesson 159 — Language Arts 27
 
+**Official SOW topic:** Gulliver's Travels.
+
 Status: DRAF. Unit 8. Main LS 5.3.1; complementary LS 2.3.1.
 Materials: Gulliver's Travels graphic novel; BPK CCL guide pp.63–64. Non-textbook Language Arts lesson: no Student Book, Workbook or audio reference prescribed by SOW. Appendix 1 identifies complementary Speaking 2.3.1; the lesson table incorrectly labels the complementary skill as Writing.
 
