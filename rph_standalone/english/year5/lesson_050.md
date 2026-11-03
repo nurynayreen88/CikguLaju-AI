@@ -4,6 +4,8 @@ Official SOW Lesson 50, printed p.87. Topic: Days. Suggested duration: 60 minute
 Main and complementary learning standards: Writing 4.3.3; Reading 3.2.2.
 Materials: SB p.29 Activities 4–5; TB p.43; peer-feedback checklist.
 
+Objective: Pupils draft and revise a description of a celebration including where and when it happens, an activity and one linking word.
+
 1. Set induction (8 min): Recall Notting Hill carnival vocabulary.
 2. Activity 1 (12 min): Practise the placement of also in Activity 4.
 3. Activity 2 (15 min): Plan and draft a description of a celebration using Activity 5.

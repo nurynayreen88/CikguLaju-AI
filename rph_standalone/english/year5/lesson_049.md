@@ -4,6 +4,8 @@ Official SOW Lesson 49, printed p.86. Topic: Days. Suggested duration: 60 minute
 Main and complementary learning standards: Reading 3.2.3; Speaking 2.3.1.
 Materials: SB p.29 Activities 1–3; TB p.43; Caribbean map.
 
+Objective: Pupils find two details in the carnival text and produce a short connected response using also, and or but accurately.
+
 1. Set induction (8 min): Locate the Caribbean and discuss cultural celebrations.
 2. Activity 1 (12 min): Complete Activity 1 and predict the order of carnival text paragraphs.
 3. Activity 2 (15 min): Read Activity 2 and identify paragraph purposes and details.

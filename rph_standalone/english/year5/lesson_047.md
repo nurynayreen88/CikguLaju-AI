@@ -4,6 +4,8 @@ Official SOW Lesson 47, printed p.84. Topic: Days. Suggested duration: 60 minute
 Main and complementary learning standards: Listening 1.3.1; Reading 3.2.4.
 Materials: SB p.28 Activities 1–3; TB p.42; CD 1-26.
 
+Objective: Pupils identify two details from the weekend dialogue and use one suitable spoken reaction in a short exchange.
+
 1. Set induction (8 min): Discuss weekend activities.
 2. Activity 1 (12 min): Complete Activity 1 and compare cognates such as concert and konsert.
 3. Activity 2 (15 min): Listen to CD 1-26 for Activity 2 and check dialogue details.

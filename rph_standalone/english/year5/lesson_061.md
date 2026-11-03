@@ -4,6 +4,8 @@ Official SOW Lesson 61, printed p.99. Topic: Wild Life. Suggested duration: 60 m
 Standards: Reading 3.2.2; Writing 4.2.4.
 Sources: SB p.39 Activities 1–5; TB p.53; Philippines map.
 
+Objective: Pupils find two facts in the animal leaflet and write a clear animal description using such as, like or for example.
+
 1. Set induction (8 min): Answer the Think question and locate the Philippines.
 2. Activity 1 (12 min): Read the leaflet and complete Activity 1; learn adopt, weigh and Foundation.
 3. Activity 2 (15 min): Read again for Activity 2 and cite sentences supporting answers.

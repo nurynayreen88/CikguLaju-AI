@@ -4,6 +4,8 @@ Official SOW Lesson 48, printed p.85. Topic: Days. Suggested duration: 60 minute
 Main and complementary learning standards: Speaking 2.1.4; Writing 4.2.2.
 Materials: SB p.28 Activities 4–6; TB p.42.
 
+Objective: Pupils make a relevant cinema invitation, respond appropriately and continue the exchange using a follow-up question.
+
 1. Set induction (8 min): Recall a partner's weekend family routine using frequency adverbs.
 2. Activity 1 (12 min): Sort Key Phrases into plans and suggestions.
 3. Activity 2 (15 min): Complete Activity 4 and identify advice using What about and Let's.

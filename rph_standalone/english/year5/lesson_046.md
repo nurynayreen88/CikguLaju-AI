@@ -4,6 +4,8 @@ Official SOW Lesson 46, printed p.83. Topic: Days. Suggested duration: 60 minute
 Main and complementary learning standards: Speaking 2.2.1; Writing 4.2.1.
 Materials: SB p.27 Activities 1–6; TB p.41.
 
+Objective: Pupils ask and answer three appropriate questions about daily routines and continue a partner exchange with a follow-up.
+
 1. Set induction (8 min): Do TB warm-up with books closed.
 2. Activity 1 (12 min): Complete Activity 1 and review present-simple question rules.
 3. Activity 2 (15 min): Pairs complete Activity 2 and practise questions and answers.

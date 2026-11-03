@@ -98,7 +98,13 @@ class EnglishY5IntegrationTests(unittest.TestCase):
                 "pbd": bool(blocks.get("pbd") or blocks.get("combined")),
                 "closure": bool(blocks.get("closure") or blocks.get("combined")),
             })
-        self.assertGreaterEqual(len(parsed), 100)
+        # 150 fixed-code lessons remain after the unresolved Lesson 141 source conflict.
+        self.assertEqual(len(parsed), 150)
+        matched = [n for n in parsed
+                   if set((self.gate["lessons"][str(n)]["main_ls"],
+                           self.gate["lessons"][str(n)]["complementary_ls"])) <= load_lesson(n)["source_codes"]]
+        print("Y5_SOW_CODE_MATCHED", len(matched), "/150; MISMATCH", sorted(set(parsed) - set(matched)))
+        self.assertGreaterEqual(len(matched), 120)
 
     def test_no_overlay_on_missing_or_modified_gate(self):
         with tempfile.TemporaryDirectory() as tmp:
