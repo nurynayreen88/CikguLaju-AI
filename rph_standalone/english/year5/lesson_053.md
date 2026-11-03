@@ -21,3 +21,5 @@
 **Differentiation:** Use image supports and replay; challenge confident pupils to explain classification.
 
 **Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.28, Unit 3 Vocabulary — Animals, Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.

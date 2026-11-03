@@ -13,3 +13,5 @@ Sources: SB p.39 Activities 1–5; TB p.53; Philippines map.
 PBD: Record task-specific evidence of the stated learning standards.
 Differentiation: Allow extra reading time and ask fast finishers about threats to eagles.
 Workbook exercise not yet verified. Audio content not independently played. QA: SOW-aligned draft pending book and Word/PDF checks.
+
+**Workbook (existing source QA map):** p.33, Unit 3 Writing — Giving examples (for example/such as/like), Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.

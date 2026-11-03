@@ -21,3 +21,5 @@
 **Workbook link (from existing verified mapping):** Workbook p.29, Unit 3 Language Focus — comparative/superlative-related adjective practice, Ex1-4. Use as brief practice or evidence without replacing the SOW tasks.
 
 **Differentiation:** Provide visual models or paired support for pupils who need help; extend confident pupils through independent responses. **QA note:** Workbook mapping is a prior source QA result; Student Book, Teacher Book, audio-content and A4 layout have not all been independently verified.
+
+**Workbook (existing source QA map):** p.29, Unit 3 Language Focus — comparative/superlative-related adjective practice, Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.

@@ -19,3 +19,5 @@
 **Closure (5 min):** Pupils draw and label the animal and add “Help us to protect the…”.
 
 **Differentiation:** Provide a fact sheet and writing guide frame; extend with an additional sourced suggestion. **QA:** Source-book visual checks and A4 format remain pending before READY.
+
+**Workbook (existing source QA map):** p.33, Unit 3 Writing — Animals in danger, Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.

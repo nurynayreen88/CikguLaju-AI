@@ -15,3 +15,5 @@ Differentiation: Provide Where, When and What prompts for pupils needing support
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
 QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
+
+**Workbook (existing source QA map):** p.24-25, Unit 2 Reading/Writing — A busy day + A special day, Ex1-5 / Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.

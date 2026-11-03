@@ -21,3 +21,5 @@
 **Differentiation:** Offer question strips and animal images; extend by comparing two animals independently.
 
 **Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.28, Unit 3 Vocabulary — Animals, Ex2-4 descriptive animal practice. Optional brief follow-up; the SOW activities remain the core lesson tasks.

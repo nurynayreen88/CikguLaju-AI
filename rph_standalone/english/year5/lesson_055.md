@@ -21,3 +21,5 @@
 **Differentiation:** Allow dictionary checks and paired reading; extend with evidence-based explanations.
 
 **Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.29, Unit 3 Language Focus — Superlative adjectives, Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.

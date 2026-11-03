@@ -15,3 +15,5 @@ Differentiation: Allow shorter descriptions for pupils needing support.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
 QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
+
+**Workbook (existing source QA map):** p.25,27, Unit 2 Writing — also, Ex1-4; Progress Review Writing Ex7-8. Optional brief follow-up; the SOW activities remain the core lesson tasks.
