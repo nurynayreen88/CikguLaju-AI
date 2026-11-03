@@ -73,7 +73,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 | **Lesson 020** (BM2-P020) | Kekeluargaan; U3: Keluarga Berhemah | Tahniah, Kak Mastura! | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.1 (iv) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks | BT1 m/s 17; BA m/s 23-24 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 021** (BM2-P021) | Kekeluargaan; U3: Keluarga Berhemah | Dr. Norini, Nenek Hana | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.1 — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks | BT1 m/s 18 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 022** (BM2-P022) | Kekeluargaan; U3: Keluarga Berhemah | Dr. Norini, Nenek Hana | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.1 — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks | BT1 m/s 18 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • DRAF / SEMAK PENGULANGAN |
-| **Lesson 023** (BM2-P023) | Kekeluargaan; U3: Keluarga Berhemah | Penilaian Tema 1 | — | Penilaian Tema / PBD | BT1 m/s 19-20 | Penilaian Tema 1; aktiviti pemulihan atau pengayaan; BT1 m/s 19–20 • DRAF / PBD BUKAN SP |
+| **Lesson 023** (BM2-P023) | Kekeluargaan; U3: Keluarga Berhemah | Penilaian Tema 1 | Penilaian Tema / PBD | Penilaian Tema (tiada kod SP baharu) | BT1 m/s 19-20 | Penilaian Tema 1; aktiviti pemulihan atau pengayaan; BT1 m/s 19–20 • DRAF / PBD BUKAN SP |
 
 ### M08 • Kumpulan A: 21/02–25/02 | Kumpulan B: 22/02–26/02
 
@@ -122,7 +122,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 | **Lesson 044** (BM2-P044) | Perpaduan; U6: Sepakat Membawa Berkat | Kamar Ilmu | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.3 (ii) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks | BT1 m/s 37; BA m/s 46 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak judul aktiviti penuh |
 | **Lesson 045** (BM2-P045) | Perpaduan; U6: Sepakat Membawa Berkat | Berbakti kepada Jiran | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.2 (i), (ii) — Memahami, mengenal pasti dan menggunakan kata kerja mengikut konteks | BT1 m/s 39 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 046** (BM2-P046) | Perpaduan; U6: Sepakat Membawa Berkat | Pengukuhan + PKJR | 1.1 Mendengar dan memberikan respons | 1.1.2 (iii) — Mendengar, memahami, dan memberikan respons terhadap | BT1 m/s 40 | Mendengar / Bertutur; Pemerhatian respons lisan |
-| **Lesson 047** (BM2-P047) | Perpaduan; U6: Sepakat Membawa Berkat | Penilaian Tema 2 — Indahkan Taman | — | Penilaian Tema / PBD | BT1 m/s 41 | Penilaian Tema 2 — Indahkan Taman; BT1 m/s 41 • DRAF / PBD BUKAN SP |
+| **Lesson 047** (BM2-P047) | Perpaduan; U6: Sepakat Membawa Berkat | Penilaian Tema 2 — Indahkan Taman | Penilaian Tema / PBD | Penilaian Tema (tiada kod SP baharu) | BT1 m/s 41 | Penilaian Tema 2 — Indahkan Taman; BT1 m/s 41 • DRAF / PBD BUKAN SP |
 
 ### M13 • Kumpulan A: 04/04–08/04 | Kumpulan B: 05/04–09/04
 
@@ -219,7 +219,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 | **Lesson 091** (BM2-P091) | Kebudayaan Kita; U12: Amalan Baik | Berbudi Bahasa Budaya Kita | 1.1 Mendengar dan memberikan respons | 1.1.1 — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat | BT1 m/s 75; BA m/s 85-86 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 092** (BM2-P092) | Kebudayaan Kita; U12: Amalan Baik | Asal Usul Nama Baling, Kedah | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera | 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera | BT1 m/s 76; BA m/s 87-88 | Membaca; Bacaan dan soalan pemahaman |
 | **Lesson 093** (BM2-P093) | Kebudayaan Kita; U12: Amalan Baik | Teater + PKJR | 3.3 Menghasilkan penulisan | 3.3.1 (i) | BT1 m/s 77; BA m/s 89–91 | Menulis; Semakan bahan bertulis |
-| **Lesson 094** (BM2-P094) | Kebudayaan Kita; U12: Amalan Baik | Penilaian Tema 4 | — | Penilaian Tema / PBD | BT1 m/s 81 | Penilaian Tema 4; BT1 m/s 81 • DRAF / PBD BUKAN SP |
+| **Lesson 094** (BM2-P094) | Kebudayaan Kita; U12: Amalan Baik | Penilaian Tema 4 | Penilaian Tema / PBD | Penilaian Tema (tiada kod SP baharu) | BT1 m/s 81 | Penilaian Tema 4; BT1 m/s 81 • DRAF / PBD BUKAN SP |
 
 ### M23 • Kumpulan A: 27/06–01/07 | Kumpulan B: 28/06–02/07
 
