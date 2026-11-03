@@ -48,7 +48,7 @@ def apply(st, rows):
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
-    assessment = get("Assessment")[1]
+    assessment = (get("Assessment")[1] or get("PBD")[1] or get("Reinforcement")[1])
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure:
         return rows
