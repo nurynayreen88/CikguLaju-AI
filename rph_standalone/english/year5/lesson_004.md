@@ -1,5 +1,7 @@
 # English Year 5 — Lesson 004 — Writing: Classroom Objects
 
+**Official SOW topic:** Free time.
+
 **SOW:** Primary Year 5 SK, Lesson 4, printed p.38. **Theme:** World of Self, Family and Friends. **CCE:** Language and Creativity. **Suggested time:** 60 minutes.
 **Main CS/LS:** Writing 4.2 / 4.2.4 — Describe people, places and objects using suitable statements.
 **Complementary CS/LS:** Listening 1.2 / 1.2.4 — Understand a sequence of supported classroom instructions.
