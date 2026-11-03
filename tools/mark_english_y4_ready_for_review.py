@@ -17,7 +17,7 @@ for n in range(1, 161):
     if "READY — provisional, pending teacher's final review" in s:
         continue
     # Replace old editorial status lines, never alter teaching activities or source references.
-    s = re.sub(r"(?mi)^\\*\\*(?:QA status|Status):\\*\\*[^\\n]*\\n?", "", s)
+    s = re.sub(r"(?mi)^\*\*(?:QA status|Status):\*\*[^\n]*\n?", "", s)
     s = s.rstrip() + "\n\n" + label + "\n"
     p.write_text(s, encoding="utf-8")
     count += 1
