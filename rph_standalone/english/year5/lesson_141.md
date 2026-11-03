@@ -16,3 +16,5 @@ Closure (5 min): Pupils share a learning point and complete an exit response.
 Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
 
 Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
+
+**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
