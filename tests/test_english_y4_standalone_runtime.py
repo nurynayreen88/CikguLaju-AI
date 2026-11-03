@@ -28,6 +28,13 @@ class Year4RuntimeTests(unittest.TestCase):
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 4", "subject": "Mathematics", "lesson_no": 1}), "GENERIC")
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 5", "subject": "English", "lesson_no": 1}), "GENERIC")
 
+    def test_missing_lesson_selection_falls_back(self):
+        self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 4", "subject": "English"}), "GENERIC")
+
+    def test_explicit_lesson_number_overrides_stale_textbook_lesson(self):
+        text = self.runtime._local_rph_text({"year": "Tahun 4", "subject": "English", "lesson_no": 1, "textbook_lesson_no": 40})
+        self.assertIn("Class CD1 Track 3", text)
+
     def test_missing_lesson_falls_back(self):
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 4", "subject": "English", "lesson_no": 999}), "GENERIC")
 
