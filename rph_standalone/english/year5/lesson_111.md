@@ -15,3 +15,5 @@ Closure (5 min): Each pupil writes an exit ticket stating what they learned.
 Differentiation: Supply picture and word prompts to pupils needing support; invite confident pupils to add and explain more poem-based details.
 
 Verification: SOW checked. Anthology and BPK page-level audit pending; remain DRAF.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
