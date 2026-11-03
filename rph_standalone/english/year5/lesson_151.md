@@ -16,3 +16,5 @@ Closure (5 min): State two predictions about their own future.
 Differentiation: Provide model sentences or require independent predictions with reasons.
 
 Verification: SOW checked. Workbook/audio and book-page QA pending before READY.
+
+**Workbook (existing source QA map):** p.71, Unit 8 Language Focus — will and won't, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

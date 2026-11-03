@@ -18,3 +18,5 @@ Closure (5 min): Pupils share a learning point and submit an exit response.
 Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
 
 Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.73,75, Unit 8 Writing — An email, Ex1-4; Progress Review Writing Ex7. Optional brief follow-up; do not replace the SOW tasks.

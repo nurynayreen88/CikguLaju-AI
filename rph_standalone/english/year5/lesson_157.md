@@ -18,3 +18,5 @@ Closure (5 min): Pupils share a learning point and submit an exit response.
 Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
 
 Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.72, Unit 8 Reading — An adventure day + Vocabulary Plus, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
