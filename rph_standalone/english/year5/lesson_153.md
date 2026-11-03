@@ -3,7 +3,7 @@
 **Official SOW topic:** Gulliver's Travels.
 
 Status: DRAF. Unit 8. Main LS 5.3.1; complementary LS 4.3.1.
-Materials: Gulliver's Travels graphic novel; BPK CCL guide pp.67–69. Workbook mapping and audio playback remain unverified.
+Materials: Gulliver's Travels graphic novel; BPK CCL guide pp.67–69. No Student Book, Workbook or English Plus audio prescribed by this non-textbook Language Arts lesson.
 
 Objective: Pupils demonstrate the skills through the specific activities.
 
@@ -18,3 +18,5 @@ Closure (5 min): Pupils share a learning point and submit an exit response.
 Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
 
 Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
+
+**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
