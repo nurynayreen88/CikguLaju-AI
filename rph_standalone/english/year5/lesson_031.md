@@ -1,5 +1,7 @@
 # English Year 5 Lesson 31 — Reading 6
 
+**Official SOW topic:** Towns and cities.
+
 **Official SOW:** Lesson 31, printed p.67. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Reading 3.2.4; Writing 4.2.4.
 **Materials:** SB p.106 Activities 1–2; TB p.120; CD 3-27; UK and Malaysia maps.
