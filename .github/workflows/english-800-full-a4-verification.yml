@@ -1,0 +1,37 @@
+name: English 800 full Word A4 verification
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/verify_english_800_word_a4.py'
+      - '.github/workflows/english-800-full-a4-verification.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [2, 3, 4, 5, 6]
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install Word and PDF tools
+        run: |
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq libreoffice-writer >/dev/null
+          fi
+      - name: Generate, render and inspect all 160 Word RPH
+        run: python tools/verify_english_800_word_a4.py --year ${{ matrix.year }}
+      - name: Upload per-Lesson findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-English-A4-Y${{ matrix.year }}
+          path: output/english_full_a4_20261103/year${{ matrix.year }}/verification.json
+          retention-days: 7
