@@ -28,5 +28,6 @@
 
 **PBD:** Assess independently written board-game questions for capital letters and punctuation for main Writing SP 4.3.1; check understanding of relevant printed source details for complementary Reading SP 3.2.2. Workbook p.61 is the main written grammar practice, not a replacement for the board-game writing task.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

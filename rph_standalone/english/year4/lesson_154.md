@@ -30,5 +30,6 @@ Pupils complete a follow-up task based on The Jungle Book graphic novel and Teac
 
 **PBD:** Assess pupils' personal responses to The Jungle Book, supported by relevant story events, for main Language Arts SP 5.2.1; check the clarity and relevance of pupils' written creative descriptions for complementary Writing SP 4.2.4. Group presentation alone is not sufficient evidence of the Writing standard.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

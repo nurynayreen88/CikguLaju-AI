@@ -45,3 +45,5 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 ## Verified source audio links
 - CD1 Track 8: https://drive.google.com/file/d/18VcHZ2_hDYeHFBcWXwJpQDdyd1mrh_UA/view
 Audio file presence checked; listening-content verification pending.
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

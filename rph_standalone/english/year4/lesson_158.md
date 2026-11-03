@@ -30,5 +30,6 @@ Pupils review their home-safety poster instructions against the lesson success c
 
 **PBD:** Assess the organisation, clarity and punctuation of pupils' written home-safety posters for main Writing SP 4.3.3; observe pupils' use of suitable clarification during spoken group explanations for complementary Speaking SP 2.2.2. Do not count the poster alone as evidence of the Speaking standard.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

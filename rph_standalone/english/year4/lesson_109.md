@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' dictionary lookups of recycle, collect and sell for main Reading SP 3.2.4; assess identification of the main idea in the teacher-prepared recycling text for complementary Reading SP 3.2.1. Workbook p.61 is supporting written practice. Official SOW and source-text alignment remain pending before release.  
 **Differentiation:** Offer picture prompts, word banks and extra challenge tasks.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source alignment corrected; remaining content/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

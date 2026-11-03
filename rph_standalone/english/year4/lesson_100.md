@@ -30,5 +30,6 @@
 
 **PBD:** Assess pupils' independently punctuated possessive sentences in SB Activity 3 for main Writing SP 4.3.1, including apostrophe-s and sentence punctuation. Check their identification of ownership clues in the printed story for complementary Reading SP 3.2.2. Do not invent a Workbook task.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -28,5 +28,6 @@
 
 **PBD:** Assess pupils' original written dinosaur description, including relevant body parts and abilities, for main Writing SP 4.2.4; check specific details identified from any verified spoken input for complementary Listening SP 1.2.2. The supplementary teacher-read listening task provides separate provisional evidence for SP 1.2.2; verify source vocabulary and administer the listening questions before recording achievement. Do not infer listening from written work.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -28,5 +28,6 @@
 
 **PBD:** Assess pupils' written health text-message exchanges for a clear offer, reason and suitable response for main Writing SP 4.2.2; check the relevance and clarity of the health information conveyed for complementary Writing SP 4.2.1. Workbook p.92 advice sentences are written follow-up practice, not a replacement for the message exchange.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -28,5 +28,6 @@
 
 **PBD:** Observe pupils asking and answering questions about English-learning habits and giving practical advice with reasons for main Speaking SP 2.1.1; check their understanding of a partner's spoken responses and advice for complementary Listening SP 1.2.5. Use the English-learning survey, not an unrelated health Workbook task.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

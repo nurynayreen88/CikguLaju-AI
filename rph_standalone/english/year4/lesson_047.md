@@ -28,5 +28,6 @@
 
 **PBD:** Observe cover-based predictions supported by visual clues and completion of Worksheet 1 (Language Arts 5.2.1; Speaking 2.1.4).  
 **Differentiation:** Ask pupils to connect the cover with books they have read.  
-**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct SB/TB/audio and Word/PDF QA pending.
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

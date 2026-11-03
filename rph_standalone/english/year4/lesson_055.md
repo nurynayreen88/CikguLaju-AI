@@ -30,5 +30,6 @@
 
 **PBD:** Observe pupils' requests for clarification about the interview task for main Speaking SP 2.2.2 and their questions, answers and opinions about future plans for complementary Speaking SP 2.1.1. Workbook p.32 provides the main written practice; spoken evidence must be observed separately.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

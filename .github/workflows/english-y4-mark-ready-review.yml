@@ -1,0 +1,27 @@
+name: Mark existing English Year 4 RPH READY for owner review
+on:
+  push:
+    branches:
+      - fix/english-y4-standalone-adapter-20261103
+    paths:
+      - tools/mark_english_y4_ready_for_review.py
+permissions:
+  contents: write
+jobs:
+  mark-ready:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Mark all existing lessons ready for owner review
+        run: python tools/mark_english_y4_ready_for_review.py
+      - name: Commit on review branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rph_standalone/english/year4/lesson_*.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Mark Year 4 RPH READY for owner review; preserve QA caveats"
+            git push
+          fi

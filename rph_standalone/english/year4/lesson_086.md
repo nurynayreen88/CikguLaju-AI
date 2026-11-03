@@ -28,5 +28,6 @@
 
 **PBD:** Check specific trip details pupils identify from CD2 Track 7 for main Listening SP 1.2.2 and their understanding of follow-up spoken questions for complementary Listening SP 1.2.5. Workbook p.52 supports written practice; its answers alone are not evidence of listening.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

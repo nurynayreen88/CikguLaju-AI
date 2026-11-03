@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' accurate responses to specific home-safety details heard in CD2 Track 78 for main Listening SP 1.2.2; observe their spoken advice and reasons for complementary Speaking SP 2.1.1. Workbook p.88 is written health-advice practice, not a substitute for listening evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

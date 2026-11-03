@@ -30,5 +30,6 @@ Pupils review their teacher-selected writing task using a checklist matched to t
 
 **PBD:** Assess healthy-food poster text for legible cursive writing and accurate spelling against SP 4.1.2 and 4.3.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
-**Source:** Primary Year 4 SK Scheme of Work, Lesson 78, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
+**Source:** Primary Year 4 SK Scheme of Work, Lesson 78, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

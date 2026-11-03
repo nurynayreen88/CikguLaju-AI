@@ -12,6 +12,9 @@ from web.english_y2_verified_workbook_runtime import install as install_english_
 # Preserve all existing handlers; add only verified Year 2 Workbook availability.
 ENGLISH_Y2_WORKBOOK_BRIDGE_ACTIVE = install_english_y2_workbook(telegram_runtime)
 
+from web.english_y4_standalone_runtime import install as install_english_y4_standalone
+ENGLISH_Y4_STANDALONE_ACTIVE = install_english_y4_standalone(telegram_runtime)
+
 app = telegram_runtime.app
 
 

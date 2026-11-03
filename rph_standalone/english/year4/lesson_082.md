@@ -31,5 +31,6 @@
 
 **PBD:** Observe pupils' spoken explanations of road-safety rules for main Speaking SP 2.1.3; assess legibility of their cursive written imperatives for complementary Writing SP 4.1.2. Workbook p.50 provides the main written practice but does not replace speaking observation.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

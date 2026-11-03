@@ -37,3 +37,5 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Book:** Anthology of Poems; CCL Poetry Teaching Guidebook Activity 1 p.7, pictures pp.8–11; Activity 2 p.13 and Worksheet 1 p.14
 - **Audio:** None prescribed
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

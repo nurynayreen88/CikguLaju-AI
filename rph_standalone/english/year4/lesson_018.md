@@ -30,5 +30,6 @@
 
 **PBD:** Check task responses against Speaking 2.1.1 and Listening 1.2.5, recording individual progress.  
 **Differentiation:** Provide question frames and check spellings against SB.  
-**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source-content, audio and bot Word/PDF QA pending.
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

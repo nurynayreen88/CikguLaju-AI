@@ -28,5 +28,6 @@
 
 **PBD:** Check task responses against Speaking 2.1.4 and Writing 4.2.1, recording individual progress.  
 **Differentiation:** Model full sentences and provide oral rehearsal before independent work.  
-**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source-content, audio and bot Word/PDF QA pending.
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

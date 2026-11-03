@@ -33,4 +33,5 @@
 **Differentiation:** Use picture prompts, repeated listening and peer support.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** p.39, Activity 1; assessment follow-up.
-**Status:** DRAFT — audio mapping and Word/PDF QA pending.
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

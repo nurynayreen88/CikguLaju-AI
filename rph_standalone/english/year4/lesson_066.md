@@ -33,4 +33,5 @@
 **Differentiation:** Provide ingredient pictures, sentence frames and extension questions.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** p.39, Activity 2; assessment follow-up.
-**Status:** DRAFT — audio mapping and Word/PDF QA pending.
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

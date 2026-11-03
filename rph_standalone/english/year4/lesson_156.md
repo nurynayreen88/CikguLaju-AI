@@ -28,5 +28,6 @@
 
 **PBD:** Observe pupils' ability to ask for and provide clarification during the board game for main Speaking SP 2.2.2; check their understanding of spoken game instructions for complementary Listening SP 1.2.4. CD2 Track 79 supports vocabulary; Workbook p.89 is written advice practice, not speaking or listening evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

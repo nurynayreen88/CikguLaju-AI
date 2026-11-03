@@ -30,5 +30,6 @@ Pupils revise their CLIL paragraph about buildings using the Student Book texts 
 
 **PBD:** Assess pupils' independently written paragraph about a famous building for main Writing SP 4.3.3 and text-supported answers about building facts for complementary Reading SP 3.2.2. CD3 Track 39 supports vocabulary; CLIL Activity 1 is a reading task without an assigned audio track.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

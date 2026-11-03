@@ -30,5 +30,6 @@ Pupils complete a follow-up task based on The Jungle Book graphic novel and Teac
 
 **PBD:** Assess pupils' personal response to Mowgli's village-or-jungle choice, supported by reasons from The Jungle Book, for main Language Arts SP 5.2.1; check punctuation in their written opinion for complementary Writing SP 4.3.1. Use the Graphic Novel Teaching Guidebook rather than an invented Workbook task.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

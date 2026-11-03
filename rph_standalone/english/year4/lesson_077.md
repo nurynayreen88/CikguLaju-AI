@@ -28,5 +28,6 @@
 
 **PBD:** Check healthy-food text details and inference of unfamiliar words in CLIL Activities 1–2 against SP 3.2.2 and 3.2.3.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
-**Source:** Primary Year 4 SK Scheme of Work, Lesson 77, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
+**Source:** Primary Year 4 SK Scheme of Work, Lesson 77, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

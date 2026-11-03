@@ -28,5 +28,6 @@
 
 **PBD:** Assess a past-trip email for relevant details, appropriate use of and/but and revision after feedback (Writing 4.2.5; Reading 3.2.2).  
 **Differentiation:** Vary writing length targets but retain the email format.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

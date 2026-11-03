@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' inference of unfamiliar health-story vocabulary from printed context and pictures for main Reading SP 3.2.3; assess their understanding of the spoken story's overall message in Track 72 for complementary Listening SP 1.2.3. Workbook p.90 is written matching practice, not listening evidence. Track 72's disc remains unverified.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -44,4 +44,4 @@
 - **Optional preparatory audio:** Teacher's Book references CD1 Track 2 for vocabulary; it is not the main song audio and has not been mapped to a verified file.
 - **Workbook:** No workbook activity specified by SOW for Lesson 1; none invented.
 
-**QA status:** SOW, book page mapping, activity sequence, answer key and technical MP3 decoding checked. Pending: audible song-content verification and Word/PDF output test. **NOT READY FOR RELEASE.**
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

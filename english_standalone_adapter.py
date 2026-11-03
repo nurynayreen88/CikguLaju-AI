@@ -1,4 +1,4 @@
-"""Read-only standalone English RPH lookup for Years 1–3.
+"""Read-only standalone English RPH lookup for Years 1–4.
 
 The bot must explicitly call resolve_rph_with_fallback to opt in.
 Missing lessons retain the legacy fallback; other subjects are unaffected.
@@ -36,10 +36,10 @@ def _strip_internal_review_notes(content):
 
 
 def load_english_rph(year, lesson_no):
-    """Load a standalone lesson for English Years 1, 2 or 3. Approval is separate."""
+    """Load a standalone lesson for English Years 1, 2, 3 or 4. Approval is separate."""
     year_number = _valid_number(year)
     number = _valid_number(lesson_no)
-    if year_number not in (1, 2, 3) or number is None or not 1 <= number <= LESSON_COUNT:
+    if year_number not in (1, 2, 3, 4) or number is None or not 1 <= number <= LESSON_COUNT:
         return None
     path = LESSON_ROOT / f"year{year_number}" / f"lesson_{number:03d}.md"
     try:
@@ -69,7 +69,7 @@ def get_english_y1_rph(year, subject, lesson_no):
 
 
 def resolve_rph_with_fallback(year, subject, lesson_no, legacy_generator, *args, **kwargs):
-    """Prefer standalone English Years 1–3; otherwise preserve legacy behaviour."""
+    """Prefer standalone English Years 1–4; otherwise preserve legacy behaviour."""
     if not callable(legacy_generator):
         raise TypeError("legacy_generator must be callable")
     standalone = get_english_rph(year, subject, lesson_no)

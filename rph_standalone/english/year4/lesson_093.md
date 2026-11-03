@@ -31,5 +31,6 @@
 
 **PBD:** Observe pupils reading the transport story independently and identifying supporting events for main Reading SP 3.3.1; assess their oral retelling using picture prompts for complementary Speaking SP 2.3.1. Workbook p.55 is the main written story practice, not a substitute for oral evidence.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

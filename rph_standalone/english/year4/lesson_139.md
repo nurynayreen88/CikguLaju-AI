@@ -30,5 +30,6 @@
 
 **PBD:** Check pupils' recognition of the overall sports message in Track 60 for main Listening SP 1.2.1; observe their spoken sports recommendations and supporting opinions for complementary Speaking SP 2.1.1. The SOW does not establish the disc number, so do not assign one without verification.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.
