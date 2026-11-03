@@ -24,6 +24,11 @@ class EnglishY2Y6OfficialSOWAudit(unittest.TestCase):
         self.assertTrue(LEDGER["lessons"]["6/160"]["teacher_selected"])
         self.assertTrue(all(LEDGER["lessons"][f"6/{n}"]["teacher_selected"] for n in range(155,159)))
 
+    def test_year4_lesson30_uses_official_cd2_track29(self):
+        lesson=(ROOT/"rph_standalone/english/year4/lesson_030.md").read_text(encoding="utf-8")
+        self.assertIn("CD2 Track 29", lesson)
+        self.assertNotIn("CD1 Track 29", lesson)
+
     def test_machine_audit_prints_open_mismatches_without_false_ready_claims(self):
         grouped={year:{"fixed":0,"matched":0,"no_explicit_pair":0,"mismatch":[]} for year in range(2,7)}
         for year in range(2,7):
