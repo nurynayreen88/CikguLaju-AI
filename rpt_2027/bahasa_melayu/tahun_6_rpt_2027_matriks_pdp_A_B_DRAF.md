@@ -6,7 +6,7 @@ Sumber RPT 2026: https://docs.google.com/document/d/1g0HR5PGuW9CMQFJZLcDbXUD0qZw
 Buku teks/DSKP: [Pemetaan BM Tahun 6](tahun_6_rpt_2027_pemetaan_unit_DRAF.md)
 Kalendar: https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit
 
-Rekod calon: **165** termasuk **5 baris pengulangan** yang dikekalkan untuk audit; unit diliputi: **27/27**; baris PKJR/cuti tanpa Unit BM diasingkan: **41**; kod SP tidak jelas: **1**.
+Rekod calon: **165** termasuk **5 baris pengulangan** yang dikekalkan untuk audit; unit diliputi: **27/27**; baris PKJR/cuti tanpa Unit BM diasingkan: **41**; kod SP tidak jelas: **1**; 1 kod 5.2.2 ditemui dalam RPT asal dan DSKP (3 Nov 2026)..
 
 | ID PdP | Minggu RPT 2026 | M2027 cadangan | Kumpulan A 2027 | Kumpulan B 2027 | Tema / unit | Kod SP calon | Fokus/PBD cadangan | BT | BA rujukan | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -162,7 +162,7 @@ Rekod calon: **165** termasuk **5 baris pengulangan** yang dikekalkan untuk audi
 | BM6-P150 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U25: Amanah Sejagat | 2.3.1 | Membaca; Bacaan dan soalan pemahaman | BT m/s 192-193 | — | DRAF |
 | BM6-P151 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U25: Amanah Sejagat | 3.2.1 | Menulis; Semakan bahan bertulis | BT m/s 194 | — | DRAF |
 | BM6-P152 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U25: Amanah Sejagat | 4.4.2 | Seni Bahasa; Apresiasi/persembahan bahasa | BT m/s 195 | — | DRAF |
-| BM6-P153 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U25: Amanah Sejagat | PERLU SEMAK | Semak; Semak | BT m/s 196 | — | DRAF |
+| BM6-P153 | 35 | M35 | 2027-09-26–2027-09-30 | 2027-09-27–2027-10-01 | Integriti; U25: Amanah Sejagat | 5.2.2 | Tatabahasa: kata majmuk; Amanah Kita; RPT 2026 halaman 196 (kod rapat dengan perkataan 'Memahami'); DSKP 5.2.2 | BT m/s 196 | — | DRAF / KOD DISEMAK, AKTIVITI PERLU AUDIT |
 | BM6-P154 | 36 | M36 | 2027-10-03–2027-10-07 | 2027-10-04–2027-10-08 | Integriti; U26: Integriti Nadi Kemakmuran Negara | 1.3.1 | Mendengar/Bertutur; Pemerhatian respons lisan | BT m/s 197 | — | DRAF |
 | BM6-P155 | 36 | M36 | 2027-10-03–2027-10-07 | 2027-10-04–2027-10-08 | Integriti; U26: Integriti Nadi Kemakmuran Negara | 2.3.1 | Membaca; Bacaan dan soalan pemahaman | BT m/s 198-199 | — | DRAF |
 | BM6-P156 | 36 | M36 | 2027-10-03–2027-10-07 | 2027-10-04–2027-10-08 | Integriti; U26: Integriti Nadi Kemakmuran Negara | 3.2.1 | Menulis; Semakan bahan bertulis | BT m/s 200 | — | DRAF |
