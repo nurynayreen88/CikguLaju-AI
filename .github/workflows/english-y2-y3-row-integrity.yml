@@ -1,0 +1,22 @@
+name: English Y2-Y3 RPH row integrity
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'english_y2_standalone_render.py'
+      - 'english_y3_standalone_render.py'
+      - 'rph_standalone/english/year2/**'
+      - 'rph_standalone/english/year3/**'
+      - 'tests/test_english_y2_y3_rph_render_integrity.py'
+      - '.github/workflows/english-y2-y3-row-integrity.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  offline-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m unittest discover -s tests -p 'test_english_y2_y3_rph_render_integrity.py' -v

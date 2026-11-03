@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parent / "rph_standalone" / "english" / "year3"
 
 def _section(source, name):
-    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):\*\*|\Z)", source, re.S | re.M)
+    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*|\Z)", source, re.S | re.M)
     return match.group(1).strip() if match else ""
 
 def apply(st, rows):
@@ -17,9 +17,17 @@ def apply(st, rows):
         return rows
     if str(st.get("year", "")).strip().casefold() not in ("tahun 3", "year 3", "3"):
         return rows
-    try:
-        lesson = int(st.get("lesson_no") or st.get("textbook_lesson_no") or st.get("lesson"))
-    except (TypeError, ValueError):
+    # Reject coercible invalid IDs (True, 1.5) and stale callback identifiers.
+    raw = st.get("lesson_no")
+    if raw is None or raw == "":
+        raw = st.get("textbook_lesson_no")
+    if raw is None or raw == "":
+        raw = st.get("lesson")
+    if type(raw) is int:
+        lesson = raw
+    elif isinstance(raw, str) and raw.strip().isascii() and raw.strip().isdecimal():
+        lesson = int(raw.strip())
+    else:
         return rows
     if not 1 <= lesson <= 160:
         return rows
@@ -36,11 +44,11 @@ def apply(st, rows):
     ]
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status):\*\*|\Z)", source, re.S | re.M)
+        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*|\Z)", source, re.S | re.M)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
-    assessment = get("Assessment")[1]
+    assessment = (get("Assessment")[1] or get("PBD")[1] or get("Reinforcement")[1])
     closure = get("Closure")[1]
     if not intro or not any(body for _, body in activities) or not closure:
         return rows
@@ -48,13 +56,14 @@ def apply(st, rows):
     result["SET INDUKSI"] = intro
     lines = [title + "\n" + body for title, body in activities if body]
     if assessment:
-        lines.append("Assessment / PBD\n" + assessment)
         result["PENTAKSIRAN"] = assessment
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
     # Internal QA notes belong in source audits, never in teacher-facing RPH.
-    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status):\*\*", closure, maxsplit=1)[0].strip()
+    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*", closure, maxsplit=1)[0].strip()
     result["PENUTUP"] = closure
-    ref = re.search(r"(?m)^\*\*References:\*\*\s*(.*)$", source)
+    ref = re.search(
+        r"(?im)^\*\*(?:References|Teaching materials|Materials(?:\s*/\s*references)?|Resources):\*\*\s*([^\n]+)",
+        source)
     if ref:
         result["BAHAN BANTU MENGAJAR"] = ref.group(1).strip()
     result["_standalone_y3_source"] = str(path.relative_to(ROOT.parent.parent.parent))
