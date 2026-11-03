@@ -84,6 +84,20 @@ class EnglishY5IntegrationTests(unittest.TestCase):
         parsed = [n for n in fixed if load_lesson(n) is not None]
         missing = sorted(set(fixed) - set(parsed))
         print("YEAR5_FIXED_PARSED", len(parsed), "/150; FORMAT_PENDING", missing)
+        from web.english_y5_standalone_runtime import _field, _sections, _plain
+        for n in missing:
+            content = (LESSON_ROOT / ("lesson_%03d.md" % n)).read_text(encoding="utf-8")
+            clean = "\n".join(_plain(line) for line in content.splitlines())
+            blocks = _sections(content)
+            print("Y5_UNREADABLE", n, "fields", {
+                "material": bool(_field(clean, ("Materials", "Sources"))),
+                "objective": bool(_field(clean, ("Suggested learning objectives", "Suggested objectives",
+                                                "Learning objectives", "Learning objective", "Objectives", "Objective"))),
+                "intro": bool(blocks.get("intro")),
+                "main": bool(blocks.get("main") or all(blocks.get("activity%d" % k) for k in (1, 2, 3))),
+                "pbd": bool(blocks.get("pbd") or blocks.get("combined")),
+                "closure": bool(blocks.get("closure") or blocks.get("combined")),
+            })
         self.assertGreaterEqual(len(parsed), 100)
 
     def test_no_overlay_on_missing_or_modified_gate(self):
