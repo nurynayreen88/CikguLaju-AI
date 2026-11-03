@@ -7,13 +7,13 @@
 - **File existence and naming:** 160/160 present, all normalized to `lesson_001.md` through `lesson_160.md`. Original files 96–99 were copied byte-identically, SHA-checked, and old unpadded paths retired in branch history.
 - **Official SOW Learning Standards:** 160/160 lesson numbers crosschecked against Appendix 1. Every prescribed pair occurs in its corresponding draft; teacher-choice Language Awareness and Project lessons have no invented official pair. This is a **code-presence check**, not full proof of all pedagogical alignments.
 - **Previously confirmed coding correction:** Lesson 141 complementary LS 4.2.2; Lesson 159 has source-table labelling inconsistency, appendix lists Speaking 2.3.1.
-- **Content improvements applied:** Lessons 101–105 expanded from very short outlines into lesson-phase RPH drafts with explicit teacher/pupil tasks, differentiated supports and PBD tied to SOW. These remain **DRAF**, not READY.
-- **Remaining risk:** 20 draft files currently <750 UTF-8 bytes. This is a mechanical screening threshold, not a definitive pedagogical judgement: 36, 53, 54, 55, 63, 64, 65, 72, 74, 75, 81, 82, 83, 84, 85, 91, 92, 93, 94, 107.
+- **Content improvements applied:** 25 previously very short drafts expanded into SOW-aligned lesson-phase RPH with explicit pupil/teacher actions, PBD, differentiation and closure. Updated lessons: 36, 53, 54, 55, 63, 64, 65, 72, 74, 75, 81, 82, 83, 84, 85, 91, 92, 93, 94, 101, 102, 103, 104, 105, 107. These remain **DRAF**, not READY.
+- **Updated mechanical screening:** 0 files now under 750 bytes after expansion (initially 25). File length is only a screening indicator, not a pedagogical pass criterion.
 - **Not verified:** Every Student Book / Teacher Book / Workbook page and exercise; actual audio track contents and links; lesson activity fidelity outside spot-checked lessons; full official DSKP wording; classroom feasibility / A4 pagination. **Do not mark READY** solely based on this audit.
 
 ## Required next gate before READY
 
-1. Prioritise review and expansion of the 20 short drafts shown above; do not overwrite adequate lessons.
+1. Review the 25 expanded drafts against the full Student/Teacher Book tasks and actual classroom requirements; do not overwrite adequate lessons.
 2. Audit source pages, activity numbering, audio track identity, Workbook mapping, and Non-Textbook materials lesson-by-lesson. Avoid inserting workbook references into Language Arts / Project lessons without SOW evidence.
 3. Review teacher actions, pupil outputs, measurable PBD, differentiation, actual page layout and final version approvals individually.
 4. Verify curriculum consistency through the existing master RPT and database in **read-only mode**, then explicitly approve READY.
@@ -57,7 +57,7 @@
 | 33 | LA6 | 5.3.1 / 2.1.5 | lesson_033.md | 1466 | DRAF, source QA pending |
 | 34 | LAW2 | ? | lesson_034.md | 1443 | DRAF, source QA pending |
 | 35 | L7 | 1.2.1 / 4.3.2 | lesson_035.md | 1503 | DRAF, source QA pending |
-| 36 | S7 | 2.2.1 / 3.2.3 | lesson_036.md | 717 | REVIEW: very short |
+| 36 | S7 | 2.2.1 / 3.2.3 | lesson_036.md | 1646 | DRAF, source QA pending |
 | 37 | R7 | 3.3.1 / 4.3.2 | lesson_037.md | 909 | DRAF, source QA pending |
 | 38 | W7 | 4.2.4 / 2.3.1 | lesson_038.md | 880 | DRAF, source QA pending |
 | 39 | LA7 | 5.2.1 / 3.2.2 | lesson_039.md | 922 | DRAF, source QA pending |
@@ -74,9 +74,9 @@
 | 50 | W9 | 4.3.3 / 3.2.2 | lesson_050.md | 1157 | DRAF, source QA pending |
 | 51 | LA9 | 5.2.1 / 3.2.2 | lesson_051.md | 1163 | DRAF, source QA pending |
 | 52 | LAW3 | ? | lesson_052.md | 857 | DRAF, source QA pending |
-| 53 | L10 | 1.2.2 / 2.2.1 | lesson_053.md | 623 | REVIEW: very short |
-| 54 | S10 | 2.1.5 / 3.2.3 | lesson_054.md | 547 | REVIEW: very short |
-| 55 | R10 | 3.2.3 / 3.3.1 | lesson_055.md | 549 | REVIEW: very short |
+| 53 | L10 | 1.2.2 / 2.2.1 | lesson_053.md | 1620 | DRAF, source QA pending |
+| 54 | S10 | 2.1.5 / 3.2.3 | lesson_054.md | 1603 | DRAF, source QA pending |
+| 55 | R10 | 3.2.3 / 3.3.1 | lesson_055.md | 1632 | DRAF, source QA pending |
 | 56 | W10 | 4.3.2 / 2.1.5 | lesson_056.md | 767 | DRAF, source QA pending |
 | 57 | LA10 | 5.3.1 / 3.2.2 | lesson_057.md | 925 | DRAF, source QA pending |
 | 58 | CON5 | 1.2.1 / 2.2.1 | lesson_058.md | 838 | DRAF, source QA pending |
@@ -84,38 +84,38 @@
 | 60 | S11 | 2.1.2 / 4.3.2 | lesson_060.md | 789 | DRAF, source QA pending |
 | 61 | R11 | 3.2.2 / 4.2.4 | lesson_061.md | 995 | DRAF, source QA pending |
 | 62 | W11 | 4.3.3 / 3.2.2 | lesson_062.md | 767 | DRAF, source QA pending |
-| 63 | LA11 | 5.3.1 / 4.2.4 | lesson_063.md | 740 | REVIEW: very short |
-| 64 | CON6 | 2.2.1 / 1.2.5 | lesson_064.md | 735 | REVIEW: very short |
-| 65 | L12 | 1.1.1 / 3.3.1 | lesson_065.md | 468 | REVIEW: very short |
+| 63 | LA11 | 5.3.1 / 4.2.4 | lesson_063.md | 1592 | DRAF, source QA pending |
+| 64 | CON6 | 2.2.1 / 1.2.5 | lesson_064.md | 1610 | DRAF, source QA pending |
+| 65 | L12 | 1.1.1 / 3.3.1 | lesson_065.md | 1568 | DRAF, source QA pending |
 | 66 | S12 | 2.2.1 / 4.3.2 | lesson_066.md | 931 | DRAF, source QA pending |
 | 67 | R12 | 3.3.1 / 1.2.1 | lesson_067.md | 925 | DRAF, source QA pending |
 | 68 | W12 | 4.3.2 / 1.1.1 | lesson_068.md | 920 | DRAF, source QA pending |
 | 69 | LA12 | 5.2.1 / 2.1.5 | lesson_069.md | 990 | DRAF, source QA pending |
 | 70 | LAW4 | ? | lesson_070.md | 939 | DRAF, source QA pending |
 | 71 | L13 | 1.3.1 / 3.3.1 | lesson_071.md | 909 | DRAF, source QA pending |
-| 72 | S13 | 2.1.1 / 4.2.1 | lesson_072.md | 560 | REVIEW: very short |
+| 72 | S13 | 2.1.1 / 4.2.1 | lesson_072.md | 1539 | DRAF, source QA pending |
 | 73 | R13 | 3.2.2 / 2.1.2 | lesson_073.md | 843 | DRAF, source QA pending |
-| 74 | W13 | 4.3.2 / 1.3.1 | lesson_074.md | 545 | REVIEW: very short |
-| 75 | LA13 | 5.3.1 / 4.3.3 | lesson_075.md | 592 | REVIEW: very short |
+| 74 | W13 | 4.3.2 / 1.3.1 | lesson_074.md | 1598 | DRAF, source QA pending |
+| 75 | LA13 | 5.3.1 / 4.3.3 | lesson_075.md | 1638 | DRAF, source QA pending |
 | 76 | CON7 | 4.2.4 / 2.2.1 | lesson_076.md | 915 | DRAF, source QA pending |
 | 77 | L14 | 1.2.5 / 1.2.2 | lesson_077.md | 899 | DRAF, source QA pending |
 | 78 | S14 | 2.1.2 / 2.2.1 | lesson_078.md | 917 | DRAF, source QA pending |
 | 79 | R14 | 3.2.3 / 4.2.4 | lesson_079.md | 914 | DRAF, source QA pending |
 | 80 | W14 | 4.2.4 / 2.2.2 | lesson_080.md | 932 | DRAF, source QA pending |
-| 81 | LA14 | 5.2.1 / 3.2.2 | lesson_081.md | 617 | REVIEW: very short |
-| 82 | CON8 | 4.3.2 / 3.2.3 | lesson_082.md | 672 | REVIEW: very short |
-| 83 | L15 | 1.1.1 / 2.2.1 | lesson_083.md | 473 | REVIEW: very short |
-| 84 | S15 | 2.1.5 / 1.2.4 | lesson_084.md | 463 | REVIEW: very short |
-| 85 | R15 | 3.2.1 / 2.1.1 | lesson_085.md | 597 | REVIEW: very short |
+| 81 | LA14 | 5.2.1 / 3.2.2 | lesson_081.md | 1473 | DRAF, source QA pending |
+| 82 | CON8 | 4.3.2 / 3.2.3 | lesson_082.md | 1514 | DRAF, source QA pending |
+| 83 | L15 | 1.1.1 / 2.2.1 | lesson_083.md | 1525 | DRAF, source QA pending |
+| 84 | S15 | 2.1.5 / 1.2.4 | lesson_084.md | 1457 | DRAF, source QA pending |
+| 85 | R15 | 3.2.1 / 2.1.1 | lesson_085.md | 1477 | DRAF, source QA pending |
 | 86 | W15 | 4.3.3 / 3.2.2 | lesson_086.md | 885 | DRAF, source QA pending |
 | 87 | LA15 | 5.3.1 / 4.3.3 | lesson_087.md | 920 | DRAF, source QA pending |
 | 88 | PRO1 | ? | lesson_088.md | 1000 | DRAF, source QA pending |
 | 89 | L16 | 1.2.1 / 1.1.1 | lesson_089.md | 888 | DRAF, source QA pending |
 | 90 | S16 | 2.2.1 / 4.3.1 | lesson_090.md | 892 | DRAF, source QA pending |
-| 91 | R16 | 3.2.3 / 3.2.4 | lesson_091.md | 575 | REVIEW: very short |
-| 92 | W16 | 4.3.1 / 3.2.4 | lesson_092.md | 587 | REVIEW: very short |
-| 93 | LA16 | 5.2.1 / 2.1.4 | lesson_093.md | 437 | REVIEW: very short |
-| 94 | CON9 | 4.2.3 / 2.2.2 | lesson_094.md | 616 | REVIEW: very short |
+| 91 | R16 | 3.2.3 / 3.2.4 | lesson_091.md | 1551 | DRAF, source QA pending |
+| 92 | W16 | 4.3.1 / 3.2.4 | lesson_092.md | 1614 | DRAF, source QA pending |
+| 93 | LA16 | 5.2.1 / 2.1.4 | lesson_093.md | 1549 | DRAF, source QA pending |
+| 94 | CON9 | 4.2.3 / 2.2.2 | lesson_094.md | 1510 | DRAF, source QA pending |
 | 95 | L17 | 1.2.3 / 1.2.5 | lesson_095.md | 929 | DRAF, source QA pending |
 | 96 | S17 | 2.2.1 / 2.2.2 | lesson_096.md | 921 | DRAF, source QA pending |
 | 97 | R17 | 3.3.1 / 2.1.3 | lesson_097.md | 823 | DRAF, source QA pending |
@@ -128,7 +128,7 @@
 | 104 | W18 | 4.3.3 / 4.2.5 | lesson_104.md | 1731 | DRAF, source QA pending |
 | 105 | LA18 | 5.2.1 / 2.1.1 | lesson_105.md | 1786 | DRAF, source QA pending |
 | 106 | LAW5 | ? | lesson_106.md | 1742 | DRAF, source QA pending |
-| 107 | L19 | 1.3.1 / 3.2.4 | lesson_107.md | 353 | REVIEW: very short |
+| 107 | L19 | 1.3.1 / 3.2.4 | lesson_107.md | 1533 | DRAF, source QA pending |
 | 108 | S19 | 2.3.1 / 1.2.1 | lesson_108.md | 1703 | DRAF, source QA pending |
 | 109 | R19 | 3.2.2 / 3.2.4 | lesson_109.md | 867 | DRAF, source QA pending |
 | 110 | W19 | 4.2.3 / 3.3.1 | lesson_110.md | 892 | DRAF, source QA pending |
