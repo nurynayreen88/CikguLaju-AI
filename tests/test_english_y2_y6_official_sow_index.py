@@ -19,7 +19,8 @@ class EnglishY2Y6OfficialSOWAudit(unittest.TestCase):
         self.assertEqual(LEDGER["lessons"]["3/93"]["main_ls"],"3.2.1")
         self.assertIn("Welcome", LEDGER["lessons"]["3/20"]["issue"])
         self.assertEqual(LEDGER["lessons"]["3/20"]["main_ls"], "4.3.3")
-        self.assertIsNone(LEDGER["lessons"]["3/61"]["complementary_ls"])
+        self.assertEqual(LEDGER["lessons"]["3/61"]["complementary_ls"],"3.3.1")
+        self.assertIn("DSKP", LEDGER["lessons"]["3/61"]["verification_basis"])
         self.assertEqual(LEDGER["lessons"]["4/157"]["complementary_ls"],"3.2.3")
         self.assertEqual(LEDGER["lessons"]["5/141"]["complementary_ls"],"4.2.4")
         self.assertTrue(LEDGER["lessons"]["5/160"]["teacher_selected"])
@@ -56,6 +57,8 @@ class EnglishY2Y6OfficialSOWAudit(unittest.TestCase):
         # This is a discovery audit, not a release authorization; transparent mismatch details
         # are printed before classroom and workbook verification.
         self.assertEqual(sum(v["fixed"]+v["no_explicit_pair"] for v in grouped.values()),800)
+        self.assertEqual(sum(v["fixed"] for v in grouped.values()),767)
+        self.assertEqual(sum(len(v["mismatch"]) for v in grouped.values()),0)
 
 if __name__=="__main__":
     unittest.main()
