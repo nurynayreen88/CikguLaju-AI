@@ -1,6 +1,8 @@
 # Year 5 Lesson 141 — Language Arts 24
 
 Status: DRAF. Unit 7; topic: Gulliver's Travels. Official SOW Lesson 141. Main LS 5.3.1; complementary LS 4.2.2.
+
+**Official-source discrepancy — hold for manual approval:** The Lesson 141 page in the official Primary Year 5 SOW gives complementary Writing **4.2.4**, while the same SOW's Appendix 1 lists **4.2.2**. This draft records the Appendix code and the existing RPT 2027 uses the lesson-page code. Neither version has been silently overwritten. Confirm source precedence with the curriculum reviewer before marking READY.
 Materials: Gulliver's Travels Chapter 4; BPK CCL Graphic Novel guide. Non-textbook Language Arts lesson: no Student Book, Workbook or audio reference prescribed by SOW.
 
 Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
