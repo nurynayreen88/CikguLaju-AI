@@ -22,7 +22,7 @@ class BM2027GateTests(unittest.TestCase):
         out = audit("rph")
         self.assertTrue(out["passed"], "\n".join(out["errors"][:25]))
         self.assertEqual(out["summary"][2]["rph_checked"], 164)
-        self.assertGreaterEqual(out["summary"][3]["rph_checked"], 30)
+        self.assertGreaterEqual(out["summary"][3]["rph_checked"], 60)
         self.assertEqual(out["summary"][2]["rph_ready"], 0)
         self.assertEqual(out["summary"][3]["rph_ready"], 0)
 

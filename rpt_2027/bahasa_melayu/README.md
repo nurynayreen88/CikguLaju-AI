@@ -47,11 +47,12 @@ DK Bahasa Melayu SK Tahun 1 dan buku baharu KP2027 belum disahkan dalam indeks s
 
 ## Kemajuan RPH BM Tahun 3 — BA/DSKP (3 Nov 2026)
 
-- **30/165 RPH Tahun 3** tersedia dalam `rph_standalone/bahasa_melayu/year3/`, iaitu **22 DRAF, 8 HOLD, 0 READY**. [Indeks Tahun 3](../../rph_standalone/bahasa_melayu/year3/README.md).
-- **[Audit BA/DSKP dan RPH Tahun 3 Lesson 001–030](AUDIT_BA_DSKP_BM_T3_001_030_20261103.md):** 37 medan awal RPT diselaraskan dalam setiap format Markdown/HTML; dua catatan HOLD tambahan bagi gabungan SP Lesson 024 dan 030.
-- Buku Aktiviti BM Tahun 3 SK Jilid 1 ([baca sumber](https://drive.google.com/file/d/1WoaWY-FgDVhJTZjQI16T3Ol6jFvmlGOg/view)) dan Jilid 2 ([baca sumber](https://drive.google.com/file/d/1ln3x1r0kXSXIBJObUIG1iUaas0jGFkt0/view)) tersedia untuk semakan. Setiap latihan BA diperlakukan sebagai **bahan sokongan**, bukan bukti tajuk Buku Teks serupa.
-- Padanan RPH–RPT dan komponen PdP bagi 30 fail diperiksa: **0 percanggahan metadata/struktur**. Audit akademik BT asal, pengulangan, format A4 dan penjadualan belum tamat.
-- `READY_GATE.json` kekal `DRAFT_NOT_PUBLISHED`. Ujian Python CI/runtime belum dijalankan, dan tiada data disiarkan kepada pengguna.
+- **60/165 RPH Tahun 3** kini tersedia: **35 DRAF, 25 HOLD, 0 READY**. [Indeks Tahun 3](../../rph_standalone/bahasa_melayu/year3/README.md).
+- [Audit BA/DSKP dan RPH Lesson 001–030](AUDIT_BA_DSKP_BM_T3_001_030_20261103.md): 37 pembetulan medan bagi 23 rekod RPT dalam Markdown/HTML serta penentuan subkod DSKP dan latihan BA1.
+- [Audit sumber dan RPH Lesson 031–060](AUDIT_BA_DSKP_BM_T3_031_060_20261103.md): 30 RPH tambahan berpandukan BA1; tujuh rekod BA–SP berkaitan dan satu sumber BA salah dirujuk dalam RPT telah diperiksa (8 rekod keseluruhan), tanpa meneka SP BT.
+- Buku Aktiviti BM Tahun 3 Jilid 1 ([sumber](https://drive.google.com/file/d/1WoaWY-FgDVhJTZjQI16T3Ol6jFvmlGOg/view)) dan Jilid 2 ([sumber](https://drive.google.com/file/d/1ln3x1r0kXSXIBJObUIG1iUaas0jGFkt0/view)) tersedia untuk penyediaan batch seterusnya.
+- Padanan tajuk, SK, SP dan komponen PdP bagi **60 fail** telah disemak: **0 ralat struktur**; seluruh RPT Tahun 3 masih mempunyai 165/165 baris MD–HTML sepadan.
+- **Baki 105 RPH Tahun 3**, termasuk audit keseluruhan Buku Teks, PKJR, pengulangan, jadual, A4 dan CI. `READY_GATE.json` kekal `DRAFT_NOT_PUBLISHED`, dan tiada perubahan produksi.
 
 ## Pintu READY
 
