@@ -93,7 +93,12 @@ def write_word(y,n,rows,path):
 
 def validate_word_function_snapshot():
     import ast
-    active=ast.parse((ROOT/"app.py").read_text(encoding="utf-8"))
+    # app.py includes later-version Python syntax unrelated to the Word builder.
+    # Parse only the last active Word function, not the 2.8 MB production module.
+    app_text=(ROOT/"app.py").read_text(encoding="utf-8")
+    start=app_text.rindex("\ndef _create_rph_word(")+1
+    end=app_text.index("\ndef create_word_file(",start)
+    active=ast.parse(app_text[start:end])
     frozen=ast.parse((ROOT/"qa/english_word_builder_snapshot.py").read_text(encoding="utf-8"))
     def last(tree):
         return [n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=="_create_rph_word"][-1]
