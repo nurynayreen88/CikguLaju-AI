@@ -30,7 +30,7 @@
 | 027 | CD1 Track 26 and CD1 Track 37 both appear | Confirm which activities require each; do not delete either before source review |
 | 028 | No track reference observed | Check SOW |
 | 029 | Tracks 35–36 | Confirm disc and both MP3 files |
-| 030 | CD2 Track 29 | **Confirmed from original KPM Year 4 SOW Lesson 30, Step 4**; verify actual MP3 file content and Telegram delivery before READY |
+| 030 | **CD1 Track 29 — TB p.39 (authoritative for SB p.20 Activity 2)** | SOW prints conflicting CD2 Track 29; two different MP3 assets exist. Playback and Telegram delivery not verified |
 
 ## Lessons 139–156 — audio continuity checkpoint
 
@@ -303,3 +303,11 @@ The initial repository-reference tables above are historical observations, **not
 | 134 | CD2 Track 56 | 141 |
 
 **Scope:** 14 of 160 lessons, 20 track usages, 19 distinct MP3 identities. Remaining lessons are not verified by this mapping; do not infer CD or track from the manifest alone. RPH remain DRAFT.
+
+## 3 November 2026 hotfix — Lesson 030 source precedence (supersedes 3 Nov SOW-only edit)
+
+- Re-read the **actual scanned Get Smart Plus 4 Teacher's Book p.39 (PDF page 25)**. The printed *Activity 2* explicitly says **Class CD1 – Track 29**, while the SOW Lesson 30 says **CD2 Track 29**. The Teacher's Book is task-specific for the Student Book's audio and is chosen for operational lesson mapping; the SOW discrepancy is preserved.
+- Original source: https://drive.google.com/file/d/1lBWc96e8DCIMSdxzRuLC7CissHL52q8v/view
+- Confirmed original Class CD1 Track 29 metadata: https://drive.google.com/file/d/15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct/view ; 218,335 bytes.
+- Distinct original Class CD2 Track 29 metadata: https://drive.google.com/file/d/1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob/view ; 245,857 bytes.
+- The 3 November SOW-only correction to CD2 was **incorrect for the actual Activity 2** and has been reversed; the original TB-verified conclusion from 31 October is reinstated. Neither MP3 has been played or delivery-tested; leave Lesson 30 NOT READY.

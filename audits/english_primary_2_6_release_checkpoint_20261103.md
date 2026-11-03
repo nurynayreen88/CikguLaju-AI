@@ -16,7 +16,7 @@
 - Y6 L25: projek *Classroom of the Future* (non-textbook Speaking) dengan poster, peranan dan pembentangan.
 - Y6 L26 dan L31: *Toes* by Judith Nicholls p30 (nota kaki/puisi badan).
 - Y6 L37: *Akbar's Dream*, guidebook pp35–36, ramalan berpandukan ilustrasi dan naratif.
-- Y4 L30: SOW rasmi menyatakan **CD2 Track 29**, bukan CD1 Track 29; rujukan RPH dibetulkan, ujian regresi diwujudkan. MP3 sebenar belum dimainkan.
+- Y4 L30: SOW mencetak **CD2 Track 29** tetapi Teacher's Book p.39 untuk SB p.20 Activity 2 secara jelas menyatakan **CD1 Track 29**. RPH diselaraskan kepada **CD1 Track 29** mengikut TB, dengan kedua-dua fail MP3 direkod sebagai aset berbeza; audio playback/Telegram delivery belum diuji. Pembetulan SOW-only awal 3 Nov yang memilih CD2 telah ditarik balik selepas pemeriksaan terus TB.
 - Y2 L160: SOW memang menyatakan Language Arts 42; tidak diubah.
 
 ## RPT 2027 yang sudah diselaraskan
