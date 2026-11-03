@@ -11,7 +11,7 @@
 4. **Activity 3 (17 min):** Pairs complete Activity 4 and compare answers; if time repeat for a chosen city.
 5. **Assessment and closure (8 min):** Groups propose two improvements for their town or village and write them down; assess short exchanges.
 
-**PBD:** Record task-specific evidence as Independent / With support / Needs reteaching.
+**PBD:** Teacher observes a short exchange with a follow-up question about places and checks two accurate written town-improvement sentences; pupils refine one response.
 **Differentiation:** Rotate partners for support and confidence.
 **Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
 **Audio / lesson type:** No SOW audio.

@@ -10,7 +10,7 @@ Materials: SB p.24 Activities 1–3; TB p.38; CD 1-23; family-word Venn diagram.
 4. Activity 3 (17 min): Complete Activity 2 and sort family words into male, female and shared groups in Activity 3.
 5. Assessment and closure (8 min): Answer TB optional reading questions; assess ability to follow sequenced instructions.
 
-PBD: Observe and record evidence of the specified skills through the described activities.
+PBD: Teacher checks whether pupils follow the sequence of family-routine task instructions and sort three family words accurately; note pupils who need repetition or a model.
 Differentiation: Repeat instructions aloud for pupils needing support.
 Workbook: No exercise assigned until the exact page and activity are verified.
 Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.

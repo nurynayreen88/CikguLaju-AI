@@ -12,7 +12,7 @@ Objective: Pupils complete the specified SOW activities and demonstrate the corr
 4. Activity 3 (17 min): Write three coherent paragraphs using conjunctions, reference pronouns, there is/are, adjectives and comparisons.
 5. PBD and closure (8 min): Self-check against Writing Guide and review vocabulary with Correct the Mistake.
 
-PBD: Record observable performance in the specified main and complementary skills. Differentiation: Give encouraging feedback to pupils who struggle to plan or write.
+PBD: Teacher checks a three-paragraph town description for relevant details, use of conjunctions and appropriate adjective placement; pupils revise one sentence after feedback.
 Workbook: Do not assign a Workbook page or exercise until verified. Audio/source status: No SOW audio.
 QA status: SOW-matched draft, pending independent book-page verification, audio playback where relevant, and one-page Word/PDF QA.
 

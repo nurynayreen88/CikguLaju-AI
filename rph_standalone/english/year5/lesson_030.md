@@ -10,7 +10,7 @@ Sources: SB p.92 Activities 4–5; TB p.106; CD 3-04.
 4. Activity 3: Pairs use Eriko and Liam information in Activity 5 to prepare a new dialogue and swap roles.
 5. Assessment and closure: Repeat dialogue using own information; assess ability to sustain short exchanges.
 
-PBD: Observe listening responses, short exchanges and written accuracy. Differentiation: Replay or pause audio for pupils needing support; allow extra rehearsal time for dialogues.
+PBD: Teacher observes a two-turn exchange using Eriko/Liam information, including one follow-up question; pupils switch roles and improve an unclear response.
 Workbook: Exact exercise not verified. Audio files matched by filename in Google Drive; content not yet played.
 QA status: SOW-aligned draft pending source-page and one-page Word/PDF checks.
 

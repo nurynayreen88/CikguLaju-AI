@@ -11,7 +11,7 @@
 4. **Activity 3 (17 min):** Discuss fact versus opinion; use Activity 5 Key Phrases to compare opinions in pairs.
 5. **Assessment and closure (8 min):** Groups invent comparative puzzle sentences for others to guess; assess speaking and pronunciation.
 
-**PBD:** Record task-specific evidence as Independent / With support / Needs reteaching.
+**PBD:** Teacher observes each pair's comparison of places using a relevant comparative form and checks intelligible pronunciation of the target expressions.
 **Differentiation:** Less confident pupils compare two items; proficient pupils compare six.
 **Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
 **Audio / lesson type:** Audio file identified by name, content not listened.

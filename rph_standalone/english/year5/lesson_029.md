@@ -10,7 +10,7 @@ Sources: SB p.92 Activities 1–3; TB p.106; CD 3-02, 3-03.
 4. Activity 3: Listen again and fill Tobias information table in Activity 3.
 5. Assessment and closure: Pairs ask Key Phrase questions and describe people and places using quite, really and very; assess listening and spelling.
 
-PBD: Observe listening responses, short exchanges and written accuracy. Differentiation: Replay or pause audio for pupils needing support; allow extra rehearsal time for dialogues.
+PBD: Teacher checks answers to two listening details about Tobias and observes an intelligible short exchange using the prescribed Key Phrases.
 Workbook: Exact exercise not verified. Audio files matched by filename in Google Drive; content not yet played.
 QA status: SOW-aligned draft pending source-page and one-page Word/PDF checks.
 

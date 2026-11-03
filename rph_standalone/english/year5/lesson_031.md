@@ -14,7 +14,7 @@
 5. **PBD and closure (8 min):** Describe positions of four Malaysian cities on a map; assess reading, dictionary/resource use and descriptions.
 
 **Differentiation:** Allow more reading time; fast finishers identify the pictured city.
-**PBD:** Record evidence from the identified reading, writing, listening, speaking or creative output; note pupils needing support.
+**PBD:** Teacher checks two retrieved facts from the Liverpool reading task and one accurate Malaysian city-location statement; pupils explain where the text or map supports their answer.
 **Workbook:** No activity assigned without page-and-exercise verification.
 **Audio:** Only tracks explicitly identified in the SOW; filenames found in Drive where applicable, playback not verified.
 **QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.

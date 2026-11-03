@@ -14,7 +14,7 @@
 5. **PBD and closure (8 min):** Read descriptions aloud; close with Correct the Mistake and assess coherent writing.
 
 **Differentiation:** Provide printed Key Phrases for pupils needing support.
-**PBD:** Record evidence from the identified reading, writing, listening, speaking or creative output; note pupils needing support.
+**PBD:** Teacher checks whether a pupil's city description has a clear topic sentence, linked details and suitable there is/are; pupil revises one sentence for accuracy.
 **Workbook:** No activity assigned without page-and-exercise verification.
 **Audio:** Only tracks explicitly identified in the SOW; filenames found in Drive where applicable, playback not verified.
 **QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.

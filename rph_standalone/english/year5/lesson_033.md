@@ -12,7 +12,7 @@
 5. **PBD and closure (8 min):** Gallery walk: groups present instruments, give feedback and vote for five creative products.
 
 **Differentiation:** Let pupils contribute through making, presenting or narrating according to their strengths.
-**PBD:** Record evidence from the identified reading, writing, listening, speaking or creative output; note pupils needing support.
+**PBD:** Teacher observes an imaginative instrument presentation linked to Serenade and checks two understandable descriptive details, including materials or sound; pupils respond to one peer question.
 **Workbook:** Not prescribed for this Language Arts lesson.
 **Audio:** No English Plus CD track is prescribed for this non-textbook lesson.
 **QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.

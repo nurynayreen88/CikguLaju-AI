@@ -12,7 +12,7 @@
 5. **PBD and closure (8 min):** Review frequency adverbs; assess main listening ideas and correct spelling.
 
 **Differentiation:** Pause after each speaker for pupils needing support.
-**PBD:** Record evidence from the identified reading, writing, listening, speaking or creative output; note pupils needing support.
+**PBD:** Teacher checks a correct main idea from CD1-22 and spelling of at least two frequency adverbs; pupils improve one answer after listening again.
 **Workbook:** No activity assigned without page-and-exercise verification.
 **Audio:** Only tracks explicitly identified in the SOW; filenames found in Drive where applicable, playback not verified.
 **QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.

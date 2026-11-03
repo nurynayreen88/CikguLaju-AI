@@ -11,7 +11,7 @@
 4. **Activity 3 (17 min):** Listen to CD 1-17 for Activity 3 and identify each speaker's topic; listen again for Activity 4 details.
 5. **Assessment and closure (8 min):** Reflect on learning with Post-lesson Task 10; assess specific listening details and spelling.
 
-**PBD:** Record task-specific evidence as Independent / With support / Needs reteaching.
+**PBD:** Teacher checks two details identified from CD1-17 and the accurate spelling of two target words; pupils replay and correct one answer where needed.
 **Differentiation:** Pupils who need support may answer only Activity 4 questions 1–3 after hearing all four interviews.
 **Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
 **Audio / lesson type:** Audio files identified by name, content not listened.
