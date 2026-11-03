@@ -1,9 +1,23 @@
-# English Year 5 Lesson 94 - Consolidation 9
+# English Year 5 — Lesson 94 (Consolidation 9)
 
-SOW printed p.134. Topic: Food and health.
-Main and complementary standards: Writing 4.2.3; Speaking 2.2.2.
-References: Student Book p.55 Activities 4-5; Teacher Book p.69.
+**Status:** DRAF — pending full source QA. **Topic:** Food and health. **Main LS:** Writing 4.2.3. **Complementary LS:** Speaking 2.2.2. **Time:** 60 minutes (suggested).
 
-Teaching and learning: Pupils review quantifiers, discuss food waste and complete the book activities. Groups agree on a shopping list for a celebration and share it. SOW heading says Reading but main standard is Writing; verify manually.
+**Materials:** English Plus 1 SB p.55 Activities 4–5 and Finished?; TB p.69. Workbook mapping and audio content (where applicable) not independently verified.
 
-PBD: Teacher checks oral and written responses. Differentiation: prompts, pair support and extra time. Workbook exercise unverified. Draft pending final QA.
+**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+
+**Set induction (5 min):** Pupils complete a food-word Memory Chain using a, an and some.
+
+**Activity 1 (15 min):** Pupils complete Activity 4, selecting accurate quantifiers from three choices in each gap, then explain how they selected some, any, much or many.
+
+**Activity 2 (15 min):** Pupils complete Activity 5 and discuss food waste, including money, resources and the needs of other people.
+
+**Activity 3 (15 min):** Small groups agree on a celebration, food and drink choices and quantities. They create a labelled shopping list and read it to the class.
+
+**PBD (5 min):** Teacher checks the clear shopping list with quantities and observes whether each group agrees roles and steps before producing it.
+
+**Closure (5 min):** Class surveys foods and drinks they usually or never have.
+
+**Differentiation:** Provide a food/quantifier bank; extend with a reasoned plan to reduce waste.
+
+**Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
