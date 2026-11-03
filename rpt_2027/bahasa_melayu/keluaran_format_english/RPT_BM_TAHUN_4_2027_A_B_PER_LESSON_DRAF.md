@@ -38,7 +38,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 | **Lesson 006** (BM4-P006) | Kemasyarakatan; U1: Jiran Tetangga | Program Kebun Komuniti | 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera. | 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa | BT m/s 5 | Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan |
 | **Lesson 007** (BM4-P007) | Kemasyarakatan; U1: Jiran Tetangga | Yang Tua Dihormati, Yang Muda Disayangi | 5.1 Memahami dan menggunakan golongan kata mengikut konteks. | 5.1.1 (i) — Memahami dan menggunakan kata nama mengikut konteks tidak formal | BT m/s 6 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 008** (BM4-P008) | Kemasyarakatan; U2: Prihatinnya Kita | Terima Kasih, Cikgu | 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal. | 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal | BT m/s 7 | Mendengar / Bertutur; Pemerhatian respons lisan |
-| **Lesson 009** (BM4-P009) | Kemasyarakatan; U2: Prihatinnya Kita | Kita Lakukan Bersama-sama + PKJR | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 | BT m/s 8-9 | Membaca; Bacaan dan soalan pemahaman |
+| **Lesson 009** (BM4-P009) | Kemasyarakatan; U2: Prihatinnya Kita | Kita Lakukan Bersama-sama + PKJR | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran. | BT m/s 8-9 | Membaca; Bacaan dan soalan pemahaman |
 
 ### M04 • A: 24/01–28/01 | B: 25/01–29/01
 
@@ -120,8 +120,8 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 |---|---|---|---|---|---|---|
 | **Lesson 043** (BM4-P043) | Keselamatan; U7: Waspada Selalu | Hindari Laluan Bahaya | 5.1 Memahami dan menggunakan golongan kata mengikut konteks. | 5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks | BT m/s 50 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 044** (BM4-P044) | Keselamatan; U8: Hargai Diri | Fikirlah Dahulu | 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul. | 1.3.1 — Bercerita dengan sebutan dan intonasi yang sesuai | BT m/s 51 | Mendengar / Bertutur; Pemerhatian respons lisan |
-| **Lesson 045** (BM4-P045) | Keselamatan; U8: Hargai Diri | Bahaya Penyakit Rabies | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 | BT m/s 52 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 046** (BM4-P046) | Keselamatan; U8: Hargai Diri | Jangan Dedah Maklumat | 3.3 Menghasilkan penulisan. | 3.3.1 | BT m/s 53 | Menulis; Semakan bahan bertulis |
+| **Lesson 045** (BM4-P045) | Keselamatan; U8: Hargai Diri | Bahaya Penyakit Rabies | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran. | BT m/s 52 | Membaca; Bacaan dan soalan pemahaman |
+| **Lesson 046** (BM4-P046) | Keselamatan; U8: Hargai Diri | Jangan Dedah Maklumat | 3.3 Menghasilkan penulisan. | 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif. | BT m/s 53 | Menulis; Semakan bahan bertulis |
 | **Lesson 047** (BM4-P047) | Keselamatan; U8: Hargai Diri | Gurindam Leka Bermain | 4.4 Mengaplikasikan, menghayati dan menghasilkan unsur keindahan dalam seni tulisan jawi. | 4.4.2 — Mempersembahkan keindahan seni tulisan jawi melalui simpulan bahasa | BT m/s 54 | Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan |
 
 ### M13 • A: 04/04–08/04 | B: 05/04–09/04
@@ -132,7 +132,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 | **Lesson 049** (BM4-P049) | Keselamatan; U8: Hargai Diri | Beringat ketika Menonton | 5.1 Memahami dan menggunakan golongan kata mengikut konteks. | 5.1.3 (iv) — Memahami dan menggunakan kata adjektif mengikut konteks | BT m/s 56 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 050** (BM4-P050) | Keselamatan; U9: Patuh dan Selamat | Pemandu Bijak + PKJR | 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul. | 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai | BT m/s 57 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 051** (BM4-P051) | Keselamatan; U9: Patuh dan Selamat | Nasihat Ayah Bonda | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera. | 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera | BT m/s 58 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 052** (BM4-P052) | Keselamatan; U9: Patuh dan Selamat | Makanan Selamat | 3.3 Menghasilkan penulisan. | 3.3.1 | BT m/s 59 | Menulis; Semakan bahan bertulis |
+| **Lesson 052** (BM4-P052) | Keselamatan; U9: Patuh dan Selamat | Makanan Selamat | 3.3 Menghasilkan penulisan. | 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif. | BT m/s 59 | Menulis; Semakan bahan bertulis |
 
 ### M14 • A: 11/04–15/04 | B: 12/04–16/04
 
@@ -199,7 +199,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 |---|---|---|---|---|---|---|
 | **Lesson 082** (BM4-P082) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi | Suri Teladan | 5.2 Memahami dan menggunakan bentuk kata mengikut konteks. | 5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks | BT m/s 93 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
 | **Lesson 083** (BM4-P083) | Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku | Jelajah Merdeka + PKJR | 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan. | 1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif | BT m/s 95 | Mendengar / Bertutur; Pemerhatian respons lisan |
-| **Lesson 084** (BM4-P084) | Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku | Megahnya Jalur Gemilang | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 | BT m/s 96-97 | Membaca; Bacaan dan soalan pemahaman |
+| **Lesson 084** (BM4-P084) | Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku | Megahnya Jalur Gemilang | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran. | BT m/s 96-97 | Membaca; Bacaan dan soalan pemahaman |
 | **Lesson 085** (BM4-P085) | Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku | Idola di Litar | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif | BT m/s 98 | Menulis; Semakan bahan bertulis |
 
 ### M21 • A: 13/06–17/06 | B: 14/06–18/06
@@ -225,11 +225,11 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 
 | Lesson | Tema / Unit | Aktiviti khusus | SK (DSKP) | SP (DSKP) | BT / BA | Catatan / PBD |
 |---|---|---|---|---|---|---|
-| **Lesson 095** (BM4-P095) | Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan | Tisu Jalur Gemilang | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 | BT m/s 108 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 096** (BM4-P096) | Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan | “Aku Sehelai Tisu”. | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 | BT m/s 108 | Membaca; Bacaan dan soalan pemahaman • DRAF / AKTIVITI BERBEZA; PASTIKAN PdP BERASINGAN |
+| **Lesson 095** (BM4-P095) | Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan | Tisu Jalur Gemilang | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran. | BT m/s 108 | Membaca; Bacaan dan soalan pemahaman |
+| **Lesson 096** (BM4-P096) | Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan | “Aku Sehelai Tisu”. | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran. | BT m/s 108 | Membaca; Bacaan dan soalan pemahaman • DRAF / AKTIVITI BERBEZA; PASTIKAN PdP BERASINGAN |
 | **Lesson 097** (BM4-P097) | Sains, Teknologi dan Inovasi; U16: Kehebatan Sains | Meluncur di Udara | 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul. | 1.3.1 — Bercerita dengan sebutan dan intonasi yang sesuai | BT m/s 109-110 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 098** (BM4-P098) | Sains, Teknologi dan Inovasi; U16: Kehebatan Sains | Balai Cerap di Rumah | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera. | 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera | BT m/s 111 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 099** (BM4-P099) | Sains, Teknologi dan Inovasi; U16: Kehebatan Sains | Kuasa Kentang | 3.3 Menghasilkan penulisan. | 3.3.1 | BT m/s 112 | Menulis; Semakan bahan bertulis |
+| **Lesson 099** (BM4-P099) | Sains, Teknologi dan Inovasi; U16: Kehebatan Sains | Kuasa Kentang | 3.3 Menghasilkan penulisan. | 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif. | BT m/s 112 | Menulis; Semakan bahan bertulis |
 
 ### M24 • A: 04/07–08/07 | B: 05/07–09/07
 
@@ -304,7 +304,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 |---|---|---|---|---|---|---|
 | **Lesson 132** (BM4-P132) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Hasil Kita Berbeza | 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan. | 1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif | BT m/s 152 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 133** (BM4-P133) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Lokasi Unik dan Istimewa + PKJR | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera. | 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera | BT m/s 153 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 134** (BM4-P134) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Aku Sebatang Pokok Kelapa Sawit | 3.3 Menghasilkan penulisan. | 3.3.1 | BT m/s 154-155 | Menulis; Semakan bahan bertulis |
+| **Lesson 134** (BM4-P134) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Aku Sebatang Pokok Kelapa Sawit | 3.3 Menghasilkan penulisan. | 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif. | BT m/s 154-155 | Menulis; Semakan bahan bertulis |
 | **Lesson 135** (BM4-P135) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Harum Bagai Kasturi | 4.4 Mengaplikasikan, menghayati dan menghasilkan unsur keindahan dalam seni tulisan jawi. | 4.4.2 — Mempersembahkan keindahan seni tulisan jawi melalui simpulan bahasa | BT m/s 156 | Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan |
 | **Lesson 136** (BM4-P136) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Uniknya Pasar Terapung | 5.1 Memahami dan menggunakan golongan kata mengikut konteks. | 5.1.4 (iii), (iv) — Memahami dan menggunakan kata tugas mengikut konteks | BT m/s 157 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 
@@ -315,7 +315,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 | **Lesson 137** (BM4-P137) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi | Jualan di Awan Biru | 5.2 Memahami dan menggunakan bentuk kata mengikut konteks. | 5.2.1 — Memahami dan menggunakan kata berimbuhan mengikut konteks | BT m/s 158 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 138** (BM4-P138) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita | Mawar Mekar | 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan. | 1.2.1 — Bertutur untuk menilai, dan memberikan alasan tentang sesuatu perkara secara bertatasusila mengikut konteks | BT m/s 159 | Mendengar / Bertutur; Pemerhatian respons lisan • Semak tajuk penuh |
 | **Lesson 139** (BM4-P139) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita | Kuih Bulan Yaya + PKJR | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera. | 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai | BT m/s 160 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 140** (BM4-P140) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita | Tuah Musim Kemarau | 3.3 Menghasilkan penulisan. | 3.3.1 | BT m/s 161 | Menulis; Semakan bahan bertulis |
+| **Lesson 140** (BM4-P140) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita | Tuah Musim Kemarau | 3.3 Menghasilkan penulisan. | 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif. | BT m/s 161 | Menulis; Semakan bahan bertulis |
 
 ### M33 • A: 12/09–16/09 | B: 13/09–17/09
 
@@ -334,7 +334,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 | **Lesson 146** (BM4-P146) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan | Bantu Ibu Berjimat | 5.2 Memahami dan menggunakan bentuk kata mengikut konteks. | 5.2.3 (i), (ii) — Memahami dan menggunakan kata ganda mengikut konteks | BT m/s 168 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 147** (BM4-P147) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan | Berhemat untuk Bercuti | 5.3 Memahami dan membina ayat mengikut konteks. | 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks | BT m/s 169 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 148** (BM4-P148) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan | Imaginasi Jadi Realiti | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera. | 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai | BT m/s 170 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 149** (BM4-P149) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan | Jika Aku Kaya + PKJR | 3.3 Menghasilkan penulisan. | 3.3.1 | BT m/s 171 | Menulis; Semakan bahan bertulis |
+| **Lesson 149** (BM4-P149) | Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan | Jika Aku Kaya + PKJR | 3.3 Menghasilkan penulisan. | 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif. | BT m/s 171 | Menulis; Semakan bahan bertulis |
 
 ### M35 • A: 26/09–30/09 | B: 27/09–01/10
 
@@ -352,7 +352,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 |---|---|---|---|---|---|---|
 | **Lesson 155** (BM4-P155) | Integriti; U25: Tanggungjawab Digalas | Insan Contoh | 5.3 Memahami dan membina ayat mengikut konteks. | 5.3.3 — Memahami dan membina ayat aktif | BT m/s 180 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
 | **Lesson 156** (BM4-P156) | Integriti; U26: Ibarat Pedang | Hari Minggu Saya | 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul. | 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai | BT m/s 181 | Mendengar / Bertutur; Pemerhatian respons lisan |
-| **Lesson 157** (BM4-P157) | Integriti; U26: Ibarat Pedang | Rancang Masa Cuti + PKJR | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 | BT m/s 182 | Membaca; Bacaan dan soalan pemahaman |
+| **Lesson 157** (BM4-P157) | Integriti; U26: Ibarat Pedang | Rancang Masa Cuti + PKJR | 2.2 Membaca, memahami, dan menaakul bahan multimedia. | 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran. | BT m/s 182 | Membaca; Bacaan dan soalan pemahaman |
 | **Lesson 158** (BM4-P158) | Integriti; U26: Ibarat Pedang | Kejayaanku | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia | BT m/s 183 | Menulis; Semakan bahan bertulis • Semak tajuk penuh |
 | **Lesson 159** (BM4-P159) | Integriti; U26: Ibarat Pedang | Kuiz Pintar Ayat | 5.3 Memahami dan membina ayat mengikut konteks. | 5.3.4 — Memahami dan membina ayat susunan biasa dan susunan songsang | BT m/s 184 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 
