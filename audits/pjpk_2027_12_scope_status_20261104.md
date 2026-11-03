@@ -2,7 +2,7 @@
 **Audit terakhir:** 4 November 2026
 **Status umum:** DRAF / STAGING, **BUKAN READY**. Tiada penggabungan ke `main`, pengubahsuaian DB atau deployment.
 
-## Inventori 201 fail RPH yang disimpan dalam PR #169
+## Inventori 210 fail RPH yang disimpan dalam PR #169
 
 | Tahun | Komponen | Fail RPH draf | Status / sumber | Punca belum READY |
 |---|---|---:|---|---|
@@ -11,15 +11,15 @@
 | 2 | PJ | **41** = 37 asal + 4 sisipan akuatik | [RPT staging 37+4](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit), DSKP T2 | Pengesahan isi/Word A4, keselamatan kolam, jadual/takwim; empat sisipan tidak diluluskan. |
 | 2 | PK | **18** | [PR #15 — editorial sumber 7+11](https://github.com/nurynayreen88/CikguLaju-AI/pull/15), DSKP T2 | ID sumber belum terikat kepada PdP 2027; rekod pasangan (2232,2352) dan (2252,2353) mungkin bertindih. |
 | 3 | PJ | **38** | [RPT Tahun 3 v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) | Semakan teks dan pelaksanaan, 1 halaman A4, bot. |
-| 3 | PK | 0 | [RPT PK Tahun 3 2026](https://docs.google.com/document/d/1L1Jw_XaaZuZF19PSWFxr7b78rejDg3EB/edit) tersedia | Belum dipetakan kepada PdP unik 2027; sumber asal ada baris bertindan berdasarkan tahap penguasaan. |
+| 3 | PK | **9 draf tematik SK** | [RPT PK Tahun 3 2026](https://docs.google.com/document/d/1L1Jw_XaaZuZF19PSWFxr7b78rejDg3EB/edit) dan DSKP T3 | Sembilan SK (1.1 hingga 9.1) ada RPH calon tanpa ID PdP; baris RPT 2026 bertindan berdasarkan tahap penguasaan. Belum ada nombor PdP 2027 sah. |
 | 4 | PJ | **34** | [Indeks v54](https://docs.google.com/document/d/1DjQSztYXVGUes94T0xt3EEMCkAeDNrGXq6-SBzfvsdU/edit) dan DSKP T4 | Sebahagian halaman buku teks belum sah; semak kesesuaian aktiviti, A4, bot. |
 | 4 | PK | 0 | DSKP T4 tersedia | Belum ada RPT 2027 PK yang dipetakan semuka/diendors. |
 | 5 | PJ | **33** | Indeks v54 dan DSKP T5 | Sesi dengan SP berulang perlukan objektif berbeza; halaman, A4, bot. |
 | 5 | PK | **3** | [PR #15 — editorial PK Tahun 5](https://github.com/nurynayreen88/CikguLaju-AI/pull/15), DSKP T5 | Identiti PdP 2027 dan ujian hujung-ke-hujung belum sah. |
-| 6 | PJ | **34** | Indeks v54 dan DSKP T6 | **PdP 033**: SP 5.2.2 tidak mempunyai SK 5.2 pada entri RPT; semak SK/SP, A4, bot. |
+| 6 | PJ | **34** | Indeks v54 dan DSKP T6 | **PdP 033**: SP 5.2.2 tidak mempunyai SK 5.2 pada entri RPT dan teks 5.2.2 RPT 2026 bercanggah dengan DSKP T6; **konflik sumber**, semak sebelum penerbitan, A4, bot. |
 | 6 | PK | 0 | DSKP T6 tersedia | RPT dan RPH standalone PK belum dilengkapkan. |
 
-**Jumlah:** 180 PJ + 21 PK = **201 fail**; tambahan dua fail audit dalam PR #169 sebelum matriks ini. Angka ialah **fail DRAF**, bukan bilangan RPH diluluskan atau digunakan dalam produksi.
+**Jumlah:** 180 PJ + 30 PK = **210 fail**; diiringi fail audit dan matriks. Angka ialah **fail DRAF**, termasuk empat sisipan akuatik serta sembilan draf tematik PK3 tanpa ID PdP 2027. **Bukan** jumlah RPH diluluskan atau aktif dalam produksi.
 
 ## Perkara sudah diuji secara statik
 
@@ -27,6 +27,7 @@
 - Tahun 3 PJ: 38/38 PdP struktur, SK dan SP mempunyai hubungan kod yang konsisten; kod SP wujud dalam teks DSKP Tahun 3. Fail draf diwujudkan 001–038.
 - Tahun 2 PJ: 37 asal dan 4 akuatik mempunyai kod SP DSKP dan padanan awalan SK; **empat akuatik bukan pelajaran diluluskan**.
 - Tahun 2/5 PK: 21 fail dihasilkan daripada rekod editorial sebelum ini; status `production_ready=false` dikekalkan dalam sumber. **ID sumber bukan nombor Lesson**.
+- Tahun 3 PK: 9 RPH calon berdasarkan SK 1.1–9.1 dalam DSKP T3, termasuk SK 5.1 pengurusan konflik yang tidak kelihatan sebagai kod eksplisit dalam teks RPT 2026; tiada ID PdP 2027 diandaikan.
 - **31** rujukan halaman buku teks PJ Tahun 4–6 masih bertanda belum disahkan dalam RPT staging (jangan isi nombor secara anggaran).
 
 ## Punca gerbang tidak boleh diluluskan
