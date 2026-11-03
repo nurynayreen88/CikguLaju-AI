@@ -173,7 +173,7 @@ Rekod calon: **165** termasuk **5 baris pengulangan** yang dikekalkan untuk audi
 | BM6-P161 | 37 | M37 | 2027-10-10–2027-10-14 | 2027-10-11–2027-10-15 | Integriti; U27: Kejujuran Asas Jati Diri | 3.3.1 | Menulis; Semakan bahan bertulis | BT m/s 205 | — | DRAF |
 | BM6-P162 | 37 | M37 | 2027-10-10–2027-10-14 | 2027-10-11–2027-10-15 | Integriti; U27: Kejujuran Asas Jati Diri | 5.3.2 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT m/s 206 | — | DRAF |
 | BM6-P163 | 37 | M37 | 2027-10-10–2027-10-14 | 2027-10-11–2027-10-15 | Integriti; U27: Kejujuran Asas Jati Diri | 3.3.1 | Menulis; Semakan bahan bertulis | BT m/s 207 | — | DRAF |
-| BM6-P164 | 38 | M38 | 2027-10-17–2027-10-21 | 2027-10-18–2027-10-22 | Integriti; U27: Kejujuran Asas Jati Diri | 2.3.1 | Membaca; Bacaan dan soalan pemahaman | BT m/s 20 | — | DRAF |
+| BM6-P164 | 38 | M38 | 2027-10-17–2027-10-21 | 2027-10-18–2027-10-22 | Integriti; U27: Kejujuran Asas Jati Diri | 2.3.1 | Membaca; Bacaan dan soalan pemahaman | BT m/s 20 DALAM RPT 2026 — HALAMAN MERAGUKAN / SEMAK | — | DRAF / HALAMAN BT MERAGUKAN |
 | BM6-P165 | 38 | M38 | 2027-10-17–2027-10-21 | 2027-10-18–2027-10-22 | Integriti; U27: Kejujuran Asas Jati Diri | 1.3.1 | Mendengar/Bertutur; Pemerhatian respons lisan | BT m/s 209 | — | DRAF |
 
 ## Syarat penerbitan READY
