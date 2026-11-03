@@ -24,6 +24,15 @@ class Year4RuntimeTests(unittest.TestCase):
         self.assertNotIn("QA status:", text)
         self.assertIn("Class CD1 Track 3", text)
 
+    def test_non_textbook_project_lessons_do_not_leak_draft_status(self):
+        for lesson in (80, 160):
+            with self.subTest(lesson=lesson):
+                text = self.runtime._local_rph_text({"year": "Tahun 4", "subject": "English", "lesson_no": lesson})
+                self.assertNotEqual(text, "GENERIC")
+                self.assertNotIn("Status: DRAFT", text)
+                self.assertNotIn("**Status:**", text)
+                self.assertIn("Project-Based Learning", text)
+
     def test_other_subject_and_year_fall_back(self):
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 4", "subject": "Mathematics", "lesson_no": 1}), "GENERIC")
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 5", "subject": "English", "lesson_no": 1}), "GENERIC")
