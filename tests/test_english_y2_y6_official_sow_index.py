@@ -17,6 +17,8 @@ class EnglishY2Y6OfficialSOWAudit(unittest.TestCase):
     def test_official_exceptions_not_misrepresented(self):
         self.assertEqual(LEDGER["lessons"]["2/160"]["focus"],"Language Arts 42")
         self.assertEqual(LEDGER["lessons"]["3/93"]["main_ls"],"3.2.1")
+        self.assertIn("Welcome", LEDGER["lessons"]["3/20"]["issue"])
+        self.assertEqual(LEDGER["lessons"]["3/20"]["main_ls"], "4.3.3")
         self.assertIsNone(LEDGER["lessons"]["3/61"]["complementary_ls"])
         self.assertEqual(LEDGER["lessons"]["4/157"]["complementary_ls"],"3.2.3")
         self.assertEqual(LEDGER["lessons"]["5/141"]["complementary_ls"],"4.2.4")

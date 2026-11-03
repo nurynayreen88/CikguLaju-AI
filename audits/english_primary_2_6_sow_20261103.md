@@ -15,3 +15,5 @@
 Semua audit automatik ialah pemeriksaan kod dan inventori, **bukan** semakan buku/Workbook/audio, pentaksiran, kesesuaian satu halaman A4, atau kelulusan guru. Menandakan semua Lesson READY memerlukan bukti tambahan per Lesson.
 
 Indeks mesin: `audits/english_primary_2_6_official_sow_index_20261103.json`. CI: `tests/test_english_y2_y6_official_sow_index.py`.
+
+**Ketidakselarasan tajuk bercetak SOW Tahun 3 Lesson 20:** Lajur SOW menyebut `Welcome`, tetapi aktiviti sebenar, susunan unit sebelumnya/seterusnya, RPT 2027 dan RPH semuanya berkaitan `Every day` (daily routines). Dikekalkan sebagai tajuk kontekstual `Every day` tanpa mengubah isi SOW rasmi. Ini tidak menjejaskan kod SP 4.3.3 dan 4.3.1.
