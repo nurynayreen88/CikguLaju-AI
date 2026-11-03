@@ -2,7 +2,9 @@
 
 **Tajuk:** Hobi Keluarga  
 **Tema/Unit:** Kekeluargaan • Unit 2: Cerita Keluarga  
-**SK / SP:** 1.1 / 1.1.1 (ii)  
+**SK:** 1.1 Mendengar dan memberikan respons  
+**SP:** 1.1.1 (ii) — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat  
+**SK / SP (rekod ringkas asal):** 1.1 / 1.1.1 (ii)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 7; BA Jilid 1 m/s 9 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** BT m/s 7, gambar kegiatan hobi seperti fotografi dan bermain alat muzik, kad ayat.  

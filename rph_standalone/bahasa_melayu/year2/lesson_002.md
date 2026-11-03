@@ -1,11 +1,14 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — Lesson 002
 
-**Tajuk:** Ceria Pagi — pengukuhan mendengar  
+**Tajuk:** Ceria Pagi  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 1.1 / 1.1.1 (i)  
+**SK:** 1.1 Mendengar dan memberikan respons  
+**SP:** 1.1.1 (i) — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat  
+**SK / SP (rekod ringkas asal):** 1.1 / 1.1.1 (i)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 2–3; BA Jilid 1 m/s 1 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** Buku Teks m/s 2–3, gambar kegiatan pagi rekaan guru dan kad respons.  
+**Catatan penamaan asal:** Ceria Pagi — pengukuhan mendengar — disimpan sebagai rekod editorial, bukan tajuk rasmi RPT.  
 **Fokus:** Sesi susulan pilihan guru bagi pengukuhan frasa; pengulangan dalam RPT 2026 belum diputuskan  
 **Objektif:** Menyebut empat frasa kegiatan pagi daripada rangsangan gambar baharu serta mengenal pasti tiga frasa yang guru sebut tanpa melihat teks.  
 

@@ -2,7 +2,9 @@
 
 **Tajuk:** Ceria Pagi  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 1.1 / 1.1.1 (i)  
+**SK:** 1.1 Mendengar dan memberikan respons  
+**SP:** 1.1.1 (i) — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat  
+**SK / SP (rekod ringkas asal):** 1.1 / 1.1.1 (i)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 2–3; BA Jilid 1 m/s 1 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** Buku Teks m/s 2–3, kad gambar kegiatan rumah, kad frasa dan senarai semak lisan.  

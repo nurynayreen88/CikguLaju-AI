@@ -2,7 +2,9 @@
 
 **Tajuk:** Kenangan Sukaneka  
 **Tema/Unit:** Kekeluargaan • Unit 2: Cerita Keluarga  
-**SK / SP:** 2.1 / 2.1.1 (iii), (iv)  
+**SK:** 2.1 Asas membaca dan memahami  
+**SP:** 2.1.1 (iii), (iv) — Membaca dengan sebutan yang betul dan intonasi yang sesuai  
+**SK / SP (rekod ringkas asal):** 2.1 / 2.1.1 (iii), (iv)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 8; BA Jilid 1 m/s 10–11 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** BT m/s 8, penanda jeda dan kad soalan pemahaman.  

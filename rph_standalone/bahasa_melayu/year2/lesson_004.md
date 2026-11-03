@@ -2,7 +2,9 @@
 
 **Tajuk:** Kek Hari Lahir  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 3.1 / 3.1.1 (i), (ii)  
+**SK:** 3.1 Asas menulis  
+**SP:** 3.1.1 (i), (ii) — Menulis secara mekanis  
+**SK / SP (rekod ringkas asal):** 3.1 / 3.1.1 (i), (ii)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 5; BA Jilid 1 m/s 4–5 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** Buku Teks m/s 5, kad perkataan, lembaran kertas garis dan buku latihan.  

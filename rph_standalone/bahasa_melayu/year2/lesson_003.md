@@ -2,7 +2,9 @@
 
 **Tajuk:** Membeli Bahan Kek  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 2.1 / 2.1.1 (i), (ii)  
+**SK:** 2.1 Asas membaca dan memahami  
+**SP:** 2.1.1 (i), (ii) — Membaca dengan sebutan yang betul dan intonasi yang sesuai  
+**SK / SP (rekod ringkas asal):** 2.1 / 2.1.1 (i), (ii)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 4; BA Jilid 1 m/s 2–3 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** Buku Teks m/s 4, kad kosa kata tentang bahan kek, kad urutan kegiatan membeli-belah.  

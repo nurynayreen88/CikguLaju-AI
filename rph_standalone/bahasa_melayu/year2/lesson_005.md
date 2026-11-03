@@ -1,11 +1,14 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — Lesson 005
 
-**Tajuk:** Kek Hari Lahir + PKJR — pemetaan modul belum disahkan  
+**Tajuk:** Kek Hari Lahir + PKJR  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 3.1 / 3.1.1 (i), (ii)  
+**SK:** 3.1 Asas menulis  
+**SP:** 3.1.1 (i), (ii) — Menulis secara mekanis  
+**SK / SP (rekod ringkas asal):** 3.1 / 3.1.1 (i), (ii)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 5; BA Jilid 1 m/s 4–5 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** BT m/s 5, kad perkataan persiapan keluarga dan buku latihan; modul PKJR belum disahkan.  
+**Catatan penamaan asal:** Kek Hari Lahir + PKJR — pemetaan modul belum disahkan — disimpan sebagai rekod editorial, bukan tajuk rasmi RPT.  
 **Fokus:** Pengukuhan menulis perkataan dan ayat; penanda PKJR wujud dalam RPT 2026 tetapi hasil PKJR perlu disahkan sebelum digunakan  
 **Objektif:** Menulis sekurang-kurangnya empat perkataan dan dua ayat bertema persiapan hari lahir dengan kemas; objektif PKJR belum ditetapkan.  
 

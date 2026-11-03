@@ -2,7 +2,9 @@
 
 **Tajuk:** Kejutan untuk Ibu  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 5.1 / 5.1.1 (i)  
+**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
+**SP:** 5.1.1 (i) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks  
+**SK / SP (rekod ringkas asal):** 5.1 / 5.1.1 (i)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 6; BA Jilid 1 m/s 6–8 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** BT m/s 6, kad perkataan bertema keluarga, empat label kategori dan kertas jawapan.  

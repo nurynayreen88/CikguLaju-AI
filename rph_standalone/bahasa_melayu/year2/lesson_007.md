@@ -1,11 +1,14 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — Lesson 007
 
-**Tajuk:** Kejutan untuk Ibu — aplikasi kata nama am  
+**Tajuk:** Kejutan untuk Ibu  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
-**SK / SP:** 5.1 / 5.1.1 (i)  
+**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
+**SP:** 5.1.1 (i) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks  
+**SK / SP (rekod ringkas asal):** 5.1 / 5.1.1 (i)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 6; BA Jilid 1 m/s 6–8 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** BT m/s 6, gambar keluarga rekaan guru, kad kata nama am, kertas penulisan.  
+**Catatan penamaan asal:** Kejutan untuk Ibu — aplikasi kata nama am — disimpan sebagai rekod editorial, bukan tajuk rasmi RPT.  
 **Fokus:** Sesi susulan guru: menggunakan kata nama am dalam ayat baharu bertema keluarga  
 **Objektif:** Membina empat ayat berlainan menggunakan kata nama am bagi empat kategori dengan kesesuaian konteks.  
 

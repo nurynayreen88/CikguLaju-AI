@@ -1,11 +1,14 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — Lesson 010
 
-**Tajuk:** Bercuti di Bukit Larut + PKJR — modul belum dipadankan  
+**Tajuk:** Bercuti di Bukit Larut + PKJR  
 **Tema/Unit:** Kekeluargaan • Unit 2: Cerita Keluarga  
-**SK / SP:** 3.1 / 3.1.1 (iii)  
+**SK:** 3.1 Asas menulis  
+**SP:** 3.1.1 (iii) — Menulis secara mekanis  
+**SK / SP (rekod ringkas asal):** 3.1 / 3.1.1 (iii)  
 **Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
 **Sumber:** BT Jilid 1 m/s 9; BA Jilid 1 m/s 12 (rujukan sahaja; kandungan belum disahkan)  
 **Bahan:** BT m/s 9, kertas bergaris, penanda ayat dan senarai semak tulisan.  
+**Catatan penamaan asal:** Bercuti di Bukit Larut + PKJR — modul belum dipadankan — disimpan sebagai rekod editorial, bukan tajuk rasmi RPT.  
 **Fokus:** Menulis perenggan secara mekanis tentang percutian keluarga; komponen PKJR menunggu padanan modul  
 **Objektif:** Menyalin satu perenggan lima ayat tentang lawatan keluarga dengan ejaan, jarak perkataan dan tanda baca yang kemas.  
 
