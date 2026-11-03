@@ -1,5 +1,7 @@
 # English Year 5 Lesson 34 — Language Awareness 2
 
+**Official SOW topic:** Towns and cities.
+
 **Official SOW:** Lesson 34, printed p.70. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Teacher selects main/complementary Year 5 DSKP standards based on pupil needs; no fixed SOW codes.
 **Materials:** SB p.20 Activities 3–4, p.21 Activity 5; TB pp.34–35; SOW self-assessment.
