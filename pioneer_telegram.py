@@ -83,7 +83,7 @@ def install(ns):
             return send(cid, "🏆 <b>PENGESAHAN RAKAN PEMBANGUN RM10</b>\n"
                         f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
                         "Semak transaksi masuk dalam TNG Merchant secara manual sebelum lulus.",
-                        [[{"text": "✅ Sahkan Rakan Pembangun", "callback_data": f"admin_approve|{request_id}|{req['chat_id']}"}],
+                        [[{"text": "🔎 Semak Status Kelulusan", "callback_data": f"admin_approve|{request_id}|{req['chat_id']}"}],
                          [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
         return original_card(cid, request_id)
 
@@ -185,14 +185,17 @@ def install(ns):
                     return admin_card(cid, rid)
                 if req.get("notes") != "proof_received_admin_notified":
                     return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Rakan Pembangun.")
-                # Admin has manually verified the bank transaction before clicking Approve.
+                # STAGING SAFETY GATE: this flow has no independently verified TNG\n                # transaction identifier or atomic transaction claim. Never grant\n                # lifetime access based on a generated UUID alone.\n                return send(cid,\n                    "⛔ Kelulusan Rakan Pembangun melalui laluan ini ditangguhkan.\\n"\n                    "Rujukan transaksi TNG sebenar belum disahkan secara atomik.\\n"\n                    "Permohonan kekal pending; jangan minta pengguna bayar semula.")\n                # Admin has manually verified the bank transaction before clicking Approve.
                 try:
                     # Reconcile only an active entitlement tied to this exact payment.
                     uid = int(req["chat_id"])
                     # Local SQLite payment IDs may restart after deployment.
                     # Scope new references to both user and request; preserve old
                     # references for existing entitlements without modifying them.
-                    # A random immutable reference prevents collisions even if the\n                    # local SQLite payment counter restarts for the same user.\n                    import uuid\n                    reference = f"pioneer-payment:{uid}:{uuid.uuid4().hex}"
+                    # A random immutable reference prevents collisions even if the
+                    # local SQLite payment counter restarts for the same user.
+                    import uuid
+                    reference = f"pioneer-payment:{uid}:{uuid.uuid4().hex}"
                     existing = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{uid}&select=entitlement,payment_reference,revoked_at") or []
                     already_granted = any(
                         row.get("entitlement") == "PIONEER_LIFETIME"
