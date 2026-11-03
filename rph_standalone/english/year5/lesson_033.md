@@ -13,6 +13,8 @@
 
 **Differentiation:** Let pupils contribute through making, presenting or narrating according to their strengths.
 **PBD:** Record evidence from the identified reading, writing, listening, speaking or creative output; note pupils needing support.
-**Workbook:** No activity assigned without page-and-exercise verification.
-**Audio:** Only tracks explicitly identified in the SOW; filenames found in Drive where applicable, playback not verified.
+**Workbook:** Not prescribed for this Language Arts lesson.
+**Audio:** No English Plus CD track is prescribed for this non-textbook lesson.
 **QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
