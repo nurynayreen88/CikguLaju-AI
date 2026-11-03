@@ -32,4 +32,4 @@ Pupils complete the Unit 6 self-assessment and revise a language point they need
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
 
-**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.
+**QA status:** DRAF — teacher-selected learning standards and classroom activities require teacher approval; applicable book/audio, Word/PDF and Telegram delivery checks remain pending. Do not expose as FINAL READY.
