@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.40 Activities 1–3 and 7; TB p.54; CD1.37. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the Wild Life activities. Complementary (Reading 3.3.1) — pupils read and enjoy A2 fiction/ non-fiction print and digital texts of interest in the linked reading task.
 
 **Set induction (5 min):** Class recalls animal vocabulary in an ABC game.
 

@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.45 Activities 1–3; TB p.59; CD1.41; verb flashcards. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the Learning World activities. Complementary (Listening 1.3.1) — pupils guess the meaning of unfamiliar words from clues provided by other known words in the linked listening task.
 
 **Set induction (5 min):** Pupils recall facts about schools around the world from the previous reading.
 

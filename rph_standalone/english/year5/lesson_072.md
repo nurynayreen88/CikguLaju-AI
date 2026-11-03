@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.43 Activities 3–5; TB p.57; CD1.39; timetable paper. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Speaking 2.1.1) — pupils give detailed information about themselves in the Learning World activities. Complementary (Writing 4.2.1) — pupils give detailed information about themselves in the linked writing task.
 
 **Set induction (5 min):** Pupils recall school subjects in the ABCs task.
 

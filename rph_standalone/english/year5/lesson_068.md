@@ -4,7 +4,7 @@
 
 **Language focus:** Present simple tense interrogatives: Is it (adjective)? Can it (verb)?. **Materials:** English Plus 1 Student’s Book Activity 4 p.117 Teacher’s Book p.131; audio CD3.34.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives:** Main (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the Wild Life activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.
 
 **Set induction (5 min):** 1. Brainstorm nouns, verbs and adjectives pupils remember from song, I Can Tell You. Write on board.
 

@@ -4,7 +4,7 @@
 
 **Language focus:** Nouns: school subjects; Adjective phrases: good at, great at, not good / great at. **Materials:** SOW-prescribed literary text and BPK CCL guide; audio CD1.38.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Learning objectives:** Main (Listening 1.3.1) — pupils guess the meaning of unfamiliar words from clues provided by other known words in the Learning World activities. Complementary (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the linked reading task.
 
 **Set induction (5 min):** 1. Pupils in pairs answer questions in Think! p.42. Follow instructions in Teacher’s Book p.56.
 

@@ -4,7 +4,7 @@
 
 **Language focus:** Modal auxiliary verbs: can and can’t for ability. **Materials:** SOW-prescribed literary text and BPK CCL guide; audio CD3.34.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives:** Main (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the Wild Life activities. Complementary (Listening 1.2.1) — pupils understand with support the main idea of longer simple texts on a range of familiar topics in the linked listening task.
 
 **Set induction (5 min):** 1. Write on board ‘I can tell you’ and explain this the title of a song. Pupils do Teacher’s Book p.131 Warm up.
 

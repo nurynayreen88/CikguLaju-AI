@@ -4,7 +4,7 @@
 
 **Language focus:** Review of language from Unit 3. **Materials:** English Plus 1 Student’s Book Activities 3, 4, 5 p.41 Teacher’s Book p.55.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives (teacher-selected):** Pupils review language from Unit 3 through the Wild Life activities and complete a unit self-assessment; teacher selects main and complementary DSKP standards.
 
 **Set induction (5 min):** 1. Review language from Unit 3 with an activity from list of pre-lesson tasks.
 

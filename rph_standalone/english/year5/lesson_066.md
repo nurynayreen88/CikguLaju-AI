@@ -4,7 +4,7 @@
 
 **Language focus:** Wild Life. **Materials:** SOW-prescribed literary text and BPK CCL guide.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Wild Life activities. Complementary (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing in the linked writing task.
 
 **Set induction (5 min):** 1. See Pre-lesson Task 5: Sit Down, Stand Up. Say true or false sentences about what you can and can’t do. How many did they guess correctly?
 

@@ -4,7 +4,7 @@
 
 **Language focus:** Present continuous tense affirmative and negative. **Materials:** SOW-prescribed literary text and BPK CCL guide.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Learning objectives:** Main (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the Learning World activities. Complementary (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the linked speaking task.
 
 **Set induction (5 min):** 1. Hold up English Plus 1 book. Point to two photos on cover: Ask: What are they doing? What’s she doing? Pupils respond in sentences. In pairs they find a photo from Units 1–3 and ask partner: What’s he/she doing?
 

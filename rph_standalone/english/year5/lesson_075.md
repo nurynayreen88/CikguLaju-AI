@@ -4,7 +4,7 @@
 
 **Materials:** And Something Weird Happened, Pamela Rushby; BPK CCL Short Stories Guide pp.121–124; coloured paper. Non-textbook Language Arts: no Student Book, Workbook or audio prescribed for this lesson.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the And Something Weird Happened activities. Complementary (Writing 4.3.3) — pupils produce a plan or draft of one or two paragraphs for a familiar topic and modify this appropriately in response to feedback in the linked writing task.
 
 **Set induction (5 min):** Pupils play a Memory Chain by recalling and linking events from Joel's story.
 

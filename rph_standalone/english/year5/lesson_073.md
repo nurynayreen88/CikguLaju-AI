@@ -4,7 +4,7 @@
 
 **Language focus:** Nouns: types of school – primary, secondary, private, public, boarding. **Materials:** English Plus 1 Student’s Book Activities 1, 2, 4 p.44 Teacher’s Book p.58; audio CD1.40.
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Learning objectives:** Main (Reading 3.2.2) — pupils understand specific information and details of two paragraphs or more in the Learning World activities. Complementary (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the linked speaking task.
 
 **Set induction (5 min):** 1. Brainstorm school subjects on board. Pupils answer Think! question, top of p.44.
 
