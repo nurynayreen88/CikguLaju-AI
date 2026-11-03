@@ -32,4 +32,4 @@ Pupils complete the Unit 8 self-assessment and revise a language point they find
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
 
-**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.
+**QA status:** DRAF — teacher-selected learning standards and classroom activities require teacher approval; applicable book/audio, Word/PDF and Telegram delivery checks remain pending. Do not expose as FINAL READY.
