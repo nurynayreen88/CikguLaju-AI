@@ -1,5 +1,7 @@
 # Year 5 Lesson 157 — Reading 27
 
+**Official SOW topic:** Going away.
+
 Status: DRAF. Unit 8. Main LS 3.3.1; complementary LS 3.2.2.
 Materials: Student Book p.111 Activities 1–3; Teacher Book p.125; CD3-32. Workbook mapping and audio playback remain unverified.
 
