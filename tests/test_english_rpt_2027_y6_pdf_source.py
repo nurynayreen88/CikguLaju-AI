@@ -38,7 +38,7 @@ class Year6PublishedRPTSourceGate(unittest.TestCase):
             self.assertRegex(text, r"pp\.28-29")
             self.assertNotIn("Anthology of Poems p.27 — Messing", text)
         self.assertRegex(self.lesson_page(16), r"WB pp\.16-17")
-        self.assertRegex(self.lesson_page(25), r"future-classroom poster")
+        self.assertRegex(self.lesson_page(25), r"future-classroom\s+poster")
         for n in (26,31):
             self.assertRegex(self.lesson_page(n), r"Toes by Judith Nicholls")
             self.assertRegex(self.lesson_page(n), r"p\.30")
