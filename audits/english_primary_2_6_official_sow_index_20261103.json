@@ -1779,9 +1779,15 @@
       "focus": "Reading 12",
       "topic": "Year in, year out",
       "main_ls": "3.2.2",
-      "complementary_ls": null,
+      "complementary_ls": "3.3.1",
       "teacher_selected": false,
-      "issue": "Official SOW prints Complementary Reading CS 3.3 but LS 3.1 (likely truncated); do not invent a fixed second code."
+      "issue": "SOW Year 3 Lesson 61 prints complementary Reading CS 3.3 but LS 3.1 (typographical truncation); explicitly resolved operationally to DSKP 3.3.1 without changing original SOW wording. Keep source discrepancy for provenance.",
+      "verification_basis": "Official SOW Content Standard Reading 3.3 + KPM Year 3 SK DSKP 2018 p.31 / curriculum alignment 2.0 reading table; SOW lesson table prints truncated 3.1.",
+      "verification_sources": [
+        "https://online.anyflip.com/ftfwy/mfgj/files/basic-html/page45.html",
+        "https://www.tcer.my/wp-content/uploads/2021/01/03_DPK-2.0-Bahasa-Inggeris-SK-Tahun-3.pdf",
+        "https://drive.google.com/file/d/1_-uNQsXiNfuorjMD1ObUUhmCi_L1i3L5/view"
+      ]
     },
     "3/62": {
       "n": 62,

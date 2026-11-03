@@ -3,10 +3,10 @@
 ## Disahkan melalui lima SOW rasmi KPM dan RPT 2027 induk
 
 - 800/800 fail Lesson `lesson_001.md`–`lesson_160.md` bagi Tahun 2, 3, 4, 5 dan 6 wujud.
-- Indeks SOW tahun 2–6 berjumlah 800 Lesson. Semua pasangan 766 kod LS tetap yang boleh dibaca lengkap daripada SOW **sepadan** dengan header RPH (160 + 159 + 150 + 151 + 146).
+- Indeks SOW tahun 2–6 berjumlah 800 Lesson. Semua pasangan 766 pasangan LS cetakan SOW + 1 pasangan LS yang disahkan daripada DSKP **sepadan** dengan header RPH (160 + 160 + 150 + 151 + 146).
 - 33/800 Lesson rasmi menyerahkan standard tertentu kepada guru (Y4=10, Y5=9, Y6=14); jangan cipta kod rasmi.
-- 1/800 SOW asal Tahun 3 Lesson 61 mencetak Complementary Reading CS 3.3 tetapi LS 3.1 yang tidak lengkap; RPT memasukkan 3.3.1, namun indeks SOW sengaja tidak meluluskan kod itu tanpa semakan autoritatif.
-- **RPT induk 2027:** 800/800 Lesson hadir, 766 pasangan kod sama seperti SOW, dan 800/800 label focus sepadan. Tiada percanggahan hard-code; pengecualian Y3 L61 dinyatakan.
+- SOW Tahun 3 Lesson 61 mencetak Complementary Reading CS 3.3 dan LS terpotong 3.1. Dokumen DSKP KPM Tahun 3 SK (2018, p.31) dan DPK KPM 2.0 menyenaraikan Reading 3.3.1; RPH serta RPT sedia ada sudah tepat. Indeks kini menggunakan 3.3.1 berdasarkan DSKP, sambil mengekalkan rekod ralat cetakan SOW.
+- **RPT induk 2027:** 800/800 Lesson hadir, 766 pasangan kod sama seperti cetakan SOW dan 1 pasangan tambahan disahkan melalui DSKP, dan 800/800 label focus sepadan. Tiada percanggahan hard-code; cetakan Y3 L61 ditandakan resolved melalui DSKP (bukan pembetulan pada PDF SOW).
 - Pengecualian TOPIC: SOW Tahun 3 Lesson 20 mencetak "Welcome" walaupun aktiviti mengajar daily routines, unit sekeliling "Every day"; RPT dan RPH dikekalkan "Every day".
 
 ## Pembetulan spesifik dikomit melalui PR #159
