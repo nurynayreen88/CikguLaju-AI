@@ -1,17 +1,21 @@
-# Year 5 Lesson 138 — Speaking 24
+# English Year 5 — Standalone RPH — Lesson 138 (Speaking 24)
 
-Status: DRAF. Unit 7, Growing up. SOW Lesson 138. Main LS 2.1.3; complementary LS 4.2.2. Materials: SB p.78 Activity 4; teacher-prepared advice cards.
+**Status:** DRAF — full source-page and teacher QA pending. **Topic:** Growing up. **Main LS:** Speaking 2.1.3. **Complementary LS:** Writing 4.2.2. **Duration:** 60 minutes (suggested). **CCE:** Values.
 
-Objective: Pupils demonstrate both listed standards through the lesson activities.
+**Materials:** English Plus 1 Student's Book p.78 Activity 4; the interview and pop-star photograph; teacher-prepared A/B/C dialogue card and advice prompts; Workbook p.67, Unit 7 Speaking: interview with a famous person, Ex6 (from prior QA mapping).
 
-Set induction (5 min): Set a personal speaking goal.
+**Objective:** Pupils ask for and give advice orally, react appropriately to suggestions, and draft a short written dialogue.
 
-Main activities (40 min): Model What can I do? and Why don't you...? Pupils offer advice, write a three-turn dialogue, act it out and respond to new advice cards. Teacher models instructions and monitors responses.
+**Set induction (5 min):** Teacher revisits the interview role-play. Pupils set a speaking goal, for example clear pronunciation or offering more complete responses.
 
-PBD (10 min): Assess asking, giving and responding to advice orally and in writing. Pupils revise one response based on feedback.
+**Activity 1 — Understand advice (15 min):** Teacher models A: “What can I do?”, B: “Why don't you…?”, and C: “That's a good idea.” Pupils identify the request, the advice and the reaction, then suggest one way the pop star can improve.
 
-Closure (5 min): Share one learning point and complete an exit ticket.
+**Activity 2 — Create the dialogue (15 min):** In pairs, pupils choose ideas from the advice prompts, plan a three-part exchange and write their own dialogue. Teacher checks questions, advice and suitable reactions, including both positive and negative responses.
 
-Differentiation: Provide visuals and sentence starters for support; require extended responses where appropriate.
+**Activity 3 — Role-play (15 min):** Pairs perform as pop star and interviewer, using intonation and gestures. Listeners identify one suggestion and the pop star's reaction. Pupils swap roles and improve their dialogue.
 
-Verification: Official SOW checked. Workbook mapping and full book/audio QA pending; status remains DRAF.
+**PBD (5 min):** Teacher observes one intelligible request, an appropriate piece of advice, a clear reaction and a written exchange. Pupils improve one utterance after feedback.
+
+**Closure (5 min):** In small groups pupils draw a problem card and give one polite suggestion with a reason.
+
+**Differentiation:** Use the A/B/C cue card for support; extend fluent pupils with alternative advice. **Workbook:** Ex6 may be used as brief additional practice, not as a replacement for the SOW role-play. **QA:** Printed pages and final A4 layout still require approval; not READY.
