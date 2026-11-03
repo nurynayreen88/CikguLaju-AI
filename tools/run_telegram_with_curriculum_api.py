@@ -15,6 +15,16 @@ ENGLISH_Y2_WORKBOOK_BRIDGE_ACTIVE = install_english_y2_workbook(telegram_runtime
 from web.english_y4_standalone_runtime import install as install_english_y4_standalone
 ENGLISH_Y4_STANDALONE_ACTIVE = install_english_y4_standalone(telegram_runtime)
 
+# Year 6 standalone RPH is applied at the existing Word/PDF row renderer.
+# The original credit gate, lesson navigation and fallback remain unchanged.
+try:
+    from web.english_y6_standalone_runtime import install as install_english_y6_rph
+    ENGLISH_Y6_RPH_2027_ACTIVE = install_english_y6_rph(telegram_runtime)
+except Exception as _y6_rph_exc:
+    ENGLISH_Y6_RPH_2027_ACTIVE = False
+    print("English Year 6 RPH bridge unavailable:", repr(_y6_rph_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
