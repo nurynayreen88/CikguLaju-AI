@@ -1,15 +1,23 @@
-# English Year 5 Lesson 70: Language Awareness 4
+# English Year 5 — Standalone RPH — Lesson 070 (Language Awareness 4)
 
-Official SOW Lesson 70, printed p.108. Topic: Wild Life. Suggested duration: 60 minutes.
-Standards: No fixed CS/LS in SOW; teacher chooses Year 5 DSKP main and complementary skills.
-Materials: SB p.41 Activities 3-5; TB p.55; SOW Unit 3 self-assessment.
+**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Wild Life. **Main LS:** Teacher selects. **Complementary LS:** Teacher selects. **Duration:** 60 min, suggested.
 
-1. Set induction (8 min): Review language from Unit 3.
-2. Activity 1 (12 min): Groups complete Stand in order in Activity 3.
-3. Activity 2 (15 min): Pairs complete Activity 4 crossword.
-4. Activity 3 (17 min): Complete Activity 5 What am I? and create extra animal clues.
-5. PBD and closure (8 min): Complete Unit 3 self-assessment and identify revision needs.
+**Language focus:** Review of language from Unit 3. **Materials:** English Plus 1 Student’s Book Activities 3, 4, 5 p.41 Teacher’s Book p.55.
 
-PBD: Observe lesson-specific task evidence against the stated skills.
-Differentiation: Allow pupils to use their own language for self-assessment.
-Workbook exercise not yet verified. Audio not independently played. QA: SOW-aligned draft pending source and Word/PDF checks.
+**Objective:** Pupils demonstrate the prescribed skills through specific Wild Life activities and an observable output.
+
+**Set induction (5 min):** 1. Review language from Unit 3 with an activity from list of pre-lesson tasks.
+
+**Activity 1 (22 min):** Write on board ‘Stand in order’ and check pupils understand meaning. Pupils in small groups do p.41, Activity 3. Follow the instructions in Teacher’s Book p.55 Exercise 3. Use L1 as necessary to explain the activity 3. Pupils in pairs do Activity 4.
+
+**Activity 2 (23 min):** Write on board ‘What am I?’ Pupils do Activity 5. Fast finishers can write another 3 What am I? sets of words for a partner to identify a different animal. Check answers after each activity. Ask: Which activity is the most fun to do? Which Activity would you like to do again to review new language?
+
+**PBD (5 min):** Teacher observes whether pupils complete the named activities and communicate a response.
+
+**Closure (5 min):** 5. Pupils think about their learning and performance in this unit. They complete a self-assessment worksheet. 6. Collect worksheets from pupils and review them to note pupils’ responses.
+
+**Workbook practice:** Workbook p.34-35, Unit 3 Progress Review — complete Unit 3 review, Ex1-8. Use as brief follow-up without replacing the SOW tasks.
+
+**Differentiation:** Use a model and partner support as needed; extend confident pupils with an independent task.
+
+**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
