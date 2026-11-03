@@ -12,14 +12,12 @@
 
 **Activity 2 (15 min):** Write on board: ‘Doing an interview. Interviewer/Pop star’. Pupils do Activity 2, CD2.27. Read instructions aloud. Check pupils understand the three things they have to do. Ask: What’s the question you’re going to answer? (Which Key Phrases does the interviewer ask? Which Key Phrases does the pop star ask?) Follow instructions in Teacher’s Book p.92, Exercise 2.
 
-**Activity 3 (15 min):** After listening, check answers by choosing six pupils to read an answer aloud. Choose another six pupils to write number of the Key Phrase beside name of the interviewer or pop star on the board. 5. Pupils do Activity 3. Assign pupils their roles, interviewer or pop star. Choose two or three pairs to act out the interview. Interviewers can mime holding a microphone. Famous people can change their accent to sound older or American.
+**Activity 3 (15 min):** After listening, check answers by choosing six pupils to read an answer aloud. Choose another six pupils to write number of the Key Phrase beside name of the interviewer or pop star on the board. Pupils then complete Activity 3. Assign pupils their roles, interviewer or pop star. Choose two or three pairs to act out the interview. Interviewers can mime holding a microphone. Famous people can change their accent to sound older or American.
 
-**PBD (5 min):** Teacher checks the listening task answers and records who needs a repeated listening.
+**PBD (5 min):** Teacher checks two answers from the heard interview (CD2-27) and observes whether the pupil uses one appropriate past-time question in the pair role-play. Revisit one missed instruction or response.
 
 **Closure (5 min):** Choose a post-lesson task from Section 3 to review content of dialogue.
 
 **Workbook practice (mapped):** p.63,67, Unit 7 past-simple questions + Progress Review questions, Ex1-4 / Ex5. Use briefly; do not replace SOW tasks.
 
 **Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
-
-**Workbook (existing source QA map):** p.63,67, Unit 7 past-simple questions + Progress Review questions, Ex1-4 / Ex5. Optional brief follow-up; do not replace the SOW tasks.

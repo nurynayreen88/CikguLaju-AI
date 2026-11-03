@@ -12,14 +12,12 @@
 
 **Activity 2 (15 min):** Check past tense of verbs in Activity 2. Pupils in pairs do Activity 2, using a dictionary as necessary. Follow instructions in Teacher’s Book p.94, Exercise 2. CCE – Values – Ask pupils if they think it’s important to go to university and to travel. Ask: Why or Why not? Accept some L1 and translate when appropriate.
 
-**Activity 3 (15 min):** Draw a cross and a tick on board. Ask what they do in Activity 4. (cross means use a negative form of the verb; tick means affirmative form.) Do 1 as an example. Pupils do Activity 4. Follow instructions in Teacher’s Book p.94, Exercise 4. 5. Pupils do Activity 5 individually then in pairs. Change 5 from secondary school to primary school. Follow instructions in Teacher’s Book p.94, Exercise 5. Note pupils’ progress when checking meaning of words in text and sentences.
+**Activity 3 (15 min):** Draw a cross and a tick on board. Ask what they do in Activity 4. (cross means use a negative form of the verb; tick means affirmative form.) Do 1 as an example. Pupils do Activity 4. Follow instructions in Teacher’s Book p.94, Exercise 4. Pupils then complete Activity 5 individually and compare answers in pairs. Change 5 from secondary school to primary school. Follow instructions in Teacher’s Book p.94, Exercise 5. Note pupils’ progress when checking meaning of words in text and sentences.
 
-**PBD (5 min):** Teacher observes responses to the prescribed SOW tasks and records an individual improvement.
+**PBD (5 min):** Teacher checks pupils' use of a dictionary or other familiar resource to correct two word meanings in the text, and checks spelling of three past-tense forms. Pupils make one correction after feedback.
 
 **Closure (5 min):** Write on board Activities 1, 2, 4, 5. Pupils in small groups decide which activity was the easiest and which was the hardest to do. They also say which one they liked doing.
 
 **Workbook practice (mapped):** p.64,66, Unit 7 Reading A true story + Progress Review, Ex1-5 / Ex1-4. Use briefly; do not replace SOW tasks.
 
 **Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
-
-**Workbook (existing source QA map):** p.64,66, Unit 7 Reading A true story + Progress Review, Ex1-5 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
