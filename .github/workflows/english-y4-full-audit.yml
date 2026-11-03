@@ -1,0 +1,30 @@
+name: English Year 4 standalone full audit
+on:
+  pull_request:
+    paths:
+      - 'tools/audit_english_y4_standalone.py'
+      - 'rph_standalone/english/year4/**'
+      - '.github/workflows/english-y4-full-audit.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit all 160 lessons and publish findings
+        run: |
+          python tools/audit_english_y4_standalone.py > english_y4_audit_findings.json
+          python - <<'PY'
+          import json
+          from collections import Counter
+          report = json.load(open('english_y4_audit_findings.json'))
+          print('Lessons:', report['total_lessons'])
+          print('Findings:', dict(Counter(x['issue'] for x in report['findings'])))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: english-y4-160-lesson-audit
+          path: english_y4_audit_findings.json
