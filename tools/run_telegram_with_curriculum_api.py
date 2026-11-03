@@ -25,6 +25,17 @@ except Exception as _y6_rph_exc:
     print("English Year 6 RPH bridge unavailable:", repr(_y6_rph_exc), flush=True)
 
 
+# Compact the Year 6 English RPH Word layout only after source creation.
+# The 8pt A4 layout passed eight representative offline Word->PDF samples;
+# content, existing PDF generator, user DB and quota accounting are untouched.
+try:
+    from web.english_y6_word_a4_runtime import install as install_english_y6_word_a4
+    ENGLISH_Y6_WORD_A4_ACTIVE = install_english_y6_word_a4(telegram_runtime)
+except Exception as _y6_word_a4_exc:
+    ENGLISH_Y6_WORD_A4_ACTIVE = False
+    print("English Year 6 Word A4 bridge unavailable:", repr(_y6_word_a4_exc), flush=True)
+
+
 # English Year 5 is a DRAF staging source. Keep production disabled until
 # printed-page/audio/A4 and teacher QA are approved. Opt-in only for controlled tests.
 try:
