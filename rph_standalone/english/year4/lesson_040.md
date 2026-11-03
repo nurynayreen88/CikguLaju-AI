@@ -30,5 +30,6 @@
 
 **PBD:** Check pupils' predictions and evidence from The Curse during independent reading for main Reading SP 3.3.1; observe their spoken explanations of story events for complementary Speaking SP 2.1.4. Workbook story questions are the main written practice, not a substitute for observing independent reading.  
 **Differentiation:** Vary prediction question complexity.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' true/false judgements about Egypt with textual evidence and responses to Track 47 (Reading 3.2.2; Listening 1.2.4).  
 **Differentiation:** Use different versions of the statement worksheet.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

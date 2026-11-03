@@ -28,5 +28,6 @@
 
 **PBD:** Check task responses against Language Arts 5.3.1 and Reading 3.3.1, recording individual progress.  
 **Differentiation:** Offer performance options according to pupils' learning preferences.  
-**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source-content, audio and bot Word/PDF QA pending.
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

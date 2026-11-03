@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' use of dictionaries to establish meanings of unfamiliar dinosaur comparison words for main Reading SP 3.2.4; observe spoken comparisons of dinosaurs with other animals for complementary Speaking SP 2.1.5. Workbook p.71 is the main written comparative practice, not the sole evidence of reading or speaking.  
 **Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — detailed textbook/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

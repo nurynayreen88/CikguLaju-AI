@@ -30,5 +30,6 @@
 
 **PBD:** Assess pupils' complete written answers about the story characters for main Writing SP 4.2.4, including relevant details and sentence accuracy. Check responses to the spoken story on CD1 Track 43 for complementary Listening SP 1.2.3. Workbook p.26 is the main written practice.  
 **Differentiation:** Provide past-verb prompts and partner support.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -30,5 +30,6 @@
 
 **PBD:** Observe each pupil's independent reading of the celebration story for main Reading SP 3.3.1, including identification of supporting story details. Check interpretation of unfamiliar festival words using dictionary entries for complementary Reading SP 3.2.4. Workbook p.35 is the main written practice.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -30,5 +30,6 @@ Pupils complete a follow-up response to The King of Kites using the literature T
 
 **PBD:** Observe completion of the pop-up storyboard, creative response and clarification of construction steps against SP 5.3.1 and 2.2.2.  
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
-**Source:** Primary Year 4 SK Scheme of Work, Lesson 74, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
+**Source:** Primary Year 4 SK Scheme of Work, Lesson 74, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

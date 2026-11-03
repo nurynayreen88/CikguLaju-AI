@@ -28,5 +28,6 @@
 
 **PBD:** Check task responses against Listening 1.2.5 and Listening 1.2.3, recording individual progress.  
 **Differentiation:** Offer shorter or partly ordered sentence strips for support.  
-**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT; direct source-content, audio and bot Word/PDF QA pending.
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

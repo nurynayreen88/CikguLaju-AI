@@ -30,5 +30,6 @@ Pupils revise their health-advice posters using the lesson word bank and diction
 
 **PBD:** Assess the organisation, clarity and revision of pupils' health-advice posters for main Writing SP 4.3.3; check accurate spelling of body-part labels and health advice for complementary Writing SP 4.3.2. Keep the teacher-prepared poster model DRAFT pending source verification.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

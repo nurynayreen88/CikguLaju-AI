@@ -28,5 +28,6 @@
 
 **PBD:** Check true/false listening answers and supporting details from Track 56 (SP 1.2.3 and 1.2.2).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

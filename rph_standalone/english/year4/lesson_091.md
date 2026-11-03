@@ -28,5 +28,6 @@
 
 **PBD:** Check transport details identified from CD2 Tracks 11 and 12 for main Listening SP 1.2.2; assess pupils' short written responses using suitable gerund forms for complementary Writing SP 4.2.3. Workbook p.53 is written practice, not a substitute for listening evidence.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

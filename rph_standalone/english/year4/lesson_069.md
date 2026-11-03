@@ -32,4 +32,5 @@ Pupils complete a follow-up response to The King of Kites using the CCL Short St
 **Differentiation:** Use word banks, modelling, peer support or extension according to pupil needs.  
 **Source:** Primary Year 4 SK Scheme of Work, Lesson 69, https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
-**Status:** DRAFT — direct textbook/audio and Word/PDF QA pending.
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

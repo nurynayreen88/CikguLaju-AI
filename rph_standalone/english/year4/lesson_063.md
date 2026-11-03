@@ -30,5 +30,6 @@ Pupils complete the follow-up literature tasks in The King of Kites CCL Workshee
 
 **PBD:** Check character descriptions from The King of Kites for appropriate adjectives and supporting story details (SP 5.2.1, 4.2.4).  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

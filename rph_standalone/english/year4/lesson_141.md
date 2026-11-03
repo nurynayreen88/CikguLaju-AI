@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' text-supported answers to Part Two story questions and matching of headings for main Reading SP 3.2.2; observe independent reading of the story for complementary Reading SP 3.3.1. Workbook p.82 is the main written past-simple story practice, not the sole reading evidence.  
 **Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

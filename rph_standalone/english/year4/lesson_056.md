@@ -30,5 +30,6 @@
 
 **PBD:** Check each pupil's identification of the main ideas and countries in the printed celebration texts for main Reading SP 3.2.1, and their answers to supporting-detail questions in Activity 2 for complementary Reading SP 3.2.2. Workbook p.35 is the main written practice, not the sole reading evidence.  
 **Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -28,5 +28,6 @@
 
 **PBD:** Check pupils' answers supported by specific details in the sports text for main Reading SP 3.2.2; assess their identification of the overall main idea and justified title choice for complementary Reading SP 3.2.1. Workbook p.78 provides written comparative practice but does not replace the SB reading task.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

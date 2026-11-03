@@ -39,3 +39,5 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Book:** Non-textbook lesson; teacher-created writing sheet or pupil-made cards
 - **Audio:** None prescribed
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **DRAFT — NOT READY.**
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

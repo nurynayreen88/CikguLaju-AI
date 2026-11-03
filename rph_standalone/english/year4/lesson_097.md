@@ -30,5 +30,6 @@
 
 **PBD:** Check specific helping actions pupils identify from the spoken song (Class CD2 Track 21; TB p.108 verified) for main Listening SP 1.2.2; assess their inference of unfamiliar words from printed lyrics or picture clues for complementary Reading SP 3.2.3. Do not invent a Workbook page; MP3 playback remains untested.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

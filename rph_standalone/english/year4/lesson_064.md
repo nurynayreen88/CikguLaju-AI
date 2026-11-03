@@ -30,4 +30,5 @@
 **Differentiation:** Provide examples, peer support and optional extension practice.  
 **SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
 **Workbook:** If a matching activity is available, use it for optional reinforcement; page and activity have not yet been verified.
-**Status:** DRAFT — textbook and Word/PDF QA pending.
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

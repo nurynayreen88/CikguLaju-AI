@@ -30,5 +30,6 @@ Pupils revise their invitation or report using the model text and a writing chec
 
 **PBD:** Assess pupils' written mini-competition invitations for clear purpose and relevant event details for main Writing SP 4.2.2; check links between ideas and suitable conjunctions in their results report for complementary Writing SP 4.2.5. Teacher-prepared model materials remain DRAFT pending source alignment.  
 **Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — direct book/audio and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -30,5 +30,6 @@
 
 **PBD:** Assess pupils' written description of a recommended transport option for main Writing SP 4.2.1, including relevant fare and departure details; check written reasons supporting the recommendation for complementary Writing SP 4.2.4. Do not add an unverified Workbook activity.  
 **Differentiation:** Provide word banks, examples, partner support and extension tasks as needed.  
-**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
-**Status:** DRAFT — source/audio-content and Word/PDF QA pending.
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.
