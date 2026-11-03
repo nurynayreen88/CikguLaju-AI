@@ -1,0 +1,21 @@
+{
+  "subject": "Matematik",
+  "year": 4,
+  "expected_ids": 83,
+  "counts": {
+    "documents": 83,
+    "a4": 83,
+    "preready_marked": 83,
+    "rpt2026_mentioned": 77,
+    "rpt2027_pending": 83,
+    "activity_book_pending": 77,
+    "required_sections": 83
+  },
+  "findings": [
+    "83 RPH marked PRA-READY, not approved",
+    "83 RPH have outstanding 2027 mapping/approval notes",
+    "77 RPH have unverified activity-book notes"
+  ],
+  "release_allowed": false,
+  "production_mutations": false
+}
