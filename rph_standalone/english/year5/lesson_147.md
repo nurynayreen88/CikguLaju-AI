@@ -1,7 +1,7 @@
 # Year 5 Lesson 147 — Language Arts 25
 
 Status: DRAF. Unit 8; topic: Gulliver's Travels. Official SOW Lesson 147. Main LS 5.2.1; complementary LS 2.1.5.
-Materials: Gulliver's Travels Chapter 5; BPK CCL Graphic Novel guide pp.56–60. Workbook mapping and audio playback not yet verified.
+Materials: Gulliver's Travels Chapter 5; BPK CCL Graphic Novel guide pp.56–60. No Student Book, Workbook or English Plus audio prescribed by this non-textbook Language Arts lesson.
 
 Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
 
@@ -16,3 +16,5 @@ Closure (5 min): Pupils share a learning point and complete an exit response.
 Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
 
 Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
+
+**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
