@@ -163,9 +163,8 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
     lesson = load_lesson(number, root=root)
     if lesson is None or not {main, complementary}.issubset(lesson["source_codes"]):
         return rows
-    # Explicitly retain SOW table / Appendix 1 discrepancy until a source decision.
-    if number == 141:
-        return rows
+    # The official Lesson 141 lesson table takes precedence over its conflicting Appendix 1.
+    # Codes are still required to match this exact lesson's source metadata.
     out = dict(rows)
     out["STANDARD KANDUNGAN"] = ("Main: %s; Complementary: %s" %
                                  (main.rsplit(".", 1)[0], complementary.rsplit(".", 1)[0]))

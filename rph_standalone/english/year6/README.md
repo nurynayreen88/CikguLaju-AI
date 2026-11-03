@@ -4,7 +4,7 @@
 
 These are **draft teaching plans, not FINAL VERIFIED**. The Year 6 SOW and printed Pupil's Book, Teacher's Book, Workbook exercise-by-exercise, and audio tracks still need independent source inspection and teacher approval. The 14 lessons with teacher-selected standards are suggestions, never official fixed CS/LS.
 
-The source-based content exceptions are **Lesson 015 and 021**: the fixed RPT English 2027 cites “Messing About” p.27, but RPT/SOW 2026 lists *The Sandwich* by Tony Bradman pp.28–29. The draft RPH gives the 2026-supported reference while preserving the original RPT reference and discrepancy in `audits/audit_160_rph.csv`. No RPT source file was modified.
+**Lessons 015 and 021 source correction (3 Nov 2026):** The official KPM Year 6 SOW explicitly prescribes *The Sandwich* by Tony Bradman, pp.28–29. The 2027 master RPT Google Sheet was corrected at F656 and F662; the earlier published PDF still requires regeneration. The two draft RPH and official-SOW task overlay now use the Silly Sandwich template and sandwich-sequencing Flow Map respectively. Historical mismatch notes remain in `audits/audit_160_rph.csv` for traceability.
 
 **Do not activate these plans as fully verified teacher downloads until content QA has been approved.** The associated Word and PDF renders (one A4 page per lesson) and 160-page combined PDF are preserved in the project's Drive archive.
 

@@ -84,6 +84,23 @@ class Y6RPHReleaseTests(unittest.TestCase):
             self.assertTrue(entry["objective"].startswith("By the end"))
             self.assertTrue(all("teacher" in activity and "pupils" in activity for activity in entry["activities"]))
 
+    def test_sandwich_literary_activities_follow_official_sow(self):
+        from web.english_y6_standalone_runtime import _overlay
+        for n in (15, 21):
+            lesson = load_lesson(n)
+            self.assertIsNotNone(lesson)
+            self.assertIn("The Sandwich", lesson[0]["materials"])
+            self.assertNotIn("Messing About", lesson[0]["materials"])
+            overlay = _overlay(n, LESSON_ROOT)
+            self.assertIsNotNone(overlay)
+            self.assertIn("SOW", overlay["induction"]["teacher"])
+            self.assertEqual(len(overlay["activities"]), 3)
+        o15 = _overlay(15, LESSON_ROOT)
+        o21 = _overlay(21, LESSON_ROOT)
+        self.assertIn("10", o15["activities"][1]["teacher"])
+        self.assertIn("Flow Map", o21["activities"][0]["teacher"])
+        self.assertIn("punctuation", o21["pbd_evidence"])
+
     def test_missing_overlay_fails_closed_to_existing_rows(self):
         with TemporaryDirectory() as tmp:
             (Path(tmp) / "lesson_001.md").write_text(dummy_source(1), encoding="utf-8")
