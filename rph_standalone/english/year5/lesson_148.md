@@ -1,7 +1,7 @@
 # Year 5 Lesson 148 — Consolidation 15
 
 Status: DRAF. Unit 8; topic: Going away. Official SOW Lesson 148. Main LS 4.3.1; complementary LS 4.2.3.
-Materials: SB p.85 Activities 4–6 and Finished?; TB p.99; CD2-32. Workbook mapping and audio playback not yet verified.
+Materials: SB p.85 Activities 4–6 and Finished?; TB p.99; CD2-32. CD2-32 referenced in SOW for Activity 5; playback untested. Workbook mapping unverified.
 
 Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
 
