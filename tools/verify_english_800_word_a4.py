@@ -16,6 +16,28 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from tools.audit_english_rph_word_a4_layout import from_source,write_word,validate_word_function_snapshot,FIELDS
 from web.english_y6_word_a4_runtime import compact_word_file
+from web.english_y5_standalone_runtime import load_lesson as load_y5_draft, CHOICE_LESSONS
+
+Y2_OVERFLOW = frozenset((2,3,12,13,14))
+Y5_OVERFLOW = frozenset((90,110,136))
+
+def year5_teacher_choice_preview(n):
+    """Offline-only proposal: never install runtime or pretend CS/LS are official."""
+    plan = load_y5_draft(n)
+    if plan is None:
+        raise RuntimeError(f"Y5 teacher-choice L{n} cannot parse from original draft")
+    return {
+        "SET INDUKSI": plan["intro"],
+        "AKTIVITI UTAMA": plan["activities"],
+        "PENTAKSIRAN": plan["pbd"],
+        "PENUTUP": plan["closure"],
+        "BAHAN BANTU MENGAJAR": plan["materials"],
+        "OBJEKTIF PEMBELAJARAN": plan["objective"],
+        "KRITERIA KEJAYAAN": plan["objective"],
+        "STANDARD KANDUNGAN": "Teacher to select from Year 5 DSKP (not fixed by SOW)",
+        "STANDARD PEMBELAJARAN": "Teacher to select and verify against DSKP",
+        "PEMULIHAN / PENGAYAAN": plan["differentiation"]
+    }
 
 def all_text(path):
     d=Document(str(path))
@@ -36,13 +58,20 @@ def main(year,batch_size):
         r={"year":year,"lesson":n,"y5_draft":year==5}
         f=wd/f"Y{year}_L{n:03d}.docx"
         try:
-            data=from_source(year,n)
+            data=(year5_teacher_choice_preview(n) if year==5 and n in CHOICE_LESSONS
+                  else from_source(year,n))
+            r["teacher_choice_preview"]=bool(year==5 and n in CHOICE_LESSONS)
             r["phase_chars"]={k:len(str(data.get(k) or "")) for k in FIELDS}
             write_word(year,n,data,f)
             original=all_text(f)
-            if year==6:
-                if not compact_word_file(str(f)):raise ValueError("Y6 live compact adapter refused DOCX")
-                if all_text(f)!=original:raise ValueError("Y6 compact adapter modified Word content")
+            compact = (year == 6 or (year == 2 and n in Y2_OVERFLOW)
+                       or (year == 5 and n in Y5_OVERFLOW))
+            if compact:
+                if not compact_word_file(str(f)):
+                    raise ValueError("8pt Word compactor refused DOCX")
+                if all_text(f) != original:
+                    raise ValueError("8pt Word compactor modified lesson content")
+            r["layout_adjusted"] = compact
             r["word_chars"]=len(all_text(f))
             r["word_ok"]=True
             files.append(f)
@@ -84,6 +113,9 @@ def main(year,batch_size):
         if r.get("text_extraction_suspect"):stats["suspect_extraction"]+=1
     report={"scope":"AST-matched production Word table builder, Y6 production Word compactor, LibreOffice PDF approximation; no Telegram or native PDF",
             "year":year,"status":"audit only, not READY",
+            "year2_pilot_adjustments":[2,3,12,13,14] if year == 2 else [],
+            "year5_draft_pilot_adjustments":[90,110,136] if year == 5 else [],
+            "year5_choice_preview_not_production":list(sorted(CHOICE_LESSONS)) if year == 5 else [],
             "counts":dict(stats),"non_one_page":[r["lesson"] for r in results if r.get("pages")!=1 or not r.get("a4")],
             "suspect_text":[r["lesson"] for r in results if r.get("text_extraction_suspect")],
             "batches":batches,"lessons":results}
