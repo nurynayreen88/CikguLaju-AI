@@ -38,18 +38,34 @@ def preview():
 
 @app.get("/health")
 def health():
+    mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
+    if mode == "versioned-copy":
+        from web.versioned_catalog_copy import (
+            CurriculumCopyUnavailable, get_verified_web_copy,
+        )
+        try:
+            snapshot = get_verified_web_copy(
+                os.environ.get("CIKGULAJU_WEB_COPY_MANIFEST", ""))
+            return {"status": "preview-only", "database_connected": True,
+                    "curriculum_mode": "versioned-web-copy",
+                    "copy_version": snapshot["version"],
+                    "generation_enabled": False}
+        except (CurriculumCopyUnavailable, OSError):
+            return {"status": "preview-only", "database_connected": False,
+                    "curriculum_mode": "versioned-web-copy",
+                    "generation_enabled": False}, 503
     db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
     connected = False
     if db and Path(db).is_file():
         try:
-            # URI mode=ro guarantees that a health check cannot create or alter the DB.
             from urllib.parse import quote
             uri = "file:" + quote(str(Path(db).resolve()), safe="/:") + "?mode=ro"
             with sqlite3.connect(uri, uri=True, timeout=2) as connection:
                 connected = connection.execute("PRAGMA quick_check(1)").fetchone()[0] == "ok"
         except (sqlite3.Error, OSError, ValueError):
             connected = False
-    return {"status": "preview-only", "database_connected": connected, "generation_enabled": False}
+    return {"status": "preview-only", "database_connected": connected,
+            "generation_enabled": False}
 
 
 @app.get("/api/options")
@@ -78,33 +94,54 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
-        # An explicitly configured authoritative API takes precedence over
-        # any local SQLite snapshot. The source must return verified provenance.
-        source_url = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
-        source_token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
-        if bool(source_url) != bool(source_token):
-            return jsonify({"error": "authoritative curriculum configuration incomplete", "code": "TELEGRAM_CURRICULUM_API_NOT_CONNECTED"}), 503
-        if source_url and source_token:
-            from web.authoritative_http_source import AuthoritativeHttpCurriculumSource
-            from web.authoritative_curriculum_source import SharedSourceUnavailable
+        # A versioned Web copy is opt-in and is never misrepresented as the
+        # active Telegram database. Accounts/quota still use shared Supabase.
+        catalog_mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
+        if catalog_mode == "versioned-copy":
+            from web.versioned_catalog_copy import (
+                CurriculumCopyUnavailable, get_verified_web_copy,
+            )
             try:
-                source = AuthoritativeHttpCurriculumSource(source_url, source_token)
-                if kind == "subjects":
-                    return jsonify(source.list_subjects(year))
-                subject = request.args.get("subject", "")
-                component = request.args.get("component")
-                if kind == "units":
-                    return jsonify(source.list_units(year, subject, component))
-                if kind == "pdp":
-                    return jsonify(source.list_lessons(year, subject, request.args.get("unit", ""), component))
-            except (SharedSourceUnavailable, ValueError):
-                return jsonify({"error": "authoritative curriculum source unavailable", "code": "TELEGRAM_CURRICULUM_API_UNAVAILABLE"}), 503
-        from web.shared_source_provenance import catalog_source_status
-        if not catalog_source_status()["shared_source_verified"]:
-            return jsonify({"error": "shared catalog source not verified", "code": "TELEGRAM_CURRICULUM_API_NOT_CONNECTED"}), 503
-        db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
-        if not db or not Path(db).is_file():
-            return jsonify({"error": "preview database not configured"}), 503
+                snapshot = get_verified_web_copy(
+                    os.environ.get("CIKGULAJU_WEB_COPY_MANIFEST", ""))
+                db = snapshot["path"]
+            except (CurriculumCopyUnavailable, OSError):
+                return jsonify({"error": "verified Web curriculum copy unavailable",
+                                "code": "WEB_CURRICULUM_COPY_UNAVAILABLE"}), 503
+        elif catalog_mode == "telegram-api":
+            source_url = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+            source_token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+            if bool(source_url) != bool(source_token):
+                return jsonify({"error": "authoritative curriculum configuration incomplete",
+                                "code": "TELEGRAM_CURRICULUM_API_NOT_CONNECTED"}), 503
+            if source_url and source_token:
+                from web.authoritative_http_source import AuthoritativeHttpCurriculumSource
+                from web.authoritative_curriculum_source import SharedSourceUnavailable
+                try:
+                    source = AuthoritativeHttpCurriculumSource(source_url, source_token)
+                    if kind == "subjects":
+                        return jsonify(source.list_subjects(year))
+                    subject = request.args.get("subject", "")
+                    component = request.args.get("component")
+                    if kind == "units":
+                        return jsonify(source.list_units(year, subject, component))
+                    if kind == "pdp":
+                        return jsonify(source.list_lessons(
+                            year, subject, request.args.get("unit", ""), component))
+                except (SharedSourceUnavailable, ValueError):
+                    return jsonify({"error": "authoritative curriculum source unavailable",
+                                    "code": "TELEGRAM_CURRICULUM_API_UNAVAILABLE"}), 503
+            # Preserve the old fail-closed behavior: no unverified local DB.
+            from web.shared_source_provenance import catalog_source_status
+            if not catalog_source_status()["shared_source_verified"]:
+                return jsonify({"error": "shared catalog source not verified",
+                                "code": "TELEGRAM_CURRICULUM_API_NOT_CONNECTED"}), 503
+            db = os.environ.get("CIKGULAJU_WEB_PREVIEW_DB", "")
+            if not db or not Path(db).is_file():
+                return jsonify({"error": "preview database not configured"}), 503
+        else:
+            return jsonify({"error": "invalid curriculum mode",
+                            "code": "WEB_CURRICULUM_MODE_INVALID"}), 503
         if kind == "subjects":
             return jsonify(available_subject_options(db, year))
         subject = request.args.get("subject", "")
@@ -135,18 +172,39 @@ def options():
 
 @app.get("/api/source/status")
 def shared_source_status():
-    """Report whether Web catalog points to the configured shared source."""
+    """Distinguish a verified, independently deployed Web copy from live parity."""
     from web.shared_source_provenance import catalog_source_status
     from web.shared_domain_parity import parity_report
+    mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
+    if mode == "versioned-copy":
+        from web.versioned_catalog_copy import (
+            CurriculumCopyUnavailable, get_verified_web_copy,
+        )
+        try:
+            snapshot = get_verified_web_copy(
+                os.environ.get("CIKGULAJU_WEB_COPY_MANIFEST", ""))
+        except (CurriculumCopyUnavailable, OSError):
+            return jsonify({
+                "curriculum_mode": "versioned-web-copy",
+                "web_copy_verified": False, "shared_source_verified": False,
+                "telegram_parity_verified": False, "reason": "web copy unavailable",
+            }), 503
+        return jsonify({
+            "curriculum_mode": "versioned-web-copy",
+            "web_copy_verified": True,
+            "copy_version": snapshot["version"],
+            "copy_sha256": snapshot["sha256"],
+            "shared_source_verified": False,
+            "telegram_parity_verified": False,
+            "reason": "separate checksum-verified copy; manually update both releases",
+        })
     catalog = catalog_source_status()
-    # A configured remote URL is not evidence of an available or verified API.
-    # The status endpoint must never claim parity from configuration alone.
     catalog["authoritative_api_configured"] = bool(
         os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
         and os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
     )
     report = parity_report({"lesson_catalog": catalog["shared_source_verified"]})
-    return jsonify({**catalog, **report})
+    return jsonify({"curriculum_mode": "telegram-api", **catalog, **report})
 
 
 @app.get("/api/deployment/status")

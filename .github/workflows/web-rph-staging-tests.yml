@@ -33,3 +33,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_staging_http.py' -v
           python -m unittest discover -s tests -p 'test_web_materials_authoritative_route.py' -v
           python -m unittest discover -s tests -p 'test_web_v1_pjpk_and_lesson_mapping.py' -v
+          python -m unittest discover -s tests -p 'test_web_versioned_catalog_copy.py' -v
