@@ -1,6 +1,6 @@
 # Year 5 Lesson 133 — Reading 23
 
-Status: DRAF. Unit 7, Growing up. SOW Lesson 133. Main LS 3.2.3; complementary LS 4.3.2. Materials: SB p.77 Activities 1–3; TB p.91.
+Status: DRAF. Unit 7, Growing up. SOW Lesson 133. Main LS 3.2.3; complementary LS 4.3.2. Materials: SB p.76 (support for Activity 1) and p.77 Activities 1–3; TB p.91.
 
 Objective: Pupils demonstrate both listed standards through the lesson activities.
 
