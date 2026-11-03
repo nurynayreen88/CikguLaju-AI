@@ -21,6 +21,8 @@ def install(runtime):
         if year_number(state.get("year")) != 4:
             return original(state)
         lesson = state.get("lesson_no") or state.get("textbook_lesson_no") or state.get("lesson")
+        if not lesson:
+            return original(state)
         standalone = get_english_rph(4, "English", lesson)
         if standalone is None:
             return original(state)
