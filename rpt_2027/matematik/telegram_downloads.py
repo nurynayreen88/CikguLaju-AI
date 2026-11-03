@@ -1,15 +1,15 @@
-"""Paid-only Telegram PDF delivery for temporary Matematik 2027 RPT v28.
+"""Telegram delivery of Matematik 2027 RPT PDFs, mirroring English 2027.
 
-No external PDF links are sent. Assets must be mounted privately on the bot
-server and are never committed to the public source repository by this module.
-Fail closed if assets, entitlements or Telegram confirmation are unavailable.
+PDFs live beside this module in the GitHub repository, just like English
+RPT PDFs. This module does not query Supabase or alter subscriptions, trial
+quotas, RPH, curriculum databases, or other Telegram callback routes.
+
+Important: the GitHub repository is public, so PDF files stored there are
+publicly readable even though the Telegram menu is paid-only.
 """
-import os
-import tempfile
 from pathlib import Path
-from rpt_2027.matematik.supabase_assets import ready as sb_ready, content as sb_content
-from rpt_2027.matematik.private_bundle import private_pdf_root
 
+PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
 FILE_TEMPLATE = "RPT_Matematik_Tahun_%d_2027_v28_SEMENTARA.pdf"
 
@@ -17,29 +17,23 @@ FILE_TEMPLATE = "RPT_Matematik_Tahun_%d_2027_v28_SEMENTARA.pdf"
 def pdf_path(year):
     if type(year) is not int or year not in YEARS:
         raise ValueError("Unsupported RPT Matematik year")
-    folder = os.environ.get("CIKGULAJU_RPT_MATH_PDF_DIR")
-    if folder:
-        return Path(folder) / (FILE_TEMPLATE % year)
-    private_root = private_pdf_root()
-    root = private_root if private_root is not None else Path(__file__).resolve().parent
-    return root / (FILE_TEMPLATE % year)
+    return PDF_ROOT / (FILE_TEMPLATE % year)
 
 
 def pdf_ready(year, ns=None):
-    """Show a button only when a verified private asset source is ready."""
+    """Keep ns optional for compatibility with the English RPT menu."""
     try:
         path = pdf_path(year)
-        if path.is_file() and path.stat().st_size >= 100000:
-            with path.open("rb") as f:
-                if f.read(5) == b"%PDF-":
-                    return True
+        if not path.is_file() or path.stat().st_size < 100000:
+            return False
+        with path.open("rb") as document:
+            return document.read(5) == b"%PDF-"
     except (OSError, ValueError):
-        pass
-    return bool(isinstance(ns, dict) and sb_ready(ns, year))
+        return False
 
 
 def install(ns):
-    """Wrap only Mathematics download callbacks, preserving every other route."""
+    """Wrap only Matematik PDF callbacks; delegate all other routes unchanged."""
     if ns.get("CIKGULAJU_RPT_MATEMATIK_2027_INSTALLED"):
         return True
     required = ("callback", "send", "send_document", "_access_info", "_is_admin")
@@ -56,7 +50,7 @@ def install(ns):
         if not data.startswith(prefix):
             return previous(cid, d)
 
-        # Never trust a saved, forwarded or forged button to bypass the menu.
+        # Recheck entitlement even when a saved or forged button is used.
         try:
             allowed = bool(ns["_is_admin"](cid) or ns["_access_info"](cid).get("active"))
         except Exception:
@@ -75,27 +69,18 @@ def install(ns):
         if suffix not in ("2", "3", "4", "5", "6"):
             return send(cid, "Pilihan tahun RPT Matematik tidak sah.")
         year = int(suffix)
-        if not pdf_ready(year, ns=ns):
+        if not pdf_ready(year):
             return send(
                 cid,
                 "⚠️ PDF RPT Matematik Tahun %d v28 belum tersedia pada pelayan. "
-                "Tiada pautan terbuka atau fail tahun lain dihantar sebagai pengganti." % year,
+                "Tiada fail tahun lain dihantar sebagai pengganti." % year,
             )
-        try:
-            caption = "RPT Matematik Tahun %d — 2027 v28 (DRAF/SEMENTARA)" % year
-            if pdf_ready(year):  # Existing private local file, if configured.
-                result = send_document(cid, str(pdf_path(year)), caption)
-            else:
-                # Stored in a separate private Supabase asset table, not
-                # the curriculum or users table. Entitlement checked above.
-                pdf = sb_content(ns, year)
-                if pdf is None:
-                    return send(cid, "⚠️ PDF Matematik gagal disahkan. Sila cuba lagi.")
-                with tempfile.TemporaryDirectory(prefix="cikgulaju-math-v28-") as folder:
-                    safe_path = Path(folder) / (FILE_TEMPLATE % year)
-                    safe_path.write_bytes(pdf)
-                    result = send_document(cid, str(safe_path), caption)
 
+        try:
+            result = send_document(
+                cid, str(pdf_path(year)),
+                "RPT Matematik Tahun %d — 2027 v28 (DRAF/SEMENTARA)" % year,
+            )
             verify = ns.get("_telegram_delivery_ok_v25279")
             if callable(verify):
                 confirmed = bool(verify(result))
