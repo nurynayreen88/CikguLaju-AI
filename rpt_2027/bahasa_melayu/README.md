@@ -36,6 +36,11 @@ DK Bahasa Melayu SK Tahun 1 dan buku baharu KP2027 belum disahkan dalam indeks s
 - [Indeks sumber BM SK Tahun 1–6](https://docs.google.com/document/d/1T7RnqWaB5WZsrB3nUg07T3tf0nyER25NhtdNOc9LeMc/edit).
 - [Kalendar minggu & cuti negeri 2027](https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit).
 
+## Kemajuan RPH dan audit sumber primer — 3 Nov 2026
+
+- [RPH Standalone BM Tahun 2 — Lesson 001–010](../../rph_standalone/bahasa_melayu/year2/README.md) telah disimpan sebagai **10 DRAF, 2 HOLD PKJR, 0 READY**. Ini bahan berasaskan buku teks, belum dipaparkan untuk guru.
+- Buku Aktiviti BM Tahun 3 SK Jilid 1 ([sumber](https://drive.google.com/file/d/1WoaWY-FgDVhJTZjQI16T3Ol6jFvmlGOg/view)) dan Jilid 2 ([sumber](https://drive.google.com/file/d/1ln3x1r0kXSXIBJObUIG1iUaas0jGFkt0/view)) berjaya dibaca. Pembetulan rujukan BA1 bagi BM3-P005, P011, P012 dan P016 telah dibuat selepas silang kod SP dengan kandungan BA; audit halaman lain belum selesai.
+- [Manifest READY](READY_GATE.json) menyekat status penerbitan, manakala [QA RPT/RPH BM](../../tools/qa_bm_2027_readiness.py) menguji struktur dan kelengkapan sebelum layak diterbitkan.
 ## Pintu READY
 
 Semak kod dan teks SK/SP serta subkod dengan DSKP asal, halaman BT/BA dan aktiviti sebenar, 12 rekod pengulangan, cuti dan ganti mengikut negeri, slot masa sekolah, dan tahun peperiksaan sebelum keluaran akhir. Word DOCX akhir dan RPH standalone BM belum diterbitkan. Fail ini disimpan dalam branch staging, `main`, DB, Telegram dan Web tidak diubah.
