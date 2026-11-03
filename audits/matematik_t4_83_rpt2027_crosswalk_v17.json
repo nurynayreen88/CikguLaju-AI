@@ -1,0 +1,1691 @@
+{
+  "description": "Kawalan padanan RPH Matematik Tahun 4 kepada 42 blok RPT 2027; bukan jadual PdP atau kelulusan.",
+  "source_rph_package": "Matematik_T4_83_RPH_Pakej_v15_PRA_READY.zip",
+  "source_rpt2027_group_a": "CikguLaju_Matematik_Tahun_4_Kumpulan_A_RPT_Audit_Kandungan_v11.docx",
+  "source_rpt2027_group_b": "CikguLaju_Matematik_Tahun_4_Kumpulan_B_RPT_Audit_Kandungan_v11.docx",
+  "source_book_evidence": "CikguLaju_Matematik_T4_83_RPH_Pembetulan_Buku_Disahkan.zip and CikguLaju_Matematik_T4_83_RPH_Padanan_Isi_Kandungan_BukuTeks_PRA_READY.zip",
+  "counts": {
+    "rph": 83,
+    "unique_dskp_sp": 85,
+    "rpt2027_content_blocks": 42,
+    "rph_book_text_pages_verified": 3,
+    "rph_only_topic_location": 80,
+    "rph_activity_book_verified": 0,
+    "rph_runtime_approved": 0
+  },
+  "source_issue_2027_rpt_blocks": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "note": "RPT 2027 v11 uses NOMBOR BULAT HINGGA 1000 in blocks 4–9, inconsistent with Tahun 4 100 000. Must correct master RPT first. The sole Group A/B date difference in block 42 remains unresolved. No dates assigned to RPH.",
+  "release_allowed": false,
+  "rph": [
+    {
+      "rph_id": "01",
+      "rpt2027_block": 1,
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "title_source": "RPH 01 — Nilai nombor hingga 100 000  |  PRA-READY",
+      "source_docx": "RPH_T4_01_PRA_READY.docx",
+      "sha256_docx": "9a4073dd973190967b9ad5e990371262e3a1903837c2ce47fcfc3b92b34c1379",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Kenal dan Tulis Nombor; Teroka Nombor; Banding dan Susun Nombor",
+      "textbook_topic_pages_from_contents": "1–8",
+      "textbook_page_text_verified": true,
+      "textbook_pages_verified": "1–8",
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 1
+    },
+    {
+      "rph_id": "02",
+      "rpt2027_block": 2,
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "title_source": "RPH 02 — Nombor genap dan nombor ganjil  |  PRA-READY",
+      "source_docx": "RPH_T4_02_PRA_READY.docx",
+      "sha256_docx": "b1228a6113f7c284e9e807943416a54c9a0c97fa4476a6d1665c49e31a4a2e51",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Nombor Genap dan Nombor Ganjil",
+      "textbook_topic_pages_from_contents": "9–10",
+      "textbook_page_text_verified": true,
+      "textbook_pages_verified": "9–10",
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 2
+    },
+    {
+      "rph_id": "09",
+      "rpt2027_block": 3,
+      "sp_codes": [
+        "1.3.1"
+      ],
+      "title_source": "RPH 09 • Penganggaran kuantiti",
+      "source_docx": "RPH_T4_09_PRA_READY.docx",
+      "sha256_docx": "eb50ce3aa94a2e80ce17dbbf92712dda4e45603db3cc35227a1b24435105639a",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Anggaran",
+      "textbook_topic_pages_from_contents": "13–14",
+      "textbook_page_text_verified": true,
+      "textbook_pages_verified": "13–14",
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 3
+    },
+    {
+      "rph_id": "03",
+      "rpt2027_block": 4,
+      "sp_codes": [
+        "1.4.1"
+      ],
+      "title_source": "RPH 03 — Pembundaran hingga puluh ribu terdekat  |  PRA-READY",
+      "source_docx": "RPH_T4_03_PRA_READY.docx",
+      "sha256_docx": "b5a2e34b548bc088295cb0eba598443dd64e456d17f4220fba5c6232efd3ee1d",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bundar Nombor",
+      "textbook_topic_pages_from_contents": "15–16",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 4
+    },
+    {
+      "rph_id": "10",
+      "rpt2027_block": 5,
+      "sp_codes": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "title_source": "RPH 10 • Pola nombor menaik dan menurun",
+      "source_docx": "RPH_T4_10_PRA_READY.docx",
+      "sha256_docx": "4b03117cf14f1733569e2494679f285ce19b88d94970a6e28d885a3630034474",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bundar Nombor",
+      "textbook_topic_pages_from_contents": "15–16",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 5
+    },
+    {
+      "rph_id": "04",
+      "rpt2027_block": 6,
+      "sp_codes": [
+        "1.6.1"
+      ],
+      "title_source": "RPH 04 — Tambah hingga empat nombor  |  PRA-READY",
+      "source_docx": "RPH_T4_04_PRA_READY.docx",
+      "sha256_docx": "562b9005540d616d153f2965fde0dd8e8bff98d3b59b1c57cf1647afeb6357d4",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah",
+      "textbook_topic_pages_from_contents": "18–21",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 6
+    },
+    {
+      "rph_id": "05",
+      "rpt2027_block": 6,
+      "sp_codes": [
+        "1.6.2"
+      ],
+      "title_source": "RPH 05 — Tolak dua nombor  |  PRA-READY",
+      "source_docx": "RPH_T4_05_PRA_READY.docx",
+      "sha256_docx": "b171e3a899ec1c912b3c29025ee9dac1533c2150f1eded5f19f1f363e5ea2456",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tolak",
+      "textbook_topic_pages_from_contents": "23–26",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 7
+    },
+    {
+      "rph_id": "06",
+      "rpt2027_block": 6,
+      "sp_codes": [
+        "1.6.3"
+      ],
+      "title_source": "RPH 06 — Tolak dua nombor daripada satu nombor  |  PRA-READY",
+      "source_docx": "RPH_T4_06_PRA_READY.docx",
+      "sha256_docx": "56d208b6962f7eaf265b803cce4baf7096cfc190b7959bc06fb3190b857ea282",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tolak",
+      "textbook_topic_pages_from_contents": "23–26",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 8
+    },
+    {
+      "rph_id": "07",
+      "rpt2027_block": 6,
+      "sp_codes": [
+        "1.6.4"
+      ],
+      "title_source": "RPH 07 — Darab nombor hingga lima digit  |  PRA-READY",
+      "source_docx": "RPH_T4_07_PRA_READY.docx",
+      "sha256_docx": "272a5450a547f8a20bf1fad24d99f18eb37197d600aaa7551835462f6222bf31",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab",
+      "textbook_topic_pages_from_contents": "30–35",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 9
+    },
+    {
+      "rph_id": "08",
+      "rpt2027_block": 6,
+      "sp_codes": [
+        "1.6.5"
+      ],
+      "title_source": "RPH 08 — Bahagi dalam lingkungan 100 000  |  PRA-READY",
+      "source_docx": "RPH_T4_08_PRA_READY.docx",
+      "sha256_docx": "242461787e4b7c5820f15fdd7ea6bf107c03053eea17de843134c9a7c4d87ec6",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bahagi",
+      "textbook_topic_pages_from_contents": "37–43",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 10
+    },
+    {
+      "rph_id": "16",
+      "rpt2027_block": 7,
+      "sp_codes": [
+        "1.7.1"
+      ],
+      "title_source": "RPH 16 — Operasi bergabung tambah dan tolak  |  PRA-READY",
+      "source_docx": "RPH_T4_16_PRA_READY.docx",
+      "sha256_docx": "13ff9888fc3c5ff67935c9fb79335a6d66775969e4edd7bd71f3bbc13d84d7e2",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah dan Tolak",
+      "textbook_topic_pages_from_contents": "28–29",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 11
+    },
+    {
+      "rph_id": "17",
+      "rpt2027_block": 7,
+      "sp_codes": [
+        "1.7.2"
+      ],
+      "title_source": "RPH 17 — Operasi bergabung darab dan bahagi  |  PRA-READY",
+      "source_docx": "RPH_T4_17_PRA_READY.docx",
+      "sha256_docx": "504288099d310775f8ef245b3164ecaa956c30cc29228d879279a7922fb81fed",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab dan Bahagi",
+      "textbook_topic_pages_from_contents": "44–47",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 12
+    },
+    {
+      "rph_id": "18",
+      "rpt2027_block": 8,
+      "sp_codes": [
+        "1.8.1"
+      ],
+      "title_source": "RPH 18 — Penggunaan anu dalam ayat tambah  |  PRA-READY",
+      "source_docx": "RPH_T4_18_PRA_READY.docx",
+      "sha256_docx": "6cc7727ed8484a9bc42e8318b468383a2fe2ca3b7d7c6a05b0803aa1a0f52df2",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Anu dalam Tambah",
+      "textbook_topic_pages_from_contents": "22",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 13
+    },
+    {
+      "rph_id": "19",
+      "rpt2027_block": 8,
+      "sp_codes": [
+        "1.8.2"
+      ],
+      "title_source": "RPH 19 — Penggunaan anu dalam ayat tolak  |  PRA-READY",
+      "source_docx": "RPH_T4_19_PRA_READY.docx",
+      "sha256_docx": "8a456394b40bd3bf4acd099ad73ecfb52b0ec407f89157d7deac6d3425f48a14",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Anu dalam Tolak",
+      "textbook_topic_pages_from_contents": "27",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 14
+    },
+    {
+      "rph_id": "20",
+      "rpt2027_block": 9,
+      "sp_codes": [
+        "1.9.1"
+      ],
+      "title_source": "RPH 20 — Penyelesaian masalah operasi bergabung  |  PRA-READY",
+      "source_docx": "RPH_T4_20_PRA_READY.docx",
+      "sha256_docx": "2b4bc79f98988b72146f0d1ab9828b75257ce3d39e07adf8311139005586c9fd",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Nombor dan Operasi)",
+      "textbook_topic_pages_from_contents": "48–62",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 15
+    },
+    {
+      "rph_id": "21",
+      "rpt2027_block": 9,
+      "sp_codes": [
+        "1.9.2"
+      ],
+      "title_source": "RPH 21 — Penyelesaian masalah melibatkan anu  |  PRA-READY",
+      "source_docx": "RPH_T4_21_PRA_READY.docx",
+      "sha256_docx": "c8ee9ed6e629ad0bec1bba6d13ccd85fdf2fc0ab0b5698be289a1bca61c99306",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Nombor dan Operasi)",
+      "textbook_topic_pages_from_contents": "48–62",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 16
+    },
+    {
+      "rph_id": "22",
+      "rpt2027_block": 10,
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "title_source": "RPH 22 — Pecahan tak wajar dan nombor bercampur  |  PRA-READY",
+      "source_docx": "RPH_T4_22_PRA_READY.docx",
+      "sha256_docx": "5a29f1385a674469f77ccde2100834c4628d6884bcf6f0221130347ef23fa570",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tukar Pecahan Tak Wajar dan Nombor Bercampur",
+      "textbook_topic_pages_from_contents": "67–70",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 17
+    },
+    {
+      "rph_id": "23",
+      "rpt2027_block": 10,
+      "sp_codes": [
+        "2.1.2"
+      ],
+      "title_source": "RPH 23 — Penambahan pecahan dan nombor bercampur  |  PRA-READY",
+      "source_docx": "RPH_T4_23_PRA_READY.docx",
+      "sha256_docx": "e23d9425251be70881f0b2a4713de0f75bf34e99fbd7b65fb6e23e2489d2ed25",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah Pecahan",
+      "textbook_topic_pages_from_contents": "71–74",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 18
+    },
+    {
+      "rph_id": "11A",
+      "rpt2027_block": 11,
+      "sp_codes": [
+        "2.1.3"
+      ],
+      "title_source": "Tahun 4 • RPH 11A — Penolakan melibatkan nombor bulat, pecahan wajar dan nombor bercampur",
+      "source_docx": "RPH_T4_11A_PRA_READY.docx",
+      "sha256_docx": "f201f559846e9b489d362c6c2cf3d3f931397748884ab0ebf1a819e7840dd639",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",      "textbook_topic": "Tolak Pecahan",
+      "textbook_topic_pages_from_contents": "75–79",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 19
+    },
+    {
+      "rph_id": "11B",
+      "rpt2027_block": 11,
+      "sp_codes": [
+        "2.1.4"
+      ],
+      "title_source": "Tahun 4 • RPH 11B — Operasi bergabung tambah dan tolak pecahan",
+      "source_docx": "RPH_T4_11B_PRA_READY.docx",
+      "sha256_docx": "eaa4bca76682a8ede338bb96f9f53b01ecc08b0698ee4b627febc6c4a20c63b3",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah dan Tolak Pecahan",
+      "textbook_topic_pages_from_contents": "80–82",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 20
+    },
+    {
+      "rph_id": "11C",
+      "rpt2027_block": 11,
+      "sp_codes": [
+        "2.1.5"
+      ],
+      "title_source": "RPH 11C — Tahun 4 | Menentukan nilai pecahan daripada kuantiti",
+      "source_docx": "RPH_T4_11C_PRA_READY.docx",
+      "sha256_docx": "e62e6e348d21dc5f4fe5ae62bab7ab218a8b07558aa4d45b1efcc5fd567e412f",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Pecahan daripada Suatu Kuantiti",
+      "textbook_topic_pages_from_contents": "83–85",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 21
+    },
+    {
+      "rph_id": "24",
+      "rpt2027_block": 12,
+      "sp_codes": [
+        "2.2.1"
+      ],
+      "title_source": "RPH 24 — Tambah perpuluhan hingga tiga tempat perpuluhan  |  PRA-READY",
+      "source_docx": "RPH_T4_24_PRA_READY.docx",
+      "sha256_docx": "b65b8bfb2cb47889ddc1096ebdf0a2eb76e26b7e08daea5dd02a0052d7f713bd",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah Perpuluhan",
+      "textbook_topic_pages_from_contents": "86–87",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 22
+    },
+    {
+      "rph_id": "25",
+      "rpt2027_block": 12,
+      "sp_codes": [
+        "2.2.2"
+      ],
+      "title_source": "RPH 25 — Tolak perpuluhan hingga tiga tempat perpuluhan  |  PRA-READY",
+      "source_docx": "RPH_T4_25_PRA_READY.docx",
+      "sha256_docx": "c1f041e82ea6ad053cf43c07bf8cc5a34984f1bb47276718855c6002ab1e0cce",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tolak Perpuluhan",
+      "textbook_topic_pages_from_contents": "88–89",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 23
+    },
+    {
+      "rph_id": "26",
+      "rpt2027_block": 12,
+      "sp_codes": [
+        "2.2.3"
+      ],
+      "title_source": "RPH 26 — Darab perpuluhan  |  PRA-READY",
+      "source_docx": "RPH_T4_26_PRA_READY.docx",
+      "sha256_docx": "33b7ff65adff09e0f73726618ea9d32fb340de66ce78f4822dba691b7aaa2369",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab Perpuluhan",
+      "textbook_topic_pages_from_contents": "90–91",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 24
+    },
+    {
+      "rph_id": "27",
+      "rpt2027_block": 12,
+      "sp_codes": [
+        "2.2.4"
+      ],
+      "title_source": "RPH 27 — Bahagi perpuluhan  |  PRA-READY",
+      "source_docx": "RPH_T4_27_PRA_READY.docx",
+      "sha256_docx": "1ff23a86ac8076417ba332a0c22d432be3d35602c1b78eca787e5ad3d78fc601",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bahagi Perpuluhan",
+      "textbook_topic_pages_from_contents": "92–93",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 25
+    },
+    {
+      "rph_id": "28",
+      "rpt2027_block": 13,
+      "sp_codes": [
+        "2.3.1"
+      ],
+      "title_source": "RPH 28 — Menukar pecahan kepada peratus dan sebaliknya  |  PRA-READY",
+      "source_docx": "RPH_T4_28_PRA_READY.docx",
+      "sha256_docx": "c626a67743674aeb7a5d2ce5cc8d4b8a0aacd422d9dbe059ede9a75fa06ca9d2",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tukar Pecahan dan Peratus",
+      "textbook_topic_pages_from_contents": "94–95",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 26
+    },
+    {
+      "rph_id": "29",
+      "rpt2027_block": 13,
+      "sp_codes": [
+        "2.3.2"
+      ],
+      "title_source": "RPH 29 — Mengira peratusan daripada kuantiti objek  |  PRA-READY",
+      "source_docx": "RPH_T4_29_PRA_READY.docx",
+      "sha256_docx": "a03eabc7c07ebcc391c643dc3edacf3c1118801ff1adaf3646a700998f36bd67",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Peratusan Objek",
+      "textbook_topic_pages_from_contents": "96",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 27
+    },
+    {
+      "rph_id": "12",
+      "rpt2027_block": 14,
+      "sp_codes": [
+        "2.4.1"
+      ],
+      "title_source": "RPH 12 • Penyelesaian masalah pecahan, perpuluhan dan peratus",
+      "source_docx": "RPH_T4_12_PRA_READY.docx",
+      "sha256_docx": "091e8863be96b62b8c89c6ecb4d10f5a9ed6d283a5bb064d3f2ea2fd1625991e",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bijak Urus Wang",
+      "textbook_topic_pages_from_contents": "118–121",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 28
+    },
+    {
+      "rph_id": "30",
+      "rpt2027_block": 15,
+      "sp_codes": [
+        "3.1.1"
+      ],
+      "title_source": "RPH 30 — Penambahan hingga tiga nilai wang  |  PRA-READY",
+      "source_docx": "RPH_T4_30_PRA_READY.docx",
+      "sha256_docx": "6e9bc9e997317ab04b3170709f372fb2a6bf615ba138b927dedc607dcecb1a4b",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah Wang",
+      "textbook_topic_pages_from_contents": "105–107",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 29
+    },
+    {
+      "rph_id": "31",
+      "rpt2027_block": 15,
+      "sp_codes": [
+        "3.1.2"
+      ],
+      "title_source": "RPH 31 — Penolakan hingga dua nilai wang daripada satu nilai wang  |  PRA-READY",
+      "source_docx": "RPH_T4_31_PRA_READY.docx",
+      "sha256_docx": "5d17d101cdf1ccc6f1e3c8caa0ef9521aea7fbec48a64f2ed39b8302ca4f4144",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tolak Wang",
+      "textbook_topic_pages_from_contents": "108–109",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 30
+    },
+    {
+      "rph_id": "32",
+      "rpt2027_block": 15,
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "title_source": "RPH 32 — Darab nilai wang dengan nombor hingga dua digit  |  PRA-READY",
+      "source_docx": "RPH_T4_32_PRA_READY.docx",
+      "sha256_docx": "dadadea8ceaff91bcc454fea8ce813fed7fc5471b1757dab6be4d61c0ddb374b",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab Wang",
+      "textbook_topic_pages_from_contents": "112–113",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 31
+    },
+    {
+      "rph_id": "33",
+      "rpt2027_block": 15,
+      "sp_codes": [
+        "3.1.4"
+      ],
+      "title_source": "RPH 33 — Bahagi nilai wang dengan nombor hingga dua digit  |  PRA-READY",
+      "source_docx": "RPH_T4_33_PRA_READY.docx",
+      "sha256_docx": "1c136b7644cdce50bd76946e4322b34e73c24af1042dedb0565aa1bf983a6150",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bahagi Wang",
+      "textbook_topic_pages_from_contents": "114–115",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 32
+    },
+    {
+      "rph_id": "34",
+      "rpt2027_block": 16,
+      "sp_codes": [
+        "3.2.1"
+      ],
+      "title_source": "RPH 34 — Operasi bergabung tambah dan tolak wang  |  PRA-READY",
+      "source_docx": "RPH_T4_34_PRA_READY.docx",
+      "sha256_docx": "fc908fd62a64e42a64c3913cef17456ab2aef53d18952887958876cedeb92d21",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah dan Tolak Wang",
+      "textbook_topic_pages_from_contents": "110–111",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 33
+    },
+    {
+      "rph_id": "35",
+      "rpt2027_block": 16,
+      "sp_codes": [
+        "3.2.2"
+      ],
+      "title_source": "RPH 35 — Operasi bergabung darab dan bahagi wang  |  PRA-READY",
+      "source_docx": "RPH_T4_35_PRA_READY.docx",
+      "sha256_docx": "8f0928fb828e02430511e2ceca280cd82ff7c0a369b98971a03a05db8308bdcf",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab dan Bahagi Wang",
+      "textbook_topic_pages_from_contents": "116–117",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 34
+    },
+    {
+      "rph_id": "36",
+      "rpt2027_block": 17,
+      "sp_codes": [
+        "3.3.1"
+      ],
+      "title_source": "RPH 36 — Merancang bajet untuk matlamat kewangan  |  PRA-READY",
+      "source_docx": "RPH_T4_36_PRA_READY.docx",
+      "sha256_docx": "eccc9ef907c35ab8651ac01c134438b4f87ef79f63f682c418184e8eb9c99816",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bijak Urus Wang",
+      "textbook_topic_pages_from_contents": "118–121",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 35
+    },
+    {
+      "rph_id": "37",
+      "rpt2027_block": 17,
+      "sp_codes": [
+        "3.3.2"
+      ],
+      "title_source": "RPH 37 — Merekodkan simpanan dan perbelanjaan  |  PRA-READY",
+      "source_docx": "RPH_T4_37_PRA_READY.docx",
+      "sha256_docx": "24e8f8f12c1152ba931494ebad48284aedc95f57e2eb69e5a7f16cca9cd0dbf1",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bijak Urus Wang",
+      "textbook_topic_pages_from_contents": "118–121",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 36
+    },
+    {
+      "rph_id": "38",
+      "rpt2027_block": 17,
+      "sp_codes": [
+        "3.3.3"
+      ],
+      "title_source": "RPH 38 — Kepentingan rekod simpanan dan perbelanjaan  |  PRA-READY",
+      "source_docx": "RPH_T4_38_PRA_READY.docx",
+      "sha256_docx": "02106f04cb920b9a034f7eabf318e0d203e62680fc90e9a2a7d6211724054122",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bijak Urus Wang",
+      "textbook_topic_pages_from_contents": "118–121",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 37
+    },
+    {
+      "rph_id": "13",
+      "rpt2027_block": 18,
+      "sp_codes": [
+        "3.4.1",
+        "3.4.2",
+        "3.4.3"
+      ],
+      "title_source": "RPH 13 • Keputusan kewangan: keperluan dan kehendak",
+      "source_docx": "RPH_T4_13_PRA_READY.docx",
+      "sha256_docx": "104d385da8e539a51adc8de8d651e0a2c7d81c29bc0752b198c8fa43e7f8f958",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bijak Buat Keputusan",
+      "textbook_topic_pages_from_contents": "122–123",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 38
+    },
+    {
+      "rph_id": "78",
+      "rpt2027_block": 19,
+      "sp_codes": [
+        "3.5.1"
+      ],
+      "title_source": "RPH 78 — Mengenal mata wang negara utama dunia  |  PRA-READY",
+      "source_docx": "RPH_T4_78_PRA_READY.docx",
+      "sha256_docx": "9bbcd8fefa45e3b58d62b55a73280aac42e7e210b823a3741316aa6fb35a9365",      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Mata Wang Utama Dunia dan Nilainya",
+      "textbook_topic_pages_from_contents": "124–125",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 39
+    },
+    {
+      "rph_id": "79",
+      "rpt2027_block": 19,
+      "sp_codes": [
+        "3.5.2"
+      ],
+      "title_source": "RPH 79 — Menyatakan nilai RM1 dalam mata wang asing  |  PRA-READY",
+      "source_docx": "RPH_T4_79_PRA_READY.docx",
+      "sha256_docx": "59102a450d6dbd1cac07ee984be77bd851e772cb110e4f35c9cb9b681c78ab88",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Mata Wang Utama Dunia dan Nilainya",
+      "textbook_topic_pages_from_contents": "124–125",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 40
+    },
+    {
+      "rph_id": "80",
+      "rpt2027_block": 20,
+      "sp_codes": [
+        "3.6.1"
+      ],
+      "title_source": "RPH 80 — Mengenal instrumen pembayaran  |  PRA-READY",
+      "source_docx": "RPH_T4_80_PRA_READY.docx",
+      "sha256_docx": "67b64a27860700670e94d27c7256214c7394b51d7ca128cdc3f8e4a4b0e16e01",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Instrumen Pembayaran",
+      "textbook_topic_pages_from_contents": "126–127",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 41
+    },
+    {
+      "rph_id": "81",
+      "rpt2027_block": 20,
+      "sp_codes": [
+        "3.6.2"
+      ],
+      "title_source": "RPH 81 — Menjelaskan penggunaan instrumen pembayaran  |  PRA-READY",
+      "source_docx": "RPH_T4_81_PRA_READY.docx",
+      "sha256_docx": "ccab9f092cb0024b3feed987f2eb85bc4fac31376984e0e60091d079dd7ac444",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Instrumen Pembayaran",
+      "textbook_topic_pages_from_contents": "126–127",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 42
+    },
+    {
+      "rph_id": "14",
+      "rpt2027_block": 21,
+      "sp_codes": [
+        "3.7.1"
+      ],
+      "title_source": "RPH 14 • Penyelesaian masalah wang hingga RM100 000",
+      "source_docx": "RPH_T4_14_PRA_READY.docx",
+      "sha256_docx": "a918100b1a2e93199c75bef5476aa72fa491d92c641e3c8198b245dc0751c12b",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Mata Wang Utama Dunia dan Nilainya",
+      "textbook_topic_pages_from_contents": "124–125",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 43
+    },
+    {
+      "rph_id": "39",
+      "rpt2027_block": 22,
+      "sp_codes": [
+        "4.1.1"
+      ],
+      "title_source": "RPH 39 — Hubungan sistem 12 jam dan 24 jam  |  PRA-READY",
+      "source_docx": "RPH_T4_39_PRA_READY.docx",
+      "sha256_docx": "5af07f6f90c74538392bdc5297b8a91d1b21f22cb1cb1286308382d7ad7da8ec",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Sistem 12 Jam dan 24 Jam",
+      "textbook_topic_pages_from_contents": "139–142",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 44
+    },
+    {
+      "rph_id": "40",
+      "rpt2027_block": 23,
+      "sp_codes": [
+        "4.2.1"
+      ],
+      "title_source": "RPH 40 — Menentukan tempoh masa dalam 24 jam  |  PRA-READY",
+      "source_docx": "RPH_T4_40_PRA_READY.docx",
+      "sha256_docx": "09ee998e1a42e3c8e48b3b41435542fd8e6a63f6bcbb071b3ecca663c3e98c01",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tempoh",
+      "textbook_topic_pages_from_contents": "143–144",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 45
+    },
+    {
+      "rph_id": "15",
+      "rpt2027_block": 24,
+      "sp_codes": [
+        "4.3.1"
+      ],
+      "title_source": "RPH 15 • Anggaran masa dalam jam dan minit",
+      "source_docx": "RPH_T4_15_PRA_READY.docx",
+      "sha256_docx": "aab496929d5db9313ee30acb4f1c640fd19aac33bb4df1e38a2836ecdd088f5e",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Instrumen Pembayaran",
+      "textbook_topic_pages_from_contents": "126–127",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 46
+    },
+    {
+      "rph_id": "41",
+      "rpt2027_block": 25,
+      "sp_codes": [
+        "4.4.1"
+      ],
+      "title_source": "RPH 41 — Perkaitan alaf, abad, dekad dan tahun  |  PRA-READY",
+      "source_docx": "RPH_T4_41_PRA_READY.docx",
+      "sha256_docx": "bf3d9f4787b413652395a9ff50f09dc7514b123b732444674c3ccdf4ba68c771",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Perkaitan Alaf, Abad, Dekad dan Tahun",
+      "textbook_topic_pages_from_contents": "146",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 47
+    },
+    {
+      "rph_id": "42",
+      "rpt2027_block": 25,
+      "sp_codes": [
+        "4.4.2"
+      ],
+      "title_source": "RPH 42 — Menukar unit masa jam, hari, minggu, bulan dan tahun  |  PRA-READY",
+      "source_docx": "RPH_T4_42_PRA_READY.docx",
+      "sha256_docx": "af4c5c9b57dd7f8b5da2dbf5877eda83626cc80bd13dca5e2048101378b9dd08",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tukar Unit Masa",
+      "textbook_topic_pages_from_contents": "147–151",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": true,
+      "runtime_approved": false,
+      "proposed_sequence": 48
+    },
+    {
+      "rph_id": "43",
+      "rpt2027_block": 26,
+      "sp_codes": [
+        "4.5.1"
+      ],
+      "title_source": "RPH 43 — Tambah dan tolak nilai masa  |  PRA-READY",
+      "source_docx": "RPH_T4_43_PRA_READY.docx",
+      "sha256_docx": "8d46dff2b47a45b3b8120d3b4bc7c00d742afc31d7fe04fac9db5665b52f1736",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah Masa; Tolak Masa",
+      "textbook_topic_pages_from_contents": "152–157",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 49
+    },
+    {
+      "rph_id": "44",
+      "rpt2027_block": 26,
+      "sp_codes": [
+        "4.5.2"
+      ],
+      "title_source": "RPH 44 — Darab dan bahagi nilai masa  |  PRA-READY",
+      "source_docx": "RPH_T4_44_PRA_READY.docx",
+      "sha256_docx": "c0aba2267a9906f94ea5804a1107b721e3c1ba0306940035830b6c9392fd1f38",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab Masa; Bahagi Masa",
+      "textbook_topic_pages_from_contents": "158–163",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 50
+    },
+    {
+      "rph_id": "45",
+      "rpt2027_block": 27,
+      "sp_codes": [
+        "4.6.1"
+      ],
+      "title_source": "RPH 45 — Penyelesaian masalah masa dan waktu  |  PRA-READY",
+      "source_docx": "RPH_T4_45_PRA_READY.docx",
+      "sha256_docx": "90eb9700ee90ec854ade4c5602d4372444afe207dd037be8e9c3c759c7f53906",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Masa dan Waktu)",
+      "textbook_topic_pages_from_contents": "164–168",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 51
+    },
+    {
+      "rph_id": "46",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "title_source": "RPH 46 — Mengenal milimeter, kilometer dan hubungan unit panjang  |  PRA-READY",
+      "source_docx": "RPH_T4_46_PRA_READY.docx",
+      "sha256_docx": "fe6dff1aa402fc16904ef91176aea9561630cd6414fa07ca4103336bccbde454",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Kenal Milimeter dan Kilometer",
+      "textbook_topic_pages_from_contents": "171–172",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 52
+    },
+    {
+      "rph_id": "47",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "title_source": "RPH 47 — Penukaran unit panjang  |  PRA-READY",
+      "source_docx": "RPH_T4_47_PRA_READY.docx",
+      "sha256_docx": "cb78c0735f0165b62a06ebe11b39ccb7f0b95580b8694614e525f6c1877726e4",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Perkaitan Sentimeter dengan Milimeter; Perkaitan Kilometer dengan Meter",
+      "textbook_topic_pages_from_contents": "174–175",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 53
+    },
+    {
+      "rph_id": "48",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.4"
+      ],
+      "title_source": "RPH 48 — Mengukur objek dalam milimeter  |  PRA-READY",
+      "source_docx": "RPH_T4_48_PRA_READY.docx",
+      "sha256_docx": "f5cb03e8248fff47951e0b45cd89a723e31ffb6bc3069de0d51114e830b142f6",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Ukur Panjang Objek",
+      "textbook_topic_pages_from_contents": "173",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 54
+    },
+    {
+      "rph_id": "49",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.5"
+      ],
+      "title_source": "RPH 49 — Menganggar jarak dalam kilometer  |  PRA-READY",
+      "source_docx": "RPH_T4_49_PRA_READY.docx",
+      "sha256_docx": "514ba980f24fc3f32f3823013bf89bd4219d71ed812e55901b92dca231e7322f",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Anggaran Jarak",
+      "textbook_topic_pages_from_contents": "176",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 55
+    },
+    {
+      "rph_id": "50",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.6"
+      ],
+      "title_source": "RPH 50 — Tambah hingga tiga ukuran panjang  |  PRA-READY",
+      "source_docx": "RPH_T4_50_PRA_READY.docx",
+      "sha256_docx": "83cb77b66c2d3a179b7d3633163426794ad2f4985e8ffc0f6e344f5bf5915663",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah Ukuran Panjang",
+      "textbook_topic_pages_from_contents": "177–178",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 56
+    },
+    {
+      "rph_id": "51",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.7"
+      ],
+      "title_source": "RPH 51 — Tolak hingga dua ukuran panjang daripada satu ukuran  |  PRA-READY",
+      "source_docx": "RPH_T4_51_PRA_READY.docx",
+      "sha256_docx": "3e8ceb19d24cff7f20b9a6c7e77f8f3e56287aae1a8d8795f41a3efb51a5d179",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tolak Ukuran Panjang",
+      "textbook_topic_pages_from_contents": "179–180",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 57
+    },
+    {
+      "rph_id": "52",
+      "rpt2027_block": 28,
+      "sp_codes": [
+        "5.1.8",
+        "5.1.9"
+      ],
+      "title_source": "RPH 52 — Darab dan bahagi ukuran panjang  |  PRA-READY",
+      "source_docx": "RPH_T4_52_PRA_READY.docx",
+      "sha256_docx": "a2306adbbe62dcb6674e0d8891d97a5eadd7b77e3079c5cdfa4f69a2dd7d8458",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab Ukuran Panjang; Bahagi Ukuran Panjang",
+      "textbook_topic_pages_from_contents": "181–183",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 58
+    },
+    {
+      "rph_id": "53",
+      "rpt2027_block": 29,
+      "sp_codes": [
+        "5.2.1"
+      ],
+      "title_source": "RPH 53 — Operasi bergabung tambah dan tolak jisim  |  PRA-READY",      "source_docx": "RPH_T4_53_PRA_READY.docx",
+      "sha256_docx": "d39c415c86c5a353cb8bcefe247c102f86eb02223f445a12ebf91d139a73a541",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah dan Tolak Jisim",
+      "textbook_topic_pages_from_contents": "184–185",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 59
+    },
+    {
+      "rph_id": "54",
+      "rpt2027_block": 29,
+      "sp_codes": [
+        "5.2.2"
+      ],
+      "title_source": "RPH 54 — Operasi bergabung darab dan bahagi jisim  |  PRA-READY",
+      "source_docx": "RPH_T4_54_PRA_READY.docx",
+      "sha256_docx": "d1a8cd3a61d5bb8deff96e62411ac41a2565e83794ec661033611d0f734a6116",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab dan Bahagi Jisim",
+      "textbook_topic_pages_from_contents": "186–187",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 60
+    },
+    {
+      "rph_id": "55",
+      "rpt2027_block": 30,
+      "sp_codes": [
+        "5.3.1"
+      ],
+      "title_source": "RPH 55 — Operasi bergabung tambah dan tolak isi padu cecair  |  PRA-READY",
+      "source_docx": "RPH_T4_55_PRA_READY.docx",
+      "sha256_docx": "d5947ef198a39212ec337fccb29e6f6e3fa5f8c29fe1803adbd30b9da51f3915",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tambah dan Tolak Isi Padu Cecair",
+      "textbook_topic_pages_from_contents": "188–189",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 61
+    },
+    {
+      "rph_id": "56",
+      "rpt2027_block": 30,
+      "sp_codes": [
+        "5.3.2"
+      ],
+      "title_source": "RPH 56 — Operasi bergabung darab dan bahagi isi padu cecair  |  PRA-READY",
+      "source_docx": "RPH_T4_56_PRA_READY.docx",
+      "sha256_docx": "7f02dd9fdae800fea01bbaa2944554750e670b98a6ac7aec038910ee5ffa66dc",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Darab dan Bahagi Isi Padu Cecair",
+      "textbook_topic_pages_from_contents": "190–191",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 62
+    },
+    {
+      "rph_id": "57",
+      "rpt2027_block": 31,
+      "sp_codes": [
+        "5.4.1"
+      ],
+      "title_source": "RPH 57 — Penyelesaian masalah ukuran dan sukatan  |  PRA-READY",
+      "source_docx": "RPH_T4_57_PRA_READY.docx",
+      "sha256_docx": "955a4d16af5b9ac884b372414801e09214f4e1234dd198cc9c7b351d5fb50083",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Panjang, Jisim dan Isi Padu Cecair)",
+      "textbook_topic_pages_from_contents": "192–196",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 63
+    },
+    {
+      "rph_id": "58",
+      "rpt2027_block": 32,
+      "sp_codes": [
+        "6.1.1"
+      ],
+      "title_source": "RPH 58 — Mengenal sudut tegak, tirus dan cakah  |  PRA-READY",
+      "source_docx": "RPH_T4_58_PRA_READY.docx",
+      "sha256_docx": "207fab11f3cab78ddbda52821dfb64f35c05e5880d7ffb5bb124fc05d3169c8c",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Kenal Sudut",
+      "textbook_topic_pages_from_contents": "199–200",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 64
+    },
+    {
+      "rph_id": "59",
+      "rpt2027_block": 33,
+      "sp_codes": [
+        "6.2.1"
+      ],
+      "title_source": "RPH 59 — Mengenal garis selari dan serenjang  |  PRA-READY",
+      "source_docx": "RPH_T4_59_PRA_READY.docx",
+      "sha256_docx": "9221655b850ee8ad273bb37489b37a825c07507f3e4b8aafa4f18b2fd1995fe2",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Garis Selari dan Garis Serenjang",
+      "textbook_topic_pages_from_contents": "201–203",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 65
+    },
+    {
+      "rph_id": "60",
+      "rpt2027_block": 33,
+      "sp_codes": [
+        "6.2.2"
+      ],
+      "title_source": "RPH 60 — Melukis garis selari dan serenjang  |  PRA-READY",
+      "source_docx": "RPH_T4_60_PRA_READY.docx",
+      "sha256_docx": "3a8698693f3d5d100490bec3217d4286871f8c812a2875923ba2d56b0c604620",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Garis Selari dan Garis Serenjang",
+      "textbook_topic_pages_from_contents": "201–203",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 66
+    },
+    {
+      "rph_id": "61",
+      "rpt2027_block": 34,
+      "sp_codes": [
+        "6.3.1"
+      ],
+      "title_source": "RPH 61 — Perimeter poligon hingga lapan sisi  |  PRA-READY",
+      "source_docx": "RPH_T4_61_PRA_READY.docx",
+      "sha256_docx": "b74bc3a30a1fb48ebee2591b5dcb13c267d104e87d74a5d4d4b3ec70a2d897f7",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Perimeter",
+      "textbook_topic_pages_from_contents": "204–205",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 67
+    },
+    {
+      "rph_id": "62",
+      "rpt2027_block": 34,
+      "sp_codes": [
+        "6.3.2"
+      ],
+      "title_source": "RPH 62 — Luas segi empat dan segi tiga  |  PRA-READY",
+      "source_docx": "RPH_T4_62_PRA_READY.docx",
+      "sha256_docx": "48d1ed01d9bdc4c5040d45ce39ce3be6e4d7b00eb9d3affa056afb40d9c858f6",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Luas",
+      "textbook_topic_pages_from_contents": "206–208",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 68
+    },
+    {
+      "rph_id": "63",
+      "rpt2027_block": 35,
+      "sp_codes": [
+        "6.4.1"
+      ],
+      "title_source": "RPH 63 — Isi padu kubus dan kuboid  |  PRA-READY",
+      "source_docx": "RPH_T4_63_PRA_READY.docx",
+      "sha256_docx": "0e2940f1bc079f2b6988952bff22a14b2088eea9082e109d8f4816e56e8d3bdc",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Isi Padu",
+      "textbook_topic_pages_from_contents": "209–210",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 69
+    },
+    {
+      "rph_id": "64",
+      "rpt2027_block": 36,
+      "sp_codes": [
+        "6.5.1"
+      ],
+      "title_source": "RPH 64 — Penyelesaian masalah ruang  |  PRA-READY",
+      "source_docx": "RPH_T4_64_PRA_READY.docx",
+      "sha256_docx": "8d0afa9f9ecd0cd09c51433771a4b0cc2c029f04c961a8010be6bbfe452760f3",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Ruang)",
+      "textbook_topic_pages_from_contents": "211–213",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 70
+    },
+    {
+      "rph_id": "65",
+      "rpt2027_block": 37,
+      "sp_codes": [
+        "7.1.1"
+      ],
+      "title_source": "RPH 65 — Paksi-x, paksi-y dan asalan  |  PRA-READY",
+      "source_docx": "RPH_T4_65_PRA_READY.docx",
+      "sha256_docx": "57c40e933a8ccd8f72229c7dcc3642c3852c83986800fac6c5744f6418a50581",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Kenal dan Tentukan Koordinat",
+      "textbook_topic_pages_from_contents": "215–216",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 71
+    },
+    {
+      "rph_id": "66",
+      "rpt2027_block": 37,
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "title_source": "RPH 66 — Menentukan dan menanda koordinat sukuan pertama  |  PRA-READY",
+      "source_docx": "RPH_T4_66_PRA_READY.docx",
+      "sha256_docx": "e9e2a3b9fa38d028eccd9f46f1ed4d3ee988f03e6d4e6c04a72cb8bdcb9fec49",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tanda Titik Koordinat",
+      "textbook_topic_pages_from_contents": "217",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 72
+    },
+    {
+      "rph_id": "67",
+      "rpt2027_block": 38,
+      "sp_codes": [
+        "7.2.1"
+      ],
+      "title_source": "RPH 67 — Mewakilkan nisbah dua kuantiti  |  PRA-READY",
+      "source_docx": "RPH_T4_67_PRA_READY.docx",
+      "sha256_docx": "9f5f70cd6fd5116fd86e6db6263fe94485066ce525ba87dd831dc114b9043d2c",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Nisbah",
+      "textbook_topic_pages_from_contents": "218–221",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 73
+    },
+    {
+      "rph_id": "68",
+      "rpt2027_block": 39,
+      "sp_codes": [
+        "7.3.1"
+      ],
+      "title_source": "RPH 68 — Kadaran menggunakan kaedah unitari  |  PRA-READY",
+      "source_docx": "RPH_T4_68_PRA_READY.docx",
+      "sha256_docx": "c2d86ee49dd0534afffc4e73a5152f67d2d4e0c93a58fbe6fe50dfdd26dd03aa",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Kadaran",
+      "textbook_topic_pages_from_contents": "222–225",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 74
+    },
+    {
+      "rph_id": "69",
+      "rpt2027_block": 40,
+      "sp_codes": [
+        "7.4.1"
+      ],
+      "title_source": "RPH 69 — Penyelesaian masalah koordinat, nisbah dan kadaran  |  PRA-READY",
+      "source_docx": "RPH_T4_69_PRA_READY.docx",
+      "sha256_docx": "82c2a209148611bd063ede604093c415b2954451da73774cbe2ee34bd2238702",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Koordinat, Nisbah dan Kadaran)",
+      "textbook_topic_pages_from_contents": "226–230",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 75
+    },
+    {
+      "rph_id": "70",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "title_source": "RPH 70 — Mengumpul dan menyusun data tak terkumpul  |  PRA-READY",
+      "source_docx": "RPH_T4_70_PRA_READY.docx",
+      "sha256_docx": "a01f8c922e65c41071d4f14dee0cb360c8cac77d3ddd727a8eda0a5fcc77e7b7",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bina Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "233–235",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 76
+    },
+    {
+      "rph_id": "71",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "title_source": "RPH 71 — Membina piktograf satu simbol satu unit  |  PRA-READY",
+      "source_docx": "RPH_T4_71_PRA_READY.docx",
+      "sha256_docx": "294212a82768b79f75882ed5489ce9b9e0f6c42ab6c31fd91768963cc1979757",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bina Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "233–235",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 77
+    },
+    {
+      "rph_id": "72",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "title_source": "RPH 72 — Membina piktograf dengan skala dua unit  |  PRA-READY",
+      "source_docx": "RPH_T4_72_PRA_READY.docx",
+      "sha256_docx": "b8e9bcadb030bad20a7cf8a94a228a9096c2f88a99da8dfff78e49ed076a4884",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bina Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "233–235",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 78
+    },
+    {
+      "rph_id": "73",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "title_source": "RPH 73 — Membina carta palang menegak  |  PRA-READY",      "source_docx": "RPH_T4_73_PRA_READY.docx",
+      "sha256_docx": "85c34ddd3f7cd99ce2068043f4072736dcbe8293d6047430506085e526332c13",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bina Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "233–235",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 79
+    },
+    {
+      "rph_id": "74",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "title_source": "RPH 74 — Membina carta palang menggunakan skala dua  |  PRA-READY",
+      "source_docx": "RPH_T4_74_PRA_READY.docx",
+      "sha256_docx": "7512c558ec8d73683c898ff63beeea193bc255c73f30b686f685affc2fa448f0",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Bina Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "233–235",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 80
+    },
+    {
+      "rph_id": "75",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "title_source": "RPH 75 — Mentafsir piktograf dan carta palang  |  PRA-READY",
+      "source_docx": "RPH_T4_75_PRA_READY.docx",
+      "sha256_docx": "622d6d1c8d16312ccb9b30e8e5b2201764ce8633fe7dfc89e4e657fb4dbccd50",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tafsir Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "236–238",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 81
+    },
+    {
+      "rph_id": "76",
+      "rpt2027_block": 41,
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "title_source": "RPH 76 — Membanding dan membuat inferens daripada data  |  PRA-READY",
+      "source_docx": "RPH_T4_76_PRA_READY.docx",
+      "sha256_docx": "a135390559c29fda9c6e3a8aaad412ab14155e2076fd69b1f6445aa1e697879b",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Tafsir Piktograf dan Carta Palang",
+      "textbook_topic_pages_from_contents": "236–238",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 82
+    },
+    {
+      "rph_id": "77",
+      "rpt2027_block": 42,
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "title_source": "RPH 77 — Menyelesaikan masalah harian pengurusan data  |  PRA-READY",
+      "source_docx": "RPH_T4_77_PRA_READY.docx",
+      "sha256_docx": "30cc7dd1e57c76896d798ed3f8f58087f989ee8caddc3103ad03e94279a92491",
+      "source_status": "PRA-READY",
+      "rpt2027_mapping_status": "PADANAN KANDUNGAN; BELUM SAH SLOT/TARIKH",
+      "textbook_topic": "Selesaikan Masalah (Pengurusan Data)",
+      "textbook_topic_pages_from_contents": "239–241",
+      "textbook_page_text_verified": false,
+      "textbook_pages_verified": null,
+      "activity_book_status": "BELUM DISAHKAN",
+      "source_mentions_rpt2026": false,
+      "runtime_approved": false,
+      "proposed_sequence": 83
+    }
+  ]
+}
