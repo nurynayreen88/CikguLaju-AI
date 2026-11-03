@@ -1,14 +1,23 @@
-# Lesson 036: Speaking 7
+# English Year 5 — Lesson 36 (Speaking 7)
 
-Source: Year 5 Scheme of Work, page 73. Topic: Days.
-Main standard: Speaking 2.2.1. Complementary: Reading 3.2.3.
-Student Book page 22 Activity 2. Teacher Book page 36.
+**Status:** DRAF — pending full source audit. **Topic:** Days. **Main LS:** Speaking 2.2.1. **Complementary LS:** Reading 3.2.3. **Time:** 60 minutes (suggested).
 
-1. Review daily routines and times of day.
-2. Pupils read Key Phrases and compare answers to the Days and Nights quiz.
-3. Pairs display true or false cards as teacher reads the quiz facts and checks answers.
-4. Groups discuss three surprising facts using the Key Phrases, then guess partners' routines.
-5. Review through Spot the Differences. Assess speaking exchanges and reading clues.
+**Materials:** English Plus 1 SB p.22 Activity 2; TB p.36; True/False cards. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-Differentiation: Some pairs discuss six to eight facts rather than twelve.
-Workbook exercise unverified. Draft pending final checks.
+**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+
+**Set induction (5 min):** Teacher lists morning, afternoon, evening and night; pupils recall daily routines.
+
+**Activity 1 (15 min):** Teacher models the Key Phrases. Pupils read and compare their true/false responses to the 12 Days and Nights quiz statements.
+
+**Activity 2 (15 min):** Pairs raise True or False cards as the teacher reads quiz claims. Pupils check answers, choose three surprising facts and explain choices with What do you think? and What about you?
+
+**Activity 3 (15 min):** Teacher models a time interval such as 7.30–8.30 a.m. Pairs guess each other's activities at different times and confirm or correct the guesses.
+
+**PBD (5 min):** Teacher notes meaningful turn-taking, use of Key Phrases and evidence of reading understanding. Each pupil contributes one opinion with a reason.
+
+**Closure (5 min):** Pairs complete Spot the Differences after teacher changes five words from quiz statements.
+
+**Differentiation:** Provide response cards and sentence starters; extend by giving reasons for surprising facts.
+
+**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
