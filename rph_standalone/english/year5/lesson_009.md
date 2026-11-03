@@ -3,7 +3,7 @@
 **Official SOW:** Primary Year 5 SK Lesson 9, printed p.43; Starter Unit; **Theme:** World of Self, Family and Friends; **Topic:** Free time. **Suggested duration:** 60 minutes.
 **Main CS/LS:** Writing 4.2/4.2.4. **Complementary CS/LS:** Speaking 2.1/2.1.5.
 **Language focus:** adjectives; very/really/quite; have got.
-**Objective:** Pupils demonstrate the main skill through the specified lesson tasks and show complementary-skill understanding.
+**Learning objectives:** Main (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the Free time activities. Complementary (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements through the linked speaking task.
 **Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
 **Materials:** SB p.8 Activities 3–4 and reread Activity 1; SB p.9 Activity 3; TB pp.22–23; illustrated phone-price handout.
 

@@ -2,7 +2,7 @@
 
 **Source:** Official Primary Year 5 SK Scheme of Work Lesson 11, printed p.46. **Theme:** World of Knowledge. **Topic:** Free time. **Duration:** 60 minutes suggested.
 **Main CS/LS:** Listening 1.2/1.2.5. **Complementary CS/LS:** Reading 3.2/3.2.3. **Language focus:** countries and nationalities; question words.
-**Learning objective:** Pupils demonstrate the main and complementary skills using the exact SOW lesson activities with appropriate teacher support.
+**Learning objectives:** Main (Listening 1.2.5) — pupils understand a sequence of supported questions in the Free time activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words through the linked reading task.
 **Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.
 **Materials:** SB p.10 Activities 1–2; p.11 Activities 1–3; TB pp.24–25; CD 1-12.
 

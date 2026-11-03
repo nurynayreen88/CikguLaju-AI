@@ -3,7 +3,7 @@
 **Official SOW:** Primary Year 5 SK Lesson 6, printed p.40; Starter Unit; **Theme:** World of Self, Family and Friends; **Topic:** Free time. **Suggested duration:** 60 minutes.
 **Main CS/LS:** Listening 1.1/1.1.1. **Complementary CS/LS:** Reading 3.2/3.2.1.
 **Language focus:** possessive 's; /s/ and /z/.
-**Objective:** Pupils demonstrate the main skill through the specified lesson tasks and show complementary-skill understanding.
+**Learning objectives:** Main (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the Free time activities. Complementary (Reading 3.2.1) — pupils understand the main idea of simple texts of one or two paragraphs through the linked reading task.
 **Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
 **Materials:** SB p.7 Activities 1–4; TB p.21; CD 1-08.
 

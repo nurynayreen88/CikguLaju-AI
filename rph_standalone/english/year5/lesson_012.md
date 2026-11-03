@@ -2,7 +2,7 @@
 
 **Source:** Official Primary Year 5 SK Scheme of Work Lesson 12, printed p.47. **Theme:** World of Self, Family and Friends. **Topic:** Free time. **Duration:** 60 minutes suggested.
 **Main CS/LS:** Speaking 2.1/2.1.1. **Complementary CS/LS:** Writing 4.3/4.3.2. **Language focus:** question words; nationality adjectives.
-**Learning objective:** Pupils demonstrate the main and complementary skills using the exact SOW lesson activities with appropriate teacher support.
+**Learning objectives:** Main (Speaking 2.1.1) — pupils give detailed information about themselves in the Free time activities. Complementary (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing through the linked writing task.
 **Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.
 **Materials:** SB p.10 Activity 2; p.11 Key Phrases Activity 3 and Activity 4; TB p.25.
 

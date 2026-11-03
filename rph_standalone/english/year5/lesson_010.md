@@ -3,7 +3,7 @@
 **Official SOW:** Primary Year 5 SK Lesson 10, printed p.44; Starter Unit; **Theme:** World of Stories; **Topic:** This Tooth. **Suggested duration:** 60 minutes.
 **Main CS/LS:** Language Arts 5.3/5.3.1. **Complementary CS/LS:** Speaking 2.3/2.3.1.
 **Language focus:** connectors first, next, finally.
-**Objective:** Pupils demonstrate the main skill through the specified lesson tasks and show complementary-skill understanding.
+**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the This Tooth activities. Complementary (Speaking 2.3.1) — pupils narrate short basic stories and events through the linked speaking task.
 **Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
 **Materials:** NON-TEXTBOOK: Anthology of Poems p.18 'This Tooth'; BPK Poetry Guidebook; mask materials.
 

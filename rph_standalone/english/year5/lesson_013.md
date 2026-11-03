@@ -2,7 +2,7 @@
 
 **Source:** Official Primary Year 5 SK Scheme of Work Lesson 13, printed p.48. **Theme:** World of Self, Family and Friends. **Topic:** Free time. **Duration:** 60 minutes suggested.
 **Main CS/LS:** Reading 3.3/3.3.1. **Complementary CS/LS:** Writing 4.3/4.3.1. **Language focus:** question words; and, but, or.
-**Learning objective:** Pupils demonstrate the main and complementary skills using the exact SOW lesson activities with appropriate teacher support.
+**Learning objectives:** Main (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the Free time activities. Complementary (Writing 4.3.1) — pupils use capital letters, full stops, commas in lists and question marks appropriately in independent writing at discourse level through the linked writing task.
 **Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.
 **Materials:** SB p.11 Activities 5–7; TB p.25; conjunction cards.
 

@@ -3,7 +3,7 @@
 **Official SOW:** Primary Year 5 SK Lesson 7, printed p.41; Starter Unit; **Theme:** World of Self, Family and Friends; **Topic:** Free time. **Suggested duration:** 60 minutes.
 **Main CS/LS:** Speaking 2.1/2.1.1. **Complementary CS/LS:** Writing 4.2/4.2.1.
 **Language focus:** interrogatives with be; prepositions of place.
-**Objective:** Pupils demonstrate the main skill through the specified lesson tasks and show complementary-skill understanding.
+**Learning objectives:** Main (Speaking 2.1.1) — pupils give detailed information about themselves in the Free time activities. Complementary (Writing 4.2.1) — pupils give detailed information about themselves through the linked writing task.
 **Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
 **Materials:** SB p.7 Activities 5–6; TB p.21.
 
