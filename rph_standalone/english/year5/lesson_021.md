@@ -3,7 +3,7 @@
 **Official SOW:** Lesson 21, printed p.57. **Topic:** Cats. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Language Arts 5.3/5.3.1; Writing 4.2/4.2.4.
 **Materials:** Anthology of Poems p.15 Cats; BPK Poetry Guidebook Activity 4 p.35; cat-shape poem example.
-**Learning objective:** Pupils demonstrate the identified skills using the lesson-specific SOW activities.
+**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the Cats activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
 
 1. **Set induction (8 min):** Recall and mime scratching and napping from the poem Cats.
 2. **Activity 1 (12 min):** Pupils think individually of other cat actions, discuss in pairs, then share in groups.

@@ -3,7 +3,7 @@
 **Official SOW:** Lesson 24, printed p.60. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Speaking 2.1/2.1.2; Listening 1.1/1.1.1.
 **Materials:** SB p.17 Activities 1,4,5; TB p.31; CD 1-18.
-**Learning objective:** Pupils demonstrate the identified skills using the lesson-specific SOW activities.
+**Learning objectives:** Main (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the Towns and cities activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.
 
 1. **Set induction (8 min):** Brainstorm six to ten adjectives and review comparatives using TB p.31 warm-up.
 2. **Activity 1 (12 min):** Complete Activity 1; form and spell comparative adjectives on the board.

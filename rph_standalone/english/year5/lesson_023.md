@@ -3,7 +3,7 @@
 **Official SOW:** Lesson 23, printed p.59. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Listening 1.2/1.2.2; Writing 4.3/4.3.2.
 **Materials:** SB p.16 Activities 1–4; TB p.30; CD 1-16 and 1-17.
-**Learning objective:** Pupils demonstrate the identified skills using the lesson-specific SOW activities.
+**Learning objectives:** Main (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics in the Towns and cities activities. Complementary (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing in the linked writing task.
 
 1. **Set induction (8 min):** Compare photographs of old and modern Malaysian buildings; answer Think! question.
 2. **Activity 1 (12 min):** Listen to CD 1-16 for Activity 1 and practise adjective pronunciation.
