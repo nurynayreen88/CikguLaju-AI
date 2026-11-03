@@ -1,23 +1,21 @@
 # English Year 5 — Standalone RPH — Lesson 028 (Consolidation 2)
 
-**Status:** DRAF — SOW-aligned revision, pending final visual/audio and teacher QA. **Topic:** Towns and cities. **Main LS:** 4.3.2. **Complementary LS:** 2.2.1. **Duration:** 60 minutes (suggested).
+**Status:** DRAF — source aligned, final QA pending. **Topic:** Towns and cities. **Main LS:** Writing 4.3.2. **Complementary LS:** Speaking 2.2.1. **Time:** 60 minutes (suggested).
 
-**Language focus:** there is/are…; Is/Are there…? How many…? Comparative adjectives. **Materials:** English Plus 1 Student’s Book Activities 2, 5, 6 p.20 Teacher’s Book p.34.
+**Materials:** English Plus 1 Student Book p.20 Activities 2, 5 and 6; Teacher Book p.34; local street map, adjective cards; Workbook pp.18–19 (Unit 1 Progress Review, mapping verified previously).
 
-**Learning objective:** Pupils use Towns and cities language to complete the prescribed Consolidation 2 tasks and demonstrate main LS 4.3.2 and complementary LS 2.2.1.
+**Objective:** Pupils spell comparative adjectives accurately and sustain a short exchange about places and directions.
 
-**Set induction (5 min):** See Pre-Lesson Task 9: Memory Chain. Use vocabulary of things in towns and cities. Substitute shopping sentence with: I went to a town / city and saw a cinema.
+**Set induction (5 min):** Teacher starts a memory chain using things in towns and cities. Pupils add a new place to each sentence.
 
-**Activity 1 (15 min):** Pupils do Activity 2. Say that in two sentences ‘a’ and ‘an’ change. Pupils compare with a partner. Ask: What word needs ‘an’? (ugly) Is number 6 new or modern? Check answers.
+**Activity 1 — Language accuracy (15 min):** Pupils complete SB Activity 2 and check when to use a/an. Teacher draws attention to “an ugly…” and asks pairs to explain their choices.
 
-**Activity 2 (15 min):** Pupils do Activity 5. Model the first sentence. When finished, they compare with a different partner. Check answers. Choose 6 pupils to write the comparative forms on board. Ask: Is the spelling correct? Which sentences are hard? Why?
+**Activity 2 — Comparatives (15 min):** Pupils complete Activity 5, compare answers with new partners and write comparative forms on the board. Teacher checks -y to -ier and other spelling changes; pupils correct errors.
 
-**Activity 3 (15 min):** Show a paper or digital street map of local area on board. Elicit when pupils use a map; how a map helps them; what type of map they use. Pupils complete the dialogue in Activity 6. Check answers. CCE: Values – Ask pupils why it is important to help people who are lost. 5. Pupils in pairs practise reading dialogue aloud. For pairs with a boy and girl, change Laura to Leo; for pairs of boys, change names to Leo and Man.
+**Activity 3 — Giving help (15 min):** Teacher shows a local street map. Pupils complete Activity 6 and practise the dialogue in pairs, taking turns to ask questions and give clear directions. Discuss why people should help someone who is lost.
 
-**PBD (5 min):** Teacher checks written responses for task accuracy and records pupils requiring spelling or language support; pupils correct one response.
+**PBD (5 min):** Teacher collects six comparative forms and observes one short pair exchange, checking spelling and the ability to ask a follow-up question.
 
-**Closure (5 min):** Pupils work in small groups. Hand out paper and cards with 6 adjectives ending in -y (pretty, ugly, busy, friendly, noisy, dirty). Pupils take turns to write the comparative form. The group that finishes first with correct spelling is winner.
+**Closure (5 min):** Groups convert six adjective cards (pretty, ugly, busy, friendly, noisy, dirty) into correct comparatives.
 
-**Workbook link (from existing verified mapping):** Workbook p.18-19, Unit 1 Progress Review — Places, questions, comparing places, comparative adjectives, speaking and writing, Ex1-7. Use as brief practice or evidence without replacing the SOW tasks.
-
-**Differentiation:** Provide visual models or paired support for pupils who need help; extend confident pupils through independent responses. **QA note:** Workbook mapping is a prior source QA result; Student Book, Teacher Book, audio-content and A4 layout have not all been independently verified.
+**Workbook:** Relevant Unit 1 Progress Review exercises may be used for brief further practice. **Differentiation:** Provide adjective spelling models and dialogue prompts, with role allocation suited to proficiency. **QA:** Source pages and printed A4 layout require final verification before READY.
