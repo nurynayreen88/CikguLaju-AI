@@ -1,0 +1,25 @@
+name: English Year 6 2027 RPH runtime integration
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y6_standalone_runtime.py'
+      - 'rph_standalone/english/year6/**'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_y6_rph_runtime.py'
+      - '.github/workflows/english-y6-rph-runtime.yml'
+  push:
+    branches: [feat/english-y6-rph-release-runtime-20261103]
+permissions: {contents: read}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Flask>=3.0,<4'
+      - run: python -m unittest discover -s tests -p 'test_english_y6_rph_runtime.py' -v
+      - run: python -m unittest discover -s tests -p 'test_telegram_optional_wsgi.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y6_rph_2027_files.py' -v
