@@ -6,7 +6,7 @@ RPT 2026 rujukan: https://docs.google.com/document/d/1wlrI120RKhZh85oSPIZPPgJwj7
 Buku Teks/DSKP: [Senarai sumber BM Tahun 3](tahun_3_rpt_2027_pemetaan_unit_DRAF.md)
 Kalendar A/B 2027: https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit
 
-Rekod BM calon: **165** (termasuk **2** baris berulang yang sengaja DIKEKALKAN untuk audit). Liputan **24/24 unit**. Baris sokongan/cuti/PKJR tanpa Unit BM yang diasingkan: **44**. Rekod tanpa kod SP jelas: **1**.
+Rekod BM calon: **165** (termasuk **2** baris berulang yang sengaja DIKEKALKAN untuk audit); 1 kod calon dirujuk silang DSKP tetapi menunggu semakan buku (3 Nov 2026).. Liputan **24/24 unit**. Baris sokongan/cuti/PKJR tanpa Unit BM yang diasingkan: **44**. Rekod tanpa kod SP jelas: **1**.
 
 **Peringatan penjadualan:** M2027 di bawah ialah cadangan padanan ordinal berdasarkan minggu sumber 2026; bukan pengesahan hari PdP atau peruntukan waktu sekolah. Minggu RPT tidak menjadi identiti PdP. Satu rekod calon tidak semestinya satu waktu mengajar. Rujukan BA ialah daripada RPT 2026, belum dibandingkan terus dengan Buku Aktiviti.
 
@@ -19,7 +19,7 @@ Rekod BM calon: **165** (termasuk **2** baris berulang yang sengaja DIKEKALKAN u
 | BM3-P005 | 2 | M02 | 2027-01-10–2027-01-14 | 2027-01-11–2027-01-15 | Kekeluargaan; U1: Keluarga Cergas | 5.1.1 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 6 | BA m/s 5 | DRAF |
 | BM3-P006 | 3 | M03 | 2027-01-17–2027-01-21 | 2027-01-18–2027-01-22 | Kekeluargaan; U1: Keluarga Cergas | 4.1.1 | Seni Bahasa; Apresiasi/persembahan bahasa | Semak BT | BA m/s 4 | DRAF |
 | BM3-P007 | 3 | M03 | 2027-01-17–2027-01-21 | 2027-01-18–2027-01-22 | Kekeluargaan; U1: Keluarga Cergas | 5.1.1 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema | BT1 m/s 6 | BA m/s 6 | DRAF |
-| BM3-P008 | 3 | M03 | 2027-01-17–2027-01-21 | 2027-01-18–2027-01-22 | Kekeluargaan; U2: Kejayaan Keluarga | — | SEMakan diperlukan; perlu semak | BT1 m/s 7 | BA m/s 7 | DRAF / SEMAK SP |
+| BM3-P008 | 3 | M03 | 2027-01-17–2027-01-21 | 2027-01-18–2027-01-22 | Kekeluargaan; U2: Kejayaan Keluarga | 1.1.1 (ii) — calon | Mendengar/menyebut ayat majmuk; Kejayaan Kita Bersama; RPT 2026 tanpa kod, padanan DSKP disemak; perlu semak BT sebenar | BT1 m/s 7 | BA m/s 7 | DRAF / SEMAK BT + PENGESAHAN SP |
 | BM3-P009 | 3 | M03 | 2027-01-17–2027-01-21 | 2027-01-18–2027-01-22 | Kekeluargaan; U2: Kejayaan Keluarga | 2.1.1 | Membaca; Bacaan dan soalan pemahaman | BT1 m/s 8 | BA m/s 8 | DRAF |
 | BM3-P010 | 4 | M04 | 2027-01-24–2027-01-28 | 2027-01-25–2027-01-29 | Kekeluargaan; U2: Kejayaan Keluarga | 3.2.1 | Menulis; Semakan bahan bertulis | BT1 m/s 9 | BA m/s 9 | DRAF |
 | BM3-P011 | 4 | M04 | 2027-01-24–2027-01-28 | 2027-01-25–2027-01-29 | Kekeluargaan; U2: Kejayaan Keluarga | 4.1.1 | Seni Bahasa; Apresiasi/persembahan bahasa | BT1 m/s 10 | BA m/s 6 | DRAF |
