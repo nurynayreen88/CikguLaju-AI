@@ -1,25 +1,21 @@
 # English Year 5 — Standalone RPH — Lesson 080 (Writing 14)
 
-**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Learning World. **Main LS:** 4.2.4. **Complementary LS:** 2.2.2. **Duration:** 60 min, suggested.
+**Status:** DRAF — source aligned, final QA pending. **Topic:** Learning World. **Main LS:** Writing 4.2.4. **Complementary LS:** Speaking 2.2.2. **Time:** 60 minutes (suggested).
 
-**Language focus:** Present continuous and simple tenses. **Materials:** English Plus 1 Student’s Book Activities 5 and 6 p.47 Teacher’s Book p.61.
+**Materials:** English Plus 1 Student Book p.47 Activities 5–6 and Finished?; Teacher Book p.61; Workbook pp.39 and 41, Unit 4 Present Continuous/Simple and Writing Email (historic QA mapping).
 
-**Objective:** Pupils demonstrate the prescribed skills through specific Learning World activities and an observable output.
+**Objective:** Pupils produce accurate sentences using present simple or present continuous and agree on steps to carry out a short group task.
 
-**Set induction (5 min):** 1. See Section 3, Pre-lesson Task 6: Finger Writing. Use 5 words from p.47, Activity 5 but change order so easier words are first (play, speak, chat, relax, practise).
+**Set induction (5 min):** Teacher runs Finger Writing using play, speak, chat, relax and practise.
 
-**Activity 1 (15 min):** Write ‘present simple’ and ‘present continuous’ on board. Say sentences with the tenses. Pupils put up left hand for simple, right hand for continuous. Pupils do Activity 5. After each text, they compare answers with a partner. Check answers after each text. Ask after each text: Which word tells you the verb is present continuous? (2.
+**Activity 1 — Choose the tense (15 min):** Teacher contrasts present simple with present continuous using examples. Pupils signal the tense they hear, then complete SB Activity 5 and explain time clues such as “at the moment”.
 
-**Activity 2 (15 min):** Pupils in groups of three agree on which text, Charlotte, Pat or Melanie, they will read aloud to the others – a different text each. They also prepare a question about their text to ask the others and agree on who will be first second and third to read and ask their.
+**Activity 2 — Collaborative reading (15 min):** Groups of three select different texts about Charlotte, Pat and Melanie. They agree who will read first, prepare one question each, and take turns reading and questioning.
 
-**Activity 3 (15 min):** Pupils do Activity 6, Use it!. Explain that pupils have to imagine they are a ‘lottery winner’ – check understanding. Follow instructions in Teacher’s Book p.61 Exercise 6. CCE – Values – Ask pupils if they think it’s important to imagine how other people live. 5. Pupils in pairs do Finished? They find two or three photos to write questions about. They write page numbers after questions and give to partner to answer. Choose pupils to say the photo, page number, question and answer.
+**Activity 3 — Personalise (15 min):** Pupils complete Activity 6 by imagining how they would live as a lottery winner. Pairs compare choices and write questions about selected book photographs for partners to answer.
 
-**PBD (5 min):** Teacher records how well pupils ask about and describe people using the two present tenses.
+**PBD (5 min):** Teacher checks two accurate sentences using the appropriate tense and observes whether each group agrees task order and participates.
 
-**Closure (5 min):** 6. See Section 3, Pre-lesson Task 9: Memory Chain. Use the sentence: I looked in the book and found a photo of a/an/some ___.
+**Closure (5 min):** Pupils state one difference between the two tenses and one successful way their group worked together.
 
-**Workbook practice:** Workbook p.39,41, Unit 4 present continuous/simple + Writing email, Ex3-4 / Ex1-4. Use as brief follow-up without replacing the SOW tasks.
-
-**Differentiation:** At Step 2: Pair some mixed-ability pupils together. As an example, more proficient pupils can write verbs for Charlotte then together they write verbs for Pat and Melanie.
-
-**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
+**Differentiation:** Provide a tense timeline and model sentences; extend independent pupils with contrasting examples. **QA:** Final source images and A4 pagination remain pending before READY.
