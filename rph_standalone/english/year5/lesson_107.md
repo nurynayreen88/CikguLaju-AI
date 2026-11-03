@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB pp.62–63 Activities 1–3; TB pp.76–77; CD2.12. Workbook mapping and audio content (where applicable) not independently verified.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Listening 1.3.1) — pupils guess the meaning of unfamiliar words from clues provided by other known words in the Sport activities. Complementary (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the linked reading task.
 
 **Set induction (5 min):** Teacher starts a Sports mind map. Pupils brainstorm familiar sports.
 

@@ -4,7 +4,7 @@
 
 **Language focus:** Simple past tense of verb ‘to be’ affirmative and negative: there was / wasn’t, there were / weren’t. **Materials:** English Plus 1 Student’s Book Activity 4 p.64 Teacher’s Book p.78.
 
-**Objective:** Pupils complete the specific Writing 19 lesson tasks using Sport vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Writing 4.2.3) — pupils narrate factual events and experiences of interest in the Sport activities. Complementary (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the linked reading task.
 
 **Set induction (5 min):** Explain that pupils are going to write about sports they like watching. Pupils do Pre-lesson Task 4: I’m Going To... Relate the task to writing skills e.g. topic vocabulary, spelling, punctuation.
 

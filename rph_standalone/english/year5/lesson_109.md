@@ -4,7 +4,7 @@
 
 **Language focus:** Noun suffixes -er, -or e.g. winner, competitor; Dates e.g. 1988; 2016. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.64 Teacher’s Book p.78; Audio: CD2.14.
 
-**Objective:** Pupils complete the specific Reading 19 lesson tasks using Sport vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Reading 3.2.2) — pupils understand specific information and details of two paragraphs or more in the Sport activities. Complementary (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the linked reading task.
 
 **Set induction (5 min):** Pupils do Think! question at top of p.64. Elicit information about the Olympic Games from pupils. Note: check where next Olympics are and when.
 
