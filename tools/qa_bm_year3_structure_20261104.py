@@ -57,7 +57,7 @@ def main():
             errors.append(f"Missing status {n:03d}")
         else:
             statuses[status] += 1
-        if not all(k in content for k in ["Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup"]):
+        if not all(k.lower() in content.lower() for k in ["Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup"]):
             errors.append(f"Missing core RPH phase {n:03d}")
     print("RPT: ",len(rows),"RPH: ",len(present),"Status:",dict(statuses))
     print("Errors:",len(errors))
