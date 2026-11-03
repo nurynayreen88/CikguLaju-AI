@@ -1,5 +1,7 @@
 # Year 5 Lesson 154 — Consolidation 16
 
+**Official SOW topic:** Going away.
+
 Status: DRAF. Unit 8. Main LS 1.2.2; complementary LS 2.1.4.
 Materials: Student Book p.90 Activities 3, 4, 5 and 7; Teacher Book p.104; CD2-37; Europe map. Workbook mapping and audio playback remain unverified.
 
