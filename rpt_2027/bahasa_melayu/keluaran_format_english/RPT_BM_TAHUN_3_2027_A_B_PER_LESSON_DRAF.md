@@ -44,7 +44,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 
 | Lesson | Tema / Unit | Aktiviti khusus | SK (DSKP) | SP (DSKP) | BT / BA | Catatan / PBD |
 |---|---|---|---|---|---|---|
-| **Lesson 010** (BM3-P010) | Kekeluargaan; U2: Kejayaan Keluarga | Usaha Gigih Datuk | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (i) — Membina dan menulis | BT1 m/s 9; BA m/s 9 | Menulis; Semakan bahan bertulis |
+| **Lesson 010** (BM3-P010) | Kekeluargaan; U2: Kejayaan Keluarga | Usaha Gigih Datuk | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (i) — Membina dan menulis ayat | BT1 m/s 9; BA m/s 9 | Menulis; Semakan bahan bertulis |
 | **Lesson 011** (BM3-P011) | Kekeluargaan; U2: Kejayaan Keluarga | Mari Bersepakat | 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera. | 4.1.1 (i) — Bercerita dengan menggunakan gaya bahasa yang indah dan santun | BT1 m/s 10; BA m/s 6 | Seni Bahasa (modular): bukti boleh ditaksir melalui mendengar/bertutur, membaca atau menulis seperti catatan DSKP |
 | **Lesson 012** (BM3-P012) | Kekeluargaan; U2: Kejayaan Keluarga | Kita Boleh! | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.1 (iii) — Memahami dan menggunakan golongan kata nama mengikut konteks | BT1 m/s 11; BA m/s 3 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
 | **Lesson 013** (BM3-P013) | Kekeluargaan; U2: Kejayaan Keluarga | Kita Boleh! | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.1 (iii) — Memahami dan menggunakan golongan kata nama mengikut konteks | BT1 m/s 11; BA m/s 11-12 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
@@ -54,11 +54,11 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 
 | Lesson | Tema / Unit | Aktiviti khusus | SK (DSKP) | SP (DSKP) | BT / BA | Catatan / PBD |
 |---|---|---|---|---|---|---|
-| **Lesson 015** (BM3-P015) | Kekeluargaan; U2: Kejayaan Keluarga | Usaha Gigih Datuk | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (i) — Membina dan menulis | BT1 m/s 9; BA m/s 9 | Menulis; Semakan bahan bertulis |
+| **Lesson 015** (BM3-P015) | Kekeluargaan; U2: Kejayaan Keluarga | Usaha Gigih Datuk | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (i) — Membina dan menulis ayat | BT1 m/s 9; BA m/s 9 | Menulis; Semakan bahan bertulis |
 | **Lesson 016** (BM3-P016) | Kekeluargaan; U2: Kejayaan Keluarga | Pesanan Ibu | 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera. | 4.1.1 (i) — Bercerita dengan menggunakan gaya bahasa yang indah dan santun | BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 9 | Seni Bahasa (modular): bukti boleh ditaksir melalui mendengar/bertutur, membaca atau menulis seperti catatan DSKP • Semak tajuk penuh |
 | **Lesson 017** (BM3-P017) | Kekeluargaan; U3: Kenangan Manis | Penghubung Kasih | 1.1 Mendengar dan memberikan respons. | 1.1.1 (i), (ii) — Mendengar, mengecam sebutan, memahami, dan menyebut dengan betul dan tepat | BT1 m/s 13; BA m/s 15 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 018** (BM3-P018) | Kekeluargaan; U3: Kenangan Manis | Kem Bestari | 2.1 Asas membaca dan memahami. | 2.1.1 (iii) — Membaca dengan sebutan yang betul dan intonasi yang sesuai | BT1 m/s 14; BA m/s 17 | Membaca; Bacaan dan soalan pemahaman • Semak tajuk penuh |
-| **Lesson 019** (BM3-P019) | Kekeluargaan; U3: Kenangan Manis | Kenangan di Kem Bestari | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (ii) — Membina dan menulis | BT1 m/s 15; BA m/s 18 | Menulis; Semakan bahan bertulis |
+| **Lesson 019** (BM3-P019) | Kekeluargaan; U3: Kenangan Manis | Kenangan di Kem Bestari | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (ii) — Membina dan menulis perenggan | BT1 m/s 15; BA m/s 18 | Menulis; Semakan bahan bertulis |
 
 ### M06 • A: 07/02–11/02 | B: 08/02–12/02
 
@@ -81,7 +81,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 |---|---|---|---|---|---|---|
 | **Lesson 024** (BM3-P024) | Kesihatan dan Kebersihan; U4: Saya Sihat dan Bertenaga | Minuman Kesihatan | 1.1 Mendengar dan memberikan respons. | 1.1.2 (i), (ii) — Mendengar, memahami, dan memberikan respons terhadap | BT1 m/s 22; BA m/s 23-24 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 025** (BM3-P025) | Kesihatan dan Kebersihan; U4: Saya Sihat dan Bertenaga | Khasiat Vitamin C | 2.1 Asas membaca dan memahami. | 2.1.2 — Membaca dengan sebutan yang betul, intonasi yang sesuai, dan memahami | BT1 m/s 23; BA m/s 25-26 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 026** (BM3-P026) | Kesihatan dan Kebersihan; U4: Saya Sihat dan Bertenaga | Makanan Sumber Tenaga | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (i) — Membina dan menulis | BT1 m/s 24; BA m/s 27-28 | Menulis; Semakan bahan bertulis |
+| **Lesson 026** (BM3-P026) | Kesihatan dan Kebersihan; U4: Saya Sihat dan Bertenaga | Makanan Sumber Tenaga | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (i) — Membina dan menulis ayat | BT1 m/s 24; BA m/s 27-28 | Menulis; Semakan bahan bertulis |
 | **Lesson 027** (BM3-P027) | Kesihatan dan Kebersihan; U4: Saya Sihat dan Bertenaga | Beriadah di Kolam Air Panas | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.3 (i) — Memahami dan menggunakan kata adjektif mengikut konteks | BT1 m/s 25; BA m/s 29 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 028** (BM3-P028) | Kesihatan dan Kebersihan; U4: Saya Sihat dan Bertenaga | Katakan Boleh | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.3 (ii) — Memahami dan menggunakan kata adjektif mengikut konteks | BT1 m/s 26; BA m/s 30 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 
@@ -91,7 +91,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 |---|---|---|---|---|---|---|
 | **Lesson 029** (BM3-P029) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Pilihan Tepat Kita Selamat | 1.1 Mendengar dan memberikan respons. | 1.1.2 (ii) — Mendengar, memahami, dan memberikan respons terhadap | BT1 m/s 27; BA m/s 31 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 030** (BM3-P030) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Mari Bersihkan Diri | 2.1 Asas membaca dan memahami. | 2.1.2 (i), (ii) — Membaca dengan sebutan yang betul, intonasi yang sesuai, dan memahami | BT1 m/s 28; BA m/s 32 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 031** (BM3-P031) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Premis Makanan Pilihan Anda | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (ii) — Membina dan menulis | BT1 m/s 29; BA m/s 33-34 | Menulis; Semakan bahan bertulis |
+| **Lesson 031** (BM3-P031) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Premis Makanan Pilihan Anda | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (ii) — Membina dan menulis perenggan | BT1 m/s 29; BA m/s 33-34 | Menulis; Semakan bahan bertulis |
 | **Lesson 032** (BM3-P032) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Jagalah Kebersihan | 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera. | 4.1.1 (ii) — Bercerita dengan menggunakan gaya bahasa yang indah dan santun | BT1 m/s 30; BA m/s 35 | Seni Bahasa (modular): bukti boleh ditaksir melalui mendengar/bertutur, membaca atau menulis seperti catatan DSKP |
 | **Lesson 033** (BM3-P033) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Dapur Bersih | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.3 (iii) — Memahami dan menggunakan kata adjektif mengikut konteks | BT1 m/s 31; BA m/s 36-37 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
 
@@ -100,7 +100,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 | Lesson | Tema / Unit | Aktiviti khusus | SK (DSKP) | SP (DSKP) | BT / BA | Catatan / PBD |
 |---|---|---|---|---|---|---|
 | **Lesson 034** (BM3-P034) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Cegah Lalat | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.4 (ii), (i) — Memahami dan menggunakan kata tugas mengikut konteks | BT1 m/s 32; BA m/s 38 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
-| **Lesson 035** (BM3-P035) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Pemilihan Berus Gigi | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (ii) — Membina dan menulis | BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 33-34 | Menulis; Semakan bahan bertulis |
+| **Lesson 035** (BM3-P035) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Pemilihan Berus Gigi | 3.2 Menulis perkataan, frasa, dan ayat yang bermakna. | 3.2.1 (ii) — Membina dan menulis perenggan | BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 33-34 | Menulis; Semakan bahan bertulis |
 | **Lesson 036** (BM3-P036) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Jagalah Kebersihan | 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera. | 4.1.1 (ii) — Bercerita dengan menggunakan gaya bahasa yang indah dan santun | BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 35 | Seni Bahasa (modular): bukti boleh ditaksir melalui mendengar/bertutur, membaca atau menulis seperti catatan DSKP |
 | **Lesson 037** (BM3-P037) | Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama | Dapur Bersih | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.3 (iii) — Memahami dan menggunakan kata adjektif mengikut konteks | BT1 m/s 31; BA m/s 36-37 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • Semak tajuk penuh |
 
