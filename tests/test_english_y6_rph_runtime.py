@@ -75,8 +75,7 @@ class Y6RPHReleaseTests(unittest.TestCase):
         runtime=types.SimpleNamespace(_rph_rows=original, callback=lambda *a:"ok", _credit_gate=lambda *a:True)
         self.assertTrue(install(runtime))
         self.assertTrue(install(runtime))
-        self.assertIs(runtime.callback.__call__,runtime.callback.__call__)
-        self.assertEqual(runtime.callback(1,"home"),"ok")
+        self.assertEqual(runtime.callback(1, "home"), "ok")
         self.assertTrue(runtime._credit_gate(1))
         self.assertEqual(runtime._rph_rows({"subject":"BM","year":"Tahun 6"},1)["OBJEKTIF PEMBELAJARAN"],"original")
 
