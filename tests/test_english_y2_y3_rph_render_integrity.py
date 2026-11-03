@@ -36,7 +36,8 @@ class EnglishYear2Year3RenderIntegrity(unittest.TestCase):
                 covered.append(n)
                 self.assertEqual(out["TARIKH"], BASE["TARIKH"])
                 self.assertEqual(out["REFLEKSI"], BASE["REFLEKSI"])
-                if out.get("PENTAKSIRAN") == BASE["PENTAKSIRAN"]:
+                if (out.get("PENTAKSIRAN") == BASE["PENTAKSIRAN"]
+                        or "Assessment / PBD" in out.get("AKTIVITI UTAMA", "")):
                     no_pbd.append(n)
                 for field in FIELDS:
                     if not out.get(field):
@@ -57,9 +58,18 @@ class EnglishYear2Year3RenderIntegrity(unittest.TestCase):
                 {"subject":"English", "year":f"Tahun {year}", "lesson_no":0},
                 {"subject":"English", "year":f"Tahun {year}", "lesson_no":161},
                 {"subject":"English", "year":f"Tahun {year}", "lesson_no":"../1"},
+                {"subject":"English", "year":f"Tahun {year}", "lesson_no":True},
+                {"subject":"English", "year":f"Tahun {year}", "lesson_no":1.5},
+                {"subject":"English", "year":f"Tahun {year}", "lesson_no":0, "textbook_lesson_no":1},
             ):
                 original = dict(BASE)
                 self.assertIs(fn(state, original), original)
+
+    def test_year2_lesson82_uses_precise_materials(self):
+        rows = y2({"subject":"English", "year":"Tahun 2", "lesson_no":82}, dict(BASE))
+        self.assertNotEqual(rows["BAHAN BANTU MENGAJAR"], BASE["BAHAN BANTU MENGAJAR"])
+        self.assertIn("outfit picture", rows["BAHAN BANTU MENGAJAR"])
+        self.assertNotIn("QA", rows["PENUTUP"])
 
     def test_critical_year3_lesson93(self):
         rows = y3({"subject":"English", "year":"Tahun 3", "lesson_no":93}, dict(BASE))
