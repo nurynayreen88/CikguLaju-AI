@@ -16,3 +16,5 @@ Closure (5 min): Pupils share one new word, form or fact and complete an exit re
 Differentiation: Provide vocabulary prompts, visuals or sentence starters for pupils needing support; ask proficient pupils to justify or extend their responses.
 
 Verification: Lesson sequence and page references drawn from official Year 5 SOW. Full book-page and audio-file audit pending; do not mark READY.
+
+**Workbook (existing source QA map):** p.54,56, Unit 6 past simple in context + Reading Paralympic sport, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.

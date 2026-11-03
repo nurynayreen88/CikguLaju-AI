@@ -17,3 +17,5 @@
 **Differentiation:** Supply question stems and a word bank for support; invite stronger pupils to ask follow-up questions and justify club choices.
 
 **Verification note:** Activity-level mapping must be checked against actual SB/TB pages; CD2-13 is SOW-listed but not playback-verified. No invented Workbook page.
+
+**Workbook (existing source QA map):** p.52, Unit 6 Vocabulary — sports/team/club and be into, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

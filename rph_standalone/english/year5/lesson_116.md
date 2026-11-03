@@ -16,3 +16,5 @@ Closure (5 min): Pupils share a learning point and submit a short exit response.
 Differentiation: Offer visual cues, word banks, shorter instructions and sentence stems as needed; extend proficient pupils with more detailed independent responses.
 
 Verification: Aligned to official Year 5 SOW outline; exact book-page content and audio playback still require final audit. Do not mark READY.
+
+**Workbook (existing source QA map):** p.55,59, Unit 6 Past time expressions Ex3-4 + Writing sports star Ex7. Optional brief follow-up; do not replace the SOW tasks.
