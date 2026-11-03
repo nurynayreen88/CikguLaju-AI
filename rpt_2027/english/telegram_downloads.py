@@ -5,6 +5,7 @@ entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 """
 from pathlib import Path
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
+from rpt_2027.pendidikan_islam.telegram_downloads import pdf_ready as pi_pdf_ready
 
 PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
@@ -58,7 +59,7 @@ def install(ns):
             kb.append([{"text": "🏠 Menu Utama", "callback_data": "home"}])
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"
-                "English Tahun 2–6 sudah tersedia dalam PDF (160 Lesson/tahun). "
+                "English Tahun 2–6 tersedia dalam PDF (160 Lesson/tahun). Pendidikan Islam: RPT cadangan, jika tersedia. "
                 "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia.",
                 kb)
         if is_year:
@@ -71,6 +72,9 @@ def install(ns):
             if math_pdf_ready(year, ns=ns):
                 kb.append([{"text": "📥 Matematik (PDF v28 • DRAF/SEMENTARA)",
                             "callback_data": "rpt2027_math_pdf_%d" % year}])
+            if pi_pdf_ready(year):
+                kb.append([{"text": "📥 Pendidikan Islam (PDF • Cadangan)",
+                            "callback_data": "rpt2027_pi_pdf_%d" % year}])
             kb.extend([
                 [{"text": "⬅️ Pilih Tahun", "callback_data": "rpt2027_home"}],
                 [{"text": "🏠 Menu Utama", "callback_data": "home"}],
@@ -79,7 +83,7 @@ def install(ns):
                 "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
                 "Pilih subjek untuk memuat turun RPT.\n"
                 "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\n"
-                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\n\n"
+                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\n\n"
                 "Tarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
         suffix = data[len("rpt2027_en_pdf_"):]
