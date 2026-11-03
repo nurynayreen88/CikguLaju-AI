@@ -1,5 +1,7 @@
 # Year 5 Lesson 152 — Writing 26
 
+**Official SOW topic:** Going away.
+
 Status: DRAF. Unit 8. Main LS 4.3.3; complementary LS 3.2.2.
 Materials: Student Book p.89 Activities 1, 2 and 4; Teacher Book p.103. Workbook mapping and audio playback remain unverified.
 
