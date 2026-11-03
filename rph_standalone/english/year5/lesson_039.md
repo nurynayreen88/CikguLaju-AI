@@ -12,5 +12,7 @@ Sources: Non-textbook: Watching a Bumble Bee, Anthology p.21; BPK Poetry Guidebo
 
 PBD: Observe and record evidence from the specified main and complementary skills.
 Differentiation: Accept short reasons with teacher support.
-Workbook: Exact exercise not verified. Audio: Only SOW-listed tracks, where applicable; filenames found but content not played.
+Workbook: Not prescribed for this Language Arts lesson.
 QA: SOW-aligned draft; physical book and Word/PDF layout checks pending.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
