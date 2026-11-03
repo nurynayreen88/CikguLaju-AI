@@ -21,3 +21,5 @@
 **Differentiation:** Use a visual emotion scale and sentence starters; extend with two reasons.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
