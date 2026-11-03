@@ -4,7 +4,7 @@
 
 **Language focus:** Simple past tense interrogatives: When / Where did…? How old were you? Did you…? What was…? **Materials:** English Plus 1 Student’s Book Activities 1–3 p.78 Teacher’s Book p.92; Audio: CD2.27.
 
-**Objective:** Pupils complete the specific Listening 24 lesson tasks using Growing up vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Listening 1.2.4) — pupils understand a sequence of supported classroom instructions in the Growing up activities. Complementary (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the linked speaking task.
 
 **Set induction (5 min):** Pupils do Think! question at top of p.78. See Think! p.92 in Teacher’s Book. The task of imagining develops pupils’ creative thinking – HOTS.
 

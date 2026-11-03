@@ -4,7 +4,7 @@
 
 **Language focus:** Simple past tense interrogative word order: What / Who did you...? Did you…? **Materials:** English Plus 1 Student’s Book Activities 4, 5 and Finished? p.77 Teacher’s Book p.91.
 
-**Objective:** Pupils complete the specific Writing 23 lesson tasks using Growing up vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Writing 4.2.1) — pupils give detailed information about themselves in the Growing up activities. Complementary (Speaking 2.3.1) — pupils narrate short basic stories and events in the linked speaking task.
 
 **Set induction (5 min):** Elicit short sentences with past tense verbs about film director in previous lesson. Provide prompts e.g. Went to … in Canada. Became truck…, Made Avatar….
 

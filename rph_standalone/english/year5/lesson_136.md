@@ -4,7 +4,7 @@
 
 **Language focus:** Adjectives: curly, spiky; Simple past tense irregular verbs: went, saw, left, had, got. **Materials:** English Plus 1 Student’s Book Activities 1, 2, 4, 5 p.80 Teacher’s Book p.94.
 
-**Objective:** Pupils complete the specific Consolidation 14 lesson tasks using Growing up vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the Growing up activities. Complementary (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the linked writing task.
 
 **Set induction (5 min):** Pupils do Pre-lesson Task 6: Finger Writing. Choose familiar past verbs to spell. Start with easy spelling e.g. went. Progress to more challenging e.g. travelled.
 

@@ -4,7 +4,7 @@
 
 **Language focus:** Simple past tense interrogative word order: What / When did he...? Did he…? **Materials:** English Plus 1 Student’s Book p.76 (part of Activity 1) Activities 1–3 p.77 Teacher’s Book p.91.
 
-**Objective:** Pupils complete the specific Reading 23 lesson tasks using Growing up vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the Growing up activities. Complementary (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the linked writing task.
 
 **Set induction (5 min):** Write on board: ‘The Gentle Giant’. Ask: Who was this? (The tallest man in the world) Pupils do Warm-up p.91 in Teacher’s Book.
 
