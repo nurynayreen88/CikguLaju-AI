@@ -1,5 +1,7 @@
 """Isolated tests for the paid-only temporary Matematik RPT PDF bridge."""
 import os
+import base64
+import hashlib
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
@@ -110,6 +112,58 @@ class MathRPTTelegramTests(unittest.TestCase):
             self.make_pdf(Path(temp), 6)
             self.ns["callback"](9, "rpt2027_math_pdf_6")
         self.assertIn("belum mengesahkan", self.messages[-1][1])
+
+    def test_paid_private_supabase_asset_downloads_without_public_link(self):
+        self.paid = True
+        payload = b"%PDF-1.7\n" + b"secure test source" * 7000
+        digest = hashlib.sha256(payload).hexdigest()
+        def sb_request(method, path):
+            self.assertEqual(method, "GET")
+            self.assertIn("year=eq.4", path)
+            row = {
+                "year": 4, "version": "v28",
+                "filename": "RPT_Matematik_Tahun_4_2027_v28_SEMENTARA.pdf",
+                "sha256": digest, "size_bytes": len(payload),
+            }
+            if "pdf_base64" in path:
+                row["pdf_base64"] = base64.b64encode(payload).decode("ascii")
+            return [row]
+        self.ns["_sb_request"] = sb_request
+        with TemporaryDirectory() as empty, patch.dict(os.environ, {"CIKGULAJU_RPT_MATH_PDF_DIR": empty}):
+            self.ns["callback"](9, "rpt2027_year_4")
+            kb = self.messages[-1][2]
+            callbacks = [button["callback_data"] for row in kb for button in row]
+            self.assertIn("rpt2027_math_pdf_4", callbacks)
+            result = self.ns["callback"](9, "rpt2027_math_pdf_4")
+        self.assertTrue(result.ok)
+        self.assertEqual(len(self.documents), 1)
+        self.assertIn("Matematik", self.documents[0][2])
+
+    def test_unpaid_never_fetches_private_supabase_binary(self):
+        def no_reads(*args, **kwargs):
+            self.fail("Unpaid Telegram user caused private Supabase read")
+        self.ns["_sb_request"] = no_reads
+        self.ns["callback"](9, "rpt2027_math_pdf_2")
+        self.assertFalse(self.documents)
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+
+    def test_private_supabase_corrupted_document_fails_closed(self):
+        self.paid = True
+        payload = b"%PDF-1.7\n" + b"asset" * 25000
+        def sb_request(method, path):
+            row = {
+                "year": 3, "version": "v28",
+                "filename": "RPT_Matematik_Tahun_3_2027_v28_SEMENTARA.pdf",
+                "sha256": "0" * 64, "size_bytes": len(payload),
+            }
+            if "pdf_base64" in path:
+                row["pdf_base64"] = base64.b64encode(payload).decode("ascii")
+            return [row]
+        self.ns["_sb_request"] = sb_request
+        with TemporaryDirectory() as empty, patch.dict(os.environ, {"CIKGULAJU_RPT_MATH_PDF_DIR": empty}):
+            self.ns["callback"](9, "rpt2027_math_pdf_3")
+        self.assertFalse(self.documents)
+        self.assertIn("gagal disahkan", self.messages[-1][1])
 
 
 if __name__ == "__main__":
