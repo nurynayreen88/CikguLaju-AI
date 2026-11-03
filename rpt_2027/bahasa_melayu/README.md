@@ -23,6 +23,7 @@ DK Bahasa Melayu SK Tahun 1 dan buku baharu KP2027 belum disahkan dalam indeks s
 ## Audit utama dan bahan kerja terdahulu
 
 - [Audit RPT BM SK 2027](AUDIT_RPT_BM_2027_20261103.md): penjelasan SP, status sumber, Buku Aktiviti dan tarikh.
+- [Audit sambungan 3 Nov — 57 pembetulan dan keselarasan 825 Lesson](AUDIT_PEMBETULAN_SP_DAN_FORMAT_20261103_B3.md): semakan format Markdown/HTML Tahun 2–6, pembetulan daripada RPT 2026, baki sebelum READY.
 - [Audit pengulangan](AUDIT_PENGULANGAN_19_BM_2027.md): 12 calon ulangan, 7 aktiviti berbeza, tiada data dipadam.
 - [Kalendar Kumpulan A](kalender_kumpulan_A_2027_44_minggu_INDUK.md) dan [Kumpulan B](kalender_kumpulan_B_2027_44_minggu_INDUK.md).
 - Matriks PdP A/B berasingan dan draf asal dalam folder ini dikekalkan sebagai rekod audit; **bukan keluaran utama untuk guru**.
