@@ -12,4 +12,6 @@ Materials: NON-TEXTBOOK: The Meal poem, Anthology p.20; BPK Poetry Guidebook Act
 
 PBD: Assess responses and work against stated skills.
 Differentiation: Offer differentiated creative products.
-Workbook mapping unverified. Audio not independently played. QA: Draft pending source and Word/PDF checks.
+Workbook is not prescribed. Audio not independently played. QA: Draft pending source and Word/PDF checks.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
