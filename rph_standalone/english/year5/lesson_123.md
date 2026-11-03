@@ -16,3 +16,5 @@ Closure (5 min): Pupils share a learning point and complete an exit response.
 Differentiation: Provide word banks, visual prompts and sentence frames for support; extend proficient pupils with independent explanations or richer outputs.
 
 Verification: Lesson outline and references checked against official Year 5 SOW. Full source-page, workbook and audio checks remain pending before READY.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
