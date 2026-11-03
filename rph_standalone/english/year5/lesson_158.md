@@ -1,5 +1,7 @@
 # Year 5 Lesson 158 — Writing 27
 
+**Official SOW topic:** Going away.
+
 Status: DRAF. Unit 8. Main LS 4.2.3; complementary LS 2.1.2.
 Materials: Student Book p.111 Activities 4–5; Teacher Book p.125; three Malaysian theme park fact files. Workbook mapping and audio playback remain unverified.
 
