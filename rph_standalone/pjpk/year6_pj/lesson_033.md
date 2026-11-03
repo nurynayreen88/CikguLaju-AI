@@ -1,6 +1,6 @@
 # RPH Pendidikan Jasmani Tahun 6 — PdP 033
 
-**Status:** DRAF TERHALANG — pautan SK/SP tidak konsisten  
+**Status:** DRAF TERHALANG — KONFLIK DSKP/RPT (SP 5.2.2), tidak boleh diaktifkan  
 **Kurikulum:** KSSR, rancangan tahunan 2027 (bukan KP2027 Tahun 1)  
 **Unit/Tajuk:** REKOD KESIHATAN DAN KECERGASAN  
 **SK (kod):** 3.5, 4.5, 5.3  
@@ -35,3 +35,10 @@ Murid dapat memperagakan kemahiran utama serta menerangkan pilihan teknik yang s
 - Halaman buku teks belum disahkan oleh sumber RPT. Jangan reka halaman.
 - Kandungan ini ialah draf pedagogi berasaskan kod dan teks SP DSKP, bukan kelulusan READY. Kemaskan pelaksanaan khusus kelas, semak kesahan rujukan teks penuh, dan uji muat turun Word A4.
 - Jejak: [RPT 2027 PJ 101 PdP staging](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP PJPK Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view).
+
+## Konfrontasi sumber 4 Nov 2026 — tindakan pembetulan diperlukan
+- RPT PJ Tahun 6 2026 (sumber Rozayus) bagi *Rekod Kesihatan dan Kecergasan* meletakkan SK 3.5, 4.5, 5.3 dan menambah SP 5.2.2 berbunyi *Memilih tindakan untuk menyelesaikan masalah berkaitan kecergasan*.
+- DSKP PJPK Tahun 6 (terbitan 2021) mengandungi SP 5.2.2 tetapi teksnya *Berusaha melakukan aktiviti fizikal untuk mencapai matlamat yang ditetapkan*. Perbezaan ini menunjukkan kemungkinan SP 5.2.2 dalam RPT 2026 tersalin daripada edisi/tahun lain; tidak boleh menganggapnya sah untuk PdP ini.
+- RPT sumber turut menyebut Buku Teks m/s 69, tetapi nombor halaman itu masih **calon rujukan sahaja** sehingga diperiksa pada buku teks sebenar.
+- Jangan tambah SK 5.2 secara automatik atau kekalkan SP 5.2.2 dalam penjanaan tanpa pengesahan editorial. Hanya SP 3.5.1, 4.5.1, 4.5.2 dan 5.3.3 mempunyai pautan SK yang konsisten dengan entri asal; status keseluruhan masih DRAF sehingga disemak.
+- Sumber: [RPT PJ Tahun 6 2026](https://docs.google.com/document/d/1IRT5QsiHm5eFG8N2ljicaAOV4ZC8yCfS/edit) dan [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view).
