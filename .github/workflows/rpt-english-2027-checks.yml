@@ -1,0 +1,48 @@
+name: English RPT 2027 integration checks
+on:
+  pull_request:
+    branches:
+      - main
+      - staging/cikgulaju-web-v1
+    paths:
+      - 'rpt_2027/english/**'
+      - 'web/english_rpt_2027_http.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tools/run_web_v1_preview.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_english_rpt_2027_*.py'
+      - '.github/workflows/rpt-english-2027-checks.yml'
+  push:
+    branches:
+      - feat/rpt-english-2027-telegram-download-20261103
+      - feat/rpt-english-2027-web-staging-20261103
+permissions:
+  contents: read
+jobs:
+  isolated-rpt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Flask>=3.0,<4'
+      - name: Verify English RPT Telegram and Web isolation
+        run: |
+          python -m unittest discover -s tests -p 'test_english_rpt_2027_*.py' -v
+      - name: Preserve Telegram WSGI and webhook
+        run: |
+          python -m unittest discover -s tests -p 'test_telegram_optional_wsgi.py' -v
+      - name: Verify PDF manifests only when available on branch
+        run: |
+          python - <<'PY'
+          import pathlib, sys
+          root = pathlib.Path('rpt_2027/english')
+          for year in range(2, 7):
+              path = root / f'RPT_ENGLISH_TAHUN_{year}_2027_UNTUK_GURU.pdf'
+              assert path.is_file(), str(path)
+              assert path.read_bytes().startswith(b'%PDF-'), str(path)
+              assert path.stat().st_size > 100000, str(path)
+          print('English RPT PDFs 5/5 are present and valid headers')
+          PY
