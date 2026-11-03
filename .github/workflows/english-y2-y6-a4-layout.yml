@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'tools/audit_english_rph_word_a4_layout.py'
+      - 'qa/english_word_builder_snapshot.py'
       - '.github/workflows/english-y2-y6-a4-layout.yml'
   workflow_dispatch:
 permissions: {contents: read}

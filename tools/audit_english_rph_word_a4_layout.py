@@ -59,58 +59,50 @@ def from_source(y,n):
     return rows
 
 def write_word(y,n,rows,path):
+    # This function uses the exact active Word table routine from app.py,
+    # with an isolated source-row injector; Telegram/DB startup never runs.
+    from qa.english_word_builder_snapshot import _create_rph_word
     doc=Document()
-    sec=doc.sections[0]
-    sec.page_width=Cm(21);sec.page_height=Cm(29.7)
-    sec.top_margin=Cm(.75);sec.bottom_margin=Cm(.75)
-    sec.left_margin=Cm(1.1);sec.right_margin=Cm(1.1)
+    section=doc.sections[0]
+    section.top_margin=Cm(1.35);section.bottom_margin=Cm(1.4)
+    section.left_margin=Cm(1.55);section.right_margin=Cm(1.55)
     normal=doc.styles["Normal"]
-    normal.font.name="Arial";normal.font.size=Pt(8.5)
-    normal.paragraph_format.space_before=Pt(0)
-    normal.paragraph_format.space_after=Pt(0)
-    normal.paragraph_format.line_spacing=1
-    doc.add_heading("DAILY LESSON PLAN",level=1)
-    info=doc.add_table(rows=0,cols=2)
-    for key,val in [
-        ("Subject","English"),("Year",str(y)),("Date","03/11/2026"),
-        ("Day","Tuesday"),("Time","08:00–09:00"),("Class",f"{y} Amanah"),
-        ("Number of pupils","30"),("Topic",f"Lesson {n}: Unit topic"),
-        ("Main content standard","SOW Main: applicable content standard"),
-        ("Main learning standard","SOW Main: curriculum Learning Standard"),
-        ("Complementary content standard","SOW Complementary: curriculum content standard"),
-        ("Complementary learning standard","SOW Complementary: Learning Standard"),
-        ("Learning objective","By the end of this lesson, pupils achieve two specified, measurable lesson outcomes relevant to the unit."),
-        ("Success criteria","Pupils provide individual evidence for two linked success criteria during lesson assessment."),
-        ("Prior knowledge","Vocabulary from recent lessons"),
-        ("Materials","Student/Pupil Book, Teacher's Book, Workbook and relevant picture cards or equipment; source-specific items vary by Lesson."),
-        ("CCE / values","Communication, creativity and responsible citizenship"),
-        ("HOTS / PAK21","Group discussion and paired reasoning"),
-        ("Assessment / PBD",rows["PENTAKSIRAN"]),
-    ]:
-        cells=info.add_row().cells
-        cells[0].text=key;cells[1].text=val
-    phases=doc.add_table(rows=1,cols=3)
-    phases.rows[0].cells[0].text="Phase"
-    phases.rows[0].cells[1].text="Teaching and learning activities"
-    phases.rows[0].cells[2].text="Notes"
-    for name,key in (("Set induction","SET INDUKSI"),("Main activities","AKTIVITI UTAMA"),("Closure","PENUTUP")):
-        r=phases.add_row()
-        r.cells[0].text=name;r.cells[1].text=rows[key];r.cells[2].text=""
-    summary=doc.add_table(rows=1,cols=2)
-    summary.rows[0].cells[0].text="Reflection"
-    summary.rows[0].cells[1].text="___/___ achieved; ___/___ need support"
-    for table in doc.tables:
-        table.autofit=False
-        for row in table.rows:
-            for cell in row.cells:
-                for paragraph in cell.paragraphs:
-                    paragraph.paragraph_format.space_before=Pt(0)
-                    paragraph.paragraph_format.space_after=Pt(0)
-                    paragraph.paragraph_format.line_spacing=1
-                    for run in paragraph.runs:run.font.size=Pt(8.5)
-    doc.save(path)
+    normal.font.name="Arial";normal.font.size=Pt(10.5)
+    state={"task":"rph","subject":"English","year":f"Tahun {y}"}
+    values=dict(rows)
+    values.update({
+        "MATA PELAJARAN":"English",
+        "TAHUN/TINGKATAN":f"Tahun {y}",
+        "TARIKH":"03/11/2026","HARI":"Tuesday",
+        "MASA":"08:00 – 09:00","KELAS":f"{y} Amanah",
+        "BILANGAN MURID":"30","TAJUK":f"Year {y} Lesson {n}",
+        "PENGETAHUAN SEDIA ADA":"Known language and vocabulary from previous lessons",
+        "EMK / NILAI":"Communication, creativity, collaboration",
+        "KBAT / PAK21":"Group and pair reasoning",
+        "REFLEKSI":"___/___ achieved; ___/___ need support",
+    })
+    values.setdefault("MAIN CONTENT STANDARD","SOW Main standard")
+    values.setdefault("MAIN LEARNING STANDARD","Official Learning Standard")
+    values.setdefault("COMPLEMENTARY CONTENT STANDARD","SOW Complementary standard")
+    values.setdefault("COMPLEMENTARY LEARNING STANDARD","Official Learning Standard")
+    values.setdefault("OBJEKTIF PEMBELAJARAN","By the end of the lesson, pupils attain two measurable relevant skills.")
+    values.setdefault("KRITERIA KEJAYAAN",values["OBJEKTIF PEMBELAJARAN"])
+    values.setdefault("BAHAN BANTU MENGAJAR","Student/Pupil Book, Teacher's Book and unit resources")
+    _create_rph_word(doc,section,state,values,str(path))
+
+
+def validate_word_function_snapshot():
+    import ast
+    active=ast.parse((ROOT/"app.py").read_text(encoding="utf-8"))
+    frozen=ast.parse((ROOT/"qa/english_word_builder_snapshot.py").read_text(encoding="utf-8"))
+    def last(tree):
+        return [n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=="_create_rph_word"][-1]
+    if ast.dump(last(active),include_attributes=False)!=ast.dump(last(frozen),include_attributes=False):
+        raise RuntimeError("Production Word layout changed: update A4 snapshot after review")
+
 
 def main():
+    validate_word_function_snapshot()
     word=OUT/"docx";pdf=OUT/"pdf"
     word.mkdir(parents=True,exist_ok=True);pdf.mkdir(parents=True,exist_ok=True)
     items=[]
@@ -136,7 +128,7 @@ def main():
         if len(pages)!=1:problems.append(item)
     report={"sample_count":len(items),"one_page":len(items)-len(problems),
             "multi_page":problems,"samples":items,
-            "scope":"isolated A4 layout approximation; NOT the live Word/PDF generator or a READY certification"}
+            "scope":"exact app.py Word table function with isolated row and display helpers; LibreOffice approximation; NOT live Telegram delivery or native PDF generator"}
     (OUT/"a4_diagnostic.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     print("A4_LAYOUT_DIAGNOSTIC",json.dumps({"count":len(items),"one":report["one_page"],"long":problems},ensure_ascii=False),flush=True)
 
