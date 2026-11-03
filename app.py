@@ -10182,7 +10182,7 @@ def _rph_display_value(s,key,value):
         v=_rph_format_activity_lines(v)
     if not _is_english_subject(s): return v
     if key=='MATA PELAJARAN': return 'English'
-    if key=='TAHUN/TINGKATAN': return re.sub(r'^Tahun\\s+','Year ',v,flags=re.I)
+    if key=='TAHUN/TINGKATAN': return re.sub(r'^Tahun\s+','Year ',v,flags=re.I)
     if key=='TAJUK': return v.replace('Semua Subtopik','All Subtopics')
     return v
 
