@@ -1,10 +1,23 @@
-# Year 5 English Lesson 64 - Consolidation 6
+# English Year 5 — Lesson 64 (Consolidation 6)
 
-SOW page 102. Main and complementary skills: Speaking 2.2.1 and Listening 1.2.5.
-Sources: Student Book page 38 Activities 2-5; Teacher Book page 52; audio CD 1-36.
+**Status:** DRAF — pending full source audit. **Topic:** Wild Life. **Main LS:** Speaking 2.2.1. **Complementary LS:** Listening 1.2.5. **Time:** 60 minutes (suggested).
 
-Set induction: State speaking and listening goals and discuss the picture. Main activity: Listen to CD 1-36, practise the dialogue and intonation; complete Activity 3; practise asking for permission, giving permission and politely refusing it using Activities 4-5. Closure: Pupils assess their speaking and listening goals.
+**Materials:** English Plus 1 SB p.38 Activities 2–5; TB p.52; CD1.36. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-Assessment: Check pupil responses and work against the specified skills.
-Differentiation: Repeat dialogue instructions and allow further practice.
-Workbook mapping unverified. Draft pending final QA.
+**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+
+**Set induction (5 min):** Teacher introduces speaking/listening goals and pupils respond to the Think! photograph.
+
+**Activity 1 (15 min):** Pupils listen to CD1.36 for Activity 2 and identify how a girl asks her father for permission. Partners repeat the dialogue using the speakers' intonation.
+
+**Activity 2 (15 min):** Pupils complete Activity 3 and rehearse the dialogue in pairs. Teacher models Can I…?, Is it OK if…?, Yes, of course and polite refusal.
+
+**Activity 3 (15 min):** Pupils complete Activities 4–5 with new partners, changing requests and responses. Discuss why refusing permission politely matters.
+
+**PBD (5 min):** Teacher checks whether pupils initiate a request, respond appropriately and understand a partner's response; repeat for pupils needing support.
+
+**Closure (5 min):** Pupils self-assess progress against the speaking and listening goals.
+
+**Differentiation:** Give dialogue frames and extra rehearsal; extend with reasons for granting/refusing permission.
+
+**Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
