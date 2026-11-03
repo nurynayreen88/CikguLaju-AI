@@ -21,3 +21,5 @@
 **Differentiation:** Provide spoken models and repeated listening; extend with a new word using a target sound.
 
 **Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.29,34, Unit 3 superlatives + Progress Review superlative adjectives, Ex1-4 / Ex3. Optional brief follow-up; do not replace the SOW tasks.

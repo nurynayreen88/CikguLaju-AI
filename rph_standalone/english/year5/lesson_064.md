@@ -21,3 +21,5 @@
 **Differentiation:** Give dialogue frames and extra rehearsal; extend with reasons for granting/refusing permission.
 
 **Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.35, Unit 3 Progress Review — Speaking: Asking for permission, Ex7. Optional brief follow-up; do not replace the SOW tasks.

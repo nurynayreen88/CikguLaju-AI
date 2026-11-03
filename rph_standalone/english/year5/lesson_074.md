@@ -21,3 +21,5 @@
 **Differentiation:** Offer verb-spelling rule cards; extend with correct negative sentences.
 
 **Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.37, Unit 4 Language Focus — Present continuous affirmative/negative, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

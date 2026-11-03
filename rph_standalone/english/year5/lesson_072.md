@@ -21,3 +21,5 @@
 **Differentiation:** Provide subject word banks and sentence starters; extend with contrasting preferences.
 
 **Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.36, Unit 4 Vocabulary — school subjects/preferences, Ex2-4. Optional brief follow-up; do not replace the SOW tasks.
