@@ -5,33 +5,31 @@
 **Tajuk:** Palam Pemasa  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
 **SP:** 5.1.4 (vii) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Rujukan RPT:** BT1 m/s 57  
-**Buku Aktiviti / bukti aktiviti:** BA1 m/s 67: Palam Pemasa, melengkapkan e-mel  
-**Fokus:** aplikasi kata pemeri dalam e-mel  
-**Masa cadangan:** 60 minit, disesuaikan jadual guru.  
-**Objektif:** Pada akhir PdP, murid dapat menghasilkan lima kata pemeri tepat dan dua ayat sendiri.  
-**Bahan:** BT/BA yang berkenaan, gambar situasi, kad perkataan, buku latihan dan senarai semak PBD.
+**Fokus:** Kata pemeri dalam e-mel  
+**Rujukan:** BT1 m/s 57; BA1 m/s 67 (Palam Pemasa)  
+**Bahan:** e-mel BA1 tentang palam pemasa yang membantu keselamatan rumah; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan lima daripada enam kata pemeri betul dan dua ayat baharu.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Membincangkan rumah selamat ketika bercuti.
-**Murid:** Memberi respons secara lisan berdasarkan situasi.
+**Guru:** Menunjukkan e-mel BA1 tentang palam pemasa yang membantu keselamatan rumah dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Pemerhatian dan bimbingan (15 minit)
-**Guru:** Memeriksa pilihan ialah/adalah dalam contoh e-mel BA.
-**Murid:** Membaca atau mendengar sumber, mengenal contoh dan menjelaskan kefahaman.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Kata pemeri dalam e-mel berasaskan sumber.
+**Murid:** Mengesan subjek dan predikat dalam ayat yang menggunakan ialah dan adalah.
 
-## Aktiviti 2 — Aplikasi khusus (20 minit)
-**Guru:** Mengarah dan memudah cara tugasan mengikut sumber yang dipilih.
-**Murid:** Melengkapkan e-mel dan menghasilkan dua ayat baharu tentang palam pemasa.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Melengkapkan enam ruang e-mel menggunakan kata pemeri kemudian menambah dua ayat baru.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menyemak bukti: lima pilihan dan dua ayat baharu gramatis.
-**Murid:** Menyerahkan hasil atau memberi respons, kemudian membetulkan kesilapan.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak lima daripada enam kata pemeri betul dan dua ayat baharu serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran aplikasi kata pemeri dalam e-mel dan nilai keselamatan atau kerjasama.
-**Murid:** Menyatakan satu contoh kemahiran yang dipelajari.
+**Guru:** Merumuskan pembelajaran Kata pemeri dalam e-mel berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — belum disahkan sepenuhnya terhadap halaman BT, format A4, takwim negeri dan CI.  
-**Nota keselamatan akademik:** Tajuk BA tidak menggantikan tajuk BT. Kesamaan sumber, PKJR atau sesi susulan masih perlu pengesahan.  
-**Penerbitan:** Staging sahaja; tidak menukar database atau produk aktif.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

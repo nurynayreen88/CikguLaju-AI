@@ -1,37 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 098
 
-**ID Lesson:** BM3-P098  
-**Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita  
-**Tajuk dalam RPT/BT calon:** Bermain Galah Panjang  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.3 (i) — Memahami dan menggunakan kata ganda mengikut konteks  
-**Bidang:** Tatabahasa — kata ganda penuh  
-**Rujukan buku:** BT2 m/s 6  
-**Bahan / rangsangan:** dialog Minggu Kebudayaan Serumpun dan persediaan aktiviti tradisional; Buku Teks dan Buku Aktiviti SK Jilid 2 yang sepadan; kad/peta pemikiran; buku latihan.  
-**Objektif yang boleh diperhati:** Pada akhir PdP, murid dapat mengenal pasti dan menggunakan lima kata ganda penuh dalam dialog.  
-**Masa cadangan:** 60 minit; jadual negeri, kelas dan guru menentukan masa sebenar.
+**ID:** BM3-P098  
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita  
+**Tajuk:** Bermain Galah Panjang  
+**SK:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks.  
+**SP:** 5.2.3 (i) — Memahami dan menggunakan kata ganda mengikut konteks  
+**Fokus:** Mengenal kata ganda penuh  
+**Rujukan:** BT2 m/s 6; BA2 m/s 5-6 — pengecaman kata ganda penuh  
+**Bahan:** BT2 Bermain Galah Panjang dan contoh kata ganda penuh; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan enam kata ganda penuh dikenal tepat.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
-## Set Induksi (5 minit)
-**Guru:** Memaparkan dialog Minggu Kebudayaan Serumpun dan persediaan aktiviti tradisional dan meminta murid menghubungkannya dengan tajuk **Bermain Galah Panjang**.
-**Murid:** Memberikan dua respons awal yang relevan dengan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan BT2 Bermain Galah Panjang dan contoh kata ganda penuh dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Penerokaan (15 minit)
-**Guru:** Menunjukkan bahan sumber pada rujukan yang dinyatakan dan memodelkan satu contoh kemahiran **kata ganda penuh**, tanpa menganggap tajuk BA sama dengan tajuk BT.
-**Murid:** Membaca, mendengar atau memerhati butiran bahan, kemudian mengenal pasti sekurang-kurangnya tiga fakta, contoh atau ciri yang diperlukan untuk kata ganda penuh.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Mengenal kata ganda penuh berasaskan sumber.
+**Murid:** Meneliti dialog permainan galah panjang dan menyenaraikan enam kata ganda penuh.
 
-## Aktiviti 2 — Aplikasi (20 minit)
-**Guru:** Membimbing tugasan individu atau pasangan menggunakan bahan yang dinyatakan; memberi sokongan berbeza mengikut tahap murid.
-**Murid:** Mengenal pasti dan menggunakan lima kata ganda penuh dalam dialog; membanding dan menyemak hasil dengan rakan berdasarkan contoh dalam bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Mengelaskan kata ganda penuh mengikut penggunaannya dan menerangkan tiga contoh.
 
-## Pengukuhan dan PBD (15 minit)
-**Guru:** Menilai bukti kerja berdasarkan kriteria **lima pilihan tepat; sesi susulan 099 perlu disahkan** dan merekod tahap kemajuan; menyediakan pemulihan melalui contoh berpandu.
-**Murid:** Menunjukkan hasil atau respons lisan, membetulkan sekurang-kurangnya satu kesilapan dan menyimpan bukti PBD.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak enam kata ganda penuh dikenal tepat serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kegunaan kemahiran kata ganda penuh dalam konteks U13: Kekalkan Warisan Kita.
-**Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
+**Guru:** Merumuskan pembelajaran Mengenal kata ganda penuh berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — **bukan READY**.  
-**Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
-**Isu yang perlu diselesaikan:** Perlu semak BT asal, PKJR, tajuk atau sesi susulan sebelum kelulusan  
-**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

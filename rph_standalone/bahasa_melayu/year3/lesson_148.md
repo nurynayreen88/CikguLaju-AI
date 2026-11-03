@@ -2,37 +2,34 @@
 
 **ID:** BM3-P148  
 **Tema/Unit:** Pertanian dan Penternakan; U21: Bumi Bertuah  
-**Tajuk RPT:** Ulam-ulaman  
+**Tajuk:** Ulam-ulaman  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
 **SP:** 5.1.4 (viii) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Bidang / fokus:** Tatabahasa — kata penguat  
-**Sumber:** BT2 m/s 61; BA m/s 67; Buku Aktiviti BM Tahun 3 SK Jilid 2, DBP 2018 (petunjuk kod dan halaman); Buku Teks mesti disahkan untuk tajuk asal.  
-**Bahan PdP:** petikan Hasil Alam di Pasar Tani; kad soalan atau kosa kata, lembaran respons murid dan senarai semak PBD.  
-**Masa cadangan:** 60 minit; mengikut jadual guru.  
-**Objektif:** Murid dapat membina lima ayat menggunakan kata penguat sangat, amat atau sungguh mengikut konteks.
+**Fokus:** Kata penguat  
+**Rujukan:** BT2 m/s 61; BA m/s 67  
+**Bahan:** dialog Ulam-ulaman BT2 m/s 61 serta BA2 m/s 67 Hasil Alam di Pasar Tani; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan lima kata penguat tepat dan ayat gramatis.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
-## Set induksi — 5 minit
-**Guru:** Menunjukkan petikan Hasil Alam di Pasar Tani dan bertanya satu soalan berkaitan U21: Bumi Bertuah.
-**Murid:** Mengemukakan dua pemerhatian atau idea berdasarkan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan dialog Ulam-ulaman BT2 m/s 61 serta BA2 m/s 67 Hasil Alam di Pasar Tani dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Bimbingan kemahiran (15 minit)
-**Guru:** Menjelaskan tujuan kata penguat dan menunjukkan satu contoh berpandukan rujukan bahan yang bersesuaian.
-**Murid:** Mengenal isi, bukti bahasa atau struktur tugasan daripada petikan Hasil Alam di Pasar Tani dengan bantuan soalan guru.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Kata penguat berasaskan sumber.
+**Murid:** Mengenal kata penguat seperti amat, sungguh dan paling mengikut kedudukan.
 
-## Aktiviti 2 — Tugasan khusus (20 minit)
-**Guru:** Menyusun murid secara pasangan atau kumpulan kecil, membekalkan bahan untuk tugasan dan memberi maklum balas semasa latihan.
-**Murid:** Membina lima ayat menggunakan kata penguat sangat, amat atau sungguh mengikut konteks dan menyemak jawapan dengan pasangan menggunakan bukti daripada bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Membina lima ayat tentang hasil pasar tani dengan kata penguat yang betul.
 
-## Pengukuhan / Penilaian PBD — 15 minit
-**Guru:** Menilai lima kata penguat betul; merekod perkembangan murid dan memberikan tugas pemulihan yang lebih berpandu.
-**Murid:** Menunjukkan hasil atau memberi respons, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan sebab.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak lima kata penguat tepat dan ayat gramatis serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
-## Penutup — 5 minit
-**Guru:** Merumuskan kemahiran kata penguat dan menyambungkannya dengan situasi dalam Unit.
-**Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
+## Penutup (5 minit)
+**Guru:** Merumuskan pembelajaran Kata penguat berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — belum READY.  
-**Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
-**Isu:** RPT sumber menandakan tajuk perlu dilengkapkan  
-**Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
-**Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

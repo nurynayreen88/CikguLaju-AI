@@ -5,33 +5,31 @@
 **Tajuk:** Menampakkan Diri  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.4 (i) — Menulis sesuatu yang diimlakkan  
-**Rujukan RPT:** BT1 m/s 55; BA m/s 64  
-**Buku Aktiviti / bukti aktiviti:** BA1 m/s 65: Pelindung Lampu Kanak-kanak; sesi berbeza daripada imlak BA1 m/s 64  
-**Fokus:** imlak ayat majmuk  
-**Masa cadangan:** 60 minit, disesuaikan jadual guru.  
-**Objektif:** Pada akhir PdP, murid dapat menghasilkan empat ayat imlak majmuk dengan ejaan tepat.  
-**Bahan:** BT/BA yang berkenaan, gambar situasi, kad perkataan, buku latihan dan senarai semak PBD.
+**Fokus:** Imenulis ayat majmuk yang diimlak  
+**Rujukan:** BT1 m/s 55; BA1 m/s 65 (Pelindung Lampu Kanak-kanak)  
+**Bahan:** petikan Pelindung Lampu Kanak-kanak yang membincangkan bahaya elektrik; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan empat ayat imlak majmuk tepat.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Meninjau fungsi pelindung lampu kanak-kanak.
-**Murid:** Memberi respons secara lisan berdasarkan situasi.
+**Guru:** Menunjukkan petikan Pelindung Lampu Kanak-kanak yang membincangkan bahaya elektrik dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Pemerhatian dan bimbingan (15 minit)
-**Guru:** Membacakan ayat majmuk yang terdapat dalam bahan BA dan menanda kata hubung.
-**Murid:** Membaca atau mendengar sumber, mengenal contoh dan menjelaskan kefahaman.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Imenulis ayat majmuk yang diimlak berasaskan sumber.
+**Murid:** Mendengar ayat majmuk daripada petikan dan menandakan kata hubung dalam contoh.
 
-## Aktiviti 2 — Aplikasi khusus (20 minit)
-**Guru:** Mengarah dan memudah cara tugasan mengikut sumber yang dipilih.
-**Murid:** Menulis imlak dan menilai ayat sendiri berdasarkan ejaan, huruf besar dan tanda baca.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Menulis empat ayat majmuk yang diimlak, menyemak ejaan serta tanda baca; berbeza daripada imlak ayat tunggal Lesson 065.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menyemak bukti: empat ayat tepat, serta beza penguasaan daripada Lesson 065.
-**Murid:** Menyerahkan hasil atau memberi respons, kemudian membetulkan kesilapan.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak empat ayat imlak majmuk tepat serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran imlak ayat majmuk dan nilai keselamatan atau kerjasama.
-**Murid:** Menyatakan satu contoh kemahiran yang dipelajari.
+**Guru:** Merumuskan pembelajaran Imenulis ayat majmuk yang diimlak berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — belum disahkan sepenuhnya terhadap halaman BT, format A4, takwim negeri dan CI.  
-**Nota keselamatan akademik:** Tajuk BA tidak menggantikan tajuk BT. Kesamaan sumber, PKJR atau sesi susulan masih perlu pengesahan.  
-**Penerbitan:** Staging sahaja; tidak menukar database atau produk aktif.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

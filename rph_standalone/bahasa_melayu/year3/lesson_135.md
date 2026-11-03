@@ -2,37 +2,34 @@
 
 **ID:** BM3-P135  
 **Tema/Unit:** Pertanian dan Penternakan; U19: Pertanian Sumber Pendapatan  
-**Tajuk RPT:** Beras Wangi  
+**Tajuk:** Beras Wangi  
 **SK:** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.  
 **SP:** 4.3.1 (ii) — Mencipta bahan sastera secara berpandu dan mempersembahkan secara kreatif  
-**Bidang / fokus:** Seni Bahasa — mencipta sajak berpandu  
-**Sumber:** BT2 m/s 47; BA m/s 52; Buku Aktiviti BM Tahun 3 SK Jilid 2, DBP 2018 (petunjuk kod dan halaman); Buku Teks mesti disahkan untuk tajuk asal.  
-**Bahan PdP:** sajak Durian Kacukan dan frasa keistimewaan buah; kad soalan atau kosa kata, lembaran respons murid dan senarai semak PBD.  
-**Masa cadangan:** 60 minit; mengikut jadual guru.  
-**Objektif:** Murid dapat melengkapkan empat baris sajak dan mendeklamasikan hasil.
+**Fokus:** Sajak berpandu  
+**Rujukan:** BT2 m/s 47; BA m/s 52  
+**Bahan:** sajak Beras Wangi BT2 m/s 47 serta BA2 m/s 52 tentang Durian Kacukan; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan empat baris sajak bermakna dan lafaz tepat.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
-## Set induksi — 5 minit
-**Guru:** Menunjukkan sajak Durian Kacukan dan frasa keistimewaan buah dan bertanya satu soalan berkaitan U19: Pertanian Sumber Pendapatan.
-**Murid:** Mengemukakan dua pemerhatian atau idea berdasarkan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan sajak Beras Wangi BT2 m/s 47 serta BA2 m/s 52 tentang Durian Kacukan dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Bimbingan kemahiran (15 minit)
-**Guru:** Menjelaskan tujuan mencipta sajak berpandu dan menunjukkan satu contoh berpandukan rujukan bahan yang bersesuaian.
-**Murid:** Mengenal isi, bukti bahasa atau struktur tugasan daripada sajak Durian Kacukan dan frasa keistimewaan buah dengan bantuan soalan guru.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Sajak berpandu berasaskan sumber.
+**Murid:** Membaca sajak Beras Wangi dan mengenal dua gambaran bahasa.
 
-## Aktiviti 2 — Tugasan khusus (20 minit)
-**Guru:** Menyusun murid secara pasangan atau kumpulan kecil, membekalkan bahan untuk tugasan dan memberi maklum balas semasa latihan.
-**Murid:** Melengkapkan empat baris sajak dan mendeklamasikan hasil dan menyemak jawapan dengan pasangan menggunakan bukti daripada bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Melengkapkan empat baris sajak buah-buahan berdasarkan frasa daripada BA lalu mendeklamasikannya.
 
-## Pengukuhan / Penilaian PBD — 15 minit
-**Guru:** Menilai empat baris bermakna dan bacaan yang jelas; merekod perkembangan murid dan memberikan tugas pemulihan yang lebih berpandu.
-**Murid:** Menunjukkan hasil atau memberi respons, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan sebab.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak empat baris sajak bermakna dan lafaz tepat serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
-## Penutup — 5 minit
-**Guru:** Merumuskan kemahiran mencipta sajak berpandu dan menyambungkannya dengan situasi dalam Unit.
-**Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
+## Penutup (5 minit)
+**Guru:** Merumuskan pembelajaran Sajak berpandu berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — belum READY.  
-**Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
-**Isu:** RPT sumber menandakan tajuk perlu dilengkapkan  
-**Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
-**Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

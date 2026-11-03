@@ -2,36 +2,34 @@
 
 **ID:** BM3-P069  
 **Tema/Unit:** Keselamatan; U9: Alatan Keselamatan  
-**Tajuk:** Gunakan Ketuhar Dengan Selamat  
+**Tajuk:** Gunakanlah Ketuhar dengan Selamatnya — Pantun  
 **SK:** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.  
 **SP:** 4.2.1 — Melafazkan pantun yang mengandungi bahasa yang indah dan menjelaskan maksud  
-**Rujukan RPT:** BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 66  
-**Buku Aktiviti / bukti aktiviti:** BA1 m/s 66: Gunakanlah Ketuhar dengan Selamatnya, pantun dengan empat rangkap  
-**Fokus:** pantun sebagai pengayaan maksud  
-**Masa cadangan:** 60 minit, disesuaikan jadual guru.  
-**Objektif:** Pada akhir PdP, murid dapat menghasilkan dua pengajaran keselamatan daripada pantun.  
-**Bahan:** BT/BA yang berkenaan, gambar situasi, kad perkataan, buku latihan dan senarai semak PBD.
+**Fokus:** Pantun dan maksud tersirat  
+**Rujukan:** BA1 m/s 66 (pantun penggunaan ketuhar), disokong BT1 m/s 56 pada SP 4.2.1  
+**Bahan:** pantun tentang ketuhar, sarung tangan dan suhu yang selamat; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan dua pengajaran disokong rangkap dan lafaz pantun jelas.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memperlihatkan tanda amaran permukaan panas.
-**Murid:** Memberi respons secara lisan berdasarkan situasi.
+**Guru:** Menunjukkan pantun tentang ketuhar, sarung tangan dan suhu yang selamat dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Pemerhatian dan bimbingan (15 minit)
-**Guru:** Membimbing murid memadankan maksud dengan rangkap pantun.
-**Murid:** Membaca atau mendengar sumber, mengenal contoh dan menjelaskan kefahaman.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Pantun dan maksud tersirat berasaskan sumber.
+**Murid:** Melafazkan dua rangkap pantun dan mengenal maksud setiap pembayang dan maksud.
 
-## Aktiviti 2 — Aplikasi khusus (20 minit)
-**Guru:** Mengarah dan memudah cara tugasan mengikut sumber yang dipilih.
-**Murid:** Melafaz pantun, berbincang dalam kumpulan dan menjelaskan dua pengajaran berasaskan rangkap.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Menulis dua pengajaran keselamatan serta mempersembah pantun secara bergilir.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menyemak bukti: dua maksud dan lafaz jelas; bukan modul PKJR.
-**Murid:** Menyerahkan hasil atau memberi respons, kemudian membetulkan kesilapan.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak dua pengajaran disokong rangkap dan lafaz pantun jelas serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran pantun sebagai pengayaan maksud dan nilai keselamatan atau kerjasama.
-**Murid:** Menyatakan satu contoh kemahiran yang dipelajari.
+**Guru:** Merumuskan pembelajaran Pantun dan maksud tersirat berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — belum disahkan sepenuhnya terhadap halaman BT, format A4, takwim negeri dan CI.  
-**Nota keselamatan akademik:** Tajuk BA tidak menggantikan tajuk BT. Kesamaan sumber, PKJR atau sesi susulan masih perlu pengesahan.  
-**Penerbitan:** Staging sahaja; tidak menukar database atau produk aktif.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

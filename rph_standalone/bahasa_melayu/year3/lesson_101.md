@@ -1,37 +1,35 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 101
 
-**ID Lesson:** BM3-P101  
-**Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U14: Kenali Kesenian Kita  
-**Tajuk dalam RPT/BT calon:** Nabila  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.2 (i) — Membaca dan mempersembahkan karya bukan sastera dan karya sastera dengan sebutan yang betul dan intonasi yang sesuai  
-**Bidang:** Membaca — membaca dan mempersembahkan teks  
-**Rujukan buku:** BT2 m/s 8; BA2 m/s 9  
-**Bahan / rangsangan:** bahan BA2 m/s9 berkaitan pakaian serta budaya Kadazandusun; Buku Teks dan Buku Aktiviti SK Jilid 2 yang sepadan; kad/peta pemikiran; buku latihan.  
-**Objektif yang boleh diperhati:** Pada akhir PdP, murid dapat membaca teks seni tradisional dengan sebutan dan intonasi sesuai.  
-**Masa cadangan:** 60 minit; jadual negeri, kelas dan guru menentukan masa sebenar.
+**ID:** BM3-P101  
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U14: Kenali Kesenian Kita  
+**Tajuk:** Baju Kurung untuk Nabila  
+**SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
+**SP:** 2.3.2 (i) — Membaca dan mempersembahkan karya bukan sastera dan karya sastera dengan sebutan yang betul dan intonasi yang sesuai  
+**Fokus:** Membaca label dengan intonasi  
+**Rujukan:** BT2 m/s 8; BA2 m/s 9  
+**Bahan:** label dan petikan Baju Kurung untuk Nabila dalam BT2 m/s 8 dan BA2 m/s 9; bahan sumber asli, kad perkataan dan senarai semak PBD.  
+**Objektif:** Pada akhir PdP, murid dapat menunjukkan bacaan tepat dan tiga maklumat label benar.  
+**Masa cadangan:** 60 minit (mengikut jadual sebenar).
 
-## Set Induksi (5 minit)
-**Guru:** Memaparkan bahan BA2 m/s9 berkaitan pakaian serta budaya Kadazandusun dan meminta murid menghubungkannya dengan tajuk **Nabila**.
-**Murid:** Memberikan dua respons awal yang relevan dengan bahan.
+## Set induksi (5 minit)
+**Guru:** Menunjukkan label dan petikan Baju Kurung untuk Nabila dalam BT2 m/s 8 dan BA2 m/s 9 dan meminta murid memberi pemerhatian.
+**Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
-## Aktiviti 1 — Penerokaan (15 minit)
-**Guru:** Menunjukkan bahan sumber pada rujukan yang dinyatakan dan memodelkan satu contoh kemahiran **membaca dan mempersembahkan teks**, tanpa menganggap tajuk BA sama dengan tajuk BT.
-**Murid:** Membaca, mendengar atau memerhati butiran bahan, kemudian mengenal pasti sekurang-kurangnya tiga fakta, contoh atau ciri yang diperlukan untuk membaca dan mempersembahkan teks.
+## Aktiviti 1 (15 minit)
+**Guru:** Memodelkan cara melaksanakan kemahiran Membaca label dengan intonasi berasaskan sumber.
+**Murid:** Membaca label pakaian tradisional dengan sebutan serta jeda yang sesuai.
 
-## Aktiviti 2 — Aplikasi (20 minit)
-**Guru:** Membimbing tugasan individu atau pasangan menggunakan bahan yang dinyatakan; memberi sokongan berbeza mengikut tahap murid.
-**Murid:** Membaca teks seni tradisional dengan sebutan dan intonasi sesuai; membanding dan menyemak hasil dengan rakan berdasarkan contoh dalam bahan.
+## Aktiviti 2 (20 minit)
+**Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
+**Murid:** Membentangkan tiga maklumat label, kemudian membaca semula bahan kepada pasangan.
 
-## Pengukuhan dan PBD (15 minit)
-**Guru:** Menilai bukti kerja berdasarkan kriteria **bacaan jelas serta dua isi sahih daripada teks** dan merekod tahap kemajuan; menyediakan pemulihan melalui contoh berpandu.
-**Murid:** Menunjukkan hasil atau respons lisan, membetulkan sekurang-kurangnya satu kesilapan dan menyimpan bukti PBD.
+## Pengukuhan / Penilaian PBD (15 minit)
+**Guru:** Menyemak bacaan tepat dan tiga maklumat label benar serta mencatat kekuatan/kelemahan kerja murid.
+**Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kegunaan kemahiran membaca dan mempersembahkan teks dalam konteks U14: Kenali Kesenian Kita.
-**Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
+**Guru:** Merumuskan pembelajaran Membaca label dengan intonasi berdasarkan contoh dalam bahan.
+**Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — **bukan READY**.  
-**Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
-**Isu yang perlu diselesaikan:** Tajuk RPT sumber ditanda perlu semak versi penuh; Tajuk pendek/terpotong dalam RPT sumber  
-**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
