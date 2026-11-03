@@ -25,10 +25,10 @@ def install(runtime):
         if standalone is None:
             return original(state)
         # Never expose internal verification ledgers in teacher-facing material.
-        standalone = re.split(r"(?im)^##\\s*(?:Verified mapping and limits|Source verification|QA notes)\\s*$", standalone, maxsplit=1)[0]
-        standalone = re.sub(r"(?im)^\\*\\*(?:Status|QA status|Internal review):\\*\\*.*$", "", standalone)
-        standalone = re.sub(r"(?m)^#{1,3}\\s+", "", standalone)
-        standalone = re.sub(r"\\*\\*(.*?)\\*\\*", r"\\1", standalone)
+        standalone = re.split(r"(?im)^##\s*(?:Verified mapping and limits|Source verification|QA notes)\s*$", standalone, maxsplit=1)[0]
+        standalone = re.sub(r"(?im)^\*\*(?:Status|QA status|Internal review):\*\*.*$", "", standalone)
+        standalone = re.sub(r"(?m)^#{1,3}\s+", "", standalone)
+        standalone = re.sub(r"\*\*(.*?)\*\*", r"\1", standalone)
         return standalone
 
     runtime._local_rph_text = specific_rph
