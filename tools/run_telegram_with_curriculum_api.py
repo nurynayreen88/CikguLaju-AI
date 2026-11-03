@@ -25,6 +25,16 @@ except Exception as _y6_rph_exc:
     print("English Year 6 RPH bridge unavailable:", repr(_y6_rph_exc), flush=True)
 
 
+# English Year 5 is a DRAF staging source. Keep production disabled until
+# printed-page/audio/A4 and teacher QA are approved. Opt-in only for controlled tests.
+try:
+    from web.english_y5_standalone_runtime import install as install_english_y5_rph
+    ENGLISH_Y5_DRAFT_RPH_ACTIVE = install_english_y5_rph(telegram_runtime)
+except Exception as _y5_rph_exc:
+    ENGLISH_Y5_DRAFT_RPH_ACTIVE = False
+    print("English Year 5 gated RPH bridge unavailable:", repr(_y5_rph_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
