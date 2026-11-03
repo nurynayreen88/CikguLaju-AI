@@ -1,15 +1,23 @@
-# English Year 5 Lesson 95: Listening 17
+# English Year 5 — Standalone RPH — Lesson 095 (Listening 17)
 
-Official SOW Lesson 95, printed p.135. Topic: Food and health. Suggested duration: 60 minutes.
-Standards: Listening 1.2.3; Listening 1.2.5.
-Materials: SB p.96 Activities 1-3; TB p.110; CD3-12 and CD3-13.
+**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Food and health. **Main LS:** 1.2.3. **Complementary LS:** 1.2.5. **Duration:** 60 minutes (suggested).
 
-1. Set induction (8 min): Introduce shopping at a market and money expressions.
-2. Activity 1 (12 min): Review grams, kilos and fractions one-half, one-quarter and three-quarters.
-3. Activity 2 (15 min): Complete Activity 1 about shopping weights.
-4. Activity 3 (17 min): Listen to CD3-12 and CD3-13 for quantities and prices.
-5. PBD and closure (8 min): Pairs compare prices and identify items not bought; review value for money.
+**Language focus:** Weights and prices: gram, kilo, a quarter / three quarters of a kilo, half a kilo, fraction; How much is…? It costs…. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.96 Teacher’s Book p.110; Audio: CD3.12, CD3.13.
 
-PBD: Assess relevant oral and written evidence against stated standards.
-Differentiation: Replay recordings and display fractions for support.
-Workbook exercise unverified. Audio not independently played. QA: Draft pending source and Word/PDF checks.
+**Objective:** Pupils complete the specific Listening 17 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+
+**Set induction (5 min):** Write on board: ‘Shopping at a market’. Follow instructions in Teacher’s Book, p.110 for Warm-up activity.
+
+**Activity 1 (15 min):** Write on board: ‘gram’, ‘kilogram’. Ask: How many grams in a kilogram/half a kilogram / quarter of a kilogram? Explain that for short we usually say ‘kilo’. Preteach: fraction. Check understanding of ½, ¼, ¾ in L1.
+
+**Activity 2 (15 min):** Pupils do p.96, Activity 1. Follow instructions in Teacher’s Book p.110 Exercise 1.
+
+**Activity 3 (15 min):** Write ½, ¼ and ¾ and on board and say the fractions. Explain pupils can write fractions they hear on CD with numbers not words. Pupils do Activity 2, CD3.12. Follow instructions in Teacher’s Book p.110 Exercise 2. 5. Pupils do Activity 3, CD3.13. Follow the instructions in Teacher’s Book p.110 Exercise 3. Pupils listen again and note down the prices that they hear. Elicit cost of the grapes (£7.00 a kilo), grapes (£3.65 ½ a kilo), strawberries (£2.50 ¼ a kilo), pears (50p each).
+
+**PBD (5 min):** Teacher checks the listening task answers and records who needs a repeated listening.
+
+**Closure (5 min):** Choose a post-lesson task from Section 3 to review money.
+
+**Workbook practice (mapped):** p.51, Unit 5 Speaking In a cafe / prices-ordering dialogue, Ex6. Use briefly; do not replace SOW tasks.
+
+**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
