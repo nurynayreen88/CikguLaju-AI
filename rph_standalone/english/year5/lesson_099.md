@@ -1,17 +1,23 @@
-# English Year 5 Lesson 99: Language Arts 17
+# English Year 5 — Standalone RPH — Lesson 099 (Language Arts 17)
 
-Official SOW Lesson 99, printed p.139. Topic: The Meal. Suggested duration: 60 minutes.
-Standards: Language Arts 5.3.1; Listening 1.2.2.
-Materials: NON-TEXTBOOK: The Meal poem, Anthology p.20; BPK Poetry Guidebook Activity 4 p.128.
+**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** The Meal. **Main LS:** 5.3.1. **Complementary LS:** 1.2.2. **Duration:** 60 minutes (suggested).
 
-1. Set induction (8 min): Recall foods from The Meal without looking at the poem.
-2. Activity 1 (12 min): Pairs listen and point to the named food.
-3. Activity 2 (15 min): Discuss appealing menus and intended customers.
-4. Activity 3 (17 min): Follow BPK Guidebook Activity 4 to create a menu.
-5. PBD and closure (8 min): Display menus and invite classmates to choose a booking list.
+**Language focus:** Verbs. **Materials:** Anthology of Poems p.20, The Meal; BPK CCL Poetry Guide Activity 4 p.128.
 
-PBD: Assess responses and work against stated skills.
-Differentiation: Offer differentiated creative products.
-Workbook is not prescribed. Audio not independently played. QA: Draft pending source and Word/PDF checks.
+**Objective:** Pupils complete the specific Language Arts 17 lesson tasks using The Meal vocabulary and produce observable assessment evidence.
 
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**Set induction (5 min):** Pupils go through the poem and remember as many as food items that they can. 2. Without looking at the poem, each pupil has to list down the food items they can remember.
+
+**Activity 1 (15 min):** Pupils pair up and teacher conducts a game where each pair has to listen and point to the food item.
+
+**Activity 2 (15 min):** Teacher informs pupils that they are going to create a menu that can appeal others to buy.
+
+**Activity 3 (15 min):** Follow Step 1 until Step 5 (Activity 4) in the guidebook.
+
+**PBD (5 min):** Teacher checks a creative response linked to the literary work and a relevant reason.
+
+**Closure (5 min):** Pupils put up their menus and other pupils will write their names on the booking list if they like the menu. Anthology of Poems Page 20 Contemporary Children’s Literature Teaching Guidebook (BPK) – Poetry Activity 4 128 Differentiate learning according to the needs of your pupils and class.
+
+**Literature route:** No English Plus Student Book, Workbook or CD activity is prescribed.
+
+**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
