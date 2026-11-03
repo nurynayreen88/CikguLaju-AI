@@ -12,6 +12,8 @@ Materials: NON-TEXTBOOK: Watching a Bumble Bee, Anthology p.21; BPK Poetry Guide
 
 PBD: Observe and record evidence of the specified skills through the described activities.
 Differentiation: Differentiate by number of words changed and stanzas adapted.
-Workbook: No exercise assigned until the exact page and activity are verified.
-Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.
+Workbook: Not prescribed for this Language Arts lesson.
+Audio: No English Plus CD track is prescribed for this non-textbook lesson.
 QA status: SOW-aligned draft; physical textbook page, audio playback and one-page Word/PDF checks outstanding.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
