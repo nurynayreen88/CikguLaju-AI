@@ -12,6 +12,8 @@ Materials: NON-TEXTBOOK: And Something Weird Happened by Pamela Rushby pp.5–8;
 
 PBD: Record lesson-specific evidence from reading, listening, speaking, creative responses or self-assessment.
 Differentiation: Encourage more than one reason where possible.
-Workbook: Do not assign unverified page or exercise.
-Audio: Use SOW-listed tracks only; content not independently listened to.
+Workbook: Not prescribed for this Language Arts lesson.
+Audio: No English Plus CD track is prescribed for this non-textbook lesson.
 QA: SOW-aligned draft; source-page, audio and one-page Word/PDF checks pending.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
