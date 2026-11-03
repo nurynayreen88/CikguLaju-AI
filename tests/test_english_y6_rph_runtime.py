@@ -3,6 +3,7 @@
 Never imports production app.py or alters any user credits.
 """
 import types
+import json
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -37,10 +38,21 @@ class Y6RPHReleaseTests(unittest.TestCase):
     def test_exact_rph_fields_from_year6(self):
         with TemporaryDirectory() as tmp:
             (Path(tmp) / "lesson_001.md").write_text(dummy_source(1), encoding="utf-8")
+            overlay={"version":"y6-sow-20261103","fixed_standard_lessons":146,
+                     "lessons":{"1":{"main_ls":"3.2.1","complementary_ls":"4.2.4",
+                     "objective":"Identify the main idea of the text",
+                     "pbd_evidence":"Annotated answers","sow_pupil_book_exercises":"1",
+                     "induction":{"teacher":"Show visuals","pupils":"Predict"},
+                     "activities":[{"teacher":"Explain the story","pupils":"Read"},
+                                   {"teacher":"Guide main idea","pupils":"Identify main idea"},
+                                   {"teacher":"Check answers","pupils":"Give evidence"}],
+                     "closure":{"teacher":"Reflect","pupils":"Share"}}}}
+            (Path(tmp) / "sow_task_overlay_2027.json").write_text(json.dumps(overlay), encoding="utf-8")
             state={"year":"Tahun 6","subject":"Bahasa Inggeris","lesson_no":1,"sp_code":"3.2.1"}
             rows=adapt_rows(state,{"OBJEKTIF PEMBELAJARAN":"generic","TARIKH":"03/11"},root=tmp)
-        self.assertIn("Identify 5 facts",rows["OBJEKTIF PEMBELAJARAN"])
+        self.assertIn("Identify the main idea",rows["OBJEKTIF PEMBELAJARAN"])
         self.assertIn("Academy Stars",rows["BAHAN BANTU MENGAJAR"])
+        self.assertIn("Guide main idea",rows["AKTIVITI UTAMA"])
         self.assertIn("Teacher:",rows["AKTIVITI UTAMA"])
         self.assertIn("Pupils:",rows["AKTIVITI UTAMA"])
         self.assertEqual(rows["TARIKH"],"03/11")
@@ -54,6 +66,30 @@ class Y6RPHReleaseTests(unittest.TestCase):
                       {"year":"Tahun 6","subject":"English","lesson_no":161},
                       {"year":"Tahun 6","subject":"English"}]:
             self.assertIs(adapt_rows(state,rows),rows)
+
+    def test_official_sow_overlay_covers_146_fixed_lessons_only(self):
+        root = Path(__file__).resolve().parents[1] / "rph_standalone" / "english" / "year6"
+        content = json.loads((root / "sow_task_overlay_2027.json").read_text(encoding="utf-8"))
+        self.assertEqual(content["version"], "y6-sow-20261103")
+        self.assertEqual(len(content["lessons"]), 146)
+        choices = {16,32,48,64,80,96,112,128,144,155,156,157,158,160}
+        self.assertTrue(choices.isdisjoint({int(key) for key in content["lessons"]}))
+        for key, entry in content["lessons"].items():
+            num = int(key)
+            record = load_lesson(num)
+            self.assertIsNotNone(record)
+            self.assertEqual(entry["main_ls"], record[0]["main cs/ls"].split("/")[-1])
+            self.assertEqual(entry["complementary_ls"], record[0]["complementary cs/ls"].split("/")[-1])
+            self.assertEqual(len(entry["activities"]), 3)
+            self.assertTrue(entry["objective"].startswith("By the end"))
+            self.assertTrue(all("teacher" in activity and "pupils" in activity for activity in entry["activities"]))
+
+    def test_missing_overlay_fails_closed_to_existing_rows(self):
+        with TemporaryDirectory() as tmp:
+            (Path(tmp) / "lesson_001.md").write_text(dummy_source(1), encoding="utf-8")
+            old = {"OBJEKTIF PEMBELAJARAN":"prior plan"}
+            state = {"year":"Tahun 6","subject":"English","lesson_no":1,"sp_code":"3.2.1"}
+            self.assertIs(adapt_rows(state,old,root=tmp),old)
 
     def test_mismatched_learning_standard_fails_closed(self):
         with TemporaryDirectory() as tmp:
