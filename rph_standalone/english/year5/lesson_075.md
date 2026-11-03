@@ -21,3 +21,5 @@
 **Differentiation:** Provide a story-sequence organizer; extend with added character reactions.
 
 **Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
