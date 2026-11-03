@@ -48,3 +48,28 @@ buku aktiviti, RPT induk 2027 dan padanan RPH memerlukan audit terakhir.
 - Tiada perubahan kepada database pengguna, kurikulum, RPH, kuota atau
   bot produksi. Fail PDF kekal dalam Google Drive pemilik sehingga mekanisme
   penyimpanan persendirian disediakan.
+
+## Laluan storan Supabase persendirian (November 2026)
+
+Alternatif kepada fail setempat ialah jadual tambahan
+`public.cikgulaju_rpt_math_pdf_assets` dalam projek CikguLaju.
+Jadual itu mempunyai RLS, tiada kebenaran SELECT untuk `anon` atau
+`authenticated`, dan SELECT pelayan sahaja untuk `service_role`.
+Ia tidak mengubah jadual pengguna, pembayaran, kurikulum atau RPH.
+
+Adapter `supabase_assets.py` hanya menggunakan `_sb_request` yang
+sedia ada dalam bot, selepas pemeriksaan langganan. Rekod yang
+dilepaskan mesti mempunyai `release_enabled=true`, nama fail tepat,
+saiz dan SHA-256 yang sah. Kandungan base64 dinyahkod di pelayan,
+diverifikasi, kemudian dihantar melalui Telegram sebagai fail PDF;
+tiada URL PDF awam dipaparkan.
+
+Sekiranya jadual belum berisi PDF, versi belum diaktifkan, respons
+Supabase gagal atau checksum tidak sepadan, penghantaran ditolak.
+Kod tersebut turut diuji untuk callback butang lama serta akaun
+tanpa akses berbayar. Label bahan kekal v28 DRAF/SEMENTARA.
+
+Pemasangan data PDF dibuat secara berasingan daripada commit kod,
+menggunakan pakej pemasangan tempatan yang tidak menyimpan kunci
+pelayan pada disk. **Jangan** meletakkan base64 PDF, service key,
+atau URL yang mempunyai token dalam repositori GitHub awam.
