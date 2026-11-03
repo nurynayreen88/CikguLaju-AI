@@ -208,7 +208,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 |---|---|---|---|---|---|---|
 | **Lesson 086** (BM2-P086) | Kebudayaan Kita; U12: Amalan Baik | Berbudi Bahasa Budaya Kita | 1.1 Mendengar dan memberikan respons | 1.1.1 — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat | BT1 m/s 75; BA m/s 85-86 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 087** (BM2-P087) | Kebudayaan Kita; U12: Amalan Baik | Asal Usul Nama Baling, Kedah | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera | 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera | BT1 m/s 76; BA m/s 87-88 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 088** (BM2-P088) | Kebudayaan Kita; U12: Amalan Baik | Teater + PKJR | 3.3 Menghasilkan penulisan | 3.3.1 (i) | BT1 m/s 77; BA m/s 89–91 | Menulis; Semakan bahan bertulis |
+| **Lesson 088** (BM2-P088) | Kebudayaan Kita; U12: Amalan Baik | Teater + PKJR | 3.3 Menghasilkan penulisan | 3.3.1 (i) — Menghasilkan penulisan naratif dan bukan naratif secara separa terkawal | BT1 m/s 77; BA m/s 89–91 | Menulis; Semakan bahan bertulis |
 | **Lesson 089** (BM2-P089) | Kebudayaan Kita; U12: Amalan Baik | Sehari di Muzium Kaca (i-Box Glass Museum) | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.4 (vi) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks | BT1 m/s 78; BA m/s 92 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 
 ### M22 • Kumpulan A: 20/06–24/06 | Kumpulan B: 21/06–25/06
@@ -218,7 +218,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 | **Lesson 090** (BM2-P090) | Kebudayaan Kita; U12: Amalan Baik | Lawatan ke Muzium Padi | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks | 5.1.4 (v), (vi) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks | BT1 m/s 79 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 091** (BM2-P091) | Kebudayaan Kita; U12: Amalan Baik | Berbudi Bahasa Budaya Kita | 1.1 Mendengar dan memberikan respons | 1.1.1 — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat | BT1 m/s 75; BA m/s 85-86 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 092** (BM2-P092) | Kebudayaan Kita; U12: Amalan Baik | Asal Usul Nama Baling, Kedah | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera | 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera | BT1 m/s 76; BA m/s 87-88 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 093** (BM2-P093) | Kebudayaan Kita; U12: Amalan Baik | Teater + PKJR | 3.3 Menghasilkan penulisan | 3.3.1 (i) | BT1 m/s 77; BA m/s 89–91 | Menulis; Semakan bahan bertulis |
+| **Lesson 093** (BM2-P093) | Kebudayaan Kita; U12: Amalan Baik | Teater + PKJR | 3.3 Menghasilkan penulisan | 3.3.1 (i) — Menghasilkan penulisan naratif dan bukan naratif secara separa terkawal | BT1 m/s 77; BA m/s 89–91 | Menulis; Semakan bahan bertulis |
 | **Lesson 094** (BM2-P094) | Kebudayaan Kita; U12: Amalan Baik | Penilaian Tema 4 | Penilaian Tema / PBD | Penilaian Tema (tiada kod SP baharu) | BT1 m/s 81 | Penilaian Tema 4; BT1 m/s 81 • DRAF / PBD BUKAN SP |
 
 ### M23 • Kumpulan A: 27/06–01/07 | Kumpulan B: 28/06–02/07
@@ -227,7 +227,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 |---|---|---|---|---|---|---|
 | **Lesson 095** (BM2-P095) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | Amalan yang Baik | 1.1 Mendengar dan memberikan respons | 1.1.2 (i) — Mendengar, memahami, dan memberikan respons terhadap | BT2 m/s 2; BA m/s 1 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 096** (BM2-P096) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | Aku Bangga Berbahasa Melayu | 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera | 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera | BT2 m/s 3; BA m/s 2-3 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 097** (BM2-P097) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | Sekolah Kebanggaanku | 3.3 Menghasilkan penulisan | 3.3.1 (i) | BT2 m/s 4-5; BA m/s 4-5 | Menulis; Semakan bahan bertulis |
+| **Lesson 097** (BM2-P097) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | Sekolah Kebanggaanku | 3.3 Menghasilkan penulisan | 3.3.1 (i) — Menghasilkan penulisan naratif dan bukan naratif secara separa terkawal | BT2 m/s 4-5; BA m/s 4-5 | Menulis; Semakan bahan bertulis |
 | **Lesson 098** (BM2-P098) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | Kampung Pering | 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks | 5.2.1 (i) — Memahami, mengenal pasti dan menggunakan kata mengikut konteks | BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 4-5 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema • DRAF / AKTIVITI BA SAHAJA |
 | **Lesson 099** (BM2-P099) | Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia | Sehari di Sekolah | 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks | 5.2.1 (i) — Memahami, mengenal pasti dan menggunakan kata mengikut konteks | BT2 m/s 6; BA m/s 6-8 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 
@@ -325,7 +325,7 @@ SEKOLAH: ____________________    GURU: ____________________    KELAS: __________
 | **Lesson 142** (BM2-P142) | Pertanian dan Penternakan; U20: Ternakan yang Berfaedah | Ternakan Puyuh | 5.3 Memahami dan membina ayat mengikut konteks | 5.3.2 (ii) — Memahami, mengenal pasti dan menggunakan ayat mengikut konteks | BT2 m/s 54; BA m/s 59-60 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 143** (BM2-P143) | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | Tokoh Penternakan | 1.1 Mendengar dan memberikan respons | 1.1.3 (i) — Mendengar, dan memberikan respons dengan membuat tafsiran terhadap | BT2 m/s 55; BA m/s 61 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 144** (BM2-P144) | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | Rumput Napier + PKJR | 2.2 (Membaca) | 2.2.1 (iv), (v) — Membaca, memahami dan mengenal pasti | BT2 m/s 56; BA m/s 62-63 | Membaca; Bacaan dan soalan pemahaman |
-| **Lesson 145** (BM2-P145) | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | Bahan Buangan yang Berharga | 3.3 Menghasilkan penulisan | 3.3.1 (i) | BT2 m/s 57; BA m/s 64-65 | Menulis; Semakan bahan bertulis |
+| **Lesson 145** (BM2-P145) | Pertanian dan Penternakan; U21: Rajin dan Usaha Tangga Kejayaan | Bahan Buangan yang Berharga | 3.3 Menghasilkan penulisan | 3.3.1 (i) — Menghasilkan penulisan naratif dan bukan naratif secara separa terkawal | BT2 m/s 57; BA m/s 64-65 | Menulis; Semakan bahan bertulis |
 
 ### M34 • Kumpulan A: 19/09–23/09 | Kumpulan B: 20/09–24/09
 
