@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.54 Activity 4 and p.55 Activities 1–3; TB pp.68–69; SB pp.52–53. Workbook mapping and audio content (where applicable) not independently verified.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Writing 4.3.1) — pupils use capital letters, full stops, commas in lists and question marks in independent writing at discourse level in the Food and health activities. Complementary (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the linked reading task.
 
 **Set induction (5 min):** Pupils complete a vocabulary review based on the previous sumo interview.
 

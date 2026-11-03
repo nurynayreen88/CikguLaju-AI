@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.54 Activities 1–3; TB p.68; CD2.05; vitamin A/B/C fact handout. Workbook mapping and audio content (where applicable) not independently verified.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the Food and health activities. Complementary (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the linked reading task.
 
 **Set induction (5 min):** Teacher displays The sports interview… Sumo Style; pupils predict text content from photographs.
 

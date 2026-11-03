@@ -4,7 +4,7 @@
 
 **Language focus:** Adjectives: fit, unfit, tired, lazy, hungry; Imperative verbs: Eat, Don’t eat, Go, Don’t go. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.56 Teacher’s Book p.70; Audio: CD2.06.
 
-**Objective:** Pupils complete the specific Reading 17 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the Food and health activities. Complementary (Speaking 2.1.3) — pupils ask for, give and respond to simple advice in the linked speaking task.
 
 **Set induction (5 min):** See instructions in Section 3 Pre-lesson Task 7: Beat the Teacher. Use ‘healthy’ as the key topic word.
 

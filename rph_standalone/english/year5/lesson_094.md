@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.55 Activities 4–5 and Finished?; TB p.69. Workbook mapping and audio content (where applicable) not independently verified.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Writing 4.2.3) — pupils narrate factual events and experiences of interest in the Food and health activities. Complementary (Speaking 2.2.2) — pupils agree on a set of basic steps needed to complete short classroom tasks in the linked speaking task.
 
 **Set induction (5 min):** Pupils complete a food-word Memory Chain using a, an and some.
 

@@ -4,7 +4,7 @@
 
 **Language focus:** Weights and prices: gram, kilo, a quarter / three quarters of a kilo, half a kilo, fraction; How much is…? It costs…. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.96 Teacher’s Book p.110; Audio: CD3.12, CD3.13.
 
-**Objective:** Pupils complete the specific Listening 17 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Listening 1.2.3) — pupils understand with support longer simple narratives on a range of familiar topics in the Food and health activities. Complementary (Listening 1.2.5) — pupils understand a sequence of supported questions in the linked listening task.
 
 **Set induction (5 min):** Write on board: ‘Shopping at a market’. Follow instructions in Teacher’s Book, p.110 for Warm-up activity.
 

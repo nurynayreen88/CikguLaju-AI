@@ -4,7 +4,7 @@
 
 **Materials:** Anthology of Poems p.20, The Meal; BPK CCL Poetry Guide, Activity 1 p.113; simple survey form. Non-textbook Language Arts: no Student Book, Workbook or audio prescribed by this SOW lesson.
 
-**Objective:** Pupils demonstrate the main and complementary skills through observable lesson tasks.
+**Learning objectives:** Main (Language Arts 5.2.1) — pupils explain in simple language why they like or dislike an event, description or character in a text in the The Meal activities. Complementary (Speaking 2.1.4) — pupils ask about and describe future plans in the linked speaking task.
 
 **Set induction (5 min):** Teacher follows Poetry Guide Activity 1 Steps 1–4 to introduce the poem.
 

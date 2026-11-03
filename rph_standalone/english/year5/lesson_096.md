@@ -4,7 +4,7 @@
 
 **Language focus:** Weights and prices: gram, kilo, a quarter / three quarters of a kilo, half a kilo, fraction. How much is…? It costs…. **Materials:** English Plus 1 Student’s Book Activities 4, 5 and 6 p.96 Teacher’s Book p.110; Audio: CD3.13, CD3.14.
 
-**Objective:** Pupils complete the specific Speaking 17 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Food and health activities. Complementary (Speaking 2.2.2) — pupils agree on a set of basic steps needed to complete short classroom tasks in the linked speaking task.
 
 **Set induction (5 min):** Brainstorm fractions, weights of food and money on board. Accept all suggestions e.g.10 kilos of beans, £1. Make sure pupils can pronounce half, quarter, pound.
 

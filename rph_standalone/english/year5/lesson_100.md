@@ -4,7 +4,7 @@
 
 **Language focus:** Verb + gerund e.g. I like playing; Affirmative and negative imperatives e.g. Go, Don’t go. **Materials:** English Plus 1 Student’s Book Activities 5–7 p.57 Teacher’s Book p.71.
 
-**Objective:** Pupils complete the specific Consolidation 10 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Writing 4.2.2) — pupils ask for, give and respond to simple advice in the Food and health activities. Complementary (Speaking 2.1.3) — pupils ask for, give and respond to simple advice in the linked speaking task.
 
 **Set induction (5 min):** Write on board: ‘I like…-ing’, ‘I love…-ing’, ‘I prefer…-ing’. Explain pupils can say a true or false sentence about themselves. After each, pupils put up their right hand if they think the sentence is true, left hand if they think it’s false.
 

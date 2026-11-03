@@ -4,7 +4,7 @@
 
 **Language focus:** I like… I quite / really like... I don’t mind… I don’t like… I really don’t like… I hate. **Materials:** English Plus 1 Student’s Book Activities 4–6 p.52 and 53 Teacher’s Book p.67; Audio: CD2.04.
 
-**Objective:** Pupils complete the specific Speaking 16 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Food and health activities. Complementary (Writing 4.3.1) — pupils use capital letters, full stops, commas in lists and question marks in independent writing at discourse level in the linked writing task.
 
 **Set induction (5 min):** Brainstorm food items from previous lesson. Write on board and pupils put one hand up if they like the food, two hands if they really like it.
 

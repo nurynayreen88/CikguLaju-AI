@@ -4,7 +4,7 @@
 
 **Language focus:** Verbs. **Materials:** Anthology of Poems p.20, The Meal; BPK CCL Poetry Guide Activity 4 p.128.
 
-**Objective:** Pupils complete the specific Language Arts 17 lesson tasks using The Meal vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the The Meal activities. Complementary (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics in the linked listening task.
 
 **Set induction (5 min):** Pupils go through the poem and remember as many as food items that they can. 2. Without looking at the poem, each pupil has to list down the food items they can remember.
 

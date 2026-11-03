@@ -4,7 +4,7 @@
 
 **Language focus:** Verbs + gerund: like -ing, prefer –ing, love -ing, don’t like -ing, hate –ing. **Materials:** English Plus 1 Student’s Book Activity 4 p.56 Teacher’s Book p.70.
 
-**Objective:** Pupils complete the specific Writing 17 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Writing 4.2.1) — pupils give detailed information about themselves in the Food and health activities. Complementary (Speaking 2.1.3) — pupils ask for, give and respond to simple advice in the linked speaking task.
 
 **Set induction (5 min):** See instructions in Section 3 for Pre-lesson Task 5: Sit Down, Stand Up. Use the adjectives on p.56, e.g. ‘A lazy teacher does a lot of work’. (false!).
 

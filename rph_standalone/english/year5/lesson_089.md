@@ -4,7 +4,7 @@
 
 **Language focus:** I like… I quite / really like... I don’t mind… I don’t like… I really don’t like… I hate…. **Materials:** English Plus 1 Student’s Book Activities 1, 2, 3 p.52 and 53 Teacher’s Book p.66; Audio: CD2.02, CD2.03.
 
-**Objective:** Pupils complete the specific Listening 16 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+**Learning objectives:** Main (Listening 1.2.1) — pupils understand with support the main idea of longer simple texts on a range of familiar topics in the Food and health activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.
 
 **Set induction (5 min):** Pupils answer Think! question, top of Student’s Book p.52. Follow instructions in Teacher’s Book p.66.
 
