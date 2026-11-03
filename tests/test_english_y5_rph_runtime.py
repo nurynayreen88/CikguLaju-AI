@@ -66,6 +66,28 @@ class EnglishY5IntegrationTests(unittest.TestCase):
         self.assertIn("English Plus", data["BAHAN BANTU MENGAJAR"])
         self.assertIn("Main: 1.2.1", data["STANDARD PEMBELAJARAN"])
 
+    def test_all_150_fixed_lessons_reach_renderer_rows(self):
+        old = {"OBJEKTIF PEMBELAJARAN": "old", "REFLEKSI": "preserve",
+               "TARIKH": "03/11", "MATA PELAJARAN": "English"}
+        accepted = []
+        for number in range(1, 161):
+            sow = self.gate["lessons"][str(number)]
+            if sow["teacher_choice"] or number == 141:
+                continue
+            state = {"subject": "English", "year": "Tahun 5",
+                     "lesson_no": number, "sp_code": sow["main_ls"]}
+            with self.subTest(lesson=number):
+                updated = adapt_rows(state, old)
+                self.assertIsNot(updated, old)
+                self.assertEqual(updated["REFLEKSI"], "preserve")
+                self.assertEqual(updated["TARIKH"], "03/11")
+                for field in ("SET INDUKSI", "AKTIVITI UTAMA",
+                              "PENTAKSIRAN", "PENUTUP",
+                              "STANDARD PEMBELAJARAN", "BAHAN BANTU MENGAJAR"):
+                    self.assertTrue(updated[field], (number, field))
+                accepted.append(number)
+        self.assertEqual(len(accepted), 150)
+
     def test_install_is_opt_in_and_preserves_existing_generator(self):
         prior = lambda st, *a, **kw: {"OBJEKTIF PEMBELAJARAN": "original", "TARIKH": "01/01"}
         runtime = types.SimpleNamespace(_rph_rows=prior, callback=lambda: "ok", quota=lambda: 10)
