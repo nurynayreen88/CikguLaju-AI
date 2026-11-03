@@ -21,5 +21,3 @@
 **Workbook practice (mapped):** p.63,65, Unit 7 past-simple questions + Writing biographical questions and answers, Ex1-4 / Ex1-4. Use briefly; do not replace SOW tasks.
 
 **Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
-
-**Workbook (existing source QA map):** p.63,65, Unit 7 past-simple questions + Writing biographical questions and answers, Ex1-4 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

@@ -6,13 +6,13 @@
 
 **Objective:** Pupils ask and respond to questions about sports and sports-club participation, using information heard in a short listening task.
 
-**Set induction (3 min):** Teacher elicits sports and sports clubs; pupils share which sport they would like to try.
+**Set induction (5 min):** Teacher elicits sports and sports clubs; pupils share which sport they would like to try.
 
-**Main activities (22 min):** (1) Teacher introduces SB p.63 Activities 4–6 and models interview questions; pupils identify useful question forms. (2) Teacher uses assigned CD2-13 in the listening stage according to TB p.77; pupils listen for relevant information and compare answers in pairs. (3) In pairs, pupils interview each other about sports preferences and joining a sports club, then swap roles. (4) Pupils complete the related sports quiz and explain responses.
+**Main activities (40 min):** (1) Teacher introduces SB p.63 Activities 4–6 and models interview questions; pupils identify useful question forms. (2) Teacher uses assigned CD2-13 in the listening stage according to TB p.77; pupils listen for relevant information and compare answers in pairs. (3) In pairs, pupils interview each other about sports preferences and joining a sports club, then swap roles. (4) Pupils complete the related sports quiz and explain responses.
 
-**PBD / reinforcement (7 min):** Teacher observes a sample of interviews with a checklist: relevant questions, intelligible responses, listening and follow-up; pupils repeat a question with improved clarity.
+**PBD / reinforcement (10 min):** Teacher observes a sample of interviews with a checklist: relevant questions, intelligible responses, listening and follow-up; pupils repeat a question with improved clarity.
 
-**Closure (3 min):** Pairs share one fact learned about their partner's sports interests.
+**Closure (5 min):** Pairs share one fact learned about their partner's sports interests.
 
 **Differentiation:** Supply question stems and a word bank for support; invite stronger pupils to ask follow-up questions and justify club choices.
 
