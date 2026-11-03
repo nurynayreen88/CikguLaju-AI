@@ -13,3 +13,5 @@ Materials: Anthology of Poems p.17, Serenade; BPK Poetry Guidebook.
 Differentiation: Accept one interview note from pupils needing support; encourage others to interview more friends.
 Non-textbook lesson: No English Plus Student's Book, Workbook or audio assignment.
 QA: SOW-matched draft; anthology page and Word/PDF output pending final checks.
+
+**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
