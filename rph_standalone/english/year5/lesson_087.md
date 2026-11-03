@@ -12,4 +12,6 @@ Materials: NON-TEXTBOOK: Miss Antrobus poem, Anthology p.16; BPK Poetry Guideboo
 
 PBD: Assess work against the stated or teacher-selected skills.
 Differentiation: Offer full poem, stanza or acrostic choices.
-Workbook mapping unverified. Audio not independently played. Draft pending book and Word/PDF checks.
+Workbook is not prescribed. Audio not independently played. Draft pending book and Word/PDF checks.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
