@@ -101,6 +101,19 @@ class Y6RPHReleaseTests(unittest.TestCase):
         self.assertIn("Flow Map", o21["activities"][0]["teacher"])
         self.assertIn("punctuation", o21["pbd_evidence"])
 
+    def test_sow_specific_language_arts_and_future_classroom(self):
+        from web.english_y6_standalone_runtime import _overlay
+        expected = {25: "classroom", 26: "feet", 31: "body part", 37: "picture"}
+        for n, term in expected.items():
+            with self.subTest(lesson=n):
+                lesson = load_lesson(n)
+                self.assertIsNotNone(lesson)
+                self.assertIn(term, lesson[0]["learning objective"].casefold())
+                layer = _overlay(n, LESSON_ROOT)
+                self.assertEqual(layer["main_ls"], lesson[0]["main cs/ls"].split("/")[-1])
+                self.assertEqual(len(layer["activities"]), 3)
+                self.assertIn(term, layer["objective"].casefold())
+
     def test_missing_overlay_fails_closed_to_existing_rows(self):
         with TemporaryDirectory() as tmp:
             (Path(tmp) / "lesson_001.md").write_text(dummy_source(1), encoding="utf-8")
