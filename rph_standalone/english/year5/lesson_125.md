@@ -16,3 +16,5 @@ Closure (5 min): Pupils share a learning point and complete an exit response.
 Differentiation: Provide word banks, visual prompts and sentence frames for support; extend proficient pupils with independent explanations or richer outputs.
 
 Verification: Lesson outline and references checked against official Year 5 SOW. Full source-page, workbook and audio checks remain pending before READY.
+
+**Workbook (existing source QA map):** p.60, Unit 7 Vocabulary — Describing people, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.

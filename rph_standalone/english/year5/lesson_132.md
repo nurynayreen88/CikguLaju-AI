@@ -15,3 +15,5 @@ Closure (5 min): Share one past-tense expression.
 Differentiation: Offer life-event sentence frames or require more detailed accounts.
 
 Verification: SOW checked; Workbook and full source-page audit pending. Do not mark READY.
+
+**Workbook (existing source QA map):** p.62, Unit 7 Vocabulary and Listening — Life events / past simple, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.

@@ -16,3 +16,5 @@ Closure (5 min): Pupils share one learning point and complete an exit response.
 Differentiation: Provide word banks, visual cues, shorter instructions and sentence frames as needed; extend confident pupils with explanations or more detailed output.
 
 Verification: Based on official Year 5 SOW. Full book-page, workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.60,66, Unit 7 describing people + Progress Review vocabulary/reading, Ex1-5 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
