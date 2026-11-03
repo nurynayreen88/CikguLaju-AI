@@ -1,5 +1,7 @@
 # Year 5 Lesson 155 — Listening 27
 
+**Official SOW topic:** Going away.
+
 Status: DRAF. Unit 8. Main LS 1.2.3; complementary LS 1.2.2.
 Materials: Student Book p.99 Activities 1–3; Teacher Book p.113; CD3-19. Workbook mapping and audio playback remain unverified.
 
