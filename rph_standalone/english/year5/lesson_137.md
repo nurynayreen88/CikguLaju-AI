@@ -1,17 +1,23 @@
-# Year 5 Lesson 137 — Listening 24
+# English Year 5 — Standalone RPH — Lesson 137 (Listening 24)
 
-Status: DRAF. Unit 7 Growing up. Main LS 1.2.4; complementary LS 2.1.2. Materials: SB p.78 Activities 1–3; TB p.92; CD2-27.
+**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Growing up. **Main LS:** 1.2.4. **Complementary LS:** 2.1.2. **Duration:** 60 minutes (suggested).
 
-Objective: Demonstrate the prescribed skills in the listed tasks.
+**Language focus:** Simple past tense interrogatives: When / Where did…? How old were you? Did you…? What was…? **Materials:** English Plus 1 Student’s Book Activities 1–3 p.78 Teacher’s Book p.92; Audio: CD2.27.
 
-Set induction (5 min): Discuss the Think! prompt.
+**Objective:** Pupils complete the specific Listening 24 lesson tasks using Growing up vocabulary and produce observable assessment evidence.
 
-Main activities (40 min): Listen to the pop-star interview on CD2-27, follow instructions for Activities 1–2, then role-play interviewer and pop star in Activity 3. Teacher models, monitors and supports.
+**Set induction (5 min):** Pupils do Think! question at top of p.78. See Think! p.92 in Teacher’s Book. The task of imagining develops pupils’ creative thinking – HOTS.
 
-PBD (10 min): Check understanding of instructions and exchanges. Pupils revise one response.
+**Activity 1 (15 min):** Pupils do Activity 1, CD2.27. Read the three instructions aloud. Check pupils understand what they have to do. Follow instructions in Teacher’s Book p.92, Exercise 1. After listening, ask: Were the sentences you put in the gaps correct? Pupils correct any that are wrong.
 
-Closure (5 min): Share a learning point.
+**Activity 2 (15 min):** Write on board: ‘Doing an interview. Interviewer/Pop star’. Pupils do Activity 2, CD2.27. Read instructions aloud. Check pupils understand the three things they have to do. Ask: What’s the question you’re going to answer? (Which Key Phrases does the interviewer ask? Which Key Phrases does the pop star ask?) Follow instructions in Teacher’s Book p.92, Exercise 2.
 
-Differentiation: Sentence frames for support; independent detail for extension.
+**Activity 3 (15 min):** After listening, check answers by choosing six pupils to read an answer aloud. Choose another six pupils to write number of the Key Phrase beside name of the interviewer or pop star on the board. 5. Pupils do Activity 3. Assign pupils their roles, interviewer or pop star. Choose two or three pairs to act out the interview. Interviewers can mime holding a microphone. Famous people can change their accent to sound older or American.
 
-Verification: Official SOW checked; book-page, workbook and audio audit pending. Do not mark READY.
+**PBD (5 min):** Teacher checks the listening task answers and records who needs a repeated listening.
+
+**Closure (5 min):** Choose a post-lesson task from Section 3 to review content of dialogue.
+
+**Workbook practice (mapped):** p.63,67, Unit 7 past-simple questions + Progress Review questions, Ex1-4 / Ex5. Use briefly; do not replace SOW tasks.
+
+**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
