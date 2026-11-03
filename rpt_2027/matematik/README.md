@@ -1,12 +1,12 @@
-# RPT Matematik 2027 v28 — PDF Telegram (DRAF/SEMENTARA)
+# RPT Matematik 2027 v28 — Muat turun Telegram (DRAF/SEMENTARA)
 
-Lima PDF telah disahkan dalam folder Google Drive pemilik, tetapi **tidak**
-diterbitkan sebagai pautan muat turun awam. Fail tidak disalin ke repositori
-GitHub yang bersifat public.
+Ini menggunakan **kaedah yang sama dengan RPT English 2027**:
+lima PDF disimpan terus dalam folder `rpt_2027/matematik/` dan
+`telegram_downloads.py` menghantar fail melalui `send_document()`.
+Tiada muat naik atau bacaan PDF daripada Supabase; tidak perlu
+konfigurasi environment variable atau pemasangan fail manual di Render.
 
-Sumber PDF asal: [Folder RPT Matematik 2027 — PDF Telegram v28](https://drive.google.com/drive/folders/1UARWx990NzWRJQnPNBJiBYhpfKbZmyOr)
-
-| Tahun | Halaman yang dilaporkan | Nama fail tepat |
+| Tahun | Halaman | Fail PDF |
 |---|---:|---|
 | 2 | 21 | `RPT_Matematik_Tahun_2_2027_v28_SEMENTARA.pdf` |
 | 3 | 31 | `RPT_Matematik_Tahun_3_2027_v28_SEMENTARA.pdf` |
@@ -14,62 +14,29 @@ Sumber PDF asal: [Folder RPT Matematik 2027 — PDF Telegram v28](https://drive.
 | 5 | 32 | `RPT_Matematik_Tahun_5_2027_v28_SEMENTARA.pdf` |
 | 6 | 33 | `RPT_Matematik_Tahun_6_2027_v28_SEMENTARA.pdf` |
 
-Versi v28 mengandungi 44 minggu dan penomboran Lesson 001–117 mengikut
-laporan penyediaan. **Belum ditanda FINAL VERIFIED.** Rujukan DSKP/buku teks,
-buku aktiviti, RPT induk 2027 dan padanan RPH memerlukan audit terakhir.
+Semua dokumen mempunyai 44 minggu dan Lesson 001–117.
+**Ini v28 DRAF/SEMENTARA, bukan FINAL VERIFIED.**
+Rujukan halaman buku teks/buku aktiviti dan padanan semua RPH
+standalone belum disahkan sepenuhnya.
 
-## Pemasangan selamat (belum dilaksanakan dalam produksi)
+Fail asal diambil daripada [folder Google Drive pemilik](https://drive.google.com/drive/folders/1UARWx990NzWRJQnPNBJiBYhpfKbZmyOr).
+Ujian integriti SHA-256 fail PDF dijalankan dalam CI.
 
-1. Letakkan **semua** PDF secara persendirian di direktori pada pelayan
-   Telegram; kekalkan nama fail tepat. Jangan jadikan direktori atau fail
-   boleh diakses melalui URL tanpa semakan langganan.
-2. Tetapkan `CIKGULAJU_RPT_MATH_PDF_DIR` kepada direktori tersebut. Jika tiada,
-   modul cuba direktori `rpt_2027/matematik/`; tiada sandaran ke Drive.
-3. Dalam laluan WSGI opt-in `tools/run_telegram_with_curriculum_api.py`,
-   modul English RPT memaparkan butang Matematik **hanya** jika PDF tahun
-   berkenaan wujud dan melepasi semakan header/saiz. Modul Matematik
-   menggunakan callback `rpt2027_math_pdf_<tahun>`.
-4. Klik muat turun menyemak `_is_admin`/`_access_info(...).active` sekali lagi
-   sebelum menghantar PDF melalui `send_document`, dan mengesahkan kejayaan
-   respons Telegram. Tiada kredit RPH ditolak.
-5. **Nota kritikal:** `Procfile` produksi masih `gunicorn app:app`; laluan
-   WSGI opt-in tidak aktif secara automatik. Uji fungsi dan pemasangan fail
-   secara berasingan di staging sebelum pertimbangkan pengaktifan.
-   Jangan terus menukar start command kerana WSGI opt-in yang sama turut
-   mendaftarkan beberapa integrasi lain.
+## Telegram dan akses
 
-## Keadaan fail / kegagalan
+Bot menggunakan aliran sedia ada `RPT 2027 → Tahun → Matematik (PDF)`
+untuk Tahun 2–6. Hanya pengguna dengan akses berbayar aktif,
+Rakan Pembangun disahkan, atau admin boleh memuat turun melalui
+Telegram; callback muat turun menyemak hak akses semula.
+Tiada kuota percubaan RPH ditolak. Penghantaran diperiksa menerusi
+respons Telegram; callback bukan Matematik diteruskan seperti biasa.
 
-- Tiada PDF atau fail terlalu kecil/tidak berheader PDF: butang tersembunyi
-  dan cubaan callback lama gagal dengan mesej yang jelas.
-- Akaun belum berbayar: akses ditolak walaupun callback dibina sendiri.
-- Nombor tahun lain: tidak dibenarkan.
-- Respons Telegram gagal: tidak melaporkan penghantaran berjaya.
-- Tiada perubahan kepada database pengguna, kurikulum, RPH, kuota atau
-  bot produksi. Fail PDF kekal dalam Google Drive pemilik sehingga mekanisme
-  penyimpanan persendirian disediakan.
+**Penting:** repositori GitHub CikguLaju ialah **public**.
+Oleh itu PDF ini, seperti PDF English dalam repositori yang sama,
+boleh dimuat turun terus dari GitHub tanpa sekatan langganan bot.
+Sekatan berbayar hanya melibatkan menu dan penghantaran Telegram.
 
-## Laluan storan Supabase persendirian (November 2026)
-
-Alternatif kepada fail setempat ialah jadual tambahan
-`public.cikgulaju_rpt_math_pdf_assets` dalam projek CikguLaju.
-Jadual itu mempunyai RLS, tiada kebenaran SELECT untuk `anon` atau
-`authenticated`, dan SELECT pelayan sahaja untuk `service_role`.
-Ia tidak mengubah jadual pengguna, pembayaran, kurikulum atau RPH.
-
-Adapter `supabase_assets.py` hanya menggunakan `_sb_request` yang
-sedia ada dalam bot, selepas pemeriksaan langganan. Rekod yang
-dilepaskan mesti mempunyai `release_enabled=true`, nama fail tepat,
-saiz dan SHA-256 yang sah. Kandungan base64 dinyahkod di pelayan,
-diverifikasi, kemudian dihantar melalui Telegram sebagai fail PDF;
-tiada URL PDF awam dipaparkan.
-
-Sekiranya jadual belum berisi PDF, versi belum diaktifkan, respons
-Supabase gagal atau checksum tidak sepadan, penghantaran ditolak.
-Kod tersebut turut diuji untuk callback butang lama serta akaun
-tanpa akses berbayar. Label bahan kekal v28 DRAF/SEMENTARA.
-
-Pemasangan data PDF dibuat secara berasingan daripada commit kod,
-menggunakan pakej pemasangan tempatan yang tidak menyimpan kunci
-pelayan pada disk. **Jangan** meletakkan base64 PDF, service key,
-atau URL yang mempunyai token dalam repositori GitHub awam.
+Kod `private_bundle.py` dan `supabase_assets.py` terdahulu tidak
+diperlukan lagi dan telah dikeluarkan dari cabang release ini.
+Jadual Supabase yang pernah dibuat dahulu tidak digunakan;
+tiada data pengguna atau kurikulum diubah.
