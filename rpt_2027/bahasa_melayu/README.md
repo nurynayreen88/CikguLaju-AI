@@ -36,6 +36,15 @@ DK Bahasa Melayu SK Tahun 1 dan buku baharu KP2027 belum disahkan dalam indeks s
 - [Indeks sumber BM SK Tahun 1–6](https://docs.google.com/document/d/1T7RnqWaB5WZsrB3nUg07T3tf0nyER25NhtdNOc9LeMc/edit).
 - [Kalendar minggu & cuti negeri 2027](https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit).
 
+## Audit lanjutan — 164 RPH BM T2 (3 Nov 2026)
+
+- **RPH Standalone BM Tahun 2: 164/164 fail**, semua fail telah diaudit satu-persatu untuk tajuk, SK, SP dan komponen wajib. Selepas pembetulan, **0 percanggahan metadata/struktur**.
+- Status kandungan: **135 DRAF, 29 HOLD, 0 READY**. Kumpulan berstatus HOLD tidak boleh diterbitkan kepada guru.
+- [Laporan audit penuh 164 RPH](AUDIT_RPH_BM_T2_164_20261103.md) • [Indeks fail RPH](../../rph_standalone/bahasa_melayu/year2/README.md).
+- Manifest `READY_GATE.json` kini menyatakan `rph_all_present=true` **untuk Tahun 2 sahaja**, sementara semua pintu akademik/BA/kalendar/cetakan/runtime lain masih false.
+- Arahan semakan baharu: `python tools/qa_bm_2027_readiness.py rph` (semak metadata RPH-RPT; **belum diuji di CI**). Semakan READY kekal fail-closed.
+- Audit struktur RPT Tahun 2–6 dalam staging: 825/825 Lesson, 44 minggu setiap tahun, pasangan Markdown–HTML sepadan. Ini bukan kelulusan kandungan atau penerbitan.
+
 ## Kemajuan RPH dan audit sumber primer — 3 Nov 2026
 
 - [RPH Standalone BM Tahun 2 — Lesson 001–010](../../rph_standalone/bahasa_melayu/year2/README.md) telah disimpan sebagai **10 DRAF, 2 HOLD PKJR, 0 READY**. Ini bahan berasaskan buku teks, belum dipaparkan untuk guru.
