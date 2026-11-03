@@ -1,35 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 053
 
+**ID:** BM3-P053  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
 **Tajuk:** Amaran Kebakaran  
 **SK:** 1.1 Mendengar dan memberikan respons.  
 **SP:** 1.1.3 (ii) — Mendengar, mentafsir, dan memberikan respons terhadap soalan bercapah.  
-**Rujukan RPT:** BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 47  
-**Sumber aktiviti:** BA1 m/s 47 — Amaran Kebakaran (BA sahaja). Kandungan dan/atau SP perlu pengesahan lanjut.  
-**Masa cadangan:** 60 minit, sesuaikan slot sebenar.  
-**Fokus:** Perbualan bercapah mengenai alat pengesan asap.  
-**Objektif:** Pada akhir PdP, murid dapat melakonkan dialog enam giliran yang mengandungi tiga soalan bercapah dengan respons beralasan.  
-**Bahan:** Buku Teks/BA berkaitan, bahan rangsangan bergambar, kad perkataan, buku latihan dan senarai semak PBD. Contoh: alat pengesan asap, amaran awal, penghuni, keselamatan rumah.  
+**Fokus:** memberikan respons kepada soalan bercapah  
+**Rujukan RPT:** BA1 m/s 47 Amaran Kebakaran; sokongan BT1 m/s 42 (1.1.3(ii))  
+**Bahan:** BA1 m/s 47 dialog pengesan asap dan keselamatan rumah; buku latihan dan kad/lembaran respons.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui tiga jawapan disokong alasan dan dua langkah munasabah.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru memperkenalkan situasi yang berkaitan tajuk Amaran Kebakaran serta mengaktifkan pengetahuan murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pemerhatian awal.
+**Guru:** Menunjukkan BA1 m/s 47 dialog pengesan asap dan keselamatan rumah dan mengemukakan satu soalan pemula.
+**Murid:** Memberi respons berdasarkan pengetahuan awal.
 
-## Aktiviti 1 — Perolehan maklumat (15 minit)
-**Tindakan guru:** Guru mengimbas bahan Amaran Kebakaran dan menjelaskan perbezaan soalan fakta dengan soalan yang meminta tafsiran.
-**Tindakan murid:** Murid mengenal tiga soalan yang memerlukan sebab dalam bahan.
+## Aktiviti 1 (15 minit)
+**Guru:** Membimbing murid memahami memberikan respons kepada soalan bercapah melalui sumber asal.
+**Murid:** Mendengar situasi pengesan asap lalu mengenal soalan yang memerlukan sebab atau pendapat.
 
-## Aktiviti 2 — Aplikasi PdP (20 minit)
-**Tindakan guru:** Guru mengatur lakonan sebagai penghuni rumah dan jiran yang berkongsi maklumat amaran.
-**Tindakan murid:** Murid melakonkan dialog enam giliran dan memberi tiga respons beralasan.
+## Aktiviti 2 (20 minit)
+**Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
+**Murid:** Memberikan tiga jawapan bercapah dengan alasan serta mencadangkan dua langkah selamat.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai tiga soalan/alasannya; calon sesi susulan BA yang bertindih Lesson048 perlu keputusan (HOLD).
-**Tindakan murid:** Murid menjawab atau menyerahkan hasil sendiri dan membuat pembetulan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Menyemak tiga jawapan disokong alasan dan dua langkah munasabah; merekod bukti respons atau hasil bertulis.
+**Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran perbualan bercapah mengenai alat pengesan asap dan nilai dalam situasi.
-**Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
+**Guru:** Merumuskan memberikan respons kepada soalan bercapah dengan satu contoh daripada bahan.
+**Murid:** Menyatakan satu perkara yang dipelajari.
 
-**Status QA:** HOLD — semakan BT / padanan BA–SP / PKJR atau Lesson ulangan belum lengkap.
-**Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+**Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
+**Nota sumber:** Buku Aktiviti ialah sokongan kepada kemahiran Buku Teks, bukan pengganti tajuk asal.  
+**Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.

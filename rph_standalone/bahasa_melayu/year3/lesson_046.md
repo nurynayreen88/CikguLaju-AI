@@ -1,35 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 046
 
+**ID:** BM3-P046  
 **Tema/Unit:** Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif  
-**Tajuk:** Penilaian  
+**Tajuk:** Penilaian Tema Kesihatan — Tugasan Modular  
 **SK:** 1.1 Mendengar dan memberikan respons.  
 **SP:** 1.1.2 (i), (ii) — Mendengar, memahami, dan memberikan respons terhadap: (i) suruhan dan permintaan; (ii) silaan dan larangan.  
-**Rujukan RPT:** BT1 m/s 39  
-**Sumber aktiviti:** Tiada BA khusus; penilaian berdasarkan SP yang telah diajar. Kandungan dan/atau SP perlu pengesahan lanjut.  
-**Masa cadangan:** 60 minit, sesuaikan slot sebenar.  
-**Fokus:** Penilaian tema melalui respons mendengar.  
-**Objektif:** Pada akhir PdP, murid dapat memberi enam respons sesuai terhadap suruhan, permintaan, silaan dan larangan berdasarkan empat situasi.  
-**Bahan:** Buku Teks/BA berkaitan, bahan rangsangan bergambar, kad perkataan, buku latihan dan senarai semak PBD. Contoh: sila duduk, jangan berkongsi tuala, tolong kemas alat, minta izin.  
+**Fokus:** pentaksiran respons dan kemahiran bahasa  
+**Rujukan RPT:** BT1 m/s 39; penilaian modular tanpa BA khusus  
+**Bahan:** bahan Penilaian BT1 m/s 39: ayat suruhan, permintaan, kata hubung dan kata sendi nama; buku latihan dan kad/lembaran respons.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui dua respons sopan dan lima daripada enam pilihan tatabahasa tepat; bukan SP rasmi baharu.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru memperkenalkan situasi yang berkaitan tajuk Penilaian serta mengaktifkan pengetahuan murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pemerhatian awal.
+**Guru:** Menunjukkan bahan Penilaian BT1 m/s 39: ayat suruhan, permintaan, kata hubung dan kata sendi nama dan mengemukakan satu soalan pemula.
+**Murid:** Memberi respons berdasarkan pengetahuan awal.
 
-## Aktiviti 1 — Perolehan maklumat (15 minit)
-**Tindakan guru:** Guru menerangkan empat kategori ujaran daripada pembelajaran terdahulu tanpa mencipta kod SP baharu.
-**Tindakan murid:** Murid membezakan suruhan, permintaan, silaan dan larangan melalui kad situasi.
+## Aktiviti 1 (15 minit)
+**Guru:** Membimbing murid memahami pentaksiran respons dan kemahiran bahasa melalui sumber asal.
+**Murid:** Memberikan dua respons lisan kepada suruhan/permintaan secara berpasangan.
 
-## Aktiviti 2 — Aplikasi PdP (20 minit)
-**Tindakan guru:** Guru menyusun empat stesen PBD dan menyoal setiap murid secara individu.
-**Tindakan murid:** Murid memberi enam respons lisan dan membetulkan respons yang tidak santun.
+## Aktiviti 2 (20 minit)
+**Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
+**Murid:** Melengkapkan enam ayat menggunakan kata hubung dan kata sendi nama, lalu menyemak jawapan.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Rekod bukti setiap subkemahiran; jadual dan format Penilaian BT1 m/s39 belum diverifikasi.
-**Tindakan murid:** Murid menjawab atau menyerahkan hasil sendiri dan membuat pembetulan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Menyemak dua respons sopan dan lima daripada enam pilihan tatabahasa tepat; bukan SP rasmi baharu; merekod bukti respons atau hasil bertulis.
+**Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran penilaian tema melalui respons mendengar dan nilai dalam situasi.
-**Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
+**Guru:** Merumuskan pentaksiran respons dan kemahiran bahasa dengan satu contoh daripada bahan.
+**Murid:** Menyatakan satu perkara yang dipelajari.
 
-**Status QA:** HOLD — semakan BT / padanan BA–SP / PKJR atau Lesson ulangan belum lengkap.
-**Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+**Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
+**Nota sumber:** Pemulihan, pengayaan, penilaian atau Bacaan Luas dilabel sebagai aktiviti modular; bukan Lesson buku teks baru.  
+**Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.

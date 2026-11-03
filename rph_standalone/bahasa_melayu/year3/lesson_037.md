@@ -1,35 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 037
 
+**ID:** BM3-P037  
 **Tema/Unit:** Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama  
-**Tajuk:** Dapur Bersih  
+**Tajuk:** Dapur Bersih — Pengukuhan Kata Adjektif Pancaindera  
 **SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks.  
 **SP:** 5.1.3 (iii) — Memahami dan menggunakan kata adjektif mengikut konteks  
+**Fokus:** kata adjektif pancaindera  
 **Rujukan RPT:** BT1 m/s 31; BA m/s 36-37  
-**Sumber aktiviti:** BA1 m/s 36–37 — kata adjektif pancaindera (susulan). Kandungan dan/atau padanan subkod belum lengkap dan tidak boleh dianggap rasmi.  
-**Masa cadangan:** 60 minit, tertakluk takwim sekolah dan jadual guru.  
-**Fokus:** Menggunakan kata adjektif pancaindera dalam teks deskriptif.  
-**Objektif:** Pada akhir PdP, murid dapat membina satu perenggan empat ayat dengan sekurang-kurangnya empat kata adjektif pancaindera.  
-**Bahan:** BA/BT yang berkenaan atau bahan rangsangan guru yang dilabel jelas, kad gambar/perkataan dan buku latihan. Contoh: harum, lazat, licin, lembut, merdu, nyaman.  
+**Bahan:** BT1 m/s 31 Dapur Bersih dan BA1 m/s 36–37; buku latihan dan kad/lembaran respons.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima kata adjektif tepat; sesi aplikasi susulan Lesson 033.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengaitkan tajuk Dapur Bersih dengan situasi yang sesuai dan meminta murid menyatakan pengetahuan awal.
-**Tindakan murid:** Murid memberi respons kepada gambar atau bahan rangsangan guru.
+**Guru:** Menunjukkan BT1 m/s 31 Dapur Bersih dan BA1 m/s 36–37 dan mengemukakan satu soalan pemula.
+**Murid:** Memberi respons berdasarkan pengetahuan awal.
 
-## Aktiviti 1 — Pemerhatian dan kefahaman (15 minit)
-**Tindakan guru:** Guru mengimbas pengelasan kata adjektif yang telah dibuat dalam Lesson 033 melalui permainan kad.
-**Tindakan murid:** Murid mengenal deria yang berkaitan dengan setiap perkataan.
+## Aktiviti 1 (15 minit)
+**Guru:** Membimbing murid memahami kata adjektif pancaindera melalui sumber asal.
+**Murid:** Mengenal pasti kata adjektif bau, rasa, sentuhan dan penglihatan berdasarkan gambar dapur.
 
-## Aktiviti 2 — Penghasilan atau persembahan (20 minit)
-**Tindakan guru:** Guru menyediakan gambar dapur yang bersih dan mengajak murid menerangkan rasa, bau, sentuhan dan rupa menggunakan ayat.
-**Tindakan murid:** Murid menulis empat ayat dengan kata adjektif pancaindera dan membetulkan kata yang tidak sesuai.
+## Aktiviti 2 (20 minit)
+**Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
+**Murid:** Melengkapkan peta pengelasan serta lima ayat tentang kebersihan dapur.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak sekurang-kurangnya empat kata adjektif dalam konteks; calon sesi berulang belum disahkan.
-**Tindakan murid:** Murid memberikan respons atau menyerahkan hasil kerja sendiri lalu membuat pembetulan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Menyemak lima kata adjektif tepat; sesi aplikasi susulan Lesson 033; merekod bukti respons atau hasil bertulis.
+**Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan pembelajaran mengenai menggunakan kata adjektif pancaindera dalam teks deskriptif dan menerapkan nilai yang sesuai.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
+**Guru:** Merumuskan kata adjektif pancaindera dengan satu contoh daripada bahan.
+**Murid:** Menyatakan satu perkara yang dipelajari.
 
-**Status QA:** HOLD — sumber / kod SP / pengulangan belum dapat disahkan sepenuhnya.
-**Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.
+**Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
+**Nota sumber:** Sesi pengukuhan/susulan menggunakan sumber berkaitan; tiada kod SP baharu dicipta.  
+**Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.

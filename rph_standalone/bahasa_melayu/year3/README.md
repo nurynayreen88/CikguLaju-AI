@@ -1,6 +1,6 @@
 # CikguLaju AI — RPH Standalone Bahasa Melayu Tahun 3 (2027)
 
-**STATUS: 165/165 fail RPH tersedia • 109 DRAF • 56 HOLD • 0 READY (semakan 4 November 2026).**
+**STATUS: 165/165 fail RPH tersedia • 125 DRAF • 40 HOLD • 0 READY (semakan 4 November 2026).**
 
 ## Liputan
 
@@ -25,9 +25,13 @@
 - Ujian Python `python tools/qa_bm_2027_readiness.py rph` ada tetapi **belum dijalankan di CI/runtime**; pemeriksaan fail dalam sambungan GitHub tidak sama dengan ujian produksi.
 - [Pintu penerbitan](../../../rpt_2027/bahasa_melayu/READY_GATE.json) masih `DRAFT_NOT_PUBLISHED`. Tahun 3 mempunyai `rph_all_present=false` sehingga 165/165 fail ada dan sumber/semakan lulus.
 
-**Baki Tahun 3:** 56 HOLD perlu keputusan akademik; semua 165 fail sudah tersedia. Semakan satu halaman A4, kalendar negeri, QA/CI dan pembacaan Telegram belum lulus.
+**Baki Tahun 3:** 40 HOLD perlu keputusan akademik; semua 165 fail sudah tersedia. Semakan satu halaman A4, kalendar negeri, QA/CI dan pembacaan Telegram belum lulus.
 
 
 ## Semakan Buku Teks Jilid 1 pada 4 November 2026
 
-19 Lesson diperiksa semula dengan BT1, BA1 dan DSKP. Kesilapan padanan SP pada 034, 043, 049, 054, 076–080 dan 094 telah dibetulkan dalam RPT serta RPH. Tajuk/halaman BT pada 042, 045, 082, 083, 088, 089, 090 dan 092 dipulihkan. 089 kekal HOLD bagi PKJR; Lesson 072, 093 dan 094 dilabel jelas sebagai pengayaan/pengukuhan/penilaian. Kiraan baharu 109 DRAF, 56 HOLD, 0 READY, tidak membayangkan telah lulus penerbitan.
+19 Lesson diperiksa semula dengan BT1, BA1 dan DSKP. Kesilapan padanan SP pada 034, 043, 049, 054, 076–080 dan 094 telah dibetulkan dalam RPT serta RPH. Tajuk/halaman BT pada 042, 045, 082, 083, 088, 089, 090 dan 092 dipulihkan. 089 kekal HOLD bagi PKJR; Lesson 072, 093 dan 094 dilabel jelas sebagai pengayaan/pengukuhan/penilaian. Kiraan semasa selepas batch susulan 125 DRAF, 40 HOLD, 0 READY, tidak membayangkan telah lulus penerbitan.
+
+## Audit terarah BT1 / BA1 — Batch kedua, 4 November 2026
+
+16 Lesson 007, 013, 015, 022–024, 030, 036–037, 041, 046–047, 053, 055–057 telah dikemas kini berdasarkan BT1 dan BA1. Pembetulan subkod kritikal: 024 menjadi 1.1.2(i), 030 menjadi 2.1.2(ii). Lesson pemulihan, pengayaan, penilaian dan Bacaan Luas dilabel jelas. Status terkini **125 DRAF, 40 HOLD, 0 READY**.

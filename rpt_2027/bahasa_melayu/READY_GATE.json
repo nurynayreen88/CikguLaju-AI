@@ -1,6 +1,6 @@
 {
   "status": "DRAFT_NOT_PUBLISHED",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "scope": "Bahasa Melayu SK 2027 Tahun 2–6",
   "expected_lessons": {
     "2": 164,
@@ -22,7 +22,7 @@
       "runtime_tests_passed": false
     },
     "3": {
-      "rph_all_present": false,
+      "rph_all_present": true,
       "textbook_pages_verified": false,
       "activity_book_pages_verified": false,
       "dskp_full_text_verified": false,
@@ -62,5 +62,5 @@
       "runtime_tests_passed": false
     }
   },
-  "note": "Do not publish/merge to main/deploy Telegram or Web until every gate is true and quality tests pass; no production DB changes have been approved for a DRAFT."
+  "note": "BM Year 3: 165/165 RPH files, 125 DRAF, 40 HOLD, 0 READY; other readiness gates remain false. Do not publish to main, Telegram or Web before full academic and runtime verification."
 }

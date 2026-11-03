@@ -1,35 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 041
 
+**ID:** BM3-P041  
 **Tema/Unit:** Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif  
 **Tajuk:** Rawatan Untuk Diri Sendiri  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.2 (i) — Menghasilkan jawapan pemahaman berdasarkan soalan  
-**Rujukan RPT:** BT1 m/s 35 (padanan kod 3.2.2(i)); BA1 m/s 42–43 latihan soalan bertumpu, bukan BA m/s 35  
-**Sumber aktiviti:** BA1 m/s 42–43 — latihan 3.2.2(i), menggantikan rujukan salah m/s 35. Kandungan dan/atau padanan subkod belum lengkap dan tidak boleh dianggap rasmi.  
-**Masa cadangan:** 60 minit, tertakluk takwim sekolah dan jadual guru.  
-**Fokus:** Menulis jawapan bertumpu daripada bahan rawatan diri.  
-**Objektif:** Pada akhir PdP, murid dapat menjawab empat soalan fakta tentang petikan dengan ayat lengkap dan tepat.  
-**Bahan:** BA/BT yang berkenaan atau bahan rangsangan guru yang dilabel jelas, kad gambar/perkataan dan buku latihan. Contoh: petikan BA tentang sakit kepala dan waktu makan, penutur, tindakan, urutan peristiwa.  
+**Fokus:** menulis jawapan soalan bertumpu  
+**Rujukan RPT:** BT1 m/s 35 Elakkan Kuman sebagai kemahiran; BA1 m/s 42–43 Rawatan Untuk Diri Sendiri sebagai latihan  
+**Bahan:** BA1 m/s 42 Rawatan Untuk Diri Sendiri serta nota kesihatan; buku latihan dan kad/lembaran respons.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui empat jawapan tepat tanpa mereka isi BT.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengaitkan tajuk Rawatan Untuk Diri Sendiri dengan situasi yang sesuai dan meminta murid menyatakan pengetahuan awal.
-**Tindakan murid:** Murid memberi respons kepada gambar atau bahan rangsangan guru.
+**Guru:** Menunjukkan BA1 m/s 42 Rawatan Untuk Diri Sendiri serta nota kesihatan dan mengemukakan satu soalan pemula.
+**Murid:** Memberi respons berdasarkan pengetahuan awal.
 
-## Aktiviti 1 — Pemerhatian dan kefahaman (15 minit)
-**Tindakan guru:** Guru menerangkan perbezaan soalan fakta dan soalan yang memerlukan huraian serta menunjukkan teks BA yang benar-benar berkod 3.2.2(i).
-**Tindakan murid:** Murid membaca bahan serta menanda nama, waktu dan perbuatan yang dinyatakan.
+## Aktiviti 1 (15 minit)
+**Guru:** Membimbing murid memahami menulis jawapan soalan bertumpu melalui sumber asal.
+**Murid:** Mengenal siapa, apa dan bila yang ditanyakan dalam latihan pemahaman.
 
-## Aktiviti 2 — Penghasilan atau persembahan (20 minit)
-**Tindakan guru:** Guru meminta murid menulis empat jawapan bertumpu dan memberikan alasan berdasarkan ayat petikan.
-**Tindakan murid:** Murid menulis jawapan dan membetulkan respons yang meleret atau tidak disokong teks.
+## Aktiviti 2 (20 minit)
+**Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
+**Murid:** Menulis empat jawapan bertumpu yang lengkap dan bersumber teks.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat jawapan yang bersumberkan BA; **tajuk BT Rawatan Untuk Diri Sendiri belum dibandingkan**, status HOLD.
-**Tindakan murid:** Murid memberikan respons atau menyerahkan hasil kerja sendiri lalu membuat pembetulan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Menyemak empat jawapan tepat tanpa mereka isi BT; merekod bukti respons atau hasil bertulis.
+**Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan pembelajaran mengenai menulis jawapan bertumpu daripada bahan rawatan diri dan menerapkan nilai yang sesuai.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
+**Guru:** Merumuskan menulis jawapan soalan bertumpu dengan satu contoh daripada bahan.
+**Murid:** Menyatakan satu perkara yang dipelajari.
 
-**Status QA:** HOLD — sumber / kod SP / pengulangan belum dapat disahkan sepenuhnya.
-**Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.
+**Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
+**Nota sumber:** Sesi pengukuhan/susulan menggunakan sumber berkaitan; tiada kod SP baharu dicipta.  
+**Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.

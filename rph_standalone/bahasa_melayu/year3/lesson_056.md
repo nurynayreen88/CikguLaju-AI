@@ -1,35 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 056
 
+**ID:** BM3-P056  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
 **Tajuk:** Sediakan Payung Sebelum Hujan  
 **SK:** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera.  
 **SP:** 4.1.1 (iii) — Bercerita dengan menggunakan gaya bahasa yang indah dan santun  
-**Rujukan RPT:** BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 50  
-**Sumber aktiviti:** BA1 m/s 50 — Sediakan Payung Sebelum Hujan (BA sahaja). Kandungan dan/atau SP perlu pengesahan lanjut.  
-**Masa cadangan:** 60 minit, sesuaikan slot sebenar.  
-**Fokus:** Perumpamaan dan kesantunan dalam cerita baharu.  
-**Objektif:** Pada akhir PdP, murid dapat membina cerita lima ayat menggunakan dua perumpamaan dan satu nilai murni.  
-**Bahan:** Buku Teks/BA berkaitan, bahan rangsangan bergambar, kad perkataan, buku latihan dan senarai semak PBD. Contoh: bagai isi dengan kuku, seperti cacing kepanasan, bagai menarik rambut dalam tepung.  
+**Fokus:** bercerita menggunakan perumpamaan  
+**Rujukan RPT:** BA1 m/s 50 Sediakan Payung Sebelum Hujan; latihan BA sahaja, SP 4.1.1(iii)  
+**Bahan:** cerita BA1 m/s 50 Sediakan Payung Sebelum Hujan dan senarai perumpamaan; buku latihan dan kad/lembaran respons.  
+**Masa cadangan:** 60 minit mengikut jadual guru.  
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui dua perumpamaan sesuai dan cerita runtut.
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru memperkenalkan situasi yang berkaitan tajuk Sediakan Payung Sebelum Hujan serta mengaktifkan pengetahuan murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pemerhatian awal.
+**Guru:** Menunjukkan cerita BA1 m/s 50 Sediakan Payung Sebelum Hujan dan senarai perumpamaan dan mengemukakan satu soalan pemula.
+**Murid:** Memberi respons berdasarkan pengetahuan awal.
 
-## Aktiviti 1 — Perolehan maklumat (15 minit)
-**Tindakan guru:** Guru mengulang maksud perumpamaan dalam bahan persahabatan dan meminta murid membezakan penggunaan tepat/salah.
-**Tindakan murid:** Murid memadankan ungkapan dengan situasi yang sesuai.
+## Aktiviti 1 (15 minit)
+**Guru:** Membimbing murid memahami bercerita menggunakan perumpamaan melalui sumber asal.
+**Murid:** Menyatakan maksud dua perumpamaan yang digunakan dalam situasi keselamatan.
 
-## Aktiviti 2 — Aplikasi PdP (20 minit)
-**Tindakan guru:** Guru membimbing murid menulis pengakhiran cerita berbeza yang menekankan berhati-hati dan bersahabat.
-**Tindakan murid:** Murid menyampaikan cerita lima ayat dan menyatakan satu nilai.
+## Aktiviti 2 (20 minit)
+**Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
+**Murid:** Menceritakan kejadian pendek lima ayat menggunakan dua perumpamaan dengan tepat.
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak dua perumpamaan dan nilai; sesi berulang dengan Lesson051 belum diputuskan (HOLD).
-**Tindakan murid:** Murid menjawab atau menyerahkan hasil sendiri dan membuat pembetulan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Menyemak dua perumpamaan sesuai dan cerita runtut; merekod bukti respons atau hasil bertulis.
+**Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran perumpamaan dan kesantunan dalam cerita baharu dan nilai dalam situasi.
-**Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
+**Guru:** Merumuskan bercerita menggunakan perumpamaan dengan satu contoh daripada bahan.
+**Murid:** Menyatakan satu perkara yang dipelajari.
 
-**Status QA:** HOLD — semakan BT / padanan BA–SP / PKJR atau Lesson ulangan belum lengkap.
-**Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+**Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
+**Nota sumber:** Buku Aktiviti ialah sokongan kepada kemahiran Buku Teks, bukan pengganti tajuk asal.  
+**Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.
