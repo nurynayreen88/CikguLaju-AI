@@ -10,7 +10,7 @@ Materials: SB p.26 Activity 5; TB p.40; question-word cards.
 4. Activity 3 (17 min): Partners ask and answer questions about their celebrations, then swap partners.
 5. Assessment and closure (8 min): Review new vocabulary; assess detailed written information and oral descriptions.
 
-PBD: Observe and record evidence of the specified skills through the described activities.
+PBD: Teacher checks three written details about a celebration and observes one understandable oral comparison or question in the partner exchange.
 Differentiation: Accept three or four written answers for pupils needing support.
 Workbook: No exercise assigned until the exact page and activity are verified.
 Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.

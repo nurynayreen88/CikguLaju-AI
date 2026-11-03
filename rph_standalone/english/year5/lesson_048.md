@@ -10,7 +10,7 @@ Materials: SB p.28 Activities 4–6; TB p.42.
 4. Activity 3 (17 min): Practise Activity 5 mini-dialogue with suitable intonation.
 5. PBD and closure (8 min): Pairs create a cinema plan dialogue; groups prepare a short cinema programme.
 
-PBD: Assess task-specific spoken, listening, reading or written evidence and note pupils needing support.
+PBD: Teacher observes a short cinema-planning dialogue for a relevant invitation, response and follow-up, and checks pupils' use of appropriate intonation.
 Differentiation: Point pupils to the order of target words in the dialogue.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.

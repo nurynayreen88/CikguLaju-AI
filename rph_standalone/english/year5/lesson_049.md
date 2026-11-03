@@ -10,7 +10,7 @@ Materials: SB p.29 Activities 1–3; TB p.43; Caribbean map.
 4. Activity 3 (17 min): Identify also, and and but; complete Activity 3 Key Phrases.
 5. PBD and closure (8 min): Pairs recount details of the London carnival from memory.
 
-PBD: Assess task-specific spoken, listening, reading or written evidence and note pupils needing support.
+PBD: Teacher checks two details retrieved from the London carnival text and one accurate use of also, and or but in a pupil response.
 Differentiation: Provide Where, When and What prompts for pupils needing support.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.

@@ -10,7 +10,7 @@ Sources: SB p.39 Activities 1–5; TB p.53; Philippines map.
 4. Activity 3 (17 min): Complete Activity 3 Key Phrases and Activity 4 using such as, like and for example.
 5. PBD and closure (8 min): Write animal descriptions in Activity 5 and review new vocabulary.
 
-PBD: Record task-specific evidence of the stated learning standards.
+PBD: Teacher checks two details from the reading about animals and one clear written description using such as, like or for example, with a correction where necessary.
 Differentiation: Allow extra reading time and ask fast finishers about threats to eagles.
 Workbook exercise not yet verified. Audio content not independently played. QA: SOW-aligned draft pending book and Word/PDF checks.
 

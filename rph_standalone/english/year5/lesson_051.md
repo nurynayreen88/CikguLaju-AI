@@ -10,7 +10,7 @@ Materials: NON-TEXTBOOK: And Something Weird Happened by Pamela Rushby pp.5–8;
 4. Activity 3 (17 min): Sort activities into likes and dislikes; explain choices using because.
 5. PBD and closure (8 min): Each pupil writes I like an activity because... and shares a reason.
 
-PBD: Record lesson-specific evidence from reading, listening, speaking, creative responses or self-assessment.
+PBD: Teacher observes a relevant literary response and checks one pupil-written statement of preference supported by a reason using because.
 Differentiation: Encourage more than one reason where possible.
 Workbook: Not prescribed for this Language Arts lesson.
 Audio: No English Plus CD track is prescribed for this non-textbook lesson.

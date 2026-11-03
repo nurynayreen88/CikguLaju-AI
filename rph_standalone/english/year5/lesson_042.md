@@ -10,7 +10,7 @@ Materials: SB p.24 Activity 4, p.25 Activities 1–3; TB p.38; CD 1-24.
 4. Activity 3 (17 min): Listen to CD 1-24 and practise final verb sounds /iz/ and /s/.
 5. Assessment and closure (8 min): Groups describe two family members' routines; assess spoken details and pronunciation.
 
-PBD: Observe and record evidence of the specified skills through the described activities.
+PBD: Teacher listens to two family-routine sentences from each pupil, checks the target final sounds /s/ and /ɪz/, and gives one specific pronunciation correction.
 Differentiation: Allow extra time or two comparisons instead of four.
 Workbook: No exercise assigned until the exact page and activity are verified.
 Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.

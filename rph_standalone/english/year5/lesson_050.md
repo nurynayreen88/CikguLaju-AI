@@ -10,7 +10,7 @@ Materials: SB p.29 Activities 4–5; TB p.43; peer-feedback checklist.
 4. Activity 3 (17 min): Pairs exchange drafts and check where/when, activities, personal routine, also and adjectives.
 5. PBD and closure (8 min): Revise writing after peer feedback and share a description; reflect on improvement.
 
-PBD: Assess task-specific spoken, listening, reading or written evidence and note pupils needing support.
+PBD: Teacher checks a revised carnival description for where/when information, an activity and the appropriate use of a linking word; pupils identify one improvement from peer feedback.
 Differentiation: Allow shorter descriptions for pupils needing support.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.

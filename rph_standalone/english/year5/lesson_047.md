@@ -10,7 +10,7 @@ Materials: SB p.28 Activities 1–3; TB p.42; CD 1-26.
 4. Activity 3 (17 min): Sort Right, Yes, OK, Mmm, Well and No? by communicative function.
 5. PBD and closure (8 min): Replay CD 1-26 to practise pronunciation; pairs read dialogue and choose programme activities.
 
-PBD: Assess task-specific spoken, listening, reading or written evidence and note pupils needing support.
+PBD: Teacher checks two details heard from CD1-26 and observes a pair using one appropriate reaction (Right, Yes, OK, Mmm, Well or No?) with understandable intonation.
 Differentiation: Pause track for pupils who need extra writing time.
 Workbook: Exact page and exercise not verified; do not assign an invented activity.
 Audio: Use only SOW-specified track if applicable; audio playback not yet verified.

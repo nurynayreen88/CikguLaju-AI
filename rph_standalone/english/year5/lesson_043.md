@@ -10,7 +10,7 @@ Materials: SB p.26 Activities 1–4; TB p.40; CD 1-25.
 4. Activity 3 (17 min): Listen to CD 1-25 and sequence the objects shown in photographs.
 5. Assessment and closure (8 min): Listen again for Activity 4 questions; review with Test Your Memory.
 
-PBD: Observe and record evidence of the specified skills through the described activities.
+PBD: Teacher checks the reading-task responses and whether the pupil sequences the photos using details from CD1-25, then asks which clue supported one choice.
 Differentiation: Replay introduction when pupils need to order photos.
 Workbook: No exercise assigned until the exact page and activity are verified.
 Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.
