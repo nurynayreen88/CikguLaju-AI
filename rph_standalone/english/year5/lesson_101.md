@@ -19,3 +19,5 @@
 **Closure (5 min):** Two teams read 9–10 written prices; pupils explain one currency difference.
 
 **Differentiation:** Price cards and repeat listening for support; varied multi-part amounts for confident pupils. **QA:** Workbook mapping and audio playback not yet verified.
+
+**Workbook (existing source QA map):** p.51, Unit 5 Speaking — In a cafe / Would you like...? Anything else?, Ex6. Optional brief follow-up; do not replace the SOW tasks.

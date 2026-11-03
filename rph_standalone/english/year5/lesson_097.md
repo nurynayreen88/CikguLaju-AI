@@ -21,3 +21,5 @@
 **Workbook practice (mapped):** p.46-47, Unit 5 Health adjectives + Imperatives, Ex1-5 / Ex4. Use briefly; do not replace SOW tasks.
 
 **Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+
+**Workbook (existing source QA map):** p.46-47, Unit 5 Health adjectives + Imperatives, Ex1-5 / Ex4. Optional brief follow-up; do not replace the SOW tasks.

@@ -18,3 +18,5 @@
 **Differentiation:** Provide vocabulary cues and paired rehearsal for pupils needing support; ask confident pupils to justify choices using complete sentences.
 
 **Verification note:** Exact wording and sequence of book activities require final page-level audit. No invented workbook activity or audio.
+
+**Workbook (existing source QA map):** p.50-51, Unit 5 Progress Review — complete unit review, Ex1-7. Optional brief follow-up; do not replace the SOW tasks.

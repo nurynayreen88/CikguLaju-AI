@@ -19,3 +19,5 @@
 **Closure (5 min):** Pupils give one imperative and one sequencing adverb from the text.
 
 **Differentiation:** Provide picture-sequence cards; challenge confident pupils to retell without looking at the text. **QA:** Workbook mapping not verified; no specific audio track prescribed for this lesson.
+
+**Workbook (existing source QA map):** p.49,51, Unit 5 Writing A food blog — sequencing words, Ex1-4; review writing Ex7. Optional brief follow-up; do not replace the SOW tasks.

@@ -21,3 +21,5 @@
 **Differentiation:** Provide a food/quantifier bank; extend with a reasoned plan to reduce waste.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.45,50, Unit 5 quantifiers + Progress Review, Ex1-5 / Ex3. Optional brief follow-up; do not replace the SOW tasks.

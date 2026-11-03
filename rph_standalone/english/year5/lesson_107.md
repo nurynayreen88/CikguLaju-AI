@@ -21,3 +21,5 @@
 **Differentiation:** Provide sport images and shorter listening segments; extend with explanations of quiz answers.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.52, Unit 6 Vocabulary — Sports, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

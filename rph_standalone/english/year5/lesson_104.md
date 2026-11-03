@@ -19,3 +19,5 @@
 **Closure (5 min):** Pupils name another food blog they would like to write and why.
 
 **Differentiation:** Supply a planning frame and model connectors; challenge confident pupils to add an explanatory detail. **QA:** Workbook mapping not verified; no prescribed audio.
+
+**Workbook (existing source QA map):** p.49,51, Unit 5 Writing — sequencing First/After that/Next/Finally, Ex1-4 / Ex7. Optional brief follow-up; do not replace the SOW tasks.

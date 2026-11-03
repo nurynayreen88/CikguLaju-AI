@@ -19,3 +19,5 @@
 **Closure (5 min):** Pupils state whether they prefer being a customer or server and why.
 
 **Differentiation:** Provide dialogue frames and number cards; extend by including dessert and two orders. **QA:** Workbook reference not prescribed in this SOW outline and has not been independently mapped.
+
+**Workbook (existing source QA map):** p.51, Unit 5 Speaking — ordering food and drink, Ex6. Optional brief follow-up; do not replace the SOW tasks.
