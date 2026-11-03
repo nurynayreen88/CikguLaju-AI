@@ -1,0 +1,102 @@
+"""Read-only Telegram delivery of English 2027 RPT PDFs.
+
+This is installed after app.py's existing callback wrappers by the active WSGI
+entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
+"""
+from pathlib import Path
+
+PDF_ROOT = Path(__file__).resolve().parent
+YEARS = frozenset(range(2, 7))
+
+
+def pdf_path(year):
+    if type(year) is not int or year not in YEARS:
+        raise ValueError("Unsupported RPT English year")
+    return PDF_ROOT / ("RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf" % year)
+
+
+def install(ns):
+    """Wrap only RPT callbacks, retaining the existing callback for everything else."""
+    if ns.get("CIKGULAJU_RPT_ENGLISH_2027_INSTALLED"):
+        return True
+    required = ("callback", "send", "send_document", "_access_info", "_is_admin")
+    if any(not callable(ns.get(name)) for name in required):
+        return False
+    previous = ns["callback"]
+    send = ns["send"]
+    send_document = ns["send_document"]
+
+    def allowed(cid):
+        # Use the same entitlement authority as the existing RPT 2027 menu.
+        try:
+            return bool(ns["_is_admin"](cid) or ns["_access_info"](cid).get("active"))
+        except Exception:
+            return False
+
+    def locked(cid):
+        return send(cid,
+            "🔒 <b>RPT 2027 — Akses Terhad</b>\n\n"
+            "RPT hanya untuk pembangun, Rakan Pembangun yang disahkan "
+            "dan pelanggan dengan langganan aktif.",
+            [[{"text": "🏆 Jadi Rakan Pembangun", "callback_data": "pioneer_join"}],
+             [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+
+    def callback(cid, d):
+        data = str(d or "")
+        is_year = data.startswith("rpt2027_year_")
+        is_download = data.startswith("rpt2027_en_pdf_")
+        if data != "rpt2027_home" and not is_year and not is_download:
+            return previous(cid, d)
+        # Enforce entitlement again for stale/forged buttons and downloads.
+        if not allowed(cid):
+            return locked(cid)
+        if data == "rpt2027_home":
+            kb = [[{"text": "Tahun %s" % year,
+                    "callback_data": "rpt2027_year_%s" % year}]
+                  for year in range(1, 7)]
+            kb.append([{"text": "🏠 Menu Utama", "callback_data": "home"}])
+            return send(cid,
+                "📅 <b>RPT 2027</b>\n\n"
+                "English Tahun 2–6 sudah tersedia dalam PDF (160 Lesson/tahun). "
+                "Subjek atau tahun lain dipaparkan mengikut status semasa.",
+                kb)
+        if is_year:
+            suffix = data[len("rpt2027_year_"):]
+            if suffix not in ("2", "3", "4", "5", "6"):
+                return previous(cid, d)
+            year = int(suffix)
+            return send(cid,
+                "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
+                "Pilih subjek untuk memuat turun RPT.\n"
+                "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\n\n"
+                "Tarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
+                [[{"text": "📥 English (PDF)", "callback_data": "rpt2027_en_pdf_%d" % year}],
+                 [{"text": "⬅️ Pilih Tahun", "callback_data": "rpt2027_home"}],
+                 [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+        suffix = data[len("rpt2027_en_pdf_"):]
+        if suffix not in ("2", "3", "4", "5", "6"):
+            return send(cid, "Pilihan tahun RPT tidak sah.")
+        year = int(suffix)
+        path = pdf_path(year)
+        if not path.is_file():
+            return send(cid,
+                "⚠️ PDF RPT English Tahun %d belum tersedia pada pelayan. "
+                "Tiada fail lain dihantar sebagai pengganti." % year)
+        try:
+            result = send_document(cid, str(path), "RPT English Tahun %d — 2027 (PDF)" % year)
+            check = ns.get("_telegram_delivery_ok_v25279")
+            if callable(check):
+                confirmed = bool(check(result))
+            else:
+                confirmed = (bool(getattr(result, "ok", False))
+                             and result.json().get("ok") is True)
+            if not confirmed:
+                return send(cid, "⚠️ Telegram belum mengesahkan penghantaran PDF RPT. Sila cuba lagi.")
+            return result
+        except Exception as exc:
+            print("ENGLISH RPT 2027 PDF delivery failed:", repr(exc), flush=True)
+            return send(cid, "⚠️ Muat turun RPT gagal. Sila cuba lagi.")
+
+    ns["callback"] = callback
+    ns["CIKGULAJU_RPT_ENGLISH_2027_INSTALLED"] = True
+    return True
