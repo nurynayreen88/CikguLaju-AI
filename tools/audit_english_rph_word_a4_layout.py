@@ -106,6 +106,38 @@ def validate_word_function_snapshot():
         raise RuntimeError("Production Word layout changed: update A4 snapshot after review")
 
 
+
+def compact_y6_word(source_path, target_path, pt):
+    """QA experiment only: compact margins, cell padding, text without removing words."""
+    from shutil import copyfile
+    from docx.oxml.ns import qn
+    copyfile(source_path,target_path)
+    doc=Document(target_path)
+    for section in doc.sections:
+        section.top_margin=Cm(0.52);section.bottom_margin=Cm(0.52)
+        section.left_margin=Cm(0.95);section.right_margin=Cm(0.95)
+        section.footer_distance=Cm(0.25)
+    doc.styles["Normal"].font.size=Pt(pt)
+    doc.styles["Normal"].paragraph_format.line_spacing=0.95
+    for table in doc.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                tcPr=cell._tc.get_or_add_tcPr()
+                mar=tcPr.find(qn("w:tcMar"))
+                if mar is not None:
+                    for side in ("top","bottom","left","right"):
+                        node=mar.find(qn("w:"+side))
+                        if node is not None:
+                            node.set(qn("w:w"),"7" if side in ("top","bottom") else "42")
+                for para in cell.paragraphs:
+                    para.paragraph_format.space_before=Pt(0)
+                    para.paragraph_format.space_after=Pt(0)
+                    para.paragraph_format.line_spacing=0.95
+                    for run in para.runs:
+                        run.font.size=Pt(pt)
+    doc.save(target_path)
+
+
 def main():
     validate_word_function_snapshot()
     word=OUT/"docx";pdf=OUT/"pdf"
@@ -117,7 +149,14 @@ def main():
             file=f"Y{y}_L{n:03d}"
             p=word/(file+".docx")
             write_word(y,n,rows,p)
-            items.append({"year":y,"lesson":n,"chars":sum(len(rows[k]) for k in FIELDS),"name":file})
+            chars=sum(len(rows[k]) for k in FIELDS)
+            items.append({"year":y,"lesson":n,"chars":chars,"name":file,"variant":"baseline"})
+            if y==6:
+                for tag,size in (("compact8",8.0),("compact75",7.5)):
+                    target=word/(file+"_"+tag+".docx")
+                    compact_y6_word(p,target,size)
+                    items.append({"year":y,"lesson":n,"chars":chars,
+                                  "name":file+"_"+tag,"variant":tag})
     cmd=["libreoffice","-env:UserInstallation=file://"+str(OUT/"lo-profile"),"--headless",
          "--convert-to","pdf","--outdir",str(pdf),*[str(word/(i["name"]+".docx")) for i in items]]
     result=subprocess.run(cmd,capture_output=True,text=True,timeout=420)
@@ -131,11 +170,16 @@ def main():
         item["pages"]=len(pages)
         item["a4"]=all(abs(float(x.mediabox.width)-595.28)<1.5 and abs(float(x.mediabox.height)-841.89)<1.5 for x in pages)
         if len(pages)!=1:problems.append(item)
+    by_variant={mode:{"count":sum(i["variant"]==mode for i in items),
+                       "one_page":sum(i["variant"]==mode and i["pages"]==1 for i in items),
+                       "multi_page":[{"year":i["year"],"lesson":i["lesson"],"pages":i["pages"]}
+                                     for i in items if i["variant"]==mode and i["pages"]!=1]}
+                for mode in ("baseline","compact8","compact75")}
     report={"sample_count":len(items),"one_page":len(items)-len(problems),
-            "multi_page":problems,"samples":items,
+            "by_variant":by_variant,"multi_page":problems,"samples":items,
             "scope":"exact app.py Word table function with isolated row and display helpers; LibreOffice approximation; NOT live Telegram delivery or native PDF generator"}
     (OUT/"a4_diagnostic.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
-    print("A4_LAYOUT_DIAGNOSTIC",json.dumps({"count":len(items),"one":report["one_page"],"long":problems},ensure_ascii=False),flush=True)
+    print("A4_LAYOUT_DIAGNOSTIC",json.dumps({"count":len(items),"one":report["one_page"],"variants":by_variant},ensure_ascii=False),flush=True)
 
 if __name__=="__main__":
     main()
