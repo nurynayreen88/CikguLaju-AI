@@ -27,6 +27,8 @@ from web.english_catalog_http import create_english_catalog_blueprint
 app.register_blueprint(create_english_catalog_blueprint())
 from web.english_rpt_2027_http import create_english_rpt_blueprint
 app.register_blueprint(create_english_rpt_blueprint())
+from web.english_y6_rph_2027_http import create_blueprint as create_y6_rph_blueprint
+app.register_blueprint(create_y6_rph_blueprint())
 
 
 @app.get("/")
