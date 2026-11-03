@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parent / "rph_standalone" / "english" / "year3"
 
 def _section(source, name):
-    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification):\*\*|\Z)", source, re.S | re.M)
+    match = re.search(r"(?m)^## " + re.escape(name) + r"\s*\([^\n]*\)\s*\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*|\Z)", source, re.S | re.M)
     return match.group(1).strip() if match else ""
 
 def apply(st, rows):
@@ -44,7 +44,7 @@ def apply(st, rows):
     ]
     # The lesson files may vary in activity titles. Match by phase prefix.
     def get(prefix):
-        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification):\*\*|\Z)", source, re.S | re.M)
+        match = re.search(r"(?m)^## (" + re.escape(prefix) + r"[^\n]*)\n(.*?)(?=^## |^\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*|\Z)", source, re.S | re.M)
         return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
     intro = get("Set Induction")[1]
     activities = [get("Activity " + str(i)) for i in range(1, 5)]
@@ -59,7 +59,7 @@ def apply(st, rows):
         result["PENTAKSIRAN"] = assessment
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
     # Internal QA notes belong in source audits, never in teacher-facing RPH.
-    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification):\*\*", closure, maxsplit=1)[0].strip()
+    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*", closure, maxsplit=1)[0].strip()
     result["PENUTUP"] = closure
     ref = re.search(
         r"(?im)^\*\*(?:References|Teaching materials|Materials(?:\s*/\s*references)?|Resources):\*\*\s*([^\n]+)",
