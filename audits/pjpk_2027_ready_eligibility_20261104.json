@@ -7,7 +7,8 @@
     "176 numbered PJ PdP match SK/SP sequences in the candidate 2027 RPT sources.",
     "31 page leads from RPT 2026 are NOT independent verification of textbook pages.",
     "Current RPT 2027 can contain source conflicts despite exact code matches, including Year 6 PdP 033.",
-    "Year 1 KP2027 source not included and not approved."
+    "Year 1 KP2027 source not included and not approved.",
+    "Year 2 PJ page values were explicitly read from the 37 source RPT entries, not inferred from file names or year numbers."
   ],
   "summary": {
     "total": 237,
@@ -59,7 +60,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "2-3",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_002.md",
@@ -84,7 +87,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "4-5",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_003.md",
@@ -109,7 +114,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "8-9",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_004.md",
@@ -134,7 +141,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "10",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_005.md",
@@ -159,7 +168,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "11",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_006.md",
@@ -184,7 +195,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "12",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_007.md",
@@ -209,7 +222,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "13",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_008.md",
@@ -234,7 +249,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "15",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_009.md",
@@ -259,7 +276,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "16",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_010.md",
@@ -284,7 +303,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "17",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_011.md",
@@ -309,7 +330,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "18-19",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_012.md",
@@ -334,7 +357,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "20",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_013.md",
@@ -359,7 +384,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "21",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_014.md",
@@ -384,7 +411,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "22-23",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_015.md",
@@ -409,7 +438,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "24-25",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_016.md",
@@ -434,7 +465,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "26",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_017.md",
@@ -459,7 +492,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "27",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_018.md",
@@ -484,7 +519,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "29-30",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_019.md",
@@ -509,7 +546,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "31",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_020.md",
@@ -534,7 +573,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 33-34",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_021.md",
@@ -559,7 +600,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 35",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_022.md",
@@ -584,7 +627,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 36",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_023.md",
@@ -609,7 +654,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 37",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_024.md",
@@ -634,7 +681,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 38",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_025.md",
@@ -659,7 +708,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 39",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_026.md",
@@ -684,7 +735,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 40-41",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_027.md",
@@ -709,7 +762,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 42-43",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_028.md",
@@ -734,7 +789,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 49-50",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_029.md",
@@ -759,7 +816,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 51",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_030.md",
@@ -784,7 +843,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 53-54",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_031.md",
@@ -809,7 +870,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 57-58",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_032.md",
@@ -834,7 +897,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 59",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_033.md",
@@ -859,7 +924,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 60-61",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_034.md",
@@ -884,7 +951,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 62",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_035.md",
@@ -909,7 +978,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 63",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_036.md",
@@ -934,7 +1005,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 64",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_037.md",
@@ -959,7 +1032,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "halaman 65",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year2_pj/lesson_u5_01.md",
@@ -1556,7 +1631,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "2-3",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_002.md",
@@ -1581,7 +1658,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "4",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_003.md",
@@ -1606,7 +1685,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "5",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_004.md",
@@ -1631,7 +1712,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "6-7",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_005.md",
@@ -1656,7 +1739,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "9-11",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_006.md",
@@ -1681,7 +1766,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "12-13",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_007.md",
@@ -1706,7 +1793,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "15-17",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_008.md",
@@ -1731,7 +1820,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "15-17",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_009.md",
@@ -1756,7 +1847,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "18-19",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_010.md",
@@ -1781,7 +1874,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "21-22",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_011.md",
@@ -1806,7 +1901,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "23",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_012.md",
@@ -1831,7 +1928,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "24-25",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_013.md",
@@ -1856,7 +1955,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "24-25",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_014.md",
@@ -1881,7 +1982,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "28-29",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_015.md",
@@ -1906,7 +2009,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "30",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_016.md",
@@ -1931,7 +2036,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "31",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_017.md",
@@ -1956,7 +2063,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "33-35",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_018.md",
@@ -1981,7 +2090,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "33-35",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_019.md",
@@ -2006,7 +2117,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "36-37",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_020.md",
@@ -2031,7 +2144,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "38",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_021.md",
@@ -2056,7 +2171,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "39",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_022.md",
@@ -2081,7 +2198,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "41-43",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_023.md",
@@ -2106,7 +2225,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "44-45",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_024.md",
@@ -2131,7 +2252,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "47-48",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_025.md",
@@ -2156,7 +2279,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "49",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_026.md",
@@ -2181,7 +2306,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "50",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_027.md",
@@ -2206,7 +2333,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "51",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_028.md",
@@ -2231,7 +2360,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "51",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_029.md",
@@ -2256,7 +2387,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "53-54",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_030.md",
@@ -2281,7 +2414,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "55",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_031.md",
@@ -2306,7 +2441,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "57-58",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_032.md",
@@ -2331,7 +2468,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "57-58",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_033.md",
@@ -2356,7 +2495,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "59",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_034.md",
@@ -2381,7 +2522,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "59",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_035.md",
@@ -2406,7 +2549,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "60",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_036.md",
@@ -2431,7 +2576,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "61",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_037.md",
@@ -2456,7 +2603,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "62-63",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pj/lesson_038.md",
@@ -2481,7 +2630,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "62-63",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year3_pk/source_sk_1_1.md",
@@ -2740,7 +2891,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "2-3",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_002.md",
@@ -2765,7 +2918,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "4",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_003.md",
@@ -2790,7 +2945,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "5",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_004.md",
@@ -2815,7 +2972,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "6",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_005.md",
@@ -2840,7 +2999,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "7",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_006.md",
@@ -2865,7 +3026,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "8",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_007.md",
@@ -2890,7 +3053,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "9-10",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_008.md",
@@ -2915,7 +3080,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "11-14",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_009.md",
@@ -2940,7 +3107,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "15",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_010.md",
@@ -2965,7 +3134,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "17",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_011.md",
@@ -2990,7 +3161,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "18",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_012.md",
@@ -3015,7 +3188,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "19-20",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_013.md",
@@ -3040,7 +3215,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "21-23",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_014.md",
@@ -3065,7 +3242,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "24-25",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_015.md",
@@ -3090,7 +3269,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "26",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_016.md",
@@ -3115,7 +3296,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "27-28",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_017.md",
@@ -3140,7 +3323,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "29-31",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_018.md",
@@ -3165,7 +3350,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "32-34",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_019.md",
@@ -3190,7 +3377,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "35-37",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_020.md",
@@ -3215,7 +3404,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "38",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_021.md",
@@ -3240,7 +3431,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "39",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_022.md",
@@ -3265,7 +3458,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "40-41",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_023.md",
@@ -3290,7 +3485,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "42-43",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_024.md",
@@ -3315,7 +3512,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "44-47",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_025.md",
@@ -3340,7 +3539,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "49-51",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_026.md",
@@ -3365,7 +3566,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "52-54",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_027.md",
@@ -3390,7 +3593,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "55-57",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_028.md",
@@ -3415,7 +3620,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "58-59",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_029.md",
@@ -3440,7 +3647,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "61-63",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_030.md",
@@ -3465,7 +3674,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "65-66",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_031.md",
@@ -3490,7 +3701,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "67",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_032.md",
@@ -3515,7 +3728,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "68-69",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_033.md",
@@ -3540,7 +3755,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "70-71",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pj/lesson_034.md",
@@ -3565,7 +3782,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "72-73",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year4_pk/source_sk_1_1.md",
@@ -3825,7 +4044,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_002.md",
@@ -3851,7 +4072,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_003.md",
@@ -3877,7 +4100,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_004.md",
@@ -3903,7 +4128,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_005.md",
@@ -3929,7 +4156,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_006.md",
@@ -3955,7 +4184,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_007.md",
@@ -3981,7 +4212,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_008.md",
@@ -4007,7 +4240,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_009.md",
@@ -4033,7 +4268,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_010.md",
@@ -4059,7 +4296,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_011.md",
@@ -4085,7 +4324,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_012.md",
@@ -4111,7 +4352,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_013.md",
@@ -4136,7 +4379,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "18",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_014.md",
@@ -4162,7 +4407,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_015.md",
@@ -4188,7 +4435,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_016.md",
@@ -4214,7 +4463,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_017.md",
@@ -4240,7 +4491,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_018.md",
@@ -4266,7 +4519,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_019.md",
@@ -4292,7 +4547,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_020.md",
@@ -4318,7 +4575,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_021.md",
@@ -4344,7 +4603,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_022.md",
@@ -4370,7 +4631,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_023.md",
@@ -4396,7 +4659,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_024.md",
@@ -4422,7 +4687,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_025.md",
@@ -4448,7 +4715,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_026.md",
@@ -4474,7 +4743,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_027.md",
@@ -4500,7 +4771,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_028.md",
@@ -4526,7 +4799,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_029.md",
@@ -4551,7 +4826,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "54-55",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_030.md",
@@ -4576,7 +4853,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "56",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_031.md",
@@ -4601,7 +4880,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "57",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_032.md",
@@ -4627,7 +4908,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year5_pj/lesson_033.md",
@@ -4652,7 +4935,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "64-65",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year5_pk/source_entry_2259.md",
@@ -4989,7 +5274,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "2-3",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_002.md",
@@ -5014,7 +5301,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "4",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_003.md",
@@ -5039,7 +5328,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "5",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_004.md",
@@ -5064,7 +5355,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "6",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_005.md",
@@ -5089,7 +5382,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "7",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_006.md",
@@ -5114,7 +5409,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "8",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_007.md",
@@ -5139,7 +5436,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "9",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_008.md",
@@ -5164,7 +5463,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "11-12",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_009.md",
@@ -5189,7 +5490,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "12-13",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_010.md",
@@ -5214,7 +5517,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "16",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_011.md",
@@ -5239,7 +5544,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "17",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_012.md",
@@ -5264,7 +5571,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "18-19",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_013.md",
@@ -5289,7 +5598,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "18",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_014.md",
@@ -5314,7 +5625,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "19",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_015.md",
@@ -5339,7 +5652,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "22",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_016.md",
@@ -5364,7 +5679,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "23",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_017.md",
@@ -5389,7 +5706,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "24-25",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_018.md",
@@ -5414,7 +5733,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "28",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_019.md",
@@ -5439,7 +5760,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "29",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_020.md",
@@ -5464,7 +5787,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "33-35",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_021.md",
@@ -5489,7 +5814,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "31",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_022.md",
@@ -5514,7 +5841,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "34-35",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_023.md",
@@ -5539,7 +5868,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "36-37",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_024.md",
@@ -5564,7 +5895,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "38-39",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_025.md",
@@ -5589,7 +5922,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "40-41",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_026.md",
@@ -5614,7 +5949,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "42-43",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_027.md",
@@ -5639,7 +5976,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "44-47",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_028.md",
@@ -5664,7 +6003,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "54-55",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_029.md",
@@ -5689,7 +6030,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "54-55",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_030.md",
@@ -5714,7 +6057,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "56",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_031.md",
@@ -5739,7 +6084,9 @@
         "WORD_A4_REAL_OUTPUT_NOT_TESTED",
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED"
-      ]
+      ],
+      "rpt_source_page_note": "57",
+      "page_evidence_class": "PAGE_REPORTED_IN_2027_RPT_BOOK_NOT_VISUALLY_VERIFIED"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_032.md",
@@ -5765,7 +6112,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_033.md",
@@ -5794,7 +6143,9 @@
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK",
         "RPT_DSKP_SP_5_2_2_SOURCE_CONFLICT"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year6_pj/lesson_034.md",
@@ -5820,7 +6171,9 @@
         "TELEGRAM_RPH_RUNTIME_NOT_TESTED",
         "WEB_RPH_RUNTIME_NOT_TESTED",
         "RPT_2027_TEXTBOOK_PAGE_BLANK"
-      ]
+      ],
+      "rpt_source_page_note": "BELUM DISAHKAN",
+      "page_evidence_class": "MISSING_IN_2027_RPT_2026_PAGE_LEAD_ONLY"
     },
     {
       "path": "rph_standalone/pjpk/year6_pk/source_sk_1_1.md",
@@ -6056,5 +6409,6 @@
         "RPT_2027_PDP_ID_PENDING"
       ]
     }
-  ]
+  ],
+  "audit_revision": "2026-11-04 page provenance correction"
 }
