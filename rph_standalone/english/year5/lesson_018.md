@@ -15,3 +15,5 @@ PBD: Collect task-specific spoken, written, listening or reading evidence. Recor
 Differentiation: Support three to four sentences; challenge confident pupils to add two more.
 Workbook: No exercise assigned until Workbook page and activity are verified. Audio: Only SOW-specified tracks listed above.
 QA: SOW-aligned draft; final page, audio-content and Word/PDF checks pending.
+
+**Workbook (existing source QA map):** p.13, Unit 1 Language Focus — there is/are and place questions, Ex1-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.

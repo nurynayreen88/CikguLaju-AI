@@ -18,3 +18,5 @@
 **PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Replay CD 1-08 with pauses for pupils requiring listening support.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
+
+**Workbook (existing source QA map):** p.7, Starter Language Focus — Possessive 's; be questions, Ex1-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.

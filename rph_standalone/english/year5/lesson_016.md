@@ -15,3 +15,5 @@ Materials: English Plus 1 Student's Book p.9 Activities 1, 2, 4, 5; Teacher's Bo
 Differentiation: Support pupils reading the self-assessment; allow home language for reflection if necessary.
 Workbook: Not assigned pending exercise-level verification. Audio: None prescribed.
 QA: SOW-matched draft; book-page and Word/PDF layout checks pending.
+
+**Workbook (existing source QA map):** p.4-11, Starter Unit review — verified exercises across Free time, be, possessives, prepositions, adjectives, have got. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.

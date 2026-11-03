@@ -18,3 +18,5 @@
 **PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Allow two written sentences rather than three for pupils needing reduced writing load.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
+
+**Workbook (existing source QA map):** p.8, Starter Vocabulary — Basic adjectives, Ex1-4. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.

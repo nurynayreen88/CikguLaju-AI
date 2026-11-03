@@ -18,3 +18,5 @@
 **Reflection:** Objective met __/__; follow-up __.
 **Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.
 **QA status:** SOURCE-PAIRED DRAFT. Official SOW lesson and references checked; physical source-page/audio content and Word/PDF layout not yet independently verified.
+
+**Workbook (existing source QA map):** p.11, Starter Language Focus — conjunctions and/or/but, Ex4-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.
