@@ -1,0 +1,20 @@
+name: English Year 4 teacher-choice release labels
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year4/**'
+      - 'audits/english_primary_2_6_official_sow_index_20261103.json'
+      - 'tests/test_english_y4_teacher_choice_release_gate_20261103.py'
+      - '.github/workflows/english-y4-teacher-choice-release-gate.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m unittest discover -s tests -p 'test_english_y4_teacher_choice_release_gate_20261103.py' -v
