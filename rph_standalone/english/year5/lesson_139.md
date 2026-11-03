@@ -1,17 +1,21 @@
-# Year 5 Lesson 139 — Reading 24
+# English Year 5 — Standalone RPH — Lesson 139 (Reading 24)
 
-Status: DRAF. Unit 7 Growing up. Main LS 3.3.1; complementary LS 4.3.1. Materials: SB p.119 Activities 1–3; TB p.133; CD3-36.
+**Status:** DRAF — final material QA pending. **Topic:** Growing up. **Main LS:** Reading 3.3.1. **Complementary LS:** Writing 4.3.1. **Duration:** 60 minutes (suggested).
 
-Objective: Demonstrate the prescribed skills in the listed tasks.
+**Materials:** English Plus 1 Student's Book p.119 Activities 1–3; Teacher's Book p.133; audio CD3.36 (file exists, content not independently checked); Workbook pp.63–64, Unit 7 Past Simple Questions and Reading A True Story, Ex1–4 / Ex1–5 (historic QA mapping).
 
-Set induction (5 min): Brainstorm life stories.
+**Objective:** Pupils engage with a story song, identify details about a character and write two connected short paragraphs using correct pronouns and past tense.
 
-Main activities (40 min): Read and listen to The Story of Your Life; turn verses 3 and 6 into two paragraphs about the boy; discuss and answer Activity 3 questions. Teacher models, monitors and supports.
+**Set induction (5 min):** Teacher writes “The story of your life”. Pupils discuss events they remember from their own or a fictional person's life.
 
-PBD (10 min): Check reading engagement and punctuation. Pupils revise one response.
+**Activity 1 — Read and listen (15 min):** Pupils study the illustrations, predict the topic, read the song text in Student Book p.119 and listen to CD3.36 for Activity 1. Teacher asks pupils to describe the boy in a photograph.
 
-Closure (5 min): Share a learning point.
+**Activity 2 — Interpret the song (15 min):** Pairs complete Activity 2, rereading or relistening for details. They identify the two verses that describe the boy, then discuss whether the song tells a good story and give a reason.
 
-Differentiation: Sentence frames for support; independent detail for extension.
+**Activity 3 — Rewrite the story (15 min):** Teacher models using he/his and past verbs. Pupils draft two short paragraphs about the boy, based on the relevant verses without copying the entire song. Pairs check pronouns, verbs and conjunctions and revise their writing. Complete Activity 3 questions as time permits.
 
-Verification: Official SOW checked; book-page, workbook and audio audit pending. Do not mark READY.
+**PBD (5 min):** Teacher checks that pupils identify relevant story details and produce two ordered paragraphs with suitable pronouns, verbs and conjunctions. Pupils correct one aspect after feedback.
+
+**Closure (5 min):** Pairs imagine three additional events in the boy's life and share one idea with the class.
+
+**Differentiation:** Provide a paragraph frame and key past-tense verbs; extend confident writers with extra details. **Workbook:** Mapped Unit 7 practice may be completed briefly after the principal tasks. **QA:** Track content, exact printed pages and A4 layout pending before READY.
