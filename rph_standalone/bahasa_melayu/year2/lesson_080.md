@@ -1,0 +1,34 @@
+# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 080
+
+**Tema / Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita  
+**Tajuk:** Indahnya Budaya Sabah  
+**SK:** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera  
+**SP:** 4.2.2 (i) — Menyanyikan lagu kanak-kanak dengan sebutan dan intonasi sesuai serta melakukan aksi mengikut lirik  
+**Rujukan:** BT1 m/s 67; BA1 m/s 75. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
+**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
+**Fokus kemahiran:** persembahan susulan lagu Indahnya Budaya Sabah  
+**Objektif:** Pada akhir PdP, murid dapat menyebut jelas empat ungkapan lagu dan melakukan tiga gerakan bertema warisan.  
+**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: kaum, negeri, adat, warisan, hidup aman.
+
+## Set induksi (5 minit)
+**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Indahnya Budaya Sabah" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
+**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+
+## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
+**Tindakan guru:** Guru menjelaskan perbezaan persembahan semula dan latihan sebutan yang telah dilakukan dalam Lesson 075.
+**Tindakan murid:** Murid mengenal makna empat ungkapan tanpa menghafal sumber tambahan.
+
+## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
+**Tindakan guru:** Guru membimbing persembahan berkumpulan dengan gerak isyarat nilai muafakat.
+**Tindakan murid:** Murid menyanyikan lagu daripada bahan sedia ada dan melakukan tiga gerakan.
+
+## Pengukuhan / Penilaian PBD (15 minit)
+**Tindakan guru:** Semak sebutan, persembahan dan tiga gerak isyarat; sesi tambahan belum diputuskan.
+**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+
+## Penutup (5 minit)
+**Tindakan guru:** Guru merumuskan kemahiran persembahan susulan lagu Indahnya Budaya Sabah serta nilai murni yang relevan.
+**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+
+**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. Sesi ini dicadangkan bagi pengukuhan/pembezaan hasil; keputusan ulangan dalam RPT belum dimuktamadkan.
+**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
