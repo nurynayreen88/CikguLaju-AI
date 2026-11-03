@@ -1,61 +1,21 @@
-# English Year 5 — Standalone RPH — Lesson 002
+# English Year 5 — Standalone RPH — Lesson 002 (Speaking 1)
 
-**Focus:** Speaking 1  
-**Theme:** World of Self, Family and Friends  
-**Topic:** Free time  
-**Suggested duration:** 60 minutes (teacher-adjustable; not prescribed by SOW)  
-**Lesson type:** Textbook-based  
-**Source:** Official Primary Year 5 SK Scheme of Work, Lesson 2, printed page 36.
+**Status:** DRAF — final visual/audio and A4 QA pending. **Topic:** Free time (Starter Unit). **Main LS:** Speaking 2.1.1. **Complementary LS:** Writing 4.2.1. **Duration:** 60 minutes.
 
-## Curriculum alignment
-- **Main CS/LS:** Speaking 2.1 / 2.1.1 — Give detailed information about themselves.
-- **Complementary CS/LS:** Writing 4.2 / 4.2.1 — Give detailed information about themselves.
-- **Language focus:** Present simple affirmative/negative; subject pronouns; possessive adjectives.
-- **Cross-curricular elements:** Language and Values.
+**Materials:** English Plus 1 Student's Book p.4 Activities 3–5, p.5 Activities 1, 2 and 4; Teacher's Book p.18; CD1.04; Workbook p.5 Starter Language Focus, Ex1–6 (existing QA mapping, optional).
 
-## Learning objective
-Talk about personal hobbies and interests using simple sentences and write six sentences about them, with support as needed.
+**Objectives:** Pupils give detailed information about their own hobbies and interests orally and write a short set of accurate personal sentences using present simple and suitable pronouns.
 
-**Success criteria (teacher-set, not official SOW thresholds):** Pupils attempt the targeted book/poem activities, demonstrate the main skill in an observable response, and receive teacher feedback. Record independent versus supported performance.
+**Set induction (5 min):** Teacher makes statements about hobbies. Pupils stand for true statements and sit for false ones, then volunteer statements about the teacher.
 
-## Materials / exact mapping
-Student's Book p.4 Activities 3–5; p.5 Activities 1, 2 and 4; Teacher's Book p.18; CD 1-04 (Drive `1I2YbiQkvwoC-jZ7-r978VSi3dfZ9o9hS`)
+**Activity 1 — Listen for details (15 min):** Teacher numbers the statements in SB p.4 Activity 3 and models one response. Pupils use CD1.04 to complete the phrases about speakers' interests; pairs compare details and check answers.
 
-## Teaching and learning sequence
-### Pre-lesson — 8 minutes
-**Teacher:** Teacher says hobby and interest statements. Pupils stand when true for themselves and sit when false; pupils then make statements about the teacher.
-**Pupils / evidence:** Complete the stated actions and respond through speech, reading, writing, listening, drawing or movement as appropriate; teacher records responses against the main and complementary standards.
+**Activity 2 — Write about oneself (15 min):** Pupils complete Activity 4 by writing six personal statements about hobbies and interests. Teacher models sentence beginnings and gives feedback on present-simple forms and pronouns.
 
-### Activity 1 — 12 minutes
-**Teacher:** Teacher numbers 1–9 on the board. Pupils select sentence starters in SB p.4 Activity 3; teacher models completions and ticks the corresponding numbers. Play CD 1-04; pupils complete sentences about people heard.
-**Pupils / evidence:** Complete the stated actions and respond through speech, reading, writing, listening, drawing or movement as appropriate; teacher records responses against the main and complementary standards.
+**Activity 3 — Speak and respond (15 min):** Pairs adapt SB p.4 Activity 5 speech bubbles to their own interests and practise asking questions. They review subject pronouns and possessive adjectives in SB p.5 Activities 1, 2 and 4 as appropriate; teacher prioritises the main speaking task.
 
-### Activity 2 — 15 minutes
-**Teacher:** Pupils complete SB p.4 Activity 4 by writing six personal hobby/interest sentences. Teacher asks why hobbies matter and which hobbies pupils may wish to try as teenagers.
-**Pupils / evidence:** Complete the stated actions and respond through speech, reading, writing, listening, drawing or movement as appropriate; teacher records responses against the main and complementary standards.
+**PBD (5 min):** Each pupil gives at least two understandable personal statements orally and submits written sentences. Teacher records clarity, relevant detail and supported corrections.
 
-### Activity 3 — 15 minutes
-**Teacher:** Two pupils model the speech bubbles in Activity 5. New pairs adapt the dialogue using their own interests; pupils then review subject pronouns and possessive adjectives in SB p.5 Activities 1, 2 and 4, checking in pairs where time permits.
-**Pupils / evidence:** Complete the stated actions and respond through speech, reading, writing, listening, drawing or movement as appropriate; teacher records responses against the main and complementary standards.
+**Closure (5 min):** In pairs, pupils share one new fact about their partner and reflect on clear self-description.
 
-### PBD and closure — 10 minutes
-**Teacher:** Teacher observes clarity of oral self-description and checks written statements. Pupils hold TRUE/FALSE cards while peers describe real or invented family hobbies; peers decide whether each statement is true.
-**Pupils / evidence:** Complete the stated actions and respond through speech, reading, writing, listening, drawing or movement as appropriate; teacher records responses against the main and complementary standards.
-
-## PBD / formative assessment
-- **Main skill evidence:** Personal hobby statements spoken clearly and written accurately.
-- **Complementary skill evidence:** Written self-description.
-- **Teacher record:** Independent / With support / Needs reteaching. This is a suggested record, not an official proficiency-level award.
-
-## Differentiation
-Reduce the number of sentences for pupils who write slowly (SOW Strategy 3A); encourage at least three affirmative hobby sentences. Extension: confident pupils give reasons for preferences.
-
-## Reflection (complete after teaching)
-Pupils meeting lesson objective: __ / __. Pupils needing reteaching: __. Next intervention: __.
-
-## QA and publication controls
-- **SOW lesson outline and CS/LS:** Checked against the official full text for Lesson 2.
-- **Page/activity/audio mapping:** Referenced from SOW; named MP3 file IDs confirmed where listed, but audible-content inspection has not been performed.
-- **Textbook/poem actual-page content:** Not independently checked against rendered source pages; do not invent answer keys or claim page verification.
-- **Word/PDF layout:** Not yet generated or inspected.
-- **QA status:** SOURCE-PAIRED DRAFT — full teaching sequence authored, final source-page/audio and export QA pending.
+**Workbook:** Use selected p.5 language-focus items for brief reinforcement where suitable; do not replace SB tasks. **Differentiation:** Offer sentence frames or reduce initial sentence demands for pupils needing support; extend responses with reasons. **QA:** Audio content and A4 output still unverified.
