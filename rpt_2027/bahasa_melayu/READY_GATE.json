@@ -12,7 +12,7 @@
   "verified_strict_ready": false,
   "year_gates": {
     "2": {
-      "rph_all_present": false,
+      "rph_all_present": true,
       "textbook_pages_verified": false,
       "activity_book_pages_verified": false,
       "dskp_full_text_verified": false,

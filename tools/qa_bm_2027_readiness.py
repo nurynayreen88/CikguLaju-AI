@@ -15,7 +15,7 @@ BASE = ROOT/"rpt_2027"/"bahasa_melayu"
 
 
 def audit(mode="structure"):
-    if mode not in ("structure","ready"):
+    if mode not in ("structure","rph","ready"):
         raise ValueError(mode)
     errors, summary = [], {}
     manifest = json.loads((BASE/"READY_GATE.json").read_text(encoding="utf-8"))
@@ -61,7 +61,43 @@ def audit(mode="structure"):
                 errors.append(f"T{year}-P{number:03}: truncated SP")
         rph_dir=ROOT/"rph_standalone"/"bahasa_melayu"/f"year{year}"
         rph_count=sum(1 for _ in rph_dir.glob("lesson_[0-9][0-9][0-9].md"))
-        summary[year]={"rpt":len(rows),"html":len(htmlrows),"weeks":len(weeks),"rph":rph_count}
+        summary[year]={"rpt":len(rows),"html":len(htmlrows),"weeks":len(weeks),"rph":rph_count,
+                       "rph_checked":0, "rph_hold":0, "rph_draft":0, "rph_ready":0}
+        if mode in ("rph", "ready"):
+            # Verify existing RPH metadata against the canonical RPT; never infer READY from presence.
+            by_number = {row[0]:row for row in rows}
+            required = ("Set induksi","Aktiviti 1","Aktiviti 2","Tindakan guru",
+                        "Tindakan murid","Pengukuhan","PBD","Penutup","Objektif")
+            for n in range(1, count+1):
+                path = rph_dir/f"lesson_{n:03}.md"
+                if not path.is_file():
+                    continue
+                content = path.read_text(encoding="utf-8")
+                summary[year]["rph_checked"] += 1
+                expected = by_number.get(n)
+                if expected is None:
+                    errors.append(f"T{year}-P{n:03}: RPH has no RPT record")
+                    continue
+                for label, field in (("Tajuk",2), ("SK",3), ("SP",4)):
+                    match = re.search(rf"(?m)^\\*\\*{label}:\\*\\*\\s*(.+)$", content)
+                    got = re.sub(r"\\s+", " ", match.group(1)).strip() if match else ""
+                    want = re.sub(r"\\s+", " ", expected[field]).strip()
+                    if got != want:
+                        errors.append(f"T{year}-P{n:03}: RPH {label} differs from RPT")
+                missing = [word for word in required if word not in content]
+                if missing:
+                    errors.append(f"T{year}-P{n:03}: incomplete RPH: {', '.join(missing)}")
+                status = re.search(r"(?m)^\\*\\*Status(?: QA| audit)?:\\*\\*\\s*(.+)$", content)
+                if not status:
+                    errors.append(f"T{year}-P{n:03}: missing QA status")
+                elif re.search(r"\\bHOLD\\b", status.group(1), re.I):
+                    summary[year]["rph_hold"] += 1
+                elif re.search(r"\\bDRAF\\b", status.group(1), re.I):
+                    summary[year]["rph_draft"] += 1
+                elif re.search(r"\\bREADY\\b", status.group(1), re.I):
+                    summary[year]["rph_ready"] += 1
+                else:
+                    errors.append(f"T{year}-P{n:03}: unknown QA status")
         if mode=="ready":
             if rph_count!=count:
                 errors.append(f"T{year}: RPH {rph_count}/{count}")
