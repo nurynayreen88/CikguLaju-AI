@@ -13,3 +13,5 @@ Materials: NON-TEXTBOOK: And Something Weird Happened by Pamela Rushby; BPK Shor
 PBD: Observe lesson-specific task evidence against the stated skills.
 Differentiation: Keep pupils in their chosen groups if useful.
 Workbook exercise not yet verified. Audio not independently played. QA: SOW-aligned draft pending source and Word/PDF checks.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
