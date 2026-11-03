@@ -68,7 +68,7 @@ def install(ns):
             year = int(suffix)
             kb = [[{"text": "📥 English (PDF)", "callback_data": "rpt2027_en_pdf_%d" % year}]]
             # Do not advertise temporary PDFs until mounted and header-checked.
-            if math_pdf_ready(year):
+            if math_pdf_ready(year, ns=ns):
                 kb.append([{"text": "📥 Matematik (PDF v28 • DRAF/SEMENTARA)",
                             "callback_data": "rpt2027_math_pdf_%d" % year}])
             kb.extend([
