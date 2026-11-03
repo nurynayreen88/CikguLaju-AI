@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 019
 
 **Tema / Unit:** Kekeluargaan; U3: Kenangan Manis  
-**Tajuk:** Kenangan di Kem Bestari  
+**Tajuk**: Kenangan di Kem Bestari + PKJR  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.1 (ii) — Membina dan menulis perenggan  
 **Rujukan RPT:** BT1 m/s 15; BA m/s 18  
@@ -31,5 +31,6 @@
 **Tindakan guru:** Guru merumuskan kemahiran membina dan menulis perenggan daripada gambar dan mengaitkannya dengan amalan yang sesuai.
 **Tindakan murid:** Murid menyatakan satu kemahiran baharu dan memberi satu contoh daripada kehidupan.
 
-**Status QA:** DRAF — padanan BT penuh, takwim, format cetak dan integrasi masih perlu QA.
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 1.1.3; BAM m/s 4–5, Aktiviti 3; fokus tindakan yang selamat apabila kenderaan bergerak. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Nota kawalan:** Pemetaan aktiviti BA diperoleh daripada buku asal yang dibaca. Tiada arahan buku atau kod rasmi yang direka. Fail ini tidak diterbitkan kepada guru.

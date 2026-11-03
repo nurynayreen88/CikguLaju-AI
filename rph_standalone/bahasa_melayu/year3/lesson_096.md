@@ -2,7 +2,7 @@
 
 **ID Lesson:** BM3-P096  
 **Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita  
-**Tajuk dalam RPT/BT calon:** Indahnya Pantun  
+**Tajuk dalam RPT/BT calon**: Indahnya Pantun + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **Standard Pembelajaran (SP):** 2.3.1 (iv) — Membaca, mengenal pasti, dan menerangkan kandungan teks daripada bahan bukan sastera dan bahan sastera  
 **Bidang:** Membaca — pantun dan maksud  
@@ -31,7 +31,8 @@
 **Guru:** Merumuskan kegunaan kemahiran pantun dan maksud dalam konteks U13: Kekalkan Warisan Kita.
 **Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
 
-**Status QA:** DRAF — **bukan READY**.  
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 5.1.3; BAM m/s 21, Aktiviti 19; fokus fungsi topi keledar basikal. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Semakan muka surat Buku Teks penuh, cetakan satu A4 dan ujian runtime/CI.  
 **Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.

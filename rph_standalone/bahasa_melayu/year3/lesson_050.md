@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 050
 
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
-**Tajuk:** Tutup supaya Selamat + PKJR  
+**Tajuk**: Tutup supaya Selamat + PKJR  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.2 (ii) — Menghasilkan jawapan pemahaman berdasarkan soalan  
 **Rujukan RPT:** BT1 m/s 44  
@@ -31,5 +31,6 @@
 **Tindakan guru:** Guru merumuskan kemahiran menulis jawapan soalan bercapah tentang keselamatan rumah dan nilai dalam situasi.
 **Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
 
-**Status QA:** DRAF — verifikasi BT penuh, format A4, jadual negeri dan runtime masih berbaki.
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.4.1; BAM m/s 11, Aktiviti 9; fokus arah lalu lintas. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.

@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 009
 
 **Tema / Unit:** Kekeluargaan; U2: Kejayaan Keluarga  
-**Tajuk:** Kilang Batik Nenek  
+**Tajuk**: Kilang Batik Nenek + PKJR  
 **SK:** 2.1 Asas membaca dan memahami.  
 **SP:** 2.1.1 (ii) — Membaca dengan sebutan yang betul dan intonasi yang sesuai perenggan.  
 **Rujukan RPT:** BT1 m/s 8; BA m/s 8  
@@ -31,5 +31,6 @@
 **Tindakan guru:** Guru meminta murid menyimpulkan kemahiran membaca perenggan dan menyusun gambar menurut petikan dan menekankan nilai murni yang berkaitan.
 **Tindakan murid:** Murid berkongsi satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
-**Status QA:** DRAF — belum disahkan BT asal, takwim, format A4 dan ujian integrasi.
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 1.1.3; BAM m/s 2–3, Aktiviti 2; fokus tindakan selamat apabila kenderaan laju, mengundur, menghampiri atau membelok. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Kawalan:** Aktiviti berpandukan kandungan BA yang dibaca terus; tiada soalan BA disalin panjang, tiada standard PKJR rasmi yang direka, tiada penerbitan kepada guru.

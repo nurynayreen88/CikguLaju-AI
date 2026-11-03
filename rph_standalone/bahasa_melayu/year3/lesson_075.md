@@ -2,7 +2,7 @@
 
 **ID:** BM3-P075  
 **Tema/Unit:** Perpaduan; U10: Toleransi Kukuhkan Perpaduan  
-**Tajuk:** Bertolak Ansur + PKJR  
+**Tajuk**: Bertolak Ansur + PKJR  
 **SK:** 3.3 Menghasilkan penulisan.  
 **SP:** 3.3.1 (i) — Menghasilkan kerangka dan penulisan karangan naratif, dan bukan naratif secara berpandu.  
 **Rujukan RPT:** BT1 m/s 64-65  
@@ -32,6 +32,7 @@
 **Guru:** Merumuskan kemahiran yang tepat selepas semakan sumber.
 **Murid:** Menyatakan satu contoh atau pengajaran yang diperoleh.
 
-**Status QA:** DRAF — tiada kelulusan READY.  
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 4.3.1; BAM m/s 16, Aktiviti 14; fokus pencahayaan dan kebolehlihatan pejalan kaki. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Kawalan:** Padanan Buku Teks, tarikh negeri, format A4 dan CI belum lulus.  
 **Pengeluaran:** Staging sahaja; tidak mengubah main, database, Telegram atau Web.

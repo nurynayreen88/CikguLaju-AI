@@ -2,7 +2,7 @@
 
 **ID:** BM3-P094  
 **Tema/Unit:** Perpaduan; U12: Kerjasama Asas Kesejahteraan  
-**Tajuk:** Masyarakat Prihatin — Penilaian  
+**Tajuk**: Masyarakat Prihatin + PKJR — Penilaian  
 **SK:** 3.3 Menghasilkan penulisan.  
 **SP:** 3.3.1 (i) — Menghasilkan kerangka dan penulisan karangan naratif secara berpandu  
 **Fokus:** Karangan naratif berpandu  
@@ -31,5 +31,6 @@
 **Guru:** Merumuskan Karangan naratif berpandu dan nilai berkaitan unit.
 **Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** DRAF — sumber tajuk, SP dan halaman dikemaskini daripada Buku Teks Jilid 1, Buku Aktiviti Jilid 1 atau DSKP, tetapi belum diluluskan READY.  
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 4.4.2; BAM m/s 20, Aktiviti 18 (semak dengan BPG); fokus tingkah laku pengguna jalan raya dan lokasi selamat melintas. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.

@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 035
 
 **Tema/Unit:** Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama  
-**Tajuk:** Pemilihan Berus Gigi  
+**Tajuk**: Pemilihan Berus Gigi + PKJR  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.1 (ii) — Membina dan menulis perenggan  
 **Rujukan RPT:** BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 33-34  
@@ -31,5 +31,6 @@
 **Tindakan guru:** Guru merumuskan pembelajaran mengenai menulis perenggan tentang pemilihan berus gigi dan menerapkan nilai yang sesuai.
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
 
-**Status QA:** DRAF — audit keseluruhan BT, BA, A4 dan jadual negeri belum selesai.
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.2.4; BAM m/s 8, Aktiviti 6; fokus kegunaan prasarana/perabot jalan raya. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.

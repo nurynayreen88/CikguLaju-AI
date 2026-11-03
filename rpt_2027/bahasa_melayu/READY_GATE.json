@@ -62,5 +62,5 @@
       "runtime_tests_passed": false
     }
   },
-  "note": "BM Year 3: 165/165 RPH files, 125 DRAF, 40 HOLD, 0 READY; other readiness gates remain false. Do not publish to main, Telegram or Web before full academic and runtime verification."
+  "note": "BM Year 3: 165/165 files; 137 DRAF / 28 HOLD PKJR / 0 READY after recovery of 9 missing PKJR labels from 2026. Other year gates remain false; do not publish."
 }

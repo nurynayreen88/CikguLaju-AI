@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 3 — Lesson 040
 
 **Tema/Unit:** Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif  
-**Tajuk:** Elakkan Kuman  
+**Tajuk**: Elakkan Kuman + PKJR  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.2 (i) — Menghasilkan jawapan pemahaman berdasarkan soalan  
 **Rujukan RPT:** BT1 m/s 35; BA m/s 42-43  
@@ -31,5 +31,6 @@
 **Tindakan guru:** Guru merumuskan pembelajaran mengenai menulis jawapan pemahaman bagi soalan bertumpu dan menerapkan nilai yang sesuai.
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
 
-**Status QA:** DRAF — audit keseluruhan BT, BA, A4 dan jadual negeri belum selesai.
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.3.2; BAM m/s 9, Aktiviti 7; fokus urutan dan fungsi lampu isyarat. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.

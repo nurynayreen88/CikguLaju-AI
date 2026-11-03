@@ -2,7 +2,7 @@
 
 **ID:** BM3-P101  
 **Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U14: Kenali Kesenian Kita  
-**Tajuk:** Baju Kurung untuk Nabila  
+**Tajuk**: Baju Kurung untuk Nabila + PKJR  
 **SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **SP:** 2.3.2 (i) — Membaca dan mempersembahkan karya bukan sastera dan karya sastera dengan sebutan yang betul dan intonasi yang sesuai  
 **Fokus:** Membaca label dengan intonasi  
@@ -31,5 +31,6 @@
 **Guru:** Merumuskan pembelajaran Membaca label dengan intonasi berdasarkan contoh dalam bahan.
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 5.1.3; BAM m/s 22, Aktiviti 20; fokus cara pemakaian topi keledar basikal. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

@@ -2,7 +2,7 @@
 
 **ID:** BM3-P030  
 **Tema/Unit:** Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama  
-**Tajuk:** Mari Bersihkan Diri  
+**Tajuk**: Mari Bersihkan Diri + PKJR  
 **SK:** 2.1 Asas membaca dan memahami.  
 **SP:** 2.1.2 (ii) — Membaca dengan sebutan betul dan intonasi sesuai bagi perenggan  
 **Fokus:** bacaan perenggan dengan intonasi  
@@ -31,6 +31,7 @@
 **Guru:** Merumuskan bacaan perenggan dengan intonasi dengan satu contoh daripada bahan.
 **Murid:** Menyatakan satu perkara yang dipelajari.
 
-**Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
+**RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.2.4; BAM m/s 7, Aktiviti 5; fokus fungsi perabot jalan raya. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
+**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
 **Nota sumber:** Buku Aktiviti ialah sokongan kepada kemahiran Buku Teks, bukan pengganti tajuk asal.  
 **Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.
