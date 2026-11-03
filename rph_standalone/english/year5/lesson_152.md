@@ -5,13 +5,13 @@
 Status: DRAF. Unit 8. Main LS 4.3.3; complementary LS 3.2.2.
 Materials: Student Book p.89 Activities 1, 2 and 4; Teacher Book p.103. Workbook mapping and audio playback remain unverified.
 
-Objective: Pupils demonstrate the skills through the specific activities.
+Objective: Pupils identify the purpose and key phrases of Gemma's email, write a planned reply with relevant paragraphs using going to, will and because, and revise it after peer feedback.
 
 Set induction (5 min): Discuss a planned trip and examine the London photograph.
 
 Main activities (40 min): Read Gemma's email and identify details about the visit. Find useful key phrases, plan a reply with the Writing Guide, then draft an email using going to, will and because. Exchange drafts for feedback and revise. Teacher models instructions and provides feedback.
 
-PBD (10 min): Assess clear planning, relevant paragraphs and revision. Pupils improve one response based on feedback.
+PBD (10 min): Teacher checks that the email has a clear plan, the required content paragraphs and suitable future forms, then records one improvement after peer review.
 
 Closure (5 min): Pupils share a learning point and submit an exit response.
 

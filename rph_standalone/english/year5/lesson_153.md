@@ -5,13 +5,13 @@
 Status: DRAF. Unit 8. Main LS 5.3.1; complementary LS 4.3.1.
 Materials: Gulliver's Travels graphic novel; BPK CCL guide pp.67–69. No Student Book, Workbook or English Plus audio prescribed by this non-textbook Language Arts lesson.
 
-Objective: Pupils demonstrate the skills through the specific activities.
+Objective: In pairs, pupils adapt two Gulliver's Travels panels to a Malaysian context, correct punctuation in their revised dialogue, and perform an intelligible imaginative response.
 
 Set induction (5 min): Complete Join the pieces using the guidebook.
 
 Main activities (40 min): Pairs choose two favourite graphic-novel panels and adapt their dialogue, setting or clothing to a Malaysian context. Exchange drafts to correct punctuation; perform the adapted dialogues. Teacher models instructions and provides feedback.
 
-PBD (10 min): Assess creative response, appropriate punctuation and role-play. Pupils improve one response based on feedback.
+PBD (10 min): Teacher checks two adapted panels, relevant Malaysian-context changes and corrected dialogue punctuation, and observes pair performance with feedback.
 
 Closure (5 min): Pupils share a learning point and submit an exit response.
 
