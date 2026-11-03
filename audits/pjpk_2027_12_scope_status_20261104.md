@@ -2,7 +2,7 @@
 **Audit terakhir:** 4 November 2026
 **Status umum:** DRAF / STAGING, **BUKAN READY**. Tiada penggabungan ke `main`, pengubahsuaian DB atau deployment.
 
-## Inventori 210 fail RPH yang disimpan dalam PR #169
+## Inventori 237 fail RPH yang disimpan dalam PR #169
 
 | Tahun | Komponen | Fail RPH draf | Status / sumber | Punca belum READY |
 |---|---|---:|---|---|
@@ -13,13 +13,13 @@
 | 3 | PJ | **38** | [RPT Tahun 3 v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) | Semakan teks dan pelaksanaan, 1 halaman A4, bot. |
 | 3 | PK | **9 draf tematik SK** | [RPT PK Tahun 3 2026](https://docs.google.com/document/d/1L1Jw_XaaZuZF19PSWFxr7b78rejDg3EB/edit) dan DSKP T3 | Sembilan SK (1.1 hingga 9.1) ada RPH calon tanpa ID PdP; baris RPT 2026 bertindan berdasarkan tahap penguasaan. Belum ada nombor PdP 2027 sah. |
 | 4 | PJ | **34** | [Indeks v54](https://docs.google.com/document/d/1DjQSztYXVGUes94T0xt3EEMCkAeDNrGXq6-SBzfvsdU/edit) dan DSKP T4 | Sebahagian halaman buku teks belum sah; semak kesesuaian aktiviti, A4, bot. |
-| 4 | PK | 0 | DSKP T4 tersedia | Belum ada RPT 2027 PK yang dipetakan semuka/diendors. |
+| 4 | PK | **9 draf tematik SK** | DSKP PJPK Tahun 4 (akil baligh, keselamatan diri, pemakanan, dll.) | RPH tematik sahaja; belum dipadankan dengan nombor PdP 2027, buku teks, Word A4 dan bot. |
 | 5 | PJ | **33** | Indeks v54 dan DSKP T5 | Sesi dengan SP berulang perlukan objektif berbeza; halaman, A4, bot. |
-| 5 | PK | **3** | [PR #15 — editorial PK Tahun 5](https://github.com/nurynayreen88/CikguLaju-AI/pull/15), DSKP T5 | Identiti PdP 2027 dan ujian hujung-ke-hujung belum sah. |
+| 5 | PK | **12** = 3 sumber + 9 tematik SK | [PR #15 — editorial PK Tahun 5](https://github.com/nurynayreen88/CikguLaju-AI/pull/15), DSKP T5 | Tiga ID sumber berasingan daripada sembilan calon tematik; pertindihan perlu dipadankan sebelum nombor PdP 2027, A4 dan runtime. |
 | 6 | PJ | **34** | Indeks v54 dan DSKP T6 | **PdP 033**: SP 5.2.2 tidak mempunyai SK 5.2 pada entri RPT dan teks 5.2.2 RPT 2026 bercanggah dengan DSKP T6; **konflik sumber**, semak sebelum penerbitan, A4, bot. |
-| 6 | PK | 0 | DSKP T6 tersedia | RPT dan RPH standalone PK belum dilengkapkan. |
+| 6 | PK | **9 draf tematik SK** | DSKP PJPK Tahun 6, SK 1.1 hingga 9.1 | Calon tematik masih perlukan pemetaan RPT PdP 2027, buku teks, Word A4 dan runtime. |
 
-**Jumlah:** 180 PJ + 30 PK = **210 fail**; diiringi fail audit dan matriks. Angka ialah **fail DRAF**, termasuk empat sisipan akuatik serta sembilan draf tematik PK3 tanpa ID PdP 2027. **Bukan** jumlah RPH diluluskan atau aktif dalam produksi.
+**Jumlah:** 180 PJ + 57 PK = **237 fail** draf; termasuk 4 sisipan akuatik dan 36 calon tematik PK Tahun 3–6 tanpa ID PdP 2027. **Bukan** jumlah RPH diluluskan atau aktif dalam produksi. Manifest fail disimpan di `audits/pjpk_2027_staging_manifest_20261104.json`, kesemua rekod `production_ready=false`.
 
 ## Perkara sudah diuji secara statik
 
@@ -28,12 +28,13 @@
 - Tahun 2 PJ: 37 asal dan 4 akuatik mempunyai kod SP DSKP dan padanan awalan SK; **empat akuatik bukan pelajaran diluluskan**.
 - Tahun 2/5 PK: 21 fail dihasilkan daripada rekod editorial sebelum ini; status `production_ready=false` dikekalkan dalam sumber. **ID sumber bukan nombor Lesson**.
 - Tahun 3 PK: 9 RPH calon berdasarkan SK 1.1–9.1 dalam DSKP T3, termasuk SK 5.1 pengurusan konflik yang tidak kelihatan sebagai kod eksplisit dalam teks RPT 2026; tiada ID PdP 2027 diandaikan.
+- Tahun 4, 5 dan 6 PK: tambahan 27 draf tematik berpandukan sembilan bidang SK setiap tahun. Ia bukan lesson plan tahunan yang sudah disusun mengikut RPT.
 - **31** rujukan halaman buku teks PJ Tahun 4–6 masih bertanda belum disahkan dalam RPT staging (jangan isi nombor secara anggaran).
 
 ## Punca gerbang tidak boleh diluluskan
 
 1. Dokumen Kurikulum KP2027 Tahun 1 belum diperoleh sebagai sumber yang disahkan; rujukan KSSR Tahun 1 bukan pengganti.
-2. PK T2 memerlukan penggabungan/penyelesaian sumber bertindih dan identiti PdP tahunan; PK T3–T6 memerlukan pemetaan sumber ke RPT berurutan.
+2. PK T2 memerlukan penggabungan/penyelesaian sumber bertindih dan identiti PdP tahunan; PK T3–T6 sudah mempunyai beberapa draf tematik tetapi **masih memerlukan pemetaan sumber ke RPT berurutan** dan penjanaan semua Lesson khusus.
 3. Setiap RPH perlu penilaian aktiviti guru/murid yang khusus, pentaksiran/PBD yang boleh dilaksanakan, pematuhan keselamatan (termasuk akuatik), serta penyesuaian dengan konteks tempatan.
 4. Tarikh PdP guru mesti dipadankan jadual sekolah dan negeri; slot minggu calon tidak sama dengan jadual sebenar.
 5. Pemeriksaan **Word A4 satu halaman**, penjanaan Telegram sebenar dan ujian Web staging belum dijalankan untuk 201 draf. Jangan aktifkan mana-mana fail sebagai RPH READY hanya kerana fail wujud.
