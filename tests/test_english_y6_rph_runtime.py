@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from web.english_y6_standalone_runtime import adapt_rows, install, load_lesson
+from web.english_y6_standalone_runtime import LESSON_ROOT, adapt_rows, install, load_lesson
 
 
 def dummy_source(num, main="3.2/3.2.1", complementary="4.2/4.2.4"):
