@@ -1,15 +1,23 @@
-# English Year 5 Lesson 89: Listening 16
+# English Year 5 — Standalone RPH — Lesson 089 (Listening 16)
 
-Official SOW Lesson 89, printed p.128. Topic: Food and health. Suggested duration: 60 minutes.
-Standards: Listening 1.2.1; Listening 1.1.1.
-Materials: SB pp.52-53 Activities 1-3; TB pp.66-67; CD2-02 and CD2-03.
+**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Food and health. **Main LS:** 1.2.1. **Complementary LS:** 1.1.1. **Duration:** 60 minutes (suggested).
 
-1. Set induction (8 min): Discuss food and health using the Think question.
-2. Activity 1 (12 min): Listen to CD2-02 and read food texts; clarify vegetarian and fizzy drink.
-3. Activity 2 (15 min): Complete a food-category word web and discuss healthy choices.
-4. Activity 3 (17 min): Listen to CD2-03 and contrast short i and long ee sounds.
-5. PBD and closure (8 min): Review food words using a word ladder.
+**Language focus:** I like… I quite / really like... I don’t mind… I don’t like… I really don’t like… I hate…. **Materials:** English Plus 1 Student’s Book Activities 1, 2, 3 p.52 and 53 Teacher’s Book p.66; Audio: CD2.02, CD2.03.
 
-PBD: Assess work against the stated or teacher-selected skills.
-Differentiation: Pause audio after each text where needed.
-Workbook mapping unverified. Audio not independently played. Draft pending book and Word/PDF checks.
+**Objective:** Pupils complete the specific Listening 16 lesson tasks using Food and health vocabulary and produce observable assessment evidence.
+
+**Set induction (5 min):** Pupils answer Think! question, top of Student’s Book p.52. Follow instructions in Teacher’s Book p.66.
+
+**Activity 1 (15 min):** Pupils do Activity 2. Follow instructions in Teacher’s Book p.66 Exercise 2. Ask: Why is it helpful to organise topic vocabulary in a word web? (to remember it, to understand how to group words, to make links between new vocabulary) CCE – Science and Technology – Draw the word web on board but change snacks to carbohydrates.
+
+**Activity 2 (15 min):** Pupils do Activity 3, CD2.03. Follow the instructions in Teacher’s Book p.67 Exercise 3. Can they think of some more food words with short /i/ and long /i:/ sounds? (milk, peach, peas). Ask: Where is the short /i/ in biscuit, olive and apricot?
+
+**Activity 3 (15 min):** Pupils do Optional Activity: Vocabulary. Follow instructions for first Optional Activity: Vocabulary in Teacher’s Book p.66. Note how well pupils understand the texts about food.
+
+**PBD (5 min):** Teacher checks the listening task answers and records who needs a repeated listening.
+
+**Closure (5 min):** See instructions in Post-lesson Task 6: Make a Word Ladder. Use the topic of food.
+
+**Workbook practice (mapped):** p.44, Unit 5 Vocabulary — Food, Ex1-4. Use briefly; do not replace SOW tasks.
+
+**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
