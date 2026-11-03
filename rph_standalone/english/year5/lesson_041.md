@@ -4,6 +4,8 @@ Official Year 5 SOW Lesson 41, printed p.78. Topic: Days. Suggested duration: 60
 Main and complementary learning standards: Listening 1.2.4; Reading 3.2.3.
 Materials: SB p.24 Activities 1–3; TB p.38; CD 1-23; family-word Venn diagram.
 
+Objective: Pupils follow a sequence of classroom instructions, identify the text title and sort family words into three categories.
+
 1. Set induction (8 min): Brainstorm family-member vocabulary.
 2. Activity 1 (12 min): Pairs follow four classroom instructions to inspect the family photo and select a text title.
 3. Activity 2 (15 min): Listen to CD 1-23 while reading and confirm the appropriate title.

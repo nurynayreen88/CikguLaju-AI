@@ -4,6 +4,8 @@ Official Year 5 SOW Lesson 45, printed p.82. Topic: Watching a Bumble Bee. Sugge
 Main and complementary learning standards: Language Arts 5.3.1; Speaking 2.1.2.
 Materials: NON-TEXTBOOK: Watching a Bumble Bee, Anthology p.21; BPK Poetry Guidebook.
 
+Objective: Pupils adapt a stanza of Watching a Bumble Bee with an imaginative insect change and explain that choice.
+
 1. Set induction (8 min): Place poem stanzas in mixed order around the room; pupils reconstruct sequence.
 2. Activity 1 (12 min): Reread the poem and discuss possible replacement insects.
 3. Activity 2 (15 min): Groups adapt one or more stanzas by changing insect names and characteristics.

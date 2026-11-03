@@ -4,6 +4,8 @@ Official Year 5 SOW Lesson 42, printed p.79. Topic: Days. Suggested duration: 60
 Main and complementary learning standards: Speaking 2.1.1; Listening 1.1.1.
 Materials: SB p.24 Activity 4, p.25 Activities 1–3; TB p.38; CD 1-24.
 
+Objective: Pupils describe two family members' routines and pronounce targeted present-simple endings intelligibly.
+
 1. Set induction (8 min): Play Say What's Missing with family flashcards.
 2. Activity 1 (12 min): Pairs compare Radford family routines with their own using but.
 3. Activity 2 (15 min): Complete p.25 Activity 1 on present simple and Activity 2.

@@ -4,6 +4,8 @@ Official Year 5 SOW Lesson 44, printed p.81. Topic: Days. Suggested duration: 60
 Main and complementary learning standards: Writing 4.2.1; Speaking 2.1.5.
 Materials: SB p.26 Activity 5; TB p.40; question-word cards.
 
+Objective: Pupils write three accurate details about a Malaysian celebration and ask a partner one relevant question.
+
 1. Set induction (8 min): Groups arrange jumbled words into questions from Happy Days.
 2. Activity 1 (12 min): Use TB optional vocabulary activity and discuss Malaysian special days.
 3. Activity 2 (15 min): Write answers about one celebration using always, usually, sometimes and never.

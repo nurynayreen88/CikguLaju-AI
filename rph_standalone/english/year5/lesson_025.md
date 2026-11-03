@@ -5,6 +5,8 @@ Main CS/LS: Reading 3.2 / 3.2.2. Complementary CS/LS: Writing 4.3 / 4.3.2.
 Language focus: population, business, monument, castle, zoo; quite, really, very.
 Materials: English Plus 1 Student's Book p.19 Activities 1–4; Teacher's Book p.33; images of Malaysian buildings and a castle.
 
+Objective: Pupils identify two details in the Edinburgh text and write two accurately described places using intensifiers.
+
 1. Set induction (8 min): Introduce Edinburgh and vocabulary from Think!; show local examples of businesses, offices, factories and a castle.
 2. Activity 1 (12 min): Pupils read the text and find place words in Activity 1. Discuss which items are absent and which additional places are mentioned.
 3. Activity 2 (15 min): Pupils complete Activity 2, identifying descriptive vocabulary for towns and cities, and compare answers.

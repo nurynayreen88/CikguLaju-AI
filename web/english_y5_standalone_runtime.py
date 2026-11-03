@@ -18,9 +18,9 @@ _SECTION = re.compile(
     r"Assessment and closure|Reinforcement\s*/\s*PBD|PBD\b|Assessment\b|"
     r"Closure\b|Differentiation\b)", re.I)
 _STOP = re.compile(
-    r"^(?:QA(?: status| note)?|Status|Verification|Workbook|Audio|"
+    r"^(?:QA(?: status| note)?|Status|Verification|Workbook(?: practice| link)?|Audio|"
     r"Source(?: rule| verification)?|Teacher reflection|Reflection|"
-    r"Non-textbook source rule|Final check|Materials)\s*:", re.I)
+    r"Non-textbook source rule|Final check|Materials)(?:\s*\([^)]*\))?\s*:", re.I)
 _LS = re.compile(r"(?<!\d)[1-5]\.\d\.\d(?!\d)")
 _STRIP = re.compile(r"\*\*(.*?)\*\*")
 
@@ -53,8 +53,8 @@ def _plain(line):
 
 def _field(text, names):
     for name in names:
-        match = re.search(r"(?im)(?:^|\.\s+|\s{2,})" + re.escape(name) +
-                          r"\s*:\s*(?:\*\*)?\s*([^\r\n]+)", text)
+        match = re.search(r"(?im)\b" + re.escape(name) +
+                          r"(?:\s*\([^\n)]{1,80}\))?\s*:\s*([^\r\n]+)", text)
         if match:
             result = _plain(match.group(1))
             if result:
@@ -123,14 +123,14 @@ def load_lesson(number, *, root=LESSON_ROOT):
     intro = blocks.get("intro")
     activities = [blocks.get("activity%d" % k) for k in (1, 2, 3)]
     main = blocks.get("main")
-    if all(activities):
+    if sum(bool(part) for part in activities) >= 2:
         activity = "\n\n".join("Activity %d\n%s" % (idx, step)
-                               for idx, step in enumerate(activities, 1))
+                               for idx, step in enumerate(activities, 1) if step)
     else:
         activity = main or ""
     pbd = blocks.get("pbd") or blocks.get("combined") or _field(clean, ("PBD evidence", "PBD"))
     closure = blocks.get("closure") or blocks.get("combined") or ""
-    materials = _field(clean, ("Materials", "Sources"))
+    materials = _field(clean, ("Materials", "Sources", "References"))
     objective = _field(clean, ("Suggested learning objectives", "Suggested objectives", "Learning objectives",
                                "Learning objective", "Objectives", "Objective"))
     if not all((intro, activity, pbd, closure, materials, objective)):

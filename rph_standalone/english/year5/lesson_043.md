@@ -4,6 +4,8 @@ Official Year 5 SOW Lesson 43, printed p.80. Topic: Days. Suggested duration: 60
 Main and complementary learning standards: Reading 3.2.3; Listening 1.2.5.
 Materials: SB p.26 Activities 1–4; TB p.40; CD 1-25.
 
+Objective: Pupils infer the meanings of three celebration words and sequence photos using information heard in the recording.
+
 1. Set induction (8 min): Discuss special days and celebrations in Malaysia.
 2. Activity 1 (12 min): Read Happy days! and infer crazy, costumes and invite from context.
 3. Activity 2 (15 min): Use Chinese New Year photos and headings to predict the radio topic.

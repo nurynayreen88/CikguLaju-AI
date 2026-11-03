@@ -4,6 +4,8 @@ Official SOW Lesson 27, printed p.63. Topic: Serenade. Suggested duration: 60 mi
 Main CS/LS: Language Arts 5.2 / 5.2.1. Complementary CS/LS: Reading 3.3 / 3.3.1.
 Materials: Anthology of Poems p.17, Serenade; BPK Poetry Guidebook.
 
+Objective: Pupils perform a stanza of Serenade with an appropriate sound effect and explain one instrument preference with a reason.
+
 1. Set induction (8 min): Play Beat the Teacher to guess names of musical instruments.
 2. Activity 1 (12 min): Read the poem and discuss possible sounds made by the instruments mentioned.
 3. Activity 2 (15 min): Divide pupils into three groups. Rotate stanza reading and sound-effect performance so every group participates.
