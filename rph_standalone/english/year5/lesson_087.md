@@ -1,17 +1,21 @@
-# English Year 5 Lesson 87: Language Arts 15
+# English Year 5 — Standalone RPH — Lesson 087 (Language Arts 15)
 
-Official SOW Lesson 87, printed p.126. Topic: Miss Antrobus. Suggested duration: 60 minutes.
-Standards: Language Arts 5.3.1; Writing 4.3.3.
-Materials: NON-TEXTBOOK: Miss Antrobus poem, Anthology p.16; BPK Poetry Guidebook Activity 5 p.101.
+**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Miss Antrobus. **Main LS:** 5.3.1. **Complementary LS:** 4.3.3. **Duration:** 60 minutes (suggested).
 
-1. Set induction (8 min): Play Sit Down Stand Up using true and false statements from the poem.
-2. Activity 1 (12 min): Review the poem and discuss imaginative changes.
-3. Activity 2 (15 min): Follow the guidebook Activity 5 steps to adapt the poem.
-4. Activity 3 (17 min): Draft a stanza or acrostic poem and improve it with feedback.
-5. PBD and closure (8 min): Illustrate the adapted poem and share it.
+**Language focus:** Reasoning (the use of because). **Materials:** Anthology of Poems p.16, Miss Antrobus; BPK CCL Poetry Guide Activity 5 p.101.
 
-PBD: Assess work against the stated or teacher-selected skills.
-Differentiation: Offer full poem, stanza or acrostic choices.
-Workbook is not prescribed. Audio not independently played. Draft pending book and Word/PDF checks.
+**Objective:** Pupils complete the specific Language Arts 15 lesson tasks using Miss Antrobus vocabulary and produce observable assessment evidence.
 
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**Set induction (5 min):** Teacher reads a sentence based the poem and pupils will stand if the sentence is correct or they will sit down if the sentence is false.
+
+**Activity 1 (22 min):** Follow Step 1 until Step 4 (Activity 5) from the guidebook. Note: Pupils of lower proficiency can write acrostic poem instead (e.g. C – Cute, A – Adorable, T – Tame as in cat).
+
+**Activity 2 (23 min):** Teacher provides assistance when needed.
+
+**PBD (5 min):** Teacher checks a creative response linked to the literary work and a relevant reason.
+
+**Closure (5 min):** Prepare an illustration for their newly adapted poem. Anthology of Poems Page 16 Contemporary Children’s Literature Teaching Guidebook (BPK) – Poetry Activity 5 Page 101 Differentiate learning according to the needs of your pupils and class.
+
+**Literature route:** No English Plus Student Book, Workbook or CD activity is prescribed.
+
+**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
