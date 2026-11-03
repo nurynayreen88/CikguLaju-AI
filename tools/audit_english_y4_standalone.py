@@ -33,6 +33,10 @@ def audit():
             findings.append({"lesson": n, "issue": "DRAFT_STATUS"})
         if re.search(r"(?im)^\*\*(?:QA status|Internal review):", text):
             findings.append({"lesson": n, "issue": "INTERNAL_QA_NOTE"})
+        if re.search(r"(?im)^\\*\\*(?:Status|QA status|Internal review):\\*\\*.*(?:pending|not verified|needs review)", text):
+            findings.append({"lesson": n, "issue": "PENDING_VERIFICATION_NOTE"})
+        if re.search(r"(?im)^\\*\\*(?:Resources|References|Materials):\\*\\*.*\\bDRAFT\\b", text):
+            findings.append({"lesson": n, "issue": "DRAFT_RESOURCE_REFERENCE"})
         if "Teacher-selected DSKP SP" in text:
             findings.append({"lesson": n, "issue": "TEACHER_SELECTED_SP_REQUIRES_CONTEXT"})
     return findings
