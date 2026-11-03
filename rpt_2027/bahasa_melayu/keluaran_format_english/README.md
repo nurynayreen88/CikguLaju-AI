@@ -32,3 +32,6 @@ Induk projek masih belum mempunyai salinan DK Bahasa Melayu SK Tahun 1 KP2027 da
 Fail HTML menggunakan CSS cetakan A4 landscape. Pada halaman GitHub, pilih **Download raw** bagi `.html` untuk buka dalam pelayar dan cetak. Fail `.md` memudahkan semakan dalam GitHub.
 
 [Audit batch 4 — 70 pembetulan SP](../AUDIT_KUALITI_BM_2027_SP_DSKP_BATCH4.md) • **Word DOCX rasmi belum diterbitkan, dan RPT belum READY.** Tidak ada perubahan kepada `main`, DB, Telegram atau Web.
+## Status Bahasa Melayu Tahun 3 — 4 November 2026
+
+**165/165 fail RPH Standalone telah wujud pada staging.** 91 DRAF, 74 HOLD, 0 READY. Enam pembetulan sumber telah dimasukkan ke RPT Markdown/HTML dan fail RPH berkaitan. Baca [audit struktur Tahun 3](../AUDIT_PENUTUP_BM_T3_165_20261104.md). Tiada pelepasan ke produksi, format Word/PDF atau CI diluluskan lagi.
