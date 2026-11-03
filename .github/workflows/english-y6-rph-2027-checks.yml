@@ -1,0 +1,24 @@
+name: English Year 6 2027 RPH inventory audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year6/**'
+      - 'audits/audit_160_rph.csv'
+      - 'tests/test_english_y6_rph_2027_files.py'
+      - '.github/workflows/english-y6-rph-2027-checks.yml'
+  push:
+    branches:
+      - feat/english-year6-160-rph-rpt2027-20261103
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p 'test_english_y6_rph_2027_files.py' -v
