@@ -8,7 +8,8 @@ Materials: Anthology of Poems p.17, Serenade; BPK Poetry Guidebook.
 2. Activity 1 (12 min): Read the poem and discuss possible sounds made by the instruments mentioned.
 3. Activity 2 (15 min): Divide pupils into three groups. Rotate stanza reading and sound-effect performance so every group participates.
 4. Activity 3 (17 min): Pupils explain which instrument they like or dislike, interview friends and write short notes about their reasons.
-5. Assessment and closure (8 min): Pupils share interview findings in facing lines. Teacher observes comprehension and reasons. Remind pupils to bring materials for musical-instrument making in Lesson 33.
+5. PBD (4 min): Teacher listens to a pupil's explanation of a preferred instrument and checks whether the reason is linked to Serenade; pupils improve one response after feedback.
+6. Closure (4 min): Pupils briefly share interview findings in facing lines. Teacher reminds pupils to bring materials for instrument making in Lesson 33.
 
 Differentiation: Accept one interview note from pupils needing support; encourage others to interview more friends.
 Non-textbook lesson: No English Plus Student's Book, Workbook or audio assignment.
