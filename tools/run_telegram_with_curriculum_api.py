@@ -25,3 +25,12 @@ def active_master_database():
 
 
 register_if_enabled(app, active_master_database)
+
+# RPT English 2027 PDF download: install after all Telegram callback wrappers.
+# This does not alter app.py, RPH generation, DB state or quota debits.
+try:
+    from rpt_2027.english.telegram_downloads import install as install_english_rpt_2027
+    ENGLISH_RPT_2027_TELEGRAM_ACTIVE = install_english_rpt_2027(vars(telegram_runtime))
+except Exception as _rpt_2027_exc:
+    ENGLISH_RPT_2027_TELEGRAM_ACTIVE = False
+    print("English RPT 2027 Telegram bridge unavailable:", repr(_rpt_2027_exc), flush=True)
