@@ -20,7 +20,7 @@ Induk projek masih belum mempunyai salinan DK Bahasa Melayu SK Tahun 1 KP2027 da
 
 ## Baki sebelum READY
 
-1. Audit 12 calon pengulangan yang masih sama tajuk/rujukan; 7 rekod berkongsi kod tetapi berbeza aktiviti telah dikelaskan. Tiada rekod dipadam.
+1. [Audit global](../AUDIT_ULANGAN_GLOBAL_825_20261103.md) mengenal pasti **37 pasangan calon ulangan** merentas semua 825 Lesson, termasuk 6 varian +PKJR. Tujuh aktiviti berbeza tajuk tetapi berkongsi kod/halaman dalam audit lama dikekalkan. Tiada rekod dipadam atau dinombor semula.
 2. Semak buku aktiviti penuh bagi Tahun 2–3; nombor BA yang tertera hanyalah rujukan daripada RPT 2026 dan Buku Teks yang ditemui.
 3. Semak ayat SK/SP, subkod roman, tema, aktiviti dan halaman asal terhadap naskhah primer.
 4. Tarikh mingguan ialah gabungan induk 2027 A/B, bukannya hari Lesson individu. Cuti negeri/cuti gantian dan jadual sekolah belum dipadankan untuk READY.
@@ -31,4 +31,4 @@ Induk projek masih belum mempunyai salinan DK Bahasa Melayu SK Tahun 1 KP2027 da
 
 Fail HTML menggunakan CSS cetakan A4 landscape. Pada halaman GitHub, pilih **Download raw** bagi `.html` untuk buka dalam pelayar dan cetak. Fail `.md` memudahkan semakan dalam GitHub.
 
-**Word DOCX rasmi belum diterbitkan, dan RPT belum READY.** Tidak ada perubahan kepada `main`, DB, Telegram atau Web.
+[Audit batch 4 — 70 pembetulan SP](../AUDIT_KUALITI_BM_2027_SP_DSKP_BATCH4.md) • **Word DOCX rasmi belum diterbitkan, dan RPT belum READY.** Tidak ada perubahan kepada `main`, DB, Telegram atau Web.
