@@ -16,5 +16,7 @@
 **PBD:** Observe and record evidence from the main-skill activity and complementary-skill output. Record Independent / With support / Needs reteaching.
 **Differentiation:** Accept short phrases and incomplete sentences from pupils still developing reasons.
 **Reflection:** Objective met __/__; follow-up __.
-**Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.
+**Workbook:** Not prescribed for this Language Arts lesson.
 **QA status:** SOURCE-PAIRED DRAFT. Official SOW lesson and references checked; physical source-page/audio content and Word/PDF layout not yet independently verified.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
