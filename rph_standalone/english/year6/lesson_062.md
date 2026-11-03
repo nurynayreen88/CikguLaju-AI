@@ -7,8 +7,8 @@
 **Language focus:** Functional language (polite language, e.g. I’m afraid I…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.56; TB pp.93  
-**Learning objective:** Give a 45–60 second spoken response on different occupations with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Sustain a paired exchange about different occupations by checking understanding at least 3 times.  
+**PBD evidence:** Communication checklist: three clarification checks and relevant follow-up responses.
 
 ## Set induction (5 minutes)
 **Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using occupation picture cards; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Model clarification moves such as checking what the speaker means or requesting repetition.  
+**Pupils:** Exchange information in pairs; use at least three checking-understanding questions and accurate responses.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

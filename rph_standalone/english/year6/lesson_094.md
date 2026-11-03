@@ -7,8 +7,8 @@
 **Language focus:** Use of language in advertising, e.g. strong adjectives, e.g. wonderful, cool; giving advice to consumers, e.g. We think you should give it a try!  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 78; Teacher Book pages 126-127  
-**Learning objective:** Give a 45–60 second spoken response on making a familiar product with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Give 3 pieces of relevant advice about making a familiar product, each supported with a simple reason.  
+**PBD evidence:** Three appropriate advice-and-reason pairs and a short oral follow-up.
 
 ## Set induction (5 minutes)
 **Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using four process-stage pictures; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Present a familiar problem scenario; model should/shouldn’t with because as appropriate to the RPT.  
+**Pupils:** Take turns offering three advice statements and explain why each might help.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

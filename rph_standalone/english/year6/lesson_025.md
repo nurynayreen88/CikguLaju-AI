@@ -7,8 +7,8 @@
 **Language focus:** Future review (will and won’t; going to and present continuous)  
 **Duration:** 60 minutes  
 **Materials:** Anthology of Poems — Language Arts material (verify page against SOW)  
-**Learning objective:** Give a 45–60 second spoken response on life then and now with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Negotiate and agree 4 basic steps for an extended classroom task concerning life then and now.  
+**PBD evidence:** Written/shared 4-step group plan and oral evidence of negotiated agreement.
 
 ## Set induction (5 minutes)
 **Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using then-and-now photographs; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Provide an extended-classroom task card and model agreeing on task steps and roles.  
+**Pupils:** Discuss alternatives, agree and number four steps, and explain the plan to the teacher.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

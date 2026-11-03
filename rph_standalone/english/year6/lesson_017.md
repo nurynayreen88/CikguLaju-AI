@@ -7,24 +7,24 @@
 **Language focus:** Used to / didn’t use to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.22–23; TB pp.42–43  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on life then and now; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Infer the meaning of at least 4 unfamiliar words from known-word clues in the reading text about life then and now.  
+**PBD evidence:** 4 meaning-and-clue pairs supported by the printed text; review 1 inference aloud.
 
 ## Set induction (5 minutes)
 **Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce transport, homes, past routines and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce transport, homes, past routines and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Used to / didn’t use to.  
 **Pupils:** Predict the text from then-and-now photographs; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “What did people use to do, and how is it different now?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Use the RPT-cited reading material. Model one contextual inference and ask pupils to infer 4 words from surrounding known words; connect clues to Used to / didn’t use to.  
+**Pupils:** Read the passage and record 4 unfamiliar words, a likely meaning and the exact nearby clue for each.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to life then and now.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to life then and now. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

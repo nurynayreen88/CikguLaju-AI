@@ -7,24 +7,24 @@
 **Language focus:** Functional language: getting around, e.g. Could I have two return tickets, please?  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.68; TB pp.110; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about a journey around town.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Respond correctly to 4 longer supported listening questions related to a journey around town.  
+**PBD evidence:** Four question-response pairs showing understanding of complex supported questions.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear. Emphasise the language focus: Functional language: getting around, e.g. Could I have two return tickets, please?.  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Use the approved listening passage and ask four multi-part but age-appropriate oral questions.  
+**Pupils:** Listen, select the meaning of each question and provide four appropriate responses.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

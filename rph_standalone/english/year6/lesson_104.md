@@ -7,24 +7,24 @@
 **Language focus:** Describing music (e.g. catchy)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 87; Teacher Book pages 140; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about a school music performance.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Infer the meanings of 3 unfamiliar spoken words about a school music performance from known words or sound clues.  
+**PBD evidence:** Three inferred word meanings, each with a relevant contextual clue.
 
 ## Set induction (5 minutes)
 **Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach music genres, instruments, performance; display instrument and performance pictures and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach music genres, instruments, performance; display instrument and performance pictures and ask pupils to predict what they may hear. Emphasise the language focus: Describing music (e.g. catchy).  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Present three unfamiliar words in an approved spoken context and model inference from surrounding familiar words.  
+**Pupils:** Infer meanings from listening clues; note each guess and the clue that prompted it.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a school music performance, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about a school music performance, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

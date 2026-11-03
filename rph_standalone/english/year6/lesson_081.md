@@ -7,24 +7,24 @@
 **Language focus:** Present forms: passive (e.g. be made) and active (it takes…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 70-71; Teacher Book pages 114-115  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on making a familiar product; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Use a familiar print or digital reference to check the meaning of 4 words encountered in text about making a familiar product.  
+**PBD evidence:** Four words, verified meanings and named sources; assess appropriate use of the reference.
 
 ## Set induction (5 minutes)
 **Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce materials, tools, process and sequence and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce materials, tools, process and sequence and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Present forms: passive (e.g. be made) and active (it takes…).  
 **Pupils:** Predict the text from four process-stage pictures; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “Which materials and steps are used to make it?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Model the index/search procedure using a teacher-approved reference. Pupils must consult the reference rather than guess the meaning.  
+**Pupils:** Locate four words in a print/digital reference and record the correct meaning and their source.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to making a familiar product.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to making a familiar product. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

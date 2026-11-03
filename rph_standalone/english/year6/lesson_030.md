@@ -7,8 +7,8 @@
 **Language focus:** Review of past and future forms; Functional language – checking understanding (e.g. Can I check something, please?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.30  
-**Learning objective:** Give a 45–60 second spoken response on life then and now with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Sustain a paired exchange about life then and now by checking understanding at least 3 times.  
+**PBD evidence:** Communication checklist: three clarification checks and relevant follow-up responses.
 
 ## Set induction (5 minutes)
 **Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using then-and-now photographs; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Model clarification moves such as checking what the speaker means or requesting repetition.  
+**Pupils:** Exchange information in pairs; use at least three checking-understanding questions and accurate responses.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

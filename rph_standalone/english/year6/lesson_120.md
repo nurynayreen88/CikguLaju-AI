@@ -7,24 +7,24 @@
 **Language focus:** Narrative forms (e.g. past simple: He told lies)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 101, 103, 96-97; Teacher Book pages 160-163; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about a short story.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Understand and sequence 4 key events from a longer simple spoken narrative about a short story.  
+**PBD evidence:** Sequence 4 events and recall one accurate narrative detail.
 
 ## Set induction (5 minutes)
 **Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach character, setting, problem, ending; display story sequence panels and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach character, setting, problem, ending; display story sequence panels and ask pupils to predict what they may hear. Emphasise the language focus: Narrative forms (e.g. past simple: He told lies).  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Read or play the approved narrative twice, once for the main event and again for sequence.  
+**Pupils:** Place four event cards in chronological order and explain one detail from the spoken narrative.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a short story, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about a short story, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

@@ -7,8 +7,8 @@
 **Language focus:** Past simple tense  
 **Duration:** 60 minutes  
 **Materials:** SOW materials — reference to verify; original pupil response card  
-**Learning objective:** Respond to the literary text “Akbar’s Dream” with 2 text-based observations and one original creative response.  
-**PBD evidence:** Response checklist: 2 text-based observations, intelligible performance and a relevant creative product.
+**Learning objective:** Create an original short creative response to “Akbar’s Dream” and connect it to two details from the literary text.  
+**PBD evidence:** An original imaginative response and two clear text-linked explanations.
 
 ## Set induction (5 minutes)
 **Teacher:** Display the text title and invite a prediction.  
@@ -23,8 +23,8 @@
 **Pupils:** Read/recite selected lines from their own book; note two images, actions or feelings from the text.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Set a short original creative response: freeze-frame, dialogue, four-line poem or illustrated explanation consistent with the focus.  
-**Pupils:** Prepare and share a brief creative response; explain how it connects to one part of the text.
+**Teacher:** Invite pairs to prepare an original four-line poem, short role-play or brief story based on the text’s theme. Check the complementary skill using the short task.  
+**Pupils:** Create and share a four-line poem or short role-play, explaining two links to the original text. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

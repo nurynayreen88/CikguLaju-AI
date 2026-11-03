@@ -7,24 +7,24 @@
 **Language focus:** Present perfect questions (e.g. Have you ever visited Tokyo? [Yes, I have. / No, I haven’t.])  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.38; TB pp.66–67; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about an outdoor adventure.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Respond correctly to 4 longer supported listening questions related to an outdoor adventure.  
+**PBD evidence:** Four question-response pairs showing understanding of complex supported questions.
 
 ## Set induction (5 minutes)
 **Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach outdoor adventures, feelings and experiences; display adventure scene cards and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach outdoor adventures, feelings and experiences; display adventure scene cards and ask pupils to predict what they may hear. Emphasise the language focus: Present perfect questions (e.g. Have you ever visited Tokyo? [Yes, I have. / No, I haven’t.]).  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Use the approved listening passage and ask four multi-part but age-appropriate oral questions.  
+**Pupils:** Listen, select the meaning of each question and provide four appropriate responses.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about an outdoor adventure, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about an outdoor adventure, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

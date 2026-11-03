@@ -7,8 +7,8 @@
 **Language focus:** Narrative forms (e.g. past simple: someone took his bag, past continuous: he was carrying a bag)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 130; Teacher Book pages 202-203  
-**Learning objective:** Give a 45–60 second spoken response on a classroom mystery with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Narrate a short event about a classroom mystery with a clear sequence of 3 events and an appropriate ending.  
+**PBD evidence:** Three ordered events and a clear concluding sentence in an intelligible narrative.
 
 ## Set induction (5 minutes)
 **Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using clue cards and picture sequence; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Provide three sequential picture prompts and model time connectives from the lesson.  
+**Pupils:** Narrate three linked events in order; add one descriptive detail and an ending.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

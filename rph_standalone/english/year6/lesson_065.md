@@ -7,24 +7,24 @@
 **Language focus:** Comparative forms, e.g. as … as  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.60–61; TB pp.98–99  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on a journey around town; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Read an age-appropriate A2 fiction/nonfiction text on a journey around town independently and share two details and one reason for reading enjoyment.  
+**PBD evidence:** Individual reading log: two accurate details and one personal response; observe independent reading.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce directions, routes and transport and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce directions, routes and transport and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Comparative forms, e.g. as … as.  
 **Pupils:** Predict the text from simple route maps and transport cards; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “Which route or mode of transport fits the journey?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Provide the A2 text referenced in the RPT or an approved equivalent; guide independent reading time without supplying answers.  
+**Pupils:** Read independently, note two significant details and prepare one sentence explaining interest or enjoyment.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a journey around town.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a journey around town. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

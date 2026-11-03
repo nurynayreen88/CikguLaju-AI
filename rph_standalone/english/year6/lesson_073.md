@@ -7,8 +7,8 @@
 **Language focus:** Modal verbs for expression rules and obligation: have to, need to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.65  
-**Learning objective:** Give a 45–60 second spoken response on a journey around town with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Ask about and explain at least 3 rules or obligations relevant to a journey around town in a paired exchange.  
+**PBD evidence:** Three intelligible rule/obligation statements and at least one responsive question.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using simple route maps and transport cards; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Provide three rule/obligation scenario cards and model must/have to according to the actual RPT lesson language.  
+**Pupils:** Ask about rules, explain three obligations and respond to one clarification question.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

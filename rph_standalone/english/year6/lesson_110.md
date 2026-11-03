@@ -7,8 +7,8 @@
 **Language focus:** Review of language (e.g. present simple for talking about themselves; past forms for narration)  
 **Duration:** 60 minutes  
 **Materials:** Speaking assessment practice materials, examiner script and assessment form  
-**Learning objective:** Give a 45–60 second spoken response on a journey around town with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on a journey around town.  
+**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using simple route maps and transport cards; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
+**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

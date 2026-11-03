@@ -7,24 +7,24 @@
 **Language focus:** Direct speech, e.g. Lena said, ‘I was playing badminton at 5 o’clock.’  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.9, 14; TB p.32  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on a safe emergency incident; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a safe emergency incident.  
+**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
 
 ## Set induction (5 minutes)
 **Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce incident, safety, help, action and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce incident, safety, help, action and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Direct speech, e.g. Lena said, ‘I was playing badminton at 5 o’clock.’.  
 **Pupils:** Predict the text from incident sequence pictures; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “What happened first, what interrupted it, and what happened next?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a safe emergency incident; model locating exact evidence.  
+**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a safe emergency incident.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a safe emergency incident. Write 2 connected sentences reflecting the lesson language.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

@@ -7,8 +7,8 @@
 **Language focus:** Review of tenses, modal verbs for rules and obligations, cohesive devices  
 **Duration:** 60 minutes  
 **Materials:** Teacher-prepared model email, email writing template and evaluation criteria  
-**Learning objective:** Write a coherent a route or travel plan using at least 5 connected sentences and appropriate language for a journey around town.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Produce, check and improve a draft of two paragraphs on a journey around town, making at least two meaningful revisions.  
+**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to a journey around town.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a route or travel plan.
+**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
+**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

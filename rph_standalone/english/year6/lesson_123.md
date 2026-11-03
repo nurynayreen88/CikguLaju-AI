@@ -7,24 +7,24 @@
 **Language focus:** Genres of literature (e.g. science fiction, adventure); Functional language: Giving advice (I think you should…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 105; Teacher Book page 166  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on a short story; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a short story.  
+**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
 
 ## Set induction (5 minutes)
 **Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce character, setting, problem, ending and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce character, setting, problem, ending and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Genres of literature (e.g. science fiction, adventure); Functional language: Giving advice (I….  
 **Pupils:** Predict the text from story sequence panels; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “Who is involved, what happens, and how does it end?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a short story; model locating exact evidence.  
+**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a short story.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a short story. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

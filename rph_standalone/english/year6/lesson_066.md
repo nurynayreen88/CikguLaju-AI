@@ -7,8 +7,8 @@
 **Language focus:** Cohesive devices (because, so, but)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.60–62; TB pp.100  
-**Learning objective:** Write a coherent a route or travel plan using at least 5 connected sentences and appropriate language for a journey around town.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Connect at least 8 sentences into two coherent paragraphs related to a journey around town.  
+**PBD evidence:** Two logically organised paragraphs, 8 sentences and at least two appropriate linking words.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to a journey around town.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a route or travel plan.
+**Teacher:** Demonstrate paragraph breaks, topic sentences and basic coordinating connectors using the cited task.  
+**Pupils:** Plan and write two linked paragraphs containing at least 8 sentences in total.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

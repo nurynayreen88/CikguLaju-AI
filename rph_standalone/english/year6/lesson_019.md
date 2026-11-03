@@ -7,24 +7,24 @@
 **Language focus:** Used to / didn’t use to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.24; TB p.48; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about life then and now.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Recognise and independently reproduce at least 5 target phonemes or modelled words related to life then and now.  
+**PBD evidence:** Five correctly recognised and reproduced sounds or words, with minimal prompting.
 
 ## Set induction (5 minutes)
 **Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach transport, homes, past routines; display then-and-now photographs and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach transport, homes, past routines; display then-and-now photographs and ask pupils to predict what they may hear. Emphasise the language focus: Used to / didn’t use to.  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Read aloud verified word examples from the cited material, modelling five target sounds and their contrasts.  
+**Pupils:** Listen and discriminate five items, then reproduce the sounds/words independently.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about life then and now, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about life then and now, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

@@ -7,8 +7,8 @@
 **Language focus:** Present simple questions & answers to talk about oneself (e.g. How many people are there in your family?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.5; TB p.19  
-**Learning objective:** Write a coherent a personal profile using at least 5 connected sentences and appropriate language for meeting new classmates.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Write a detailed a personal profile containing at least 5 relevant facts about a person or group linked to meeting new classmates.  
+**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
 
 ## Set induction (5 minutes)
 **Teacher:** Show profile and personality cards and ask: “How would you introduce yourself to a new classmate?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to meeting new classmates.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a personal profile.
+**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
+**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

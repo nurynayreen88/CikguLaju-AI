@@ -7,24 +7,24 @@
 **Language focus:** Comparative forms: (just/not) as … as; weak sound (schwa) /ə/  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.62–63; TB pp.100, 102; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about a journey around town.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Recognise and independently reproduce at least 5 target phonemes or modelled words related to a journey around town.  
+**PBD evidence:** Five correctly recognised and reproduced sounds or words, with minimal prompting.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear. Emphasise the language focus: Comparative forms: (just/not) as … as; weak sound (schwa) /ə/.  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Read aloud verified word examples from the cited material, modelling five target sounds and their contrasts.  
+**Pupils:** Listen and discriminate five items, then reproduce the sounds/words independently.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

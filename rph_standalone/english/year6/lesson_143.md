@@ -7,8 +7,8 @@
 **Language focus:** Verb (Present Continuous Tense)  
 **Duration:** 60 minutes  
 **Materials:** Anthology of Poems Years 4-6: Tadpoles page 38; CCL Poetry Guidebook; original pupil response card  
-**Learning objective:** Respond to the literary text “Tadpoles” with 2 text-based observations and one original creative response.  
-**PBD evidence:** Response checklist: 2 text-based observations, intelligible performance and a relevant creative product.
+**Learning objective:** Describe 2 actions or feelings of a character in “Tadpoles” and give a text-based reason for each.  
+**PBD evidence:** Two character action/feeling statements, each supported by a reason from the text.
 
 ## Set induction (5 minutes)
 **Teacher:** Display the text title and invite a prediction.  
@@ -19,12 +19,12 @@
 **Pupils:** Observe illustrations or title clues and predict one idea or emotion.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Read the authorised literary text aloud, model tone and expression, and select two details for discussion.  
-**Pupils:** Read/recite selected lines from their own book; note two images, actions or feelings from the text.
+**Teacher:** Read the authorised literary text, focusing on a character’s actions, feelings and supporting textual details.  
+**Pupils:** Note two character action/feeling examples and explain each with evidence from the text.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Set a short original creative response: freeze-frame, dialogue, four-line poem or illustrated explanation consistent with the focus.  
-**Pupils:** Prepare and share a brief creative response; explain how it connects to one part of the text.
+**Teacher:** Set a short original creative response: freeze-frame, dialogue, four-line poem or illustrated explanation consistent with the focus. Check the complementary skill using the short task.  
+**Pupils:** Prepare and share a brief creative response; explain how it connects to one part of the text. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

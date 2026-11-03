@@ -7,24 +7,24 @@
 **Language focus:** Emotions (e.g. frightened, happy)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 91; Teacher Book pages 146-147  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on a school music performance; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a school music performance.  
+**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
 
 ## Set induction (5 minutes)
 **Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce music genres, instruments, performance and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce music genres, instruments, performance and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Emotions (e.g. frightened, happy).  
 **Pupils:** Predict the text from instrument and performance pictures; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “What musical details or preferences do you notice?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a school music performance; model locating exact evidence.  
+**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a school music performance.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a school music performance. Give a short oral explanation to a partner and respond to one question.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

@@ -7,24 +7,24 @@
 **Language focus:** Adjective modifiers review (e.g. too, just, really)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.65; TB pp.106–107; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about a journey around town.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Identify at least 5 specific facts from a spoken passage about a journey around town with little or no support.  
+**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
 
 ## Set induction (5 minutes)
 **Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear. Emphasise the language focus: Adjective modifiers review (e.g. too, just, really).  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
+**Pupils:** Listen for details and complete five information questions before paired comparison.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

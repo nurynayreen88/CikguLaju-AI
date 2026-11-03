@@ -7,8 +7,8 @@
 **Language focus:** Punctuation (direct speech/script: e.g. ‘I’m hungry’, she said / I’m hungry)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 128-129; Teacher Book pages 200, 203; Workbook page 110  
-**Learning objective:** Write a coherent a short mystery explanation using at least 5 connected sentences and appropriate language for a classroom mystery.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Narrate a factual or imagined event linked to a classroom mystery in at least 6 ordered sentences.  
+**PBD evidence:** Narrative with 6 ordered sentences, correct event vocabulary and at least 2 sequence connectors.
 
 ## Set induction (5 minutes)
 **Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to a classroom mystery.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a short mystery explanation.
+**Teacher:** Model the difference between opening, linked events and ending; focus on the narrative forms in this RPT Lesson.  
+**Pupils:** Draft a six-sentence account with a beginning, chronological events and a suitable ending.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language. Complete the relevant Workbook task from the cited page, if assigned.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

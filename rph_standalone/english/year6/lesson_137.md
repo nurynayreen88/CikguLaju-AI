@@ -7,8 +7,8 @@
 **Language focus:** Functional language: giving opinion (e.g. I don’t believe that…), checking understanding, e.g. using reported speech (e.g. You said ….., didn’t you?)  
 **Duration:** 60 minutes  
 **Materials:** Teacher-prepared debate notes worksheet and speaking contribution cards  
-**Learning objective:** Give a 45–60 second spoken response on a familiar school-life issue with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Sustain a paired exchange about a familiar school-life issue by checking understanding at least 3 times.  
+**PBD evidence:** Communication checklist: three clarification checks and relevant follow-up responses.
 
 ## Set induction (5 minutes)
 **Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using two contrasting opinion cards; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Model clarification moves such as checking what the speaker means or requesting repetition.  
+**Pupils:** Exchange information in pairs; use at least three checking-understanding questions and accurate responses.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

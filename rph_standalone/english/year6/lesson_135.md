@@ -7,8 +7,8 @@
 **Language focus:** Topic sentences; functional language: giving opinion (e.g. I don’t believe that…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 115; Teacher Book page 180  
-**Learning objective:** Write a coherent a reasoned opinion paragraph using at least 5 connected sentences and appropriate language for a familiar school-life issue.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Produce, check and improve a draft of two paragraphs on a familiar school-life issue, making at least two meaningful revisions.  
+**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
 
 ## Set induction (5 minutes)
 **Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to a familiar school-life issue.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a reasoned opinion paragraph.
+**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
+**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

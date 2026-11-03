@@ -7,8 +7,8 @@
 **Language focus:** Review of question forms (personal questions, e.g. What’s your favourite song to sing?)  
 **Duration:** 60 minutes  
 **Materials:** Pupils' song recordings from Lesson 105; Pupil Book pages 82-83 for optional support  
-**Learning objective:** Write a coherent a music preference note using at least 5 connected sentences and appropriate language for a school music performance.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Write a detailed a music preference note containing at least 5 relevant facts about a person or group linked to a school music performance.  
+**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
 
 ## Set induction (5 minutes)
 **Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to a school music performance.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a music preference note.
+**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
+**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

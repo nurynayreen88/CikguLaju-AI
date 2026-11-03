@@ -7,24 +7,24 @@
 **Language focus:** Spelling of common words, e.g. played, love, football  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.57; TB pp.94–95  
-**Learning objective:** Identify the main idea and at least 4 relevant details in a reading text on different occupations; support an answer using a clue from the text.  
-**PBD evidence:** One main-idea statement, 4 detail answers and one cited supporting clue; record achieved / supported / reteach.
+**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on different occupations.  
+**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
 
 ## Set induction (5 minutes)
 **Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce jobs, places of work, skills and teach how to scan the stated Pupil’s Book/reading passage for clues.  
+**Teacher:** Introduce jobs, places of work, skills and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Spelling of common words, e.g. played, love, football.  
 **Pupils:** Predict the text from occupation picture cards; highlight two useful clues or words.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide silent reading of the text cited in the RPT. Ask “What tasks does the worker do and what skills are needed?” and model locating evidence.  
-**Pupils:** Read individually; underline key information, identify the main idea and match 4 facts with text evidence.
+**Teacher:** Guide reading of the cited material and ask five text-dependent questions about different occupations; model locating exact evidence.  
+**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to different occupations.
+**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
+**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to different occupations. Write 2 connected sentences reflecting the lesson language.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

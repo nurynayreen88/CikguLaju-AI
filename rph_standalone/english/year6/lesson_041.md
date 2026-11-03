@@ -7,8 +7,8 @@
 **Language focus:** Past tenses review  
 **Duration:** 60 minutes  
 **Materials:** Workbook page 32 activity 2 (optional); teacher-prepared picture story worksheets A and B  
-**Learning objective:** Give a 45–60 second spoken response on an outdoor adventure with at least 3 accurate details and respond to one follow-up question.  
-**PBD evidence:** Oral checklist: intelligibility, 3 relevant details, two exchanges and one follow-up response.
+**Learning objective:** Narrate a short event about an outdoor adventure with a clear sequence of 3 events and an appropriate ending.  
+**PBD evidence:** Three ordered events and a clear concluding sentence in an intelligible narrative.
 
 ## Set induction (5 minutes)
 **Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
@@ -19,12 +19,12 @@
 **Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a role-play or information-gap task using adventure scene cards; circulate and prompt elaboration.  
-**Pupils:** Interview a partner or role-play the situation; ask at least 2 questions and give 3 relevant details.
+**Teacher:** Provide three sequential picture prompts and model time connectives from the lesson.  
+**Pupils:** Narrate three linked events in order; add one descriptive detail and an ending.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
+**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail. Complete the relevant Workbook task from the cited page, if assigned.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

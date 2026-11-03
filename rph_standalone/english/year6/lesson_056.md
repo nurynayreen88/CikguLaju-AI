@@ -7,24 +7,24 @@
 **Language focus:** Tenses review – present simple and present perfect  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.53; TB pp.88–89; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea and at least 4 specific details from spoken language about different occupations.  
-**PBD evidence:** Listening grid with one gist item plus 4 detail items; record independent / repeated support / reteach.
+**Learning objective:** Identify the main idea of two longer simple spoken texts or extracts about different occupations with little support.  
+**PBD evidence:** Two accurate gist statements with an appropriate supporting clue.
 
 ## Set induction (5 minutes)
 **Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
 **Pupils:** Offer one prediction or personal example using relevant words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach jobs, places of work, skills; display occupation picture cards and ask pupils to predict what they may hear.  
+**Teacher:** Pre-teach jobs, places of work, skills; display occupation picture cards and ask pupils to predict what they may hear. Emphasise the language focus: Tenses review – present simple and present perfect.  
 **Pupils:** Predict two likely words and say why they match the context.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the lesson audio only if its track is verified; otherwise read aloud the approved passage from the cited material twice. First listen for gist, second for details.  
-**Pupils:** Listen without writing first, then note the main idea and four specific facts on a listening grid.
+**Teacher:** Read or play a verified passage twice and contrast its main message with distractor ideas.  
+**Pupils:** Identify the main idea for each of two listening extracts and give one supporting detail.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about different occupations, and replay/read relevant parts where needed.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases.
+**Teacher:** Check the grid with prompts about different occupations, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
+**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  

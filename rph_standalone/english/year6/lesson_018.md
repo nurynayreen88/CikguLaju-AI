@@ -7,8 +7,8 @@
 **Language focus:** Used to / didn’t use to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.22–24; TB pp.44–45  
-**Learning objective:** Write a coherent a then-and-now comparison using at least 5 connected sentences and appropriate language for life then and now.  
-**PBD evidence:** Collect the written product; check relevance, 5 connected sentences, target language and revision.
+**Learning objective:** Produce, check and improve a draft of two paragraphs on life then and now, making at least two meaningful revisions.  
+**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
 
 ## Set induction (5 minutes)
 **Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
@@ -19,12 +19,12 @@
 **Pupils:** Identify the model’s key ideas and rehearse three expressions related to life then and now.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-referenced Pupil’s Book task as the source or model; demonstrate a 3-point planning frame.  
-**Pupils:** Plan a sequence of ideas with topic vocabulary and draft 5–7 sentences for a then-and-now comparison.
+**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
+**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner.
+**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
+**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
 
 ## Reinforcement / PBD (8 minutes)
 **Teacher:** Check the lesson evidence against the target and give one actionable correction.  
