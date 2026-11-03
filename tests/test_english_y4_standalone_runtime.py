@@ -17,6 +17,13 @@ class Year4RuntimeTests(unittest.TestCase):
         self.assertIn("Student's Book p.5", text)
         self.assertNotIn("**Teacher:**", text)
 
+    def test_internal_verification_ledger_is_not_teacher_facing(self):
+        text = self.runtime._local_rph_text({"year": "Tahun 4", "subject": "English", "lesson_no": 1})
+        self.assertNotIn("Verified mapping and limits", text)
+        self.assertNotIn("NOT READY FOR RELEASE", text)
+        self.assertNotIn("QA status:", text)
+        self.assertIn("Class CD1 Track 3", text)
+
     def test_other_subject_and_year_fall_back(self):
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 4", "subject": "Mathematics", "lesson_no": 1}), "GENERIC")
         self.assertEqual(self.runtime._local_rph_text({"year": "Tahun 5", "subject": "English", "lesson_no": 1}), "GENERIC")
