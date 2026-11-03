@@ -13,6 +13,8 @@
 
 **PBD:** Record task-specific evidence as Independent / With support / Needs reteaching.
 **Differentiation:** Accept single words or short phrases where appropriate.
-**Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
-**Audio / lesson type:** NON-TEXTBOOK; no English Plus WB/audio.
+**Workbook:** Not prescribed for this Language Arts lesson.
+**Audio:** No English Plus CD track is prescribed for this non-textbook lesson.
 **QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
