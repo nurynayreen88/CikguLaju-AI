@@ -5,7 +5,7 @@
 **Official SOW:** Lesson 32, printed p.68. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Writing 4.2.5; Speaking 2.1.5.
 **Materials:** SB p.106 Activities 3–4; TB p.120; Malaysia map.
-**Objective:** Pupils demonstrate the SOW-specified skills through the lesson activities.
+**Learning objectives:** Main (Writing 4.2.5) — pupils connect sentences into one or two coherent paragraphs using basic coordinating conjunctions and reference pronouns in the Towns and cities activities. Complementary (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements in the linked speaking task.
 
 1. **Set induction (8 min):** Use Sit Down, Stand Up with true/false statements from p.106.
 2. **Activity 1 (12 min):** Complete Your Culture Activity 3 about places in Malaysia using a map.

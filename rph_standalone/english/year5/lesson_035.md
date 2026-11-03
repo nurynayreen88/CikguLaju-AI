@@ -3,7 +3,7 @@
 **Official SOW:** Lesson 35, printed p.71. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** SOW prints main CS 1.1 but main LS 1.2.1 (source discrepancy; requires DSKP check); complementary Writing 4.3.2.
 **Materials:** SB p.22 Activities 1,3,4; TB p.36; CD 1-21 and 1-22; daily routines table.
-**Objective:** Pupils demonstrate the SOW-specified skills through the lesson activities.
+**Learning objectives:** Main (Listening 1.2.1) — pupils understand with support the main idea of longer simple texts on a range of familiar topics in the Days activities. Complementary (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the linked writing task.
 
 1. **Set induction (8 min):** List days of the week and vote on favourite day.
 2. **Activity 1 (12 min):** Classify daily-routine words from Days and Nights Quiz into five table columns; listen to CD 1-21 to check.

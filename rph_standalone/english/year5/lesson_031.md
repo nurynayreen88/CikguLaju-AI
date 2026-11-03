@@ -5,7 +5,7 @@
 **Official SOW:** Lesson 31, printed p.67. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Reading 3.2.4; Writing 4.2.4.
 **Materials:** SB p.106 Activities 1–2; TB p.120; CD 3-27; UK and Malaysia maps.
-**Objective:** Pupils demonstrate the SOW-specified skills through the lesson activities.
+**Learning objectives:** Main (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the Towns and cities activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
 
 1. **Set induction (8 min):** Review UK capitals using TB warm-up and ask for Malaysia's capital.
 2. **Activity 1 (12 min):** Read Activity 1 and identify Liverpool as the city that is not a capital.

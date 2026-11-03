@@ -4,7 +4,7 @@
 
 **Materials:** English Plus 1 SB p.22 Activity 2; TB p.36; True/False cards. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Days activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the linked reading task.
 
 **Set induction (5 min):** Teacher lists morning, afternoon, evening and night; pupils recall daily routines.
 

@@ -5,7 +5,7 @@
 **Official SOW:** Lesson 34, printed p.70. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Teacher selects main/complementary Year 5 DSKP standards based on pupil needs; no fixed SOW codes.
 **Materials:** SB p.20 Activities 3–4, p.21 Activity 5; TB pp.34–35; SOW self-assessment.
-**Objective:** Pupils demonstrate the SOW-specified skills through the lesson activities.
+**Learning objectives (teacher-selected):** Pupils review language from Unit 1 through the Towns and cities activities and complete a unit self-assessment; teacher selects main and complementary DSKP standards.
 
 1. **Set induction (8 min):** Review Unit 1 vocabulary and grammar.
 2. **Activity 1 (12 min):** Complete p.20 Activity 3 and compare phrases.
