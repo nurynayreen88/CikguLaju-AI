@@ -16,3 +16,5 @@
 **Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
 **Audio / lesson type:** Audio file identified by name, content not listened.
 **QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
+
+**Workbook (existing source QA map):** p.15, Unit 1 Language Focus — Comparative adjectives, Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.

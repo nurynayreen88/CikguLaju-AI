@@ -15,3 +15,5 @@ PBD: Collect task-specific spoken, written, listening or reading evidence. Recor
 Differentiation: Praise three to five accurate sentences, with support for pupils requiring it.
 Workbook: No exercise assigned until Workbook page and activity are verified. Audio: Only SOW-specified tracks listed above.
 QA: SOW-aligned draft; final page, audio-content and Word/PDF checks pending.
+
+**Workbook (existing source QA map):** p.13,17, Unit 1 place questions Ex3-5 + Writing description of town/city Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.

@@ -13,3 +13,5 @@ Sources: SB p.92 Activities 4–5; TB p.106; CD 3-04.
 PBD: Observe listening responses, short exchanges and written accuracy. Differentiation: Replay or pause audio for pupils needing support; allow extra rehearsal time for dialogues.
 Workbook: Exact exercise not verified. Audio files matched by filename in Google Drive; content not yet played.
 QA status: SOW-aligned draft pending source-page and one-page Word/PDF checks.
+
+**Workbook (existing source QA map):** p.19, Unit 1 Speaking — Asking and saying where places are, Ex6. Optional short practice after SOW activities; not a replacement for the core tasks.

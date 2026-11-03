@@ -18,3 +18,5 @@
 **Workbook:** No activity assigned without page-and-exercise verification.
 **Audio:** Only tracks explicitly identified in the SOW; filenames found in Drive where applicable, playback not verified.
 **QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.
+
+**Workbook (existing source QA map):** p.18-19, Unit 1 Progress Review — complete Unit 1 review, Ex1-7. Optional short practice after SOW activities; not a replacement for the core tasks.

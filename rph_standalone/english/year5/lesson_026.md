@@ -15,3 +15,5 @@ Objective: Pupils complete the specified SOW activities and demonstrate the corr
 PBD: Record observable performance in the specified main and complementary skills. Differentiation: Give encouraging feedback to pupils who struggle to plan or write.
 Workbook: Do not assign a Workbook page or exercise until verified. Audio/source status: No SOW audio.
 QA status: SOW-matched draft, pending independent book-page verification, audio playback where relevant, and one-page Word/PDF QA.
+
+**Workbook (existing source QA map):** p.17, Unit 1 Writing — A description of a town or city / position of adjectives, Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.

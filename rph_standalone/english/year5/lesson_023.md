@@ -16,3 +16,5 @@
 **Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
 **Audio / lesson type:** Audio files identified by name, content not listened.
 **QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
+
+**Workbook (existing source QA map):** p.14, Unit 1 Vocabulary and Listening — Comparing places, Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.

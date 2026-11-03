@@ -14,3 +14,5 @@ Materials: English Plus 1 Student's Book p.19 Activities 1–4; Teacher's Book p
 Differentiation: Allow additional time for word ordering; fast finishers create more jumbled sentences.
 Workbook: Not assigned until exact exercise is checked. Audio: None prescribed in SOW.
 QA: SOW-matched draft; final source-page and Word/PDF checks pending.
+
+**Workbook (existing source QA map):** p.16, Unit 1 Reading — A description of a place, Ex1-5. Optional short practice after SOW activities; not a replacement for the core tasks.

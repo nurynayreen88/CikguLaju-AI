@@ -16,3 +16,5 @@
 **Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
 **Audio / lesson type:** No SOW audio.
 **QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
+
+**Workbook (existing source QA map):** p.13,18, Unit 1 there is/are, some/any + Progress Review place questions, Ex1-5 / Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.
