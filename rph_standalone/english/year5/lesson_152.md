@@ -1,0 +1,22 @@
+# Year 5 Lesson 152 — Writing 26
+
+**Official SOW topic:** Going away.
+
+Status: DRAF. Unit 8. Main LS 4.3.3; complementary LS 3.2.2.
+Materials: Student Book p.89 Activities 1, 2 and 4; Teacher Book p.103. Workbook mapping and audio playback remain unverified.
+
+Objective: Pupils identify the purpose and key phrases of Gemma's email, write a planned reply with relevant paragraphs using going to, will and because, and revise it after peer feedback.
+
+Set induction (5 min): Discuss a planned trip and examine the London photograph.
+
+Main activities (40 min): Read Gemma's email and identify details about the visit. Find useful key phrases, plan a reply with the Writing Guide, then draft an email using going to, will and because. Exchange drafts for feedback and revise. Teacher models instructions and provides feedback.
+
+PBD (10 min): Teacher checks that the email has a clear plan, the required content paragraphs and suitable future forms, then records one improvement after peer review.
+
+Closure (5 min): Pupils share a learning point and submit an exit response.
+
+Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
+
+Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.69,71, Unit 8 be going to + will/won't, Ex1-5 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

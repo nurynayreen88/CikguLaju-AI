@@ -1,0 +1,1140 @@
+{
+  "version": "y5-official-sow-20261103",
+  "source": "Primary-Year-5-SoW-SK.pdf",
+  "source_drive_file_id": "1FHJm1tl7IamOSZWIndUMoytm6SGoexAV",
+  "fixed_standard_lessons": 151,
+  "teacher_selected_lessons": [
+    16,
+    34,
+    52,
+    70,
+    88,
+    106,
+    124,
+    142,
+    160
+  ],
+  "notes": "Codes from SOW lesson tables; Lesson 141 source/appendix discrepancy must remain flagged and fail closed until reviewed",
+  "lessons": {
+    "1": {
+      "focus": "Listening 1",
+      "topic": "Free time",
+      "main_ls": "1.2.1",
+      "complementary_ls": "3.2.1",
+      "teacher_choice": false
+    },
+    "2": {
+      "focus": "Speaking 1",
+      "topic": "Free time",
+      "main_ls": "2.1.1",
+      "complementary_ls": "4.2.1",
+      "teacher_choice": false
+    },
+    "3": {
+      "focus": "Reading 1",
+      "topic": "Free time",
+      "main_ls": "3.2.1",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "4": {
+      "focus": "Writing 1",
+      "topic": "Free time",
+      "main_ls": "4.2.4",
+      "complementary_ls": "1.2.4",
+      "teacher_choice": false
+    },
+    "5": {
+      "focus": "Language Arts 1",
+      "topic": "This Tooth",
+      "main_ls": "5.2.1",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "6": {
+      "focus": "Listening 2",
+      "topic": "Free time",
+      "main_ls": "1.1.1",
+      "complementary_ls": "3.2.1",
+      "teacher_choice": false
+    },
+    "7": {
+      "focus": "Speaking 2",
+      "topic": "Free time",
+      "main_ls": "2.1.1",
+      "complementary_ls": "4.2.1",
+      "teacher_choice": false
+    },
+    "8": {
+      "focus": "Reading 2",
+      "topic": "Free time",
+      "main_ls": "3.2.2",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "9": {
+      "focus": "Writing 2",
+      "topic": "Free time",
+      "main_ls": "4.2.4",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "10": {
+      "focus": "Language Arts 2",
+      "topic": "This Tooth",
+      "main_ls": "5.3.1",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "11": {
+      "focus": "Listening 3",
+      "topic": "Free time",
+      "main_ls": "1.2.5",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "12": {
+      "focus": "Speaking 3",
+      "topic": "Free time",
+      "main_ls": "2.1.1",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "13": {
+      "focus": "Reading 3",
+      "topic": "Free time",
+      "main_ls": "3.3.1",
+      "complementary_ls": "4.3.1",
+      "teacher_choice": false
+    },
+    "14": {
+      "focus": "Writing 3",
+      "topic": "Free time",
+      "main_ls": "4.2.1",
+      "complementary_ls": "3.2.1",
+      "teacher_choice": false
+    },
+    "15": {
+      "focus": "Language Arts 3",
+      "topic": "Cats",
+      "main_ls": "5.2.1",
+      "complementary_ls": "1.2.2",
+      "teacher_choice": false
+    },
+    "16": {
+      "focus": "Language Awareness 1",
+      "topic": "Free Time",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "17": {
+      "focus": "Listening 4",
+      "topic": "Towns and cities",
+      "main_ls": "1.2.1",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "18": {
+      "focus": "Speaking 4",
+      "topic": "Towns and cities",
+      "main_ls": "2.1.5",
+      "complementary_ls": "4.2.1",
+      "teacher_choice": false
+    },
+    "19": {
+      "focus": "Reading 4",
+      "topic": "Towns and cities",
+      "main_ls": "3.2.4",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "20": {
+      "focus": "Writing 4",
+      "topic": "Towns and cities",
+      "main_ls": "4.2.4",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "21": {
+      "focus": "Language Arts 4",
+      "topic": "Cats",
+      "main_ls": "5.3.1",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "22": {
+      "focus": "Consolidation 1",
+      "topic": "Towns and cities",
+      "main_ls": "2.2.1",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "23": {
+      "focus": "Listening 5",
+      "topic": "Towns and cities",
+      "main_ls": "1.2.2",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "24": {
+      "focus": "Speaking 5",
+      "topic": "Towns and cities",
+      "main_ls": "2.1.2",
+      "complementary_ls": "1.1.1",
+      "teacher_choice": false
+    },
+    "25": {
+      "focus": "Reading 5",
+      "topic": "Towns and cities",
+      "main_ls": "3.2.2",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "26": {
+      "focus": "Writing 5",
+      "topic": "Towns and cities",
+      "main_ls": "4.2.5",
+      "complementary_ls": "3.2.1",
+      "teacher_choice": false
+    },
+    "27": {
+      "focus": "Language Arts 5",
+      "topic": "Serenade",
+      "main_ls": "5.2.1",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "28": {
+      "focus": "Consolidation 2",
+      "topic": "Towns and cities",
+      "main_ls": "4.3.2",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "29": {
+      "focus": "Listening 6",
+      "topic": "Options: Extra Listening and Speaking",
+      "main_ls": "1.2.5",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "30": {
+      "focus": "Speaking 6",
+      "topic": "Options: Extra Listening and Speaking",
+      "main_ls": "2.2.1",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "31": {
+      "focus": "Reading 6",
+      "topic": "Towns and cities",
+      "main_ls": "3.2.4",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "32": {
+      "focus": "Writing 6",
+      "topic": "Towns and cities",
+      "main_ls": "4.2.5",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "33": {
+      "focus": "Language Arts 6",
+      "topic": "Serenade",
+      "main_ls": "5.3.1",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "34": {
+      "focus": "Language Awareness 2",
+      "topic": "Towns and cities",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "35": {
+      "focus": "Listening 7",
+      "topic": "Days",
+      "main_ls": "1.2.1",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "36": {
+      "focus": "Speaking 7",
+      "topic": "Days",
+      "main_ls": "2.2.1",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "37": {
+      "focus": "Reading 7",
+      "topic": "Days",
+      "main_ls": "3.3.1",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "38": {
+      "focus": "Writing 7",
+      "topic": "Days",
+      "main_ls": "4.2.4",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "39": {
+      "focus": "Language Arts 7",
+      "topic": "Watching a Bumble Bee",
+      "main_ls": "5.2.1",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "40": {
+      "focus": "Consolidation 3",
+      "topic": "Days",
+      "main_ls": "1.2.2",
+      "complementary_ls": "2.1.4",
+      "teacher_choice": false
+    },
+    "41": {
+      "focus": "Listening 8",
+      "topic": "Days",
+      "main_ls": "1.2.4",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "42": {
+      "focus": "Speaking 8",
+      "topic": "Days",
+      "main_ls": "2.1.1",
+      "complementary_ls": "1.1.1",
+      "teacher_choice": false
+    },
+    "43": {
+      "focus": "Reading 8",
+      "topic": "Days",
+      "main_ls": "3.2.3",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "44": {
+      "focus": "Writing 8",
+      "topic": "Days",
+      "main_ls": "4.2.1",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "45": {
+      "focus": "Language Arts 8",
+      "topic": "Watching a Bumble bee",
+      "main_ls": "5.3.1",
+      "complementary_ls": "2.1.2",
+      "teacher_choice": false
+    },
+    "46": {
+      "focus": "Consolidation 4",
+      "topic": "Days",
+      "main_ls": "2.2.1",
+      "complementary_ls": "4.2.1",
+      "teacher_choice": false
+    },
+    "47": {
+      "focus": "Listening 9",
+      "topic": "Days",
+      "main_ls": "1.3.1",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "48": {
+      "focus": "Speaking 9",
+      "topic": "Days",
+      "main_ls": "2.1.4",
+      "complementary_ls": "4.2.2",
+      "teacher_choice": false
+    },
+    "49": {
+      "focus": "Reading 9",
+      "topic": "Days",
+      "main_ls": "3.2.3",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "50": {
+      "focus": "Writing 9",
+      "topic": "Days",
+      "main_ls": "4.3.3",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "51": {
+      "focus": "Language Arts 9",
+      "topic": "And Something Weird Happened",
+      "main_ls": "5.2.1",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "52": {
+      "focus": "Language Awareness 3",
+      "topic": "Days",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "53": {
+      "focus": "Listening 10",
+      "topic": "Wild Life",
+      "main_ls": "1.2.2",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "54": {
+      "focus": "Speaking 10",
+      "topic": "Wild Life",
+      "main_ls": "2.1.5",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "55": {
+      "focus": "Reading 10",
+      "topic": "Wild Life",
+      "main_ls": "3.2.3",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "56": {
+      "focus": "Writing 10",
+      "topic": "Wild Life",
+      "main_ls": "4.3.2",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "57": {
+      "focus": "Language Arts 10",
+      "topic": "And Something Weird Happened",
+      "main_ls": "5.3.1",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "58": {
+      "focus": "Consolidation 5",
+      "topic": "Wild Life",
+      "main_ls": "1.2.1",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "59": {
+      "focus": "Listening 11",
+      "topic": "Wild Life",
+      "main_ls": "1.2.5",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "60": {
+      "focus": "Speaking 11",
+      "topic": "Wild Life",
+      "main_ls": "2.1.2",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "61": {
+      "focus": "Reading 11",
+      "topic": "Wild Life",
+      "main_ls": "3.2.2",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "62": {
+      "focus": "Writing 11",
+      "topic": "Wild Life",
+      "main_ls": "4.3.3",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "63": {
+      "focus": "Language Arts 11",
+      "topic": "And Something Weird Happened",
+      "main_ls": "5.3.1",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "64": {
+      "focus": "Consolidation 6",
+      "topic": "Wild Life",
+      "main_ls": "2.2.1",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "65": {
+      "focus": "Listening 12",
+      "topic": "Wild Life",
+      "main_ls": "1.1.1",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "66": {
+      "focus": "Speaking 12",
+      "topic": "Wild Life",
+      "main_ls": "2.2.1",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "67": {
+      "focus": "Reading 12",
+      "topic": "Wild Life",
+      "main_ls": "3.3.1",
+      "complementary_ls": "1.2.1",
+      "teacher_choice": false
+    },
+    "68": {
+      "focus": "Writing 12",
+      "topic": "Wild Life",
+      "main_ls": "4.3.2",
+      "complementary_ls": "1.1.1",
+      "teacher_choice": false
+    },
+    "69": {
+      "focus": "Language Arts 12",
+      "topic": "And Something Weird Happened",
+      "main_ls": "5.2.1",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "70": {
+      "focus": "Language Awareness 4",
+      "topic": "Wild Life",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "71": {
+      "focus": "Listening 13",
+      "topic": "Learning World",
+      "main_ls": "1.3.1",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "72": {
+      "focus": "Speaking 13",
+      "topic": "Learning World",
+      "main_ls": "2.1.1",
+      "complementary_ls": "4.2.1",
+      "teacher_choice": false
+    },
+    "73": {
+      "focus": "Reading 13",
+      "topic": "Learning World",
+      "main_ls": "3.2.2",
+      "complementary_ls": "2.1.2",
+      "teacher_choice": false
+    },
+    "74": {
+      "focus": "Writing 13",
+      "topic": "Learning World",
+      "main_ls": "4.3.2",
+      "complementary_ls": "1.3.1",
+      "teacher_choice": false
+    },
+    "75": {
+      "focus": "Language Arts 13",
+      "topic": "And Something Weird Happened",
+      "main_ls": "5.3.1",
+      "complementary_ls": "4.3.3",
+      "teacher_choice": false
+    },
+    "76": {
+      "focus": "Consolidation 7",
+      "topic": "Learning World",
+      "main_ls": "4.2.4",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "77": {
+      "focus": "Listening 14",
+      "topic": "Learning World",
+      "main_ls": "1.2.5",
+      "complementary_ls": "1.2.2",
+      "teacher_choice": false
+    },
+    "78": {
+      "focus": "Speaking 14",
+      "topic": "Learning World",
+      "main_ls": "2.1.2",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "79": {
+      "focus": "Reading 14",
+      "topic": "Learning World",
+      "main_ls": "3.2.3",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "80": {
+      "focus": "Writing 14",
+      "topic": "Learning World",
+      "main_ls": "4.2.4",
+      "complementary_ls": "2.2.2",
+      "teacher_choice": false
+    },
+    "81": {
+      "focus": "Language Arts 14",
+      "topic": "Miss Antrobus",
+      "main_ls": "5.2.1",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "82": {
+      "focus": "Consolidation 8",
+      "topic": "Learning World",
+      "main_ls": "4.3.2",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "83": {
+      "focus": "Listening 15",
+      "topic": "Learning World",
+      "main_ls": "1.1.1",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "84": {
+      "focus": "Speaking 15",
+      "topic": "Learning World",
+      "main_ls": "2.1.5",
+      "complementary_ls": "1.2.4",
+      "teacher_choice": false
+    },
+    "85": {
+      "focus": "Reading 15",
+      "topic": "Learning World",
+      "main_ls": "3.2.1",
+      "complementary_ls": "2.1.1",
+      "teacher_choice": false
+    },
+    "86": {
+      "focus": "Writing 15",
+      "topic": "Learning World",
+      "main_ls": "4.3.3",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "87": {
+      "focus": "Language Arts 15",
+      "topic": "Miss Antrobus",
+      "main_ls": "5.3.1",
+      "complementary_ls": "4.3.3",
+      "teacher_choice": false
+    },
+    "88": {
+      "focus": "Project 1",
+      "topic": "Teacher to select",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "89": {
+      "focus": "Listening 16",
+      "topic": "Food and health",
+      "main_ls": "1.2.1",
+      "complementary_ls": "1.1.1",
+      "teacher_choice": false
+    },
+    "90": {
+      "focus": "Speaking 16",
+      "topic": "Food and health",
+      "main_ls": "2.2.1",
+      "complementary_ls": "4.3.1",
+      "teacher_choice": false
+    },
+    "91": {
+      "focus": "Reading 16",
+      "topic": "Food and health",
+      "main_ls": "3.2.3",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "92": {
+      "focus": "Writing 16",
+      "topic": "Food and health",
+      "main_ls": "4.3.1",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "93": {
+      "focus": "Language Arts 16",
+      "topic": "The Meal",
+      "main_ls": "5.2.1",
+      "complementary_ls": "2.1.4",
+      "teacher_choice": false
+    },
+    "94": {
+      "focus": "Consolidation 9",
+      "topic": "Food and health",
+      "main_ls": "4.2.3",
+      "complementary_ls": "2.2.2",
+      "teacher_choice": false
+    },
+    "95": {
+      "focus": "Listening 17",
+      "topic": "Food and health",
+      "main_ls": "1.2.3",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "96": {
+      "focus": "Speaking 17",
+      "topic": "Food and health",
+      "main_ls": "2.2.1",
+      "complementary_ls": "2.2.2",
+      "teacher_choice": false
+    },
+    "97": {
+      "focus": "Reading 17",
+      "topic": "Food and health",
+      "main_ls": "3.3.1",
+      "complementary_ls": "2.1.3",
+      "teacher_choice": false
+    },
+    "98": {
+      "focus": "Writing 17",
+      "topic": "Food and health",
+      "main_ls": "4.2.1",
+      "complementary_ls": "2.1.3",
+      "teacher_choice": false
+    },
+    "99": {
+      "focus": "Language Arts 17",
+      "topic": "The Meal",
+      "main_ls": "5.3.1",
+      "complementary_ls": "1.2.2",
+      "teacher_choice": false
+    },
+    "100": {
+      "focus": "Consolidation 10",
+      "topic": "Food and health",
+      "main_ls": "4.2.2",
+      "complementary_ls": "2.1.3",
+      "teacher_choice": false
+    },
+    "101": {
+      "focus": "Listening 18",
+      "topic": "Food and health",
+      "main_ls": "1.1.1",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "102": {
+      "focus": "Speaking 18",
+      "topic": "Food and health",
+      "main_ls": "2.1.1",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "103": {
+      "focus": "Reading 18",
+      "topic": "Food and health",
+      "main_ls": "3.3.1",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "104": {
+      "focus": "Writing 18",
+      "topic": "Food and health",
+      "main_ls": "4.3.3",
+      "complementary_ls": "4.2.5",
+      "teacher_choice": false
+    },
+    "105": {
+      "focus": "Language Arts 18",
+      "topic": "Seaside",
+      "main_ls": "5.2.1",
+      "complementary_ls": "2.1.1",
+      "teacher_choice": false
+    },
+    "106": {
+      "focus": "Language Awareness 5",
+      "topic": "Food and health",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "107": {
+      "focus": "Listening 19",
+      "topic": "Sport",
+      "main_ls": "1.3.1",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "108": {
+      "focus": "Speaking 19",
+      "topic": "Sport",
+      "main_ls": "2.3.1",
+      "complementary_ls": "1.2.1",
+      "teacher_choice": false
+    },
+    "109": {
+      "focus": "Reading 19",
+      "topic": "Sport",
+      "main_ls": "3.2.2",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "110": {
+      "focus": "Writing 19",
+      "topic": "Sport",
+      "main_ls": "4.2.3",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "111": {
+      "focus": "Language Arts 19",
+      "topic": "Seaside",
+      "main_ls": "5.3.1",
+      "complementary_ls": "2.2.2",
+      "teacher_choice": false
+    },
+    "112": {
+      "focus": "Consolidation 11",
+      "topic": "Sport",
+      "main_ls": "4.2.3",
+      "complementary_ls": "2.1.2",
+      "teacher_choice": false
+    },
+    "113": {
+      "focus": "Listening 20",
+      "topic": "Sport",
+      "main_ls": "1.2.3",
+      "complementary_ls": "3.2.4",
+      "teacher_choice": false
+    },
+    "114": {
+      "focus": "Speaking 20",
+      "topic": "Sport",
+      "main_ls": "2.1.2",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "115": {
+      "focus": "Reading 20",
+      "topic": "Sport",
+      "main_ls": "3.2.3",
+      "complementary_ls": "1.1.1",
+      "teacher_choice": false
+    },
+    "116": {
+      "focus": "Writing 20",
+      "topic": "Sport",
+      "main_ls": "4.3.2",
+      "complementary_ls": "2.1.1",
+      "teacher_choice": false
+    },
+    "117": {
+      "focus": "Language Arts 20",
+      "topic": "The Dark",
+      "main_ls": "5.2.1",
+      "complementary_ls": "4.2.5",
+      "teacher_choice": false
+    },
+    "118": {
+      "focus": "Consolidation 12",
+      "topic": "Sport",
+      "main_ls": "1.2.4",
+      "complementary_ls": "2.2.1",
+      "teacher_choice": false
+    },
+    "119": {
+      "focus": "Listening 21",
+      "topic": "Sport",
+      "main_ls": "1.3.1",
+      "complementary_ls": "3.2.1",
+      "teacher_choice": false
+    },
+    "120": {
+      "focus": "Speaking 21",
+      "topic": "Sport",
+      "main_ls": "2.3.1",
+      "complementary_ls": "4.3.1",
+      "teacher_choice": false
+    },
+    "121": {
+      "focus": "Reading 21",
+      "topic": "Sport",
+      "main_ls": "3.2.2",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "122": {
+      "focus": "Writing 21",
+      "topic": "Sport",
+      "main_ls": "4.3.3",
+      "complementary_ls": "4.2.5",
+      "teacher_choice": false
+    },
+    "123": {
+      "focus": "Language Arts 21",
+      "topic": "The Dark",
+      "main_ls": "5.3.1",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "124": {
+      "focus": "Language Awareness",
+      "topic": "Sport",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "125": {
+      "focus": "Listening 22",
+      "topic": "Growing up",
+      "main_ls": "1.1.1",
+      "complementary_ls": "2.1.1",
+      "teacher_choice": false
+    },
+    "126": {
+      "focus": "Speaking 22",
+      "topic": "Growing up",
+      "main_ls": "2.1.5",
+      "complementary_ls": "1.2.4",
+      "teacher_choice": false
+    },
+    "127": {
+      "focus": "Reading 22",
+      "topic": "Growing up",
+      "main_ls": "3.2.4",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "128": {
+      "focus": "Writing 22",
+      "topic": "Growing up",
+      "main_ls": "4.2.1",
+      "complementary_ls": "3.2.1",
+      "teacher_choice": false
+    },
+    "129": {
+      "focus": "Language Arts 22",
+      "topic": "Gulliver’s Travels",
+      "main_ls": "5.2.1",
+      "complementary_ls": "3.3.1",
+      "teacher_choice": false
+    },
+    "130": {
+      "focus": "Consolidation 13",
+      "topic": "Growing up",
+      "main_ls": "1.2.2",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "131": {
+      "focus": "Listening 23",
+      "topic": "Growing up",
+      "main_ls": "1.2.3",
+      "complementary_ls": "3.2.3",
+      "teacher_choice": false
+    },
+    "132": {
+      "focus": "Speaking 23",
+      "topic": "Growing up",
+      "main_ls": "2.1.1",
+      "complementary_ls": "4.2.1",
+      "teacher_choice": false
+    },
+    "133": {
+      "focus": "Reading 23",
+      "topic": "Growing up",
+      "main_ls": "3.2.3",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "134": {
+      "focus": "Writing 23",
+      "topic": "Growing up",
+      "main_ls": "4.2.1",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "135": {
+      "focus": "Language Arts 23",
+      "topic": "Gulliver’s Travels",
+      "main_ls": "5.3.1",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "136": {
+      "focus": "Consolidation 14",
+      "topic": "Growing up",
+      "main_ls": "3.2.4",
+      "complementary_ls": "4.3.2",
+      "teacher_choice": false
+    },
+    "137": {
+      "focus": "Listening 24",
+      "topic": "Growing up",
+      "main_ls": "1.2.4",
+      "complementary_ls": "2.1.2",
+      "teacher_choice": false
+    },
+    "138": {
+      "focus": "Speaking 24",
+      "topic": "Growing up",
+      "main_ls": "2.1.3",
+      "complementary_ls": "4.2.2",
+      "teacher_choice": false
+    },
+    "139": {
+      "focus": "Reading 24",
+      "topic": "Growing up",
+      "main_ls": "3.3.1",
+      "complementary_ls": "4.3.1",
+      "teacher_choice": false
+    },
+    "140": {
+      "focus": "Writing 24",
+      "topic": "Growing up",
+      "main_ls": "4.2.5",
+      "complementary_ls": "1.1.1",
+      "teacher_choice": false
+    },
+    "141": {
+      "focus": "Language Arts 24",
+      "topic": "Gulliver’s Travels",
+      "main_ls": "5.3.1",
+      "complementary_ls": "4.2.4",
+      "teacher_choice": false
+    },
+    "142": {
+      "focus": "Language Awareness 7",
+      "topic": "Growing up",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    },
+    "143": {
+      "focus": "Listening 25",
+      "topic": "Going away",
+      "main_ls": "1.3.1",
+      "complementary_ls": "1.2.2",
+      "teacher_choice": false
+    },
+    "144": {
+      "focus": "Speaking 25",
+      "topic": "Going away",
+      "main_ls": "2.1.4",
+      "complementary_ls": "4.2.3",
+      "teacher_choice": false
+    },
+    "145": {
+      "focus": "Reading 25",
+      "topic": "Going away",
+      "main_ls": "3.2.2",
+      "complementary_ls": "1.2.3",
+      "teacher_choice": false
+    },
+    "146": {
+      "focus": "Writing 25",
+      "topic": "Going away",
+      "main_ls": "4.3.2",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "147": {
+      "focus": "Language Arts 25",
+      "topic": "Gulliver’s Travels",
+      "main_ls": "5.2.1",
+      "complementary_ls": "2.1.5",
+      "teacher_choice": false
+    },
+    "148": {
+      "focus": "Consolidation 15",
+      "topic": "Going away",
+      "main_ls": "4.3.1",
+      "complementary_ls": "4.2.3",
+      "teacher_choice": false
+    },
+    "149": {
+      "focus": "Listening 26",
+      "topic": "Going away",
+      "main_ls": "1.3.1",
+      "complementary_ls": "1.2.3",
+      "teacher_choice": false
+    },
+    "150": {
+      "focus": "Speaking 26",
+      "topic": "Going away",
+      "main_ls": "2.2.2",
+      "complementary_ls": "1.2.5",
+      "teacher_choice": false
+    },
+    "151": {
+      "focus": "Reading 26",
+      "topic": "Going away",
+      "main_ls": "3.2.3",
+      "complementary_ls": "4.2.5",
+      "teacher_choice": false
+    },
+    "152": {
+      "focus": "Writing 26",
+      "topic": "Going away",
+      "main_ls": "4.3.3",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "153": {
+      "focus": "Language Arts 26",
+      "topic": "Gulliver’s Travels",
+      "main_ls": "5.3.1",
+      "complementary_ls": "4.3.1",
+      "teacher_choice": false
+    },
+    "154": {
+      "focus": "Consolidation 16",
+      "topic": "Going away",
+      "main_ls": "1.2.2",
+      "complementary_ls": "2.1.4",
+      "teacher_choice": false
+    },
+    "155": {
+      "focus": "Listening 27",
+      "topic": "Going away",
+      "main_ls": "1.2.3",
+      "complementary_ls": "1.2.2",
+      "teacher_choice": false
+    },
+    "156": {
+      "focus": "Speaking 27",
+      "topic": "Going away",
+      "main_ls": "2.2.2",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "157": {
+      "focus": "Reading 27",
+      "topic": "Going away",
+      "main_ls": "3.3.1",
+      "complementary_ls": "3.2.2",
+      "teacher_choice": false
+    },
+    "158": {
+      "focus": "Writing 27",
+      "topic": "Going away",
+      "main_ls": "4.2.3",
+      "complementary_ls": "2.1.2",
+      "teacher_choice": false
+    },
+    "159": {
+      "focus": "Language Arts 26",
+      "topic": "Gulliver’s Travels",
+      "main_ls": "5.3.1",
+      "complementary_ls": "2.3.1",
+      "teacher_choice": false
+    },
+    "160": {
+      "focus": "Project 2",
+      "topic": "Teacher to select",
+      "main_ls": null,
+      "complementary_ls": null,
+      "teacher_choice": true
+    }
+  }
+}

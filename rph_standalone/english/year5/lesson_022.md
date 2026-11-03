@@ -1,0 +1,20 @@
+# English Year 5 Lesson 22 — Consolidation 1
+
+**Official SOW:** Lesson 22, printed p.58. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
+**Main and complementary CS/LS:** Speaking 2.2/2.2.1; Writing 4.2/4.2.4.
+**Materials:** SB p.15 Activities 2–4; TB p.29.
+**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Towns and cities activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
+
+1. **Set induction (8 min):** Review there is/are with TB p.29 warm-up.
+2. **Activity 1 (12 min):** Pupils complete Activity 2 and explain correct forms from grammar rules.
+3. **Activity 2 (15 min):** Pupils practise questions and answers about where they live in Activity 3.
+4. **Activity 3 (17 min):** Pairs complete Activity 4 and compare answers; if time repeat for a chosen city.
+5. **Assessment and closure (8 min):** Groups propose two improvements for their town or village and write them down; assess short exchanges.
+
+**PBD:** Teacher observes a short exchange with a follow-up question about places and checks two accurate written town-improvement sentences; pupils refine one response.
+**Differentiation:** Rotate partners for support and confidence.
+**Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
+**Audio / lesson type:** No SOW audio.
+**QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
+
+**Workbook (existing source QA map):** p.13,18, Unit 1 there is/are, some/any + Progress Review place questions, Ex1-5 / Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.

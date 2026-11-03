@@ -1,0 +1,22 @@
+# Year 5 Lesson 155 — Listening 27
+
+**Official SOW topic:** Going away.
+
+Status: DRAF. Unit 8. Main LS 1.2.3; complementary LS 1.2.2.
+Materials: Student Book p.99 Activities 1–3; Teacher Book p.113; CD3-19. Workbook mapping and audio playback remain unverified.
+
+Objective: Pupils interpret weather symbols and British map locations, then identify three specific weather or temperature details from the CD3-19 forecast with support.
+
+Set induction (5 min): Explain what a weather forecast is.
+
+Main activities (40 min): Interpret forecast symbols, use a compass to locate British cities, then listen to CD3-19 for weather details and temperatures. Replay to verify answers. Teacher models instructions and provides feedback.
+
+PBD (10 min): Teacher checks that each pupil identifies three forecast facts (city, condition or temperature) from CD3-19 and corrects one response after replay.
+
+Closure (5 min): Pupils share a learning point and submit an exit response.
+
+Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
+
+Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
+
+**Workbook (existing source QA map):** p.70,74, Unit 8 Weather conditions / forecast, Ex1-5 / Review Ex4. Optional brief follow-up; do not replace the SOW tasks.
