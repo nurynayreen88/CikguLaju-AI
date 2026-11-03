@@ -15,7 +15,7 @@
 5. **PBD and closure (8 min):** Teacher plays Who am I? as a famous Malaysian person; pupils ask Are you...? questions; teacher assesses self-description and questions.
 
 ## Assessment and differentiation
-**PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Provide 'Are you in ...?' and 'Are you at ...?' question starters.
+**PBD:** Teacher checks the clarity of pupils' oral answers about locations and personal positions and one corresponding written statement; note accurate questions and prepositions. **Differentiation:** Provide 'Are you in ...?' and 'Are you at ...?' question starters.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
 

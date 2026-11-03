@@ -13,7 +13,7 @@
 4. **Activity 3 (17 min):** Mixed-ability groups create a quiz with SB p.11 Activity 4; select and display best questions, discussing positive facts about Malaysia.
 5. **PBD and closure (8 min):** Review vocabulary orally; teacher checks self-description and spelling of know, think, sure, right, write.
 
-**PBD:** Observe and record evidence from the main-skill activity and complementary-skill output. Record Independent / With support / Needs reteaching.
+**PBD:** Teacher observes a partner exchange using suitable facts about photos and checks one correctly formed question from the group quiz.
 **Differentiation:** Use mixed-ability small groups so every pupil can contribute.
 **Reflection:** Objective met __/__; follow-up __.
 **Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.

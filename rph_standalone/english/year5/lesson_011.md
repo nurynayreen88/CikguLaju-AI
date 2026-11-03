@@ -13,7 +13,7 @@
 4. **Activity 3 (17 min):** Use Where/What/Who flashcards, complete SB p.11 Activities 1–3, listen twice to CD 1-12 and finish five key-phrase sentences.
 5. **PBD and closure (8 min):** Circle question game: each pupil asks a Where, What or Who question; teacher checks supported question comprehension.
 
-**PBD:** Observe and record evidence from the main-skill activity and complementary-skill output. Record Independent / With support / Needs reteaching.
+**PBD:** Teacher checks pupils' answers to the sequence of Where/What/Who questions and one inferred word meaning from the countries-and-nationalities task.
 **Differentiation:** Invite proficient pupils to form longer nationality sentences.
 **Reflection:** Objective met __/__; follow-up __.
 **Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.

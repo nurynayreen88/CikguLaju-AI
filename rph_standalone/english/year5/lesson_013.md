@@ -13,7 +13,7 @@
 4. **Activity 3 (17 min):** Pupils do SB p.11 Activities 6–7, check commas and punctuation and compare conjunction choices with partners.
 5. **PBD and closure (8 min):** Groups draw conjunction cards and say true personal statements using the selected connector; teacher assesses reading and punctuation.
 
-**PBD:** Observe and record evidence from the main-skill activity and complementary-skill output. Record Independent / With support / Needs reteaching.
+**PBD:** Teacher checks comprehension of Beth's email and the appropriate use of and/but/or when pupils complete the linked reading tasks.
 **Differentiation:** Read email aloud alongside pupils who require decoding support.
 **Reflection:** Objective met __/__; follow-up __.
 **Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.

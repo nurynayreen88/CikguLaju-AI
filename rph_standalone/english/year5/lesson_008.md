@@ -15,7 +15,7 @@
 5. **PBD and closure (8 min):** Groups ask what objects they have in pockets, on desks or under beds, giving descriptive answers; teacher records specific-detail comprehension.
 
 ## Assessment and differentiation
-**PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Allow two written sentences rather than three for pupils needing reduced writing load.
+**PBD:** Teacher checks pupils' factual answers about the children's descriptions, contextual meaning of the blue adjectives, and one accurate written description. **Differentiation:** Allow two written sentences rather than three for pupils needing reduced writing load.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
 

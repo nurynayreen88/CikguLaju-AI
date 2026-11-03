@@ -15,7 +15,7 @@
 5. **PBD and closure (8 min):** Groups identify owners of classroom objects and return them; teacher records phoneme discrimination and reading comprehension.
 
 ## Assessment and differentiation
-**PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Replay CD 1-08 with pauses for pupils requiring listening support.
+**PBD:** Teacher listens for pupils distinguishing and reproducing the /s/ and /z/ possessive endings in named examples and checks their reading response to the related text; record the support needed. **Differentiation:** Replay CD 1-08 with pauses for pupils requiring listening support.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
 

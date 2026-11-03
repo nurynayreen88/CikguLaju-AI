@@ -15,7 +15,7 @@
 5. **PBD and closure (8 min):** Groups prepare three or four questions about teacher's belongings and ask without repeating peers' questions; teacher assesses written descriptions.
 
 ## Assessment and differentiation
-**PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Reduce eight target sentences to four–six where necessary.
+**PBD:** Teacher collects two descriptive sentences using very/really/quite and have got and listens to pupils exchange them; check adjective use and understandable spoken descriptions. **Differentiation:** Reduce eight target sentences to four–six where necessary.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
 

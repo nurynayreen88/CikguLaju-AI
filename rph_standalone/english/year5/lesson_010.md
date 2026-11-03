@@ -15,7 +15,7 @@
 5. **PBD and closure (8 min):** Pupils write brief notes about one memorable peer story (Post-lesson Task 10); teacher assesses imaginative response and oral narration.
 
 ## Assessment and differentiation
-**PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Allow pupils to contribute through drawing, colouring or narration according to strengths.
+**PBD:** Teacher observes the group mask-and-story performance: a clear imaginative response to This Tooth, ordered events using first/next/finally, and participation in short narration. **Differentiation:** Allow pupils to contribute through drawing, colouring or narration according to strengths.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
 

@@ -13,7 +13,7 @@
 4. **Activity 3 (17 min):** Partners exchange emails and assess completeness, Key Phrases and interest with smiley marks.
 5. **PBD and closure (8 min):** Teacher reads a modified version of the previous email containing five or six mistakes; pupils detect and correct errors.
 
-**PBD:** Observe and record evidence from the main-skill activity and complementary-skill output. Record Independent / With support / Needs reteaching.
+**PBD:** Teacher checks the fact file and personal email for clear details, conjunctions, greeting, question and ending; record a correction made after peer feedback.
 **Differentiation:** Allow slower writers to focus on one interest; advanced pupils write about several.
 **Reflection:** Objective met __/__; follow-up __.
 **Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.

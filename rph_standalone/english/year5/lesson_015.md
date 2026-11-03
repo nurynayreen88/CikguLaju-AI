@@ -13,7 +13,7 @@
 4. **Activity 3 (17 min):** Pairs discuss what they would do in response to cat actions; Hot Seat pairs respond to questions about scratching backdoor/gate/beehive or napping.
 5. **PBD and closure (8 min):** After viewing poem pictures, pupils close books and nod/shake heads to judge teacher's statements; teacher observes responses and reasons.
 
-**PBD:** Observe and record evidence from the main-skill activity and complementary-skill output. Record Independent / With support / Needs reteaching.
+**PBD:** Teacher checks pupils' matching of Cats stanzas to illustrations and listens to one relevant response during the Hot Seat questions.
 **Differentiation:** Accept short phrases and incomplete sentences from pupils still developing reasons.
 **Reflection:** Objective met __/__; follow-up __.
 **Workbook:** Not prescribed for this Language Arts lesson.
