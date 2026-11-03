@@ -6,6 +6,7 @@ Fail closed if assets, entitlements or Telegram confirmation are unavailable.
 """
 import os
 from pathlib import Path
+from rpt_2027.matematik.private_bundle import private_pdf_root
 
 YEARS = frozenset(range(2, 7))
 FILE_TEMPLATE = "RPT_Matematik_Tahun_%d_2027_v28_SEMENTARA.pdf"
@@ -15,7 +16,10 @@ def pdf_path(year):
     if type(year) is not int or year not in YEARS:
         raise ValueError("Unsupported RPT Matematik year")
     folder = os.environ.get("CIKGULAJU_RPT_MATH_PDF_DIR")
-    root = Path(folder) if folder else Path(__file__).resolve().parent
+    if folder:
+        return Path(folder) / (FILE_TEMPLATE % year)
+    private_root = private_pdf_root()
+    root = private_root if private_root is not None else Path(__file__).resolve().parent
     return root / (FILE_TEMPLATE % year)
 
 
