@@ -18,3 +18,5 @@
 **PBD:** Teacher records independent/with-support/needs-reteaching performance against the main and complementary standards, using the outputs described in the lesson stages. **Differentiation:** Allow pupils to contribute through drawing, colouring or narration according to strengths.
 **Reflection:** Pupils meeting objective __ / __; intervention __.
 **QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
