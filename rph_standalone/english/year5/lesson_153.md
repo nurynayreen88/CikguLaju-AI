@@ -1,5 +1,7 @@
 # Year 5 Lesson 153 — Language Arts 26
 
+**Official SOW topic:** Gulliver's Travels.
+
 Status: DRAF. Unit 8. Main LS 5.3.1; complementary LS 4.3.1.
 Materials: Gulliver's Travels graphic novel; BPK CCL guide pp.67–69. Workbook mapping and audio playback remain unverified.
 
