@@ -22,7 +22,16 @@ jobs:
           from collections import Counter
           report = json.load(open('english_y4_audit_findings.json'))
           print('Lessons:', report['total_lessons'])
-          print('Findings:', dict(Counter(x['issue'] for x in report['findings'])))
+          counts = dict(Counter(x['issue'] for x in report['findings']))
+          print('Findings:', counts)
+          with open(__import__('os').environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## English Year 4 — 160 Lesson audit\n\n')
+              summary.write('| Finding | Count | Lesson numbers |\n|---|---:|---|\n')
+              for issue, count in sorted(counts.items()):
+                  lessons = ', '.join(str(x['lesson']) for x in report['findings'] if x['issue'] == issue)
+                  summary.write(f'| {issue} | {count} | {lessons} |\n')
+              if not counts:
+                  summary.write('No structural findings; external SOW/book/audio verification still required.\n')
           PY
       - uses: actions/upload-artifact@v4
         with:
