@@ -12,4 +12,6 @@ Sources: Non-textbook: And Something Weird Happened by Pamela Rushby, Chapters 2
 
 PBD: Record evidence from the described activities against the stated skills.
 Differentiation: Let pairs choose acting or reading.
-Workbook exercise not verified. Audio playback not verified. QA status: Draft pending physical source and Word/PDF checks.
+Workbook is not prescribed. Audio playback not verified. QA status: Draft pending physical source and Word/PDF checks.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
