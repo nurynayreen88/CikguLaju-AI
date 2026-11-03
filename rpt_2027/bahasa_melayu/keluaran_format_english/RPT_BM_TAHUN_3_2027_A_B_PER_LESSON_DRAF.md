@@ -122,7 +122,7 @@ Cuti penggal: A 05–13 Mac, 21 Mei–05 Jun, 27 Ogos–04 Sep; B 06–14 Mac, 2
 | **Lesson 044** (BM3-P044) | Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif | Gejala Taun + PKJR | 1.1 Mendengar dan memberikan respons. | 1.1.3 (i) — Mendengar, mentafsir, dan memberikan respons terhadap | BT1 m/s 38 | Mendengar / Bertutur; Pemerhatian respons lisan |
 | **Lesson 045** (BM3-P045) | Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif | Cergas dan Cerdas | 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks. | 5.1.4 (ii) — Memahami dan menggunakan kata tugas mengikut konteks | BT1 m/s 31; BA m/s 36-37 | Tatabahasa; Penggunaan tatabahasa dalam ayat bertema |
 | **Lesson 046** (BM3-P046) | Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif | Penilaian | 1.1 Mendengar dan memberikan respons. | 1.1.2 (i), (ii) — Mendengar, memahami, dan memberikan respons terhadap | BT1 m/s 39 | Mendengar / Bertutur; Pemerhatian respons lisan • Semak tajuk penuh |
-| **Lesson 047** (BM3-P047) | Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif | Bacaan Luaas - Hari Sukan Negara | 2.1 Asas membaca dan memahami. | 2.1.2 (iii) — Membaca dengan sebutan yang betul, intonasi yang sesuai, dan memahami | BT1 m/s 40 | Membaca; Bacaan dan soalan pemahaman |
+| **Lesson 047** (BM3-P047) | Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif | Bacaan Luas - Hari Sukan Negara | 2.1 Asas membaca dan memahami. | 2.1.2 (iii) — Membaca dengan sebutan yang betul, intonasi yang sesuai, dan memahami | BT1 m/s 40 | Membaca; Bacaan dan soalan pemahaman |
 
 ### M13 • A: 04/04–08/04 | B: 05/04–09/04
 
