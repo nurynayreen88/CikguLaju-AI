@@ -76,3 +76,14 @@ try:
 except Exception as _rpt_2027_exc:
     ENGLISH_RPT_2027_TELEGRAM_ACTIVE = False
     print("English RPT 2027 Telegram bridge unavailable:", repr(_rpt_2027_exc), flush=True)
+
+
+# Temporary Matematik v28 RPT PDFs are served only from a private, local
+# server directory after the same paid entitlement checks. Never fetch an
+# unshared Drive URL directly or expose a public file link.
+try:
+    from rpt_2027.matematik.telegram_downloads import install as install_math_rpt_2027
+    MATEMATIK_RPT_2027_TELEGRAM_ACTIVE = install_math_rpt_2027(vars(telegram_runtime))
+except Exception as _math_rpt_2027_exc:
+    MATEMATIK_RPT_2027_TELEGRAM_ACTIVE = False
+    print("Matematik RPT 2027 Telegram bridge unavailable:", repr(_math_rpt_2027_exc), flush=True)

@@ -1,0 +1,41 @@
+name: Matematik RPT 2027 v28 Telegram isolated checks
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'rpt_2027/matematik/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_math_rpt_2027_telegram_downloads.py'
+      - '.github/workflows/rpt-matematik-v28-telegram-checks.yml'
+  push:
+    branches:
+      - feat/rpt-matematik-v28-telegram-staging-20261103
+    paths:
+      - 'rpt_2027/matematik/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_math_rpt_2027_telegram_downloads.py'
+      - '.github/workflows/rpt-matematik-v28-telegram-checks.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-math-rpt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify paid-only Telegram Matematik RPT routes
+        run: python -m unittest discover -s tests -p 'test_math_rpt_2027_telegram_downloads.py' -v
+      - name: Compile changed RPT callback modules
+        run: |
+          python -m py_compile rpt_2027/english/telegram_downloads.py
+          python -m py_compile rpt_2027/matematik/telegram_downloads.py
+          python -m py_compile tools/run_telegram_with_curriculum_api.py
