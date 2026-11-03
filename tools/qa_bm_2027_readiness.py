@@ -79,22 +79,22 @@ def audit(mode="structure"):
                     errors.append(f"T{year}-P{n:03}: RPH has no RPT record")
                     continue
                 for label, field in (("Tajuk",2), ("SK",3), ("SP",4)):
-                    match = re.search(rf"(?m)^\\*\\*{label}:\\*\\*\\s*(.+)$", content)
-                    got = re.sub(r"\\s+", " ", match.group(1)).strip() if match else ""
-                    want = re.sub(r"\\s+", " ", expected[field]).strip()
+                    match = re.search(rf"(?m)^\*\*{label}:\*\*\s*(.+)$", content)
+                    got = re.sub(r"\s+", " ", match.group(1)).strip() if match else ""
+                    want = re.sub(r"\s+", " ", expected[field]).strip()
                     if got != want:
                         errors.append(f"T{year}-P{n:03}: RPH {label} differs from RPT")
                 missing = [word for word in required if word not in content]
                 if missing:
                     errors.append(f"T{year}-P{n:03}: incomplete RPH: {', '.join(missing)}")
-                status = re.search(r"(?m)^\\*\\*Status(?: QA| audit)?:\\*\\*\\s*(.+)$", content)
+                status = re.search(r"(?m)^\*\*Status(?: QA| audit)?:\*\*\s*(.+)$", content)
                 if not status:
                     errors.append(f"T{year}-P{n:03}: missing QA status")
-                elif re.search(r"\\bHOLD\\b", status.group(1), re.I):
+                elif re.search(r"\bHOLD\b", status.group(1), re.I):
                     summary[year]["rph_hold"] += 1
-                elif re.search(r"\\bDRAF\\b", status.group(1), re.I):
+                elif re.search(r"\bDRAF\b", status.group(1), re.I):
                     summary[year]["rph_draft"] += 1
-                elif re.search(r"\\bREADY\\b", status.group(1), re.I):
+                elif re.search(r"\bREADY\b", status.group(1), re.I):
                     summary[year]["rph_ready"] += 1
                 else:
                     errors.append(f"T{year}-P{n:03}: unknown QA status")
