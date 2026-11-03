@@ -7,7 +7,7 @@
 **Language focus:** Simple-present action verbs to describe body parts
 **Duration:** 60 minutes
 **Materials:** Anthology of Poems Years 4–6, Toes by Judith Nicholls p.30; BPK Poetry Guidebook; body-part role cards.
-**Learning objective:** In groups, pupils adapt at least four lines of Toes to a chosen body part with suitable verbs and orally explain two actions before reciting their original work.
+**Learning objective:** By the end of the lesson, in groups, pupils adapt at least four lines of Toes to a chosen body part with suitable verbs and orally explain two actions before reciting their original work.
 **PBD evidence:** A four-line original body-part verse, two suitable action-verb details and an individual spoken explanation; peer feedback using Two Stars and a Wish.
 
 ## Set induction (5 minutes)

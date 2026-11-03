@@ -7,7 +7,7 @@
 **Language focus:** Past simple and oral story sequencing
 **Duration:** 60 minutes
 **Materials:** Akbar's Dream by Jane Langford, cover only; Akbar's Dream Teacher's Guidebook pp.35–36; authorised picture-sequence cards. Do not invent story events as confirmed plot.
-**Learning objective:** In groups, pupils use the guidebook picture sequence to imagine at least three connected story events and narrate a coherent predicted story orally.
+**Learning objective:** By the end of the lesson, in groups, pupils use the guidebook picture sequence to imagine at least three connected story events and narrate a coherent predicted story orally.
 **PBD evidence:** Original predicted story using at least three picture-linked events and clear oral sequencing; individual contribution and peer feedback.
 
 ## Set induction (5 minutes)

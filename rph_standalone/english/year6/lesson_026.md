@@ -7,7 +7,7 @@
 **Language focus:** Body-action verbs and accurate capitals, full stops and commas
 **Duration:** 60 minutes
 **Materials:** Anthology of Poems Years 4–6, Toes by Judith Nicholls, p.30; BPK Poetry Guidebook; foot-outline cards, pencils and scissors under supervision.
-**Learning objective:** Pupils create an imaginative written thank-you note to their feet using at least three actions inspired by Toes, with appropriate capitals and full stops.
+**Learning objective:** By the end of the lesson, pupils create an imaginative written thank-you note to their feet using at least three actions inspired by Toes, with appropriate capitals and full stops.
 **PBD evidence:** Individual foot-outline card with original thank-you note, at least three appropriate action verbs, accurate sentence capitalization and punctuation.
 
 ## Set induction (5 minutes)

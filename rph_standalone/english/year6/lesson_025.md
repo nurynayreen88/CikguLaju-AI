@@ -7,7 +7,7 @@
 **Language focus:** Future forms: will/won't for predictions; going to and present continuous for plans
 **Duration:** 60 minutes
 **Materials:** Teacher-selected futuristic-classroom pictures; poster paper, pencils, pens, dictionaries; optional supervised online research. Non-textbook SOW activity, not Poetry Anthology.
-**Learning objective:** In groups, pupils agree at least four clear steps and group roles to design a classroom-of-the-future poster, then explain two future plans or predictions to the class.
+**Learning objective:** By the end of the lesson, in groups, pupils agree at least four clear steps and group roles to design a classroom-of-the-future poster, then explain two future plans or predictions to the class.
 **PBD evidence:** Four agreed group steps and assigned roles; clearly labelled future-classroom poster; each pupil contributes one intelligible future-plan sentence and answers or asks a question.
 
 ## Set induction (5 minutes)
