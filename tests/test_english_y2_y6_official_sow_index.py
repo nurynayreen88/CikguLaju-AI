@@ -30,7 +30,12 @@ class EnglishY2Y6OfficialSOWAudit(unittest.TestCase):
     def test_year4_lesson30_uses_tb_verified_cd1_track29(self):
         lesson=(ROOT/"rph_standalone/english/year4/lesson_030.md").read_text(encoding="utf-8")
         self.assertIn("CD1 Track 29", lesson)
-        self.assertNotIn("CD2 Track 29", lesson)
+        active = "\\n".join(line for line in lesson.splitlines()
+                           if line.startswith("**References:**") or
+                              line.startswith("**Teacher:** Follow TB Activity 2"))
+        self.assertNotIn("CD2 Track 29", active)
+        # Keep the contradictory printed SOW code in the source-provenance note.
+        self.assertIn("CD2 Track 29", lesson)
         self.assertIn("Teacher's Book", lesson)
         self.assertIn("NOT READY FOR RELEASE", lesson)
 
