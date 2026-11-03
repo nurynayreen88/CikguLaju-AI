@@ -21,3 +21,5 @@
 **Differentiation:** Provide a word glossary; extend by explaining differences between schools using so.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.40,43, Unit 4 Reading school types + review writing vocabulary, Ex1-5 / Ex8. Optional brief follow-up; do not replace the SOW tasks.

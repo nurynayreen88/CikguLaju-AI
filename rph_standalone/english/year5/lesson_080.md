@@ -19,3 +19,5 @@
 **Closure (5 min):** Pupils state one difference between the two tenses and one successful way their group worked together.
 
 **Differentiation:** Provide a tense timeline and model sentences; extend independent pupils with contrasting examples. **QA:** Final source images and A4 pagination remain pending before READY.
+
+**Workbook (existing source QA map):** p.39,41, Unit 4 present continuous/simple + Writing email, Ex3-4 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.

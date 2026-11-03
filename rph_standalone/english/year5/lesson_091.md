@@ -21,3 +21,5 @@
 **Differentiation:** Use photo and word clues; extend with evidence about nutrition.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.46,48, Unit 5 Health adjectives Ex1-5 + Reading A cooking competition Ex1-5. Optional brief follow-up; do not replace the SOW tasks.

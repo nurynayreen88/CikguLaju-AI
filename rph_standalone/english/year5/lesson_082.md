@@ -21,3 +21,5 @@
 **Differentiation:** Offer verb form charts and timelines; challenge with paired statements using both tenses.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.42-43, Unit 4 Progress Review — complete unit review, Ex1-8. Optional brief follow-up; do not replace the SOW tasks.

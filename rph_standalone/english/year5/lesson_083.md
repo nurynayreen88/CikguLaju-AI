@@ -21,3 +21,5 @@
 **Differentiation:** Repeat letter sounds and display alphabet chart; extend with unfamiliar names.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.38,42, Unit 4 Vocabulary and Listening — language study/listening practice, Ex1-5 / Review Ex4. Optional brief follow-up; do not replace the SOW tasks.

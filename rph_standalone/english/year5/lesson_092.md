@@ -21,3 +21,5 @@
 **Differentiation:** Offer a reason organizer and punctuation checklist; extend to contrasting viewpoints.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.45, Unit 5 Language Focus — countable/uncountable + some/any/much/many/a lot of, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.

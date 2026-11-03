@@ -21,3 +21,5 @@
 **Differentiation:** Give dialogue cards; extend to city and country names with accurate spelling.
 
 **Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
+
+**Workbook (existing source QA map):** p.43, Unit 4 Progress Review — Speaking: Asking for help when studying, Ex7. Optional brief follow-up; do not replace the SOW tasks.
