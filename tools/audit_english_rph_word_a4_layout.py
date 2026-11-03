@@ -15,6 +15,8 @@ from docx.shared import Cm,Pt
 from pypdf import PdfReader
 
 ROOT=Path(__file__).resolve().parents[1]
+# Direct invocation (python tools/...) must also resolve root-level project modules.
+sys.path.insert(0,str(ROOT))
 OUT=ROOT/"output"/"english_a4_layout_audit"
 SAMPLES={2:[1,40,82,127,152,160],3:[1,20,61,80,93,126,160],
          4:[1,30,74,93,160],5:[1,28,141,159],6:[1,15,21,25,26,31,37,160]}
@@ -71,9 +73,18 @@ def write_word(y,n,rows,path):
     info=doc.add_table(rows=0,cols=2)
     for key,val in [
         ("Subject","English"),("Year",str(y)),("Date","03/11/2026"),
-        ("Time","8:00–9:00"),("Class",f"{y} Amanah"),("Number of pupils","30"),
-        ("Learning objective","Assess lesson-specific skills"),
-        ("Materials","Student/Pupil Book; relevant teaching resources"),
+        ("Day","Tuesday"),("Time","08:00–09:00"),("Class",f"{y} Amanah"),
+        ("Number of pupils","30"),("Topic",f"Lesson {n}: Unit topic"),
+        ("Main content standard","SOW Main: applicable content standard"),
+        ("Main learning standard","SOW Main: curriculum Learning Standard"),
+        ("Complementary content standard","SOW Complementary: curriculum content standard"),
+        ("Complementary learning standard","SOW Complementary: Learning Standard"),
+        ("Learning objective","By the end of this lesson, pupils achieve two specified, measurable lesson outcomes relevant to the unit."),
+        ("Success criteria","Pupils provide individual evidence for two linked success criteria during lesson assessment."),
+        ("Prior knowledge","Vocabulary from recent lessons"),
+        ("Materials","Student/Pupil Book, Teacher's Book, Workbook and relevant picture cards or equipment; source-specific items vary by Lesson."),
+        ("CCE / values","Communication, creativity and responsible citizenship"),
+        ("HOTS / PAK21","Group discussion and paired reasoning"),
         ("Assessment / PBD",rows["PENTAKSIRAN"]),
     ]:
         cells=info.add_row().cells
