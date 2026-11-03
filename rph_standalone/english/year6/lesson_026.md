@@ -1,42 +1,42 @@
 # English Year 6 — Lesson 026: Toes (Language Arts 5)
 
-**Year:** 6  
-**RPT:** 2027, Lesson 26, M07 (week indicative only)  
-**Main CS/LS:** 5.3/5.3.1  
-**Complementary CS/LS:** 4.3/4.3.1  
-**Language focus:** Verbs (e.g. wiggle, kick, tickle, lick, count, run, walk)  
-**Duration:** 60 minutes  
-**Materials:** SOW materials — reference to verify; original pupil response card  
-**Learning objective:** Create an original short creative response to “Toes” and connect it to two details from the literary text.  
-**PBD evidence:** An original imaginative response and two clear text-linked explanations.
+**Year:** 6
+**RPT:** 2027, Lesson 26, M07 (week indicative only)
+**Main CS/LS:** 5.3/5.3.1
+**Complementary CS/LS:** 4.3/4.3.1
+**Language focus:** Body-action verbs and accurate capitals, full stops and commas
+**Duration:** 60 minutes
+**Materials:** Anthology of Poems Years 4–6, Toes by Judith Nicholls, p.30; BPK Poetry Guidebook; foot-outline cards, pencils and scissors under supervision.
+**Learning objective:** By the end of the lesson, pupils create an imaginative written thank-you note to their feet using at least three actions inspired by Toes, with appropriate capitals and full stops.
+**PBD evidence:** Individual foot-outline card with original thank-you note, at least three appropriate action verbs, accurate sentence capitalization and punctuation.
 
 ## Set induction (5 minutes)
-**Teacher:** Display the text title and invite a prediction.  
-**Pupils:** Predict a story/poem idea from the title.
+**Teacher:** Ask pupils to observe and describe their toes using appropriate adjectives; discuss what toes help them do.
+**Pupils:** Give one adjective and one useful action.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce the title “Toes” and ask for predictions using the supplied poem/story text.  
-**Pupils:** Observe illustrations or title clues and predict one idea or emotion.
+**Teacher:** Read Toes from the Anthology and model several action verbs from the poem.
+**Pupils:** Recite the poem and act out verbs, distinguishing meanings.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Read the authorised literary text aloud, model tone and expression, and select two details for discussion.  
-**Pupils:** Read/recite selected lines from their own book; note two images, actions or feelings from the text.
+**Teacher:** Guide pupils to trace their foot shape onto a card and create an original note of thanks to their feet.
+**Pupils:** Trace and cut the outline safely, then write the note using three body-action verbs.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Invite pairs to prepare an original four-line poem, short role-play or brief story based on the text’s theme. Check the complementary skill using the short task.  
-**Pupils:** Create and share a four-line poem or short role-play, explaining two links to the original text. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Organise a reading gallery of pupils' foot cards; model how to check commas and sentence ends.
+**Pupils:** Display cards, read peers' notes and revise one punctuation error.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess observable lesson products and individual contributions against the stated measurable learning objective; give one actionable correction.
+**Pupils:** Submit evidence and revise one specific error after feedback.
 
 ## Closure (4 minutes)
-**Teacher:** Ask for one connection between the literary text and the creative response.  
-**Pupils:** Share one line, image or idea and say why it matters.
+**Teacher:** Invite pupils to share how they care for their feet, and collect cards for assessment.
+**Pupils:** State one care habit and one accurate descriptive sentence.
 
 ## Differentiation and follow-up
-Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
+Support: picture cards, word banks, structured roles and extra time. Extension: independently justify an imaginative choice with precise evidence.
 
-**Source:** Fixed CikguLaju English Year 6 RPT 2027 — SOW-derived reference; do not assume an unlisted Workbook activity or audio track.
+**Source:** Official KPM Primary Year 6 SK Scheme of Work, Lesson 26. Lesson-specific activity design and materials follow its original procedure. Source book/page and Word/PDF output remain subject to final direct verification.
 
 **Teacher reflection:** ____ / ____ pupils met the objective; follow-up: ____________________

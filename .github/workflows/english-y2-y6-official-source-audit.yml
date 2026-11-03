@@ -1,0 +1,19 @@
+name: English Years 2-6 official SOW source audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'audits/english_primary_2_6_official_sow_index_20261103.json'
+      - 'tests/test_english_y2_y6_official_sow_index.py'
+      - 'rph_standalone/english/year[2-6]/**'
+      - '.github/workflows/english-y2-y6-official-source-audit.yml'
+permissions: {contents: read}
+jobs:
+  read-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m unittest discover -s tests -p 'test_english_y2_y6_official_sow_index.py' -v

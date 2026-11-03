@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from web.english_y6_standalone_runtime import adapt_rows, install, load_lesson
+from web.english_y6_standalone_runtime import LESSON_ROOT, adapt_rows, install, load_lesson
 
 
 def dummy_source(num, main="3.2/3.2.1", complementary="4.2/4.2.4"):
@@ -83,6 +83,36 @@ class Y6RPHReleaseTests(unittest.TestCase):
             self.assertEqual(len(entry["activities"]), 3)
             self.assertTrue(entry["objective"].startswith("By the end"))
             self.assertTrue(all("teacher" in activity and "pupils" in activity for activity in entry["activities"]))
+
+    def test_sandwich_literary_activities_follow_official_sow(self):
+        from web.english_y6_standalone_runtime import _overlay
+        for n in (15, 21):
+            lesson = load_lesson(n)
+            self.assertIsNotNone(lesson)
+            self.assertIn("The Sandwich", lesson[0]["materials"])
+            self.assertNotIn("Messing About", lesson[0]["materials"])
+            overlay = _overlay(n, LESSON_ROOT)
+            self.assertIsNotNone(overlay)
+            self.assertIn("SOW", overlay["induction"]["teacher"])
+            self.assertEqual(len(overlay["activities"]), 3)
+        o15 = _overlay(15, LESSON_ROOT)
+        o21 = _overlay(21, LESSON_ROOT)
+        self.assertIn("10", o15["activities"][1]["teacher"])
+        self.assertIn("Flow Map", o21["activities"][0]["teacher"])
+        self.assertIn("punctuation", o21["pbd_evidence"])
+
+    def test_sow_specific_language_arts_and_future_classroom(self):
+        from web.english_y6_standalone_runtime import _overlay
+        expected = {25: "classroom", 26: "feet", 31: "body part", 37: "picture"}
+        for n, term in expected.items():
+            with self.subTest(lesson=n):
+                lesson = load_lesson(n)
+                self.assertIsNotNone(lesson)
+                self.assertIn(term, lesson[0]["learning objective"].casefold())
+                layer = _overlay(n, LESSON_ROOT)
+                self.assertEqual(layer["main_ls"], lesson[0]["main cs/ls"].split("/")[-1])
+                self.assertEqual(len(layer["activities"]), 3)
+                self.assertIn(term, layer["objective"].casefold())
 
     def test_missing_overlay_fails_closed_to_existing_rows(self):
         with TemporaryDirectory() as tmp:

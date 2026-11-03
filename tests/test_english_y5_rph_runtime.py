@@ -38,7 +38,7 @@ class EnglishY5IntegrationTests(unittest.TestCase):
                    {"subject": "English", "year": "5", "lesson_no": True},
                    {"subject": "English", "year": "5", "lesson_no": 1, "sp_code": "2.3.1"}):
             self.assertIs(adapt_rows(st, rows), rows)
-        for lesson in CHOICE_LESSONS | {141}:
+        for lesson in CHOICE_LESSONS:
             st = {"subject": "English", "year": "5", "lesson_no": lesson}
             self.assertIs(adapt_rows(st, rows), rows)
 
@@ -72,7 +72,7 @@ class EnglishY5IntegrationTests(unittest.TestCase):
         accepted = []
         for number in range(1, 161):
             sow = self.gate["lessons"][str(number)]
-            if sow["teacher_choice"] or number == 141:
+            if sow["teacher_choice"]:
                 continue
             state = {"subject": "English", "year": "Tahun 5",
                      "lesson_no": number, "sp_code": sow["main_ls"]}
@@ -86,7 +86,7 @@ class EnglishY5IntegrationTests(unittest.TestCase):
                               "STANDARD PEMBELAJARAN", "BAHAN BANTU MENGAJAR"):
                     self.assertTrue(updated[field], (number, field))
                 accepted.append(number)
-        self.assertEqual(len(accepted), 150)
+        self.assertEqual(len(accepted), 151)
 
     def test_install_is_opt_in_and_preserves_existing_generator(self):
         prior = lambda st, *a, **kw: {"OBJEKTIF PEMBELAJARAN": "original", "TARIKH": "01/01"}
@@ -102,10 +102,10 @@ class EnglishY5IntegrationTests(unittest.TestCase):
 
     def test_fixed_source_parse_coverage_report(self):
         fixed = [int(n) for n, row in self.gate["lessons"].items()
-                 if not row["teacher_choice"] and int(n) != 141]
+                 if not row["teacher_choice"]]
         parsed = [n for n in fixed if load_lesson(n) is not None]
         missing = sorted(set(fixed) - set(parsed))
-        print("YEAR5_FIXED_PARSED", len(parsed), "/150; FORMAT_PENDING", missing)
+        print("YEAR5_FIXED_PARSED", len(parsed), "/151; FORMAT_PENDING", missing)
         from web.english_y5_standalone_runtime import _field, _sections, _plain
         for n in missing:
             content = (LESSON_ROOT / ("lesson_%03d.md" % n)).read_text(encoding="utf-8")
@@ -121,11 +121,11 @@ class EnglishY5IntegrationTests(unittest.TestCase):
                 "closure": bool(blocks.get("closure") or blocks.get("combined")),
             })
         # 150 fixed-code lessons remain after the unresolved Lesson 141 source conflict.
-        self.assertEqual(len(parsed), 150)
+        self.assertEqual(len(parsed), 151)
         matched = [n for n in parsed
                    if set((self.gate["lessons"][str(n)]["main_ls"],
                            self.gate["lessons"][str(n)]["complementary_ls"])) <= load_lesson(n)["source_codes"]]
-        print("Y5_SOW_CODE_MATCHED", len(matched), "/150; MISMATCH", sorted(set(parsed) - set(matched)))
+        print("Y5_SOW_CODE_MATCHED", len(matched), "/151; MISMATCH", sorted(set(parsed) - set(matched)))
         self.assertGreaterEqual(len(matched), 120)
 
     def test_no_overlay_on_missing_or_modified_gate(self):

@@ -30,7 +30,7 @@
 | 027 | CD1 Track 26 and CD1 Track 37 both appear | Confirm which activities require each; do not delete either before source review |
 | 028 | No track reference observed | Check SOW |
 | 029 | Tracks 35–36 | Confirm disc and both MP3 files |
-| 030 | CD2 Track 29 | **Priority:** verify disc/track against SOW/TB; do not silently change |
+| 030 | CD2 Track 29 | **Confirmed from original KPM Year 4 SOW Lesson 30, Step 4**; verify actual MP3 file content and Telegram delivery before READY |
 
 ## Lessons 139–156 — audio continuity checkpoint
 
