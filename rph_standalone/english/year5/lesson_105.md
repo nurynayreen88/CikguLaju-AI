@@ -19,3 +19,5 @@
 **Closure (5 min):** Groups discuss and list useful items for jungle camping, as directed by the SOW.
 
 **Differentiation:** Offer sentence starters and picture cues; extend by requiring two reasons. **QA:** Non-textbook Language Arts; Student Book, Workbook and audio not prescribed in this lesson.
+
+**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
