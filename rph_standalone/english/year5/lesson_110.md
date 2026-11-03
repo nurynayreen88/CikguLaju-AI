@@ -2,7 +2,7 @@
 
 **Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Sport. **Main LS:** 4.2.3. **Complementary LS:** 3.3.1. **Duration:** 60 minutes (suggested).
 
-**Language focus:** Simple past tense of verb ‘to be’ affirmative and negative: there was / wasn’t, there were / weren’t. **Materials:** English Plus 1 Student’s Book Activity 4 p.64 Teacher’s Book p.78.
+**Language focus:** Simple past tense of verb ‘to be’ affirmative and negative: there was / wasn’t, there were / weren’t. **Materials:** English Plus 1 Student’s Book p.64 Activity 4 and p.65 Activities 1–2; Teacher’s Book pp.78–79.
 
 **Learning objectives:** Main (Writing 4.2.3) — pupils narrate factual events and experiences of interest in the Sport activities. Complementary (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the linked reading task.
 
@@ -12,14 +12,12 @@
 
 **Activity 2 (15 min):** Write on board sentence starters e.g. ‘I really like watching…’, ‘I prefer watching…’, ‘I sometimes/usually like watching…’. Pupils write two or three sentences about sports they like watching. They exchange with a partner and compare sentences. Ask pairs: Are any sports the same? Choose pupils to read their sentences aloud. Find out the sport most pupils like watching.
 
-**Activity 3 (15 min):** Pupils look at Rules p.65, Activity 1. Write on board: ‘was’, ‘wasn’t’, ‘were’, ‘weren’t’. Pupils look at years on the Olympics Timeline again and write down past verbs in them. (1896-were, 1900-weren’t, were, 1912-was, 1916-weren’t, 1920- wasn’t, 1924-were, 1936-was, 1960-was 1988-wasn’t, 2012-was, 2016-were) 5. Explain pupils are going to read a story about a race called the Marathon. They do Activity 2. Follow instructions in Teacher’s Book p.79 Exercise 2. Note how well pupils wrote factual information about sports of interest.
+**Activity 3 (15 min):** Pupils look at Rules p.65, Activity 1. Write on board: ‘was’, ‘wasn’t’, ‘were’, ‘weren’t’. Pupils look at years on the Olympics Timeline again and write down past verbs in them. (1896-were, 1900-weren’t, were, 1912-was, 1916-weren’t, 1920- wasn’t, 1924-were, 1936-was, 1960-was 1988-wasn’t, 2012-was, 2016-were) Teacher introduces the short reading about the Marathon. They do Activity 2. Follow instructions in Teacher’s Book p.79 Exercise 2. Note how well pupils wrote factual information about sports of interest.
 
-**PBD (5 min):** Teacher checks the written response for task accuracy, spelling and a correction after feedback.
+**PBD (5 min):** Teacher checks two or three pupil-written factual sentences about sport for meaning, appropriate past forms and punctuation; pupils revise one sentence using feedback.
 
-**Closure (5 min):** : Creativity and Innovation 6. Write on board ‘Imagine!’ ‘In (date)… I was in a …team. There was… There were…’ Pupils in pairs use sentence starters to make up an imaginary sport story.
+**Closure (5 min):** For a brief creative extension, write on board ‘Imagine!’ ‘In (date)… I was in a …team. There was… There were…’ Pupils in pairs use sentence starters to make up an imaginary sport story.
 
 **Workbook practice (mapped):** p.53, Unit 6 Language Focus — there was/there were; was/were, Ex1-4. Use briefly; do not replace SOW tasks.
 
 **Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
-
-**Workbook (existing source QA map):** p.53, Unit 6 Language Focus — there was/there were; was/were, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
