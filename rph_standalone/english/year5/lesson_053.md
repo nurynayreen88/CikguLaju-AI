@@ -1,11 +1,23 @@
-# Year 5 Lesson 53 — Listening 10
+# English Year 5 — Lesson 53 (Listening 10)
 
-SOW p.91. Topic Wild Life. Listening 1.2.2; Speaking 2.2.1. Student Book pp.32–33 Activities 1–4; Teacher Book pp.46–47. Audio CD 1-28, 1-29, 1-30.
+**Status:** DRAF — pending full source audit. **Topic:** Wild Life. **Main LS:** Listening 1.2.2. **Complementary LS:** Speaking 2.2.1. **Time:** 60 minutes (suggested).
 
-1. Introduce wild animals using the Think task.
-2. Listen to CD 1-28 and identify animals.
-3. Practise looks like and sounds like; pairs identify animals by sounds or drawings.
-4. Listen to CD 1-29 and CD 1-30 to complete Activities 3–4.
-5. Classify animals as fish, bird, mammal, reptile or insect.
+**Materials:** English Plus 1 SB pp.32–33 Activities 1–4; TB pp.46–47; CD1.28–1.30; animal photos. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
 
-PBD: Listening detail and partner questions. Replay dialogue as needed. Workbook unverified. Draft pending source and layout QA.
+**Objective:** Pupils carry out the skill-specific tasks and demonstrate the stated learning standards.
+
+**Set induction (5 min):** Teacher introduces wild animals and the Think! task; pupils name animals from around the world.
+
+**Activity 1 (15 min):** Pupils listen to CD1.28 for Activity 1 and practise identifying an animal using looks like and sounds like in Activity 2. Partners draw or imitate animals and respond.
+
+**Activity 2 (15 min):** Pupils listen to CD1.29 for Activity 3, compare answers, then study photos of ostrich, bat, eagle, scorpion, rat and octopus.
+
+**Activity 3 (15 min):** Four teams complete Activity 4 with CD1.30, identify animals from spoken details and explain their clues. Teacher checks unfamiliar vocabulary.
+
+**PBD (5 min):** Teacher records pupils who identify specific information after one or more listens and can explain a clue orally.
+
+**Closure (5 min):** Groups classify animals as fish, birds, mammals, reptiles or insects.
+
+**Differentiation:** Use image supports and replay; challenge confident pupils to explain classification.
+
+**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
