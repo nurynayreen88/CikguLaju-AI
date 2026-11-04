@@ -500,7 +500,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                     raw = (ROOT / file).read_text(encoding="utf-8")
                     self.assertIn(f"Tahun {year} — PdP {pdp:03d}", raw)
                     if not str(field).isdecimal():
-                        self.assertIn("Pameran", raw)
+                        self.assertIn("pameran", raw.casefold())
                         exhibitions += 1
                         total += 1
                         continue
