@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 74: Writing 15
 
 **Unit:** Get dressed!  
-**Main SK/SP (prior mapping; official SOW verification pending):** 4.3 / 4.3.2  
-**Complementary SK/SP (prior mapping; official SOW verification pending):** 4.3 / 4.3.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.3  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
 **Learning objectives:** Pupils spell four familiar clothing words accurately and plan, draft and write two simple clothing sentences.  

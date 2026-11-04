@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 72: Speaking 15
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; official SOW verification pending):** 2.1 / 2.1.3  
-**Complementary SK/SP (existing mapping; official SOW verification pending):** 2.2 / 2.2.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
 **Learning objectives:** Pupils give a sequence of three basic clothing instructions and use two appropriate non-verbal responses during partner exchanges.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 77: Speaking 16
 
 **Unit:** Get dressed!  
-**Main SK/SP (prior mapping; official SOW verification pending):** 2.1 / 2.1.2  
-**Complementary SK/SP (prior mapping; official SOW verification pending):** 4.2 / 4.2.4  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.4  
 **Duration:** 60 minutes  
 **Source classification:** SB p.89; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
 **Learning objectives:** Pupils ask two basic personal-information questions about clothing and write two short object descriptions.  

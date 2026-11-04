@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 67: Speaking 14
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source:** Student's Book p.85 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
 **Learning objectives:** Pupils ask two basic questions to find out personal information and write two guided sentences with correct capitals and full stops.  

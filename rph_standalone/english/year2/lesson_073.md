@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 73: Reading 15
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; official SOW verification pending):** 3.1 / 3.1.2  
-**Complementary SK/SP (existing mapping; official SOW verification pending):** 3.1 / 3.1.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.3  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
 **Learning objectives:** Pupils identify beginning, medial and final sounds in three short words and blend sounds to read three words.  

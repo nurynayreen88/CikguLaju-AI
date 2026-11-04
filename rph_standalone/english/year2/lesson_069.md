@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 69: Writing 14
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
 **Learning objectives:** Pupils write three guided clothing sentences with capital letters and full stops, and connect words or phrases using 'and' in two sentences.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 78: Listening 16
 
 **Unit:** Get dressed!  
-**Main SK/SP (prior mapping; official SOW verification pending):** 1.3 / 1.3.1  
-**Complementary SK/SP (prior mapping; official SOW verification pending):** 2.1 / 2.1.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.3 / 1.3.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source classification:** SB p.90; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
 **Learning objectives:** Pupils interpret two spoken messages using visual clues and describe two clothing materials using suitable words.  

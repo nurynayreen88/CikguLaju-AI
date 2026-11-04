@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 70: Language Arts 14
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 5.2 / 5.2.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 5.2 / 5.2.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.3 / 1.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK. All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
 **Learning objectives:** Pupils name three people, things or actions from a short story and interpret two spoken messages with visual clues.  
