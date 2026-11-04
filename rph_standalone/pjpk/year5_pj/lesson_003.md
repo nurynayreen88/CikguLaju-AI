@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.1.3 (melakukan imbangan songsang dirian tangan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.1.2: Menjelaskan perkaitan luas tapak sokongan dengan kestabilan.
 
-**Set induksi:** Guru menunjukkan cabaran "TEGAK TERBALIK" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menayangkan urutan ansur maju dirian tangan dan cara menyokong dengan selamat.
 
-**Aktiviti 1 — Gimnastik progresif:** Guru memperaga sokongan tapak tangan/kaki, perubahan pusat graviti dan cara turun dengan selamat; murid menandakan tiga titik kawalan pada kad teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.1.3.
+**Aktiviti 1 — Kemahiran gimnastik:** Guru melatih kedudukan tangan seluas bahu serta kawalan teras pada aras lantai sebelum mempamerkan proses dirian tangan berbantu.
 
-**Aktiviti 2 — Aplikasi:** Murid mempraktikkan posisi asas pada tilam bersama penyeliaan guru, kemudian cuba variasi berperingkat jika stabil; pasangan hanya memerhati dan memberi maklum balas. 
+**Aktiviti 2 — Kemahiran gimnastik:** Jika guru kompeten, tilam dan penyokong mencukupi, murid mencuba ansur maju dirian tangan berbantu; jika tidak, gunakan analisis visual dan tangguh penilaian amali.
 
-**Pengukuhan/PBD:** Guru menilai kestabilan, kedudukan tapak sokongan, kawalan pendaratan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.1.2 dan menerima maklum balas. Guru memerhati sikap SP 5.2.1. 
+**Pengukuhan/PBD:** PBD posisi tangan, keseimbangan semasa songsang, bantuan yang betul dan cara turun selamat.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** tilam gimnastik, penanda kawasan, kad teknik; peralatan khas hanya jika sekolah memilikinya.  
-**Keselamatan/inklusif:** Elakkan beban pada kepala/leher dan aksi songsang tanpa sokongan profesional; aktiviti trampolin/piramid perlu guru, alatan dan pengawasan sesuai.
+**BBM:** Tilam, kad langkah dirian tangan, peralatan sokongan yang diperiksa.
+**Keselamatan/inklusif:** Larang dirian tangan bebas tanpa guru/penyokong, elakkan tekanan leher dan paksa tubi ketika tidak stabil.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 5](https://drive.google.com/file/d/1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.2.2 (melakukan hambur arab dengan sokongan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.2.1: Menjelaskan aplikasi daya semasa melakukan Lombol Kangkang dan Hambur Arab.
 
-**Set induksi:** Guru menunjukkan cabaran "BERLATIH HAMBUR" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru membandingkan hambur arab dengan putaran roda melalui urutan pergerakan tangan dan kaki.
 
-**Aktiviti 1 — Gimnastik progresif:** Guru memperaga sokongan tapak tangan/kaki, perubahan pusat graviti dan cara turun dengan selamat; murid menandakan tiga titik kawalan pada kad teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.2.2.
+**Aktiviti 1 — Kemahiran gimnastik:** Murid menandakan turutan tapak tangan serta pendaratan pada kad lakuan, kemudian mencuba pergerakan sampingan rendah tanpa hambur penuh.
 
-**Aktiviti 2 — Aplikasi:** Murid mempraktikkan posisi asas pada tilam bersama penyeliaan guru, kemudian cuba variasi berperingkat jika stabil; pasangan hanya memerhati dan memberi maklum balas. 
+**Aktiviti 2 — Kemahiran gimnastik:** Hanya apabila guru mahir, tilam dan penyokong tersedia: murid cuba ansur maju hambur arab berbantu mengikut keupayaan; jika tidak, lakukan latihan asas sahaja.
 
-**Pengukuhan/PBD:** Guru menilai kestabilan, kedudukan tapak sokongan, kawalan pendaratan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.2.1 dan menerima maklum balas. Guru memerhati sikap SP 5.1.3. 
+**Pengukuhan/PBD:** PBD urutan sokongan tangan, koordinasi, kawalan badan serta pendaratan tanpa kecederaan.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** tilam gimnastik, penanda kawasan, kad teknik; peralatan khas hanya jika sekolah memilikinya.  
-**Keselamatan/inklusif:** Elakkan beban pada kepala/leher dan aksi songsang tanpa sokongan profesional; aktiviti trampolin/piramid perlu guru, alatan dan pengawasan sesuai.
+**BBM:** Tilam gimnastik, kad turutan hambur arab dan penanda tangan.
+**Keselamatan/inklusif:** Aktiviti berisiko tinggi; tidak dilakukan tanpa guru berkemahiran dan kemudahan gimnastik sesuai.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 5](https://drive.google.com/file/d/1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.
