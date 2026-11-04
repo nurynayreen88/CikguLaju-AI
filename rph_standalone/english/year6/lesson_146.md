@@ -7,32 +7,32 @@
 **Language focus:** Past simple & past continuous in storytelling (She was on a school trip / She was doing research)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 122-124; Teacher Book page 192  
-**Learning objective:** Narrate a factual or imagined event linked to a classroom mystery in at least 6 ordered sentences.  
-**PBD evidence:** Narrative with 6 ordered sentences, correct event vocabulary and at least 2 sequence connectors.
+**Learning objective:** Write a coherent next chapter of the museum mystery with Sue Snaps, using past-tense narration and clues from PB pp.122–124.  
+**PBD evidence:** A clear original narrative continuation (Writing 4.2.3), connected to three supported details from the mystery (Reading 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use TB p.192 Spelling bee and review suspect names.  
+**Pupils:** Identify a character from their described occupation.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “What clues explain the mystery?”. Highlight useful language: Past simple & past continuous in storytelling (She was on a school trip / She was doing research).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a classroom mystery.
+**Teacher:** Follow TB p.192 Activity 1 to reread and find where each suspect was at five o'clock.  
+**Pupils:** Match key characters with correct times and places.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model the difference between opening, linked events and ending; focus on the narrative forms in this RPT Lesson.  
-**Pupils:** Draft a six-sentence account with a beginning, chronological events and a suitable ending.
+**Teacher:** Follow TB p.192 Activities 2–3 to discuss the suspects' actions and possible outcome.  
+**Pupils:** Write one past-continuous sentence and compare theories in pairs.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Guide pairs to draft a short prose continuation, not a play script.  
+**Pupils:** Write what happens next to Sue Snaps in connected past-tense events.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check the story's sequence, source clues and accurate narrative verbs.  
+**Pupils:** Revise an unsupported claim or weak event transition.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What clues explain the mystery?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite volunteers to read their original continuation.  
+**Pupils:** Explain one clue that influenced the ending.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

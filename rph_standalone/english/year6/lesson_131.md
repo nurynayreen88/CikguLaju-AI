@@ -7,32 +7,32 @@
 **Language focus:** Indefinite pronouns and adverbs (e.g. someone/anyone/no one)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 112; Teacher Book pages 176-177; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a familiar school-life issue with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to PB p.112's Alice and Tomoko lost-tablet conversation, sequence the dialogue and answer four detail questions with accurate tense forms.  
+**PBD evidence:** Four correct listened details and an ordered dialogue (Listening 1.2.2), with recognised expressions of what was found.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use WB p.92 vocabulary to review lost-and-found words.  
+**Pupils:** Define or spell one item from the unit.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach opinions, reasons, examples; display two contrasting opinion cards and ask pupils to predict what they may hear. Emphasise the language focus: Indefinite pronouns and adverbs (e.g. someone/anyone/no one).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.176 Vocabulary and display PB p.112 picture with books closed.  
+**Pupils:** Predict why Alice and Tomoko are talking.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use verified Audio 2.14 or an accurate printed-script reading to establish the gist.  
+**Pupils:** Listen without text; explain who lost the tablet and who found it.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a familiar school-life issue, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Distribute cut-up dialogue strips and guide a supported replay, then TB pp.176–177 Activities 2–3.  
+**Pupils:** Order the lines, notice reference pronouns and practise the target grammar in pairs.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check the spoken sequence and four supported conversation facts.  
+**Pupils:** Correct one misplaced line and report one accurate detail.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pairs to report what their partner lost and whether it was found.  
+**Pupils:** Use the conversation form to give one clear report.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

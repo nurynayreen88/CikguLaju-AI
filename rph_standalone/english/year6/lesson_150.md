@@ -7,32 +7,32 @@
 **Language focus:** Functional language: Giving opinion (I think he was a police officer) Questions with should (e.g. What should you do if…?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 129, 131; Teacher Book pages 200, 204; Workbook page 107  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a classroom mystery.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read PB pp.129 and 131 detective/persistence puzzles for details and interpret the WB p.107 persistence self-questionnaire responsibly.  
+**PBD evidence:** Four correct source-based puzzle or reading answers (Reading 3.2.2), plus one text-supported reflection on persistence.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall a favourite mystery from the unit and brainstorm what makes a detective persistent.  
+**Pupils:** Name a challenge that requires patience.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce clues, suspects, places, sequence and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Functional language: Giving opinion (I think he was a police officer) Questions with should (e.g.….  
-**Pupils:** Predict the text from clue cards and picture sequence; highlight two useful clues or words.
+**Teacher:** Follow TB p.204 Activity 1: classify picture items using clues.  
+**Pupils:** Read the short text and sort the named objects into categories.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a classroom mystery; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Follow TB p.204 Activities 2–3: read information and infer puzzle answers.  
+**Pupils:** Give reasons for four choices based on the printed material.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a classroom mystery. Give a short oral explanation to a partner and respond to one question. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Follow TB p.204 Activity 4 and WB p.107 questionnaire.  
+**Pupils:** Compare interpretations and complete the persistence questions privately.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check textual evidence and help pupils reflect without treating the quiz as a diagnosis.  
+**Pupils:** Correct one reading error and name a perseverance strategy.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What clues explain the mystery?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.200 Learning to Learn.  
+**Pupils:** Share a positive goal that takes persistence.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

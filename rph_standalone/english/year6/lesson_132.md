@@ -7,32 +7,32 @@
 **Language focus:** Reported speech tense shift (e.g. ‘Sugar is bad for your teeth’ – She said sugar was bad for your teeth’)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 111; Teacher Book pages 174-175  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on a familiar school-life issue.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Report three partner statements and two answers accurately in indirect speech, using pronoun and verb changes from PB p.111.  
+**PBD evidence:** Three understandable oral reported statements (Speaking 2.1.1) and accurate comprehension of partner replies.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Run the WB p.94 paired A/B dictation task about sugary foods.  
+**Pupils:** Dictate a clear sentence and check a partner's spelling.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Do you agree or disagree? Why?”, drawing on Reported speech tense shift (e.g. ‘Sugar is bad for your teeth’ – She said sugar was bad for your….  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.174 Activity 1 to introduce reported speech.  
+**Pupils:** Distinguish 'I like fruit' from 'She said she liked fruit'.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow TB p.174 Activity 2; model changes to reporting verbs and pronouns.  
+**Pupils:** Correct three sentence transformations in pairs.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Use TB p.175 Activity 3, switching partners and sharing previous statements.  
+**Pupils:** Tell a new partner what the first partner said and confirm accuracy.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Organise the SOW A/B/C three-person question relay and observe reporting accuracy.  
+**Pupils:** Ask, answer and report two spoken replies to the original questioner.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.175 Cooler Telephone for a rapid summary.  
+**Pupils:** Report one partner sentence accurately without reading it.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

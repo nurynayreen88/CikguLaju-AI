@@ -7,32 +7,32 @@
 **Language focus:** Punctuation (direct speech/script: e.g. ‘I’m hungry’, she said / I’m hungry)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 128-129; Teacher Book pages 200, 203; Workbook page 110  
-**Learning objective:** Narrate a factual or imagined event linked to a classroom mystery in at least 6 ordered sentences.  
-**PBD evidence:** Narrative with 6 ordered sentences, correct event vocabulary and at least 2 sequence connectors.
+**Learning objective:** Rewrite the ending of PB pp.128–129 as a correctly punctuated script, then co-write a picture-based story from WB p.110.  
+**PBD evidence:** A coherent original script or paired narrative (Writing 4.2.3) and accurate dialogue punctuation relevant to the scene.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Pre-teach key mystery words through a guessing game.  
+**Pupils:** Explain one word from the story context.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “What clues explain the mystery?”. Highlight useful language: Punctuation (direct speech/script: e.g. ‘I’m hungry’, she said / I’m hungry).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a classroom mystery.
+**Teacher:** Follow TB p.200 Activities 1–2: skim and identify features of the printed story.  
+**Pupils:** Recognise the setting, main characters and text organisation.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model the difference between opening, linked events and ending; focus on the narrative forms in this RPT Lesson.  
-**Pupils:** Draft a six-sentence account with a beginning, chronological events and a suitable ending.
+**Teacher:** Follow TB p.200 Activity 3; model changing narrative speech into play-script format.  
+**Pupils:** Rewrite the ending as dialogue using character names and punctuation.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Use WB p.110 Activity 1 pictures and TB p.203: pairs discuss and write a story.  
+**Pupils:** Arrange pictured events and co-write a short connected narrative.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check event order, appropriate punctuation and a clear character voice.  
+**Pupils:** Correct a misplaced full stop or an unclear stage direction.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What clues explain the mystery?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pairs to read their original work to a small group.  
+**Pupils:** Explain one improvement made after feedback.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

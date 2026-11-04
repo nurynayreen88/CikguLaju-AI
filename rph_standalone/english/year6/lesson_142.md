@@ -7,32 +7,32 @@
 **Language focus:** Functional language: giving opinion (e.g. I don’t believe that…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 116; Teacher Book pages 182-183  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on a familiar school-life issue.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Explain and defend a position in a structured PB p.113-style class debate, using prepared notes and clarification phrases.  
+**PBD evidence:** Clear personally relevant arguments (Speaking 2.1.1) with observed respectful clarification (Speaking 2.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Invite groups to present the posters or acted scenes prepared in Lesson 141.  
+**Pupils:** Share a story moral through a poster or performance.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Do you agree or disagree? Why?”, drawing on Functional language: giving opinion (e.g. I don’t believe that…).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.182 Warm-up Thumbs up! to introduce the motion.  
+**Pupils:** Vote and explain one initial reaction.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow TB p.182 Activities 1–2: sort For and Against statements and prepare new notes.  
+**Pupils:** Identify two arguments for each side and write one personal position.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.182 Activity 3: debate in groups with active listeners taking notes.  
+**Pupils:** Present a reason, listen respectfully and respond to a counterargument.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Follow TB p.183 Activity 4; assess how ideas changed after hearing both sides.  
+**Pupils:** State a final position, using a clarifying question before disagreeing.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review notes collected during debate and correct one unclear argument.  
+**Pupils:** Identify one persuasive reason from another pupil.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

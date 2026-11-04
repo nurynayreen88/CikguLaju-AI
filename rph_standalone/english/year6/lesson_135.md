@@ -7,32 +7,32 @@
 **Language focus:** Topic sentences; functional language: giving opinion (e.g. I don’t believe that…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 115; Teacher Book page 180  
-**Learning objective:** Produce, check and improve a draft of two paragraphs on a familiar school-life issue, making at least two meaningful revisions.  
-**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
+**Learning objective:** Plan and co-write a reasoned school-uniform opinion essay, using a two-column advantages/disadvantages plan and clear examples.  
+**PBD evidence:** A planned, improved opinion essay (Writing 4.3.3) with an understandable position and supporting arguments.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show a photograph of a Malaysian school uniform and ask what it represents.  
+**Pupils:** Describe one uniform detail and compare it with another example.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “Do you agree or disagree? Why?”. Highlight useful language: Topic sentences; functional language: giving opinion (e.g. I don’t believe that…).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a familiar school-life issue.
+**Teacher:** Share photographs of schoolchildren in different places, avoiding assumptions about happiness.  
+**Pupils:** Discuss what can be seen and suggest pros and cons of school uniforms.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
-**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
+**Teacher:** Follow the SOW brainstorm; organise positive and negative points in two columns.  
+**Pupils:** Collect at least three pros and three cons as a group.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow TB p.180 Activities 5–6 to compare arguments and write a pair essay.  
+**Pupils:** Draft a balanced introduction, justified position and concluding sentence.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess clarity of supporting reasons and individual contributions.  
+**Pupils:** Revise a weak claim and show an argument supported by a specific example.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask which school setting pupils would prefer and why.  
+**Pupils:** Explain a preference while respecting classmates' views.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

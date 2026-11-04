@@ -7,32 +7,32 @@
 **Language focus:** Reference pronouns (e.g. they, it) and other linking devices (e.g. either, even)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 110; Teacher Book page 172  
-**Learning objective:** Write a detailed a reasoned opinion paragraph containing at least 5 relevant facts about a person or group linked to a familiar school-life issue.  
-**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
+**Learning objective:** Write two supported opinions about sugar and fatty foods using connected points, accurate reference pronouns and a clear reason.  
+**PBD evidence:** Two coherent opinion-plus-support statements (Writing 4.2.1), each referring accurately to evidence from the text.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review spelling from Sugar, Sugar and recall three facts.  
+**Pupils:** Spell two key words and explain one reading detail.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “Do you agree or disagree? Why?”. Highlight useful language: Reference pronouns (e.g. they, it) and other linking devices (e.g. either, even).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a familiar school-life issue.
+**Teacher:** Follow TB p.172 Activity 1 and identify which character made each statement.  
+**Pupils:** Reread PB pp.108–109 and match statements to their speakers.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
-**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
+**Teacher:** Follow TB p.172 Activity 2; model an opinion supported by a related pronoun or reference word.  
+**Pupils:** Match points with supporting reasons and connect one pair using they or it.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Ask pupils to discuss their views, then draft opinions about sugar and fatty foods.  
+**Pupils:** Write one point plus one supporting sentence for each topic, checking links.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess coherent reference words, relevant reasons and the pupil's original opinion.  
+**Pupils:** Revise an unclear reference or unsupported reason and preserve the notes for later use.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.172 Working with Words and share two thoughtful views.  
+**Pupils:** Explain one related vocabulary pair and a healthy-food preference.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

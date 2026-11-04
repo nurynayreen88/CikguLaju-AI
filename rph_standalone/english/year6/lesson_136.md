@@ -7,32 +7,32 @@
 **Language focus:** Functional language: giving opinion (e.g. I don’t believe that…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 113; Teacher Book pages 178-179; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a familiar school-life issue with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to a PB p.113 formal debate about multi-tasking, identify which speakers agree or disagree and record four reasons.  
+**PBD evidence:** Four accurate debate facts and the speakers' positions (Listening 1.2.2) with text-linked reasons.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.178 Warm-up Make words with debate vocabulary.  
+**Pupils:** Create a useful word and explain its meaning.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach opinions, reasons, examples; display two contrasting opinion cards and ask pupils to predict what they may hear. Emphasise the language focus: Functional language: giving opinion (e.g. I don’t believe that…).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Show the PB p.113 debate illustration and review formal debate rules.  
+**Pupils:** Predict who might support and oppose multi-tasking.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use verified Audio 2.15 or read an approved printed transcript accurately for gist.  
+**Pupils:** Listen without text and identify speakers for and against multi-tasking.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a familiar school-life issue, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB pp.178–179 Activities 3–5 for details and values discussion.  
+**Pupils:** Record four reasons in two columns, then compare with a partner.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess accurate positions and specific supporting points.  
+**Pupils:** Correct one incorrectly attributed opinion from the recording.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Discuss listening respectfully when viewpoints differ.  
+**Pupils:** Share one constructive way to disagree.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
