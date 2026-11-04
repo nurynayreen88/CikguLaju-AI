@@ -150,8 +150,8 @@ class PJPKDraftRuntimeTests(unittest.TestCase):
             "_lesson_to_class_v2439": lambda cid: called.append(cid),
         }
         self.assertTrue(preview.install(ns, enabled=True))
-        self.assertEqual(ns["callback"](100, "pjpk27pick|038"), "not allowed" if not preview.list_lessons("Tahun 2", "Pendidikan Jasmani") else None)
-        self.assertEqual(ns["callback"](100, "pjpk27pick|abc"), None)
+        self.assertEqual(ns["callback"](100, "pjpk27pick|038"), "not allowed")
+        self.assertEqual(ns["callback"](100, "pjpk27pick|abc"), "not allowed")
         self.assertFalse(called)
         self.assertNotIn("_pjpk_2027_preview_selection", state[100])
 
