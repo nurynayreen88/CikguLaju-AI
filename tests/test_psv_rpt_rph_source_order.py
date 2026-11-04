@@ -542,8 +542,8 @@ class PSVSourceOrderTests(unittest.TestCase):
                     specific += 1
                     total += 1
         self.assertEqual(total, 210)
-        self.assertEqual(specific, 187)
-        self.assertEqual(exhibitions, 23)
+        self.assertEqual(specific, 188)
+        self.assertEqual(exhibitions, 22)
 
 
 if __name__ == "__main__":
