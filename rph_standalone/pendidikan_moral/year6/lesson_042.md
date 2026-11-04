@@ -9,22 +9,24 @@
 **SP:** 14.5 — Mengamalkan sikap bertoleransi demi perpaduan negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, kad pandangan dan titik persetujuan, borang semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 6 m/s 135–137 (PDF 144–146), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid memperagakan tindakan berdasarkan **14.5: Mengamalkan sikap bertoleransi demi perpaduan negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 14.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
+Murid melaksanakan dua tindakan toleransi semasa aktiviti berpasukan dan menilai perbuatannya dengan refleksi. Kriteria kejayaan: Pemerhatian dua tindakan toleransi, satu cadangan pembaikan dan satu refleksi beralasan; lakonan bukan bukti amalan rumah.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Masyarakat berbeza budaya berbincang secara aman demi perpaduan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Toleransi Mengeratkan Hubungan Negara** dari Buku Teks m/s 135. Murid mengenal pasti pihak yang terlibat, nilai toleransi dan satu tindakan yang wajar.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **bertoleransi dan mencari persetujuan**. Murid menyemak persediaan berdasarkan SP 14.5.
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru menunjukkan contoh perbincangan menyelesaikan perbezaan pandangan dan poster toleransi pada m/s 135–136. Murid merancang dua tindakan yang boleh diperhatikan.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid melaksanakan simulasi perbincangan kumpulan yang mempunyai pandangan berbeza dan melengkapkan Borang Amalan Toleransi m/s 137 sebagai refleksi kendiri.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 14.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Pemerhatian dua tindakan toleransi, satu cadangan pembaikan dan satu refleksi beralasan; lakonan bukan bukti amalan rumah. Guru merekod evidens individu dan memberi maklum balas berdasarkan sebab dan tingkah laku yang boleh diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan bertoleransi yang boleh dilakukan secara selamat dan sebab tindakan itu menjaga perpaduan. Guru merumuskan sikap menghormati kepelbagaian masyarakat.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Kad gambar/kata kunci untuk murid yang memerlukan sokongan; murid maju memberi dua justifikasi. Elakkan pendedahan hal peribadi atau agama.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Semakan visual buku teks:** Tahun 6, Unit 14 — **Toleransi Mengeratkan Hubungan Negara**; halaman bercetak 135–137 (PDF 144–146). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 042 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view); [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026). Buku teks asal Drive ID `12YjwUWy6DdVsqP5_azEp987jfvZ6PROo`; RPT 2026 ialah rujukan urutan, bukan tarikh 2027.
