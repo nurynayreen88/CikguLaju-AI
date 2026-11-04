@@ -57,7 +57,7 @@ def main() -> int:
             if any(s["code"] not in source or s["text"] not in source for s in needed):
                 fail(f"Y{year} L{number:03d}: DSKP SP not preserved")
             for name in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Pengukuhan/Pentaksiran PBD", "Penutup"):
-                if not re.search(r"^\\*\\*" + re.escape(name) + r"\\b", source, re.M):
+                if not re.search(r"^\*\*" + re.escape(name) + r"\b", source, re.M):
                     fail(f"Y{year} L{number:03d}: missing {name}")
             if "Kriteria kejayaan:" not in source or "DRAF SEMAK" not in source:
                 fail(f"Y{year} L{number:03d}: parser contract missing")
