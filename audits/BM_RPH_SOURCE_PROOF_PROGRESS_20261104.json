@@ -1,0 +1,122 @@
+{
+  "subject": "Bahasa Melayu SK",
+  "school_year": 2027,
+  "date": "2026-11-04",
+  "scope": "825 RPH Tahun 2–6",
+  "release_state": "DRAFT_NOT_PUBLISHED",
+  "verified_rph_textbook_page_activity": [
+    {
+      "year": 2,
+      "pdp": 5,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "5",
+      "proof": "Menulis perkataan dan ayat berdasarkan Kek Hari Lahir, Hana membantu keluarga membuat kek",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 10,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "9",
+      "proof": "Menulis perenggan tentang percutian keluarga di Bukit Larut",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 1,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "2",
+      "proof": "Mendengar dan menyebut maklumat perkenalan Encik Husin, Encik Gobi, Encik Lim",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 2,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "3",
+      "proof": "Membaca petikan Hari Keluarga Taman Impian dan melengkapkan Peta Alir",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 3,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "2",
+      "proof": "Pengukuhan susulan ujaran perkenalan jiran; aktiviti susulan CikguLaju, bukan aktiviti rasmi tambahan",
+      "pkjr_release": false,
+      "ba_exercise_verified": false,
+      "duplicate_session_needs_teacher_approval": true
+    },
+    {
+      "year": 4,
+      "pdp": 5,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "4",
+      "proof": "Menulis ayat daripada kad ucapan tahniah kepada Hadif dengan tulisan berangkai",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 5,
+      "pdp": 45,
+      "book": "BT Tahun 5 SK",
+      "printed_pages": "56–57",
+      "proof": "Membaca Waspada Gerakmu dan merumuskan langkah mencegah ragut",
+      "pkjr_release": false,
+      "ba_exercise_verified": false,
+      "source_pk_jr_marker_unverified": true
+    },
+    {
+      "year": 5,
+      "pdp": 52,
+      "book": "BT Tahun 5 SK",
+      "printed_pages": "66",
+      "proof": "Mengedit dan memurnikan perenggan Keselamatan Siber dalam Percutian; membetulkan ejaan tajuk RPT2026",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    }
+  ],
+  "textbook_sources": [
+    {
+      "year": 2,
+      "title": "GuruBesar_BukuTeks_Bahasa_Melayu_T2_Jilid1_SK.pdf",
+      "drive_file_id": "1f6CJ87NbI7uNS_GKIh483-8DsiOr0Lr0",
+      "text_extraction": "available"
+    },
+    {
+      "year": 4,
+      "title": "GuruBesar_BukuTeks_Bahasa_Melayu_T4_SK.pdf",
+      "drive_file_id": "1pE0IjM6LEAvpvkIDcrGqB27WiCJUxJRi",
+      "text_extraction": "available"
+    },
+    {
+      "year": 5,
+      "title": "GuruBesar_BukuTeks_Bahasa_Melayu_T5_SK_Bahagian1.pdf",
+      "drive_file_id": "1IDWIFiS4uhfQyfDD0rZUb_kX3IIggcdv",
+      "text_extraction": "available_part1_only"
+    },
+    {
+      "year": 6,
+      "title": "GuruBesar_BukuTeks_Bahasa_Melayu_T6_SK.pdf",
+      "drive_file_id": "1f6P3d5_j07BWcB5V12Tsi_l3uOK6VQ3t",
+      "text_extraction": "not_available_from_current_drive_fetch"
+    }
+  ],
+  "unresolved": [
+    "All remaining 817 RPH need specific source review",
+    "All Buku Aktiviti exercises not verified globally",
+    "Year 2 29 HOLD incl PKJR/assessment/duplicates",
+    "Year 4–6 496 RPH require full academic audit",
+    "Year 5 source Part 2 absent from Drive reference",
+    "Year 6 PDF requires a readable alternative",
+    "PDF and Word one-page proof for all RPH",
+    "Regional calendar/holidays 2027",
+    "Telegram runtime test"
+  ],
+  "ready_count": 0,
+  "reviewed_eight_not_ready": true
+}
