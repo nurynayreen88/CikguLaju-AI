@@ -237,6 +237,19 @@ except Exception as _moral80_exc:
     print("Moral 80 RPH bridge unavailable:", repr(_moral80_exc), flush=True)
 
 
+# PSV Year 2-6 RPH publication candidate. This is deliberately FAIL-CLOSED:
+# - Not installed until CIKGULAJU_PSV_RPH_RELEASE_ENABLED=1 is explicitly set.
+# - Also requires independently approved source/runtime JSON AND READY source RPH/RPT.
+# - No preview override here. CI tests preview in an isolated fake runtime only.
+# - Does not alter navigation, credits, payments, database or unrelated subjects.
+try:
+    from web.psv_2027_rph_release_bridge import install as install_psv_rph_2027
+    PSV_RPH_2027_RELEASE_ACTIVE = bool(install_psv_rph_2027(telegram_runtime))
+except Exception as _psv_rph_gate_exc:
+    PSV_RPH_2027_RELEASE_ACTIVE = False
+    print("PSV RPH release gate inactive:", type(_psv_rph_gate_exc).__name__, flush=True)
+
+
 # 2027 Moral proposed RPT PDF generated on demand from the staged CSV sequence.
 try:
     from rpt_2027.pendidikan_moral.telegram_downloads import install as install_moral_rpt_2027
