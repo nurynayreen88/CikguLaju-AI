@@ -303,6 +303,14 @@ def install(ns):
     ns["callback"] = callback
     ns["menu"] = menu
     ns["_admin_pioneer_status"] = admin_pioneer_status
+    # Admin-only reconciliation for bank-verified RM10 payments whose local
+    # SQLite pending rows disappeared after a Render deploy. No auto-approval.
+    # Install BEFORE private referrals so the outer webhook-secret guard remains.
+    try:
+        from pioneer_paid_recovery_telegram import install as _install_paid_recovery
+        _install_paid_recovery(ns)
+    except Exception as exc:
+        print("PIONEER VERIFIED RECOVERY installer error:", type(exc).__name__, flush=True)
     # Hidden referral points is OFF by default; it only adds isolated wrappers.
     try:
         from referral_points_telegram import install as _install_private_referral
