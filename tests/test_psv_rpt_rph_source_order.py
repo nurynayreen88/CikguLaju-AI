@@ -325,5 +325,44 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertEqual(row["Evidens PBD"], objective.group(2))
 
 
+    def test_year6_sp311_requires_folio_not_only_photo(self):
+        """DSKP Tahun 6: SP3.1.1 demands a folio for all four product projects."""
+        for number in (13, 17, 34, 39):
+            with self.subTest(pdp=number):
+                pdp = f"{number:03d}"
+                rph = (ROOT / "rph_standalone" / "psv" / "year6" / f"lesson_{pdp}.md").read_text(encoding="utf-8")
+                self.assertIn("**SP:** 3.1.1; 3.2.3; 4.1.1", rph)
+                self.assertIn("folio", rph.lower())
+                activity = re.search(r"(?m)^\*\*Aktiviti 2[^\n]*\*\*\s*(.*)$", rph)
+                self.assertIsNotNone(activity)
+                self.assertIn("folio", activity.group(1).lower())
+        csv_rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
+        for number in (34, 39):
+            with self.subTest(pdp=number):
+                row = csv_rows[number - 1]
+                text = (ROOT / row["RPH"]).read_text(encoding="utf-8")
+                match = re.search(r"(?m)^Murid dapat (.*?)\. Kriteria kejayaan: (.*?)\.$", text)
+                self.assertIsNotNone(match)
+                self.assertIn("folio lima bahagian", row["Evidens PBD"])
+                self.assertEqual(row["Objektif"], "Murid dapat " + match.group(1))
+                self.assertEqual(row["Evidens PBD"], match.group(2))
+
+    def test_project_printed_sp_codes_are_clean_for_public_headers(self):
+        """Y2–4 original DSKP prints 3.3.x below SK 5.1; no audit note in headers."""
+        for year in (2, 3, 4):
+            rows = read_csv(PSV / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv")
+            for number in (20, 21, 41, 42):
+                with self.subTest(year=year, pdp=number):
+                    row = rows[number - 1]
+                    source = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
+                    sp = re.search(r"(?m)^\*\*SP:\*\*\s*([^\n]+)", source)
+                    self.assertIsNotNone(sp)
+                    self.assertEqual(sp.group(1).strip(), row["SP"])
+                    self.assertEqual(row["SK"], "5.1")
+                    self.assertTrue(row["SP"].startswith("3.3."))
+                    self.assertNotIn("kod bercetak", sp.group(1))
+                    self.assertNotIn("bercetak di bawah", sp.group(1))
+
+
 if __name__ == "__main__":
     unittest.main()
