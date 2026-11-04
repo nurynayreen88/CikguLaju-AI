@@ -1,40 +1,27 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 008
 
-**ID:** BM4-P008  
-**Minggu RPT 2027:** M03 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kemasyarakatan; U2: Prihatinnya Kita  
-**Tajuk aktiviti:** Terima Kasih, Cikgu  
-**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.  
-**Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 7  
-**Fokus:** lisan — Terima Kasih, Cikgu  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Terima Kasih, Cikgu' mengikut kemahiran 1.1.1.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P008 | **RPT 2027:** M03 | **Unit:** 2 — Prihatinnya Kita
+**Tajuk aktiviti:** Terima Kasih, Cikgu
+**SK:** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
+**SP:** 1.1.2 — Mendengar, memahami dan memberikan respons terhadap ujaran yang terdapat dalam situasi tidak formal
+**Sumber disemak:** Buku Teks BM Tahun 4 SK m/s 7 (Hadif menghadiri majlis penyampaian bantuan persekolahan). **BA:** Halaman/latihan belum disahkan.
+**Objektif:** Murid mendengar dialog bantuan persekolahan dan memberikan sekurang-kurangnya tiga respons lisan yang munasabah berdasarkan ujaran pada ilustrasi.
+**BBM:** BT m/s 7, kad dialog dan senarai semak lisan. **Masa:** 60 minit, boleh disesuaikan.
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Terima Kasih, Cikgu' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U2: Prihatinnya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjukkan situasi Hadif di majlis bantuan persekolahan; tanya siapa yang biasanya menerima bantuan dan mengapa. **Murid:** Nyatakan satu pemerhatian.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Terima Kasih, Cikgu' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Terima Kasih, Cikgu'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Dengar dan fahami ujaran (15 minit)
+**Guru:** Lakonkan dialog pada BT m/s 7 tentang sumbangan dan barangan yang diterima murid; jelaskan giliran bercakap. **Murid:** Dengar dan kenal pasti pertanyaan tentang penyumbang, barangan serta masyarakat prihatin.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Terima Kasih, Cikgu'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Berikan respons (20 minit)
+**Guru:** Sebut semula tiga ujaran atau soalan daripada situasi dan minta pasangan melengkapkan respons secara lisan. **Murid:** Berikan respons mengikut konteks dan kemudian bergilir memainkan peranan penerima bantuan atau rakan.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak tiga respons dari segi kefahaman ujaran, relevansi jawapan dan kesantunan; bimbing pembetulan. **Murid:** Baiki satu respons yang kurang tepat dan sebut semula dengan jelas.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Terima Kasih, Cikgu' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan cara mendengar dan memberi respons serta nilai prihatin. **Murid:** Nyatakan satu amalan membantu rakan.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti BT:** m/s 7 memaparkan majlis bantuan persekolahan; rujukan SP pada BT dan DSKP ialah **1.1.2**, bukan 1.1.1 seperti draf RPT sebelumnya.
+**Status:** DRAF — padanan BT/SP bagi PdP ini dibetulkan; BA, kalendar negeri, Word/PDF dan ujian Telegram masih belum lulus. Jangan terbitkan.

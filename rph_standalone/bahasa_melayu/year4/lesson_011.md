@@ -1,40 +1,28 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 011
 
-**ID:** BM4-P011  
-**Minggu RPT 2027:** M04 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kemasyarakatan; U2: Prihatinnya Kita  
-**Tajuk aktiviti:** Istimewannya Kita  
-**Standard Kandungan (SK):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.  
-**Standard Pembelajaran (SP):** 4.2.1 — Melafazkan dan menjelaskan maksud sajak  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 6  
-**Fokus:** seni — Istimewannya Kita  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Istimewannya Kita' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P011 | **RPT 2027:** M04 | **Unit:** 2 — Prihatinnya Kita
+**Tajuk aktiviti:** Istimewanya Kita
+**Tajuk:** Istimewanya Kita
+**SK:** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.
+**SP:** 4.2.1 — Melafazkan dan menjelaskan maksud sajak
+**Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 11** (bukan m/s 6); sajak tentang ibu, guru dan pahlawan. **BA:** Belum disahkan.
+**Objektif:** Murid mendeklamasikan sekurang-kurangnya satu rangkap dengan sebutan serta intonasi sesuai dan menjelaskan dua maksud daripada sajak.
+**BBM:** BT m/s 11, kad maksud rangkap dan rubrik ringkas. **Masa:** 60 minit, boleh disesuaikan.
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Istimewannya Kita' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U2: Prihatinnya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tiga kata kunci *ibu, guru, pahlawan*. **Murid:** Berikan satu sebab jasa mereka dihargai.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Istimewannya Kita'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Istimewannya Kita' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Dengar dan tafsir sajak (15 minit)
+**Guru:** Deklamasikan rangkap 'Istimewanya kita' dan bimbing murid memahami penghargaan kepada ibu, guru serta pahlawan. **Murid:** Padankan setiap rangkap dengan jasa yang dimaksudkan.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Deklamasi dan penjelasan (20 minit)
+**Guru:** Bimbing persembahan berkumpulan dengan sebutan, jeda serta intonasi; kemukakan soalan tentang maksud rangkap. **Murid:** Deklamasikan satu rangkap dan jelaskan dua isi/maksud menggunakan bahasa sendiri.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.2.1 — Melafazkan dan menjelaskan maksud sajak) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Perhatikan penyampaian dan semak ketepatan maksud rangkap; beri maklum balas lisan. **Murid:** Baiki sebutan/intonasi dan lengkapkan dua ayat maksud sajak.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Istimewannya Kita' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan nilai menghargai jasa. **Murid:** Sebut satu tindakan menunjukkan penghargaan.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti BT:** m/s 11 mempunyai tiga rangkap bermula 'Istimewanya kita' dan arahan mendeklamasikan serta menjelaskan maksud sajak; ejaan draf 'Istimewannya' dibetulkan.
+**Status:** DRAF — tidak diluluskan BA, cetakan, kalendar dan Telegram; jangan terbitkan.

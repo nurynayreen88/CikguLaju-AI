@@ -1,40 +1,27 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 010
 
-**ID:** BM4-P010  
-**Minggu RPT 2027:** M04 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kemasyarakatan; U2: Prihatinnya Kita  
-**Tajuk aktiviti:** Kisah Aku dan Datukku  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 5  
-**Fokus:** tulisan — Kisah Aku dan Datukku  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Kisah Aku dan Datukku' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P010 | **RPT 2027:** M04 | **Unit:** 2 — Prihatinnya Kita
+**Tajuk aktiviti:** Kemudahan di Lapangan Terbang
+**SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**SP:** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia
+**Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 10** (bukan m/s 5); datuk dan nenek menziarahi keluarga Hadif di Johor Bahru. **BA:** Belum disahkan.
+**Objektif:** Murid membina sekurang-kurangnya empat ayat tepat daripada gambar serta frasa tentang kemudahan di lapangan terbang.
+**BBM:** BT m/s 10, kad gambar-frasa dan senarai semak ayat. **Masa:** 60 minit, boleh disesuaikan.
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kisah Aku dan Datukku' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U2: Prihatinnya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjuk gambar orang menggunakan kemudahan lapangan terbang. **Murid:** Nyatakan manfaat kemudahan kepada datuk dan nenek.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Kisah Aku dan Datukku' dan memodelkan langkah menyusun isi serta menulis mengikut Membina dan menulis ayat, dan perenggan daripada bahan multimedia.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Kisah Aku dan Datukku'.
+## Aktiviti 1 — Baca gambar dan frasa (15 minit)
+**Guru:** Bimbing murid meneliti gambar dan frasa BT m/s 10 seperti *pengangkutan khas*, *tempat letak kereta khas*, *laluan landai* dan *travelator*. **Murid:** Padankan setiap frasa dengan gambar bernombor yang betul.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Bina ayat daripada bahan (20 minit)
+**Guru:** Modelkan ayat lengkap yang menjelaskan fungsi satu kemudahan; minta murid menulis empat ayat baharu berpandukan gambar. **Murid:** Bina ayat subjek-predikat dan semak penggunaan kata kerja serta maksudnya.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai empat ayat berdasarkan ketepatan gambar, makna, ejaan dan tanda baca. **Murid:** Sunting sekurang-kurangnya satu ayat dan bacakan hasil.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Kisah Aku dan Datukku' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan penulisan berdasarkan gambar dan sikap prihatin terhadap warga emas. **Murid:** Nyatakan satu kegunaan kemudahan tersebut.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti BT:** m/s 10 mengarahkan 'Membina dan menulis ayat berdasarkan gambar dan frasa' dengan SP 3.2.1. Tajuk sebelumnya 'Kisah Aku dan Datukku' tidak digunakan sebagai tajuk buku yang disahkan.
+**Status:** DRAF — semakan BA, takwim, Word/PDF dan Telegram belum selesai; jangan terbitkan.

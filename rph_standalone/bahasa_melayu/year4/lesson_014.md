@@ -1,42 +1,28 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 014
 
-**ID:** BM4-P014  
-**Minggu RPT 2027:** M04 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kemasyarakatan; U3: Masyarakat Berilmu  
-**Tajuk aktiviti:** Mari Membaca + PKJR  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 4  
-**Fokus:** bacaan — Mari Membaca  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Mari Membaca' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P014 | **RPT 2027:** M04 | **Unit:** 3 — Masyarakat Berilmu
+**Tajuk aktiviti:** Mari Membaca + PKJR
+**SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
+**SP:** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera
+**Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 14** (bukan m/s 4); cerita e-buku tentang masyarakat rama-rama. **BA:** Belum disahkan. **PKJR:** Penanda RPT belum disahkan terhadap modul.
+**Objektif:** Murid membaca kisah rama-rama, menyatakan tiga peristiwa mengikut urutan dan menerangkan dua nilai murni berdasarkan teks.
+**BBM:** BT m/s 14, kad urutan peristiwa, peta nilai. **Masa:** 60 minit, boleh disesuaikan.
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Mari Membaca' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U3: Masyarakat Berilmu.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjukkan konteks Hadif membaca e-buku di Zon Kanak-kanak. **Murid:** Ramalkan isu dalam cerita masyarakat rama-rama.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Mari Membaca' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Mari Membaca' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Baca dan analisis cerita (15 minit)
+**Guru:** Bimbing bacaan tentang *Rerama Biru*, *Rerama Kuning* dan *Rerama Merah* yang mencari manisan di ladang bunga. **Murid:** Kenal pasti masalah bunga semakin sedikit serta cara rama-rama membantu penyebaran debunga.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Nyatakan peristiwa dan nilai (20 minit)
+**Guru:** Bimbing murid menyusun sekurang-kurangnya tiga peristiwa dan menafsir dua nilai daripada tindakan watak. **Murid:** Ceritakan semula urutan dan sokong nilai dengan peristiwa daripada teks.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak urutan tiga peristiwa serta dua nilai murni berdasarkan bukti bacaan, bukan jawapan umum. **Murid:** Baiki huraian yang tidak berasaskan teks.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Mari Membaca' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kerjasama dan pemeliharaan alam dalam cerita. **Murid:** Nyatakan satu pengajaran.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
-
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti BT:** m/s 14 mengarahkan membaca, menerangkan kandungan cerita, dan menyatakan nilai murni daripada ayat berwarna.
+**Kawalan PKJR:** Tiada kod atau aktiviti rasmi PKJR yang disahkan; label '+ PKJR' RPT bukan bukti pelaksanaan.
+**Status:** DRAF — BA, PKJR, kalendar, cetakan dan Telegram belum disahkan; jangan terbitkan.
