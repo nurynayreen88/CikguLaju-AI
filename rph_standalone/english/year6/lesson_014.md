@@ -7,32 +7,32 @@
 **Language focus:** Reporting verbs (ways of speaking (e.g. whisper) & questions in the past (e.g. how did you feel?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.16; TB pp.34–35  
-**Learning objective:** Narrate a short event about a safe emergency incident with a clear sequence of 3 events and an appropriate ending.  
-**PBD evidence:** Three ordered events and a clear concluding sentence in an intelligible narrative.
+**Learning objective:** Identify spoken questions and reporting verbs in PB p.16 Activities 1–5, then act out a short emergency scene with clear expressive speaking.  
+**PBD evidence:** Correctly recognise three supported spoken questions (Listening 1.2.5) and narrate/act out a coherent short scene using varied voice and emotion (Speaking 2.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review -ed/-ing adjectives and practise describing how a person felt during an emergency.  
+**Pupils:** Give one suitable adjective and use it in a short reaction.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What happened when the emergency began?”, drawing on Reporting verbs (ways of speaking (e.g. whisper) & questions in the past (e.g. how did you feel?).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.34 Vocabulary and PB p.16 Activities 1–2: use the back-of-book dictionary and match descriptions to pictures.  
+**Pupils:** Match spoken or written statements to pictures and check the meaning of two reporting verbs.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide three sequential picture prompts and model time connectives from the lesson.  
-**Pupils:** Narrate three linked events in order; add one descriptive detail and an ending.
+**Teacher:** Use confirmed audio or approved reading of PB p.16 Activities 3–5 (TB pp.34–35): model reporting verbs, listen to reporter questions and compare answers.  
+**Pupils:** Recognise the speaker's manner, answer the reporter's questions and write three heard questions alongside matching answers.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.35 Activity 6: organise small-group emergency acting with a speaker, narrator and optional director.  
+**Pupils:** Plan and perform a short emergency scene using a whispered/shouted line and correct story order.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check recognition of three questions and the group's intelligible expressive narration; give feedback on voice and sequencing.  
+**Pupils:** Respond to three oral questions, show a reporting verb and correct one spoken line.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What happened when the emergency began?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Write a brief quotation with correct punctuation and ask pupils to perform it in contrasting voices.  
+**Pupils:** Repeat the quotation as a whisper or shout and explain which voice fits the scene.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

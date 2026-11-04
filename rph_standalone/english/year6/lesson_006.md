@@ -7,32 +7,32 @@
 **Language focus:** Introduction to past simple & past continuous  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.8–10; TB pp.22–24  
-**Learning objective:** Infer the meaning of at least 4 unfamiliar words from known-word clues in the reading text about a safe emergency incident.  
-**PBD evidence:** 4 meaning-and-clue pairs supported by the printed text; review 1 inference aloud.
+**Learning objective:** Read the PB pp.8–10 text about electricity and power, identify its text type and features, and infer four unfamiliar words using context clues.  
+**PBD evidence:** Identify text type and two features, give four word-and-context-clue pairs, and answer two reading questions from the passage (Reading 3.2.3 / 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Write electricity on the board and organise a quick group brainstorm of where it is used.  
+**Pupils:** List everyday electricity uses and suggest another meaning of power.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce incident, safety, help, action and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Introduction to past simple & past continuous.  
-**Pupils:** Predict the text from incident sequence pictures; highlight two useful clues or words.
+**Teacher:** Follow TB p.22 Activity 1 and prediction strategy; use PB pp.8–10 pictures to anticipate the reading and its text type.  
+**Pupils:** Predict the type and subject of the electricity text using two visible clues from the pictures.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the RPT-cited reading material. Model one contextual inference and ask pupils to infer 4 words from surrounding known words; connect clues to Introduction to past simple & past continuous.  
-**Pupils:** Read the passage and record 4 unfamiliar words, a likely meaning and the exact nearby clue for each.
+**Teacher:** Follow TB p.23 Activities 2–4: guide pupils to identify text features and infer four target words from the surrounding known words.  
+**Pupils:** Read the passage, label two text features and record four unfamiliar words with evidence-based meanings.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a safe emergency incident. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Use TB p.24 Activity 1 to check details; prompt pairs to share a relevant fact and discuss responsible electricity use.  
+**Pupils:** Answer two passage-detail questions, compare in pairs and explain one sensible use of electricity.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check two text-feature examples, four word-context inferences and two reading answers; give feedback on evidence.  
+**Pupils:** Underline clues supporting their inferences and correct one answer after feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What happened when the emergency began?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Run the TB p.23 memory-game review about electricity and power.  
+**Pupils:** Recall one reading fact and explain a new word using its contextual clue.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

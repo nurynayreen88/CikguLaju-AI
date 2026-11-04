@@ -7,32 +7,32 @@
 **Language focus:** Past simple & continuous for interrupted actions with when/while  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.12; TB pp.28–29  
-**Learning objective:** Narrate a short event about a safe emergency incident with a clear sequence of 3 events and an appropriate ending.  
-**PBD evidence:** Three ordered events and a clear concluding sentence in an intelligible narrative.
+**Learning objective:** Read and complete PB p.12 dialogues using when/while, then tell a partner a short story with three connected events and correct target language.  
+**PBD evidence:** Correct when/while use in the PB dialogue and a comprehensible three-event oral story (Speaking 2.3.1 / Reading 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use a drawn clock face to ask what pupils were doing at two past times.  
+**Pupils:** Describe one past action using was/were ...-ing.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What happened when the emergency began?”, drawing on Past simple & continuous for interrupted actions with when/while.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.28 Vocabulary and PB p.12 Activity 1; introduce the dialogue and read it aloud with expression.  
+**Pupils:** Use the dictionary for one new word and identify the two speakers in the dialogue.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide three sequential picture prompts and model time connectives from the lesson.  
-**Pupils:** Narrate three linked events in order; add one descriptive detail and an ending.
+**Teacher:** Guide TB p.28 Activity 2, completing when or while, and TB pp.28–29 Activity 3 matching actions and activities.  
+**Pupils:** Read the dialogue, fill the correct when/while links and match the pictured actions to events.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Ask pairs to use their Activity 3 ideas to plan a short story, prepare notes, rehearse and tell it orally.  
+**Pupils:** Plan three connected events, tell a short story in pairs and use at least two accurate when/while links.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check comprehension of a dialogue detail and the spoken story's sequencing, intelligibility and past-tense links.  
+**Pupils:** Answer one reading question, tell three events and improve one sentence after oral feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What happened when the emergency began?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite two pairs to tell their stories and ask pupils which was most interesting or surprising.  
+**Pupils:** Share one short story and give one respectful comment about another pair's narrative.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
