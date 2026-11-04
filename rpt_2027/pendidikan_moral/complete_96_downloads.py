@@ -207,7 +207,7 @@ def _supplement(year):
         sections = _source_components(raw)
         if any(not sections.get(k) for k in (*PHASE_NAMES, "Objektif")):
             raise ValueError("Missing RPH phase in " + str(path))
-        if any(not _field(raw, k) for k in ("Unit", "Nilai", "SK", "SP", "BBM")):
+        if any(not _field(raw, k) for k in ("Unit", "Nilai", "SK", "SP")) or not (_field(raw, "BBM") or _field(raw, "Bahan")):
             raise ValueError("Missing RPH metadata in " + str(path))
         yield r, raw, sections
 
@@ -250,7 +250,7 @@ def build_rph_pdf(year, destination):
         item("Standard kandungan / pembelajaran",
              "SK " + _field(raw, "SK") + "; SP " + _field(raw, "SP"), 4, 7.9)
         item("Objektif pembelajaran", sec["Objektif"], 4, 8.3)
-        item("Bahan bantu mengajar", _field(raw, "BBM"), 3, 7.7)
+        item("Bahan bantu mengajar", _field(raw, "BBM") or _field(raw, "Bahan"), 3, 7.7)
         for label, mins in zip(PHASE_NAMES, (5,20,20,10,5)):
             item(label + " (%d min)" % mins, sec[label], 6, 8.0)
         if y < 31:
@@ -309,7 +309,7 @@ def build_rph_docx(year, destination):
         line("Unit/Nilai", _field(raw, "Unit") + " | " + _field(raw, "Nilai"))
         line("SK/SP", _field(raw, "SK") + " | " + _field(raw, "SP"))
         line("Objektif", sec["Objektif"])
-        line("BBM", _field(raw, "BBM"))
+        line("BBM", _field(raw, "BBM") or _field(raw, "Bahan"))
         for name, mins in zip(PHASE_NAMES, (5,20,20,10,5)):
             line("%s (%d minit)" % (name, mins), sec[name])
         line("Refleksi guru", "Bilangan mencapai objektif: ____ / ____; tindakan susulan: __________")
