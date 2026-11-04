@@ -14,6 +14,7 @@ from docx.enum.section import WD_ORIENT
 from docx.shared import Mm, Pt
 from docx.enum.text import WD_LINE_SPACING
 from reportlab.pdfgen import canvas
+from reportlab.lib.units import mm
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfbase import pdfmetrics
@@ -53,7 +54,7 @@ def sections(src):
 
 def layout_pdf(items,font_size):
     w,h=A4
-    width=w-2*Mm(13)
+    width=w-2*13*mm
     output=[]
     total=0
     for kind,content in items:
@@ -67,7 +68,7 @@ def layout_pdf(items,font_size):
     return total,output
 
 def make_pdf(path,items):
-    usable=A4[1]-Mm(17)-Mm(13)-Mm(11)
+    usable=A4[1]-17*mm-13*mm-11*mm
     choices=[9.4,9.0,8.6,8.2,7.8,7.4,7.0,6.6,6.2]
     for size in choices:
         height,layout=layout_pdf(items,size)
@@ -77,17 +78,17 @@ def make_pdf(path,items):
     buff=BytesIO()
     c=canvas.Canvas(buff,pagesize=A4,pageCompression=1)
     c.setTitle("CikguLaju Bahasa Melayu Tahun 3 2027 — DRAF")
-    y=A4[1]-Mm(14)
+    y=A4[1]-14*mm
     for _,lines,font,font_size,after in layout:
         c.setFont(font,font_size)
         for line in lines:
-            c.drawString(Mm(13),y,line)
+            c.drawString(13*mm,y,line)
             y-=font_size*1.20
         y-=after
     c.setStrokeColorRGB(.7,.7,.7)
-    c.line(Mm(13),Mm(11),A4[0]-Mm(13),Mm(11))
+    c.line(13*mm,11*mm,A4[0]-13*mm,11*mm)
     c.setFont("CJ",6.5)
-    c.drawString(Mm(13),Mm(7),"DRAF SEMAKAN • BELUM READY • Bukan keluaran Telegram")
+    c.drawString(13*mm,7*mm,"DRAF SEMAKAN • BELUM READY • Bukan keluaran Telegram")
     c.showPage();c.save()
     b=buff.getvalue()
     if len(PdfReader(BytesIO(b)).pages)!=1:
