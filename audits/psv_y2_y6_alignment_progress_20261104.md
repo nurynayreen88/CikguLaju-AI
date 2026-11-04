@@ -1,5 +1,7 @@
 # Audit sambungan PSV Tahun 2–6 | 4 Nov 2026
 
+> **NOTA VERSI:** Laporan ini merekodkan audit awal sebelum penambahbaikan rujukan buku teks. Untuk keputusan dan status TERKINI yang tepat, rujuk [audit sasaran 90%](psv_y2_y6_90percent_source_audit_20261104.md). **PENTING:** DSKP Tahun 6 mengandungi SP `5.1.5`; DSKP Tahun 5 mengandungi SP `5.1.6`. Kedua-duanya telah diperiksa daripada teks sumber.
+
 ## Hasil yang telah dimasukkan ke staging
 | Tahun | RPH aktif (draf) | Bilangan unit/rujukan RPT 2026 | Status |
 |---|---:|---:|---|
