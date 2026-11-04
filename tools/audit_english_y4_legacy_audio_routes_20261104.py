@@ -40,7 +40,17 @@ def _teacher_task_refs(source):
     # actual teaching procedure only. Audio metadata is kept separately.
     end = source.split("\n## Assessment and differentiation", 1)[0]
     end = end.split("\n**QA status:**", 1)[0]
-    return sorted({f"CD{int(cd)} Track {int(track)}" for cd, track in REF.findall(end)})
+    refs = {f"CD{int(cd)} Track {int(track)}" for cd, track in REF.findall(end)}
+    # A common printed shorthand is "CD1 Track 26 and Track 37".
+    # Inherit the disc only within that one line when exactly one disc occurs.
+    # Never infer a disc across a different line, activity or CD.
+    for line in end.splitlines():
+        discs = {int(cd) for cd, _ in REF.findall(line)}
+        if len(discs) == 1:
+            disc = next(iter(discs))
+            for track in re.findall(r"\\b(?:and|&)\\s+Track\\s*(\\d{1,3})\\b", line, re.I):
+                refs.add(f"CD{disc} Track {int(track)}")
+    return sorted(refs)
 
 
 def run():
