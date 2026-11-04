@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyiapkan folio arca stabail ikan koi 3D dengan binaan, cantuman dan catan dan mengulas hasil mengikut bentuk ikan koi, imbangan arca stabail dan fungsi sebagai alat permainan serta fungsi karya. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyiapkan folio arca stabail ikan koi 3D dengan binaan, cantuman dan catan dan mengulas hasil mengikut bentuk ikan koi, imbangan arca stabail dan fungsi sebagai alat permainan serta fungsi karya. Kriteria kejayaan: Folio mengandungi lima bahagian, gambar hasil dan ulasan yang menggunakan dua istilah bahasa seni.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Gambar karya dan apresiasi** dalam tema **Si Cilik Koi**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
