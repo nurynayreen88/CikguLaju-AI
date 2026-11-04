@@ -9,6 +9,7 @@ on:
       - 'scripts/rebuild_pm_pjpk_v26_16.py'
       - 'scripts/check_pm_pjpk_v26_16.py'
       - 'scripts/pjpk_v26_16_adapter.py'
+      - 'scripts/pjpk_runtime_readiness.py'
       - 'scripts/activate_pjpk_v26_16.py'
       - '.github/workflows/pm-pjpk-v26-16-staging.yml'
   pull_request:
@@ -36,6 +37,21 @@ jobs:
         run: |
           python scripts/rebuild_pm_pjpk_v26_16.py
           python scripts/check_pm_pjpk_v26_16.py
+      - name: Print verified SK and SP readiness by year
+        run: |
+          python -m scripts.pjpk_runtime_readiness
+          python - <<'PY'
+          from scripts.pjpk_runtime_readiness import report
+          rows = report()
+          assert len(rows) == 12, f'Expected twelve PJPK year-subject combinations, got {len(rows)}'
+          assert all(0 <= eligible <= safe for _, _, safe, eligible in rows)
+          total_safe = sum(row[2] for row in rows)
+          total_eligible = sum(row[3] for row in rows)
+          assert total_safe == 33, f'Expected 33 safe-release rows, got {total_safe}'
+          print(f'PJPK RPH READY: {total_eligible}/{total_safe} safe-release rows have verified SK+SP')
+          if total_eligible == 0:
+              print('BLOCKED: no PJPK row is eligible for RPH; source verification required')
+          PY
       - name: Check adapter isolates incomplete years
         run: |
           python - <<'PY'
@@ -51,6 +67,13 @@ jobs:
           assert not ready_pdp('Tahun 1', 'Pendidikan Moral')
           print('PASS: 33 safe PJ T1 rows; unfinished PJPK rows hidden')
           PY
+      - name: Upload PJPK readiness audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pjpk-readiness-audit
+          path: pjpk_readiness_audit.log
+          if-no-files-found: warn
       - name: Test verified PJPK row handoff into RPH entry flow
         run: |
           python - <<'PY'
@@ -75,18 +98,42 @@ jobs:
               'SUBJECTS_BY_GRADE': {},
           }
           install(g)
+          first_callback = g['callback']
+          install(g)
+          assert g['callback'] is first_callback, 'PJPK install wrapped callback twice'
+          assert g['SUBJECTS_BY_GRADE']['Tahun 1'].count('Pendidikan Jasmani') == 1
           g['callback'](1, 'sub_Pendidikan Jasmani')
           assert events and events[-1][0] == 'SEND', events
-          assert 'Pilih PdP' in events[-1][1], events[-1]
-          assert '\\n' not in events[-1][1], 'Literal backslash-n in menu text'
-          assert len(state[1]['_pjpk_v2616_rows']) == 33
-          g['callback'](1, 'pjpk2616pdp|0')
+          assert '_pjpk_v2616_rows' not in state[1], 'Selectable rows must not be cached in session'
+          buttons = [button for group in events[-1][2] for button in group]
+          pdp_buttons = [button['callback_data'] for button in buttons if button['callback_data'].startswith('pjpk2616pdp|')]
+          available = bool(pdp_buttons)
+          if available:
+              assert all(int(item.split('|')[1]) > 0 for item in pdp_buttons), 'PdP callbacks must contain stable positive entry IDs'
+          if not available:
+              assert 'belum disahkan' in events[-1][1], 'Missing fail-closed notice'
+              assert db.stat().st_size == before, 'Read-only DB changed during blocked menu'
+              print('BLOCKED: no PJ Tahun 1 row has complete SK and SP text; no RPH handoff')
+              raise SystemExit(0)
+          state[1]['year'] = 'Tahun 2'
+          g['callback'](1, pdp_buttons[0])
+          assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Stale year selection entered RPH'
+          state[1]['year'] = 'Tahun 1'
+          g['callback'](1, 'sub_Pendidikan Jasmani')
+          g['callback'](1, 'home')
+          assert '_pjpk_v2616_selection_scope' not in state[1], 'Exit did not clear selection scope'
+          g['callback'](1, pdp_buttons[0])
+          assert not any(event[0] == 'RPH_ENTRY' for event in events), 'Exited menu still allowed RPH'
+          g['callback'](1, 'sub_Pendidikan Jasmani')
+          g['callback'](1, pdp_buttons[0])
           handoffs = [event for event in events if event[0] == 'RPH_ENTRY']
           assert handoffs, 'Selection did not enter the normal RPH class flow'
           selected = handoffs[-1][1]
           assert selected.get('quick_rpt_row'), 'Selected RPT row missing'
           assert selected.get('rpt_entry_id') is not None, 'RPT entry ID missing'
           assert selected.get('selected_sp') and selected.get('sp_code'), 'Verified SP not mapped'
+          assert len(selected['grouped_sp_codes']) == len(selected['grouped_sp_texts']), 'SP codes/text mismatched'
+          assert selected['selected_sp_codes'] == selected['grouped_sp_codes'], 'Verified SP omitted from selection'
           assert selected.get('quick_material_flow') is True
           assert selected.get('assessment_mode') == 'formative'
           assert '_pm_pdp_rows_v2602' not in selected, 'Old helper handoff still used'

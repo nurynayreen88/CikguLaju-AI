@@ -1,0 +1,55 @@
+{
+  "status": "audit_only_not_release_authorization",
+  "total_editorial_records": 18,
+  "overlap_groups": [
+    {
+      "ids": [
+        2232,
+        2252,
+        2352,
+        2353
+      ],
+      "area": "PK 8.1 pemakanan",
+      "reason": "2232 and 2252 overlap textbook/SP scope of 2352 (8.1.1) and 2353 (8.1.2). Different wording does not establish distinct RPT lesson slots.",
+      "action": "Resolve exact RPT PdP slots before promotion; do not count as four unique lessons."
+    },
+    {
+      "ids": [
+        2249,
+        2344
+      ],
+      "area": "PK 1.1 postur rehat tidur",
+      "reason": "Same core topic with broad and specific editorial drafts.",
+      "action": "Resolve RPT placement and choose or differentiate by verified SP."
+    },
+    {
+      "ids": [
+        2250,
+        2345
+      ],
+      "area": "PK 1.2 keselamatan sentuhan",
+      "reason": "Shared learning scope; distinct editorial IDs alone do not prove distinct lessons.",
+      "action": "Check textbook and RPT slot before promotion."
+    },
+    {
+      "ids": [
+        2251,
+        2346
+      ],
+      "area": "PK 2.1 bahan ketagihan",
+      "reason": "Shared tobacco, alcohol and drugs learning scope.",
+      "action": "Resolve actual sequence and SP allocation."
+    }
+  ],
+  "release_gate": {
+    "production_ready": false,
+    "requires": [
+      "direct DSKP SK/SP mapping",
+      "textbook page validation",
+      "exact RPT slot",
+      "runtime RPH generation",
+      "A4 visual review"
+    ]
+  },
+  "database_migration": "none"
+}

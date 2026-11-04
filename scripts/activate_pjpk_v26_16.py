@@ -12,6 +12,8 @@ def install(g):
 
     subjects = (("🏃 Pendidikan Jasmani", "Pendidikan Jasmani"),
                 ("❤️ Pendidikan Kesihatan", "Pendidikan Kesihatan"))
+    if g.get("_pjpk_v2616_installed"):
+        return
     old_callback = g["callback"]
     rebuild_failed = [False]
 
@@ -49,36 +51,37 @@ def install(g):
                 con.row_factory = sqlite3.Row
                 for row in rows:
                     row["_std"] = [dict(item) for item in con.execute(
-                        """SELECT standard_type,standard_code,standard_text,sequence_no
+                        """SELECT standard_type,standard_code,standard_text,sequence_no,verified
                         FROM rpt_entry_standards WHERE rpt_entry_id=? AND verified=1
                         ORDER BY CASE standard_type WHEN 'SK' THEN 0 ELSE 1 END,sequence_no,id""",
                         (row["id"],))]
         except (sqlite3.Error, OSError) as exc:
             print("PJPK standards lookup failed closed:", exc, flush=True)
             return []
-        # Never invent SK; a verified SP is mandatory for RPH selection.
-        return [row for row in rows if any(
-            item["standard_type"] == "SP" and str(item.get("standard_code") or "").strip()
+        # Both verified SK and SP with actual text are mandatory for RPH selection.
+        return [row for row in rows if all(any(
+            item["standard_type"] == kind and item.get("verified") in (1, True)
+            and str(item.get("standard_code") or "").strip()
+            and str(item.get("standard_text") or "").strip()
             for item in row["_std"]
-        )]
+        ) for kind in ("SK", "SP"))]
 
     def menu(cid, page=0):
         state = g["state"].setdefault(cid, {})
         subject = state.get("subject", "")
         year = state.get("year", "")
         rows = rows_for(year, subject)
-        state["_pjpk_v2616_rows"] = rows
         if not rows:
             return g["send"](cid,
                 "🚧 <b>PdP PJPK untuk pilihan ini belum disahkan sepenuhnya.</b> Data belum siap tidak digunakan untuk RPH.",
                 [[{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}],
                  [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
-        page = max(0, int(page))
+        page = max(0, min(int(page), max(0, (len(rows) - 1) // 12)))
         start, per_page = page * 12, 12
         keyboard = []
         for index, row in enumerate(rows[start:start + per_page], start):
             label = f"PdP {row['sequence_no']} • {row.get('unit_title') or row.get('topic') or ''}"
-            keyboard.append([{"text": label[:60], "callback_data": f"pjpk2616pdp|{index}"}])
+            keyboard.append([{"text": label[:60], "callback_data": f"pjpk2616pdp|{row['id']}"}])
         navigation = []
         if page:
             navigation.append({"text": "⬅️", "callback_data": f"pjpk2616page|{page - 1}"})
@@ -98,7 +101,7 @@ def install(g):
         for item in row.get("_std") or []:
             code = str(item.get("standard_code") or "").strip()
             text = str(item.get("standard_text") or "").strip()
-            if not code:
+            if not code or not text or item.get("verified") not in (1, True):
                 continue
             if item.get("standard_type") == "SK" and code not in sk_codes:
                 sk_codes.append(code)
@@ -106,7 +109,7 @@ def install(g):
             elif item.get("standard_type") == "SP" and code not in sp_codes:
                 sp_codes.append(code)
                 sp_texts.append(text)
-        if not sp_codes:
+        if not sk_codes or not sp_codes or any(not text for text in sk_texts + sp_texts):
             return menu(cid)
 
         stale_keys = (
@@ -120,10 +123,16 @@ def install(g):
             "rpt_activity_note", "rpt_assessment_note",
             "_quick_selected_rpt_row_v2388", "quick_rpt_row",
         )
+        lesson_to_class = g.get("_lesson_to_class_v2439")
+        if not callable(lesson_to_class):
+            return g["send"](cid,
+                "⚠️ Laluan pemilihan kelas untuk RPH belum tersedia; data PJPK tidak dihantar ke laluan lain.",
+                [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+
         for key in stale_keys:
             state.pop(key, None)
 
-        state["pjpk_generic_mode_v2616"] = not bool(sk_codes)
+        state["pjpk_generic_mode_v2616"] = False
         state["task"] = "quick_material"
         state["quick_material_flow"] = True
         state["assessment_mode"] = "formative"
@@ -145,9 +154,9 @@ def install(g):
         state["grouped_sk_codes"] = sk_codes
         state["selected_sk_codes"] = sk_codes
         state["grouped_sk_texts"] = sk_texts
-        state["grouped_sp_codes"] = sp_codes[:4]
-        state["selected_sp_codes"] = sp_codes[:4]
-        state["grouped_sp_texts"] = sp_texts[:4]
+        state["grouped_sp_codes"] = sp_codes
+        state["selected_sp_codes"] = sp_codes
+        state["grouped_sp_texts"] = sp_texts
         if sk_codes:
             state["selected_sk"] = sk_codes[0]
             state["sk_code"] = sk_codes[0]
@@ -156,18 +165,14 @@ def install(g):
         state["sp_code"] = sp_codes[0]
         state["sp_text"] = sp_texts[0]
 
-        lesson_to_class = g.get("_lesson_to_class_v2439")
-        if callable(lesson_to_class):
-            return lesson_to_class(cid)
-        return g["send"](cid,
-            "⚠️ Laluan pemilihan kelas untuk RPH belum tersedia; data PJPK tidak dihantar ke laluan lain.",
-            [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+        return lesson_to_class(cid)
 
     def callback(cid, data):
         state = g["state"].setdefault(cid, {})
         value = str(data or "")
         if value in ("sub_Pendidikan Jasmani", "sub_Pendidikan Kesihatan"):
             state["subject"] = value[4:]
+            state["_pjpk_v2616_selection_scope"] = (state.get("year"), state["subject"])
             state["task"] = "quick_material"
             state["quick_material_flow"] = True
             state["assessment_mode"] = "formative"
@@ -178,17 +183,29 @@ def install(g):
                 state.pop(key, None)
             return menu(cid)
         if value.startswith("pjpk2616page|") and state.get("subject") in (s for _, s in subjects):
+            if state.get("_pjpk_v2616_selection_scope") != (state.get("year"), state.get("subject")):
+                return menu(cid)
             try:
                 return menu(cid, int(value.split("|", 1)[1]))
-            except ValueError:
+            except (ValueError, OverflowError):
                 return menu(cid)
         if value.startswith("pjpk2616pdp|") and state.get("subject") in (s for _, s in subjects):
-            rows = state.get("_pjpk_v2616_rows") or rows_for(state.get("year"), state.get("subject"))
+            if state.get("_pjpk_v2616_selection_scope") != (state.get("year"), state.get("subject")):
+                return menu(cid)
+            rows = rows_for(state.get("year"), state.get("subject"))
             try:
-                row = rows[int(value.split("|", 1)[1])]
+                entry_id = int(value.split("|", 1)[1])
+                if entry_id <= 0:
+                    return menu(cid)
+                row = next((item for item in rows if item.get("id") == entry_id), None)
+                if row is None:
+                    return menu(cid)
             except (ValueError, IndexError):
                 return menu(cid)
             return commit_pdp(cid, row)
+        if value in ("home", "choose_grade"):
+            state.pop("_pjpk_v2616_selection_scope", None)
         return old_callback(cid, data)
 
     g["callback"] = callback
+    g["_pjpk_v2616_installed"] = True
