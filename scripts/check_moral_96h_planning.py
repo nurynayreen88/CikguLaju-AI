@@ -65,7 +65,10 @@ def check_year(y, master):
                     "cadangan 60 minit" in source), path
             assert "60 minit" in source, path
             assert len(source) >= 2000, path
-            assert "halaman" in source.lower() and "permulaan" in source.lower(), path
+            if y == 6 and r["Unit"] == "4":
+                assert "tidak mendakwa rujukan halaman buku teks" in source, path
+            else:
+                assert "halaman" in source.lower() and "permulaan" in source.lower(), path
             for section in REQUIRED_SECTIONS:
                 assert section in source, (y, path, section)
             codes = actual_codes
