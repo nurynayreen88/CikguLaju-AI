@@ -5,10 +5,10 @@
 **Tema/Unit:** Keselamatan; U7: Waspada Selalu  
 **Tajuk aktiviti:** Hindari Laluan Bahaya  
 **Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks  
+**Standard Pembelajaran (SP):** 5.1.3 (ii) — Memahami dan menggunakan kata adjektif perasaan mengikut konteks  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 50  
-**Fokus:** tatabahasa — Hindari Laluan Bahaya  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Hindari Laluan Bahaya'.  
+**Fokus:** tatabahasa — kata adjektif perasaan  
+**Objektif PdP:** Murid dapat menggunakan empat kata adjektif perasaan dalam ayat yang sesuai dengan situasi melalui laluan berbahaya.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Hindari Laluan Bahaya' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U7: Waspada Selalu.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Hindari Laluan Bahaya'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata kerja mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Hindari Laluan Bahaya'.
+## Aktiviti 1 — Penerokaan kandungan Buku Teks (15 minit)
+**Guru:** Membimbing bacaan petikan Hindari Laluan Bahaya pada BT m/s 50 dan menunjukkan contoh kata adjektif perasaan seperti risau, bimbang, sedih dan lega.
+**Murid:** Mengenal pasti empat kata adjektif perasaan dan menerangkan situasi yang menimbulkan perasaan tersebut.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Hindari Laluan Bahaya' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Membimbing bina ayat bertema berhati-hati di laluan berisiko menggunakan empat kata adjektif perasaan.
+**Murid:** Membina empat ayat yang mengaitkan perasaan dengan sebab berdasarkan situasi petikan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir pemilihan kata adjektif perasaan dan kesesuaian empat ayat.
+**Murid:** Membaiki satu contoh yang tidak tepat.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Hindari Laluan Bahaya' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
