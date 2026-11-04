@@ -4,7 +4,7 @@
 **Complementary SP:** Listening 1.2.5  
 **Topic:** Where are you from?  
 **References:** SB p.14; TB p.30 Revision and Activity 1  
-**Audio:** Track 17 (KPM SOW; CD1 designation requires independent TB/audio verification)  
+**Audio:** Class CD1 Track 17 (printed TB p.30 Activity 1; recording content/Telegram delivery unverified)  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
@@ -12,8 +12,8 @@
 **Pupils:** Name a country and describe an action in a picture.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow TB Revision and Activity 1 with Track 17; pupils answer supported questions.
-**Pupils:** Listen to Track 17 and answer supported present continuous questions.
+**Teacher:** Follow TB Revision and Activity 1 with Class CD1 Track 17; pupils answer supported questions.
+**Pupils:** Listen to Class CD1 Track 17 and answer supported present continuous questions.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Demonstrate an action card and the exchange 'What is he doing?' / 'He's ...ing', then guide pupils to prepare two cards and practise in pairs.
