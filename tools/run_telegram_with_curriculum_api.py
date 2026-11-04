@@ -331,3 +331,15 @@ except Exception as _proof_first_exc:
     PROOF_FIRST_PAYMENT_ACTIVE = False
     print("Proof-first payment feature unavailable:",
           type(_proof_first_exc).__name__, flush=True)
+
+
+# Public Telegram manual: add one main-menu button and send a PDF to any user
+# without decrementing RPH credits or requiring payment. Install last so
+# existing private-referral navigation is preserved in the final keyboard.
+try:
+    from web.manual_pengguna_telegram import install as install_user_manual
+    USER_MANUAL_MENU_ACTIVE = bool(install_user_manual(telegram_runtime))
+except Exception as _manual_exc:
+    USER_MANUAL_MENU_ACTIVE = False
+    print("Public user manual menu unavailable:",
+          type(_manual_exc).__name__, flush=True)

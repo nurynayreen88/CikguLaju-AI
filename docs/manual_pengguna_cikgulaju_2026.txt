@@ -1,0 +1,102 @@
+# CIKGULAJU AI
+## MANUAL PENGGUNA | Edisi 4 November 2026
+
+Panduan langkah demi langkah untuk guru sekolah rendah menggunakan bot Telegram CikguLaju AI. Nama menu dan ketersediaan bahan tertakluk pada kemas kini semasa.
+
+## 01. PENGENALAN DAN MENU UTAMA
+CikguLaju AI ialah pembantu penyediaan bahan pengajaran dan pembelajaran (PdP) melalui Telegram. Guru boleh memilih tahun, subjek, tajuk dan Lesson/PdP untuk mendapatkan RPH dan bahan yang tersedia.
+- Sediakan Bahan PdP: cari bahan mengikut Tahun/Year, Subjek, Unit atau Tajuk dan Lesson/PdP.
+- RPH Hari Ini: bantu mencari RPH berdasarkan kelas dan jadual waktu yang disimpan.
+- RPT 2027: muat turun Rancangan Pengajaran Tahunan bagi subjek dan tahun yang tersedia; akses berbayar diperlukan.
+- Profil Saya: semak maklumat akaun, kelas serta status akses.
+- 10 Janaan Percuma: semak kuota percubaan RPH jika masih layak.
+- Rakan Pembangun: akses maklumat pakej RM10 sekali bayar dan status penyertaan.
+- Langganan: lihat pakej berbayar dan kaedah pembayaran.
+- Manual Pengguna: muat turun panduan ini secara percuma.
+- Referral Saya: hanya dipaparkan kepada ahli referral yang dijemput atau diluluskan oleh admin.
+Kembali ke menu utama menggunakan butang Menu Utama atau arahan /start. Jika butang lama tidak berfungsi, buka menu baharu.
+
+## 02. MENDAFTAR DAN MENYEDIAKAN PROFIL
+1. Buka bot Telegram rasmi CikguLaju melalui pautan yang diberikan oleh pentadbir atau saluran rasmi.
+2. Tekan Start atau taip /start.
+3. Lengkapkan maklumat profil yang diminta. Semak negeri, kelas dan butiran pengajaran.
+4. Kembali ke menu utama selepas pendaftaran selesai.
+Gunakan akaun Telegram yang sama ketika mencuba bot, membuat bayaran dan menghantar resit; kuota dan akses terikat pada akaun tersebut.
+
+## 03. KELAS DAN JADUAL WAKTU
+1. Buka Profil Saya dan semak maklumat guru.
+2. Daftarkan kelas mengikut nama dan tahun sebenar.
+3. Jika menu Upload Jadual Waktu tersedia, muat naik imej jadual yang jelas.
+4. Semak hasil bacaan: hari, masa, subjek dan kelas. Betulkan sebelum menjana RPH.
+5. Selaraskan dengan cuti sekolah, cuti negeri, cuti tambahan dan perubahan jadual sebenar.
+Maklumat jadual yang tidak lengkap atau salah boleh menyebabkan cadangan RPH Hari Ini tidak tepat.
+
+## 04. SEDIAKAN RPH MENGIKUT LESSON / PDP
+1. Tekan Sediakan Bahan PdP.
+2. Pilih Tahun atau Year yang diajar.
+3. Pilih subjek daripada senarai.
+4. Pilih Unit, Tema atau Tajuk yang sepadan.
+5. Pilih nombor Lesson/PdP dengan berpandukan RPT dan kemajuan sebenar kelas.
+6. Pilih RPH atau bahan yang tersedia. Jika ditawarkan, Word sesuai untuk suntingan dan PDF untuk simpanan/cetakan.
+Contoh: Sediakan Bahan PdP > Year 3 > English > Unit/Tajuk > Lesson 025 > RPH.
+Tidak semua Lesson mempunyai semua jenis bahan atau audio. Semak nombor halaman buku teks dan arahan aktiviti sebelum mengajar.
+
+## 05. RPH HARI INI
+1. Pastikan kelas dan jadual waktu telah disimpan.
+2. Tekan RPH Hari Ini pada menu utama.
+3. Semak kelas, subjek, tarikh dan Lesson yang dicadangkan.
+4. Betulkan jika cadangan tidak sepadan dengan kemajuan kelas atau jadual terkini.
+5. Jana atau muat turun RPH dalam format yang ditawarkan.
+Sebelum guna, periksa objektif, SK/SP, masa, aktiviti guru/murid, pentaksiran dan bahan. RPH perlu disesuaikan dengan tahap murid sebenar.
+
+## 06. MUAT TURUN RPT 2027
+1. Tekan RPT 2027.
+2. Pilih tahun dan subjek yang dipaparkan.
+3. Tekan pilihan muat turun PDF yang tersedia.
+4. Simpan fail dan semak agihan Lesson/PdP mengikut takwim dan jadual sekolah.
+RPT 2027 hanya untuk akaun dengan kelayakan akses, seperti Rakan Pembangun yang telah disahkan atau langganan aktif. Ketersediaan dan status semakan fail mungkin berbeza mengikut subjek.
+
+## 07. PERCUBAAN, LANGGANAN DAN RAKAN PEMBANGUN
+- Percubaan percuma: 10 janaan RPH untuk pengguna yang layak; baki dipaparkan dalam bot.
+- Langganan: paparan pembayaran semasa ialah RM5 untuk akses 30 hari.
+- Rakan Pembangun: RM10 sekali bayar untuk akses sepanjang CikguLaju AI beroperasi; kuota penyertaan terhad.
+Semak amaun terkini yang dipaparkan dalam bot sebelum membayar. Jangan bergantung pada tangkap layar atau maklumat harga lama.
+
+## 08. CARA BAYAR DAN HANTAR RESIT
+1. Pilih Langganan atau Rakan Pembangun.
+2. Tekan Papar QR dan semak amaun pakej.
+3. Bayar melalui QR DuitNow yang dipaparkan.
+4. Tekan Hantar Resit dan hantar gambar atau PDF resit melalui chat peribadi bot yang sama.
+5. Selepas gambar/PDF resit diterima, permohonan akan masuk Pending Pembayaran untuk semakan admin.
+6. Tunggu admin mengesahkan transaksi sebelum akses diaktifkan.
+Membuka QR atau menekan Hantar Resit SAHAJA tidak mencipta permohonan Pending. Resit yang dihantar bukan pengesahan bayaran automatik. Jika resit sudah dihantar, jangan buat bayaran kali kedua semata-mata kerana status masih Pending. Hubungi admin melalui saluran rasmi jika perlu.
+
+## 09. STATUS AKSES DAN REFERRAL TERTUTUP
+- Buka Profil Saya untuk semak status akaun, kelayakan dan maklumat pengguna.
+- Lihat 10 Janaan Percuma untuk baki kuota percubaan.
+- Buka Rakan Pembangun untuk menyemak status aktif selepas pembayaran diluluskan.
+- Jika dijemput sebagai ahli referral, menu Referral Saya membolehkan anda berkongsi pautan peribadi dan menyemak pendaftaran serta mata.
+- Mata referral: 20% daripada pembayaran pertama yang layak dan disahkan; contohnya RM10 memberi 2 mata dan RM5 memberi 1 mata.
+- Pendaftaran tanpa bayaran yang disahkan tidak memberikan mata. Mata bukan wang tunai dan belum mempunyai fungsi penebusan.
+
+## 10. MASALAH LAZIM
+- Butang lama tidak berfungsi: buka /start dan gunakan butang baharu.
+- Tidak jumpa subjek, tajuk atau Lesson: semak pilihan tahun, unit dan bahan yang telah tersedia.
+- RPH berbeza daripada PdP sebenar: pilih semula Lesson yang sepadan dengan RPT serta kemajuan murid.
+- Jadual waktu tersalah baca: gunakan imej yang lebih jelas dan betulkan kelas/subjek sebelum menjana RPH.
+- Sudah bayar tetapi akses tidak aktif: pastikan gambar/PDF resit dihantar dalam chat peribadi bot, kemudian tunggu semakan admin.
+- Resit sudah dihantar dan masih Pending: simpan bukti, jangan bayar semula dan hubungi admin.
+- Baki kuota atau status tidak tepat: pastikan akaun Telegram yang sama digunakan dan rujuk admin.
+
+## 11. SEMAKAN AKHIR SEBELUM MENGGUNAKAN RPH
+- Pastikan tahun, subjek, kelas dan tarikh betul.
+- Semak Lesson/PdP dengan buku teks, RPT dan kemajuan sebenar murid.
+- Semak Standard Kandungan / Standard Pembelajaran yang berkaitan.
+- Sesuaikan objektif, masa, langkah aktiviti dan penilaian.
+- Buka dan semak fail Word atau PDF sebelum dicetak.
+- Simpan bahan PdP serta resit pembayaran dengan selamat.
+Jangan berikan OTP, kata laluan atau maklumat pembayaran sulit kepada sesiapa.
+
+## RINGKASAN
+Buka bot > pilih menu > pilih Tahun/Subjek > pilih Lesson/PdP > pilih bahan > muat turun > semak > gunakan.
+Manual ini untuk pengguna bot Telegram CikguLaju AI, bukan panduan teknikal pentadbir. CikguLaju terus ditambah baik dan nama pilihan atau jenis bahan mungkin berubah.
