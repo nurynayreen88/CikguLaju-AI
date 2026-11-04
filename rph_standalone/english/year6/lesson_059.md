@@ -7,32 +7,32 @@
 **Language focus:** Spelling of common words, e.g. played, love, football  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.57; TB pp.94–95  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on different occupations.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read PB p.57's code-breaking tasks, answer two text questions, decode a message and write an original coded message with accurate spelling.  
+**PBD evidence:** Two supported reading answers and a correct decoded message (Reading 3.2.2), plus correctly spelled words in a new coded sentence (Writing 4.3.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Introduce the SOW Fizz-Bump counting code with multiples of 3 and 5.  
+**Pupils:** Count in a circle, saying fizz or bump at the correct numbers.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce jobs, places of work, skills and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Spelling of common words, e.g. played, love, football.  
-**Pupils:** Predict the text from occupation picture cards; highlight two useful clues or words.
+**Teacher:** Follow TB pp.94–95 number-letter codes and PB p.57 Activity 1.  
+**Pupils:** Read two coded words and answer the text's opening questions.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about different occupations; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Guide PB p.57 Activity 2; model decoding without giving all the answers.  
+**Pupils:** Decode a message using the printed code and check spelling.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to different occupations. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow TB p.94 Activities 3–4: pairs design codes and exchange secret messages.  
+**Pupils:** Write one original coded sentence and decode a partner's message.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check both text evidence and accurate common-word spelling in decoded messages.  
+**Pupils:** Show two reading answers and correct one spelling error.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use TB p.94 music or name-letter warm-up to recap code language.  
+**Pupils:** Spell one word formed from letters of their name.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

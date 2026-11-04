@@ -7,32 +7,32 @@
 **Language focus:** Present perfect questions with How long..? and answers with for and since  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.51; TB pp.84–85  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on different occupations.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Conduct an interview about how long classmates have done familiar activities, using four How long...? questions and for/since answers.  
+**PBD evidence:** Four clear personal-information answers using for/since (Speaking 2.1.1), and four understood partner questions (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use TB p.84 Warm-up Bingo with hobbies and jobs.  
+**Pupils:** Identify one completed bingo word and use it in a short sentence.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What does a person in this job do?”, drawing on Present perfect questions with How long..? and answers with for and since.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.84 PB p.51 Activity 1 to elicit How long...? with for and since.  
+**Pupils:** Distinguish a duration from a starting point in two example answers.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow TB p.84 Activities 2–3; have pairs write four questions before practising without notes.  
+**Pupils:** Write and orally rehearse How long...? questions, answering with for or since.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Re-pair pupils for a mini-interview; then let groups of four share partner facts.  
+**Pupils:** Ask four questions and describe two facts about another pupil's experience.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess correct question order, duration expressions and independently answered listening questions.  
+**Pupils:** Correct one use of for/since and give two intelligible personal details.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use TB p.85 Cooler: How long has Lili...? to check consolidation.  
+**Pupils:** Give one accurate for/since answer from the cooler.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
