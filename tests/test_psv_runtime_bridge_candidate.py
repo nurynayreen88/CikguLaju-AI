@@ -106,5 +106,22 @@ class PSVBridgeTests(unittest.TestCase):
             self.assertIsNone(psv.load_candidate(5, 39, preview=True, root=root))
 
 
+    def test_staging_runtime_entrypoint_gate_remains_off_by_default(self):
+        """Source-level contract: production entrypoint remains explicitly opt-in."""
+        path = ROOT / "tools" / "run_telegram_with_curriculum_api.py"
+        entrypoint = path.read_text(encoding="utf-8")
+        self.assertIn("from web.psv_2027_rph_release_bridge import install", entrypoint)
+        self.assertIn("PSV_RPH_2027_RELEASE_ACTIVE = bool(install_psv_rph_2027(telegram_runtime))",
+                      entrypoint)
+        self.assertNotIn("install_psv_rph_2027(telegram_runtime, enabled=True", entrypoint)
+        self.assertNotIn("install_psv_rph_2027(telegram_runtime, preview=True", entrypoint)
+        self.assertNotIn("psv_release_approval.json", entrypoint)
+        with patch.dict(os.environ, {psv.FLAG: ""}):
+            fake = SimpleNamespace(_rph_rows=lambda state: {"safe": True})
+            self.assertFalse(psv.install(fake))
+            self.assertFalse(hasattr(fake, "CIKGULAJU_PSV_RPH_BRIDGE_ACTIVE"))
+            self.assertEqual(fake._rph_rows({}), {"safe": True})
+
+
 if __name__ == "__main__":
     unittest.main()
