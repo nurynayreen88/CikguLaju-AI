@@ -1,0 +1,99 @@
+name: PJPK 2027 RPT candidate PDFs and Word QA
+on:
+  push:
+    branches:
+      - release/pjpk-rpt-2027-draft-20261104
+    paths:
+      - 'scripts/build_pjpk_rpt_2027.py'
+      - 'rpt_2027/pjpk/pjpk_2027_rpt_manifest.json'
+      - 'rph_standalone/pjpk/**'
+      - '.github/workflows/pjpk-rpt-2027-draft.yml'
+  pull_request:
+    paths:
+      - 'scripts/build_pjpk_rpt_2027.py'
+      - 'rpt_2027/pjpk/**'
+      - 'rph_standalone/pjpk/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF + editable Word dependencies
+        run: python -m pip install --disable-pip-version-check reportlab python-docx pypdf
+      - name: Build 339 candidate PdP into 5 RPT PDF and Word
+        run: python scripts/build_pjpk_rpt_2027.py --out-dir dist/RPT_PJPK_2027
+      - name: Validate five landscape PDFs and five Word documents
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          from pypdf import PdfReader
+          import json
+          m=json.loads(Path("rpt_2027/pjpk/pjpk_2027_rpt_manifest.json").read_text(encoding="utf-8"))
+          assert len(m["records"])==339 and len(m["weeks"])==38
+          assert all(r["ready"] is False for r in m["records"])
+          p=Path("dist/RPT_PJPK_2027")
+          pdfs=list(p.glob("*.pdf")); docs=list(p.glob("*.docx"))
+          assert len(pdfs)==len(docs)==5
+          for file in pdfs:
+              r=PdfReader(str(file))
+              assert len(r.pages)>=5, (file,len(r.pages))
+              assert all(float(v.mediabox.width)>800 and float(v.mediabox.height)<610 for v in r.pages), file
+              text="\n".join(page.extract_text() or "" for page in r.pages)
+              assert "DRAF CADANGAN" in text
+              assert "MINGGU PENGAJARAN 01" in text
+              assert "MINGGU PENGAJARAN 38" in text
+              if "Tahun_6_" in file.name:
+                  assert "BLOK" in text and "5.2.2" in text
+          zipfile=Path("dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip")
+          with ZipFile(zipfile) as z:
+              assert len(z.namelist())==11
+              assert z.testzip() is None
+          print("PASS: 339 source-aligned PdP, 5 landscape A4 PDFs, 5 editable Word, ZIP intact")
+          PY
+      - name: Verify real DOCX rendering for two representative years
+        run: |
+          sudo apt-get -qq update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get -y -qq install --no-install-recommends libreoffice-writer fonts-dejavu-core
+          mkdir -p dist/docx-render
+          libreoffice -env:UserInstallation=file:///tmp/lo_rpt_pjpk2027 --headless --convert-to pdf             --outdir dist/docx-render dist/RPT_PJPK_2027/RPT_PJPK_Tahun_2_2027_DRAF.docx             dist/RPT_PJPK_2027/RPT_PJPK_Tahun_6_2027_DRAF.docx
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          pdfs=list(Path('dist/docx-render').glob('*.pdf'))
+          assert len(pdfs)==2, pdfs
+          for pdf in pdfs:
+              pages=PdfReader(str(pdf)).pages
+              assert len(pages)>3
+              assert all(float(p.mediabox.width)>800 for p in pages)
+          print("PASS: DOCX editable landscape rendering")
+          PY
+      - name: Upload RPT PJPK teacher-review pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: RPT-PJPK-2027-Tahun2-6-DRAF-PDF-WORD
+          path: dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit verified teacher-review PDFs to isolated release branch
+        if: github.event_name == 'push'
+        run: |
+          cp dist/RPT_PJPK_2027/*.pdf rpt_2027/pjpk/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/pjpk/RPT_PJPK_Tahun_*_2027_DRAF.pdf
+          git diff --cached --quiet || git commit -m "build(pjpk rpt): add validated A4 PDF candidates for Telegram paid menu"
+          git push origin HEAD:refs/heads/release/pjpk-rpt-2027-draft-20261104
