@@ -46,6 +46,18 @@ def check_year(y, master):
         path = ROOT / r["Rujukan_RPH_Sedia_Ada"]
         assert path.is_file(), (y, r["Rujukan_RPH_Sedia_Ada"])
         source = path.read_text(encoding="utf-8")
+        if y == 6 and r["Unit"] == "4":
+            # The verified Book TOC has a DIFFERENT Unit 4 topic from DSKP SK4.
+            # Keep all seven Year 6 planning sessions on source hold.
+            assert r["Tahap_Semakan_Buku"] == "HOLD_SOURCE_MISMATCH_UNIT4_Y6", (y, r["Sesi_1_96"])
+            assert "Jasa Tokoh Negara Dikenang" not in r["Aktiviti_Guru"], (y, r["Sesi_1_96"])
+            if r["Modul"] == "PENGUKUHAN":
+                assert "**BBM:** Kad pameran keunikan budaya" in source, path
+                assert "tidak mendakwa rujukan halaman buku teks" in source, path
+            else:
+                assert "Unit 4 buku teks" in source, path
+        else:
+            assert r["Tahap_Semakan_Buku"] == "VERIFIED_TOC_START_ONLY", (y, r["Sesi_1_96"])
         if r["Modul"] == "PENGUKUHAN":
             assert r["Status_Dalaman"] == "RPH_PENGUKUHAN_DRAF_SUMBER_TOC", y
             assert f"Sesi {r['Sesi_1_96']}" in source, (y, path)
@@ -62,6 +74,14 @@ def check_year(y, master):
         else:
             assert r["Status_Dalaman"] == "RPH_TERSEDIA_BETA80", y
             assert f"PdP {r['PdP_Teras_Asal']}" in source, path
+            assert "60 minit" in source and "Kriteria kejayaan:" in source, path
+            assert len(source) >= 1800, path
+            for section in REQUIRED_SECTIONS:
+                assert section in source, (y, path, section)
+            expected = [x for x in unit["sp"] if x["code"] in actual_codes]
+            assert len(expected) == len(actual_codes), (y, path, actual_codes)
+            assert all(x["text"] in source for x in expected), (y, path, actual_codes)
+            assert "PBD" in source and "Guru" in source and "Murid" in source, path
     weeks_a = master["weeks"]["A"]
     weeks_b = master["weeks"]["B"]
     assert len(weeks_a) == 44 and len(weeks_b) == 44
@@ -86,6 +106,7 @@ def check_year(y, master):
             assert b["SP"] == a["SP"] and b["SK"] == a["SK"]
             assert b["Rujukan_RPH"] == a["Rujukan_RPH_Sedia_Ada"]
             assert b["Modul"] == a["Modul"] and b["Status_Dalaman"] == a["Status_Dalaman"]
+            assert b["Aktiviti_Guru"] == a["Aktiviti_Guru"], (y, group, i, "RPT activity drift")
             assert not b["Tarikh_Kelas_Guru"], (y, group, i)
             seen_weeks.add(wk_id)
         assert len(seen_weeks) == 44, (y, group, "Missing a teaching week")
