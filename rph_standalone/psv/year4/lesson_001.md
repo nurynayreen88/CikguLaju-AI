@@ -13,7 +13,7 @@ Murid dapat mengenal dua unsur seni pada catan basah atas basah dan menguji dua 
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan imej Senja Nan Indah; murid menyebut satu unsur seni atau fungsi karya.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan BT ms 6–7, mengaitkan ruang hadapan-tengah-belakang, harmoni dan kepekatan air, dan murid menyatakan bahasa seni.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan BT ms 6–7 dan mendemonstrasi catan basah atas basah: lembapkan kertas dahulu, sapu cat air ketika permukaannya masih basah, kemudian bandingkan kesan dua kepekatan. Murid mengenal ruang hadapan-tengah-belakang dan harmoni warna.
 **Aktiviti 2 (25 minit) — Amali:** Murid mencuba teknik: Bandingkan sapuan cat air pada kertas lembap menggunakan span dan berus; uji dua tahap kepekatan; mereka mencatat dua kesan yang berbeza.
 **Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua percubaan serta istilah seni dan mencatat PBD.
 **Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.

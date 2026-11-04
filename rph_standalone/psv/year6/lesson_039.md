@@ -18,7 +18,7 @@ Murid dapat menghasilkan folio ringkas Beg Batik Rekaanku dan membuat apresiasi 
 
 **Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 86–87 dan DSKP SP 3.1.1, memodelkan folio ringkas lima bahagian: sumber motif flora, lakaran, media/teknik resis, bukti proses dan gambar/lakaran akhir. Murid mengumpul bahan kerja PdP 035–038 untuk didokumenkan.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid menyusun lima bahagian folio, melakar atau merakam beg batik, menampal bukti proses, melabel media, resis, cantuman dan nilai gunaan. Murid mempamerkan beg bersama folio lalu membuat apresiasi tentang motif berulang, kontra warna dan fungsi serta memberi satu maklum balas membina.
+**Aktiviti 2 (25 minit) — Amali:** Murid menyusun lima bahagian folio, melakar atau merakam beg batik, menampal bukti proses, melabel media, resis, cantuman dan nilai gunaan. Murid mempamerkan beg bersama folio dalam galeri mini lalu membuat apresiasi tentang motif berulang, kontra warna dan fungsi serta memberi satu maklum balas membina.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu folio lima bahagian dan ulasan tentang bahasa seni, teknik serta nilai gunaan. Guru merekod susunan bukti proses, gambar akhir, hasil beg dan apresiasi.
 

@@ -9,13 +9,13 @@
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid boleh melaksana pameran, memberi apresiasi dan menjaga keselamatan karya. Bukti: pelan, kapsyen, foto dan senarai semak.
+Murid dapat mengendalikan pameran akhir penggal, membuat apresiasi karya sendiri/rakan dan mengurus karya serta alatan supaya terpelihara dan ruang kembali bersih. Kriteria kejayaan: sekurang-kurangnya tiga karya dipamerkan selamat, satu ulasan lisan menggunakan bahasa seni dan senarai semak kebersihan serta pemulangan alat.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan susunan galeri selamat.
-**Aktiviti 1 (15 minit):** Guru membimbing peranan kumpulan dan etika apresiasi.
+**Aktiviti 1 (15 minit):** Guru mengingatkan tatacara pameran, keselamatan karya dan peranan pemandu galeri; murid menyemak kawasan, kapsyen dan keperluan mengemas selepas pameran.
 **Aktiviti 2 (25 minit) — Projek:** Murid memasang karya, menerangkan karya sendiri dan mengulas hasil rakan. Selepas itu mereka menyimpan karya dan membersihkan kawasan.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai kerjasama, kreativiti, keselamatan dan apresiasi.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak ulasan bahasa seni, keselamatan susunan karya serta senarai semak pembersihan dan pemulangan alatan sebagai bukti PBD.
 **Penutup (5 minit):** Murid membuat refleksi dan menyusun semula alatan.
 **Pembezaan:** Sediakan templat kapsyen; murid mahir menjadi pemandu galeri.
 **Keselamatan:** Elak paku tajam, jalur elektrik dan laluan sempit.
