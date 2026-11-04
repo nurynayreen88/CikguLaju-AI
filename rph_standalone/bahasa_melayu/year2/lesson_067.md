@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 067
 
-**Tema / Unit:** Kebersihan dan Kesihatan; U9: Aktifkan Diri  
-**Tajuk:** Menjaga Kebersihan Almari Baju  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.4 (iii) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks  
-**Rujukan:** BT1 m/s 59; BA m/s 69-70. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** kata arah dalam teks mengemas almari baju  
-**Objektif:** Pada akhir PdP, murid dapat menggunakan lima kata arah untuk melengkapkan ayat berdasarkan susunan bilik.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: di hadapan, di belakang, di atas, di tepi, di sebelah.
+**ID:** BM2-P067
+**Minggu RPT 2027:** M17 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U9: Aktifkan Diri
+**Tajuk aktiviti:** Menjaga Kebersihan Almari Baju
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.4 (iii) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 59; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Petikan Yahya membersihkan almari baju dengan kata arah atas, bawah, belakang, dalam dan tepi.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengisi lima kata arah yang sesuai dengan kedudukan objek pada gambar.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Menjaga Kebersihan Almari Baju" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar ilustrasi Menjaga Kebersihan Almari Baju daripada BT1 m/s 59 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Menjaga Kebersihan Almari Baju.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membacakan kisah Yahya membersihkan almari dan membandingkan kata arah dengan kata sendi nama.
-**Tindakan murid:** Murid menunjuk kedudukan almari, katil, pintu dan pakaian dalam rajah.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing baca arahan dan cerita mengemas almari sehingga meletakkan baju atas katil
+**Murid:** Gariskan lima kata arah dalam petikan
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru menyediakan rajah bilik dengan lima label kosong untuk ayat kata arah.
-**Tindakan murid:** Murid melengkapkan lima ayat dan menjelaskan kedudukan berdasarkan gambar.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan perbezaan kata arah dengan kata sendi nama di/ke
+**Murid:** Lengkapkan lima ruang kosong dan jelaskan satu arah pilihan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak lima kata arah dan padanan gambar.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak lima kata arah tepat mengikut kedudukan
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran kata arah dalam teks mengemas almari baju serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 5.1.4 (iii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Menjaga Kebersihan Almari Baju.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 59: Petikan Yahya membersihkan almari baju dengan kata arah atas, bawah, belakang, dalam dan tepi; aktiviti dipadankan dengan SP 5.1.4 (iii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

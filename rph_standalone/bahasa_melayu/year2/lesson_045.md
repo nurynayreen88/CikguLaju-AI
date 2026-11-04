@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 045
 
-**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
-**Tajuk:** Berbakti kepada Jiran  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.2 (i), (ii) — Memahami, mengenal pasti dan menggunakan kata kerja mengikut konteks  
-**Sumber:** BT1 m/s 39; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** kata kerja aktif transitif dan pasif dalam bantuan kepada Nek Temah  
-**Objektif:** Pada akhir PdP, murid dapat mengelaskan empat frasa kata kerja dan membina empat ayat aktif/pasif mengikut konteks.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: memotong sayur, memasak bubur, digoreng, disenduk, disusun.
+**ID:** BM2-P045
+**Minggu RPT 2027:** M12 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat
+**Tajuk aktiviti:** Berbakti kepada Jiran
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.2 (i), (ii) — Memahami, mengenal pasti dan menggunakan kata kerja mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 39; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Hana dan ibu membantu Nek Temah yang sakit dengan memasak sayur dan bubur; kata kerja aktif/pasif.
+**Objektif PdP:** Pada akhir PdP, murid dapat membezakan empat kata kerja aktif transitif dan pasif serta membina ayat.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Berbakti kepada Jiran dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Berbakti kepada Jiran daripada BT1 m/s 39 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Berbakti kepada Jiran.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru membaca kisah Hana dan ibunya memasak serta mengemas rumah Nek Temah yang sakit.
-**Tindakan murid:** Murid menggariskan dua kata kerja aktif transitif dan dua kata kerja pasif.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing petikan memasak bubur, memotong sayur, sayur digoreng dan bubur disenduk
+**Murid:** Gariskan kata kerja aktif dan kata kerja pasif dalam petikan
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru menunjukkan pasangan gambar memasak dan menyediakan makanan lalu membimbing dua ayat aktif serta dua ayat pasif.
-**Tindakan murid:** Murid membina empat ayat dan menandakan jenis kata kerja.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan cara menukar fokus pelaku dan objek dalam ayat aktif dan pasif
+**Murid:** Lengkapkan empat kata kerja lalu bina dua ayat aktif dan dua ayat pasif
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Semak empat pengelasan dan empat ayat berkaitan bantuan jiran.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak kata kerja, bentuk imbuhan serta ketepatan konteks cerita
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kata kerja aktif transitif dan pasif dalam bantuan kepada Nek Temah dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 5.1.2 (i), (ii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Berbakti kepada Jiran.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 39: Hana dan ibu membantu Nek Temah yang sakit dengan memasak sayur dan bubur; kata kerja aktif/pasif; aktiviti dipadankan dengan SP 5.1.2 (i), (ii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

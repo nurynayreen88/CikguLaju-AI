@@ -1,34 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 046
 
-**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
-**Tajuk:** Pengukuhan + PKJR  
-**SK:** 1.1 Mendengar dan memberikan respons  
-**SP:** 1.1.2 (iii) — Mendengar, memahami, dan memberikan respons terhadap pesanan.  
-**Sumber:** BT1 m/s 40; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** pengukuhan respons terhadap pesanan; komponen PKJR tertangguh  
-**Objektif:** Pada akhir PdP, murid dapat memberikan respons sesuai terhadap tiga pesanan daripada situasi kelas komuniti.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: pesan kepada rakan; sampaikan maklumat guru; beritahu jadual kelas.
+**ID:** BM2-P046
+**Minggu RPT 2027:** M12 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat
+**Tajuk aktiviti:** Pengukuhan — Pesanan Hari Sukan Perpaduan
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 1.1 Mendengar dan memberikan respons
+**Standard Pembelajaran (SP):** 1.1.2 (iii) — Mendengar, memahami, dan memberikan respons terhadap pesanan.
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 40; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Halaman Pengukuhan respons pesanan Hari Sukan Perpaduan kepada abang Soo Mei tentang badminton dan Rumah Merah.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengulang tiga maklumat pesanan dengan tepat serta sopan.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Pengukuhan + PKJR dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Pengukuhan — Pesanan Hari Sukan Perpaduan daripada BT1 m/s 40 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Pengukuhan — Pesanan Hari Sukan Perpaduan.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru membincangkan semula perbincangan kelas bimbingan dan menyatakan modul PKJR belum dipadankan.
-**Tindakan murid:** Murid mendengar pesanan lalu mengenal pasti penerima dan tindakan diminta.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bacakan dialog pesanan tentang Hari Sukan, pasangan badminton dan pakaian Rumah Merah
+**Murid:** Catat tiga butiran yang perlu disampaikan kepada abang Soo Mei
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru mengagihkan tiga pesanan baharu berkaitan kegiatan kelas komuniti untuk disampaikan secara lisan.
-**Tindakan murid:** Murid menyebut semula dan memberi respons dengan ayat sopan.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan cara mengulang pesanan tanpa menukar nama atau tujuan
+**Murid:** Lakonkan peranan Pravin dan Soo Mei, berikan respons lengkap kepada tiga pesanan
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Nilai respons mendengar sahaja; hasil PKJR tidak direkod sehingga sumber sah.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak penerima, peristiwa dan warna rumah sukan
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan pengukuhan respons terhadap pesanan; komponen PKJR tertangguh dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 1.1.2 (iii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Pengukuhan — Pesanan Hari Sukan Perpaduan.
 
-**Status:** HOLD — komponen PKJR / Penilaian Tema belum diputuskan.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 40: Halaman Pengukuhan respons pesanan Hari Sukan Perpaduan kepada abang Soo Mei tentang badminton dan Rumah Merah; aktiviti dipadankan dengan SP 1.1.2 (iii).
+**Kawalan PKJR:** Label PKJR dalam RPT belum dibuktikan melalui modul rasmi; jangan cipta kod atau aktiviti PKJR.
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

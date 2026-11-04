@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 040
 
-**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
-**Tajuk:** Berkat Kerjasama  
-**SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna  
-**SP:** 3.2.1 (iv) — Membina dan menulis  
-**Sumber:** BT1 m/s 36; BA m/s 44–45; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** membina perenggan tentang hasil kerjasama belajar  
-**Objektif:** Pada akhir PdP, murid dapat menulis satu perenggan lima ayat dengan idea aktiviti dan penanda wacana.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: belajar secara berkumpulan, melayari Internet, menerima hadiah, mengucapkan tahniah.
+**ID:** BM2-P040
+**Minggu RPT 2027:** M11 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat
+**Tajuk aktiviti:** Berkat Kerjasama
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna
+**Standard Pembelajaran (SP):** 3.2.1 (iv) — Membina dan menulis
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 36; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Gambar Yahya belajar di makmal komputer, bekerjasama, melihat keputusan dan menerima hadiah.
+**Objektif PdP:** Pada akhir PdP, murid dapat membina satu perenggan empat ayat dengan penanda wacana sesuai.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Berkat Kerjasama dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Berkat Kerjasama daripada BT1 m/s 36 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Berkat Kerjasama.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru memodelkan cara menggabungkan dua ayat tentang murid menggunakan komputer dan saling membantu.
-**Tindakan murid:** Murid menyusun kad gambar aktiviti Yahya dan kawan-kawan mengikut urutan.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing melihat gambar Yahya melayari Internet, belajar berkumpulan serta menerima hadiah
+**Murid:** Susun peristiwa daripada belajar hingga mengucap tahniah
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru membimbing murid mengembangkan isi menjadi perenggan lengkap menggunakan 'selain itu' dan 'akhirnya'.
-**Tindakan murid:** Murid menulis lima ayat dan membacakan perenggan kepada pasangan.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan penanda wacana 'Selain itu', 'Seterusnya' dan 'Selepas itu'
+**Murid:** Tulis empat ayat menjadi satu perenggan mengikut gambar
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Semak lima ayat, susunan idea dan tanda baca dalam satu perenggan.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak urutan gambar, kaitan ayat dan penanda wacana
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan membina perenggan tentang hasil kerjasama belajar dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 3.2.1 (iv) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Berkat Kerjasama.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 36: Gambar Yahya belajar di makmal komputer, bekerjasama, melihat keputusan dan menerima hadiah; aktiviti dipadankan dengan SP 3.2.1 (iv).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

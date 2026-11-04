@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 055
 
-**Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan  
-**Tajuk:** Minumlah Air untuk Cergas dan Cerdas  
-**SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna  
-**SP:** 3.2.2 (ii) — Membina dan menulis jawapan pemahaman dengan berdasarkan soalan  
-**Sumber:** BT1 m/s 51; BA m/s 60-61; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** menulis jawapan bercapah mengenai kepentingan air kosong  
-**Objektif:** Pada akhir PdP, murid dapat menulis tiga jawapan beralasan berkaitan hidrasi berdasarkan petikan.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: air kosong, cuaca, tahap aktiviti, keletihan dan mengantuk.
+**ID:** BM2-P055
+**Minggu RPT 2027:** M14 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan
+**Tajuk aktiviti:** Minumlah Air untuk Cergas dan Cerdas
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna
+**Standard Pembelajaran (SP):** 3.2.2 (ii) — Membina dan menulis jawapan pemahaman dengan berdasarkan soalan
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 51; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Petikan Minumlah Air untuk Cergas dan Cerdas dengan empat soalan pemahaman bercapah.
+**Objektif PdP:** Pada akhir PdP, murid dapat menjawab empat soalan tentang amalan meminum air dengan alasan berdasarkan petikan.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Minumlah Air untuk Cergas dan Cerdas dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Minumlah Air untuk Cergas dan Cerdas daripada BT1 m/s 51 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Minumlah Air untuk Cergas dan Cerdas.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru memperkenalkan petikan yang menerangkan kepentingan air kepada badan dan akibat kekurangannya.
-**Tindakan murid:** Murid menanda tiga maklumat daripada petikan.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing membaca petikan dan empat soalan mengapakah serta bagaimanakah
+**Murid:** Gariskan sebab dan langkah yang diberikan oleh penulis
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru memberikan tiga soalan mengapa, bila dan apa akibat tentang pengambilan air.
-**Tindakan murid:** Murid membina jawapan lengkap dengan alasan daripada petikan.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan satu jawapan lengkap menggunakan maklumat teks dan alasan
+**Murid:** Tulis empat jawapan berdasarkan soalan bercapah
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Nilai tiga jawapan logik yang berpandukan teks, bukan nasihat kesihatan luar sumber.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat respons tepat menurut sumber teks, bukan cadangan perubatan individu
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan menulis jawapan bercapah mengenai kepentingan air kosong dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 3.2.2 (ii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Minumlah Air untuk Cergas dan Cerdas.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 51: Petikan Minumlah Air untuk Cergas dan Cerdas dengan empat soalan pemahaman bercapah; aktiviti dipadankan dengan SP 3.2.2 (ii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

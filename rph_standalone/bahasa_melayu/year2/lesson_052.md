@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 052
 
-**Tema/Unit:** Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah  
-**Tajuk:** Kemas di Dapur  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.3 (iv) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks  
-**Sumber:** BT1 m/s 48; BA m/s 55-56; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** kata adjektif bentuk dalam kisah Kemas di Dapur  
-**Objektif:** Pada akhir PdP, murid dapat mengenal pasti lima kata adjektif bentuk dan membina tiga ayat.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: jam segi tiga, tong silinder, bulat, bujur, empat segi.
+**ID:** BM2-P052
+**Minggu RPT 2027:** M13 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah
+**Tajuk aktiviti:** Kemas di Dapur
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.3 (iv) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 48; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Objek dapur berbentuk jam segi tiga, tong silinder, penutup bulat dan rak segi empat tepat.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan empat kata adjektif bentuk dan dua ayat berdasarkan teks.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Kemas di Dapur dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Kemas di Dapur daripada BT1 m/s 48 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Kemas di Dapur.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru menunjukkan bentuk jam dan tong sampah yang disebut dalam petikan dapur Hana.
-**Tindakan murid:** Murid memadankan lima kata bentuk dengan gambar perkakas.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing baca petikan Hana mengemas dapur dan kenal pasti bentuk empat objek
+**Murid:** Padankan jam, tong sampah, penutup dan rak dengan bentuknya
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid memerihalkan tiga objek lain di dapur dengan kata adjektif bentuk.
-**Tindakan murid:** Murid membina tiga ayat lengkap dan menyemak sama ada bentuk sesuai dengan objek.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan pembinaan ayat menggunakan kata adjektif bentuk
+**Murid:** Lengkapkan empat ruang kosong dan bina dua ayat tentang objek dapur
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Nilai lima padanan bentuk dan tiga ayat bermakna.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat padanan bentuk tepat dan ayat lengkap
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kata adjektif bentuk dalam kisah Kemas di Dapur dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 5.1.3 (iv) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Kemas di Dapur.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 48: Objek dapur berbentuk jam segi tiga, tong silinder, penutup bulat dan rak segi empat tepat; aktiviti dipadankan dengan SP 5.1.3 (iv).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

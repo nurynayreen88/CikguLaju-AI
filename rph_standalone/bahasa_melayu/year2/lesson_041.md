@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 041
 
-**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
-**Tajuk:** Kamar Ilmu  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.3 (ii) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks  
-**Sumber:** BT1 m/s 37; BA m/s 46; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** kata adjektif warna untuk menyusun buku  
-**Objektif:** Pada akhir PdP, murid dapat mengelaskan lima kata warna dan melengkapkan empat ayat berdasarkan label rak.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: biru, merah, hijau, jingga, kuning; rak kamus.
+**ID:** BM2-P041
+**Minggu RPT 2027:** M11 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat
+**Tajuk aktiviti:** Kamar Ilmu
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.3 (ii) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 37; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Cerita Yahya dan abang melabel rak di kamar ilmu mengikut warna; rak kamus biru.
+**Objektif PdP:** Pada akhir PdP, murid dapat menggunakan empat kata adjektif warna dalam ayat yang sesuai.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Kamar Ilmu dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Kamar Ilmu daripada BT1 m/s 37 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Kamar Ilmu.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru mempamerkan rak buku di kamar ilmu Yahya dan membincangkan kegunaan label warna.
-**Tindakan murid:** Murid mengenal pasti kata adjektif warna daripada teks.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing bacaan petikan label rak buku biru dan warna contoh merah, hijau, jingga
+**Murid:** Kenal pasti tiga warna yang dikaitkan dengan label buku
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru memberi rajah lima rak dan meminta ayat lengkap tentang kedudukan bahan bacaan.
-**Tindakan murid:** Murid melengkapkan empat ayat menggunakan warna label dengan tepat.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Tunjukkan cara melengkapkan cerita warna rak mengikut ilustrasi
+**Murid:** Isi empat tempat kosong dan bina dua ayat warna bagi rak buku
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Nilai lima warna dan empat ayat yang sepadan dengan rajah.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat warna berdasarkan objek, bukan pilihan rawak
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kata adjektif warna untuk menyusun buku dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 5.1.3 (ii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Kamar Ilmu.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 37: Cerita Yahya dan abang melabel rak di kamar ilmu mengikut warna; rak kamus biru; aktiviti dipadankan dengan SP 5.1.3 (ii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.
