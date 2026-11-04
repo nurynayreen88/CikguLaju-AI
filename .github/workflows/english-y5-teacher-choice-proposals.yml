@@ -1,0 +1,37 @@
+name: English Year 5 nine teacher-choice proposals
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year5/teacher_choice_proposals_2027.json'
+      - 'rph_standalone/english/year5/lesson_*.md'
+      - 'rph_standalone/english/year5/sow_standard_gate_2027.json'
+      - 'web/english_y5_teacher_choice_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_y5_teacher_choice_runtime.py'
+      - '.github/workflows/english-y5-teacher-choice-proposals.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/english_y5_teacher_choice_runtime.py'
+      - 'rph_standalone/english/year5/teacher_choice_proposals_2027.json'
+      - 'tests/test_english_y5_teacher_choice_runtime.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  teacher-choice-rph-source-and-document-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify nine 60-minute teacher-choice plans and isolation from 151 gated drafts
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y5_teacher_choice_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_english_y5_rph_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
+          python -m unittest discover -s tests -p 'test_english_y4_word_pdf_rows.py' -v
+          python -m unittest discover -s tests -p 'test_english_y6_rph_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_telegram_optional_wsgi.py' -v
