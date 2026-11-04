@@ -81,7 +81,7 @@ class PSVSourceOrderTests(unittest.TestCase):
         rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
         by_pdp = {row["PdP"]: row for row in rows}
         cases = {
-            "002": ("Alat Tulis Saya", "ms 10–11", "garisan selari", "dua lakaran alat tulis"),
+            "002": ("Alat Tulis Saya", "ms 10–11", "garisan selari", "dua lakaran berlabel"),
             "003": ("Tingkap Damai", "ms 12–13", "tetingkap fokus", "tiga bahagian ruang"),
         }
         for pdp, (title, pages, technique, evidence) in cases.items():
