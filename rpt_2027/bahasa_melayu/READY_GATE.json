@@ -32,7 +32,7 @@
       "runtime_tests_passed": false
     },
     "4": {
-      "rph_all_present": false,
+      "rph_all_present": true,
       "textbook_pages_verified": false,
       "activity_book_pages_verified": false,
       "dskp_full_text_verified": false,
@@ -42,7 +42,7 @@
       "runtime_tests_passed": false
     },
     "5": {
-      "rph_all_present": false,
+      "rph_all_present": true,
       "textbook_pages_verified": false,
       "activity_book_pages_verified": false,
       "dskp_full_text_verified": false,
@@ -52,7 +52,7 @@
       "runtime_tests_passed": false
     },
     "6": {
-      "rph_all_present": false,
+      "rph_all_present": true,
       "textbook_pages_verified": false,
       "activity_book_pages_verified": false,
       "dskp_full_text_verified": false,
@@ -62,5 +62,5 @@
       "runtime_tests_passed": false
     }
   },
-  "note": "BM Tahun 3: 165/165 RPH DRAF, 0 HOLD khusus, 0 READY. Padanan BAM/PKJR dinilai pada tahap draf; BPG penuh, kalendar 2027 negeri, cetakan Word/PDF serta CI/runtime Telegram belum diluluskan."
+  "note": "Tahun 2: 164/164 calon RPH, 29 HOLD; Tahun 3: 165/165 calon RPH DRAF; Tahun 4–6: 496/496 fail calon RPH diwujudkan (semua HOLD semakan sumber). 0 READY keseluruhan. Kelengkapan fail tidak sama dengan audit akademik. Semakan DSKP, BT/BA, PKJR, kalendar, cetakan dan runtime belum lulus."
 }
