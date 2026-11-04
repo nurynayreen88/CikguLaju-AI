@@ -92,7 +92,7 @@ class Year5NineTeacherChoiceProposals(unittest.TestCase):
         for number in CHOICE_LESSONS - PROJECTS:
             p = load_proposal(number)
             self.assertIn("SB p.", p["materials"])
-            self.assertIn("TB p.", p["materials"])
+            self.assertRegex(p["materials"], r"TB pp?\.")
             self.assertNotIn("CikguLaju Project Proposal", p["topic"])
         for number in PROJECTS:
             p = load_proposal(number)
