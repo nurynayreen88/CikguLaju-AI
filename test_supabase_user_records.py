@@ -180,6 +180,47 @@ class DurableUserRecordsTests(unittest.TestCase):
         self.assertEqual(self.runtime._admin_counts()["pending"],0)
         self.assertEqual(self.runtime._admin_counts()["paid"],1)
 
+    def test_telegram_receipt_reference_persists_without_receipt_bytes(self):
+        pid=self.runtime._new_payment_request(301,None,10)
+        message={
+            "message":{
+                "chat":{"id":301,"type":"private"},
+                "from":{"id":301},
+                "message_id":777,
+                "document":{
+                    "file_id":"PRIVATE_TG_FILE_REF",
+                    "file_unique_id":"unique123",
+                    "mime_type":"application/pdf"
+                }
+            }
+        }
+        self.runtime.request=type("Request",(),{
+            "get_json":lambda self,**kw:message
+        })()
+        self.runtime._set_payment_note(pid,"proof_received_admin_notified")
+        new_runtime=Runtime(self.store)
+        payments.install(new_runtime)
+        row=new_runtime._payment_request(pid)
+        self.assertEqual(row["proof_telegram_file_id"],"PRIVATE_TG_FILE_REF")
+        self.assertEqual(row["proof_mime_type"],"application/pdf")
+        self.assertEqual(row["proof_telegram_message_id"],777)
+        self.assertNotIn("receipt_binary",row)
+
+    def test_rejects_proof_reference_from_different_user(self):
+        pid=self.runtime._new_payment_request(301,None,10)
+        message={"message":{
+            "chat":{"id":301,"type":"private"},
+            "from":{"id":302},
+            "message_id":888,
+            "photo":[{"file_id":"UNTRUSTED_FILE"}]
+        }}
+        self.runtime.request=type("Request",(),{
+            "get_json":lambda self,**kw:message
+        })()
+        self.runtime._set_payment_note(pid,"proof_received_admin_notified")
+        self.assertNotIn("proof_telegram_file_id",
+                         self.runtime._payment_request(pid))
+
     def test_one_pending_request_per_user_with_stable_ids(self):
         self.assertEqual(self.runtime._new_payment_request(301,None,10),
                          self.runtime._new_payment_request(301,None,10))
