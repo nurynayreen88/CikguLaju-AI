@@ -8,7 +8,7 @@
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.60–62; TB pp.100  
 **Learning objective:** Write four coherent sentences about PB pp.60–62 using because, so and but with correct punctuation.  
-**PBD evidence:** Four meaningful linked sentences (Writing 4.2.5) and correctly punctuated responses (Writing 4.3.1).  
+**PBD evidence:** Four meaningful linked sentences using because/so/but (Writing 4.2.5) and one relevant detail understood from the teacher-read story (Listening 1.2.3).  
 
 ## Set induction (5 minutes)
 **Teacher:** Recall the Lesson 65 story's characters and central event.  
