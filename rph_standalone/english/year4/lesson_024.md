@@ -3,7 +3,7 @@
 **Topic:** My Week  
 **Main SP:** Reading 3.2.2  
 **Complementary SP:** Reading 3.2.3  
-**References:** SB pp.18–19 Activities 1–2; TB pp.36–37; Track 25 (SOW; CD1 designation pending independent TB/audio verification)  
+**References:** SB pp.18–19 Activities 1–2; TB pp.36–37; Class CD1 Track 25 (printed TB p.36 Activity 1; recording content/Telegram delivery unverified)  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
@@ -11,7 +11,7 @@
 **Pupils:** Name chores shown through mime.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Set a personal-response question before pupils read and listen to Track 25, then check which child they identify with.
+**Teacher:** Set a personal-response question before pupils read and listen to Class CD1 Track 25, then check which child they identify with.
 **Pupils:** Read and listen to Track 25; choose a child they relate to.
 
 ## Activity 2 (20 minutes)
