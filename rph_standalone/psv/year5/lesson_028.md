@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Stabail — Taman Permainan  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Mozek dan Catan — Bunga Kekwa Mekar
+**Unit rujukan 2026:** Unit 7 — Bunga Kekwa Mekar  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** cantuman, binaan dan ikatan  
-**Bahasa seni visual:** bentuk, imbangan, pergerakan  
+**Teknik:** gabungan mozek dan catan  
+**Bahasa seni visual:** rupa, warna, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kadbod, batang kertas, pita
+**BBM:** cebisan kertas, cat, gam
 
 ## Objektif pembelajaran
-Murid dapat memperkemas stabail taman permainan seimbang serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas bunga kekwa dengan mozek dan catan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Permainan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Flora. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik cantuman, binaan dan ikatan serta penggunaan bentuk, imbangan, pergerakan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik gabungan mozek dan catan serta penggunaan rupa, warna, harmoni. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada stabail taman permainan seimbang, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada bunga kekwa dengan mozek dan catan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

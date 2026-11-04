@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Model — Rumah Mesra Alam  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Titisan — Bingkai Gambarku
+**Unit rujukan 2026:** Unit 8 — Bingkai Gambarku  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.3; 2.1.8  
-**Teknik:** cantuman dan binaan  
-**Bahasa seni visual:** bentuk, warna, imbangan  
+**SP:** 1.1.2; 2.1.5  
+**Teknik:** titisan warna  
+**Bahasa seni visual:** warna, ritma, jalinan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak terpakai, kertas, gam
+**BBM:** penitis plastik, warna cair, kertas
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh model dan menghasilkan satu sampel cantuman dan binaan.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh titisan dan menghasilkan satu sampel titisan warna.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Rumah Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh model bertema Rumah Mesra Alam dan membandingkan bentuk, warna, imbangan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh titisan bertema Titik Hujan dan membandingkan warna, ritma, jalinan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik cantuman dan binaan. Murid mencuba dua sampel kecil menggunakan kotak terpakai dan bahan model, membandingkan kesan dan memilih teknik yang sesuai untuk model rumah pengudaraan baik.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik titisan warna. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk bingkai gambar dengan corak titisan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

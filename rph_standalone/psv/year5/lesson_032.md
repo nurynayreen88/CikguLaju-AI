@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Model — Rumah Mesra Alam  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Titisan — Bingkai Gambarku
+**Unit rujukan 2026:** Unit 8 — Bingkai Gambarku  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** cantuman dan binaan  
-**Bahasa seni visual:** bentuk, warna, imbangan  
+**Teknik:** titisan warna  
+**Bahasa seni visual:** warna, ritma, jalinan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak terpakai, kertas, gam
+**BBM:** penitis plastik, warna cair, kertas
 
 ## Objektif pembelajaran
-Murid dapat memperkemas model rumah pengudaraan baik serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas bingkai gambar dengan corak titisan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Rumah Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik cantuman dan binaan serta penggunaan bentuk, warna, imbangan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik titisan warna serta penggunaan warna, ritma, jalinan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada model rumah pengudaraan baik, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada bingkai gambar dengan corak titisan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

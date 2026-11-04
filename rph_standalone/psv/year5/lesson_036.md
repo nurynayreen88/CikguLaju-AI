@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tembikar — Bekas Herba  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Stabail — Haiwan Peliharaan
+**Unit rujukan 2026:** Unit 9 — Haiwan Peliharaan  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** picitan dan lingkaran  
-**Bahasa seni visual:** bentuk, rupa, penegasan  
+**Teknik:** cantuman, binaan dan ikatan  
+**Bahasa seni visual:** bentuk, imbangan, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh atau tanah liat, alas
+**BBM:** kadbod, batang kertas, pita
 
 ## Objektif pembelajaran
-Murid dapat memperkemas bekas herba berhias lingkaran serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas arca stabail kucing peliharaan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Permainan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik picitan dan lingkaran serta penggunaan bentuk, rupa, penegasan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik cantuman, binaan dan ikatan serta penggunaan bentuk, imbangan, pergerakan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada bekas herba berhias lingkaran, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada arca stabail kucing peliharaan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Stabail — Taman Permainan  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Mozek dan Catan — Bunga Kekwa Mekar
+**Unit rujukan 2026:** Unit 7 — Bunga Kekwa Mekar  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.3; 2.1.7  
-**Teknik:** cantuman, binaan dan ikatan  
-**Bahasa seni visual:** bentuk, imbangan, pergerakan  
+**SP:** 1.1.1; 2.1.3  
+**Teknik:** gabungan mozek dan catan  
+**Bahasa seni visual:** rupa, warna, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kadbod, batang kertas, pita
+**BBM:** cebisan kertas, cat, gam
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh stabail dan menghasilkan satu sampel cantuman, binaan dan ikatan.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh mozek dan catan dan menghasilkan satu sampel gabungan mozek dan catan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Permainan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Flora. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh stabail bertema Taman Permainan dan membandingkan bentuk, imbangan, pergerakan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh mozek dan catan bertema Taman Flora dan membandingkan rupa, warna, harmoni. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik cantuman, binaan dan ikatan. Murid mencuba dua sampel kecil menggunakan kadbod serta batang kertas, membandingkan kesan dan memilih teknik yang sesuai untuk stabail taman permainan seimbang.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan mozek dan catan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk bunga kekwa dengan mozek dan catan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Model — Rumah Mesra Alam  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Titisan — Bingkai Gambarku
+**Unit rujukan 2026:** Unit 8 — Bingkai Gambarku  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.8; 3.1.4  
-**Teknik:** cantuman dan binaan  
-**Bahasa seni visual:** bentuk, warna, imbangan  
+**SP:** 2.1.5; 3.1.2  
+**Teknik:** titisan warna  
+**Bahasa seni visual:** warna, ritma, jalinan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak terpakai, kertas, gam
+**BBM:** penitis plastik, warna cair, kertas
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Rumah Mesra Alam dan memilih satu lakaran berdasarkan bentuk, warna, imbangan.
+Murid dapat menyiapkan dua lakaran Titik Hujan dan memilih satu lakaran berdasarkan warna, ritma, jalinan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Rumah Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Rumah Mesra Alam. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Titik Hujan. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal model rumah pengudaraan baik, menguji cantuman dan binaan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal bingkai gambar dengan corak titisan, menguji titisan warna pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

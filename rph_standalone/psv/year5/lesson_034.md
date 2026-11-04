@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tembikar — Bekas Herba  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Stabail — Haiwan Peliharaan
+**Unit rujukan 2026:** Unit 9 — Haiwan Peliharaan  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.9; 3.1.5  
-**Teknik:** picitan dan lingkaran  
-**Bahasa seni visual:** bentuk, rupa, penegasan  
+**SP:** 2.1.7; 3.1.4  
+**Teknik:** cantuman, binaan dan ikatan  
+**Bahasa seni visual:** bentuk, imbangan, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh atau tanah liat, alas
+**BBM:** kadbod, batang kertas, pita
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Bekas Herba dan memilih satu lakaran berdasarkan bentuk, rupa, penegasan.
+Murid dapat menyiapkan dua lakaran Taman Permainan dan memilih satu lakaran berdasarkan bentuk, imbangan, pergerakan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Permainan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Bekas Herba. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Taman Permainan. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal bekas herba berhias lingkaran, menguji picitan dan lingkaran pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal arca stabail kucing peliharaan, menguji cantuman, binaan dan ikatan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

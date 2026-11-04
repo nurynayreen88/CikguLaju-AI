@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tembikar — Bekas Herba  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Stabail — Haiwan Peliharaan
+**Unit rujukan 2026:** Unit 9 — Haiwan Peliharaan  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.4; 2.1.9  
-**Teknik:** picitan dan lingkaran  
-**Bahasa seni visual:** bentuk, rupa, penegasan  
+**SP:** 1.1.3; 2.1.7  
+**Teknik:** cantuman, binaan dan ikatan  
+**Bahasa seni visual:** bentuk, imbangan, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh atau tanah liat, alas
+**BBM:** kadbod, batang kertas, pita
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh tembikar dan menghasilkan satu sampel picitan dan lingkaran.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh stabail dan menghasilkan satu sampel cantuman, binaan dan ikatan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Permainan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh tembikar bertema Bekas Herba dan membandingkan bentuk, rupa, penegasan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh stabail bertema Taman Permainan dan membandingkan bentuk, imbangan, pergerakan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik picitan dan lingkaran. Murid mencuba dua sampel kecil menggunakan doh atau tanah liat, membandingkan kesan dan memilih teknik yang sesuai untuk bekas herba berhias lingkaran.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik cantuman, binaan dan ikatan. Murid mencuba dua sampel kecil menggunakan kadbod serta batang kertas, membandingkan kesan dan memilih teknik yang sesuai untuk arca stabail kucing peliharaan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
