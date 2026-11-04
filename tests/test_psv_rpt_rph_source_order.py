@@ -201,7 +201,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                     self.assertFalse(row["Tarikh B"].strip())
                     path = row["RPH"] if year == 6 else row["Fail RPH"]
                     rph = (ROOT / path).read_text(encoding="utf-8")
-                    self.assertRegex(rph, r"(?m)^\\*\\*Status:\\*\\* DRAF")
+                    self.assertIn("**Status:** DRAF", rph)
         windows = read_csv(PSV / "PSV_2027_minggu_PdP_kumpulan_A_B_CADANGAN.csv")
         self.assertEqual({row["Status"] for row in windows}, {"CADANGAN_MINGGU_2027"})
 
