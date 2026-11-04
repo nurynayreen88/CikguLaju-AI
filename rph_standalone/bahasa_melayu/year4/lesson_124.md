@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 124
 
-**ID:** BM4-P124  
-**Minggu RPT 2027:** M29 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U20: Mari Bertani  
-**Tajuk aktiviti:** Petua Memilih Durian  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.3 (i), (ii) — Memahami dan menggunakan kata adjektif mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 141  
-**Fokus:** tatabahasa — Petua Memilih Durian  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Petua Memilih Durian'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P124
+**Minggu RPT 2027:** M29 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U20: Mari Bertani
+**Tajuk aktiviti:** Petua Memilih Durian
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.3 (i), (ii) — Memahami dan menggunakan kata adjektif mengikut konteks
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 141. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** dialog Zara sekeluarga memilih durian di pasar tani yang mengandungi pilihan kata adjektif cara dan perasaan.
+**Objektif PdP:** Pada akhir PdP, murid dapat memilih sekurang-kurangnya enam kata adjektif cara/perasaan yang betul dan menerangkan dua sebab pilihan.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Petua Memilih Durian' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U20: Mari Bertani.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Petua Memilih Durian pada halaman Buku Teks 141 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Petua Memilih Durian.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Petua Memilih Durian'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata adjektif mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Petua Memilih Durian'.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca petikan BT m/s 141 dan banding pasangan kata seperti 'laju/deras', 'risau/seronok' serta 'cermat/gopoh'
+**Murid:** Kenal pasti enam kata adjektif yang tepat dengan tindakan/perasaan watak dalam petikan
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Petua Memilih Durian' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan pemilihan satu kata adjektif berdasarkan konteks dan bukti dialog
+**Murid:** Pilih enam kata adjektif, kemudian bina dua ayat baharu dengan kata cara atau perasaan
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.3 (i), (ii) — Memahami dan menggunakan kata adjektif mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak jenis kata adjektif serta kesesuaian setiap pilihan
+**Murid:** Baiki dua pilihan yang bercanggah dengan maksud ayat
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Petua Memilih Durian' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 5.1.3 (i), (ii) berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Petua Memilih Durian.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 141 memaparkan pilihan pasangan kata adjektif cara dan perasaan; SP 5.1.3(i),(ii).
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.

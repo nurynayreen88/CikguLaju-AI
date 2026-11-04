@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 128
 
-**ID:** BM4-P128  
-**Minggu RPT 2027:** M29 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan  
-**Tajuk aktiviti:** Tanduk Berharga  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.4 — Menulis ayat dalam perenggan yang diimlakkan  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 145  
-**Fokus:** tulisan — Tanduk Berharga  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Tanduk Berharga' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P128
+**Minggu RPT 2027:** M29 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan
+**Tajuk aktiviti:** Tanduk Berharga
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.4 — Menulis ayat dalam perenggan yang diimlakkan
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 145. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** petikan lawatan Zara ke ladang rusa milik Encik Akbar yang menyebut tanduk rusa dan kegunaan tradisional sebagai maklumat dalam teks.
+**Objektif PdP:** Pada akhir PdP, murid dapat menulis satu perenggan imlak daripada kisah lawatan ke ladang rusa dengan ejaan dan tanda baca yang betul.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tanduk Berharga' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Tanduk Berharga pada halaman Buku Teks 145 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Tanduk Berharga.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Tanduk Berharga' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis ayat dalam perenggan yang diimlakkan.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Tanduk Berharga'.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing murid mendengar petikan BT m/s 145 dan kenal pasti nama watak serta istilah yang akan diimlakkan
+**Murid:** Dengar tanpa melihat teks dan catat tiga perkataan yang memerlukan perhatian ejaan
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Imlakkan satu perenggan pilihan daripada petikan dengan sebutan jelas, kemudian baca semula untuk semakan
+**Murid:** Tulis satu perenggan dengan ejaan nama khas, huruf besar dan tanda baca yang tepat
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.4 — Menulis ayat dalam perenggan yang diimlakkan) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan imlak; jangan anggap dakwaan khasiat tradisional dalam cerita sebagai nasihat perubatan
+**Murid:** Baiki tiga kesalahan ejaan/tanda baca jika ada
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Tanduk Berharga' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 3.2.4 berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Tanduk Berharga.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 145 memuatkan petikan Tanduk Berharga dan SP 3.2.4 mengimlakkan perenggan; kandungan perubatan tradisional dibaca sebagai teks sahaja.
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.
