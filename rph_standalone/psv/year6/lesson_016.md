@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menghasilkan komponen utama arca stabail ikan koi 3D dengan binaan, cantuman dan catan dengan dua teknik/bidang seni dan langkah yang selamat. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menghasilkan komponen utama arca stabail ikan koi 3D dengan binaan, cantuman dan catan dengan dua teknik/bidang seni dan langkah yang selamat. Kriteria kejayaan: Produk menunjukkan dua teknik, dua ciri bahasa seni, fungsi/aspek visual yang jelas serta amalan keselamatan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Penghasilan karya** dalam tema **Si Cilik Koi**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
