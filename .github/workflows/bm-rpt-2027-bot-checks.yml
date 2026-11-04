@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - feat/rpt-bm-2027-pdf-telegram-20261104
+      - feat/bm-rpt-2026-layout-20261104
     paths:
       - 'rpt_2027/bahasa_melayu/**'
       - 'rpt_2027/english/telegram_downloads.py'
@@ -53,7 +54,7 @@ jobs:
               pdf=PdfReader(str(path))
               assert all(float(p.mediabox.width)>float(p.mediabox.height) for p in pdf.pages)
               content="\n".join((p.extract_text() or "") for p in pdf.pages)
-              found={int(x) for x in re.findall(r"\bPdP\s+(\d{3})\b", content)}
+              found={int(x) for x in re.findall(r"PdP\s+(\d{3})\b", content)}
               assert set(range(1,n+1)).issubset(found), (year,n,len(found))
               print("OK", year,n,"PdP",len(pdf.pages),"landscape pages")
           PY

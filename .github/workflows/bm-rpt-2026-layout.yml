@@ -1,0 +1,46 @@
+name: BM RPT 2027 - kemas susun atur seperti RPT 2026
+on:
+  push:
+    branches:
+      - feat/bm-rpt-2026-layout-20261104
+    paths:
+      - 'tools/build_bm_rpt_2026_layout.py'
+      - 'rpt_2027/bahasa_melayu/keluaran_format_english/**'
+      - '.github/workflows/bm-rpt-2026-layout.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF layout dependencies
+        run: python -m pip install 'weasyprint==62.3' 'pydyf==0.10.0' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3' 'PyMuPDF==1.26.4'
+      - name: Build five five-column PDFs from existing draft content
+        run: python tools/build_bm_rpt_2026_layout.py
+      - name: Attach printable PDFs, HTML preview and manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CikguLaju-BM-RPT-2027-Format-2026-PDF-DRAF
+          path: |
+            rpt_2027/bahasa_melayu/RPT_Bahasa_Melayu_Tahun_*_2027_DRAF.pdf
+            rpt_2027/bahasa_melayu/RPT_BM_Tahun_*_2027_Format_2026_DRAF.html
+            rpt_2027/bahasa_melayu/PDF_DRAF_MANIFEST_2027.json
+          if-no-files-found: error
+      - name: Commit PDF and preview to feature branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/bahasa_melayu/RPT_Bahasa_Melayu_Tahun_*_2027_DRAF.pdf rpt_2027/bahasa_melayu/RPT_BM_Tahun_*_2027_Format_2026_DRAF.html rpt_2027/bahasa_melayu/PDF_DRAF_MANIFEST_2027.json
+          if git diff --staged --quiet; then
+            echo 'No formatting differences to commit.'
+          else
+            git commit -m 'Refresh five BM RPT PDF drafts in 2026 table layout'
+            git push origin HEAD:feat/bm-rpt-2026-layout-20261104
+          fi
