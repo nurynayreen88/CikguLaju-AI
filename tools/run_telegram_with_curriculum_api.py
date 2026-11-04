@@ -129,6 +129,18 @@ except Exception as _y5_fixed_preview_exc:
     print("English Year 5 fixed draft preview unavailable:", repr(_y5_fixed_preview_exc), flush=True)
 
 
+# Offline A4 parity fix for only the new Year4 (11) and Year5 (151)
+# provisional Word previews. The nine Year5 teacher-choice proposals retain
+# their already deployed Word A4 handler. No changes to native PDF, credits,
+# database, or other years/subjects.
+try:
+    from web.english_y4_y5_draft_word_a4_runtime import install as install_y4_y5_draft_word_a4
+    ENGLISH_Y4_Y5_DRAFT_WORD_A4_ACTIVE = install_y4_y5_draft_word_a4(telegram_runtime)
+except Exception as _y4_y5_word_exc:
+    ENGLISH_Y4_Y5_DRAFT_WORD_A4_ACTIVE = False
+    print("English Year 4/5 draft Word A4 unavailable:", repr(_y4_y5_word_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
