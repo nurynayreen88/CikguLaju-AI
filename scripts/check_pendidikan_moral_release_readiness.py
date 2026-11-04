@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,6 +21,7 @@ def check_year(year):
     toc = json.loads((rptroot / f"year{year}_book_toc_VERIFIED.json").read_text(encoding="utf-8"))
     if len(rows) != 42 or len(toc.get("units", [])) != 14:
         ISSUES.append(f"Y{year}: curriculum sequence incomplete")
+    total_rph_minutes = 0
     if toc.get("status") == "VERIFIED_TOC_START_ONLY":
         ISSUES.append(f"Y{year}: textbook only unit-start mapped, not SP activity pages")
     for lesson in range(1, 43):
@@ -29,6 +31,11 @@ def check_year(year):
             continue
         text = path.read_text(encoding="utf-8")
         label = f"Y{year} L{lesson:03}"
+        duration_match = re.search(r"\*\*Tempoh PdP:\*\*\s*(\d+)\s+minit", text)
+        if duration_match:
+            total_rph_minutes += int(duration_match.group(1))
+        else:
+            ISSUES.append(f"{label}: explicit lesson duration absent")
         if "DRAF SEMAK" in text or "BELUM READY" in text:
             ISSUES.append(f"{label}: content still marked DRAFT")
         if "Guru membantu murid menggunakan kata tugas asal seperti" in text:
@@ -43,6 +50,18 @@ def check_year(year):
                 ISSUES.append(f"{label}: RPT not READY")
             if not (r.get("Minggu/Tarikh Kumpulan A") and r.get("Minggu/Tarikh Kumpulan B")):
                 ISSUES.append(f"{label}: 2027 A/B dates missing")
+
+    # Annual minimum from Malaysian Parliament reply on 30 July 2025:
+    # https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf
+    # 96 hours/year for primary Islamic Education or Moral Education.
+    minimum_hours = 96
+    if total_rph_minutes < minimum_hours * 60:
+        ISSUES.append(
+            f"Y{year}: annual coverage is {total_rph_minutes/60:.1f}h "
+            f"from drafted RPH, below {minimum_hours}h minimum; "
+            f"{(minimum_hours*60-total_rph_minutes)/60:.1f}h missing"
+        )
+
 
 def main():
     for year in range(2,7):
