@@ -9,22 +9,24 @@
 **SP:** 3.5 — Mengamalkan sikap bertanggungjawab di sekolah.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual siapa-buat-apa-bila, borang semak; fail `materials/pendidikan_moral/year3/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 3 m/s 21–24 (PDF 27–30), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year3/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid memperagakan tindakan berdasarkan **3.5: Mengamalkan sikap bertanggungjawab di sekolah.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 3.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
+Murid menunjukkan dua amalan bertanggungjawab di sekolah dan menghasilkan refleksi berdasarkan evidens. Kriteria kejayaan: Senarai semak dua perlakuan, tugas kumpulan disiapkan dan satu refleksi; bukti amalan sebenar dicatat berasingan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Pengawas dan ketua kelas membahagikan tugas dengan jelas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Murid Bertanggungjawab** dari Buku Teks m/s 21. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menjalankan tanggungjawab dengan sempurna**. Murid menyemak persediaan berdasarkan SP 3.5.
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Murid memerhati foto amalan semasa guru mengajar, di kantin dan sebelum kelas bermula pada m/s 21, lalu memilih tugas yang boleh dilakukan.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Mengikuti 'Tanggungjawab Bersama' dan Projek Sudut Pendidikan Moral m/s 22–23, murid melaksanakan tugasan kumpulan yang dibahagi adil; lengkapkan semakan diri m/s 24.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 3.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua perlakuan, tugas kumpulan disiapkan dan satu refleksi; bukti amalan sebenar dicatat berasingan. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **bertanggungjawab**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan yang boleh diamalkan secara selamat berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Semakan visual buku teks:** Tahun 3, Unit 3 — **Murid Bertanggungjawab**; halaman bercetak 21–24 (PDF 27–30). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 009 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view); [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic). Buku teks asal Drive ID `1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.

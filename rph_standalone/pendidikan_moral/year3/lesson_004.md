@@ -9,26 +9,24 @@
 **SP:** 2.1 — Menyenaraikan jenis bantuan yang boleh diberi kepada warga sekolah. | 2.2 — Mengenal pasti cara membantu warga sekolah.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, peta jenis bantuan dan keperluan, borang semak; fail `materials/pendidikan_moral/year3/unit_02_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 3 m/s 9–11 (PDF 15–17), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year3/unit_02_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid dapat **menyenaraikan tiga bantuan** kepada warga sekolah (SP 2.1) dan **mengenal pasti dua cara bantuan yang wajar** ketika warga sekolah menghadapi kesusahan (SP 2.2).
-
-**Kriteria kejayaan:** Tiga jenis bantuan yang tepat dan dua huraian cara membantu yang wajar.
+Murid menyenaraikan tiga bantuan kepada warga sekolah dan mengenal pasti cara pelaksanaannya. Kriteria kejayaan: Tiga contoh bantuan dan dua cara; guru menilai kesesuaian tindakan terhadap situasi sekolah.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Baik Hati Nilai Mulia** dari Buku Teks m/s 9. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Bantuan apabila kantin terbakar:** Guru meneliti cerita bergambar buku teks **m/s 10–11** tentang rumah peniaga kantin yang terbakar dan warga sekolah mengumpulkan sumbangan. Murid mengenal pasti bantuan berbentuk dana, barang keperluan dan tenaga (SP 2.1).
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru menggunakan sajak Sekolahku m/s 9 untuk mengenal pasti bantuan tanpa mengharapkan balasan. Murid mencatat siapa yang memerlukan pertolongan.
 
-**Aktiviti 2 (20 minit) — Pilih cara membantu:** Murid menyusun kad langkah berdasarkan cerita: guru besar mengumumkan bantuan, murid mengumpulkan sumbangan, warga sekolah gotong-royong dan bantuan disalurkan dengan tertib. Murid memilih dua tindakan yang boleh dilakukan dengan selamat di sekolah (SP 2.2); guru menekankan bantuan tidak semestinya wang.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Guru membentangkan cerita kantin terbakar dan tabung sumbangan pada m/s 10–11; murid membina peta tindakan membantu penjaga kantin, guru, murid dan warga sekolah.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Kad keluar: tiga jenis bantuan untuk warga sekolah (SP 2.1), dua cara membantu secara beretika dan selamat (SP 2.2).
+**Pengukuhan/Pentaksiran PBD (10 minit):** Tiga contoh bantuan dan dua cara; guru menilai kesesuaian tindakan terhadap situasi sekolah. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **baik hati**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** m/s 9–11 (PDF 15–17), bahagian Unit 2; cadangan aktiviti bersandar pada gambar/cerita yang dilihat, bukan pengesahan semua latihan SP.
+**Semakan visual buku teks:** Tahun 3, Unit 2 — **Baik Hati Nilai Mulia**; halaman bercetak 9–11 (PDF 15–17). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 004 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — unit bermula m/s 9 (PDF 15); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view); [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic). Buku teks asal Drive ID `1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.
