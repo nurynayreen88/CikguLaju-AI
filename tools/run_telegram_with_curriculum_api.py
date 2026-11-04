@@ -80,6 +80,19 @@ except Exception as _y5_rph_exc:
     print("English Year 5 gated RPH bridge unavailable:", repr(_y5_rph_exc), flush=True)
 
 
+# Nine Year 5 teacher-choice Lessons: present clearly marked CikguLaju DRAFT
+# suggestions in native Word/PDF. The SOW prescribes no fixed CS/LS for
+# these Lessons; teachers must choose the DSKP standards before official use.
+# Separate from the existing 151 fixed-standard Year 5 release gate: none
+# of those drafts is promoted or unlocked here. No DB/credit changes.
+try:
+    from web.english_y5_teacher_choice_runtime import install as install_english_y5_choices
+    ENGLISH_Y5_TEACHER_CHOICE_PROPOSALS_ACTIVE = install_english_y5_choices(telegram_runtime)
+except Exception as _y5_choices_exc:
+    ENGLISH_Y5_TEACHER_CHOICE_PROPOSALS_ACTIVE = False
+    print("English Year 5 choice proposals unavailable:", repr(_y5_choices_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
