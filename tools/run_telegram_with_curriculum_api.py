@@ -264,3 +264,17 @@ except Exception as _ref_admin_exc:
     PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE = False
     print("Private referral admin report unavailable:",
           type(_ref_admin_exc).__name__, flush=True)
+
+# English Year 4 Lesson 30: fail closed on a proven source discrepancy.
+# Original app.py v25.257/v25.258/v25.259 maps L030 to CD2 Track29,
+# while printed TB p39 identifies CD1 Track29 for SB p20 Activity 2.
+# Until the spoken content and exact Telegram delivery are independently
+# verified, hide only the L030 media option and reject stale callback sends.
+# Install last; all other lesson audio, Word/PDF, quotas and database stay intact.
+try:
+    from web.english_y4_l030_audio_guard import install as install_y4_l030_audio_guard
+    ENGLISH_Y4_L030_AUDIO_GUARD_ACTIVE = install_y4_l030_audio_guard(telegram_runtime)
+except Exception as _y4_l030_audio_exc:
+    ENGLISH_Y4_L030_AUDIO_GUARD_ACTIVE = False
+    print("English Y4 L030 audio source safety guard unavailable:",
+          type(_y4_l030_audio_exc).__name__, flush=True)
