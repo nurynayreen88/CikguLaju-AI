@@ -3,7 +3,7 @@
 **Unit:** Projek Seni Visual penggal kedua  
 **Tajuk:** Pameran penggal kedua  
 **SK:** 5.1  
-**SP:** 3.3.3; 3.3.4; 3.3.5 (bercetak di bawah SK 5.1 dalam DSKP)  
+**SP:** 3.3.3; 3.3.4; 3.3.5  
 **Buku Teks:** Projek Kesenian penggal kedua (aktiviti Seni Visual)  
 **BBM:** karya murid, kapsyen, pita mesra kertas, meja stabil  
 **Tempoh:** 60 minit
