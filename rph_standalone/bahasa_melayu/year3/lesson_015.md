@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 015
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 015
 
 **ID:** BM3-P015  
 **Tema/Unit:** Kekeluargaan; U2: Kejayaan Keluarga  
@@ -9,7 +9,7 @@
 **Rujukan RPT:** BT1 m/s 9; BA m/s 9  
 **Bahan:** BT1 m/s 9 Usaha Gigih Datuk dan BA1 m/s 9 latihan keluarga menjaga arnab; buku latihan dan kad/lembaran respons.  
 **Masa cadangan:** 60 minit mengikut jadual guru.  
-**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui empat ayat tepat dengan struktur subjek-predikat; sesi lanjutan Lesson 010.
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui empat ayat tepat dengan struktur subjek-predikat; sesi lanjutan PdP 010.
 
 ## Set induksi (5 minit)
 **Guru:** Menunjukkan BT1 m/s 9 Usaha Gigih Datuk dan BA1 m/s 9 latihan keluarga menjaga arnab dan mengemukakan satu soalan pemula.
@@ -21,10 +21,10 @@
 
 ## Aktiviti 2 (20 minit)
 **Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
-**Murid:** Membina empat ayat sendiri berdasarkan gambar tanpa menyalin ayat siap Lesson 010.
+**Murid:** Membina empat ayat sendiri berdasarkan gambar tanpa menyalin ayat siap PdP 010.
 
 ## Pengukuhan / PBD (15 minit)
-**Guru:** Menyemak empat ayat tepat dengan struktur subjek-predikat; sesi lanjutan Lesson 010; merekod bukti respons atau hasil bertulis.
+**Guru:** Menyemak empat ayat tepat dengan struktur subjek-predikat; sesi lanjutan PdP 010; merekod bukti respons atau hasil bertulis.
 **Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)

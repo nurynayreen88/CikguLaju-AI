@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 016
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 016
 
 **Tema / Unit:** Kekeluargaan; U2: Kejayaan Keluarga  
 **Tajuk:** Pesanan Ibu  
@@ -24,7 +24,7 @@
 **Tindakan murid:** Murid mempersembahkan cerita lima ayat dan menerangkan dua ungkapan yang digunakan.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat makna dan dua simpulan bahasa yang digunakan dalam cerita; BA sahaja tanpa BT khusus bagi Lesson ini.
+**Tindakan guru:** Semak empat makna dan dua simpulan bahasa yang digunakan dalam cerita; BA sahaja tanpa BT khusus bagi PdP ini.
 **Tindakan murid:** Murid menunjukkan hasil kerja atau respons secara individu, menerima maklum balas dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
