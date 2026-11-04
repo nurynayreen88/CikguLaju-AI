@@ -1,40 +1,52 @@
-name: PJPK admin preview isolation
+name: PJPK 2027 RPH Telegram 339-draft integration
 on:
   pull_request:
     paths:
       - 'web/pjpk_2027_preview_runtime.py'
       - 'tests/test_pjpk_2027_preview_runtime.py'
       - 'rph_standalone/pjpk/**'
-      - 'audits/pjpk_2027_staging_manifest_20261104.json'
+      - 'rpt_2027/pjpk/pjpk_2027_rpt_manifest.json'
       - 'tools/run_telegram_with_curriculum_api.py'
       - '.github/workflows/pjpk-admin-preview-isolation.yml'
   push:
     branches:
-      - release/pjpk-2027-admin-preview-20261104
+      - feat/pjpk-2027-rph-telegram-users-20261104
+    paths:
+      - 'web/pjpk_2027_preview_runtime.py'
+      - 'tests/test_pjpk_2027_preview_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/pjpk-admin-preview-isolation.yml'
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Verify 338 draft sources and admin-only isolation
+      - name: Verify 339 DRAF RPH sources, regular-user selection and isolation
         run: python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+      - name: Verify existing paid PJPK RPT navigation and downloads
+        run: python -m unittest discover -s tests -p 'test_pjpk_rpt_2027_telegram.py' -v
+      - name: Crosscheck 339 SK SP and RPH source metadata
+        run: python scripts/check_pjpk_2027_curriculum_crosswalk.py
       - name: Check Python syntax
         run: python -m py_compile web/pjpk_2027_preview_runtime.py tools/run_telegram_with_curriculum_api.py
-      - name: Deny promotion to READY and require feature flag
+      - name: Assert all drafts, normal-user entry and zero credit or database bypass
         run: |
           python - <<'PY'
-          import json, pathlib
-          p=pathlib.Path('audits/pjpk_2027_staging_manifest_20261104.json')
-          j=json.loads(p.read_text(encoding='utf-8'))
-          assert len(j['records']) == 400
-          assert all(e['production_ready'] is False and e['status']=='DRAFT_NOT_APPROVED' for e in j['records'])
-          t=pathlib.Path('web/pjpk_2027_preview_runtime.py').read_text(encoding='utf-8')
-          assert 'CIKGULAJU_PJPK_PREVIEW_ENABLED' in t
-          assert 'is_admin' in t
-          assert 'enabled = os.environ.get(FLAG) == "1"' in t
-          print('PASS: admin gated preview; all READY flags remain false.')
+          import json
+          from pathlib import Path
+          j=json.loads(Path('rpt_2027/pjpk/pjpk_2027_rpt_manifest.json').read_text(encoding='utf-8'))
+          assert len(j['records']) == 339 and j['ready'] is False
+          assert all(x['status']=='DRAF_CADANGAN' and x['ready'] is False for x in j['records'])
+          runtime=Path('web/pjpk_2027_preview_runtime.py').read_text(encoding='utf-8')
+          wsgi=Path('tools/run_telegram_with_curriculum_api.py').read_text(encoding='utf-8')
+          assert 'install_pjpk_rph_2027(' in wsgi and 'enabled=True' in wsgi
+          assert 'if not is_admin(cid)' not in runtime
+          assert '_lesson_to_class_v2439' in runtime
+          assert 'DRAF CADANGAN' in runtime
+          assert 'debit_credit' not in runtime and 'UPDATE users' not in runtime
+          print('PASS: DRAF-only ordinary user RPH route with native class and credit gates')
           PY
