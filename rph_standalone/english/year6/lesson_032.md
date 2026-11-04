@@ -4,38 +4,40 @@
 **RPT:** 2027, Lesson 32, M08 (week indicative only)  
 **Main CS/LS:** PILIHAN GURU (SOW)  
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
-**Language focus:** relevant vocabulary and language from this unit  
+**Language focus:** Review 1: vocabulary, verb-form choices, used to exchanges and short-text completion (Units 1–2)  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Y6 PB pp.32–33; TB pp.58–59; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate life then and now through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Read a short age-appropriate text on 'Life in the past'; identify one main idea and answer 4 detail questions.
+**Materials:** Academy Stars Year 6 Pupil's Book pp.32–33; Teacher's Book printed pp.58–59; answer-check and individual self-assessment. No separate unverified audio assigned.  
+**Learning objective:** Complete the printed Units 1–2 Review 1 tasks on Pupil's Book pp.32–33 with at least four accurate responses and an explained correction.  
+**PBD evidence:** Four correct source-task answers, one partner question-and-answer exchange, and one justified correction.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall selected vocabulary from Units 1–2 using two visual prompts before opening the printed Review 1 page.  
+**Pupils:** Name two review words or phrases and predict the area they need to practise.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Use PB p.32 Review 1 word-definition task and contextual verb-form task; model one completed example.  
+**Pupils:** Complete the word clues and verb-form items individually before checking a sample answer.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils read a text about life in the past, identify its main idea, then write a short recount about life long ago.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Follow TB pp.58–59 for PB pp.32–33 pair questions about Bill and Anna's past routines, then guide the correct-word sentence task.  
+**Pupils:** Ask and answer questions in pairs; complete the book's sentence choices with evidence from context.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Guide the short story word-selection task in Review 1; require an explanation for one choice and a unit self-assessment.  
+**Pupils:** Complete the story with words from the box, explain one choice, and identify a review need.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four selected Review 1 responses and one pair exchange; record the relevant learning evidence after the teacher selects standards.  
+**Pupils:** Show marked book responses, revise one answer and note why the correction is better.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review one vocabulary or grammar error from the source tasks and ask for an individual improvement target.  
+**Pupils:** State a corrected answer and a next-step learning goal.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
+
+**QA status:** DRAF — CikguLaju suggested tasks matched to the cited printed source; teacher-selected Year 6 DSKP standards and authenticated Word/PDF/Telegram delivery still need approval. Original Academy Stars Y6 Teacher's Book pp.58–59 (Drive ID 13xG-dTuRJvPQZOKAknPJJq8NMRXZbMeb), PB pp.32–33 Review 1, checked visually 2026-11-04.
 
 **Teacher-selection notice:** SOW does not set a fixed official Main/Complementary CS/LS here. The lesson activities and PBD are CikguLaju suggestions, subject to teacher selection and DSKP confirmation.
 
