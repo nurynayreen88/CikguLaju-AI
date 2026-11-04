@@ -245,6 +245,15 @@ except Exception as _moralrpt_exc:
     MORAL_RPT_2027_TELEGRAM_ACTIVE = False
     print("Moral RPT 2027 download route unavailable:", repr(_moralrpt_exc), flush=True)
 
+# Paid Moral 2027 full 96-session group A/B downloads, plus supplementary
+# 54-session editable Word/PDF packs. A narrow callback wrapper; no DB writes.
+try:
+    from rpt_2027.pendidikan_moral.complete_96_downloads import install as install_moral_96
+    MORAL_96_DOWNLOADS_ACTIVE = install_moral_96(vars(telegram_runtime))
+except Exception as _moral96_exc:
+    MORAL_96_DOWNLOADS_ACTIVE = False
+    print("Moral 96 downloads unavailable:", repr(_moral96_exc), flush=True)
+
 # Invite-only referral navigation, installed last so all existing menu features
 # remain intact. Visible only to users previously approved by /refadd.
 try:
