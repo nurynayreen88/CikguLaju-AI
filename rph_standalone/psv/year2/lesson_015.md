@@ -2,27 +2,29 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Resis — Ikan di Dasar Laut  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Alat Permainan — Pusing Gasing Pusing
+**Unit RPT 2026:** Unit 4 — Pusing Gasing Pusing (BT ms 30–33)  
+**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Teknik:** resis  
-**Bahasa seni visual:** garisan, warna, kontra, ritma dan pergerakan  
+**Teknik:** binaan kertas  
+**Bahasa seni visual:** bentuk, jalinan, imbangan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon lilin, cat air, kertas
+**BBM:** kadbod, kertas warna, pita
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan karya ikan dan ombak resis dengan resis, sekurang-kurangnya dua aspek garisan, warna, kontra, ritma dan pergerakan.
+Murid dapat menghasilkan model gasing tradisional daripada kadbod dengan binaan kertas, sekurang-kurangnya dua aspek bentuk, jalinan, imbangan, kontra.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Ikan di Dasar Laut. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Model Gasing Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat krayon lilin, cat air, kertas. Murid menyediakan bahan serta menetapkan kriteria karya.
+**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat kadbod, kertas warna, pita. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan karya ikan dan ombak resis mengikut lakaran menggunakan resis, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan model gasing tradisional daripada kadbod mengikut lakaran menggunakan binaan kertas, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri garisan, warna, kontra, ritma dan pergerakan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri bentuk, jalinan, imbangan, kontra, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
 
@@ -30,4 +32,4 @@ Murid dapat menghasilkan karya ikan dan ombak resis dengan resis, sekurang-kuran
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.

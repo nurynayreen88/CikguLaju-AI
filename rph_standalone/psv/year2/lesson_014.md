@@ -2,25 +2,27 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Resis — Ikan di Dasar Laut  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Alat Permainan — Pusing Gasing Pusing
+**Unit RPT 2026:** Unit 4 — Pusing Gasing Pusing (BT ms 30–33)  
+**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.1; 3.1.1  
-**Teknik:** resis  
-**Bahasa seni visual:** garisan, warna, kontra, ritma dan pergerakan  
+**SP:** 2.1.4; 3.1.1  
+**Teknik:** binaan kertas  
+**Bahasa seni visual:** bentuk, jalinan, imbangan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon lilin, cat air, kertas
+**BBM:** kadbod, kertas warna, pita
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Ikan di Dasar Laut dan memilih satu lakaran berdasarkan garisan, warna, kontra, ritma dan pergerakan.
+Murid dapat menyiapkan dua lakaran Model Gasing Kertas dan memilih satu lakaran berdasarkan bentuk, jalinan, imbangan, kontra.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Ikan di Dasar Laut. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Model Gasing Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Ikan di Dasar Laut. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Model Gasing Kertas. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal karya ikan dan ombak resis, menguji resis pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal model gasing tradisional daripada kadbod, menguji binaan kertas pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat menyiapkan dua lakaran Ikan di Dasar Laut dan memilih satu lakaran b
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
