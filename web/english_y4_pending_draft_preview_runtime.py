@@ -49,6 +49,28 @@ PROJECTS = {
 }
 
 
+# Objectives are *suggested*, anchored in the actual existing RPH tasks;
+# never claim they are prescribed learning objectives or fixed SOW LS.
+REVIEW_OBJECTIVES = {
+    16: ("Complete Unit 1 Revision Activities 1–3, review countries and free-time language, and identify one personal learning target",
+         "Revision answers, one corrected item, and a completed Unit 1 self-assessment"),
+    32: ("Complete Unit 2 Revision Activities 1–2, use housework and timetable language, and identify a priority for practice",
+         "Two reviewed tasks, one checked answer and a Unit 2 self-assessment"),
+    48: ("Complete Unit 3 Revision Activities 1–3 on past simple language and identify one correction",
+         "Revision responses, one corrected past-simple form and a Unit 3 self-assessment"),
+    64: ("Complete Unit 4 revision tasks on ordinal numbers, dates and celebrations, and set a specific learning goal",
+         "Checked revision answers, one accurate date or ordinal-number response and a Unit 4 review target"),
+    96: ("Complete Unit 6 Getting Around revision, correct a recurring language error and set a further practice target",
+         "Revision tasks 1–3, one corrected response and the Unit 6 self-assessment"),
+    112: ("Complete Unit 7 Helping Out review Activities 1–3, practise a weak language point and choose one learning target",
+          "Completed activities, one improved pair response and Unit 7 self-assessment"),
+    128: ("Complete Unit 8 Amazing Animals review Activities 1–3, correct an animal-comparison error and set a review target",
+          "Reviewed animal vocabulary and comparative responses plus Unit 8 self-assessment"),
+    144: ("Complete Unit 9 Get Active review Activities 1–3, correct one language error and select a measurable revision goal",
+          "Corrected exercise response, named Unit 9 language target and individual self-assessment"),
+}
+
+
 def _load_pending(number, root, index_path):
     if type(number) is not int or number not in PENDING:
         return None
@@ -151,18 +173,17 @@ def adapt_rows(state, rows, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDEX):
         result["PEMULIHAN / PENGAYAAN"] = "Support: picture cues and sentence frames. Extension: independently justify additional story/advice choices."
     else:
         result["TAJUK"] = "DRAF CIKGULAJU (SEMAKAN GURU) — " + str(sow.get("topic") or "")
-        result["OBJEKTIF PEMBELAJARAN"] = (
-            "Suggested: Complete the named unit review tasks; identify a specific "
-            "learning strength and one target for further practice."
-            if number != AUDIO_CONFLICT
-            else "Suggested: Write and spell household-chores vocabulary accurately; "
-                 "check a listening response after verifying which recording matches TB p.39.")
-        result["KRITERIA KEJAYAAN"] = (
-            "Evidence: completed revision exercises, individual self-assessment "
-            "and one corrected response."
-            if number != AUDIO_CONFLICT
-            else "Evidence: correctly spelled chores and task-specific written "
-                 "responses; listening evidence only after correct track verification.")
+        if number in REVIEW_OBJECTIVES:
+            objective, criteria = REVIEW_OBJECTIVES[number]
+            result["OBJEKTIF PEMBELAJARAN"] = "Suggested: " + objective
+            result["KRITERIA KEJAYAAN"] = "Suggested evidence: " + criteria
+        else:
+            result["OBJEKTIF PEMBELAJARAN"] = (
+                "Suggested: Write and spell household-chores vocabulary accurately; "
+                "check a listening response after verifying which recording matches TB p.39.")
+            result["KRITERIA KEJAYAAN"] = (
+                "Evidence: correctly spelled chores and task-specific written "
+                "responses; listening evidence only after correct track verification.")
         resources = _materials(meta) or str(meta.get("references") or "SOW unit review")
         resources = re.sub(r"resources/[^\s;,()]+", "", resources, flags=re.I).strip(" ;,")
         if number == AUDIO_CONFLICT:
