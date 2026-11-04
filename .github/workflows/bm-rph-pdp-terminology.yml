@@ -1,0 +1,32 @@
+name: BM RPH 2027 - visible Lesson to PdP terminology
+on:
+  push:
+    branches: [audit/bm-rph-final-readiness-20261104]
+    paths:
+      - tools/normalize_bm_rph_pdp_2027.py
+      - .github/workflows/bm-rph-pdp-terminology.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Normalize displayed BM labels, preserve filenames and source contents
+        run: python tools/normalize_bm_rph_pdp_2027.py
+      - name: Commit to audit branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rph_standalone/bahasa_melayu/year2 rph_standalone/bahasa_melayu/year3
+          if ! git diff --cached --quiet; then
+            git commit -m 'BM RPH Year 2-3: display PdP instead of Lesson'
+            git push origin HEAD:audit/bm-rph-final-readiness-20261104
+          fi
