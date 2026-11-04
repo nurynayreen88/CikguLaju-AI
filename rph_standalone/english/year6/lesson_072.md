@@ -7,32 +7,32 @@
 **Language focus:** Adjective modifiers review (e.g. too, just, really)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.65; TB pp.106–107; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a journey around town with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to PB p.65 skateboard discussion, identify four details and infer two spoken word meanings.  
+**PBD evidence:** Four accurate listening details and two meanings supported by the dialogue (Listening 1.2.2/1.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Introduce the topic using PB p.65 skateboarder picture.  
+**Pupils:** Predict one aspect of skateboarding.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach directions, routes and transport; display simple route maps and transport cards and ask pupils to predict what they may hear. Emphasise the language focus: Adjective modifiers review (e.g. too, just, really).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.106 Activity 1; ask what the pictures show.  
+**Pupils:** Describe one picture and predict the listening topic.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Play approved audio or read the printed dialogue for TB p.106 Activity 2.  
+**Pupils:** Identify four listening details and match two spoken words to definitions.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a journey around town, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide TB p.107 Activities 3–4 and discuss the Values question.  
+**Pupils:** Check listening facts and compare price with quality.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess details and inferred word meanings with a supported replay.  
+**Pupils:** Correct one listening answer and explain a word from context.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.107 Cooler: Skateboard design.  
+**Pupils:** Explain one suitable design feature.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
