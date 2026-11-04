@@ -78,6 +78,24 @@
       "proof": "Mengedit dan memurnikan perenggan Keselamatan Siber dalam Percutian; membetulkan ejaan tajuk RPT2026",
       "pkjr_release": false,
       "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 6,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "5",
+      "proof": "Bercerita tentang Kebun Komuniti dan menggunakan peribahasa dalam konteks",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 7,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "6",
+      "proof": "Mencari kata nama am daripada cerita Hadif dan Aina membantu warga emas serta membina ayat",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
     }
   ],
   "textbook_sources": [
@@ -107,7 +125,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 817 RPH need specific source review",
+    "All remaining 815 RPH need specific source review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
