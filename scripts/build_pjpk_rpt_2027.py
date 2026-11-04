@@ -184,8 +184,9 @@ def _pdf(year, out, weeks, records):
             ("BOTTOMPADDING",(0,0),(-1,-1),4),
         ]
         t.setStyle(TableStyle(style))
-        story.extend([KeepTogether([_p(label, weekstyle), Spacer(1, 1*mm), t]),
-                      Spacer(1, 3.5*mm)])
+        # Let large week tables paginate by row; never clip, truncate or drop rows.
+        weekstyle.keepWithNext = True
+        story.extend([_p(label, weekstyle), t, Spacer(1, 3.5*mm)])
     story.extend([
         Spacer(1, 5*mm),
         _p("CATATAN PENTING", weekstyle),
