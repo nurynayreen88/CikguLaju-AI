@@ -61,6 +61,87 @@
       "ba_exercise_verified": false
     },
     {
+      "year": 4,
+      "pdp": 6,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "5",
+      "proof": "Bercerita tentang Kebun Komuniti dan menggunakan peribahasa dalam konteks",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 7,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "6",
+      "proof": "Mencari kata nama am daripada cerita Hadif dan Aina membantu warga emas serta membina ayat",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 8,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "7",
+      "proof": "Respons terhadap ujaran dalam majlis bantuan persekolahan; SP diperbetul daripada 1.1.1 kepada 1.1.2",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 9,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "8–9",
+      "proof": "Membaca empat amalan masyarakat prihatin dan melengkapkan Peta Pokok; PKJR masih belum disahkan",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 10,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "10",
+      "proof": "Bina ayat daripada gambar/frasa kemudahan lapangan terbang untuk datuk dan nenek; halaman asal 5 tersasar",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 11,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "11",
+      "proof": "Deklamasikan dan terangkan sajak Istimewanya Kita tentang ibu, guru dan pahlawan; halaman asal 6 tersasar",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 12,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "12",
+      "proof": "Kenal pasti kata nama khas Pak Belang, Sang Merak, Sang Kancil dan Kuala Gula",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 13,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "13",
+      "proof": "Menjawab soalan secara kritis mengenai empat zon Anjung Bestari Perpustakaan Negara",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 14,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "14",
+      "proof": "Membaca kisah masyarakat rama-rama, menyusun peristiwa dan menjelaskan nilai murni; halaman asal 4 tersasar, PKJR belum disahkan",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
       "year": 5,
       "pdp": 45,
       "book": "BT Tahun 5 SK",
@@ -76,24 +157,6 @@
       "book": "BT Tahun 5 SK",
       "printed_pages": "66",
       "proof": "Mengedit dan memurnikan perenggan Keselamatan Siber dalam Percutian; membetulkan ejaan tajuk RPT2026",
-      "pkjr_release": false,
-      "ba_exercise_verified": false
-    },
-    {
-      "year": 4,
-      "pdp": 6,
-      "book": "BT Tahun 4 SK",
-      "printed_pages": "5",
-      "proof": "Bercerita tentang Kebun Komuniti dan menggunakan peribahasa dalam konteks",
-      "pkjr_release": false,
-      "ba_exercise_verified": false
-    },
-    {
-      "year": 4,
-      "pdp": 7,
-      "book": "BT Tahun 4 SK",
-      "printed_pages": "6",
-      "proof": "Mencari kata nama am daripada cerita Hadif dan Aina membantu warga emas serta membina ayat",
       "pkjr_release": false,
       "ba_exercise_verified": false
     }
@@ -125,7 +188,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 815 RPH need specific source review",
+    "All remaining 808 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -136,5 +199,17 @@
     "Telegram runtime test"
   ],
   "ready_count": 0,
-  "reviewed_eight_not_ready": true
+  "reviewed_eight_not_ready": true,
+  "reviewed_seventeen_not_ready": true,
+  "current_audit_batch": {
+    "year": 4,
+    "pdp_range": "008–014",
+    "verified_with": "Drive: BT Tahun 4 SK, DSKP Tahun 4; GitHub: RPT 2027",
+    "changed_rpt_formats": [
+      "Markdown",
+      "HTML"
+    ],
+    "reviewed_rph": 7,
+    "publication_approved": false
+  }
 }
