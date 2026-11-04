@@ -7,32 +7,32 @@
 **Language focus:** Use of language in advertising, e.g. strong adjectives, e.g. wonderful, cool; giving advice to consumers, e.g. We think you should give it a try!  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 78; Teacher Book pages 126-127  
-**Learning objective:** Give 3 pieces of relevant advice about making a familiar product, each supported with a simple reason.  
-**PBD evidence:** Three appropriate advice-and-reason pairs and a short oral follow-up.
+**Learning objective:** Improve the invention draft from Lesson 92 and perform a persuasive radio advert with two suitable pieces of advice and accurate product words.  
+**PBD evidence:** Two clear consumer recommendations supported by reasons (Speaking 2.1.3) and accurately corrected invention writing (Writing 4.3.3).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show anonymous correction-coded errors from the collected Lesson 92 drafts.  
+**Pupils:** Identify a punctuation or spelling improvement.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How is this useful item made?”, drawing on Use of language in advertising, e.g. strong adjectives, e.g. wonderful, cool; giving advice to….  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Return Lesson 92 drafts and recap feedback from the Lesson 89 advert project.  
+**Pupils:** Correct written errors and identify one persuasive technique.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Present a familiar problem scenario; model should/shouldn’t with because as appropriate to the RPT.  
-**Pupils:** Take turns offering three advice statements and explain why each might help.
+**Teacher:** Follow TB p.126 Activity 3: plan a radio advert using the invention description.  
+**Pupils:** Prepare a script about the product's main advantage and intended user.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow TB p.126 Activity 4 to rehearse and perform radio adverts.  
+**Pupils:** Recommend the product using two should/shouldn't statements with reasons.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess accuracy of revised writing and two suitable oral recommendations.  
+**Pupils:** Show a corrected word and improve one sales claim after feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pupils to compare which advert offers reliable advice.  
+**Pupils:** Explain one reason to trust or question an advertised claim.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

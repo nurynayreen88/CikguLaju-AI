@@ -7,32 +7,32 @@
 **Language focus:** Passive voice: questions (e.g. What’s it made of?) and statements (e.g. It’s made of…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 74; Teacher Book page 120  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on making a familiar product.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Ask and answer four questions about what familiar objects are made of, using passive forms and accurately interpreting partners' responses.  
+**PBD evidence:** Four relevant statements or questions about object materials (Speaking 2.1.1) and two clearly understood partner questions (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.120 Warm-up Telephone using object and material words.  
+**Pupils:** Repeat one correct materials phrase from the game.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How is this useful item made?”, drawing on Passive voice: questions (e.g. What’s it made of?) and statements (e.g. It’s made of…).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Show real objects made of wood, metal, paper or glass.  
+**Pupils:** Identify a material and rehearse 'It's made of...'.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow TB p.120 Activities 1–2 using the original dialogue.  
+**Pupils:** Listen to questions and describe four objects with passive structures.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide TB p.120 Activity 3 and group realia conversations.  
+**Pupils:** Exchange questions and answers about at least four real classroom items.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Observe intelligible questions and two accurate responses; correct one verb agreement error.  
+**Pupils:** Identify the material of an object and improve an unclear question.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite groups to report which objects share a material.  
+**Pupils:** Give one clear answer about an item made of metal or wood.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

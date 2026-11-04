@@ -7,32 +7,32 @@
 **Language focus:** Use of language in advertising, e.g. great value; wonderful; only $XX  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 75, 78  
-**Learning objective:** Negotiate and agree 4 basic steps for an extended classroom task concerning making a familiar product.  
-**PBD evidence:** Written/shared 4-step group plan and oral evidence of negotiated agreement.
+**Learning objective:** Negotiate four project steps and create a short spoken advert using persuasive language drawn from PB pp.75 and 78.  
+**PBD evidence:** Four agreed project actions (Speaking 2.2.2) and appropriate listening to a peer's advert (Listening 1.2.4).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall persuasive phrases from the previous advert listening.  
+**Pupils:** Give one effective adjective used by an advertiser.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How is this useful item made?”, drawing on Use of language in advertising, e.g. great value; wonderful; only $XX.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Compare printed adverts and model phrases such as great value or free.  
+**Pupils:** Identify the item sold and one persuasive phrase.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide an extended-classroom task card and model agreeing on task steps and roles.  
-**Pupils:** Discuss alternatives, agree and number four steps, and explain the plan to the teacher.
+**Teacher:** Play verified PB p.75 advert audio or read it accurately; distribute the SOW scrambled planning sheet.  
+**Pupils:** Listen for key promotional language and order project steps.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide PB p.78 Activities 3–4; groups choose a product, write a short script and rehearse.  
+**Pupils:** Agree roles, prepare a four-step advert plan and practise a spoken advert.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess how pupils agree plans, respond to teammates and listen to feedback.  
+**Pupils:** Perform the advert and record one point for later improvement.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask another group what makes a claim convincing rather than misleading.  
+**Pupils:** State one responsible advertising choice.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

@@ -7,32 +7,32 @@
 **Language focus:** Future forms introduction: will, going to, present continuous  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 82-83; Teacher Book pages 132-133  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a school music performance.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read PB pp.82–83 music-magazine text for the main idea and two supporting details, then identify the gist of an approved English song or teacher-read summary.  
+**PBD evidence:** One main idea and two reading clues (Reading 3.2.1), plus an appropriate overall song topic from listening (Listening 1.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Play only an approved music extract or hum a short original pattern and ask how it feels.  
+**Pupils:** Say one emotion associated with the music.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce music genres, instruments, performance and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Future forms introduction: will, going to, present continuous.  
-**Pupils:** Predict the text from instrument and performance pictures; highlight two useful clues or words.
+**Teacher:** Follow TB p.132 Activities 1–2 to introduce genres and preview PB pp.82–83.  
+**Pupils:** Identify two music genres and predict one magazine article topic.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a school music performance; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Use approved recording or an accurate read-aloud while pupils read the music text.  
+**Pupils:** Read for the main idea, note two supporting details and check genre words.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a school music performance. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.133 Activity 3; use a dictionary after guessing context meanings; play a cleared English song only if available.  
+**Pupils:** Infer two new words and choose the best gist description for the song or approved listening text.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess the reading theme and supported listening gist without claiming unverified audio identity.  
+**Pupils:** Show the text clues and correct one misunderstood genre.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which song or instrument would you choose and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask where pupils find music articles and why they read them.  
+**Pupils:** Name one magazine or online source and a favourite music genre.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

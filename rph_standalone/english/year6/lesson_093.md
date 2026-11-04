@@ -7,32 +7,32 @@
 **Language focus:** Use of language in advertising, e.g. No other XX is as useful as…  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 78; Teacher Book pages 126; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about making a familiar product with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to the PB p.78 Lumina pen/torch product advert, identify its function and material, and report two benefits or drawbacks supported by the spoken description.  
+**PBD evidence:** Four correctly heard Lumina product facts (Listening 1.2.2) and an accurate supported gist (Listening 1.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.126 Unscramble using materials and invention words.  
+**Pupils:** Solve one word and describe a product.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach materials, tools, process and sequence; display four process-stage pictures and ask pupils to predict what they may hear. Emphasise the language focus: Use of language in advertising, e.g. No other XX is as useful as….  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Show the Lumina pen/torch image without giving away its uses.  
+**Pupils:** Predict what the combined object could do.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use the original Audio 1.29 only if verified, or an accurate approved script reading; ask PB p.78 questions.  
+**Pupils:** Listen for what Lumina is made of and what it is used for, then draw a quick outline.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about making a familiar product, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Replay or reread to fill the SOW product-information worksheet and compare ideas.  
+**Pupils:** Record four heard details and discuss two advantages and disadvantages.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check the drawing against printed PB p.78 and verify source details.  
+**Pupils:** Correct one product fact and state the main advert purpose.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask whether a small multifunction product is useful in daily life.  
+**Pupils:** Give one supported benefit and one possible drawback.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
