@@ -187,7 +187,7 @@ def install(ns):
             rid = int(parts[1])
             if rid <= 0 or not ns["_payment_request"](rid):
                 return send(cid, f"⚠️ Permohonan #{rid} tidak ditemui pada rekod semasa. "
-                            "Semak panel admin; jangan minta pelanggan bayar semula.",
+                            "Semak panel admin. Jangan minta pelanggan bayar semula.",
                             [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
             return admin_card(cid, rid)
         if str(d).startswith("admin_approve|"):
@@ -205,7 +205,11 @@ def install(ns):
                 return send(cid, "⚠️ Butang pengesahan tidak sah. Buka semula kad dalam panel admin.",
                             [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
             req = ns["_payment_request"](rid)
-            if req and float(req["amount"]) == 10.0:
+            if not req:
+                return send(cid, f"⚠️ Permohonan #{rid} tidak ditemui pada rekod semasa. "
+                            "Semak panel admin. Jangan minta pelanggan bayar semula.",
+                            [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
+            if float(req["amount"]) == 10.0:
                 if expected_uid is None:
                     # Legacy 'admin_approve|id' has no payer binding.
                     # Show the current card and a fresh ID-bound approval button.
