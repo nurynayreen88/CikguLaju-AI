@@ -20,17 +20,19 @@
 
 ## Required configuration before testing on staging
 1. Audit, then apply the additive SQL migration to a staging DB (never overwrite existing users or payment data).
-2. Decide a points schedule for `PIONEER_LIFETIME`, `30_days`, and any annual plan. Add `referral_reward_rules(plan_code,points,enabled)` records, but keep `enabled=false` until verified.
-3. Enable `CIKGULAJU_REFERRAL_POINTS_ENABLED=1` **only in staging**.
-4. Admin can privately run `/refadd <TelegramID>` (add/enable member) or `/refdel <TelegramID>` (disable); no public navigation button is added. Whitelisted members view `/mata`.
-5. Test first-time registration vs existing account, self-referral, invalid code, duplicate links, paid/unpaid, Rakan Pembangun, monthly, annual, replaying approval, concurrent approval, refunds/revocations, and a deployment restart.
-6. Review subscription recording and API exposure under RLS. Confirm a staging webhook calls the opt-in wrapper.
-7. After passing tests, plan a separate reviewed production migration and deployment.
+2. Configure a Telegram webhook secret (min. 16 characters) as `CIKGULAJU_TELEGRAM_WEBHOOK_SECRET` in staging AND register the same value with Telegram's `setWebhook(secret_token=...)`. This is mandatory: the module refuses to install when missing and rejects requests with an invalid secret. Existing `/setup-webhook` does NOT set a secret, so do not call it after securing this webhook; update that deployment flow before production.
+3. Decide a points schedule for `PIONEER_LIFETIME`, `30_days`, and any annual plan. Add `referral_reward_rules(plan_code,points,enabled)` records, but keep `enabled=false` until verified.
+4. Enable `CIKGULAJU_REFERRAL_POINTS_ENABLED=1` **only in staging**.
+5. Admin can privately run `/refadd <TelegramID>` (add/enable member) or `/refdel <TelegramID>` (disable); no public navigation button is added. Whitelisted members view `/mata`.
+6. Test first-time registration vs existing account, self-referral, invalid code, duplicate links, paid/unpaid, Rakan Pembangun, monthly, annual, replaying approval, concurrent approval, refunds/revocations, and a deployment restart.
+7. Review subscription recording and API exposure under RLS. Confirm a staging webhook calls the opt-in wrapper.
+8. After passing tests, plan a separate reviewed production migration and deployment.
 
 ## Important limits and next steps
 - No historic backfill or automatic expiry/withdrawal of points. Reversals/chargebacks need an audited admin adjustment mechanism before redemptions are introduced.
 - Referrer access is manual/whitelisted. No invite is generated for ordinary users.
 - The exact points per plan and the future purpose/redemption policy need an admin decision.
 - Bot-side registration only captures genuinely new accounts created within the last 15 minutes according to the persistent Supabase user table.
+- The Telegram wrapper requires a header secret because the existing webhook does not currently check it. This must be independently configured with Telegram before any live trial.
 - The points ledger uses distinct IDs and immutable official payment references; local SQLite request IDs are not the source of truth for award verification.
 - The legacy code still exists for backward compatibility while the feature is disabled.
