@@ -7,32 +7,32 @@
 **Language focus:** Should(n’t) for giving advice  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.17; TB p.36; WB p.15; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a safe emergency incident with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Identify four supported details about Mike Dobbs's problem from PB p.17 listening, then explain two pieces of advice using should/shouldn't and because.  
+**PBD evidence:** Four specific listening details (Listening 1.2.2) and two reasoned suggestions about the problem (Speaking 2.1.3).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review the previous WB p.15 draft with a short peer check and ask how someone can seek help in an emergency.  
+**Pupils:** Suggest one safe way to request assistance using familiar words.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach incident, safety, help, action; display incident sequence pictures and ask pupils to predict what they may hear. Emphasise the language focus: Should(n’t) for giving advice.  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.36 Warm-up and PB p.17 Activities 1–2; analyse the short problem text and predict the difficulties from pictures.  
+**Pupils:** Find one problem in the short text and make two predictions before listening.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use a confirmed recording or approved reading of the TB p.36 Activity 3 script, and guide a repeat of difficult listening details.  
+**Pupils:** Listen for four details about Mike Dobbs and check whether the predictions were accurate.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a safe emergency incident, and replay/read relevant parts where needed. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Give a short oral explanation to a partner and respond to one question. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Follow TB p.36 Activity 4: assign one pupil as Mike Dobbs and the other as a helper offering advice with should/shouldn't because.  
+**Pupils:** Role-play the problem and give two reasoned pieces of advice based on what they heard.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess four listening details and the relevance of two supported oral reasons; model a correction if needed.  
+**Pupils:** Record four heard details, explain one suggestion and improve an unclear reason.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What happened when the emergency began?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite a pair to demonstrate one suitable line from the problem-solving role-play.  
+**Pupils:** Give one practical piece of advice and state why it could help.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

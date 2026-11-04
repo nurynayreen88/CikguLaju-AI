@@ -7,32 +7,32 @@
 **Language focus:** Past simple & continuous for interrupted actions with when/while  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.13; TB pp.30–31; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a safe emergency incident with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Use PB p.13 Activities 1–5 to identify the listening text's main idea and at least four supported details, then discuss the unit's Values question.  
+**PBD evidence:** Correct main-idea choice and four supported listening details (Listening 1.2.2 / 1.2.1); note whether replay or visual support is required.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review key vocabulary from the emergency unit and ask which listening clue pupils expect.  
+**Pupils:** Recall two relevant words and predict one possible topic.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach incident, safety, help, action; display incident sequence pictures and ask pupils to predict what they may hear. Emphasise the language focus: Past simple & continuous for interrupted actions with when/while.  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.30 Activity 1; display PB p.13 pictures and words before the listening begins.  
+**Pupils:** Match words to pictures, mark one prediction and prepare to listen for the main idea.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use a verified playback or approved teacher reading of the exact PB p.13 audio script for TB pp.30–31 Activities 2–3.  
+**Pupils:** Listen for the main idea and answer the specific questions from Activity 3, checking their first prediction.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a safe emergency incident, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide PB p.13 Activity 4 details on a replay and Activity 5 pair discussion; elicit the page's Values question.  
+**Pupils:** Check four listening details, compare evidence with a partner and explain one view from the Values discussion.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess one main idea plus four listening details from Activities 2–4; give one guided replay where needed.  
+**Pupils:** Record the main idea and four details and correct one answer after hearing the relevant part again.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What happened when the emergency began?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use the TB Cooler choose-a-job vocabulary task to review the listening content.  
+**Pupils:** Give one accurate listening detail and name an appropriate related job or phrase.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

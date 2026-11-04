@@ -7,32 +7,32 @@
 **Language focus:** Direct speech, e.g. Lena said, ‘I was playing badminton at 5 o’clock.’  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.9, 14; TB p.32  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a safe emergency incident.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Analyse direct speech in the PB pp.9 and 14 texts, find two supporting reading details and punctuate two reported interview answers correctly.  
+**PBD evidence:** Find two text-supported details and correctly punctuate two short direct-speech answers (Reading 3.2.2 / Writing 4.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show incident sequence pictures and ask: “What happened when the emergency began?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Read two true/false statements drawn from the earlier unit passage and ask pupils to check the text.  
+**Pupils:** Vote true or false and point to a clue from PB p.9.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce incident, safety, help, action and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Direct speech, e.g. Lena said, ‘I was playing badminton at 5 o’clock.’.  
-**Pupils:** Predict the text from incident sequence pictures; highlight two useful clues or words.
+**Teacher:** Follow TB p.32 Activity 1, modelling how quotation marks, commas and reporting verbs show direct speech.  
+**Pupils:** Locate two quoted utterances in the PB text and explain one punctuation mark.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a safe emergency incident; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Ask pairs to reread PB pp.9/14 for direct-speech examples and use TB p.32 Activity 2 to match questions and notes.  
+**Pupils:** Read for detail, match the questions with notes and underline two accurately punctuated examples.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a safe emergency incident. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Model three interview questions about yesterday; ask pairs to record answers and write two sentences with direct speech.  
+**Pupils:** Interview a partner and write two accurately punctuated reported answers, such as Hasan said, 'I was ...'.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check two supported reading answers and the punctuation of two reported sentences; give brief written feedback.  
+**Pupils:** Show source clues, revise quotation marks in one sentence and explain the correction.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What happened when the emergency began?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Run a short PB p.9 reading race or quiz based on an earlier passage.  
+**Pupils:** Read one quoted sentence with suitable expression and identify its speaker.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
