@@ -35,7 +35,7 @@ NAMES = {"PJ": "Pendidikan Jasmani", "PK": "Pendidikan Kesihatan"}
 HEADER = "CIKGULAJU AI | RPT PJPK 2027"
 NOTICE = "DRAF CADANGAN - semak tarikh PdP, cuti negeri, buku teks dan DSKP sebelum guna"
 COL_HEADERS = ("PdP", "Komponen", "Unit / Tajuk", "SK / SP", "BT (m/s)", "Aktiviti dan pentaksiran")
-COL_WIDTH = [43, 59, 126, 136, 55, 280]
+COL_WIDTH = [43, 59, 126, 136, 55, 360]
 FONT_REGULAR = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
