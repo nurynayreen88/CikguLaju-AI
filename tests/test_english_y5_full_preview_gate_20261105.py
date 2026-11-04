@@ -75,15 +75,28 @@ class Year5FinalisationGate(unittest.TestCase):
     def test_no_cross_subject_or_stale_lesson_code_override(self):
         for n in (14,88):
             original=dict(START)
-            for value in (
+            cases=(
                 state(n,year="Year 4"),state(n,subject="Mathematics"),
                 state(n,task="worksheet"),state(n,lesson_no=True),
-                state(n,lesson_no="999"),state(n,sp_code="9.9.9"),
-            ):
+                state(n,lesson_no="999"),
+            )
+            for value in cases:
                 with self.subTest(state=value):
                     self.assertIs(preview_rows(value,original),original)
-                    if n == 88 or value.get("task")!="rph" or value.get("subject")!="English" or value.get("year")!="Year 5" or value.get("lesson_no") not in (n,):
-                        self.assertIs(choice_rows(value,original),original)
+                    self.assertIs(choice_rows(value,original),original)
+
+        # A teacher-choice Lesson has no official fixed SOW code. The
+        # proposal adapter is deliberately allowed to replace *stale*
+        # upstream skill fields with a pending-teacher-selection notice,
+        # but must never print the stale numeric value as official.
+        invalid=state(88,sp_code="9.9.9")
+        self.assertIs(preview_rows(invalid,START), START)
+        safe=choice_rows(invalid,START)
+        self.assertIsNot(safe,START)
+        self.assertIn("DRAF",safe["TAJUK"])
+        for key in STANDARD_KEYS:
+            self.assertIn("Teacher to choose",safe[key])
+            self.assertNotIn("9.9.9",safe[key])
 
 
 if __name__ == "__main__":
