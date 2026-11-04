@@ -121,6 +121,27 @@ def download_logo(rt, file_id):
     except (UnidentifiedImageError,OSError,ValueError) as exc:
         raise ValueError("Logo PNG/JPG tidak sah") from exc
 
+def rpt_ready(subject,year):
+    """Source availability check without generating files or writing /tmp."""
+    if type(year) is not int or year not in range(2,7):
+        return False
+    try:
+        if subject in _STATIC:
+            module=import_module(_STATIC[subject])
+            if subject=="english":
+                path=module.pdf_path(year)
+                return path.is_file() and path.stat().st_size>2000
+            return bool(module.pdf_ready(year))
+        if subject=="pm":
+            module=import_module("rpt_2027.pendidikan_moral.complete_96_downloads")
+            return bool(module.combined_pdf_ready(year))
+        if subject=="psv":
+            module=import_module("rpt_2027.psv.telegram_downloads")
+            return bool(module.pdf_ready(year))
+    except (OSError,ValueError,ImportError):
+        return False
+    return False
+
 def original_rpt(subject,year,folder):
     """Use the exact source for the selected subject/year, fail closed."""
     if subject in _STATIC:
@@ -278,9 +299,7 @@ def install(runtime):
                 return runtime.send(cid,"RPT 2027 hanya untuk Rakan Pembangun dan pelanggan aktif.",
                     [[{"text":"Jadi Rakan Pembangun","callback_data":"pioneer_join"}],
                      [{"text":"Menu Utama","callback_data":"home"}]])
-            try:
-                original_rpt(subject,year,Path("/tmp"))
-            except Exception:
+            if not rpt_ready(subject,year):
                 return runtime.send(cid,"PDF RPT pilihan ini belum tersedia. Cuba tahun atau subjek lain.")
             with lock:
                 sessions[cid]={"subject":subject,"label":label,"year":year,
