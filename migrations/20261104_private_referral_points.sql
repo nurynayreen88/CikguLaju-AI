@@ -48,7 +48,7 @@ CREATE INDEX IF NOT EXISTS idx_referral_points_referrer
 -- Never let browser / Telegram clients read or write other users' referral data.
 ALTER TABLE public.referral_members ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.referral_signups ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.referral_reward_rules ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.referral_reward_settings ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.referral_point_events ENABLE ROW LEVEL SECURITY;
 REVOKE ALL ON public.referral_members, public.referral_signups,
     public.referral_reward_settings, public.referral_point_events
