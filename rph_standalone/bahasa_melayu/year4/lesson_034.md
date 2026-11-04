@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 034
 
-**ID:** BM4-P034  
-**Minggu RPT 2027:** M10 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat  
-**Tajuk aktiviti:** Tubuh Sihat Kekal Aktif  
-**Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.  
-**Standard Pembelajaran (SP):** 4.3.3 — Mengubah suai seni kata lagu dan mempersembahkannya secara kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 38  
-**Fokus:** seni — Tubuh Sihat Kekal Aktif  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Tubuh Sihat Kekal Aktif' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P034
+**Minggu RPT 2027:** M10 (tarikh sebenar mengikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat
+**Tajuk aktiviti:** Tubuh Sihat Kekal Aktif
+**Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.
+**Standard Pembelajaran (SP):** 4.3.3 — Mengubah suai seni kata lagu dan mempersembahkannya secara kreatif
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 38. **BA:** Latihan dan halaman asal belum disahkan.
+**Konteks bahan:** Lagu Tubuh Sihat Kekal Aktif, berpandukan melodi Wau Bulan, menggalakkan pemanasan badan dan aktiviti fizikal.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengubah suai sekurang-kurangnya satu rangkap seni kata lagu mengikut gambar dan mempersembahkannya secara kreatif.
+**Bahan:** Buku Teks pada halaman berkenaan, kad tugasan khusus, bahan grafik/peta jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tubuh Sihat Kekal Aktif' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar ilustrasi Min Lee berjoging menggunakan sawat injak serta tajuk lagu.
+**Murid:** Nyatakan satu aktiviti fizikal yang dilakukan secara selamat.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Tubuh Sihat Kekal Aktif'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Tubuh Sihat Kekal Aktif' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing murid meneliti mesej lirik BT m/s 38 tentang kekal aktif, memanaskan badan dan memakai kasut sesuai.
+**Murid:** Kenal pasti frasa yang berkaitan senaman dan gambar sasaran untuk pengubahsuaian.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing murid mengubah suai satu rangkap berdasarkan gambar, kekalkan aliran makna dan persembahkan menggunakan irama yang dirujuk buku.
+**Murid:** Cipta seni kata pendek yang berkaitan aktiviti senaman dan persembahkan secara berkumpulan.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.3.3 — Mengubah suai seni kata lagu dan mempersembahkannya secara kreatif) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai pemilihan kata yang bersesuaian, kelancaran penyampaian dan kreativiti berdasarkan SP 4.3.3.
+**Murid:** Baiki seni kata yang tidak sesuai konteks dan persembahkan semula.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Tubuh Sihat Kekal Aktif' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan penghayatan lagu dan amalan fizikal.
+**Murid:** Nyatakan satu cara kekal aktif mengikut kemampuan.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 38 meminta mengubah suai lirik lagu Tubuh Sihat Kekal Aktif berpandukan gambar dan mempersembahkannya; SP 4.3.3.
+**Status QA:** DRAF — aktiviti BT dan SP disemak secara khusus; BA, PKJR (jika berkenaan), takwim negeri, Word/PDF A4 dan runtime Telegram masih belum lulus. Bukan FINAL READY, jangan terbitkan.

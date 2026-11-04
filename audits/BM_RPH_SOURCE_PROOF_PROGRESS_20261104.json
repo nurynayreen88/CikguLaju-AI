@@ -232,6 +232,105 @@
       "ba_exercise_verified": false
     },
     {
+      "year": 4,
+      "pdp": 25,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "28",
+      "proof": "BT m/s 28 mengarahkan melengkapkan petikan Jauhi Penyakit Tangan-Kaki dan Mulut dengan kata kerja aktif transitif.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 26,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "29",
+      "proof": "BT m/s 29 mengarahkan membuat banding beza penyedut kertas/plastik menggunakan Peta Buih Berganda dan menjelaskannya.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 27,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "30–31",
+      "proof": "BT m/s 30–31 memuatkan cerpen projektor mini ciptaan Amir dan Rakesh; arahan ialah membaca teks dengan sebutan serta intonasi sesuai.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 28,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "32",
+      "proof": "BT m/s 32 mempunyai dialog tentang Inap Desa Dahlia dan lima soalan pemahaman bertumpu serta bercapah.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 29,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "33",
+      "proof": "BT m/s 33 meminta murid mengubah suai cerita Briged Kebersihan Sekolah berdasarkan perkataan yang dicetak berwarna dan mempersembahkannya.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 30,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "34",
+      "proof": "BT m/s 34 mengarahkan melengkapkan surat Hadif kepada Anding menggunakan kata kerja aktif tak transitif daripada bank kata.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 31,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "35",
+      "proof": "BT m/s 35 mengarahkan melengkapkan Peta Buih Berganda dan menjelaskan perbandingan beras rebus dengan beras putih.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 32,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "36",
+      "proof": "BT m/s 36 menyediakan temu bual Encik Azhar di televisyen dan arahan membaca temu bual dengan sebutan serta intonasi sesuai.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 33,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "37",
+      "proof": "BT m/s 37 mengarahkan berbincang, mencatat maklumat dan melengkapkan poster daripada dialog Hadif dengan Doktor Azlan tentang fon telinga.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 34,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "38",
+      "proof": "BT m/s 38 meminta mengubah suai lirik lagu Tubuh Sihat Kekal Aktif berpandukan gambar dan mempersembahkannya; SP 4.3.3.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 35,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "39",
+      "proof": "BT m/s 39 mengarahkan membina ayat pasif daripada ayat bercetak berwarna dalam konteks masakan berkhasiat; SP 5.1.2(ii).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
       "year": 5,
       "pdp": 45,
       "book": "BT Tahun 5 SK",
@@ -278,7 +377,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 798 RPH need specific textbook page/activity review",
+    "All remaining 787 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -293,9 +392,9 @@
   "reviewed_seventeen_not_ready": true,
   "current_audit_batch": {
     "year": 4,
-    "pdp_range": "015–024",
-    "verified_with": "Original Buku Teks BM Tahun 4 SK PDF, DSKP Tahun 4 from Google Drive; RPT 2027",
-    "reviewed_rph": 10,
+    "pdp_range": "025–035",
+    "reviewed_rph": 11,
+    "verified_with": "Original BT Tahun 4 SK PDF and DSKP Tahun 4 from Google Drive; RPT 2027",
     "changed_rpt_formats": [
       "Markdown",
       "HTML"

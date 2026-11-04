@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 035
 
-**ID:** BM4-P035  
-**Minggu RPT 2027:** M10 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat  
-**Tajuk aktiviti:** Teknik Masakan Berkhasiat  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 39  
-**Fokus:** tatabahasa — Teknik Masakan Berkhasiat  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Teknik Masakan Berkhasiat'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P035
+**Minggu RPT 2027:** M10 (tarikh sebenar mengikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat
+**Tajuk aktiviti:** Teknik Masakan Berkhasiat
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 39. **BA:** Latihan dan halaman asal belum disahkan.
+**Konteks bahan:** Kursus masakan berkhasiat dihadiri Puan Nurul dan jiran-jiran, dengan contoh merebus, memanggang, menggoreng kering serta mengukus.
+**Objektif PdP:** Pada akhir PdP, murid dapat menukarkan sekurang-kurangnya empat ayat aktif kepada ayat pasif dengan kata kerja dan susunan yang betul.
+**Bahan:** Buku Teks pada halaman berkenaan, kad tugasan khusus, bahan grafik/peta jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Teknik Masakan Berkhasiat' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar aktiviti memasak seperti mengukus atau memanggang.
+**Murid:** Nyatakan satu kaedah masakan yang ditunjukkan dalam buku.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Teknik Masakan Berkhasiat'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata kerja mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Teknik Masakan Berkhasiat'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Modelkan pasangan ayat aktif dan pasif pada BT m/s 39 menggunakan contoh Puan Nurul merebus keropok lekor.
+**Murid:** Kenal pasti pelaku, perbuatan dan objek bagi ayat tentang merebus, memanggang, menggoreng dan mengukus.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Teknik Masakan Berkhasiat' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing murid menukarkan ayat aktif seperti Puan Dayang memanggang daging dan Puan Faizah mengukus ikan kepada susunan pasif.
+**Murid:** Tulis empat ayat pasif dengan imbuhan di- dan pelaku yang tepat mengikut contoh buku.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak struktur ayat pasif, kata kerja, pelaku dan makna asal ayat.
+**Murid:** Baiki ayat yang tersalah susunan dan bacakan satu contoh yang benar.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Teknik Masakan Berkhasiat' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan perbezaan ayat aktif dan ayat pasif.
+**Murid:** Sebut satu ayat pasif tentang kaedah memasak.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 39 mengarahkan membina ayat pasif daripada ayat bercetak berwarna dalam konteks masakan berkhasiat; SP 5.1.2(ii).
+**Status QA:** DRAF — aktiviti BT dan SP disemak secara khusus; BA, PKJR (jika berkenaan), takwim negeri, Word/PDF A4 dan runtime Telegram masih belum lulus. Bukan FINAL READY, jangan terbitkan.
