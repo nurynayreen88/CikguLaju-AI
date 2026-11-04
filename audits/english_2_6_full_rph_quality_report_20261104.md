@@ -1,5 +1,28 @@
 # English CikguLaju — Full RPH source-content QA, 4 November 2026
 
+## Current `main` checkpoint — after PR #253, #254 and #255
+
+**Last verified content merge:** `02b25f18bc4353b938271e8862a87220a761edee` (PR #255). This heading supersedes older *open-issue counts* further down; prior sections remain as a historical audit trail, not a request to redo completed RPH.
+
+Re-checked the latest CI full-source inventory against KPM original SOW and existing database-safe release gates.
+
+| Criterion | Current verified result |
+|---|---|
+| English Year 2–6 source RPH | **800/800** individual source files exist, fixed official SOW Main/Complementary headers match **767/767**, zero critical technical structural errors |
+| Latest source-specific Year6 corrections | **25 newly refined** fixed-SOW Lessons: 17–20, 22–24, 27–30, 33–36, 38–41, 43–46, 49–50 (PR #253–255), in addition to the first 12 from PR #248–249 |
+| Native ReportLab PDF | **37/37** recently refined Year6 fixed-SOW plans render as **one-page A4** in isolated source-linked tests; previous baseline tested all 800/800 |
+| Native Word | New **7/7**, **6/6** and **12/12** exact Year6 Lesson sets render as one-page A4 using the existing AST-locked Word builder and LibreOffice; unchanged text checked |
+| Generic Year6 lesson phrasing | Reduced from **103** flagged fixed/other source Lessons at PR #251 to **78** after this round. These are triage signals, **not** proof that 78 whole plans are unusable |
+| Teacher-choice standards | **33** optional SOW Lessons (Y4 10, Y5 9, Y6 14) retain teacher-choice placeholders, *not* invented official codes |
+| Unresolved Year4 Lesson30 audio | TB `CD1 Track29` versus SOW `CD2 Track29` remains unresolved on actual spoken content; **fail-closed DRAF** |
+| Classroom teacher-facing FINAL READY | **Not fully approved** — independent printed textbook task review, audio listening, teacher sign-off and authenticated Telegram Word/PDF download have not been completed for all lessons |
+
+No database, subscription, credit/quota, RPT master, payment, referral, `app.py`, Render deployment, teacher record, or Telegram live callback was changed by the RPH refinement PRs.
+
+**Next safe priority:** continue only the **78** currently flagged Year6 fixed-SOW source Lessons, checking one lesson at a time against the original text; separately investigate Year4 audio and teacher-selected DSKP standards without silently promoting anything to FINAL READY. The ongoing full-source CI checkpoint now prevents already corrected source tasks from reverting to generic boilerplate.
+
+---
+
 ## Latest verified checkpoint — after PR #244, #245, #246, #247, #248 and #249
 
 This addendum **supersedes only the open-issue descriptions in the original baseline table below**. Keep that historical baseline unchanged for traceability. All current RPH files and source tests are in GitHub `main`; do not re-import old staging copies.
