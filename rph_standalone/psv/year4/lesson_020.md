@@ -3,7 +3,7 @@
 **Unit:** Projek Seni Visual penggal pertama  
 **Tajuk:** Pameran penggal pertama  
 **SK:** 5.1  
-**SP:** 3.3.1; 3.3.2 (bercetak di bawah SK 5.1 dalam DSKP)  
+**SP:** 3.3.1; 3.3.2  
 **Buku Teks:** Projek Kesenian penggal pertama (aktiviti Seni Visual)  
 **BBM:** karya murid, kapsyen, pita mesra kertas, meja stabil  
 **Tempoh:** 60 minit
