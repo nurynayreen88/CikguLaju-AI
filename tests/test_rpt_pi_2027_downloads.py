@@ -71,11 +71,11 @@ class TestPIRPT2027(unittest.TestCase):
     def test_committed_pdf_assets(self):
         import hashlib
         expected = {
-            2: ("fbfee4af40b495860c85c7fbcda6c03d4fd1e12364e20ecf35cc5fd1be176a9d", 770563),
-            3: ("5dee6f3b4ba06fd2521d844a23a1b35d331760fd476cbff8c8f3f19d3cbf66c9", 994779),
-            4: ("ae20c3dfa7adc4a935fe868a95b32bd6269ead5e4b49695ca5b337f8b0c16978", 1084705),
-            5: ("d22cf429496ef8a60896bda5293852148a90ce39e6c68c77e87f1f5a2b7b3233", 1031734),
-            6: ("c59a5ca6c59db82221a6eae77718ed4560f08de776ed3218939f8355d3f6911c", 1055879),
+            2: ("86a8e6fb599eb0f65f3a0a888cb29d636223c75896718d058886076a95f6c05d", 775134),
+            3: ("79d3747081649278798155ff437fa5e5cee550160ddd760197c2c763e0229629", 998795),
+            4: ("1e5208202081040e6220d2775b33e588090fd9677d5004e5947df8d4f6ec3e46", 1089878),
+            5: ("0046f5891344c7e130d66b2121b3cd8c28b45a5f2be5398e0780d8c2331bd9e1", 1037823),
+            6: ("b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b", 1061994),
         }
         for year, (digest, size) in expected.items():
             with self.subTest(year=year):
