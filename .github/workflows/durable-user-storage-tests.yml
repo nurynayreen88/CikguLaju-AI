@@ -16,6 +16,9 @@ on:
   push:
     branches: [main]
     paths:
+      - 'web/payment_record_on_proof_runtime.py'
+      - 'test_payment_record_on_proof_runtime.py'
+      - 'pioneer_telegram.py'
       - 'web/supabase_user_payment_runtime.py'
       - 'web/supabase_user_feedback_runtime.py'
       - 'test_supabase_user_records.py'
