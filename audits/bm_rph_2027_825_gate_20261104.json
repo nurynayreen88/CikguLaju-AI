@@ -1,0 +1,1300 @@
+{
+  "scope": "BM SK 2027 Years 2–6",
+  "dsdkp_source_hashes": {
+    "2": "c842c22b745ed2c2ea4a6da9932494b97cb62e4eb3937832840fe81c66c32522",
+    "3": "d8498c616447323d7e98c9940b369faeaab2e7e20ab499567943cb16baffa7a7",
+    "4": "42af399fc0abae7a49d81d8a0202fa1249592326e62b92c52bad200c59986373",
+    "5": "28683e60e201838550c760f69388bbe73fe60510e70f311aed957b5f81cb4c7d",
+    "6": "db151ef90a7fcdd8d8b9079a32473ae54c9276d12621d369cf329cc8fe6b24d9"
+  },
+  "ready": false,
+  "checks": "DSKP code presence, parent SK consistency, RPT/RPH metadata, RPH structure and source-release barriers",
+  "years": {
+    "2": {
+      "expected": 164,
+      "counts": {
+        "coded_sp": 161,
+        "contains_draft": 135,
+        "files_seen": 164,
+        "contains_hold": 29,
+        "rpt_pkjr": 17,
+        "thematic_pbd_no_new_sp": 3
+      },
+      "hard_errors": 0,
+      "review_warnings": 164,
+      "errors": [],
+      "warnings": [
+        {
+          "pdp": 1,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 2,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 3,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 4,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 5,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 6,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 7,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 8,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 9,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 10,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 11,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 12,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 13,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 14,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 15,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 16,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 17,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 18,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 19,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 20,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 21,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 22,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 23,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 24,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 25,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 26,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 27,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 28,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 29,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 30,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 31,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 32,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 33,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 34,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 35,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 36,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 37,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 38,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 39,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 40,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 41,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 42,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 43,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 44,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 45,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 46,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 47,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 48,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 49,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 50,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 51,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 52,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 53,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 54,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 55,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 56,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 57,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 58,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 59,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 60,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 61,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 62,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 63,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 64,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 65,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 66,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 67,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 68,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 69,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 70,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 71,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 72,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 73,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 74,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 75,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 76,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 77,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 78,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 79,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 80,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 81,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 82,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 83,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 84,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 85,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 86,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 87,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 88,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 89,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 90,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 91,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 92,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 93,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 94,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 95,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 96,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 97,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 98,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 99,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 100,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 101,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 102,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 103,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 104,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 105,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 106,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 107,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 108,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 109,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 110,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 111,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 112,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 113,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 114,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 115,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 116,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 117,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 118,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 119,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 120,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 121,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 122,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 123,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 124,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 125,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 126,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 127,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 128,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 129,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 130,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 131,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 132,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 133,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 134,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 135,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 136,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 137,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 138,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 139,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 140,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 141,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 142,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 143,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 144,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 145,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 146,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 147,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 148,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 149,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 150,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 151,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 152,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 153,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 154,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 155,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 156,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 157,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 158,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 159,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 160,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 161,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 162,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 163,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 164,
+          "type": "english_lesson_label"
+        }
+      ]
+    },
+    "3": {
+      "expected": 165,
+      "counts": {
+        "coded_sp": 165,
+        "contains_draft": 165,
+        "files_seen": 165,
+        "rpt_pkjr": 28,
+        "contains_hold": 8
+      },
+      "hard_errors": 21,
+      "review_warnings": 115,
+      "errors": [
+        {
+          "pdp": 81,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 84,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 85,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 87,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 91,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 96,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 97,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 100,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 102,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 103,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 104,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 106,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 107,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 108,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 111,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 112,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 114,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 115,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 118,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 119,
+          "type": "missing_pedagogical_section"
+        },
+        {
+          "pdp": 120,
+          "type": "missing_pedagogical_section"
+        }
+      ],
+      "warnings": [
+        {
+          "pdp": 51,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 52,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 53,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 54,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 55,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 56,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 57,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 58,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 59,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 60,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 61,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 62,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 63,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 64,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 65,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 66,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 67,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 68,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 69,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 70,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 71,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 72,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 73,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 74,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 75,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 76,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 77,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 78,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 79,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 80,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 81,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 82,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 83,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 84,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 85,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 86,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 87,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 88,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 89,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 90,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 91,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 92,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 93,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 94,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 95,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 96,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 97,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 98,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 99,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 100,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 101,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 102,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 103,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 104,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 105,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 106,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 107,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 108,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 109,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 110,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 111,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 112,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 113,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 114,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 115,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 116,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 117,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 118,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 119,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 120,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 121,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 122,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 123,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 124,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 125,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 126,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 127,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 128,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 129,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 130,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 131,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 132,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 133,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 134,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 135,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 136,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 137,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 138,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 139,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 140,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 141,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 142,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 143,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 144,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 145,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 146,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 147,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 148,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 149,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 150,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 151,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 152,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 153,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 154,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 155,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 156,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 157,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 158,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 159,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 160,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 161,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 162,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 163,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 164,
+          "type": "english_lesson_label"
+        },
+        {
+          "pdp": 165,
+          "type": "english_lesson_label"
+        }
+      ]
+    },
+    "4": {
+      "expected": 165,
+      "counts": {
+        "coded_sp": 165,
+        "contains_hold": 165,
+        "contains_draft": 165,
+        "needs_full_source_review": 165,
+        "files_seen": 165,
+        "rpt_pkjr": 24
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "5": {
+      "expected": 166,
+      "counts": {
+        "coded_sp": 166,
+        "contains_hold": 166,
+        "contains_draft": 166,
+        "needs_full_source_review": 166,
+        "files_seen": 166,
+        "rpt_pkjr": 24
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "6": {
+      "expected": 165,
+      "counts": {
+        "coded_sp": 165,
+        "contains_hold": 165,
+        "contains_draft": 165,
+        "needs_full_source_review": 165,
+        "files_seen": 165,
+        "rpt_pkjr": 21
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "unresolved_source_types": [
+    "BT page-to-task verification",
+    "Buku Aktiviti pages and exercises",
+    "DSKP full text and Roman-subcode semantics",
+    "PKJR/BPG/BAM source mapping",
+    "RPH factual lesson-specificity",
+    "2027 state calendar",
+    "complete visual Word/PDF proof and real Telegram runtime"
+  ]
+}
