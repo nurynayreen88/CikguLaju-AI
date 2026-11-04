@@ -11,16 +11,16 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Murid dapat mendokumentasikan beg batik sebagai gambar/lakaran dan membuat apresiasi menggunakan istilah kontra warna, susunan motif, teknik resis serta nilai gunaan. Kriteria kejayaan: satu gambar/lakaran beg berlabel dan satu ulasan lisan/bertulis tentang bahasa seni, teknik dan fungsi.
+Murid dapat menghasilkan folio ringkas Beg Batik Rekaanku dan membuat apresiasi tentang kontra warna, motif, teknik resis serta fungsi. Kriteria kejayaan: satu folio lima bahagian (sumber motif, lakaran, media/teknik, bukti proses, gambar akhir) dan satu ulasan bahasa seni, teknik serta nilai gunaan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru mempamerkan beberapa beg batik siap; murid mengenal motif, kemasan penutup dan fungsi menyimpan alatan seni.
 
-**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 86–87, menunjukkan cara merakam atau melakar hasil karya, membingkai foto/lakaran pada kad serta menyusun satu kad maklumat tajuk, media, teknik dan fungsi. Murid menyiapkan bahan galeri.
+**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 86–87 dan DSKP SP 3.1.1, memodelkan folio ringkas lima bahagian: sumber motif flora, lakaran, media/teknik resis, bukti proses dan gambar/lakaran akhir. Murid mengumpul bahan kerja PdP 035–038 untuk didokumenkan.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar atau merakam beg batik, menampal dokumentasi pada kad, memasang galeri mini dan secara bergilir membuat ulasan tentang susunan motif berulang, kontra warna, resis, cantuman serta kegunaan beg. Murid memberi satu maklum balas membina kepada rakan.
+**Aktiviti 2 (25 minit) — Amali:** Murid menyusun lima bahagian folio, melakar atau merakam beg batik, menampal bukti proses, melabel media, resis, cantuman dan nilai gunaan. Murid mempamerkan beg bersama folio lalu membuat apresiasi tentang motif berulang, kontra warna dan fungsi serta memberi satu maklum balas membina.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu gambar/lakaran beg berlabel dan satu ulasan lisan/bertulis tentang bahasa seni, teknik dan fungsi. Guru merekod pemerhatian proses, hasil dan apresiasi.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu folio lima bahagian dan ulasan tentang bahasa seni, teknik serta nilai gunaan. Guru merekod susunan bukti proses, gambar akhir, hasil beg dan apresiasi.
 
 **Penutup (5 minit):** Murid mencatat satu kekuatan dan satu penambahbaikan produk; guru menyimpan dokumentasi PBD serta memastikan bahan dipulangkan.
 
