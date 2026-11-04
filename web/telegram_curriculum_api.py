@@ -79,8 +79,28 @@ def create_curriculum_blueprint(database_path_provider):
 
     @bp.get("/internal/curriculum/v1/approved-materials")
     def approved_materials():
-        # No material is exposed without a verified approval mapping and
-        # authorized delivery. Never manufacture downloadable file URLs.
-        return jsonify({"error": "approved material mapping unavailable"}), 503
+        try:
+            if set(request.args) != {"year", "subject", "lesson"} or any(
+                len(request.args.getlist(k)) != 1 for k in ("year", "subject", "lesson")
+            ):
+                raise ValueError("invalid query")
+            year = request.args["year"]
+            subject = request.args["subject"]
+            lesson = request.args["lesson"]
+            if not year.isascii() or not year.isdecimal() or int(year) not in range(1, 7):
+                raise ValueError("invalid year")
+            if not lesson.isascii() or not lesson.isdecimal() or len(lesson) > 12 or int(lesson) < 1:
+                raise ValueError("invalid lesson")
+            if subject not in ("ENGLISH", "BM", "MATH", "SCIENCE", "PI", "PJPK"):
+                raise ValueError("invalid subject")
+            if subject != "ENGLISH" or int(year) not in (1, 2, 3):
+                return jsonify({"source": "telegram-runtime-v1", "items": []})
+            from web.telegram_english_rph_bridge import verified_english_rph_metadata
+            items = verified_english_rph_metadata(database_path_provider(), int(year), int(lesson))
+            return jsonify({"source": "telegram-runtime-v1", "items": items})
+        except ValueError:
+            return jsonify({"error": "invalid selection"}), 400
+        except Exception:
+            return jsonify({"error": "authoritative source unavailable"}), 503
 
     return bp
