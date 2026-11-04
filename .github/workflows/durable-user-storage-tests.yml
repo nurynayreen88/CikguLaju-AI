@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'web/supabase_user_payment_runtime.py'
+      - 'web/payment_receipt_admin_runtime.py'
+      - 'test_payment_receipt_admin_runtime.py'
       - 'web/supabase_user_feedback_runtime.py'
       - 'test_supabase_user_records.py'
       - 'migrations/20261104_durable_telegram_payments_feedback.sql'
@@ -29,6 +31,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile isolated runtime code
-        run: python -m py_compile web/supabase_user_payment_runtime.py web/supabase_user_feedback_runtime.py test_supabase_user_records.py
+        run: python -m py_compile web/supabase_user_payment_runtime.py web/payment_receipt_admin_runtime.py web/supabase_user_feedback_runtime.py test_supabase_user_records.py test_payment_receipt_admin_runtime.py
       - name: Test permanent user records without any live credentials
-        run: python -m unittest -v test_supabase_user_records
+        run: python -m unittest -v test_supabase_user_records test_payment_receipt_admin_runtime
