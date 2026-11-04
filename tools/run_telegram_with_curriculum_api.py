@@ -98,3 +98,13 @@ try:
 except Exception as _math_rpt_2027_exc:
     MATEMATIK_RPT_2027_TELEGRAM_ACTIVE = False
     print("Matematik RPT 2027 Telegram bridge unavailable:", repr(_math_rpt_2027_exc), flush=True)
+
+
+# Pendidikan Islam RPT 2027: paid-gated PDF delivery, read-only.
+# The menu advertises a year only if its local PDF asset is present and valid.
+try:
+    from rpt_2027.pendidikan_islam.telegram_downloads import install as install_pi_rpt_2027
+    PI_RPT_2027_TELEGRAM_ACTIVE = install_pi_rpt_2027(vars(telegram_runtime))
+except Exception as _pi_rpt_2027_exc:
+    PI_RPT_2027_TELEGRAM_ACTIVE = False
+    print("Pendidikan Islam RPT 2027 Telegram bridge unavailable:", repr(_pi_rpt_2027_exc), flush=True)
