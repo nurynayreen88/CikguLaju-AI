@@ -3,26 +3,27 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Kolaj dan Gurisan — Burung Merak  
+**Jenis/Tajuk:** Lukisan dan Capan — Si Putih Menawan
+**Unit rujukan 2026:** Unit 1 — Si Putih Menawan  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Teknik:** gabungan kolaj dan gurisan  
-**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
+**Teknik:** gabungan lukisan dan capan  
+**Bahasa seni visual:** garisan, jalinan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon, kertas warna, gam
+**BBM:** pensel, blok cap, warna
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan karya bulu merak bertampal dan berguris dengan gabungan kolaj dan gurisan, sekurang-kurangnya dua aspek garisan, jalinan, kontra, kepelbagaian.
+Murid dapat menghasilkan karya Si Putih Menawan menggunakan lukisan dan capan dengan gabungan lukisan dan capan, sekurang-kurangnya dua aspek garisan, jalinan, kontra.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Pasar Buah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat krayon, kertas warna, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
+**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat pensel, blok cap, warna. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan karya bulu merak bertampal dan berguris mengikut lakaran menggunakan gabungan kolaj dan gurisan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan karya Si Putih Menawan menggunakan lukisan dan capan mengikut lakaran menggunakan gabungan lukisan dan capan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri garisan, jalinan, kontra, kepelbagaian, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri garisan, jalinan, kontra, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
 

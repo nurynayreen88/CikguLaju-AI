@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster dan Montaj — Sayangi Sungai  
+**Jenis/Tajuk:** Poster dan Montaj — Sayangilah Habitat Kita
+**Unit rujukan 2026:** Unit 2 — Sayangilah Habitat Kita  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
@@ -13,14 +14,14 @@
 **BBM:** majalah, poster, gam
 
 ## Objektif pembelajaran
-Murid dapat memperkemas poster pemuliharaan sungai serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas poster Selamatkan Ikan Bayan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
 **Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Sayangi Sungai. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
 **Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik gabungan poster dan montaj serta penggunaan rupa, warna, penegasan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada poster pemuliharaan sungai, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada poster Selamatkan Ikan Bayan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

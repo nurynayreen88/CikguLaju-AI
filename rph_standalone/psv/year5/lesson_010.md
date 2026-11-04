@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Mozek dan Catan — Taman Flora  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Kolaj Corak — Jaket Buku Nota
+**Unit rujukan 2026:** Unit 3 — Jaket Buku Nota  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.3; 3.1.1  
-**Teknik:** gabungan mozek dan catan  
-**Bahasa seni visual:** rupa, warna, harmoni  
+**SP:** 2.1.6; 3.1.3  
+**Teknik:** tampalan kolaj bercorak  
+**Bahasa seni visual:** rupa, warna, kesatuan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** cebisan kertas, cat, gam
+**BBM:** kertas, gam, templat jaket buku nota
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Taman Flora dan memilih satu lakaran berdasarkan rupa, warna, harmoni.
+Murid dapat menyiapkan dua lakaran Corak Geometri Beg dan memilih satu lakaran berdasarkan rupa, warna, kesatuan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Flora. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Geometri Beg. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Taman Flora. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Corak Geometri Beg. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal mozek bunga berlatar catan, menguji gabungan mozek dan catan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal jaket buku nota dengan motif kolaj, menguji tampalan kolaj bercorak pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

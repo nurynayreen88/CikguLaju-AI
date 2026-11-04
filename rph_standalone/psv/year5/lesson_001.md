@@ -3,24 +3,25 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Kolaj dan Gurisan — Burung Merak  
+**Jenis/Tajuk:** Lukisan dan Capan — Si Putih Menawan
+**Unit rujukan 2026:** Unit 1 — Si Putih Menawan  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.1; 2.1.1  
-**Teknik:** gabungan kolaj dan gurisan  
-**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
+**SP:** 1.1.1; 2.1.4  
+**Teknik:** gabungan lukisan dan capan  
+**Bahasa seni visual:** garisan, jalinan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon, kertas warna, gam
+**BBM:** pensel, blok cap, warna
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh kolaj dan gurisan dan menghasilkan satu sampel gabungan kolaj dan gurisan.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh lukisan dan capan dan menghasilkan satu sampel gabungan lukisan dan capan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Pasar Buah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh kolaj dan gurisan bertema Burung Merak dan membandingkan garisan, jalinan, kontra, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh lukisan dan capan bertema Pasar Buah dan membandingkan garisan, jalinan, kontra. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan kolaj dan gurisan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk karya bulu merak bertampal dan berguris.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan lukisan dan capan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk karya Si Putih Menawan menggunakan lukisan dan capan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

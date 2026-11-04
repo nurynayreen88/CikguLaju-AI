@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster dan Montaj — Sayangi Sungai  
+**Jenis/Tajuk:** Poster dan Montaj — Sayangilah Habitat Kita
+**Unit rujukan 2026:** Unit 2 — Sayangilah Habitat Kita  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.2  
@@ -20,7 +21,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh poster dan montaj 
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh poster dan montaj bertema Sayangi Sungai dan membandingkan rupa, warna, penegasan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan poster dan montaj. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk poster pemuliharaan sungai.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan poster dan montaj. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk poster Selamatkan Ikan Bayan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

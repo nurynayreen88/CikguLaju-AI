@@ -3,24 +3,25 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Kolaj dan Gurisan — Burung Merak  
+**Jenis/Tajuk:** Lukisan dan Capan — Si Putih Menawan
+**Unit rujukan 2026:** Unit 1 — Si Putih Menawan  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.1; 3.1.1  
-**Teknik:** gabungan kolaj dan gurisan  
-**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
+**SP:** 2.1.4; 3.1.1  
+**Teknik:** gabungan lukisan dan capan  
+**Bahasa seni visual:** garisan, jalinan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon, kertas warna, gam
+**BBM:** pensel, blok cap, warna
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Burung Merak dan memilih satu lakaran berdasarkan garisan, jalinan, kontra, kepelbagaian.
+Murid dapat menyiapkan dua lakaran Pasar Buah dan memilih satu lakaran berdasarkan garisan, jalinan, kontra.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Pasar Buah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Burung Merak. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Pasar Buah. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal karya bulu merak bertampal dan berguris, menguji gabungan kolaj dan gurisan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal karya Si Putih Menawan menggunakan lukisan dan capan, menguji gabungan lukisan dan capan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

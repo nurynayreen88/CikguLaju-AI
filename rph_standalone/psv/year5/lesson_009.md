@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Mozek dan Catan — Taman Flora  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Kolaj Corak — Jaket Buku Nota
+**Unit rujukan 2026:** Unit 3 — Jaket Buku Nota  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.1; 2.1.3  
-**Teknik:** gabungan mozek dan catan  
-**Bahasa seni visual:** rupa, warna, harmoni  
+**SP:** 1.1.2; 2.1.6  
+**Teknik:** tampalan kolaj bercorak  
+**Bahasa seni visual:** rupa, warna, kesatuan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** cebisan kertas, cat, gam
+**BBM:** kertas, gam, templat jaket buku nota
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh mozek dan catan dan menghasilkan satu sampel gabungan mozek dan catan.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh kolaj corak dan menghasilkan satu sampel tampalan kolaj bercorak.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Flora. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Geometri Beg. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh mozek dan catan bertema Taman Flora dan membandingkan rupa, warna, harmoni. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh kolaj corak bertema Corak Geometri Beg dan membandingkan rupa, warna, kesatuan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan mozek dan catan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk mozek bunga berlatar catan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik tampalan kolaj bercorak. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk jaket buku nota dengan motif kolaj.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster dan Montaj — Sayangi Sungai  
+**Jenis/Tajuk:** Poster dan Montaj — Sayangilah Habitat Kita
+**Unit rujukan 2026:** Unit 2 — Sayangilah Habitat Kita  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
 **SP:** 3.1.1  
@@ -13,14 +14,14 @@
 **BBM:** majalah, poster, gam
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan poster pemuliharaan sungai dengan gabungan poster dan montaj, sekurang-kurangnya dua aspek rupa, warna, penegasan.
+Murid dapat menghasilkan poster Selamatkan Ikan Bayan dengan gabungan poster dan montaj, sekurang-kurangnya dua aspek rupa, warna, penegasan.
 
 ## Aktiviti PdP
 **Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Sayangi Sungai. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
 **Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat majalah, poster, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan poster pemuliharaan sungai mengikut lakaran menggunakan gabungan poster dan montaj, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan poster Selamatkan Ikan Bayan mengikut lakaran menggunakan gabungan poster dan montaj, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri rupa, warna, penegasan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
