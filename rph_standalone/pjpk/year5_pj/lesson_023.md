@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.9, 2.9, 5.3  
 **SP:** 1.9.3, 2.9.4, 5.3.3  
-**Buku teks:** calon m/s 36-37 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 36-37, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.9.3 (berlari beritma melepasi halangan secara berterusan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.9.4: Memerihal aksi kaki dan tangan semasa lari beritma melepasi halangan.
