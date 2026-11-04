@@ -1,0 +1,44 @@
+name: English Year 4 fixed and Year 6 choice A4 audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y4_standalone_runtime.py'
+      - 'web/english_y6_standalone_runtime.py'
+      - 'tools/verify_english_y4_y6_a4_20261104.py'
+      - '.github/workflows/english-y4-y6-a4-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/english_y4_standalone_runtime.py'
+      - 'web/english_y6_standalone_runtime.py'
+      - 'tools/verify_english_y4_y6_a4_20261104.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify-a4:
+    strategy:
+      fail-fast: false
+      matrix: {year: [4, 6]}
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install offline Word/PDF converter
+        run: |
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq libreoffice-writer >/dev/null
+          fi
+      - name: Verify AST-locked Word source and A4 layout by lesson
+        run: python tools/verify_english_y4_y6_a4_20261104.py --year ${{ matrix.year }}
+      - name: Upload A4 source and overflow report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y${{ matrix.year }}-a4-qa
+          path: output/english_y4_y6_word_a4_20261104/year${{ matrix.year }}/report.json
+          retention-days: 14
