@@ -46,6 +46,7 @@ def fixture():
           "_payment_request":lambda rid: dict(payments[rid]),
           "_is_admin":lambda uid: uid == 1,
           "_upsert_user":lambda user,uid:registered.append(uid),
+          "_ensure_user_credit":lambda uid:calls.append(("ENSURE", "cikgulaju_users", {"uid":uid})),
           "menu":lambda uid,**kw: sent.append((uid,"menu")),
           "request":None,"jsonify":lambda x:x}
     return ns, sent, calls, registered
@@ -83,6 +84,53 @@ class TestPrivateReferral(unittest.TestCase):
         self.assertTrue(response["private_referral"])
         self.assertEqual(registered, [301])
         self.assertTrue(any(p.endswith("referral_capture_signup") for m,p,a in calls))
+
+    def test_new_referral_initializes_persistent_user_before_capture(self):
+        ns, sent, calls, registered = fixture()
+        message = {"chat":{"id":301,"type":"private"}, "from":{"id":301},
+                   "text":"/start rp_" + "B"*24}
+        ns["request"] = type("Request", (), {
+            "headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},
+            "get_json":lambda self,**_:{"message":message}
+        })()
+        with patch.dict(os.environ, {
+            "CIKGULAJU_REFERRAL_POINTS_ENABLED":"1",
+            "CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"
+        }):
+            referral.install(ns)
+            ns["app"].view_functions["webhook"]()
+        ensured = [i for i,(method,path,_) in enumerate(calls)
+                   if method=="ENSURE" and path=="cikgulaju_users"]
+        captured = [i for i,(method,path,_) in enumerate(calls)
+                    if path=="rpc/referral_capture_signup"]
+        self.assertEqual(registered,[301])
+        self.assertEqual(len(ensured),1)
+        self.assertEqual(len(captured),1)
+        self.assertLess(ensured[0], captured[0])
+        self.assertTrue(any("berjaya direkodkan" in text for _,text in sent))
+
+    def test_declined_referral_capture_is_not_claimed_as_success(self):
+        ns, sent, calls, registered = fixture()
+        original_sb = ns["_sb_request"]
+        def sb(method, path, **kwargs):
+            if path=="rpc/referral_capture_signup":
+                return {"captured":False,"reason":"not_new_user"}
+            return original_sb(method,path,**kwargs)
+        ns["_sb_request"] = sb
+        message = {"chat":{"id":301,"type":"private"}, "from":{"id":301},
+                   "text":"/start rp_" + "B"*24}
+        ns["request"] = type("Request", (), {
+            "headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},
+            "get_json":lambda self,**_:{"message":message}
+        })()
+        with patch.dict(os.environ, {
+            "CIKGULAJU_REFERRAL_POINTS_ENABLED":"1",
+            "CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"
+        }):
+            referral.install(ns)
+            ns["app"].view_functions["webhook"]()
+        self.assertTrue(any("tidak direkodkan" in text for _,text in sent))
+        self.assertFalse(any("berjaya direkodkan" in text for _,text in sent))
 
     def test_legacy_link_does_not_award_vip_when_enabled(self):
         ns, sent, calls, registered = fixture()
