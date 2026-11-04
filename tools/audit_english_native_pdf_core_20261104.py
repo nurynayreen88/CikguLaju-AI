@@ -12,6 +12,7 @@ missing text fields for a selected cross-year test matrix.
 import ast
 import argparse
 import json
+from functools import lru_cache
 import os
 from pathlib import Path
 import re
@@ -40,6 +41,7 @@ CASES={
 }
 
 
+@lru_cache(maxsize=1)
 def _real_rph_pdf_function():
     path=ROOT/"app.py"
     source=path.read_text(encoding="utf-8")
@@ -117,14 +119,15 @@ def _make_native_pdf(rows,year,lesson,output):
     return line
 
 
-def run(year):
+def run(year, *, all_lessons=False):
     if year not in CASES:
         raise ValueError("English Year 2–6 only")
     sow=json.loads((ROOT/"audits/english_primary_2_6_official_sow_index_20261103.json").read_text(encoding="utf-8"))["lessons"]
     outdir=ROOT/"output"/"english_native_pdf_core_audit_20261104"/("year%d"%year)
     outdir.mkdir(parents=True,exist_ok=True)
     results=[]
-    for lesson in CASES[year]:
+    lesson_numbers=tuple(range(1,161)) if all_lessons else CASES[year]
+    for lesson in lesson_numbers:
         record=sow["%d/%d"%(year,lesson)]
         rows,_=_render(year,lesson,record)
         if "LEGACY" in str(rows.get("TAJUK") or ""):
@@ -173,4 +176,6 @@ def run(year):
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("--year",type=int,required=True,choices=range(2,7))
-    run(p.parse_args().year)
+    p.add_argument("--all",action="store_true",help="Audit every Lesson 1–160")
+    args=p.parse_args()
+    run(args.year,all_lessons=args.all)
