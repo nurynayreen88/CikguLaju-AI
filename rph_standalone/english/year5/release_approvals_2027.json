@@ -1,0 +1,6 @@
+{
+  "version": "english-year5-per-lesson-release-v1",
+  "year": 5,
+  "approved_lessons": {},
+  "notes": "No lesson released by default. Approve each fixed-SOW lesson manually with source SHA256 and all QA gates verified. Teacher-choice requires separate standard selection, and cannot be released through fixed-standard bridge."
+}
