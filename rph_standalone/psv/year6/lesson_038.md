@@ -1,31 +1,31 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 038
 
-**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Status:** DRAF SEMAK (staging sahaja; belum aktif Telegram)  
 **Unit RPT 2026:** Unit 10 — Beg Batik Rekaanku  
 **Aktiviti/Tajuk:** Kemasan produk  
 **SK:** 3.1  
 **SP:** 3.2.2  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 10 — Beg Batik Rekaanku, ms 76-87 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Beg Batik Rekaanku, ms 84–85  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kertas tebal atau kanvas lembut, warna air, span, gam dan templat beg  
+**BBM:** panel batik kering, kepingan kain felt atau kad fleksibel, reben pra-potong, pita velkro atau pelekat kain selamat, gam PVA, gunting hujung bulat  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Memperbaiki dua ciri rekaan beg bercorak batik melalui media selamat tanpa lilin panas berdasarkan ujian fungsi dan susunan motif batik, kontra warna, ritma dan kegunaan beg. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid dapat mencantum panel batik dengan pelapik dan pemegang untuk menghasilkan model beg alatan seni yang boleh dibuka/tutup serta menambah baik dua bahagian kemasan. Kriteria kejayaan: satu model beg dengan pemegang dan penutup berfungsi, panel batik jelas, serta dua catatan pembaikan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Kemasan produk** dalam tema **Beg Batik Rekaanku**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan panel batik kering dan model beg; murid mengesan bahagian cantuman, pemegang dan penutup.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menetapkan kriteria kemasan: kestabilan, ketepatan motif, kebersihan dan fungsi. Murid menguji karya serta menandakan dua kelemahan.
+**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 84–85, menunjukkan lipatan tepi panel, lapisan kain felt, kedudukan reben pemegang dan pita velkro. Guru menyediakan pemotongan sukar atau menjahit bahagian yang perlu.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid membaiki rekaan beg bercorak batik melalui media selamat tanpa lilin panas, memantapkan susunan motif batik, kontra warna, ritma dan kegunaan beg, menyimpan foto sebelum/selepas dan membuat semakan rakan menggunakan dua kriteria.
+**Aktiviti 2 (25 minit) — Amali:** Murid melapik dan melipat panel batik, mencantum sisi pada model beg dengan pita/pelekat kain mesra murid, memasang reben pemegang serta velkro. Murid menguji meletakkan satu alat seni ringan, menutup dan membuka beg lalu membaiki dua bahagian kemasan yang lemah.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua pembetulan ketara, bukti semakan, dan penjelasan sebab perubahan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu model beg dengan pemegang dan penutup berfungsi, panel batik jelas, serta dua catatan pembaikan. Guru menyemak fungsi, sambungan dan keselamatan.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
+**Penutup (5 minit):** Murid menunjukkan ujian fungsi beg; guru merumuskan peranan reka bentuk, cantuman dan kemasan pada produk tiga dimensi.
 
-**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
+**Pembezaan:** Sediakan panel dan reben pra-potong sebagai sokongan; murid lanjutan menambah hiasan tanpa menjejaskan penutup.
 
-**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
+**Keselamatan:** Pengokot, jarum jahit dan gam kuat hanya dikendalikan guru jika benar-benar perlu. Ujian fungsi dengan alat ringan sahaja.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 84–85](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Adaptasi sumber Buku Teks; belum diuji dalam Telegram.
