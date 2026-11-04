@@ -8,8 +8,8 @@
 **Standard Pembelajaran (SP):** 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 5  
 **Fokus:** seni — Program Kebun Komuniti  
-**Objektif PdP:** Murid dapat mengujarkan dialog atau bercerita tentang 'Program Kebun Komuniti' dengan menggunakan sekurang-kurangnya dua ungkapan/peribahasa yang tepat mengikut konteks.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat menceritakan semula situasi keluarga Hadif di Kebun Komuniti dengan menggunakan dua peribahasa yang sesuai, serta menjelaskan maksudnya.  
+**Bahan:** Buku Teks BM Tahun 4 SK m/s 5 (Encik Husin, Hadif dan Hajar di Kebun Komuniti; contoh peribahasa), kad peribahasa dan kad urutan cerita.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
@@ -17,20 +17,22 @@
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
 ## Aktiviti 1 — Fahami penggunaan peribahasa (15 minit)
-**Guru:** Menunjukkan petikan atau dialog berkaitan 'Program Kebun Komuniti' dalam bahan yang dirujuk; mengajak murid meneliti maksud peribahasa berdasarkan situasi.
-**Murid:** Mengenal pasti dua peribahasa/ungkapan dan menerangkan maksudnya melalui contoh situasi dalam tajuk.
+**Guru:** Menunjukkan cerita Encik Husin membawa Hadif dan Hajar ke Kebun Komuniti; membimbing murid mengenal pasti dan menghuraikan maksud peribahasa yang ditonjolkan dalam teks.  
+**Murid:** Membaca cerita sebenar dan mengaitkan dua peribahasa dengan situasi penduduk bekerjasama serta berusaha di kebun.
 
 ## Aktiviti 2 — Dialog dan persembahan (20 minit)
-**Guru:** Membimbing murid membina dialog empat hingga enam ujaran dengan peribahasa yang digunakan pada konteks yang sesuai; memodelkan intonasi santun.
-**Murid:** Berpasangan membina dialog bertema 'Program Kebun Komuniti', menggunakan dua ungkapan yang relevan, kemudian mempersembahkannya secara lisan.
+**Guru:** Membimbing penceritaan semula mengikut urutan daripada teks BT, menggunakan peribahasa dalam konteks yang bersesuaian.  
+**Murid:** Berpasangan menceritakan tiga peristiwa di Kebun Komuniti dan menggunakan dua peribahasa yang relevan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Merekod ketepatan makna dua peribahasa dan penggunaan dalam dialog/cerita serta kelancaran ujaran, menurut SP (4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa).
-**Murid:** Menjelaskan mengapa ungkapan dipilih dan membetulkan sekurang-kurangnya satu penggunaan jika tidak tepat.
+**Guru:** Menilai ketepatan dua peribahasa serta penggunaan dalam cerita dan keberkesanan pertuturan mengikut SP 4.1.1.  
+**Murid:** Menjelaskan maksud peribahasa yang digunakan serta menambah baik cerita mengikut maklum balas.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Program Kebun Komuniti' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
 **Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+
+**Bukti sumber khusus (BT4 SK):** BT Tahun 4 SK m/s 5 menunjukkan Encik Husin membawa Hadif dan Hajar ke Kebun Komuniti; tugas rasmi ialah bercerita dan mengujarkan dialog menggunakan peribahasa.
 
 **Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
 
