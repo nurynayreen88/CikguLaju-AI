@@ -10,6 +10,10 @@ on:
       - 'tests/test_english_y4_l099_audio_source.py'
       - 'tests/test_english_y4_l145_l147_audio_source.py'
       - 'tests/test_english_y4_five_disc_source.py'
+      - 'tests/test_english_y4_l009_l011_l022_audio_source.py'
+      - 'rph_standalone/english/year4/lesson_009.md'
+      - 'rph_standalone/english/year4/lesson_011.md'
+      - 'rph_standalone/english/year4/lesson_022.md'
       - 'rph_standalone/english/year4/lesson_008.md'
       - 'rph_standalone/english/year4/lesson_012.md'
       - 'rph_standalone/english/year4/lesson_017.md'
@@ -32,6 +36,10 @@ on:
       - 'tests/test_english_y4_l099_audio_source.py'
       - 'tests/test_english_y4_l145_l147_audio_source.py'
       - 'tests/test_english_y4_five_disc_source.py'
+      - 'tests/test_english_y4_l009_l011_l022_audio_source.py'
+      - 'rph_standalone/english/year4/lesson_009.md'
+      - 'rph_standalone/english/year4/lesson_011.md'
+      - 'rph_standalone/english/year4/lesson_022.md'
       - 'rph_standalone/english/year4/lesson_008.md'
       - 'rph_standalone/english/year4/lesson_012.md'
       - 'rph_standalone/english/year4/lesson_017.md'
@@ -58,6 +66,7 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_english_y4_l099_audio_source.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_l145_l147_audio_source.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_five_disc_source.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l009_l011_l022_audio_source.py' -v
   media-route-static-audit:
     runs-on: ubuntu-latest
     timeout-minutes: 8
