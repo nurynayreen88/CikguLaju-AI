@@ -207,7 +207,7 @@ def _supplement(year):
         sections = _source_components(raw)
         if any(not sections.get(k) for k in (*PHASE_NAMES, "Objektif")):
             raise ValueError("Missing RPH phase in " + str(path))
-        if any(not _field(raw, k) for k in ("Unit", "Nilai", "SK", "SP")) or not (_field(raw, "BBM") or _field(raw, "Bahan")):
+        if any(not _field(raw, k) for k in ("Unit", "SK", "SP")) or not (_field(raw, "Nilai") or _field(raw, "Tema/Nilai")) or not (_field(raw, "BBM") or _field(raw, "Bahan")):
             raise ValueError("Missing RPH metadata in " + str(path))
         yield r, raw, sections
 
@@ -246,7 +246,7 @@ def build_rph_pdf(year, destination):
             y = _draw_lines(c, value, 35, y, w-70, size=size,
                             max_lines=line_max, line_height=10.5)
             y -= 8
-        item("Unit / nilai", _field(raw, "Unit") + " | " + _field(raw, "Nilai"), 3)
+        item("Unit / nilai", _field(raw, "Unit") + " | " + (_field(raw, "Nilai") or _field(raw, "Tema/Nilai")), 3)
         item("Standard kandungan / pembelajaran",
              "SK " + _field(raw, "SK") + "; SP " + _field(raw, "SP"), 4, 7.9)
         item("Objektif pembelajaran", sec["Objektif"], 4, 8.3)
@@ -306,7 +306,7 @@ def build_rph_docx(year, destination):
         h.paragraph_format.space_after = Pt(4)
         h.add_run("RPH PENDIDIKAN MORAL TAHUN %d — SESI %s" % (year, row["Sesi"]))
         line("Tempoh", "60 minit • Pengukuhan")
-        line("Unit/Nilai", _field(raw, "Unit") + " | " + _field(raw, "Nilai"))
+        line("Unit/Nilai", _field(raw, "Unit") + " | " + (_field(raw, "Nilai") or _field(raw, "Tema/Nilai")))
         line("SK/SP", _field(raw, "SK") + " | " + _field(raw, "SP"))
         line("Objektif", sec["Objektif"])
         line("BBM", _field(raw, "BBM") or _field(raw, "Bahan"))
