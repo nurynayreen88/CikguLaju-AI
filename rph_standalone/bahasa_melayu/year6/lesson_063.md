@@ -8,7 +8,7 @@
 **Standard Pembelajaran (SP):** 1.3.1 — Bercerita dengan sebutan yang betul, intonasi, gaya dan ekspresi yang sesuai  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 81  
 **Fokus:** lisan — Kafe Salam  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Kafe Salam' mengikut kemahiran 1.3.1.  
+**Objektif PdP:** Murid dapat bercerita berkaitan 'Kafe Salam' dengan sekurang-kurangnya tiga isi/peristiwa tersusun serta sebutan dan intonasi yang jelas.
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Kafe Salam' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Perpaduan; U11: Gema Perpaduan.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Kafe Salam' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Kafe Salam'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Susun jalan cerita (15 minit)
+**Guru:** Menyampaikan bahan bertajuk 'Kafe Salam' (teks/audio/gambar sesuai sumber); memodelkan urutan permulaan, perkembangan dan pengakhiran serta intonasi yang sesuai SP.
+**Murid:** Mendengar, membaca atau meneliti bahan; menyusun sekurang-kurangnya tiga isi/peristiwa mengikut urutan berdasarkan bukti bahan.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Kafe Salam'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Persembahan cerita (20 minit)
+**Guru:** Membimbing murid bercerita dengan kad urutan; memberikan maklum balas tentang sebutan, intonasi, gaya dan kesinambungan isi.
+**Murid:** Bercerita semula secara bergilir tentang 'Kafe Salam' menggunakan tiga isi/peristiwa serta intonasi dan gaya yang sesuai; rakan mencatat satu kekuatan dan cadangan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.3.1 — Bercerita dengan sebutan yang betul, intonasi, gaya dan ekspresi yang sesuai) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir persembahan setiap murid melalui senarai semak: tiga isi tersusun, sebutan jelas dan intonasi/gaya tepat mengikut SP (1.3.1 — Bercerita dengan sebutan yang betul, intonasi, gaya dan ekspresi yang sesuai). Beri peluang persembahan semula sebagai pemulihan.
+**Murid:** Menyampaikan ringkasan lisan dan membaiki satu aspek sebutan, urutan atau intonasi selepas maklum balas.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Kafe Salam' dan menghubungkannya dengan SP tanpa menambah standard baharu.  

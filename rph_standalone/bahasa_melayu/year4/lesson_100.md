@@ -8,7 +8,7 @@
 **Standard Pembelajaran (SP):** 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 113  
 **Fokus:** tatabahasa — : Boleh Saya Bantu, Ibu?  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan ': Boleh Saya Bantu, Ibu?'.  
+**Objektif PdP:** Murid dapat membina dua ayat tunggal dan dua ayat majmuk bertema ': Boleh Saya Bantu, Ibu?', termasuk peluasan subjek atau predikat apabila disyaratkan dalam SP.
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi ': Boleh Saya Bantu, Ibu?' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U16: Kehebatan Sains.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan ': Boleh Saya Bantu, Ibu?'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk ': Boleh Saya Bantu, Ibu?'.
+## Aktiviti 1 — Analisis binaan ayat (15 minit)
+**Guru:** Menunjukkan contoh ayat daripada bahan ': Boleh Saya Bantu, Ibu?' dan menjelaskan perbezaan ayat tunggal, ayat majmuk serta bahagian subjek dan predikat.
+**Murid:** Mengelaskan sekurang-kurangnya empat ayat mengikut struktur; menandakan subjek, predikat dan kata hubung yang berkaitan.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema ': Boleh Saya Bantu, Ibu?' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Bina dan peluaskan ayat (20 minit)
+**Guru:** Menyediakan rangka ayat berkaitan ': Boleh Saya Bantu, Ibu?'; membimbing murid membina dan meluaskan subjek/predikat atau menggabungkan klausa dengan betul.
+**Murid:** Membina dua ayat tunggal dan dua ayat majmuk bertema ': Boleh Saya Bantu, Ibu?', menyatakan bentuk peluasan yang dibuat serta menyemak ayat dengan pasangan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menanda empat ayat: struktur tunggal/majmuk, hubungan subjek-predikat dan penggunaan peluasan mengikut SP (5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks).
+**Murid:** Membetulkan satu ayat yang tidak gramatis serta menerangkan pembetulannya.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam ': Boleh Saya Bantu, Ibu?' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
