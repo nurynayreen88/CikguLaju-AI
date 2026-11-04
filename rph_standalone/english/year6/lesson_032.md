@@ -4,38 +4,40 @@
 **RPT:** 2027, Lesson 32, M08 (week indicative only)  
 **Main CS/LS:** PILIHAN GURU (SOW)  
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
-**Language focus:** relevant vocabulary and language from this unit  
+**Language focus:** Units 1–2 Review 1: vocabulary, verbs, used to and short text  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Y6 PB pp.32–33; TB pp.58–59; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate life then and now through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Read a short age-appropriate text on 'Life in the past'; identify one main idea and answer 4 detail questions.
+**Materials:** Academy Stars Y6 PB pp.32–33; TB pp.58–59; self-assessment. No unverified audio.  
+**Learning objective:** Answer four PB Review 1 items accurately and justify one correction.  
+**PBD evidence:** Four accurate PB answers, one pair question/answer and one corrected response.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Elicit Unit 1–2 vocabulary using two picture clues.  
+**Pupils:** Recall two words and name a review target.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Guide PB p.32 word-definition and verb-form tasks; model one answer.  
+**Pupils:** Complete the printed review items and compare answers.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils read a text about life in the past, identify its main idea, then write a short recount about life long ago.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Follow TB pp.58–59 for PB pair questions about Bill and Anna's past routines and the correct-word task.  
+**Pupils:** Ask and answer in pairs, then choose words to complete sentences.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Guide PB p.33 short-story word selection and an individual self-check.  
+**Pupils:** Complete the story, explain one word choice and note a gap.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four PB answers and one pair exchange; show a correction.  
+**Pupils:** Correct one answer and explain the improvement.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Recap one accurate Unit 1–2 word or form and collect a practice target.  
+**Pupils:** State one correction and a next step.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
+
+**QA status:** DRAF — CikguLaju suggested tasks matched to the cited printed source; teacher-selected Year 6 DSKP standards and authenticated Word/PDF/Telegram delivery still need approval. Original Academy Stars Y6 Teacher's Book pp.58–59 (Drive ID 13xG-dTuRJvPQZOKAknPJJq8NMRXZbMeb), PB pp.32–33 Review 1, checked visually 2026-11-04.
 
 **Teacher-selection notice:** SOW does not set a fixed official Main/Complementary CS/LS here. The lesson activities and PBD are CikguLaju suggestions, subject to teacher selection and DSKP confirmation.
 

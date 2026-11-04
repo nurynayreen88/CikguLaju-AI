@@ -4,38 +4,40 @@
 **RPT:** 2027, Lesson 48, M12 (week indicative only)  
 **Main CS/LS:** PILIHAN GURU (SOW)  
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
-**Language focus:** relevant vocabulary and language from this unit  
+**Language focus:** Unit review: vocabulary, present-perfect experiences and interview  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Year 6 Workbook pages 36-37; Teacher Book page 75; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate an outdoor adventure through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Listen to an original short recording about 'Adventure time' twice; answer 5 information questions.
+**Materials:** Academy Stars Y6 WB pp.36–37 Check-up Challenge; TB p.75. No audio assigned.  
+**Learning objective:** Give three correct WB vocabulary choices, two present-perfect sentences and one interview Q&A.  
+**PBD evidence:** Three correct choices, two experience sentences and a written interview exchange.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall unit experience words; model a Have you ever question.  
+**Pupils:** Answer one question and name a useful word.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Use WB p.36 read-and-circle challenge; model one contextual clue.  
+**Pupils:** Circle the correct words and explain one choice.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils listen to an adventure narrative and identify specific information, complete WB exercises, then write a short adventure recount.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Guide WB p.37 sentences about things done; check tense.  
+**Pupils:** Write two present-perfect sentences about experiences.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Use WB p.37 interview task and model a question frame.  
+**Pupils:** Interview a partner and write a question and answer.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check three choices, two sentences and one interview answer.  
+**Pupils:** Correct a form and explain one answer.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask for one accurate experience statement and next learning target.  
+**Pupils:** Share a sentence and identify further practice.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
+
+**QA status:** DRAF — CikguLaju suggested tasks matched to the cited printed source; teacher-selected Year 6 DSKP standards and authenticated Word/PDF/Telegram delivery still need approval. Original Academy Stars Y6 Teacher's Book p.75 (Drive ID 13xG-dTuRJvPQZOKAknPJJq8NMRXZbMeb), WB pp.36–37 Check-up Challenge, checked visually 2026-11-04.
 
 **Teacher-selection notice:** SOW does not set a fixed official Main/Complementary CS/LS here. The lesson activities and PBD are CikguLaju suggestions, subject to teacher selection and DSKP confirmation.
 

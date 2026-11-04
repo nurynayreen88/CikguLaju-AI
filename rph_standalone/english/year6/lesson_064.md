@@ -4,38 +4,40 @@
 **RPT:** 2027, Lesson 64, M16 (week indicative only)  
 **Main CS/LS:** PILIHAN GURU (SOW)  
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
-**Language focus:** relevant vocabulary and language from this unit  
+**Language focus:** Review 2: Units 3–4 word categories, sentence matches and make/do  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Y6 PB pp.58–59; TB pp.96–97; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate different occupations through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Conduct a guided partner exchange about 'Cool jobs', then produce a short written response using lesson vocabulary.
+**Materials:** Academy Stars Y6 PB pp.58–59 Review 2; TB pp.96–97. No unverified audio.  
+**Learning objective:** Complete four Review 2 items accurately and explain one make/do correction.  
+**PBD evidence:** Four correct source responses and one supported make/do choice.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review Unit 3–4 words and elicit category names.  
+**Pupils:** Classify two familiar words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Use PB p.58 word-column sorting; model a sentence.  
+**Pupils:** Categorise words and make one sentence.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils interview a partner about jobs and career interests, then write detailed information about themselves or an interviewee.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Guide PB pp.58–59 sentence matching using TB pp.96–97.  
+**Pupils:** Match sentence parts and explain one answer.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Guide PB p.59 experience tick-boxes and make/do choices; omit unverified audio.  
+**Pupils:** Complete the printed review and compare a correction.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four source answers and one make/do correction.  
+**Pupils:** Show answers, correct one form and explain why.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Recap one Units 3–4 example and request a practice goal.  
+**Pupils:** Share one corrected sentence and a next step.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
+
+**QA status:** DRAF — CikguLaju suggested tasks matched to the cited printed source; teacher-selected Year 6 DSKP standards and authenticated Word/PDF/Telegram delivery still need approval. Original Academy Stars Y6 Teacher's Book pp.96–97 (Drive ID 13xG-dTuRJvPQZOKAknPJJq8NMRXZbMeb), PB pp.58–59 Review 2, checked visually 2026-11-04.
 
 **Teacher-selection notice:** SOW does not set a fixed official Main/Complementary CS/LS here. The lesson activities and PBD are CikguLaju suggestions, subject to teacher selection and DSKP confirmation.
 

@@ -6,6 +6,11 @@ on:
       - 'web/english_y6_standalone_runtime.py'
       - 'web/english_y4_standalone_runtime.py'
       - 'tests/test_english_y6_teacher_choice_20261104.py'
+      - 'tests/test_english_y6_choice_printed_sources_20261104.py'
+      - 'rph_standalone/english/year6/lesson_016.md'
+      - 'rph_standalone/english/year6/lesson_032.md'
+      - 'rph_standalone/english/year6/lesson_048.md'
+      - 'rph_standalone/english/year6/lesson_064.md'
       - 'tools/audit_english_2_6_release_status_20261104.py'
       - '.github/workflows/english-2-6-release-audit-20261104.yml'
   push:
@@ -14,6 +19,11 @@ on:
       - 'web/english_y6_standalone_runtime.py'
       - 'web/english_y4_standalone_runtime.py'
       - 'tests/test_english_y6_teacher_choice_20261104.py'
+      - 'tests/test_english_y6_choice_printed_sources_20261104.py'
+      - 'rph_standalone/english/year6/lesson_016.md'
+      - 'rph_standalone/english/year6/lesson_032.md'
+      - 'rph_standalone/english/year6/lesson_048.md'
+      - 'rph_standalone/english/year6/lesson_064.md'
       - 'tools/audit_english_2_6_release_status_20261104.py'
   workflow_dispatch:
 permissions: {contents: read}
@@ -28,6 +38,7 @@ jobs:
       - name: Audit Year6 160 SOW-matched lesson rows
         run: |
           python -m unittest discover -s tests -p 'test_english_y6_teacher_choice_20261104.py' -v
+          python -m unittest discover -s tests -p 'test_english_y6_choice_printed_sources_20261104.py' -v
           python -m unittest discover -s tests -p 'test_english_y6_rph_runtime.py' -v
       - name: Cross-check 800 English Year2–6 Word/PDF rows and release blockers
         run: python tools/audit_english_2_6_release_status_20261104.py
