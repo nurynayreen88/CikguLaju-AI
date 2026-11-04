@@ -1,0 +1,45 @@
+name: Pendidikan Moral Tahun 2-6 draft QA
+on:
+  push:
+    branches:
+      - staging/pendidikan-moral-y2-y6-20261104
+    paths:
+      - 'rph_standalone/pendidikan_moral/**'
+      - 'materials/pendidikan_moral/**'
+      - 'rpt_2027/pendidikan_moral/**'
+      - 'scripts/check_pendidikan_moral_y2_y6.py'
+      - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'rph_standalone/pendidikan_moral/**'
+      - 'materials/pendidikan_moral/**'
+      - 'rpt_2027/pendidikan_moral/**'
+      - 'scripts/check_pendidikan_moral_y2_y6.py'
+      - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pendidikan-moral-qa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Read-only curriculum link and PBD verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile validator
+        run: python -m py_compile scripts/check_pendidikan_moral_y2_y6.py
+      - name: Validate all RPH/BBM/RPT drafts without modifying database
+        run: python scripts/check_pendidikan_moral_y2_y6.py
