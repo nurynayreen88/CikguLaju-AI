@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 015
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Model — Misi Angkasa
-**Unit rujukan 2026:** Unit 4 — Misi Angkasa  
-**Fokus:** Hasilkan karya  
+**Status:** DRAF SEMAK  
+**Unit:** 4 — Misi Angkasa  
+**Fokus:** Penghasilan karya utama | **Teknik:** Model roket  
 **SK:** 3.1  
 **SP:** 3.1.4  
-**Teknik:** cantuman dan binaan  
-**Bahasa seni visual:** bentuk, warna, imbangan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak terpakai, kertas, gam
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 34–35 (unit ms 30-37)  
+**BBM:** botol plastik terpakai, kadbod, pita, kertas warna  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menghasilkan model roket angkasa dengan cantuman dan binaan, sekurang-kurangnya dua aspek bentuk, warna, imbangan.
+## Objektif dan kriteria kejayaan
+Murid dapat menghasilkan karya Misi Angkasa dengan teknik model roket dan mematuhi keselamatan. Evidens: hasil karya dengan teknik yang jelas dan penggunaan alatan selamat.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Rumah Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat kotak terpakai, kertas, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan model roket angkasa mengikut lakaran menggunakan cantuman dan binaan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri bentuk, warna, imbangan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Misi Angkasa; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menyemak lakaran dan bahan; murid menyusun urutan kerja lalu menjalankan amali.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan karya berasaskan lakaran: Bina model roket angkasa tidak berfungsi menggunakan botol plastik dan kadbod. Guru menilai prosedur dan kualiti.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai hasil karya dengan teknik yang jelas dan penggunaan alatan selamat dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.

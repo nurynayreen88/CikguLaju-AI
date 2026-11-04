@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 018
+**Status:** DRAF SEMAK  
+**Unit:** 5 — Pasu Mini  
+**Fokus:** Penghasilan karya utama | **Teknik:** Tembikar  
+**SK:** 3.1  
+**SP:** 3.1.5  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 42–43 (unit ms 38-45)  
+**BBM:** paper clay atau doh, air, alas kerja, cat poster  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat menghasilkan karya Pasu Mini dengan teknik tembikar dan mematuhi keselamatan. Evidens: hasil karya dengan teknik yang jelas dan penggunaan alatan selamat.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tembikar — Pasu Mini
-**Unit rujukan 2026:** Unit 5 — Pasu Mini  
-**Fokus:** Lakar dan pilih media  
-**SK:** 2.1; 3.1  
-**SP:** 2.1.9; 3.1.5  
-**Teknik:** picitan dan lingkaran  
-**Bahasa seni visual:** bentuk, rupa, penegasan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh atau tanah liat, alas
-
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Bekas Herba dan memilih satu lakaran berdasarkan bentuk, rupa, penegasan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Bekas Herba. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal pasu mini berteknik picitan, menguji picitan dan lingkaran pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Pasu Mini; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menyemak lakaran dan bahan; murid menyusun urutan kerja lalu menjalankan amali.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan karya berasaskan lakaran: Hasilkan pasu mini paper clay bertapak stabil, biarkan kering dan hias corak. Guru menilai prosedur dan kualiti.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai hasil karya dengan teknik yang jelas dan penggunaan alatan selamat dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.

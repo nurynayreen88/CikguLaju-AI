@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 020
+**Status:** DRAF SEMAK  
+**Unit:** Projek Seni Visual penggal pertama  
+**Tajuk:** Pameran penggal pertama  
+**SK:** 5.1  
+**SP:** 5.1.1; 5.1.2  
+**Buku Teks:** Projek Seni Visual penggal pertama  
+**BBM:** hasil karya murid, label, pita kertas dan papan pameran  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat merancang dan menyediakan pameran kumpulan dengan kapsyen serta pelan. Evidens: kapsyen, pelan, foto atau ulasan lisan.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tembikar — Pasu Mini
-**Unit rujukan 2026:** Unit 5 — Pasu Mini  
-**Fokus:** Kemaskan dan apresiasi  
-**SK:** 4.1  
-**SP:** 4.1.1; 4.1.2  
-**Teknik:** picitan dan lingkaran  
-**Bahasa seni visual:** bentuk, rupa, penegasan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh atau tanah liat, alas
-
-## Objektif pembelajaran
-Murid dapat memperkemas pasu mini berteknik picitan serta mengulasnya menggunakan dua istilah seni visual.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik picitan dan lingkaran serta penggunaan bentuk, rupa, penegasan. Murid menyemak bahagian karya yang belum lengkap.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada pasu mini berteknik picitan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh galeri kecil yang selamat.
+**Aktiviti 1 (15 minit):** Guru menerangkan pengurusan pameran, murid membahagi peranan.
+**Aktiviti 2 (25 minit) — Projek:** Murid memilih karya terbaik daripada lima unit terdahulu, menyusun ruang dan menghasilkan dua kapsyen serta poster kecil.
+**Pengukuhan/Pentaksiran (10 minit):** Guru memerhati kerjasama, proses pameran dan apresiasi.
+**Penutup (5 minit):** Murid membuat refleksi dan menyusun alatan.
+**Pembezaan:** Sediakan kad peranan dan templat kapsyen.
+**Keselamatan:** Laluan dikosongkan; tiada paku tajam untuk pemasangan.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic).
