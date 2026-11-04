@@ -7,32 +7,32 @@
 **Language focus:** relevant vocabulary and language from this unit  
 **Duration:** 60 minutes  
 **Materials:** Project-Based Learning 1: teacher to select topic, skills and materials according to pupils' needs; A4 paper, markers, presentation checklist  
-**Learning objective:** Collaborate to create the “Our Future Careers” project product with 3 meaningful examples and deliver a 1-minute group presentation.  
-**PBD evidence:** Group rubric: 3 correct examples, completed product, 1-minute oral presentation, contribution and reflection.
+**Learning objective:** Create an illustrated 'Our Future Careers' booklet with three distinct career profiles naming a job task and skill, then deliver a 1-minute group explanation.
+**PBD evidence:** Three illustrated profiles with job task and skill, an audience question answered and a 1-minute presentation with shared group contribution.
 
 ## Set induction (5 minutes)
-**Teacher:** Explain the project challenge and present one example product.  
-**Pupils:** Suggest a project goal and choose a group role.
+**Teacher:** Show three different career picture cards and ask which skills those jobs might need.
+**Pupils:** Name one career, suggest a relevant skill and give a reason for their choice.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce the project brief and success criteria; keep skills and CS/LS teacher-selected, as directed by SOW.  
-**Pupils:** Choose a role (researcher, writer, designer or presenter) and agree on one target audience.
+**Teacher:** Model a career-profile card with job title, daily task, useful skill and reason for interest; explain the group success criteria.
+**Pupils:** Choose researcher, writer, illustrator or speaker roles and agree how to collect three different profiles.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Scaffold the group product: Group project: prepare an illustrated 'Our Future Careers' profile booklet; interview members, write profiles, and present findings.  
-**Pupils:** Gather three concrete examples, write captions/short paragraphs and assemble an original product.
+**Teacher:** Prompt a short peer interview about future jobs and ask groups to check that each career has a task and useful skill.
+**Pupils:** Interview group members, select three careers, and write one specific task and skill for each illustrated profile.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Facilitate a gallery walk and 1-minute presentations; assess contribution and content clarity.  
-**Pupils:** Present the work, answer one question and give one peer-feedback point.
+**Teacher:** Run a booklet gallery walk and request one question about an included job skill after each 1-minute pitch.
+**Pupils:** Present the three profiles, answer one audience question and give feedback on another group's clarity.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check all three complete profiles, visible role contributions, the presentation and answer to the audience question.
+**Pupils:** Point to one factual task-skill link and correct an unclear caption or missing detail.
 
 ## Closure (4 minutes)
-**Teacher:** Summarise the group rubric and collect project roles.  
-**Pupils:** State one contribution and one improvement for the next session.
+**Teacher:** Invite a specific career-and-skill example plus one improvement before any future project.
+**Pupils:** State a new career skill learned and identify one meaningful improvement to the booklet.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
