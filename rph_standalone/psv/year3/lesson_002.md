@@ -3,7 +3,9 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Lukisan — Deretan Rumah Kampung  
+**Jenis/Tajuk:** Lukisan — Tut Tut Kereta Api
+**Unit RPT 2026:** Unit 1 — Tut Tut Kereta Api (BT ms 6–9)  
+**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.1; 3.1.1  
@@ -20,7 +22,7 @@ Murid dapat menyiapkan dua lakaran Deretan Rumah Kampung dan memilih satu lakara
 
 **Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Deretan Rumah Kampung. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal lukisan rumah dengan bayang silang pangkah, menguji garisan silang pangkah pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal lukisan kereta api menggunakan garisan silang pangkah, menguji garisan silang pangkah pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat menyiapkan dua lakaran Deretan Rumah Kampung dan memilih satu lakara
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.

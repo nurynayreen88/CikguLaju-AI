@@ -3,7 +3,9 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Montaj — Bandar Impian  
+**Jenis/Tajuk:** Montaj — Malaysia Kita
+**Unit RPT 2026:** Unit 2 — Malaysia Kita (BT ms 14–17)  
+**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.2; 2.1.1  
@@ -20,7 +22,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh montaj dan menghas
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh montaj bertema Bandar Impian dan membandingkan bentuk, ruang, imbangan, kesatuan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik guntingan dan tampalan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk montaj bandar dan jalan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik guntingan dan tampalan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk montaj bertema Sayangi Malaysia.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh montaj dan menghas
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
