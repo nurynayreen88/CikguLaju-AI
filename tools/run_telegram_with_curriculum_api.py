@@ -278,3 +278,24 @@ except Exception as _y4_l030_audio_exc:
     ENGLISH_Y4_L030_AUDIO_GUARD_ACTIVE = False
     print("English Y4 L030 audio source safety guard unavailable:",
           type(_y4_l030_audio_exc).__name__, flush=True)
+
+
+# Durable teacher/user records: payment IDs, statuses, admin approvals, Telegram
+# names and user feedback are stored in Supabase when explicitly enabled.
+# Installed after all existing Telegram bridges so every callback reads the
+# latest runtime handlers. NEVER auto-enable without the additive migration.
+try:
+    from web.supabase_user_payment_runtime import install as install_user_payment_store
+    DURABLE_USER_PAYMENT_STORE_ACTIVE = bool(install_user_payment_store(telegram_runtime))
+except Exception as _durable_payment_exc:
+    DURABLE_USER_PAYMENT_STORE_ACTIVE = False
+    print("Durable user payment store installation failed:",
+          type(_durable_payment_exc).__name__,flush=True)
+
+try:
+    from web.supabase_user_feedback_runtime import install as install_user_feedback_store
+    DURABLE_USER_FEEDBACK_STORE_ACTIVE = bool(install_user_feedback_store(telegram_runtime))
+except Exception as _durable_feedback_exc:
+    DURABLE_USER_FEEDBACK_STORE_ACTIVE = False
+    print("Durable user feedback store installation failed:",
+          type(_durable_feedback_exc).__name__,flush=True)
