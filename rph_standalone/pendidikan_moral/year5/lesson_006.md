@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **mengamalkan dua tindakan peka** terhadap kebajikan masyarakat melalui simulasi khidmat sosial selamat, dan membaiki satu tindakan selepas maklum balas (SP 2.5).
 
+**Kriteria kejayaan:** Dua tindakan bantuan yang diperagakan dan satu penambahbaikan selepas maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

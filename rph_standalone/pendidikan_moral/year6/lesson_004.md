@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menyenaraikan tiga bentuk bantuan atau sokongan moral** kepada negara (SP 2.1) serta **menghuraikan dua cara** memupuk budaya membantu masyarakat semasa negara menghadapi cabaran (SP 2.2).
 
+**Kriteria kejayaan:** Tiga bentuk bantuan kepada negara dan dua cara memupuk budaya membantu.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

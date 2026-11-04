@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **mempraktikkan dua bentuk bantuan dan sokongan moral** kepada rakyat yang memerlukan dalam simulasi, serta menambah baik satu respons selepas maklum balas (SP 2.5).
 
+**Kriteria kejayaan:** Dua tindakan bantuan yang diperagakan dan satu penambahbaikan selepas maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

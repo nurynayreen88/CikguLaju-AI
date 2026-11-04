@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menjana dua kesan jika kebajikan masyarakat diabaikan** (SP 2.3) dan **mengekspresikan satu perasaan berserta sebab** apabila keperluan masyarakat dibantu (SP 2.4).
 
+**Kriteria kejayaan:** Dua kesan pengabaian kebajikan masyarakat dan satu perasaan bersebab.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

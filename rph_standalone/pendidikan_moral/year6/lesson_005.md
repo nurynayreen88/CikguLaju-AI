@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menjelaskan dua kepentingan memberi bantuan atau sokongan moral kepada negara** (SP 2.3) dan **mengekspresikan satu perasaan bersebab** apabila rakyat saling membantu (SP 2.4).
 
+**Kriteria kejayaan:** Dua kepentingan memberi bantuan kepada negara dan satu perasaan bersebab.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menyenaraikan tiga keperluan/kebajikan masyarakat** yang wajar dibantu (SP 2.1) dan **menjelaskan dua kepentingan** sikap peka terhadap keperluan orang lain (SP 2.2).
 
+**Kriteria kejayaan:** Tiga jenis keperluan masyarakat dan dua huraian kepentingan bersikap peka.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
