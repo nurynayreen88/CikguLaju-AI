@@ -1,31 +1,31 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 028
 
-**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Status:** DRAF SEMAK (staging sahaja; belum aktif Telegram)  
 **Unit RPT 2026:** Unit 8 — Seni Kraf Warisan  
 **Aktiviti/Tajuk:** Cucuk Sanggul Sang Puteri  
 **SK:** 2.1  
 **SP:** 2.1.1; 2.1.2; 2.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 8 — Seni Kraf Warisan, ms 62-67 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Cucuk Sanggul Sang Puteri, ms 64–65  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kadbod lembut, kertas warna, jalur kertas, gam dan pita  
+**BBM:** kertas krep, kad nipis, jalur kertas untuk cekak tiruan, gam PVA, gunting hujung bulat, pelekat hiasan  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menguji dua kaedah/media bagi Cucuk Sanggul Sang Puteri dan memilih satu berdasarkan fungsi serta unsur motif tradisional, jalinan dan fungsi aksesori kepala. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid dapat menghasilkan satu model cucuk sanggul tiruan bermotif bunga menggunakan lipatan, potongan dan cantuman yang kemas, serta menjelaskan imbangan kiri dan kanan. Kriteria kejayaan: satu model aksesori tidak tajam dengan motif bunga seimbang, bukti lipatan empat bahagian dan satu penerangan fungsi hiasan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Cucuk Sanggul Sang Puteri** dalam tema **Seni Kraf Warisan**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru mempamerkan foto cucuk sanggul tradisional dan contoh cekak bunga; murid mengenal rupa bunga, kesatuan motif dan fungsi perhiasan.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan dua sampel cucuk sanggul sang puteri, mendemonstrasi cara selamat mengendalikan kadbod lembut, kertas warna, jalur kertas, gam dan pita, dan menjelaskan kesan berbeza pada hasil.
+**Aktiviti 1 (15 minit) — Penerokaan dan tunjuk cara:** Guru merujuk BT ms 64–65 dan menunjukkan kertas dilipat empat, lakaran kelopak sama saiz serta cantuman berlapis. Murid melakar motif bunga dan membandingkan kedudukan pusat serta sisi aksesori.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid menjalankan dua percubaan kecil untuk model kertas aksesori warisan, tidak tajam dan tidak berfungsi sebagai alat sebenar: membandingkan motif tradisional, jalinan dan fungsi aksesori kepala, merekod langkah melalui lakaran/foto, kemudian memilih satu teknik dengan justifikasi.
+**Aktiviti 2 (25 minit) — Amali:** Murid memotong kelopak daripada kertas lipatan dengan gunting hujung bulat, menampal kelopak pada jalur cekak kertas, menyusun bunga dari tengah ke kiri dan kanan, lalu menghias untuk menonjolkan jalinan. Murid menguji kestabilan model di atas tapak, bukan menggunakan cucuk sanggul tajam sebenar.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua sampel sebenar, catatan kesan dan satu alasan pilihan bahan/teknik. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu model aksesori tidak tajam dengan motif bunga seimbang, bukti lipatan empat bahagian dan satu penerangan fungsi hiasan. Guru menyemak proses, imbangan dan teknik potong/cantum.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
+**Penutup (5 minit):** Murid menyebut satu pilihan motif dan satu langkah keselamatan; guru membuat rumusan jalinan serta imbangan dan mengurus pengemasan.
 
-**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
+**Pembezaan:** Sediakan pola bunga pra-lakar untuk murid yang memerlukan sokongan; murid lanjutan menghasilkan satu variasi susunan kelopak.
 
-**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
+**Keselamatan:** Tiada dawai tajam atau senjata tradisional. Guru mengurus cantuman sukar; murid menggunakan alat tumpul dan gam tidak toksik.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 64–65](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Adaptasi pembelajaran berasaskan aktiviti buku; belum diuji dalam Telegram.
