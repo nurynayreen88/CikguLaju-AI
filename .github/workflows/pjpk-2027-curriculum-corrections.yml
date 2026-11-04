@@ -51,7 +51,7 @@ jobs:
             pages=PdfReader(str(pdf)).pages
             assert len(pages)>=5, pdf
             assert all(float(x.mediabox.width)>800 for x in pages)
-            t='\n'.join((x.extract_text() or '') for x in pages)
+            t=' '.join(' '.join((x.extract_text() or '').split()) for x in pages)
             assert 'MINGGU PENGAJARAN 38' in t and 'DRAF' in t
             if 'Tahun_2_' in pdf.name:
               assert 'Mengurus perasaan bimbang dan cemburu' in t
