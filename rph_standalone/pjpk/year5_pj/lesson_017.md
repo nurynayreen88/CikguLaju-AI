@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.7, 2.7, 5.3, 5.4  
 **SP:** 1.7.4, 1.7.5, 1.7.6, 2.7.2, 2.7.4, 5.3.2, 5.4.4  
-**Buku teks:** calon m/s 24-25 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 24-25, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.7.4 (melakukan smesy menggunakan alatan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.7.2: Menjelaskan perkaitan antara kelajuan kontak alatan atau anggota badan dengan kelajuan objek pasca kontak (selepas kontak) semasa hantaran, smesy, rejaman dan libasan.
