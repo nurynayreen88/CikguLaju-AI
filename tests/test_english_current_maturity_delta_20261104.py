@@ -28,6 +28,14 @@ class CurrentEnglishMaturityDelta(unittest.TestCase):
         for n in (1,2,3,4,6,7,8,9,11,12,13,14):
             self.assertNotIn(n, years[6]["quality_flag_lessons"].get(
                 "generic_instruction",[]))
+        newly_verified=(17,18,19,20,22,23,24,27,28,29,30,33,34,
+                        35,36,38,39,40,41,43,44,45,46,49,50)
+        self.assertEqual(len(newly_verified),25)
+        remaining_generic=set(years[6]["quality_flag_lessons"].get(
+            "generic_instruction",[]))
+        self.assertLessEqual(len(remaining_generic),78)
+        self.assertFalse(remaining_generic.intersection(newly_verified),
+                         "Regression to generic tasks in source-verified English Year6")
         self.assertEqual(years[4]["teacher_choice"],10)
         self.assertEqual(years[5]["teacher_choice"],9)
         self.assertEqual(years[6]["teacher_choice"],14)
