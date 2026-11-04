@@ -133,6 +133,16 @@ class ProofFirstTests(unittest.TestCase):
             self.rt._new_payment_request(302, 777, 5)
         self.assertEqual(len(self.rt.requests), 0)
 
+    def test_callback_without_flask_request_context_never_writes(self):
+        self.rt.state[301] = {"waiting": "payment_proof", "payment_amount": 10.0}
+        def missing_context(silent=True):
+            raise RuntimeError("Working outside of request context")
+        self.rt.request = SimpleNamespace(get_json=missing_context)
+        self.assertIsNone(self.rt._latest_pending_payment(301))
+        with self.assertRaises(ValueError):
+            self.rt._new_payment_request(301, 777, 5)
+        self.assertEqual(self.rt.requests, [])
+
     def test_no_payment_intent_never_creates_request(self):
         self.rt.upload()
         self.assertIsNone(self.rt._latest_pending_payment(301))
