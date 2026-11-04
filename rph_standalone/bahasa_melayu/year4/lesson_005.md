@@ -8,29 +8,31 @@
 **Standard Pembelajaran (SP):** 3.1.1 — Menulis secara mekanis menggunakan tulisan berangkai dalam bentuk ayat  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 4  
 **Fokus:** tulisan — Tahniah, Hadif!  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Tahniah, Hadif!' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat menyalin sekurang-kurangnya tiga ayat daripada kad ucapan tahniah dalam BT halaman 4 menggunakan tulisan berangkai yang kemas dan boleh dibaca.  
+**Bahan:** Buku Teks BM Tahun 4 SK halaman 4 (kad ucapan tahniah kepada Hadif), buku latihan bergaris, contoh sambungan huruf dan senarai semak tulisan berangkai.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tahniah, Hadif!' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U1: Jiran Tetangga.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Menunjukkan kad ucapan tahniah yang diterima Hadif daripada rakan-rakannya; bertanya sebab orang memberi ucapan tahniah.  
+**Murid:** Menyatakan satu situasi yang sesuai untuk mengucapkan tahniah.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Tahniah, Hadif!' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis secara mekanis menggunakan tulisan berangkai dalam bentuk ayat.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Tahniah, Hadif!'.
+## Aktiviti 1 — Rujukan teks asal (15 minit)
+**Guru:** Menunjukkan ayat sebenar pada kad ucapan BT halaman 4; memodelkan cantuman huruf, jarak perkataan dan pergerakan tangan dalam tulisan berangkai.  
+**Murid:** Memerhati bentuk huruf bersambung; menjejak dua contoh perkataan daripada kad ucapan.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Latihan kemahiran (20 minit)
+**Guru:** Membimbing murid menyalin ayat kad ucapan dalam bentuk tulisan berangkai, bukan mereka-reka perenggan baharu kerana SP 3.1.1 menekankan penulisan mekanis.  
+**Murid:** Menyalin tiga ayat daripada kad ucapan kepada buku latihan dalam tulisan berangkai; mengekalkan huruf besar, jarak dan tanda baca.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.1.1 — Menulis secara mekanis menggunakan tulisan berangkai dalam bentuk ayat) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menyemak tiga ayat disalin lengkap, sambungan huruf, saiz, jarak dan kebolehbacaan tulisan berangkai.  
+**Murid:** Membetulkan sekurang-kurangnya dua bentuk huruf atau jarak yang kurang kemas.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Tahniah, Hadif!' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Menegaskan perbezaan menyalin ayat dalam tulisan berangkai dengan menulis karangan baharu.  
+**Murid:** Menyatakan satu ciri tulisan berangkai yang kemas.
+
+**Bukti sumber khusus (BT4 SK):** Bukti BT4 SK halaman 4: kad ucapan tahniah untuk Hadif dan arahan 'Menulis ayat berdasarkan kad ucapan dalam bentuk tulisan berangkai'; RPH dipadankan kepada kemahiran mekanis SP 3.1.1.
 
 **Nota RPT asal:** Menulis; Semakan bahan bertulis
 

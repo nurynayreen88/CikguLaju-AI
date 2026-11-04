@@ -1,0 +1,56 @@
+name: BM RPH source audit - 825 file regression and eight textbook repairs
+on:
+  push:
+    branches: [audit/bm-rph-source-proof-20261104]
+    paths:
+      - 'rph_standalone/bahasa_melayu/**'
+      - 'rpt_2027/bahasa_melayu/keluaran_format_english/**'
+      - 'tools/qa_bm_rph_2027_full_gate.py'
+      - '.github/workflows/bm-rph-source-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit 825 original RPH files against RPT 2027 and SK DSKP code inventory
+        run: python tools/qa_bm_rph_2027_full_gate.py
+      - name: Regression - preserve sources and corrected activity verbs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          base=Path('rph_standalone/bahasa_melayu')
+          expect={
+          (2,5):('Kek Mentega Istimewa','Hana'),(2,10):('Bukit Larut','titi gantung'),
+          (4,1):('Encik Gobi','Encik Lim'),(4,2):('Peta Alir','Hari Keluarga'),
+          (4,3):('tanpa melihat teks','susulan'),(4,5):('tulisan berangkai','kad ucapan'),
+          (5,45):('Waspada Gerakmu','ragut'),(5,52):('Keselamatan Siber dalam Percutian','mengedit')
+          }
+          for (y,n),words in expect.items():
+            t=(base/f'year{y}/lesson_{n:03d}.md').read_text()
+            assert all(w.lower() in t.lower() for w in words),(y,n,words)
+            assert 'HOLD' in t and 'READY' in t,(y,n,'no fake approved status')
+          html=Path('rpt_2027/bahasa_melayu/keluaran_format_english/RPT_BM_TAHUN_5_2027_A_B_PER_LESSON_DRAF.html').read_text()
+          md=Path('rpt_2027/bahasa_melayu/keluaran_format_english/RPT_BM_TAHUN_5_2027_A_B_PER_LESSON_DRAF.md').read_text()
+          for title in ['Waspada Gerakmu','Keselamatan Siber dalam Percutian']:
+            assert title in html and title in md
+          assert 'Keselamatam' not in md+html
+          assert '| + PJKR |' not in md
+          print('8 source-grounded repairs preserved; RPT5 Markdown/HTML consistent')
+          PY
+      - name: Prohibit premature academic READY release
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('rpt_2027/bahasa_melayu/READY_GATE.json'))
+          assert d['status']=='DRAFT_NOT_PUBLISHED'
+          assert d['verified_strict_ready'] is False
+          assert not any(x['textbook_pages_verified'] for x in d['year_gates'].values())
+          print('Global READY lock remains closed')
+          PY

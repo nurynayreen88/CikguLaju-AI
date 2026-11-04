@@ -8,29 +8,31 @@
 **Standard Pembelajaran (SP):** 2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 3  
 **Fokus:** bacaan — Hari Keluarga Taman Impian  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Hari Keluarga Taman Impian' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat membaca petikan sambutan Hari Keluarga Taman Impian dengan sebutan/intonasi sesuai dan melengkapkan Peta Alir berdasarkan sekurang-kurangnya tiga peristiwa yang dinyatakan.  
+**Bahan:** Buku Teks BM Tahun 4 SK halaman 3 (petikan Hari Keluarga Taman Impian dan arahan melengkapkan Peta Alir), Peta Alir kosong, penanda isi.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Hari Keluarga Taman Impian' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U1: Jiran Tetangga.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Menunjukkan ilustrasi keluarga menghadiri sambutan hari keluarga dan bertanya tujuan program kejiranan.  
+**Murid:** Menamakan aktiviti yang mungkin berlaku dan menyatakan satu sebab menghadiri program.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Hari Keluarga Taman Impian' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Hari Keluarga Taman Impian' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Rujukan teks asal (15 minit)
+**Guru:** Membimbing bacaan bergilir petikan Hadif dan keluarganya pada BT halaman 3; menjelaskan penggunaan tanda baca dan intonasi dialog.  
+**Murid:** Membaca petikan secara bergilir; mengenal pasti siapa menghadiri sambutan dan tujuan penyertaan.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Latihan kemahiran (20 minit)
+**Guru:** Menunjukkan contoh kotak Peta Alir dan meminta murid mengisi peristiwa/aktiviti mengikut urutan seperti arahan sebenar buku.  
+**Murid:** Membaca semula petikan dan melengkapkan sekurang-kurangnya tiga kotak Peta Alir berdasarkan maklumat yang dibuktikan dalam petikan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir bacaan murid dan ketepatan urutan tiga isi pada Peta Alir berdasarkan petikan BT halaman 3.  
+**Murid:** Membentang Peta Alir, menyatakan bukti petikan dan membetulkan susunan isi jika perlu.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Hari Keluarga Taman Impian' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Merumuskan kepentingan membaca petikan dengan intonasi dan mengesan urutan peristiwa.  
+**Murid:** Menyatakan satu manfaat sambutan hari keluarga berdasarkan bacaan.
+
+**Bukti sumber khusus (BT4 SK):** Bukti BT4 SK halaman 3: cerita Encik Husin, Hadif dan sambutan Hari Keluarga Taman Impian; arahan rasmi ialah membaca dan melengkapkan Peta Alir.
 
 **Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
 
