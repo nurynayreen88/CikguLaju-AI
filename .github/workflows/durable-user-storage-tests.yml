@@ -1,0 +1,34 @@
+name: Durable CikguLaju user storage checks
+
+on:
+  pull_request:
+    paths:
+      - 'web/supabase_user_payment_runtime.py'
+      - 'web/supabase_user_feedback_runtime.py'
+      - 'test_supabase_user_records.py'
+      - 'migrations/20261104_durable_telegram_payments_feedback.sql'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/durable-user-storage-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/supabase_user_payment_runtime.py'
+      - 'web/supabase_user_feedback_runtime.py'
+      - 'test_supabase_user_records.py'
+      - 'migrations/20261104_durable_telegram_payments_feedback.sql'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/durable-user-storage-tests.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile isolated runtime code
+        run: python -m py_compile web/supabase_user_payment_runtime.py web/supabase_user_feedback_runtime.py test_supabase_user_records.py
+      - name: Test permanent user records without any live credentials
+        run: python -m unittest -v test_supabase_user_records
