@@ -1,0 +1,2820 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "decision": "NO_NEW_READY",
+  "count": 400,
+  "pj_numbered_drafts": 176,
+  "pj_supplemental_aquatics": 4,
+  "pk_unmapped_prior_source_drafts": 57,
+  "pk_new_numbered_candidates": 163,
+  "year1_pending_verified_KP2027_DK": true,
+  "notes": [
+    "PK Year2-6 DSKP annual hours/allocations observed and divided into 30-min candidate PdP; weekly calendar not verified.",
+    "All PK SK/SP coverage computed in generator, but no teacher editorial signoff, textbook visual approval or real runtime tests.",
+    "Existing 237 draft status is preserved and 163 new PK drafts are all fail-closed.",
+    "Year6 PJ PdP033 conflict blocked; Year5/6 31 book-page leads from 2026 RPT not visually verified."
+  ],
+  "ready": 0,
+  "records": [
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_001.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_002.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_003.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_004.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_005.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_006.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_007.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_008.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_009.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_010.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_011.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_012.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_013.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_014.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_015.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_016.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_017.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_018.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_019.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_020.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_021.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_022.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_023.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_024.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_025.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_026.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_027.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_028.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_029.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_030.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_031.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_032.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_033.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_034.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_035.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_036.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_037.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_u5_01.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "supplemental_aquatics_blocked",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_u5_02.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "supplemental_aquatics_blocked",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_u5_03.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "supplemental_aquatics_blocked",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pj/lesson_u5_04.md",
+      "year": 2,
+      "component": "PJ",
+      "identity": "supplemental_aquatics_blocked",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2232.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2249.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2250.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2251.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2252.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2344.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2345.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2346.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2347.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2348.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2349.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2350.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2351.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2352.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2353.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2354.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2355.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/source_entry_2356.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_001.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_002.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_003.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_004.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_005.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_006.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_007.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_008.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_009.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_010.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_011.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_012.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_013.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_014.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_015.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_016.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_017.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_018.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_019.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_020.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_021.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_022.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_023.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_024.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_025.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_026.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_027.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_028.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_029.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_030.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_031.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_032.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_033.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_034.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_035.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_036.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_037.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pj/lesson_038.md",
+      "year": 3,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_1_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_2_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_3_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_4_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_5_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_6_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_7_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_8_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/source_sk_9_1.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_001.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_002.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_003.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_004.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_005.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_006.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_007.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_008.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_009.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_010.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_011.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_012.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_013.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_014.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_015.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_016.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_017.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_018.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_019.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_020.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_021.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_022.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_023.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_024.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_025.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_026.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_027.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_028.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_029.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_030.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_031.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_032.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_033.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pj/lesson_034.md",
+      "year": 4,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_1_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_2_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_3_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_4_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_5_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_6_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_7_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_8_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/source_sk_9_1.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_001.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_002.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_003.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_004.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_005.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_006.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_007.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_008.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_009.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_010.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_011.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_012.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_013.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_014.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_015.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_016.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_017.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_018.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_019.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_020.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_021.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_022.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_023.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_024.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_025.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_026.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_027.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_028.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_029.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_030.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_031.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_032.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pj/lesson_033.md",
+      "year": 5,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_entry_2259.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_entry_2260.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_entry_2261.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "source_record_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_1_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_2_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_3_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_4_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_5_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_6_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_7_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_8_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/source_sk_9_1.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_001.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_002.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_003.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_004.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_005.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_006.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_007.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_008.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_009.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_010.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_011.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_012.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_013.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_014.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_015.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_016.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_017.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_018.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_019.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_020.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_021.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_022.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_023.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_024.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_025.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_026.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_027.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_028.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_029.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_030.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_031.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_032.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_033.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pj/lesson_034.md",
+      "year": 6,
+      "component": "PJ",
+      "identity": "rpt_pdp_draft",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_1_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_2_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_3_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_4_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_5_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_6_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_7_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_8_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/source_sk_9_1.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "dskp_thematic_no_rpt_slot",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_001.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_002.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_003.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_004.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_005.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_006.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_007.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_008.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_009.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_010.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_011.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_012.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_013.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_014.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_015.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_016.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_017.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_018.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_019.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_020.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_021.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_022.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_023.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_024.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_025.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_026.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_027.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_028.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_029.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_030.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_031.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_032.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_033.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_034.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year2_pk/lesson_035.md",
+      "year": 2,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_001.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_002.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_003.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_004.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_005.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_006.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_007.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_008.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_009.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_010.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_011.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_012.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_013.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_014.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_015.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_016.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_017.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_018.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_019.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_020.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_021.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_022.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_023.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_024.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_025.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_026.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_027.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_028.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_029.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_030.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_031.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year3_pk/lesson_032.md",
+      "year": 3,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_001.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_002.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_003.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_004.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_005.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_006.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_007.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_008.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_009.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_010.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_011.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_012.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_013.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_014.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_015.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_016.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_017.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_018.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_019.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_020.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_021.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_022.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_023.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_024.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_025.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_026.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_027.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_028.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_029.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_030.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_031.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year4_pk/lesson_032.md",
+      "year": 4,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_001.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_002.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_003.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_004.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_005.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_006.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_007.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_008.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_009.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_010.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_011.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_012.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_013.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_014.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_015.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_016.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_017.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_018.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_019.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_020.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_021.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_022.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_023.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_024.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_025.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_026.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_027.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_028.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_029.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_030.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_031.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year5_pk/lesson_032.md",
+      "year": 5,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_001.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_002.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_003.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_004.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_005.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_006.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_007.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_008.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_009.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_010.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_011.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_012.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_013.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_014.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_015.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_016.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_017.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_018.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_019.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_020.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_021.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_022.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_023.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_024.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_025.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_026.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_027.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_028.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_029.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_030.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_031.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    },
+    {
+      "path": "rph_standalone/pjpk/year6_pk/lesson_032.md",
+      "year": 6,
+      "component": "PK",
+      "identity": "candidate_numbered_pk_pdp_30m",
+      "production_ready": false
+    }
+  ]
+}
