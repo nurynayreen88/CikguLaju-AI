@@ -13,3 +13,12 @@ This staging integration must not be called READY until source exercise, audio, 
 - The source/standards QA test now runs alongside Year 2–6 document-row tests. It is not an authorisation to publish draft Year 5 downloads.
 
 - **Additional safety gate:** `release_approvals_2027.json` starts with zero approved lessons. Even if the optional Year 5 runtime flag is switched on accidentally, production Word/PDF will not replace a lesson until its specific source SHA256 and seven teacher/source/audio/A4/delivery approvals are all present. The 151 lesson staging adapter remains available to offline audits without changing user downloads.
+
+## Nine teacher-choice lesson proposals — 4 November 2026
+
+The following nine SOW teacher-choice lessons now have a distinct teacher/pupil activity and PBD proposal overlay: **16, 34, 52, 70, 88, 106, 124, 142 and 160**. Each proposal totals 60 minutes and is aligned to the existing matching Lesson draft. The native Telegram Word/PDF row bridge labels every such document **CADANGAN CIKGULAJU (DRAF)** and displays **teacher must choose Year 5 DSKP standards**, never fabricated official SOW codes.
+
+- Lessons 16, 34, 52, 70, 106, 124 and 142: Language Awareness — uses the existing SOW-referenced English Plus 1 review activity sequence.
+- Lessons 88 and 160: Project-Based Learning — explicitly suggested CikguLaju projects (My Dream School Day and Eco-Holiday Brochure), not official compulsory projects.
+- The existing 151 Year 5 fixed-standard lesson drafts remain behind per-lesson approval and checksum gates. No bulk READY action, no curriculum/Telegram account DB writes, and no change to the credit/entitlement system.
+- **Release limitation:** This makes the nine suggestions available as labelled drafts, not independently approved teaching plans. Printed textbook page/audio checks and real-user native PDF/A4 delivery still require confirmation before final READY.
