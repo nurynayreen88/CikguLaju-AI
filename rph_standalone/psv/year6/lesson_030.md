@@ -1,31 +1,31 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 030
 
-**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Status:** DRAF SEMAK (staging sahaja; belum aktif Telegram)  
 **Unit RPT 2026:** Unit 9 — Wau Bulan Sirih Pinang  
 **Aktiviti/Tajuk:** Perkembangan idea  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.3; 3.2.1  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 9 — Wau Bulan Sirih Pinang, ms 68-75 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Wau Bulan Sirih Pinang, ms 68–69  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kad ringan, kertas warna, gam, pita, tali dan lidi kertas tumpul  
+**BBM:** foto wau tradisional, imej daun sirih/daun betik, kertas lakaran, pensel, kad idea  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyenaraikan dua fungsi model wau bulan berhias corak, untuk pameran kelas dan menghasilkan peta idea berdasarkan bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid dapat menyatakan fungsi model wau bulan sebagai permainan dan melakar sekurang-kurangnya dua idea motif flora untuk produk Wau Bulan Sirih Pinang. Kriteria kejayaan: satu peta idea fungsi produk dan dua lakaran motif flora berlabel.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perkembangan idea** dalam tema **Wau Bulan Sirih Pinang**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru mempamerkan wau bulan tradisional; murid menyatakan fungsi permainan dan memerhati bentuk sayap serta ekor.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru membandingkan contoh projek bertema perkembangan idea dan mengenal pasti fungsi serta elemen bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan. Murid menyenaraikan pengguna, bahan dan hasil yang hendak dicapai.
+**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 68–69 dan menunjukkan pilihan hal benda daun sirih, daun betik serta bunga seri pagi. Murid mengenal bentuk wau, fungsi permainan dan konsep gabungan kraf tradisional dengan corak/rekaan.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid mengumpul dua rujukan bentuk, melakar peta idea model wau bulan berhias corak, untuk pameran kelas dan mencatat media, teknik, tujuan serta langkah keselamatan sebelum memilih idea utama.
+**Aktiviti 2 (25 minit) — Amali:** Murid memilih dua sumber flora, menghasilkan peta idea produk wau bulan bersaiz model, melakar dua pilihan motif untuk sayap dan ekor serta melabel alat, fungsi dan media. Guru menyemak sama ada idea boleh dilaksanakan dengan bahan selamat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Peta idea, dua inspirasi rujukan, dua fungsi dan senarai media yang berkaitan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu peta idea fungsi produk dan dua lakaran motif flora berlabel. Guru menyemak kejelasan sumber idea, fungsi dan pilihan motif.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
+**Penutup (5 minit):** Murid memilih satu motif utama berserta sebab; guru menyimpan lakaran untuk sesi reka letak.
 
-**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
+**Pembezaan:** Sediakan dua templat daun sebagai sokongan; murid lanjutan mencadangkan ragam hias bersimetri.
 
-**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
+**Keselamatan:** Hanya pemerhatian dan lakaran; elakkan penggunaan alat tajam dalam sesi ini.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 68–69](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Adaptasi sumber Buku Teks; belum diuji dalam Telegram.
