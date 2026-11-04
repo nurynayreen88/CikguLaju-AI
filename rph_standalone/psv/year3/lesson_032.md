@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 3 — PdP 032
+**Status:** DRAF SEMAK (sasaran mutu 90%)  
+**Unit:** 8 — Cantik Bercahaya  
+**Fokus:** Penghasilan karya seni | **Teknik:** Renjisan dan percikan  
+**SK:** 3.1  
+**SP:** 3.1.2  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 68–68 (unit 66-69)  
+**BBM:** berus gigi bersih, berus lukisan, cat poster, kertas, batang aiskrim  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat menyiapkan hasil Cantik Bercahaya menggunakan teknik renjisan dan percikan dengan pengendalian bahan yang selamat. Evidens PBD: produk nyata menunjukkan teknik, idea dan keselamatan.
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Renjisan — Cantiknya Cahaya
-**Unit RPT 2026:** Unit 8 — Cantiknya Cahaya (BT ms 66–69)  
-**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
-**Fokus:** Kemaskan dan apresiasi  
-**SK:** 4.1  
-**SP:** 4.1.1; 4.1.2  
-**Teknik:** renjisan dan percikan  
-**Bahasa seni visual:** jalinan, warna, harmoni, kontra  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** berus gigi baharu, cat cair, stensil, apron
-
-## Objektif pembelajaran
-Murid dapat memperkemas corak renjisan pada terendak lampu serta mengulasnya menggunakan dua istilah seni visual.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Sampul Buku Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik renjisan dan percikan serta penggunaan jalinan, warna, harmoni, kontra. Murid menyemak bahagian karya yang belum lengkap.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada corak renjisan pada terendak lampu, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh Cantik Bercahaya dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menyemak lakaran pilihan dan mendemonstrasi teknik renjisan dan percikan; murid menyusun bahan mengikut langkah kerja.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan projek: Gunakan kertas bercorak renjisan untuk membina terendak lampu kadbod ringkas tanpa sambungan elektrik. Guru menyemak bukti kerja, fungsi/komposisi, keselamatan dan ketepatan teknik.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai produk nyata menunjukkan teknik, idea dan keselamatan; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
+**Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
+**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.

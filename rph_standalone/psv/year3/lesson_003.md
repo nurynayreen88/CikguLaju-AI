@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 3 — PdP 003
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Lukisan — Tut Tut Kereta Api
-**Unit RPT 2026:** Unit 1 — Tut Tut Kereta Api (BT ms 6–9)  
-**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
-**Fokus:** Hasilkan karya  
+**Status:** DRAF SEMAK (sasaran mutu 90%)  
+**Unit:** 1 — Tut Tut Kereta Api  
+**Fokus:** Penghasilan karya seni | **Teknik:** Lukisan silang pangkah  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Teknik:** garisan silang pangkah  
-**Bahasa seni visual:** garisan, ruang, kepelbagaian, ritma  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** pensel, pemadam, kertas
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 8–8 (unit 6-9)  
+**BBM:** pensel grafit, pen hitam, kertas lukisan  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menghasilkan lukisan kereta api menggunakan garisan silang pangkah dengan garisan silang pangkah, sekurang-kurangnya dua aspek garisan, ruang, kepelbagaian, ritma.
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat menyiapkan hasil Tut Tut Kereta Api menggunakan teknik lukisan silang pangkah dengan pengendalian bahan yang selamat. Evidens PBD: produk nyata menunjukkan teknik, idea dan keselamatan.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Deretan Rumah Kampung. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat pensel, pemadam, kertas. Murid menyediakan bahan serta menetapkan kriteria karya.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan lukisan kereta api menggunakan garisan silang pangkah mengikut lakaran menggunakan garisan silang pangkah, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri garisan, ruang, kepelbagaian, ritma, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh Tut Tut Kereta Api dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menyemak lakaran pilihan dan mendemonstrasi teknik lukisan silang pangkah; murid menyusun bahan mengikut langkah kerja.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan projek: Lengkapkan lukisan kereta api berlatar ruang hadapan-tengah-belakang dengan tona silang pangkah. Guru menyemak bukti kerja, fungsi/komposisi, keselamatan dan ketepatan teknik.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai produk nyata menunjukkan teknik, idea dan keselamatan; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
+**Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
+**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.

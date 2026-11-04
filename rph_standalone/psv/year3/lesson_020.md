@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 3 — PdP 020
+**Status:** DRAF SEMAK  
+**Unit:** Projek Seni Visual penggal pertama  
+**Tajuk:** Pameran penggal pertama  
+**SK:** 5.1  
+**SP:** 3.3.1; 3.3.2 (kod bercetak dalam DSKP PSV Tahun 3 di bawah SK 5.1)  
+**Rujukan Buku Teks:** Projek Kesenian penggal pertama, diadaptasi untuk bahagian Seni Visual sahaja  
+**BBM:** karya murid, kapsyen, kertas label, pita tidak merosakkan  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat menghasilkan satu pelan susun atur pameran dengan sekurang-kurangnya dua kapsyen karya. Evidens: pelan/kapsyen atau foto, ulasan dan senarai semak keselamatan.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Model Kraf — Pahlawan Kecil
-**Unit RPT 2026:** Unit 5 — Pahlawan Kecil (BT ms 41–43)  
-**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
-**Fokus:** Kemaskan dan apresiasi  
-**SK:** 4.1  
-**SP:** 4.1.1; 4.1.2  
-**Teknik:** binaan model hiasan tidak berfungsi  
-**Bahasa seni visual:** jalinan, bentuk, imbangan, kepelbagaian  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kadbod lembut, corak motif, gam
-
-## Objektif pembelajaran
-Murid dapat memperkemas model hiasan Parang Ilang daripada kadbod lembut, tidak berfungsi serta mengulasnya menggunakan dua istilah seni visual.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Galeri Motif Warisan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik binaan model hiasan tidak berfungsi serta penggunaan jalinan, bentuk, imbangan, kepelbagaian. Murid menyemak bahagian karya yang belum lengkap.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada model hiasan Parang Ilang daripada kadbod lembut, tidak berfungsi, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh galeri selamat; murid mengenal pasti satu tugas pameran.
+**Aktiviti 1 (15 minit):** Guru membimbing peranan kumpulan dan cara menyediakan kapsyen/apresiasi. Murid memilih karya secara demokratik.
+**Aktiviti 2 (25 minit) — Projek:** Murid memilih hasil terbaik daripada lima unit terdahulu, membuat kapsyen nama-media-teknik, menyediakan pelan susun atur dan melabelkan meja.
+**Pengukuhan/Pentaksiran (10 minit):** Guru merekod penglibatan, kebersihan, ketepatan kapsyen, keselamatan dan apresiasi; murid memberi refleksi.
+**Penutup (5 minit):** Murid menyusun semula alatan atau mengesahkan persediaan pameran.
+**Pembezaan:** Sediakan templat kapsyen dan kad peranan; murid lanjutan menjadi pemandu galeri.
+**Keselamatan:** Laluan bebas halangan; karya ringan dipamer pada permukaan stabil tanpa paku.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/).

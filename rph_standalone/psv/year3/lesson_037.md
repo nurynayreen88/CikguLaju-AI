@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 3 — PdP 037
+**Status:** DRAF SEMAK (sasaran mutu 90%)  
+**Unit:** 9 — Boneka Menari Mencuit Hati  
+**Fokus:** Apresiasi, kemasan dan refleksi | **Teknik:** Boneka  
+**SK:** 3.1; 4.1  
+**SP:** 3.1.4; 4.1.1; 4.1.2  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 78–79 (unit 74-79)  
+**BBM:** kadbod, warna, kain perca, batang kertas tumpul  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat mengemas karya Boneka Menari Mencuit Hati, menyatakan dua unsur seni dan satu cadangan pembaikan. Evidens PBD: karya siap, apresiasi lisan dua unsur dan satu pembaikan.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Anyaman — Seni Anyaman Berzaman
-**Unit RPT 2026:** Unit 10 — Seni Anyaman Berzaman (BT ms 87–91)  
-**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
-**Fokus:** Perhatikan dan teroka  
-**SK:** 1.1; 2.1  
-**SP:** 1.1.9; 2.1.4  
-**Teknik:** anyaman  
-**Bahasa seni visual:** garisan, jalinan, kontra, harmoni  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** jalur kertas dua warna, gam
-
-## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh anyaman dan menghasilkan satu sampel anyaman.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Penanda Buku Anyaman. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh anyaman bertema Penanda Buku Anyaman dan membandingkan garisan, jalinan, kontra, harmoni. Murid menandakan dua ciri yang dapat dilihat.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik anyaman. Murid mencuba dua sampel kecil menggunakan jalur kertas anyaman, membandingkan kesan dan memilih teknik yang sesuai untuk alas mangkuk dengan kelarai anyaman.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh Boneka Menari Mencuit Hati dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan kriteria hasil yang kemas dan berfungsi; murid menilai kualiti karya sebelum menambah baik.
+**Aktiviti 2 (25 minit) — Amali:** Murid membuat kemasan, mempamerkan hasil dan menilai: Persembahkan watak boneka serta jelaskan proses pembinaan. Murid memberi ulasan dua unsur seni dan penambahbaikan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai karya siap, apresiasi lisan dua unsur dan satu pembaikan; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
+**Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
+**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.

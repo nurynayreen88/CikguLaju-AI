@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 3 — PdP 021
+**Status:** DRAF SEMAK  
+**Unit:** Projek Seni Visual penggal pertama  
+**Tajuk:** Pameran penggal pertama  
+**SK:** 5.1  
+**SP:** 3.3.3; 3.3.4; 3.3.5 (kod bercetak dalam DSKP PSV Tahun 3 di bawah SK 5.1)  
+**Rujukan Buku Teks:** Projek Kesenian penggal pertama, diadaptasi untuk bahagian Seni Visual sahaja  
+**BBM:** karya murid, kapsyen, kertas label, pita tidak merosakkan  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat menyertai pameran, mengulas karya rakan dan memastikan karya serta ruang pameran selamat. Evidens: pelan/kapsyen atau foto, ulasan dan senarai semak keselamatan.
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Kolaj — Belon Udara Tinggi di Langit
-**Unit RPT 2026:** Unit 6 — Belon Udara Tinggi di Langit (BT ms 50–53)  
-**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
-**Fokus:** Perhatikan dan teroka  
-**SK:** 1.1; 2.1  
-**SP:** 1.1.3; 2.1.1  
-**Teknik:** tampalan  
-**Bahasa seni visual:** jalinan, warna, kontra, kepelbagaian  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas bertekstur, gam, kad
-
-## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh kolaj dan menghasilkan satu sampel tampalan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Hidupan di Kebun. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh kolaj bertema Hidupan di Kebun dan membandingkan jalinan, warna, kontra, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik tampalan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk kolaj belon udara panas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh galeri selamat; murid mengenal pasti satu tugas pameran.
+**Aktiviti 1 (15 minit):** Guru membimbing peranan kumpulan dan cara menyediakan kapsyen/apresiasi. Murid memilih karya secara demokratik.
+**Aktiviti 2 (25 minit) — Projek:** Murid mengendalikan pameran mini, menerangkan satu teknik karya sendiri, memberi pandangan tentang karya rakan dan menyimpan semula karya serta bahan dengan selamat.
+**Pengukuhan/Pentaksiran (10 minit):** Guru merekod penglibatan, kebersihan, ketepatan kapsyen, keselamatan dan apresiasi; murid memberi refleksi.
+**Penutup (5 minit):** Murid menyusun semula alatan atau mengesahkan persediaan pameran.
+**Pembezaan:** Sediakan templat kapsyen dan kad peranan; murid lanjutan menjadi pemandu galeri.
+**Keselamatan:** Laluan bebas halangan; karya ringan dipamer pada permukaan stabil tanpa paku.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/).

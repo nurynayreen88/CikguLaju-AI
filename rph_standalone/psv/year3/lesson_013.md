@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 3 — PdP 013
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Mobail — Serangga Comel
-**Unit RPT 2026:** Unit 4 — Serangga Comel (BT ms 30–35)  
-**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
-**Fokus:** Perhatikan dan teroka  
+**Status:** DRAF SEMAK (sasaran mutu 90%)  
+**Unit:** 4 — Serangga Comel  
+**Fokus:** Penerokaan bahasa seni dan teknik | **Teknik:** Mobail  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.7; 2.1.3  
-**Teknik:** ikatan dan asemblaj  
-**Bahasa seni visual:** bentuk, warna, kepelbagaian, pergerakan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kad warna, benang, batang tumpul
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 30–31 (unit 30-35)  
+**BBM:** kadbod, kertas warna, tali lembut, palang kertas  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh mobail dan menghasilkan satu sampel ikatan dan asemblaj.
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat mengenal pasti dua bahasa seni dan membanding dua sampel media untuk Serangga Comel. Evidens PBD: dua percubaan media, dua istilah bahasa seni dan satu pemerhatian.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Terbang. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh mobail bertema Burung Terbang dan membandingkan bentuk, warna, kepelbagaian, pergerakan. Murid menandakan dua ciri yang dapat dilihat.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik ikatan dan asemblaj. Murid mencuba dua sampel kecil menggunakan kad warna serta benang, membandingkan kesan dan memilih teknik yang sesuai untuk mobail serangga daripada bahan kertas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh Serangga Comel dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru membuka buku teks ms 30–31 dan menjelaskan bentuk 3D, warna, imbangan serta ritma serangga; murid menamakan unsur visual yang dapat diperhatikan.
+**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Lakar dua bentuk serangga; uji imbangan gantungan melalui panjang tali dan lokasi titik gantung. Mereka merekod dua perbezaan hasil dan memilih teknik untuk sesi berikutnya.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media, dua istilah bahasa seni dan satu pemerhatian; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
+**Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
+**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
