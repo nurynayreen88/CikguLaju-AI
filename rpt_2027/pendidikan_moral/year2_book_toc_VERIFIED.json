@@ -1,0 +1,158 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 2,
+  "school_type": "SK",
+  "source_drive_file_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+  "book_pdf_page_count": 116,
+  "pdf_page_offset": 9,
+  "method": "Visual inspection of PDF table of contents; PDF page 1-based; printed page original textbook",
+  "status": "VERIFIED_TOC_START_ONLY",
+  "not_verified": [
+    "Exact lesson activity page",
+    "Page content aligned to SP",
+    "RPT 2027 weekly dates",
+    "Yearly teaching-hour allocation"
+  ],
+  "units": [
+    {
+      "unit": 1,
+      "book_unit_title": "Ajaran Agama Keluarga Saya",
+      "printed_start_page": 1,
+      "printed_end_page": 6,
+      "pdf_start_page": 10,
+      "pdf_end_page": 15,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 2,
+      "book_unit_title": "Baik Hati Keluarga Bahagia",
+      "printed_start_page": 7,
+      "printed_end_page": 12,
+      "pdf_start_page": 16,
+      "pdf_end_page": 21,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 3,
+      "book_unit_title": "Tanggungjawab Saya Dalam Keluarga",
+      "printed_start_page": 13,
+      "printed_end_page": 18,
+      "pdf_start_page": 22,
+      "pdf_end_page": 27,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 4,
+      "book_unit_title": "Terima Kasih, Keluargaku",
+      "printed_start_page": 19,
+      "printed_end_page": 24,
+      "pdf_start_page": 28,
+      "pdf_end_page": 33,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 5,
+      "book_unit_title": "Hemah Tinggi Dalam Keluarga",
+      "printed_start_page": 25,
+      "printed_end_page": 32,
+      "pdf_start_page": 34,
+      "pdf_end_page": 41,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 6,
+      "book_unit_title": "Hormati Keluarga Hidup Gembira",
+      "printed_start_page": 33,
+      "printed_end_page": 40,
+      "pdf_start_page": 42,
+      "pdf_end_page": 49,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 7,
+      "book_unit_title": "Keluarga Bahagia",
+      "printed_start_page": 41,
+      "printed_end_page": 48,
+      "pdf_start_page": 50,
+      "pdf_end_page": 57,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 8,
+      "book_unit_title": "Keluarga Yang Adil Hidup Sejahtera",
+      "printed_start_page": 49,
+      "printed_end_page": 56,
+      "pdf_start_page": 58,
+      "pdf_end_page": 65,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 9,
+      "book_unit_title": "Berani Demi Nama Baik Keluarga",
+      "printed_start_page": 57,
+      "printed_end_page": 64,
+      "pdf_start_page": 66,
+      "pdf_end_page": 73,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 10,
+      "book_unit_title": "Jujur Selalu",
+      "printed_start_page": 65,
+      "printed_end_page": 72,
+      "pdf_start_page": 74,
+      "pdf_end_page": 81,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 11,
+      "book_unit_title": "Sikap Rajin Amalan Keluarga",
+      "printed_start_page": 73,
+      "printed_end_page": 80,
+      "pdf_start_page": 82,
+      "pdf_end_page": 89,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 12,
+      "book_unit_title": "Kerjasama Meringankan Beban Keluarga",
+      "printed_start_page": 81,
+      "printed_end_page": 88,
+      "pdf_start_page": 90,
+      "pdf_end_page": 97,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 13,
+      "book_unit_title": "Bersederhana Amalan Keluarga",
+      "printed_start_page": 89,
+      "printed_end_page": 96,
+      "pdf_start_page": 98,
+      "pdf_end_page": 105,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 14,
+      "book_unit_title": "Toleransi Sesama Ahli Keluarga",
+      "printed_start_page": 97,
+      "printed_end_page": null,
+      "pdf_start_page": 106,
+      "pdf_end_page": null,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "End page not asserted without specific page check"
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 4,
+  "status": "DRAF_SEMAK",
+  "source_dskp_id": "1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd",
+  "source_book_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+  "notes": "Semakan sumber SK; 14 unit × 3 PdP cadangan; tidak mengesahkan tarikh / halaman buku teks",
+  "units": [
+    {
+      "year": 4,
+      "unit": 1,
+      "sk": "1.0",
+      "title": "Amalan Ajaran Agama atau Kepercayaan Mengeratkan Hubungan Sesama Jiran",
+      "nilai": "Kepercayaan kepada Tuhan",
+      "sp": [
+        {
+          "code": "1.1",
+          "text": "Memberikan contoh amalan agama atau kepercayaan yang dianuti oleh jiran."
+        },
+        {
+          "code": "1.2",
+          "text": "Memerihalkan amalan ajaran agama atau kepercayaan yang dapat mengeratkan hubungan sesama jiran."
+        },
+        {
+          "code": "1.3",
+          "text": "Menghuraikan kepentingan menghormati amalan ajaran agama atau kepercayaan jiran."
+        },
+        {
+          "code": "1.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan ajaran agama atau kepercayaan jiran."
+        },
+        {
+          "code": "1.5",
+          "text": "Mengamalkan sikap menghormati amalan ajaran agama atau kepercayaan jiran."
+        }
+      ],
+      "scenario": "Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan",
+      "textbook_unit_title": "Kepercayaan kepada Tuhan",
+      "textbook_printed_start_page": 2,
+      "textbook_pdf_start_page": 8,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 2,
+      "sk": "2.0",
+      "title": "Prihatin Terhadap Keperluan dan Kebajikan Jiran",
+      "nilai": "Baik hati",
+      "sp": [
+        {
+          "code": "2.1",
+          "text": "Memberikan contoh prihatin terhadap keperluan dan kebajikan jiran."
+        },
+        {
+          "code": "2.2",
+          "text": "Menjelaskan cara bersikap prihatin terhadap keperluan dan kebajikan jiran."
+        },
+        {
+          "code": "2.3",
+          "text": "Menghuraikan kepentingan bersikap prihatin terhadap keperluan dan kebajikan jiran."
+        },
+        {
+          "code": "2.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan bersikap prihatin terhadap keperluan dan kebajikan jiran."
+        },
+        {
+          "code": "2.5",
+          "text": "Mengamalkan sikap prihatin terhadap keperluan dan kebajikan jiran."
+        }
+      ],
+      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit",
+      "textbook_unit_title": "Baik Hati",
+      "textbook_printed_start_page": 10,
+      "textbook_pdf_start_page": 16,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 3,
+      "sk": "3.0",
+      "title": "Tanggungjawab Terhadap Jiran",
+      "nilai": "Bertanggungjawab",
+      "sp": [
+        {
+          "code": "3.1",
+          "text": "Memberikan contoh situasi bertanggungjawab terhadap jiran."
+        },
+        {
+          "code": "3.2",
+          "text": "Menghuraikan cara menjalankan tanggungjawab terhadap jiran."
+        },
+        {
+          "code": "3.3",
+          "text": "Mengkaji kepentingan melaksanakan tanggungjawab terhadap jiran."
+        },
+        {
+          "code": "3.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap bertanggungjawab terhadap jiran."
+        },
+        {
+          "code": "3.5",
+          "text": "Mengamalkan sikap bertanggungjawab terhadap jiran."
+        }
+      ],
+      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama",
+      "textbook_unit_title": "Bertanggungjawab",
+      "textbook_printed_start_page": 20,
+      "textbook_pdf_start_page": 26,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 4,
+      "sk": "4.0",
+      "title": "Berterima Kasih Terhadap Jiran",
+      "nilai": "Berterima kasih",
+      "sp": [
+        {
+          "code": "4.1",
+          "text": "Menyenaraikan cara berterima kasih terhadap jiran."
+        },
+        {
+          "code": "4.2",
+          "text": "Menjelaskan kepentingan sikap berterima kasih terhadap jiran."
+        },
+        {
+          "code": "4.3",
+          "text": "Meramalkan kesan pengabaian sikap berterima kasih terhadap jiran."
+        },
+        {
+          "code": "4.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap berterima kasih terhadap jiran."
+        },
+        {
+          "code": "4.5",
+          "text": "Mengamalkan sikap berterima kasih terhadap jiran."
+        }
+      ],
+      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik",
+      "textbook_unit_title": "Berterima Kasih",
+      "textbook_printed_start_page": 28,
+      "textbook_pdf_start_page": 34,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 5,
+      "sk": "5.0",
+      "title": "Beradab Sopan dan Berbudi Pekerti Mulia Terhadap Jiran",
+      "nilai": "Hemah tinggi",
+      "sp": [
+        {
+          "code": "5.1",
+          "text": "Memberikan contoh amalan beradab sopan dan berbudi pekerti mulia terhadap jiran."
+        },
+        {
+          "code": "5.2",
+          "text": "Menjelaskan cara beradab sopan dan berbudi pekerti mulia terhadap jiran."
+        },
+        {
+          "code": "5.3",
+          "text": "Menaakul kepentingan beradab sopan dan berbudi pekerti mulia terhadap jiran."
+        },
+        {
+          "code": "5.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan beradab sopan dan berbudi pekerti mulia terhadap jiran."
+        },
+        {
+          "code": "5.5",
+          "text": "Mengamalkan perlakuan beradab sopan dan berbudi pekerti mulia terhadap jiran."
+        }
+      ],
+      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka",
+      "textbook_unit_title": "Hemah Tinggi",
+      "textbook_printed_start_page": 38,
+      "textbook_pdf_start_page": 44,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 6,
+      "sk": "6.0",
+      "title": "Hormati Jiran",
+      "nilai": "Hormat",
+      "sp": [
+        {
+          "code": "6.1",
+          "text": "Memberikan contoh perlakuan menghormati jiran."
+        },
+        {
+          "code": "6.2",
+          "text": "Menghuraikan cara menghormati jiran."
+        },
+        {
+          "code": "6.3",
+          "text": "Mengkaji kelebihan amalan menghormati jiran."
+        },
+        {
+          "code": "6.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap menghormati jiran."
+        },
+        {
+          "code": "6.5",
+          "text": "Mengamalkan sikap menghormati jiran."
+        }
+      ],
+      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk",
+      "textbook_unit_title": "Hormat",
+      "textbook_printed_start_page": 46,
+      "textbook_pdf_start_page": 52,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 7,
+      "sk": "7.0",
+      "title": "Sayangi Jiran",
+      "nilai": "Kasih sayang",
+      "sp": [
+        {
+          "code": "7.1",
+          "text": "Memberikan contoh perlakuan menyayangi jiran."
+        },
+        {
+          "code": "7.2",
+          "text": "Menghuraikan cara menyayangi jiran."
+        },
+        {
+          "code": "7.3",
+          "text": "Merumuskan kebaikan menyayangi jiran."
+        },
+        {
+          "code": "7.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap menyayangi jiran."
+        },
+        {
+          "code": "7.5",
+          "text": "Mengamalkan sikap menyayangi jiran."
+        }
+      ],
+      "scenario": "Jiran sakit dan memerlukan sokongan",
+      "textbook_unit_title": "Kasih Sayang",
+      "textbook_printed_start_page": 56,
+      "textbook_pdf_start_page": 62,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 8,
+      "sk": "8.0",
+      "title": "Tindakan Yang Adil Terhadap Jiran",
+      "nilai": "Keadilan",
+      "sp": [
+        {
+          "code": "8.1",
+          "text": "Memberikan contoh tindakan yang adil terhadap jiran."
+        },
+        {
+          "code": "8.2",
+          "text": "Menjelaskan kebaikan bersikap adil terhadap jiran."
+        },
+        {
+          "code": "8.3",
+          "text": "Menghuraikan kesan jika tidak bertindak adil terhadap jiran."
+        },
+        {
+          "code": "8.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan tindakan yang adil terhadap jiran."
+        },
+        {
+          "code": "8.5",
+          "text": "Mengamalkan tindakan yang adil terhadap jiran."
+        }
+      ],
+      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil",
+      "textbook_unit_title": "Keadilan",
+      "textbook_printed_start_page": 64,
+      "textbook_pdf_start_page": 70,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 9,
+      "sk": "9.0",
+      "title": "Berani Terhadap Jiran Demi Kesejahteraan Bersama",
+      "nilai": "Keberanian",
+      "sp": [
+        {
+          "code": "9.1",
+          "text": "Memberikan contoh sikap berani terhadap jiran demi kesejahteraan bersama."
+        },
+        {
+          "code": "9.2",
+          "text": "Menghuraikan cabaran yang dihadapi ketika bertindak berani terhadap jiran demi kesejahteraan bersama."
+        },
+        {
+          "code": "9.3",
+          "text": "Menaakul kepentingan bersikap berani terhadap jiran demi kesejahteraan bersama."
+        },
+        {
+          "code": "9.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap berani terhadap jiran demi kesejahteraan bersama."
+        },
+        {
+          "code": "9.5",
+          "text": "Mengamalkan sikap berani terhadap jiran demi kesejahteraan bersama."
+        }
+      ],
+      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran",
+      "textbook_unit_title": "Keberanian",
+      "textbook_printed_start_page": 74,
+      "textbook_pdf_start_page": 80,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 10,
+      "sk": "10.0",
+      "title": "Amalan Jujur Dalam Hidup Berjiran",
+      "nilai": "Kejujuran",
+      "sp": [
+        {
+          "code": "10.1",
+          "text": "Menyenaraikan ciri kejujuran."
+        },
+        {
+          "code": "10.2",
+          "text": "Mengenal pasti situasi bersikap jujur terhadap jiran."
+        },
+        {
+          "code": "10.3",
+          "text": "Menghuraikan manfaat bersikap jujur terhadap jiran."
+        },
+        {
+          "code": "10.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap jujur terhadap jiran."
+        },
+        {
+          "code": "10.5",
+          "text": "Mengamalkan sikap jujur terhadap jiran."
+        }
+      ],
+      "scenario": "Murid tersalah mengambil barang milik jiran",
+      "textbook_unit_title": "Kejujuran",
+      "textbook_printed_start_page": 84,
+      "textbook_pdf_start_page": 90,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 11,
+      "sk": "11.0",
+      "title": "Amalan Rajin Dalam Hidup Berjiran",
+      "nilai": "Kerajinan",
+      "sp": [
+        {
+          "code": "11.1",
+          "text": "Memberikan contoh amalan rajin dalam hidup berjiran."
+        },
+        {
+          "code": "11.2",
+          "text": "Menjelaskan cara bersikap rajin dalam hidup berjiran."
+        },
+        {
+          "code": "11.3",
+          "text": "Mengenal pasti kepentingan amalan rajin dalam hidup berjiran."
+        },
+        {
+          "code": "11.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap rajin dalam hidup berjiran."
+        },
+        {
+          "code": "11.5",
+          "text": "Mengamalkan sikap rajin dalam hidup berjiran."
+        }
+      ],
+      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah",
+      "textbook_unit_title": "Kerajinan",
+      "textbook_printed_start_page": 94,
+      "textbook_pdf_start_page": 100,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 12,
+      "sk": "12.0",
+      "title": "Amalan Kerjasama Dalam Hidup Berjiran",
+      "nilai": "Kerjasama",
+      "sp": [
+        {
+          "code": "12.1",
+          "text": "Memberikan contoh amalan kerjasama dalam hidup berjiran."
+        },
+        {
+          "code": "12.2",
+          "text": "Menjelaskan cara mengekalkan amalan kerjasama dalam hidup berjiran."
+        },
+        {
+          "code": "12.3",
+          "text": "Menghuraikan kebaikan amalan kerjasama dalam hidup berjiran."
+        },
+        {
+          "code": "12.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan kerjasama dalam hidup berjiran."
+        },
+        {
+          "code": "12.5",
+          "text": "Mengamalkan sikap bekerjasama dalam hidup berjiran."
+        }
+      ],
+      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan",
+      "textbook_unit_title": "Kerjasama",
+      "textbook_printed_start_page": 102,
+      "textbook_pdf_start_page": 108,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 13,
+      "sk": "13.0",
+      "title": "Amalan Kesederhanaan Dalam Hidup Berjiran",
+      "nilai": "Kesederhanaan",
+      "sp": [
+        {
+          "code": "13.1",
+          "text": "Memberikan contoh amalan kesederhanaan dalam hidup berjiran."
+        },
+        {
+          "code": "13.2",
+          "text": "Memerihalkan cara bersikap sederhana dalam hidup berjiran."
+        },
+        {
+          "code": "13.3",
+          "text": "Mengenal pasti kelebihan amalan kesederhanaan dalam hidup berjiran."
+        },
+        {
+          "code": "13.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan sederhana dalam hidup berjiran."
+        },
+        {
+          "code": "13.5",
+          "text": "Mengamalkan sikap sederhana dalam hidup berjiran."
+        }
+      ],
+      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan",
+      "textbook_unit_title": "Kesederhanaan",
+      "textbook_printed_start_page": 112,
+      "textbook_pdf_start_page": 118,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 4,
+      "unit": 14,
+      "sk": "14.0",
+      "title": "Amalan Toleransi Dalam Hidup Berjiran",
+      "nilai": "Toleransi",
+      "sp": [
+        {
+          "code": "14.1",
+          "text": "Memberikan contoh amalan toleransi dalam hidup berjiran."
+        },
+        {
+          "code": "14.2",
+          "text": "Menghuraikan cara memupuk amalan toleransi dalam hidup berjiran."
+        },
+        {
+          "code": "14.3",
+          "text": "Mengkaji kepentingan amalan toleransi dalam hidup berjiran."
+        },
+        {
+          "code": "14.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan toleransi dalam hidup berjiran."
+        },
+        {
+          "code": "14.5",
+          "text": "Mengamalkan sikap bertoleransi dalam hidup berjiran."
+        }
+      ],
+      "scenario": "Jiran berbeza pendapat mengenai bunyi bising ketika hujung minggu",
+      "textbook_unit_title": "Toleransi",
+      "textbook_printed_start_page": 122,
+      "textbook_pdf_start_page": 128,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    }
+  ],
+  "textbook_page_audit": "VERIFIED_TOC_START_ONLY",
+  "textbook_page_lookup_path": "rpt_2027/pendidikan_moral/year4_book_toc_VERIFIED.json"
+}

@@ -1,0 +1,158 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 6,
+  "school_type": "SK",
+  "source_drive_file_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+  "book_pdf_page_count": 148,
+  "pdf_page_offset": 9,
+  "method": "Visual inspection of PDF table of contents; PDF page 1-based; printed page original textbook",
+  "status": "VERIFIED_TOC_START_ONLY",
+  "not_verified": [
+    "Exact lesson activity page",
+    "Page content aligned to SP",
+    "RPT 2027 weekly dates",
+    "Yearly teaching-hour allocation"
+  ],
+  "units": [
+    {
+      "unit": 1,
+      "book_unit_title": "Agama dan Kepercayaan Dihayati, Negara Harmoni",
+      "printed_start_page": 1,
+      "printed_end_page": 8,
+      "pdf_start_page": 10,
+      "pdf_end_page": 17,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 2,
+      "book_unit_title": "Rakyat Baik Hati Membawa Berkat",
+      "printed_start_page": 9,
+      "printed_end_page": 18,
+      "pdf_start_page": 18,
+      "pdf_end_page": 27,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 3,
+      "book_unit_title": "Kempen Kemanusiaan Tanggungjawab Bersama",
+      "printed_start_page": 19,
+      "printed_end_page": 28,
+      "pdf_start_page": 28,
+      "pdf_end_page": 37,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 4,
+      "book_unit_title": "Jasa Tokoh Negara Dikenang",
+      "printed_start_page": 29,
+      "printed_end_page": 38,
+      "pdf_start_page": 38,
+      "pdf_end_page": 47,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 5,
+      "book_unit_title": "Berhemah Tinggi Budaya Kita",
+      "printed_start_page": 39,
+      "printed_end_page": 48,
+      "pdf_start_page": 48,
+      "pdf_end_page": 57,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 6,
+      "book_unit_title": "Hormati Negara, Rakyat Sejahtera",
+      "printed_start_page": 49,
+      "printed_end_page": 58,
+      "pdf_start_page": 58,
+      "pdf_end_page": 67,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 7,
+      "book_unit_title": "Sayangilah Alam, Hargai Kehidupan",
+      "printed_start_page": 59,
+      "printed_end_page": 68,
+      "pdf_start_page": 68,
+      "pdf_end_page": 77,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 8,
+      "book_unit_title": "Adil Pemangkin Keamanan Negara",
+      "printed_start_page": 69,
+      "printed_end_page": 78,
+      "pdf_start_page": 78,
+      "pdf_end_page": 87,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 9,
+      "book_unit_title": "Berani Mempertahankan Nama Negara",
+      "printed_start_page": 79,
+      "printed_end_page": 88,
+      "pdf_start_page": 88,
+      "pdf_end_page": 97,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 10,
+      "book_unit_title": "Rakyat Jujur, Negara Makmur",
+      "printed_start_page": 89,
+      "printed_end_page": 98,
+      "pdf_start_page": 98,
+      "pdf_end_page": 107,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 11,
+      "book_unit_title": "Bersikap Rajin, Negara Maju",
+      "printed_start_page": 99,
+      "printed_end_page": 108,
+      "pdf_start_page": 108,
+      "pdf_end_page": 117,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 12,
+      "book_unit_title": "Kerjasama Serikan Kehidupan",
+      "printed_start_page": 109,
+      "printed_end_page": 118,
+      "pdf_start_page": 118,
+      "pdf_end_page": 127,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 13,
+      "book_unit_title": "Gunakanlah Prasarana Secara Berhemah",
+      "printed_start_page": 119,
+      "printed_end_page": 128,
+      "pdf_start_page": 128,
+      "pdf_end_page": 137,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 14,
+      "book_unit_title": "Toleransi Mengeratkan Hubungan Negara",
+      "printed_start_page": 129,
+      "printed_end_page": null,
+      "pdf_start_page": 138,
+      "pdf_end_page": null,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "End page not asserted without specific page check"
+    }
+  ]
+}
