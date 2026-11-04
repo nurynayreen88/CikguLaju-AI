@@ -15,8 +15,8 @@
 **Pupils:** State one character and one key event.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Follow TB p.100 Activities 1–2 to check why events occurred.  
-**Pupils:** Read the story again and explain one cause and effect.  
+**Teacher:** Follow TB p.100 Activities 1–2 and read the story aloud accurately before checking why events occurred.  
+**Pupils:** Listen for one cause-and-effect detail, then reread and explain how the events connect.  
 
 ## Activity 2 — Guided core task (18 minutes)
 **Teacher:** Model because, so and but using the SOW sentence-half worksheet.  
