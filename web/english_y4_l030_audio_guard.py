@@ -19,7 +19,7 @@ def _is_y4_l030(ss):
     ):
         return False
     year = str(ss.get("year") or ss.get("grade") or "").strip().casefold()
-    if not re.fullmatch(r"(?:(?:year|tahun)\\s*)?0?4", year):
+    if not re.fullmatch(r"(?:(?:year|tahun)\s*)?0?4", year):
         return False
     raw_lesson = ss.get("lesson_no") or ss.get("textbook_lesson_no") or ss.get("lesson")
     try:
