@@ -1,0 +1,29 @@
+name: PJPK 2027 staging source and Telegram preview checks
+on:
+  push:
+    branches:
+      - audit/pjpk-crosswalk-reconcile-20261104
+  pull_request:
+    paths:
+      - "rph_standalone/pjpk/**"
+      - "rpt_staging/pjpk/**"
+      - "web/pjpk_2027_preview_runtime.py"
+      - "tests/test_pjpk_2027_preview_runtime.py"
+      - "scripts/check_pjpk_2027_staging_drafts.py"
+      - "audits/pjpk_2027_staging_manifest_20261104.json"
+
+jobs:
+  pjpk-staging-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Manifest / RPT / blocked-conflict integrity (read only)
+        run: python scripts/check_pjpk_2027_staging_drafts.py
+      - name: Test Telegram preview bridge (no tokens, no DB)
+        run: python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+      - name: Syntax check entrypoint and source bridge
+        run: python -m py_compile web/pjpk_2027_preview_runtime.py tools/run_telegram_with_curriculum_api.py
