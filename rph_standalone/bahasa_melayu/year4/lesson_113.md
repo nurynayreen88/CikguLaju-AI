@@ -5,10 +5,10 @@
 **Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita  
 **Tajuk aktiviti:** Mudahnya Menyukat  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai  
+**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 127  
-**Fokus:** bacaan — Mudahnya Menyukat  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Mudahnya Menyukat' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
+**Fokus:** membaca — menganalisis teks bukan sastera  
+**Objektif PdP:** Murid dapat membaca maklumat tentang sudu penyukat digital pada BT m/s 127 serta menyatakan tiga ciri dan dua kegunaannya.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Mudahnya Menyukat' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Mudahnya Menyukat' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Mudahnya Menyukat' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Teliti bahan BT (15 minit)
+**Guru:** Membimbing bacaan teks inovasi sudu penyukat digital pada BT m/s 127, termasuk ciri bahan, pemegang dan paparan berat.
+**Murid:** Membaca teks dan menandakan tiga ciri alat serta maklumat yang membuktikannya.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Membimbing analisis faedah sudu penyukat digital menggunakan peta dakap berdasarkan petikan.
+**Murid:** Menyusun tiga ciri dan dua kegunaan alat penyukat digital dalam peta dakap dengan bukti teks.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir ketepatan ciri, kegunaan dan bukti tekstual mengikut SP 2.3.1.
+**Murid:** Membetulkan maklumat yang tidak disokong bahan.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Mudahnya Menyukat' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
