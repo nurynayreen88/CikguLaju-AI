@@ -7,32 +7,32 @@
 **Language focus:** relevant vocabulary and language from this unit  
 **Duration:** 60 minutes  
 **Materials:** Project-Based Learning 2: teacher to select topic, skills and materials according to pupils' needs; A4 paper, markers, presentation checklist  
-**Learning objective:** Collaborate to create the “End-of-year story portfolio” project product with 3 meaningful examples and deliver a 1-minute group presentation.  
-**PBD evidence:** Group rubric: 3 correct examples, completed product, 1-minute oral presentation, contribution and reflection.
+**Learning objective:** Produce a three-entry end-of-year story portfolio with sequenced event details and past-tense recount sentences, then present one selected memory for 1 minute.
+**PBD evidence:** Three distinct school-event entries with when/where/what happened, at least two clear past-tense sentences per entry, and a 1-minute oral reflection.
 
 ## Set induction (5 minutes)
-**Teacher:** Explain the project challenge and present one example product.  
-**Pupils:** Suggest a project goal and choose a group role.
+**Teacher:** Show three mixed-up captions about a typical school event and ask pupils how to put memories into order.
+**Pupils:** Arrange the captions chronologically and name one memorable event from the year.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce the project brief and success criteria; keep skills and CS/LS teacher-selected, as directed by SOW.  
-**Pupils:** Choose a role (researcher, writer, designer or presenter) and agree on one target audience.
+**Teacher:** Model a four-box recount planner (when, where, what happened, how I felt) and explain the portfolio success criteria.
+**Pupils:** Choose three different school memories, assign group roles and outline an entry for each event.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Scaffold the group product: Group project: create an end-of-year story portfolio; narrate memorable events orally and write a short recount.  
-**Pupils:** Gather three concrete examples, write captions/short paragraphs and assemble an original product.
+**Teacher:** Guide pupils to draft each entry as a short past-tense recount with a clear sequence and personal response.
+**Pupils:** Write at least two connected sentences for each of three events and add a caption or drawing.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Facilitate a gallery walk and 1-minute presentations; assess contribution and content clarity.  
-**Pupils:** Present the work, answer one question and give one peer-feedback point.
+**Teacher:** Organise portfolio sharing; ask listeners to question the speaker about one event detail or feeling.
+**Pupils:** Present one memory for a minute, answer an audience question and refine one caption after peer feedback.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check three distinct entries, sequence, past-tense forms and one spoken reflection; give specific feedback.
+**Pupils:** Correct one tense or order error and identify one detail that makes the memory clear.
 
 ## Closure (4 minutes)
-**Teacher:** Summarise the group rubric and collect project roles.  
-**Pupils:** State one contribution and one improvement for the next session.
+**Teacher:** Invite one strongest memory sentence and one reflection on improvement across the year.
+**Pupils:** Share a revised past-tense sentence and explain why the event mattered.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
