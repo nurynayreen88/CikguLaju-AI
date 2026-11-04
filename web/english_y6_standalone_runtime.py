@@ -9,6 +9,43 @@ import json
 
 LESSON_ROOT = Path(__file__).resolve().parents[1] / "rph_standalone" / "english" / "year6"
 ALLOWED = frozenset(range(1, 161))
+
+OFFICIAL_SOW_INDEX = Path(__file__).resolve().parents[1] / "audits" / "english_primary_2_6_official_sow_index_20261103.json"
+OFFICIAL_SOW_VERSION = "2026-11-03-source-table-2-6"
+Y6_TEACHER_CHOICES = frozenset((16, 32, 48, 64, 80, 96, 112, 128, 144, 155, 156, 157, 158, 160))
+TEACHER_SELECTED_STANDARD = "Teacher to choose Year 6 DSKP standard (not fixed by SOW)"
+
+
+def _teacher_choice_sow(number, *, index_path=OFFICIAL_SOW_INDEX):
+    """Reject stale/unverified teacher-choice mappings; never invent CS/LS."""
+    if type(number) is not int or number not in Y6_TEACHER_CHOICES:
+        return None
+    try:
+        data = json.loads(Path(index_path).read_text(encoding="utf-8"))
+        lessons = data.get("lessons")
+        if data.get("version") != OFFICIAL_SOW_VERSION or not isinstance(lessons, dict):
+            return None
+        if sum(k.startswith("6/") for k in lessons) != 160:
+            return None
+        rec = lessons.get("6/%d" % number)
+        if (not isinstance(rec, dict) or rec.get("n") != number
+                or rec.get("teacher_selected") is not True
+                or rec.get("main_ls") is not None
+                or rec.get("complementary_ls") is not None):
+            return None
+        return rec
+    except (OSError, ValueError, TypeError):
+        return None
+
+
+def _teacher_choice_title(record):
+    """Use SOW topic where fixed; otherwise make suggested status explicit."""
+    topic = str(record.get("topic") or "").strip()
+    focus = str(record.get("focus") or "").strip()
+    if not topic or topic.lower().startswith(("teacher to select", "teacher to complete")):
+        return "CADANGAN CIKGULAJU (DRAF) — %s — topic selected by teacher" % focus
+    return "CADANGAN CIKGULAJU (DRAF) — %s — %s" % (topic, focus)
+
 PHASES = ("Set induction", "Activity 1", "Activity 2", "Activity 3", "Reinforcement / PBD", "Closure")
 
 
@@ -117,9 +154,19 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
                 or overlay.get("complementary_ls") != comp[1]
                 or len(overlay.get("activities") or []) != 3):
             return rows
+    # Teacher-choice Lesson must be confirmed independently against the
+    # complete official SOW index; the source markdown alone is insufficient.
+    choice_sow = None
+    if main is None:
+        if comp is not None or ("PILIHAN GURU" not in meta["main cs/ls"]
+                                or "PILIHAN GURU" not in meta["complementary cs/ls"]):
+            return rows
+        choice_sow = _teacher_choice_sow(number)
+        if choice_sow is None:
+            return rows
     # Native English Word/PDF tables read four separate standard fields.
-    # Previous bridge only populated Malay-style combined fields, leaving
-    # the actual teacher-facing Main/Complementary cells as legacy values.
+    # Never let the legacy document's numeric codes leak into 14 lessons for
+    # which the official SOW specifies that the teacher selects the standards.
     if main and comp:
         for key, expected in (("comp_sp_code", comp[1]),
                               ("bi_comp_sp_code", comp[1]),
@@ -136,9 +183,12 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
         result["STANDARD KANDUNGAN"] = "Main: %s; Complementary: %s" % (main[0], comp[0])
         result["STANDARD PEMBELAJARAN"] = "Main: %s; Complementary: %s" % (main[1], comp[1])
     else:
-        result["STANDARD KANDUNGAN"] = "Teacher-selected DSKP standard (not fixed by SOW)"
-        result["STANDARD PEMBELAJARAN"] = "Teacher-selected DSKP Learning Standard (not fixed by SOW)"
-    result["TAJUK"] = meta.get("topic") or rows.get("TAJUK", "")
+        for field in ("MAIN CONTENT STANDARD", "MAIN LEARNING STANDARD",
+                      "COMPLEMENTARY CONTENT STANDARD", "COMPLEMENTARY LEARNING STANDARD",
+                      "STANDARD KANDUNGAN", "STANDARD PEMBELAJARAN"):
+            result[field] = TEACHER_SELECTED_STANDARD
+    result["TAJUK"] = (_teacher_choice_title(choice_sow) if choice_sow is not None
+                       else meta.get("topic") or rows.get("TAJUK", ""))
     result["OBJEKTIF PEMBELAJARAN"] = overlay.get("objective") if overlay else meta["learning objective"]
     result["KRITERIA KEJAYAAN"] = result["OBJEKTIF PEMBELAJARAN"]
     result["BAHAN BANTU MENGAJAR"] = meta["materials"]
@@ -167,7 +217,10 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
         ])
         result["PENUTUP"] = _phase(p["Closure"], 4)
     result["PEMULIHAN / PENGAYAAN"] = p.get("Differentiation and follow-up") or rows.get("PEMULIHAN / PENGAYAAN", "")
-    result["REFLEKSI"] = meta.get("teacher reflection", rows.get("REFLEKSI", ""))
+    # A template may provide reflection placeholders, but teacher-entered
+    # reflection must never be replaced by a source template.
+    if not str(rows.get("REFLEKSI") or "").strip():
+        result["REFLEKSI"] = meta.get("teacher reflection", "")
     return result
 
 
