@@ -9,6 +9,7 @@ on:
       - 'rpt_2027/pendidikan_moral/**'
       - 'scripts/check_pendidikan_moral_y2_y6.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
+      - 'scripts/check_pendidikan_moral_release_readiness.py'
       - 'scripts/preview_pm_y2_sp44_v2600_safe_patch.py'
       - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
   pull_request:
@@ -20,6 +21,7 @@ on:
       - 'rpt_2027/pendidikan_moral/**'
       - 'scripts/check_pendidikan_moral_y2_y6.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
+      - 'scripts/check_pendidikan_moral_release_readiness.py'
       - 'scripts/preview_pm_y2_sp44_v2600_safe_patch.py'
       - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
   workflow_dispatch:
@@ -53,3 +55,6 @@ jobs:
         run: python scripts/preview_pm_y2_sp44_v2600_safe_patch.py
       - name: Cross-check all staged Moral SP against current v26.00 master without DB changes
         run: python scripts/check_pm_v2600_stage_parity.py
+      - name: Release gate - block merge until textbook, calendar, and Telegram ready
+        if: always()
+        run: python scripts/check_pendidikan_moral_release_readiness.py
