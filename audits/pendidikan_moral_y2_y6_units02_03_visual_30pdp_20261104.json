@@ -1,8 +1,8 @@
 {
-  "status": "VISUAL_VERIFIED_10_UNITS_30_PDP",
+  "status": "VISUAL_VERIFIED_11_UNITS_33_PDP",
   "date": "2026-11-04",
   "method": "Direct visual inspection of original scanned textbook PDF pages; 1-based PDF pages; teacher activities are adapted tasks, not verbatim copyrighted text.",
-  "scope": "Years 2–6, units 2 and 3 only, 30 RPH. No verification claimed for other lessons.",
+  "scope": "Years 2–6 units 2 and 3 (30 PdP), plus Year 6 unit 14 (3 PdP). No verification claimed for the remaining 177 PdP.",
   "records": [
     {
       "year": 2,
@@ -613,6 +613,68 @@
         }
       ],
       "sourceDriveId": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo"
+    },
+    {
+      "year": 6,
+      "unit": 14,
+      "title": "Toleransi Mengeratkan Hubungan Negara",
+      "printed": [
+        129,
+        137
+      ],
+      "pdf": [
+        138,
+        146
+      ],
+      "sourceDriveId": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+      "additionalEvidence": "Earlier source audit: audits/pendidikan_moral_y6_unit14_verified_20261104.md; pages 138-147 rendered directly from textbook PDF.",
+      "phases": [
+        {
+          "phase": 1,
+          "pages": [
+            129,
+            131
+          ],
+          "pdf": [
+            138,
+            140
+          ],
+          "goal": "Murid menyatakan dua amalan toleransi dan menghuraikan dua kepentingannya berdasarkan situasi buku teks.",
+          "a": "Guru membacakan kisah Bah Eton menerima Gonzales dengan terbuka di m/s 129–130. Murid mengenal pasti contoh menerima kepelbagaian serta tindakan bertolak ansur.",
+          "b": "Murid meneliti situasi berkongsi sumber air dalam krisis pada m/s 131, lalu menerangkan dua kepentingan toleransi terhadap keharmonian dan keselamatan.",
+          "e": "Dua amalan nyata serta dua kepentingan dengan bukti kisah dan alasan; guru menyemak respons individu."
+        },
+        {
+          "phase": 2,
+          "pages": [
+            132,
+            134
+          ],
+          "pdf": [
+            141,
+            143
+          ],
+          "goal": "Murid merumuskan dua kesan mengabaikan toleransi dan mengekspresikan satu perasaan beralasan.",
+          "a": "Guru memaparkan jadual tindakan–kepentingan–perasaan pada m/s 132 dan situasi perkongsian kemudahan. Murid mengaitkan tindakan bertolak ansur dengan hasil.",
+          "b": "Murid membincangkan situasi bagasi di lapangan terbang dan konflik kumpulan pada m/s 133–134, menulis dua kesan jika toleransi tidak diamalkan serta perasaan dengan sebab.",
+          "e": "Dua kesan berpunca daripada tindakan, satu ayat perasaan dengan alasan dan satu pilihan penyelesaian konflik."
+        },
+        {
+          "phase": 3,
+          "pages": [
+            135,
+            137
+          ],
+          "pdf": [
+            144,
+            146
+          ],
+          "goal": "Murid melaksanakan dua tindakan toleransi semasa aktiviti berpasukan dan menilai perbuatannya dengan refleksi.",
+          "a": "Guru menunjukkan contoh perbincangan menyelesaikan perbezaan pandangan dan poster toleransi pada m/s 135–136. Murid merancang dua tindakan yang boleh diperhatikan.",
+          "b": "Murid melaksanakan simulasi perbincangan kumpulan yang mempunyai pandangan berbeza dan melengkapkan Borang Amalan Toleransi m/s 137 sebagai refleksi kendiri.",
+          "e": "Pemerhatian dua tindakan toleransi, satu cadangan pembaikan dan satu refleksi beralasan; lakonan bukan bukti amalan rumah."
+        }
+      ]
     }
   ]
 }
