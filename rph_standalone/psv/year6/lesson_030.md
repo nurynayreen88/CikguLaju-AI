@@ -1,33 +1,30 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 030
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Unit RPT 2026:** Unit 9 — Wau Bulan Sirih Pinang  
+**Aktiviti/Tajuk:** Perkembangan idea  
+**SK:** 2.1; 3.2  
+**SP:** 2.1.3; 3.2.1  
+**Buku Teks:** ms 68–75 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**BBM:** kad ringan, kertas warna, gam, pita, tali dan lidi kertas tumpul  
+**Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
-**Bidang:** Kraf + Binaan  
-**Jenis/Tajuk:** Permainan Warisan — Model Permainan Tradisional  
-**Fokus:** Folio, kemasan dan apresiasi  
-**SK:** 3.1; 3.2; 4.1  
-**SP:** 3.1.1; 3.2.3; 4.1.1  
-**Teknik:** binaan kertas dan corak  
-**Bahasa seni visual:** bentuk, imbangan, kontra  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kadbod, kertas, pita, gam
+## Objektif dan kriteria kejayaan
+Menyenaraikan dua fungsi model wau bulan berhias corak, untuk pameran kelas dan menghasilkan peta idea berdasarkan bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
-## Objektif pembelajaran
-Murid dapat menyiapkan model permainan tradisional tumpul, menyusun folio dan memberi ulasan kritis terhadap nilai gunaan dan estetik.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perkembangan idea** dalam tema **Wau Bulan Sirih Pinang**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Model Permainan Tradisional. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru membandingkan contoh projek bertema perkembangan idea dan mengenal pasti fungsi serta elemen bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan. Murid menyenaraikan pengguna, bahan dan hasil yang hendak dicapai.
 
-**Aktiviti 1 (15 minit) — Folio, kemasan dan apresiasi:** Guru membimbing semakan kriteria bentuk, imbangan, kontra, fungsi, kemasan serta dokumentasi hasil.
+**Aktiviti 2 (25 minit) — Amali:** Murid mengumpul dua rujukan bentuk, melakar peta idea model wau bulan berhias corak, untuk pameran kelas dan mencatat media, teknik, tujuan serta langkah keselamatan sebelum memilih idea utama.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid memperkemas produk, mengambil gambar/melakar hasil akhir, menyusun folio kajian-sampel-lakaran-hasil dan membuat apresiasi lisan terhadap dua bidang seni yang digabungkan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Peta idea, dua inspirasi rujukan, dua fungsi dan senarai media yang berkaitan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
-**Pengukuhan/Pentaksiran (10 minit):** Produk akhir, gambar hasil, folio berurutan dan ulasan kritis berasaskan bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
+**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
 
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
+**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.

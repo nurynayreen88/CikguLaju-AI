@@ -1,33 +1,30 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 033
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Menggambar + Corak  
-**Jenis/Tajuk:** Panel Kelas — Mural Mini Perpaduan  
-**Fokus:** Lakaran fungsi produk  
+**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Unit RPT 2026:** Unit 9 — Wau Bulan Sirih Pinang  
+**Aktiviti/Tajuk:** Kemasan karya  
 **SK:** 3.2  
-**SP:** 3.2.1  
-**Teknik:** catan, kolaj dan cetakan  
-**Bahasa seni visual:** warna, harmoni, kesatuan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kad manila, warna, kertas warna
+**SP:** 3.2.2  
+**Buku Teks:** ms 68–75 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**BBM:** kad ringan, kertas warna, gam, pita, tali dan lidi kertas tumpul  
+**Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
-## Objektif pembelajaran
-Murid dapat membina dua lakaran Mural Mini Perpaduan berlabel fungsi, media dan komposisi.
+## Objektif dan kriteria kejayaan
+Memperbaiki dua ciri model wau bulan berhias corak, untuk pameran kelas berdasarkan ujian fungsi dan bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Mural Mini Perpaduan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Kemasan karya** dalam tema **Wau Bulan Sirih Pinang**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-**Aktiviti 1 (15 minit) — Lakaran fungsi produk:** Guru menunjukkan contoh lakaran yang membezakan bahagian hadapan, latar dan fungsi produk.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menetapkan kriteria kemasan: kestabilan, ketepatan motif, kebersihan dan fungsi. Murid menguji karya serta menandakan dua kelemahan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menyediakan dua lakaran alternatif panel seni kolaboratif, menulis media dan teknik, memilih satu berdasarkan warna, harmoni, kesatuan, lalu membentangkan pelan kerja ringkas.
+**Aktiviti 2 (25 minit) — Amali:** Murid membaiki model wau bulan berhias corak, untuk pameran kelas, memantapkan bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan, menyimpan foto sebelum/selepas dan membuat semakan rakan menggunakan dua kriteria.
 
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran berlabel, alasan pilihan dan turutan kerja selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Dua pembetulan ketara, bukti semakan, dan penjelasan sebab perubahan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
+**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
+**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
 
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
+**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Rujukan:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.

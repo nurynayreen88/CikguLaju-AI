@@ -1,33 +1,30 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 036
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Unit RPT 2026:** Unit 10 — Beg Batik Rekaan  
+**Aktiviti/Tajuk:** Lakaran reka bentuk  
+**SK:** 3.2  
+**SP:** 3.2.1  
+**Buku Teks:** ms 76–87 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**BBM:** kertas tebal atau kanvas lembut, warna air, span, gam dan templat beg  
+**Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
-**Bidang:** Binaan + Menggambar  
-**Jenis/Tajuk:** Maskot Sekolah — Maskot Mesra Alam  
-**Fokus:** Kajian bahasa seni  
-**SK:** 1.1  
-**SP:** 1.1.1; 1.1.2; 1.1.3  
-**Teknik:** asemblaj, lukisan dan catan  
-**Bahasa seni visual:** bentuk, penegasan, imbangan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak, kertas, cat, gam
+## Objektif dan kriteria kejayaan
+Menyiapkan dua lakaran berlabel untuk rekaan beg bercorak batik melalui media selamat tanpa lilin panas dan memilih satu berdasarkan susunan motif batik, kontra warna, ritma dan kegunaan beg. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
-## Objektif pembelajaran
-Murid dapat mengenal pasti tiga ciri seni dan dua bidang gabungan untuk Maskot Mesra Alam.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Lakaran reka bentuk** dalam tema **Beg Batik Rekaan**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Maskot Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan lakaran komposisi dan cara melabel fungsi, bahan serta bahagian utama rekaan beg bercorak batik melalui media selamat tanpa lilin panas. Murid mengenal pasti isu imbangan dan ruang.
 
-**Aktiviti 1 (15 minit) — Kajian bahasa seni:** Guru memaparkan contoh maskot sekolah dan membincangkan fungsi hasil, bentuk, penegasan, imbangan serta gabungan bidang. Murid mengelaskan unsur seni dan prinsip rekaan.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar dua pilihan susun atur bertema susunan motif batik, kontra warna, ritma dan kegunaan beg, menilai kekuatan dan kelemahannya lalu memilih satu serta menyusun pelan kerja ringkas.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid merancang peta idea Maskot Mesra Alam, melukis kaitan antara dua bidang seni, pengguna sasaran serta fungsi produk; bahan kajian ditampal dalam folio.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Dua lakaran berlabel, keputusan pilihan, dan urutan kerja yang boleh dilaksanakan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
-**Pengukuhan/Pentaksiran (10 minit):** Peta idea mempunyai dua bidang, tiga ciri seni serta satu fungsi yang munasabah. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
+**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
 
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
+**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.

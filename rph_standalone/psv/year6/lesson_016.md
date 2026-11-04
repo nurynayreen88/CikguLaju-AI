@@ -1,33 +1,30 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 016
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Unit RPT 2026:** Unit 5 — Cik Cilik Koi  
+**Aktiviti/Tajuk:** Penghasilan karya  
+**SK:** 3.2  
+**SP:** 3.2.2  
+**Buku Teks:** ms 34–45 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**BBM:** kertas warna, gam, cat air dan kad berlatar  
+**Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
-**Bidang:** Binaan + Corak  
-**Jenis/Tajuk:** Diorama Warisan — Kampung Warisan  
-**Fokus:** Kajian bahasa seni  
-**SK:** 1.1  
-**SP:** 1.1.1; 1.1.2; 1.1.3  
-**Teknik:** binaan, kolaj dan stensilan  
-**Bahasa seni visual:** ruang, jalinan, harmoni  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak, kertas, gam, doh
+## Objektif dan kriteria kejayaan
+Menghasilkan komponen utama karya ikan koi gabungan catan, lukisan dan kolaj dengan dua teknik/bidang seni dan langkah yang selamat. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
-## Objektif pembelajaran
-Murid dapat mengenal pasti tiga ciri seni dan dua bidang gabungan untuk Kampung Warisan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Penghasilan karya** dalam tema **Cik Cilik Koi**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kampung Warisan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menyemak lakaran terdahulu dan mendemonstrasi gabungan media kertas warna, gam, cat air dan kad berlatar. Murid menyediakan ruang serta stesen alat secara berkumpulan.
 
-**Aktiviti 1 (15 minit) — Kajian bahasa seni:** Guru memaparkan contoh diorama warisan dan membincangkan fungsi hasil, ruang, jalinan, harmoni serta gabungan bidang. Murid mengelaskan unsur seni dan prinsip rekaan.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan karya ikan koi gabungan catan, lukisan dan kolaj dengan menekankan gerakan ikan koi, sisik bercorak dan ruang air kolam, mencantum komponen secara selamat, menguji ketahanan atau kejelasan bentuk dan membaiki bahagian yang belum kemas.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid merancang peta idea Kampung Warisan, melukis kaitan antara dua bidang seni, pengguna sasaran serta fungsi produk; bahan kajian ditampal dalam folio.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Produk menunjukkan dua teknik, dua ciri bahasa seni, fungsi/aspek visual yang jelas serta amalan keselamatan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
-**Pengukuhan/Pentaksiran (10 minit):** Peta idea mempunyai dua bidang, tiga ciri seni serta satu fungsi yang munasabah. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
+**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
 
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
+**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.

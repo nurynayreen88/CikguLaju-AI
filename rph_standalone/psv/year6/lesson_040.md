@@ -1,33 +1,30 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 040
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Unit RPT 2026:** Projek Seni Visual  
+**Aktiviti/Tajuk:** Perancangan pameran akhir tahun  
+**SK:** 5.1  
+**SP:** 5.1.1  
+**Buku Teks:** projek pameran; tiada halaman khusus  
+**BBM:** koleksi karya, kapsyen, pita boleh tanggal, senarai semak  
+**Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
-**Bidang:** Binaan + Menggambar  
-**Jenis/Tajuk:** Maskot Sekolah — Maskot Mesra Alam  
-**Fokus:** Folio, kemasan dan apresiasi  
-**SK:** 3.1; 3.2; 4.1  
-**SP:** 3.1.1; 3.2.3; 4.1.1  
-**Teknik:** asemblaj, lukisan dan catan  
-**Bahasa seni visual:** bentuk, penegasan, imbangan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak, kertas, cat, gam
+## Objektif dan kriteria kejayaan
+Menyediakan pelan pameran kumpulan berserta senarai karya, kapsyen dan pengagihan tugas. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
-## Objektif pembelajaran
-Murid dapat menyiapkan model maskot kempen, menyusun folio dan memberi ulasan kritis terhadap nilai gunaan dan estetik.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perancangan pameran akhir tahun** dalam tema **Projek Seni Visual**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Maskot Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru memperlihatkan contoh sudut pameran kecil dengan laluan yang selamat; murid memilih karya yang sesuai mengikut tema.
 
-**Aktiviti 1 (15 minit) — Folio, kemasan dan apresiasi:** Guru membimbing semakan kriteria bentuk, penegasan, imbangan, fungsi, kemasan serta dokumentasi hasil.
+**Aktiviti 2 (25 minit) — Amali:** Murid berbincang untuk membahagi tugas, mengumpulkan karya dan folio, menghasilkan kapsyen tajuk-media-teknik serta melakar susun atur galeri.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid memperkemas produk, mengambil gambar/melakar hasil akhir, menyusun folio kajian-sampel-lakaran-hasil dan membuat apresiasi lisan terhadap dua bidang seni yang digabungkan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Pelan pameran, kapsyen, senarai karya dan catatan peranan ahli kumpulan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
-**Pengukuhan/Pentaksiran (10 minit):** Produk akhir, gambar hasil, folio berurutan dan ulasan kritis berasaskan bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
+**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
 
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
+**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.

@@ -1,33 +1,30 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 042
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Projek Seni Visual  
-**Jenis/Tajuk:** Pameran Mini — Pameran dan Apresiasi  
-**Fokus:** Pelaksanaan pameran  
+**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Unit RPT 2026:** Projek Seni Visual  
+**Aktiviti/Tajuk:** Refleksi dan pengurusan selepas pameran akhir tahun  
 **SK:** 5.1  
-**SP:** 5.1.2; 5.1.3; 5.1.4; 5.1.5  
-**Teknik:** pengurusan pameran  
-**Bahasa seni visual:** bahasa seni visual, teknik dan proses  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** karya murid, kapsyen, pita mesra permukaan, senarai semak
+**SP:** 5.1.5  
+**Buku Teks:** projek pameran; tiada halaman khusus  
+**BBM:** koleksi karya, kapsyen, pita boleh tanggal, senarai semak  
+**Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
-## Objektif pembelajaran
-Murid dapat mempamerkan karya, menjelaskan seni visual pada satu karya dan menjaga kebersihan ruang pameran.
+## Objektif dan kriteria kejayaan
+Menyusun semula ruang pameran, memulangkan alat dan merekod dua penambahbaikan untuk projek seni berikutnya. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Pameran dan Apresiasi. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Refleksi dan pengurusan selepas pameran akhir tahun** dalam tema **Projek Seni Visual**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-**Aktiviti 1 (15 minit) — Pelaksanaan pameran:** Guru menerangkan aturan bergerak di galeri, menjaga karya dan etika ulasan sopan.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru membimbing audit keselamatan karya serta senarai alatan; murid merekod karya dipinjam dan bahan yang perlu disimpan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid memasang hasil karya dengan selamat, menyampaikan apresiasi ringkas karya sendiri serta rakan, merekod ulasan dan mengemas ruang pameran selepas aktiviti.
+**Aktiviti 2 (25 minit) — Amali:** Murid menanggalkan pameran secara selamat, membersihkan ruang, memulangkan alat dan menulis dua refleksi mengenai perancangan, kreativiti atau kerjasama.
 
-**Pengukuhan/Pentaksiran (10 minit):** Bukti pameran, rekod apresiasi, penjagaan karya serta kebersihan ruang. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai alatan lengkap, ruang bersih dan dua catatan refleksi individu. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
+**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
+**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
 
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
+**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Rujukan:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
