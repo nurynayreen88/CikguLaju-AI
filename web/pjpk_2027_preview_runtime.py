@@ -1,9 +1,10 @@
-"""Admin-gated PJPK 2027 PREVIEW for the existing Telegram RPH flow.
+"""PJPK Tahun 2–6 2027 DRAF RPH in the regular Telegram lesson flow.
 
-Loads numbered Markdown sources from the staging manifest. The existing
+Loads numbered Markdown sources matched to the current 339-record RPT manifest. The existing
 class/date, RPH generation, Word/PDF renderer, access and credit gates stay
 responsible for delivery. Nothing is marked READY or written to a database.
-Disabled unless CIKGULAJU_PJPK_PREVIEW_ENABLED=1 in a controlled environment.
+The production WSGI explicitly enables this isolated bridge; the original
+RPH credit checks remain responsible for delivery.
 """
 from __future__ import annotations
 
@@ -14,7 +15,7 @@ from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = "audits/pjpk_2027_staging_manifest_20261104.json"
+MANIFEST = "rpt_2027/pjpk/pjpk_2027_rpt_manifest.json"
 FLAG = "CIKGULAJU_PJPK_PREVIEW_ENABLED"
 SUBJECTS = {"Pendidikan Jasmani": "pj", "Pendidikan Kesihatan": "pk"}
 MAXIMUM = {"pj": {2: 37, 3: 38, 4: 34, 5: 33, 6: 34},
@@ -23,10 +24,6 @@ PDP_RE = re.compile(r"^lesson_(\d{3})\.md$")
 MARKDOWN_LABEL = re.compile(r"^\*\*([^*\n]+?):\*\*\s*(.*?)\s*$")
 CODE_SK = re.compile(r"(?<!\d)(\d+\.\d+)(?![\d.])")
 CODE_SP = re.compile(r"(?<!\d)(\d+\.\d+\.\d+)(?![\d.])")
-RELEASE_FIELDS = ("production_ready", "rpt_2027_exact_slot_verified",
-                  "textbook_page_verified", "pedagogical_qa_verified",
-                  "word_a4_verified", "telegram_runtime_verified",
-                  "web_runtime_verified")
 
 
 def _year(value):
@@ -42,34 +39,41 @@ def _record_path(year, short_subject, number):
 
 @lru_cache(maxsize=4)
 def _manifest(root):
+    """Fail closed unless the current 2027 RPT contains exactly 339 DRAF PdP."""
     try:
         data = json.loads((Path(root) / MANIFEST).read_text(encoding="utf-8"))
-        if data.get("schema_version") != 2 or len(data.get("records", ())) != 400:
+        if (data.get("year") != 2027 or data.get("ready") is not False
+                or len(data.get("records", ())) != 339):
             return {}
         records = {}
+        counts = {(year, short): 0 for year in range(2, 7) for short in ("pj", "pk")}
         for entry in data["records"]:
-            path = entry.get("path")
-            match = re.fullmatch(
-                r"rph_standalone/pjpk/year([2-6])_(pj|pk)/lesson_(\d{3})\.md",
-                str(path or ""))
-            if not match or entry.get("status") != "DRAFT_NOT_APPROVED":
-                continue
-            if any(entry.get(field) is not False for field in RELEASE_FIELDS):
-                continue
-            year, subject, number = int(match[1]), match[2], int(match[3])
-            if not 1 <= number <= MAXIMUM[subject][year]:
-                continue
-            if year == 6 and subject == "pj" and number == 33:
-                continue  # conflicting RPT / DSKP: never offer it
-            key = (year, subject, number)
+            year, subject, number = entry["year"], entry["subject"], entry["pdp"]
+            if type(year) is not int or type(number) is not int or subject not in ("PJ", "PK"):
+                return {}
+            short = subject.lower()
+            if year not in MAXIMUM[short] or not 1 <= number <= MAXIMUM[short][year]:
+                return {}
+            if entry.get("status") != "DRAF_CADANGAN" or entry.get("ready") is not False:
+                return {}
+            sk, sp = entry.get("sk"), entry.get("sp")
+            if (not isinstance(sk, list) or not isinstance(sp, list)
+                    or not sk or not sp or
+                    any(code.rsplit(".", 1)[0] not in sk for code in sp)):
+                return {}
+            key = (year, short, number)
             if key in records:
                 return {}
-            records[key] = path
-        # 176 PJ numbered minus blocked PdP033; all 163 PK numbered.
-        if len(records) != 338:
+            records[key] = {
+                "path": _record_path(year, short, number),
+                "title": entry["title"], "sk": sk, "sp": sp,
+            }
+            counts[(year, short)] += 1
+        if any(counts[(year, short)] != MAXIMUM[short][year]
+               for year in range(2, 7) for short in ("pj", "pk")):
             return {}
         return records
-    except (OSError, ValueError, KeyError, TypeError):
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
         return {}
 
 
@@ -78,7 +82,8 @@ def _source(year, short_subject, number, *, root=ROOT):
         return None
     root = Path(root).resolve()
     path = _record_path(year, short_subject, number)
-    if _manifest(str(root)).get((year, short_subject, number)) != path:
+    record = _manifest(str(root)).get((year, short_subject, number))
+    if record is None or record["path"] != path:
         return None
     try:
         text = (root / path).read_text(encoding="utf-8")
@@ -99,7 +104,8 @@ def _source(year, short_subject, number, *, root=ROOT):
         return None
     sk = CODE_SK.findall(labels.get("sk", ""))
     sp = CODE_SP.findall(labels.get("sp", ""))
-    if not sk or not sp or any(code.rsplit(".", 1)[0] not in sk for code in sp):
+    if (not sk or not sp or any(code.rsplit(".", 1)[0] not in sk for code in sp)
+            or sk != record["sk"] or sp != record["sp"]):
         return None
     activities = [value for key, value in labels.items()
                   if key.startswith("aktiviti ") and re.match(r"aktiviti [12]\b", key)]
@@ -110,7 +116,7 @@ def _source(year, short_subject, number, *, root=ROOT):
     if not all(required):
         return None
     title = labels.get("tajuk") or labels.get("unit/tajuk")
-    if not title:
+    if not title or title != record["title"]:
         return None
     return {"year": year, "subject": short_subject, "lesson": number,
             "title": title, "sk": sk, "sp": sp, "fields": labels,
@@ -157,7 +163,7 @@ def adapt_rows(state, rows, *, root=ROOT):
     result.update({
         "MATA PELAJARAN": state["subject"],
         "TAHUN/TINGKATAN": "Tahun %d" % source["year"],
-        "TAJUK": source["title"] + " [PRATONTON DRAF]",
+        "TAJUK": source["title"] + " [DRAF CADANGAN — SEMAK GURU]",
         "STANDARD KANDUNGAN": ", ".join(source["sk"]),
         "STANDARD PEMBELAJARAN": ", ".join(source["sp"]),
         "OBJEKTIF PEMBELAJARAN": source["objective"],
@@ -178,12 +184,12 @@ def adapt_rows(state, rows, *, root=ROOT):
 
 
 def install(ns, *, enabled=None, root=ROOT):
-    """Install only in an explicitly enabled staging runtime, admin preview."""
+    """Install on the requested runtime; do not mutate users, credits or databases."""
     if enabled is None:
         enabled = os.environ.get(FLAG) == "1"
     if not enabled or ns.get("CIKGULAJU_PJPK_2027_PREVIEW_INSTALLED"):
         return bool(ns.get("CIKGULAJU_PJPK_2027_PREVIEW_INSTALLED"))
-    required = ("callback", "send", "_rph_rows", "_lesson_to_class_v2439", "_is_admin")
+    required = ("callback", "send", "_rph_rows", "_lesson_to_class_v2439")
     if any(not callable(ns.get(key)) for key in required):
         return False
     if not isinstance(ns.get("state"), dict) or not _manifest(str(Path(root).resolve())):
@@ -191,16 +197,13 @@ def install(ns, *, enabled=None, root=ROOT):
 
     previous_cb, previous_rows = ns["callback"], ns["_rph_rows"]
     send, state = ns["send"], ns["state"]
-    is_admin = ns["_is_admin"]
 
     def preview_menu(cid, page=0):
-        if not is_admin(cid):
-            return previous_cb(cid, "choose_grade")
         st = state.setdefault(cid, {})
         year, subject = _year(st.get("year")), st.get("subject")
         lessons = list_lessons(year, subject, root=root)
         if not lessons:
-            return send(cid, "PJPK belum mempunyai PdP bernombor yang boleh dipratonton untuk pilihan ini.",
+            return send(cid, "RPH PJPK DRAF belum tersedia untuk pilihan ini.",
                         [[{"text": "⬅️ Tukar subjek", "callback_data": "choose_grade"}]])
         page = max(0, int(page))
         start = page * 10
@@ -217,23 +220,21 @@ def install(ns, *, enabled=None, root=ROOT):
         if navigation:
             keyboard.append(navigation)
         keyboard.append([{"text": "⬅️ Tukar Subjek", "callback_data": "choose_grade"}])
-        return send(cid, "🧪 <b>PRATONTON PJPK • Tahun %d</b>\n\n"
-                    "Pilih PdP untuk menguji aliran RPH Word/PDF biasa. "
-                    "Bahan masih DRAF, belum READY." % year, keyboard)
+        return send(cid, "📘 <b>RPH PJPK 2027 • Tahun %d</b>\n\n"
+                    "Pilih PdP untuk menyediakan RPH melalui aliran kelas biasa. "
+                    "Bahan masih DRAF CADANGAN dan perlu disemak guru." % year, keyboard)
 
     def callback(cid, data):
         value = str(data or "")
         st = state.setdefault(cid, {})
         if value in ("sub_Pendidikan Jasmani", "sub_Pendidikan Kesihatan"):
-            if not is_admin(cid):
-                return previous_cb(cid, data)  # ordinary users retain old safe gate
             st["subject"] = value[4:]
             st.pop("_pjpk_2027_preview_selection", None)
             if _year(st.get("year")):
                 return preview_menu(cid)
             return previous_cb(cid, data)
         if value.startswith("pjpk27page|") or value.startswith("pjpk27pick|"):
-            if not is_admin(cid) or not _year(st.get("year")) or st.get("subject") not in SUBJECTS:
+            if not _year(st.get("year")) or st.get("subject") not in SUBJECTS:
                 return send(cid, "Pilihan PdP tidak sah.")
             if value.startswith("pjpk27page|"):
                 raw = value.partition("|")[2]
@@ -276,7 +277,7 @@ def install(ns, *, enabled=None, root=ROOT):
         try:
             return adapt_rows(state_value, original, root=root)
         except Exception as exc:
-            print("PJPK preview RPH source fallback:", repr(exc), flush=True)
+            print("PJPK draft RPH source fallback:", repr(exc), flush=True)
             return original
 
     ns["callback"] = callback
