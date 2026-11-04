@@ -42,4 +42,29 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON
 GRANT USAGE, SELECT ON SEQUENCE public.bot_payment_requests_id_seq TO service_role;
 GRANT USAGE, SELECT ON SEQUENCE public.bot_user_feedback_id_seq TO service_role;
 
+-- Exact counts stay database-side; never truncate at PostgREST's row limit.
+CREATE OR REPLACE FUNCTION public.bot_payment_status_counts()
+RETURNS jsonb LANGUAGE sql STABLE SECURITY INVOKER SET search_path = ''
+AS $
+    SELECT jsonb_build_object(
+        'pending', COUNT(*) FILTER(WHERE status='pending'),
+        'approved', COUNT(*) FILTER(WHERE status='approved'),
+        'rejected', COUNT(*) FILTER(WHERE status='rejected')
+    ) FROM public.bot_payment_requests
+$;
+CREATE OR REPLACE FUNCTION public.bot_feedback_status_counts()
+RETURNS jsonb LANGUAGE sql STABLE SECURITY INVOKER SET search_path = ''
+AS $
+    SELECT jsonb_build_object(
+        'baru', COUNT(*) FILTER(WHERE status='baru'),
+        'dibaca', COUNT(*) FILTER(WHERE status='dibaca'),
+        'selesai', COUNT(*) FILTER(WHERE status='selesai'),
+        'total', COUNT(*)
+    ) FROM public.bot_user_feedback
+$;
+REVOKE ALL ON FUNCTION public.bot_payment_status_counts() FROM PUBLIC, anon, authenticated;
+REVOKE ALL ON FUNCTION public.bot_feedback_status_counts() FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.bot_payment_status_counts() TO service_role;
+GRANT EXECUTE ON FUNCTION public.bot_feedback_status_counts() TO service_role;
+
 COMMIT;
