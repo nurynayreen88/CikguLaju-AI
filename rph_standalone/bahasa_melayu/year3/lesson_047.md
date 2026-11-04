@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 047
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 047
 
 **ID:** BM3-P047  
 **Tema/Unit:** Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif  
@@ -32,5 +32,5 @@
 **Murid:** Menyatakan satu perkara yang dipelajari.
 
 **Status QA:** DRAF — telah dibandingkan dengan sumber BT1/BA1, tetapi belum mendapat status READY.  
-**Nota sumber:** Pemulihan, pengayaan, penilaian atau Bacaan Luas dilabel sebagai aktiviti modular; bukan Lesson buku teks baru.  
+**Nota sumber:** Pemulihan, pengayaan, penilaian atau Bacaan Luas dilabel sebagai aktiviti modular; bukan PdP buku teks baru.  
 **Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.

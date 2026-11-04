@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 045
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 045
 
 **ID:** BM3-P045  
 **Tema/Unit:** Kesihatan dan Kebersihan; U6: Minda Positif Badan Aktif  
@@ -21,7 +21,7 @@
 
 ## Aktiviti 2 — Aplikasi (20 minit)
 **Guru:** Membimbing aktiviti berpasangan dan memerhatikan ketepatan jawapan murid.
-**Murid:** Membina lima ayat jemputan sendiri lalu menyemak perbezaannya dengan hasil Lesson 042.
+**Murid:** Membina lima ayat jemputan sendiri lalu menyemak perbezaannya dengan hasil PdP 042.
 
 ## Pengukuhan dan penilaian PBD (15 minit)
 **Guru:** Menyemak sekurang-kurangnya empat ayat sendiri gramatis; sesi lanjutan bukan kandungan baru daripada buku; merekod penguasaan murid melalui lembaran atau respons lisan.
