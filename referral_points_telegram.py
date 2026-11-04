@@ -9,11 +9,16 @@ import re
 import hmac
 import secrets
 from urllib.parse import quote
+from decimal import Decimal
 
 _START = re.compile(r"^/start(?:@\\w+)?\\s+rp_([A-Za-z0-9_-]{16,48})$")
 _OLD = re.compile(r"^/start(?:@\\w+)?\\s+ref_-?\\d+$")
 _ADD = re.compile(r"^/refadd\\s+(\\d+)$")
 _DEL = re.compile(r"^/refdel\\s+(\\d+)$")
+
+
+def format_points(value):
+    return format(Decimal(str(value)).quantize(Decimal('0.01')).normalize(), 'f')
 
 
 def enabled():
@@ -51,7 +56,7 @@ def install(ns):
                      "&select=referred_user_id") or []
         events = sb("GET", f"referral_point_events?referrer_user_id=eq.{int(uid)}"
                      "&select=points_delta") or []
-        return len(signups), len(events), sum(int(e["points_delta"]) for e in events)
+        return len(signups), len(events), sum((Decimal(str(e["points_delta"])) for e in events), Decimal("0"))
 
     def link_for(uid, code):
         username = str(ns["_bot_username_v25267"]() or "").strip().lstrip("@")
@@ -70,7 +75,7 @@ def install(ns):
             f"🔗 <code>{link}</code>\\n\\n"
             f"👥 Pendaftaran melalui pautan: <b>{total}</b>\\n"
             f"✅ Bayaran layak disahkan: <b>{paid}</b>\\n"
-            f"⭐ Jumlah mata: <b>{points}</b>\\n\\n"
+            f"⭐ Jumlah mata: <b>{format_points(points)}</b>\\n\\n"
             "Mata hanya diberikan selepas bayaran disahkan admin. "
             "Mata bukan kredit RPH dan tidak boleh ditebus sehingga program dibuka.")
 
@@ -138,7 +143,7 @@ def install(ns):
             })
             award = result[0] if isinstance(result, list) and result else result or {}
             if award.get("awarded"):
-                points = int(award["points"])
+                points = format_points(award["points"])
                 send(admin, f"⭐ Referral: +{points} mata direkodkan "
                             f"untuk bayaran pengguna {payer}.")
                 try:
