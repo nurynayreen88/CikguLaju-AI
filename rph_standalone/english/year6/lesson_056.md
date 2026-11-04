@@ -7,32 +7,32 @@
 **Language focus:** Tenses review – present simple and present perfect  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.53; TB pp.88–89; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify the main idea of two longer simple spoken texts or extracts about different occupations with little support.  
-**PBD evidence:** Two accurate gist statements with an appropriate supporting clue.
+**Learning objective:** Recognise the main idea of a PB p.53 interview about Jean's work and infer two unfamiliar job words from the listening context.  
+**PBD evidence:** Correct main-idea choice and two word-in-context inferences (Listening 1.2.1/1.3.1), plus sequenced details from PB p.53 Activities 3–4.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review two job/personality words with a quick guessing game.  
+**Pupils:** Name a job and one fitting personal quality.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach jobs, places of work, skills; display occupation picture cards and ask pupils to predict what they may hear. Emphasise the language focus: Tenses review – present simple and present perfect.  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.88 Activity 1; show PB p.53 picture but delay boxed vocabulary.  
+**Pupils:** Predict the subject and one likely feature of Jean's work.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Read or play a verified passage twice and contrast its main message with distractor ideas.  
-**Pupils:** Identify the main idea for each of two listening extracts and give one supporting detail.
+**Teacher:** Use verified audio or accurate read-aloud of TB pp.88–89 Activity 2; ask which is the world's best job.  
+**Pupils:** Listen for Jean's opinion, explain the gist and infer two boxed words from context.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about different occupations, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Split pairs between PB p.53 Activities 3 and 4; use a supported replay then exchange solutions.  
+**Pupils:** Sequence work steps or answer detail questions and teach findings to the other group.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check gist, two contextual word meanings and one correctly ordered job step.  
+**Pupils:** Identify the clue for a word and correct one listening response.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use TB p.88 Physical spelling to review job vocabulary.  
+**Pupils:** Spell one key job word and state Jean's opinion.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

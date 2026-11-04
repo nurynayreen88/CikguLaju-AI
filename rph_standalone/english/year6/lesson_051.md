@@ -7,32 +7,32 @@
 **Language focus:** Statements, negatives & questions in present perfect + yet and already. (e.g. Have you…yet? / I haven’t… yet. / I’ve already…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.52; TB pp.86–87; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about different occupations with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Identify three heard details about school-day tasks and recognise yet/already in the PB p.52 dialogue; ask and answer two present-perfect questions.  
+**PBD evidence:** Three heard details, two correctly recognised uses of yet/already (Listening 1.2.2), and responses to two supported spoken questions (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use a short letter scramble to discover yet and already.  
+**Pupils:** Build two relevant words from the scrambled letters.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach jobs, places of work, skills; display occupation picture cards and ask pupils to predict what they may hear. Emphasise the language focus: Statements, negatives & questions in present perfect + yet and already. (e.g. Have you…yet? / I….  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Introduce PB p.52 school-task vocabulary; preview TB p.86 Activity 1 with books closed.  
+**Pupils:** Predict two school-day tasks that might be mentioned.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use verified audio or accurately read the printed PB p.52 dialogue; pause when yet/already occurs.  
+**Pupils:** Listen for details with books closed, raise a hand on yet/already and check two spoken details.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about different occupations, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide TB pp.86–87 Activities 2–4: practise yet/already, plan first-day tasks and ask questions.  
+**Pupils:** Write two correct example sentences and interview a partner about three tasks at a new school.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check heard details and forms, distinguishing a past action from a task not done yet.  
+**Pupils:** Show two listening answers and correct one present-perfect form.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.87 Cooler: It’s 8 o’clock to review target vocabulary.  
+**Pupils:** Ask one relevant Have you ... yet? question and answer with already or not yet.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

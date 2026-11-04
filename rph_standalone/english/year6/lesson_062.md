@@ -7,32 +7,32 @@
 **Language focus:** Functional language (polite language, e.g. I’m afraid I…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.56; TB pp.93  
-**Learning objective:** Sustain a paired exchange about different occupations by checking understanding at least 3 times.  
-**PBD evidence:** Communication checklist: three clarification checks and relevant follow-up responses.
+**Learning objective:** Sustain a helpful-robot role-play using three clarification phrases and answer two questions about a model dialogue.  
+**PBD evidence:** Three purposeful clarification checks (Speaking 2.2.1) and two understood dialogue details (Reading 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Rearrange the given words into a polite apology.  
+**Pupils:** Read 'I'm sorry, I haven't had time.' correctly.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What does a person in this job do?”, drawing on Functional language (polite language, e.g. I’m afraid I…).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.93 Communication to model 'Do you mean...?'  
+**Pupils:** Explain when a clarification phrase helps the listener.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model clarification moves such as checking what the speaker means or requesting repetition.  
-**Pupils:** Exchange information in pairs; use at least three checking-understanding questions and accurate responses.
+**Teacher:** Guide PB p.56 Activity 4 and a dialogue-gap worksheet.  
+**Pupils:** Complete polite lines and act out Robert's dialogue.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Ask pupils to design a helpful robot and practise a comparable dialogue.  
+**Pupils:** Draw, name and present a robot using three checks for understanding.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check two dialogue details and three appropriate communication checks.  
+**Pupils:** Improve one unclear question and answer.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite a volunteer robot dialogue.  
+**Pupils:** Give one positive comment on a polite exchange.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

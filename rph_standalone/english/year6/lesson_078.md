@@ -7,32 +7,32 @@
 **Language focus:** Functional language – checking understanding (e.g. Can I check something, please?): getting around (e.g. Could I have two return tickets, please?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.68; TB pp.110–111  
-**Learning objective:** Sustain a paired exchange about a journey around town by checking understanding at least 3 times.  
-**PBD evidence:** Communication checklist: three clarification checks and relevant follow-up responses.
+**Learning objective:** Sustain a timetable-based travel role-play, using three clarification phrases and self-assessing responses to two heard questions.  
+**PBD evidence:** Three effective meaning checks (Speaking 2.2.1) and two supported spoken answers (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review ticket and timetable vocabulary with a short speaking game.  
+**Pupils:** Match two travel phrases to meanings.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How do we get there safely?”, drawing on Functional language – checking understanding (e.g. Can I check something, please?): getting around….  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Guide TB p.108 Learning to Learn using an English timetable.  
+**Pupils:** Find one departure time and one return option.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model clarification moves such as checking what the speaker means or requesting repetition.  
-**Pupils:** Exchange information in pairs; use at least three checking-understanding questions and accurate responses.
+**Teacher:** Act the SOW model dialogue and provide a gap-fill worksheet.  
+**Pupils:** Listen and complete the model lines, noting clarification phrases.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.110 Activity 3; have groups role-play tickets or timetables.  
+**Pupils:** Ask questions, check understanding three times and reply in character.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check clarification moves and two understood responses; invite self-assessment.  
+**Pupils:** Correct one unclear utterance and record a speaking improvement.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.111 Cooler Let's Go!  
+**Pupils:** Deliver a clear polite travel question and clarification.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

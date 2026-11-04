@@ -7,32 +7,32 @@
 **Language focus:** Modal verbs for expression rules and obligation: have to, need to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.65  
-**Learning objective:** Ask about and explain at least 3 rules or obligations relevant to a journey around town in a paired exchange.  
-**PBD evidence:** Three intelligible rule/obligation statements and at least one responsive question.
+**Learning objective:** Plan and present a sports rules poster with three need to/have to statements and reasons.  
+**PBD evidence:** Three intelligible obligation statements and a relevant oral explanation (Speaking 2.1.2/2.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall PB p.65 sports words.  
+**Pupils:** Name a sport and essential protective equipment.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How do we get there safely?”, drawing on Modal verbs for expression rules and obligation: have to, need to.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Use the PB p.65 skateboarder to demonstrate need to and have to.  
+**Pupils:** Give one example of a sports rule.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide three rule/obligation scenario cards and model must/have to according to the actual RPT lesson language.  
-**Pupils:** Ask about rules, explain three obligations and respond to one clarification question.
+**Teacher:** Assign group roles and guide planning of a short poster.  
+**Pupils:** Select a sport and write three obligation statements.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Support poster design with readable words and shared speaking.  
+**Pupils:** Add three rules, illustrate them and rehearse an explanation.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess the rules and individual group participation.  
+**Pupils:** Describe a rule and answer a question.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Organise the SOW gallery walk and fair-play discussion.  
+**Pupils:** Give one constructive comment on a peer poster.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

@@ -7,32 +7,32 @@
 **Language focus:** Future: will & won’t for predictions (e.g. I think I will be a doctor)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 43; job advert worksheet  
-**Learning objective:** Describe a future plan related to different occupations in at least 5 sequenced, understandable sentences.  
-**PBD evidence:** Five linked future-plan statements with relevant time references and 1 correction.
+**Learning objective:** Write four believable future job statements using will/won't and explain them orally; read a job advert and justify two multiple-choice answers.  
+**PBD evidence:** Four understandable future-job statements (Writing 4.2.2) and two text-backed answers to the advert (Reading 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Decode one of the previous lesson's messages about a future job.  
+**Pupils:** Read the code and say one positive or negative future prediction.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “What does a person in this job do?”. Highlight useful language: Future: will & won’t for predictions (e.g. I think I will be a doctor).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to different occupations.
+**Teacher:** Review jobs flashcards and model will/won't sentences about ambitions.  
+**Pupils:** Say what job they hope to do and why they might or might not do it.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model will/going to or future-time language only where it is in the source RPT; establish the order of a future plan.  
-**Pupils:** Create a 5-step plan including who, where, what and when, then draft the future account.
+**Teacher:** Ask pupils to write predictions and explain them to a partner; introduce job advert/application/interview steps.  
+**Pupils:** Write four future statements and discuss one realistic qualification.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Use the SOW computer-programmer job advert worksheet and PB p.43 advert as models.  
+**Pupils:** Read the advert, highlight key facts, complete MCQs and justify two answers.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess future form, coherency and evidence used to eliminate wrong advert options.  
+**Pupils:** Show two supported MCQ choices and revise one will/won't sentence.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask if a pupil applying for the advertised job would get it and why.  
+**Pupils:** Give one evidence-backed reason the job matches a candidate.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

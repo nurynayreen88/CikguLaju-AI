@@ -7,32 +7,32 @@
 **Language focus:** Tenses review; Adjectives to describe personality (e.g. brave); collocations with make and do (e.g. make a noise; do your homework).  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.55; TB pp.90  
-**Learning objective:** Write a detailed a job profile containing at least 5 relevant facts about a person or group linked to different occupations.  
-**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
+**Learning objective:** Write and revise a description of an interviewed family member or teacher, including personality adjectives and a checked use of make/do.  
+**PBD evidence:** An understandable interview-based first/second draft with a suitable personality sentence (Writing 4.2.1/4.2.4), plus one evidenced revision.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Revisit Lesson 54 Numbers about me in small groups.  
+**Pupils:** Ask a question about a classmate's significant number.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “What does a person in this job do?”. Highlight useful language: Tenses review; Adjectives to describe personality (e.g. brave); collocations with make and do….  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to different occupations.
+**Teacher:** Introduce brave, shy and outgoing; match suitable personality words with jobs using cards.  
+**Pupils:** Match two jobs with qualities and give one reason for each.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
-**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
+**Teacher:** Follow TB p.90 Activity 3 using pupils' Lesson 54 interview notes; offer the teacher model when notes are absent.  
+**Pupils:** Draft a short description of the interviewee and finish with a relevant personality sentence.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow TB p.90 Activity 4 self-assessment; revise a second draft in another colour.  
+**Pupils:** Check and improve two unclear sentences, then read the edited description to a group.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess facts from the interview, appropriate descriptive words and visible corrections.  
+**Pupils:** Show two edits and one correctly spelled job or adjective.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use TB p.90 Working with Words for make/do collocations.  
+**Pupils:** Sort two common expressions correctly into make and do.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

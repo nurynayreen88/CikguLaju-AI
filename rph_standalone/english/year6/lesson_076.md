@@ -7,32 +7,32 @@
 **Language focus:** Review of tenses, modal verbs for rules and obligations, cohesive devices  
 **Duration:** 60 minutes  
 **Materials:** Teacher-prepared model email, email writing template and evaluation criteria  
-**Learning objective:** Produce, check and improve a draft of two paragraphs on a journey around town, making at least two meaningful revisions.  
-**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
+**Learning objective:** Write an approximately 50-word email reply to a video-game penfriend, explain steps to play a game, and improve the reply using peer criteria.  
+**PBD evidence:** Email includes greeting, game steps and closing; two substantive improvements after peer review (Writing 4.3.3/4.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review familiar video-game vocabulary through a short class game.  
+**Pupils:** Recall a game, one rule and one useful linking word.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How do we get there safely?”. Highlight useful language: Review of tenses, modal verbs for rules and obligations, cohesive devices.  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a journey around town.
+**Teacher:** Show the SOW penfriend model email and ask a gist question.  
+**Pupils:** Read the model for overall meaning and underline the opening and closing.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
-**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
+**Teacher:** Guide the SOW writing template: thank the penfriend and describe game steps.  
+**Pupils:** Plan a response of about 50 words, including a greeting, linked steps and closing.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Provide writing time then a criteria-based peer assessment.  
+**Pupils:** Write an individual email and exchange it for positive feedback and one suggestion.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess content, organisation and appropriate obligation/linking phrases.  
+**Pupils:** Revise two points in a different colour or record corrections for homework.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review the key conventions of a friendly email.  
+**Pupils:** Read one effective opening or closing expression.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
