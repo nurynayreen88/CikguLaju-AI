@@ -1,6 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 009
 
 **ID:** BM4-P009 | **RPT 2027:** M03 | **Unit:** 2 — Prihatinnya Kita
+**Tajuk aktiviti:** Kita Lakukan Bersama-sama + PKJR
 **Tajuk:** Kita Lakukan Bersama-sama
 **SK:** 2.2 Membaca, memahami, dan menaakul bahan multimedia.
 **SP:** 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran.
