@@ -69,7 +69,10 @@ class CrossYearEnglishDocumentRows(unittest.TestCase):
                   flush=True)
             # Any rejected lesson is still served by the preexisting generator;
             # we do not fabricate a code to force it to pass.
-            self.assertGreaterEqual(len(valid), 140, "Unexpectedly low validated source coverage")
+            self.assertEqual(len(valid), 160,
+                             "Every Year %d lesson must match its official SOW pair" % year)
+            self.assertEqual(old_objectives, [],
+                             "Do not leave legacy objectives in Year %d Word/PDF" % year)
         self.assertEqual(len(counts), 2)
 
     def test_y2_y3_invalid_selection_and_mismatched_sow_do_not_update(self):
