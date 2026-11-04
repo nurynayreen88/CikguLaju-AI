@@ -7,32 +7,32 @@
 **Language focus:** Future forms: will and going to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 85; Teacher Book pages 136-137; Workbook pages 74  
-**Learning objective:** Ask about and describe 3 future plans or events linked to a school music performance.  
-**PBD evidence:** Three appropriate future-plan statements and two relevant questions.
+**Learning objective:** Explain four future plans using will, going to or present simple for timetables, and write two linked sentences about personal intentions.  
+**PBD evidence:** Four clear future-plan answers (Speaking 2.1.4) and two coherent written plans using suitable future forms (Writing 4.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use TB p.136 Tense review to recall a fixed future schedule.  
+**Pupils:** Say one correct timetable sentence.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Which song or instrument would you choose and why?”, drawing on Future forms: will and going to.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.136 Activity 1 to contrast will, going to and scheduled present simple.  
+**Pupils:** Explain one planned intention and one prediction.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide picture prompts for the unit future events and model appropriate future-time questions.  
-**Pupils:** Interview a partner and describe three specific future plans in complete sentences.
+**Teacher:** Guide PB p.85 Activity 2 to complete will/going to sentences.  
+**Pupils:** Choose accurate future forms and justify two choices.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Follow TB p.137 Activity 3 and WB p.74 Activity 3 for partner planning.  
+**Pupils:** Write two personal future statements, then ask follow-up questions in pairs.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess clarity of four oral responses and coherence of two written sentences.  
+**Pupils:** Correct one future verb form and expand an answer with a reason.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which song or instrument would you choose and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Discuss the PB p.85 Values question in small groups.  
+**Pupils:** Share one constructive future goal and how to act on it.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
