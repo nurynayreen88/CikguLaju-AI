@@ -30,6 +30,7 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+from reportlab.platypus.doctemplate import LayoutError
 from pypdf import PdfReader
 
 from web.pjpk_2027_preview_runtime import _source, ROOT
@@ -199,7 +200,10 @@ def pdf(lesson, path):
             Spacer(1, 3*mm), table, Spacer(1, 2*mm),
             Paragraph(html.escape(PAGE_HEAD), sub),
         ]
-        doc.build(story)
+        try:
+            doc.build(story)
+        except LayoutError:
+            continue  # smaller font, never clip or delete RPH text
         if len(PdfReader(str(path)).pages) == 1:
             return point
     raise RuntimeError("A4 overflow without truncation: %s" % path)
