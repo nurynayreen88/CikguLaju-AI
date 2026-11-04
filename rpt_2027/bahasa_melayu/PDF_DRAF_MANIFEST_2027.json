@@ -1,0 +1,62 @@
+{
+  "subject": "Bahasa Melayu SK",
+  "year": 2027,
+  "ready": false,
+  "records": [
+    {
+      "year": 2,
+      "pdp": 164,
+      "weeks": 44,
+      "pages": 37,
+      "bytes": 132701,
+      "landscape": true,
+      "extracted_pdp": 164,
+      "status": "DRAF_BELUM_READY",
+      "filename": "RPT_Bahasa_Melayu_Tahun_2_2027_DRAF.pdf"
+    },
+    {
+      "year": 3,
+      "pdp": 165,
+      "weeks": 44,
+      "pages": 45,
+      "bytes": 151124,
+      "landscape": true,
+      "extracted_pdp": 165,
+      "status": "DRAF_BELUM_READY",
+      "filename": "RPT_Bahasa_Melayu_Tahun_3_2027_DRAF.pdf"
+    },
+    {
+      "year": 4,
+      "pdp": 165,
+      "weeks": 44,
+      "pages": 34,
+      "bytes": 127631,
+      "landscape": true,
+      "extracted_pdp": 165,
+      "status": "DRAF_BELUM_READY",
+      "filename": "RPT_Bahasa_Melayu_Tahun_4_2027_DRAF.pdf"
+    },
+    {
+      "year": 5,
+      "pdp": 166,
+      "weeks": 44,
+      "pages": 36,
+      "bytes": 132611,
+      "landscape": true,
+      "extracted_pdp": 166,
+      "status": "DRAF_BELUM_READY",
+      "filename": "RPT_Bahasa_Melayu_Tahun_5_2027_DRAF.pdf"
+    },
+    {
+      "year": 6,
+      "pdp": 165,
+      "weeks": 44,
+      "pages": 34,
+      "bytes": 130989,
+      "landscape": true,
+      "extracted_pdp": 165,
+      "status": "DRAF_BELUM_READY",
+      "filename": "RPT_Bahasa_Melayu_Tahun_6_2027_DRAF.pdf"
+    }
+  ]
+}
