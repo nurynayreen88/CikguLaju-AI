@@ -7,32 +7,32 @@
 **Language focus:** Various narrative tenses: past simple, present perfect, present simple  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 118-121  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a familiar school-life issue.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read different extracts from PB pp.118–120 The Power of Stories, exchange information in a three-text jigsaw and explain the main idea.  
+**PBD evidence:** Text-supported main idea and accurate matched story descriptions (Reading 3.2.2), with at least three reported reading details.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.186 Warm-up Tell me a story.  
+**Pupils:** Name one story from a familiar culture.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce opinions, reasons, examples and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Various narrative tenses: past simple, present perfect, present simple.  
-**Pupils:** Predict the text from two contrasting opinion cards; highlight two useful clues or words.
+**Teacher:** Introduce the title The Power of Stories and the first printed paragraph.  
+**Pupils:** Predict what kinds of stories the writer will compare.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a familiar school-life issue; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Assign three PB pp.118–120 extracts to different groups.  
+**Pupils:** Read the allocated extract and match its genre in PB p.121 Activity 1.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a familiar school-life issue. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Regroup pupils into mixed threes for PB p.121 Activities 2 and 4.  
+**Pupils:** Explain the original extract without showing answers and gather two facts from other texts.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check the shared main idea and one supported description from each text.  
+**Pupils:** Correct a misplaced match and show the relevant wording.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pupils to describe the benefits of reading regularly.  
+**Pupils:** Give one personally relevant reason to read a story.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

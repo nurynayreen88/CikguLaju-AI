@@ -7,32 +7,32 @@
 **Language focus:** Future review (will & going to)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 117; Teacher Book page 184  
-**Learning objective:** Write a detailed a reasoned opinion paragraph containing at least 5 relevant facts about a person or group linked to a familiar school-life issue.  
-**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
+**Learning objective:** Write and explain two supported proposals for spending a hypothetical £20,000 school prize, comparing choices fairly and coherently.  
+**PBD evidence:** Two understandable proposals with supporting reasons (Writing 4.2.1), plus coherent financial-priority discussion.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.184 Warm-up Mind map for school needs.  
+**Pupils:** List two improvements useful to pupils.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “Do you agree or disagree? Why?”. Highlight useful language: Future review (will & going to).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a familiar school-life issue.
+**Teacher:** Introduce the hypothetical £20,000 prize without inventing a current conversion rate.  
+**Pupils:** Suggest an appropriate way the school could spend the fund.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
-**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
+**Teacher:** Follow TB p.184 Activities 1–2 to match and rank arguments.  
+**Pupils:** Rank possible projects and explain the highest priority.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Guide Activity 3 for supporting statements; then Activity 4 with pupil principals.  
+**Pupils:** Write two arguments and present a school-spending plan in a small group.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess reasons, linking expressions and practical relevance.  
+**Pupils:** Improve one argument after peer questions.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Discuss responsible use of an imagined prize, including helping others.  
+**Pupils:** Explain how pupils might benefit from a selected option.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
