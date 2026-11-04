@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 3.6, 4.6, 5.3  
 **SP:** 3.6.1, 3.6.2, 3.6.3, 4.6.1, 4.6.2, 5.3.4  
-**Buku teks:** calon m/s 70-71 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 80-81, disemak visual pada Buku Teks Pendidikan Jasmani Tahun 6.
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Merekod atau melaksanakan tugasan SP 3.6.1 secara tepat dan sulit, kemudian mentafsir hasil berpandukan panduan guru. (2) Menerangkan satu konsep berkaitan SP 4.6.1: Membandingkan skor pencapaian diri sendiri dengan norma Ujian SEGAK.
