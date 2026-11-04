@@ -1,11 +1,12 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 014
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
-**Unit RPT 2026:** Unit 5 — Cik Cilik Koi  
+**Unit RPT 2026:** Unit 5 — Si Cilik Koi  
 **Aktiviti/Tajuk:** Perkembangan idea  
-**SK:** 2.1; 3.2  
+**SK:** 2.1; 3.1  
 **SP:** 2.1.3; 3.2.1  
-**Buku Teks:** ms 34–45 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 34-45 (rujukan unit buku)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kertas warna, gam, cat air dan kad berlatar  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
@@ -13,7 +14,7 @@
 Menyenaraikan dua fungsi karya ikan koi gabungan catan, lukisan dan kolaj dan menghasilkan peta idea berdasarkan gerakan ikan koi, sisik bercorak dan ruang air kolam. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perkembangan idea** dalam tema **Cik Cilik Koi**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perkembangan idea** dalam tema **Si Cilik Koi**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
 **Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru membandingkan contoh projek bertema perkembangan idea dan mengenal pasti fungsi serta elemen gerakan ikan koi, sisik bercorak dan ruang air kolam. Murid menyenaraikan pengguna, bahan dan hasil yang hendak dicapai.
 

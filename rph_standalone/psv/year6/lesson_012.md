@@ -3,9 +3,10 @@
 **Status:** DRAF SEMAK (belum aktif Telegram)  
 **Unit RPT 2026:** Unit 4 — Cik Lebah dan Madu  
 **Aktiviti/Tajuk:** Penghasilan karya  
-**SK:** 3.2  
+**SK:** 3.1  
 **SP:** 3.2.2  
-**Buku Teks:** ms 26–33 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 4 — Cik Lebah dan Madu, ms 26-33 (rujukan unit buku)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kertas warna, kad, gam, pensel dan cat air  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
