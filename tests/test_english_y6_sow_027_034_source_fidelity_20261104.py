@@ -17,7 +17,7 @@ LESSONS={
     28:("4.2.3","3.2.4",("grandparents","three","direct speech","inaccuracies","PB p.31")),
     29:("1.2.1","2.1.4",("environment","technology","family life","presentation","future")),
     30:("2.2.1","2.1.4",("museum guide","past","present","future","clarification")),
-    33:("3.2.1","3.2.2",("Emma","Canada","blog","TB p.61","Malaysia")),
+    33:("3.2.1","3.2.2",("Emma","Canadian","blog","TB p.61","Malaysia")),
     34:("4.2.1","3.2.2",("Emma","true and two false","present-perfect","irregular","PB pp.36–37")),
 }
 class Year6SixNextSowTasks(unittest.TestCase):
