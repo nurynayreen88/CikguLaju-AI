@@ -7,32 +7,32 @@
 **Language focus:** Review of passive voice  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 75; Teacher Book pages 122-123; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about making a familiar product with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Understand the main details and persuasive claims in PB p.75 recorded adverts, distinguish two facts from opinions and state one reasoned preference.  
+**PBD evidence:** Four accurate advert-listening details (Listening 1.2.2) and two clear personal responses (Speaking 2.1.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.122 Warm-up: What's your favourite TV programme?  
+**Pupils:** Name a programme and where advertisements appear.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach materials, tools, process and sequence; display four process-stage pictures and ask pupils to predict what they may hear. Emphasise the language focus: Review of passive voice.  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.122 Vocabulary and PB p.75 Activity 1 to preview advertised products.  
+**Pupils:** Describe picture clues and predict the advertised item.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use verified audio or accurate printed-script delivery for TB p.122 Activity 2.  
+**Pupils:** Listen to the adverts, identify each product and record the key persuasive claim.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about making a familiar product, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Follow TB p.123 Activities 3–5 to distinguish fact/opinion and choose a favourite advert.  
+**Pupils:** Check four heard claims, classify two as fact or opinion and explain a preference.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess details and evidence used to distinguish true facts from opinions.  
+**Pupils:** Correct one claim and explain why an advert is persuasive.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review how strong adjectives influence an advert's effect.  
+**Pupils:** Say one useful fact and one unsupported sales opinion.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

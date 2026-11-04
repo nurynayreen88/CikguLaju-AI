@@ -7,32 +7,32 @@
 **Language focus:** Functional language: giving opinions (e.g. For me, it’s important that…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 79; Teacher Book pages 128  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on making a familiar product.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read PB p.79 jeans descriptions, extract four product details, compare prices using a teacher-provided exchange rate and justify a purchase preference.  
+**PBD evidence:** Four correct details from product texts (Reading 3.2.2) and two relevant comparison arguments (Speaking 2.1.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.128 Ready, set, draw with clothing words.  
+**Pupils:** Sketch or name one item of clothing.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce materials, tools, process and sequence and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Functional language: giving opinions (e.g. For me, it’s important that…).  
-**Pupils:** Predict the text from four process-stage pictures; highlight two useful clues or words.
+**Teacher:** Review jeans styles and give a brief supported reading worksheet.  
+**Pupils:** Read one jeans description independently and identify a product feature.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about making a familiar product; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Follow TB p.128 Activity 1; read the remaining advertisements and complete a comparison table.  
+**Pupils:** Extract four features including style, material or price from the texts.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to making a familiar product. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Demonstrate the exchange-rate method using the rate supplied by the teacher, then follow Activities 2–3.  
+**Pupils:** Convert sample sterling prices to RM and discuss how to spend a £50 budget.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four source-supported reading facts and two clear personal preferences.  
+**Pupils:** Correct a price or text detail and justify a choice.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite a pupil to explain a responsible shopping choice.  
+**Pupils:** Name one quality beyond price to consider.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
