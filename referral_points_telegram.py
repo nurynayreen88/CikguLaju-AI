@@ -235,15 +235,35 @@ def install(ns):
             return ns["jsonify"]({"ok":True,"legacy_referral_closed":True})
         m = _START.fullmatch(text)
         if m:
+            # _upsert_user persists the Telegram profile first, but does NOT
+            # create cikgulaju_users. The referral FK and new-user timestamp
+            # require the existing credit initialization to run before the RPC.
             ns["_upsert_user"](msg.get("from") or {}, uid)
             try:
-                sb("POST", "rpc/referral_capture_signup", json={
+                ns["_ensure_user_credit"](uid)
+                result = sb("POST", "rpc/referral_capture_signup", json={
                     "p_referred_user_id": uid, "p_referral_code": m.group(1)
                 })
+                capture = result[0] if isinstance(result, list) and result else result or {}
+                if capture.get("captured") is True:
+                    send(uid, "✅ Pendaftaran melalui pautan referral berjaya direkodkan. "
+                              "Ganjaran untuk pemilik pautan hanya diberikan selepas "
+                              "bayaran yang layak disahkan.")
+                else:
+                    reason = str(capture.get("reason") or "already_recorded")
+                    # Never claim a successful referral for an existing account
+                    # or a stale/invalid code. Report only a safe reason string.
+                    print("PRIVATE REFERRAL signup not captured:",
+                          reason[:48], flush=True)
+                    send(uid, "ℹ️ Akaun ini tidak direkodkan sebagai pendaftaran "
+                              "referral baharu. Pautan hanya layak untuk akaun "
+                              "yang baru didaftarkan dan belum menggunakan pautan lain.")
             except Exception as exc:
-                print("PRIVATE REFERRAL capture error:", type(exc).__name__, flush=True)
-                send(uid, "⚠️ Pautan referral belum dapat direkodkan. "
-                          "Akaun CikguLaju masih boleh digunakan.")
+                print("PRIVATE REFERRAL capture error:",
+                      type(exc).__name__, flush=True)
+                send(uid, "⚠️ Pendaftaran referral belum berjaya direkodkan. "
+                          "Cuba buka semula pautan jemputan; "
+                          "akaun CikguLaju masih boleh digunakan.")
             ns["menu"](uid, show_persistent=True)
             return ns["jsonify"]({"ok":True,"private_referral":True})
         if text == "/mata":
