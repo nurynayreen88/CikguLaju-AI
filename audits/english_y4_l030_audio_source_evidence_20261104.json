@@ -100,5 +100,24 @@
     "mode": "BLOCK_AUDIO_UNTIL_VERIFIED",
     "actual_telegram_send_tested": false,
     "correct_spoken_content_verified": false
+  },
+  "audio_signal_comparison": {
+    "performed_at": "2026-11-04",
+    "source_input_sha256": {
+      "cd1": "7e19b89af1a1cea0d71029a0b6ab6ca3f6a7aed5962258d432649aeca4e5b226",
+      "cd2": "bd1478b3d90f055a4ad6d9f1a3ebefbd303e70cd6479597106fddebc5a06bd8e"
+    },
+    "method": "librosa.load(...,sr=16000,mono=True) then scipy.signal.fftconvolve(cd2,cd1[::-1],mode='full'); max_abs_crosscorr / sqrt(sum(cd1**2)*sum(cd2**2)). Full decoded streams, no transcript or voice recognition.",
+    "decoded_sample_rate_hz": 16000,
+    "decoded_duration_seconds": {
+      "cd1": 13.348625,
+      "cd2": 15.0726875
+    },
+    "maximum_absolute_normalized_crosscorrelation": 0.05039397124214143,
+    "interpretation": "CD1 Track29 and CD2 Track29 are NOT merely identical PCM waveforms shifted in time. This acoustic similarity measure cannot verify spoken words or whether the tracks depict the same teaching task with different takes. Correct content remains unverified.",
+    "transcript_or_teacher_book_dialogue_checked": false,
+    "audio_playback_to_user_verified": false,
+    "correct_content_listening_verified": false,
+    "final_ready_approved": false
   }
 }
