@@ -27,15 +27,19 @@ GitHub Actions workflow: `.github/workflows/english-native-pdf-audio-evidence-20
 - Exact source locations, Google Drive audio file IDs and verification gates are preserved in `audits/english_y4_l030_audio_source_evidence_20261104.json`.
 - **Release status remains DRAF**; printed Teacher's Book is the preferred *activity instruction* but that does not prove the corresponding playable file matches the written dialogue.
 
-## Independently checked Workbook page — Year 4 Lesson 30 (4 Nov 2026)
+## Corrected cross-source Workbook match — Year 4 Lesson 30 (4 Nov 2026)
 
-Read the **original Get Smart Plus 4 Workbook.pdf** from Google Drive, file ID `1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX`, and visually inspected **printed p.14 / PDF page 13** (1-based). Activity 1 instructs `Look at the pictures. What do the children have to do?` and shows six picture-based chores, with the worked example `They have to water the plants.` This directly matches the optional `Workbook p.14, Activity 1` written sentence task already cited by Year 4 `lesson_030.md`. No change to this RPH is needed.
+Direct visual inspection of three original books **identified and corrected a mistaken prior audit conclusion**:
 
-**Do not conflate tasks:** Workbook printed p.15 / PDF page 14 has a separate `Listen and number` activity. Checking the written Workbook p.14 task **does not** verify the audio for Student's Book p.20 Activity 2, resolve the Teacher's Book CD1-versus-SOW CD2 discrepancy, or prove Telegram delivery. The original workbook is a source file, not evidence that a teacher has download access.
+- **Teacher's Book printed p.39 / PDF page 25**, Workbook panel: the relevant *Let's play* practice uses **Workbook printed p.15**; its Activity 1 is a separate listening task **Class CD1 Track 30**. That is **not** Student's Book p.20 Activity 2, which the Teacher's Book labels **Class CD1 Track 29**.
+- **Student's Book printed p.20 / PDF page 20**: Unit 2 *Let's play*; Activity 1 constructs John/Mandy schedules and Activity 2 asks pupils to listen, read, ask and answer.
+- **Workbook printed p.15 / PDF page 14**, Google Drive file ID `1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX`: Unit 2 *Let's play*. **Activity 3** asks pupils to `Look and write. Use have to or don't have to.` The Phil/Gina timetable makes this a direct *written* practice activity that needs no extra recording.
 
-Drive file metadata additionally confirms that **both** Year 4 CD1 Track 29 and CD2 Track 29 allow link-reader access (Google Drive `anyone: reader` at the time of this check), but this does **not** demonstrate correct content, playback, or bot routing. Do not change the existing final-release gate.
+**Fix:** `rph_standalone/english/year4/lesson_030.md` now specifies optional **Workbook p.15 Activity 3**, not p.14 Activity 1. Existing verified workbook map already points Lesson 30 to printed p.15; no map change is needed. This retains the Student's Book listening activity and preserves PBD for Writing 4.3.2 / Listening 1.2.5.
 
-Independent workbook proof is now recorded in `audits/english_y4_l030_audio_source_evidence_20261104.json`; regression checks in `tests/test_english_y4_l030_audio_evidence.py` distinguish this source success from the still-false audio and Telegram gates.
+**Correction to the previous 4 November report:** Printed Workbook p.14 / PDF page 13 was indeed visually inspected and has six chore pictures and `have to` sentence examples, but it is **Unit 2 Our world**, the preceding section. The earlier statement that theme overlap alone made it the correct optional Lesson 30 activity was wrong; its observation is retained in `prior_workbook_observation` for audit traceability, not endorsed as Lesson 30 mapping.
+
+Audio content and authenticated Telegram file delivery remain unverified. Both original MP3s have different hashes and Drive link-reader permissions, but neither is proof of spoken-content matching. The five final-release gates remain false: correct recording speech, Telegram MP3 routing, teacher Word download, teacher native PDF download, and teacher pedagogical approval.
 
 ## Status: no blanket FINAL READY
 
