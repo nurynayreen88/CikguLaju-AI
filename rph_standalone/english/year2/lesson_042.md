@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 42: Reading 9
 
 **Unit:** The old house  
-**Main SK/SP (prior mapping; SOW verification pending):** 3.2 / 3.2.1  
-**Complementary SK/SP (prior mapping; SOW verification pending):** 3.1 / 3.1.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.2  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.76. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
 **Learning objectives:** Pupils identify the main idea of a short familiar house text (main 3.2.1) and identify beginning, middle and final sounds in at least three familiar words with support (complementary 3.1.2).  

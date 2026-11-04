@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 68: Reading 14
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.2  
 **Duration:** 60 minutes  
 **Source:** Student's Book pp.86–87 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
 **Learning objectives:** Pupils identify the main idea of a short familiar text (main 3.2.1) and find at least four of five supporting written details (complementary 3.2.2).  

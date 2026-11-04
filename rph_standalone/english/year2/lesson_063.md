@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 63: Reading 13
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.3  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
 **Learning objectives:** Pupils identify four of five written details and reread two words or phrases to clarify meaning.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 58: Reading 12
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.3  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.4  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.4  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
 **Learning objectives:** Pupils blend four simple words from phonemes and segment four words into phonemes.  

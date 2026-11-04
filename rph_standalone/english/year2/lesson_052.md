@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 52: Reading 11
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.4  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.4  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.81. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
 **Learning objectives:** Pupils identify four of five text details and use a picture dictionary to find, list and categorise four topic words.  

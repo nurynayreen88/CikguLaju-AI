@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 29: Writing 6
 
 **Unit:** Free Time  
-**Main SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in the prior Year 2 audit; the tasks and examples below are teacher-developed.  
 **Learning objectives:** Pupils spell at least four familiar free-time words accurately in guided writing and use capital letters and full stops correctly in three sentences.  

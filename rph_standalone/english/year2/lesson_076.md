@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 76: Reading 16
 
 **Unit:** Get dressed!  
-**Main SK/SP (prior mapping; official SOW verification pending):** 3.2 / 3.2.2  
-**Complementary SK/SP (prior mapping; official SOW verification pending):** 3.2 / 3.2.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.3  
 **Duration:** 60 minutes  
 **Source classification:** SB p.88; TB steps not verified. All example scripts and passages below are original teacher-created materials, not verified textbook extracts.  
 **Learning objectives:** Pupils identify four of five details in simple sentences and reread two phrases to clarify meaning.  

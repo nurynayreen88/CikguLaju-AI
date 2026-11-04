@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 47: Reading 10
 
 **Unit:** The old house
-**Main SK/SP (prior mapping; SOW verification pending):** 3.2 / 3.2.2
-**Complementary SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.4
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.4  
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created passage, not a textbook extract.
 **Learning objectives:** Pupils locate three details in a short text and write one accurate sentence describing a room object using suitable words.

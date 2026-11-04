@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 33: Reading 7
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 3.2 / 3.2.3  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.1  
 **Duration:** 60 minutes  
 **Mapped textbook:** Super Minds 1 Student's Book pp.74–75. Exact Teacher's Book story sequence has **not** been independently verified for this revision. The reading passage below is original teacher-developed material and is not a reproduction of the textbook story.  
 **Learning objectives:** Pupils reread two sentences to clarify meaning, skip one unfamiliar word without losing overall meaning, and identify the main idea of two spoken sentences.  

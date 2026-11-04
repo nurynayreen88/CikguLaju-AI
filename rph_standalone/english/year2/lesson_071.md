@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 71: Listening 15
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; official SOW verification pending):** 1.1 / 1.1.1  
-**Complementary SK/SP (existing mapping; official SOW verification pending):** 3.1 / 3.1.4  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.1 / 1.1.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.4  
 **Duration:** 60 minutes  
 **Source classification:** SB p.87; TB steps not verified. The scripts, passages and examples below are original teacher-created resources, not verified textbook extracts.  
 **Learning objectives:** Pupils recognise and reproduce initial sounds in five familiar clothing words (main SP 1.1.1) and segment the phonemes in three familiar short words (complementary SP 3.1.4).  

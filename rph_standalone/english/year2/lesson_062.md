@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 62: Speaking 13
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
 **Learning objectives:** Pupils ask two basic questions to find out a partner's clothing preferences and use two suitable non-verbal responses during a short exchange.  

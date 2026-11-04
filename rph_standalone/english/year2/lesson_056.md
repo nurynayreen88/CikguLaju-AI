@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 56: Listening 12
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 3.3 / 3.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.3 / 3.3.1  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.82. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
 **Learning objectives:** Pupils identify four of five spoken clothing cues and read and enjoy a printed sentence-level clothing game.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 59: Writing 12
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 3.1 / 3.1.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.1  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
 **Learning objectives:** Pupils name the letters in four clothing words and spell four familiar words accurately in guided writing.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 43: Writing 9
 
 **Unit:** The old house  
-**Main SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.1  
-**Complementary SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.5  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.77. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
 **Learning objectives:** Pupils ask two simple written questions about rooms and write two relevant answers (main 4.2.1), using the coordinating conjunction 'and' in two written statements (complementary 4.2.5).  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 44: Speaking 9
 
 **Unit:** The old house  
-**Main SK/SP (prior mapping; SOW verification pending):** 2.1 / 2.1.5  
-**Complementary SK/SP (prior mapping; SOW verification pending):** 2.2 / 2.2.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.5  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.2 / 2.2.2  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.78. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
 **Learning objectives:** Pupils describe two animal habitats using suitable words and ask for help appropriately in two classroom exchanges.  

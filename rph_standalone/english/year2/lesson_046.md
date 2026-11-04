@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 46: Listening 10
 
 **Unit:** The old house
-**Main SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.2
-**Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes
 **Source:** NON-TEXTBOOK in prior mapping. Script below is teacher-created.
 **Learning objectives:** Identify three spoken details by drawing the described objects in a house plan and describe one room orally.

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 38: Reading 8
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 3.1 / 3.1.4  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 1.1 / 1.1.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.4  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.1 / 1.1.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
 **Learning objectives:** Pupils segment the sounds in four CVC or CCVC words and reproduce four spoken target sounds.  

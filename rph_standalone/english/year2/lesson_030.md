@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 30: Language Arts 6
 
 **Unit:** Free Time  
-**Main SK/SP (existing mapping; SOW verification pending):** 5.3 / 5.3.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 5.3 / 5.3.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.2 / 2.2.2  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in the prior Year 2 audit. The verse and writing prompts below are original teacher-developed materials.  
 **Learning objectives:** Pupils create a two-line free-time verse using familiar activity words and present it intelligibly to a partner.  

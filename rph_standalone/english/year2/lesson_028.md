@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 28: Reading 6
 
 **Unit:** Free Time  
-**Main SK/SP (existing mapping; SOW verification pending):** 3.2 / 3.2.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 3.2 / 3.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.3  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in the prior Year 2 audit. The passage, questions and answer key below are teacher-developed.  
 **Learning objectives:** Pupils locate three explicit details in a short text and write two short familiar instructions based on the activities.  
