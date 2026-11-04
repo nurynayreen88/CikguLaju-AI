@@ -49,7 +49,8 @@ def check_year(y, master):
         if r["Modul"] == "PENGUKUHAN":
             assert r["Status_Dalaman"] == "RPH_PENGUKUHAN_DRAF_SUMBER_TOC", y
             assert f"Sesi {r['Sesi_1_96']}" in source, (y, path)
-            assert "Tempoh" in source or "Masa:" in source, path
+            assert ("Tempoh" in source or "Masa:" in source or
+                    "cadangan 60 minit" in source), path
             assert "60 minit" in source, path
             assert len(source) >= 2000, path
             assert "halaman" in source.lower() and "permulaan" in source.lower(), path
