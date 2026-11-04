@@ -187,6 +187,7 @@ class DurableUserRecordsTests(unittest.TestCase):
                 "chat":{"id":301,"type":"private"},
                 "from":{"id":301},
                 "message_id":777,
+                "date": 1793786100,
                 "document":{
                     "file_id":"PRIVATE_TG_FILE_REF",
                     "file_unique_id":"unique123",
@@ -204,6 +205,7 @@ class DurableUserRecordsTests(unittest.TestCase):
         self.assertEqual(row["proof_telegram_file_id"],"PRIVATE_TG_FILE_REF")
         self.assertEqual(row["proof_mime_type"],"application/pdf")
         self.assertEqual(row["proof_telegram_message_id"],777)
+        self.assertEqual(row["proof_received_at"],"2026-11-04T09:55:00+00:00")
         self.assertNotIn("receipt_binary",row)
 
     def test_rejects_proof_reference_from_different_user(self):

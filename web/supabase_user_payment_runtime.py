@@ -7,7 +7,21 @@ fail closed: never silently fall back to a new/empty SQLite payment queue.
 """
 import html
 import os
+from web.payment_receipt_admin_runtime import malaysia_time
 from decimal import Decimal, InvalidOperation
+from datetime import datetime, timedelta, timezone
+
+
+def _telegram_proof_time(message):
+    """Actual Telegram user submission UTC instant, not payment creation time."""
+    now = datetime.now(timezone.utc)
+    try:
+        submitted = datetime.fromtimestamp(int(message["date"]), timezone.utc)
+        if datetime(2020, 1, 1, tzinfo=timezone.utc) <= submitted <= now + timedelta(minutes=5):
+            return submitted.isoformat()
+    except (KeyError, TypeError, ValueError, OverflowError):
+        pass
+    return now.isoformat()
 
 
 def enabled():
@@ -120,7 +134,7 @@ def install(runtime):
                             "proof_file_unique_id":str(file.get("file_unique_id") or ""),
                             "proof_telegram_message_id":int(message["message_id"]),
                             "proof_mime_type":mimetype,
-                            "proof_received_at":datetime.now(timezone.utc).isoformat()
+                            "proof_received_at":_telegram_proof_time(message)
                         })
             except Exception as exc:
                 print("DURABLE USER proof metadata unavailable:",
@@ -197,7 +211,7 @@ def install(runtime):
             per = 8
             params = (
                 "bot_payment_requests?select=id,chat_id,amount,status,"
-                "submitted_at&order=id.desc"
+                "submitted_at,proof_received_at&order=id.desc"
                 f"&limit={per + 1}&offset={per * page}"
             )
             if kind == "pending":
@@ -221,6 +235,10 @@ def install(runtime):
                     str(payment.get("status")), "•")
                 lines.append(f"{icon} #{payment['id']} • ID <code>{uid}</code> "
                              f"• RM{amount}")
+                lines.append("  🗓️ Permohonan: " +
+                             malaysia_time(payment.get("submitted_at")))
+                lines.append("  🧾 Resit: " +
+                             malaysia_time(payment.get("proof_received_at")))
                 label = f"{icon} #{payment['id']} {name} • RM{amount}"
                 callback = (f"admin_pending|{int(payment['id'])}"
                             if kind == "pending"
