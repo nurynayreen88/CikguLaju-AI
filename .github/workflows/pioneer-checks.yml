@@ -20,5 +20,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: python -m pip install requests==2.32.5
       - run: python -m py_compile pioneer_entitlements.py pioneer_supabase.py pioneer_telegram.py pioneer_paid_recovery_telegram.py
       - run: python -m unittest tests.test_pioneer_entitlements tests.test_pioneer_supabase tests.test_pioneer_approval_recovery tests.test_pioneer_paid_recovery

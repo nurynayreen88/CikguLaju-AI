@@ -151,12 +151,16 @@ def install(ns):
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Rakan Pembangun anda sudah aktif.")
             pending = ns["_latest_pending_payment"](cid)
-            if not pending or float(pending.get("amount", 0)) != 10.0:
-                return send(cid, "⚠️ Mulakan permohonan Rakan Pembangun RM10 dahulu sebelum menghantar resit.")
-            if pending.get("notes") == "proof_received_admin_notified":
+            if pending and float(pending.get("amount", 0)) != 10.0:
+                return send(cid, "⚠️ Ada permohonan bayaran lain yang masih menunggu semakan.")
+            if pending and pending.get("notes") == "proof_received_admin_notified":
                 return send(cid, "⌛ Resit Rakan Pembangun RM10 sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
-            state.setdefault(cid, {})["waiting"] = "payment_proof"
-            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM10.")
+            # Selecting upload is a draft intent, NOT a payment request.
+            draft = state.setdefault(cid, {})
+            draft["waiting"] = "payment_proof"
+            draft["payment_amount"] = 10.0
+            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM10. "
+                        "Permohonan hanya direkod selepas resit dihantar.")
         if d == "pioneer_pay":
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Rakan Pembangun anda sudah aktif.")
@@ -168,14 +172,13 @@ def install(ns):
                             "Sila selesaikan permohonan tersebut dahulu.")
             if pending and pending.get("notes") == "proof_received_admin_notified":
                 return send(cid, "⌛ Resit Rakan Pembangun RM10 sudah diterima dan menunggu semakan admin. Tidak perlu hantar semula.")
-            if pending:
-                rid = pending["id"]
-            else:
-                rid = ns["_new_payment_request"](cid, None, 10.0)
-                ns["_set_payment_note"](rid, "awaiting_proof")
-            state.setdefault(cid, {})["waiting"] = "payment_proof"
+            # Show QR and remember a transient intent only. Do not insert a
+            # pending record into SQLite/Supabase before a receipt is uploaded.
+            draft = state.setdefault(cid, {})
+            draft["waiting"] = "payment_proof"
+            draft["payment_amount"] = 10.0
             # Existing QR bytes are reused, not copied into a new asset.
-            return send_pioneer_qr(cid, rid)
+            return send_pioneer_qr(cid, pending["id"] if pending else None)
         if str(d).startswith("pioneer_review|"):
             # Read the *current* local request only. This is an admin-only view;
             # it never approves, creates or transfers payments.
