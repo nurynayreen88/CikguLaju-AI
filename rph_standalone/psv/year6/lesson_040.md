@@ -11,7 +11,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyediakan pelan pameran kumpulan berserta senarai karya, kapsyen dan pengagihan tugas. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyediakan pelan pameran kumpulan berserta senarai karya, kapsyen dan pengagihan tugas. Kriteria kejayaan: Pelan pameran, kapsyen, senarai karya dan catatan peranan ahli kumpulan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perancangan pameran akhir tahun** dalam tema **Projek Seni Visual**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
