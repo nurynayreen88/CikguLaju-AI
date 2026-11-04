@@ -68,5 +68,34 @@ class TestPIRPT2027(unittest.TestCase):
         self.assertIs(original, self.ns["callback"])
 
 
+    def test_committed_pdf_assets(self):
+        import hashlib
+        expected = {
+            2: ("8b379f214f0e5ff8c4780c446b0f44f5b1882bc252c8645c862d5564f2114993", 719761),
+            3: ("5ab2fb2c6cdc3fdded63de0cd06efb7c5c5c43d915f4c4e14c1c8df98d27df6a", 915367),
+            4: ("1a264b4327c308da298f45e1d52fa200631e86a80a062c2ed9c89946bf330b52", 998450),
+            5: ("5100f27771b2207821ee531d26631aed0a46e79dc1f9e2dd1bfab8b4c42884bf", 954963),
+            6: ("5875462ac2d47810c4f53a4f035d536fca2c84aecb2f4276b3b1d213142e0991", 987622),
+        }
+        for year, (digest, size) in expected.items():
+            with self.subTest(year=year):
+                data = pi.pdf_path(year).read_bytes()
+                self.assertTrue(data.startswith(b"%PDF-"))
+                self.assertEqual(len(data), size)
+                self.assertEqual(hashlib.sha256(data).hexdigest(), digest)
+                self.assertTrue(pi.pdf_ready(year))
+
+    def test_english_rpt_menu_shows_pi_option_for_paid_only(self):
+        from rpt_2027.english import telegram_downloads as english
+        self.assertTrue(english.install(self.ns))
+        self.ns["callback"](22, "rpt2027_year_2")
+        keyboard = self.sent[-1][2]
+        data = [button["callback_data"] for row in keyboard for button in row]
+        self.assertIn("rpt2027_pi_pdf_2", data)
+        self.sent.clear()
+        self.ns["callback"](99, "rpt2027_year_2")
+        self.assertIn("Akses Terhad", self.sent[-1][1])
+
+
 if __name__ == "__main__":
     unittest.main()
