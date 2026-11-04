@@ -104,6 +104,31 @@ except Exception as _y5_choice_a4_exc:
     print("English Year 5 choice Word A4 unavailable:", repr(_y5_choice_a4_exc), flush=True)
 
 
+
+# Year 4's 149 provisionally reviewed fixed-SOW lessons are preserved.
+# The other ten teacher-choice lessons and L30 audio-conflict lesson are
+# now available ONLY as explicitly labelled DRAF previews. No invented SPs.
+try:
+    from web.english_y4_pending_draft_preview_runtime import install as install_y4_pending_drafts
+    ENGLISH_Y4_PENDING_DRAFT_PREVIEW_ACTIVE = install_y4_pending_drafts(telegram_runtime)
+except Exception as _y4_pending_exc:
+    ENGLISH_Y4_PENDING_DRAFT_PREVIEW_ACTIVE = False
+    print("English Year 4 pending draft preview unavailable:", repr(_y4_pending_exc), flush=True)
+
+
+# Year 5's other 151 fixed SOW lesson plans already parse and match source
+# standards but lack final content/audio/A4/teacher sign-off. Show these as
+# clearly labelled DRAFT suggestions in Word/PDF, not as FINAL READY; keep
+# the separate byte-bound release-approval gate intact. Nine teacher-choice
+# lessons remain handled by the previously installed proposal adapter.
+try:
+    from web.english_y5_fixed_draft_preview_runtime import install as install_y5_fixed_preview
+    ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE = install_y5_fixed_preview(telegram_runtime)
+except Exception as _y5_fixed_preview_exc:
+    ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE = False
+    print("English Year 5 fixed draft preview unavailable:", repr(_y5_fixed_preview_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
