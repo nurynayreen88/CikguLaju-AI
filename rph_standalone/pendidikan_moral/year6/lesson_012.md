@@ -17,7 +17,7 @@ Murid memperagakan tindakan berdasarkan **4.5: Mengamalkan sikap menghargai keun
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menghargai jasa dan sumbangan orang lain**. Murid menyemak persediaan berdasarkan SP 4.5.
+**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menghormati keunikan budaya, bahasa dan warisan negara tanpa memperlekehkan perbezaan**. Murid menyemak persediaan berdasarkan SP 4.5.
 
 **Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
 
@@ -27,4 +27,4 @@ Murid memperagakan tindakan berdasarkan **4.5: Mengamalkan sikap menghargai keun
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 4 buku teks mempunyai tajuk berbeza daripada SK 4.0 DSKP; aktiviti ini ialah cadangan berdasarkan SP 4.5, bukan padanan aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
