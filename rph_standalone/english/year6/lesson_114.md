@@ -7,32 +7,32 @@
 **Language focus:** Narrative tenses (e.g. past simple: He was sorry…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 98; Teacher Book pages 154-155  
-**Learning objective:** Narrate a factual or imagined event linked to a short story in at least 6 ordered sentences.  
-**PBD evidence:** Narrative with 6 ordered sentences, correct event vocabulary and at least 2 sequence connectors.
+**Learning objective:** Write an email summarising the PB pp.96–97 story, its characters and personal response; retain the feedback-marked draft for Lesson 119.  
+**PBD evidence:** A clear first-draft story-summary email with a personal opinion (Writing 4.2.3), supported by two facts from reading (Reading 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall the story and main characters from Lesson 113.  
+**Pupils:** Describe one event and why a character acted that way.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “What makes this story interesting?”. Highlight useful language: Narrative tenses (e.g. past simple: He was sorry…).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a short story.
+**Teacher:** Follow TB p.154 Activities 1–2: reread true/false claims and identify who said what.  
+**Pupils:** Answer text questions and connect a line of dialogue to its speaker.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model the difference between opening, linked events and ending; focus on the narrative forms in this RPT Lesson.  
-**Pupils:** Draft a six-sentence account with a beginning, chronological events and a suitable ending.
+**Teacher:** Guide TB p.154 Learning to Learn about points of view.  
+**Pupils:** Compare two characters' viewpoints using text evidence.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Distribute the SOW email task; model a greeting, concise summary, character opinion and closing.  
+**Pupils:** Draft an email to a friend explaining the story, what characters did and whether it was enjoyable.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Collect the original draft and mark strengths and targeted improvements for return in Lesson 119.  
+**Pupils:** Keep the first draft available; note one likely correction rather than rewriting it immediately.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What makes this story interesting?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.154 Activity 3 for reflective discussion.  
+**Pupils:** Explain one reason to recommend or not recommend the story.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

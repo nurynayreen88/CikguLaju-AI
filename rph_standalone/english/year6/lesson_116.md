@@ -7,32 +7,32 @@
 **Language focus:** Modal verbs: might (not), may (not), could  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 100; Teacher Book pages 158-159  
-**Learning objective:** Ask about and describe 3 future plans or events linked to a short story.  
-**PBD evidence:** Three appropriate future-plan statements and two relevant questions.
+**Learning objective:** Use might, may and could to describe three possible future events, then co-write a dialogue based on PB p.100 and an additional picture.  
+**PBD evidence:** Three intelligible oral predictions (Speaking 2.1.4), with two correctly connected written possibility sentences (Writing 4.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.158 Warm-up What are they saying? with a discussion picture.  
+**Pupils:** Guess what a speaker might say in the scene.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What makes this story interesting?”, drawing on Modal verbs: might (not), may (not), could.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Distribute the PB p.100 vocabulary-definition matching worksheet.  
+**Pupils:** Match unfamiliar boxed words and check each with a partner.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide picture prompts for the unit future events and model appropriate future-time questions.  
-**Pupils:** Interview a partner and describe three specific future plans in complete sentences.
+**Teacher:** Follow TB p.158 Activity 1 using verified audio or accurate dialogue read-aloud.  
+**Pupils:** Listen, act out the printed dialogue and identify modal possibility forms.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Guide TB pp.158–159 Activities 2–3: write possibility sentences and reuse them in dialogue.  
+**Pupils:** Create three predictions with might/may/could, then perform a new paired exchange.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess natural expression of possibility and coherence of the short written lines.  
+**Pupils:** Show a written modal form and clarify one prediction.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What makes this story interesting?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.158 Cooler Predict the weather.  
+**Pupils:** State one possible weather event using may, might or could.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

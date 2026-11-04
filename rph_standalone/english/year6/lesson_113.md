@@ -7,32 +7,32 @@
 **Language focus:** 1st conditional if clauses. (If + present, will + vb, e.g. If you ask him, he’ll paint…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 96-97; Teacher Book pages 152-153  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a short story.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read the PB pp.96–97 moral story independently, identify its main message and explain two personal responses using details from the text.  
+**PBD evidence:** A text-supported main message (Reading 3.2.1) and two reasoned personal responses to independent reading (Reading 3.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review famous characters from Malaysian folktales and other cultures.  
+**Pupils:** Name a familiar moral story and predict its lesson.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce character, setting, problem, ending and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: 1st conditional if clauses. (If + present, will + vb, e.g. If you ask him, he’ll paint…).  
-**Pupils:** Predict the text from story sequence panels; highlight two useful clues or words.
+**Teacher:** Follow TB p.152 Famous Characters and Activity 1 to preview the pictures.  
+**Pupils:** Predict the setting and events using two picture clues.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a short story; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Give independent time for TB p.152 Activity 2 before discussing the ending.  
+**Pupils:** Read PB pp.96–97 at a comfortable pace and identify a likely moral.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a short story. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Guide TB p.153 Activities 3–4; compare morals from pupils' cultures and infer context words.  
+**Pupils:** Discuss the story's message, support it with two events and infer two words.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check main idea and independent response without rushing weaker readers.  
+**Pupils:** Point to a text clue and correct one unsupported interpretation.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What makes this story interesting?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.152 Cooler What's the word?  
+**Pupils:** Explain one new word and state the moral in their own words.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

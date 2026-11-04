@@ -7,32 +7,32 @@
 **Language focus:** 1st conditional if clauses (If + present, will / might / may / could + vb: e.g. If I go to Japan, I might visit…)  
 **Duration:** 60 minutes  
 **Materials:** Future prediction picture cards; teacher-prepared materials  
-**Learning objective:** Ask about and describe 3 future plans or events linked to a short story.  
-**PBD evidence:** Three appropriate future-plan statements and two relevant questions.
+**Learning objective:** Give three plausible predictions using may/might/could and make three connected first-conditional responses about picture-card topics.  
+**PBD evidence:** Three clear future possibilities expressed orally (Speaking 2.1.4) and three meaningfully linked written sentences (Writing 4.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review an if + present future sentence from PB p.99.  
+**Pupils:** Say one plausible first-conditional prediction.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What makes this story interesting?”, drawing on 1st conditional if clauses (If + present, will / might / may / could + vb: e.g. If I go to Japan,….  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Display personal or global topic picture cards and ask groups for associated words.  
+**Pupils:** Brainstorm vocabulary for holidays, the environment and other card topics.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide picture prompts for the unit future events and model appropriate future-time questions.  
-**Pupils:** Interview a partner and describe three specific future plans in complete sentences.
+**Teacher:** Run the SOW circle game: each pupil adds a distinct modal prediction to a topic card.  
+**Pupils:** State a new might/may/could prediction before passing the card.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Pair learners; pupil A predicts an outcome and B responds using if + present, may/might/could.  
+**Pupils:** Exchange roles and write three paired conditional responses in notebooks.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check understandable modal use and sentence cohesion.  
+**Pupils:** Correct one unclear possibility and read the clearest written example.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What makes this story interesting?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite groups to select their most original prediction.  
+**Pupils:** Explain why the selected prediction is possible.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
