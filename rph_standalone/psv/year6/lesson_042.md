@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyusun semula ruang pameran, memulangkan alat dan merekod dua penambahbaikan untuk projek seni berikutnya. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyusun semula ruang pameran, memulangkan alat dan merekod dua penambahbaikan untuk projek seni berikutnya. Kriteria kejayaan: Senarai alatan lengkap, ruang bersih dan dua catatan refleksi individu.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Refleksi dan pengurusan selepas pameran akhir tahun** dalam tema **Projek Seni Visual**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
