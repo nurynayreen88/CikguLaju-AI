@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 3.3, 4.3, 5.2  
 **SP:** 3.3.1, 4.3.1, 4.3.2, 5.2.2  
-**Buku teks:** calon m/s 68 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 74-75, disemak visual pada Buku Teks Pendidikan Jasmani Tahun 6.
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 3.3.1 (melakukan senaman regangan khusus pada otot-otot yang terlibat dalam aktiviti fizikal yang akan dilakukan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 4.3.1: Mengenal pasti senaman regangan yang boleh meningkatkan kelenturan pada sendi-sendi tertentu.

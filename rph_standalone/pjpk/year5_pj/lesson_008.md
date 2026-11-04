@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.4, 2.4, 5.2  
 **SP:** 1.4.1, 1.4.2, 2.4.1, 5.2.1  
-**Buku teks:** calon m/s 9 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 9, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.4.1 (menyokong badan di atas palang dengan kedua-dua belah tangan dan mengayun badan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.4.1: Mengenal pasti posisi badan dan kaki yang sesuai semasa sokongan di atas palang, bergayut songsang dan mengayun.

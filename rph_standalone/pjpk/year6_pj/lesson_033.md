@@ -1,25 +1,25 @@
 # RPH Pendidikan Jasmani Tahun 6 — PdP 033
-**Status:** DRAF TERHALANG — KONFLIK DSKP/RPT SP 5.2.2  
-**Unit/Tajuk:** REKOD KESIHATAN DAN KECERGASAN  
-**Fasa PdP:** Amali dan aplikasi  
-**SK:** 3.5, 4.5, 5.3  
-**SP:** 3.5.1, 4.5.1, 4.5.2, 5.3.3  
-**Buku teks:** calon m/s 69 daripada RPT 2026; belum disahkan pada buku teks  
+**Status:** DRAF CADANGAN — menunggu semakan kualiti pedagogi dan ujian Telegram
+**Unit/Tajuk:** REKOD KESIHATAN DAN KECERGASAN
+**Fasa PdP:** Amali dan aplikasi
+**SK:** 3.5, 4.5, 5.3
+**SP:** 3.5.1, 4.5.1, 4.5.2, 5.3.2
+**Buku teks:** m/s 78–79, disemak visual pada Buku Teks Pendidikan Jasmani Tahun 6; gunakan rujukan norma kesihatan rasmi yang masih berkuat kuasa.
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
-**Objektif:** (1) Merekod atau melaksanakan tugasan SP 3.5.1 secara tepat dan sulit, kemudian mentafsir hasil berpandukan panduan guru. (2) Menerangkan satu konsep berkaitan SP 4.5.1: Membanding Indeks Jisim Badan (BMI) sendiri dengan norma.
+**Objektif:** (1) Mengukur ketinggian dan berat badan menggunakan prosedur selamat serta merekodkan bacaan secara sulit. (2) Mentafsir BMI sendiri dengan bimbingan guru, menyatakan sekurang-kurangnya dua cara mengurangkan risiko penyakit hipokinetik dan menyumbang idea tanpa mendedahkan data kesihatan rakan.
 
-**Set induksi:** Guru menunjukkan cabaran "REKOD KESIHATAN DAN KECERGASAN" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menunjukkan ilustrasi m/s 78–79 tentang ukuran dan gaya hidup sihat. Murid menyatakan mengapa data ukuran badan bersifat peribadi dan bagaimana aktiviti fizikal membantu kesihatan.
 
-**Aktiviti 1 — Rekod dan kefahaman kesihatan:** Guru tunjuk penggunaan alat serta kaedah merekod bacaan individu; murid menyemak posisi dan membaca skala dengan bantuan. Murid menunjukkan semula langkah asas berdasarkan SP 3.5.1.
+**Aktiviti 1 — Pengukuran dan rekod peribadi:** Guru menerangkan penggunaan alat ukur tinggi dan berat serta prosedur kerahsiaan; murid melaksanakan pengukuran mengikut prosedur sekolah dan mencatat hanya dalam rekod individu. Guru membantu murid memahami BMI dan norma yang sesuai secara tertutup, tanpa mengumumkan bacaan atau membuat perbandingan antara murid.
 
-**Aktiviti 2 — Aplikasi:** Murid merekod ukuran/ujian individu mengikut prosedur sekolah; guru memberi maklum balas sulit dan membimbing tafsiran yang berkaitan dengan kecergasan. 
+**Aktiviti 2 — Cegah penyakit hipokinetik:** Guru merujuk rajah m/s 79 lalu membahagikan murid kepada kumpulan untuk mengenal pasti amalan sihat seperti aktiviti fizikal, pemakanan seimbang, tidur cukup dan pengurusan stres. Murid bergilir memberi satu cadangan, mendengar pendapat rakan dan menghasilkan dua langkah praktikal untuk mengurangkan risiko, tanpa berkongsi angka BMI.
 
-**Pengukuhan/PBD:** Guru menilai teknik pengukuran, ketepatan rekod dan tafsiran individu menggunakan senarai semak individu. Murid menerangkan satu konsep SP 4.5.1 dan menerima maklum balas. Guru memerhati sikap SP 5.3.3. Guru menilai pengukuran di ruang terlindung menggunakan rekod individu. Jangan meminta murid membandingkan BMI di hadapan kelas.
+**Pengukuhan/PBD:** Senarai semak individu menilai teknik penggunaan alat, ketepatan merekod secara sulit, kefahaman asas mentafsir BMI dan dua cara mengurangkan risiko penyakit hipokinetik. Rekod perbincangan menilai kebolehan mendengar pendapat serta menyumbang idea (SP 5.3.2); bukan menilai murid mengikut kategori BMI atau berat badan.
 
-**Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
+**Penutup:** Murid merumus dua langkah gaya hidup sihat dan satu amalan menjaga privasi; guru mengingatkan kepentingan aktiviti fizikal mengikut keupayaan dan menyimpan rekod pengukuran dengan selamat.
 
-**BBM:** alat ukur/borang SEGAK jika berkaitan, kad rekod individu, carta rujukan rasmi.  
-**Keselamatan/inklusif:** Jangan umumkan atau bandingkan berat/BMI murid di hadapan kelas; simpan rekod secara sulit dan gunakan prosedur sekolah.
+**BBM:** Buku Teks PJ Tahun 6 m/s 78–79, pita pengukur/stadiometer, penimbang, borang rekod individu terlindung, panduan norma BMI semasa yang diluluskan sekolah.
+**Keselamatan/inklusif:** Pengukuran dibuat secara sopan dan tertutup mengikut prosedur sekolah; jangan umumkan, paparkan atau bandingkan BMI murid, dan sediakan alternatif pedagogi yang menjaga maruah serta keperluan murid.
 
-**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **BLOK:** Kod SP 5.2.2 daripada RPT asal bertentangan dengan konteks/teks DSKP Tahun 6; tidak disertakan dalam SP RPH cadangan ini. RPT induk belum dipinda. KONFLIK DSKP/RPT, tidak boleh READY.
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view) · [Buku Teks PJ Tahun 6](https://drive.google.com/file/d/1Y87xc3kHS4D0mSRxNQ8syYS8B-Y9CVmZ/view). RPT sumber mengandungi SP 5.2.2 tanpa SK induk 5.2; DSKP mengesahkan kod itu wujud tetapi aktiviti buku teks m/s 78–79 menyokong 3.5.1/4.5.1/4.5.2/5.3.2. Padanan bagi PdP ini diselaraskan sebagai cadangan kurikulum, bukan pengesahan READY.

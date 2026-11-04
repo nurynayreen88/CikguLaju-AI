@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.8, 2.8, 5.4  
 **SP:** 1.8.5, 2.8.4, 5.4.7  
-**Buku teks:** calon m/s 30 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 30, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.8.5 (membaling bola menggunakan balingan bawah pada pelbagai kelajuan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.8.4: Mengenal pasti titik pelepasan (point of release) paling sesuai semasa melepaskan bola dalam kemahiran balingan bawah.

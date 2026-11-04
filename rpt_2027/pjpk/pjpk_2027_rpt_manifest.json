@@ -9,14 +9,17 @@
     "PJ3": "https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit",
     "PJ456": "https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit",
     "PK": "https://github.com/nurynayreen88/CikguLaju-AI/tree/audit/pjpk-crosswalk-reconcile-20261104/rpt_staging/pjpk",
-    "calendar": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit"
+    "calendar": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit",
+    "PJ5_textbook": "https://drive.google.com/file/d/1M1kVxL7sliEUbi9vuuZ6llRVtmPjBuJE/view",
+    "PJ6_textbook": "https://drive.google.com/file/d/1Y87xc3kHS4D0mSRxNQ8syYS8B-Y9CVmZ/view",
+    "DSKP6": "https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view"
   },
   "note": "Takwim: slot calon A/B dari RPT PJ3 2027 dan PJ4-6 v57; cuti negeri/cuti gantian perlu guru sahkan; PK PdP ditempatkan sekata sebagai cadangan, bukan jadual rasmi.",
   "exceptions": {
     "year1": "KP2027 DK belum disahkan; tidak dimasukkan",
     "PJ2_aquatic_inserts": "4 sisipan belum disahkan; tidak dimasukkan",
-    "PJ6_033": "BLOK: konflik SP 5.2.2 dengan sumber DSKP, jangan iklankan READY",
-    "PJ5_6_pages": "31 rujukan halaman belum disahkan; jangan reka"
+    "PJ6_033": "Pembetulan cadangan berdasar DSKP 2021 dan buku PJ T6 bercetak m/s 78–79: buang SP 5.2.2 (bukan kandungan buku ini), selaras SP 5.3.2. DRAF sehingga QA menyeluruh.",
+    "PJ5_6_pages": "31 rujukan halaman calon disemak secara visual pada buku asal (28 PJ T5, 3 PJ T6); PJ T5 PdP027 diselaraskan 44–46. Semakan kandungan semua halaman lain dan signoff guru masih terbuka."
   },
   "weeks": [
     {
@@ -2710,7 +2713,7 @@
         "2.1.1",
         "5.4.7"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "2",
       "week": 1,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2731,7 +2734,7 @@
         "2.1.2",
         "5.2.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "3",
       "week": 2,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2752,7 +2755,7 @@
         "2.1.2",
         "5.2.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "4",
       "week": 3,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2773,7 +2776,7 @@
         "2.2.1",
         "5.4.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "5",
       "week": 4,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2794,7 +2797,7 @@
         "2.2.1",
         "5.1.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "6",
       "week": 5,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2815,7 +2818,7 @@
         "2.3.1",
         "5.2.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "7",
       "week": 7,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2836,7 +2839,7 @@
         "2.3.1",
         "5.1.4"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "8",
       "week": 8,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2858,7 +2861,7 @@
         "2.4.1",
         "5.2.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "9",
       "week": 9,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2880,7 +2883,7 @@
         "2.5.1",
         "5.4.7"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "12-13",
       "week": 10,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2902,7 +2905,7 @@
         "2.5.1",
         "5.4.7"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "12-13",
       "week": 11,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2927,7 +2930,7 @@
         "2.6.5",
         "5.4.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "16-17",
       "week": 12,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2952,7 +2955,7 @@
         "2.6.5",
         "5.4.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "16-17",
       "week": 13,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -2997,7 +3000,7 @@
         "2.6.6",
         "5.4.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "19",
       "week": 15,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3020,7 +3023,7 @@
         "2.7.2",
         "5.2.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "22",
       "week": 16,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3041,7 +3044,7 @@
         "2.7.3",
         "5.4.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "23",
       "week": 17,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3067,7 +3070,7 @@
         "5.3.2",
         "5.4.4"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "24-25",
       "week": 18,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3089,7 +3092,7 @@
         "2.8.1",
         "5.4.2"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "28",
       "week": 20,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3111,7 +3114,7 @@
         "2.8.3",
         "5.3.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "29",
       "week": 21,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3132,7 +3135,7 @@
         "2.8.4",
         "5.4.7"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "30",
       "week": 22,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3153,7 +3156,7 @@
         "2.8.5",
         "5.1.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "31",
       "week": 23,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3177,7 +3180,7 @@
         "2.9.3",
         "5.4.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "34-35",
       "week": 24,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3198,7 +3201,7 @@
         "2.9.4",
         "5.3.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "36-37",
       "week": 25,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3219,7 +3222,7 @@
         "2.10.1",
         "5.2.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "38-39",
       "week": 26,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3240,7 +3243,7 @@
         "2.10.2",
         "5.1.4"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "40-41",
       "week": 27,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3261,7 +3264,7 @@
         "2.11.1",
         "5.1.2"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "42-43",
       "week": 28,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3283,7 +3286,7 @@
         "5.1.3",
         "5.1.4"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "44-46",
       "week": 29,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3304,7 +3307,7 @@
         "2.14.1",
         "5.4.1"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "54-55",
       "week": 30,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -3395,7 +3398,7 @@
         "5.2.1",
         "5.4.5"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "60-61",
       "week": 34,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -4115,7 +4118,7 @@
         "4.3.2",
         "5.2.2"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "74-75",
       "week": 34,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
@@ -4135,14 +4138,15 @@
         "3.5.1",
         "4.5.1",
         "4.5.2",
-        "5.2.2",
-        "5.3.3"
+        "5.3.2"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "78-79",
       "week": 35,
       "origin": "PJ456_2027_RPT",
-      "status": "BLOK_KONFLIK_SK_SP",
-      "ready": false
+      "status": "DRAF_CADANGAN",
+      "ready": false,
+      "activity_source": "Guru membimbing pengukuran berat dan tinggi secara sulit; murid merekod bacaan individu, mentafsir BMI dengan panduan norma yang sesuai. Kemudian, pasangan membincangkan cara mengurangkan risiko penyakit hipokinetik tanpa berkongsi data peribadi, mendengar cadangan dan membina satu pelan gaya hidup aktif.",
+      "assessment_source": "Senarai semak: ukur tinggi/berat dengan betul, tafsir bacaan sendiri secara sulit, nyatakan sekurang-kurangnya dua langkah mengurangkan risiko penyakit hipokinetik, serta mendengar dan menyumbang idea semasa menyelesaikan masalah. Jangan dedahkan ukuran BMI murid."
     },
     {
       "year": 6,
@@ -4162,7 +4166,7 @@
         "4.6.2",
         "5.3.4"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "80-81",
       "week": 36,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",

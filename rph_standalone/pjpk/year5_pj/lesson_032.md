@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 3.1, 4.1, 5.2, 5.4  
 **SP:** 3.1.1, 3.1.2, 3.1.3, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 5.2.1, 5.4.5  
-**Buku teks:** calon m/s 60-61 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 60-61, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 3.1.1 (melakukan aktiviti memanaskan badan yang khusus berdasarkan aktiviti fizikal yang akan dilakukan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 4.1.1: Mengenal pasti aktiviti yang sesuai untuk senaman memanaskan badan yang khusus berdasarkan aktiviti fizikal yang akan dilakukan.

@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.2, 2.2, 5.1  
 **SP:** 1.2.2, 2.2.1, 5.1.3  
-**Buku teks:** calon m/s 6 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 6, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.2.2 (melakukan hambur arab dengan sokongan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.2.1: Menjelaskan aplikasi daya semasa melakukan Lombol Kangkang dan Hambur Arab.

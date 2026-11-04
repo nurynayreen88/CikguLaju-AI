@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.8, 2.8, 5.4  
 **SP:** 1.8.1, 1.8.2, 2.8.1, 5.4.2  
-**Buku teks:** calon m/s 28 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 28, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.8.1 (membaling bola dengan tangan lurus mengikut arah pusingan jam ke petak sasaran) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.8.1: Menyatakan cara membaling bola dengan tangan lurus ke petak sasaran.

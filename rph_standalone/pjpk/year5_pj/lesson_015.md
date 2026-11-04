@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.7, 2.7, 5.2  
 **SP:** 1.7.1, 1.7.2, 2.7.1, 2.7.2, 5.2.3  
-**Buku teks:** calon m/s 22 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 22, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.7.1 (melakukan pelbagai jenis servis menggunakan anggota badan dan alatan yang dibenarkan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.7.1: Mengenal pasti titik kontak dan lakuan ikut lajak untuk menghasilkan pelbagai jenis servis dan hantaran.

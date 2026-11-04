@@ -57,7 +57,8 @@ jobs:
               assert "MINGGU PENGAJARAN 01" in text
               assert "MINGGU PENGAJARAN 38" in text
               if "Tahun_6_" in file.name:
-                  assert "BLOK" in text and "5.2.2" in text
+                  assert "REKOD KESIHATAN DAN KECERGASAN" in " ".join(text.split()) and "78-79" in text
+                  assert "BLOK - konflik" not in text
           zipfile=Path("dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip")
           with ZipFile(zipfile) as z:
               assert len(z.namelist())==11

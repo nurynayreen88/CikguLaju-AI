@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.8, 2.8, 5.1  
 **SP:** 1.8.6, 2.8.5, 5.1.3  
-**Buku teks:** calon m/s 31 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 31, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.8.6 (menangkap bola yang melantun) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.8.5: Menerangkan kedudukan tangan semasa menangkap bola lantun.

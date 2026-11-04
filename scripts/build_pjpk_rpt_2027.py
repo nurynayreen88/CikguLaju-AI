@@ -54,9 +54,6 @@ def _fields(path):
 
 
 def _record_activity(rec):
-    if rec["year"] == 6 and rec["subject"] == "PJ" and rec["pdp"] == 33:
-        return ("BLOK: SK/SP sumber belum diselaraskan. RPH tidak dikeluarkan.",
-                "Jangan jadikan PdP ini sebagai READY.")
     subj = rec["subject"].lower()
     path = ROOT / f"rph_standalone/pjpk/year{rec['year']}_{subj}/lesson_{rec['pdp']:03d}.md"
     if not path.is_file():
@@ -193,8 +190,8 @@ def _pdf(year, out, weeks, records):
         _p("PdP ialah identiti kandungan; minggu ialah slot cadangan. Tarikh A/B "
            "tertakluk kepada jadual guru, perayaan, cuti negeri, cuti gantian dan "
            "takwim sekolah. Tahun 1 KP2027 belum dimasukkan. Empat sisipan Akuatik "
-           "Tahun 2 belum disahkan. PJ Tahun 6 PdP 033 disekat kerana konflik SP 5.2.2. "
-           "Halaman PJ Tahun 5/6 yang belum disahkan tidak direka.", subtitle),
+           "Tahun 2 belum disahkan. PJ Tahun 6 PdP 033 diselaraskan dengan DSKP dan buku teks, masih DRAF. "
+           "31 halaman calon Tahun 5/6 telah disemak; kelulusan guru belum lengkap.", subtitle),
         _p("Sumber: RPT PJ Tahun 2/3/4–6 2027 dalam Drive CikguLaju, DSKP PK "
            "Tahun 2–6, RPT induk 2027. Sila semak buku teks dan PdP sebelum mengajar.", subtitle)
     ])
@@ -265,7 +262,7 @@ def _docx(year, out, weeks, records):
         doc.add_paragraph("")
     doc.add_paragraph("CATATAN: Tarikh A/B hanya cadangan slot; semak jadual, "
                       "cuti negeri dan sumber asal. Tahun 1 dan sisipan Akuatik T2 "
-                      "tidak termasuk. PJ T6 PdP033 tidak boleh READY.")
+                      "tidak termasuk. Semua PdP masih DRAF sehingga audit dan kelulusan guru.")
     doc.save(str(out))
 
 
@@ -288,8 +285,8 @@ def build(outdir):
         "RPT ini berdasarkan 176 PJ dan 163 PK calon PdP, dipadankan dengan RPH sedia ada.\n"
         "Minggu adalah slot cadangan, bukan identiti PdP; tarikh cuti negeri dan\n"
         "jadual guru perlu ditentukan sekolah. Tahun 1 KP2027 tidak termasuk.\n"
-        "Empat sisipan Akuatik T2 tidak termasuk. PJ Tahun 6 PdP 033 BLOK kerana\n"
-        "konflik kod 5.2.2 dalam sumber. Halaman buku T5/T6 belum semua disahkan.\n"
+        "Empat sisipan Akuatik T2 tidak termasuk. PJ Tahun 6 PdP 033 diselaraskan\n"
+        "berdasarkan buku teks. 31 halaman calon T5/T6 disemak, audit lain masih terbuka.\n"
         "Semua status DRAF, tidak disahkan sebagai RPT rasmi KPM atau READY.\n",
         encoding="utf-8")
     zipname = outdir.parent / "RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip"

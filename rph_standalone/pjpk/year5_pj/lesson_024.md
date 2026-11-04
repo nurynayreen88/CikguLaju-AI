@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.10, 2.10, 5.2  
 **SP:** 1.10.1, 2.10.1, 5.2.1  
-**Buku teks:** calon m/s 38-39 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 38-39, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.10.1 (berlari dan melompat menggunakan sebelah kaki dan mendarat dengan kedua-dua belah kaki pada satu jarak) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.10.1: Mengenal pasti perkaitan antara kelajuan berlari dengan jarak lompatan.

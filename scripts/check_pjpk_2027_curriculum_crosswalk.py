@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Read-only curriculum crosswalk for PJPK 2027 staging, no READY promotions.
 
-Verify all 339 RPT rows against numbered RPH source documents. The exception
-Year 6 PJ PdP 033 is deliberately blocked due to conflicting source SP.
+Verify all 339 RPT rows against numbered RPH source documents, including
+reconciled Year 6 PJ PdP 033. All READY flags stay false.
 """
 from __future__ import annotations
 import collections
@@ -17,7 +17,9 @@ HEAD = re.compile(r"^\*\*([^*\n]+?):\*\*\s*(.*?)\s*$", re.M)
 S = re.compile(r"(?<!\d)\d+\.\d+(?![\d.])")
 P = re.compile(r"(?<!\d)\d+\.\d+\.\d+(?![\d.])")
 EXPECTED = {2: (37,35), 3:(38,32), 4:(34,32), 5:(33,32), 6:(34,32)}
-BLOCKED = (6,"PJ",33)
+RESOLVED = (6,"PJ",33)
+YEAR5_PAGES={1:"2",2:"3",3:"4",4:"5",5:"6",6:"7",7:"8",8:"9",9:"12-13",10:"12-13",11:"16-17",12:"16-17",14:"19",15:"22",16:"23",17:"24-25",18:"28",19:"29",20:"30",21:"31",22:"34-35",23:"36-37",24:"38-39",25:"40-41",26:"42-43",27:"44-46",28:"54-55",32:"60-61"}
+YEAR6_PAGES={32:"74-75",33:"78-79",34:"80-81"}
 
 
 def inspect(root=ROOT):
@@ -40,12 +42,14 @@ def inspect(root=ROOT):
         if rec["ready"] is not False:
             issues.append(f"Unexpected READY: {key}")
         if any(x.rsplit(".",1)[0] not in rec["sk"] for x in rec["sp"]):
-            if key != BLOCKED:
-                issues.append(f"SP parent SK mismatch: {key}")
-        if key == BLOCKED:
-            if rec["status"]!="BLOK_KONFLIK_SK_SP" or "5.2.2" not in rec["sp"]:
-                issues.append("Y6 PJ033 must remain source-conflict BLOCKED")
-            continue
+            issues.append(f"SP parent SK mismatch: {key}")
+        if key == RESOLVED:
+            if rec["sp"] != ["3.5.1","4.5.1","4.5.2","5.3.2"] or rec["sk"] != ["3.5","4.5","5.3"]:
+                issues.append("Y6 PJ033 DSKP/textbook reconciliation regressed")
+        if kind == "PJ" and year in (5,6):
+            expected=(YEAR5_PAGES if year==5 else YEAR6_PAGES).get(num)
+            if expected is not None and rec["bt"] != expected:
+                issues.append(f"Verified textbook page mismatch: {key}")
         if rec["status"]!="DRAF_CADANGAN":
             issues.append(f"Unsafe status: {key} = {rec['status']}")
         path=root / f"rph_standalone/pjpk/year{year}_{kind.lower()}/lesson_{num:03d}.md"
@@ -61,6 +65,10 @@ def inspect(root=ROOT):
             issues.append(f"Title differs RPT/RPH: {key}: {title} != {rec['title']}")
         if S.findall(labels.get("sk",""))!=rec["sk"] or P.findall(labels.get("sp",""))!=rec["sp"]:
             issues.append(f"SK/SP mismatch: {key}")
+        if kind=="PJ" and year in (5,6):
+            expected=(YEAR5_PAGES if year==5 else YEAR6_PAGES).get(num)
+            if expected is not None and not re.search(r"m/s\s+"+re.escape(expected)+r"\b",labels.get("buku teks","")):
+                issues.append(f"RPH verified textbook page mismatch: {key}")
         if not (labels.get("objektif") or labels.get("objektif pembelajaran")):
             issues.append(f"Missing objectives: {key}")
         activities=[(k,v) for k,v in labels.items() if re.match(r"aktiviti [12]\b",k)]
@@ -93,9 +101,9 @@ def inspect(root=ROOT):
     return {
         "status":"PASS_STATIC" if not issues else "FAIL",
         "rpt_records":len(records),
-        "rph_numbered_checked":len(records)-1,
+        "rph_numbered_checked":len(records),
         "year_counts":{str(y):{"PJ":count[(y,"PJ")],"PK":count[(y,"PK")]} for y in EXPECTED},
-        "known_blocked":[BLOCKED],
+        "known_blocked":[],
         "duplicate_activity_groups":len(duplicate_activity_groups),
         "repeated_activity_evidence":list(duplicate_activity_groups.items())[:30],
         "issues":issues,
