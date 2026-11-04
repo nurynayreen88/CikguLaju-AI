@@ -7,32 +7,32 @@
 **Language focus:** Used to / didn’t use to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.24; TB p.48; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Recognise and independently reproduce at least 5 target phonemes or modelled words related to life then and now.  
-**PBD evidence:** Five correctly recognised and reproduced sounds or words, with minimal prompting.
+**Learning objective:** Recognise and pronounce used to in a recorded or teacher-modelled dialogue, then produce at least four intelligible used to questions and responses about past routines.  
+**PBD evidence:** Correct recognition and production of the reduced pronunciation of used to (Listening 1.1.1) and relevant responses to four supported past-routine questions (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review PB p.24 Working with Words and recall that Samuel Pepys was a writer.  
+**Pupils:** Match one noun and related verb and suggest how grandparents' lives differed.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach transport, homes, past routines; display then-and-now photographs and ask pupils to predict what they may hear. Emphasise the language focus: Used to / didn’t use to.  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.48 Vocabulary and Activity 1; use the written dialogue to model used to/didn't use to in positive, negative and question forms.  
+**Pupils:** Identify two examples describing what grandparents or Samuel Pepys used to do.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Read aloud verified word examples from the cited material, modelling five target sounds and their contrasts.  
-**Pupils:** Listen and discriminate five items, then reproduce the sounds/words independently.
+**Teacher:** Use a verified recording or read the exact printed dialogue aloud; teach the reduced spoken form /ˈjuːstə/ in positive and negative sentences.  
+**Pupils:** Listen carefully to used to, repeat the reduced pronunciation and practise four correct past-routine statements or questions.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about life then and now, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide PB p.26 Activities 2–4/TB p.48: pairs create a new dialogue and ask used to questions about past routines.  
+**Pupils:** Rehearse a short dialogue, ask and answer four questions, and listen for the target pronunciation.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Record intelligible pronunciation of used to and understanding of the partner's questions; correct one example.  
+**Pupils:** Pronounce used to in a sentence and independently answer two supported past-routine questions.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Play the TB p.48 Cooler tic-tac-toe review with positive and negative used to examples.  
+**Pupils:** Produce one correct question and one clear response about a former habit.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

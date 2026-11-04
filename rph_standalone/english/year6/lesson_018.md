@@ -7,32 +7,32 @@
 **Language focus:** Used to / didn’t use to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.22–24; TB pp.44–45  
-**Learning objective:** Produce, check and improve a draft of two paragraphs on life then and now, making at least two meaningful revisions.  
-**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
+**Learning objective:** Use PB pp.22–24 to create a clear comparison table showing at least three similarities or differences between life in the past and life now, and correct spelling after peer feedback.  
+**PBD evidence:** Three relevant comparisons and a readable past-versus-present table (Writing 4.3.3); one reading-supported detail from the earlier Pepys text (Reading 3.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show a historical London picture and a present-day local scene to review the previous reading.  
+**Pupils:** Recall one fact about Samuel Pepys and say one difference between past and present.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How was everyday life different in the past?”. Highlight useful language: Used to / didn’t use to.  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to life then and now.
+**Teacher:** Use PB p.24 Activity 1 and TB pp.44–45 Activity 2 to reorder the text and discuss life in historical London.  
+**Pupils:** Sequence the given sentences, check against PB pp.22–23 and describe one text-supported change.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
-**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
+**Teacher:** Follow TB p.45 Activity 3 and model a two-column similarities/differences table for London and a Malaysian town.  
+**Pupils:** Brainstorm three differences or similarities between life 50–100 years ago and today, then draft a labelled comparison table.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Invite pairs to refine a paper poster or digital table; encourage dictionary checks and accurate historical vocabulary.  
+**Pupils:** Present a legible comparison table, check the spellings and give a partner one content correction.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess accuracy, clarity and spelling in the table; ask which comparison comes directly from the reading.  
+**Pupils:** Show three credible comparisons and correct one spelling or factual issue.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Conduct the SOW gallery walk and ask pupils to comment on a classmate's comparison.  
+**Pupils:** Explain one past-versus-present difference and give specific helpful feedback.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

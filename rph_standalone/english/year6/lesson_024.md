@@ -7,32 +7,32 @@
 **Language focus:** Past tenses review (including used to)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.27; TB pp.50–51; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about life then and now with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Understand the main details of a spoken description of a classroom in the past and accurately spell at least four common classroom words.  
+**PBD evidence:** Four listening facts about a classroom long ago (Listening 1.2.2), plus four accurate common classroom words in short notes (Writing 4.3.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Ask pupils what classroom objects they can see now and which might have existed fifty years ago.  
+**Pupils:** Name two current classroom items and predict whether they existed in the past.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach transport, homes, past routines; display then-and-now photographs and ask pupils to predict what they may hear. Emphasise the language focus: Past tenses review (including used to).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Run the SOW two-minute classroom vocabulary brainstorm and guide pupils to circle objects found in older classrooms.  
+**Pupils:** List classroom objects, discuss spelling and compare the list with PB p.27 picture.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Follow TB pp.50–51 Activities 2–3 with a verified audio source or an accurate teacher reading of the printed text.  
+**Pupils:** Listen for words matching the historical classroom picture and record four details from the listening task.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about life then and now, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Guide TB p.51 Activity 4: pupils make notes on past classrooms and discuss the unit Values question.  
+**Pupils:** Write four correctly spelled classroom words, share one historical comparison and discuss a relevant value.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four listened details and common-word spelling, replaying/readjusting one part where support is needed.  
+**Pupils:** Show their listening notes and correct two spelling or detail errors.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review an object that changed between classrooms of the past and the present.  
+**Pupils:** Say one accurate comparison and spell one classroom word aloud.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

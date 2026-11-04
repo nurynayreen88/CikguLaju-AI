@@ -7,32 +7,32 @@
 **Language focus:** Informal written language (e.g. Yuck!; Ha! Ha! Ha!)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.28; TB p.52  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on life then and now.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read Gemma's diary in PB p.28, identify its main idea and two supporting details, and recognise three examples of informal diary language.  
+**PBD evidence:** Supported gist choice and two text details (Reading 3.2.1/3.2.2), plus three identified informal diary expressions.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show a traditional diary and a diary-style blog and ask how Samuel Pepys recorded events.  
+**Pupils:** Identify one similarity between a diary and a modern blog.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce transport, homes, past routines and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Informal written language (e.g. Yuck!; Ha! Ha! Ha!).  
-**Pupils:** Predict the text from then-and-now photographs; highlight two useful clues or words.
+**Teacher:** Follow TB p.52 Activity 1; introduce Pepys' diary and Gemma's diary in PB p.28, predicting their purpose.  
+**Pupils:** Compare the two diaries and predict whether Gemma enjoyed her day.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about life then and now; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Follow TB p.52 Activities 2–3; ask a gist question, then guide rereading for informal expressions such as Yuck! and Ha! Ha! Ha!.  
+**Pupils:** Read Gemma's diary, decide whether she had a good day with evidence and underline three informal expressions.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to life then and now. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Guide pairs to compare Gemma's day with their own yesterday, using too, also or as well.  
+**Pupils:** Find two supported details and tell a partner which diary events were also true yesterday.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check the diary gist, two text details and three informal expressions; explain any misplaced evidence.  
+**Pupils:** Show two precise reading clues and correct one interpretation.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review one informal expression through a short TB Games Bank task.  
+**Pupils:** Explain when informal diary language is appropriate and state one fact from Gemma's diary.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
