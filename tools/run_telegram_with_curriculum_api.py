@@ -25,6 +25,17 @@ except Exception as _y6_rph_exc:
     print("English Year 6 RPH bridge unavailable:", repr(_y6_rph_exc), flush=True)
 
 
+# The existing Year 4 text-only adapter does not feed Word/PDF rendering.
+# Patch the final shared RPH row constructor for fixed-SOW, reviewed Year 4
+# standalone lessons; preserve draft teacher-choice lessons and all quotas.
+try:
+    from web.english_y4_standalone_runtime import install_rows as install_english_y4_rows
+    ENGLISH_Y4_WORD_PDF_ROWS_ACTIVE = install_english_y4_rows(telegram_runtime)
+except Exception as _y4_rows_exc:
+    ENGLISH_Y4_WORD_PDF_ROWS_ACTIVE = False
+    print("English Year 4 Word/PDF row bridge unavailable:", repr(_y4_rows_exc), flush=True)
+
+
 # Compact the Year 6 English RPH Word layout only after source creation.
 # The 8pt A4 layout passed eight representative offline Word->PDF samples;
 # content, existing PDF generator, user DB and quota accounting are untouched.
