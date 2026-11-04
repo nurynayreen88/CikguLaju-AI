@@ -41,6 +41,14 @@ Direct visual inspection of three original books **identified and corrected a mi
 
 Audio content and authenticated Telegram file delivery remain unverified. Both original MP3s have different hashes and Drive link-reader permissions, but neither is proof of spoken-content matching. The five final-release gates remain false: correct recording speech, Telegram MP3 routing, teacher Word download, teacher native PDF download, and teacher pedagogical approval.
 
+## Telegram routing hotfix — Year 4 Lesson 30 (4 Nov 2026)
+
+A direct static review of the **actual `app.py` blob** found that three historical media dictionaries — `_EN4_AUDIO_ALL_V25257`, `_EN4_AUDIO_ALL_V25258`, and `_EN4_AUDIO_ALL_V25259` — still mapped **Lesson 30 to CD2 Track 29**, Drive ID `1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob`, despite the printed task-specific Teacher's Book and updated standalone RPH referring to **CD1 Track 29**. The production media picker calls `_available_materials_v2528`; its submit path calls `_send_reference_material_v2528`. A separate legacy `_send_reference_material` bypass route also exists. This was a genuine **wrong-audio-delivery risk**, not just an audit note.
+
+A fail-closed adapter, `web/english_y4_l030_audio_guard.py`, now installs last from `tools/run_telegram_with_curriculum_api.py` (the Render WSGI entrypoint). It suppresses the three stale L30 map entries, removes **only** the Lesson 30 `media` option from the material picker, and refuses **stale audio requests** through both send functions while leaving the normal Word/PDF, textbook, other years/lessons and billing path untouched. The separately documented CD1 file is **not auto-substituted** because the spoken contents and real Telegram transfer have not been verified.
+
+The guard is regression-tested as a pure module; this is not an authenticated Telegram media-delivery test. Final audio approval stays **false** and must not be inferred from a green source/document CI run.
+
 ## Status: no blanket FINAL READY
 
 Earlier technical audit: **766** fixed-SOW document rows matched, **33** SOW teacher-choice lessons are clearly labelled CikguLaju suggestions, and **1** Lesson 30 audio conflict requires direct listening. All **800 native ReportLab PDF core builds now produce one-page A4**, but source and final-user QA remain separate.
