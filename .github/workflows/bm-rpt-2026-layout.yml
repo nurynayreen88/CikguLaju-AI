@@ -24,6 +24,7 @@ jobs:
       - name: Build five five-column PDFs from existing draft content
         run: python tools/build_bm_rpt_2026_layout.py
       - name: Attach printable PDFs, HTML preview and manifest
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: CikguLaju-BM-RPT-2027-Format-2026-PDF-DRAF
