@@ -7,32 +7,32 @@
 **Language focus:** Present simple questions & answers to talk about oneself (e.g. How many people are there in your family?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.5; TB p.19  
-**Learning objective:** Write a detailed a personal profile containing at least 5 relevant facts about a person or group linked to meeting new classmates.  
-**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
+**Learning objective:** Write at least four present-simple questions about a partner, record answers from at least two classmates and write two accurate sentences describing group members.  
+**PBD evidence:** Four understandable interview questions, notes on two group members, two revised factual sentences, and an intelligible partner question (Writing 4.2.1 / Speaking 2.1.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show profile and personality cards and ask: “How would you introduce yourself to a new classmate?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use the previous Lesson's personality name cards for a short 'Who is ...?' quiz.  
+**Pupils:** Recall two classmates' names and one descriptive adjective.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How would you introduce yourself to a new classmate?”. Highlight useful language: Present simple questions & answers to talk about oneself (e.g. How many people are there in your….  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to meeting new classmates.
+**Teacher:** Review the four children from PB p.5 Activity 1; follow TB p.19 Activity 2 to model personal-information question forms.  
+**Pupils:** Recall details from the previous reading and write at least four questions using correct present-simple word order.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
-**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
+**Teacher:** Organise partner questions, then PB p.5 Activity 3 interviews in groups of four to six; model how to record key answers.  
+**Pupils:** Ask their questions, take turns answering, and record at least two group members' answers.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Ask pupils to write about at least two group members from their notes, then guide peer checking for meaning and grammar.  
+**Pupils:** Write two factual sentences about classmates; exchange writing, check accuracy and correct one error.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check question structure, legible answer notes, factual writing and the pupil's spoken exchange separately.  
+**Pupils:** Submit questions and two revised descriptions, then ask one partner question independently.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How would you introduce yourself to a new classmate?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite two pupils to share a group fact and one well-formed question.  
+**Pupils:** Say one true fact about a classmate and ask a correct personal-information question.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
