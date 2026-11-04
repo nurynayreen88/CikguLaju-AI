@@ -80,6 +80,79 @@ except Exception as _y5_rph_exc:
     print("English Year 5 gated RPH bridge unavailable:", repr(_y5_rph_exc), flush=True)
 
 
+# Nine Year 5 teacher-choice Lessons: present clearly marked CikguLaju DRAFT
+# suggestions in native Word/PDF. The SOW prescribes no fixed CS/LS for
+# these Lessons; teachers must choose the DSKP standards before official use.
+# Separate from the existing 151 fixed-standard Year 5 release gate: none
+# of those drafts is promoted or unlocked here. No DB/credit changes.
+try:
+    from web.english_y5_teacher_choice_runtime import install as install_english_y5_choices
+    ENGLISH_Y5_TEACHER_CHOICE_PROPOSALS_ACTIVE = install_english_y5_choices(telegram_runtime)
+except Exception as _y5_choices_exc:
+    ENGLISH_Y5_TEACHER_CHOICE_PROPOSALS_ACTIVE = False
+    print("English Year 5 choice proposals unavailable:", repr(_y5_choices_exc), flush=True)
+
+
+# Apply the tested text-preserving 8pt Word A4 compact layout only to the
+# nine English Year 5 teacher-choice DRAFT proposals. Native PDF and all
+# other years/subjects retain their existing generator and layout.
+try:
+    from web.english_y5_choice_word_a4_runtime import install as install_y5_choice_word_a4
+    ENGLISH_Y5_TEACHER_CHOICE_WORD_A4_ACTIVE = install_y5_choice_word_a4(telegram_runtime)
+except Exception as _y5_choice_a4_exc:
+    ENGLISH_Y5_TEACHER_CHOICE_WORD_A4_ACTIVE = False
+    print("English Year 5 choice Word A4 unavailable:", repr(_y5_choice_a4_exc), flush=True)
+
+
+
+# Year 4's 149 provisionally reviewed fixed-SOW lessons are preserved.
+# The other ten teacher-choice lessons and L30 audio-conflict lesson are
+# now available ONLY as explicitly labelled DRAF previews. No invented SPs.
+try:
+    from web.english_y4_pending_draft_preview_runtime import install as install_y4_pending_drafts
+    ENGLISH_Y4_PENDING_DRAFT_PREVIEW_ACTIVE = install_y4_pending_drafts(telegram_runtime)
+except Exception as _y4_pending_exc:
+    ENGLISH_Y4_PENDING_DRAFT_PREVIEW_ACTIVE = False
+    print("English Year 4 pending draft preview unavailable:", repr(_y4_pending_exc), flush=True)
+
+
+# Year 5's other 151 fixed SOW lesson plans already parse and match source
+# standards but lack final content/audio/A4/teacher sign-off. Show these as
+# clearly labelled DRAFT suggestions in Word/PDF, not as FINAL READY; keep
+# the separate byte-bound release-approval gate intact. Nine teacher-choice
+# lessons remain handled by the previously installed proposal adapter.
+try:
+    from web.english_y5_fixed_draft_preview_runtime import install as install_y5_fixed_preview
+    ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE = install_y5_fixed_preview(telegram_runtime)
+except Exception as _y5_fixed_preview_exc:
+    ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE = False
+    print("English Year 5 fixed draft preview unavailable:", repr(_y5_fixed_preview_exc), flush=True)
+
+
+# Offline A4 parity fix for only the new Year4 (11) and Year5 (151)
+# provisional Word previews. The nine Year5 teacher-choice proposals retain
+# their already deployed Word A4 handler. No changes to native PDF, credits,
+# database, or other years/subjects.
+try:
+    from web.english_y4_y5_draft_word_a4_runtime import install as install_y4_y5_draft_word_a4
+    ENGLISH_Y4_Y5_DRAFT_WORD_A4_ACTIVE = install_y4_y5_draft_word_a4(telegram_runtime)
+except Exception as _y4_y5_word_exc:
+    ENGLISH_Y4_Y5_DRAFT_WORD_A4_ACTIVE = False
+    print("English Year 4/5 draft Word A4 unavailable:", repr(_y4_y5_word_exc), flush=True)
+
+
+
+# The AST-locked 149-Lesson Year4 Word audit found only Lesson 002 needs
+# compact A4 margins. Keep the 148 other reviewed Year4 lessons unchanged.
+# Native PDF, other subjects, the user DB and all quota checks are untouched.
+try:
+    from web.english_y4_l002_word_a4_runtime import install as install_english_y4_l002_a4
+    ENGLISH_Y4_L002_WORD_A4_ACTIVE = install_english_y4_l002_a4(telegram_runtime)
+except Exception as _y4_l002_a4_exc:
+    ENGLISH_Y4_L002_WORD_A4_ACTIVE = False
+    print("English Y4 Lesson 002 Word A4 unavailable:", repr(_y4_l002_a4_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
@@ -142,3 +215,31 @@ try:
 except Exception as _pjpk_preview_exc:
     PJPK_2027_PREVIEW_INSTALLED = False
     print("PJPK preview unavailable:", repr(_pjpk_preview_exc), flush=True)
+
+
+# PJPK RPT 2027 (PDF DRAF) — read-only paid-gated route.
+# Installed after English/BM/Math/PI so all other callbacks remain intact.
+try:
+    from rpt_2027.pjpk.telegram_downloads import install as install_pjpk_rpt_2027
+    PJPK_RPT_2027_TELEGRAM_ACTIVE = install_pjpk_rpt_2027(vars(telegram_runtime))
+except Exception as _pjpk_rpt_2027_exc:
+    PJPK_RPT_2027_TELEGRAM_ACTIVE = False
+    print("PJPK RPT 2027 download route unavailable:", repr(_pjpk_rpt_2027_exc), flush=True)
+
+# Opt-out 80%-ready Moral source bridge for the existing native Word/PDF RPH.
+# Only Moral Years 2-6 / correctly mapped PdP rows; no DB or quota mutations.
+try:
+    from web.pendidikan_moral_80_runtime import install as install_moral_80
+    MORAL_80_RPH_ACTIVE = install_moral_80(telegram_runtime)
+except Exception as _moral80_exc:
+    MORAL_80_RPH_ACTIVE = False
+    print("Moral 80 RPH bridge unavailable:", repr(_moral80_exc), flush=True)
+
+
+# 2027 Moral proposed RPT PDF generated on demand from the staged CSV sequence.
+try:
+    from rpt_2027.pendidikan_moral.telegram_downloads import install as install_moral_rpt_2027
+    MORAL_RPT_2027_TELEGRAM_ACTIVE = install_moral_rpt_2027(vars(telegram_runtime))
+except Exception as _moralrpt_exc:
+    MORAL_RPT_2027_TELEGRAM_ACTIVE = False
+    print("Moral RPT 2027 download route unavailable:", repr(_moralrpt_exc), flush=True)
