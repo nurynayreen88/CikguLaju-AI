@@ -7,32 +7,32 @@
 **Language focus:** Past tenses review, e.g. He got up and checked the time on his mobile phone.  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.31  
-**Learning objective:** Narrate a factual or imagined event linked to life then and now in at least 6 ordered sentences.  
-**PBD evidence:** Narrative with 6 ordered sentences, correct event vocabulary and at least 2 sequence connectors.
+**Learning objective:** Write a brief scene about grandparents' younger days using past tenses and direct speech, deliberately include three out-of-time objects and revise them after a reading exchange.  
+**PBD evidence:** A coherent short historical scene with three purposeful inaccuracies and direct speech (Writing 4.2.3), plus evidence-based corrections made by a peer reader (Reading 3.2.4).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review six Unit 2 past-life words with a spelling challenge.  
+**Pupils:** Spell two historical words accurately and describe one old object.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How was everyday life different in the past?”. Highlight useful language: Past tenses review, e.g. He got up and checked the time on his mobile phone..  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to life then and now.
+**Teacher:** Review PB p.31 Activity 3 and the time-machine text; model how an out-of-time item changes a historical scene.  
+**Pupils:** Identify one object that would be anachronistic in grandparents' younger days.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model the difference between opening, linked events and ending; focus on the narrative forms in this RPT Lesson.  
-**Pupils:** Draft a six-sentence account with a beginning, chronological events and a suitable ending.
+**Teacher:** Ask pairs to brainstorm a family-life scene from their grandparents' youth and plan three deliberate historical inaccuracies.  
+**Pupils:** Plan a short dialogue or scene with a clear past setting and three modern objects that do not belong.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Use PB p.31 Activity 1 as the model and guide groups to write with direct speech; have groups exchange and read each other's draft.  
+**Pupils:** Write a short scene with past-tense verbs, a quotation and three deliberate wrong-time details; use a dictionary to check a word.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Collect peers' three corrections and assess the scene's sequence, grammar and appropriate historical setting.  
+**Pupils:** Identify another group's three inaccuracies and correct one line of their own scene after feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask how life has become easier since grandparents were young, using a concrete contrast.  
+**Pupils:** Give one accurate old-versus-modern comparison and explain an improvement.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
