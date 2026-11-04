@@ -1,0 +1,40 @@
+# RPH Standalone Bahasa Melayu Tahun 6 — PdP 133
+
+**ID:** BM6-P133  
+**Minggu RPT 2027:** M31 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Berjaya  
+**Tajuk aktiviti:** Usahawan Telur Asin  
+**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan situasi tidak formal.  
+**Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan dan menyebut semula ujaran yang terdapat dalam pelbagai situasi  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 173  
+**Fokus:** lisan — Usahawan Telur Asin  
+**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Usahawan Telur Asin' mengikut kemahiran 1.1.1.  
+**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+
+## Set induksi (5 minit)
+**Guru:** Memaparkan judul/ilustrasi 'Usahawan Telur Asin' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Berjaya.  
+**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+
+## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
+**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Usahawan Telur Asin' dan meminta murid mengenal pasti isi serta sebutan penting.  
+**Murid:** Mendengar/meneliti bahan 'Usahawan Telur Asin'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+
+## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
+**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Usahawan Telur Asin'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
+**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+
+## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
+**Guru:** Menilai berdasarkan SP (1.1.1 — Mendengar, mengecam sebutan dan menyebut semula ujaran yang terdapat dalam pelbagai situasi) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
+**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+
+## Penutup (5 minit)
+**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Usahawan Telur Asin' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
+**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+
+**Nota RPT asal:** Mendengar/Bertutur; Pemerhatian respons lisan
+
+**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
+
+**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
+**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.

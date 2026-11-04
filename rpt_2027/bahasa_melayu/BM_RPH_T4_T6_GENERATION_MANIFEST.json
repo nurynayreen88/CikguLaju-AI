@@ -1,0 +1,28 @@
+{
+  "subject": "Bahasa Melayu SK",
+  "year": 2027,
+  "status": "DRAFT_NOT_PUBLISHED",
+  "years": {
+    "4": {
+      "pdp": 165,
+      "rph_files": 165,
+      "draft": 0,
+      "hold_source": 165,
+      "ready": 0
+    },
+    "5": {
+      "pdp": 166,
+      "rph_files": 166,
+      "draft": 0,
+      "hold_source": 166,
+      "ready": 0
+    },
+    "6": {
+      "pdp": 165,
+      "rph_files": 165,
+      "draft": 0,
+      "hold_source": 165,
+      "ready": 0
+    }
+  }
+}
