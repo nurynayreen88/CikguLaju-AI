@@ -6,6 +6,7 @@ reward rules before being enabled. Existing payment/entitlement flows win.
 """
 import os
 import re
+import hmac
 import secrets
 from urllib.parse import quote
 
@@ -31,6 +32,9 @@ def install(ns):
     """Install transparent, fail-closed wrappers; never change production unless opt-in."""
     if not enabled():
         return False
+    secret = os.getenv("CIKGULAJU_TELEGRAM_WEBHOOK_SECRET", "")
+    if len(secret) < 16:
+        raise RuntimeError("Private referral requires a Telegram webhook secret")
     app = ns["app"]
     previous_webhook = app.view_functions["webhook"]
     previous_callback = ns["callback"]
@@ -158,6 +162,9 @@ def install(ns):
         return result
 
     def webhook():
+        token = str(ns["request"].headers.get("X-Telegram-Bot-Api-Secret-Token", "") or "")
+        if not hmac.compare_digest(token, secret):
+            return ns["jsonify"]({"ok":False,"error":"unauthorized"}), 403
         update = ns["request"].get_json(silent=True) or {}
         msg = update.get("message") or {}
         if not is_private_message(msg):
