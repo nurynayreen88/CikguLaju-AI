@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 037
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 037
 
 **ID:** BM3-P037  
 **Tema/Unit:** Kesihatan dan Kebersihan; U5: Kebersihan Tanggungjawab Bersama  
@@ -9,7 +9,7 @@
 **Rujukan RPT:** BT1 m/s 31; BA m/s 36-37  
 **Bahan:** BT1 m/s 31 Dapur Bersih dan BA1 m/s 36–37; buku latihan dan kad/lembaran respons.  
 **Masa cadangan:** 60 minit mengikut jadual guru.  
-**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima kata adjektif tepat; sesi aplikasi susulan Lesson 033.
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima kata adjektif tepat; sesi aplikasi susulan PdP 033.
 
 ## Set induksi (5 minit)
 **Guru:** Menunjukkan BT1 m/s 31 Dapur Bersih dan BA1 m/s 36–37 dan mengemukakan satu soalan pemula.
@@ -24,7 +24,7 @@
 **Murid:** Melengkapkan peta pengelasan serta lima ayat tentang kebersihan dapur.
 
 ## Pengukuhan / PBD (15 minit)
-**Guru:** Menyemak lima kata adjektif tepat; sesi aplikasi susulan Lesson 033; merekod bukti respons atau hasil bertulis.
+**Guru:** Menyemak lima kata adjektif tepat; sesi aplikasi susulan PdP 033; merekod bukti respons atau hasil bertulis.
 **Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
