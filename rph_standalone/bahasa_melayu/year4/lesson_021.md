@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 021
 
-**ID:** BM4-P021  
-**Minggu RPT 2027:** M07 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U4: Saya Sihat  
-**Tajuk aktiviti:** Perihal Penderma Darah  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 23  
-**Fokus:** bacaan — Perihal Penderma Darah  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Perihal Penderma Darah' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P021
+**Minggu RPT 2027:** M07 (tarikh PdP sebenar ikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U4: Saya Sihat
+**Tajuk aktiviti:** Perihal Penderma Darah
+**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
+**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 23. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Poster Syarat-syarat Menderma Darah yang diperhatikan Nazri ketika menemani ibunya ke klinik.
+**Objektif PdP:** Pada akhir PdP, murid dapat menganalisis maklumat pada poster syarat derma darah dan melengkapkan Peta Bulatan dengan sekurang-kurangnya empat fakta.
+**Bahan:** BT pada halaman berkenaan, bahan respons/lembaran berpandu berdasarkan tugas tersebut dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Perihal Penderma Darah' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U4: Saya Sihat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar konteks Nazri melihat poster pendermaan darah di klinik.
+**Murid:** Nyatakan sebab poster kesihatan perlu dibaca dengan teliti.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Perihal Penderma Darah' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Perihal Penderma Darah' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Bimbingan Buku Teks (15 minit)
+**Guru:** Bimbing bacaan poster pada BT m/s 23 mengenai umur, kesihatan dan persediaan penderma; modelkan cara membezakan maklumat utama dengan huraian.
+**Murid:** Kenal pasti fakta yang benar-benar dinyatakan dalam bahan, termasuk julat umur dalam poster asal.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjukkan kerangka Peta Bulatan 'Syarat Derma Darah' dan bimbing rujukan fakta poster kepada setiap cabang.
+**Murid:** Lengkapkan Peta Bulatan dengan sekurang-kurangnya empat syarat/penjelasan dan nyatakan sumber maklumat.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak empat fakta dan kesesuaian kategori tanpa menambah nasihat perubatan yang tiada dalam sumber.
+**Murid:** Baiki fakta yang kurang tepat dan terangkan dua isi utama poster.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Perihal Penderma Darah' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kepentingan memahami maklumat kesihatan.
+**Murid:** Nyatakan satu sebab masyarakat membaca poster rasmi sebelum melakukan sesuatu aktiviti.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 23 mengarahkan membaca poster Syarat-syarat Menderma Darah serta melengkapkan Peta Bulatan.
+**Status QA:** DRAF — kandungan aktiviti dan halaman BT disemak; BA, PKJR (jika berkaitan), takwim negeri, visual Word/PDF A4 dan ujian Telegram belum lulus. Bukan FINAL READY, jangan terbitkan.

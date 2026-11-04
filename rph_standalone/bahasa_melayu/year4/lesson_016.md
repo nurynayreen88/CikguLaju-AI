@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 016
 
-**ID:** BM4-P016  
-**Minggu RPT 2027:** M05 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kemasyarakatan; U3: Masyarakat Berilmu  
-**Tajuk aktiviti:** 10 Minit Sahaja  
-**Standard Kandungan (SK):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.  
-**Standard Pembelajaran (SP):** 4.2.2 — Menyanyikan lagu mengikut irama lagu rakyat, dan menjelaskan maksud lirik lagu  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 16  
-**Fokus:** seni — 10 Minit Sahaja  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan '10 Minit Sahaja' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P016
+**Minggu RPT 2027:** M05 (tarikh PdP sebenar ikut jadual sekolah)
+**Tema/Unit:** Kemasyarakatan; U3: Masyarakat Berilmu
+**Tajuk aktiviti:** 10 Minit Sahaja
+**Standard Kandungan (SK):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.
+**Standard Pembelajaran (SP):** 4.2.2 — Menyanyikan lagu mengikut irama lagu rakyat, dan menjelaskan maksud lirik lagu
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 16. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Lagu tentang membaca selama sepuluh minit setiap hari, berirama lagu rakyat Anak Ayam.
+**Objektif PdP:** Pada akhir PdP, murid dapat menyanyikan lagu mengikut irama yang sesuai dan menerangkan sekurang-kurangnya dua maksud daripada lirik berkaitan amalan membaca.
+**Bahan:** BT pada halaman berkenaan, bahan respons/lembaran berpandu berdasarkan tugas tersebut dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi '10 Minit Sahaja' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U3: Masyarakat Berilmu.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tanya apakah bahan bacaan yang dipilih apabila diberi masa sepuluh minit.
+**Murid:** Namakan buku atau bahan yang ingin dibaca dan berikan sebab.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam '10 Minit Sahaja'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan '10 Minit Sahaja' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Bimbingan Buku Teks (15 minit)
+**Guru:** Pandu murid meneliti lirik pada BT m/s 16, kenal pasti ajakan membaca dan faedah ilmu; modelkan rentak yang dinyatakan oleh buku tanpa mengubah melodinya.
+**Murid:** Kenal pasti dua mesej utama lirik dan berlatih menyebut kata dengan jelas.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Bimbing kumpulan menyanyikan lagu pada halaman asal dan menerangkan maksud baris tentang minat membaca serta pengetahuan.
+**Murid:** Nyanyikan lagu mengikut irama yang dipandu guru, kemudian huraikan dua maksud lirik dengan bahasa sendiri.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.2.2 — Menyanyikan lagu mengikut irama lagu rakyat, dan menjelaskan maksud lirik lagu) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Perhatikan sebutan, penghayatan dan ketepatan dua penjelasan maksud lirik.
+**Murid:** Jelaskan sebab membaca selama sepuluh minit bermanfaat; betulkan tafsiran yang kurang tepat.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam '10 Minit Sahaja' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan amalan membaca dan penjelasan maksud lirik.
+**Murid:** Nyatakan satu sasaran membaca harian.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 16 meminta murid menyanyikan lagu tentang sepuluh minit membaca dan menjelaskan maksud lirik, dengan rujukan melodi Anak Ayam.
+**Status QA:** DRAF — kandungan aktiviti dan halaman BT disemak; BA, PKJR (jika berkaitan), takwim negeri, visual Word/PDF A4 dan ujian Telegram belum lulus. Bukan FINAL READY, jangan terbitkan.
