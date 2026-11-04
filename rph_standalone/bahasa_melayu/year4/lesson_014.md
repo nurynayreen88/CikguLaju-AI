@@ -6,27 +6,27 @@
 **Tajuk aktiviti:** Mari Membaca + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 4  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 14 — bacaan e-buku cerita masyarakat rama-rama; modul PKJR masih perlu pengesahan  
 **Fokus:** bacaan — Mari Membaca  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Mari Membaca' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat menerangkan dua peristiwa dan dua nilai murni daripada cerita masyarakat rama-rama pada BT m/s 14 dengan bukti teks.  
+**Bahan:** BT BM SK Tahun 4 m/s 14 (cerita e-buku masyarakat rama-rama), peta cerita dan borang PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
 **Guru:** Memaparkan judul/ilustrasi 'Mari Membaca' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U3: Masyarakat Berilmu.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Mari Membaca' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Mari Membaca' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Analisis sumber yang disahkan (15 minit)
+**Guru:** Memodelkan bacaan cerita masyarakat rama-rama daripada e-buku pada BT m/s 14 dan menunjukkan ayat berwarna yang menyampaikan nilai.
+**Murid:** Membaca petikan dan menandakan dua peristiwa yang menyokong pengajaran cerita.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Membimbing pembinaan peta watak–peristiwa–pengajaran dan meminta alasan berdasarkan ayat asal.
+**Murid:** Menganalisis cerita, menjelaskan dua peristiwa serta dua nilai murni berpandukan bukti teks.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menyemak peta cerita dan ketepatan bukti teks; **tidak menilai PKJR** sebelum pemetaan modul disahkan.
+**Murid:** Membetulkan satu tafsiran yang tidak disokong petikan.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Mari Membaca' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
