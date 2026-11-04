@@ -1,0 +1,618 @@
+{
+  "status": "VISUAL_VERIFIED_10_UNITS_30_PDP",
+  "date": "2026-11-04",
+  "method": "Direct visual inspection of original scanned textbook PDF pages; 1-based PDF pages; teacher activities are adapted tasks, not verbatim copyrighted text.",
+  "scope": "Years 2–6, units 2 and 3 only, 30 RPH. No verification claimed for other lessons.",
+  "records": [
+    {
+      "year": 2,
+      "unit": 2,
+      "title": "Baik Hati Keluarga Bahagia",
+      "printed": [
+        7,
+        12
+      ],
+      "pdf": [
+        16,
+        21
+      ],
+      "phases": [
+        {
+          "pages": [
+            7,
+            9
+          ],
+          "goal": "Murid menyenaraikan sekurang-kurangnya tiga bantuan kepada keluarga dan menjelaskan dua cara melakukannya.",
+          "a": "Guru menayangkan gambar m/s 7: membantu nenek, menjaga adik, memberi ubat dan meminjamkan pensel. Murid mengelaskan bantuan mengikut penerima serta keperluan.",
+          "b": "Guru membimbing carta tindakan–kesan–perasaan pada m/s 8–9. Murid memilih dua bantuan, menerangkan cara yang selamat dan sebab bantuan itu sesuai.",
+          "e": "Kad keluar: tiga jenis bantuan, dua cara dan satu sebab; guru menyemak bukti individu.",
+          "pdf": [
+            16,
+            18
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            8,
+            10
+          ],
+          "goal": "Murid menganalisis dua kesan bantuan kepada keluarga dan menzahirkan satu perasaan berserta sebab.",
+          "a": "Guru meneliti rajah tindakan–kesan–perasaan pada m/s 8–9: mengemas katil, membantu membaca, meringankan kerja ibu. Murid memadankan tindakan dengan kesannya.",
+          "b": "Berdasarkan latihan gunting dan tampal m/s 10, murid membandingkan bantuan yang sesuai dengan keadaan, kemudian membina ayat perasaan kerana bantuan diterima.",
+          "e": "Jadual dua tindakan–dua kesan dan satu ayat perasaan beralasan; guru menilai ketepatan penaakulan.",
+          "pdf": [
+            17,
+            19
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            11,
+            12
+          ],
+          "goal": "Murid memperagakan dua tindakan baik hati yang sesuai dalam situasi keluarga dan membuat refleksi kendiri.",
+          "a": "Guru menunjukkan situasi m/s 11: ayah baru pulang, kakak menyapu halaman dan emak mengemas meja. Murid memilih bantuan yang paling diperlukan dan menyatakan alasannya.",
+          "b": "Murid melakonkan bantuan dengan selamat kemudian memadankan situasi Uji Diri m/s 12 dengan tindakan: mengelap lantai, mencuci basikal, membuang sampah, mengalihkan pakaian atau menyapu daun.",
+          "e": "Senarai semak dua tindakan diperagakan dan satu refleksi; lakonan tidak disamakan dengan bukti amalan di rumah.",
+          "pdf": [
+            20,
+            21
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b"
+    },
+    {
+      "year": 2,
+      "unit": 3,
+      "title": "Tanggungjawab Saya Dalam Keluarga",
+      "printed": [
+        13,
+        18
+      ],
+      "pdf": [
+        22,
+        27
+      ],
+      "phases": [
+        {
+          "pages": [
+            13,
+            15
+          ],
+          "goal": "Murid mengenal pasti sekurang-kurangnya tiga tanggungjawab keluarga dan menghuraikan kepentingan dua daripadanya.",
+          "a": "Guru memaparkan empat gambar m/s 13: mendengar nasihat ayah, membantu ibu, menemani kakak dan menjaga keselamatan adik. Murid menyenaraikan tanggungjawab.",
+          "b": "Murid meneliti m/s 14–15 tentang hubungan erat, keselamatan keluarga, meringankan tugas dan membanggakan keluarga, lalu memadankan tindakan dengan kepentingan.",
+          "e": "Dua pasangan tindakan–kepentingan serta satu sebab; guru menyemak respons.",
+          "pdf": [
+            22,
+            24
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            14,
+            16
+          ],
+          "goal": "Murid menghuraikan dua kesan melaksanakan tanggungjawab dan mengekspresikan satu perasaan berkaitan.",
+          "a": "Guru membandingkan situasi menjaga pintu pagar, menolong nenek dan belajar bersungguh-sungguh pada m/s 14–15. Murid menerangkan apa yang terjadi jika tugas diabaikan.",
+          "b": "Murid membina 'Rumah Tanggungjawab' seperti m/s 16; pada tiga bahagian rumah murid menulis tindakan, kepentingan dan perasaan berserta alasan.",
+          "e": "Semak dua hubungan tindakan–kesan dan satu ayat perasaan yang dapat dijelaskan.",
+          "pdf": [
+            23,
+            25
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            17,
+            18
+          ],
+          "goal": "Murid mempraktikkan dua bentuk tanggungjawab keluarga dalam simulasi dan menilai pilihan tindakan.",
+          "a": "Murid meneliti album tanggungjawab pada m/s 17: membantu berkebun, membuang sampah, mengemas dan menyapu. Guru menetapkan tugasan berkumpulan yang selamat.",
+          "b": "Murid menghasilkan kad album kecil berisi dua perbuatan, kemudian menggunakan jadual Uji Diri m/s 18 untuk membandingkan tindakan bertanggungjawab dan akibatnya.",
+          "e": "Guru merekod dua tindakan dalam simulasi, satu penerangan sebab dan satu refleksi. Tidak membuat dakwaan amalan rumah tanpa bukti.",
+          "pdf": [
+            26,
+            27
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b"
+    },
+    {
+      "year": 3,
+      "unit": 2,
+      "title": "Baik Hati Nilai Mulia",
+      "printed": [
+        9,
+        16
+      ],
+      "pdf": [
+        15,
+        22
+      ],
+      "phases": [
+        {
+          "pages": [
+            9,
+            11
+          ],
+          "goal": "Murid menyenaraikan tiga bantuan kepada warga sekolah dan mengenal pasti cara pelaksanaannya.",
+          "a": "Guru menggunakan sajak Sekolahku m/s 9 untuk mengenal pasti bantuan tanpa mengharapkan balasan. Murid mencatat siapa yang memerlukan pertolongan.",
+          "b": "Guru membentangkan cerita kantin terbakar dan tabung sumbangan pada m/s 10–11; murid membina peta tindakan membantu penjaga kantin, guru, murid dan warga sekolah.",
+          "e": "Tiga contoh bantuan dan dua cara; guru menilai kesesuaian tindakan terhadap situasi sekolah.",
+          "pdf": [
+            15,
+            17
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            10,
+            12
+          ],
+          "goal": "Murid menghuraikan kepentingan bantuan kepada warga sekolah dan menyatakan perasaan berserta sebab.",
+          "a": "Murid membandingkan gambar sumbangan dan kesan kepada penjaga kantin m/s 10–11. Guru meminta alasan mengapa derma dan nasihat boleh meringankan beban.",
+          "b": "Berdasarkan pilihan tindakan membantu Freeda pada m/s 12, murid memilih orang yang patut dihubungi dan menyatakan perasaan pihak yang menerima bantuan.",
+          "e": "Dua sebab/kepentingan bantuan dan satu ayat perasaan dengan sebab; guru semak hujah.",
+          "pdf": [
+            16,
+            18
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            13,
+            16
+          ],
+          "goal": "Murid menunjukkan sikap membantu warga sekolah melalui tindakan simulasi dan membuat refleksi.",
+          "a": "Guru memaparkan gambar mengangkat barang dan membantu selepas tumpahan air pada m/s 13. Murid memadankan tindakan dan akibat jika tidak membantu.",
+          "b": "Murid bermain ekspedisi stesen m/s 14–15 dengan kad tindakan (kehilangan wang saku, guru mengemas buku, rakan cedera); kemudian menjawab Uji Minda m/s 16.",
+          "e": "Senarai semak tindakan praktikal, respons setiap stesen dan satu refleksi. Bezakan lakonan daripada amalan berulang.",
+          "pdf": [
+            19,
+            22
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl"
+    },
+    {
+      "year": 3,
+      "unit": 3,
+      "title": "Murid Bertanggungjawab",
+      "printed": [
+        17,
+        24
+      ],
+      "pdf": [
+        23,
+        30
+      ],
+      "phases": [
+        {
+          "pages": [
+            17,
+            19
+          ],
+          "goal": "Murid menyenaraikan tiga tugas di sekolah dan menerangkan dua cara melaksanakannya.",
+          "a": "Guru memperlihatkan Unit 3 m/s 17: mengemas kelas, menjaga kebersihan dan mematuhi peraturan. Murid menamakan tindakan yang sesuai.",
+          "b": "Murid meneliti tugas pengawas pusat sumber, pengawas kantin dan ketua kelas pada m/s 18–19 lalu menyediakan jadual tugas, cara dan pihak yang terbantu.",
+          "e": "Jadual tiga tugas sekolah dengan dua penerangan cara; guru semak bukti individu.",
+          "pdf": [
+            23,
+            25
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            18,
+            20
+          ],
+          "goal": "Murid menghuraikan kepentingan tanggungjawab sekolah dan mengekspresikan satu perasaan beralasan.",
+          "a": "Guru memaparkan contoh ketua kelas menutup suis kipas dan pengawas kebersihan kantin m/s 18–19. Murid membandingkan kesan jika tugas dipatuhi dan diabaikan.",
+          "b": "Murid menggunakan jadual tanggungjawab–kepentingan–perasaan pada m/s 20, memilih contoh membersihkan kelas, mematuhi peraturan dan menjelaskan emosi.",
+          "e": "Dua kepentingan dengan sebab dan satu ayat perasaan beralasan; guru menilai.",
+          "pdf": [
+            24,
+            26
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            21,
+            24
+          ],
+          "goal": "Murid menunjukkan dua amalan bertanggungjawab di sekolah dan menghasilkan refleksi berdasarkan evidens.",
+          "a": "Murid memerhati foto amalan semasa guru mengajar, di kantin dan sebelum kelas bermula pada m/s 21, lalu memilih tugas yang boleh dilakukan.",
+          "b": "Mengikuti 'Tanggungjawab Bersama' dan Projek Sudut Pendidikan Moral m/s 22–23, murid melaksanakan tugasan kumpulan yang dibahagi adil; lengkapkan semakan diri m/s 24.",
+          "e": "Senarai semak dua perlakuan, tugas kumpulan disiapkan dan satu refleksi; bukti amalan sebenar dicatat berasingan.",
+          "pdf": [
+            27,
+            30
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl"
+    },
+    {
+      "year": 4,
+      "unit": 2,
+      "title": "Sikap Prihatin Amalan Mulia",
+      "printed": [
+        10,
+        19
+      ],
+      "pdf": [
+        16,
+        25
+      ],
+      "phases": [
+        {
+          "pages": [
+            10,
+            12
+          ],
+          "goal": "Murid memberikan dua contoh sikap prihatin terhadap jiran dan menerangkan cara memberi bantuan.",
+          "a": "Guru membacakan kisah Juhar dan Mukesh selepas kemalangan serta kehilangan punca pendapatan pada m/s 10–11. Murid mengenal pasti keperluan jiran.",
+          "b": "Murid merujuk senarai bantuan akibat ribut, kemalangan, kerosakan lif dan majlis jiran pada m/s 12, memilih dua tindakan dan menerangkan cara yang sesuai.",
+          "e": "Dua contoh berserta cara dan keperluan sebenar; elak cadangan bantuan yang membahayakan murid.",
+          "pdf": [
+            16,
+            18
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            12,
+            15
+          ],
+          "goal": "Murid menilai kesan prihatin kepada kebajikan jiran dan mengekspresikan perasaan dengan alasan.",
+          "a": "Guru membentangkan situasi lif rosak, pokok tumbang dan jamuan jiran pada m/s 12–13. Murid membina hubungan bantuan–kesan–perasaan.",
+          "b": "Murid membincangkan kebakaran rumah dan Program Jiran Prihatin m/s 14–15, menerangkan mengapa pemulihan bantuan bersama mengukuhkan hubungan kejiranan.",
+          "e": "Dua kesan/kepentingan dengan justifikasi dan satu ayat perasaan yang relevan.",
+          "pdf": [
+            18,
+            21
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            16,
+            19
+          ],
+          "goal": "Murid mempraktikkan dua perlakuan prihatin secara selamat dan menghasilkan cadangan membantu jiran.",
+          "a": "Guru mengajak murid meneliti diorama 'Mari Membina Rumah' m/s 16 dan peta minda 'Jiran Selesa Hati Riang' m/s 17 sebagai model perancangan bantuan.",
+          "b": "Murid membina kad cadangan/diorama kecil bantuan keperluan jiran dengan peranan kumpulan, kemudian membuat refleksi tindakan berhemah; elakkan memerlukan lawatan rumah sebenar.",
+          "e": "Senarai semak dua tindakan simulasi, satu cadangan yang boleh dilaksanakan serta refleksi; jangan membuat inferens amalan rumah.",
+          "pdf": [
+            22,
+            25
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j"
+    },
+    {
+      "year": 4,
+      "unit": 3,
+      "title": "Tanggungjawab Hidup Berjiran",
+      "printed": [
+        20,
+        27
+      ],
+      "pdf": [
+        26,
+        33
+      ],
+      "phases": [
+        {
+          "pages": [
+            20,
+            22
+          ],
+          "goal": "Murid memberikan dua contoh tanggungjawab kepada jiran dan menerangkan cara melaksanakannya.",
+          "a": "Guru membacakan deklamasi m/s 20 dan peta minda menjaga haiwan jiran, menghormati jiran dan menghubungi bantuan apabila diperlukan pada m/s 21.",
+          "b": "Murid meneliti dialog menasihati rakan, menanam semula pokok dan menjaga kebersihan kawasan pada m/s 22, lalu membina kad situasi tindakan yang bertanggungjawab.",
+          "e": "Dua contoh dan dua cara melaksanakan tanggungjawab; guru semak bukti.",
+          "pdf": [
+            26,
+            28
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            22,
+            24
+          ],
+          "goal": "Murid membuat justifikasi kepentingan tanggungjawab jiran dan mengungkapkan perasaan beralasan.",
+          "a": "Guru memaparkan dialog dan cerita nyamuk Aedes di kawasan rumah pada m/s 22–23; murid menentukan tanggungjawab menghapuskan tempat pembiakan.",
+          "b": "Murid menganalisis kempen pencegahan Aedes dan brosur m/s 24, memberi dua justifikasi mengapa tindakan bersama jiran perlu dilakukan.",
+          "e": "Dua justifikasi tindakan–kepentingan dan satu ayat perasaan yang menjelaskan keselamatan jiran.",
+          "pdf": [
+            28,
+            30
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            25,
+            26
+          ],
+          "goal": "Murid memperagakan amalan bertanggungjawab terhadap jiran melalui simulasi dan merekod refleksi.",
+          "a": "Guru menunjukkan contoh aktiviti menghasilkan mobil tanggungjawab jiran pada m/s 25. Murid mengenal pasti amalan dan langkah selamat.",
+          "b": "Murid membina kad/mobil tiga tanggungjawab dan memperagakan respons kepada situasi yang diberikan dalam 'Mari Uji Diri' m/s 26.",
+          "e": "Senarai semak dua tindakan dalam simulasi dan satu refleksi beralasan; guru tidak menilai amalan di luar kelas tanpa evidens.",
+          "pdf": [
+            31,
+            32
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j"
+    },
+    {
+      "year": 5,
+      "unit": 2,
+      "title": "Penyeri Jiwa Masyarakat",
+      "printed": [
+        10,
+        19
+      ],
+      "pdf": [
+        13,
+        22
+      ],
+      "phases": [
+        {
+          "pages": [
+            10,
+            12
+          ],
+          "goal": "Murid menyenaraikan dua keperluan kebajikan masyarakat dan menjelaskan kepentingan peka terhadapnya.",
+          "a": "Guru menggunakan cerita Hia Hui dan keluarganya menyediakan makanan untuk orang memerlukan pada m/s 10–11; murid menamakan keperluan penerima.",
+          "b": "Guru membentangkan kisah Murugan menyumbang tabung penjaga pasar raya yang sakit pada m/s 12. Murid membandingkan bantuan makanan, dana dan sokongan moral beserta kepentingannya.",
+          "e": "Dua keperluan dan dua kepentingan disokong oleh bukti cerita; tiada tuntutan derma sebenar.",
+          "pdf": [
+            13,
+            15
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            12,
+            15
+          ],
+          "goal": "Murid memberi justifikasi kesan bantuan masyarakat dan mengekspresikan perasaan yang sesuai.",
+          "a": "Murid meneliti kes sukarelawan dan soalan peka bantuan dalam masyarakat pada m/s 12–13. Guru menyoal siapa patut dibantu dahulu dan mengapa.",
+          "b": "Murid menggunakan rancangan Projek Khidmat Masyarakat pada m/s 14–15, memilih bantuan yang sesuai dan menjelaskan kesan serta perasaan penerima.",
+          "e": "Dua alasan/kesan yang berasas dan satu ayat perasaan berserta sebab.",
+          "pdf": [
+            15,
+            18
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            16,
+            19
+          ],
+          "goal": "Murid menunjukkan tindakan baik hati yang selamat dalam simulasi projek kebajikan dan merekod refleksi.",
+          "a": "Guru menggunakan sajak 'Bantuan Dihulur, Prihatin Kita' m/s 16 dan contoh penyepit hiasan m/s 17 untuk memulakan projek kesedaran.",
+          "b": "Murid merancang dan menghasilkan kad/penanda mesej baik hati, kemudian melaksanakan simulasi bantuan kumpulan mengikut contoh laporan m/s 18.",
+          "e": "Senarai semak dua tindakan bantu dengan persetujuan dan keselamatan, bukti produk, serta satu refleksi.",
+          "pdf": [
+            19,
+            22
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz"
+    },
+    {
+      "year": 5,
+      "unit": 3,
+      "title": "Kehijauan Alam Tanggungjawab Bersama",
+      "printed": [
+        20,
+        29
+      ],
+      "pdf": [
+        23,
+        32
+      ],
+      "phases": [
+        {
+          "pages": [
+            20,
+            22
+          ],
+          "goal": "Murid menyenaraikan dua tanggungjawab anggota masyarakat dan menerangkan cara melaksanakannya.",
+          "a": "Guru membentangkan dialog mengenai Program Larian Hijau dan pokok tumbang pada m/s 20–21. Murid mengenal pasti tanggungjawab menjaga kawasan.",
+          "b": "Murid meneliti pembahagian tugas di Karnival Jom Beli Barangan Buatan Malaysia m/s 22, lalu membina jadual tugas–cara–penerima manfaat.",
+          "e": "Dua contoh tanggungjawab dan dua cara melaksanakan tugas; guru menilai.",
+          "pdf": [
+            23,
+            25
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            23,
+            25
+          ],
+          "goal": "Murid memberikan justifikasi kepentingan tanggungjawab masyarakat dan menyatakan perasaan beralasan.",
+          "a": "Guru membaca kisah tugas karnival dan contoh perkongsian kerjasama pada m/s 23; murid membandingkan hasil jika tugas dibuat atau diabaikan.",
+          "b": "Murid meneliti aktiviti kelab inovasi serta pembinaan papan kesedaran m/s 24–25, menilai dua kepentingan dan perasaan apabila kerja bersama berjaya.",
+          "e": "Dua sebab/justifikasi tindakan–hasil dan satu ayat perasaan beralasan.",
+          "pdf": [
+            26,
+            28
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            26,
+            27
+          ],
+          "goal": "Murid memperagakan dua perlakuan bertanggungjawab kepada masyarakat dan membuat refleksi.",
+          "a": "Guru memperkenalkan permainan Tunjuk Jawapan dan situasi berkaitan kebersihan/tanggungjawab masyarakat pada m/s 26–27.",
+          "b": "Murid berpasangan menyelesaikan kad situasi dan melakonkan tindak balas yang selamat, kemudian membandingkan tindakan dengan senarai semak kumpulan.",
+          "e": "Rekod pemerhatian dua perlakuan, satu tindakan penambahbaikan serta refleksi kendiri.",
+          "pdf": [
+            29,
+            30
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz"
+    },
+    {
+      "year": 6,
+      "unit": 2,
+      "title": "Rakyat Baik Hati Membawa Berkat",
+      "printed": [
+        9,
+        18
+      ],
+      "pdf": [
+        18,
+        27
+      ],
+      "phases": [
+        {
+          "pages": [
+            9,
+            11
+          ],
+          "goal": "Murid menyenaraikan tiga bentuk bantuan atau sokongan moral kepada negara dan menghuraikan dua cara memupuknya.",
+          "a": "Guru menggunakan lirik dan foto rakyat membantu mangsa bencana pada m/s 9–10. Murid mengelaskan bantuan tenaga, barangan dan sokongan moral.",
+          "b": "Murid membandingkan cerita hospital, ahli sukarelawan dan tabung bantuan m/s 11; bina peta bagaimana amalan memberi bantuan boleh dipupuk.",
+          "e": "Tiga contoh bantuan dengan dua cara memupuk amalan dan sebab yang boleh disokong bukti.",
+          "pdf": [
+            18,
+            20
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            11,
+            14
+          ],
+          "goal": "Murid menganalisis kepentingan memberi bantuan kepada negara dan mengekspresikan perasaan beralasan.",
+          "a": "Guru membentangkan sumbangan penyuaraan bantuan dan tabung bantuan pada m/s 11–12. Murid mengenal pasti penerima manfaat.",
+          "b": "Murid meneliti rancangan jualan amal dan senarai situasi bencana pada m/s 13–14, membandingkan bentuk sokongan yang sesuai tanpa kewajipan mengutip wang sebenar.",
+          "e": "Dua kepentingan/kesan yang dijustifikasikan dan satu ayat perasaan berserta sebab.",
+          "pdf": [
+            20,
+            23
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            15,
+            18
+          ],
+          "goal": "Murid memperagakan tindakan baik hati melalui aktiviti kebajikan yang selamat dan merekod refleksi.",
+          "a": "Guru memaparkan kisah bantuan rakyat dan gambar aktiviti kerjasama pada m/s 15–16. Murid mengenal pasti batas keselamatan sukarelawan.",
+          "b": "Murid mereka cipta tabung sumbangan model daripada bahan kitar semula m/s 16 (tanpa kutipan wang sebenar) dan merancang dua langkah bantuan dalam kumpulan.",
+          "e": "Senarai semak dua tindakan simulasi, produk kumpulan dan satu refleksi; kutipan wang tidak diwajibkan.",
+          "pdf": [
+            24,
+            27
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo"
+    },
+    {
+      "year": 6,
+      "unit": 3,
+      "title": "Kempen Kemanusiaan Tanggungjawab Bersama",
+      "printed": [
+        19,
+        28
+      ],
+      "pdf": [
+        28,
+        37
+      ],
+      "phases": [
+        {
+          "pages": [
+            19,
+            21
+          ],
+          "goal": "Murid menyenaraikan tiga tanggungjawab warganegara dan menerangkan cara menggalasnya.",
+          "a": "Guru membaca laporan kempen kemanusiaan selepas bencana pada m/s 19–20. Murid mengenal pasti peranan sukarelawan dan penganjur.",
+          "b": "Murid meneliti bencana gempa bumi, kebuluran, tsunami dan ribut pada m/s 21; bincang bantuan berkeutamaan mengikut keselamatan dan kemampuan.",
+          "e": "Tiga tanggungjawab serta dua cara dan alasan yang sesuai bagi situasi bencana.",
+          "pdf": [
+            28,
+            30
+          ],
+          "phase": 1
+        },
+        {
+          "pages": [
+            22,
+            24
+          ],
+          "goal": "Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan dengan sebab.",
+          "a": "Guru memperlihatkan jadual peranan agensi dalam bantuan m/s 22 dan contoh kertas cadangan kempen m/s 23. Murid meneliti akibat jika tugas tidak diselaraskan.",
+          "b": "Murid menggunakan kisah warga hutan yang menggerakkan bantuan bersama m/s 24 untuk membina peta tindakan–kepentingan–perasaan.",
+          "e": "Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan.",
+          "pdf": [
+            31,
+            33
+          ],
+          "phase": 2
+        },
+        {
+          "pages": [
+            25,
+            28
+          ],
+          "goal": "Murid menunjukkan dua tindakan bertanggungjawab dalam simulasi kempen kemanusiaan dan membuat refleksi.",
+          "a": "Guru menggunakan sambungan kisah tanggungjawab bersama m/s 25 dan contoh surat permohonan sumbangan buku pada m/s 26 sebagai model tindakan berhemah.",
+          "b": "Murid merancang kempen kesedaran tanpa pungutan sebenar, menghasilkan kad peranan dan melaksanakan sesi penerangan kumpulan; pilih respons kepada situasi pada penghujung unit.",
+          "e": "Rekod dua tindakan kumpulan, satu produk kempen dan refleksi kendiri; tindakan sebenar di luar kelas memerlukan bukti lanjut.",
+          "pdf": [
+            34,
+            37
+          ],
+          "phase": 3
+        }
+      ],
+      "sourceDriveId": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo"
+    }
+  ]
+}
