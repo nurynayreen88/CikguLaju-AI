@@ -1,35 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 008
 
-**Tajuk:** Hobi Keluarga  
-**Tema/Unit:** Kekeluargaan • Unit 2: Cerita Keluarga  
-**SK:** 1.1 Mendengar dan memberikan respons  
-**SP:** 1.1.1 (ii) — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat  
-**SK / SP (rekod ringkas asal):** 1.1 / 1.1.1 (ii)  
-**Tempoh cadangan:** 60 minit (boleh laras mengikut jadual sekolah)  
-**Sumber:** BT Jilid 1 m/s 7; BA Jilid 1 m/s 9 (rujukan sahaja; kandungan belum disahkan)  
-**Bahan:** BT m/s 7, gambar kegiatan hobi seperti fotografi dan bermain alat muzik, kad ayat.  
-**Fokus:** Mendengar, mengecam dan menyebut ayat tunggal berkaitan hobi keluarga  
-**Objektif:** Mengecam empat ayat tunggal yang guru sebut tentang hobi dan menyebut semula tiga ayat dengan sebutan yang jelas.  
+**ID:** BM2-P008
+**Minggu RPT 2027:** M03 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Kekeluargaan; U2: Cerita Keluarga
+**Tajuk aktiviti:** Hobi Keluarga
+**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons
+**Standard Pembelajaran (SP):** 1.1.1 (ii) — Mendengar, mengecam, memahami dan menyebut dengan betul dan tepat
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 7. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** gambar hobi keluarga Hana seperti fotografi ayah, bermain papan selaju abang dan menggesek biola.
+**Objektif PdP:** Pada akhir PdP, murid dapat mendengar dan menyebut semula empat ayat tunggal tentang hobi keluarga dengan tepat.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar hobi ahli keluarga dan meminta murid menamakan kegiatan.
-**Tindakan murid:** Murid menyatakan hobi sendiri atau ahli keluarga.
+**Guru:** Paparkan gambar Hobi Keluarga daripada BT1 m/s 7; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Hobi Keluarga.
 
-## Aktiviti 1 — Mendengar ayat (15 minit)
-**Tindakan guru:** Guru membaca beberapa ayat tunggal tentang hobi tanpa memaparkan tulisan; membimbing padanan dengan gambar.
-**Tindakan murid:** Murid mendengar dan memilih gambar bagi empat ayat.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Guru membacakan empat ayat tunggal berdasarkan gambar BT1 m/s7 sambil murid mengecam nama hobi
+**Murid:** Padankan ayat yang didengar dengan hobi ayah, abang serta ahli keluarga lain
 
-## Aktiviti 2 — Sebut semula (20 minit)
-**Tindakan guru:** Guru memberi model sebutan dan meminta latihan pasangan tanpa menambah ayat majmuk.
-**Tindakan murid:** Murid menyebut semula tiga ayat tunggal tentang hobi secara bergilir.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Bimbing murid membina dan menyebut ayat tunggal seperti 'Ayah mengambil gambar'
+**Murid:** Ujarkan semula empat ayat tunggal dengan sebutan jelas
 
 ## Pengukuhan / PBD (15 minit)
-**Tindakan guru:** Guru menguji murid secara individu melalui empat padanan dan tiga ulangan ayat, mencatat ketepatan.
-**Tindakan murid:** Murid memberi respons lisan; rakan mendengar dengan tertib.
+**Guru:** Semak empat ayat, subjek dan sebutan mengikut bahan
+**Murid:** Baiki satu ayat yang mencampurkan dua hobi
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan manfaat mengisi masa lapang dengan hobi yang sihat.
-**Tindakan murid:** Murid menyatakan satu ayat tunggal tentang hobi keluarga.
+**Guru:** Rumuskan kemahiran 1.1.1 (ii) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Hobi Keluarga.
 
-**Status audit:** DRAF BERPANDUKAN BUKU TEKS — RPT 2027 dan audit sumber disiapkan sebahagian.
-**Nota kawalan:** Rujukan BA diambil daripada petunjuk Buku Teks/RPT 2026; latihan BA asal belum diperiksa. Bahan ini belum READY, tidak boleh diaktifkan untuk guru. Jika PdP berulang, sesi pengukuhan ialah cadangan CikguLaju dan bukan pelajaran rasmi baharu.
+**Bukti khusus BT:** BT1 m/s7 mempunyai dialog hobi keluarga Hana dan SP1.1.1(ii) mendengar/menyebut ayat tunggal, BA1 m/s9 belum disahkan.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.

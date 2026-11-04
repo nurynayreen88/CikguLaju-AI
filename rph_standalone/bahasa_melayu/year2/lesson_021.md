@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 021
 
-**Tema/Unit:** Kekeluargaan; U3: Keluarga Berhemah  
-**Tajuk:** Dr. Norini, Nenek Hana  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.1 (i), (ii), (iii) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks  
-**Buku rujukan:** BT1 m/s 18 — rujukan BA daripada BT atau RPT 2026; arahan latihan BA belum disahkan.  
-**Tempoh cadangan:** 60 minit, laras mengikut slot sebenar.  
-**Fokus:** mengelaskan kata nama daripada cerita Dr. Norini  
-**Objektif:** Pada akhir PdP, murid dapat mengelaskan sembilan contoh kepada kata nama am, khas dan ganti nama serta menghasilkan tiga ayat.  
-**BBM:** Buku Teks berkaitan, kad gambar/perkataan, kertas kerja/buku latihan. Kosa kata/konteks: doktor, klinik, stetoskop; Dr. Norini, Kampung Baru; beliau, dia.  
+**ID:** BM2-P021
+**Minggu RPT 2027:** M07 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Kekeluargaan; U3: Keluarga Berhemah
+**Tajuk aktiviti:** Dr. Norini, Nenek Hana
+**Standard Kandungan (SK):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.1 (i), (ii), (iii) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 18. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** petikan Dr. Norini binti Nawi, nenek Hana, yang membuka klinik di Kampung Baru dan menggunakan stetoskop.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengelaskan dua kata nama am, dua kata nama khas dan dua kata ganti nama daripada petikan.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan satu situasi bergambar daripada tema Dr. Norini, Nenek Hana dan mengaitkannya dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pengetahuan sedia ada yang relevan.
+**Guru:** Paparkan gambar Dr. Norini, Nenek Hana daripada BT1 m/s 18; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Dr. Norini, Nenek Hana.
 
-## Aktiviti 1 — Rangsangan Buku Teks (15 minit)
-**Tindakan guru:** Guru membaca situasi Dr. Norini yang merawat pesakit di Kampung Baru lalu memodelkan satu contoh bagi setiap jenis kata nama.
-**Tindakan murid:** Murid menggariskan kata nama dan mengelaskan contoh menggunakan tiga simbol berlainan.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Bimbing bacaan petikan BT1 m/s18 dan tunjuk contoh doktor/klinik, Dr. Norini/Kampung Baru serta beliau/dia
+**Murid:** Gariskan enam perkataan dan tentukan kategori kata nama masing-masing
 
-## Aktiviti 2 — Aplikasi kepada situasi (20 minit)
-**Tindakan guru:** Guru meminta tiga kumpulan menyusun kad nama am, khas dan ganti nama serta membina ayat konteks klinik.
-**Tindakan murid:** Murid menulis tiga ayat menggunakan kata daripada kategori berlainan dan menerangkan pilihan.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Bimbing perbualan berpasangan tentang kerja nenek Hana menggunakan tiga jenis kata nama
+**Murid:** Bina tiga ayat lisan dengan kata nama am, khas dan ganti nama yang betul
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak sembilan pengelasan dan tiga ayat; rekod kemahiran kosa kata.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons secara individu, menerima pembetulan guru dan memperbaiki satu kesilapan jika ada.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak enam pengelasan dan penggunaan huruf besar pada nama khas
+**Murid:** Baiki satu pengelasan yang tidak tepat
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru menyimpulkan kemahiran mengelaskan kata nama daripada cerita Dr. Norini dan mengaitkannya dengan nilai murni dalam tajuk.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
+**Guru:** Rumuskan kemahiran 5.1.1 (i), (ii), (iii) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Dr. Norini, Nenek Hana.
 
-**Status QA:** DRAF — audit BA dan masa pelaksanaan belum lengkap. 
-**Catatan:**  Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Bukti khusus BT:** BT1 m/s18 mencetak SP5.1.1(i)(ii)(iii), aktiviti berbual menggunakan kata nama daripada kisah Dr. Norini.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.

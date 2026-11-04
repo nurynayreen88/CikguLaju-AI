@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 018
 
-**Tema / Unit:** Kekeluargaan; U3: Keluarga Berhemah  
-**Tajuk:** Adab Ketika Makan  
-**SK:** 3.1 Asas menulis  
-**SP:** 3.1.1 (iv) — Menulis secara mekanis  
-**Sumber:** BT1 m/s 15; BA m/s 21. Petunjuk BA daripada BT/RPT 2026, belum diaudit terhadap Buku Aktiviti asal.  
-**Masa cadangan:** 60 minit (laras mengikut jadual sekolah)  
-**Fokus:** menulis petikan secara mekanis  
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat menyalin petikan lima ayat tentang adab makan dengan ejaan, jarak dan tanda baca yang betul.  
-**Bahan:** Buku Teks berkenaan, kad gambar/kata, papan putih, buku latihan. Kosa kata/model: membasuh tangan; membaca doa; duduk tertib; makan dengan sopan.
+**ID:** BM2-P018
+**Minggu RPT 2027:** M05 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Kekeluargaan; U3: Keluarga Berhemah
+**Tajuk aktiviti:** Adab Ketika Makan
+**Standard Kandungan (SK):** 3.1 Asas menulis
+**Standard Pembelajaran (SP):** 3.1.1 (iv) — Menulis secara mekanis
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 15. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** petikan Adab ketika Makan tentang mencuci tangan, membaca doa, makan dengan tertib dan membantu mengemas meja.
+**Objektif PdP:** Pada akhir PdP, murid dapat menulis satu perenggan dengan tulisan mekanis kemas serta tanda baca tepat berdasarkan petikan.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Adab Ketika Makan dan bertanya pengalaman berkaitan kepada murid.
-**Tindakan murid:** Murid mengaitkan satu pengalaman atau pengetahuan sedia ada dengan tajuk.
+**Guru:** Paparkan gambar Adab Ketika Makan daripada BT1 m/s 15; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Adab Ketika Makan.
 
-## Aktiviti 1 — Fahami kandungan (15 minit)
-**Tindakan guru:** Guru menunjukkan petikan 'Adab ketika Makan' dan memodelkan tulisan satu ayat dengan huruf besar, jarak dan noktah.
-**Tindakan murid:** Murid meneliti petikan dan menandakan sempadan lima ayat.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Bimbing murid membaca petikan BT1 m/s15 dan memilih satu perenggan yang jelas tentang adab sebelum dan selepas makan
+**Murid:** Kenal pasti perkataan sukar dan huruf besar pada awal ayat
 
-## Aktiviti 2 — Aplikasi kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid menyalin lima ayat berturutan serta membantu mereka yang memerlukan bimbingan bentuk huruf.
-**Tindakan murid:** Murid menyalin lalu menyemak hasil bersama pasangan.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Tunjukkan cara menyalin dengan jarak perkataan dan tanda noktah yang kemas
+**Murid:** Salin satu perenggan serta semak ejaan dan tulisan sendiri
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak lima ayat dari aspek pembentukan huruf, ejaan, jarak dan tanda baca.
-**Tindakan murid:** Murid menunjukkan bukti lisan, bacaan atau penulisan yang telah dihasilkan dan membetulkan jawapan berdasarkan maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak bentuk huruf, jarak perkataan, ejaan dan tanda baca
+**Murid:** Baiki tiga kesilapan mekanis jika ada
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran dan menekankan nilai murni dalam Adab Ketika Makan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari serta satu amalan baik yang berkaitan.
+**Guru:** Rumuskan kemahiran 3.1.1 (iv) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Adab Ketika Makan.
 
-**Status:** DRAF — semakan BA, RPT 2027 dan format cetak belum lulus. 
-**Kawalan:** Bahan guru dibina sendiri berdasarkan tema buku, bukan petikan latihan Buku Aktiviti; tiada arahan BA atau hasil PKJR rasmi yang direka. Belum untuk penerbitan kepada guru.
+**Bukti khusus BT:** BT1 m/s15 menggunakan SP3.1.1(iv), arahan menulis petikan secara mekanis; BA1 m/s21 belum disahkan.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.
