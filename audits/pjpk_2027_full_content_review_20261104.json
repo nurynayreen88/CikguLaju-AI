@@ -1,0 +1,3485 @@
+{
+  "schema_version": 1,
+  "status": "PASS_STATIC_ONLY_NOT_READY",
+  "counts": {
+    "RPT_PDP": 339,
+    "RPH_numbered_found": 338,
+    "blocked_RPT": 1,
+    "PJ_numbered": 176,
+    "PK_numbered": 163,
+    "source_page_unverified": 31,
+    "repeated_activity_templates": 63,
+    "repeated_templates_examples": [
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 15,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            9
+          ],
+          [
+            4,
+            "PJ",
+            10
+          ],
+          [
+            4,
+            "PJ",
+            12
+          ],
+          [
+            4,
+            "PJ",
+            13
+          ],
+          [
+            4,
+            "PJ",
+            16
+          ],
+          [
+            5,
+            "PJ",
+            13
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 15,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            15
+          ],
+          [
+            4,
+            "PJ",
+            17
+          ],
+          [
+            4,
+            "PJ",
+            18
+          ],
+          [
+            4,
+            "PJ",
+            24
+          ],
+          [
+            5,
+            "PJ",
+            18
+          ],
+          [
+            5,
+            "PJ",
+            19
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 9,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            29
+          ],
+          [
+            4,
+            "PJ",
+            30
+          ],
+          [
+            4,
+            "PJ",
+            31
+          ],
+          [
+            4,
+            "PJ",
+            32
+          ],
+          [
+            5,
+            "PJ",
+            32
+          ],
+          [
+            6,
+            "PJ",
+            29
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 7,
+        "lesson_examples": [
+          [
+            2,
+            "PJ",
+            9
+          ],
+          [
+            2,
+            "PJ",
+            11
+          ],
+          [
+            2,
+            "PJ",
+            12
+          ],
+          [
+            2,
+            "PJ",
+            13
+          ],
+          [
+            2,
+            "PJ",
+            14
+          ],
+          [
+            2,
+            "PJ",
+            16
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 7,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            21
+          ],
+          [
+            4,
+            "PJ",
+            22
+          ],
+          [
+            4,
+            "PJ",
+            23
+          ],
+          [
+            5,
+            "PJ",
+            24
+          ],
+          [
+            5,
+            "PJ",
+            25
+          ],
+          [
+            6,
+            "PJ",
+            22
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 6,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            8
+          ],
+          [
+            4,
+            "PJ",
+            20
+          ],
+          [
+            5,
+            "PJ",
+            23
+          ],
+          [
+            6,
+            "PJ",
+            8
+          ],
+          [
+            6,
+            "PJ",
+            9
+          ],
+          [
+            6,
+            "PJ",
+            20
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 6,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            14
+          ],
+          [
+            4,
+            "PJ",
+            25
+          ],
+          [
+            4,
+            "PJ",
+            26
+          ],
+          [
+            5,
+            "PJ",
+            33
+          ],
+          [
+            6,
+            "PJ",
+            7
+          ],
+          [
+            6,
+            "PJ",
+            21
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 5,
+        "lesson_examples": [
+          [
+            2,
+            "PJ",
+            2
+          ],
+          [
+            2,
+            "PJ",
+            6
+          ],
+          [
+            2,
+            "PJ",
+            7
+          ],
+          [
+            2,
+            "PJ",
+            18
+          ],
+          [
+            2,
+            "PJ",
+            19
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 5,
+        "lesson_examples": [
+          [
+            2,
+            "PJ",
+            22
+          ],
+          [
+            2,
+            "PJ",
+            23
+          ],
+          [
+            2,
+            "PJ",
+            25
+          ],
+          [
+            2,
+            "PJ",
+            26
+          ],
+          [
+            2,
+            "PJ",
+            27
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 1",
+        "count": 5,
+        "lesson_examples": [
+          [
+            4,
+            "PJ",
+            9
+          ],
+          [
+            4,
+            "PJ",
+            10
+          ],
+          [
+            5,
+            "PJ",
+            11
+          ],
+          [
+            5,
+            "PJ",
+            12
+          ],
+          [
+            6,
+            "PJ",
+            10
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 1",
+        "count": 4,
+        "lesson_examples": [
+          [
+            3,
+            "PJ",
+            33
+          ],
+          [
+            3,
+            "PJ",
+            34
+          ],
+          [
+            3,
+            "PJ",
+            35
+          ],
+          [
+            2,
+            "PJ",
+            32
+          ]
+        ]
+      },
+      {
+        "subject": "PJ",
+        "field": "aktiviti 2",
+        "count": 4,
+        "lesson_examples": [
+          [
+            2,
+            "PJ",
+            8
+          ],
+          [
+            2,
+            "PJ",
+            35
+          ],
+          [
+            2,
+            "PJ",
+            36
+          ],
+          [
+            2,
+            "PJ",
+            37
+          ]
+        ]
+      }
+    ],
+    "fatal_count": 0,
+    "manual_content_review_required": 338
+  },
+  "findings": [],
+  "individual": [
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_001.md",
+      "word_count": 305,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_002.md",
+      "word_count": 306,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_003.md",
+      "word_count": 295,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_004.md",
+      "word_count": 295,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_005.md",
+      "word_count": 285,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_006.md",
+      "word_count": 297,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_007.md",
+      "word_count": 298,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_008.md",
+      "word_count": 315,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_009.md",
+      "word_count": 307,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_010.md",
+      "word_count": 302,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_011.md",
+      "word_count": 214,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_012.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_013.md",
+      "word_count": 225,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_014.md",
+      "word_count": 313,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_015.md",
+      "word_count": 309,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_016.md",
+      "word_count": 310,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_017.md",
+      "word_count": 299,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_018.md",
+      "word_count": 301,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_019.md",
+      "word_count": 319,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_020.md",
+      "word_count": 295,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_021.md",
+      "word_count": 313,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_022.md",
+      "word_count": 285,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_023.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_024.md",
+      "word_count": 263,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_025.md",
+      "word_count": 243,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_026.md",
+      "word_count": 232,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_027.md",
+      "word_count": 224,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_028.md",
+      "word_count": 233,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_029.md",
+      "word_count": 226,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_030.md",
+      "word_count": 277,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_031.md",
+      "word_count": 303,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_032.md",
+      "word_count": 295,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 33,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_033.md",
+      "word_count": 304,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 34,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_034.md",
+      "word_count": 322,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 35,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_035.md",
+      "word_count": 316,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 36,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_036.md",
+      "word_count": 337,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 37,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_037.md",
+      "word_count": 323,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PJ",
+      "pdp": 38,
+      "rph_path": "rph_standalone/pjpk/year3_pj/lesson_038.md",
+      "word_count": 322,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_001.md",
+      "word_count": 218,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_002.md",
+      "word_count": 262,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_003.md",
+      "word_count": 274,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_004.md",
+      "word_count": 268,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_005.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_006.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_007.md",
+      "word_count": 267,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_008.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_009.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_010.md",
+      "word_count": 271,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_011.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_012.md",
+      "word_count": 270,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_013.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_014.md",
+      "word_count": 280,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_015.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_016.md",
+      "word_count": 270,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_017.md",
+      "word_count": 270,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_018.md",
+      "word_count": 268,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_019.md",
+      "word_count": 274,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_020.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_021.md",
+      "word_count": 220,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_022.md",
+      "word_count": 270,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_023.md",
+      "word_count": 273,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_024.md",
+      "word_count": 229,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_025.md",
+      "word_count": 278,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_026.md",
+      "word_count": 279,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_027.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_028.md",
+      "word_count": 236,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_029.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_030.md",
+      "word_count": 294,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_031.md",
+      "word_count": 274,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_032.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 33,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_033.md",
+      "word_count": 288,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 34,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_034.md",
+      "word_count": 231,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 35,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_035.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 36,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_036.md",
+      "word_count": 271,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PJ",
+      "pdp": 37,
+      "rph_path": "rph_standalone/pjpk/year2_pj/lesson_037.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_001.md",
+      "word_count": 236,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_002.md",
+      "word_count": 244,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_003.md",
+      "word_count": 260,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_004.md",
+      "word_count": 251,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_005.md",
+      "word_count": 234,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_006.md",
+      "word_count": 235,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_007.md",
+      "word_count": 239,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_008.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_009.md",
+      "word_count": 271,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_010.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_011.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_012.md",
+      "word_count": 264,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_013.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_014.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_015.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_016.md",
+      "word_count": 253,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_017.md",
+      "word_count": 279,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_018.md",
+      "word_count": 278,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_019.md",
+      "word_count": 262,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_020.md",
+      "word_count": 255,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_021.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_022.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_023.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_024.md",
+      "word_count": 286,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_025.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_026.md",
+      "word_count": 246,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_027.md",
+      "word_count": 248,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_028.md",
+      "word_count": 261,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_029.md",
+      "word_count": 261,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_030.md",
+      "word_count": 251,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_031.md",
+      "word_count": 254,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_032.md",
+      "word_count": 269,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 33,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_033.md",
+      "word_count": 261,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PJ",
+      "pdp": 34,
+      "rph_path": "rph_standalone/pjpk/year4_pj/lesson_034.md",
+      "word_count": 263,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_001.md",
+      "word_count": 238,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_002.md",
+      "word_count": 238,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_003.md",
+      "word_count": 236,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_004.md",
+      "word_count": 239,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_005.md",
+      "word_count": 235,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_006.md",
+      "word_count": 250,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_007.md",
+      "word_count": 233,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_008.md",
+      "word_count": 244,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_009.md",
+      "word_count": 292,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_010.md",
+      "word_count": 296,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_011.md",
+      "word_count": 284,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_012.md",
+      "word_count": 288,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_013.md",
+      "word_count": 261,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_014.md",
+      "word_count": 262,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_015.md",
+      "word_count": 274,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_016.md",
+      "word_count": 256,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_017.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_018.md",
+      "word_count": 278,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_019.md",
+      "word_count": 283,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_020.md",
+      "word_count": 273,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_021.md",
+      "word_count": 257,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_022.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_023.md",
+      "word_count": 260,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_024.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_025.md",
+      "word_count": 268,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_026.md",
+      "word_count": 278,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_027.md",
+      "word_count": 280,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_028.md",
+      "word_count": 259,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_029.md",
+      "word_count": 262,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_030.md",
+      "word_count": 243,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_031.md",
+      "word_count": 228,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_032.md",
+      "word_count": 284,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PJ",
+      "pdp": 33,
+      "rph_path": "rph_standalone/pjpk/year5_pj/lesson_033.md",
+      "word_count": 251,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_001.md",
+      "word_count": 247,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_002.md",
+      "word_count": 237,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_003.md",
+      "word_count": 244,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_004.md",
+      "word_count": 258,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_005.md",
+      "word_count": 255,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_006.md",
+      "word_count": 230,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_007.md",
+      "word_count": 259,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_008.md",
+      "word_count": 271,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_009.md",
+      "word_count": 265,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_010.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_011.md",
+      "word_count": 265,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_012.md",
+      "word_count": 283,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_013.md",
+      "word_count": 274,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_014.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_015.md",
+      "word_count": 268,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_016.md",
+      "word_count": 271,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_017.md",
+      "word_count": 272,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_018.md",
+      "word_count": 270,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_019.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_020.md",
+      "word_count": 258,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_021.md",
+      "word_count": 242,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_022.md",
+      "word_count": 261,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_023.md",
+      "word_count": 268,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_024.md",
+      "word_count": 271,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_025.md",
+      "word_count": 274,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_026.md",
+      "word_count": 234,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_027.md",
+      "word_count": 243,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_028.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_029.md",
+      "word_count": 247,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_030.md",
+      "word_count": 262,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_031.md",
+      "word_count": 259,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_032.md",
+      "word_count": 259,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 33,
+      "disposition": "BLOCKED_SOURCE_CONFLICT"
+    },
+    {
+      "year": 6,
+      "component": "PJ",
+      "pdp": 34,
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_034.md",
+      "word_count": 265,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_001.md",
+      "word_count": 206,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_002.md",
+      "word_count": 198,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_003.md",
+      "word_count": 206,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_004.md",
+      "word_count": 195,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_005.md",
+      "word_count": 225,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_006.md",
+      "word_count": 230,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_007.md",
+      "word_count": 240,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_008.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_009.md",
+      "word_count": 236,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_010.md",
+      "word_count": 248,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_011.md",
+      "word_count": 279,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_012.md",
+      "word_count": 298,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_013.md",
+      "word_count": 239,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_014.md",
+      "word_count": 241,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_015.md",
+      "word_count": 259,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_016.md",
+      "word_count": 285,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_017.md",
+      "word_count": 244,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_018.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_019.md",
+      "word_count": 260,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_020.md",
+      "word_count": 240,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_021.md",
+      "word_count": 247,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_022.md",
+      "word_count": 264,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_023.md",
+      "word_count": 294,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_024.md",
+      "word_count": 255,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_025.md",
+      "word_count": 260,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_026.md",
+      "word_count": 267,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_027.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_028.md",
+      "word_count": 225,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_029.md",
+      "word_count": 240,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_030.md",
+      "word_count": 266,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_031.md",
+      "word_count": 267,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_032.md",
+      "word_count": 231,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 33,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_033.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 34,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_034.md",
+      "word_count": 275,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 2,
+      "component": "PK",
+      "pdp": 35,
+      "rph_path": "rph_standalone/pjpk/year2_pk/lesson_035.md",
+      "word_count": 286,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_001.md",
+      "word_count": 199,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_002.md",
+      "word_count": 187,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_003.md",
+      "word_count": 190,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_004.md",
+      "word_count": 198,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_005.md",
+      "word_count": 224,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_006.md",
+      "word_count": 225,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_007.md",
+      "word_count": 248,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_008.md",
+      "word_count": 265,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_009.md",
+      "word_count": 227,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_010.md",
+      "word_count": 231,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_011.md",
+      "word_count": 255,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_012.md",
+      "word_count": 268,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_013.md",
+      "word_count": 242,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_014.md",
+      "word_count": 247,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_015.md",
+      "word_count": 264,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_016.md",
+      "word_count": 287,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_017.md",
+      "word_count": 230,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_018.md",
+      "word_count": 236,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_019.md",
+      "word_count": 257,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_020.md",
+      "word_count": 278,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_021.md",
+      "word_count": 229,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_022.md",
+      "word_count": 225,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_023.md",
+      "word_count": 244,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_024.md",
+      "word_count": 227,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_025.md",
+      "word_count": 230,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_026.md",
+      "word_count": 264,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_027.md",
+      "word_count": 216,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_028.md",
+      "word_count": 216,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_029.md",
+      "word_count": 231,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_030.md",
+      "word_count": 240,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_031.md",
+      "word_count": 231,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 3,
+      "component": "PK",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year3_pk/lesson_032.md",
+      "word_count": 256,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_001.md",
+      "word_count": 210,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_002.md",
+      "word_count": 219,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_003.md",
+      "word_count": 222,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_004.md",
+      "word_count": 238,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_005.md",
+      "word_count": 211,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_006.md",
+      "word_count": 223,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_007.md",
+      "word_count": 201,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_008.md",
+      "word_count": 204,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_009.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_010.md",
+      "word_count": 205,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_011.md",
+      "word_count": 211,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_012.md",
+      "word_count": 233,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_013.md",
+      "word_count": 198,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_014.md",
+      "word_count": 206,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_015.md",
+      "word_count": 215,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_016.md",
+      "word_count": 211,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_017.md",
+      "word_count": 214,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_018.md",
+      "word_count": 224,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_019.md",
+      "word_count": 209,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_020.md",
+      "word_count": 213,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_021.md",
+      "word_count": 223,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_022.md",
+      "word_count": 207,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_023.md",
+      "word_count": 210,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_024.md",
+      "word_count": 234,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_025.md",
+      "word_count": 211,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_026.md",
+      "word_count": 211,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_027.md",
+      "word_count": 224,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_028.md",
+      "word_count": 249,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_029.md",
+      "word_count": 253,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_030.md",
+      "word_count": 209,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_031.md",
+      "word_count": 215,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 4,
+      "component": "PK",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year4_pk/lesson_032.md",
+      "word_count": 224,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_001.md",
+      "word_count": 207,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_002.md",
+      "word_count": 214,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_003.md",
+      "word_count": 213,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_004.md",
+      "word_count": 219,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_005.md",
+      "word_count": 217,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_006.md",
+      "word_count": 216,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_007.md",
+      "word_count": 228,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_008.md",
+      "word_count": 209,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_009.md",
+      "word_count": 214,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_010.md",
+      "word_count": 235,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_011.md",
+      "word_count": 209,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_012.md",
+      "word_count": 208,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_013.md",
+      "word_count": 222,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_014.md",
+      "word_count": 210,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_015.md",
+      "word_count": 214,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_016.md",
+      "word_count": 226,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_017.md",
+      "word_count": 201,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_018.md",
+      "word_count": 207,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_019.md",
+      "word_count": 212,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_020.md",
+      "word_count": 216,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_021.md",
+      "word_count": 222,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_022.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_023.md",
+      "word_count": 204,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_024.md",
+      "word_count": 228,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_025.md",
+      "word_count": 211,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_026.md",
+      "word_count": 213,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_027.md",
+      "word_count": 217,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_028.md",
+      "word_count": 243,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_029.md",
+      "word_count": 247,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_030.md",
+      "word_count": 208,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_031.md",
+      "word_count": 212,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 5,
+      "component": "PK",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year5_pk/lesson_032.md",
+      "word_count": 225,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 1,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_001.md",
+      "word_count": 207,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 2,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_002.md",
+      "word_count": 209,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 3,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_003.md",
+      "word_count": 218,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 4,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_004.md",
+      "word_count": 251,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 5,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_005.md",
+      "word_count": 215,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 6,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_006.md",
+      "word_count": 217,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 7,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_007.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 8,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_008.md",
+      "word_count": 228,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 9,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_009.md",
+      "word_count": 200,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 10,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_010.md",
+      "word_count": 202,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 11,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_011.md",
+      "word_count": 228,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 12,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_012.md",
+      "word_count": 205,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 13,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_013.md",
+      "word_count": 210,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 14,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_014.md",
+      "word_count": 219,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 15,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_015.md",
+      "word_count": 204,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 16,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_016.md",
+      "word_count": 207,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 17,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_017.md",
+      "word_count": 214,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 18,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_018.md",
+      "word_count": 205,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 19,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_019.md",
+      "word_count": 212,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 20,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_020.md",
+      "word_count": 219,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 21,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_021.md",
+      "word_count": 221,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 22,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_022.md",
+      "word_count": 253,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 23,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_023.md",
+      "word_count": 199,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 24,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_024.md",
+      "word_count": 230,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 25,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_025.md",
+      "word_count": 210,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 26,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_026.md",
+      "word_count": 212,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 27,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_027.md",
+      "word_count": 222,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 28,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_028.md",
+      "word_count": 245,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 29,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_029.md",
+      "word_count": 249,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 30,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_030.md",
+      "word_count": 206,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 31,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_031.md",
+      "word_count": 209,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    },
+    {
+      "year": 6,
+      "component": "PK",
+      "pdp": 32,
+      "rph_path": "rph_standalone/pjpk/year6_pk/lesson_032.md",
+      "word_count": 230,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
+    }
+  ],
+  "notes": [
+    "Content and safety gates require human subject-matter review.",
+    "Word/PDF rendering and real Telegram document delivery are separate checks.",
+    "2027 local class schedule, state holidays and textbook physical pages need validation.",
+    "Year1 KP2027 excluded, four Year2 aquatic inserts not approved.",
+    "Source RPT Year6 PJ PdP033 still requires DSKP reconciliation."
+  ],
+  "fatal": []
+}
