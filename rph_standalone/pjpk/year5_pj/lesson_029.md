@@ -1,34 +1,25 @@
 # RPH Pendidikan Jasmani Tahun 5 — PdP 029
-
-**Status:** DRAF — semakan pedagogi, halaman buku teks dan A4 belum selesai  
-**Kurikulum:** KSSR, rancangan tahunan 2027 (bukan KP2027 Tahun 1)  
+**Status:** DRAF • semakan pedagogi, Word A4 dan Telegram belum lulus  
 **Unit/Tajuk:** KEMAS IKATAN, KUAT SIMPULAN (sesi ulangan)  
-**SK (kod):** 1.14, 2.14, 5.4  
-**SP (kod):** 1.14.1, 2.14.1, 5.4.1  
-**Buku teks:** m/s 54-55  
-**Tarikh/Masa/Kelas:** Diisi guru berdasarkan jadual sebenar. Rujukan minggu calon dalam RPT bukan tarikh PdP kelas.
+**Fasa PdP:** Amali dan aplikasi  
+**SK:** 1.14, 2.14, 5.4  
+**SP:** 1.14.1, 2.14.1, 5.4.1  
+**Buku teks:** m/s 54-55 menurut RPT 2027 (belum semakan visual buku teks)  
+**Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
-## Objektif pembelajaran dan evidens DSKP
-Murid dapat memperagakan kemahiran utama serta menerangkan pilihan teknik yang selamat mengikut standard berikut:
-- **SP 1.14.1:** Melakukan ikatan dan simpulan untuk menghasilkan gajet.
-- **SP 2.14.1:** Menyenaraikan jenis-jenis ikatan dan simpulan berdasarkan gajet yang dihasilkan.
+**Objektif:** (1) Melakukan kemahiran SP 1.14.1 (melakukan ikatan dan simpulan untuk menghasilkan gajet) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.14.1: Menyenaraikan jenis-jenis ikatan dan simpulan berdasarkan gajet yang dihasilkan.
 
-## Pelaksanaan PdP
-**Set induksi:** Guru memperkenalkan kemas ikatan, kuat simpulan (sesi ulangan) melalui perbualan pendek dan rujukan buku teks m/s 54-55. Murid menerangkan pengalaman atau cabaran berkaitan tajuk.
+**Set induksi:** Guru menunjukkan cabaran "KEMAS IKATAN, KUAT SIMPULAN (sesi ulangan)" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi dan keselamatan:** Guru menunjukkan pergerakan utama yang dinyatakan bagi SP 1.14.1: Melakukan ikatan dan simpulan untuk menghasilkan gajet. Murid memerhatikan kriteria lakuan, bertanya dan mencuba peringkat asas dengan pengawasan.
+**Aktiviti 1 — Kemahiran rekreasi:** Guru menunjukkan alat dan dua langkah penting teknik lalu meminta murid mengenal fungsi simpulan, penanda atau arah. Murid menunjukkan semula langkah asas berdasarkan SP 1.14.1.
 
-**Aktiviti 2 — Latihan kemahiran:** Guru mengatur stesen/ruang latihan yang sesuai dengan kemas ikatan, kuat simpulan (sesi ulangan). Murid berlatih secara individu atau berpasangan, memfokuskan melakukan ikatan dan simpulan untuk menghasilkan gajet, kemudian menerima maklum balas tentang teknik dan keselamatan.
+**Aktiviti 2 — Aplikasi:** Murid mempraktikkan teknik menggunakan tali/penanda, kemudian menyelesaikan tugasan aplikasi bersama pasangan sambil menyemak hasil pada kad kriteria. 
 
-**Aktiviti 3 — Aplikasi:** Murid melaksanakan tugasan atau permainan kecil yang menggunakan kemahiran kemas ikatan, kuat simpulan (sesi ulangan); rakan memerhati pencapaian dan memberi satu cadangan membina. Guru membetulkan teknik serta memudahkan tugasan untuk murid yang memerlukan sokongan.
+**Pengukuhan/PBD:** Guru menilai urutan teknik, fungsi hasil, kerjasama dan keselamatan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.14.1 dan menerima maklum balas. Guru memerhati sikap SP 5.4.1. 
 
-**Pengukuhan dan penilaian (PBD):** Senarai semak individu berdasarkan SP 1.14.1. Bukti amali: pergerakan/hasil yang boleh diperhatikan. Soal jawab berdasarkan SP 2.14.1 (Menyenaraikan jenis-jenis ikatan dan simpulan berdasarkan gajet yang dihasilkan.). Rekod penglibatan, keselamatan dan interaksi mengikut SP 5.4.1.
+**Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**Penutup:** Murid menyebut satu kemahiran atau strategi yang berjaya dan satu aspek perlu dibaiki. Guru merumuskan, mencatat murid yang memerlukan sokongan dan memaklumkan fokus PdP seterusnya.
+**BBM:** tali lembut, kad arah/kompas jika perlu, penanda ruang.  
+**Keselamatan/inklusif:** Kawal penggunaan tali dan alatan; tiada simpulan pada badan, api atau aktiviti di kawasan berbahaya.
 
-**BBM:** Buku teks (m/s 54-55); alatan sebenar dipilih mengikut tugasan dan kemudahan sekolah.  
-**Keselamatan/inklusiviti:** Guru menandakan ruang, memastikan alat/permukaan sesuai, memantau giliran dan menyesuaikan intensiti dengan kemampuan murid.
-
-## Catatan audit
-- Kandungan ini ialah draf pedagogi berasaskan kod dan teks SP DSKP, bukan kelulusan READY. Kemaskan pelaksanaan khusus kelas, semak kesahan rujukan teks penuh, dan uji muat turun Word A4.
-- Jejak: [RPT 2027 PJ 101 PdP staging](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP PJPK Tahun 5](https://drive.google.com/file/d/1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l/view).
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 5](https://drive.google.com/file/d/1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

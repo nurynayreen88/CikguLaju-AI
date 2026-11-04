@@ -1,34 +1,25 @@
 # RPH Pendidikan Jasmani Tahun 6 — PdP 026
-
-**Status:** DRAF — semakan pedagogi, halaman buku teks dan A4 belum selesai  
-**Kurikulum:** KSSR, rancangan tahunan 2027 (bukan KP2027 Tahun 1)  
+**Status:** DRAF • semakan pedagogi, Word A4 dan Telegram belum lulus  
 **Unit/Tajuk:** KAD MISTERI  
-**SK (kod):** 1.14, 2.14, 5.1, 5.2  
-**SP (kod):** 1.14.1, 2.14.1, 5.1.4, 5.2.4  
-**Buku teks:** m/s 42-43  
-**Tarikh/Masa/Kelas:** Diisi guru berdasarkan jadual sebenar. Rujukan minggu calon dalam RPT bukan tarikh PdP kelas.
+**Fasa PdP:** Amali dan aplikasi  
+**SK:** 1.14, 2.14, 5.1, 5.2  
+**SP:** 1.14.1, 2.14.1, 5.1.4, 5.2.4  
+**Buku teks:** m/s 42-43 menurut RPT 2027 (belum semakan visual buku teks)  
+**Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
-## Objektif pembelajaran dan evidens DSKP
-Murid dapat memperagakan kemahiran utama serta menerangkan pilihan teknik yang selamat mengikut standard berikut:
-- **SP 1.14.1:** Melakukan aktiviti pandu arah berdasarkan kad maklumat.
-- **SP 2.14.1:** Mentafsir arahan dalam kad maklumat semasa melakukan aktiviti pandu arah.
+**Objektif:** (1) Melakukan kemahiran SP 1.14.1 (melakukan aktiviti pandu arah berdasarkan kad maklumat) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.14.1: Mentafsir arahan dalam kad maklumat semasa melakukan aktiviti pandu arah.
 
-## Pelaksanaan PdP
-**Set induksi:** Guru memperkenalkan kad misteri melalui perbualan pendek dan rujukan buku teks m/s 42-43. Murid menerangkan pengalaman atau cabaran berkaitan tajuk.
+**Set induksi:** Guru menunjukkan cabaran "KAD MISTERI" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi dan keselamatan:** Guru menunjukkan pergerakan utama yang dinyatakan bagi SP 1.14.1: Melakukan aktiviti pandu arah berdasarkan kad maklumat. Murid memerhatikan kriteria lakuan, bertanya dan mencuba peringkat asas dengan pengawasan.
+**Aktiviti 1 — Kemahiran asas:** Guru mendemonstrasi lakuan mengikut SP dan meminta murid menandakan titik utama teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.14.1.
 
-**Aktiviti 2 — Latihan kemahiran:** Guru mengatur stesen/ruang latihan yang sesuai dengan kad misteri. Murid berlatih secara individu atau berpasangan, memfokuskan melakukan aktiviti pandu arah berdasarkan kad maklumat, kemudian menerima maklum balas tentang teknik dan keselamatan.
+**Aktiviti 2 — Aplikasi:** Murid cuba lakuan pada aras mudah kemudian mengulangi dengan pembetulan berdasarkan kriteria SP; pasangan memerhati tanpa menyentuh. 
 
-**Aktiviti 3 — Aplikasi:** Murid melaksanakan tugasan atau permainan kecil yang menggunakan kemahiran kad misteri; rakan memerhati pencapaian dan memberi satu cadangan membina. Guru membetulkan teknik serta memudahkan tugasan untuk murid yang memerlukan sokongan.
+**Pengukuhan/PBD:** Guru menilai urutan, ketepatan gerak, kesedaran ruang menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.14.1 dan menerima maklum balas. Guru memerhati sikap SP 5.1.4, 5.2.4. 
 
-**Pengukuhan dan penilaian (PBD):** Senarai semak individu berdasarkan SP 1.14.1. Bukti amali: pergerakan/hasil yang boleh diperhatikan. Soal jawab berdasarkan SP 2.14.1 (Mentafsir arahan dalam kad maklumat semasa melakukan aktiviti pandu arah.). Rekod penglibatan, keselamatan dan interaksi mengikut SP 5.1.4, SP 5.2.4.
+**Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**Penutup:** Murid menyebut satu kemahiran atau strategi yang berjaya dan satu aspek perlu dibaiki. Guru merumuskan, mencatat murid yang memerlukan sokongan dan memaklumkan fokus PdP seterusnya.
+**BBM:** kon, penanda dan kad teknik sesuai kemahiran.  
+**Keselamatan/inklusif:** Peralatan dan ruang selamat; pilihan tugasan mengikut keupayaan murid.
 
-**BBM:** Buku teks (m/s 42-43); alatan sebenar dipilih mengikut tugasan dan kemudahan sekolah.  
-**Keselamatan/inklusiviti:** Guru menandakan ruang, memastikan alat/permukaan sesuai, memantau giliran dan menyesuaikan intensiti dengan kemampuan murid.
-
-## Catatan audit
-- Kandungan ini ialah draf pedagogi berasaskan kod dan teks SP DSKP, bukan kelulusan READY. Kemaskan pelaksanaan khusus kelas, semak kesahan rujukan teks penuh, dan uji muat turun Word A4.
-- Jejak: [RPT 2027 PJ 101 PdP staging](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP PJPK Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view).
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

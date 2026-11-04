@@ -1,34 +1,25 @@
 # RPH Pendidikan Jasmani Tahun 4 — PdP 021
-
-**Status:** DRAF — semakan pedagogi, halaman buku teks dan A4 belum selesai  
-**Kurikulum:** KSSR, rancangan tahunan 2027 (bukan KP2027 Tahun 1)  
+**Status:** DRAF • semakan pedagogi, Word A4 dan Telegram belum lulus  
 **Unit/Tajuk:** UNIT 6: MENGEJAR JUARA TAJUK: ASAS LOMPATAN -Sudut Terbaik  
-**SK (kod):** 1.10, 2.10, 5.1  
-**SP (kod):** 1.10.1, 2.10.2, 5.1.3  
-**Buku teks:** m/s 39  
-**Tarikh/Masa/Kelas:** Diisi guru berdasarkan jadual sebenar. Rujukan minggu calon dalam RPT bukan tarikh PdP kelas.
+**Fasa PdP:** Amali dan aplikasi  
+**SK:** 1.10, 2.10, 5.1  
+**SP:** 1.10.1, 2.10.2, 5.1.3  
+**Buku teks:** m/s 39 menurut RPT 2027 (belum semakan visual buku teks)  
+**Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
-## Objektif pembelajaran dan evidens DSKP
-Murid dapat memperagakan kemahiran utama serta menerangkan pilihan teknik yang selamat mengikut standard berikut:
-- **SP 1.10.1:** Berlari dan melompat menggunakan sebelah kaki serta mendarat dengan kedua-dua belah kaki.
-- **SP 2.10.2:** Menyatakan perbezaan sudut lonjakan antara melompat untuk jarak dengan melompat untuk ketinggian.
+**Objektif:** (1) Melakukan kemahiran SP 1.10.1 (berlari dan melompat menggunakan sebelah kaki serta mendarat dengan kedua-dua belah kaki) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.10.2: Menyatakan perbezaan sudut lonjakan antara melompat untuk jarak dengan melompat untuk ketinggian.
 
-## Pelaksanaan PdP
-**Set induksi:** Guru memperkenalkan unit 6: mengejar juara tajuk: asas lompatan -sudut terbaik melalui perbualan pendek dan rujukan buku teks m/s 39. Murid menerangkan pengalaman atau cabaran berkaitan tajuk.
+**Set induksi:** Guru menunjukkan cabaran "ASAS LOMPATAN -Sudut Terbaik" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi dan keselamatan:** Guru menunjukkan pergerakan utama yang dinyatakan bagi SP 1.10.1: Berlari dan melompat menggunakan sebelah kaki serta mendarat dengan kedua-dua belah kaki. Murid memerhatikan kriteria lakuan, bertanya dan mencuba peringkat asas dengan pengawasan.
+**Aktiviti 1 — Lompatan dan pendaratan:** Guru menunjukkan langkah awalan dan cara membengkokkan lutut ketika mendarat; murid mengenal zon lonjakan dan pendaratan. Murid menunjukkan semula langkah asas berdasarkan SP 1.10.1.
 
-**Aktiviti 2 — Latihan kemahiran:** Guru mengatur stesen/ruang latihan yang sesuai dengan unit 6: mengejar juara tajuk: asas lompatan -sudut terbaik. Murid berlatih secara individu atau berpasangan, memfokuskan berlari dan melompat menggunakan sebelah kaki serta mendarat dengan kedua-dua belah kaki, kemudian menerima maklum balas tentang teknik dan keselamatan.
+**Aktiviti 2 — Aplikasi:** Murid menjalani dua cubaan berperingkat dengan halangan rendah atau penanda; pasangan menilai posisi badan, imbangan akhir dan pematuhan giliran. 
 
-**Aktiviti 3 — Aplikasi:** Murid melaksanakan tugasan atau permainan kecil yang menggunakan kemahiran unit 6: mengejar juara tajuk: asas lompatan -sudut terbaik; rakan memerhati pencapaian dan memberi satu cadangan membina. Guru membetulkan teknik serta memudahkan tugasan untuk murid yang memerlukan sokongan.
+**Pengukuhan/PBD:** Guru menilai fasa lonjakan, kawalan badan di udara, pendaratan stabil menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.10.2 dan menerima maklum balas. Guru memerhati sikap SP 5.1.3. 
 
-**Pengukuhan dan penilaian (PBD):** Senarai semak individu berdasarkan SP 1.10.1. Bukti amali: pergerakan/hasil yang boleh diperhatikan. Soal jawab berdasarkan SP 2.10.2 (Menyatakan perbezaan sudut lonjakan antara melompat untuk jarak dengan melompat untuk ketinggian.). Rekod penglibatan, keselamatan dan interaksi mengikut SP 5.1.3.
+**Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**Penutup:** Murid menyebut satu kemahiran atau strategi yang berjaya dan satu aspek perlu dibaiki. Guru merumuskan, mencatat murid yang memerlukan sokongan dan memaklumkan fokus PdP seterusnya.
+**BBM:** kon, penanda lonjakan, tilam/pasir selamat jika perlu.  
+**Keselamatan/inklusif:** Periksa tempat mendarat dan ketinggian halangan; jangan benarkan cubaan melebihi kemampuan.
 
-**BBM:** Buku teks (m/s 39); alatan sebenar dipilih mengikut tugasan dan kemudahan sekolah.  
-**Keselamatan/inklusiviti:** Sediakan laluan dan zon mendarat selamat; lakukan pemanasan badan, kawal jarak antara murid dan hentikan aktiviti apabila ada kesakitan.
-
-## Catatan audit
-- Kandungan ini ialah draf pedagogi berasaskan kod dan teks SP DSKP, bukan kelulusan READY. Kemaskan pelaksanaan khusus kelas, semak kesahan rujukan teks penuh, dan uji muat turun Word A4.
-- Jejak: [RPT 2027 PJ 101 PdP staging](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP PJPK Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view).
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

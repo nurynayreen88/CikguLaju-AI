@@ -1,36 +1,25 @@
 # RPH Pendidikan Jasmani Tahun 6 — PdP 032
-
-**Status:** DRAF — semakan pedagogi, halaman buku teks dan A4 belum selesai  
-**Kurikulum:** KSSR, rancangan tahunan 2027 (bukan KP2027 Tahun 1)  
+**Status:** DRAF • semakan pedagogi, Word A4 dan Telegram belum lulus  
 **Unit/Tajuk:** BERI TUMPUAN  
-**SK (kod):** 3.3, 4.3, 5.2  
-**SP (kod):** 3.3.1, 4.3.1, 4.3.2, 5.2.2  
-**Buku teks:** halaman buku teks belum disahkan  
-**Tarikh/Masa/Kelas:** Diisi guru berdasarkan jadual sebenar. Rujukan minggu calon dalam RPT bukan tarikh PdP kelas.
+**Fasa PdP:** Amali dan aplikasi  
+**SK:** 3.3, 4.3, 5.2  
+**SP:** 3.3.1, 4.3.1, 4.3.2, 5.2.2  
+**Buku teks:** calon m/s 68 daripada RPT 2026; belum disahkan pada buku teks  
+**Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
-## Objektif pembelajaran dan evidens DSKP
-Murid dapat memperagakan kemahiran utama serta menerangkan pilihan teknik yang selamat mengikut standard berikut:
-- **SP 3.3.1:** Melakukan senaman regangan khusus pada otot-otot yang terlibat dalam aktiviti fizikal yang akan dilakukan.
-- **SP 4.3.1:** Mengenal pasti senaman regangan yang boleh meningkatkan kelenturan pada sendi-sendi tertentu.
-- **SP 4.3.2:** Merancang senaman regangan bagi meningkatkan kelenturan berdasarkan prinsip FITT.
+**Objektif:** (1) Melakukan kemahiran SP 3.3.1 (melakukan senaman regangan khusus pada otot-otot yang terlibat dalam aktiviti fizikal yang akan dilakukan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 4.3.1: Mengenal pasti senaman regangan yang boleh meningkatkan kelenturan pada sendi-sendi tertentu.
 
-## Pelaksanaan PdP
-**Set induksi:** Guru memperkenalkan beri tumpuan melalui perbualan pendek dan rujukan buku teks halaman buku teks belum disahkan. Murid menerangkan pengalaman atau cabaran berkaitan tajuk.
+**Set induksi:** Guru menunjukkan cabaran "BERI TUMPUAN" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi dan keselamatan:** Guru menunjukkan pergerakan utama yang dinyatakan bagi SP 3.3.1: Melakukan senaman regangan khusus pada otot-otot yang terlibat dalam aktiviti fizikal yang akan dilakukan. Murid memerhatikan kriteria lakuan, bertanya dan mencuba peringkat asas dengan pengawasan.
+**Aktiviti 1 — Kecergasan berperingkat:** Guru memperagakan postur, pernafasan dan gerakan utama; murid mengenal otot terlibat mengikut SP. Murid menunjukkan semula langkah asas berdasarkan SP 3.3.1.
 
-**Aktiviti 2 — Latihan kemahiran:** Guru mengatur stesen/ruang latihan yang sesuai dengan beri tumpuan. Murid berlatih secara individu atau berpasangan, memfokuskan melakukan senaman regangan khusus pada otot-otot yang terlibat dalam aktiviti fizikal yang akan dilakukan, kemudian menerima maklum balas tentang teknik dan keselamatan.
+**Aktiviti 2 — Aplikasi:** Murid melaksanakan latihan pada intensiti sesuai kemampuan, berhenti untuk menilai teknik dan mengubah intensiti mengikut maklum balas guru. 
 
-**Aktiviti 3 — Aplikasi:** Murid melaksanakan tugasan atau permainan kecil yang menggunakan kemahiran beri tumpuan; rakan memerhati pencapaian dan memberi satu cadangan membina. Guru membetulkan teknik serta memudahkan tugasan untuk murid yang memerlukan sokongan.
+**Pengukuhan/PBD:** Guru menilai postur, teknik pernafasan, usaha berkadar dan pemulihan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 4.3.1 dan menerima maklum balas. Guru memerhati sikap SP 5.2.2. 
 
-**Pengukuhan dan penilaian (PBD):** Senarai semak individu berdasarkan SP 3.3.1. Bukti amali: pergerakan/hasil yang boleh diperhatikan. Soal jawab berdasarkan SP 4.3.1 (Mengenal pasti senaman regangan yang boleh meningkatkan kelenturan pada sendi-sendi tertentu.); SP 4.3.2 (Merancang senaman regangan bagi meningkatkan kelenturan berdasarkan prinsip FITT.). Rekod penglibatan, keselamatan dan interaksi mengikut SP 5.2.2.
+**Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**Penutup:** Murid menyebut satu kemahiran atau strategi yang berjaya dan satu aspek perlu dibaiki. Guru merumuskan, mencatat murid yang memerlukan sokongan dan memaklumkan fokus PdP seterusnya.
+**BBM:** alas senaman, kon, kad lakuan dan rekod individu.  
+**Keselamatan/inklusif:** Tidak memaksa murid mengejar skor rakan; sediakan rehat dan pilihan pergerakan ringan.
 
-**BBM:** Buku teks (halaman buku teks belum disahkan); alatan sebenar dipilih mengikut tugasan dan kemudahan sekolah.  
-**Keselamatan/inklusiviti:** Guru menandakan ruang, memastikan alat/permukaan sesuai, memantau giliran dan menyesuaikan intensiti dengan kemampuan murid.
-
-## Catatan audit
-- Halaman buku teks belum disahkan oleh sumber RPT. Jangan reka halaman.
-- Kandungan ini ialah draf pedagogi berasaskan kod dan teks SP DSKP, bukan kelulusan READY. Kemaskan pelaksanaan khusus kelas, semak kesahan rujukan teks penuh, dan uji muat turun Word A4.
-- Jejak: [RPT 2027 PJ 101 PdP staging](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP PJPK Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view).
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

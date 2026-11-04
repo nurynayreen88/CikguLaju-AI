@@ -1,35 +1,25 @@
 # RPH Pendidikan Jasmani Tahun 4 — PdP 032
-
-**Status:** DRAF — semakan pedagogi, halaman buku teks dan A4 belum selesai  
-**Kurikulum:** KSSR, rancangan tahunan 2027 (bukan KP2027 Tahun 1)  
+**Status:** DRAF • semakan pedagogi, Word A4 dan Telegram belum lulus  
 **Unit/Tajuk:** SATRIA MUDA  
-**SK (kod):** 3.4, 4.4, 5.1  
-**SP (kod):** 3.4.1, 4.4.1, 4.4.2  
-**Buku teks:** m/s 68-69  
-**Tarikh/Masa/Kelas:** Diisi guru berdasarkan jadual sebenar. Rujukan minggu calon dalam RPT bukan tarikh PdP kelas.
+**Fasa PdP:** Amali dan aplikasi  
+**SK:** 3.4, 4.4, 5.1  
+**SP:** 3.4.1, 4.4.1, 4.4.2  
+**Buku teks:** m/s 68-69 menurut RPT 2027 (belum semakan visual buku teks)  
+**Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
-## Objektif pembelajaran dan evidens DSKP
-Murid dapat memperagakan kemahiran utama serta menerangkan pilihan teknik yang selamat mengikut standard berikut:
-- **SP 3.4.1:** Melakukan senaman iaitu separa cangkung, ringkuk tubi separa, jengkit kaki setempat, lentik belakang ubah suai, hamstring curl, tekan tubi ubah suai, tekan tubi dan bangkit tubi dalam jangka masa 20 – 30 saat.
-- **SP 4.4.1:** Menamakan otot-otot utama yang terlibat semasa melakukan senaman kekuatan otot dan daya tahan otot.
-- **SP 4.4.2:** Menyatakan perkaitan antara kekuatan otot dengan daya tahan otot dan prestasi motor.
+**Objektif:** (1) Melakukan kemahiran SP 3.4.1 (melakukan senaman iaitu separa cangkung, ringkuk tubi separa, jengkit kaki setempat, lentik belakang ubah suai, hamstring curl, tekan tubi ubah suai, tekan tubi dan bangkit tubi dalam j) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 4.4.1: Menamakan otot-otot utama yang terlibat semasa melakukan senaman kekuatan otot dan daya tahan otot.
 
-## Pelaksanaan PdP
-**Set induksi:** Guru memperkenalkan satria muda melalui perbualan pendek dan rujukan buku teks m/s 68-69. Murid menerangkan pengalaman atau cabaran berkaitan tajuk.
+**Set induksi:** Guru menunjukkan cabaran "SATRIA MUDA" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi dan keselamatan:** Guru menunjukkan pergerakan utama yang dinyatakan bagi SP 3.4.1: Melakukan senaman iaitu separa cangkung, ringkuk tubi separa, jengkit kaki setempat, lentik belakang ubah suai, hamstring curl, tekan tubi ubah suai, tekan tubi dan bangkit tubi dalam jangka masa 20 – 30 saat. Murid memerhatikan kriteria lakuan, bertanya dan mencuba peringkat asas dengan pengawasan.
+**Aktiviti 1 — Kecergasan berperingkat:** Guru memperagakan postur, pernafasan dan gerakan utama; murid mengenal otot terlibat mengikut SP. Murid menunjukkan semula langkah asas berdasarkan SP 3.4.1.
 
-**Aktiviti 2 — Latihan kemahiran:** Guru mengatur stesen/ruang latihan yang sesuai dengan satria muda. Murid berlatih secara individu atau berpasangan, memfokuskan melakukan senaman iaitu separa cangkung, ringkuk tubi separa, jengkit kaki setempat, lentik belakang ubah suai, hamstring curl, tekan tubi ubah suai, tekan tubi dan bangkit tubi dalam jangka masa 20 – 30 saat, kemudian menerima maklum balas tentang teknik dan keselamatan.
+**Aktiviti 2 — Aplikasi:** Murid melaksanakan latihan pada intensiti sesuai kemampuan, berhenti untuk menilai teknik dan mengubah intensiti mengikut maklum balas guru. 
 
-**Aktiviti 3 — Aplikasi:** Murid melaksanakan tugasan atau permainan kecil yang menggunakan kemahiran satria muda; rakan memerhati pencapaian dan memberi satu cadangan membina. Guru membetulkan teknik serta memudahkan tugasan untuk murid yang memerlukan sokongan.
+**Pengukuhan/PBD:** Guru menilai postur, teknik pernafasan, usaha berkadar dan pemulihan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 4.4.1 dan menerima maklum balas.  
 
-**Pengukuhan dan penilaian (PBD):** Senarai semak individu berdasarkan SP 3.4.1. Bukti amali: pergerakan/hasil yang boleh diperhatikan. Soal jawab berdasarkan SP 4.4.1 (Menamakan otot-otot utama yang terlibat semasa melakukan senaman kekuatan otot dan daya tahan otot.); SP 4.4.2 (Menyatakan perkaitan antara kekuatan otot dengan daya tahan otot dan prestasi motor.). Rekod penglibatan, keselamatan dan interaksi mengikut peraturan kumpulan.
+**Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**Penutup:** Murid menyebut satu kemahiran atau strategi yang berjaya dan satu aspek perlu dibaiki. Guru merumuskan, mencatat murid yang memerlukan sokongan dan memaklumkan fokus PdP seterusnya.
+**BBM:** alas senaman, kon, kad lakuan dan rekod individu.  
+**Keselamatan/inklusif:** Tidak memaksa murid mengejar skor rakan; sediakan rehat dan pilihan pergerakan ringan.
 
-**BBM:** Buku teks (m/s 68-69); alatan sebenar dipilih mengikut tugasan dan kemudahan sekolah.  
-**Keselamatan/inklusiviti:** Guru menandakan ruang, memastikan alat/permukaan sesuai, memantau giliran dan menyesuaikan intensiti dengan kemampuan murid.
-
-## Catatan audit
-- Kandungan ini ialah draf pedagogi berasaskan kod dan teks SP DSKP, bukan kelulusan READY. Kemaskan pelaksanaan khusus kelas, semak kesahan rujukan teks penuh, dan uji muat turun Word A4.
-- Jejak: [RPT 2027 PJ 101 PdP staging](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP PJPK Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view).
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.
