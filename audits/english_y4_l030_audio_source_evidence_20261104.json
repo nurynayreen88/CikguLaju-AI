@@ -59,8 +59,23 @@
     "pedagogical_approval": false,
     "printed_workbook_activity_checked": true
   },
-  "next_action": "Listen to both tracks against Teacher's Book Activity 2 dialogue, verify Telegram's per-lesson audio file ID, then run native Word/PDF teacher test and record signoff. Until then retain explicit AUDIO REFERENCE CONFLICT (DRAF).",
+  "next_action": "Workbook p15 Activity3 aligned to original TB/SB/WB; independently confirm actual spoken contents of SB p20 CD1 Track29 versus SOW printed CD2 Track29, confirm the exact Telegram MP3 route and run controlled teacher Word/native PDF delivery. Retain audio-conflict DRAF until those gates and teacher approval pass.",
   "workbook": {
+    "title": "Get Smart Plus 4 Workbook",
+    "drive_file_id": "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX",
+    "printed_page": 15,
+    "pdf_page": 14,
+    "activity": 3,
+    "unit_section": "Unit 2 — Let's play",
+    "prompt": "Look and write. Use have to or don't have to.",
+    "observed_content": "Phil and Gina's timetable lists get up, make my bed, feed the pets and rake the leaves, with checks and crosses. Pupils write have to / don't have to sentences; activity works without audio.",
+    "rph_match": "Y4 L030 optional WB p.15 Activity 3 matches TB p.39 Workbook section, SB p.20 Let's play and main Writing SP 4.3.2.",
+    "visual_source_check": true,
+    "teacher_book_workbook_page_checked": true,
+    "checked_date": "2026-11-04",
+    "notes": "Workbook p.15 Activity 1 is a separate listening-and-number task, associated in TB p.39 with Class CD1 Track 30. This audio is NOT a substitute for SB p.20 Activity 2 CD1 Track 29 and is NOT needed for optional WB Activity 3."
+  },
+  "prior_workbook_observation": {
     "title": "Get Smart Plus 4 Workbook",
     "drive_file_id": "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX",
     "printed_page": 14,
@@ -71,6 +86,8 @@
     "rph_match": "Lesson 030 optional Workbook p.14 Activity 1 matches original printed task",
     "visual_source_check": true,
     "checked_date": "2026-11-04",
-    "notes": "This written Workbook activity is separate from the SB p.20 Activity 2 listening task; it does not resolve which recording matches SB p.20. WB p.15 contains a separate Listen and number task and must not be conflated with WB p.14."
+    "notes": "This written Workbook activity is separate from the SB p.20 Activity 2 listening task; it does not resolve which recording matches SB p.20. WB p.15 contains a separate Listen and number task and must not be conflated with WB p.14.",
+    "classification": "SOURCE_VALID_BUT_PREVIOUS_UNIT_NOT_LESSON30",
+    "correction": "Printed WB p.14 Activity 1 belongs to Unit 2 Our world. A housework theme overlap alone does not establish the Lesson30 Lets play Workbook selection. Teacher's Book p.39 points to WB p.15."
   }
 }
