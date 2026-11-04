@@ -1,0 +1,30 @@
+name: English Y4 actual production launcher and 160-SOW source parity
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'web/english_y4_standalone_runtime.py'
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+      - 'rph_standalone/english/year4/**'
+      - 'audits/english_primary_2_6_official_sow_index_20261103.json'
+      - 'tests/test_english_y4_production_launcher_parity_20261105.py'
+      - '.github/workflows/english-y4-production-launcher-parity-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  actual-y4-row-path:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Run all 149 verified fixed-SOW source bridges and 11 pending gates
+        run: python -m unittest discover -s tests -p 'test_english_y4_production_launcher_parity_20261105.py' -v
+      - name: Preserve previous Year4 runtime/source tests
+        run: python -m unittest discover -s tests -p 'test_english_y4_standalone_runtime.py' -v
+      - name: Preserve Year4 lesson30 fail-closed audio and teacher-choice
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
+          python -m unittest discover -s tests -p 'test_english_y4_teacher_choice_release_gate_20261103.py' -v
