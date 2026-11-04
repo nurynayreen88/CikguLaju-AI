@@ -87,6 +87,35 @@ def _source_record(year, number):
 
 
 
+def _curated_year3_objective(source, number):
+    """Accept an objective only when its underlying source-task excerpt matches.
+
+    These are source-specific draft objectives, not teacher sign-off or a
+    claim that workbook/audio locations have been independently verified.
+    """
+    path = ROOT / "rph_standalone" / "english" / "year3" / (
+        "source_task_objectives_20261104.json")
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+        if value.get("version") != "year3-objectives-from-existing-lesson-tasks-20261104":
+            return None
+        entries = value.get("lessons")
+        if not isinstance(entries, dict) or len(entries) != 14:
+            return None
+        entry = entries.get(str(number))
+        if not isinstance(entry, dict):
+            return None
+        excerpt, objective = entry.get("excerpt"), entry.get("objective")
+        if (not isinstance(excerpt, str) or len(excerpt) < 25
+                or not isinstance(objective, str)
+                or not objective.startswith("By the end of the lesson, pupils can ")
+                or excerpt not in source):
+            return None
+        return objective
+    except (OSError, ValueError, TypeError):
+        return None
+
+
 def _source_task_objective(source):
     """Derive a learning goal from a real pupil action in the source Lesson.
 
@@ -169,7 +198,8 @@ def enrich_rows(state, rows):
     # providing explicit pupil tasks. Prefer a direct task-derived objective
     # over leaving the previous generic objective in the native document.
     if out.get("OBJEKTIF PEMBELAJARAN") == rows.get("OBJEKTIF PEMBELAJARAN"):
-        objective = _source_task_objective(raw_source)
+        objective = (_curated_year3_objective(raw_source, number)
+                     if year == 3 else None) or _source_task_objective(raw_source)
         if objective:
             out["OBJEKTIF PEMBELAJARAN"] = objective
             if not meta.get("success criteria") and not meta.get("success evidence"):
