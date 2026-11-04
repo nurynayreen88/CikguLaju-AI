@@ -1,40 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 046
 
-**ID:** BM4-P046  
-**Minggu RPT 2027:** M12 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U8: Hargai Diri  
-**Tajuk aktiviti:** Jangan Dedah Maklumat  
-**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 53  
-**Fokus:** tulisan — Jangan Dedah Maklumat  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Jangan Dedah Maklumat' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P046
+**Minggu RPT 2027:** M12 (tarikh sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U8: Hargai Diri
+**Tajuk aktiviti:** Jangan Dedah Maklumat
+**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.
+**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif dan deskriptif
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 53. **Buku Aktiviti:** Belum disahkan halaman dan latihan asal.
+**Konteks BT:** Hajar berswafoto dan berkongsi gambar serta maklumat ketiadaan ibu bapa di rumah; rangka cerita menunjukkan risiko pencerobohan dan tindakan jiran.
+**Objektif PdP:** Pada akhir PdP, murid dapat membina draf imaginatif lima bahagian dan menghasilkan karangan ringkas berdasarkan urutan gambar tentang maklumat peribadi.
+**Bahan:** BT pada halaman berkaitan, kad tugasan khusus, bahan ilustrasi atau peta i-Think jika dinyatakan serta senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Jangan Dedah Maklumat' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U8: Hargai Diri.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjuk ilustrasi Hajar berswafoto dalam bilik dan tanya maklumat yang wajar dirahsiakan.
+**Murid:** Nyatakan satu risiko memuat naik maklumat peribadi.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Jangan Dedah Maklumat' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis draf dan menghasilkan penulisan imaginatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Jangan Dedah Maklumat'.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing murid meneliti urutan gambar dan frasa BT m/s 53 termasuk berkongsi lokasi, pencerobohan dan tindakan jiran.
+**Murid:** Susun isi untuk pendahuluan, tiga isi dan penutup mengikut rangka yang disediakan.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan pengembangan satu isi daripada rangka kepada dua ayat yang saling berkaitan.
+**Murid:** Tulis draf lima bahagian dan hasilkan karangan imaginatif ringkas dengan penanda wacana.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak logik urutan, sebab-akibat, kesinambungan ayat dan penggunaan tanda baca.
+**Murid:** Sunting sekurang-kurangnya dua ayat agar cerita masuk akal dan mesej keselamatan jelas.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Jangan Dedah Maklumat' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kepentingan merangka penulisan dan tidak mendedahkan maklumat peribadi.
+**Murid:** Nyatakan satu amalan lebih selamat di media sosial.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
+**Bukti sumber khusus:** BT m/s 53 memaparkan urutan gambar Hajar berswafoto dan rangka pendahuluan-isi-penutup untuk penulisan imaginatif; SP 3.3.1.
 
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Status QA:** DRAF — bukti halaman serta aktiviti BT dan padanan SP bagi PdP ini disemak. BA, PKJR (jika berkenaan), takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Jangan terbitkan sebagai FINAL READY.

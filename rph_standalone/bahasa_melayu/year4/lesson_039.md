@@ -1,40 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 039
 
-**ID:** BM4-P039  
-**Minggu RPT 2027:** M11 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U7: Waspada Selalu  
-**Tajuk aktiviti:** Tadika Taman Impian  
-**Standard Kandungan (SK):** 2.1 Asas membaca dan memahami.  
-**Standard Pembelajaran (SP):** 2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 46  
-**Fokus:** bacaan — Tadika Taman Impian  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Tadika Taman Impian' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P039
+**Minggu RPT 2027:** M11 (tarikh sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U7: Waspada Selalu
+**Tajuk aktiviti:** Tadika Taman Impian
+**Standard Kandungan (SK):** 2.1 Asas membaca dan memahami.
+**Standard Pembelajaran (SP):** 2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 46. **Buku Aktiviti:** Belum disahkan halaman dan latihan asal.
+**Konteks BT:** Encik Husin menunjukkan brosur Tadika Taman Impian kepada Encik Lim: pagar berkunci, kamera, tangga kecemasan dan peti pertolongan cemas.
+**Objektif PdP:** Pada akhir PdP, murid dapat membaca brosur dengan sebutan serta intonasi sesuai dan mencatat empat ciri keselamatan dalam Peta Buih.
+**Bahan:** BT pada halaman berkaitan, kad tugasan khusus, bahan ilustrasi atau peta i-Think jika dinyatakan serta senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tadika Taman Impian' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U7: Waspada Selalu.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjukkan gambar sebuah tadika dan tanya ciri keselamatan yang penting.
+**Murid:** Nyatakan satu ciri yang membantu kanak-kanak berada dalam keadaan selamat.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Tadika Taman Impian' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Tadika Taman Impian' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan brosur BT m/s 46 mengikut bahagian supaya murid memahami tujuan setiap kemudahan.
+**Murid:** Baca petikan dengan sebutan/intonasi sesuai dan gariskan empat ciri keselamatan.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Paparkan Peta Buih yang berpusat pada 'Ciri-ciri Keselamatan Tadika Taman Impian'.
+**Murid:** Isi empat cabang menggunakan maklumat asal brosur dan jelaskan fungsinya.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak bacaan, empat isi Peta Buih dan kesesuaian huraian.
+**Murid:** Baiki maklumat yang tidak sepadan dengan brosur.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Tadika Taman Impian' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran membaca brosur dan cara mengenal pasti fakta.
+**Murid:** Nyatakan satu sebab aspek keselamatan tadika penting.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
+**Bukti sumber khusus:** BT m/s 46 ialah brosur Tadika Taman Impian dengan arahan membaca serta mencatat ciri keselamatan dalam Peta Buih.
 
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Status QA:** DRAF — bukti halaman serta aktiviti BT dan padanan SP bagi PdP ini disemak. BA, PKJR (jika berkenaan), takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Jangan terbitkan sebagai FINAL READY.

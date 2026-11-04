@@ -1,42 +1,39 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 050
 
-**ID:** BM4-P050  
-**Minggu RPT 2027:** M13 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat  
-**Tajuk aktiviti:** Pemandu Bijak + PKJR  
-**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.  
-**Standard Pembelajaran (SP):** 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 57  
-**Fokus:** lisan — Pemandu Bijak  
-**Objektif PdP:** Murid dapat menceritakan semula perkara yang didengar, ditonton atau dibaca berkaitan 'Pemandu Bijak + PKJR' dengan sekurang-kurangnya tiga isi/peristiwa tersusun serta sebutan dan intonasi yang jelas.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P050
+**Minggu RPT 2027:** M13 (tarikh sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat
+**Tajuk aktiviti:** Pemandu Bijak + PKJR
+**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.
+**Standard Pembelajaran (SP):** 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 57. **Buku Aktiviti:** Belum disahkan halaman dan latihan asal.
+**Konteks BT:** Hadif dan ayahnya menonton iklan keselamatan jalan raya di televisyen sewaktu berada di bengkel kereta.
+**Objektif PdP:** Pada akhir PdP, murid dapat menceritakan sekurang-kurangnya tiga panduan keselamatan jalan raya daripada bahan yang ditonton dengan sebutan serta intonasi sesuai.
+**Bahan:** BT pada halaman berkaitan, kad tugasan khusus, bahan ilustrasi atau peta i-Think jika dinyatakan serta senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pemandu Bijak' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U9: Patuh dan Selamat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar ilustrasi Hadif menonton iklan keselamatan jalan raya.
+**Murid:** Nyatakan satu amalan pengguna jalan raya yang bertanggungjawab.
 
-## Aktiviti 1 — Susun jalan cerita (15 minit)
-**Guru:** Menyampaikan bahan bertajuk 'Pemandu Bijak + PKJR' (teks/audio/gambar sesuai sumber); memodelkan urutan permulaan, perkembangan dan pengakhiran serta intonasi yang sesuai SP.
-**Murid:** Mendengar, membaca atau meneliti bahan; menyusun sekurang-kurangnya tiga isi/peristiwa mengikut urutan berdasarkan bukti bahan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing murid meneliti bahan iklan BT m/s 57 dan kenal pasti panduan yang dinyatakan, tanpa meneka apa yang tidak dipaparkan.
+**Murid:** Catat tiga panduan yang jelas daripada bahan.
 
-## Aktiviti 2 — Persembahan cerita (20 minit)
-**Guru:** Membimbing murid bercerita dengan kad urutan; memberikan maklum balas tentang sebutan, intonasi, gaya dan kesinambungan isi.
-**Murid:** Bercerita semula secara bergilir tentang 'Pemandu Bijak + PKJR' menggunakan tiga isi/peristiwa serta intonasi dan gaya yang sesuai; rakan mencatat satu kekuatan dan cadangan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan penceritaan kepada ayah tentang iklan dengan urutan 'iklan tentang apa', 'panduan', 'sebab'.
+**Murid:** Ceritakan semula tiga panduan keselamatan jalan raya kepada rakan dengan intonasi sesuai.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Mentaksir persembahan setiap murid melalui senarai semak: tiga isi tersusun, sebutan jelas dan intonasi/gaya tepat mengikut SP (1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai). Beri peluang persembahan semula sebagai pemulihan.
-**Murid:** Menyampaikan ringkasan lisan dan membaiki satu aspek sebutan, urutan atau intonasi selepas maklum balas.
+**Guru:** Semak sebutan, kesesuaian isi serta hubungan sebab mematuhi panduan.
+**Murid:** Baiki satu bahagian penceritaan dengan merujuk bahan asal.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Pemandu Bijak' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan langkah menceritakan bahan yang ditonton.
+**Murid:** Nyatakan satu sebab peraturan jalan raya perlu dipatuhi.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
+**Bukti sumber khusus:** BT m/s 57 mengandungi dialog Hadif dengan ayah mengenai iklan jalan raya dan arahan menceritakan bahan ditonton (SP 1.3.2).
 
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
+**Kawalan PKJR:** Label dalam RPT belum disahkan terhadap modul rasmi; tiada HP/BAM atau aktiviti PKJR tambahan yang direka.
 
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Status QA:** DRAF — bukti halaman serta aktiviti BT dan padanan SP bagi PdP ini disemak. BA, PKJR (jika berkenaan), takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Jangan terbitkan sebagai FINAL READY.

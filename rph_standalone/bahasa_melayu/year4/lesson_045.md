@@ -1,40 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 045
 
-**ID:** BM4-P045  
-**Minggu RPT 2027:** M12 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U8: Hargai Diri  
-**Tajuk aktiviti:** Bahaya Penyakit Rabies  
-**Standard Kandungan (SK):** 2.2 Membaca, memahami, dan menaakul bahan multimedia.  
-**Standard Pembelajaran (SP):** 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran.  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 52  
-**Fokus:** bacaan — Bahaya Penyakit Rabies  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Bahaya Penyakit Rabies' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P045
+**Minggu RPT 2027:** M12 (tarikh sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U8: Hargai Diri
+**Tajuk aktiviti:** Bahaya Penyakit Rabies
+**Standard Kandungan (SK):** 2.2 Membaca, memahami, dan menaakul bahan multimedia.
+**Standard Pembelajaran (SP):** 2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran.
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 52. **Buku Aktiviti:** Belum disahkan halaman dan latihan asal.
+**Konteks BT:** Bahan grafik tentang rabies dan langkah pencegahan selepas taklimat kepada Kelab Doktor Muda; fakta angka dalam buku digunakan sebagai bahan bacaan, bukan panduan klinikal terkini.
+**Objektif PdP:** Pada akhir PdP, murid dapat meneliti grafik rabies, membezakan tiga fakta utama dan membina satu gambaran tentang langkah berjaga-jaga berasaskan sumber.
+**Bahan:** BT pada halaman berkaitan, kad tugasan khusus, bahan ilustrasi atau peta i-Think jika dinyatakan serta senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Bahaya Penyakit Rabies' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U8: Hargai Diri.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan grafik ceramah rabies yang dirujuk dalam BT.
+**Murid:** Nyatakan mengapa bahan grafik kesihatan perlu dibaca dengan tepat.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Bahaya Penyakit Rabies' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Bahaya Penyakit Rabies' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing membaca bahagian risiko serta langkah pencegahan dalam grafik; asingkan fakta daripada cadangan keselamatan.
+**Murid:** Gariskan tiga maklumat utama dan jelaskan hubungan antara risiko gigitan haiwan serta pencegahan.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Sediakan rangka gambaran dua lajur 'Risiko' dan 'Langkah berhati-hati' berdasarkan grafik.
+**Murid:** Isi tiga fakta daripada BT dan bentangkan gambaran ringkas tanpa membuat dakwaan rawatan baharu.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.2.1 — Membaca dan memahami bahan grafik daripada multimedia untuk membuat gambaran.) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak fakta diperoleh daripada grafik dan tidak dicampur dengan tekaan atau nasihat perubatan tambahan.
+**Murid:** Betulkan fakta yang tersasar dan jelaskan satu langkah yang dinyatakan dalam bahan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Bahaya Penyakit Rabies' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran mentafsir bahan grafik.
+**Murid:** Nyatakan kepentingan mendapatkan bantuan orang dewasa atau rawatan segera selepas gigitan haiwan.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
+**Bukti sumber khusus:** BT m/s 52 memuatkan grafik rabies serta arahan meneliti bahan grafik untuk membuat gambaran (SP 2.2.1).
 
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Status QA:** DRAF — bukti halaman serta aktiviti BT dan padanan SP bagi PdP ini disemak. BA, PKJR (jika berkenaan), takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Jangan terbitkan sebagai FINAL READY.

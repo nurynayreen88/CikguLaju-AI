@@ -1,42 +1,39 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 040
 
-**ID:** BM4-P040  
-**Minggu RPT 2027:** M11 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U7: Waspada Selalu  
-**Tajuk aktiviti:** Awas Selalu + PKJR  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.4 — Menulis ayat dalam perenggan yang diimlakkan  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 47  
-**Fokus:** tulisan — Awas Selalu  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Awas Selalu' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P040
+**Minggu RPT 2027:** M11 (tarikh sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U7: Waspada Selalu
+**Tajuk aktiviti:** Awas Selalu + PKJR
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.4 — Menulis ayat dalam perenggan yang diimlakkan
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 47. **Buku Aktiviti:** Belum disahkan halaman dan latihan asal.
+**Konteks BT:** Petikan bertema keselamatan kanak-kanak dalam talian: mengelak berkongsi maklumat peribadi, berwaspada terhadap kenalan asing dan melapor gangguan.
+**Objektif PdP:** Pada akhir PdP, murid dapat menulis satu perenggan imlak dengan ketepatan isi, ejaan dan tanda baca yang sesuai berdasarkan petikan keselamatan dalam talian.
+**Bahan:** BT pada halaman berkaitan, kad tugasan khusus, bahan ilustrasi atau peta i-Think jika dinyatakan serta senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Awas Selalu' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U7: Waspada Selalu.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan tajuk Awas Selalu tentang keselamatan maklumat dalam talian.
+**Murid:** Nyatakan satu jenis maklumat peribadi yang tidak sepatutnya dikongsi dengan orang asing.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Awas Selalu' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis ayat dalam perenggan yang diimlakkan.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Awas Selalu'.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Guru membaca petikan keselamatan dalam talian BT m/s 47; pilih perenggan sesuai dan terangkan proses mendengar sebelum menulis.
+**Murid:** Dengar petikan sekali tanpa menulis kemudian kenal pasti kata sukar.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Imlakkan satu perenggan daripada bahan dan ulang bacaan secara bertahap dengan sebutan jelas.
+**Murid:** Tulis perenggan imlak secara individu lengkap dengan huruf besar, ejaan dan tanda baca.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.4 — Menulis ayat dalam perenggan yang diimlakkan) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Baca semula perenggan untuk murid menyemak kendiri; semak isi, ejaan dan tanda baca.
+**Murid:** Baiki tiga kesilapan jika ada berdasarkan bacaan semula.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Awas Selalu' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan penulisan imlak dan amalan menjaga privasi.
+**Murid:** Nyatakan satu tindakan apabila menerima mesej mencurigakan.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
+**Bukti sumber khusus:** BT m/s 47 meminta mengimlakkan perenggan yang dibaca guru berdasarkan petikan keselamatan dalam talian; SP 3.2.4.
 
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
+**Kawalan PKJR:** Label dalam RPT belum disahkan terhadap modul rasmi; tiada HP/BAM atau aktiviti PKJR tambahan yang direka.
 
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Status QA:** DRAF — bukti halaman serta aktiviti BT dan padanan SP bagi PdP ini disemak. BA, PKJR (jika berkenaan), takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Jangan terbitkan sebagai FINAL READY.
