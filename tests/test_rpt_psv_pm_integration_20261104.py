@@ -9,6 +9,7 @@ from pypdf import PdfReader
 from rpt_2027.psv import telegram_downloads as psv
 from rpt_2027.english import telegram_downloads as english
 from rpt_2027.pendidikan_moral import add_cover
+from rpt_2027.pendidikan_moral import complete_96_downloads as moral_downloads
 from rpt_2027.pendidikan_moral.complete_96_downloads import build_rpt_pdf, build_combined_rpt_pdf, combined_pdf_ready, source_rows as moral_rows
 
 class PSVandMoralRPTTests(unittest.TestCase):
@@ -67,6 +68,46 @@ class PSVandMoralRPTTests(unittest.TestCase):
                 self.assertIn("096",reader.pages[28].extract_text())
         self.assertFalse(combined_pdf_ready(1))
         self.assertFalse(combined_pdf_ready(7))
+
+    def test_moral_one_click_pdf_and_old_ab_callbacks(self):
+        sent=[]
+        state={"paid":False}
+        def send(cid,msg,kb=None):
+            sent.append(("message",msg,kb))
+            return msg
+        def send_document(cid,path,caption):
+            file=Path(path)
+            self.assertEqual(file.suffix,".pdf")
+            self.assertEqual(len(PdfReader(str(file)).pages),29)
+            self.assertIn("Kumpulan A dan B",caption)
+            sent.append(("pdf",file.name,caption))
+            return SimpleNamespace(ok=True,json=lambda:{"ok":True})
+        ns={"callback":lambda cid,data:("original",data),"send":send,
+            "send_document":send_document,
+            "_access_info":lambda cid:{"active":state["paid"]},
+            "_is_admin":lambda cid:False,
+            "_telegram_delivery_ok_v25279":lambda result:result.ok}
+        self.assertTrue(english.install(ns))
+        self.assertTrue(moral_downloads.install(ns))
+        ns["callback"](1,"rpt2027_pm_pdf_2")
+        self.assertEqual(sent[-1][0],"message")
+        self.assertIn("hanya untuk",sent[-1][1])
+        self.assertFalse(any(x[0]=="pdf" for x in sent))
+        state["paid"]=True
+        ns["callback"](1,"rpt2027_year_2")
+        menu=str(sent[-1][2])
+        self.assertEqual(menu.count("rpt2027_pm_pdf_2"),1)
+        self.assertNotIn("rpt2027_pm_96_a_2",menu)
+        self.assertNotIn("rpt2027_pm_96_b_2",menu)
+        self.assertNotIn("rpt2027_pm_rph54_docx_2",menu)
+        for callback in ("rpt2027_pm_pdf_2","rpt2027_pm_96_a_2","rpt2027_pm_96_b_2"):
+            ns["callback"](1,callback)
+            self.assertEqual(sent[-1][0],"pdf")
+            self.assertEqual(sent[-1][1],"RPT_Pendidikan_Moral_Tahun_2_2027.pdf")
+        ns["callback"](1,"rpt2027_pm_pdf_9")
+        self.assertEqual(sent[-1][0],"message")
+        self.assertIn("tidak sah",sent[-1][1])
+        self.assertEqual(ns["callback"](1,"other"),("original","other"))
 
     def test_paid_psv_and_legacy_callback_isolation(self):
         records=[]

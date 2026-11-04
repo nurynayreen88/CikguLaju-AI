@@ -390,7 +390,7 @@ def install(ns):
         else:
             return previous(cid, data)
         if raw_year not in ("2","3","4","5","6") or (
-                kind == "rpt" and group not in ("A","B")):
+                kind == "rpt" and group is not None and group not in ("A","B")):
             return send(cid, "Pilihan tahun atau kumpulan tidak sah.")
         try:
             allowed = bool(ns["_is_admin"](cid) or ns["_access_info"](cid).get("active"))
