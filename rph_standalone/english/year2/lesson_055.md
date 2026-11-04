@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 55: Language Arts 11
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; SOW verification pending):** 5.3 / 5.3.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 5.3 / 5.3.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.3  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
 **Learning objectives:** Pupils create and perform a short original chant and give a three-step sequence of basic spoken instructions.  

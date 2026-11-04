@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 61: Listening 13
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.5  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.3 / 1.3.1  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior mapping; detailed SOW task sequence unverified. The material below is original teacher-created content.  
 **Learning objectives:** Pupils answer four of five short supported oral questions and use visual clues to interpret two spoken messages.  

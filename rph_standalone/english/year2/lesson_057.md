@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 57: Speaking 12
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.5  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.83. Exact Teacher's Book activity sequence not verified. The script and tasks below are teacher-created alternatives, not textbook transcriptions.  
 **Learning objectives:** Pupils ask two basic questions about clothing preferences and respond to three short supported questions.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 54: Writing 11
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.3  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 4.2 / 4.2.4  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.4  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
 **Learning objectives:** Pupils write three short familiar instructions and two descriptions of house objects.  

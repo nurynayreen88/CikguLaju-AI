@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 66: Listening 14
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 1.3 / 1.3.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.3 / 1.3.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source:** Student's Book p.84 (mapping only; TB unverified). All passages, scripts, questions and models below are original teacher-created resources, not textbook extracts.  
 **Learning objectives:** Pupils interpret two spoken messages using visual clues and describe two clothing objects.  

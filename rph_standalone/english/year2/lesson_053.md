@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 53: Speaking 11
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; SOW verification pending):** 2.2 / 2.2.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.2 / 2.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.5  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
 **Learning objectives:** Pupils use two suitable expressions to request attention or help and understand three short supported oral questions.  

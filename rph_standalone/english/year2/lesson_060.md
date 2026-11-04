@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 60: Language Arts 12
 
 **Unit:** Get dressed!  
-**Main SK/SP (existing mapping; SOW verification pending):** 5.2 / 5.2.1  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 5.2 / 5.2.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.2  
 **Duration:** 60 minutes  
 **Classification:** NON-TEXTBOOK in the prior mapping. Materials below are original teacher-developed resources; detailed SOW activity verification pending.  
 **Learning objectives:** Pupils name three people, things or actions in a short text and spell four familiar words.  
