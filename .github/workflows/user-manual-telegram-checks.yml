@@ -1,0 +1,35 @@
+name: CikguLaju Telegram user manual checks
+
+on:
+  pull_request:
+    paths:
+      - "docs/manual_pengguna_cikgulaju_2026.txt"
+      - "web/manual_pengguna_telegram.py"
+      - "tests/test_manual_pengguna_telegram.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - ".github/workflows/user-manual-telegram-checks.yml"
+  push:
+    branches: [main]
+    paths:
+      - "docs/manual_pengguna_cikgulaju_2026.txt"
+      - "web/manual_pengguna_telegram.py"
+      - "tests/test_manual_pengguna_telegram.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - ".github/workflows/user-manual-telegram-checks.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  user-manual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install PDF test dependencies
+        run: python -m pip install reportlab==4.2.5 pypdf==5.1.0 requests==2.32.3
+      - name: Validate public menu and generated PDF
+        run: python -m unittest discover -s tests -p "test_manual_pengguna_telegram.py" -v
