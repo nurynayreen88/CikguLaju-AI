@@ -36,7 +36,7 @@ def register_fonts():
     pdfmetrics.registerFont(TTFont("CJ-Bold",str(bold)))
 
 def cleaned(line):
-    return re.sub(r"\*\*|__|(?<!\w)\*(?!\s)", "", line).strip()
+    return re.sub(r"\bLesson\b", "PdP", re.sub(r"\*\*|__|(?<!\w)\*(?!\s)", "", line)).strip()
 
 def sections(src):
     for raw in src.splitlines():
@@ -134,7 +134,7 @@ def rpt_docx(source):
     normal.font.name="DejaVu Sans";normal.font.size=Pt(7.5)
     normal.paragraph_format.space_after=Pt(1)
     doc.add_heading("CIKGULAJU | RPT BAHASA MELAYU TAHUN 3 2027",level=0)
-    doc.add_paragraph("Kumpulan A + B | 165 Lesson | DRAF SEMAKAN (BELUM READY) | SK / KSSR Semakan")
+    doc.add_paragraph("Kumpulan A + B | 165 PdP | DRAF SEMAKAN (BELUM READY) | SK / KSSR Semakan")
     lines=source.splitlines()
     weekCount=0;lessonCount=0;table=None
     for line in lines:
@@ -143,13 +143,13 @@ def rpt_docx(source):
             doc.add_heading(cleaned(line[4:]),level=2)
             table=doc.add_table(rows=1,cols=7)
             table.style="Table Grid"
-            titles=["Lesson","Tema/Unit","Tajuk","SK","SP","BT/BA","PBD/Catatan"]
+            titles=["PdP","Tema/Unit","Tajuk","SK","SP","BT/BA","PBD/Catatan"]
             for cell,label in zip(table.rows[0].cells,titles):
                 cell.text=label
                 for p in cell.paragraphs:
                     for r in p.runs:r.bold=True;r.font.size=Pt(7.2)
             continue
-        if table is not None and re.match(r"^\|\s*\*\*Lesson \d{3}",line):
+        if table is not None and re.match(r"^\|\s*\*\*PdP \d{3}",line):
             cells=[cleaned(x) for x in line.strip().strip("|").split("|")]
             if len(cells)!=7:raise AssertionError(f"Bad RPT row: {cells}")
             row=table.add_row()
@@ -168,7 +168,7 @@ def rpt_docx(source):
                     for p in cell.paragraphs:
                         for run in p.runs:run.font.size=Pt(6.6)
     if lessonCount!=165 or weekCount!=44:
-        raise AssertionError(f"RPT count incorrect: {lessonCount} Lesson; {weekCount} weeks")
+        raise AssertionError(f"RPT count incorrect: {lessonCount} PdP; {weekCount} weeks")
     out=BytesIO();doc.save(out)
     return out.getvalue(),weekCount,lessonCount
 
@@ -184,8 +184,8 @@ def main():
             items=list(sections(f.read_text(encoding="utf-8")))
             pdf,size=make_pdf(f,items)
             word=make_docx(items)
-            archive.writestr(f"RPH_PDF_A4_DRAF/lesson_{n:03d}.pdf",pdf)
-            archive.writestr(f"RPH_WORD_A4_DRAF/lesson_{n:03d}.docx",word)
+            archive.writestr(f"RPH_PDF_A4_DRAF/PdP_{n:03d}.pdf",pdf)
+            archive.writestr(f"RPH_WORD_A4_DRAF/PdP_{n:03d}.docx",word)
             report["rph_pdf_one_page"]+=1
             report["rph_docx_created"]+=1
             report["min_pdf_font_pt"]=min(size,report["min_pdf_font_pt"])
