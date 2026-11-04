@@ -227,6 +227,12 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
     if overlay and overlay.get("sow_pupil_book_exercises"):
         result["BAHAN BANTU MENGAJAR"] += "; SOW PB Exercise(s): " + overlay["sow_pupil_book_exercises"]
     result["PENTAKSIRAN"] = overlay.get("pbd_evidence") if overlay else meta["pbd evidence"]
+    if choice_sow is not None:
+        # For teacher-selected Lessons the short PBD evidence label alone
+        # omits the teacher's and pupils' actions. Retain the actual source
+        # reinforcement steps as well as the lesson-specific success evidence.
+        result["PENTAKSIRAN"] = (p["Reinforcement / PBD"] +
+                                 "\nEvidence: " + meta["pbd evidence"])
     if overlay:
         intro = overlay["induction"]
         result["SET INDUKSI"] = _phase("Teacher: " + intro["teacher"] + "\nPupils: " + intro["pupils"], 5)
