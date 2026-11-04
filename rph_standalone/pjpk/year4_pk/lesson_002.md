@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru mengemukakan satu soalan melalui gambar/dialog rekaan bertema "Akil baligh dan pengurusan diri". Murid berkongsi fakta umum tanpa diminta pengalaman peribadi.
 
-**Aktiviti 1 — Latihan dan analisis:** Kumpulan membina rutin kebersihan dan menjelaskan cara mendapatkan maklumat daripada orang dewasa dipercayai.
+**Aktiviti 1 — Latihan khusus:** Guru menggunakan rajah pendidikan dan kad perubahan fizikal lelaki serta perempuan ketika akil baligh tanpa meminta murid menyatakan perkembangan diri. Murid mengelaskan perubahan mengikut jenis perubahan dan mengenal pasti perubahan yang berlaku pada kedua-dua jantina.
 
-**Aktiviti 2 — Aplikasi:** Murid memadankan kad perubahan akil baligh dengan langkah kebersihan dan sokongan yang betul.
+**Aktiviti 2 — Aplikasi:** Kumpulan menyusun kad fakta perubahan akil baligh serta membincangkan bahawa kadar perkembangan berbeza antara individu. Murid menulis penerangan ringkas yang sopan dan memilih sumber maklumat yang dipercayai, tanpa ejekan atau perbandingan tubuh rakan.
 
-**Pengukuhan/PBD:** Setiap murid melengkapkan kad situasi–tindakan–alasan; guru menyemak ketepatan fakta dan respons berdasarkan 1.1.2. Guru merekod kesilapan untuk intervensi.
+**Pengukuhan/PBD:** Murid menerangkan dua perubahan fizikal akil baligh dengan istilah tepat dan menghormati kepelbagaian perkembangan berdasarkan SP 1.1.2; guru menyemak tanpa mendapatkan data peribadi.
 
 **Penutup:** Murid menyatakan satu amalan selamat atau alasan pilihan yang dipelajari; guru merumus hasil PdP.
 

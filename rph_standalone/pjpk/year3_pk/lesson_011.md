@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Keyakinan diri dan emosi positif" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Aplikasi dan penyelesaian masalah:** Secara pasangan, murid memilih satu senario seperti menyampaikan idea kepada kumpulan, menulis dialog galakan diri dan melatih persembahan pendek tanpa memaksa murid yang tidak selesa. Guru memperkenalkan senario baharu untuk membezakan tindakan tepat dengan tindakan berisiko.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan tiga senario rekaan seperti mencuba permainan baharu, tersilap menjawab soalan dan berucap di hadapan kumpulan. Murid menjana idea amalan positif bagi setiap situasi, termasuk berlatih, mencuba semula dan meminta maklum balas.
 
-**Aktiviti 2 — Aplikasi:** Secara pasangan, murid memilih satu senario seperti menyampaikan idea kepada kumpulan, menulis dialog galakan diri dan melatih persembahan pendek tanpa memaksa murid yang tidak selesa.
+**Aktiviti 2 — Aplikasi:** Dalam kumpulan, murid menghasilkan 'pelan 3 langkah' membina keyakinan diri untuk satu cabaran baharu, membandingkan dua cadangan, kemudian memilih tindakan yang realistik tanpa memaksa mana-mana murid mendedahkan pengalaman sebenar.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 3.1.3 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Guru menilai idea SP 3.1.3 melalui pelan individu yang menyatakan dua amalan positif, satu halangan rekaan dan cara mengatasinya; murid menjelaskan sebab pilihan.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

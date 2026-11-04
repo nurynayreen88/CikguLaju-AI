@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Mengurus konflik rakan dan adik-beradik" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Kumpulan membandingkan tiga penyelesaian: mengalah dengan selamat, berbincang dan meminta bantuan orang dewasa; pilih satu bagi senario berebut alat permainan serta berikan alasan.
+**Aktiviti 1 — Latihan khusus:** Guru menunjukkan dialog rekaan rakan berebut alat permainan dan adik-beradik tidak bersetuju. Murid menandakan bahasa badan, nada suara dan ayat yang menjadi tanda konflik sebelum atau semasa perselisihan.
 
-**Aktiviti 2 — Aplikasi:** Murid menandakan perkataan atau tindakan yang memburukkan konflik dalam dialog, kemudian menulis semula dialog menggunakan ayat 'Saya rasa...' dan mendengar pandangan orang lain.
+**Aktiviti 2 — Aplikasi:** Pasangan mengelaskan kad tanda konflik kepada lisan, emosi dan tingkah laku, kemudian membandingkan tanda awal dengan konflik yang semakin serius. Murid memilih satu cara bertenang dan meminta bantuan tanpa mendedahkan konflik keluarga sebenar.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 5.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 5.1.2: murid mengenal pasti sekurang-kurangnya tiga tanda konflik dalam dua cerita rekaan dan menerangkan satu sebab perlu bertindak awal bagi mengelakkan konflik menjadi serius.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

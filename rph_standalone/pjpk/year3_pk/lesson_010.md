@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Keyakinan diri dan emosi positif" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Secara pasangan, murid memilih satu senario seperti menyampaikan idea kepada kumpulan, menulis dialog galakan diri dan melatih persembahan pendek tanpa memaksa murid yang tidak selesa.
+**Aktiviti 1 — Latihan khusus:** Guru mengemukakan situasi rekaan seorang murid gugup ketika membentang. Murid menyusun langkah matlamat kecil, latihan, dialog galakan diri dan meminta maklum balas; guru menunjukkan satu contoh cara mengatasi kegugupan secara beransur.
 
-**Aktiviti 2 — Aplikasi:** Murid menyusun kad langkah membina keyakinan: tetapkan matlamat kecil, cuba semula, minta maklum balas dan hargai usaha.
+**Aktiviti 2 — Aplikasi:** Pasangan memilih satu cabaran mudah seperti memperkenalkan idea kepada dua rakan, berlatih ungkapan galakan diri dan melaksanakan persembahan pendek mengikut keselesaan. Murid memberi maklum balas tentang usaha, bukan membandingkan keyakinan sesama rakan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 3.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 3.1.2: murid mempraktikkan dua cara meningkatkan keyakinan diri dan menerangkan bila langkah tersebut boleh digunakan dalam kehidupan harian; sediakan respons bertulis bagi murid tidak selesa berlakon.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

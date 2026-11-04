@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Batas sentuhan dan keselamatan diri" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Pasangan berlatih dialog 'Saya tidak selesa; berhenti; saya akan beritahu orang dewasa dipercayai', kemudian menandakan jalan keluar dan tempat meminta bantuan pada pelan situasi rekaan.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan kad dialog rekaan apabila seseorang cuba menyentuh tubuh tanpa izin atau meminta menyimpan rahsia yang menakutkan. Murid mengenal pasti sempadan diri dan berlatih respons 'TIDAK, saya tidak selesa' tanpa lakonan sentuhan.
 
-**Aktiviti 2 — Aplikasi:** Kumpulan memilih respons untuk beberapa situasi kad: permintaan sentuhan tidak selesa, rahsia yang menakutkan, atau permintaan bantuan; guru menegaskan penghormatan batas tubuh.
+**Aktiviti 2 — Aplikasi:** Pasangan berlatih tiga langkah: menolak secara tegas, beredar ke tempat selamat dan memberitahu orang dewasa dipercayai. Murid memilih dua tempat/bantuan yang sesuai pada pelan rumah/sekolah rekaan, kemudian menilai respons rakan dengan kad semak.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 4.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 4.1.2: murid menunjukkan kata penolakan yang jelas, tindakan beredar dan cara mendapatkan bantuan bagi dua kad situasi tanpa sebarang sentuhan fizikal atau pendedahan peribadi.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

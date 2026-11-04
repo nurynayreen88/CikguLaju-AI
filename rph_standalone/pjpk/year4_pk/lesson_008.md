@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru mengemukakan satu soalan melalui gambar/dialog rekaan bertema "Berkata TIDAK kepada alkohol". Murid berkongsi fakta umum tanpa diminta pengalaman peribadi.
 
-**Aktiviti 1 — Latihan dan analisis:** Pasangan menyampaikan dialog penolakan asertif, beredar dan mendapatkan bantuan orang dewasa.
+**Aktiviti 1 — Latihan khusus:** Guru menunjukkan kad fakta kesan pengambilan alkohol terhadap pertimbangan, keselamatan, kesihatan dan hubungan sosial tanpa menunjukkan produk sebenar. Murid membina peta sebab-akibat berdasarkan fakta yang telah disahkan.
 
-**Aktiviti 2 — Aplikasi:** Murid menilai kad pelawaan minuman memabukkan dan menandakan risiko kesihatan.
+**Aktiviti 2 — Aplikasi:** Dalam kumpulan, murid menilai dua senario rekaan yang memperlihatkan risiko pengambilan alkohol. Murid mengelaskan kesan jangka pendek dan kesan kepada orang sekeliling, kemudian memberikan satu alasan mengapa situasi itu tidak selamat.
 
-**Pengukuhan/PBD:** Setiap murid melengkapkan kad situasi–tindakan–alasan; guru menyemak ketepatan fakta dan respons berdasarkan 2.1.2. Guru merekod kesilapan untuk intervensi.
+**Pengukuhan/PBD:** Rubrik SP 2.1.2: murid menganalisis dua kesan pengambilan alkohol dan menerangkan kaitan sebab-akibat dalam satu senario, bukan sekadar menghafal ayat penolakan.
 
 **Penutup:** Murid menyatakan satu amalan selamat atau alasan pilihan yang dipelajari; guru merumus hasil PdP.
 
