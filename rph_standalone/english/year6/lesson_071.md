@@ -7,32 +7,32 @@
 **Language focus:** Narrative tenses review, e.g. past simple, past continuous  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.66–67  
-**Learning objective:** Narrate a factual or imagined event linked to a journey around town in at least 6 ordered sentences.  
-**PBD evidence:** Narrative with 6 ordered sentences, correct event vocabulary and at least 2 sequence connectors.
+**Learning objective:** Co-write a creative six-stage picture story using PB p.67 prompts and narrate its sequence with appropriate past-tense language.  
+**PBD evidence:** Six linked story stages in a clear draft (Writing 4.2.3) and two understood details from another group's narration (Listening 1.2.3).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Tell an original familiar short story with beginning, middle and end.  
+**Pupils:** Listen for the gist and answer a question.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How do we get there safely?”. Highlight useful language: Narrative tenses review, e.g. past simple, past continuous.  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a journey around town.
+**Teacher:** Distribute PB p.67 Activity 3 cut-up opening sentences.  
+**Pupils:** Match each opening sentence to one picture.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model the difference between opening, linked events and ending; focus on the narrative forms in this RPT Lesson.  
-**Pupils:** Draft a six-sentence account with a beginning, chronological events and a suitable ending.
+**Teacher:** Explain the picture prompts and give pupils time to develop ideas.  
+**Pupils:** Expand one allocated story stage with a relevant action.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Form groups of six and guide joint writing of the new story.  
+**Pupils:** Combine six stages and add two linking words in a shared draft.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check sequence, participation and correct past tense.  
+**Pupils:** Revise one unclear stage and note one heard story detail.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite volunteers to share and compare stories.  
+**Pupils:** Read an event aloud and report one difference.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
