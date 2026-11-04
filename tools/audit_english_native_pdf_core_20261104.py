@@ -14,6 +14,7 @@ import argparse
 import json
 from functools import lru_cache
 import os
+import shutil
 from pathlib import Path
 import re
 import sys
@@ -115,7 +116,7 @@ def _make_native_pdf(rows,year,lesson,output):
     path=names["create_pdf_file"](state,"",int(lesson)+year*1000)
     dest=Path(output)
     dest.parent.mkdir(parents=True,exist_ok=True)
-    os.replace(path,dest)
+    # The GitHub runner may place temp files and the audit workspace on\n    # different mounted filesystems; os.replace raises EXDEV in that case.\n    # This is an isolated QA fixture, never a production/user file.\n    shutil.move(str(path),str(dest))
     return line
 
 
