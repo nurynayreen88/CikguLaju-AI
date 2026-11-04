@@ -1,0 +1,33 @@
+name: Pendidikan Islam RPT 2027 PDF Telegram checks
+
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/pendidikan_islam/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tests/test_rpt_pi_2027_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/pi-rpt-2027-telegram.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'rpt_2027/pendidikan_islam/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tests/test_rpt_pi_2027_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/pi-rpt-2027-telegram.yml'
+  workflow_dispatch:
+
+jobs:
+  pi-rpt-telegram:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run focused PI download, entitlement and PDF hash tests
+        run: python -m unittest discover -s tests -p 'test_rpt_pi_2027_downloads.py' -v
+      - name: Check runtime entrypoint compiles
+        run: python -m py_compile rpt_2027/pendidikan_islam/telegram_downloads.py rpt_2027/english/telegram_downloads.py tools/run_telegram_with_curriculum_api.py
