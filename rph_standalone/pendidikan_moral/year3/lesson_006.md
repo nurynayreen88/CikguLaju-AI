@@ -12,19 +12,21 @@
 **BBM:** Kad situasi A/B, peta jenis bantuan dan keperluan, borang semak; fail `materials/pendidikan_moral/year3/unit_02_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid memperagakan tindakan berdasarkan **2.5: Mengamalkan sikap saling membantu dalam kalangan warga sekolah.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 2.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
+Murid dapat **melaksanakan dua tindakan saling membantu** dalam simulasi pemulihan warga sekolah selepas musibah dan menunjukkan satu penambahbaikan (SP 2.5).
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **peka dan menawarkan pertolongan dengan ikhlas**. Murid menyemak persediaan berdasarkan SP 2.5.
+**Aktiviti 1 (20 minit) — Pelan bantuan warga sekolah:** Guru merujuk cerita bantuan peniaga kantin di buku teks **m/s 10–11**. Murid mengenal pasti keperluan utama penerima serta merangka bantuan selamat yang tidak memerlukan murid memasuki kawasan kebakaran atau menyerahkan wang peribadi.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Kerjasama berpasukan:** Murid mengasing dan membungkus bahan simulasi sumbangan kelas, menulis nota sokongan, memeriksa jumlah bersama rakan dan melaporkan kepada guru. Pemerhati merekod dua tindakan membantu serta satu pembetulan selepas maklum balas (SP 2.5).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 2.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua tingkah laku membantu, keikhlasan dan satu langkah penambahbaikan (SP 2.5); tidak meminta sumbangan sebenar daripada murid.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **baik hati**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+
+**Semakan visual buku teks:** m/s 9–11 (PDF 15–17), bahagian Unit 2; cadangan aktiviti bersandar pada gambar/cerita yang dilihat, bukan pengesahan semua latihan SP.
 
 **Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
