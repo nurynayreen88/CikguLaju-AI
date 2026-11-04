@@ -6,7 +6,7 @@
 **Tajuk aktiviti:** Kuiz Pintar Ayat  
 **Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.  
 **Standard Pembelajaran (SP):** 5.3.4 — Memahami dan membina ayat susunan biasa dan susunan songsang  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 184  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 184–185  
 **Fokus:** tatabahasa — Kuiz Pintar Ayat  
 **Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Kuiz Pintar Ayat'.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
