@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 090
 
-**Tema / Unit:** Kebudayaan Kita; U12: Amalan Baik  
-**Tajuk:** Lawatan ke Muzium Padi  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.4 (v), (vi) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks  
-**Rujukan:** BT1 m/s 79. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** kata seru dan kata perintah di Muzium Padi  
-**Objektif:** Pada akhir PdP, murid dapat melengkapkan enam ayat arahan dan seruan menggunakan kata yang tepat.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: eh, wah, amboi, jangan, sila, tolong, minta.
+**ID:** BM2-P090
+**Minggu RPT 2027:** M22 (tarikh ikut jadual)
+**Tema/Unit:** Kebudayaan Kita; U12: Amalan Baik
+**Tajuk aktiviti:** Lawatan ke Muzium Padi
+**Standard Kandungan (SK) berdasarkan RPT:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.4 (v), (vi) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 79; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Ilustrasi lawatan murid ke Muzium Padi Kedah yang menggunakan kata seru dan kata perintah.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat membezakan empat kata perintah dan empat kata seru dalam dialog lawatan.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Lawatan ke Muzium Padi" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar gambar Lawatan ke Muzium Padi pada Buku Teks BT1 m/s 79 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Lawatan ke Muzium Padi.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru mengimbas lawatan ke Muzium Padi dan membezakan ayat seruan daripada ayat perintah.
-**Tindakan murid:** Murid mengelaskan enam kata kepada dua kumpulan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing baca dialog muzium termasuk 'jangan sentuh', 'tolong ambilkan', 'sila beratur' dan 'wah'
+**Murid:** Kenal pasti ungkapan melarang, meminta dan menunjukkan kagum
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru mengedarkan enam ayat tidak lengkap situasi lawatan muzium dan menyoal fungsi setiap kata.
-**Tindakan murid:** Murid melengkapkan ayat serta melakonkan arahan dan seruan dengan intonasi sesuai.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan pemilihan kata tugas untuk ruang kosong pada gambar
+**Murid:** Isi enam tempat kosong dan kelaskan kata tugas yang digunakan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak enam ayat serta kategori kata yang tepat.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak pilihan perintah/seruan dengan situasi dan tanda baca
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran kata seru dan kata perintah di Muzium Padi serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 5.1.4 (v), (vi) menggunakan contoh tugasan Lawatan ke Muzium Padi.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Lawatan ke Muzium Padi.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT1 m/s 79: Ilustrasi lawatan murid ke Muzium Padi Kedah yang menggunakan kata seru dan kata perintah. Aktiviti diselaraskan dengan kemahiran 5.1.4 (v), (vi); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

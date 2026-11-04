@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 106
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!  
-**Tajuk:** Menjaga Keselamatan Penduduk  
-**SK:** 1.1 Mendengar dan memberikan respons  
-**SP:** 1.1.2 (iii) — Mendengar, memahami, dan memberikan respons terhadap pesanan.  
-**Rujukan:** BT2 m/s 13; BA2 m/s 17; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** mentafsir pesanan menjaga keselamatan penduduk  
-**Objektif:** Pada akhir PdP, murid dapat menyampaikan dua pesanan Pak Cik Hairi dengan isi yang lengkap.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: pondok kawalan; datang awal; bawa lampu picit.
+**ID:** BM2-P106
+**Minggu RPT 2027:** M25 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!
+**Tajuk aktiviti:** Menjaga Keselamatan Penduduk
+**Standard Kandungan (SK) berdasarkan RPT:** 1.1 Mendengar dan memberikan respons
+**Standard Pembelajaran (SP):** 1.1.2 (iii) — Mendengar, memahami, dan memberikan respons terhadap pesanan.
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 13; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Dialog Hasan menerima pesanan Pak Cik Hairi tentang ayahnya datang awal ke pondok kawalan dengan lampu picit.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat menyampaikan semula tiga maklumat pesanan dengan sebutan jelas dan santun.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Menjaga Keselamatan Penduduk dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Menjaga Keselamatan Penduduk pada Buku Teks BT2 m/s 13 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Menjaga Keselamatan Penduduk.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru membacakan pesanan untuk ayah Hasan supaya datang awal ke pondok kawalan dan membawa lampu picit.
-**Tindakan murid:** Murid mencatat siapa penerima, masa dan dua perkara perlu dibawa/dilakukan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Guru membacakan pesanan Pak Cik Hairi dua kali tanpa memaparkan teks
+**Murid:** Catat penerima, waktu dan alat yang perlu dibawa
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru menjalankan simulasi menyampaikan pesanan daripada orang dewasa kepada ahli keluarga.
-**Tindakan murid:** Murid menyebut semula dua pesanan dengan lengkap dan sopan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan cara mengulang pesanan tanpa tertukar penerima atau masa
+**Murid:** Lakonkan Hasan menjawab Pak Cik Hairi dan menyebut tiga maklumat
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai ketepatan isi pesanan serta respons.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak tiga butiran pesanan dan kesantunan respons
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan mentafsir pesanan menjaga keselamatan penduduk dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 1.1.2 (iii) menggunakan contoh tugasan Menjaga Keselamatan Penduduk.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Menjaga Keselamatan Penduduk.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 13: Dialog Hasan menerima pesanan Pak Cik Hairi tentang ayahnya datang awal ke pondok kawalan dengan lampu picit. Aktiviti diselaraskan dengan kemahiran 1.1.2 (iii); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

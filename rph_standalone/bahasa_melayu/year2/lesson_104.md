@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 104
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Hidup Berbakti  
-**Tajuk:** Jasa Nenekku terhadap Negara  
-**SK:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks  
-**SP:** 5.2.1 (ii) — Memahami, mengenal pasti dan menggunakan kata mengikut konteks  
-**Rujukan:** BT2 m/s 11; BA m/s 13-14; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** kata tunggal dalam cerita jasa nenek kepada negara  
-**Objektif:** Pada akhir PdP, murid dapat menyenaraikan enam kata tunggal dan membina tiga ayat.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: guru, negara, rumah, kampung, jasa.
+**ID:** BM2-P104
+**Minggu RPT 2027:** M24 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Hidup Berbakti
+**Tajuk aktiviti:** Jasa Nenekku terhadap Negara
+**Standard Kandungan (SK) berdasarkan RPT:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.2.1 (ii) — Memahami, mengenal pasti dan menggunakan kata mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 11; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Cerita nenek Elis yang pernah menjadi anggota polis sebelum merdeka serta bank kata tunggal.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat menggunakan enam kata tunggal dengan betul dalam ayat berkaitan cerita nenek.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Jasa Nenekku terhadap Negara dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Jasa Nenekku terhadap Negara pada Buku Teks BT2 m/s 11 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Jasa Nenekku terhadap Negara.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru membaca teks 'Jasa Nenekku terhadap Negara' dan menunjukkan kata yang tidak menerima imbuhan.
-**Tindakan murid:** Murid mengenal dan mengasingkan kata tunggal dalam petikan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan dialog nenek bertugas di pondok berbumbung zink dan menjaga pintu kampung
+**Murid:** Kenal pasti kata tunggal daripada senarai makan, minum, duduk, masuk, cuaca dan bangga
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid membina ayat tentang pengalaman keluarga menggunakan kata tunggal pilihan.
-**Tindakan murid:** Murid menulis tiga ayat dengan kata tunggal yang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan pembinaan ayat ringkas tanpa imbuhan daripada kata yang dipilih
+**Murid:** Bina enam ayat dengan kata tunggal dan kaitkan sekurang-kurangnya dua kepada kisah nenek
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak enam pengecaman dan tiga penggunaan ayat.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak enam kata tunggal serta makna ayat
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kata tunggal dalam cerita jasa nenek kepada negara dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 5.2.1 (ii) menggunakan contoh tugasan Jasa Nenekku terhadap Negara.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Jasa Nenekku terhadap Negara.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 11: Cerita nenek Elis yang pernah menjadi anggota polis sebelum merdeka serta bank kata tunggal. Aktiviti diselaraskan dengan kemahiran 5.2.1 (ii); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

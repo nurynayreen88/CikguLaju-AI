@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 083
 
-**Tema / Unit:** Kebudayaan Kita; U11: Kesenian Dihargai  
-**Tajuk:** Tokoh Seni  
-**SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna  
-**SP:** 3.2.4 (iii) — Menulis sesuatu yang diimlakkan  
-**Rujukan:** BT1 m/s 71; BA m/s 81-82. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** menulis ayat diimlak tentang Tokoh Seni  
-**Objektif:** Pada akhir PdP, murid dapat menulis empat ayat diimlak dengan ejaan, huruf besar dan tanda baca yang betul.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: Profesor Doktor Siti Zainon Ismail, seni lukis, buku seni, anugerah.
+**ID:** BM2-P083
+**Minggu RPT 2027:** M20 (tarikh ikut jadual)
+**Tema/Unit:** Kebudayaan Kita; U11: Kesenian Dihargai
+**Tajuk aktiviti:** Tokoh Seni
+**Standard Kandungan (SK) berdasarkan RPT:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna
+**Standard Pembelajaran (SP):** 3.2.4 (iii) — Menulis sesuatu yang diimlakkan
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 71; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Biografi Profesor Doktor Siti Zainon binti Ismail, tokoh seni lukis dan penulisan, untuk latihan imlak.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat menulis sekurang-kurangnya satu perenggan imlak dengan ejaan nama khas dan tanda baca betul.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Tokoh Seni" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar gambar Tokoh Seni pada Buku Teks BT1 m/s 71 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Tokoh Seni.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membincangkan fakta tentang tokoh seni negara dan sebutan nama khas.
-**Tindakan murid:** Murid mendengar empat ayat contoh tentang minat seni dan sumbangan tokoh.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing murid mengenal istilah tokoh seni serta beberapa nama khas daripada teks
+**Murid:** Dengar bacaan model satu perenggan lalu fokus ejaan nama khas
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru mengimlak empat ayat pendek dengan jeda sesuai, tanpa mempamerkan tulisan.
-**Tindakan murid:** Murid menulis ayat dan menyemak ejaan nama khas serta tanda baca.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Imlakkan satu perenggan pilihan dari Buku Teks tanpa memaparkan tulisannya
+**Murid:** Tulis perenggan lengkap dan semak sendiri selepas teks dipaparkan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat ayat diimlak dengan tepat.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Nilai ejaan, huruf besar dan tanda baca perenggan imlak
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran menulis ayat diimlak tentang Tokoh Seni serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 3.2.4 (iii) menggunakan contoh tugasan Tokoh Seni.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Tokoh Seni.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT1 m/s 71: Biografi Profesor Doktor Siti Zainon binti Ismail, tokoh seni lukis dan penulisan, untuk latihan imlak. Aktiviti diselaraskan dengan kemahiran 3.2.4 (iii); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

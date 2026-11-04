@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 101
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Hidup Berbakti  
-**Tajuk:** Berbakti demi Anak Bangsa  
-**SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera  
-**SP:** 2.3.1 (iv) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera  
-**Rujukan:** BT2 m/s 8; BA m/s 10; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** menyatakan nilai cerita guru berbakti kepada anak bangsa  
-**Objektif:** Pada akhir PdP, murid dapat mengenal empat nilai dan membuktikannya dengan ayat teks.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: Cikgu Muzalfah; kecekalan; tanggungjawab; berjauhan keluarga.
+**ID:** BM2-P101
+**Minggu RPT 2027:** M24 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Hidup Berbakti
+**Tajuk aktiviti:** Berbakti demi Anak Bangsa
+**Standard Kandungan (SK) berdasarkan RPT:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera
+**Standard Pembelajaran (SP):** 2.3.1 (iv) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 8; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Kisah Cikgu Muzalfah dari UPSI ditugaskan di SK Kampung Petanak, Mukah, Sarawak dan tekun mengajar.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat memadankan tiga nilai dengan tindakan watak guru daripada cerita.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Berbakti demi Anak Bangsa dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Berbakti demi Anak Bangsa pada Buku Teks BT2 m/s 8 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Berbakti demi Anak Bangsa.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru membaca kisah guru mendapat tawaran mengajar di Mukah, Sarawak.
-**Tindakan murid:** Murid menggariskan tindakan tokoh yang mencerminkan tanggungjawab.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan petikan Cikgu Muzalfah berjauhan keluarga dan mengajar murid penuh kasih sayang
+**Murid:** Garis tiga tindakan yang menunjukkan cekal, tanggungjawab dan kasih sayang
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid mengaitkan empat tindakan Cikgu Muzalfah dengan nilai yang sesuai.
-**Tindakan murid:** Murid melengkapkan jadual nilai dan bukti petikan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan cara memasukkan bukti teks ke jadual pernyataan/nilai
+**Murid:** Isi tiga nilai dengan pernyataan sokongan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat nilai yang mempunyai bukti cerita.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak tiga nilai dan rujukan peristiwa
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan menyatakan nilai cerita guru berbakti kepada anak bangsa dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 2.3.1 (iv) menggunakan contoh tugasan Berbakti demi Anak Bangsa.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Berbakti demi Anak Bangsa.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 8: Kisah Cikgu Muzalfah dari UPSI ditugaskan di SK Kampung Petanak, Mukah, Sarawak dan tekun mengajar. Aktiviti diselaraskan dengan kemahiran 2.3.1 (iv); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 110
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!  
-**Tajuk:** Jiwa Patriotik  
-**SK:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks  
-**SP:** 5.2.1 (iv) — Memahami, mengenal pasti dan menggunakan kata mengikut konteks  
-**Rujukan:** BT2 m/s 17; BA m/s 23-24; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** imbuhan akhiran dalam Jiwa Patriotik  
-**Objektif:** Pada akhir PdP, murid dapat membentuk lima kata berimbuhan akhiran dan membina tiga ayat.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: -kan, -i, -an; tampalkan, hormati, catatan.
+**ID:** BM2-P110
+**Minggu RPT 2027:** M26 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!
+**Tajuk aktiviti:** Jiwa Patriotik
+**Standard Kandungan (SK) berdasarkan RPT:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.2.1 (iv) — Memahami, mengenal pasti dan menggunakan kata mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 17; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Dialog buku skrap tokoh guru Azizul Rahman dengan imbuhan akhiran -an, -kan dan -i.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat melengkapkan lima kata berimbuhan akhiran dalam dialog dan membina dua ayat.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Jiwa Patriotik dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Jiwa Patriotik pada Buku Teks BT2 m/s 17 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Jiwa Patriotik.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru membaca dialog murid menyiapkan buku skrap tokoh guru dan menunjukkan kata dengan imbuhan akhiran.
-**Tindakan murid:** Murid mengenal kata dasar dan bentuk akhiran.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan dialog buku skrap tokoh guru dan nota imbuhan akhiran
+**Murid:** Kenal pasti kata dasar untuk lima tempat kosong seperti maklumat, hormat dan nikmat
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru memberi kad kata dasar untuk dibentuk menjadi kata berimbuhan yang sesuai dengan tugas buku skrap.
-**Tindakan murid:** Murid membina lima kata dan tiga ayat berdasarkan tugas murid.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan penambahan imbuhan akhiran yang sesuai kepada kata dasar
+**Murid:** Lengkapkan lima kata berimbuhan dan bina dua ayat tentang tokoh guru
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak lima imbuhan dan tiga ayat.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak lima imbuhan akhiran serta ejaan dan makna
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan imbuhan akhiran dalam Jiwa Patriotik dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 5.2.1 (iv) menggunakan contoh tugasan Jiwa Patriotik.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Jiwa Patriotik.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 17: Dialog buku skrap tokoh guru Azizul Rahman dengan imbuhan akhiran -an, -kan dan -i. Aktiviti diselaraskan dengan kemahiran 5.2.1 (iv); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

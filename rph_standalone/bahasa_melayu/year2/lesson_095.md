@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 095
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia  
-**Tajuk:** Amalan yang Baik  
-**SK:** 1.1 Mendengar dan memberikan respons  
-**SP:** 1.1.2 (i) — Mendengar, memahami, dan memberikan respons terhadap soalan.  
-**Rujukan:** BT2 m/s 2; BA m/s 1; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** respons terhadap soalan dalam kehidupan patriotik  
-**Objektif:** Pada akhir PdP, murid dapat menjawab empat soalan lisan berkaitan amalan baik kepada negara.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: berbudi bahasa; membantu rakan; menjaga harta awam.
+**ID:** BM2-P095
+**Minggu RPT 2027:** M23 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia
+**Tajuk aktiviti:** Amalan yang Baik
+**Standard Kandungan (SK) berdasarkan RPT:** 1.1 Mendengar dan memberikan respons
+**Standard Pembelajaran (SP):** 1.1.2 (i) — Mendengar, memahami, dan memberikan respons terhadap soalan.
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 2; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Dialog Hasan, Elis dan Komala tentang menghormati ibu bapa, membawa bendera dan bermaaf-maafan.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat memberikan tiga respons kepada soalan tentang amalan bersikap mulia.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Amalan yang Baik dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Amalan yang Baik pada Buku Teks BT2 m/s 2 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Amalan yang Baik.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru mengemukakan ilustrasi amalan baik daripada unit BT Jilid 2 dan soalan berkaitan watak.
-**Tindakan murid:** Murid mendengar dan mengenal maklumat yang ditanya.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan soalan dari Hasan berkenaan semangat patriotik dan menghormati bapa
+**Murid:** Kenal pasti tiga soalan dan gambar yang berkaitan
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru menjalankan temu bual pasangan tentang tindakan membantu sekolah dan masyarakat.
-**Tindakan murid:** Murid menjawab empat soalan dengan ayat lengkap dan sopan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan cara menjawab dengan frasa membawa bendera, menghormati bapa dan saling bermaafan
+**Murid:** Jawab tiga soalan dan lakonkan dialog Hasan–Elis–Komala
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat jawapan relevan; tajuk/rangsangan perlu audit halaman BT2 p2.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak tiga respons bersumber bahan serta sopan
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan respons terhadap soalan dalam kehidupan patriotik dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 1.1.2 (i) menggunakan contoh tugasan Amalan yang Baik.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Amalan yang Baik.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 2: Dialog Hasan, Elis dan Komala tentang menghormati ibu bapa, membawa bendera dan bermaaf-maafan. Aktiviti diselaraskan dengan kemahiran 1.1.2 (i); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.
