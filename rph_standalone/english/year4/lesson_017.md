@@ -4,7 +4,7 @@
 **Main SP:** 1.2.2  
 **Complementary SP:** 1.1.1  
 **Duration:** 60 minutes  
-**References:** SB p.15; TB p.32; Track 19 (SOW; CD1 designation pending independent TB/audio verification); Year 4 SOW Lesson 17
+**References:** SB p.15; TB p.32; Class CD1 Track 19 (printed TB p.32 Activity 1; recording content/Telegram delivery unverified); Year 4 SOW Lesson 17
 
 ## Set induction (10 minutes)
 **Teacher:** Show school-subject flashcards and ask about preferences.
@@ -15,7 +15,7 @@
 **Pupils:** Repeat subject words and match pictures to words.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Play Track 19 without visible lyrics, then replay for Activity 1.
+**Teacher:** Play Class CD1 Track 19 without visible lyrics, then replay for Activity 1.
 **Pupils:** Listen for school subjects and preferences.
 
 ## Reinforcement / PBD (10 minutes)
