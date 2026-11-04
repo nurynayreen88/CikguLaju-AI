@@ -11,8 +11,8 @@
 **PBD evidence:** One main idea and 5 detail answers supported by evidence; no fixed official LS selected.
 
 ## Set induction (5 minutes)
-**Teacher:** Show teacher-selected topic visuals and ask: “What can you say about this topic?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Display the heading and two pictures from the teacher-selected reading text without revealing answers; invite one prediction about the main idea.  
+**Pupils:** Predict the text topic and give one clue from its title or pictures.
 
 ## Activity 1 — Prepare (10 minutes)
 **Teacher:** Choose a level-appropriate 180–250-word text and pre-teach five words without giving answers.  
@@ -31,8 +31,8 @@
 **Pupils:** Show the evidence, correct a response and complete an exit check.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What can you say about this topic?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask pupils to state the text's main idea and point to one sentence that supports it; collect a reading goal for next time.  
+**Pupils:** State the main idea, quote or identify one supporting line, and name one reading strategy to practise.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
