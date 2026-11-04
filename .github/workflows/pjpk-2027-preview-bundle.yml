@@ -9,6 +9,13 @@ on:
       - 'rph_standalone/pjpk/**'
       - 'audits/pjpk_2027_staging_manifest_20261104.json'
       - '.github/workflows/pjpk-2027-preview-bundle.yml'
+  pull_request:
+    paths:
+      - 'scripts/build_pjpk_2027_preview_bundle.py'
+      - 'web/pjpk_2027_preview_runtime.py'
+      - 'rph_standalone/pjpk/**'
+      - 'audits/pjpk_2027_staging_manifest_20261104.json'
+      - '.github/workflows/pjpk-2027-preview-bundle.yml'
   workflow_dispatch:
 
 permissions:
