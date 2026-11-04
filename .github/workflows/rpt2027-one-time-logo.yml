@@ -1,0 +1,27 @@
+name: RPT 2027 temporary logo/name flow
+on:
+  pull_request:
+    paths:
+      - 'web/rpt2027_personalized_download_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_rpt2027_one_time_logo.py'
+      - '.github/workflows/rpt2027-one-time-logo.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  one_time_logo_rpt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install 'Flask==3.1.0' 'requests==2.32.3' 'Pillow>=10' 'pypdf==5.1.0' 'reportlab==4.2.5' 'python-docx==1.1.2'
+      - name: Test name/logo flow, paid gate and all seven RPT subjects
+        run: python -m unittest discover -s tests -p 'test_rpt2027_one_time_logo.py' -v
+      - name: Preserve existing Moral and PSV RPT menu callback behavior
+        run: python -m unittest discover -s tests -p 'test_rpt_psv_pm_integration_20261104.py' -v
+      - name: Preserve existing English RPT menu and entitlement checks
+        run: python -m unittest discover -s tests -p 'test_english_rpt_2027_telegram_downloads.py' -v
