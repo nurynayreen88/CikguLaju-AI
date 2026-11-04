@@ -5,7 +5,7 @@
 **Tajuk:** Menampakkan Diri  
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **SP:** 3.2.4 (i) — Menulis sesuatu yang diimlakkan  
-**Fokus:** Imenulis ayat majmuk yang diimlak  
+**Fokus:** Menulis ayat majmuk yang diimlak  
 **Rujukan:** BT1 m/s 55; BA1 m/s 65 (Pelindung Lampu Kanak-kanak)  
 **Bahan:** petikan Pelindung Lampu Kanak-kanak yang membincangkan bahaya elektrik; bahan sumber asli, kad perkataan dan senarai semak PBD.  
 **Objektif:** Pada akhir PdP, murid dapat menunjukkan empat ayat imlak majmuk tepat.  
@@ -16,7 +16,7 @@
 **Murid:** Mengaitkan bahan dengan tajuk melalui respons ringkas.
 
 ## Aktiviti 1 (15 minit)
-**Guru:** Memodelkan cara melaksanakan kemahiran Imenulis ayat majmuk yang diimlak berasaskan sumber.
+**Guru:** Memodelkan cara melaksanakan kemahiran Menulis ayat majmuk yang diimlak berasaskan sumber.
 **Murid:** Mendengar ayat majmuk daripada petikan dan menandakan kata hubung dalam contoh.
 
 ## Aktiviti 2 (20 minit)
@@ -28,7 +28,7 @@
 **Murid:** Membentangkan hasil atau respons dan membetulkan kesilapan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan pembelajaran Imenulis ayat majmuk yang diimlak berdasarkan contoh dalam bahan.
+**Guru:** Merumuskan pembelajaran Menulis ayat majmuk yang diimlak berdasarkan contoh dalam bahan.
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
 **Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
