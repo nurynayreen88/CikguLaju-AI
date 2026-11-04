@@ -117,7 +117,10 @@ def _make_native_pdf(rows,year,lesson,output):
     path=names["create_pdf_file"](state,"",int(lesson)+year*1000)
     dest=Path(output)
     dest.parent.mkdir(parents=True,exist_ok=True)
-    # The GitHub runner may place temp files and the audit workspace on\n    # different mounted filesystems; os.replace raises EXDEV in that case.\n    # This is an isolated QA fixture, never a production/user file.\n    if not Path(path).is_file():
+    # The GitHub runner may place temp files and the audit workspace on
+    # different mounted filesystems; os.replace raises EXDEV in that case.
+    # This is an isolated QA fixture, never a production/user file.
+    if not Path(path).is_file():
         raise RuntimeError(f'Native ReportLab generator returned no PDF at {path!r}')
     shutil.move(str(path),str(dest))
     return line
