@@ -176,10 +176,18 @@ def test_moral_menu_labels():
         FAILS.append("RPT 2027 year menu unavailable")
         return
     cid, heading, keyboard = replies[-1]
-    moral_buttons = [button["text"] for row in (keyboard or []) for button in row
-                     if button.get("callback_data") == "rpt2027_pm_pdf_2"]
-    assert_true(moral_buttons == ["📥 Pendidikan Moral (PDF)"],
-                "Moral RPT year-menu button has review label or is missing")
+    buttons = {button.get("callback_data"): button.get("text")
+               for row in (keyboard or []) for button in row}
+    expected = {
+        "rpt2027_pm_96_a_2": "📥 Pendidikan Moral RPT (Kumpulan A)",
+        "rpt2027_pm_96_b_2": "📥 Pendidikan Moral RPT (Kumpulan B)",
+        "rpt2027_pm_rph54_pdf_2": "📥 RPH Moral Pengukuhan 54 Sesi (PDF)",
+        "rpt2027_pm_rph54_docx_2": "📥 RPH Moral Pengukuhan 54 Sesi (Word)",
+    }
+    assert_true(all(buttons.get(key) == value for key, value in expected.items()),
+                "Moral 96 RPT / RPH buttons missing or incorrectly labelled")
+    assert_true("rpt2027_pm_pdf_2" not in buttons,
+                "Legacy Moral 42-session button should not be promoted as complete RPT")
     moral_lines = [line for line in heading.split("\n") if "Pendidikan Moral" in line]
     assert_true(bool(moral_lines) and all(
         not any(label in line.upper() for label in ("CADANGAN", "DRAF", "SEMAKAN GURU"))
