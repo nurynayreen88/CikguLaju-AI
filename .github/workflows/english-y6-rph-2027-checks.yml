@@ -6,6 +6,7 @@ on:
       - 'rph_standalone/english/year6/**'
       - 'audits/audit_160_rph.csv'
       - 'tests/test_english_y6_rph_2027_files.py'
+      - 'tests/test_english_y6_selected_155_158_skill_phases_20261104.py'
       - '.github/workflows/english-y6-rph-2027-checks.yml'
   push:
     branches:
@@ -22,3 +23,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -p 'test_english_y6_rph_2027_files.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y6_selected_155_158_skill_phases_20261104.py' -v
