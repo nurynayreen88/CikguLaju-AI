@@ -3,33 +3,33 @@
 **ID:** BM4-P010  
 **Minggu RPT 2027:** M04 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
 **Tema/Unit:** Kemasyarakatan; U2: Prihatinnya Kita  
-**Tajuk aktiviti:** Kisah Aku dan Datukku  
+**Tajuk aktiviti:** Bina Ayat: Kemudahan di Lapangan Terbang  
 **Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
 **Standard Pembelajaran (SP):** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 5  
-**Fokus:** tulisan — Kisah Aku dan Datukku  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Kisah Aku dan Datukku' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 10 — bina ayat berdasarkan gambar dan frasa; judul aktiviti CikguLaju, bukan judul rasmi baharu  
+**Fokus:** tulisan — Bina Ayat: Kemudahan di Lapangan Terbang  
+**Objektif PdP:** Murid dapat membina empat ayat berdasarkan gambar/frasa kemudahan di lapangan terbang dan menyusunnya menjadi perenggan ringkas.  
+**Bahan:** BT BM SK Tahun 4 m/s 10; gambar kerusi roda, laluan landai, travelator dan tempat letak kereta khas, kad frasa dan rubrik PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kisah Aku dan Datukku' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U2: Prihatinnya Kita.  
+**Guru:** Memaparkan judul/ilustrasi 'Bina Ayat: Kemudahan di Lapangan Terbang' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U2: Prihatinnya Kita.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Kisah Aku dan Datukku' dan memodelkan langkah menyusun isi serta menulis mengikut Membina dan menulis ayat, dan perenggan daripada bahan multimedia.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Kisah Aku dan Datukku'.
+## Aktiviti 1 — Analisis sumber yang disahkan (15 minit)
+**Guru:** Memodelkan ayat daripada padanan gambar/frasa petugas–kerusi roda, travelator–memudahkan dan kemudahan khas di lapangan terbang pada BT m/s 10.
+**Murid:** Memadankan empat gambar dengan frasa dan mengujarkan dua ayat yang gramatis.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Membimbing murid mengembangkan empat ayat tentang kemudahan lapangan terbang dan menyusunnya menjadi perenggan ringkas.
+**Murid:** Menulis empat ayat lengkap, menyemak subjek, predikat dan tanda baca, kemudian menyusunnya sebagai perenggan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir empat ayat dan perenggan berdasarkan isi yang tepat, struktur gramatis serta ejaan/tanda baca.
+**Murid:** Membetulkan satu ayat yang tidak jelas dan membacakan hasil terbaik.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Kisah Aku dan Datukku' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
+**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Bina Ayat: Kemudahan di Lapangan Terbang' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
 **Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
 
 **Nota RPT asal:** Menulis; Semakan bahan bertulis
