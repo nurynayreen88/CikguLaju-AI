@@ -58,7 +58,7 @@ def compare(con: sqlite3.Connection, year: int) -> list[str]:
         reference = {sp["code"]: sp["text"] for sp in unit["sp"]}
         for code, text, verified in db_sp_rows:
             if code in reference and normalize(text) != normalize(reference[code]):
-                issues.append(f"{label} PdP {index}: wording differs from DSKP for SP {code}")
+                issues.append(f"{label} PdP {index}: wording differs for SP {code}; DB={text!r}, DSKP={reference[code]!r}")
     print(f"{label}: checked 42 DB lessons, 42 staged RPT lessons")
     return issues
 
