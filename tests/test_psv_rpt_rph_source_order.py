@@ -188,5 +188,23 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertEqual(windows[-1]["Minggu_B_hingga"], "2027-12-03")
 
 
+    def test_no_false_ready_or_invented_exact_dates(self):
+        # The staging branch has draft source documents, not a production-approved
+        # schedule or validated one-page Word/PDF outputs. Keep the release gate shut.
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                rpt = read_csv(PSV / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv")
+                self.assertEqual(len(rpt), 42)
+                for row in rpt:
+                    self.assertEqual(row["Status"], "DRAF_SEMAK")
+                    self.assertFalse(row["Tarikh A"].strip())
+                    self.assertFalse(row["Tarikh B"].strip())
+                    path = row["RPH"] if year == 6 else row["Fail RPH"]
+                    rph = (ROOT / path).read_text(encoding="utf-8")
+                    self.assertRegex(rph, r"(?m)^\\*\\*Status:\\*\\* DRAF")
+        windows = read_csv(PSV / "PSV_2027_minggu_PdP_kumpulan_A_B_CADANGAN.csv")
+        self.assertEqual({row["Status"] for row in windows}, {"CADANGAN_MINGGU_2027"})
+
+
 if __name__ == "__main__":
     unittest.main()
