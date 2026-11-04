@@ -5,28 +5,28 @@
 **Tema/Unit:** Kesihatan dan Kebersihan; U4: Bahaya dalam Senyap  
 **Tajuk aktiviti:** Ibarat Musuh dalam Selimut  
 **Standard Kandungan (SK):** 2.1 Asas membaca dan memahami.  
-**Standard Pembelajaran (SP):** 2.1.1 — Membaca dan memahami maklumat tersurat dan tersirat untuk memberikan respons  
+**Standard Pembelajaran (SP):** 2.1.2 — Membaca dan merujuk kamus serta media elektronik untuk mencari makna perkataan dan meneliti ejaan yang tepat mengikut susunan perkataan  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 26  
 **Fokus:** bacaan — Ibarat Musuh dalam Selimut  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Ibarat Musuh dalam Selimut' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat mencari makna dan menyemak ejaan empat istilah daripada poster Ibarat Musuh dalam Selimut menggunakan kamus atau sumber elektronik.  
+**Bahan:** BT BM SK Tahun 5 m/s 26, poster penyakit berbahaya, kamus dan sumber digital yang disemak guru.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
 **Guru:** Memaparkan judul/ilustrasi 'Ibarat Musuh dalam Selimut' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U4: Bahaya dalam Senyap.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Ibarat Musuh dalam Selimut' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Ibarat Musuh dalam Selimut' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Analisis sumber yang disahkan (15 minit)
+**Guru:** Membimbing bacaan poster m/s 26 dan memperkenalkan istilah influenza, polio, gejala dan jangkitan tanpa mengandaikan maknanya.
+**Murid:** Mengenal pasti empat istilah sukar dan membuat ramalan makna berdasarkan konteks.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Menunjukkan carian kamus mengikut susunan perkataan dan semakan ejaan menggunakan kamus/media elektronik.
+**Murid:** Mencari makna empat istilah, mencatat ejaan tepat dan membina satu ayat berkaitan setiap istilah.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.1.1 — Membaca dan memahami maklumat tersurat dan tersirat untuk memberikan respons) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menyemak empat makna, ejaan dan kesesuaian penggunaan dalam ayat menurut SP 2.1.2.
+**Murid:** Menerangkan cara mendapatkan makna satu istilah dan membetulkan rekod.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Ibarat Musuh dalam Selimut' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
