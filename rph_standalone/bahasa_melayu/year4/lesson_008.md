@@ -3,7 +3,7 @@
 **ID:** BM4-P008 | **RPT 2027:** M03 | **Unit:** 2 — Prihatinnya Kita
 **Tajuk aktiviti:** Terima Kasih, Cikgu
 **SK:** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
-**SP:** 1.1.2 — Mendengar, memahami dan memberikan respons terhadap ujaran yang terdapat dalam situasi tidak formal.
+**SP:** 1.1.2 — Mendengar, memahami dan memberikan respons terhadap ujaran yang terdapat dalam situasi tidak formal
 **Sumber disemak:** Buku Teks BM Tahun 4 SK m/s 7 (Hadif menghadiri majlis penyampaian bantuan persekolahan). **BA:** Halaman/latihan belum disahkan.
 **Objektif:** Murid mendengar dialog bantuan persekolahan dan memberikan sekurang-kurangnya tiga respons lisan yang munasabah berdasarkan ujaran pada ilustrasi.
 **BBM:** BT m/s 7, kad dialog dan senarai semak lisan. **Masa:** 60 minit, boleh disesuaikan.
