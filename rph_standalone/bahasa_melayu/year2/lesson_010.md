@@ -32,5 +32,7 @@
 **Tindakan guru:** Guru merumuskan nilai menghargai alam semula jadi dan memaklumkan pengisian PKJR akan dipadankan berasingan.
 **Tindakan murid:** Murid berkongsi satu sikap baik ketika bercuti.
 
+**Bukti BT disemak:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 9 mengandungi perenggan lawatan keluarga ke Bukit Larut (jip, udara nyaman, tumbuh-tumbuhan, titi gantung) serta arahan menulis perenggan dengan betul dan kemas mengikut SP 3.1.1(iii). Buku Teks menunjuk BA1 m/s 12; helaian BA belum diperiksa. Pemetaan PKJR masih perlu disahkan.
+
 **Status audit:** HOLD — modul/hasil PKJR belum disahkan.
 **Nota kawalan:** Rujukan BA diambil daripada petunjuk Buku Teks/RPT 2026; latihan BA asal belum diperiksa. Bahan ini belum READY, tidak boleh diaktifkan untuk guru. Jika PdP berulang, sesi pengukuhan ialah cadangan CikguLaju dan bukan pelajaran rasmi baharu.
