@@ -3,24 +3,26 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Alat Domestik — Bekas Pensel Kertas  
+**Jenis/Tajuk:** Ukiran — Pengayaan ukiran (tajuk cadangan CikguLaju)
+**Unit rujukan 2026:** Unit 10 — Pengayaan ukiran (tajuk cadangan CikguLaju)  
+**Nota sumber:** Unit pengayaan CikguLaju untuk meliputi teknik ukiran DSKP; contoh RPT 2026 mengulangi diorama pada Unit 10.  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.10; 3.1.5  
-**Teknik:** papier mache  
-**Bahasa seni visual:** bentuk, jalinan, kontra  
+**SP:** 2.1.9; 3.1.5  
+**Teknik:** ukiran bunga timbul pada bahan lembut  
+**Bahasa seni visual:** jalinan, bentuk, kesatuan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas koyak, gam kanji, acuan plastik
+**BBM:** doh lembut, alat plastik tumpul
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Bekas Pensel Kertas dan memilih satu lakaran berdasarkan bentuk, jalinan, kontra.
+Murid dapat menyiapkan dua lakaran Motif Awan Larat dan memilih satu lakaran berdasarkan jalinan, bentuk, kesatuan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Pensel Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Awan Larat. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Bekas Pensel Kertas. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Motif Awan Larat. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal bekas pensel papier mache, menguji papier mache pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal ukiran motif awan larat pada bahan lembut, menguji ukiran bunga timbul pada bahan lembut pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

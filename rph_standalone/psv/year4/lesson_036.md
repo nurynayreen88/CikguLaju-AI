@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Ukiran — Motif Awan Larat  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Diorama — Kota Ceria
+**Unit rujukan 2026:** Unit 9 — Kota Ceria (BT ms 84–89)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** ukiran bunga timbul pada bahan lembut  
-**Bahasa seni visual:** jalinan, bentuk, kesatuan  
+**Teknik:** binaan  
+**Bahasa seni visual:** bentuk, ruang, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh lembut, alat plastik tumpul
+**BBM:** kotak, doh, kertas, gam
 
 ## Objektif pembelajaran
-Murid dapat memperkemas motif awan larat timbul serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas diorama kota ceria serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Awan Larat. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kebun Sekolah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik ukiran bunga timbul pada bahan lembut serta penggunaan jalinan, bentuk, kesatuan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik binaan serta penggunaan bentuk, ruang, penegasan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada motif awan larat timbul, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada diorama kota ceria, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

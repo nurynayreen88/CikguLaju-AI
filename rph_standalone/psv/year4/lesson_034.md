@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Ukiran — Motif Awan Larat  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Diorama — Kota Ceria
+**Unit rujukan 2026:** Unit 9 — Kota Ceria (BT ms 84–89)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.9; 3.1.5  
-**Teknik:** ukiran bunga timbul pada bahan lembut  
-**Bahasa seni visual:** jalinan, bentuk, kesatuan  
+**SP:** 2.1.8; 3.1.4  
+**Teknik:** binaan  
+**Bahasa seni visual:** bentuk, ruang, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh lembut, alat plastik tumpul
+**BBM:** kotak, doh, kertas, gam
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Motif Awan Larat dan memilih satu lakaran berdasarkan jalinan, bentuk, kesatuan.
+Murid dapat menyiapkan dua lakaran Kebun Sekolah dan memilih satu lakaran berdasarkan bentuk, ruang, penegasan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Awan Larat. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kebun Sekolah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Motif Awan Larat. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Kebun Sekolah. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal motif awan larat timbul, menguji ukiran bunga timbul pada bahan lembut pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal diorama kota ceria, menguji binaan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

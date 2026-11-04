@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Ukiran — Motif Awan Larat  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Diorama — Kota Ceria
+**Unit rujukan 2026:** Unit 9 — Kota Ceria (BT ms 84–89)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.4; 2.1.9  
-**Teknik:** ukiran bunga timbul pada bahan lembut  
-**Bahasa seni visual:** jalinan, bentuk, kesatuan  
+**SP:** 1.1.3; 2.1.8  
+**Teknik:** binaan  
+**Bahasa seni visual:** bentuk, ruang, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh lembut, alat plastik tumpul
+**BBM:** kotak, doh, kertas, gam
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh ukiran dan menghasilkan satu sampel ukiran bunga timbul pada bahan lembut.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh diorama dan menghasilkan satu sampel binaan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Awan Larat. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kebun Sekolah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh ukiran bertema Motif Awan Larat dan membandingkan jalinan, bentuk, kesatuan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh diorama bertema Kebun Sekolah dan membandingkan bentuk, ruang, penegasan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik ukiran bunga timbul pada bahan lembut. Murid mencuba dua sampel kecil menggunakan doh lembut, membandingkan kesan dan memilih teknik yang sesuai untuk motif awan larat timbul.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan. Murid mencuba dua sampel kecil menggunakan kotak serta bahan diorama, membandingkan kesan dan memilih teknik yang sesuai untuk diorama kota ceria.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
