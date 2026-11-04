@@ -31,7 +31,7 @@ def fixture():
             member.append(dict(kwargs["json"]))
         if path.startswith("rpc/"):
             if path.endswith("referral_award_verified_payment"):
-                return {"awarded":True,"points":5}
+                return {"awarded":True,"points":"2.00"}
             return {"captured":True}
         return []
     def callback(uid, data):
@@ -110,6 +110,8 @@ class TestPrivateReferral(unittest.TestCase):
         awards=[(m,p,a) for m,p,a in calls if p=="rpc/referral_award_verified_payment"]
         self.assertEqual(len(awards),1)
         self.assertEqual(awards[0][2]["json"]["p_payment_kind"],"pioneer")
+        self.assertEqual(referral.format_points("1.60"), "1.6")
+        self.assertEqual(referral.format_points("10.00"), "10")
 
 
 if __name__ == "__main__":
