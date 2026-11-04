@@ -12,16 +12,21 @@ from web.english_y6_standalone_runtime import adapt_rows, TEACHER_SELECTED_STAND
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = {
-    16: ("Workbook pp.16–17", ("vocabulary puzzle", "when/while")),
-    32: ("Pupil's Book pp.32–33", ("Review 1", "Bill and Anna")),
-    48: ("Workbook pp.36–37", ("present-perfect", "interview")),
-    64: ("Pupil's Book pp.58–59", ("Review 2", "make/do")),
+    # Source anchor, full-text proof, and wording visible in native document rows
+    16: ("Workbook pp.16–17", ("vocabulary puzzle", "when/while"),
+         ("vocabulary puzzle", "when/while")),
+    32: ("PB pp.32–33", ("Review 1", "Bill and Anna"),
+         ("PB p.32", "Bill and Anna")),
+    48: ("WB pp.36–37", ("present-perfect", "interview"),
+         ("present-perfect", "interview")),
+    64: ("PB pp.58–59", ("Review 2", "make/do"),
+         ("PB p.58", "make/do")),
 }
 
 
 class Year6TeacherChoicePrintedSource(unittest.TestCase):
     def test_four_source_anchors_and_timing(self):
-        for n, (reference, anchors) in CASES.items():
+        for n, (reference, anchors, _) in CASES.items():
             with self.subTest(lesson=n):
                 src = (ROOT / "rph_standalone/english/year6" /
                        f"lesson_{n:03d}.md").read_text(encoding="utf-8")
@@ -45,7 +50,7 @@ class Year6TeacherChoicePrintedSource(unittest.TestCase):
             "TARIKH": "04/11/2026", "MASA": "10:00", "KELAS": "6 Maju",
             "REFLEKSI": "Original teacher feedback",
         }
-        for n, (_, anchors) in CASES.items():
+        for n, (_, _, anchors) in CASES.items():
             with self.subTest(lesson=n):
                 out = adapt_rows({"subject": "English", "year": "Year 6",
                                   "lesson_no": n, "task": "rph"}, legacy)
