@@ -19,15 +19,15 @@ def main():
     errors = []
     rows = {}
     for line in RPT.read_text(encoding="utf-8").splitlines():
-        match = re.search(r"\*\*Lesson (\d{3})\*\* \(BM3-P(\d{3})\)", line)
+        match = re.search(r"\*\*PdP (\d{3})\*\* \(BM3-P(\d{3})\)", line)
         if not match:
             continue
         n = int(match.group(1))
         if match.group(1) != match.group(2) or n in rows:
-            errors.append(f"Duplicate/mismatch RPT Lesson {n}")
+            errors.append(f"Duplicate/mismatch RPT PdP {n}")
         fields = [norm(part) for part in line.strip().strip("|").split("|")]
         if len(fields) != 7:
-            errors.append(f"RPT Lesson {n} has {len(fields)} fields, expected 7")
+            errors.append(f"RPT PdP {n} has {len(fields)} fields, expected 7")
             continue
         rows[n] = fields
     html = HTML.read_text(encoding="utf-8")
