@@ -61,8 +61,14 @@ def check(root: Path) -> dict:
   if not p.is_file(): errors.append(f"Missing RPT: {a}"); continue
   with p.open(newline="",encoding="utf-8") as f: rr=list(csv.DictReader(f))
   if len(rr)!=b: errors.append(f"Bad RPT size: {a} {len(rr)}")
+  allocation={2:{"PEERS":26,"PEMAKANAN":5,"PERTOLONGAN CEMAS":4},3:{"PEERS":26,"PEMAKANAN":4,"PERTOLONGAN CEMAS":2},4:{"PEERS":24,"PEMAKANAN":5,"PERTOLONGAN CEMAS":3},5:{"PEERS":24,"PEMAKANAN":5,"PERTOLONGAN CEMAS":3},6:{"PEERS":24,"PEMAKANAN":5,"PERTOLONGAN CEMAS":3}}
+  essential_sk={"1.1","1.2","2.1","3.1","4.1","5.1","6.1","7.1","8.1","9.1"}
   for year,n in years.items():
-   ids=[r["pdp"] for r in rr if r["year"]==str(year)]
+   part=[r for r in rr if r["year"]==str(year)]
+   got_groups=Counter(r["component"] for r in part)
+   if got_groups!=Counter(allocation[year]): errors.append(f"Wrong PK component allocation: Year {year} {dict(got_groups)}")
+   if not essential_sk.issubset({r["sk"] for r in part}): errors.append(f"Missing PK SK, including 1.2: Year {year}")
+   ids=[r["pdp"] for r in part]
    if ids!=[str(i).zfill(3) for i in range(1,n+1)]: errors.append(f"Non-contiguous RPT: Year {year}")
    if any(not (root/f"rph_standalone/pjpk/year{year}_pk/lesson_{x}.md").is_file() for x in ids):
     errors.append(f"RPH missing for PK Year {year}")

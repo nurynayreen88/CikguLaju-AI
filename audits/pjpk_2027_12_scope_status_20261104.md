@@ -1,3 +1,5 @@
+**STATUS ARKIB (4 Nov 2026):** Dokumen ini merakam checkpoint **237 draf**. Pelengkapan berikutnya meningkatkan jumlah kepada **400 draf**; gunakan [`pjpk_2027_400_draft_release_status_20261104.md`](./pjpk_2027_400_draft_release_status_20261104.md) sebagai status paling terkini. Dokumen lama dikekalkan untuk sejarah audit.
+
 # PJPK CikguLaju 2027 — matriks 12 skop dan gerbang keluaran
 **Audit terakhir:** 4 November 2026
 **Status umum:** DRAF / STAGING, **BUKAN READY**. Tiada penggabungan ke `main`, pengubahsuaian DB atau deployment.

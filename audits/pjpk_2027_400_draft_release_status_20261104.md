@@ -36,3 +36,8 @@
 5. KP2027 Tahun 1 belum diluluskan tanpa DK khusus; jangan campur standard KSSR lama atau label Tahun 1 READY.
 
 **Keputusan:** semua 400 fail kekal `DRAFT_NOT_APPROVED` dan `production_ready=false`.
+
+## Pemetaan silang buku teks (semakan teks terindeks, belum visual)
+- Audit [109 PJ Tahun 2–4](https://github.com/nurynayreen88/CikguLaju-AI/blob/audit/pjpk-crosswalk-reconcile-20261104/audits/pjpk_pj_year2_4_textbook_text_corroboration_20261104.csv) mendapati **84** padanan calon apabila tajuk tepat dan semua kod SP berdekatan dalam teks buku. **25** entri memerlukan semakan lanjut, termasuk pengukuhan, permainan rekreasi dan tajuk yang diformat berbeza.
+- Bukti carian teks buku **tidak membuktikan muka surat visual atau kualiti aktiviti**. Ia tidak secara automatik meluluskan syarat buku teks dan tidak menukar status READY.
+- RPT PK 163 slot masih susunan cadangan tanpa tarikh mingguan Kumpulan A/B dan belum dibentangkan kepada penyemak guru.
