@@ -24,7 +24,7 @@ from pioneer_supabase import grant_pioneer, has_pioneer
 _TTL_SECONDS = 600
 _PREFIX = "pioneer_paid_recover"
 _INPUT = re.compile(r"^/tngref(?:@\w+)?\s+(.{6,150})$", re.I)
-_POS_ID = re.compile(r"^[1-9][0-9]{0,19}$")
+_POS_ID = re.compile(r"^[1-9][0-9]{0,15}$")
 
 
 def _merchant_key(raw):
@@ -239,11 +239,13 @@ def install(ns):
             return jsonify({"ok": True})
         uid = pending["uid"]
         nonce = secrets.token_hex(8)
-        pending.update({"merchant_key": key, "token": nonce, "stage": "confirm"})
+        normalized = re.sub(r"[^A-Z0-9]", "", match.group(1).strip().upper())
+        pending.update({"merchant_key": key, "reference_suffix": normalized[-4:],
+                        "token": nonce, "stage": "confirm"})
         send(chat_id, "⚠️ <b>PENGESAHAN AKHIR PEMULIHAN</b>\n"
              f"ID pelanggan: <code>{uid}</code>\n"
              "Pakej: Rakan Pembangun RM10\n"
-             f"Rujukan TNG: diterima (akhiran <code>{key[-6:]}</code> ialah cap unik)\n\n"
+             f"Rujukan TNG: diterima (4 aksara akhir: <code>{normalized[-4:]}</code>)\n\n"
              "Tekan SAHKAN hanya selepas anda sendiri mengesahkan transaksi "
              "RM10 BERJAYA dalam TNG Merchant, tidak digunakan sebelum ini, "
              "dan ID pelanggan betul. Tiada bayaran semula diperlukan.",
