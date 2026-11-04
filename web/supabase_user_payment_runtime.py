@@ -86,10 +86,49 @@ def install(runtime):
 
     def set_payment_note(request_id, note):
         pid = _int_id(request_id)
+        payload = {"notes": str(note or "")[:2000]}
+        # Preserve a Telegram file pointer to the receipt when the user sends
+        # photo/PDF proof. Do not store raw receipt bytes or expose file_id.
+        if str(note or "").startswith("proof_received"):
+            current = payment_request(pid)
+            if not current or current.get("status") != "pending":
+                raise RuntimeError("Pending payment request no longer exists")
+            try:
+                update = runtime.request.get_json(silent=True) or {}
+                message = update.get("message") or {}
+                sender = message.get("from") or {}
+                chat = message.get("chat") or {}
+                if (str(chat.get("type")) == "private"
+                        and str(chat.get("id")) == str(current["chat_id"])
+                        and str(sender.get("id")) == str(current["chat_id"])):
+                    photo = (message.get("photo") or [])
+                    doc = message.get("document") or {}
+                    if photo:
+                        file = photo[-1]
+                        mimetype = "telegram/photo"
+                    elif doc:
+                        file = doc
+                        mimetype = str(doc.get("mime_type") or
+                                       "application/octet-stream")[:100]
+                    else:
+                        file = {}
+                        mimetype = None
+                    if file.get("file_id"):
+                        from datetime import datetime, timezone
+                        payload.update({
+                            "proof_telegram_file_id":str(file["file_id"]),
+                            "proof_file_unique_id":str(file.get("file_unique_id") or ""),
+                            "proof_telegram_message_id":int(message["message_id"]),
+                            "proof_mime_type":mimetype,
+                            "proof_received_at":datetime.now(timezone.utc).isoformat()
+                        })
+            except Exception as exc:
+                print("DURABLE USER proof metadata unavailable:",
+                      type(exc).__name__,flush=True)
         result = sb(
             "PATCH",
             f"bot_payment_requests?id=eq.{pid}&status=eq.pending",
-            json={"notes": str(note or "")[:2000]},
+            json=payload,
             prefer="return=representation"
         )
         if _first(result) is None:
