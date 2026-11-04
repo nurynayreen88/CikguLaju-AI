@@ -1,8 +1,9 @@
-name: BM RPT 2027 - kemas susun atur seperti RPT 2026
+name: BM RPT 2027 - cetak gaya 2026 satu minggu satu halaman
 on:
   push:
     branches:
       - feat/bm-rpt-2026-layout-20261104
+      - feat/bm-rpt-week-per-page-20261104
     paths:
       - 'tools/build_bm_rpt_2026_layout.py'
       - 'rpt_2027/bahasa_melayu/keluaran_format_english/**'
@@ -42,5 +43,5 @@ jobs:
             echo 'No formatting differences to commit.'
           else
             git commit -m 'Refresh five BM RPT PDF drafts in 2026 table layout'
-            git push origin HEAD:feat/bm-rpt-2026-layout-20261104
+            git push origin HEAD:${GITHUB_REF_NAME}
           fi
