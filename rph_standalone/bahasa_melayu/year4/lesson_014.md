@@ -3,7 +3,7 @@
 **ID:** BM4-P014 | **RPT 2027:** M04 | **Unit:** 3 — Masyarakat Berilmu
 **Tajuk aktiviti:** Mari Membaca + PKJR
 **SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
-**SP:** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera.
+**SP:** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera
 **Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 14** (bukan m/s 4); cerita e-buku tentang masyarakat rama-rama. **BA:** Belum disahkan. **PKJR:** Penanda RPT belum disahkan terhadap modul.
 **Objektif:** Murid membaca kisah rama-rama, menyatakan tiga peristiwa mengikut urutan dan menerangkan dua nilai murni berdasarkan teks.
 **BBM:** BT m/s 14, kad urutan peristiwa, peta nilai. **Masa:** 60 minit, boleh disesuaikan.
