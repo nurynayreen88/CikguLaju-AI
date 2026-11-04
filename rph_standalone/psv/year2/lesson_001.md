@@ -3,7 +3,9 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Lukisan — Laluan di Taman  
+**Jenis/Tajuk:** Lukisan — Kami Suka Sayur
+**Unit RPT 2026:** Unit 1 — Kami Suka Sayur (BT ms 6–9)  
+**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.1  
@@ -20,7 +22,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh lukisan dan mengha
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh lukisan bertema Laluan di Taman dan membandingkan garisan, rupa, imbangan, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik garisan selari. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk lukisan taman dengan garisan selari.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik garisan selari. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk lukisan sayur menggunakan garisan selari.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh lukisan dan mengha
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.

@@ -2,25 +2,27 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Catan — Bunga Selepas Hujan  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Lipatan dan Guntingan — Bersih Pasti Cantik
+**Unit RPT 2026:** Unit 2 — Bersih Pasti Cantik (BT ms 14–17)  
+**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** basah atas kering  
-**Bahasa seni visual:** bentuk, warna, kontra, kepelbagaian  
+**Teknik:** lipatan dan guntingan  
+**Bahasa seni visual:** rupa, warna, kontra, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** cat air, berus, palet, kertas tebal
+**BBM:** kertas warna, gunting tumpul, gam
 
 ## Objektif pembelajaran
-Murid dapat memperkemas catan bunga pada latar kering serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas corak lipatan dan guntingan bertema kebersihan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bunga Selepas Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Rama-rama Simetri. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik basah atas kering serta penggunaan bentuk, warna, kontra, kepelbagaian. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik lipatan dan guntingan serta penggunaan rupa, warna, kontra, harmoni. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada catan bunga pada latar kering, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada corak lipatan dan guntingan bertema kebersihan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat memperkemas catan bunga pada latar kering serta mengulasnya mengguna
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
