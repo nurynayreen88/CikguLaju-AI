@@ -3,7 +3,7 @@
 **ID:** BM4-P010 | **RPT 2027:** M04 | **Unit:** 2 — Prihatinnya Kita
 **Tajuk aktiviti:** Kemudahan di Lapangan Terbang
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
-**SP:** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia.
+**SP:** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia
 **Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 10** (bukan m/s 5); datuk dan nenek menziarahi keluarga Hadif di Johor Bahru. **BA:** Belum disahkan.
 **Objektif:** Murid membina sekurang-kurangnya empat ayat tepat daripada gambar serta frasa tentang kemudahan di lapangan terbang.
 **BBM:** BT m/s 10, kad gambar-frasa dan senarai semak ayat. **Masa:** 60 minit, boleh disesuaikan.
