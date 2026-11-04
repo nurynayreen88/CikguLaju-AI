@@ -6,7 +6,7 @@
 **Tajuk aktiviti:** Salam Diberikan Tetamu Dihormati  
 **Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.  
 **Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 65  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 66  
 **Fokus:** lisan — Salam Diberikan Tetamu Dihormati  
 **Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Salam Diberikan Tetamu Dihormati' mengikut kemahiran 1.1.1.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
