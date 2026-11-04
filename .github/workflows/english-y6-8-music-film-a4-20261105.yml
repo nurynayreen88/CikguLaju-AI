@@ -1,0 +1,86 @@
+name: English Y6 eight KPM SOW music and film Word/PDF QA
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year6/lesson_10[2-9].md'
+      - 'rph_standalone/english/year6/lesson_110.md'
+      - 'tests/test_english_y6_8_music_film_source_102_110_20261105.py'
+      - '.github/workflows/english-y6-8-music-film-a4-20261105.yml'
+      - 'tools/verify_english_800_native_pdf_contract_20261104.py'
+      - 'tools/verify_english_y4_y6_a4_20261104.py'
+permissions: {contents: read}
+jobs:
+  source-pdf-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      LESSONS: '102,103,104,105,107,108,109,110'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Check KPM SOW codes and eight source-specific music/film tasks
+        run: python -m unittest discover -s tests -p 'test_english_y6_8_music_film_source_102_110_20261105.py' -v
+      - name: Install ReportLab test requirements
+        run: python -m pip install reportlab==4.2.5 pypdf==5.1.0
+      - name: Render native ReportLab PDF for eight exact lessons
+        run: python tools/verify_english_800_native_pdf_contract_20261104.py --year 6 --lessons "$LESSONS"
+      - name: Require eight one-page A4 PDF documents
+        run: |
+          python - <<'PY'
+          import os,json,pathlib
+          q=pathlib.Path('output/english_2_6_native_pdf_smoke_20261104/year6/native_pdf_report.json')
+          rows=json.loads(q.read_text(encoding='utf-8'))['results']
+          ids={int(n) for n in os.environ['LESSONS'].split(',')}
+          assert len(rows)==8 and {x['lesson'] for x in rows}==ids,rows
+          assert all(x['pages']==1 and x['a4'] and not x.get('error') for x in rows),rows
+          print('English Year6 music/film: 8/8 native PDF one-page A4')
+          PY
+      - name: Archive isolated PDF measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y6-eight-music-film-pdf
+          path: output/english_2_6_native_pdf_smoke_20261104/year6/native_pdf_report.json
+          retention-days: 14
+  source-word-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      LESSONS: '102,103,104,105,107,108,109,110'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install isolated native Word QA and bound system dependency wait
+        run: |
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo timeout 120s apt-get update -qq
+            sudo timeout 180s apt-get install -y --no-install-recommends libreoffice-writer
+          fi
+      - name: Build original source-locked native Word for 8 lessons
+        run: python tools/verify_english_y4_y6_a4_20261104.py --year 6 --lessons "$LESSONS"
+      - name: Require eight A4 Word documents with all source text preserved
+        run: |
+          python - <<'PY'
+          import os,json,pathlib
+          q=pathlib.Path('output/english_y4_y6_word_a4_20261104/year6/report.json')
+          data=json.loads(q.read_text(encoding='utf-8'))
+          rows=data['lessons']
+          ids={int(n) for n in os.environ['LESSONS'].split(',')}
+          assert data['lesson_total']==8 and {x['lesson'] for x in rows}==ids,data
+          assert data['compact_one_page_a4']==8,data
+          for x in rows:
+              assert x['compact']['pages']==1 and x['compact']['a4'],x
+              assert x['raw']['source_text']==x['compact']['source_text'],x
+          print('English Year6 music/film: 8/8 native Word one-page A4 and complete text')
+          PY
+      - name: Archive isolated Word measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y6-eight-music-film-word
+          path: output/english_y4_y6_word_a4_20261104/year6/report.json
+          retention-days: 14

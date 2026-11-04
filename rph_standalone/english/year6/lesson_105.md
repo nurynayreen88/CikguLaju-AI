@@ -7,32 +7,32 @@
 **Language focus:** Describing music (e.g. catchy)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 87, 90; Teacher Book pages 141, 144-145  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on a school music performance.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Give a structured talk about a favourite song using PB p.90 notes, connect four ideas coherently and answer a partner's clarification question.  
+**PBD evidence:** Four relevant spoken personal/song details (Speaking 2.1.1) and a connected written talk outline (Writing 4.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review music terms and a favourite artist without publicly playing personal recordings.  
+**Pupils:** Name a favourite song and its genre.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Which song or instrument would you choose and why?”, drawing on Describing music (e.g. catchy).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Review PB p.87 Activity 4 and follow TB p.144 Activity 1 to plan details.  
+**Pupils:** Recall a prior listening fact, then note the song, singer, style and personal reason.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow TB p.144 Activity 2: link note form ideas into a short written outline.  
+**Pupils:** Write four connected statements using appropriate conjunctions.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow TB pp.144–145 Activity 3: give a group talk without reading the whole script.  
+**Pupils:** Talk about the chosen song and answer one appropriate follow-up question.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess intelligibility, four clear facts and logical sequence.  
+**Pupils:** Improve an unclear link and respond to a partner's question.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which song or instrument would you choose and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite a short voluntary talk; audio may be used only when rights and classroom access permit.  
+**Pupils:** Say one reason the song matters and give supportive feedback.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

@@ -7,32 +7,32 @@
 **Language focus:** Phonology: rhythm and rhyme (listen to song in this lesson for example rhythm; rhyming words, e.g. same-game; back-soundtrack)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 88-89; Teacher Book pages 142  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a school music performance.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read PB pp.88–89 song lyrics for gist and identify rhyming words, rhythm and stressed syllables; select a supported song title.  
+**PBD evidence:** A text-supported main idea and two structure/rhyme observations (Reading 3.2.1), plus two recognisably rhyming word pairs (Listening 1.1.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Ask small groups to name a favourite song and describe its chorus without copying a whole recording.  
+**Pupils:** Recall one rhythmic phrase or safe short word pair and predict a rhyme.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce music genres, instruments, performance and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Phonology: rhythm and rhyme (listen to song in this lesson for example rhythm; rhyming words, e.g.….  
-**Pupils:** Predict the text from instrument and performance pictures; highlight two useful clues or words.
+**Teacher:** Follow TB p.142 Learning to Learn; demonstrate rhyming sounds versus spelling, stressed syllables and rhythm.  
+**Pupils:** Compare same/game with differently spelled rhymes such as down/around.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a school music performance; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Use verified PB pp.88–89 audio or accurate reading of the printed song lyrics for TB p.142 Activity 1.  
+**Pupils:** Read and listen to the song, then mark two pairs of rhyming line endings.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a school music performance. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.142 Activities 2–3 to choose a title and discuss song structure.  
+**Pupils:** Choose a text-supported title, identify the refrain and compare its pattern with a familiar song.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check two rhyming pairs, one main idea and an accurate stress or rhythm observation.  
+**Pupils:** Show a line-ending word pair and explain the chosen title.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which song or instrument would you choose and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review the PB song's chorus using reading or a properly licensed classroom recording only.  
+**Pupils:** Explain one feature of the song that makes it memorable.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

@@ -7,32 +7,32 @@
 **Language focus:** Review of question forms (personal questions, e.g. What’s your favourite song to sing?)  
 **Duration:** 60 minutes  
 **Materials:** Pupils' song recordings from Lesson 105; Pupil Book pages 82-83 for optional support  
-**Learning objective:** Write a detailed a music preference note containing at least 5 relevant facts about a person or group linked to a school music performance.  
-**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
+**Learning objective:** Write a clear magazine or blog interview with an imagined singer, using three to five correctly punctuated questions and believable note-based answers.  
+**PBD evidence:** A coherent interview with at least three correctly punctuated questions (Writing 4.2.1) and correct punctuation for question forms (Writing 4.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Ask pupils to describe a favourite singer using only approved classroom materials.  
+**Pupils:** Name one performer and a style of music they sing.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “Which song or instrument would you choose and why?”. Highlight useful language: Review of question forms (personal questions, e.g. What’s your favourite song to sing?).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a school music performance.
+**Teacher:** Show the SOW imagined-singer task; review question marks and interview structure.  
+**Pupils:** Draft three to five questions using correct word order and punctuation.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
-**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
+**Teacher:** Have pairs exchange questions and role-play a singer's creative answers in note form.  
+**Pupils:** Answer another pair's questions without copying published lyrics or interview text.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Guide pairs to transform their question and answer notes into a magazine/blog interview.  
+**Pupils:** Write a readable interview with a short introduction and correctly punctuated questions.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess a coherent interview and at least three correct question marks.  
+**Pupils:** Edit one question and improve one unclear answer.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which song or instrument would you choose and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pupils to share an original interview question.  
+**Pupils:** Ask one question politely and explain its purpose.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

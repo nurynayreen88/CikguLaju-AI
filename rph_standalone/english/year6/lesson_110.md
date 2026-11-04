@@ -7,32 +7,32 @@
 **Language focus:** Review of language (e.g. present simple for talking about themselves; past forms for narration)  
 **Duration:** 60 minutes  
 **Materials:** Speaking assessment practice materials, examiner script and assessment form  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on a journey around town.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Take part in two three-person speaking assessment rehearsals, use three clarification strategies and reflect on communicative strengths and improvements.  
+**PBD evidence:** Two speaking-test self/peer assessment forms showing factual personal responses (Speaking 2.1.1) and useful clarification checks (Speaking 2.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review supportive speaking phrases and explain that pupils will practise rather than receive an official mark.  
+**Pupils:** Use one phrase to ask for repetition or confirmation.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How do we get there safely?”, drawing on Review of language (e.g. present simple for talking about themselves; past forms for narration).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Model the SOW three-person structure: two candidates and one pupil examiner using an original script.  
+**Pupils:** Identify the examiner and candidate responsibilities and the simple feedback criteria.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Organise groups of three; ensure each pupil has two opportunities as candidate, changing roles.  
+**Pupils:** Perform two short speaking tests, answering relevant personal-information questions.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Distribute formative feedback sheets with great/good/okay/needs work categories, not numerical scores.  
+**Pupils:** Assess communicative competence, grammar and vocabulary and use three clarification phrases.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Collect peer/self-assessment sheets and give constructive individual feedback.  
+**Pupils:** Record one strength and one practical next improvement.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Remind pupils to use accurate personal examples and not memorise scripts.  
+**Pupils:** Say one strategy for remaining calm in a real conversation.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
