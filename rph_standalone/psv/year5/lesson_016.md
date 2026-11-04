@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Lukisan dan Capan — Pasar Buah  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Model — Misi Angkasa
+**Unit rujukan 2026:** Unit 4 — Misi Angkasa  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** gabungan lukisan dan capan  
-**Bahasa seni visual:** garisan, jalinan, kontra  
+**Teknik:** cantuman dan binaan  
+**Bahasa seni visual:** bentuk, warna, imbangan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** pensel, blok cap, warna
+**BBM:** kotak terpakai, kertas, gam
 
 ## Objektif pembelajaran
-Murid dapat memperkemas lukisan gerai buah bercapan serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas model roket angkasa serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Pasar Buah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Rumah Mesra Alam. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik gabungan lukisan dan capan serta penggunaan garisan, jalinan, kontra. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik cantuman dan binaan serta penggunaan bentuk, warna, imbangan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada lukisan gerai buah bercapan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada model roket angkasa, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

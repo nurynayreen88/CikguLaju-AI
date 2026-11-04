@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Kolaj Corak — Corak Geometri Beg  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Kolaj dan Gurisan — Pungguk Rindu Akan Bulan
+**Unit rujukan 2026:** Unit 6 — Pungguk Rindu Akan Bulan  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.2; 2.1.6  
-**Teknik:** tampalan kolaj bercorak  
-**Bahasa seni visual:** rupa, warna, kesatuan  
+**SP:** 1.1.1; 2.1.1  
+**Teknik:** gabungan kolaj dan gurisan  
+**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas, gam, templat beg
+**BBM:** krayon, kertas warna, gam
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh kolaj corak dan menghasilkan satu sampel tampalan kolaj bercorak.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh kolaj dan gurisan dan menghasilkan satu sampel gabungan kolaj dan gurisan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Geometri Beg. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh kolaj corak bertema Corak Geometri Beg dan membandingkan rupa, warna, kesatuan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh kolaj dan gurisan bertema Burung Merak dan membandingkan garisan, jalinan, kontra, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik tampalan kolaj bercorak. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk rekaan beg bermotif geometri.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan kolaj dan gurisan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk karya pungguk dengan gabungan kolaj dan gurisan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

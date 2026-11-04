@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Kolaj Corak — Corak Geometri Beg  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Kolaj dan Gurisan — Pungguk Rindu Akan Bulan
+**Unit rujukan 2026:** Unit 6 — Pungguk Rindu Akan Bulan  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** tampalan kolaj bercorak  
-**Bahasa seni visual:** rupa, warna, kesatuan  
+**Teknik:** gabungan kolaj dan gurisan  
+**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas, gam, templat beg
+**BBM:** krayon, kertas warna, gam
 
 ## Objektif pembelajaran
-Murid dapat memperkemas rekaan beg bermotif geometri serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas karya pungguk dengan gabungan kolaj dan gurisan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Geometri Beg. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik tampalan kolaj bercorak serta penggunaan rupa, warna, kesatuan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik gabungan kolaj dan gurisan serta penggunaan garisan, jalinan, kontra, kepelbagaian. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada rekaan beg bermotif geometri, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada karya pungguk dengan gabungan kolaj dan gurisan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

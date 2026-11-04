@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Titisan — Titik Hujan  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Tembikar — Pasu Mini
+**Unit rujukan 2026:** Unit 5 — Pasu Mini  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.2; 2.1.5  
-**Teknik:** titisan warna  
-**Bahasa seni visual:** warna, ritma, jalinan  
+**SP:** 1.1.4; 2.1.9  
+**Teknik:** picitan dan lingkaran  
+**Bahasa seni visual:** bentuk, rupa, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** penitis plastik, warna cair, kertas
+**BBM:** doh atau tanah liat, alas
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh titisan dan menghasilkan satu sampel titisan warna.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh tembikar dan menghasilkan satu sampel picitan dan lingkaran.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh titisan bertema Titik Hujan dan membandingkan warna, ritma, jalinan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh tembikar bertema Bekas Herba dan membandingkan bentuk, rupa, penegasan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik titisan warna. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk corak titisan untuk produk kertas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik picitan dan lingkaran. Murid mencuba dua sampel kecil menggunakan doh atau tanah liat, membandingkan kesan dan memilih teknik yang sesuai untuk pasu mini berteknik picitan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

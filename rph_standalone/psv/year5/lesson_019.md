@@ -2,27 +2,28 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Titisan — Titik Hujan  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Tembikar — Pasu Mini
+**Unit rujukan 2026:** Unit 5 — Pasu Mini  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
-**SP:** 3.1.2  
-**Teknik:** titisan warna  
-**Bahasa seni visual:** warna, ritma, jalinan  
+**SP:** 3.1.5  
+**Teknik:** picitan dan lingkaran  
+**Bahasa seni visual:** bentuk, rupa, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** penitis plastik, warna cair, kertas
+**BBM:** doh atau tanah liat, alas
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan corak titisan untuk produk kertas dengan titisan warna, sekurang-kurangnya dua aspek warna, ritma, jalinan.
+Murid dapat menghasilkan pasu mini berteknik picitan dengan picitan dan lingkaran, sekurang-kurangnya dua aspek bentuk, rupa, penegasan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat penitis plastik, warna cair, kertas. Murid menyediakan bahan serta menetapkan kriteria karya.
+**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat doh atau tanah liat, alas. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan corak titisan untuk produk kertas mengikut lakaran menggunakan titisan warna, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan pasu mini berteknik picitan mengikut lakaran menggunakan picitan dan lingkaran, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri warna, ritma, jalinan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri bentuk, rupa, penegasan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
 

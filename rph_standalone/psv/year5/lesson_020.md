@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Titisan — Titik Hujan  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Tembikar — Pasu Mini
+**Unit rujukan 2026:** Unit 5 — Pasu Mini  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** titisan warna  
-**Bahasa seni visual:** warna, ritma, jalinan  
+**Teknik:** picitan dan lingkaran  
+**Bahasa seni visual:** bentuk, rupa, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** penitis plastik, warna cair, kertas
+**BBM:** doh atau tanah liat, alas
 
 ## Objektif pembelajaran
-Murid dapat memperkemas corak titisan untuk produk kertas serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas pasu mini berteknik picitan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik titisan warna serta penggunaan warna, ritma, jalinan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik picitan dan lingkaran serta penggunaan bentuk, rupa, penegasan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada corak titisan untuk produk kertas, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada pasu mini berteknik picitan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Titisan — Titik Hujan  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Tembikar — Pasu Mini
+**Unit rujukan 2026:** Unit 5 — Pasu Mini  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.5; 3.1.2  
-**Teknik:** titisan warna  
-**Bahasa seni visual:** warna, ritma, jalinan  
+**SP:** 2.1.9; 3.1.5  
+**Teknik:** picitan dan lingkaran  
+**Bahasa seni visual:** bentuk, rupa, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** penitis plastik, warna cair, kertas
+**BBM:** doh atau tanah liat, alas
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Titik Hujan dan memilih satu lakaran berdasarkan warna, ritma, jalinan.
+Murid dapat menyiapkan dua lakaran Bekas Herba dan memilih satu lakaran berdasarkan bentuk, rupa, penegasan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Herba. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Titik Hujan. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Bekas Herba. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal corak titisan untuk produk kertas, menguji titisan warna pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal pasu mini berteknik picitan, menguji picitan dan lingkaran pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -2,27 +2,28 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Kolaj Corak — Corak Geometri Beg  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Kolaj dan Gurisan — Pungguk Rindu Akan Bulan
+**Unit rujukan 2026:** Unit 6 — Pungguk Rindu Akan Bulan  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
-**SP:** 3.1.3  
-**Teknik:** tampalan kolaj bercorak  
-**Bahasa seni visual:** rupa, warna, kesatuan  
+**SP:** 3.1.1  
+**Teknik:** gabungan kolaj dan gurisan  
+**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas, gam, templat beg
+**BBM:** krayon, kertas warna, gam
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan rekaan beg bermotif geometri dengan tampalan kolaj bercorak, sekurang-kurangnya dua aspek rupa, warna, kesatuan.
+Murid dapat menghasilkan karya pungguk dengan gabungan kolaj dan gurisan dengan gabungan kolaj dan gurisan, sekurang-kurangnya dua aspek garisan, jalinan, kontra, kepelbagaian.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Geometri Beg. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat kertas, gam, templat beg. Murid menyediakan bahan serta menetapkan kriteria karya.
+**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat krayon, kertas warna, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan rekaan beg bermotif geometri mengikut lakaran menggunakan tampalan kolaj bercorak, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan karya pungguk dengan gabungan kolaj dan gurisan mengikut lakaran menggunakan gabungan kolaj dan gurisan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri rupa, warna, kesatuan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri garisan, jalinan, kontra, kepelbagaian, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
 
