@@ -11,7 +11,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Susunan Kreatif dan mengaitkannya dengan pengulangan motif lemon, ritma, harmoni warna dan susunan corak. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Susunan Kreatif dan mengaitkannya dengan pengulangan motif lemon, ritma, harmoni warna dan susunan corak. Kriteria kejayaan: Kad pemerhatian mengandungi tiga istilah visual tepat dan satu penerangan kaitan dengan karya.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Susunan Kreatif** dalam tema **Inspirasi Corak Rekaan**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
