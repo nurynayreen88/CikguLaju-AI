@@ -12,19 +12,19 @@
 **BBM:** Kad situasi A/B, kad pandangan dan titik persetujuan, borang semak; fail `materials/pendidikan_moral/year5/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghasilkan respons tepat bagi **14.1: Mengenal pasti contoh amalan toleransi dalam hidup bermasyarakat.** dan **14.2: Menghuraikan kepentingan amalan toleransi dalam hidup bermasyarakat.** Kriteria kejayaan: Semak satu respons tepat bagi setiap SP 14.1 dan 14.2, merangkumi kad pandangan dan titik persetujuan serta satu penerangan yang relevan.
+Murid menyiapkan tugasan **SP 14.1** (Mengenal pasti contoh amalan toleransi dalam hidup bermasyarakat.) dan **SP 14.2** (Menghuraikan kepentingan amalan toleransi dalam hidup bermasyarakat.). Kriteria kejayaan: setiap murid menghasilkan **jadual dua contoh dengan label atau alasan** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Analisis pilihan:** Guru menyediakan dua kad tindakan, A: **mendengar perbezaan pandangan dan mencari titik persetujuan**, B: **memaksa semua orang ikut pendapat sendiri**. Murid berbincang secara berpasangan dan menjawab tugasan SP 14.1 (**Mengenal pasti contoh amalan toleransi dalam hidup bermasyarakat.**) menggunakan kad pandangan dan titik persetujuan. Guru menyemak jawapan mengikut kata tugas SP yang sebenar dan meminta bukti atau contoh dalam konteks unit ini; murid membetulkan jawapan berdasarkan maklum balas.
+**Aktiviti 1 (20 minit) — Tugasan 14.1:** Guru membentangkan situasi **Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Toleransi** (mula m/s 130; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Mengenal pasti contoh amalan toleransi dalam hidup bermasyarakat.”** dengan menghasilkan **jadual dua contoh dengan label atau alasan**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
 
-**Aktiviti 2 (20 minit) — Bentang dan terangkan:** Murid melengkapkan tugasan SP 14.2 (**Menghuraikan kepentingan amalan toleransi dalam hidup bermasyarakat.**), membentangkan respons dan menjelaskan sebab satu tindakan lebih wajar. Guru membetulkan kesilapan konsep dan merekod respons individu.
+**Aktiviti 2 (20 minit) — Tugasan 14.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan kepentingan amalan toleransi dalam hidup bermasyarakat.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak satu respons tepat bagi setiap SP 14.1 dan 14.2, merangkumi kad pandangan dan titik persetujuan serta satu penerangan yang relevan. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **jadual dua contoh dengan label atau alasan** untuk SP 14.1 dan **dua huraian yang disokong sebab** untuk SP 14.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Toleransi**. Murid membetulkan satu jawapan selepas maklum balas.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — unit bermula m/s 130 (PDF 133); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

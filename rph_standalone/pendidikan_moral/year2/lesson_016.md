@@ -12,19 +12,19 @@
 **BBM:** Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year2/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghasilkan respons tepat bagi **6.1: Mengenal pasti hubungan antara ahli keluarga.** dan **6.2: Menjelaskan cara menghormati ahli keluarga.** Kriteria kejayaan: Semak satu respons tepat bagi setiap SP 6.1 dan 6.2, merangkumi jadual tindakan menghormati serta satu penerangan yang relevan.
+Murid menyiapkan tugasan **SP 6.1** (Mengenal pasti hubungan antara ahli keluarga.) dan **SP 6.2** (Menjelaskan cara menghormati ahli keluarga.). Kriteria kejayaan: setiap murid menghasilkan **jadual dua contoh dengan label atau alasan** bagi SP pertama dan **penjelasan dalam dua ayat serta satu contoh** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua beradik berebut penggunaan alat permainan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Analisis pilihan:** Guru menyediakan dua kad tindakan, A: **mendengar pendapat dan meminta izin**, B: **memotong percakapan serta mengabaikan hak orang lain**. Murid berbincang secara berpasangan dan menjawab tugasan SP 6.1 (**Mengenal pasti hubungan antara ahli keluarga.**) menggunakan jadual tindakan menghormati. Guru menyemak jawapan mengikut kata tugas SP yang sebenar dan meminta bukti atau contoh dalam konteks unit ini; murid membetulkan jawapan berdasarkan maklum balas.
+**Aktiviti 1 (20 minit) — Tugasan 6.1:** Guru membentangkan situasi **Dua beradik berebut penggunaan alat permainan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Hormati Keluarga Hidup Gembira** (mula m/s 33; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Mengenal pasti hubungan antara ahli keluarga.”** dengan menghasilkan **jadual dua contoh dengan label atau alasan**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
 
-**Aktiviti 2 (20 minit) — Bentang dan terangkan:** Murid melengkapkan tugasan SP 6.2 (**Menjelaskan cara menghormati ahli keluarga.**), membentangkan respons dan menjelaskan sebab satu tindakan lebih wajar. Guru membetulkan kesilapan konsep dan merekod respons individu.
+**Aktiviti 2 (20 minit) — Tugasan 6.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara menghormati ahli keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak satu respons tepat bagi setiap SP 6.1 dan 6.2, merangkumi jadual tindakan menghormati serta satu penerangan yang relevan. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **jadual dua contoh dengan label atau alasan** untuk SP 6.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 6.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Hormat**. Murid membetulkan satu jawapan selepas maklum balas.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit bermula m/s 33 (PDF 42); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
