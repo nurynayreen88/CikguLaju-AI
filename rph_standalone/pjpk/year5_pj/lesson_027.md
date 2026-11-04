@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.11, 2.11, 5.1  
 **SP:** 1.11.2, 2.11.2, 5.1.3, 5.1.4  
-**Buku teks:** calon m/s 44-47 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 44-46, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.11.2 (melempar objek berbentuk leper pada satu jarak dari kedudukan power position) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.11.2: Menjelaskan perkaitan antara kelajuan lakuan melempar dengan jarak lemparan objek berbentuk leper.
