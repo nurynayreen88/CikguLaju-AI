@@ -5,22 +5,22 @@
 **Aktiviti/Tajuk:** Dunia Gemilang  
 **SK:** 1.1  
 **SP:** 1.1.1; 1.1.2; 1.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 2 — Pembina Cilik, ms 14-19 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Dunia Gemilang, ms 14–15
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kotak terpakai, kadbod, kertas, pita dan gam  
+**BBM:** imej arca tiga dimensi daripada BT, kad unsur seni, kertas lakaran dan pensel warna
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Dunia Gemilang dan mengaitkannya dengan bentuk geometri, struktur lipatan dan kestabilan sambungan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid mengenal pasti tiga ciri bahasa seni pada arca tiga dimensi dalam Dunia Gemilang (bentuk konkrit, imbangan tidak simetri dan kontra warna) serta menerangkan satu kesan visual. Kriteria kejayaan: tiga ciri berlabel pada lakaran dan satu penerangan yang tepat.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Dunia Gemilang** dalam tema **Pembina Cilik**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan imej arca berbentuk hati daripada BT ms 14–15; murid membandingkan bentuk tiga dimensi dengan imej dua dimensi.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan dua imej dunia gemilang dan meminta murid menunjukkan garisan, rupa serta imbangan. Murid membandingkan dua contoh menggunakan kad pemerhatian.
+**Aktiviti 1 (15 minit) — Tunjuk cara/penerokaan:** Guru menerangkan ketinggian, kelebaran dan kedalaman arca serta prinsip imbangan dan kontra pada bentuk dan warna merah. Murid mengenal pasti tiga unsur/prinsip pada imej.
 
-**Aktiviti 2 (25 minit) — Amali:** Guru membimbing peta visual tentang bentuk geometri, struktur lipatan dan kestabilan sambungan. Murid menghasilkan kajian ringkas berlabel: tiga ciri bahasa seni dan satu cadangan penggunaannya pada model kotak kejutan yang boleh dibuka dan ditutup.
+**Aktiviti 2 (25 minit) — Amali:** Secara berpasangan, murid menanda bentuk, imbangan dan kontra pada salinan imej, kemudian melakar satu variasi susun atur arca ringkas dan menjelaskan mengapa bentuknya seimbang walaupun tidak simetri.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Kad pemerhatian mengandungi tiga istilah visual tepat dan satu penerangan kaitan dengan karya. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Tiga label bahasa seni pada imej/lakaran dan satu penerangan kesan imbangan atau kontra. Guru merekod pemerhatian serta maklum balas lisan. Guru merekod evidens pembelajaran secara berterusan.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
@@ -28,4 +28,4 @@ Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Dunia Gemilang dan me
 
 **Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 14–15](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Aktiviti adaptasi CikguLaju berpandukan kandungan buku; ujian cetakan dan pelaksanaan sebenar belum disahkan.
