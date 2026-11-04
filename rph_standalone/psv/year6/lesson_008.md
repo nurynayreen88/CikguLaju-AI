@@ -5,22 +5,22 @@
 **Aktiviti/Tajuk:** Lihat dan Sentuh  
 **SK:** 2.1  
 **SP:** 2.1.1; 2.1.2; 2.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 3 — Ilusi dan Realiti, ms 20-25 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Lihat dan Sentuh, ms 22–23
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** daun, kertas, krayon, pensel warna, kad berlatar  
+**BBM:** pembalut gelembung bersih, cat air tidak toksik, span, kertas lukisan, kertas bertekstur, daun kering bersih dan gam
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menguji dua kaedah/media bagi Lihat dan Sentuh dan memilih satu berdasarkan fungsi serta unsur jalinan kulit tumbuhan, ruang serta kontras tona pada kaktus. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid membandingkan dua cara mewujudkan jalinan melalui capan dan kolaj, mengenal pasti perbezaan jalinan tampak dengan jalinan sentuh. Kriteria kejayaan: dua sampel teknik, dua label jalinan dan satu alasan pemilihan bahan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Lihat dan Sentuh** dalam tema **Ilusi dan Realiti**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru mempamerkan capan pembalut gelembung dan kolaj bahan bertekstur; murid menamakan kesan yang kelihatan dan yang boleh dirasa.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan dua sampel lihat dan sentuh, mendemonstrasi cara selamat mengendalikan daun, kertas, krayon, pensel warna, kad berlatar, dan menjelaskan kesan berbeza pada hasil.
+**Aktiviti 1 (15 minit) — Tunjuk cara/penerokaan:** Guru merujuk BT ms 22–23, menunjukkan teknik capan pada kertas menggunakan cat tidak toksik dan teknik kolaj bahan kering. Murid memerhati bagaimana capan dan kolaj menghasilkan jalinan yang berbeza.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid menjalankan dua percubaan kecil untuk karya kaktus bertekstur dengan lapisan rupa yang berbeza: membandingkan jalinan kulit tumbuhan, ruang serta kontras tona pada kaktus, merekod langkah melalui lakaran/foto, kemudian memilih satu teknik dengan justifikasi.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan satu sampel capan dan satu sampel kolaj pada dua petak kertas, melabel jalinan tampak/sentuh dan membandingkan hasil; guru menyediakan bahan yang bersih dan selamat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua sampel sebenar, catatan kesan dan satu alasan pilihan bahan/teknik. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Dua sampel capan dan kolaj, dua label jalinan serta satu alasan pemilihan media berdasarkan kesan visual atau sentuhan. Guru merekod evidens pembelajaran secara berterusan.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
@@ -28,4 +28,4 @@ Menguji dua kaedah/media bagi Lihat dan Sentuh dan memilih satu berdasarkan fung
 
 **Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 22–23](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Aktiviti adaptasi CikguLaju berpandukan kandungan buku; ujian cetakan dan pelaksanaan sebenar belum disahkan.
