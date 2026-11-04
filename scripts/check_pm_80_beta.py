@@ -44,8 +44,11 @@ def test_lessons():
                         "PENTAKSIRAN", "PENUTUP", "BAHAN BANTU MENGAJAR"):
                 assert_true(bool(str(result.get(key, "")).strip()),
                             "Year%d L%03d missing field %s" % (year, number, key))
-            assert_true("CADANGAN CIKGULAJU" in result.get("TAJUK", ""),
-                        "provisional label was removed")
+            assert_true(result.get("TAJUK", "") == item["title"],
+                        "Year%d L%03d: RPH teacher title changed unexpectedly" % (year, number))
+            assert_true(not any(token in str(result.get("TAJUK", "")).upper()
+                                for token in ("SEMAKAN GURU", "CADANGAN", "DRAF", "BELUM READY")),
+                        "Year%d L%03d: internal release label leaked into RPH title" % (year, number))
             assert_true(adapt_rows(dict(sample, subject="English"), original) is original,
                         "English source unexpectedly modified")
             assert_true(adapt_rows(dict(sample, year="Tahun 1"), original) is original,
@@ -110,8 +113,14 @@ def test_pdf_callback():
         pdf = PdfReader(path)
         assert_true(len(pdf.pages) >= 5, "RPT PDF has too few pages")
         first = pdf.pages[0].extract_text()
-        assert_true("PENDIDIKAN MORAL" in first and "CADANGAN" in first,
-                    "missing PDF subject/draft label")
+        assert_true("PENDIDIKAN MORAL" in first,
+                    "PDF title missing Pendidikan Moral")
+        assert_true(not any(token in first.upper() for token in
+                            ("SEMAKAN GURU", "CADANGAN", "DRAF", "BELUM READY", "BUKAN RPT RASMI")),
+                    "internal review labels leaked into RPT PDF")
+        assert_true(not any(token in (p.name + " " + caption).upper() for token in
+                            ("SEMAKAN GURU", "CADANGAN", "DRAF", "BELUM READY")),
+                    "internal review labels leaked into PDF filename/caption")
         sent.append(("document", cid, caption))
         return Delivered()
     def previous(cid, value):
@@ -136,10 +145,53 @@ def test_pdf_callback():
     print("RPT PDF callbacks delivered for five years in offline mock")
 
 
+def test_moral_menu_labels():
+    from rpt_2027.english import telegram_downloads as menu
+
+    replies = []
+
+    def send(cid, text, keyboard=None):
+        replies.append((cid, text, keyboard))
+        return True
+
+    ns = {
+        "callback": lambda cid, action: None,
+        "send": send,
+        "send_document": lambda *args: None,
+        "_access_info": lambda cid: {"active": cid == 2},
+        "_is_admin": lambda cid: cid == 1,
+    }
+    assert_true(menu.install(ns), "RPT menu integration did not install")
+    ns["callback"](2, "rpt2027_home")
+    assert_true(bool(replies), "RPT 2027 home unavailable")
+    if replies:
+        moral_blurbs = [line for line in replies[-1][1].split(". ")
+                        if "Pendidikan Moral" in line]
+        assert_true(all(not any(label in line.upper() for label in
+                                ("CADANGAN", "DRAF", "SEMAKAN GURU"))
+                        for line in moral_blurbs),
+                    "Internal review label leaked in RPT main menu")
+    ns["callback"](2, "rpt2027_year_2")
+    if not replies:
+        FAILS.append("RPT 2027 year menu unavailable")
+        return
+    cid, heading, keyboard = replies[-1]
+    moral_buttons = [button["text"] for row in (keyboard or []) for button in row
+                     if button.get("callback_data") == "rpt2027_pm_pdf_2"]
+    assert_true(moral_buttons == ["📥 Pendidikan Moral (PDF)"],
+                "Moral RPT year-menu button has review label or is missing")
+    moral_lines = [line for line in heading.split("\n") if "Pendidikan Moral" in line]
+    assert_true(bool(moral_lines) and all(
+        not any(label in line.upper() for label in ("CADANGAN", "DRAF", "SEMAKAN GURU"))
+        for line in moral_lines), "Internal review label leaked in RPT year description")
+    print("User-facing Moral RPT menu labels: clean")
+
+
 if __name__ == "__main__":
     test_lessons()
     test_runtime_install()
     test_pdf_callback()
+    test_moral_menu_labels()
     for issue in FAILS[:50]:
         print("FAIL:", issue)
     if len(FAILS) > 50:
