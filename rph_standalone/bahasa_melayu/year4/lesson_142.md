@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 142
 
-**ID:** BM4-P142  
-**Minggu RPT 2027:** M33 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita  
-**Tajuk aktiviti:** Pengusaha Rumpai Laut  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 164  
-**Fokus:** tatabahasa — Pengusaha Rumpai Laut  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Pengusaha Rumpai Laut'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P142
+**Minggu RPT 2027:** M33 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita
+**Tajuk aktiviti:** Pengusaha Rumpai Laut
+**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 164; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** kisah Encik Shah, pengusaha rumpai laut dari Semporna yang menggunakan kata majmuk mantap seperti bumiputera, setiausaha, kakitangan dan warganegara.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat menyenaraikan lima kata majmuk mantap dan menghasilkan tiga ayat berkaitan usaha perusahaan rumpai laut.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pengusaha Rumpai Laut' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Pengusaha Rumpai Laut daripada BT m/s 164; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Pengusaha Rumpai Laut.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Pengusaha Rumpai Laut'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata majmuk mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Pengusaha Rumpai Laut'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing bacaan cerita BT m/s164 tentang kerjasama FAMA, eksport dan peranan pekerja
+**Murid:** Kenal pasti lima kata majmuk mantap yang dieja bercantum dalam cerita
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Pengusaha Rumpai Laut' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Terangkan perbezaan ejaan kata majmuk mantap dengan kata majmuk bebas
+**Murid:** Bina tiga ayat menggunakan kata majmuk mantap berasaskan cerita
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak ejaan bercantum dan penggunaan frasa dalam konteks usahawan
+**Murid:** Betulkan dua perkataan yang dieja terpisah secara salah
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Pengusaha Rumpai Laut' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 5.2.2 (ii) berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Pengusaha Rumpai Laut.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s164 mencetak SP5.2.2(ii) dan contoh kata majmuk mantap Encik Shah seperti tanggungjawab serta kerjasama.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

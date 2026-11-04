@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 158
 
-**ID:** BM4-P158  
-**Minggu RPT 2027:** M36 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Integriti; U26: Ibarat Pedang  
-**Tajuk aktiviti:** Kejayaanku  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 183  
-**Fokus:** tulisan — Kejayaanku  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Kejayaanku' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P158
+**Minggu RPT 2027:** M36 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Integriti; U26: Ibarat Pedang
+**Tajuk aktiviti:** Kejayaanku
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 183; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** catatan diari Zara tentang kemenangan hoki daerah serta jadual latihan pasukan empat hari dan skor perlawanan 4–1.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat menulis satu perenggan catatan diari berdasarkan jadual empat hari dan maklumat kejayaan hoki.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kejayaanku' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Integriti; U26: Ibarat Pedang.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Kejayaanku daripada BT m/s 183; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Kejayaanku.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Kejayaanku' dan memodelkan langkah menyusun isi serta menulis mengikut Membina dan menulis ayat, dan perenggan daripada bahan multimedia.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Kejayaanku'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing murid meneliti jadual latihan hoki BT m/s183 dan catatan ringkas keputusan akhir
+**Murid:** Pilih empat fakta tarikh, jenis latihan, guru pengiring dan keputusan perlawanan
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan ayat catatan diri berdasarkan maklumat grafik dan perasaan bersyukur
+**Murid:** Tulis empat atau lima ayat menjadi satu perenggan diari Kejayaanku
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak fakta skor 4–1 dan urutan peristiwa, ejaan serta tanda baca
+**Murid:** Baiki dua fakta yang tidak sejajar dengan jadual
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Kejayaanku' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 3.2.1 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Kejayaanku.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s183 mencetak SP3.2.1 dan arahan menulis perenggan catatan berpandukan jadual latihan serta skor hoki.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

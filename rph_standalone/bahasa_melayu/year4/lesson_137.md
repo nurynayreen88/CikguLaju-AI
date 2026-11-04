@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 137
 
-**ID:** BM4-P137  
-**Minggu RPT 2027:** M32 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi  
-**Tajuk aktiviti:** Jualan di Awan Biru  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.1 — Memahami dan menggunakan kata berimbuhan mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 158  
-**Fokus:** tatabahasa — Jualan di Awan Biru  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Jualan di Awan Biru'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P137
+**Minggu RPT 2027:** M32 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi
+**Tajuk aktiviti:** Jualan di Awan Biru
+**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.2.1 (i), (ii), (iii) — Memahami dan menggunakan kata berimbuhan mengikut konteks
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 158; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** mesej media sosial Alif kepada Rajiv ketika pulang ke Johor Bahru dengan kapal terbang dan peta kategori imbuhan.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat mengelaskan sekurang-kurangnya enam kata berimbuhan kepada awalan, akhiran atau apitan dan membina tiga ayat.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Jualan di Awan Biru' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Jualan di Awan Biru daripada BT m/s 158; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Jualan di Awan Biru.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Jualan di Awan Biru'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata berimbuhan mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Jualan di Awan Biru'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing bacaan pengalaman Alif di BT m/s158 dan kenal pasti perkataan berimbuhan bercetak berwarna
+**Murid:** Kumpulkan perkataan berdasarkan awalan, akhiran dan apitan
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Jualan di Awan Biru' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Paparkan jadual tiga kategori pada buku dan modelkan satu proses menentukan kata dasar
+**Murid:** Isi sekurang-kurangnya enam perkataan pada kategori yang tepat dan bina tiga ayat
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.1 — Memahami dan menggunakan kata berimbuhan mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak bentuk imbuhan dan maksud ayat menggunakan contoh sumber
+**Murid:** Baiki dua pengelasan yang tersalah
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Jualan di Awan Biru' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 5.2.1 (i), (ii), (iii) berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Jualan di Awan Biru.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s158 mencetak SP5.2.1(i)(ii)(iii), arahan mengkategorikan kata berimbuhan dan membina ayat; RPT lama hanya 5.2.1.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

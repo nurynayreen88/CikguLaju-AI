@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 150
 
-**ID:** BM4-P150  
-**Minggu RPT 2027:** M35 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Integriti; U25: Tanggungjawab Digalas  
-**Tajuk aktiviti:** Hulur Bantuan, Santuni Jiran  
-**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.  
-**Standard Pembelajaran (SP):** 1.3.1 — Bercerita dengan sebutan dan intonasi yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 174  
-**Fokus:** lisan — Hulur Bantuan, Santuni Jiran  
-**Objektif PdP:** Murid dapat bercerita berkaitan 'Hulur Bantuan, Santuni Jiran' dengan sekurang-kurangnya tiga isi/peristiwa tersusun serta sebutan dan intonasi yang jelas.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P150
+**Minggu RPT 2027:** M35 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Integriti; U25: Tanggungjawab Digalas
+**Tajuk aktiviti:** Hulur Bantuan, Santuni Jiran
+**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.
+**Standard Pembelajaran (SP):** 1.3.1 — Bercerita dengan sebutan dan intonasi yang sesuai
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 174; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** empat gambar Zara membantu jiran Puan Salma membeli ubat batuk, menerima wang, pulangkan baki dan mendapat ucapan terima kasih.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat menceritakan sekurang-kurangnya empat langkah membantu jiran mengikut gambar dengan sebutan yang jelas.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Hulur Bantuan, Santuni Jiran' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Integriti; U25: Tanggungjawab Digalas.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Hulur Bantuan, Santuni Jiran daripada BT m/s 174; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Hulur Bantuan, Santuni Jiran.
 
-## Aktiviti 1 — Susun jalan cerita (15 minit)
-**Guru:** Menyampaikan bahan bertajuk 'Hulur Bantuan, Santuni Jiran' (teks/audio/gambar sesuai sumber); memodelkan urutan permulaan, perkembangan dan pengakhiran serta intonasi yang sesuai SP.
-**Murid:** Mendengar, membaca atau meneliti bahan; menyusun sekurang-kurangnya tiga isi/peristiwa mengikut urutan berdasarkan bukti bahan.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing murid memerhati urutan gambar BT m/s174 daripada permintaan Puan Salma hingga Zara memulangkan wang
+**Murid:** Susun empat peristiwa berdasarkan perkataan sakit, wang, ubat, terima kasih dan jujur
 
-## Aktiviti 2 — Persembahan cerita (20 minit)
-**Guru:** Membimbing murid bercerita dengan kad urutan; memberikan maklum balas tentang sebutan, intonasi, gaya dan kesinambungan isi.
-**Murid:** Bercerita semula secara bergilir tentang 'Hulur Bantuan, Santuni Jiran' menggunakan tiga isi/peristiwa serta intonasi dan gaya yang sesuai; rakan mencatat satu kekuatan dan cadangan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan penceritaan dengan penanda masa dan sebutan yang sesuai
+**Murid:** Ceritakan empat peristiwa kepada rakan serta nyatakan satu nilai amanah
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Mentaksir persembahan setiap murid melalui senarai semak: tiga isi tersusun, sebutan jelas dan intonasi/gaya tepat mengikut SP (1.3.1 — Bercerita dengan sebutan dan intonasi yang sesuai). Beri peluang persembahan semula sebagai pemulihan.
-**Murid:** Menyampaikan ringkasan lisan dan membaiki satu aspek sebutan, urutan atau intonasi selepas maklum balas.
+**Guru:** Semak susunan peristiwa, sebutan dan penggunaan maklumat gambar
+**Murid:** Baiki satu peristiwa yang tersalah urutan
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Hulur Bantuan, Santuni Jiran' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 1.3.1 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Hulur Bantuan, Santuni Jiran.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s174 memaparkan empat gambar dan arahan bercerita dengan sebutan/intonasi (SP1.3.1).
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.
