@@ -38,9 +38,30 @@ def install(ns):
     if not enabled():
         return False
     secret = os.getenv("CIKGULAJU_TELEGRAM_WEBHOOK_SECRET", "")
-    if len(secret) < 16:
-        raise RuntimeError("Private referral requires a Telegram webhook secret")
+    if len(secret) < 16 or len(secret) > 256 or re.fullmatch(r"[A-Za-z0-9_-]+", secret) is None:
+        raise RuntimeError("Private referral requires a valid Telegram webhook secret")
     app = ns["app"]
+    # Configure Telegram to transmit the header BEFORE installing the strict verifier.
+    # When Telegram API is down, leave the existing webhook untouched and fail closed.
+    api = str(ns.get("API") or "")
+    callback_base = str(ns.get("WEBHOOK_URL") or "")
+    if not api.startswith("https://") or not callback_base.startswith("https://"):
+        raise RuntimeError("Bot API and WEBHOOK_URL must be configured for private referrals")
+    import requests
+    response = requests.post(api + "/setWebhook", json={
+        "url": callback_base.rstrip("/") + "/webhook",
+        "secret_token": secret
+    }, timeout=15)
+    status = response.json() if response.ok else {}
+    if not response.ok or status.get("ok") is not True:
+        raise RuntimeError("Telegram refused secure webhook registration")
+    print("PRIVATE REFERRAL SECURE WEBHOOK CONFIGURED", flush=True)
+    # Disable the old public /setup-webhook route while the private secret is in use.
+    # Calling it would otherwise silently reset the webhook secret.
+    if "setup_webhook" in app.view_functions:
+        def _block_legacy_webhook_setup():
+            return ns["jsonify"]({"ok": False, "error": "secure webhook managed at startup"}), 403
+        app.view_functions["setup_webhook"] = _block_legacy_webhook_setup
     previous_webhook = app.view_functions["webhook"]
     previous_callback = ns["callback"]
     sb = ns["_sb_request"]
