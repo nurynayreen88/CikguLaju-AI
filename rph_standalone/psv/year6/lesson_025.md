@@ -11,7 +11,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Memasang karya dengan selamat dan menyampaikan satu apresiasi lisan terhadap hasil sendiri serta rakan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Memasang karya dengan selamat dan menyampaikan satu apresiasi lisan terhadap hasil sendiri serta rakan. Kriteria kejayaan: Foto/senarai pemerhatian pameran, ulasan lisan dan penggunaan bahasa seni visual yang tepat.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Pameran mini pertengahan tahun** dalam tema **Projek Seni Visual**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
