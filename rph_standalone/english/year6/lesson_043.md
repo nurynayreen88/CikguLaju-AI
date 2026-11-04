@@ -7,32 +7,32 @@
 **Language focus:** Narrative tenses review, e.g. past simple, past continuous  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.44–47; TB pp.76–79  
-**Learning objective:** Read an age-appropriate A2 fiction/nonfiction text on an outdoor adventure independently and share two details and one reason for reading enjoyment.  
-**PBD evidence:** Individual reading log: two accurate details and one personal response; observe independent reading.
+**Learning objective:** Read the PB pp.44–47 story independently, identify its main idea and order four events, then discuss the story's message about protecting wildlife.  
+**PBD evidence:** An independently read story response with four ordered events (Reading 3.3.1), plus the supported main idea and one environmental message (Reading 3.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.76 Warm-up: Name five and introduce the story theme.  
+**Pupils:** Name five related objects or actions and predict one story event.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce outdoor adventures, feelings and experiences and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Narrative tenses review, e.g. past simple, past continuous.  
-**Pupils:** Predict the text from adventure scene cards; highlight two useful clues or words.
+**Teacher:** Guide PB p.44 Activity 1/TB pp.76–77; allow pupils quiet independent reading before discussing gist.  
+**Pupils:** Read the adventure story independently and name its main idea.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide the A2 text referenced in the RPT or an approved equivalent; guide independent reading time without supplying answers.  
-**Pupils:** Read independently, note two significant details and prepare one sentence explaining interest or enjoyment.
+**Teacher:** Follow TB p.78 Activities 2–3: check detailed comprehension and ask pupils to order major events.  
+**Pupils:** Answer story comprehension questions and sequence four principal events.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to an outdoor adventure. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Discuss the optional alternative-ending video only if the approved video is actually available; use the printed story otherwise.  
+**Pupils:** Compare one possible ending with the read story and discuss the importance of wildlife protection.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess independent reading, four-event order and one text-supported message; correct an unsupported answer.  
+**Pupils:** Show where two events occur in the story and revise one detail after feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.78 Activity 4 for a discussion of responsibility and reporting suspicious wildlife activity.  
+**Pupils:** Explain one safe, responsible action people can take to protect wildlife.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

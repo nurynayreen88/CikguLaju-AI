@@ -7,32 +7,32 @@
 **Language focus:** Present perfect questions (e.g. Have you ever visited Tokyo? [Yes, I have. / No, I haven’t.])  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.38; TB pp.66–67; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Respond correctly to 4 longer supported listening questions related to an outdoor adventure.  
-**PBD evidence:** Four question-response pairs showing understanding of complex supported questions.
+**Learning objective:** Listen to PB p.38 camping dialogue, identify four supported questions about adventure experiences and give intelligible answers to each.  
+**PBD evidence:** Correct understanding and answers for four heard adventure questions (Listening 1.2.5), plus two clear personal experience details (Speaking 2.1.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use TB p.66 Camping experiences warm-up to elicit what pupils have and have not done.  
+**Pupils:** Share one actual camping or outdoor experience using a clear sentence.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach outdoor adventures, feelings and experiences; display adventure scene cards and ask pupils to predict what they may hear. Emphasise the language focus: Present perfect questions (e.g. Have you ever visited Tokyo? [Yes, I have. / No, I haven’t.]).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.66 Vocabulary and PB p.38 Activity 1 to introduce the dialogue; model one question and suitable answer.  
+**Pupils:** Read/listen to the dialogue and underline the questions asked about experiences.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the approved listening passage and ask four multi-part but age-appropriate oral questions.  
-**Pupils:** Listen, select the meaning of each question and provide four appropriate responses.
+**Teacher:** Use a verified source recording or accurate teacher reading of the printed PB p.38 dialogue; pause for the four target question forms.  
+**Pupils:** Listen, recognise four supported questions, and practise brief sensible replies to each.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about an outdoor adventure, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Guide PB p.38 Activities 2–3 (TB pp.66–67): pairs create one extra Have you ever...? question and discuss.  
+**Pupils:** Prepare and ask four experience questions, including one original question, and answer a partner.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check each pupil's response to four spoken questions; support extra repetition for pupils who need it.  
+**Pupils:** Answer four questions and correct one inaccurate response after feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use TB p.67 Extension to review asking and answering about camping.  
+**Pupils:** Ask one new adventure question and give a clear affirmative or negative answer.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

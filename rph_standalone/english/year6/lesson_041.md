@@ -7,32 +7,32 @@
 **Language focus:** Past tenses review  
 **Duration:** 60 minutes  
 **Materials:** Workbook page 32 activity 2 (optional); teacher-prepared picture story worksheets A and B  
-**Learning objective:** Narrate a short event about an outdoor adventure with a clear sequence of 3 events and an appropriate ending.  
-**PBD evidence:** Three ordered events and a clear concluding sentence in an intelligible narrative.
+**Learning objective:** Plan and narrate two picture-based stories using SOW worksheets A and B, listen to a partner's story, and retell it with three changed details.  
+**PBD evidence:** A clear three-event oral story (Speaking 2.3.1), partner listening notes and three accurate changes on a retelling (Listening 1.2.3).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show two separate picture-story sets and ask pupils what a story needs.  
+**Pupils:** Name one setting and action for each possible story.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Which adventure would you try and why?”, drawing on Past tenses review.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Display the large pictures, ask for three words per picture, and guide pairs to sort the images into two stories.  
+**Pupils:** Record useful vocabulary and arrange the pictures into two logical sequences.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide three sequential picture prompts and model time connectives from the lesson.  
-**Pupils:** Narrate three linked events in order; add one descriptive detail and an ending.
+**Teacher:** Distribute one SOW worksheet A and B to each pair; rehearse picture-based oral storytelling and active listening.  
+**Pupils:** Tell the story shown on the assigned sheet while the listener notes three key events.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task. Incorporate only the Workbook page actually cited in the RPT, after checking printed instructions.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail. Complete the relevant Workbook task from the cited page, if assigned.
+**Teacher:** Swap worksheets; model changing at least three details without losing the original sequence.  
+**Pupils:** Retell a partner's story using three different details and respond to one listening question.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check clear sequence, understandable speech and three listened details; provide supportive feedback.  
+**Pupils:** Narrate three events, identify one detail heard and improve one storytelling sentence.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask which of the two picture stories pupils prefer and why.  
+**Pupils:** State a preference with one reason and offer supportive feedback to a partner.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

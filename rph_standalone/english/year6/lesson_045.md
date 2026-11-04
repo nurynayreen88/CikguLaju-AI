@@ -7,32 +7,32 @@
 **Language focus:** Present perfect review  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.43; TB pp.74–75; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about an outdoor adventure with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Identify four specific details from a PB p.43 job-application interview and explain why judging applicants from pictures alone can be misleading.  
+**PBD evidence:** Four accurate heard interview facts and one corrected prediction (Listening 1.2.2/1.3.1), with evidence from the actual interview rather than appearance.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.74 Warm-up: What can we do? to activate skills needed at an adventure camp.  
+**Pupils:** Suggest one useful job skill and explain it briefly.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach outdoor adventures, feelings and experiences; display adventure scene cards and ask pupils to predict what they may hear. Emphasise the language focus: Present perfect review.  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow PB p.43 Activities 1–2/TB p.74: read the job advert and inspect pictures of applicants.  
+**Pupils:** Infer two words from the job advert and predict which applicant suits the job.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use the official interview recording only if verified, or an approved accurate reading of TB p.74 Activity 3.  
+**Pupils:** Listen to the interview and record four specific facts about the applicants' experience or skills.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about an outdoor adventure, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.75 Activity 4: discuss the interview and whether predictions from pictures were fair.  
+**Pupils:** Compare predictions with four heard facts and discuss why appearance alone is unreliable.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess four details and one evidence-based correction to an initial judgement; give feedback on listening support.  
+**Pupils:** Identify a fact that changed their opinion and correct one listened answer.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.75 Cooler: Hiring a new teacher, using role-play only where time permits.  
+**Pupils:** State one fair criterion for choosing an applicant and explain why it matters.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

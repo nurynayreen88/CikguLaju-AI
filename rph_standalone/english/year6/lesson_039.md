@@ -7,32 +7,32 @@
 **Language focus:** Past simple (e.g. I went skiing) & present perfect (e.g. the best I’ve ever done)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.41; TB p.70  
-**Learning objective:** Produce, check and improve a draft of two paragraphs on an outdoor adventure, making at least two meaningful revisions.  
-**PBD evidence:** Plan, two-paragraph draft and two identifiable improvements.
+**Learning objective:** Use a birthday talk and PB p.41 mind-map model to plan and draft a short adventure or memorable-day text, revising past-tense choices after teacher feedback.  
+**PBD evidence:** A completed where/what/why/opinion mind map and an intelligible first draft (Writing 4.3.3), with two specific feedback points to revisit in Lesson 44 (Writing 4.2.3).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review four adventure words and ask pupils to recall an enjoyable past event.  
+**Pupils:** Name one memorable day and one action they did.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “Which adventure would you try and why?”. Highlight useful language: Past simple (e.g. I went skiing) & present perfect (e.g. the best I’ve ever done).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to an outdoor adventure.
+**Teacher:** Give a brief birthday-event talk; model the SOW mind map headings Where? What? Why? Opinion?  
+**Pupils:** Listen to the teacher's birthday account, copy the map and add one note per heading.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate how to plan and draft two related paragraphs and revise ideas for clarity.  
-**Pupils:** Create a two-paragraph first draft, then highlight two revisions addressing clarity or organisation.
+**Teacher:** Follow PB p.41 Activity 2 and TB p.70: guide picture-based planning and comparison of notes.  
+**Pupils:** Create a second mind map using the textbook pictures and organise relevant events.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow PB p.41 Activity 3; pupils draft their own short adventure account using the writing-task sheet.  
+**Pupils:** Use the map to write a first draft with past simple, present perfect where appropriate, and linking words.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Collect the draft and mark a few specific grammar, punctuation or cohesion improvements using a correction code.  
+**Pupils:** Underline two feedback targets without automatically rewriting the full draft.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use a TB post-lesson game to recap a time or event expression.  
+**Pupils:** Read one accurate sentence from the first draft and state a revision goal for Lesson 44.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

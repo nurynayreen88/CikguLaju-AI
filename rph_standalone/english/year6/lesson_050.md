@@ -7,32 +7,32 @@
 **Language focus:** Present perfect with for (e.g. I’ve been a pilot for 12 years) and since (e.g. I’ve worked here since 2001)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.50; TB pp.82–83  
-**Learning objective:** Write a detailed a job profile containing at least 5 relevant facts about a person or group linked to different occupations.  
-**PBD evidence:** Profile with at least 5 pertinent facts, appropriate language, punctuation and 1 edit.
+**Learning objective:** Skim four Cool Jobs profiles in PB p.50, complete four accurate gap-fill facts and write one new gap-fill clue for each person.  
+**PBD evidence:** Skimming table with four supported professional details (Reading 3.2.2) and four clear teacher-modelled sentence gaps (Writing 4.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show occupation picture cards and ask: “What does a person in this job do?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Ask pupils to name unusual jobs learned in Lesson 49 and explain one interesting choice.  
+**Pupils:** Recall one occupation and give a short reason for their choice.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “What does a person in this job do?”. Highlight useful language: Present perfect with for (e.g. I’ve been a pilot for 12 years) and since (e.g. I’ve worked here….  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to different occupations.
+**Teacher:** Follow TB p.82 Learning to Learn and PB p.50 Activity 1: model skim reading for a person's job and key fact.  
+**Pupils:** Locate each of four people in the text and complete their basic information table.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited Pupil’s Book to elicit personal or interview information; model a structured person-profile plan.  
-**Pupils:** Plan and write 5–7 relevant personal details in clear sentences and connect them logically.
+**Teacher:** Give the SOW four gapped sentences about Adela, Tyler, Jill and Derek and model how to infer the missing words.  
+**Pupils:** Fill four missing words using the original job profiles and check each answer from the text.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Ask pupils to write one extra gap-fill sentence per person and exchange their worksheets.  
+**Pupils:** Create four new readable gaps about the people, then complete a partner's clues accurately.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess four supported original gaps, four pupil-created questions and one correction to writing clarity.  
+**Pupils:** Show evidence for one answer and revise one unclear clue after feedback.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What does a person in this job do?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow PB p.50 Activity 2 without reopening the text to review remembered profile facts.  
+**Pupils:** Recall two accurate job facts and explain one from memory.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
