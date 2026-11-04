@@ -4,35 +4,35 @@
 **RPT:** 2027, Lesson 32, M08 (week indicative only)  
 **Main CS/LS:** PILIHAN GURU (SOW)  
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
-**Language focus:** Review 1: vocabulary, verb-form choices, used to exchanges and short-text completion (Units 1–2)  
+**Language focus:** Units 1–2 Review 1: vocabulary, verbs, used to and short text  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Year 6 Pupil's Book pp.32–33; Teacher's Book printed pp.58–59; answer-check and individual self-assessment. No separate unverified audio assigned.  
-**Learning objective:** Complete the printed Units 1–2 Review 1 tasks on Pupil's Book pp.32–33 with at least four accurate responses and an explained correction.  
-**PBD evidence:** Four correct source-task answers, one partner question-and-answer exchange, and one justified correction.  
+**Materials:** Academy Stars Y6 PB pp.32–33; TB pp.58–59; self-assessment. No unverified audio.  
+**Learning objective:** Answer four PB Review 1 items accurately and justify one correction.  
+**PBD evidence:** Four accurate PB answers, one pair question/answer and one corrected response.  
 
 ## Set induction (5 minutes)
-**Teacher:** Recall selected vocabulary from Units 1–2 using two visual prompts before opening the printed Review 1 page.  
-**Pupils:** Name two review words or phrases and predict the area they need to practise.
+**Teacher:** Elicit Unit 1–2 vocabulary using two picture clues.  
+**Pupils:** Recall two words and name a review target.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Use PB p.32 Review 1 word-definition task and contextual verb-form task; model one completed example.  
-**Pupils:** Complete the word clues and verb-form items individually before checking a sample answer.
+**Teacher:** Guide PB p.32 word-definition and verb-form tasks; model one answer.  
+**Pupils:** Complete the printed review items and compare answers.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Follow TB pp.58–59 for PB pp.32–33 pair questions about Bill and Anna's past routines, then guide the correct-word sentence task.  
-**Pupils:** Ask and answer questions in pairs; complete the book's sentence choices with evidence from context.
+**Teacher:** Follow TB pp.58–59 for PB pair questions about Bill and Anna's past routines and the correct-word task.  
+**Pupils:** Ask and answer in pairs, then choose words to complete sentences.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Guide the short story word-selection task in Review 1; require an explanation for one choice and a unit self-assessment.  
-**Pupils:** Complete the story with words from the box, explain one choice, and identify a review need.
+**Teacher:** Guide PB p.33 short-story word selection and an individual self-check.  
+**Pupils:** Complete the story, explain one word choice and note a gap.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check four selected Review 1 responses and one pair exchange; record the relevant learning evidence after the teacher selects standards.  
-**Pupils:** Show marked book responses, revise one answer and note why the correction is better.
+**Teacher:** Check four PB answers and one pair exchange; show a correction.  
+**Pupils:** Correct one answer and explain the improvement.
 
 ## Closure (4 minutes)
-**Teacher:** Review one vocabulary or grammar error from the source tasks and ask for an individual improvement target.  
-**Pupils:** State a corrected answer and a next-step learning goal.
+**Teacher:** Recap one accurate Unit 1–2 word or form and collect a practice target.  
+**Pupils:** State one correction and a next step.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
