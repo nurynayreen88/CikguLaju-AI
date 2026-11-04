@@ -1,0 +1,34 @@
+name: English full 960-RPH inventory and 800-SOW text quality audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/audit_english_800_text_quality_20261104.py'
+      - '.github/workflows/english-full-rph-content-audit-20261104.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  full-text-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit all 960 English source files and source-linked 800 SOW entries
+        run: |
+          python -m py_compile tools/audit_english_800_text_quality_20261104.py
+          python tools/audit_english_800_text_quality_20261104.py --strict
+      - name: Verify published SOW source ledger and all 800 Word/PDF data rows
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y2_y6_official_sow_index.py' -v
+          python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
+      - name: Preserve per-Lesson audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-960-rph-800-sow-full-content-audit
+          path: output/english_full_rph_text_audit_20261104.json
+          retention-days: 14
