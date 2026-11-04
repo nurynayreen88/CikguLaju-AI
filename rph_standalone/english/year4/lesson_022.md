@@ -3,7 +3,7 @@
 **Topic:** My Week  
 **Main SP:** Listening 1.2.5  
 **Complementary SP:** Listening 1.2.3  
-**References:** SB pp.16–17 Activity 1; Track 22 (KPM SOW; CD1 designation requires independent TB/audio verification); sentence strips  
+**References:** SB pp.16–17 Activity 1; TB p.34 Activity 1 — Class CD1 Track 22 (printed source; recorded speech and Telegram delivery remain unverified); sentence strips  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
@@ -11,8 +11,8 @@
 **Pupils:** Recall activity words in a vocabulary game.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Replay Track 22; pupils listen for why the girls enter the wrong classroom.
-**Pupils:** Listen to Track 22 for why the girls enter the wrong classroom.
+**Teacher:** Replay Class CD1 Track 22; pupils listen for why the girls enter the wrong classroom.
+**Pupils:** Listen to Class CD1 Track 22 for why the girls enter the wrong classroom.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Ask how the girls feel and whether the problem is solved; pupils respond to supported questions.

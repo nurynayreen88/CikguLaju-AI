@@ -4,7 +4,7 @@
 **Complementary SP:** Writing 4.1.2  
 **Topic:** Where are you from?  
 **References:** SB/TB pp.22–23 Grammar Box and Activities 3–4  
-**Audio:** Tracks 12 (Activity 3) and 13 (Activity 4) as printed in KPM SOW; CD1 designation in draft remains pending independent TB/audio verification  
+**Audio:** Class CD1 Track 12 (Activity 3) and Class CD1 Track 13 (Activity 4), as printed in Teacher's Book p.23; recorded speech and Telegram delivery remain unverified  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
@@ -16,8 +16,8 @@
 **Pupils:** Spell target adverbs and write them legibly in cursive.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow Activity 3 with Track 12 and Activity 4 with Track 13; pupils complete the book tasks.
-**Pupils:** Complete Activities 3 and 4 while listening to Tracks 12 and 13.
+**Teacher:** Follow Activity 3 using Class CD1 Track 12 and Activity 4 using Class CD1 Track 13; pupils complete the book tasks.
+**Pupils:** Complete Activities 3 and 4 while listening to Class CD1 Tracks 12 and 13.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Provide a sentence frame with an adverb of frequency, then ask pupils to write at least two cursive sentences and compare their routines in pairs.

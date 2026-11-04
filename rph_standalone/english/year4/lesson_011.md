@@ -3,8 +3,8 @@
 **Main SP:** 1.2.3  
 **Complementary SP:** Listening 1.1.1  
 **Topic:** Where are you from?  
-**References:** SB pp.12–13 story; TB Phonics 1 p.98 Activities 1–2  
-**Audio:** Track 16 (KPM SOW; CD1 designation requires independent TB/audio verification)  
+**References:** SB pp.12–13 story; TB p.28 Before reading (Class CD1 Track 16); TB Phonics 1 p.98 Activities 1–2  
+**Audio:** Class CD1 Track 16 (printed TB p.28 Before reading); recorded speech and Telegram delivery remain unverified  
 **Duration:** 60 minutes
 
 ## Set induction (10 minutes)
@@ -12,8 +12,8 @@
 **Pupils:** Describe a pictured action in third-person present simple.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Ask pupils to predict the order of four story pictures, then play Track 16 to check their sequence.
-**Pupils:** Predict the sequence of four pictures and listen to Track 16 to order them.
+**Teacher:** Ask pupils to predict the order of four story pictures, then play Class CD1 Track 16 to check their sequence.
+**Pupils:** Predict the sequence of four pictures and listen to Class CD1 Track 16 to order them.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Replay story, discuss characters and complete TB Phonics 1 Activities 1–2.
