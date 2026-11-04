@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **memperagakan sekurang-kurangnya dua perbuatan menghormati amalan atau kepercayaan jiran** dan menambah baik respons selepas maklum balas (SP 1.5).
 
+**Kriteria kejayaan:** Dua tindakan hormat yang diperagakan dan satu penambahbaikan selepas maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

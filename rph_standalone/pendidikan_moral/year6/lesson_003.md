@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **melaksanakan dua tindakan menghormati kepelbagaian kepercayaan demi kesejahteraan negara** dalam simulasi ruang awam, kemudian membetulkan satu tindakan selepas maklum balas (SP 1.5).
 
+**Kriteria kejayaan:** Dua tindakan hormat yang diperagakan dan satu penambahbaikan selepas maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

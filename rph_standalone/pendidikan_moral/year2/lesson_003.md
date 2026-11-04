@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **memperagakan dua tindakan patuh** yang sesuai untuk keadaan keluarga (SP 1.5) dan menerangkan sebab tindakan tersebut menghormati ahli keluarga. Evidens: dua tindakan jelas, bahasa berhemah, dan satu refleksi.
 
+**Kriteria kejayaan:** Dua tindakan patuh yang boleh diamalkan dan satu refleksi kendiri.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

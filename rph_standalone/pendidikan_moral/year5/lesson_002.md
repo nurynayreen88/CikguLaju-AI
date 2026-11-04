@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menghuraikan dua kepentingan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni** (SP 1.3) dan **mengekspresikan satu perasaan dengan sebab** terhadap kerjasama pelbagai komuniti (SP 1.4).
 
+**Kriteria kejayaan:** Dua kepentingan bersebab bagi SP 1.3 dan satu ayat perasaan bersebab bagi SP 1.4.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

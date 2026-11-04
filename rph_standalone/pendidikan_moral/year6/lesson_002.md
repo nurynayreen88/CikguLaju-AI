@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menghuraikan dua kepentingan amalan kepercayaan kepada Tuhan untuk kesejahteraan negara** (SP 1.3), dan **mengekspresikan satu perasaan yang disertai sebab** terhadap keharmonian negara (SP 1.4).
 
+**Kriteria kejayaan:** Dua kepentingan bersebab bagi SP 1.3 dan satu ayat perasaan bersebab bagi SP 1.4.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

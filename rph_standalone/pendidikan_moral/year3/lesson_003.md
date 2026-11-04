@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **mempraktikkan dua perlakuan menghormati dan mengurus perayaan warga sekolah** dalam simulasi pameran serta membuat satu penambahbaikan selepas maklum balas (SP 1.5).
 
+**Kriteria kejayaan:** Dua tindakan hormat yang diperagakan dan satu penambahbaikan selepas maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menjelaskan satu kaitan** antara mematuhi ajaran agama atau kepercayaan dan sikap taat atau hormat kepada keluarga (SP 1.3), serta **menyatakan satu perasaan beserta sebab** apabila melaksanakannya (SP 1.4). Evidens: satu hubungan tindakan–sebab dan satu ayat perasaan yang relevan.
 
+**Kriteria kejayaan:** Satu kaitan tindakan dengan sikap menghormati keluarga, serta satu ayat perasaan dengan sebab.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

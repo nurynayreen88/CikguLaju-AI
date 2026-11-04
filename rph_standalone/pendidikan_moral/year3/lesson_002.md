@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menilai dua kepentingan menghormati kepelbagaian perayaan sekolah** dengan sebab (SP 1.3) dan **mengekspresikan satu perasaan berserta sebab** ketika perayaan orang lain dihormati (SP 1.4).
 
+**Kriteria kejayaan:** Dua kepentingan bersebab bagi SP 1.3 dan satu ayat perasaan bersebab bagi SP 1.4.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

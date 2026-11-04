@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menghuraikan dua kepentingan menghormati amalan agama atau kepercayaan jiran** (SP 1.3) serta **menyatakan satu perasaan dan sebab** apabila amalan jiran dihormati (SP 1.4).
 
+**Kriteria kejayaan:** Dua kepentingan bersebab bagi SP 1.3 dan satu ayat perasaan bersebab bagi SP 1.4.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

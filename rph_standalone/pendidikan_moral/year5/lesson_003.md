@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **mempraktikkan dua tindakan menerima dan menghormati kepelbagaian kepercayaan** semasa simulasi khidmat masyarakat serta mencadangkan satu langkah pengurusan yang adil (SP 1.5).
 
+**Kriteria kejayaan:** Dua tindakan hormat yang diperagakan dan satu penambahbaikan selepas maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
