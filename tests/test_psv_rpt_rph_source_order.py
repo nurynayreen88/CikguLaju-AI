@@ -206,5 +206,62 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertEqual({row["Status"] for row in windows}, {"CADANGAN_MINGGU_2027"})
 
 
+    def test_year6_verified_unit8_to10_12_lesson_repair(self):
+        """Source-confirmed Unit 8–10 RPH, RPT and print HTML must agree."""
+        by_pdp = {row["PdP"]: row for row in read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")}
+        pages = {
+            "028": ("64–65", "Cucuk Sanggul Sang Puteri", "kelopak"),
+            "029": ("66–67", "Tanjak Seri Kencana", "lipatan"),
+            "030": ("68–69", "Perkembangan idea", "peta idea"),
+            "031": ("70–71", "Lakaran reka bentuk", "cerminan"),
+            "032": ("72–73", "Penghasilan karya", "daun sirih"),
+            "033": ("73–74", "Kemasan karya", "rambu"),
+            "034": ("74–75", "Dokumentasi dan apresiasi", "galeri"),
+            "035": ("76–77", "Perkembangan idea", "olahan motif"),
+            "036": ("78–79", "Lakaran reka bentuk", "susunan corak"),
+            "037": ("80–83", "Penghasilan karya", "resis"),
+            "038": ("84–85", "Kemasan produk", "velkro"),
+            "039": ("86–87", "Dokumentasi dan apresiasi", "galeri"),
+        }
+        html = (PSV / "RPT_PSV_Tahun_6_2027_DRAF.html").read_text(encoding="utf-8")
+        activities = []
+        for pdp, (page, activity_title, specific_term) in pages.items():
+            with self.subTest(pdp=pdp):
+                row = by_pdp[pdp]
+                self.assertEqual(row["Tajuk/aktiviti PdP"], activity_title)
+                self.assertEqual(row["Rujukan BT ms (RPT 2026)"], "Buku teks ms " + page)
+                self.assertEqual(row["Status"], "DRAF_SEMAK")
+                rph = (ROOT / row["RPH"]).read_text(encoding="utf-8")
+                self.assertIn("ms " + page, rph)
+                self.assertIn("**Aktiviti/Tajuk:** " + activity_title, rph)
+                self.assertIn("**SK:** " + row["SK"], rph)
+                self.assertIn("**SP:** " + row["SP"], rph)
+                obj = re.search(r"(?m)^Murid dapat (.+?)\\. Kriteria kejayaan: (.+?)\\.$", rph)
+                self.assertIsNotNone(obj)
+                self.assertEqual(row["Objektif"], "Murid dapat " + obj.group(1))
+                self.assertEqual(row["Evidens PBD"], obj.group(2))
+                actual_activity = re.search(r"\\*\\*Aktiviti 2[^\\n]*\\*\\* ([^\\n]+)", rph)
+                self.assertIsNotNone(actual_activity)
+                self.assertIn(specific_term, actual_activity.group(1).lower())
+                activities.append(actual_activity.group(1))
+                line = next(line for line in html.splitlines() if "<td>" + pdp + "</td>" in line)
+                self.assertIn("Buku teks ms " + page, line)
+        self.assertEqual(len(activities), len(set(activities)))
+
+    def test_year6_other_18_staging_criteria_are_measurable(self):
+        """Earlier source drafts now name their concrete RPT PBD evidence."""
+        by_pdp = {row["PdP"]: row for row in read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")}
+        pdps = (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 24, 25, 26, 27, 40, 41, 42)
+        for number in pdps:
+            pdp = f"{number:03d}"
+            with self.subTest(pdp=pdp):
+                row = by_pdp[pdp]
+                rph = (ROOT / row["RPH"]).read_text(encoding="utf-8")
+                expected = row["Evidens PBD"].rstrip(".")
+                self.assertIn("Kriteria kejayaan: " + expected + ".", rph)
+                self.assertNotIn("hasil kerja individu atau kumpulan memperlihatkan evidens", rph)
+                self.assertIn("**Status:** DRAF", rph)
+
+
 if __name__ == "__main__":
     unittest.main()
