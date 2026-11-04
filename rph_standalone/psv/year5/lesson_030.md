@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 030
+**Status:** DRAF SEMAK  
+**Unit:** 8 — Bingkai Gambarku  
+**Fokus:** Penerokaan visual | **Teknik:** Titisan  
+**SK:** 1.1; 2.1  
+**SP:** 1.1.2; 2.1.5  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 66–67 (unit ms 66-73)  
+**BBM:** cat air, pipet plastik, kertas corak, templat bingkai  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat menyatakan dua bahasa seni visual yang hadir pada karya Bingkai Gambarku serta meneroka dua media. Evidens: dua percubaan media dan dua istilah bahasa seni.
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Titisan — Bingkai Gambarku
-**Unit rujukan 2026:** Unit 8 — Bingkai Gambarku  
-**Fokus:** Lakar dan pilih media  
-**SK:** 2.1; 3.1  
-**SP:** 2.1.5; 3.1.2  
-**Teknik:** titisan warna  
-**Bahasa seni visual:** warna, ritma, jalinan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** penitis plastik, warna cair, kertas
-
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Titik Hujan dan memilih satu lakaran berdasarkan warna, ritma, jalinan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Titik Hujan. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal bingkai gambar dengan corak titisan, menguji titisan warna pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Bingkai Gambarku; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan BT ms 66–67 dan menjelaskan arah aliran titisan, kepelbagaian corak dan reka bentuk bingkai; murid menunjukkan contoh unsur seni pada imej.
+**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Uji titisan warna pada kertas condong, banding dua arah aliran dan pilih susunan motif. Dua sampel dibandingkan dan dicatat.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media dan dua istilah bahasa seni dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.

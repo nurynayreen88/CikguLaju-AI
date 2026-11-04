@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 031
+**Status:** DRAF SEMAK  
+**Unit:** 8 — Bingkai Gambarku  
+**Fokus:** Percubaan teknik dan lakaran | **Teknik:** Titisan  
+**SK:** 2.1; 3.1  
+**SP:** 2.1.5; 3.1.3  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 68–69 (unit ms 66-73)  
+**BBM:** cat air, pipet plastik, kertas corak, templat bingkai  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat menghasilkan dua sampel dan satu lakaran pilihan untuk Bingkai Gambarku. Evidens: dua sampel serta lakaran berlabel.
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Titisan — Bingkai Gambarku
-**Unit rujukan 2026:** Unit 8 — Bingkai Gambarku  
-**Fokus:** Hasilkan karya  
-**SK:** 3.1  
-**SP:** 3.1.2  
-**Teknik:** titisan warna  
-**Bahasa seni visual:** warna, ritma, jalinan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** penitis plastik, warna cair, kertas
-
-## Objektif pembelajaran
-Murid dapat menghasilkan bingkai gambar dengan corak titisan dengan titisan warna, sekurang-kurangnya dua aspek warna, ritma, jalinan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Titik Hujan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat penitis plastik, warna cair, kertas. Murid menyediakan bahan serta menetapkan kriteria karya.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan bingkai gambar dengan corak titisan mengikut lakaran menggunakan titisan warna, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri warna, ritma, jalinan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Bingkai Gambarku; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru membuat demonstrasi media cat air, pipet plastik, kertas corak, templat bingkai; murid membanding dua kemungkinan teknik serta membuat lakaran.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar bentuk akhir dan meneroka dua kaedah: Uji titisan warna pada kertas condong, banding dua arah aliran dan pilih susunan motif. Murid memberi sebab pilihan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua sampel serta lakaran berlabel dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
