@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 014
 
 **ID:** BM4-P014 | **RPT 2027:** M04 | **Unit:** 3 — Masyarakat Berilmu
-**Tajuk rujukan RPT:** Mari Membaca
+**Tajuk aktiviti:** Mari Membaca + PKJR
 **SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
 **SP:** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera.
 **Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 14** (bukan m/s 4); cerita e-buku tentang masyarakat rama-rama. **BA:** Belum disahkan. **PKJR:** Penanda RPT belum disahkan terhadap modul.
