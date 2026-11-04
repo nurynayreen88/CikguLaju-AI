@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Serang dan Tahan" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik kemahiran permainan:** Guru tunjuk pegangan/alatan, arah hantaran dan posisi badan sebelum memberi isyarat mula. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.4.6.
+**Aktiviti 1 — Teknik khusus:** Guru menggolekkan bola secara perlahan dan menunjukkan cara merendahkan pusat graviti, menghadapkan badan serta menggunakan tapak kaki atau tangan yang sesuai untuk menghentikan bola mengikut tugasan. Murid melakukan percubaan berperingkat pada jarak dekat.
 
-**Aktiviti 2 — Amali khusus:** Murid melakukan latihan pasangan dengan bola lembut: tindakan asas diulang pada jarak dekat, kemudian tambah pergerakan. Kumpulan kecil menggunakan kemahiran dalam permainan ubah suai tanpa sentuhan; rakan merekod teknik dan keputusan taktikal.
+**Aktiviti 2 — Aplikasi bertahap:** Pasangan bergilir menggolek dan menyerkap bola di antara dua kon. Murid mencuba dua kelajuan perlahan yang dibenarkan; rakan menilai kedudukan badan, kawalan bola selepas dihentikan dan sebab posisi tersebut lebih stabil.
 
-**Pengukuhan/PBD:** Guru merekod kawalan alatan/bola, posisi, ketepatan keputusan melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.3.2. Guru turut mencatat amalan SP 5.4.2.
+**Pengukuhan/PBD:** Senarai semak dua cubaan menyerkap bola bergerak: bola berhenti dalam zon kawalan, postur stabil, penjelasan ringkas kaitan postur dan gerakan objek; catat kerjasama SP 5.4.2.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** bola lembut, kon, penanda sasaran, alatan permainan jika relevan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan zon selamat, jarak antara pasangan dan larangan kontak badan berbahaya.
+**BBM:** Bola lembut sederhana besar, kon laluan, kad teknik menyerkap bola; buku teks PdP 013.
+**Keselamatan/inklusif:** Golek bola hanya ke arah pasangan yang bersedia; jarakkan stesen dan elak bola keras atau sentuhan fizikal.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

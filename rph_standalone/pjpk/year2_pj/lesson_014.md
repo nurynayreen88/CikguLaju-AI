@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Voli Belon" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik kemahiran permainan:** Guru tunjuk pegangan/alatan, arah hantaran dan posisi badan sebelum memberi isyarat mula. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.4.7.
+**Aktiviti 1 — Teknik khusus:** Guru menunjukkan cara memegang raket muka luas, membuka ruang lengan dan memukul belon perlahan ke atas dan ke hadapan. Murid mencuba hayunan tanpa belon dahulu sambil rakan menandakan kawasan pukulan selamat.
 
-**Aktiviti 2 — Amali khusus:** Murid melakukan latihan pasangan dengan bola lembut: tindakan asas diulang pada jarak dekat, kemudian tambah pergerakan. Kumpulan kecil menggunakan kemahiran dalam permainan ubah suai tanpa sentuhan; rakan merekod teknik dan keputusan taktikal.
+**Aktiviti 2 — Aplikasi bertahap:** Murid memukul belon menggunakan raket plastik ringan melepasi tali rendah atau ke ruang sasaran dalam dua cubaan. Pasangan mencatat kawalan arah, pergerakan kaki dan cara murid melaras daya pukulan tanpa berebut ruang.
 
-**Pengukuhan/PBD:** Guru merekod kawalan alatan/bola, posisi, ketepatan keputusan melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.3.2. Guru turut mencatat amalan SP 5.4.1.
+**Pengukuhan/PBD:** Guru memerhati dua pukulan belon ke atas/hadapan dengan alat muka luas, postur dan arah hasil pukulan; murid menerangkan mengapa daya pukulan perlu dilaras serta menunjukkan kerjasama SP 5.4.1.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** bola lembut, kon, penanda sasaran, alatan permainan jika relevan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan zon selamat, jarak antara pasangan dan larangan kontak badan berbahaya.
+**BBM:** Belon, raket plastik ringan atau pemukul muka luas, tali rendah, kon sasaran; buku teks PdP 014.
+**Keselamatan/inklusif:** Jarakkan murid sekurang-kurangnya satu hayunan raket, gunakan alat ringan dan tidak memukul ke arah muka.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

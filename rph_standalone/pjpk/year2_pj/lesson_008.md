@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Lambung dan Tangkap" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik pengukuran:** Guru sediakan alat ukur yang ditentukur serta kad rekod individu; terangkan langkah membaca skala. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.4.1.
+**Aktiviti 1 — Teknik khusus:** Guru menunjukkan posisi kaki stabil, pandangan ke arah bola, lambungan ke atas dan tangan bersedia menangkap. Murid memerhati kemuncak lambungan menggunakan belon/bola lembut, kemudian cuba lambung dan tangkap sendiri secara berperingkat.
 
-**Aktiviti 2 — Amali khusus:** Murid mengambil dan mencatat ukuran sendiri di ruang tertutup; rakan tidak membaca rekod peribadi. Guru menyemak ketepatan kaedah ukur dan membimbing tafsiran individu tanpa menyebut keputusan di hadapan kelas.
+**Aktiviti 2 — Aplikasi bertahap:** Murid melambung objek ke atas setinggi paras yang terkawal dan menangkap semula sekurang-kurangnya dua kali. Seterusnya pasangan bergilir melambung lembut; rakan menilai mata mengikuti objek, tangan menyambut dan penyesuaian daya agar objek tidak terlepas.
 
-**Pengukuhan/PBD:** Guru merekod kaedah ukur tepat, rekod sulit, tafsiran berhemah melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.3.1. Guru turut mencatat amalan SP 5.4.3.
+**Pengukuhan/PBD:** Senarai semak: murid melakukan dua cubaan melambung dan menangkap objek dengan kawalan, menjelaskan kaitan daya lambungan dengan ketinggian pergerakan objek serta menunjukkan kerjasama SP 5.4.3.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** stadiometer atau pita ukur, penimbang sesuai, kad rekod peribadi; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Jaga privasi berat dan tinggi; elak perbandingan bentuk badan atau komen pemakanan individu.
+**BBM:** Belon atau bola busa ringan, gelung penanda kawasan, kad gambar lambungan dan tangkapan; buku teks PdP 008.
+**Keselamatan/inklusif:** Gunakan objek ringan dan ruang berjarak; tidak melambung ke arah muka rakan atau kawasan kumpulan lain.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

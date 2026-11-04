@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Senaman Ceria" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik lompatan:** Guru tandakan kawasan lonjakan dan pendaratan, tunjuk posisi lutut serta lengan. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.2.1.
+**Aktiviti 1 — Teknik khusus:** Guru menyediakan empat stesen lokomotor: berjalan/berlari terkawal, mencongklang atau menggelongsor, melompat sebelah kaki dan berskip. Murid cuba setiap gerak pada laluan bertanda sambil membezakan lakuan kaki dan perubahan arah; guru membimbing murid yang memerlukan pilihan gerak lebih mudah.
 
-**Aktiviti 2 — Amali khusus:** Murid berlatih fasa awalan, lonjakan dan mendarat secara berasingan sebelum menggabungkannya. Murid melakukan dua cubaan dengan pendaratan terkawal; rakan menilai arah lengan dan keseimbangan.
+**Aktiviti 2 — Aplikasi bertahap:** Dalam kumpulan kecil, murid mereka rangkaian empat lakuan lokomotor dan dua bukan lokomotor (contohnya membengkok, meregang atau memusing badan), kemudian mempersembahkan rangkaian mengikut ruang yang ditetapkan. Rakan menyemak ketepatan kategori pergerakan serta postur yang stabil.
 
-**Pengukuhan/PBD:** Guru merekod lonjakan terkawal, fleksi lutut, keseimbangan akhir melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.2.1. Guru turut mencatat amalan SP 5.2.1.
+**Pengukuhan/PBD:** Senarai semak individu: murid menunjukkan sekurang-kurangnya tiga lakuan lokomotor dan satu bukan lokomotor dengan ruang selamat serta menyatakan satu perbezaan kedua-dua jenis gerak. Rekod pemerhatian untuk pemulihan.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, tali/halangan rendah, tilam atau pasir selamat; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Halangan rendah dan zon pendaratan kosong; murid berhenti jika sakit atau hilang imbangan.
+**BBM:** Kon atau pita penanda laluan, kad gambar gerak lokomotor dan bukan lokomotor; rujukan RPT/buku teks mengikut PdP.
+**Keselamatan/inklusif:** Pastikan laluan tidak bersilang, pemanasan badan ringkas dan pilihan gerak intensiti rendah; elak pertandingan kelajuan yang menyebabkan perlanggaran.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
