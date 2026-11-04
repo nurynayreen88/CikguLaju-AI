@@ -116,7 +116,7 @@ def adapt_rows(state, rows):
     result.update({
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": "Tahun %d" % year,
-        "TAJUK": "CADANGAN CIKGULAJU (SEMAKAN GURU) — " + p["title"],
+        "TAJUK": p["title"],
         "STANDARD KANDUNGAN": p["sk"],
         "STANDARD PEMBELAJARAN": "; ".join(p["sp"]),
         "OBJEKTIF PEMBELAJARAN": p["objective"],
