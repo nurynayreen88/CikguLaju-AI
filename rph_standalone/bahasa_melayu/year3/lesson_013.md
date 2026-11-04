@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 013
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 013
 
 **ID:** BM3-P013  
 **Tema/Unit:** Kekeluargaan; U2: Kejayaan Keluarga  
@@ -9,7 +9,7 @@
 **Rujukan RPT:** BT1 m/s 11; BA m/s 11-12  
 **Bahan:** BA1 m/s 11–12 tentang keluarga dan kejayaan; buku latihan dan kad/lembaran respons.  
 **Masa cadangan:** 60 minit mengikut jadual guru.  
-**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima daripada enam kata ganti nama tepat; sesi aplikasi susulan Lesson 012.
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima daripada enam kata ganti nama tepat; sesi aplikasi susulan PdP 012.
 
 ## Set induksi (5 minit)
 **Guru:** Menunjukkan BA1 m/s 11–12 tentang keluarga dan kejayaan dan mengemukakan satu soalan pemula.
@@ -24,7 +24,7 @@
 **Murid:** Melengkapkan enam ruang dialog BA1 dan menghasilkan dua ayat dengan kata ganti nama berlainan.
 
 ## Pengukuhan / PBD (15 minit)
-**Guru:** Menyemak lima daripada enam kata ganti nama tepat; sesi aplikasi susulan Lesson 012; merekod bukti respons atau hasil bertulis.
+**Guru:** Menyemak lima daripada enam kata ganti nama tepat; sesi aplikasi susulan PdP 012; merekod bukti respons atau hasil bertulis.
 **Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)

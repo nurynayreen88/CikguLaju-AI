@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 007
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 007
 
 **ID:** BM3-P007  
 **Tema/Unit:** Kekeluargaan; U1: Keluarga Cergas  
@@ -9,7 +9,7 @@
 **Rujukan RPT:** BT1 m/s 6; BA m/s 6  
 **Bahan:** latihan Bersiar-siar di Melaka, BA1 m/s 6; buku latihan dan kad/lembaran respons.  
 **Masa cadangan:** 60 minit mengikut jadual guru.  
-**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima kata nama khas tepat; sesi susulan Lesson 005.
+**Objektif:** Pada akhir PdP, murid menunjukkan penguasaan melalui lima kata nama khas tepat; sesi susulan PdP 005.
 
 ## Set induksi (5 minit)
 **Guru:** Menunjukkan latihan Bersiar-siar di Melaka, BA1 m/s 6 dan mengemukakan satu soalan pemula.
@@ -24,7 +24,7 @@
 **Murid:** Melengkapkan lima ayat dengan kata nama khas tepat dan membandingkannya dengan kata nama am dalam BT1 m/s 6.
 
 ## Pengukuhan / PBD (15 minit)
-**Guru:** Menyemak lima kata nama khas tepat; sesi susulan Lesson 005; merekod bukti respons atau hasil bertulis.
+**Guru:** Menyemak lima kata nama khas tepat; sesi susulan PdP 005; merekod bukti respons atau hasil bertulis.
 **Murid:** Menghantar kerja, membetulkan satu kesilapan dan menerangkan pembetulan.
 
 ## Penutup (5 minit)
