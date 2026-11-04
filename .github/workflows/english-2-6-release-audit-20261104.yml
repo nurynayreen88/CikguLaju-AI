@@ -1,0 +1,42 @@
+name: English Year 2–6 — 800-Lesson release gate audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y6_standalone_runtime.py'
+      - 'tests/test_english_y6_teacher_choice_20261104.py'
+      - 'tools/audit_english_2_6_release_status_20261104.py'
+      - '.github/workflows/english-2-6-release-audit-20261104.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/english_y6_standalone_runtime.py'
+      - 'tests/test_english_y6_teacher_choice_20261104.py'
+      - 'tools/audit_english_2_6_release_status_20261104.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Audit Year6 160 SOW-matched lesson rows
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y6_teacher_choice_20261104.py' -v
+          python -m unittest discover -s tests -p 'test_english_y6_rph_runtime.py' -v
+      - name: Cross-check 800 English Year2–6 Word/PDF rows and release blockers
+        run: python tools/audit_english_2_6_release_status_20261104.py
+      - name: Existing Year2–6 native document regression
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
+          python -m unittest discover -s tests -p 'test_english_y4_y5_full_draft_preview.py' -v
+      - name: Upload 800-Lesson auditable status report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-2-6-800-lesson-release-status
+          path: output/english_2_6_release_audit_20261104.json
+          retention-days: 14
