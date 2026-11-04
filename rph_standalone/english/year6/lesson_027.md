@@ -7,32 +7,32 @@
 **Language focus:** Past tenses review (e.g. Mr. Brockbank didn’t have a lamp. He had a candle.)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.31; TB pp.56–57  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on life then and now.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read PB p.31's time-machine text for at least three specific details, ask two checking-understanding questions and explain one corrected past-tense statement.  
+**PBD evidence:** Three text-supported facts and one corrected sentence (Reading 3.2.2), plus two supported oral checking questions answered (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Lead TB p.56 Time machine warm-up by asking what happens if a modern object appears in the past.  
+**Pupils:** Predict one strange modern object Mr Brockbank might see in an old setting.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce transport, homes, past routines and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Past tenses review (e.g. Mr. Brockbank didn’t have a lamp. He had a candle.).  
-**Pupils:** Predict the text from then-and-now photographs; highlight two useful clues or words.
+**Teacher:** Follow TB p.56 Activity 1; guide reading the time-machine scene and distinguish an accurate detail from a guess.  
+**Pupils:** Identify the time setting and two objects in PB p.31, supporting each from the text.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about life then and now; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Ask pupils to write two questions using really to check their ideas; follow TB p.56 Activity 2 and check common-word spellings.  
+**Pupils:** Ask and answer questions such as 'What did Mr Brockbank really switch on?' using passage evidence.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to life then and now. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB pp.56–57 Activities 3–4; guide the rewritten text task and exchange creative ideas in groups.  
+**Pupils:** Write a revised short scene with an appropriate past-tense correction, then discuss it in a small group.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check three written reading details, two supported questions and one correct rewritten sentence.  
+**Pupils:** Show a text clue, answer one checking question and revise one inaccurate statement.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use a common error noted during discussion for a whole-class editing exercise.  
+**Pupils:** Correct a time-machine sentence and say what changed in the revised version.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
