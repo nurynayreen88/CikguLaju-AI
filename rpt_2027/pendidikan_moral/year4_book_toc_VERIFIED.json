@@ -1,0 +1,158 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 4,
+  "school_type": "SK",
+  "source_drive_file_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+  "book_pdf_page_count": 136,
+  "pdf_page_offset": 6,
+  "method": "Visual inspection of PDF table of contents; PDF page 1-based; printed page original textbook",
+  "status": "VERIFIED_TOC_START_ONLY",
+  "not_verified": [
+    "Exact lesson activity page",
+    "Page content aligned to SP",
+    "RPT 2027 weekly dates",
+    "Yearly teaching-hour allocation"
+  ],
+  "units": [
+    {
+      "unit": 1,
+      "book_unit_title": "Kepercayaan kepada Tuhan",
+      "printed_start_page": 2,
+      "printed_end_page": 9,
+      "pdf_start_page": 8,
+      "pdf_end_page": 15,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 2,
+      "book_unit_title": "Baik Hati",
+      "printed_start_page": 10,
+      "printed_end_page": 19,
+      "pdf_start_page": 16,
+      "pdf_end_page": 25,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 3,
+      "book_unit_title": "Bertanggungjawab",
+      "printed_start_page": 20,
+      "printed_end_page": 27,
+      "pdf_start_page": 26,
+      "pdf_end_page": 33,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 4,
+      "book_unit_title": "Berterima Kasih",
+      "printed_start_page": 28,
+      "printed_end_page": 37,
+      "pdf_start_page": 34,
+      "pdf_end_page": 43,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 5,
+      "book_unit_title": "Hemah Tinggi",
+      "printed_start_page": 38,
+      "printed_end_page": 45,
+      "pdf_start_page": 44,
+      "pdf_end_page": 51,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 6,
+      "book_unit_title": "Hormat",
+      "printed_start_page": 46,
+      "printed_end_page": 55,
+      "pdf_start_page": 52,
+      "pdf_end_page": 61,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 7,
+      "book_unit_title": "Kasih Sayang",
+      "printed_start_page": 56,
+      "printed_end_page": 63,
+      "pdf_start_page": 62,
+      "pdf_end_page": 69,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 8,
+      "book_unit_title": "Keadilan",
+      "printed_start_page": 64,
+      "printed_end_page": 73,
+      "pdf_start_page": 70,
+      "pdf_end_page": 79,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 9,
+      "book_unit_title": "Keberanian",
+      "printed_start_page": 74,
+      "printed_end_page": 83,
+      "pdf_start_page": 80,
+      "pdf_end_page": 89,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 10,
+      "book_unit_title": "Kejujuran",
+      "printed_start_page": 84,
+      "printed_end_page": 93,
+      "pdf_start_page": 90,
+      "pdf_end_page": 99,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 11,
+      "book_unit_title": "Kerajinan",
+      "printed_start_page": 94,
+      "printed_end_page": 101,
+      "pdf_start_page": 100,
+      "pdf_end_page": 107,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 12,
+      "book_unit_title": "Kerjasama",
+      "printed_start_page": 102,
+      "printed_end_page": 111,
+      "pdf_start_page": 108,
+      "pdf_end_page": 117,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 13,
+      "book_unit_title": "Kesederhanaan",
+      "printed_start_page": 112,
+      "printed_end_page": 121,
+      "pdf_start_page": 118,
+      "pdf_end_page": 127,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+    },
+    {
+      "unit": 14,
+      "book_unit_title": "Toleransi",
+      "printed_start_page": 122,
+      "printed_end_page": null,
+      "pdf_start_page": 128,
+      "pdf_end_page": null,
+      "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
+      "note": "End page not asserted without specific page check"
+    }
+  ]
+}

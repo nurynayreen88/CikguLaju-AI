@@ -34,7 +34,11 @@
           "text": "Mengamalkan sikap menerima, menghormati dan mengurus kepelbagaian agama atau kepercayaan dalam membentuk masyarakat harmoni."
         }
       ],
-      "scenario": "Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat"
+      "scenario": "Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat",
+      "textbook_unit_title": "Kepercayaan kepada Tuhan",
+      "textbook_printed_start_page": 2,
+      "textbook_pdf_start_page": 5,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -64,7 +68,11 @@
           "text": "Mengamalkan sikap peka terhadap keperluan dan kebajikan masyarakat."
         }
       ],
-      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir"
+      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir",
+      "textbook_unit_title": "Baik Hati",
+      "textbook_printed_start_page": 10,
+      "textbook_pdf_start_page": 13,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -94,7 +102,11 @@
           "text": "Mengamalkan sikap bertanggungjawab sebagai anggota masyarakat."
         }
       ],
-      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti"
+      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti",
+      "textbook_unit_title": "Bertanggungjawab",
+      "textbook_printed_start_page": 20,
+      "textbook_pdf_start_page": 23,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -124,7 +136,11 @@
           "text": "Mengamalkan sikap menghargai jasa dan sumbangan anggota masyarakat."
         }
       ],
-      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya"
+      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya",
+      "textbook_unit_title": "Berterima Kasih",
+      "textbook_printed_start_page": 30,
+      "textbook_pdf_start_page": 33,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -154,7 +170,11 @@
           "text": "Mengamalkan sikap beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat"
+      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat",
+      "textbook_unit_title": "Hemah Tinggi",
+      "textbook_printed_start_page": 40,
+      "textbook_pdf_start_page": 43,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -184,7 +204,11 @@
           "text": "Mengamalkan sikap menghormati kepelbagaian budaya dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat"
+      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat",
+      "textbook_unit_title": "Hormat",
+      "textbook_printed_start_page": 50,
+      "textbook_pdf_start_page": 53,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -214,7 +238,11 @@
           "text": "Mengamalkan sikap menyayangi masyarakat demi kesejahteraan bersama."
         }
       ],
-      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan"
+      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan",
+      "textbook_unit_title": "Kasih Sayang",
+      "textbook_printed_start_page": 60,
+      "textbook_pdf_start_page": 63,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -244,7 +272,11 @@
           "text": "Mengamalkan sikap adil dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama"
+      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama",
+      "textbook_unit_title": "Keadilan",
+      "textbook_printed_start_page": 70,
+      "textbook_pdf_start_page": 73,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -274,7 +306,11 @@
           "text": "Mengamalkan sikap berani dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti"
+      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti",
+      "textbook_unit_title": "Keberanian",
+      "textbook_printed_start_page": 80,
+      "textbook_pdf_start_page": 83,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -304,7 +340,11 @@
           "text": "Mengamalkan sikap jujur dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar"
+      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar",
+      "textbook_unit_title": "Kejujuran",
+      "textbook_printed_start_page": 90,
+      "textbook_pdf_start_page": 93,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -334,7 +374,11 @@
           "text": "Mengamalkan sikap rajin dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan"
+      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan",
+      "textbook_unit_title": "Kerajinan",
+      "textbook_printed_start_page": 100,
+      "textbook_pdf_start_page": 103,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -364,7 +408,11 @@
           "text": "Mengamalkan sikap bekerjasama dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir"
+      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir",
+      "textbook_unit_title": "Kerjasama",
+      "textbook_printed_start_page": 110,
+      "textbook_pdf_start_page": 113,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -394,7 +442,11 @@
           "text": "Mengamalkan sikap sederhana dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik"
+      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik",
+      "textbook_unit_title": "Kesederhanaan",
+      "textbook_printed_start_page": 120,
+      "textbook_pdf_start_page": 123,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 5,
@@ -424,7 +476,13 @@
           "text": "Mengamalkan sikap bertoleransi dalam hidup bermasyarakat."
         }
       ],
-      "scenario": "Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama"
+      "scenario": "Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama",
+      "textbook_unit_title": "Toleransi",
+      "textbook_printed_start_page": 130,
+      "textbook_pdf_start_page": 133,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     }
-  ]
+  ],
+  "textbook_page_audit": "VERIFIED_TOC_START_ONLY",
+  "textbook_page_lookup_path": "rpt_2027/pendidikan_moral/year5_book_toc_VERIFIED.json"
 }

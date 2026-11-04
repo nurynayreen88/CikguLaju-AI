@@ -34,7 +34,11 @@
           "text": "Mengamalkan sikap menerima, menghormati dan mengurus kepelbagaian perayaan warga sekolah."
         }
       ],
-      "scenario": "Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati"
+      "scenario": "Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati",
+      "textbook_unit_title": "Perayaan Warga Sekolah",
+      "textbook_printed_start_page": 1,
+      "textbook_pdf_start_page": 7,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -64,7 +68,11 @@
           "text": "Mengamalkan sikap saling membantu dalam kalangan warga sekolah."
         }
       ],
-      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas"
+      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas",
+      "textbook_unit_title": "Baik Hati Nilai Mulia",
+      "textbook_printed_start_page": 9,
+      "textbook_pdf_start_page": 15,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -94,7 +102,11 @@
           "text": "Mengamalkan sikap bertanggungjawab di sekolah."
         }
       ],
-      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas"
+      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas",
+      "textbook_unit_title": "Murid Bertanggungjawab",
+      "textbook_printed_start_page": 17,
+      "textbook_pdf_start_page": 23,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -124,7 +136,11 @@
           "text": "Mengamalkan sikap berterima kasih terhadap warga sekolah."
         }
       ],
-      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan"
+      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan",
+      "textbook_unit_title": "Berterima Kasih Amalan Mulia",
+      "textbook_printed_start_page": 25,
+      "textbook_pdf_start_page": 31,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -154,7 +170,11 @@
           "text": "Mengamalkan sikap bersopan dan berbudi pekerti mulia terhadap warga sekolah."
         }
       ],
-      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan"
+      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan",
+      "textbook_unit_title": "Beradab Sopan Pekerti Terpuji",
+      "textbook_printed_start_page": 33,
+      "textbook_pdf_start_page": 39,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -184,7 +204,11 @@
           "text": "Mengamalkan perlakuan sikap hormat terhadap warga sekolah dan pelawat."
         }
       ],
-      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah"
+      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah",
+      "textbook_unit_title": "Hormati Semua Amalan Kami",
+      "textbook_printed_start_page": 41,
+      "textbook_pdf_start_page": 47,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -214,7 +238,11 @@
           "text": "Mengamalkan sikap menyayangi sekolah dan warga sekolah."
         }
       ],
-      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga"
+      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga",
+      "textbook_unit_title": "Sekolah Kebanggaanku",
+      "textbook_printed_start_page": 49,
+      "textbook_pdf_start_page": 55,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -244,7 +272,11 @@
           "text": "Mengamalkan sikap adil sesama warga sekolah."
         }
       ],
-      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil"
+      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil",
+      "textbook_unit_title": "Sikap Adil Sekolah Sejahtera",
+      "textbook_printed_start_page": 57,
+      "textbook_pdf_start_page": 63,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -274,7 +306,11 @@
           "text": "Mengamalkan sikap berani menghadapi cabaran di sekolah."
         }
       ],
-      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah"
+      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah",
+      "textbook_unit_title": "Hadapi Cabaran Demi Sekolah",
+      "textbook_printed_start_page": 65,
+      "textbook_pdf_start_page": 71,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -304,7 +340,11 @@
           "text": "Mengamalkan sikap jujur terhadap warga sekolah."
         }
       ],
-      "scenario": "Murid menemukan dompet di koridor sekolah"
+      "scenario": "Murid menemukan dompet di koridor sekolah",
+      "textbook_unit_title": "Jujur Amalan Warga Sekolah",
+      "textbook_printed_start_page": 73,
+      "textbook_pdf_start_page": 79,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -334,7 +374,11 @@
           "text": "Mengamalkan sikap rajin di sekolah."
         }
       ],
-      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual"
+      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual",
+      "textbook_unit_title": "Rajin Tangga Kejayaan",
+      "textbook_printed_start_page": 81,
+      "textbook_pdf_start_page": 87,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -364,7 +408,11 @@
           "text": "Mengamalkan sikap bekerjasama dengan warga sekolah."
         }
       ],
-      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama"
+      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama",
+      "textbook_unit_title": "Kerjasama Budaya Kami",
+      "textbook_printed_start_page": 89,
+      "textbook_pdf_start_page": 95,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -394,7 +442,11 @@
           "text": "Mengamalkan kesederhanaan di sekolah."
         }
       ],
-      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu"
+      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu",
+      "textbook_unit_title": "Amalan Hidup Di Sekolah",
+      "textbook_printed_start_page": 97,
+      "textbook_pdf_start_page": 103,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 3,
@@ -424,7 +476,13 @@
           "text": "Mengamalkan sikap bertoleransi untuk mengeratkan perpaduan sesama warga sekolah."
         }
       ],
-      "scenario": "Dua kumpulan murid berbeza pendapat tentang peraturan permainan"
+      "scenario": "Dua kumpulan murid berbeza pendapat tentang peraturan permainan",
+      "textbook_unit_title": "Toleransi Sesama Warga Sekolah",
+      "textbook_printed_start_page": 105,
+      "textbook_pdf_start_page": 111,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     }
-  ]
+  ],
+  "textbook_page_audit": "VERIFIED_TOC_START_ONLY",
+  "textbook_page_lookup_path": "rpt_2027/pendidikan_moral/year3_book_toc_VERIFIED.json"
 }

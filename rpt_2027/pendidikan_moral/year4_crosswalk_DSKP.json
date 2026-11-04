@@ -34,7 +34,11 @@
           "text": "Mengamalkan sikap menghormati amalan ajaran agama atau kepercayaan jiran."
         }
       ],
-      "scenario": "Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan"
+      "scenario": "Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan",
+      "textbook_unit_title": "Kepercayaan kepada Tuhan",
+      "textbook_printed_start_page": 2,
+      "textbook_pdf_start_page": 8,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -64,7 +68,11 @@
           "text": "Mengamalkan sikap prihatin terhadap keperluan dan kebajikan jiran."
         }
       ],
-      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit"
+      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit",
+      "textbook_unit_title": "Baik Hati",
+      "textbook_printed_start_page": 10,
+      "textbook_pdf_start_page": 16,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -94,7 +102,11 @@
           "text": "Mengamalkan sikap bertanggungjawab terhadap jiran."
         }
       ],
-      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama"
+      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama",
+      "textbook_unit_title": "Bertanggungjawab",
+      "textbook_printed_start_page": 20,
+      "textbook_pdf_start_page": 26,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -124,7 +136,11 @@
           "text": "Mengamalkan sikap berterima kasih terhadap jiran."
         }
       ],
-      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik"
+      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik",
+      "textbook_unit_title": "Berterima Kasih",
+      "textbook_printed_start_page": 28,
+      "textbook_pdf_start_page": 34,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -154,7 +170,11 @@
           "text": "Mengamalkan perlakuan beradab sopan dan berbudi pekerti mulia terhadap jiran."
         }
       ],
-      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka"
+      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka",
+      "textbook_unit_title": "Hemah Tinggi",
+      "textbook_printed_start_page": 38,
+      "textbook_pdf_start_page": 44,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -184,7 +204,11 @@
           "text": "Mengamalkan sikap menghormati jiran."
         }
       ],
-      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk"
+      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk",
+      "textbook_unit_title": "Hormat",
+      "textbook_printed_start_page": 46,
+      "textbook_pdf_start_page": 52,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -214,7 +238,11 @@
           "text": "Mengamalkan sikap menyayangi jiran."
         }
       ],
-      "scenario": "Jiran sakit dan memerlukan sokongan"
+      "scenario": "Jiran sakit dan memerlukan sokongan",
+      "textbook_unit_title": "Kasih Sayang",
+      "textbook_printed_start_page": 56,
+      "textbook_pdf_start_page": 62,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -244,7 +272,11 @@
           "text": "Mengamalkan tindakan yang adil terhadap jiran."
         }
       ],
-      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil"
+      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil",
+      "textbook_unit_title": "Keadilan",
+      "textbook_printed_start_page": 64,
+      "textbook_pdf_start_page": 70,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -274,7 +306,11 @@
           "text": "Mengamalkan sikap berani terhadap jiran demi kesejahteraan bersama."
         }
       ],
-      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran"
+      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran",
+      "textbook_unit_title": "Keberanian",
+      "textbook_printed_start_page": 74,
+      "textbook_pdf_start_page": 80,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -304,7 +340,11 @@
           "text": "Mengamalkan sikap jujur terhadap jiran."
         }
       ],
-      "scenario": "Murid tersalah mengambil barang milik jiran"
+      "scenario": "Murid tersalah mengambil barang milik jiran",
+      "textbook_unit_title": "Kejujuran",
+      "textbook_printed_start_page": 84,
+      "textbook_pdf_start_page": 90,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -334,7 +374,11 @@
           "text": "Mengamalkan sikap rajin dalam hidup berjiran."
         }
       ],
-      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah"
+      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah",
+      "textbook_unit_title": "Kerajinan",
+      "textbook_printed_start_page": 94,
+      "textbook_pdf_start_page": 100,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -364,7 +408,11 @@
           "text": "Mengamalkan sikap bekerjasama dalam hidup berjiran."
         }
       ],
-      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan"
+      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan",
+      "textbook_unit_title": "Kerjasama",
+      "textbook_printed_start_page": 102,
+      "textbook_pdf_start_page": 108,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -394,7 +442,11 @@
           "text": "Mengamalkan sikap sederhana dalam hidup berjiran."
         }
       ],
-      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan"
+      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan",
+      "textbook_unit_title": "Kesederhanaan",
+      "textbook_printed_start_page": 112,
+      "textbook_pdf_start_page": 118,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     },
     {
       "year": 4,
@@ -424,7 +476,13 @@
           "text": "Mengamalkan sikap bertoleransi dalam hidup berjiran."
         }
       ],
-      "scenario": "Jiran berbeza pendapat mengenai bunyi bising ketika hujung minggu"
+      "scenario": "Jiran berbeza pendapat mengenai bunyi bising ketika hujung minggu",
+      "textbook_unit_title": "Toleransi",
+      "textbook_printed_start_page": 122,
+      "textbook_pdf_start_page": 128,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
     }
-  ]
+  ],
+  "textbook_page_audit": "VERIFIED_TOC_START_ONLY",
+  "textbook_page_lookup_path": "rpt_2027/pendidikan_moral/year4_book_toc_VERIFIED.json"
 }
