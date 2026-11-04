@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 39: Writing 8
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 4.3 / 4.3.3  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 4.3 / 4.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
 **Learning objectives:** Pupils plan, draft and revise three house sentences using a simple room-object plan and appropriate capital letters and full stops.  

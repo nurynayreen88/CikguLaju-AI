@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 48: Writing 10
 
 **Unit:** The old house
-**Main SK/SP (prior mapping; SOW verification pending):** 4.2 / 4.2.5
-**Complementary SK/SP (prior mapping; SOW verification pending):** 4.3 / 4.3.1
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.2 / 4.2.5  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.1  
 **Duration:** 60 minutes
 **Classification:** NON-TEXTBOOK; original teacher-created examples.
 **Learning objectives:** Pupils connect words or phrases using 'and' or 'but' and apply capitals and full stops in guided writing.

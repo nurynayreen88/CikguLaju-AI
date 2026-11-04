@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 41: Listening 9
 
 **Unit:** The old house  
-**Main SK/SP (prior mapping; SOW verification pending):** 1.1 / 1.1.1  
-**Complementary SK/SP (prior mapping; SOW verification pending):** 3.1 / 3.1.3  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.1 / 1.1.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 3.1 / 3.1.3  
 **Duration:** 60 minutes  
 **Mapped resource:** Super Minds 1 Student's Book SB p.75. Exact Teacher's Book procedure remains unverified. The scripts, cards and examples below are original teacher-created alternatives, not claimed to reproduce textbook activities.  
 **Learning objectives:** With support, pupils recognise and reproduce the /ʃ/ sound in *sh* words (main 1.1.1) and blend four familiar printed words using letter sounds (complementary 3.1.3). This is a teacher-developed phonics alternative pending verification of the exact SB p.75/TB sequence.  

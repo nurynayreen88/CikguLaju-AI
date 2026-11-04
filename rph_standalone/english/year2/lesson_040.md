@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 40: Language Arts 8
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 5.3 / 5.3.1  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 5.3 / 5.3.1  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.1  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
 **Learning objectives:** Pupils create and perform two house-themed lines and identify the main ideas of two spoken sentences about an unusual house.  
