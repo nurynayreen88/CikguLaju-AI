@@ -14,7 +14,7 @@
 **BBM:** Buku Teks pada halaman RPT (jika sepadan), kad kata/ayat atau gambar bertema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi, papan putih, buku latihan dan senarai semak PBD.
 
 ## Set induksi — 5 minit
-**Guru:** Menunjukkan tajuk “Harum Bagai Kasturi” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “Harum Bagai Kasturi”?”  
+**Guru:** Menunjukkan tajuk “Harum Bagai Kasturi” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah yang dapat kamu jangka berdasarkan tajuk Harum Bagai Kasturi?”  
 **Murid:** Berkongsi pengetahuan sedia ada, menyatakan satu jangkaan dan menghubungkannya dengan unit.
 
 ## Aktiviti 1 — Kenal bahasa indah (15 minit)
@@ -30,7 +30,7 @@
 **Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
 
 ## Penutup — 5 minit
-**Guru:** Merumus kemahiran menggunakan bahasa indah dan santun dalam dialog atau penceritaan. dan meminta contoh aplikasi dalam kehidupan harian.  
+**Guru:** Merumus kemahiran menggunakan bahasa indah dan santun dalam dialog atau penceritaan dan meminta contoh aplikasi dalam kehidupan harian.  
 **Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  

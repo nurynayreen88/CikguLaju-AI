@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 058
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 058
 
 **Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan  
 **Tajuk:** Menu Seimbang  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
 
 ## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru mengimbas poster daripada Lesson 054 dan memberi kad maklumat yang belum disusun.
+**Tindakan guru:** Guru mengimbas poster daripada PdP 054 dan memberi kad maklumat yang belum disusun.
 **Tindakan murid:** Murid membezakan maklumat utama dengan contoh makanan.
 
 ## Aktiviti 2 — Laksanakan kemahiran (20 minit)
@@ -31,4 +31,4 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
 
 **Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:** Ini ialah cadangan sesi pengukuhan berlainan produk, bukan keputusan rasmi untuk mengekalkan dua Lesson dengan tajuk sama.  Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Nota audit:** Ini ialah cadangan sesi pengukuhan berlainan produk, bukan keputusan rasmi untuk mengekalkan dua PdP dengan tajuk sama.  Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.

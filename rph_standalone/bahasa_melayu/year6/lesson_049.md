@@ -14,7 +14,7 @@
 **BBM:** Buku Teks pada halaman RPT (jika sepadan), kad kata/ayat atau gambar bertema Keselamatan; U9: Waspada Fenomena Alam, papan putih, buku latihan dan senarai semak PBD.
 
 ## Set induksi — 5 minit
-**Guru:** Menunjukkan tajuk “Kepala Air” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “Kepala Air”?”  
+**Guru:** Menunjukkan tajuk “Kepala Air” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah yang dapat kamu jangka berdasarkan tajuk Kepala Air?”  
 **Murid:** Berkongsi pengetahuan sedia ada, menyatakan satu jangkaan dan menghubungkannya dengan unit.
 
 ## Aktiviti 1 — Kumpul idea dan alasan (15 minit)
@@ -30,7 +30,7 @@
 **Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
 
 ## Penutup — 5 minit
-**Guru:** Merumus kemahiran menyampaikan pendapat atau maklumat dengan alasan dan bahasa yang santun. dan meminta contoh aplikasi dalam kehidupan harian.  
+**Guru:** Merumus kemahiran menyampaikan pendapat atau maklumat dengan alasan dan bahasa yang santun dan meminta contoh aplikasi dalam kehidupan harian.  
 **Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  

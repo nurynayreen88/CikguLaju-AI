@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 079
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 079
 
 **Tema / Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita  
 **Tajuk:** Sedapnya Amplang + PKJR  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
 
 ## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru mengimbas kosa kata dari Lesson 074 dan membaca semula urutan penyediaan amplang.
+**Tindakan guru:** Guru mengimbas kosa kata dari PdP 074 dan membaca semula urutan penyediaan amplang.
 **Tindakan murid:** Murid mengesan frasa yang menerangkan tindakan serta bahan.
 
 ## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)

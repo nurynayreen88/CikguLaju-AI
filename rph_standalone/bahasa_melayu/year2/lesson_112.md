@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 112
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 112
 
 **Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!  
 **Tajuk:** Bertuahnya Rakyat Malaysia + PKJR  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
 
 ## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru mengimbas lagu daripada Lesson 107 dan meminta murid mengenal dua nilai yang berbeza.
+**Tindakan guru:** Guru mengimbas lagu daripada PdP 107 dan meminta murid mengenal dua nilai yang berbeza.
 **Tindakan murid:** Murid meneliti seni kata untuk menyokong dua nilai.
 
 ## Aktiviti 2 — Gunakan kemahiran (20 minit)

@@ -14,7 +14,7 @@
 **BBM:** Buku Teks pada halaman RPT (jika sepadan), kad kata/ayat atau gambar bertema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Ekonomi Dinamik, papan putih, buku latihan dan senarai semak PBD.
 
 ## Set induksi — 5 minit
-**Guru:** Menunjukkan tajuk “Pembelian Tanpa Tunai” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “Pembelian Tanpa Tunai”?”  
+**Guru:** Menunjukkan tajuk “Pembelian Tanpa Tunai” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah yang dapat kamu jangka berdasarkan tajuk Pembelian Tanpa Tunai?”  
 **Murid:** Berkongsi pengetahuan sedia ada, menyatakan satu jangkaan dan menghubungkannya dengan unit.
 
 ## Aktiviti 1 — Bacaan berfokus (15 minit)
@@ -30,7 +30,7 @@
 **Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
 
 ## Penutup — 5 minit
-**Guru:** Merumus kemahiran membaca, memahami dan menjelaskan maklumat dalam teks. dan meminta contoh aplikasi dalam kehidupan harian.  
+**Guru:** Merumus kemahiran membaca, memahami dan menjelaskan maklumat dalam teks dan meminta contoh aplikasi dalam kehidupan harian.  
 **Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  

@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 080
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 080
 
 **Tema / Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita  
 **Tajuk:** Indahnya Budaya Sabah  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
 
 ## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru menjelaskan perbezaan persembahan semula dan latihan sebutan yang telah dilakukan dalam Lesson 075.
+**Tindakan guru:** Guru menjelaskan perbezaan persembahan semula dan latihan sebutan yang telah dilakukan dalam PdP 075.
 **Tindakan murid:** Murid mengenal makna empat ungkapan tanpa menghafal sumber tambahan.
 
 ## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)

@@ -1,6 +1,6 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 096
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 096
 
-**ID Lesson:** BM3-P096  
+**ID PdP:** BM3-P096  
 **Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita  
 **Tajuk dalam RPT/BT calon**: Indahnya Pantun + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
@@ -35,7 +35,7 @@
 **Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Semakan muka surat Buku Teks penuh, cetakan satu A4 dan ujian runtime/CI.  
-**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor PdP; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
 

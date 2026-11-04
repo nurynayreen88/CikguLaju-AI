@@ -1,6 +1,6 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 104
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 104
 
-**ID Lesson:** BM3-P104  
+**ID PdP:** BM3-P104  
 **Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U14: Kenali Kesenian Kita  
 **Tajuk dalam RPT/BT calon:** Juadah Tradisional  
 **Standard Kandungan (SK):** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks.  
@@ -34,4 +34,4 @@
 **Status QA:** DRAF — **bukan READY**.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Semakan muka surat Buku Teks penuh, cetakan satu A4 dan ujian runtime/CI.  
-**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor PdP; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.

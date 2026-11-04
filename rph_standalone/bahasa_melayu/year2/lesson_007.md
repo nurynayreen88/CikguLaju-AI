@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 007
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 007
 
 **Tajuk:** Kejutan untuk Ibu  
 **Tema/Unit:** Kekeluargaan • Unit 1: Hari Minggu dengan Keluarga  
@@ -13,7 +13,7 @@
 **Objektif:** Membina empat ayat berlainan menggunakan kata nama am bagi empat kategori dengan kesesuaian konteks.  
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengimbas empat kategori kata nama am daripada Lesson 006 melalui permainan kad.
+**Tindakan guru:** Guru mengimbas empat kategori kata nama am daripada PdP 006 melalui permainan kad.
 **Tindakan murid:** Murid memilih kad kategori bagi kata yang didengar.
 
 ## Aktiviti 1 — Bina frasa (15 minit)

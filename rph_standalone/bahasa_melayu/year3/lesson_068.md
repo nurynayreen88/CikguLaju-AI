@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 068
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 068
 
 **ID:** BM3-P068  
 **Tema/Unit:** Keselamatan; U9: Alatan Keselamatan  
@@ -21,7 +21,7 @@
 
 ## Aktiviti 2 (20 minit)
 **Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
-**Murid:** Menulis empat ayat majmuk yang diimlak, menyemak ejaan serta tanda baca; berbeza daripada imlak ayat tunggal Lesson 065.
+**Murid:** Menulis empat ayat majmuk yang diimlak, menyemak ejaan serta tanda baca; berbeza daripada imlak ayat tunggal PdP 065.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
 **Guru:** Menyemak empat ayat imlak majmuk tepat serta mencatat kekuatan/kelemahan kerja murid.
@@ -32,4 +32,4 @@
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
 **Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
-**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
+**Kawalan:** Jika topik sama dengan PdP lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

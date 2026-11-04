@@ -14,7 +14,7 @@
 **BBM:** Buku Teks pada halaman RPT (jika sepadan), kad kata/ayat atau gambar bertema Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung, papan putih, buku latihan dan senarai semak PBD.
 
 ## Set induksi — 5 minit
-**Guru:** Menunjukkan tajuk “Anggun Jahitan Tradisional” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “Anggun Jahitan Tradisional”?”  
+**Guru:** Menunjukkan tajuk “Anggun Jahitan Tradisional” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah yang dapat kamu jangka berdasarkan tajuk Anggun Jahitan Tradisional?”  
 **Murid:** Berkongsi pengetahuan sedia ada, menyatakan satu jangkaan dan menghubungkannya dengan unit.
 
 ## Aktiviti 1 — Dengar dan kesan kata kunci (15 minit)
@@ -26,11 +26,11 @@
 **Murid:** Memberikan dua respons lisan tentang “Anggun Jahitan Tradisional” dan menyebut semula maklumat secara bergilir.
 
 ## Pengukuhan dan penilaian PBD — 15 minit
-**Guru:** Catatan tiga maklumat didengar dan dua respons tepat melalui senarai semak. Membimbing kumpulan sokongan dengan rangka atau kad petunjuk; murid mahir menambah satu contoh atau justifikasi.  
+**Guru:** Merekod ketepatan tiga maklumat didengar dan dua respons lisan melalui senarai semak. Membimbing kumpulan sokongan dengan rangka atau kad petunjuk; murid mahir menambah satu contoh atau justifikasi.  
 **Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
 
 ## Penutup — 5 minit
-**Guru:** Merumus kemahiran mendengar, memahami dan memberikan respons terhadap ujaran. dan meminta contoh aplikasi dalam kehidupan harian.  
+**Guru:** Merumus kemahiran mendengar, memahami dan memberikan respons terhadap ujaran dan meminta contoh aplikasi dalam kehidupan harian.  
 **Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  

@@ -1,6 +1,6 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 106
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 106
 
-**ID Lesson:** BM3-P106  
+**ID PdP:** BM3-P106  
 **Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U15: Indahnya Seni dan Budaya Kita  
 **Tajuk dalam RPT/BT calon:** Buah Tangan dari Bumi Kenyalang  
 **Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.  
@@ -34,4 +34,4 @@
 **Status QA:** DRAF — **bukan READY**.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Semakan muka surat Buku Teks penuh, cetakan satu A4 dan ujian runtime/CI.  
-**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor PdP; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.

@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 075
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 075
 
 **ID:** BM3-P075  
 **Tema/Unit:** Perpaduan; U10: Toleransi Kukuhkan Perpaduan  
@@ -10,7 +10,7 @@
 **Fokus:** karangan berpandu  
 **Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
 **Objektif:** Melengkapkan lima bahagian kerangka dan menulis lima ayat naratif.  
-**Bahan:** gambar sambutan Hari Guru; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**Bahan:** gambar sambutan Hari Guru; buku teks/aktiviti bagi PdP berkenaan; senarai semak PBD.
 
 ## Set induksi (5 minit)
 **Guru:** Mengemukakan gambar sambutan Hari Guru untuk mencetuskan perbincangan.

@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 091
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 091
 
 **Tema/Unit:** Kebudayaan Kita; U12: Amalan Baik  
 **Tajuk:** Berbudi Bahasa Budaya Kita  
@@ -19,7 +19,7 @@
 **Tindakan murid:** Murid memadankan frasa dengan empat gambar situasi berbeza.
 
 ## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru memberi simulasi bertemu jiran, guru dan orang tua; meminta respons yang berlainan daripada Lesson 086.
+**Tindakan guru:** Guru memberi simulasi bertemu jiran, guru dan orang tua; meminta respons yang berlainan daripada PdP 086.
 **Tindakan murid:** Murid memberi empat ayat sopan dan menyatakan kesesuaiannya.
 
 ## Pengukuhan / Penilaian PBD (15 minit)

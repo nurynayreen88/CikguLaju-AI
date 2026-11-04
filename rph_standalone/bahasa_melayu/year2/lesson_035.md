@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 035
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 035
 
 **Tema/Unit:** Perpaduan; U5: Hidup Berjiran  
 **Tajuk:** Orang Berbudi, Kita Berbahasa  
@@ -23,7 +23,7 @@
 **Tindakan murid:** Murid membina empat ayat baharu dan menyemak ketepatan urutan serta tanda baca.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai empat ayat gramatis; bukan salinan semula Lesson 031.
+**Tindakan guru:** Nilai empat ayat gramatis; bukan salinan semula PdP 031.
 **Tindakan murid:** Murid menyerahkan hasil atau memberi respons secara individu, menerima pembetulan guru dan memperbaiki satu kesilapan jika ada.
 
 ## Penutup (5 minit)
@@ -31,4 +31,4 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
 
 **Status QA:** HOLD — penentuan sesi susulan/PBD dalam RPT belum disahkan. 
-**Catatan:** Sesi pengukuhan ini cadangan CikguLaju untuk membezakan pengulangan daripada RPT 2026; keputusan mengekalkannya sebagai Lesson berasingan belum selesai. Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Catatan:** Sesi pengukuhan ini cadangan CikguLaju untuk membezakan pengulangan daripada RPT 2026; keputusan mengekalkannya sebagai PdP berasingan belum selesai. Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.

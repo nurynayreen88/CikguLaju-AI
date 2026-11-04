@@ -14,7 +14,7 @@
 **BBM:** Buku Teks pada halaman RPT (jika sepadan), kad kata/ayat atau gambar bertema Kesihatan dan Kebersihan; U5: Kebersihan Asas Kesejahteraan, papan putih, buku latihan dan senarai semak PBD.
 
 ## Set induksi — 5 minit
-**Guru:** Menunjukkan tajuk “Kempen Kebersihan Tandas + PKJR” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “Kempen Kebersihan Tandas”?”  
+**Guru:** Menunjukkan tajuk “Kempen Kebersihan Tandas + PKJR” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah yang dapat kamu jangka berdasarkan tajuk Kempen Kebersihan Tandas?”  
 **Murid:** Berkongsi pengetahuan sedia ada, menyatakan satu jangkaan dan menghubungkannya dengan unit.
 
 ## Aktiviti 1 — Dengar dan pecahkan frasa (15 minit)
@@ -30,7 +30,7 @@
 **Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
 
 ## Penutup — 5 minit
-**Guru:** Merumus kemahiran menulis semula teks yang diimlakkan dengan ejaan dan tanda baca tepat. dan meminta contoh aplikasi dalam kehidupan harian.  
+**Guru:** Merumus kemahiran menulis semula teks yang diimlakkan dengan ejaan dan tanda baca tepat dan meminta contoh aplikasi dalam kehidupan harian.  
 **Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  
