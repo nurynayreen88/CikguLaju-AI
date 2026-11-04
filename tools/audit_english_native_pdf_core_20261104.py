@@ -14,10 +14,12 @@ import argparse
 import json
 from functools import lru_cache
 import os
+import shutil
 from pathlib import Path
 import re
 import sys
 import tempfile
+import traceback
 from xml.sax.saxutils import escape as xml_escape
 
 from reportlab.lib import colors
@@ -115,7 +117,12 @@ def _make_native_pdf(rows,year,lesson,output):
     path=names["create_pdf_file"](state,"",int(lesson)+year*1000)
     dest=Path(output)
     dest.parent.mkdir(parents=True,exist_ok=True)
-    os.replace(path,dest)
+    # The GitHub runner may place temp files and the audit workspace on
+    # different mounted filesystems; os.replace raises EXDEV in that case.
+    # This is an isolated QA fixture, never a production/user file.
+    if not Path(path).is_file():
+        raise RuntimeError(f'Native ReportLab generator returned no PDF at {path!r}')
+    shutil.move(str(path),str(dest))
     return line
 
 
@@ -151,6 +158,9 @@ def run(year, *, all_lessons=False):
             row["error"]=None
         except Exception as exc:
             row["error"]=repr(exc)
+            row["error_trace"]=traceback.format_exc(limit=7)
+            if lesson == 1:
+                print("NATIVE_PDF_DIAGNOSTIC",row["error_trace"],flush=True)
             row["pages"]=None
         results.append(row)
         print("NATIVE_PDF_CORE",year,lesson,row["pages"],

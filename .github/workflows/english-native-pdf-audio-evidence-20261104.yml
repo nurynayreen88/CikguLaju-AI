@@ -8,6 +8,9 @@ on:
       - 'audits/english_y4_l030_audio_source_evidence_20261104.json'
       - 'tests/test_english_y4_l030_audio_evidence.py'
       - 'tests/test_english_y4_l099_audio_source.py'
+      - 'tests/test_english_y4_l145_l147_audio_source.py'
+      - 'rph_standalone/english/year4/lesson_145.md'
+      - 'rph_standalone/english/year4/lesson_147.md'
       - 'rph_standalone/english/year4/lesson_099.md'
       - 'tests/test_english_y4_l030_audio_guard.py'
       - 'web/english_y4_l030_audio_guard.py'
@@ -21,6 +24,9 @@ on:
       - 'audits/english_y4_l030_audio_source_evidence_20261104.json'
       - 'tests/test_english_y4_l030_audio_evidence.py'
       - 'tests/test_english_y4_l099_audio_source.py'
+      - 'tests/test_english_y4_l145_l147_audio_source.py'
+      - 'rph_standalone/english/year4/lesson_145.md'
+      - 'rph_standalone/english/year4/lesson_147.md'
       - 'rph_standalone/english/year4/lesson_099.md'
       - 'tests/test_english_y4_l030_audio_guard.py'
       - 'web/english_y4_l030_audio_guard.py'
@@ -38,6 +44,7 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_evidence.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_l099_audio_source.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l145_l147_audio_source.py' -v
   media-route-static-audit:
     runs-on: ubuntu-latest
     timeout-minutes: 8
