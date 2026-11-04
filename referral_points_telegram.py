@@ -11,10 +11,10 @@ import secrets
 from urllib.parse import quote
 from decimal import Decimal
 
-_START = re.compile(r"^/start(?:@\\w+)?\\s+rp_([A-Za-z0-9_-]{16,48})$")
-_OLD = re.compile(r"^/start(?:@\\w+)?\\s+ref_-?\\d+$")
-_ADD = re.compile(r"^/refadd\\s+(\\d+)$")
-_DEL = re.compile(r"^/refdel\\s+(\\d+)$")
+_START = re.compile(r"^/start(?:@\w+)?\s+rp_([A-Za-z0-9_-]{16,48})$")
+_OLD = re.compile(r"^/start(?:@\w+)?\s+ref_-?\d+$")
+_ADD = re.compile(r"^/refadd\s+(\d+)$")
+_DEL = re.compile(r"^/refdel\s+(\d+)$")
 
 
 def format_points(value):
