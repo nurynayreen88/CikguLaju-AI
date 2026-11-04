@@ -26,7 +26,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import KeepTogether, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import CondPageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "rpt_2027/pjpk/pjpk_2027_rpt_manifest.json"
@@ -185,7 +185,8 @@ def _pdf(year, out, weeks, records):
         ]
         t.setStyle(TableStyle(style))
         # Let large week tables paginate by row; never clip, truncate or drop rows.
-        story.extend([_p(label, weekstyle), t, Spacer(1, 3.5*mm)])
+        # Prevent stranded week headings at a page bottom without keeping huge tables together.
+        story.extend([CondPageBreak(155), _p(label, weekstyle), t, Spacer(1, 3.5*mm)])
     story.extend([
         Spacer(1, 5*mm),
         _p("CATATAN PENTING", weekstyle),
