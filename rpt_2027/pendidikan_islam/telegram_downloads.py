@@ -1,54 +1,67 @@
-"""Paid Telegram route for Pendidikan Islam RPT 2027 PDF downloads.
+"""Private Supabase-backed Pendidikan Islam RPT 2027 PDF Telegram delivery.
 
-Additive and fail-closed; no DB, RPH, quota, subscription, or profile writes.
-The supplied RPT remains a suggested/teacher-review document.
+Read-only: no RPH credits, curriculum, profiles or payment state is changed.
 """
+import base64
+import hashlib
+import os
 from pathlib import Path
+import tempfile
 
 PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
+TABLE = "cikgulaju_rpt_pi_pdf_assets"
 FILE_TEMPLATE = "RPT_Pendidikan_Islam_Tahun_%d_2027_CikguLaju.pdf"
 
 
 def pdf_path(year):
     if type(year) is not int or year not in YEARS:
-        raise ValueError("Unsupported Pendidikan Islam RPT year")
+        raise ValueError("Unsupported RPT Pendidikan Islam year")
     return PDF_ROOT / (FILE_TEMPLATE % year)
 
 
-def pdf_ready(year, ns=None):
-    """Only advertise a download if the matching local PDF is valid."""
+def _get_asset(year, ns, include_pdf=False):
+    if type(year) is not int or year not in YEARS or not ns:
+        return None
+    columns = "year,filename,size_bytes,sha256"
+    if include_pdf:
+        columns += ",pdf_base64"
     try:
-        path = pdf_path(year)
-        if not path.is_file() or path.stat().st_size < 100000:
-            return False
-        with path.open("rb") as handle:
-            return handle.read(5) == b"%PDF-"
-    except (OSError, ValueError):
-        return False
+        rows = ns["_sb_request"](
+            "GET", TABLE + "?year=eq.%d&release_enabled=is.true&select=" % year + columns
+        ) or []
+        if isinstance(rows, list) and len(rows) == 1:
+            return rows[0]
+    except Exception as exc:
+        print("PI RPT 2027 asset lookup failed:", repr(exc), flush=True)
+    return None
+
+
+def pdf_ready(year, ns=None):
+    """Only advertise this year if its matching private PDF asset is enabled."""
+    return bool(_get_asset(year, ns))
 
 
 def install(ns):
-    """Wrap only Pendidikan Islam RPT callbacks, preserving every other route."""
     if ns.get("CIKGULAJU_RPT_PI_2027_INSTALLED"):
         return True
-    required = ("callback", "send", "send_document", "_access_info", "_is_admin")
+    required = ("callback", "send", "send_document", "_access_info",
+                "_is_admin", "_sb_request")
     if any(not callable(ns.get(name)) for name in required):
         return False
     previous = ns["callback"]
     send = ns["send"]
-    send_document = ns["send_document"]
-    prefix = "rpt2027_pi_pdf_"
 
     def callback(cid, d):
+        prefix = "rpt2027_pi_pdf_"
         data = str(d or "")
         if not data.startswith(prefix):
             return previous(cid, d)
-
-        # Paid-access check is repeated for stale/forged callback data.
+        # The callback itself MUST recheck entitlement, even with an old button.
         try:
             allowed = bool(ns["_is_admin"](cid) or ns["_access_info"](cid).get("active"))
-        except Exception:
+        except Exception as exc:
+            print("PI RPT entitlement check failed:", repr(exc), flush=True)
             allowed = False
         if not allowed:
             return send(
@@ -57,32 +70,39 @@ def install(ns):
                 "dan pelanggan dengan langganan aktif.",
                 [[{"text": "🏆 Jadi Rakan Pembangun", "callback_data": "pioneer_join"}],
                  [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
-
         suffix = data[len(prefix):]
         if suffix not in ("2", "3", "4", "5", "6"):
             return send(cid, "Pilihan tahun RPT Pendidikan Islam tidak sah.")
         year = int(suffix)
-        if not pdf_ready(year):
-            return send(
-                cid, "⚠️ PDF RPT Pendidikan Islam Tahun %d belum tersedia pada pelayan. "
-                "Tiada fail lain dihantar sebagai pengganti." % year)
-
+        record = _get_asset(year, ns, include_pdf=True)
+        if not record:
+            return send(cid, "⚠️ PDF RPT Pendidikan Islam Tahun %d belum tersedia." % year)
         try:
-            result = send_document(
-                cid, str(pdf_path(year)),
-                "RPT Pendidikan Islam Tahun %d — 2027 (Cadangan untuk semakan guru)" % year)
-            check = ns.get("_telegram_delivery_ok_v25279")
-            if callable(check):
-                confirmed = bool(check(result))
+            decoded = base64.b64decode(record.get("pdf_base64", ""), validate=True)
+            if (not decoded.startswith(b"%PDF-")
+                    or len(decoded) != int(record["size_bytes"])
+                    or hashlib.sha256(decoded).hexdigest() != record["sha256"]):
+                raise ValueError("RPT asset integrity mismatch")
+            with tempfile.TemporaryDirectory(prefix="cikgulaju_pi_rpt_") as folder:
+                filename = FILE_TEMPLATE % year
+                target = os.path.join(folder, filename)
+                with open(target, "wb") as handle:
+                    handle.write(decoded)
+                result = ns["send_document"](
+                    cid, target,
+                    "RPT Pendidikan Islam Tahun %d — 2027 (Cadangan untuk semakan guru)" % year)
+            verify = ns.get("_telegram_delivery_ok_v25279")
+            if callable(verify):
+                confirmed = bool(verify(result))
             else:
                 confirmed = (bool(getattr(result, "ok", False))
                              and result.json().get("ok") is True)
             if not confirmed:
-                return send(cid, "⚠️ Telegram belum mengesahkan penghantaran PDF RPT. Sila cuba lagi.")
+                raise RuntimeError("Telegram did not confirm sendDocument")
             return result
         except Exception as exc:
-            print("PI RPT 2027 PDF delivery failed:", repr(exc), flush=True)
-            return send(cid, "⚠️ Muat turun RPT gagal. Sila cuba lagi.")
+            print("PI RPT 2027 delivery failed:", repr(exc), flush=True)
+            return send(cid, "⚠️ Muat turun PDF belum berjaya. Sila cuba lagi.")
 
     ns["callback"] = callback
     ns["CIKGULAJU_RPT_PI_2027_INSTALLED"] = True
