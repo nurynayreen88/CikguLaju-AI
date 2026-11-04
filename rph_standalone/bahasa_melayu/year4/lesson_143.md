@@ -5,10 +5,10 @@
 **Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan  
 **Tajuk aktiviti:** Tabungku  
 **Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.  
-**Standard Pembelajaran (SP):** 1.2.1 — Bertutur untuk menilai, dan memberikan alasan tentang sesuatu perkara secara bertatasusila mengikut konteks  
+**Standard Pembelajaran (SP):** 1.2.3 — Bersoal jawab untuk mendapatkan penjelasan  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 165  
-**Fokus:** lisan — Tabungku  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Tabungku' mengikut kemahiran 1.2.1.  
+**Fokus:** bertutur — soal jawab untuk penjelasan  
+**Objektif PdP:** Murid dapat mengemukakan tiga soalan dan memberikan respons untuk mendapatkan penjelasan tentang simpanan melalui bahan Tabungku pada BT m/s 165.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Tabungku' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Tabungku' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Tabungku'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Teliti bahan BT (15 minit)
+**Guru:** Menunjukkan poster tabungan pada BT m/s 165 dan memodelkan soalan lanjut seperti apa perlu dilakukan apabila tabung penuh.
+**Murid:** Mengenal pasti dua perkara tentang simpanan yang memerlukan penjelasan.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Tabungku'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Mengendalikan simulasi abang–adik yang bertanya tentang menyimpan wang.
+**Murid:** Berpasangan mengemukakan tiga soalan untuk mendapatkan penjelasan dan memberikan respons yang relevan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.2.1 — Bertutur untuk menilai, dan memberikan alasan tentang sesuatu perkara secara bertatasusila mengikut konteks) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir tiga soalan, kejelasan tujuan dan kesesuaian jawapan mengikut SP 1.2.3.
+**Murid:** Memperbaik satu soalan yang kurang jelas.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Tabungku' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
