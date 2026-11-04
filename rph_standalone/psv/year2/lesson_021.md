@@ -1,6 +1,7 @@
 # RPH Pendidikan Seni Visual Tahun 2 — PdP 021
 **Status:** DRAF SEMAK  
 **Unit:** Projek Seni Visual penggal pertama  
+**Tajuk:** Pameran penggal pertama  
 **Fokus:** Pameran, apresiasi dan pengurusan karya  
 **SK:** 5.1  
 **SP:** 3.3.1 (kod bercetak di bawah SK 5.1 pada DSKP PSV Tahun 2)  
