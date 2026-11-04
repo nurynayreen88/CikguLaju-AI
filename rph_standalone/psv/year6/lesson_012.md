@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menghasilkan komponen utama kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dengan gabungan bidang menggambar dan membentuk serta membuat binaan dan langkah yang selamat. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menghasilkan komponen utama kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dengan gabungan bidang menggambar dan membentuk serta membuat binaan dan langkah yang selamat. Kriteria kejayaan: Produk menunjukkan dua teknik, dua ciri bahasa seni, fungsi/aspek visual yang jelas serta amalan keselamatan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Penghasilan karya** dalam tema **Cik Lebah dan Madu**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
