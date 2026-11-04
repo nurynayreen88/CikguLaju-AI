@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyiapkan folio kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan mengulas hasil mengikut rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben serta fungsi karya. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyiapkan folio kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan mengulas hasil mengikut rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben serta fungsi karya. Kriteria kejayaan: Folio mengandungi lima bahagian, gambar hasil dan ulasan yang menggunakan dua istilah bahasa seni.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Gambar karya dan apresiasi** dalam tema **Cik Lebah dan Madu**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
