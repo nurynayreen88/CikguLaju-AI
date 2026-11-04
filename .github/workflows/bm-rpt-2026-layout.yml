@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install PDF layout dependencies
-        run: python -m pip install 'weasyprint==62.3' 'pydyf==0.10.0' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3'
+        run: python -m pip install 'weasyprint==62.3' 'pydyf==0.10.0' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3' 'PyMuPDF==1.26.4'
       - name: Build five five-column PDFs from existing draft content
         run: python tools/build_bm_rpt_2026_layout.py
       - name: Attach printable PDFs, HTML preview and manifest
