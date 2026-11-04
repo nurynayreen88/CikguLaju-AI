@@ -9,22 +9,24 @@
 **SP:** 3.3 — Menghuraikan kepentingan melaksanakan tanggungjawab terhadap keluarga. | 3.4 — Menzahirkan perasaan apabila melaksanakan tanggungjawab terhadap keluarga.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual siapa-buat-apa-bila, borang semak; fail `materials/pendidikan_moral/year2/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 2 m/s 14–16 (PDF 23–25), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year2/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghuraikan atau menilai berdasarkan **3.3: Menghuraikan kepentingan melaksanakan tanggungjawab terhadap keluarga.** serta mengekspresikan perasaan bagi **3.4: Menzahirkan perasaan apabila melaksanakan tanggungjawab terhadap keluarga.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 3.3 dan ayat perasaan yang sesuai bagi SP 3.4.
+Murid menghuraikan dua kesan melaksanakan tanggungjawab dan mengekspresikan satu perasaan berkaitan. Kriteria kejayaan: Semak dua hubungan tindakan–kesan dan satu ayat perasaan yang dapat dijelaskan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Keluarga membahagi tugasan sebelum tetamu datang ke rumah**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Tanggungjawab Saya Dalam Keluarga** dari Buku Teks m/s 14. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 3.3 (**Menghuraikan kepentingan melaksanakan tanggungjawab terhadap keluarga.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Apakah kesan jika tanggungjawab diabaikan?**
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru membandingkan situasi menjaga pintu pagar, menolong nenek dan belajar bersungguh-sungguh pada m/s 14–15. Murid menerangkan apa yang terjadi jika tugas diabaikan.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 3.4 (**Menzahirkan perasaan apabila melaksanakan tanggungjawab terhadap keluarga.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid membina 'Rumah Tanggungjawab' seperti m/s 16; pada tiga bahagian rumah murid menulis tindakan, kepentingan dan perasaan berserta alasan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 3.3 dan ayat perasaan yang sesuai bagi SP 3.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Semak dua hubungan tindakan–kesan dan satu ayat perasaan yang dapat dijelaskan. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **bertanggungjawab**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit buku teks **Tanggungjawab Saya Dalam Keluarga** bermula pada **m/s 13 (halaman PDF 22)**, disahkan melalui halaman kandungan; halaman aktiviti khusus SP belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Semakan visual buku teks:** Tahun 2, Unit 3 — **Tanggungjawab Saya Dalam Keluarga**; halaman bercetak 14–16 (PDF 23–25). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 008 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view); [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic). Buku teks asal Drive ID `1HfrXEKYWSDvjClcArAwdCR5yglIRip2b`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.
