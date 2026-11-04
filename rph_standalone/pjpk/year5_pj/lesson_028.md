@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.14, 2.14, 5.4  
 **SP:** 1.14.1, 2.14.1, 5.4.1  
-**Buku teks:** calon m/s 54-55 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 54-55, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.14.1 (melakukan ikatan dan simpulan untuk menghasilkan gajet) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.14.1: Menyenaraikan jenis-jenis ikatan dan simpulan berdasarkan gajet yang dihasilkan.
