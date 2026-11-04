@@ -37,7 +37,7 @@ def main() -> int:
             continue
         for phase, entry in enumerate(unit["phases"]):
             number = (num - 1) * 3 + phase + 1
-            if number in verified and year == 6:
+            if (year, number) in verified:
                 fail("duplicate Year 6 lesson")
             rph = ROOT / f"rph_standalone/pendidikan_moral/year{year}/lesson_{number:03d}.md"
             source = rph.read_text(encoding="utf-8")
