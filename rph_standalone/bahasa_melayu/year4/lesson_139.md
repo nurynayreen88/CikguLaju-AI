@@ -6,7 +6,7 @@
 **Tajuk aktiviti:** Kuih Bulan Yaya + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **Standard Pembelajaran (SP):** 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 160  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 161  
 **Fokus:** bacaan — Kuih Bulan Yaya  
 **Objektif PdP:** Murid dapat membaca petikan bertajuk 'Kuih Bulan Yaya' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
