@@ -32,6 +32,22 @@
 **Murid:** Menyatakan satu perkara yang dipelajari.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.2.4; BAM m/s 7, Aktiviti 5; fokus fungsi perabot jalan raya. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Nota sumber:** Buku Aktiviti ialah sokongan kepada kemahiran Buku Teks, bukan pengganti tajuk asal.  
 **Kawalan:** Tidak diterbitkan di Telegram/Web atau database sebelum ujian penuh.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 2.2.4; BAM PKJR Tahun 3 Aktiviti 5 m/s 7, *Perabot Jalan Raya*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 5 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid menamakan rel hadang, lampu jalan, pagar dan fungsi keselamatannya dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa empat perabot jalan raya dan fungsinya.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

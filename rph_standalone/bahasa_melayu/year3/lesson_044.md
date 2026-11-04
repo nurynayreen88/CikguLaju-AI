@@ -31,5 +31,21 @@
 **Tindakan guru:** Guru merumuskan pembelajaran mengenai respons kepada soalan bertumpu daripada bahan kesihatan guru dan menerapkan nilai yang sesuai.
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
 
-**Status QA:** HOLD — sumber / kod SP / pengulangan belum dapat disahkan sepenuhnya.
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 2.3.3; BAM PKJR Tahun 3 Aktiviti 8 m/s 10, *Fungsi Tanda Isyarat Lalu Lintas*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 8 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid mengenal tiga tanda isyarat dan menerangkan maksudnya dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa tiga tanda isyarat dengan fungsi.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

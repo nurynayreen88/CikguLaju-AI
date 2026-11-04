@@ -32,6 +32,22 @@
 **Guru:** Merumuskan kemahiran yang tepat selepas semakan sumber.
 **Murid:** Menyatakan satu contoh atau pengajaran yang diperoleh.
 
-**Status QA:** HOLD — tiada kelulusan READY.  
+**Status QA:** HOLD — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Kawalan:** Padanan Buku Teks, tarikh negeri, format A4 dan CI belum lulus.  
 **Pengeluaran:** Staging sahaja; tidak mengubah main, database, Telegram atau Web.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 4.3.1; BAM PKJR Tahun 3 Aktiviti 14 m/s 16, *Pencahayaan dan Kebolehlihatan — susulan*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 14 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid menghasilkan dua ayat tentang pencahayaan dan membuat lakonan situasi pejalan kaki dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa dua ayat dan satu demonstrasi selamat.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** HOLD — Pendua Aktiviti 14 dengan Lesson 075; bentuk sesi susulan perlu diputuskan.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

@@ -33,6 +33,22 @@
 **Murid:** Menyatakan satu contoh atau pengajaran yang diperoleh.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 4.3.1; BAM m/s 16, Aktiviti 14; fokus pencahayaan dan kebolehlihatan pejalan kaki. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Kawalan:** Padanan Buku Teks, tarikh negeri, format A4 dan CI belum lulus.  
 **Pengeluaran:** Staging sahaja; tidak mengubah main, database, Telegram atau Web.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 4.3.1; BAM PKJR Tahun 3 Aktiviti 14 m/s 16, *Pencahayaan dan Kebolehlihatan*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 14 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid membandingkan kebolehlihatan pejalan kaki dalam situasi terang dan gelap dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa dua perbezaan dan satu langkah selamat.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

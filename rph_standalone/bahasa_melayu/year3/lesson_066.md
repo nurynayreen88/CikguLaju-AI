@@ -32,6 +32,22 @@
 **Guru:** Merumuskan kemahiran pantun keselamatan dan nilai keselamatan atau kerjasama.
 **Murid:** Menyatakan satu contoh kemahiran yang dipelajari.
 
-**Status QA:** HOLD — belum disahkan sepenuhnya terhadap halaman BT, format A4, takwim negeri dan CI.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Nota keselamatan akademik:** Tajuk BA tidak menggantikan tajuk BT. Kesamaan sumber, PKJR atau sesi susulan masih perlu pengesahan.  
 **Penerbitan:** Staging sahaja; tidak menukar database atau produk aktif.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 3.1.3; BAM PKJR Tahun 3 Aktiviti 12 m/s 14, *Perbezaan Peraturan dan Undang-undang Jalan Raya*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 12 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid membina dua ayat perbandingan peraturan dengan undang-undang jalan raya dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa dua perbandingan dan satu sebab kepatuhan.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

@@ -31,5 +31,21 @@
 **Tindakan guru:** Guru merumuskan kemahiran bertutur menerangkan peraturan keselamatan rekreasi dan nilai dalam situasi.
 **Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
 
-**Status QA:** HOLD — semakan BT / padanan BA–SP / PKJR atau Lesson ulangan belum lengkap.
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 3.1.3; BAM PKJR Tahun 3 Aktiviti 11 m/s 13, *Peraturan dan Undang-undang Jalan Raya*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 11 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid mengelaskan dua contoh peraturan dan dua contoh undang-undang dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa empat contoh yang dikelaskan tepat.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

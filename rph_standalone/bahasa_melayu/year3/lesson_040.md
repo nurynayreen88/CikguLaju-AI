@@ -32,5 +32,21 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai hari ini.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.3.2; BAM m/s 9, Aktiviti 7; fokus urutan dan fungsi lampu isyarat. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Nota kawalan:** Jangan menukar kod SP rasmi atau menganggap bahan tambahan guru sebagai latihan asal Buku Aktiviti. Jangan diterbitkan pada Telegram/Web sebelum semakan sumber dan pintu READY lulus.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 2.3.2; BAM PKJR Tahun 3 Aktiviti 7 m/s 9, *Fungsi Lampu Isyarat*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 7 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid menyusun warna lampu isyarat dan menerangkan tindakan pengguna dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa tiga warna dan fungsi tepat.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

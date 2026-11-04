@@ -32,5 +32,21 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran baharu dan memberi satu contoh daripada kehidupan.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 1.1.3; BAM m/s 4–5, Aktiviti 3; fokus tindakan yang selamat apabila kenderaan bergerak. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Nota kawalan:** Pemetaan aktiviti BA diperoleh daripada buku asal yang dibaca. Tiada arahan buku atau kod rasmi yang direka. Fail ini tidak diterbitkan kepada guru.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 1.1.3; BAM PKJR Tahun 3 Aktiviti 3 m/s 4, *Tindakan yang Selamat*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 3 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid memadankan situasi selepas turun bas, kenderaan mengundur dan persimpangan dengan tindakan dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa tiga padanan situasi-tindakan.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

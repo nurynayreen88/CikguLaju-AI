@@ -31,7 +31,23 @@
 **Guru:** Merumuskan kegunaan kemahiran karangan separa berpandu dalam konteks U11: Hormat-menghormati Budaya Kita.
 **Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
 
-**Status QA:** HOLD — **bukan READY**.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Modul PKJR asal belum dipadankan  
 **Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 4.4.1; BAM PKJR Tahun 3 Aktiviti 15 m/s 17, *Tempat Melintas yang Selamat*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 15 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid memilih antara jejantas, lintasan pejalan kaki dan lintasan berisyarat mengikut situasi dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa tiga tempat melintas yang sesuai.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

@@ -32,5 +32,21 @@
 **Tindakan murid:** Murid memberi satu contoh cara menggunakan pembelajaran hari ini.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 2.4.1; BAM m/s 11, Aktiviti 9; fokus arah lalu lintas. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Kawalan:** Jangan menganggap bahan yang dicadang oleh guru sebagai aktiviti rasmi Buku Aktiviti. Tiada pengesahan READY, dan tiada perubahan produksi.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** RPT BM 2026 calon HP PKJR 2.4.1; BAM PKJR Tahun 3 Aktiviti 9 m/s 11, *Arah Lalu Lintas*. Buku Aktiviti PKJR ialah bahan berasingan daripada BA Bahasa Melayu.
+
+**Guru:** Guru menunjukkan bahan daripada Aktiviti 9 dan menerangkan hubungan keselamatan jalan raya dengan fokus PdP Bahasa Melayu.
+
+**Murid:** Murid menandakan arah pergerakan kenderaan pada gambar jalan dua hala dan mencatat jawapan pada bahan BAM/lembaran respons.
+
+**PBD PKJR:** Periksa dua arah serta satu langkah selamat.
+
+**Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
+
+**Status sumber:** DRAF semakan pedagogi — aktiviti sesuai indeks BAM, namun belum lulus BPG dan READY.
+
+**Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
