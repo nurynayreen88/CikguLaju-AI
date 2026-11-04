@@ -13,7 +13,7 @@ ALLOWED = frozenset(range(1, 161))
 OFFICIAL_SOW_INDEX = Path(__file__).resolve().parents[1] / "audits" / "english_primary_2_6_official_sow_index_20261103.json"
 OFFICIAL_SOW_VERSION = "2026-11-03-source-table-2-6"
 Y6_TEACHER_CHOICES = frozenset((16, 32, 48, 64, 80, 96, 112, 128, 144, 155, 156, 157, 158, 160))
-TEACHER_SELECTED_STANDARD = "Teacher to choose Year 6 DSKP standard (not fixed by SOW)"
+TEACHER_SELECTED_STANDARD = "Teacher-selected: choose Year 6 DSKP standard (not fixed by SOW)"
 
 
 def _official_y6_sow(number, *, index_path=OFFICIAL_SOW_INDEX):
