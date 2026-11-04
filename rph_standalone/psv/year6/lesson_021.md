@@ -11,7 +11,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Variasi Rekaan dan mengaitkannya dengan jalinan kain, harmoni corak celupan, lipatan dan ikatan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Variasi Rekaan dan mengaitkannya dengan jalinan kain, harmoni corak celupan, lipatan dan ikatan. Kriteria kejayaan: Kad pemerhatian mengandungi tiga istilah visual tepat dan satu penerangan kaitan dengan karya.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Variasi Rekaan** dalam tema **Celupan Kreatif**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
