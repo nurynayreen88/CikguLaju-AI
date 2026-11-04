@@ -83,7 +83,7 @@ def _source_record(year, number):
                 if matches:
                     return matches[-1]
         return None
-    return meta, find_code("main sk/sp"), find_code("complementary sk/sp", source)
+    return meta, find_code("main sk/sp"), find_code("complementary sk/sp"), source
 
 
 
