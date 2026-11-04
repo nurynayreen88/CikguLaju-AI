@@ -9,22 +9,24 @@
 **SP:** 3.1 — Menyenaraikan tanggungjawab di sekolah. | 3.2 — Menjelaskan cara melaksanakan tanggungjawab mengikut peranan dan tugas di sekolah.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual siapa-buat-apa-bila, borang semak; fail `materials/pendidikan_moral/year3/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 3 m/s 17–19 (PDF 23–25), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year3/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menyiapkan tugasan **SP 3.1** (Menyenaraikan tanggungjawab di sekolah.) dan **SP 3.2** (Menjelaskan cara melaksanakan tanggungjawab mengikut peranan dan tugas di sekolah.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **penjelasan dalam dua ayat serta satu contoh** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
+Murid menyenaraikan tiga tugas di sekolah dan menerangkan dua cara melaksanakannya. Kriteria kejayaan: Jadual tiga tugas sekolah dengan dua penerangan cara; guru semak bukti individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Pengawas dan ketua kelas membahagikan tugas dengan jelas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Murid Bertanggungjawab** dari Buku Teks m/s 17. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Tugasan 3.1:** Guru membentangkan situasi **Pengawas dan ketua kelas membahagikan tugas dengan jelas** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Murid Bertanggungjawab** (mula m/s 17; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan tanggungjawab di sekolah.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru memperlihatkan Unit 3 m/s 17: mengemas kelas, menjaga kebersihan dan mematuhi peraturan. Murid menamakan tindakan yang sesuai.
 
-**Aktiviti 2 (20 minit) — Tugasan 3.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara melaksanakan tanggungjawab mengikut peranan dan tugas di sekolah.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid meneliti tugas pengawas pusat sumber, pengawas kantin dan ketua kelas pada m/s 18–19 lalu menyediakan jadual tugas, cara dan pihak yang terbantu.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 3.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 3.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Bertanggungjawab**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Jadual tiga tugas sekolah dengan dua penerangan cara; guru semak bukti individu. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **bertanggungjawab**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — unit bermula m/s 17 (PDF 23); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Semakan visual buku teks:** Tahun 3, Unit 3 — **Murid Bertanggungjawab**; halaman bercetak 17–19 (PDF 23–25). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 007 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view); [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic). Buku teks asal Drive ID `1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.
