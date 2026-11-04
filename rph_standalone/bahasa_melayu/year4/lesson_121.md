@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 121
 
-**ID:** BM4-P121  
-**Minggu RPT 2027:** M28 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U20: Mari Bertani  
-**Tajuk aktiviti:** Penyediaan Bongkah Cendawan  
-**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.  
-**Standard Pembelajaran (SP):** 1.1.3 — Mendengar, mentafsir dan memberikan respons terhadap soalan secara kritis  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 137  
-**Fokus:** lisan — Penyediaan Bongkah Cendawan  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Penyediaan Bongkah Cendawan' mengikut kemahiran 1.1.3.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P121
+**Minggu RPT 2027:** M28 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U20: Mari Bertani
+**Tajuk aktiviti:** Penyediaan Bongkah Cendawan
+**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
+**Standard Pembelajaran (SP):** 1.1.3 — Mendengar, mentafsir dan memberikan respons terhadap soalan secara kritis
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 137. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** taklimat Puan Ayu tentang penyediaan bongkah cendawan dan grafik potensi industri serta produk cendawan.
+**Objektif PdP:** Pada akhir PdP, murid dapat memberikan sekurang-kurangnya dua alasan berasas tentang manfaat bongkah cendawan selepas mendengar taklimat.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Penyediaan Bongkah Cendawan' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U20: Mari Bertani.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Penyediaan Bongkah Cendawan pada halaman Buku Teks 137 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Penyediaan Bongkah Cendawan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Penyediaan Bongkah Cendawan' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Penyediaan Bongkah Cendawan'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing murid meneliti grafik BT m/s 137 selepas simulasi taklimat Puan Ayu mengenai kelebihan bongkah cendawan
+**Murid:** Catat isi tentang mudah dijaga, pengeluaran terkawal serta produk berasaskan cendawan
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Penyediaan Bongkah Cendawan'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Kemukakan soalan kritis sama ada murid berminat mengusahakan bongkah cendawan dan mengapa
+**Murid:** Berikan dua alasan lisan disokong fakta grafik dan jawab satu soalan susulan
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.1.3 — Mendengar, mentafsir dan memberikan respons terhadap soalan secara kritis) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak dua alasan, kaitan sebab-akibat serta kesantunan pertuturan
+**Murid:** Baiki alasan yang tidak berkaitan dengan kelebihan daripada bahan
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Penyediaan Bongkah Cendawan' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 1.1.3 berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Penyediaan Bongkah Cendawan.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 137 mengandungi grafik bongkah cendawan, soalan minat dan alasan, SP 1.1.3.
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.

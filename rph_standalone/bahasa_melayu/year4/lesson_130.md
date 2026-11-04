@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 130
 
-**ID:** BM4-P130  
-**Minggu RPT 2027:** M30 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan  
-**Tajuk aktiviti:** Inkubator Pintar  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.4 (i), (ii) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 147  
-**Fokus:** tatabahasa — Inkubator Pintar  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Inkubator Pintar'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P130
+**Minggu RPT 2027:** M30 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan
+**Tajuk aktiviti:** Inkubator Pintar
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.4 (i), (ii) — Memahami dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 147. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** karangan ringkas status Zara tentang inkubator pintar di pameran inovasi, dengan fakta kapasiti telur, suhu/kelembapan serta kawalan telefon.
+**Objektif PdP:** Pada akhir PdP, murid dapat membina empat ayat tentang inkubator pintar menggunakan kata hubung dan kata sendi nama dengan tepat.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Inkubator Pintar' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Inkubator Pintar pada halaman Buku Teks 147 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Inkubator Pintar.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Inkubator Pintar'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata tugas mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Inkubator Pintar'.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca fakta pada BT m/s 147 dan mengenal pasti hubungan tempat, fungsi serta tujuan teknologi
+**Murid:** Kenal pasti dua kata hubung dan dua kata sendi yang sesuai untuk menyambung maklumat
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Inkubator Pintar' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan ayat majmuk atau ayat berfrasa sendi berdasarkan fakta inkubator tanpa mengubah keterangan sumber
+**Murid:** Tulis empat ayat menggunakan kata hubung dan sendi nama yang sesuai dalam catatan status Zara
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.4 (i), (ii) — Memahami dan menggunakan kata tugas mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak penggunaan kata hubung, sendi nama, ejaan serta ketepatan fakta
+**Murid:** Baiki dua ayat yang tersalah kata tugas atau tidak logik
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Inkubator Pintar' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 5.1.4 (i), (ii) berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Inkubator Pintar.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 147 mencetak SP 5.1.4(i)(ii) dan arahan membina ayat menggunakan kata sendi nama serta kata hubung tentang inkubator pintar.
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.

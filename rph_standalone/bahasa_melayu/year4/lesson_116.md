@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 116
 
-**ID:** BM4-P116  
-**Minggu RPT 2027:** M27 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U19: Kreatifnya Petani Kita  
-**Tajuk aktiviti:** Alat Semaian Automatik  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 132  
-**Fokus:** tulisan — Alat Semaian Automatik  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Alat Semaian Automatik' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P116
+**Minggu RPT 2027:** M27 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U19: Kreatifnya Petani Kita
+**Tajuk aktiviti:** Alat Semaian Automatik
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 132. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** dialog Encik Harun dengan Zara, Dina dan Alif tentang alat semaian automatik dan lima soalan pemahaman.
+**Objektif PdP:** Pada akhir PdP, murid dapat menjawab sekurang-kurangnya empat daripada lima soalan bertumpu dan bercapah berdasarkan dialog alat semaian.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Alat Semaian Automatik' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U19: Kreatifnya Petani Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Alat Semaian Automatik pada halaman Buku Teks 132 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Alat Semaian Automatik.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Alat Semaian Automatik' dan memodelkan langkah menyusun isi serta menulis mengikut Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Alat Semaian Automatik'.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca dialog BT m/s 132 dan asingkan fakta pencipta, kegunaan dan proses penyemaian
+**Murid:** Garis jawapan fakta serta alasan bagi soalan tentang pengeluaran sayuran dan beban kerja
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Tunjukkan cara menulis jawapan lengkap berasaskan dialog Encik Harun
+**Murid:** Jawab empat soalan dengan tepat termasuk satu jawapan yang mempunyai alasan
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak keselarasan fakta, kejelasan alasan dan bahasa dalam empat jawapan
+**Murid:** Baiki satu jawapan dengan merujuk frasa sebenar dalam teks
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Alat Semaian Automatik' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 3.2.2 berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Alat Semaian Automatik.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 132 mengandungi dialog alat semaian dan lima soalan kefahaman, SP 3.2.2.
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.

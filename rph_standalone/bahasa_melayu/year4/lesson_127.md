@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 127
 
-**ID:** BM4-P127  
-**Minggu RPT 2027:** M29 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan  
-**Tajuk aktiviti:** Emas Borneo  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 144  
-**Fokus:** bacaan — Emas Borneo  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Emas Borneo' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P127
+**Minggu RPT 2027:** M29 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan
+**Tajuk aktiviti:** Ikan Empurau Puan Puri
+**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
+**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 144. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** cerita Puan Puri memelihara ikan empurau yang digelar Emas Borneo, menggunakan tiga kolam, buah engkabang dan pengawetan sejuk.
+**Objektif PdP:** Pada akhir PdP, murid dapat membaca kisah Puan Puri dan melengkapkan sekurang-kurangnya tiga kategori carta keistimewaan ikan empurau.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Emas Borneo' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U21: Ternakan Jana Pendapatan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Ikan Empurau Puan Puri pada halaman Buku Teks 144 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Ikan Empurau Puan Puri.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Emas Borneo' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Emas Borneo' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan BT m/s 144 dan kenal pasti sebab Puan Puri menggunakan tiga kolam, buah engkabang serta pembungkusan vakum
+**Murid:** Garis tiga tindakan yang disebut dalam petikan berkaitan kebersihan, rasa dan kesegaran
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Paparkan carta Keistimewaan Ikan Empurau Puan Puri lalu bimbing pengisian sebab serta cara
+**Murid:** Lengkapkan tiga cabang carta berdasarkan cerita tanpa menambah prosedur perikanan lain
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak tiga isi dan bukti daripada petikan asal
+**Murid:** Baiki fakta yang dicampur dengan andaian
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Emas Borneo' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 2.3.1 berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Ikan Empurau Puan Puri.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 144 mencetak tajuk Ikan Empurau Puan Puri, menggunakan gelaran 'emas Borneo' dalam petikan, dan tugasan melengkapkan carta mengikut SP 2.3.1.
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.

@@ -1,42 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 123
 
-**ID:** BM4-P123  
-**Minggu RPT 2027:** M28 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Pertanian dan Penternakan; U20: Mari Bertani  
-**Tajuk aktiviti:** Buah Kuning Telur + PKJR  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.3 — Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 140  
-**Fokus:** tulisan — Buah Kuning Telur  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Buah Kuning Telur' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P123
+**Minggu RPT 2027:** M28 (tarikh sebenar tertakluk jadual kelas)
+**Tema/Unit:** Pertanian dan Penternakan; U20: Mari Bertani
+**Tajuk aktiviti:** Buah Kuning Telur + PKJR
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.3 — Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 140. **Buku Aktiviti:** Halaman dan latihan belum disahkan.
+**Fokus BT:** rencana Buah Kuning Telur yang menyebut warna, saiz, kulit, pulpa, biji dan khasiat sebagai bahan pengelasan grafik.
+**Objektif PdP:** Pada akhir PdP, murid dapat menganalisis petikan serta melengkapkan sekurang-kurangnya empat bahagian grafik ciri buah kuning telur.
+**Bahan:** BT, gambar/petikan/grafik asal, bahan latihan khusus dan senarai semak PBD.
+**Masa:** 60 minit (ubah ikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Buah Kuning Telur' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Pertanian dan Penternakan; U20: Mari Bertani.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan ilustrasi/topik Buah Kuning Telur + PKJR pada halaman Buku Teks 140 dan soal pengalaman murid yang berkaitan.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal tentang Buah Kuning Telur + PKJR.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Buah Kuning Telur' dan memodelkan langkah menyusun isi serta menulis mengikut Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Buah Kuning Telur'.
+## Aktiviti 1 — Bukti Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca petikan BT m/s 140 dan mengecam ciri kulit, isi/pulpa, bilangan biji dan saiz
+**Murid:** Gariskan fakta khusus dalam sumber dan kenal pasti kategori pada grafik yang perlu dilengkapkan
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Paparkan grafik Ciri-ciri Buah Kuning Telur dengan kategori kulit, pulpa, biji serta saiz
+**Murid:** Isi empat kategori menggunakan ayat/frasa tepat daripada sumber
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.3 — Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak empat kategori dan elakkan fakta pemakanan yang direka
+**Murid:** Baiki satu ciri yang dimasukkan ke kategori salah
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Buah Kuning Telur' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 3.2.3 berdasarkan tugasan halaman BT.
+**Murid:** Nyatakan satu fakta atau kemahiran baharu yang berkaitan dengan Buah Kuning Telur + PKJR.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 140 meminta membaca, menganalisis dan mencatat maklumat buah kuning telur ke grafik mengikut SP 3.2.3.
+**Status QA:** DRAF — aktiviti dan halaman BT disemak secara khusus; BA, takwim negeri, PKJR jika berkaitan, visual Word/PDF A4 serta ujian Telegram belum disahkan. Bukan FINAL READY.
