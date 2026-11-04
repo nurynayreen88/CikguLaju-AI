@@ -22,3 +22,11 @@ The following nine SOW teacher-choice lessons now have a distinct teacher/pupil 
 - Lessons 88 and 160: Project-Based Learning — explicitly suggested CikguLaju projects (My Dream School Day and Eco-Holiday Brochure), not official compulsory projects.
 - The existing 151 Year 5 fixed-standard lesson drafts remain behind per-lesson approval and checksum gates. No bulk READY action, no curriculum/Telegram account DB writes, and no change to the credit/entitlement system.
 - **Release limitation:** This makes the nine suggestions available as labelled drafts, not independently approved teaching plans. Printed textbook page/audio checks and real-user native PDF/A4 delivery still require confirmation before final READY.
+
+## 4 November 2026 — full 160-Lesson draft preview rollout
+
+All **151 fixed-standard Year 5** standalone plans now have an explicitly labelled **DRAF CIKGULAJU (SEMAKAN GURU)** native Word/PDF row preview. The source must match the exact official SOW Main/Complementary LS for each Lesson, and mismatched teacher selections fall back without replacing the teacher's existing rows. The separately installed 9 teacher-choice proposals remain clearly labelled CADANGAN CIKGULAJU (DRAF).
+
+**Audit findings:** 151/151 fixed-standard plans passed the Word/PDF row source gate and 151/151 passed offline one-page A4 Word-to-PDF layout verification. The 9 teacher-choice plans previously passed 9/9. These are **offline render tests**, not real-user Telegram or native PDF generation proof.
+
+The original `CIKGULAJU_Y5_DRAFT_RPH_ENABLED` final-approval gate and `release_approvals_2027.json` remain **unchanged and empty**. The new preview does not set READY or imply per-Lesson teacher approval, verified printed book exercises, audio playback, or end-to-end download. Teacher-facing text explicitly identifies the lesson as a draft for checking before classroom use.
