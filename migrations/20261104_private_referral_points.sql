@@ -1,5 +1,5 @@
 -- Private referral points (DRAFT). Additive tables only.
--- Apply in staging after agreeing point values; NO backfill, no changes to
+-- Apply in staging after validating 20% policy; NO backfill, no changes to
 -- existing subscriptions, RPH credits, trials, or pioneer approval RPC.
 -- Enabled only through a server-side CIKGULAJU_REFERRAL_POINTS_ENABLED flag.
 
@@ -20,13 +20,16 @@ CREATE TABLE IF NOT EXISTS public.referral_signups (
 CREATE INDEX IF NOT EXISTS idx_referral_signups_referrer
     ON public.referral_signups(referrer_user_id, captured_at DESC);
 
--- Rules are intentionally empty until the admin decides point values.
--- Plan names follow the existing verified payment records.
-CREATE TABLE IF NOT EXISTS public.referral_reward_rules (
-    plan_code text PRIMARY KEY,
-    points integer NOT NULL CHECK (points > 0),
+-- A single rate applies to ALL eligible verified payment values, not plan-specific points.
+-- Remains disabled until staging checks and controlled launch.
+CREATE TABLE IF NOT EXISTS public.referral_reward_settings (
+    id smallint PRIMARY KEY DEFAULT 1 CHECK (id = 1),
+    reward_percent numeric(5,2) NOT NULL DEFAULT 20.00
+        CHECK (reward_percent > 0 AND reward_percent <= 100),
     enabled boolean NOT NULL DEFAULT false
 );
+INSERT INTO public.referral_reward_settings (id,reward_percent,enabled)
+VALUES (1,20.00,false) ON CONFLICT (id) DO NOTHING;
 
 CREATE TABLE IF NOT EXISTS public.referral_point_events (
     id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -34,7 +37,7 @@ CREATE TABLE IF NOT EXISTS public.referral_point_events (
     referred_user_id bigint NOT NULL REFERENCES public.cikgulaju_users(telegram_user_id),
     payment_kind text NOT NULL CHECK (payment_kind IN ('pioneer','subscription')),
     payment_reference text NOT NULL,
-    points_delta integer NOT NULL CHECK (points_delta > 0),
+    points_delta numeric(12,2) NOT NULL CHECK (points_delta > 0),
     awarded_at timestamptz NOT NULL DEFAULT now(),
     UNIQUE (payment_kind, payment_reference),
     UNIQUE (referred_user_id) -- default: only FIRST successful paid conversion
@@ -48,10 +51,10 @@ ALTER TABLE public.referral_signups ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.referral_reward_rules ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.referral_point_events ENABLE ROW LEVEL SECURITY;
 REVOKE ALL ON public.referral_members, public.referral_signups,
-    public.referral_reward_rules, public.referral_point_events
+    public.referral_reward_settings, public.referral_point_events
     FROM PUBLIC, anon, authenticated;
 GRANT SELECT, INSERT, UPDATE, DELETE ON public.referral_members,
-    public.referral_signups, public.referral_reward_rules,
+    public.referral_signups, public.referral_reward_settings,
     public.referral_point_events TO service_role;
 GRANT USAGE, SELECT ON SEQUENCE public.referral_point_events_id_seq TO service_role;
 
@@ -103,8 +106,9 @@ SET search_path = ''
 AS $$
 DECLARE v_referrer bigint;
 DECLARE v_capture timestamptz;
-DECLARE v_plan text;
-DECLARE v_points integer;
+DECLARE v_amount numeric(12,2);
+DECLARE v_percent numeric(5,2);
+DECLARE v_points numeric(12,2);
 DECLARE v_added bigint;
 BEGIN
     IF p_payer_user_id IS NULL OR p_payer_user_id <= 0
@@ -134,9 +138,11 @@ BEGIN
         ) THEN
             RETURN jsonb_build_object('awarded',false,'reason','not_verified');
         END IF;
-        v_plan := 'PIONEER_LIFETIME';
+        -- Verified Rakan Pembangun program has fixed RM10 payment.
+        -- Do not infer unverified amounts from a receipt screenshot.
+        v_amount := 10.00;
     ELSE
-        SELECT plan_code INTO v_plan
+        SELECT amount_rm INTO v_amount
           FROM public.subscription_payments
          WHERE telegram_user_id=p_payer_user_id
            AND payment_reference=p_payment_reference
@@ -144,16 +150,21 @@ BEGIN
            AND amount_rm > 0
            AND created_at >= v_capture
          LIMIT 1;
-        IF v_plan IS NULL THEN
+        IF v_amount IS NULL THEN
             RETURN jsonb_build_object('awarded',false,'reason','not_verified');
         END IF;
     END IF;
 
-    SELECT points INTO v_points
-      FROM public.referral_reward_rules
-     WHERE plan_code=v_plan AND enabled IS TRUE;
-    IF v_points IS NULL THEN
-        RETURN jsonb_build_object('awarded',false,'reason','rule_not_enabled');
+    SELECT reward_percent INTO v_percent
+      FROM public.referral_reward_settings
+     WHERE id = 1 AND enabled IS TRUE;
+    IF v_percent IS NULL THEN
+        RETURN jsonb_build_object('awarded',false,'reason','reward_disabled');
+    END IF;
+    -- Exact decimal arithmetic, rounded to two decimal point units.
+    v_points := round(v_amount * v_percent / 100, 2);
+    IF v_points <= 0 THEN
+        RETURN jsonb_build_object('awarded',false,'reason','amount_too_small');
     END IF;
     INSERT INTO public.referral_point_events (
         referrer_user_id,referred_user_id,payment_kind,
