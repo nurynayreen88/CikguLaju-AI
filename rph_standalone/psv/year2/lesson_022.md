@@ -3,7 +3,9 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Cetakan — Buah Tempatan  
+**Jenis/Tajuk:** Cetakan — Cantik Menawan
+**Unit RPT 2026:** Unit 6 — Cantik Menawan (BT ms 48–51)  
+**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.2; 3.1.1  
@@ -20,7 +22,7 @@ Murid dapat menyiapkan dua lakaran Buah Tempatan dan memilih satu lakaran berdas
 
 **Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Buah Tempatan. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal cetakan motif buah tempatan, menguji cetakan blok pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal corak cetakan blok yang tersusun, menguji cetakan blok pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat menyiapkan dua lakaran Buah Tempatan dan memilih satu lakaran berdas
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
