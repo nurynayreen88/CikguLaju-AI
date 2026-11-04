@@ -73,5 +73,33 @@ class PSVPreviewQA(unittest.TestCase):
                     self.assertNotIn("DRAF SEMAK", text)
 
 
+    def test_all_210_staged_pdf_previews_fit_exactly_one_a4_page(self):
+        """Full (not sample) layout gate; never writes to production or a repository file."""
+        with tempfile.TemporaryDirectory(prefix="psv-a4-qa-") as temp:
+            dest = Path(temp)
+            checked = 0
+            for year in range(2, 7):
+                for pdp in range(1, 43):
+                    with self.subTest(year=year, pdp=pdp):
+                        docx_path, pdf_path = preview.render(year, pdp, dest, preview=True)
+                        doc = Document(docx_path)
+                        sec = doc.sections[0]
+                        self.assertAlmostEqual(sec.page_width.cm, 21.0, delta=0.1)
+                        self.assertAlmostEqual(sec.page_height.cm, 29.7, delta=0.1)
+                        pages = PdfReader(str(pdf_path)).pages
+                        self.assertEqual(len(pages), 1)
+                        page = pages[0]
+                        self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)
+                        self.assertAlmostEqual(float(page.mediabox.height), 841.89, delta=1)
+                        text = page.extract_text()
+                        self.assertIn(f"TAHUN {year}", text)
+                        self.assertIn(f"PdP {pdp:03d}", text)
+                        self.assertNotIn("DRAF SEMAK", text)
+                        docx_path.unlink()
+                        pdf_path.unlink()
+                        checked += 1
+            self.assertEqual(checked, 210)
+
+
 if __name__ == "__main__":
     unittest.main()
