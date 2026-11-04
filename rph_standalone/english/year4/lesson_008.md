@@ -4,7 +4,7 @@
 **Main SP:** 3.2.3  
 **Complementary SP:** 3.2.2  
 **Duration:** 60 minutes  
-**References:** SB p.8; TB pp.22–23; Track 11 (SOW; CD1 designation pending independent TB/audio verification); Year 4 SOW Lesson 8
+**References:** SB p.8; TB pp.22–23; Class CD1 Track 11 (printed TB p.22 Activity 1; recording content/Telegram delivery unverified); Year 4 SOW Lesson 8
 
 ## Set induction (10 minutes)
 **Teacher:** Mime daily routines and ask pupils to guess.
@@ -15,8 +15,8 @@
 **Pupils:** Predict meanings of figure skater, chess player, ice-skate and ice-skating rink.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow TB Activity 1 and use Track 11 with the reading text.
-**Pupils:** Read the text and listen to Track 11.
+**Teacher:** Follow TB Activity 1 and use Class CD1 Track 11 with the reading text.
+**Pupils:** Read the text and listen to Class CD1 Track 11.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Model inferring one unfamiliar routine word from its surrounding sentence, then guide TB Activity 2 and ask pupils to explain their clues.
