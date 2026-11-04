@@ -1,0 +1,69 @@
+name: BM RPH Tahun 4-6 - bina 496 DRAF tanpa ubah produksi
+on:
+  push:
+    branches:
+      - feat/bm-standalone-rph-tahun4-6-20261104
+    paths:
+      - 'tools/build_bm_rph_year4_6_draft.py'
+      - '.github/workflows/bm-rph-year4-6-draft.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-rph:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build 165 + 166 + 165 standalone Markdown RPH
+        run: python tools/build_bm_rph_year4_6_draft.py
+      - name: Audit 496 source-aligned RPH and prevent READY/BA fabrication
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,re
+          root=Path("rph_standalone/bahasa_melayu")
+          expected={4:165,5:166,6:165}
+          for year,count in expected.items():
+              folder=root/f"year{year}"
+              files=sorted(folder.glob("lesson_???.md"))
+              assert len(files)==count,(year,len(files))
+              for num,path in enumerate(files,1):
+                  text=path.read_text(encoding="utf-8")
+                  assert f"PdP {num:03d}" in text
+                  assert f"BM{year}-P{num:03d}" in text
+                  assert all(f"## {s}" in text for s in (
+                    "Set induksi","Aktiviti 1","Aktiviti 2","Pengukuhan dan penilaian PBD","Penutup"))
+                  assert "**Guru:**" in text and "**Murid:**" in text
+                  assert re.search(r"\*\*Status semakan:\*\* (?:DRAF|HOLD)\b",text)
+                  assert "Tidak READY" in text and "Tiada halaman/latihan BA" in text
+                  assert not re.search(r"\*\*Status semakan:\*\* READY",text)
+              print("PASS",year,len(files))
+          report=json.loads(Path("rpt_2027/bahasa_melayu/AUDIT_RPH_BM_T4_T6_BATCH_20261104.json").read_text())
+          assert sum(x["files"] for x in report["records"])==496
+          assert all(x["READY"]==0 for x in report["records"])
+          print("PASS 496/496 draft RPH, 0 READY")
+          PY
+      - name: Archive review package
+        uses: actions/upload-artifact@v4
+        with:
+          name: CikguLaju-BM-T4-T6-496-RPH-DRAF-20261104
+          path: |
+            rph_standalone/bahasa_melayu/year4/
+            rph_standalone/bahasa_melayu/year5/
+            rph_standalone/bahasa_melayu/year6/
+            rpt_2027/bahasa_melayu/AUDIT_RPH_BM_T4_T6_BATCH_20261104.json
+          if-no-files-found: error
+      - name: Commit only new BM RPH and audit into feature branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rph_standalone/bahasa_melayu/year4 rph_standalone/bahasa_melayu/year5 rph_standalone/bahasa_melayu/year6 rpt_2027/bahasa_melayu/AUDIT_RPH_BM_T4_T6_BATCH_20261104.json
+          git diff --staged --quiet && exit 0
+          git commit -m 'Add 496 BM Year4-6 standalone RPH DRAF (not READY)'
+          git push origin HEAD:feat/bm-standalone-rph-tahun4-6-20261104
