@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 021
+**Status:** DRAF SEMAK  
+**Unit:** Projek Seni Visual penggal pertama  
+**Tajuk:** Pameran penggal pertama  
+**SK:** 5.1  
+**SP:** 5.1.3; 5.1.4; 5.1.5; 5.1.6  
+**Buku Teks:** Projek Seni Visual penggal pertama  
+**BBM:** hasil karya murid, label, pita kertas dan papan pameran  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat mengadakan pameran, menerangkan karya sendiri dan mengemas selepas pameran. Evidens: kapsyen, pelan, foto atau ulasan lisan.
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Kolaj dan Gurisan — Pungguk Rindu Akan Bulan
-**Unit rujukan 2026:** Unit 6 — Pungguk Rindu Akan Bulan  
-**Fokus:** Perhatikan dan teroka  
-**SK:** 1.1; 2.1  
-**SP:** 1.1.1; 2.1.1  
-**Teknik:** gabungan kolaj dan gurisan  
-**Bahasa seni visual:** garisan, jalinan, kontra, kepelbagaian  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon, kertas warna, gam
-
-## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh kolaj dan gurisan dan menghasilkan satu sampel gabungan kolaj dan gurisan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Merak. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh kolaj dan gurisan bertema Burung Merak dan membandingkan garisan, jalinan, kontra, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik gabungan kolaj dan gurisan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk karya pungguk dengan gabungan kolaj dan gurisan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan contoh galeri kecil yang selamat.
+**Aktiviti 1 (15 minit):** Guru menerangkan pengurusan pameran, murid membahagi peranan.
+**Aktiviti 2 (25 minit) — Projek:** Murid mempamerkan karya, memberi ulasan tentang seni, menjaga keselamatan karya dan membersihkan ruang pameran.
+**Pengukuhan/Pentaksiran (10 minit):** Guru memerhati kerjasama, proses pameran dan apresiasi.
+**Penutup (5 minit):** Murid membuat refleksi dan menyusun alatan.
+**Pembezaan:** Sediakan kad peranan dan templat kapsyen.
+**Keselamatan:** Laluan dikosongkan; tiada paku tajam untuk pemasangan.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic).

@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 026
+**Status:** DRAF SEMAK  
+**Unit:** 7 — Bunga Kekwa Mekar  
+**Fokus:** Penerokaan visual | **Teknik:** Mozek dan catan  
+**SK:** 1.1; 2.1  
+**SP:** 1.1.1; 2.1.3  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 58–59 (unit ms 58-65)  
+**BBM:** cat poster, kertas warna, gam, berus  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat menyatakan dua bahasa seni visual yang hadir pada karya Bunga Kekwa Mekar serta meneroka dua media. Evidens: dua percubaan media dan dua istilah bahasa seni.
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Mozek dan Catan — Bunga Kekwa Mekar
-**Unit rujukan 2026:** Unit 7 — Bunga Kekwa Mekar  
-**Fokus:** Lakar dan pilih media  
-**SK:** 2.1; 3.1  
-**SP:** 2.1.3; 3.1.1  
-**Teknik:** gabungan mozek dan catan  
-**Bahasa seni visual:** rupa, warna, harmoni  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** cebisan kertas, cat, gam
-
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Taman Flora dan memilih satu lakaran berdasarkan rupa, warna, harmoni.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Flora. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Taman Flora. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal bunga kekwa dengan mozek dan catan, menguji gabungan mozek dan catan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Bunga Kekwa Mekar; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan BT ms 58–59 dan menjelaskan gabungan mozek dan catan pada kelopak bunga kekwa; murid menunjukkan contoh unsur seni pada imej.
+**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Lakar bunga kekwa dan buat percubaan catan latar serta kepingan mozek kelopak. Dua sampel dibandingkan dan dicatat.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media dan dua istilah bahasa seni dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
