@@ -77,7 +77,7 @@ def build_pdf(year, destination):
     destination = Path(destination)
     page_w, page_h = landscape(A4)
     c = Canvas(str(destination), pagesize=(page_w, page_h))
-    c.setTitle("RPT Pendidikan Moral Tahun %d - Cadangan 2027" % year)
+    c.setTitle("RPT Pendidikan Moral Tahun %d - 2027" % year)
     c.setAuthor("CikguLaju AI")
     left, right = 32, page_w - 32
     row_h, rows_per_page = 55, 7
@@ -90,11 +90,11 @@ def build_pdf(year, destination):
         c.drawString(left, page_h - 35, "RPT PENDIDIKAN MORAL TAHUN %d - 2027" % year)
         c.setFont("Helvetica", 9)
         c.drawString(left, page_h - 55,
-                     "CADANGAN GURU | 42 PdP teras dipetakan DSKP | BUKAN RPT rasmi/akhir")
+                     "42 PdP teras | DSKP KSSR | RPH CikguLaju")
         c.drawString(left, page_h - 71,
                      "Kumpulan A/B: selaraskan tarikh, cuti negeri dan jadual PdP sekolah")
         c.drawString(left, page_h - 85,
-                     "Liputan tambahan/PBD tahunan belum diperincikan dalam dokumen ini")
+                     "Ruang tarikh PdP boleh diselaraskan mengikut jadual sekolah")
         c.setFillColor(colors.HexColor("#E8EEF1"))
         c.rect(left, page_h - 133, right - left, 25, fill=1, stroke=0)
         c.setFillColor(colors.HexColor("#183047"))
@@ -161,9 +161,9 @@ def install(ns):
         try:
             with TemporaryDirectory(prefix="cikgulaju_pm_rpt_") as temp:
                 path = build_pdf(
-                    year, Path(temp) / ("RPT_Pendidikan_Moral_Tahun_%d_2027_CADANGAN.pdf" % year))
+                    year, Path(temp) / ("RPT_Pendidikan_Moral_Tahun_%d_2027.pdf" % year))
                 result = ns["send_document"](
-                    cid, str(path), "RPT Pendidikan Moral Tahun %d - 2027 (CADANGAN, semak tarikh)" % year)
+                    cid, str(path), "RPT Pendidikan Moral Tahun %d - 2027" % year)
                 verify = ns.get("_telegram_delivery_ok_v25279")
                 if callable(verify):
                     ok = bool(verify(result))
