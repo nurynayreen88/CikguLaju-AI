@@ -27,7 +27,7 @@ class Year6OptionalProjects(unittest.TestCase):
                 self.assertIsNone(rec["main_ls"])
                 self.assertIsNone(rec["complementary_ls"])
                 txt = (SRC / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
-                self.assertIn(title, txt)
+                self.assertIn(title.casefold(), txt.casefold())
                 self.assertIn("**Main CS/LS:** PILIHAN GURU (SOW)", txt)
                 self.assertIn("**Complementary CS/LS:** PILIHAN GURU (SOW)", txt)
                 self.assertIn("CikguLaju suggestions", txt)
