@@ -7,32 +7,32 @@
 **Language focus:** Present perfect review  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.42; TB pp.72–73  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on an outdoor adventure.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Prepare and perform a PB p.42 adventure-camp interview, ask at least four meaningful questions and report two accurate facts about a partner.  
+**PBD evidence:** Four comprehensible interview questions and a clear short candidate profile (Speaking 2.1.1), with appropriate answers to supported questions (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review PB p.42 boxed interview vocabulary using short definitions.  
+**Pupils:** Identify two job-interview words and check one meaning in a dictionary.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Which adventure would you try and why?”, drawing on Present perfect review.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.72 Activities 1–2: infer interview questions and complete a candidate-question form.  
+**Pupils:** Write four suitable interview questions using the printed form and exchange ideas with a partner.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow TB p.72 Activity 3 and the p.73 Speaking skills note to model applicant/interviewer roles.  
+**Pupils:** Practise the questions and conduct the role-play, asking follow-up questions when appropriate.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Invite volunteers to report what they learned about partners using PB p.42 Activity 4.  
+**Pupils:** Describe two partner facts orally and discuss which camp job might suit the partner.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess four clear interview questions and two independently reported facts; provide targeted oral correction.  
+**Pupils:** Ask one question independently and revise one unclear interview response.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.73 Cooler: Come to my adventure camp.  
+**Pupils:** Invite a classmate to an imagined adventure camp using one accurate reason.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

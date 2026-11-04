@@ -5,7 +5,20 @@ on:
     paths:
       - 'tools/verify_english_y4_y6_a4_20261104.py'
       - '.github/workflows/english-y6-twelve-fixed-word-a4-20261104.yml'
-      - 'rph_standalone/english/year6/**'
+      - 'rph_standalone/english/year6/lesson_001.md'
+      - 'rph_standalone/english/year6/lesson_002.md'
+      - 'rph_standalone/english/year6/lesson_003.md'
+      - 'rph_standalone/english/year6/lesson_004.md'
+      - 'rph_standalone/english/year6/lesson_006.md'
+      - 'rph_standalone/english/year6/lesson_007.md'
+      - 'rph_standalone/english/year6/lesson_008.md'
+      - 'rph_standalone/english/year6/lesson_009.md'
+      - 'rph_standalone/english/year6/lesson_011.md'
+      - 'rph_standalone/english/year6/lesson_012.md'
+      - 'rph_standalone/english/year6/lesson_013.md'
+      - 'rph_standalone/english/year6/lesson_014.md'
+      - 'web/english_y6_standalone_runtime.py'
+      - 'qa/english_word_builder_snapshot.py'
   workflow_dispatch:
 permissions: {contents: read}
 jobs:

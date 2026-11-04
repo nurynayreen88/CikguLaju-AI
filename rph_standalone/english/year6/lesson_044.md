@@ -7,32 +7,32 @@
 **Language focus:** Cohesion (e.g. but, because), punctuation, tenses review  
 **Duration:** 60 minutes  
 **Materials:** Pupils' writing from Lesson 39; teacher feedback and correction worksheet  
-**Learning objective:** Connect at least 8 sentences into two coherent paragraphs related to an outdoor adventure.  
-**PBD evidence:** Two logically organised paragraphs, 8 sentences and at least two appropriate linking words.
+**Learning objective:** Improve the existing Lesson 39 first draft by correcting feedback-marked cohesion, punctuation and grammar issues; submit a clearer second draft.  
+**PBD evidence:** A revised draft with improved paragraph connections (Writing 4.2.5), two corrected punctuation/grammar features (Writing 4.3.1) and preserved teacher feedback evidence.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Display a sentence with incorrect punctuation or linking words from anonymous Lesson 39 patterns.  
+**Pupils:** Correct the example and explain one linking word.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “Which adventure would you try and why?”. Highlight useful language: Cohesion (e.g. but, because), punctuation, tenses review.  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to an outdoor adventure.
+**Teacher:** Run the SOW error-correction team game and give each pupil a worksheet of sentences with common mistakes.  
+**Pupils:** Individually correct selected sentence errors, then compare with a partner.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate paragraph breaks, topic sentences and basic coordinating connectors using the cited task.  
-**Pupils:** Plan and write two linked paragraphs containing at least 8 sentences in total.
+**Teacher:** Return the annotated Lesson 39 draft and explain the teacher's correction code for cohesion, tense and punctuation.  
+**Pupils:** Identify two feedback marks, discuss what each means, and plan revisions.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Guide pupils to correct their own Lesson 39 writing with a different-colour pen and improve paragraph links.  
+**Pupils:** Create a second draft with clearer sentence connections and at least two meaningful corrections.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Recheck each learner's prior draft against the corrected version; record actual improvement, not only final length.  
+**Pupils:** Show the original and revised sentences and explain two specific corrections.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Play a short active editing game; remind pupils that their draft is a work in progress.  
+**Pupils:** State one writing strategy they will use next time.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

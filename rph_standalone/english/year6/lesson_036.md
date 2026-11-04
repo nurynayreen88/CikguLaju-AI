@@ -7,32 +7,32 @@
 **Language focus:** Present perfect statements (I’ve seen a lion.) and questions/answers: (Have you ever visited Tokyo?)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.37; TB p.65  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on an outdoor adventure.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Conduct a Find Someone Who survey with at least four Have you ever...? questions, record real classmates' responses, and report two findings in the present perfect.  
+**PBD evidence:** Four intelligible interview questions and two accurate peer reports (Speaking 2.1.1), plus relevant understanding of partner questions (Listening 1.2.5).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review Have you ever...? and Yes, I have/No, I haven't with PB p.37 pictures.  
+**Pupils:** Make one present-perfect question and give an accurate short answer.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “Which adventure would you try and why?”, drawing on Present perfect statements (I’ve seen a lion.) and questions/answers: (Have you ever visited Tokyo?).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow the SOW question-card circle game, passing activity picture cards and asking peers about experiences.  
+**Pupils:** Name one pictured adventure and say whether they have done it.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Model the gapped Have you ever...? worksheet and ask pupils to create one extra personal question.  
+**Pupils:** Complete four questions and move around the class to find classmates who answer yes.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Invite pairs to compare their findings; model reports such as 'Adilah has been camping'.  
+**Pupils:** Record classmates' names, report two findings using has/have and check one unclear answer.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess intelligible question word order, accurate names and two reported statements.  
+**Pupils:** Ask a survey question independently and correct one present-perfect report.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.65 Cooler: Experiences for an interactive review.  
+**Pupils:** Say one accurate personal experience and one fact about a classmate.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

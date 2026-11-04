@@ -7,32 +7,32 @@
 **Language focus:** Past simple (e.g. I went skiing) & present perfect (e.g. the best I’ve ever done)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.34–35, 40; TB p.70  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on an outdoor adventure.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read Emma's blog entries in PB pp.34–35 and produce a three-part mind map showing what she did, where she went and her opinions.  
+**PBD evidence:** Three text-supported mind-map categories and at least two accurate blog details (Reading 3.2.2), plus clear labels/corrected spellings (Writing 4.3.3).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show adventure scene cards and ask: “Which adventure would you try and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review the adventure vocabulary and one present-perfect fact about Emma from Lesson 33.  
+**Pupils:** Recall one real blog detail and predict a second activity.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce outdoor adventures, feelings and experiences and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Past simple (e.g. I went skiing) & present perfect (e.g. the best I’ve ever done).  
-**Pupils:** Predict the text from adventure scene cards; highlight two useful clues or words.
+**Teacher:** Allocate PB p.34 January blog reading to three groups: what Emma did, where she went, and what she thought.  
+**Pupils:** Highlight details about skiing, Whistler near Vancouver and Emma's opinion.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about an outdoor adventure; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Build the SOW board mind map from group evidence, then follow TB p.70 Learning to Learn to model a fresh map.  
+**Pupils:** Label what/where/opinion bubbles and extract facts from a second blog entry.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to an outdoor adventure. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow PB p.40 Activity 1 and TB p.70 to examine blog features and improve the mind map.  
+**Pupils:** Create an organised mind map and describe two textual features that make the entry a blog.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check labels, three factual branches and two source-supported details; model a clearer branch if needed.  
+**Pupils:** Show the blog evidence for each category and correct one inaccurate note.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which adventure would you try and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review two unfamiliar blog words through the TB Games Bank.  
+**Pupils:** Define one adventure word and explain why mind maps help reading.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
