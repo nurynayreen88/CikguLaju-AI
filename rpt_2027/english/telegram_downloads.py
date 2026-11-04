@@ -7,6 +7,8 @@ from pathlib import Path
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
 from rpt_2027.pendidikan_islam.telegram_downloads import pdf_ready as pi_pdf_ready
+from rpt_2027.pjpk.telegram_downloads import pdf_ready as pjpk_pdf_ready
+from rpt_2027.pendidikan_moral.telegram_downloads import pdf_ready as moral_pdf_ready
 
 PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
@@ -61,7 +63,7 @@ def install(ns):
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"
                 "English Tahun 2–6 tersedia dalam PDF (160 Lesson/tahun). Bahasa Melayu: RPT DRAF untuk semakan, jika tersedia. Pendidikan Islam: RPT cadangan, jika tersedia. "
-                "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia.",
+                "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia. PJPK Tahun 2–6: RPT DRAF (jika tersedia). Pendidikan Moral: 42 PdP teras (CADANGAN 2027).",
                 kb)
         if is_year:
             suffix = data[len("rpt2027_year_"):]
@@ -79,6 +81,12 @@ def install(ns):
             if pi_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Islam (PDF • Cadangan)",
                             "callback_data": "rpt2027_pi_pdf_%d" % year}])
+            if moral_pdf_ready(year):
+                kb.append([{"text": "Pendidikan Moral (PDF - CADANGAN 2027)",
+                            "callback_data": "rpt2027_pm_pdf_%d" % year}])
+            if pjpk_pdf_ready(year):
+                kb.append([{"text": "📥 PJPK (PDF • DRAF 2027)",
+                            "callback_data": "rpt2027_pjpk_pdf_%d" % year}])
             kb.extend([
                 [{"text": "⬅️ Pilih Tahun", "callback_data": "rpt2027_home"}],
                 [{"text": "🏠 Menu Utama", "callback_data": "home"}],
@@ -87,7 +95,7 @@ def install(ns):
                 "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
                 "Pilih subjek untuk memuat turun RPT.\n"
                 "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\nBahasa Melayu: RPT 2027 DRAF untuk semakan guru, jika tersedia.\n"
-                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\n\n"
+                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: 42 PdP teras (CADANGAN; tarikh sekolah belum disahkan).\n\n"
                 "Tarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
         suffix = data[len("rpt2027_en_pdf_"):]
