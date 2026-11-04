@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Catan — Taman Bunga Tropika  
+**Jenis/Tajuk:** Catan — Senja Nan Indah
+**Unit rujukan 2026:** Unit 1 — Senja Nan Indah (BT ms 6–9)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.1  
@@ -20,7 +21,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh catan dan menghasi
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh catan bertema Taman Bunga Tropika dan membandingkan warna, ruang, jalinan, harmoni. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik basah atas basah. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk catan latar taman menggunakan warna basah.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik basah atas basah. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk catan suasana senja dengan campuran warna basah.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Mozek — Ikan Sisik Pelangi  
+**Jenis/Tajuk:** Mozek — Warna-warni Kek Cawan
+**Unit rujukan 2026:** Unit 2 — Warna-warni Kek Cawan (BT ms 14–17)  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
 **SP:** 3.1.1  
@@ -13,14 +14,14 @@
 **BBM:** cebisan kertas warna, gam
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan mozek sisik ikan dengan susunan bahan, sekurang-kurangnya dua aspek rupa, warna, kontra, kesatuan.
+Murid dapat menghasilkan mozek kek cawan berwarna dengan susunan bahan, sekurang-kurangnya dua aspek rupa, warna, kontra, kesatuan.
 
 ## Aktiviti PdP
 **Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Ikan Sisik Pelangi. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
 **Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat cebisan kertas warna, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan mozek sisik ikan mengikut lakaran menggunakan susunan bahan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan mozek kek cawan berwarna mengikut lakaran menggunakan susunan bahan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri rupa, warna, kontra, kesatuan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

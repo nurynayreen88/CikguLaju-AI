@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Catan — Taman Bunga Tropika  
+**Jenis/Tajuk:** Catan — Senja Nan Indah
+**Unit rujukan 2026:** Unit 1 — Senja Nan Indah (BT ms 6–9)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.1; 3.1.1  
@@ -20,7 +21,7 @@ Murid dapat menyiapkan dua lakaran Taman Bunga Tropika dan memilih satu lakaran 
 
 **Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Taman Bunga Tropika. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal catan latar taman menggunakan warna basah, menguji basah atas basah pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal catan suasana senja dengan campuran warna basah, menguji basah atas basah pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

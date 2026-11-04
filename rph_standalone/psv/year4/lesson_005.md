@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Mozek — Ikan Sisik Pelangi  
+**Jenis/Tajuk:** Mozek — Warna-warni Kek Cawan
+**Unit rujukan 2026:** Unit 2 — Warna-warni Kek Cawan (BT ms 14–17)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.2  
@@ -20,7 +21,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh mozek dan menghasi
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh mozek bertema Ikan Sisik Pelangi dan membandingkan rupa, warna, kontra, kesatuan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik susunan bahan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk mozek sisik ikan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik susunan bahan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk mozek kek cawan berwarna.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Menggambar  
-**Jenis/Tajuk:** Catan — Taman Bunga Tropika  
+**Jenis/Tajuk:** Catan — Senja Nan Indah
+**Unit rujukan 2026:** Unit 1 — Senja Nan Indah (BT ms 6–9)  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
 **SP:** 3.1.1  
@@ -13,14 +14,14 @@
 **BBM:** cat air, kertas tebal, palet
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan catan latar taman menggunakan warna basah dengan basah atas basah, sekurang-kurangnya dua aspek warna, ruang, jalinan, harmoni.
+Murid dapat menghasilkan catan suasana senja dengan campuran warna basah dengan basah atas basah, sekurang-kurangnya dua aspek warna, ruang, jalinan, harmoni.
 
 ## Aktiviti PdP
 **Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Taman Bunga Tropika. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
 **Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat cat air, kertas tebal, palet. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan catan latar taman menggunakan warna basah mengikut lakaran menggunakan basah atas basah, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan catan suasana senja dengan campuran warna basah mengikut lakaran menggunakan basah atas basah, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri warna, ruang, jalinan, harmoni, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
