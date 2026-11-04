@@ -7,6 +7,7 @@ on:
       - 'audits/audit_160_rph.csv'
       - 'tests/test_english_y6_rph_2027_files.py'
       - 'tests/test_english_y6_selected_155_158_skill_phases_20261104.py'
+      - 'tests/test_english_y6_choice_review_96_112_128_144_20261104.py'
       - '.github/workflows/english-y6-rph-2027-checks.yml'
   push:
     branches:
@@ -24,3 +25,4 @@ jobs:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -p 'test_english_y6_rph_2027_files.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y6_selected_155_158_skill_phases_20261104.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y6_choice_review_96_112_128_144_20261104.py' -v
