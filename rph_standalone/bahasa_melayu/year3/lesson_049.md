@@ -3,7 +3,7 @@
 **ID:** BM3-P049  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
 **Tajuk:** Keselamatan Rumah Panjang di Sarawak  
-**SK:** 2.1 Asas membaca dan memahami.  
+**SK:** 2.2 Membaca, memahami, dan menaakul bahan grafik dan bukan grafik.  
 **SP:** 2.2.1 (i) — Membaca, memahami dan mengecam maksud kosa kata  
 **Fokus:** Maksud kosa kata dalam bacaan  
 **Rujukan RPT:** BT1 m/s 43; BA1 m/s 48  
