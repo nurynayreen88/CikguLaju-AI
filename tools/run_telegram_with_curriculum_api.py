@@ -299,3 +299,13 @@ except Exception as _durable_feedback_exc:
     DURABLE_USER_FEEDBACK_STORE_ACTIVE = False
     print("Durable user feedback store installation failed:",
           type(_durable_feedback_exc).__name__,flush=True)
+
+# Read-only admin receipt preview and MYT submit times. The Supabase queue must
+# already be active; never fall back to potentially stale local SQLite receipts.
+try:
+    from web.payment_receipt_admin_runtime import install as install_payment_receipt_admin
+    PAYMENT_RECEIPT_ADMIN_ACTIVE = bool(
+        DURABLE_USER_PAYMENT_STORE_ACTIVE and install_payment_receipt_admin(telegram_runtime))
+except Exception as _receipt_view_exc:
+    PAYMENT_RECEIPT_ADMIN_ACTIVE = False
+    print("Admin payment receipt view unavailable:", type(_receipt_view_exc).__name__, flush=True)
