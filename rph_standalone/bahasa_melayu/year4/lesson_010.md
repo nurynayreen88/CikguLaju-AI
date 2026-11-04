@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 010
 
 **ID:** BM4-P010 | **RPT 2027:** M04 | **Unit:** 2 — Prihatinnya Kita
-**Tajuk deskriptif CikguLaju:** Kemudahan di Lapangan Terbang
+**Tajuk aktiviti:** Kemudahan di Lapangan Terbang
 **SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
 **SP:** 3.2.1 — Membina dan menulis ayat, dan perenggan daripada bahan multimedia.
 **Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 10** (bukan m/s 5); datuk dan nenek menziarahi keluarga Hadif di Johor Bahru. **BA:** Belum disahkan.
