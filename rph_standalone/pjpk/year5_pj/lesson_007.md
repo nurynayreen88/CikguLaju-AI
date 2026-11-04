@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.3, 2.3, 5.1  
 **SP:** 1.3.2, 2.3.1, 5.1.4  
-**Buku teks:** calon m/s 8 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 8, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.3.2 (melakukan kombinasi guling depan dan guling belakang) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.3.1: Mengenal pasti aksi-aksi badan yang membantu putaran.
