@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 140
 
-**ID:** BM4-P140  
-**Minggu RPT 2027:** M32 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita  
-**Tajuk aktiviti:** Tuah Musim Kemarau  
-**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 161  
-**Fokus:** tulisan — Tuah Musim Kemarau  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Tuah Musim Kemarau' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P140
+**Minggu RPT 2027:** M32 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita
+**Tajuk aktiviti:** Tuah Musim Kemarau
+**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.
+**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif dan deskriptif
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 161; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** rangka Tuah Musim Kemarau tentang Encik Faizal menangkap ikan di sawah selepas menuai dan menjual hasilnya.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat menyediakan draf empat perenggan dan menulis karangan deskriptif ringkas berpandukan urutan aktiviti Encik Faizal.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tuah Musim Kemarau' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U23: Usahawan Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Tuah Musim Kemarau daripada BT m/s 161; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Tuah Musim Kemarau.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Tuah Musim Kemarau' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis draf dan menghasilkan penulisan imaginatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Tuah Musim Kemarau'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing murid membaca rangka BT m/s161 termasuk menangkap ikan, membuang bau lumpur, menjual di pasar tani dan menghasilkan ikan kering
+**Murid:** Susun fakta mengikut permulaan, proses, hasil jualan dan kesimpulan
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjuk cara mengembangkan frasa petunjuk menjadi ayat deskriptif berurutan
+**Murid:** Tulis draf pendahuluan, dua isi dan penutup lalu kembangkan menjadi karangan
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak butiran yang berpandukan frasa, kesinambungan dan ejaan
+**Murid:** Sunting dua ayat yang tidak menepati urutan
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Tuah Musim Kemarau' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 3.3.1 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Tuah Musim Kemarau.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s161 mencetak SP3.3.1 dan arahan menulis draf karangan deskriptif daripada kerangka Tuah Musim Kemarau.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

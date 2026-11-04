@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 154
 
-**ID:** BM4-P154  
-**Minggu RPT 2027:** M35 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Integriti; U25: Tanggungjawab Digalas  
-**Tajuk aktiviti:** Warga Kerja,  
-**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.3.2 (i), (ii) — Memahami dan membina pelbagai jenis ayat mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 178-179  
-**Fokus:** tatabahasa — Warga Kerja,  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Warga Kerja,'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P154
+**Minggu RPT 2027:** M35 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Integriti; U25: Tanggungjawab Digalas
+**Tajuk aktiviti:** Kerusi Panas
+**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.
+**Standard Pembelajaran (SP):** 5.3.2 (i), (ii) — Memahami dan membina pelbagai jenis ayat mengikut konteks
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 178–179; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** aktiviti Kerusi Panas Zara sebagai jururawat dan rakan sebagai guru, polis atau tentera menggunakan soalan dan pernyataan tugas pekerjaan.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat mengemukakan tiga ayat tanya dan tiga ayat penyata tentang pekerjaan serta tanggungjawab masyarakat.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Warga Kerja,' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Integriti; U25: Tanggungjawab Digalas.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Kerusi Panas daripada BT m/s 178–179; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Kerusi Panas.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Warga Kerja,'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan membina pelbagai jenis ayat mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Warga Kerja,'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing murid meneliti kad jururawat, guru, polis dan tentera BT m/s178–179
+**Murid:** Senaraikan tiga tugas daripada gambar dan bina kata tanya yang sesuai
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Warga Kerja,' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Jalankan simulasi Kerusi Panas; seorang murid mewakili kerjaya dan menjawab berdasarkan maklumat kad
+**Murid:** Tanya tiga soalan dan berikan tiga pernyataan tentang tugas kerjaya
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.3.2 (i), (ii) — Memahami dan membina pelbagai jenis ayat mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak jenis ayat tanya/penyata dan ketepatan jawapan mengikut kad
+**Murid:** Baiki satu ayat tanya atau penyata yang tersalah fungsi
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Warga Kerja,' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 5.3.2 (i), (ii) berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Kerusi Panas.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s178–179 menyatakan aktiviti Kerusi Panas SP5.3.2(i)(ii) untuk ayat tanya dan ayat penyata, sedangkan tajuk RPT lama terpotong.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 134
 
-**ID:** BM4-P134  
-**Minggu RPT 2027:** M31 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi  
-**Tajuk aktiviti:** Aku Sebatang Pokok Kelapa Sawit  
-**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 154-155  
-**Fokus:** tulisan — Aku Sebatang Pokok Kelapa Sawit  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Aku Sebatang Pokok Kelapa Sawit' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P134
+**Minggu RPT 2027:** M31 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi
+**Tajuk aktiviti:** Aku Sebatang Pokok Kelapa Sawit
+**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.
+**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif dan deskriptif
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 154–155; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** karangan autobiografi Aku Sebatang Pokok Kelapa Sawit dengan rangka pendahuluan, empat isi dan penutup.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat menghasilkan draf enam bahagian serta karangan imaginatif berdasarkan perjalanan buah sawit ke kilang dan produk kegunaan.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Aku Sebatang Pokok Kelapa Sawit' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Aku Sebatang Pokok Kelapa Sawit daripada BT m/s 154–155; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Aku Sebatang Pokok Kelapa Sawit.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Aku Sebatang Pokok Kelapa Sawit' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis draf dan menghasilkan penulisan imaginatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Aku Sebatang Pokok Kelapa Sawit'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing murid membaca pendahuluan dan empat set frasa BT m/s154–155 tentang buah sawit, kilang, minyak masak dan produk
+**Murid:** Susun isi secara berurutan daripada ladang, penuaian, proses, produk sehingga penutup
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan ayat orang pertama 'Aku ...' dan cara membina perenggan daripada rangka asal
+**Murid:** Tulis draf pendahuluan, empat isi, penutup dan kembangkan menjadi autobiografi pendek
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak kesinambungan, sudut pandangan orang pertama, ejaan dan tanda baca
+**Murid:** Sunting sekurang-kurangnya dua ayat agar urutan cerita jelas
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Aku Sebatang Pokok Kelapa Sawit' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 3.3.1 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Aku Sebatang Pokok Kelapa Sawit.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s154–155 menunjukkan rangka autobiografi pokok sawit dan SP3.3.1, bukan tugasan menulis umum.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

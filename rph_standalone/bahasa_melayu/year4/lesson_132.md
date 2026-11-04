@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 132
 
-**ID:** BM4-P132  
-**Minggu RPT 2027:** M31 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi  
-**Tajuk aktiviti:** Hasil Kita Berbeza  
-**Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.  
-**Standard Pembelajaran (SP):** 1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 152  
-**Fokus:** lisan — Hasil Kita Berbeza  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Hasil Kita Berbeza' mengikut kemahiran 1.2.2.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P132
+**Minggu RPT 2027:** M31 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi
+**Tajuk aktiviti:** Hasil Kita Berbeza
+**Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.
+**Standard Pembelajaran (SP):** 1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 152; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** gambar perbandingan kegiatan ekonomi bandar (pusat beli-belah, pemborong dan kewangan) dengan desa (inap desa, kraf, perladangan dan penternakan).
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat menyatakan tiga perbezaan tersurat bandar/desa serta satu pilihan lokasi dengan alasan.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Hasil Kita Berbeza' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U22: Menjana Ekonomi.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Hasil Kita Berbeza daripada BT m/s 152; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Hasil Kita Berbeza.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Hasil Kita Berbeza' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Hasil Kita Berbeza'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Paparkan dua lokasi gambar BT m/s 152 dan jelaskan maklumat tersurat berbanding pandangan peribadi
+**Murid:** Kelaskan tiga kegiatan ekonomi mengikut lokasi yang ditunjukkan
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Hasil Kita Berbeza'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjuk cara membanding beza dua gambar dan membina jawapan 'Saya memilih ... kerana ...'
+**Murid:** Ceritakan tiga perbezaan dan berikan satu pilihan lokasi serta alasan kepada pasangan
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak tiga perbezaan tepat dan alasan disokong maklumat gambar
+**Murid:** Baiki satu alasan yang tiada kaitan dengan gambar
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Hasil Kita Berbeza' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 1.2.2 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Hasil Kita Berbeza.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s152 meminta menerangkan perbezaan dua lokasi ekonomi bandar/desa dan menyatakan pilihan dengan alasan (SP1.2.2).
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

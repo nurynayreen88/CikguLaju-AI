@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 153
 
-**ID:** BM4-P153  
-**Minggu RPT 2027:** M35 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Integriti; U25: Tanggungjawab Digalas  
-**Tajuk aktiviti:** Bakat Asli  
-**Standard Kandungan (SK):** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera.  
-**Standard Pembelajaran (SP):** 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 177  
-**Fokus:** seni — Bakat Asli  
-**Objektif PdP:** Murid dapat mengujarkan dialog atau bercerita tentang 'Bakat Asli' dengan menggunakan sekurang-kurangnya dua ungkapan/peribahasa yang tepat mengikut konteks.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P153
+**Minggu RPT 2027:** M35 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Integriti; U25: Tanggungjawab Digalas
+**Tajuk aktiviti:** Bakat Asli
+**Standard Kandungan (SK):** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera.
+**Standard Pembelajaran (SP):** 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 177; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** dialog Zara dengan Cikgu Wani tentang pertandingan pantun kanak-kanak, simpulan bahasa ada hati/bekas tangan dan peribahasa tidak lapuk dek hujan.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat mengujarkan dialog secara berperanan dan menjelaskan sekurang-kurangnya tiga peribahasa/simpulan bahasa mengikut konteks.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Bakat Asli' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Integriti; U25: Tanggungjawab Digalas.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Bakat Asli daripada BT m/s 177; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Bakat Asli.
 
-## Aktiviti 1 — Fahami penggunaan peribahasa (15 minit)
-**Guru:** Menunjukkan petikan atau dialog berkaitan 'Bakat Asli' dalam bahan yang dirujuk; mengajak murid meneliti maksud peribahasa berdasarkan situasi.
-**Murid:** Mengenal pasti dua peribahasa/ungkapan dan menerangkan maksudnya melalui contoh situasi dalam tajuk.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing bacaan dialog BT m/s177 dan kenal pasti ungkapan 'ada hati', 'bekas tangan' serta peribahasa warisan
+**Murid:** Padankan tiga ungkapan dengan maksud dalam perbualan Zara–Cikgu Wani
 
-## Aktiviti 2 — Dialog dan persembahan (20 minit)
-**Guru:** Membimbing murid membina dialog empat hingga enam ujaran dengan peribahasa yang digunakan pada konteks yang sesuai; memodelkan intonasi santun.
-**Murid:** Berpasangan membina dialog bertema 'Bakat Asli', menggunakan dua ungkapan yang relevan, kemudian mempersembahkannya secara lisan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Susun lakonan dua situasi apabila Zara meminta guru menyemak hasil pantunnya
+**Murid:** Lakonkan dialog menggunakan sebutan jelas dan tiga ungkapan yang sesuai
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Merekod ketepatan makna dua peribahasa dan penggunaan dalam dialog/cerita serta kelancaran ujaran, menurut SP (4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa).
-**Murid:** Menjelaskan mengapa ungkapan dipilih dan membetulkan sekurang-kurangnya satu penggunaan jika tidak tepat.
+**Guru:** Semak kesantunan, penggunaan makna peribahasa serta kelancaran ujaran
+**Murid:** Baiki satu ungkapan yang tersalah konteks
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Bakat Asli' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 4.1.1 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Bakat Asli.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s177 mencetak SP4.1.1 dan dialog Zara–Cikgu Wani yang mengandungi beberapa peribahasa/simpulan bahasa.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

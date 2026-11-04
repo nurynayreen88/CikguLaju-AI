@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 160
 
-**ID:** BM4-P160  
-**Minggu RPT 2027:** M37 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Integriti; U26: Ibarat Pedang  
-**Tajuk aktiviti:** Dedikasi Penjaga Jam  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.3 (i), (ii) — Memahami dan menggunakan kata adjektif mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 186  
-**Fokus:** tatabahasa — Dedikasi Penjaga Jam  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Dedikasi Penjaga Jam'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P160
+**Minggu RPT 2027:** M37 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Integriti; U26: Ibarat Pedang
+**Tajuk aktiviti:** Dedikasi Penjaga Jam
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.2 (i), (ii) — Memahami dan menggunakan kata kerja mengikut konteks
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 186; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** rencana penjaga jam Menara Sultan Abdul Samad, Encik V. Gunasegaran, dengan pilihan kata kerja aktif/pasif dalam petikan.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat memilih sekurang-kurangnya enam kata kerja tepat dan mengelaskan kepada aktif transitif, tak transitif dan pasif.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Dedikasi Penjaga Jam' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Integriti; U26: Ibarat Pedang.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Dedikasi Penjaga Jam daripada BT m/s 186; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Dedikasi Penjaga Jam.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Dedikasi Penjaga Jam'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata adjektif mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Dedikasi Penjaga Jam'.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing bacaan rencana BT m/s186 dan banding pasangan kata seperti beroperasi/berusia serta dikunci/disiapkan
+**Murid:** Pilih enam kata kerja yang berpadanan dengan konteks penjagaan jam
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Dedikasi Penjaga Jam' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan pengelasan kata kerja aktif transitif, tak transitif dan kata kerja pasif daripada rencana
+**Murid:** Kelaskan enam kata kerja kepada kategori serta terangkan dua sebab pilihan
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.3 (i), (ii) — Memahami dan menggunakan kata adjektif mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak tepatnya pilihan kata dan kategori transitif/tak transitif/pasif
+**Murid:** Baiki dua kategori yang tersalah
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Dedikasi Penjaga Jam' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 5.1.2 (i), (ii) berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Dedikasi Penjaga Jam.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s186 mencetak SP5.1.2(i)(ii), latihan memilih kata kerja dan mengelaskannya; RPT lama tersalah SP5.1.3(i)(ii).
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

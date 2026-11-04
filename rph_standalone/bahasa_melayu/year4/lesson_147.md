@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 147
 
-**ID:** BM4-P147  
-**Minggu RPT 2027:** M34 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan  
-**Tajuk aktiviti:** Berhemat untuk Bercuti  
-**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 169  
-**Fokus:** tatabahasa — Berhemat untuk Bercuti  
-**Objektif PdP:** Murid dapat membina dua ayat tunggal dan dua ayat majmuk bertema 'Berhemat untuk Bercuti', termasuk peluasan subjek atau predikat apabila disyaratkan dalam SP.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P147
+**Minggu RPT 2027:** M34 (tarikh sebenar mengikut takwim sekolah)
+**Tema/Unit:** Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan
+**Tajuk aktiviti:** Berhemat untuk Bercuti
+**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.
+**Standard Pembelajaran (SP):** 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks
+**Rujukan:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 169; Buku Aktiviti — halaman dan latihan asal belum disahkan.
+**Fokus sumber:** rangka gambar percutian Zara dan Li Yen ke Sabah, termasuk Karnival Pelancongan, Inap Desa Kundasang dan perbelanjaan berhemat.
+**Objektif pembelajaran:** Pada akhir PdP, murid dapat membina tiga ayat tunggal serta tiga ayat majmuk menggunakan hingga, setelah dan supaya.
+**Bahan:** Buku Teks asal, gambar/petikan/rajah berkaitan, kad tugasan khusus aktiviti dan senarai semak PBD.
+**Tempoh:** 60 minit (ubah suai jika diperlukan).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Berhemat untuk Bercuti' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Ekonomi, Keusahawanan dan Pengurusan Kewangan; U24: Pengurusan Perbelanjaan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tema Berhemat untuk Bercuti daripada BT m/s 169; hubungkan dengan pengetahuan murid.
+**Murid:** Nyatakan satu pengalaman atau maklumat awal berdasarkan gambar Berhemat untuk Bercuti.
 
-## Aktiviti 1 — Analisis binaan ayat (15 minit)
-**Guru:** Menunjukkan contoh ayat daripada bahan 'Berhemat untuk Bercuti' dan menjelaskan perbezaan ayat tunggal, ayat majmuk serta bahagian subjek dan predikat.
-**Murid:** Mengelaskan sekurang-kurangnya empat ayat mengikut struktur; menandakan subjek, predikat dan kata hubung yang berkaitan.
+## Aktiviti 1 — Analisis teks/gambar (15 minit)
+**Guru:** Bimbing bacaan contoh BT m/s169 dan bezakan ayat tunggal daripada ayat majmuk yang menggunakan penanda hubungan
+**Murid:** Kenal pasti dua ayat tunggal dalam contoh penerbangan ke Sabah
 
-## Aktiviti 2 — Bina dan peluaskan ayat (20 minit)
-**Guru:** Menyediakan rangka ayat berkaitan 'Berhemat untuk Bercuti'; membimbing murid membina dan meluaskan subjek/predikat atau menggabungkan klausa dengan betul.
-**Murid:** Membina dua ayat tunggal dan dua ayat majmuk bertema 'Berhemat untuk Bercuti', menyatakan bentuk peluasan yang dibuat serta menyemak ayat dengan pasangan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjukkan gabungan dua ayat kepada ayat majmuk menggunakan hingga, setelah dan supaya
+**Murid:** Tulis tiga ayat tunggal dan tiga ayat majmuk yang mengekalkan makna asal gambar
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menanda empat ayat: struktur tunggal/majmuk, hubungan subjek-predikat dan penggunaan peluasan mengikut SP (5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks).
-**Murid:** Membetulkan satu ayat yang tidak gramatis serta menerangkan pembetulannya.
+**Guru:** Semak bentuk subjek-predikat, kata hubung dan urutan perjalanan
+**Murid:** Baiki dua ayat yang tidak gramatis
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Berhemat untuk Bercuti' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran SP 5.3.1 berdasarkan bukti Buku Teks, dan kaitkan dengan objektif.
+**Murid:** Sebut satu fakta atau kemahiran yang dipelajari daripada Berhemat untuk Bercuti.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s169 menyatakan SP5.3.1 dan tugasan ayat tunggal/ayat majmuk dalam cerita karnival pelancongan Sabah.
+**Status QA:** DRAF — padanan halaman, aktiviti serta SP untuk PdP ini disemak; BA, PKJR (jika berkenaan), takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.
