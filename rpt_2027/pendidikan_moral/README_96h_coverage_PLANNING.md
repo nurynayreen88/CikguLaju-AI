@@ -1,20 +1,23 @@
-# Pendidikan Moral Tahun 2–6 — perancangan liputan 96 jam (STAGING)
+# Pendidikan Moral Tahun 2–6 — liputan 96 sesi / 96 jam (CikguLaju)
 
-**Status: PELAN SAHAJA, BUKAN RPH/RPT FINAL READY.** 4 November 2026.
+**Versi kerja berasaskan DSKP, bukan pengesahan penuh halaman aktiviti buku teks atau jadual setiap kelas.** Dikemas kini 4 November 2026.
 
-## Angka yang boleh diaudit
-- Setiap tahun: 42 PdP teras sedia ada × 60 minit = 42 jam.
-- Jurang terhadap **sasaran perancangan** 96 jam: **54 jam/tahun**.
-- 14 unit/tahun: unit 1 dan 14 mendapat tiga cadangan pengukuhan; 12 unit lain mendapat empat cadangan. Jumlah 54 pengukuhan.
-- Setiap fail `yearN_96h_coverage_PLANNING.csv` mengandungi 96 slot, mengikut turutan unit, dengan **42 pautan RPH teras** dan **54 slot tambahan yang BELUM mempunyai RPH**.
-- Lima tahun: 210 RPH teras tersedia; 270 sesi pengukuhan masih memerlukan RPH, sumber aktiviti, rubrik PBD, Word/PDF dan QA.
+## Bahan tersedia
+- **210 RPH teras** (42 Tahun 2–6 setiap tahun) kekal dalam `rph_standalone/pendidikan_moral/yearN/lesson_001.md` dan seterusnya.
+- **270 RPH pengukuhan** (54 setahun) diwujudkan dalam `rph_standalone/pendidikan_moral/pengukuhan/yearN/sesi_###.md`. Semuanya mempunyai rujukan kod/teks SP daripada crosswalk DSKP, objektif, langkah guru dan murid, 5+20+20+10+5 minit, BBM dan evidens PBD.
+- Setiap tahun mempunyai **96 baris** dalam `yearN_96h_coverage_PLANNING.csv`: 42 TERAS + 54 PENGUKUHAN. Lima tahun = 480 sesi terancang.
+- Sepuluh CSV RPT `yearN_sequence_96_2027_groupA_STAGING.csv` dan `...groupB_STAGING.csv`, setiap satu 96 sesi dengan sumber minggu **M01–M44** daripada tab `INDUK MINGGU RPT 2027 A B` dalam spreadsheet CikguLaju `1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k`.
+- Laluan muat turun dalam `complete_96_downloads.py` membina sepuluh RPT PDF A4 landskap Kumpulan A/B, lima PDF RPH pengukuhan (54 halaman/tahun), dan lima fail Word boleh sunting (54 RPH/tahun). Butang khusus diletakkan dalam menu RPT 2027 **berbayar sahaja**. Callback RPT 42 PdP lama masih boleh dipanggil daripada mesej lama tetapi tidak dipromosikan dalam menu.
+- **Laluan 42 RPH teras melalui pemilih Telegram asal tidak diubah**. Pengukuhan 54 sesi tersedia sebagai pakej muat turun berasingan; pengukuhan tidak diselit ke pemilih PdP/RPH Hari Ini yang bergantung database 42-teras.
 
-## Keterbatasan dan prinsip
-- Sesi perancangan 60 minit ialah andaian kerja untuk membandingkan jam tahunan, **bukan** jadual waktu atau bilangan PdP rasmi KPM. Jumlah waktu sebenar dan pembahagian PdP 2027 perlu disahkan.
-- Masa, minggu dan tarikh Kumpulan A/B sengaja tidak diisi; jangan mengagihkan tarikh tanpa jadual sekolah dan takwim/cuti negeri yang disahkan.
-- Kod SP dan fokus pengukuhan diambil daripada lima fail DSKP crosswalk sedia ada. Indeks buku hanya halaman mula unit `VERIFIED_TOC_START_ONLY`; **tiada dakwaan halaman aktiviti tepat bagi 270 slot baharu**.
-- Pelan ini **tidak digunakan oleh Telegram/web/penjana RPH**, bukan pengganti lima CSV RPT 42 PdP yang sudah live, dan tidak mengubah database pengguna, kuota, pembayaran atau subjek lain.
-- Jangan menandakan `PERLU_RPH_DAN_SEMAKAN_BUKU` sebagai READY. Langkah seterusnya ialah menyediakan RPH sumber-sepadan secara batch, audit format satu halaman A4, kemas kini jadual 2027 dan uji penghantaran sebenar.
+## Pengesahan teknikal
+`scripts/check_moral_96h_planning.py` memeriksa setiap fail 480 sesi, padanan SP dan 960 baris jadual kumpulan A/B. `scripts/check_moral_96_downloads.py` memeriksa penjanaan PDF/Word untuk lima tahun, bilangan halaman PDF, menu muat turun dan kawalan akses melalui simulasi Telegram. `scripts/check_pm_80_beta.py` dan ujian database lama turut dikekalkan. Semua fail Moodle/Moral ini berada dalam kawalan versi; tiada mutasi terhadap DB pengguna, langganan atau subjek lain.
 
-## Rujukan peruntukan
-- Sasaran perancangan 96 jam/tahun diambil daripada semakan terdahulu dalam `scripts/check_pendidikan_moral_release_readiness.py`, yang merujuk jawapan Parlimen 30 Julai 2025. Keserasian takwim/kurikulum 2027 masih perlu diperiksa sebelum pelancaran penuh.
+## Batasan — jangan tandakan FINAL READY 100%
+1. Sumber halaman buku teks bagi sebahagian besar sesi masih **permulaan unit (VERIFIED_TOC_START_ONLY)**, bukan pemeriksaan visual setiap aktiviti untuk SP. Hanya subset aktiviti dalam `audits/pendidikan_moral_y2_y6_units02_03_visual_30pdp_20261104.json` telah dipadankan khusus (33 RPH teras).
+2. Penambahan 54 sesi/tahun ialah **agihan kerja 60 minit** untuk mencapai sasaran perancangan 96 jam; **bukan** bilangan sesi rasmi atau keperluan jadual waktu KPM 2027. Minit sebenar mengikut sekolah.
+3. RPT A/B menetapkan **julat minggu induk M01–M44**, bukan tarikh PdP individu; cuti negeri, cuti gantian, hari subjek, aktiviti rasmi dan jadual kelas mesti diambil daripada profil guru sebelum menetapkan tarikh sebenar.
+4. Audit pedagogi manual, ketepatan halaman aktiviti semua RPH, paparan Word satu halaman A4 bagi setiap RPH, dan ujian sebenar penghantaran akaun Telegram masih diperlukan. Ujian CI menghantar fail melalui mock, bukan bot kepada akaun guru.
+5. Fail `yearN_sequence_DRAF.csv` dan flag sumber `DRAF_SEMAK` asal dikekalkan untuk kompatibiliti, bukan ditimpa atau ditanda palsu READY. Audit lama `scripts/check_pendidikan_moral_release_readiness.py` ialah **pintu FINAL READY** berasingan dan masih mempunyai isu belum ditutup.
+
+**Prinsip pelepasan:** Memastikan versi yang boleh digunakan sebagai cadangan CikguLaju tidak bermaksud semua sumber dan kalendar mendapat kelulusan rasmi.
