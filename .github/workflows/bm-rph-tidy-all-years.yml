@@ -1,0 +1,55 @@
+name: BM RPH Tahun 2-6 - kemas istilah PdP tanpa rosakkan fail
+on:
+  push:
+    branches:
+      - feat/bm-standalone-rph-tahun4-6-20261104
+    paths:
+      - 'tools/tidy_bm_rph_2027_non_destructive.py'
+      - '.github/workflows/bm-rph-tidy-all-years.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  tidy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Scope-limited wording corrections
+        run: python tools/tidy_bm_rph_2027_non_destructive.py
+      - name: Validate 825 source files and READY remains closed
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re,json
+          root=Path("rph_standalone/bahasa_melayu")
+          for year,total in {2:164,3:165,4:165,5:166,6:165}.items():
+              paths=sorted((root/f"year{year}").glob("lesson_???.md"))
+              assert len(paths)==total,(year,len(paths))
+              for n,p in enumerate(paths,1):
+                  text=p.read_text(encoding="utf-8")
+                  assert f"lesson_{n:03d}.md"==p.name
+                  assert not re.search(r"\bLesson\b",text),(year,n)
+                  assert re.search(r"\bPdP\b",text),(year,n)
+                  assert not re.search(r"\*\*(?:Status|Status QA|Status semakan):\*\*\s*READY",text)
+              print(year,total,"files")
+          gate=json.loads(Path("rpt_2027/bahasa_melayu/READY_GATE.json").read_text())
+          assert gate["verified_strict_ready"]==False
+          assert gate["status"]=="DRAFT_NOT_PUBLISHED"
+          assert sum(int(k) for k in [])==0
+          print("PASS 825 BM RPH, zero READY and no production update")
+          PY
+      - name: Commit only adjusted standalone BM RPH text
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rph_standalone/bahasa_melayu/year2 rph_standalone/bahasa_melayu/year3 rph_standalone/bahasa_melayu/year4 rph_standalone/bahasa_melayu/year5 rph_standalone/bahasa_melayu/year6
+          if git diff --staged --quiet; then
+            echo 'No changes.'
+          else
+            git commit -m 'BM Tahun 2-6 RPH: normalized PdP terminology and concise teacher prompts'
+            git push origin HEAD:feat/bm-standalone-rph-tahun4-6-20261104
+          fi
