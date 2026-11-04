@@ -2,10 +2,10 @@
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
 **Unit RPT 2026:** Projek Seni Visual  
-**DSKP:** 5.1.4 menguruskan dan menyusun alat pameran; 5.1.5 bukan kod Tahun 6  
+**DSKP:** 5.1.5 — menyusun alatan dan bahan pameran serta memastikan ruang pameran bersih selepas pameran (DSKP PSV Tahun 6, ms 32); 5.1.4 melibatkan keselamatan karya ketika pameran  
 **Aktiviti/Tajuk:** Refleksi dan pengurusan selepas pameran akhir tahun  
 **SK:** 5.1  
-**SP:** 5.1.4  
+**SP:** 5.1.5  
 **Buku Teks:** Pendidikan Seni Visual Tahun 6, projek pameran dan apresiasi (rujukan unit yang telah dipelajari)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** koleksi karya, kapsyen, pita boleh tanggal, senarai semak  
