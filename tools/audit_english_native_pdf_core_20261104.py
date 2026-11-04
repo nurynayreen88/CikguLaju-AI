@@ -169,8 +169,14 @@ def run(year, *, all_lessons=False):
         raise SystemExit("Native PDF ReportLab core threw layout errors; see report.json")
     if any(r["pages"] is None or not r["a4"] or not r["sow_main_in_pdf"] for r in results):
         raise SystemExit("Native PDF core missing standards, pages or A4")
-    # Preserve multi-page results as honest QA evidence; do not conflate
-    # a successful PDF build with 1-page A4 FINAL READY.
+    # The exact native ReportLab table must remain one-page A4 for each
+    # of the 160 supplied Lesson rows. Report test failures as evidence.
+    if report["single_page_a4"] != len(results):
+        raise SystemExit("Some native PDF RPHs overflowed beyond one A4 page")
+    if any(r["draft_label_in_pdf"] is False for r in results):
+        raise SystemExit("A native PDF lost an explicit teacher-choice or draft label")
+    print("NATIVE_PDF_160_PER_YEAR_A4_PASS",year,flush=True)
+    # This still does not certify real Telegram delivery, audio or teachers.
 
 
 if __name__=="__main__":
