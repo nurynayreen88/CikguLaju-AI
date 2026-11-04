@@ -1,0 +1,50 @@
+name: BM RPH 2027 - audit 825 PdP against DSKP and RPT
+on:
+  push:
+    branches:
+      - audit/bm-rph-final-readiness-20261104
+    paths:
+      - 'tools/qa_bm_rph_2027_full_gate.py'
+      - 'rph_standalone/bahasa_melayu/**'
+      - 'rpt_2027/bahasa_melayu/keluaran_format_english/**'
+      - '.github/workflows/bm-rph-825-final-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  qa-825:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Analyze 825 RPH files and make strict QA report
+        id: qa
+        continue-on-error: true
+        run: python tools/qa_bm_rph_2027_full_gate.py
+      - name: Save audit report even when unresolved defects are found
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: BM-RPH-2027-825-Audit-DSKP
+          path: audits/bm_rph_2027_825_gate_20261104.json
+          if-no-files-found: warn
+      - name: Commit non-destructive QA report to audit branch
+        if: always()
+        run: |
+          if test -f audits/bm_rph_2027_825_gate_20261104.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add audits/bm_rph_2027_825_gate_20261104.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Audit 825 BM RPH against DSKP code inventory and RPT'
+              git push origin HEAD:audit/bm-rph-final-readiness-20261104
+            fi
+          fi
+      - name: Require zero mechanical defects
+        if: steps.qa.outcome == 'failure'
+        run: |
+          echo 'At least one RPH failed strict mechanical QA. Review the audit report.'
+          exit 1
