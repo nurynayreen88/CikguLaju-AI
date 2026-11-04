@@ -63,15 +63,21 @@ def school_name(value):
 
 def image_file_id(message):
     """Recognize PNG/JPEG Telegram images only, never payment PDFs or other files."""
+    def within_limit(obj):
+        try:
+            size = int(obj.get("file_size") or 1)
+            return 0 < size <= MAX_LOGO_BYTES
+        except (TypeError,ValueError,OverflowError):
+            return False
     photos = message.get("photo")
     if isinstance(photos, list) and photos:
         p = photos[-1]
-        if isinstance(p, dict) and 0 < int(p.get("file_size") or 1) <= MAX_LOGO_BYTES:
+        if isinstance(p, dict) and within_limit(p):
             return p.get("file_id") or None
     doc = message.get("document")
     if isinstance(doc, dict) and doc.get("file_id"):
         mime = str(doc.get("mime_type") or "").lower()
-        if mime in ("image/jpeg","image/png") and 0 < int(doc.get("file_size") or 1) <= MAX_LOGO_BYTES:
+        if mime in ("image/jpeg","image/png") and within_limit(doc):
             return doc["file_id"]
     return None
 
@@ -282,11 +288,12 @@ def install(runtime):
 
     def remember(cid):
         with lock:
-            item=sessions.get(cid)
-            if item and (time.monotonic()-item["started"]>SESSION_SECONDS):
-                sessions.pop(cid,None)
-                return None
-            return item
+            now=time.monotonic()
+            # Memory-only state also expires when a user never returns.
+            for key,pending in list(sessions.items()):
+                if now-pending["started"]>SESSION_SECONDS:
+                    sessions.pop(key,None)
+            return sessions.get(cid)
 
     def callback(cid,data):
         choice=selection(str(data or ""))
@@ -302,8 +309,12 @@ def install(runtime):
             if not rpt_ready(subject,year):
                 return runtime.send(cid,"PDF RPT pilihan ini belum tersedia. Cuba tahun atau subjek lain.")
             with lock:
+                now=time.monotonic()
+                for key,pending in list(sessions.items()):
+                    if now-pending["started"]>SESSION_SECONDS:
+                        sessions.pop(key,None)
                 sessions[cid]={"subject":subject,"label":label,"year":year,
-                               "phase":"name","started":time.monotonic()}
+                               "phase":"name","started":now}
             return runtime.send(cid,
                 f"RPT 2027 - <b>{html.escape(label)} Tahun {year}</b>\n\n"
                 "Sila <b>taip nama sekolah</b> untuk muka depan PDF ini.\n\n"
