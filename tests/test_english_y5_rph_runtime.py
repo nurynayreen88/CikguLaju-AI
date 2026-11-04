@@ -1,5 +1,6 @@
 """Offline English Year 5 release gate checks, without importing app.py or touching credits."""
 import json
+from hashlib import sha256
 import tempfile
 import types
 import unittest
@@ -7,6 +8,7 @@ from pathlib import Path
 
 from web.english_y5_standalone_runtime import (
     CHOICE_LESSONS, LESSON_ROOT, RELEASE_FLAG, adapt_rows, install, load_lesson,
+    approved_for_telegram, _RELEASE_QA_GATES,
 )
 
 
@@ -127,6 +129,40 @@ class EnglishY5IntegrationTests(unittest.TestCase):
                            self.gate["lessons"][str(n)]["complementary_ls"])) <= load_lesson(n)["source_codes"]]
         print("Y5_SOW_CODE_MATCHED", len(matched), "/151; MISMATCH", sorted(set(parsed) - set(matched)))
         self.assertGreaterEqual(len(matched), 120)
+
+    def test_enabled_runtime_refuses_unapproved_draft_year5(self):
+        old = {"OBJEKTIF PEMBELAJARAN": "existing live lesson"}
+        runtime = types.SimpleNamespace(_rph_rows=lambda *_: old)
+        self.assertTrue(install(runtime, enabled=True))
+        st = {"subject": "English", "year": "Tahun 5",
+              "lesson_no": 1, "sp_code": "1.2.1"}
+        self.assertIs(runtime._rph_rows(st, "text"), old)
+        self.assertFalse(approved_for_telegram(1))
+        self.assertFalse(approved_for_telegram(88))
+        self.assertFalse(approved_for_telegram(0))
+
+    def test_release_manifest_requires_matching_source_hash_and_all_qa(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = b"# English Year 5 -- Lesson 001\n"
+            (root / "lesson_001.md").write_bytes(data)
+            details = {key: True for key in _RELEASE_QA_GATES}
+            details["source_sha256"] = sha256(data).hexdigest()
+            manifest = {"version": "english-year5-per-lesson-release-v1",
+                        "year": 5, "approved_lessons": {"1": details}}
+            path = root / "release_approvals_2027.json"
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            self.assertTrue(approved_for_telegram(1, root=root))
+            (root / "lesson_001.md").write_bytes(data + b"modified")
+            self.assertFalse(approved_for_telegram(1, root=root))
+            (root / "lesson_001.md").write_bytes(data)
+            for key in _RELEASE_QA_GATES:
+                bad = json.loads(json.dumps(manifest))
+                bad["approved_lessons"]["1"][key] = False
+                path.write_text(json.dumps(bad), encoding="utf-8")
+                self.assertFalse(approved_for_telegram(1, root=root), key)
+            path.write_text('{"version":"unknown"}', encoding="utf-8")
+            self.assertFalse(approved_for_telegram(1, root=root))
 
     def test_no_overlay_on_missing_or_modified_gate(self):
         with tempfile.TemporaryDirectory() as tmp:
