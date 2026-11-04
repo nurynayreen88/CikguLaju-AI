@@ -105,6 +105,10 @@ def _sow_record(number, index_path=OFFICIAL_SOW_INDEX):
 def _plain(text):
     """Preserve lesson-specific teacher/pupil actions; omit Markdown syntax."""
     text = re.sub(r"\*\*([^*]+)\*\*", r"\1", str(text).strip())
+    # Earlier validated Year 4 batches use Teacher action/Pupil action;
+    # normalize their labels for the native English Word/PDF activity table.
+    text = re.sub(r"(?im)^Teacher\s+action:\s*", "Teacher: ", text)
+    text = re.sub(r"(?im)^Pupils?\s+action:\s*", "Pupils: ", text)
     text = re.sub(r"(?m)^\s*[-*]\s+", "• ", text)
     return text.strip()
 
