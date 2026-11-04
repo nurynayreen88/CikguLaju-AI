@@ -57,7 +57,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                     text,
                 )
                 self.assertIsNotNone(section, str(source))
-                match = re.fullmatch(r"(Murid dapat .*?)\s+Evidens:\s+(.*)", " ".join(section.group(1).split()))
+                match = re.fullmatch(r"(Murid dapat .*?)\s+(?:Evidens|Kriteria kejayaan):\s+(.*)", " ".join(section.group(1).split()))
                 self.assertIsNotNone(match, str(source))
                 objective = match.group(1).strip().rstrip(".")
                 evidence = match.group(2).strip().rstrip(".")
