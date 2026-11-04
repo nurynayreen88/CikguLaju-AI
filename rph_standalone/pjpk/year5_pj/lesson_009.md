@@ -4,7 +4,7 @@
 **Fasa PdP:** Sesi pertama — tunjuk cara dan asas  
 **SK:** 1.5, 2.5, 5.4  
 **SP:** 1.5.1, 1.5.2, 2.5.1, 5.4.7  
-**Buku teks:** calon m/s 12-13 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 12-13, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.5.1 (mereka cipta pergerakan kreatif bertema menggunakan props berdasarkan konsep pergerakan mengikut muzik yang didengar) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.5.1: Mengenal pasti pergerakan lokomotor, bukan lokomotor, langkah lurus dan konsep pergerakan yang digunakan dalam pergerakan kreatif bertema.
