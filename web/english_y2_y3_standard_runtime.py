@@ -83,7 +83,42 @@ def _source_record(year, number):
                 if matches:
                     return matches[-1]
         return None
-    return meta, find_code("main sk/sp"), find_code("complementary sk/sp")
+    return meta, find_code("main sk/sp"), find_code("complementary sk/sp", source)
+
+
+
+def _source_task_objective(source):
+    """Derive a learning goal from a real pupil action in the source Lesson.
+
+    Do not claim a new official source reference, workbook page or threshold.
+    Earlier Y3 lesson files mostly lack explicit objective header metadata.
+    """
+    phases = list(re.finditer(r"(?m)^##\s+([^\n]+)\n", source))
+    activities = []
+    for i, match in enumerate(phases):
+        title = match.group(1).strip().casefold()
+        if not (title.startswith("activity 2") or title.startswith("activity 1")):
+            continue
+        end = phases[i + 1].start() if i + 1 < len(phases) else len(source)
+        activities.append((0 if title.startswith("activity 2") else 1,
+                           source[match.end():end]))
+    for _, body in sorted(activities):
+        cleaned = re.sub(r"\*\*([^*]+)\*\*", r"\1", body)
+        pupil = re.search(r"\bPupils?\s*:\s*([^.\n]{22,230})", cleaned, re.I)
+        if not pupil:
+            pupil = re.search(r"\bPupils?\s+([a-z][^.\n]{22,230})", cleaned)
+        if not pupil:
+            continue
+        action = pupil.group(1).strip(" .;:\u2013-")
+        if not 22 <= len(action) <= 230:
+            continue
+        if re.search(r"referenced tasks|main and complementary skills|summarise (?:one thing|their learning)|activities? as directed", action, re.I):
+            continue
+        if re.search(r"pending|unverified|not ready|QA status|teacher approval", action, re.I):
+            continue
+        action = action[0].lower() + action[1:]
+        return "By the end of the lesson, pupils can " + action.rstrip(".") + "."
+    return None
 
 
 def enrich_rows(state, rows):
@@ -100,7 +135,7 @@ def enrich_rows(state, rows):
     source = _source_record(year, number)
     if not sow or sow.get("teacher_selected") or source is None:
         return rows
-    meta, main, comp = source
+    meta, main, comp, raw_source = source
     if main != sow.get("main_ls") or comp != sow.get("complementary_ls"):
         return rows
     # Fail closed if the teacher selected standards other than this Lesson's.
@@ -130,6 +165,16 @@ def enrich_rows(state, rows):
             if alias in meta and meta[alias].strip():
                 out[field] = re.sub(r"\*\*([^*]+)\*\*", r"\1", meta[alias]).strip()
                 break
+    # Earlier Year 3 standalone RPH may omit Objective metadata despite
+    # providing explicit pupil tasks. Prefer a direct task-derived objective
+    # over leaving the previous generic objective in the native document.
+    if out.get("OBJEKTIF PEMBELAJARAN") == rows.get("OBJEKTIF PEMBELAJARAN"):
+        objective = _source_task_objective(raw_source)
+        if objective:
+            out["OBJEKTIF PEMBELAJARAN"] = objective
+            if not meta.get("success criteria") and not meta.get("success evidence"):
+                out["KRITERIA KEJAYAAN"] = "Evidence: " + objective.removeprefix(
+                    "By the end of the lesson, pupils can ")
     return out
 
 
