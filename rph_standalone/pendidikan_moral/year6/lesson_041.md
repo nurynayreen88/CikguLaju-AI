@@ -9,22 +9,24 @@
 **SP:** 14.3 — Merumuskan kesan pengabaian amalan toleransi demi perpaduan negara. | 14.4 — Mengekspresikan perasaan berkaitan dengan amalan toleransi demi perpaduan negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, kad pandangan dan titik persetujuan, borang semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 6 m/s 132–134 (PDF 141–143), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghuraikan atau menilai berdasarkan **14.3: Merumuskan kesan pengabaian amalan toleransi demi perpaduan negara.** serta mengekspresikan perasaan bagi **14.4: Mengekspresikan perasaan berkaitan dengan amalan toleransi demi perpaduan negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 14.3 dan ayat perasaan yang sesuai bagi SP 14.4.
+Murid merumuskan dua kesan mengabaikan toleransi dan mengekspresikan satu perasaan beralasan. Kriteria kejayaan: Dua kesan berpunca daripada tindakan, satu ayat perasaan dengan alasan dan satu pilihan penyelesaian konflik.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Masyarakat berbeza budaya berbincang secara aman demi perpaduan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Toleransi Mengeratkan Hubungan Negara** dari Buku Teks m/s 132. Murid mengenal pasti pihak yang terlibat, nilai toleransi dan satu tindakan yang wajar.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 14.3 (**Merumuskan kesan pengabaian amalan toleransi demi perpaduan negara.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana menyelesaikan perbezaan tanpa menyakiti pihak lain?**
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru memaparkan jadual tindakan–kepentingan–perasaan pada m/s 132 dan situasi perkongsian kemudahan. Murid mengaitkan tindakan bertolak ansur dengan hasil.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 14.4 (**Mengekspresikan perasaan berkaitan dengan amalan toleransi demi perpaduan negara.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid membincangkan situasi bagasi di lapangan terbang dan konflik kumpulan pada m/s 133–134, menulis dua kesan jika toleransi tidak diamalkan serta perasaan dengan sebab.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 14.3 dan ayat perasaan yang sesuai bagi SP 14.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Dua kesan berpunca daripada tindakan, satu ayat perasaan dengan alasan dan satu pilihan penyelesaian konflik. Guru merekod evidens individu dan memberi maklum balas berdasarkan sebab dan tingkah laku yang boleh diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan bertoleransi yang boleh dilakukan secara selamat dan sebab tindakan itu menjaga perpaduan. Guru merumuskan sikap menghormati kepelbagaian masyarakat.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Kad gambar/kata kunci untuk murid yang memerlukan sokongan; murid maju memberi dua justifikasi. Elakkan pendedahan hal peribadi atau agama.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Semakan visual buku teks:** Tahun 6, Unit 14 — **Toleransi Mengeratkan Hubungan Negara**; halaman bercetak 132–134 (PDF 141–143). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 041 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view); [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026). Buku teks asal Drive ID `12YjwUWy6DdVsqP5_azEp987jfvZ6PROo`; RPT 2026 ialah rujukan urutan, bukan tarikh 2027.
