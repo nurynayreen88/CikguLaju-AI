@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh stabail dan mengha
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh stabail bertema Taman Permainan dan membandingkan bentuk, imbangan, pergerakan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik cantuman, binaan dan ikatan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk stabail taman permainan seimbang.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik cantuman, binaan dan ikatan. Murid mencuba dua sampel kecil menggunakan kadbod serta batang kertas, membandingkan kesan dan memilih teknik yang sesuai untuk stabail taman permainan seimbang.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
