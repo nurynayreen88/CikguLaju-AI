@@ -2,25 +2,27 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Mobail — Burung Terbang  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Gurisan — Oh, Berwarna-warni
+**Unit RPT 2026:** Unit 7 — Oh, Berwarna-warni (BT ms 58–61)  
+**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** ikatan dan asemblaj  
-**Bahasa seni visual:** bentuk, warna, kepelbagaian, pergerakan  
+**Teknik:** gurisan  
+**Bahasa seni visual:** garisan, rupa, kepelbagaian, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kad warna, benang, batang tumpul
+**BBM:** krayon, lapisan warna, pengguris plastik tumpul
 
 ## Objektif pembelajaran
-Murid dapat memperkemas mobail burung tergantung serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas karya gurisan pelbagai warna serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Terbang. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung di Hutan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik ikatan dan asemblaj serta penggunaan bentuk, warna, kepelbagaian, pergerakan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik gurisan serta penggunaan garisan, rupa, kepelbagaian, harmoni. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada mobail burung tergantung, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada karya gurisan pelbagai warna, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat memperkemas mobail burung tergantung serta mengulasnya menggunakan d
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.

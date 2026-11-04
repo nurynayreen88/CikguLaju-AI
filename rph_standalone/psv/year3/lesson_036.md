@@ -2,25 +2,27 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Anyaman — Penanda Buku Anyaman  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Boneka — Boneka Menari Mencuit Hati
+**Unit RPT 2026:** Unit 9 — Boneka Menari Mencuit Hati (BT ms 74–79)  
+**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** anyaman  
-**Bahasa seni visual:** garisan, jalinan, kontra, harmoni  
+**Teknik:** potongan dan asemblaj  
+**Bahasa seni visual:** bentuk, jalinan, imbangan, penegasan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** jalur kertas dua warna, gam
+**BBM:** kadbod, gam, pemegang tumpul
 
 ## Objektif pembelajaran
-Murid dapat memperkemas penanda buku beranyam serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas boneka tongkat yang boleh dipersembahkan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Penanda Buku Anyaman. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Arnab dan Kura-kura. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik anyaman serta penggunaan garisan, jalinan, kontra, harmoni. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik potongan dan asemblaj serta penggunaan bentuk, jalinan, imbangan, penegasan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada penanda buku beranyam, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada boneka tongkat yang boleh dipersembahkan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat memperkemas penanda buku beranyam serta mengulasnya menggunakan dua 
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
