@@ -23,8 +23,8 @@ GENERIC={
   "generic_exit_response":r"one accurate new sentence or fact",
   "generic_topic_question":r"what can you say about this topic",
 }
-PHASE_TIME=re.compile(r"(?im)^\s*(?:##\s*|\*\*)(?:set induction|activity\s*[1-9]|reinforcement|pbd|assessment|closure)[^\n]{0,120}?\((\d+)\s*(?:minutes|min)\)")
-OBJ=re.compile(r"(?im)^\s*\*\*(?:learning objectives?|objectives?|objektif)(?:\b|\s*\()")
+PHASE_TIME=re.compile(r"(?im)^\s*(?:##\s*|\d+\.\s*(?:\*\*)?|\*\*)(?:set induction|activity\s*[1-9]|reinforcement|pbd|assessment|closure)[^\n]{0,120}?\((\d+)\s*(?:minutes|min)\)")
+OBJ=re.compile(r"(?im)^\s*(?:\*\*)?(?:learning objectives?|objectives?|objektif)(?:\b|\s*\()")
 
 def extract_phase(t,word):
     key={"start":r"set induction|set induksi","end":r"closure|penutup"}[word]
@@ -57,8 +57,8 @@ def inspect(y,n,body,record):
     if record and record["teacher_selected"] and not re.search(r"pilihan guru|teacher.selected|teacher choice|selected by the teacher|selection to teacher|teacher selects|teacher chooses|selected from pupils",header,re.I):hard.append("teacher_choice_not_labelled")
     quality=[]
     if not OBJ.search(body):quality.append("missing_explicit_objective_header")
-    if not re.search(r"\bTeacher\b",body):quality.append("teacher_actions_not_identified")
-    if not re.search(r"\bPupils\b",body):quality.append("pupil_actions_not_identified")
+    if not re.search(r"\bteacher\b",body,re.I):quality.append("teacher_actions_not_identified")
+    if not re.search(r"\bpupils?\b|\bmurid\b",body,re.I):quality.append("pupil_actions_not_identified")
     if re.search(r"(?i)\*\*(?:Main|Complementary)\s+SK/SP[^\n]*SOW verification pending",header):quality.append("stale_sow_verification_pending_header")
     if generic:quality.append("generic_instruction")
     if total is None:quality.append("phase_minutes_not_extractable")
