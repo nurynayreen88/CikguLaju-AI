@@ -1,7 +1,7 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 012
 
 **ID:** BM4-P012 | **RPT 2027:** M04 | **Unit:** 2 — Prihatinnya Kita
-**Tajuk rujukan RPT:** Mesyuarat Warga Rimba
+**Tajuk aktiviti:** Mesyuarat Warga Rimba
 **SK:** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
 **SP:** 5.1.1 (ii) — Memahami dan menggunakan kata nama mengikut konteks tidak formal (**fokus kata nama khas**).
 **Sumber disemak:** Buku Teks BM Tahun 4 SK m/s 12, cerita penghuni hutan bermesyuarat tentang burung bermigrasi. **BA:** Belum disahkan.
