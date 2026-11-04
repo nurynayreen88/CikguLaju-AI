@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 6 — PdP 037
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 13. Amalan Kesederhanaan Demi kesejahteraan Negara  
 **Tema:** Saya dan Negara  
+**Unit:** 13. Amalan Kesederhanaan Demi kesejahteraan Negara  
 **Nilai:** Kesederhanaan  
-**Standard Kandungan:** 13.0 — Amalan Kesederhanaan Demi kesejahteraan Negara  
-**Standard Pembelajaran:** 13.1 — Menyenaraikan contoh amalan kesederhanaan demi kesejahteraan negara. | 13.2 — Menghuraikan kepentingan amalan kesederhanaan demi kesejahteraan negara.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 13.0 — Amalan Kesederhanaan Demi kesejahteraan Negara  
+**SP:** 13.1 — Menyenaraikan contoh amalan kesederhanaan demi kesejahteraan negara. | 13.2 — Menghuraikan kepentingan amalan kesederhanaan demi kesejahteraan negara.  
+**Fokus:** Mengenal pasti dan menerangkan tindakan  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual keperluan-kehendak-pilihan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyebut sekurang-kurangnya dua contoh dan menjelaskan satu cara berkaitan **amalan kesederhanaan demi kesejahteraan negara**. Bukti: dua respons tepat dan satu huraian.
+Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai kesederhanaan. Bukti minimum: dua contoh serta satu penjelasan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Kenali situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid mengenal pasti contoh perlakuan dan menerangkan cara yang wajar secara pasangan.
+**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: memilih berdasarkan keperluan serta mengelakkan pembaziran** dan **B: membazir wang atau sumber semata-mata untuk menunjuk-nunjuk**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **amalan kesederhanaan demi kesejahteraan negara**. Murid merakam jawapan pada jadual keperluan-kehendak-pilihan.
 
-**Aktiviti 2 — Bincang dan jelaskan:** Guru meminta pasangan berkongsi jawapan; murid memilih contoh paling sesuai lalu memberikan satu penjelasan.
+**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan jadual keperluan-kehendak-pilihan dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
 
-**Pengukuhan / Pentaksiran PBD:** Semak dua contoh relevan dan satu penjelasan dengan senarai semak lisan/bertulis. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **kesederhanaan**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kesederhanaan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Elakkan menghakimi kemampuan kewangan keluarga murid.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view) (kod SP seperti di atas); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

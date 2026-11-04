@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 6 — PdP 031
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 11. Rajin Demi Kemajuan Negara  
 **Tema:** Saya dan Negara  
+**Unit:** 11. Rajin Demi Kemajuan Negara  
 **Nilai:** Kerajinan  
-**Standard Kandungan:** 11.0 — Rajin Demi Kemajuan Negara  
-**Standard Pembelajaran:** 11.1 — Menyenaraikan contoh suri teladan yang mengharumkan nama negara dalam pelbagai bidang. | 11.2 — Menjelaskan cara amalan rajin demi kemajuan negara.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 11.0 — Rajin Demi Kemajuan Negara  
+**SP:** 11.1 — Menyenaraikan contoh suri teladan yang mengharumkan nama negara dalam pelbagai bidang. | 11.2 — Menjelaskan cara amalan rajin demi kemajuan negara.  
+**Fokus:** Mengenal pasti dan menerangkan tindakan  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran pelan langkah kecil dan jadual kemajuan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyebut sekurang-kurangnya dua contoh dan menjelaskan satu cara berkaitan **rajin demi kemajuan negara**. Bukti: dua respons tepat dan satu huraian.
+Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai kerajinan. Bukti minimum: dua contoh serta satu penjelasan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Murid mengenali usaha tekun rakyat membangunkan negara** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Murid mengenali usaha tekun rakyat membangunkan negara**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Kenali situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid mengenal pasti contoh perlakuan dan menerangkan cara yang wajar secara pasangan.
+**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: melakukan tugasan sedikit demi sedikit sehingga selesai** dan **B: menangguhkan semua kerja walaupun mampu memulakannya**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **rajin demi kemajuan negara**. Murid merakam jawapan pada pelan langkah kecil dan jadual kemajuan.
 
-**Aktiviti 2 — Bincang dan jelaskan:** Guru meminta pasangan berkongsi jawapan; murid memilih contoh paling sesuai lalu memberikan satu penjelasan.
+**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan pelan langkah kecil dan jadual kemajuan dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
 
-**Pengukuhan / Pentaksiran PBD:** Semak dua contoh relevan dan satu penjelasan dengan senarai semak lisan/bertulis. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **kerajinan**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kerajinan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Nilai usaha dan peningkatan, bukan kelajuan atau hasil sempurna sahaja.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view) (kod SP seperti di atas); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 2 — PdP 007
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 3. Tanggungjawab Terhadap Keluarga  
 **Tema:** Saya dan Keluarga  
+**Unit:** 3. Tanggungjawab Terhadap Keluarga  
 **Nilai:** Bertanggungjawab  
-**Standard Kandungan:** 3.0 — Tanggungjawab Terhadap Keluarga  
-**Standard Pembelajaran:** 3.1 — Menyenaraikan contoh tanggungjawab terhadap keluarga. | 3.2 — Menjelaskan cara melaksanakan tanggungjawab terhadap keluarga.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 3.0 — Tanggungjawab Terhadap Keluarga  
+**SP:** 3.1 — Menyenaraikan contoh tanggungjawab terhadap keluarga. | 3.2 — Menjelaskan cara melaksanakan tanggungjawab terhadap keluarga.  
+**Fokus:** Mengenal pasti dan menerangkan tindakan  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual tugas-siapa-bila-bukti, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year2/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyebut sekurang-kurangnya dua contoh dan menjelaskan satu cara berkaitan **tanggungjawab terhadap keluarga**. Bukti: dua respons tepat dan satu huraian.
+Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai bertanggungjawab. Bukti minimum: dua contoh serta satu penjelasan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Keluarga membahagi tugasan sebelum tetamu datang ke rumah** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Keluarga membahagi tugasan sebelum tetamu datang ke rumah**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Kenali situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid mengenal pasti contoh perlakuan dan menerangkan cara yang wajar secara pasangan.
+**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: melaksanakan tugasan yang dipersetujui dengan sempurna** dan **B: meninggalkan tugas untuk disiapkan orang lain**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **tanggungjawab terhadap keluarga**. Murid merakam jawapan pada jadual tugas-siapa-bila-bukti.
 
-**Aktiviti 2 — Bincang dan jelaskan:** Guru meminta pasangan berkongsi jawapan; murid memilih contoh paling sesuai lalu memberikan satu penjelasan.
+**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan jadual tugas-siapa-bila-bukti dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
 
-**Pengukuhan / Pentaksiran PBD:** Semak dua contoh relevan dan satu penjelasan dengan senarai semak lisan/bertulis. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **bertanggungjawab**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **bertanggungjawab**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Bahagikan tugas mengikut kemampuan, bukan secara membuta tuli.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view) (kod SP seperti di atas); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://anyflip.com/jhshr/iihq/basic. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 4 — PdP 019
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 7. Sayangi Jiran  
 **Tema:** Saya dan Jiran  
+**Unit:** 7. Sayangi Jiran  
 **Nilai:** Kasih sayang  
-**Standard Kandungan:** 7.0 — Sayangi Jiran  
-**Standard Pembelajaran:** 7.1 — Memberikan contoh perlakuan menyayangi jiran. | 7.2 — Menghuraikan cara menyayangi jiran.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 7.0 — Sayangi Jiran  
+**SP:** 7.1 — Memberikan contoh perlakuan menyayangi jiran. | 7.2 — Menghuraikan cara menyayangi jiran.  
+**Fokus:** Mengenal pasti dan menerangkan tindakan  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran peta emosi dan tindakan mengambil berat, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year4/unit_07_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyebut sekurang-kurangnya dua contoh dan menjelaskan satu cara berkaitan **sayangi jiran**. Bukti: dua respons tepat dan satu huraian.
+Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai kasih sayang. Bukti minimum: dua contoh serta satu penjelasan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Jiran sakit dan memerlukan sokongan** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Jiran sakit dan memerlukan sokongan**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Kenali situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid mengenal pasti contoh perlakuan dan menerangkan cara yang wajar secara pasangan.
+**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: bertanya khabar dan membantu orang yang memerlukan sokongan** dan **B: mengejek kesusahan atau kesedihan orang lain**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **sayangi jiran**. Murid merakam jawapan pada peta emosi dan tindakan mengambil berat.
 
-**Aktiviti 2 — Bincang dan jelaskan:** Guru meminta pasangan berkongsi jawapan; murid memilih contoh paling sesuai lalu memberikan satu penjelasan.
+**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan peta emosi dan tindakan mengambil berat dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
 
-**Pengukuhan / Pentaksiran PBD:** Semak dua contoh relevan dan satu penjelasan dengan senarai semak lisan/bertulis. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **kasih sayang**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kasih sayang**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Bezakan empati daripada simpati; tiada pendedahan kisah peribadi diperlukan.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view) (kod SP seperti di atas); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

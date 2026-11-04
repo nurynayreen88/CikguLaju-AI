@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 2 — PdP 018
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 6. Hormati Ahli Keluarga  
 **Tema:** Saya dan Keluarga  
+**Unit:** 6. Hormati Ahli Keluarga  
 **Nilai:** Hormat  
-**Standard Kandungan:** 6.0 — Hormati Ahli Keluarga  
-**Standard Pembelajaran:** 6.5 — Mengamalkan perlakuan menghormati ahli keluarga.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 6.0 — Hormati Ahli Keluarga  
+**SP:** 6.5 — Mengamalkan perlakuan menghormati ahli keluarga.  
+**Fokus:** Mengamalkan perlakuan dan merefleksi  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran kad langkah mendengar-bertanya-menghargai, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year2/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat memperagakan satu tindakan moral dan memberikan refleksi ringkas berkaitan **hormati ahli keluarga**. Bukti: satu tindakan diperagakan dan catatan amalan.
+Pada akhir PdP, murid dapat memperagakan satu tindakan hormat yang sesuai dan merancang satu amalan kendiri yang boleh diperhatikan. Bukti minimum: satu tindakan nyata dalam simulasi dan satu langkah susulan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Dua beradik berebut penggunaan alat permainan** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Dua beradik berebut penggunaan alat permainan**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Tafsir situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid menyenaraikan langkah tindakan moral yang selamat, sesuai umur dan boleh dilaksanakan.
+**Aktiviti 1 — Rancang tindakan:** Guru membahagi peranan pelaku, penerima dan pemerhati. Murid merangka dua ayat atau dua langkah tindakan sebelum lakonan. Tugasan khusus: **mendengar tanpa mencelah dan memberi respons hormat**; langkah mesti sesuai umur, hormat dan selamat.
 
-**Aktiviti 2 — Laksana dan refleksi:** Guru membimbing simulasi/permainan peranan. Murid memperagakan tindakan, menerima maklum balas rakan dan merancang satu amalan sebenar.
+**Aktiviti 2 — Main peranan dan semak:** Murid melaksanakan lakonan 60–90 saat. Pemerhati menilai berdasarkan senarai semak tindakan, sebab dan hormat; rakan mengemukakan satu penambahbaikan. Murid mengulang lakonan dengan penambahbaikan dan menulis satu komitmen amalan yang boleh dilakukan tanpa memaksa pendedahan peribadi.
 
-**Pengukuhan / Pentaksiran PBD:** Pemerhatian tingkah laku semasa simulasi; rekod komitmen amalan dan tindakan susulan. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** i Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **hormat**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **hormat**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Beri contoh menghormati ruang peribadi, pendapat dan keperluan.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view) (kod SP seperti di atas); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://anyflip.com/jhshr/iihq/basic. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

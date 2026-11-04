@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 6 — PdP 039
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 13. Amalan Kesederhanaan Demi kesejahteraan Negara  
 **Tema:** Saya dan Negara  
+**Unit:** 13. Amalan Kesederhanaan Demi kesejahteraan Negara  
 **Nilai:** Kesederhanaan  
-**Standard Kandungan:** 13.0 — Amalan Kesederhanaan Demi kesejahteraan Negara  
-**Standard Pembelajaran:** 13.5 — Mengamalkan sikap bersederhana demi kesejahteraan negara.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 13.0 — Amalan Kesederhanaan Demi kesejahteraan Negara  
+**SP:** 13.5 — Mengamalkan sikap bersederhana demi kesejahteraan negara.  
+**Fokus:** Mengamalkan perlakuan dan merefleksi  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual keperluan-kehendak-pilihan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat memperagakan satu tindakan moral dan memberikan refleksi ringkas berkaitan **amalan kesederhanaan demi kesejahteraan negara**. Bukti: satu tindakan diperagakan dan catatan amalan.
+Pada akhir PdP, murid dapat memperagakan satu tindakan kesederhanaan yang sesuai dan merancang satu amalan kendiri yang boleh diperhatikan. Bukti minimum: satu tindakan nyata dalam simulasi dan satu langkah susulan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Tafsir situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid menyenaraikan langkah tindakan moral yang selamat, sesuai umur dan boleh dilaksanakan.
+**Aktiviti 1 — Rancang tindakan:** Guru membahagi peranan pelaku, penerima dan pemerhati. Murid merangka dua ayat atau dua langkah tindakan sebelum lakonan. Tugasan khusus: **merancang penggunaan sumber secara sederhana dan munasabah**; langkah mesti sesuai umur, hormat dan selamat.
 
-**Aktiviti 2 — Laksana dan refleksi:** Guru membimbing simulasi/permainan peranan. Murid memperagakan tindakan, menerima maklum balas rakan dan merancang satu amalan sebenar.
+**Aktiviti 2 — Main peranan dan semak:** Murid melaksanakan lakonan 60–90 saat. Pemerhati menilai berdasarkan senarai semak tindakan, sebab dan hormat; rakan mengemukakan satu penambahbaikan. Murid mengulang lakonan dengan penambahbaikan dan menulis satu komitmen amalan yang boleh dilakukan tanpa memaksa pendedahan peribadi.
 
-**Pengukuhan / Pentaksiran PBD:** Pemerhatian tingkah laku semasa simulasi; rekod komitmen amalan dan tindakan susulan. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** i Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **kesederhanaan**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kesederhanaan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Elakkan menghakimi kemampuan kewangan keluarga murid.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view) (kod SP seperti di atas); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

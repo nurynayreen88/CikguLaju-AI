@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 5 — PdP 013
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 5. Beradab Sopan dan Berbudi Pekerti Mulia Dalam Hidup Bermasyarakat  
 **Tema:** Saya dan Masyarakat  
+**Unit:** 5. Beradab Sopan dan Berbudi Pekerti Mulia Dalam Hidup Bermasyarakat  
 **Nilai:** Hemah tinggi  
-**Standard Kandungan:** 5.0 — Beradab Sopan dan Berbudi Pekerti Mulia Dalam Hidup Bermasyarakat  
-**Standard Pembelajaran:** 5.1 — Menyenaraikan contoh amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat. | 5.2 — Menjelaskan kepentingan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 5.0 — Beradab Sopan dan Berbudi Pekerti Mulia Dalam Hidup Bermasyarakat  
+**SP:** 5.1 — Menyenaraikan contoh amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat. | 5.2 — Menjelaskan kepentingan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
+**Fokus:** Mengenal pasti dan menerangkan tindakan  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual bahasa sopan dan pilihan ungkapan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year5/unit_05_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyebut sekurang-kurangnya dua contoh dan menjelaskan satu cara berkaitan **beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat**. Bukti: dua respons tepat dan satu huraian.
+Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai hemah tinggi. Bukti minimum: dua contoh serta satu penjelasan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Orang ramai beratur di kaunter perkhidmatan masyarakat** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Orang ramai beratur di kaunter perkhidmatan masyarakat**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Kenali situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid mengenal pasti contoh perlakuan dan menerangkan cara yang wajar secara pasangan.
+**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: menggunakan bahasa santun ketika berbincang** dan **B: meninggikan suara dan menghina orang yang tidak bersetuju**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat**. Murid merakam jawapan pada jadual bahasa sopan dan pilihan ungkapan.
 
-**Aktiviti 2 — Bincang dan jelaskan:** Guru meminta pasangan berkongsi jawapan; murid memilih contoh paling sesuai lalu memberikan satu penjelasan.
+**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan jadual bahasa sopan dan pilihan ungkapan dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
 
-**Pengukuhan / Pentaksiran PBD:** Semak dua contoh relevan dan satu penjelasan dengan senarai semak lisan/bertulis. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **hemah tinggi**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **hemah tinggi**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Bezakan permintaan, teguran dan penolakan yang masih beradab.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view) (kod SP seperti di atas); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

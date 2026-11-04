@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 3 — PdP 015
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 5. Bersopan Dan Berbudi Pekerti Mulia Terhadap Warga Sekolah  
 **Tema:** Saya dan Sekolah  
+**Unit:** 5. Bersopan Dan Berbudi Pekerti Mulia Terhadap Warga Sekolah  
 **Nilai:** Hemah tinggi  
-**Standard Kandungan:** 5.0 — Bersopan Dan Berbudi Pekerti Mulia Terhadap Warga Sekolah  
-**Standard Pembelajaran:** 5.5 — Mengamalkan sikap bersopan dan berbudi pekerti mulia terhadap warga sekolah.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 5.0 — Bersopan Dan Berbudi Pekerti Mulia Terhadap Warga Sekolah  
+**SP:** 5.5 — Mengamalkan sikap bersopan dan berbudi pekerti mulia terhadap warga sekolah.  
+**Fokus:** Mengamalkan perlakuan dan merefleksi  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual bahasa sopan dan pilihan ungkapan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year3/unit_05_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat memperagakan satu tindakan moral dan memberikan refleksi ringkas berkaitan **bersopan dan berbudi pekerti mulia terhadap warga sekolah**. Bukti: satu tindakan diperagakan dan catatan amalan.
+Pada akhir PdP, murid dapat memperagakan satu tindakan hemah tinggi yang sesuai dan merancang satu amalan kendiri yang boleh diperhatikan. Bukti minimum: satu tindakan nyata dalam simulasi dan satu langkah susulan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Tafsir situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid menyenaraikan langkah tindakan moral yang selamat, sesuai umur dan boleh dilaksanakan.
+**Aktiviti 1 — Rancang tindakan:** Guru membahagi peranan pelaku, penerima dan pemerhati. Murid merangka dua ayat atau dua langkah tindakan sebelum lakonan. Tugasan khusus: **meminta izin, mendengar dan memberi respons dengan sopan**; langkah mesti sesuai umur, hormat dan selamat.
 
-**Aktiviti 2 — Laksana dan refleksi:** Guru membimbing simulasi/permainan peranan. Murid memperagakan tindakan, menerima maklum balas rakan dan merancang satu amalan sebenar.
+**Aktiviti 2 — Main peranan dan semak:** Murid melaksanakan lakonan 60–90 saat. Pemerhati menilai berdasarkan senarai semak tindakan, sebab dan hormat; rakan mengemukakan satu penambahbaikan. Murid mengulang lakonan dengan penambahbaikan dan menulis satu komitmen amalan yang boleh dilakukan tanpa memaksa pendedahan peribadi.
 
-**Pengukuhan / Pentaksiran PBD:** Pemerhatian tingkah laku semasa simulasi; rekod komitmen amalan dan tindakan susulan. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** i Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **hemah tinggi**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **hemah tinggi**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Bezakan permintaan, teguran dan penolakan yang masih beradab.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view) (kod SP seperti di atas); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://anyflip.com/aspgm/fypj/basic. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

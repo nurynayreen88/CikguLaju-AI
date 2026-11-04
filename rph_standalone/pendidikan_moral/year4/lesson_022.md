@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 4 — PdP 022
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 8. Tindakan Yang Adil Terhadap Jiran  
 **Tema:** Saya dan Jiran  
+**Unit:** 8. Tindakan Yang Adil Terhadap Jiran  
 **Nilai:** Keadilan  
-**Standard Kandungan:** 8.0 — Tindakan Yang Adil Terhadap Jiran  
-**Standard Pembelajaran:** 8.1 — Memberikan contoh tindakan yang adil terhadap jiran. | 8.2 — Menjelaskan kebaikan bersikap adil terhadap jiran.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 8.0 — Tindakan Yang Adil Terhadap Jiran  
+**SP:** 8.1 — Memberikan contoh tindakan yang adil terhadap jiran. | 8.2 — Menjelaskan kebaikan bersikap adil terhadap jiran.  
+**Fokus:** Mengenal pasti dan menerangkan tindakan  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual hak-keperluan-pembahagian, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year4/unit_08_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyebut sekurang-kurangnya dua contoh dan menjelaskan satu cara berkaitan **tindakan yang adil terhadap jiran**. Bukti: dua respons tepat dan satu huraian.
+Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai keadilan. Bukti minimum: dua contoh serta satu penjelasan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Penduduk membahagi penggunaan ruang permainan bersama secara adil** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Penduduk membahagi penggunaan ruang permainan bersama secara adil**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Kenali situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid mengenal pasti contoh perlakuan dan menerangkan cara yang wajar secara pasangan.
+**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: membahagikan peluang mengikut keperluan dan alasan munasabah** dan **B: memberi kelebihan kepada rakan rapat tanpa sebab adil**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **tindakan yang adil terhadap jiran**. Murid merakam jawapan pada jadual hak-keperluan-pembahagian.
 
-**Aktiviti 2 — Bincang dan jelaskan:** Guru meminta pasangan berkongsi jawapan; murid memilih contoh paling sesuai lalu memberikan satu penjelasan.
+**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan jadual hak-keperluan-pembahagian dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
 
-**Pengukuhan / Pentaksiran PBD:** Semak dua contoh relevan dan satu penjelasan dengan senarai semak lisan/bertulis. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **keadilan**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **keadilan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Guna contoh giliran dan keperluan untuk membezakan sama rata dengan saksama.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view) (kod SP seperti di atas); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

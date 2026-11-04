@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 6 — PdP 009
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 3. Tanggungjawab Sebagai Warganegara  
 **Tema:** Saya dan Negara  
+**Unit:** 3. Tanggungjawab Sebagai Warganegara  
 **Nilai:** Bertanggungjawab  
-**Standard Kandungan:** 3.0 — Tanggungjawab Sebagai Warganegara  
-**Standard Pembelajaran:** 3.5 — Mengamalkan sikap bertanggungjawab sebagai warganegara.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 3.0 — Tanggungjawab Sebagai Warganegara  
+**SP:** 3.5 — Mengamalkan sikap bertanggungjawab sebagai warganegara.  
+**Fokus:** Mengamalkan perlakuan dan merefleksi  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual tugas-siapa-bila-bukti, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat memperagakan satu tindakan moral dan memberikan refleksi ringkas berkaitan **tanggungjawab sebagai warganegara**. Bukti: satu tindakan diperagakan dan catatan amalan.
+Pada akhir PdP, murid dapat memperagakan satu tindakan bertanggungjawab yang sesuai dan merancang satu amalan kendiri yang boleh diperhatikan. Bukti minimum: satu tindakan nyata dalam simulasi dan satu langkah susulan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Murid membincangkan tanggungjawab menjaga kemudahan awam** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Murid membincangkan tanggungjawab menjaga kemudahan awam**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Tafsir situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid menyenaraikan langkah tindakan moral yang selamat, sesuai umur dan boleh dilaksanakan.
+**Aktiviti 1 — Rancang tindakan:** Guru membahagi peranan pelaku, penerima dan pemerhati. Murid merangka dua ayat atau dua langkah tindakan sebelum lakonan. Tugasan khusus: **menjelaskan tugasan, melaksanakannya dan melapor hasil**; langkah mesti sesuai umur, hormat dan selamat.
 
-**Aktiviti 2 — Laksana dan refleksi:** Guru membimbing simulasi/permainan peranan. Murid memperagakan tindakan, menerima maklum balas rakan dan merancang satu amalan sebenar.
+**Aktiviti 2 — Main peranan dan semak:** Murid melaksanakan lakonan 60–90 saat. Pemerhati menilai berdasarkan senarai semak tindakan, sebab dan hormat; rakan mengemukakan satu penambahbaikan. Murid mengulang lakonan dengan penambahbaikan dan menulis satu komitmen amalan yang boleh dilakukan tanpa memaksa pendedahan peribadi.
 
-**Pengukuhan / Pentaksiran PBD:** Pemerhatian tingkah laku semasa simulasi; rekod komitmen amalan dan tindakan susulan. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** i Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **bertanggungjawab**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **bertanggungjawab**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Bahagikan tugas mengikut kemampuan, bukan secara membuta tuli.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view) (kod SP seperti di atas); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.

@@ -1,28 +1,30 @@
 # RPH Pendidikan Moral Tahun 2 — PdP 038
 
-**Status:** DRAF KANDUNGAN (BELUM READY / BELUM DIPAUT KE TELEGRAM)
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
-**Unit:** 13. Kesederhanaan Dalam Keluarga  
 **Tema:** Saya dan Keluarga  
+**Unit:** 13. Kesederhanaan Dalam Keluarga  
 **Nilai:** Kesederhanaan  
-**Standard Kandungan:** 13.0 — Kesederhanaan Dalam Keluarga  
-**Standard Pembelajaran:** 13.3 — Menjelaskan kebaikan bersikap sederhana dalam keluarga. | 13.4 — Menzahirkan perasaan apabila bersikap sederhana dalam keluarga.  
-**Tempoh/Tarikh/Kelas:** Diisi mengikut jadual guru dan takwim negeri; tiada minggu tetap ditetapkan.
+**SK:** 13.0 — Kesederhanaan Dalam Keluarga  
+**SP:** 13.3 — Menjelaskan kebaikan bersikap sederhana dalam keluarga. | 13.4 — Menzahirkan perasaan apabila bersikap sederhana dalam keluarga.  
+**Fokus:** Menaakul kepentingan, kesan dan emosi  
+**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
+**BBM:** Kad situasi A/B, lembaran jadual keperluan-kehendak-pilihan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year2/unit_13_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat memberikan satu alasan tentang kepentingan atau kesan tindakan serta meluahkan perasaan berkaitan **kesederhanaan dalam keluarga**. Bukti: satu alasan yang munasabah bersama perasaan yang relevan.
+Pada akhir PdP, murid dapat menghubungkait satu kesan atau kepentingan tindakan dengan alasan munasabah dan menyatakan perasaan pihak terlibat. Bukti minimum: satu sebab, dua kesan dan satu perasaan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru ceritakan situasi **Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat** dan tanya satu soalan pemikiran moral. Murid menyatakan tindakan awal serta sebabnya.
+**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
 
-**Aktiviti 1 — Tafsir situasi:** Guru paparkan kad watak/tindakan berdasarkan situasi. Murid membina jadual dua pilihan tindakan, sebab, kesan kepada pihak terlibat dan perasaan masing-masing.
+**Aktiviti 1 — Rantaian sebab-akibat:** Guru membahagi murid kepada kumpulan kecil, memberikan kad A/B dan memerlukan bukti sebelum keputusan dibuat. Murid melukis jadual **pilihan → akibat kepada watak → perasaan**. Murid menyenaraikan satu kesan terhadap diri dan satu kesan terhadap orang lain. Soalan guru: **Apakah perbezaan keperluan dengan kehendak dalam situasi ini?**
 
-**Aktiviti 2 — Buat keputusan dan hayati:** Guru mengemukakan konflik kecil dalam situasi. Murid berlakon dialog keputusan, menyebut akibat serta menyatakan empati terhadap pihak terlibat.
+**Aktiviti 2 — Dialog dua penghujung:** Setiap kumpulan membuat dialog dua penghujung cerita berdasarkan pilihan A dan B. Murid memperagakan reaksi dengan sopan, menjelaskan mengapa seseorang mungkin berasa **rasa tenang kerana membuat pilihan berhemat**, dan mengubah pilihan apabila menemui kesan yang kurang adil atau kurang selamat.
 
-**Pengukuhan / Pentaksiran PBD:** Semak alasan pemilihan tindakan, kesan terhadap orang lain dan refleksi perasaan. Guru menandakan bukti penaakulan, emosi dan perlakuan moral secara formatif; penguasaan akhir bergantung pada evidens sebenar.
+**Pengukuhan / Pentaksiran PBD:** v Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
 
-**Penutup:** Murid melengkapkan ayat “Hari ini saya belajar …; saya akan …” berhubung **kesederhanaan**. Guru merumuskan tindakan berhemah dalam situasi yang dibincangkan.
+**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kesederhanaan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
 
-**BBM:** Kad situasi guru, gambar kontekstual, kertas respons/lembaran refleksi. Buku teks digunakan selepas padanan unit dan halaman disahkan.
+**Pengayaan/Pemulihan:** Elakkan menghakimi kemampuan kewangan keluarga murid.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view) (kod SP seperti di atas); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman masih memerlukan pemetaan. **Catatan QA:** Aktiviti ini ialah cadangan CikguLaju, bukan transkripsi buku teks. Urutan 3 PdP setiap unit bersifat perancangan sementara, bukan nombor minggu rasmi.
+**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://anyflip.com/jhshr/iihq/basic. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
