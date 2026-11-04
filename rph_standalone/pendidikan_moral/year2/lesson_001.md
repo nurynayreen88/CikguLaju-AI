@@ -12,19 +12,21 @@
 **BBM:** Kad situasi A/B, peta tindakan saling menghormati, borang semak; fail `materials/pendidikan_moral/year2/unit_01_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghasilkan respons tepat bagi **1.1: Memberi contoh perlakuan patuh kepada ajaran agama dalam keluarga.** dan **1.2: Menghuraikan tujuan patuh kepada ajaran agama dalam keluarga.** Kriteria kejayaan: Semak satu respons tepat bagi setiap SP 1.1 dan 1.2, merangkumi peta tindakan saling menghormati serta satu penerangan yang relevan.
+Murid dapat **memberikan dua contoh perlakuan patuh kepada ajaran agama dalam keluarga** dan **menghuraikan satu tujuan perlakuan tersebut**, dengan menggunakan gambar serta penerangan buku teks Tahun 2 unit 1. Kriteria kejayaan: dua contoh tepat dan satu sebab/tujuan yang munasabah.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Analisis pilihan:** Guru menyediakan dua kad tindakan, A: **menghormati kepercayaan orang lain**, B: **mempersenda kepercayaan orang lain**. Murid berbincang secara berpasangan dan menjawab tugasan SP 1.1 (**Memberi contoh perlakuan patuh kepada ajaran agama dalam keluarga.**) menggunakan peta tindakan saling menghormati. Guru menyemak jawapan mengikut kata tugas SP yang sebenar dan meminta bukti atau contoh dalam konteks unit ini; murid membetulkan jawapan berdasarkan maklum balas.
+**Aktiviti 1 (20 minit) — Contoh perlakuan dalam keluarga:** Guru memperlihatkan gambar buku teks **Ajaran Agama Keluarga Saya**, m/s 1 (PDF 10), termasuk perbuatan mengucapkan salam, menghormati ibu bapa dan berdoa sebelum makan. Murid memilih dan **menulis dua contoh perlakuan patuh kepada ajaran agama** yang ditunjukkan oleh gambar (SP 1.1), kemudian menjelaskan contoh tanpa diminta mendedahkan agama sendiri. Guru membezakan contoh amalan daripada perbuatan mempersenda orang lain.
 
-**Aktiviti 2 (20 minit) — Bentang dan terangkan:** Murid melengkapkan tugasan SP 1.2 (**Menghuraikan tujuan patuh kepada ajaran agama dalam keluarga.**), membentangkan respons dan menjelaskan sebab satu tindakan lebih wajar. Guru membetulkan kesilapan konsep dan merekod respons individu.
+**Aktiviti 2 (20 minit) — Menghuraikan tujuan:** Guru bertanya, “Mengapa kita berbuat baik dan menghormati ahli keluarga mengikut ajaran agama atau kepercayaan?” Murid secara berpasangan **menghuraikan satu tujuan** seperti membentuk disiplin atau keharmonian keluarga dan menyokongnya dengan satu contoh daripada buku (SP 1.2). Setiap pasangan berkongsi jawapan dan menyemak kesesuaian sebab.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak satu respons tepat bagi setiap SP 1.1 dan 1.2, merangkumi peta tindakan saling menghormati serta satu penerangan yang relevan. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Murid menyerahkan kad respons yang menyatakan **dua perlakuan** (SP 1.1) dan **satu tujuan bersebab** (SP 1.2). Guru merekod kedua-dua evidens secara individu dan membetulkan salah faham dengan hormat.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kepercayaan kepada tuhan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+
+**Semakan visual buku teks untuk PdP 001:** Unit 1, m/s bercetak 1 (PDF 10) mengandungi gambar pelbagai amalan keluarga. Contoh PdP ditambat kepada gambar tersebut; tidak mensyaratkan pendedahan pegangan peribadi.
 
 **Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit buku teks **Ajaran Agama Keluarga Saya** bermula pada **m/s 1 (halaman PDF 10)**, disahkan melalui halaman kandungan; halaman aktiviti khusus SP belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
