@@ -7,32 +7,32 @@
 **Language focus:** Narrative forms (e.g. past simple: He told lies)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 101, 103, 96-97; Teacher Book pages 160-163; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Understand and sequence 4 key events from a longer simple spoken narrative about a short story.  
-**PBD evidence:** Sequence 4 events and recall one accurate narrative detail.
+**Learning objective:** Listen to the PB p.101 story for the main idea and four important events; discuss the truth-telling message with evidence from PB pp.96–97.  
+**PBD evidence:** Four events recalled from listening (Listening 1.2.3) and an accurate overall message (Listening 1.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show story sequence panels and ask: “What makes this story interesting?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.160 Warm-up Collocations linked to story vocabulary.  
+**Pupils:** Match two common word combinations and predict a topic.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach character, setting, problem, ending; display story sequence panels and ask pupils to predict what they may hear. Emphasise the language focus: Narrative forms (e.g. past simple: He told lies).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.160 Activity 1: show PB p.101 scene and elicit predictions.  
+**Pupils:** Describe the picture and predict why a character might be upset.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Read or play the approved narrative twice, once for the main event and again for sequence.  
-**Pupils:** Place four event cards in chronological order and explain one detail from the spoken narrative.
+**Teacher:** Use the verified recording or accurate printed-script reading for TB pp.160–161 Activities 2–3.  
+**Pupils:** Listen first for the main idea and then sequence four important events.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a short story, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide TB p.161 Activity 4 and truth-telling Values discussion; consult the printed story.  
+**Pupils:** Discuss consequences of lying and find two synonyms in PB pp.96–97.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check listening recall and theme without claiming unverified audio accuracy.  
+**Pupils:** Correct one event sequence and justify the story's message.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What makes this story interesting?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Use TB p.163 synonym matching for a quick review.  
+**Pupils:** Match one pair of words with similar meanings.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
