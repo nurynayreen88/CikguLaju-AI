@@ -6,7 +6,7 @@
 **Tajuk aktiviti:** Kemudahan untuk Insan Istimewa  
 **Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
 **Standard Pembelajaran (SP):** 5.2.2 (i) — Memahami dan menggunakan kata majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 105  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 105–106  
 **Fokus:** tatabahasa — Kemudahan untuk Insan Istimewa  
 **Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Kemudahan untuk Insan Istimewa'.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
