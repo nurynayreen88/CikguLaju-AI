@@ -37,8 +37,18 @@ class AudioConflictGuardTests(unittest.TestCase):
             _send_reference_material=direct_media,
             send=lambda cid, text: notices.append((cid, text)),
             _EN4_AUDIO_ALL_V25257={30: [{"audio_reference": "CD2 Track 29"}], 31: ["other"]},
-            _EN4_AUDIO_ALL_V25258={30: [{"audio_reference": "CD2 Track 29"}], 31: ["other"]},
-            _EN4_AUDIO_ALL_V25259={30: [{"audio_reference": "CD2 Track 29"}], 31: ["other"]},
+            _EN4_AUDIO_ALL_V25258={
+                30: [{"audio_reference": "CD2 Track 29"}], 31: ["other"],
+                103: [{"audio_reference": "CD2 Track 26", "storage_file_id": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H"},
+                      {"audio_reference": "CD2 Track 27", "storage_file_id": "wrong103-27"},
+                      {"audio_reference": "CD2 Track 28", "storage_file_id": "wrong103-28"}],
+            },
+            _EN4_AUDIO_ALL_V25259={
+                30: [{"audio_reference": "CD2 Track 29"}], 31: ["other"],
+                103: [{"audio_reference": "CD2 Track 26", "storage_file_id": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H"},
+                      {"audio_reference": "CD2 Track 27", "storage_file_id": "wrong103-27"},
+                      {"audio_reference": "CD2 Track 28", "storage_file_id": "wrong103-28"}],
+            },
         )
         return rt, calls, notices
 
@@ -69,6 +79,23 @@ class AudioConflictGuardTests(unittest.TestCase):
         self.assertTrue(rt._send_reference_material_v2528(55, ss, "textbook"))
         self.assertTrue(rt._send_reference_material_v2528(55, ss, "activity"))
         self.assertEqual([x[2] for x in calls], ["textbook", "activity"])
+
+    def test_l103_only_source_correct_cd2_track26_remains(self):
+        rt, calls, notices = self.fake_runtime()
+        self.assertTrue(install(rt))
+        for name in ("_EN4_AUDIO_ALL_V25258", "_EN4_AUDIO_ALL_V25259"):
+            rows = getattr(rt, name)[103]
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["audio_reference"], "CD2 Track 26")
+            self.assertEqual(rows[0]["storage_file_id"],
+                             "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H")
+            self.assertNotIn(104, getattr(rt, name))
+        # Only historical mapping is cleaned; real Telegram dispatch is not
+        # simulated by this test and is not claimed as completed.
+        self.assertTrue(rt._send_reference_material_v2528(
+            55, {"subject": "English", "year": "Year 4", "lesson_no": 103}, "media"))
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(notices, [])
 
     def test_other_lessons_years_and_subjects_unchanged(self):
         rt, calls, notices = self.fake_runtime()
