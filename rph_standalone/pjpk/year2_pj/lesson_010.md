@@ -1,0 +1,24 @@
+# RPH Pendidikan Jasmani Tahun 2 — PdP 010
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
+**Tajuk:** Baling Bola Gergasi  
+**SK:** 1.4, 2.3, 5.2  
+**SP:** 1.4.3, 2.3.1, 5.2.2  
+**Rujukan buku:** RPT 2027: halaman 17; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
+
+**Objektif:** (1) Melaksanakan kemahiran SP 1.4.3 (membaling bola pada satu jarak) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.3.1: Menyatakan perkaitan antara aplikasi daya dengan pergerakan objek.
+
+**Set induksi:** Guru mengemukakan cabaran "Baling Bola Gergasi" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+
+**Aktiviti 1 — Teknik balingan:** Guru tunjuk genggaman, arah hayunan dan susun atur zon balingan serta menunggu. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.4.3.
+
+**Aktiviti 2 — Amali khusus:** Murid mencuba lontaran objek lembut ke sasaran pada jarak mudah; tukar jarak selepas guru menyemak teknik. Murid membuat dua percubaan sasaran dan membandingkan hasil secara individu; pasangan mencatat kawalan pergerakan.
+
+**Pengukuhan/PBD:** Guru merekod arah balingan, kawalan lakuan, ketepatan sasaran melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.3.1. Guru turut mencatat amalan SP 5.2.2.
+
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
+
+**BBM:** bola lembut atau pundi kacang, gelung sasaran, kon; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Semua balingan satu arah, tiada murid di zon sasaran; kutip alatan hanya selepas arahan.
+
+**Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
