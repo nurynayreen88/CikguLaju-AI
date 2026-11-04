@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.1, 2.1, 5.2  
 **SP:** 1.1.3, 2.1.2, 5.2.1  
-**Buku teks:** calon m/s 4 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 4, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.1.3 (melakukan imbangan songsang dirian tangan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.1.2: Menjelaskan perkaitan luas tapak sokongan dengan kestabilan.
