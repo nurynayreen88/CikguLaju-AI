@@ -1,4 +1,4 @@
-name: BM RPH source audit - 825 file regression and eight textbook repairs
+name: BM RPH source audit - 825 file regression and ten textbook repairs
 on:
   push:
     branches: [audit/bm-rph-source-proof-20261104]
@@ -30,6 +30,7 @@ jobs:
           (2,5):('Kek Mentega Istimewa','Hana'),(2,10):('Bukit Larut','titi gantung'),
           (4,1):('Encik Gobi','Encik Lim'),(4,2):('Peta Alir','Hari Keluarga'),
           (4,3):('tanpa melihat teks','susulan'),(4,5):('tulisan berangkai','kad ucapan'),
+          (4,6):('Kebun Komuniti','peribahasa'),(4,7):('kata nama am','Pak Cik Ismail'),
           (5,45):('Waspada Gerakmu','ragut'),(5,52):('Keselamatan Siber dalam Percutian','mengedit')
           }
           for (y,n),words in expect.items():
@@ -42,7 +43,7 @@ jobs:
             assert title in html and title in md
           assert 'Keselamatam' not in md+html
           assert '| + PJKR |' not in md
-          print('8 source-grounded repairs preserved; RPT5 Markdown/HTML consistent')
+          print('10 source-grounded repairs preserved; RPT5 Markdown/HTML consistent')
           PY
       - name: Prohibit premature academic READY release
         run: |
