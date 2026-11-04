@@ -1,0 +1,111 @@
+name: PJPK full content and A4 revalidation
+on:
+  push:
+    branches:
+      - audit/pjpk-full-content-review-20261104
+    paths:
+      - "rph_standalone/pjpk/**"
+      - "scripts/check_pjpk_full_content_review_20261104.py"
+      - "scripts/build_pjpk_2027_preview_bundle.py"
+      - "rpt_2027/pjpk/pjpk_2027_rpt_manifest.json"
+      - ".github/workflows/pjpk-full-content-review.yml"
+  pull_request:
+    paths:
+      - "rph_standalone/pjpk/**"
+      - "scripts/check_pjpk_full_content_review_20261104.py"
+      - "rpt_2027/pjpk/**"
+      - ".github/workflows/pjpk-full-content-review.yml"
+permissions:
+  contents: write
+jobs:
+  full-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install required PDF, Word and validation libraries
+        run: python -m pip install --disable-pip-version-check python-docx reportlab pypdf
+      - name: Check 339 RPT crosswalks and 338 RPH content (no DB)
+        run: |
+          mkdir -p dist
+          python scripts/check_pjpk_full_content_review_20261104.py > dist/pjpk_2027_full_content_review.json
+          python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_pjpk_rpt_2027_telegram.py' -v
+      - name: Build updated A4 Word and PDF RPH preview pack
+        run: python scripts/build_pjpk_2027_preview_bundle.py --out-dir dist/PJPK_2027
+      - name: Rebuild all five source-aligned RPT PDFs + Word
+        run: python scripts/build_pjpk_rpt_2027.py --out-dir dist/RPT_PJPK_2027
+      - name: Verify all 338 PDFs, 5 RPT and ZIP integrity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          from pypdf import PdfReader
+          import json
+          report=json.loads(Path('dist/pjpk_2027_full_content_review.json').read_text())
+          assert report['status']=='PASS_STATIC_ONLY_NOT_READY'
+          rph=list(Path('dist/PJPK_2027/PDF').glob('*.pdf'))
+          docs=list(Path('dist/PJPK_2027/Word').glob('*.docx'))
+          rpt=list(Path('dist/RPT_PJPK_2027').glob('*.pdf'))
+          assert len(rph)==338 and len(docs)==338 and len(rpt)==5
+          for path in rph:
+              reader=PdfReader(str(path))
+              assert len(reader.pages)==1, path
+              assert float(reader.pages[0].mediabox.width) < 610
+          for path in rpt:
+              pdf=PdfReader(str(path))
+              assert len(pdf.pages)>=10, (path,len(pdf.pages))
+              assert all(float(p.mediabox.width)>800 for p in pdf.pages)
+              text='\n'.join(p.extract_text() or '' for p in pdf.pages)
+              assert 'DRAF CADANGAN' in text
+              assert 'MINGGU PENGAJARAN 38' in text
+          for name,count in [('PJPK_2027_RPH_338_PRATONTON.zip',678),('RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip',11)]:
+              matches=list(Path('dist').rglob(name))
+              assert len(matches)==1, name
+              with ZipFile(matches[0]) as z:
+                  assert len(z.namelist())==count and z.testzip() is None, name
+          print('PASS: 338 RPH A4 PDFs and editable Word, five RPT PDFs, two valid ZIPs')
+          PY
+      - name: Check representative DOCX actual A4 layout
+        run: |
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get -qq update
+            sudo DEBIAN_FRONTEND=noninteractive apt-get -y -qq install --no-install-recommends libreoffice-writer fonts-dejavu-core
+          fi
+          mkdir -p dist/word-a4-check
+          libreoffice -env:UserInstallation=file:///tmp/lo_pjpk_fullreview --headless --convert-to pdf --outdir dist/word-a4-check             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun3_PdP022.docx             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun3_PdP023.docx             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun5_PdP017.docx             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun6_PdP028.docx
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          files=list(Path('dist/word-a4-check').glob('*.pdf'))
+          assert len(files)==4,files
+          for path in files:
+              reader=PdfReader(str(path))
+              assert len(reader.pages)==1, (str(path),len(reader.pages))
+          print('PASS: four revised RPH Word files each render as one A4 page')
+          PY
+      - name: Upload audit report and updated teacher-preview packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: PJPK-2027-FULL-CONTENT-REVIEW-20261104
+          path: |
+            dist/pjpk_2027_full_content_review.json
+            dist/PJPK_2027_RPH_338_PRATONTON.zip
+            dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit reviewed draft RPT PDF re-render to isolated branch
+        if: github.event_name == 'push'
+        run: |
+          cp dist/RPT_PJPK_2027/*.pdf rpt_2027/pjpk/
+          cp dist/pjpk_2027_full_content_review.json audits/pjpk_2027_full_content_review_20261104.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rpt_2027/pjpk/RPT_PJPK_Tahun_*_2027_DRAF.pdf audits/pjpk_2027_full_content_review_20261104.json
+          git diff --cached --quiet || git commit -m "audit(pjpk): verified preview PDFs and 339 lesson crosswalk audit"
+          git push origin HEAD:refs/heads/audit/pjpk-full-content-review-20261104
