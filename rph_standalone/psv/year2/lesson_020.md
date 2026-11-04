@@ -4,7 +4,7 @@
 **Tajuk:** Pameran penggal pertama  
 **Fokus:** Perancangan dan penyediaan pameran  
 **SK:** 5.1  
-**SP:** 3.3.1 (kod bercetak di bawah SK 5.1 pada DSKP PSV Tahun 2)  
+**SP:** 3.3.1  
 **Buku Teks:** Projek Kesenian penggal pertama; projek visual disesuaikan tanpa komponen Seni Muzik  
 **BBM:** karya Unit 1–5, label karya, kad, pita tidak merosakkan, meja stabil  
 **Masa:** 60 minit
