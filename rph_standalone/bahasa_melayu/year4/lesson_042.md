@@ -5,10 +5,10 @@
 **Tema/Unit:** Keselamatan; U7: Waspada Selalu  
 **Tajuk aktiviti:** Pelan Kawad Kebakaran Sekolah  
 **Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks  
+**Standard Pembelajaran (SP):** 5.1.3 (i) — Memahami dan menggunakan kata adjektif cara mengikut konteks  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 49  
-**Fokus:** tatabahasa — Pelan Kawad Kebakaran Sekolah  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Pelan Kawad Kebakaran Sekolah'.  
+**Fokus:** tatabahasa — kata adjektif cara  
+**Objektif PdP:** Murid dapat membina empat ayat bertema pelan kawad kebakaran menggunakan kata adjektif cara seperti jelas, cepat, gopoh atau laju dengan tepat.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Pelan Kawad Kebakaran Sekolah' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U7: Waspada Selalu.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Pelan Kawad Kebakaran Sekolah'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata kerja mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Pelan Kawad Kebakaran Sekolah'.
+## Aktiviti 1 — Penerokaan kandungan Buku Teks (15 minit)
+**Guru:** Menunjukkan pelan kawad kebakaran dan menonjolkan kata adjektif cara yang terdapat dalam BT m/s 49.
+**Murid:** Mengenal pasti kata adjektif cara daripada bahan dan mengaitkannya dengan tindakan semasa kecemasan.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Pelan Kawad Kebakaran Sekolah' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Membimbing bina ayat menggunakan empat kata adjektif cara untuk menerangkan pergerakan dan arahan keselamatan.
+**Murid:** Membina empat ayat, kemudian menyemak kesesuaian penggunaan kata adjektif cara dalam konteks pelan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.2 (ii) — Memahami dan menggunakan kata kerja mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menyemak empat ayat berasaskan ketepatan kata adjektif cara dan konteks pelan keselamatan.
+**Murid:** Memperbaiki ayat yang tidak gramatis atau kurang sesuai.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Pelan Kawad Kebakaran Sekolah' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
