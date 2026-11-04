@@ -1,0 +1,47 @@
+name: English FINAL READY blockers — Y4 L30 audio and published Y6 RPT
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year4/lesson_030.md'
+      - 'tests/test_english_y4_l030_failclosed_pbd_and_rpt_release_20261105.py'
+      - 'tests/test_english_rpt_2027_y6_pdf_source.py'
+      - 'tests/test_english_y4_l030_audio_guard.py'
+      - 'rpt_2027/english/RPT_ENGLISH_TAHUN_6_2027_UNTUK_GURU.pdf'
+      - '.github/workflows/english-final-blockers-y4-audio-y6-rpt-20261105.yml'
+permissions: {contents: read}
+jobs:
+  fail-closed-audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Protect Year4 Lesson30 source/PBD while speech is unverified
+        run: python -m unittest discover -s tests -p 'test_english_y4_l030_failclosed_pbd_and_rpt_release_20261105.py' -v
+      - name: Verify legacy media guard leaves Word/PDF, other lessons and credits untouched
+        run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
+      - name: Preserve Year4 separate DRAF teacher-selected boundaries
+        run: python -m unittest discover -s tests -p 'test_english_y4_teacher_choice_release_gate_20261103.py' -v
+  published-rpt-and-telegram-offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install pypdf==5.1.0
+      - name: Read actual Year6 RPT PDF distributed by Telegram — all 160 Lessons and corrected sources
+        run: python -m unittest discover -s tests -p 'test_english_rpt_2027_y6_pdf_source.py' -v
+      - name: Test paid access, false callbacks, no RPH debit and file-path dispatch offline
+        run: python -m unittest discover -s tests -p 'test_english_rpt_2027_telegram_downloads.py' -v
+      - name: Printed source gate cannot represent authenticated Telegram delivery
+        run: |
+          python - <<'PY'
+          import pathlib
+          p=pathlib.Path('rpt_2027/english/RPT_ENGLISH_TAHUN_6_2027_UNTUK_GURU.pdf')
+          assert p.is_file() and p.stat().st_size>500000
+          assert p.open('rb').read(5)==b'%PDF-'
+          print('Offline RPT source and callback tests only; live teacher download NOT claimed')
+          PY
