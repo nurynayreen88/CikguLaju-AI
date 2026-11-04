@@ -46,7 +46,7 @@ def fixture():
           "_payment_request":lambda rid: dict(payments[rid]),
           "_is_admin":lambda uid: uid == 1,
           "_upsert_user":lambda user,uid:registered.append(uid),
-          "_ensure_user_credit":lambda uid:calls.append(("ENSURE", "cikgulaju_users", {"uid":uid})),
+          "_ensure_trial_user":lambda uid:calls.append(("ENSURE", "cikgulaju_users", {"uid":uid})),
           "menu":lambda uid,**kw: sent.append((uid,"menu")),
           "request":None,"jsonify":lambda x:x}
     return ns, sent, calls, registered
