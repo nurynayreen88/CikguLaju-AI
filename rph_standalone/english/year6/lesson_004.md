@@ -7,32 +7,32 @@
 **Language focus:** Present simple for descriptions (e.g. A chef is coming out of the shop.)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.6–7; TB pp.20–21  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on meeting new classmates.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Describe PB pp.6–7 pictured jobs or places orally, produce two true and two false statements, and correct at least two statements in writing.  
+**PBD evidence:** Four relevant oral true/false statements with supporting picture evidence (Speaking 2.1.1), plus two correctly written corrections (Writing 4.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show profile and personality cards and ask: “How would you introduce yourself to a new classmate?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review less familiar jobs-and-places words from Lesson 3 and model one true/false sentence.  
+**Pupils:** Name a job and correct one modelled false description.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How would you introduce yourself to a new classmate?”, drawing on Present simple for descriptions (e.g. A chef is coming out of the shop.).  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.21 Cooler true/false and TB p.20 Activity 2; model how to check spelling of the picture labels.  
+**Pupils:** Read picture labels, complete Activity 2 and correct one misspelled jobs-or-places word.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Follow PB pp.6–7 Activity 3: elicit two true and two false picture descriptions, then ask pairs to write them.  
+**Pupils:** Say two true and two false picture statements and record all four accurately with a partner.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Join pairs into groups of four; ask pupils to read each other's statements, decide true or false and give a reason from the picture.  
+**Pupils:** Judge another pair's four statements, support answers by pointing to picture evidence and write two corrected statements.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess each pupil's clear oral descriptions and two written corrections; provide feedback on word choice and spelling.  
+**Pupils:** Present a true/false judgment with evidence and revise two written descriptions.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How would you introduce yourself to a new classmate?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Display one common sentence error and invite a pair correction.  
+**Pupils:** Correct one sentence aloud and explain why the picture supports their answer.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
