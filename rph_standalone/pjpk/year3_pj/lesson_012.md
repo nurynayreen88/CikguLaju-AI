@@ -8,17 +8,17 @@
 
 **Objektif:** (1) Melaksanakan kemahiran SP 1.6.5 (melakukan servis menggunakan tangan, kaki dan alatan) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.6.3: Menganalisis dan mengenal pasti titik kontak pada objek yang dihantar.
 
-**Set induksi:** Guru mengemukakan cabaran "Mari Servis" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+**Set induksi:** Guru membandingkan servis menggunakan tangan, kaki dan alatan mengikut peraturan permainan jaring.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.6.5.
+**Aktiviti 1 — Fokus kemahiran:** Murid berlatih tiga bentuk servis sederhana dari garisan servis ke sasaran mudah menggunakan belon atau bola lembut.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Servis berperingkat dari garisan dekat ke jauh menuju zon sasaran; murid mengubah arah dan daya mengikut maklum balas pasangan. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Fokus kemahiran:** Murid memilih servis sesuai untuk sasaran dekat dan jauh, menguji dan menjelaskan perubahan arah.
 
-**Pengukuhan/PBD:** Bilangan servis sah ke kawasan sasaran serta pematuhan giliran. Bukti kefahaman (soal jawab): Bagaimana perubahan daya mengubah jarak servis? Guru turut mencatat amalan SP 5.4.3.
+**Pengukuhan/PBD:** Pemerhatian arah servis, jenis kontak alatan dan alasan pemilihan teknik.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Belon atau bola span, raket ringan, kon dan garisan servis.
+**Keselamatan/inklusif:** Objek lembut sahaja, bukan servis ke arah muka; giliran terkawal.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

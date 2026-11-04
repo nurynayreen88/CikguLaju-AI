@@ -8,17 +8,17 @@
 
 **Objektif:** (1) Melaksanakan kemahiran SP 1.6.1 (melakukan pergerakan haiwan pada pelbagai bentuk dan arah) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.5.1: Menyatakan perkaitan antara bentuk badan dengan pergerakan haiwan yang diteroka.
 
-**Set induksi:** Guru mengemukakan cabaran "Gerak Ria" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+**Set induksi:** Guru mempamerkan gerakan haiwan dengan arah dan bentuk berbeza.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.6.1.
+**Aktiviti 1 — Fokus kemahiran:** Guru memperagakan gerakan haiwan secara progresif, seperti berjalan beruang atau melompat katak rendah; murid mencuba mengikut keupayaan.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Fokus kemahiran:** Murid menyambung dua gerakan haiwan dengan perubahan arah pada laluan bertanda dan menerangkan penggunaan anggota badan.
 
-**Pengukuhan/PBD:** Guru merekod ketepatan lakuan, penggunaan ruang, respons bimbingan melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.5.1. Guru turut mencatat amalan SP 5.1.2.
+**Pengukuhan/PBD:** Pemerhatian ketepatan gerak haiwan, pelbagai arah dan kerjasama kumpulan.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Kad bergambar haiwan, kon laluan dan alas lembut.
+**Keselamatan/inklusif:** Sediakan pilihan gerakan berdiri bagi murid yang tidak boleh menampung berat pada tangan.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
