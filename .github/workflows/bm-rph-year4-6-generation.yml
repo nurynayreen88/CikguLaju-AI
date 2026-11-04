@@ -1,0 +1,58 @@
+name: BM RPH Years 4-6 - generate 496 source-bound drafts
+on:
+  push:
+    branches: [feat/bm-rph-years4-6-20261104]
+    paths:
+      - 'tools/build_bm_rph_year4_6_drafts.py'
+      - '.github/workflows/bm-rph-year4-6-generation.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate missing Year 4-6 RPH only
+        run: python tools/build_bm_rph_year4_6_drafts.py
+      - name: Verify RPT/RPH one-to-one numbering and subject-specific steps
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re
+          root=Path("rph_standalone/bahasa_melayu")
+          counts={4:165,5:166,6:165}
+          for y,n in counts.items():
+              files=sorted((root/f"year{y}").glob("lesson_*.md"))
+              assert len(files)==n
+              for i,f in enumerate(files,1):
+                  assert f.name==f"lesson_{i:03d}.md"
+                  txt=f.read_text()
+                  assert f"**ID:** BM{y}-P{i:03d}" in txt
+                  assert f"PdP {i:03d}" in txt
+                  assert "READY" in txt and "Status QA" in txt
+                  assert all(s in txt for s in ("## Set induksi","## Aktiviti 1","## Aktiviti 2","## Pengukuhan","## Penutup"))
+                  assert txt.count("**Guru:**")==5 and txt.count("**Murid:**")==5
+                  assert len(txt)>1400
+              print(y,n,"RPH audited for structure")
+          manifest=json.loads(Path("rpt_2027/bahasa_melayu/BM_RPH_T4_T6_GENERATION_MANIFEST.json").read_text())
+          assert sum(s['rph_files'] for s in manifest['years'].values())==496
+          assert all(s['ready']==0 for s in manifest['years'].values())
+          PY
+      - name: Commit generated drafts to feature branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rph_standalone/bahasa_melayu/year4 rph_standalone/bahasa_melayu/year5 rph_standalone/bahasa_melayu/year6 rpt_2027/bahasa_melayu/BM_RPH_T4_T6_GENERATION_MANIFEST.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Add 496 Year 4-6 BM RPH drafts for academic review"
+            git push origin HEAD:feat/bm-rph-years4-6-20261104
+          fi
