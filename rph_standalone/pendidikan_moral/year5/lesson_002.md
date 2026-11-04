@@ -12,19 +12,21 @@
 **BBM:** Kad situasi A/B, peta tindakan saling menghormati, borang semak; fail `materials/pendidikan_moral/year5/unit_01_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghuraikan atau menilai berdasarkan **1.3: Menghuraikan kepentingan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni.** serta mengekspresikan perasaan bagi **1.4: Mengekspresikan perasaan berkaitan dengan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 1.3 dan ayat perasaan yang sesuai bagi SP 1.4.
+Murid dapat **menghuraikan dua kepentingan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni** (SP 1.3) dan **mengekspresikan satu perasaan dengan sebab** terhadap kerjasama pelbagai komuniti (SP 1.4).
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 1.3 (**Menghuraikan kepentingan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana menghormati perbezaan kepercayaan tanpa menghakimi orang lain?**
+**Aktiviti 1 (20 minit) — Kaji catatan khidmat masyarakat:** Guru merujuk buku teks **m/s 4 (PDF 7)**, catatan program kebajikan **persatuan penganut Kuil Sri Maha Mariamman** di Rumah Kebajikan Junjung Kasih, termasuk bantuan peralatan sekolah dan makanan. Murid mengenal pasti dua manfaat kegiatan kebajikan merentas komuniti dan menghuraikan hubungannya dengan masyarakat harmoni (SP 1.3).
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 1.4 (**Mengekspresikan perasaan berkaitan dengan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Perspektif penerima bantuan:** Guru bertanya bagaimana perasaan penerima bantuan, sukarelawan dan jiran apabila dibantu tanpa mengira kepercayaan. Murid menyediakan dua kad dialog berdasarkan sumber, kemudian menulis ayat **“Saya berasa ... kerana ...”** dengan sebab yang berkaitan (SP 1.4). Tiada murid diminta menjelaskan agama sendiri.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 1.3 dan ayat perasaan yang sesuai bagi SP 1.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Murid menyerahkan dua kepentingan beserta sebab (SP 1.3) dan satu ayat perasaan berserta sebab (SP 1.4). Guru menilai bukti penaakulan dan empati secara berasingan.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kepercayaan kepada tuhan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+
+**Semakan visual sumber:** m/s 2–4 (PDF 5–7); aktiviti di atas dirujuk pada halaman buku teks tersebut. Halaman SP lain dalam unit belum diaudit.
 
 **Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
