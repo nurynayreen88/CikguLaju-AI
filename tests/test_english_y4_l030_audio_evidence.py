@@ -36,6 +36,14 @@ class Lesson30AudioEvidence(unittest.TestCase):
             self.assertRegex(a["sha256"],r"^[a-f0-9]{64}$")
             self.assertTrue(a["ffmpeg_decode_pass"])
             self.assertFalse(a["actual_spoken_content_verified"])
+        # Visual check of original Workbook p.14 (PDF page 13), not a CD check.
+        wb = d["workbook"]
+        self.assertEqual(wb["drive_file_id"], "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX")
+        self.assertEqual((wb["printed_page"], wb["pdf_page"], wb["activity"]), (14, 13, 1))
+        self.assertTrue(wb["visual_source_check"])
+        self.assertTrue(d["release_gates"]["printed_workbook_activity_checked"])
+        self.assertIn("have to", wb["observed_content"])
+        self.assertNotIn("audio verified", wb["rph_match"].lower())
         for k in ("correct_content_listening_verified",
                   "telegram_audio_mapping_verified",
                   "teacher_word_download_verified",
