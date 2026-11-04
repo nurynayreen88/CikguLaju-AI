@@ -1,0 +1,33 @@
+name: English Year 4 and Year 5 complete draft Word PDF coverage
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+      - 'web/english_y5_fixed_draft_preview_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_y4_y5_full_draft_preview.py'
+      - '.github/workflows/english-y4-y5-complete-draft-coverage.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+      - 'web/english_y5_fixed_draft_preview_runtime.py'
+      - 'tests/test_english_y4_y5_full_draft_preview.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  complete-draft-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Validate Year4 160 and Year5 160 source-to-document rows
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y4_y5_full_draft_preview.py' -v
+          python -m unittest discover -s tests -p 'test_english_y4_word_pdf_rows.py' -v
+          python -m unittest discover -s tests -p 'test_english_y5_rph_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_english_y5_teacher_choice_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
