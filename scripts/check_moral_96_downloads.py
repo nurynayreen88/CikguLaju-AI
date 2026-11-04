@@ -2,10 +2,13 @@
 """QA for full Moral 96-session RPT and 54 supplementary RPH downloads."""
 from __future__ import annotations
 
+import sys
 import re
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from types import SimpleNamespace
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from pypdf import PdfReader
 from docx import Document
