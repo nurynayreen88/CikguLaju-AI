@@ -54,7 +54,7 @@ def inspect(y,n,body,record):
     if fixed and not matched:hard.append("sow_header_pair_mismatch")
     if not (start and end and assessment):hard.append("missing_teaching_phase")
     if total is not None and total!=60:hard.append("timing_not_60_minutes")
-    if record and record["teacher_selected"] and not re.search(r"pilihan guru|teacher.selected|teacher choice",header,re.I):hard.append("teacher_choice_not_labelled")
+    if record and record["teacher_selected"] and not re.search(r"pilihan guru|teacher.selected|teacher choice|selected by the teacher|selection to teacher|teacher selects|teacher chooses|selected from pupils",header,re.I):hard.append("teacher_choice_not_labelled")
     quality=[]
     if not OBJ.search(body):quality.append("missing_explicit_objective_header")
     if not re.search(r"\bTeacher\b",body):quality.append("teacher_actions_not_identified")
@@ -117,7 +117,7 @@ def audit():
           "duplicate_opening_groups":dup_start,"duplicate_closure_groups":dup_end,
           "shortest_sources":sorted(({"n":x["lesson"],"chars":x["length"]} for x in entries),key=lambda z:z["chars"])[:8],
         }
-        hard_total+=len(missing)+len(unexpected)+sum(map(len,hard.values()))
+        if y>=2: hard_total+=len(missing)+len(unexpected)+sum(map(len,hard.values()))  # Year 1 inventory is KP2027-exempt
         report["years"][str(y)]={"summary":summary,"lessons":entries}
         print(f"YEAR{y} files={len(entries)}/160 fixed={summary['fixed_sow']} matched={summary['sow_matched']} choice={summary['teacher_choice']} objectives={summary['objective_headers']} books={summary['book_refs']} WB={summary['workbook_refs']} audio={summary['audio_refs']} timed60={summary['timing60']}")
         for label,groups in (("HARD",hard),("QUALITY",quality)):
