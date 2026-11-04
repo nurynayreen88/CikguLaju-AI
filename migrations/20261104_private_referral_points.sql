@@ -53,7 +53,7 @@ REVOKE ALL ON public.referral_members, public.referral_signups,
 GRANT SELECT, INSERT, UPDATE, DELETE ON public.referral_members,
     public.referral_signups, public.referral_reward_rules,
     public.referral_point_events TO service_role;
-GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO service_role;
+GRANT USAGE, SELECT ON SEQUENCE public.referral_point_events_id_seq TO service_role;
 
 -- Only the trusted bot server (service role) may call these functions.
 CREATE OR REPLACE FUNCTION public.referral_capture_signup(
