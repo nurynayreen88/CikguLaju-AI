@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh topeng dan menghas
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh topeng bertema Watak Ceria dan membandingkan bentuk, jalinan, imbangan, penegasan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan topeng. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk topeng watak berjalinan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan topeng. Murid mencuba dua sampel kecil menggunakan kad manila serta kertas warna, membandingkan kesan dan memilih teknik yang sesuai untuk topeng watak berjalinan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

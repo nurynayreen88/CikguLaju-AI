@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh tembikar dan mengh
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh tembikar bertema Mangkuk Picitan Mini dan membandingkan bentuk, jalinan, imbangan, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik picitan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk bekas kecil dengan teknik picitan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik picitan. Murid mencuba dua sampel kecil menggunakan doh atau tanah liat, membandingkan kesan dan memilih teknik yang sesuai untuk bekas kecil dengan teknik picitan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
