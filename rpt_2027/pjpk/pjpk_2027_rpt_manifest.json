@@ -1,0 +1,7322 @@
+{
+  "version": 1,
+  "year": 2027,
+  "identity": "PdP; minggu hanyalah slot agihan, bukan identiti",
+  "status": "DRAF_CADANGAN",
+  "ready": false,
+  "source_urls": {
+    "PJ2": "https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit",
+    "PJ3": "https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit",
+    "PJ456": "https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit",
+    "PK": "https://github.com/nurynayreen88/CikguLaju-AI/tree/audit/pjpk-crosswalk-reconcile-20261104/rpt_staging/pjpk",
+    "calendar": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit"
+  },
+  "note": "Takwim: slot calon A/B dari RPT PJ3 2027 dan PJ4-6 v57; cuti negeri/cuti gantian perlu guru sahkan; PK PdP ditempatkan sekata sebagai cadangan, bukan jadual rasmi.",
+  "exceptions": {
+    "year1": "KP2027 DK belum disahkan; tidak dimasukkan",
+    "PJ2_aquatic_inserts": "4 sisipan belum disahkan; tidak dimasukkan",
+    "PJ6_033": "BLOK: konflik SP 5.2.2 dengan sumber DSKP, jangan iklankan READY",
+    "PJ5_6_pages": "31 rujukan halaman belum disahkan; jangan reka"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "groupA": "04/01–07/01",
+      "groupB": "04/01–08/01"
+    },
+    {
+      "week": 2,
+      "groupA": "10/01–14/01",
+      "groupB": "11/01–15/01"
+    },
+    {
+      "week": 3,
+      "groupA": "17/01–21/01",
+      "groupB": "18/01–22/01"
+    },
+    {
+      "week": 4,
+      "groupA": "24/01–28/01",
+      "groupB": "25/01–29/01"
+    },
+    {
+      "week": 5,
+      "groupA": "31/01–04/02",
+      "groupB": "01/02–05/02"
+    },
+    {
+      "week": 6,
+      "groupA": "07/02–11/02",
+      "groupB": "08/02–12/02"
+    },
+    {
+      "week": 7,
+      "groupA": "14/02–18/02",
+      "groupB": "15/02–19/02"
+    },
+    {
+      "week": 8,
+      "groupA": "21/02–25/02",
+      "groupB": "22/02–26/02"
+    },
+    {
+      "week": 9,
+      "groupA": "28/02–04/03",
+      "groupB": "01/03–05/03"
+    },
+    {
+      "week": 10,
+      "groupA": "14/03–18/03",
+      "groupB": "15/03–19/03"
+    },
+    {
+      "week": 11,
+      "groupA": "21/03–25/03",
+      "groupB": "22/03–26/03"
+    },
+    {
+      "week": 12,
+      "groupA": "28/03–01/04",
+      "groupB": "29/03–02/04"
+    },
+    {
+      "week": 13,
+      "groupA": "04/04–08/04",
+      "groupB": "05/04–09/04"
+    },
+    {
+      "week": 14,
+      "groupA": "11/04–15/04",
+      "groupB": "12/04–16/04"
+    },
+    {
+      "week": 15,
+      "groupA": "18/04–22/04",
+      "groupB": "19/04–23/04"
+    },
+    {
+      "week": 16,
+      "groupA": "25/04–29/04",
+      "groupB": "26/04–30/04"
+    },
+    {
+      "week": 17,
+      "groupA": "02/05–06/05",
+      "groupB": "03/05–07/05"
+    },
+    {
+      "week": 18,
+      "groupA": "09/05–13/05",
+      "groupB": "10/05–14/05"
+    },
+    {
+      "week": 19,
+      "groupA": "16/05–20/05",
+      "groupB": "17/05–21/05"
+    },
+    {
+      "week": 20,
+      "groupA": "06/06–10/06",
+      "groupB": "07/06–11/06"
+    },
+    {
+      "week": 21,
+      "groupA": "13/06–17/06",
+      "groupB": "14/06–18/06"
+    },
+    {
+      "week": 22,
+      "groupA": "20/06–24/06",
+      "groupB": "21/06–25/06"
+    },
+    {
+      "week": 23,
+      "groupA": "27/06–01/07",
+      "groupB": "28/06–02/07"
+    },
+    {
+      "week": 24,
+      "groupA": "04/07–08/07",
+      "groupB": "05/07–09/07"
+    },
+    {
+      "week": 25,
+      "groupA": "11/07–15/07",
+      "groupB": "12/07–16/07"
+    },
+    {
+      "week": 26,
+      "groupA": "18/07–22/07",
+      "groupB": "19/07–23/07"
+    },
+    {
+      "week": 27,
+      "groupA": "25/07–29/07",
+      "groupB": "26/07–30/07"
+    },
+    {
+      "week": 28,
+      "groupA": "01/08–05/08",
+      "groupB": "02/08–06/08"
+    },
+    {
+      "week": 29,
+      "groupA": "08/08–12/08",
+      "groupB": "09/08–13/08"
+    },
+    {
+      "week": 30,
+      "groupA": "15/08–19/08",
+      "groupB": "16/08–20/08"
+    },
+    {
+      "week": 31,
+      "groupA": "22/08–26/08",
+      "groupB": "23/08–27/08"
+    },
+    {
+      "week": 32,
+      "groupA": "05/09–09/09",
+      "groupB": "06/09–10/09"
+    },
+    {
+      "week": 33,
+      "groupA": "12/09–16/09",
+      "groupB": "13/09–17/09"
+    },
+    {
+      "week": 34,
+      "groupA": "19/09–23/09",
+      "groupB": "20/09–24/09"
+    },
+    {
+      "week": 35,
+      "groupA": "26/09–30/09",
+      "groupB": "27/09–01/10"
+    },
+    {
+      "week": 36,
+      "groupA": "03/10–07/10",
+      "groupB": "04/10–08/10"
+    },
+    {
+      "week": 37,
+      "groupA": "10/10–14/10",
+      "groupB": "11/10–15/10"
+    },
+    {
+      "week": 38,
+      "groupA": "17/10–21/10",
+      "groupB": "18/10–22/10"
+    }
+  ],
+  "records": [
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 1,
+      "title": "Imbangan Teguh",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.1",
+        "5.4"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3",
+        "2.1.1",
+        "2.1.2",
+        "2.1.3",
+        "2.1.4",
+        "5.1.1",
+        "5.4.2"
+      ],
+      "bt": "2-3",
+      "week": 1,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Litar imbangan: murid mengekalkan posisi statik, kemudian bergerak ke imbangan dinamik menggunakan tapak sokongan berbeza; rakan memberi maklum balas.",
+      "assessment_source": "Senarai semak: kestabilan posisi, perubahan pusat graviti, penggunaan tapak sokongan dan amalan keselamatan. Bukti kefahaman (soal jawab): Jelaskan cara mengubah tapak sokongan untuk kekal seimbang.",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 2,
+      "title": "Hambur kaki",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "1.2.1",
+        "1.2.2",
+        "2.2.1",
+        "5.1.3"
+      ],
+      "bt": "4",
+      "week": 2,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen hambur kaki: demonstrasi fleksi lutut, tolakan dua kaki pada aras rendah, mendarat di atas permukaan selamat dan stabilkan imbangan; guru kawal giliran.",
+      "assessment_source": "Senarai semak individu: tolakan kedua-dua kaki, lutut fleksi semasa mendarat, imbangan selepas mendarat dan patuh arahan keselamatan. Bukti kefahaman (soal jawab): Mengapa lutut perlu dibengkokkan semasa mendarat?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 3,
+      "title": "Hambur tangan",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.2"
+      ],
+      "sp": [
+        "1.2.3",
+        "2.2.2",
+        "5.2.1"
+      ],
+      "bt": "5",
+      "week": 3,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Latih sokongan tangan dan pemindahan berat badan secara progresif di atas tilam dengan bantuan guru; hentikan jika murid tidak stabil.",
+      "assessment_source": "Pemerhatian individu: tapak tangan menyokong badan, pemindahan berat terkawal, pendaratan stabil dan pelaksanaan mengikut kemampuan. Bukti kefahaman (soal jawab): Bagaimana kedudukan tangan membantu menyokong berat badan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 4,
+      "title": "Guling Tenggiling",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.3.1",
+        "1.3.2",
+        "2.3.1",
+        "2.3.2",
+        "5.2.2"
+      ],
+      "bt": "6-7",
+      "week": 4,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Demonstrasi guling dengan dagu dirapatkan ke dada di atas tilam; latihan berperingkat secara individu dengan ruang dan bantuan mencukupi.",
+      "assessment_source": "Senarai semak: dagu dirapatkan, urutan guling lancar, bangun seimbang dan menunggu giliran di luar kawasan tilam. Bukti kefahaman (soal jawab): Mengapa dagu dirapatkan ke dada ketika guling?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 5,
+      "title": "Ikut Langkahku",
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.2"
+      ],
+      "sp": [
+        "1.4.1",
+        "2.4.1",
+        "5.2.1"
+      ],
+      "bt": "9-11",
+      "week": 5,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Murid membina urutan gerak lokomotor mengikut tempo muzik secara berpasangan; ubah arah dan aras tanpa bertembung.",
+      "assessment_source": "Pemerhatian: gerak mengikut tempo, perubahan arah/aras, koordinasi dan jarak selamat daripada rakan. Bukti kefahaman (soal jawab): Bagaimana tempo muzik mempengaruhi pergerakan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 6,
+      "title": "Ikut Gerakku",
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.2",
+        "2.4.2",
+        "5.4.3"
+      ],
+      "bt": "12-13",
+      "week": 6,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Dalam kumpulan kecil, murid menyusun dan mempersembahkan rangkaian gerak berirama; rakan memberi maklum balas berdasarkan contoh guru.",
+      "assessment_source": "Rubrik: urutan gerak, keselarasan tempo, kawalan ruang dan kerjasama kumpulan. Bukti kefahaman (soal jawab): Mengapa ruang pergerakan perlu dikawal ketika bergerak berkumpulan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 7,
+      "title": "Hantaran Pantas Elak Dipintas",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.4"
+      ],
+      "sp": [
+        "1.5.1",
+        "1.5.2",
+        "1.5.5",
+        "2.5.1",
+        "2.5.2",
+        "5.4.1"
+      ],
+      "bt": "15-17",
+      "week": 7,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Permainan kecil 3 lawan 3: hantaran kepada rakan di ruang kosong sambil pihak lawan cuba memintas tanpa kontak badan.",
+      "assessment_source": "Senarai semak: hantaran tepat, bergerak ke ruang, percubaan memintas secara selamat dan komunikasi pasukan. Bukti kefahaman (soal jawab): Mengapa hantaran dibuat ke ruang kosong?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 8,
+      "title": "Hantaran Pantas (pengukuhan)",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.4"
+      ],
+      "sp": [
+        "1.5.1",
+        "1.5.2",
+        "1.5.5",
+        "2.5.1",
+        "2.5.2",
+        "5.4.1"
+      ],
+      "bt": "15-17",
+      "week": 8,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Permainan 3 lawan 3 di ruang bertanda: murid bergerak mencari ruang kosong, melakukan hantaran tepat kepada rakan dan mengubah kedudukan selepas menghantar. Pasukan lawan cuba memintas tanpa sentuhan fizikal. Ulang dengan pertukaran peranan.",
+      "assessment_source": "Senarai semak: hantaran sampai kepada rakan, bergerak ke ruang kosong selepas menghantar, mengelak pintasan dan bekerjasama mengikut peraturan. Bukti kefahaman (soal jawab): Apakah tindakan selepas menghantar untuk mengelak pintasan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 9,
+      "title": "Lincah Mengelecek, Jaringan Hebat",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.3"
+      ],
+      "sp": [
+        "1.5.3",
+        "1.5.4",
+        "1.5.6",
+        "2.5.3",
+        "2.5.4",
+        "2.5.5",
+        "5.3.1"
+      ],
+      "bt": "18-19",
+      "week": 9,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Permainan kecil kategori serangan: murid mengelecek bola melalui ruang, menukar arah dan membuat jaringan; pemain bertahan cuba mengadang secara terkawal.",
+      "assessment_source": "Pemerhatian: kawalan bola ketika mengelecek, pemilihan ruang, ketepatan jaringan dan keputusan mengadang tanpa sentuhan berbahaya. Bukti kefahaman (soal jawab): Bilakah sesuai menukar arah ketika mengelecek sebelum menjaring?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 10,
+      "title": "Hantar Tepat, Terima Bijak",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "2.6.1",
+        "5.4.2"
+      ],
+      "bt": "21-22",
+      "week": 10,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen berpasangan: murid bergerak ke ruang terbuka, menghantar objek ke sasaran pada jarak berbeza dan menerima dengan posisi sedia; tukar peranan setiap pusingan.",
+      "assessment_source": "Pemerhatian: kedudukan sedia, hantaran ke sasaran dan penerimaan terkawal. Bukti kefahaman (soal jawab): Mengapa posisi sedia penting semasa menerima objek?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 11,
+      "title": "Pukulan Ajaib",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.1"
+      ],
+      "sp": [
+        "1.6.3",
+        "1.6.4",
+        "2.6.2",
+        "5.1.3"
+      ],
+      "bt": "23",
+      "week": 11,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen pukulan: latihan pegangan alat, ayunan tanpa objek, kemudian memukul objek lembut ke zon sasaran; rakan mengutip hanya selepas isyarat guru.",
+      "assessment_source": "Rekod percubaan: pegangan alat, ayunan terkawal dan sentuhan objek. Bukti kefahaman (soal jawab): Bagaimana arah ayunan mempengaruhi pukulan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 12,
+      "title": "Mari Servis",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.5",
+        "2.6.3",
+        "2.6.4",
+        "5.4.3"
+      ],
+      "bt": "24-25",
+      "week": 12,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Servis berperingkat dari garisan dekat ke jauh menuju zon sasaran; murid mengubah arah dan daya mengikut maklum balas pasangan.",
+      "assessment_source": "Bilangan servis sah ke kawasan sasaran serta pematuhan giliran. Bukti kefahaman (soal jawab): Bagaimana perubahan daya mengubah jarak servis?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 13,
+      "title": "Mari Servis (pengukuhan)",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.5",
+        "2.6.3",
+        "2.6.4",
+        "5.4.3"
+      ],
+      "bt": "24-25",
+      "week": 13,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen servis dari dua jarak: murid melakukan servis ke petak sasaran kiri dan kanan, kemudian menyertai permainan mini dengan giliran servis bergilir. Rakan mencatat servis sah dan mencadangkan pembetulan arah atau daya.",
+      "assessment_source": "Rekod bilangan servis sah ke zon sasaran; pemerhatian teknik servis, kawalan arah dan kepatuhan giliran/peraturan. Bukti kefahaman (soal jawab): Apakah pelarasan arah atau daya apabila servis tersasar?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 14,
+      "title": "Siapa Pantas",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.7.1",
+        "1.7.2",
+        "2.7.1",
+        "2.7.2",
+        "5.1.2"
+      ],
+      "bt": "28-29",
+      "week": 14,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Permainan memadang mini: lakukan balingan tepat ke zon, tangkapan objek lembut dan pergerakan mencari ruang memadang. Murid bertukar peranan pembaling, pemukul dan pemadang; guru menyoal sebab pemilihan posisi.",
+      "assessment_source": "Senarai semak individu: balingan tepat, tangkapan selamat, gerak ke ruang memadang dan alasan ringkas pemilihan posisi. Bukti kefahaman (soal jawab): Mengapa pemadang memilih ruang tertentu untuk menangkap bola?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 15,
+      "title": "Ayunan Terbaik",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.7.3",
+        "2.7.3",
+        "5.1.4"
+      ],
+      "bt": "30",
+      "week": 15,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen pukulan objek lembut: tunjuk cara pegangan, kedudukan sisi dan ayunan; murid memukul ke zon sasaran serta membanding arah pukulan apabila kedudukan badan berubah. Pastikan zon menunggu di belakang garisan.",
+      "assessment_source": "Pemerhatian individu: pegangan dan ayunan terkawal, kontak objek, arah pukulan serta penerangan mudah kesan kedudukan badan. Bukti kefahaman (soal jawab): Bagaimana kedudukan badan mempengaruhi arah pukulan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 16,
+      "title": "Putaran Semangat",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.7.4",
+        "1.7.5",
+        "2.7.4",
+        "5.1.2"
+      ],
+      "bt": "31",
+      "week": 16,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Permainan memadang ubah suai: murid menerima bola lembut, memutar badan dan membuat hantaran ke sasaran berbeza. Banding putaran dengan dan tanpa langkah kaki; bertukar peranan dengan jarak selamat.",
+      "assessment_source": "Senarai semak: putaran badan dan langkah kaki seimbang, hantaran tepat selepas putaran, serta sebab memilih arah hantaran. Bukti kefahaman (soal jawab): Mengapa langkah kaki membantu hantaran selepas putaran?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 17,
+      "title": "Larian Aneka Jarak",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.1",
+        "1.8.2",
+        "2.8.1",
+        "2.8.2",
+        "5.1.2"
+      ],
+      "bt": "33-35",
+      "week": 17,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Larian di laluan bertanda pada dua jarak berbeza: murid melakukan pemanasan badan, mencuba rentak permulaan dan penamat, kemudian membanding kesesuaian kelajuan dengan jarak. Sediakan sela rehat dan air minuman.",
+      "assessment_source": "Pemerhatian postur dan koordinasi larian; murid dapat menjelaskan perbezaan rentak bagi jarak berlainan serta mengamalkan keselamatan. Bukti kefahaman (soal jawab): Bagaimana rentak larian berubah mengikut jarak?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 18,
+      "title": "Larian Aneka Jarak (pengukuhan)",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.1",
+        "1.8.2",
+        "2.8.1",
+        "2.8.2",
+        "5.1.2"
+      ],
+      "bt": "33-35",
+      "week": 18,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Larian ulangan dalam kumpulan kecil: murid merancang rentak bagi jarak pendek dan lebih panjang, melaksanakannya secara bergilir serta membanding catatan masa sendiri tanpa mewujudkan persaingan tidak sihat.",
+      "assessment_source": "Rekod peningkatan kendiri bagi rentak dan kawalan larian; murid menyatakan satu pembaikan teknik serta mematuhi giliran. Bukti kefahaman (soal jawab): Apakah perbezaan rentak yang diperhatikan antara dua jarak?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 19,
+      "title": "Jauhku Melompat",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.2"
+      ],
+      "sp": [
+        "1.9.1",
+        "1.9.2",
+        "1.9.3",
+        "2.9.1",
+        "5.2.2"
+      ],
+      "bt": "36-37",
+      "week": 19,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen lompat: bandingkan lonjakan daripada berdiri dan selepas larian awalan pendek; murid mengayun tangan, memilih kaki lonjak mengikut tugasan, mendarat dengan kedua-dua kaki dan lutut dibengkokkan di kawasan pasir atau tikar yang selamat. Rakan mencatat jarak dari garisan lonjak ke kesan mendarat paling hampir.",
+      "assessment_source": "Rekod tiga cubaan: koordinasi awalan-lonjakan, ayunan tangan, pendaratan dua kaki dengan lutut fleksi dan ukuran jarak yang konsisten. Bukti kefahaman (soal jawab): Bagaimana awalan dan ayunan tangan membantu jarak lompatan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 20,
+      "title": "Halangan Bertingkat",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.2"
+      ],
+      "sp": [
+        "1.9.4",
+        "2.9.2",
+        "5.2.2"
+      ],
+      "bt": "38",
+      "week": 20,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Litar halangan rendah: murid menentukan jarak awalan, melonjak melepasi halangan lembut mengikut aras kemampuan, dan mendarat seimbang. Guru memastikan laluan sehala, ruang mendarat kosong dan halangan tidak keras.",
+      "assessment_source": "Senarai semak: awalan terkawal, lonjakan sesuai, tidak menyentuh halangan, pendaratan stabil dan patuh giliran. Bukti kefahaman (soal jawab): Mengapa jarak awalan perlu sesuai dengan halangan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 21,
+      "title": "Lontaran Gemilang",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.1"
+      ],
+      "sp": [
+        "1.10.1",
+        "1.10.2",
+        "1.10.3",
+        "2.10.1",
+        "2.10.2",
+        "2.10.3",
+        "5.1.4"
+      ],
+      "bt": "39",
+      "week": 21,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen lontaran objek lembut: murid mencuba lontaran daripada kedudukan statik dan selepas langkah awalan, menggunakan putaran badan serta pelepasan ke arah kawasan bertanda. Semua murid menunggu di belakang garisan sehingga arahan mengambil objek.",
+      "assessment_source": "Pemerhatian dan catatan zon jatuhan: pegangan, koordinasi langkah dan putaran, sudut pelepasan serta pematuhan keselamatan. Bukti kefahaman (soal jawab): Bagaimana langkah dan sudut pelepasan mempengaruhi lontaran?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 22,
+      "title": "Selam dan Kawal",
+      "sk": [
+        "1.11",
+        "2.11",
+        "5.1"
+      ],
+      "sp": [
+        "1.11.1",
+        "2.11.1",
+        "5.1.1"
+      ],
+      "bt": "41-43",
+      "week": 22,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Di kolam yang diluluskan sahaja: guru atau jurulatih kompeten menerangkan prosedur keselamatan, murid berlatih kawalan pernafasan dan kemahiran menyelam cetek mengikut tahap keupayaan dengan pengawasan rapat. Jika fasiliti/pengawasan tiada, jalankan pengenalan keselamatan di darat dan jadualkan semula penilaian kemahir",
+      "assessment_source": "Pentaksiran kemahiran air hanya apabila aktiviti benar-benar dilaksanakan dalam air dengan pengawasan kompeten; catat kawalan nafas, pematuhan arahan dan keselamatan. Penerangan di darat tidak dikira bukti penguasaan kemahiran air. Bukti kefahaman (soal jawab): Apakah langkah kes",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 23,
+      "title": "Keribas Bertenaga",
+      "sk": [
+        "1.12",
+        "2.12",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.12.1",
+        "1.12.2",
+        "2.12.1",
+        "5.2.2"
+      ],
+      "bt": "44-45",
+      "week": 23,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Di kolam yang diluluskan sahaja: murid berlatih tendangan keribas secara progresif menggunakan sokongan tepi kolam atau alat apungan, secara meniarap dan telentang mengikut kemampuan. Guru/jurulatih kompeten memantau posisi badan dan keselamatan. Jika tiada kemudahan, tangguhkan penilaian kemahiran air.",
+      "assessment_source": "Senarai semak dalam air: posisi badan, pergerakan kaki bergilir dan pematuhan arahan keselamatan; latihan simulasi di darat bukan bukti penguasaan berenang. Bukti kefahaman (soal jawab): Bagaimana tendangan keribas membantu pergerakan badan di air?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 24,
+      "title": "Siapa Kuat Dia Menang",
+      "sk": [
+        "1.13",
+        "2.13",
+        "5.1",
+        "5.4"
+      ],
+      "sp": [
+        "1.13.1",
+        "2.13.1",
+        "5.1.2",
+        "5.4.2"
+      ],
+      "bt": "47-48",
+      "week": 24,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Permainan tradisional kekuatan dan daya tahan otot seperti Tarik Upih atau Batak Lampung, hanya jika peralatan, ruang dan pengawasan sesuai. Guru menerangkan peraturan serta teknik mengawal daya; murid bermain secara bergilir, mengamalkan keselamatan dan menjelaskan cara permainan menguji kekuatan serta daya tahan otot",
+      "assessment_source": "A: 04/07–08/07",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 25,
+      "title": "Karom",
+      "sk": [
+        "1.13",
+        "2.13",
+        "5.2"
+      ],
+      "sp": [
+        "1.13.2",
+        "2.13.2",
+        "5.2.1"
+      ],
+      "bt": "49",
+      "week": 25,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Karom dalam kumpulan kecil: murid berlatih jentikan dengan daya berbeza ke sasaran, memilih sudut mudah, mematuhi giliran dan menerangkan strategi pilihan.",
+      "assessment_source": "Rekod percubaan: jentikan terkawal, ketepatan sasaran, pemilihan strategi dan pematuhan peraturan. Bukti kefahaman (soal jawab): Bagaimana sudut dan daya jentikan mengubah gerakan buah karom?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 26,
+      "title": "Batu Seremban",
+      "sk": [
+        "1.13",
+        "2.13",
+        "5.2"
+      ],
+      "sp": [
+        "1.13.2",
+        "2.13.2",
+        "5.2.1"
+      ],
+      "bt": "50",
+      "week": 26,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Batu seremban berperingkat: lambung, kutip dan sambut mengikut urutan permainan; pasangan mengira kejayaan percubaan dan mencadangkan penambahbaikan koordinasi tangan-mata.",
+      "assessment_source": "Rekod individu: urutan yang berjaya, koordinasi lambung-kutip-sambut, giliran dan penerangan pembetulan gerakan. Bukti kefahaman (soal jawab): Bagaimana lambungan mempengaruhi peluang mengutip batu?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 27,
+      "title": "Dam",
+      "sk": [
+        "1.13",
+        "2.13",
+        "5.2"
+      ],
+      "sp": [
+        "1.13.2",
+        "2.13.2",
+        "5.2.1"
+      ],
+      "bt": "51",
+      "week": 27,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Dam berpasangan: kenal pasti langkah sah dan situasi menangkap buah, rancang satu langkah serta jelaskan keputusan; tukar giliran mengikut peraturan.",
+      "assessment_source": "Senarai semak: langkah sah, keputusan strategi mudah, penjelasan pilihan dan amalan giliran. Bukti kefahaman (soal jawab): Mengapa satu langkah dam lebih sesuai daripada langkah lain?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 28,
+      "title": "Catur",
+      "sk": [
+        "1.13",
+        "2.13",
+        "5.2"
+      ],
+      "sp": [
+        "1.13.2",
+        "2.13.2",
+        "5.2.1"
+      ],
+      "bt": "51",
+      "week": 28,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Catur asas berpasangan: demonstrasi gerakan buah terpilih, pilih langkah sah dalam situasi ringkas dan jelaskan kesannya terhadap kedudukan; amalkan giliran dan hormat rakan.",
+      "assessment_source": "Pemerhatian: mengenal gerakan buah, memilih langkah sah, menerangkan sebab pilihan dan mematuhi peraturan. Bukti kefahaman (soal jawab): Mengapa gerakan buah catur perlu dirancang sebelum dimainkan?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 29,
+      "title": "Yakin Bersedia",
+      "sk": [
+        "3.1",
+        "4.1",
+        "5.2"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.3",
+        "4.1.2",
+        "5.2.2"
+      ],
+      "bt": "53-54",
+      "week": 29,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Murid melakukan pemanasan badan beransur-ansur dan menerangkan kaitan aktiviti dengan persediaan tubuh sebelum senaman.",
+      "assessment_source": "Pemerhatian: urutan pemanasan badan, peningkatan intensiti beransur-ansur dan penerangan tujuan pemanasan. Bukti kefahaman (soal jawab): Mengapa pemanasan badan dilakukan secara beransur-ansur?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 30,
+      "title": "Kekal Ceria",
+      "sk": [
+        "3.1",
+        "4.1",
+        "5.2"
+      ],
+      "sp": [
+        "3.1.2",
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "5.2.1"
+      ],
+      "bt": "55",
+      "week": 30,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Murid melakukan aktiviti menyejukkan badan dan regangan ringan selepas pergerakan aktif serta menjelaskan kepentingan pemulihan.",
+      "assessment_source": "Pemerhatian: urutan menyejukkan badan, pernafasan terkawal dan penerangan kepentingan aktiviti selepas senaman. Bukti kefahaman (soal jawab): Mengapa aktiviti menyejukkan badan dilakukan selepas senaman?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 31,
+      "title": "Jantung Hebat, Paru-Paru Sihat",
+      "sk": [
+        "3.2",
+        "4.2",
+        "5.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.2.1",
+        "4.2.2",
+        "5.2.1"
+      ],
+      "bt": "57-58",
+      "week": 31,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Litar aerobik intensiti sederhana: berjalan pantas, langkah sisi dan gerak berirama pada sela masa sesuai. Murid merekod tempoh serta membanding denyutan nadi atau pernafasan sebelum dan selepas aktiviti.",
+      "assessment_source": "Rekod individu: tempoh aktiviti aerobik, perubahan respons jantung/pernafasan dan penerangan kaitan aktiviti dengan kecergasan. Bukti kefahaman (soal jawab): Apakah perubahan pada pernafasan atau nadi selepas aktiviti aerobik?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 32,
+      "title": "Jantung Hebat (pengukuhan)",
+      "sk": [
+        "3.2",
+        "4.2",
+        "5.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.2.1",
+        "4.2.2",
+        "5.2.1"
+      ],
+      "bt": "57-58",
+      "week": 32,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Pengukuhan aerobik: ulang litar dengan tempoh yang ditetapkan, semak kebolehan bercakap semasa bergerak dan rekod respons nadi/pernafasan. Murid menerangkan sebab perubahan selepas aktiviti.",
+      "assessment_source": "Semak rekod tempoh, pemerhatian intensiti selamat dan penjelasan perubahan respons badan sebelum dan selepas. Bukti kefahaman (soal jawab): Mengapa pernafasan menjadi lebih cepat semasa aktiviti aerobik?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 33,
+      "title": "Melentur Dinamik",
+      "sk": [
+        "3.3",
+        "4.3",
+        "5.4"
+      ],
+      "sp": [
+        "3.3.1",
+        "4.3.1",
+        "4.3.2",
+        "5.4.2"
+      ],
+      "bt": "59",
+      "week": 33,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Stesen kelenturan: lakukan regangan dinamik bahu, pinggul dan kaki, kemudian regangan statik dengan tempoh tahan terkawal. Murid mengenal pasti perbezaan pergerakan dan sebab tidak memaksa sendi.",
+      "assessment_source": "Senarai semak: regangan dinamik dan statik, tempoh tahan, postur serta penerangan tujuan kedua-dua kaedah. Bukti kefahaman (soal jawab): Apakah perbezaan regangan dinamik dengan regangan statik?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 34,
+      "title": "Melentur Dinamik (pengukuhan)",
+      "sk": [
+        "3.3",
+        "4.3",
+        "5.4"
+      ],
+      "sp": [
+        "3.3.1",
+        "4.3.1",
+        "4.3.2",
+        "5.4.2"
+      ],
+      "bt": "59",
+      "week": 34,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Secara berpasangan di stesen, murid melakukan regangan dinamik bahu, pinggul dan kaki dengan julat gerak selamat, kemudian regangan statik otot utama dengan tempoh tahan terkawal. Rakan memerhati postur dan mengingatkan supaya tidak melantun atau memaksa sendi.",
+      "assessment_source": "Senarai semak: mengenal regangan dinamik/statik, melakukan postur selamat, mengekalkan regangan statik mengikut tempoh yang diarahkan dan memberi maklum balas kepada rakan. Bukti kefahaman (soal jawab): Mengapa regangan tidak dilakukan secara melantun?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 35,
+      "title": "Kira dan Tahan",
+      "sk": [
+        "3.3",
+        "4.3",
+        "5.1"
+      ],
+      "sp": [
+        "3.3.1",
+        "4.3.1",
+        "4.3.2",
+        "5.1.2"
+      ],
+      "bt": "60",
+      "week": 35,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Regangan statik berpasangan: kenal pasti kumpulan otot utama, capai julat selesa dan tahan mengikut kiraan guru tanpa melantun; rakan mencatat tempoh dan memerhati postur. Guru membezakan secara ringkas regangan statik daripada dinamik sebelum murid membuat perbandingan.",
+      "assessment_source": "Rekod tempoh tahan dan postur selamat, pengenalpastian otot serta penerangan perbezaan regangan statik dan dinamik. Bukti kefahaman: Mengapa regangan statik perlu ditahan dan tidak dilantun?",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 36,
+      "title": "Saya Gagah",
+      "sk": [
+        "3.4",
+        "4.4",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "3.4.1",
+        "4.4.1",
+        "4.4.2",
+        "5.1.2",
+        "5.2.1"
+      ],
+      "bt": "61",
+      "week": 36,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Litar kekuatan dan daya tahan otot: murid melakukan separa cangkung, jengkit kaki dan tekan tubi ubah suai selama 10–15 saat setiap stesen mengikut kemampuan, dengan rehat dan demonstrasi postur. Bezakan ulangan terkawal daripada pergerakan tergesa-gesa.",
+      "assessment_source": "Catat ulangan yang betul dalam 10–15 saat; murid menamakan otot besar yang digunakan dalam separa cangkung, jengkit kaki dan tekan tubi ubah suai, kemudian membezakan kekuatan otot dengan daya tahan otot. Semak ruang selamat dan penglibatan aktif.",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 37,
+      "title": "Tubuhku Sihat",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.3"
+      ],
+      "sp": [
+        "3.5.1",
+        "3.5.2",
+        "4.5.1",
+        "4.5.2",
+        "4.5.3",
+        "5.3.1"
+      ],
+      "bt": "62-63",
+      "week": 37,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Ukur tinggi dan timbang berat badan secara individu dengan privasi; rekod tarikh dan unit. Gunakan carta pertumbuhan normal secara sensitif tanpa mengumumkan bacaan murid. Murid mengenal pasti nutrien yang memberi tenaga dan menyokong tumbesaran serta berbincang hubungan senaman dengan pengurusan berat badan secara tid",
+      "assessment_source": "A: 10/10–14/10",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PJ",
+      "pdp": 38,
+      "title": "Tubuhku Sihat (pengukuhan)",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.3"
+      ],
+      "sp": [
+        "3.5.1",
+        "3.5.2",
+        "4.5.1",
+        "4.5.2",
+        "4.5.3",
+        "5.3.1"
+      ],
+      "bt": "62-63",
+      "week": 38,
+      "origin": "PJ3_2027_RPT",
+      "activity_source": "Pengukuhan: ulang teknik ukur dan rekod tinggi/berat badan secara sulit; murid membaca carta pertumbuhan normal dengan bimbingan, menyusun contoh makanan mengikut nutrien yang memberi tenaga atau membantu tumbesaran dan menerangkan bagaimana aktiviti fizikal menyokong pengurusan berat badan yang sihat. Galakkan perbinc",
+      "assessment_source": "A: 17/10–21/10",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 1,
+      "title": "Teroka Ruang",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "2.1.1",
+        "5.1.5"
+      ],
+      "bt": "2-3",
+      "week": 1,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 2,
+      "title": "Bergerak Ikut Tempo",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.1.2",
+        "2.1.2",
+        "2.1.3",
+        "5.2.2"
+      ],
+      "bt": "4-5",
+      "week": 2,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 3,
+      "title": "Senaman Ceria",
+      "sk": [
+        "1.2",
+        "1.3",
+        "2.2",
+        "5.2"
+      ],
+      "sp": [
+        "1.2.1",
+        "1.3.1",
+        "2.2.1",
+        "5.2.1"
+      ],
+      "bt": "8-9",
+      "week": 3,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 4,
+      "title": "Mari Melompat",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.2"
+      ],
+      "sp": [
+        "1.2.2",
+        "2.2.2",
+        "5.2.2"
+      ],
+      "bt": "10",
+      "week": 4,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 5,
+      "title": "Lompat Riang",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.4"
+      ],
+      "sp": [
+        "1.2.3",
+        "2.2.2",
+        "5.4.2"
+      ],
+      "bt": "11",
+      "week": 5,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 6,
+      "title": "Rangkaian Pergerakan Bukan Lokomotor",
+      "sk": [
+        "1.3",
+        "2.2",
+        "5.2"
+      ],
+      "sp": [
+        "1.3.2",
+        "2.2.3",
+        "5.2.1"
+      ],
+      "bt": "12",
+      "week": 6,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 7,
+      "title": "Rangkaian Bergabung",
+      "sk": [
+        "1.3",
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "1.3.3",
+        "2.2.1",
+        "5.1.2"
+      ],
+      "bt": "13",
+      "week": 7,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 8,
+      "title": "Lambung dan Tangkap",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.1",
+        "2.3.1",
+        "5.4.3"
+      ],
+      "bt": "15",
+      "week": 8,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 9,
+      "title": "Golek Tepat",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.4.2",
+        "2.3.1",
+        "5.2.3"
+      ],
+      "bt": "16",
+      "week": 9,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 10,
+      "title": "Baling Bola Gergasi",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.4.3",
+        "2.3.1",
+        "5.2.2"
+      ],
+      "bt": "17",
+      "week": 10,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 11,
+      "title": "Hantaran Cemerlang",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.3"
+      ],
+      "sp": [
+        "1.4.4",
+        "2.3.1",
+        "5.3.1"
+      ],
+      "bt": "18-19",
+      "week": 11,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 12,
+      "title": "Jaringan Emas",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.5",
+        "2.3.2",
+        "2.3.3",
+        "5.4.2"
+      ],
+      "bt": "20",
+      "week": 12,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 13,
+      "title": "Serang dan Tahan",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.6",
+        "2.3.2",
+        "5.4.2"
+      ],
+      "bt": "21",
+      "week": 13,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 14,
+      "title": "Voli Belon",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.7",
+        "2.3.2",
+        "2.3.3",
+        "5.4.1"
+      ],
+      "bt": "22-23",
+      "week": 14,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 15,
+      "title": "Pukul dan Lari",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.1"
+      ],
+      "sp": [
+        "1.4.8",
+        "2.3.2",
+        "2.3.3",
+        "5.1.3"
+      ],
+      "bt": "24-25",
+      "week": 15,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 16,
+      "title": "Tangan Ajaib",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.9",
+        "2.3.2",
+        "5.4.2"
+      ],
+      "bt": "26",
+      "week": 16,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 17,
+      "title": "Gelecek Zig-Zag",
+      "sk": [
+        "1.4",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.4.10",
+        "2.3.2",
+        "5.4.1"
+      ],
+      "bt": "27",
+      "week": 17,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 18,
+      "title": "Mari Bergerak Berirama",
+      "sk": [
+        "1.5",
+        "2.4",
+        "5.2"
+      ],
+      "sp": [
+        "1.5.1",
+        "2.4.1",
+        "5.2.1"
+      ],
+      "bt": "29-30",
+      "week": 18,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 19,
+      "title": "Kami Kreatif",
+      "sk": [
+        "1.5",
+        "2.4",
+        "5.4"
+      ],
+      "sp": [
+        "1.5.2",
+        "2.4.2",
+        "5.4.3"
+      ],
+      "bt": "31",
+      "week": 19,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 20,
+      "title": "Gerak Ria",
+      "sk": [
+        "1.6",
+        "2.5",
+        "5.1"
+      ],
+      "sp": [
+        "1.6.1",
+        "2.5.1",
+        "5.1.2"
+      ],
+      "bt": "33-34",
+      "week": 20,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 21,
+      "title": "Kami Sentiasa Bergerak",
+      "sk": [
+        "1.6",
+        "2.5",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.6.2",
+        "2.5.2",
+        "5.1.5",
+        "5.2.1"
+      ],
+      "bt": "35",
+      "week": 21,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 22,
+      "title": "Celik Gimnas",
+      "sk": [
+        "1.7",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.7.1",
+        "1.7.2",
+        "2.6.1",
+        "2.6.2",
+        "5.4.2"
+      ],
+      "bt": "36",
+      "week": 22,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 23,
+      "title": "Stabilnya Saya",
+      "sk": [
+        "1.7",
+        "2.6",
+        "5.1"
+      ],
+      "sp": [
+        "1.7.3",
+        "2.6.3",
+        "5.1.1"
+      ],
+      "bt": "37",
+      "week": 23,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 24,
+      "title": "Seronoknya",
+      "sk": [
+        "1.8",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.1",
+        "2.7.1",
+        "5.1.2"
+      ],
+      "bt": "38",
+      "week": 24,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 25,
+      "title": "Guling Depan (Straddle)",
+      "sk": [
+        "1.8",
+        "2.7",
+        "5.2"
+      ],
+      "sp": [
+        "1.8.2",
+        "2.7.1",
+        "5.2.2"
+      ],
+      "bt": "39",
+      "week": 25,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 26,
+      "title": "Guling Belakang (Straddle)",
+      "sk": [
+        "1.8",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.3",
+        "2.7.1",
+        "2.7.2",
+        "5.1.5"
+      ],
+      "bt": "40-41",
+      "week": 26,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 27,
+      "title": "Formasi Gulingan",
+      "sk": [
+        "1.8",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.1",
+        "1.8.2",
+        "2.7.2",
+        "5.1.5"
+      ],
+      "bt": "42-43",
+      "week": 27,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 28,
+      "title": "Jalan-Jalan Cari Harta",
+      "sk": [
+        "1.11",
+        "2.10",
+        "5.4"
+      ],
+      "sp": [
+        "1.11.1",
+        "2.10.1",
+        "2.10.2",
+        "5.4.3"
+      ],
+      "bt": "49-50",
+      "week": 28,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 29,
+      "title": "Kenangan Lama",
+      "sk": [
+        "1.11",
+        "2.10",
+        "5.4"
+      ],
+      "sp": [
+        "1.11.2",
+        "2.10.3",
+        "5.4.1"
+      ],
+      "bt": "51",
+      "week": 29,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 30,
+      "title": "Mari Panaskan Badan, Mari Sejukkan Badan",
+      "sk": [
+        "3.1",
+        "4.1",
+        "5.1"
+      ],
+      "sp": [
+        "3.1.1",
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "5.1.1"
+      ],
+      "bt": "53-54",
+      "week": 30,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 31,
+      "title": "Jom Berlari",
+      "sk": [
+        "3.2",
+        "4.2",
+        "5.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.2.1",
+        "4.2.2",
+        "4.2.3",
+        "5.2.1"
+      ],
+      "bt": "57-58",
+      "week": 31,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 32,
+      "title": "Sedia Cergas",
+      "sk": [
+        "3.3",
+        "4.3",
+        "5.1"
+      ],
+      "sp": [
+        "3.3.1",
+        "4.3.1",
+        "5.1.1"
+      ],
+      "bt": "59",
+      "week": 32,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 33,
+      "title": "Ke Taman Rekreasi",
+      "sk": [
+        "3.4",
+        "4.4",
+        "5.1"
+      ],
+      "sp": [
+        "3.4.1",
+        "4.4.1",
+        "5.1.4"
+      ],
+      "bt": "60-61",
+      "week": 33,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 34,
+      "title": "Mari Bergayut",
+      "sk": [
+        "3.4",
+        "4.4",
+        "5.2"
+      ],
+      "sp": [
+        "3.4.2",
+        "4.4.2",
+        "5.2.2"
+      ],
+      "bt": "62",
+      "week": 34,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 35,
+      "title": "Timbang dan Ukur",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.4"
+      ],
+      "sp": [
+        "3.5.1",
+        "3.5.2",
+        "4.5.1",
+        "4.5.2",
+        "5.4.3"
+      ],
+      "bt": "63",
+      "week": 35,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 36,
+      "title": "Cergas Sihat",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.2"
+      ],
+      "sp": [
+        "3.5.2",
+        "4.5.1",
+        "4.5.3",
+        "5.2.1"
+      ],
+      "bt": "64",
+      "week": 36,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PJ",
+      "pdp": 37,
+      "title": "Doktor Sayang",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.2"
+      ],
+      "sp": [
+        "3.5.2",
+        "4.5.3",
+        "5.2.1"
+      ],
+      "bt": "65",
+      "week": 37,
+      "origin": "PJ2_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 1,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: RIANG BERGERAK",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.1.1",
+        "2.1.1",
+        "5.2.2"
+      ],
+      "bt": "2-3",
+      "week": 1,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 2,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: ARAS KESTABILAN",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.1"
+      ],
+      "sp": [
+        "1.1.2",
+        "2.1.2",
+        "5.1.5"
+      ],
+      "bt": "4",
+      "week": 2,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 3,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: DUNIA TERBALIK",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.1.3",
+        "2.1.2",
+        "5.2.3"
+      ],
+      "bt": "5",
+      "week": 3,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 4,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: TINGGI KE RENDAH",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "1.2.1",
+        "2.2.1",
+        "5.1.3"
+      ],
+      "bt": "6",
+      "week": 4,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 5,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: EYE ON MALAYSIA",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.3.1",
+        "2.3.1",
+        "5.2.4"
+      ],
+      "bt": "7",
+      "week": 5,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 6,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: 1,2,3…GULING",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.1"
+      ],
+      "sp": [
+        "1.3.2",
+        "1.3.3",
+        "2.3.1",
+        "5.1.1"
+      ],
+      "bt": "8",
+      "week": 7,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 7,
+      "title": "UNIT 1: GERAK GIMNAS TAJUK: AKSI SI DALI",
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.1"
+      ],
+      "sp": [
+        "1.4.1",
+        "2.4.1",
+        "5.1.4"
+      ],
+      "bt": "9-10",
+      "week": 8,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 8,
+      "title": "UNIT 2: GERAK KREATIF BERTEMA TAJUK: RANCAK DAN BERGAYA",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.2"
+      ],
+      "sp": [
+        "1.5.1",
+        "1.5.2",
+        "2.5.1",
+        "5.2.2"
+      ],
+      "bt": "11-14",
+      "week": 9,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 9,
+      "title": "JAUH DAN DEKAT",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "2.6.1",
+        "2.6.2",
+        "5.4.1"
+      ],
+      "bt": "15",
+      "week": 10,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 10,
+      "title": "RAJA KELECEK RAJA MENGADANG",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.3"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "1.6.3",
+        "1.6.4",
+        "2.6.3",
+        "2.6.4",
+        "5.3.1"
+      ],
+      "bt": "17",
+      "week": 11,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 11,
+      "title": "PANTAS PINTAS CEPAT TAKEL",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.2"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "1.6.5",
+        "1.6.6",
+        "2.6.5",
+        "5.2.2"
+      ],
+      "bt": "18",
+      "week": 12,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 12,
+      "title": "JARINGAN TEPAT",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.7",
+        "2.6.6",
+        "5.4.3"
+      ],
+      "bt": "19-20",
+      "week": 13,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 13,
+      "title": "BIJAK MULA BIJAK TERIMA",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.3"
+      ],
+      "sp": [
+        "1.7.1",
+        "1.7.2",
+        "1.7.3",
+        "2.7.1",
+        "5.3.2"
+      ],
+      "bt": "21-23",
+      "week": 14,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 14,
+      "title": "TUTUP RUANG",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.1"
+      ],
+      "sp": [
+        "1.7.4",
+        "2.7.2",
+        "5.1.5"
+      ],
+      "bt": "24-25",
+      "week": 15,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 15,
+      "title": "SILANG MENYILANG",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.2"
+      ],
+      "sp": [
+        "1.7.5",
+        "2.7.2",
+        "5.2.2"
+      ],
+      "bt": "26",
+      "week": 16,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 16,
+      "title": "REBUT PELUANG",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.4"
+      ],
+      "sp": [
+        "1.7.6",
+        "2.7.3",
+        "5.4.2"
+      ],
+      "bt": "27-28",
+      "week": 17,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 17,
+      "title": "UNIT 5: PEMUKUL HEBAT PEMADANG CEKAP TAJUK: MEMBALING TEPAT MENANGKAP CEKAP",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.2"
+      ],
+      "sp": [
+        "1.8.1",
+        "1.8.2",
+        "1.8.3",
+        "1.8.4",
+        "2.8.1",
+        "2.8.2",
+        "5.2.5"
+      ],
+      "bt": "29-31",
+      "week": 18,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 18,
+      "title": "UNIT 5: PEMUKUL HEBAT PEMADANG CEKAP TAJUK: CEKAP MEMUKUL CEKAP MEMADANG",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.3"
+      ],
+      "sp": [
+        "1.8.5",
+        "1.8.6",
+        "2.8.2",
+        "2.8.3",
+        "5.3.1"
+      ],
+      "bt": "32-34",
+      "week": 20,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 19,
+      "title": "UNIT 6: MENGEJAR JUARA TAJUK: ASAS BERLARI",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.3"
+      ],
+      "sp": [
+        "1.9.1",
+        "1.9.2",
+        "2.9.1",
+        "2.9.2",
+        "2.9.3",
+        "5.3.3"
+      ],
+      "bt": "35-37",
+      "week": 21,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 20,
+      "title": "UNIT 6: MENGEJAR JUARA TAJUK: LITAR LUMBA",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.2"
+      ],
+      "sp": [
+        "1.9.3",
+        "2.9.4",
+        "5.2.4"
+      ],
+      "bt": "38",
+      "week": 22,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 21,
+      "title": "UNIT 6: MENGEJAR JUARA TAJUK: ASAS LOMPATAN -Sudut Terbaik",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.1"
+      ],
+      "sp": [
+        "1.10.1",
+        "2.10.2",
+        "5.1.3"
+      ],
+      "bt": "39",
+      "week": 23,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 22,
+      "title": "UNIT 6: MENGEJAR JUARA TAJUK: HALANGAN MENCABAR",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.1"
+      ],
+      "sp": [
+        "1.10.2",
+        "2.10.2",
+        "5.1.4"
+      ],
+      "bt": "40-41",
+      "week": 24,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 23,
+      "title": "UNIT 6: MENGEJAR JUARA TAJUK: SANG KIJANG TANGKAS TUNTAS",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.2"
+      ],
+      "sp": [
+        "1.10.3",
+        "2.10.3",
+        "5.2.2"
+      ],
+      "bt": "42-43",
+      "week": 25,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 24,
+      "title": "UNIT 6: MENGEJAR JUARA TAJUK: ( C ) ASAS BALINGAN -SASAR SAMPAI DAPAT",
+      "sk": [
+        "1.11",
+        "2.11",
+        "5.4"
+      ],
+      "sp": [
+        "1.11.1",
+        "1.11.2",
+        "1.11.3",
+        "1.11.4",
+        "2.11.1",
+        "2.11.2"
+      ],
+      "bt": "44-47",
+      "week": 26,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 25,
+      "title": "BIJAK BERTINDAK",
+      "sk": [
+        "1.12",
+        "2.12",
+        "5.2"
+      ],
+      "sp": [
+        "1.12.1",
+        "2.12.1",
+        "2.12.2",
+        "5.2.2"
+      ],
+      "bt": "49-51",
+      "week": 27,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 26,
+      "title": "BAKAT TERPENDAM",
+      "sk": [
+        "1.13",
+        "2.13",
+        "5.2"
+      ],
+      "sp": [
+        "1.13.1",
+        "1.13.2",
+        "2.13.1",
+        "5.2.4"
+      ],
+      "bt": "52-54",
+      "week": 28,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 27,
+      "title": "RUMAH SEMENTARA",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.4"
+      ],
+      "sp": [
+        "1.14.1",
+        "1.14.2",
+        "2.14.1",
+        "5.4.2"
+      ],
+      "bt": "55-57",
+      "week": 29,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 28,
+      "title": "PERMAINAN MATA ANGIN",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.2"
+      ],
+      "sp": [
+        "1.14.3",
+        "1.14.4",
+        "2.14.2",
+        "2.14.3",
+        "5.2.4"
+      ],
+      "bt": "58-59",
+      "week": 30,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 29,
+      "title": "MEMANASKAN BADAN TAJUK: MENYEJUKKAN BADAN",
+      "sk": [
+        "3.1",
+        "4.1",
+        "5.2"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "5.2.1"
+      ],
+      "bt": "61-63",
+      "week": 31,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 30,
+      "title": "LALUAN MENCABAR",
+      "sk": [
+        "3.2",
+        "4.2",
+        "5.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.2.1",
+        "4.2.2",
+        "5.2.4"
+      ],
+      "bt": "65-66",
+      "week": 32,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 31,
+      "title": "GEMBIRA MELUNTUR",
+      "sk": [
+        "3.3",
+        "4.3",
+        "5.3"
+      ],
+      "sp": [
+        "3.3.1",
+        "4.3.1",
+        "4.3.2",
+        "4.3.3"
+      ],
+      "bt": "67",
+      "week": 33,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 32,
+      "title": "SATRIA MUDA",
+      "sk": [
+        "3.4",
+        "4.4",
+        "5.1"
+      ],
+      "sp": [
+        "3.4.1",
+        "4.4.1",
+        "4.4.2"
+      ],
+      "bt": "68-69",
+      "week": 34,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 33,
+      "title": "TERBUKTI BERKESAN",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.2"
+      ],
+      "sp": [
+        "3.5.1",
+        "3.5.2",
+        "4.5.1",
+        "4.5.2",
+        "5.2.1"
+      ],
+      "bt": "70-71",
+      "week": 35,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PJ",
+      "pdp": 34,
+      "title": "HARI YANG DITUNGGU",
+      "sk": [
+        "3.6",
+        "4.6",
+        "5.2"
+      ],
+      "sp": [
+        "3.6.1",
+        "3.6.2",
+        "3.6.3",
+        "4.6.1",
+        "4.6.2",
+        "5.2.1"
+      ],
+      "bt": "72-73",
+      "week": 36,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 1,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: MENGIMBANG",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.4"
+      ],
+      "sp": [
+        "1.1.1",
+        "2.1.1",
+        "5.4.7"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 1,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 2,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: BINAAN HEBAT",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.1.2",
+        "2.1.2",
+        "5.2.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 2,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 3,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: TEGAK TERBALIK",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.1.3",
+        "2.1.2",
+        "5.2.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 3,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 4,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: MELOMBOL HALANGAN",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.4"
+      ],
+      "sp": [
+        "1.2.1",
+        "2.2.1",
+        "5.4.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 4,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 5,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: BERLATIH HAMBUR",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "1.2.2",
+        "2.2.1",
+        "5.1.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 5,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 6,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: LOMPAT BERPUTAR",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.3.1",
+        "2.3.1",
+        "5.2.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 7,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 7,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: GULING ULANG ALIK",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.1"
+      ],
+      "sp": [
+        "1.3.2",
+        "2.3.1",
+        "5.1.4"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 8,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 8,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: BERGAYUT DAN BERAYUN",
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.2"
+      ],
+      "sp": [
+        "1.4.1",
+        "1.4.2",
+        "2.4.1",
+        "5.2.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 9,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 9,
+      "title": "UNIT 2: RIANG RIA DI DASAR LAUTAN TAJUK: KE SANA, KE SINI DIDASAR LAUTAN",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.4"
+      ],
+      "sp": [
+        "1.5.1",
+        "1.5.2",
+        "2.5.1",
+        "5.4.7"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 10,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 10,
+      "title": "UNIT 2: RIANG RIA DI DASAR LAUTAN TAJUK: KE SANA, KE SINI DIDASAR LAUTAN",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.4"
+      ],
+      "sp": [
+        "1.5.1",
+        "1.5.2",
+        "2.5.1",
+        "5.4.7"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 11,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 11,
+      "title": "UNIT 3: SERANG MENANG TAJUK: SERONOKNYA BERMAIN",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "1.6.5",
+        "2.6.1",
+        "2.6.2",
+        "2.6.5",
+        "5.4.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 12,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 12,
+      "title": "UNIT 3: SERANG MENANG TAJUK: SERONOKNYA BERMAIN",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "1.6.5",
+        "2.6.1",
+        "2.6.2",
+        "2.6.5",
+        "5.4.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 13,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 13,
+      "title": "KELECEK BERBISA",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.3",
+        "1.6.4",
+        "2.6.3",
+        "2.6.4",
+        "5.4.7"
+      ],
+      "bt": "18",
+      "week": 14,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 14,
+      "title": "UNIT 3: SERANG MENANG TAJUK: BIJAK TAKEL DAN JARING",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.6",
+        "1.6.7",
+        "2.6.6",
+        "5.4.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 15,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 15,
+      "title": "UNIT 4: HANDAL JARING TAJUK: SIAPA HANDAL",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.2"
+      ],
+      "sp": [
+        "1.7.1",
+        "1.7.2",
+        "2.7.1",
+        "2.7.2",
+        "5.2.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 16,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 16,
+      "title": "UNIT 4: HANDAL JARING TAJUK: VOLI JARING",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.4"
+      ],
+      "sp": [
+        "1.7.3",
+        "2.7.3",
+        "5.4.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 17,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 17,
+      "title": "UNIT 4: HANDAL JARING TAJUK: SMESY, REJAM DAN LIBAS",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.7.4",
+        "1.7.5",
+        "1.7.6",
+        "2.7.2",
+        "2.7.4",
+        "5.3.2",
+        "5.4.4"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 18,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 18,
+      "title": "UNIT 5: RONDOS KAMPUNG TAJUK: BALINGAN HEBAT DAN BALINGAN TEPAT",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.4"
+      ],
+      "sp": [
+        "1.8.1",
+        "1.8.2",
+        "2.8.1",
+        "5.4.2"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 20,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 19,
+      "title": "UNIT 5: RONDOS KAMPUNG TAJUK: PUKUL DAN GERAK",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.3"
+      ],
+      "sp": [
+        "1.8.3",
+        "1.8.4",
+        "2.8.3",
+        "5.3.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 21,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 20,
+      "title": "UNIT 5: RONDOS KAMPUNG TAJUK: BALING-BALING BAWAH",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.4"
+      ],
+      "sp": [
+        "1.8.5",
+        "2.8.4",
+        "5.4.7"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 22,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 21,
+      "title": "UNIT 5: RONDOS KAMPUNG TAJUK: TANGKAPAN KEMAS",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.6",
+        "2.8.5",
+        "5.1.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 23,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 22,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: A. LARIAN - PECUT DAN LAJU",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.4"
+      ],
+      "sp": [
+        "1.9.1",
+        "1.9.2",
+        "2.9.1",
+        "2.9.2",
+        "2.9.3",
+        "5.4.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 24,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 23,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: A. LARIAN - LARI BERHALANGAN",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.3"
+      ],
+      "sp": [
+        "1.9.3",
+        "2.9.4",
+        "5.3.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 25,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 24,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: B. LOMPATAN - LOMPAT TERBANG",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.2"
+      ],
+      "sp": [
+        "1.10.1",
+        "2.10.1",
+        "5.2.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 26,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 25,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: B. LOMPATAN - KAKI GUNTING",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.1"
+      ],
+      "sp": [
+        "1.10.2",
+        "2.10.2",
+        "5.1.4"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 27,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 26,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: C. BALINGAN - LONTARAN BERKUASA",
+      "sk": [
+        "1.11",
+        "2.11",
+        "5.1"
+      ],
+      "sp": [
+        "1.11.1",
+        "2.11.1",
+        "5.1.2"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 28,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 27,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: C. BALINGAN - LEMPARAN AJAIB",
+      "sk": [
+        "1.11",
+        "2.11",
+        "5.1"
+      ],
+      "sp": [
+        "1.11.2",
+        "2.11.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 29,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 28,
+      "title": "KEMAS IKATAN, KUAT SIMPULAN",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.4"
+      ],
+      "sp": [
+        "1.14.1",
+        "2.14.1",
+        "5.4.1"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 30,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 29,
+      "title": "KEMAS IKATAN, KUAT SIMPULAN (sesi ulangan)",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.4"
+      ],
+      "sp": [
+        "1.14.1",
+        "2.14.1",
+        "5.4.1"
+      ],
+      "bt": "54-55",
+      "week": 31,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 30,
+      "title": "KAYU TERBANG",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.4"
+      ],
+      "sp": [
+        "1.14.2",
+        "2.14.2",
+        "5.4.6"
+      ],
+      "bt": "56",
+      "week": 32,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 31,
+      "title": "TIMANG ADIK TIMANG",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.2"
+      ],
+      "sp": [
+        "1.14.3",
+        "2.14.2",
+        "5.2.4"
+      ],
+      "bt": "57",
+      "week": 33,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 32,
+      "title": "UNIT 9 CERGAS SELALU TAJUK JOM CERGAS JOM SANTAI",
+      "sk": [
+        "3.1",
+        "4.1",
+        "5.2",
+        "5.4"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "5.2.1",
+        "5.4.5"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 34,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PJ",
+      "pdp": 33,
+      "title": "SAYA SIHAT DAN CERGAS",
+      "sk": [
+        "3.2",
+        "4.2",
+        "5.1"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.2.1",
+        "4.2.2",
+        "5.1.3"
+      ],
+      "bt": "64-65",
+      "week": 35,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 1,
+      "title": "UNIT 1: GIMNASTIK ASAS TAJUK: IMBANGAN CANTIK",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.3"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.3",
+        "2.1.1",
+        "5.3.4"
+      ],
+      "bt": "2-3",
+      "week": 1,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 2,
+      "title": "UNIT 1: GIMNASTIK ASAS TAJUK: BERSATU TEGUH",
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.4"
+      ],
+      "sp": [
+        "1.1.2",
+        "2.1.2",
+        "5.4.5"
+      ],
+      "bt": "4",
+      "week": 2,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 3,
+      "title": "UNIT 1: GIMNASTIK ASAS | TAJUK: LOMPAT LAYANGAN",
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "1.2.1",
+        "2.2.1",
+        "5.1.4"
+      ],
+      "bt": "5",
+      "week": 3,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 4,
+      "title": "UNIT 1: GIMNASTIK ASAS | TAJUK: LOMPATAN GASING",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.3.1",
+        "2.3.1",
+        "5.2.1"
+      ],
+      "bt": "6",
+      "week": 4,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 5,
+      "title": "UNIT 1: GIMNASTIK ASAS TAJUK: LOMPAT TIGA SERANGKAI",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.4"
+      ],
+      "sp": [
+        "1.3.3",
+        "2.3.1",
+        "5.4.2"
+      ],
+      "bt": "7",
+      "week": 5,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 6,
+      "title": "UNIT 1: GIMNASTIK ASAS TAJUK: GULING KEYAKINAN",
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.2"
+      ],
+      "sp": [
+        "1.3.3",
+        "2.3.2",
+        "5.2.4"
+      ],
+      "bt": "8",
+      "week": 7,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 7,
+      "title": "UNIT 1: JADI YANG TERBAIK TAJUK: GAYUT DAN AYUN",
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.1"
+      ],
+      "sp": [
+        "1.4.1",
+        "2.4.1",
+        "5.1.1"
+      ],
+      "bt": "9",
+      "week": 8,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 8,
+      "title": "UNIT 2: PERGERAKAN BERIRAMA TAJUK: SINGA KREATIF",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.3"
+      ],
+      "sp": [
+        "1.5.1",
+        "1.5.2",
+        "2.5.1",
+        "2.5.2",
+        "5.3.4"
+      ],
+      "bt": "11-12",
+      "week": 9,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 9,
+      "title": "UNIT 2: PERGERAKAN BERIRAMA TAJUK: GERAKAN SENI",
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.1"
+      ],
+      "sp": [
+        "1.5.3",
+        "2.5.3",
+        "5.1.4"
+      ],
+      "bt": "12-13",
+      "week": 10,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 10,
+      "title": "UNIT 3: KATEGORI SERANGAN TAJUK: BULATAN GEMBIRA",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.1",
+        "1.6.2",
+        "2.6.1",
+        "2.6.2",
+        "5.4.2"
+      ],
+      "bt": "16",
+      "week": 11,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 11,
+      "title": "UNIT 3: KATEGORI SERANGAN TAJUK: BOLA PANTAS",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.2"
+      ],
+      "sp": [
+        "1.6.3",
+        "2.6.3",
+        "5.2.2"
+      ],
+      "bt": "17",
+      "week": 12,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 12,
+      "title": "UNIT 3: KATEGORI SERANGAN TAJUK: BOLA BAKUL TEPAT",
+      "sk": [
+        "1.6",
+        "2.6",
+        "5.4"
+      ],
+      "sp": [
+        "1.6.4",
+        "1.6.5",
+        "1.6.6",
+        "2.6.4",
+        "2.6.5",
+        "5.4.1"
+      ],
+      "bt": "18-19",
+      "week": 13,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 13,
+      "title": "UNIT 4: KATEGORI JARING TAJUK: RUANG SASARAN",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.4"
+      ],
+      "sp": [
+        "1.7.1",
+        "1.7.2",
+        "1.7.3",
+        "2.7.1",
+        "2.7.2",
+        "5.4.5"
+      ],
+      "bt": "18",
+      "week": 14,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 14,
+      "title": "UNIT 4: KATEGORI JARING TAJUK: VOLI TANGKAS",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.3"
+      ],
+      "sp": [
+        "1.7.4",
+        "2.7.3",
+        "5.3.4"
+      ],
+      "bt": "19",
+      "week": 15,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 15,
+      "title": "UNIT 4: KATEGORI JARING TAJUK: MANTAP ADANGAN",
+      "sk": [
+        "1.7",
+        "2.7",
+        "5.3"
+      ],
+      "sp": [
+        "1.7.5",
+        "2.7.4",
+        "2.7.5",
+        "5.3.2"
+      ],
+      "bt": "22",
+      "week": 16,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 16,
+      "title": "UNIT 5: KATEGORI PUKUL DAN MEMADANG TAJUK: KAMI JUARA",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.2"
+      ],
+      "sp": [
+        "1.8.1",
+        "2.8.1",
+        "5.2.2"
+      ],
+      "bt": "23",
+      "week": 17,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 17,
+      "title": "UNIT 5: KATEGORI PUKUL DAN MEMADANG TAJUK: PUKULAN PANTAS",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.1"
+      ],
+      "sp": [
+        "1.8.2",
+        "2.8.2",
+        "5.1.1"
+      ],
+      "bt": "24-25",
+      "week": 18,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 18,
+      "title": "UNIT 5: KATEGORI PUKUL DAN MEMADANG TAJUK: PENAHAN TERBAIK",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.3"
+      ],
+      "sp": [
+        "1.8.3",
+        "2.8.3",
+        "5.3.4"
+      ],
+      "bt": "28",
+      "week": 20,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 19,
+      "title": "UNIT 5: KATEGORI PUKUL DAN MEMADANG TAJUK: PENANGKAP HEBAT",
+      "sk": [
+        "1.8",
+        "2.8",
+        "5.4"
+      ],
+      "sp": [
+        "1.8.4",
+        "2.8.4",
+        "5.4.1"
+      ],
+      "bt": "29",
+      "week": 21,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 20,
+      "title": "UNIT 6: OLAHRAGA ASAS | TAJUK: PANTAS BERITMA",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.4"
+      ],
+      "sp": [
+        "1.9.1",
+        "2.9.1",
+        "5.4.1"
+      ],
+      "bt": "33-35",
+      "week": 22,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 21,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: JAUH BERJALAN",
+      "sk": [
+        "1.9",
+        "2.9",
+        "5.1"
+      ],
+      "sp": [
+        "1.9.2",
+        "2.9.2",
+        "5.1.1"
+      ],
+      "bt": "31",
+      "week": 23,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 22,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: LAYANGANKU",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.2"
+      ],
+      "sp": [
+        "1.10.1",
+        "2.10.1",
+        "5.2.2"
+      ],
+      "bt": "34-35",
+      "week": 24,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 23,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: LOMPATAN HEBATKU",
+      "sk": [
+        "1.10",
+        "2.10",
+        "5.1"
+      ],
+      "sp": [
+        "1.10.2",
+        "2.10.2",
+        "2.10.3",
+        "5.1.4"
+      ],
+      "bt": "36-37",
+      "week": 25,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 24,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: IKUT LANGKAHKU",
+      "sk": [
+        "1.11",
+        "2.11",
+        "5.1"
+      ],
+      "sp": [
+        "1.11.1",
+        "2.11.1",
+        "5.1.2",
+        "5.1.4"
+      ],
+      "bt": "38-39",
+      "week": 26,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 25,
+      "title": "UNIT 6: OLAHRAGA ASAS TAJUK: BOLA BERTALI",
+      "sk": [
+        "1.11",
+        "2.11",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.11.2",
+        "2.11.2",
+        "5.1.3",
+        "5.2.4"
+      ],
+      "bt": "40-41",
+      "week": 27,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 26,
+      "title": "KAD MISTERI",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.14.1",
+        "2.14.1",
+        "5.1.4",
+        "5.2.4"
+      ],
+      "bt": "42-43",
+      "week": 28,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 27,
+      "title": "PERMAINAN LIBAT",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.14.2",
+        "2.14.2",
+        "5.2.1"
+      ],
+      "bt": "44-47",
+      "week": 29,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 28,
+      "title": "PERMAINAN HIDUP MATI",
+      "sk": [
+        "1.14",
+        "2.14",
+        "5.1",
+        "5.2"
+      ],
+      "sp": [
+        "1.14.2",
+        "2.14.2",
+        "5.1.4",
+        "5.2.1"
+      ],
+      "bt": "54-55",
+      "week": 30,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 29,
+      "title": "KEKAL CERGAS",
+      "sk": [
+        "3.1",
+        "4.1",
+        "5.2"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "4.1.1",
+        "4.1.2",
+        "5.2.1"
+      ],
+      "bt": "54-55",
+      "week": 31,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 30,
+      "title": "DEMI KECERGASAN",
+      "sk": [
+        "3.2",
+        "4.2",
+        "5.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.2.1",
+        "4.2.2",
+        "5.2.1"
+      ],
+      "bt": "56",
+      "week": 32,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 31,
+      "title": "KUAT BERTAHAN",
+      "sk": [
+        "3.4",
+        "4.4",
+        "5.2"
+      ],
+      "sp": [
+        "3.4.1",
+        "4.4.1",
+        "4.4.2",
+        "5.2.4"
+      ],
+      "bt": "57",
+      "week": 33,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 32,
+      "title": "BERI TUMPUAN",
+      "sk": [
+        "3.3",
+        "4.3",
+        "5.2"
+      ],
+      "sp": [
+        "3.3.1",
+        "4.3.1",
+        "4.3.2",
+        "5.2.2"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 34,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 33,
+      "title": "REKOD KESIHATAN DAN KECERGASAN",
+      "sk": [
+        "3.5",
+        "4.5",
+        "5.3"
+      ],
+      "sp": [
+        "3.5.1",
+        "4.5.1",
+        "4.5.2",
+        "5.2.2",
+        "5.3.3"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 35,
+      "origin": "PJ456_2027_RPT",
+      "status": "BLOK_KONFLIK_SK_SP",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PJ",
+      "pdp": 34,
+      "title": "UJIAN PENENTU KECERGASAN",
+      "sk": [
+        "3.6",
+        "4.6",
+        "5.3"
+      ],
+      "sp": [
+        "3.6.1",
+        "3.6.2",
+        "3.6.3",
+        "4.6.1",
+        "4.6.2",
+        "5.3.4"
+      ],
+      "bt": "BELUM DISAHKAN",
+      "week": 36,
+      "origin": "PJ456_2027_RPT",
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 1,
+      "title": "Postur, rehat dan tidur — mengenal dan mempraktik",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 1,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 2,
+      "title": "Postur, rehat dan tidur — menilai kepentingan",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 2,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 3,
+      "title": "Sentuhan tidak selamat dan tidak selesa — kenali dan berkata TIDAK",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 3,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 4,
+      "title": "Sentuhan tidak selamat — menilai dan meminta bantuan",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 4,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 5,
+      "title": "Menolak penyalahgunaan bahan — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 5,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 6,
+      "title": "Menolak penyalahgunaan bahan — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 6,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 7,
+      "title": "Menolak penyalahgunaan bahan — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 8,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 8,
+      "title": "Menolak penyalahgunaan bahan — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 9,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 9,
+      "title": "Mengurus rasa bimbang dan marah — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 10,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 10,
+      "title": "Mengurus rasa bimbang dan marah — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 11,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 11,
+      "title": "Mengurus rasa bimbang dan marah — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 12,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 12,
+      "title": "Mengurus rasa bimbang dan marah — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 13,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 13,
+      "title": "Hubungan kekeluargaan sihat — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 14,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 14,
+      "title": "Hubungan kekeluargaan sihat — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 15,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 15,
+      "title": "Hubungan kekeluargaan sihat — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 16,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 16,
+      "title": "Hubungan kekeluargaan sihat — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 17,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 17,
+      "title": "Kasih sayang kepada ahli keluarga dan rakan — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 18,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 18,
+      "title": "Kasih sayang kepada ahli keluarga dan rakan — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 20,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 19,
+      "title": "Kasih sayang kepada ahli keluarga dan rakan — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 21,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 20,
+      "title": "Mencegah penyakit dan menjaga kebersihan — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 22,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 21,
+      "title": "Mencegah penyakit dan menjaga kebersihan — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 23,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 22,
+      "title": "Mencegah penyakit dan menjaga kebersihan — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 24,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 23,
+      "title": "Mencegah penyakit dan menjaga kebersihan — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1",
+        "6.1.2",
+        "6.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 25,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 24,
+      "title": "Berkata TIDAK dan menjaga keselamatan diri — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 26,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 25,
+      "title": "Berkata TIDAK dan menjaga keselamatan diri — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 27,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 26,
+      "title": "Berkata TIDAK dan menjaga keselamatan diri — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 28,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 27,
+      "title": "Amalan makan dan minum sihat — Penerokaan konsep",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 29,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 28,
+      "title": "Amalan makan dan minum sihat — Latihan berpandu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 30,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 29,
+      "title": "Amalan makan dan minum sihat — Aplikasi dan penyelesaian masalah",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 31,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 30,
+      "title": "Amalan makan dan minum sihat — Aplikasi dan penyelesaian masalah",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 33,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 31,
+      "title": "Amalan makan dan minum sihat — Pentaksiran dan pengukuhan",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 34,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 32,
+      "title": "Bantu mula dan keselamatan kecederaan — Penerokaan konsep",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 35,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 33,
+      "title": "Bantu mula dan keselamatan kecederaan — Latihan berpandu",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 36,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 34,
+      "title": "Bantu mula dan keselamatan kecederaan — Aplikasi dan penyelesaian masalah",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 37,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "subject": "PK",
+      "pdp": 35,
+      "title": "Bantu mula dan keselamatan kecederaan — Pentaksiran dan pengukuhan",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1",
+        "9.1.2",
+        "9.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 38,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 1,
+      "title": "Kehormatan anggota seksual — pengetahuan dan penjagaan",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 1,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 2,
+      "title": "Kehormatan anggota seksual — menilai kesan",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 2,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 3,
+      "title": "Batas sentuhan anggota seksual — mengenal risiko",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 3,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 4,
+      "title": "Batas sentuhan — melapor kepada orang dipercayai",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 5,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 5,
+      "title": "Menolak pelawaan merokok — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 6,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 6,
+      "title": "Menolak pelawaan merokok — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 7,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 7,
+      "title": "Menolak pelawaan merokok — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 8,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 8,
+      "title": "Menolak pelawaan merokok — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 9,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 9,
+      "title": "Keyakinan diri dan emosi positif — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 11,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 10,
+      "title": "Keyakinan diri dan emosi positif — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 12,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 11,
+      "title": "Keyakinan diri dan emosi positif — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 13,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 12,
+      "title": "Keyakinan diri dan emosi positif — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 14,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 13,
+      "title": "Batas sentuhan dan keselamatan diri — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 15,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 14,
+      "title": "Batas sentuhan dan keselamatan diri — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 17,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 15,
+      "title": "Batas sentuhan dan keselamatan diri — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 18,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 16,
+      "title": "Batas sentuhan dan keselamatan diri — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 19,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 17,
+      "title": "Mengurus konflik rakan dan adik-beradik — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 20,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 18,
+      "title": "Mengurus konflik rakan dan adik-beradik — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 21,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 19,
+      "title": "Mengurus konflik rakan dan adik-beradik — Aplikasi dan penyelesaian masalah",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 22,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 20,
+      "title": "Mengurus konflik rakan dan adik-beradik — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 24,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 21,
+      "title": "Mencegah demam denggi dan malaria — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 25,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 22,
+      "title": "Mencegah demam denggi dan malaria — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 26,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 23,
+      "title": "Mencegah demam denggi dan malaria — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 27,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 24,
+      "title": "Mengelakkan ancaman sekeliling — Penerokaan konsep",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 28,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 25,
+      "title": "Mengelakkan ancaman sekeliling — Latihan berpandu",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 30,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 26,
+      "title": "Mengelakkan ancaman sekeliling — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3",
+        "7.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 31,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 27,
+      "title": "Memilih snek berkhasiat — Penerokaan konsep",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 32,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 28,
+      "title": "Memilih snek berkhasiat — Latihan berpandu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 33,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 29,
+      "title": "Memilih snek berkhasiat — Aplikasi dan penyelesaian masalah",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 34,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 30,
+      "title": "Memilih snek berkhasiat — Pentaksiran dan pengukuhan",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 36,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 31,
+      "title": "Pertolongan cemas kecederaan ringan — Penerokaan konsep",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1",
+        "9.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 37,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "subject": "PK",
+      "pdp": 32,
+      "title": "Pertolongan cemas kecederaan ringan — Pentaksiran dan pengukuhan",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.3",
+        "9.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 38,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 1,
+      "title": "Akil baligh dan pengurusan diri — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 1,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 2,
+      "title": "Akil baligh dan pengurusan diri — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 2,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 3,
+      "title": "Akil baligh dan pengurusan diri — Aplikasi situasi baharu",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 3,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 4,
+      "title": "Akil baligh dan pengurusan diri — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4",
+        "1.1.5"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 5,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 5,
+      "title": "Menghormati perubahan fizikal diri dan rakan — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 6,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 6,
+      "title": "Menghormati perubahan fizikal diri dan rakan — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 7,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 7,
+      "title": "Berkata TIDAK kepada alkohol — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 8,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 8,
+      "title": "Berkata TIDAK kepada alkohol — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 9,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 9,
+      "title": "Berkata TIDAK kepada alkohol — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 11,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 10,
+      "title": "Mengurus konflik dan stres — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 12,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 11,
+      "title": "Mengurus konflik dan stres — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 13,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 12,
+      "title": "Mengurus konflik dan stres — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 14,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 13,
+      "title": "Tanggungjawab ahli keluarga — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 15,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 14,
+      "title": "Tanggungjawab ahli keluarga — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 17,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 15,
+      "title": "Tanggungjawab ahli keluarga — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 18,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 16,
+      "title": "Kasih sayang dan hubungan sihat — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 19,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 17,
+      "title": "Kasih sayang dan hubungan sihat — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 20,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 18,
+      "title": "Kasih sayang dan hubungan sihat — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 21,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 19,
+      "title": "Pencegahan penyakit tidak berjangkit — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 22,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 20,
+      "title": "Pencegahan penyakit tidak berjangkit — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 24,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 21,
+      "title": "Pencegahan penyakit tidak berjangkit — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 25,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 22,
+      "title": "Mengelakkan pengantunan kanak-kanak — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 26,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 23,
+      "title": "Mengelakkan pengantunan kanak-kanak — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 27,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 24,
+      "title": "Mengelakkan pengantunan kanak-kanak — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3",
+        "7.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 28,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 25,
+      "title": "Piramid makanan dan menu sihat — Kenali konsep",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 30,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 26,
+      "title": "Piramid makanan dan menu sihat — Latihan dan analisis",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 31,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 27,
+      "title": "Piramid makanan dan menu sihat — Aplikasi situasi baharu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 32,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 28,
+      "title": "Piramid makanan dan menu sihat — Aplikasi situasi baharu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 33,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 29,
+      "title": "Piramid makanan dan menu sihat — Pentaksiran dan pengukuhan",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 34,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 30,
+      "title": "Pertolongan cemas: lebam dan terseliuh — Kenali konsep",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 36,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 31,
+      "title": "Pertolongan cemas: lebam dan terseliuh — Latihan dan analisis",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 37,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "subject": "PK",
+      "pdp": 32,
+      "title": "Pertolongan cemas: lebam dan terseliuh — Pentaksiran dan pengukuhan",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 38,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 1,
+      "title": "Sistem reproduktif manusia — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 1,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 2,
+      "title": "Sistem reproduktif manusia — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 2,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 3,
+      "title": "Sistem reproduktif manusia — Aplikasi situasi baharu",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 3,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 4,
+      "title": "Sistem reproduktif manusia — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 5,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 5,
+      "title": "Peraturan tingkah laku dan kehormatan diri — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 6,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 6,
+      "title": "Peraturan tingkah laku dan kehormatan diri — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 7,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 7,
+      "title": "Peraturan tingkah laku dan kehormatan diri — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 8,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 8,
+      "title": "Bahaya penyalahgunaan bahan inhalan — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 9,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 9,
+      "title": "Bahaya penyalahgunaan bahan inhalan — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 11,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 10,
+      "title": "Bahaya penyalahgunaan bahan inhalan — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3",
+        "2.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 12,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 11,
+      "title": "Konflik dan stres ahli keluarga — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 13,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 12,
+      "title": "Konflik dan stres ahli keluarga — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 14,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 13,
+      "title": "Konflik dan stres ahli keluarga — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 15,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 14,
+      "title": "Mengenal penderaan dan perlindungan — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 17,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 15,
+      "title": "Mengenal penderaan dan perlindungan — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 18,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 16,
+      "title": "Mengenal penderaan dan perlindungan — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 19,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 17,
+      "title": "Persahabatan yang sihat — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 20,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 18,
+      "title": "Persahabatan yang sihat — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 21,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 19,
+      "title": "Persahabatan yang sihat — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 22,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 20,
+      "title": "Mencegah demam campak, rubella, cacar air dan beguk — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 24,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 21,
+      "title": "Mencegah demam campak, rubella, cacar air dan beguk — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 25,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 22,
+      "title": "Mencegah demam campak, rubella, cacar air dan beguk — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 26,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 23,
+      "title": "Pengaruh rakan sebaya — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 27,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 24,
+      "title": "Pengaruh rakan sebaya — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2",
+        "7.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 28,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 25,
+      "title": "Membaca nutrien dan label makanan — Kenali konsep",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 30,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 26,
+      "title": "Membaca nutrien dan label makanan — Latihan dan analisis",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 31,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 27,
+      "title": "Membaca nutrien dan label makanan — Aplikasi situasi baharu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 32,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 28,
+      "title": "Membaca nutrien dan label makanan — Aplikasi situasi baharu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 33,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 29,
+      "title": "Membaca nutrien dan label makanan — Pentaksiran dan pengukuhan",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 34,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 30,
+      "title": "Pertolongan cemas: melecet dan melecur — Kenali konsep",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 36,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 31,
+      "title": "Pertolongan cemas: melecet dan melecur — Latihan dan analisis",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 37,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 5,
+      "subject": "PK",
+      "pdp": 32,
+      "title": "Pertolongan cemas: melecet dan melecur — Pentaksiran dan pengukuhan",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 38,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 1,
+      "title": "Perubahan fizikal remaja — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 1,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 2,
+      "title": "Perubahan fizikal remaja — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 2,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 3,
+      "title": "Perubahan fizikal remaja — Aplikasi situasi baharu",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 3,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 4,
+      "title": "Perubahan fizikal remaja — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 5,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 5,
+      "title": "Batas tingkah laku seksual dan asertif — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 6,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 6,
+      "title": "Batas tingkah laku seksual dan asertif — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 7,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 7,
+      "title": "Batas tingkah laku seksual dan asertif — Aplikasi situasi baharu",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 8,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 8,
+      "title": "Batas tingkah laku seksual dan asertif — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 9,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 9,
+      "title": "Menjauhi penyalahgunaan dadah — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 11,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 10,
+      "title": "Menjauhi penyalahgunaan dadah — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 12,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 11,
+      "title": "Menjauhi penyalahgunaan dadah — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3",
+        "2.1.4"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 13,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 12,
+      "title": "Mengurus perubahan emosi remaja — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 14,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 13,
+      "title": "Mengurus perubahan emosi remaja — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 15,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 14,
+      "title": "Mengurus perubahan emosi remaja — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 17,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 15,
+      "title": "Peranan remaja dalam keluarga — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 18,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 16,
+      "title": "Peranan remaja dalam keluarga — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 19,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 17,
+      "title": "Peranan remaja dalam keluarga — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 20,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 18,
+      "title": "Tekanan positif dan negatif — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 21,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 19,
+      "title": "Tekanan positif dan negatif — Latihan dan analisis",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 22,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 20,
+      "title": "Tekanan positif dan negatif — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 24,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 21,
+      "title": "Mencegah penyakit bawaan makanan dan air — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 25,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 22,
+      "title": "Mencegah penyakit bawaan makanan dan air — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 26,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 23,
+      "title": "Pengaruh dalam komuniti — Kenali konsep",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 27,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 24,
+      "title": "Pengaruh dalam komuniti — Pentaksiran dan pengukuhan",
+      "component": "PEERS",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2",
+        "7.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 28,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 25,
+      "title": "Makanan segar dan makanan diproses — Kenali konsep",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 30,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 26,
+      "title": "Makanan segar dan makanan diproses — Latihan dan analisis",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 31,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 27,
+      "title": "Makanan segar dan makanan diproses — Aplikasi situasi baharu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 32,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 28,
+      "title": "Makanan segar dan makanan diproses — Aplikasi situasi baharu",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 33,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 29,
+      "title": "Makanan segar dan makanan diproses — Pentaksiran dan pengukuhan",
+      "component": "PEMAKANAN",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 34,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 30,
+      "title": "Peti pertolongan cemas — Kenali konsep",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 36,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 31,
+      "title": "Peti pertolongan cemas — Latihan dan analisis",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 37,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    },
+    {
+      "year": 6,
+      "subject": "PK",
+      "pdp": 32,
+      "title": "Peti pertolongan cemas — Pentaksiran dan pengukuhan",
+      "component": "PERTOLONGAN CEMAS",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1",
+        "9.1.2"
+      ],
+      "bt": "Rujuk DSKP",
+      "week": 38,
+      "origin": "PK_2027_STAGING_30MIN",
+      "duration_min": 30,
+      "status": "DRAF_CADANGAN",
+      "ready": false
+    }
+  ]
+}
