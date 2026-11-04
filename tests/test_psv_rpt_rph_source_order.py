@@ -66,5 +66,40 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertEqual(row["Status"], "DRAF_SEMAK")
 
 
+    def test_year6_pdp_post_exhibition_standard(self):
+        rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
+        by_pdp = {row["PdP"]: row for row in rows}
+        for pdp in ("026", "042"):
+            with self.subTest(pdp=pdp):
+                self.assertEqual(by_pdp[pdp]["SK"], "5.1")
+                self.assertEqual(by_pdp[pdp]["SP"], "5.1.5")
+                rph = (ROOT / by_pdp[pdp]["RPH"]).read_text(encoding="utf-8")
+                self.assertIn("**SP:** 5.1.5", rph)
+                self.assertNotIn("5.1.5 bukan kod Tahun 6", rph)
+
+    def test_year6_unit1_activity_matches_textbook_pages(self):
+        rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
+        by_pdp = {row["PdP"]: row for row in rows}
+        cases = {
+            "002": ("Alat Tulis Saya", "ms 10–11", "garisan selari", "dua lakaran alat tulis"),
+            "003": ("Tingkap Damai", "ms 12–13", "tetingkap fokus", "tiga bahagian ruang"),
+        }
+        for pdp, (title, pages, technique, evidence) in cases.items():
+            with self.subTest(pdp=pdp):
+                row = by_pdp[pdp]
+                self.assertEqual(row["Tajuk/aktiviti PdP"], title)
+                self.assertIn(pages, row["Rujukan BT ms (RPT 2026)"])
+                self.assertIn(evidence, row["Evidens PBD"])
+                rph = (ROOT / row["RPH"]).read_text(encoding="utf-8")
+                self.assertIn(title, rph)
+                self.assertIn(pages, rph)
+                self.assertIn(technique, rph)
+                self.assertNotIn("garisan laluan, rupa rumah", rph)
+                self.assertIn(row["Objektif"], rph)
+        html = (PSV / "RPT_PSV_Tahun_6_2027_DRAF.html").read_text(encoding="utf-8")
+        self.assertIn("Buku teks ms 10–11", html)
+        self.assertIn("Buku teks ms 12–13", html)
+
+
 if __name__ == "__main__":
     unittest.main()
