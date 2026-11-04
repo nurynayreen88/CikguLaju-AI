@@ -13,22 +13,22 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SUBJECT = "Pendidikan Moral"
-FIELD = re.compile(r"^\\*\\*([^*:\\n]{1,70}):\\*\\*\\s*(.+)$", re.M)
+FIELD = re.compile(r"^\*\*([^*:\n]{1,70}):\*\*\s*(.+)$", re.M)
 PHASE = re.compile(
-    r"^\\*\\*(Set induksi|Aktiviti 1|Aktiviti 2|Pengukuhan/Pentaksiran PBD|Penutup)"
-    r"[^\\n]*?\\*\\*\\s*:?\\s*(.+)$", re.M | re.I)
-HEADER = re.compile(r"^# RPH Pendidikan Moral Tahun ([2-6]) — PdP (\\d{3})\\s*$", re.M)
-SP_CODE = re.compile(r"(?<!\\d)(\\d+\\.\\d+)(?![\\d.])")
+    r"^\*\*(Set induksi|Aktiviti 1|Aktiviti 2|Pengukuhan/Pentaksiran PBD|Penutup)"
+    r"[^\n]*?\*\*\s*:?\s*(.+)$", re.M | re.I)
+HEADER = re.compile(r"^# RPH Pendidikan Moral Tahun ([2-6]) — PdP (\d{3})\s*$", re.M)
+SP_CODE = re.compile(r"(?<!\d)(\d+\.\d+)(?![\d.])")
 
 
 def _year(value):
     value = str(value or "").strip().casefold()
-    m = re.fullmatch(r"(?:tahun\\s+)?([2-6])(?:\\s*\\(sk\\))?", value)
+    m = re.fullmatch(r"(?:tahun\s+)?([2-6])(?:\s*\(sk\))?", value)
     return int(m[1]) if m else None
 
 
 def _clean(value):
-    return re.sub(r"\\*\\*([^*]+)\\*\\*", r"\\1", str(value or "")).strip()
+    return re.sub(r"\*\*([^*]+)\*\*", r"\1", str(value or "")).strip()
 
 
 @lru_cache(maxsize=5)
@@ -76,7 +76,7 @@ def load_candidate(year, number):
     required = ("set induksi", "aktiviti 1", "aktiviti 2", "pengukuhan/pentaksiran pbd", "penutup")
     if any(len(steps.get(k, "")) < 30 for k in required):
         return None
-    obj = re.search(r"(?ms)^## Objektif dan kriteria kejayaan\\s*\\n(.+?)\\n## Langkah PdP\\s*$", raw)
+    obj = re.search(r"(?ms)^## Objektif dan kriteria kejayaan\s*\n(.+?)\n## Langkah PdP\s*$", raw)
     if not obj or "Kriteria kejayaan:" not in obj[1]:
         return None
     objective, criterion = obj[1].split("Kriteria kejayaan:", 1)
@@ -122,7 +122,7 @@ def adapt_rows(state, rows):
         "OBJEKTIF PEMBELAJARAN": p["objective"],
         "KRITERIA KEJAYAAN": p["criterion"],
         "SET INDUKSI": steps["set induksi"],
-        "AKTIVITI UTAMA": "Aktiviti 1 — " + steps["aktiviti 1"] + "\\n\\nAktiviti 2 — " + steps["aktiviti 2"],
+        "AKTIVITI UTAMA": "Aktiviti 1 — " + steps["aktiviti 1"] + "\n\nAktiviti 2 — " + steps["aktiviti 2"],
         "PENTAKSIRAN": steps["pengukuhan/pentaksiran pbd"],
         "PENUTUP": steps["penutup"],
         "BAHAN BANTU MENGAJAR": p["materials"],
