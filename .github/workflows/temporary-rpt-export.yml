@@ -12,8 +12,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/upload-artifact@v4
         with:
-          name: rpt-originals
+          name: rpt-pdf-and-source
           path: |
             rpt_2027/bahasa_melayu/*.pdf
+            rpt_2027/bahasa_melayu/*.html
             rpt_2027/pjpk/*.pdf
+            rpt_2027/pjpk/pjpk_2027_rpt_manifest.json
           retention-days: 1
