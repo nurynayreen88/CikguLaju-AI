@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Selam dan Kawal" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.11.1.
+**Aktiviti 1 — Taklimat keselamatan air:** Guru/tenaga pengajar akuatik bertauliah menerangkan syarat kolam yang diluluskan, pengawasan berterusan, arahan berhenti dan larangan berlumba menahan nafas. Murid menyebut prosedur masuk dan keluar kolam dengan selamat.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Di kolam yang diluluskan sahaja: guru atau jurulatih kompeten menerangkan prosedur keselamatan, murid berlatih kawalan pernafasan dan kemahiran menyelam cetek mengikut tahap keupayaan dengan pengawasan rapat. Jika fasiliti/pengawasan tiada, jalankan pengenalan keselamatan di darat dan jadualkan semula penilaian kemahir. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Kemahiran terkawal:** Hanya jika kolam, penyelia bertauliah, peralatan dan prosedur sekolah disahkan: murid menjalankan latihan pernafasan ringkas serta kawalan badan di air cetek mengikut keupayaan dan arahan penyelia. Jika syarat tidak dipenuhi, guru menjalankan penerangan keselamatan di darat dan menjadual semula amali serta PBD kemahiran air; pengenalan teori bukan bukti penguasaan amali.
 
-**Pengukuhan/PBD:** Pentaksiran kemahiran air hanya apabila aktiviti benar-benar dilaksanakan dalam air dengan pengawasan kompeten; catat kawalan nafas, pematuhan arahan dan keselamatan. Penerangan di darat tidak dikira bukti penguasaan kemahiran air. Bukti kefahaman (soal jawab): Apakah langkah keselamatan sebelum masuk ke air dan semasa menyelam  Guru turut mencatat amalan SP 5.1.1.
+**Pengukuhan/PBD:** Rekod amali SP 1.11.1 hanya semasa murid benar-benar melaksanakan kemahiran terkawal di air dalam pengawasan kompeten; nilai pematuhan arahan, kawalan nafas tanpa memaksa dan keselamatan. Di darat, pentaksiran hanya meliputi kefahaman SP 2.11.1 dan amalan SP 5.1.1; tandakan amali sebagai BELUM DITAKSIR.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Kolam cetek yang diluluskan dan peralatan keselamatan akuatik; kad prosedur keselamatan untuk alternatif teori di darat.
+**Keselamatan/inklusif:** Larang hiperventilasi, latihan menahan nafas secara kompetitif, menyelam tanpa pengawasan atau aktiviti air apabila penyelia/persekitaran tidak disahkan. Sediakan alternatif teori yang tidak disalahlabel sebagai kemahiran amali.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
