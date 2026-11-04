@@ -9,6 +9,7 @@ on:
       - 'rpt_2027/pendidikan_moral/**'
       - 'scripts/check_pendidikan_moral_y2_y6.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
+      - 'scripts/preview_pm_y2_sp44_v2600_safe_patch.py'
       - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
   pull_request:
     branches:
@@ -19,6 +20,7 @@ on:
       - 'rpt_2027/pendidikan_moral/**'
       - 'scripts/check_pendidikan_moral_y2_y6.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
+      - 'scripts/preview_pm_y2_sp44_v2600_safe_patch.py'
       - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
   workflow_dispatch:
 
@@ -47,5 +49,7 @@ jobs:
         run: python scripts/check_pendidikan_moral_y2_y6.py
       - name: Compile v26.00 curriculum parity validator
         run: python -m py_compile scripts/check_pm_v2600_stage_parity.py
-      - name: Cross-check all staged Moral SP against v26.00 master without DB changes
+      - name: Preview verified DB SP 4.4 correction in disposable copy only
+        run: python scripts/preview_pm_y2_sp44_v2600_safe_patch.py
+      - name: Cross-check all staged Moral SP against current v26.00 master without DB changes
         run: python scripts/check_pm_v2600_stage_parity.py
