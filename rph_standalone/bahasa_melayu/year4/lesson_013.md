@@ -3,7 +3,7 @@
 **ID:** BM4-P013 | **RPT 2027:** M04 | **Unit:** 3 — Masyarakat Berilmu
 **Tajuk aktiviti:** Zon Cerdas Minda
 **SK:** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
-**SP:** 1.1.3 — Mendengar, mentafsir dan memberikan respons terhadap soalan secara kritis.
+**SP:** 1.1.3 — Mendengar, mentafsir dan memberikan respons terhadap soalan secara kritis
 **Sumber disemak:** Buku Teks BM Tahun 4 SK m/s 13 (lawatan Hadif dan rakan-rakan ke Perpustakaan Negara). **BA:** Belum disahkan.
 **Objektif:** Murid mengenal pasti fungsi tiga zon perpustakaan dan memberikan tiga jawapan lisan bersebab tentang pemilihan zon.
 **BBM:** BT m/s 13, kad zon dan senarai semak respons. **Masa:** 60 minit, boleh disesuaikan.
