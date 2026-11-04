@@ -26,8 +26,8 @@ def _is_year6_english_rph(state):
     return year in ("6", "tahun 6", "year 6", "primary year 6", "y6", "tahun 6 (sk)")
 
 
-def compact_word_file(path):
-    """Apply tested 8pt Year 6 spacing; never cut or replace lesson text.
+def compact_word_file(path, *, point_size=8.0):
+    """Apply tested text-preserving A4 spacing; never cut or replace lesson text.
 
     Returns True only after atomic replacement, False on any invalid input.
     The original file is unchanged if the new document cannot be saved.
@@ -37,6 +37,8 @@ def compact_word_file(path):
     except (TypeError, ValueError):
         return False
     if not source.is_file() or source.suffix.casefold() != ".docx":
+        return False
+    if type(point_size) not in (int, float) or not 7.2 <= point_size <= 8.5:
         return False
 
     temporary = None
@@ -49,7 +51,7 @@ def compact_word_file(path):
             section.right_margin = Cm(0.95)
             section.footer_distance = Cm(0.25)
         normal = doc.styles["Normal"]
-        normal.font.size = Pt(8.0)
+        normal.font.size = Pt(point_size)
         normal.paragraph_format.line_spacing = 0.95
         for table in doc.tables:
             for row in table.rows:
@@ -66,7 +68,7 @@ def compact_word_file(path):
                         paragraph.paragraph_format.space_after = Pt(0)
                         paragraph.paragraph_format.line_spacing = 0.95
                         for run in paragraph.runs:
-                            run.font.size = Pt(8.0)
+                            run.font.size = Pt(point_size)
         with tempfile.NamedTemporaryFile(
             prefix="cikgulaju_y6_word_a4_", suffix=".docx",
             dir=str(source.parent), delete=False
@@ -87,6 +89,17 @@ def compact_word_file(path):
                 pass
 
 
+def _lesson16_choice(state):
+    """Only Year6 SOW teacher-choice Lesson 16 needs the 7.5pt A4 variant."""
+    if not _is_year6_english_rph(state):
+        return False
+    value = state.get("lesson_no") or state.get("textbook_lesson_no") or state.get("lesson")
+    if isinstance(value, bool):
+        return False
+    value = str(value or "").strip()
+    return value.isascii() and value.isdecimal() and int(value) == 16
+
+
 def install(runtime):
     """Wrap only create_word_file for English Year 6 RPH, no other paths."""
     if getattr(runtime, "CIKGULAJU_ENGLISH_Y6_WORD_A4_ACTIVE", False):
@@ -98,7 +111,10 @@ def install(runtime):
     def year6_word(state, *args, **kwargs):
         original = previous(state, *args, **kwargs)
         if _is_year6_english_rph(state):
-            compact_word_file(original)
+            # All other 159 Lessons retain their original tested 8pt style.
+            # Choice Lesson 16 is the sole 8pt layout overflow in the latest
+            # AST-locked Word/PDF A4 audit; 7.5pt applies ONLY here.
+            compact_word_file(original, point_size=7.5 if _lesson16_choice(state) else 8.0)
         return original
 
     runtime.create_word_file = year6_word

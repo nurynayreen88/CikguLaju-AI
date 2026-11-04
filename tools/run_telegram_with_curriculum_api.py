@@ -141,6 +141,18 @@ except Exception as _y4_y5_word_exc:
     print("English Year 4/5 draft Word A4 unavailable:", repr(_y4_y5_word_exc), flush=True)
 
 
+
+# The AST-locked 149-Lesson Year4 Word audit found only Lesson 002 needs
+# compact A4 margins. Keep the 148 other reviewed Year4 lessons unchanged.
+# Native PDF, other subjects, the user DB and all quota checks are untouched.
+try:
+    from web.english_y4_l002_word_a4_runtime import install as install_english_y4_l002_a4
+    ENGLISH_Y4_L002_WORD_A4_ACTIVE = install_english_y4_l002_a4(telegram_runtime)
+except Exception as _y4_l002_a4_exc:
+    ENGLISH_Y4_L002_WORD_A4_ACTIVE = False
+    print("English Y4 Lesson 002 Word A4 unavailable:", repr(_y4_l002_a4_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
