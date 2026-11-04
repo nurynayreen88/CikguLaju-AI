@@ -108,6 +108,44 @@ class TestPrivateReferral(unittest.TestCase):
         self.assertEqual(response[1],403)
         self.assertFalse(any(path=="referral_members" for method,path,args in calls))
 
+    def test_private_share_and_copy_buttons_for_invited_user(self):
+        ns, sent, calls, _ = fixture()
+        keyboards = []
+        ns["send"] = lambda uid, text, *args: keyboards.append(
+            (uid, text, args[0] if args else []))
+        msg = {"chat": {"id": 1, "type": "private"},
+               "from": {"id": 1}, "text": "/refadd 301"}
+        ns["request"] = type("Request", (), {
+            "headers": {"X-Telegram-Bot-Api-Secret-Token": "correct-long-secret"},
+            "get_json": lambda self, **_: {"message": msg},
+        })()
+        with patch.dict(os.environ, {
+            "CIKGULAJU_REFERRAL_POINTS_ENABLED": "1",
+            "CIKGULAJU_TELEGRAM_WEBHOOK_SECRET": "correct-long-secret",
+        }):
+            referral.install(ns)
+            ns["app"].view_functions["webhook"]()
+            ns["callback"](301, "private_referral_home")
+        buttons = [kb for uid, text, kb in keyboards if uid == 301 and kb]
+        self.assertTrue(buttons)
+        last = buttons[-1]
+        self.assertIn("Kongsi Pautan", last[0][0]["text"])
+        self.assertIn("Salin Pautan", last[1][0]["text"])
+        self.assertTrue(last[0][0]["url"].startswith("https://t.me/share/url?"))
+        self.assertTrue(last[1][0]["copy_text"]["text"].startswith(
+            "https://t.me/CikguLajuBot?start=rp_"))
+
+    def test_private_referral_button_rechecks_revoked_member(self):
+        ns, sent, calls, _ = fixture()
+        with patch.dict(os.environ, {
+            "CIKGULAJU_REFERRAL_POINTS_ENABLED": "1",
+            "CIKGULAJU_TELEGRAM_WEBHOOK_SECRET": "correct-long-secret",
+        }):
+            referral.install(ns)
+            ns["callback"](301, "private_referral_home")
+        self.assertTrue(any("tidak tersedia" in message for uid, message in sent))
+        self.assertFalse(any("https://t.me/" in message for uid, message in sent))
+
     def test_pioneer_points_after_admin_approval_only(self):
         ns,sent,calls,_=fixture()
         ns["request"]=type("Request",(),{"headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},"get_json":lambda self,**_:{} })()
