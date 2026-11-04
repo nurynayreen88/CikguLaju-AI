@@ -4,35 +4,35 @@
 **RPT:** 2027, Lesson 64, M16 (week indicative only)  
 **Main CS/LS:** PILIHAN GURU (SOW)  
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
-**Language focus:** Review 2 (Units 3–4): word categories, sentence matching and make/do choices  
+**Language focus:** Review 2: Units 3–4 word categories, sentence matches and make/do  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Year 6 Pupil's Book pp.58–59 Review 2; Teacher's Book printed pp.96–97. Listening audio is not assigned without a separately verified track.  
-**Learning objective:** Complete at least four accurate vocabulary/grammar responses in Review 2 and explain one correction using the printed Pupil's Book.  
-**PBD evidence:** Four correct vocabulary or matching responses and one supported make/do correction from PB pp.58–59.  
+**Materials:** Academy Stars Y6 PB pp.58–59 Review 2; TB pp.96–97. No unverified audio.  
+**Learning objective:** Complete four Review 2 items accurately and explain one make/do correction.  
+**PBD evidence:** Four correct source responses and one supported make/do choice.  
 
 ## Set induction (5 minutes)
-**Teacher:** Display a few familiar Unit 3–4 words and ask pupils to sort them into people, places, things or activities.  
-**Pupils:** Recall unit vocabulary and suggest a correct word category.
+**Teacher:** Review Unit 3–4 words and elicit category names.  
+**Pupils:** Classify two familiar words.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Follow TB p.96 for PB p.58 Review 2 word-column sorting and sentence-building; model one item.  
-**Pupils:** Sort printed vocabulary into categories and use a selected word in one sentence.
+**Teacher:** Use PB p.58 word-column sorting; model a sentence.  
+**Pupils:** Categorise words and make one sentence.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the PB pp.58–59 sentence-matching activity from TB pp.96–97 and ask pupils to justify one match.  
-**Pupils:** Match sentence parts, complete the printed exercise and compare an answer in pairs.
+**Teacher:** Guide PB pp.58–59 sentence matching using TB pp.96–97.  
+**Pupils:** Match sentence parts and explain one answer.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use PB p.59 review tasks on experiences and make/do; omit the separate audio activity until its recording is verified.  
-**Pupils:** Tick or mark the appropriate experience prompts, choose make/do forms and explain one correction.
+**Teacher:** Guide PB p.59 experience tick-boxes and make/do choices; omit unverified audio.  
+**Pupils:** Complete the printed review and compare a correction.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check at least four source answers and a make/do correction; assess only standards that the teacher has separately selected.  
-**Pupils:** Present completed Review 2 evidence, correct one response and name the rule used.
+**Teacher:** Check four source answers and one make/do correction.  
+**Pupils:** Show answers, correct one form and explain why.
 
 ## Closure (4 minutes)
-**Teacher:** Invite one clear Units 3–4 example and a next-step target after checking the printed review.  
-**Pupils:** Say a corrected example and identify an area for extra practice.
+**Teacher:** Recap one Units 3–4 example and request a practice goal.  
+**Pupils:** Share one corrected sentence and a next step.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
