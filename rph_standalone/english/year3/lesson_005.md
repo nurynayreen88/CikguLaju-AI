@@ -15,7 +15,7 @@
 **Teacher:** Organise groups of five or six, assign each pupil a classmate to describe, and model two kind, factual sentences about appearance. **Pupils:** Draft two sentences, check respectful wording, and exchange feedback before creating the class display.
 
 ## Activity 2 — Core lesson task (25 minutes)
-**Teacher:** In groups create a class yearbook or wall display: write two respectful sentences describing a classmate, peer-review, revise and assemble pages. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
+**Teacher:** In groups create a class yearbook or wall display: write two respectful sentences describing a classmate, peer-review, revise and assemble pages. **Pupils:** Write two respectful descriptions of an assigned classmate, peer-check and revise them, then assemble the sentences in a class yearbook or wall display.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check two intelligible drafted sentences and creative contribution; note the SOW's Language Arts standard is broader than this task. **Pupils:** Read aloud two respectful classmate descriptions and explain one contribution to the class display.

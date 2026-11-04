@@ -15,7 +15,7 @@
 **Teacher:** Use sports flashcards to review 'can/can't' and model 'Can he/she ...?' with affirmative and negative answers. **Pupils:** Mime activities, ask questions and give complete 'Yes, he/she can' or 'No, he/she can't' responses.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Mime can and can't; ask and answer Can he/she...?; complete Activities 3–4 and rebuild scrambled written yes/no responses. **Pupils:** Complete the referenced tasks, practising both standards.
+**Teacher:** Mime can and can't; ask and answer Can he/she...?; complete Activities 3–4 and rebuild scrambled written yes/no responses. **Pupils:** Mime sports, ask and answer 'Can he/she...?', rebuild scrambled written Yes/No replies and complete TB p.23 Activities 3–4.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check written responses and comprehension of simple spoken questions. **Pupils:** Write two accurate can/can't answers after hearing simple questions.

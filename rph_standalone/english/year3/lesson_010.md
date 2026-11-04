@@ -15,7 +15,7 @@
 **Teacher:** Review run, jump, swim, hop and skip with action cards. Give each pupil a card and demonstrate raising it when its action is heard in the song. **Pupils:** Mime their action, describe what a classmate can or cannot do and practise recognising the song vocabulary.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Listen to the SOW action song; mime, sequence prepared lines and compose a short original action-song verse in groups. **Pupils:** Complete the referenced tasks, practising both standards.
+**Teacher:** Listen to the SOW action song; mime, sequence prepared lines and compose a short original action-song verse in groups. **Pupils:** Hold up the action card when its word is heard, order the cut-up song lines and perform one original action-song verse in a group.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Observe imaginative participation and response to the song. **Pupils:** Perform one original action-song line and respond to the song using an action card.

@@ -5,7 +5,7 @@
 **Main SK/SP:** 5.2 / 5.2.1  
 **Complementary SK/SP:** 2.3 / 2.3.1  
 **Duration:** 60 minutes  
-**Materials:** Teacher's Book pp.28–29; story puppets and textbook story materials  
+**Materials:** Get Smart Plus 3 Student's Book pp.12–13 (story), Teacher's Book p.19 and pp.28–29; character stick puppets and classroom story materials  
 **Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 15.
 
 ## Set Induction (5 minutes)
@@ -15,7 +15,7 @@
 **Teacher:** Show prepared character puppets, ask pupils to predict the story and model a short exchange using two puppets. **Pupils:** Describe the characters, predict events and rehearse simple lines with a partner.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Introduce puppets; predict story; guide Activity 1 on p.28; pupils rehearse and perform in pairs. **Pupils:** Complete the referenced tasks, practising both standards.
+**Teacher:** Introduce puppets; predict story; guide Activity 1 on p.28; pupils rehearse and perform in pairs. **Pupils:** Use character puppets to rehearse and act out the SB pp.12–13 story, comment on pronunciation respectfully and reflect on its value.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Observe story response, speaking and pronunciation. **Pupils:** Perform a short puppet dialogue and state one response to the story.

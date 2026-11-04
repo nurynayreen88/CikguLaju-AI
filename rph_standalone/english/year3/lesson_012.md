@@ -15,7 +15,7 @@
 **Teacher:** Review numbers one to twelve in a circle, then demonstrate o'clock and half past on a board or toy clock. **Pupils:** Read sample clock faces and ask and answer 'What time is it?' with a partner.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Demonstrate o'clock and half past; guide vocabulary and Activity 1; practise questions and answers in pairs. **Pupils:** Complete the lesson activities and practise both skills.
+**Teacher:** Demonstrate o'clock and half past; guide vocabulary and Activity 1; practise questions and answers in pairs. **Pupils:** Read clock faces, ask and answer 'What time is it?' using o'clock and half past, and practise SB p.10 Activity 1 with a partner.
 
 ## Reinforcement / PBD (10 minutes)
 **Workbook assessment:** Pupils complete Workbook p.9, Activity 4, by reading the pictured clock times.
