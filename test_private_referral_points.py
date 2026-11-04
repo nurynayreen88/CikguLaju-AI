@@ -39,7 +39,9 @@ def fixture():
             payments[7]["status"] = "approved"
         return "original"
     app = FakeApp()
-    ns = {"app":app,"callback":callback,"send":lambda uid,txt,*a: sent.append((uid,txt)),
+    ns = {"app":app,"API":"https://api.telegram.org/botTEST",
+          "WEBHOOK_URL":"https://test.invalid","callback":callback,
+          "send":lambda uid,txt,*a: sent.append((uid,txt)),
           "_sb_request":sb,"_bot_username_v25267":lambda: "CikguLajuBot",
           "_payment_request":lambda rid: dict(payments[rid]),
           "_is_admin":lambda uid: uid == 1,
@@ -50,6 +52,12 @@ def fixture():
 
 
 class TestPrivateReferral(unittest.TestCase):
+    def setUp(self):
+        self.http_patcher = patch("requests.post")
+        mock_post = self.http_patcher.start()
+        mock_post.return_value.ok = True
+        mock_post.return_value.json.return_value = {"ok":True}
+        self.addCleanup(self.http_patcher.stop)
     def test_feature_disabled_by_default(self):
         with patch.dict(os.environ, {}, clear=True):
             ns, _, _, _ = fixture()
