@@ -1,0 +1,28 @@
+name: BM Year 3 RPT RPH structural and readiness audit
+on:
+  push:
+    branches:
+      - staging/bm-rpt-2027-20261103
+    paths:
+      - 'rph_standalone/bahasa_melayu/year3/**'
+      - 'rpt_2027/bahasa_melayu/**'
+      - 'tools/qa_bm_year3_final_staging.py'
+      - '.github/workflows/bm-year3-rpt-rph-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bm-year3-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile QA
+        run: python -m py_compile tools/qa_bm_year3_final_staging.py
+      - name: Check RPT, 165 RPH, PKJR and fail-closed READY gate
+        run: python tools/qa_bm_year3_final_staging.py
