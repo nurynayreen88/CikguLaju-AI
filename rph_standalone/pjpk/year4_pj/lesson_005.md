@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.3.1 (melakukan putaran roda) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.3.1: Mengenal pasti perubahan pusat graviti semasa melakukan putaran roda, guling depan dan guling belakang.
 
-**Set induksi:** Guru menunjukkan cabaran "EYE ON MALAYSIA" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru memperkenalkan putaran roda melalui kad urutan tapak tangan dan kaki.
 
-**Aktiviti 1 — Gimnastik progresif:** Guru memperaga sokongan tapak tangan/kaki, perubahan pusat graviti dan cara turun dengan selamat; murid menandakan tiga titik kawalan pada kad teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.3.1.
+**Aktiviti 1 — Kemahiran spesifik:** Guru memperagakan langkah sampingan dan turutan tangan–kaki putaran roda menggunakan garisan lantai; murid mempraktikkan langkah tanpa songsang dahulu.
 
-**Aktiviti 2 — Aplikasi:** Murid mempraktikkan posisi asas pada tilam bersama penyeliaan guru, kemudian cuba variasi berperingkat jika stabil; pasangan hanya memerhati dan memberi maklum balas. 
+**Aktiviti 2 — Kemahiran spesifik:** Murid melakukan ansur maju putaran roda dengan bantuan guru di atas tilam jika selamat; rakan menilai turutan tangan dan kaki tanpa membantu secara fizikal.
 
-**Pengukuhan/PBD:** Guru menilai kestabilan, kedudukan tapak sokongan, kawalan pendaratan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.3.1 dan menerima maklum balas. Guru memerhati sikap SP 5.2.4. 
+**Pengukuhan/PBD:** PBD urutan sokongan tangan-kaki, arah putaran roda, keseimbangan dan keselamatan.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** tilam gimnastik, penanda kawasan, kad teknik; peralatan khas hanya jika sekolah memilikinya.  
-**Keselamatan/inklusif:** Elakkan beban pada kepala/leher dan aksi songsang tanpa sokongan profesional; aktiviti trampolin/piramid perlu guru, alatan dan pengawasan sesuai.
+**BBM:** Tilam gimnastik, garisan penanda tangan-kaki dan kad urutan.
+**Keselamatan/inklusif:** Jangan membebankan kepala/leher; guru mesti mengawasi aktiviti putaran dan membenarkan alternatif aras rendah.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

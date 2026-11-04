@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.2.1 (melakukan hambur tangan dari tempat tinggi dan mendarat ke tempat rendah dengan sokongan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.2.1: Menyatakan lakuan hambur tangan dari tempat tinggi dan mendarat ke tempat rendah.
 
-**Set induksi:** Guru menunjukkan cabaran "TINGGI KE RENDAH" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru memaparkan perbezaan tempat hambur tinggi ke rendah dan pendaratan terkawal.
 
-**Aktiviti 1 — Gimnastik progresif:** Guru memperaga sokongan tapak tangan/kaki, perubahan pusat graviti dan cara turun dengan selamat; murid menandakan tiga titik kawalan pada kad teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.2.1.
+**Aktiviti 1 — Kemahiran spesifik:** Guru memperaga posisi tangan, fleksi lutut dan urutan sokongan bagi hambur yang selamat pada permukaan aras rendah.
 
-**Aktiviti 2 — Aplikasi:** Murid mempraktikkan posisi asas pada tilam bersama penyeliaan guru, kemudian cuba variasi berperingkat jika stabil; pasangan hanya memerhati dan memberi maklum balas. 
+**Aktiviti 2 — Kemahiran spesifik:** Hanya di atas peralatan disahkan dan dengan guru kompeten, murid mencuba ansur maju hambur tangan terkawal daripada aras rendah ke alas pendaratan; tanpa kemudahan, buat simulasi di lantai.
 
-**Pengukuhan/PBD:** Guru menilai kestabilan, kedudukan tapak sokongan, kawalan pendaratan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.2.1 dan menerima maklum balas. Guru memerhati sikap SP 5.1.3. 
+**Pengukuhan/PBD:** Guru memeriksa kedudukan sokongan tangan, kawalan turun, pendaratan seimbang dan pematuhan arahan.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** tilam gimnastik, penanda kawasan, kad teknik; peralatan khas hanya jika sekolah memilikinya.  
-**Keselamatan/inklusif:** Elakkan beban pada kepala/leher dan aksi songsang tanpa sokongan profesional; aktiviti trampolin/piramid perlu guru, alatan dan pengawasan sesuai.
+**BBM:** Tilam tebal, penanda aras rendah dan peralatan gimnastik yang diluluskan.
+**Keselamatan/inklusif:** Jangan cuba hambur dari ketinggian tidak disahkan, tiada aksi tanpa spotting dan ruang pendaratan kosong.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.
