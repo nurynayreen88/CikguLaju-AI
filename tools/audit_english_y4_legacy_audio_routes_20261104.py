@@ -48,7 +48,7 @@ def _teacher_task_refs(source):
         discs = {int(cd) for cd, _ in REF.findall(line)}
         if len(discs) == 1:
             disc = next(iter(discs))
-            for track in re.findall(r"\\b(?:and|&)\\s+Track\\s*(\\d{1,3})\\b", line, re.I):
+            for track in re.findall(r"\b(?:and|&)\s+Track\s*(\d{1,3})\b", line, re.I):
                 refs.add(f"CD{disc} Track {int(track)}")
     return sorted(refs)
 
