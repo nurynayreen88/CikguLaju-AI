@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths:
       - 'tools/audit_english_800_text_quality_20261104.py'
+      - 'rph_standalone/english/year[2-6]/**'
+      - 'tests/test_english_current_maturity_delta_20261104.py'
+      - 'audits/english_2_6_full_rph_quality_report_20261104.md'
       - '.github/workflows/english-full-rph-content-audit-20261104.yml'
   workflow_dispatch:
 permissions:
@@ -25,6 +28,8 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_english_y2_y6_official_sow_index.py' -v
           python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
+      - name: Check recently resolved English RPH quality flags against current main
+        run: python -m unittest discover -s tests -p 'test_english_current_maturity_delta_20261104.py' -v
       - name: Preserve per-Lesson audit evidence
         if: always()
         uses: actions/upload-artifact@v4
