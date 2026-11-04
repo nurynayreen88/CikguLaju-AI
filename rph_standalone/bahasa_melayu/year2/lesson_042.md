@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 042
 
-**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
-**Tajuk:** Berat Menjadi Ringan  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.3 (iii) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks  
-**Sumber:** BT1 m/s 38; BA m/s 47-48; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** kata adjektif ukuran ketika membina perpustakaan mini  
-**Objektif:** Pada akhir PdP, murid dapat mengenal pasti enam kata adjektif ukuran dan membina tiga ayat.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: panjang, pendek, tinggi, rendah, nipis, tebal.
+**ID:** BM2-P042
+**Minggu RPT 2027:** M11 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat
+**Tajuk aktiviti:** Berat Menjadi Ringan
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.3 (iii) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 38; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Pembinaan perpustakaan mini kelas Hana dengan kayu panjang dan kertas nipis.
+**Objektif PdP:** Pada akhir PdP, murid dapat memilih empat kata adjektif ukuran dan menulis dua ayat gramatis.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Berat Menjadi Ringan dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Berat Menjadi Ringan daripada BT1 m/s 38 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Berat Menjadi Ringan.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru menayangkan gambar rak kayu dan kertas hiasan perpustakaan mini yang dibuat keluarga Hana.
-**Tindakan murid:** Murid memadankan enam kata ukuran dengan objek di dalam cerita.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing bacaan projek perpustakaan mini dan ajar ukuran panjang, nipis, pendek, tebal
+**Murid:** Kenal pasti objek kayu, kertas dan rak serta ukuran
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru mengedarkan gambar dua rak berlainan saiz dan meminta murid menggunakan tiga kata ukuran untuk menerangkan perbezaan.
-**Tindakan murid:** Murid membina tiga ayat dan membandingkannya dengan rakan.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan padanan kata adjektif ukuran dengan bahan binaan
+**Murid:** Lengkapkan empat ayat dan bina dua ayat berkaitan rak serta kertas
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Semak enam kata ukuran dan tiga ayat bermakna.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat ukuran sesuai dengan objek dan konteks
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kata adjektif ukuran ketika membina perpustakaan mini dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 5.1.3 (iii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Berat Menjadi Ringan.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 38: Pembinaan perpustakaan mini kelas Hana dengan kayu panjang dan kertas nipis; aktiviti dipadankan dengan SP 5.1.3 (iii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

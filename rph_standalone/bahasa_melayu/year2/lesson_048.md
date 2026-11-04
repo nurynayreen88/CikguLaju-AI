@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 048
 
-**Tema/Unit:** Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah  
-**Tajuk:** Bersih dan Kemas  
-**SK:** 1.1 Mendengar dan memberikan respons  
-**SP:** 1.1.2 (iv) — Mendengar, memahami, dan memberikan respons terhadap permintaan.  
-**Sumber:** BT1 m/s 44; BA m/s 49; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** memberikan respons kepada permintaan membersihkan bilik  
-**Objektif:** Pada akhir PdP, murid dapat menjawab empat permintaan dengan tindakan lisan yang sesuai.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: lap kepala katil, tukar cadar, basuh langsir, sarung bantal.
+**ID:** BM2-P048
+**Minggu RPT 2027:** M13 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U7: Kebersihan Bermula dari Rumah
+**Tajuk aktiviti:** Bersih dan Kemas
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 1.1 Mendengar dan memberikan respons
+**Standard Pembelajaran (SP):** 1.1.2 (iv) — Mendengar, memahami, dan memberikan respons terhadap permintaan.
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 44; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Dialog Hana dan ibu mengenai membersihkan bilik, mengelap kepala katil, menukar cadar serta mencuci langsir.
+**Objektif PdP:** Pada akhir PdP, murid dapat memberikan tiga respons sesuai terhadap permintaan ibu.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Bersih dan Kemas dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Bersih dan Kemas daripada BT1 m/s 44 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Bersih dan Kemas.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru memodelkan situasi ibu meminta Hana mengelap kepala katil dan menukar cadar.
-**Tindakan murid:** Murid mendengar dan membezakan permintaan dengan penyata.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bacakan dialog permintaan ibu dalam bahan Kebersihan Bermula dari Rumah
+**Murid:** Kenal pasti tiga permintaan mengemas katil, cadar dan langsir
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru mengedarkan kad peranan ahli keluarga dan membaca empat permintaan berlainan.
-**Tindakan murid:** Murid melakonkan respons sopan serta tindakan yang dimaksudkan.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan ayat respons sopan dengan tindakan susulan tepat
+**Murid:** Lakonkan ibu dan Hana; berikan tiga respons lengkap
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Nilai empat respons lisan tepat berdasarkan permintaan.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak kesantunan dan ketepatan tindakan yang diminta
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan memberikan respons kepada permintaan membersihkan bilik dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 1.1.2 (iv) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Bersih dan Kemas.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 44: Dialog Hana dan ibu mengenai membersihkan bilik, mengelap kepala katil, menukar cadar serta mencuci langsir; aktiviti dipadankan dengan SP 1.1.2 (iv).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

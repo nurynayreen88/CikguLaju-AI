@@ -1,34 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 074
 
-**Tema / Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita  
-**Tajuk:** Sedapnya Amplang + PKJR  
-**SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna  
-**SP:** 3.2.4 (i), (ii) — Menulis perkataan dan frasa yang diimlakkan  
-**Rujukan:** BT1 m/s 66; BA1 m/s 74. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** imlak perkataan dan frasa tentang penyediaan amplang; PKJR tertangguh  
-**Objektif:** Pada akhir PdP, murid dapat menulis enam perkataan dan tiga frasa yang diimlakkan dengan ejaan betul.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: ikan tenggiri, tepung ubi, doh, bebola ikan, menggoreng.
+**ID:** BM2-P074
+**Minggu RPT 2027:** M18 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita
+**Tajuk aktiviti:** Sedapnya Amplang + PKJR
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna
+**Standard Pembelajaran (SP):** 3.2.4 (i), (ii) — Menulis perkataan dan frasa yang diimlakkan
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 66; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Petikan proses amplang tradisional Sabah: isi ikan tenggiri, tepung, doh bebola, rebus dan goreng.
+**Objektif PdP:** Pada akhir PdP, murid dapat menulis lima perkataan serta tiga frasa secara imlak daripada proses amplang.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Sedapnya Amplang + PKJR" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar ilustrasi Sedapnya Amplang + PKJR daripada BT1 m/s 66 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Sedapnya Amplang + PKJR.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membaca penerangan ringkas proses membuat amplang di Sabah dan menunjukkan kosa kata berkaitan.
-**Tindakan murid:** Murid menyebut serta membezakan perkataan tunggal dan frasa.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing bacaan petikan bahan dan langkah penyediaan amplang
+**Murid:** Kenal pasti sebutan lima perkataan penting pada teks
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru menyebut enam perkataan serta tiga frasa pilihan tanpa mempamerkan kad tulisan.
-**Tindakan murid:** Murid menulis imlak dan menyemak hasil dengan guru.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Imlakkan lima perkataan dan tiga frasa berkaitan proses tanpa menunjukkan tulisan
+**Murid:** Tulis lima perkataan dan tiga frasa; semak ejaan selepas imlak selesai
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak sembilan item imlak; kod PKJR tidak didakwa lulus.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak sekurang-kurangnya enam daripada lapan unsur imlak dieja tepat
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran imlak perkataan dan frasa tentang penyediaan amplang; PKJR tertangguh serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 3.2.4 (i), (ii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Sedapnya Amplang + PKJR.
 
-**Status QA:** HOLD — sumber PKJR/urutan RPT belum disahkan. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 66: Petikan proses amplang tradisional Sabah: isi ikan tenggiri, tepung, doh bebola, rebus dan goreng; aktiviti dipadankan dengan SP 3.2.4 (i), (ii).
+**Kawalan PKJR:** Label PKJR dalam RPT belum dibuktikan melalui modul rasmi; jangan cipta kod atau aktiviti PKJR.
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

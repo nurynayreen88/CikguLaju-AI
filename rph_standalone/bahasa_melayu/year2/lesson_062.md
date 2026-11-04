@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 062
 
-**Tema / Unit:** Kebersihan dan Kesihatan; U9: Aktifkan Diri  
-**Tajuk:** Langkah yang Sihat  
-**SK:** 1.1 Mendengar dan memberikan respons  
-**SP:** 1.1.3 (ii) — Mendengar, dan memberikan respons dengan membuat tafsiran terhadap pesanan.  
-**Rujukan:** BT1 m/s 55; BA m/s 65. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** mentafsir pesanan tentang berjalan kaki ke sekolah  
-**Objektif:** Pada akhir PdP, murid dapat menyampaikan dua pesanan dan menjelaskan dua implikasi pesanan.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: Soo Mei mengajak Lageswari dan Hana berjalan ke sekolah.
+**ID:** BM2-P062
+**Minggu RPT 2027:** M16 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U9: Aktifkan Diri
+**Tajuk aktiviti:** Langkah yang Sihat
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 1.1 Mendengar dan memberikan respons
+**Standard Pembelajaran (SP):** 1.1.3 (ii) — Mendengar, dan memberikan respons dengan membuat tafsiran terhadap pesanan.
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 55; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Pesanan Lageswari kepada Soo Mei mengajak Hana berjalan kaki bersama-sama ke sekolah.
+**Objektif PdP:** Pada akhir PdP, murid dapat memberi dua tafsiran dan respons sesuai kepada pesanan rakan.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Langkah yang Sihat" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar ilustrasi Langkah yang Sihat daripada BT1 m/s 55 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Langkah yang Sihat.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membaca dialog Soo Mei dan Lageswari yang berpesan tentang rancangan ke sekolah.
-**Tindakan murid:** Murid mengenal siapa yang mengajak, tempat menunggu serta tujuan berjalan.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bacakan dialog Lageswari, Soo Mei dan Hana tentang janji berjalan kaki
+**Murid:** Kenal pasti penerima, masa dan tempat pertemuan
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru memberi dua pesanan baharu tentang aktiviti fizikal bersama rakan untuk ditafsir dan disampaikan.
-**Tindakan murid:** Murid memberi respons lisan dengan sebab, bukan mengulang kata semata-mata.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Bimbing murid mengaitkan maklumat pesanan dengan tindakan berjanji serta menunggu
+**Murid:** Lakonkan dialog dan berikan dua respons berasaskan maksud pesanan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai ketepatan penyampaian dua pesanan serta alasan.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak dua tafsiran yang tepat serta respons yang bersopan
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran mentafsir pesanan tentang berjalan kaki ke sekolah serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 1.1.3 (ii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Langkah yang Sihat.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 55: Pesanan Lageswari kepada Soo Mei mengajak Hana berjalan kaki bersama-sama ke sekolah; aktiviti dipadankan dengan SP 1.1.3 (ii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

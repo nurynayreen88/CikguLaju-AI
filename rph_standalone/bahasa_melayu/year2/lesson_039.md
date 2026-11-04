@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 039
 
-**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
-**Tajuk:** Jiran Sepakat  
-**SK:** 2.2 (Membaca)  
-**SP:** 2.2.1 (ii) — Membaca, memahami dan mengenal pasti  
-**Sumber:** BT1 m/s 34-35; BA m/s 42-43; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** membaca isi tersurat tentang kelas bimbingan komuniti  
-**Objektif:** Pada akhir PdP, murid dapat menyenaraikan empat fakta daripada petikan Jiran Sepakat dan menjawab dua soalan bukti teks.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: Encik Jamil, Sarana Komuniti, kelas bimbingan percuma, buku latihan.
+**ID:** BM2-P039
+**Minggu RPT 2027:** M11 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat
+**Tajuk aktiviti:** Jiran Sepakat
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 2.2 (Membaca)
+**Standard Pembelajaran (SP):** 2.2.1 (ii) — Membaca, memahami dan mengenal pasti
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 34–35; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Petikan Sarana Komuniti Taman Rasa Indah dengan jadual kelas percuma Bahasa Inggeris, BM, matematik dan sains.
+**Objektif PdP:** Pada akhir PdP, murid dapat menentukan empat isi tersurat tentang kelas bimbingan komuniti.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Jiran Sepakat dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Jiran Sepakat daripada BT1 m/s 34–35 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Jiran Sepakat.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru membaca teks program kelas bimbingan tanpa bayaran untuk anak-anak penduduk dan menyoal fakta siapa/apa.
-**Tindakan murid:** Murid menggariskan butiran penyertaan, tujuan, tempat dan bahan diperlukan.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing bacaan petikan Encik Jamil, Encik Musa, ibu Yong Han dan bapa Rahisin
+**Murid:** Gariskan jadual masa, guru, subjek dan alat tulis yang diperlukan
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid membina peta empat fakta dan membuktikan jawapan berdasarkan perenggan.
-**Tindakan murid:** Murid menyenaraikan fakta dan menjawab dua soalan dengan bukti.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Sediakan kerangka peta isi tersurat berdasarkan ayat asal
+**Murid:** Lengkapkan empat isi petikan tentang kelas percuma dan hari yang dinyatakan
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Semak empat isi tersurat dan dua jawapan bersumberkan teks.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat isi berdasarkan teks asal tanpa fakta tambahan
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan membaca isi tersurat tentang kelas bimbingan komuniti dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 2.2.1 (ii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Jiran Sepakat.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 34–35: Petikan Sarana Komuniti Taman Rasa Indah dengan jadual kelas percuma Bahasa Inggeris, BM, matematik dan sains; aktiviti dipadankan dengan SP 2.2.1 (ii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

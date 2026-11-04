@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 037
 
-**Tema/Unit:** Perpaduan; U5: Hidup Berjiran  
-**Tajuk:** Saling Melengkapi  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.3 (i) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks  
-**Sumber:** BT1 m/s 32; BA m/s 40; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** kata adjektif sifat tentang kemudahan jiran  
-**Objektif:** Pada akhir PdP, murid dapat mengenal pasti lima kata adjektif sifat dan membina tiga ayat.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: empuk, sejuk, lembut, jernih, ligat, luas, kukuh.
+**ID:** BM2-P037
+**Minggu RPT 2027:** M10 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Perpaduan; U5: Hidup Berjiran
+**Tajuk aktiviti:** Saling Melengkapi
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.3 (i) — Memahami, mengenal pasti dan menggunakan kata adjektif mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 32; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Autobiografi Proton Ertiga dengan kata adjektif sifat luas, kukuh, sejuk dan empuk.
+**Objektif PdP:** Pada akhir PdP, murid dapat memilih empat kata adjektif sifat dan membina dua ayat sesuai.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Saling Melengkapi dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Saling Melengkapi daripada BT1 m/s 32 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Saling Melengkapi.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru menayangkan gambar kereta Proton Ertiga dan contoh sifat ruang yang luas serta badan yang kukuh.
-**Tindakan murid:** Murid memilih lima kata adjektif yang menerangkan sifat benda atau keadaan dalam teks.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing bacaan teks Proton Ertiga dan senarai kata adjektif sifat pada BT m/s32
+**Murid:** Kenal pasti sifat badan kereta, kabin dan pergerakan
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid memadankan kata adjektif kepada objek berbeza dalam kawasan perumahan.
-**Tindakan murid:** Murid membina tiga ayat dengan kata adjektif sifat yang sesuai.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan pemilihan adjektif mengikut objek dan konteks
+**Murid:** Lengkapkan empat frasa adjektif dan bina dua ayat tentang kereta
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Semak lima pilihan sifat dan tiga ayat mengikut konteks.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat kata sifat tepat serta ketepatan objek yang diterangkan
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kata adjektif sifat tentang kemudahan jiran dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 5.1.3 (i) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Saling Melengkapi.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 32: Autobiografi Proton Ertiga dengan kata adjektif sifat luas, kukuh, sejuk dan empuk; aktiviti dipadankan dengan SP 5.1.3 (i).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

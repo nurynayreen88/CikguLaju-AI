@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 061
 
-**Tema / Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan  
-**Tajuk:** Cantik dan Sihat  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.4 (i) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks  
-**Rujukan:** BT1 m/s 54; BA m/s 64. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** kata hubung dalam cerita pemeriksaan gigi Hana  
-**Objektif:** Pada akhir PdP, murid dapat membina empat ayat majmuk menggunakan kata hubung sesuai.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: dan, sambil, kerana, lalu; klinik pergigian.
+**ID:** BM2-P061
+**Minggu RPT 2027:** M15 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan
+**Tajuk aktiviti:** Cantik dan Sihat
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.4 (i) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 54; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Hana bersama ayah ke Klinik Pergigian Doktor Huda; kata hubung dan, sambil, kerana dan atau.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan empat kata hubung dan membina dua ayat majmuk berkaitan pergigian.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Cantik dan Sihat" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar ilustrasi Cantik dan Sihat daripada BT1 m/s 54 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Cantik dan Sihat.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru menunjukkan ayat kisah Hana pergi ke Klinik Pergigian Doktor Huda dan menggariskan kata hubung yang menyambungkan peristiwa.
-**Tindakan murid:** Murid mengenal pasti hubungan peristiwa dan memadankan empat kata hubung.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing baca kisah klinik pergigian dan contoh 'Gigi Hana bersih dan cantik'
+**Murid:** Kenal pasti hubungan dua idea ayat yang hendak digabung
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru memberi empat pasangan ayat tentang menjaga gigi untuk digabungkan menjadi ayat majmuk.
-**Tindakan murid:** Murid menulis empat ayat majmuk dengan kata hubung yang bermakna.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan kata hubung sambil, kerana dan dan dalam ayat baru
+**Murid:** Lengkapkan empat ayat kemudian bina dua ayat majmuk
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat kata hubung dan ayat tentang kesihatan gigi.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak kata hubung dipilih berdasarkan makna dua klausa
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran kata hubung dalam cerita pemeriksaan gigi Hana serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 5.1.4 (i) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Cantik dan Sihat.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 54: Hana bersama ayah ke Klinik Pergigian Doktor Huda; kata hubung dan, sambil, kerana dan atau; aktiviti dipadankan dengan SP 5.1.4 (i).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

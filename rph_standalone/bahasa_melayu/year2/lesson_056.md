@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 056
 
-**Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan  
-**Tajuk:** Jagalah Kesihatan Diri  
-**SK:** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera  
-**SP:** 4.2.1 (iii) — Melafazkan dan mengenal pasti ciri-ciri pantun  
-**Sumber:** BT1 m/s 52; BA m/s 62; halaman BA berdasarkan petunjuk Buku Teks/RPT 2026 sahaja.  
-**Masa:** 60 minit cadangan; sesuaikan dengan jadual sekolah.  
-**Fokus:** format penulisan pantun bertema kesihatan  
-**Objektif:** Pada akhir PdP, murid dapat menyusun dua rangkap empat baris dan menandakan pembayang serta maksud.  
-**Bahan:** Buku Teks, kad gambar/kosa kata, papan putih dan buku latihan. Contoh khusus: tidur cukup, rawatan berkala, makanan berkhasiat dan badan sihat.
+**ID:** BM2-P056
+**Minggu RPT 2027:** M14 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan
+**Tajuk aktiviti:** Jagalah Kesihatan Diri
+**Standard Kandungan (SK) daripada RPT (semak akhir DSKP):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera
+**Standard Pembelajaran (SP):** 4.2.1 (iii) — Melafazkan dan mengenal pasti ciri-ciri pantun
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 52; Buku Aktiviti Jilid 1 — halaman dan latihan asal belum disahkan.
+**Fokus khusus Buku Teks:** Pantun Jagalah Kesihatan Diri mengenai tidur cukup, rawatan berkala dan makanan berkhasiat.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengenal pasti format pantun empat kerat dan melafazkan dua rangkap.
+**Bahan:** Buku Teks asal, gambar/petikan halaman tersebut, kad tugasan yang setara dan senarai semak PBD.
+**Masa:** 60 minit (ubah suai mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau bahan berkenaan Jagalah Kesihatan Diri dan menyoal murid tentang pengalaman yang berkaitan.
-**Tindakan murid:** Murid menyatakan satu pemerhatian awal dan menyambungnya dengan pengetahuan sendiri.
+**Guru:** Papar ilustrasi Jagalah Kesihatan Diri daripada BT1 m/s 52 dan hubungkan pengalaman murid.
+**Murid:** Nyatakan satu maklumat daripada gambar atau tajuk Jagalah Kesihatan Diri.
 
-## Aktiviti 1 — Terokai bahan (15 minit)
-**Tindakan guru:** Guru memaparkan rangkap pantun 'Jagalah Kesihatan Diri' dan menunjukkan struktur empat baris.
-**Tindakan murid:** Murid menyebut bilangan baris dan membezakan pembayang dengan maksud.
+## Aktiviti 1 — Kenal pasti bukti sumber (15 minit)
+**Guru:** Bimbing baca rangkap tentang tidur, rawatan dan pemakanan dengan semakan baris pantun
+**Murid:** Kenal pasti bilangan baris dan pola pembayang/maksud
 
-## Aktiviti 2 — Laksanakan kemahiran (20 minit)
-**Tindakan guru:** Guru memberi baris pantun bercampur untuk disusun ke dalam dua rangkap yang betul.
-**Tindakan murid:** Murid menyusun dan melafazkan pantun dengan intonasi sesuai.
+## Aktiviti 2 — Laksanakan tugasan Buku Teks (20 minit)
+**Guru:** Modelkan bacaan dua rangkap dengan jeda dan intonasi sesuai
+**Murid:** Lafazkan dua rangkap serta sebut dua pengajaran
 
-## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Semak format dua rangkap dan kedudukan baris pantun.
-**Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak hasil murid dengan kriteria: Semak empat baris rangkap, sebutan dan pengajaran
+**Murid:** Bandingkan hasil dengan sumber dan baiki sekurang-kurangnya satu kesilapan jika ada.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan format penulisan pantun bertema kesihatan dan menerapkan nilai murni daripada situasi.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
+**Guru:** Rumuskan kemahiran 4.2.1 (iii) melalui satu hasil murid yang tepat.
+**Murid:** Sebut satu pengetahuan atau kemahiran yang dipelajari daripada Jagalah Kesihatan Diri.
 
-**Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:**   Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Bukti khusus Buku Teks:** BT Tahun 2 SK Jilid 1 m/s 52: Pantun Jagalah Kesihatan Diri mengenai tidur cukup, rawatan berkala dan makanan berkhasiat; aktiviti dipadankan dengan SP 4.2.1 (iii).
+**Status QA:** DRAF — sumber Buku Teks dan aktiviti disemak; BA, DSKP penuh, takwim negeri, PKJR, cetakan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.
