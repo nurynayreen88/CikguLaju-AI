@@ -4,6 +4,7 @@ Read-only: this suite never modifies application data or production assets.
 Run with: python -m unittest tests.test_psv_rpt_rph_source_order
 """
 import csv
+import json
 import re
 import unittest
 from datetime import date, timedelta
@@ -261,6 +262,67 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertIn("Kriteria kejayaan: " + expected + ".", rph)
                 self.assertNotIn("hasil kerja individu atau kumpulan memperlihatkan evidens", rph)
                 self.assertIn("**Status:** DRAF", rph)
+
+
+    def test_all_210_sp_codes_exist_in_verified_dskp_source(self):
+        """Necessary code-presence check; semantics still require lesson review."""
+        manifest = json.loads((PSV / "dskp_sp_code_presence_audit_20261105.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(manifest["years"]), {str(y) for y in range(2, 7)})
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                rows = read_csv(PSV / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv")
+                used = {code.strip() for row in rows for code in row["SP"].split(";") if code.strip()}
+                expected = set(manifest["years"][str(year)]["used_sp_codes"])
+                self.assertEqual(len(rows), 42)
+                self.assertEqual(manifest["years"][str(year)]["rpt_rows"], 42)
+                self.assertEqual(used, expected)
+
+    def test_year4_harum_mewangi_actual_soap_relief_and_pbd(self):
+        rows = read_csv(PSV / "RPT_PSV_Tahun_4_2027_DRAF.csv")
+        evidence = {
+            "038": ("96–97", "lekukan"),
+            "039": ("98–99", "sudu"),
+            "040": ("98–99", "kain net"),
+        }
+        for pdp, (page, material) in evidence.items():
+            with self.subTest(pdp=pdp):
+                row = rows[int(pdp) - 1]
+                rph = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
+                self.assertIn("Harum Mewangi", rph)
+                self.assertIn("ms " + page, rph)
+                self.assertIn(material, rph)
+                self.assertIn("alat tumpul", rph)
+                self.assertIn("**Status:** DRAF", rph)
+                objective = re.search(
+                    r"(?m)^Murid dapat (.*?)\. Kriteria kejayaan: (.*?)\.$", rph
+                )
+                self.assertIsNotNone(objective)
+                self.assertEqual(row["Objektif"], "Murid dapat " + objective.group(1))
+                self.assertEqual(row["Evidens PBD"], objective.group(2))
+
+    def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
+        rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
+        keywords = {
+            "038": ("82–85", "mempulur"),
+            "039": ("86–87", "jarum sulam tumpul"),
+            "040": ("88–89", "tekat timbul"),
+        }
+        for pdp, (page, keyword) in keywords.items():
+            with self.subTest(pdp=pdp):
+                row = rows[int(pdp) - 1]
+                rph = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
+                self.assertIn("Bunga Kemboja Emas", rph)
+                self.assertIn("ms " + page, rph)
+                self.assertIn(keyword, rph)
+                self.assertNotIn("simulasi tekat", rph.lower())
+                self.assertNotIn("coba susunan", rph.lower())
+                self.assertIn("**Status:** DRAF", rph)
+                objective = re.search(
+                    r"(?m)^Murid dapat (.*?)\. Kriteria kejayaan: (.*?)\.$", rph
+                )
+                self.assertIsNotNone(objective)
+                self.assertEqual(row["Objektif"], "Murid dapat " + objective.group(1))
+                self.assertEqual(row["Evidens PBD"], objective.group(2))
 
 
 if __name__ == "__main__":
