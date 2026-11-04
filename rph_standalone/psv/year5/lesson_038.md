@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tekat atau Tenunan — Motif Bunga Kebangsaan  
+**Jenis/Tajuk:** Tekat atau Tenunan — Bunga Kemboja Emas
+**Unit rujukan 2026:** Unit 10 — Bunga Kemboja Emas  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.10; 3.1.5  
@@ -20,7 +21,7 @@ Murid dapat menyiapkan dua lakaran Motif Bunga Kebangsaan dan memilih satu lakar
 
 **Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Motif Bunga Kebangsaan. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal motif tradisional tenunan kertas, menguji tenunan atau simulasi tekat pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal rekaan motif bunga kemboja dengan simulasi tekat, menguji tenunan atau simulasi tekat pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

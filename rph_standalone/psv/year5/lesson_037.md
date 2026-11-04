@@ -3,7 +3,8 @@
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
 **Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tekat atau Tenunan — Motif Bunga Kebangsaan  
+**Jenis/Tajuk:** Tekat atau Tenunan — Bunga Kemboja Emas
+**Unit rujukan 2026:** Unit 10 — Bunga Kemboja Emas  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.4; 2.1.10  
@@ -20,7 +21,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh tekat atau tenunan
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh tekat atau tenunan bertema Motif Bunga Kebangsaan dan membandingkan rupa, jalinan, kesatuan, kontra. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik tenunan atau simulasi tekat. Murid mencuba dua sampel kecil menggunakan jalur kertas dan benang, membandingkan kesan dan memilih teknik yang sesuai untuk motif tradisional tenunan kertas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik tenunan atau simulasi tekat. Murid mencuba dua sampel kecil menggunakan jalur kertas dan benang, membandingkan kesan dan memilih teknik yang sesuai untuk rekaan motif bunga kemboja dengan simulasi tekat.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
