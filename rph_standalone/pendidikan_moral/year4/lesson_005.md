@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menghuraikan dua kepentingan menjaga kebajikan jiran** (SP 2.3) dan **mengekspresikan satu perasaan yang bersebab** apabila jiran dibantu (SP 2.4).
 
+**Kriteria kejayaan:** Dua kepentingan membantu yang dihuraikan dan satu perasaan dengan sebab.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran warga emas memerlukan bantuan membawa barang runcit**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

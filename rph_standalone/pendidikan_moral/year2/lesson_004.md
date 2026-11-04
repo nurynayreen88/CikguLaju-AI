@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menyenaraikan tiga jenis bantuan** yang boleh diberikan kepada keluarga (SP 2.1) serta **menjelaskan cara** memberikan sekurang-kurangnya dua bantuan tersebut (SP 2.2).
 
+**Kriteria kejayaan:** Tiga jenis bantuan yang tepat dan dua huraian cara membantu yang wajar.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

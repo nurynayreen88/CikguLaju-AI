@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menganalisis dua kesan** memberi bantuan kepada keluarga (SP 2.3) serta **menzahirkan satu perasaan yang bersebab** selepas memberi bantuan (SP 2.4).
 
+**Kriteria kejayaan:** Dua rantaian tindakan–kesan dan satu ayat perasaan bersebab.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

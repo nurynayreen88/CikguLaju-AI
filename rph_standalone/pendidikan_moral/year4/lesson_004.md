@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **memberikan tiga contoh sikap prihatin** terhadap kebajikan jiran (SP 2.1) serta **menjelaskan dua cara** membantu jiran secara selamat dan beradab (SP 2.2).
 
+**Kriteria kejayaan:** Tiga contoh keprihatinan dan dua huraian cara yang selamat.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran warga emas memerlukan bantuan membawa barang runcit**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

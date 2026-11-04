@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **melaksanakan dua tindakan saling membantu** dalam simulasi pemulihan warga sekolah selepas musibah dan menunjukkan satu penambahbaikan (SP 2.5).
 
+**Kriteria kejayaan:** Dua tindakan membantu yang diperagakan dan satu penambahbaikan melalui maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

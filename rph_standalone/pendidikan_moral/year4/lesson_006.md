@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **memperagakan dua tindakan prihatin** terhadap kebajikan jiran dalam simulasi dan membaiki satu langkah melalui maklum balas (SP 2.5).
 
+**Kriteria kejayaan:** Dua tindakan membantu yang diperagakan dan satu penambahbaikan melalui maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran warga emas memerlukan bantuan membawa barang runcit**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

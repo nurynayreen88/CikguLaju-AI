@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menyenaraikan tiga bantuan** kepada warga sekolah (SP 2.1) dan **mengenal pasti dua cara bantuan yang wajar** ketika warga sekolah menghadapi kesusahan (SP 2.2).
 
+**Kriteria kejayaan:** Tiga jenis bantuan yang tepat dan dua huraian cara membantu yang wajar.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

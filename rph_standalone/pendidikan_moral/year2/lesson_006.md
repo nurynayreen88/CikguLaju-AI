@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **mempraktikkan dua bentuk bantuan yang selamat** kepada ahli keluarga dan membaiki satu langkah selepas maklum balas (SP 2.5).
 
+**Kriteria kejayaan:** Dua tindakan membantu yang diperagakan dan satu penambahbaikan melalui maklum balas.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 

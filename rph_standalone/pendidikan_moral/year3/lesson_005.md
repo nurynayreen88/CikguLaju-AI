@@ -14,6 +14,8 @@
 ## Objektif dan kriteria kejayaan
 Murid dapat **menjelaskan dua kepentingan membantu warga sekolah dengan ikhlas** (SP 2.3) dan **mengekspresikan satu perasaan bersebab** selepas membantu (SP 2.4).
 
+**Kriteria kejayaan:** Dua kepentingan membantu yang dihuraikan dan satu perasaan dengan sebab.
+
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
