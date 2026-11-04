@@ -24,7 +24,7 @@ CHECK={
  44:("4.2.5","4.3.1",("Lesson 39","correction code","second draft","cohesion")),
  45:("1.2.2","1.3.1",("PB p.43","job advert","interview","appearance")),
  46:("2.1.1","1.2.5",("adventure camp","TB p.72","interview","PB p.42")),
- 49:("3.2.3","3.2.4",("Unusual Jobs","PB p.48","dictionary","four texts")),
+ 49:("3.2.3","3.2.4",("Unusual Jobs","PB p.48","dictionary","four unusual jobs texts")),
  50:("4.2.1","3.2.2",("Adela","Tyler","Jill","Derek","PB p.50")),
 }
 TIME=[5,10,18,15,8,4]
