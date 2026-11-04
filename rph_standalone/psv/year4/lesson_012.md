@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster — Jimat Air  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Stensilan — Beg Cantik Menawan
+**Unit rujukan 2026:** Unit 3 — Beg Cantik Menawan (BT ms 22–27)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** lukisan dan montaj  
-**Bahasa seni visual:** warna, penegasan, imbangan  
+**Teknik:** stensilan  
+**Bahasa seni visual:** rupa, warna, kontra, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas poster, gambar, pensel, gam
+**BBM:** stensil siap potong, span, cat
 
 ## Objektif pembelajaran
-Murid dapat memperkemas poster mesej jimat air serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas beg hiasan bercorak stensilan serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Jimat Air. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Bunga Raya. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik lukisan dan montaj serta penggunaan warna, penegasan, imbangan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik stensilan serta penggunaan rupa, warna, kontra, harmoni. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada poster mesej jimat air, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada beg hiasan bercorak stensilan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

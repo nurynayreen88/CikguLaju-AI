@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Cetakan — Jejak Bandar  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Arca — Bunga Gergasi
+**Unit rujukan 2026:** Unit 4 — Bunga Gergasi (BT ms 34–39)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** kolograf  
-**Bahasa seni visual:** garisan, rupa, harmoni, ritma  
+**Teknik:** asemblaj  
+**Bahasa seni visual:** bentuk, jalinan, imbangan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** plat kadbod, benang, warna, penggelek
+**BBM:** kotak terpakai, gam, pita
 
 ## Objektif pembelajaran
-Murid dapat memperkemas cetakan bangunan serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas arca bunga gergasi menggunakan bahan terpakai serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Jejak Bandar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bandar Mini Asemblaj. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik kolograf serta penggunaan garisan, rupa, harmoni, ritma. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik asemblaj serta penggunaan bentuk, jalinan, imbangan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada cetakan bangunan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada arca bunga gergasi menggunakan bahan terpakai, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

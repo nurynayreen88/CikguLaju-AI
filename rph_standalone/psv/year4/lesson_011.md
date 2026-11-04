@@ -2,27 +2,28 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster — Jimat Air  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Stensilan — Beg Cantik Menawan
+**Unit rujukan 2026:** Unit 3 — Beg Cantik Menawan (BT ms 22–27)  
 **Fokus:** Hasilkan karya  
 **SK:** 3.1  
-**SP:** 3.1.1  
-**Teknik:** lukisan dan montaj  
-**Bahasa seni visual:** warna, penegasan, imbangan  
+**SP:** 3.1.3  
+**Teknik:** stensilan  
+**Bahasa seni visual:** rupa, warna, kontra, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas poster, gambar, pensel, gam
+**BBM:** stensil siap potong, span, cat
 
 ## Objektif pembelajaran
-Murid dapat menghasilkan poster mesej jimat air dengan lukisan dan montaj, sekurang-kurangnya dua aspek warna, penegasan, imbangan.
+Murid dapat menghasilkan beg hiasan bercorak stensilan dengan stensilan, sekurang-kurangnya dua aspek rupa, warna, kontra, harmoni.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Jimat Air. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Bunga Raya. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat kertas poster, gambar, pensel, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
+**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat stensil siap potong, span, cat. Murid menyediakan bahan serta menetapkan kriteria karya.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan poster mesej jimat air mengikut lakaran menggunakan lukisan dan montaj, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan beg hiasan bercorak stensilan mengikut lakaran menggunakan stensilan, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
 
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri warna, penegasan, imbangan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
+**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri rupa, warna, kontra, harmoni, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
 

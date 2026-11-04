@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster — Jimat Air  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Stensilan — Beg Cantik Menawan
+**Unit rujukan 2026:** Unit 3 — Beg Cantik Menawan (BT ms 22–27)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.1; 2.1.3  
-**Teknik:** lukisan dan montaj  
-**Bahasa seni visual:** warna, penegasan, imbangan  
+**SP:** 1.1.2; 2.1.6  
+**Teknik:** stensilan  
+**Bahasa seni visual:** rupa, warna, kontra, harmoni  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas poster, gambar, pensel, gam
+**BBM:** stensil siap potong, span, cat
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh poster dan menghasilkan satu sampel lukisan dan montaj.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh stensilan dan menghasilkan satu sampel stensilan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Jimat Air. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Bunga Raya. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh poster bertema Jimat Air dan membandingkan warna, penegasan, imbangan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh stensilan bertema Motif Bunga Raya dan membandingkan rupa, warna, kontra, harmoni. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik lukisan dan montaj. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk poster mesej jimat air.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik stensilan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk beg hiasan bercorak stensilan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

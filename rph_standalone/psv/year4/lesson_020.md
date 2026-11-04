@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Pualaman — Corak Air Berpusar  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Alat Domestik — Secawan Kopi Manis
+**Unit rujukan 2026:** Unit 5 — Secawan Kopi Manis (BT ms 46–49)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** pualaman  
-**Bahasa seni visual:** warna, jalinan, kontra, pergerakan  
+**Teknik:** papier mache  
+**Bahasa seni visual:** bentuk, jalinan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** dulang cetek, warna, kertas serap
+**BBM:** kertas koyak, gam kanji, acuan plastik
 
 ## Objektif pembelajaran
-Murid dapat memperkemas pualaman untuk kulit buku serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas model cawan daripada papier mache serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Air Berpusar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Pensel Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik pualaman serta penggunaan warna, jalinan, kontra, pergerakan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik papier mache serta penggunaan bentuk, jalinan, kontra. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada pualaman untuk kulit buku, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada model cawan daripada papier mache, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

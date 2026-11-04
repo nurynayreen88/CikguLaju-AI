@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Pualaman — Corak Air Berpusar  
+**Bidang:** Mengenal Kraf Tradisional  
+**Jenis/Tajuk:** Alat Domestik — Secawan Kopi Manis
+**Unit rujukan 2026:** Unit 5 — Secawan Kopi Manis (BT ms 46–49)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.5; 3.1.2  
-**Teknik:** pualaman  
-**Bahasa seni visual:** warna, jalinan, kontra, pergerakan  
+**SP:** 2.1.10; 3.1.5  
+**Teknik:** papier mache  
+**Bahasa seni visual:** bentuk, jalinan, kontra  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** dulang cetek, warna, kertas serap
+**BBM:** kertas koyak, gam kanji, acuan plastik
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Corak Air Berpusar dan memilih satu lakaran berdasarkan warna, jalinan, kontra, pergerakan.
+Murid dapat menyiapkan dua lakaran Bekas Pensel Kertas dan memilih satu lakaran berdasarkan bentuk, jalinan, kontra.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Air Berpusar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Pensel Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Corak Air Berpusar. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Bekas Pensel Kertas. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal pualaman untuk kulit buku, menguji pualaman pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal model cawan daripada papier mache, menguji papier mache pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
