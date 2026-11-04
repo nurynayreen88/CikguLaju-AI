@@ -62,7 +62,7 @@ def skill_plan(row: dict):
     domain = prefix.group(1) if prefix else "?"
     is_review = bool(re.search(r"\b(penilaian|pengukuhan|pemulihan|pengayaan|ulangkaji|ulang kaji)\b", title, re.I))
     context = f"teks atau ilustrasi bertajuk “{title}” dalam unit {theme}"
-    prompt = f"Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “{title}”?"
+    prompt = f"Apakah yang dapat kamu jangka berdasarkan tajuk {title}?"
     if domain == "1":
         if "bercerita" in sp or "menceritakan" in sp:
             focus = "Menceritakan bahan dengan urutan, sebutan dan intonasi sesuai."
@@ -93,7 +93,7 @@ def skill_plan(row: dict):
             a2 = ("Berikan respons lisan",
                   "Mengajukan tiga soalan berasaskan ujaran dan menunjukkan contoh respons santun tanpa memberikan jawapan sebenar.",
                   f"Memberikan dua respons lisan tentang “{title}” dan menyebut semula maklumat secara bergilir.")
-            assess = "Catatan tiga maklumat didengar dan dua respons tepat melalui senarai semak."
+            assess = "Merekod ketepatan tiga maklumat didengar dan dua respons lisan melalui senarai semak."
     elif domain == "2":
         if "multimedia" in sp or "grafik" in sp or "rumusan" in sp or "ramalan" in sp or "menaakul" in sp:
             focus = "Menaakul maklumat tersurat dan tersirat daripada bahan."
@@ -276,7 +276,7 @@ def render(year: int, row: dict, repeat_count: int):
 **Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
 
 ## Penutup — 5 minit
-**Guru:** Merumus kemahiran {plan['focus'][0].lower()+plan['focus'][1:]} dan meminta contoh aplikasi dalam kehidupan harian.  
+**Guru:** Merumus kemahiran {plan['focus'][0].lower()+plan['focus'][1:].rstrip('.')} dan meminta contoh aplikasi dalam kehidupan harian.  
 **Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  
@@ -300,8 +300,11 @@ def build():
             md = render(year, row, seen_titles[row["title"].casefold()])
             dest = out_dir / f"lesson_{row['n']:03d}.md"  # nama dalaman kekal untuk keserasian
             if dest.exists():
-                raise FileExistsError(f"Refuse to overwrite existing file: {dest}")
-            dest.write_text(md, encoding="utf-8")
+                existing = dest.read_text(encoding="utf-8")
+                assert f"BM{year}-P{row['n']:03d}" in existing, dest
+                md = existing  # Preserve already reviewed files; never overwrite automatically
+            else:
+                dest.write_text(md, encoding="utf-8")
             status = re.search(r"\*\*Status semakan:\*\* (DRAF|HOLD)", md).group(1)
             status_counts[status] += 1
             assert f"PdP {row['n']:03d}" in md and f"BM{year}-P{row['n']:03d}" in md
@@ -322,7 +325,7 @@ def build():
 - Halaman Buku Teks datang daripada RPT 2026 yang dipadankan kepada RPT 2027; **belum dibuktikan sah** melalui pemeriksaan semua buku asal.
 - **Buku Aktiviti BM Tahun {year} belum disahkan**; tidak ada arahan atau halaman BA yang direka.
 - PKJR dan sesi ulangan yang diragui ditanda HOLD. PBD Seni Bahasa secara bersepadu, bukan TP tambahan.
-- RPT Tahun {year}: ../../rpt_2027/bahasa_melayu/keluaran_format_english/RPT_BM_TAHUN_{year}_2027_A_B_PER_LESSON_DRAF.md
+- RPT Tahun {year}: ../../../rpt_2027/bahasa_melayu/keluaran_format_english/RPT_BM_TAHUN_{year}_2027_A_B_PER_LESSON_DRAF.md
 - RPT SK 2026: {source_rpt}
 - DSKP BM SK Tahun {year}: {source_dskp}
 
