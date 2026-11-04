@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh boneka dan menghas
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh boneka bertema Arnab dan Kura-kura dan membandingkan bentuk, jalinan, imbangan, penegasan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik potongan dan asemblaj. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk boneka dua watak.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik potongan dan asemblaj. Murid mencuba dua sampel kecil menggunakan kadbod serta batang pemegang tumpul, membandingkan kesan dan memilih teknik yang sesuai untuk boneka dua watak.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

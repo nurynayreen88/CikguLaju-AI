@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh mobail dan menghas
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh mobail bertema Burung Terbang dan membandingkan bentuk, warna, kepelbagaian, pergerakan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik ikatan dan asemblaj. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk mobail burung tergantung.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik ikatan dan asemblaj. Murid mencuba dua sampel kecil menggunakan kad warna serta benang, membandingkan kesan dan memilih teknik yang sesuai untuk mobail burung tergantung.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

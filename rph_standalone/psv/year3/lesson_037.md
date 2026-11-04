@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh model kraf dan men
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh model kraf bertema Galeri Motif Warisan dan membandingkan jalinan, bentuk, imbangan, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan model hiasan tidak berfungsi. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk model kertas alat pertahanan diri tradisional yang tumpul untuk pameran.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan model hiasan tidak berfungsi. Murid mencuba dua sampel kecil menggunakan kadbod lembut, membandingkan kesan dan memilih teknik yang sesuai untuk model kertas alat pertahanan diri tradisional yang tumpul untuk pameran.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

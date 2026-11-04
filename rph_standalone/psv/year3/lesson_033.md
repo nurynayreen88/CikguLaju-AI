@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh anyaman dan mengha
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh anyaman bertema Penanda Buku Anyaman dan membandingkan garisan, jalinan, kontra, harmoni. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik anyaman. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk penanda buku beranyam.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik anyaman. Murid mencuba dua sampel kecil menggunakan jalur kertas anyaman, membandingkan kesan dan memilih teknik yang sesuai untuk penanda buku beranyam.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
