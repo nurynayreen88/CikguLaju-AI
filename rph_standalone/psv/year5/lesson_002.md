@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 002
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Lukisan dan Capan — Si Putih Menawan
-**Unit rujukan 2026:** Unit 1 — Si Putih Menawan  
-**Fokus:** Lakar dan pilih media  
+**Status:** DRAF SEMAK  
+**Unit:** 1 — Si Putih Menawan  
+**Fokus:** Penerokaan media serta lakaran | **Teknik:** Lukisan dan capan  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.4; 3.1.1  
-**Teknik:** gabungan lukisan dan capan  
-**Bahasa seni visual:** garisan, jalinan, kontra  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** pensel, blok cap, warna
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 8–9  
+**BBM:** kertas lukisan, pen warna, cat poster, span capan  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Pasar Buah dan memilih satu lakaran berdasarkan garisan, jalinan, kontra.
+## Objektif dan kriteria kejayaan
+Murid dapat mencuba dua media capan dan melakar komposisi Si Putih Menawan. Evidens: lakaran dan alasan pemilihan media.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Pasar Buah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Pasar Buah. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal karya Si Putih Menawan menggunakan lukisan dan capan, menguji gabungan lukisan dan capan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menayangkan contoh Si Putih Menawan dan murid menyebut dua ciri karya.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan penggunaan kertas lukisan, pen warna, cat poster, span capan serta membanding dua corak capan; murid menyediakan lakaran burung putih.
+**Aktiviti 2 (25 minit) — Amali:** Murid membanding dua kombinasi warna dan capan, memilih teknik yang sesuai, kemudian membuat lakaran.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai lakaran dan alasan pemilihan media dan memberi maklum balas PBD.
+**Penutup (5 minit):** Murid menyatakan satu teknik baharu dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat lakaran untuk sokongan; murid mahir membanding dua reka bentuk.
+**Keselamatan:** Bahan tidak toksik dan alat tumpul.
+**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks PSV Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adaptasi CikguLaju.
