@@ -67,7 +67,7 @@ def inspect(root=ROOT):
             issues.append(f"SK/SP mismatch: {key}")
         if kind=="PJ" and year in (5,6):
             expected=(YEAR5_PAGES if year==5 else YEAR6_PAGES).get(num)
-            if expected is not None and not re.search(r"m/s\\s+"+re.escape(expected)+r"\\b",labels.get("buku teks","")):
+            if expected is not None and not re.search(r"m/s\s+"+re.escape(expected)+r"\b",labels.get("buku teks","")):
                 issues.append(f"RPH verified textbook page mismatch: {key}")
         if not (labels.get("objektif") or labels.get("objektif pembelajaran")):
             issues.append(f"Missing objectives: {key}")
