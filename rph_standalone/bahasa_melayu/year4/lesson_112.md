@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 112
 
-**ID:** BM4-P112  
-**Minggu RPT 2027:** M26 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita  
-**Tajuk aktiviti:** Pembayaran Tanpa Tunai  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.1 — Memahami dan menggunakan kata nama mengikut konteks tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 125  
-**Fokus:** tatabahasa — Pembayaran Tanpa Tunai  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Pembayaran Tanpa Tunai'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P112
+**Minggu RPT 2027:** M26 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita
+**Tajuk aktiviti:** Pembayaran Tanpa Tunai
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.1 — Memahami dan menggunakan kata nama mengikut konteks tidak formal
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 125. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** dialog Zara dan keluarga membeli barangan Pasar Raya Impian menggunakan pembayaran kad debit, dengan kata nama dan penjodoh bilangan.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengelaskan sekurang-kurangnya enam contoh kepada kata nama am, khas, ganti nama serta penjodoh bilangan dan membina empat ayat.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pembayaran Tanpa Tunai' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Pembayaran Tanpa Tunai dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Pembayaran Tanpa Tunai.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Pembayaran Tanpa Tunai'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata nama mengikut konteks tidak formal.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Pembayaran Tanpa Tunai'.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca dialog BT m/s 125, sorot kata nama dan frasa penjodoh bilangan seperti sekampit beras, dua botol sos dan sesikat pisang
+**Murid:** Pilih enam contoh daripada pelbagai kategori dan tentukan jenisnya
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Pembayaran Tanpa Tunai' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing murid membina ayat berdasarkan perkataan bercetak berwarna dalam konteks pembayaran tanpa tunai
+**Murid:** Bina empat ayat yang menggunakan kata nama/penjodoh bilangan dengan betul
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.1 — Memahami dan menggunakan kata nama mengikut konteks tidak formal) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak kategori perkataan, padanan penjodoh bilangan serta makna ayat
+**Murid:** Baiki dua pengelasan atau padanan yang tersalah
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Pembayaran Tanpa Tunai' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 5.1.1 melalui bukti yang ditemui pada BT m/s 125.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Pembayaran Tanpa Tunai.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 125 menyatakan SP 5.1.1(i,ii,iii,iv), membaca petikan, mengecam empat kategori kata nama dan membina ayat berdasarkan kata bercetak berwarna.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.
