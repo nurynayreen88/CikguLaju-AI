@@ -1,0 +1,29 @@
+name: RPT 2027 PSV and Moral cover - isolated CI
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/psv/**'
+      - 'rpt_2027/pendidikan_moral/add_cover.py'
+      - 'rpt_2027/pendidikan_moral/complete_96_downloads.py'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tests/test_rpt_psv_pm_integration_20261104.py'
+      - '.github/workflows/rpt2027-psv-moral-cover.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  psv_moral_regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'python-docx==1.1.2'
+      - name: Verify PSV 42 PdP PDFs and Moral 96-session covers and callbacks
+        run: python -m unittest discover -s tests -p 'test_rpt_psv_pm_integration_20261104.py' -v
+      - name: Keep English PDF routing regression green
+        run: python -m unittest discover -s tests -p 'test_english_rpt_2027_telegram_downloads.py' -v
+      - name: Preserve Moral 96-session RPH and existing payment gate
+        run: python scripts/check_moral_96_downloads.py

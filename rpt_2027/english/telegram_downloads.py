@@ -4,6 +4,8 @@ This is installed after app.py's existing callback wrappers by the active WSGI
 entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 """
 from pathlib import Path
+from tempfile import TemporaryDirectory
+from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
 from rpt_2027.pendidikan_islam.telegram_downloads import pdf_ready as pi_pdf_ready
@@ -51,7 +53,8 @@ def install(ns):
         data = str(d or "")
         is_year = data.startswith("rpt2027_year_")
         is_download = data.startswith("rpt2027_en_pdf_")
-        if data != "rpt2027_home" and not is_year and not is_download:
+        is_psv = data.startswith("rpt2027_psv_pdf_")
+        if data != "rpt2027_home" and not is_year and not is_download and not is_psv:
             return previous(cid, d)
         # Enforce entitlement again for stale/forged buttons and downloads.
         if not allowed(cid):
@@ -64,7 +67,7 @@ def install(ns):
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"
                 "English Tahun 2–6 tersedia dalam PDF (160 Lesson/tahun). Bahasa Melayu: RPT DRAF untuk semakan, jika tersedia. Pendidikan Islam: RPT cadangan, jika tersedia. "
-                "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia. PJPK Tahun 2–6: RPT DRAF (jika tersedia). Pendidikan Moral: RPT 2027 Tahun 2–6 untuk Kumpulan A/B (96 sesi/tahun), bersama RPH pengukuhan.",
+                "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia. PJPK Tahun 2–6: RPT DRAF (jika tersedia). Pendidikan Moral: RPT 2027 Tahun 2–6 untuk Kumpulan A/B (96 sesi/tahun), bersama RPH pengukuhan. PSV: 42 PdP cadangan bagi Tahun 2–6.",
                 kb)
         if is_year:
             suffix = data[len("rpt2027_year_"):]
@@ -99,6 +102,9 @@ def install(ns):
             if pjpk_pdf_ready(year):
                 kb.append([{"text": "📥 PJPK (PDF • DRAF 2027)",
                             "callback_data": "rpt2027_pjpk_pdf_%d" % year}])
+            if psv_pdf_ready(year):
+                kb.append([{"text": "📥 Pendidikan Seni Visual (PDF)",
+                            "callback_data": "rpt2027_psv_pdf_%d" % year}])
             kb.extend([
                 [{"text": "⬅️ Pilih Tahun", "callback_data": "rpt2027_home"}],
                 [{"text": "🏠 Menu Utama", "callback_data": "home"}],
@@ -108,8 +114,33 @@ def install(ns):
                 "Pilih subjek untuk memuat turun RPT.\n"
                 "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\nBahasa Melayu: RPT 2027 DRAF untuk semakan guru, jika tersedia.\n"
                 "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: 96 sesi RPT Kumpulan A/B, merangkumi 42 PdP teras dan 54 sesi pengukuhan; RPH pengukuhan dalam PDF/Word.\n\n"
-                "Tarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
+                "PSV: 42 PdP cadangan (PDF A4 landscape).\n\nTarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
+        if is_psv:
+            suffix = data[len("rpt2027_psv_pdf_"):]
+            if suffix not in ("2", "3", "4", "5", "6"):
+                return send(cid, "Pilihan tahun RPT PSV tidak sah.")
+            year = int(suffix)
+            if not psv_pdf_ready(year):
+                return send(cid, "RPT PSV tahun ini belum tersedia.")
+            try:
+                with TemporaryDirectory(prefix="cikgulaju_rpt_psv_") as folder:
+                    path = build_psv_pdf(year, Path(folder) / (
+                        "RPT_Pendidikan_Seni_Visual_Tahun_%d_2027.pdf" % year))
+                    result = send_document(cid, str(path),
+                        "RPT Pendidikan Seni Visual Tahun %d - 2027 (42 PdP)" % year)
+                    checker = ns.get("_telegram_delivery_ok_v25279")
+                    if callable(checker):
+                        confirmed = bool(checker(result))
+                    else:
+                        confirmed = bool(getattr(result, "ok", False)
+                                         and result.json().get("ok") is True)
+                    if not confirmed:
+                        return send(cid, "Telegram belum mengesahkan penghantaran PDF PSV.")
+                    return result
+            except Exception as exc:
+                print("RPT PSV PDF delivery failed:", repr(exc), flush=True)
+                return send(cid, "RPT PSV gagal dijana. Tiada PDF tahun lain digunakan.")
         suffix = data[len("rpt2027_en_pdf_"):]
         if suffix not in ("2", "3", "4", "5", "6"):
             return send(cid, "Pilihan tahun RPT tidak sah.")
