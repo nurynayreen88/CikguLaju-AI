@@ -8,8 +8,8 @@
 **Standard Pembelajaran (SP):** 5.1.1 (i) — Memahami dan menggunakan kata nama mengikut konteks tidak formal  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 6  
 **Fokus:** tatabahasa — Yang Tua Dihormati, Yang Muda Disayangi  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Yang Tua Dihormati, Yang Muda Disayangi'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat mengenal pasti sekurang-kurangnya empat kata nama am daripada cerita Hadif dan Aina membantu warga emas, kemudian membina tiga ayat menggunakan kata nama am itu.  
+**Bahan:** Buku Teks BM Tahun 4 SK m/s 6 (Hadif dan Aina membantu Pak Cik Ismail dan Mak Cik Minah), kad kata nama am dan buku latihan.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
@@ -17,20 +17,22 @@
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
 ## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Yang Tua Dihormati, Yang Muda Disayangi'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata nama mengikut konteks tidak formal.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Yang Tua Dihormati, Yang Muda Disayangi'.
+**Guru:** Membimbing bacaan dan pemerhatian ilustrasi cerita Hadif dan Aina membantu warga emas membawa bungkusan; menunjukkan contoh kata nama am daripada teks seperti basikal, rumah, sayur dan telur.  
+**Murid:** Membaca cerita dan menyenaraikan sekurang-kurangnya empat kata nama am yang hadir dalam teks atau ilustrasi.
 
 ## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Yang Tua Dihormati, Yang Muda Disayangi' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+**Guru:** Menerangkan perbezaan kata nama am dan kata nama khas dengan merujuk nama watak sebagai pembanding; membimbing pembinaan ayat yang sesuai tema.  
+**Murid:** Mengelaskan kata nama am/kata nama khas, kemudian membina tiga ayat tentang bantuan kepada jiran menggunakan kata nama am yang dipilih.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.1 (i) — Memahami dan menggunakan kata nama mengikut konteks tidak formal) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menilai empat kata nama am yang dikenal pasti dan tiga ayat yang menggunakan kata nama am dengan betul menurut SP 5.1.1(i).  
+**Murid:** Membetulkan salah pengelasan dan satu ayat berdasarkan bukti teks.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Yang Tua Dihormati, Yang Muda Disayangi' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
 **Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+
+**Bukti sumber khusus (BT4 SK):** BT Tahun 4 SK m/s 6 memaparkan Hadif dan Aina membantu Pak Cik Ismail dan Mak Cik Minah; arahan rasmi ialah menyenaraikan kata nama am dan membina ayat menggunakannya.
 
 **Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
 
