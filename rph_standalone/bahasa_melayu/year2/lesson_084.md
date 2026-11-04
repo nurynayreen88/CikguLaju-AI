@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 084
 
-**Tema / Unit:** Kebudayaan Kita; U11: Kesenian Dihargai  
-**Tajuk:** Wah, Mudahnya!  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.4 (v) — Memahami, mengenal pasti dan menggunakan kata perintah mengikut konteks  
-**Rujukan:** BT1 m/s 72-73; BA1 m/s 83–84. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** kata perintah dalam cara membuat ketupat palas  
-**Objektif:** Pada akhir PdP, murid dapat mengelaskan empat jenis kata perintah dan membina empat arahan yang santun.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: tolong, sila, minta, jangan; daun palas.
+**ID:** BM2-P084
+**Minggu RPT 2027:** M20 (tarikh ikut jadual)
+**Tema/Unit:** Kebudayaan Kita; U11: Kesenian Dihargai
+**Tajuk aktiviti:** Wah, Mudahnya!
+**Standard Kandungan (SK) berdasarkan RPT:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.4 (v) — Memahami, mengenal pasti dan menggunakan kata perintah mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 72–73; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Dialog Hana dan rakan membuat ketupat palas dengan nenek; kata perintah sila, tolong, minta dan jangan.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat memilih lima kata perintah dan melengkapkan dialog sopan.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Wah, Mudahnya!" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar gambar Wah, Mudahnya! pada Buku Teks BT1 m/s 72–73 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Wah, Mudahnya!.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membaca dialog nenek mengajar Hana dan rakan-rakan membuat ketupat palas.
-**Tindakan murid:** Murid mengenal kata perintah yang bermaksud suruhan, silaan, permintaan dan larangan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan langkah membuat kelongsong daun palas serta fungsi kata perintah
+**Murid:** Kenal pasti lima arahan melibatkan permintaan, silaan dan larangan
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru menunjukkan gambar langkah membalut ketupat dan meminta murid menulis arahan kepada rakan.
-**Tindakan murid:** Murid membina empat arahan lengkap menggunakan kata perintah sesuai.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjukkan cara menggunakan kata perintah sesuai pada ruang kosong dialog
+**Murid:** Lengkapkan lima ruang kosong, kemudian lakon dialog dengan nenek
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat bentuk kata perintah dan kesantunan ayat.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak kesantunan dan fungsi lima kata perintah
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran kata perintah dalam cara membuat ketupat palas serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 5.1.4 (v) menggunakan contoh tugasan Wah, Mudahnya!.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Wah, Mudahnya!.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT1 m/s 72–73: Dialog Hana dan rakan membuat ketupat palas dengan nenek; kata perintah sila, tolong, minta dan jangan. Aktiviti diselaraskan dengan kemahiran 5.1.4 (v); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

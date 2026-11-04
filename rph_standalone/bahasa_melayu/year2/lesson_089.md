@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 089
 
-**Tema / Unit:** Kebudayaan Kita; U12: Amalan Baik  
-**Tajuk:** Sehari di Muzium Kaca (i-Box Glass Museum)  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.4 (vi) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks  
-**Rujukan:** BT1 m/s 78; BA m/s 92. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** kata seru dalam lawatan ke Muzium Kaca  
-**Objektif:** Pada akhir PdP, murid dapat menggunakan empat kata seru dalam dialog yang sesuai dengan emosi.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: wah, eh, oh, amboi; muzium, hasil kraf kaca.
+**ID:** BM2-P089
+**Minggu RPT 2027:** M21 (tarikh ikut jadual)
+**Tema/Unit:** Kebudayaan Kita; U12: Amalan Baik
+**Tajuk aktiviti:** Sehari di Muzium Kaca (i-Box Glass Museum)
+**Standard Kandungan (SK) berdasarkan RPT:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.4 (vi) — Memahami, mengenal pasti dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 78; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Dialog Yahya dan keluarga di i-Box Glass Museum Pulau Pinang dengan kata seru wah, amboi, oh, eh.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat melengkapkan lima kata seru yang sesuai dengan suasana muzium kaca.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Sehari di Muzium Kaca (i-Box Glass Museum)" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar gambar Sehari di Muzium Kaca (i-Box Glass Museum) pada Buku Teks BT1 m/s 78 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Sehari di Muzium Kaca (i-Box Glass Museum).
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membaca dialog melawat Muzium Kaca di Pulau Pinang dan menonjolkan fungsi kata seru.
-**Tindakan murid:** Murid memadankan kata seru dengan perasaan kagum, terkejut atau teringat sesuatu.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing murid membaca peristiwa terowong 500 keping kaca dan cenderamata
+**Murid:** Garis perkataan yang menunjukkan rasa kagum atau terkejut
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru memberi situasi melihat barang kaca dan meminta dialog spontan berpasangan.
-**Tindakan murid:** Murid menggunakan empat kata seru serta tanda baca sesuai dalam dialog.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan intonasi dan pemilihan wah, amboi, oh serta eh berdasarkan ujaran
+**Murid:** Lengkapkan lima ruang kosong dan baca dialog secara berpasangan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat kata seru dan intonasi yang sepadan.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak lima kata seru dan tanda seru dalam konteks
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran kata seru dalam lawatan ke Muzium Kaca serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 5.1.4 (vi) menggunakan contoh tugasan Sehari di Muzium Kaca (i-Box Glass Museum).
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Sehari di Muzium Kaca (i-Box Glass Museum).
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT1 m/s 78: Dialog Yahya dan keluarga di i-Box Glass Museum Pulau Pinang dengan kata seru wah, amboi, oh, eh. Aktiviti diselaraskan dengan kemahiran 5.1.4 (vi); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

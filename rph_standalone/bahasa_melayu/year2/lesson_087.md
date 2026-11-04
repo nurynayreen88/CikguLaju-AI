@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 087
 
-**Tema / Unit:** Kebudayaan Kita; U12: Amalan Baik  
-**Tajuk:** Asal Usul Nama Baling, Kedah  
-**SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera  
-**SP:** 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera  
-**Rujukan:** BT1 m/s 76; BA m/s 87-88. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** nilai daripada asal usul nama Baling Kedah  
-**Objektif:** Pada akhir PdP, murid dapat membaca petikan dan menyatakan tiga nilai daripada peristiwa petani bekerjasama.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: petani, membina rumah, tanah subur, mengusahakan ladang, rajin.
+**ID:** BM2-P087
+**Minggu RPT 2027:** M21 (tarikh ikut jadual)
+**Tema/Unit:** Kebudayaan Kita; U12: Amalan Baik
+**Tajuk aktiviti:** Asal Usul Nama Baling, Kedah
+**Standard Kandungan (SK) berdasarkan RPT:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera
+**Standard Pembelajaran (SP):** 2.3.1 (ii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 76; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Cerita asal usul Baling, Kedah daripada petani, ladang buah, kera dan nama Ban-Lin.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat menentukan tiga nilai beserta satu bukti peristiwa bagi setiap nilai.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Asal Usul Nama Baling, Kedah" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar gambar Asal Usul Nama Baling, Kedah pada Buku Teks BT1 m/s 76 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Asal Usul Nama Baling, Kedah.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membacakan cerita asal usul nama Baling tanpa membuat dakwaan sejarah di luar teks.
-**Tindakan murid:** Murid mengenal peristiwa kerja sama petani dalam petikan.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing baca kisah petani rajin mengusahakan ladang dan bekerjasama menghadapi kera
+**Murid:** Garis tiga tindakan petani berdasarkan cerita
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru meminta murid memberikan tiga nilai dengan bukti tindakan watak daripada cerita.
-**Tindakan murid:** Murid menulis nilai dan menerangkan satu contoh untuk setiap nilai.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan kaitan peristiwa dengan nilai rajin, kerjasama dan usaha
+**Murid:** Isi tiga pasangan pernyataan–nilai dan jelaskan satu sebab
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak tiga nilai dan bukti yang berpandukan petikan.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak tiga nilai berpunca daripada ayat asal buku
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran nilai daripada asal usul nama Baling Kedah serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 2.3.1 (ii) menggunakan contoh tugasan Asal Usul Nama Baling, Kedah.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Asal Usul Nama Baling, Kedah.
 
-**Status QA:** DRAF — audit kandungan dan Buku Aktiviti belum selesai. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT1 m/s 76: Cerita asal usul Baling, Kedah daripada petani, ladang buah, kera dan nama Ban-Lin. Aktiviti diselaraskan dengan kemahiran 2.3.1 (ii); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

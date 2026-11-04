@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 111
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!  
-**Tajuk:** Malam Kemerdekaan  
-**SK:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks  
-**SP:** 5.2.1 — Memahami, mengenal pasti dan menggunakan kata mengikut konteks  
-**Rujukan:** BT2 m/s 18; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** pengukuhan kata dasar, tunggal dan berimbuhan dalam Malam Kemerdekaan  
-**Objektif:** Pada akhir PdP, murid dapat mengelaskan lapan kata dan melengkapkan tiga ayat bertema sambutan.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: merdeka; bendera; berbaris; menyanyikan; kibarkan.
+**ID:** BM2-P111
+**Minggu RPT 2027:** M26 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Oh, Malaysiaku!
+**Tajuk aktiviti:** Malam Kemerdekaan
+**Standard Kandungan (SK) berdasarkan RPT:** 5.2 Memahami dan menggunakan pembentukan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.2.1 (i), (ii), (iii), (iv) — Memahami kata dasar, kata tunggal, kata berimbuhan awalan dan akhiran mengikut konteks
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 18; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Cerita Malam Kemerdekaan mengandungi kata dasar, kata tunggal, imbuhan awalan serta akhiran pada sambutan tengah malam.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat mengelaskan empat jenis kata dan melengkapkan enam ruang kosong petikan.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Malam Kemerdekaan dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Malam Kemerdekaan pada Buku Teks BT2 m/s 18 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Malam Kemerdekaan.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru membaca petikan ringkas sambutan kemerdekaan dan mengenal pasti kata dasar, tunggal dan berimbuhan.
-**Tindakan murid:** Murid mengelaskan lapan perkataan kepada kumpulan bentuk kata.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan sambutan Merdeka dan bank kata berkumpul, ambil, gema, diri dan julang
+**Murid:** Kenal pasti enam kata dasar serta imbuhan yang diperlukan
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru memberi tiga ayat kosong tentang sambutan dan meminta imbuhan yang betul.
-**Tindakan murid:** Murid melengkapkan ayat serta menerangkan perubahan bentuk kata.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan satu contoh daripada setiap kategori kata dan kaitannya dengan ayat
+**Murid:** Isi enam ruang kosong kemudian kelaskan empat kata kepada jenisnya
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai lapan pengelasan dan tiga ayat lengkap; pemulihan/pengayaan.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak enam pilihan dalam petikan serta empat pengelasan kata
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan pengukuhan kata dasar, tunggal dan berimbuhan dalam Malam Kemerdekaan dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 5.2.1 (i), (ii), (iii), (iv) menggunakan contoh tugasan Malam Kemerdekaan.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Malam Kemerdekaan.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 18: Cerita Malam Kemerdekaan mengandungi kata dasar, kata tunggal, imbuhan awalan serta akhiran pada sambutan tengah malam. Aktiviti diselaraskan dengan kemahiran 5.2.1 (i), (ii), (iii), (iv); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

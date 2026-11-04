@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 102
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Hidup Berbakti  
-**Tajuk:** Galeri Keluarga  
-**SK:** 3.3 Menghasilkan penulisan  
-**SP:** 3.3.2 (i) — Mengedit dan memurnikan hasil penulisan daripada aspek  
-**Rujukan:** BT2 m/s 9; BA m/s 11; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** menyunting kesalahan ejaan dalam Galeri Keluarga  
-**Objektif:** Pada akhir PdP, murid dapat membetulkan enam kesalahan ejaan daripada petikan.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: romahnya→rumahnya; berkenelan→berkenalan; mesrenya→mesranya.
+**ID:** BM2-P102
+**Minggu RPT 2027:** M24 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Hidup Berbakti
+**Tajuk aktiviti:** Galeri Keluarga
+**Standard Kandungan (SK) berdasarkan RPT:** 3.3 Menghasilkan penulisan
+**Standard Pembelajaran (SP):** 3.3.2 (i) — Mengedit dan memurnikan hasil penulisan daripada aspek
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 9; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Petikan Galeri Keluarga tentang Encik Mahzan dan Julaihi dengan ejaan sengaja salah seperti romahnya, berkenelan, kagom dan datok.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat membetulkan sekurang-kurangnya enam kesalahan ejaan dan menulis semula satu perenggan.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Galeri Keluarga dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Galeri Keluarga pada Buku Teks BT2 m/s 9 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Galeri Keluarga.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru memaparkan petikan tentang keluarga Encik Mahzan yang melawat galeri keluarga di Sarawak.
-**Tindakan murid:** Murid menggariskan kesalahan ejaan yang jelas daripada teks.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing baca petikan yang sengaja mempunyai kesalahan ejaan mengenai galeri perjuangan keluarga
+**Murid:** Kenal pasti enam bentuk salah pada teks
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru membimbing semakan berpandukan bentuk kata baku dan meminta murid menulis semula ayat yang diperbetul.
-**Tindakan murid:** Murid membaiki enam perkataan dan membaca semula ayat yang betul.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan pembetulan romahnya, berkenelan, kagom dan datok tanpa mengubah cerita
+**Murid:** Sunting enam kesalahan dan tulis satu perenggan dimurnikan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak enam pembetulan ejaan.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak enam pembetulan ejaan serta huruf besar
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan menyunting kesalahan ejaan dalam Galeri Keluarga dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 3.3.2 (i) menggunakan contoh tugasan Galeri Keluarga.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Galeri Keluarga.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 9: Petikan Galeri Keluarga tentang Encik Mahzan dan Julaihi dengan ejaan sengaja salah seperti romahnya, berkenelan, kagom dan datok. Aktiviti diselaraskan dengan kemahiran 3.3.2 (i); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

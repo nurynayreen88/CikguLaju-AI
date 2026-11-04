@@ -1,34 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 088
 
-**Tema / Unit:** Kebudayaan Kita; U12: Amalan Baik  
-**Tajuk:** Seronoknya Menonton Teater + PKJR  
-**SK:** 3.3 Menghasilkan penulisan  
-**SP:** 3.3.1 (i) — Menghasilkan penulisan naratif dan bukan naratif secara separa terkawal  
-**Rujukan:** BT1 m/s 77; BA m/s 89–91. Halaman BA berdasarkan petunjuk Buku Teks/RPT 2026, bukan bukti latihan BA telah diperiksa.  
-**Tempoh cadangan:** 60 minit; laraskan mengikut jadual sekolah.  
-**Fokus kemahiran:** karangan separa terkawal kisah teater Pemuda yang Jujur; PKJR tertangguh  
-**Objektif:** Pada akhir PdP, murid dapat melengkapkan lima tempat kosong dan membina satu perenggan ringkas mengenai amanah.  
-**Bahan:** Buku Teks dan kad gambar/ayat bertema, papan putih, buku latihan. Kosa kata: pemuda, kayu api, selendang, jujur, ganjaran.
+**ID:** BM2-P088
+**Minggu RPT 2027:** M21 (tarikh ikut jadual)
+**Tema/Unit:** Kebudayaan Kita; U12: Amalan Baik
+**Tajuk aktiviti:** Seronoknya Menonton Teater + PKJR
+**Standard Kandungan (SK) berdasarkan RPT:** 3.3 Menghasilkan penulisan
+**Standard Pembelajaran (SP):** 3.3.1 (i) — Menghasilkan penulisan naratif dan bukan naratif secara separa terkawal
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 77; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Karangan separa terkawal mengenai teater Pemuda yang Jujur dan selendang bersulam emas yang dipulangkan kepada puteri.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat melengkapkan enam ruang kosong dan menghasilkan satu karangan pendek berurutan.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru menunjukkan gambar atau situasi berkaitan "Seronoknya Menonton Teater + PKJR" dan mengemukakan soalan yang menghubungkan tajuk dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
+**Guru:** Papar gambar Seronoknya Menonton Teater + PKJR pada Buku Teks BT1 m/s 77 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Seronoknya Menonton Teater + PKJR.
 
-## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru membincangkan urutan cerita teater yang ditonton Yahya dan keluarganya serta nilai kejujuran.
-**Tindakan murid:** Murid mengenal watak, tempat dan benda penting dalam sinopsis.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan cerita teater dan petunjuk tentang pemuda menemui selendang
+**Murid:** Susun urutan peristiwa memasuki hutan, menemui kain, memulangkan dan menerima hadiah
 
-## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
-**Tindakan guru:** Guru menyediakan rangka lima ayat dengan petunjuk kosa kata untuk karangan separa terkawal.
-**Tindakan murid:** Murid melengkapkan rangka dan membaca perenggan sendiri.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan pemilihan perkataan berdasarkan konteks cerita tanpa mereka watak baharu
+**Murid:** Isi enam ruang kosong dan tulis karangan dua perenggan daripada bahan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak lima pilihan perkataan dan kesinambungan naratif; tidak menilai PKJR tanpa modul.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak fakta sumber, aliran cerita serta tanda baca
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran karangan separa terkawal kisah teater Pemuda yang Jujur; PKJR tertangguh serta nilai murni yang relevan.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari dan satu contoh menggunakannya.
+**Guru:** Rumuskan kemahiran 3.3.1 (i) menggunakan contoh tugasan Seronoknya Menonton Teater + PKJR.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Seronoknya Menonton Teater + PKJR.
 
-**Status QA:** HOLD — sumber PKJR/urutan RPT belum disahkan. 
-**Kawalan:** Tidak menyalin soalan latihan BA yang belum diperiksa atau mereka kod PKJR rasmi. Bahan ini belum READY dan tidak diaktifkan di Telegram/Web.
+**Bukti khusus Buku Teks:** BT1 m/s 77: Karangan separa terkawal mengenai teater Pemuda yang Jujur dan selendang bersulam emas yang dipulangkan kepada puteri. Aktiviti diselaraskan dengan kemahiran 3.3.1 (i); halaman BA asal belum disemak.
+**Kawalan PKJR:** Label PKJR RPT bukan bukti modul rasmi; tidak mencipta aktiviti PKJR tambahan.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.

@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 096
 
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia  
-**Tajuk:** Aku Bangga Berbahasa Melayu  
-**SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera  
-**SP:** 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera  
-**Rujukan:** BT2 m/s 3; BA m/s 2-3; rujukan BA berdasarkan BT/RPT 2026, latihan BA belum diperiksa.  
-**Tempoh cadangan:** 60 minit; jadual negeri/kelas sebenar menentukan masa.  
-**Fokus:** membaca pantun dan menyatakan nilai sayang bahasa  
-**Objektif:** Pada akhir PdP, murid dapat mengenal tiga nilai daripada pantun serta membacanya dengan intonasi sesuai.  
-**Bahan:** Buku Teks jilid berkenaan, bahan bergambar/kad kata, papan putih dan buku latihan. Kosa kata/konteks: bangga berbahasa Melayu; menjaga bahasa; hormat warisan.
+**ID:** BM2-P096
+**Minggu RPT 2027:** M23 (tarikh ikut jadual)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Bersikap Mulia
+**Tajuk aktiviti:** Aku Bangga Berbahasa Melayu
+**Standard Kandungan (SK) berdasarkan RPT:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera
+**Standard Pembelajaran (SP):** 2.3.1 (iii) — Membaca, mengenal pasti dan menyatakan nilai daripada bahan sastera dan bahan bukan sastera
+**Sumber:** Buku Teks BM Tahun 2 SK Jilid 2 m/s 3; Buku Aktiviti asal belum disahkan.
+**Fokus khusus BT:** Empat pantun kebanggaan menggunakan Bahasa Melayu sebagai bahasa kebangsaan dan bahasa perpaduan.
+**Objektif PdP:** Pada akhir pembelajaran murid dapat menjelaskan tiga nilai patriotik berdasarkan rangkap pantun.
+**Bahan:** Buku Teks asal, petikan/gambar khusus, kad aktiviti bersumber dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut kelas).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Aku Bangga Berbahasa Melayu dan meminta murid menerangkan satu maklumat berkaitan.
-**Tindakan murid:** Murid memberi respons lisan daripada pengalaman dan maklumat awal.
+**Guru:** Papar gambar Aku Bangga Berbahasa Melayu pada Buku Teks BT2 m/s 3 dan hubungkan dengan pengalaman murid.
+**Murid:** Nyatakan satu peristiwa atau maklumat daripada gambar Aku Bangga Berbahasa Melayu.
 
-## Aktiviti 1 — Fahami bahan (15 minit)
-**Tindakan guru:** Guru memperkenalkan watak Hasan dan rakan-rakan yang membaca pantun untuk perhimpunan sekolah.
-**Tindakan murid:** Murid melafazkan rangkap secara berkumpulan dan mengenal ungkapan yang menunjukkan rasa bangga.
+## Aktiviti 1 — Teliti sumber (15 minit)
+**Guru:** Bimbing bacaan pantun sekolah, bahasa kebangsaan dan memelihara Bahasa Melayu
+**Murid:** Garis frasa nilai cinta negara dan menghormati bahasa
 
-## Aktiviti 2 — Gunakan kemahiran (20 minit)
-**Tindakan guru:** Guru meminta murid membuat peta tiga nilai dengan bukti maksud pantun.
-**Tindakan murid:** Murid mengulas tiga nilai dan membaca satu rangkap dengan betul.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan jadual Rangkap–Maksud–Nilai untuk dua pantun
+**Murid:** Isi tiga nilai daripada tiga rangkap serta jelaskan satu bukti
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak tiga nilai dan sumbernya daripada pantun.
-**Tindakan murid:** Murid menyerahkan respons atau hasil sendiri dan membetulkan kesilapan selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai hasil murid menggunakan kriteria: Semak nilai dan bukti pantun
+**Murid:** Bandingkan hasil dengan bahan asal dan baiki sekurang-kurangnya satu kesilapan.
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan membaca pantun dan menyatakan nilai sayang bahasa dan mengaitkannya dengan nilai murni.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu tindakan positif.
+**Guru:** Rumuskan kemahiran 2.3.1 (iii) menggunakan contoh tugasan Aku Bangga Berbahasa Melayu.
+**Murid:** Nyatakan satu kemahiran atau nilai yang dipelajari daripada Aku Bangga Berbahasa Melayu.
 
-**Status QA:** DRAF — semakan BA, kurikulum dan format cetakan belum selesai.
-**Nota kawalan:**   Tidak mereka arahan Buku Aktiviti atau hasil PKJR. Tidak tersedia untuk pengguna sehingga READY.
+**Bukti khusus Buku Teks:** BT2 m/s 3: Empat pantun kebanggaan menggunakan Bahasa Melayu sebagai bahasa kebangsaan dan bahasa perpaduan. Aktiviti diselaraskan dengan kemahiran 2.3.1 (iii); halaman BA asal belum disemak.
+**Status QA:** DRAF — halaman dan tugasan Buku Teks diperiksa; SK penuh DSKP, BA, PKJR, takwim negeri, cetakan Word/PDF A4 dan Telegram belum disahkan. Jangan terbitkan sebagai FINAL READY.
