@@ -18,7 +18,7 @@ Keluarga membahagi tugasan sebelum tetamu datang ke rumah.
 **Hasil murid:** jadual siapa-buat-apa-bila; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
 ## PdP 2 — Penaakulan dan emosi
-**Tugasan 3 (3.3):** Menghuraikan kepentingan melaksanakan tanggungjawab terhadap keluarga 3.  
+**Tugasan 3 (3.3):** Menghuraikan kepentingan melaksanakan tanggungjawab terhadap keluarga.  
 **Tugasan 4 (3.4):** Menzahirkan perasaan apabila melaksanakan tanggungjawab terhadap keluarga.  
 **Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
