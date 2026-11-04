@@ -10,8 +10,8 @@ Semakan sumber asal pada 4 November 2026. Membezakan **nama unit/turutan RPT 202
 
 ## Tindakan sebelum READY
 1. Pindahkan susunan crosswalk ke RPT 2027 dan RPH dengan nombor PdP sepadan.
-2. Tahun 6 perlu reka semula 8 projek contoh menjadi unit yang sesuai dengan RPT (10 unit); jangan label READY.
-3. Tahun 4 Unit 10 contoh RPT mencetak diorama dua kali. Jangan hapus SP ukiran kerana berbeza dengan DSKP.
+2. Tahun 6 sudah dibina semula kepada 10 unit buku teks; semak SK 3.1 dengan SP bercetak 3.2.1–3.2.3 dan tatacara pameran.
+3. Tahun 4 Unit 10: Buku Teks Tahun 4 ms 96–99 mengesahkan Harum Mewangi (ukiran timbul pada sabun). Konflik berpunca daripada contoh RPT 2026 yang mengulangi diorama. RPH sudah menggunakan buku teks dan DSKP 2.1.9; bukan lagi unit pengayaan.
 4. Projek pameran pertengahan tahun dan akhir tahun belum diagihkan pada 42 PdP draf; semak selepas pemetaan kalendar.
 5. Halaman buku teks yang dikesan melalui RPT 2026 ialah dakwaan rujukan RPT, belum disahkan secara visual dengan buku teks sebenar.
 6. Lajur tarikh Kumpulan A/B mesti berdasarkan kalendar rasmi 2027 setelah disahkan.
