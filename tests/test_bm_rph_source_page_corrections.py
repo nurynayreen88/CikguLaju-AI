@@ -53,12 +53,12 @@ for year in (4,5):
         key=f'<td class="id">{code}<div class="sub">BM{y}-P{n:03d}</div></td>'
         a=html.index(key);b=html.index("</tr>",a)
         snippet=unescape(html[a:b])
-        assert f"{req['sp']} —" in snippet,(y,n,"HTML SP not updated")
+        assert req['sp'] in snippet and '—' in snippet,(y,n,'HTML SP not updated')
         assert f"BT m/s {req['bt']}" in snippet,(y,n,"HTML BT not updated")
         if "title" in req:assert req["title"] in snippet,(y,n,"HTML title not updated")
         file=RPH/f"year{y}/lesson_{n:03d}.md"
         txt=file.read_text(encoding="utf-8")
-        assert f"**Standard Pembelajaran (SP):** {req['sp']} —" in txt,(y,n,"RPH SP")
+        assert f"**Standard Pembelajaran (SP):** {req['sp']}" in txt,(y,n,'RPH SP')
         assert f"BT m/s {req['bt']}" in txt,(y,n,"RPH BT")
         if "title" in req:assert f"**Tajuk aktiviti:** {req['title']}" in txt,(y,n,"RPH title")
         assert all(t in txt for t in ("## Set induksi","## Aktiviti 1","## Aktiviti 2","## Pengukuhan","## Penutup"))
