@@ -31,7 +31,7 @@
 **Tindakan guru:** Guru meminta murid menyimpulkan kemahiran menulis huruf berangkai secara mekanis dan menekankan nilai murni yang berkaitan.
 **Tindakan murid:** Murid berkongsi satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
-**Status QA:** HOLD — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
+**Status QA:** DRAF — pemetaan BAM/HP PKJR diperbetulkan; masih belum READY kerana BPG keseluruhan, A4, kalendar dan CI.  
 **Kawalan:** Aktiviti berpandukan kandungan BA yang dibaca terus; tiada soalan BA disalin panjang, tiada standard PKJR rasmi yang direka, tiada penerbitan kepada guru.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
@@ -46,6 +46,8 @@
 
 **Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
 
-**Status sumber:** HOLD — HP RPT 2026 ialah 1.1.1 tetapi petunjuk HP pada BAM Aktiviti 1 tidak jelas sepadan; perlu BPG.
+**Status sumber:** DRAF — RPT 2026 HP 1.1.1 dan kandungan BAM Aktiviti 1 sama-sama mengenalkan jenis kenderaan; pembetulan dilakukan dengan semakan kandungan, bukan berdasarkan footer halaman yang bercampur.
 
 **Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
+
+**Keputusan audit terkawal:** RPT 2026 HP 1.1.1 dan kandungan BAM Aktiviti 1 sama-sama mengenalkan jenis kenderaan; pembetulan dilakukan dengan semakan kandungan, bukan berdasarkan footer halaman yang bercampur.

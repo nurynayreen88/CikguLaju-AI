@@ -32,7 +32,7 @@
 **Tindakan murid:** Murid berkongsi satu kemahiran yang dikuasai dan satu cara menggunakannya.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 1.1.3; BAM m/s 2–3, Aktiviti 2 (varian 2B dalam RPT 2026; perlu semak); fokus tindakan selamat apabila kenderaan menghampiri. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
+**Status QA:** DRAF — pemetaan BAM/HP PKJR diperbetulkan; masih belum READY kerana BPG keseluruhan, A4, kalendar dan CI.  
 **Kawalan:** Aktiviti berpandukan kandungan BA yang dibaca terus; tiada soalan BA disalin panjang, tiada standard PKJR rasmi yang direka, tiada penerbitan kepada guru.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
@@ -47,6 +47,8 @@
 
 **Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
 
-**Status sumber:** HOLD — RPT 2026 menyebut Aktiviti 2B, BAM mengindeks Aktiviti 2; sesi berasingan belum dipastikan.
+**Status sumber:** DRAF — BAM Aktiviti 2 m/s 2–3 mempunyai bahagian A dan B. Label 2B dalam RPT 2026 ditafsir secara terkawal sebagai bahagian B pada aktiviti yang sama, bukan kod aktiviti baharu.
 
 **Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
+
+**Keputusan audit terkawal:** BAM Aktiviti 2 m/s 2–3 mempunyai bahagian A dan B. Label 2B dalam RPT 2026 ditafsir secara terkawal sebagai bahagian B pada aktiviti yang sama, bukan kod aktiviti baharu.

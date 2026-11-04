@@ -31,7 +31,7 @@
 **Guru:** Merumuskan kemahiran mengedit ejaan dan imbuhan dan menyambungkannya dengan situasi dalam Unit.
 **Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
 
-**Status QA:** HOLD — PKJR BAM ditambah; belum READY/BPG/CI/A4.  
+**Status QA:** DRAF — pemetaan BAM/HP PKJR diperbetulkan; masih belum READY kerana BPG keseluruhan, A4, kalendar dan CI.  
 **Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
 **Isu:** Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap; Pemetaan modul PKJR belum disahkan  
 **Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
@@ -49,6 +49,8 @@
 
 **Masa:** Sebahagian 10 minit daripada Aktiviti 2; bukan tambahan masa PdP.
 
-**Keputusan:** HOLD — HP 4.3.1 RPT2026 bercanggah dengan BAM m/s24 (Alat Penahan).
+**Keputusan:** DRAF — RPT 2026 memasangkan HP 4.3.1 (kebolehlihatan) dengan BAM Aktiviti 22 m/s 24 mengenai alat penahan. Sumber BAM dan kandungan HP 6.2.1 dalam BPG menyokong alat penahan; gunakan HP 6.2.1 bagi pemetaan PKJR sahaja.
 
 **Sumber:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
+
+**Keputusan audit terkawal:** RPT 2026 memasangkan HP 4.3.1 (kebolehlihatan) dengan BAM Aktiviti 22 m/s 24 mengenai alat penahan. Sumber BAM dan kandungan HP 6.2.1 dalam BPG menyokong alat penahan; gunakan HP 6.2.1 bagi pemetaan PKJR sahaja.

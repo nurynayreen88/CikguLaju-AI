@@ -62,5 +62,5 @@
       "runtime_tests_passed": false
     }
   },
-  "note": "BM Year3 165 RPH, 159 DRAF / 6 HOLD / 0 READY. BPG, A4, calendar and runtime not passed. Do not deploy."
+  "note": "BM Tahun 3: 165 RPH, 162 DRAF, 3 HOLD (079,089,094), 0 READY. Sumber HP PKJR 157 dibetulkan; kalendar negeri, PDF A4, QA/CI dan runtime belum lulus."
 }
