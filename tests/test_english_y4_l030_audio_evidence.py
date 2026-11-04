@@ -36,6 +36,17 @@ class Lesson30AudioEvidence(unittest.TestCase):
             self.assertRegex(a["sha256"],r"^[a-f0-9]{64}$")
             self.assertTrue(a["ffmpeg_decode_pass"])
             self.assertFalse(a["actual_spoken_content_verified"])
+        # Measured waveform dissimilarity does not prove correct spoken words.
+        signal = d["audio_signal_comparison"]
+        self.assertEqual(signal["source_input_sha256"]["cd1"], audio[0]["sha256"])
+        self.assertEqual(signal["source_input_sha256"]["cd2"], audio[1]["sha256"])
+        self.assertEqual(signal["decoded_sample_rate_hz"], 16000)
+        self.assertGreater(signal["maximum_absolute_normalized_crosscorrelation"], 0)
+        self.assertLess(signal["maximum_absolute_normalized_crosscorrelation"], 0.1)
+        self.assertFalse(signal["transcript_or_teacher_book_dialogue_checked"])
+        self.assertFalse(signal["audio_playback_to_user_verified"])
+        self.assertFalse(signal["correct_content_listening_verified"])
+        self.assertFalse(signal["final_ready_approved"])
         # Cross-source visual check: Lesson30 is Let's play / WB p15
         # not the preceding Our world WB p14, although both mention chores.
         wb = d["workbook"]
