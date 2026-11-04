@@ -79,7 +79,11 @@ def apply(state, rows, *, allow_provisional=False):
         return rows
     if re.search(r"(?mi)^\*\*(?:Main|Complementary)\s+(?:SK/SP|SP|CS/LS):\*\*\s*(?:Teacher.selected|PILIHAN GURU)", source):
         return rows
-    if UNSAFE_AUDIO.search(source) or re.search(r"(?i)\bNOT READY FOR RELEASE\b", source):
+    # Keep audio-dependent Year 4 lessons on the existing verified route.
+    # Track numbers/filenames alone do not prove spoken content or delivery.
+    if UNSAFE_AUDIO.search(source) or re.search(
+        r"(?i)\b(?:CD[123]|Track\s*\d+|listen(?:ing)?|audio recording)\b", source
+    ) or re.search(r"(?i)\bNOT READY FOR RELEASE\b", source):
         return rows
 
     # Require an actual numeric official Learning Standard for BOTH skills.
