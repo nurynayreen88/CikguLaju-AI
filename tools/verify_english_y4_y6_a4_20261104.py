@@ -123,7 +123,9 @@ def run(year):
         original_text=_build(year,number,f)
         compact_file=compact/name
         compact_file.write_bytes(f.read_bytes())
-        if not compact_word_file(str(compact_file)):
+        # Production uses a 7.5pt A4 variant only for Y6 L16.
+        points = 7.5 if year == 6 and number == 16 else 8.0
+        if not compact_word_file(str(compact_file),point_size=points):
             raise RuntimeError("A4 compactor failed Year%d L%d"%(year,number))
         if _text(compact_file)!=original_text:
             raise RuntimeError("Compactor changed lesson text Year%d L%d"%(year,number))
