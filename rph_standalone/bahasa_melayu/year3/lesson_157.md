@@ -31,8 +31,24 @@
 **Guru:** Merumuskan kemahiran mengedit ejaan dan imbuhan dan menyambungkannya dengan situasi dalam Unit.
 **Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
 
-**Status QA:** HOLD — belum READY.  
+**Status QA:** HOLD — PKJR BAM ditambah; belum READY/BPG/CI/A4.  
 **Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
 **Isu:** Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap; Pemetaan modul PKJR belum disahkan  
 **Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
 **Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Rujukan calon:** HP PKJR 4.3.1, BAM Aktiviti 22 m/s 24, *Alat Penahan*.
+
+**Guru:** Menunjukkan bahan BAM dan memandu pemerhatian situasi keselamatan.
+
+**Murid:** Mengelaskan tiga contoh alat penahan atau ciri topi keledar dan memberi alasan berdasarkan gambar.
+
+**PBD:** Tiga padanan atau ciri yang betul.
+
+**Masa:** Sebahagian 10 minit daripada Aktiviti 2; bukan tambahan masa PdP.
+
+**Keputusan:** HOLD — HP 4.3.1 RPT2026 bercanggah dengan BAM m/s24 (Alat Penahan).
+
+**Sumber:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

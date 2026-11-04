@@ -31,8 +31,24 @@
 **Guru:** Merumuskan kemahiran pantun sikap berjimat dan menyambungkannya dengan situasi dalam Unit.
 **Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
 
-**Status QA:** HOLD — belum READY.  
+**Status QA:** DRAF — PKJR BAM ditambah; belum READY/BPG/CI/A4.  
 **Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
 **Isu:** Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap; Pemetaan modul PKJR belum disahkan  
 **Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
 **Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Rujukan calon:** HP PKJR 6.3.3, BAM Aktiviti 24 m/s 27, *Pemilihan Topi Keledar yang Sesuai*.
+
+**Guru:** Menunjukkan bahan BAM dan memandu pemerhatian situasi keselamatan.
+
+**Murid:** Mengelaskan tiga contoh alat penahan atau ciri topi keledar dan memberi alasan berdasarkan gambar.
+
+**PBD:** Tiga padanan atau ciri yang betul.
+
+**Masa:** Sebahagian 10 minit daripada Aktiviti 2; bukan tambahan masa PdP.
+
+**Keputusan:** DRAF, belum READY.
+
+**Sumber:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

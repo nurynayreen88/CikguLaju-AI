@@ -62,5 +62,5 @@
       "runtime_tests_passed": false
     }
   },
-  "note": "BM Year 3: 165/165 files; 137 DRAF / 28 HOLD PKJR / 0 READY after recovery of 9 missing PKJR labels from 2026. Other year gates remain false; do not publish."
+  "note": "BM Year3 165 RPH, 159 DRAF / 6 HOLD / 0 READY. BPG, A4, calendar and runtime not passed. Do not deploy."
 }
