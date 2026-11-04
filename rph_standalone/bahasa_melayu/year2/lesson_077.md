@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 077
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 077
 
 **Tema / Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita  
 **Tajuk:** Menariknya Tarian Dabus  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid menyatakan satu pemerhatian serta menjawab soalan permulaan dengan ayat yang mudah.
 
 ## Aktiviti 1 — Aktiviti berpandukan buku (15 minit)
-**Tindakan guru:** Guru mengimbas penerangan Lesson 072, kemudian menayangkan gambar atau rajah berlabel.
+**Tindakan guru:** Guru mengimbas penerangan PdP 072, kemudian menayangkan gambar atau rajah berlabel.
 **Tindakan murid:** Murid mencatat fakta yang belum dimasukkan dalam penerangan awal.
 
 ## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
@@ -23,7 +23,7 @@
 **Tindakan murid:** Murid menerangkan empat fakta dengan ayat sendiri dan nada sopan.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai empat fakta tambahan; sesi susulan belum disahkan sebagai Lesson berasingan.
+**Tindakan guru:** Nilai empat fakta tambahan; sesi susulan belum disahkan sebagai PdP berasingan.
 **Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
 
 ## Penutup (5 minit)

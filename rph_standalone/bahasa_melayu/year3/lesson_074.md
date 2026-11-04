@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 074
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 074
 
 **ID:** BM3-P074  
 **Tema/Unit:** Perpaduan; U10: Toleransi Kukuhkan Perpaduan  
@@ -10,7 +10,7 @@
 **Fokus:** membaca label  
 **Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
 **Objektif:** Menerangkan empat maklumat yang benar-benar tertera pada label.  
-**Bahan:** label pakaian dan label amaran; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**Bahan:** label pakaian dan label amaran; buku teks/aktiviti bagi PdP berkenaan; senarai semak PBD.
 
 ## Set induksi (5 minit)
 **Guru:** Mengemukakan label pakaian dan label amaran untuk mencetuskan perbincangan.

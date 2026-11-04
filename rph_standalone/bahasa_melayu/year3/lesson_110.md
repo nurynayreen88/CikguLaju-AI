@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 110
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 110
 
 **ID:** BM3-P110  
 **Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U15: Indahnya Seni dan Budaya Kita  
@@ -32,4 +32,4 @@
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
 **Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
-**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
+**Kawalan:** Jika topik sama dengan PdP lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

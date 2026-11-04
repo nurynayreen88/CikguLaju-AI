@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 044
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 044
 
 **Tema/Unit:** Perpaduan; U6: Sepakat Membawa Berkat  
 **Tajuk:** Kamar Ilmu  
@@ -23,7 +23,7 @@
 **Tindakan murid:** Murid melabel rak dan menulis empat ayat menggunakan kata adjektif warna.
 
 ## Pengukuhan / Pentaksiran PBD (15 minit)
-**Tindakan guru:** Nilai empat ayat dan sistem label; bukan pendua automatik Lesson 041.
+**Tindakan guru:** Nilai empat ayat dan sistem label; bukan pendua automatik PdP 041.
 **Tindakan murid:** Murid menunjukkan bukti kerja atau memberi respons, membuat pembetulan berdasarkan maklum balas individu.
 
 ## Penutup (5 minit)
@@ -31,4 +31,4 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
 
 **Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:** Ini ialah cadangan sesi pengukuhan berlainan produk, bukan keputusan rasmi untuk mengekalkan dua Lesson dengan tajuk sama.  Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Nota audit:** Ini ialah cadangan sesi pengukuhan berlainan produk, bukan keputusan rasmi untuk mengekalkan dua PdP dengan tajuk sama.  Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.

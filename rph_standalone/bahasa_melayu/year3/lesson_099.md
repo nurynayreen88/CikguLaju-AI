@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 099
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 099
 
 **ID:** BM3-P099  
 **Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U13: Kekalkan Warisan Kita  
@@ -21,7 +21,7 @@
 
 ## Aktiviti 2 (20 minit)
 **Guru:** Membimbing tugasan berpasangan dan menyediakan pemulihan bagi murid yang memerlukan.
-**Murid:** Membina empat ayat sendiri tentang persiapan acara kebudayaan, bukan mengulang tugasan pengecaman Lesson 098.
+**Murid:** Membina empat ayat sendiri tentang persiapan acara kebudayaan, bukan mengulang tugasan pengecaman PdP 098.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
 **Guru:** Menyemak empat ayat kata ganda penuh tepat serta mencatat kekuatan/kelemahan kerja murid.
@@ -32,4 +32,4 @@
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
 **Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
-**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
+**Kawalan:** Jika topik sama dengan PdP lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.

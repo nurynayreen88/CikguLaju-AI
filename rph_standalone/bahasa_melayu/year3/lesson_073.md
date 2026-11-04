@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 073
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 073
 
 **ID:** BM3-P073  
 **Tema/Unit:** Perpaduan; U10: Toleransi Kukuhkan Perpaduan  
@@ -10,7 +10,7 @@
 **Fokus:** soal jawab mendapatkan maklumat  
 **Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
 **Objektif:** Menyusun empat soalan dan empat jawapan tepat daripada hebahan.  
-**Bahan:** poster kursus penciptaan pantun; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**Bahan:** poster kursus penciptaan pantun; buku teks/aktiviti bagi PdP berkenaan; senarai semak PBD.
 
 ## Set induksi (5 minit)
 **Guru:** Mengemukakan poster kursus penciptaan pantun untuk mencetuskan perbincangan.

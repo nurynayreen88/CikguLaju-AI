@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 079
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 079
 
 **ID:** BM3-P079  
 **Tema/Unit:** Perpaduan; U10: Toleransi Kukuhkan Perpaduan  
@@ -6,11 +6,11 @@
 **SK:** 3.3 Menghasilkan penulisan.  
 **SP:** 3.3.1 (i) — Menghasilkan kerangka dan penulisan karangan naratif, dan bukan naratif secara berpandu.  
 **Rujukan RPT:** BT1 m/s 64-65  
-**Bukti sumber:** BA1 m/s 71 ialah bahan karangan yang sama dengan Lesson 075; PKJR belum ada bukti padanan  
+**Bukti sumber:** BA1 m/s 71 ialah bahan karangan yang sama dengan PdP 075; PKJR belum ada bukti padanan  
 **Fokus:** HOLD — sesi susulan karangan dan PKJR belum disahkan  
 **Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
 **Objektif:** Membetulkan lima ayat karangan berpandu dengan memberi alasan.  
-**Bahan:** karangan murid daripada sesi 075; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**Bahan:** karangan murid daripada sesi 075; buku teks/aktiviti bagi PdP berkenaan; senarai semak PBD.
 
 ## Set induksi (5 minit)
 **Guru:** Mengemukakan karangan murid daripada sesi 075 untuk mencetuskan perbincangan.
@@ -48,8 +48,8 @@
 
 **Peruntukan masa:** Gunakan 10 minit dalam Aktiviti 2 asal, bukan menambah masa keseluruhan.
 
-**Status sumber:** HOLD — Pendua Aktiviti 14 dengan Lesson 075; bentuk sesi susulan perlu diputuskan.
+**Status sumber:** HOLD — Pendua Aktiviti 14 dengan PdP 075; bentuk sesi susulan perlu diputuskan.
 
 **Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
 
-**Pengesahan kes khas (4 November 2026):** BAM Aktiviti 14 m/s16 dijadikan sesi susulan khusus: murid menulis tiga ayat sendiri dan membentangkan cara meningkatkan kebolehlihatan, bukan mengulang isian Lesson 075.
+**Pengesahan kes khas (4 November 2026):** BAM Aktiviti 14 m/s16 dijadikan sesi susulan khusus: murid menulis tiga ayat sendiri dan membentangkan cara meningkatkan kebolehlihatan, bukan mengulang isian PdP 075.

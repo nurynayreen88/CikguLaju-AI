@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 057
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 057
 
 **ID:** BM3-P057  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
@@ -21,7 +21,7 @@
 
 ## Aktiviti 2 (20 minit)
 **Guru:** Menjelaskan tugasan, memberi bimbingan mengikut tahap dan menyemak hasil.
-**Murid:** Membina lima ayat tanya baharu selepas melengkapkan latihan BA1, berbeza daripada pengecaman Lesson 052.
+**Murid:** Membina lima ayat tanya baharu selepas melengkapkan latihan BA1, berbeza daripada pengecaman PdP 052.
 
 ## Pengukuhan / PBD (15 minit)
 **Guru:** Menyemak lima ayat tanya gramatis, tanda soal betul; merekod bukti respons atau hasil bertulis.

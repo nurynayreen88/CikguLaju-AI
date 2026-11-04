@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 092
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 092
 
 **Tema/Unit:** Kebudayaan Kita; U12: Amalan Baik  
 **Tajuk:** Asal Usul Nama Baling, Kedah  
@@ -16,7 +16,7 @@
 
 ## Aktiviti 1 — Fahami bahan (15 minit)
 **Tindakan guru:** Guru mengimbas cerita petani Siam yang tinggal di kaki gunung di negeri Kedah.
-**Tindakan murid:** Murid membaca semula bahagian berlainan daripada Lesson 087.
+**Tindakan murid:** Murid membaca semula bahagian berlainan daripada PdP 087.
 
 ## Aktiviti 2 — Gunakan kemahiran (20 minit)
 **Tindakan guru:** Guru meminta perbandingan tiga tindakan petani dengan nilai seperti kerajinan dan bekerjasama.

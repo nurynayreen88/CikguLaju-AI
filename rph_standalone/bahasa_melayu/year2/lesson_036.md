@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 036
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 036
 
 **Tema/Unit:** Perpaduan; U5: Hidup Berjiran  
 **Tajuk:** Seia Sekata  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid menyatakan satu pengalaman atau pengetahuan sedia ada yang relevan.
 
 ## Aktiviti 1 — Rangsangan Buku Teks (15 minit)
-**Tindakan guru:** Guru mengimbas pembayang dan maksud yang dipelajari dalam Lesson 032 serta memperdengarkan dua rangkap pantun.
+**Tindakan guru:** Guru mengimbas pembayang dan maksud yang dipelajari dalam PdP 032 serta memperdengarkan dua rangkap pantun.
 **Tindakan murid:** Murid mengenal pasti nilai bertimbang rasa dan saling memahami.
 
 ## Aktiviti 2 — Aplikasi kepada situasi (20 minit)
@@ -31,4 +31,4 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
 
 **Status QA:** HOLD — penentuan sesi susulan/PBD dalam RPT belum disahkan. 
-**Catatan:** Sesi pengukuhan ini cadangan CikguLaju untuk membezakan pengulangan daripada RPT 2026; keputusan mengekalkannya sebagai Lesson berasingan belum selesai. Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Catatan:** Sesi pengukuhan ini cadangan CikguLaju untuk membezakan pengulangan daripada RPT 2026; keputusan mengekalkannya sebagai PdP berasingan belum selesai. Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.

@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 022
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 022
 
 **Tema/Unit:** Kekeluargaan; U3: Keluarga Berhemah  
 **Tajuk:** Dr. Norini, Nenek Hana  
@@ -31,4 +31,4 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
 
 **Status QA:** HOLD — penentuan sesi susulan/PBD dalam RPT belum disahkan. 
-**Catatan:** Sesi pengukuhan ini cadangan CikguLaju untuk membezakan pengulangan daripada RPT 2026; keputusan mengekalkannya sebagai Lesson berasingan belum selesai. Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Catatan:** Sesi pengukuhan ini cadangan CikguLaju untuk membezakan pengulangan daripada RPT 2026; keputusan mengekalkannya sebagai PdP berasingan belum selesai. Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.

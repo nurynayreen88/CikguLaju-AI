@@ -1,6 +1,6 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 120
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 120
 
-**ID Lesson:** BM3-P120  
+**ID PdP:** BM3-P120  
 **Tema / Unit:** Kelestarian Alam; U17: Sumbangan Kita  
 **Tajuk dalam RPT/BT calon:** Jagalah Bumi Kita + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
@@ -34,7 +34,7 @@
 **Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Perlu semak BT asal, PKJR, tajuk atau sesi susulan sebelum kelulusan; Modul PKJR asal belum dipadankan  
-**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor PdP; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
 

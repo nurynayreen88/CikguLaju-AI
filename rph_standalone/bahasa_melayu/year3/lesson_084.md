@@ -1,6 +1,6 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 084
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 084
 
-**ID Lesson:** BM3-P084  
+**ID PdP:** BM3-P084  
 **Tema / Unit:** Perpaduan; U11: Hormat-menghormati Budaya Kita  
 **Tajuk dalam RPT/BT calon:** Kami Bersahabat + PKJR  
 **Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
@@ -34,7 +34,7 @@
 **Status QA:** DRAF — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Modul PKJR asal belum dipadankan  
-**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor PdP; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
 
