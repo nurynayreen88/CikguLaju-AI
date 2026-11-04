@@ -59,7 +59,7 @@
     "pedagogical_approval": false,
     "printed_workbook_activity_checked": true
   },
-  "next_action": "Workbook p15 Activity3 aligned to original TB/SB/WB; independently confirm actual spoken contents of SB p20 CD1 Track29 versus SOW printed CD2 Track29, confirm the exact Telegram MP3 route and run controlled teacher Word/native PDF delivery. Retain audio-conflict DRAF until those gates and teacher approval pass.",
+  "next_action": "Telegram code route mismatch identified; send of both unverified tracks now intentionally blocked for Year4 Lesson30 after guard deployment. To release audio: independently verify spoken content against TB p39/SB p20, update exact approved route, then controlled teacher Telegram test for Word/PDF/media and explicit approval.",
   "workbook": {
     "title": "Get Smart Plus 4 Workbook",
     "drive_file_id": "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX",
@@ -89,5 +89,16 @@
     "notes": "This written Workbook activity is separate from the SB p.20 Activity 2 listening task; it does not resolve which recording matches SB p.20. WB p.15 contains a separate Listen and number task and must not be conflated with WB p.14.",
     "classification": "SOURCE_VALID_BUT_PREVIOUS_UNIT_NOT_LESSON30",
     "correction": "Printed WB p.14 Activity 1 belongs to Unit 2 Our world. A housework theme overlap alone does not establish the Lesson30 Lets play Workbook selection. Teacher's Book p.39 points to WB p.15."
+  },
+  "telegram_code_route_check": {
+    "checked_date": "2026-11-04",
+    "source": "app.py, legacy Year4 media layers v25.257 / v25.258 / v25.259",
+    "finding": "All three legacy maps contain Lesson30 -> CD2 Track29 -> Drive file ID 1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob, conflicting with printed TB p39 CD1 Track29.",
+    "consequence": "An unguarded Year4 L30 media picker or legacy send could deliver the conflicting CD2 file even though standalone RPH cites CD1.",
+    "protection": "web/english_y4_l030_audio_guard.py installed last by tools/run_telegram_with_curriculum_api.py; remove Lesson30 from three legacy maps, hide only media in the picker, and reject stale media requests through both sender variants.",
+    "scope": "Year4 Lesson30 media only; all other lessons, RPH Word/PDF, user DB, payments and credits unchanged",
+    "mode": "BLOCK_AUDIO_UNTIL_VERIFIED",
+    "actual_telegram_send_tested": false,
+    "correct_spoken_content_verified": false
   }
 }
