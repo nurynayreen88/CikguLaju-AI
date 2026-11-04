@@ -105,9 +105,16 @@ def install(runtime):
             raise RuntimeError("Payment request is missing or already reviewed")
         if not admin_cid and status == "approved":
             raise ValueError("Payment approval requires admin ID")
-        # Authorization also checked in CikguLaju's existing admin callbacks.
-        if admin_cid and not runtime._is_admin(admin_cid):
-            raise PermissionError("Payment review requires admin")
+        # Admin reviews are restricted; the one existing user-side
+        # cancellation path may reject only its own still-pending request.
+        is_admin = bool(admin_cid and runtime._is_admin(admin_cid))
+        self_cancel = (
+            status == "rejected"
+            and str(notes or "") == "Cancelled by user before proof"
+            and str(admin_cid or "") == str(current.get("chat_id"))
+        )
+        if not (is_admin or self_cancel):
+            raise PermissionError("Payment review requires admin or owner cancellation")
         from datetime import datetime, timezone
         result = sb(
             "PATCH", f"bot_payment_requests?id=eq.{pid}&status=eq.pending",
