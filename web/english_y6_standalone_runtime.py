@@ -117,8 +117,22 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
                 or overlay.get("complementary_ls") != comp[1]
                 or len(overlay.get("activities") or []) != 3):
             return rows
+    # Native English Word/PDF tables read four separate standard fields.
+    # Previous bridge only populated Malay-style combined fields, leaving
+    # the actual teacher-facing Main/Complementary cells as legacy values.
+    if main and comp:
+        for key, expected in (("comp_sp_code", comp[1]),
+                              ("bi_comp_sp_code", comp[1]),
+                              ("bi_main_sp_code", main[1])):
+            selected = str(state.get(key) or "").strip()
+            if selected and selected != expected:
+                return rows
     result = dict(rows)
     if main and comp:
+        result["MAIN CONTENT STANDARD"] = main[0]
+        result["MAIN LEARNING STANDARD"] = main[1]
+        result["COMPLEMENTARY CONTENT STANDARD"] = comp[0]
+        result["COMPLEMENTARY LEARNING STANDARD"] = comp[1]
         result["STANDARD KANDUNGAN"] = "Main: %s; Complementary: %s" % (main[0], comp[0])
         result["STANDARD PEMBELAJARAN"] = "Main: %s; Complementary: %s" % (main[1], comp[1])
     else:
