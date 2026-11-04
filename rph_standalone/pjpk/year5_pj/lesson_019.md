@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.8, 2.8, 5.3  
 **SP:** 1.8.3, 1.8.4, 2.8.3, 5.3.1  
-**Buku teks:** calon m/s 29 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 29, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.8.3 (memukul bola ke pelbagai arah dan jarak serta bergerak ke kawasan yang ditetapkan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.8.3: Menjelaskan perkaitan antara kedudukan permukaan alatan pemukul dengan arah pergerakan bola semasa memukul atau menahan dengan alatan pemukul.
