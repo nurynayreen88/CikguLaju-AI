@@ -7,32 +7,32 @@
 **Language focus:** Comparative forms, e.g. as … as  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.60–61; TB pp.98–99  
-**Learning objective:** Read an age-appropriate A2 fiction/nonfiction text on a journey around town independently and share two details and one reason for reading enjoyment.  
-**PBD evidence:** Individual reading log: two accurate details and one personal response; observe independent reading.
+**Learning objective:** Read the PB pp.60–61 story independently, identify its theme and give two reasons for enjoyment or preference.  
+**PBD evidence:** An independent reading response (Reading 3.3.1) and supported main-idea explanation (Reading 3.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Follow TB p.98 Categories and elicit film genres.  
+**Pupils:** Name two film categories and state a favourite.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce directions, routes and transport and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Comparative forms, e.g. as … as.  
-**Pupils:** Predict the text from simple route maps and transport cards; highlight two useful clues or words.
+**Teacher:** Use PB pp.60–61 Activity 1 to predict the story type.  
+**Pupils:** Use a picture clue to suggest its genre.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Provide the A2 text referenced in the RPT or an approved equivalent; guide independent reading time without supplying answers.  
-**Pupils:** Read independently, note two significant details and prepare one sentence explaining interest or enjoyment.
+**Teacher:** Allow silent individual reading for TB p.98 Activity 2.  
+**Pupils:** Read at own pace and state one reason they enjoyed or disliked the story.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a journey around town. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Guide TB p.99 Activities 3–4 for unfamiliar words and theme.  
+**Pupils:** Explain two words from context and discuss the benefit of outdoor play.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check the theme, text evidence and two personal responses.  
+**Pupils:** Show one supporting detail and revise one inference.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.99 Cooler Better in real life!  
+**Pupils:** Describe an enjoyable real-life outdoor activity.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

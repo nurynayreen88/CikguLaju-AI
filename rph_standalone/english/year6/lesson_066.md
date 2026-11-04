@@ -7,32 +7,32 @@
 **Language focus:** Cohesive devices (because, so, but)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB pp.60–62; TB pp.100  
-**Learning objective:** Connect at least 8 sentences into two coherent paragraphs related to a journey around town.  
-**PBD evidence:** Two logically organised paragraphs, 8 sentences and at least two appropriate linking words.
+**Learning objective:** Write four coherent sentences about PB pp.60–62 using because, so and but with correct punctuation.  
+**PBD evidence:** Four meaningful linked sentences (Writing 4.2.5) and correctly punctuated responses (Writing 4.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show simple route maps and transport cards and ask: “How do we get there safely?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall the Lesson 65 story's characters and central event.  
+**Pupils:** State one character and one key event.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How do we get there safely?”. Highlight useful language: Cohesive devices (because, so, but).  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to a journey around town.
+**Teacher:** Follow TB p.100 Activities 1–2 to check why events occurred.  
+**Pupils:** Read the story again and explain one cause and effect.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate paragraph breaks, topic sentences and basic coordinating connectors using the cited task.  
-**Pupils:** Plan and write two linked paragraphs containing at least 8 sentences in total.
+**Teacher:** Model because, so and but using the SOW sentence-half worksheet.  
+**Pupils:** Match halves and choose an appropriate linker.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Guide PB p.62 Activity 3 and check capitals and full stops.  
+**Pupils:** Write four complete linked sentences and compare with a partner.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check meaning, coherence and punctuation of the four sentences.  
+**Pupils:** Correct one conjunction or punctuation error.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How do we get there safely?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review common errors anonymously on the board.  
+**Pupils:** Explain one corrected sentence.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
