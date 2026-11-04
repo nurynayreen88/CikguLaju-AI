@@ -1,0 +1,45 @@
+name: BM Tahun 2-6 825 source RPH pack DRAF
+on:
+  push:
+    branches: [feat/bm-standalone-rph-tahun4-6-20261104]
+    paths: ['.github/workflows/bm-rph-all-825-pack.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify full source coverage
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,re
+          root=Path("rph_standalone/bahasa_melayu")
+          for y,n in {2:164,3:165,4:165,5:166,6:165}.items():
+            files=sorted((root/f"year{y}").glob("lesson_???.md"))
+            assert len(files)==n,(y,len(files))
+            for i,p in enumerate(files,1):
+              assert p.name==f"lesson_{i:03d}.md"
+              s=p.read_text(encoding="utf-8")
+              assert f"PdP {i:03d}" in s and not re.search(r"\bLesson\b",s)
+              assert "HOLD" in s or "DRAF" in s
+            print(y,n)
+          gate=json.loads(Path("rpt_2027/bahasa_melayu/READY_GATE.json").read_text())
+          assert gate["verified_strict_ready"]==False
+          PY
+      - name: Package all 825 source RPH without publishing
+        uses: actions/upload-artifact@v4
+        with:
+          name: CikguLaju-BM-Tahun2-6-825-RPH-SUMBER-DRAF
+          path: |
+            rph_standalone/bahasa_melayu/year2/
+            rph_standalone/bahasa_melayu/year3/
+            rph_standalone/bahasa_melayu/year4/
+            rph_standalone/bahasa_melayu/year5/
+            rph_standalone/bahasa_melayu/year6/
+            rpt_2027/bahasa_melayu/READY_GATE.json
+            rpt_2027/bahasa_melayu/AUDIT_RPH_BM_T4_T6_BATCH_20261104.json
+          if-no-files-found: error
