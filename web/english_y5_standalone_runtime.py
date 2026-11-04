@@ -6,6 +6,7 @@ equivalent to curriculum/printed-page/audio/A4 or teacher approval.
 """
 import json
 import os
+from hashlib import sha256
 from pathlib import Path
 import re
 
@@ -181,6 +182,46 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
     return out
 
 
+_RELEASE_MANIFEST_VERSION = "english-year5-per-lesson-release-v1"
+_RELEASE_QA_GATES = (
+    "teacher_approved",
+    "official_sow_pair_verified",
+    "printed_book_activity_verified",
+    "audio_content_verified_or_not_applicable",
+    "word_a4_verified",
+    "pdf_a4_verified",
+    "telegram_delivery_verified",
+)
+
+
+def approved_for_telegram(number, *, root=LESSON_ROOT):
+    """Only explicitly approved, byte-identical Year 5 lessons may be released.
+
+    The stage-only adapt_rows() remains callable by offline audits. This extra
+    production gate is enforced by the installed live Word/PDF adapter.
+    """
+    if type(number) is not int or not 1 <= number <= 160 or number in CHOICE_LESSONS:
+        return False
+    try:
+        obj = json.loads((Path(root) / "release_approvals_2027.json").read_text(
+            encoding="utf-8"))
+        if obj.get("version") != _RELEASE_MANIFEST_VERSION or obj.get("year") != 5:
+            return False
+        approved = obj.get("approved_lessons")
+        if not isinstance(approved, dict):
+            return False
+        entry = approved.get(str(number))
+        if not isinstance(entry, dict):
+            return False
+        if any(entry.get(key) is not True for key in _RELEASE_QA_GATES):
+            return False
+        source = (Path(root) / ("lesson_%03d.md" % number)).read_bytes()
+        actual = sha256(source).hexdigest()
+        return entry.get("source_sha256") == actual
+    except (OSError, ValueError, TypeError):
+        return False
+
+
 def install(runtime, *, enabled=None):
     """Opt-in wrapping of existing Word/PDF row source only; all quotas stay upstream."""
     if enabled is None:
@@ -196,6 +237,9 @@ def install(runtime, *, enabled=None):
     def year5_rows(state, *args, **kwargs):
         rows = original(state, *args, **kwargs)
         try:
+            number = _target(state)
+            if number is None or not approved_for_telegram(number):
+                return rows
             return adapt_rows(state, rows)
         except Exception as exc:
             print("English Year 5 RPH gate fallback:", repr(exc), flush=True)

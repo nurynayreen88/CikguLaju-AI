@@ -1,0 +1,39 @@
+name: English Years 2-6 native RPH Word PDF source integrity
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'english_y2_standalone_render.py'
+      - 'english_y3_standalone_render.py'
+      - 'web/english_y2_y3_standard_runtime.py'
+      - 'web/english_y6_standalone_runtime.py'
+      - 'web/english_y5_standalone_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'rph_standalone/english/year[2-6]/**'
+      - 'audits/english_primary_2_6_official_sow_index_20261103.json'
+      - 'tests/test_english_y2_y6_native_rph_fields.py'
+      - '.github/workflows/english-y2-y6-native-rph-fields.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/english_y2_y3_standard_runtime.py'
+      - 'web/english_y6_standalone_runtime.py'
+      - 'tests/test_english_y2_y6_native_rph_fields.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check all 800 Year 2–6 Lesson source-to-document contracts
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
+          python -m unittest discover -s tests -p 'test_english_y2_y3_rph_render_integrity.py' -v
+          python -m unittest discover -s tests -p 'test_english_y4_word_pdf_rows.py' -v
+          python -m unittest discover -s tests -p 'test_english_y5_rph_runtime.py' -v
+          python -m unittest discover -s tests -p 'test_english_y6_rph_runtime.py' -v
