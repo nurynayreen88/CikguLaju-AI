@@ -4,11 +4,11 @@
 **Minggu RPT 2027:** M17 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
 **Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U11: Indah Seni Sepanjang Zaman  
 **Tajuk aktiviti:** Pusaka Bangsa  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.1 (ii) — Memahami dan menggunakan kata berimbuhan mengikut konteks  
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
+**Standard Pembelajaran (SP):** 5.1.4 (iv) — Memahami dan menggunakan kata tugas: kata bilangan mengikut konteks  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 72  
-**Fokus:** tatabahasa — Pusaka Bangsa  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Pusaka Bangsa'.  
+**Fokus:** tatabahasa — kata bilangan  
+**Objektif PdP:** Murid dapat membina empat ayat menggunakan kata bilangan yang sesuai berdasarkan teks Pusaka Bangsa tentang seni tari dabus.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Pusaka Bangsa' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U11: Indah Seni Sepanjang Zaman.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Pusaka Bangsa'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata berimbuhan mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Pusaka Bangsa'.
+## Aktiviti 1 — Penerokaan kandungan Buku Teks (15 minit)
+**Guru:** Menunjukkan petikan seni tari dabus pada BT m/s 72 dan mengingatkan fungsi kata bilangan dalam menerangkan bilangan atau kumpulan.
+**Murid:** Mengenal pasti kata bilangan daripada bahan dan membezakan penggunaan dalam konteks.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Pusaka Bangsa' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Memberikan contoh ayat tentang persembahan dan warisan budaya untuk dilengkapi kata bilangan.
+**Murid:** Membina empat ayat berkaitan seni tari dabus dengan kata bilangan yang sesuai.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.1 (ii) — Memahami dan menggunakan kata berimbuhan mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Merekod empat penggunaan kata bilangan yang tepat dalam ayat.
+**Murid:** Membetulkan kata bilangan yang kurang tepat.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Pusaka Bangsa' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
