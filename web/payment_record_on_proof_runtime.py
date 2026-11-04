@@ -36,7 +36,9 @@ def _valid_receipt_message(rt, cid):
             if (mime in ("application/pdf", "image/jpeg", "image/png", "image/webp")
                     or name.endswith((".pdf", ".jpg", ".jpeg", ".png", ".webp"))):
                 return msg
-    except (AttributeError, KeyError, TypeError, ValueError):
+    except (AttributeError, KeyError, TypeError, ValueError, RuntimeError):
+        # Detached Telegram callback threads have no Flask request context.
+        # Only the actual message-webhook path may create a payment row.
         pass
     return None
 
