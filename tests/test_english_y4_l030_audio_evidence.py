@@ -36,14 +36,19 @@ class Lesson30AudioEvidence(unittest.TestCase):
             self.assertRegex(a["sha256"],r"^[a-f0-9]{64}$")
             self.assertTrue(a["ffmpeg_decode_pass"])
             self.assertFalse(a["actual_spoken_content_verified"])
-        # Visual check of original Workbook p.14 (PDF page 13), not a CD check.
+        # Cross-source visual check: Lesson30 is Let's play / WB p15
+        # not the preceding Our world WB p14, although both mention chores.
         wb = d["workbook"]
         self.assertEqual(wb["drive_file_id"], "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX")
-        self.assertEqual((wb["printed_page"], wb["pdf_page"], wb["activity"]), (14, 13, 1))
+        self.assertEqual((wb["printed_page"], wb["pdf_page"], wb["activity"]), (15, 14, 3))
+        self.assertIn("Let's play", wb["unit_section"])
         self.assertTrue(wb["visual_source_check"])
+        self.assertTrue(wb["teacher_book_workbook_page_checked"])
         self.assertTrue(d["release_gates"]["printed_workbook_activity_checked"])
-        self.assertIn("have to", wb["observed_content"])
-        self.assertNotIn("audio verified", wb["rph_match"].lower())
+        self.assertIn("don't have to", wb["prompt"])
+        self.assertIn("without audio", wb["observed_content"])
+        self.assertEqual(d["prior_workbook_observation"]["printed_page"], 14)
+        self.assertIn("PREVIOUS_UNIT", d["prior_workbook_observation"]["classification"])
         for k in ("correct_content_listening_verified",
                   "telegram_audio_mapping_verified",
                   "teacher_word_download_verified",
@@ -56,6 +61,9 @@ class Lesson30AudioEvidence(unittest.TestCase):
         self.assertIn("CD1 Track 29",src)
         self.assertIn("CD2 Track 29",src)
         self.assertIn("NOT READY FOR RELEASE",src)
+        self.assertIn("Workbook p.15, Activity 3",src)
+        self.assertNotIn("Workbook p.14, Activity 1",src)
+        self.assertIn("CD1 Track 30",src)  # workbook activity 1 is not assigned
         old={"TARIKH":"04/11/2026",
              "MAIN LEARNING STANDARD":"Legacy",
              "COMPLEMENTARY LEARNING STANDARD":"Legacy"}
