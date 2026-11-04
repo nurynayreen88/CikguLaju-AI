@@ -30,6 +30,31 @@ def check_year(year: int) -> dict:
         return {"year": year, "lessons_checked": 0, "materials_checked": 0}
     src = json.loads(crosswalk.read_text(encoding="utf-8"))
     units = src.get("units", [])
+    toc_path = rdir / f"year{year}_book_toc_VERIFIED.json"
+    if not toc_path.exists():
+        fail(f"Year {year}: verified table of contents map missing")
+        book_map = []
+    else:
+        toc = json.loads(toc_path.read_text(encoding="utf-8"))
+        book_map = toc.get("units", [])
+        if toc.get("status") != "VERIFIED_TOC_START_ONLY" or len(book_map) != 14:
+            fail(f"Year {year}: TOC map incomplete or incorrectly labelled")
+        if toc.get("source_drive_file_id") != src.get("source_book_id"):
+            fail(f"Year {year}: TOC book ID does not match DSKP crosswalk")
+        starts = [int(u["printed_start_page"]) for u in book_map]
+        pdf_starts = [int(u["pdf_start_page"]) for u in book_map]
+        offset = int(toc.get("pdf_page_offset", -1))
+        if starts != sorted(set(starts)):
+            fail(f"Year {year}: duplicate/non-monotonic book pages")
+        if any(p - b != offset for p, b in zip(pdf_starts, starts)):
+            fail(f"Year {year}: PDF page offset mismatch")
+        if any(p < 1 or p > int(toc["book_pdf_page_count"]) for p in pdf_starts):
+            fail(f"Year {year}: verified page outside PDF")
+    for i, u in enumerate(units):
+        if i < len(book_map):
+            b = book_map[i]
+            if u.get("textbook_printed_start_page") != b["printed_start_page"] or u.get("textbook_pdf_start_page") != b["pdf_start_page"]:
+                fail(f"Year {year} unit {i + 1}: book mapping differs from DSKP crosswalk")
     if len(units) != 14:
         fail(f"Year {year}: {len(units)} units, expected 14")
     if src.get("status") != "DRAF_SEMAK":
@@ -86,6 +111,14 @@ def check_year(year: int) -> dict:
             fail(f"Year {year}: date filled without final calendar verification")
         if not row.get("Evidens PBD") or len(row["Evidens PBD"]) < 40:
             fail(f"Year {year}: incomplete PBD evidence in RPT {lnum}")
+        if len(book_map) == 14:
+            b = book_map[unit - 1]
+            if row.get("Halaman Cetak Buku Teks (mula unit)") != str(b["printed_start_page"]):
+                fail(f"Year {year}: RPT book-page mismatch in lesson {lnum}")
+            if row.get("Halaman PDF (mula unit)") != str(b["pdf_start_page"]):
+                fail(f"Year {year}: RPT PDF-page mismatch in lesson {lnum}")
+            if row.get("Status Semakan Halaman") != "VERIFIED_TOC_START_ONLY":
+                fail(f"Year {year}: incorrect page-verification status in lesson {lnum}")
         if not (ROOT / row["RPH"]).exists() or not (ROOT / row["BBM"]).exists():
             fail(f"Year {year}: RPT link points to missing file {lnum}")
     existing_lessons = list(ydir.glob("lesson_*.md"))
