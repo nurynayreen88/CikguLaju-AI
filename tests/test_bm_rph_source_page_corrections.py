@@ -17,6 +17,23 @@ CORRECTIONS={
  (4,10):{"sp":"3.2.1","bt":10,"title":"Bina Ayat: Kemudahan di Lapangan Terbang"},
  (4,11):{"sp":"4.2.1","bt":11,"title":"Istimewanya Kita"},
  (4,14):{"sp":"2.3.1","bt":14},
+ (4,42):{"sp":"5.1.3","bt":49},
+ (4,43):{"sp":"5.1.3","bt":50},
+ (4,58):{"sp":"1.1.1","bt":66},
+ (4,67):{"sp":"5.1.4","bt":71},
+ (4,68):{"sp":"5.1.4","bt":72},
+ (4,76):{"sp":"3.3.2","bt":86},
+ (4,81):{"sp":"5.2.2","bt":"92–93"},
+ (4,92):{"sp":"5.2.2","bt":"105–106"},
+ (4,108):{"sp":"1.1.1","bt":121},
+ (4,109):{"sp":"2.3.2","bt":122},
+ (4,113):{"sp":"2.3.1","bt":127},
+ (4,138):{"sp":"1.2.2","bt":159},
+ (4,139):{"sp":"2.3.2","bt":161},
+ (4,140):{"sp":"3.3.1","bt":162},
+ (4,143):{"sp":"1.2.3","bt":165},
+ (4,159):{"sp":"5.3.4","bt":"184–185"},
+ (4,160):{"sp":"5.1.2","bt":186},
  (5,21):{"sp":"2.1.2","bt":26},
  (5,35):{"sp":"4.3.3","bt":42},
  (5,36):{"sp":"4.3.1","bt":28},
@@ -31,7 +48,7 @@ for year in (4,5):
         parts=[a.strip() for a in row.strip("|").split("|")]
         assert len(parts)==7,(y,n,len(parts))
         assert parts[4].startswith(req["sp"]+" "), (y,n,"wrong RPT SP",parts[4])
-        assert re.search(fr"\bBT m/s {req['bt']}\b",parts[5]),(y,n,"wrong RPT BT",parts[5])
+        assert f"BT m/s {req['bt']}" in parts[5],(y,n,"wrong RPT BT",parts[5])
         if "title" in req:assert req["title"]==parts[2],(y,n,"RPT title mismatch")
         key=f'<td class="id">{code}<div class="sub">BM{y}-P{n:03d}</div></td>'
         a=html.index(key);b=html.index("</tr>",a)
