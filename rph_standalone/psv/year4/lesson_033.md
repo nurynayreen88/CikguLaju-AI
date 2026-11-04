@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh ukiran dan menghas
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh ukiran bertema Motif Awan Larat dan membandingkan jalinan, bentuk, kesatuan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik ukiran bunga timbul pada bahan lembut. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk motif awan larat timbul.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik ukiran bunga timbul pada bahan lembut. Murid mencuba dua sampel kecil menggunakan doh lembut, membandingkan kesan dan memilih teknik yang sesuai untuk motif awan larat timbul.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh diorama dan mengha
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh diorama bertema Kebun Sekolah dan membandingkan bentuk, ruang, penegasan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk diorama kebun berlapis.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan. Murid mencuba dua sampel kecil menggunakan kotak serta bahan diorama, membandingkan kesan dan memilih teknik yang sesuai untuk diorama kebun berlapis.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

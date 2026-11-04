@@ -20,7 +20,7 @@ Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh alat domestik dan 
 
 **Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh alat domestik bertema Bekas Pensel Kertas dan membandingkan bentuk, jalinan, kontra. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik papier mache. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk bekas pensel papier mache.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik papier mache. Murid mencuba dua sampel kecil menggunakan kertas koyak serta acuan plastik, membandingkan kesan dan memilih teknik yang sesuai untuk bekas pensel papier mache.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
