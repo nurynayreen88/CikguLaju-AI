@@ -8,29 +8,31 @@
 **Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 2  
 **Fokus:** lisan — Salam Perkenalan  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Salam Perkenalan' mengikut kemahiran 1.1.1.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat mendengar ujaran kedua tentang perkenalan jiran dan menyebut semula tiga maklumat secara tepat, sebagai latihan susulan yang berbeza daripada PdP 001.  
+**Bahan:** Buku Teks BM Tahun 4 SK halaman 2 (dialog perkenalan jiran), kad urutan ujaran dan senarai semak respons.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Salam Perkenalan' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U1: Jiran Tetangga.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Meminta murid mengimbas semula Encik Gobi, Encik Lim dan Encik Husin daripada BT halaman 2; menyatakan fokus sesi ini ialah mendengar tanpa melihat teks pada bacaan kedua.  
+**Murid:** Mengingat kembali konteks jiran baharu dan menyediakan kad catatan ringkas.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Salam Perkenalan' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Salam Perkenalan'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Rujukan teks asal (15 minit)
+**Guru:** Menyampaikan semula tiga ujaran daripada dialog asal secara lisan tanpa menunjukkan teks; meminta murid mengecam perubahan penutur dan maklumat.  
+**Murid:** Mendengar dengan teliti; menyusun tiga kad maklumat mengikut ujaran yang didengar.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Salam Perkenalan'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Latihan kemahiran (20 minit)
+**Guru:** Memasangkan murid; seorang membaca ujaran daripada dialog asal dan pasangan menyebut maklumat yang didengar tanpa melihat buku.  
+**Murid:** Bergilir membaca dan menyebut semula maklumat jiran dengan sebutan serta maksud yang tepat; membanding hasil dengan BT.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Mentaksir tiga ujaran yang dipetik semula tanpa bantuan teks, membezakan bukti sesi pengukuhan daripada PdP 001.  
+**Murid:** Membaiki sebutan dan ketepatan ujaran setelah dibandingkan dengan dialog sumber.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Salam Perkenalan' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Merumuskan cara mendengar secara aktif dalam perbualan tidak formal.  
+**Murid:** Menyatakan satu strategi untuk mengingati maklumat semasa mendengar.
+
+**Bukti sumber khusus (BT4 SK):** PdP 003 merupakan pengulangan tajuk dan SP dalam RPT; latihan mendengar tanpa teks ialah cadangan CikguLaju untuk sesi susulan, bukan aktiviti rasmi tambahan pada halaman 2. Keputusan agihan sesi mesti disahkan sebelum READY.
 
 **Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan; DRAF / SEMAK PENGULANGAN
 
