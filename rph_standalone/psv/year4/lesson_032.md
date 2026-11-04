@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Diorama — Kebun Sekolah  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Pualaman — Helo, Helo Apa Khabar
+**Unit rujukan 2026:** Unit 8 — Helo, Helo Apa Khabar (BT ms 72–77)  
 **Fokus:** Kemaskan dan apresiasi  
 **SK:** 4.1  
 **SP:** 4.1.1; 4.1.2  
-**Teknik:** binaan  
-**Bahasa seni visual:** bentuk, ruang, penegasan  
+**Teknik:** pualaman  
+**Bahasa seni visual:** warna, jalinan, kontra, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak, doh, kertas, gam
+**BBM:** dulang cetek, warna, kertas serap
 
 ## Objektif pembelajaran
-Murid dapat memperkemas diorama kebun berlapis serta mengulasnya menggunakan dua istilah seni visual.
+Murid dapat memperkemas produk rekaan menggunakan corak pualaman serta mengulasnya menggunakan dua istilah seni visual.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kebun Sekolah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Air Berpusar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik binaan serta penggunaan bentuk, ruang, penegasan. Murid menyemak bahagian karya yang belum lengkap.
+**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik pualaman serta penggunaan warna, jalinan, kontra, pergerakan. Murid menyemak bahagian karya yang belum lengkap.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada diorama kebun berlapis, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada produk rekaan menggunakan corak pualaman, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

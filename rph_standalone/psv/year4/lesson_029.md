@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Diorama — Kebun Sekolah  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Pualaman — Helo, Helo Apa Khabar
+**Unit rujukan 2026:** Unit 8 — Helo, Helo Apa Khabar (BT ms 72–77)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.3; 2.1.8  
-**Teknik:** binaan  
-**Bahasa seni visual:** bentuk, ruang, penegasan  
+**SP:** 1.1.2; 2.1.5  
+**Teknik:** pualaman  
+**Bahasa seni visual:** warna, jalinan, kontra, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak, doh, kertas, gam
+**BBM:** dulang cetek, warna, kertas serap
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh diorama dan menghasilkan satu sampel binaan.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh pualaman dan menghasilkan satu sampel pualaman.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kebun Sekolah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Air Berpusar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh diorama bertema Kebun Sekolah dan membandingkan bentuk, ruang, penegasan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh pualaman bertema Corak Air Berpusar dan membandingkan warna, jalinan, kontra, pergerakan. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik binaan. Murid mencuba dua sampel kecil menggunakan kotak serta bahan diorama, membandingkan kesan dan memilih teknik yang sesuai untuk diorama kebun berlapis.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik pualaman. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk produk rekaan menggunakan corak pualaman.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

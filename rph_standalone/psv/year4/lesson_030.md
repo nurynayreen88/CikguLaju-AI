@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Diorama — Kebun Sekolah  
+**Bidang:** Membuat Corak dan Rekaan  
+**Jenis/Tajuk:** Pualaman — Helo, Helo Apa Khabar
+**Unit rujukan 2026:** Unit 8 — Helo, Helo Apa Khabar (BT ms 72–77)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.8; 3.1.4  
-**Teknik:** binaan  
-**Bahasa seni visual:** bentuk, ruang, penegasan  
+**SP:** 2.1.5; 3.1.2  
+**Teknik:** pualaman  
+**Bahasa seni visual:** warna, jalinan, kontra, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak, doh, kertas, gam
+**BBM:** dulang cetek, warna, kertas serap
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Kebun Sekolah dan memilih satu lakaran berdasarkan bentuk, ruang, penegasan.
+Murid dapat menyiapkan dua lakaran Corak Air Berpusar dan memilih satu lakaran berdasarkan warna, jalinan, kontra, pergerakan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Kebun Sekolah. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Corak Air Berpusar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Kebun Sekolah. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Corak Air Berpusar. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal diorama kebun berlapis, menguji binaan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal produk rekaan menggunakan corak pualaman, menguji pualaman pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

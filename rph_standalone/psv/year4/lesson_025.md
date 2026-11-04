@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Arca — Bandar Mini Asemblaj  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Cetakan — Indahnya Dasar Laut
+**Unit rujukan 2026:** Unit 7 — Indahnya Dasar Laut (BT ms 64–67)  
 **Fokus:** Perhatikan dan teroka  
 **SK:** 1.1; 2.1  
-**SP:** 1.1.3; 2.1.7  
-**Teknik:** asemblaj  
-**Bahasa seni visual:** bentuk, jalinan, imbangan  
+**SP:** 1.1.1; 2.1.4  
+**Teknik:** kolograf  
+**Bahasa seni visual:** garisan, rupa, harmoni, ritma  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak terpakai, gam, pita
+**BBM:** plat kadbod, benang, warna, penggelek
 
 ## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh arca dan menghasilkan satu sampel asemblaj.
+Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh cetakan dan menghasilkan satu sampel kolograf.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bandar Mini Asemblaj. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Jejak Bandar. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh arca bertema Bandar Mini Asemblaj dan membandingkan bentuk, jalinan, imbangan. Murid menandakan dua ciri yang dapat dilihat.
+**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh cetakan bertema Jejak Bandar dan membandingkan garisan, rupa, harmoni, ritma. Murid menandakan dua ciri yang dapat dilihat.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik asemblaj. Murid mencuba dua sampel kecil menggunakan kotak terpakai dan kadbod, membandingkan kesan dan memilih teknik yang sesuai untuk arca bandar mini.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik kolograf. Murid mencuba dua sampel pada kertas kecil, membandingkan kesan dan memilih teknik yang sesuai untuk cetakan kolograf hidupan dasar laut.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 

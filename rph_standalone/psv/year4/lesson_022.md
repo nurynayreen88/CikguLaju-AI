@@ -2,25 +2,26 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Membuat Corak dan Rekaan  
-**Jenis/Tajuk:** Stensilan — Motif Bunga Raya  
+**Bidang:** Menggambar  
+**Jenis/Tajuk:** Poster — Larian Riang Ria
+**Unit rujukan 2026:** Unit 6 — Larian Riang Ria (BT ms 56–59)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.6; 3.1.3  
-**Teknik:** stensilan  
-**Bahasa seni visual:** rupa, warna, kontra, harmoni  
+**SP:** 2.1.3; 3.1.1  
+**Teknik:** lukisan dan montaj  
+**Bahasa seni visual:** warna, penegasan, imbangan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** stensil siap potong, span, cat
+**BBM:** kertas poster, gambar, pensel, gam
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Motif Bunga Raya dan memilih satu lakaran berdasarkan rupa, warna, kontra, harmoni.
+Murid dapat menyiapkan dua lakaran Jimat Air dan memilih satu lakaran berdasarkan warna, penegasan, imbangan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Bunga Raya. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Jimat Air. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Motif Bunga Raya. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Jimat Air. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal corak bunga raya untuk pembalut, menguji stensilan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal poster aktiviti larian yang jelas, menguji lukisan dan montaj pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
