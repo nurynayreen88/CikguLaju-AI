@@ -7,6 +7,8 @@ on:
       - 'tools/audit_english_y4_legacy_audio_routes_20261104.py'
       - 'audits/english_y4_l030_audio_source_evidence_20261104.json'
       - 'tests/test_english_y4_l030_audio_evidence.py'
+      - 'tests/test_english_y4_l099_audio_source.py'
+      - 'rph_standalone/english/year4/lesson_099.md'
       - 'tests/test_english_y4_l030_audio_guard.py'
       - 'web/english_y4_l030_audio_guard.py'
       - 'tools/run_telegram_with_curriculum_api.py'
@@ -18,6 +20,8 @@ on:
       - 'tools/audit_english_y4_legacy_audio_routes_20261104.py'
       - 'audits/english_y4_l030_audio_source_evidence_20261104.json'
       - 'tests/test_english_y4_l030_audio_evidence.py'
+      - 'tests/test_english_y4_l099_audio_source.py'
+      - 'rph_standalone/english/year4/lesson_099.md'
       - 'tests/test_english_y4_l030_audio_guard.py'
       - 'web/english_y4_l030_audio_guard.py'
       - 'tools/run_telegram_with_curriculum_api.py'
@@ -33,6 +37,7 @@ jobs:
         with: {python-version: '3.12'}
       - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_evidence.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l099_audio_source.py' -v
   media-route-static-audit:
     runs-on: ubuntu-latest
     timeout-minutes: 8
