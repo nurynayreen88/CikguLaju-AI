@@ -1,0 +1,29 @@
+name: PJPK 2027 paid RPT Telegram isolated checks
+on:
+  push:
+    branches:
+      - release/pjpk-rpt-2027-draft-20261104
+    paths:
+      - 'rpt_2027/pjpk/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_pjpk_rpt_2027_telegram.py'
+  pull_request:
+    paths:
+      - 'rpt_2027/pjpk/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_pjpk_rpt_2027_telegram.py'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit paid-gated PJPK PDF downloads and existing English menu
+        run: python -m unittest discover -s tests -p 'test_pjpk_rpt_2027_telegram.py' -v
+      - name: Syntax guard (no DB mutation)
+        run: python -m py_compile rpt_2027/pjpk/telegram_downloads.py rpt_2027/english/telegram_downloads.py tools/run_telegram_with_curriculum_api.py

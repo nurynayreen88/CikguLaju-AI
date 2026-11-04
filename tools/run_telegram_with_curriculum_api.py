@@ -166,3 +166,13 @@ try:
 except Exception as _pjpk_preview_exc:
     PJPK_2027_PREVIEW_INSTALLED = False
     print("PJPK preview unavailable:", repr(_pjpk_preview_exc), flush=True)
+
+
+# PJPK RPT 2027 (PDF DRAF) — read-only paid-gated route.
+# Installed after English/BM/Math/PI so all other callbacks remain intact.
+try:
+    from rpt_2027.pjpk.telegram_downloads import install as install_pjpk_rpt_2027
+    PJPK_RPT_2027_TELEGRAM_ACTIVE = install_pjpk_rpt_2027(vars(telegram_runtime))
+except Exception as _pjpk_rpt_2027_exc:
+    PJPK_RPT_2027_TELEGRAM_ACTIVE = False
+    print("PJPK RPT 2027 download route unavailable:", repr(_pjpk_rpt_2027_exc), flush=True)
