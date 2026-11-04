@@ -1,0 +1,42 @@
+{
+  "status": "DRAF_NOT_PUBLISHED",
+  "date": "2026-11-04",
+  "records": [
+    {
+      "year": 4,
+      "expected": 165,
+      "files": 165,
+      "DRAF": 140,
+      "HOLD": 25,
+      "READY": 0,
+      "flags_for_human_review": 48,
+      "verified_BA": false,
+      "verified_BT_full": false,
+      "verified_DSKP_text": false
+    },
+    {
+      "year": 5,
+      "expected": 166,
+      "files": 166,
+      "DRAF": 142,
+      "HOLD": 24,
+      "READY": 0,
+      "flags_for_human_review": 52,
+      "verified_BA": false,
+      "verified_BT_full": false,
+      "verified_DSKP_text": false
+    },
+    {
+      "year": 6,
+      "expected": 165,
+      "files": 165,
+      "DRAF": 144,
+      "HOLD": 21,
+      "READY": 0,
+      "flags_for_human_review": 44,
+      "verified_BA": false,
+      "verified_BT_full": false,
+      "verified_DSKP_text": false
+    }
+  ]
+}

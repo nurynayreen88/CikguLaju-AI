@@ -1,0 +1,39 @@
+# RPH Standalone Bahasa Melayu Tahun 5 — PdP 112
+
+**ID:** BM5-P112  **Minggu RPT:** M26 (cadangan; tarikh ikut negeri dan jadual sebenar)  
+**Tema / Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi Bertambah Mutu  
+**Tajuk:** Pengayaan + PKJR  
+**Standard Kandungan (SK):** 2.1 Asas membaca dan memahami.  
+**Standard Pembelajaran (SP):** 2.1.2 — Membaca dan merujuk kamus serta media elektronik untuk mencari makna perkataan dan meneliti ejaan yang tepat mengikut susunan perkataan.  
+**Rujukan RPT 2027:** BT m/s 100 — *halaman calon daripada RPT 2026; sahkan dengan Buku Teks SK asal*.  
+**Buku Aktiviti:** Tiada halaman/latihan BA yang disahkan bagi PdP ini; gunakan latihan guru, jangan reka halaman.  
+**Masa:** 60 minit cadangan (guru boleh laras).  
+**Fokus:** Membaca, memahami dan menjelaskan maklumat dalam teks.  
+**Objektif:** Pada akhir PdP, murid mengenal pasti tiga maklumat daripada teks dan menjawab dua soalan pemahaman dengan bukti.  
+**Kriteria kejayaan:** Murid mencapai bilangan bukti yang dinyatakan dalam objektif dan boleh menjelaskan satu pembetulan.  
+**BBM:** Buku Teks pada halaman RPT (jika sepadan), kad kata/ayat atau gambar bertema Sains, Teknologi dan Inovasi; U18: Inovasi Bertambah Mutu, papan putih, buku latihan dan senarai semak PBD.
+
+## Set induksi — 5 minit
+**Guru:** Menunjukkan tajuk “Pengayaan + PKJR” dan bahan sumber, mengemukakan soalan rangsangan: “Apakah idea, tindakan atau maklumat yang sesuai dengan tajuk “Pengayaan”?”  
+**Murid:** Berkongsi pengetahuan sedia ada, menyatakan satu jangkaan dan menghubungkannya dengan unit.
+
+## Aktiviti 1 — Bacaan berfokus (15 minit)
+**Guru:** Membimbing bacaan berpandu teks atau ilustrasi bertajuk “Pengayaan” dalam unit Sains, Teknologi dan Inovasi; U18: Inovasi Bertambah Mutu; menunjukkan cara menandakan maklumat penting.  
+**Murid:** Membaca petikan asal, menggariskan tiga maklumat dan menulis makna kata baharu berdasarkan konteks.
+
+## Aktiviti 2 — Aplikasi susulan atau pentaksiran (20 minit)
+**Guru:** Menggunakan set soalan baharu ciptaan guru yang menilai SP sama tanpa memperkenalkan kod standard tambahan.  
+**Murid:** Menyelesaikan tugasan berbeza daripada sesi pertama tentang “Pengayaan” dan membaiki sekurang-kurangnya satu kesilapan.
+
+## Pengukuhan dan penilaian PBD — 15 minit
+**Guru:** Semak tiga maklumat dan dua jawapan yang disokong bukti daripada teks. Catat perkembangan berbanding respons sebelum ini; bukan SP baharu. Membimbing kumpulan sokongan dengan rangka atau kad petunjuk; murid mahir menambah satu contoh atau justifikasi.  
+**Murid:** Menyerahkan atau mempersembahkan hasil individu, menerima maklum balas dan membuat satu pembetulan.
+
+## Penutup — 5 minit
+**Guru:** Merumus kemahiran membaca, memahami dan menjelaskan maklumat dalam teks. dan meminta contoh aplikasi dalam kehidupan harian.  
+**Murid:** Menyatakan satu kemahiran yang dikuasai dan satu cara menggunakannya.
+
+**Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: ____________________.  
+**Status semakan:** HOLD — Perlu padanan modul BAM/BPG dan HP PKJR yang sah; aktiviti PKJR rasmi tidak direka.  
+**Jejak sumber:** RPT BM SK 2026 → RPT BM 2027 → calon RPH. Teks SK/SP dipetik daripada matriks RPT, belum dianggap pengesahan akademik penuh. **Tidak READY; tidak untuk penerbitan bot.**  
+**Nota RPT:** Membaca; Bacaan dan soalan pemahaman
