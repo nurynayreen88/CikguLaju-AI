@@ -453,5 +453,28 @@ class PSVSourceOrderTests(unittest.TestCase):
 
 
 
+    def test_candidate_ci_content_repair_year4_and_year6(self):
+        """Verify CI-driven teacher/pupil and PBD corrections, not just SP codes."""
+        yr4 = read_csv(PSV / "RPT_PSV_Tahun_4_2027_DRAF.csv")
+        for n in (20, 21, 41, 42):
+            with self.subTest(year=4, pdp=n):
+                row = yr4[n - 1]
+                rph = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
+                self.assertIn("Kriteria kejayaan:", rph)
+                m = re.search(
+                    r"(?m)^(Murid dapat [^.]+)\. Kriteria kejayaan: ([^.]+)\.$",
+                    rph,
+                )
+                self.assertIsNotNone(m)
+                self.assertEqual(row["Objektif"], m.group(1))
+                self.assertEqual(row["Evidens PBD"], m.group(2))
+                self.assertIn("**SK:** 5.1", rph)
+                self.assertNotIn("Bukti: pelan, kapsyen, foto dan senarai semak", rph)
+        wet = (ROOT / "rph_standalone/psv/year4/lesson_001.md").read_text(encoding="utf-8")
+        self.assertIn("catan basah atas basah:", wet.lower())
+        gallery = (ROOT / "rph_standalone/psv/year6/lesson_039.md").read_text(encoding="utf-8")
+        self.assertIn("folio dalam galeri mini", gallery.lower())
+
+
 if __name__ == "__main__":
     unittest.main()
