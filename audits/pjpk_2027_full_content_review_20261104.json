@@ -3,12 +3,12 @@
   "status": "PASS_STATIC_ONLY_NOT_READY",
   "counts": {
     "RPT_PDP": 339,
-    "RPH_numbered_found": 338,
-    "blocked_RPT": 1,
+    "RPH_numbered_found": 339,
+    "blocked_RPT": 0,
     "PJ_numbered": 176,
     "PK_numbered": 163,
-    "source_page_unverified": 31,
-    "repeated_activity_templates": 63,
+    "source_page_unverified": 30,
+    "repeated_activity_templates": 64,
     "repeated_templates_examples": [
       {
         "subject": "PJ",
@@ -421,7 +421,7 @@
       }
     ],
     "fatal_count": 0,
-    "manual_content_review_required": 338
+    "manual_content_review_required": 339
   },
   "findings": [],
   "individual": [
@@ -1995,7 +1995,10 @@
       "year": 6,
       "component": "PJ",
       "pdp": 33,
-      "disposition": "BLOCKED_SOURCE_CONFLICT"
+      "rph_path": "rph_standalone/pjpk/year6_pj/lesson_033.md",
+      "word_count": 295,
+      "code_title_crosswalk": true,
+      "disposition": "DRAFT_PENDING_HUMAN_BOOK_AND_RUNTIME_REVIEW"
     },
     {
       "year": 6,
@@ -3479,7 +3482,7 @@
     "Word/PDF rendering and real Telegram document delivery are separate checks.",
     "2027 local class schedule, state holidays and textbook physical pages need validation.",
     "Year1 KP2027 excluded, four Year2 aquatic inserts not approved.",
-    "Source RPT Year6 PJ PdP033 still requires DSKP reconciliation."
+    "PdP033 calon diselaraskan kepada SP5.3.3 daripada DSKP/buku teks; RPT sumber lama belum diubah."
   ],
   "fatal": []
 }
