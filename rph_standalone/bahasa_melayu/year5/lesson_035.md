@@ -6,27 +6,27 @@
 **Tajuk aktiviti:** Amalkan Hidup Sihat  
 **Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.  
 **Standard Pembelajaran (SP):** 4.3.3 — Mengubah suai seni kata lagu dengan menggunakan diksi yang sesuai dan mempersembahkannya dengan gaya yang kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 41  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 42 — aktiviti mengubah suai lirik Amalkan Hidup Sihat  
 **Fokus:** seni — Amalkan Hidup Sihat  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Amalkan Hidup Sihat' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat mengubah suai satu rangkap seni kata lagu bertema hidup sihat dengan diksi sesuai serta mempersembahkannya secara kreatif.  
+**Bahan:** BT BM SK Tahun 5 m/s 42, kad diksi berkaitan kesihatan dan rubrik persembahan.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
 **Guru:** Memaparkan judul/ilustrasi 'Amalkan Hidup Sihat' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U6: Minda Sihat.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Amalkan Hidup Sihat'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Amalkan Hidup Sihat' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Analisis sumber yang disahkan (15 minit)
+**Guru:** Membimbing murid meneliti pemilihan kata dalam rangkap lagu pada m/s 42 dan membincangkan mesej senaman, makanan seimbang dan minda sihat.
+**Murid:** Mengenal pasti tiga frasa bertema hidup sihat dan mencadangkan pilihan diksi sesuai.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Aplikasi kemahiran SP (20 minit)
+**Guru:** Memimpin pengubahsuaian satu rangkap lagu dengan pilihan kata baharu dan persembahan yang bersesuaian dengan SP 4.3.3.
+**Murid:** Menghasilkan dan mempersembahkan satu rangkap yang telah diubah suai; menerangkan dua diksi yang dipilih.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.3.3 — Mengubah suai seni kata lagu dengan menggunakan diksi yang sesuai dan mempersembahkannya dengan gaya yang kreatif) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menilai ketepatan tema, diksi serta kreativiti persembahan, bukan sekadar menyanyikan lagu sedia ada.
+**Murid:** Memurnikan satu baris dan menjelaskan sebab pembetulan.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Amalkan Hidup Sihat' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
