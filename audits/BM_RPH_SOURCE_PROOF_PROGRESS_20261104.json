@@ -331,6 +331,114 @@
       "ba_exercise_verified": false
     },
     {
+      "year": 4,
+      "pdp": 36,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "40",
+      "proof": "BT m/s 40 menyuruh mencatat maklumat tentang persediaan praujian dalam Peta Bulatan; fokus SP 3.2.3.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 38,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "44–45",
+      "proof": "BT m/s 44–45 memaparkan iklan keselamatan penggunaan telefon dan arahan bersoal jawab untuk mendapatkan penjelasan; halaman 43 hanya pengenalan tema.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 39,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "46",
+      "proof": "BT m/s 46 ialah brosur Tadika Taman Impian dengan arahan membaca serta mencatat ciri keselamatan dalam Peta Buih.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 40,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "47",
+      "proof": "BT m/s 47 meminta mengimlakkan perenggan yang dibaca guru berdasarkan petikan keselamatan dalam talian; SP 3.2.4.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 42,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "49",
+      "proof": "BT m/s 49 menyatakan SP 5.1.3(i), kata adjektif cara dan tugas membina ayat; RPT sebelumnya salah menggunakan SP 5.1.2(ii).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 43,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "50",
+      "proof": "BT m/s 50 menyatakan SP 5.1.3(ii) dan kata adjektif perasaan; RPT sebelumnya salah menggunakan SP 5.1.2(ii).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 44,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "51",
+      "proof": "BT m/s 51 mengarahkan bercerita dengan sebutan serta intonasi sesuai berdasarkan keadaan padang hujan, becak dan pokok tumbang.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 45,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "52",
+      "proof": "BT m/s 52 memuatkan grafik rabies serta arahan meneliti bahan grafik untuk membuat gambaran (SP 2.2.1).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 46,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "53",
+      "proof": "BT m/s 53 memaparkan urutan gambar Hajar berswafoto dan rangka pendahuluan-isi-penutup untuk penulisan imaginatif; SP 3.3.1.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 48,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "55",
+      "proof": "BT m/s 55 mengajar SP 5.1.3(iii) dengan arahan membina ayat menggunakan kata adjektif pancaindera.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 49,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "56",
+      "proof": "BT m/s 56 membimbing kata adjektif waktu dan bercerita berdasarkan gambar luar/dalam Stadium Larkin (SP 5.1.3(iv)).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 50,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "57",
+      "proof": "BT m/s 57 mengandungi dialog Hadif dengan ayah mengenai iklan jalan raya dan arahan menceritakan bahan ditonton (SP 1.3.2).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
       "year": 5,
       "pdp": 45,
       "book": "BT Tahun 5 SK",
@@ -377,7 +485,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 787 RPH need specific textbook page/activity review",
+    "All remaining 775 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -385,20 +493,27 @@
     "Year 6 PDF requires a readable alternative",
     "PDF and Word one-page proof for all RPH",
     "Regional calendar/holidays 2027",
-    "Telegram runtime test"
+    "Telegram runtime test",
+    "Tahun 4 PdP 037: tajuk dan aras kemahiran mesti diselaraskan dengan aktiviti Pengayaan BT m/s 41; belum BT-verified",
+    "Tahun 4 PdP 041 dan 047: kesahihan bentuk serta sambungan aksara Jawi perlu semakan visual sebelum source-verified"
   ],
   "ready_count": 0,
   "reviewed_eight_not_ready": true,
   "reviewed_seventeen_not_ready": true,
   "current_audit_batch": {
     "year": 4,
-    "pdp_range": "025–035",
-    "reviewed_rph": 11,
-    "verified_with": "Original BT Tahun 4 SK PDF and DSKP Tahun 4 from Google Drive; RPT 2027",
+    "scope": "036–050 excluding PdP 037, 041 and 047",
+    "reviewed_rph": 12,
+    "explicit_hold": [
+      37,
+      41,
+      47
+    ],
     "changed_rpt_formats": [
       "Markdown",
       "HTML"
     ],
+    "evidence": "Original Book Teks Tahun 4 SK and DSKP via Google Drive",
     "publication_approved": false
   }
 }
