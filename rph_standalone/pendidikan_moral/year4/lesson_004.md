@@ -12,19 +12,21 @@
 **BBM:** Kad situasi A/B, peta jenis bantuan dan keperluan, borang semak; fail `materials/pendidikan_moral/year4/unit_02_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menyiapkan tugasan **SP 2.1** (Memberikan contoh prihatin terhadap keperluan dan kebajikan jiran.) dan **SP 2.2** (Menjelaskan cara bersikap prihatin terhadap keperluan dan kebajikan jiran.). Kriteria kejayaan: setiap murid menghasilkan **dua contoh atau jawapan konkrit** bagi SP pertama dan **penjelasan dalam dua ayat serta satu contoh** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
+Murid dapat **memberikan tiga contoh sikap prihatin** terhadap kebajikan jiran (SP 2.1) serta **menjelaskan dua cara** membantu jiran secara selamat dan beradab (SP 2.2).
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran warga emas memerlukan bantuan membawa barang runcit**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 2.1:** Guru membentangkan situasi **Jiran warga emas memerlukan bantuan membawa barang runcit** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Baik Hati** (mula m/s 10; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Memberikan contoh prihatin terhadap keperluan dan kebajikan jiran.”** dengan menghasilkan **dua contoh atau jawapan konkrit**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Analisis kes jiran:** Guru memaparkan kisah **Juhar dan Mukesh** di buku teks **m/s 10–11**. Ayah Mukesh mengalami kelumpuhan; Juhar berbincang dengan keluarganya tentang bantuan yang wajar. Murid menanda tiga contoh keprihatinan seperti bantuan barangan, persahabatan dan sokongan moral (SP 2.1).
 
-**Aktiviti 2 (20 minit) — Tugasan 2.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara bersikap prihatin terhadap keperluan dan kebajikan jiran.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Cara memberi bantuan:** Guru menunjukkan m/s 12 mengenai rumah jiran rosak akibat ribut dan anak jiran terjatuh. Murid memilih dua bantuan selamat, menjelaskan cara meminta izin, mendapatkan orang dewasa dan membantu mengikut kemampuan tanpa mendedahkan diri kepada bahaya (SP 2.2).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **dua contoh atau jawapan konkrit** untuk SP 2.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 2.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Baik hati**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Semak tiga contoh keprihatinan dan dua huraian cara bantuan; guru menilai ketepatan dan faktor keselamatan.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **baik hati**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+
+**Semakan visual buku teks:** m/s 10–12 (PDF 16–18), bahagian Unit 2; cadangan PdP berdasarkan gambar/cerita yang diperiksa, bukan pengesahan semua latihan SP.
 
 **Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — unit bermula m/s 10 (PDF 16); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
