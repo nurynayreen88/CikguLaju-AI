@@ -30,13 +30,13 @@ def audit():
     errors = []
     markdown_rows = {}
     for line in MD.read_text(encoding="utf-8").splitlines():
-        mat = re.search(r"\*\*Lesson (\d{3})\*\* \(BM3-P(\d{3})\)", line)
+        mat = re.search(r"\*\*PdP (\d{3})\*\* \(BM3-P(\d{3})\)", line)
         if not mat:
             continue
         n, idn = int(mat.group(1)), int(mat.group(2))
         parts = [norm(x) for x in line.strip().strip("|").split("|")]
         if len(parts) != 7 or n != idn or n in markdown_rows:
-            errors.append(f"RPT MD baris tidak sah atau berganda: Lesson {n}")
+            errors.append(f"RPT MD baris tidak sah atau berganda: PdP {n}")
             continue
         markdown_rows[n] = parts
     if set(markdown_rows) != EXPECTED:
@@ -44,7 +44,7 @@ def audit():
 
     raw_html = HTML.read_text(encoding="utf-8")
     html_rows = {}
-    for mat in re.finditer(r'<tr><td class="id">Lesson (\d{3})<div class="sub">BM3-P(\d{3})</div></td>(.*?)</tr>',
+    for mat in re.finditer(r'<tr><td class="id">PdP (\d{3})<div class="sub">BM3-P(\d{3})</div></td>(.*?)</tr>',
                            raw_html, re.S):
         n, idn = int(mat.group(1)), int(mat.group(2))
         values = [norm(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", mat.group(3), re.S)]
@@ -56,7 +56,7 @@ def audit():
         errors.append("RPT HTML: 165 ID unik tidak lengkap")
     for n in EXPECTED & markdown_rows.keys() & html_rows.keys():
         if markdown_rows[n][1:] != html_rows[n]:
-            errors.append(f"RPT Markdown/HTML tidak sepadan Lesson {n:03d}")
+            errors.append(f"RPT Markdown/HTML tidak sepadan PdP {n:03d}")
 
     files = {int(p.stem.split("_")[-1]):p for p in RPH.glob("lesson_*.md")
              if re.fullmatch(r"lesson_\d{3}", p.stem)}
