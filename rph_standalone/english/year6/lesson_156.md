@@ -11,8 +11,8 @@
 **PBD evidence:** Two coherent paragraphs, chronological language and at least two self-corrections.
 
 ## Set induction (5 minutes)
-**Teacher:** Show teacher-selected topic visuals and ask: “What can you say about this topic?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show three mixed-up captions about a familiar school event and model one past-tense sequencing expression.  
+**Pupils:** Put the events in order and name one sequence connector they can use in a recount.
 
 ## Activity 1 — Prepare (10 minutes)
 **Teacher:** Model a school-event recount (when, where, who, what happened, reflection).  
@@ -31,8 +31,8 @@
 **Pupils:** Show the evidence, correct a response and complete an exit check.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What can you say about this topic?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pupils to read a revised sentence from their recount and explain one change in tense, sequence or punctuation.  
+**Pupils:** Share one improved sentence and name the editing check they will use next time.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
