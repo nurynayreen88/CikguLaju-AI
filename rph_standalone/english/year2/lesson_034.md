@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 34: Writing 7
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; SOW verification pending):** 4.3 / 4.3.2  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 4.3 / 4.3.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.2  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK in the existing Year 2 mapping. All examples and activities below are teacher-developed, not attributed to the Teacher's Book.  
 **Learning objectives:** Pupils spell at least five familiar house words accurately in guided writing and ask two basic questions about a partner's house.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 32: Listening 7
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.2  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 2.2 / 2.2.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.2 / 2.2.1  
 **Duration:** 60 minutes  
 **Mapped textbook:** Super Minds 1 Student's Book p.73. The exact Teacher's Book instructions and audio mapping have **not** been independently verified for this revision; the listening script below is teacher-created.  
 **Learning objectives:** Pupils identify four spoken details about rooms and household objects and maintain two short partner exchanges using suitable non-verbal responses.  

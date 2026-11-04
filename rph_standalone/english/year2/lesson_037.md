@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 37: Speaking 8
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 2.1 / 2.1.2  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 2.1 / 2.1.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.5  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
 **Learning objectives:** Pupils ask three basic questions to find out information about a partner's home and describe two objects accurately.  

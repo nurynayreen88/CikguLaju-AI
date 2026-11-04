@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 36: Listening 8
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.3  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 1.2 / 1.2.2  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.2  
 **Duration:** 60 minutes  
 **Source classification:** NON-TEXTBOOK / SOW task in the existing audit. The exact SOW task sequence is unverified; the materials below are original teacher-developed resources, not textbook extracts.  
 **Learning objectives:** Pupils understand a short spoken house narrative by ordering three events and identify four specific spoken room details.  

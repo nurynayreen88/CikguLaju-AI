@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 35: Language Arts 7
 
 **Unit:** The old house  
-**Main SK/SP (existing mapping; final SOW verification pending):** 5.1 / 5.1.2  
-**Complementary SK/SP (existing mapping; final SOW verification pending):** 1.3 / 1.3.1  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 5.1 / 5.1.2  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.3 / 1.3.1  
 **Duration:** 60 minutes  
 **Mapped textbook:** Super Minds 1 Student's Book p.72. Exact Teacher's Book activities have **not** been independently verified for this revision. The rhyme below is original teacher-developed material, not textbook text.  
 **Learning objectives:** Pupils perform a four-line house rhyme with two gestures and interpret two spoken messages using the speaker's gestures or picture clues.  

@@ -1,8 +1,8 @@
 # English Year 2 — Lesson 27: Speaking 6
 
 **Unit:** Free Time  
-**Main SK/SP (existing mapping; SOW verification pending):** 2.1 / 2.1.3  
-**Complementary SK/SP (existing mapping; SOW verification pending):** 1.2 / 1.2.5  
+**Main SK/SP (KPM SOW code independently matched; task QA pending):** 2.1 / 2.1.3  
+**Complementary SK/SP (KPM SOW code independently matched; task QA pending):** 1.2 / 1.2.5  
 **Duration:** 60 minutes  
 **Source:** NON-TEXTBOOK in prior Year 2 audit; dialogue and instructions below are original teacher-developed materials.  
 **Learning objectives:** Pupils give a sequence of three basic healthy-living instructions and understand three supported questions about free-time habits.  
