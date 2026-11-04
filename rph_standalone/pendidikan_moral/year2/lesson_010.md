@@ -15,16 +15,16 @@
 Murid menyiapkan tugasan **SP 4.1** (Menyenaraikan cara berterima kasih terhadap keluarga.) dan **SP 4.2** (Menjelaskan kepentingan berterima kasih terhadap keluarga.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **penjelasan dalam dua ayat serta satu contoh** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan Dialog keluarga dengan ayah dan nenek pada m/s 19. Murid membuat pemerhatian dan menyatakan nilai unit.
 
-**Aktiviti 1 (20 minit) — Tugasan 4.1:** Guru membentangkan situasi **Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Terima Kasih, Keluargaku** (mula m/s 19; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan cara berterima kasih terhadap keluarga.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Buku teks m/s 19–20:** Guru membimbing dan menyoal berdasarkan situasi buku. Murid meneliti situasi penghargaan kepada ayah dan nenek pada m/s 19, kemudian menyenaraikan tiga cara berterima kasih kepada ahli keluarga.
 
-**Aktiviti 2 (20 minit) — Tugasan 4.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan kepentingan berterima kasih terhadap keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Aplikasi SP:** Guru memandu perbincangan dan memberi maklum balas. Murid meneliti situasi Mei Ting berterima kasih kepada ibu selepas dihantar ke sekolah pada m/s 20, lalu menerangkan dua kepentingan serta satu cara penghargaan yang lain.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 4.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 4.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Berterima kasih**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Semak tiga cara penghargaan, dua kepentingan dan satu cadangan bagi situasi Mei Ting. Guru menyemak bukti individu terhadap SP dan mengelakkan kesimpulan TP berasaskan satu aktiviti sahaja.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **berterima kasih**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu cara menghargai orang lain yang boleh dilakukan secara selamat. Guru merumuskan nilai dan amalan dalam kehidupan harian.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit buku teks **Terima Kasih, Keluargaku** bermula pada **m/s 19 (halaman PDF 28)**, disahkan melalui halaman kandungan; halaman aktiviti khusus SP belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [Buku Teks Pendidikan Moral Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — **m/s 19–20 (PDF 28–29)**, disemak secara visual pada 4 November 2026. Langkah PdP ialah olahan tugasan buku teks mengikut SP. [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai panduan urutan sahaja.

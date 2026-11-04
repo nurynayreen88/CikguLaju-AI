@@ -15,16 +15,16 @@
 Murid menghuraikan atau menilai berdasarkan **4.3: Menganalisis kesan mengabaikan amalan berterima kasih terhadap warga sekolah.** serta mengekspresikan perasaan bagi **4.4: Mengekspresikan perasaan apabila dapat menunjukkan sikap berterima kasih terhadap warga sekolah.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 4.3 dan ayat perasaan yang sesuai bagi SP 4.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Pekerja kantin membantu murid yang tertinggal bekalan makanan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan Ucapan penghargaan selepas kejayaan pertandingan sekolah pada m/s 26. Murid membuat pemerhatian dan menyatakan nilai unit.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 4.3 (**Menganalisis kesan mengabaikan amalan berterima kasih terhadap warga sekolah.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana ucapan terima kasih yang ikhlas memberi makna?**
+**Aktiviti 1 (20 minit) — Buku teks m/s 26–31:** Guru membimbing dan menyoal berdasarkan situasi buku. Murid membandingkan dua kemungkinan jika jasa pembimbing pertandingan m/s 26 diiktiraf atau diabaikan, kemudian menganalisis dua kesan terhadap hubungan warga sekolah.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 4.4 (**Mengekspresikan perasaan apabila dapat menunjukkan sikap berterima kasih terhadap warga sekolah.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aplikasi SP:** Guru memandu perbincangan dan memberi maklum balas. Murid melakonkan situasi Ranita menerima bantuan Puan Julie di pejabat sekolah pada m/s 31, menghasilkan dialog penghargaan dan menyatakan perasaan berserta sebab.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 4.3 dan ayat perasaan yang sesuai bagi SP 4.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Kutip dua kesan pengabaian dan dialog pendek yang mengandungi satu perasaan beralasan. Guru menyemak bukti individu terhadap SP dan mengelakkan kesimpulan TP berasaskan satu aktiviti sahaja.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **berterima kasih**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu cara menghargai orang lain yang boleh diamalkan dengan selamat. Guru merumuskan nilai dalam kehidupan harian.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [Buku Teks Pendidikan Moral Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — **m/s 26–31 (PDF 32–37)**, disemak secara visual pada 4 November 2026. Langkah PdP ialah olahan tugasan buku teks mengikut SP. [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai panduan urutan sahaja.

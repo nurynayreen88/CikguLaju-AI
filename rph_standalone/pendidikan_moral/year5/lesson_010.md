@@ -15,16 +15,16 @@
 Murid menyiapkan tugasan **SP 4.1** (Menyenaraikan contoh jasa dan sumbangan anggota masyarakat.) dan **SP 4.2** (Menghuraikan bentuk penghargaan terhadap jasa dan sumbangan anggota masyarakat.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan Majlis Jasamu Dikenang yang menghargai anggota masyarakat pada m/s 30. Murid membuat pemerhatian dan menyatakan nilai unit.
 
-**Aktiviti 1 (20 minit) — Tugasan 4.1:** Guru membentangkan situasi **Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Berterima Kasih** (mula m/s 30; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh jasa dan sumbangan anggota masyarakat.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Buku teks m/s 30–31:** Guru membimbing dan menyoal berdasarkan situasi buku. Murid mengenal pasti sekurang-kurangnya tiga jasa tokoh masyarakat dalam majlis m/s 30, seperti pendidik, jurulatih dan penyumbang bahan bacaan.
 
-**Aktiviti 2 (20 minit) — Tugasan 4.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan bentuk penghargaan terhadap jasa dan sumbangan anggota masyarakat.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Aplikasi SP:** Guru memandu perbincangan dan memberi maklum balas. Murid meneliti penyampaian penghargaan pada m/s 31 dan menghuraikan dua bentuk penghargaan yang sesuai kepada anggota masyarakat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 4.1 dan **dua huraian yang disokong sebab** untuk SP 4.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Berterima kasih**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Semak jadual tiga sumbangan dan dua bentuk penghargaan yang dipadankan dengan jasa sebenar. Guru menyemak bukti individu terhadap SP dan mengelakkan kesimpulan TP berasaskan satu aktiviti sahaja.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **berterima kasih**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu cara menghargai orang lain yang boleh diamalkan secara selamat. Guru merumuskan nilai dan amalan harian.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — unit bermula m/s 30 (PDF 33); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [Buku Teks Pendidikan Moral Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — **m/s 30–31 (PDF 33–34)**, disemak secara visual pada 4 November 2026. Langkah PdP ialah olahan tugasan buku teks mengikut SP. [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai panduan urutan sahaja.
