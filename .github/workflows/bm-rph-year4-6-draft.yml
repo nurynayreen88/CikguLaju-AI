@@ -59,11 +59,5 @@ jobs:
             rph_standalone/bahasa_melayu/year6/
             rpt_2027/bahasa_melayu/AUDIT_RPH_BM_T4_T6_BATCH_20261104.json
           if-no-files-found: error
-      - name: Commit only new BM RPH and audit into feature branch
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add rph_standalone/bahasa_melayu/year4 rph_standalone/bahasa_melayu/year5 rph_standalone/bahasa_melayu/year6 rpt_2027/bahasa_melayu/AUDIT_RPH_BM_T4_T6_BATCH_20261104.json
-          git diff --staged --quiet && exit 0
-          git commit -m 'Add 496 BM Year4-6 standalone RPH DRAF (not READY)'
-          git push origin HEAD:feat/bm-standalone-rph-tahun4-6-20261104
+      - name: Preserve approved draft files; no CI overwrite
+        run: echo 'Read-only build verification complete. Existing RPH are not modified by CI.'
