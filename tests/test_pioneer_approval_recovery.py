@@ -77,6 +77,30 @@ class TestStalePioneerApproval(unittest.TestCase):
     def buttons(self):
         return [b.get("callback_data") for row in self.bot.messages[-1][2] for b in row]
 
+    def test_rm10_qr_and_receipt_button_do_not_create_pending_without_upload(self):
+        import base64
+        from types import SimpleNamespace
+        self.ns["API"] = "https://example.invalid/bot"
+        self.ns["DONATION_QR_B64"] = base64.b64encode(b"qr-photo").decode()
+        self.ns["_donation_qr_file_id"] = "EXISTING_QR_FILE"
+        self.ns["_new_payment_request"] = lambda *args, **kwargs: self.fail(
+            "No database insert allowed before receipt upload")
+        self.ns["_set_payment_note"] = lambda *args, **kwargs: self.fail(
+            "No premature payment note allowed")
+        self.ns["_latest_pending_payment"] = lambda cid: None
+        telegram = SimpleNamespace(ok=True)
+        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 10)):
+            with patch("requests.post", return_value=telegram) as sent:
+                self.ns["callback"](PAYER, "pioneer_pay")
+        self.assertEqual(sent.call_count, 1)
+        self.assertEqual(self.ns["state"][PAYER]["waiting"], "payment_proof")
+        self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 10.0)
+        self.ns["state"][PAYER].clear()
+        self.ns["callback"](PAYER, "pioneer_receipt")
+        self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 10.0)
+        self.assertEqual(self.ns["state"][PAYER]["waiting"], "payment_proof")
+        self.assertEqual(self.bot.marked, [])
+
     def test_two_part_legacy_button_reopens_current_card_but_never_approves(self):
         self.ns["callback"](ADMIN, "admin_approve|1")
         msg = self.bot.messages[-1][1]
