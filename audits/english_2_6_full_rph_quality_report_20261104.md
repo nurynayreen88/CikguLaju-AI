@@ -1,5 +1,21 @@
 # English CikguLaju — Full RPH source-content QA, 4 November 2026
 
+## Verified main checkpoint — 5 November 2026, after PR #259, #260, #261, #262 and #263
+
+**Current source QA result:** English Years 2–6 remain **800/800 individual RPH sources**, and all **767/767 numeric fixed-SOW Main/Complementary pairs** match the independent KPM SOW index. The latest complete 960-source audit reported **zero critical structural errors**.
+
+**Year 6 fixed-SOW source refinement completed:** the previously reported **115 generic-instruction Lesson flags are now 0** in the full current-source audit. This result covers 12 original refined Lessons in PR #248–249, 25 in #253–255, 22 in #259, 16 in #260, 8 in #261, 10 in #262 and 22 in #263, with no duplicate changed Lesson IDs. All updated existing Lesson records kept official fixed standard codes, RPT pointers, six-stage 60-minute structure, materials, reflection and unpromoted statuses. Each stage used source-specific regressions and isolated native PDF/Word one-page A4 layout checks for the changed files.
+
+**Important distinction:** zero generic phrases under this scanner does **not** mean all 800 lessons are pedagogically signed-off. The full audit still reports duplicate introduction/closure wording in **25 Year 6 Language Arts** lessons, which were not automatically rewritten because they have a different kind of lesson. The Year 3/4 missing Markdown objective-header flags are not automatically evidence of missing native document objectives: their generator may populate those fields. These items require source-led judgement rather than blanket edits.
+
+**FINAL READY not yet authorised:** 33 Year4–6 teacher-selected lessons (**10 Y4, 9 Y5, 14 Y6**) have no official selected SOW CS/LS pairs and must remain labelled as teacher-choice rather than acquiring invented codes. **Year4 Lesson30** still has the original TB CD1 Track29 vs SOW CD2 Track29 discrepancy; its audio remains fail-closed until the actual speech is heard. Complete physical TB/SB/WB verification, lesson-by-lesson teacher approval, and authenticated Telegram Word/PDF delivery remain separate evidence gates.
+
+**Deployment safety:** PR #259–263 modified source RPH and isolated QA only; **no** app.py, RPT master, Telegram/Render deployment, user/payment/credit/subscription/referral data, Supabase records or other subject was edited. The existing full-inventory regression now checks that **Year6 generic_instruction is exactly empty**, preventing recurrence.
+
+*This is the current source-level checkpoint. Historical figures under the older sections below are retained for audit traceability, not outstanding-work counts.*
+
+---
+
 ## Current `main` checkpoint — after PR #253, #254 and #255
 
 **Last verified content merge:** `02b25f18bc4353b938271e8862a87220a761edee` (PR #255). This heading supersedes older *open-issue counts* further down; prior sections remain as a historical audit trail, not a request to redo completed RPH.
