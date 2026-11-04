@@ -4,7 +4,7 @@
 **Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U15: Indahnya Seni dan Budaya Kita  
 **Tajuk dalam RPT/BT calon:** Adat Berinai + PKJR  
 **Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.2 (ii) — Mengedit dan memurnikan hasil penulisan daripada aspek  
+**Standard Pembelajaran (SP):** 3.3.2 (i) — Mengedit dan memurnikan hasil penulisan daripada aspek ejaan, tanda baca dan penggunaan imbuhan  
 **Bidang:** Menulis — mengedit penggunaan kata  
 **Rujukan buku:** BT2 m/s 19  
 **Bahan / rangsangan:** tajuk Adat Berinai pada BT2 m/s19; tiada BA khusus tersedia; Buku Teks dan Buku Aktiviti SK Jilid 2 yang sepadan; kad/peta pemikiran; buku latihan.  
@@ -31,7 +31,23 @@
 **Guru:** Merumuskan kegunaan kemahiran mengedit penggunaan kata dalam konteks U15: Indahnya Seni dan Budaya Kita.
 **Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
 
-**Status QA:** HOLD — **bukan READY**.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti padanan BA/BT:** Belum dibuktikan melalui petunjuk BT pada Buku Aktiviti yang dibaca.  
 **Isu yang perlu diselesaikan:** Bahan BA tidak dapat dibuktikan dengan petunjuk halaman BT dalam ekstrak yang dibaca; Perlu semak BT asal, PKJR, tajuk atau sesi susulan sebelum kelulusan; Modul PKJR asal belum dipadankan  
 **Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 6.1.3 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 21, m/s 23, *Tempat Duduk Selamat (pengukuhan)*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 21 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Menulis tiga ayat tentang memilih tempat duduk dan sebab keselamatan dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak tiga ayat dan sebab yang munasabah.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

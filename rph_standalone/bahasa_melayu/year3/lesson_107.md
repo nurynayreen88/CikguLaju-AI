@@ -2,7 +2,7 @@
 
 **ID Lesson:** BM3-P107  
 **Tema / Unit:** Kebudayaan, Kesenian dan Estetika; U15: Indahnya Seni dan Budaya Kita  
-**Tajuk dalam RPT/BT calon:** Tradisional + PKJR  
+**Tajuk dalam RPT/BT calon:** Pemerah Santan Tradisional + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **Standard Pembelajaran (SP):** 2.3.2 (ii) — Membaca dan mempersembahkan karya bukan sastera dan karya sastera dengan sebutan yang betul dan intonasi yang sesuai  
 **Bidang:** Membaca — bacaan prosedur  
@@ -31,7 +31,23 @@
 **Guru:** Merumuskan kegunaan kemahiran bacaan prosedur dalam konteks U15: Indahnya Seni dan Budaya Kita.
 **Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
 
-**Status QA:** HOLD — **bukan READY**.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Perlu semak BT asal, PKJR, tajuk atau sesi susulan sebelum kelulusan; Modul PKJR asal belum dipadankan  
 **Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 6.1.3 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 21, m/s 23, *Tempat Duduk Selamat*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 21 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Mengenal pilihan tempat duduk penumpang yang selamat berdasarkan gambar BAM dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak tiga pilihan dengan alasan.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

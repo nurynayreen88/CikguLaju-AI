@@ -32,5 +32,21 @@
 **Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 4.4.2; BAM m/s 20, Aktiviti 18 (semak dengan BPG); fokus tingkah laku pengguna jalan raya dan lokasi selamat melintas. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** HOLD — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Kawalan:** Sesi susulan atau bahan BA-only diberi label khusus; belum diuji format A4, jadual negeri dan runtime.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 4.4.2 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 18, m/s 20, *Tingkah Laku Pengguna Jalan Raya*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 18 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Membezakan dua tindakan pengguna jalan raya yang selamat dengan dua yang berisiko dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak empat penilaian dengan alasan.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** HOLD — Kod HP 4.4.2 RPT 2026 belum dipastikan sepadan BAM Aktiviti 18. Perlu semak BPG.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

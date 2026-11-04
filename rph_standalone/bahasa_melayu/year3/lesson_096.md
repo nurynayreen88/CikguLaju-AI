@@ -32,7 +32,23 @@
 **Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 5.1.3; BAM m/s 21, Aktiviti 19; fokus fungsi topi keledar basikal. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Semakan muka surat Buku Teks penuh, cetakan satu A4 dan ujian runtime/CI.  
 **Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 5.1.3 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 19, m/s 21, *Fungsi Topi Keledar Basikal*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 19 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Menerangkan fungsi topi keledar dan dua risiko jika tidak dipakai dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak satu fungsi dan dua risiko.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

@@ -2,7 +2,7 @@
 
 **ID:** BM3-P151  
 **Tema/Unit:** Ekonomi, Keusahawanan dan Kewangan; U22: Bijak Ekonomi  
-**Tajuk RPT:** Automatik MRT + PKJR  
+**Tajuk RPT:** Mesin Layan Diri Automatik MRT + PKJR  
 **SK:** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **SP:** 2.3.1 (ii) — Membaca, mengenal pasti, dan menerangkan kandungan teks daripada bahan bukan sastera dan bahan sastera  
 **Bidang / fokus:** Membaca — membaca manual  
@@ -31,8 +31,24 @@
 **Guru:** Merumuskan kemahiran membaca manual dan menyambungkannya dengan situasi dalam Unit.
 **Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
 
-**Status QA:** HOLD — belum READY.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
 **Isu:** Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap; Pemetaan modul PKJR belum disahkan  
 **Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
 **Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 4.3.1 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 14, m/s 16, *Pencahayaan dan Kebolehlihatan*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 14 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Menilai perbezaan kebolehlihatan pejalan kaki ketika terang dan gelap dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak dua perbezaan dan satu langkah selamat.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

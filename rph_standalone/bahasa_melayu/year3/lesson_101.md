@@ -32,5 +32,21 @@
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 5.1.3; BAM m/s 22, Aktiviti 20; fokus cara pemakaian topi keledar basikal. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
-**Status QA:** HOLD — penanda integrasi PKJR berasal daripada RPT BM 2026; sumber BAM/BPG masih dalam audit. Bukan READY.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 5.1.3 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 20, m/s 22, *Cara Pemakaian Topi Keledar Basikal*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 20 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Menyusun langkah memakai, melaras dan mengancing tali topi keledar basikal dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak tiga langkah pemakaian.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

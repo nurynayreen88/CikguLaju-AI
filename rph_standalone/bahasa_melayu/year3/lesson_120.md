@@ -31,7 +31,23 @@
 **Guru:** Merumuskan kegunaan kemahiran pantun berintonasi dalam konteks U17: Sumbangan Kita.
 **Murid:** Menyatakan satu isi dan satu perkara yang perlu diperbaiki.
 
-**Status QA:** HOLD — **bukan READY**.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Perlu semak BT asal, PKJR, tajuk atau sesi susulan sebelum kelulusan; Modul PKJR asal belum dipadankan  
 **Kawalan:** Tugasan ini ialah rancangan kerja terkawal untuk audit guru; jika status HOLD berpunca daripada konflik sumber, jangan guna sebagai RPH yang telah disahkan. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 6.2.1 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 23, m/s 26, *Tali Pinggang Keledar*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 23 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Menyatakan dua kegunaan tali pinggang keledar dan menulis dua ayat nasihat dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak dua kegunaan dan dua ayat.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

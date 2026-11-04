@@ -31,5 +31,21 @@
 **Guru:** Merumuskan pembelajaran Mengedit struktur ayat berdasarkan contoh dalam bahan.
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
-**Status QA:** HOLD — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Kawalan:** Bahan modul PKJR yang berasingan mesti dipetakan kepada HP PKJR sebelum kelulusan. Penerbitan ke Telegram/Web ditangguhkan.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 6.2.1 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 22, m/s 24, *Alat Penahan*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 22 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Memadankan tempat duduk kanak-kanak dan tali pinggang keledar dengan fungsinya dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak tiga padanan alat dan fungsi.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/

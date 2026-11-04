@@ -31,8 +31,24 @@
 **Guru:** Merumuskan kemahiran membaca dan menerangkan label dan menyambungkannya dengan situasi dalam Unit.
 **Murid:** Menyebut satu kemahiran yang dikuasai serta satu nilai yang dipelajari.
 
-**Status QA:** HOLD — belum READY.  
+**Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
 **Bukti BA:** Penanda BT dan kod SP sepadan dalam teks BA2; semakan isi penuh BT masih tertangguh.  
 **Isu:** Perlu pemeriksaan akademik khusus, bahan PKJR atau bukti subkod lengkap; Pemetaan modul PKJR belum disahkan  
 **Pengasingan bahan:** Tajuk BT tidak disamakan dengan tajuk BA; contoh guru ialah cadangan, bukan latihan rasmi BA.  
 **Penerbitan:** Staging sahaja; tidak ditulis ke `main`, database, Telegram atau Web.
+
+## Integrasi PKJR — 10 minit daripada Aktiviti 2
+
+**Sumber:** HP PKJR 3.1.3 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 11, m/s 13, *Peraturan dan Undang-undang Jalan Raya*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+
+**Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 11 dan membimbing pemerhatian keselamatan jalan raya.
+
+**Murid:** Mengelaskan empat contoh peraturan dan undang-undang dan membentangkan keputusan kepada pasangan.
+
+**PBD PKJR:** Menyemak empat contoh yang dikelaskan tepat.
+
+**Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
+
+**Keputusan QA:** DRAF untuk semakan guru — belum disahkan READY.
+
+**Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
