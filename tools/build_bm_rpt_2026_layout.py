@@ -5,7 +5,7 @@ from html import escape as e
 import re,json
 from bs4 import BeautifulSoup as Soup
 from weasyprint import HTML
-from pypdf import PdfReader
+import fitz
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/'rpt_2027/bahasa_melayu/keluaran_format_english'
 OUT=ROOT/'rpt_2027/bahasa_melayu'
@@ -23,7 +23,7 @@ col.a{width:11%}col.b{width:19%}col.c{width:19%}col.d{width:26%}col.f{width:25%}
 th{background:#bed6eb;font-size:8pt;text-align:center;padding:6px 4px;border:1px solid #4a5a68;line-height:1.2}
 td{border:1px solid #4a5a68;font-size:7.5pt;line-height:1.42;vertical-align:top;padding:5px 6px;overflow-wrap:anywhere}
 tr{break-inside:avoid}
-.week{background:#eaf1e3;vertical-align:middle;text-align:center;font-size:7.4pt;line-height:1.6}
+.week{background:#eaf1e3;vertical-align:middle;text-align:center;font-size:7.4pt;line-height:1.6}.weekcont{font-size:8.4pt;font-weight:bold;color:#547153}
 .wn{display:block;font-weight:bold;font-size:13pt;margin-bottom:7px}
 .date{display:block;margin-top:7px}.theme{line-height:1.6}
 .ref-title{font-size:7.85pt;font-weight:bold;margin-bottom:5px}.pd{color:#244b69}.code{font-size:6.5pt;color:#677786;font-weight:normal}
@@ -50,11 +50,11 @@ def build(year,total):
         assert w==ix,(year,w,ix)
         rows=section.select('tbody > tr')
         assert rows,(year,w)
-        weekcell=f'<td class="week" rowspan="{len(rows)}"><span class="wn">{w:02d}</span><span class="date">{e(parts[1])}</span><span class="date">{e(parts[2])}</span></td>'
+        weekcell=f'<td class="week"><span class="wn">{w:02d}</span><span class="date">{e(parts[1])}</span><span class="date">{e(parts[2])}</span></td>'
         html.append('<table><colgroup><col class="a"><col class="b"><col class="c"><col class="d"><col class="f"></colgroup><thead><tr><th>MINGGU</th><th>TEMA / UNIT</th><th>STANDARD<br>KANDUNGAN</th><th>STANDARD<br>PEMBELAJARAN</th><th>CATATAN /<br>RUJUKAN</th></tr></thead><tbody>')
         for j,row in enumerate(rows):
             cells=row.find_all('td',recursive=False)
-            lead=weekcell if j==0 else ''
+            lead=weekcell if j==0 else f'<td class="week weekcont">{w:02d}</td>'
             idtag=row.select_one('td.id')
             if idtag is None:
                 line=' '.join(c.get_text(' ',strip=True) for c in cells)
@@ -78,11 +78,11 @@ def build(year,total):
     (OUT/f'RPT_BM_Tahun_{year}_2027_Format_2026_DRAF.html').write_text(combined,encoding='utf-8')
     target=OUT/f'RPT_Bahasa_Melayu_Tahun_{year}_2027_DRAF.pdf'
     HTML(string=combined,base_url=str(SRC)).write_pdf(str(target))
-    pdf=PdfReader(str(target))
-    assert all(float(p.mediabox.width)>float(p.mediabox.height) for p in pdf.pages),(year,'not landscape')
-    ids={int(v) for v in re.findall(r'\bPdP\s+(\d{3})\b','\n'.join(p.extract_text() or '' for p in pdf.pages))}
+    pdf=fitz.open(str(target))
+    assert all(p.rect.width>p.rect.height for p in pdf),(year,'not landscape')
+    ids={int(v) for v in re.findall(r'\bPdP\s+(\d{3})\b','\n'.join(p.get_text() for p in pdf))}
     assert ids==set(range(1,total+1)),(year,sorted(set(range(1,total+1))-ids))
-    result=dict(year=year,pdp=total,weeks=44,pages=len(pdf.pages),bytes=target.stat().st_size,
+    result=dict(year=year,pdp=total,weeks=44,pages=len(pdf),bytes=target.stat().st_size,
                 status='DRAF_BELUM_READY',layout='RPT BM SK 2026 five-column style',filename=target.name)
     print(json.dumps(result,ensure_ascii=False),flush=True)
     return result
