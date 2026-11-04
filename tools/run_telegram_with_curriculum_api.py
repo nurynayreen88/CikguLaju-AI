@@ -225,3 +225,21 @@ try:
 except Exception as _pjpk_rpt_2027_exc:
     PJPK_RPT_2027_TELEGRAM_ACTIVE = False
     print("PJPK RPT 2027 download route unavailable:", repr(_pjpk_rpt_2027_exc), flush=True)
+
+# Opt-out 80%-ready Moral source bridge for the existing native Word/PDF RPH.
+# Only Moral Years 2-6 / correctly mapped PdP rows; no DB or quota mutations.
+try:
+    from web.pendidikan_moral_80_runtime import install as install_moral_80
+    MORAL_80_RPH_ACTIVE = install_moral_80(telegram_runtime)
+except Exception as _moral80_exc:
+    MORAL_80_RPH_ACTIVE = False
+    print("Moral 80 RPH bridge unavailable:", repr(_moral80_exc), flush=True)
+
+
+# 2027 Moral proposed RPT PDF generated on demand from the staged CSV sequence.
+try:
+    from rpt_2027.pendidikan_moral.telegram_downloads import install as install_moral_rpt_2027
+    MORAL_RPT_2027_TELEGRAM_ACTIVE = install_moral_rpt_2027(vars(telegram_runtime))
+except Exception as _moralrpt_exc:
+    MORAL_RPT_2027_TELEGRAM_ACTIVE = False
+    print("Moral RPT 2027 download route unavailable:", repr(_moralrpt_exc), flush=True)

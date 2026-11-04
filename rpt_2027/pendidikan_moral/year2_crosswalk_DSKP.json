@@ -1,0 +1,488 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 2,
+  "status": "DRAF_SEMAK",
+  "source_dskp_id": "1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E",
+  "source_book_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+  "notes": "Semakan sumber SK; 14 unit × 3 PdP cadangan; tidak mengesahkan tarikh / halaman buku teks",
+  "units": [
+    {
+      "year": 2,
+      "unit": 1,
+      "sk": "1.0",
+      "title": "Kepatuhan Kepada Ajaran Agama",
+      "nilai": "Kepercayaan kepada Tuhan",
+      "sp": [
+        {
+          "code": "1.1",
+          "text": "Memberi contoh perlakuan patuh kepada ajaran agama dalam keluarga."
+        },
+        {
+          "code": "1.2",
+          "text": "Menghuraikan tujuan patuh kepada ajaran agama dalam keluarga."
+        },
+        {
+          "code": "1.3",
+          "text": "Menjelaskan kaitan antara patuh dalam ajaran agama dan taat kepada keluarga."
+        },
+        {
+          "code": "1.4",
+          "text": "Melahirkan perasaan apabila patuh kepada ajaran agama."
+        },
+        {
+          "code": "1.5",
+          "text": "Melaksanakan sikap patuh kepada ajaran agama dalam keluarga."
+        }
+      ],
+      "scenario": "Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati",
+      "textbook_unit_title": "Ajaran Agama Keluarga Saya",
+      "textbook_printed_start_page": 1,
+      "textbook_pdf_start_page": 10,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 2,
+      "sk": "2.0",
+      "title": "Bantuan Kepada Keluarga",
+      "nilai": "Baik hati",
+      "sp": [
+        {
+          "code": "2.1",
+          "text": "Menyenaraikan jenis bantuan yang boleh diberikan kepada keluarga."
+        },
+        {
+          "code": "2.2",
+          "text": "Menjelaskan cara memberi bantuan kepada keluarga."
+        },
+        {
+          "code": "2.3",
+          "text": "Menganalisis kesan memberi bantuan kepada keluarga."
+        },
+        {
+          "code": "2.4",
+          "text": "Menzahirkan perasaan apabila memberi bantuan kepada keluarga."
+        },
+        {
+          "code": "2.5",
+          "text": "Mengamalkan sikap memberi bantuan kepada keluarga."
+        }
+      ],
+      "scenario": "Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja",
+      "textbook_unit_title": "Baik Hati Keluarga Bahagia",
+      "textbook_printed_start_page": 7,
+      "textbook_pdf_start_page": 16,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 3,
+      "sk": "3.0",
+      "title": "Tanggungjawab Terhadap Keluarga",
+      "nilai": "Bertanggungjawab",
+      "sp": [
+        {
+          "code": "3.1",
+          "text": "Menyenaraikan contoh tanggungjawab terhadap keluarga."
+        },
+        {
+          "code": "3.2",
+          "text": "Menjelaskan cara melaksanakan tanggungjawab terhadap keluarga."
+        },
+        {
+          "code": "3.3",
+          "text": "Menghuraikan kepentingan melaksanakan tanggungjawab terhadap keluarga."
+        },
+        {
+          "code": "3.4",
+          "text": "Menzahirkan perasaan apabila melaksanakan tanggungjawab terhadap keluarga."
+        },
+        {
+          "code": "3.5",
+          "text": "Mengamalkan sikap bertanggungjawab terhadap keluarga."
+        }
+      ],
+      "scenario": "Keluarga membahagi tugasan sebelum tetamu datang ke rumah",
+      "textbook_unit_title": "Tanggungjawab Saya Dalam Keluarga",
+      "textbook_printed_start_page": 13,
+      "textbook_pdf_start_page": 22,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 4,
+      "sk": "4.0",
+      "title": "Berterima Kasih Terhadap Keluarga",
+      "nilai": "Berterima kasih",
+      "sp": [
+        {
+          "code": "4.1",
+          "text": "Menyenaraikan cara berterima kasih terhadap keluarga."
+        },
+        {
+          "code": "4.2",
+          "text": "Menjelaskan kepentingan berterima kasih terhadap keluarga."
+        },
+        {
+          "code": "4.3",
+          "text": "Menghuraikan kesan mengabaikan sikap berterima kasih terhadap keluarga."
+        },
+        {
+          "code": "4.4",
+          "text": "Melahirkan perasaan apabila berterima kasih terhadap keluarga."
+        },
+        {
+          "code": "4.5",
+          "text": "Mengamalkan sikap berterima kasih terhadap keluarga."
+        }
+      ],
+      "scenario": "Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan",
+      "textbook_unit_title": "Terima Kasih, Keluargaku",
+      "textbook_printed_start_page": 19,
+      "textbook_pdf_start_page": 28,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 5,
+      "sk": "5.0",
+      "title": "Hemah Tinggi Dalam Keluarga",
+      "nilai": "Hemah tinggi",
+      "sp": [
+        {
+          "code": "5.1",
+          "text": "Menyenaraikan amalan hemah tinggi dalam keluarga."
+        },
+        {
+          "code": "5.2",
+          "text": "Menjelaskan kepentingan hemah tinggi dalam keluarga."
+        },
+        {
+          "code": "5.3",
+          "text": "Menganalisis kesan tidak bersikap hemah tinggi dalam keluarga."
+        },
+        {
+          "code": "5.4",
+          "text": "Melahirkan perasaan apabila berhemah tinggi dalam keluarga."
+        },
+        {
+          "code": "5.5",
+          "text": "Mengamalkan sikap hemah tinggi dalam keluarga."
+        }
+      ],
+      "scenario": "Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab",
+      "textbook_unit_title": "Hemah Tinggi Dalam Keluarga",
+      "textbook_printed_start_page": 25,
+      "textbook_pdf_start_page": 34,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 6,
+      "sk": "6.0",
+      "title": "Hormati Ahli Keluarga",
+      "nilai": "Hormat",
+      "sp": [
+        {
+          "code": "6.1",
+          "text": "Mengenal pasti hubungan antara ahli keluarga."
+        },
+        {
+          "code": "6.2",
+          "text": "Menjelaskan cara menghormati ahli keluarga."
+        },
+        {
+          "code": "6.3",
+          "text": "Menghuraikan kepentingan menghormati ahli keluarga."
+        },
+        {
+          "code": "6.4",
+          "text": "Menceritakan perasaan apabila menghormati ahli keluarga."
+        },
+        {
+          "code": "6.5",
+          "text": "Mengamalkan perlakuan menghormati ahli keluarga."
+        }
+      ],
+      "scenario": "Dua beradik berebut penggunaan alat permainan",
+      "textbook_unit_title": "Hormati Keluarga Hidup Gembira",
+      "textbook_printed_start_page": 33,
+      "textbook_pdf_start_page": 42,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 7,
+      "sk": "7.0",
+      "title": "Sayangi Ahli Keluarga",
+      "nilai": "Kasih sayang",
+      "sp": [
+        {
+          "code": "7.1",
+          "text": "Menjelaskan ciri-ciri keluarga yang bahagia."
+        },
+        {
+          "code": "7.2",
+          "text": "Memerihalkan cara mengeratkan kasih sayang sesama ahli keluarga."
+        },
+        {
+          "code": "7.3",
+          "text": "Membuat kesimpulan kepentingan menyayangi ahli keluarga."
+        },
+        {
+          "code": "7.4",
+          "text": "Menzahirkan perasaan apabila dapat menyayangi sesama ahli keluarga."
+        },
+        {
+          "code": "7.5",
+          "text": "Mengamalkan sikap kasih sayang terhadap ahli keluarga."
+        }
+      ],
+      "scenario": "Seorang ahli keluarga demam dan memerlukan perhatian",
+      "textbook_unit_title": "Keluarga Bahagia",
+      "textbook_printed_start_page": 41,
+      "textbook_pdf_start_page": 50,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 8,
+      "sk": "8.0",
+      "title": "Bersikap Adil Terhadap Keluarga",
+      "nilai": "Keadilan",
+      "sp": [
+        {
+          "code": "8.1",
+          "text": "Menyenaraikan sikap adil terhadap keluarga."
+        },
+        {
+          "code": "8.2",
+          "text": "Menghuraikan cara bersikap adil terhadap keluarga."
+        },
+        {
+          "code": "8.3",
+          "text": "Menjelaskan kepentingan bersikap adil terhadap keluarga."
+        },
+        {
+          "code": "8.4",
+          "text": "Menceritakan perasaan bersikap adil terhadap keluarga."
+        },
+        {
+          "code": "8.5",
+          "text": "Mengamalkan sikap adil terhadap keluarga."
+        }
+      ],
+      "scenario": "Empat beradik membahagi tugas rumah secara adil",
+      "textbook_unit_title": "Keluarga Yang Adil Hidup Sejahtera",
+      "textbook_printed_start_page": 49,
+      "textbook_pdf_start_page": 58,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 9,
+      "sk": "9.0",
+      "title": "Berani Menjaga Nama Baik Keluarga",
+      "nilai": "Keberanian",
+      "sp": [
+        {
+          "code": "9.1",
+          "text": "Menyenaraikan contoh menjaga nama baik keluarga."
+        },
+        {
+          "code": "9.2",
+          "text": "Menjelaskan cara menjaga nama baik keluarga."
+        },
+        {
+          "code": "9.3",
+          "text": "Menerangkan kepentingan menjaga nama baik keluarga."
+        },
+        {
+          "code": "9.4",
+          "text": "Menceritakan perasaan dalam mempertahankan nama baik keluarga."
+        },
+        {
+          "code": "9.5",
+          "text": "Mengamalkan sikap berani menjaga nama baik keluarga."
+        }
+      ],
+      "scenario": "Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga",
+      "textbook_unit_title": "Berani Demi Nama Baik Keluarga",
+      "textbook_printed_start_page": 57,
+      "textbook_pdf_start_page": 66,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 10,
+      "sk": "10.0",
+      "title": "Jujur Terhadap Ahli Keluarga",
+      "nilai": "Kejujuran",
+      "sp": [
+        {
+          "code": "10.1",
+          "text": "Menyenaraikan contoh sikap jujur."
+        },
+        {
+          "code": "10.2",
+          "text": "Menjelaskan cara bersikap jujur terhadap ahli keluarga."
+        },
+        {
+          "code": "10.3",
+          "text": "Mengkaji kesan bersikap jujur terhadap ahli keluarga."
+        },
+        {
+          "code": "10.4",
+          "text": "Menzahirkan perasaan bersikap jujur terhadap ahli keluarga."
+        },
+        {
+          "code": "10.5",
+          "text": "Mengamalkan sikap jujur terhadap ahli keluarga."
+        }
+      ],
+      "scenario": "Murid menjumpai wang keluarga yang tertinggal di atas meja",
+      "textbook_unit_title": "Jujur Selalu",
+      "textbook_printed_start_page": 65,
+      "textbook_pdf_start_page": 74,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 11,
+      "sk": "11.0",
+      "title": "Rajin Terhadap Ahli Keluarga",
+      "nilai": "Kerajinan",
+      "sp": [
+        {
+          "code": "11.1",
+          "text": "Menyenaraikan contoh sikap rajin yang boleh dilakukan terhadap ahli keluarga."
+        },
+        {
+          "code": "11.2",
+          "text": "Menjelaskan cara bersikap rajin terhadap ahli keluarga."
+        },
+        {
+          "code": "11.3",
+          "text": "Menghuraikan kepentingan bersikap rajin terhadap ahli keluarga."
+        },
+        {
+          "code": "11.4",
+          "text": "Menzahirkan perasaan apabila bersikap rajin terhadap ahli keluarga."
+        },
+        {
+          "code": "11.5",
+          "text": "Mengamalkan sikap rajin terhadap ahli keluarga."
+        }
+      ],
+      "scenario": "Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan",
+      "textbook_unit_title": "Sikap Rajin Amalan Keluarga",
+      "textbook_printed_start_page": 73,
+      "textbook_pdf_start_page": 82,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 12,
+      "sk": "12.0",
+      "title": "Kerjasama Dalam Keluarga",
+      "nilai": "Kerjasama",
+      "sp": [
+        {
+          "code": "12.1",
+          "text": "Menyenaraikan tugasan yang boleh dilakukan bersama-sama keluarga."
+        },
+        {
+          "code": "12.2",
+          "text": "Menghuraikan cara melaksanakan tugasan bersama-sama keluarga."
+        },
+        {
+          "code": "12.3",
+          "text": "Menjelaskan kesan bekerjasama dan tidak bekerjasama dengan ahli keluarga."
+        },
+        {
+          "code": "12.4",
+          "text": "Menzahirkan perasaan apabila melaksanakan tugasan bersama-sama keluarga."
+        },
+        {
+          "code": "12.5",
+          "text": "Mengamalkan sikap bekerjasama dengan ahli keluarga."
+        }
+      ],
+      "scenario": "Sekeluarga merancang gotong-royong membersihkan halaman",
+      "textbook_unit_title": "Kerjasama Meringankan Beban Keluarga",
+      "textbook_printed_start_page": 81,
+      "textbook_pdf_start_page": 90,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 13,
+      "sk": "13.0",
+      "title": "Kesederhanaan Dalam Keluarga",
+      "nilai": "Kesederhanaan",
+      "sp": [
+        {
+          "code": "13.1",
+          "text": "Memberi contoh bersikap sederhana dalam keluarga."
+        },
+        {
+          "code": "13.2",
+          "text": "Menghuraikan cara bersikap sederhana dalam keluarga."
+        },
+        {
+          "code": "13.3",
+          "text": "Menjelaskan kebaikan bersikap sederhana dalam keluarga."
+        },
+        {
+          "code": "13.4",
+          "text": "Menzahirkan perasaan apabila bersikap sederhana dalam keluarga."
+        },
+        {
+          "code": "13.5",
+          "text": "Mengamalkan sikap bersederhana dalam keluarga."
+        }
+      ],
+      "scenario": "Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat",
+      "textbook_unit_title": "Bersederhana Amalan Keluarga",
+      "textbook_printed_start_page": 89,
+      "textbook_pdf_start_page": 98,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    },
+    {
+      "year": 2,
+      "unit": 14,
+      "sk": "14.0",
+      "title": "Toleransi Terhadap Ahli Keluarga",
+      "nilai": "Toleransi",
+      "sp": [
+        {
+          "code": "14.1",
+          "text": "Memberi contoh sikap bertoleransi terhadap ahli keluarga."
+        },
+        {
+          "code": "14.2",
+          "text": "Menjelaskan cara bertoleransi terhadap ahli keluarga."
+        },
+        {
+          "code": "14.3",
+          "text": "Menghuraikan manfaat bertoleransi terhadap ahli keluarga."
+        },
+        {
+          "code": "14.4",
+          "text": "Melahirkan perasaan apabila dapat bertoleransi terhadap ahli keluarga."
+        },
+        {
+          "code": "14.5",
+          "text": "Mengamalkan sikap bertoleransi terhadap ahli keluarga."
+        }
+      ],
+      "scenario": "Adik-beradik berbeza pandangan tentang aktiviti hujung minggu",
+      "textbook_unit_title": "Toleransi Sesama Ahli Keluarga",
+      "textbook_printed_start_page": 97,
+      "textbook_pdf_start_page": 106,
+      "textbook_page_audit": "VERIFIED_TOC_START_ONLY"
+    }
+  ],
+  "textbook_page_audit": "VERIFIED_TOC_START_ONLY",
+  "textbook_page_lookup_path": "rpt_2027/pendidikan_moral/year2_book_toc_VERIFIED.json"
+}
