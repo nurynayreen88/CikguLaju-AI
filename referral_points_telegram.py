@@ -138,8 +138,19 @@ def install(ns):
             })
             award = result[0] if isinstance(result, list) and result else result or {}
             if award.get("awarded"):
-                send(admin, f"⭐ Referral: +{int(award['points'])} mata direkodkan "
+                points = int(award["points"])
+                send(admin, f"⭐ Referral: +{points} mata direkodkan "
                             f"untuk bayaran pengguna {payer}.")
+                try:
+                    refs = sb("GET", f"referral_signups?referred_user_id=eq.{payer}"
+                              "&select=referrer_user_id") or []
+                    if refs:
+                        send(int(refs[0]["referrer_user_id"]),
+                             f"🎉 Tahniah! +{points} mata referral telah direkodkan "
+                             "selepas pembayaran rakan disahkan. "
+                             "Taip /mata untuk semak jumlah terkini.")
+                except Exception:
+                    print("PRIVATE REFERRAL notification deferred", flush=True)
         except Exception as exc:
             # Payment has already succeeded. Never roll it back on referral failure.
             print("PRIVATE REFERRAL award error:", type(exc).__name__, flush=True)
