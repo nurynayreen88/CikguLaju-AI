@@ -47003,3 +47003,24 @@ def callback(cid, d):
         print('English supplementary download failed:', repr(exc), flush=True)
         return send(cid, 'Muat turun worksheet gagal. Sila cuba semula.')
 # === END ENGLISH Y4 SUPPLEMENTARY WORKSHEET DELIVERY ===
+
+# === ENGLISH YEAR 4 STANDALONE PREVIEW (STAGING OPT-IN; NO RELEASE) ===
+# Do not treat provisional Year 4 Markdown as teacher-approved RPH.
+# Production remains on the existing engine unless an isolated staging worker
+# explicitly sets CIKGULAJU_ENGLISH_Y4_STANDALONE_PREVIEW_20261105=1.
+_EN_Y4_STANDALONE_PREVIEW_BASE_20261105 = _rph_rows
+def _rph_rows(st, *args, **kwargs):
+    rows = _EN_Y4_STANDALONE_PREVIEW_BASE_20261105(st, *args, **kwargs)
+    if not isinstance(st, dict) or not isinstance(rows, dict):
+        return rows
+    import os as _en4_os
+    if _en4_os.environ.get('CIKGULAJU_ENGLISH_Y4_STANDALONE_PREVIEW_20261105') != '1':
+        return rows
+    try:
+        from english_y4_standalone_render import apply as _en4_apply
+        return _en4_apply(st, rows, allow_provisional=True)
+    except Exception as exc:
+        print('English Y4 standalone preview fallback:', repr(exc), flush=True)
+        return rows
+CIKGULAJU_ENGLISH_Y4_PREVIEW_GUARD_20261105 = 'DEFAULT_OFF_DRAFT_AND_AUDIO_FAIL_CLOSED'
+# === END ENGLISH Y4 STANDALONE PREVIEW ===
