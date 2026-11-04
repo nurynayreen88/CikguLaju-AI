@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: '3.11'}
+        with: {python-version: '3.12'}
       - name: Check official source codes and 16 detailed RPH source tasks
         run: python -m unittest discover -s tests -p 'test_english_y6_16_kpm_sow_making_music_20261104.py' -v
       - name: Install isolated native document QA dependencies
