@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyiapkan dua lakaran berlabel untuk kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan memilih satu berdasarkan rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyiapkan dua lakaran berlabel untuk kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan memilih satu berdasarkan rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben. Kriteria kejayaan: Dua lakaran berlabel, keputusan pilihan, dan urutan kerja yang boleh dilaksanakan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Lakaran alternatif** dalam tema **Cik Lebah dan Madu**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
