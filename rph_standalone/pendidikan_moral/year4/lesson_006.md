@@ -9,26 +9,24 @@
 **SP:** 2.5 — Mengamalkan sikap prihatin terhadap keperluan dan kebajikan jiran.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, peta jenis bantuan dan keperluan, borang semak; fail `materials/pendidikan_moral/year4/unit_02_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 4 m/s 16–19 (PDF 22–25), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year4/unit_02_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid dapat **memperagakan dua tindakan prihatin** terhadap kebajikan jiran dalam simulasi dan membaiki satu langkah melalui maklum balas (SP 2.5).
-
-**Kriteria kejayaan:** Dua tindakan membantu yang diperagakan dan satu penambahbaikan melalui maklum balas.
+Murid mempraktikkan dua perlakuan prihatin secara selamat dan menghasilkan cadangan membantu jiran. Kriteria kejayaan: Senarai semak dua tindakan simulasi, satu cadangan yang boleh dilaksanakan serta refleksi; jangan membuat inferens amalan rumah.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Jiran warga emas memerlukan bantuan membawa barang runcit**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Sikap Prihatin Amalan Mulia** dari Buku Teks m/s 16. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Rancang respons selamat:** Guru menunjukkan m/s 12: jiran dilanda ribut dan kanak-kanak terjatuh daripada basikal. Murid merangka dua cara membantu, termasuk memaklumkan orang dewasa, memberi kata semangat atau menyerahkan barangan dengan izin. Guru menegaskan murid tidak memasuki rumah rosak atau merawat kecederaan tanpa orang dewasa.
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru mengajak murid meneliti diorama 'Mari Membina Rumah' m/s 16 dan peta minda 'Jiran Selesa Hati Riang' m/s 17 sebagai model perancangan bantuan.
 
-**Aktiviti 2 (20 minit) — Simulasi membantu jiran:** Murid dalam kumpulan memainkan watak jiran, ahli keluarga dan pemerhati. Murid memberi respons mesra, meminta izin, memastikan keselamatan dan menunjukkan bantuan praktikal. Pemerhati menanda dua perlakuan; murid membuat satu pembetulan (SP 2.5).
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid membina kad cadangan/diorama kecil bantuan keperluan jiran dengan peranan kumpulan, kemudian membuat refleksi tindakan berhemah; elakkan memerlukan lawatan rumah sebenar.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan keprihatinan yang dapat dilihat serta satu penambahbaikan, bukan hanya jawapan lisan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua tindakan simulasi, satu cadangan yang boleh dilaksanakan serta refleksi; jangan membuat inferens amalan rumah. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **baik hati**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan yang boleh diamalkan secara selamat berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** m/s 10–12 (PDF 16–18), bahagian Unit 2; cadangan PdP berdasarkan gambar/cerita yang diperiksa, bukan pengesahan semua latihan SP.
+**Semakan visual buku teks:** Tahun 4, Unit 2 — **Sikap Prihatin Amalan Mulia**; halaman bercetak 16–19 (PDF 22–25). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 006 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view); [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026). Buku teks asal Drive ID `1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.
