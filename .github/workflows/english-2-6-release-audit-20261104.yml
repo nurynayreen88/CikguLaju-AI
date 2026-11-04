@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'web/english_y6_standalone_runtime.py'
+      - 'web/english_y4_standalone_runtime.py'
       - 'tests/test_english_y6_teacher_choice_20261104.py'
       - 'tools/audit_english_2_6_release_status_20261104.py'
       - '.github/workflows/english-2-6-release-audit-20261104.yml'
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - 'web/english_y6_standalone_runtime.py'
+      - 'web/english_y4_standalone_runtime.py'
       - 'tests/test_english_y6_teacher_choice_20261104.py'
       - 'tools/audit_english_2_6_release_status_20261104.py'
   workflow_dispatch:
