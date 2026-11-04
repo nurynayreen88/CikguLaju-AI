@@ -2,23 +2,24 @@
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
 **Unit RPT 2026:** Unit 4 — Cik Lebah dan Madu  
+**Buku Teks disemak:** ms 26–33; produk kotak makanan/pembungkusan 3D, lukisan, lipatan, cantuman dan kemasan ikatan reben  
 **Aktiviti/Tajuk:** Lakaran alternatif  
 **SK:** 3.1  
 **SP:** 3.2.1  
 **Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 4 — Cik Lebah dan Madu, ms 26-33 (rujukan unit buku)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kertas warna, kad, gam, pensel dan cat air  
+**BBM:** kad manila, pensel, pen penanda, gam, gunting hujung bulat dan reben  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyiapkan dua lakaran berlabel untuk panel karya lebah dan madu gabungan lukisan, kolaj serta corak dan memilih satu berdasarkan rupa heksagon sarang lebah, imbangan komposisi dan jalinan sayap. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyiapkan dua lakaran berlabel untuk kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan memilih satu berdasarkan rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Lakaran alternatif** dalam tema **Cik Lebah dan Madu**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan lakaran komposisi dan cara melabel fungsi, bahan serta bahagian utama panel karya lebah dan madu gabungan lukisan, kolaj serta corak. Murid mengenal pasti isu imbangan dan ruang.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan lakaran komposisi dan cara melabel fungsi, bahan serta bahagian utama kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman. Murid mengenal pasti isu imbangan dan ruang.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar dua pilihan susun atur bertema rupa heksagon sarang lebah, imbangan komposisi dan jalinan sayap, menilai kekuatan dan kelemahannya lalu memilih satu serta menyusun pelan kerja ringkas.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar dua pilihan susun atur bertema rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben, menilai kekuatan dan kelemahannya lalu memilih satu serta menyusun pelan kerja ringkas.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua lakaran berlabel, keputusan pilihan, dan urutan kerja yang boleh dilaksanakan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 

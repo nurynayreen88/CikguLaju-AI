@@ -2,23 +2,24 @@
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
 **Unit RPT 2026:** Unit 4 — Cik Lebah dan Madu  
+**Buku Teks disemak:** ms 26–33; produk kotak makanan/pembungkusan 3D, lukisan, lipatan, cantuman dan kemasan ikatan reben  
 **Aktiviti/Tajuk:** Penghasilan karya  
 **SK:** 3.1  
 **SP:** 3.2.2  
 **Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 4 — Cik Lebah dan Madu, ms 26-33 (rujukan unit buku)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kertas warna, kad, gam, pensel dan cat air  
+**BBM:** kad manila, pensel, pen penanda, gam, gunting hujung bulat dan reben  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menghasilkan komponen utama panel karya lebah dan madu gabungan lukisan, kolaj serta corak dengan dua teknik/bidang seni dan langkah yang selamat. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menghasilkan komponen utama kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dengan gabungan bidang menggambar dan membentuk serta membuat binaan dan langkah yang selamat. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Penghasilan karya** dalam tema **Cik Lebah dan Madu**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menyemak lakaran terdahulu dan mendemonstrasi gabungan media kertas warna, kad, gam, pensel dan cat air. Murid menyediakan ruang serta stesen alat secara berkumpulan.
+**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menyemak lakaran terdahulu dan mendemonstrasi gabungan media kad manila, pensel, pen penanda, gam, gunting hujung bulat dan reben. Murid menyediakan ruang serta stesen alat secara berkumpulan.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan panel karya lebah dan madu gabungan lukisan, kolaj serta corak dengan menekankan rupa heksagon sarang lebah, imbangan komposisi dan jalinan sayap, mencantum komponen secara selamat, menguji ketahanan atau kejelasan bentuk dan membaiki bahagian yang belum kemas.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dengan menekankan rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben, mencantum komponen secara selamat, menguji ketahanan atau kejelasan bentuk dan membaiki bahagian yang belum kemas.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Produk menunjukkan dua teknik, dua ciri bahasa seni, fungsi/aspek visual yang jelas serta amalan keselamatan. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
