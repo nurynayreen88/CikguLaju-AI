@@ -367,7 +367,9 @@ def install(ns):
                 folder = Path(tmp)
                 if kind == "rpt":
                     fname = "RPT_Pendidikan_Moral_Tahun_%d_2027_Kumpulan_%s.pdf" % (year,group)
-                    path = build_rpt_pdf(year, group, folder/fname)
+                    original = build_rpt_pdf(year, group, folder/"_moral_content.pdf")
+                    from rpt_2027.pendidikan_moral.add_cover import prepend_cover
+                    path = prepend_cover(year, group, original, folder/fname)
                     caption = "RPT Pendidikan Moral Tahun %d - 2027 Kumpulan %s (96 Sesi)" % (year,group)
                 elif kind == "rph_pdf":
                     path = build_rph_pdf(year, folder/("RPH_Pengukuhan_Moral_Tahun_%d.pdf" % year))
