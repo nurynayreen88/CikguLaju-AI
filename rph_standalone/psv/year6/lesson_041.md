@@ -5,7 +5,8 @@
 **Aktiviti/Tajuk:** Pameran mini akhir tahun  
 **SK:** 5.1  
 **SP:** 5.1.2; 5.1.3; 5.1.4  
-**Buku Teks:** projek pameran; tiada halaman khusus  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, projek pameran dan apresiasi (rujukan unit yang telah dipelajari)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** koleksi karya, kapsyen, pita boleh tanggal, senarai semak  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 

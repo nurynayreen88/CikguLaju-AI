@@ -3,9 +3,10 @@
 **Status:** DRAF SEMAK (belum aktif Telegram)  
 **Unit RPT 2026:** Unit 9 — Wau Bulan Sirih Pinang  
 **Aktiviti/Tajuk:** Dokumentasi dan apresiasi  
-**SK:** 3.1; 3.2; 4.1  
+**SK:** 3.1; 4.1  
 **SP:** 3.1.1; 3.2.3; 4.1.1  
-**Buku Teks:** ms 68–75 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 9 — Wau Bulan Sirih Pinang, ms 68-75 (rujukan unit buku)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kad ringan, kertas warna, gam, pita, tali dan lidi kertas tumpul  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 

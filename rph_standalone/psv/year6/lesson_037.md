@@ -1,11 +1,12 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 037
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
-**Unit RPT 2026:** Unit 10 — Beg Batik Rekaan  
+**Unit RPT 2026:** Unit 10 — Beg Batik Rekaanku  
 **Aktiviti/Tajuk:** Penghasilan karya  
-**SK:** 3.2  
+**SK:** 3.1  
 **SP:** 3.2.2  
-**Buku Teks:** ms 76–87 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 10 — Beg Batik Rekaanku, ms 76-87 (rujukan unit buku)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kertas tebal atau kanvas lembut, warna air, span, gam dan templat beg  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
@@ -13,7 +14,7 @@
 Menghasilkan komponen utama rekaan beg bercorak batik melalui media selamat tanpa lilin panas dengan dua teknik/bidang seni dan langkah yang selamat. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Penghasilan karya** dalam tema **Beg Batik Rekaan**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Penghasilan karya** dalam tema **Beg Batik Rekaanku**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
 **Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menyemak lakaran terdahulu dan mendemonstrasi gabungan media kertas tebal atau kanvas lembut, warna air, span, gam dan templat beg. Murid menyediakan ruang serta stesen alat secara berkumpulan.
 

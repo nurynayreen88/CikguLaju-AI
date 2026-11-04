@@ -1,11 +1,12 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 036
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
-**Unit RPT 2026:** Unit 10 — Beg Batik Rekaan  
+**Unit RPT 2026:** Unit 10 — Beg Batik Rekaanku  
 **Aktiviti/Tajuk:** Lakaran reka bentuk  
-**SK:** 3.2  
+**SK:** 3.1  
 **SP:** 3.2.1  
-**Buku Teks:** ms 76–87 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 10 — Beg Batik Rekaanku, ms 76-87 (rujukan unit buku)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kertas tebal atau kanvas lembut, warna air, span, gam dan templat beg  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
@@ -13,7 +14,7 @@
 Menyiapkan dua lakaran berlabel untuk rekaan beg bercorak batik melalui media selamat tanpa lilin panas dan memilih satu berdasarkan susunan motif batik, kontra warna, ritma dan kegunaan beg. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Lakaran reka bentuk** dalam tema **Beg Batik Rekaan**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Lakaran reka bentuk** dalam tema **Beg Batik Rekaanku**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
 
 **Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan lakaran komposisi dan cara melabel fungsi, bahan serta bahagian utama rekaan beg bercorak batik melalui media selamat tanpa lilin panas. Murid mengenal pasti isu imbangan dan ruang.
 
