@@ -1,0 +1,32 @@
+name: English Primary 800 independently checked SOW PDF codes
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'audits/english_2_6_independent_sow_pdf_code_ledger_20261104.json'
+      - 'audits/english_y4_l030_direct_source_audio_20261104.json'
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+      - 'tests/test_english_800_independent_sow_source_20261104.py'
+      - '.github/workflows/english-800-independent-sow-proof.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'audits/english_2_6_independent_sow_pdf_code_ledger_20261104.json'
+      - 'audits/english_y4_l030_direct_source_audio_20261104.json'
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  source-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Validate 800 PDF-source code pairs and Year 4 Lesson 30 provenance
+        run: python -m unittest discover -s tests -p 'test_english_800_independent_sow_source_20261104.py' -v
+      - name: Year 4 pending lesson and Year 5 regression
+        run: python -m unittest discover -s tests -p 'test_english_y4_y5_full_draft_preview.py' -v
+      - name: Year 4 fixed source regression
+        run: python -m unittest discover -s tests -p 'test_english_y4_word_pdf_rows.py' -v

@@ -1,0 +1,62 @@
+{
+  "version": "year4_l030_direct_printed_and_mp3_evidence_20261104_v1",
+  "lesson": "English Year 4 Lesson 30 (Writing 6)",
+  "reported": "2026-11-04",
+  "printed_sources": {
+    "sow": {
+      "drive_file_id": "13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S",
+      "document": "Primary Year 4 SK SOW.pdf",
+      "printed_page": 66,
+      "lesson": 30,
+      "main_ls": "4.3.2",
+      "complementary_ls": "1.2.5",
+      "activity_2_audio": "CD2 Track 29",
+      "check": "PDF extracted text in actual Lesson 30"
+    },
+    "teacher_book": {
+      "drive_file_id": "1lBWc96e8DCIMSdxzRuLC7CissHL52q8v",
+      "document": "Get Smart Plus 4 Teacher's Book.pdf",
+      "printed_page": 39,
+      "pdf_page": 25,
+      "activity_2_audio": "Class CD1 - Track 29",
+      "check": "Direct visual inspection of printed p.39; activity 2 instructions refer pupils to listening/dialogue and questions"
+    },
+    "student_book": {
+      "drive_file_id": "12IyGg-Mw3Pn38GxZGkVrqGkjMVJsgZfN",
+      "document": "Get Smart Plus 4 Student's Book.pdf",
+      "printed_page": 20,
+      "pdf_page": 20,
+      "activities": [
+        "Activity 1: work in pairs to complete John/Mandy schedule",
+        "Activity 2: Listen and read. Then ask and answer."
+      ],
+      "check": "Direct visual inspection of printed p.20"
+    }
+  },
+  "audio_files": {
+    "CD1_Track29": {
+      "drive_file_id": "15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct",
+      "name": "29 Track 29.mp3",
+      "bytes": 218335,
+      "ffprobe_duration_seconds": 13.325938,
+      "sha256": "7e19b89af1a1cea0d71029a0b6ab6ca3f6a7aed5962258d432649aeca4e5b226",
+      "ffmpeg_decodes": true
+    },
+    "CD2_Track29": {
+      "drive_file_id": "1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob",
+      "name": "29 Track 29.mp3",
+      "bytes": 245857,
+      "ffprobe_duration_seconds": 15.046063,
+      "sha256": "bd1478b3d90f055a4ad6d9f1a3ebefbd303e70cd6479597106fddebc5a06bd8e",
+      "ffmpeg_decodes": true
+    }
+  },
+  "determination": "TB p.39 printed source explicitly assigns CD1 Track 29 to Activity2; SOW Lesson30 says CD2 Track29. These are different decodable MP3 files and must never be treated as identical. Existing RPH aligns to TB reference. Conflict is documented, not concealed.",
+  "not_verified": [
+    "Content of speech/transcript matched to SB p20 Activity2",
+    "Telegram delivery mapping to this exact CD1 file",
+    "User-account Word and native PDF end-to-end delivery",
+    "Final classroom teacher sign-off"
+  ],
+  "final_ready": false
+}

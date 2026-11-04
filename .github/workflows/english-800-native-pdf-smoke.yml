@@ -1,0 +1,31 @@
+name: English 2–6 native ReportLab PDF offline smoke
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/verify_english_800_native_pdf_contract_20261104.py'
+      - '.github/workflows/english-800-native-pdf-smoke.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  native-pdf-pilot:
+    strategy:
+      fail-fast: false
+      matrix: {year: [2, 3, 4, 5, 6]}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install native ReportLab and PDF reader
+        run: python -m pip install reportlab==4.2.5 pypdf==5.1.0
+      - name: Run all 160 native ReportLab RPH PDFs for this English Year
+        run: python tools/verify_english_800_native_pdf_contract_20261104.py --year ${{ matrix.year }} --all
+      - name: Upload per-Lesson native PDF diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y${{ matrix.year }}-native-pdf-smoke
+          path: output/english_2_6_native_pdf_smoke_20261104/year${{ matrix.year }}/native_pdf_report.json
+          retention-days: 14
