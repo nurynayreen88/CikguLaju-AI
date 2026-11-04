@@ -6,7 +6,7 @@
 **Tajuk aktiviti:** Penilaian  
 **Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
 **Standard Pembelajaran (SP):** 3.3.2 (iii), (iv) — Mengedit dan memurnikan ayat daripada aspek ejaan, tanda baca dan penggunaan imbuhan  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 85  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 86  
 **Fokus:** tulisan — Penilaian  
 **Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Penilaian' yang menepati kemahiran penulisan dalam SP.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
