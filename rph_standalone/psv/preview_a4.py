@@ -48,8 +48,10 @@ def load(year: int, pdp: int, *, preview: bool = False):
             break
         for key, val in FIELD_RE.findall(line):
             meta[key.strip()] = plain(val)
-    if 'DRAF' in meta.get('Status', '').upper() and not preview:
-        raise ValueError(f'RPH {year}/{pdp:03d} is DRAF; public export is disabled')
+    # Intentional hard gate: this is a QA-only renderer, never a public delivery route.
+    # A renamed status alone cannot unlock export without a future approved adapter.
+    if not preview:
+        raise ValueError(f'RPH {year}/{pdp:03d} is DRAF/unverified; public export is disabled')
     if not meta.get('SP') or not meta.get('SK'):
         raise ValueError('Missing SK/SP')
     obj = re.search(r'## Objektif dan kriteria kejayaan\s*\n(.*?)\n\s*## Langkah PdP', raw, re.S)
@@ -81,6 +83,7 @@ def fields(data):
         ('Unit/Tajuk', unit + (' | ' + topic if topic else '')),
         ('SK/SP', meta['SK'] + ' | ' + meta['SP']),
         ('Buku Teks', book),
+        ('Tempoh', meta.get('Tempoh', meta.get('Masa', '60 minit'))),
         ('BBM', meta.get('BBM', '')),
     ]
 
