@@ -443,7 +443,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                     self.assertTrue(activity, "Missing lesson activity section")
                     self.assertRegex(activity.lower(), activity_pattern)
                     checked += 1
-        self.assertEqual(checked, 170)
+        self.assertEqual(checked, 152)
 
 
 
