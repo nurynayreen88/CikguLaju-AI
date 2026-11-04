@@ -93,6 +93,17 @@ except Exception as _y5_choices_exc:
     print("English Year 5 choice proposals unavailable:", repr(_y5_choices_exc), flush=True)
 
 
+# Apply the tested text-preserving 8pt Word A4 compact layout only to the
+# nine English Year 5 teacher-choice DRAFT proposals. Native PDF and all
+# other years/subjects retain their existing generator and layout.
+try:
+    from web.english_y5_choice_word_a4_runtime import install as install_y5_choice_word_a4
+    ENGLISH_Y5_TEACHER_CHOICE_WORD_A4_ACTIVE = install_y5_choice_word_a4(telegram_runtime)
+except Exception as _y5_choice_a4_exc:
+    ENGLISH_Y5_TEACHER_CHOICE_WORD_A4_ACTIVE = False
+    print("English Year 5 choice Word A4 unavailable:", repr(_y5_choice_a4_exc), flush=True)
+
+
 app = telegram_runtime.app
 
 
