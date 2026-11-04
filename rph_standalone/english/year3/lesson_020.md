@@ -21,6 +21,8 @@ Groups draft sentences for routine flashcards, write them on the board and peer-
 **Pupils:** Pupils complete Workbook p.10, Activity 2, using 'always', 'sometimes' and 'never' in sentences about routines.
 Teacher checks sentence range, third-person verb endings, capitals and full stops. Pupils revise their drafts.
 
+**Workbook practice:** Pupils complete Workbook p.10, Activity 2, using 'always', 'sometimes' and 'never' in sentences about routines. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one corrected routine sentence.
 

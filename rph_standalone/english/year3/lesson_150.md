@@ -20,6 +20,8 @@ Teacher names an adjective. Pairs order their animal cards and explain compariso
 **Pupils:** Pupils complete Workbook p.78, Activity 2, by listening to the descriptions and numbering the monster pictures (1–3).
 Teacher asks pupils to order animal cards after hearing two adjectives and explain one comparison.
 
+**Workbook practice:** If the matching recording is verified and available, listen and number the three monsters in Workbook p.78, Activity 2. Otherwise, respond to the teacher's spoken comparison descriptions for listening assessment; do not treat the Workbook audio task as completed. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils give one comparison.
 

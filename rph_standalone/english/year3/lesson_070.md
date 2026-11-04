@@ -20,6 +20,7 @@ Teacher revisits the Grammar Box on Student's Book p.47 and guides Activity 3 fr
 **Pupils:** Listen, identify who owns each object and answer two detail questions; do not repeat Workbook p.37, Activity 2.
 Pupils identify two listening details and answer one question about the recording.
 
+**Workbook note:** Workbook p.37, Activity 2 covers object locations rather than ownership and is not assigned for this lesson.
 ## Closure (5 minutes)
 Pupils ask and answer one ownership question.
 

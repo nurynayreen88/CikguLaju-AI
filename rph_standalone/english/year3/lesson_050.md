@@ -20,6 +20,8 @@ Teacher distributes season pictures to small groups. Pupils discuss weather in d
 **Pupils:** Pupils complete Workbook p.30, Activity 2, by writing about their favourite season and its weather.
 Pupils give two facts about themselves and identify a season from a partner's short description.
 
+**Workbook practice:** Complete Workbook p.30, Activity 3, then tell a partner their favourite season and describe the weather. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a favourite season and weather phrase.
 

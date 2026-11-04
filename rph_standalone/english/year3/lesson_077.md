@@ -20,6 +20,8 @@ Teacher introduces the text about Sue's house on Student's Book p.51. Pupils rea
 **Pupils:** Pupils complete Workbook p.40, Activity 1, by comparing two houses and writing where the furniture is.
 Pupils state the main idea and locate two supporting details in the reading text.
 
+**Workbook practice:** Write questions and possessive answers about the pictured furniture in Bob's and Sally's houses in Workbook p.40, Activity 1. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one similarity between Sue's house and their own home.
 

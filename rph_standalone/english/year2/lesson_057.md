@@ -31,6 +31,8 @@
 **Teacher:** Listen for three intelligible clothing descriptions and two relevant individual answers. Note prompts required.  
 **Pupils:** Respond individually.
 
+**Workbook practice:** Pupils complete Workbook p.83, Activity 1, by matching the clothing pictures with the correct sentences. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
 **Pupils:** Share one correct example.

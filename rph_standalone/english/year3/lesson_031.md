@@ -21,6 +21,8 @@ Teacher guides the career-day story using Student's Book pp.22–23 and Teacher'
 **Pupils:** Pupils complete Workbook p.15, Activity 1, by matching the story characters to their jobs and actions.
 Teacher observes responses to the story and spoken descriptions of chosen jobs. Pupils explain one character or occupation.
 
+**Workbook practice:** Pupils complete Workbook p.15, Activity 1, by matching the story characters to their jobs and actions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a job they would like to do and give one reason.
 

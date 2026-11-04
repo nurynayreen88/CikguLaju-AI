@@ -20,6 +20,8 @@ Pupils read Student's Book p.98, verify the planet order from the first paragrap
 **Pupils:** Pupils complete Workbook p.80, Activity 1, by naming the planets in the Solar System diagram.
 Teacher checks the order of planets from the text, asks two factual questions and has pupils explain one new word using a visual clue.
 
+**Workbook practice:** Pupils complete Workbook p.80, Activity 1, by naming the planets in the Solar System diagram. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one planet fact.
 

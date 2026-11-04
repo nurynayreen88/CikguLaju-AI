@@ -28,6 +28,8 @@
 **Teacher (10 min):** Record four located details and two short answers for each pupil.
 **Pupils:** Provide individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.113, Activity 1, by reading the beach passage and choosing the correct words. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
 **Pupils:** Share one useful word.

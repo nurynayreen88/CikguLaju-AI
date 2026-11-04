@@ -20,6 +20,8 @@ Teacher guides Student's Book pp.46–47 and Teacher's Book pp.76–77. Pupils l
 **Pupils:** Pupils complete Workbook p.36, Activity 2, by comparing two rooms and writing sentences about their furniture.
 Pupils locate one unfamiliar word in a dictionary and write two legible cursive words.
 
+**Workbook practice:** Compare the two room pictures and write sentences about their differences in Workbook p.36, Activity 2. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one newly learned household word.
 

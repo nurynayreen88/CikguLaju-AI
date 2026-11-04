@@ -20,6 +20,8 @@ Pairs sequence model-making instructions, listen to check the order, build a Sol
 **Pupils:** Read and sequence four original model-making instructions, then locate two details.
 Teacher checks each pair's sequence of model instructions and asks each pupil to explain one completed step using an instruction word.
 
+**Workbook practice:** Pupils complete Workbook p.80, Activity 1, by labelling the planets on a Solar System diagram. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils explain one model step.
 

@@ -20,6 +20,8 @@ Pupils practise Activity 1 and a Snap game, asking questions about past activiti
 **Pupils:** Ask a partner three different 'Did you...?' questions and respond using 'Yes, I did' or 'No, I didn't', without repeating Workbook p.71, Activity 1.
 Pupils ask two questions beginning 'Did you' and respond using 'Yes, I did' or 'No, I didn't'. Teacher records responses.
 
+**Workbook practice:** Pupils complete Workbook p.71, Activity 1, by answering questions about past activities in the picture. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one past-tense answer.
 

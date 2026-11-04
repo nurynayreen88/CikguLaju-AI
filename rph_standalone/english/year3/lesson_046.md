@@ -20,6 +20,8 @@ Pupils write sentences about their pictures, exchange work for peer review, redr
 **Pupils:** Pupils complete Workbook p.22, Activity 2, by writing sentences about the sports shown in the picture.
 Teacher checks planning, drafting and short oral narration of pictured events. Pupils explain their work to partners.
 
+**Workbook practice:** Pupils complete Workbook p.22, Activity 2, by writing sentences about the sports shown in the picture. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Teacher displays selected work and invites pupils to share a corrected sentence.
 

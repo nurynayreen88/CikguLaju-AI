@@ -20,6 +20,8 @@ Teacher models descriptions of children using positive and negative sentences. P
 **Pupils:** Write and exchange original action clues, then correct one sentence; do not repeat Workbook p.19, Activity 2.
 Teacher checks descriptions and reading comprehension, marking errors for revision in Lesson 43.
 
+**Workbook practice:** Pupils complete Workbook p.19, Activity 2, by writing present continuous descriptions of household activities. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils read one corrected description and identify its matching picture.
 

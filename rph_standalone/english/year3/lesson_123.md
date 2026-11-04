@@ -20,6 +20,8 @@ Pupils predict which places and adjectives match the characters in Student's Boo
 **Pupils:** Listen to three short descriptions and identify places and adjectives using the new sheet.
 Teacher asks pupils to identify two details from the listening and demonstrate a phrase for asking clarification.
 
+**Workbook practice:** Pupils complete Workbook p.63, Activity 1, by writing adjectives to describe places in the past. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils describe an interesting place.
 

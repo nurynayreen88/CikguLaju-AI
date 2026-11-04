@@ -21,6 +21,8 @@ Teacher guides the Grammar Box and Activity 2. Pupils write animal word cards an
 **Teacher:** Check each pupil's animal word cards for correct plural spelling and legible handwriting.
 **Pupils:** Submit the cards and correct one error.
 
+**Workbook practice:** Pupils complete Workbook p.53, Activity 1, by writing the singular and plural forms of animal names. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils give one singular and plural word pair.
 

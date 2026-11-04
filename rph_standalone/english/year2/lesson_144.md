@@ -28,6 +28,8 @@
 **Teacher (10 min):** Check each pupil's four legible words and two sentences for correct capitals, word spacing and full stops.
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.106, Activity 1, by writing the missing beach-action words under the pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
 **Pupils:** Share one useful word.

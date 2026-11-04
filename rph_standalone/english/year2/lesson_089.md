@@ -27,6 +27,8 @@
 **Teacher (10 min):** Record two main-idea responses (SP 3.2.1) and three written ability sentences (SP 4.2.2).
 **Pupils:** Submit individual reading and writing evidence.
 
+**Workbook practice:** Pupils complete Workbook p.95, Activity 1, by writing numbers to match the illustrated body-part descriptions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review spacing and punctuation.
 **Pupils:** Read one sentence.

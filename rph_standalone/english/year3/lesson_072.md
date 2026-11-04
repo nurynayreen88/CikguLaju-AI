@@ -20,6 +20,8 @@ Teacher guides Student's Book pp.48–49 using Teacher's Book pp.78–79. Pupils
 **Pupils:** Pupils complete Workbook p.38, Activity 1, by writing sentences about the rooms and furniture in a house.
 Pupils state the main idea of the text and infer one word from its surrounding clues.
 
+**Workbook practice:** Rewrite the printed house and furniture sentences in Workbook p.38, Activity 1, inserting the given adjectives. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one similarity or difference between Japanese and Malaysian homes.
 

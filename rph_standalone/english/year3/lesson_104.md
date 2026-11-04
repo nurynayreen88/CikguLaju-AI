@@ -20,6 +20,8 @@ Teacher displays four texts around the classroom. Pupils read and match them to 
 **Pupils:** Pupils complete Workbook p.54, Activity 1, by matching rules to the correct places.
 Teacher asks each pupil to match one text to a place, state its main idea and explain one word from context. Pupils point to supporting text.
 
+**Workbook practice:** Pupils complete Workbook p.54, Activity 1, by matching rules to the correct places. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a rule for one place.
 

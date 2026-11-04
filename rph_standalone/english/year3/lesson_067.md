@@ -20,6 +20,8 @@ Teacher follows the Vocabulary and Activity 1 guidance from Teacher's Book p.76.
 **Pupils:** Pupils complete Workbook p.39, Activity 1, by filling in missing words in the picture story.
 Pupils answer two reading-detail questions and spell three familiar words from the text.
 
+**Workbook practice:** Pupils complete Workbook p.39, Activity 1, by rereading the story and completing the Picture 1–4 sentences using picture clues. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a new word and its meaning.
 

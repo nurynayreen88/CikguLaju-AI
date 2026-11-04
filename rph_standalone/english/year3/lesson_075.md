@@ -20,6 +20,8 @@ Teacher guides Student's Book pp.49–50 using Teacher's Book pp.79–80. Pupils
 **Pupils:** Pupils complete Workbook p.37, Activity 1, by listening and drawing the missing objects in the bedroom.
 Pupils identify two syllable patterns and give one short spoken description.
 
+**Workbook practice:** Listen and draw lines connecting the objects to their bedroom locations in Workbook p.37, Activity 1. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils pronounce two target words and identify their syllables.
 

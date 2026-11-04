@@ -24,6 +24,8 @@
 **Teacher:** Check each pupil's written steps for sequence, clear instructions and spelling.
 **Pupils:** Submit their recipe steps and correct one error.
 
+**Workbook practice:** Pupils complete Workbook p.45, Activity 1, by unscrambling food words linked to omelette ingredients. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Invite a final example and recap key verbs.
 **Pupils:** Read one cooking instruction aloud.

@@ -20,6 +20,8 @@ Pupils complete missing present or past forms of be in their texts, then pair A 
 **Pupils:** Pupils complete Workbook p.66, Activity 1, by matching questions about past events with the correct answers.
 Teacher asks pupils to identify two details from the texts and answer one partner question about past or present events.
 
+**Workbook practice:** Pupils complete Workbook p.66, Activity 1, by matching questions about past events with the correct answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils give one present and past sentence pair.
 

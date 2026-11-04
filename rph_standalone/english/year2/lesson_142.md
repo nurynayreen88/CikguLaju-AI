@@ -28,6 +28,8 @@
 **Teacher (10 min):** Record each pupil's three relevant responses, two intelligible questions and one clear object description.
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.109, Activity 1, by matching the questions about beach objects with their answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach expression.
 **Pupils:** Share one useful word.

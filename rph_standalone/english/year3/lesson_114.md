@@ -20,6 +20,8 @@ Pairs practise SB p.75 Activity 2 using real answers about yesterday, request he
 **Pupils:** Pupils complete Workbook p.60, Activity 2, by choosing 'was' or 'were' to describe where people were yesterday.
 Teacher listens to each pupil recount one place visited yesterday and make one polite request for help or clarification. Pupils respond to a partner.
 
+**Workbook practice:** Pupils complete Workbook p.60, Activity 2, by choosing 'was' or 'were' to describe where people were yesterday. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one partner's answer.
 

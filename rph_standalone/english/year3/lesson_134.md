@@ -20,6 +20,8 @@ Pupils complete TB p.133 Activity 3, then play True/False about Bob and Lucy's f
 **Pupils:** Listen to a new forest-trip account, identify true or false statements and correct one detail using the new sheet.
 Teacher reads three statements about Bob and Lucy's trip. Pupils identify true or false and correct one false detail.
 
+**Workbook practice:** Pupils complete Workbook p.68, Activity 3, by matching the holiday pictures with the correct children. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils name one past activity.
 

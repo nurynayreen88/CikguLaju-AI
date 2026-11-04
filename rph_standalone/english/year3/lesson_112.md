@@ -20,6 +20,8 @@ Pupils identify correct and incorrect directions on a worksheet, then write shor
 **Pupils:** Pupils complete Workbook p.58, Activity 1, by matching each direction sign to the words that form its instruction.
 Teacher checks each pupil's corrected route instructions against the map and asks them to identify one clue from the original written directions. Pupils revise an inaccurate step.
 
+**Workbook practice:** Pupils complete Workbook p.58, Activity 1, by matching direction signs with the correct words. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one correct route instruction.
 

@@ -20,6 +20,8 @@ Pupils read short texts and match each one to a child. Teacher guides Student's 
 **Pupils:** Pupils complete Workbook p.20, Activity 2, by writing positive and negative present continuous sentences about sports.
 Teacher checks the main idea and two details from each text, noting pupils who need extra support.
 
+**Workbook practice:** Pupils complete Workbook p.20, Activity 2, by writing positive and negative present continuous sentences about sports. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one activity a child is or is not doing.
 

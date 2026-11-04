@@ -30,6 +30,8 @@
 **Teacher:** Assess two interpretations using visual clues (SP 1.3.1) and two spoken object descriptions (SP 2.1.5). Record independent performance and support required.  
 **Pupils:** Demonstrate the skill individually.
 
+**Workbook practice:** Pupils complete Workbook p.90, Activity 1, by writing the material names cotton, wool and leather under the pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Recap two words and ask for a relevant sentence.  
 **Pupils:** Share a word and sentence.

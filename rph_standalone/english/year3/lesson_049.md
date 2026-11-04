@@ -21,6 +21,8 @@ Teacher guides Vocabulary and Activity 1 from Teacher's Book p.60. Pupils listen
 **Pupils:** Pupils complete Workbook p.29, Activity 1, by matching pictures with seasons and weather.
 Pupils identify two key words heard and ask one appropriate question to obtain missing information.
 
+**Workbook practice:** Listen and tick the correct pictures in Workbook p.29, Activity 1. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a favourite season and one weather word.
 

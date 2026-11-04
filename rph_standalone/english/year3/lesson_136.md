@@ -20,6 +20,8 @@ Pupils listen while reading Katie's diary, infer key vocabulary, check meanings 
 **Pupils:** Pupils complete Workbook p.70, Activity 1, by completing the diary entry using the past simple forms of the verbs in brackets.
 Teacher asks pupils to locate two details in Katie's diary and check one unfamiliar word in a dictionary.
 
+**Workbook practice:** Pupils complete Workbook p.70, Activity 1, by filling in missing past-tense verbs in a holiday diary. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one diary detail.
 

@@ -20,6 +20,8 @@ Teacher guides Activity 3 using Teacher's Book p.49. Pupils listen for details a
 **Pupils:** Pupils complete Workbook p.19, Activity 2, by writing answers about what the pictured people are doing.
 Pupils identify two details from the recording and explain one word using a contextual clue.
 
+**Workbook practice:** Pupils complete Workbook p.19, Activity 2, by writing answers about what the pictured people are doing. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share two new action words and perform one mime.
 

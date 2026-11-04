@@ -20,6 +20,8 @@ Pupils listen to descriptions and identify animals. In pairs, pupils draw and la
 **Pupils:** Pupils complete Workbook p.77, Activity 1, by looking at the pictures and completing the comparative sentences about the animals.
 Teacher listens to each pupil make two animal comparisons using '-er than' and identify an animal from a partner's description.
 
+**Workbook practice:** Pupils complete Workbook p.77, Activity 1, by comparing animals using comparative adjectives. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils sing along to the animal comparison song, focusing on comparative phrases.
 

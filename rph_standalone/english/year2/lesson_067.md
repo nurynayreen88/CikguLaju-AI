@@ -33,6 +33,8 @@
 **Teacher:** Check two relevant personal-information questions and two correctly punctuated guided sentences. Record accuracy and assistance needed.  
 **Pupils:** Demonstrate the skill individually.
 
+**Workbook practice:** Pupils complete Workbook p.85, Activity 1, by reading the clothing descriptions and matching them to the named characters. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Review two useful clothing words and invite a relevant response.  
 **Pupils:** Share one word and one sentence.

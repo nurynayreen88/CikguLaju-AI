@@ -20,6 +20,8 @@ Teacher guides Student's Book pp.38–39 and Teacher's Book pp.64–65. Pupils r
 **Pupils:** Read two short country texts, identify details, underline evidence and ask a partner for help; do not repeat Workbook p.30, Activity 2.
 Pupils locate two details in the reading text and use one polite request for help when needed.
 
+**Workbook practice:** Compare the Sydney and Colorado pictures in Workbook p.30, Activity 2, and answer the printed questions orally. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one fact about a country and compare it with Malaysia.
 

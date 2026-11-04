@@ -29,6 +29,8 @@
 **Teacher (10 min):** Record three basic personal questions (SP 2.1.2) and three personal ability responses (SP 2.1.1).
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.99, Activity 1, by reading the children's descriptions of what they can and cannot do. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
 **Pupils:** Share one word or sentence.

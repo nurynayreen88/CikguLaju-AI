@@ -22,6 +22,8 @@
 **Pupils:** Pupils complete the family drawing-and-writing task in Workbook p.6, Activity 2, using sentences about their family.
 **Teacher:** Review descriptions and cursive handwriting; include learning diary reflection. **Pupils:** Submit two family sentences and demonstrate readable cursive letters; correct one error after feedback.
 
+**Workbook practice:** Pupils complete the family drawing-and-writing task in Workbook p.6, Activity 2, using sentences about their family. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Discuss neat writing and a useful family description. **Pupils:** Summarise one thing learned.
 

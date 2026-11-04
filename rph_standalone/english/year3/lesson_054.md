@@ -20,6 +20,8 @@ Teacher guides Student's Book p.37 Activity 3 following Teacher's Book p.63. Pup
 **Pupils:** Pupils complete Workbook p.29, Activity 2, by reading and writing about the weather in different seasons.
 Pupils identify two details from the listening task and answer one follow-up question aloud.
 
+**Workbook practice:** Read the activity descriptions and write the corresponding days of the week in Workbook p.27, Activity 1. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one activity they often or never do.
 

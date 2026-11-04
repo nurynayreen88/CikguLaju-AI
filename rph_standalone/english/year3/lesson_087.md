@@ -21,6 +21,8 @@ Pupils draw their own omelette and mingle, asking 'Are there any tomatoes in you
 **Teacher:** Observe each pupil asking one ingredient question, answering a partner and describing an ingredient.
 **Pupils:** Ask and answer about their omelette ingredients.
 
+**Workbook practice:** Pupils complete Workbook p.45, Activity 2, by answering questions about the ingredients in Anna's and Greg's omelettes. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a question they used to find a partner.
 

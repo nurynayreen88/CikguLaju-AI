@@ -20,6 +20,8 @@ Pupils sort place, activity and adjective cards, then combine them into sensible
 **Pupils:** Pupils complete Workbook p.61, Activity 2, by circling 'Was' or 'Were' in each question, then matching each question to the correct short answer.
 Teacher asks two listening-detail questions. Pupils answer and describe one place using a suitable adjective.
 
+**Workbook practice:** Pupils complete Workbook p.61, Activity 2, by matching questions about yesterday with short answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils describe one place and feeling.
 

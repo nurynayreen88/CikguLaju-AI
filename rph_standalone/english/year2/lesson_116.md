@@ -27,6 +27,8 @@
 **Teacher (10 min):** Score five reading details (SP 3.2.2) and two non-verbal responses (SP 2.2.1). Score five individual detail answers (0–5) and two oral responses (0–2); record independent accuracy and any support.
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.103, Activity 1, by drawing and labelling examples of what their robot can do. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
 **Pupils:** Share one word or phrase.

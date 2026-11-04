@@ -20,6 +20,8 @@ Teacher follows Warm Up, Vocabulary and Activity 1 from Teacher's Book pp.74–7
 **Pupils:** Pupils complete Workbook p.36, Activity 1, by colouring the house picture and identifying its furniture.
 Pupils identify two details and three familiar words from the spoken input.
 
+**Workbook practice:** Read the house description in Workbook p.36, Activity 1, then draw and colour the details described. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils describe where one classroom object is located.
 

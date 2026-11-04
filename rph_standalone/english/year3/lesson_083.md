@@ -24,6 +24,8 @@
 **Teacher:** Ask pupils to infer one word meaning from context and locate two details in the text.
 **Pupils:** Explain the word meaning and point to evidence for both details.
 
+**Workbook practice:** Pupils complete Workbook p.45, Activity 2, by answering questions about the ingredients in Anna's and Greg's omelettes. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Invite brief responses and recap key vocabulary.
 **Pupils:** Share their preferred omelette and one ingredient.

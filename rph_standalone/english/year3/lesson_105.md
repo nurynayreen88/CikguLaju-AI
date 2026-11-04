@@ -20,6 +20,8 @@ Teacher introduces rule symbols and guides Activity 3. Pupils write short rules 
 **Pupils:** Pupils complete Workbook p.54, Activity 2, by writing three rules for their bedroom.
 Teacher checks each pupil's two written rules for clear meaning, capital letters and end punctuation. Pupils correct one sentence.
 
+**Workbook practice:** Pupils complete Workbook p.54, Activity 2, by writing three rules for their bedroom. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one classroom rule.
 

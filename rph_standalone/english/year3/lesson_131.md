@@ -20,6 +20,8 @@ Pairs use A/B worksheets and a dictionary to explore forest-story words, drawing
 **Pupils:** Pupils complete Workbook p.69, Activity 1, by finding the verbs in the word search and completing the sentences using their past simple forms.
 Pupils explain one forest word using story clues, then confirm its meaning with a dictionary.
 
+**Workbook practice:** Pupils complete Workbook p.69, Activity 1, by writing the correct past-tense action words beside the pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one new forest word.
 

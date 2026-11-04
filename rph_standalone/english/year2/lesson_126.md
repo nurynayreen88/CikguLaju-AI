@@ -28,6 +28,8 @@
 **Teacher (10 min):** Record three main-idea choices (SP 1.2.1) and two interpretations using visual clues (SP 1.3.1) per pupil.
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.106, Activity 1, by completing the beach-action sentences with the words provided. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review a useful beach word.
 **Pupils:** Share one new word.

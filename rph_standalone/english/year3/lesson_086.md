@@ -24,6 +24,8 @@
 **Teacher:** Ask two supported questions and one detail question; note individual responses.
 **Pupils:** Answer orally or point to the correct food picture.
 
+**Workbook practice:** Listen and answer questions about ingredients heard, then write answers to the printed omelette questions in Workbook p.45, Activity 2. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Recap the listening clues and sentence patterns.
 **Pupils:** Describe one present and one absent ingredient.

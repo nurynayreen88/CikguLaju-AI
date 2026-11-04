@@ -20,6 +20,8 @@ Teacher says rules; pupils match them to places and write the relevant rules wit
 **Pupils:** Pupils complete Workbook p.56, Activity 1, by matching the two halves of each road sign, then writing the meaning of each sign.
 Teacher reads two place rules aloud. Pupils match each rule to a place and submit written answers for a spelling check.
 
+**Workbook practice:** Pupils complete Workbook p.56, Activity 1, by matching prohibition signs to the correct directions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils read one place rule.
 

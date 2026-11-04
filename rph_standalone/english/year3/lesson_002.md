@@ -26,6 +26,8 @@
 **Teacher:** Listen to each pupil's two descriptions; ask two listening-detail questions and record evidence against both SPs.
 **Pupils:** Give individual descriptions and answer oral questions.
 
+**Workbook practice:** Pupils complete Workbook p.8, Activity 1, to describe differences in characters' appearance using 'has got' and 'hasn't got'. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Use the 'Before leaving' review activity referenced in Teacher's Book p.18.
 **Pupils:** Share one accurate 'has got' sentence.

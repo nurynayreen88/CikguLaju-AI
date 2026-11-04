@@ -20,6 +20,8 @@ Teacher guides Student's Book p.39 using Teacher's Book p.65. Pupils ask and ans
 **Pupils:** Pupils complete Workbook p.33, Activity 3, by identifying sports associated with different seasons.
 Pupils ask and answer one activity question and describe two activities using suitable phrases.
 
+**Workbook practice:** Name the pictured sports in Workbook p.33, Activity 3, then share a preferred holiday sport with a partner. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a holiday activity and one reason for choosing it.
 

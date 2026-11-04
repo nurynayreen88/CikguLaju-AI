@@ -20,6 +20,8 @@ Teacher guides Activity 3. Pupils listen for animal details, then write two shor
 **Pupils:** Listen to six new farm-animal clues and respond individually.
 Teacher gives two animal clues and checks each pupil's identification. Pupils submit two short sentences using 'They' for spelling and clarity checks.
 
+**Workbook practice:** Pupils complete Workbook p.53, Activity 2, by writing sentences about the farm animals in the picture. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils read one sentence about an animal.
 

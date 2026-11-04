@@ -22,6 +22,8 @@ Teacher helps pupils choose a dish and gather facts from supplied recipes or rea
 **Teacher:** Check each pupil's written description for relevant details, clear sentences and spelling; ask where one fact was found.
 **Pupils:** Submit their description and point to the supporting reading text.
 
+**Workbook practice:** Pupils complete Workbook p.46, Activity 1, by finding international food names in the word search and writing them. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a sentence about a chosen dish.
 
