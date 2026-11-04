@@ -80,7 +80,7 @@ def build_pdf(year, destination):
     c.setTitle("RPT Pendidikan Moral Tahun %d - Cadangan 2027" % year)
     c.setAuthor("CikguLaju AI")
     left, right = 32, page_w - 32
-    row_h, rows_per_page = 55, 8
+    row_h, rows_per_page = 55, 7
     page_total = (len(rows) + rows_per_page - 1) // rows_per_page
     for page in range(page_total):
         c.setFillColor(colors.HexColor("#183047"))
