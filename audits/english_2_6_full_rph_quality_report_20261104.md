@@ -2,7 +2,7 @@
 
 ## Latest verified checkpoint — after PR #244, #245, #246, #247, #248 and #249
 
-This addendum **supersedes only the open-issue descriptions in the original baseline table below**. Keep that historical baseline unchanged for traceability. All current RPH files and source tests are in GitHub \`main\`; do not re-import old staging copies.
+This addendum **supersedes only the open-issue descriptions in the original baseline table below**. Keep that historical baseline unchanged for traceability. All current RPH files and source tests are in GitHub `main`; do not re-import old staging copies.
 
 | Scope | Resolved since the original 800-Lesson baseline | Remaining boundary |
 |---|---|---|
@@ -15,7 +15,7 @@ This addendum **supersedes only the open-issue descriptions in the original base
 
 **Release interpretation:** **800/800 source coverage and all 767 fixed numeric SOW header pairs** pass the technical QA inventory, but no blanket pedagogical FINAL READY is authorised. The 33 teacher-choice lessons are suggestions, not automatically assigned official DSKP pairs. The Year4 Lesson30 audio must not be auto-substituted.
 
-The reproducible full-inventory checkpoint now reruns after English Year2–6 RPH edits and tests the resolved issues via \`tests/test_english_current_maturity_delta_20261104.py\`. Its JSON artifact records present-day per-Lesson flags. Source-linked draft statuses, teacher-entered reflection, users, billing, quota and approval records are not altered by the addendum.
+The reproducible full-inventory checkpoint now reruns after English Year2–6 RPH edits and tests the resolved issues via `tests/test_english_current_maturity_delta_20261104.py`. Its JSON artifact records present-day per-Lesson flags. Source-linked draft statuses, teacher-entered reflection, users, billing, quota and approval records are not altered by the addendum.
 
 ---
 
