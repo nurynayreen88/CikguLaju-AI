@@ -8,29 +8,31 @@
 **Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 2  
 **Fokus:** lisan — Salam Perkenalan  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Salam Perkenalan' mengikut kemahiran 1.1.1.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
+**Objektif PdP:** Murid dapat mendengar dan menyebut semula sekurang-kurangnya tiga maklumat yang diujarkan dalam situasi perkenalan jiran secara jelas dan tepat.  
+**Bahan:** Buku Teks BM Tahun 4 SK halaman 2 (dialog perkenalan Encik Husin dengan Encik Gobi dan Encik Lim), kad peranan jiran, senarai semak sebutan.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Salam Perkenalan' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U1: Jiran Tetangga.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Menunjukkan ilustrasi jiran baharu di Taman Impian; meminta murid meramalkan tujuan Encik Gobi dan Encik Lim berkunjung.  
+**Murid:** Menyebut bentuk sapaan sopan yang sesuai apabila berkenalan dengan jiran.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Salam Perkenalan' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Salam Perkenalan'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Rujukan teks asal (15 minit)
+**Guru:** Membaca dialog Encik Husin bersama Encik Gobi dan Encik Lim dari BT halaman 2 secara lisan; meminta murid mengecam nama, hubungan jiran dan pekerjaan yang dinyatakan.  
+**Murid:** Mendengar dialog dan mencatat tiga maklumat yang didengar sebelum menyebutnya semula dengan tepat.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Salam Perkenalan'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Latihan kemahiran (20 minit)
+**Guru:** Mengulang ujaran pendek daripada dialog serta membimbing penyebutan nama dan maklumat; mengekalkan situasi tidak formal seperti SP 1.1.1.  
+**Murid:** Secara berpasangan, seorang membaca ujaran daripada dialog, seorang lagi mendengar dan menyebut kembali tiga maklumat tanpa mengubah maksud; kemudian bertukar peranan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Menyemak ketepatan tiga maklumat yang disebut semula, kelancaran dan sebutan; tidak mentaksir kemahiran menulis bagi SP lisan.  
+**Murid:** Menyebut semula maklumat dan membetulkan sebutan yang kurang tepat berdasarkan teks.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Salam Perkenalan' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Merumuskan bahawa mendengar dengan teliti membantu kita mengenali jiran baharu.  
+**Murid:** Menyatakan satu amalan beradab apabila memperkenalkan diri kepada jiran.
+
+**Bukti sumber khusus (BT4 SK):** Bukti BT4 SK halaman 2: dialog perkenalan Encik Husin, Encik Gobi, Encik Lim dan maklumat pekerjaan. Tajuk 'Salam Perkenalan' ialah label editorial RPT; bukan dakwaan tajuk bercetak BT.
 
 **Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
 
