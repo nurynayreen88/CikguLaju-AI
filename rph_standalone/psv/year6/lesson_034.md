@@ -11,16 +11,16 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Murid dapat melakar semula atau merakam model Wau Bulan Sirih Pinang dan memberi ulasan ringkas menggunakan istilah imbangan simetri, jalinan dan tampalan. Kriteria kejayaan: satu gambar/lakaran model berlabel dan satu ulasan yang menyebut dua unsur/prinsip serta satu teknik.
+Murid dapat melengkapkan folio ringkas Wau Bulan Sirih Pinang dan membuat apresiasi berdasarkan imbangan simetri, jalinan dan tampalan. Kriteria kejayaan: satu folio lima bahagian (sumber idea, lakaran, media/teknik, bukti proses, gambar akhir) serta satu ulasan menggunakan dua istilah seni dan satu teknik.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memaparkan model wau siap; murid mengenal motif cerminan, rambu dan bahan yang menghasilkan jalinan.
 
-**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 74–75, menunjukkan cara melakar semula hasil karya, mewarna dan membingkai gambar pada kad. Murid memilih sudut dokumentasi yang jelas dan selamat.
+**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 74–75 dan DSKP SP 3.1.1, menunjukkan contoh folio ringkas lima bahagian: sumber motif, lakaran berlabel, media/teknik, bukti proses dan gambar/lakaran akhir. Murid menyusun bahan sedia ada untuk dokumentasi.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar atau merakam hasil model wau, mewarnakan ilustrasi atau menampal foto pada kad, melabel media dan teknik tampalan, kemudian mengadakan galeri mini. Secara bergilir murid menerangkan imbangan simetri dan memberi satu ulasan membina kepada karya rakan.
+**Aktiviti 2 (25 minit) — Amali:** Murid menyusun lima bahagian folio daripada hasil PdP 030–033, melakar atau merakam model wau, melabel media serta teknik tampalan dan menambah bukti proses. Murid mempamerkan folio dan wau dalam galeri mini, menerangkan imbangan simetri serta memberi satu ulasan membina kepada rakan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu gambar/lakaran model berlabel dan satu ulasan yang menyebut dua unsur/prinsip serta satu teknik. Guru menyemak ketepatan istilah dan bukti proses.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu folio lima bahagian dan ulasan dengan dua istilah seni serta satu teknik. Guru menyemak susunan folio, lakaran/bukti proses, gambar akhir dan ketepatan apresiasi.
 
 **Penutup (5 minit):** Murid berkongsi perkara yang boleh ditambah baik pada rekaan wau; guru menyimpan dokumentasi sebagai bukti PBD.
 
