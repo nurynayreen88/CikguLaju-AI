@@ -476,5 +476,75 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertIn("folio dalam galeri mini", gallery.lower())
 
 
+    def test_all_210_source_page_anchors_match_50_units(self):
+        """Regression gate for correct textbook page and unit, not full page audit.
+
+        The source-map page boundaries are from the 2026 RPT and named textbook
+        units. This does not claim a visual examination of each textbook page.
+        """
+        anchors = json.loads(
+            (PSV / "textbook_dskp_source_map_20261104.json").read_text(encoding="utf-8")
+        )["years"]
+        total, specific, exhibitions = 0, 0, 0
+        page = re.compile(r"(?<!\d)(\d{1,3})\s*[-–]\s*(\d{1,3})(?!\d)")
+        for year in range(2, 7):
+            source = anchors[str(year)]
+            self.assertEqual(len(source["units"]), 10)
+            rows = read_csv(PSV / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv")
+            self.assertEqual(len(rows), 42)
+            for pdp, row in enumerate(rows, 1):
+                with self.subTest(year=year, pdp=pdp):
+                    field = row.get("Unit") if year <= 5 else row.get("Unit 2026")
+                    file = row.get("Fail RPH") if year <= 5 else row.get("RPH")
+                    self.assertEqual(file, f"rph_standalone/psv/year{year}/lesson_{pdp:03d}.md")
+                    raw = (ROOT / file).read_text(encoding="utf-8")
+                    self.assertIn(f"Tahun {year} — PdP {pdp:03d}", raw)
+                    if not str(field).isdecimal():
+                        self.assertIn("Pameran", raw)
+                        exhibitions += 1
+                        total += 1
+                        continue
+                    unit = int(field)
+                    self.assertTrue(1 <= unit <= 10)
+                    title, technique, span = source["units"][unit - 1][:3]
+                    m = re.search(
+                        r"(?m)^\*\*Unit(?: RPT 2026)?:\*\*\s*(?:Unit\s*)?"
+                        r"(\d+)\s*[—–-]\s*(.+?)\s*$",
+                        raw,
+                    )
+                    self.assertIsNotNone(m, "RPH has no identifiable textbook unit")
+                    self.assertEqual(int(m.group(1)), unit)
+                    self.assertEqual(normalize_title(m.group(2)),
+                                     normalize_title(title))
+                    section = re.search(
+                        r"(?m)^\*\*(?:Rujukan )?Buku Teks:\*\*\s*([^\n]+)",
+                        raw,
+                    )
+                    self.assertIsNotNone(section, "RPH has no explicit textbook page")
+                    unit_range = page.search(span)
+                    cited_range = page.search(section.group(1))
+                    self.assertIsNotNone(unit_range)
+                    self.assertIsNotNone(cited_range)
+                    a, b = map(int, unit_range.groups())
+                    c, d = map(int, cited_range.groups())
+                    self.assertLessEqual(a, c)
+                    self.assertLessEqual(d, b)
+                    self.assertLessEqual(c, d)
+                    rpt_ref = (
+                        row.get("BT muka surat", "")
+                        if year < 6 else row.get("Rujukan BT ms (RPT 2026)", "")
+                    )
+                    rpt_page = page.search(rpt_ref)
+                    self.assertIsNotNone(rpt_page)
+                    r1, r2 = map(int, rpt_page.groups())
+                    self.assertLessEqual(a, r1)
+                    self.assertLessEqual(r2, b)
+                    specific += 1
+                    total += 1
+        self.assertEqual(total, 210)
+        self.assertEqual(specific, 187)
+        self.assertEqual(exhibitions, 23)
+
+
 if __name__ == "__main__":
     unittest.main()
