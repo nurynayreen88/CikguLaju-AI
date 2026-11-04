@@ -1,0 +1,31 @@
+name: BM RPH source proofs - Year 4-5 textbook and full 825 mechanical gate
+on:
+  push:
+    branches: [fix/bm-rph-bt-source-verified-20261104]
+    paths:
+      - 'rph_standalone/bahasa_melayu/**'
+      - 'rpt_2027/bahasa_melayu/keluaran_format_english/**'
+      - 'tests/test_bm_rph_source_page_corrections.py'
+      - '.github/workflows/bm-rph-bt-source-proofs.yml'
+  pull_request:
+    branches: [staging/bm-rpt-2027-20261103]
+    paths:
+      - 'rph_standalone/bahasa_melayu/**'
+      - 'rpt_2027/bahasa_melayu/keluaran_format_english/**'
+      - 'tests/test_bm_rph_source_page_corrections.py'
+      - '.github/workflows/bm-rph-bt-source-proofs.yml'
+permissions:
+  contents: read
+jobs:
+  source-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test source-checked 7 RPT RPH pairs
+        run: python tests/test_bm_rph_source_page_corrections.py
+      - name: Audit all 825 RPH mechanically against DSKP code list and RPT
+        run: python tools/qa_bm_rph_2027_full_gate.py
