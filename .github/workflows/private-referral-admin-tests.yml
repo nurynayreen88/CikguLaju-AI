@@ -1,0 +1,35 @@
+name: Private referral admin read-only tests
+
+on:
+  pull_request:
+    paths:
+      - 'web/private_referral_admin_runtime.py'
+      - 'web/private_referral_menu_runtime.py'
+      - 'referral_points_telegram.py'
+      - 'test_private_referral_admin.py'
+      - 'test_private_referral_menu.py'
+      - 'test_private_referral_points.py'
+      - '.github/workflows/private-referral-admin-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/private_referral_admin_runtime.py'
+      - 'web/private_referral_menu_runtime.py'
+      - 'referral_points_telegram.py'
+      - 'test_private_referral_admin.py'
+      - 'test_private_referral_menu.py'
+      - 'test_private_referral_points.py'
+      - '.github/workflows/private-referral-admin-tests.yml'
+
+jobs:
+  offline-referral:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests
+      - name: Check private referral handlers and admin access
+        run: python -m unittest -v test_private_referral_points test_private_referral_menu test_private_referral_admin

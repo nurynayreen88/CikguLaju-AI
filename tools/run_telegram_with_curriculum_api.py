@@ -254,3 +254,13 @@ except Exception as _private_referral_menu_exc:
     PRIVATE_REFERRAL_MENU_BUTTONS_ACTIVE = False
     print("Private referral menu integration unavailable:",
           type(_private_referral_menu_exc).__name__, flush=True)
+
+# Read-only admin referral points; the last wrapper on callback and admin_panel.
+# Only _is_admin() identities can access this data; no payment or credit writes.
+try:
+    from web.private_referral_admin_runtime import install as install_private_referral_admin
+    PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE = install_private_referral_admin(telegram_runtime)
+except Exception as _ref_admin_exc:
+    PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE = False
+    print("Private referral admin report unavailable:",
+          type(_ref_admin_exc).__name__, flush=True)
