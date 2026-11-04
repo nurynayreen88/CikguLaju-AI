@@ -179,6 +179,45 @@ def build_rpt_pdf(year, group, destination):
     return dest
 
 
+COMBINED_RPT_PREFIX = "rpt2027_pm_ab_pdf_"
+
+
+def combined_pdf_ready(year):
+    """A/B must BOTH exist; a single PDF must not omit one school group."""
+    return pdf_ready(year, "A") and pdf_ready(year, "B")
+
+
+def build_combined_rpt_pdf(year, destination):
+    """One downloadable RPT PDF: cover + unchanged Kumpulan A and B tables."""
+    from pypdf import PdfReader, PdfWriter
+    from rpt_2027.pendidikan_moral.add_cover import prepend_cover
+    if not combined_pdf_ready(year):
+        raise ValueError("Both 96-session Moral A/B sources are required")
+    target = Path(destination)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with TemporaryDirectory(prefix="cikgulaju_pm_ab_") as tmp:
+        folder = Path(tmp)
+        a = build_rpt_pdf(year, "A", folder / "kumpulan_a.pdf")
+        b = build_rpt_pdf(year, "B", folder / "kumpulan_b.pdf")
+        reader_a, reader_b = PdfReader(str(a)), PdfReader(str(b))
+        if len(reader_a.pages) != 14 or len(reader_b.pages) != 14:
+            raise ValueError("Moral A/B pages do not match the 96-session RPT")
+        joined = folder / "rpt_kumpulan_ab.pdf"
+        writer = PdfWriter()
+        writer.append_pages_from_reader(reader_a)
+        writer.append_pages_from_reader(reader_b)
+        with joined.open("wb") as out:
+            writer.write(out)
+        prepend_cover(year, "A/B", joined, target)
+        reader = PdfReader(str(target))
+        if len(reader.pages) != 29:
+            raise ValueError("Moral combined RPT must contain exactly 29 pages")
+        if ("KUMPULAN A" not in reader.pages[1].extract_text()
+                or "KUMPULAN B" not in reader.pages[15].extract_text()):
+            raise ValueError("Moral combined RPT has missing/reversed school groups")
+    return target
+
+
 def _field(raw, key):
     match = re.search(r"^\*\*" + re.escape(key) + r":\*\*\s*(.*)$", raw, re.M)
     return match.group(1).strip() if match else ""
@@ -333,7 +372,10 @@ def install(ns):
     def callback(cid, data):
         action = str(data or "")
         kind, group, raw_year = None, None, None
-        if action.startswith(RPT_PREFIX):
+        if action.startswith(COMBINED_RPT_PREFIX):
+            raw_year = action[len(COMBINED_RPT_PREFIX):]
+            kind = "rpt"
+        elif action.startswith(RPT_PREFIX):
             suffix = action[len(RPT_PREFIX):].split("_")
             if len(suffix) != 2:
                 return send(cid, "Pilihan RPT Pendidikan Moral tidak sah.")
@@ -348,7 +390,7 @@ def install(ns):
         else:
             return previous(cid, data)
         if raw_year not in ("2","3","4","5","6") or (
-                kind == "rpt" and group not in ("A","B")):
+                kind == "rpt" and group is not None and group not in ("A","B")):
             return send(cid, "Pilihan tahun atau kumpulan tidak sah.")
         try:
             allowed = bool(ns["_is_admin"](cid) or ns["_access_info"](cid).get("active"))
@@ -359,18 +401,18 @@ def install(ns):
                         [[{"text":"Jadi Rakan Pembangun","callback_data":"pioneer_join"}],
                          [{"text":"Menu Utama","callback_data":"home"}]])
         year = int(raw_year)
-        if (kind == "rpt" and not pdf_ready(year, group)) or (
+        if (kind == "rpt" and not combined_pdf_ready(year)) or (
                 kind != "rpt" and not rph_ready(year)):
             return send(cid, "Sumber Pendidikan Moral bagi pilihan ini belum lengkap.")
         try:
             with TemporaryDirectory(prefix="cikgulaju_moral96_") as tmp:
                 folder = Path(tmp)
                 if kind == "rpt":
-                    fname = "RPT_Pendidikan_Moral_Tahun_%d_2027_Kumpulan_%s.pdf" % (year,group)
-                    original = build_rpt_pdf(year, group, folder/"_moral_content.pdf")
-                    from rpt_2027.pendidikan_moral.add_cover import prepend_cover
-                    path = prepend_cover(year, group, original, folder/fname)
-                    caption = "RPT Pendidikan Moral Tahun %d - 2027 Kumpulan %s (96 Sesi)" % (year,group)
+                    # Old separate A/B buttons from prior chats also return this ONE
+                    # complete PDF, never a partial Kumpulan A or B file.
+                    fname = "RPT_Pendidikan_Moral_Tahun_%d_2027.pdf" % year
+                    path = build_combined_rpt_pdf(year, folder/fname)
+                    caption = "RPT Pendidikan Moral Tahun %d - 2027 (Kumpulan A dan B; 96 Sesi)" % year
                 elif kind == "rph_pdf":
                     path = build_rph_pdf(year, folder/("RPH_Pengukuhan_Moral_Tahun_%d.pdf" % year))
                     caption = "RPH Pengukuhan Pendidikan Moral Tahun %d - 54 Sesi (PDF)" % year

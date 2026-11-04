@@ -7,7 +7,7 @@ def prepend_cover(year, group, original_pdf, output_pdf):
     from reportlab.lib.pagesizes import A4, landscape
     from reportlab.pdfgen.canvas import Canvas
     from pypdf import PdfReader, PdfWriter
-    if type(year) is not int or year not in range(2,7) or group not in ("A","B"):
+    if type(year) is not int or year not in range(2,7) or group not in ("A","B","A/B"):
         raise ValueError("Invalid Moral RPT year/group")
     source=Path(original_pdf)
     dest=Path(output_pdf)
