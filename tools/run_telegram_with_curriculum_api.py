@@ -130,3 +130,15 @@ try:
 except Exception as _pi_rpt_2027_exc:
     PI_RPT_2027_TELEGRAM_ACTIVE = False
     print("Pendidikan Islam RPT 2027 Telegram bridge unavailable:", repr(_pi_rpt_2027_exc), flush=True)
+
+
+# PJPK 2027 admin-only preview. OFF unless explicitly enabled on Render.
+# This bridge reads standalone DRAFT files in read-only mode and intercepts only
+# admin PJPK choices. Regular users continue through the existing PJPK safe gate.
+# No DB changes, quota changes or READY promotions are performed.
+try:
+    from web.pjpk_2027_preview_runtime import install as install_pjpk_preview
+    PJPK_2027_PREVIEW_INSTALLED = install_pjpk_preview(vars(telegram_runtime))
+except Exception as _pjpk_preview_exc:
+    PJPK_2027_PREVIEW_INSTALLED = False
+    print("PJPK preview unavailable:", repr(_pjpk_preview_exc), flush=True)

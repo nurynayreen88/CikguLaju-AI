@@ -1,0 +1,40 @@
+name: PJPK admin preview isolation
+on:
+  pull_request:
+    paths:
+      - 'web/pjpk_2027_preview_runtime.py'
+      - 'tests/test_pjpk_2027_preview_runtime.py'
+      - 'rph_standalone/pjpk/**'
+      - 'audits/pjpk_2027_staging_manifest_20261104.json'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/pjpk-admin-preview-isolation.yml'
+  push:
+    branches:
+      - release/pjpk-2027-admin-preview-20261104
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify 338 draft sources and admin-only isolation
+        run: python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+      - name: Check Python syntax
+        run: python -m py_compile web/pjpk_2027_preview_runtime.py tools/run_telegram_with_curriculum_api.py
+      - name: Deny promotion to READY and require feature flag
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('audits/pjpk_2027_staging_manifest_20261104.json')
+          j=json.loads(p.read_text(encoding='utf-8'))
+          assert len(j['records']) == 400
+          assert all(e['production_ready'] is False and e['status']=='DRAFT_NOT_APPROVED' for e in j['records'])
+          t=pathlib.Path('web/pjpk_2027_preview_runtime.py').read_text(encoding='utf-8')
+          assert 'CIKGULAJU_PJPK_PREVIEW_ENABLED' in t
+          assert 'is_admin' in t
+          assert 'enabled = os.environ.get(FLAG) == "1"' in t
+          print('PASS: admin gated preview; all READY flags remain false.')
+          PY
