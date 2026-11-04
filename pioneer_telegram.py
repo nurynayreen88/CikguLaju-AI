@@ -76,15 +76,32 @@ def install(ns):
         return result
 
     def admin_card(cid, request_id):
+        if not ns["_is_admin"](cid):
+            return send(cid, "⛔ Admin sahaja.")
         req = ns["_payment_request"](request_id)
         if req and float(req["amount"]) == 10.0 and req["status"] == "pending":
-            if not ns["_is_admin"](cid):
-                return send(cid, "⛔ Admin sahaja.")
+            uid = int(req["chat_id"])
+            proof_received = req.get("notes") == "proof_received_admin_notified"
+            status = ("✅ Resit sudah direkodkan"
+                      if proof_received else "⚠️ Resit belum direkodkan")
+            buttons = [
+                [{"text": "👤 Semak ID Pelanggan", "callback_data": f"admin_user|{uid}"}],
+            ]
+            if proof_received:
+                buttons.append([{"text": "✅ Sahkan Rakan Pembangun",
+                                 "callback_data": f"admin_approve|{request_id}|{uid}"}])
+            buttons.extend([
+                [{"text": "🔄 Muat Semula Kad Permohonan",
+                  "callback_data": f"pioneer_review|{request_id}"}],
+                [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}],
+                [{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}],
+            ])
             return send(cid, "🏆 <b>PENGESAHAN RAKAN PEMBANGUN RM10</b>\n"
-                        f"Permohonan #{request_id}, pengguna {req['chat_id']}\n"
-                        "Semak transaksi masuk dalam TNG Merchant secara manual sebelum lulus.",
-                        [[{"text": "✅ Sahkan Rakan Pembangun", "callback_data": f"admin_approve|{request_id}|{req['chat_id']}"}],
-                         [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}]])
+                        f"ID permohonan: <code>{request_id}</code>\n"
+                        f"ID pelanggan Telegram: <code>{uid}</code>\n"
+                        f"Jumlah: RM10.00\n{status}\n\n"
+                        "Sahkan ID pelanggan dan transaksi TNG Merchant sebelum lulus. "
+                        "Jangan minta pelanggan bayar semula.", buttons)
         return original_card(cid, request_id)
 
     def quota_text():
@@ -159,19 +176,58 @@ def install(ns):
             state.setdefault(cid, {})["waiting"] = "payment_proof"
             # Existing QR bytes are reused, not copied into a new asset.
             return send_pioneer_qr(cid, rid)
+        if str(d).startswith("pioneer_review|"):
+            # Read the *current* local request only. This is an admin-only view;
+            # it never approves, creates or transfers payments.
+            if not ns["_is_admin"](cid):
+                return send(cid, "⛔ Admin sahaja.")
+            parts = str(d).split("|")
+            if len(parts) != 2 or not parts[1].isascii() or not parts[1].isdecimal():
+                return send(cid, "⚠️ ID permohonan tidak sah.")
+            rid = int(parts[1])
+            if rid <= 0 or not ns["_payment_request"](rid):
+                return send(cid, f"⚠️ Permohonan #{rid} tidak ditemui pada rekod semasa. "
+                            "Semak panel admin; jangan minta pelanggan bayar semula.",
+                            [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
+            return admin_card(cid, rid)
         if str(d).startswith("admin_approve|"):
             if not ns["_is_admin"](cid):
                 return send(cid, "⛔ Admin sahaja.")
             try:
                 parts = str(d).split("|")
+                if len(parts) not in (2, 3):
+                    raise ValueError("Invalid approval callback")
                 rid = int(parts[1])
                 expected_uid = int(parts[2]) if len(parts) == 3 else None
+                if rid <= 0 or (expected_uid is not None and expected_uid <= 0):
+                    raise ValueError("Invalid payment or user")
             except (ValueError, IndexError):
-                return original_callback(cid, d)
+                return send(cid, "⚠️ Butang pengesahan tidak sah. Buka semula kad dalam panel admin.",
+                            [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
             req = ns["_payment_request"](rid)
             if req and float(req["amount"]) == 10.0:
-                if expected_uid is None or int(req["chat_id"]) != expected_uid:
-                    return send(cid, "⚠️ Butang pengesahan lama atau pemilik bayaran berubah. Buka semula kad permohonan untuk semakan ID pelanggan. Jangan minta bayaran semula.")
+                if expected_uid is None:
+                    # Legacy 'admin_approve|id' has no payer binding.
+                    # Show the current card and a fresh ID-bound approval button.
+                    # Never silently grant from this stale button.
+                    return admin_card(cid, rid)
+                current_uid = int(req["chat_id"])
+                if current_uid != expected_uid:
+                    # IDs can be reused when SQLite restarts. Show both owners
+                    # but do not approve or automatically re-bind this payment.
+                    return send(cid,
+                        "⚠️ <b>ID PELANGGAN TIDAK SEPADAN</b>\n"
+                        f"ID pada butang lama: <code>{expected_uid}</code>\n"
+                        f"ID permohonan #{rid} sekarang: <code>{current_uid}</code>\n\n"
+                        "Tiada bayaran diluluskan. Semak pemilik dan resit asal "
+                        "dalam panel admin. Jangan minta bayaran semula.",
+                        [[{"text": "👤 Semak Pelanggan Asal",
+                           "callback_data": f"admin_user|{expected_uid}"}],
+                         [{"text": "👤 Semak Pelanggan Semasa",
+                           "callback_data": f"admin_user|{current_uid}"}],
+                         [{"text": "📄 Buka Kad Permohonan Semasa",
+                           "callback_data": f"pioneer_review|{rid}"}],
+                         [{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
                 if has_pioneer(sb, int(req["chat_id"])):
                     # A manually verified entitlement may already be active even
                     # when the local SQLite payment is still pending. Reconcile
@@ -192,7 +248,10 @@ def install(ns):
                     # Local SQLite payment IDs may restart after deployment.
                     # Scope new references to both user and request; preserve old
                     # references for existing entitlements without modifying them.
-                    # A random immutable reference prevents collisions even if the\n                    # local SQLite payment counter restarts for the same user.\n                    import uuid\n                    reference = f"pioneer-payment:{uid}:{uuid.uuid4().hex}"
+                    # A random immutable reference prevents collisions even if the
+                    # local SQLite payment counter restarts for the same user.
+                    import uuid
+                    reference = f"pioneer-payment:{uid}:{uuid.uuid4().hex}"
                     existing = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{uid}&select=entitlement,payment_reference,revoked_at") or []
                     already_granted = any(
                         row.get("entitlement") == "PIONEER_LIFETIME"
