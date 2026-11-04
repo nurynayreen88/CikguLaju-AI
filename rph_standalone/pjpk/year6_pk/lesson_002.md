@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru mengemukakan satu soalan melalui gambar/dialog rekaan bertema "Perubahan fizikal remaja". Murid berkongsi fakta umum tanpa diminta pengalaman peribadi.
 
-**Aktiviti 1 — Latihan dan analisis:** Kumpulan menilai kenyataan menghormati kadar pertumbuhan yang berbeza dan membetulkan ejekan.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan kad pernyataan tentang perubahan fizikal remaja yang berlaku pada kadar berbeza dan contoh bahasa yang menghormati tubuh orang lain. Murid mengenal pasti pernyataan menghargai diri dan membetulkan ejekan atau stereotaip.
 
-**Aktiviti 2 — Aplikasi:** Murid mengelaskan fakta perubahan fizikal remaja kepada amalan penjagaan diri yang wajar.
+**Aktiviti 2 — Aplikasi:** Dalam kumpulan, murid mencipta dialog sopan menanggapi ejekan tentang perubahan fizikal serta merancang dua amalan menjaga harga diri dan menghormati rakan. Guru menegaskan murid tidak perlu mendedahkan perubahan fizikal sendiri.
 
-**Pengukuhan/PBD:** Setiap murid melengkapkan kad situasi–tindakan–alasan; guru menyemak ketepatan fakta dan respons berdasarkan 1.1.2. Guru merekod kesilapan untuk intervensi.
+**Pengukuhan/PBD:** Pentaksiran SP 1.1.2: murid menunjukkan dua cara menghargai perubahan fizikal diri/orang lain dan membetulkan satu kenyataan tidak menghormati tubuh berdasarkan senario rekaan.
 
 **Penutup:** Murid menyatakan satu amalan selamat atau alasan pilihan yang dipelajari; guru merumus hasil PdP.
 

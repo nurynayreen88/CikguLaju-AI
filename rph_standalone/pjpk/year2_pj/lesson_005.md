@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Lompat Riang" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik gimnastik:** Guru tunjuk penjajaran badan, tapak sokongan dan cara keluar daripada gerakan dengan selamat. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.2.3.
+**Aktiviti 1 — Teknik khusus:** Guru menunjukkan putaran tali panjang perlahan oleh dua rakan, kedudukan menunggu di luar ayunan serta cara masuk dan keluar selepas isyarat. Murid berlatih fleksi lutut melalui lompatan kecil tanpa tali sebelum mencuba tali yang diayun mengikut tempo perlahan.
 
-**Aktiviti 2 — Amali khusus:** Murid menguasai posisi asas di atas tilam melalui tahap mudah sebelum mencuba variasi yang dibenarkan. Secara berpasangan, seorang melaksanakan gerakan dan seorang menilai kedudukan sokongan serta kestabilan; guru mengawasi secara langsung.
+**Aktiviti 2 — Aplikasi bertahap:** Dalam kumpulan tiga atau empat, dua murid mengayun tali panjang rendah dan seorang melompat berterusan dalam dua percubaan singkat; murid bergilir tugas. Rakan mencatat bilangan lompatan terkawal dan memberi maklum balas tentang lutut difleksi semasa mendarat, bukan mengutamakan bilangan.
 
-**Pengukuhan/PBD:** Guru merekod tapak sokongan, imbangan, pendaratan terkawal melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.2.2. Guru turut mencatat amalan SP 5.4.2.
+**Pengukuhan/PBD:** Guru merekod dua percubaan lompatan tali berayun, kawalan pendaratan dan keupayaan murid menerangkan sebab lutut perlu difleksi; nilai giliran, kerjasama serta amalan keselamatan SP 5.4.2.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** tilam gimnastik, penanda ruang, kad teknik; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Gunakan tilam dan pengawasan langsung; elak memaksa posisi songsang, leher atau pendaratan berisiko.
+**BBM:** Tali panjang lembut, penanda giliran, kad pemerhatian teknik; rujukan buku teks PdP 005.
+**Keselamatan/inklusif:** Gunakan tali lembut dan ayunan rendah; jarakkan kumpulan, berhenti jika tali tersangkut atau murid hilang imbangan; sediakan latihan langkah masuk tanpa ayunan untuk murid belum bersedia.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Mari Bergayut" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik gimnastik:** Guru tunjuk penjajaran badan, tapak sokongan dan cara keluar daripada gerakan dengan selamat. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 3.4.2.
+**Aktiviti 1 — Teknik khusus:** Guru memeriksa palang rendah yang diluluskan sekolah, kawasan jatuhan serta pegangan tapak tangan sebelum menunjukkan cara bergayut dengan kaki hampir ke tanah. Murid mempraktikkan genggaman dan kedudukan bahu secara berpandu mengikut SP 3.4.2.
 
-**Aktiviti 2 — Amali khusus:** Murid menguasai posisi asas di atas tilam melalui tahap mudah sebelum mencuba variasi yang dibenarkan. Secara berpasangan, seorang melaksanakan gerakan dan seorang menilai kedudukan sokongan serta kestabilan; guru mengawasi secara langsung.
+**Aktiviti 2 — Aplikasi bertahap:** Murid bergilir melakukan bergayut terkawal pada palang rendah yang sesuai ketinggian dengan pemantauan guru; selepas cubaan, murid menerangkan peranan kekuatan otot dan cara turun selamat. Jika sekolah tiada kemudahan layak, guru jalankan demonstrasi berasaskan gambar sahaja dan tandakan amali SP sebagai belum ditaksir, bukan menggantikannya dengan aktiviti tilam.
 
-**Pengukuhan/PBD:** Guru merekod tapak sokongan, imbangan, pendaratan terkawal melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 4.4.2. Guru turut mencatat amalan SP 5.2.2.
+**Pengukuhan/PBD:** Guru merekod pemerhatian hanya bagi murid yang melaksanakan bergayut pada palang selamat: genggaman, kawalan badan dan turun terkawal. Jika tiada alat sesuai, catat BELUM DITAKSIR untuk amali dan gunakan soal jawab konsep SP 4.4.2.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** tilam gimnastik, penanda ruang, kad teknik; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Gunakan tilam dan pengawasan langsung; elak memaksa posisi songsang, leher atau pendaratan berisiko.
+**BBM:** Palang rendah yang diperiksa keselamatannya, tilam pendaratan bersesuaian, kad teknik pegangan dan giliran; buku teks PdP 034.
+**Keselamatan/inklusif:** Guru mesti mengesahkan kekuatan palang dan pengawasan langsung; jangan gunakan dahan, palang longgar atau angkat murid secara paksa. Kekalkan jarak menunggu dan hentikan aktiviti jika pegangan tidak stabil.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

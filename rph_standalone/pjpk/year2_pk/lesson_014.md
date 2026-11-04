@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Hubungan kekeluargaan sihat" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Kumpulan mengagihkan tugasan ringan mengikut kemampuan, melakonkan penghargaan kepada ahli keluarga dan membandingkan kesan apabila sumbangan setiap ahli dihargai atau diabaikan tanpa stereotaip jantina.
+**Aktiviti 1 — Latihan khusus:** Guru memberi tiga kad watak keluarga rekaan dengan sumbangan berbeza tanpa mengaitkan tugas kepada jantina. Murid memilih ungkapan penghargaan yang sesuai dan membandingkan respons yang menghormati setiap ahli.
 
-**Aktiviti 2 — Aplikasi:** Murid menyatakan satu keistimewaan diri sebagai lelaki atau perempuan dalam keluarga dan meneliti sumbangan ahli keluarga tanpa menetapkan tugas mengikut jantina.
+**Aktiviti 2 — Aplikasi:** Pasangan melakonkan situasi ahli keluarga membantu kerja rumah atau memberi sokongan emosi; setiap murid menunjukkan dua cara menghargai diri dan orang lain tanpa mengira jantina, kemudian rakan memberikan maklum balas berasaskan kata-kata yang sopan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 4.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 4.1.2: murid mempraktikkan dua cara penghargaan yang sesuai untuk ahli keluarga pelbagai peranan, tanpa stereotaip jantina; guru menilai kata-kata dan tindakan yang boleh diamalkan.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

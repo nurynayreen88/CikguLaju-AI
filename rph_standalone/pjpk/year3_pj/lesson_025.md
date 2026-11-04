@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Karom" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.13.2.
+**Aktiviti 1 — Teknik khusus:** Guru memperaga jentikan buah karom menggunakan jari dan cara membaca sudut sasaran pada papan karom, kemudian bertanya kesan perubahan daya. Murid mencuba dua jentikan lemah dan sederhana ke arah sasaran dengan mematuhi giliran.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Karom dalam kumpulan kecil: murid berlatih jentikan dengan daya berbeza ke sasaran, memilih sudut mudah, mematuhi giliran dan menerangkan strategi pilihan. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Aplikasi:** Dalam kumpulan kecil murid bermain karom ringkas mengikut giliran, memilih arah dan daya jentikan untuk memasukkan buah ke poket. Murid menerangkan sebab strategi dipilih, mencatat hasil percubaan dan membandingkannya dengan pilihan strategi rakan secara sopan.
 
-**Pengukuhan/PBD:** Rekod percubaan: jentikan terkawal, ketepatan sasaran, pemilihan strategi dan pematuhan peraturan. Bukti kefahaman (soal jawab): Bagaimana sudut dan daya jentikan mengubah gerakan buah karom? Guru turut mencatat amalan SP 5.2.1.
+**Pengukuhan/PBD:** Guru menilai dua jentikan terkawal, pemilihan sudut/daya serta penerangan strategi berasaskan hasil; nilai giliran, kerjasama dan SP 5.2.1.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Papan karom, buah karom, striker dan kad sasaran; jika peralatan tiada gunakan papan simulasi tabletop yang selamat serta tandakan kemahiran sebenar belum ditaksir.
+**Keselamatan/inklusif:** Pastikan meja stabil, buah permainan tidak dibawa ke mulut dan jentikan tidak diarahkan ke muka atau rakan.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

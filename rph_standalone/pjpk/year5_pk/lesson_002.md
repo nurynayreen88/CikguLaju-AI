@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru mengemukakan satu soalan melalui gambar/dialog rekaan bertema "Sistem reproduktif manusia". Murid berkongsi fakta umum tanpa diminta pengalaman peribadi.
 
-**Aktiviti 1 — Latihan dan analisis:** Kumpulan menilai kad mitos dan fakta tentang fungsi reproduktif dan privasi tubuh.
+**Aktiviti 1 — Latihan khusus:** Guru menerangkan secara asas, tepat dan sesuai umur hubungan sistem reproduktif lelaki dan perempuan dengan kejadian manusia menggunakan rajah pendidikan yang diluluskan sekolah. Murid mengenal pasti fungsi sistem yang berkaitan tanpa perincian tidak diperlukan atau pendedahan peribadi.
 
-**Aktiviti 2 — Aplikasi:** Murid melabel rajah pendidikan sistem reproduktif lelaki dan perempuan menggunakan istilah yang sesuai.
+**Aktiviti 2 — Aplikasi:** Murid melengkapkan peta konsep berlabel yang menerangkan hubungan kedua-dua sistem reproduktif dalam asas kejadian manusia. Pasangan saling menyemak penggunaan istilah sains yang tepat, membetulkan satu salah faham dengan bimbingan guru.
 
-**Pengukuhan/PBD:** Setiap murid melengkapkan kad situasi–tindakan–alasan; guru menyemak ketepatan fakta dan respons berdasarkan 1.1.2. Guru merekod kesilapan untuk intervensi.
+**Pengukuhan/PBD:** Pentaksiran SP 1.1.2: murid menyiapkan satu peta konsep yang menunjukkan kaitan asas kedua-dua sistem reproduktif dengan kejadian manusia dan menerangkan satu hubungan secara sopan dan saintifik.
 
 **Penutup:** Murid menyatakan satu amalan selamat atau alasan pilihan yang dipelajari; guru merumus hasil PdP.
 

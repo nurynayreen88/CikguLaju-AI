@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru mengemukakan satu soalan melalui gambar/dialog rekaan bertema "Bahaya penyalahgunaan bahan inhalan". Murid berkongsi fakta umum tanpa diminta pengalaman peribadi.
 
-**Aktiviti 1 — Latihan dan analisis:** Kumpulan menghasilkan langkah menolak pelawaan dan memberitahu orang dewasa tanpa menggunakan bahan sebenar.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan kad fakta kesan penyalahgunaan inhalan terhadap otak, pernafasan dan keselamatan diri tanpa membawa sebarang bahan sebenar. Murid mengenal pasti kesan kesihatan dan membezakannya daripada penggunaan produk rumah yang selamat mengikut arahan.
 
-**Aktiviti 2 — Aplikasi:** Murid mengenal penggunaan produk rumah dengan betul berbanding penyalahgunaan inhalan melalui kad.
+**Aktiviti 2 — Aplikasi:** Kumpulan membina carta dua lajur antara kesan segera dan kesan berterusan penyalahgunaan inhalan daripada fakta pendidikan. Murid memberi alasan mengapa menyedut wap bahan dengan sengaja berbahaya dan memilih tindakan mendapatkan bantuan dewasa.
 
-**Pengukuhan/PBD:** Setiap murid melengkapkan kad situasi–tindakan–alasan; guru menyemak ketepatan fakta dan respons berdasarkan 2.1.2. Guru merekod kesilapan untuk intervensi.
+**Pengukuhan/PBD:** Senarai semak SP 2.1.2: murid menerangkan dua kesan penyalahgunaan inhalan terhadap kesihatan diri berdasarkan fakta yang tepat; tidak meminta murid membuka atau menghidu produk.
 
 **Penutup:** Murid menyatakan satu amalan selamat atau alasan pilihan yang dipelajari; guru merumus hasil PdP.
 

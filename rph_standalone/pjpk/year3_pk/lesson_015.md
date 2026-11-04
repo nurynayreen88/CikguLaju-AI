@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Batas sentuhan dan keselamatan diri" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Aplikasi dan penyelesaian masalah:** Pasangan berlatih dialog 'Saya tidak selesa; berhenti; saya akan beritahu orang dewasa dipercayai', kemudian menandakan jalan keluar dan tempat meminta bantuan pada pelan situasi rekaan. Guru memperkenalkan senario baharu untuk membezakan tindakan tepat dengan tindakan berisiko.
+**Aktiviti 1 — Latihan khusus:** Guru memberikan dua cerita watak rekaan tentang batas sentuhan diabaikan. Murid mengenal pasti kemungkinan kesan kepada rasa selamat, kepercayaan dan kesejahteraan serta membezakan tanggungjawab orang dewasa daripada tanggungjawab kanak-kanak.
 
-**Aktiviti 2 — Aplikasi:** Pasangan berlatih dialog 'Saya tidak selesa; berhenti; saya akan beritahu orang dewasa dipercayai', kemudian menandakan jalan keluar dan tempat meminta bantuan pada pelan situasi rekaan.
+**Aktiviti 2 — Aplikasi:** Kumpulan menjana idea kesan dan langkah perlindungan bagi satu situasi yang berlaku dalam lingkungan keluarga rekaan; murid menulis pilihan tindakan mendapatkan bantuan daripada orang dewasa dipercayai tanpa perlu berkongsi pengalaman sebenar.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 4.1.3 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Guru menyemak SP 4.1.3: murid menyatakan dua kesan mengabaikan batas sentuhan dan satu langkah bantuan selamat; guru memastikan tiada murid dipersalahkan atas perlakuan tidak selamat orang lain.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

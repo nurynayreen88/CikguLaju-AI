@@ -1,0 +1,25 @@
+name: PJPK content quality target — RPH 2027
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/pjpk/**'
+      - 'tests/test_pjpk_2027_quality_90_target.py'
+      - '.github/workflows/pjpk-2027-content-quality.yml'
+  push:
+    branches:
+      - improve/pjpk-rph-quality-90-20261104
+jobs:
+  targeted-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit all 339 sources and 44 corrected drafts
+        run: python -m unittest discover -s tests -p 'test_pjpk_2027_quality_90_target.py' -v
+      - name: Verify ordinary Telegram RPH flow
+        run: python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+      - name: Verify paid PJPK RPT flow
+        run: python -m unittest discover -s tests -p 'test_pjpk_rpt_2027_telegram.py' -v

@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Berkata TIDAK dan menjaga keselamatan diri" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Pasangan berlatih berkata TIDAK, beredar ke tempat selamat dan memaklumkan orang dewasa dipercayai melalui dialog rekaan tanpa sentuhan fizikal; kemudian menilai kemungkinan akibat menerima pelawaan orang tidak dikenali.
+**Aktiviti 1 — Latihan khusus:** Guru memperagakan dengan kad watak rekaan cara berkata 'TIDAK' secara jelas, berundur ke tempat selamat dan memaklumkan orang dewasa dipercayai apabila diberi pelawaan yang membuat murid tidak selesa, sama ada oleh orang dikenali atau tidak dikenali.
 
-**Aktiviti 2 — Aplikasi:** Murid meneliti kad pelawaan daripada orang dikenali dan tidak dikenali; mengenal pasti situasi yang perlu dielakkan tanpa mengandaikan semua orang dikenali selamat.
+**Aktiviti 2 — Aplikasi:** Berpasangan, murid menguji dua dialog pelawaan rekaan yang berbeza. Setiap murid berlatih respons tiga langkah (tolak, jauhkan diri, minta bantuan) tanpa sentuhan fizikal; rakan menggunakan kad semak untuk menilai suara, tindakan dan pilihan individu dipercayai.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 7.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 7.1.2: murid mengaplikasi langkah berkata TIDAK, beredar dan meminta bantuan dalam dua situasi rekaan, serta membezakan situasi selamat berdasarkan tingkah laku, bukan sekadar sama ada orang dikenali.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

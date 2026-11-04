@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Menolak pelawaan merokok" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Aplikasi dan penyelesaian masalah:** Kumpulan menghasilkan pelan mengelak asap rokok orang lain di tempat awam: pilih kawasan bebas asap, beralih lokasi dan mendapatkan bantuan orang dewasa jika perlu. Guru memperkenalkan senario baharu untuk membezakan tindakan tepat dengan tindakan berisiko.
+**Aktiviti 1 — Latihan khusus:** Guru menunjukkan pelan ringkas tempat awam yang mempunyai kawasan bebas asap, kawasan sesak dan laluan keluar. Murid mengesan lokasi yang perlu dielakkan dan memilih orang dewasa dipercayai untuk mendapatkan bantuan jika terdedah kepada asap rokok.
 
-**Aktiviti 2 — Aplikasi:** Kumpulan menghasilkan pelan mengelak asap rokok orang lain di tempat awam: pilih kawasan bebas asap, beralih lokasi dan mendapatkan bantuan orang dewasa jika perlu.
+**Aktiviti 2 — Aplikasi:** Kumpulan mereka bentuk tiga langkah praktikal mengurangkan pendedahan asap rokok dalam situasi rekaan di taman, perhentian dan majlis keluarga; murid membentangkan cara beredar dengan sopan serta meminta bantuan tanpa menyalahkan mangsa.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 2.1.3 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Rubrik SP 2.1.3: murid mencadangkan sekurang-kurangnya dua cara mengelakkan diri daripada asap rokok pasif dan menjelaskan tindakan bagi satu situasi baharu; bukan meminta pengalaman keluarga sendiri.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

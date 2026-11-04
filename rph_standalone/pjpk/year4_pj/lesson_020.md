@@ -11,15 +11,15 @@
 
 **Set induksi:** Guru menunjukkan cabaran "LITAR LUMBA" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Pergerakan berirama:** Guru memainkan irama perlahan dan menunjukkan rangkaian 4–8 kiraan; murid cuba langkah dan mengawal jarak. Murid menunjukkan semula langkah asas berdasarkan SP 1.9.3.
+**Aktiviti 1 — Teknik khusus:** Guru membina lorong berhalangan rendah yang stabil, menunjukkan teknik larian beritma dan langkah yang tekal sebelum setiap halangan. Murid memerhati satu demonstrasi, mengira langkah antara dua halangan dan berlatih pada kelajuan sederhana tanpa melompat tinggi.
 
-**Aktiviti 2 — Aplikasi:** Kumpulan memilih dan mengulang pola gerak yang dinyatakan oleh SP, memadankan tempoh/peralihan lakuan dengan muzik sebelum persembahan pendek. 
+**Aktiviti 2 — Aplikasi:** Murid menempuh dua hingga tiga halangan rendah dalam lorong berasingan dengan dua percubaan. Rakan merekod bilangan langkah antara halangan, dan murid melaras titik mula untuk mengekalkan bilangan langkah yang sama pada percubaan kedua.
 
-**Pengukuhan/PBD:** Guru menilai ketepatan urutan, keselarasan irama dan penggunaan ruang menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.9.4 dan menerima maklum balas. Guru memerhati sikap SP 5.2.4. 
+**Pengukuhan/PBD:** Senarai semak: murid melepasi halangan rendah berterusan, mengekalkan irama larian dan menjelaskan bilangan langkah tekal yang dipilih (SP 2.9.4); catat amalan keselamatan dan usaha SP 5.2.4.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** audio irama, pembesar suara, kon pemisah kumpulan.  
-**Keselamatan/inklusif:** Jarak antara murid, pilihan gerak tanpa lompatan tinggi, hentikan gerakan berbahaya.
+**BBM:** Kon laluan, halangan lembut/rendah yang stabil, penanda langkah dan kad rekod pasangan; buku teks mengikut rujukan PdP 020.
+**Keselamatan/inklusif:** Halangan rendah mudah dialihkan, laluan tidak bersilang dan zon berhenti luas; murid dengan keperluan mobiliti boleh melakukan langkah rentas aras lantai.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 4](https://drive.google.com/file/d/1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

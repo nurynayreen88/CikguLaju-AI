@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Menolak penyalahgunaan bahan" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Kumpulan memadankan situasi pengambilan tembakau, alkohol dan dadah dengan kesan bahayanya terhadap diri serta orang lain, kemudian membentangkan alasan.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan tiga kad fakta tembakau, alkohol dan dadah; murid membina rantaian sebab-akibat tentang bahaya kepada organ badan, keselamatan dan orang sekeliling menggunakan maklumat kesihatan yang sesuai umur.
 
-**Aktiviti 2 — Aplikasi:** Murid mengenal pasti tembakau, alkohol dan dadah daripada poster pendidikan yang sesuai usia dan membincangkan kesan bahayanya kepada diri serta orang lain.
+**Aktiviti 2 — Aplikasi:** Pasangan meneliti dua kisah rekaan: asap rokok di ruang berkongsi dan pelawaan mengambil bahan tidak selamat. Murid menandakan bahaya kepada diri serta orang lain dan mencadangkan cara menjauhkan diri serta mendapatkan bantuan orang dewasa.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 2.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Setiap murid menerangkan sekurang-kurangnya dua bahaya bahan ketagihan terhadap diri/orang lain berdasarkan SP 2.1.2 melalui kad keluar; guru merekod ketepatan dan membetulkan salah faham tanpa meminta pendedahan pengalaman keluarga.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

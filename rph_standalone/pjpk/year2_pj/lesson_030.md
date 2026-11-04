@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Mari Panaskan Badan, Mari Sejukkan Badan" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik lompatan:** Guru tandakan kawasan lonjakan dan pendaratan, tunjuk posisi lutut serta lengan. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 3.1.1.
+**Aktiviti 1 — Teknik khusus:** Guru menerangkan beza pemanasan badan dan menyejukkan badan lalu menunjukkan gerak perlahan hingga sederhana: berjalan setempat, putaran sendi terkawal dan regangan dinamik. Murid memerhati perubahan nafas dan denyutan secara mudah tanpa membandingkan kadar antara rakan.
 
-**Aktiviti 2 — Amali khusus:** Murid berlatih fasa awalan, lonjakan dan mendarat secara berasingan sebelum menggabungkannya. Murid melakukan dua cubaan dengan pendaratan terkawal; rakan menilai arah lengan dan keseimbangan.
+**Aktiviti 2 — Aplikasi bertahap:** Dalam dua kumpulan, murid mengatur rutin pemanasan badan 3–4 gerak sebelum aktiviti berjalan/bergerak; selepas itu mereka menyusun rutin menyejukkan badan melalui berjalan perlahan, pernafasan normal dan regangan ringan. Murid menjelaskan sebab urutan sebelum dan selepas aktiviti berbeza.
 
-**Pengukuhan/PBD:** Guru merekod lonjakan terkawal, fleksi lutut, keseimbangan akhir melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 4.1.1. Guru turut mencatat amalan SP 5.1.1.
+**Pengukuhan/PBD:** Guru menyemak murid memilih urutan pemanasan dan penyejukan yang betul, melaksanakan dua lakuan dengan selamat serta memberi satu sebab kepentingannya berdasarkan SP 4.1.1–4.1.3.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, tali/halangan rendah, tilam atau pasir selamat; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Halangan rendah dan zon pendaratan kosong; murid berhenti jika sakit atau hilang imbangan.
+**BBM:** Kad urutan pemanasan/penyejukan, jam randik untuk guru, kon ruang; buku teks PdP 030.
+**Keselamatan/inklusif:** Elak regangan paksa atau pergerakan mengejut; murid berhenti jika pening atau sakit dan memilih intensiti sesuai keupayaan.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
