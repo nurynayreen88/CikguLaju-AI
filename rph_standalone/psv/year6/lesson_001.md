@@ -11,7 +11,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Kampungku dan mengaitkannya dengan garisan laluan, rupa rumah dan ruang hadapan-belakang dalam suasana kampung. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Kampungku dan mengaitkannya dengan garisan laluan, rupa rumah dan ruang hadapan-belakang dalam suasana kampung. Kriteria kejayaan: Kad pemerhatian mengandungi tiga istilah visual tepat dan satu penerangan kaitan dengan karya.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Kampungku** dalam tema **Gambaran Minda**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
