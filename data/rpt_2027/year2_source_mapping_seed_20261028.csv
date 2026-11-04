@@ -1,0 +1,10 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PJ2-001,Pendidikan Jasmani,2,2,PJ,Cabaran Ruang - Teroka Ruang,"1.1;2.1;5.1","1.1.1;2.1.1;5.1.5",2-3,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source row not yet verified as unique PdP
+PJ2-002,Pendidikan Jasmani,2,3,PJ,Cabaran Ruang - Bergerak Ikut Tempo,"1.1;2.1;5.2","1.1.2;2.1.2;2.1.3;5.2.2",4-5,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source row not yet verified as unique PdP
+PJ2-003,Pendidikan Jasmani,2,4,PJ,Mari Bersenam - Senaman Ceria,"1.2;1.3;2.2;5.2","1.2.1;1.3.1;2.2.1;5.2.1",8-9,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source row not yet verified as unique PdP
+PJ2-004,Pendidikan Jasmani,2,5,PJ,Mari Bersenam - Mari Melompat,,"1.2.2;2.2.2;5.2.2",UNVERIFIED_1O,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Verify page against textbook
+PJ2-005,Pendidikan Jasmani,2,7,PJ,Mari Bersenam - Lompat Riang,,"1.2.3;2.2.2;5.4.2",11,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source row not yet verified as unique PdP
+PJ2-006,Pendidikan Jasmani,2,8,PJ,Mari Bersenam - Rangkaian Pergerakan Bukan Lokomotor,,"1.3.2;2.2.3;5.2.1",12,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF,Source row not yet verified as unique PdP
+PI2-001,Pendidikan Islam,2,2,Al-Quran,Surah al-Baqarah ayat 1-29,,, ,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Separate source domain row not unique PdP
+PI2-002,Pendidikan Islam,2,2,Akidah,Sifat Allah,2.1,"2.1.1;2.1.2",,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Separate source domain row not unique PdP
+PI2-003,Pendidikan Islam,2,2,Jawi,Perkataan tiga suku kata,6.1,"6.1.1;6.1.2",,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Preserve Jawi source for output
