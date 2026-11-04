@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 5, Unit 5
+# Kit aktiviti Pendidikan Moral Tahun 5 • Unit 5
 
 **Tema:** Saya dan Masyarakat  
 **Unit:** Beradab Sopan dan Berbudi Pekerti Mulia Dalam Hidup Bermasyarakat  
 **Nilai:** Hemah tinggi  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Orang ramai beratur di kaunter perkhidmatan masyarakat.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** menggunakan bahasa santun ketika berbincang.  
-**Pilihan B (perlu diperbaiki):** meninggikan suara dan menghina orang yang tidak bersetuju.  
-**Soalan tertumpu:** Bagaimanakah nada, perkataan dan bahasa badan mengubah suasana?
+**Pilihan A (sesuai):** bercakap sopan sambil mendengar.  
+**Pilihan B (perlu dibaiki):** mencelah, mengejek atau meninggikan suara.  
+**Soalan utama:** Bagaimanakah bahasa badan dan tutur kata mempengaruhi perasaan?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **hemah tinggi** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **jadual bahasa sopan dan pilihan ungkapan**.
-**Rujukan SP:** 5.1 Menyenaraikan contoh amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.; 5.2 Menjelaskan kepentingan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (5.1):** Menyenaraikan contoh amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
+**Tugasan 2 (5.2):** Menjelaskan kepentingan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
+**Hasil murid:** dialog pilihan perkataan yang berhemah; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa didengari** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 5.3 Menaakul kesan pengabaian amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.; 5.4 Mengekspresikan perasaan berkaitan dengan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (5.3):** Menaakul kesan pengabaian amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
+**Tugasan 4 (5.4):** Mengekspresikan perasaan berkaitan dengan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** meminta izin, mendengar dan memberi respons dengan sopan.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 5.5 Mengamalkan sikap beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (5.5):** Mengamalkan sikap beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Bezakan permintaan, teguran dan penolakan yang masih beradab.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

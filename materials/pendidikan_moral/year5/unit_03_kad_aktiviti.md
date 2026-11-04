@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 5, Unit 3
+# Kit aktiviti Pendidikan Moral Tahun 5 • Unit 3
 
 **Tema:** Saya dan Masyarakat  
 **Unit:** Tanggungjawab Sebagai Anggota Masyarakat  
 **Nilai:** Bertanggungjawab  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Penduduk membincangkan tanggungjawab menjaga dewan komuniti.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** melaksanakan tugasan yang dipersetujui dengan sempurna.  
-**Pilihan B (perlu diperbaiki):** meninggalkan tugas untuk disiapkan orang lain.  
-**Soalan tertumpu:** Siapa menerima kesan apabila tanggungjawab tidak dibuat?
+**Pilihan A (sesuai):** menyelesaikan tugas yang dipersetujui.  
+**Pilihan B (perlu dibaiki):** mengelak tugasan sendiri dan membebankan orang lain.  
+**Soalan utama:** Apakah kesan jika tanggungjawab diabaikan?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **bertanggungjawab** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **jadual tugas-siapa-bila-bukti**.
-**Rujukan SP:** 3.1 Menyenaraikan contoh tanggungjawab sebagai anggota masyarakat.; 3.2 Menghuraikan cara melaksanakan tanggungjawab sebagai anggota masyarakat.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (3.1):** Menyenaraikan contoh tanggungjawab sebagai anggota masyarakat.  
+**Tugasan 2 (3.2):** Menghuraikan cara melaksanakan tanggungjawab sebagai anggota masyarakat.  
+**Hasil murid:** jadual siapa-buat-apa-bila; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa dipercayai** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 3.3 Membuat justifikasi kepentingan melaksanakan tanggungjawab sebagai anggota masyarakat.; 3.4 Mengekspresikan perasaan berkaitan dengan amalan tanggungjawab sebagai anggota masyarakat.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (3.3):** Membuat justifikasi kepentingan melaksanakan tanggungjawab sebagai anggota masyarakat.  
+**Tugasan 4 (3.4):** Mengekspresikan perasaan berkaitan dengan amalan tanggungjawab sebagai anggota masyarakat.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** menjelaskan tugasan, melaksanakannya dan melapor hasil.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 3.5 Mengamalkan sikap bertanggungjawab sebagai anggota masyarakat.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (3.5):** Mengamalkan sikap bertanggungjawab sebagai anggota masyarakat.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Bahagikan tugas mengikut kemampuan, bukan secara membuta tuli.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

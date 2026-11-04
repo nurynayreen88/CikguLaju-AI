@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 5, Unit 8
+# Kit aktiviti Pendidikan Moral Tahun 5 • Unit 8
 
 **Tema:** Saya dan Masyarakat  
 **Unit:** Amalan Adil Dalam Hidup Bermasyarakat  
 **Nilai:** Keadilan  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Jawatankuasa mengagihkan bantuan komuniti secara saksama.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** membahagikan peluang mengikut keperluan dan alasan munasabah.  
-**Pilihan B (perlu diperbaiki):** memberi kelebihan kepada rakan rapat tanpa sebab adil.  
-**Soalan tertumpu:** Adakah sama rata sentiasa adil? Bagaimanakah bukti digunakan?
+**Pilihan A (sesuai):** membahagi peluang mengikut keperluan munasabah.  
+**Pilihan B (perlu dibaiki):** mementingkan kawan sendiri tanpa sebab adil.  
+**Soalan utama:** Bilakah sama rata tidak sama dengan adil?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **keadilan** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **jadual hak-keperluan-pembahagian**.
-**Rujukan SP:** 8.1 Menyenaraikan contoh amalan adil dalam hidup bermasyarakat.; 8.2 Menjelaskan kepentingan amalan adil dalam hidup bermasyarakat.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (8.1):** Menyenaraikan contoh amalan adil dalam hidup bermasyarakat.  
+**Tugasan 2 (8.2):** Menjelaskan kepentingan amalan adil dalam hidup bermasyarakat.  
+**Hasil murid:** jadual hak-keperluan-pembahagian; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa dilayan secara adil** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 8.3 Menghuraikan kesan pengabaian amalan adil dalam hidup bermasyarakat.; 8.4 Mengekspresikan perasaan berkaitan dengan amalan adil dalam hidup bermasyarakat.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (8.3):** Menghuraikan kesan pengabaian amalan adil dalam hidup bermasyarakat.  
+**Tugasan 4 (8.4):** Mengekspresikan perasaan berkaitan dengan amalan adil dalam hidup bermasyarakat.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** membuat pembahagian dengan alasan telus dan saksama.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 8.5 Mengamalkan sikap adil dalam hidup bermasyarakat.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (8.5):** Mengamalkan sikap adil dalam hidup bermasyarakat.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Guna contoh giliran dan keperluan untuk membezakan sama rata dengan saksama.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

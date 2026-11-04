@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 6, Unit 3
+# Kit aktiviti Pendidikan Moral Tahun 6 • Unit 3
 
 **Tema:** Saya dan Negara  
 **Unit:** Tanggungjawab Sebagai Warganegara  
 **Nilai:** Bertanggungjawab  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Murid membincangkan tanggungjawab menjaga kemudahan awam.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** melaksanakan tugasan yang dipersetujui dengan sempurna.  
-**Pilihan B (perlu diperbaiki):** meninggalkan tugas untuk disiapkan orang lain.  
-**Soalan tertumpu:** Siapa menerima kesan apabila tanggungjawab tidak dibuat?
+**Pilihan A (sesuai):** menyelesaikan tugas yang dipersetujui.  
+**Pilihan B (perlu dibaiki):** mengelak tugasan sendiri dan membebankan orang lain.  
+**Soalan utama:** Apakah kesan jika tanggungjawab diabaikan?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **bertanggungjawab** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **jadual tugas-siapa-bila-bukti**.
-**Rujukan SP:** 3.1 Memberikan definisi warganegara.; 3.2 Menghuraikan cara melaksanakan tanggungjawab sebagai warganegara.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (3.1):** Memberikan definisi warganegara.  
+**Tugasan 2 (3.2):** Menghuraikan cara melaksanakan tanggungjawab sebagai warganegara.  
+**Hasil murid:** jadual siapa-buat-apa-bila; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa dipercayai** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 3.3 Menjana idea kesan pengabaian tanggungjawab sebagai warganegara.; 3.4 Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (3.3):** Menjana idea kesan pengabaian tanggungjawab sebagai warganegara.  
+**Tugasan 4 (3.4):** Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** menjelaskan tugasan, melaksanakannya dan melapor hasil.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 3.5 Mengamalkan sikap bertanggungjawab sebagai warganegara.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (3.5):** Mengamalkan sikap bertanggungjawab sebagai warganegara.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Bahagikan tugas mengikut kemampuan, bukan secara membuta tuli.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

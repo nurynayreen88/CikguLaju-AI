@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 2, Unit 10
+# Kit aktiviti Pendidikan Moral Tahun 2 • Unit 10
 
 **Tema:** Saya dan Keluarga  
 **Unit:** Jujur Terhadap Ahli Keluarga  
 **Nilai:** Kejujuran  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Murid menjumpai wang keluarga yang tertinggal di atas meja.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** menyampaikan perkara benar dan mengakui kesilapan.  
-**Pilihan B (perlu diperbaiki):** menyembunyikan fakta untuk mengelak tanggungjawab.  
-**Soalan tertumpu:** Bagaimanakah membezakan fakta yang diketahui dengan andaian?
+**Pilihan A (sesuai):** melaporkan fakta sebenar serta mengakui kesilapan.  
+**Pilihan B (perlu dibaiki):** menyembunyikan fakta untuk mengelak tanggungjawab.  
+**Soalan utama:** Bagaimanakah fakta berbeza daripada andaian atau khabar angin?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **kejujuran** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **jadual fakta-andaian-laporan**.
-**Rujukan SP:** 10.1 Menyenaraikan contoh sikap jujur.; 10.2 Menjelaskan cara bersikap jujur terhadap ahli keluarga.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (10.1):** Menyenaraikan contoh sikap jujur.  
+**Tugasan 2 (10.2):** Menjelaskan cara bersikap jujur terhadap ahli keluarga.  
+**Hasil murid:** jadual fakta-andaian-laporan; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa boleh mempercayai orang lain** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 10.3 Mengkaji kesan bersikap jujur terhadap ahli keluarga.; 10.4 Menzahirkan perasaan bersikap jujur terhadap ahli keluarga.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (10.3):** Mengkaji kesan bersikap jujur terhadap ahli keluarga.  
+**Tugasan 4 (10.4):** Menzahirkan perasaan bersikap jujur terhadap ahli keluarga.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** melaporkan fakta sebenar serta membetulkan kesilapan.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 10.5 Mengamalkan sikap jujur terhadap ahli keluarga.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (10.5):** Mengamalkan sikap jujur terhadap ahli keluarga.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Gunakan 'Saya tahu ...; saya belum pasti ...' untuk mengelak tuduhan tanpa bukti.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 4, Unit 9
+# Kit aktiviti Pendidikan Moral Tahun 4 • Unit 9
 
 **Tema:** Saya dan Jiran  
 **Unit:** Berani Terhadap Jiran Demi Kesejahteraan Bersama  
 **Nilai:** Keberanian  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Murid mendapati kejadian yang mengancam keselamatan jiran.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** menegur secara berhemah atau mendapatkan bantuan guru/orang dewasa.  
-**Pilihan B (perlu diperbaiki):** membalas penghinaan dengan ancaman atau kekerasan.  
-**Soalan tertumpu:** Bagaimanakah mempertahankan perkara benar tanpa membahayakan diri?
+**Pilihan A (sesuai):** menegur dengan sopan atau mendapatkan bantuan orang dewasa.  
+**Pilihan B (perlu dibaiki):** membalas cabaran menggunakan ugutan atau kekerasan.  
+**Soalan utama:** Bagaimana menjaga kebenaran tanpa mendedahkan diri kepada bahaya?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **keberanian** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **kad tindakan berani-yang-selamat**.
-**Rujukan SP:** 9.1 Memberikan contoh sikap berani terhadap jiran demi kesejahteraan bersama.; 9.2 Menghuraikan cabaran yang dihadapi ketika bertindak berani terhadap jiran demi kesejahteraan bersama.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (9.1):** Memberikan contoh sikap berani terhadap jiran demi kesejahteraan bersama.  
+**Tugasan 2 (9.2):** Menghuraikan cabaran yang dihadapi ketika bertindak berani terhadap jiran demi kesejahteraan bersama.  
+**Hasil murid:** peta langkah berani yang selamat; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa terlindung** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 9.3 Menaakul kepentingan bersikap berani terhadap jiran demi kesejahteraan bersama.; 9.4 Mengekspresikan perasaan berkaitan dengan sikap berani terhadap jiran demi kesejahteraan bersama.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (9.3):** Menaakul kepentingan bersikap berani terhadap jiran demi kesejahteraan bersama.  
+**Tugasan 4 (9.4):** Mengekspresikan perasaan berkaitan dengan sikap berani terhadap jiran demi kesejahteraan bersama.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** mengatakan 'tidak' dengan tenang dan mendapatkan pertolongan yang sesuai.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 9.5 Mengamalkan sikap berani terhadap jiran demi kesejahteraan bersama.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (9.5):** Mengamalkan sikap berani terhadap jiran demi kesejahteraan bersama.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Utamakan langkah selamat, bukan konfrontasi dengan pembuli atau orang asing.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

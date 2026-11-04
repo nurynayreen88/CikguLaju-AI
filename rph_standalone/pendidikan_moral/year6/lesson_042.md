@@ -7,24 +7,24 @@
 **Nilai:** Toleransi  
 **SK:** 14.0 — Amalan Toleransi Demi Perpaduan Negara  
 **SP:** 14.5 — Mengamalkan sikap bertoleransi demi perpaduan negara.  
-**Fokus:** Mengamalkan perlakuan dan merefleksi  
-**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
-**BBM:** Kad situasi A/B, lembaran kad pendapat berbeza dan titik persetujuan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
+**Fokus:** Tindakan moral dan refleksi  
+**Masa/Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, kad pandangan dan titik persetujuan, borang semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat memperagakan satu tindakan toleransi yang sesuai dan merancang satu amalan kendiri yang boleh diperhatikan. Bukti minimum: satu tindakan nyata dalam simulasi dan satu langkah susulan.
+Murid memperagakan tindakan berdasarkan **14.5: Mengamalkan sikap bertoleransi demi perpaduan negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 14.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Masyarakat berbeza budaya berbincang secara aman demi perpaduan**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
+**Set induksi (3–5 minit):** Guru menceritakan situasi **Masyarakat berbeza budaya berbincang secara aman demi perpaduan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 — Rancang tindakan:** Guru membahagi peranan pelaku, penerima dan pemerhati. Murid merangka dua ayat atau dua langkah tindakan sebelum lakonan. Tugasan khusus: **mendengar pandangan, menyatakan keperluan dan mencapai persetujuan**; langkah mesti sesuai umur, hormat dan selamat.
+**Aktiviti 1 — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **bertoleransi dan mencari persetujuan**. Murid menyemak persediaan berdasarkan SP 14.5.
 
-**Aktiviti 2 — Main peranan dan semak:** Murid melaksanakan lakonan 60–90 saat. Pemerhati menilai berdasarkan senarai semak tindakan, sebab dan hormat; rakan mengemukakan satu penambahbaikan. Murid mengulang lakonan dengan penambahbaikan dan menulis satu komitmen amalan yang boleh dilakukan tanpa memaksa pendedahan peribadi.
+**Aktiviti 2 — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
 
-**Pengukuhan / Pentaksiran PBD:** i Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
+**Pengukuhan/Pentaksiran PBD:** Semak senarai pemerhatian perlakuan bagi SP 14.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
-**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **toleransi**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
+**Penutup:** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
-**Pengayaan/Pemulihan:** Toleransi tidak bermakna menerima perbuatan yang membahayakan orang lain.
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

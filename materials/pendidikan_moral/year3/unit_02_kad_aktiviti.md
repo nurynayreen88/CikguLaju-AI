@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 3, Unit 2
+# Kit aktiviti Pendidikan Moral Tahun 3 • Unit 2
 
 **Tema:** Saya dan Sekolah  
 **Unit:** Bantuan Kepada Warga Sekolah  
 **Nilai:** Baik hati  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Seorang murid baharu memerlukan bantuan mencari bilik khas.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** menawarkan bantuan yang diperlukan dengan ikhlas.  
-**Pilihan B (perlu diperbaiki):** membiarkan orang memerlukan bantuan walaupun kita mampu membantu dengan selamat.  
-**Soalan tertumpu:** Bantuan apakah benar-benar diperlukan dan apakah batas keselamatan kita?
+**Pilihan A (sesuai):** bertanya bantuan yang diperlukan dan membantu dengan selamat.  
+**Pilihan B (perlu dibaiki):** mengabaikan orang yang memerlukan pertolongan.  
+**Soalan utama:** Bantuan apa yang paling sesuai serta selamat?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **baik hati** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **peta keperluan dan bentuk bantuan**.
-**Rujukan SP:** 2.1 Menyenaraikan jenis bantuan yang boleh diberi kepada warga sekolah.; 2.2 Mengenal pasti cara membantu warga sekolah.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (2.1):** Menyenaraikan jenis bantuan yang boleh diberi kepada warga sekolah.  
+**Tugasan 2 (2.2):** Mengenal pasti cara membantu warga sekolah.  
+**Hasil murid:** peta jenis bantuan dan keperluan; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa disokong dan dihargai** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 2.3 Menjelaskan kepentingan bersikap ikhlas membantu warga sekolah.; 2.4 Mengekspresikan perasaan apabila dapat membantu warga sekolah.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (2.3):** Menjelaskan kepentingan bersikap ikhlas membantu warga sekolah.  
+**Tugasan 4 (2.4):** Mengekspresikan perasaan apabila dapat membantu warga sekolah.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** menawarkan bantuan sesuai umur dan mendapatkan sokongan orang dewasa jika perlu.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 2.5 Mengamalkan sikap saling membantu dalam kalangan warga sekolah.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (2.5):** Mengamalkan sikap saling membantu dalam kalangan warga sekolah.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Bezakan bantuan tenaga, barangan dan sokongan moral.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

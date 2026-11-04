@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 5, Unit 11
+# Kit aktiviti Pendidikan Moral Tahun 5 • Unit 11
 
 **Tema:** Saya dan Masyarakat  
 **Unit:** Amalan Rajin Dalam Hidup Bermasyarakat  
 **Nilai:** Kerajinan  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Penduduk melaksanakan projek taman komuniti sepanjang bulan.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** melakukan tugasan sedikit demi sedikit sehingga selesai.  
-**Pilihan B (perlu diperbaiki):** menangguhkan semua kerja walaupun mampu memulakannya.  
-**Soalan tertumpu:** Bagaimanakah usaha berterusan memberi hasil lebih baik?
+**Pilihan A (sesuai):** menyiapkan tugasan secara berperingkat.  
+**Pilihan B (perlu dibaiki):** menangguhkan tugasan tanpa berusaha.  
+**Soalan utama:** Bagaimanakah usaha berterusan meningkatkan hasil?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **kerajinan** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **pelan langkah kecil dan jadual kemajuan**.
-**Rujukan SP:** 11.1 Menyenaraikan contoh amalan rajin dalam hidup bermasyarakat.; 11.2 Mengenal pasti kepentingan amalan rajin dalam hidup bermasyarakat.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (11.1):** Menyenaraikan contoh amalan rajin dalam hidup bermasyarakat.  
+**Tugasan 2 (11.2):** Mengenal pasti kepentingan amalan rajin dalam hidup bermasyarakat.  
+**Hasil murid:** pelan langkah kecil dan jadual kemajuan; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa bangga atas usaha** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 11.3 Menjelaskan kesan pengabaian amalan rajin dalam hidup bermasyarakat.; 11.4 Mengekspresikan perasaan berkaitan dengan amalan rajin dalam hidup bermasyarakat.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (11.3):** Menjelaskan kesan pengabaian amalan rajin dalam hidup bermasyarakat.  
+**Tugasan 4 (11.4):** Mengekspresikan perasaan berkaitan dengan amalan rajin dalam hidup bermasyarakat.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** menetapkan satu langkah, melakukannya dan menyemak kemajuan.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 11.5 Mengamalkan sikap rajin dalam hidup bermasyarakat.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (11.5):** Mengamalkan sikap rajin dalam hidup bermasyarakat.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Nilai usaha dan peningkatan, bukan kelajuan atau hasil sempurna sahaja.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

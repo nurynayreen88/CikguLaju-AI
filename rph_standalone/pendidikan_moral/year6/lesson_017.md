@@ -7,24 +7,24 @@
 **Nilai:** Hormat  
 **SK:** 6.0 — Hormati Identiti Negara  
 **SP:** 6.3 — Menaakul kepentingan menghormati identiti negara. | 6.4 — Mengekspresikan perasaan berkaitan dengan menghormati identiti negara.  
-**Fokus:** Menaakul kepentingan, kesan dan emosi  
-**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
-**BBM:** Kad situasi A/B, lembaran kad langkah mendengar-bertanya-menghargai, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
+**Fokus:** Penaakulan kesan dan emosi  
+**Masa/Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menghubungkait satu kesan atau kepentingan tindakan dengan alasan munasabah dan menyatakan perasaan pihak terlibat. Bukti minimum: satu sebab, dua kesan dan satu perasaan.
+Murid menghuraikan atau menilai berdasarkan **6.3: Menaakul kepentingan menghormati identiti negara.** serta mengekspresikan perasaan bagi **6.4: Mengekspresikan perasaan berkaitan dengan menghormati identiti negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 6.3 dan ayat perasaan yang sesuai bagi SP 6.4.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Murid mempersiapkan pameran tentang identiti kebangsaan**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
+**Set induksi (3–5 minit):** Guru menceritakan situasi **Murid mempersiapkan pameran tentang identiti kebangsaan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 — Rantaian sebab-akibat:** Guru membahagi murid kepada kumpulan kecil, memberikan kad A/B dan memerlukan bukti sebelum keputusan dibuat. Murid melukis jadual **pilihan → akibat kepada watak → perasaan**. Murid menyenaraikan satu kesan terhadap diri dan satu kesan terhadap orang lain. Soalan guru: **Bagaimanakah hormat ditunjukkan melalui tindakan, bukan kata-kata sahaja?**
+**Aktiviti 1 — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 6.3 (**Menaakul kepentingan menghormati identiti negara.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah hormat ditunjukkan melalui perbuatan?**
 
-**Aktiviti 2 — Dialog dua penghujung:** Setiap kumpulan membuat dialog dua penghujung cerita berdasarkan pilihan A dan B. Murid memperagakan reaksi dengan sopan, menjelaskan mengapa seseorang mungkin berasa **rasa dihormati**, dan mengubah pilihan apabila menemui kesan yang kurang adil atau kurang selamat.
+**Aktiviti 2 — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 6.4 (**Mengekspresikan perasaan berkaitan dengan menghormati identiti negara.**). Guru semak hubungan alasan, emosi dan nilai.
 
-**Pengukuhan / Pentaksiran PBD:** v Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
+**Pengukuhan/Pentaksiran PBD:** Semak justifikasi serta dua kesan bagi SP 6.3 dan ayat perasaan yang sesuai bagi SP 6.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
-**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **hormat**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
+**Penutup:** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
-**Pengayaan/Pemulihan:** Beri contoh menghormati ruang peribadi, pendapat dan keperluan.
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

@@ -7,24 +7,24 @@
 **Nilai:** Keberanian  
 **SK:** 9.0 — Berani Mempertahankan Maruah Negara  
 **SP:** 9.1 — Menyenaraikan contoh amalan berani mempertahankan maruah negara. | 9.2 — Menghuraikan kepentingan amalan berani mempertahankan maruah negara.  
-**Fokus:** Mengenal pasti dan menerangkan tindakan  
-**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
-**BBM:** Kad situasi A/B, lembaran kad tindakan berani-yang-selamat, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year6/unit_09_kad_aktiviti.md`.
+**Fokus:** Pengetahuan dan cara perlakuan  
+**Masa/Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, peta langkah berani yang selamat, borang semak; fail `materials/pendidikan_moral/year6/unit_09_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai keberanian. Bukti minimum: dua contoh serta satu penjelasan.
+Murid menghasilkan respons tepat bagi **9.1: Menyenaraikan contoh amalan berani mempertahankan maruah negara.** dan **9.2: Menghuraikan kepentingan amalan berani mempertahankan maruah negara.** Kriteria kejayaan: Semak satu respons tepat bagi setiap SP 9.1 dan 9.2, merangkumi peta langkah berani yang selamat serta satu penerangan yang relevan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Murid berhadapan maklumat palsu yang menjatuhkan maruah negara**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
+**Set induksi (3–5 minit):** Guru menceritakan situasi **Murid berhadapan maklumat palsu yang menjatuhkan maruah negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: menegur secara berhemah atau mendapatkan bantuan guru/orang dewasa** dan **B: membalas penghinaan dengan ancaman atau kekerasan**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **berani mempertahankan maruah negara**. Murid merakam jawapan pada kad tindakan berani-yang-selamat.
+**Aktiviti 1 — Analisis pilihan:** Guru menyediakan dua kad tindakan, A: **menegur dengan sopan atau mendapatkan bantuan orang dewasa**, B: **membalas cabaran menggunakan ugutan atau kekerasan**. Murid berbincang secara berpasangan dan menjawab tugasan SP 9.1 (**Menyenaraikan contoh amalan berani mempertahankan maruah negara.**) menggunakan peta langkah berani yang selamat. Guru membantu murid menggunakan kata tugas asal seperti memberikan definisi, menyenaraikan atau menjelaskan.
 
-**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan kad tindakan berani-yang-selamat dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
+**Aktiviti 2 — Bentang dan terangkan:** Murid melengkapkan tugasan SP 9.2 (**Menghuraikan kepentingan amalan berani mempertahankan maruah negara.**), membentangkan respons dan menjelaskan sebab satu tindakan lebih wajar. Guru membetulkan kesilapan konsep dan merekod respons individu.
 
-**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
+**Pengukuhan/Pentaksiran PBD:** Semak satu respons tepat bagi setiap SP 9.1 dan 9.2, merangkumi peta langkah berani yang selamat serta satu penerangan yang relevan. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
-**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **keberanian**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
+**Penutup:** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **keberanian**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
-**Pengayaan/Pemulihan:** Utamakan langkah selamat, bukan konfrontasi dengan pembuli atau orang asing.
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

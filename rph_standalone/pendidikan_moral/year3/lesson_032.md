@@ -7,24 +7,24 @@
 **Nilai:** Kerajinan  
 **SK:** 11.0 — Bersikap Rajin Di Sekolah  
 **SP:** 11.3 — Menjelaskan akibat tidak bersikap rajin di sekolah. | 11.4 — Mengekspresikan perasaan apabila bersikap rajin di sekolah.  
-**Fokus:** Menaakul kepentingan, kesan dan emosi  
-**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
-**BBM:** Kad situasi A/B, lembaran pelan langkah kecil dan jadual kemajuan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year3/unit_11_kad_aktiviti.md`.
+**Fokus:** Penaakulan kesan dan emosi  
+**Masa/Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year3/unit_11_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menghubungkait satu kesan atau kepentingan tindakan dengan alasan munasabah dan menyatakan perasaan pihak terlibat. Bukti minimum: satu sebab, dua kesan dan satu perasaan.
+Murid menghuraikan atau menilai berdasarkan **11.3: Menjelaskan akibat tidak bersikap rajin di sekolah.** serta mengekspresikan perasaan bagi **11.4: Mengekspresikan perasaan apabila bersikap rajin di sekolah.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 11.3 dan ayat perasaan yang sesuai bagi SP 11.4.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
+**Set induksi (3–5 minit):** Guru menceritakan situasi **Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 — Rantaian sebab-akibat:** Guru membahagi murid kepada kumpulan kecil, memberikan kad A/B dan memerlukan bukti sebelum keputusan dibuat. Murid melukis jadual **pilihan → akibat kepada watak → perasaan**. Murid menyenaraikan satu kesan terhadap diri dan satu kesan terhadap orang lain. Soalan guru: **Bagaimanakah usaha berterusan memberi hasil lebih baik?**
+**Aktiviti 1 — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 11.3 (**Menjelaskan akibat tidak bersikap rajin di sekolah.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah usaha berterusan meningkatkan hasil?**
 
-**Aktiviti 2 — Dialog dua penghujung:** Setiap kumpulan membuat dialog dua penghujung cerita berdasarkan pilihan A dan B. Murid memperagakan reaksi dengan sopan, menjelaskan mengapa seseorang mungkin berasa **rasa bangga atas usaha**, dan mengubah pilihan apabila menemui kesan yang kurang adil atau kurang selamat.
+**Aktiviti 2 — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 11.4 (**Mengekspresikan perasaan apabila bersikap rajin di sekolah.**). Guru semak hubungan alasan, emosi dan nilai.
 
-**Pengukuhan / Pentaksiran PBD:** v Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
+**Pengukuhan/Pentaksiran PBD:** Semak justifikasi serta dua kesan bagi SP 11.3 dan ayat perasaan yang sesuai bagi SP 11.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
-**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kerajinan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
+**Penutup:** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerajinan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
-**Pengayaan/Pemulihan:** Nilai usaha dan peningkatan, bukan kelajuan atau hasil sempurna sahaja.
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://anyflip.com/aspgm/fypj/basic. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

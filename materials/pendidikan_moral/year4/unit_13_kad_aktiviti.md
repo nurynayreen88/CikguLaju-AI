@@ -1,36 +1,31 @@
-# Kit Situasi dan Pentaksiran • Pendidikan Moral Tahun 4, Unit 13
+# Kit aktiviti Pendidikan Moral Tahun 4 • Unit 13
 
 **Tema:** Saya dan Jiran  
 **Unit:** Amalan Kesederhanaan Dalam Hidup Berjiran  
 **Nilai:** Kesederhanaan  
-**Status:** BAHAN CADANGAN STAGING (tidak menggunakan halaman buku teks belum disahkan).
+**Status:** DRAF_SEMAK
 
-## Kad situasi utama
+## Kad situasi
 Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan.
 
-## Kad pilihan tindakan untuk perbincangan
-**Pilihan A (wajar):** memilih berdasarkan keperluan serta mengelakkan pembaziran.  
-**Pilihan B (perlu diperbaiki):** membazir wang atau sumber semata-mata untuk menunjuk-nunjuk.  
-**Soalan tertumpu:** Apakah perbezaan keperluan dengan kehendak dalam situasi ini?
+**Pilihan A (sesuai):** memilih berdasarkan keperluan dan menggunakan sumber secara berhemat.  
+**Pilihan B (perlu dibaiki):** membazir semata-mata untuk menunjuk-nunjuk.  
+**Soalan utama:** Apakah perbezaan keperluan dan kehendak?
 
-## Lembaran kerja PdP 1 — Kenali dan jelaskan
-1. Senaraikan dua contoh perlakuan yang menunjukkan **kesederhanaan** dalam situasi di atas.
-2. Nyatakan tindakan yang sesuai dan jelaskan sebabnya.
-3. Lengkapkan **jadual keperluan-kehendak-pilihan**.
-**Rujukan SP:** 13.1 Memberikan contoh amalan kesederhanaan dalam hidup berjiran.; 13.2 Memerihalkan cara bersikap sederhana dalam hidup berjiran.
+## PdP 1 — Pengetahuan dan cara
+**Tugasan 1 (13.1):** Memberikan contoh amalan kesederhanaan dalam hidup berjiran.  
+**Tugasan 2 (13.2):** Memerihalkan cara bersikap sederhana dalam hidup berjiran.  
+**Hasil murid:** jadual perlu-mahu-pilihan; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
 
-## Lembaran kerja PdP 2 — Penaakulan dan emosi
-1. Bandingkan pilihan A dan B dengan dua kesan kepada pihak terlibat.
-2. Jelaskan sebab pilihan A lebih baik, atau beri alasan lain yang munasabah.
-3. Tulis satu ayat tentang **rasa tenang kerana membuat pilihan berhemat** dari sudut pandang pihak yang menerima tindakan.
-**Rujukan SP:** 13.3 Mengenal pasti kelebihan amalan kesederhanaan dalam hidup berjiran.; 13.4 Mengekspresikan perasaan berkaitan dengan amalan sederhana dalam hidup berjiran.
+## PdP 2 — Penaakulan dan emosi
+**Tugasan 3 (13.3):** Mengenal pasti kelebihan amalan kesederhanaan dalam hidup berjiran.  
+**Tugasan 4 (13.4):** Mengekspresikan perasaan berkaitan dengan amalan sederhana dalam hidup berjiran.  
+**Soalan banding:** Apakah akibat kepada diri dan orang lain jika pilihan A atau B diambil? Bagaimana perasaan mereka?
 
-## Kad main peranan PdP 3 — Perlakuan moral
-**Watak:** pelaku tindakan, pihak yang menerima tindakan, pemerhati.  
-**Tugasan:** merancang penggunaan sumber secara sederhana dan munasabah.  
-**Pemerhati tandakan:** [ ] tindakan sesuai; [ ] alasan munasabah; [ ] pihak lain dihormati; [ ] refleksi disebut.
-**Rujukan SP:** 13.5 Mengamalkan sikap sederhana dalam hidup berjiran.
+## PdP 3 — Tindakan dan refleksi
+**Tugasan 5 (13.5):** Mengamalkan sikap sederhana dalam hidup berjiran.  
+**Main peranan:** Murid A menyatakan atau melakukan tindakan; murid B memberi respons; murid C menjadi pemerhati dan memberi maklum balas.
+**Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
-**Pengayaan/pemulihan:** Elakkan menghakimi kemampuan kewangan keluarga murid.
-
-**Nota guru:** Tukar watak atau tempat jika contoh menyentuh pengalaman murid yang sensitif. Guru mengumpul evidens penaakulan, emosi dan perlakuan tanpa memberi TP secara automatik.
+**Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
+**Sumber:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.

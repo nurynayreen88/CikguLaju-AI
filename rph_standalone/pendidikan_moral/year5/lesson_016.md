@@ -7,24 +7,24 @@
 **Nilai:** Hormat  
 **SK:** 6.0 — Amalan Hormat Terhadap Kepelbagaian Budaya Dalam Hidup Bermasyarakat  
 **SP:** 6.1 — Memberi contoh kepelbagaian budaya dalam hidup bermasyarakat. | 6.2 — Menghuraikan cara menghormati kepelbagaian budaya dalam hidup bermasyarakat.  
-**Fokus:** Mengenal pasti dan menerangkan tindakan  
-**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
-**BBM:** Kad situasi A/B, lembaran kad langkah mendengar-bertanya-menghargai, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year5/unit_06_kad_aktiviti.md`.
+**Fokus:** Pengetahuan dan cara perlakuan  
+**Masa/Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year5/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai hormat. Bukti minimum: dua contoh serta satu penjelasan.
+Murid menghasilkan respons tepat bagi **6.1: Memberi contoh kepelbagaian budaya dalam hidup bermasyarakat.** dan **6.2: Menghuraikan cara menghormati kepelbagaian budaya dalam hidup bermasyarakat.** Kriteria kejayaan: Semak satu respons tepat bagi setiap SP 6.1 dan 6.2, merangkumi jadual tindakan menghormati serta satu penerangan yang relevan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Penduduk menganjurkan program pertukaran budaya masyarakat**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
+**Set induksi (3–5 minit):** Guru menceritakan situasi **Penduduk menganjurkan program pertukaran budaya masyarakat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: mendengar dan menghormati peraturan serta perbezaan** dan **B: memotong percakapan dan mengabaikan hak orang lain**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **amalan hormat terhadap kepelbagaian budaya dalam hidup bermasyarakat**. Murid merakam jawapan pada kad langkah mendengar-bertanya-menghargai.
+**Aktiviti 1 — Analisis pilihan:** Guru menyediakan dua kad tindakan, A: **mendengar pendapat dan meminta izin**, B: **memotong percakapan serta mengabaikan hak orang lain**. Murid berbincang secara berpasangan dan menjawab tugasan SP 6.1 (**Memberi contoh kepelbagaian budaya dalam hidup bermasyarakat.**) menggunakan jadual tindakan menghormati. Guru membantu murid menggunakan kata tugas asal seperti memberikan definisi, menyenaraikan atau menjelaskan.
 
-**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan kad langkah mendengar-bertanya-menghargai dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
+**Aktiviti 2 — Bentang dan terangkan:** Murid melengkapkan tugasan SP 6.2 (**Menghuraikan cara menghormati kepelbagaian budaya dalam hidup bermasyarakat.**), membentangkan respons dan menjelaskan sebab satu tindakan lebih wajar. Guru membetulkan kesilapan konsep dan merekod respons individu.
 
-**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
+**Pengukuhan/Pentaksiran PBD:** Semak satu respons tepat bagi setiap SP 6.1 dan 6.2, merangkumi jadual tindakan menghormati serta satu penerangan yang relevan. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
-**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **hormat**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
+**Penutup:** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
-**Pengayaan/Pemulihan:** Beri contoh menghormati ruang peribadi, pendapat dan keperluan.
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

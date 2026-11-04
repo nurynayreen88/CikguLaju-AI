@@ -7,24 +7,24 @@
 **Nilai:** Kerajinan  
 **SK:** 11.0 — Amalan Rajin Dalam Hidup Berjiran  
 **SP:** 11.1 — Memberikan contoh amalan rajin dalam hidup berjiran. | 11.2 — Menjelaskan cara bersikap rajin dalam hidup berjiran.  
-**Fokus:** Mengenal pasti dan menerangkan tindakan  
-**Masa/Kelas/Tarikh:** Diisi guru mengikut jadual sebenar; bukan 'minggu' sebagai identiti.  
-**BBM:** Kad situasi A/B, lembaran pelan langkah kecil dan jadual kemajuan, kad peranan dan senarai semak; sumber: `materials/pendidikan_moral/year4/unit_11_kad_aktiviti.md`.
+**Fokus:** Pengetahuan dan cara perlakuan  
+**Masa/Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year4/unit_11_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya dua contoh dan menjelaskan satu cara tindakan yang mencerminkan nilai kerajinan. Bukti minimum: dua contoh serta satu penjelasan.
+Murid menghasilkan respons tepat bagi **11.1: Memberikan contoh amalan rajin dalam hidup berjiran.** dan **11.2: Menjelaskan cara bersikap rajin dalam hidup berjiran.** Kriteria kejayaan: Semak satu respons tepat bagi setiap SP 11.1 dan 11.2, merangkumi pelan langkah kecil dan jadual kemajuan serta satu penerangan yang relevan.
 
 ## Langkah PdP
-**Set induksi (3–5 minit):** Guru menyampaikan situasi: **Keluarga bergilir-gilir membersihkan kawasan sekitar rumah**. Murid mengenal pasti watak, keperluan atau konflik tanpa mendedahkan pengalaman peribadi.
+**Set induksi (3–5 minit):** Guru menceritakan situasi **Keluarga bergilir-gilir membersihkan kawasan sekitar rumah**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 — Bina peta pilihan:** Guru sediakan dua kad pilihan: **A: melakukan tugasan sedikit demi sedikit sehingga selesai** dan **B: menangguhkan semua kerja walaupun mampu memulakannya**. Murid berbincang berpasangan, menandakan pilihan yang wajar dan mencari dua contoh berkait **amalan rajin dalam hidup berjiran**. Murid merakam jawapan pada pelan langkah kecil dan jadual kemajuan.
+**Aktiviti 1 — Analisis pilihan:** Guru menyediakan dua kad tindakan, A: **menyiapkan tugasan secara berperingkat**, B: **menangguhkan tugasan tanpa berusaha**. Murid berbincang secara berpasangan dan menjawab tugasan SP 11.1 (**Memberikan contoh amalan rajin dalam hidup berjiran.**) menggunakan pelan langkah kecil dan jadual kemajuan. Guru membantu murid menggunakan kata tugas asal seperti memberikan definisi, menyenaraikan atau menjelaskan.
 
-**Aktiviti 2 — Pamer dan jelaskan:** Setiap pasangan menunjukkan pelan langkah kecil dan jadual kemajuan dan menerangkan sebab satu pilihan. Guru membandingkan alasan yang baik, membetulkan kekeliruan serta meminta murid menulis satu ayat "Saya memilih ... kerana ...".
+**Aktiviti 2 — Bentang dan terangkan:** Murid melengkapkan tugasan SP 11.2 (**Menjelaskan cara bersikap rajin dalam hidup berjiran.**), membentangkan respons dan menjelaskan sebab satu tindakan lebih wajar. Guru membetulkan kesilapan konsep dan merekod respons individu.
 
-**Pengukuhan / Pentaksiran PBD:** E Guru memberikan maklum balas serta bimbingan kepada murid yang memerlukan.
+**Pengukuhan/Pentaksiran PBD:** Semak satu respons tepat bagi setiap SP 11.1 dan 11.2, merangkumi pelan langkah kecil dan jadual kemajuan serta satu penerangan yang relevan. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
-**Penutup:** Murid menyebut satu tindakan pilihan dengan ayat lengkap dan menghubungkaitkan dengan nilai **kerajinan**. Guru rumuskan perlakuan yang wajar serta had keselamatan dalam konteks situasi.
+**Penutup:** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerajinan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
-**Pengayaan/Pemulihan:** Nilai usaha dan peningkatan, bukan kelajuan atau hasil sempurna sahaja.
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan kurikulum:** [DSKP Pendidikan Moral SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) (halaman dan aktiviti belum disemak). **Sumber RPT 2026 (rujukan, bukan tarikh 2027):** https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026. **Catatan:** BBM ialah cadangan CikguLaju, bukan petikan/aktiviti bernombor buku teks. Peruntukan 3 PdP per unit ialah draf sementara.
+**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
