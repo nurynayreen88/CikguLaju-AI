@@ -1,0 +1,46 @@
+name: English Year 4 and Year 5 full draft A4 audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+      - 'web/english_y5_fixed_draft_preview_runtime.py'
+      - 'web/english_y4_y5_draft_word_a4_runtime.py'
+      - 'tools/verify_english_y4_y5_draft_a4.py'
+      - '.github/workflows/english-y4-y5-draft-a4.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/english_y4_y5_draft_word_a4_runtime.py'
+      - 'tools/verify_english_y4_y5_draft_a4.py'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  render:
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [4, 5]
+    runs-on: ubuntu-latest
+    timeout-minutes: 19
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install offline Word and PDF conversion dependencies
+        run: |
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq libreoffice-writer >/dev/null
+          fi
+      - name: Verify source-backed DRAFT A4 Word RPH without losing text
+        run: python tools/verify_english_y4_y5_draft_a4.py --year ${{ matrix.year }}
+      - name: Upload per-Lesson A4 report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y${{ matrix.year }}-draft-a4-report
+          path: output/english_y4_y5_full_draft_a4/year${{ matrix.year }}/report.json
+          retention-days: 7
