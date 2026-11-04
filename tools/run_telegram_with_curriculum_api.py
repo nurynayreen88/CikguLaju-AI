@@ -309,3 +309,16 @@ try:
 except Exception as _receipt_view_exc:
     PAYMENT_RECEIPT_ADMIN_ACTIVE = False
     print("Admin payment receipt view unavailable:", type(_receipt_view_exc).__name__, flush=True)
+
+# The Telegram payment QR is only a draft intent. A real pending row is
+# created on the customer's verified photo/PDF webhook message, not on QR open.
+# Install after the durable Supabase queue so this never writes to local SQLite.
+try:
+    from web.payment_record_on_proof_runtime import install as install_proof_first_payment
+    PROOF_FIRST_PAYMENT_ACTIVE = bool(
+        DURABLE_USER_PAYMENT_STORE_ACTIVE
+        and install_proof_first_payment(telegram_runtime))
+except Exception as _proof_first_exc:
+    PROOF_FIRST_PAYMENT_ACTIVE = False
+    print("Proof-first payment feature unavailable:",
+          type(_proof_first_exc).__name__, flush=True)
