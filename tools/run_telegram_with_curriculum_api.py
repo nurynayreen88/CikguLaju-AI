@@ -87,3 +87,14 @@ try:
 except Exception as _math_rpt_2027_exc:
     MATEMATIK_RPT_2027_TELEGRAM_ACTIVE = False
     print("Matematik RPT 2027 Telegram bridge unavailable:", repr(_math_rpt_2027_exc), flush=True)
+
+
+# PJPK Tahun 2–6: admin-only source preview. Feature flag OFF by default.
+# The existing selection -> class -> credit -> Word/PDF route is reused;
+# no database, payment, production readiness or global subject is changed.
+try:
+    from web.pjpk_2027_preview_runtime import install as install_pjpk_preview
+    PJPK_2027_PREVIEW_INSTALLED = install_pjpk_preview(vars(telegram_runtime))
+except Exception as _pjpk_preview_exc:
+    PJPK_2027_PREVIEW_INSTALLED = False
+    print("PJPK 2027 preview disabled:", repr(_pjpk_preview_exc), flush=True)
