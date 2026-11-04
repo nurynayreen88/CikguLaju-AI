@@ -1,27 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 3 — PdP 024
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Siapa Kuat Dia Menang  
-**Status:** DRAF — audit teks DSKP, keselamatan dan format A4 masih diperlukan  
-**Kurikulum:** KSSR PJ Tahun 3 (bukan KP2027 Tahun 1)  
-**Standard Kandungan (kod):** 1.13,2.13,5.1,5.4  
-**Standard Pembelajaran (kod):** 1.13.1,2.13.1,5.1.2,5.4.2  
-**Rujukan:** Buku Teks PJPK Tahun 3, m/s 47-48  
-**Masa/Tarikh:** Mengikut jadual waktu kelas dan takwim negeri; tiada tarikh PdP individu diandaikan.
+**SK:** 1.13, 2.13, 5.1, 5.4  
+**SP:** 1.13.1, 2.13.1, 5.1.2, 5.4.2  
+**Rujukan buku:** RPT 2027: halaman 47-48; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat melakukan tugasan siapa kuat dia menang mengikut teknik yang dipelajari serta menunjukkan bukti pencapaian berdasarkan kriteria pentaksiran di bawah.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.13.1 (bermain permainan tradisional yang melibatkan daya tahan dan kekuatan otot seperti tarik upih dan batak lampung) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.13.1: Menjelaskan cara bermain permainan tradisional yang melibatkan daya tahan dan kekuatan otot seperti Tarik Upih dan Batak Lampung.
 
-**Set induksi (guru dan murid):** Guru merujuk gambar/aktiviti buku teks pada halaman 47-48, mengemukakan soalan tentang siapa kuat dia menang dan menyatakan peraturan keselamatan. Murid berkongsi pemerhatian dan bersedia dengan ruang/alat yang sesuai.
+**Set induksi:** Guru mengemukakan cabaran "Siapa Kuat Dia Menang" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi berpandu:** Guru memperagakan langkah utama, menyebut titik teknik penting, menyediakan ruang dan mengawal giliran. Murid memerhati, mengajukan soalan dan mencuba gerakan asas mengikut kemampuan.
+**Aktiviti 1 — Teknik rekreasi:** Guru memperagakan langkah keselamatan, menunjukkan peralatan dan mengemukakan cabaran rekreasi. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.13.1.
 
-**Aktiviti 2 — Amali utama:** Permainan tradisional kekuatan dan daya tahan otot seperti Tarik Upih atau Batak Lampung, hanya jika peralatan, ruang dan pengawasan sesuai. Guru menerangkan peraturan serta teknik mengawal daya; murid bermain secara bergilir, mengamalkan keselamatan dan menjelaskan cara permainan menguji kekuatan serta daya tahan otot. Jika permainan sebenar tidak dapat dijalankan, rekod SP kemahiran sebagai belum ditaksir.
+**Aktiviti 2 — Amali khusus:** Murid menyusun urutan langkah pada kad teknik lalu mempraktikkan dengan tali atau penanda di tempat selamat. Permainan tradisional kekuatan dan daya tahan otot seperti Tarik Upih atau Batak Lampung, hanya jika peralatan, ruang dan pengawasan sesuai. Guru menerangkan peraturan serta teknik mengawal daya; murid bermain secara bergilir, mengamalkan keselamatan dan menjelaskan cara permainan menguji kekuatan serta daya tahan otot. Murid menyemak hasil pasangan menggunakan kriteria fungsi, ketepatan urutan dan kerjasama.
 
-**Pengukuhan / pentaksiran formatif:** A: 04/07–08/07
+**Pengukuhan/PBD:** Guru merekod susunan langkah, fungsi hasil, kerjasama melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.13.1. Guru turut mencatat amalan SP 5.1.2, 5.4.2.
 
-**Penutup:** Murid menyatakan satu teknik atau langkah keselamatan yang dipelajari. Guru membuat rumusan berdasarkan pemerhatian, memberi maklum balas khusus dan menetapkan latihan seterusnya jika perlu.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Bahan:** Buku teks m/s 47-48; peralatan sebenar bergantung pada aktiviti dan kemudahan selamat yang ada.
+**BBM:** tali lembut, penanda tapak, kad teknik; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Hindari simpulan mengikat tubuh; jangan melakukan aktiviti luar kawasan tanpa kawalan.
 
-**Rekod:** Kehadiran, pencapaian SP, intervensi dan refleksi guru diisi selepas PdP.
-
-**Jejak sumber:** [RPT PJ Tahun 3 2027 — semakan takwim v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit), [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). Kod disemak kehadirannya dalam DSKP; kelulusan SK/SP teks penuh dan Word A4 belum diberikan.
+**Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

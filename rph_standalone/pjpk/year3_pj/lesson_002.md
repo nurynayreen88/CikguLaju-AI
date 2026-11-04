@@ -1,27 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 3 — PdP 002
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Hambur kaki  
-**Status:** DRAF — audit teks DSKP, keselamatan dan format A4 masih diperlukan  
-**Kurikulum:** KSSR PJ Tahun 3 (bukan KP2027 Tahun 1)  
-**Standard Kandungan (kod):** 1.2,2.2,5.1  
-**Standard Pembelajaran (kod):** 1.2.1,1.2.2,2.2.1,5.1.3  
-**Rujukan:** Buku Teks PJPK Tahun 3, m/s 4  
-**Masa/Tarikh:** Mengikut jadual waktu kelas dan takwim negeri; tiada tarikh PdP individu diandaikan.
+**SK:** 1.2, 2.2, 5.1  
+**SP:** 1.2.1, 1.2.2, 2.2.1, 5.1.3  
+**Rujukan buku:** RPT 2027: halaman 4; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat melakukan tugasan hambur kaki mengikut teknik yang dipelajari serta menunjukkan bukti pencapaian berdasarkan kriteria pentaksiran di bawah.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.2.1 (melakukan hambur kaki dari aras tinggi ke aras rendah) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.2.1: Menyatakan perbezaan lakuan semasa melakukan hambur kaki dari pelbagai aras.
 
-**Set induksi (guru dan murid):** Guru merujuk gambar/aktiviti buku teks pada halaman 4, mengemukakan soalan tentang hambur kaki dan menyatakan peraturan keselamatan. Murid berkongsi pemerhatian dan bersedia dengan ruang/alat yang sesuai.
+**Set induksi:** Guru mengemukakan cabaran "Hambur kaki" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi berpandu:** Guru memperagakan langkah utama, menyebut titik teknik penting, menyediakan ruang dan mengawal giliran. Murid memerhati, mengajukan soalan dan mencuba gerakan asas mengikut kemampuan.
+**Aktiviti 1 — Teknik pengukuran:** Guru sediakan alat ukur yang ditentukur serta kad rekod individu; terangkan langkah membaca skala. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.2.1.
 
-**Aktiviti 2 — Amali utama:** Stesen hambur kaki: demonstrasi fleksi lutut, tolakan dua kaki pada aras rendah, mendarat di atas permukaan selamat dan stabilkan imbangan; guru kawal giliran.
+**Aktiviti 2 — Amali khusus:** Murid mengambil dan mencatat ukuran sendiri di ruang tertutup; rakan tidak membaca rekod peribadi. Stesen hambur kaki: demonstrasi fleksi lutut, tolakan dua kaki pada aras rendah, mendarat di atas permukaan selamat dan stabilkan imbangan; guru kawal giliran. Guru menyemak ketepatan kaedah ukur dan membimbing tafsiran individu tanpa menyebut keputusan di hadapan kelas.
 
-**Pengukuhan / pentaksiran formatif:** Senarai semak individu: tolakan kedua-dua kaki, lutut fleksi semasa mendarat, imbangan selepas mendarat dan patuh arahan keselamatan. Bukti kefahaman (soal jawab): Mengapa lutut perlu dibengkokkan semasa mendarat?
+**Pengukuhan/PBD:** Senarai semak individu: tolakan kedua-dua kaki, lutut fleksi semasa mendarat, imbangan selepas mendarat dan patuh arahan keselamatan. Bukti kefahaman (soal jawab): Mengapa lutut perlu dibengkokkan semasa mendarat? Guru turut mencatat amalan SP 5.1.3.
 
-**Penutup:** Murid menyatakan satu teknik atau langkah keselamatan yang dipelajari. Guru membuat rumusan berdasarkan pemerhatian, memberi maklum balas khusus dan menetapkan latihan seterusnya jika perlu.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Bahan:** Buku teks m/s 4; peralatan sebenar bergantung pada aktiviti dan kemudahan selamat yang ada.
+**BBM:** stadiometer atau pita ukur, penimbang sesuai, kad rekod peribadi; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Jaga privasi berat dan tinggi; elak perbandingan bentuk badan atau komen pemakanan individu.
 
-**Rekod:** Kehadiran, pencapaian SP, intervensi dan refleksi guru diisi selepas PdP.
-
-**Jejak sumber:** [RPT PJ Tahun 3 2027 — semakan takwim v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit), [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). Kod disemak kehadirannya dalam DSKP; kelulusan SK/SP teks penuh dan Word A4 belum diberikan.
+**Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

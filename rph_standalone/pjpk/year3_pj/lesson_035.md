@@ -1,27 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 3 — PdP 035
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Kira dan Tahan  
-**Status:** DRAF — audit teks DSKP, keselamatan dan format A4 masih diperlukan  
-**Kurikulum:** KSSR PJ Tahun 3 (bukan KP2027 Tahun 1)  
-**Standard Kandungan (kod):** 3.3,4.3,5.1  
-**Standard Pembelajaran (kod):** 3.3.1,4.3.1,4.3.2,5.1.2  
-**Rujukan:** Buku Teks PJPK Tahun 3, m/s 60  
-**Masa/Tarikh:** Mengikut jadual waktu kelas dan takwim negeri; tiada tarikh PdP individu diandaikan.
+**SK:** 3.3, 4.3, 5.1  
+**SP:** 3.3.1, 4.3.1, 4.3.2, 5.1.2  
+**Rujukan buku:** RPT 2027: halaman 60; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat melakukan tugasan kira dan tahan mengikut teknik yang dipelajari serta menunjukkan bukti pencapaian berdasarkan kriteria pentaksiran di bawah.
+**Objektif:** (1) Melaksanakan kemahiran SP 3.3.1 (melakukan senaman regangan dinamik dan regangan statik pada otot-otot utama serta bertahan dalam jangka masa yang ditetapkan) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 4.3.1: Menamakan senaman regangan yang selamat dilakukan untuk meningkatkan kelenturan.
 
-**Set induksi (guru dan murid):** Guru merujuk gambar/aktiviti buku teks pada halaman 60, mengemukakan soalan tentang kira dan tahan dan menyatakan peraturan keselamatan. Murid berkongsi pemerhatian dan bersedia dengan ruang/alat yang sesuai.
+**Set induksi:** Guru mengemukakan cabaran "Kira dan Tahan" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi berpandu:** Guru memperagakan langkah utama, menyebut titik teknik penting, menyediakan ruang dan mengawal giliran. Murid memerhati, mengajukan soalan dan mencuba gerakan asas mengikut kemampuan.
+**Aktiviti 1 — Teknik kecergasan:** Guru menunjukkan cara memanaskan badan, teknik pernafasan dan pergerakan utama mengikut SP. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 3.3.1.
 
-**Aktiviti 2 — Amali utama:** Regangan statik berpasangan: kenal pasti kumpulan otot utama, capai julat selesa dan tahan mengikut kiraan guru tanpa melantun; rakan mencatat tempoh dan memerhati postur. Guru membezakan secara ringkas regangan statik daripada dinamik sebelum murid membuat perbandingan.
+**Aktiviti 2 — Amali khusus:** Murid berlatih lakuan pada intensiti sederhana dengan pilihan tempoh yang sesuai keupayaan. Regangan statik berpasangan: kenal pasti kumpulan otot utama, capai julat selesa dan tahan mengikut kiraan guru tanpa melantun; rakan mencatat tempoh dan memerhati postur. Guru membezakan secara ringkas regangan statik daripada dinamik sebelum murid membuat perbandingan. Murid menilai perubahan pernafasan, postur dan tahap usaha sendiri; catatan individu digunakan bagi intervensi guru.
 
-**Pengukuhan / pentaksiran formatif:** Rekod tempoh tahan dan postur selamat, pengenalpastian otot serta penerangan perbezaan regangan statik dan dinamik. Bukti kefahaman: Mengapa regangan statik perlu ditahan dan tidak dilantun?
+**Pengukuhan/PBD:** Rekod tempoh tahan dan postur selamat, pengenalpastian otot serta penerangan perbezaan regangan statik dan dinamik. Bukti kefahaman: Mengapa regangan statik perlu ditahan dan tidak dilantun? Guru turut mencatat amalan SP 5.1.2.
 
-**Penutup:** Murid menyatakan satu teknik atau langkah keselamatan yang dipelajari. Guru membuat rumusan berdasarkan pemerhatian, memberi maklum balas khusus dan menetapkan latihan seterusnya jika perlu.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Bahan:** Buku teks m/s 60; peralatan sebenar bergantung pada aktiviti dan kemudahan selamat yang ada.
+**BBM:** kon, alas senaman, kad refleksi individu; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Pilih intensiti sesuai, rehat jika penat; rekod kesihatan tidak diumumkan.
 
-**Rekod:** Kehadiran, pencapaian SP, intervensi dan refleksi guru diisi selepas PdP.
-
-**Jejak sumber:** [RPT PJ Tahun 3 2027 — semakan takwim v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit), [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). Kod disemak kehadirannya dalam DSKP; kelulusan SK/SP teks penuh dan Word A4 belum diberikan.
+**Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

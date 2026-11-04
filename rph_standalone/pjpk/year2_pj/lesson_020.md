@@ -1,30 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 2 — PdP 020
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Gerak Ria  
-**Status:** DRAF — belum lulus semakan pedagogi dan format A4  
-**Kurikulum:** KSSR PJ Tahun 2, pemetaan RPT 2027 (bukan KP2027 Tahun 1)  
 **SK:** 1.6, 2.5, 5.1  
 **SP:** 1.6.1, 2.5.1, 5.1.2  
-**Rujukan buku teks:** halaman 33-34  
-**Tarikh/Masa/Kelas:** Guru tetapkan mengikut jadual waktu dan negeri; tiada tarikh sesi diandaikan.
+**Rujukan buku:** RPT 2027: halaman halaman 33-34; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Murid boleh melakukan tugasan gerak ria berpandukan teknik dalam DSKP serta menerangkan sebab/kriteria lakuan yang selamat.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.6.1 (melakukan pergerakan haiwan pada pelbagai bentuk dan arah) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.5.1: Menyatakan perkaitan antara bentuk badan dengan pergerakan haiwan yang diteroka.
 
-**Kemahiran utama mengikut DSKP:**
-- **SP 1.6.1:** Melakukan pergerakan haiwan pada pelbagai bentuk dan arah.
+**Set induksi:** Guru mengemukakan cabaran "Gerak Ria" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Set induksi:** Guru memperkenalkan tugasan gerak ria dan mengemukakan satu soalan berdasarkan kemahiran utama. Murid memerhati contoh atau imej buku teks, kemudian menyatakan peraturan keselamatan berkaitan.
+**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.6.1.
 
-**Aktiviti 1 — Tunjuk cara:** Guru mempamerkan langkah yang dinyatakan oleh SP 1.6.1 (Melakukan pergerakan haiwan pada pelbagai bentuk dan arah.) menggunakan ruang dan alat yang sesuai. Murid menilai kedudukan anggota badan dan berlatih peringkat asas di bawah pemantauan.
+**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
 
-**Aktiviti 2 — Latihan berkonteks:** Guru menyusun stesen atau tugasan berpasangan khusus bagi gerak ria. Murid melaksanakan melakukan pergerakan haiwan pada pelbagai bentuk dan arah, kemudian bertukar peranan sebagai pemerhati untuk memberi maklum balas tentang teknik.
+**Pengukuhan/PBD:** Guru merekod ketepatan lakuan, penggunaan ruang, respons bimbingan melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.5.1. Guru turut mencatat amalan SP 5.1.2.
 
-**Pengukuhan/PBD:** Senarai semak pergerakan berdasarkan 1.6.1. Soal jawab bagi SP 2.5.1: Menyatakan perkaitan antara bentuk badan dengan pergerakan haiwan yang diteroka.. Perhatikan tingkah laku atau kerjasama berkaitan SP 5.1.2.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Penutup:** Murid menyebut satu teknik yang berjaya dipraktikkan dan satu perkara yang akan ditambah baik. Guru merumus berdasarkan evidens individu serta merekod intervensi.
+**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
 
-**BBM/Keselamatan:** Buku teks (halaman 33-34); Peralatan latihan yang sesuai dengan kemudahan sebenar. Guru memeriksa ruang, alatan dan giliran. Murid menjalankan aktiviti mengikut kemampuan tanpa kontak yang berisiko.
-
-**Catatan audit:** Kod dan ayat SP dipadankan terhadap teks DSKP Tahun 2, tetapi pengesahan semuka, kesesuaian aktiviti, halaman dan Word A4 belum lengkap. Tidak tersedia untuk pengaktifan Telegram.
-
-**Sumber:** [RPT PJ Tahun 2 staging 37+4](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view).
+**Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

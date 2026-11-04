@@ -1,30 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 2 — PdP 010
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Baling Bola Gergasi  
-**Status:** DRAF — belum lulus semakan pedagogi dan format A4  
-**Kurikulum:** KSSR PJ Tahun 2, pemetaan RPT 2027 (bukan KP2027 Tahun 1)  
 **SK:** 1.4, 2.3, 5.2  
 **SP:** 1.4.3, 2.3.1, 5.2.2  
-**Rujukan buku teks:** 17  
-**Tarikh/Masa/Kelas:** Guru tetapkan mengikut jadual waktu dan negeri; tiada tarikh sesi diandaikan.
+**Rujukan buku:** RPT 2027: halaman 17; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Murid boleh melakukan tugasan baling bola gergasi berpandukan teknik dalam DSKP serta menerangkan sebab/kriteria lakuan yang selamat.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.4.3 (membaling bola pada satu jarak) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.3.1: Menyatakan perkaitan antara aplikasi daya dengan pergerakan objek.
 
-**Kemahiran utama mengikut DSKP:**
-- **SP 1.4.3:** Membaling bola pada satu jarak.
+**Set induksi:** Guru mengemukakan cabaran "Baling Bola Gergasi" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Set induksi:** Guru memperkenalkan tugasan baling bola gergasi dan mengemukakan satu soalan berdasarkan kemahiran utama. Murid memerhati contoh atau imej buku teks, kemudian menyatakan peraturan keselamatan berkaitan.
+**Aktiviti 1 — Teknik balingan:** Guru tunjuk genggaman, arah hayunan dan susun atur zon balingan serta menunggu. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.4.3.
 
-**Aktiviti 1 — Tunjuk cara:** Guru mempamerkan langkah yang dinyatakan oleh SP 1.4.3 (Membaling bola pada satu jarak.) menggunakan ruang dan alat yang sesuai. Murid menilai kedudukan anggota badan dan berlatih peringkat asas di bawah pemantauan.
+**Aktiviti 2 — Amali khusus:** Murid mencuba lontaran objek lembut ke sasaran pada jarak mudah; tukar jarak selepas guru menyemak teknik. Murid membuat dua percubaan sasaran dan membandingkan hasil secara individu; pasangan mencatat kawalan pergerakan.
 
-**Aktiviti 2 — Latihan berkonteks:** Guru menyusun stesen atau tugasan berpasangan khusus bagi baling bola gergasi. Murid melaksanakan membaling bola pada satu jarak, kemudian bertukar peranan sebagai pemerhati untuk memberi maklum balas tentang teknik.
+**Pengukuhan/PBD:** Guru merekod arah balingan, kawalan lakuan, ketepatan sasaran melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.3.1. Guru turut mencatat amalan SP 5.2.2.
 
-**Pengukuhan/PBD:** Senarai semak pergerakan berdasarkan 1.4.3. Soal jawab bagi SP 2.3.1: Menyatakan perkaitan antara aplikasi daya dengan pergerakan objek.. Perhatikan tingkah laku atau kerjasama berkaitan SP 5.2.2.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Penutup:** Murid menyebut satu teknik yang berjaya dipraktikkan dan satu perkara yang akan ditambah baik. Guru merumus berdasarkan evidens individu serta merekod intervensi.
+**BBM:** bola lembut atau pundi kacang, gelung sasaran, kon; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Semua balingan satu arah, tiada murid di zon sasaran; kutip alatan hanya selepas arahan.
 
-**BBM/Keselamatan:** Buku teks (17); Peralatan latihan yang sesuai dengan kemudahan sebenar. Guru memeriksa ruang, alatan dan giliran. Murid menjalankan aktiviti mengikut kemampuan tanpa kontak yang berisiko.
-
-**Catatan audit:** Kod dan ayat SP dipadankan terhadap teks DSKP Tahun 2, tetapi pengesahan semuka, kesesuaian aktiviti, halaman dan Word A4 belum lengkap. Tidak tersedia untuk pengaktifan Telegram.
-
-**Sumber:** [RPT PJ Tahun 2 staging 37+4](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view).
+**Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

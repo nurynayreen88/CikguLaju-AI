@@ -1,27 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 3 — PdP 010
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Hantar Tepat, Terima Bijak  
-**Status:** DRAF — audit teks DSKP, keselamatan dan format A4 masih diperlukan  
-**Kurikulum:** KSSR PJ Tahun 3 (bukan KP2027 Tahun 1)  
-**Standard Kandungan (kod):** 1.6,2.6,5.4  
-**Standard Pembelajaran (kod):** 1.6.1,1.6.2,2.6.1,5.4.2  
-**Rujukan:** Buku Teks PJPK Tahun 3, m/s 21-22  
-**Masa/Tarikh:** Mengikut jadual waktu kelas dan takwim negeri; tiada tarikh PdP individu diandaikan.
+**SK:** 1.6, 2.6, 5.4  
+**SP:** 1.6.1, 1.6.2, 2.6.1, 5.4.2  
+**Rujukan buku:** RPT 2027: halaman 21-22; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat melakukan tugasan hantar tepat, terima bijak mengikut teknik yang dipelajari serta menunjukkan bukti pencapaian berdasarkan kriteria pentaksiran di bawah.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.6.1 (menghantar bola menggunakan tangan, kaki dan alatan) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.6.1: Menyatakan lakuan menghantar dan menerima bola menggunakan tangan, kaki dan alatan.
 
-**Set induksi (guru dan murid):** Guru merujuk gambar/aktiviti buku teks pada halaman 21-22, mengemukakan soalan tentang hantar tepat, terima bijak dan menyatakan peraturan keselamatan. Murid berkongsi pemerhatian dan bersedia dengan ruang/alat yang sesuai.
+**Set induksi:** Guru mengemukakan cabaran "Hantar Tepat, Terima Bijak" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi berpandu:** Guru memperagakan langkah utama, menyebut titik teknik penting, menyediakan ruang dan mengawal giliran. Murid memerhati, mengajukan soalan dan mencuba gerakan asas mengikut kemampuan.
+**Aktiviti 1 — Teknik kemahiran permainan:** Guru tunjuk pegangan/alatan, arah hantaran dan posisi badan sebelum memberi isyarat mula. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.6.1.
 
-**Aktiviti 2 — Amali utama:** Stesen berpasangan: murid bergerak ke ruang terbuka, menghantar objek ke sasaran pada jarak berbeza dan menerima dengan posisi sedia; tukar peranan setiap pusingan.
+**Aktiviti 2 — Amali khusus:** Murid melakukan latihan pasangan dengan bola lembut: tindakan asas diulang pada jarak dekat, kemudian tambah pergerakan. Stesen berpasangan: murid bergerak ke ruang terbuka, menghantar objek ke sasaran pada jarak berbeza dan menerima dengan posisi sedia; tukar peranan setiap pusingan. Kumpulan kecil menggunakan kemahiran dalam permainan ubah suai tanpa sentuhan; rakan merekod teknik dan keputusan taktikal.
 
-**Pengukuhan / pentaksiran formatif:** Pemerhatian: kedudukan sedia, hantaran ke sasaran dan penerimaan terkawal. Bukti kefahaman (soal jawab): Mengapa posisi sedia penting semasa menerima objek?
+**Pengukuhan/PBD:** Pemerhatian: kedudukan sedia, hantaran ke sasaran dan penerimaan terkawal. Bukti kefahaman (soal jawab): Mengapa posisi sedia penting semasa menerima objek? Guru turut mencatat amalan SP 5.4.2.
 
-**Penutup:** Murid menyatakan satu teknik atau langkah keselamatan yang dipelajari. Guru membuat rumusan berdasarkan pemerhatian, memberi maklum balas khusus dan menetapkan latihan seterusnya jika perlu.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Bahan:** Buku teks m/s 21-22; peralatan sebenar bergantung pada aktiviti dan kemudahan selamat yang ada.
+**BBM:** bola lembut, kon, penanda sasaran, alatan permainan jika relevan; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Tetapkan zon selamat, jarak antara pasangan dan larangan kontak badan berbahaya.
 
-**Rekod:** Kehadiran, pencapaian SP, intervensi dan refleksi guru diisi selepas PdP.
-
-**Jejak sumber:** [RPT PJ Tahun 3 2027 — semakan takwim v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit), [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). Kod disemak kehadirannya dalam DSKP; kelulusan SK/SP teks penuh dan Word A4 belum diberikan.
+**Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

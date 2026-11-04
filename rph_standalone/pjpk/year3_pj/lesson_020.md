@@ -1,27 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 3 — PdP 020
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Halangan Bertingkat  
-**Status:** DRAF — audit teks DSKP, keselamatan dan format A4 masih diperlukan  
-**Kurikulum:** KSSR PJ Tahun 3 (bukan KP2027 Tahun 1)  
-**Standard Kandungan (kod):** 1.9,2.9,5.2  
-**Standard Pembelajaran (kod):** 1.9.4,2.9.2,5.2.2  
-**Rujukan:** Buku Teks PJPK Tahun 3, m/s 38  
-**Masa/Tarikh:** Mengikut jadual waktu kelas dan takwim negeri; tiada tarikh PdP individu diandaikan.
+**SK:** 1.9, 2.9, 5.2  
+**SP:** 1.9.4, 2.9.2, 5.2.2  
+**Rujukan buku:** RPT 2027: halaman 38; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat melakukan tugasan halangan bertingkat mengikut teknik yang dipelajari serta menunjukkan bukti pencapaian berdasarkan kriteria pentaksiran di bawah.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.9.4 (melompat melepasi halangan pada pelbagai aras) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.9.2: Mengenal pasti dan menjustifikasi kaki yang sesuai digunakan untuk melonjak.
 
-**Set induksi (guru dan murid):** Guru merujuk gambar/aktiviti buku teks pada halaman 38, mengemukakan soalan tentang halangan bertingkat dan menyatakan peraturan keselamatan. Murid berkongsi pemerhatian dan bersedia dengan ruang/alat yang sesuai.
+**Set induksi:** Guru mengemukakan cabaran "Halangan Bertingkat" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi berpandu:** Guru memperagakan langkah utama, menyebut titik teknik penting, menyediakan ruang dan mengawal giliran. Murid memerhati, mengajukan soalan dan mencuba gerakan asas mengikut kemampuan.
+**Aktiviti 1 — Teknik lompatan:** Guru tandakan kawasan lonjakan dan pendaratan, tunjuk posisi lutut serta lengan. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.9.4.
 
-**Aktiviti 2 — Amali utama:** Litar halangan rendah: murid menentukan jarak awalan, melonjak melepasi halangan lembut mengikut aras kemampuan, dan mendarat seimbang. Guru memastikan laluan sehala, ruang mendarat kosong dan halangan tidak keras.
+**Aktiviti 2 — Amali khusus:** Murid berlatih fasa awalan, lonjakan dan mendarat secara berasingan sebelum menggabungkannya. Litar halangan rendah: murid menentukan jarak awalan, melonjak melepasi halangan lembut mengikut aras kemampuan, dan mendarat seimbang. Guru memastikan laluan sehala, ruang mendarat kosong dan halangan tidak keras. Murid melakukan dua cubaan dengan pendaratan terkawal; rakan menilai arah lengan dan keseimbangan.
 
-**Pengukuhan / pentaksiran formatif:** Senarai semak: awalan terkawal, lonjakan sesuai, tidak menyentuh halangan, pendaratan stabil dan patuh giliran. Bukti kefahaman (soal jawab): Mengapa jarak awalan perlu sesuai dengan halangan?
+**Pengukuhan/PBD:** Senarai semak: awalan terkawal, lonjakan sesuai, tidak menyentuh halangan, pendaratan stabil dan patuh giliran. Bukti kefahaman (soal jawab): Mengapa jarak awalan perlu sesuai dengan halangan? Guru turut mencatat amalan SP 5.2.2.
 
-**Penutup:** Murid menyatakan satu teknik atau langkah keselamatan yang dipelajari. Guru membuat rumusan berdasarkan pemerhatian, memberi maklum balas khusus dan menetapkan latihan seterusnya jika perlu.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Bahan:** Buku teks m/s 38; peralatan sebenar bergantung pada aktiviti dan kemudahan selamat yang ada.
+**BBM:** kon, tali/halangan rendah, tilam atau pasir selamat; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Halangan rendah dan zon pendaratan kosong; murid berhenti jika sakit atau hilang imbangan.
 
-**Rekod:** Kehadiran, pencapaian SP, intervensi dan refleksi guru diisi selepas PdP.
-
-**Jejak sumber:** [RPT PJ Tahun 3 2027 — semakan takwim v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit), [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). Kod disemak kehadirannya dalam DSKP; kelulusan SK/SP teks penuh dan Word A4 belum diberikan.
+**Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

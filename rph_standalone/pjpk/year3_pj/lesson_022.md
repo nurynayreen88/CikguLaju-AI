@@ -1,27 +1,24 @@
 # RPH Pendidikan Jasmani Tahun 3 — PdP 022
-
+**Status:** DRAF • semakan PdP dan hasil A4/Telegram belum lulus  
 **Tajuk:** Selam dan Kawal  
-**Status:** DRAF — audit teks DSKP, keselamatan dan format A4 masih diperlukan  
-**Kurikulum:** KSSR PJ Tahun 3 (bukan KP2027 Tahun 1)  
-**Standard Kandungan (kod):** 1.11,2.11,5.1  
-**Standard Pembelajaran (kod):** 1.11.1,2.11.1,5.1.1  
-**Rujukan:** Buku Teks PJPK Tahun 3, m/s 41-43  
-**Masa/Tarikh:** Mengikut jadual waktu kelas dan takwim negeri; tiada tarikh PdP individu diandaikan.
+**SK:** 1.11, 2.11, 5.1  
+**SP:** 1.11.1, 2.11.1, 5.1.1  
+**Rujukan buku:** RPT 2027: halaman 41-43; rujukan belum dinilai secara visual pada buku teks asal  
+**Kelas/Tarikh/Masa:** Guru isi mengikut jadual sebenar.
 
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat melakukan tugasan selam dan kawal mengikut teknik yang dipelajari serta menunjukkan bukti pencapaian berdasarkan kriteria pentaksiran di bawah.
+**Objektif:** (1) Melaksanakan kemahiran SP 1.11.1 (mengawal pernafasan untuk satu jangka masa semasa di bawah permukaan air) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.11.1: Menjelaskan cara mengawal pernafasan di bawah permukaan air.
 
-**Set induksi (guru dan murid):** Guru merujuk gambar/aktiviti buku teks pada halaman 41-43, mengemukakan soalan tentang selam dan kawal dan menyatakan peraturan keselamatan. Murid berkongsi pemerhatian dan bersedia dengan ruang/alat yang sesuai.
+**Set induksi:** Guru mengemukakan cabaran "Selam dan Kawal" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Demonstrasi berpandu:** Guru memperagakan langkah utama, menyebut titik teknik penting, menyediakan ruang dan mengawal giliran. Murid memerhati, mengajukan soalan dan mencuba gerakan asas mengikut kemampuan.
+**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.11.1.
 
-**Aktiviti 2 — Amali utama:** Di kolam yang diluluskan sahaja: guru atau jurulatih kompeten menerangkan prosedur keselamatan, murid berlatih kawalan pernafasan dan kemahiran menyelam cetek mengikut tahap keupayaan dengan pengawasan rapat. Jika fasiliti/pengawasan tiada, jalankan pengenalan keselamatan di darat dan jadualkan semula penilaian kemahiran air.
+**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Di kolam yang diluluskan sahaja: guru atau jurulatih kompeten menerangkan prosedur keselamatan, murid berlatih kawalan pernafasan dan kemahiran menyelam cetek mengikut tahap keupayaan dengan pengawasan rapat. Jika fasiliti/pengawasan tiada, jalankan pengenalan keselamatan di darat dan jadualkan semula penilaian kemahir. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
 
-**Pengukuhan / pentaksiran formatif:** Pentaksiran kemahiran air hanya apabila aktiviti benar-benar dilaksanakan dalam air dengan pengawasan kompeten; catat kawalan nafas, pematuhan arahan dan keselamatan. Penerangan di darat tidak dikira bukti penguasaan kemahiran air. Bukti kefahaman (soal jawab): Apakah langkah keselamatan sebelum masuk ke air dan semasa menyelam cetek?
+**Pengukuhan/PBD:** Pentaksiran kemahiran air hanya apabila aktiviti benar-benar dilaksanakan dalam air dengan pengawasan kompeten; catat kawalan nafas, pematuhan arahan dan keselamatan. Penerangan di darat tidak dikira bukti penguasaan kemahiran air. Bukti kefahaman (soal jawab): Apakah langkah keselamatan sebelum masuk ke air dan semasa menyelam  Guru turut mencatat amalan SP 5.1.1.
 
-**Penutup:** Murid menyatakan satu teknik atau langkah keselamatan yang dipelajari. Guru membuat rumusan berdasarkan pemerhatian, memberi maklum balas khusus dan menetapkan latihan seterusnya jika perlu.
+**Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**Bahan:** Buku teks m/s 41-43; peralatan sebenar bergantung pada aktiviti dan kemudahan selamat yang ada.
+**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
+**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
 
-**Rekod:** Kehadiran, pencapaian SP, intervensi dan refleksi guru diisi selepas PdP.
-
-**Jejak sumber:** [RPT PJ Tahun 3 2027 — semakan takwim v4](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit), [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). Kod disemak kehadirannya dalam DSKP; kelulusan SK/SP teks penuh dan Word A4 belum diberikan.
+**Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
