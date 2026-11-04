@@ -1,0 +1,38 @@
+name: PSV Tahun 2–6 — staging RPH/RPT and A4 QA
+on:
+  push:
+    branches:
+      - psv-y2-y6-rpt-rph-2027-staging-20261104
+    paths:
+      - 'rph_standalone/psv/**'
+      - 'rpt_2027/psv/**'
+      - 'tests/test_psv_*.py'
+      - '.github/workflows/psv-staging-rph-a4-gate.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: psv-staging-qa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Verify 210 staged PSV lesson sources, DSKP code catalog, and one-page A4 output
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out staging only
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated QA dependencies
+        run: python -m pip install --disable-pip-version-check python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
+      - name: Compile staging code (no deployment)
+        run: python -m py_compile rph_standalone/psv/preview_a4.py tests/test_psv_rpt_rph_alignment.py tests/test_psv_rpt_rph_source_order.py tests/test_psv_preview_a4.py
+      - name: Run complete PSV staging regression suite
+        run: python -m unittest -v tests.test_psv_rpt_rph_alignment tests.test_psv_rpt_rph_source_order tests.test_psv_preview_a4
