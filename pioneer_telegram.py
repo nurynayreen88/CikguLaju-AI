@@ -240,4 +240,10 @@ def install(ns):
     ns["callback"] = callback
     ns["menu"] = menu
     ns["_admin_pioneer_status"] = admin_pioneer_status
+    # Hidden referral points is OFF by default; it only adds isolated wrappers.
+    try:
+        from referral_points_telegram import install as _install_private_referral
+        _install_private_referral(ns)
+    except Exception as exc:
+        print("PRIVATE REFERRAL installer error:", type(exc).__name__, flush=True)
     return True
