@@ -33,6 +33,8 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.platypus.doctemplate import LayoutError
 from pypdf import PdfReader
 
+# Direct script invocation puts only scripts/ on sys.path; include repo root.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from web.pjpk_2027_preview_runtime import _source, ROOT
 
 HEAD = "RANCANGAN PENGAJARAN HARIAN"
