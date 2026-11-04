@@ -11,3 +11,5 @@ This staging integration must not be called READY until source exercise, audio, 
 - The 151 fixed-standard source files parse and can be previewed through the existing offline Year 5 row adapter. Nine teacher-choice lessons remain suggestions, not official fixed SOW standard pairs.
 - Telegram production intentionally does not enable `CIKGULAJU_Y5_DRAFT_RPH_ENABLED`. Every new Year 5 lesson remains **DRAF** until book/audio/A4 checks and teacher approval; no automatic bulk READY labels or quota debit.
 - The source/standards QA test now runs alongside Year 2–6 document-row tests. It is not an authorisation to publish draft Year 5 downloads.
+
+- **Additional safety gate:** `release_approvals_2027.json` starts with zero approved lessons. Even if the optional Year 5 runtime flag is switched on accidentally, production Word/PDF will not replace a lesson until its specific source SHA256 and seven teacher/source/audio/A4/delivery approvals are all present. The 151 lesson staging adapter remains available to offline audits without changing user downloads.
