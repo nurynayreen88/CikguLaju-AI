@@ -5,7 +5,8 @@
 **Aktiviti/Tajuk:** Ikatan Seni  
 **SK:** 2.1  
 **SP:** 2.1.1; 2.1.2; 2.1.3  
-**Buku Teks:** ms 56–59 mengikut rujukan RPT 2026; halaman sebenar belum disahkan pada buku  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 7 — Celupan Kreatif, ms 56-61 (rujukan unit buku)  
+**Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kain kapas kecil, pewarna air tidak toksik, tali lembut, apron  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
