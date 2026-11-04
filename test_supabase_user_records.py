@@ -210,7 +210,7 @@ class DurableUserRecordsTests(unittest.TestCase):
     def test_admin_pending_list_uses_supabase_and_checks_admin(self):
         self.runtime._new_payment_request(301,None,10)
         self.runtime._admin_list(301,"pending",0)
-        self.assertIn("Admin",self.runtime.sent[-1][1] if "Admin" in self.runtime.sent[-1][1] else "admin")
+        self.assertIn("admin", self.runtime.sent[-1][1].lower())
         self.runtime._admin_list(1,"pending",0)
         self.assertIn("SUPABASE",self.runtime.sent[-1][1])
         kb=self.runtime.sent[-1][2]
