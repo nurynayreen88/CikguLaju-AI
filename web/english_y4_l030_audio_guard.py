@@ -1,4 +1,4 @@
-"""Fail-closed Telegram media guard for English Year 4 Lesson 030.
+"""Source-locked Telegram media guard for English Year 4 Lesson 030/103.
 
 Original TB p.39 assigns SB p.20 Activity 2 to CD1 Track29, but the
 official SOW prints CD2 Track29. Existing app.py v25.257/258/259 media
@@ -6,7 +6,7 @@ maps contain a CD2 file for L030; its spoken content is not independently
 verified. Hide only this one lesson's media and reject stale media buttons
 until the audio-content and teacher-delivery release gates are approved.
 
-No DB writes, credit changes, entitlement changes, or media sends.
+For Lesson 103, drop two extra legacy route entries (CD2 Tracks 27/28)\nthat belong to the following Lesson 104, but keep its verified-reference\nCD2 Track26 assignment. No DB writes, credit changes or media sends.
 """
 import re
 
