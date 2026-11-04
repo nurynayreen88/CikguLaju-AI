@@ -1,0 +1,23 @@
+name: English Year5 151+9 draft release safety and source coverage
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y5_fixed_draft_preview_runtime.py'
+      - 'web/english_y5_teacher_choice_runtime.py'
+      - 'web/english_y5_standalone_runtime.py'
+      - 'rph_standalone/english/year5/**'
+      - 'tests/test_english_y5_full_preview_gate_20261105.py'
+      - '.github/workflows/english-y5-160-preview-release-gate-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  source-runtime-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Check all Year5 151 fixed draft + 9 teacher selected
+        run: python -m unittest discover -s tests -p 'test_english_y5_full_preview_gate_20261105.py' -v
