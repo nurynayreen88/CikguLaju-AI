@@ -12,7 +12,7 @@
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyenaraikan dua fungsi kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan menghasilkan peta idea berdasarkan rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Menyenaraikan dua fungsi kotak makanan 3D bertema lebah dan madu menggunakan lukisan, lipatan dan cantuman dan menghasilkan peta idea berdasarkan rupa sarang lebah, imbangan rekaan kotak pembungkusan, lipatan kad manila dan kemasan reben. Kriteria kejayaan: Peta idea, dua inspirasi rujukan, dua fungsi dan senarai media yang berkaitan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Perkembangan idea** dalam tema **Cik Lebah dan Madu**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
