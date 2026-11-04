@@ -16,6 +16,23 @@ Y6_TEACHER_CHOICES = frozenset((16, 32, 48, 64, 80, 96, 112, 128, 144, 155, 156,
 TEACHER_SELECTED_STANDARD = "Teacher to choose Year 6 DSKP standard (not fixed by SOW)"
 
 
+def _official_y6_sow(number, *, index_path=OFFICIAL_SOW_INDEX):
+    """Require exact Year6 lesson identity and a complete 160-row source index."""
+    if type(number) is not int or not 1 <= number <= 160:
+        return None
+    try:
+        data = json.loads(Path(index_path).read_text(encoding="utf-8"))
+        lessons = data.get("lessons")
+        if data.get("version") != OFFICIAL_SOW_VERSION or not isinstance(lessons, dict):
+            return None
+        if sum(k.startswith("6/") for k in lessons) != 160:
+            return None
+        rec = lessons.get("6/%d" % number)
+        return rec if isinstance(rec, dict) and rec.get("n") == number else None
+    except (OSError, ValueError, TypeError):
+        return None
+
+
 def _teacher_choice_sow(number, *, index_path=OFFICIAL_SOW_INDEX):
     """Reject stale/unverified teacher-choice mappings; never invent CS/LS."""
     if type(number) is not int or number not in Y6_TEACHER_CHOICES:
@@ -147,10 +164,16 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
     main = _standard_pair(meta["main cs/ls"])
     comp = _standard_pair(meta["complementary cs/ls"])
     overlay = _overlay(number, root)
+    sow_entry = _official_y6_sow(number)
+    if sow_entry is None:
+        return rows
     # Fixed-standard lessons require matching official SOW codes and a complete
     # task overlay; do not show an uncorrected generic plan on mismatch.
     if main is not None:
-        if (not overlay or not comp or overlay.get("main_ls") != main[1]
+        if (not overlay or not comp or sow_entry.get("teacher_selected") is not False
+                or sow_entry.get("main_ls") != main[1]
+                or sow_entry.get("complementary_ls") != comp[1]
+                or overlay.get("main_ls") != main[1]
                 or overlay.get("complementary_ls") != comp[1]
                 or len(overlay.get("activities") or []) != 3):
             return rows
@@ -187,8 +210,17 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
                       "COMPLEMENTARY CONTENT STANDARD", "COMPLEMENTARY LEARNING STANDARD",
                       "STANDARD KANDUNGAN", "STANDARD PEMBELAJARAN"):
             result[field] = TEACHER_SELECTED_STANDARD
-    result["TAJUK"] = (_teacher_choice_title(choice_sow) if choice_sow is not None
-                       else meta.get("topic") or rows.get("TAJUK", ""))
+    if choice_sow is not None:
+        result["TAJUK"] = _teacher_choice_title(choice_sow)
+    else:
+        # Year6 source Markdown often has no **Topic:** header. Use the
+        # official SOW topic/focus, not a legacy generic title from the old
+        # application RPH. This is not evidence of final teacher approval.
+        official_topic = str(sow_entry.get("topic") or "").strip()
+        official_focus = str(sow_entry.get("focus") or "").strip()
+        if not official_topic or official_topic.lower().startswith("teacher to"):
+            return rows
+        result["TAJUK"] = official_topic + (" — " + official_focus if official_focus else "")
     result["OBJEKTIF PEMBELAJARAN"] = overlay.get("objective") if overlay else meta["learning objective"]
     result["KRITERIA KEJAYAAN"] = result["OBJEKTIF PEMBELAJARAN"]
     result["BAHAN BANTU MENGAJAR"] = meta["materials"]
