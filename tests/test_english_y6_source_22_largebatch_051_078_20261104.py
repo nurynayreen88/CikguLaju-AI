@@ -21,7 +21,7 @@ MARKERS = {
     55: ("Lesson 54", "personality", "make", "do"),
     56: ("Jean", "TB p.88", "job", "listening"),
     57: ("future job", "TB p.89", "WB p.43", "make"),
-    59: ("Fizz-Bump", "code", "PB p.57", "dictionary"),
+    59: ("Fizz-Bump", "code", "PB p.57", "decode"),
     60: ("computer-programmer", "job advert", "will/won't", "MCQs"),
     61: ("Robert", "PB p.56", "WB p.46", "polite"),
     62: ("Robert", "Do you mean", "PB p.56", "robot"),
