@@ -1,0 +1,32 @@
+name: BM RPH Y4-6 - SP-specific lesson activity repairs
+on:
+  push:
+    branches: [audit/bm-rph-final-readiness-20261104]
+    paths:
+      - tools/refine_bm_rph_skill_alignment_2027.py
+      - .github/workflows/bm-rph-skill-alignment.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Refine only original RPT-aligned BM skills
+        run: python tools/refine_bm_rph_skill_alignment_2027.py
+      - name: Commit draft corrections to audit branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rph_standalone/bahasa_melayu/year4 rph_standalone/bahasa_melayu/year5 rph_standalone/bahasa_melayu/year6
+          if ! git diff --cached --quiet; then
+            git commit -m 'BM RPH Year 4-6: refine SP-specific storytelling, dialog and sentence tasks'
+            git push origin HEAD:audit/bm-rph-final-readiness-20261104
+          fi
