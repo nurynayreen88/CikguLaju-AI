@@ -36,6 +36,18 @@ except Exception as _y4_rows_exc:
     print("English Year 4 Word/PDF row bridge unavailable:", repr(_y4_rows_exc), flush=True)
 
 
+# Y2/Y3 source activities already enter native _rph_rows via app.py.
+# The older adapters leave the English Main/Complementary Word/PDF cells
+# unchanged; fill these cells only if header and official SOW pairs match.
+# No Year 1 path is touched and no user credit/DB change is made.
+try:
+    from web.english_y2_y3_standard_runtime import install as install_english_y2_y3_sow_fields
+    ENGLISH_Y2_Y3_SOW_WORD_PDF_ACTIVE = install_english_y2_y3_sow_fields(telegram_runtime)
+except Exception as _y2_y3_sow_exc:
+    ENGLISH_Y2_Y3_SOW_WORD_PDF_ACTIVE = False
+    print("English Year 2/3 SOW Word/PDF fields unavailable:", repr(_y2_y3_sow_exc), flush=True)
+
+
 # Compact the Year 6 English RPH Word layout only after source creation.
 # The 8pt A4 layout passed eight representative offline Word->PDF samples;
 # content, existing PDF generator, user DB and quota accounting are untouched.
