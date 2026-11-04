@@ -9,22 +9,24 @@
 **SP:** 3.3 — Menjana idea kesan pengabaian tanggungjawab sebagai warganegara. | 3.4 — Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual siapa-buat-apa-bila, borang semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Tahun 6 m/s 22–24 (PDF 31–33), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghuraikan atau menilai berdasarkan **3.3: Menjana idea kesan pengabaian tanggungjawab sebagai warganegara.** serta mengekspresikan perasaan bagi **3.4: Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 3.3 dan ayat perasaan yang sesuai bagi SP 3.4.
+Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan dengan sebab. Kriteria kejayaan: Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid membincangkan tanggungjawab menjaga kemudahan awam**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Kempen Kemanusiaan Tanggungjawab Bersama** dari Buku Teks m/s 22. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 3.3 (**Menjana idea kesan pengabaian tanggungjawab sebagai warganegara.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Apakah kesan jika tanggungjawab diabaikan?**
+**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru memperlihatkan jadual peranan agensi dalam bantuan m/s 22 dan contoh kertas cadangan kempen m/s 23. Murid meneliti akibat jika tugas tidak diselaraskan.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 3.4 (**Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid menggunakan kisah warga hutan yang menggerakkan bantuan bersama m/s 24 untuk membina peta tindakan–kepentingan–perasaan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 3.3 dan ayat perasaan yang sesuai bagi SP 3.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
-**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **bertanggungjawab**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+**Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
-**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+**Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Semakan visual buku teks:** Tahun 6, Unit 3 — **Kempen Kemanusiaan Tanggungjawab Bersama**; halaman bercetak 22–24 (PDF 31–33). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 008 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view); [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026). Buku teks asal Drive ID `12YjwUWy6DdVsqP5_azEp987jfvZ6PROo`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.
