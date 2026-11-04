@@ -7,32 +7,32 @@
 **Language focus:** Geographical vocabulary (e.g. south, north)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 127; Teacher Book pages 198-199; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a classroom mystery with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to PB p.127 world-heritage discussion, write four accurate details, and spell three target words correctly.  
+**PBD evidence:** Four source-supported details from the heritage listening (Listening 1.2.2) and independently corrected heritage vocabulary.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show pictures of world heritage sites and ask whether pupils know any in Malaysia.  
+**Pupils:** Name a heritage site and predict its location.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach clues, suspects, places, sequence; display clue cards and picture sequence and ask pupils to predict what they may hear. Emphasise the language focus: Geographical vocabulary (e.g. south, north).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.198 Activity 1, previewing the Nazca Lines and context vocabulary.  
+**Pupils:** Predict three facts from the illustrations.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use verified Audio 2.19 or accurately read the printed transcript for TB p.199 Activity 2.  
+**Pupils:** Listen for four details and complete gaps without looking at the word box first.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a classroom mystery, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Follow TB p.199 Activity 3 to take notes and write full-sentence answers.  
+**Pupils:** Compare details with a partner and sketch a proposed new Nazca line.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four heard facts and three correctly spelled words.  
+**Pupils:** Correct a mistaken heritage detail and one spelling error.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What clues explain the mystery?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Discuss why heritage sites, including Malaysian examples, deserve protection.  
+**Pupils:** Explain one action that helps preserve cultural heritage.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

@@ -7,32 +7,32 @@
 **Language focus:** Question tags (e.g. We aren’t playing now, are we?) with rising intonation to check understanding  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 125; Teacher Book pages 194-195  
-**Learning objective:** Sustain a paired exchange about a classroom mystery by checking understanding at least 3 times.  
-**PBD evidence:** Communication checklist: three clarification checks and relevant follow-up responses.
+**Learning objective:** Hold a partner conversation using four correctly formed question tags and use rising intonation to check personal assumptions.  
+**PBD evidence:** Four purposeful clarification exchanges using accurate question tags (Speaking 2.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review mystery vocabulary from PB pp.122–123.  
+**Pupils:** Name one detective and a relevant personality trait.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “What clues explain the mystery?”, drawing on Question tags (e.g. We aren’t playing now, are we?) with rising intonation to check understanding.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Brainstorm free-time activities and model rising tag-question intonation.  
+**Pupils:** Listen to 'You're good at chess, aren't you?' and identify the check.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Model clarification moves such as checking what the speaker means or requesting repetition.  
-**Pupils:** Exchange information in pairs; use at least three checking-understanding questions and accurate responses.
+**Teacher:** Follow TB p.194 Activity 1 to learn positive/negative tags.  
+**Pupils:** Choose the right short question tag for four statements.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Follow TB p.194 Activities 2–3 and interview a classmate.  
+**Pupils:** Write four tag questions and check the truth of assumptions in a pair.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess grammar, rising intonation and relevant clarification responses.  
+**Pupils:** Correct an inaccurate tag and try it again politely.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What clues explain the mystery?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.195 Cooler He's good at football, isn't he?  
+**Pupils:** Ask one final meaningful question with an appropriate tag.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

@@ -7,32 +7,32 @@
 **Language focus:** Modal verbs of obligation (e.g. (don’t)have to) and other functions (e.g. advice: should)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 124, 126; Teacher Book pages 196-197; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about a classroom mystery with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to the PB p.126 museum-trip rules, sort five statements into obligation or no obligation and correctly use two modal forms.  
+**PBD evidence:** Five correctly classified heard rules (Listening 1.2.2) and meaningful oral examples of obligation.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show clue cards and picture sequence and ask: “What clues explain the mystery?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review -ment nouns from PB p.124 and museum vocabulary.  
+**Pupils:** Form a relevant noun and give one museum rule.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach clues, suspects, places, sequence; display clue cards and picture sequence and ask pupils to predict what they may hear. Emphasise the language focus: Modal verbs of obligation (e.g. (don’t)have to) and other functions (e.g. advice: should).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Explain the context of a planned class trip; ask pupils to predict rules.  
+**Pupils:** Suggest which actions might be prohibited in a museum.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Use approved audio or accurately read the PB p.126 script while books remain closed.  
+**Pupils:** Listen and list rules in Obligation and No obligation columns.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about a classroom mystery, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Give a short oral explanation to a partner and respond to one question.
+**Teacher:** Follow TB p.196 Activities 2–3 to analyse and complete modal-verb rules.  
+**Pupils:** Read the script to confirm details and practise must, mustn't, have to and don't have to.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check five actual heard rules and two correctly explained modal meanings.  
+**Pupils:** Correct one classified rule and give its meaning.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What clues explain the mystery?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Follow TB p.197 Cooler True or False?  
+**Pupils:** State one sensible school-library rule.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
