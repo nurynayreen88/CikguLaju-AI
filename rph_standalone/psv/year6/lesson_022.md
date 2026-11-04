@@ -5,22 +5,22 @@
 **Aktiviti/Tajuk:** Ikatan Seni  
 **SK:** 2.1  
 **SP:** 2.1.1; 2.1.2; 2.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 7 — Celupan Kreatif, ms 56-61 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Ikatan Seni, ms 58–59
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kain kapas kecil, pewarna air tidak toksik, tali lembut, apron  
+**BBM:** dua keping kain kapas atau tisu tebal, tali lembut, pewarna makanan tidak toksik, bekas celupan, apron, alas plastik
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menguji dua kaedah/media bagi Ikatan Seni dan memilih satu berdasarkan fungsi serta unsur jalinan kain, harmoni corak celupan, lipatan dan ikatan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid membandingkan dua cara lipatan dan ikatan untuk menghasilkan corak celupan tidak terancang serta menjelaskan perbezaan corak berpusar, bersegi atau berpancar. Kriteria kejayaan: dua sampel ikatan/celupan, dua label corak dan satu keputusan pilihan teknik.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Ikatan Seni** dalam tema **Celupan Kreatif**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan corak berpusar dan berpancar; murid meneka kaedah ikatan yang menghasilkannya.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan dua sampel ikatan seni, mendemonstrasi cara selamat mengendalikan kain kapas kecil, pewarna air tidak toksik, tali lembut, apron, dan menjelaskan kesan berbeza pada hasil.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 58–59, menunjukkan dua cara melipat dan mengikat kain sebelum dicelup dengan pewarna tidak toksik. Murid memerhati bagaimana tekanan ikatan mengubah arah dan pecahan warna.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid menjalankan dua percubaan kecil untuk sampel kain bercorak celupan dan ikatan yang selamat: membandingkan jalinan kain, harmoni corak celupan, lipatan dan ikatan, merekod langkah melalui lakaran/foto, kemudian memilih satu teknik dengan justifikasi.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan dua sampel: lipatan kipas yang diikat berselang dan lipatan berpusat yang diikat pada satu titik; mereka mencelup secara selamat, membuka ikatan, mengeringkan sampel dan merekod perbezaan ritma serta tumpuan pada corak.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua sampel sebenar, catatan kesan dan satu alasan pilihan bahan/teknik. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Dua sampel celupan, label kesan corak, catatan dua kaedah ikatan dan satu hujah tentang pilihan corak untuk produk. Guru merekod perkembangan murid secara berterusan.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
@@ -28,4 +28,4 @@ Menguji dua kaedah/media bagi Ikatan Seni dan memilih satu berdasarkan fungsi se
 
 **Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 58–59](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Aktiviti adaptasi CikguLaju berdasarkan kandungan buku teks; pelaksanaan dan cetakan belum disahkan.
