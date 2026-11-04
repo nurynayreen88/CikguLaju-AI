@@ -1,31 +1,31 @@
 # RPH Pendidikan Seni Visual Tahun 6 — PdP 034
 
-**Status:** DRAF SEMAK (belum aktif Telegram)  
+**Status:** DRAF SEMAK (staging sahaja; belum aktif Telegram)  
 **Unit RPT 2026:** Unit 9 — Wau Bulan Sirih Pinang  
 **Aktiviti/Tajuk:** Dokumentasi dan apresiasi  
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 3.2.3; 4.1.1  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 9 — Wau Bulan Sirih Pinang, ms 68-75 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Wau Bulan Sirih Pinang, ms 74–75  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kad ringan, kertas warna, gam, pita, tali dan lidi kertas tumpul  
+**BBM:** model wau siap, kertas lukisan, pensel warna, bingkai kad pilihan, kad apresiasi, kamera guru jika tersedia  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menyiapkan folio model wau bulan berhias corak, untuk pameran kelas dan mengulas hasil mengikut bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan serta fungsi karya. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid dapat melakar semula atau merakam model Wau Bulan Sirih Pinang dan memberi ulasan ringkas menggunakan istilah imbangan simetri, jalinan dan tampalan. Kriteria kejayaan: satu gambar/lakaran model berlabel dan satu ulasan yang menyebut dua unsur/prinsip serta satu teknik.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Dokumentasi dan apresiasi** dalam tema **Wau Bulan Sirih Pinang**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru memaparkan model wau siap; murid mengenal motif cerminan, rambu dan bahan yang menghasilkan jalinan.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan cara menyusun folio (rujukan, sampel media, lakaran, bukti proses, hasil akhir). Murid menyemak kelengkapan dokumen.
+**Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 74–75, menunjukkan cara melakar semula hasil karya, mewarna dan membingkai gambar pada kad. Murid memilih sudut dokumentasi yang jelas dan selamat.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar atau mengambil gambar model wau bulan berhias corak, untuk pameran kelas, menyusun folio, mempamerkan karya di galeri mini dan membuat ulasan kritis terhadap kegunaan serta bentuk wau bulan, imbangan sayap, motif awan larat dan fungsi gantungan.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar atau merakam hasil model wau, mewarnakan ilustrasi atau menampal foto pada kad, melabel media dan teknik tampalan, kemudian mengadakan galeri mini. Secara bergilir murid menerangkan imbangan simetri dan memberi satu ulasan membina kepada karya rakan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Folio mengandungi lima bahagian, gambar hasil dan ulasan yang menggunakan dua istilah bahasa seni. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: satu gambar/lakaran model berlabel dan satu ulasan yang menyebut dua unsur/prinsip serta satu teknik. Guru menyemak ketepatan istilah dan bukti proses.
 
-**Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
+**Penutup (5 minit):** Murid berkongsi perkara yang boleh ditambah baik pada rekaan wau; guru menyimpan dokumentasi sebagai bukti PBD.
 
-**Pembezaan:** Bantuan langkah kecil atau contoh visual untuk murid memerlukan sokongan; murid lanjutan diminta menerangkan keputusan reka bentuk dan menguji variasi media.
+**Pembezaan:** Sediakan bank istilah seni dan bingkai kad siap untuk sokongan; murid lanjutan membandingkan dua teknik/jalinan.
 
-**Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
+**Keselamatan:** Telefon/kamera hanya dengan pengawasan guru; minta izin sebelum merakam murid lain.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 74–75](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Adaptasi sumber Buku Teks; belum diuji dalam Telegram.
