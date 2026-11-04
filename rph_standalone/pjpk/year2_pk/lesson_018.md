@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Kasih sayang kepada ahli keluarga dan rakan" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Pasangan menghasilkan kad penghargaan atau dialog ringkas yang mempraktikkan kesyukuran dan ucapan terima kasih; kemudian menilai mengapa menzahirkan kasih sayang penting dalam hubungan harian, dengan mengambil kira kepelbagaian struktur keluarga.
+**Aktiviti 1 — Latihan khusus:** Guru memodelkan ucapan terima kasih dan satu tindakan kasih sayang yang sesuai kepada penjaga, guru serta rakan melalui tiga kad situasi. Murid berlatih memilih kata dan tindakan yang menunjukkan kesyukuran tanpa mengandaikan semua murid mempunyai struktur keluarga sama.
 
-**Aktiviti 2 — Aplikasi:** Murid memadankan situasi sokongan dengan cara menzahirkan kasih sayang dan penghargaan yang sesuai.
+**Aktiviti 2 — Aplikasi:** Pasangan menulis kad ringkas penghargaan kepada seseorang yang membantu dan melakonkan cara mengucapkannya secara sopan. Murid memberikan alasan mengapa tindakan itu sesuai, lalu membetulkan pilihan berdasarkan maklum balas rakan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 5.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 5.1.2: murid menyebut sekurang-kurangnya satu ungkapan syukur dan menunjukkan dua cara berterima kasih kepada individu yang memberi sokongan; nilai kesesuaian bahasa dan tindakan.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

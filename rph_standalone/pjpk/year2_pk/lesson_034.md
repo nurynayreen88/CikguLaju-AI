@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Bantu mula dan keselamatan kecederaan" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Aplikasi dan penyelesaian masalah:** Pasangan mensimulasikan cara meminta bantuan dengan menyatakan lokasi, kejadian dan bantuan diperlukan tanpa membuat panggilan sebenar; kemudian membandingkan dua pilihan tindakan bagi setiap situasi dan menilai tindakan yang lebih sesuai dengan alasan keselamatan. Guru memperkenalkan senario baharu untuk membezakan tindakan tepat dengan tindakan berisiko.
+**Aktiviti 1 — Latihan khusus:** Guru memberi dua kad kecederaan rekaan: luka kecil di sekolah dan kecederaan akibat terjatuh di rumah. Murid membandingkan pilihan seperti mendapatkan bantuan guru/penjaga, mengelakkan pergerakan berisiko dan menjauhkan diri daripada bahaya.
 
-**Aktiviti 2 — Aplikasi:** Pasangan mensimulasikan cara meminta bantuan dengan menyatakan lokasi, kejadian dan bantuan diperlukan tanpa membuat panggilan sebenar; kemudian membandingkan dua pilihan tindakan bagi setiap situasi dan menilai tindakan yang lebih sesuai dengan alasan keselamatan.
+**Aktiviti 2 — Aplikasi:** Dalam kumpulan, murid menyusun tiga keputusan bagi setiap kad mengikut keselamatan dan memberi alasan memilih tindakan paling sesuai. Murid melakonkan meminta bantuan dengan menyatakan lokasi dan keadaan tanpa membuat panggilan kecemasan sebenar atau cuba merawat kecederaan serius.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 9.1.3 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Pentaksiran SP 9.1.3: murid menilai dua tindakan berbeza bagi satu situasi kecederaan rekaan, memilih tindakan yang lebih selamat dan memberikan satu sebab. Guru menegaskan bantuan dewasa/khidmat kecemasan apabila perlu.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Amalan makan dan minum sihat" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Aplikasi dan penyelesaian masalah:** Kumpulan membandingkan keperluan makan dan minum dalam dua jadual aktiviti rekaan, kemudian memberi alasan tanpa menetapkan sukatan universal. Guru memperkenalkan senario baharu untuk membezakan tindakan tepat dengan tindakan berisiko.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan iklan makanan rekaan yang mendakwa sesuatu snek sesuai dimakan tanpa had. Murid mengenal pasti mesej iklan dan pengaruh rakan, kemudian memilih contoh amalan makan/minum seimbang tanpa mengulas berat badan mana-mana individu.
 
-**Aktiviti 2 — Aplikasi:** Murid menyusun kad sarapan, makan tengah hari, makan malam dan waktu minum mengikut rutin harian yang munasabah.
+**Aktiviti 2 — Aplikasi:** Kumpulan menerima bajet dan jadual aktiviti rekaan lalu memilih menu serta minuman yang sesuai, menilai makanan/minuman tinggi gula untuk pengambilan kerap, dan melakonkan penolakan sopan terhadap tekanan rakan atau iklan yang mengelirukan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 8.1.1, 8.1.2, 8.1.3 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Rubrik SP 8.1.1–8.1.3: murid mengenal pasti satu tabiat makan/minum sihat, menerangkan satu risiko pengambilan makanan/minuman kurang seimbang secara berlebihan, dan menilai satu pengaruh media/rakan beserta respons yang selamat; elak menilai bentuk atau berat badan murid.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

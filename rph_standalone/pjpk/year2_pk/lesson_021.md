@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Mencegah penyakit dan menjaga kebersihan" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan dan mereka cipta poster atau carta maklumat pencegahan yang jelas bagi penyakit tangan, kaki dan mulut serta konjunktivitis.
+**Aktiviti 1 — Latihan khusus:** Guru memimpin demonstrasi basuh tangan menggunakan air dan sabun serta penggunaan tisu/siku untuk menutup batuk. Murid menyusun kad langkah basuh tangan yang betul dan mengaitkannya dengan mencegah penyakit tangan, kaki dan mulut serta konjunktivitis.
 
-**Aktiviti 2 — Aplikasi:** Guru menunjukkan kad situasi penyakit tangan, kaki dan mulut serta konjunktivitis. Murid mengenal pasti penyakit berdasarkan maklumat yang diberi tanpa membuat diagnosis terhadap rakan.
+**Aktiviti 2 — Aplikasi:** Kumpulan menerima situasi rekaan: selepas bermain, sebelum makan dan apabila ada rakan bergejala. Murid memilih tindakan kebersihan/rujukan kepada guru yang sesuai, mempraktikkan langkah basuh tangan dan menerangkan cara mengurangkan penularan tanpa mendiagnosis rakan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 6.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Senarai semak SP 6.1.2: murid mempraktikkan langkah mencuci tangan yang betul dan memilih sekurang-kurangnya dua amalan mencegah penyakit tangan, kaki dan mulut atau konjunktivitis; guru memberi pembetulan berdasarkan pemerhatian.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 

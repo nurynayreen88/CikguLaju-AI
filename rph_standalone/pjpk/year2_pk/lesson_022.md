@@ -10,11 +10,11 @@
 
 **Set induksi:** Guru memberikan contoh ringkas bertema "Mencegah penyakit dan menjaga kebersihan" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Aplikasi dan penyelesaian masalah:** Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan dan mereka cipta poster atau carta maklumat pencegahan yang jelas bagi penyakit tangan, kaki dan mulut serta konjunktivitis. Guru memperkenalkan senario baharu untuk membezakan tindakan tepat dengan tindakan berisiko.
+**Aktiviti 1 — Latihan khusus:** Guru memaparkan dua contoh poster pencegahan yang direka: satu jelas dengan langkah kebersihan tepat, satu mempunyai maklumat mengelirukan. Murid mengesan unsur yang perlu ada dan memilih tiga mesej yang disahkan tentang penyakit tangan, kaki dan mulut serta konjunktivitis.
 
-**Aktiviti 2 — Aplikasi:** Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan dan mereka cipta poster atau carta maklumat pencegahan yang jelas bagi penyakit tangan, kaki dan mulut serta konjunktivitis.
+**Aktiviti 2 — Aplikasi:** Dalam kumpulan, murid menghasilkan poster pencegahan bersaiz A4 yang mengandungi tajuk, sekurang-kurangnya tiga langkah kebersihan dan cara memaklumkan guru/penjaga jika bergejala. Kumpulan bertukar poster untuk semakan fakta dan membaiki satu mesej.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 6.1.3 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Rubrik hasil SP 6.1.3: poster menyebut kedua-dua penyakit dengan maklumat betul, menyenaraikan tiga langkah pencegahan yang boleh dilakukan dan mudah difahami rakan; guru menyemak pembetulan akhir.
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 
