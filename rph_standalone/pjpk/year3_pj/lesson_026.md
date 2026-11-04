@@ -8,17 +8,17 @@
 
 **Objektif:** (1) Melaksanakan kemahiran SP 1.13.2 (bermain permainan strategi yang melibatkan kemahiran motor halus seperti karom, dam, catur dan batu seremban) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.13.2: Menentukan strategi yang sesuai digunakan dalam permainan seperti karom, dam, catur dan Batu Seremban.
 
-**Set induksi:** Guru mengemukakan cabaran "Batu Seremban" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menunjukkan lima uncang batu seremban dan urutan mengambil serta menangkap.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.13.2.
+**Aktiviti 1 — Fokus PdP:** Murid berlatih melambung satu uncang lembut, mengambil satu lagi dan menangkap lambungan sebelum mendarat.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Batu seremban berperingkat: lambung, kutip dan sambut mengikut urutan permainan; pasangan mengira kejayaan percubaan dan mencadangkan penambahbaikan koordinasi tangan-mata. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Fokus PdP:** Pasangan bermain dua peringkat Batu Seremban dan menerangkan strategi pemilihan uncang serta giliran.
 
-**Pengukuhan/PBD:** Rekod individu: urutan yang berjaya, koordinasi lambung-kutip-sambut, giliran dan penerangan pembetulan gerakan. Bukti kefahaman (soal jawab): Bagaimana lambungan mempengaruhi peluang mengutip batu? Guru turut mencatat amalan SP 5.2.1.
+**Pengukuhan/PBD:** PBD koordinasi jari-mata, urutan lambung-ambil-tangkap, strategi dan disiplin giliran.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Lima uncang kain lembut bagi setiap pasangan dan alas permainan.
+**Keselamatan/inklusif:** Jangan gunakan batu tajam atau kecil yang boleh dimasukkan ke mulut; elak lambungan ke arah muka.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

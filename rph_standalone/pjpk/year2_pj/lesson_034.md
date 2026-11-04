@@ -8,17 +8,17 @@
 
 **Objektif:** (1) Melaksanakan kemahiran SP 3.4.2 (melakukan aktiviti bergayut dan meniti pada palang menggunakan tangan) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 4.4.2: Menyatakan kepentingan melakukan senaman daya tahan dan kekuatan otot.
 
-**Set induksi:** Guru mengemukakan cabaran "Mari Bergayut" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menunjukkan palang meniti yang telah diperiksa serta cara memegang dan turun selamat.
 
-**Aktiviti 1 — Teknik gimnastik:** Guru tunjuk penjajaran badan, tapak sokongan dan cara keluar daripada gerakan dengan selamat. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 3.4.2.
+**Aktiviti 1 — Fokus PdP:** Dengan pengawasan guru, murid berlatih genggaman palang pada ketinggian rendah dan meniti secara beransur, hanya jika peralatan diluluskan.
 
-**Aktiviti 2 — Amali khusus:** Murid menguasai posisi asas di atas tilam melalui tahap mudah sebelum mencuba variasi yang dibenarkan. Secara berpasangan, seorang melaksanakan gerakan dan seorang menilai kedudukan sokongan serta kestabilan; guru mengawasi secara langsung.
+**Aktiviti 2 — Fokus PdP:** Murid melengkapkan laluan palang pendek mengikut kemampuan dengan guru mengawasi pendaratan di atas tilam.
 
-**Pengukuhan/PBD:** Guru merekod tapak sokongan, imbangan, pendaratan terkawal melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 4.4.2. Guru turut mencatat amalan SP 5.2.2.
+**Pengukuhan/PBD:** Pemerhatian genggaman tangan, kawalan berat badan, urutan meniti dan turun dengan selamat.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** tilam gimnastik, penanda ruang, kad teknik; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Gunakan tilam dan pengawasan langsung; elak memaksa posisi songsang, leher atau pendaratan berisiko.
+**BBM:** Palang rendah yang diluluskan, tilam pendaratan dan kad giliran.
+**Keselamatan/inklusif:** Tidak menjalankan aktiviti jika palang tidak disahkan selamat; tiada hayunan tinggi, minta bantuan guru jika letih.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
