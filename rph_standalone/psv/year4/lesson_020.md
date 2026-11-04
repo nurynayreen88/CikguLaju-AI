@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 4 — PdP 020
+**Status:** DRAF SEMAK  
+**Unit:** Projek Seni Visual penggal pertama  
+**Tajuk:** Pameran penggal pertama  
+**SK:** 5.1  
+**SP:** 3.3.1; 3.3.2 (bercetak di bawah SK 5.1 dalam DSKP)  
+**Buku Teks:** Projek Kesenian penggal pertama (aktiviti Seni Visual)  
+**BBM:** karya murid, kapsyen, pita mesra kertas, meja stabil  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid boleh merancang pameran dengan lokasi, kapsyen, karya dan promosi. Bukti: pelan, kapsyen, foto dan senarai semak.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Alat Domestik — Secawan Kopi Manis
-**Unit rujukan 2026:** Unit 5 — Secawan Kopi Manis (BT ms 46–49)  
-**Fokus:** Kemaskan dan apresiasi  
-**SK:** 4.1  
-**SP:** 4.1.1; 4.1.2  
-**Teknik:** papier mache  
-**Bahasa seni visual:** bentuk, jalinan, kontra  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kertas koyak, gam kanji, acuan plastik
-
-## Objektif pembelajaran
-Murid dapat memperkemas model cawan daripada papier mache serta mengulasnya menggunakan dua istilah seni visual.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bekas Pensel Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik papier mache serta penggunaan bentuk, jalinan, kontra. Murid menyemak bahagian karya yang belum lengkap.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada model cawan daripada papier mache, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan susunan galeri selamat.
+**Aktiviti 1 (15 minit):** Guru membimbing peranan kumpulan dan etika apresiasi.
+**Aktiviti 2 (25 minit) — Projek:** Murid memilih karya Unit terdahulu, menyiapkan dua kapsyen, pelan lokasi dan poster promosi.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai kerjasama, kreativiti, keselamatan dan apresiasi.
+**Penutup (5 minit):** Murid membuat refleksi dan menyusun semula alatan.
+**Pembezaan:** Sediakan templat kapsyen; murid mahir menjadi pemandu galeri.
+**Keselamatan:** Elak paku tajam, jalur elektrik dan laluan sempit.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/).

@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 4 — PdP 014
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Membentuk dan Membuat Binaan  
-**Jenis/Tajuk:** Arca — Bunga Gergasi
-**Unit rujukan 2026:** Unit 4 — Bunga Gergasi (BT ms 34–39)  
-**Fokus:** Lakar dan pilih media  
+**Status:** DRAF SEMAK  
+**Unit:** 4 — Bunga Gergasi  
+**Fokus:** Penerokaan bahan dan lakaran; Arca asemblaj  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.7; 3.1.4  
-**Teknik:** asemblaj  
-**Bahasa seni visual:** bentuk, jalinan, imbangan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kotak terpakai, gam, pita
+**Buku Teks:** Pendidikan Kesenian Tahun 4 (bahagian Seni Visual), ms 36–37 (unit ms 34-39)  
+**BBM:** botol plastik terpakai, kotak, pita kertas, gam, kertas warna  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Bandar Mini Asemblaj dan memilih satu lakaran berdasarkan bentuk, jalinan, imbangan.
+## Objektif dan kriteria kejayaan
+Murid dapat melakar satu reka bentuk Bunga Gergasi dan membanding dua jenis media. Evidens: lakaran berlabel serta pemilihan media.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Bandar Mini Asemblaj. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Bandar Mini Asemblaj. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal arca bunga gergasi menggunakan bahan terpakai, menguji asemblaj pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan imej Bunga Gergasi; murid menyebut satu unsur seni atau fungsi karya.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru mendemonstrasi bahan botol plastik terpakai, kotak, pita kertas, gam, kertas warna dan murid melakar serta menyemak keselamatan.
+**Aktiviti 2 (25 minit) — Amali:** Murid membuat lakaran berlabel dan dua sampel: Uji dua cara menyambung kelopak dan tangkai daripada bahan guna semula, semak kestabilan tapak. Guru memberi maklum balas.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak lakaran berlabel serta pemilihan media dan mencatat PBD.
+**Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
+**Pembezaan:** Sediakan kad langkah untuk sokongan; murid lanjutan membandingkan dua reka bentuk.
+**Keselamatan:** Media tidak toksik; gunting dan alat ukir hanya digunakan di bawah pengawasan. Elak pisau tajam.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/). Aktiviti adaptasi CikguLaju.

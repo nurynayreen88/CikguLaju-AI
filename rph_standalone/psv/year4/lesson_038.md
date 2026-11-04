@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 4 — PdP 038
+**Status:** DRAF SEMAK  
+**Unit:** 10 — Harum Mewangi  
+**Fokus:** Penerokaan bahasa seni; Ukiran timbul pada sabun  
+**SK:** 1.1; 2.1  
+**SP:** 1.1.4; 2.1.9  
+**Buku Teks:** Pendidikan Kesenian Tahun 4 (bahagian Seni Visual), ms 96–97 (unit ms 96-99)  
+**BBM:** sabun ketul, pen tanpa dakwat, sudu plastik tumpul, alas kerja  
+**Tempoh:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid dapat mengenal dua unsur seni pada ukiran timbul pada sabun dan menguji dua teknik. Evidens: dua percubaan serta istilah seni.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Ukiran — Pengayaan ukiran (tajuk cadangan CikguLaju)
-**Unit rujukan 2026:** Unit 10 — Pengayaan ukiran (tajuk cadangan CikguLaju)  
-**Nota sumber:** Unit pengayaan CikguLaju untuk meliputi teknik ukiran DSKP; contoh RPT 2026 mengulangi diorama pada Unit 10.  
-**Fokus:** Lakar dan pilih media  
-**SK:** 2.1; 3.1  
-**SP:** 2.1.9; 3.1.5  
-**Teknik:** ukiran bunga timbul pada bahan lembut  
-**Bahasa seni visual:** jalinan, bentuk, kesatuan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh lembut, alat plastik tumpul
-
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Motif Awan Larat dan memilih satu lakaran berdasarkan jalinan, bentuk, kesatuan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Motif Awan Larat. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Motif Awan Larat. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal ukiran motif awan larat pada bahan lembut, menguji ukiran bunga timbul pada bahan lembut pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan imej Harum Mewangi; murid menyebut satu unsur seni atau fungsi karya.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan BT ms 96–97, mengaitkan motif flora, jalinan, bentuk dan penegasan ukiran timbul, dan murid menyatakan bahasa seni.
+**Aktiviti 2 (25 minit) — Amali:** Murid mencuba teknik: Lakar motif bunga kemboja pada permukaan sabun dan uji kesan lekukan dengan hujung sudu plastik tanpa pisau; mereka mencatat dua kesan yang berbeza.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua percubaan serta istilah seni dan mencatat PBD.
+**Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
+**Pembezaan:** Sediakan kad langkah untuk sokongan; murid lanjutan membandingkan dua reka bentuk.
+**Keselamatan:** Media tidak toksik; gunting dan alat ukir hanya digunakan di bawah pengawasan. Elak pisau tajam.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/). Aktiviti adaptasi CikguLaju.
