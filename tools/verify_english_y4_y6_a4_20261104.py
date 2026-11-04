@@ -69,7 +69,7 @@ def _build(year, number, docx):
     if "LEGACY" in (rph.get("TAJUK","") + rph.get("OBJEKTIF PEMBELAJARAN","")
                      + rph.get("PENTAKSIRAN","")):
         raise RuntimeError("Legacy text in Year%d L%d"%(year,number))
-    if year==6 and "DRAF" not in rph.get("TAJUK",""):
+    if year==6 and number in Y6_TEACHER_CHOICES and "DRAF" not in rph.get("TAJUK",""):
         raise RuntimeError("Year6 choice document lacks DRAF marking")
     doc=Document()
     sec=doc.sections[0]
@@ -93,7 +93,7 @@ def _convert(files,outdir,profile):
             raise RuntimeError("LibreOffice conversion failed: "+res.stderr[-500:])
 
 
-def _measure(doc,pdf,year):
+def _measure(doc,pdf,year,lesson):
     p=PdfReader(str(pdf)).pages
     extracted="\n".join(page.extract_text() or "" for page in p)
     return {
@@ -102,13 +102,18 @@ def _measure(doc,pdf,year):
                   abs(float(x.mediabox.height)-841.89)<1.5 for x in p),
         "source_text":len(_text(doc)),
         "pdf_text":len(extracted),
-        "draft_label":("DRAF" in extracted) if year==6 else True,
+        "draft_label":("DRAF" in extracted) if year==6 and lesson in Y6_TEACHER_CHOICES else True,
     }
 
 
-def run(year):
+def run(year, lessons=None):
     validate_word_function_snapshot()
-    nums=sorted(set(range(1,161))-Y4_NOT_FIXED if year==4 else Y6_TEACHER_CHOICES)
+    if lessons is None:
+        nums=sorted(set(range(1,161))-Y4_NOT_FIXED if year==4 else Y6_TEACHER_CHOICES)
+    else:
+        nums=sorted(set(int(n) for n in lessons))
+        if not nums or any(n<1 or n>160 for n in nums):
+            raise ValueError("Exact target Lessons must be within 1..160")
     folder=TARGET/("year%d"%year)
     raw=folder/"raw"
     compact=folder/"compact"
@@ -135,8 +140,8 @@ def run(year):
     _convert(raw_files,folder/"pdf_raw",folder/"lo-profile")
     _convert(compact_files,folder/"pdf_compact",folder/"lo-profile")
     for entry,r,c in zip(records,raw_files,compact_files):
-        entry["raw"]=_measure(r,folder/"pdf_raw"/r.name.replace(".docx",".pdf"),year)
-        entry["compact"]=_measure(c,folder/"pdf_compact"/c.name.replace(".docx",".pdf"),year)
+        entry["raw"]=_measure(r,folder/"pdf_raw"/r.name.replace(".docx",".pdf"),year,entry["lesson"])
+        entry["compact"]=_measure(c,folder/"pdf_compact"/c.name.replace(".docx",".pdf"),year,entry["lesson"])
         if entry["compact"]["source_text"] != entry["raw"]["source_text"]:
             raise RuntimeError("Text changed in compressed Word")
     raw_one=sum(x["raw"]["pages"]==1 and x["raw"]["a4"] for x in records)
@@ -160,4 +165,7 @@ def run(year):
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("--year",required=True,type=int,choices=(4,6))
-    run(parser.parse_args().year)
+    parser.add_argument("--lessons",type=str,default="",help="Exact comma-separated lesson numbers; omit to preserve original 149+14 QA scope")
+    args=parser.parse_args()
+    numbers=[int(n.strip()) for n in args.lessons.split(",")] if args.lessons else None
+    run(args.year,lessons=numbers)
