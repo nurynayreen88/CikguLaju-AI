@@ -7,32 +7,32 @@
 **Language focus:** Used to / didn’t use to  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Y6 PB p.25; TB pp.46–47  
-**Learning objective:** Give at least 4 details about themselves or others in a spoken exchange on life then and now.  
-**PBD evidence:** Four relevant details, two questions and an intelligible response to the partner.
+**Learning objective:** Describe at least four past-versus-present changes orally using used to/didn't use to, and write a short accurate paragraph about life when younger.  
+**PBD evidence:** Four clear spoken past-routine facts (Speaking 2.1.1), plus a short checked paragraph using used to/didn't use to (Writing 4.2.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show then-and-now photographs and ask: “How was everyday life different in the past?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review the comparison tables from Lesson 18 and reformulate three past statements with used to.  
+**Pupils:** Say one change using used to or didn't use to.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model question–answer exchanges on “How was everyday life different in the past?”, drawing on Used to / didn’t use to.  
-**Pupils:** Listen, rehearse 2 complete sentence frames and practise pronunciation with a partner.
+**Teacher:** Follow TB p.46 Warm-up and PB p.25 Activities 1–2; model the form and meaning of used to/didn't use to.  
+**Pupils:** Read and correct the printed form-completion examples, then rehearse one past-life comparison.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited unit task to model detailed personal-information questions and answers.  
-**Pupils:** Interview a peer and give four accurate details; ask two appropriate follow-up questions.
+**Teacher:** Use pupils' previous comparison tables and PB p.25 Activity 3 to practise past-life descriptions.  
+**Pupils:** Tell a partner four details about life when they were three years old; include one incorrect detail for the partner to detect.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Organise 45–60 second pair-sharing and note clarity, vocabulary and response to questions. Check the complementary skill using the short task.  
-**Pupils:** Present one short response, listen to a peer, and answer one question. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Invite pupils to turn partner discussion into a short individual paragraph about childhood.  
+**Pupils:** Write and peer-check a short paragraph about childhood with at least three accurate used to/didn't use to examples.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess four oral personal details and one written paragraph; note verb-form errors for immediate feedback.  
+**Pupils:** Correct one used to form in speech and one written error independently.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How was everyday life different in the past?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pairs to share a surprising childhood claim and explain whether it was true.  
+**Pupils:** Say an accurate past-routine fact and explain one contrast with today.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
