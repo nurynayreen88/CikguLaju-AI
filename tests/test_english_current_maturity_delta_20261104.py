@@ -33,7 +33,8 @@ class CurrentEnglishMaturityDelta(unittest.TestCase):
         self.assertEqual(len(newly_verified),25)
         remaining_generic=set(years[6]["quality_flag_lessons"].get(
             "generic_instruction",[]))
-        self.assertLessEqual(len(remaining_generic),78)
+        self.assertEqual(len(remaining_generic),0,
+                         "Year6 original-SOW fixed lessons must not regress to generic tasks")
         self.assertFalse(remaining_generic.intersection(newly_verified),
                          "Regression to generic tasks in source-verified English Year6")
         self.assertEqual(years[4]["teacher_choice"],10)
