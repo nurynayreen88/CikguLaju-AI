@@ -105,6 +105,17 @@ def _load_pending(number, root, index_path):
     header = raw.split("\n## ", 1)[0]
     meta = _metadata(header)
     sections = _phase_sections(raw[:status.start()])
+    # Lesson 16 has a full 'Reinforcement / PBD' phase followed by a
+    # separate 'PBD and differentiation' summary. The shared phase parser
+    # treats both as PBD and overwrites the actual Teacher/Pupils procedure.
+    # Retain the original phase, not the later summary, without changing
+    # the 149 already reviewed Year 4 lessons.
+    if "Teacher:" not in sections.get("pbd", "") or "Pupils:" not in sections.get("pbd", ""):
+        match = re.search(r"(?im)^##\\s+(?:Reinforcement\\s*/\\s*PBD|PBD\\s*/\\s*reinforcement)\\b[^\\n]*\\n", raw)
+        if match:
+            tail = raw[match.end():]
+            next_section = re.search(r"(?m)^##\\s+", tail)
+            sections["pbd"] = _plain(tail[:next_section.start()] if next_section else tail)
     if not all(sections.get(key) for key in
                ("induction", "activity1", "activity2", "pbd", "closure")):
         return None
