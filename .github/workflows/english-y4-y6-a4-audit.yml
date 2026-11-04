@@ -5,6 +5,10 @@ on:
     paths:
       - 'web/english_y4_standalone_runtime.py'
       - 'web/english_y6_standalone_runtime.py'
+      - 'web/english_y6_word_a4_runtime.py'
+      - 'web/english_y4_l002_word_a4_runtime.py'
+      - 'tests/test_english_word_a4_002_016.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
       - 'tools/verify_english_y4_y6_a4_20261104.py'
       - '.github/workflows/english-y4-y6-a4-audit.yml'
   push:
@@ -12,6 +16,10 @@ on:
     paths:
       - 'web/english_y4_standalone_runtime.py'
       - 'web/english_y6_standalone_runtime.py'
+      - 'web/english_y6_word_a4_runtime.py'
+      - 'web/english_y4_l002_word_a4_runtime.py'
+      - 'tests/test_english_word_a4_002_016.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
       - 'tools/verify_english_y4_y6_a4_20261104.py'
   workflow_dispatch:
 permissions: {contents: read}
@@ -33,6 +41,8 @@ jobs:
             sudo apt-get update -qq
             sudo apt-get install -y -qq libreoffice-writer >/dev/null
           fi
+      - name: Verify only Y4 L002 and Y6 L016 Word style changes
+        run: python -m unittest discover -s tests -p 'test_english_word_a4_002_016.py' -v
       - name: Verify AST-locked Word source and A4 layout by lesson
         run: python tools/verify_english_y4_y6_a4_20261104.py --year ${{ matrix.year }}
       - name: Upload A4 source and overflow report
