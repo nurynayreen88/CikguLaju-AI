@@ -1,0 +1,97 @@
+year,pdp,subject,component,topic,sk,sp_codes,duration_minutes,version,status
+4,001,Pendidikan Kesihatan,PEERS,"Akil baligh dan pengurusan diri — Kenali konsep",1.1,"1.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,002,Pendidikan Kesihatan,PEERS,"Akil baligh dan pengurusan diri — Latihan dan analisis",1.1,"1.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,003,Pendidikan Kesihatan,PEERS,"Akil baligh dan pengurusan diri — Aplikasi situasi baharu",1.1,"1.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,004,Pendidikan Kesihatan,PEERS,"Akil baligh dan pengurusan diri — Pentaksiran dan pengukuhan",1.1,"1.1.4;1.1.5",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,005,Pendidikan Kesihatan,PEERS,"Menghormati perubahan fizikal diri dan rakan — Kenali konsep",1.2,"1.2.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,006,Pendidikan Kesihatan,PEERS,"Menghormati perubahan fizikal diri dan rakan — Pentaksiran dan pengukuhan",1.2,"1.2.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,007,Pendidikan Kesihatan,PEERS,"Berkata TIDAK kepada alkohol — Kenali konsep",2.1,"2.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,008,Pendidikan Kesihatan,PEERS,"Berkata TIDAK kepada alkohol — Latihan dan analisis",2.1,"2.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,009,Pendidikan Kesihatan,PEERS,"Berkata TIDAK kepada alkohol — Pentaksiran dan pengukuhan",2.1,"2.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,010,Pendidikan Kesihatan,PEERS,"Mengurus konflik dan stres — Kenali konsep",3.1,"3.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,011,Pendidikan Kesihatan,PEERS,"Mengurus konflik dan stres — Latihan dan analisis",3.1,"3.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,012,Pendidikan Kesihatan,PEERS,"Mengurus konflik dan stres — Pentaksiran dan pengukuhan",3.1,"3.1.3;3.1.4",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,013,Pendidikan Kesihatan,PEERS,"Tanggungjawab ahli keluarga — Kenali konsep",4.1,"4.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,014,Pendidikan Kesihatan,PEERS,"Tanggungjawab ahli keluarga — Latihan dan analisis",4.1,"4.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,015,Pendidikan Kesihatan,PEERS,"Tanggungjawab ahli keluarga — Pentaksiran dan pengukuhan",4.1,"4.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,016,Pendidikan Kesihatan,PEERS,"Kasih sayang dan hubungan sihat — Kenali konsep",5.1,"5.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,017,Pendidikan Kesihatan,PEERS,"Kasih sayang dan hubungan sihat — Latihan dan analisis",5.1,"5.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,018,Pendidikan Kesihatan,PEERS,"Kasih sayang dan hubungan sihat — Pentaksiran dan pengukuhan",5.1,"5.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,019,Pendidikan Kesihatan,PEERS,"Pencegahan penyakit tidak berjangkit — Kenali konsep",6.1,"6.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,020,Pendidikan Kesihatan,PEERS,"Pencegahan penyakit tidak berjangkit — Latihan dan analisis",6.1,"6.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,021,Pendidikan Kesihatan,PEERS,"Pencegahan penyakit tidak berjangkit — Pentaksiran dan pengukuhan",6.1,"6.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,022,Pendidikan Kesihatan,PEERS,"Mengelakkan pengantunan kanak-kanak — Kenali konsep",7.1,"7.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,023,Pendidikan Kesihatan,PEERS,"Mengelakkan pengantunan kanak-kanak — Latihan dan analisis",7.1,"7.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,024,Pendidikan Kesihatan,PEERS,"Mengelakkan pengantunan kanak-kanak — Pentaksiran dan pengukuhan",7.1,"7.1.3;7.1.4",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,025,Pendidikan Kesihatan,PEMAKANAN,"Piramid makanan dan menu sihat — Kenali konsep",8.1,"8.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,026,Pendidikan Kesihatan,PEMAKANAN,"Piramid makanan dan menu sihat — Latihan dan analisis",8.1,"8.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,027,Pendidikan Kesihatan,PEMAKANAN,"Piramid makanan dan menu sihat — Aplikasi situasi baharu",8.1,"8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,028,Pendidikan Kesihatan,PEMAKANAN,"Piramid makanan dan menu sihat — Aplikasi situasi baharu",8.1,"8.1.1;8.1.2;8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,029,Pendidikan Kesihatan,PEMAKANAN,"Piramid makanan dan menu sihat — Pentaksiran dan pengukuhan",8.1,"8.1.1;8.1.2;8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,030,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Pertolongan cemas: lebam dan terseliuh — Kenali konsep",9.1,"9.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,031,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Pertolongan cemas: lebam dan terseliuh — Latihan dan analisis",9.1,"9.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+4,032,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Pertolongan cemas: lebam dan terseliuh — Pentaksiran dan pengukuhan",9.1,"9.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,001,Pendidikan Kesihatan,PEERS,"Sistem reproduktif manusia — Kenali konsep",1.1,"1.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,002,Pendidikan Kesihatan,PEERS,"Sistem reproduktif manusia — Latihan dan analisis",1.1,"1.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,003,Pendidikan Kesihatan,PEERS,"Sistem reproduktif manusia — Aplikasi situasi baharu",1.1,"1.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,004,Pendidikan Kesihatan,PEERS,"Sistem reproduktif manusia — Pentaksiran dan pengukuhan",1.1,"1.1.4",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,005,Pendidikan Kesihatan,PEERS,"Peraturan tingkah laku dan kehormatan diri — Kenali konsep",1.2,"1.2.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,006,Pendidikan Kesihatan,PEERS,"Peraturan tingkah laku dan kehormatan diri — Latihan dan analisis",1.2,"1.2.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,007,Pendidikan Kesihatan,PEERS,"Peraturan tingkah laku dan kehormatan diri — Pentaksiran dan pengukuhan",1.2,"1.2.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,008,Pendidikan Kesihatan,PEERS,"Bahaya penyalahgunaan bahan inhalan — Kenali konsep",2.1,"2.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,009,Pendidikan Kesihatan,PEERS,"Bahaya penyalahgunaan bahan inhalan — Latihan dan analisis",2.1,"2.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,010,Pendidikan Kesihatan,PEERS,"Bahaya penyalahgunaan bahan inhalan — Pentaksiran dan pengukuhan",2.1,"2.1.3;2.1.4",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,011,Pendidikan Kesihatan,PEERS,"Konflik dan stres ahli keluarga — Kenali konsep",3.1,"3.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,012,Pendidikan Kesihatan,PEERS,"Konflik dan stres ahli keluarga — Latihan dan analisis",3.1,"3.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,013,Pendidikan Kesihatan,PEERS,"Konflik dan stres ahli keluarga — Pentaksiran dan pengukuhan",3.1,"3.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,014,Pendidikan Kesihatan,PEERS,"Mengenal penderaan dan perlindungan — Kenali konsep",4.1,"4.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,015,Pendidikan Kesihatan,PEERS,"Mengenal penderaan dan perlindungan — Latihan dan analisis",4.1,"4.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,016,Pendidikan Kesihatan,PEERS,"Mengenal penderaan dan perlindungan — Pentaksiran dan pengukuhan",4.1,"4.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,017,Pendidikan Kesihatan,PEERS,"Persahabatan yang sihat — Kenali konsep",5.1,"5.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,018,Pendidikan Kesihatan,PEERS,"Persahabatan yang sihat — Latihan dan analisis",5.1,"5.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,019,Pendidikan Kesihatan,PEERS,"Persahabatan yang sihat — Pentaksiran dan pengukuhan",5.1,"5.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,020,Pendidikan Kesihatan,PEERS,"Mencegah demam campak, rubella, cacar air dan beguk — Kenali konsep",6.1,"6.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,021,Pendidikan Kesihatan,PEERS,"Mencegah demam campak, rubella, cacar air dan beguk — Latihan dan analisis",6.1,"6.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,022,Pendidikan Kesihatan,PEERS,"Mencegah demam campak, rubella, cacar air dan beguk — Pentaksiran dan pengukuhan",6.1,"6.1.1;6.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,023,Pendidikan Kesihatan,PEERS,"Pengaruh rakan sebaya — Kenali konsep",7.1,"7.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,024,Pendidikan Kesihatan,PEERS,"Pengaruh rakan sebaya — Pentaksiran dan pengukuhan",7.1,"7.1.2;7.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,025,Pendidikan Kesihatan,PEMAKANAN,"Membaca nutrien dan label makanan — Kenali konsep",8.1,"8.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,026,Pendidikan Kesihatan,PEMAKANAN,"Membaca nutrien dan label makanan — Latihan dan analisis",8.1,"8.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,027,Pendidikan Kesihatan,PEMAKANAN,"Membaca nutrien dan label makanan — Aplikasi situasi baharu",8.1,"8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,028,Pendidikan Kesihatan,PEMAKANAN,"Membaca nutrien dan label makanan — Aplikasi situasi baharu",8.1,"8.1.1;8.1.2;8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,029,Pendidikan Kesihatan,PEMAKANAN,"Membaca nutrien dan label makanan — Pentaksiran dan pengukuhan",8.1,"8.1.1;8.1.2;8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,030,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Pertolongan cemas: melecet dan melecur — Kenali konsep",9.1,"9.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,031,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Pertolongan cemas: melecet dan melecur — Latihan dan analisis",9.1,"9.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+5,032,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Pertolongan cemas: melecet dan melecur — Pentaksiran dan pengukuhan",9.1,"9.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,001,Pendidikan Kesihatan,PEERS,"Perubahan fizikal remaja — Kenali konsep",1.1,"1.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,002,Pendidikan Kesihatan,PEERS,"Perubahan fizikal remaja — Latihan dan analisis",1.1,"1.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,003,Pendidikan Kesihatan,PEERS,"Perubahan fizikal remaja — Aplikasi situasi baharu",1.1,"1.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,004,Pendidikan Kesihatan,PEERS,"Perubahan fizikal remaja — Pentaksiran dan pengukuhan",1.1,"1.1.1;1.1.2;1.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,005,Pendidikan Kesihatan,PEERS,"Batas tingkah laku seksual dan asertif — Kenali konsep",1.2,"1.2.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,006,Pendidikan Kesihatan,PEERS,"Batas tingkah laku seksual dan asertif — Latihan dan analisis",1.2,"1.2.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,007,Pendidikan Kesihatan,PEERS,"Batas tingkah laku seksual dan asertif — Aplikasi situasi baharu",1.2,"1.2.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,008,Pendidikan Kesihatan,PEERS,"Batas tingkah laku seksual dan asertif — Pentaksiran dan pengukuhan",1.2,"1.2.4",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,009,Pendidikan Kesihatan,PEERS,"Menjauhi penyalahgunaan dadah — Kenali konsep",2.1,"2.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,010,Pendidikan Kesihatan,PEERS,"Menjauhi penyalahgunaan dadah — Latihan dan analisis",2.1,"2.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,011,Pendidikan Kesihatan,PEERS,"Menjauhi penyalahgunaan dadah — Pentaksiran dan pengukuhan",2.1,"2.1.3;2.1.4",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,012,Pendidikan Kesihatan,PEERS,"Mengurus perubahan emosi remaja — Kenali konsep",3.1,"3.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,013,Pendidikan Kesihatan,PEERS,"Mengurus perubahan emosi remaja — Latihan dan analisis",3.1,"3.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,014,Pendidikan Kesihatan,PEERS,"Mengurus perubahan emosi remaja — Pentaksiran dan pengukuhan",3.1,"3.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,015,Pendidikan Kesihatan,PEERS,"Peranan remaja dalam keluarga — Kenali konsep",4.1,"4.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,016,Pendidikan Kesihatan,PEERS,"Peranan remaja dalam keluarga — Latihan dan analisis",4.1,"4.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,017,Pendidikan Kesihatan,PEERS,"Peranan remaja dalam keluarga — Pentaksiran dan pengukuhan",4.1,"4.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,018,Pendidikan Kesihatan,PEERS,"Tekanan positif dan negatif — Kenali konsep",5.1,"5.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,019,Pendidikan Kesihatan,PEERS,"Tekanan positif dan negatif — Latihan dan analisis",5.1,"5.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,020,Pendidikan Kesihatan,PEERS,"Tekanan positif dan negatif — Pentaksiran dan pengukuhan",5.1,"5.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,021,Pendidikan Kesihatan,PEERS,"Mencegah penyakit bawaan makanan dan air — Kenali konsep",6.1,"6.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,022,Pendidikan Kesihatan,PEERS,"Mencegah penyakit bawaan makanan dan air — Pentaksiran dan pengukuhan",6.1,"6.1.2;6.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,023,Pendidikan Kesihatan,PEERS,"Pengaruh dalam komuniti — Kenali konsep",7.1,"7.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,024,Pendidikan Kesihatan,PEERS,"Pengaruh dalam komuniti — Pentaksiran dan pengukuhan",7.1,"7.1.2;7.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,025,Pendidikan Kesihatan,PEMAKANAN,"Makanan segar dan makanan diproses — Kenali konsep",8.1,"8.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,026,Pendidikan Kesihatan,PEMAKANAN,"Makanan segar dan makanan diproses — Latihan dan analisis",8.1,"8.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,027,Pendidikan Kesihatan,PEMAKANAN,"Makanan segar dan makanan diproses — Aplikasi situasi baharu",8.1,"8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,028,Pendidikan Kesihatan,PEMAKANAN,"Makanan segar dan makanan diproses — Aplikasi situasi baharu",8.1,"8.1.1;8.1.2;8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,029,Pendidikan Kesihatan,PEMAKANAN,"Makanan segar dan makanan diproses — Pentaksiran dan pengukuhan",8.1,"8.1.1;8.1.2;8.1.3",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,030,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Peti pertolongan cemas — Kenali konsep",9.1,"9.1.1",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,031,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Peti pertolongan cemas — Latihan dan analisis",9.1,"9.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
+6,032,Pendidikan Kesihatan,PERTOLONGAN CEMAS,"Peti pertolongan cemas — Pentaksiran dan pengukuhan",9.1,"9.1.1;9.1.2",30,KSSR_2027_STAGING,DRAFT_UNAPPROVED
