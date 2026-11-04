@@ -10,7 +10,7 @@
 **SP:** 4.4 — Mengekspresikan perasaan berkaitan dengan amalan menghargai keunikan negara.  
 **Fokus:** Empati, perasaan dan komunikasi  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 4, Jasa Tokoh Negara Dikenang, halaman permulaan bercetak 29 (PDF 38); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Kad pameran keunikan budaya dan warisan Malaysia yang disediakan guru berdasarkan DSKP SK 4.0; kad situasi, peta keputusan, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **4.4** dengan menghasilkan dua perasaan yang wajar beserta satu sebab yang dinyatakan berdasarkan konteks **Hargai Keunikan Negara**.  
@@ -31,4 +31,4 @@ Murid menunjukkan penguasaan SP **4.4** dengan menghasilkan dua perasaan yang wa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 4 bertajuk Jasa Tokoh Negara Dikenang, tidak sepadan dengan SK 4.0 Hargai Keunikan Negara**; aktiviti ini berdasarkan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
