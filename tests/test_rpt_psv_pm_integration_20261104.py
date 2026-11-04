@@ -9,7 +9,7 @@ from pypdf import PdfReader
 from rpt_2027.psv import telegram_downloads as psv
 from rpt_2027.english import telegram_downloads as english
 from rpt_2027.pendidikan_moral import add_cover
-from rpt_2027.pendidikan_moral.complete_96_downloads import build_rpt_pdf, source_rows as moral_rows
+from rpt_2027.pendidikan_moral.complete_96_downloads import build_rpt_pdf, build_combined_rpt_pdf, combined_pdf_ready, source_rows as moral_rows
 
 class PSVandMoralRPTTests(unittest.TestCase):
     def test_psv_source_and_pdf_five_years(self):
@@ -50,6 +50,24 @@ class PSVandMoralRPTTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             add_cover.prepend_cover(2,"Z","missing.pdf","output.pdf")
 
+
+    def test_combined_moral_one_pdf_contains_both_groups(self):
+        for year in range(2,7):
+            self.assertTrue(combined_pdf_ready(year))
+            with TemporaryDirectory() as d:
+                filename=Path(d)/f"moral_{year}.pdf"
+                pdf=build_combined_rpt_pdf(year,filename)
+                reader=PdfReader(str(pdf))
+                self.assertEqual(len(reader.pages),29)
+                self.assertIn(f"PENDIDIKAN MORAL TAHUN {year}",reader.pages[0].extract_text())
+                self.assertIn("KUMPULAN A/B",reader.pages[0].extract_text())
+                self.assertIn("KUMPULAN A",reader.pages[1].extract_text())
+                self.assertIn("KUMPULAN B",reader.pages[15].extract_text())
+                self.assertIn("096",reader.pages[14].extract_text())
+                self.assertIn("096",reader.pages[28].extract_text())
+        self.assertFalse(combined_pdf_ready(1))
+        self.assertFalse(combined_pdf_ready(7))
+
     def test_paid_psv_and_legacy_callback_isolation(self):
         records=[]
         def send(cid,msg,buttons=None):
@@ -78,8 +96,10 @@ class PSVandMoralRPTTests(unittest.TestCase):
         ns["callback"](9,"rpt2027_year_2")
         menu=records[-1][2]
         names=str(menu)
-        for required in ("rpt2027_psv_pdf_2","rpt2027_pm_96_a_2","rpt2027_pm_96_b_2","rpt2027_en_pdf_2"):
+        for required in ("rpt2027_psv_pdf_2","rpt2027_pm_pdf_2","rpt2027_en_pdf_2"):
             self.assertIn(required,names)
+        for hidden in ("rpt2027_pm_96_a_2","rpt2027_pm_96_b_2","rpt2027_pm_rph54_pdf_2","rpt2027_pm_rph54_docx_2"):
+            self.assertNotIn(hidden,names)
         ns["callback"](9,"rpt2027_psv_pdf_2")
         self.assertEqual(records[-1][0],"document")
         self.assertIn("Tahun 2",records[-1][1])
