@@ -89,6 +89,16 @@ except Exception as _rpt_2027_exc:
     print("English RPT 2027 Telegram bridge unavailable:", repr(_rpt_2027_exc), flush=True)
 
 
+# Bahasa Melayu 2027: RPT DRAF PDF (Tahun 2-6). Paid only, no DB edits.
+# Wrapped after English menu so its new year-specific button is handled safely.
+try:
+    from rpt_2027.bahasa_melayu.telegram_downloads import install as install_bm_rpt_2027
+    BM_RPT_2027_TELEGRAM_ACTIVE = install_bm_rpt_2027(vars(telegram_runtime))
+except Exception as _bm_rpt_2027_exc:
+    BM_RPT_2027_TELEGRAM_ACTIVE = False
+    print("BM RPT 2027 Telegram bridge unavailable:", repr(_bm_rpt_2027_exc), flush=True)
+
+
 # Temporary Matematik v28 RPT PDFs are served only from a private, local
 # server directory after the same paid entitlement checks. Never fetch an
 # unshared Drive URL directly or expose a public file link.

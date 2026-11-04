@@ -5,6 +5,7 @@ entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 """
 from pathlib import Path
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
+from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
 from rpt_2027.pendidikan_islam.telegram_downloads import pdf_ready as pi_pdf_ready
 
 PDF_ROOT = Path(__file__).resolve().parent
@@ -59,7 +60,7 @@ def install(ns):
             kb.append([{"text": "🏠 Menu Utama", "callback_data": "home"}])
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"
-                "English Tahun 2–6 tersedia dalam PDF (160 Lesson/tahun). Pendidikan Islam: RPT cadangan, jika tersedia. "
+                "English Tahun 2–6 tersedia dalam PDF (160 Lesson/tahun). Bahasa Melayu: RPT DRAF untuk semakan, jika tersedia. Pendidikan Islam: RPT cadangan, jika tersedia. "
                 "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia.",
                 kb)
         if is_year:
@@ -68,6 +69,9 @@ def install(ns):
                 return previous(cid, d)
             year = int(suffix)
             kb = [[{"text": "📥 English (PDF)", "callback_data": "rpt2027_en_pdf_%d" % year}]]
+            if bm_pdf_ready(year):
+                kb.append([{"text": "📥 Bahasa Melayu (PDF • DRAF)",
+                            "callback_data": "rpt2027_bm_pdf_%d" % year}])
             # Do not advertise temporary PDFs until mounted and header-checked.
             if math_pdf_ready(year, ns=ns):
                 kb.append([{"text": "📥 Matematik (PDF v28 • DRAF/SEMENTARA)",
@@ -82,7 +86,7 @@ def install(ns):
             return send(cid,
                 "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
                 "Pilih subjek untuk memuat turun RPT.\n"
-                "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\n"
+                "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\nBahasa Melayu: RPT 2027 DRAF untuk semakan guru, jika tersedia.\n"
                 "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\n\n"
                 "Tarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
