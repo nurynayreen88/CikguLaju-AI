@@ -1,24 +1,24 @@
 # RPH Pendidikan Kesihatan Tahun 2 — PdP 001
-**Status:** DRAF RPT 2027 • belum diluluskan untuk Telegram  
-**Tajuk:** Keselamatan tubuh dan kehormatan diri — Penerokaan konsep  
+**Status:** DRAF — kurikulum disemak; RPT 2027, A4 dan Telegram belum lulus  
+**Tajuk:** Postur, rehat dan tidur — mengenal dan mempraktik  
 **SK:** 1.1  
-**SP:** 1.1.1  
-**Tempoh:** 30 minit (cadangan berasaskan agihan minimum DSKP).  
-**Kelas/Tarikh:** Diisi guru; tiada tarikh negeri diandaikan.
+**SP:** 1.1.1, 1.1.2  
+**Tempoh:** 30 minit (cadangan).  
+**Kelas/Tarikh:** Guru isi mengikut jadual sebenar.
 
-**Objektif:** Murid dapat memperlihatkan pencapaian bagi SP 1.1.1: Menyatakan maksud postur, rehat dan tidur. melalui satu respons lisan/bertulis atau simulasi selamat yang bersesuaian tahap.
+**Objektif:** Murid dapat melaksanakan tugasan selaras SP 1.1.1, 1.1.2 serta memberikan sekurang-kurangnya satu alasan bagi pilihan yang selamat.
 
-**Set induksi:** Guru memberikan contoh ringkas bertema "Keselamatan tubuh dan kehormatan diri" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
+**Set induksi:** Guru menunjukkan dua ilustrasi postur ketika duduk dan tidur; murid mengenal perbezaan tanpa menilai badan rakan.
 
-**Aktiviti 1 — Penerokaan konsep:** Guru memaparkan ilustrasi postur duduk dan tidur. Murid menerangkan maksud postur, rehat dan tidur menggunakan contoh harian.
+**Aktiviti 1 — Penerokaan:** Murid mengelaskan kad postur, rehat dan tidur kepada amalan sesuai atau tidak sesuai; guru menjelaskan maksud dan sebab pilihan.
 
-**Aktiviti 2 — Aplikasi:** Kumpulan membandingkan dua rutin rekaan dan menjana idea tentang manfaat postur yang betul serta rehat dan tidur yang mencukupi, dengan alasan.
+**Aktiviti 2 — Aplikasi:** Pasangan melatih cara duduk dan membawa beg yang selamat, kemudian menyusun rutin tidur rekaan secara berpatutan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 1.1.1 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Semak kad klasifikasi dan demonstrasi postur; setiap murid memberi satu alasan amalan itu membantu kesihatan.
 
-**Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
+**Penutup:** Murid menyatakan satu amalan atau tindakan selamat; guru menilai jawapan individu dan mencatat pengukuhan yang diperlukan.
 
-**BBM:** Kad situasi, lembaran pilihan–alasan dan bahan bantu yang sesuai topik.  
-**Keselamatan/privasi:** Gunakan situasi rekaan; tidak meminta murid berkongsi maklumat tubuh, sentuhan atau keluarga sebenar. Ikut prosedur perlindungan jika ada pendedahan.
+**BBM:** Kad situasi, ilustrasi pendidikan sesuai umur, lembaran tindakan/keputusan.  
+**Keselamatan/privasi:** Gunakan watak rekaan, jangan minta murid menceritakan pengalaman tubuh atau keluarga. Jika ada pendedahan sebenar, guru ikut prosedur perlindungan kanak-kanak sekolah.
 
-**Jejak sumber:** DSKP PJPK Tahun 2: https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view. Nombor PdP ialah cadangan CikguLaju berdasarkan 30 minit/sesi; **bukan jadual rasmi yang telah disahkan**.
+**Sumber:** [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). PdP ialah susunan **cadangan CikguLaju**, bukan jadual rasmi yang telah disahkan; belum READY.

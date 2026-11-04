@@ -1,24 +1,24 @@
 # RPH Pendidikan Kesihatan Tahun 3 — PdP 001
-**Status:** DRAF RPT 2027 • belum diluluskan untuk Telegram  
-**Tajuk:** Menjaga kehormatan anggota seksual — Penerokaan konsep  
+**Status:** DRAF — kurikulum disemak; RPT 2027, A4 dan Telegram belum lulus  
+**Tajuk:** Kehormatan anggota seksual — pengetahuan dan penjagaan  
 **SK:** 1.1  
-**SP:** 1.1.1  
-**Tempoh:** 30 minit (cadangan berasaskan agihan minimum DSKP).  
-**Kelas/Tarikh:** Diisi guru; tiada tarikh negeri diandaikan.
+**SP:** 1.1.1, 1.1.2  
+**Tempoh:** 30 minit (cadangan).  
+**Kelas/Tarikh:** Guru isi mengikut jadual sebenar.
 
-**Objektif:** Murid dapat memperlihatkan pencapaian bagi SP 1.1.1: Menyatakan anggota seksual (i) Bibir (ii) Payu dara (iii) Punggung (iv) Zakar (v) Faraj (vi) Dubur melalui satu respons lisan/bertulis atau simulasi selamat yang bersesuaian tahap.
+**Objektif:** Murid dapat melaksanakan tugasan selaras SP 1.1.1, 1.1.2 serta memberikan sekurang-kurangnya satu alasan bagi pilihan yang selamat.
 
-**Set induksi:** Guru memberikan contoh ringkas bertema "Menjaga kehormatan anggota seksual" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
+**Set induksi:** Guru menggunakan ilustrasi pendidikan sesuai umur untuk menerangkan konsep bahagian peribadi tubuh tanpa menyoal pengalaman murid.
 
-**Aktiviti 1 — Penerokaan konsep:** Murid mengelaskan contoh tindakan kepada menjaga privasi atau melanggar privasi tubuh menggunakan kad situasi; guru membetulkan tanggapan bahawa keizinan, batas sentuhan dan keselamatan mesti dihormati.
+**Aktiviti 1 — Penerokaan:** Murid memadankan istilah anatomi dengan peraturan menghormati privasi diri dan orang lain dalam kad pendidikan.
 
-**Aktiviti 2 — Aplikasi:** Pasangan melatih skrip berkata TIDAK, beredar dan melaporkan kepada orang dewasa dipercayai dalam situasi rekaan tanpa lakonan sentuhan sebenar.
+**Aktiviti 2 — Aplikasi:** Pasangan mengelaskan pilihan tindakan menjaga kehormatan diri kepada sesuai atau tidak sesuai, lalu memberikan alasan.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 1.1.1 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Kad respons individu: satu prinsip menjaga privasi dan satu tindakan mendapatkan bantuan jika diperlukan.
 
-**Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
+**Penutup:** Murid menyatakan satu amalan atau tindakan selamat; guru menilai jawapan individu dan mencatat pengukuhan yang diperlukan.
 
-**BBM:** Kad situasi, lembaran pilihan–alasan dan bahan bantu yang sesuai topik.  
-**Keselamatan/privasi:** Gunakan situasi rekaan; tidak meminta murid berkongsi maklumat tubuh, sentuhan atau keluarga sebenar. Ikut prosedur perlindungan jika ada pendedahan.
+**BBM:** Kad situasi, ilustrasi pendidikan sesuai umur, lembaran tindakan/keputusan.  
+**Keselamatan/privasi:** Gunakan watak rekaan, jangan minta murid menceritakan pengalaman tubuh atau keluarga. Jika ada pendedahan sebenar, guru ikut prosedur perlindungan kanak-kanak sekolah.
 
-**Jejak sumber:** DSKP PJPK Tahun 3: https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view. Nombor PdP ialah cadangan CikguLaju berdasarkan 30 minit/sesi; **bukan jadual rasmi yang telah disahkan**.
+**Sumber:** [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). PdP ialah susunan **cadangan CikguLaju**, bukan jadual rasmi yang telah disahkan; belum READY.
