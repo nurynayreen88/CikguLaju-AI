@@ -186,7 +186,8 @@ def _materials(meta):
     text = (meta.get("materials") or meta.get("references")
             or meta.get("resources") or "").strip()
     # These are audit-draft file paths, not released classroom resources.
-    text = re.sub(r"(?:^|[;\s])resources/[^\s;,]+(?:\.md)?", "", text, flags=re.I)
+    text = re.sub(r"resources/[^\s;,()]+", "", text, flags=re.I)
+    text = re.sub(r"\(\s*\)", "", text)
     text = re.sub(r"\s*;\s*;", ";", text).strip(" ;,")
     audio = (meta.get("audio") or "").strip()
     if audio and not re.search(r"pending|unverified|requires|draft|not verified", audio, re.I):
