@@ -56,7 +56,21 @@
     "telegram_audio_mapping_verified": false,
     "teacher_word_download_verified": false,
     "native_pdf_download_verified": false,
-    "pedagogical_approval": false
+    "pedagogical_approval": false,
+    "printed_workbook_activity_checked": true
   },
-  "next_action": "Listen to both tracks against Teacher's Book Activity 2 dialogue, verify Telegram's per-lesson audio file ID, then run native Word/PDF teacher test and record signoff. Until then retain explicit AUDIO REFERENCE CONFLICT (DRAF)."
+  "next_action": "Listen to both tracks against Teacher's Book Activity 2 dialogue, verify Telegram's per-lesson audio file ID, then run native Word/PDF teacher test and record signoff. Until then retain explicit AUDIO REFERENCE CONFLICT (DRAF).",
+  "workbook": {
+    "title": "Get Smart Plus 4 Workbook",
+    "drive_file_id": "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX",
+    "printed_page": 14,
+    "pdf_page": 13,
+    "activity": 1,
+    "prompt": "Look at the pictures. What do the children have to do?",
+    "observed_content": "Six picture-based household duties; pupils write have to + action sentences. Printed example: They have to water the plants.",
+    "rph_match": "Lesson 030 optional Workbook p.14 Activity 1 matches original printed task",
+    "visual_source_check": true,
+    "checked_date": "2026-11-04",
+    "notes": "This written Workbook activity is separate from the SB p.20 Activity 2 listening task; it does not resolve which recording matches SB p.20. WB p.15 contains a separate Listen and number task and must not be conflated with WB p.14."
+  }
 }

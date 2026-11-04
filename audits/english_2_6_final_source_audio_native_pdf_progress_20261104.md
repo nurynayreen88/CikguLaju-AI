@@ -27,6 +27,16 @@ GitHub Actions workflow: `.github/workflows/english-native-pdf-audio-evidence-20
 - Exact source locations, Google Drive audio file IDs and verification gates are preserved in `audits/english_y4_l030_audio_source_evidence_20261104.json`.
 - **Release status remains DRAF**; printed Teacher's Book is the preferred *activity instruction* but that does not prove the corresponding playable file matches the written dialogue.
 
+## Independently checked Workbook page — Year 4 Lesson 30 (4 Nov 2026)
+
+Read the **original Get Smart Plus 4 Workbook.pdf** from Google Drive, file ID `1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX`, and visually inspected **printed p.14 / PDF page 13** (1-based). Activity 1 instructs `Look at the pictures. What do the children have to do?` and shows six picture-based chores, with the worked example `They have to water the plants.` This directly matches the optional `Workbook p.14, Activity 1` written sentence task already cited by Year 4 `lesson_030.md`. No change to this RPH is needed.
+
+**Do not conflate tasks:** Workbook printed p.15 / PDF page 14 has a separate `Listen and number` activity. Checking the written Workbook p.14 task **does not** verify the audio for Student's Book p.20 Activity 2, resolve the Teacher's Book CD1-versus-SOW CD2 discrepancy, or prove Telegram delivery. The original workbook is a source file, not evidence that a teacher has download access.
+
+Drive file metadata additionally confirms that **both** Year 4 CD1 Track 29 and CD2 Track 29 allow link-reader access (Google Drive `anyone: reader` at the time of this check), but this does **not** demonstrate correct content, playback, or bot routing. Do not change the existing final-release gate.
+
+Independent workbook proof is now recorded in `audits/english_y4_l030_audio_source_evidence_20261104.json`; regression checks in `tests/test_english_y4_l030_audio_evidence.py` distinguish this source success from the still-false audio and Telegram gates.
+
 ## Status: no blanket FINAL READY
 
 Earlier technical audit: **766** fixed-SOW document rows matched, **33** SOW teacher-choice lessons are clearly labelled CikguLaju suggestions, and **1** Lesson 30 audio conflict requires direct listening. All **800 native ReportLab PDF core builds now produce one-page A4**, but source and final-user QA remain separate.
