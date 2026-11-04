@@ -7,32 +7,32 @@
 **Language focus:** relevant vocabulary and language from this unit  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Workbook pages 80-81; self-assessment worksheet; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate a school music performance through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Conduct a guided partner exchange about 'Music and Song', then produce a short written response using lesson vocabulary.
+**Learning objective:** Ask a partner two clear questions about music, record two specific answers and write two accurate sentences reporting the partner's preferences or experiences.
+**PBD evidence:** Two questions, two recorded partner answers and two meaningful written report sentences with appropriate subject-verb agreement.
 
 ## Set induction (5 minutes)
-**Teacher:** Show instrument and performance pictures and ask: “Which song or instrument would you choose and why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show two pictures of instruments or performances and model a music-preference question.
+**Pupils:** Name one instrument and give one short personal music preference.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Model two useful question frames (for example, 'What music do you like?' and 'Have you performed before?'); provide support for pupils who need it.
+**Pupils:** Rehearse both questions and predict how a partner might answer.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils interview classmates about music preferences and experiences, record detailed answers, and complete the WB review.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Organise paired music interviews; remind pupils to listen for two factual details rather than copy a script.
+**Pupils:** Ask both questions and record two specific answers from their partner.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Model changing notes into third-person sentences; invite a peer check. Use WB pp.80–81 only after verifying which review task matches the class goal.
+**Pupils:** Write two accurate sentences about their partner and revise one grammar or vocabulary error.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check question clarity, two recorded answers and two report sentences against the objective; give one actionable correction.
+**Pupils:** Show notes and written evidence, then improve one report sentence.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Which song or instrument would you choose and why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pupils to report one partner preference in a clear complete sentence.
+**Pupils:** Present one corrected sentence and state a question-forming target for the next lesson.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

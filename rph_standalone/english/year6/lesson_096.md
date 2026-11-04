@@ -7,32 +7,32 @@
 **Language focus:** relevant vocabulary and language from this unit  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 80-81; Teacher Book pages 130-131; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate making a familiar product through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Read a short age-appropriate text on 'How is it made?'; identify one main idea and answer 4 detail questions.
+**Learning objective:** Read a teacher-selected process explanation, state its main idea, identify four factual details and order four stages using sequence words.
+**PBD evidence:** One main idea, four text-based details and an accurately sequenced four-stage flowchart.
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Display four mixed-up process-stage picture cards from a familiar product; ask what may happen first without revealing the order.
+**Pupils:** Predict the order and name one verb for a stage.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Use PB pp.80–81 as the unit reference; model matching production verbs to a teacher-prepared four-stage picture sequence, without claiming an unchecked printed exercise.
+**Pupils:** Match four picture stages with suitable verbs and explain one choice.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils read a process text, identify its main idea and supporting details, then sequence the production stages.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Guide reading of a short, teacher-selected product-making explanation; model finding its main idea and one supporting detail.
+**Pupils:** State the main idea, locate four details in the text and place the four stages in logical order.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Ask pairs to explain their flowcharts using first, next, then and finally; challenge one unclear step with a text-evidence question.
+**Pupils:** Explain the sequence to a partner and revise one stage with supporting evidence.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check each pupil's main idea, four details and four-stage flowchart; provide targeted correction where evidence is missing.
+**Pupils:** Underline one supporting detail and correct an inaccurate stage or sentence.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask for one production stage with its sequence word and a detail from the reading.
+**Pupils:** Give one accurate sequence sentence and identify a useful reading strategy.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
