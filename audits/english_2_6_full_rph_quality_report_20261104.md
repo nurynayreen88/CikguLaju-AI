@@ -1,5 +1,24 @@
 # English CikguLaju — Full RPH source-content QA, 4 November 2026
 
+## Latest verified checkpoint — after PR #244, #245, #246, #247, #248 and #249
+
+This addendum **supersedes only the open-issue descriptions in the original baseline table below**. Keep that historical baseline unchanged for traceability. All current RPH files and source tests are in GitHub \`main\`; do not re-import old staging copies.
+
+| Scope | Resolved since the original 800-Lesson baseline | Remaining boundary |
+|---|---|---|
+| English Year 2 | All **47** stale SOW-code verification headers were reconciled to the independently read KPM SOW PDF; exact numeric Main/Complementary codes and all original lesson tasks unchanged | Detailed source activity, Workbook/audio and real Telegram download verification still required |
+| English Year 3 | **12** generic pupil instructions in Lessons 4–16 replaced with actions grounded in original KPM Year3 SOW; L15 story SB pp12–13 and L16 worksheet C source omissions corrected | Unverified printed TB/WB exercises, audio identity and final classroom sign-off remain |
+| English Year 4 | Current fixed-SOW mapping and RPH document pipeline retained; no blanket release | **Lesson 30 CD1/CD2 Track29 speech conflict** stays fail-closed, and **10** teacher-choice lessons await standards/approval |
+| English Year 5 | Lesson **29 and 30** now have distinct SOW-specific teacher/pupil phases and explicit 60-minute time allocations | **9** teacher-choice lessons and disabled-by-default draft bridge remain gated; no authenticated Telegram activation |
+| English Year 6 | **12** fixed-SOW Lessons **1–4, 6–9, 11–14** had their activities, objectives, PBD, induction and closure corrected against the KPM original SOW. PR #248 / #249; all source, safety and isolated native PDF tests passed | Source/audio/live Telegram proof still pending; **14** teacher-choice lessons remain DRAF |
+| Document checks | The 61 amended sources from PR #244–246 have **61/61 one-page A4 native PDF smoke** success (PR #247); 12 amended Y6 PDFs passed in PR #249 | These checks run the AST-isolated native ReportLab builder, **not** an authenticated Telegram user's Word/PDF download |
+
+**Release interpretation:** **800/800 source coverage and all 767 fixed numeric SOW header pairs** pass the technical QA inventory, but no blanket pedagogical FINAL READY is authorised. The 33 teacher-choice lessons are suggestions, not automatically assigned official DSKP pairs. The Year4 Lesson30 audio must not be auto-substituted.
+
+The reproducible full-inventory checkpoint now reruns after English Year2–6 RPH edits and tests the resolved issues via \`tests/test_english_current_maturity_delta_20261104.py\`. Its JSON artifact records present-day per-Lesson flags. Source-linked draft statuses, teacher-entered reflection, users, billing, quota and approval records are not altered by the addendum.
+
+---
+
 **Decision:** Year 2–6 **TECHNICAL STRUCTURE / SOW HEADER MATCH PASS**. **NOT PEDAGOGICAL FINAL READY**. Year 1 is separate legacy inventory pending KP2027.
 
 ## Method and source boundary
