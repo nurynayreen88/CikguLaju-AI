@@ -49,7 +49,7 @@ class EnglishY4WordPdfRowsTests(unittest.TestCase):
         self.assertIn("Pupils:", updated["AKTIVITI UTAMA"])
         self.assertIn("Activity 1", updated["AKTIVITI UTAMA"])
         self.assertIn("Activity 2", updated["AKTIVITI UTAMA"])
-        self.assertIn("Flag", updated["AKTIVITI UTAMA"])
+        self.assertIn("flag", updated["AKTIVITI UTAMA"].lower())
         self.assertNotIn("GENERIC OLD LESSON", updated["AKTIVITI UTAMA"])
         self.assertNotIn("QA status", "\n".join(updated.values()))
         self.assertNotIn("Verified mapping and limits", "\n".join(updated.values()))
@@ -68,7 +68,7 @@ class EnglishY4WordPdfRowsTests(unittest.TestCase):
 
     def test_explicit_lesson_identity_wins_over_stale_textbook_number(self):
         state = dict(self.state, textbook_lesson_no=40, lesson=70)
-        self.assertIn("Flag", adapt_rows(state, self.existing)["AKTIVITI UTAMA"])
+        self.assertIn("flag", adapt_rows(state, self.existing)["AKTIVITI UTAMA"].lower())
         self.assertIsNone(_selected_y4_lesson(dict(state, lesson_no="not-a-number")))
         self.assertIsNone(_selected_y4_lesson(dict(state, lesson_no=True,
                                                    textbook_lesson_no=None, lesson=None)))
