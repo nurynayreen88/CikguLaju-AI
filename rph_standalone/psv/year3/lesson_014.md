@@ -2,25 +2,27 @@
 
 **Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Gurisan — Burung di Hutan  
+**Bidang:** Membentuk dan Membuat Binaan  
+**Jenis/Tajuk:** Mobail — Serangga Comel
+**Unit RPT 2026:** Unit 4 — Serangga Comel (BT ms 30–35)  
+**Sumber urutan:** [RPT PSV 3 2026](https://anyflip.com/itknp/wmdi/basic)  
 **Fokus:** Lakar dan pilih media  
 **SK:** 2.1; 3.1  
-**SP:** 2.1.1; 3.1.1  
-**Teknik:** gurisan  
-**Bahasa seni visual:** garisan, rupa, kepelbagaian, harmoni  
+**SP:** 2.1.3; 3.1.4  
+**Teknik:** ikatan dan asemblaj  
+**Bahasa seni visual:** bentuk, warna, kepelbagaian, pergerakan  
 **Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** krayon, lapisan warna, pengguris plastik tumpul
+**BBM:** kad warna, benang, batang tumpul
 
 ## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Burung di Hutan dan memilih satu lakaran berdasarkan garisan, rupa, kepelbagaian, harmoni.
+Murid dapat menyiapkan dua lakaran Burung Terbang dan memilih satu lakaran berdasarkan bentuk, warna, kepelbagaian, pergerakan.
 
 ## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung di Hutan. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
+**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Burung Terbang. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
 
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Burung di Hutan. Murid menyenaraikan alat serta bahan yang diperlukan.
+**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Burung Terbang. Murid menyenaraikan alat serta bahan yang diperlukan.
 
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal gurisan burung dan daun, menguji gurisan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
+**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal mobail serangga daripada bahan kertas, menguji ikatan dan asemblaj pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
 
 **Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
 
@@ -30,4 +32,4 @@ Murid dapat menyiapkan dua lakaran Burung di Hutan dan memilih satu lakaran berd
 
 **Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
 
-**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+**Rujukan:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view) dan [RPT PSV Tahun 3 2026](https://anyflip.com/itknp/wmdi/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
