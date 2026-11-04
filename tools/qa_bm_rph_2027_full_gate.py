@@ -93,7 +93,7 @@ def check():
             if title and key(title)!=key(row["title"]):
                 # Some earlier RPHs intentionally use clarifying parentheticals; flag for review.
                 warnings.append({"pdp":n,"type":"rpt_title_variation","rph":title[:100],"rpt":row["title"][:100]})
-            if not all(patt in text for patt in ["Set induksi","Aktiviti 1","Aktiviti 2","Pengukuhan","Penutup"]):
+            if not all(patt.casefold() in text.casefold() for patt in ["Set induksi","Aktiviti 1","Aktiviti 2","Pengukuhan","Penutup"]):
                 errors.append({"pdp":n,"type":"missing_pedagogical_section"})
             if len(re.findall(r"\*\*(?:Guru|Tindakan guru):\*\*",text))<3 or len(re.findall(r"\*\*(?:Murid|Tindakan murid):\*\*",text))<3:
                 errors.append({"pdp":n,"type":"teacher_pupil_actions_missing"})
