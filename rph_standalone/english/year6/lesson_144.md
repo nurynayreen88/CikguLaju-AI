@@ -7,32 +7,32 @@
 **Language focus:** relevant vocabulary and language from this unit  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Workbook pages 100-101; Teacher Book page 185; self-assessment worksheet; unit review sheet and self-assessment checklist  
-**Learning objective:** Consolidate a familiar school-life issue through a unit review and demonstrate understanding in at least 4 accurate responses.  
-**PBD evidence:** Conduct a guided partner exchange about 'What's your opinion?', then produce a short written response using lesson vocabulary.
+**Learning objective:** Express a clear opinion about a teacher-selected familiar issue, give two relevant reasons and write a three-sentence response with accurate punctuation.
+**PBD evidence:** One stated opinion, two distinct supporting reasons and a three-sentence written response checked for agreement and punctuation.
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Show two contrasting opinions about a familiar school-life issue and model 'I agree because ...' without requiring one viewpoint.
+**Pupils:** Choose a viewpoint and give one initial reason.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Revisit common errors in the unit; introduce the review materials specified in the RPT where available.  
-**Pupils:** Recall two familiar expressions and correct one example collaboratively.
+**Teacher:** Model how to add a second, different reason using because and also; compare a supported claim with a claim lacking reasons.
+**Pupils:** Sort two sample reasons by relevance and rehearse an opinion sentence.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide the proposed unit revision task: Pupils share personal preferences and opinions with supporting details, write a short personal response, and complete the WB review.  
-**Pupils:** Complete the review task and discuss or compare answers using unit vocabulary.
+**Teacher:** Lead partner discussion where each speaker states an opinion and two reasons; allow a respectful differing view.
+**Pupils:** Take turns giving a view and two reasons, and record useful vocabulary from a partner.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Use a short self-assessment checklist; reteach one difficult item and guide correction.  
-**Pupils:** Correct two errors, show completed review evidence and state one next learning goal.
+**Teacher:** Model a three-sentence written response and a punctuation check; use WB pp.100–101 only if the selected printed task is confirmed to match.
+**Pupils:** Write an opinion and two supporting reason sentences; exchange work and correct one error.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess whether the written opinion is clear, both reasons are relevant and punctuation is accurate; provide one targeted suggestion.
+**Pupils:** Show a three-sentence response and improve one sentence based on feedback.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Ask for one revised claim supported by its strongest reason.
+**Pupils:** Share the improved opinion with one reason and identify a language target to practise.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
