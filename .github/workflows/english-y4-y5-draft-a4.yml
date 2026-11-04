@@ -35,6 +35,8 @@ jobs:
             sudo apt-get update -qq
             sudo apt-get install -y -qq libreoffice-writer >/dev/null
           fi
+      - name: Verify A4 compaction isolation from old Year4 and Year5 choices
+        run: python -m unittest discover -s tests -p 'test_english_y4_y5_draft_word_a4_scope.py' -v
       - name: Verify source-backed DRAFT A4 Word RPH without losing text
         run: python tools/verify_english_y4_y5_draft_a4.py --year ${{ matrix.year }}
       - name: Upload per-Lesson A4 report
