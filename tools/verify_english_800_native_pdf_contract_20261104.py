@@ -124,10 +124,15 @@ def _load_native_pdf_function():
     return env
 
 
-def run(year, all_lessons=False):
+def run(year, all_lessons=False, lessons=None):
     if year not in range(2,7):
         raise ValueError("English primary Year 2–6 only")
-    nums=list(range(1,161)) if all_lessons else sorted(set((1,16,30,40,61,74,88,160)))
+    if lessons is not None:
+        nums=sorted(set(int(n) for n in lessons))
+        if not nums or any(n<1 or n>160 for n in nums):
+            raise ValueError("Lesson numbers must be in 1..160")
+    else:
+        nums=list(range(1,161)) if all_lessons else sorted(set((1,16,30,40,61,74,88,160)))
     results=[]
     env=_load_native_pdf_function()
     target=OUTPUT/f"year{year}"
@@ -198,5 +203,15 @@ if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--year",type=int,required=True,choices=range(2,7))
     ap.add_argument("--all",action="store_true")
+    ap.add_argument("--lessons",type=str,default="",
+                    help="Comma-separated Lesson numbers; selects only those sources")
     args=ap.parse_args()
-    run(args.year,all_lessons=args.all)
+    if args.all and args.lessons:
+        ap.error("Use --all OR --lessons, not both")
+    selected=None
+    if args.lessons:
+        try:
+            selected=[int(n.strip()) for n in args.lessons.split(",")]
+        except ValueError:
+            ap.error("--lessons must be comma-separated integers")
+    run(args.year,all_lessons=args.all,lessons=selected)
