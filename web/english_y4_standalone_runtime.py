@@ -54,7 +54,7 @@ _QA_STATUS = re.compile(r"(?im)^\*\*QA status:\*\*\s*([^\n]+)")
 _METADATA = re.compile(r"(?im)^\*\*([^*:\n]{1,70}):\*\*\s*([^\n]+)")
 _SECTION = re.compile(r"(?m)^##\s+([^\n]+)\s*$")
 _MARKER = re.compile(
-    r"(?im)^\*\*(?:SOW(?: reference| source)?|Source(?: mapping| verification)?|"
+    r"(?im)^\*\*(?:PBD|SOW(?: reference| source)?|Source(?: mapping| verification)?|"
     r"References|Resources|Audio(?: source| file integrity)?|"
     r"Workbook|Differentiation|QA status):\*\*"
 )
@@ -171,6 +171,12 @@ def load_release_candidate(number, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDE
     clean_source = raw[:status.start()]
     header = clean_source.split("\n## ", 1)[0]
     meta = _metadata(header)
+    # PBD and differentiation sometimes follow Closure as standalone fields.
+    # Read those fields as metadata, not as part of the Closure phase.
+    footer_meta = _metadata(clean_source)
+    for key in ("pbd", "differentiation"):
+        if footer_meta.get(key):
+            meta[key] = footer_meta[key]
     main = meta.get("main sk/sp") or meta.get("main sp") or ""
     comp = meta.get("complementary sk/sp") or meta.get("complementary sp") or ""
     main_codes, comp_codes = _LS_CODE.findall(main), _LS_CODE.findall(comp)
@@ -250,8 +256,9 @@ def adapt_rows(state, rows, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDEX):
     activities.append("Reinforcement / PBD\n" + steps["pbd"])
     result["AKTIVITI UTAMA"] = "\n\n".join(activities)
     result["PENUTUP"] = steps["closure"]
-    if steps.get("differentiation"):
-        result["PEMULIHAN / PENGAYAAN"] = steps["differentiation"]
+    differentiation = steps.get("differentiation") or meta.get("differentiation")
+    if differentiation:
+        result["PEMULIHAN / PENGAYAAN"] = _plain(differentiation)
     # Only lesson-content fields change. Preserve teacher-entered time, class,
     # attendance, date and the existing credit/entitlement transaction path.
     return result
