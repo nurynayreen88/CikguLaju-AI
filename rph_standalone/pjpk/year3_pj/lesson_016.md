@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Putaran Semangat" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik gimnastik:** Guru tunjuk penjajaran badan, tapak sokongan dan cara keluar daripada gerakan dengan selamat. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.7.4.
+**Aktiviti 1 — Teknik khusus:** Guru menunjukkan balingan bola lembut dengan tangan lurus mengikut arah putaran jam, penjajaran kaki dan zon pelepasan. Murid berlatih putaran badan tanpa objek dahulu dan mengenal pasti titik lepasan sebelum percubaan balingan.
 
-**Aktiviti 2 — Amali khusus:** Murid menguasai posisi asas di atas tilam melalui tahap mudah sebelum mencuba variasi yang dibenarkan. Permainan memadang ubah suai: murid menerima bola lembut, memutar badan dan membuat hantaran ke sasaran berbeza. Banding putaran dengan dan tanpa langkah kaki; bertukar peranan dengan jarak selamat. Secara berpasangan, seorang melaksanakan gerakan dan seorang menilai kedudukan sokongan serta kestabilan; guru mengawasi secara langsung.
+**Aktiviti 2 — Aplikasi:** Murid secara bergilir membuat dua balingan objek busa ke zon sasaran selepas putaran terkawal. Pasangan memerhati arah putaran, langkah kaki serta kawalan objek; murid membandingkan hasil dua cubaan dan menyenaraikan kemahiran pukul serta memadang yang dipraktikkan.
 
-**Pengukuhan/PBD:** Senarai semak: putaran badan dan langkah kaki seimbang, hantaran tepat selepas putaran, serta sebab memilih arah hantaran. Bukti kefahaman (soal jawab): Mengapa langkah kaki membantu hantaran selepas putaran? Guru turut mencatat amalan SP 5.1.2.
+**Pengukuhan/PBD:** Guru merekod keselarasan arah putaran jam, kedudukan kaki dan pelepasan objek serta murid menyebut dua kemahiran kategori pukul dan memadang mengikut SP 2.7.4. Nilai pengurusan giliran dan alat SP 5.1.2.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** tilam gimnastik, penanda ruang, kad teknik; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Gunakan tilam dan pengawasan langsung; elak memaksa posisi songsang, leher atau pendaratan berisiko.
+**BBM:** Bola busa atau pundi kacang, kon zon balingan, kad arah pusingan jam; buku teks PdP 016.
+**Keselamatan/inklusif:** Hanya seorang membuat balingan ke satu arah pada satu masa; semua murid di luar zon pelepasan dan kutip objek hanya selepas arahan.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

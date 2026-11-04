@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Kami Sentiasa Bergerak" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.6.2.
+**Aktiviti 1 — Teknik khusus:** Guru memperagakan dua pergerakan meniru haiwan pada satah mendatar (contohnya merangkak seperti kucing atau ketam) dan pergerakan menegak yang sesuai keupayaan (contohnya meregang tinggi seperti zirafah). Murid mengenal pasti arah dan satah gerak sebelum mencuba.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Aplikasi:** Murid memilih dua kad haiwan lalu membina laluan pendek: gerakan mendatar di atas ruang lapang dan gerakan menegak tanpa alat tinggi. Dalam dua giliran, rakan menyemak postur, koordinasi serta perbezaan satah pergerakan haiwan.
 
-**Pengukuhan/PBD:** Guru merekod ketepatan lakuan, penggunaan ruang, respons bimbingan melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.5.2. Guru turut mencatat amalan SP 5.1.5, 5.2.1.
+**Pengukuhan/PBD:** Guru memerhati sekurang-kurangnya satu pergerakan haiwan pada setiap satah mendatar dan menegak, murid menerangkan perbezaan satah serta menghormati ruang rakan mengikut SP 5.1.5 dan 5.2.1.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Kad gambar haiwan, tikar senaman nipis jika perlu, penanda ruang; buku teks PdP 021.
+**Keselamatan/inklusif:** Gunakan pergerakan di aras lantai; jangan memanjat atau meniru aksi haiwan yang berisiko. Sediakan pilihan tanpa menampung berat badan pada tangan.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

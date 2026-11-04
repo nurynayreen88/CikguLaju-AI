@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Hantaran Pantas (pengukuhan)" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik larian:** Guru tunjuk aksi tangan dan kaki serta garis mula, arah larian dan zon berhenti. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.5.1.
+**Aktiviti 1 — Teknik khusus:** Guru memperagakan hantaran bola menggunakan tangan, kaki dan alatan yang dibenarkan, dengan perhatian kepada kaki sokongan, arah bola dan kesediaan penerima. Murid berlatih menerima dan menghantar bola busa dari jarak dekat menggunakan cara yang ditetapkan.
 
-**Aktiviti 2 — Amali khusus:** Murid berlatih larian jarak pendek mengikut ritma atau arah yang ditetapkan, berehat antara cubaan. Permainan 3 lawan 3 di ruang bertanda: murid bergerak mencari ruang kosong, melakukan hantaran tepat kepada rakan dan mengubah kedudukan selepas menghantar. Pasukan lawan cuba memintas tanpa sentuhan fizikal. Ulang dengan pertukaran peranan. Pasangan menjalankan tugasan perubahan tempo/arah dan mencatat ketepatan teknik tanpa membandingkan kelajuan antara murid.
+**Aktiviti 2 — Aplikasi:** Pasukan kecil menjalankan permainan 3 lawan 3 tanpa kontak fizikal. Selepas membuat hantaran, murid bergerak mencari ruang kosong untuk menerima semula; peranan dan cara hantaran ditukar pada pusingan kedua. Rakan mencatat ketepatan hantaran serta keputusan bergerak selepas menghantar.
 
-**Pengukuhan/PBD:** Senarai semak: hantaran sampai kepada rakan, bergerak ke ruang kosong selepas menghantar, mengelak pintasan dan bekerjasama mengikut peraturan. Bukti kefahaman (soal jawab): Apakah tindakan selepas menghantar untuk mengelak pintasan? Guru turut mencatat amalan SP 5.4.1.
+**Pengukuhan/PBD:** Senarai semak: hantaran sampai kepada penerima menggunakan kaedah yang selamat, murid mencari ruang selepas menghantar, menerima bola terkawal dan menerangkan satu faktor yang mempengaruhi hantaran; catat pematuhan SP 5.4.1.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, penanda laluan, baton jika sesuai; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Laluan tidak bersilang; pemerhatian tanpa memaksa murid berlari melebihi kemampuan.
+**BBM:** Bola busa, kon pembahagi ruang, alatan hantaran lembut yang sesuai dan kad isyarat giliran; buku teks PdP 008.
+**Keselamatan/inklusif:** Tiada terjahan atau sentuhan badan; hanya hantaran terkawal mengikut giliran dan alat yang diluluskan guru.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

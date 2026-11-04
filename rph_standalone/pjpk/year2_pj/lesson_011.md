@@ -10,15 +10,15 @@
 
 **Set induksi:** Guru mengemukakan cabaran "Hantaran Cemerlang" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
 
-**Aktiviti 1 — Teknik kemahiran permainan:** Guru tunjuk pegangan/alatan, arah hantaran dan posisi badan sebelum memberi isyarat mula. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.4.4.
+**Aktiviti 1 — Teknik khusus:** Guru memperagakan menadah tangan dan menarik sedikit kedua-dua tangan ke arah badan sewaktu menerima bola bagi menyerap daya. Murid cuba menerima bola busa yang dihantar perlahan dari jarak dekat dengan kaki stabil dan mata memandang bola.
 
-**Aktiviti 2 — Amali khusus:** Murid melakukan latihan pasangan dengan bola lembut: tindakan asas diulang pada jarak dekat, kemudian tambah pergerakan. Kumpulan kecil menggunakan kemahiran dalam permainan ubah suai tanpa sentuhan; rakan merekod teknik dan keputusan taktikal.
+**Aktiviti 2 — Aplikasi:** Pasangan bertukar peranan penghantar dan penangkap pada jarak bertahap, dengan dua cubaan menangkap bola lembut secara serapan daya. Rakan menyemak bola tidak melantun jauh, siku fleksi dan murid dapat menjelaskan mengapa tangan digerakkan ke belakang ketika menyambut.
 
-**Pengukuhan/PBD:** Guru merekod kawalan alatan/bola, posisi, ketepatan keputusan melalui senarai semak individu (2 cubaan); murid menjawab satu soalan berkaitan SP 2.3.1. Guru turut mencatat amalan SP 5.3.1.
+**Pengukuhan/PBD:** Guru merekod dua tangkapan dengan serapan daya: pandangan, kedudukan tangan/siku, kawalan bola dan satu penjelasan bagaimana daya mempengaruhi gerakan objek. Nilai amalan menerima maklum balas SP 5.3.1.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** bola lembut, kon, penanda sasaran, alatan permainan jika relevan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan zon selamat, jarak antara pasangan dan larangan kontak badan berbahaya.
+**BBM:** Bola busa ringan, kon jarak pasangan, kad langkah menerima bola; buku teks PdP 011.
+**Keselamatan/inklusif:** Gunakan bola ringan, hantaran paras dada atau lebih rendah; jarakkan pasangan dan hentikan hantaran jika penerima belum bersedia.
 
 **Jejak audit:** [RPT PJ Tahun 2 2027](https://docs.google.com/document/d/1nOnaS3O9IBk-ZNcDGRUBtU8k2FCUnOGh1m8WU0ZgSDs/edit) · [DSKP PJPK Tahun 2](https://drive.google.com/file/d/1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
