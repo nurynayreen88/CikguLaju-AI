@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 099
 
-**ID:** BM4-P099  
-**Minggu RPT 2027:** M23 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U16: Kehebatan Sains  
-**Tajuk aktiviti:** Kuasa Kentang  
-**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 112  
-**Fokus:** tulisan — Kuasa Kentang  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Kuasa Kentang' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P099
+**Minggu RPT 2027:** M23 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U16: Kehebatan Sains
+**Tajuk aktiviti:** Kuasa Kentang
+**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.
+**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 112. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** pameran Kuasa Kentang oleh Zara dan kelasnya, dengan rangka karangan pendahuluan, tiga isi dan penutup berkaitan litar LED.
+**Objektif PdP:** Pada akhir PdP, murid dapat menghasilkan draf lima bahagian serta karangan ringkas berdasarkan gambar dan frasa pameran Kuasa Kentang.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kuasa Kentang' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U16: Kehebatan Sains.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Kuasa Kentang dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Kuasa Kentang.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Kuasa Kentang' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis draf dan menghasilkan penulisan imaginatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Kuasa Kentang'.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca rangka pameran BT m/s 112 tentang menyediakan bahan, memasang litar, LED menyala dan sambutan penonton
+**Murid:** Padankan gambar kepada pendahuluan, isi 1–3 serta penutup
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan cara menulis ayat berdasarkan frasa tanpa mengubah fokus kepada eksperimen Sains sebenar
+**Murid:** Tulis draf lima bahagian dan karangan pendek dengan urutan aktiviti pameran yang tepat
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak struktur karangan, kesinambungan peristiwa, ejaan dan tanda baca
+**Murid:** Baiki dua ayat supaya draf dan karangan saling selaras
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Kuasa Kentang' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 3.3.1 melalui bukti yang ditemui pada BT m/s 112.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Kuasa Kentang.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 112 memuatkan rangka karangan Kuasa Kentang pendahuluan, isi 1–3, penutup dan SP 3.3.1.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

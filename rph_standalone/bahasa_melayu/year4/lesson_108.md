@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 108
 
-**ID:** BM4-P108  
-**Minggu RPT 2027:** M25 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita  
-**Tajuk aktiviti:** Kit Penanaman Mudah Alih  
-**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.  
-**Standard Pembelajaran (SP):** 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 121  
-**Fokus:** lisan — Kit Penanaman Mudah Alih  
-**Objektif PdP:** Murid dapat menceritakan semula perkara yang didengar, ditonton atau dibaca berkaitan 'Kit Penanaman Mudah Alih' dengan sekurang-kurangnya tiga isi/peristiwa tersusun serta sebutan dan intonasi yang jelas.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P108
+**Minggu RPT 2027:** M25 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita
+**Tajuk aktiviti:** Kit Penanaman Mudah Alih
+**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
+**Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 121. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** dialog Zara dan ayah tentang kit penanaman mudah alih, tangki larutan nutrien, kapas, biji benih dan pam air.
+**Objektif PdP:** Pada akhir PdP, murid dapat mendengar arahan ayah serta menyebut semula sekurang-kurangnya empat langkah memasang kit dengan sebutan yang tepat.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kit Penanaman Mudah Alih' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Kit Penanaman Mudah Alih dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Kit Penanaman Mudah Alih.
 
-## Aktiviti 1 — Susun jalan cerita (15 minit)
-**Guru:** Menyampaikan bahan bertajuk 'Kit Penanaman Mudah Alih' (teks/audio/gambar sesuai sumber); memodelkan urutan permulaan, perkembangan dan pengakhiran serta intonasi yang sesuai SP.
-**Murid:** Mendengar, membaca atau meneliti bahan; menyusun sekurang-kurangnya tiga isi/peristiwa mengikut urutan berdasarkan bukti bahan.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid mendengar bacaan dua situasi dialog BT m/s 121 dan mengenal pasti kata arahan tentang tangki, benih, saluran serta suis pam
+**Murid:** Dengar dan catat empat langkah kerja kit penanaman mudah alih
 
-## Aktiviti 2 — Persembahan cerita (20 minit)
-**Guru:** Membimbing murid bercerita dengan kad urutan; memberikan maklum balas tentang sebutan, intonasi, gaya dan kesinambungan isi.
-**Murid:** Bercerita semula secara bergilir tentang 'Kit Penanaman Mudah Alih' menggunakan tiga isi/peristiwa serta intonasi dan gaya yang sesuai; rakan mencatat satu kekuatan dan cadangan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing lakonan Zara–ayah dan cara menyebut semula arahan tanpa mengubah susunan penting
+**Murid:** Ujarkan semula empat langkah dan lakonkan dialog berpasangan
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Mentaksir persembahan setiap murid melalui senarai semak: tiga isi tersusun, sebutan jelas dan intonasi/gaya tepat mengikut SP (1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai). Beri peluang persembahan semula sebagai pemulihan.
-**Murid:** Menyampaikan ringkasan lisan dan membaiki satu aspek sebutan, urutan atau intonasi selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan ujaran yang diulang, sebutan serta urutan dalam dialog
+**Murid:** Baiki satu arahan yang tersalah turutan
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Kit Penanaman Mudah Alih' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 1.1.1 melalui bukti yang ditemui pada BT m/s 121.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Kit Penanaman Mudah Alih.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 121 mencetak SP 1.1.1 dan arahan mendengar, menyebut semula serta melakonkan dialog; RPT terdahulu tersilap SP 1.3.2.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

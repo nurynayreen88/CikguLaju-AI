@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 100
 
-**ID:** BM4-P100  
-**Minggu RPT 2027:** M24 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U16: Kehebatan Sains  
-**Tajuk aktiviti:** : Boleh Saya Bantu, Ibu?  
-**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 113  
-**Fokus:** tatabahasa — : Boleh Saya Bantu, Ibu?  
-**Objektif PdP:** Murid dapat membina dua ayat tunggal dan dua ayat majmuk bertema ': Boleh Saya Bantu, Ibu?', termasuk peluasan subjek atau predikat apabila disyaratkan dalam SP.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P100
+**Minggu RPT 2027:** M24 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U16: Kehebatan Sains
+**Tajuk aktiviti:** Boleh Saya Bantu, Ibu?
+**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.
+**Standard Pembelajaran (SP):** 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 113. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** situasi Zara dan Puan Zurah menyelesaikan masalah singki tersumbat dengan bahan bacaan Internet; latihan ayat majmuk menggunakan tetapi, dan, untuk, sambil serta manakala.
+**Objektif PdP:** Pada akhir PdP, murid dapat menggabungkan sekurang-kurangnya empat pasangan ayat tunggal menjadi ayat majmuk menggunakan kata hubung yang ditetapkan.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi ': Boleh Saya Bantu, Ibu?' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U16: Kehebatan Sains.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Boleh Saya Bantu, Ibu? dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Boleh Saya Bantu, Ibu?.
 
-## Aktiviti 1 — Analisis binaan ayat (15 minit)
-**Guru:** Menunjukkan contoh ayat daripada bahan ': Boleh Saya Bantu, Ibu?' dan menjelaskan perbezaan ayat tunggal, ayat majmuk serta bahagian subjek dan predikat.
-**Murid:** Mengelaskan sekurang-kurangnya empat ayat mengikut struktur; menandakan subjek, predikat dan kata hubung yang berkaitan.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca situasi singki tersumbat BT m/s 113 dan contoh dua ayat disambungkan dengan 'tetapi'
+**Murid:** Bezakan idea setiap ayat tunggal dan fungsi tetapi, dan, untuk, sambil, manakala
 
-## Aktiviti 2 — Bina dan peluaskan ayat (20 minit)
-**Guru:** Menyediakan rangka ayat berkaitan ': Boleh Saya Bantu, Ibu?'; membimbing murid membina dan meluaskan subjek/predikat atau menggabungkan klausa dengan betul.
-**Murid:** Membina dua ayat tunggal dan dua ayat majmuk bertema ': Boleh Saya Bantu, Ibu?', menyatakan bentuk peluasan yang dibuat serta menyemak ayat dengan pasangan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan satu ayat majmuk dan bimbing latihan empat pasangan ayat yang disediakan
+**Murid:** Tulis empat ayat majmuk yang gramatis menggunakan kata hubung yang betul
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menanda empat ayat: struktur tunggal/majmuk, hubungan subjek-predikat dan penggunaan peluasan mengikut SP (5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks).
-**Murid:** Membetulkan satu ayat yang tidak gramatis serta menerangkan pembetulannya.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan fakta, kata hubung dan tiada pengulangan subjek yang janggal
+**Murid:** Baiki dua ayat majmuk yang kurang lancar
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam ': Boleh Saya Bantu, Ibu?' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 5.3.1 melalui bukti yang ditemui pada BT m/s 113.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Boleh Saya Bantu, Ibu?.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 113 mencetak SP 5.3.1 dan latihan membina ayat majmuk untuk situasi singki tersumbat; RPT lama mempunyai tanda titik bertindih di hadapan tajuk.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

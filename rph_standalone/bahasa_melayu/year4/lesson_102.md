@@ -1,42 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 102
 
-**ID:** BM4-P102  
-**Minggu RPT 2027:** M24 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U17: Teknologi dalam Kehidupan  
-**Tajuk aktiviti:** Tempat Letak Kereta Mesra Pengguna + PKJR  
-**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.  
-**Standard Pembelajaran (SP):** 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 115  
-**Fokus:** lisan — Tempat Letak Kereta Mesra Pengguna  
-**Objektif PdP:** Murid dapat menceritakan semula perkara yang didengar, ditonton atau dibaca berkaitan 'Tempat Letak Kereta Mesra Pengguna + PKJR' dengan sekurang-kurangnya tiga isi/peristiwa tersusun serta sebutan dan intonasi yang jelas.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P102
+**Minggu RPT 2027:** M24 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U17: Teknologi dalam Kehidupan
+**Tajuk aktiviti:** Tempat Letak Kereta Mesra Pengguna + PKJR
+**Standard Kandungan (SK):** 1.3 Bercerita, dan menceritakan perkara yang didengar, ditonton dan dibaca dengan sebutan dan intonasi yang betul.
+**Standard Pembelajaran (SP):** 1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 115. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** Zara menonton semula rakaman video sistem tempat letak kereta pintar di pasar raya: papan elektronik, lampu merah/hijau dan pengesanan ruang kosong.
+**Objektif PdP:** Pada akhir PdP, murid dapat menceritakan fungsi tiga komponen tempat letak kereta pintar berdasarkan gambar dengan sebutan serta intonasi yang sesuai.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tempat Letak Kereta Mesra Pengguna' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U17: Teknologi dalam Kehidupan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Tempat Letak Kereta Mesra Pengguna + PKJR dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Tempat Letak Kereta Mesra Pengguna + PKJR.
 
-## Aktiviti 1 — Susun jalan cerita (15 minit)
-**Guru:** Menyampaikan bahan bertajuk 'Tempat Letak Kereta Mesra Pengguna + PKJR' (teks/audio/gambar sesuai sumber); memodelkan urutan permulaan, perkembangan dan pengakhiran serta intonasi yang sesuai SP.
-**Murid:** Mendengar, membaca atau meneliti bahan; menyusun sekurang-kurangnya tiga isi/peristiwa mengikut urutan berdasarkan bukti bahan.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid mengamati gambar rakaman tempat letak kereta BT m/s 115 dan mengenal pasti papan bilangan ruang, lampu merah dan hijau
+**Murid:** Catat tiga peristiwa atau ciri yang muncul pada gambar
 
-## Aktiviti 2 — Persembahan cerita (20 minit)
-**Guru:** Membimbing murid bercerita dengan kad urutan; memberikan maklum balas tentang sebutan, intonasi, gaya dan kesinambungan isi.
-**Murid:** Bercerita semula secara bergilir tentang 'Tempat Letak Kereta Mesra Pengguna + PKJR' menggunakan tiga isi/peristiwa serta intonasi dan gaya yang sesuai; rakan mencatat satu kekuatan dan cadangan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan urutan penceritaan daripada memasuki parkir hingga mencari ruang kosong
+**Murid:** Ceritakan fungsi sistem parkir pintar secara lisan kepada pasangan dengan sebutan betul
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Mentaksir persembahan setiap murid melalui senarai semak: tiga isi tersusun, sebutan jelas dan intonasi/gaya tepat mengikut SP (1.3.2 — Menceritakan sesuatu bahan yang ditonton dengan sebutan dan intonasi yang sesuai). Beri peluang persembahan semula sebagai pemulihan.
-**Murid:** Menyampaikan ringkasan lisan dan membaiki satu aspek sebutan, urutan atau intonasi selepas maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan maklumat berdasarkan bahan, turutan cerita serta intonasi
+**Murid:** Betulkan satu gambaran yang tidak ditunjukkan pada gambar
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Tempat Letak Kereta Mesra Pengguna' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 1.3.2 melalui bukti yang ditemui pada BT m/s 115.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Tempat Letak Kereta Mesra Pengguna + PKJR.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 115 memaparkan Zara menonton semula rakaman video sistem parkir elektronik dan arahan bercerita berdasarkan gambar (SP 1.3.2).
+**Kawalan PKJR:** Penanda PKJR atau EMK tidak mengesahkan modul PKJR khusus; jangan cipta kod HP/BAM atau langkah rasmi tanpa sumber asal.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 092
 
-**ID:** BM4-P092  
-**Minggu RPT 2027:** M22 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan  
-**Tajuk aktiviti:** Kemudahan untuk Insan Istimewa  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.2 (i) — Memahami dan menggunakan kata majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 105  
-**Fokus:** tatabahasa — Kemudahan untuk Insan Istimewa  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Kemudahan untuk Insan Istimewa'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P092
+**Minggu RPT 2027:** M22 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan
+**Tajuk aktiviti:** Kemudahan untuk Insan Istimewa
+**Standard Kandungan (SK):** 5.3 Memahami dan membina ayat mengikut konteks.
+**Standard Pembelajaran (SP):** 5.3.1 — Memahami dan membina pelbagai ayat tunggal dan ayat majmuk mengikut konteks
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 105. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** brosur Kemudahan untuk Insan Istimewa yang menyenaraikan lif khas, pengangkutan awam, diskaun dan tandas OKU.
+**Objektif PdP:** Pada akhir PdP, murid dapat menyusun empat kumpulan perkataan menjadi ayat tunggal dengan satu subjek dan satu predikat.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kemudahan untuk Insan Istimewa' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Kemudahan untuk Insan Istimewa dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Kemudahan untuk Insan Istimewa.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Kemudahan untuk Insan Istimewa'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata majmuk mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Kemudahan untuk Insan Istimewa'.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid meneliti dua contoh susunan ayat tunggal dalam BT m/s 105 dan membezakan subjek daripada predikat
+**Murid:** Kenal pasti subjek serta predikat pada ayat contoh 'Orang Kurang Upaya menggunakan lif khas'
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Kemudahan untuk Insan Istimewa' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing pembinaan semula empat kumpulan perkataan bercampur tentang kemudahan untuk OKU
+**Murid:** Tulis empat ayat tunggal lengkap dan tandakan subjek-predikat bagi dua ayat
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.2 (i) — Memahami dan menggunakan kata majmuk mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak sama ada setiap ayat memiliki satu subjek dan satu predikat serta makna yang tepat
+**Murid:** Susun semula dua ayat yang belum gramatis
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Kemudahan untuk Insan Istimewa' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 5.3.1 melalui bukti yang ditemui pada BT m/s 105.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Kemudahan untuk Insan Istimewa.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 105 jelas mencetak SP 5.3.1 dan latihan menyusun perkataan menjadi ayat tunggal, bukan kata majmuk SP 5.2.2(i).
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

@@ -1,42 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 109
 
-**ID:** BM4-P109  
-**Minggu RPT 2027:** M25 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita  
-**Tajuk aktiviti:** Mesin Lipat Pakaian + PKJR  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 107  
-**Fokus:** bacaan — Mesin Lipat Pakaian  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Mesin Lipat Pakaian' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P109
+**Minggu RPT 2027:** M25 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita
+**Tajuk aktiviti:** Mesin Lipat Pakaian + PKJR
+**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
+**Standard Pembelajaran (SP):** 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 122. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** berita Johor Bahru tentang mesin lipat pakaian robotik yang juga menyeterika wap dan melipat pakaian.
+**Objektif PdP:** Pada akhir PdP, murid dapat membaca petikan berita dengan gaya penyampai yang sesuai serta menyatakan sekurang-kurangnya empat ciri mesin berpandukan teks.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Mesin Lipat Pakaian' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U18: Inovasi untuk Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Mesin Lipat Pakaian + PKJR dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Mesin Lipat Pakaian + PKJR.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Mesin Lipat Pakaian' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Mesin Lipat Pakaian' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca tajuk dan perenggan berita BT m/s 122 tentang fungsi lipat, seterika wap, penyepit serta pewangi
+**Murid:** Garis empat ciri mesin yang benar-benar dinyatakan dalam berita
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan bacaan berita dengan sebutan, tekanan suara dan jeda sesuai
+**Murid:** Baca dua perenggan seolah-olah penyampai berita dan bentangkan empat fakta
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan fakta berita serta intonasi dan gaya persembahan
+**Murid:** Baiki satu fakta yang tidak disokong dan baca semula
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Mesin Lipat Pakaian' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 2.3.2 melalui bukti yang ditemui pada BT m/s 122.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Mesin Lipat Pakaian + PKJR.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
-
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 122 memuatkan berita Mesin Lipat Pakaian Jadi Tumpuan dan SP 2.3.2; rujukan lama RPT m/s 107 sebenarnya petikan Mat Kilau.
+**Kawalan PKJR:** Penanda PKJR atau EMK tidak mengesahkan modul PKJR khusus; jangan cipta kod HP/BAM atau langkah rasmi tanpa sumber asal.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

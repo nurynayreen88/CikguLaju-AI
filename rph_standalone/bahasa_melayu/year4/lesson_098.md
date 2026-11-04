@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 098
 
-**ID:** BM4-P098  
-**Minggu RPT 2027:** M23 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Sains, Teknologi dan Inovasi; U16: Kehebatan Sains  
-**Tajuk aktiviti:** Balai Cerap di Rumah  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 111  
-**Fokus:** bacaan — Balai Cerap di Rumah  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Balai Cerap di Rumah' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P098
+**Minggu RPT 2027:** M23 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Sains, Teknologi dan Inovasi; U16: Kehebatan Sains
+**Tajuk aktiviti:** Balai Cerap di Rumah
+**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
+**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 111. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** rencana Balai Cerap di Rumah mengenai Profesor Dr. Mahamarowi Omar, lokasi Kubang Rawa/Salor, teleskop dan impian memupuk minat astronomi.
+**Objektif PdP:** Pada akhir PdP, murid dapat menganalisis rencana dan melengkapkan empat komponen fakta iaitu pemilik, lokasi, peralatan serta impian.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Balai Cerap di Rumah' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Sains, Teknologi dan Inovasi; U16: Kehebatan Sains.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Balai Cerap di Rumah dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Balai Cerap di Rumah.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Balai Cerap di Rumah' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Balai Cerap di Rumah' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing bacaan rencana BT m/s 111 dan tunjuk cara mencari nama, tempat, jenis peralatan dan tujuan balai cerap
+**Murid:** Garis fakta pemilik, lokasi, binokular/teleskop serta tujuan memupuk ilmu astronomi
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Paparkan kerangka catatan kategori 'Pemilik', 'Lokasi', 'Peralatan' dan 'Impian'
+**Murid:** Isi keempat-empat kategori dan terangkan kandungan rencana dalam ayat sendiri
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak fakta serta hubungan kategori dengan maklumat rencana, tanpa mereka penemuan astronomi
+**Murid:** Baiki dua fakta yang tercampur dan berikan satu ringkasan
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Balai Cerap di Rumah' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 2.3.1 melalui bukti yang ditemui pada BT m/s 111.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Balai Cerap di Rumah.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 111 menyediakan rencana balai cerap Profesor Dr. Mahamarowi dan peta maklumat pemilik/lokasi/peralatan/impian untuk analisis (SP 2.3.1).
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.

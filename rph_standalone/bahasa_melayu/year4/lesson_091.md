@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 091
 
-**ID:** BM4-P091  
-**Minggu RPT 2027:** M22 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan  
-**Tajuk aktiviti:** Pemuda Harapan Bangsa, Pemudi Tiang Negara  
-**Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.  
-**Standard Pembelajaran (SP):** 4.3.1 — Mengubah suai puisi secara berpandu, dan mempersembahkannya secara kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 104  
-**Fokus:** seni — Pemuda Harapan Bangsa, Pemudi Tiang Negara  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Pemuda Harapan Bangsa, Pemudi Tiang Negara' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P091
+**Minggu RPT 2027:** M22 (tarikh sebenar ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan
+**Tajuk aktiviti:** Pemuda Harapan Bangsa, Pemudi Tiang Negara
+**Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.
+**Standard Pembelajaran (SP):** 4.3.1 — Mengubah suai puisi secara berpandu, dan mempersembahkannya secara kreatif
+**Sumber:** Buku Teks Bahasa Melayu Tahun 4 SK m/s 104. **Buku Aktiviti:** halaman dan latihan belum disahkan.
+**Fokus daripada BT:** sajak Pemuda Harapan Bangsa, Pemudi Tiang Negara dengan perkataan berwarna untuk pengubahsuaian dan rangkap berstruktur.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengubah suai satu rangkap sajak secara berpandu dan mendeklamasikannya dengan sebutan serta intonasi yang sesuai.
+**Bahan:** Buku Teks asal, gambar atau petikan mengikut halaman, bahan latihan berasaskan tugasan sumber dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pemuda Harapan Bangsa, Pemudi Tiang Negara' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar tajuk atau ilustrasi Pemuda Harapan Bangsa, Pemudi Tiang Negara dari Buku Teks; hubungkan dengan pengalaman murid.
+**Murid:** Berikan satu maklumat awal atau jangkaan yang relevan dengan ilustrasi Pemuda Harapan Bangsa, Pemudi Tiang Negara.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Pemuda Harapan Bangsa, Pemudi Tiang Negara'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Pemuda Harapan Bangsa, Pemudi Tiang Negara' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Analisis Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca sajak BT m/s 104 dan mengecam perkataan berwarna untuk diubah suai tanpa menukar mesej patriotik
+**Murid:** Kenal pasti pilihan perkataan tentang usaha, cabaran dan kejayaan yang sesuai diganti
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan satu pertukaran perkataan dan cara deklamasi; bimbing murid menyusun rangkap versi baharu
+**Murid:** Ubah suai satu rangkap berpandukan teks dan deklamasikannya secara berpasangan
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.3.1 — Mengubah suai puisi secara berpandu, dan mempersembahkannya secara kreatif) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Nilai ketepatan kata gantian, kelancaran deklamasi dan hubungan dengan makna asal
+**Murid:** Baiki satu frasa yang menyimpang dan ulang deklamasi
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Pemuda Harapan Bangsa, Pemudi Tiang Negara' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran 4.3.1 melalui bukti yang ditemui pada BT m/s 104.
+**Murid:** Nyatakan satu perkara yang telah dikuasai dan kaitkan dengan tugasan Pemuda Harapan Bangsa, Pemudi Tiang Negara.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus BT:** BT m/s 104 menyatakan SP 4.3.1 serta arahan mengubah suai perkataan berwarna dan mendeklamasikan sajak.
+**Status QA:** DRAF — padanan aktiviti/halaman BT, tajuk dan SP bagi PdP ini telah disemak; BA, takwim negeri, visual Word/PDF A4, PKJR jika berkaitan dan ujian Telegram belum lulus. Bukan FINAL READY.
