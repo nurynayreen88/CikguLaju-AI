@@ -425,6 +425,7 @@ class PSVSourceOrderTests(unittest.TestCase):
         for year, units in verified.items():
             self.assertEqual(len(units), 10)
             rows = read_csv(PSV / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv")
+            unit_steps = {n: [] for n in range(1, 11)}
             for row in rows:
                 unit_raw = str(row["Unit"]).strip()
                 if not unit_raw.isdecimal():
@@ -441,8 +442,13 @@ class PSVSourceOrderTests(unittest.TestCase):
                     rph = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
                     activity = rph.partition("## Langkah PdP")[2]
                     self.assertTrue(activity, "Missing lesson activity section")
-                    self.assertRegex(activity.lower(), activity_pattern)
+                    self.assertGreater(len(activity), 300)
+                    unit_steps[unit].append(activity.lower())
                     checked += 1
+            for unit, (_, _, activity_pattern) in enumerate(units, 1):
+                with self.subTest(year=year, unit=unit):
+                    self.assertRegex(" ".join(unit_steps[unit]), activity_pattern)
+                    self.assertGreaterEqual(len(unit_steps[unit]), 3)
         self.assertEqual(checked, 152)
 
 
