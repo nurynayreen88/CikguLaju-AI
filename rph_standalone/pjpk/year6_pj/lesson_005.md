@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.3.3 (melakukan kombinasi variasi guling depan dan guling belakang) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.3.1: Menjelaskan ketinggian yang sesuai untuk melakukan aksi semasa di atas trampolin dan triple roll.
 
-**Set induksi:** Guru menunjukkan cabaran "LOMPAT TIGA SERANGKAI" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru memaparkan susunan tiga murid bagi Lompat Tiga Serangkai: seorang berguling, dua lagi mengelak dengan lonjakan.
 
-**Aktiviti 1 — Gimnastik progresif:** Guru memperaga sokongan tapak tangan/kaki, perubahan pusat graviti dan cara turun dengan selamat; murid menandakan tiga titik kawalan pada kad teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.3.3.
+**Aktiviti 1 — Kemahiran khusus:** Murid melatih guling sisi rendah di tilam secara individu serta langkah melonjak rendah mengelak ruang menggunakan penanda, tanpa melintasi tubuh rakan.
 
-**Aktiviti 2 — Aplikasi:** Murid mempraktikkan posisi asas pada tilam bersama penyeliaan guru, kemudian cuba variasi berperingkat jika stabil; pasangan hanya memerhati dan memberi maklum balas. 
+**Aktiviti 2 — Kemahiran khusus:** Hanya jika guru terlatih, tilam dan penyokong mencukupi, murid menjalankan ansur maju urutan gerak tiga orang dengan jarak terkawal; tanpa syarat itu, gunakan kad simulasi sahaja.
 
-**Pengukuhan/PBD:** Guru menilai kestabilan, kedudukan tapak sokongan, kawalan pendaratan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.3.1 dan menerima maklum balas. Guru memerhati sikap SP 5.4.2. 
+**Pengukuhan/PBD:** Guru menyemak koordinasi guling-lonjak, susunan giliran, kawalan ruang dan pendaratan tanpa menyentuh murid lain.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** tilam gimnastik, penanda kawasan, kad teknik; peralatan khas hanya jika sekolah memilikinya.  
-**Keselamatan/inklusif:** Elakkan beban pada kepala/leher dan aksi songsang tanpa sokongan profesional; aktiviti trampolin/piramid perlu guru, alatan dan pengawasan sesuai.
+**BBM:** Tilam gimnastik, kad giliran tiga murid dan kon jarak selamat.
+**Keselamatan/inklusif:** Jangan benarkan lonjakan melintasi kepala/tubuh rakan tanpa pengawasan khusus; aktiviti berkumpulan berisiko tinggi.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

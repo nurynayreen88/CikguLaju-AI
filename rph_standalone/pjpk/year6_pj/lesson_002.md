@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.1.2 (melakukan imbangan statik formasi piramid secara berkumpulan lebih daripada tiga orang) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.1.2: Menjelaskan kesesuaian bentuk formasi piramid dengan bilangan ahli kumpulan.
 
-**Set induksi:** Guru menunjukkan cabaran "BERSATU TEGUH" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menunjukkan gambar imbangan piramid berkumpulan lebih tiga orang dan memperincikan lokasi tapak sokongan.
 
-**Aktiviti 1 — Gimnastik progresif:** Guru memperaga sokongan tapak tangan/kaki, perubahan pusat graviti dan cara turun dengan selamat; murid menandakan tiga titik kawalan pada kad teknik. Murid menunjukkan semula langkah asas berdasarkan SP 1.1.2.
+**Aktiviti 1 — Kemahiran khusus:** Murid membina model formasi piramid di atas kertas dan mengenal pusat graviti yang stabil.
 
-**Aktiviti 2 — Aplikasi:** Murid mempraktikkan posisi asas pada tilam bersama penyeliaan guru, kemudian cuba variasi berperingkat jika stabil; pasangan hanya memerhati dan memberi maklum balas. 
+**Aktiviti 2 — Kemahiran khusus:** Jika guru terlatih, tilam dan penyokong mencukupi, kumpulan mencuba formasi paling rendah dan selamat; jika tidak, murid menilai model tanpa amali berisiko.
 
-**Pengukuhan/PBD:** Guru menilai kestabilan, kedudukan tapak sokongan, kawalan pendaratan menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.1.2 dan menerima maklum balas. Guru memerhati sikap SP 5.4.5. 
+**Pengukuhan/PBD:** PBD kefahaman tapak sokongan, komunikasi kumpulan, kawalan imbangan dan amalan keselamatan.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** tilam gimnastik, penanda kawasan, kad teknik; peralatan khas hanya jika sekolah memilikinya.  
-**Keselamatan/inklusif:** Elakkan beban pada kepala/leher dan aksi songsang tanpa sokongan profesional; aktiviti trampolin/piramid perlu guru, alatan dan pengawasan sesuai.
+**BBM:** Kad formasi piramid, model kertas, tilam bagi sesi amali yang diluluskan.
+**Keselamatan/inklusif:** Jangan membenarkan murid memanjat bahu, leher atau formasi tinggi; guru kompeten wajib mengawasi.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.
