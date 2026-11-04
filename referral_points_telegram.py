@@ -237,10 +237,10 @@ def install(ns):
         if m:
             # _upsert_user persists the Telegram profile first, but does NOT
             # create cikgulaju_users. The referral FK and new-user timestamp
-            # require the existing credit initialization to run before the RPC.
+            # require the existing trial-user initialization to run before the RPC.
             ns["_upsert_user"](msg.get("from") or {}, uid)
             try:
-                ns["_ensure_user_credit"](uid)
+                ns["_ensure_trial_user"](uid)
                 result = sb("POST", "rpc/referral_capture_signup", json={
                     "p_referred_user_id": uid, "p_referral_code": m.group(1)
                 })
