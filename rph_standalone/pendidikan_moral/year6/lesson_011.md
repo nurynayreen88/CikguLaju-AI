@@ -17,7 +17,7 @@ Murid menghuraikan atau menilai berdasarkan **4.3: Menjelaskan kepentingan amala
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 4.3 (**Menjelaskan kepentingan amalan menghargai keunikan negara.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana ucapan terima kasih yang ikhlas memberi makna?**
+**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 4.3 (**Menjelaskan kepentingan amalan menghargai keunikan negara.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Mengapa kepelbagaian budaya dan warisan negara perlu dihargai oleh semua rakyat?**
 
 **Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 4.4 (**Mengekspresikan perasaan berkaitan dengan amalan menghargai keunikan negara.**). Guru semak hubungan alasan, emosi dan nilai.
 
@@ -27,4 +27,4 @@ Murid menghuraikan atau menilai berdasarkan **4.3: Menjelaskan kepentingan amala
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 4 buku teks mempunyai tajuk berbeza daripada SK 4.0 DSKP; aktiviti ini ialah cadangan berdasarkan SP 4.3–4.4, bukan padanan aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
