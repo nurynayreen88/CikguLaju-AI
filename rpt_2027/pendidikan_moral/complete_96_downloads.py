@@ -179,7 +179,7 @@ def build_rpt_pdf(year, group, destination):
     return dest
 
 
-COMBINED_RPT_PREFIX = "rpt2027_pm_pdf_"
+COMBINED_RPT_PREFIX = "rpt2027_pm_ab_pdf_"
 
 
 def combined_pdf_ready(year):

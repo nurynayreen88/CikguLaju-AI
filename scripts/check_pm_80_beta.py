@@ -179,15 +179,19 @@ def test_moral_menu_labels():
     buttons = {button.get("callback_data"): button.get("text")
                for row in (keyboard or []) for button in row}
     expected = {
-        "rpt2027_pm_96_a_2": "📥 Pendidikan Moral RPT (Kumpulan A)",
-        "rpt2027_pm_96_b_2": "📥 Pendidikan Moral RPT (Kumpulan B)",
-        "rpt2027_pm_rph54_pdf_2": "📥 RPH Moral Pengukuhan 54 Sesi (PDF)",
-        "rpt2027_pm_rph54_docx_2": "📥 RPH Moral Pengukuhan 54 Sesi (Word)",
+        "rpt2027_pm_ab_pdf_2": "📥 Pendidikan Moral (PDF)",
     }
     assert_true(all(buttons.get(key) == value for key, value in expected.items()),
-                "Moral 96 RPT / RPH buttons missing or incorrectly labelled")
-    assert_true("rpt2027_pm_pdf_2" not in buttons,
-                "Legacy Moral 42-session button should not be promoted as complete RPT")
+                "Moral combined A/B PDF button missing or incorrectly labelled")
+    forbidden = (
+        "rpt2027_pm_96_a_2", "rpt2027_pm_96_b_2",
+        "rpt2027_pm_rph54_pdf_2", "rpt2027_pm_rph54_docx_2",
+        "rpt2027_pm_pdf_2",  # Old 42-session Moral RPT callback
+    )
+    assert_true(all(key not in buttons for key in forbidden),
+                "Separate A/B, RPH, Word or old 42-session PDF promoted in RPT menu")
+    assert_true(sum(key.startswith("rpt2027_pm_") for key in buttons) == 1,
+                "More than one Moral file/button shown in RPT year menu")
     moral_lines = [line for line in heading.split("\n") if "Pendidikan Moral" in line]
     assert_true(bool(moral_lines) and all(
         not any(label in line.upper() for label in ("CADANGAN", "DRAF", "SEMAKAN GURU"))

@@ -90,7 +90,7 @@ def install(ns):
                             "callback_data": "rpt2027_pjpk_pdf_%d" % year}])
             if moral_combined_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Moral (PDF)",
-                            "callback_data": "rpt2027_pm_pdf_%d" % year}])
+                            "callback_data": "rpt2027_pm_ab_pdf_%d" % year}])
             if psv_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Seni Visual (PDF)",
                             "callback_data": "rpt2027_psv_pdf_%d" % year}])

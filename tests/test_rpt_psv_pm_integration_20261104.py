@@ -89,22 +89,22 @@ class PSVandMoralRPTTests(unittest.TestCase):
             "_telegram_delivery_ok_v25279":lambda result:result.ok}
         self.assertTrue(english.install(ns))
         self.assertTrue(moral_downloads.install(ns))
-        ns["callback"](1,"rpt2027_pm_pdf_2")
+        ns["callback"](1,"rpt2027_pm_ab_pdf_2")
         self.assertEqual(sent[-1][0],"message")
         self.assertIn("hanya untuk",sent[-1][1])
         self.assertFalse(any(x[0]=="pdf" for x in sent))
         state["paid"]=True
         ns["callback"](1,"rpt2027_year_2")
         menu=str(sent[-1][2])
-        self.assertEqual(menu.count("rpt2027_pm_pdf_2"),1)
+        self.assertEqual(menu.count("rpt2027_pm_ab_pdf_2"),1)
         self.assertNotIn("rpt2027_pm_96_a_2",menu)
         self.assertNotIn("rpt2027_pm_96_b_2",menu)
         self.assertNotIn("rpt2027_pm_rph54_docx_2",menu)
-        for callback in ("rpt2027_pm_pdf_2","rpt2027_pm_96_a_2","rpt2027_pm_96_b_2"):
+        for callback in ("rpt2027_pm_ab_pdf_2","rpt2027_pm_96_a_2","rpt2027_pm_96_b_2"):
             ns["callback"](1,callback)
             self.assertEqual(sent[-1][0],"pdf")
             self.assertEqual(sent[-1][1],"RPT_Pendidikan_Moral_Tahun_2_2027.pdf")
-        ns["callback"](1,"rpt2027_pm_pdf_9")
+        ns["callback"](1,"rpt2027_pm_ab_pdf_9")
         self.assertEqual(sent[-1][0],"message")
         self.assertIn("tidak sah",sent[-1][1])
         self.assertEqual(ns["callback"](1,"other"),("original","other"))
@@ -137,7 +137,7 @@ class PSVandMoralRPTTests(unittest.TestCase):
         ns["callback"](9,"rpt2027_year_2")
         menu=records[-1][2]
         names=str(menu)
-        for required in ("rpt2027_psv_pdf_2","rpt2027_pm_pdf_2","rpt2027_en_pdf_2"):
+        for required in ("rpt2027_psv_pdf_2","rpt2027_pm_ab_pdf_2","rpt2027_en_pdf_2"):
             self.assertIn(required,names)
         for hidden in ("rpt2027_pm_96_a_2","rpt2027_pm_96_b_2","rpt2027_pm_rph54_pdf_2","rpt2027_pm_rph54_docx_2"):
             self.assertNotIn(hidden,names)
