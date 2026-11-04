@@ -123,5 +123,26 @@ class PSVBridgeTests(unittest.TestCase):
             self.assertEqual(fake._rph_rows({}), {"safe": True})
 
 
+    def test_staging_entrypoint_import_with_stub_bot_remains_fail_closed(self):
+        """Exercise dedicated WSGI module import without importing real app or bots."""
+        import sys
+        import types
+        runtime = SimpleNamespace(_rph_rows=lambda state: {"native": "unchanged"})
+        original = runtime._rph_rows
+        stub = types.ModuleType("tools.run_telegram_with_curriculum_api")
+        stub.app = object()
+        stub.telegram_runtime = runtime
+        path = ROOT / "tools" / "psv_candidate_staging_entrypoint.py"
+        with patch.dict(os.environ, {psv.FLAG: "1"}):
+            with patch.dict(sys.modules, {"tools.run_telegram_with_curriculum_api": stub}):
+                entry_spec = importlib.util.spec_from_file_location("psv_staging_wsgi_smoke", path)
+                module = importlib.util.module_from_spec(entry_spec)
+                entry_spec.loader.exec_module(module)
+        self.assertIs(module.app, stub.app)
+        self.assertFalse(module.PSV_RPH_CANDIDATE_ACTIVE)
+        self.assertIs(runtime._rph_rows, original)
+        self.assertFalse(hasattr(runtime, "CIKGULAJU_PSV_RPH_BRIDGE_ACTIVE"))
+
+
 if __name__ == "__main__":
     unittest.main()
