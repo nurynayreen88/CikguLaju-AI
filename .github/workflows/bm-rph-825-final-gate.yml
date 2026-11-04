@@ -40,6 +40,8 @@ jobs:
             git add audits/bm_rph_2027_825_gate_20261104.json
             if ! git diff --cached --quiet; then
               git commit -m 'Audit 825 BM RPH against DSKP code inventory and RPT'
+              git fetch origin audit/bm-rph-final-readiness-20261104
+              git rebase origin/audit/bm-rph-final-readiness-20261104
               git push origin HEAD:audit/bm-rph-final-readiness-20261104
             fi
           fi
