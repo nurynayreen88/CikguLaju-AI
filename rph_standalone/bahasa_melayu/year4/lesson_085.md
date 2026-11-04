@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 085
 
-**ID:** BM4-P085  
-**Minggu RPT 2027:** M20 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku  
-**Tajuk aktiviti:** Idola di Litar  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 98  
-**Fokus:** tulisan — Idola di Litar  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Idola di Litar' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P085
+**Minggu RPT 2027:** M20 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku
+**Tajuk aktiviti:** Idola di Litar
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 98. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Biografi dalam Buku Teks tentang pelumba motosikal Malaysia Hafizh Syahrin dengan lima soalan pemahaman bertumpu dan bercapah.
+**Objektif PdP:** Pada akhir PdP, murid dapat menulis jawapan kepada sekurang-kurangnya empat soalan pemahaman serta menyertakan alasan bagi soalan bercapah.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Idola di Litar' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tajuk Idola di Litar dan kaitkan dengan semangat berusaha.
+**Murid:** Nyatakan satu sikap positif atlet.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Idola di Litar' dan memodelkan langkah menyusun isi serta menulis mengikut Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Idola di Litar'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan biografi Hafizh Syahrin pada BT m/s 98 dan sorot fakta yang dinyatakan dalam teks.
+**Murid:** Kenal pasti maklumat tempat lahir, kejayaan dan sikap atlet.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Modelkan jawapan bagi soalan bertumpu dan tunjuk cara memberi alasan bagi soalan bercapah.
+**Murid:** Jawab empat daripada lima soalan buku termasuk soalan yang menuntut alasan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.2 — Menghasilkan jawapan pemahaman berdasarkan soalan bertumpu dan bercapah secara kritis dan kreatif) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak jawapan lengkap, ketepatan rujukan dan kualiti alasan, tanpa menambah fakta terkini yang tidak disebut teks.
+**Murid:** Baiki satu jawapan yang tidak berasaskan petikan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Idola di Litar' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan strategi menjawab soalan pemahaman.
+**Murid:** Nyatakan satu teladan daripada kisah tokoh.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 98 mempunyai biografi Hafizh Syahrin dan lima soalan bertumpu/bercapah; SP 3.2.2.
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

@@ -1,42 +1,37 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 089
 
-**ID:** BM4-P089  
-**Minggu RPT 2027:** M21 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan  
-**Tajuk aktiviti:** Keistimewaan Rakyat Malaysia + PKJR  
-**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
-**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 102  
-**Fokus:** bacaan — Keistimewaan Rakyat Malaysia  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Keistimewaan Rakyat Malaysia' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P089
+**Minggu RPT 2027:** M21 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan
+**Tajuk aktiviti:** Keistimewaan Rakyat Malaysia + PKJR
+**Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.
+**Standard Pembelajaran (SP):** 2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 102. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Cerita Alia dan rakan-rakannya menerima penerangan daripada Cikgu Syakir tentang kemudahan pendidikan serta keistimewaan menjadi warganegara Malaysia.
+**Objektif PdP:** Pada akhir PdP, murid dapat membaca petikan dengan teliti, mengenal pasti tiga kemudahan dan melengkapkan Peta Pokok berdasarkan cerita.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Keistimewaan Rakyat Malaysia' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar konteks murid bertemu guru selepas mendapat keputusan peperiksaan dalam kisah BT.
+**Murid:** Nyatakan satu kemudahan pendidikan yang diketahui.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Keistimewaan Rakyat Malaysia' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Keistimewaan Rakyat Malaysia' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan BT m/s 102 tentang Alia dan Cikgu Syakir; tunjuk cara memilih isi penting daripada dialog.
+**Murid:** Kenal pasti tiga faedah atau kemudahan yang disebut dalam cerita.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Sediakan Peta Pokok 'Keistimewaan Rakyat Malaysia' dan bimbing penyusunan isi.
+**Murid:** Isi tiga cabang berdasarkan petikan serta terangkan maksud setiap isi.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.3.1 — Membaca dan menganalisis kandungan teks karya sastera, dan karya bukan sastera) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak ketepatan isi Peta Pokok dan bukti daripada petikan.
+**Murid:** Baiki satu isi yang disalah tafsir.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Keistimewaan Rakyat Malaysia' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan nilai bersyukur dan tanggungjawab terhadap peluang pendidikan.
+**Murid:** Nyatakan satu amalan menghargai kemudahan pendidikan.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
-
-**Catatan PKJR:** RPT menyebut PKJR. Jangan mencipta HP/BAM atau melaksanakan penilaian PKJR sebagai hasil rasmi sebelum modul, aktiviti dan halaman disahkan.
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 102 mengandungi cerita Alia dan Cikgu Syakir dengan arahan membaca serta melengkapkan Peta Pokok (SP 2.3.1); tiada bukti modul PKJR.
+**Kawalan PKJR:** Label RPT belum disahkan dengan modul rasmi; tidak menjana kod/aktiviti PKJR tambahan.
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

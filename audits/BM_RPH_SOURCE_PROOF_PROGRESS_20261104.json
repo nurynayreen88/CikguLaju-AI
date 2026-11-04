@@ -646,6 +646,123 @@
       "ba_exercise_verified": false
     },
     {
+      "year": 4,
+      "pdp": 77,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "88",
+      "proof": "BT m/s 88 memaparkan dialog Kesetiaan kepada Raja dan Negara dan tugas memberikan alasan; m/s 87 ialah sajak pengenalan tema, bukan dialog ini.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 78,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "89",
+      "proof": "BT m/s 89 menggunakan tajuk 'Petua Kejayaan', bukan 'Petua Kerajaan'; arahan membaca petikan dan melengkapkan Peta Pokok.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 79,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "90",
+      "proof": "BT m/s 90 mengarahkan menulis peribahasa menggunakan tulisan berangkai dan Jalan Galeri mencari maksud; SP 3.1.1.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 80,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "91",
+      "proof": "BT m/s 91 memaparkan Boria Nusaku dengan arahan menyanyikan lagu dan menjelaskan maksud lirik (SP 4.2.2).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 81,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "92",
+      "proof": "BT m/s 92 memaparkan situasi majlis perkahwinan dengan kata majmuk bebas; SP 5.2.2(i) dan nota tatabahasa disambung pada m/s 93.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 82,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "94",
+      "proof": "BT m/s 94 memaparkan kisah Zara dan latihan kata majmuk mantap SP 5.2.2(ii); m/s 93 masih nota kata majmuk bebas SP 5.2.2(i).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 84,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "96–97",
+      "proof": "BT m/s 96–97 memaparkan grafik cara menggantung/memasang Jalur Gemilang dengan arahan melukis serta menjelaskan maklumat (SP 2.2.1).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 85,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "98",
+      "proof": "BT m/s 98 mempunyai biografi Hafizh Syahrin dan lima soalan bertumpu/bercapah; SP 3.2.2.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 86,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "99",
+      "proof": "BT m/s 99 mengarahkan menggunakan kata ganda penuh dalam langkah menghasilkan montaj Karya Seni Negaraku (SP 5.2.3(i)).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 87,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "100",
+      "proof": "BT m/s 100 memuatkan lagu Cintai Negara dan arahan membina ayat daripada kata ganda separa (SP 5.2.3(ii)).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 88,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "101",
+      "proof": "BT m/s 101 mempunyai dialog Zara–ayah dan grafik MyKad/JPN dengan tugas bersoal jawab mendapatkan penjelasan (SP 1.2.3).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 89,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "102",
+      "proof": "BT m/s 102 mengandungi cerita Alia dan Cikgu Syakir dengan arahan membaca serta melengkapkan Peta Pokok (SP 2.3.1); tiada bukti modul PKJR.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 90,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "103",
+      "proof": "BT m/s 103 mengarahkan menulis ayat dalam perenggan yang diimlakkan tentang pasport Malaysia (SP 3.2.4).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
       "year": 5,
       "pdp": 45,
       "book": "BT Tahun 5 SK",
@@ -692,7 +809,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 752 RPH need specific textbook page/activity review",
+    "All remaining 739 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -703,24 +820,26 @@
     "Telegram runtime test",
     "Tahun 4 PdP 037: tajuk dan aras kemahiran mesti diselaraskan dengan aktiviti Pengayaan BT m/s 41; belum BT-verified",
     "Tahun 4 PdP 041 dan 047: kesahihan bentuk serta sambungan aksara Jawi perlu semakan visual sebelum source-verified",
-    "Tahun 4 PdP 067 dan 068 HOLD: RPT menempatkan SP imbuhan 5.2.1 pada BT m/s 71 dan 72, sedangkan halaman tersebut SP 5.1.4 kata nafi dan kata bilangan; perlukan pemetaan semula tanpa mereka halaman."
+    "Tahun 4 PdP 067 dan 068 HOLD: RPT menempatkan SP imbuhan 5.2.1 pada BT m/s 71 dan 72, sedangkan halaman tersebut SP 5.1.4 kata nafi dan kata bilangan; perlukan pemetaan semula tanpa mereka halaman.",
+    "Tahun 4 PdP 076 HOLD: BT m/s 86 ialah Penilaian berbilang SP dan tidak sesuai diterbitkan sebagai RPH Standalone pengajaran.",
+    "Tahun 4 PdP 083 HOLD: SP bercetak BT m/s 95 ialah 1.2.2 tetapi arahan pada halaman ialah soal jawab penjelasan 1.2.3; perlu keputusan semakan."
   ],
   "ready_count": 0,
   "reviewed_eight_not_ready": true,
   "reviewed_seventeen_not_ready": true,
   "current_audit_batch": {
     "year": 4,
-    "pdp_range": "061–075",
+    "scope": "076–090, kecuali HOLD 076/083",
     "reviewed_rph": 13,
     "explicit_hold": [
-      67,
-      68
+      76,
+      83
     ],
+    "verified_with": "Original BT Tahun 4 SK + DSKP",
     "changed_rpt_formats": [
       "Markdown",
       "HTML"
     ],
-    "verified_with": "Original BT Tahun 4 SK and DSKP via Google Drive",
     "publication_approved": false
   }
 }

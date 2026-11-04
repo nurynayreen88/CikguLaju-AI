@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 086
 
-**ID:** BM4-P086  
-**Minggu RPT 2027:** M21 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku  
-**Tajuk aktiviti:** Karya Seni Negaraku  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.3 (i) — Memahami dan menggunakan kata ganda mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 99  
-**Fokus:** tatabahasa — Karya Seni Negaraku  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Karya Seni Negaraku'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P086
+**Minggu RPT 2027:** M21 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku
+**Tajuk aktiviti:** Karya Seni Negaraku
+**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.2.3 (i) — Memahami dan menggunakan kata ganda mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 99. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Cikgu Hazim menerangkan cara membuat montaj bangunan bersejarah; petikan mengandungi ruang kosong untuk kata ganda penuh.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan lima kata ganda penuh dalam arahan montaj serta membina dua ayat berdasarkan bahan.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Karya Seni Negaraku' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U14: Demi Tanah Airku.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar montaj bangunan bersejarah yang menjadi contoh dalam BT.
+**Murid:** Nyatakan satu tempat bersejarah yang diketahui.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Karya Seni Negaraku'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata ganda mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Karya Seni Negaraku'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca langkah membuat montaj BT m/s 99 dan perhatikan bentuk penggandaan penuh seperti gambar-gambar serta huruf-huruf.
+**Murid:** Kenal pasti kata dasar dan hasil gandaan penuh dalam senarai buku.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Karya Seni Negaraku' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Minta murid mengisi ruang kosong dalam petikan arahan membuat montaj mengikut perkataan yang disediakan.
+**Murid:** Lengkapkan lima tempat kosong dan bina dua ayat dengan kata ganda penuh.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.3 (i) — Memahami dan menggunakan kata ganda mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak bentuk kata ganda, ejaan sempang serta kesesuaian dengan arahan montaj.
+**Murid:** Baiki dua pilihan kata yang tidak sesuai konteks.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Karya Seni Negaraku' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kata ganda penuh dalam komunikasi.
+**Murid:** Berikan satu contoh kata ganda daripada bahan.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 99 mengarahkan menggunakan kata ganda penuh dalam langkah menghasilkan montaj Karya Seni Negaraku (SP 5.2.3(i)).
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

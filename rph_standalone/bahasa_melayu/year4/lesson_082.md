@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 082
 
-**ID:** BM4-P082  
-**Minggu RPT 2027:** M20 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi  
-**Tajuk aktiviti:** Suri Teladan  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 93  
-**Fokus:** tatabahasa — Suri Teladan  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Suri Teladan'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P082
+**Minggu RPT 2027:** M20 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi
+**Tajuk aktiviti:** Suri Teladan
+**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 94. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Cerita Zara menerima anugerah sahsiah dan membantu rakan-rakan; teks tempat kosong menggunakan kata majmuk mantap seperti sukarela, olahraga, setiausaha dan tanggungjawab.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan empat tempat kosong dengan kata majmuk mantap yang betul serta membina dua ayat berkaitan.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Suri Teladan' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar suasana Zara menerima anugerah sahsiah.
+**Murid:** Nyatakan satu contoh amalan membantu rakan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Suri Teladan'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata majmuk mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Suri Teladan'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan BT m/s 94 tentang tugas Zara dan jelaskan kata majmuk mantap yang dieja bercantum.
+**Murid:** Kenal pasti empat kata sesuai daripada senarai contoh.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Suri Teladan' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjukkan empat tempat kosong dalam kisah Zara dan minta murid menentukan perkataan mengikut makna ayat.
+**Murid:** Lengkapkan tempat kosong dan bina dua ayat menggunakan kata majmuk mantap.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.2 (ii) — Memahami dan menggunakan kata majmuk mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak ejaan bercantum dan konteks sukarela, olahraga, setiausaha dan pertolongan cemas.
+**Murid:** Baiki kata majmuk yang tidak tepat dalam ayat.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Suri Teladan' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan perbezaan kata majmuk mantap dan bebas.
+**Murid:** Nyatakan satu contoh kata majmuk mantap lain.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 94 memaparkan kisah Zara dan latihan kata majmuk mantap SP 5.2.2(ii); m/s 93 masih nota kata majmuk bebas SP 5.2.2(i).
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 077
 
-**ID:** BM4-P077  
-**Minggu RPT 2027:** M19 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi  
-**Tajuk aktiviti:** Setia kepada Raja  
-**Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.  
-**Standard Pembelajaran (SP):** 1.2.1 — Bertutur untuk menilai, dan memberikan alasan tentang sesuatu perkara secara bertatasusila mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 87-88  
-**Fokus:** lisan — Setia kepada Raja  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Setia kepada Raja' mengikut kemahiran 1.2.1.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P077
+**Minggu RPT 2027:** M19 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi
+**Tajuk aktiviti:** Setia kepada Raja
+**Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.
+**Standard Pembelajaran (SP):** 1.2.1 — Bertutur untuk menilai, dan memberikan alasan tentang sesuatu perkara secara bertatasusila mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 88. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Zara dan rakan-rakannya melawat galeri diraja; dialog Zara dengan Cikgu Rizal mengenai prinsip Kesetiaan kepada Raja dan Negara.
+**Objektif PdP:** Pada akhir PdP, murid dapat menyampaikan sekurang-kurangnya dua alasan tentang kepentingan menghormati raja secara bertatasusila.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Setia kepada Raja' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjuk gambar galeri diraja dan tanya nilai patriotisme yang berkaitan.
+**Murid:** Nyatakan satu cara menghormati pemimpin negara.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Setia kepada Raja' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Setia kepada Raja'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing dialog BT m/s 88 tentang kesetiaan kepada raja, keharmonian negara dan prinsip Rukun Negara.
+**Murid:** Kenal pasti maklumat yang membolehkan Zara memberikan alasan.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Setia kepada Raja'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Lakonkan perbualan Zara–Cikgu Rizal dan tunjuk cara memberi alasan dengan kata hubung yang sesuai.
+**Murid:** Lakonkan dialog dengan dua alasan bersandarkan bahan serta bahasa santun.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.2.1 — Bertutur untuk menilai, dan memberikan alasan tentang sesuatu perkara secara bertatasusila mengikut konteks) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak kesesuaian dua alasan, sebutan dan kesantunan pertuturan.
+**Murid:** Baiki satu respons yang tidak menyatakan alasan jelas.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Setia kepada Raja' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kepentingan menjelaskan pendapat dengan sopan.
+**Murid:** Nyatakan satu nilai yang dipelajari.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 88 memaparkan dialog Kesetiaan kepada Raja dan Negara dan tugas memberikan alasan; m/s 87 ialah sajak pengenalan tema, bukan dialog ini.
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

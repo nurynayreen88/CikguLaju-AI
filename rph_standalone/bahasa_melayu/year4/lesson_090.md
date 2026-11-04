@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 090
 
-**ID:** BM4-P090  
-**Minggu RPT 2027:** M22 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan  
-**Tajuk aktiviti:** Pasport Malaysia  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.4 — Menulis ayat dalam perenggan yang diimlakkan  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 103  
-**Fokus:** tulisan — Pasport Malaysia  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Pasport Malaysia' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P090
+**Minggu RPT 2027:** M22 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan
+**Tajuk aktiviti:** Pasport Malaysia
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.4 — Menulis ayat dalam perenggan yang diimlakkan
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 103. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Petikan tentang dokumen pasport Malaysia serta maklumat pemilik dan ciri keselamatannya untuk latihan menulis imlak.
+**Objektif PdP:** Pada akhir PdP, murid dapat menulis sekurang-kurangnya satu perenggan imlak tentang pasport dengan ejaan, huruf besar dan tanda baca yang betul.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pasport Malaysia' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U15: Aku Anak Watan.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar pasport dan tanya fungsi dokumen perjalanan.
+**Murid:** Nyatakan satu situasi pasport mungkin diperlukan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Pasport Malaysia' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis ayat dalam perenggan yang diimlakkan.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Pasport Malaysia'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Guru membacakan satu perenggan BT m/s 103 dengan jelas tanpa memaparkan teks kepada murid.
+**Murid:** Dengar dan kenal pasti kata seperti pasport, warganegara dan dokumen.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Imlakkan satu perenggan pilihan daripada teks, dibaca secara bertahap mengikut klausa.
+**Murid:** Tulis perenggan imlak lengkap dengan ejaan, huruf besar dan tanda baca.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.4 — Menulis ayat dalam perenggan yang diimlakkan) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Baca semula perenggan untuk semakan kendiri dan bandingkan teks asal selepas penulisan.
+**Murid:** Baiki tiga kesilapan jika ada dan jelaskan satu fungsi pasport.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Pasport Malaysia' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan teknik imlak dan kepentingan menjaga dokumen.
+**Murid:** Nyatakan satu maklumat yang tertera pada pasport menurut teks.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 103 mengarahkan menulis ayat dalam perenggan yang diimlakkan tentang pasport Malaysia (SP 3.2.4).
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.

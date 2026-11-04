@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 081
 
-**ID:** BM4-P081  
-**Minggu RPT 2027:** M19 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi  
-**Tajuk aktiviti:** Sapaan Mesra  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.2 (i) — Memahami dan menggunakan kata majmuk mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 92  
-**Fokus:** tatabahasa — Sapaan Mesra  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Sapaan Mesra'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P081
+**Minggu RPT 2027:** M19 (tarikh ikut jadual sekolah)
+**Tema/Unit:** Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi
+**Tajuk aktiviti:** Sapaan Mesra
+**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.2.2 (i) — Memahami dan menggunakan kata majmuk mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 92. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Min Lee menghadiri perkahwinan sepupu Zara; dialog menamakan ahli keluarga dan objek seperti bunga manggar, nasi minyak serta dulang air.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengenal pasti empat kata majmuk bebas dan menggunakannya dalam tiga ayat tentang majlis perkahwinan.
+**Bahan:** BT asal, bahan gambar/petikan/peta berkaitan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Sapaan Mesra' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Jati Diri, Patriotisme dan Kewarganegaraan; U13: Jadikan Inspirasi.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar suasana majlis perkahwinan sepupu Zara.
+**Murid:** Namakan satu makanan atau hiasan yang biasa dilihat di majlis.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Sapaan Mesra'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata majmuk mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Sapaan Mesra'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan dialog BT m/s 92 dan tunjuk bahawa kata majmuk bebas terdiri daripada dua kata dasar yang ditulis terpisah.
+**Murid:** Garis frasa bunga manggar, nasi minyak, dulang air dan tuan rumah.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Sapaan Mesra' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Minta murid mengenal pasti empat kata majmuk bebas lalu membina ayat yang menepati konteks.
+**Murid:** Tulis tiga ayat tentang situasi perkahwinan menggunakan kata majmuk bebas.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.2 (i) — Memahami dan menggunakan kata majmuk mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak bentuk ejaan terpisah dan ketepatan maksud setiap kata majmuk.
+**Murid:** Baiki satu bentuk kata majmuk yang dicantumkan secara salah.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Sapaan Mesra' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan fungsi kata majmuk bebas.
+**Murid:** Sebut satu contoh lain yang disokong bahan.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 92 memaparkan situasi majlis perkahwinan dengan kata majmuk bebas; SP 5.2.2(i) dan nota tatabahasa disambung pada m/s 93.
+**Status QA:** DRAF — halaman serta aktiviti Buku Teks disemak; BA, PKJR jika berkenaan, takwim negeri, paparan Word/PDF A4 dan ujian Telegram belum diluluskan. Bukan FINAL READY.
