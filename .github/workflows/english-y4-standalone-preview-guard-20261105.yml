@@ -1,0 +1,32 @@
+name: English Y4 standalone preview — default OFF release guard
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'english_y4_standalone_render.py'
+      - 'app.py'
+      - 'tests/test_english_y4_standalone_preview_guard_20261105.py'
+      - '.github/workflows/english-y4-standalone-preview-guard-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  preview-source-and-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Compile both adapter and current application without importing runtime
+        run: python -m py_compile english_y4_standalone_render.py app.py
+      - name: Source-bound staging lesson 14, rejected lesson 30, all ten teacher-choice, default-off
+        run: python -m unittest discover -s tests -p 'test_english_y4_standalone_preview_guard_20261105.py' -v
+      - name: Prevent unverified Year 4 Lesson 30 listening PBD / audio regression
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y4_l030_failclosed_pbd_and_rpt_release_20261105.py' -v
+          python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
+      - name: Preserve ten Year 4 teacher-choice DRAF source gates
+        run: python -m unittest discover -s tests -p 'test_english_y4_teacher_choice_release_gate_20261103.py' -v
+      - name: Preserve existing Year 2 and Year 3 standalone source adapters
+        run: |
+          python -m py_compile english_y2_standalone_render.py english_y3_standalone_render.py
