@@ -23,8 +23,8 @@ GENERIC={
   "generic_exit_response":r"one accurate new sentence or fact",
   "generic_topic_question":r"what can you say about this topic",
 }
-PHASE_TIME=re.compile(r"(?im)^\s*(?:##\s*|\d+\.\s*(?:\*\*)?|\*\*)(?:set induction|activity\s*[1-9]|reinforcement|pbd|assessment|closure)[^\n]{0,120}?\((\d+)\s*(?:minutes|min)\)")
-OBJ=re.compile(r"(?im)^\s*(?:\*\*)?(?:learning objectives?|objectives?|objektif)(?:\b|\s*\()")
+PHASE_TIME=re.compile(r"(?im)^\s*(?:##\s*|\d+\.\s*(?:\*\*)?|\*\*)?(?:set induction|main activities|activity\s*[1-9]|reinforcement|pbd|assessment|closure)[^\n]{0,120}?\((\d+)\s*(?:minutes|min)\)")
+OBJ=re.compile(r"(?im)^\s*(?:\*\*)?(?:suggested\s+)?(?:learning objectives?|objectives?|objektif)(?:\b|\s*\()")
 
 def extract_phase(t,word):
     key={"start":r"set induction|set induksi","end":r"closure|penutup"}[word]
