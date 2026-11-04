@@ -52,6 +52,21 @@ def install(runtime):
             for key in (30, "30", "030"):
                 mapping.pop(key, None)
 
+            # TB p.111: Lesson 103 Activity 5 uses CD2 Track 26 only.
+            # TB p.112: CD2 Tracks 27/28 are Lesson 104 activities, but
+            # the historical v25.258/259 map erroneously attached both
+            # to Lesson 103. Do not move them into Lesson 104 before
+            # independently checking content and end-user delivery.
+            for key in (103, "103"):
+                if key in mapping:
+                    mapping[key] = [
+                        row for row in mapping[key]
+                        if isinstance(row, dict)
+                        and row.get("audio_reference") == "CD2 Track 26"
+                        and row.get("storage_file_id")
+                            == "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H"
+                    ]
+
     notice = getattr(runtime, "send", None)
 
     def _hide_conflicting_media(ss, *args, **kwargs):
