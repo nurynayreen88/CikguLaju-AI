@@ -5,22 +5,22 @@
 **Aktiviti/Tajuk:** Bersatu Teguh Bercerai Roboh  
 **SK:** 2.1  
 **SP:** 2.1.1; 2.1.2; 2.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 2 — Pembina Cilik, ms 14-19 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Bersatu Teguh Bercerai Roboh, ms 16–17
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kotak terpakai, kadbod, kertas, pita dan gam  
+**BBM:** kepingan kadbod atau bod busa yang dipotong awal oleh guru, templat tanggam, pelekat kertas dan alas kerja
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Menguji dua kaedah/media bagi Bersatu Teguh Bercerai Roboh dan memilih satu berdasarkan fungsi serta unsur bentuk geometri, struktur lipatan dan kestabilan sambungan. Kriteria kejayaan: hasil kerja individu atau kumpulan memperlihatkan evidens yang dinyatakan dalam pentaksiran.
+Murid membina satu arca stabail kecil dengan cantuman tanggam selamat, membandingkan dua susunan tapak dan menerangkan kaitan imbangan serta kesatuan dengan kestabilan. Kriteria kejayaan: model yang berdiri, dua percubaan susunan dan satu justifikasi.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan contoh visual berkaitan **Bersatu Teguh Bercerai Roboh** dalam tema **Pembina Cilik**. Murid menyatakan pemerhatian awal dan satu persoalan tentang bahan/teknik.
+**Set induksi (5 minit):** Guru menunjukkan dua arca kecil; murid meramal arca yang lebih stabil serta memberikan alasan berdasarkan bentuk dan tapaknya.
 
-**Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan dua sampel bersatu teguh bercerai roboh, mendemonstrasi cara selamat mengendalikan kotak terpakai, kadbod, kertas, pita dan gam, dan menjelaskan kesan berbeza pada hasil.
+**Aktiviti 1 (15 minit) — Tunjuk cara/penerokaan:** Guru merujuk BT ms 16–17 dan menunjuk cara menyambung kepingan prapotong melalui tanggam tanpa alat tajam pada tangan murid. Murid memerhati kesan tapak luas, imbangan dan kesatuan.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid menjalankan dua percubaan kecil untuk model kotak kejutan yang boleh dibuka dan ditutup: membandingkan bentuk geometri, struktur lipatan dan kestabilan sambungan, merekod langkah melalui lakaran/foto, kemudian memilih satu teknik dengan justifikasi.
+**Aktiviti 2 (25 minit) — Amali:** Murid menyusun kepingan prapotong menjadi arca stabail, menguji dua susunan dengan tapak berlainan, mencatat susunan lebih kukuh dan menghias bentuk menggunakan corak mudah. Potongan yang perlu dibuat dikendalikan guru.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua sampel sebenar, catatan kesan dan satu alasan pilihan bahan/teknik. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Model stabail berdiri, bukti dua percubaan susunan, dan alasan murid yang menghubungkan tanggam serta imbangan dengan kestabilan. Guru merekod evidens pembelajaran secara berterusan.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
@@ -28,4 +28,4 @@ Menguji dua kaedah/media bagi Bersatu Teguh Bercerai Roboh dan memilih satu berd
 
 **Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [Buku Teks PSV Tahun 6, ms 16–17](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/). Aktiviti adaptasi CikguLaju berpandukan kandungan buku; ujian cetakan dan pelaksanaan sebenar belum disahkan.
