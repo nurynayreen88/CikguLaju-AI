@@ -8,17 +8,17 @@
 
 **Objektif:** (1) Melaksanakan kemahiran SP 1.12.1 (melakukan tendangan keribas (flutter kick) dalam posisi meniarap untuk satu jarak dengan bantuan alat apungan) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.12.1: Membezakan lakuan tendangan keribas (flutter kick) antara posisi tiarap dengan telentang.
 
-**Set induksi:** Guru mengemukakan cabaran "Keribas Bertenaga" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+**Set induksi:** Guru membandingkan ilustrasi tendangan keribas meniarap dan telentang serta penggunaan alat apungan.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.12.1.
+**Aktiviti 1 — Amali tepat:** Jurulatih yang kompeten memperagakan tendangan kaki bergilir dan sokongan apungan di kawasan kolam yang dibenarkan. Murid menyebut perbezaan kedudukan badan.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Di kolam yang diluluskan sahaja: murid berlatih tendangan keribas secara progresif menggunakan sokongan tepi kolam atau alat apungan, secara meniarap dan telentang mengikut kemampuan. Guru/jurulatih kompeten memantau posisi badan dan keselamatan. Jika tiada kemudahan, tangguhkan penilaian kemahiran air. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Amali tepat:** Hanya di kolam yang diluluskan dan diawasi: murid mempraktikkan tendangan keribas meniarap dan telentang menggunakan alat apungan mengikut tahap keupayaan. Tanpa kolam, penerangan darat dibenarkan tetapi pentaksiran amali ditangguhkan.
 
-**Pengukuhan/PBD:** Senarai semak dalam air: posisi badan, pergerakan kaki bergilir dan pematuhan arahan keselamatan; latihan simulasi di darat bukan bukti penguasaan berenang. Bukti kefahaman (soal jawab): Bagaimana tendangan keribas membantu pergerakan badan di air? Guru turut mencatat amalan SP 5.2.2.
+**Pengukuhan/PBD:** Pentaksiran SP 1.12.1–1.12.2 memerlukan pemerhatian dalam air pada posisi badan, tendangan kaki bergilir dan keselamatan. Murid menerangkan perbezaan posisi bagi SP 2.12.1.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Kad ilustrasi teknik keribas, alat apungan dan kolam dengan pengawasan kompeten jika tersedia.
+**Keselamatan/inklusif:** Mesti ada kebenaran sekolah, kemudahan air selamat dan pengawasan penyelamat/jurulatih kompeten. Simulasi di darat bukan bukti penguasaan renang.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.

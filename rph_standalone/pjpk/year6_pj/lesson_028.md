@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.14.2 (bermain permainan tradisional yang menggunakan kemahiran berlari dan mengelak dalam permainan libat dan hidup mati) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.14.2: Mengenal pasti strategi yang sesuai digunakan semasa bermain permainan tradisional permainan Libat dan Hidup Mati.
 
-**Set induksi:** Guru menunjukkan cabaran "PERMAINAN HIDUP MATI" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menerangkan peraturan permainan Hidup Mati serta perbezaan strategi daripada Libat.
 
-**Aktiviti 1 — Larian dan koordinasi:** Guru menandakan laluan dan menunjukkan aksi tangan-kaki serta isyarat mula/berhenti; murid mencuba pada kelajuan rendah. Murid menunjukkan semula langkah asas berdasarkan SP 1.14.2.
+**Aktiviti 1 — Amali tepat:** Murid berlatih mengubah arah untuk mengelak pengejar di dalam zon berkotak dan mengenal risiko kawasan sesak.
 
-**Aktiviti 2 — Aplikasi:** Murid berlatih fasa larian atau pertukaran baton mengikut SP pada lorong berasingan, kemudian mengulang berdasarkan maklum balas guru. 
+**Aktiviti 2 — Amali tepat:** Murid bermain Hidup Mati dalam kumpulan dengan peraturan ubah suai, kemudian menilai pilihan laluan elakan yang berjaya tanpa mencederakan rakan.
 
-**Pengukuhan/PBD:** Guru menilai koordinasi, arah laluan, pengurusan kelajuan dan berhenti selamat menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.14.2 dan menerima maklum balas. Guru memerhati sikap SP 5.1.4, 5.2.1. 
+**Pengukuhan/PBD:** Senarai semak: strategi elakan, perubahan arah, penggunaan ruang, kawalan badan dan sikap menghormati pemain lain.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** kon laluan, baton jika relevan, kad giliran.  
-**Keselamatan/inklusif:** Laluan tidak bersilang; jarak menunggu selamat, berhenti jika letih atau tidak sihat.
+**BBM:** Kon sempadan permainan, wisel, kad peraturan Hidup Mati.
+**Keselamatan/inklusif:** Tidak dibenarkan sentuhan kuat, menarik pakaian atau mengejar ke luar zon; berhenti segera pada isyarat.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

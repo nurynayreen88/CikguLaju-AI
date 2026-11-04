@@ -9,17 +9,17 @@
 
 **Objektif:** (1) Melakukan kemahiran SP 1.14.2 (bermain permainan tradisional yang menggunakan kemahiran berlari dan mengelak dalam permainan libat dan hidup mati) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.14.2: Mengenal pasti strategi yang sesuai digunakan semasa bermain permainan tradisional permainan Libat dan Hidup Mati.
 
-**Set induksi:** Guru menunjukkan cabaran "PERMAINAN LIBAT" dan meminta murid menyatakan satu teknik yang diperlukan serta satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menunjukkan zon permainan Libat dan memperagakan larian mengelak tanpa sentuhan kasar.
 
-**Aktiviti 1 — Larian dan koordinasi:** Guru menandakan laluan dan menunjukkan aksi tangan-kaki serta isyarat mula/berhenti; murid mencuba pada kelajuan rendah. Murid menunjukkan semula langkah asas berdasarkan SP 1.14.2.
+**Aktiviti 1 — Amali tepat:** Murid mencuba larian perubahan arah di antara kon untuk mengelak pengejar dan mengenal dua laluan selamat.
 
-**Aktiviti 2 — Aplikasi:** Murid berlatih fasa larian atau pertukaran baton mengikut SP pada lorong berasingan, kemudian mengulang berdasarkan maklum balas guru. 
+**Aktiviti 2 — Amali tepat:** Dalam kumpulan kecil, murid bermain Libat secara ubah suai dengan aturan tiada tolak/tarik, kemudian menjelaskan strategi bergerak ke ruang selamat.
 
-**Pengukuhan/PBD:** Guru menilai koordinasi, arah laluan, pengurusan kelajuan dan berhenti selamat menggunakan senarai semak individu. Murid menerangkan satu konsep SP 2.14.2 dan menerima maklum balas. Guru memerhati sikap SP 5.2.1. 
+**Pengukuhan/PBD:** Guru mencatat ketepatan elakan, keputusan taktikal, pematuhan sempadan dan komunikasi semasa permainan Libat.
 
 **Penutup:** Murid menyebut satu teknik yang dipelajari dan cadangan penambahbaikan; guru merumus serta merekod tindakan pemulihan.
 
-**BBM:** kon laluan, baton jika relevan, kad giliran.  
-**Keselamatan/inklusif:** Laluan tidak bersilang; jarak menunggu selamat, berhenti jika letih atau tidak sihat.
+**BBM:** Kon pembatas, bib kumpulan dan kad peraturan Libat.
+**Keselamatan/inklusif:** Dilarang menolak, menarik baju atau sentuhan kasar; kawasan rata bebas halangan dan arahan berhenti yang jelas.
 
 **Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Bukan READY** sebelum semak buku teks, Word A4 dan penjanaan bot.

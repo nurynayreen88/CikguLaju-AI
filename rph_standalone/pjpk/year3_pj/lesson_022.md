@@ -8,17 +8,17 @@
 
 **Objektif:** (1) Melaksanakan kemahiran SP 1.11.1 (mengawal pernafasan untuk satu jangka masa semasa di bawah permukaan air) dalam sekurang-kurangnya dua cubaan, dengan bimbingan apabila perlu. (2) Menerangkan satu sebab/konsep yang berkaitan dengan SP 2.11.1: Menjelaskan cara mengawal pernafasan di bawah permukaan air.
 
-**Set induksi:** Guru mengemukakan cabaran "Selam dan Kawal" dan menunjukkan contoh ringkas. Murid menyebut jangkaan pergerakan dan satu risiko yang perlu dielakkan.
+**Set induksi:** Guru menunjukkan gambar kolam dan isyarat meminta bantuan; murid menyebut syarat keselamatan sebelum latihan air.
 
-**Aktiviti 1 — Teknik gerak asas:** Guru menunjukkan lakuan kemahiran sasaran dan meminta murid menyebut satu ciri teknik. Murid memerhati titik teknik dan cuba secara berpandu. Fokus SP 1.11.1.
+**Aktiviti 1 — Amali tepat:** Guru atau jurulatih kompeten menerangkan kawalan pernafasan di air tanpa hiperventilasi atau pertandingan menahan nafas. Murid mengenal prosedur keselamatan dan isyarat bantuan.
 
-**Aktiviti 2 — Amali khusus:** Murid mencuba kemahiran menggunakan tanda laluan atau penanda tapak kemudian membetulkan posisi berdasarkan bimbingan guru. Di kolam yang diluluskan sahaja: guru atau jurulatih kompeten menerangkan prosedur keselamatan, murid berlatih kawalan pernafasan dan kemahiran menyelam cetek mengikut tahap keupayaan dengan pengawasan rapat. Jika fasiliti/pengawasan tiada, jalankan pengenalan keselamatan di darat dan jadualkan semula penilaian kemahir. Murid bergilir menunjukkan kemahiran dan mengenal pasti satu perubahan teknik yang meningkatkan hasil.
+**Aktiviti 2 — Amali tepat:** Hanya di kolam dibenarkan dan dengan pengawasan penyelamat kompeten, murid mempraktikkan kawalan pernafasan di kawasan air cetek yang ditetapkan. Jika tiada kemudahan, jalankan penerangan di darat dan tangguh pentaksiran amali SP 1.11.1.
 
-**Pengukuhan/PBD:** Pentaksiran kemahiran air hanya apabila aktiviti benar-benar dilaksanakan dalam air dengan pengawasan kompeten; catat kawalan nafas, pematuhan arahan dan keselamatan. Penerangan di darat tidak dikira bukti penguasaan kemahiran air. Bukti kefahaman (soal jawab): Apakah langkah keselamatan sebelum masuk ke air dan semasa menyelam  Guru turut mencatat amalan SP 5.1.1.
+**Pengukuhan/PBD:** SP 1.11.1 hanya ditaksir melalui amali sebenar di air dengan pengawasan. Soal jawab darat menyemak SP 2.11.1 sahaja; tidak boleh direkod sebagai penguasaan kemahiran air.
 
 **Penutup:** Dua orang murid menerangkan teknik/keputusan yang lebih baik; guru memberi maklum balas dan merekod intervensi.
 
-**BBM:** kon, kad teknik, alatan mengikut tugasan; buku teks mengikut rujukan RPT.  
-**Keselamatan/inklusif:** Tetapkan kawasan selamat, peralatan bersesuaian dan pilihan gerakan alternatif.
+**BBM:** Kad isyarat keselamatan air, gambar kedalaman kolam; kolam dan alatan penyelamat hanya apabila memenuhi syarat sekolah.
+**Keselamatan/inklusif:** Tiada latihan bawah air atau menahan nafas tanpa kolam, penyelia atau penyelamat kompeten, kebenaran sekolah dan nisbah pengawasan yang sesuai. Jangan adakan pertandingan tahan nafas.
 
 **Jejak audit:** [RPT PJ Tahun 3 2027](https://docs.google.com/document/d/1OrRrdI-TzpRjsXuukmo4JwafkJil-cE6/edit) · [DSKP PJPK Tahun 3](https://drive.google.com/file/d/1UXxweap916Y2yAmaPol1_HQSZH8ApFEn/view). **Bukan READY** sehingga semakan buku teks, Word A4 dan ujian laluan bot selesai.
